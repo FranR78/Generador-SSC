@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <base target="_top">
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --verde: #27ae60;
+      --verde-oscuro: #007932;
+      --gris-fondo: #f4f6f5;
+      --gris-borde: #dfe5e2;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Open Sans', Arial, sans-serif;
+      background: var(--gris-fondo);
+      color: #1f2d27;
+    }
+    header {
+      background: var(--verde-oscuro);
+      color: #fff;
+      padding: 14px 16px;
+    }
+    header h1 { font-size: 17px; margin: 0; font-weight: 700; }
+    header p { margin: 2px 0 0; font-size: 12px; opacity: .85; }
+
+    .layout {
+      display: flex;
+      flex-direction: column;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 12px;
+      gap: 12px;
+    }
+
+    .panel {
+      background: #fff;
+      border: 1px solid var(--gris-borde);
+      border-radius: 10px;
+      padding: 12px;
+    }
+    .panel h2 {
+      font-size: 14px;
+      margin: 0 0 8px;
+      color: var(--verde-oscuro);
+    }
+
+    #arbol { max-height: 240px; overflow-y: auto; font-size: 14px; }
+    .carpeta > summary {
+      cursor: pointer;
+      font-weight: 600;
+      padding: 4px 0;
+    }
+    .carpeta { margin-left: 4px; border-left: 2px solid var(--gris-borde); padding-left: 8px; }
+    label.archivo {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 3px 0;
+      font-size: 13px;
+    }
+    label.archivo input { accent-color: var(--verde); }
+
+    #seleccion {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 8px;
+      min-height: 20px;
+    }
+    .chip {
+      background: #eafaf1;
+      border: 1px solid var(--verde);
+      color: var(--verde-oscuro);
+      border-radius: 14px;
+      padding: 3px 10px;
+      font-size: 12px;
+    }
+
+    #mensajes {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-height: 50vh;
+      overflow-y: auto;
+      margin-bottom: 10px;
+    }
+    .msg { padding: 10px 12px; border-radius: 10px; font-size: 14px; line-height: 1.45; white-space: pre-wrap; }
+    .msg.user { background: var(--verde); color: #fff; align-self: flex-end; max-width: 85%; }
+    .msg.bot { background: var(--gris-fondo); border: 1px solid var(--gris-borde); max-width: 90%; }
+    .msg.error { background: #fdecea; border: 1px solid #f5b3ad; color: #8a1f11; }
+    .fuentes { margin-top: 6px; font-size: 11px; opacity: .75; }
+
+    form { display: flex; gap: 8px; }
+    textarea {
+      flex: 1;
+      resize: none;
+      border: 1px solid var(--gris-borde);
+      border-radius: 8px;
+      padding: 8px 10px;
+      font-family: inherit;
+      font-size: 14px;
+      min-height: 44px;
+    }
+    button {
+      background: var(--verde);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0 16px;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    button:disabled { opacity: .5; cursor: default; }
+    .aviso { font-size: 12px; color: #6b7a73; margin-top: 6px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Consulta de apuntes</h1>
+    <p>Filtra los PDF del tema y pregunta directamente sobre su contenido.</p>
+  </header>
+
+  <div class="layout">
+    <div class="panel">
+      <h2>1. Elige los PDF (máx. 5)</h2>
+      <div id="arbol">Cargando colección…</div>
+      <div id="seleccion"></div>
+    </div>
+
+    <div class="panel">
+      <h2>2. Pregunta</h2>
+      <div id="mensajes"></div>
+      <form id="form-pregunta">
+        <textarea id="pregunta" placeholder="Ej: ¿Cuál es la secuencia de comprobación de la presión de aceite?"></textarea>
+        <button type="submit" id="btn-enviar">Enviar</button>
+      </form>
+      <p class="aviso">Las respuestas se generan solo a partir de los PDF seleccionados. Si algo no aparece en ellos, el asistente te lo dirá en vez de inventarlo.</p>
+    </div>
+  </div>
+
+  <script>
+    var seleccionados = {}; // id -> nombre
+
+    function actualizarChips() {
+      var cont = document.getElementById('seleccion');
+      cont.innerHTML = '';
+      Object.keys(seleccionados).forEach(function (id) {
+        var chip = document.createElement('span');
+        chip.className = 'chip';
+        chip.textContent = seleccionados[id];
+        cont.appendChild(chip);
+      });
+    }
+
+    function onToggle(id, nombre, checked) {
+      if (checked) {
+        if (Object.keys(seleccionados).length >= 5) {
+          alert('Máximo 5 PDF por pregunta.');
+          event.target.checked = false;
+          return;
+        }
+        seleccionados[id] = nombre;
+      } else {
+        delete seleccionados[id];
+      }
+      actualizarChips();
+    }
+
+    function renderNodo(nodo) {
+      var det = document.createElement('details');
+      det.className = 'carpeta';
+      det.open = false;
+      var sum = document.createElement('summary');
+      sum.textContent = nodo.name;
+      det.appendChild(sum);
+
+      nodo.files.forEach(function (f) {
+        var lab = document.createElement('label');
+        lab.className = 'archivo';
+        var chk = document.createElement('input');
+        chk.type = 'checkbox';
+        chk.addEventListener('change', function (e) { onToggle(f.id, f.name, e.target.checked); });
+        lab.appendChild(chk);
+        lab.appendChild(document.createTextNode(f.name));
+        det.appendChild(lab);
+      });
+
+      nodo.children.forEach(function (hijo) { det.appendChild(renderNodo(hijo)); });
+      return det;
+    }
+
+    function cargarArbol() {
+      google.script.run
+        .withSuccessHandler(function (raiz) {
+          var cont = document.getElementById('arbol');
+          cont.innerHTML = '';
+          if (raiz.children.length === 0 && raiz.files.length === 0) {
+            cont.textContent = 'No hay PDF en la carpeta configurada todavía.';
+            return;
+          }
+          raiz.children.forEach(function (hijo) { cont.appendChild(renderNodo(hijo)); });
+          raiz.files.forEach(function (f) {
+            var lab = document.createElement('label');
+            lab.className = 'archivo';
+            var chk = document.createElement('input');
+            chk.type = 'checkbox';
+            chk.addEventListener('change', function (e) { onToggle(f.id, f.name, e.target.checked); });
+            lab.appendChild(chk);
+            lab.appendChild(document.createTextNode(f.name));
+            cont.appendChild(lab);
+          });
+        })
+        .withFailureHandler(function (err) {
+          document.getElementById('arbol').textContent = 'Error al cargar la colección: ' + err.message;
+        })
+        .listarEstructura();
+    }
+
+    function addMsg(texto, tipo, fuentes) {
+      var cont = document.getElementById('mensajes');
+      var div = document.createElement('div');
+      div.className = 'msg ' + tipo;
+      div.textContent = texto;
+      if (fuentes && fuentes.length) {
+        var f = document.createElement('div');
+        f.className = 'fuentes';
+        f.textContent = 'Fuente: ' + fuentes.join(', ');
+        div.appendChild(f);
+      }
+      cont.appendChild(div);
+      cont.scrollTop = cont.scrollHeight;
+    }
+
+    document.getElementById('form-pregunta').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var campo = document.getElementById('pregunta');
+      var pregunta = campo.value.trim();
+      if (!pregunta) return;
+
+      var ids = Object.keys(seleccionados);
+      if (ids.length === 0) {
+        alert('Selecciona al menos un PDF antes de preguntar.');
+        return;
+      }
+
+      addMsg(pregunta, 'user');
+      campo.value = '';
+      document.getElementById('btn-enviar').disabled = true;
+
+      google.script.run
+        .withSuccessHandler(function (res) {
+          addMsg(res.respuesta, 'bot', res.fuentes);
+          document.getElementById('btn-enviar').disabled = false;
+        })
+        .withFailureHandler(function (err) {
+          addMsg(err.message, 'error');
+          document.getElementById('btn-enviar').disabled = false;
+        })
+        .preguntar(pregunta, ids);
+    });
+
+    cargarArbol();
+  </script>
+</body>
+</html>
