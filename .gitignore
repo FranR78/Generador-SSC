@@ -1,0 +1,16 @@
+# Entornos y cachés de Python (no van a git: son pesados y locales)
+rag/venv/
+**/__pycache__/
+*.pyc
+
+# Datos y salidas (los PDF viven en Drive; el índice se genera en Colab)
+corpus/**/*.pdf
+index/*.jsonl
+index/*.npz
+index/meta.jsonl
+
+# Archivos de sistema y accesos directos de Google Drive
+.DS_Store
+*.gdoc
+*.gsheet
+*.gslides
