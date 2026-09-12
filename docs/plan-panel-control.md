@@ -1,6 +1,6 @@
 # Plan — Panel de control, rondas de definiciones y manual del ciclo
 
-Documento de diseño (v3, decisiones cerradas). No toca `rag/**` ni `portal/**`.
+Documento de diseño (v4, decisiones cerradas). No toca `rag/**` ni `portal/**`.
 
 ## 0. Decisiones tomadas
 
@@ -9,9 +9,9 @@ Documento de diseño (v3, decisiones cerradas). No toca `rag/**` ni `portal/**`.
 | Dónde vive el estado | Hoja de cálculo en Drive (`SSC_DATA`). Sin base de datos externa |
 | Acceso | Solo cuentas **dadas de alta por el profesor**. El dominio no basta |
 | Tipo de cuenta | Corporativa del centro o de grupo; ambas válidas, siempre autorizadas a mano |
-| Visita (sin alta) | Cupo de **3 consultas** en total, luego pantalla de "pide el alta" |
+| Visita (sin alta) | Cupo de **3 consultas por semana**, luego pantalla de "pide el alta" |
 | Tiempo de permanencia | **No se mide.** Solo `última conexión` y registro de acciones |
-| Votación | **3 estrellas ponderadas (3-2-1)**, anónimas mientras dura. Sin voto negativo |
+| Votación | **3 estrellas ponderadas (3-2-1)** — confirmado, anónimas mientras dura. Sin voto negativo |
 | Publicación del manual | **Google Sites** |
 | Uso | Aula y casa → las rondas abren y cierran **por fecha**, no solo a mano |
 | Objetivo pedagógico | Que los 17 escriban una definición y lean las 16 de los demás |
@@ -26,20 +26,58 @@ siempre: 181 PDF de golpe.
 
 | Rol | Cómo se obtiene | Qué puede |
 |---|---|---|
-| `visita` | Entra con cuenta válida pero no está en `alumnos` | 3 consultas en total; no entrega, no vota, no ve rondas |
+| `visita` | Entra con cuenta del dominio pero no está en `alumnos` | 3 consultas por semana; no entrega, no vota, no ve rondas |
 | `alumno` | Alta hecha por el profesor | Todo el corpus visible, rondas, voto, panel propio |
 | `profesor` | Lista blanca en `config` | Panel de control completo |
 
 Notas:
 
-- El cupo de visita se cuenta en `alumnos` (`consultas_visita`), no en el
-  navegador: vaciar la caché no lo reinicia.
+- El cupo de visita se cuenta en `alumnos` (`consultas_semana` + `semana_iso`),
+  no en el navegador: vaciar la caché no lo reinicia. El reseteo es perezoso: al
+  consultar, si la semana ISO guardada no es la actual, el contador vuelve a 0.
 - **Cuentas de grupo**: una cuenta = un participante a todos los efectos. Una
   entrega y un juego de estrellas por cuenta, no por persona. Campo
   `tipo` (`individual` / `grupo`) e `integrantes` para que en el manual figuren
   todos los nombres.
 - El alta es un botón del panel: pegas los correos, eliges grupo, listo. Nunca
   configuración por alumno más allá de eso.
+
+## 2 bis. La clave de Gemini: el visitante no configura nada
+
+Duda resuelta: **ningún alumno ni visitante necesita clave de API.** La clave vive
+en *Propiedades del script* del proyecto de Apps Script, es tuya, y nunca sale del
+servidor: el HTML del alumno solo llama a `google.script.run`, y la petición a
+Gemini la hace el servidor con `UrlFetchApp`. Quien mire el código fuente de la
+página no ve nada.
+
+La consecuencia es la contraria a la que parece: **como paga tu clave, hace falta
+el cupo**. Los 3 por semana del visitante no son una traba pedagógica, son el
+freno de gasto.
+
+Esto obliga a un despliegue muy concreto:
+
+- **Ejecutar como: yo (el propietario).** Así la clave y los PDF se usan con tus
+  permisos y **no hay que compartir la carpeta de los 181 PDF con nadie**. Es una
+  ventaja grande: el alumno lee los documentos a través del portal sin tener
+  acceso a Drive.
+- **Acceso: usuarios de la organización.** Con esa combinación,
+  `Session.getActiveUser().getEmail()` devuelve el correo del alumno y hay
+  identidad real sin pedir login aparte.
+
+**Aviso importante sobre las cuentas de grupo:** lo anterior solo funciona si esas
+cuentas están **en el mismo Workspace del centro**. Una cuenta de otro dominio (o
+`@gmail.com`) puede devolver correo vacío y dejarnos sin identidad. Si hiciera
+falta admitirlas, el plan B es un código de acceso por grupo en la URL, con menos
+garantías. Conviene decidirlo antes de F1.
+
+### Freno de gasto (además del cupo)
+
+- Caché de respuestas: hoja `cache` con clave `hash(pregunta + docIds)`. Cuando 17
+  alumnos preguntan casi lo mismo sobre los mismos PDF, se sirve lo ya calculado.
+- **Aviso técnico sobre el código actual:** `MAX_PDFS_PER_QUERY = 5` con
+  `MAX_PDF_BYTES = 15 MB` permite construir peticiones de hasta 75 MB, por encima
+  del límite de `UrlFetchApp` (~50 MB) y del tiempo de ejecución. Hay que limitar
+  el **total** de la petición, no solo cada archivo. A corregir en F1.
 
 ## 3. El concepto central: la Ronda
 
@@ -90,7 +128,7 @@ sea cambiar un archivo.
 |---|---|
 | `config_temas` | `id_tema`, `nombre`, `carpeta_id`, `visible`, `fecha_apertura`, `grupo`, `orden` |
 | `config_docs` | `doc_id`, `id_tema`, `nombre`, `visible` |
-| `alumnos` | `email`, `nombre`, `tipo`, `integrantes`, `grupo`, `rol`, `alta`, `ultima_conexion`, `consultas_visita`, `activo` |
+| `alumnos` | `email`, `nombre`, `tipo`, `integrantes`, `grupo`, `rol`, `alta`, `ultima_conexion`, `consultas_semana`, `semana_iso`, `activo` |
 | `rondas` | `id_ronda`, `id_tema`, `elemento`, `item`, `modo`, `enunciado`, `grupo`, `estado`, `abre_el`, `cierra_entrega_el`, `cierra_votacion_el` |
 | `aportaciones` | `id`, `id_ronda`, `email`, `texto`, `fuente_doc`, `fuente_pagina`, `etiqueta`, `creada_el`, `estado`, `puntos`, `sello` |
 | `votos` | `id_ronda`, `email_votante`, `id_aportacion`, `peso`, `creado_el` |
@@ -166,10 +204,10 @@ Solo lectura:
 Dos piezas distintas, no confundirlas:
 
 - **El portal** (consulta, rondas, paneles) se embebe en Sites como WebApp de
-  Apps Script. A verificar en F1: el WebApp debe desplegarse como *"ejecutar
-  como el usuario que accede"* y el alumno tiene que estar logueado con la cuenta
-  autorizada; en iframe esto tiene aristas conocidas y hay que probarlo pronto,
-  porque condiciona todo lo demás.
+  Apps Script, desplegado como *ejecutar como yo* + *acceso a la organización*
+  (ver sección 2 bis). A verificar en F0: dentro del iframe de Sites el alumno
+  debe estar logueado con la cuenta autorizada y `getActiveUser()` debe devolver
+  su correo; ahí es donde suele fallar y condiciona todo lo demás.
 - **El manual** se genera como **HTML autocontenido** (colores del centro, Open
   Sans) y se pega en el insertador de código de Sites. Así la versión publicada
   queda congelada y legible aunque el portal esté caído o en mantenimiento.
@@ -205,9 +243,9 @@ contraste medido/OEM es el diagnóstico.
 
 | Fase | Entrega | Desbloquea |
 |---|---|---|
-| F0 | prueba de embebido del WebApp en Sites | condiciona todo lo demás |
+| F0 | embebido en Sites + `getActiveUser()` dentro del iframe | condiciona todo lo demás |
 | F1 | `SSC_DATA` + `Datos.gs` + altas + interruptores | quita el agobio de los 181 PDF |
-| F2 | roles, cupo de visita, última conexión, eventos | control de acceso real |
+| F2 | roles, cupo semanal de visita, última conexión, eventos | control de acceso y de gasto |
 | F3 | rondas: entregar con fuente y etiqueta | contenido propio |
 | F4 | votación 3-2-1 con portón de entrega + sellado | el bucle completo |
 | F5 | volcado a `manual` + generador de HTML para Sites | el producto |
@@ -226,7 +264,5 @@ de construir encima.
 
 ## 12. Pendiente de confirmar
 
-1. "Visita = 3 consultas": ¿son 3 en total y se acaban para siempre, o 3 por
-   semana mientras espera el alta?
-2. Estrellas: se ha asumido **3-2-1 ponderadas**. Si preferías 3 estrellas
-   iguales, es un cambio de una línea.
+1. ¿Las cuentas de grupo estarán en el Workspace del centro? Si no, hay que
+   rediseñar la identidad antes de F1 (ver sección 2 bis).
