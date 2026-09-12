@@ -1,163 +1,193 @@
-# Plan — Panel de control, trazabilidad y aportaciones del alumnado
+# Plan — Panel de control, rondas de definiciones y manual del ciclo
 
-Documento de diseño. No toca `rag/**` ni `portal/**`.
+Documento de diseño (v2, decisiones cerradas). No toca `rag/**` ni `portal/**`.
+
+## 0. Decisiones tomadas
+
+| Tema | Decisión |
+|---|---|
+| Dónde vive el estado | Hoja de cálculo en Drive (`SSC_DATA`). Nada de base de datos externa |
+| Tiempo de permanencia | **No se mide.** Solo `última conexión` y registro de acciones |
+| Votación | Solo "me gusta", anónimo mientras se vota. **Sin "no me gusta"** |
+| Objetivo pedagógico | Que los 17 escriban una definición y lean las 16 de los demás |
 
 ## 1. Qué hay hoy
 
-`portal/` es un WebApp de Apps Script: el alumno ve el árbol de Drive, marca hasta
-5 PDF y pregunta a Gemini. No hay identidad, ni estado, ni configuración: todo el
-corpus está visible siempre. Ese es exactamente el problema descrito (181 PDF de
-golpe = el alumno abandona).
+`portal/` es un WebApp de Apps Script: árbol de Drive, hasta 5 PDF, pregunta a
+Gemini. Sin identidad, sin estado, sin configuración. Todo el corpus visible
+siempre: 181 PDF de golpe.
 
-## 2. Decisión de arquitectura
+## 2. El concepto central: la Ronda
 
-Todo el estado en **una hoja de cálculo de Drive** (`SSC_DATA`), leída y escrita
-desde Apps Script. Hojas:
+Todo el sistema gira alrededor de una unidad: la **ronda**. Una ronda es
+*un elemento + un ítem a definir*, abierta a un grupo, con cuatro estados:
 
-| Hoja | Contenido |
+```
+borrador  →  abierta  →  votación  →  cerrada
+            (escriben)  (leen y votan)  (entra al manual)
+```
+
+Reglas que garantizan el trabajo:
+
+1. **Para ver las definiciones de los demás hay que haber entregado la tuya.**
+   Ese portón es lo que convierte "leer a los compañeros" en algo inevitable.
+2. En votación, cada alumno ve las 16 restantes **sin autor** y en **orden
+   distinto** (barajado con semilla derivada de su correo), para que no gane
+   siempre la primera de la lista.
+3. Cada alumno reparte **3 "me gusta"** entre las 16. Al ser escasos, hay que
+   leerlas para decidir.
+4. Al cerrar, se revelan autores, se ve la más votada y tú pones el sello de
+   validación técnica. Lo sellado entra al manual del ciclo.
+
+Con eso, el mínimo garantizado por ronda es: leer documentación → redactar →
+leer 16 textos → decidir. Aunque no funcione nada más, eso ya vale la sesión.
+
+### Modo de ronda (campo `modo`)
+
+- `misma_pregunta`: los 17 definen lo mismo. Comparación directa, gana la mejor.
+- `reparto`: la ronda tiene varios ítems del mismo elemento y cada alumno coge
+  uno (con cupo máximo por ítem). Cada alumno lee 16 textos **distintos** y el
+  manual se completa en una sola sesión.
+
+Conviene alternar: `misma_pregunta` para conceptos clave, `reparto` para cubrir
+un elemento entero. Con 17 definiciones del mismo ítem, a la octava se lee en
+diagonal; con reparto, cada lectura aporta algo nuevo.
+
+## 3. Datos: la hoja `SSC_DATA`
+
+Una hoja por tabla. Todo el acceso pasa por una capa única (`Datos.gs`), de modo
+que migrar en el futuro sea cambiar un archivo.
+
+| Hoja | Columnas |
 |---|---|
-| `config` | qué tema/carpeta/documento está visible, y para qué grupo |
-| `eventos` | append-only: quién, qué, cuándo (consulta, apertura, cierre, latido) |
-| `aportaciones` | textos del alumnado, con fuente y estado |
-| `votos` | sellos de validación entre pares |
-| `resumen` | agregado nocturno por alumno (lo que lee el panel) |
+| `config_temas` | `id_tema`, `nombre`, `carpeta_id`, `visible`, `fecha_apertura`, `orden` |
+| `config_docs` | `doc_id`, `id_tema`, `nombre`, `visible` |
+| `alumnos` | `email`, `nombre`, `grupo`, `alta`, `ultima_conexion`, `activo` |
+| `rondas` | `id_ronda`, `id_tema`, `elemento`, `item`, `modo`, `enunciado`, `grupo`, `estado`, `votos_por_alumno`, `abierta_el`, `cerrada_el` |
+| `aportaciones` | `id`, `id_ronda`, `email`, `texto`, `fuente_doc`, `fuente_pagina`, `etiqueta`, `creada_el`, `estado`, `sello` |
+| `votos` | `id_ronda`, `email_votante`, `id_aportacion`, `creado_el` |
+| `eventos` | `ts`, `email`, `accion`, `detalle` |
+| `manual` | `id_tema`, `elemento`, `item`, `texto_final`, `autor`, `fuente`, `etiqueta`, `fecha` |
 
-**Pros:** coste cero, backup y versiones nativos de Drive, editable a mano si algo
-se rompe, cero infraestructura que mantener, todo dentro del Workspace del centro.
-**Contras:** cuotas de Apps Script (tiempo de ejecución diario, `UrlFetch`), Sheets
-se degrada por encima de ~50k filas, escrituras concurrentes necesitan `LockService`.
+Notas de implementación:
 
-**Mitigación:** ninguna función del portal lee `eventos` en caliente; el panel lee
-`resumen`, que lo reconstruye un disparador nocturno. Los eventos se envían
-agrupados (uno por minuto, no uno por acción). Toda lectura/escritura pasa por una
-capa única (`Datos.gs`), de modo que migrar a Firestore más adelante sea cambiar un
-archivo, no el proyecto.
+- `ultima_conexion` se actualiza en cada carga del portal: una escritura por
+  sesión, nada de latidos. Sin medir permanencia.
+- `eventos` es append-only y solo registra acciones con valor (consulta,
+  apertura de documento, entrega, voto). Sirve para el panel y para responder
+  a "yo sí he trabajado".
+- `LockService` en entregar y votar. Unicidad por `(id_ronda, email)` en
+  aportaciones y por `(id_ronda, email_votante, id_aportacion)` en votos.
+- Con 17-60 alumnos las cuotas de Apps Script no son un problema.
 
-**Alternativa descartada:** Firestore/Supabase desde el principio. Escala mejor pero
-añade una cuenta, un despliegue y una consola que mantener. Para ~30-60 alumnos por
-curso es sobreingeniería.
+**Protección de datos:** correo institucional, acción y fecha. Nada más. Aviso en
+la pantalla de acceso, uso exclusivamente docente, borrado al cierre de curso.
 
-## 3. Panel del profesor
+## 4. Contrato del servidor
 
-Misma WebApp, ruta `?v=panel`, con verificación de correo contra una lista blanca
-en `config`. Si el correo no está, devuelve la vista de alumno. Nunca hay dos
-despliegues.
+Una sola WebApp, una sola URL. El rol se decide por correo contra `alumnos` y la
+lista blanca de profesorado; si el correo no está autorizado, no hay panel.
 
-Contenido:
+**Alumno**
 
-1. **Interruptores por tema y por documento.** Un tema oculto desaparece del árbol
-   y sus PDF dejan de ser consultables (se filtra en servidor, no en el HTML).
-2. **Apertura programada**: fecha de activación opcional, para dejar el curso
-   preparado en septiembre y que se abra solo.
-3. **Bandeja "Pendiente"**: aportaciones esperando tu sello. Un clic por decisión.
-4. **Pulso del grupo**: quién no ha entrado esta semana, quién consulta mucho y no
-   aporta nada, qué documento no abre nadie.
+- `getSesion()` → rol, temas visibles, rondas activas, avisos
+- `listarEstructura()` → árbol **ya filtrado** por `config_*` en servidor
+- `preguntar(pregunta, docIds)` → valida que cada documento sea visible
+- `entregar(idRonda, {texto, fuenteDoc, pagina, etiqueta})`
+- `listarParaVotar(idRonda)` → error si no has entregado; anónimo y barajado
+- `votar(idRonda, idAportacion)`
+- `miPanel()` → documentos leídos y cuándo, mis entregas, qué me falta
 
-Regla de diseño innegociable: **el panel no puede generar trabajo nuevo**. Si algo
-exige configurar alumno por alumno, está mal diseñado y se descarta.
+**Profesor**
 
-## 4. Medir el tiempo: lo que funciona y lo que no
+- `setVisible(tipo, id, visible, fechaApertura)`
+- `crearRonda(...)`, `pasarAVotacion(id)`, `cerrarRonda(id)`
+- `sellar(idAportacion)` → entra al `manual`
+- `pase(email, idRonda)` → desbloquea a quien entregó en papel o llegó tarde
+- `pulso(grupo)` → última conexión de cada uno, entregas pendientes, sin votar
 
-Técnicamente es sencillo: latido cada 60 s solo si `document.visibilityState`
-es `visible`, sesión cerrada por 3 min de inactividad, acumulado en `resumen`.
+El filtrado de visibilidad **siempre en servidor**. Si se hace en el HTML, el
+alumno ve el corpus entero mirando el código.
 
-**Pero el tiempo es una métrica mala.** Se falsea dejando la pestaña abierta,
-premia al lento y castiga al que resuelve rápido, y a la hora de evaluar no dice
-nada. Propuesta: el tiempo se guarda, pero lo que se muestra es **evidencia de
-trabajo**:
+## 5. Panel del profesor
 
-- documentos abiertos y consultas hechas,
-- aportaciones publicadas y validadas,
-- señal de **atascado**: muchas consultas seguidas sobre el mismo tema sin salida.
-  Eso sí es accionable: te dice a quién acercarte mañana en clase.
+1. Interruptores por tema y por documento, con fecha de apertura opcional (dejas
+   el curso montado en septiembre y se abre solo).
+2. Rondas: crear, abrir, pasar a votación, cerrar. Cuatro botones.
+3. Bandeja de sellado: los textos más votados esperando tu validación. Un clic.
+4. Pulso del grupo: última conexión, quién no ha entregado, quién no ha votado.
 
-**Protección de datos:** son menores. Guardar solo correo institucional, acción y
-marca de tiempo; nada de IP ni contenido libre fuera de las aportaciones. Informar
-al alumnado en la propia pantalla de acceso, borrado al cierre de curso, y uso
-exclusivamente docente. Sin esto, el módulo de tiempo no se despliega.
+Regla innegociable: **el panel no puede generar trabajo nuevo.** Si algo exige
+configurar alumno por alumno, está mal diseñado.
 
-## 5. Panel del alumno
+## 6. Panel del alumno
 
-Vista de solo lectura, misma fuente (`resumen`):
+Solo lectura:
 
-- Temas abiertos ahora mismo y cuáles no (con "se abre el 14 de octubre").
+- Temas abiertos y cuáles no ("se abre el 14 de octubre").
 - Documentos ya leídos, con "última vez hace 3 días".
-- Sus aportaciones y en qué estado están.
+- Rondas: entregada / pendiente de votar / cerrada, y si ganó la suya.
+- **Mis apuntes**: al cerrar un documento, una caja de una línea —
+  *¿qué te llevas de aquí?*. Se acumula y se ofrece precargado al entregar.
+  Un tic de "visto" se rellena por inercia; una línea escrita, no.
 
-**Mejora sobre "visto / no visto":** un tic no demuestra nada y se llena por inercia.
-Al cerrar un documento, una sola caja: *¿qué te llevas de aquí?* — una línea. Esa
-línea es suya, se acumula en "Mis apuntes" y es lo que se ofrece precargado cuando
-va a hacer una aportación. El registro deja de ser un checklist y pasa a ser su
-cuaderno.
+## 7. Lo que sostiene todo: el manual del ciclo
 
-## 6. Aportaciones y validación entre pares
+Interruptores de visibilidad y registro de acceso los hace Moodle; consultar un
+PDF con IA lo hace NotebookLM. Copiar eso no merece el esfuerzo. Lo que no existe
+es el bucle completo:
 
-Formulario: **tema → elemento → tipo de ítem** (función, características, valores y
-presiones de trabajo, procedimiento de comprobación, avería típica) **→ texto**.
-Todo a `aportaciones`.
+> consulta al corpus → definición propia con fuente citada y etiquetada →
+> lectura y voto entre iguales → **manual del ciclo que sobrevive al curso**
 
-Riesgos reales del "me gusta / no me gusta" tal cual:
+El producto no es el portal: es el manual vivo de Electromecánica, escrito por
+promociones sucesivas y trazable a la documentación del fabricante. La promoción
+de 26/27 no empieza en blanco: corrige y amplía lo de 25/26.
 
-- La popularidad no es calidad técnica: gana el gracioso o el grupo grande.
-- El "no me gusta" entre menores en un aula es castigo social, no evaluación.
-- Riesgo nº1: pegar la respuesta de Gemini y firmarla.
+Dos elementos que lo hacen propio del ciclo y no de una plataforma genérica:
 
-Propuesta:
+- **Fuente obligatoria.** El sistema ya sabe qué PDF tenía abierto: autorrellena
+  el documento y el alumno indica la página. Sin fuente, no se publica. Es la
+  defensa contra pegar la respuesta de Gemini y firmarla.
+- **Etiqueta obligatoria: Medido / Teórico OEM / Inferido.** Es el marco de
+  diagnóstico del ciclo. Obliga a distinguir lo que dice el manual de lo que se
+  ha comprobado con el aparato. Eso es enseñar a diagnosticar.
 
-1. **Fuente obligatoria.** El sistema ya sabe qué PDF tenía abierto: autorrellena
-   documento y deja que indique la página. Sin fuente, no se publica. Esto ataca el
-   copia-pega y enseña trazabilidad, que es lo que se les va a exigir en el taller.
-2. **Etiqueta epistemológica obligatoria**: *Medido / Teórico OEM / Inferido*. Es el
-   marco de diagnóstico del propio ciclo. Obliga a distinguir lo que dice el manual
-   de lo que se ha comprobado con el polímetro.
-3. **Sellos en vez de "me gusta"**, y limitados: tres por alumno y tema —
-   *me sirvió*, *bien explicado*, *cita bien la fuente*. Al ser escasos hay que leer
-   para gastarlos.
-4. **Sin "no me gusta".** Se sustituye por *"pediría una aclaración"*, que abre un
-   comentario obligatorio. Criticar exige argumentar.
-5. **Ciego hasta el cierre**: el autor no se muestra mientras se vota. Tú sí lo ves.
-   Elimina el voto por amistad.
-6. **Tu sello pesa más que todos los votos.** Los votos filtran y ordenan; tú
-   validas lo que entra al manual. Cinco minutos, no una tarde.
-
-## 7. Lo que esto tiene que no exista ya
-
-Conviene ser honesto: los interruptores de visibilidad y el registro de tiempo los
-hace Moodle, y consultar un PDF con IA lo hace NotebookLM gratis. Copiar eso no
-merece el esfuerzo. Lo que no existe es el bucle completo:
-
-> consulta al corpus → extracción con fuente citada y etiquetada → validación entre
-> iguales → **manual del ciclo que sobrevive al curso**.
-
-El producto no es el portal: es el **manual vivo de Electromecánica**, escrito por
-promociones sucesivas y trazable a la documentación del fabricante. La promoción de
-26/27 no empieza en blanco: corrige y amplía lo que dejó la de 25/26. Ninguna
-plataforma comercial ofrece eso, porque ninguna conoce el dominio.
-
-Dos extensiones que refuerzan esa diferencia:
-
-- **Modo taller (móvil).** Con las manos sucias delante del vehículo: una sola
-  pantalla con la ficha del elemento, el valor de referencia OEM y un botón para
-  anotar la medida real. Queda el contraste medido/OEM, que es el diagnóstico en sí.
-  Ahí es donde el manual deja de ser un trabajo de clase.
-- **Su párrafo, con su nombre, en el manual.** El incentivo no es la nota ni el
-  "me gusta": es abrir el documento del ciclo y leerse dentro.
+Extensión natural, **modo taller** en móvil: una sola pantalla con la ficha del
+elemento, el valor de referencia OEM y un botón para anotar la medida real. El
+contraste medido/OEM es el diagnóstico. Ahí el manual deja de ser trabajo de
+clase y pasa a ser herramienta.
 
 ## 8. Fases
 
 | Fase | Entrega | Desbloquea |
 |---|---|---|
-| F1 | `SSC_DATA` + capa `Datos.gs` + interruptores de visibilidad | quita el agobio de los 181 PDF |
-| F2 | identidad por correo + eventos + panel del alumno | "qué he visto" |
-| F3 | formulario de aportación con fuente y etiqueta | contenido propio |
-| F4 | muro de sellos + bandeja del profesor | validación |
-| F5 | generación del manual desde lo validado | el producto |
+| F1 | `SSC_DATA` + `Datos.gs` + interruptores de visibilidad | quita el agobio de los 181 PDF |
+| F2 | identidad por correo + última conexión + eventos | "quién ha entrado y qué ha hecho" |
+| F3 | rondas: entregar con fuente y etiqueta | contenido propio |
+| F4 | votación anónima con portón de entrega + sellado | el bucle completo |
+| F5 | volcado a `manual` y publicación | el producto |
+| F6 | panel del alumno y "mis apuntes" | autonomía |
 
-F1 y F2 se pueden usar en clase por separado; no hay que esperar a F5 para que sirva.
+F1 y F3+F4 se pueden usar en clase por separado. No hay que esperar a F5.
 
-## 9. Dudas a cerrar antes de codificar
+## 9. Riesgos asumidos
 
-1. ¿La visibilidad se configura por grupo/clase o es única para todo el alumnado?
-2. ¿El alumnado accede con cuenta del centro? (determina si el filtro de correo por
-   dominio vale como control de acceso)
-3. ¿El super-manual se publica en Sites, en un Doc o en el propio portal?
+- **Coordinación por WhatsApp** durante la votación ("votad la que empieza por…").
+  El anonimato lo dificulta, los 3 votos lo diluyen y tu sello decide. No se
+  intenta blindar más.
+- **El que no entrega se queda fuera del muro.** Por diseño; para eso está `pase`.
+- **Textos casi idénticos** en `misma_pregunta` con 17 alumnos. Se resuelve
+  alternando con `reparto`.
+
+## 10. Dudas abiertas
+
+1. ¿Visibilidad y rondas **por grupo** (SSC / optativa de osciloscopio) o única
+   para todo el alumnado?
+2. ¿El alumnado entra con **cuenta del centro**? Si es así, el filtro por dominio
+   basta como control de acceso y no hace falta dar de alta a nadie a mano.
+3. ¿Dónde se publica el manual: Google Sites, un Doc generado, o dentro del
+   propio portal?
+4. ¿Se confirman **3 votos** por alumno y ronda?
+5. ¿Entrar en la plataforma se hace en el aula (hora fija) o también desde casa?
+   Cambia si las rondas se abren y cierran a mano o por fecha.
