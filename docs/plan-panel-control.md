@@ -1,11 +1,12 @@
 # Plan — Panel de control, rondas de definiciones y manual del ciclo
 
-Documento de diseño (v4, decisiones cerradas). No toca `rag/**` ni `portal/**`.
+Documento de diseño (v5, decisiones cerradas). No toca `rag/**` ni `portal/**`.
 
 ## 0. Decisiones tomadas
 
 | Tema | Decisión |
 |---|---|
+| Clave de Gemini | **La suya, cada alumno.** Se guarda en su navegador, nunca en el servidor |
 | Dónde vive el estado | Hoja de cálculo en Drive (`SSC_DATA`). Sin base de datos externa |
 | Acceso | Solo cuentas **dadas de alta por el profesor**. El dominio no basta |
 | Tipo de cuenta | Corporativa del centro o de grupo; ambas válidas, siempre autorizadas a mano |
@@ -42,42 +43,76 @@ Notas:
 - El alta es un botón del panel: pegas los correos, eliges grupo, listo. Nunca
   configuración por alumno más allá de eso.
 
-## 2 bis. La clave de Gemini: el visitante no configura nada
+## 2 bis. La clave de Gemini la pone cada alumno
 
-Duda resuelta: **ningún alumno ni visitante necesita clave de API.** La clave vive
-en *Propiedades del script* del proyecto de Apps Script, es tuya, y nunca sale del
-servidor: el HTML del alumno solo llama a `google.script.run`, y la petición a
-Gemini la hace el servidor con `UrlFetchApp`. Quien mire el código fuente de la
-página no ve nada.
+**Cada alumno genera su propia API key en AI Studio y la pega en su configuración.**
+El visitante puede hacer lo mismo. El cupo de 3 consultas por semana **lo impone
+el sistema**, no la clave: quien no está de alta queda bloqueado por el contador
+de la hoja, aunque su clave siga teniendo cuota de sobra.
 
-La consecuencia es la contraria a la que parece: **como paga tu clave, hace falta
-el cupo**. Los 3 por semana del visitante no son una traba pedagógica, son el
-freno de gasto.
+Consecuencias buenas: el gasto no lo paga el centro, no hay una clave única que
+quemar, y el alumno aprende a gestionar credenciales — que es contenido de FP, no
+un trámite.
 
-Esto obliga a un despliegue muy concreto:
+### Dónde se guarda la clave: en su navegador, no en el servidor
 
-- **Ejecutar como: yo (el propietario).** Así la clave y los PDF se usan con tus
-  permisos y **no hay que compartir la carpeta de los 181 PDF con nadie**. Es una
-  ventaja grande: el alumno lee los documentos a través del portal sin tener
-  acceso a Drive.
-- **Acceso: usuarios de la organización.** Con esa combinación,
-  `Session.getActiveUser().getEmail()` devuelve el correo del alumno y hay
-  identidad real sin pedir login aparte.
+La clave **no se persiste en el servidor ni en la hoja de cálculo**. Se guarda en
+el navegador del alumno (`localStorage`, casilla "recordar en este dispositivo") y
+viaja en cada llamada a `google.script.run`, que la usa en memoria para la
+petición a Gemini y la descarta.
 
-**Aviso importante sobre las cuentas de grupo:** lo anterior solo funciona si esas
-cuentas están **en el mismo Workspace del centro**. Una cuenta de otro dominio (o
-`@gmail.com`) puede devolver correo vacío y dejarnos sin identidad. Si hiciera
-falta admitirlas, el plan B es un código de acceso por grupo en la URL, con menos
-garantías. Conviene decidirlo antes de F1.
+- Nadie custodia claves ajenas: ni el centro, ni tú, ni la hoja.
+- Si se filtrara la hoja `SSC_DATA`, no hay ninguna clave dentro.
+- Contra asumido: al cambiar de navegador o dispositivo hay que volver a pegarla.
+  Es un campo y un botón.
 
-### Freno de gasto (además del cupo)
+Para saber a quién le falta configurarla sin guardar nada: el servidor anota en
+`alumnos` la fecha de la última consulta que funcionó (`clave_ok_el`). El panel te
+dice "estos 4 aún no han configurado la suya" sin que exista la clave en ningún
+sitio.
+
+### El despliegue sigue siendo "ejecutar como yo"
+
+Aunque la clave sea del alumno, el WebApp se despliega como *ejecutar como yo* +
+*acceso a la organización*:
+
+- **No hay que compartir la carpeta de los 181 PDF**: el alumno los lee a través
+  del portal, no desde Drive.
+- **`SSC_DATA` no se comparte con nadie**: el alumno no puede abrir la hoja y ver
+  los votos, las definiciones ajenas o la configuración.
+- `Session.getActiveUser().getEmail()` sigue dando su correo (mismo dominio).
+
+Si se desplegara *como el usuario que accede*, habría que darles acceso de lectura
+al Drive y de edición a la hoja: se cae el portón de las rondas y el control de
+visibilidad. No compensa.
+
+**Aviso sobre las cuentas de grupo:** la identidad solo funciona si están en el
+Workspace del centro. Fuera de él, el correo puede venir vacío.
+
+### El obstáculo real: que puedan generar la clave
+
+Hay que probarlo **antes de construir nada** (va en F0):
+
+1. La cuenta del centro puede tener AI Studio bloqueado por el administrador del
+   Workspace.
+2. Con alumnado menor de edad, la generación de claves puede estar restringida
+   por la propia cuenta de Google.
+
+Si alguno de los dos casos se da, el diseño no cae: se añade una **clave de
+respaldo del departamento** en Propiedades del script, que solo se usa cuando el
+alumno no tiene la suya, y ahí el cupo semanal pasa a aplicarse a todos — deja de
+ser filtro de visitas y pasa a ser freno de gasto. Conviene tenerlo previsto,
+pero no construirlo hasta saber si hace falta.
+
+### Freno de consumo (independiente de quién pague)
 
 - Caché de respuestas: hoja `cache` con clave `hash(pregunta + docIds)`. Cuando 17
-  alumnos preguntan casi lo mismo sobre los mismos PDF, se sirve lo ya calculado.
+  alumnos preguntan casi lo mismo sobre los mismos PDF, se sirve lo ya calculado y
+  no se gasta cuota de nadie.
 - **Aviso técnico sobre el código actual:** `MAX_PDFS_PER_QUERY = 5` con
-  `MAX_PDF_BYTES = 15 MB` permite construir peticiones de hasta 75 MB, por encima
-  del límite de `UrlFetchApp` (~50 MB) y del tiempo de ejecución. Hay que limitar
-  el **total** de la petición, no solo cada archivo. A corregir en F1.
+  `MAX_PDF_BYTES = 15 MB` permite peticiones de hasta 75 MB, por encima del
+  límite de `UrlFetchApp` (~50 MB) y del tiempo de ejecución. Hay que limitar el
+  **total** de la petición, no solo cada archivo. A corregir en F1.
 
 ## 3. El concepto central: la Ronda
 
@@ -128,7 +163,7 @@ sea cambiar un archivo.
 |---|---|
 | `config_temas` | `id_tema`, `nombre`, `carpeta_id`, `visible`, `fecha_apertura`, `grupo`, `orden` |
 | `config_docs` | `doc_id`, `id_tema`, `nombre`, `visible` |
-| `alumnos` | `email`, `nombre`, `tipo`, `integrantes`, `grupo`, `rol`, `alta`, `ultima_conexion`, `consultas_semana`, `semana_iso`, `activo` |
+| `alumnos` | `email`, `nombre`, `tipo`, `integrantes`, `grupo`, `rol`, `alta`, `ultima_conexion`, `consultas_semana`, `semana_iso`, `clave_ok_el`, `activo` |
 | `rondas` | `id_ronda`, `id_tema`, `elemento`, `item`, `modo`, `enunciado`, `grupo`, `estado`, `abre_el`, `cierra_entrega_el`, `cierra_votacion_el` |
 | `aportaciones` | `id`, `id_ronda`, `email`, `texto`, `fuente_doc`, `fuente_pagina`, `etiqueta`, `creada_el`, `estado`, `puntos`, `sello` |
 | `votos` | `id_ronda`, `email_votante`, `id_aportacion`, `peso`, `creado_el` |
@@ -158,8 +193,10 @@ Una sola WebApp, una sola URL. El rol se decide en servidor contra `alumnos`.
 **Alumno**
 
 - `getSesion()` → rol, cupo restante si es visita, temas visibles, rondas activas
+- `probarClave(clave)` → valida contra Gemini y anota `clave_ok_el`; no la guarda
 - `listarEstructura()` → árbol **ya filtrado** en servidor
-- `preguntar(pregunta, docIds)` → valida visibilidad y descuenta cupo de visita
+- `preguntar(pregunta, docIds, clave)` → valida visibilidad, aplica cupo y usa la
+  clave en memoria; nunca se escribe en ningún sitio
 - `entregar(idRonda, {texto, fuenteDoc, pagina, etiqueta})`
 - `listarParaVotar(idRonda)` → error si no has entregado; anónimo y barajado
 - `votar(idRonda, idAportacion, peso)` → peso 3, 2 o 1
@@ -243,9 +280,9 @@ contraste medido/OEM es el diagnóstico.
 
 | Fase | Entrega | Desbloquea |
 |---|---|---|
-| F0 | embebido en Sites + `getActiveUser()` dentro del iframe | condiciona todo lo demás |
+| F0 | embebido en Sites + `getActiveUser()` en iframe + **¿pueden generar la clave?** | condiciona todo lo demás |
 | F1 | `SSC_DATA` + `Datos.gs` + altas + interruptores | quita el agobio de los 181 PDF |
-| F2 | roles, cupo semanal de visita, última conexión, eventos | control de acceso y de gasto |
+| F2 | pantalla de clave, roles, cupo semanal, última conexión, eventos | control de acceso |
 | F3 | rondas: entregar con fuente y etiqueta | contenido propio |
 | F4 | votación 3-2-1 con portón de entrega + sellado | el bucle completo |
 | F5 | volcado a `manual` + generador de HTML para Sites | el producto |
@@ -260,9 +297,13 @@ de construir encima.
   las estrellas ponderadas lo diluyen y tu sello decide. No se blinda más.
 - **El que no entrega se queda fuera del muro.** Por diseño; para eso está `pase`.
 - **Cuentas de grupo**: no se puede saber quién del grupo trabajó. Asumido.
+- **Clave en `localStorage`**: hay que volver a pegarla al cambiar de dispositivo.
 - **Textos casi idénticos** en `misma_pregunta`. Se alterna con `reparto`.
 
 ## 12. Pendiente de confirmar
 
 1. ¿Las cuentas de grupo estarán en el Workspace del centro? Si no, hay que
    rediseñar la identidad antes de F1 (ver sección 2 bis).
+2. ¿Está AI Studio disponible para las cuentas del alumnado del centro? Es lo
+   primero que hay que comprobar en F0: de ahí depende si hace falta la clave de
+   respaldo del departamento.
