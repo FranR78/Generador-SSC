@@ -3,17 +3,19 @@
 Ajusta aquí las rutas y parámetros. Todos los scripts importan de este archivo,
 así que no hay que tocar la lógica para reapuntar el corpus o cambiar de modelo.
 """
+import os
 from pathlib import Path
 
 # --- Rutas ---------------------------------------------------------------
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Carpeta con los PDF de origen. Por defecto usa corpus/ dentro del proyecto,
-# pero puedes apuntar a la carpeta real de Drive (la que tiene los cientos de PDF).
-# También se puede pasar por línea de comandos: python3 ingest.py "/ruta/a/pdf"
-CORPUS_DIR = BASE_DIR / "corpus"
+# Carpeta con los PDF de origen y carpeta de salida del índice.
+# Por defecto usan corpus/ e index/ dentro del proyecto, pero en Colab se
+# redirigen a Drive con las variables de entorno SSC_CORPUS_DIR / SSC_INDEX_DIR.
+# ingest.py también acepta la carpeta por argumento: python3 ingest.py "/ruta/pdf"
+CORPUS_DIR = Path(os.environ.get("SSC_CORPUS_DIR", BASE_DIR / "corpus"))
 
-INDEX_DIR = BASE_DIR / "index"
+INDEX_DIR = Path(os.environ.get("SSC_INDEX_DIR", BASE_DIR / "index"))
 CHUNKS_PATH = INDEX_DIR / "chunks.jsonl"        # salida de ingest.py
 EMBEDDINGS_PATH = INDEX_DIR / "index.npz"       # salida de embed.py (matriz)
 META_PATH = INDEX_DIR / "meta.jsonl"            # salida de embed.py (metadatos)

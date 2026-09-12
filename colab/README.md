@@ -1,13 +1,17 @@
-# colab/ — Notebook de indexado (pendiente)
+# colab/ — Indexado en la nube
 
-Aquí irá el notebook de Google Colab que:
+**`indexar.ipynb`**: abre en Google Colab (botón derecho → Abrir con → Colab, o
+súbelo a colab.research.google.com) y ejecuta las celdas en orden.
 
-1. Monta tu Google Drive (ve los PDF sin descargarlos al Mac).
-2. Descarga el código de `rag/` desde este repo.
-3. Ejecuta `ingest.py` + `embed.py` sobre la carpeta de PDF de Drive.
-4. Deja el índice (`index/`) listo para el portal.
+Qué hace, todo en la nube de Google (gratis, sin tocar el Mac ni el servidor):
 
-Todo corre en la nube de Google, gratis, y se puede lanzar desde el móvil.
+1. Autentica con tu cuenta Google.
+2. Localiza los 181 PDF de la carpeta de Drive (por ID, incluye subcarpetas).
+3. Los descarga a la máquina temporal de Colab.
+4. Descarga el código `rag/` desde GitHub e instala dependencias.
+5. Pide tu API key de Gemini y monta tu Drive para la salida.
+6-7. Trocea (`ingest`) y crea el índice de embeddings (`embed`).
+8. Prueba una consulta.
 
-> Aún no construido. Es el siguiente paso una vez confirmada la ruta de la
-> carpeta de PDF en Drive.
+El índice queda en tu Drive en **`MyDrive/Generador-SSC-index/`**, listo para
+enchufarlo al portal. Se puede lanzar desde el móvil.
