@@ -1,6 +1,6 @@
 # Plan — Panel de control, rondas de definiciones y manual del ciclo
 
-Documento de diseño (v5, decisiones cerradas). No toca `rag/**` ni `portal/**`.
+Documento de diseño (v6, decisiones cerradas). No toca `rag/**` ni `portal/**`.
 
 ## 0. Decisiones tomadas
 
@@ -8,8 +8,8 @@ Documento de diseño (v5, decisiones cerradas). No toca `rag/**` ni `portal/**`.
 |---|---|
 | Clave de Gemini | **La suya, cada alumno.** Se guarda en su navegador, nunca en el servidor |
 | Dónde vive el estado | Hoja de cálculo en Drive (`SSC_DATA`). Sin base de datos externa |
-| Acceso | Solo cuentas **dadas de alta por el profesor**. El dominio no basta |
-| Tipo de cuenta | Corporativa del centro o de grupo; ambas válidas, siempre autorizadas a mano |
+| Acceso | **Código personal** que genera el profesor al dar de alta |
+| Tipo de cuenta | Personales. La identidad la da el código, no la cuenta de Google |
 | Visita (sin alta) | Cupo de **3 consultas por semana**, luego pantalla de "pide el alta" |
 | Tiempo de permanencia | **No se mide.** Solo `última conexión` y registro de acciones |
 | Votación | **3 estrellas ponderadas (3-2-1)** — confirmado, anónimas mientras dura. Sin voto negativo |
@@ -23,25 +23,48 @@ Documento de diseño (v5, decisiones cerradas). No toca `rag/**` ni `portal/**`.
 Gemini. Sin identidad, sin estado, sin configuración. Todo el corpus visible
 siempre: 181 PDF de golpe.
 
-## 2. Roles y acceso
+## 2. Identidad y acceso: código personal
 
-| Rol | Cómo se obtiene | Qué puede |
+Las cuentas del alumnado son **personales** (no del Workspace del centro). Eso
+descarta identificarlos por su cuenta de Google: un WebApp desplegado *como yo*
+devuelve correo vacío para quien está fuera del dominio, y desplegarlo *como el
+usuario que accede* obligaría a darles permisos sobre el Drive de los PDF y sobre
+`SSC_DATA`. Ninguna de las dos sirve.
+
+**Solución: código de acceso personal.** Al dar de alta a alguien generas un
+código corto (p. ej. `7K4-QR2`). El alumno lo pega una vez y queda guardado en su
+navegador junto a su clave de Gemini. Ese código **es** su identidad.
+
+| Rol | Cómo entra | Qué puede |
 |---|---|---|
-| `visita` | Entra con cuenta del dominio pero no está en `alumnos` | 3 consultas por semana; no entrega, no vota, no ve rondas |
-| `alumno` | Alta hecha por el profesor | Todo el corpus visible, rondas, voto, panel propio |
-| `profesor` | Lista blanca en `config` | Panel de control completo |
+| `visita` | Código de visita (los repartes libremente) | 3 consultas por semana; no entrega, no vota, no ve rondas |
+| `alumno` | Código personal que le das al darle el alta | Corpus visible, rondas, voto, panel propio |
+| `profesor` | Código propio con rol `profesor` | Panel de control completo |
 
-Notas:
+Ventajas de este camino:
 
-- El cupo de visita se cuenta en `alumnos` (`consultas_semana` + `semana_iso`),
-  no en el navegador: vaciar la caché no lo reinicia. El reseteo es perezoso: al
-  consultar, si la semana ISO guardada no es la actual, el contador vuelve a 0.
-- **Cuentas de grupo**: una cuenta = un participante a todos los efectos. Una
-  entrega y un juego de estrellas por cuenta, no por persona. Campo
-  `tipo` (`individual` / `grupo`) e `integrantes` para que en el manual figuren
-  todos los nombres.
-- El alta es un botón del panel: pegas los correos, eliges grupo, listo. Nunca
-  configuración por alumno más allá de eso.
+- Funciona con cualquier cuenta, **dentro o fuera del iframe de Sites**, en móvil
+  y sin cookies de terceros. Es lo que menos se puede romper.
+- No hace falta pedir el correo: al dar de alta pones el nombre que quieras. **Se
+  guardan menos datos personales de menores**, que es justo lo deseable.
+- Un código por grupo cubre el caso de las cuentas de grupo sin cambiar nada.
+
+Contras asumidos:
+
+- **Se pueden prestar el código.** En un aula de 17 con el manual público se
+  detecta solo; si algún día molesta, la mejora es login con Google (Identity
+  Services) verificando el token en servidor, sin tocar el resto del diseño.
+- Si borra los datos del navegador, tiene que volver a pegar código y clave.
+
+Reglas de implementación, importantes:
+
+- El WebApp se despliega **ejecutar como yo** + **acceso: cualquier persona**. Por
+  tanto **toda función del servidor valida el código como primera línea**, sin
+  excepción. Sin código válido no se devuelve nada, ni el árbol de documentos.
+- Los PDF y `SSC_DATA` **no se comparten con nadie**: se leen con tus permisos a
+  través del portal.
+- Los códigos se pueden revocar (`activo = NO`) y regenerar desde el panel.
+- El cupo del visitante se cuenta contra su código, no contra el navegador.
 
 ## 2 bis. La clave de Gemini la pone cada alumno
 
@@ -80,29 +103,7 @@ Aunque la clave sea del alumno, el WebApp se despliega como *ejecutar como yo* +
   del portal, no desde Drive.
 - **`SSC_DATA` no se comparte con nadie**: el alumno no puede abrir la hoja y ver
   los votos, las definiciones ajenas o la configuración.
-- `Session.getActiveUser().getEmail()` sigue dando su correo (mismo dominio).
-
-Si se desplegara *como el usuario que accede*, habría que darles acceso de lectura
-al Drive y de edición a la hoja: se cae el portón de las rondas y el control de
-visibilidad. No compensa.
-
-**Aviso sobre las cuentas de grupo:** la identidad solo funciona si están en el
-Workspace del centro. Fuera de él, el correo puede venir vacío.
-
-### El obstáculo real: que puedan generar la clave
-
-Hay que probarlo **antes de construir nada** (va en F0):
-
-1. La cuenta del centro puede tener AI Studio bloqueado por el administrador del
-   Workspace.
-2. Con alumnado menor de edad, la generación de claves puede estar restringida
-   por la propia cuenta de Google.
-
-Si alguno de los dos casos se da, el diseño no cae: se añade una **clave de
-respaldo del departamento** en Propiedades del script, que solo se usa cuando el
-alumno no tiene la suya, y ahí el cupo semanal pasa a aplicarse a todos — deja de
-ser filtro de visitas y pasa a ser freno de gasto. Conviene tenerlo previsto,
-pero no construirlo hasta saber si hace falta.
+- La identidad no depende de la cuenta de Google: la da el código (sección 2).
 
 ### Freno de consumo (independiente de quién pague)
 
@@ -129,7 +130,7 @@ Reglas que garantizan el trabajo:
 1. **Para ver las definiciones de los demás hay que haber entregado la tuya.**
    Ese portón convierte "leer a los compañeros" en algo inevitable.
 2. En votación se ven **sin autor** y en **orden distinto** por alumno (barajado
-   con semilla derivada de su correo): no gana la primera de la lista.
+   con semilla derivada de su código): no gana la primera de la lista.
 3. Cada uno reparte **3 estrellas ponderadas**: una de 3 puntos, una de 2 y una
    de 1. Obliga a ordenar preferencias, no solo a marcar lo primero decente.
 4. Al cerrar se revelan autores, se ve el ranking y tú pones el sello técnico.
@@ -163,11 +164,11 @@ sea cambiar un archivo.
 |---|---|
 | `config_temas` | `id_tema`, `nombre`, `carpeta_id`, `visible`, `fecha_apertura`, `grupo`, `orden` |
 | `config_docs` | `doc_id`, `id_tema`, `nombre`, `visible` |
-| `alumnos` | `email`, `nombre`, `tipo`, `integrantes`, `grupo`, `rol`, `alta`, `ultima_conexion`, `consultas_semana`, `semana_iso`, `clave_ok_el`, `activo` |
+| `alumnos` | `codigo`, `nombre`, `tipo`, `integrantes`, `grupo`, `rol`, `alta`, `ultima_conexion`, `consultas_semana`, `semana_iso`, `clave_ok_el`, `activo` |
 | `rondas` | `id_ronda`, `id_tema`, `elemento`, `item`, `modo`, `enunciado`, `grupo`, `estado`, `abre_el`, `cierra_entrega_el`, `cierra_votacion_el` |
-| `aportaciones` | `id`, `id_ronda`, `email`, `texto`, `fuente_doc`, `fuente_pagina`, `etiqueta`, `creada_el`, `estado`, `puntos`, `sello` |
-| `votos` | `id_ronda`, `email_votante`, `id_aportacion`, `peso`, `creado_el` |
-| `eventos` | `ts`, `email`, `accion`, `detalle` |
+| `aportaciones` | `id`, `id_ronda`, `codigo`, `texto`, `fuente_doc`, `fuente_pagina`, `etiqueta`, `creada_el`, `estado`, `puntos`, `sello` |
+| `votos` | `id_ronda`, `codigo_votante`, `id_aportacion`, `peso`, `creado_el` |
+| `eventos` | `ts`, `codigo`, `accion`, `detalle` |
 | `manual` | `id_tema`, `elemento`, `item`, `texto_final`, `autor`, `fuente`, `etiqueta`, `fecha`, `curso` |
 
 Implementación:
@@ -177,13 +178,13 @@ Implementación:
 - `eventos` es append-only y solo registra acciones con valor (consulta, apertura
   de documento, entrega, voto). Es lo que responde a "yo sí he trabajado".
 - `LockService` en entregar y votar. Unicidad: una aportación por
-  `(id_ronda, email)`; un voto por `(id_ronda, email_votante, peso)` y por
-  `(id_ronda, email_votante, id_aportacion)` — ni dos estrellas del mismo valor
+  `(id_ronda, codigo)`; un voto por `(id_ronda, codigo, peso)` y por
+  `(id_ronda, codigo, id_aportacion)` — ni dos estrellas del mismo valor
   ni dos estrellas a la misma definición.
 - `curso` en `manual` es lo que permite que 26/27 amplíe lo de 25/26 sin borrarlo.
 - Con 17-60 cuentas las cuotas de Apps Script no son un problema.
 
-**Protección de datos:** correo institucional, acción y fecha. Nada más. Aviso en
+**Protección de datos:** código, nombre, acción y fecha. **Sin correos.** Nada más. Aviso en
 la pantalla de acceso, uso exclusivamente docente, borrado al cierre de curso.
 
 ## 5. Contrato del servidor
@@ -204,11 +205,12 @@ Una sola WebApp, una sola URL. El rol se decide en servidor contra `alumnos`.
 
 **Profesor**
 
-- `altaCuentas(correos, grupo, tipo)` / `bajaCuenta(email)`
+- `altaCuentas(nombres, grupo, tipo)` → genera y devuelve los códigos
+- `revocar(codigo)` / `regenerar(codigo)`
 - `setVisible(tipo, id, visible, fechaApertura)`
 - `crearRonda(...)`, `pasarAVotacion(id)`, `cerrarRonda(id)`
 - `sellar(idAportacion)` → vuelca a `manual`
-- `pase(email, idRonda)` → desbloquea a quien entregó en papel o llegó tarde
+- `pase(codigo, idRonda)` → desbloquea a quien entregó en papel o llegó tarde
 - `pulso(grupo)` → última conexión, sin entregar, sin votar
 - `publicarManual(idTema)` → genera el HTML del manual
 
@@ -217,7 +219,7 @@ alumno ve el corpus entero mirando el código fuente.
 
 ## 6. Panel del profesor
 
-1. Altas: pegar correos, elegir grupo, alta.
+1. Altas: pegar la lista de nombres, elegir grupo → salen los códigos para repartir.
 2. Interruptores por tema y documento, con fecha de apertura.
 3. Rondas: crear, abrir, votación, cerrar. Y las fechas hacen el resto.
 4. Bandeja de sellado: lo más votado esperando tu validación. Un clic.
@@ -280,8 +282,8 @@ contraste medido/OEM es el diagnóstico.
 
 | Fase | Entrega | Desbloquea |
 |---|---|---|
-| F0 | embebido en Sites + `getActiveUser()` en iframe + **¿pueden generar la clave?** | condiciona todo lo demás |
-| F1 | `SSC_DATA` + `Datos.gs` + altas + interruptores | quita el agobio de los 181 PDF |
+| F0 | embebido del WebApp en Sites + una clave de AI Studio de prueba funcionando | condiciona todo lo demás |
+| F1 | `SSC_DATA` + `Datos.gs` + códigos de acceso + interruptores | quita el agobio de los 181 PDF |
 | F2 | pantalla de clave, roles, cupo semanal, última conexión, eventos | control de acceso |
 | F3 | rondas: entregar con fuente y etiqueta | contenido propio |
 | F4 | votación 3-2-1 con portón de entrega + sellado | el bucle completo |
@@ -297,13 +299,10 @@ de construir encima.
   las estrellas ponderadas lo diluyen y tu sello decide. No se blinda más.
 - **El que no entrega se queda fuera del muro.** Por diseño; para eso está `pase`.
 - **Cuentas de grupo**: no se puede saber quién del grupo trabajó. Asumido.
-- **Clave en `localStorage`**: hay que volver a pegarla al cambiar de dispositivo.
+- **Clave y código en `localStorage`**: hay que repegarlos al cambiar de dispositivo.
+- **Préstamo de código**: posible; se asume hasta que dé problemas.
 - **Textos casi idénticos** en `misma_pregunta`. Se alterna con `reparto`.
 
 ## 12. Pendiente de confirmar
 
-1. ¿Las cuentas de grupo estarán en el Workspace del centro? Si no, hay que
-   rediseñar la identidad antes de F1 (ver sección 2 bis).
-2. ¿Está AI Studio disponible para las cuentas del alumnado del centro? Es lo
-   primero que hay que comprobar en F0: de ahí depende si hace falta la clave de
-   respaldo del departamento.
+1. Nada pendiente. El diseño está cerrado; F0 es lo primero a ejecutar.
