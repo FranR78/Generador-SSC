@@ -9,6 +9,9 @@
  * cada alumno use su propia clave y su propio estado.
  */
 var ROOT_FOLDER_PROP = 'ROOT_FOLDER_ID';
+// Carpeta de PDF por defecto (los 181 de climatización). Se puede sobreescribir
+// definiendo ROOT_FOLDER_ID en Propiedades del script.
+var ROOT_FOLDER_DEFAULT = '1cuQ8dpDkQg7lSFOBeP6Lf30gRP-7jHvv';
 var MAX_PDFS_PER_QUERY = 5;
 var MAX_PDF_BYTES = 15 * 1024 * 1024;
 
@@ -30,7 +33,7 @@ function usuarioActual() {
 }
 
 function getRootFolder_() {
-  var id = PropertiesService.getScriptProperties().getProperty(ROOT_FOLDER_PROP);
+  var id = PropertiesService.getScriptProperties().getProperty(ROOT_FOLDER_PROP) || ROOT_FOLDER_DEFAULT;
   if (!id) throw new Error('Falta configurar ROOT_FOLDER_ID en Propiedades del script.');
   return DriveApp.getFolderById(id);
 }
