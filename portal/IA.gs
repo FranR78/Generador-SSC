@@ -5,8 +5,8 @@
  */
 var IA_KEY_PROP = 'AI_API_KEY';
 var IA_MODEL_OK_PROP = 'AI_MODEL_OK';
-// Cascada por cuota (versiones explícitas, no alias "latest"): se prueban en orden.
-var IA_MODELOS = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash'];
+// Fallback si falla el descubrimiento dinámico de modelos. Se prueban en orden.
+var IA_FALLBACK = ['gemini-3.6-flash', 'gemini-2.5-flash', 'gemini-flash-latest'];
 
 function guardarClaveIA(clave) {
   clave = (clave || '').trim();
@@ -30,13 +30,36 @@ function ia_getKey_() {
   return k;
 }
 
-/** Cascada empezando por el último modelo que funcionó para este usuario. */
-function ia_modelos_() {
+/** Modelos que la CLAVE tiene realmente (con generateContent), flash primero. */
+function ia_modelosDisponibles_(key) {
+  try {
+    var resp = UrlFetchApp.fetch(
+      'https://generativelanguage.googleapis.com/v1beta/models?pageSize=200&key=' + encodeURIComponent(key),
+      { muteHttpExceptions: true });
+    if (resp.getResponseCode() !== 200) return [];
+    var models = (JSON.parse(resp.getContentText()).models) || [];
+    var names = models.filter(function (m) {
+      return (m.supportedGenerationMethods || []).indexOf('generateContent') >= 0;
+    }).map(function (m) { return String(m.name).replace(/^models\//, ''); });
+    function score(n) {                       // flash estable primero; evita alias volátiles
+      var s = 0;
+      if (n.indexOf('flash') >= 0) s -= 4;
+      if (n.indexOf('lite') >= 0) s += 1;
+      if (/latest|exp|preview|thinking/.test(n)) s += 3;
+      return s;
+    }
+    names.sort(function (a, b) { return score(a) - score(b); });
+    return names;
+  } catch (e) { return []; }
+}
+
+/** Cascada: último que funcionó + los que la clave tiene de verdad (o fallback). */
+function ia_modelos_(key) {
   var ok = PropertiesService.getUserProperties().getProperty(IA_MODEL_OK_PROP);
-  if (ok && IA_MODELOS.indexOf(ok) > 0) {
-    return [ok].concat(IA_MODELOS.filter(function (m) { return m !== ok; }));
-  }
-  return IA_MODELOS.slice();
+  var base = ia_modelosDisponibles_(key);
+  if (!base.length) base = IA_FALLBACK.slice();
+  if (ok) base = [ok].concat(base.filter(function (m) { return m !== ok; }));
+  return base;
 }
 
 function ia_call_(modelo, payload, key) {
@@ -55,7 +78,7 @@ function ia_call_(modelo, payload, key) {
 function comprobarClaveIA() {
   var key = ia_getKey_();
   var payload = { contents: [{ role: 'user', parts: [{ text: 'ping' }] }] };
-  var modelos = ia_modelos_();
+  var modelos = ia_modelos_(key);
   for (var i = 0; i < modelos.length; i++) {
     var r = ia_call_(modelos[i], payload, key);
     if (r.status === 200) {
@@ -99,7 +122,7 @@ function preguntar(pregunta, fileIds) {
     contents: [{ role: 'user', parts: parts }]
   };
 
-  var modelos = ia_modelos_();
+  var modelos = ia_modelos_(key);
   var ultimoError = 'Sin respuesta.';
   for (var i = 0; i < modelos.length; i++) {
     var r = ia_call_(modelos[i], payload, key);
