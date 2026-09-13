@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <base target="_top">
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --azul: #038df1;
+      --azul-osc: #026bb5;
+      --fondo: #E8F0F3;
+      --borde: #d3dee4;
+      --texto: #10222c;
+      --ok: #1e874b;
+      --err: #8a1f11;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Open Sans', Arial, sans-serif; background: var(--fondo); color: var(--texto); }
+
+    header {
+      background: var(--azul-osc); color: #fff;
+      padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; gap: 10px;
+    }
+    header .marca h1 { font-size: 16px; margin: 0; font-weight: 700; }
+    header .marca p { margin: 1px 0 0; font-size: 11px; opacity: .85; }
+    header .quien { font-size: 11px; opacity: .9; text-align: right; max-width: 45%; word-break: break-all; }
+
+    nav {
+      display: flex; gap: 4px; background: var(--azul); padding: 6px 8px;
+      position: sticky; top: 0; z-index: 5; overflow-x: auto;
+    }
+    nav button {
+      background: transparent; color: #fff; border: none; border-radius: 8px;
+      padding: 8px 14px; font-size: 14px; font-weight: 600; cursor: pointer; white-space: nowrap; opacity: .8;
+    }
+    nav button.activo { background: #fff; color: var(--azul-osc); opacity: 1; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 12px; }
+    section[hidden] { display: none; }
+    .panel { background: #fff; border: 1px solid var(--borde); border-radius: 12px; padding: 14px; margin-bottom: 12px; }
+    .panel h2 { font-size: 15px; margin: 0 0 10px; color: var(--azul-osc); }
+    .aviso { font-size: 12px; color: #5b6b73; margin-top: 8px; }
+    .placeholder { text-align: center; color: #7c8b93; padding: 30px 10px; font-size: 14px; }
+
+    /* Consultar */
+    #arbol { max-height: 240px; overflow-y: auto; font-size: 14px; }
+    .carpeta { margin-left: 4px; border-left: 2px solid var(--borde); padding-left: 8px; }
+    .carpeta > summary { cursor: pointer; font-weight: 600; padding: 4px 0; }
+    label.archivo { display: flex; align-items: center; gap: 6px; padding: 3px 0; font-size: 13px; }
+    label.archivo input { accent-color: var(--azul); }
+    #seleccion { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; min-height: 20px; }
+    .chip { background: #e4f3fe; border: 1px solid var(--azul); color: var(--azul-osc); border-radius: 14px; padding: 3px 10px; font-size: 12px; }
+
+    #mensajes { display: flex; flex-direction: column; gap: 10px; max-height: 46vh; overflow-y: auto; margin-bottom: 10px; }
+    .msg { padding: 10px 12px; border-radius: 10px; font-size: 14px; line-height: 1.45; white-space: pre-wrap; }
+    .msg.user { background: var(--azul); color: #fff; align-self: flex-end; max-width: 85%; }
+    .msg.bot { background: var(--fondo); border: 1px solid var(--borde); max-width: 92%; }
+    .msg.error { background: #fdecea; border: 1px solid #f5b3ad; color: var(--err); }
+    .fuentes { margin-top: 6px; font-size: 11px; opacity: .75; }
+
+    form.fila { display: flex; gap: 8px; }
+    textarea, input[type="password"], input[type="text"] {
+      flex: 1; resize: none; border: 1px solid var(--borde); border-radius: 8px;
+      padding: 9px 11px; font-family: inherit; font-size: 14px;
+    }
+    textarea { min-height: 44px; }
+    button.accion {
+      background: var(--azul); color: #fff; border: none; border-radius: 8px;
+      padding: 0 16px; font-weight: 600; font-size: 14px; cursor: pointer;
+    }
+    button.accion.sec { background: #fff; color: var(--azul-osc); border: 1px solid var(--azul); }
+    button.accion:disabled { opacity: .5; cursor: default; }
+    .estado { font-size: 13px; margin-top: 8px; }
+    .estado.ok { color: var(--ok); }
+    .estado.err { color: var(--err); }
+
+    @media (max-width: 600px) {
+      header .marca h1 { font-size: 15px; }
+      main { padding: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="marca">
+      <h1>Portal de aprendizaje</h1>
+      <p>Electromecánica de Vehículos · IES La Palma</p>
+    </div>
+    <div class="quien" id="quien">…</div>
+  </header>
+
+  <nav id="nav">
+    <button data-sec="consultar" class="activo">Consultar</button>
+    <button data-sec="manual">Manual</button>
+    <button data-sec="juegos">Juegos</button>
+    <button data-sec="cuenta">Mi cuenta</button>
+  </nav>
+
+  <main>
+    <section id="sec-consultar"><?!= include('Consulta') ?></section>
+    <section id="sec-manual" hidden><?!= include('Manual') ?></section>
+    <section id="sec-juegos" hidden><?!= include('Juegos') ?></section>
+    <section id="sec-cuenta" hidden><?!= include('Cuenta') ?></section>
+  </main>
+
+  <script>
+    // ---------- Router ----------
+    var seccionActual = 'consultar';
+    var arbolCargado = false, cuentaCargada = false;
+
+    function mostrar(sec) {
+      seccionActual = sec;
+      ['consultar', 'manual', 'juegos', 'cuenta'].forEach(function (s) {
+        document.getElementById('sec-' + s).hidden = (s !== sec);
+      });
+      Array.prototype.forEach.call(document.querySelectorAll('#nav button'), function (b) {
+        b.classList.toggle('activo', b.getAttribute('data-sec') === sec);
+      });
+      if (sec === 'consultar' && !arbolCargado) cargarArbol();
+      if (sec === 'cuenta' && !cuentaCargada) initCuenta();
+    }
+    Array.prototype.forEach.call(document.querySelectorAll('#nav button'), function (b) {
+      b.addEventListener('click', function () { mostrar(b.getAttribute('data-sec')); });
+    });
+
+    // ---------- Identidad ----------
+    google.script.run.withSuccessHandler(function (email) {
+      document.getElementById('quien').textContent = email || 'invitado';
+    }).usuarioActual();
+
+    // ---------- Consultar ----------
+    var seleccionados = {}; // id -> nombre
+
+    function actualizarChips() {
+      var cont = document.getElementById('seleccion');
+      cont.innerHTML = '';
+      Object.keys(seleccionados).forEach(function (id) {
+        var chip = document.createElement('span');
+        chip.className = 'chip';
+        chip.textContent = seleccionados[id];
+        cont.appendChild(chip);
+      });
+    }
+
+    function onToggle(id, nombre, checkbox) {
+      if (checkbox.checked) {
+        if (Object.keys(seleccionados).length >= 5) {
+          alert('Máximo 5 PDF por pregunta.');
+          checkbox.checked = false;
+          return;
+        }
+        seleccionados[id] = nombre;
+      } else {
+        delete seleccionados[id];
+      }
+      actualizarChips();
+    }
+
+    function nodoArchivo(f) {
+      var lab = document.createElement('label');
+      lab.className = 'archivo';
+      var chk = document.createElement('input');
+      chk.type = 'checkbox';
+      chk.addEventListener('change', function () { onToggle(f.id, f.name, chk); });
+      lab.appendChild(chk);
+      lab.appendChild(document.createTextNode(f.name));
+      return lab;
+    }
+
+    function renderNodo(nodo) {
+      var det = document.createElement('details');
+      det.className = 'carpeta';
+      var sum = document.createElement('summary');
+      sum.textContent = nodo.name;
+      det.appendChild(sum);
+      nodo.files.forEach(function (f) { det.appendChild(nodoArchivo(f)); });
+      nodo.children.forEach(function (h) { det.appendChild(renderNodo(h)); });
+      return det;
+    }
+
+    function cargarArbol() {
+      var cont = document.getElementById('arbol');
+      cont.textContent = 'Cargando colección…';
+      google.script.run
+        .withSuccessHandler(function (raiz) {
+          arbolCargado = true;
+          cont.innerHTML = '';
+          if (!raiz.children.length && !raiz.files.length) {
+            cont.textContent = 'No hay PDF en la carpeta configurada todavía.';
+            return;
+          }
+          raiz.children.forEach(function (h) { cont.appendChild(renderNodo(h)); });
+          raiz.files.forEach(function (f) { cont.appendChild(nodoArchivo(f)); });
+        })
+        .withFailureHandler(function (err) { cont.textContent = 'Error al cargar la colección: ' + err.message; })
+        .listarEstructura();
+    }
+
+    function addMsg(texto, tipo, fuentes) {
+      var cont = document.getElementById('mensajes');
+      var div = document.createElement('div');
+      div.className = 'msg ' + tipo;
+      div.textContent = texto;
+      if (fuentes && fuentes.length) {
+        var f = document.createElement('div');
+        f.className = 'fuentes';
+        f.textContent = 'Fuente: ' + fuentes.join(', ');
+        div.appendChild(f);
+      }
+      cont.appendChild(div);
+      cont.scrollTop = cont.scrollHeight;
+    }
+
+    document.getElementById('form-pregunta').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var campo = document.getElementById('pregunta');
+      var pregunta = campo.value.trim();
+      if (!pregunta) return;
+      var ids = Object.keys(seleccionados);
+      if (!ids.length) { alert('Selecciona al menos un PDF antes de preguntar.'); return; }
+
+      addMsg(pregunta, 'user');
+      campo.value = '';
+      var btn = document.getElementById('btn-enviar');
+      btn.disabled = true;
+      google.script.run
+        .withSuccessHandler(function (res) { addMsg(res.respuesta, 'bot', res.fuentes); btn.disabled = false; })
+        .withFailureHandler(function (err) { addMsg(err.message, 'error'); btn.disabled = false; })
+        .preguntar(pregunta, ids);
+    });
+
+    // ---------- Mi cuenta (clave IA) ----------
+    function pintaEstadoClave(tiene) {
+      var e = document.getElementById('cuenta-estado');
+      e.textContent = tiene ? 'Tienes una clave guardada.' : 'Aún no has guardado ninguna clave.';
+      e.className = 'estado ' + (tiene ? 'ok' : 'err');
+    }
+
+    function initCuenta() {
+      cuentaCargada = true;
+      google.script.run.withSuccessHandler(pintaEstadoClave).tengoClaveIA();
+    }
+
+    document.getElementById('form-clave').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var inp = document.getElementById('clave');
+      var clave = inp.value.trim();
+      if (!clave) return;
+      var e2 = document.getElementById('cuenta-estado');
+      e2.textContent = 'Guardando…'; e2.className = 'estado';
+      google.script.run
+        .withSuccessHandler(function () { inp.value = ''; pintaEstadoClave(true); })
+        .withFailureHandler(function (err) { e2.textContent = err.message; e2.className = 'estado err'; })
+        .guardarClaveIA(clave);
+    });
+
+    document.getElementById('btn-comprobar').addEventListener('click', function () {
+      var e = document.getElementById('cuenta-estado');
+      e.textContent = 'Comprobando…'; e.className = 'estado';
+      google.script.run
+        .withSuccessHandler(function (r) {
+          e.textContent = r.ok ? ('✅ La clave funciona (modelo ' + r.modelo + ')') : ('❌ ' + r.error);
+          e.className = 'estado ' + (r.ok ? 'ok' : 'err');
+        })
+        .withFailureHandler(function (err) { e.textContent = err.message; e.className = 'estado err'; })
+        .comprobarClaveIA();
+    });
+
+    document.getElementById('btn-borrar').addEventListener('click', function () {
+      if (!confirm('¿Borrar tu clave guardada?')) return;
+      google.script.run.withSuccessHandler(function () { pintaEstadoClave(false); }).borrarClaveIA();
+    });
+  </script>
+</body>
+</html>
