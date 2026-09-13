@@ -77,6 +77,10 @@ function preguntar(pregunta, fileIds) {
   if (!fileIds || !fileIds.length) throw new Error('Selecciona al menos un PDF.');
   if (fileIds.length > MAX_PDFS_PER_QUERY) throw new Error('Máximo ' + MAX_PDFS_PER_QUERY + ' PDF por pregunta.');
 
+  var usuario = usuarioActual();
+  var estado = gate_estado(usuario);
+  if (estado.bloqueado) throw new Error(gate_mensajeBloqueo_(estado));
+
   var key = ia_getKey_();
   var parts = [], nombres = [];
   fileIds.forEach(function (id) {
@@ -104,7 +108,8 @@ function preguntar(pregunta, fileIds) {
       if (c && c.content && c.content.parts) {
         PropertiesService.getUserProperties().setProperty(IA_MODEL_OK_PROP, modelos[i]);
         var texto = c.content.parts.map(function (p) { return p.text || ''; }).join('\n');
-        return { respuesta: texto, fuentes: nombres, modelo: modelos[i] };
+        db_incConsulta_(usuario);
+        return { respuesta: texto, fuentes: nombres, modelo: modelos[i], estado: miEstado() };
       }
       ultimoError = 'Respuesta vacía; reformula la pregunta.';
     } else if (r.status === 404) {

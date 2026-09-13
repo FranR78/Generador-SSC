@@ -117,6 +117,8 @@
         b.classList.toggle('activo', b.getAttribute('data-sec') === sec);
       });
       if (sec === 'consultar' && !arbolCargado) cargarArbol();
+      if (sec === 'consultar') refrescarGate();
+      if (sec === 'manual') initManual();
       if (sec === 'cuenta' && !cuentaCargada) initCuenta();
     }
     Array.prototype.forEach.call(document.querySelectorAll('#nav button'), function (b) {
@@ -224,10 +226,101 @@
       var btn = document.getElementById('btn-enviar');
       btn.disabled = true;
       google.script.run
-        .withSuccessHandler(function (res) { addMsg(res.respuesta, 'bot', res.fuentes); btn.disabled = false; })
+        .withSuccessHandler(function (res) {
+          addMsg(res.respuesta, 'bot', res.fuentes);
+          btn.disabled = false;
+          if (res.estado) pintarGate(res.estado);
+        })
         .withFailureHandler(function (err) { addMsg(err.message, 'error'); btn.disabled = false; })
         .preguntar(pregunta, ids);
     });
+
+    // ---------- Participación (gating) ----------
+    function pintarGate(est) {
+      var g = document.getElementById('gate-info');
+      if (!g) return;
+      if (est.bloqueado) {
+        g.textContent = '⛔ ' + est.mensaje;
+        g.className = 'estado err';
+      } else {
+        g.textContent = 'Consultas: ' + est.consultas + '/' + est.permitidas + ' · te quedan ' + est.restantes + '.';
+        g.className = 'estado ok';
+      }
+    }
+    function refrescarGate() {
+      google.script.run.withSuccessHandler(pintarGate).miEstado();
+    }
+
+    // ---------- Manual (tareas + aportar + valorar) ----------
+    function initManual() {
+      google.script.run.withSuccessHandler(function (est) {
+        var e = document.getElementById('manual-estado');
+        e.textContent = 'Aportaciones: ' + est.aportaciones + ' · valoraciones: ' + est.valoraciones +
+          ' · consultas ' + est.consultas + '/' + est.permitidas +
+          (est.bloqueado ? ' (bloqueado: ' + est.mensaje + ')' : '');
+        e.className = 'estado ' + (est.bloqueado ? 'err' : 'ok');
+      }).miEstado();
+      cargarTareas();
+      cargarValorar();
+    }
+
+    function cargarTareas() {
+      google.script.run.withSuccessHandler(function (tareas) {
+        var sel = document.getElementById('aporta-tarea');
+        sel.innerHTML = '';
+        if (!tareas.length) { sel.innerHTML = '<option value="">No hay tareas abiertas</option>'; return; }
+        sel.appendChild(new Option('Elige una tarea…', ''));
+        tareas.forEach(function (t) { sel.appendChild(new Option('[' + t.seccion + '] ' + t.enunciado, t.tarea_id)); });
+      }).tareasAbiertas();
+    }
+
+    document.getElementById('form-aporta').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var tarea = document.getElementById('aporta-tarea').value;
+      var texto = document.getElementById('aporta-texto').value.trim();
+      var est = document.getElementById('aporta-estado');
+      if (!tarea) { est.textContent = 'Elige una tarea.'; est.className = 'estado err'; return; }
+      est.textContent = 'Enviando…'; est.className = 'estado';
+      google.script.run
+        .withSuccessHandler(function () {
+          document.getElementById('aporta-texto').value = '';
+          est.textContent = '✅ Respuesta enviada.'; est.className = 'estado ok';
+          initManual();
+        })
+        .withFailureHandler(function (err) { est.textContent = err.message; est.className = 'estado err'; })
+        .aportar(tarea, texto);
+    });
+
+    function cargarValorar() {
+      var cont = document.getElementById('valorar-lista');
+      cont.innerHTML = '<div class="placeholder">Cargando…</div>';
+      google.script.run.withSuccessHandler(function (items) {
+        cont.innerHTML = '';
+        if (!items.length) { cont.innerHTML = '<div class="placeholder">No hay respuestas de otros por valorar ahora.</div>'; return; }
+        items.forEach(function (it) {
+          var card = document.createElement('div');
+          card.style.cssText = 'border:1px solid var(--borde); border-radius:8px; padding:10px; margin-bottom:8px;';
+          var q = document.createElement('div'); q.style.cssText = 'font-size:12px; color:#5b6b73; margin-bottom:4px;'; q.textContent = it.enunciado;
+          var t = document.createElement('div'); t.style.cssText = 'font-size:14px; white-space:pre-wrap; margin-bottom:8px;'; t.textContent = it.texto;
+          var fila = document.createElement('div'); fila.style.cssText = 'display:flex; gap:6px; align-items:center;';
+          var sel = document.createElement('select'); sel.style.cssText = 'padding:6px 8px; border:1px solid var(--borde); border-radius:6px;';
+          [1,2,3,4,5].forEach(function (n) { sel.appendChild(new Option(n + ' ★', n)); });
+          sel.value = '4';
+          var b = document.createElement('button'); b.className = 'accion sec'; b.type = 'button'; b.textContent = 'Valorar';
+          b.addEventListener('click', function () {
+            b.disabled = true;
+            google.script.run
+              .withSuccessHandler(function () { card.remove(); initManual(); })
+              .withFailureHandler(function (err) { b.disabled = false; alert(err.message); })
+              .valorar(it.aportacion_id, sel.value);
+          });
+          fila.appendChild(sel); fila.appendChild(b);
+          card.appendChild(q); card.appendChild(t); card.appendChild(fila);
+          cont.appendChild(card);
+        });
+      }).aportacionesParaValorar();
+    }
+
 
     // ---------- Mi cuenta (clave IA) ----------
     function pintaEstadoClave(tiene) {
@@ -270,6 +363,9 @@
       if (!confirm('¿Borrar tu clave guardada?')) return;
       google.script.run.withSuccessHandler(function () { pintaEstadoClave(false); }).borrarClaveIA();
     });
+
+    // ---------- Arranque ----------
+    mostrar('consultar');
   </script>
 </body>
 </html>
