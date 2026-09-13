@@ -34,6 +34,9 @@ GitHub (`FranR78/Generador-SSC`) es la única fuente de verdad. PC y móvil, esp
 - **`portal/`** = Apps Script, frontend del alumnado (login Google, Gemini, Sites).
 - **`rag/`** = pipeline Python: `ingest` → `embed` → `query`.
 - Los PDF NUNCA se suben a git (los excluye `.gitignore`).
+- **Lecciones heredadas:** `Documentos/LECCIONESv2.md` y
+  `Documentos/CONFIGURAR_API_KEYv2.md` — leer antes de tocar IA o Apps Script.
+  La key de cada alumno va en `UserProperties` (personal), nunca en el código.
 
 ## 3. Ahorro de tokens
 - Lee por grep o rangos de líneas; archivo completo solo si es imprescindible.
