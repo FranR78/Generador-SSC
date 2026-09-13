@@ -38,14 +38,16 @@ function ia_modelosDisponibles_(key) {
       { muteHttpExceptions: true });
     if (resp.getResponseCode() !== 200) return [];
     var models = (JSON.parse(resp.getContentText()).models) || [];
+    var EXCLUIR = /image|imagen|vision|tts|audio|embedding|aqa|learnlm|gemma/;
     var names = models.filter(function (m) {
       return (m.supportedGenerationMethods || []).indexOf('generateContent') >= 0;
-    }).map(function (m) { return String(m.name).replace(/^models\//, ''); });
-    function score(n) {                       // flash estable primero; evita alias volátiles
+    }).map(function (m) { return String(m.name).replace(/^models\//, ''); })
+      .filter(function (n) { return !EXCLUIR.test(n); });   // solo modelos de texto
+    function score(n) {                       // flash estable primero; alias volátiles al final
       var s = 0;
       if (n.indexOf('flash') >= 0) s -= 4;
+      if (/latest|exp|preview|thinking/.test(n)) s += 5;
       if (n.indexOf('lite') >= 0) s += 1;
-      if (/latest|exp|preview|thinking/.test(n)) s += 3;
       return s;
     }
     names.sort(function (a, b) { return score(a) - score(b); });
@@ -79,18 +81,18 @@ function comprobarClaveIA() {
   var key = ia_getKey_();
   var payload = { contents: [{ role: 'user', parts: [{ text: 'ping' }] }] };
   var modelos = ia_modelos_(key);
+  var ultimoError = 'Ningún modelo disponible para esta clave. Habilita la Generative Language API en Google Cloud.';
   for (var i = 0; i < modelos.length; i++) {
     var r = ia_call_(modelos[i], payload, key);
     if (r.status === 200) {
       PropertiesService.getUserProperties().setProperty(IA_MODEL_OK_PROP, modelos[i]);
       return { ok: true, modelo: modelos[i] };
     }
-    if (r.status !== 404) {   // 404 = ese modelo no existe para la clave; sigue probando
-      var msg = (r.body.error && r.body.error.message) ? r.body.error.message : ('HTTP ' + r.status);
-      return { ok: false, error: msg };
-    }
+    ultimoError = (r.body.error && r.body.error.message) ? r.body.error.message : ('HTTP ' + r.status);
+    if (r.status === 404 || r.status === 429) continue;   // no existe / sin cuota: prueba otro
+    return { ok: false, error: ultimoError };
   }
-  return { ok: false, error: 'Ningún modelo disponible para esta clave. Habilita la Generative Language API en Google Cloud.' };
+  return { ok: false, error: ultimoError };
 }
 
 /** Pregunta usando SOLO los PDF seleccionados y la clave del propio usuario. */
@@ -135,7 +137,8 @@ function preguntar(pregunta, fileIds) {
         return { respuesta: texto, fuentes: nombres, modelo: modelos[i], estado: miEstado() };
       }
       ultimoError = 'Respuesta vacía; reformula la pregunta.';
-    } else if (r.status === 404) {
+    } else if (r.status === 404 || r.status === 429) {
+      ultimoError = (r.body.error && r.body.error.message) ? r.body.error.message : ('HTTP ' + r.status);
       continue;
     } else {
       ultimoError = (r.body.error && r.body.error.message) ? r.body.error.message : ('HTTP ' + r.status);
