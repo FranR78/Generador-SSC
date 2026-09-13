@@ -132,6 +132,13 @@
 
     // ---------- Consultar ----------
     var seleccionados = {}; // id -> nombre
+    var checkboxes = {};    // id -> input (para desmarcar desde el chip)
+
+    function quitarSeleccion(id) {
+      delete seleccionados[id];
+      if (checkboxes[id]) checkboxes[id].checked = false;
+      actualizarChips();
+    }
 
     function actualizarChips() {
       var cont = document.getElementById('seleccion');
@@ -139,7 +146,14 @@
       Object.keys(seleccionados).forEach(function (id) {
         var chip = document.createElement('span');
         chip.className = 'chip';
-        chip.textContent = seleccionados[id];
+        chip.textContent = seleccionados[id] + ' ';
+        var x = document.createElement('span');
+        x.textContent = '×';
+        x.title = 'Quitar';
+        x.setAttribute('role', 'button');
+        x.style.cssText = 'cursor:pointer; font-weight:700; margin-left:2px;';
+        x.addEventListener('click', function () { quitarSeleccion(id); });
+        chip.appendChild(x);
         cont.appendChild(chip);
       });
     }
@@ -164,6 +178,7 @@
       var chk = document.createElement('input');
       chk.type = 'checkbox';
       chk.addEventListener('change', function () { onToggle(f.id, f.name, chk); });
+      checkboxes[f.id] = chk;
       lab.appendChild(chk);
       lab.appendChild(document.createTextNode(f.name));
       return lab;
