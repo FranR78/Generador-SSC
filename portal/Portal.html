@@ -57,6 +57,9 @@
     .msg.bot { background: var(--fondo); border: 1px solid var(--borde); max-width: 92%; }
     .msg.error { background: #fdecea; border: 1px solid #f5b3ad; color: var(--err); }
     .fuentes { margin-top: 6px; font-size: 11px; opacity: .75; }
+    .msg.pensando { display: flex; align-items: center; gap: 8px; color: #5b6b73; }
+    .spinner { width: 15px; height: 15px; border: 2px solid var(--borde); border-top-color: var(--azul); border-radius: 50%; animation: giro .8s linear infinite; }
+    @keyframes giro { to { transform: rotate(360deg); } }
 
     form.fila { display: flex; gap: 8px; }
     textarea, input[type="password"], input[type="text"] {
@@ -228,6 +231,18 @@
       cont.scrollTop = cont.scrollHeight;
     }
 
+    function addPensando() {
+      var cont = document.getElementById('mensajes');
+      var div = document.createElement('div');
+      div.className = 'msg bot pensando';
+      var sp = document.createElement('span'); sp.className = 'spinner';
+      var t = document.createElement('span'); t.textContent = 'Leyendo los PDF…';
+      div.appendChild(sp); div.appendChild(t);
+      cont.appendChild(div);
+      cont.scrollTop = cont.scrollHeight;
+      return div;
+    }
+
     document.getElementById('form-pregunta').addEventListener('submit', function (e) {
       e.preventDefault();
       var campo = document.getElementById('pregunta');
@@ -240,13 +255,15 @@
       campo.value = '';
       var btn = document.getElementById('btn-enviar');
       btn.disabled = true;
+      var pensando = addPensando();
       google.script.run
         .withSuccessHandler(function (res) {
+          pensando.remove();
           addMsg(res.respuesta, 'bot', res.fuentes);
           btn.disabled = false;
           if (res.estado) pintarGate(res.estado);
         })
-        .withFailureHandler(function (err) { addMsg(err.message, 'error'); btn.disabled = false; })
+        .withFailureHandler(function (err) { pensando.remove(); addMsg(err.message, 'error'); btn.disabled = false; })
         .preguntar(pregunta, ids);
     });
 
