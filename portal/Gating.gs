@@ -7,16 +7,11 @@
  * consultas_permitidas = bloques * LIBRES
  * (monótono: nunca resta consultas ya ganadas; sin condiciones de carrera)
  *
- * Umbrales configurables en Propiedades del script: GATE_LIBRES, GATE_REQ_APORTA,
- * GATE_REQ_VALORA.
+ * Los umbrales viven en la Hoja (pestaña Ajustes) y se editan desde el panel del
+ * profesorado, no en Propiedades del script.
  */
 function gate_config_() {
-  var p = PropertiesService.getScriptProperties();
-  return {
-    LIBRES: parseInt(p.getProperty('GATE_LIBRES'), 10) || 3,
-    REQ_APORTA: parseInt(p.getProperty('GATE_REQ_APORTA'), 10) || 1,
-    REQ_VALORA: parseInt(p.getProperty('GATE_REQ_VALORA'), 10) || 2
-  };
+  return db_config_().gate || { LIBRES: 3, REQ_APORTA: 1, REQ_VALORA: 2 };
 }
 
 function gate_estado(usuario) {

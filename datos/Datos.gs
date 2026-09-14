@@ -22,14 +22,17 @@ var PROFES_PROP = 'PROFES';
 
 var TABS = {
   TAREAS: 'Tareas', APORTA: 'Aportaciones', VALORA: 'Valoraciones',
-  ACT: 'Actividad', CONFIG: 'Config'
+  ACT: 'Actividad', CONFIG: 'Config', AJUSTES: 'Ajustes'
 };
+
+var GATE_POR_DEFECTO = { LIBRES: 3, REQ_APORTA: 1, REQ_VALORA: 2 };
 var HEADERS = {
   Tareas: ['tarea_id', 'enunciado', 'seccion', 'creada_por', 'timestamp', 'estado'],
   Aportaciones: ['aportacion_id', 'tarea_id', 'usuario', 'texto', 'timestamp'],
   Valoraciones: ['valoracion_id', 'aportacion_id', 'usuario', 'voto', 'timestamp'],
-  Actividad: ['usuario', 'consultas', 'aportaciones', 'valoraciones', 'actualizado'],
-  Config: ['tipo', 'id', 'nombre', 'padre', 'visible', 'abre_el']
+  Actividad: ['usuario', 'consultas', 'aportaciones', 'valoraciones', 'actualizado', 'ultima_conexion'],
+  Config: ['tipo', 'id', 'nombre', 'padre', 'visible', 'abre_el'],
+  Ajustes: ['clave', 'valor']
 };
 
 // ---------------------------------------------------------------- entrada ---
@@ -98,6 +101,9 @@ function ejecutar_(op, args, usuario) {
     case 'config': return config_(usuario);
     case 'configSync': return configSync_(usuario, args.nodos);
     case 'configSet': return configSet_(usuario, args.cambios);
+    case 'gateSet': return gateSet_(usuario, args.umbrales);
+    case 'pulso': return pulso_(usuario);
+    case 'tocar': return tocar_(usuario);
     default: throw new Error('Operación desconocida: ' + op);
   }
 }
@@ -170,7 +176,61 @@ function config_(usuario) {
     var destino = tipo === 'tema' ? out.temas : out.docs;
     destino[id] = { visible: visible, nombre: vals[i][2], abre_el: abre || '' };
   }
+  out.gate = umbrales_();
   return out;
+}
+
+/** Umbrales del gating, en la Hoja para que solo el profe pueda cambiarlos. */
+function umbrales_() {
+  var vals = hoja_(TABS.AJUSTES).getDataRange().getValues();
+  var g = { LIBRES: GATE_POR_DEFECTO.LIBRES, REQ_APORTA: GATE_POR_DEFECTO.REQ_APORTA, REQ_VALORA: GATE_POR_DEFECTO.REQ_VALORA };
+  for (var i = 1; i < vals.length; i++) {
+    var k = String(vals[i][0]);
+    if (g.hasOwnProperty(k)) g[k] = parseInt(vals[i][1], 10) || g[k];
+  }
+  return g;
+}
+
+function gateSet_(usuario, umbrales) {
+  exigirProfe_(usuario);
+  var sh = hoja_(TABS.AJUSTES);
+  var vals = sh.getDataRange().getValues();
+  var fila = {};
+  for (var i = 1; i < vals.length; i++) fila[String(vals[i][0])] = i + 1;
+
+  Object.keys(GATE_POR_DEFECTO).forEach(function (k) {
+    var v = parseInt(umbrales[k], 10);
+    if (!(v >= 1)) return;
+    if (fila[k]) sh.getRange(fila[k], 2).setValue(v);
+    else sh.appendRow([k, v]);
+  });
+  return umbrales_();
+}
+
+/** Foto del grupo para el panel: quién entró, cuánto lleva hecho. */
+function pulso_(usuario) {
+  exigirProfe_(usuario);
+  var vals = hoja_(TABS.ACT).getDataRange().getValues();
+  var out = [];
+  for (var i = 1; i < vals.length; i++) {
+    if (!vals[i][0]) continue;
+    out.push({
+      usuario: vals[i][0],
+      consultas: +vals[i][1] || 0,
+      aportaciones: +vals[i][2] || 0,
+      valoraciones: +vals[i][3] || 0,
+      ultima_conexion: vals[i][5] ? new Date(vals[i][5]).toISOString() : ''
+    });
+  }
+  out.sort(function (a, b) { return (b.ultima_conexion || '').localeCompare(a.ultima_conexion || ''); });
+  return { alumnos: out, gate: umbrales_() };
+}
+
+/** Última conexión. No se mide permanencia: solo cuándo entró por última vez. */
+function tocar_(usuario) {
+  var f = filaActividad_(usuario);
+  hoja_(TABS.ACT).getRange(f.fila, 6).setValue(new Date());
+  return true;
 }
 
 /** Da de alta en Config lo que aún no está. No cambia lo ya configurado. */

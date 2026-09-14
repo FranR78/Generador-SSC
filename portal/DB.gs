@@ -99,6 +99,19 @@ function db_configSet_(cambios) {
   return db_call_('configSet', { cambios: cambios });
 }
 
+function db_gateSet_(umbrales) {
+  CacheService.getUserCache().remove('cfg');
+  return db_call_('gateSet', { umbrales: umbrales });
+}
+
+function db_pulso_() {
+  return db_call_('pulso');
+}
+
+function db_tocar_() {
+  return db_call_('tocar');
+}
+
 // ------------------------------------------------------------- actividad ---
 
 function db_estadoUsuario_(usuario) {

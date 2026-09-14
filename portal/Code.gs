@@ -15,6 +15,7 @@ var MAX_PDF_BYTES = 15 * 1024 * 1024;
 var MAX_TOTAL_BYTES = 18 * 1024 * 1024;
 
 function doGet() {
+  try { db_tocar_(); } catch (err) { /* la visita no debe impedir entrar */ }
   return HtmlService.createTemplateFromFile('Portal')
     .evaluate()
     .setTitle('Portal de aprendizaje · Electromecánica')
@@ -96,8 +97,41 @@ function idsPermitidos_() {
   return permitidos;
 }
 
+/** ¿Quien mira es profesorado? Lo decide la puerta de datos, no el navegador. */
+function soyProfe() {
+  return !!db_config_().profe;
+}
+
+/**
+ * Todo lo que pinta el panel del profesorado en una sola llamada: catálogo con
+ * su estado de visibilidad, umbrales y actividad del grupo.
+ */
+function panelProfesor() {
+  var cfg = db_config_();
+  if (!cfg.profe) throw new Error('Solo el profesorado puede ver el panel.');
+  var pulso = db_pulso_();
+  var c = cfg.gate;
+  pulso.alumnos.forEach(function (a) {
+    var k = Math.min(Math.floor(a.aportaciones / c.REQ_APORTA), Math.floor(a.valoraciones / c.REQ_VALORA));
+    a.permitidas = (1 + k) * c.LIBRES;
+    a.bloqueado = a.consultas >= a.permitidas;
+  });
+  return { arbol: podar_(recorrerCarpeta_(getRootFolder_()), cfg, true), gate: c, pulso: pulso.alumnos };
+}
+
+function guardarVisibilidad(cambios) {
+  if (!db_config_().profe) throw new Error('Solo el profesorado puede hacer esto.');
+  return db_configSet_(cambios);
+}
+
+function guardarUmbrales(umbrales) {
+  if (!db_config_().profe) throw new Error('Solo el profesorado puede hacer esto.');
+  return db_gateSet_(umbrales);
+}
+
 /** Vuelca a Config los temas y documentos que aún no estén dados de alta. */
 function sincronizarCatalogo() {
+  if (!db_config_().profe) throw new Error('Solo el profesorado puede hacer esto.');
   var nodos = [];
   (function recorrer(n, padre) {
     if (padre) nodos.push({ tipo: 'tema', id: n.id, nombre: n.name, padre: padre });

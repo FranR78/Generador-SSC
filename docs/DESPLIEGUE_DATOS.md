@@ -37,14 +37,18 @@ En las Propiedades del script de **Datos**:
 
 1. En Propiedades del script de **Datos**: `PROFES` = tus correos separados por
    comas. Solo esos pueden cambiar la visibilidad.
-2. Desde el editor del **Portal**, ejecutar `sincronizarCatalogo()` una vez (y
-   cada vez que añadas PDF nuevos al Drive). Da de alta en la pestaña `Config`
-   los temas y documentos que falten, todos como visibles.
-3. Para ocultar algo: en `Config`, poner `NO` en la columna `visible`. Para que
-   se abra solo un día concreto: dejar `SI` y poner la fecha en `abre_el`.
+2. Entrar al portal con tu cuenta: aparece la pestaña **Panel**, que solo se
+   muestra a los correos de `PROFES` (lo decide el servidor, no el navegador).
+3. En el Panel, **Buscar PDF nuevos** da de alta en `Config` lo que falte —
+   púlsalo cada vez que subas PDF al Drive. Luego desmarca lo que no quieras
+   disponible y **Guardar visibilidad**.
 4. Ocultar un tema oculta todo lo que cuelga de él. Lo que no tiene fila en
    `Config` se considera visible, así que los PDF nuevos nunca desaparecen sin
-   avisar.
+   avisar. Para que algo se abra solo un día concreto, poner la fecha en la
+   columna `abre_el` de la Hoja.
+5. Los umbrales del gating (consultas por bloque, respuestas y valoraciones
+   necesarias) también se editan en el Panel. Ya no se tocan en Propiedades del
+   script: `GATE_LIBRES`, `GATE_REQ_APORTA` y `GATE_REQ_VALORA` se pueden borrar.
 
 El profesorado ve el árbol completo con lo oculto marcado; el alumnado no recibe
 del servidor ni el nombre de lo que está cerrado.

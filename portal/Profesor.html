@@ -1,0 +1,33 @@
+<div class="panel">
+  <h2>Qué ve el alumnado</h2>
+  <p class="aviso" style="margin-top:0">
+    Desmarca lo que no quieras disponible todavía. Cerrar un tema cierra también
+    lo que hay dentro. Los cambios se aplican al guardar.
+  </p>
+  <div id="prof-arbol" class="placeholder">Cargando…</div>
+  <div style="display:flex; gap:8px; margin-top:10px; flex-wrap:wrap;">
+    <button id="prof-guardar" class="accion" type="button">Guardar visibilidad</button>
+    <button id="prof-sync" class="accion sec" type="button">Buscar PDF nuevos</button>
+  </div>
+  <div id="prof-estado" class="estado"></div>
+</div>
+
+<div class="panel">
+  <h2>Cuántas consultas se ganan</h2>
+  <p class="aviso" style="margin-top:0">
+    Cada alumno empieza con un bloque de consultas. Para ganar el siguiente tiene
+    que responder tareas y valorar respuestas de otros.
+  </p>
+  <div class="umbrales">
+    <label>Consultas por bloque<input type="number" id="u-libres" min="1" max="50"></label>
+    <label>Respuestas para el siguiente<input type="number" id="u-aporta" min="1" max="20"></label>
+    <label>Valoraciones para el siguiente<input type="number" id="u-valora" min="1" max="20"></label>
+  </div>
+  <div style="margin-top:10px"><button id="prof-umbrales" class="accion" type="button">Guardar</button></div>
+  <div id="prof-estado-u" class="estado"></div>
+</div>
+
+<div class="panel">
+  <h2>Pulso del grupo</h2>
+  <div id="prof-pulso" class="placeholder">Cargando…</div>
+</div>

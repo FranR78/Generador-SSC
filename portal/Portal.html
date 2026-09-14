@@ -74,6 +74,20 @@
     .estado.ok { color: var(--ok); }
     .estado.err { color: var(--err); }
 
+    /* Panel del profesorado */
+    .umbrales { display: flex; gap: 10px; flex-wrap: wrap; }
+    .umbrales label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: #5b6b73; flex: 1; min-width: 120px; }
+    .umbrales input { border: 1px solid var(--borde); border-radius: 8px; padding: 8px 10px; font-family: inherit; font-size: 14px; }
+    #prof-arbol { max-height: 300px; overflow-y: auto; font-size: 14px; }
+    #prof-arbol label { display: flex; align-items: center; gap: 6px; padding: 3px 0; }
+    #prof-arbol .tema > summary { display: flex; align-items: center; gap: 6px; }
+    .tabla { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .tabla th, .tabla td { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--borde); }
+    .tabla th { font-size: 11px; text-transform: uppercase; color: #5b6b73; font-weight: 600; }
+    .tabla td.num { text-align: right; }
+    .quieto { color: var(--err); font-weight: 600; }
+    .parado { color: #a06000; font-weight: 600; }
+
     @media (max-width: 600px) {
       header .marca h1 { font-size: 15px; }
       main { padding: 8px; }
@@ -94,6 +108,7 @@
     <button data-sec="manual">Manual</button>
     <button data-sec="juegos">Juegos</button>
     <button data-sec="cuenta">Mi cuenta</button>
+    <button data-sec="profesor" id="nav-profesor" hidden>Panel</button>
   </nav>
 
   <main>
@@ -101,16 +116,17 @@
     <section id="sec-manual" hidden><?!= include('Manual') ?></section>
     <section id="sec-juegos" hidden><?!= include('Juegos') ?></section>
     <section id="sec-cuenta" hidden><?!= include('Cuenta') ?></section>
+    <section id="sec-profesor" hidden><?!= include('Profesor') ?></section>
   </main>
 
   <script>
     // ---------- Router ----------
     var seccionActual = 'consultar';
-    var arbolCargado = false, cuentaCargada = false;
+    var arbolCargado = false, cuentaCargada = false, panelCargado = false;
 
     function mostrar(sec) {
       seccionActual = sec;
-      ['consultar', 'manual', 'juegos', 'cuenta'].forEach(function (s) {
+      ['consultar', 'manual', 'juegos', 'cuenta', 'profesor'].forEach(function (s) {
         document.getElementById('sec-' + s).hidden = (s !== sec);
       });
       Array.prototype.forEach.call(document.querySelectorAll('#nav button'), function (b) {
@@ -120,6 +136,7 @@
       if (sec === 'consultar') refrescarGate();
       if (sec === 'manual') initManual();
       if (sec === 'cuenta' && !cuentaCargada) initCuenta();
+      if (sec === 'profesor' && !panelCargado) initPanel();
     }
     Array.prototype.forEach.call(document.querySelectorAll('#nav button'), function (b) {
       b.addEventListener('click', function () { mostrar(b.getAttribute('data-sec')); });
@@ -364,7 +381,146 @@
       google.script.run.withSuccessHandler(function () { pintaEstadoClave(false); }).borrarClaveIA();
     });
 
+    // ---------- Panel del profesorado ----------
+    var panelCfg = null;
+
+    function fechaCorta(iso) {
+      if (!iso) return '—';
+      var dias = Math.floor((Date.now() - new Date(iso).getTime()) / 86400000);
+      if (dias <= 0) return 'hoy';
+      if (dias === 1) return 'ayer';
+      return 'hace ' + dias + ' días';
+    }
+
+    function filaVisible(id, nombre, oculto, destino) {
+      var lab = document.createElement('label');
+      var chk = document.createElement('input');
+      chk.type = 'checkbox';
+      chk.checked = !oculto;
+      chk.setAttribute('data-id', id);
+      lab.appendChild(chk);
+      lab.appendChild(document.createTextNode(nombre));
+      destino.appendChild(lab);
+      return chk;
+    }
+
+    function nodoPanel(nodo) {
+      var det = document.createElement('details');
+      det.className = 'carpeta tema';
+      det.open = true;
+      var sum = document.createElement('summary');
+      var chk = document.createElement('input');
+      chk.type = 'checkbox';
+      chk.checked = !nodo.oculto;
+      chk.setAttribute('data-id', nodo.id);
+      chk.addEventListener('click', function (e) { e.stopPropagation(); });
+      sum.appendChild(chk);
+      sum.appendChild(document.createTextNode(nodo.name));
+      det.appendChild(sum);
+      nodo.files.forEach(function (f) { filaVisible(f.id, f.name, f.oculto, det); });
+      nodo.children.forEach(function (h) { det.appendChild(nodoPanel(h)); });
+      return det;
+    }
+
+    function pintarPulso(alumnos, gate) {
+      var cont = document.getElementById('prof-pulso');
+      if (!alumnos.length) { cont.textContent = 'Todavía no ha entrado nadie.'; return; }
+      var t = document.createElement('table');
+      t.className = 'tabla';
+      t.innerHTML = '<tr><th>Alumno</th><th>Última vez</th><th>Cons.</th><th>Resp.</th><th>Valor.</th></tr>';
+      alumnos.forEach(function (a) {
+        var tr = document.createElement('tr');
+        var dias = a.ultima_conexion
+          ? Math.floor((Date.now() - new Date(a.ultima_conexion).getTime()) / 86400000) : 999;
+        tr.innerHTML =
+          '<td>' + a.usuario.split('@')[0] + '</td>' +
+          '<td class="' + (dias >= 7 ? 'quieto' : '') + '">' + fechaCorta(a.ultima_conexion) + '</td>' +
+          '<td class="num ' + (a.bloqueado ? 'parado' : '') + '">' + a.consultas + '/' + a.permitidas + '</td>' +
+          '<td class="num">' + a.aportaciones + '</td>' +
+          '<td class="num">' + a.valoraciones + '</td>';
+        t.appendChild(tr);
+      });
+      cont.innerHTML = '';
+      cont.appendChild(t);
+      var pie = document.createElement('p');
+      pie.className = 'aviso';
+      pie.textContent = 'En ámbar, quien ha agotado su bloque de ' + gate.LIBRES +
+        ' consultas y tiene que participar para seguir.';
+      cont.appendChild(pie);
+    }
+
+    function initPanel() {
+      var cont = document.getElementById('prof-arbol');
+      cont.textContent = 'Cargando…';
+      google.script.run
+        .withSuccessHandler(function (d) {
+          panelCargado = true;
+          panelCfg = d;
+          cont.innerHTML = '';
+          d.arbol.children.forEach(function (h) { cont.appendChild(nodoPanel(h)); });
+          d.arbol.files.forEach(function (f) { filaVisible(f.id, f.name, f.oculto, cont); });
+          document.getElementById('u-libres').value = d.gate.LIBRES;
+          document.getElementById('u-aporta').value = d.gate.REQ_APORTA;
+          document.getElementById('u-valora').value = d.gate.REQ_VALORA;
+          pintarPulso(d.pulso, d.gate);
+        })
+        .withFailureHandler(function (err) { cont.textContent = err.message; })
+        .panelProfesor();
+    }
+
+    document.getElementById('prof-guardar').addEventListener('click', function () {
+      var e = document.getElementById('prof-estado');
+      var cambios = [];
+      Array.prototype.forEach.call(
+        document.querySelectorAll('#prof-arbol input[type=checkbox]'), function (c) {
+          cambios.push({ id: c.getAttribute('data-id'), visible: c.checked });
+        });
+      e.textContent = 'Guardando…'; e.className = 'estado';
+      google.script.run
+        .withSuccessHandler(function (r) {
+          e.textContent = '✅ Guardado (' + r.cambiados + ' elementos).';
+          e.className = 'estado ok';
+          arbolCargado = false;
+        })
+        .withFailureHandler(function (err) { e.textContent = '❌ ' + err.message; e.className = 'estado err'; })
+        .guardarVisibilidad(cambios);
+    });
+
+    document.getElementById('prof-sync').addEventListener('click', function () {
+      var e = document.getElementById('prof-estado');
+      e.textContent = 'Buscando…'; e.className = 'estado';
+      google.script.run
+        .withSuccessHandler(function (r) {
+          e.textContent = r.nuevos ? ('✅ ' + r.nuevos + ' elementos nuevos dados de alta.')
+                                   : 'No hay nada nuevo en el Drive.';
+          e.className = 'estado ok';
+          if (r.nuevos) { panelCargado = false; initPanel(); }
+        })
+        .withFailureHandler(function (err) { e.textContent = '❌ ' + err.message; e.className = 'estado err'; })
+        .sincronizarCatalogo();
+    });
+
+    document.getElementById('prof-umbrales').addEventListener('click', function () {
+      var e = document.getElementById('prof-estado-u');
+      e.textContent = 'Guardando…'; e.className = 'estado';
+      google.script.run
+        .withSuccessHandler(function (g) {
+          e.textContent = '✅ Cada bloque son ' + g.LIBRES + ' consultas.';
+          e.className = 'estado ok';
+        })
+        .withFailureHandler(function (err) { e.textContent = '❌ ' + err.message; e.className = 'estado err'; })
+        .guardarUmbrales({
+          LIBRES: document.getElementById('u-libres').value,
+          REQ_APORTA: document.getElementById('u-aporta').value,
+          REQ_VALORA: document.getElementById('u-valora').value
+        });
+    });
+
     // ---------- Arranque ----------
+    google.script.run.withSuccessHandler(function (esProfe) {
+      if (esProfe) document.getElementById('nav-profesor').hidden = false;
+    }).soyProfe();
+
     mostrar('consultar');
   </script>
 </body>
