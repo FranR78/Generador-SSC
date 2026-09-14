@@ -5,6 +5,14 @@
  */
 var IA_KEY_PROP = 'AI_API_KEY';
 var IA_MODEL_OK_PROP = 'AI_MODEL_OK';
+var IA_PROMPT_PROP = 'AI_SYSTEM_PROMPT';   // editable por el admin
+var IA_PROMPT_DEFAULT = 'Eres un asistente de estudio de Electromecánica de Vehículos. ' +
+  'Responde SOLO con información de los PDF adjuntos. Si algo no está en ellos, dilo en vez ' +
+  'de inventar. Cita el documento del que sacas cada dato. Responde en español, claro y conciso.';
+
+function ia_prompt_() {
+  return PropertiesService.getScriptProperties().getProperty(IA_PROMPT_PROP) || IA_PROMPT_DEFAULT;
+}
 // Fallback si falla el descubrimiento dinámico de modelos. Se prueban en orden.
 var IA_FALLBACK = ['gemini-3.6-flash', 'gemini-2.5-flash', 'gemini-flash-latest'];
 
@@ -116,11 +124,9 @@ function preguntar(pregunta, fileIds) {
   });
   parts.push({ text: pregunta });
 
+  var instruccion = ia_prompt_() + ' Documentos adjuntos: ' + nombres.join(', ') + '.';
   var payload = {
-    systemInstruction: { parts: [{ text:
-      'Eres un asistente de estudio de Electromecánica de Vehículos. Responde SOLO con ' +
-      'información de los PDF adjuntos (' + nombres.join(', ') + '). Si no está, dilo en vez de ' +
-      'inventar. Cita el documento de cada dato. Español, claro y conciso.' }] },
+    systemInstruction: { parts: [{ text: instruccion }] },
     contents: [{ role: 'user', parts: parts }]
   };
 

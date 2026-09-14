@@ -97,6 +97,7 @@
     <button data-sec="manual">Manual</button>
     <button data-sec="juegos">Juegos</button>
     <button data-sec="cuenta">Mi cuenta</button>
+    <button data-sec="admin" id="nav-admin" hidden>Admin</button>
   </nav>
 
   <main>
@@ -104,6 +105,7 @@
     <section id="sec-manual" hidden><?!= include('Manual') ?></section>
     <section id="sec-juegos" hidden><?!= include('Juegos') ?></section>
     <section id="sec-cuenta" hidden><?!= include('Cuenta') ?></section>
+    <section id="sec-admin" hidden><?!= include('AdminUI') ?></section>
   </main>
 
   <script>
@@ -113,7 +115,7 @@
 
     function mostrar(sec) {
       seccionActual = sec;
-      ['consultar', 'manual', 'juegos', 'cuenta'].forEach(function (s) {
+      ['consultar', 'manual', 'juegos', 'cuenta', 'admin'].forEach(function (s) {
         document.getElementById('sec-' + s).hidden = (s !== sec);
       });
       Array.prototype.forEach.call(document.querySelectorAll('#nav button'), function (b) {
@@ -123,6 +125,7 @@
       if (sec === 'consultar') refrescarGate();
       if (sec === 'manual') initManual();
       if (sec === 'cuenta' && !cuentaCargada) initCuenta();
+      if (sec === 'admin' && !adminCargado) initAdmin();
     }
     Array.prototype.forEach.call(document.querySelectorAll('#nav button'), function (b) {
       b.addEventListener('click', function () { mostrar(b.getAttribute('data-sec')); });
@@ -132,6 +135,17 @@
     google.script.run.withSuccessHandler(function (email) {
       document.getElementById('quien').textContent = email || 'invitado';
     }).usuarioActual();
+
+    // Muestra la pestaña Admin solo si el usuario es profe.
+    google.script.run.withSuccessHandler(function (ok) {
+      if (ok) document.getElementById('nav-admin').hidden = false;
+    }).esAdmin();
+
+    // Registra la conexión y cuenta tiempo conectado (latido cada 30 s).
+    google.script.run.registrarConexion();
+    setInterval(function () {
+      if (!document.hidden) google.script.run.registrarLatido(30);
+    }, 30000);
 
     // ---------- Consultar ----------
     var seleccionados = {}; // id -> nombre
@@ -395,6 +409,114 @@
       if (!confirm('¿Borrar tu clave guardada?')) return;
       google.script.run.withSuccessHandler(function () { pintaEstadoClave(false); }).borrarClaveIA();
     });
+
+    // ---------- Admin ----------
+    var adminCargado = false;
+
+    function initAdmin() {
+      adminCargado = true;
+      cargarPrompt();
+      cargarTareasAdmin();
+      cargarAlumnos();
+    }
+
+    function cargarPrompt() {
+      google.script.run.withSuccessHandler(function (p) {
+        document.getElementById('adm-prompt').value = p || '';
+      }).adminGetPrompt();
+    }
+
+    document.getElementById('adm-prompt-guardar').addEventListener('click', function () {
+      var e = document.getElementById('adm-prompt-estado');
+      e.textContent = 'Guardando…'; e.className = 'estado';
+      google.script.run
+        .withSuccessHandler(function () { e.textContent = 'Prompt guardado.'; e.className = 'estado ok'; })
+        .withFailureHandler(function (err) { e.textContent = err.message; e.className = 'estado err'; })
+        .adminSetPrompt(document.getElementById('adm-prompt').value);
+    });
+
+    document.getElementById('adm-prompt-reset').addEventListener('click', function () {
+      google.script.run.withSuccessHandler(function (p) {
+        document.getElementById('adm-prompt').value = p || '';
+        var e = document.getElementById('adm-prompt-estado'); e.textContent = 'Restaurado por defecto.'; e.className = 'estado ok';
+      }).adminResetPrompt();
+    });
+
+    function cargarTareasAdmin() {
+      var cont = document.getElementById('adm-tareas-lista');
+      cont.innerHTML = '<div class="placeholder">Cargando…</div>';
+      google.script.run.withSuccessHandler(function (tareas) {
+        cont.innerHTML = '';
+        if (!tareas.length) { cont.innerHTML = '<div class="placeholder">Sin tareas.</div>'; return; }
+        tareas.forEach(function (t) {
+          var card = document.createElement('div');
+          card.style.cssText = 'border:1px solid var(--borde); border-radius:8px; padding:10px; margin-bottom:8px;';
+          var meta = t.seccion ? (t.seccion + ' · ') : '';
+          meta += 'estado: ' + t.estado + (t.fecha_caduca ? (' · caduca ' + t.fecha_caduca) : '');
+          var q = document.createElement('div'); q.style.cssText = 'font-size:14px; margin-bottom:4px;'; q.textContent = t.enunciado;
+          var m = document.createElement('div'); m.style.cssText = 'font-size:12px; color:#5b6b73; margin-bottom:8px;'; m.textContent = meta;
+          var fila = document.createElement('div'); fila.style.cssText = 'display:flex; gap:6px; flex-wrap:wrap;';
+          fila.appendChild(botonTarea(t.estado === 'abierta' ? 'Cerrar' : 'Abrir', function () {
+            if (t.estado === 'abierta') google.script.run.withSuccessHandler(cargarTareasAdmin).adminCerrarTarea(t.tarea_id);
+            else google.script.run.withSuccessHandler(cargarTareasAdmin).adminAbrirTarea(t.tarea_id);
+          }));
+          fila.appendChild(botonTarea('Caducar ahora', function () {
+            google.script.run.withSuccessHandler(cargarTareasAdmin).adminCaducarTarea(t.tarea_id);
+          }));
+          card.appendChild(q); card.appendChild(m); card.appendChild(fila);
+          cont.appendChild(card);
+        });
+      }).adminTareas();
+    }
+
+    function botonTarea(txt, fn) {
+      var b = document.createElement('button'); b.type = 'button'; b.className = 'accion sec'; b.textContent = txt;
+      b.addEventListener('click', fn); return b;
+    }
+
+    document.getElementById('adm-tarea-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var est = document.getElementById('adm-tarea-estado');
+      est.textContent = 'Creando…'; est.className = 'estado';
+      google.script.run
+        .withSuccessHandler(function () {
+          est.textContent = 'Tarea creada.'; est.className = 'estado ok';
+          document.getElementById('adm-tarea-enunciado').value = '';
+          document.getElementById('adm-tarea-dias').value = '';
+          cargarTareasAdmin();
+        })
+        .withFailureHandler(function (err) { est.textContent = err.message; est.className = 'estado err'; })
+        .adminCrearTarea(
+          document.getElementById('adm-tarea-enunciado').value,
+          document.getElementById('adm-tarea-seccion').value,
+          document.getElementById('adm-tarea-dias').value);
+    });
+
+    function cargarAlumnos() {
+      var cont = document.getElementById('adm-alumnos');
+      cont.innerHTML = '<div class="placeholder">Cargando…</div>';
+      google.script.run.withSuccessHandler(function (filas) {
+        if (!filas.length) { cont.innerHTML = '<div class="placeholder">Aún no hay actividad.</div>'; return; }
+        var html = '<div style="overflow-x:auto"><table style="width:100%; border-collapse:collapse; font-size:13px;">' +
+          '<tr style="text-align:left; color:#5b6b73;"><th>Alumno</th><th>Con.</th><th>Cons.</th><th>Apor.</th><th>Val.</th><th>Min.</th><th>Última</th><th></th></tr>';
+        filas.forEach(function (f) {
+          html += '<tr style="border-top:1px solid var(--borde);">' +
+            '<td style="padding:4px 6px; word-break:break-all;">' + f.usuario + '</td>' +
+            '<td>' + f.conexiones + '</td><td>' + f.consultas + '</td><td>' + f.aportaciones + '</td>' +
+            '<td>' + f.valoraciones + '</td><td>' + f.minutos + '</td><td>' + (f.ultima_conexion || '') + '</td>' +
+            '<td><button type="button" class="accion sec" data-u="' + encodeURIComponent(f.usuario) + '">Reset</button></td></tr>';
+        });
+        html += '</table></div>';
+        cont.innerHTML = html;
+        Array.prototype.forEach.call(cont.querySelectorAll('button[data-u]'), function (b) {
+          b.addEventListener('click', function () {
+            var u = decodeURIComponent(b.getAttribute('data-u'));
+            if (!confirm('¿Reiniciar contadores de ' + u + '?')) return;
+            google.script.run.withSuccessHandler(cargarAlumnos).adminResetUsuario(u);
+          });
+        });
+      }).adminResumen();
+    }
 
     // ---------- Arranque ----------
     mostrar('consultar');

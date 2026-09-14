@@ -1,0 +1,30 @@
+<div class="panel">
+  <h2>Prompt de la IA</h2>
+  <p class="aviso" style="margin-top:0">Cómo responde el asistente. Se aplica a todas las consultas.</p>
+  <textarea id="adm-prompt" style="width:100%; min-height:120px;"></textarea>
+  <div style="margin-top:8px; display:flex; gap:8px;">
+    <button type="button" id="adm-prompt-guardar" class="accion">Guardar prompt</button>
+    <button type="button" id="adm-prompt-reset" class="accion sec">Restaurar por defecto</button>
+  </div>
+  <div id="adm-prompt-estado" class="estado"></div>
+</div>
+
+<div class="panel">
+  <h2>Tareas</h2>
+  <form id="adm-tarea-form" style="margin-bottom:10px;">
+    <textarea id="adm-tarea-enunciado" placeholder="Enunciado de la tarea…" style="width:100%; min-height:56px;"></textarea>
+    <div style="display:flex; gap:8px; margin-top:8px; flex-wrap:wrap;">
+      <input type="text" id="adm-tarea-seccion" placeholder="Sección (ej: Climatización)" style="flex:1; min-width:160px;">
+      <input type="number" id="adm-tarea-dias" placeholder="Caduca (días, opcional)" min="0" style="width:180px;">
+      <button type="submit" class="accion">Crear tarea</button>
+    </div>
+  </form>
+  <div id="adm-tarea-estado" class="estado"></div>
+  <div id="adm-tareas-lista"><div class="placeholder">Cargando…</div></div>
+</div>
+
+<div class="panel">
+  <h2>Alumnado</h2>
+  <p class="aviso" style="margin-top:0">Conexiones, tiempo e interacciones. Ordenado por participación.</p>
+  <div id="adm-alumnos"><div class="placeholder">Cargando…</div></div>
+</div>
