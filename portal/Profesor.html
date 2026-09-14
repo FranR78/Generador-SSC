@@ -28,6 +28,36 @@
 </div>
 
 <div class="panel">
+  <h2>Rondas</h2>
+  <p class="aviso" style="margin-top:0">
+    Cada ronda pasa por cuatro estados: <em>borrador</em> (nadie la ve),
+    <em>abierta</em> (escriben), <em>votación</em> (leen las de los demás y
+    reparten sus tres estrellas) y <em>cerrada</em>. Si pones fechas, avanza sola.
+  </p>
+  <div id="prof-rondas" class="placeholder">Cargando…</div>
+
+  <details style="margin-top:10px">
+    <summary style="cursor:pointer; font-weight:600; font-size:14px;">Crear una ronda</summary>
+    <div style="margin-top:8px">
+      <input type="text" id="r-enunciado" placeholder="Qué tienen que definir (p. ej. misión del compresor)" style="width:100%; margin-bottom:6px;">
+      <input type="text" id="r-seccion" placeholder="Tema (p. ej. Climatización)" style="width:100%; margin-bottom:6px;">
+      <div class="umbrales">
+        <label>Cierra la entrega<input type="date" id="r-fin-entrega"></label>
+        <label>Cierra la votación<input type="date" id="r-fin-voto"></label>
+        <label>Modo
+          <select id="r-modo" style="border:1px solid var(--borde); border-radius:8px; padding:8px 10px; font-family:inherit; font-size:14px;">
+            <option value="misma_pregunta">Todos el mismo ítem</option>
+            <option value="reparto">Cada uno un ítem</option>
+          </select>
+        </label>
+      </div>
+      <div style="margin-top:10px"><button id="prof-crear" class="accion" type="button">Crear</button></div>
+      <div id="prof-estado-r" class="estado"></div>
+    </div>
+  </details>
+</div>
+
+<div class="panel">
   <h2>Pulso del grupo</h2>
   <div id="prof-pulso" class="placeholder">Cargando…</div>
 </div>

@@ -8,7 +8,10 @@ para usar su propia API key; **Datos** (`datos/`) se ejecuta como el profe y es 
 
 1. Crear un proyecto Apps Script nuevo llamado `Generador-SSC — Datos`.
 2. Subir `datos/Datos.gs` y `datos/appsscript.json`.
-3. Ejecutar `db_setup()` desde el editor. Devuelve la URL de la Hoja creada y
+3. Ejecutar `db_setup()` desde el editor. Si ya lo habías ejecutado antes de
+   añadir las rondas, borra las pestañas `Tareas`, `Aportaciones` y
+   `Valoraciones` (solo tenían datos de prueba): se recrean con las columnas
+   nuevas al usarlas. Devuelve la URL de la Hoja creada y
    guarda su ID en `DB_SHEET_ID`. **No compartir esa Hoja.**
 4. Desplegar: *Implementar → Nueva implementación → Aplicación web*
    - Ejecutar como: **Yo**
@@ -53,14 +56,27 @@ En las Propiedades del script de **Datos**:
 El profesorado ve el árbol completo con lo oculto marcado; el alumnado no recibe
 del servidor ni el nombre de lo que está cerrado.
 
-## 5. Comprobación
+## 5. Rondas
+
+Una ronda es un ítem a definir. Estados: `borrador` → `abierta` → `votacion` →
+`cerrada`. Se gestionan desde el Panel, y si pones fechas de cierre avanzan solas
+(el paso se comprueba al leer, así que no hace falta ningún disparador).
+
+Dos reglas del diseño, ya en el código:
+
+- **Una respuesta por alumno y ronda**, y solo mientras está `abierta`.
+- **Portón**: en `votacion`, cada alumno solo ve las respuestas de las rondas en
+  las que él ya entregó, sin autor y en un orden distinto para cada uno.
+  Reparte tres estrellas: 3 ★, 2 ★ y 1 ★, una de cada por ronda.
+
+## 6. Comprobación
 
 1. Entrar al portal con una cuenta de alumno de prueba.
 2. Hacer una consulta: debe aumentar `consultas` en la pestaña `Actividad`.
 3. Intentar abrir la Hoja con esa misma cuenta: **debe dar "no tienes acceso"**.
    Si la abre, la Hoja sigue compartida — quitar el permiso.
 
-## 6. Qué protege y qué no
+## 7. Qué protege y qué no
 
 Protege: los contadores del gating, el anonimato de las valoraciones y las filas
 de los demás. Nadie puede editarlos fuera del portal.

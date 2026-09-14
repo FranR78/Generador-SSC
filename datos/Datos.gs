@@ -26,10 +26,15 @@ var TABS = {
 };
 
 var GATE_POR_DEFECTO = { LIBRES: 3, REQ_APORTA: 1, REQ_VALORA: 2 };
+
+// Estrellas que reparte cada alumno en una ronda: una de 3, una de 2 y una de 1.
+// Pesos distintos obligan a jerarquizar; un 1-5 plano se convierte en "4 a todo".
+var PESOS = [3, 2, 1];
 var HEADERS = {
-  Tareas: ['tarea_id', 'enunciado', 'seccion', 'creada_por', 'timestamp', 'estado'],
+  Tareas: ['tarea_id', 'enunciado', 'seccion', 'creada_por', 'timestamp', 'estado',
+           'modo', 'abre_el', 'cierra_entrega_el', 'cierra_votacion_el'],
   Aportaciones: ['aportacion_id', 'tarea_id', 'usuario', 'texto', 'timestamp'],
-  Valoraciones: ['valoracion_id', 'aportacion_id', 'usuario', 'voto', 'timestamp'],
+  Valoraciones: ['valoracion_id', 'tarea_id', 'aportacion_id', 'usuario', 'peso', 'timestamp'],
   Actividad: ['usuario', 'consultas', 'aportaciones', 'valoraciones', 'actualizado', 'ultima_conexion'],
   Config: ['tipo', 'id', 'nombre', 'padre', 'visible', 'abre_el'],
   Ajustes: ['clave', 'valor']
@@ -94,7 +99,10 @@ function ejecutar_(op, args, usuario) {
     case 'ping': return { usuario: usuario };
     case 'estado': return estadoUsuario_(usuario);
     case 'incConsulta': return incConsulta_(usuario);
-    case 'tareas': return tareasAbiertas_();
+    case 'tareas': return tareasAbiertas_(usuario);
+    case 'rondas': return rondas_(usuario);
+    case 'rondaSet': return rondaSet_(usuario, args.tareaId, args.cambios);
+    case 'rondaNueva': return rondaNueva_(usuario, args.ronda);
     case 'aportar': return aportar_(usuario, args.tareaId, args.texto);
     case 'paraValorar': return paraValorar_(usuario);
     case 'valorar': return valorar_(usuario, args.aportacionId, args.voto);
@@ -123,7 +131,8 @@ function db_setup() {
   ];
   var t = ss.getSheetByName(TABS.TAREAS);
   seed.forEach(function (s) {
-    t.appendRow([Utilities.getUuid().slice(0, 8), s[0], s[1], 'profe', new Date(), 'abierta']);
+    t.appendRow([Utilities.getUuid().slice(0, 8), s[0], s[1], 'profe', new Date(), 'abierta',
+      'misma_pregunta', '', '', '']);
   });
   PropertiesService.getScriptProperties().setProperty(DB_SHEET_PROP, ss.getId());
   return ss.getUrl();
@@ -278,15 +287,124 @@ function configSet_(usuario, cambios) {
 
 // --------------------------------------------------------------- tareas ---
 
-function tareasAbiertas_() {
+/**
+ * Estados de una ronda: borrador -> abierta -> votacion -> cerrada.
+ * Se avanza por fecha al leer, no con un disparador: así funciona igual en casa
+ * que en el aula sin depender de que el trigger se haya disparado.
+ */
+var ESTADOS = ['borrador', 'abierta', 'votacion', 'cerrada'];
+
+function avanzarPorFecha_() {
+  var sh = hoja_(TABS.TAREAS);
+  var vals = sh.getDataRange().getValues();
+  var hoy = new Date();
+  var cambios = [];
+  for (var i = 1; i < vals.length; i++) {
+    var estado = String(vals[i][5] || 'abierta');
+    var abre = vals[i][7], finEntrega = vals[i][8], finVoto = vals[i][9];
+    var nuevo = estado;
+    if (estado === 'borrador' && abre instanceof Date && abre <= hoy) nuevo = 'abierta';
+    if (nuevo === 'abierta' && finEntrega instanceof Date && finEntrega < hoy) nuevo = 'votacion';
+    if (nuevo === 'votacion' && finVoto instanceof Date && finVoto < hoy) nuevo = 'cerrada';
+    if (nuevo !== estado) cambios.push({ fila: i + 1, estado: nuevo });
+  }
+  if (!cambios.length) return;
+  var lock = LockService.getScriptLock();
+  if (!lock.tryLock(5000)) return;
+  try {
+    cambios.forEach(function (c) { sh.getRange(c.fila, 6).setValue(c.estado); });
+  } finally { lock.releaseLock(); }
+}
+
+function filaTarea_(vals, i) {
+  return {
+    tarea_id: vals[i][0],
+    enunciado: vals[i][1],
+    seccion: vals[i][2],
+    estado: String(vals[i][5] || 'abierta'),
+    modo: String(vals[i][6] || 'misma_pregunta'),
+    cierra_entrega_el: vals[i][8] instanceof Date ? vals[i][8].toISOString() : '',
+    cierra_votacion_el: vals[i][9] instanceof Date ? vals[i][9].toISOString() : ''
+  };
+}
+
+/** Rondas donde toca escribir. Incluye si el usuario ya entregó la suya. */
+function tareasAbiertas_(usuario) {
+  avanzarPorFecha_();
   var vals = hoja_(TABS.TAREAS).getDataRange().getValues();
+  var mias = misAportaciones_(usuario);
   var out = [];
   for (var i = 1; i < vals.length; i++) {
-    if (String(vals[i][5]) === 'abierta') {
-      out.push({ tarea_id: vals[i][0], enunciado: vals[i][1], seccion: vals[i][2] });
-    }
+    var t = filaTarea_(vals, i);
+    if (t.estado !== 'abierta') continue;
+    t.entregada = !!mias[t.tarea_id];
+    out.push(t);
   }
   return out;
+}
+
+/** Todas las rondas con su estado (el profe las gestiona desde el panel). */
+function rondas_(usuario) {
+  exigirProfe_(usuario);
+  avanzarPorFecha_();
+  var vals = hoja_(TABS.TAREAS).getDataRange().getValues();
+  var aport = hoja_(TABS.APORTA).getDataRange().getValues();
+  var cuenta = {};
+  for (var j = 1; j < aport.length; j++) cuenta[aport[j][1]] = (cuenta[aport[j][1]] || 0) + 1;
+
+  var out = [];
+  for (var i = 1; i < vals.length; i++) {
+    var t = filaTarea_(vals, i);
+    t.respuestas = cuenta[t.tarea_id] || 0;
+    out.push(t);
+  }
+  return out;
+}
+
+function rondaNueva_(usuario, r) {
+  exigirProfe_(usuario);
+  var enunciado = String((r && r.enunciado) || '').trim();
+  if (enunciado.length < 10) throw new Error('Escribe el enunciado de la ronda.');
+  var id = Utilities.getUuid().slice(0, 8);
+  hoja_(TABS.TAREAS).appendRow([
+    id, enunciado, String(r.seccion || ''), usuario, new Date(),
+    r.estado === 'borrador' ? 'borrador' : 'abierta',
+    r.modo === 'reparto' ? 'reparto' : 'misma_pregunta',
+    fecha_(r.abre_el), fecha_(r.cierra_entrega_el), fecha_(r.cierra_votacion_el)
+  ]);
+  return id;
+}
+
+function fecha_(v) {
+  if (!v) return '';
+  var d = new Date(v);
+  return isNaN(d.getTime()) ? '' : d;
+}
+
+/** cambios: {estado, cierra_entrega_el, cierra_votacion_el} */
+function rondaSet_(usuario, tareaId, cambios) {
+  exigirProfe_(usuario);
+  var sh = hoja_(TABS.TAREAS);
+  var vals = sh.getDataRange().getValues();
+  for (var i = 1; i < vals.length; i++) {
+    if (vals[i][0] !== tareaId) continue;
+    if (cambios.estado) {
+      if (ESTADOS.indexOf(cambios.estado) === -1) throw new Error('Estado desconocido.');
+      sh.getRange(i + 1, 6).setValue(cambios.estado);
+    }
+    if (cambios.cierra_entrega_el !== undefined) sh.getRange(i + 1, 9).setValue(fecha_(cambios.cierra_entrega_el));
+    if (cambios.cierra_votacion_el !== undefined) sh.getRange(i + 1, 10).setValue(fecha_(cambios.cierra_votacion_el));
+    return true;
+  }
+  throw new Error('Esa ronda no existe.');
+}
+
+/** Estado de cada ronda, para saber dónde se puede entregar o votar. */
+function estadosDeRonda_() {
+  var vals = hoja_(TABS.TAREAS).getDataRange().getValues();
+  var m = {};
+  for (var i = 1; i < vals.length; i++) m[vals[i][0]] = String(vals[i][5] || 'abierta');
+  return m;
 }
 
 /** Mapa tarea_id -> enunciado, leído una sola vez. */
@@ -299,13 +417,25 @@ function enunciados_() {
 
 // ---------------------------------------------------------- aportaciones ---
 
+function misAportaciones_(usuario) {
+  var vals = hoja_(TABS.APORTA).getDataRange().getValues();
+  var m = {};
+  for (var i = 1; i < vals.length; i++) if (vals[i][2] === usuario) m[vals[i][1]] = vals[i][0];
+  return m;
+}
+
 function aportar_(usuario, tareaId, texto) {
   texto = String(texto || '').trim();
   if (!tareaId) throw new Error('Elige una tarea.');
   if (texto.length < 15) throw new Error('La aportación es demasiado corta.');
+  avanzarPorFecha_();
+  if (estadosDeRonda_()[tareaId] !== 'abierta') {
+    throw new Error('Esa ronda ya no admite respuestas.');
+  }
   var lock = LockService.getScriptLock();
   lock.waitLock(15000);
   try {
+    if (misAportaciones_(usuario)[tareaId]) throw new Error('Ya respondiste a esta tarea.');
     hoja_(TABS.APORTA).appendRow(
       [Utilities.getUuid().slice(0, 8), tareaId, usuario, texto, new Date()]);
     inc_(usuario, 'aportaciones', 1);
@@ -313,56 +443,108 @@ function aportar_(usuario, tareaId, texto) {
   return true;
 }
 
-/** Aportaciones de OTROS que este usuario aún no ha valorado (máx. 15). */
+/** Orden estable pero distinto para cada alumno: que no gane siempre la primera. */
+function barajar_(items, semilla) {
+  var base = 0;
+  for (var i = 0; i < semilla.length; i++) base = (base * 31 + semilla.charCodeAt(i)) % 100000007;
+  return items.map(function (it) {
+    var h = base;
+    var s = String(it.aportacion_id);
+    for (var j = 0; j < s.length; j++) h = (h * 33 + s.charCodeAt(j)) % 100000007;
+    return { orden: h, it: it };
+  }).sort(function (a, b) { return a.orden - b.orden; })
+    .map(function (x) { return x.it; });
+}
+
+/**
+ * Respuestas de otros en rondas que están en votación.
+ * Portón: solo se ven las de una ronda en la que tú ya has entregado la tuya.
+ * Se omite el autor a propósito; la votación es ciega.
+ */
 function paraValorar_(usuario) {
+  avanzarPorFecha_();
+  var estados = estadosDeRonda_();
+  var mias = misAportaciones_(usuario);
+  var titulos = enunciados_();
+  var usadas = estrellasUsadas_(usuario);
+
   var aport = hoja_(TABS.APORTA).getDataRange().getValues();
   var vals = hoja_(TABS.VALORA).getDataRange().getValues();
   var yaValoradas = {};
-  for (var i = 1; i < vals.length; i++) if (vals[i][2] === usuario) yaValoradas[vals[i][1]] = true;
+  for (var i = 1; i < vals.length; i++) if (vals[i][3] === usuario) yaValoradas[vals[i][2]] = true;
 
-  var titulos = enunciados_();
   var out = [];
-  for (var j = 1; j < aport.length && out.length < 15; j++) {
+  for (var j = 1; j < aport.length; j++) {
+    var tareaId = aport[j][1];
+    if (estados[tareaId] !== 'votacion') continue;
+    if (!mias[tareaId]) continue;
     var id = aport[j][0];
     if (aport[j][2] === usuario || yaValoradas[id]) continue;
-    // Se omite el autor a propósito: la valoración es ciega.
     out.push({
       aportacion_id: id,
-      tarea_id: aport[j][1],
-      enunciado: titulos[aport[j][1]] || '',
-      texto: aport[j][3]
+      tarea_id: tareaId,
+      enunciado: titulos[tareaId] || '',
+      texto: aport[j][3],
+      pesos_libres: PESOS.filter(function (p) { return (usadas[tareaId] || []).indexOf(p) === -1; })
     });
   }
-  return out;
+  return barajar_(out, usuario).slice(0, 20);
 }
 
-function valorar_(usuario, aportacionId, voto) {
-  voto = parseInt(voto, 10);
+/** Pesos ya gastados por este usuario en cada ronda. */
+function estrellasUsadas_(usuario) {
+  var vals = hoja_(TABS.VALORA).getDataRange().getValues();
+  var m = {};
+  for (var i = 1; i < vals.length; i++) {
+    if (vals[i][3] !== usuario) continue;
+    var t = vals[i][1];
+    if (!m[t]) m[t] = [];
+    m[t].push(+vals[i][4] || 0);
+  }
+  return m;
+}
+
+function valorar_(usuario, aportacionId, peso) {
+  peso = parseInt(peso, 10);
   if (!aportacionId) throw new Error('Falta la aportación.');
-  if (!(voto >= 1 && voto <= 5)) throw new Error('Voto de 1 a 5.');
+  if (PESOS.indexOf(peso) === -1) throw new Error('Las estrellas valen 3, 2 o 1.');
+
+  var datos = aportacion_(aportacionId);
+  if (!datos) throw new Error('Esa aportación no existe.');
+  if (datos.usuario === usuario) throw new Error('No puedes valorar tu propia respuesta.');
+
+  avanzarPorFecha_();
+  if (estadosDeRonda_()[datos.tarea_id] !== 'votacion') {
+    throw new Error('Esa ronda no está en votación.');
+  }
+  if (!misAportaciones_(usuario)[datos.tarea_id]) {
+    throw new Error('Primero responde tú a esa tarea.');
+  }
+
   var lock = LockService.getScriptLock();
   lock.waitLock(15000);
   try {
     var sh = hoja_(TABS.VALORA);
     var vals = sh.getDataRange().getValues();
     for (var i = 1; i < vals.length; i++) {
-      if (vals[i][1] === aportacionId && vals[i][2] === usuario) {
-        throw new Error('Ya valoraste esta respuesta.');
+      if (vals[i][3] !== usuario) continue;
+      if (vals[i][2] === aportacionId) throw new Error('Ya valoraste esta respuesta.');
+      if (vals[i][1] === datos.tarea_id && (+vals[i][4] || 0) === peso) {
+        throw new Error('Ya diste tu estrella de ' + peso + ' en esta tarea.');
       }
     }
-    var autor = autorDe_(aportacionId);
-    if (!autor) throw new Error('Esa aportación no existe.');
-    if (autor === usuario) throw new Error('No puedes valorar tu propia respuesta.');
-    sh.appendRow([Utilities.getUuid().slice(0, 8), aportacionId, usuario, voto, new Date()]);
+    sh.appendRow([Utilities.getUuid().slice(0, 8), datos.tarea_id, aportacionId, usuario, peso, new Date()]);
     inc_(usuario, 'valoraciones', 1);
   } finally { lock.releaseLock(); }
   return true;
 }
 
-function autorDe_(aportacionId) {
+function aportacion_(aportacionId) {
   var vals = hoja_(TABS.APORTA).getDataRange().getValues();
-  for (var i = 1; i < vals.length; i++) if (vals[i][0] === aportacionId) return vals[i][2];
-  return '';
+  for (var i = 1; i < vals.length; i++) {
+    if (vals[i][0] === aportacionId) return { tarea_id: vals[i][1], usuario: vals[i][2] };
+  }
+  return null;
 }
 
 // ------------------------------------------------------------- actividad ---

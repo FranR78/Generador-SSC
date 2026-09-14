@@ -287,7 +287,12 @@
         sel.innerHTML = '';
         if (!tareas.length) { sel.innerHTML = '<option value="">No hay tareas abiertas</option>'; return; }
         sel.appendChild(new Option('Elige una tarea…', ''));
-        tareas.forEach(function (t) { sel.appendChild(new Option('[' + t.seccion + '] ' + t.enunciado, t.tarea_id)); });
+        tareas.forEach(function (t) {
+          var etiqueta = (t.entregada ? '✔ ' : '') + '[' + t.seccion + '] ' + t.enunciado;
+          var op = new Option(etiqueta, t.tarea_id);
+          op.disabled = t.entregada;   // una respuesta por ronda
+          sel.appendChild(op);
+        });
       }).tareasAbiertas();
     }
 
@@ -320,18 +325,30 @@
           var q = document.createElement('div'); q.style.cssText = 'font-size:12px; color:#5b6b73; margin-bottom:4px;'; q.textContent = it.enunciado;
           var t = document.createElement('div'); t.style.cssText = 'font-size:14px; white-space:pre-wrap; margin-bottom:8px;'; t.textContent = it.texto;
           var fila = document.createElement('div'); fila.style.cssText = 'display:flex; gap:6px; align-items:center;';
-          var sel = document.createElement('select'); sel.style.cssText = 'padding:6px 8px; border:1px solid var(--borde); border-radius:6px;';
-          [1,2,3,4,5].forEach(function (n) { sel.appendChild(new Option(n + ' ★', n)); });
-          sel.value = '4';
-          var b = document.createElement('button'); b.className = 'accion sec'; b.type = 'button'; b.textContent = 'Valorar';
-          b.addEventListener('click', function () {
-            b.disabled = true;
-            google.script.run
-              .withSuccessHandler(function () { card.remove(); initManual(); })
-              .withFailureHandler(function (err) { b.disabled = false; alert(err.message); })
-              .valorar(it.aportacion_id, sel.value);
-          });
-          fila.appendChild(sel); fila.appendChild(b);
+          if (!it.pesos_libres.length) {
+            var fin = document.createElement('span');
+            fin.className = 'aviso';
+            fin.textContent = 'Ya has repartido tus tres estrellas en esta ronda.';
+            fila.appendChild(fin);
+          } else {
+            it.pesos_libres.forEach(function (peso) {
+              var b = document.createElement('button');
+              b.className = 'accion sec';
+              b.type = 'button';
+              b.textContent = peso + ' ★';
+              b.addEventListener('click', function () {
+                Array.prototype.forEach.call(fila.querySelectorAll('button'), function (x) { x.disabled = true; });
+                google.script.run
+                  .withSuccessHandler(function () { card.remove(); cargarValorar(); initManual(); })
+                  .withFailureHandler(function (err) {
+                    Array.prototype.forEach.call(fila.querySelectorAll('button'), function (x) { x.disabled = false; });
+                    alert(err.message);
+                  })
+                  .valorar(it.aportacion_id, peso);
+              });
+              fila.appendChild(b);
+            });
+          }
           card.appendChild(q); card.appendChild(t); card.appendChild(fila);
           cont.appendChild(card);
         });
@@ -449,6 +466,67 @@
       cont.appendChild(pie);
     }
 
+    var ESTADOS_RONDA = ['borrador', 'abierta', 'votacion', 'cerrada'];
+
+    function pintarRondas(rondas) {
+      var cont = document.getElementById('prof-rondas');
+      if (!rondas.length) { cont.textContent = 'Todavía no hay rondas.'; return; }
+      var t = document.createElement('table');
+      t.className = 'tabla';
+      t.innerHTML = '<tr><th>Ronda</th><th>Resp.</th><th>Estado</th></tr>';
+      rondas.forEach(function (r) {
+        var tr = document.createElement('tr');
+        var td1 = document.createElement('td');
+        td1.textContent = r.enunciado;
+        var td2 = document.createElement('td');
+        td2.className = 'num';
+        td2.textContent = r.respuestas;
+        var td3 = document.createElement('td');
+        var sel = document.createElement('select');
+        sel.style.cssText = 'padding:4px 6px; border:1px solid var(--borde); border-radius:6px; font-size:12px;';
+        ESTADOS_RONDA.forEach(function (e) { sel.appendChild(new Option(e, e)); });
+        sel.value = r.estado;
+        sel.addEventListener('change', function () {
+          sel.disabled = true;
+          google.script.run
+            .withSuccessHandler(function () { sel.disabled = false; })
+            .withFailureHandler(function (err) { sel.disabled = false; sel.value = r.estado; alert(err.message); })
+            .cambiarRonda(r.tarea_id, { estado: sel.value });
+        });
+        td3.appendChild(sel);
+        tr.appendChild(td1); tr.appendChild(td2); tr.appendChild(td3);
+        t.appendChild(tr);
+      });
+      cont.innerHTML = '';
+      cont.appendChild(t);
+    }
+
+    function cargarRondas() {
+      google.script.run
+        .withSuccessHandler(pintarRondas)
+        .withFailureHandler(function (err) { document.getElementById('prof-rondas').textContent = err.message; })
+        .listarRondas();
+    }
+
+    document.getElementById('prof-crear').addEventListener('click', function () {
+      var e = document.getElementById('prof-estado-r');
+      e.textContent = 'Creando…'; e.className = 'estado';
+      google.script.run
+        .withSuccessHandler(function () {
+          e.textContent = '✅ Ronda creada y abierta.'; e.className = 'estado ok';
+          document.getElementById('r-enunciado').value = '';
+          cargarRondas();
+        })
+        .withFailureHandler(function (err) { e.textContent = '❌ ' + err.message; e.className = 'estado err'; })
+        .crearRonda({
+          enunciado: document.getElementById('r-enunciado').value,
+          seccion: document.getElementById('r-seccion').value,
+          modo: document.getElementById('r-modo').value,
+          cierra_entrega_el: document.getElementById('r-fin-entrega').value,
+          cierra_votacion_el: document.getElementById('r-fin-voto').value
+        });
+    });
+
     function initPanel() {
       var cont = document.getElementById('prof-arbol');
       cont.textContent = 'Cargando…';
@@ -463,6 +541,7 @@
           document.getElementById('u-aporta').value = d.gate.REQ_APORTA;
           document.getElementById('u-valora').value = d.gate.REQ_VALORA;
           pintarPulso(d.pulso, d.gate);
+          cargarRondas();
         })
         .withFailureHandler(function (err) { cont.textContent = err.message; })
         .panelProfesor();

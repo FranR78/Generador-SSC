@@ -119,6 +119,18 @@ function panelProfesor() {
   return { arbol: podar_(recorrerCarpeta_(getRootFolder_()), cfg, true), gate: c, pulso: pulso.alumnos };
 }
 
+function listarRondas() {
+  return db_rondas_();
+}
+
+function crearRonda(ronda) {
+  return db_rondaNueva_(ronda);
+}
+
+function cambiarRonda(tareaId, cambios) {
+  return db_rondaSet_(tareaId, cambios);
+}
+
 function guardarVisibilidad(cambios) {
   if (!db_config_().profe) throw new Error('Solo el profesorado puede hacer esto.');
   return db_configSet_(cambios);

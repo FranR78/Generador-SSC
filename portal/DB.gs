@@ -73,8 +73,20 @@ function aportacionesParaValorar() {
   return db_call_('paraValorar');
 }
 
-function valorar(aportacionId, voto) {
-  return db_call_('valorar', { aportacionId: aportacionId, voto: voto });
+function valorar(aportacionId, peso) {
+  return db_call_('valorar', { aportacionId: aportacionId, peso: peso });
+}
+
+function db_rondas_() {
+  return db_call_('rondas');
+}
+
+function db_rondaNueva_(ronda) {
+  return db_call_('rondaNueva', { ronda: ronda });
+}
+
+function db_rondaSet_(tareaId, cambios) {
+  return db_call_('rondaSet', { tareaId: tareaId, cambios: cambios });
 }
 
 // ----------------------------------------------------------- visibilidad ---
