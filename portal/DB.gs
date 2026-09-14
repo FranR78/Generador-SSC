@@ -77,6 +77,28 @@ function valorar(aportacionId, voto) {
   return db_call_('valorar', { aportacionId: aportacionId, voto: voto });
 }
 
+// ----------------------------------------------------------- visibilidad ---
+
+/** Config de visibilidad, cacheada un minuto (se pide en cada listado). */
+function db_config_() {
+  var cache = CacheService.getUserCache();
+  var guardada = cache.get('cfg');
+  if (guardada) return JSON.parse(guardada);
+  var cfg = db_call_('config');
+  cache.put('cfg', JSON.stringify(cfg), 60);
+  return cfg;
+}
+
+function db_configSync_(nodos) {
+  CacheService.getUserCache().remove('cfg');
+  return db_call_('configSync', { nodos: nodos });
+}
+
+function db_configSet_(cambios) {
+  CacheService.getUserCache().remove('cfg');
+  return db_call_('configSet', { cambios: cambios });
+}
+
 // ------------------------------------------------------------- actividad ---
 
 function db_estadoUsuario_(usuario) {

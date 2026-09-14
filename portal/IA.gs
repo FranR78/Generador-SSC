@@ -77,15 +77,26 @@ function preguntar(pregunta, fileIds) {
   if (!fileIds || !fileIds.length) throw new Error('Selecciona al menos un PDF.');
   if (fileIds.length > MAX_PDFS_PER_QUERY) throw new Error('Máximo ' + MAX_PDFS_PER_QUERY + ' PDF por pregunta.');
 
+  var permitidos = idsPermitidos_();
+  fileIds.forEach(function (id) {
+    if (!permitidos[id]) throw new Error('Ese documento no está disponible ahora mismo.');
+  });
+
   var usuario = usuarioActual();
   var estado = gate_estado(usuario);
   if (estado.bloqueado) throw new Error(gate_mensajeBloqueo_(estado));
 
   var key = ia_getKey_();
-  var parts = [], nombres = [];
+  var parts = [], nombres = [], total = 0;
   fileIds.forEach(function (id) {
     var file = DriveApp.getFileById(id);
     if (file.getSize() > MAX_PDF_BYTES) throw new Error('"' + file.getName() + '" pesa >15 MB.');
+    // El límite que importa es el del conjunto: la petición entera viaja en una
+    // sola llamada y UrlFetchApp la rechaza mucho antes de los 5 × 15 MB.
+    total += file.getSize();
+    if (total > MAX_TOTAL_BYTES) {
+      throw new Error('Los PDF seleccionados suman demasiado. Elige menos o más pequeños.');
+    }
     nombres.push(file.getName());
     parts.push({ inlineData: { mimeType: 'application/pdf', data: Utilities.base64Encode(file.getBlob().getBytes()) } });
   });

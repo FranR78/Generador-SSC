@@ -18,12 +18,18 @@ var DB_SHEET_PROP = 'DB_SHEET_ID';
 var PORTAL_AUD_PROP = 'PORTAL_AUD';
 var DOMINIO_PROP = 'DOMINIO';
 
-var TABS = { TAREAS: 'Tareas', APORTA: 'Aportaciones', VALORA: 'Valoraciones', ACT: 'Actividad' };
+var PROFES_PROP = 'PROFES';
+
+var TABS = {
+  TAREAS: 'Tareas', APORTA: 'Aportaciones', VALORA: 'Valoraciones',
+  ACT: 'Actividad', CONFIG: 'Config'
+};
 var HEADERS = {
   Tareas: ['tarea_id', 'enunciado', 'seccion', 'creada_por', 'timestamp', 'estado'],
   Aportaciones: ['aportacion_id', 'tarea_id', 'usuario', 'texto', 'timestamp'],
   Valoraciones: ['valoracion_id', 'aportacion_id', 'usuario', 'voto', 'timestamp'],
-  Actividad: ['usuario', 'consultas', 'aportaciones', 'valoraciones', 'actualizado']
+  Actividad: ['usuario', 'consultas', 'aportaciones', 'valoraciones', 'actualizado'],
+  Config: ['tipo', 'id', 'nombre', 'padre', 'visible', 'abre_el']
 };
 
 // ---------------------------------------------------------------- entrada ---
@@ -89,6 +95,9 @@ function ejecutar_(op, args, usuario) {
     case 'aportar': return aportar_(usuario, args.tareaId, args.texto);
     case 'paraValorar': return paraValorar_(usuario);
     case 'valorar': return valorar_(usuario, args.aportacionId, args.voto);
+    case 'config': return config_(usuario);
+    case 'configSync': return configSync_(usuario, args.nodos);
+    case 'configSet': return configSet_(usuario, args.cambios);
     default: throw new Error('Operación desconocida: ' + op);
   }
 }
@@ -121,9 +130,90 @@ function ss_() {
 }
 
 function hoja_(nombre) {
-  var sh = ss_().getSheetByName(nombre);
-  if (!sh) throw new Error('Falta la pestaña "' + nombre + '".');
+  var ss = ss_();
+  var sh = ss.getSheetByName(nombre);
+  if (sh) return sh;
+  // Crea al vuelo las pestañas añadidas después del db_setup inicial.
+  if (!HEADERS[nombre]) throw new Error('Falta la pestaña "' + nombre + '".');
+  sh = ss.insertSheet(nombre);
+  sh.getRange(1, 1, 1, HEADERS[nombre].length).setValues([HEADERS[nombre]]).setFontWeight('bold');
   return sh;
+}
+
+// ------------------------------------------------------------ visibilidad ---
+
+function esProfe_(usuario) {
+  var lista = PropertiesService.getScriptProperties().getProperty(PROFES_PROP) || '';
+  return lista.toLowerCase().split(/[,;\s]+/).indexOf(usuario) !== -1;
+}
+
+function exigirProfe_(usuario) {
+  if (!esProfe_(usuario)) throw new Error('Solo el profesorado puede hacer esto.');
+}
+
+/**
+ * Visibilidad de temas (carpetas) y documentos.
+ * Sin fila en Config -> visible: al añadir PDF nuevos al Drive no desaparecen
+ * del portal hasta que el profe decida ocultarlos.
+ */
+function config_(usuario) {
+  var vals = hoja_(TABS.CONFIG).getDataRange().getValues();
+  var hoy = new Date();
+  var out = { temas: {}, docs: {}, profe: esProfe_(usuario) };
+  for (var i = 1; i < vals.length; i++) {
+    var tipo = String(vals[i][0]);
+    var id = String(vals[i][1]);
+    if (!id) continue;
+    var abre = vals[i][5];
+    var visible = String(vals[i][4]).toUpperCase() !== 'NO';
+    if (visible && abre instanceof Date && abre > hoy) visible = false;
+    var destino = tipo === 'tema' ? out.temas : out.docs;
+    destino[id] = { visible: visible, nombre: vals[i][2], abre_el: abre || '' };
+  }
+  return out;
+}
+
+/** Da de alta en Config lo que aún no está. No cambia lo ya configurado. */
+function configSync_(usuario, nodos) {
+  exigirProfe_(usuario);
+  if (!nodos || !nodos.length) return { nuevos: 0 };
+  var sh = hoja_(TABS.CONFIG);
+  var vals = sh.getDataRange().getValues();
+  var conocidos = {};
+  for (var i = 1; i < vals.length; i++) conocidos[String(vals[i][1])] = true;
+
+  var filas = [];
+  nodos.forEach(function (n) {
+    if (!n || !n.id || conocidos[String(n.id)]) return;
+    conocidos[String(n.id)] = true;
+    filas.push([n.tipo === 'tema' ? 'tema' : 'doc', n.id, n.nombre || '', n.padre || '', 'SI', '']);
+  });
+  if (filas.length) sh.getRange(sh.getLastRow() + 1, 1, filas.length, 6).setValues(filas);
+  return { nuevos: filas.length };
+}
+
+/** cambios: [{id, visible, abre_el}] */
+function configSet_(usuario, cambios) {
+  exigirProfe_(usuario);
+  if (!cambios || !cambios.length) return { cambiados: 0 };
+  var lock = LockService.getScriptLock();
+  lock.waitLock(15000);
+  try {
+    var sh = hoja_(TABS.CONFIG);
+    var vals = sh.getDataRange().getValues();
+    var filaDe = {};
+    for (var i = 1; i < vals.length; i++) filaDe[String(vals[i][1])] = i + 1;
+
+    var n = 0;
+    cambios.forEach(function (c) {
+      var fila = filaDe[String(c.id)];
+      if (!fila) return;
+      sh.getRange(fila, 5).setValue(c.visible === false ? 'NO' : 'SI');
+      if (c.abre_el !== undefined) sh.getRange(fila, 6).setValue(c.abre_el || '');
+      n++;
+    });
+    return { cambiados: n };
+  } finally { lock.releaseLock(); }
 }
 
 // --------------------------------------------------------------- tareas ---

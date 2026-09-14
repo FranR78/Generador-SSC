@@ -33,14 +33,30 @@ En las Propiedades del script de **Datos**:
   *Configuración del proyecto → Proyecto de Google Cloud*. Con esto, Datos solo
   acepta tokens emitidos para el Portal.
 
-## 4. Comprobación
+## 4. Visibilidad de temas y documentos
+
+1. En Propiedades del script de **Datos**: `PROFES` = tus correos separados por
+   comas. Solo esos pueden cambiar la visibilidad.
+2. Desde el editor del **Portal**, ejecutar `sincronizarCatalogo()` una vez (y
+   cada vez que añadas PDF nuevos al Drive). Da de alta en la pestaña `Config`
+   los temas y documentos que falten, todos como visibles.
+3. Para ocultar algo: en `Config`, poner `NO` en la columna `visible`. Para que
+   se abra solo un día concreto: dejar `SI` y poner la fecha en `abre_el`.
+4. Ocultar un tema oculta todo lo que cuelga de él. Lo que no tiene fila en
+   `Config` se considera visible, así que los PDF nuevos nunca desaparecen sin
+   avisar.
+
+El profesorado ve el árbol completo con lo oculto marcado; el alumnado no recibe
+del servidor ni el nombre de lo que está cerrado.
+
+## 5. Comprobación
 
 1. Entrar al portal con una cuenta de alumno de prueba.
 2. Hacer una consulta: debe aumentar `consultas` en la pestaña `Actividad`.
 3. Intentar abrir la Hoja con esa misma cuenta: **debe dar "no tienes acceso"**.
    Si la abre, la Hoja sigue compartida — quitar el permiso.
 
-## 5. Qué protege y qué no
+## 6. Qué protege y qué no
 
 Protege: los contadores del gating, el anonimato de las valoraciones y las filas
 de los demás. Nadie puede editarlos fuera del portal.
