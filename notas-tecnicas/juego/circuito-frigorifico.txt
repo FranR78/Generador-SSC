@@ -3,102 +3,130 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Diagnóstico del Circuito Frigorífico — Juego</title>
+<title>Diagnóstico del Circuito Frigorífico</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
   :root{
     --azul:    #0a63aa;
-    --azul-os:#063f70;
+    --azul-os: #063f70;
     --fondo:   #e3ecf3;
     --texto:   #101f2b;
     --blanco:  #ffffff;
-    --alta:    #d1493b;   /* lado de alta presión */
-    --baja:    #2b7bbd;   /* lado de baja presión */
+    --alta:    #d1493b;
+    --baja:    #2b7bbd;
     --ok:      #1e874b;
     --mal:     #c0392b;
+    --aviso:   #b8860b;
+    --gris:    #5a6b78;
   }
   *{ box-sizing:border-box; }
   html,body{ margin:0; font-family:'Open Sans',sans-serif; background:var(--fondo); color:var(--texto); }
-  .wrap{ max-width:760px; margin:0 auto; padding:16px; }
+  .wrap{ max-width:780px; margin:0 auto; padding:16px 14px 28px; }
 
-  header{ text-align:center; margin-bottom:12px; }
-  header h1{ color:var(--azul-os); font-size:1.3rem; font-weight:800; margin:0 0 4px; }
-  header p{ margin:0; font-size:0.85rem; color:#557; }
+  header{ text-align:center; margin-bottom:10px; }
+  header h1{ color:var(--azul-os); font-size:1.25rem; font-weight:800; margin:0 0 3px; }
+  header p{ margin:0; font-size:0.82rem; color:var(--gris); }
 
-  .barra{ background:#cfe0ec; border-radius:20px; height:12px; overflow:hidden; margin:12px 0 4px; }
+  .barra{ background:#cfe0ec; border-radius:20px; height:10px; overflow:hidden; margin:12px 0 4px; }
   .barra > div{ background:var(--azul); height:100%; width:0; transition:width .35s ease; }
-  .marcador{ display:flex; justify-content:space-between; font-size:0.8rem; font-weight:700; color:var(--azul-os); }
+  .marcador{ display:flex; justify-content:space-between; font-size:0.78rem; font-weight:700; color:var(--azul-os); }
 
-  .panel{ background:var(--blanco); border:2px solid var(--azul); border-radius:14px; padding:16px; margin-top:14px; }
+  .panel{ background:var(--blanco); border:2px solid var(--azul); border-radius:14px; padding:14px; margin-top:12px; }
 
-  /* Manómetros */
-  .gauges{ display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-bottom:6px; }
+  .gauges{ display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
   .gauge{ text-align:center; }
-  .gauge svg{ width:150px; height:92px; display:block; }
-  .gauge .val{ font-weight:800; font-size:1.05rem; margin-top:-6px; }
-  .gauge .lab{ font-size:0.72rem; text-transform:uppercase; letter-spacing:.06em; font-weight:700; }
+  .gauge svg{ width:140px; height:86px; display:block; }
+  .gauge .val{ font-weight:800; font-size:1rem; margin-top:-6px; }
+  .gauge .lab{ font-size:0.68rem; text-transform:uppercase; letter-spacing:.07em; font-weight:700; }
   .gauge.b .lab{ color:var(--baja); } .gauge.a .lab{ color:var(--alta); }
 
   .sintoma{ background:var(--fondo); border-left:4px solid var(--azul); border-radius:8px;
-            padding:10px 12px; font-size:0.95rem; margin:10px 0; }
+            padding:10px 12px; font-size:0.93rem; margin:10px 0 4px; }
   .sintoma strong{ color:var(--azul-os); }
 
-  /* Esquema del circuito */
-  .circuito{ width:100%; height:auto; margin:6px 0 2px; }
+  h3.bloque{ font-size:0.72rem; text-transform:uppercase; letter-spacing:.08em;
+             color:var(--azul-os); margin:16px 0 6px; border-bottom:1px solid #cfe0ec; padding-bottom:4px; }
+
+  /* Esquema */
+  .circuito{ width:100%; height:auto; display:block; margin:2px 0; }
   .comp{ cursor:pointer; }
-  .comp rect{ fill:var(--blanco); stroke:var(--azul-os); stroke-width:2; rx:8; transition:fill .15s; }
-  .comp text{ font-size:10.5px; font-weight:700; fill:var(--texto); text-anchor:middle; pointer-events:none; }
-  .comp:hover rect{ fill:#dbe9f5; }
-  .comp.sel rect{ fill:var(--azul); stroke:var(--azul-os); }
-  .comp.sel text{ fill:#fff; }
-  .linea-alta{ stroke:var(--alta); stroke-width:4; fill:none; }
-  .linea-baja{ stroke:var(--baja); stroke-width:4; fill:none; }
-  .rot{ font-size:10px; font-weight:800; letter-spacing:.06em; }
-  .alta-t{ fill:var(--alta); } .baja-t{ fill:var(--baja); }
-  .leyenda{ display:flex; gap:16px; justify-content:center; font-size:0.72rem;
-            color:#5a6b78; margin:2px 0 4px; }
-  .leyenda i{ display:inline-block; width:14px; height:4px; border-radius:2px;
-              margin-right:5px; vertical-align:middle; }
+  .comp .hit{ fill:transparent; rx:10; }
+  .comp:hover .hit{ fill:rgba(10,99,170,.08); }
+  .comp.sel .hit{ fill:rgba(10,99,170,.16); stroke:var(--azul-os); stroke-width:2.5; }
+  .cuerpo{ fill:var(--blanco); stroke:var(--azul-os); stroke-width:2; }
+  .tubo{ fill:none; stroke:var(--azul-os); stroke-width:1.6; }
+  .et{ font-size:11px; font-weight:700; fill:var(--texto); text-anchor:middle; pointer-events:none; }
+  .linea-alta{ stroke:var(--alta); stroke-width:4.5; fill:none; stroke-linecap:round; }
+  .linea-baja{ stroke:var(--baja); stroke-width:4.5; fill:none; stroke-linecap:round; }
+  .leyenda{ display:flex; gap:16px; justify-content:center; font-size:0.7rem; color:var(--gris); margin:2px 0 0; }
+  .leyenda i{ display:inline-block; width:14px; height:4px; border-radius:2px; margin-right:5px; vertical-align:middle; }
   .leyenda .c-alta{ background:var(--alta); } .leyenda .c-baja{ background:var(--baja); }
 
-  .pregunta{ font-weight:700; margin:10px 0 8px; }
-  .opciones{ display:grid; grid-template-columns:1fr 1fr; gap:8px; }
-  .opciones button{ font-family:inherit; font-size:0.9rem; font-weight:600; cursor:pointer;
+  /* Comprobaciones */
+  .grupo-p{ margin-bottom:10px; }
+  .grupo-p > p{ font-size:0.72rem; font-weight:700; color:var(--gris); margin:0 0 5px; }
+  .pruebas{ display:grid; grid-template-columns:1fr 1fr; gap:6px; }
+  .pruebas button{ font-family:inherit; font-size:0.8rem; font-weight:600; cursor:pointer; text-align:left;
+     background:var(--blanco); border:1.5px solid #b9d2e6; color:var(--azul-os);
+     border-radius:9px; padding:9px 10px; line-height:1.25; }
+  .pruebas button:hover{ background:#eef5fa; }
+  .pruebas button.hecha{ background:#eef5fa; border-color:var(--azul); opacity:.6; cursor:default; }
+
+  .registro{ list-style:none; padding:0; margin:8px 0 0; }
+  .registro li{ background:#f5fafd; border-left:3px solid var(--azul); border-radius:6px;
+                padding:8px 10px; margin-bottom:6px; font-size:0.84rem; }
+  .registro b{ color:var(--azul-os); display:block; font-size:0.78rem; margin-bottom:2px; }
+  .vacio{ font-size:0.82rem; color:var(--gris); font-style:italic; margin:6px 0 0; }
+
+  /* Diagnóstico */
+  .otras{ display:grid; grid-template-columns:1fr 1fr; gap:6px; margin-top:6px; }
+  .otras button{ font-family:inherit; font-size:0.82rem; font-weight:600; cursor:pointer;
      background:var(--blanco); border:2px solid var(--azul); color:var(--azul-os);
-     border-radius:10px; padding:10px 8px; transition:.12s; }
-  .opciones button:hover{ background:#dbe9f5; }
-  .opciones button.sel{ background:var(--azul); color:#fff; }
-  .opciones button:disabled{ opacity:.55; cursor:default; }
+     border-radius:9px; padding:9px 8px; }
+  .otras button.sel{ background:var(--azul); color:#fff; }
+  .otras button:disabled,.pruebas button:disabled{ opacity:.45; cursor:default; }
+  .elegido{ font-size:0.86rem; margin:8px 0 0; }
+  .elegido b{ color:var(--azul-os); }
 
   .acciones{ display:flex; gap:10px; margin-top:12px; }
-  .acciones button{ flex:1; font-family:inherit; font-size:0.95rem; font-weight:700; cursor:pointer;
+  .acciones button{ flex:1; font-family:inherit; font-size:0.93rem; font-weight:700; cursor:pointer;
      border:none; border-radius:10px; padding:12px; color:#fff; background:var(--azul-os); }
   .acciones button.sec{ background:#7d93a6; }
   .acciones button:disabled{ opacity:.4; cursor:default; }
 
-  .feedback{ margin-top:12px; border-radius:10px; padding:12px; font-size:0.92rem; display:none; }
-  .feedback.ok{ background:#e5f6ec; border:2px solid var(--ok); display:block; }
-  .feedback.mal{ background:#fdeceb; border:2px solid var(--mal); display:block; }
-  .feedback h4{ margin:0 0 6px; }
-  .feedback.ok h4{ color:var(--ok); } .feedback.mal h4{ color:var(--mal); }
-  .feedback .rango{ font-size:0.82rem; color:#555; margin-top:6px; }
+  .evalua{ margin-top:12px; border-radius:10px; padding:12px; font-size:0.9rem; }
+  .evalua.ok{ background:#e9f7ef; border:2px solid var(--ok); }
+  .evalua.medio{ background:#fdf6e3; border:2px solid var(--aviso); }
+  .evalua.mal{ background:#fdeceb; border:2px solid var(--mal); }
+  .evalua h4{ margin:0 0 6px; font-size:1rem; }
+  .evalua.ok h4{ color:var(--ok); } .evalua.medio h4{ color:var(--aviso); } .evalua.mal h4{ color:var(--mal); }
+  .evalua ul{ margin:6px 0; padding-left:18px; }
+  .evalua li{ margin-bottom:3px; }
+  .evalua .ref{ font-size:0.8rem; color:var(--gris); margin-top:8px; }
 
   .fin{ text-align:center; }
-  .fin .nota{ font-size:2.6rem; font-weight:800; color:var(--azul-os); }
+  .fin .nota{ font-size:2.4rem; font-weight:800; color:var(--azul-os); line-height:1.1; }
+  .fin table{ width:100%; border-collapse:collapse; margin:14px 0; font-size:0.88rem; }
+  .fin td{ padding:7px 6px; border-bottom:1px solid #d9e6ef; text-align:left; }
+  .fin td:last-child{ text-align:right; font-weight:700; color:var(--azul-os); }
 
-  .epi{ font-size:0.72rem; color:#667; text-align:center; margin-top:16px; line-height:1.5; }
+  .epi{ font-size:0.7rem; color:var(--gris); text-align:center; margin-top:16px; line-height:1.5; }
   .epi b{ color:var(--azul-os); }
+
+  @media (max-width:420px){
+    .pruebas,.otras{ grid-template-columns:1fr; }
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
     <h1>Diagnóstico del Circuito Frigorífico</h1>
-    <p>Lee los manómetros, localiza la avería y avanza</p>
+    <p>Comprueba antes de diagnosticar: el proceso también puntúa</p>
   </header>
 
   <div class="barra"><div id="progreso"></div></div>
-  <div class="marcador"><span id="paso">Caso 1</span><span id="aciertos">Aciertos: 0</span></div>
+  <div class="marcador"><span id="paso">Caso 1</span><span id="marca">—</span></div>
 
   <div class="panel" id="juego">
     <noscript><p style="margin:0;color:#c0392b;font-weight:700">
@@ -114,169 +142,338 @@
 </div>
 
 <script>
-/* ===== DATOS: casos reales de la tabla de manómetros (nota np32, Hella) ===== */
-/* correcta: lista de ids válidos. baja/alta: valor de aguja. rango: texto de la tabla. */
+/* ============ CATÁLOGO DE COMPROBACIONES ============ */
+var PRUEBAS = [
+  { g:"Inspección visual y térmica", items:[
+    ["visor","Mirar el visor de líquido"],
+    ["temp_tub","Palpar tuberías de alta y baja"],
+    ["salida_aire","Medir temperatura del aire de salida"],
+    ["ventilador","Ver si gira el electroventilador"] ]},
+  { g:"Circuito frigorífico", items:[
+    ["regar_cond","Regar el condensador con agua"],
+    ["enfriar_bulbo","Enfriar el bulbo de la válvula"],
+    ["anadir_gas","Añadir 50–100 g de refrigerante"],
+    ["pesar_carga","Recuperar y pesar la carga"],
+    ["fugas","Buscar fugas con detector"] ]},
+  { g:"Circuito eléctrico", items:[
+    ["embrague","Ver si engrana el embrague"],
+    ["fusible","Comprobar el fusible del compresor"],
+    ["alimentacion","Medir tensión en la bobina"],
+    ["bobina","Medir resistencia de la bobina"],
+    ["presostato","Comprobar señal del presostato"],
+    ["dtc","Leer memoria de averías (DTC)"] ]}
+];
+var NOMBRE_PRUEBA = {};
+PRUEBAS.forEach(function(gr){ gr.items.forEach(function(it){ NOMBRE_PRUEBA[it[0]]=it[1]; }); });
+
+/* ============ DIAGNÓSTICOS POSIBLES ============ */
+var EN_ESQUEMA = { compresor:"Compresor", condensador:"Condensador", electroventilador:"Electroventilador",
+                   filtro:"Filtro deshidratador", valvula:"Válvula de expansión", evaporador:"Evaporador" };
+var OTROS = { carga_falta:"Falta de refrigerante", carga_exceso:"Exceso de refrigerante",
+              electrico:"Circuito eléctrico del embrague", correcto:"Sistema correcto" };
+function nombreDx(id){ return EN_ESQUEMA[id]||OTROS[id]||id; }
+
+/* ============ CASOS (datos de la nota np32 y fichas del circuito) ============ */
 var CASOS = [
-  { sintoma:"El aire sale poco frío y en el visor de líquido se ven burbujas constantes.",
-    baja:0.7, alta:7, rango:"Baja 0,5–0,8 bar · Alta 6–8 bar",
-    correcta:["carga"],
-    explica:"Falta de refrigerante (o válvula de alta semicerrada). Contraste: añade 50–100 g; si los manómetros no reaccionan, es la válvula." },
+ { sintoma:"Enfría poco: el aire sale templado aunque el compresor trabaja.",
+   baja:0.7, alta:7, rango:"Baja 0,5–0,8 bar · Alta 6–8 bar",
+   causa:["carga_falta"], clave:["visor","anadir_gas"],
+   r:{ visor:"Burbujas constantes en el visor de líquido.",
+       anadir_gas:"Al añadir 80 g las dos presiones suben y el aire empieza a enfriar.",
+       fugas:"Rastro de trazador en el racor de entrada del condensador.",
+       temp_tub:"Alta apenas templada; baja poco fría.",
+       salida_aire:"Aire de salida a 18 °C.",
+       embrague:{t:"Engrana y gira con normalidad.",v:"no"},
+       fusible:{t:"Fusible correcto.",v:"no"},
+       alimentacion:{t:"12,4 V en la bobina: correcto.",v:"no"} },
+   explica:"Falta de refrigerante. El contraste decisivo es añadir 50–100 g: si los manómetros reaccionan, era carga; si no se inmutan, la causa sería una válvula de alta semicerrada." },
 
-  { sintoma:"Enfría de forma irregular; la baja está claramente alta.",
-    baja:3.4, alta:13, rango:"Baja 3–3,8 bar · Alta 12–14 bar",
-    correcta:["valvula"],
-    explica:"Bulbo de la válvula de expansión suelto o sin contacto térmico con el tubo del evaporador: pierde la referencia y abre de más." },
+ { sintoma:"Enfría de forma irregular y la aguja de baja está claramente alta.",
+   baja:3.4, alta:13, rango:"Baja 3–3,8 bar · Alta 12–14 bar",
+   causa:["valvula"], clave:["enfriar_bulbo","salida_aire"],
+   r:{ enfriar_bulbo:"Al enfriar el bulbo la baja no baja de 3 bar: la válvula no modula.",
+       salida_aire:"Aire de salida a 16 °C, muy por encima de los 4–8 °C de un equipo sano.",
+       visor:"Visor limpio, sin burbujas.",
+       temp_tub:"Baja poco fría en todo su recorrido.",
+       embrague:{t:"Engrana correctamente.",v:"no"},
+       dtc:{t:"Sin averías memorizadas.",v:"no"} },
+   explica:"Bulbo de la válvula de expansión suelto o sin contacto térmico con el tubo del evaporador: pierde la referencia y abre de más." },
 
-  { sintoma:"Deja de enfriar; al acelerar, la aguja de baja se va a vacío.",
-    baja:0, alta:12, rango:"Baja 0 → vacío · Alta 10–13 bar",
-    correcta:["valvula"],
-    explica:"Válvula de expansión cerrada u obturada (o bulbo roto): estrangula el paso y la baja colapsa. Comprueba enfriando el bulbo; si no reacciona, sustituye válvula y filtro." },
+ { sintoma:"Deja de enfriar; al acelerar, la aguja de baja se va a vacío.",
+   baja:0, alta:12, rango:"Baja 0 → vacío · Alta 10–13 bar",
+   causa:["valvula"], clave:["enfriar_bulbo","temp_tub"],
+   r:{ enfriar_bulbo:"Ninguna reacción en los manómetros al enfriar el bulbo.",
+       temp_tub:"Escarcha justo a la salida de la válvula; el resto del evaporador, a temperatura ambiente.",
+       anadir_gas:"Las presiones no reaccionan al añadir refrigerante.",
+       visor:"Visor limpio.",
+       embrague:{t:"Engrana bien.",v:"no"},
+       fusible:{t:"Correcto.",v:"no"} },
+   explica:"Válvula de expansión cerrada u obturada (o bulbo roto): estrangula el paso y la baja colapsa. Se sustituye siempre junto con el filtro deshidratador." },
 
-  { sintoma:"El electroventilador no para nunca y enfría regular. Sospechas de más gas del debido.",
-    baja:2.6, alta:17, rango:"Baja 2,5–2,7 bar · Alta 16–18 bar",
-    correcta:["carga"],
-    explica:"Exceso de refrigerante (más frecuente de lo que parece): sube la baja y la alta y el ventilador trabaja sin descanso. Recupera y ajusta la carga al valor del fabricante." },
+ { sintoma:"Enfría regular y el electroventilador no descansa nunca.",
+   baja:2.6, alta:17, rango:"Baja 2,5–2,7 bar · Alta 16–18 bar",
+   causa:["carga_exceso"], clave:["pesar_carga","ventilador"],
+   r:{ pesar_carga:"Se recuperan 1.080 g; el fabricante especifica 800 g.",
+       ventilador:"Gira a máxima velocidad de forma continua, sin ciclar.",
+       visor:"Visor lleno, sin burbujas.",
+       salida_aire:"Aire de salida a 12 °C.",
+       temp_tub:"Alta muy caliente en todo el recorrido.",
+       fusible:{t:"Correcto.",v:"no"},
+       bobina:{t:"3,4 Ω, dentro de rango.",v:"no"} },
+   explica:"Exceso de refrigerante: sube la baja y la alta, y el ventilador trabaja sin descanso. Es bastante más frecuente de lo que se imagina." },
 
-  { sintoma:"No enfría nada y la aguja de alta se dispara por encima de 25 bar.",
-    baja:2.5, alta:26, rango:"Baja 2,3–2,8 bar · Alta > 25 bar",
-    correcta:["condensador","electroventilador"],
-    explica:"El calor no se evacúa en el lado de alta: condensador tapado o electroventilador parado. Riega el condensador y verifica el arranque del ventilador." },
+ { sintoma:"No enfría nada y la aguja de alta se dispara por encima de 25 bar.",
+   baja:2.5, alta:26, rango:"Baja 2,3–2,8 bar · Alta > 25 bar",
+   causa:["condensador","electroventilador"], clave:["ventilador","regar_cond"],
+   r:{ ventilador:"El electroventilador no arranca pese a superarse los 20 bar.",
+       regar_cond:"Al regar el condensador la alta cae de 26 a 18 bar.",
+       temp_tub:"Línea de alta quemando en toda su longitud.",
+       dtc:"DTC memorizado: mando del electroventilador sin respuesta.",
+       visor:"Visor limpio.",
+       anadir_gas:{t:"Añadir gas empeora la alta.",v:"no"} },
+   explica:"El calor no se evacúa en el lado de alta: condensador tapado o electroventilador parado. Aquí valen ambas respuestas; el riego confirma la mala disipación." },
 
-  { sintoma:"Enfría poco; la alta está muy alta y la baja también algo alta.",
-    baja:5, alta:24, rango:"Baja 4,5–5,7 bar · Alta 21–27 bar",
-    correcta:["filtro"],
-    explica:"Filtro deshidratador obstruido: estrangula la línea de alta. Se sustituye siempre junto con la válvula si se abre el circuito." },
+ { sintoma:"Enfría poco: la alta está muy alta y la baja también algo alta.",
+   baja:5, alta:24, rango:"Baja 4,5–5,7 bar · Alta 21–27 bar",
+   causa:["filtro"], clave:["temp_tub","visor"],
+   r:{ temp_tub:"Salto brusco de temperatura en el propio filtro: caliente a la entrada, frío a la salida.",
+       visor:"Burbujas intermitentes.",
+       regar_cond:"La alta apenas varía al regar.",
+       anadir_gas:"No mejora.",
+       salida_aire:"Aire de salida a 15 °C.",
+       embrague:{t:"Engrana correctamente.",v:"no"} },
+   explica:"Filtro deshidratador obstruido: estrangula la línea de alta y crea un salto térmico en el propio filtro. Se sustituye siempre que se abre el circuito." },
 
-  { sintoma:"Enfría a rachas: se corta y se recupera solo al parar el equipo un rato.",
-    baja:0.2, alta:8, rango:"Baja casi 0 bar · Alta 7–10 bar",
-    correcta:["evaporador"],
-    explica:"Evaporador congelado: el hielo bloquea el paso de aire. Al parar, el hielo funde y vuelve a enfriar; reaparece al pasar humedad. Revisa sonda/termostato del evaporador." },
+ { sintoma:"Enfría a rachas: se corta y se recupera solo tras parar el equipo un rato.",
+   baja:0.2, alta:8, rango:"Baja casi 0 bar · Alta 7–10 bar",
+   causa:["evaporador"], clave:["salida_aire","presostato"],
+   r:{ salida_aire:"El caudal de aire cae casi a cero; lo poco que sale está muy frío.",
+       presostato:"La sonda del evaporador no corta: sigue pidiendo frío a −4 °C.",
+       visor:"Visor limpio.",
+       enfriar_bulbo:"La baja responde con normalidad al enfriar el bulbo.",
+       fugas:"Sin fugas detectadas.",
+       regar_cond:{t:"Sin efecto sobre las presiones.",v:"no"} },
+   explica:"Evaporador congelado: el hielo bloquea el paso de aire. Al parar, funde y vuelve a enfriar, y reaparece al pasar humedad. Revisa la sonda/termostato del evaporador." },
 
-  { sintoma:"Tras 20 min a 1.500 rpm: baja estable en torno a 2 bar y alta sobre 10 bar. Sale aire bien frío.",
-    baja:2.0, alta:10, rango:"Baja 1,8–2,1 bar · Alta 6–13 bar",
-    correcta:["correcto"],
-    explica:"Equipo correcto (compresor de cilindrada variable): el par de presiones está dentro de rango y el visor sale limpio." }
+ { sintoma:"No enfría nada. Las dos agujas marcan casi lo mismo y no se mueven al acelerar.",
+   baja:5, alta:5.5, rango:"Baja 4,5–6 bar · Alta igual a la baja",
+   causa:["electrico"], clave:["embrague","fusible","alimentacion"],
+   r:{ embrague:"La polea gira, pero el plato del embrague no engrana.",
+       fusible:"Fusible del compresor fundido.",
+       alimentacion:"0 V en la bobina del embrague.",
+       bobina:"3,6 Ω: bobina dentro de rango, no está cortada.",
+       dtc:"DTC: circuito de mando del compresor sin tensión.",
+       presostato:"Presión suficiente: el presostato autoriza el arranque.",
+       regar_cond:{t:"Sin efecto: el compresor ni siquiera arranca.",v:"no"},
+       anadir_gas:{t:"No procede: con el compresor parado no se carga.",v:"no"},
+       enfriar_bulbo:{t:"Sin efecto: no hay circulación de refrigerante.",v:"no"} },
+   explica:"El compresor no llega a mover refrigerante, por eso las dos presiones se igualan. La cadena eléctrica (engrane → fusible → alimentación → bobina) localiza el punto exacto: aquí, fusible fundido que deja la bobina sin tensión." }
 ];
 
-/* Componentes del esquema (clicables) + opciones que no son del dibujo */
-var COMPONENTES = { compresor:"Compresor", condensador:"Condensador", filtro:"Filtro deshidratador",
-                    valvula:"Válvula de expansión", evaporador:"Evaporador" };
-var EXTRA = { carga:"Carga de refrigerante", electroventilador:"Electroventilador", correcto:"Todo correcto" };
+/* ============ ESTADO ============ */
+var iCaso=0, hechas=[], elegido=null, cerrado=false;
+var resultados=[];   // por caso: {ok, fundamentado, fuera}
+var juego=document.getElementById('juego');
 
-var iCaso=0, aciertos=0, elegido=null, contestado=false;
-var juego = document.getElementById('juego');
-
-function svgGauge(val, max, tipo){
-  // semicírculo 180°(izq) → 0°(der); aguja según val/max
-  var frac = Math.max(0, Math.min(1, val/max));
-  var ang = Math.PI*(1-frac);            // rad
-  var cx=75, cy=80, r=62;
-  var nx = cx + r*0.86*Math.cos(ang), ny = cy - r*0.86*Math.sin(ang);
-  var color = tipo==='a' ? 'var(--alta)' : 'var(--baja)';
-  return '<svg viewBox="0 0 150 92">'
-    + '<path d="M '+(cx-r)+' '+cy+' A '+r+' '+r+' 0 0 1 '+(cx+r)+' '+cy+'" fill="none" stroke="#dfe7e2" stroke-width="10"/>'
-    + '<path d="M '+(cx-r)+' '+cy+' A '+r+' '+r+' 0 0 1 '+(cx+r)+' '+cy+'" fill="none" stroke="'+color+'" stroke-width="10" '
-    + 'stroke-dasharray="'+(Math.PI*r*frac)+' '+(Math.PI*r)+'"/>'
-    + '<line x1="'+cx+'" y1="'+cy+'" x2="'+nx.toFixed(1)+'" y2="'+ny.toFixed(1)+'" stroke="#222" stroke-width="3"/>'
-    + '<circle cx="'+cx+'" cy="'+cy+'" r="5" fill="#222"/></svg>';
+function resultado(c,id){
+  var v=c.r[id];
+  if(v===undefined) return { t:"Sin hallazgos relevantes.", v:"info" };
+  if(typeof v==='string') return { t:v, v:(c.clave.indexOf(id)>=0?"clave":"info") };
+  return { t:v.t, v:v.v==='no'?'no':(c.clave.indexOf(id)>=0?'clave':'info') };
 }
 
+/* ============ MANÓMETROS ============ */
+function gauge(val,max,tipo){
+  var frac=Math.max(0,Math.min(1,val/max)), ang=Math.PI*(1-frac);
+  var cx=70,cy=76,r=58;
+  var nx=cx+r*0.85*Math.cos(ang), ny=cy-r*0.85*Math.sin(ang);
+  var col=tipo==='a'?'var(--alta)':'var(--baja)';
+  var arco='M '+(cx-r)+' '+cy+' A '+r+' '+r+' 0 0 1 '+(cx+r)+' '+cy;
+  return '<svg viewBox="0 0 140 86">'
+    + '<path d="'+arco+'" fill="none" stroke="#dde7ee" stroke-width="10"/>'
+    + '<path d="'+arco+'" fill="none" stroke="'+col+'" stroke-width="10" stroke-dasharray="'
+    + (Math.PI*r*frac)+' '+(Math.PI*r)+'"/>'
+    + '<line x1="'+cx+'" y1="'+cy+'" x2="'+nx.toFixed(1)+'" y2="'+ny.toFixed(1)+'" stroke="#1a1a1a" stroke-width="3"/>'
+    + '<circle cx="'+cx+'" cy="'+cy+'" r="5" fill="#1a1a1a"/></svg>';
+}
+
+/* ============ ESQUEMA REALISTA ============ */
 function esquema(){
-  // Lazo cerrado: arriba el lado de alta (compresor→condensador→filtro), la
-  // válvula marca la frontera, y abajo el lado de baja (evaporador→compresor).
-  var CORTO={compresor:"Compresor",condensador:"Condensador",filtro:"Filtro deshidr.",
-             valvula:"Válvula exp.",evaporador:"Evaporador"};
-  function box(id,x,y){
-    return '<g class="comp" data-id="'+id+'" transform="translate('+x+','+y+')">'
-      + '<rect width="110" height="40"></rect>'
-      + '<text x="55" y="24">'+CORTO[id]+'</text></g>';
+  function g(id,hit,cuerpo,et,ex,ey){
+    return '<g class="comp" data-id="'+id+'">'+cuerpo
+      + '<text class="et" x="'+ex+'" y="'+ey+'">'+et+'</text>'
+      + '<rect class="hit" x="'+hit[0]+'" y="'+hit[1]+'" width="'+hit[2]+'" height="'+hit[3]+'"/></g>';
   }
-  return '<svg class="circuito" viewBox="0 0 520 185">'
-    + '<path class="linea-alta" d="M125 35 H205"/>'
-    + '<path class="linea-alta" d="M315 35 H395"/>'
-    + '<path class="linea-alta" d="M450 55 V125"/>'
-    + '<path class="linea-baja" d="M395 145 H315"/>'
-    + '<path class="linea-baja" d="M205 145 H70 V55"/>'
-    + '<text class="rot alta-t" x="468" y="95">ALTA</text>'
-    + '<text class="rot baja-t" x="52" y="100" text-anchor="end">BAJA</text>'
-    + box('compresor',15,15) + box('condensador',205,15) + box('filtro',395,15)
-    + box('valvula',395,125) + box('evaporador',205,125)
+  var compresor =
+      '<rect class="cuerpo" x="30" y="215" width="150" height="70" rx="10"/>'
+    + '<circle class="cuerpo" cx="62" cy="250" r="21"/><circle class="cuerpo" cx="62" cy="250" r="9"/>'
+    + '<path class="tubo" d="M92 232 H160 M92 268 H160 M92 250 H160"/>';
+  var condensador =
+      '<rect class="cuerpo" x="120" y="35" width="170" height="70" rx="6"/>'
+    + '<path class="tubo" d="M132 50 H276 Q284 50 284 57 Q284 64 276 64 H134 Q126 64 126 71 Q126 78 134 78 H276 Q284 78 284 85 Q284 92 276 92 H132"/>';
+  var fan =
+      '<circle class="cuerpo" cx="350" cy="70" r="28"/>'
+    + '<path class="tubo" d="M350 70 Q338 48 356 46 Q362 60 350 70 M350 70 Q372 60 370 78 Q356 82 350 70 M350 70 Q340 92 324 82 Q332 70 350 70"/>'
+    + '<circle cx="350" cy="70" r="4.5" fill="var(--azul-os)"/>';
+  var filtro =
+      '<rect class="cuerpo" x="470" y="28" width="44" height="88" rx="21"/>'
+    + '<path class="tubo" d="M478 60 H506 M478 84 H506"/>'
+    + '<circle cx="486" cy="72" r="2.4" fill="var(--azul-os)"/><circle cx="498" cy="72" r="2.4" fill="var(--azul-os)"/>';
+  var valvula =
+      '<path class="cuerpo" d="M470 234 L514 262 L514 234 L470 262 Z"/>'
+    + '<path class="tubo" d="M492 234 V224 M484 224 H500"/>';
+  var evaporador =
+      '<rect class="cuerpo" x="250" y="215" width="170" height="70" rx="6"/>'
+    + '<path class="tubo" d="M262 230 H406 Q414 230 414 237 Q414 244 406 244 H264 Q256 244 256 251 Q256 258 264 258 H406 Q414 258 414 265 Q414 272 406 272 H262"/>';
+
+  return '<svg class="circuito" viewBox="0 0 560 322">'
+    + '<path class="linea-alta" d="M100 215 V70 H120"/>'
+    + '<path class="linea-alta" d="M290 70 H470"/>'
+    + '<path class="linea-alta" d="M492 116 V224"/>'
+    + '<path class="linea-baja" d="M470 248 H420"/>'
+    + '<path class="linea-baja" d="M250 250 H180"/>'
+    + g('compresor',[24,211,162,96],compresor,'Compresor',105,302)
+    + g('condensador',[114,29,182,104],condensador,'Condensador',205,126)
+    + g('electroventilador',[318,38,64,80],fan,'Electroventilador',350,112)
+    + g('filtro',[462,22,60,116],filtro,'Filtro deshidr.',492,132)
+    + g('valvula',[462,218,60,74],valvula,'Válvula exp.',492,286)
+    + g('evaporador',[244,211,182,96],evaporador,'Evaporador',335,302)
     + '</svg>'
     + '<div class="leyenda"><span><i class="c-alta"></i>lado de alta presión</span>'
     + '<span><i class="c-baja"></i>lado de baja presión</span></div>';
 }
 
+/* ============ PINTAR CASO ============ */
 function pintaCaso(){
-  contestado=false; elegido=null;
+  hechas=[]; elegido=null; cerrado=false;
   var c=CASOS[iCaso];
   document.getElementById('paso').textContent='Caso '+(iCaso+1)+' de '+CASOS.length;
-  document.getElementById('aciertos').textContent='Aciertos: '+aciertos;
   document.getElementById('progreso').style.width=(iCaso/CASOS.length*100)+'%';
+  actualizaMarca();
 
-  var ops='';
-  Object.keys(COMPONENTES).forEach(function(id){ ops+='<button data-id="'+id+'">'+COMPONENTES[id]+'</button>'; });
-  Object.keys(EXTRA).forEach(function(id){ ops+='<button data-id="'+id+'">'+EXTRA[id]+'</button>'; });
+  var bloquesP='';
+  PRUEBAS.forEach(function(gr){
+    var bts='';
+    gr.items.forEach(function(it){ bts+='<button data-p="'+it[0]+'">'+it[1]+'</button>'; });
+    bloquesP+='<div class="grupo-p"><p>'+gr.g+'</p><div class="pruebas">'+bts+'</div></div>';
+  });
+  var otros='';
+  Object.keys(OTROS).forEach(function(id){ otros+='<button data-dx="'+id+'">'+OTROS[id]+'</button>'; });
 
   juego.innerHTML =
       '<div class="gauges">'
-    +   '<div class="gauge b">'+svgGauge(c.baja,7,'b')+'<div class="val">'+c.baja+' bar</div><div class="lab">Baja</div></div>'
-    +   '<div class="gauge a">'+svgGauge(c.alta,30,'a')+'<div class="val">'+c.alta+' bar</div><div class="lab">Alta</div></div>'
+    +   '<div class="gauge b">'+gauge(c.baja,7,'b')+'<div class="val">'+c.baja+' bar</div><div class="lab">Baja</div></div>'
+    +   '<div class="gauge a">'+gauge(c.alta,30,'a')+'<div class="val">'+c.alta+' bar</div><div class="lab">Alta</div></div>'
     + '</div>'
     + '<div class="sintoma"><strong>Síntoma:</strong> '+c.sintoma+'</div>'
+    + '<h3 class="bloque">1 · Comprobaciones</h3>'
+    + bloquesP
+    + '<h3 class="bloque">Registro de lo comprobado</h3>'
+    + '<ul class="registro" id="reg"></ul>'
+    + '<p class="vacio" id="vacio">Aún no has comprobado nada. Diagnosticar sin pruebas es tirar a la diana.</p>'
+    + '<h3 class="bloque">2 · Diagnóstico</h3>'
+    + '<p class="vacio" style="font-style:normal">Toca el componente averiado en el esquema, o elige una causa:</p>'
     + esquema()
-    + '<div class="pregunta">¿Dónde está la avería? Toca el componente o elige una opción:</div>'
-    + '<div class="opciones">'+ops+'</div>'
-    + '<div class="feedback" id="fb"></div>'
-    + '<div class="acciones"><button id="comprobar" disabled>Comprobar</button>'
+    + '<div class="otras">'+otros+'</div>'
+    + '<p class="elegido" id="elegido">Diagnóstico seleccionado: <b>—</b></p>'
+    + '<div id="evalua"></div>'
+    + '<div class="acciones"><button id="emitir" disabled>Emitir diagnóstico</button>'
     +   '<button id="siguiente" class="sec" disabled>Siguiente ▶</button></div>';
 
-  juego.querySelectorAll('.comp').forEach(function(g){ g.addEventListener('click',function(){ seleccionar(g.dataset.id); }); });
-  juego.querySelectorAll('.opciones button').forEach(function(b){ b.addEventListener('click',function(){ seleccionar(b.dataset.id); }); });
-  document.getElementById('comprobar').addEventListener('click', comprobar);
+  juego.querySelectorAll('[data-p]').forEach(function(b){
+    b.addEventListener('click',function(){ hacerPrueba(b.dataset.p,b); }); });
+  juego.querySelectorAll('.comp').forEach(function(el){
+    el.addEventListener('click',function(){ elegir(el.dataset.id); }); });
+  juego.querySelectorAll('[data-dx]').forEach(function(b){
+    b.addEventListener('click',function(){ elegir(b.dataset.dx); }); });
+  document.getElementById('emitir').addEventListener('click', emitir);
   document.getElementById('siguiente').addEventListener('click', siguiente);
 }
 
-function seleccionar(id){
-  if(contestado) return;
-  elegido=id;
-  juego.querySelectorAll('.comp').forEach(function(g){ g.classList.toggle('sel', g.dataset.id===id); });
-  juego.querySelectorAll('.opciones button').forEach(function(b){ b.classList.toggle('sel', b.dataset.id===id); });
-  document.getElementById('comprobar').disabled=false;
+function actualizaMarca(){
+  var ok=resultados.filter(function(r){return r.ok;}).length;
+  var fu=resultados.filter(function(r){return r.ok&&r.fundamentado;}).length;
+  document.getElementById('marca').textContent='Correctos: '+ok+' · Fundamentados: '+fu;
 }
 
-function nombre(id){ return COMPONENTES[id]||EXTRA[id]||id; }
+function hacerPrueba(id,btn){
+  if(cerrado||hechas.indexOf(id)>=0) return;
+  hechas.push(id);
+  btn.classList.add('hecha'); btn.disabled=true;
+  var res=resultado(CASOS[iCaso],id);
+  var li=document.createElement('li');
+  li.innerHTML='<b>'+NOMBRE_PRUEBA[id]+'</b>'+res.t;
+  document.getElementById('reg').appendChild(li);
+  document.getElementById('vacio').style.display='none';
+}
 
-function comprobar(){
-  if(contestado||!elegido) return;
-  contestado=true;
-  var c=CASOS[iCaso], acierto=c.correcta.indexOf(elegido)>=0;
-  if(acierto) aciertos++;
-  var fb=document.getElementById('fb');
-  fb.className='feedback '+(acierto?'ok':'mal');
-  var solucion=c.correcta.map(nombre).join(' o ');
-  fb.innerHTML='<h4>'+(acierto?'✔ Correcto':'✘ No es ahí')+'</h4>'
-    + (acierto?'':'<p>La avería está en: <strong>'+solucion+'</strong>.</p>')
-    + '<p>'+c.explica+'</p><p class="rango">Lectura de referencia: '+c.rango+'</p>';
-  juego.querySelectorAll('.opciones button').forEach(function(b){ b.disabled=true; });
-  document.getElementById('comprobar').disabled=true;
+function elegir(id){
+  if(cerrado) return;
+  elegido=id;
+  juego.querySelectorAll('.comp').forEach(function(el){ el.classList.toggle('sel', el.dataset.id===id); });
+  juego.querySelectorAll('[data-dx]').forEach(function(b){ b.classList.toggle('sel', b.dataset.dx===id); });
+  document.getElementById('elegido').innerHTML='Diagnóstico seleccionado: <b>'+nombreDx(id)+'</b>';
+  document.getElementById('emitir').disabled=false;
+}
+
+function emitir(){
+  if(cerrado||!elegido) return;
+  cerrado=true;
+  var c=CASOS[iCaso];
+  var ok=c.causa.indexOf(elegido)>=0;
+  var faltan=c.clave.filter(function(k){ return hechas.indexOf(k)<0; });
+  var fuera=hechas.filter(function(h){ return resultado(c,h).v==='no'; });
+  var fundamentado = ok && faltan.length===0;
+  resultados.push({ ok:ok, fundamentado:fundamentado, fuera:fuera.length });
+
+  var clase = ok ? (fundamentado?'ok':'medio') : 'mal';
+  var titulo = ok ? (fundamentado?'✔ Diagnóstico correcto y fundamentado':'◑ Acertaste, pero sin fundamento') : '✘ Diagnóstico incorrecto';
+  var h='<div class="evalua '+clase+'"><h4>'+titulo+'</h4>';
+  if(!ok) h+='<p>La causa era: <strong>'+c.causa.map(nombreDx).join(' o ')+'</strong>.</p>';
+  if(faltan.length){
+    h+='<p>Te faltó comprobar antes de decidir:</p><ul>';
+    faltan.forEach(function(k){ h+='<li>'+NOMBRE_PRUEBA[k]+'</li>'; });
+    h+='</ul>';
+  } else {
+    h+='<p>Hiciste las comprobaciones que sostienen el diagnóstico.</p>';
+  }
+  if(fuera.length){
+    h+='<p>Comprobaciones que no procedían en este caso:</p><ul>';
+    fuera.forEach(function(k){ h+='<li>'+NOMBRE_PRUEBA[k]+' — '+resultado(c,k).t+'</li>'; });
+    h+='</ul>';
+  }
+  h+='<p>'+c.explica+'</p><p class="ref">Lectura de referencia: '+c.rango+'</p></div>';
+  document.getElementById('evalua').innerHTML=h;
+
+  juego.querySelectorAll('[data-p],[data-dx]').forEach(function(b){ b.disabled=true; });
+  document.getElementById('emitir').disabled=true;
   document.getElementById('siguiente').disabled=false;
-  document.getElementById('aciertos').textContent='Aciertos: '+aciertos;
+  actualizaMarca();
+  document.getElementById('evalua').scrollIntoView({behavior:'smooth',block:'nearest'});
 }
 
 function siguiente(){
   iCaso++;
   if(iCaso>=CASOS.length) return fin();
   pintaCaso();
+  window.scrollTo({top:0,behavior:'smooth'});
 }
 
 function fin(){
   document.getElementById('progreso').style.width='100%';
-  document.getElementById('paso').textContent='Fin';
-  var pct=Math.round(aciertos/CASOS.length*100);
-  juego.innerHTML='<div class="fin"><div class="nota">'+aciertos+'/'+CASOS.length+'</div>'
-    + '<p>Has diagnosticado correctamente el <strong>'+pct+'%</strong> de los casos.</p>'
+  document.getElementById('paso').textContent='Resultado final';
+  var ok=resultados.filter(function(r){return r.ok;}).length;
+  var fu=resultados.filter(function(r){return r.ok&&r.fundamentado;}).length;
+  var fuera=resultados.reduce(function(a,r){return a+r.fuera;},0);
+  juego.innerHTML='<div class="fin"><div class="nota">'+fu+'/'+CASOS.length+'</div>'
+    + '<p>diagnósticos correctos <strong>y fundamentados</strong></p>'
+    + '<table><tr><td>Diagnósticos correctos</td><td>'+ok+' de '+CASOS.length+'</td></tr>'
+    + '<tr><td>De ellos, con las comprobaciones hechas</td><td>'+fu+'</td></tr>'
+    + '<tr><td>Comprobaciones fuera de lugar</td><td>'+fuera+'</td></tr></table>'
+    + '<p class="vacio" style="font-style:normal">Acertar sin comprobar no cuenta como diagnóstico: cuenta como suerte.</p>'
     + '<div class="acciones"><button id="reiniciar">Volver a empezar</button></div></div>';
-  document.getElementById('reiniciar').addEventListener('click',function(){ iCaso=0; aciertos=0; pintaCaso(); });
+  document.getElementById('reiniciar').addEventListener('click',function(){
+    iCaso=0; resultados=[]; pintaCaso(); window.scrollTo({top:0,behavior:'smooth'}); });
 }
 
 pintaCaso();
