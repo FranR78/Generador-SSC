@@ -192,3 +192,82 @@ function puenteNT_archivarProcesados() {
 
   console.log(movidos + ' documentos apartados. Lo que queda en la carpeta está sin procesar.');
 }
+
+
+/**
+ * Comprueba que el puente está bien configurado, antes de dejarlo suelto.
+ *
+ * Se ejecuta a mano desde el editor, mira el registro y ya está. No sube ni
+ * mueve nada, y no escribe el token en ningún sitio: solo dice si sirve.
+ */
+function puenteNT_comprobar() {
+  const props = PropertiesService.getScriptProperties();
+  const lineas = [];
+  let fallos = 0;
+
+  function bien(texto) { lineas.push('  OK    ' + texto); }
+  function mal(texto)  { lineas.push('  FALLA ' + texto); fallos++; }
+
+  // --- Las carpetas de Drive ---
+  [['CARPETA_CAPTURAS', 'capturas del alumnado'],
+   ['CARPETA_FUENTES', 'PDF sin procesar']].forEach(function (par) {
+    const id = props.getProperty(par[0]);
+    if (!id) return mal(par[0] + ' sin poner (' + par[1] + ')');
+    try {
+      bien(par[0] + ' → "' + DriveApp.getFolderById(id).getName() + '"');
+    } catch (e) {
+      mal(par[0] + ': ese ID no abre ninguna carpeta. ¿Copiaste lo que va detrás de /folders/?');
+    }
+  });
+
+  // --- El token ---
+  const token = props.getProperty('GITHUB_TOKEN');
+  if (!token) {
+    mal('GITHUB_TOKEN sin poner');
+  } else {
+    const cabeceras = {Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json'};
+
+    const repo = UrlFetchApp.fetch('https://api.github.com/repos/' + REPO,
+                                   {headers: cabeceras, muteHttpExceptions: true});
+    const codigo = repo.getResponseCode();
+
+    if (codigo === 401) {
+      mal('el token no vale: caducado, mal copiado o revocado');
+    } else if (codigo === 404) {
+      mal('el token no ve ' + REPO + '. Al crearlo hay que darle acceso a ESE repositorio');
+    } else if (codigo !== 200) {
+      mal('GitHub responde ' + codigo + ' al pedir el repositorio');
+    } else {
+      bien('el token ve ' + REPO);
+      if (JSON.parse(repo.getContentText()).permissions.push) {
+        bien('tiene permiso de escritura (Contents: Read and write)');
+      } else {
+        mal('solo puede leer. Hace falta Contents: Read and write para subir las capturas');
+      }
+    }
+
+    // La carpeta de destino: 404 aquí es normal si aún está vacía.
+    const destino = UrlFetchApp.fetch(
+      'https://api.github.com/repos/' + REPO + '/contents/' +
+      rutaCodificada(DESTINO) + '?ref=' + RAMA,
+      {headers: cabeceras, muteHttpExceptions: true});
+    if (destino.getResponseCode() === 200) {
+      bien('la carpeta de destino existe: ' + DESTINO);
+    } else {
+      lineas.push('  AVISO ' + DESTINO + ' todavía no existe en el repositorio; ' +
+                  'se creará con la primera captura');
+    }
+  }
+
+  // --- Los activadores ---
+  const activos = ScriptApp.getProjectTriggers().map(function (t) { return t.getHandlerFunction(); });
+  ['puenteNT_subirCapturas', 'puenteNT_archivarProcesados'].forEach(function (f) {
+    if (activos.indexOf(f) >= 0) bien('activador puesto: ' + f);
+    else mal('falta el activador de ' + f + ' — ejecuta crearActivador una vez');
+  });
+
+  console.log(lineas.join('\n'));
+  console.log(fallos === 0
+    ? '\nTodo listo. El puente puede funcionar solo.'
+    : '\n' + fallos + ' cosa(s) que arreglar antes de fiarte del puente.');
+}

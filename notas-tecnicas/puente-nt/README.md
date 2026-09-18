@@ -25,7 +25,20 @@ dejado ahí.
    El token va aquí y no dentro del código: las propiedades no viajan con las
    copias del proyecto, el código sí.
 
-4. Ejecutar **`crearActivador`** una vez. Ya queda solo.
+4. Ejecutar **`crearActivador`** una vez.
+5. Ejecutar **`puenteNT_comprobar`** y mirar el registro. Dice si el token
+   sirve, si ve este repositorio, si puede escribir en él, si los ID de carpeta
+   abren algo y si los activadores están puestos. No sube ni mueve nada, y no
+   escribe el token en ninguna parte. Si sale todo OK, ya queda solo.
+
+Los fallos que salen de verdad, y qué significan:
+
+| Lo que dice | Qué pasó |
+|---|---|
+| el token no vale | caducado, mal copiado, o revocado |
+| el token no ve el repositorio | al crearlo no le diste acceso a *este* repositorio |
+| solo puede leer | te faltó **Contents: Read and write** |
+| ese ID no abre ninguna carpeta | copiaste la URL entera en vez de lo que va detrás de `/folders/` |
 
 Si quieres que se despliegue desde este repositorio como los demás, añade su
 Script ID a la matriz de `.github/workflows/deploy-gas.yml`.
