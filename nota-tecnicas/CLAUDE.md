@@ -84,3 +84,24 @@ menores: eso pasa por jefatura antes de existir.
 | `prompts/` | el prompt único de NotebookLM |
 | `FUENTES.md` | qué documentos están procesados |
 | `PENDIENTES.md` | elementos detectados que aún no tienen nota |
+| `puente-nt/` | Apps Script que sube a `imagenes/` las capturas que el alumnado deja en Drive |
+
+## Cómo se ejecuta
+
+Nada de esto se lanza a mano. `.github/workflows/notas-tecnicas.yml` se dispara
+con cualquier cambio bajo `nota-tecnicas/` en `entrada/`, `notas/`, `imagenes/`
+o `generador/`, importa lo que haya llegado, valida, regenera el HTML y lo
+vuelve a commitear. Los push que hace `GITHUB_TOKEN` no disparan otro workflow,
+así que no se reengancha solo.
+
+Si se toca el nombre de esta carpeta hay que tocar a la vez las rutas del
+workflow y `DESTINO` en `puente-nt/Codigo.gs`. Si no, la automatización deja de
+dispararse **en silencio**: no falla, simplemente no ocurre. Ya pasó una vez.
+
+## Estado
+
+34 notas (23 de elemento, 11 de proceso), de los manuales de climatización.
+Pendiente: el puente de Drive está escrito pero le falta configurar el token y
+las propiedades del script; hasta entonces las capturas se suben a mano a
+`imagenes/`. Y la publicación en Google Sites sigue siendo un pegado manual
+del `.txt`.

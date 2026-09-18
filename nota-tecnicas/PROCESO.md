@@ -13,19 +13,19 @@ No hay que ejecutar nada en el PC ni abrir la terminal.
    se hace, cómo se diagnostica). El prompt está en
    `prompts/notebooklm-unico.md`.
 2. Lanza el prompt y **exporta la respuesta a `.md`**.
-3. Sube ese `.md` a la carpeta **`Notas Técnicas/entrada/`** de este repositorio.
+3. Sube ese `.md` a la carpeta **`nota-tecnicas/entrada/`** de este repositorio.
 
 Y ya está. A los dos minutos GitHub ha hecho solo:
 
 - numerar las notas a partir de la última que exista (no hay que llevar la cuenta);
 - limpiar lo que NotebookLM añade (LaTeX, tablas en comas, números de cita);
-- apartar el `.md` original en `Notas Técnicas/entrada/procesados/`, para saber qué está hecho;
+- apartar el `.md` original en `nota-tecnicas/entrada/procesados/`, para saber qué está hecho;
 - regenerar `nt/web/notas-tecnicas.html`.
 
-### Cómo se sube un archivo a `Notas Técnicas/entrada/` sin saber git
+### Cómo se sube un archivo a `nota-tecnicas/entrada/` sin saber git
 
 En el navegador, también desde el móvil:
-`github.com/FranR78/Generador-SSC` → carpeta `Notas Técnicas/entrada` → **Add file → Upload files**
+`github.com/FranR78/Generador-SSC` → carpeta `nota-tecnicas/entrada` → **Add file → Upload files**
 → arrastras el `.md` → **Commit changes**.
 
 ---
@@ -86,7 +86,7 @@ igual la extensión.
 que tender un puente, porque Drive y GitHub no se hablan solos:
 `apps-script/puente-nt/` lo hace, pero le falta configurar el token. Ver su README.
 
-**Mientras tanto**, vale con que las subas tú a `Notas Técnicas/imagenes/`
+**Mientras tanto**, vale con que las subas tú a `nota-tecnicas/imagenes/`
 igual que el `.md` del paso A.
 
 > Antes de publicar capturas de taller: matrículas, caras y VIN. El generador
