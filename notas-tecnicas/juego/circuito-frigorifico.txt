@@ -7,10 +7,10 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
   :root{
-    --verde:   #27ae60;
-    --verde-os:#007932;
-    --fondo:   #eef5f0;
-    --texto:   #14261c;
+    --azul:    #0a63aa;
+    --azul-os:#063f70;
+    --fondo:   #e3ecf3;
+    --texto:   #101f2b;
     --blanco:  #ffffff;
     --alta:    #d1493b;   /* lado de alta presión */
     --baja:    #2b7bbd;   /* lado de baja presión */
@@ -22,14 +22,14 @@
   .wrap{ max-width:760px; margin:0 auto; padding:16px; }
 
   header{ text-align:center; margin-bottom:12px; }
-  header h1{ color:var(--verde-os); font-size:1.3rem; font-weight:800; margin:0 0 4px; }
+  header h1{ color:var(--azul-os); font-size:1.3rem; font-weight:800; margin:0 0 4px; }
   header p{ margin:0; font-size:0.85rem; color:#557; }
 
-  .barra{ background:#d8e6dd; border-radius:20px; height:12px; overflow:hidden; margin:12px 0 4px; }
-  .barra > div{ background:var(--verde); height:100%; width:0; transition:width .35s ease; }
-  .marcador{ display:flex; justify-content:space-between; font-size:0.8rem; font-weight:700; color:var(--verde-os); }
+  .barra{ background:#cfe0ec; border-radius:20px; height:12px; overflow:hidden; margin:12px 0 4px; }
+  .barra > div{ background:var(--azul); height:100%; width:0; transition:width .35s ease; }
+  .marcador{ display:flex; justify-content:space-between; font-size:0.8rem; font-weight:700; color:var(--azul-os); }
 
-  .panel{ background:var(--blanco); border:2px solid var(--verde); border-radius:14px; padding:16px; margin-top:14px; }
+  .panel{ background:var(--blanco); border:2px solid var(--azul); border-radius:14px; padding:16px; margin-top:14px; }
 
   /* Manómetros */
   .gauges{ display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-bottom:6px; }
@@ -39,35 +39,41 @@
   .gauge .lab{ font-size:0.72rem; text-transform:uppercase; letter-spacing:.06em; font-weight:700; }
   .gauge.b .lab{ color:var(--baja); } .gauge.a .lab{ color:var(--alta); }
 
-  .sintoma{ background:var(--fondo); border-left:4px solid var(--verde); border-radius:8px;
+  .sintoma{ background:var(--fondo); border-left:4px solid var(--azul); border-radius:8px;
             padding:10px 12px; font-size:0.95rem; margin:10px 0; }
-  .sintoma strong{ color:var(--verde-os); }
+  .sintoma strong{ color:var(--azul-os); }
 
   /* Esquema del circuito */
   .circuito{ width:100%; height:auto; margin:6px 0 2px; }
   .comp{ cursor:pointer; }
-  .comp rect{ fill:var(--blanco); stroke:var(--verde-os); stroke-width:2; rx:8; transition:fill .15s; }
-  .comp text{ font-size:11px; font-weight:700; fill:var(--texto); text-anchor:middle; pointer-events:none; }
-  .comp:hover rect{ fill:#e4f3ea; }
-  .comp.sel rect{ fill:var(--verde); stroke:var(--verde-os); }
+  .comp rect{ fill:var(--blanco); stroke:var(--azul-os); stroke-width:2; rx:8; transition:fill .15s; }
+  .comp text{ font-size:10.5px; font-weight:700; fill:var(--texto); text-anchor:middle; pointer-events:none; }
+  .comp:hover rect{ fill:#dbe9f5; }
+  .comp.sel rect{ fill:var(--azul); stroke:var(--azul-os); }
   .comp.sel text{ fill:#fff; }
   .linea-alta{ stroke:var(--alta); stroke-width:4; fill:none; }
   .linea-baja{ stroke:var(--baja); stroke-width:4; fill:none; }
-  .flecha{ fill:#7a8a80; font-size:10px; }
+  .rot{ font-size:10px; font-weight:800; letter-spacing:.06em; }
+  .alta-t{ fill:var(--alta); } .baja-t{ fill:var(--baja); }
+  .leyenda{ display:flex; gap:16px; justify-content:center; font-size:0.72rem;
+            color:#5a6b78; margin:2px 0 4px; }
+  .leyenda i{ display:inline-block; width:14px; height:4px; border-radius:2px;
+              margin-right:5px; vertical-align:middle; }
+  .leyenda .c-alta{ background:var(--alta); } .leyenda .c-baja{ background:var(--baja); }
 
   .pregunta{ font-weight:700; margin:10px 0 8px; }
   .opciones{ display:grid; grid-template-columns:1fr 1fr; gap:8px; }
   .opciones button{ font-family:inherit; font-size:0.9rem; font-weight:600; cursor:pointer;
-     background:var(--blanco); border:2px solid var(--verde); color:var(--verde-os);
+     background:var(--blanco); border:2px solid var(--azul); color:var(--azul-os);
      border-radius:10px; padding:10px 8px; transition:.12s; }
-  .opciones button:hover{ background:#e4f3ea; }
-  .opciones button.sel{ background:var(--verde); color:#fff; }
+  .opciones button:hover{ background:#dbe9f5; }
+  .opciones button.sel{ background:var(--azul); color:#fff; }
   .opciones button:disabled{ opacity:.55; cursor:default; }
 
   .acciones{ display:flex; gap:10px; margin-top:12px; }
   .acciones button{ flex:1; font-family:inherit; font-size:0.95rem; font-weight:700; cursor:pointer;
-     border:none; border-radius:10px; padding:12px; color:#fff; background:var(--verde-os); }
-  .acciones button.sec{ background:#8aa596; }
+     border:none; border-radius:10px; padding:12px; color:#fff; background:var(--azul-os); }
+  .acciones button.sec{ background:#7d93a6; }
   .acciones button:disabled{ opacity:.4; cursor:default; }
 
   .feedback{ margin-top:12px; border-radius:10px; padding:12px; font-size:0.92rem; display:none; }
@@ -78,10 +84,10 @@
   .feedback .rango{ font-size:0.82rem; color:#555; margin-top:6px; }
 
   .fin{ text-align:center; }
-  .fin .nota{ font-size:2.6rem; font-weight:800; color:var(--verde-os); }
+  .fin .nota{ font-size:2.6rem; font-weight:800; color:var(--azul-os); }
 
   .epi{ font-size:0.72rem; color:#667; text-align:center; margin-top:16px; line-height:1.5; }
-  .epi b{ color:var(--verde-os); }
+  .epi b{ color:var(--azul-os); }
 </style>
 </head>
 <body>
@@ -94,7 +100,11 @@
   <div class="barra"><div id="progreso"></div></div>
   <div class="marcador"><span id="paso">Caso 1</span><span id="aciertos">Aciertos: 0</span></div>
 
-  <div class="panel" id="juego"><!-- se rellena por JS --></div>
+  <div class="panel" id="juego">
+    <noscript><p style="margin:0;color:#c0392b;font-weight:700">
+      Este juego necesita JavaScript. Si lo ves en blanco, ábrelo desde Google Sites
+      o desde el enlace publicado, no desde la vista previa del archivo.</p></noscript>
+  </div>
 
   <p class="epi">
     Valores de referencia: <b>Teórico OEM</b> (AA Automoción · Hella, lectura de manómetros).
@@ -172,25 +182,28 @@ function svgGauge(val, max, tipo){
 }
 
 function esquema(){
-  // lazo simple: alta arriba (compresor→condensador→filtro), baja abajo (evaporador→compresor), válvula a la derecha
-  function box(id,x,y,w){ var n=COMPONENTES[id];
+  // Lazo cerrado: arriba el lado de alta (compresor→condensador→filtro), la
+  // válvula marca la frontera, y abajo el lado de baja (evaporador→compresor).
+  var CORTO={compresor:"Compresor",condensador:"Condensador",filtro:"Filtro deshidr.",
+             valvula:"Válvula exp.",evaporador:"Evaporador"};
+  function box(id,x,y){
     return '<g class="comp" data-id="'+id+'" transform="translate('+x+','+y+')">'
-      + '<rect width="'+w+'" height="38" rx="8"></rect>'
-      + '<text x="'+(w/2)+'" y="23">'+n+'</text></g>'; }
-  return '<svg class="circuito" viewBox="0 0 520 200">'
-    + '<path class="linea-alta" d="M110 40 H250"/>'
-    + '<path class="linea-alta" d="M360 40 V95"/>'
-    + '<path class="linea-baja" d="M360 150 H150"/>'
-    + '<path class="linea-baja" d="M60 150 V60"/>'
-    + '<path class="linea-alta" d="M60 60 V50"/>'
-    + '<text class="flecha" x="180" y="32">alta presión ▶</text>'
-    + '<text class="flecha" x="205" y="168">◀ baja presión</text>'
-    + box('compresor',10,22,100)
-    + box('condensador',250,22,110)
-    + box('valvula',400,74,110)
-    + box('evaporador',250,131,110)
-    + box('filtro',150,74,120)
-    + '</svg>';
+      + '<rect width="110" height="40"></rect>'
+      + '<text x="55" y="24">'+CORTO[id]+'</text></g>';
+  }
+  return '<svg class="circuito" viewBox="0 0 520 185">'
+    + '<path class="linea-alta" d="M125 35 H205"/>'
+    + '<path class="linea-alta" d="M315 35 H395"/>'
+    + '<path class="linea-alta" d="M450 55 V125"/>'
+    + '<path class="linea-baja" d="M395 145 H315"/>'
+    + '<path class="linea-baja" d="M205 145 H70 V55"/>'
+    + '<text class="rot alta-t" x="468" y="95">ALTA</text>'
+    + '<text class="rot baja-t" x="52" y="100" text-anchor="end">BAJA</text>'
+    + box('compresor',15,15) + box('condensador',205,15) + box('filtro',395,15)
+    + box('valvula',395,125) + box('evaporador',205,125)
+    + '</svg>'
+    + '<div class="leyenda"><span><i class="c-alta"></i>lado de alta presión</span>'
+    + '<span><i class="c-baja"></i>lado de baja presión</span></div>';
 }
 
 function pintaCaso(){
