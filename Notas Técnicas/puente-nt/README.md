@@ -1,7 +1,7 @@
 # Puente Drive → GitHub (capturas del alumnado)
 
 Drive y GitHub no se hablan solos. Este script es el puente: cada 15 minutos mira
-una carpeta de Drive y sube a `imagenes/` las fotos que el alumnado haya
+una carpeta de Drive y sube a `Notas Técnicas/imagenes/` las fotos que el alumnado haya
 dejado ahí.
 
 ## Puesta en marcha (una sola vez)
@@ -34,7 +34,7 @@ Script ID a la matriz de `.github/workflows/deploy-gas.yml`.
 
 | Nombre del archivo | Qué pasa |
 |---|---|
-| `NT21_02.jpg` | sube a `imagenes/` y se aparta en *Subidas* |
+| `NT21_02.jpg` | sube a `Notas Técnicas/imagenes/` y se aparta en *Subidas* |
 | `IMG_4471.jpg` | se aparta en *Nombre incorrecto*, para que lo renombren |
 | falla la subida | se queda donde está y se reintenta a los 15 minutos |
 

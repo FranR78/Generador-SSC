@@ -17,9 +17,9 @@
  * copias, las propiedades del script no.
  */
 
-const REPO = 'FranR78/CAMBIAR-POR-EL-REPO-NUEVO';
+const REPO = 'FranR78/Generador-SSC';
 const RAMA = 'main';
-const DESTINO = 'imagenes/';
+const DESTINO = 'Notas Técnicas/imagenes/';
 
 // NT21_02.jpg → hueco 2 de la nota 21. El generador empareja por este nombre.
 const NOMBRE_VALIDO = /^NT\d+[_-]\d+(\s*[_-].*)?\.(jpe?g|png|webp|gif)$/i;
@@ -68,8 +68,10 @@ function puenteNT_subirCapturas() {
 
 
 function subirAGitHub(token, nombre, bytes) {
+  // La carpeta lleva espacio y tilde, así que hay que codificar el destino
+  // igual que el nombre del archivo: sin esto la URL sale rota.
   const url = 'https://api.github.com/repos/' + REPO + '/contents/' +
-              DESTINO + encodeURIComponent(nombre);
+              rutaCodificada(DESTINO + nombre);
   const cabeceras = {
     Authorization: 'Bearer ' + token,
     Accept: 'application/vnd.github+json',
@@ -102,6 +104,12 @@ function subirAGitHub(token, nombre, bytes) {
   if (r.getResponseCode() >= 300) {
     throw new Error('GitHub respondió ' + r.getResponseCode() + ': ' + r.getContentText());
   }
+}
+
+
+/** Codifica cada tramo de la ruta por separado, dejando las barras intactas. */
+function rutaCodificada(ruta) {
+  return ruta.split('/').map(encodeURIComponent).join('/');
 }
 
 

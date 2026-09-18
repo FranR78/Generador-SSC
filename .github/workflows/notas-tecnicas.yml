@@ -2,26 +2,26 @@ name: Regenerar notas técnicas
 
 # Flujo: subo un .md de NotebookLM (o capturas) → GitHub lo importa y rehace el HTML.
 #
-# La idea es no tener que ejecutar nada en el PC. Todo lo que hay que hacer es
-# dejar archivos en su carpeta:
+# No hay que ejecutar nada en el PC. Todo lo que hay que hacer es dejar archivos
+# en su carpeta, dentro de "Notas Técnicas/":
 #
-#   entrada/      un .md exportado de NotebookLM  → se importa y se archiva
-#                    en entrada/procesados/
+#   entrada/      un .md copiado de NotebookLM → se importa y se archiva
+#                 en entrada/procesados/
 #   imagenes/     las capturas del alumnado (NT21_01.jpg) → se incrustan
 #   notas/        las fichas ya importadas, por si hay que retocarlas a mano
 #
-# El resultado (web/notas-tecnicas.html y .txt) lo vuelve a commitear este
-# mismo workflow. Los push que hace GITHUB_TOKEN no disparan otro workflow, así
-# que no se reengancha solo.
+# El resultado (web/notas-tecnicas.html y .txt) lo vuelve a commitear este mismo
+# workflow. Los push que hace GITHUB_TOKEN no disparan otro workflow, así que no
+# se reengancha solo.
 
 on:
   push:
     branches: [main]
     paths:
-      - 'entrada/**'
-      - 'notas/**'
-      - 'imagenes/**'
-      - 'generador/**'
+      - 'Notas Técnicas/entrada/**'
+      - 'Notas Técnicas/notas/**'
+      - 'Notas Técnicas/imagenes/**'
+      - 'Notas Técnicas/generador/**'
       - '.github/workflows/notas-tecnicas.yml'
   workflow_dispatch:
 
@@ -35,6 +35,11 @@ permissions:
 jobs:
   regenerar:
     runs-on: ubuntu-latest
+    # El nombre de la carpeta lleva espacio y tilde, así que va entrecomillado
+    # en todas partes. Sin las comillas, cada orden lo parte en dos.
+    defaults:
+      run:
+        working-directory: 'Notas Técnicas'
     steps:
       - name: Descargar el repo
         uses: actions/checkout@v4
@@ -57,10 +62,11 @@ jobs:
         run: python3 generador/construir.py
 
       - name: Guardar el resultado
+        working-directory: .
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
+          git add -A 'Notas Técnicas'
           if git diff --cached --quiet; then
             echo "::notice::Nada que actualizar."
             exit 0
