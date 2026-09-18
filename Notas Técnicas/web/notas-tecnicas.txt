@@ -1,0 +1,3790 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Climatización Automotriz — Notas Técnicas</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+  :root{
+    --azul:    #038df1;
+    --azul-os: #026bbf;
+    --fondo:   #E8F0F3;
+    --texto:   #000000;
+    --blanco:  #ffffff;
+    --mark:    #ffe066;
+  }
+
+  *{ box-sizing:border-box; }
+
+  html, body{
+    height:100%; margin:0; overflow:hidden;
+    font-family:'Open Sans', sans-serif;
+    background:var(--fondo); color:var(--texto);
+  }
+  body{ display:flex; }
+
+  h1,h2,h3,h4{ color:var(--azul); font-weight:800; margin-top:1.4rem; }
+  h1{ font-size:1.45rem; margin-top:0; }
+  h2{ font-size:1.15rem; }
+  h3{ font-size:1rem; }
+
+  a{ color:var(--azul); }
+  a:hover{ color:var(--azul-os); text-decoration:underline; }
+
+  /* ===== SIDEBAR ===== */
+  nav#sidebar{
+    width:275px; flex-shrink:0;
+    background:var(--blanco);
+    border-right:2px solid var(--azul);
+    height:100vh; overflow-y:auto;
+    padding:1.2rem 1rem;
+  }
+  .sidebar-titulo{
+    font-size:0.95rem; font-weight:800;
+    color:var(--azul); margin:0 0 0.35rem; line-height:1.35;
+  }
+  .sidebar-meta{ font-size:0.75rem; color:#666; margin:0 0 1rem; }
+
+  #buscador-wrap{ margin-bottom:1.1rem; }
+  #buscador-wrap label{ font-weight:700; display:block; margin-bottom:0.35rem; font-size:0.87rem; }
+  #buscador{
+    width:100%; padding:0.42rem 0.65rem;
+    border:2px solid var(--azul); border-radius:8px;
+    font-family:inherit; font-size:0.93rem; outline:none;
+  }
+  #buscador:focus{ border-color:var(--azul-os); }
+  #contador-resultados{ font-size:0.8rem; margin-top:0.35rem; color:#444; }
+  #lista-resultados{ list-style:none; margin:0.45rem 0 0; padding:0; max-height:180px; overflow-y:auto; }
+  #lista-resultados li{ margin-bottom:0.25rem; }
+  #lista-resultados a{
+    display:block; padding:0.28rem 0.5rem; border-radius:6px;
+    font-size:0.82rem; text-decoration:none; color:var(--azul);
+  }
+  #lista-resultados a:hover{ background:var(--fondo); outline:2px solid var(--azul); }
+  #sin-resultados{ display:none; font-size:0.82rem; color:#c00; margin-top:0.35rem; }
+
+  .menu-grupo-titulo{
+    display:block;
+    font-size:0.74rem; font-weight:700; text-transform:uppercase;
+    letter-spacing:.05em; color:#666; margin:0.9rem 0 0.3rem 0.2rem;
+  }
+  ul#menu-secciones{ list-style:none; margin:0; padding:0; }
+  ul#menu-secciones li a{
+    display:block; padding:0.38rem 0.55rem; border-radius:6px;
+    text-decoration:none; font-weight:600; font-size:0.85rem;
+    color:var(--azul); margin-bottom:0.15rem;
+  }
+  ul#menu-secciones li a:hover{ background:var(--fondo); outline:2px solid var(--azul); }
+
+  mark{ background:var(--mark); color:var(--texto); border-radius:3px; padding:0 2px; }
+
+  /* ===== MAIN ===== */
+  main{
+    flex:1; padding:1.8rem 2.2rem; max-width:960px;
+    height:100vh; overflow-y:auto; -webkit-overflow-scrolling:touch;
+  }
+
+  section{ margin-bottom:3rem; scroll-margin-top:1rem; }
+
+  .nota-header{
+    background:var(--azul); color:var(--blanco);
+    padding:0.55rem 1rem; border-radius:8px 8px 0 0;
+    font-size:0.76rem; font-weight:700; letter-spacing:.07em; text-transform:uppercase;
+    display:flex; align-items:center; gap:0.6rem; flex-wrap:wrap;
+  }
+  .nota-header.proceso{ background:#0a7a6d; }
+  .nota-body.proceso{ border-color:#0a7a6d; }
+  .nota-header .subtipo{
+    background:var(--blanco); color:#0a7a6d; border-radius:4px;
+    padding:0.1rem 0.5rem; font-size:0.7rem; letter-spacing:.04em;
+  }
+  .nota-header .fusionado{
+    background:rgba(255,255,255,0.25); border-radius:4px;
+    padding:0.1rem 0.5rem; font-size:0.7rem; letter-spacing:.04em;
+  }
+
+  .nota-body{
+    background:var(--blanco); border:2px solid var(--azul);
+    border-top:none; border-radius:0 0 10px 10px; padding:1.2rem 1.4rem;
+  }
+
+  .apartado{ margin:1rem 0; padding-left:0.75rem; border-left:3px solid var(--azul); }
+  .apartado-titulo{
+    font-size:0.74rem; font-weight:700; text-transform:uppercase;
+    letter-spacing:.07em; color:var(--azul); margin-bottom:0.35rem;
+    display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;
+  }
+  .criterio{
+    font-size:0.65rem; font-weight:600; letter-spacing:.02em;
+    text-transform:none; color:#7a8a99;
+    border:1px solid #cfdde8; border-radius:10px; padding:0.02rem 0.45rem;
+  }
+  .apartado > p:first-of-type{ margin-top:0.2rem; }
+  .apartado > p:last-child{ margin-bottom:0.2rem; }
+
+  .ubicacion{ font-size:0.88rem; margin:0.45rem 0 0; }
+  .fuentes{ font-size:0.85rem; color:#555; margin:0.2rem 0; }
+
+  .caja{
+    background:var(--fondo); border:2px solid var(--azul);
+    border-radius:8px; padding:0.8rem 1rem; margin:0.7rem 0; font-size:0.93rem;
+  }
+  .caja.advertencia{ border-color:#c8400a; background:#fff5f0; }
+  .caja.advertencia::before{ content:"⚠️  "; font-weight:700; }
+  .caja.discrepancia{ border-color:#d4a017; background:#fffbf0; }
+  .caja.discrepancia::before{ content:"🔀  "; font-weight:700; }
+
+  figure.captura{
+    margin:0.55rem 0; padding:0;
+    border:2px solid var(--azul); border-radius:8px; overflow:hidden;
+    background:var(--blanco);
+  }
+  figure.captura img{ display:block; width:100%; height:auto; }
+  figure.captura figcaption{
+    font-size:0.82rem; color:#025fa3; padding:0.45rem 0.7rem;
+    background:#f0f7ff; border-top:1px solid #cfe4f7;
+  }
+
+  .img-pendiente{
+    display:flex; align-items:flex-start; gap:0.55rem;
+    background:#f0f7ff; border:1.5px dashed var(--azul);
+    border-radius:8px; padding:0.6rem 0.85rem; margin:0.45rem 0;
+    font-size:0.88rem; color:#025fa3;
+  }
+  .img-pendiente .icono{ font-size:1.1rem; flex-shrink:0; }
+  code.nombre-archivo{
+    display:inline-block; background:var(--azul); color:var(--blanco);
+    border-radius:4px; padding:0.05rem 0.45rem; margin-right:0.35rem;
+    font-family:ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    font-size:0.85em; font-weight:700; letter-spacing:.02em;
+  }
+  figure.captura figcaption strong{ color:var(--azul-os); }
+
+  table{ width:100%; border-collapse:collapse; margin:0.75rem 0; background:var(--blanco); font-size:0.91rem; }
+  thead th{ background:var(--azul); color:var(--blanco); font-weight:700; text-align:left; padding:0.52rem 0.7rem; }
+  tbody td{ padding:0.52rem 0.7rem; border:1px solid #b8d8f0; }
+  tbody tr:nth-child(even){ background:var(--fondo); }
+
+  .badge-aplicacion{
+    display:inline-block; background:#e0f0ff; color:var(--azul-os);
+    border:1px solid var(--azul); border-radius:20px;
+    font-size:0.78rem; font-weight:600; padding:0.18rem 0.65rem; margin:0.2rem 0.15rem 0.2rem 0;
+  }
+
+  ul{ padding-left:1.25rem; }
+  ul li{ margin-bottom:0.28rem; line-height:1.55; }
+  ol{ padding-left:1.25rem; }
+  ol li{ margin-bottom:0.28rem; line-height:1.55; }
+
+  .pie{
+    font-size:0.8rem; color:#555;
+    border-top:1px solid var(--azul); padding-top:0.8rem; margin-top:1rem;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width:800px){
+    html, body{ height:auto; overflow:visible; }
+    body{ flex-direction:column; }
+    nav#sidebar{ width:100%; height:auto; position:static; border-right:none; border-bottom:2px solid var(--azul); overflow:visible; }
+    main{ padding:1.1rem; max-width:100%; height:auto; overflow:visible; }
+    table{ display:block; overflow-x:auto; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== SIDEBAR ===== -->
+<nav id="sidebar" aria-label="Navegación del dashboard">
+  <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
+  <p class="sidebar-meta">34 notas · 17/09/2026</p>
+
+  <div id="buscador-wrap">
+    <label for="buscador">Buscar en el documento</label>
+    <input type="text" id="buscador" placeholder="Escribe para buscar…" autocomplete="off">
+    <div id="contador-resultados" aria-live="polite"></div>
+    <ul id="lista-resultados"></ul>
+    <p id="sin-resultados">No se han encontrado coincidencias.</p>
+  </div>
+
+  <ul id="menu-secciones">
+    <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
+    <li><a href="#nt1">NT1 · Compresor</a></li>
+    <li><a href="#nt2">NT2 · Embrague electromagnético</a></li>
+    <li><a href="#nt3">NT3 · Condensador</a></li>
+    <li><a href="#nt4">NT4 · Electroventilador</a></li>
+    <li><a href="#nt5">NT5 · Filtro deshidratador</a></li>
+    <li><a href="#nt6">NT6 · Mirilla</a></li>
+    <li><a href="#nt7">NT7 · Válvula de expansión / OT</a></li>
+    <li><a href="#nt8">NT8 · Evaporador</a></li>
+    <li><a href="#nt9">NT9 · Filtro de habitáculo</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Sensores de presión</span></li>
+    <li><a href="#nt10">NT10 · Presostato de mínima</a></li>
+    <li><a href="#nt11">NT11 · Presostato de máxima</a></li>
+    <li><a href="#nt12">NT12 · Trinaria F129</a></li>
+    <li><a href="#nt13">NT13 · Transmisor de presión G65</a></li>
+    <li><a href="#nt14">NT14 · Válvula de sobrepresión</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Sensores de temperatura</span></li>
+    <li><a href="#nt15">NT15 · Termostato · G153</a></li>
+    <li><a href="#nt16">NT16 · Exterior G17 / G89</a></li>
+    <li><a href="#nt17">NT17 · Habitáculo G56 / V42</a></li>
+    <li><a href="#nt18">NT18 · Reposapiés G192</a></li>
+    <li><a href="#nt19">NT19 · Conmutador temp. motor</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Sensores ambientales</span></li>
+    <li><a href="#nt20">NT20 · Calidad de aire G238</a></li>
+    <li><a href="#nt21">NT21 · Fotosensor G107</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Actuadores y mandos</span></li>
+    <li><a href="#nt22">NT22 · Servomotor V71</a></li>
+    <li><a href="#nt23">NT23 · Mandos y reostato</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Fundamentos y cálculos</span></li>
+    <li><a href="#nt30">NT30 · Subenfriamiento</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Procedimientos de taller</span></li>
+    <li><a href="#nt31">NT31 · Lavado del circuito</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Diagnóstico</span></li>
+    <li><a href="#nt32">NT32 · Lectura de manómetros</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
+    <li><a href="#nt40">NT40 · Ciclo Frigorífico Con Válvula De Expan</a></li>
+    <li><a href="#nt41">NT41 · Ciclo Frigorífico Con Estrangulador (T</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Regulación y control</span></li>
+    <li><a href="#nt42">NT42 · Regulación Y Control Básico Del Sistem</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Fundamentos y cálculos</span></li>
+    <li><a href="#nt43">NT43 · Efectos Climatológicos Y Confort Térmi</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Regulación y control</span></li>
+    <li><a href="#nt44">NT44 · Regulación Manual Del Sistema De Clima</a></li>
+    <li><a href="#nt45">NT45 · Regulación Automática Y Bizona De Clim</a></li>
+    <li><a href="#nt46">NT46 · Sistema De Recirculación Y Control De</a></li>
+    <li><a href="#nt47">NT47 · Gestión De Señales Suplementarias Vía</a></li>
+  </ul>
+</nav>
+
+<!-- ===== CONTENIDO ===== -->
+<main id="contenido">
+
+  <section id="nt1" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 1 </div>
+    <div class="nota-body">
+      <h1>Compresor de aire acondicionado — <strong>Sin código documentado</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">Sanden</span><span class="badge-aplicacion">Harrison</span><span class="badge-aplicacion">Denso</span><span class="badge-aplicacion">York</span><span class="badge-aplicacion">Zexel</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Compartimento motor, accionado por correa desde el cigüeñal</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Hacer circular de forma continuada el R-134a por el circuito. Aspira el refrigerante en
+estado de vapor a baja presión y baja temperatura y lo comprime, elevando su presión y
+temperatura para situarlo en el nivel de alta presión.</p>
+<p>Es el <strong>único componente que trabaja simultáneamente en baja y alta presión</strong>, en su
+entrada y su salida respectivamente.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Aprovecha el trabajo mecánico alternativo o rotativo. En los alternativos, los pistones
+realizan cuatro fases: <strong>aspiración, compresión, impulsión y descarga</strong>.</p>
+<ul>
+<li><strong>Cilindrada fija:</strong> el caudal es proporcional al régimen del motor.</li>
+<li><strong>Cilindrada variable de regulación interna:</strong> la inclinación del plato porta pistones
+  varía según la diferencia entre alta presión (AP), baja presión (BP) y presión de cárter
+  (PC), gestionada por una válvula interna.</li>
+<li><strong>Cilindrada variable de regulación externa</strong> (Denso 6 SEU 12): una electroválvula
+  pilotada por la UCE controla el equilibrio de presiones del cárter y modifica la
+  inclinación del disco entre el 0 % y el 100 % de rendimiento.</li>
+</ul>
+<p>Resumen de la regulación interna:</p>
+<table>
+<thead>
+<tr>
+<th>Si la baja presión…</th>
+<th>Presión de cárter</th>
+<th>Cilindrada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aumenta sobre el punto de regulación</td>
+<td>Se iguala a la de aspiración</td>
+<td><strong>Máxima</strong></td>
+</tr>
+<tr>
+<td>Disminuye (cilindrada excesiva)</td>
+<td>Comunica con la alta y sube</td>
+<td><strong>Mínima</strong></td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li>Variantes: alternativo de pistones, de paletas rotativas, de espiral (scroll), de
+  cilindrada variable interna o externa.</li>
+<li>Lubricante específico sintético <strong>PAG o PAO</strong>. Nunca aceite mineral con R-134a.</li>
+<li>Cilindrada mínima de seguridad en los variables: <strong>10,43 cm³</strong> (el plato nunca llega a la
+  vertical, por lubricación).</li>
+<li>Señal de control en regulación externa: <strong>PWM</strong>, con el empujador en estado flotante.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Modelo</th>
+<th>Cilindros</th>
+<th>Cilindrada</th>
+<th>rpm máx.</th>
+<th>Aceite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>York 206 / 209 / 210</td>
+<td>2</td>
+<td>99,7 / 138,8 / 168,5 cm³</td>
+<td>6.000</td>
+<td>225 / 255 / 285 ml</td>
+</tr>
+<tr>
+<td>Sanden 505 / 507 / 508 / 510</td>
+<td>5</td>
+<td>87 / 108 / 138 / 161 cm³</td>
+<td>6.500 a 4.000</td>
+<td>100 a 175 ml</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <p>Con 30 °C exteriores y el motor entre 1.500 y 1.800 rpm:</p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Alta presión</th>
+<th>Baja presión</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cilindrada fija o cíclico</td>
+<td>10 a 20 bar</td>
+<td>0,8 a 2,2 bar</td>
+</tr>
+<tr>
+<td>Cilindrada variable</td>
+<td>7,5 a 13 bar</td>
+<td>1,8 a 2,2 bar</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Gripado por falta de lubricación o suciedad en el circuito.</li>
+<li>Limaduras metálicas o partículas de desgaste circulando.</li>
+<li>Fugas por la junta rotativa del eje (retén prensaestopas).</li>
+<li>Válvulas de láminas deformadas por entrada de refrigerante líquido o por grumos de
+  material sellante.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <ul>
+<li>En compresores de regulación externa sin embrague, al bloquearse se deforma o rompe la
+  pieza preformada de goma con grafito de la polea: <strong>la polea gira libre y no rompe la
+  correa</strong> del motor.</li>
+<li>Con las válvulas internas dañadas, alta y baja se igualan (baja entre 4,5 y 6 bar, igual
+  a la alta) y desaparece la acción frigorífica.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p><strong>Herramienta:</strong> estación de carga con manómetros y spray enfriador o refrigerante líquido.
+<strong>Puntos de medida:</strong> tomas de servicio de alta y baja presión.</p>
+<ol>
+<li>Motor a 1.500-1.800 rpm con el A/A activado.</li>
+<li>Enfriar el bulbo de la válvula de expansión para forzar su cierre total.</li>
+<li>La baja presión debe caer a valores de depresión (por debajo de 0 bar).</li>
+<li>Parar el compresor manteniendo el bulbo frío: la aguja de baja debe quedarse quieta.</li>
+<li><strong>Si la aguja sube rápidamente</strong>, las presiones se comunican por válvulas defectuosas.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT1_01</code> Sección transversal de un compresor alternativo con válvulas de láminas — AA Automoción, pág. 38</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT1_02</code> Despiece del Harrison V5 y su válvula de regulación — Fig. 6.3.6 y 6.3.7</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT1_03</code> Sanden en posición de cilindrada máxima y mínima — Fig. 6.3.10 y 6.3.11</span></div>
+      </div>
+      <div class="caja advertencia">Tras un gripaje es imperativo lavar el circuito y montar un filtro de malla en el tubo de
+aspiración. Sustituir siempre el filtro deshidratador al cambiar el compresor, y girar la
+polea 10 veces a mano antes de arrancar.</div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AA Automoción (Hella), págs. 38-60</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt2" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 2 </div>
+    <div class="nota-body">
+      <h1>Embrague electromagnético — <strong>Sin código documentado</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <p class="ubicacion"><strong>Ubicación:</strong> Extremo del eje/cigüeñal del compresor, en el compartimento motor</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Transmitir el giro desde la polea accionada por la correa del motor hacia el eje del
+compresor, y permitir conectarlo y desconectarlo a voluntad o por seguridad <strong>sin detener
+el motor del vehículo</strong>.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Aprovecha el electromagnetismo:</p>
+<ul>
+<li><strong>Sin corriente:</strong> tres o más muelles planos mantienen separados el disco frontal y la
+  polea. La polea gira libre.</li>
+<li><strong>Con corriente en la bobina:</strong> el campo magnético vence la fuerza de los muelles,
+  atrae el disco frontal contra la polea y la fricción arrastra el eje del compresor.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li>Tipo de señal: <strong>digital ON/OFF</strong> (corriente continua).</li>
+<li>Tensión de alimentación: <strong>12 V o 24 V</strong>.</li>
+<li>Componentes: bobina electromagnética, polea de material férrico con rodamiento de bolas
+  protegido por guardapolvo, y disco frontal metálico con silentblocks de goma.</li>
+<li>Los de trabajo pesado montan 3 muelles de oposición.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Estado</th>
+<th>Holgura disco-polea</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Desconectado</td>
+<td><strong>0,3 a 0,6 mm</strong></td>
+</tr>
+<tr>
+<td>Conectado</td>
+<td>0,0 mm (en contacto)</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Holgura incorrecta entre disco frontal y polea.</li>
+<li>Desgaste o patinado de las superficies de fricción.</li>
+<li>Avería o cortocircuito en la bobina.</li>
+<li>Rodamiento de la polea gripado o ruidoso por degradación de la grasa.</li>
+<li>Elementos antivibración de caucho deteriorados por contacto con gasolina, gasóleo o aceite.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Si la bobina se corta o no recibe corriente, el compresor no se activa y <strong>las presiones
+del sistema permanecen igualadas</strong>. Si el embrague patina por desgaste o falta de tensión,
+el compresor no gira al régimen adecuado y el sistema no refrigera.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p><strong>Herramienta:</strong> multímetro y galgas de espesores.
+<strong>Puntos de medida:</strong> terminales de la bobina y entrecara disco-polea.</p>
+<ul>
+<li>Holgura de <strong>0,3 a 0,6 mm</strong> con el equipo desconectado.</li>
+<li>Tensión de batería (12 V / 24 V) en el conector al activar el mando de A/A.</li>
+<li>El voltaje en la bobina <strong>nunca debe ser inferior en más de 1 V</strong> al de la batería.</li>
+<li>Reparación: ajustar la holgura con arandelas de reglaje, o sustituir el conjunto.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT2_01</code> Componentes del embrague con detalle de la holgura de 0,3 a 0,6 mm — AA Automoción, págs. 73-74, Fig. 6.4.1 y 6.4.3</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AA Automoción (Hella), págs. 73-76</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt3" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 3 </div>
+    <div class="nota-body">
+      <h1>Condensador — <strong>Sin código documentado</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <p class="ubicacion"><strong>Ubicación:</strong> Frontal del vehículo, delante del radiador del motor. A 15-20 mm y en paralelo</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Cambiar el estado físico del R-134a de gaseoso (salida del compresor) a líquido (entrada de
+la válvula de expansión), <strong>cediendo calor al aire exterior</strong> que lo atraviesa. Funciona en
+el lado de alta presión y es, funcionalmente, un radiador.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Transferencia de calor por convección y conducción con cambio de fase a presión constante.
+El vapor a alta presión y temperatura cede calor al aire forzado por la marcha o por el
+electroventilador, baja por debajo de su punto de condensación y se licúa.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Construido íntegramente en aluminio. Tres variantes:</p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Construcción</th>
+<th>Rendimiento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tubos y aletas</td>
+<td>Tubos redondos con aletas planas</td>
+<td>Referencia</td>
+</tr>
+<tr>
+<td>Serpentín</td>
+<td>Tubo plano extrusionado con aletas triangulares soldadas</td>
+<td>Superior al anterior</td>
+</tr>
+<tr>
+<td>Flujo paralelo</td>
+<td>Haz de microcanales entre colectores simples o dobles</td>
+<td><strong>40-45 % superior</strong></td>
+</tr>
+</tbody>
+</table>
+<p>El <strong>racor de entrada es siempre de mayor diámetro</strong> que el de salida: a la entrada el
+refrigerante es vapor y a la salida líquido, de volumen específico menor.</p>
+<table>
+<thead>
+<tr>
+<th>Racor</th>
+<th>Ubicación</th>
+<th>Dimensión</th>
+<th>Rosca</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entrada</td>
+<td>Parte superior</td>
+<td>1/2"</td>
+<td>3/4" UNF, 16 hilos/pulgada</td>
+</tr>
+<tr>
+<td>Salida</td>
+<td>Parte inferior</td>
+<td>3/8"</td>
+<td>5/8" UNF, 18 hilos/pulgada</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <p>Zona de alta presión. En condiciones normales entra vapor a unos <strong>18 bar relativos
+(19 absolutos) y 65 °C de condensación</strong>, y sale líquido subenfriado (por ejemplo a 60 °C,
+lo que da 5 °C de subenfriamiento óptimo).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Suciedad, barro o insectos que obstruyen el paso del aire.</li>
+<li>Aletas dobladas o aplastadas por impactos.</li>
+<li>Depósito interno de limaduras tras el gripado del compresor.</li>
+<li>Fugas en tubos o racores.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Si la superficie o el flujo de aire se obstruyen, <strong>la alta presión sube en exceso</strong>: salta
+la protección por máxima y se desconecta el compresor, o cae drásticamente la capacidad de
+refrigeración.</p>
+<table>
+<thead>
+<tr>
+<th>Baja</th>
+<th>Alta</th>
+<th>Causa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2,3 a 2,8 bar</td>
+<td>Sobre 25 bar</td>
+<td>Electroventilador parado o condensador tapado</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p><strong>Herramienta:</strong> manómetro de alta y termómetro de contacto.
+<strong>Método:</strong> calcular el subenfriamiento restando la temperatura de salida a la de
+condensación leída en el manómetro. Un subenfriamiento <strong>fuerte (≥ 10 °C)</strong> indica exceso de
+refrigerante o filtro deshidratador obstruido.</p>
+<p>Para saber si está sucio <strong>por dentro</strong>: regar con agua su parte superior y observar si la
+aguja de alta inicia una bajada mientras dura el riego.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT3_01</code> Secciones de los tres tipos de condensador — AA Automoción, págs. 93-95, Fig. 6.6.1 a 6.6.4</span></div>
+      </div>
+      <div class="caja advertencia">Nunca montar el condensador pegado al radiador (transmisión directa de calor) ni demasiado
+lejos (se crean pasos de aire y ambos pierden refrigeración). Enderezar las aletas solo con
+el utillaje específico, el "peine".</div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AA Automoción (Hella), págs. 93-96</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt4" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 4 </div>
+    <div class="nota-body">
+      <h1>Ventilador eléctrico del condensador — <strong>Sin código documentado</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <p class="ubicacion"><strong>Ubicación:</strong> Frente al condensador, o detrás del radiador en el compartimento motor</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Proporcionar el flujo de aire necesario a través del condensador para garantizar la
+condensación del refrigerante <strong>cuando el vehículo está parado o circula a baja velocidad</strong>.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Motor eléctrico de 12 V o 24 V que convierte energía eléctrica en rotación. Dos montajes:</p>
+<table>
+<thead>
+<tr>
+<th>Montaje</th>
+<th>Modo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frontal, delante del condensador</td>
+<td>«Empujando»</td>
+<td>Aspira aire exterior y lo empuja hacia el condensador</td>
+</tr>
+<tr>
+<td>Compartimento motor, tras el radiador</td>
+<td>«Aspiración»</td>
+<td>Aspira el aire exterior a través del condensador</td>
+</tr>
+</tbody>
+</table>
+<p>También puede accionarse por correa o por embrague viscoso (Visco), que siempre trabajan en
+aspiración.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li>Señal: <strong>digital ON/OFF</strong> o de velocidad escalonada, gobernada por presostato, unidad de
+  control o termocontacto.</li>
+<li>Equipado con carcasa colectora, canalizador de flujo y rejilla de protección.</li>
+<li>Dos alternativas de actuación: funcionamiento continuo mientras el A/A está conectado, o
+  intermitente y escalonado según la alta presión.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <p>Activación por presostato de tres funciones:</p>
+<table>
+<thead>
+<tr>
+<th>Acción</th>
+<th>Presión</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conexión</td>
+<td><strong>14 a 17 kg/cm²</strong></td>
+</tr>
+<tr>
+<td>Desconexión</td>
+<td><strong>11 a 14 kg/cm²</strong></td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Motor eléctrico quemado o derivado; fusible fundido.</li>
+<li>Relé de mando agarrotado.</li>
+<li>Polaridad del cableado invertida tras una intervención: gira al revés.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <table>
+<thead>
+<tr>
+<th>Baja</th>
+<th>Alta</th>
+<th>Diagnóstico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2,3 a 2,8 bar</td>
+<td>Sobre 25 bar</td>
+<td>No funciona: salta el presostato de máxima</td>
+</tr>
+<tr>
+<td>2,3 a 2,5 bar</td>
+<td>Sobre 22 bar</td>
+<td>Gira al revés por cableado invertido, y no para nunca</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p><strong>Herramienta:</strong> multímetro y estación de manómetros.
+<strong>Puntos de medida:</strong> conector eléctrico del electroventilador y su relé.</p>
+<ul>
+<li>Debe haber 12 V / 24 V en el conector al alcanzar los 14-17 bar de alta, o al activar el A/A.</li>
+<li>Comprobar visualmente que el flujo de aire va <strong>del exterior hacia el motor</strong>.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT4_01</code> Las tres posibilidades de montaje (empujando / aspiración) y el embrague Visco — AA Automoción, págs. 97-98, Fig. 6.7.1 y 6.7.2</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AA Automoción (Hella), págs. 97-99</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt5" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 5 </div>
+    <div class="nota-body">
+      <h1>Filtro deshidratador y vaso de expansión — <strong>Sin código documentado</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <p class="ubicacion"><strong>Ubicación:</strong> Filtro, en alta entre condensador y válvula. Vaso, en baja entre evaporador y compresor</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <ul>
+<li>Actuar como <strong>depósito pulmón</strong> para almacenar el exceso de refrigerante durante las
+  fases de carga variable.</li>
+<li>Filtrar impurezas sólidas y <strong>eliminar la humedad</strong>: es el único componente del circuito
+  capaz de hacerlo.</li>
+<li>El acumulador de baja (vaso de expansión) impide además que llegue refrigerante líquido
+  al compresor.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Filtrado mecánico mediante discos de contención y mallas finas, más adsorción química de la
+humedad por bolsas de material higroscópico. Sustancias empleadas: gel de sílice, alúmina
+activa y <strong>matiz molecular</strong>, esta última la más frecuente por su mayor capacidad a igual
+volumen.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li>Depósito cilíndrico metálico, sin señal eléctrica.</li>
+<li>Debe montarse <strong>recto o con 30° de inclinación máxima</strong>.</li>
+<li>Lleva flecha direccional, o marcas <strong>IN</strong> y <strong>OUT</strong>.</li>
+<li>Se suministra sellado con tapones herméticos, o presurizado con nitrógeno.</li>
+<li>Los de R-134a llevan <strong>más poder higroscópico</strong> que los antiguos de R-12.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <p>En funcionamiento normal, el filtro instalado en alta presión debe permanecer
+<strong>caliente y seco al tacto</strong>.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Saturación del material desecante por humedad excesiva.</li>
+<li>Obstrucción interna por sedimentos, limaduras o degradación del aceite.</li>
+<li>Esparcimiento de las bolitas deshumidificadoras por falta de sujeción o golpes.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <table>
+<thead>
+<tr>
+<th>Baja</th>
+<th>Alta</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4,5 a 5,7 bar</td>
+<td>21 a 27 bar</td>
+<td>Obstruido (toma de servicio antes del filtro)</td>
+</tr>
+<tr>
+<td>0,3 a 0,5 bar</td>
+<td>19 a 20 bar</td>
+<td>Saturado: <strong>el filtro estará helado</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Si la toma de alta está situada <strong>después</strong> del filtro, alta y baja aparecen prácticamente
+igualadas a la presión que el filtro deje pasar.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p><strong>Herramienta:</strong> comprobación táctil de temperatura y estación de manómetros.
+<strong>Método:</strong> tocar el cuerpo del filtro en alta presión con el equipo funcionando. <strong>Si está
+frío o helado hay obstrucción interna</strong> y debe sustituirse.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT5_01</code> Sección de un filtro deshidratador de alta y de un acumulador de baja — AA Automoción, págs. 100-101, Fig. 6.8.1 y 6.8.2</span></div>
+      </div>
+      <div class="caja advertencia">Sustitución <strong>obligatoria</strong> siempre que se abra el circuito o se cambie el compresor. Nunca
+montar un filtro de R-12 en un equipo de R-134a, ni uno sin tapones aunque sea nuevo: su
+material higroscópico ya estará saturado de humedad ambiente.</div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AA Automoción (Hella), págs. 100-102</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt6" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 6 </div>
+    <div class="nota-body">
+      <h1>Mirilla o visor de flujo — <strong>Sin código documentado</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <p class="ubicacion"><strong>Ubicación:</strong> Racor de salida del filtro deshidratador, o en la tubería de alta previa a la válvula</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Permitir la <strong>inspección visual</strong> del estado físico y la pureza del refrigerante en la línea
+de alta presión, para diagnosticar el estado de carga y funcionamiento del equipo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Ventana de cristal insertada en la conducción metálica que deja observar el comportamiento
+de fase del R-134a en circulación. Es un indicador óptico <strong>pasivo</strong>: no tiene señal ni
+mantenimiento.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Permite diferenciar cuatro estados característicos del flujo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>El componente en sí no falla, pero su lectura revela el estado del circuito:</p>
+<table>
+<thead>
+<tr>
+<th>Aspecto</th>
+<th>Interpretación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Transparente</strong></td>
+<td>Carga correcta <strong>o</strong> falta total de refrigerante (se distingue tocando el evaporador)</td>
+</tr>
+<tr>
+<td><strong>Burbujas o espuma continua</strong></td>
+<td>Carga insuficiente, o entrada de aire en el circuito</td>
+</tr>
+<tr>
+<td><strong>Manchas o rayas de aceite</strong></td>
+<td>Exceso de lubricante circulando; falta de refrigeración</td>
+</tr>
+<tr>
+<td><strong>Estriada, oscura o turbia</strong></td>
+<td>Aceite descompuesto, humedad, o deshumidificador desprendido y limaduras</td>
+</tr>
+</tbody>
+</table>
+<p>Es normal ver burbujas al arrancar, en las conexiones y desconexiones del embrague, y tras
+una bajada brusca de vueltas en compresores de cilindrada variable.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p><strong>Herramienta:</strong> inspección visual directa.
+<strong>Método:</strong> motor a 1.500-1.800 rpm con el A/A al máximo. Tras unos minutos, en un circuito
+correctamente cargado la mirilla debe verse <strong>limpia y transparente</strong>.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT6_01</code> Diagrama de los cuatro casos de lectura de la mirilla — AA Automoción, pág. 102, Fig. 6.9.1</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AA Automoción (Hella), pág. 102</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt7" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 7 </div>
+    <div class="nota-body">
+      <h1>Válvula de expansión termostática y tubo de expansión — <strong>Sin código documentado</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">Estabilizador interior</span><span class="badge-aplicacion">Estabilizador exterior</span><span class="badge-aplicacion">Monobloc tipo H</span><span class="badge-aplicacion">Tubo OT</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Tubería de alta presión, antes de la entrada del evaporador</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Hacer bajar bruscamente la presión y la temperatura del R-134a de alta a baja. Dosificar y
+modular el caudal enviado al evaporador para lograr la máxima potencia frigorífica <strong>y
+evitar que retorne refrigerante líquido al compresor</strong>.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Desarrolla dos funciones simultáneas:</p>
+<ul>
+<li><strong>Dosificadora:</strong> un orificio calibrado genera la caída de presión, convirtiendo el
+  líquido en vapor saturado pulverizado, que entra al evaporador en forma de rocío.</li>
+<li><strong>Modulante:</strong> un elemento termostático con diafragma y sensor a bulbo o bobina detecta
+  la temperatura a la salida del evaporador; la presión del gas interno abre o cierra el
+  paso accionando una aguja o bola contra un muelle de sobrecalentamiento.</li>
+</ul>
+<p>La válvula monobloc combina tres fuerzas: presión del sensor (apertura), presión del
+evaporador y presión del muelle (ambas, cierre).</p>
+<p>En el <strong>tubo de expansión (OT)</strong> el estrangulamiento es fijo, mediante un tubo capilar
+calibrado, sin modulación activa.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li>Control neumático/termodinámico por equilibrio de fuerzas.</li>
+<li>El fluido sale en proporción de <strong>70 % líquido en peso (4 % en volumen)</strong> y <strong>30 % vapor
+  en peso (96 % en volumen)</strong>.</li>
+<li>Los tubos OT se identifican por código de colores: rojo (Ford), azul (Audi/Ford), blanco
+  (GM/Audi), amarillo (Volvo).</li>
+<li>Los circuitos con OT no llevan filtro en alta: montan acumulador en baja.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Racor</th>
+<th>Dimensión</th>
+<th>Rosca</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entrada</td>
+<td>3/8"</td>
+<td>8/8" UNF, 18 hilos/pulgada</td>
+</tr>
+<tr>
+<td>Salida</td>
+<td>1/2"</td>
+<td>3/4" UNF, 16 hilos/pulgada</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <p>Establece la frontera entre alta y baja presión. Controla que el <strong>recalentamiento a la
+salida del evaporador se mantenga entre 2 y 10 °C</strong>.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Obstrucción o bloqueo por suciedad y limaduras en su filtro de malla.</li>
+<li>Formación de una gota de hielo interna por humedad en el circuito.</li>
+<li>Agarrotamiento del elemento modulante, abierto o cerrado.</li>
+<li>Bulbo sensible suelto o sin contacto térmico con el tubo del evaporador.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <table>
+<thead>
+<tr>
+<th>Baja</th>
+<th>Alta</th>
+<th>Diagnóstico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 bar, va a vacío al acelerar</td>
+<td>10 a 13 bar</td>
+<td>Cerrada u obturada, o bulbo roto</td>
+</tr>
+<tr>
+<td>3 a 3,8 bar</td>
+<td>12 a 14 bar</td>
+<td>Bulbo suelto</td>
+</tr>
+<tr>
+<td>3,5 a 4,5 bar</td>
+<td>10 a 14 bar</td>
+<td>Demasiado abierta: riesgo de golpe de líquido</td>
+</tr>
+<tr>
+<td>Sobre 0 bar</td>
+<td>4 a 6 bar</td>
+<td>Gota de hielo, o válvulas de baja del compresor tapadas</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Gota de hielo:</strong> el sistema deja de enfriar de forma intermitente y se recupera al parar
+el equipo y fundirse el hielo; reaparece al volver a pasar humedad.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p><strong>Herramienta:</strong> estación de carga con manómetros y spray enfriador.
+<strong>Método:</strong> motor a 1.500-1.800 rpm, equipo a máxima potencia, aislamiento del bulbo retirado.</p>
+<ol>
+<li><strong>Enfriar</strong> el bulbo: la baja debe descender gradualmente hasta valores de depresión
+   (por debajo de 0 bar). <strong>Si queda por encima de 0 bar, sustituir la válvula.</strong></li>
+<li><strong>Calentar</strong> el bulbo: la baja debe subir y la alta bajar.</li>
+<li>Si no reacciona, sustituir la válvula <strong>y el filtro deshidratador</strong>.</li>
+</ol>
+<p>Colocación correcta del sensor: apoyado en la salida del evaporador, lo más cerca posible
+de las aletas, en tramo horizontal, <strong>nunca en la parte inferior del tubo</strong>, con las zonas
+de contacto limpias, fijado con su muelle y aislado térmicamente.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT7_01</code> Sección de la válvula monobloc en "H" y detalle del tubo OT — AA Automoción, págs. 110 y 115, Fig. 6.10.5 y 6.10.8</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT7_02</code> Posiciones correctas (X, Y) e incorrectas (H, K) del sensor — Fig. 6.10.2</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT7_03</code> Tabla de equivalencias de orificios calibrados — pág. 86</span></div>
+      </div>
+      <div class="caja advertencia">El valor del sobrecalentamiento lo fija el fabricante. <strong>Nunca intervengas en la tuerca de
+reglaje del muelle</strong>: se daña la válvula y queda inutilizada. El tubo OT se sustituye
+siempre tras un gripaje del compresor.</div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AA Automoción (Hella), págs. 106-116</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt8" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 8 </div>
+    <div class="nota-body">
+      <h1>Evaporador — <strong>Sin código documentado</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <p class="ubicacion"><strong>Ubicación:</strong> Interior del mueble climatizador en el habitáculo, o en el compartimento motor</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p><strong>Enfriar y deshumidificar</strong> el aire que ingresa al habitáculo. El refrigerante pulverizado
+entra en su interior y hierve a baja temperatura, absorbiendo el calor del aire que lo
+atraviesa forzado por el electroventilador.</p>
+<p>Función auxiliar: evitar el empañamiento excesivo de las lunas en invierno, otoño y
+primavera.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Cambio de estado de líquido a vapor (vaporización) a presión y temperatura constantes.
+Durante el proceso el R-134a absorbe <strong>calor latente</strong> del aire, lo que hace que la humedad
+se condense en la superficie exterior de las aletas y se evacúe fuera del vehículo.</p>
+<p>Su funcionamiento es exactamente inverso al del condensador, aunque su constitución básica
+es idéntica.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li>Fabricado en aluminio. Variantes: de tubos y aletas, o de placas.</li>
+<li>Carcasa envolvente con canal de recogida de condensados y tubo con <strong>válvula antirretorno</strong>.</li>
+<li>Revestimiento <strong>hidrófilo</strong> de origen que impide que las gotas se adhieran a las aletas.</li>
+<li>En monovolúmenes puede haber dos evaporadores alimentados en paralelo mediante
+  electroválvulas que reparten el caudal al 50 %.</li>
+</ul>
+<p>Tipos de montaje: monobloque integral, semiintegrado e integrado (este último, en serie con
+la batería de calefacción, es propiamente un <strong>climatizador</strong>).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <p>Lado de <strong>baja presión</strong>. La temperatura de evaporación del R-134a se sitúa habitualmente
+en torno a <strong>0 °C</strong>, correspondiente a unos 2 bar de presión relativa.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Proliferación de hongos, bacterias y microorganismos en las aletas húmedas: malos olores.</li>
+<li>Acumulación de suciedad por falta de mantenimiento del filtro de habitáculo.</li>
+<li>Congelación o escarchado exterior de las aletas.</li>
+<li>Obstrucción del tubo de evacuación de condensados.</li>
+<li>Pérdida del recubrimiento hidrófilo original por envejecimiento o por productos abrasivos.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <table>
+<thead>
+<tr>
+<th>Baja</th>
+<th>Alta</th>
+<th>Diagnóstico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Casi 0 bar</td>
+<td>7 a 10 bar</td>
+<td><strong>Evaporador congelado</strong> por fallo de la sonda termostática</td>
+</tr>
+</tbody>
+</table>
+<p>Al congelarse se bloquea el paso de aire hacia el habitáculo y se nota falta de flujo en las
+rejillas. Si se obstruye el desagüe o proliferan los microorganismos, penetran olores y
+humedad al interior.</p>
+<p>Sin válvula antirretorno: baja el rendimiento por infiltración de aire no tratado, y la
+condensación puede desbordar hacia el habitáculo o congelar el evaporador.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p><strong>Herramienta:</strong> inspección visual, comprobación del flujo en la válvula de descarga y
+desinfección por ultrasonidos (equipos tipo EVIDIS).
+<strong>Método:</strong> verificar la evacuación de agua bajo el vehículo con el A/A en marcha. Limpiar
+cada temporada con un antiséptico adecuado, nunca con un perfumador.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT8_01</code> Estructura del evaporador de placas y su ubicación en serie con la calefacción — AA Automoción, págs. 119 y 123, Fig. 6.11.3 y 6.11.8</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT8_02</code> Tubo de descarga de condensación con válvula antirretorno — Fig. 6.11.4</span></div>
+      </div>
+      <div class="caja advertencia">Algunos productos fungicidas limpian bien pero su componente antibacteriano <strong>actúa como
+abrasivo del revestimiento original</strong>, generando corrosión en el evaporador y en el
+impulsor. Si el olor persiste tras limpiar, hay que desmontar y sustituir el evaporador.</div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AA Automoción (Hella), págs. 117-127</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt9" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 9 </div>
+    <div class="nota-body">
+      <h1>Filtro de habitáculo — <strong>Sin código documentado</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <p class="ubicacion"><strong>Ubicación:</strong> Entrada del flujo de aire del climatizador, antes del electroventilador y del evaporador</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Retener las partículas de polvo, polen, esporas y suciedad del aire atmosférico antes de que
+ingresen al habitáculo. Garantizar un ambiente limpio para los ocupantes y <strong>proteger la
+batería evaporadora</strong> contra la acumulación de suciedad.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Filtración mecánica por tamizado, a través de un entramado denso de fibras sintéticas o
+papel plisado, que puede incorporar capas de <strong>carbón activo</strong> para adsorción de gases y
+olores.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li>Elemento filtrante seco intercambiable, sin señal eléctrica.</li>
+<li>Dos tipos: filtrado simple de partículas, o combinado con carbón activo.</li>
+</ul>
+<p>Datos de confort y seguridad asociados:</p>
+<table>
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Temperatura interior recomendada</td>
+<td>21 a 26 °C</td>
+</tr>
+<tr>
+<td>Zona de confort del equipo</td>
+<td>23 a 27 °C con 45-60 % de humedad relativa</td>
+</tr>
+<tr>
+<td>Humedad relativa recomendada</td>
+<td>30 a 60 %</td>
+</tr>
+<tr>
+<td>Aumento del tiempo de reacción del conductor a 35 °C en 90 min</td>
+<td><strong>65 %</strong></td>
+</tr>
+<tr>
+<td>Pulsaciones en habitáculo sin refrigerar / refrigerado</td>
+<td>95,4 / 84 por minuto</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Acción</th>
+<th>Intervalo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Revisión</td>
+<td>Cada <strong>10.000 km</strong></td>
+</tr>
+<tr>
+<td>Sustitución</td>
+<td>Entre <strong>12.000 y 15.000 km</strong>, o una vez al año</td>
+</tr>
+</tbody>
+</table>
+<p>El plazo se acorta mucho en carreteras mal asfaltadas, caminos de tierra o tramos de obras.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Saturación y obstrucción progresiva por acumulación de hojas, polvo, polen y humedad.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Impide el libre paso del aire impulsado por el motoventilador, provocando <strong>reducción
+drástica del caudal</strong> en los difusores, posible sobrecalentamiento del reostato del
+ventilador, y aparición de malos olores.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p><strong>Herramienta:</strong> inspección visual directa.
+<strong>Método:</strong> extraer el elemento filtrante y analizar su tasa de saturación en cada revisión.
+Sustituir cuando la suciedad impida cumplir su cometido.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT9_01</code> Filtros de habitáculo de papel/fibra y de carbón activo — AA Automoción, pág. 128</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AA Automoción (Hella), pág. 128</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt10" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 10 </div>
+    <div class="nota-body">
+      <h1>Presostato de mínima (válvula binaria) — <strong>Sin código documentado</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <p class="ubicacion"><strong>Ubicación:</strong> Filtro deshidratador o tubería del circuito de alta presión</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Proteger el compresor <strong>interrumpiendo la alimentación del embrague electromagnético</strong>
+cuando la presión del refrigerante desciende por debajo de un valor mínimo de seguridad,
+normalmente por una fuga de gas.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Un pequeño cilindro o membrana interna es empujado por la presión del refrigerante contra
+un muelle de oposición de valor prefijado.</p>
+<ul>
+<li>Si la presión es suficiente, el cilindro se desplaza y <strong>cierra</strong> el circuito eléctrico.</li>
+<li>Si la presión cae por debajo del valor del muelle, el muelle se expande y <strong>abre</strong> los
+  contactos, cortando la alimentación del embrague.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li>Señal: <strong>digital ON/OFF</strong>, contactos normalmente abiertos.</li>
+<li>Dispone de <strong>2 terminales</strong> eléctricos.</li>
+<li>Conectado en serie con la línea de mando del relé del compresor y el termostato.</li>
+<li>Se usa normalmente en vehículos con ventilador <strong>mecánico</strong> para el radiador del motor.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <p>Corte por baja presión: entre <strong>1,5 y 3 kg/cm²</strong> (cierra el circuito por encima de unos 2 bar).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Contactos eléctricos fogueados o sulfatados.</li>
+<li>Fugas de refrigerante por la rosca de fijación o por el cuerpo del presostato.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Si los contactos quedan abiertos por fallo interno <strong>o por falta de refrigerante</strong>, el
+embrague no se conecta y el compresor no arranca.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p><strong>Herramienta:</strong> multímetro (continuidad y tensión) y manómetros de la estación.
+<strong>Puntos de medida:</strong> bornes de conexión eléctrica del presostato.</p>
+<ul>
+<li>Debe dar <strong>continuidad (0 Ω)</strong> si la presión de alta supera los 2-3 bar.</li>
+<li>Si hay presión correcta en el circuito pero no da continuidad, sustituir el presostato.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT10_01</code> Presostato de mínima montado en el filtro deshidratador y su esquema eléctrico — AA Automoción, pág. 130, Fig. 7.2.1</span></div>
+      </div>
+      <div class="caja advertencia">Protege frente a la falta de lubricación: con poco refrigerante en el circuito, este sería
+incapaz de arrastrar el lubricante y el compresor podría agarrotarse.</div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AA Automoción (Hella), pág. 130, Fig. 7.2.1</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt11" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 11 </div>
+    <div class="nota-body">
+      <h1>Presostato de máxima (válvula binaria) — <strong>Sin código documentado</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <p class="ubicacion"><strong>Ubicación:</strong> Lado de alta presión, frecuentemente en el filtro deshidratador, opuesto al de mínima</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Proteger tuberías, compresor y componentes contra <strong>sobrepresiones peligrosas</strong>,
+interrumpiendo la alimentación eléctrica del embrague electromagnético en caso de anomalía.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Funcionamiento electromecánico <strong>inverso al de mínima</strong>. Los contactos se mantienen
+normalmente cerrados; cuando la presión sobre la membrana supera la fuerza de contraste del
+muelle, la membrana se desplaza y <strong>abre</strong> el circuito, desconectando el compresor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li>Señal: <strong>digital ON/OFF</strong>, contactos normalmente cerrados (NC).</li>
+<li><strong>2 terminales</strong> eléctricos, en serie con la alimentación del embrague.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <p>Corte por alta presión: abre el circuito entre <strong>25 y 27 kg/cm²</strong>.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Contactos agarrotados o quemados.</li>
+<li>Fallo en la membrana interna de presión.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Si queda atascado en abierto, <strong>el compresor no se activará nunca</strong>. Si salta por
+sobrepresión real (electroventilador parado o condensador sucio), desconecta el compresor de
+forma cíclica o permanente para evitar roturas de canalizaciones.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p><strong>Herramienta:</strong> multímetro (resistencia) y manómetro de alta presión.
+<strong>Puntos de medida:</strong> terminales del presostato.</p>
+<ul>
+<li>Debe dar <strong>continuidad (0 Ω)</strong> en condiciones normales, por debajo de 25 bar.</li>
+<li>Si a presiones normales marca circuito abierto (resistencia infinita), sustituirlo.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT11_01</code> Ubicación y circuito eléctrico asociado del presostato de máxima — AA Automoción, pág. 131</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AA Automoción (Hella), pág. 131</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt12" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 12 <span class="fusionado">✦ FUSIONADO — 2 fuentes</span></div>
+    <div class="nota-body">
+      <h1>Presostato de tres funciones (válvula trinaria) — <strong>F129</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">VW</span><span class="badge-aplicacion">Audi</span><span class="badge-aplicacion">Seat</span><span class="badge-aplicacion">Genérico taller</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Tubería o filtro deshidratador, siempre en la parte de alta presión</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Agrupar <strong>tres funciones de control en un solo componente</strong>: protección por mínima presión,
+protección por máxima presión y control de activación del electroventilador del condensador.</p>
+<p>Se instala en vehículos con ventilador <strong>eléctrico</strong> para el radiador y donde se necesita
+buena ventilación del condensador.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Aprovecha la deformación de membranas ante tres niveles de presión de contraste
+independientes, para actuar sobre <strong>dos pares de contactos</strong>: uno para el circuito de
+seguridad del compresor y otro para el relé del electroventilador.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li>Señal: <strong>digital ON/OFF</strong> a través de dos circuitos independientes.</li>
+<li>Dispone de <strong>4 terminales</strong> eléctricos.</li>
+<li>Se conecta con el termostato, el embrague del compresor y el relé del electroventilador,
+  alimentado por la batería.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Función</th>
+<th>Valor de contraste</th>
+<th>Acción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mínima</td>
+<td><strong>2 a 3 kg/cm²</strong></td>
+<td>Corta el embrague</td>
+</tr>
+<tr>
+<td>Máxima</td>
+<td><strong>25 a 27 kg/cm²</strong></td>
+<td>Corta el embrague</td>
+</tr>
+<tr>
+<td>Ventiladores: conexión</td>
+<td><strong>14 a 17 kg/cm²</strong></td>
+<td>Arranca los electroventiladores</td>
+</tr>
+<tr>
+<td>Ventiladores: desconexión</td>
+<td><strong>11 a 14 kg/cm²</strong></td>
+<td>Los para al bajar la presión</td>
+</tr>
+</tbody>
+</table>
+<p>El control escalonado ahorra energía: el motoventilador solo arranca en semáforos, caravana
+y ciudad a baja velocidad, evitando ruido y desgaste precoz.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Avería en los contactos de mando del ventilador: no conecta la velocidad.</li>
+<li>Descalibración de los muelles internos de contraste.</li>
+<li>El fallo por alta suele deberse a suciedad en el condensador u obturaciones; el fallo por
+  baja, a fugas de fluido.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Si falla el contacto del ventilador, el electroventilador no arranca y la alta presión sube
+hasta los 25-27 bar, donde actuará el corte por máxima. Si fallan los contactos de mínima o
+máxima, <strong>el compresor queda inoperativo</strong>.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p><strong>Herramienta:</strong> multímetro en ohmímetro/voltímetro y estación de manómetros.
+<strong>Puntos de medida:</strong> los dos pares de terminales del presostato.</p>
+<ul>
+<li>El par de seguridad debe dar continuidad <strong>entre 3 y 25 bar</strong>.</li>
+<li>El par del ventilador debe dar continuidad cuando la alta supere los <strong>14-17 bar</strong>.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT12_01</code> Esquema eléctrico de conexiones y funcionamiento interno — AA Automoción, págs. 133-134, Fig. 7.4.1 y 7.4.2</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT12_02</code> Diagrama de contactos eléctricos de la trinaria (1-2 y 3-4) — Dashboard Sensores, pág. 88</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT12_03</code> Simbología del conmutador F129 en esquema eléctrico — Dashboard Sensores, pág. 83</span></div>
+      </div>
+      <div class="caja discrepancia">Las dos fuentes no dan los mismos umbrales. La documentación de taller genérica indica
+mínima 2-3 bar, máxima 25-27 bar y ventiladores 14-17 / 11-14 bar. La documentación VAG
+para el F129 indica corte por baja <strong>por debajo de 2 bar</strong>, conexión de ventiladores en
+escalón II a <strong>16 bar</strong> y corte por alta entre <strong>24 y 32 bar</strong>. Los rangos se solapan pero
+no coinciden: <strong>verifica siempre el tarado concreto del fabricante del vehículo</strong> antes de
+dar por buena o mala una lectura.</div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AA Automoción (Hella), págs. 133-134, Fig. 7.4.1 y 7.4.2 · Dashboard Sensores VAG, págs. 83, 88-91</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt13" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 13 <span class="fusionado">✦ FUSIONADO — 3 fuentes</span></div>
+    <div class="nota-body">
+      <h1>Transmisor de alta presión / sensor MAP — <strong>G65</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">VW Golf</span><span class="badge-aplicacion">Audi A3</span><span class="badge-aplicacion">Audi TT Coupé</span><span class="badge-aplicacion">Seat</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Incorporado en el tubo de alta presión del circuito frigorífico</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Vigilar y medir de forma <strong>continua e ininterrumpida</strong> la presión del refrigerante en todo
+su ciclo de trabajo, no solo en umbrales fijos como hace la trinaria.</p>
+<p>Con su señal, la UCE adapta el ralentí del motor exactamente a la potencia absorbida por el
+compresor, gestiona de forma escalonada las velocidades del electroventilador y protege el
+compresor. Sustituye al conmutador de presión en los sistemas modernos.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Aprovecha el fenómeno <strong>piezorresistivo del cristal de silicio</strong>:</p>
+<ol>
+<li>La presión del refrigerante se aplica contra un cristal de silicio, que se deforma en
+   mayor o menor medida.</li>
+<li>La deformación modifica su resistencia eléctrica y, con ella, la tensión de medición.</li>
+<li>Un microprocesador integrado evalúa esa tensión y la transforma en una señal digital
+   <strong>modulada en anchura de impulsos (PWM)</strong> de frecuencia fija.</li>
+</ol>
+<p>A presión baja el cristal se deforma poco, opone poca resistencia y la anchura de impulso es
+reducida; al subir la presión, la deformación y la anchura de impulso aumentan en proporción.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li>Señal: <strong>digital PWM</strong>, frecuencia fija de <strong>50 Hz</strong> (período de 20 ms = 100 %).</li>
+<li>Alimentación: generalmente 12 V. Existen modelos de 5 V con señal analógica de 1 a 4 V.</li>
+<li>Rango de medición continuo desde 0,14 MPa (1,4 bar) hasta 3,7 MPa (37 bar).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Condición</th>
+<th>Presión</th>
+<th>Anchura de impulso</th>
+<th>% del período</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Presión mínima</td>
+<td>1,4 bar (0,14 MPa)</td>
+<td><strong>2,6 ms</strong></td>
+<td>13 %</td>
+</tr>
+<tr>
+<td>Circuito en reposo</td>
+<td>5 bar</td>
+<td>≈ 5 ms</td>
+<td>25 %</td>
+</tr>
+<tr>
+<td>Funcionamiento normal</td>
+<td>14 bar</td>
+<td>≈ 8 ms</td>
+<td>40 %</td>
+</tr>
+<tr>
+<td>Presión máxima</td>
+<td>37 bar (3,7 MPa)</td>
+<td><strong>18 ms</strong></td>
+<td>90 %</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Cables cortados o derivados a masa.</li>
+<li>Fallo del microprocesador interno o del elemento sensible de silicio.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Si la unidad de control no detecta ninguna señal, por ejemplo por un cable cortado,
+<strong>desconecta el compresor por motivos de seguridad</strong>. La anomalía queda registrada en la
+memoria de averías, por ejemplo como <strong>00819 Transmisor de alta presión «Señal muy baja»</strong>
+(grupo VAG).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p><strong>Herramienta:</strong> osciloscopio digital y equipo de diagnosis.
+<strong>Puntos de medida:</strong> cable de señal del transmisor.</p>
+<p>Debe verse una onda cuadrada de <strong>50 Hz con período de 20 ms</strong>, donde la anchura del
+impulso positivo varía proporcionalmente a la presión: 2,6 ms a 1,4 bar, 18 ms a 37 bar.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT13_01</code> Estructura del transmisor con cristal de silicio y microprocesador — AA Automoción, págs. 136-137, Fig. 7.5.2 y 7.5.3</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT13_02</code> Oscilogramas de la señal PWM a presión baja y alta — Fig. 7.5.4 y 7.5.6</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT13_03</code> Ubicación del sensor G65 en el tubo de alta presión — Dashboard Sensores, pág. 91</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AA Automoción (Hella), págs. 136-137 · Guía Técnica VAG, págs. 89-90 · Dashboard Sensores, págs. 89-94</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt14" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 14 </div>
+    <div class="nota-body">
+      <h1>Válvula de descarga por sobrepresión — <strong>Sin código documentado</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <p class="ubicacion"><strong>Ubicación:</strong> Salida de alta del compresor, o en el depósito de líquido</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Dispositivo de <strong>seguridad mecánica extrema</strong>: abre el circuito a la atmósfera para liberar
+presión y evitar la explosión del sistema. Antiguamente consistía en un precinto de ruptura.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Un muelle calibrado mantiene cerrado el paso. Al superarse la presión de tarado, la fuerza
+del refrigerante vence al muelle y abre el conducto de descarga.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Suele incorporar un precinto de plástico o aluminio que <strong>revienta al activarse</strong>, lo que
+permite saber a simple vista que la válvula ha actuado.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Evento</th>
+<th>Presión</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Apertura</td>
+<td>≈ <strong>38 bar</strong> (3,8 MPa)</td>
+</tr>
+<tr>
+<td>Cierre</td>
+<td><strong>30 a 35 bar</strong> (3,0 a 3,5 MPa)</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Actuación por obstrucción del circuito, condensador tapado o fallo del electroventilador,
+que disparan la alta presión.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Si el precinto ha saltado, el circuito habrá perdido refrigerante y el equipo no enfría.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Inspección visual del precinto. Si ha actuado, <strong>es obligatorio vaciar el circuito antes de
+sustituir la válvula</strong> y localizar la obstrucción que causó el pico de presión: no basta con
+cambiar la válvula y recargar.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT14_01</code> Sección del compresor mostrando la válvula de seguridad — Dashboard Sensores, pág. 86</span></div>
+      </div>
+      <div class="caja advertencia">La válvula solo debe sustituirse con el sistema completamente vacío.</div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Dashboard Sensores VAG, pág. 86</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt15" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 15 <span class="fusionado">✦ FUSIONADO — 2 fuentes</span></div>
+    <div class="nota-body">
+      <h1>Interruptor termostático y sensor de evaporador — <strong>G153 / E33</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">VW</span><span class="badge-aplicacion">Seat</span><span class="badge-aplicacion">Audi</span><span class="badge-aplicacion">Genérico taller</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Tubo capilar o sonda NTC entre las aletas del evaporador; mando en el salpicadero</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir la temperatura del evaporador para conectar y desconectar cíclicamente el embrague del
+compresor, regulando el rendimiento frigorífico y, sobre todo, <strong>evitando la congelación del
+agua condensada en la batería evaporadora</strong> (engelamiento), que bloquearía el paso del aire.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li><strong>Termostato mecánico:</strong> el tubo capilar contiene un gas sensible cuya variación de
+  volumen expande o contrae un fuelle. Esa fuerza (Fp) se opone a la de un muelle de
+  regulación (Fm) para accionar una palanca y un interruptor eléctrico.</li>
+<li><strong>Termostato electrónico:</strong> una sonda <strong>NTC</strong> envía su resistencia variable a un módulo
+  que conmuta la alimentación del compresor. Se le llama también <strong>interruptor de deshielo</strong>.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li>Señal: <strong>digital ON/OFF</strong> (apertura y cierre de contactos).</li>
+<li>Variantes de 2 o 3 contactos; fijo, graduable por mando, o electrónico con potenciómetro.</li>
+<li>Algunos sistemas sustituyen el sensor por un termostato (<strong>E33</strong>) que corta directamente
+  la corriente del embrague.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Desconexión</th>
+<th>Reconexión</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mecánico</td>
+<td>Aprox. <strong>-1,5 °C</strong></td>
+<td>Unos <strong>+3 °C</strong> por encima de la desconexión</td>
+</tr>
+<tr>
+<td>Electrónico</td>
+<td><strong>+1 °C</strong></td>
+<td>Superior a <strong>+4 °C</strong></td>
+</tr>
+<tr>
+<td>Sonda G153 (VAG)</td>
+<td>Entre <strong>-1 y 0 °C</strong></td>
+<td>Aprox. <strong>+3 °C</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Gama de regulación en conexión del mecánico: temperaturas del evaporador entre <strong>+2 y +16 °C</strong>.</p>
+<p>Prueba en taller (motor 1.500-1.800 rpm, 20 min en recirculación, frío máximo):</p>
+<table>
+<thead>
+<tr>
+<th>Medida</th>
+<th>Valor esperado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conexión del compresor</td>
+<td>2,6 a 2,8 bar</td>
+</tr>
+<tr>
+<td>Desconexión</td>
+<td>0,8 a 1,2 bar</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Tubo capilar roto, sin gas, o suelto de las aletas del evaporador.</li>
+<li>Descalibración del muelle interno.</li>
+<li>Contactos eléctricos pegados o quemados.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <ul>
+<li><strong>Averiado en cerrado:</strong> el compresor no desconecta nunca y el evaporador se congela por
+  completo, bloqueando el flujo de aire.</li>
+<li><strong>Averiado en abierto:</strong> el compresor no arranca.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p><strong>Herramienta:</strong> multímetro, manómetro de baja presión y spray enfriador.
+<strong>Puntos de medida:</strong> terminales del interruptor termostático o de la sonda NTC.
+<strong>Método:</strong> hacer funcionar el A/A a máximo rendimiento y verificar que el compresor conecta
+y desconecta cíclicamente a las presiones equivalentes a sus temperaturas de corte.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT15_01</code> Esquema interno del termostato mecánico de tubo capilar — AA Automoción, pág. 139, Fig. 8.1.1</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT15_02</code> Instalación eléctrica con termostato de 2 contactos y trinaria — pág. 141, Fig. 8.1.5</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT15_03</code> Ubicación de la sonda NTC entre las aletas del evaporador — Dashboard Sensores, pág. 87</span></div>
+      </div>
+      <div class="caja advertencia">Con humedad ambiente alta el compresor conecta a temperaturas mayores. <strong>En zona costera el
+evaporador se congelará si el compresor desconecta por debajo de 1,5 bar</strong>; en zona seca
+puede desconectar entre 0,9 y 1,1 bar sin congelarse. En compresores de cilindrada variable
+este sensor puede no ser necesario, porque el compresor mantiene la baja por encima del
+punto de congelación.</div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AA Automoción (Hella), págs. 139-141, Fig. 8.1.1 y 8.1.5 · Dashboard Sensores VAG, pág. 87</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt16" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 16 <span class="fusionado">✦ FUSIONADO — 2 fuentes</span></div>
+    <div class="nota-body">
+      <h1>Termosensores de temperatura exterior — <strong>G17 y G89</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">VW Golf</span><span class="badge-aplicacion">Audi A3</span><span class="badge-aplicacion">Audi TT Coupé</span><span class="badge-aplicacion">Seat</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> G17 en armazón delantero, paragolpes o carcasa del retrovisor derecho. G89 en el canal de entrada de aire fresco</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Detectar la temperatura exterior efectiva e informar a la UCE para la gestión de las
+chapaletas de temperatura y la velocidad de la turbina de aire fresco.</p>
+<ul>
+<li><strong>G17:</strong> punto de medición principal, en el frontal del vehículo.</li>
+<li><strong>G89:</strong> segundo punto de medición, que registra la temperatura del aire <strong>en el momento
+  exacto de ser aspirado</strong> por la turbina.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Efecto <strong>NTC</strong> (coeficiente de temperatura negativo): la resistencia eléctrica varía
+inversamente a la temperatura. La UCE procesa <strong>siempre el valor más bajo</strong> registrado entre
+los dos sensores.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li>Señal: <strong>analógica</strong>, resistencia NTC.</li>
+<li>En versiones modernas, el G17 comunica su valor al cuadro de instrumentos y llega a la UCE
+  <strong>vía CAN-Bus</strong>.</li>
+<li>Ambos sensores son susceptibles de autodiagnóstico y registran avería en memoria.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <table>
+<thead>
+<tr>
+<th>Situación</th>
+<th>Respuesta del sistema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fallo de G17</td>
+<td>Se usa automáticamente el valor de G89</td>
+</tr>
+<tr>
+<td>Fallo de G89</td>
+<td>Se usa el valor medido por G17</td>
+</tr>
+<tr>
+<td><strong>Fallo simultáneo de ambos</strong></td>
+<td>Valor supletorio fijo de <strong>+10 °C</strong></td>
+</tr>
+</tbody>
+</table>
+<p>En climatizadores manuales antiguos, el fallo del sensor exterior podía llegar a <strong>anular el
+acoplamiento magnético del compresor</strong>.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p><strong>Herramienta:</strong> equipo de diagnosis y multímetro.
+<strong>Método:</strong> ambos sensores son susceptibles de autodiagnóstico. Comprobar el valor leído
+frente a la temperatura ambiente real, y medir la resistencia NTC contrastándola con la
+curva del fabricante.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT16_01</code> Ubicación del G17 en el armazón delantero y del G89 en el conducto de aire — Guía Técnica, págs. 48-49</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT16_02</code> Gráfica de resistencia NTC frente a temperatura — sin referencia en las fuentes</span></div>
+      </div>
+      <div class="caja advertencia">Si fallan ambos sensores simultáneamente, <strong>el modo de recirculación automática de aire
+queda inoperativo</strong>.</div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Guía Técnica VAG, págs. 48-49, 103 · Manual de Sensores G107-G192, págs. 48-49</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt17" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 17 <span class="fusionado">✦ FUSIONADO — 2 fuentes</span></div>
+    <div class="nota-body">
+      <h1>Termosensor del habitáculo con turbina — <strong>G56 (con V42)</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">VW Climatronic</span><span class="badge-aplicacion">Audi Climatronic</span><span class="badge-aplicacion">Seat Climatronic</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Integrado en la unidad de control y manejo (J255 / E87) o en el salpicadero</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Detectar la <strong>temperatura efectiva del habitáculo</strong> y proporcionar la señal de referencia
+real para compararla con el valor teórico seleccionado por el conductor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Resistencia de tipo <strong>NTC</strong>. Para evitar errores de medición por el calor radiado de los
+componentes electrónicos internos, la turbina <strong>V42</strong> aspira continuamente aire del
+habitáculo y lo hace pasar a través del sensor.</p>
+<p>El valor medido se compara con el de consigna para gestionar la chapaleta de temperatura y
+la velocidad de la turbina de aire fresco.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li>Señal: <strong>analógica</strong>. Sensor: resistencia NTC.</li>
+<li>El funcionamiento de la turbina se gestiona desde el panel de mandos.</li>
+<li>Susceptible de autodiagnóstico.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>La UCE sustituye la señal por un valor fijo. El sistema sigue funcionando, <strong>pero no regula
+con precisión</strong> la temperatura solicitada.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p><strong>Herramienta:</strong> equipo de diagnosis.
+<strong>Método:</strong> leer el valor del sensor en diagnosis y contrastarlo con la temperatura real del
+habitáculo medida con termómetro. Comprobar además que la turbina V42 aspira: si no gira, el
+sensor leerá el calor radiado por la electrónica y no el del habitáculo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT17_01</code> Detalle del sensor G56 con su turbina V42 aspirando aire — Guía Técnica, pág. 49</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT17_02</code> Panel de mandos con la rejilla de aspiración del sensor — Manual de Sensores, pág. 49</span></div>
+      </div>
+      <div class="caja discrepancia">Las dos fuentes no coinciden en el valor supletorio de emergencia: una indica <strong>+24 °C
+fijo</strong> y la otra un rango de <strong>22 a 26 °C</strong> según el sistema. Probablemente varía según el
+año de fabricación o la versión de software de la UCE. Contrastar con la documentación del
+modelo concreto antes de dar por buena una lectura de diagnosis.</div>
+      <div class="caja advertencia">Con el sensor averiado y una temperatura extrema seleccionada, el habitáculo puede
+calentarse o enfriarse muy por encima de lo solicitado, al carecer el sistema de valor de
+referencia real.</div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Guía Técnica VAG, págs. 49, 104 · Manual de Sensores G107-G192, pág. 49</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt18" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 18 <span class="fusionado">✦ FUSIONADO — 2 fuentes</span></div>
+    <div class="nota-body">
+      <h1>Transmisor de temperatura a la salida del vano reposapiés — <strong>G192</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <p class="ubicacion"><strong>Ubicación:</strong> Salida de aire del calefactor/climatizador, antes de ingresar al habitáculo</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir la temperatura del aire <strong>tratado</strong>, inmediatamente después de salir del conjunto
+calefactor/climatizador. La UCE usa la señal para gestionar la distribución de aire
+(descongelación / pies) y el caudal impelido por la turbina de aire fresco.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Efecto termorresistivo: la resistencia eléctrica <strong>aumenta a medida que disminuye la
+temperatura</strong> del aire de salida.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li>Señal: <strong>analógica</strong>. Componente: resistencia eléctrica variable.</li>
+<li>Aplicación concreta no documentada en las fuentes disponibles.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>En caso de ausencia de señal, se adopta un valor supletorio de <strong>+80 °C</strong>.</p>
+<p>Ese valor es llamativamente alto comparado con los demás sensores del sistema (+10 °C en los
+exteriores, +24 °C en el habitáculo), lo que indica su <strong>importancia crítica</strong> en el control
+del intercambio de calor: ante la duda, el sistema asume que el aire sale muy caliente.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p><strong>Herramienta:</strong> equipo de diagnosis y multímetro.
+<strong>Método:</strong> leer el valor en diagnosis y contrastarlo con la temperatura real medida en la
+salida del vano reposapiés con termómetro de contacto o sonda de aire.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT18_01</code> Ubicación del transmisor G192 en el bloque climatizador — Guía Técnica, pág. 49</span></div>
+      </div>
+      <div class="caja advertencia">Las fuentes no documentan anomalías frecuentes ni valores de resistencia de referencia para
+este sensor. Pendiente de completar con documentación del fabricante.</div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Guía Técnica VAG, pág. 49 · Manual de Sensores G107-G192, pág. 49</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt19" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 19 </div>
+    <div class="nota-body">
+      <h1>Conmutador de aviso de temperatura del líquido refrigerante — <strong>Sin código documentado</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <p class="ubicacion"><strong>Ubicación:</strong> Circuito de refrigeración del motor</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Proteger el motor del vehículo contra sobrecalentamientos severos bajo cargas intensas, como
+la subida de un puerto de montaña, <strong>desconectando la carga adicional que representa el
+compresor</strong> de aire acondicionado.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Termocontacto sensible a la temperatura del líquido refrigerante del motor. Al alcanzarse el
+umbral térmico fijado en su elemento bimetálico, interrumpe el circuito de excitación del
+compresor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li>Señal: <strong>digital ON/OFF</strong>, contacto de seguridad normalmente cerrado que se abre por alta
+  temperatura.</li>
+<li>Vinculado con el testigo de aviso del cuadro de instrumentos.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Acción</th>
+<th>Temperatura</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Desconexión del compresor</td>
+<td>Aprox. <strong>119 °C</strong></td>
+</tr>
+<tr>
+<td>Reconexión</td>
+<td>Aprox. <strong>112 °C</strong></td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Contactos oxidados o descalibrados.</li>
+<li>Agarrotamiento del mecanismo en posición abierta.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Si se avería en posición abierta, <strong>el compresor se desconecta permanentemente</strong> sin que
+exista un sobrecalentamiento real del motor. Es una causa de "el aire no enfría" que no está
+en el circuito frigorífico.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p><strong>Herramienta:</strong> multímetro (continuidad) y termómetro.
+<strong>Puntos de medida:</strong> terminales del conmutador.</p>
+<ul>
+<li><strong>Continuidad (0 Ω)</strong> con el refrigerante por debajo de 119 °C.</li>
+<li><strong>Circuito abierto</strong> (resistencia infinita) al superar los 119 °C.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT19_01</code> Conmutador para testigo de aviso de temperatura del refrigerante — AA Automoción, pág. 138, Fig. 7.5.7</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AA Automoción (Hella), pág. 138, Fig. 7.5.7</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt20" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 20 <span class="fusionado">✦ FUSIONADO — 2 fuentes</span></div>
+    <div class="nota-body">
+      <h1>Sensor de la calidad del aire — <strong>G238</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">Sistemas con recirculación automática</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Ante el filtro combinado de partículas y carbón activo, en la entrada de aire exterior</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Detectar la concentración de gases contaminantes en el aire exterior y ordenar el paso a
+<strong>recirculación antes de que los contaminantes y olores penetren en el habitáculo</strong>.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Sensor de gases <strong>semiconductor de dióxido de estaño (SnO₂)</strong> con óxidos mixtos y aditivos
+de platino y paladio.</p>
+<p>El material modifica su resistencia eléctrica al absorber o liberar partículas de oxígeno en
+presencia de gases contaminantes — funcionamiento análogo al de una <strong>sonda lambda</strong>. Una
+electrónica de control integrada convierte las variaciones de resistencia en señales
+digitales para la UCE.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li>Temperatura de servicio: aproximadamente <strong>350 °C</strong>, con un consumo de <strong>0,5 W</strong>.</li>
+<li>Fase de calentamiento: unos <strong>30 segundos</strong> tras el arranque.</li>
+<li>El sensor <strong>no está sujeto a desgaste</strong>; el filtro combinado sí debe sustituirse por
+  intervalos.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Tipo de gas</th>
+<th>Efecto sobre el sensor</th>
+<th>Ejemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Oxidables</strong> (reductores)</td>
+<td>Liberan oxígeno → <strong>reducen</strong> la resistencia</td>
+<td>CO, hexano, benceno, n-heptano (gasolina)</td>
+</tr>
+<tr>
+<td><strong>Reducibles</strong> (oxidantes)</td>
+<td>Absorben oxígeno → <strong>aumentan</strong> la resistencia</td>
+<td>NOx, SO₂, H₂S, CS₂ (diésel)</td>
+</tr>
+</tbody>
+</table>
+<p>Esta distinción explica por qué el sensor reacciona de forma distinta según el origen de la
+contaminación: un vehículo de gasolina delante o uno diésel producen respuestas opuestas en
+la resistencia.</p>
+<p>Condiciones que <strong>inhiben</strong> la recirculación automática:</p>
+<ul>
+<li>Temperatura exterior inferior a <strong>-5 °C</strong>.</li>
+<li>Función <strong>ECON</strong> o <strong>Descongelación</strong> activa.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>No documentadas específicamente en las fuentes. Al no tener desgaste, los fallos suelen
+venir del cableado, del conector o de la electrónica integrada.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Sin señal válida, el sistema pierde la función de recirculación automática y el aire exterior
+entra sin filtrado selectivo de gases.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p><strong>Herramienta:</strong> equipo de diagnosis.
+<strong>Método:</strong> comprobar en diagnosis que el sensor responde ante una fuente de contaminación
+(por ejemplo, gases de escape de otro vehículo), y que el sistema conmuta a recirculación.
+Verificar antes que no se dé ninguna de las condiciones inhibidoras (menos de -5 °C, ECON o
+descongelación).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT20_01</code> Diagrama de bloques del sensor G238 y su conexión a la unidad E87 — Dashboard Sensores, pág. 80</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT20_02</code> Tabla de condiciones para la activación de la recirculación — Dashboard Sensores, pág. 79</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT20_03</code> Esquema del sensor situado ante el filtro de carbón activo — Guía Técnica, pág. 62</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT20_04</code> Representación del intercambio de oxígeno en el semiconductor SnO₂ — Guía Técnica, pág. 113</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Guía Técnica VAG, págs. 62, 112-113 · Dashboard Sensores VAG, págs. 79-80</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt21" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 21 <span class="fusionado">✦ FUSIONADO — 2 fuentes</span></div>
+    <div class="nota-body">
+      <h1>Fotosensor de radiación solar — <strong>G107</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">Climatronic monozona</span><span class="badge-aplicacion">Climatronic bizona</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Parte central del tablero, normalmente integrado en la salida de aire hacia el parabrisas</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir la intensidad de la <strong>radiación solar directa</strong> que incide sobre los ocupantes, e
+informar a la UCE para corregir la regulación de la temperatura interior y el caudal de aire
+según la carga térmica solar.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Fotodiodo semiconductor sensible a la luz. Sin luz, la corriente es mínima; al recibir
+radiación, <strong>el flujo de corriente aumenta proporcionalmente a la luminosidad</strong>, lo que
+permite a la UCE deducir la intensidad de la radiación.</p>
+<p><strong>Diseño óptico:</strong> incorpora un filtro protector UV y un elemento óptico que <strong>apantalla la
+luz vertical</strong> para captar con más intensidad la luz oblicua, que es la que genera mayor
+sensación de calor en los ocupantes.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li>Señal: <strong>analógica</strong>, valor de tensión proporcional.</li>
+<li>Alimentación: <strong>5 V</strong> suministrados directamente por la UCE.</li>
+<li>Variantes de sensor simple o doble: en sistemas <strong>bizona</strong> se montan dos fotodiodos
+  independientes, uno por zona.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Prueba</th>
+<th>Valor esperado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alimentación</td>
+<td><strong>5 V</strong> desde la UCE</td>
+</tr>
+<tr>
+<td>Señal con luz intensa</td>
+<td>La tensión de salida sube hasta aprox. <strong>3 V</strong></td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Interrupciones en el cableado o aislamiento deficiente.</li>
+<li>Estado de los conectores.</li>
+<li>Suciedad o elementos sobre el sensor que falseen la lectura.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <table>
+<thead>
+<tr>
+<th>Situación</th>
+<th>Respuesta del sistema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fallo de un fotodiodo en bizona</td>
+<td>La UCE usa la señal del operativo como referencia</td>
+</tr>
+<tr>
+<td>Fallo total</td>
+<td>Valor sustitutivo de <strong>radiación intermedia</strong> en su escala</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p><strong>Herramienta:</strong> multímetro y osciloscopio.
+<strong>Puntos de medida:</strong> alimentación y salidas de señal del sensor.</p>
+<ol>
+<li>Con el encendido conectado, comprobar la <strong>alimentación de 5 V</strong>.</li>
+<li>Con el osciloscopio en las salidas de señal, acercar una <strong>luz intensa</strong>: la tensión debe
+   subir hasta un valor próximo a <strong>3 V</strong>.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT21_01</code> Despiece del fotosensor: carcasa, filtro UV, elemento óptico de apantallamiento y fotodiodo — Guía Técnica, págs. 50 y 107</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT21_02</code> Captura de osciloscopio con la subida de tensión ante luz intensa — Guía Técnica, pág. 108</span></div>
+      </div>
+      <div class="caja advertencia">En vehículos con <strong>parabrisas atérmico</strong>, si se sustituye por uno normal el sensor percibirá
+más radiación de la real y no regulará correctamente la temperatura. Es un fallo típico tras
+una sustitución de luna que no se detecta en diagnosis.</div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Guía Técnica VAG, págs. 50, 107-108 · Manual de Sensores G107-G192, págs. 50, 107</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt22" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 22 </div>
+    <div class="nota-body">
+      <h1>Servomotor de chapaleta de velocidad y recirculación — <strong>V71 (con potenciómetro G113)</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <p class="ubicacion"><strong>Ubicación:</strong> Conjunto climatizador, accionando las chapaletas de velocidad y de aire fresco</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Accionar mecánicamente <strong>dos chapaletas simultáneamente</strong> con un solo motor: la de velocidad
+y la de aire fresco / recirculación.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Motor eléctrico acoplado a un <strong>disco de accionamiento con dos pistas guía</strong>, que permite el
+reglaje individual de cada chapaleta según la necesidad: velocidad de marcha por un lado,
+recirculación por otro. Ese mecanismo de pistas es lo que permite que un único motor
+gestione dos funciones diferenciadas.</p>
+<p>El <strong>potenciómetro G113</strong> informa a la UCE de la posición exacta del servomotor en todo
+momento.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li>Actuador eléctrico con realimentación de posición por potenciómetro.</li>
+<li>La UCE utiliza la <strong>señal de velocidad de marcha (v)</strong> del vehículo para determinar la
+  posición de excitación.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <p>A velocidades altas de marcha <strong>reduce la sección de paso de aire fresco</strong>, para mantener
+constante el caudal que entra al habitáculo pese al aumento de la presión dinámica.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>No documentadas en las fuentes disponibles.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>No documentado en las fuentes disponibles.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p><strong>Herramienta:</strong> equipo de diagnosis.
+<strong>Método:</strong> activar el servomotor desde diagnosis y comprobar que el potenciómetro G113
+devuelve una posición coherente en todo el recorrido, sin saltos ni zonas muertas.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT22_01</code> Detalle del servomotor con el disco de pistas guía y las dos chapaletas — Guía Técnica, pág. 47</span></div>
+      </div>
+      <div class="caja advertencia">Documentado en una sola fuente y con apartados incompletos: faltan valores de diagnóstico y
+modos de emergencia. Pendiente de contraste con documentación del fabricante.</div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Guía Técnica VAG, págs. 46-47, 52</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt23" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 23 </div>
+    <div class="nota-body">
+      <h1>Mandos de control manual y conmutador del ventilador — <strong>Sin código documentado</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <p class="ubicacion"><strong>Ubicación:</strong> Salpicadero o tablero de a bordo</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Permitir al usuario activar el circuito de A/A, seleccionar el origen del aire (exterior
+dinámico o recirculación interior) y ajustar la velocidad del electroventilador del
+evaporador.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li><strong>Mando de A/A y recirculación:</strong> pulsadores que cierran el circuito del embrague —en
+  serie con termostato y presostato— y accionan el actuador de la trampilla de aire.</li>
+<li><strong>Conmutador con reostato:</strong> selector rotativo de contactos acoplado a un reostato
+  (resistencia con varias tomas en serie) que introduce <strong>caídas de tensión graduales</strong> en
+  el circuito del motor del ventilador.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Señal analógica por variación de tensión en el reostato, y digital en los pulsadores. El
+conmutador del ventilador dispone de <strong>5 contactos</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Contacto</th>
+<th>Función</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B</td>
+<td>Alimentación desde la batería</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Alimentación del termostato</td>
+</tr>
+<tr>
+<td>L</td>
+<td>Baja velocidad (LOW)</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Velocidad media (MEDIUM)</td>
+</tr>
+<tr>
+<td>H</td>
+<td>Alta velocidad (HIGH)</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Espirales del reostato quemadas o cortadas por sobreintensidad.</li>
+<li>Contactos fogueados o desgastados en el conmutador giratorio.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <ul>
+<li><strong>Reostato quemado:</strong> el ventilador deja de funcionar en las velocidades baja y media
+  (L, M) y <strong>solo funciona en la alta (H)</strong>. Es el síntoma clásico.</li>
+<li><strong>Sin alimentación en el contacto C:</strong> el compresor no arranca, porque no llega señal al
+  termostato.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p><strong>Herramienta:</strong> multímetro (tensión y resistencia).
+<strong>Puntos de medida:</strong> contactos B, C, L, M y H del conmutador, y bornes del reostato.</p>
+<ul>
+<li>Verificar continuidad entre B y C al activar el selector.</li>
+<li>Medir el valor óhmico progresivo entre los bornes del reostato para cada velocidad.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT23_01</code> Tipos de mandos del salpicadero — AA Automoción, pág. 143, Fig. 8.2.1</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT23_02</code> Esquema del conmutador del ventilador con reostato — pág. 146, Fig. 8.5.1</span></div>
+      </div>
+      <div class="caja advertencia">La activación del A/A exige accionar alguna velocidad del electroventilador. Si el
+ventilador no gira, el compresor puede no activarse aunque el mando esté pulsado.</div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AA Automoción (Hella), págs. 143-146, Fig. 8.2.1 y 8.5.1</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt30" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 30 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Subenfriamiento</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Diferencia entre la temperatura de condensación y la temperatura real del refrigerante a la
+salida del condensador. Junto con el recalentamiento, es el parámetro que decide si la carga
+del circuito es correcta. Se calcula <strong>antes</strong> de cargar refrigerante, nunca después.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Durante el cambio de estado, la temperatura del refrigerante permanece constante mientras
+haya mezcla de líquido y vapor. Una vez condensado todo el vapor, el líquido puede seguir
+cediendo calor y <strong>enfriarse por debajo de su temperatura de condensación</strong>: ese exceso de
+enfriamiento es el subenfriamiento.</p>
+<p>Que exista subenfriamiento demuestra que en el condensador hay líquido suficiente. Si no lo
+hay, significa que el refrigerante sale todavía en mezcla, es decir, que falta carga.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Equipo en régimen estable: motor entre 1.500 y 1.800 rpm, A/A al máximo o en reciclaje,
+ventilador del evaporador a máxima velocidad y de 15 a 30 minutos de funcionamiento.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Estación con manómetro de alta presión y <strong>termómetro de contacto</strong> para el tubo de salida
+del condensador.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p><strong>Subenfriamiento = Temperatura de condensación − Temperatura de salida del condensador</strong></p>
+<ol>
+<li>Leer la presión relativa en el manómetro de alta.</li>
+<li>Convertirla a temperatura de condensación con la escala del propio manómetro.</li>
+<li>Medir con termómetro de contacto la temperatura del tubo a la salida del condensador.</li>
+<li>Restar el segundo valor al primero.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <p>Ejemplo con presión relativa de 18 bar (19 absolutos), que corresponde a una temperatura de
+condensación de <strong>65 °C</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>T. salida condensador</th>
+<th>Cálculo</th>
+<th>Resultado</th>
+<th>Interpretación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>60 °C</td>
+<td>65 − 60</td>
+<td><strong>5 °C</strong></td>
+<td>Óptimo</td>
+</tr>
+<tr>
+<td>63 °C</td>
+<td>65 − 63</td>
+<td><strong>2 °C</strong></td>
+<td>Débil</td>
+</tr>
+<tr>
+<td>53 °C</td>
+<td>65 − 53</td>
+<td><strong>12 °C</strong></td>
+<td>Fuerte</td>
+</tr>
+</tbody>
+</table>
+<p>Criterios: <strong>débil</strong> si es igual o inferior a 2 °C; <strong>fuerte</strong> si es igual o superior a 10 °C.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li><strong>Débil:</strong> falta de fluido en el condensador, <strong>aunque la presión sea correcta</strong>. Es el
+  caso que más engaña: la presión de alta puede parecer normal y el equipo estar escaso.</li>
+<li><strong>Fuerte:</strong> exceso de fluido en el condensador, que dará problemas en la fase de
+  expansión. También puede delatar un <strong>filtro deshidratador obturado</strong>.</li>
+</ul>
+<p>El error más común es cargar refrigerante guiándose solo por la presión de alta. Dos
+circuitos con la misma presión pueden tener cargas muy distintas.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Un subenfriamiento entre 5 y 8 °C, con recalentamiento también en rango, confirma que la
+carga es correcta. Si el subenfriamiento es fuerte y la alta presión está alta, comprobar el
+filtro antes de dar por hecho que sobra refrigerante.</p>
+      </div>
+      <div class="caja advertencia">Nunca efectúes una carga de refrigerante sin haber controlado antes el subenfriamiento y el
+recalentamiento.</div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AA Automoción (Hella), apartado 5.4, págs. 36-37</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt31" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 31 <span class="subtipo">Procedimiento</span></div>
+    <div class="nota-body proceso">
+      <h1>Lavado del circuito (flushing)</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Eliminar del circuito las partículas, limaduras, humedad y aceite degradado que quedarían
+circulando tras una avería grave. Es obligatorio antes de montar un compresor nuevo cuando
+el anterior ha fallado.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Cuando un compresor gripa, las limaduras metálicas y los restos de goma se reparten por todo
+el circuito. Si solo se sustituye el compresor, esas partículas se acumulan en el nuevo en
+poco tiempo y lo destruyen, junto con la válvula de expansión y los componentes Multi-Flow.</p>
+<p>Por eso el lavado se hace <strong>partiendo el circuito en dos secciones</strong>, alta y baja, con el
+compresor y el filtro fuera: son los dos puntos donde la suciedad se retiene y no se
+arrastraría.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Circuito evacuado con estación recuperadora, conforme a la normativa vigente. Nunca se
+libera el refrigerante a la atmósfera.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <ul>
+<li>Estación recicladora y de carga con sistema de limpieza (<strong>flushing</strong>).</li>
+<li>Juego de adaptadores para puentear los componentes desmontados.</li>
+<li>Dispositivo de filtrado de partículas previo a la recuperación.</li>
+<li>Filtro deshidratador o vaso de expansión <strong>nuevo</strong>.</li>
+<li>Aceite PAO o PAG según especificación, y filtro de malla para el tubo de aspiración.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ol>
+<li>Evacuar el refrigerante con la estación recuperadora.</li>
+<li>Separar del circuito el <strong>compresor</strong> por una parte y el <strong>filtro o vaso de expansión</strong>
+   por otra.</li>
+<li>Sustituir la válvula de expansión por el adaptador previsto. Si el circuito lleva tubo u
+   orificio de expansión, <strong>extraerlo</strong> durante la limpieza.</li>
+<li>Lavar el circuito partido en dos secciones: la de baja y la de alta presión. La estación
+   inunda cada tramo con el propio refrigerante y lo recupera después.</li>
+<li>Montar de nuevo los elementos, <strong>sustituyendo el filtro deshidratador o el vaso de
+   expansión</strong> por uno nuevo.</li>
+<li>Añadir el aceite que recomienda el fabricante del vehículo.</li>
+<li>Instalar un <strong>tamiz de filtro en el tubo de aspiración</strong> del compresor.</li>
+<li>Girar la polea del compresor 10 veces a mano antes de arrancar.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Concepto</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aceite a añadir tras la limpieza</td>
+<td><strong>50 a 100 ml</strong> de PAO, según capacidad de la instalación</td>
+</tr>
+<tr>
+<td>Reposición si se sospecha falta de nivel</td>
+<td>50 a 75 ml</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Casos en que el lavado es <strong>necesario</strong>:</p>
+<ol>
+<li>Compresor gripado, con limaduras y restos de goma circulando.</li>
+<li>Circuito abierto durante mucho tiempo, por ejemplo tras un accidente.</li>
+<li>Aceite sucio, oscuro con sedimentos, descompuesto o con limaduras.</li>
+<li>Válvula de expansión obstruida, filtro saturado, condensador sucio por dentro, o acidez
+   detectada.</li>
+<li>Rotura de un componente con salida total del refrigerante.</li>
+<li>Reconversión de R-12 a R-134a — <strong>imperativo</strong> si el circuito lleva tubo de expansión, ya
+   que ese tubo es su único filtro.</li>
+</ol>
+<p>El error habitual es sustituir solo el compresor y recargar. Las partículas destruyen el
+compresor nuevo en poco tiempo y la reparación sale mucho más cara.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Fabricantes como el grupo VAG, Ford, GM/Sanden y Visteon <strong>exigen este lavado y solicitan
+informe impreso</strong> de la estación que lo ha realizado. Comprobar siempre la cantidad de
+aceite y la viscosidad del compresor antes de instalarlo, sea nuevo o remanufacturado.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>La evacuación del refrigerante se realiza con estación recuperadora adecuada según el
+Reglamento Europeo 2037/00 y el Real Decreto 833/88. El refrigerante recuperado, si no se
+recicla, se entrega a un gestor autorizado.</p>
+      </div>
+      <div class="caja advertencia">El problema se acentúa especialmente en los compresores de <strong>cilindrada variable</strong>, por su
+válvula de regulación: una partícula que la obstruya deja el compresor sin capacidad de
+regulación.</div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AA Automoción (Hella), apartado 13, págs. 122-126</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt32" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 32 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Lectura e interpretación de manómetros</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Diagnosticar el estado del circuito a partir de la pareja de lecturas de alta y baja
+presión. Es la herramienta de diagnóstico principal y la más rápida: antes de desmontar
+nada, las dos agujas ya dicen por dónde va la avería.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Cada componente del circuito impone una restricción o un aporte de presión conocidos. Una
+obstrucción, una fuga o un fallo de regulación desplazan las dos presiones de forma
+característica, por lo que <strong>el par de valores identifica la causa</strong> mejor que cualquiera de
+los dos por separado.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Temperatura exterior de referencia</td>
+<td><strong>30 °C</strong></td>
+</tr>
+<tr>
+<td>Régimen del motor</td>
+<td><strong>1.500 a 1.800 rpm</strong></td>
+</tr>
+<tr>
+<td>Equipo</td>
+<td>Máximo o reciclaje, ventilador del evaporador al máximo</td>
+</tr>
+<tr>
+<td>Tiempo de estabilización</td>
+<td>15 a 30 minutos</td>
+</tr>
+</tbody>
+</table>
+<p>La presión varía <strong>0,7 bar por cada 3,5 °C</strong> de temperatura ambiente. Con 23,5 °C la presión
+de referencia es de 5,6 bar. Sin corregir por temperatura, la lectura no significa nada.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Estación de carga con manómetros de alta y baja, termómetro de contacto, y spray enfriador o
+refrigerante líquido para las pruebas de contraste.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Baja</th>
+<th>Alta</th>
+<th>Diagnóstico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1,8 – 2,1 bar</td>
+<td>6 – 13 bar</td>
+<td>Cilindrada variable, <strong>correcto</strong></td>
+</tr>
+<tr>
+<td>2,2 – 0,8 bar</td>
+<td>8 – 20 bar</td>
+<td>Cíclico, <strong>correcto</strong> (0,8 solo con ambiente muy seco)</td>
+</tr>
+<tr>
+<td>0,5 – 0,8 bar</td>
+<td>6 – 8 bar</td>
+<td>Falta de refrigerante o válvula de alta semicerrada</td>
+</tr>
+<tr>
+<td>3 – 3,8 bar</td>
+<td>12 – 14 bar</td>
+<td>Bulbo de la válvula suelto</td>
+</tr>
+<tr>
+<td>3,5 – 4,5 bar</td>
+<td>10 – 14 bar</td>
+<td>Válvula de expansión demasiado abierta</td>
+</tr>
+<tr>
+<td>0 bar → vacío</td>
+<td>10 – 13 bar</td>
+<td>Válvula cerrada u obturada, o bulbo roto</td>
+</tr>
+<tr>
+<td>Sobre 0 bar</td>
+<td>4 – 6 bar</td>
+<td>Válvulas de baja tapadas, o gota de hielo en la expansión</td>
+</tr>
+<tr>
+<td>2,2 – 2,5 bar</td>
+<td>10 – 12 bar</td>
+<td>Válvula de baja comunicada</td>
+</tr>
+<tr>
+<td>Casi 0 bar</td>
+<td>7 – 10 bar</td>
+<td>Evaporador congelado</td>
+</tr>
+<tr>
+<td>2,5 – 2,7 bar</td>
+<td>16 – 18 bar</td>
+<td>Exceso de refrigerante</td>
+</tr>
+<tr>
+<td>2,3 – 2,5 bar</td>
+<td>Sobre 22 bar</td>
+<td>Electroventilador girando al revés</td>
+</tr>
+<tr>
+<td>2,3 – 2,8 bar</td>
+<td>Sobre 25 bar</td>
+<td>Electroventilador parado o condensador tapado</td>
+</tr>
+<tr>
+<td>4,5 – 5,7 bar</td>
+<td>21 – 27 bar</td>
+<td>Filtro deshumidificador obstruido</td>
+</tr>
+<tr>
+<td>1,8 bar</td>
+<td>12 – 15 bar</td>
+<td>No sale aire frío: trampillas de calefacción</td>
+</tr>
+<tr>
+<td>4,5 – 4,8 bar</td>
+<td>7 – 8 bar</td>
+<td>Tubos de aspiración y descarga invertidos</td>
+</tr>
+<tr>
+<td>4,5 – 6 bar</td>
+<td>Igual a la baja</td>
+<td>No conecta el compresor o patina el embrague</td>
+</tr>
+<tr>
+<td>0 bar</td>
+<td>0 bar</td>
+<td>Manómetros sin conectar, u obuses sin pinchar</td>
+</tr>
+<tr>
+<td>1 atm de depresión</td>
+<td>Aguja al tope</td>
+<td>Vacío efectuado: prueba de estanqueidad</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Tipo de compresor</th>
+<th>Alta</th>
+<th>Baja</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cíclico o de cilindrada fija</td>
+<td>10 a 20 bar</td>
+<td>0,8 a 2,2 bar</td>
+</tr>
+<tr>
+<td>Cilindrada variable</td>
+<td>7,5 a 13 bar</td>
+<td>1,8 a 2,2 bar</td>
+</tr>
+</tbody>
+</table>
+<p>Otras comprobaciones de un equipo correcto: temperatura interior en torno a <strong>22 °C</strong> tras
+30 minutos (con 36 °C exteriores y 60 % de humedad), salida del salpicadero entre <strong>8 y
+4 °C</strong>, circuito de alta uniformemente caliente y el de baja uniformemente frío.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Cuatro pares de casos dan lecturas parecidas y se distinguen así:</p>
+<ol>
+<li><strong>Falta de gas o válvula de alta semicerrada:</strong> añadir 50-100 g de refrigerante. Si los
+   manómetros no reaccionan, es la válvula.</li>
+<li><strong>Válvulas tapadas o gota de hielo:</strong> si es hielo, al parar y rearrancar el equipo el
+   síntoma desaparece, y reaparece al volver a pasar humedad.</li>
+<li><strong>Condensador sucio por dentro:</strong> regar su parte superior con agua. Si la aguja de alta
+   baja mientras dura el riego, está sucio internamente.</li>
+<li><strong>Válvulas del compresor comunicadas:</strong> enfriar el bulbo hasta 0 bar y parar el
+   compresor. Si la aguja de baja sube con rapidez, las presiones se comunican.</li>
+</ol>
+<p>El exceso de refrigerante es <strong>bastante más frecuente de lo que se imagina</strong>: un circuito de
+800 g al que se le han metido 1.100 g da baja alta y alta algo alta, con el ventilador
+funcionando sin parar.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Un equipo correcto debe mostrar además el visor libre de burbujas, y el presostato y el
+termostato conectando y desconectando el compresor según su tarado.</p>
+      </div>
+      <div class="caja advertencia">Para terminar de cargar por baja, hazlo <strong>en pequeñas dosis</strong>, con el motor al ralentí y sin
+acelerar. Nunca de golpe: el refrigerante líquido llegaría al compresor.</div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AA Automoción (Hella), apartados 10, 11 y 16, págs. 113-118 y 130-145</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt40" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 40 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Ciclo Frigorífico Con Válvula De Expansión</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Explicar el funcionamiento del ciclo frigorífico de climatización en vehículos que utilizan válvula de expansión como elemento estrangulador y filtro deshidratador en la línea de alta presión. Se aplica para comprender la transformación del estado del refrigerante y los saltos de presión y temperatura a lo largo del circuito cerrado.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El ciclo se basa en la transformación de presión y temperatura del refrigerante a lo largo de cuatro fases continuas: compresión, condensación, expansión y evaporación. El gas es comprimido elevando su presión y temperatura, se condensa cediendo calor al exterior, sufre una caída brusca de presión al pasar por la válvula de expansión enfriándose, y finalmente se evapora absorbiendo calor del habitáculo. El filtro deshidratador / depósito de líquido se sitúa en la zona de alta presión. En algunos modelos se incorpora un amortiguador antes del compresor para atenuar las oscilaciones del fluido e impedir que el compresor absorba refrigerante líquido.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Para que las presiones y temperaturas se estabilicen en los valores orientativos de referencia, se requieren las siguientes condiciones:</p>
+<ul>
+<li><strong>Tiempo de funcionamiento del equipo:</strong> 20 minutos.  </li>
+<li><strong>Temperatura ambiente:</strong> 20 °C.  </li>
+<li><strong>Régimen del motor:</strong> entre 1.500 y 2.000 rpm.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <ul>
+<li>Empalme de servicio para alta presión (HP).  </li>
+<li>Empalme de servicio para baja presión (LP).  </li>
+<li>Demás equipos específicos no documentados en fuentes.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>El desarrollo del concepto se divide en las cuatro fases del ciclo frigorífico:</p>
+<ol>
+<li><strong>Compresión (A):</strong> El compresor aspira el refrigerante gaseoso a baja presión y lo comprime elevando su presión y temperatura hacia el condensador.  </li>
+<li><strong>Condensación (B):</strong> El refrigerante cede calor en el condensador enfriándose y pasando a estado líquido a alta presión.  </li>
+<li><strong>Expansión (C):</strong> La válvula de expansión dosifica el paso del líquido provocando una caída brusca de presión y temperatura.  </li>
+<li><strong>Evaporación (D):</strong> El refrigerante absorbe calor del aire que atraviesa el evaporador, pasando nuevamente a estado gaseoso a baja presión.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Parámetro / Fase</th>
+<th>Presión</th>
+<th>Temperatura</th>
+<th>Condiciones de validez</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Presión en reposo (20 °C)</td>
+<td>Aprox. 4,7 bares</td>
+<td>20 °C</td>
+<td>Motor parado</td>
+</tr>
+<tr>
+<td>Presión en reposo (30 °C)</td>
+<td>Aprox. 6,6 bares</td>
+<td>30 °C</td>
+<td>Motor parado</td>
+</tr>
+<tr>
+<td>Fase A: Compresión</td>
+<td>Aprox. 14 bares</td>
+<td>Aprox. 65 °C</td>
+<td>20 min estabilización, 20 °C ambiente, 1.500-2.000 rpm</td>
+</tr>
+<tr>
+<td>Fase B: Condensación</td>
+<td>Aprox. 14 bares</td>
+<td>Enfriamiento unos 10 °C</td>
+<td>20 min estabilización, 20 °C ambiente, 1.500-2.000 rpm</td>
+</tr>
+<tr>
+<td>Fase C: Expansión</td>
+<td>1,5 a 2 bares</td>
+<td>-5 a 0 °C</td>
+<td>20 min estabilización, 20 °C ambiente, 1.500-2.000 rpm</td>
+</tr>
+<tr>
+<td>Fase D: Evaporación</td>
+<td>1,5 a 2 bares</td>
+<td>-5 a 0 °C</td>
+<td>20 min estabilización, 20 °C ambiente, 1.500-2.000 rpm</td>
+</tr>
+<tr>
+<td><em>Factores de variación:</em> Las presiones y temperaturas dependen del estado operativo momentáneo, el tipo de compresor (fijo o variable), la temperatura ambiente, las condiciones de montaje y el tipo de vehículo.</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Si el compresor absorbe refrigerante en fase líquida, se produce el golpe de ariete, pudiendo destruir el compresor. Para evitarlo en este sistema, se puede incorporar un amortiguador antes del compresor. Demás análisis de averías no documentados en fuentes.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobación de las presiones de trabajo en los empalmes LP y HP tras 20 minutos de funcionamiento a 1.500-2.000 rpm y 20 °C ambiente, verificando que la baja presión se mantenga entre 1,5 y 2 bares y la alta presión en torno a 14 bares.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT40_01</code> Esquema del circuito frigorífico con válvula de expansión mostrando compresor, condensador, filtro deshidratador en alta presión, válvula de expansión, evaporador, amortiguador y empalmes de servicio — Fuente: 5. Sistemas de Aire Acondicionado.pdf, pág. 44</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">5. Sistemas de Aire Acondicionado.pdf, pág. 44-46</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt41" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 41 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Ciclo Frigorífico Con Estrangulador (Tubo Calibrado)</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Describir el principio frigorífico de climatización en sistemas equipados con tubo calibrado (estrangulador) de sección fija y filtro acumulador/colector en el lado de baja presión. Se aplica en sistemas de caudal de refrigerante no variable mediante válvula.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El rociado del gas hacia el evaporador se realiza mediante un tubo calibrado sin posibilidad de variación de caudal. A diferencia de los sistemas con válvula de expansión, el depósito colector / filtro deshidratador se ubica en la zona de baja presión. Esta disposición garantiza que el compresor aspire el refrigerante en fase gaseosa y evita el golpe de ariete. Para asegurar la evaporación del líquido residual, el filtro (de mayor tamaño) se sitúa en una zona caliente del compartimento motor y la salida de gas hacia el compresor se coloca en la parte alta del filtro. La presión y temperatura de trabajo en el circuito de alta son superiores a las de un sistema con válvula de expansión.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Tiempo de estabilización:</strong> 20 minutos de funcionamiento.  </li>
+<li><strong>Temperatura ambiente:</strong> 20 °C.  </li>
+<li><strong>Régimen del motor:</strong> 1.500 a 2.000 rpm.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <ul>
+<li>Estranguladores de distintos colores según el diámetro del orificio calibrado.  </li>
+<li>Empalmes de servicio para alta y baja presión.  </li>
+<li>Demás equipos no documentados en fuentes.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>Evolución de las cuatro fases en el sistema con estrangulador:</p>
+<ol>
+<li><strong>Compresión (A):</strong> El compresor aspira gas del acumulador y lo impulsa a alta presión hacia el condensador.  </li>
+<li><strong>Condensación (B):</strong> El refrigerante cede calor en el condensador, saliendo a una temperatura aproximada de 24 °C en la línea de alta.  </li>
+<li><strong>Expansión (C):</strong> El paso por el orificio fijo del estrangulador reduce la presión y genera un rociado a -4 °C (alcanzando unos 4 °C en el tramo de entrada).  </li>
+<li><strong>Evaporación (D):</strong> El refrigerante atraviesa el evaporador y pasa al filtro acumulador de baja presión antes de retornar en fase gaseosa al compresor.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Parámetro / Fase</th>
+<th>Presión</th>
+<th>Temperatura</th>
+<th>Condiciones de validez</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fase A: Compresión</td>
+<td>Aprox. 20 bares</td>
+<td>Aprox. 70 °C</td>
+<td>20 min estabilización, 20 °C ambiente, 1.500-2.000 rpm</td>
+</tr>
+<tr>
+<td>Fase B: Condensación</td>
+<td>Aprox. 20 bares</td>
+<td>Enfriamiento unos 10 °C (salida a 24 °C)</td>
+<td>20 min estabilización, 20 °C ambiente, 1.500-2.000 rpm</td>
+</tr>
+<tr>
+<td>Fase C: Expansión</td>
+<td>Aprox. 1,5 bares</td>
+<td>-4 °C (paso previo a 4 °C)</td>
+<td>20 min estabilización, 20 °C ambiente, 1.500-2.000 rpm</td>
+</tr>
+<tr>
+<td>Fase D: Evaporación</td>
+<td>Aprox. 1,5 bares</td>
+<td>-4 °C</td>
+<td>20 min estabilización, 20 °C ambiente, 1.500-2.000 rpm</td>
+</tr>
+<tr>
+<td><em>Comparativa directa con sistema de válvula de expansión:</em> La presión en alta es superior (20 bares frente a 14 bares) y la temperatura tras la compresión es mayor (70 °C frente a 65 °C).</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Montar un estrangulador con un diámetro de orificio incorrecto (identificado por su color) despenaliza el rendimiento por caudal inadecuado.  </li>
+<li>Si el depósito colector se enfría en exceso o no recibe suficiente calor del motor, podría llegar líquido al compresor produciendo golpe de ariete.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Medición de la alta presión (debe situarse próxima a 20 bares) y de la baja presión (alrededor de 1,5 bares) en las tomas de servicio tras 20 minutos de prueba a 1.500-2.000 rpm.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT41_01</code> Esquema del circuito frigorífico con estrangulador indicando compresor, conmutadores de presión, condensador, estrangulador, evaporador y depósito colector en baja presión — Fuente: 5. Sistemas de Aire Acondicionado.pdf, pág. 45</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">5. Sistemas de Aire Acondicionado.pdf, pág. 44-46</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt42" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 42 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Regulación Y Control Básico Del Sistema De Climatización</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Describir la lógica de control eléctrico y electrónico que gobierna el acoplamiento y la protección del sistema de aire acondicionado. Se aplica para comprender cómo interactúan los sensores, relés, interruptores y la UCE del motor para autorizar el funcionamiento del circuito frigorífico.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Además del circuito hidráulico, el climatizador requiere una serie de elementos eléctricos y electrónicos de control. El sistema condiciona el funcionamiento del compresor al cumplimiento estricto de parámetros de seguridad (refrigeración adecuada del motor, ventilación del evaporador para evitar congelación y marcha estable del motor de combustión).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Accionamiento del interruptor del AC por el conductor.  </li>
+<li>Funcionamiento de la turbina de aire fresco como mínimo a velocidad lenta.  </li>
+<li>Motor térmico en marcha con ralentí regular.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>Secuencia y lógica de funcionamiento de la regulación:</p>
+<ol>
+<li><strong>Conexión del usuario e impulso de aire:</strong> El interruptor activa el sistema, exigiendo que la turbina gire al menos a velocidad lenta. La turbina fuerza el paso de aire por el evaporador para enfriarlo y deshidratarlo.  </li>
+<li><strong>Autorización por UCE de motor:</strong> La UCE del motor conecta el compresor solo cuando el motor gira regularmente al ralentí, y lo desconecta en aceleraciones bruscas.  </li>
+<li><strong>Gestión de la compresión:</strong> La UCE o la electrónica activa el acoplamiento magnético del compresor (o la electroválvula en compresores variables).  </li>
+<li><strong>Control de presiones y ventilación:</strong> El conmutador de presión (trinaria o MAP) mide la alta presión para gestionar el arranque y parada del compresor. El electroventilador de refrigeración arranca a velocidad lenta al encender el AC y conmuta a una velocidad más rápida si la presión sube. En caso de sobrepresión puntual, la válvula de descarga libera el exceso.  </li>
+<li><strong>Protecciones de seguridad:</strong> La sonda del evaporador desconecta el compresor ante el riesgo de hielo en el evaporador (en sistemas de compresor fijo). La sonda NTC del motor desconecta el AC si la temperatura del motor sobrepasa los límites de seguridad.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <p>Elemento / Condición,Parámetro de activación / Lógica<br />
+Turbina de aire fresco,Mínimo en velocidad lenta para permitir la conexión eléctrica del AC 9<br />
+Electroventilador de refrigeración,Vel. lenta activa al encender el AC; vel. rápida activa al subir la presión en el circuito 10<br />
+UCE de motor,Conecta tras estabilizar ralentí; desconecta en aceleración brusca 12</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Si la turbina de aire fresco no funciona, el compresor no se acopla para evitar la congelación del evaporador.  </li>
+<li>Si el motor alcanza una temperatura crítica, el sistema corta el AC para priorizar la refrigeración del motor de combustión.  </li>
+<li>En caso de sobrepresión peligrosa puntual, actúa la válvula de descarga del compresor.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobar el acoplamiento inmediato del embrague magnético al presionar el botón de AC (con turbina en velocidad 1 o superior), el arranque simultáneo del electroventilador a velocidad lenta y su desacoplamiento al acelerar a fondo o simular sobretemperatura del motor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT42_01</code> Esquema de la configuración básica para la regulación del sistema con 11 elementos de control — Fuente: 5. Sistemas de Aire Acondicionado.pdf, pág. 46</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">5. Sistemas de Aire Acondicionado.pdf, pág. 44-46</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt43" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 43 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Efectos Climatológicos Y Confort Térmico En El Habitáculo</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Analizar los efectos físicos y fisiológicos de la temperatura y la humedad en los ocupantes de un vehículo, determinando las condiciones de confort y seguridad activa. Se aplica para justificar la necesidad del sistema de climatización en el acondicionamiento, depuración y deshidratación del aire del habitáculo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El ser humano requiere un entorno dentro de márgenes específicos de temperatura y humedad para mantener el confort, la productividad y la seguridad contra accidentes. El calor acumulado por radiación solar o altas temperaturas exteriores constituye una carga corporal que eleva la transpiración, la temperatura corporal y la frecuencia cardíaca, reduciendo la oxigenación cerebral y disminuyendo la concentración y la capacidad de reacción del conductor. La climatización disminuye estos riesgos enfriando, deshidratando y depurando el aire mediante el evaporador y filtros específicos.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <ul>
+<li>Evaporador del circuito frigorífico.  </li>
+<li>Filtro antipolen.  </li>
+<li>Filtro de carbón activo.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>El desarrollo del concepto de confort térmico y sus efectos fisiológicos comprende:</p>
+<ol>
+<li><strong>Zonas de confort y curvas de agrado:</strong> La zona agradable (Zona A) se sitúa entre los 20 °C y 22 °C. Con temperaturas exteriores extremas se requieren caudales de aire masivos para compensar las cargas térmicas.  </li>
+<li><strong>Efecto de la radiación solar y la humedad:</strong> Bajo radiación solar intensa, la temperatura interior del habitáculo puede subir más de 15 °C respecto a la ambiental, afectando mayoritariamente a la zona de la cabeza. Valores altos de humedad relativa multiplican la carga corporal.  </li>
+<li><strong>Pérdida de capacidades perceptivas:</strong> El incremento térmico en el habitáculo de 25 °C a 35 °C reduce en un 20% la capacidad perceptiva y la facultad combinatoria del ser humano, lo que equivale en falta de concentración a una tasa de alcoholemia de 0,5 g/l de sangre.  </li>
+<li><strong>Mecanismo de depuración y deshidratación:</strong> El aire impulsado por la turbina atraviesa las aletas frías del evaporador, condensando su humedad y reteniendo impurezas. La incorporación de filtros antipolen y de carbón activo incrementa la depuración, resultando ventajoso para alérgicos.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Parámetro / Condición</th>
+<th>Valor de referencia</th>
+<th>Condiciones de validez / Notas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Temp. habitáculo (Cabeza)</td>
+<td>23 °C (CON clima) vs 42 °C (SIN clima)</td>
+<td>1 hora circulando, 30 °C exterior, radiación solar</td>
+</tr>
+<tr>
+<td>Temp. habitáculo (Tórax)</td>
+<td>24 °C (CON clima) vs 40 °C (SIN clima)</td>
+<td>1 hora circulando, 30 °C exterior, radiación solar</td>
+</tr>
+<tr>
+<td>Temp. habitáculo (Pies)</td>
+<td>28 °C (CON clima) vs 35 °C (SIN clima)</td>
+<td>1 hora circulando, 30 °C exterior, radiación solar</td>
+</tr>
+<tr>
+<td>Caudal y temp. a -20 °C exterior</td>
+<td>Temp. int: 28 °C / Caudal: 8 kg/min</td>
+<td>Climatización en temperatura ambiente muy baja</td>
+</tr>
+<tr>
+<td>Caudal y temp. a 10 °C exterior</td>
+<td>Temp. int: 21 °C / Caudal: 4 kg/min</td>
+<td>Climatización en temperatura ambiente media</td>
+</tr>
+<tr>
+<td>Caudal y temp. a 40 °C exterior</td>
+<td>Temp. int: 23 °C / Caudal: 10 kg/min</td>
+<td>Climatización en temperatura ambiente muy alta</td>
+</tr>
+<tr>
+<td>Margen confortable (Zona A)</td>
+<td>20 °C a 22 °C</td>
+<td>Zona A en gráfica de agrado</td>
+</tr>
+<tr>
+<td>Pérdida perceptiva (25 °C a 35 °C)</td>
+<td>Disminución del 20% en capacidad perceptiva</td>
+<td>Equivale a 0,5 g/l de alcoholemia en sangre</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Confundir la climatización únicamente con un elemento de confort y no de seguridad activa.  </li>
+<li>Intentar enfriar el habitáculo abriendo ventanas o elevando al máximo la turbina sin activar el AC, lo que genera corrientes molestas, ruidos y entrada de polen y gases de escape sin reducir la humedad.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobación de la eficacia del acondicionamiento midiendo la bajada de temperatura en los aireadores centrales y la ausencia de vaho o humedad retenida en el parabrisas.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>Prevención de accidentes de tráfico provocados por el estrés climatológico (área C de sobrecarga) conforme a los estudios científicos citados de la Organización Mundial de la Salud (OMS).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT43_01</code> Gráfica de curvas de agrado relacionando la temperatura interior, temperatura ambiental y caudal de aire, delimitando los márgenes agradable, de solicitud y sobrecarga climatológica — Fuente: 13. Climatización Electrónica.pdf, pág. 98</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">13. Climatización Electrónica.pdf, pág. 98-113</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt44" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 44 <span class="subtipo">Procedimiento</span></div>
+    <div class="nota-body proceso">
+      <h1>Regulación Manual Del Sistema De Climatización</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Definir la secuencia de trabajo y la lógica de accionamiento manual de la temperatura, caudal y distribución del aire en sistemas de aire acondicionado convencionales. Se aplica durante la intervención y comprobación de mandos mecánicos y de ventilación en taller.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>En el climatizador manual, el movimiento de las trampillas de mezcla y distribución se realiza mecánicamente mediante cables rígidos unidos al panel de mandos. El conductor actúa como la propia Unidad de Control y actuador del sistema, evaluando subjetivamente la temperatura del habitáculo y corrigiendo manualmente el caudal de la turbina y la mezcla de aire frío/caliente para compensar las fluctuaciones ambientales y de marcha.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Motor térmico en marcha.  </li>
+<li>Circuito frigorífico y sistema de calefacción operativos.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <ul>
+<li>Panel de mandos manual con selectores giratorios o palancas.  </li>
+<li>Cables de accionamiento mecánico tipo Bowden.  </li>
+<li>Conmutador eléctrico de velocidades de la turbina (4 posiciones).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>El procedimiento de ajuste manual por parte del conductor/técnico comprende los siguientes pasos:</p>
+<ol>
+<li><strong>Selección del caudal de aire:</strong> Accionar el conmutador del ventilador seleccionando una de las 4 velocidades disponibles en la turbina de aire fresco.  </li>
+<li><strong>Tratamiento primario en el evaporador:</strong> El aire exterior entra impulsado por la turbina y atraviesa el evaporador, donde se enfría, deshidrata y depura.  </li>
+<li><strong>Mezcla de temperatura:</strong> Girar el mando de temperatura para mover el cable de la trampilla de mezcla, desviando una fracción del aire frío a través del radiador de calefacción hasta alcanzar el nivel térmico deseado.  </li>
+<li><strong>Distribución del flujo:</strong> Accionar el mando de distribución para posicionar mecánicamente las trampillas hacia la luneta/deshielo, difusores centrales o zona de los pies.  </li>
+<li><strong>Reajuste continuo:</strong> Ante variaciones en la velocidad de marcha, la temperatura exterior o la temperatura del líquido refrigerante del motor, reajustar manualmente la posición de las trampillas y el caudal.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Elemento / Parámetro</th>
+<th>Valor de referencia</th>
+<th>Condiciones de validez</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Velocidades de turbina</td>
+<td>4 velocidades discretas</td>
+<td>Selección manual en el panel de mandos</td>
+</tr>
+<tr>
+<td>Accionamiento de trampillas</td>
+<td>Transmisión por cables</td>
+<td>Conexión directa desde selectores mecánicos</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Fluctuación constante de la temperatura en el habitáculo provocada por no reajustar los mandos ante cambios en el régimen del motor o la velocidad del vehículo.  </li>
+<li>Agarrotamiento o desajuste de los cables Bowden, impidiendo el cierre completo de la trampilla de calefacción o la correcta selección de salidas.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobar el despliegue mecánico progresivo y sin durezas de las trampillas en todo su recorrido al girar los mandos, verificando el cambio inmediato en la velocidad del motor de la turbina en sus 4 posiciones.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT44_01</code> Esquema funcional de un equipo de aire acondicionado con regulación manual mostrando el paso del aire por el filtro, turbina, evaporador, radiador y trampillas mecánicas — Fuente: 13. Climatización Electrónica.pdf, pág. 100</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">13. Climatización Electrónica.pdf, pág. 98-113</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt45" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 45 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Regulación Automática Y Bizona De Climatización</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Explicar el funcionamiento, la arquitectura electrónica y la lógica de regulación de la temperatura, caudal y distribución en climatizadores automáticos monozona y bizona. Se aplica para el análisis funcional y diagnosis de sistemas gestionados por UCE y servomotores.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El climatizador automático libera al conductor de realizar ajustes manuales. La Unidad de Control Electrónico (UCE) procesa las señales de los sensores térmicos, fotosensores y la red CAN-Bus, calcula los valores teóricos programados y gestiona servomotores con potenciómetros de realimentación y el regulador de la turbina. En sistemas bizona, la UCE regula de forma independiente los servomotores de mezcla izquierdo y derecho, combinando aire frío y caliente según las demandas de cada ocupante.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Tensión de alimentación de encendido ("borne 15").  </li>
+<li>Selección de la temperatura deseada en el panel de mandos.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <ul>
+<li>UCE del climatizador e interfaz del panel de mandos.  </li>
+<li>Servomotores paso a paso con potenciómetros de posición integrados.  </li>
+<li>Polímetro / Osciloscopio / Equipo de diagnosis OBD con protocolo CAN-Bus.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>El desarrollo del concepto y la estructura del sistema abarca:</p>
+<ul>
+<li><strong>Captación de datos:</strong> La UCE recibe señales analógicas de sensores de temperatura (exterior, aire aspirado, habitáculo, difusor central, pies, evaporador) y fotosensores de radiación solar.  </li>
+<li><strong>Procesamiento y comunicación CAN-Bus:</strong> La UCE intercambia información por el Bus CAN de confort con la UCE del motor, UCE de red de a bordo, Cuadro de instrumentos y ABS.  </li>
+<li><strong>Estrategia de regulación térmica:</strong>  </li>
+<li><em>Ambiente frío:</em> Dirige la totalidad del aire hacia el radiador de calefacción.  </li>
+<li><em>Ambiente caliente:</em> Hace pasar el aire por el evaporador para enfriarlo, deshidratarlo y depurarlo.  </li>
+<li><em>Ambiente intermedio:</em> Combina en proporciones calculadas el paso por el evaporador y el radiador de calefacción.  </li>
+<li><strong>Regulación bizona (e independización por zonas):</strong> Servomotores independientes abren o cierran progresivamente las chapaletas de temperatura izquierda y derecha. En vehículos de alta gama existen unidades traseras para regular hasta 4 zonas independientes.  </li>
+<li><strong>Realimentación de actuadores:</strong> Cada servomotor transmite su posición real a la UCE mediante un potenciómetro interno.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Parámetro / Componente</th>
+<th>Valor de referencia / Lógica</th>
+<th>Condiciones de sustitución o validez</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alimentación de sensores</td>
+<td>5,0 V (tensión continua)</td>
+<td>Encendido conectado ("borne 15")</td>
+</tr>
+<tr>
+<td>Señal fotosensor con luz intensa</td>
+<td>Elevación de tensión hasta aprox. 3,0 V</td>
+<td>Verificación con osciloscopio y fuente de luz</td>
+</tr>
+<tr>
+<td>Rango sensores difusores NTC</td>
+<td>-10 °C a +85 °C</td>
+<td>Medición en difusor central y pies</td>
+</tr>
+<tr>
+<td>Valor sustitutivo temp. exterior</td>
+<td>10 °C (fijo)</td>
+<td>Fallo simultáneo de los dos sensores exteriores</td>
+</tr>
+<tr>
+<td>Valor sustitutivo temp. interior</td>
+<td>22 °C a 26 °C (fijo)</td>
+<td>Ausencia de señal del sensor de temp. interior</td>
+</tr>
+<tr>
+<td>Valor sustitutivo fotosensor</td>
+<td>Radiación intermedia dentro de la escala</td>
+<td>Avería del fotosensor o de ambos fotodiodos</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li><strong>Fallo de sensores de difusor:</strong> Si falla uno de los sensores (central o pies), el climatizador bloquea la regulación automática y mantiene fijos los parámetros existentes en el momento de la avería.  </li>
+<li><strong>Sustitución de parabrisas:</strong> Cambiar un parabrisas atérmico por uno normal altera la lectura del fotosensor de radiación solar, provocando deficiencias en el cálculo térmico.  </li>
+<li><strong>Avería del sensor de evaporador:</strong> Fuerza a la UCE a regular el compresor exclusivamente por la señal del sensor MAP de alta presión, limitando el rendimiento para prevenir la congelación.  </li>
+<li><strong>Discrepancia entre fotodiodos:</strong> En fotosensores dobles, si falla un fotodiodo la UCE adopta la señal del fotosensor operativo.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobación mediante diagnóstico OBD del registro de averías (DTC) en la UCE. Verificación en bloques de valores de medida de las lecturas térmicas y del porcentaje de posición de potenciómetros en los servomotores.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>Registro automático de averías en la memoria no volátil de la UCE para la diagnosis según estándares OBD.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT45_01</code> Esquema de componentes y flujo de aire en un climatizador bizona mostrando servomotores con potenciómetro, chapaletas independientes y sensores de temperatura — Fuente: 13. Climatización Electrónica.pdf, pág. 111</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">13. Climatización Electrónica.pdf, pág. 98-113</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt46" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 46 <span class="subtipo">Procedimiento</span></div>
+    <div class="nota-body proceso">
+      <h1>Sistema De Recirculación Y Control De Calidad Del Aire</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Establecer el procedimiento de funcionamiento del sistema de recirculación manual y de la recirculación automática gestionada por el sensor de calidad del aire (SnO2). Se aplica para acelerar el acondicionamiento térmico del habitáculo y evitar la entrada de contaminantes y gases de escape.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>La recirculación aísla la entrada de aire exterior. El sensor de calidad del aire utiliza un semiconductor de óxido mixto de estaño (SnO2) que opera a 350 ^{°}C. La absorción o liberación de partículas de oxígeno al entrar en contacto con contaminantes atmosféricos modifica la resistencia eléctrica del semiconductor. La electrónica interna del sensor traduce estas variaciones en una señal digital hacia la UCE del climatizador para cerrar automáticamente la trampilla.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Encendido conectado y climatizador activado.  </li>
+<li>Motor a temperatura de servicio con tensión de red estable.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <ul>
+<li>Sensor de calidad del aire (SnO2) ubicado en la toma de entrada de aire.  </li>
+<li>Servomotor de la chapaleta de recirculación / retención de aire.  </li>
+<li>Conmutador de marcha atrás conectado a la UCE de red de a bordo.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>El funcionamiento del sistema de recirculación comprende la siguiente secuencia de eventos:</p>
+<ol>
+<li><strong>Activación manual:</strong> El usuario acciona el pulsador del panel de mandos, enviando una señal a la UCE para activar el servomotor o la válvula de vacío de la chapaleta.  </li>
+<li><strong>Protección automática en marcha atrás:</strong> Al engranar la marcha atrás, el conmutador de la caja de cambios envía una señal a la UCE de red de a bordo, la cual transmite la información por el CAN-Bus de confort a la UCE del climatizador para cerrar la entrada de aire exterior y evitar la succión de gases de escape.  </li>
+<li><strong>Detección de gases oxidables:</strong> Gases como el monóxido de carbono (CO), hexano (C6H14), benceno (C6H6), n-heptano (C7H16) y vapores de combustible reaccionan liberando oxígeno del SnO2, reduciendo su resistencia eléctrica. La electrónica envía una señal digital y la UCE activa la recirculación.  </li>
+<li><strong>Detección de gases reducibles:</strong> Gases como los óxidos de nitrógeno (NO_x), dióxido de azufre (SO2), sulfuro de carbono (CS2) y ácido sulfhídrico (H2S) reaccionan cediendo oxígeno al SnO2, aumentando su resistencia eléctrica. La electrónica detecta la variación y ordena el cierre de la trampilla.  </li>
+<li><strong>Desconexión temporal:</strong> Transcurrido el tiempo de contaminación o de uso manual, la UCE abre de nuevo la entrada de aire fresco.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Parámetro / Componente</th>
+<th>Valor de referencia</th>
+<th>Condiciones de validez</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Temperatura de trabajo del sensor SnO2</td>
+<td>Aprox. 350 °C</td>
+<td>Caldeo interno del semiconductor de estaño</td>
+</tr>
+<tr>
+<td>Potencia absorbida por el sensor</td>
+<td>0,5 W</td>
+<td>Consumo de la electrónica y caldeo</td>
+</tr>
+<tr>
+<td>Reacción con gases oxidables</td>
+<td>Disminución de la resistencia eléctrica</td>
+<td>Contacto con CO, hexano, benceno, heptano</td>
+</tr>
+<tr>
+<td>Reacción con gases reducibles</td>
+<td>Aumento de la resistencia eléctrica</td>
+<td>Contacto con NOx, SO2, H2S, CS2 43, 44</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li><strong>Uso prolongado no controlado:</strong> Mantener la recirculación activa de forma ininterrumpida produce el viciamiento del aire interior y el empañamiento rápido de los cristales del habitáculo por acumulación de humedad corporal.  </li>
+<li><strong>Fallo del interruptor de marcha atrás:</strong> En caso de corte o ausencia de señal, la función no se realiza y la entrada de aire exterior se mantiene abierta al circular marcha atrás.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Verificar el cierre automático inmediato de la chapaleta de recirculación al engranar la marcha atrás o al exponer la toma de aire a un gas de prueba contaminante, comprobando la posterior apertura al restablecer el aire limpio.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>Prevención de la intoxicación de los ocupantes por monóxido de carbono (CO) y dióxido de nitrógeno (NO_x) procedentes de los escapes de otros vehículos.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT46_01</code> Esquema del sensor de calidad del aire mostrando la zona de medición de dióxido de estaño, la electrónica de control y las reacciones de gases oxidables y reducibles — Fuente: 13. Climatización Electrónica.pdf, pág. 112 y 113</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">13. Climatización Electrónica.pdf, pág. 98-113</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt47" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 47 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Gestión De Señales Suplementarias Vía Can-Bus</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Describir la integración y el efecto de las magnitudes físicas del vehículo (revoluciones del motor, velocidad de marcha, tiempo de parada y carga del alternador) en la regulación de la climatización electrónica. Se aplica para comprender las funciones de protección y confort coordinadas entre la UCE del climatizador y otras UCEs.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Para lograr una regulación de temperatura precisa e interactuar con la dinámica del vehículo, la UCE del climatizador procesa informaciones transmitidas por la red CAN-Bus de confort. Estas señales permiten optimizar el caudal según la velocidad (compensando la presión dinámica), proteger la batería y el alternador frente a sobrecargas eléctricas, evitar enfriamientos térmicos desagradables tras paradas cortas y asegurar la máxima potencia del motor térmico en situaciones de fuerte aceleración.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Red multiplexada CAN-Bus de confort totalmente operativa.  </li>
+<li>Motor térmico en marcha con comunicación de UCEs activa.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <ul>
+<li>UCE del climatizador, UCE del motor, UCE de red de a bordo y Cuadro de instrumentos.  </li>
+<li>Analizador de red CAN-Bus / Osciloscopio / Equipo de diagnosis OBD.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>La gestión de las señales suplementarias se articula según la siguiente lógica:</p>
+<ol>
+<li><strong>Señal de tiempo parado (T_p):</strong> Mide el tiempo desde la desconexión del encendido hasta el nuevo arranque. En paradas cortas, la UCE memoriza la temperatura exterior previa para evitar que el calor radiado en el vano motor sobreenfríe el habitáculo en el rearranque.  </li>
+<li><strong>Señal de velocidad de marcha (v):</strong> Transmitida desde el ABS/cuadro de instrumentos a la UCE del climatizador. Al aumentar la velocidad del vehículo, la UCE reduce progresivamente la sección de paso de la chapaleta de velocidad para mantener un caudal de entrada constante.  </li>
+<li><strong>Señal de régimen de revoluciones (n):</strong> Emitida por la UCE del motor. Condiciona el acoplamiento del compresor: no permite su conexión si el motor está parado o si el ralentí no está estabilizado. Asimismo, al detectar una aceleración a fondo (kick-down), desacopla el compresor durante unos segundos para entregar la máxima potencia del motor.  </li>
+<li><strong>Señal de carga del alternador (Borne L / +/DF):</strong> Elaborada por el alternador hacia la UCE de red de a bordo. Si la carga eléctrica supera el límite máximo prefijado, la UCE de red de a bordo vuelca un mensaje al CAN-Bus; la UCE del climatizador desconecta el compresor y los electroventiladores para evitar la descarga de la batería.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Señal / Parámetro</th>
+<th>Emisor / Origen</th>
+<th>Efecto en la UCE del climatizador</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiempo parado (T_p)</td>
+<td>Cuadro de instrumentos / UCE Clima</td>
+<td>Mantiene valores térmicos previos para evitar sobreenfriamiento</td>
+</tr>
+<tr>
+<td>Velocidad de marcha (v)</td>
+<td>ABS / Cuadro de instrumentos</td>
+<td>Ajusta chapaleta de velocidad para constante caudal</td>
+</tr>
+<tr>
+<td>Revoluciones motor (n)</td>
+<td>UCE del motor</td>
+<td>Acopla en ralentí estable; desacopla en aceleración a fondo</td>
+</tr>
+<tr>
+<td>Carga alternador (L / DF)</td>
+<td>Alternador -&gt; UCE Red de a bordo</td>
+<td>Desconecta compresor y ventiladores ante límite de carga</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li><strong>Ausencia de señal de carga del alternador:</strong> La función de protección no se ejecuta, quedando desactivada sin función de emergencia.  </li>
+<li><strong>Ausencia de señal de régimen del motor:</strong> Impide la conexión del acoplamiento magnético o electroválvula del compresor.  </li>
+<li><strong>Fallo de señal de velocidad:</strong> Ocasiona fluctuaciones molestas en el caudal de aire que entra al habitáculo a altas velocidades.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobar mediante el equipo de diagnosis en la UCE del climatizador la recepción en tiempo real de los parámetros de revoluciones del motor, velocidad del vehículo, estado de carga del alternador y tiempo de parada.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>Priorización de la disponibilidad de potencia del motor térmico en maniobras de adelantamiento y protección del sistema eléctrico del vehículo contra descargas severas.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT47_01</code> Diagrama de bloques de intercambio de datos entre la UCE del climatizador, UCE del motor, Cuadro de instrumentos y UCE de red de a bordo a través del CAN-Bus — Fuente: 13. Climatización Electrónica.pdf, pág. 109</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">13. Climatización Electrónica.pdf, pág. 98-113</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="pie">
+    34 notas técnicas · generado el 17/09/2026.
+    Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
+  </div>
+
+</main>
+
+<script>
+(function(){
+  var input    = document.getElementById('buscador');
+  var contador = document.getElementById('contador-resultados');
+  var lista    = document.getElementById('lista-resultados');
+  var sinRes   = document.getElementById('sin-resultados');
+  var secciones= Array.prototype.slice.call(document.querySelectorAll('main section'));
+  var originales = secciones.map(function(s){ return s.innerHTML; });
+
+  function irA(id){
+    var el = document.getElementById(id);
+    if(el) el.scrollIntoView({ behavior:'smooth', block:'start' });
+  }
+
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href^="#"]');
+    if(!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if(document.getElementById(id)){ e.preventDefault(); irA(id); }
+  });
+
+  function esc(s){ return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
+  var mapa = {
+    a:'aáàäâãAÁÀÄÂÃ', e:'eéèëêEÉÈËÊ', i:'iíìïîIÍÌÏÎ',
+    o:'oóòöôõOÓÒÖÔÕ', u:'uúùüûUÚÙÜÛ', n:'nñNÑ', c:'cçCÇ'
+  };
+  function patron(str){
+    return str.split('').map(function(ch){
+      var k = ch.toLowerCase();
+      return mapa[k] ? '['+mapa[k]+']' : esc(ch);
+    }).join('');
+  }
+
+  function resaltar(nodo, re){
+    Array.prototype.slice.call(nodo.childNodes).forEach(function(c){
+      if(c.nodeType===3){
+        re.lastIndex = 0;
+        if(re.test(c.textContent)){
+          var sp = document.createElement('span');
+          sp.innerHTML = c.textContent.replace(re,'<mark>$1</mark>');
+          c.parentNode.replaceChild(sp,c);
+        }
+      } else if(c.nodeType===1 && !/^(script|style)$/i.test(c.tagName)){
+        resaltar(c,re);
+      }
+    });
+  }
+
+  function limpiar(){
+    secciones.forEach(function(s,i){ s.innerHTML=originales[i]; });
+  }
+
+  function buscar(){
+    var t = input.value.trim();
+    limpiar(); lista.innerHTML='';
+    if(t.length < 2){ contador.textContent=''; sinRes.style.display='none'; return; }
+
+    var re = new RegExp('('+patron(t)+')','gi');
+    var total = 0;
+
+    secciones.forEach(function(sec){
+      var m = sec.textContent.match(re);
+      if(m && m.length){
+        total += m.length;
+        resaltar(sec, re);
+        var h = sec.querySelector('h1,h2,h3,h4');
+        var txt = h ? h.textContent : sec.id;
+        var li = document.createElement('li');
+        var a  = document.createElement('a');
+        a.href = '#'+sec.id;
+        a.textContent = txt+' ('+m.length+')';
+        li.appendChild(a); lista.appendChild(li);
+      }
+    });
+
+    if(total===0){
+      contador.textContent='0 coincidencias';
+      sinRes.style.display='block';
+    } else {
+      contador.textContent = total+' coincidencia'+(total===1?'':'s')+' encontrada'+(total===1?'':'s');
+      sinRes.style.display='none';
+    }
+  }
+
+  input.addEventListener('input', buscar);
+})();
+</script>
+
+</body>
+</html>

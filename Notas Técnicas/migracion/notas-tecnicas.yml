@@ -1,0 +1,69 @@
+name: Regenerar notas técnicas
+
+# Flujo: subo un .md de NotebookLM (o capturas) → GitHub lo importa y rehace el HTML.
+#
+# La idea es no tener que ejecutar nada en el PC. Todo lo que hay que hacer es
+# dejar archivos en su carpeta:
+#
+#   entrada/      un .md exportado de NotebookLM  → se importa y se archiva
+#                    en entrada/procesados/
+#   imagenes/     las capturas del alumnado (NT21_01.jpg) → se incrustan
+#   notas/        las fichas ya importadas, por si hay que retocarlas a mano
+#
+# El resultado (web/notas-tecnicas.html y .txt) lo vuelve a commitear este
+# mismo workflow. Los push que hace GITHUB_TOKEN no disparan otro workflow, así
+# que no se reengancha solo.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'entrada/**'
+      - 'notas/**'
+      - 'imagenes/**'
+      - 'generador/**'
+      - '.github/workflows/notas-tecnicas.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: notas-tecnicas
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  regenerar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repo
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install --quiet -r generador/requirements.txt
+
+      - name: Importar lo que haya en entrada/
+        run: python3 generador/procesar_entrada.py
+
+      - name: Comprobar las fichas antes de generar nada
+        run: python3 generador/construir.py --validar
+
+      - name: Generar el HTML
+        run: python3 generador/construir.py
+
+      - name: Guardar el resultado
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "::notice::Nada que actualizar."
+            exit 0
+          fi
+          git commit -m "Notas técnicas: regenerar tras los últimos cambios"
+          git push

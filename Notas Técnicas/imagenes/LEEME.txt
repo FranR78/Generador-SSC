@@ -1,0 +1,21 @@
+CÓMO NOMBRAR LAS CAPTURAS
+=========================
+
+    NT<número de nota>_<orden>_<descripción opcional>.jpg
+
+Ejemplos correctos:
+
+    NT13_01.jpg
+    NT13_02_oscilograma_pwm.jpg
+    NT12_01_esquema_electrico.jpg
+    nt30_01.png                      (las minúsculas también valen)
+
+La descripción se convierte en el pie de foto: los guiones bajos pasan a espacios.
+
+El generador avisa de:
+  - archivos que no siguen la convención
+  - capturas para notas que no existen
+  - archivos que no son imágenes
+
+Las fotos se reescalan a 1.100 px de ancho al incrustarlas, y se les quita el EXIF
+(donde vienen la geolocalización y el modelo del móvil).

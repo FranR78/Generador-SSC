@@ -1,0 +1,186 @@
+/**
+ * Puente Drive → GitHub para las capturas de las notas técnicas.
+ *
+ * El alumnado deja sus fotos en una carpeta de Drive. Este script las sube a
+ * nt/imagenes/ del repositorio, que es donde el generador las busca. Drive y
+ * GitHub no se hablan solos: esto es ese puente.
+ *
+ * Se ejecuta con un activador de tiempo (ver crearActivador), no a mano.
+ *
+ * Configuración, en Configuración del proyecto → Propiedades del script:
+ *   GITHUB_TOKEN       token de acceso personal con permiso de escritura de
+ *                      contenido SOLO sobre este repositorio
+ *   CARPETA_CAPTURAS   ID de la carpeta de Drive (lo que va detrás de
+ *                      /folders/ en la URL)
+ *
+ * El token NO se escribe aquí dentro: el código del proyecto viaja con las
+ * copias, las propiedades del script no.
+ */
+
+const REPO = 'FranR78/CAMBIAR-POR-EL-REPO-NUEVO';
+const RAMA = 'main';
+const DESTINO = 'imagenes/';
+
+// NT21_02.jpg → hueco 2 de la nota 21. El generador empareja por este nombre.
+const NOMBRE_VALIDO = /^NT\d+[_-]\d+(\s*[_-].*)?\.(jpe?g|png|webp|gif)$/i;
+
+
+function puenteNT_subirCapturas() {
+  const props = PropertiesService.getScriptProperties();
+  const token = props.getProperty('GITHUB_TOKEN');
+  const carpetaId = props.getProperty('CARPETA_CAPTURAS');
+
+  if (!token || !carpetaId) {
+    throw new Error(
+      'Falta configurar GITHUB_TOKEN o CARPETA_CAPTURAS en las propiedades del script.');
+  }
+
+  const carpeta = DriveApp.getFolderById(carpetaId);
+  const subidas = obtenerSubcarpeta(carpeta, 'Subidas');
+  const rechazadas = obtenerSubcarpeta(carpeta, 'Nombre incorrecto');
+
+  const archivos = carpeta.getFiles();
+  let subidos = 0, rechazados = 0;
+
+  while (archivos.hasNext()) {
+    const archivo = archivos.next();
+    const nombre = archivo.getName();
+
+    if (!NOMBRE_VALIDO.test(nombre)) {
+      // No se borra nada: se aparta para que el alumno lo vea y lo renombre.
+      archivo.moveTo(rechazadas);
+      rechazados++;
+      continue;
+    }
+
+    try {
+      subirAGitHub(token, nombre, archivo.getBlob().getBytes());
+      archivo.moveTo(subidas);
+      subidos++;
+    } catch (e) {
+      // Se queda en la carpeta y se reintenta en la siguiente pasada.
+      console.error('No se pudo subir ' + nombre + ': ' + e.message);
+    }
+  }
+
+  console.log(subidos + ' capturas subidas, ' + rechazados + ' con el nombre mal.');
+}
+
+
+function subirAGitHub(token, nombre, bytes) {
+  const url = 'https://api.github.com/repos/' + REPO + '/contents/' +
+              DESTINO + encodeURIComponent(nombre);
+  const cabeceras = {
+    Authorization: 'Bearer ' + token,
+    Accept: 'application/vnd.github+json',
+  };
+
+  // Si el archivo ya está, GitHub exige el sha del que se reemplaza.
+  let sha = null;
+  const previo = UrlFetchApp.fetch(url + '?ref=' + RAMA, {
+    headers: cabeceras, muteHttpExceptions: true,
+  });
+  if (previo.getResponseCode() === 200) {
+    sha = JSON.parse(previo.getContentText()).sha;
+  }
+
+  const cuerpo = {
+    message: 'Capturas: ' + nombre,
+    content: Utilities.base64Encode(bytes),
+    branch: RAMA,
+  };
+  if (sha) cuerpo.sha = sha;
+
+  const r = UrlFetchApp.fetch(url, {
+    method: 'put',
+    headers: cabeceras,
+    contentType: 'application/json',
+    payload: JSON.stringify(cuerpo),
+    muteHttpExceptions: true,
+  });
+
+  if (r.getResponseCode() >= 300) {
+    throw new Error('GitHub respondió ' + r.getResponseCode() + ': ' + r.getContentText());
+  }
+}
+
+
+function obtenerSubcarpeta(padre, nombre) {
+  const existentes = padre.getFoldersByName(nombre);
+  return existentes.hasNext() ? existentes.next() : padre.createFolder(nombre);
+}
+
+
+/** Se ejecuta UNA vez, a mano, para dejar los dos automatismos en marcha. */
+function crearActivador() {
+  // Las capturas, cada 15 minutos: el alumnado las sube durante la clase y
+  // conviene que aparezcan pronto.
+  crearUno_('puenteNT_subirCapturas', 15);
+  // Los documentos ya procesados no corren ninguna prisa: con una vez al día
+  // sobra, y así no se gasta cuota de ejecución para nada.
+  crearUno_('puenteNT_archivarProcesados', 60 * 24);
+
+  console.log('Activadores creados: capturas cada 15 min, archivado una vez al día.');
+}
+
+
+function crearUno_(funcion, minutos) {
+  ScriptApp.getProjectTriggers()
+    .filter(t => t.getHandlerFunction() === funcion)
+    .forEach(t => ScriptApp.deleteTrigger(t));
+
+  const disparador = ScriptApp.newTrigger(funcion).timeBased();
+  if (minutos >= 60 * 24) {
+    disparador.everyDays(1).atHour(6).create();
+  } else {
+    disparador.everyMinutes(minutos).create();
+  }
+}
+
+
+/**
+ * Aparta de la carpeta de fuentes los PDF que ya has procesado.
+ *
+ * Tú renombras el documento en Drive añadiéndole la marca (por defecto PRO) y
+ * esto lo mueve a "Procesados" en la siguiente pasada. Lo que queda en la
+ * carpeta es, por definición, lo que falta por procesar: la lista de pendientes
+ * se mantiene sola.
+ *
+ * OJO: esto NO quita nada del cuaderno de NotebookLM. Mover o renombrar en
+ * Drive no toca las fuentes del cuaderno, que son una copia hecha al
+ * importarlas. Quitarlas de ahí sigue siendo cosa tuya, a mano.
+ *
+ * Configuración añadida a las propiedades del script:
+ *   CARPETA_FUENTES   ID de la carpeta de Drive con los PDF sin procesar
+ *   MARCA_PROCESADO   opcional; por defecto 'PRO'
+ */
+function puenteNT_archivarProcesados() {
+  const props = PropertiesService.getScriptProperties();
+  const carpetaId = props.getProperty('CARPETA_FUENTES');
+  if (!carpetaId) {
+    throw new Error('Falta CARPETA_FUENTES en las propiedades del script.');
+  }
+
+  const marca = (props.getProperty('MARCA_PROCESADO') || 'PRO').toUpperCase();
+  // La marca tiene que ir suelta, no dentro de otra palabra: si no, un
+  // "PROCEDIMIENTO" o un "PROTECCIÓN" en el nombre se daría por procesado.
+  const patron = new RegExp(
+    '(?:^|[^A-ZÁÉÍÓÚÜÑ])' + marca + '(?:[^A-ZÁÉÍÓÚÜÑ]|$)');
+
+  const carpeta = DriveApp.getFolderById(carpetaId);
+  const procesados = obtenerSubcarpeta(carpeta, 'Procesados');
+
+  const archivos = carpeta.getFiles();
+  let movidos = 0;
+
+  while (archivos.hasNext()) {
+    const archivo = archivos.next();
+    if (!patron.test(archivo.getName().toUpperCase())) continue;
+
+    archivo.moveTo(procesados);   // mover no cambia el ID: el cuaderno no se rompe
+    console.log('archivado: ' + archivo.getName());
+    movidos++;
+  }
+
+  console.log(movidos + ' documentos apartados. Lo que queda en la carpeta está sin procesar.');
+}
