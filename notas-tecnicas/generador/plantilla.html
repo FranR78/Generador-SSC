@@ -183,6 +183,43 @@
     border-top:1px solid var(--azul); padding-top:0.8rem; margin-top:1rem;
   }
 
+  /* ===== AGRUPACIÓN POR COMPONENTE ===== */
+  .menu-cuenta{
+    display:inline-block; background:var(--azul); color:var(--blanco);
+    border-radius:20px; font-size:0.68rem; font-weight:700;
+    padding:0.02rem 0.45rem; margin-left:0.35rem;
+  }
+  .grupo-componente{ margin-bottom:3rem; scroll-margin-top:1rem; }
+  .grupo-cab{
+    background:var(--azul-os); color:var(--blanco);
+    padding:0.7rem 1rem; border-radius:8px;
+    display:flex; align-items:center; justify-content:space-between;
+    gap:0.6rem; flex-wrap:wrap;
+  }
+  .grupo-nombre{ font-size:1.1rem; font-weight:800; }
+  .grupo-cuenta{
+    background:rgba(255,255,255,0.22); border-radius:20px;
+    font-size:0.72rem; font-weight:700; padding:0.12rem 0.6rem; white-space:nowrap;
+  }
+  .grupo-aviso{ font-size:0.82rem; color:#555; margin:0.5rem 0 0.8rem; }
+  details.variante{
+    border:2px solid var(--azul); border-radius:10px;
+    margin:0.6rem 0; background:var(--blanco); overflow:hidden;
+  }
+  details.variante > summary{
+    cursor:pointer; list-style:none; padding:0.6rem 1rem;
+    font-size:0.8rem; font-weight:700; color:var(--azul-os);
+    background:#f0f7ff; border-bottom:1px solid #cfe4f7;
+    display:flex; align-items:center; gap:0.5rem; flex-wrap:wrap;
+  }
+  details.variante > summary::-webkit-details-marker{ display:none; }
+  details.variante > summary::before{ content:"▸ "; font-weight:800; }
+  details.variante[open] > summary::before{ content:"▾ "; }
+  details.variante > summary:hover{ background:#e2f0ff; }
+  details.variante section{ margin:0; }
+  details.variante .nota-header{ border-radius:0; }
+  details.variante .nota-body{ border:none; border-radius:0; }
+
   /* ===== RESPONSIVE ===== */
   @media (max-width:800px){
     html, body{ height:auto; overflow:visible; }
@@ -236,7 +273,10 @@
 
   function irA(id){
     var el = document.getElementById(id);
-    if(el) el.scrollIntoView({ behavior:'smooth', block:'start' });
+    if(!el) return;
+    var d = el.closest('details');          // si es una variante, ábrela
+    if(d) d.open = true;
+    el.scrollIntoView({ behavior:'smooth', block:'start' });
   }
 
   document.addEventListener('click', function(e){
@@ -289,6 +329,8 @@
       var m = sec.textContent.match(re);
       if(m && m.length){
         total += m.length;
+        var d = sec.closest('details');       // abre la variante con coincidencias
+        if(d) d.open = true;
         resaltar(sec, re);
         var h = sec.querySelector('h1,h2,h3,h4');
         var txt = h ? h.textContent : sec.id;

@@ -101,6 +101,11 @@ def normalizar(texto):
     return "".join(c for c in base if not unicodedata.combining(c)).lower().strip()
 
 
+def slug(texto):
+    """clave-url a partir de un texto: sin tildes, minúsculas, guiones."""
+    return re.sub(r"[^a-z0-9]+", "-", normalizar(texto)).strip("-") or "nota"
+
+
 class Nota:
     def __init__(self, ruta):
         bruto = ruta.read_text(encoding="utf-8")
@@ -123,6 +128,10 @@ class Nota:
         self.codigo = str(meta.get("codigo", "")).strip()
         self.grupo = str(meta.get("grupo", "")).strip()
         self.menu = str(meta.get("menu", "")).strip() or (self.codigo or self.titulo)
+        # Identidad por componente: agrupa las notas que hablan de lo mismo.
+        # Si no se declara 'clave', se deriva del título, así los títulos
+        # idénticos (mismo componente reimportado) caen en el mismo grupo solos.
+        self.clave = slug(str(meta.get("clave", "")).strip() or self.titulo)
         self.aplicacion = meta.get("aplicacion") or []
         self.ubicacion = str(meta.get("ubicacion", "")).strip()
         self.fuentes = str(meta.get("fuentes", "")).strip()
@@ -301,20 +310,81 @@ def render_nota(nota, capturas=()):
     return "\n".join(partes)
 
 
-def render_menu(notas):
+def agrupar(notas):
+    """Agrupa por 'clave' conservando el orden de primera aparición (por nt).
+
+    Cada elemento devuelto es una lista de 1+ notas del mismo componente.
+    No fusiona nada: solo las junta para pintarlas y enlazarlas juntas.
+    """
+    orden, por = [], {}
+    for n in notas:                      # llegan ordenadas por nt
+        if n.clave not in por:
+            por[n.clave] = []
+            orden.append(n.clave)
+        por[n.clave].append(n)
+    return [por[c] for c in orden]
+
+
+def etiqueta_fuente(n):
+    """Texto corto que identifica de qué fuente sale esta variante."""
+    for cand in (n.fuentes, n.marca, n.origen):
+        c = (cand or "").strip()
+        if c and "POR COMPLETAR" not in c.upper():
+            return c[:70]
+    return "fuente sin especificar"
+
+
+def render_menu(grupos):
     salida = []
     grupo_actual = None
-    for n in notas:
-        if n.grupo != grupo_actual:
-            grupo_actual = n.grupo
+    for g in grupos:
+        base = g[0]
+        if base.grupo != grupo_actual:
+            grupo_actual = base.grupo
             salida.append(
                 f'    <li class="grupo"><span class="menu-grupo-titulo">'
                 f"{esc(grupo_actual)}</span></li>"
             )
-        salida.append(
-            f'    <li><a href="#{n.id}">NT{n.nt} · {esc(n.menu)}</a></li>'
-        )
+        if len(g) == 1:
+            salida.append(
+                f'    <li><a href="#{base.id}">NT{base.nt} · {esc(base.menu)}</a></li>'
+            )
+        else:
+            salida.append(
+                f'    <li><a href="#grp-{base.clave}">{esc(base.titulo)} '
+                f'<span class="menu-cuenta">{len(g)} fuentes</span></a></li>'
+            )
     return "\n".join(salida)
+
+
+def render_grupo(grupo, capturas):
+    """Pinta un componente con varias fuentes: cabecera + variantes en acordeón.
+
+    Cada variante sigue siendo una <section> entera (el buscador la ve). Nada se
+    fusiona: es agrupación visual, reversible, mientras se decide qué hacer.
+    """
+    base = grupo[0]
+    partes = [f'  <div class="grupo-componente" id="grp-{base.clave}">']
+    partes.append(
+        f'    <div class="grupo-cab"><span class="grupo-nombre">{esc(base.titulo)}</span>'
+        f'<span class="grupo-cuenta">{len(grupo)} fuentes sin fusionar</span></div>'
+    )
+    partes.append(
+        '    <p class="grupo-aviso">Varias fuentes describen este componente. '
+        "Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega "
+        "cada una para compararlas.</p>"
+    )
+    for i, n in enumerate(grupo, start=1):
+        abierto = " open" if i == 1 else ""
+        partes.append(f'    <details class="variante"{abierto}>')
+        partes.append(
+            f'      <summary>Variante {i} de {len(grupo)} · NT{n.nt} · '
+            f"{esc(etiqueta_fuente(n))}</summary>"
+        )
+        partes.append(render_nota(n, capturas.get(n.nt, ())))
+        partes.append("    </details>")
+    partes.append("  </div>")
+    return "\n".join(partes)
 
 
 def posibles_duplicados(notas):
@@ -420,15 +490,23 @@ def main():
     for nombre, motivo in descartes:
         print(f"  aviso: {nombre} no se ha usado ({motivo})")
 
+    grupos = agrupar(notas)
+    multiples = sum(1 for g in grupos if len(g) > 1)
+    print(f"\n{len(grupos)} componentes en el menú "
+          f"({multiples} con varias fuentes sin fusionar)")
+
+    def render_bloque(g):
+        return (render_nota(g[0], capturas.get(g[0].nt, ()))
+                if len(g) == 1 else render_grupo(g, capturas))
+
     plantilla = (Path(__file__).resolve().parent / "plantilla.html").read_text(encoding="utf-8")
     pagina = (plantilla
               .replace("{{TITULO}}", esc(TITULO))
               .replace("{{SUBTITULO}}", esc(SUBTITULO))
               .replace("{{FECHA}}", date.today().strftime("%d/%m/%Y"))
               .replace("{{TOTAL}}", str(len(notas)))
-              .replace("{{MENU}}", render_menu(notas))
-              .replace("{{NOTAS}}", "\n\n".join(
-                  render_nota(n, capturas.get(n.nt, ())) for n in notas)))
+              .replace("{{MENU}}", render_menu(grupos))
+              .replace("{{NOTAS}}", "\n\n".join(render_bloque(g) for g in grupos)))
 
     DIR_WEB.mkdir(exist_ok=True)
     (DIR_WEB / "notas-tecnicas.html").write_text(pagina, encoding="utf-8")
