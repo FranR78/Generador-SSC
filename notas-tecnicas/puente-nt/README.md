@@ -70,9 +70,14 @@ caras, el VIN— eso no lo puede quitar ningún script.
 ## Segundo automatismo: apartar los documentos ya procesados
 
 Renombras en Drive el PDF que acabas de procesar añadiéndole la marca (`PRO`) y,
-una vez al día, `puenteNT_archivarProcesados` lo mueve a la subcarpeta
-*Procesados*. Lo que queda en la carpeta es lo que falta: la lista de pendientes
-se mantiene sola, sin llevar ninguna cuenta aparte.
+una vez al día, `puenteNT_archivarProcesados` lo aparta a *Procesados*. Lo que
+queda en la carpeta es lo que falta: la lista de pendientes se mantiene sola, sin
+llevar ninguna cuenta aparte.
+
+`CARPETA_FUENTES` puede estar dividida en subcarpetas por temáticas: el archivado
+las recorre todas y crea un *Procesados* **dentro de cada temática**, no uno
+común, así se conserva la división. No entra en las carpetas *Procesados* (no
+remueve lo ya apartado) y solo las crea cuando hay algo que mover.
 
 Dos propiedades más del script:
 
