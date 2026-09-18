@@ -19,7 +19,7 @@
 
 const REPO = 'FranR78/Generador-SSC';
 const RAMA = 'main';
-const DESTINO = 'nota-tecnicas/imagenes/';
+const DESTINO = 'notas-tecnicas/imagenes/';
 
 // NT21_02.jpg → hueco 2 de la nota 21. El generador empareja por este nombre.
 const NOMBRE_VALIDO = /^NT\d+[_-]\d+(\s*[_-].*)?\.(jpe?g|png|webp|gif)$/i;

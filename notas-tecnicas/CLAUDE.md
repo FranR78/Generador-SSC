@@ -89,7 +89,7 @@ menores: eso pasa por jefatura antes de existir.
 ## Cómo se ejecuta
 
 Nada de esto se lanza a mano. `.github/workflows/notas-tecnicas.yml` se dispara
-con cualquier cambio bajo `nota-tecnicas/` en `entrada/`, `notas/`, `imagenes/`
+con cualquier cambio bajo `notas-tecnicas/` en `entrada/`, `notas/`, `imagenes/`
 o `generador/`, importa lo que haya llegado, valida, regenera el HTML y lo
 vuelve a commitear. Los push que hace `GITHUB_TOKEN` no disparan otro workflow,
 así que no se reengancha solo.
