@@ -175,22 +175,42 @@ function puenteNT_archivarProcesados() {
   const patron = new RegExp(
     '(?:^|[^A-ZÁÉÍÓÚÜÑ])' + marca + '(?:[^A-ZÁÉÍÓÚÜÑ]|$)');
 
-  const carpeta = DriveApp.getFolderById(carpetaId);
-  const procesados = obtenerSubcarpeta(carpeta, 'Procesados');
+  const raiz = DriveApp.getFolderById(carpetaId);
+  const movidos = archivarEnCarpeta_(raiz, patron);
+
+  console.log(movidos + ' documentos apartados. Lo que queda en las carpetas está sin procesar.');
+}
+
+
+/**
+ * Recorre una carpeta temática y sus subcarpetas. Los PDF marcados van a un
+ * "Procesados" propio de la misma carpeta donde estaban, así se conserva la
+ * división por temáticas. No entra en las carpetas "Procesados" para no
+ * remover lo ya apartado, y solo crea el "Procesados" si hay algo que mover.
+ */
+function archivarEnCarpeta_(carpeta, patron) {
+  let movidos = 0;
+  let procesados = null;
 
   const archivos = carpeta.getFiles();
-  let movidos = 0;
-
   while (archivos.hasNext()) {
     const archivo = archivos.next();
     if (!patron.test(archivo.getName().toUpperCase())) continue;
 
+    if (!procesados) procesados = obtenerSubcarpeta(carpeta, 'Procesados');
     archivo.moveTo(procesados);   // mover no cambia el ID: el cuaderno no se rompe
-    console.log('archivado: ' + archivo.getName());
+    console.log('archivado: ' + carpeta.getName() + '/' + archivo.getName());
     movidos++;
   }
 
-  console.log(movidos + ' documentos apartados. Lo que queda en la carpeta está sin procesar.');
+  const subcarpetas = carpeta.getFolders();
+  while (subcarpetas.hasNext()) {
+    const sub = subcarpetas.next();
+    if (sub.getName() === 'Procesados') continue;
+    movidos += archivarEnCarpeta_(sub, patron);
+  }
+
+  return movidos;
 }
 
 
