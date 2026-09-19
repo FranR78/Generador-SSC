@@ -1,0 +1,104 @@
+# Despliegue de la puerta de datos
+
+Dos proyectos Apps Script. El **Portal** (`portal/`) se ejecuta como cada alumno
+para usar su propia API key; **Datos** (`datos/`) se ejecuta como el profe y es el
+único que abre la Hoja. La Hoja **no se comparte con nadie**.
+
+## 1. Proyecto Datos (una vez)
+
+1. Crear un proyecto Apps Script nuevo llamado `Generador-SSC — Datos`.
+2. Subir `datos/Datos.gs` y `datos/appsscript.json`.
+3. Ejecutar `db_setup()` desde el editor. Si ya lo habías ejecutado antes de
+   añadir las rondas, borra las pestañas `Tareas`, `Aportaciones` y
+   `Valoraciones` (solo tenían datos de prueba): se recrean con las columnas
+   nuevas al usarlas. Devuelve la URL de la Hoja creada y
+   guarda su ID en `DB_SHEET_ID`. **No compartir esa Hoja.**
+4. Desplegar: *Implementar → Nueva implementación → Aplicación web*
+   - Ejecutar como: **Yo**
+   - Quién tiene acceso: **Usuarios de <dominio del centro>**
+5. Copiar la URL `/exec`.
+
+## 2. Proyecto Portal
+
+1. En *Configuración del proyecto → Propiedades del script*:
+   - `DATOS_URL` = la URL `/exec` del paso anterior.
+   - `ROOT_FOLDER_ID` = carpeta de Drive con los PDF (ya existente).
+2. Volver a desplegar para que se apliquen los permisos nuevos (`openid`), y
+   **volver a autorizar** al abrirlo: sin el permiso `openid`,
+   `ScriptApp.getIdentityToken()` devuelve `null` y no hay identidad.
+
+## 3. Cerrar el candado (recomendado)
+
+En las Propiedades del script de **Datos**:
+
+- `DOMINIO` = dominio del centro (p. ej. `ejemplo.edu`). Rechaza cuentas de fuera.
+- `PORTAL_AUD` = `client_id` del proyecto Portal, que aparece en
+  *Configuración del proyecto → Proyecto de Google Cloud*. Con esto, Datos solo
+  acepta tokens emitidos para el Portal.
+
+## 4. Visibilidad de temas y documentos
+
+1. En Propiedades del script de **Datos**: `PROFES` = tus correos separados por
+   comas. Solo esos pueden cambiar la visibilidad.
+2. Entrar al portal con tu cuenta: aparece la pestaña **Panel**, que solo se
+   muestra a los correos de `PROFES` (lo decide el servidor, no el navegador).
+3. En el Panel, **Buscar PDF nuevos** da de alta en `Config` lo que falte —
+   púlsalo cada vez que subas PDF al Drive. Luego desmarca lo que no quieras
+   disponible y **Guardar visibilidad**.
+4. Ocultar un tema oculta todo lo que cuelga de él. Lo que no tiene fila en
+   `Config` se considera visible, así que los PDF nuevos nunca desaparecen sin
+   avisar. Para que algo se abra solo un día concreto, poner la fecha en la
+   columna `abre_el` de la Hoja.
+5. Los umbrales del gating (consultas por bloque, respuestas y valoraciones
+   necesarias) también se editan en el Panel. Ya no se tocan en Propiedades del
+   script: `GATE_LIBRES`, `GATE_REQ_APORTA` y `GATE_REQ_VALORA` se pueden borrar.
+
+El profesorado ve el árbol completo con lo oculto marcado; el alumnado no recibe
+del servidor ni el nombre de lo que está cerrado.
+
+## 5. Rondas
+
+Una ronda es un ítem a definir. Estados: `borrador` → `abierta` → `votacion` →
+`cerrada`. Se gestionan desde el Panel, y si pones fechas de cierre avanzan solas
+(el paso se comprueba al leer, así que no hace falta ningún disparador).
+
+Dos reglas del diseño, ya en el código:
+
+- **Una respuesta por alumno y ronda**, y solo mientras está `abierta`.
+- **Portón**: en `votacion`, cada alumno solo ve las respuestas de las rondas en
+  las que él ya entregó, sin autor y en un orden distinto para cada uno.
+  Reparte tres estrellas: 3 ★, 2 ★ y 1 ★, una de cada por ronda.
+
+## 6. Comprobación
+
+1. Entrar al portal con una cuenta de alumno de prueba.
+2. Hacer una consulta: debe aumentar `consultas` en la pestaña `Actividad`.
+3. Intentar abrir la Hoja con esa misma cuenta: **debe dar "no tienes acceso"**.
+   Si la abre, la Hoja sigue compartida — quitar el permiso.
+
+## 7. Qué protege y qué no
+
+Protege: los contadores del gating, el anonimato de las valoraciones y las filas
+de los demás. Nadie puede editarlos fuera del portal.
+
+No protege los PDF: el portal se ejecuta como el alumno, así que la carpeta de
+Drive debe estar compartida en **solo lectura** y un alumno decidido puede
+abrirla directamente. La visibilidad por temas del panel del profesor sirve para
+no agobiar, no como control de acceso.
+
+## El panel del profesorado, tras retirar el Admin antiguo
+
+Había dos paneles hechos por separado y ahora solo queda uno: `portal/Profesor.html`.
+Lo que solo tenía el antiguo se ha traído aquí:
+
+- **Prompt de la IA**: sigue en las Propiedades del script del *portal* (no en la
+  Hoja), pero quién puede tocarlo lo decide la puerta (`soyProfe`), para no
+  mantener dos listas de profesorado. Antes había una lista aparte, `ADMIN_EMAILS`,
+  que ya no se usa: **el profesorado se define solo en `PROFES` del proyecto Datos.**
+- **Reiniciar contadores de un alumno** ("Nueva tanda"): botón en el Pulso del
+  grupo. Pasa por la puerta (`resetUsuario`), que exige profe; si se hiciera desde
+  el portal, un alumno podría ponerse los contadores a cero.
+- **Telemetría de uso** (`conexiones` y `tiempo_seg`): se había perdido al mover el
+  acceso a la puerta y se ha restaurado como operaciones `conexion` y `latido`.
+  Las dos columnas **se crean solas** en la pestaña Actividad la primera vez, así
+  que una Hoja ya existente no hay que tocarla a mano.

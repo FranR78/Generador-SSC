@@ -77,6 +77,20 @@
     .estado.ok { color: var(--ok); }
     .estado.err { color: var(--err); }
 
+    /* Panel del profesorado */
+    .umbrales { display: flex; gap: 10px; flex-wrap: wrap; }
+    .umbrales label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: #5b6b73; flex: 1; min-width: 120px; }
+    .umbrales input { border: 1px solid var(--borde); border-radius: 8px; padding: 8px 10px; font-family: inherit; font-size: 14px; }
+    #prof-arbol { max-height: 300px; overflow-y: auto; font-size: 14px; }
+    #prof-arbol label { display: flex; align-items: center; gap: 6px; padding: 3px 0; }
+    #prof-arbol .tema > summary { display: flex; align-items: center; gap: 6px; }
+    .tabla { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .tabla th, .tabla td { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--borde); }
+    .tabla th { font-size: 11px; text-transform: uppercase; color: #5b6b73; font-weight: 600; }
+    .tabla td.num { text-align: right; }
+    .quieto { color: var(--err); font-weight: 600; }
+    .parado { color: #a06000; font-weight: 600; }
+
     @media (max-width: 600px) {
       header .marca h1 { font-size: 15px; }
       main { padding: 8px; }
@@ -97,7 +111,7 @@
     <button data-sec="manual">Manual</button>
     <button data-sec="juegos">Juegos</button>
     <button data-sec="cuenta">Mi cuenta</button>
-    <button data-sec="admin" id="nav-admin" hidden>Admin</button>
+    <button data-sec="profesor" id="nav-profesor" hidden>Panel</button>
   </nav>
 
   <main>
@@ -105,17 +119,17 @@
     <section id="sec-manual" hidden><?!= include('Manual') ?></section>
     <section id="sec-juegos" hidden><?!= include('Juegos') ?></section>
     <section id="sec-cuenta" hidden><?!= include('Cuenta') ?></section>
-    <section id="sec-admin" hidden><?!= include('AdminUI') ?></section>
+    <section id="sec-profesor" hidden><?!= include('Profesor') ?></section>
   </main>
 
   <script>
     // ---------- Router ----------
     var seccionActual = 'consultar';
-    var arbolCargado = false, cuentaCargada = false;
+    var arbolCargado = false, cuentaCargada = false, panelCargado = false;
 
     function mostrar(sec) {
       seccionActual = sec;
-      ['consultar', 'manual', 'juegos', 'cuenta', 'admin'].forEach(function (s) {
+      ['consultar', 'manual', 'juegos', 'cuenta', 'profesor'].forEach(function (s) {
         document.getElementById('sec-' + s).hidden = (s !== sec);
       });
       Array.prototype.forEach.call(document.querySelectorAll('#nav button'), function (b) {
@@ -125,7 +139,7 @@
       if (sec === 'consultar') refrescarGate();
       if (sec === 'manual') initManual();
       if (sec === 'cuenta' && !cuentaCargada) initCuenta();
-      if (sec === 'admin' && !adminCargado) initAdmin();
+      if (sec === 'profesor' && !panelCargado) initPanel();
     }
     Array.prototype.forEach.call(document.querySelectorAll('#nav button'), function (b) {
       b.addEventListener('click', function () { mostrar(b.getAttribute('data-sec')); });
@@ -136,10 +150,10 @@
       document.getElementById('quien').textContent = email || 'invitado';
     }).usuarioActual();
 
-    // Muestra la pestaña Admin solo si el usuario es profe.
+    // Muestra la pestaña del panel solo si el usuario es profe.
     google.script.run.withSuccessHandler(function (ok) {
-      if (ok) document.getElementById('nav-admin').hidden = false;
-    }).esAdmin();
+      if (ok) document.getElementById('nav-profesor').hidden = false;
+    }).soyProfe();
 
     // Registra la conexión y cuenta tiempo conectado (latido cada 30 s).
     google.script.run.registrarConexion();
@@ -316,7 +330,12 @@
         sel.innerHTML = '';
         if (!tareas.length) { sel.innerHTML = '<option value="">No hay tareas abiertas</option>'; return; }
         sel.appendChild(new Option('Elige una tarea…', ''));
-        tareas.forEach(function (t) { sel.appendChild(new Option('[' + t.seccion + '] ' + t.enunciado, t.tarea_id)); });
+        tareas.forEach(function (t) {
+          var etiqueta = (t.entregada ? '✔ ' : '') + '[' + t.seccion + '] ' + t.enunciado;
+          var op = new Option(etiqueta, t.tarea_id);
+          op.disabled = t.entregada;   // una respuesta por ronda
+          sel.appendChild(op);
+        });
       }).tareasAbiertas();
     }
 
@@ -349,18 +368,30 @@
           var q = document.createElement('div'); q.style.cssText = 'font-size:12px; color:#5b6b73; margin-bottom:4px;'; q.textContent = it.enunciado;
           var t = document.createElement('div'); t.style.cssText = 'font-size:14px; white-space:pre-wrap; margin-bottom:8px;'; t.textContent = it.texto;
           var fila = document.createElement('div'); fila.style.cssText = 'display:flex; gap:6px; align-items:center;';
-          var sel = document.createElement('select'); sel.style.cssText = 'padding:6px 8px; border:1px solid var(--borde); border-radius:6px;';
-          [1,2,3,4,5].forEach(function (n) { sel.appendChild(new Option(n + ' ★', n)); });
-          sel.value = '4';
-          var b = document.createElement('button'); b.className = 'accion sec'; b.type = 'button'; b.textContent = 'Valorar';
-          b.addEventListener('click', function () {
-            b.disabled = true;
-            google.script.run
-              .withSuccessHandler(function () { card.remove(); initManual(); })
-              .withFailureHandler(function (err) { b.disabled = false; alert(err.message); })
-              .valorar(it.aportacion_id, sel.value);
-          });
-          fila.appendChild(sel); fila.appendChild(b);
+          if (!it.pesos_libres.length) {
+            var fin = document.createElement('span');
+            fin.className = 'aviso';
+            fin.textContent = 'Ya has repartido tus tres estrellas en esta ronda.';
+            fila.appendChild(fin);
+          } else {
+            it.pesos_libres.forEach(function (peso) {
+              var b = document.createElement('button');
+              b.className = 'accion sec';
+              b.type = 'button';
+              b.textContent = peso + ' ★';
+              b.addEventListener('click', function () {
+                Array.prototype.forEach.call(fila.querySelectorAll('button'), function (x) { x.disabled = true; });
+                google.script.run
+                  .withSuccessHandler(function () { card.remove(); cargarValorar(); initManual(); })
+                  .withFailureHandler(function (err) {
+                    Array.prototype.forEach.call(fila.querySelectorAll('button'), function (x) { x.disabled = false; });
+                    alert(err.message);
+                  })
+                  .valorar(it.aportacion_id, peso);
+              });
+              fila.appendChild(b);
+            });
+          }
           card.appendChild(q); card.appendChild(t); card.appendChild(fila);
           cont.appendChild(card);
         });
@@ -410,115 +441,259 @@
       google.script.run.withSuccessHandler(function () { pintaEstadoClave(false); }).borrarClaveIA();
     });
 
-    // ---------- Admin ----------
-    var adminCargado = false;
+    // ---------- Panel del profesorado ----------
+    var panelCfg = null;
 
-    function initAdmin() {
-      adminCargado = true;
-      cargarPrompt();
-      cargarTareasAdmin();
-      cargarAlumnos();
+    function fechaCorta(iso) {
+      if (!iso) return '—';
+      var dias = Math.floor((Date.now() - new Date(iso).getTime()) / 86400000);
+      if (dias <= 0) return 'hoy';
+      if (dias === 1) return 'ayer';
+      return 'hace ' + dias + ' días';
+    }
+
+    function filaVisible(id, nombre, oculto, destino) {
+      var lab = document.createElement('label');
+      var chk = document.createElement('input');
+      chk.type = 'checkbox';
+      chk.checked = !oculto;
+      chk.setAttribute('data-id', id);
+      lab.appendChild(chk);
+      lab.appendChild(document.createTextNode(nombre));
+      destino.appendChild(lab);
+      return chk;
+    }
+
+    function nodoPanel(nodo) {
+      var det = document.createElement('details');
+      det.className = 'carpeta tema';
+      det.open = true;
+      var sum = document.createElement('summary');
+      var chk = document.createElement('input');
+      chk.type = 'checkbox';
+      chk.checked = !nodo.oculto;
+      chk.setAttribute('data-id', nodo.id);
+      chk.addEventListener('click', function (e) { e.stopPropagation(); });
+      sum.appendChild(chk);
+      sum.appendChild(document.createTextNode(nodo.name));
+      det.appendChild(sum);
+      nodo.files.forEach(function (f) { filaVisible(f.id, f.name, f.oculto, det); });
+      nodo.children.forEach(function (h) { det.appendChild(nodoPanel(h)); });
+      return det;
+    }
+
+    function pintarPulso(alumnos, gate) {
+      var cont = document.getElementById('prof-pulso');
+      if (!alumnos.length) { cont.textContent = 'Todavía no ha entrado nadie.'; return; }
+      var t = document.createElement('table');
+      t.className = 'tabla';
+      t.innerHTML = '<tr><th>Alumno</th><th>Última vez</th><th>Cons.</th><th>Resp.</th><th>Valor.</th><th></th></tr>';
+      alumnos.forEach(function (a) {
+        var tr = document.createElement('tr');
+        var dias = a.ultima_conexion
+          ? Math.floor((Date.now() - new Date(a.ultima_conexion).getTime()) / 86400000) : 999;
+        tr.innerHTML =
+          '<td>' + a.usuario.split('@')[0] + '</td>' +
+          '<td class="' + (dias >= 7 ? 'quieto' : '') + '">' + fechaCorta(a.ultima_conexion) + '</td>' +
+          '<td class="num ' + (a.bloqueado ? 'parado' : '') + '">' + a.consultas + '/' + a.permitidas + '</td>' +
+          '<td class="num">' + a.aportaciones + '</td>' +
+          '<td class="num">' + a.valoraciones + '</td>' +
+          '<td><button type="button" class="accion sec reiniciar" data-alumno="' +
+             a.usuario + '">Nueva tanda</button></td>';
+        t.appendChild(tr);
+      });
+      cont.innerHTML = '';
+      cont.appendChild(t);
+      Array.prototype.forEach.call(t.querySelectorAll('.reiniciar'), function (b) {
+        b.addEventListener('click', function () {
+          if (!confirm('¿Reiniciar los contadores de ' + b.dataset.alumno + '?')) return;
+          b.disabled = true; b.textContent = '…';
+          google.script.run
+            .withSuccessHandler(function () { initPanel(); })
+            .withFailureHandler(function (e) {
+              b.disabled = false; b.textContent = 'Nueva tanda'; alert(e.message);
+            })
+            .reiniciarContadores(b.dataset.alumno);
+        });
+      });
+      var pie = document.createElement('p');
+      pie.className = 'aviso';
+      pie.textContent = 'En ámbar, quien ha agotado su bloque de ' + gate.LIBRES +
+        ' consultas y tiene que participar para seguir.';
+      cont.appendChild(pie);
+    }
+
+    var ESTADOS_RONDA = ['borrador', 'abierta', 'votacion', 'cerrada'];
+
+    function pintarRondas(rondas) {
+      var cont = document.getElementById('prof-rondas');
+      if (!rondas.length) { cont.textContent = 'Todavía no hay rondas.'; return; }
+      var t = document.createElement('table');
+      t.className = 'tabla';
+      t.innerHTML = '<tr><th>Ronda</th><th>Resp.</th><th>Estado</th></tr>';
+      rondas.forEach(function (r) {
+        var tr = document.createElement('tr');
+        var td1 = document.createElement('td');
+        td1.textContent = r.enunciado;
+        var td2 = document.createElement('td');
+        td2.className = 'num';
+        td2.textContent = r.respuestas;
+        var td3 = document.createElement('td');
+        var sel = document.createElement('select');
+        sel.style.cssText = 'padding:4px 6px; border:1px solid var(--borde); border-radius:6px; font-size:12px;';
+        ESTADOS_RONDA.forEach(function (e) { sel.appendChild(new Option(e, e)); });
+        sel.value = r.estado;
+        sel.addEventListener('change', function () {
+          sel.disabled = true;
+          google.script.run
+            .withSuccessHandler(function () { sel.disabled = false; })
+            .withFailureHandler(function (err) { sel.disabled = false; sel.value = r.estado; alert(err.message); })
+            .cambiarRonda(r.tarea_id, { estado: sel.value });
+        });
+        td3.appendChild(sel);
+        tr.appendChild(td1); tr.appendChild(td2); tr.appendChild(td3);
+        t.appendChild(tr);
+      });
+      cont.innerHTML = '';
+      cont.appendChild(t);
+    }
+
+    function cargarRondas() {
+      google.script.run
+        .withSuccessHandler(pintarRondas)
+        .withFailureHandler(function (err) { document.getElementById('prof-rondas').textContent = err.message; })
+        .listarRondas();
+    }
+
+    // ---------- Prompt de la IA ----------
+    function estadoPrompt(txt, mal) {
+      var e = document.getElementById('prof-estado-p');
+      e.textContent = txt;
+      e.className = 'estado' + (mal ? ' error' : '');
     }
 
     function cargarPrompt() {
-      google.script.run.withSuccessHandler(function (p) {
-        document.getElementById('adm-prompt').value = p || '';
-      }).adminGetPrompt();
-    }
-
-    document.getElementById('adm-prompt-guardar').addEventListener('click', function () {
-      var e = document.getElementById('adm-prompt-estado');
-      e.textContent = 'Guardando…'; e.className = 'estado';
+      var ta = document.getElementById('prof-prompt');
+      ta.value = 'Cargando…';
       google.script.run
-        .withSuccessHandler(function () { e.textContent = 'Prompt guardado.'; e.className = 'estado ok'; })
-        .withFailureHandler(function (err) { e.textContent = err.message; e.className = 'estado err'; })
-        .adminSetPrompt(document.getElementById('adm-prompt').value);
-    });
-
-    document.getElementById('adm-prompt-reset').addEventListener('click', function () {
-      google.script.run.withSuccessHandler(function (p) {
-        document.getElementById('adm-prompt').value = p || '';
-        var e = document.getElementById('adm-prompt-estado'); e.textContent = 'Restaurado por defecto.'; e.className = 'estado ok';
-      }).adminResetPrompt();
-    });
-
-    function cargarTareasAdmin() {
-      var cont = document.getElementById('adm-tareas-lista');
-      cont.innerHTML = '<div class="placeholder">Cargando…</div>';
-      google.script.run.withSuccessHandler(function (tareas) {
-        cont.innerHTML = '';
-        if (!tareas.length) { cont.innerHTML = '<div class="placeholder">Sin tareas.</div>'; return; }
-        tareas.forEach(function (t) {
-          var card = document.createElement('div');
-          card.style.cssText = 'border:1px solid var(--borde); border-radius:8px; padding:10px; margin-bottom:8px;';
-          var meta = t.seccion ? (t.seccion + ' · ') : '';
-          meta += 'estado: ' + t.estado + (t.fecha_caduca ? (' · caduca ' + t.fecha_caduca) : '');
-          var q = document.createElement('div'); q.style.cssText = 'font-size:14px; margin-bottom:4px;'; q.textContent = t.enunciado;
-          var m = document.createElement('div'); m.style.cssText = 'font-size:12px; color:#5b6b73; margin-bottom:8px;'; m.textContent = meta;
-          var fila = document.createElement('div'); fila.style.cssText = 'display:flex; gap:6px; flex-wrap:wrap;';
-          fila.appendChild(botonTarea(t.estado === 'abierta' ? 'Cerrar' : 'Abrir', function () {
-            if (t.estado === 'abierta') google.script.run.withSuccessHandler(cargarTareasAdmin).adminCerrarTarea(t.tarea_id);
-            else google.script.run.withSuccessHandler(cargarTareasAdmin).adminAbrirTarea(t.tarea_id);
-          }));
-          fila.appendChild(botonTarea('Caducar ahora', function () {
-            google.script.run.withSuccessHandler(cargarTareasAdmin).adminCaducarTarea(t.tarea_id);
-          }));
-          card.appendChild(q); card.appendChild(m); card.appendChild(fila);
-          cont.appendChild(card);
-        });
-      }).adminTareas();
+        .withSuccessHandler(function (t) { ta.value = t; estadoPrompt(''); })
+        .withFailureHandler(function (e) { ta.value = ''; estadoPrompt(e.message, true); })
+        .obtenerPrompt();
     }
 
-    function botonTarea(txt, fn) {
-      var b = document.createElement('button'); b.type = 'button'; b.className = 'accion sec'; b.textContent = txt;
-      b.addEventListener('click', fn); return b;
-    }
+    document.getElementById('prof-prompt-guardar').addEventListener('click', function () {
+      estadoPrompt('Guardando…');
+      google.script.run
+        .withSuccessHandler(function () { estadoPrompt('Prompt guardado.'); })
+        .withFailureHandler(function (e) { estadoPrompt(e.message, true); })
+        .guardarPrompt(document.getElementById('prof-prompt').value);
+    });
 
-    document.getElementById('adm-tarea-form').addEventListener('submit', function (e) {
-      e.preventDefault();
-      var est = document.getElementById('adm-tarea-estado');
-      est.textContent = 'Creando…'; est.className = 'estado';
+    document.getElementById('prof-prompt-restaurar').addEventListener('click', function () {
+      if (!confirm('¿Volver al prompt de fábrica? Se pierde el actual.')) return;
+      estadoPrompt('Restaurando…');
+      google.script.run
+        .withSuccessHandler(function (t) {
+          document.getElementById('prof-prompt').value = t;
+          estadoPrompt('Restaurado el prompt de fábrica.');
+        })
+        .withFailureHandler(function (e) { estadoPrompt(e.message, true); })
+        .restaurarPrompt();
+    });
+
+    document.getElementById('prof-crear').addEventListener('click', function () {
+      var e = document.getElementById('prof-estado-r');
+      e.textContent = 'Creando…'; e.className = 'estado';
       google.script.run
         .withSuccessHandler(function () {
-          est.textContent = 'Tarea creada.'; est.className = 'estado ok';
-          document.getElementById('adm-tarea-enunciado').value = '';
-          document.getElementById('adm-tarea-dias').value = '';
-          cargarTareasAdmin();
+          e.textContent = '✅ Ronda creada y abierta.'; e.className = 'estado ok';
+          document.getElementById('r-enunciado').value = '';
+          cargarRondas();
         })
-        .withFailureHandler(function (err) { est.textContent = err.message; est.className = 'estado err'; })
-        .adminCrearTarea(
-          document.getElementById('adm-tarea-enunciado').value,
-          document.getElementById('adm-tarea-seccion').value,
-          document.getElementById('adm-tarea-dias').value);
+        .withFailureHandler(function (err) { e.textContent = '❌ ' + err.message; e.className = 'estado err'; })
+        .crearRonda({
+          enunciado: document.getElementById('r-enunciado').value,
+          seccion: document.getElementById('r-seccion').value,
+          modo: document.getElementById('r-modo').value,
+          cierra_entrega_el: document.getElementById('r-fin-entrega').value,
+          cierra_votacion_el: document.getElementById('r-fin-voto').value
+        });
     });
 
-    function cargarAlumnos() {
-      var cont = document.getElementById('adm-alumnos');
-      cont.innerHTML = '<div class="placeholder">Cargando…</div>';
-      google.script.run.withSuccessHandler(function (filas) {
-        if (!filas.length) { cont.innerHTML = '<div class="placeholder">Aún no hay actividad.</div>'; return; }
-        var html = '<div style="overflow-x:auto"><table style="width:100%; border-collapse:collapse; font-size:13px;">' +
-          '<tr style="text-align:left; color:#5b6b73;"><th>Alumno</th><th>Con.</th><th>Cons.</th><th>Apor.</th><th>Val.</th><th>Min.</th><th>Última</th><th></th></tr>';
-        filas.forEach(function (f) {
-          html += '<tr style="border-top:1px solid var(--borde);">' +
-            '<td style="padding:4px 6px; word-break:break-all;">' + f.usuario + '</td>' +
-            '<td>' + f.conexiones + '</td><td>' + f.consultas + '</td><td>' + f.aportaciones + '</td>' +
-            '<td>' + f.valoraciones + '</td><td>' + f.minutos + '</td><td>' + (f.ultima_conexion || '') + '</td>' +
-            '<td><button type="button" class="accion sec" data-u="' + encodeURIComponent(f.usuario) + '">Reset</button></td></tr>';
-        });
-        html += '</table></div>';
-        cont.innerHTML = html;
-        Array.prototype.forEach.call(cont.querySelectorAll('button[data-u]'), function (b) {
-          b.addEventListener('click', function () {
-            var u = decodeURIComponent(b.getAttribute('data-u'));
-            if (!confirm('¿Reiniciar contadores de ' + u + '?')) return;
-            google.script.run.withSuccessHandler(cargarAlumnos).adminResetUsuario(u);
-          });
-        });
-      }).adminResumen();
+    function initPanel() {
+      var cont = document.getElementById('prof-arbol');
+      cont.textContent = 'Cargando…';
+      google.script.run
+        .withSuccessHandler(function (d) {
+          panelCargado = true;
+          panelCfg = d;
+          cont.innerHTML = '';
+          d.arbol.children.forEach(function (h) { cont.appendChild(nodoPanel(h)); });
+          d.arbol.files.forEach(function (f) { filaVisible(f.id, f.name, f.oculto, cont); });
+          document.getElementById('u-libres').value = d.gate.LIBRES;
+          document.getElementById('u-aporta').value = d.gate.REQ_APORTA;
+          document.getElementById('u-valora').value = d.gate.REQ_VALORA;
+          pintarPulso(d.pulso, d.gate);
+          cargarRondas();
+          cargarPrompt();
+        })
+        .withFailureHandler(function (err) { cont.textContent = err.message; })
+        .panelProfesor();
     }
 
+    document.getElementById('prof-guardar').addEventListener('click', function () {
+      var e = document.getElementById('prof-estado');
+      var cambios = [];
+      Array.prototype.forEach.call(
+        document.querySelectorAll('#prof-arbol input[type=checkbox]'), function (c) {
+          cambios.push({ id: c.getAttribute('data-id'), visible: c.checked });
+        });
+      e.textContent = 'Guardando…'; e.className = 'estado';
+      google.script.run
+        .withSuccessHandler(function (r) {
+          e.textContent = '✅ Guardado (' + r.cambiados + ' elementos).';
+          e.className = 'estado ok';
+          arbolCargado = false;
+        })
+        .withFailureHandler(function (err) { e.textContent = '❌ ' + err.message; e.className = 'estado err'; })
+        .guardarVisibilidad(cambios);
+    });
+
+    document.getElementById('prof-sync').addEventListener('click', function () {
+      var e = document.getElementById('prof-estado');
+      e.textContent = 'Buscando…'; e.className = 'estado';
+      google.script.run
+        .withSuccessHandler(function (r) {
+          e.textContent = r.nuevos ? ('✅ ' + r.nuevos + ' elementos nuevos dados de alta.')
+                                   : 'No hay nada nuevo en el Drive.';
+          e.className = 'estado ok';
+          if (r.nuevos) { panelCargado = false; initPanel(); }
+        })
+        .withFailureHandler(function (err) { e.textContent = '❌ ' + err.message; e.className = 'estado err'; })
+        .sincronizarCatalogo();
+    });
+
+    document.getElementById('prof-umbrales').addEventListener('click', function () {
+      var e = document.getElementById('prof-estado-u');
+      e.textContent = 'Guardando…'; e.className = 'estado';
+      google.script.run
+        .withSuccessHandler(function (g) {
+          e.textContent = '✅ Cada bloque son ' + g.LIBRES + ' consultas.';
+          e.className = 'estado ok';
+        })
+        .withFailureHandler(function (err) { e.textContent = '❌ ' + err.message; e.className = 'estado err'; })
+        .guardarUmbrales({
+          LIBRES: document.getElementById('u-libres').value,
+          REQ_APORTA: document.getElementById('u-aporta').value,
+          REQ_VALORA: document.getElementById('u-valora').value
+        });
+    });
+
     // ---------- Arranque ----------
+    google.script.run.withSuccessHandler(function (esProfe) {
+      if (esProfe) document.getElementById('nav-profesor').hidden = false;
+    }).soyProfe();
+
     mostrar('consultar');
   </script>
 </body>

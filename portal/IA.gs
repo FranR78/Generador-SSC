@@ -110,15 +110,26 @@ function preguntar(pregunta, fileIds) {
   if (!fileIds || !fileIds.length) throw new Error('Selecciona al menos un PDF.');
   if (fileIds.length > MAX_PDFS_PER_QUERY) throw new Error('Máximo ' + MAX_PDFS_PER_QUERY + ' PDF por pregunta.');
 
+  var permitidos = idsPermitidos_();
+  fileIds.forEach(function (id) {
+    if (!permitidos[id]) throw new Error('Ese documento no está disponible ahora mismo.');
+  });
+
   var usuario = usuarioActual();
   var estado = gate_estado(usuario);
   if (estado.bloqueado) throw new Error(gate_mensajeBloqueo_(estado));
 
   var key = ia_getKey_();
-  var parts = [], nombres = [];
+  var parts = [], nombres = [], total = 0;
   fileIds.forEach(function (id) {
     var file = DriveApp.getFileById(id);
     if (file.getSize() > MAX_PDF_BYTES) throw new Error('"' + file.getName() + '" pesa >15 MB.');
+    // El límite que importa es el del conjunto: la petición entera viaja en una
+    // sola llamada y UrlFetchApp la rechaza mucho antes de los 5 × 15 MB.
+    total += file.getSize();
+    if (total > MAX_TOTAL_BYTES) {
+      throw new Error('Los PDF seleccionados suman demasiado. Elige menos o más pequeños.');
+    }
     nombres.push(file.getName());
     parts.push({ inlineData: { mimeType: 'application/pdf', data: Utilities.base64Encode(file.getBlob().getBytes()) } });
   });
@@ -153,3 +164,33 @@ function preguntar(pregunta, fileIds) {
   }
   throw new Error('Error de IA: ' + ultimoError);
 }
+
+
+// ---------- Prompt de la IA, editable por el profesorado ----------
+// Vivia en el panel Admin, que se ha retirado. El prompt sigue en las
+// Propiedades del script del portal (no en la Hoja), pero quien puede tocarlo
+// lo decide la puerta de datos, para no mantener dos listas de profesores.
+
+function ia_exigirProfe_() {
+  if (!soyProfe()) throw new Error('Solo el profesorado puede cambiar el prompt.');
+}
+
+function obtenerPrompt() {
+  ia_exigirProfe_();
+  return ia_prompt_();
+}
+
+function guardarPrompt(texto) {
+  ia_exigirProfe_();
+  texto = String(texto || '').trim();
+  if (texto.length < 20) throw new Error('El prompt es demasiado corto.');
+  PropertiesService.getScriptProperties().setProperty(IA_PROMPT_PROP, texto);
+  return true;
+}
+
+function restaurarPrompt() {
+  ia_exigirProfe_();
+  PropertiesService.getScriptProperties().deleteProperty(IA_PROMPT_PROP);
+  return ia_prompt_();
+}
+

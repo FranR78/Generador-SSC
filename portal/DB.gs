@@ -1,214 +1,147 @@
 /**
- * DB.gs — Base de datos en una Hoja de cálculo compartida (prefijo db_).
- * La Hoja es del profe y se comparte con el alumnado como EDITOR (cada alumno
- * ejecuta el webapp como él mismo y necesita escribir sus datos).
- * ID en Propiedades del script: DB_SHEET_ID.
+ * DB.gs — Cliente de la puerta de datos (prefijo db_).
  *
- * Setup (una vez, el profe, desde el editor): ejecutar db_setup().
- * El acceso a columnas es POR NOMBRE (fila de cabecera), así el esquema puede
- * crecer sin romper nada; db_ensureSchema_() añade pestañas/columnas que falten.
+ * El portal ya NO abre la Hoja: todas las lecturas y escrituras pasan por el
+ * proyecto "Datos" (ver datos/Datos.gs), que se ejecuta como el profe y es el
+ * único con acceso a la Hoja. Así el alumnado no puede tocar sus contadores ni
+ * leer las valoraciones ajenas.
+ *
+ * Propiedades del script: DATOS_URL -> URL /exec del despliegue de Datos.
+ * Puesta en marcha: docs/DESPLIEGUE_DATOS.md
  */
-var DB_SHEET_PROP = 'DB_SHEET_ID';
-var DB_SCHEMA = {
-  'Tareas':        ['tarea_id', 'enunciado', 'seccion', 'creada_por', 'timestamp', 'estado', 'fecha_caduca'],
-  'Aportaciones':  ['aportacion_id', 'tarea_id', 'usuario', 'texto', 'timestamp'],
-  'Valoraciones':  ['valoracion_id', 'aportacion_id', 'usuario', 'voto', 'timestamp'],
-  'Actividad':     ['usuario', 'consultas', 'aportaciones', 'valoraciones', 'conexiones', 'tiempo_seg', 'ultima_conexion', 'actualizado']
-};
-var db_schemaOk_ = false;   // caché por ejecución
+var DATOS_URL_PROP = 'DATOS_URL';
 
-function db_setup() {
-  var id = PropertiesService.getScriptProperties().getProperty(DB_SHEET_PROP);
-  var ss;
-  if (id) {
-    try { ss = SpreadsheetApp.openById(id); } catch (e) { ss = null; }
+/**
+ * Llama a una operación de la puerta de datos.
+ * Envía dos tokens del usuario que accede: el de acceso (cabecera, para pasar
+ * el control de acceso del webapp) y el de identidad (cuerpo, para que Datos
+ * verifique quién llama sin fiarse de lo que se le mande).
+ */
+function db_call_(op, args) {
+  var url = PropertiesService.getScriptProperties().getProperty(DATOS_URL_PROP);
+  if (!url) throw new Error('Falta configurar DATOS_URL en Propiedades del script.');
+
+  var idToken = ScriptApp.getIdentityToken();
+  if (!idToken) throw new Error('No se pudo obtener tu identidad. Vuelve a autorizar el portal.');
+
+  var opciones = {
+    method: 'post',
+    contentType: 'application/json',
+    headers: { Authorization: 'Bearer ' + ScriptApp.getOAuthToken() },
+    payload: JSON.stringify({ token: idToken, op: op, args: args || {} }),
+    muteHttpExceptions: true,
+    followRedirects: false
+  };
+
+  var resp = UrlFetchApp.fetch(url, opciones);
+  // Los webapp responden con un 302 a googleusercontent; al seguirlo hay que
+  // reenviar la cabecera a mano (UrlFetchApp no la arrastra en el redirect).
+  var saltos = 0;
+  while (resp.getResponseCode() >= 300 && resp.getResponseCode() < 400 && saltos++ < 3) {
+    var destino = resp.getAllHeaders()['Location'] || resp.getAllHeaders()['location'];
+    if (!destino) break;
+    resp = UrlFetchApp.fetch(destino, opciones);
   }
-  if (!ss) {
-    ss = SpreadsheetApp.create('Generador-SSC — BD');
-    PropertiesService.getScriptProperties().setProperty(DB_SHEET_PROP, ss.getId());
+
+  if (resp.getResponseCode() !== 200) {
+    throw new Error('No se pudo contactar con la base de datos (HTTP ' + resp.getResponseCode() + ').');
   }
-  db_ensureSchema_(ss);
-  // Semilla de tareas si está vacía.
-  var t = ss.getSheetByName('Tareas');
-  if (t.getLastRow() < 2) {
-    [['Define y explica la misión del compresor del A/A', 'Climatización'],
-     ['Explica el ciclo del refrigerante paso a paso', 'Climatización'],
-     ['Síntomas de una válvula de expansión obturada', 'Climatización']
-    ].forEach(function (s) {
-      t.appendRow([Utilities.getUuid().slice(0, 8), s[0], s[1], 'profe', new Date(), 'abierta', '']);
-    });
+
+  var cuerpo;
+  try {
+    cuerpo = JSON.parse(resp.getContentText());
+  } catch (err) {
+    throw new Error('Respuesta inesperada de la base de datos.');
   }
-  return ss.getUrl();
+  if (!cuerpo.ok) throw new Error(cuerpo.error || 'Error en la base de datos.');
+  return cuerpo.res;
 }
 
-function db_ss_() {
-  var id = PropertiesService.getScriptProperties().getProperty(DB_SHEET_PROP);
-  if (!id) throw new Error('Falta configurar DB_SHEET_ID. El profe debe ejecutar db_setup() una vez.');
-  var ss = SpreadsheetApp.openById(id);
-  if (!db_schemaOk_) { db_ensureSchema_(ss); db_schemaOk_ = true; }
-  return ss;
-}
+// ---------------------------------------------------------------- tareas ---
 
-function db_ensureSchema_(ss) {
-  Object.keys(DB_SCHEMA).forEach(function (nombre) {
-    var sh = ss.getSheetByName(nombre) || ss.insertSheet(nombre);
-    var req = DB_SCHEMA[nombre];
-    var lastCol = Math.max(1, sh.getLastColumn());
-    var head = sh.getRange(1, 1, 1, lastCol).getValues()[0].map(String);
-    var faltan = req.filter(function (c) { return head.indexOf(c) < 0; });
-    if (head.join('') === '' ) {                 // hoja nueva: escribe cabecera entera
-      sh.getRange(1, 1, 1, req.length).setValues([req]).setFontWeight('bold');
-    } else if (faltan.length) {                  // añade columnas que falten al final
-      sh.getRange(1, head.length + 1, 1, faltan.length).setValues([faltan]).setFontWeight('bold');
-    }
-  });
-}
-
-function db_sheet_(nombre) {
-  var sh = db_ss_().getSheetByName(nombre);
-  if (!sh) throw new Error('Falta la pestaña "' + nombre + '".');
-  return sh;
-}
-
-function db_headers_(sh) {
-  var vals = sh.getRange(1, 1, 1, sh.getLastColumn()).getValues()[0];
-  var map = {};
-  vals.forEach(function (n, i) { map[String(n)] = i + 1; });   // 1-based
-  return map;
-}
-
-function db_now_() { return new Date(); }
-
-// ---------- Tareas ----------
 function tareasAbiertas() {
-  var sh = db_sheet_('Tareas'), h = db_headers_(sh);
-  var vals = sh.getDataRange().getValues();
-  var ahora = db_now_(), out = [];
-  for (var i = 1; i < vals.length; i++) {
-    var estado = String(vals[i][h.estado - 1]);
-    var caduca = vals[i][h.fecha_caduca - 1];
-    if (estado !== 'abierta') continue;
-    if (caduca instanceof Date && caduca <= ahora) continue;   // caducada
-    out.push({ tarea_id: vals[i][h.tarea_id - 1], enunciado: vals[i][h.enunciado - 1], seccion: vals[i][h.seccion - 1] });
-  }
-  return out;
+  return db_call_('tareas');
 }
 
-function db_enunciado_(tareaId) {
-  var sh = db_sheet_('Tareas'), h = db_headers_(sh);
-  var vals = sh.getDataRange().getValues();
-  for (var i = 1; i < vals.length; i++) if (vals[i][h.tarea_id - 1] === tareaId) return vals[i][h.enunciado - 1];
-  return '';
-}
+// ---------------------------------------------------------- aportaciones ---
 
-// ---------- Aportaciones ----------
 function aportar(tareaId, texto) {
-  texto = (texto || '').trim();
-  if (!tareaId) throw new Error('Elige una tarea.');
-  if (texto.length < 15) throw new Error('La aportación es demasiado corta.');
-  var usuario = usuarioActual();
-  var lock = LockService.getScriptLock(); lock.waitLock(15000);
-  try {
-    db_sheet_('Aportaciones').appendRow([Utilities.getUuid().slice(0, 8), tareaId, usuario, texto, db_now_()]);
-    db_inc_(usuario, 'aportaciones', 1);
-  } finally { lock.releaseLock(); }
-  return true;
+  return db_call_('aportar', { tareaId: tareaId, texto: texto });
 }
 
-/** Aportaciones de OTROS que este usuario aún no ha valorado (máx. 15). */
 function aportacionesParaValorar() {
-  var usuario = usuarioActual();
-  var aSh = db_sheet_('Aportaciones'), aH = db_headers_(aSh), aport = aSh.getDataRange().getValues();
-  var vSh = db_sheet_('Valoraciones'), vH = db_headers_(vSh), vals = vSh.getDataRange().getValues();
-  var yaValoradas = {};
-  for (var i = 1; i < vals.length; i++) if (vals[i][vH.usuario - 1] === usuario) yaValoradas[vals[i][vH.aportacion_id - 1]] = true;
-  var out = [];
-  for (var j = 1; j < aport.length; j++) {
-    var id = aport[j][aH.aportacion_id - 1], autor = aport[j][aH.usuario - 1];
-    if (autor === usuario || yaValoradas[id]) continue;
-    out.push({ aportacion_id: id, tarea_id: aport[j][aH.tarea_id - 1], enunciado: db_enunciado_(aport[j][aH.tarea_id - 1]), texto: aport[j][aH.texto - 1] });
-    if (out.length >= 15) break;
-  }
-  return out;
+  return db_call_('paraValorar');
 }
 
-// ---------- Valoraciones ----------
-function valorar(aportacionId, voto) {
-  voto = parseInt(voto, 10);
-  if (!aportacionId) throw new Error('Falta la aportación.');
-  if (!(voto >= 1 && voto <= 5)) throw new Error('Voto de 1 a 5.');
-  var usuario = usuarioActual();
-  var lock = LockService.getScriptLock(); lock.waitLock(15000);
-  try {
-    var vSh = db_sheet_('Valoraciones'), vH = db_headers_(vSh), vals = vSh.getDataRange().getValues();
-    for (var i = 1; i < vals.length; i++) {
-      if (vals[i][vH.aportacion_id - 1] === aportacionId && vals[i][vH.usuario - 1] === usuario) throw new Error('Ya valoraste esta respuesta.');
-    }
-    vSh.appendRow([Utilities.getUuid().slice(0, 8), aportacionId, usuario, voto, db_now_()]);
-    db_inc_(usuario, 'valoraciones', 1);
-  } finally { lock.releaseLock(); }
-  return true;
+function valorar(aportacionId, peso) {
+  return db_call_('valorar', { aportacionId: aportacionId, peso: peso });
 }
 
-// ---------- Actividad (contadores por usuario, acceso por nombre) ----------
-function db_actividadFila_(usuario) {
-  var sh = db_sheet_('Actividad'), h = db_headers_(sh);
-  var vals = sh.getDataRange().getValues();
-  for (var i = 1; i < vals.length; i++) {
-    if (vals[i][h.usuario - 1] === usuario) {
-      return {
-        fila: i + 1, h: h,
-        consultas: +vals[i][h.consultas - 1] || 0,
-        aportaciones: +vals[i][h.aportaciones - 1] || 0,
-        valoraciones: +vals[i][h.valoraciones - 1] || 0,
-        conexiones: +vals[i][h.conexiones - 1] || 0,
-        tiempo_seg: +vals[i][h.tiempo_seg - 1] || 0
-      };
-    }
-  }
-  var fila = sh.getLastRow() + 1;
-  var row = new Array(sh.getLastColumn()).fill('');
-  row[h.usuario - 1] = usuario;
-  ['consultas', 'aportaciones', 'valoraciones', 'conexiones', 'tiempo_seg'].forEach(function (c) { row[h[c] - 1] = 0; });
-  sh.getRange(fila, 1, 1, row.length).setValues([row]);
-  return { fila: fila, h: h, consultas: 0, aportaciones: 0, valoraciones: 0, conexiones: 0, tiempo_seg: 0 };
+function db_rondas_() {
+  return db_call_('rondas');
 }
+
+function db_rondaNueva_(ronda) {
+  return db_call_('rondaNueva', { ronda: ronda });
+}
+
+function db_rondaSet_(tareaId, cambios) {
+  return db_call_('rondaSet', { tareaId: tareaId, cambios: cambios });
+}
+
+// ----------------------------------------------------------- visibilidad ---
+
+/** Config de visibilidad, cacheada un minuto (se pide en cada listado). */
+function db_config_() {
+  var cache = CacheService.getUserCache();
+  var guardada = cache.get('cfg');
+  if (guardada) return JSON.parse(guardada);
+  var cfg = db_call_('config');
+  cache.put('cfg', JSON.stringify(cfg), 60);
+  return cfg;
+}
+
+function db_configSync_(nodos) {
+  CacheService.getUserCache().remove('cfg');
+  return db_call_('configSync', { nodos: nodos });
+}
+
+function db_configSet_(cambios) {
+  CacheService.getUserCache().remove('cfg');
+  return db_call_('configSet', { cambios: cambios });
+}
+
+function db_gateSet_(umbrales) {
+  CacheService.getUserCache().remove('cfg');
+  return db_call_('gateSet', { umbrales: umbrales });
+}
+
+function db_pulso_() {
+  return db_call_('pulso');
+}
+
+function db_tocar_() {
+  return db_call_('tocar');
+}
+
+// ------------------------------------------------------------- actividad ---
+
+/** Reinicia los contadores de un alumno (solo profe; lo valida la puerta). */
+/** Telemetría: una entrada nueva y el tiempo conectado, por la puerta. */
+function db_conexion_() { return db_call_('conexion'); }
+
+function db_latido_(segundos) { return db_call_('latido', { segundos: segundos }); }
+
+
+function db_resetUsuario_(alumno) {
+  return db_call_('resetUsuario', { alumno: alumno });
+}
+
 
 function db_estadoUsuario_(usuario) {
-  var f = db_actividadFila_(usuario);
-  return { consultas: f.consultas, aportaciones: f.aportaciones, valoraciones: f.valoraciones, conexiones: f.conexiones, tiempo_seg: f.tiempo_seg };
-}
-
-function db_inc_(usuario, campo, n) {
-  var f = db_actividadFila_(usuario);
-  var sh = db_sheet_('Actividad');
-  var actual = +sh.getRange(f.fila, f.h[campo]).getValue() || 0;
-  sh.getRange(f.fila, f.h[campo]).setValue(actual + n);
-  sh.getRange(f.fila, f.h.actualizado).setValue(db_now_());
+  return db_call_('estado');
 }
 
 function db_incConsulta_(usuario) {
-  var lock = LockService.getScriptLock(); lock.waitLock(15000);
-  try { db_inc_(usuario, 'consultas', 1); } finally { lock.releaseLock(); }
-}
-
-/** Conexión: al abrir el portal. Cuenta y marca última conexión. */
-function registrarConexion() {
-  var usuario = usuarioActual();
-  var lock = LockService.getScriptLock(); lock.waitLock(15000);
-  try {
-    var f = db_actividadFila_(usuario), sh = db_sheet_('Actividad');
-    sh.getRange(f.fila, f.h.conexiones).setValue(f.conexiones + 1);
-    sh.getRange(f.fila, f.h.ultima_conexion).setValue(db_now_());
-    sh.getRange(f.fila, f.h.actualizado).setValue(db_now_());
-  } finally { lock.releaseLock(); }
-  return true;
-}
-
-/** Latido: suma segundos de tiempo conectado (el cliente lo llama periódicamente). */
-function registrarLatido(segundos) {
-  segundos = parseInt(segundos, 10) || 0;
-  if (segundos <= 0 || segundos > 120) segundos = 30;   // tope anti-abuso
-  db_inc_(usuarioActual(), 'tiempo_seg', segundos);
-  return true;
+  return db_call_('incConsulta');
 }
