@@ -1,0 +1,38 @@
+# Unidad didáctica: Airbag y pretensores (módulo SSC)
+#
+# Hereda de curriculo/ssc.yml todos los apartados comunes. Aquí solo lo suyo.
+
+modulo: ssc
+unidad: airbag
+nombre: Airbag y dispositivos pirotécnicos
+
+cuadernos:
+  - nombre: airbag-1-componentes
+    contenido: unidad de control, captadores, módulos, muelle de reloj, pretensores
+  - nombre: airbag-2-manipulacion
+    contenido: desactivación, desmontaje, transporte, almacenamiento y achatarrado
+
+# Lo que clima no tiene y esta unidad sí: es material pirotécnico, y el RA4
+# va justo de eso. No es un apartado más: es el que puede evitar un disparo
+# accidental en el taller del centro.
+apartados_propios:
+  elemento:
+    - apartado: Manipulación y seguridad
+      ra: 4
+      criterio: PENDIENTE
+      obligatorio: sí
+      despues_de: Cómo comprobarlo
+      pide: >-
+        Tiempo de espera tras cortar la batería antes de tocar nada, orden de
+        desconexión, cómo se transporta y se almacena el módulo, hacia dónde se
+        deja apoyado, qué está prohibido medir con el polímetro, y qué hacer con
+        una unidad disparada o caducada.
+  proceso:
+    - apartado: Manipulación y seguridad
+      ra: 4
+      criterio: PENDIENTE
+      obligatorio: sí
+      despues_de: Condiciones previas
+      pide: >-
+        Desactivación previa, tiempo de espera, herramienta específica,
+        prohibiciones expresas y qué hacer si algo sale mal.

@@ -1,0 +1,23 @@
+# Unidad didáctica: Climatización (módulo SSC)
+#
+# Solo lo propio de esta unidad. Los apartados comunes (misión, principio de
+# funcionamiento, características, comprobación…) se heredan de
+# curriculo/ssc.yml y NO se repiten aquí.
+
+modulo: ssc
+unidad: clima
+nombre: Climatización
+
+# NotebookLM tiene tope de fuentes, así que la unidad se reparte en varios
+# cuadernos. Cada uno genera su tanda de notas y luego se vacía.
+cuadernos:
+  - nombre: clima-1-circuito
+    contenido: componentes del circuito frigorífico
+  - nombre: clima-2-sensores
+    contenido: sensores, presostatos y actuadores
+  - nombre: clima-3-regulacion
+    contenido: regulación, control y climatizador electrónico
+  - nombre: clima-4-taller
+    contenido: procedimientos de taller, carga, vacío, diagnóstico
+
+apartados_propios: []     # de momento ninguno: todo cae en los comunes

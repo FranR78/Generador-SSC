@@ -1,0 +1,120 @@
+# Currículo del módulo SSC — Sistemas de Seguridad y Confortabilidad
+#
+# Esto es el nivel MÓDULO: lo que vale para todas sus unidades didácticas.
+# Lo de cada unidad va en unidades/ssc-<unidad>.yml.
+#
+# ATENCIÓN: la redacción literal de los criterios hay que copiarla de la orden.
+# Lo que está marcado PENDIENTE está sin rellenar a propósito: prefiero dejarlo
+# vacío a poner una redacción inventada que luego acabe en una programación.
+# Los que sí están puestos son los que confirmaste tú.
+
+modulo: ssc
+nombre: Sistemas de Seguridad y Confortabilidad
+
+# ---------------------------------------------------------------------------
+# Apartados COMUNES: los lleva toda nota de este módulo, sea de clima, de
+# airbag o de infotenimiento, y siempre van al mismo criterio. Por eso están
+# aquí y no repetidos en cada unidad: si mañana cambia la redacción de RA1a,
+# se toca este archivo y ya.
+# ---------------------------------------------------------------------------
+
+apartados_comunes:
+  elemento:
+    - apartado: Misión
+      ra: 1
+      criterio: a
+      obligatorio: sí
+      pide: "Para qué sirve, en dos o tres frases."
+    - apartado: Principio de funcionamiento
+      ra: 1
+      criterio: b
+      obligatorio: sí
+      pide: "Cómo lo hace. La física de por medio, al nivel del alumnado."
+    - apartado: Características
+      ra: 1
+      criterio: b
+      obligatorio: sí
+      pide: "Tipo, materiales, conexiones, número de vías, rango de medida."
+    - apartado: Valores de trabajo
+      ra: 3
+      criterio: PENDIENTE
+      pide: "Los valores numéricos, cada uno con las condiciones en que es válido."
+    - apartado: Anomalías frecuentes
+      ra: 3
+      criterio: PENDIENTE
+      pide: "Qué se le estropea y por qué."
+    - apartado: Comportamiento en avería
+      ra: 3
+      criterio: PENDIENTE
+      obligatorio: sí
+      pide: "Qué nota el conductor y qué hace el sistema cuando este elemento falla."
+    - apartado: Cómo comprobarlo
+      ra: 3
+      criterio: PENDIENTE
+      obligatorio: sí
+      pide: "La comprobación concreta: qué se mide, con qué, entre qué bornes o pines, en qué condiciones y qué debe salir."
+
+  proceso:
+    - apartado: Objeto y alcance
+      ra: 1
+      criterio: a
+      obligatorio: sí
+      pide: "Qué resuelve este procedimiento y hasta dónde llega."
+    - apartado: Fundamento
+      ra: 1
+      criterio: b
+      obligatorio: sí
+      pide: "Por qué funciona, la física o la lógica de por medio."
+    - apartado: Condiciones previas
+      ra: 3
+      criterio: PENDIENTE
+      pide: "Qué tiene que cumplirse antes de empezar: estado del vehículo, temperatura, seguridad."
+    - apartado: Equipo y material
+      ra: 3
+      criterio: PENDIENTE
+      pide: "Herramienta, aparatos de medida y consumibles."
+    - apartado: Desarrollo
+      ra: 3
+      criterio: PENDIENTE
+      obligatorio: sí
+      pide: "Los pasos, en lista numerada y en orden."
+    - apartado: Valores de referencia
+      ra: 3
+      criterio: PENDIENTE
+      pide: "Los valores que hay que obtener, con sus condiciones y tolerancias."
+    - apartado: Interpretación y errores frecuentes
+      ra: 3
+      criterio: PENDIENTE
+      pide: "Qué significa cada lectura y en qué se falla normalmente al hacerlo."
+    - apartado: Verificación final
+      ra: 3
+      criterio: PENDIENTE
+      obligatorio: sí
+      pide: "Cómo se comprueba que ha quedado bien."
+
+# Apartados que no van a criterio: son de servicio, no de currículo.
+apartados_sin_criterio:
+  - Imágenes requeridas
+  - Advertencias
+  - Discrepancias
+
+# ---------------------------------------------------------------------------
+# Los RA y sus criterios, tal cual los redacta la orden.
+# ---------------------------------------------------------------------------
+
+resultados:
+  1:
+    enunciado: PENDIENTE — copiar de la orden
+    criterios:
+      a: Identifica los elementos que componen los sistemas de seguridad y confortabilidad del vehículo.
+      b: Describe las características y los principios de funcionamiento de esos elementos.
+      # c, d, e… PENDIENTE
+  2:
+    enunciado: PENDIENTE — copiar de la orden
+    criterios: {}
+  3:
+    enunciado: PENDIENTE — copiar de la orden
+    criterios: {}
+  4:
+    enunciado: PENDIENTE — mantenimiento de dispositivos pirotécnicos
+    criterios: {}
