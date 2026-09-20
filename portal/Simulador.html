@@ -1,0 +1,143 @@
+<!-- Simulador.html — Entrenador de diagnóstico. Sección del portal.
+     Los casos NO están aquí: los sirve la puerta de datos desde la Hoja. -->
+<style>
+  .sim .cols{display:grid;grid-template-columns:1fr 320px;gap:14px}
+  @media(max-width:900px){.sim .cols{grid-template-columns:1fr}}
+  .sim .tarjeta{background:#fff;border:2px solid var(--azul,#0a63aa);border-radius:12px;padding:12px;margin-bottom:12px}
+  .sim h3{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--azul-os,#063f70);
+     margin:0 0 8px;border-bottom:1px solid #c6d9e6;padding-bottom:4px}
+  .sim .fila{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+  .sim .seg button{font-family:inherit;font-size:.78rem;font-weight:700;cursor:pointer;
+     border:1.5px solid var(--azul,#0a63aa);background:#fff;color:var(--azul-os,#063f70);border-radius:8px;padding:7px 11px}
+  .sim .seg button.on{background:var(--azul,#0a63aa);color:#fff}
+  .sim .pista{font-size:.74rem;color:#5a6b78;margin:6px 0 0}
+  .sim svg.esq{width:100%;height:auto;background:#fbfdff;border-radius:8px}
+  .sim .caja{fill:#dfe9f2;stroke:#063f70;stroke-width:2}
+  .sim .cbl{stroke:#1a2b38;stroke-width:2.5;fill:none}
+  .sim .cbl.off{stroke-dasharray:5 5;stroke:#b0bfcb}
+  .sim .pin{fill:#fff;stroke:#063f70;stroke-width:2;cursor:pointer}
+  .sim .pin:hover{fill:#cfe6ff}
+  .sim .pin.A{fill:#d1493b;stroke:#8e2a20} .sim .pin.B{fill:#1a1a1a;stroke:#000}
+  .sim .et{font-size:11px;font-weight:700;fill:#101f2b;text-anchor:middle}
+  .sim .etp{font-size:9.5px;fill:#5a6b78;text-anchor:middle}
+  .sim .conector{cursor:pointer}
+  .sim .conector rect{fill:#ffe9a8;stroke:#b8860b;stroke-width:2}
+  .sim .conector rect.hit{fill:transparent;stroke:none}
+  .sim .conector.off rect{fill:#f3d7d4;stroke:#c0392b}
+  .sim .conector.off rect.hit{fill:transparent;stroke:none}
+  .sim .mm{background:#f6c341;border-radius:14px;padding:10px;border:3px solid #2b2b2b}
+  .sim .mm .disp{background:#cfd8c8;border:2px solid #2b2b2b;border-radius:6px;padding:8px;text-align:right;
+     font-family:ui-monospace,Menlo,Consolas,monospace;font-size:1.5rem;font-weight:700;color:#12200f;min-height:46px}
+  .sim .mm .marca{font-size:.62rem;font-weight:800;color:#2b2b2b;letter-spacing:.1em;text-align:center;margin-top:4px}
+  .sim .dial{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-top:8px}
+  .sim .dial button{font-family:inherit;font-size:.72rem;font-weight:800;cursor:pointer;border:1.5px solid #2b2b2b;
+     background:#2b2b2b;color:#f6c341;border-radius:6px;padding:6px 2px}
+  .sim .dial button.on{background:#f6c341;color:#2b2b2b}
+  .sim .bornas{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-top:6px}
+  .sim .bornas button{font-family:inherit;font-size:.66rem;font-weight:700;cursor:pointer;border:1.5px solid #2b2b2b;
+     background:#3c3c3c;color:#ddd;border-radius:6px;padding:6px 2px}
+  .sim .bornas button.on{background:#d1493b;color:#fff;border-color:#8e2a20}
+  .sim .bornas button.com{background:#1a1a1a;color:#fff}
+  .sim .ir{width:100%;font-family:inherit;font-size:.92rem;font-weight:800;cursor:pointer;border:none;
+     border-radius:10px;padding:11px;color:#fff;background:var(--azul-os,#063f70);margin-top:10px}
+  .sim .ir:disabled{opacity:.4;cursor:default}
+  .sim .nota{margin-top:9px;border-radius:8px;padding:9px;font-size:.82rem;display:none}
+  .sim .nota.v{display:block}
+  .sim .nota.ok{background:#e9f7ef;border:1.5px solid #1e874b}
+  .sim .nota.invalida{background:#fdf6e3;border:1.5px solid #b8860b}
+  .sim .nota.imposible{background:#fdeceb;border:1.5px solid #c0392b}
+  .sim table{width:100%;border-collapse:collapse;font-size:.74rem;margin-top:4px}
+  .sim th{background:#063f70;color:#fff;padding:5px 4px;text-align:left;font-size:.66rem;
+     text-transform:uppercase;letter-spacing:.04em}
+  .sim td{padding:5px 4px;border-bottom:1px solid #c6d9e6}
+  .sim tr.ok td{background:#f0faf4} .sim tr.fuera td{background:#fffaf0}
+  .sim tr.escala td,.sim tr.concepto td{background:#fdf0ee}
+  .sim .vd{font-weight:700;font-size:.7rem}
+  .sim .vd.ok{color:#1e874b} .sim .vd.fuera{color:#b8860b}
+  .sim .vd.escala,.sim .vd.concepto{color:#c0392b} .sim .vd.medida{color:#5a6b78}
+  .sim .origen{display:inline-block;font-size:.6rem;font-weight:700;border-radius:8px;padding:1px 5px;
+     background:#eef4f9;color:#5a6b78;border:1px solid #c6d9e6}
+  .sim .casos button{display:block;width:100%;text-align:left;font-family:inherit;font-size:.84rem;
+     cursor:pointer;background:#fff;border:1.5px solid #c6d9e6;border-radius:9px;padding:9px 10px;margin-bottom:6px}
+  .sim .casos button:hover{background:#eef5fa;border-color:var(--azul,#0a63aa)}
+  .sim .casos small{display:block;color:#5a6b78;font-size:.72rem;margin-top:2px}
+  .sim .vacio{font-size:.8rem;color:#5a6b78;font-style:italic}
+</style>
+
+<div class="sim">
+  <div id="sim-lista">
+    <h3>Casos disponibles</h3>
+    <div class="casos" id="sim-casos"><p class="vacio">Cargando casos…</p></div>
+  </div>
+
+  <div id="sim-caso" hidden>
+    <div class="fila" style="justify-content:space-between;margin-bottom:8px">
+      <strong id="sim-titulo"></strong>
+      <button class="seg" id="sim-volver"
+        style="font-family:inherit;font-size:.76rem;font-weight:700;cursor:pointer;border:1.5px solid #c6d9e6;
+               background:#fff;border-radius:8px;padding:6px 10px">← Otros casos</button>
+    </div>
+    <p class="pista" id="sim-veh"></p>
+    <div class="tarjeta" style="border-color:#c6d9e6"><strong>Síntoma:</strong> <span id="sim-sintoma"></span></div>
+
+    <div class="cols">
+      <div>
+        <div class="tarjeta">
+          <h3>Esquema eléctrico</h3>
+          <div id="sim-esquema"></div>
+          <p class="pista">Toca un <strong>pin</strong> para la punta roja (A+) y luego la negra (B−).
+             Toca el <strong>conector</strong> para conectarlo o desconectarlo.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Ficha de comprobación</h3>
+          <table id="sim-ficha">
+            <tr><th>Nº</th><th>Medir en</th><th>A+</th><th>B−</th><th>Conect.</th><th>Estado</th>
+                <th>Prescrito</th><th>Medida</th><th>Veredicto</th></tr>
+          </table>
+          <p class="vacio" id="sim-fvacio">Todavía no has anotado ninguna comprobación.</p>
+        </div>
+      </div>
+      <div>
+        <div class="tarjeta">
+          <h3>Estado del vehículo</h3>
+          <div class="fila seg" id="sim-llave">
+            <button data-c="off" class="on">Sin contacto</button>
+            <button data-c="on">Contacto</button>
+            <button data-c="motor">Motor en marcha</button>
+          </div>
+          <p class="pista" id="sim-estcon"></p>
+        </div>
+        <div class="tarjeta">
+          <h3>Polímetro</h3>
+          <div class="mm">
+            <div class="disp" id="sim-disp">---</div>
+            <div class="marca">TRUE RMS · 6000 COUNTS</div>
+            <div class="dial seg" id="sim-dial">
+              <button data-f="off" class="on">OFF</button>
+              <button data-f="vdc">V⎓</button>
+              <button data-f="ohm">Ω</button>
+              <button data-f="amp">A</button>
+            </div>
+            <div class="bornas" id="sim-bornas">
+              <button data-b="20A">20A</button>
+              <button data-b="mA">µA mA</button>
+              <button class="com" disabled>COM</button>
+              <button data-b="VΩ" class="on">VΩHz</button>
+            </div>
+          </div>
+          <button class="ir" id="sim-medir" disabled>Medir</button>
+          <div class="nota" id="sim-nota"></div>
+          <div id="sim-anotar" style="display:none;margin-top:9px">
+            <div class="fila">
+              <input id="sim-val" style="flex:1;padding:7px;border:1.5px solid #0a63aa;border-radius:7px;font-family:inherit">
+              <select id="sim-uni" style="padding:7px;border:1.5px solid #0a63aa;border-radius:7px;font-family:inherit">
+                <option>Ω</option><option>kΩ</option><option>V</option><option>mV</option>
+              </select>
+            </div>
+            <button class="ir" id="sim-anota" style="background:#0a63aa">Anotar en la ficha</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

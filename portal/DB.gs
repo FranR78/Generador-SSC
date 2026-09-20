@@ -128,6 +128,13 @@ function db_tocar_() {
 
 /** Reinicia los contadores de un alumno (solo profe; lo valida la puerta). */
 /** Telemetría: una entrada nueva y el tiempo conectado, por la puerta. */
+/** Simulador: los casos los sirve la puerta, que corre como el profe, para
+    que el alumnado no pueda leer en la Hoja cuál es la avería. */
+function db_casos_() { return db_call_('casos'); }
+
+function db_caso_(casoId) { return db_call_('caso', { casoId: casoId }); }
+
+
 function db_conexion_() { return db_call_('conexion'); }
 
 function db_latido_(segundos) { return db_call_('latido', { segundos: segundos }); }

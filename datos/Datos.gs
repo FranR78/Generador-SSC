@@ -38,7 +38,15 @@ var HEADERS = {
   Actividad: ['usuario', 'consultas', 'aportaciones', 'valoraciones', 'actualizado', 'ultima_conexion',
               'conexiones', 'tiempo_seg'],
   Config: ['tipo', 'id', 'nombre', 'padre', 'visible', 'abre_el'],
-  Ajustes: ['clave', 'valor']
+  Ajustes: ['clave', 'valor'],
+  /* Simulador: las averías son datos, no código. Ver Casos.gs. */
+  Vehiculos: ['vehiculo_id', 'marca', 'modelo', 'sistema', 'esquema_ref',
+              'tension_min', 'tension_max', 'tension_origen'],
+  Puntos:    ['esquema_id', 'punto_id', 'etiqueta', 'descripcion', 'lado'],
+  Tramos:    ['esquema_id', 'desde', 'hasta', 'componente',
+              'r_min', 'r_max', 'unidad', 'origen', 'seccion', 'color', 'por_conector'],
+  Casos:     ['caso_id', 'titulo', 'vehiculo_id', 'esquema_id', 'sintoma',
+              'averia', 'objetivo', 'activo']
 };
 
 // ---------------------------------------------------------------- entrada ---
@@ -113,6 +121,8 @@ function ejecutar_(op, args, usuario) {
     case 'gateSet': return gateSet_(usuario, args.umbrales);
     case 'pulso': return pulso_(usuario);
     case 'tocar': return tocar_(usuario);
+    case 'casos': return listarCasos();
+    case 'caso': return cargarCaso(args.casoId);
     case 'conexion': return conexion_(usuario);
     case 'latido': return latido_(usuario, args.segundos);
     case 'resetUsuario': return resetUsuario_(usuario, args.alumno);

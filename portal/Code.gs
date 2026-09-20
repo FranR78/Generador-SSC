@@ -153,6 +153,13 @@ function registrarConexion() { return db_conexion_(); }
 function registrarLatido(segundos) { return db_latido_(segundos); }
 
 
+/** Casos del simulador disponibles para el alumnado. */
+function listarCasosSimulador() { return db_casos_(); }
+
+/** Todo lo que el entrenador necesita para montar un caso. */
+function cargarCasoSimulador(casoId) { return db_caso_(casoId); }
+
+
 function reiniciarContadores(alumno) {
   return db_resetUsuario_(alumno);
 }

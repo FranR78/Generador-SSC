@@ -110,6 +110,7 @@
     <button data-sec="consultar" class="activo">Consultar</button>
     <button data-sec="manual">Manual</button>
     <button data-sec="juegos">Juegos</button>
+    <button data-sec="simulador">Simulador</button>
     <button data-sec="cuenta">Mi cuenta</button>
     <button data-sec="profesor" id="nav-profesor" hidden>Panel</button>
   </nav>
@@ -118,6 +119,7 @@
     <section id="sec-consultar"><?!= include('Consulta') ?></section>
     <section id="sec-manual" hidden><?!= include('Manual') ?></section>
     <section id="sec-juegos" hidden><?!= include('Juegos') ?></section>
+    <section id="sec-simulador" hidden><?!= include('Simulador') ?></section>
     <section id="sec-cuenta" hidden><?!= include('Cuenta') ?></section>
     <section id="sec-profesor" hidden><?!= include('Profesor') ?></section>
   </main>
@@ -129,7 +131,7 @@
 
     function mostrar(sec) {
       seccionActual = sec;
-      ['consultar', 'manual', 'juegos', 'cuenta', 'profesor'].forEach(function (s) {
+      ['consultar', 'manual', 'juegos', 'simulador', 'cuenta', 'profesor'].forEach(function (s) {
         document.getElementById('sec-' + s).hidden = (s !== sec);
       });
       Array.prototype.forEach.call(document.querySelectorAll('#nav button'), function (b) {
@@ -139,6 +141,7 @@
       if (sec === 'consultar') refrescarGate();
       if (sec === 'manual') initManual();
       if (sec === 'cuenta' && !cuentaCargada) initCuenta();
+      if (sec === 'simulador') initSimulador();
       if (sec === 'profesor' && !panelCargado) initPanel();
     }
     Array.prototype.forEach.call(document.querySelectorAll('#nav button'), function (b) {
@@ -695,6 +698,328 @@
     }).soyProfe();
 
     mostrar('consultar');
+
+    // ---------- Simulador de diagnóstico ----------
+    // El motor es el mismo que se probó suelto; los casos vienen de la Hoja.
+    var R_UCE = 2200;
+
+    function banda(r) { return (r && typeof r === 'object' && r.min !== undefined) ? r : null; }
+    function valorDe(r) { var b = banda(r); return b ? (b.min + b.max) / 2 : r; }
+
+    /* --- Grafo con la avería aplicada --------------------------------------- */
+    function tramosCon(averiaId, conectorPuesto) {
+      var av = AVERIAS[averiaId] || AVERIAS.ninguna;
+      var ef = av.efecto || {};
+      var out = [];
+      TRAMOS.forEach(function (t) {
+        var r = valorDe(t.r);
+        if (ef.tramo === t.de + '|' + t.a) r = ef.r;
+        if (t.porConector === 'T4t' && !conectorPuesto) r = Infinity;  // conector fuera: tramo abierto
+        out.push({ de: t.de, a: t.a, r: r, componente: t.componente, base: t });
+      });
+      return out;
+    }
+
+    /* --- Resistencia entre dos puntos (camino más corto por el grafo) -------- */
+    function resistenciaEntre(a, b, tramos) {
+      var mejor = Infinity;
+      (function dfs(n, visit, acc) {
+        if (acc === Infinity) return;
+        if (n === b) { mejor = Math.min(mejor, acc); return; }
+        tramos.forEach(function (t) {
+          var sig = t.de === n ? t.a : (t.a === n ? t.de : null);
+          if (!sig || visit.indexOf(sig) >= 0) return;
+          dfs(sig, visit.concat([sig]), acc + t.r);
+        });
+      })(a, [a], 0);
+      return mejor;
+    }
+
+    /* --- La medida ----------------------------------------------------------
+       estado  = { contacto:'off'|'on'|'motor', conector:true|false }
+       inst    = { funcion:'ohm'|'vdc', bornaRoja:'VΩ'|'mA'|'20A' }
+       ------------------------------------------------------------------------ */
+    function medir(puntoA, puntoB, inst, estado, averiaId) {
+      var errores = [];
+      var tramos = tramosCon(averiaId, estado.conector);
+
+      /* Borna equivocada: esto en el taller funde el fusible del polímetro */
+      if (inst.bornaRoja !== 'VΩ') {
+        return {
+          lectura: '---', unidad: '', veredicto: 'imposible',
+          nota: 'Punta roja en la borna de ' + inst.bornaRoja + '. Para medir ' +
+                (inst.funcion === 'ohm' ? 'resistencia' : 'tensión') +
+                ' va en VΩ. Así has puesto el polímetro en serie: en el taller habrías fundido su fusible.'
+        };
+      }
+
+      if (inst.funcion === 'ohm') {
+        /* Condición de validez nº1: sin tensión en el circuito */
+        if (estado.contacto !== 'off') {
+          return {
+            lectura: 'OL', unidad: 'Ω', veredicto: 'imposible',
+            nota: 'Ohmios con el contacto dado. Con tensión presente la lectura no vale: ' +
+                  'el polímetro mide inyectando su propia corriente. Quita el contacto.'
+          };
+        }
+        var r = resistenciaEntre(puntoA, puntoB, tramos);
+
+        /* Condición de validez nº2: el conector tiene que estar fuera */
+        if (estado.conector) {
+          var paralelo = (r === Infinity) ? R_UCE : (r * R_UCE) / (r + R_UCE);
+          errores.push('conector_puesto');
+          return {
+            lectura: paralelo.toFixed(1), unidad: 'Ω', veredicto: 'invalida',
+            nota: 'Has medido con el conector puesto: lo que lee el polímetro es la bobina ' +
+                  'EN PARALELO con la electrónica de la UCE. El número parece razonable, pero no es la bobina.',
+            errores: errores
+          };
+        }
+        if (r === Infinity) {
+          return { lectura: 'OL', unidad: 'Ω', veredicto: 'medida',
+                   nota: 'Circuito abierto entre esos dos puntos.' };
+        }
+        return { lectura: r.toFixed(1), unidad: 'Ω', veredicto: 'medida' };
+      }
+
+      /* --- Tensión ---------------------------------------------------------- */
+      if (estado.contacto === 'off') {
+        return { lectura: '0.00', unidad: 'V', veredicto: 'medida',
+                 nota: 'Sin contacto no hay tensión: no es una avería, es que el circuito está muerto.' };
+      }
+      if (!estado.conector) {
+        return { lectura: '0.00', unidad: 'V', veredicto: 'invalida',
+                 nota: 'Con el conector desconectado no circula corriente; medir tensión aquí no dice nada. ' +
+                       'Para tensión, el conector va puesto.' };
+      }
+      var av = AVERIAS[averiaId] || AVERIAS.ninguna;
+      var sinMando = !!(av.efecto && av.efecto.sinMando);
+      var abierto = resistenciaEntre('N280:2', 'N280:1', tramos) === Infinity ||
+                    resistenciaEntre('T4t/3', 'N280:2', tramos) === Infinity;
+      var v = sinMando ? 0 : valorDe(ALIMENTACION);
+      if (abierto && !sinMando) v = valorDe(ALIMENTACION);   // sin consumo, la tensión se mantiene
+      return { lectura: v.toFixed(2), unidad: 'V', veredicto: 'medida' };
+    }
+
+    /* --- Veredicto de lo que ANOTA el alumno, por décadas --------------------
+       No exige precisión: exige orden de magnitud. Es lo que distingue
+       "no sé medir" de "he medido y el componente está mal".
+       ------------------------------------------------------------------------ */
+    function juzgar(anotado, prescrito) {
+      var b = banda(prescrito);
+      if (!b) return { clase: 'medida', et: 'Anotada' };
+      var x = parseFloat(String(anotado).replace(',', '.'));
+      if (!isFinite(x)) return { clase: 'medida', et: 'Anotada' };
+
+      if (x >= b.min && x <= b.max) return { clase: 'ok', et: 'Dentro de rango' };
+
+      var centro = (b.min + b.max) / 2;
+      var decadas = Math.abs(Math.log10(Math.max(Math.abs(x), 1e-9) / centro));
+
+      /* Tres décadas justas = confundir ohmios con kiloohmios. Error de escala,
+         no de criterio: sabe qué mide, pero no ha leído bien el instrumento. */
+      if (Math.abs(decadas - 3) <= 0.4) return { clase: 'escala', et: 'Escala o unidad equivocada',
+        nota: 'Ese número encaja si cambias Ω por kΩ. Mira la escala del polímetro.' };
+
+      /* Dos décadas o más: no está midiendo lo que cree. */
+      if (decadas >= 2) return { clase: 'concepto', et: 'Orden de magnitud equivocado',
+        nota: 'Te separan ' + decadas.toFixed(1) + ' décadas del valor esperado. Eso no es ese componente.' };
+
+      /* Mismo orden, fuera de banda: la medida está bien hecha y el componente mal. */
+      return { clase: 'fuera', et: 'Fuera de especificación',
+        nota: 'El orden es correcto, así que la medida está bien hecha: el que está mal es el componente. Esto puede ser el hallazgo.' };
+    }
+
+
+    var simM = null, simEstado = {contacto:'off',conector:true}, simInst = {funcion:'off',bornaRoja:'VΩ'};
+    var simSel = {A:null,B:null}, simUlt = null, simN = 0, simCargado = false;
+    var VEHICULO, NODOS, TRAMOS, AVERIAS, ALIMENTACION;   // los rellena el caso
+
+    function initSimulador(){
+      if(simCargado) return;
+      simCargado = true;
+      google.script.run
+        .withSuccessHandler(pintarCasos)
+        .withFailureHandler(function(e){
+          document.getElementById('sim-casos').innerHTML =
+            '<p class="vacio">No se han podido cargar los casos: '+e.message+'</p>';
+        })
+        .listarCasosSimulador();
+    }
+
+    function pintarCasos(lista){
+      var c=document.getElementById('sim-casos');
+      if(!lista || !lista.length){
+        c.innerHTML='<p class="vacio">Todavía no hay casos. El profesorado los da de alta en la Hoja.</p>';
+        return;
+      }
+      c.innerHTML='';
+      lista.forEach(function(x){
+        var b=document.createElement('button');
+        b.innerHTML='<strong>'+x.titulo+'</strong><small>'+x.vehiculo+'</small>';
+        b.addEventListener('click',function(){ abrirCaso(x.id); });
+        c.appendChild(b);
+      });
+    }
+
+    function abrirCaso(id){
+      google.script.run
+        .withSuccessHandler(montarCaso)
+        .withFailureHandler(function(e){ alert(e.message); })
+        .cargarCasoSimulador(id);
+    }
+
+    function montarCaso(m){
+      simM=m; VEHICULO=m.VEHICULO; NODOS=m.NODOS; TRAMOS=m.TRAMOS;
+      AVERIAS=m.AVERIAS; ALIMENTACION=m.ALIMENTACION;
+      simEstado={contacto:'off',conector:true}; simSel={A:null,B:null}; simUlt=null; simN=0;
+      document.getElementById('sim-lista').hidden=true;
+      document.getElementById('sim-caso').hidden=false;
+      document.getElementById('sim-titulo').textContent=m.caso.titulo;
+      document.getElementById('sim-sintoma').textContent=m.caso.sintoma;
+      document.getElementById('sim-veh').textContent=
+        VEHICULO.marca+' '+VEHICULO.modelo+' · '+VEHICULO.sistema+' · esquema '+VEHICULO.esquema;
+      var t=document.getElementById('sim-ficha');
+      while(t.rows.length>1) t.deleteRow(1);
+      document.getElementById('sim-fvacio').style.display='';
+      document.getElementById('sim-nota').className='nota';
+      document.getElementById('sim-anotar').style.display='none';
+      document.getElementById('sim-disp').textContent='---';
+      simEsquema(); simRefresca();
+    }
+
+    document.getElementById('sim-volver').addEventListener('click',function(){
+      document.getElementById('sim-caso').hidden=true;
+      document.getElementById('sim-lista').hidden=false;
+    });
+
+    /* Dibuja el circuito a partir de los puntos del caso, en dos columnas:
+       la UCE arriba, el conector en medio y el componente abajo. */
+    function simEsquema(){
+      var on=simEstado.conector;
+      var ids=Object.keys(NODOS);
+      var izq=[], der=[];
+      ids.forEach(function(id,i){ (i%2===0?izq:der).push(id); });
+      function pin(id,x,y,et){
+        var c=simSel.A===id?'A':(simSel.B===id?'B':'');
+        return '<g><circle class="pin '+c+'" data-pin="'+id+'" cx="'+x+'" cy="'+y+'" r="8"></circle>'
+             + '<text class="etp" x="'+x+'" y="'+(y-13)+'">'+et+'</text></g>';
+      }
+      var ys=[90,186,252], h='<svg class="esq" viewBox="0 0 620 330">';
+      h+='<rect class="caja" x="40" y="20" width="240" height="46" rx="5"/>'
+       + '<text class="et" x="160" y="48">'+(izq[0]||'').split(':')[0]+'</text>'
+       + '<path class="cbl" d="M100 66 V82"/><path class="cbl" d="M220 66 V82"/>'
+       + '<path class="cbl" d="M100 98 V145"/><path class="cbl" d="M220 98 V145"/>'
+       + '<g class="conector '+(on?'':'off')+'" data-con="1">'
+       +   '<rect class="hit" x="56" y="138" width="208" height="42" rx="8"/>'
+       +   '<rect x="72" y="145" width="56" height="26" rx="4"/>'
+       +   '<rect x="192" y="145" width="56" height="26" rx="4"/>'
+       + '</g>'
+       + '<path class="cbl'+(on?'':' off')+'" d="M100 194 V245"/>'
+       + '<path class="cbl'+(on?'':' off')+'" d="M220 194 V245"/>'
+       + '<rect class="caja" x="60" y="268" width="200" height="44" rx="5"/>'
+       + '<text class="et" x="160" y="295">'+(izq[2]||'').split(':')[0]+'</text>'
+       + '<text class="etp" x="470" y="60">Conector '+(on?'CONECTADO':'DESCONECTADO')+'</text>';
+      for(var k=0;k<3;k++){
+        if(izq[k]) h+=pin(izq[k],100,ys[k],NODOS[izq[k]].et);
+        if(der[k]) h+=pin(der[k],220,ys[k],NODOS[der[k]].et);
+      }
+      h+='</svg>';
+      document.getElementById('sim-esquema').innerHTML=h;
+      document.getElementById('sim-estcon').innerHTML='Conector: <strong>'+(on?'conectado':'desconectado')+'</strong>';
+      document.querySelectorAll('#sim-esquema [data-pin]').forEach(function(el){
+        el.addEventListener('click',function(){ simTocar(el.dataset.pin); });
+      });
+      document.querySelector('#sim-esquema [data-con]').addEventListener('click',function(){
+        simEstado.conector=!simEstado.conector; simEsquema(); simRefresca();
+      });
+    }
+
+    function simTocar(id){
+      if(simSel.A===id) simSel.A=null;
+      else if(simSel.B===id) simSel.B=null;
+      else if(!simSel.A) simSel.A=id;
+      else if(!simSel.B) simSel.B=id;
+      else { simSel.A=id; simSel.B=null; }
+      simEsquema(); simRefresca();
+    }
+    function simRefresca(){
+      document.getElementById('sim-medir').disabled =
+        !(simSel.A && simSel.B && simInst.funcion!=='off');
+    }
+
+    document.querySelectorAll('#sim-llave button').forEach(function(b){
+      b.addEventListener('click',function(){
+        simEstado.contacto=b.dataset.c;
+        document.querySelectorAll('#sim-llave button').forEach(function(x){x.classList.toggle('on',x===b);});
+        simRefresca();
+      });
+    });
+    document.querySelectorAll('#sim-dial button').forEach(function(b){
+      b.addEventListener('click',function(){
+        simInst.funcion=b.dataset.f;
+        document.querySelectorAll('#sim-dial button').forEach(function(x){x.classList.toggle('on',x===b);});
+        simRefresca();
+      });
+    });
+    document.querySelectorAll('#sim-bornas button[data-b]').forEach(function(b){
+      b.addEventListener('click',function(){
+        simInst.bornaRoja=b.dataset.b;
+        document.querySelectorAll('#sim-bornas button[data-b]').forEach(function(x){x.classList.toggle('on',x===b);});
+      });
+    });
+
+    document.getElementById('sim-medir').addEventListener('click',function(){
+      var r=medir(simSel.A,simSel.B,simInst,simEstado,simM.caso.averiaActiva);
+      simUlt=r;
+      document.getElementById('sim-disp').textContent=r.lectura+(r.unidad?' '+r.unidad:'');
+      var n=document.getElementById('sim-nota');
+      n.className='nota v '+(r.veredicto==='medida'?'ok':r.veredicto);
+      n.innerHTML=r.nota||'Lectura tomada. Anótala en la ficha.';
+      var puede=(r.veredicto!=='imposible');
+      document.getElementById('sim-anotar').style.display=puede?'block':'none';
+      if(puede){
+        document.getElementById('sim-val').value=(r.lectura==='OL'?'OL':r.lectura);
+        document.getElementById('sim-uni').value=(r.unidad==='V'?'V':'Ω');
+      }
+    });
+
+    document.getElementById('sim-anota').addEventListener('click',function(){
+      if(!simUlt) return;
+      var val=document.getElementById('sim-val').value.trim();
+      var uni=document.getElementById('sim-uni').value;
+      var esOhm=simInst.funcion==='ohm';
+      var pres=esOhm?simBanda():ALIMENTACION;
+      var x=parseFloat(val.replace(',','.'));
+      if(uni==='kΩ'&&isFinite(x)) x=x*1000;
+      if(uni==='mV'&&isFinite(x)) x=x/1000;
+      var j=isFinite(x)?juzgar(x,pres):{clase:'medida',et:'Anotada'};
+      if(simUlt.veredicto==='invalida') j={clase:'concepto',et:'Medida no válida',
+        nota:'La lectura no vale por cómo se ha tomado, aunque el número lo parezca.'};
+      simN++;
+      var tr=document.getElementById('sim-ficha').insertRow(-1); tr.className=j.clase;
+      tr.innerHTML='<td>'+simN+'</td><td>'+(esOhm?'Ω':(simInst.funcion==='vdc'?'V⎓':'A'))+'</td>'
+        +'<td>'+NODOS[simSel.A].et+'</td><td>'+NODOS[simSel.B].et+'</td>'
+        +'<td>'+(simEstado.conector?'ON':'OFF')+'</td>'
+        +'<td>'+({off:'Sin contacto',on:'Contacto',motor:'Motor ON'})[simEstado.contacto]+'</td>'
+        +'<td>'+simPres(pres)+'</td><td>'+val+' '+uni+'</td>'
+        +'<td class="vd '+j.clase+'">'+j.et+'</td>';
+      document.getElementById('sim-fvacio').style.display='none';
+      if(j.nota){ var n=document.getElementById('sim-nota');
+        n.className='nota v '+(j.clase==='ok'?'ok':(j.clase==='fuera'?'invalida':'imposible'));
+        n.innerHTML=j.nota; }
+      document.getElementById('sim-anotar').style.display='none';
+    });
+
+    function simBanda(){
+      var t=TRAMOS.filter(function(x){return x.componente;})[0];
+      return t?t.r:null;
+    }
+    function simPres(p){
+      if(!p||p.min===undefined||p.min===null) return '—';
+      return p.min+'–'+p.max+' '+p.unidad+' <span class="origen">'+p.origen+'</span>';
+    }
+
   </script>
 </body>
 </html>
