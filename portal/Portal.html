@@ -27,13 +27,38 @@
 
     nav {
       display: flex; gap: 4px; background: var(--azul); padding: 6px 8px;
-      position: sticky; top: 0; z-index: 5; overflow-x: auto;
+      position: sticky; top: 0; z-index: 5;
     }
     nav button {
       background: transparent; color: #fff; border: none; border-radius: 8px;
       padding: 8px 14px; font-size: 14px; font-weight: 600; cursor: pointer; white-space: nowrap; opacity: .8;
     }
     nav button.activo { background: #fff; color: var(--azul-osc); opacity: 1; }
+    nav button .icono { display: none; }
+
+    /* En el móvil la barra de arriba se quedaba en scroll horizontal, así que
+       la mitad de las pestañas no existían para quien no supiera que se podía
+       deslizar. Abajo, en rejilla, se ven todas y además caen donde llega el
+       pulgar. */
+    @media (max-width: 760px) {
+      nav {
+        position: fixed; bottom: 0; left: 0; right: 0; top: auto;
+        display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px;
+        padding: 4px 4px calc(4px + env(safe-area-inset-bottom));
+        box-shadow: 0 -2px 8px rgba(0,0,0,.18);
+      }
+      nav button {
+        display: flex; flex-direction: column; align-items: center; gap: 1px;
+        padding: 6px 2px; font-size: 10.5px; border-radius: 10px; line-height: 1.15;
+      }
+      nav button .icono { display: block; font-size: 17px; }
+      /* Hueco para que la barra no tape el final del contenido. */
+      body { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+      header { padding: 9px 12px; }
+      header .marca h1 { font-size: 14px; }
+      header .marca p { display: none; }
+      header .quien { font-size: 10px; max-width: 50%; }
+    }
 
     /* 900px se quedaba corto en pantalla grande y, de paso, impedía que el
        simulador llegara nunca a sus dos columnas (su corte está en 900). */
@@ -121,14 +146,14 @@
   </header>
 
   <nav id="nav">
-    <button data-sec="inicio" class="activo">Inicio</button>
-    <button data-sec="consultar">Consultar</button>
-    <button data-sec="apuntes">Apuntes</button>
-    <button data-sec="manual">Manual</button>
-    <button data-sec="juegos">Juegos</button>
-    <button data-sec="simulador">Simulador</button>
-    <button data-sec="cuenta">Mi cuenta</button>
-    <button data-sec="profesor" id="nav-profesor" hidden>Panel</button>
+    <button data-sec="inicio" class="activo"><span class="icono" aria-hidden="true">🏠</span><span class="rotulo">Inicio</span></button>
+    <button data-sec="consultar"><span class="icono" aria-hidden="true">💬</span><span class="rotulo">Consultar</span></button>
+    <button data-sec="apuntes"><span class="icono" aria-hidden="true">📘</span><span class="rotulo">Apuntes</span></button>
+    <button data-sec="manual"><span class="icono" aria-hidden="true">📄</span><span class="rotulo">Manual</span></button>
+    <button data-sec="juegos"><span class="icono" aria-hidden="true">🎮</span><span class="rotulo">Juegos</span></button>
+    <button data-sec="simulador"><span class="icono" aria-hidden="true">🔧</span><span class="rotulo">Simulador</span></button>
+    <button data-sec="cuenta"><span class="icono" aria-hidden="true">⚙️</span><span class="rotulo">Cuenta</span></button>
+    <button data-sec="profesor" id="nav-profesor" hidden><span class="icono" aria-hidden="true">👩‍🏫</span><span class="rotulo">Panel</span></button>
   </nav>
 
   <main>
@@ -1280,6 +1305,7 @@
         n++;
         var b = document.createElement('button');
         b.className = 'nt' + (x.leida?' leida':'');
+        b.setAttribute('data-nt', x.nt);
         b.innerHTML = '<span class="num">NT'+x.nt+'</span>'
           + '<span class="tit">'+x.titulo
           + '<small><span class="chip'+(x.tipo==='proceso'?' proceso':'')+'">'
@@ -1294,16 +1320,24 @@
     ['ap-buscar','ap-grupo','ap-filtro'].forEach(function(id){
       document.getElementById(id).addEventListener('input', function(){ if(apCorpus) filtrarApuntes(); });
     });
+    /* En pantalla ancha la lista y la nota conviven, así que lo que se marca
+       es el estado ('leyendo') y es el CSS quien decide qué se enseña. Poner
+       hidden aquí escondía la lista también en el PC, donde sobra sitio. */
     document.getElementById('ap-volver').addEventListener('click', function(){
-      document.getElementById('ap-lector').hidden = true;
-      document.getElementById('ap-lista').hidden = false;
+      document.querySelector('.ap').classList.remove('leyendo');
     });
 
     function abrirNota(nt){
       var d = document.getElementById('ap-nota');
       d.innerHTML = '<p class="vacio">Abriendo NT'+nt+'…</p>';
-      document.getElementById('ap-lista').hidden = true;
-      document.getElementById('ap-lector').hidden = false;
+      document.querySelector('.ap').classList.add('leyendo');
+      // En dos columnas la lista sigue a la vista: hay que poder ver en cuál
+      // se está.
+      var res = document.getElementById('ap-resultados');
+      Array.prototype.forEach.call(res.querySelectorAll('.nt.abierta'),
+        function(x){ x.classList.remove('abierta'); });
+      var actual = res.querySelector('[data-nt="'+nt+'"]');
+      if(actual) actual.classList.add('abierta');
       google.script.run
         .withSuccessHandler(function(n){
           var h = '<h2>NT'+n.nt+' · '+n.titulo+(n.codigo?' — '+n.codigo:'')+'</h2>';

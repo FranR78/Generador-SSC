@@ -25,6 +25,26 @@
   .ap .apartado p{margin:0;line-height:1.6;font-size:14.5px}
   .ap .fuente{font-size:12px;color:#5a6b78;border-top:1px solid var(--borde);padding-top:8px;margin-top:14px}
   .ap .vacio{color:#5a6b78;font-style:italic;font-size:14px}
+
+  /* Móvil: una cosa cada vez. La nota sustituye a la lista. */
+  .ap #ap-lector{display:none}
+  .ap.leyendo #ap-lista{display:none}
+  .ap.leyendo #ap-lector{display:block}
+
+  /* PC: en una pantalla de 1280 sobraba medio monitor y cada nota obligaba a
+     ir y volver. Con las dos columnas se lee una nota sin perder de vista la
+     lista, que es como se estudia de verdad: saltando entre notas. */
+  @media (min-width: 1000px){
+    .ap{display:grid;grid-template-columns:minmax(300px,380px) 1fr;gap:14px;align-items:start}
+    .ap #ap-lista{position:sticky;top:60px}
+    .ap #ap-lista .lista{max-height:calc(100vh - 260px);overflow-y:auto;padding-right:4px}
+    .ap #ap-lector{display:block}
+    .ap.leyendo #ap-lista{display:block}   /* aquí caben las dos: no se esconde */
+    .ap #ap-volver{display:none}       /* no hay de dónde volver: la lista está ahí */
+    .ap .nt.abierta{border-color:var(--azul-osc);background:#eaf4fe;
+      box-shadow:inset 3px 0 0 var(--azul-osc)}
+    .ap .apartado p{font-size:15px;max-width:72ch}   /* renglones legibles */
+  }
 </style>
 
 <div class="ap">
@@ -45,10 +65,10 @@
     </div>
   </div>
 
-  <div id="ap-lector" hidden>
+  <div id="ap-lector">
     <div class="panel lector">
       <button class="accion sec" id="ap-volver" style="margin-bottom:10px">← Volver a los apuntes</button>
-      <div id="ap-nota"></div>
+      <div id="ap-nota"><p class="vacio">Elige una nota de la lista para leerla aquí.</p></div>
     </div>
   </div>
 </div>
