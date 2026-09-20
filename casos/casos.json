@@ -1,0 +1,175 @@
+{
+ "casos": [
+  {
+   "caso": {
+    "id": "leon-n280-cable",
+    "titulo": "Cable cortado entre la unidad de control y la válvula reguladora",
+    "sintoma": "No echa frío. El compresor no arranca. El testigo del climatizador no enciende ninguna avería y el ventilador del habitáculo funciona bien.",
+    "activo": true,
+    "notas": [
+     "ssc.clima.compresor-de-aire-acondicionado",
+     "ssc.clima.embrague-electromagnetico"
+    ],
+    "averiaActiva": "caso"
+   },
+   "VEHICULO": {
+    "marca": "Seat",
+    "modelo": "León 1P",
+    "sistema": "Climatronic",
+    "esquema": "Mando del compresor, válvula reguladora N280"
+   },
+   "NODOS": {
+    "+": {
+     "et": "30",
+     "desc": "Positivo permanente de batería",
+     "lado": "alimentacion"
+    },
+    "-": {
+     "et": "31",
+     "desc": "Masa de carrocería",
+     "lado": "masa"
+    },
+    "fusible": {
+     "et": "SC12",
+     "desc": "Fusible del circuito de climatización",
+     "lado": "alimentacion"
+    },
+    "mando": {
+     "et": "T4t/3",
+     "desc": "Salida de mando de la unidad J255",
+     "lado": "mando"
+    },
+    "n280a": {
+     "et": "N280/1",
+     "desc": "Borne 1 de la válvula reguladora",
+     "lado": "componente"
+    },
+    "n280b": {
+     "et": "N280/2",
+     "desc": "Borne 2 de la válvula reguladora",
+     "lado": "componente"
+    }
+   },
+   "TRAMOS": [
+    {
+     "de": "+",
+     "a": "fusible",
+     "r": 0.05,
+     "cable": {
+      "sec": 2.5,
+      "color": "rt"
+     }
+    },
+    {
+     "de": "fusible",
+     "a": "mando",
+     "r": 0.1,
+     "cable": {
+      "sec": 1.0,
+      "color": "rt/sw"
+     }
+    },
+    {
+     "de": "mando",
+     "a": "n280a",
+     "r": 0.1,
+     "cable": {
+      "sec": 1.0,
+      "color": "gn/sw"
+     },
+     "porConector": "T2ab"
+    },
+    {
+     "de": "n280a",
+     "a": "n280b",
+     "r": {
+      "min": 8.0,
+      "max": 14.0,
+      "unidad": "Ω",
+      "origen": "Inferido"
+     },
+     "componente": "Bobinado de la válvula reguladora N280"
+    },
+    {
+     "de": "n280b",
+     "a": "-",
+     "r": 0.1,
+     "cable": {
+      "sec": 1.0,
+      "color": "br"
+     },
+     "porConector": "T2ab"
+    }
+   ],
+   "AVERIAS": {
+    "ninguna": {
+     "et": "Sin avería",
+     "efecto": null
+    },
+    "caso": {
+     "et": "Circuito abierto en mando → n280a",
+     "efecto": {
+      "tramo": "mando|n280a",
+      "r": null
+     }
+    }
+   },
+   "ALIMENTACION": {
+    "min": 13.5,
+    "max": 14.5,
+    "unidad": "V",
+    "origen": "Inferido"
+   },
+   "COMPROBACIONES": [
+    {
+     "nombre": "Resistencia del bobinado de la N280",
+     "magnitud": "ohmios",
+     "entre": [
+      "n280a",
+      "n280b"
+     ],
+     "contacto": "quitado",
+     "conector": "desembornado",
+     "esperado": {
+      "min": 8,
+      "max": 14,
+      "unidad": "Ω",
+      "origen": "Inferido"
+     }
+    },
+    {
+     "nombre": "Continuidad del cable gn/sw entre T4t/3 y N280/1",
+     "magnitud": "continuidad",
+     "entre": [
+      "mando",
+      "n280a"
+     ],
+     "contacto": "quitado",
+     "conector": "desembornado",
+     "esperado": {
+      "min": 0,
+      "max": 1,
+      "unidad": "Ω",
+      "origen": "Inferido"
+     }
+    },
+    {
+     "nombre": "Tensión de alimentación en el fusible",
+     "magnitud": "tension",
+     "entre": [
+      "fusible",
+      "-"
+     ],
+     "contacto": "motor_en_marcha",
+     "conector": "da_igual",
+     "esperado": {
+      "min": 13.5,
+      "max": 14.5,
+      "unidad": "V",
+      "origen": "Inferido"
+     }
+    }
+   ]
+  }
+ ]
+}

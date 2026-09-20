@@ -1,0 +1,108 @@
+# ───────────────────────────────────────────────────────────────────────────
+# PLANTILLA DE CASO DE AVERÍA
+#
+# Copia este archivo, ponle de nombre el id del caso (p. ej. leon-n280-cable.yml)
+# y rellénalo. Al subirlo, el sistema lo valida y queda disponible para el
+# alumnado. El código es el programa; esto son los casos reales.
+#
+# Antes de empezar, dos cosas que no son negociables:
+#
+# 1. EL ESQUEMA ES UN GRAFO, NO UN DIBUJO. Se describe con nodos y tramos, con
+#    la resistencia de cada tramo. Con eso el simulador CALCULA lo que marca el
+#    polímetro. Si solo hubiera una imagen, habría que escribir la respuesta a
+#    mano y el alumno acabaría memorizándola.
+#
+# 2. CADA VALOR LLEVA DE DÓNDE SALE:
+#       Medido        lo has medido tú en ese coche
+#       Teórico OEM   viene del manual del fabricante
+#       Inferido      es un rango razonable puesto a mano
+#    Da igual no tener el valor exacto: lo que importa es que nadie diga
+#    1 Ω donde hay 3 kΩ. Por eso se trabaja con rangos.
+#
+# Para comprobar que está bien antes de subirlo:
+#     python3 casos/construir.py
+# ───────────────────────────────────────────────────────────────────────────
+
+caso:
+  id: pon-un-id-sin-espacios          # sale en la URL y en los registros; no se cambia
+  titulo: Qué avería es, en una línea
+  sintoma: >-
+    Lo que cuenta el cliente al dejar el coche. Con sus palabras, no con las
+    tuyas: "no echa frío desde ayer", no "fallo en el circuito de mando".
+  activo: sí                          # 'no' lo deja escrito pero fuera del portal
+
+  # De qué notas técnicas depende. Sirve para dos cosas: no ofrecer el caso a
+  # quien aún no las ha leído, y saber qué mandarle a releer si falla.
+  # Los id salen de notas-tecnicas/web/notas.json.
+  notas:
+    - ssc.clima.compresor-de-aire-acondicionado
+
+vehiculo:
+  marca: Seat
+  modelo: León 1P
+  sistema: Climatronic
+  esquema_ref: Nº de esquema del manual, para que se pueda contrastar
+  # Tensión de alimentación con el motor en marcha.
+  tension: { min: 13.5, max: 14.5, unidad: V, origen: Inferido }
+
+# ───────────── EL ESQUEMA ─────────────
+#
+# NODOS: cada punto donde se puede pinchar la punta del polímetro.
+#   etiqueta     lo que se lee en el esquema (T4t/3, 31, J255/12…)
+#   descripcion  qué es, en cristiano
+#   lado         alimentacion | mando | masa | componente
+#
+# Los dos nodos especiales son '+' y '-': batería y masa.
+
+nodos:
+  '+':      { etiqueta: '30',     descripcion: Positivo de batería, lado: alimentacion }
+  '-':      { etiqueta: '31',     descripcion: Masa de carrocería,  lado: masa }
+  ejemplo1: { etiqueta: 'T4t/3',  descripcion: Salida de la unidad de control, lado: mando }
+  ejemplo2: { etiqueta: 'N280/1', descripcion: Borne 1 de la válvula, lado: componente }
+
+# TRAMOS: qué une con qué, y cuánta resistencia hay por medio.
+#
+#   r            un número (un cable: 0.1 Ω) o un rango si es un componente
+#   componente   si lo lleva, el tramo es una pieza, no un cable
+#   cable        seccion en mm² y color, como en el esquema
+#   por_conector el tramo pasa por este conector: desembornarlo lo abre
+
+tramos:
+  - { desde: '+',      hasta: ejemplo1, r: 0.1, cable: { seccion: 1.0, color: 'rt/sw' } }
+  - desde: ejemplo1
+    hasta: ejemplo2
+    componente: Bobinado de la válvula
+    r: { min: 8, max: 14, unidad: Ω, origen: Inferido }
+    por_conector: T2ab
+  - { desde: ejemplo2, hasta: '-', r: 0.1, cable: { seccion: 1.0, color: 'br' } }
+
+# ───────────── LA AVERÍA ─────────────
+#
+#   tipo: abierto      un tramo cortado. objetivo: "desde|hasta"
+#   tipo: sin_mando    la unidad de control no excita. Sin objetivo.
+#   tipo: ninguna      circuito sano, para practicar medidas correctas
+
+averia:
+  tipo: abierto
+  objetivo: '+|ejemplo1'
+
+# ───────────── CÓMO SE COMPRUEBA ─────────────
+#
+# Esto es tu ficha de comprobación, que es el centro de todo: el alumno dice
+# dónde mide y con qué, y el sistema juzga si esa medida vale.
+#
+#   magnitud     ohmios | tension | continuidad
+#   contacto     quitado | puesto | motor_en_marcha
+#   conector     desembornado | embornado | da_igual
+#
+# Medir ohmios con el circuito alimentado no da un valor malo: da un valor sin
+# sentido, y además se puede cargar el polímetro. Por eso la condición se
+# declara aquí y el simulador la exige.
+
+comprobaciones:
+  - nombre: Resistencia del bobinado
+    magnitud: ohmios
+    entre: [ejemplo1, ejemplo2]
+    contacto: quitado
+    conector: desembornado
+    esperado: { min: 8, max: 14, unidad: Ω, origen: Inferido }

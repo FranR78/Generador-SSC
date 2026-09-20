@@ -1,0 +1,69 @@
+# Caso real. Sirve de ejemplo de cómo se rellena PLANTILLA.yml.
+#
+# PENDIENTE: la resistencia del bobinado de la N280 está como Inferido. Es un
+# rango típico puesto a mano, no una medida. En cuanto se mida en un coche de
+# verdad, se cambia aquí y pasa a Medido.
+
+caso:
+  id: leon-n280-cable
+  titulo: Cable cortado entre la unidad de control y la válvula reguladora
+  sintoma: >-
+    No echa frío. El compresor no arranca. El testigo del climatizador no
+    enciende ninguna avería y el ventilador del habitáculo funciona bien.
+  activo: sí
+  notas:
+    - ssc.clima.compresor-de-aire-acondicionado
+    - ssc.clima.embrague-electromagnetico
+
+vehiculo:
+  marca: Seat
+  modelo: León 1P
+  sistema: Climatronic
+  esquema_ref: Mando del compresor, válvula reguladora N280
+  tension: { min: 13.5, max: 14.5, unidad: V, origen: Inferido }
+
+nodos:
+  '+':    { etiqueta: '30',     descripcion: Positivo permanente de batería,        lado: alimentacion }
+  '-':    { etiqueta: '31',     descripcion: Masa de carrocería,                    lado: masa }
+  fusible: { etiqueta: 'SC12',   descripcion: Fusible del circuito de climatización, lado: alimentacion }
+  mando: { etiqueta: 'T4t/3',  descripcion: Salida de mando de la unidad J255,     lado: mando }
+  n280a: { etiqueta: 'N280/1', descripcion: Borne 1 de la válvula reguladora,      lado: componente }
+  n280b: { etiqueta: 'N280/2', descripcion: Borne 2 de la válvula reguladora,      lado: componente }
+
+tramos:
+  - { desde: '+',     hasta: fusible, r: 0.05, cable: { seccion: 2.5, color: 'rt' } }
+  - { desde: fusible, hasta: mando,   r: 0.10, cable: { seccion: 1.0, color: 'rt/sw' } }
+  - { desde: mando,   hasta: n280a,   r: 0.10, cable: { seccion: 1.0, color: 'gn/sw' },
+      por_conector: T2ab }
+  - desde: n280a
+    hasta: n280b
+    componente: Bobinado de la válvula reguladora N280
+    r: { min: 8, max: 14, unidad: Ω, origen: Inferido }
+  - { desde: n280b,   hasta: '-',     r: 0.10, cable: { seccion: 1.0, color: 'br' },
+      por_conector: T2ab }
+
+averia:
+  tipo: abierto
+  objetivo: 'mando|n280a'
+
+comprobaciones:
+  - nombre: Resistencia del bobinado de la N280
+    magnitud: ohmios
+    entre: [n280a, n280b]
+    contacto: quitado
+    conector: desembornado
+    esperado: { min: 8, max: 14, unidad: Ω, origen: Inferido }
+
+  - nombre: Continuidad del cable gn/sw entre T4t/3 y N280/1
+    magnitud: continuidad
+    entre: [mando, n280a]
+    contacto: quitado
+    conector: desembornado
+    esperado: { min: 0, max: 1, unidad: Ω, origen: Inferido }
+
+  - nombre: Tensión de alimentación en el fusible
+    magnitud: tension
+    entre: [fusible, '-']
+    contacto: motor_en_marcha
+    conector: da_igual
+    esperado: { min: 13.5, max: 14.5, unidad: V, origen: Inferido }
