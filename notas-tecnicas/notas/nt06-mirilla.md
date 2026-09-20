@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.mirilla-o-visor-de-flujo
+modulo: ssc
+unidad: clima
 nt: 6
 titulo: Mirilla o visor de flujo
 codigo: Sin código documentado

@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.subenfriamiento
+modulo: ssc
+unidad: clima
 nt: 30
 tipo: proceso
 subtipo: fundamento

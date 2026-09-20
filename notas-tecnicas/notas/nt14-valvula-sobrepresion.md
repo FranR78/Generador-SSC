@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.valvula-de-descarga-por-sobrepresion
+modulo: ssc
+unidad: clima
 nt: 14
 titulo: Válvula de descarga por sobrepresión
 codigo: Sin código documentado

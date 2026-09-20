@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.interruptor-de-marcha-atras
+modulo: ssc
+unidad: clima
 nt: 82
 titulo: "Interruptor De Marcha Atrás"
 ubicacion: "Montado en la caja de cambios del vehículo"

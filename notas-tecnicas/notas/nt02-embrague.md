@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.embrague-electromagnetico
+modulo: ssc
+unidad: clima
 nt: 2
 titulo: Embrague electromagnético
 codigo: Sin código documentado

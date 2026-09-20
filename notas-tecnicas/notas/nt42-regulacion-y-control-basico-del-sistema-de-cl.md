@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.regulacion-y-control-basico-del-sistema-de-climatizacion
+modulo: ssc
+unidad: clima
 nt: 42
 tipo: proceso
 subtipo: fundamento

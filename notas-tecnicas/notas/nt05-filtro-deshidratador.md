@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.filtro-deshidratador-y-vaso-de-expansion
+modulo: ssc
+unidad: clima
 nt: 5
 titulo: Filtro deshidratador y vaso de expansión
 codigo: Sin código documentado

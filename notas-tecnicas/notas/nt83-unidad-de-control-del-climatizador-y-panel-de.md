@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.unidad-de-control-del-climatizador-y-panel-de-mandos
+modulo: ssc
+unidad: clima
 nt: 83
 titulo: "Unidad De Control Del Climatizador Y Panel De Mandos"
 ubicacion: "Consola central / Salpicadero del vehículo"

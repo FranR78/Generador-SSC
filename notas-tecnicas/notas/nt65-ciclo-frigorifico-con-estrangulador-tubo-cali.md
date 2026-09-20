@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.ciclo-frigorifico-con-estrangulador-tubo-calibrado.2
+modulo: ssc
+unidad: clima
 nt: 65
 tipo: proceso
 subtipo: fundamento

@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.evacuacion-y-proceso-de-vacio-en-el-circuito-frigorifico
+modulo: ssc
+unidad: clima
 nt: 118
 tipo: proceso
 subtipo: procedimiento

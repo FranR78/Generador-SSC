@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.aceite-lubricante-para-compresor
+modulo: ssc
+unidad: clima
 nt: 122
 titulo: "Aceite Lubricante Para Compresor"
 codigo: "PAG 46 / PAG 100 / PAG 150 / PAO-Oil 68 / Ester 100 [69, 70]"

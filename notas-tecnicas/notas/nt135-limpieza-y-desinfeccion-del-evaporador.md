@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.limpieza-y-desinfeccion-del-evaporador
+modulo: ssc
+unidad: clima
 nt: 135
 tipo: proceso
 subtipo: procedimiento

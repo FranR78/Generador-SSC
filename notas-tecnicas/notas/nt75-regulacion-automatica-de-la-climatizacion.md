@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.regulacion-automatica-de-la-climatizacion
+modulo: ssc
+unidad: clima
 nt: 75
 tipo: proceso
 subtipo: fundamento

@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.interruptor-termostatico-y-sensor-de-evaporador
+modulo: ssc
+unidad: clima
 nt: 15
 titulo: Interruptor termostático y sensor de evaporador
 codigo: G153 / E33

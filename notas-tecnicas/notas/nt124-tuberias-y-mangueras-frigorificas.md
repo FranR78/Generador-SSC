@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.tuberias-y-mangueras-frigorificas
+modulo: ssc
+unidad: clima
 nt: 124
 titulo: "Tuberías Y Mangueras Frigoríficas"
 ubicacion: "Canalizaciones de interconexión entre los componentes del circuito frigorífico en el vano motor y habitáculo [26, 42, 83]"

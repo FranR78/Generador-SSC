@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.sonda-ntc-de-temperatura-del-refrigerante-del-motor.2
+modulo: ssc
+unidad: clima
 nt: 116
 titulo: "Sonda Ntc De Temperatura Del Refrigerante Del Motor"
 ubicacion: "Montada en el circuito de refrigeración del motor de combustión"

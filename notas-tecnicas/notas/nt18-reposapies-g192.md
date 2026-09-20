@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.transmisor-de-temperatura-a-la-salida-del-vano-reposapies
+modulo: ssc
+unidad: clima
 nt: 18
 titulo: Transmisor de temperatura a la salida del vano reposapiés
 codigo: G192

@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.lectura-e-interpretacion-de-manometros
+modulo: ssc
+unidad: clima
 nt: 32
 tipo: proceso
 subtipo: diagnostico

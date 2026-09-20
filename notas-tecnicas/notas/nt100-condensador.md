@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.condensador.3
+modulo: ssc
+unidad: clima
 nt: 100
 titulo: "Condensador"
 ubicacion: "Montado en el frontal del vehículo, por delante del radiador del líquido refrigerante"

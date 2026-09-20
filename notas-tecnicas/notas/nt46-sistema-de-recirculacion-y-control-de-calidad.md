@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.sistema-de-recirculacion-y-control-de-calidad-del-aire
+modulo: ssc
+unidad: clima
 nt: 46
 tipo: proceso
 subtipo: procedimiento

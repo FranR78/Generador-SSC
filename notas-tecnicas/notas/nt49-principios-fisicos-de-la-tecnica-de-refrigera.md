@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.principios-fisicos-de-la-tecnica-de-refrigeracion
+modulo: ssc
+unidad: clima
 nt: 49
 tipo: proceso
 subtipo: fundamento

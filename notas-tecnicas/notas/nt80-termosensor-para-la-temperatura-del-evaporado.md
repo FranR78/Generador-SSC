@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.termosensor-para-la-temperatura-del-evaporador
+modulo: ssc
+unidad: clima
 nt: 80
 titulo: "Termosensor Para La Temperatura Del Evaporador"
 ubicacion: "Montado en la unidad climática a la salida del evaporador o insertado entre sus aletas"

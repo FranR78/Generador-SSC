@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.lavado-del-circuito-flushing
+modulo: ssc
+unidad: clima
 nt: 31
 tipo: proceso
 subtipo: procedimiento

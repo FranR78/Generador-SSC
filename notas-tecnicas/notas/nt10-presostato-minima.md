@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.presostato-de-minima-valvula-binaria
+modulo: ssc
+unidad: clima
 nt: 10
 titulo: Presostato de mínima (válvula binaria)
 codigo: Sin código documentado

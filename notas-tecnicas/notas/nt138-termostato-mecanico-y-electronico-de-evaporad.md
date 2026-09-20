@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.termostato-mecanico-y-electronico-de-evaporador
+modulo: ssc
+unidad: clima
 nt: 138
 titulo: "Termostato Mecánico Y Electrónico De Evaporador"
 ubicacion: "Bulbo/sonda insertada entre las aletas del evaporador; cuerpo/caja instalado en la carcasa o panel [174-177]"

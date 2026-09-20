@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.regulacion-en-climatizacion-semiautomatica-y-automatica
+modulo: ssc
+unidad: clima
 nt: 141
 tipo: proceso
 subtipo: fundamento

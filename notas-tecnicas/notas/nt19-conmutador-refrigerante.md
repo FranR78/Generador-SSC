@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.conmutador-de-aviso-de-temperatura-del-liquido-refrigerante
+modulo: ssc
+unidad: clima
 nt: 19
 titulo: Conmutador de aviso de temperatura del líquido refrigerante
 codigo: Sin código documentado

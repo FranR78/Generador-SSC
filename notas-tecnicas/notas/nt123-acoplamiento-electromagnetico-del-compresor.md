@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.acoplamiento-electromagnetico-del-compresor
+modulo: ssc
+unidad: clima
 nt: 123
 titulo: "Acoplamiento Electromagnético Del Compresor"
 ubicacion: "Montado en el frontal del eje del compresor [44, 47, 55, 76]"

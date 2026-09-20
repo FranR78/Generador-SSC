@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.recirculacion-automatica-y-control-de-calidad-del-aire
+modulo: ssc
+unidad: clima
 nt: 91
 tipo: proceso
 subtipo: fundamento

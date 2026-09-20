@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.tomas-de-servicio-y-valvulas-schrader
+modulo: ssc
+unidad: clima
 nt: 126
 titulo: "Tomas De Servicio Y Válvulas Schrader"
 ubicacion: "Instaladas en las tuberías rígidas de alta y baja presión del compartimento motor [24, 101]"

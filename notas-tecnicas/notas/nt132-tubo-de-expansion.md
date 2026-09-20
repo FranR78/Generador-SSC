@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.tubo-de-expansion
+modulo: ssc
+unidad: clima
 nt: 132
 titulo: "Tubo De Expansión"
 ubicacion: "Insertado en el interior de la tubería de entrada de alta presión hacia el evaporador [116, 129, 137, 147]"

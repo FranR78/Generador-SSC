@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.circuito-frigorifico-con-estrangulador
+modulo: ssc
+unidad: clima
 nt: 60
 tipo: proceso
 subtipo: fundamento

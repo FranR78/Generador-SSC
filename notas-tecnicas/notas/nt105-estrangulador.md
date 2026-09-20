@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.estrangulador.3
+modulo: ssc
+unidad: clima
 nt: 105
 titulo: "Estrangulador"
 ubicacion: "Montado en la tubería directamente a la entrada del evaporador entre el lado de alta y baja presión"

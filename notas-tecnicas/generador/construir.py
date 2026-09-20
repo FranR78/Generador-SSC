@@ -160,6 +160,12 @@ class Nota:
                 raise ValueError(f"falta el campo obligatorio '{campo}'")
 
         self.ruta = ruta
+        # Identidad permanente. 'nt' es solo el número que se enseña y se
+        # puede reordenar; 'id' es lo que apuntan el RAG, las lecturas del
+        # alumnado y los casos de avería, y no se cambia nunca.
+        self.id = str(meta.get("id", "")).strip()
+        self.modulo = str(meta.get("modulo", "")).strip()
+        self.unidad = str(meta.get("unidad", "")).strip()
         self.nt = int(meta["nt"])
         self.titulo = str(meta["titulo"]).strip()
         self.codigo = str(meta.get("codigo", "")).strip()
@@ -209,7 +215,10 @@ class Nota:
         return apartados
 
     @property
-    def id(self):
+    def ancla(self):
+        """El id del <section> en el HTML. Es del número que se enseña, no de
+        la identidad: si se reordenan los NT, el enlace cambia y no pasa nada.
+        Lo que no puede cambiar nunca es 'id'."""
         return f"nt{self.nt}"
 
     @property
@@ -263,7 +272,7 @@ def render_imagenes(nota, html_str, capturas):
 
 
 def render_nota(nota, capturas=()):
-    partes = [f'  <section id="{nota.id}" data-tipo="{nota.tipo}">']
+    partes = [f'  <section id="{nota.ancla}" data-tipo="{nota.tipo}">']
 
     marca = ""
     if nota.marca:
@@ -389,7 +398,7 @@ def render_menu(grupos):
             )
         if len(g) == 1:
             salida.append(
-                f'    <li><a href="#{base.id}">NT{base.nt} · {esc(base.menu)}</a></li>'
+                f'    <li><a href="#{base.ancla}">NT{base.nt} · {esc(base.menu)}</a></li>'
             )
         else:
             salida.append(
@@ -501,11 +510,20 @@ def cargar():
         except ValueError as e:
             errores.append(f"{ruta.name}: {e}")
 
-    vistos = {}
+    vistos, ids = {}, {}
     for n in notas:
         if n.nt in vistos:
             errores.append(f"{n.ruta.name}: el número NT{n.nt} ya lo usa {vistos[n.nt]}")
         vistos[n.nt] = n.ruta.name
+
+        if not n.id:
+            errores.append(f"{n.ruta.name}: sin 'id'. Ejecuta generador/migrar_ids.py")
+        elif n.id in ids:
+            # Dos notas con el mismo id mezclarían lecturas y embeddings sin
+            # que nadie se entere. Mejor no generar nada.
+            errores.append(f"{n.ruta.name}: el id «{n.id}» ya lo usa {ids[n.id]}")
+        else:
+            ids[n.id] = n.ruta.name
 
     notas.sort(key=lambda n: n.nt)
     return notas, errores
@@ -529,7 +547,10 @@ def volcar_json(notas):
     fuera = []
     for n in notas:
         fuera.append({
+            "id": n.id,
             "nt": n.nt,
+            "modulo": n.modulo,
+            "unidad": n.unidad,
             "clave": n.clave,
             "titulo": n.titulo,
             "codigo": n.codigo,

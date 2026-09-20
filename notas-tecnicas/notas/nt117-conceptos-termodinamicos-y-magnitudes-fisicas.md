@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.conceptos-termodinamicos-y-magnitudes-fisicas-de-la-refrigeracion
+modulo: ssc
+unidad: clima
 nt: 117
 tipo: proceso
 subtipo: fundamento

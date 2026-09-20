@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.conmutador-de-presion-trinaria-o-sensor-map-de-alta
+modulo: ssc
+unidad: clima
 nt: 70
 titulo: "Conmutador De Presión (Trinaria O Sensor Map De Alta)"
 ubicacion: "Montado en la canalización del circuito de alta presión del aire acondicionado"

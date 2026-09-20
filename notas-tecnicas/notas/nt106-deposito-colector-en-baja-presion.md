@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.deposito-colector-en-baja-presion.2
+modulo: ssc
+unidad: clima
 nt: 106
 titulo: "Depósito Colector (En Baja Presión)"
 ubicacion: "Montado en el lado de baja presión en una zona caliente del vano motor entre el evaporador y el compresor"

@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.termosensores-de-temperatura-exterior
+modulo: ssc
+unidad: clima
 nt: 16
 titulo: Termosensores de temperatura exterior
 codigo: G17 y G89

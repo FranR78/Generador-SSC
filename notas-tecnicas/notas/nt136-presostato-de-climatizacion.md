@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.presostato-de-climatizacion
+modulo: ssc
+unidad: clima
 nt: 136
 titulo: "Presostato De Climatización"
 ubicacion: "Montado sobre un racor roscado provisto de obús de seguridad en el filtro deshidratador o tubería de alta presión [160, 163, 164]"

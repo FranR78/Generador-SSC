@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.filtro-de-habitaculo
+modulo: ssc
+unidad: clima
 nt: 9
 titulo: Filtro de habitáculo
 codigo: Sin código documentado

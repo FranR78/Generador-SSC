@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.regulacion-de-la-temperatura-en-climatizacion-electronica
+modulo: ssc
+unidad: clima
 nt: 87
 tipo: proceso
 subtipo: fundamento

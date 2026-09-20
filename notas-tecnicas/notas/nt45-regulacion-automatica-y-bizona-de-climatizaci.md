@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.regulacion-automatica-y-bizona-de-climatizacion
+modulo: ssc
+unidad: clima
 nt: 45
 tipo: proceso
 subtipo: fundamento

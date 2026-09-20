@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.diagnostico-de-averias-por-lectura-de-manometros
+modulo: ssc
+unidad: clima
 nt: 142
 tipo: proceso
 subtipo: diagnostico

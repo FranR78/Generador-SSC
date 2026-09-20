@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.vaso-de-expansion
+modulo: ssc
+unidad: clima
 nt: 129
 titulo: "Vaso De Expansión"
 ubicacion: "Montado en la tubería de baja presión, entre la salida del evaporador y la entrada de aspiración del compresor [73, 127-129]"

@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.distribucion-de-aire-bizona
+modulo: ssc
+unidad: clima
 nt: 88
 tipo: proceso
 subtipo: fundamento

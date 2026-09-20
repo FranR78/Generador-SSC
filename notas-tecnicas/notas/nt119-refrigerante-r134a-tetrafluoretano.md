@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.refrigerante-r134a-tetrafluoretano
+modulo: ssc
+unidad: clima
 nt: 119
 titulo: "REFRIGERANTE R134a (TETRAFLUORETANO)"
 ubicacion: "En el interior del circuito cerrado de climatización [25, 26]"

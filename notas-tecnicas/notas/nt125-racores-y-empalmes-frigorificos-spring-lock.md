@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.racores-y-empalmes-frigorificos-spring-lock-lokring
+modulo: ssc
+unidad: clima
 nt: 125
 titulo: "Racores Y Empalmes Frigoríficos (Spring-Lock / Lokring"
 ubicacion: "En las uniones entre mangueras, tubos rígidos de aluminio, compresor, condensador, evaporador y válvula de expansión [80, 90-94]"

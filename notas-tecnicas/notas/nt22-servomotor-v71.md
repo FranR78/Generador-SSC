@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.servomotor-de-chapaleta-de-velocidad-y-recirculacion
+modulo: ssc
+unidad: clima
 nt: 22
 titulo: Servomotor de chapaleta de velocidad y recirculación
 codigo: V71 (con potenciómetro G113)

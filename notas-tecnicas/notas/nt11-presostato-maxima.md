@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.presostato-de-maxima-valvula-binaria
+modulo: ssc
+unidad: clima
 nt: 11
 titulo: Presostato de máxima (válvula binaria)
 codigo: Sin código documentado

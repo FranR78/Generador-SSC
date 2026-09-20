@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.termosensor-del-habitaculo-con-turbina
+modulo: ssc
+unidad: clima
 nt: 17
 titulo: Termosensor del habitáculo con turbina
 codigo: G56 (con V42)

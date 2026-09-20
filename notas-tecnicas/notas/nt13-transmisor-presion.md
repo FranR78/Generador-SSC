@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.transmisor-de-alta-presion-sensor-map
+modulo: ssc
+unidad: clima
 nt: 13
 titulo: Transmisor de alta presión / sensor MAP
 codigo: G65

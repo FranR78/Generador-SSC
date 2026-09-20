@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.compresor-de-aire-acondicionado
+modulo: ssc
+unidad: clima
 nt: 1
 titulo: Compresor de aire acondicionado
 codigo: Sin código documentado

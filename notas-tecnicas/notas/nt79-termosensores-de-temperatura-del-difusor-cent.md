@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.termosensores-de-temperatura-del-difusor-central-y-de-la-zona-de-pies
+modulo: ssc
+unidad: clima
 nt: 79
 titulo: "Termosensores De Temperatura Del Difusor Central Y De La Zona De Pies"
 ubicacion: "Montados en la unidad climática, en la salida de aire del difusor central y en el conducto de la zona de los pies"

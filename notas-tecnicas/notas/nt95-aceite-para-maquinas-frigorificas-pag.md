@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.aceite-para-maquinas-frigorificas-pag.2
+modulo: ssc
+unidad: clima
 nt: 95
 titulo: "Aceite Para Máquinas Frigoríficas (Pag)"
 codigo: "PAG (Poly-Alkylen-Glykol)"

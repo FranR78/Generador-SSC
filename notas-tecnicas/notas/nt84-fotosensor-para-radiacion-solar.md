@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.fotosensor-para-radiacion-solar
+modulo: ssc
+unidad: clima
 nt: 84
 titulo: "Fotosensor Para Radiación Solar"
 ubicacion: "Ubicado en la parte central del tablero de instrumentos / salpicadero"

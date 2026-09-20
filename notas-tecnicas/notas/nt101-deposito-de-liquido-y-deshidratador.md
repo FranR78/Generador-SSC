@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.deposito-de-liquido-y-deshidratador.2
+modulo: ssc
+unidad: clima
 nt: 101
 titulo: "Depósito De Líquido Y Deshidratador"
 ubicacion: "Montado en la tubería de alta presión entre el condensador y la válvula de expansión"

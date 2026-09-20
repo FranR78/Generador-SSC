@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.acoplamiento-electromagnetico.2
+modulo: ssc
+unidad: clima
 nt: 99
 titulo: "Acoplamiento Electromagnético"
 ubicacion: "Montado en el extremo frontal del eje de impulsión del compresor"

@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.valvula-de-descarga-de-sobrepresion-del-compresor
+modulo: ssc
+unidad: clima
 nt: 69
 titulo: "Válvula De Descarga De Sobrepresión Del Compresor"
 ubicacion: "Montada en el cuerpo o carcasa del compresor de aire acondicionado"

@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.fotosensor-de-radiacion-solar
+modulo: ssc
+unidad: clima
 nt: 21
 titulo: Fotosensor de radiación solar
 codigo: G107

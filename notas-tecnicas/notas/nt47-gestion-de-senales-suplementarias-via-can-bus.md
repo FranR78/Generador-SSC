@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.gestion-de-senales-suplementarias-via-can-bus
+modulo: ssc
+unidad: clima
 nt: 47
 tipo: proceso
 subtipo: fundamento

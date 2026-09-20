@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.compresor-de-climatizacion
+modulo: ssc
+unidad: clima
 nt: 54
 titulo: "Compresor De Climatización"
 ubicacion: "Montado en el bloque del motor de combustión y accionado por la correa Poly-V"

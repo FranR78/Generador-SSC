@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.efectos-climatologicos-y-confort-termico-en-el-habitaculo.4
+modulo: ssc
+unidad: clima
 nt: 92
 tipo: proceso
 subtipo: fundamento

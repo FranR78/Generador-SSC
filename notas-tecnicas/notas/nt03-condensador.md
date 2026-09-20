@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.condensador
+modulo: ssc
+unidad: clima
 nt: 3
 titulo: Condensador
 codigo: Sin código documentado

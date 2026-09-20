@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.mandos-de-control-manual-y-conmutador-del-ventilador
+modulo: ssc
+unidad: clima
 nt: 23
 titulo: Mandos de control manual y conmutador del ventilador
 codigo: Sin código documentado

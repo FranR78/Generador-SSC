@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.amortiguador
+modulo: ssc
+unidad: clima
 nt: 130
 titulo: "Amortiguador"
 ubicacion: "Montado en la tubería de pulsación / descarga del compresor o en la línea de aspiración [80, 130, 133, 134]"

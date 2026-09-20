@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.fotosensor-doble-para-radiacion-solar
+modulo: ssc
+unidad: clima
 nt: 85
 titulo: "Fotosensor Doble Para Radiación Solar"
 ubicacion: "Montado en el salpicadero, normalmente en la salida de aire hacia el parabrisas"

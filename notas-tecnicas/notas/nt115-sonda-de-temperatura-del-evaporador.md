@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.sonda-de-temperatura-del-evaporador.2
+modulo: ssc
+unidad: clima
 nt: 115
 titulo: "Sonda De Temperatura Del Evaporador"
 ubicacion: "Montada junto a las aletas o en el núcleo del evaporador"

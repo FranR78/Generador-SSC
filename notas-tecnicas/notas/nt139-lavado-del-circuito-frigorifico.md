@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.lavado-del-circuito-frigorifico
+modulo: ssc
+unidad: clima
 nt: 139
 tipo: proceso
 subtipo: procedimiento

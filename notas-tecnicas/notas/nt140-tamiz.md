@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.tamiz
+modulo: ssc
+unidad: clima
 nt: 140
 titulo: "Tamiz"
 ubicacion: "Insertado directamente en la embocadura de la tubería de aspiración (Baja presión) del compresor [75, 183, 184]"

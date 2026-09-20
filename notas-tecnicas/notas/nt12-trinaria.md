@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.presostato-de-tres-funciones-valvula-trinaria
+modulo: ssc
+unidad: clima
 nt: 12
 titulo: Presostato de tres funciones (válvula trinaria)
 codigo: F129

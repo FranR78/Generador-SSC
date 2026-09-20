@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.filtro-deshidratador-lado-de-alta-presion
+modulo: ssc
+unidad: clima
 nt: 128
 titulo: "Filtro Deshidratador (Lado De Alta Presión)"
 ubicacion: "Montado en la tubería de alta presión entre la salida del condensador y la entrada de la válvula de expansión [29, 42, 118, 119]"

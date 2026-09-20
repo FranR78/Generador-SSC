@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.evaporador.3
+modulo: ssc
+unidad: clima
 nt: 103
 titulo: "Evaporador"
 ubicacion: "Montado en el interior de la caja del sistema de calefacción/climatización en el salpicadero"

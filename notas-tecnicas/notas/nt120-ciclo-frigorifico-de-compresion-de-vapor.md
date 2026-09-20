@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.ciclo-frigorifico-de-compresion-de-vapor
+modulo: ssc
+unidad: clima
 nt: 120
 tipo: proceso
 subtipo: fundamento

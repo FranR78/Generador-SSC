@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.filtro-de-habitaculo.2
+modulo: ssc
+unidad: clima
 nt: 134
 titulo: "Filtro De Habitáculo"
 ubicacion: "Instalado en la caja de aire de la unidad climática, antes del paso del aire hacia el evaporador [153, 160]"

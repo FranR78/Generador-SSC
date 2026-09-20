@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.sensor-de-temperatura-exterior-y-de-aire-aspirado
+modulo: ssc
+unidad: clima
 nt: 76
 titulo: "Sensor De Temperatura Exterior Y De Aire Aspirado"
 ubicacion: "En el paragolpes delantero o espejo retrovisor derecho (exterior); en el canal de entrada de aire de la unidad climática (aire aspirado)"

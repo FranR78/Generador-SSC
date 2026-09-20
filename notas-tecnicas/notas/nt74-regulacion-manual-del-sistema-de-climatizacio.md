@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.regulacion-manual-del-sistema-de-climatizacion.2
+modulo: ssc
+unidad: clima
 nt: 74
 tipo: proceso
 subtipo: procedimiento

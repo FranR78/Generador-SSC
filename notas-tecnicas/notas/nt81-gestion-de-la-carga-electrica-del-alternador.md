@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.gestion-de-la-carga-electrica-del-alternador
+modulo: ssc
+unidad: clima
 nt: 81
 tipo: proceso
 subtipo: fundamento

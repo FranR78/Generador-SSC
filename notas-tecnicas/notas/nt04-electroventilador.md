@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.ventilador-electrico-del-condensador
+modulo: ssc
+unidad: clima
 nt: 4
 titulo: Ventilador eléctrico del condensador
 codigo: Sin código documentado

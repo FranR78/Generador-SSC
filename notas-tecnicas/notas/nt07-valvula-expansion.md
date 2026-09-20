@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.valvula-de-expansion-termostatica-y-tubo-de-expansion
+modulo: ssc
+unidad: clima
 nt: 7
 titulo: Válvula de expansión termostática y tubo de expansión
 codigo: Sin código documentado

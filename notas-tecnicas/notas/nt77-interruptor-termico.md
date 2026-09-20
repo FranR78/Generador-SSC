@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.interruptor-termico
+modulo: ssc
+unidad: clima
 nt: 77
 titulo: "Interruptor Térmico"
 ubicacion: "Montado en la caja de aguas o zonas próximas del vehículo"

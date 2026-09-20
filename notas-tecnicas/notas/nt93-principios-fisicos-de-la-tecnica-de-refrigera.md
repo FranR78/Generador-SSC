@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.principios-fisicos-de-la-tecnica-de-refrigeracion.2
+modulo: ssc
+unidad: clima
 nt: 93
 tipo: proceso
 subtipo: fundamento

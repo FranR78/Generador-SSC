@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.evaporador
+modulo: ssc
+unidad: clima
 nt: 8
 titulo: Evaporador
 codigo: Sin código documentado

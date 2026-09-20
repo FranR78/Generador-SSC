@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.agente-frigorifico-r134a.2
+modulo: ssc
+unidad: clima
 nt: 94
 titulo: "AGENTE FRIGORÍFICO R134a"
 codigo: "R134a"

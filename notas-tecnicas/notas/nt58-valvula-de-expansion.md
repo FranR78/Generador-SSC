@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.valvula-de-expansion
+modulo: ssc
+unidad: clima
 nt: 58
 titulo: "Válvula De Expansión"
 codigo: "Válvula de expansión de bloque (nueva generación) o termostática"

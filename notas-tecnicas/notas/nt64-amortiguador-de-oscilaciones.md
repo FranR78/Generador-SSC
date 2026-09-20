@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.amortiguador-de-oscilaciones
+modulo: ssc
+unidad: clima
 nt: 64
 titulo: "Amortiguador De Oscilaciones"
 ubicacion: "Montado en el circuito frigorífico antes del compresor"

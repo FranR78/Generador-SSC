@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.sistema-de-recirculacion-de-aire
+modulo: ssc
+unidad: clima
 nt: 89
 tipo: proceso
 subtipo: procedimiento

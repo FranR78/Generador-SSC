@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.sensor-de-calidad-del-aire-sno2
+modulo: ssc
+unidad: clima
 nt: 90
 titulo: "SENSOR DE CALIDAD DEL AIRE (SnO2)"
 ubicacion: "Montado en la toma de entrada de aire a la unidad climática, junto al sensor de temperatura"

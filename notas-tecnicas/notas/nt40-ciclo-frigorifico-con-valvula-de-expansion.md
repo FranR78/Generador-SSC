@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.ciclo-frigorifico-con-valvula-de-expansion
+modulo: ssc
+unidad: clima
 nt: 40
 tipo: proceso
 subtipo: fundamento

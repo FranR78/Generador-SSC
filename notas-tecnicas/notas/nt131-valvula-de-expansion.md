@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.valvula-de-expansion.3
+modulo: ssc
+unidad: clima
 nt: 131
 titulo: "Válvula De Expansión"
 ubicacion: "Montada en la pared de separación del vano motor (mamparo) directamente a la entrada del evaporador [26, 42, 135, 136]"

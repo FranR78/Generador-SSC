@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.compresor-de-climatizacion.3
+modulo: ssc
+unidad: clima
 nt: 121
 titulo: "Compresor De Climatización"
 ubicacion: "Montado en el bloque motor mediante soporte metálico y arrastrado por la correa de accesorios (Poly-V) [42-44]"

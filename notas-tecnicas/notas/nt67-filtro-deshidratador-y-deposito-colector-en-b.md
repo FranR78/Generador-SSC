@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.filtro-deshidratador-y-deposito-colector-en-baja-presion
+modulo: ssc
+unidad: clima
 nt: 67
 titulo: "Filtro Deshidratador Y Depósito Colector (En Baja Presión)"
 ubicacion: "Montado en la zona de baja presión del compartimento motor (zona caliente) entre el evaporador y el compresor"

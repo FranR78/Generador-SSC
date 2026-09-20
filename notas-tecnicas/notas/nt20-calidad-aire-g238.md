@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.sensor-de-la-calidad-del-aire
+modulo: ssc
+unidad: clima
 nt: 20
 titulo: Sensor de la calidad del aire
 codigo: G238

@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.evaporador.4
+modulo: ssc
+unidad: clima
 nt: 133
 titulo: "Evaporador"
 ubicacion: "Montado en el interior de la caja/envolvente del climatizador dentro del salpicadero del habitáculo [26, 149-153]"

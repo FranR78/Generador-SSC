@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.termosensor-de-temperatura-interior
+modulo: ssc
+unidad: clima
 nt: 78
 titulo: "Termosensor De Temperatura Interior"
 ubicacion: "Integrado en el panel de mandos/UCE del climatizador o como elemento independiente en el salpicadero"

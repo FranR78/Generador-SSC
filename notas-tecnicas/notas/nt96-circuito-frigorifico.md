@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.circuito-frigorifico.2
+modulo: ssc
+unidad: clima
 nt: 96
 tipo: proceso
 subtipo: fundamento

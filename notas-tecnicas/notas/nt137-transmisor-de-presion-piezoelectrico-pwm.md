@@ -1,4 +1,7 @@
 ---
+id: ssc.clima.transmisor-de-presion-piezoelectrico-pwm
+modulo: ssc
+unidad: clima
 nt: 137
 titulo: "Transmisor De Presión Piezoeléctrico (Pwm)"
 ubicacion: "Enroscado en la tubería de alta presión del circuito frigorífico [168, 169]"
