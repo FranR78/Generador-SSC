@@ -204,6 +204,20 @@ function comprobarConfig() {
     }
   }
 
+  // --- Los apuntes (notas.json en Drive) ---
+  var idNotas = p.getProperty(NOTAS_FILE_PROP);
+  if (!idNotas) {
+    mal('NOTAS_FILE_ID sin poner: la pestaña Apuntes saldrá vacía. Lo da el '
+        + 'puente al ejecutar puenteNT_traerNotas().');
+  } else {
+    try {
+      var d = notas_();
+      bien(d.total + ' notas cargadas (generadas el ' + d.generado + ')');
+    } catch (eN) {
+      mal('los apuntes no se pueden leer: ' + eN.message);
+    }
+  }
+
   // --- La IA (solo si está, sin enseñar la clave) ---
   bien(p.getProperty(IA_PROMPT_PROP) ? 'prompt de IA personalizado' : 'prompt de IA de fábrica');
 
