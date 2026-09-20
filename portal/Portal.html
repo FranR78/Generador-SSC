@@ -1327,7 +1327,11 @@
 
       cont.innerHTML = '';
       var conNotas = 0;
-      unidades.forEach(function(u){
+      // Solo las que tienen material. Una portada de la que no se puede entrar
+      // es una promesa, y el alumno no necesita promesas: necesita saber qué
+      // hacer hoy.
+      unidades.filter(function(u){ return (cuenta[u.unidad]||{}).total; })
+        .forEach(function(u){
         var c = cuenta[u.unidad] || { total:0, leidas:0 };
         var pct = c.total ? Math.round(c.leidas * 100 / c.total) : 0;
         if(c.total) conNotas++;
@@ -1366,9 +1370,14 @@
         cont.appendChild(b);
       });
 
+      if(!conNotas){
+        cont.innerHTML = '<p class="vacia">Todavía no hay apuntes de ninguna unidad.</p>';
+      }
+      var pendientes = unidades.length - conNotas;
       document.getElementById('cur-intro').textContent =
-        unidades.length + ' unidades en el módulo, ' + conNotas + ' con material. ' +
-        'Cada una es un curso corto: entra y verás lo leído y lo que falta.';
+        conNotas + (conNotas === 1 ? ' unidad disponible' : ' unidades disponibles') +
+        (pendientes ? ' · ' + pendientes + ' más en preparación' : '') +
+        '. Cada una es un curso corto: entra y verás lo leído y lo que falta.';
     }
 
     /* Entrar en un curso es ir a sus apuntes ya filtrados: no hace falta una

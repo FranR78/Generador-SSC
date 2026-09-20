@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">129 notas · 20/09/2026</p>
+  <p class="sidebar-meta">134 notas · 20/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -258,7 +258,7 @@
     <li><a href="#grp-filtro-de-habitaculo">Filtro de habitáculo <span class="menu-cuenta">2 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Sensores de presión</span></li>
     <li><a href="#grp-presostatos">Presostato de mínima (válvula binaria) <span class="menu-cuenta">6 fuentes</span></a></li>
-    <li><a href="#grp-transmisor-de-presion">Transmisor de alta presión / sensor MAP <span class="menu-cuenta">2 fuentes</span></a></li>
+    <li><a href="#grp-transmisor-de-presion">Transmisor de alta presión / sensor MAP <span class="menu-cuenta">3 fuentes</span></a></li>
     <li><a href="#grp-valvula-de-descarga-de-sobrepresion">Válvula de descarga por sobrepresión <span class="menu-cuenta">3 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Sensores de temperatura</span></li>
     <li><a href="#grp-sensor-de-evaporador">Interruptor termostático y sensor de evaporador <span class="menu-cuenta">6 fuentes</span></a></li>
@@ -307,6 +307,10 @@
     <li><a href="#nt129">NT129 · Vaso De Expansión</a></li>
     <li><a href="#nt132">NT132 · Tubo De Expansión</a></li>
     <li><a href="#nt135">NT135 · Limpieza Y Desinfección Del Evaporador</a></li>
+    <li><a href="#nt143">NT143 · N280</a></li>
+    <li><a href="#nt145">NT145 · G308</a></li>
+    <li><a href="#nt146">NT146 · J255</a></li>
+    <li><a href="#nt147">NT147 · Carga del circuito</a></li>
   </ul>
 </nav>
 
@@ -3006,10 +3010,10 @@ dar por buena o mala una lectura.</div>
   </div>
 
   <div class="grupo-componente" id="grp-transmisor-de-presion">
-    <div class="grupo-cab"><span class="grupo-nombre">Transmisor de alta presión / sensor MAP</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Transmisor de alta presión / sensor MAP</span><span class="grupo-cuenta">3 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 2 · NT13 · AA Automoción (Hella), págs. 136-137 · Guía Técnica VAG, págs. 89-90 ·</summary>
+      <summary>Variante 1 de 3 · NT13 · AA Automoción (Hella), págs. 136-137 · Guía Técnica VAG, págs. 89-90 ·</summary>
   <section id="nt13" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 13 <span class="fusionado">✦ FUSIONADO — 3 fuentes</span></div>
     <div class="nota-body">
@@ -3122,7 +3126,7 @@ impulso positivo varía proporcionalmente a la presión: 2,6 ms a 1,4 bar, 18 ms
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 2 · NT137 · fuente sin especificar</summary>
+      <summary>Variante 2 de 3 · NT137 · fuente sin especificar</summary>
   <section id="nt137" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 137 </div>
     <div class="nota-body">
@@ -3193,6 +3197,91 @@ impulso positivo varía proporcionalmente a la presión: 2,6 ms a 1,4 bar, 18 ms
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 3 de 3 · NT144 · SEAT CD 072 «Climatización en el Ibiza-Córdoba 99»; VW SSP 301 «Climat</summary>
+  <section id="nt144" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 144 </div>
+    <div class="nota-body">
+      <h1>Transmisor de alta presión G65 — <strong>G65</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">SEAT Ibiza / Córdoba 99</span><span class="badge-aplicacion">VW Touareg</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Circuito de alta presión, junto a la válvula de expansión</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Informar a la unidad de control de la presión que hay en el lado de alta del circuito frigorífico,
+para que el sistema decida si puede conectar el compresor y cuándo tiene que arrancar el ventilador
+del condensador.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Es un transmisor electrónico: entrega una señal proporcional a la presión, no un simple contacto de
+abrir y cerrar. Por eso la unidad de control conoce el valor de presión en todo momento y no solo si
+está por encima o por debajo de un umbral.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Según la motorización, en esa misma posición del circuito puede ir montado el <strong>conmutador de presión
+F129</strong> en lugar del transmisor electrónico G65. No son intercambiables sin más: uno da contacto y el
+otro da señal.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <p>De las fuentes:</p>
+<table>
+<thead>
+<tr>
+<th>Valor</th>
+<th>Qué es</th>
+<th>Origen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>16 bares</td>
+<td>presión a la que se ordena la conexión del electroventilador</td>
+<td>Teórico OEM</td>
+</tr>
+<tr>
+<td>44 bares</td>
+<td>tarado de la válvula de seguridad del circuito</td>
+<td>Teórico OEM</td>
+</tr>
+</tbody>
+</table>
+<p>La válvula de seguridad <strong>no es este componente</strong>: es el elemento que descarga el circuito si la
+presión llega a ese valor. Se recoge aquí porque marca el techo del rango de trabajo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Conector con humedad, señal fuera de rango por deriva del sensor, y fugas por la junta de su asiento
+al desmontarlo sin recuperar el refrigerante.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Si la señal no es válida, el sistema no autoriza el compresor por seguridad: no enfría aunque el
+circuito esté bien. También puede quedarse el ventilador del condensador siempre en marcha o sin
+arrancar nunca.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <ol>
+<li>Alimentación y masa del sensor, con el contacto puesto, entre sus bornes correspondientes.</li>
+<li>Señal de salida con el motor en marcha, comparando el valor que lee la diagnosis con el que marcan
+   los manómetros de la estación de carga. Si no coinciden, el sensor miente.</li>
+<li><strong>No desmontarlo con el circuito cargado.</strong> Se recupera el refrigerante antes.</li>
+</ol>
+      </div>
+      <div class="caja advertencia">Trabajar sobre el circuito de alta con carga es la causa habitual de quemaduras por refrigerante.
+La recuperación previa con la estación no es opcional.</div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">SEAT CD 072 «Climatización en el Ibiza-Córdoba 99»; VW SSP 301 «Climatización en el Touareg»</p>
       </div>
     </div>
   </section>
@@ -10303,8 +10392,318 @@ UCE de motor,Conecta tras estabilizar ralentí; desconecta en aceleración brusc
     </div>
   </section>
 
+  <section id="nt143" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 143 </div>
+    <div class="nota-body">
+      <h1>Válvula reguladora para compresor N280 — <strong>N280</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">VW Touareg (Climatronic)</span><span class="badge-aplicacion">SEAT Tarraco</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Montada sobre el propio compresor, en su culata</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Regula la cilindrada del compresor autorregulado, de modo que el caudal de agente frigorífico se
+ajusta a la demanda de frío sin conectar y desconectar el compresor continuamente. Es la pieza que
+sustituye al embrague electromagnético en los compresores de cilindrada variable.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>La unidad de control del Climatronic <strong>J255</strong> la excita con una señal modulada. Al variar la corriente
+que recibe la bobina, la válvula modifica la presión en el cárter del compresor, y esa presión cambia
+la inclinación del plato oscilante. Más inclinación, más carrera de los pistones y más caudal.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Válvula electromagnética de mando proporcional, mandada desde J255. En el Touareg, el compresor que
+regula es del tipo autorregulado de 7 cilindros. En los motores Diesel V10-TDI y R5-TDI el compresor
+no se acciona directamente: va a través de un embrague montado entre la bomba de la servodirección y
+el propio compresor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <p>No documentado en fuentes. Las fuentes describen la función de la válvula pero no dan la resistencia
+del bobinado ni los valores de la señal de mando.</p>
+<p><strong>Inferido:</strong> un bobinado de este tipo suele quedar entre 8 y 14 Ω medido con el contacto quitado y
+el conector desembornado. Ese rango está puesto a mano y <strong>hay que sustituirlo por una medida real</strong>
+en cuanto se pueda hacer sobre un vehículo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Bobinado cortado o en cortocircuito, conector con humedad o mal contacto, y corte del cable de mando
+entre J255 y la válvula. Al ir montada sobre el compresor, trabaja con vibración y temperatura.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Sin mando válido, el compresor se queda a cilindrada mínima y no enfría, aunque el compresor gire y
+el circuito tenga carga correcta. El cliente lo cuenta como «no echa frío», sin ruidos raros y con el
+ventilador del habitáculo funcionando con normalidad.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <ol>
+<li>Resistencia del bobinado entre los dos bornes de la válvula, <strong>con el contacto quitado y el
+   conector desembornado</strong>. Con el conector puesto se mide el resto del circuito en paralelo y el
+   valor no sirve.</li>
+<li>Continuidad del cable de mando entre el borne de salida de J255 y el borne de la válvula, en las
+   mismas condiciones.</li>
+<li>Con el motor en marcha y la climatización pedida, comprobar que J255 da mando. Un valor de tensión
+   fijo, sin variación al cambiar la demanda, apunta a la unidad de control y no a la válvula.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">VW SSP 301 «Climatización en el Touareg», esquema eléctrico del Climatronic</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt145" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 145 </div>
+    <div class="nota-body">
+      <h1>Sensor térmico de evaporador G308 — <strong>G308</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">VW Touareg (Climatronic)</span><span class="badge-aplicacion">SEAT Tarraco</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> En el evaporador, dentro de la unidad climática</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir la temperatura del evaporador para que la unidad de control evite que se congele. Es el sensor
+que marca el límite inferior de todo el sistema.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Sonda de temperatura montada en el propio evaporador. La unidad J255 usa su lectura para reducir la
+cilindrada del compresor —a través de la válvula reguladora N280— antes de que el agua condensada en
+las aletas llegue a helarse y tape el paso de aire.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Va junto al resto de sensores térmicos del sistema: G385 y G386 para los aireadores directos
+delanteros, G261 y G262 para la salida de los vanos reposapiés, y G89 en el canal de aspiración de
+aire fresco. Todos alimentan la misma unidad de control.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <p>No documentado en fuentes. El manual identifica el sensor y su función, pero no da la curva
+resistencia-temperatura.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Conector con humedad —está en la zona donde condensa el evaporador—, cable rozado en el paso por la
+carcasa de la unidad climática y deriva de la sonda con los años.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Dos cuadros distintos y opuestos:</p>
+<ul>
+<li>Si lee <strong>más frío de lo que hay</strong>, el sistema limita el compresor antes de tiempo y el coche enfría
+  poco, sin ninguna avería aparente en el circuito.</li>
+<li>Si lee <strong>más calor del que hay</strong>, el evaporador puede llegar a helarse: el caudal de aire cae poco
+  a poco hasta casi desaparecer y se recupera solo tras parar un rato. Es un síntoma muy
+  característico y conviene que el alumnado lo reconozca.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <ol>
+<li>Resistencia de la sonda <strong>con el contacto quitado y el conector desembornado</strong>, y comparación con
+   la temperatura real del evaporador.</li>
+<li>Lectura del valor por diagnosis con el sistema en marcha, contrastada con la temperatura del aire
+   que sale por los aireadores.</li>
+<li>Estado del conector: por su ubicación, la humedad es la primera sospecha.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">VW SSP 301 «Climatización en el Touareg», esquema del Climatronic</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt146" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 146 </div>
+    <div class="nota-body">
+      <h1>Unidad de control para Climatronic J255 — <strong>J255</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">VW Touareg</span><span class="badge-aplicacion">SEAT Tarraco</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Panel de mandos de la climatización, en el salpicadero</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Decidir. Recoge lo que piden los mandos y lo que dicen todos los sensores, y manda sobre el compresor,
+los servomotores de chapaleta y el soplador para mantener la temperatura pedida en cada zona.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Es a la vez panel de mandos y unidad de control. Lee los sensores térmicos de habitáculo, aireadores y
+evaporador, el de calidad del aire G238, los fotosensores de irradiación solar y el transmisor de alta
+presión, y con todo eso calcula la posición de cada chapaleta y la cilindrada que le pide a la válvula
+reguladora N280.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Gobierna un sistema con muchos actuadores de posición: V107 para la chapaleta de descongelación, V154
+para aire fresco/recirculación, V108 y V109 para los vanos reposapiés, V102 para los aireadores
+centrales y V305 para la regulación del soplador delantero. Cada servomotor lleva su potenciómetro de
+realimentación, así que la unidad no manda a ciegas: sabe dónde ha quedado la chapaleta.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <p>La diagnosis da acceso a los valores de trabajo de la unidad mediante la <strong>función 08, bloques de
+valores de medición</strong>, que es la vía para diagnosticar lo que no sale en la memoria de averías.</p>
+<p>En el ajuste básico (canal 002) las fuentes recogen esta lectura de referencia:</p>
+<table>
+<thead>
+<tr>
+<th>Canal</th>
+<th>Lectura</th>
+<th>Origen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>002, ajuste básico</td>
+<td>4,21 V · 4,21 V · 4,21 V · 0,76 V</td>
+<td>Teórico OEM</td>
+</tr>
+</tbody>
+</table>
+<p>Tres valores iguales y uno distinto: el que se sale es el que hay que mirar.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Fallos de alimentación y masa del panel, pérdida de comunicación con el resto de unidades, y
+servomotores que la unidad da por averiados cuando el problema está en la realimentación del
+potenciómetro, no en el motor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Desde el sistema entero muerto hasta chapaletas que se quedan en una posición fija. Cuando falla la
+comunicación, el sistema suele pasar a un modo de emergencia con una posición de compromiso.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <ol>
+<li>Alimentación y masa en el conector de la unidad, con el contacto puesto.</li>
+<li>Memoria de averías y, sobre todo, <strong>función 08</strong> para ver los valores de trabajo: una avería de
+   posición de chapaleta casi nunca sale en la memoria, pero sí en los bloques de medición.</li>
+<li>Ajuste básico tras cualquier intervención en chapaletas o servomotores. Sin él, la unidad sigue
+   con las posiciones aprendidas antiguas.</li>
+</ol>
+      </div>
+      <div class="caja advertencia">Antes de dar por averiada la unidad, descartar alimentación, masas y la realimentación de los
+potenciómetros. Es una pieza cara y el fallo casi siempre está fuera de ella.</div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">VW SSP 301 «Climatización en el Touareg»; SEAT SSP 172 (Tarraco)</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt147" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 147 <span class="subtipo">Procedimiento</span></div>
+    <div class="nota-body proceso">
+      <h1>Carga de agente frigorífico y elementos del circuito</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">VW Touareg</span>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Qué lleva el circuito frigorífico de este vehículo y con cuánto refrigerante trabaja. Llega hasta la
+cantidad de carga y la identificación de los elementos; no cubre el manejo de la estación de carga.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Un circuito frigorífico solo da el rendimiento previsto con la cantidad exacta de refrigerante. De
+menos no enfría; de más, sube la presión de alta y el rendimiento también cae. Por eso la carga se
+mide en gramos y no «hasta que enfríe».</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Circuito recuperado con la estación antes de abrir nada, y vehículo identificado: la cantidad de carga
+es de ese modelo y esa motorización, no del taller.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Estación de recuperación y carga, y el agente frigorífico del tipo que pide el vehículo. En este
+circuito, <strong>R134a</strong>.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>Los elementos que componen el circuito, según el manual:</p>
+<ol>
+<li><strong>Filtro deshidratador</strong>, que retiene la humedad, filtra los residuos de la abrasión y evita que se
+   formen burbujas en el circuito.</li>
+<li><strong>Válvula de expansión</strong>, donde se controlan la presión y el caudal del agente frigorífico.</li>
+<li><strong>Evaporador</strong>, en la unidad climática, donde se produce la expansión y el intercambio de calor con
+   el aire que entra al habitáculo.</li>
+<li><strong>Compresor</strong>, que genera la presión: autorregulado, de 7 cilindros.</li>
+<li><strong>Silenciador</strong>, en el circuito de baja presión y cerca del compresor, para amortiguar el ruido de
+   las ondas de presión entre la válvula de expansión y el compresor.</li>
+<li>En el circuito de alta, junto a la válvula de expansión, el <strong>conmutador de presión F129</strong> o el
+   <strong>transmisor electrónico G65</strong>, según motorización.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Dato</th>
+<th>Valor</th>
+<th>Origen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Carga del circuito</td>
+<td>750 ± 50 g de R134a</td>
+<td>Teórico OEM</td>
+</tr>
+<tr>
+<td>Tarado de la válvula de seguridad</td>
+<td>44 bares</td>
+<td>Teórico OEM</td>
+</tr>
+<tr>
+<td>Conexión del electroventilador</td>
+<td>16 bares</td>
+<td>Teórico OEM</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>El error más repetido es cargar «a ojo» mirando solo los manómetros. Con el compresor autorregulado,
+además, las presiones no responden igual que en un circuito con embrague, así que la lectura de
+manómetros por sí sola despista todavía más. La cantidad se pesa.</p>
+<p>El silenciador desorienta a quien no lo conoce: no filtra ni regula nada, solo amortigua ruido. No es
+un elemento a sustituir cuando el sistema no enfría.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Carga pesada dentro de tolerancia, ausencia de fugas comprobada, y temperatura de salida del aire
+coherente con la temperatura ambiente.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>El R134a es un gas fluorado: su recuperación es obligatoria y no puede liberarse a la atmósfera.
+Manipular el circuito cargado es la causa habitual de quemaduras por frío.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">VW SSP 301 «Climatización en el Touareg»</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    129 notas técnicas · generado el 20/09/2026.
+    134 notas técnicas · generado el 20/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 

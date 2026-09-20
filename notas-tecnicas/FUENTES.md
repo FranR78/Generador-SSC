@@ -34,3 +34,18 @@ documento, y se actualiza al procesarlo.
 Un mismo PDF puede aparecer **dos veces**, una por cuaderno: el manual de aire acondicionado
 tiene componentes (van a Elementos) y también fundamentos y procedimientos (van a Procesos).
 Por eso lleva dos líneas.
+
+## Procesados directamente (sin NotebookLM)
+
+Tres manuales leídos y convertidos a notas en el propio repositorio, sin pasar
+por el cuaderno. Se anota aquí porque rompe el recorrido habitual y conviene
+saberlo al auditar de dónde sale cada dato.
+
+| Documento | Notas | Qué aportó |
+|---|---|---|
+| VW SSP 301 · Climatización en el Touareg | NT143, NT145, NT146, NT147 | N280, G308, J255, carga 750 ± 50 g R134a |
+| SEAT CD 072 · Climatización en el Ibiza-Córdoba 99 | NT144 | G65, 16 bares y tarado a 44 bares |
+| SEAT SSP 172 · Tarraco | NT146 | confirma la arquitectura del Climatronic |
+
+Las cinco salen con `grupo: POR CLASIFICAR`, como manda el importador: clasificar
+es decisión del profesor.

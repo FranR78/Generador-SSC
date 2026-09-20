@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-20",
- "total": 129,
+ "total": 134,
  "grupos": [
   "Actuadores y mandos",
   "Circuito frigorífico",
@@ -6450,6 +6450,266 @@
     {
      "titulo": "Imágenes requeridas",
      "texto": "Muestras de lecturas de manómetros de baja y alta presión para diagnosis de incidentes frigoríficos — Fuente: AA AUTOMOCION 1 Enero 2010 HELLA.pptx, diapositivas 453 a 530 [12, 17, 36, 186-203]"
+    }
+   ]
+  },
+  {
+   "id": "ssc.clima.valvula-reguladora-n280",
+   "nt": 143,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "valvula-reguladora-para-compresor-n280",
+   "titulo": "Válvula reguladora para compresor N280",
+   "codigo": "N280",
+   "menu": "N280",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [
+    "VW Touareg (Climatronic)",
+    "SEAT Tarraco"
+   ],
+   "ubicacion": "Montada sobre el propio compresor, en su culata",
+   "fuentes": "VW SSP 301 «Climatización en el Touareg», esquema eléctrico del Climatronic",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Regula la cilindrada del compresor autorregulado, de modo que el caudal de agente frigorífico se ajusta a la demanda de frío sin conectar y desconectar el compresor continuamente. Es la pieza que sustituye al embrague electromagnético en los compresores de cilindrada variable."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "La unidad de control del Climatronic J255 la excita con una señal modulada. Al variar la corriente que recibe la bobina, la válvula modifica la presión en el cárter del compresor, y esa presión cambia la inclinación del plato oscilante. Más inclinación, más carrera de los pistones y más caudal."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Válvula electromagnética de mando proporcional, mandada desde J255. En el Touareg, el compresor que regula es del tipo autorregulado de 7 cilindros. En los motores Diesel V10-TDI y R5-TDI el compresor no se acciona directamente: va a través de un embrague montado entre la bomba de la servodirección y el propio compresor."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "No documentado en fuentes. Las fuentes describen la función de la válvula pero no dan la resistencia del bobinado ni los valores de la señal de mando. Inferido: un bobinado de este tipo suele quedar entre 8 y 14 Ω medido con el contacto quitado y el conector desembornado. Ese rango está puesto a mano y hay que sustituirlo por una medida real en cuanto se pueda hacer sobre un vehículo."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Bobinado cortado o en cortocircuito, conector con humedad o mal contacto, y corte del cable de mando entre J255 y la válvula. Al ir montada sobre el compresor, trabaja con vibración y temperatura."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Sin mando válido, el compresor se queda a cilindrada mínima y no enfría, aunque el compresor gire y el circuito tenga carga correcta. El cliente lo cuenta como «no echa frío», sin ruidos raros y con el ventilador del habitáculo funcionando con normalidad."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Resistencia del bobinado entre los dos bornes de la válvula, con el contacto quitado y el conector desembornado . Con el conector puesto se mide el resto del circuito en paralelo y el valor no sirve. Continuidad del cable de mando entre el borne de salida de J255 y el borne de la válvula, en las mismas condiciones. Con el motor en marcha y la climatización pedida, comprobar que J255 da mando. Un valor de tensión fijo, sin variación al cambiar la demanda, apunta a la unidad de control y no a la válvula."
+    }
+   ]
+  },
+  {
+   "id": "ssc.clima.transmisor-alta-presion-g65",
+   "nt": 144,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "transmisor-de-presion",
+   "titulo": "Transmisor de alta presión G65",
+   "codigo": "G65",
+   "menu": "G65",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [
+    "SEAT Ibiza / Córdoba 99",
+    "VW Touareg"
+   ],
+   "ubicacion": "Circuito de alta presión, junto a la válvula de expansión",
+   "fuentes": "SEAT CD 072 «Climatización en el Ibiza-Córdoba 99»; VW SSP 301 «Climatización en el Touareg»",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Informar a la unidad de control de la presión que hay en el lado de alta del circuito frigorífico, para que el sistema decida si puede conectar el compresor y cuándo tiene que arrancar el ventilador del condensador."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Es un transmisor electrónico: entrega una señal proporcional a la presión, no un simple contacto de abrir y cerrar. Por eso la unidad de control conoce el valor de presión en todo momento y no solo si está por encima o por debajo de un umbral."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Según la motorización, en esa misma posición del circuito puede ir montado el conmutador de presión F129 en lugar del transmisor electrónico G65. No son intercambiables sin más: uno da contacto y el otro da señal."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "De las fuentes: Valor Qué es Origen 16 bares presión a la que se ordena la conexión del electroventilador Teórico OEM 44 bares tarado de la válvula de seguridad del circuito Teórico OEM La válvula de seguridad no es este componente : es el elemento que descarga el circuito si la presión llega a ese valor. Se recoge aquí porque marca el techo del rango de trabajo."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Conector con humedad, señal fuera de rango por deriva del sensor, y fugas por la junta de su asiento al desmontarlo sin recuperar el refrigerante."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si la señal no es válida, el sistema no autoriza el compresor por seguridad: no enfría aunque el circuito esté bien. También puede quedarse el ventilador del condensador siempre en marcha o sin arrancar nunca."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Alimentación y masa del sensor, con el contacto puesto, entre sus bornes correspondientes. Señal de salida con el motor en marcha, comparando el valor que lee la diagnosis con el que marcan los manómetros de la estación de carga. Si no coinciden, el sensor miente. No desmontarlo con el circuito cargado. Se recupera el refrigerante antes."
+    },
+    {
+     "titulo": "Advertencias",
+     "texto": "Trabajar sobre el circuito de alta con carga es la causa habitual de quemaduras por refrigerante. La recuperación previa con la estación no es opcional."
+    }
+   ]
+  },
+  {
+   "id": "ssc.clima.sensor-termico-evaporador-g308",
+   "nt": 145,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-termico-de-evaporador-g308",
+   "titulo": "Sensor térmico de evaporador G308",
+   "codigo": "G308",
+   "menu": "G308",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [
+    "VW Touareg (Climatronic)",
+    "SEAT Tarraco"
+   ],
+   "ubicacion": "En el evaporador, dentro de la unidad climática",
+   "fuentes": "VW SSP 301 «Climatización en el Touareg», esquema del Climatronic",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la temperatura del evaporador para que la unidad de control evite que se congele. Es el sensor que marca el límite inferior de todo el sistema."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Sonda de temperatura montada en el propio evaporador. La unidad J255 usa su lectura para reducir la cilindrada del compresor —a través de la válvula reguladora N280— antes de que el agua condensada en las aletas llegue a helarse y tape el paso de aire."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Va junto al resto de sensores térmicos del sistema: G385 y G386 para los aireadores directos delanteros, G261 y G262 para la salida de los vanos reposapiés, y G89 en el canal de aspiración de aire fresco. Todos alimentan la misma unidad de control."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "No documentado en fuentes. El manual identifica el sensor y su función, pero no da la curva resistencia-temperatura."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Conector con humedad —está en la zona donde condensa el evaporador—, cable rozado en el paso por la carcasa de la unidad climática y deriva de la sonda con los años."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Dos cuadros distintos y opuestos: Si lee más frío de lo que hay , el sistema limita el compresor antes de tiempo y el coche enfría poco, sin ninguna avería aparente en el circuito. Si lee más calor del que hay , el evaporador puede llegar a helarse: el caudal de aire cae poco a poco hasta casi desaparecer y se recupera solo tras parar un rato. Es un síntoma muy característico y conviene que el alumnado lo reconozca."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Resistencia de la sonda con el contacto quitado y el conector desembornado , y comparación con la temperatura real del evaporador. Lectura del valor por diagnosis con el sistema en marcha, contrastada con la temperatura del aire que sale por los aireadores. Estado del conector: por su ubicación, la humedad es la primera sospecha."
+    }
+   ]
+  },
+  {
+   "id": "ssc.clima.unidad-control-climatronic-j255",
+   "nt": 146,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "unidad-de-control-para-climatronic-j255",
+   "titulo": "Unidad de control para Climatronic J255",
+   "codigo": "J255",
+   "menu": "J255",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [
+    "VW Touareg",
+    "SEAT Tarraco"
+   ],
+   "ubicacion": "Panel de mandos de la climatización, en el salpicadero",
+   "fuentes": "VW SSP 301 «Climatización en el Touareg»; SEAT SSP 172 (Tarraco)",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Decidir. Recoge lo que piden los mandos y lo que dicen todos los sensores, y manda sobre el compresor, los servomotores de chapaleta y el soplador para mantener la temperatura pedida en cada zona."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Es a la vez panel de mandos y unidad de control. Lee los sensores térmicos de habitáculo, aireadores y evaporador, el de calidad del aire G238, los fotosensores de irradiación solar y el transmisor de alta presión, y con todo eso calcula la posición de cada chapaleta y la cilindrada que le pide a la válvula reguladora N280."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Gobierna un sistema con muchos actuadores de posición: V107 para la chapaleta de descongelación, V154 para aire fresco/recirculación, V108 y V109 para los vanos reposapiés, V102 para los aireadores centrales y V305 para la regulación del soplador delantero. Cada servomotor lleva su potenciómetro de realimentación, así que la unidad no manda a ciegas: sabe dónde ha quedado la chapaleta."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "La diagnosis da acceso a los valores de trabajo de la unidad mediante la función 08, bloques de valores de medición , que es la vía para diagnosticar lo que no sale en la memoria de averías. En el ajuste básico (canal 002) las fuentes recogen esta lectura de referencia: Canal Lectura Origen 002, ajuste básico 4,21 V · 4,21 V · 4,21 V · 0,76 V Teórico OEM Tres valores iguales y uno distinto: el que se sale es el que hay que mirar."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fallos de alimentación y masa del panel, pérdida de comunicación con el resto de unidades, y servomotores que la unidad da por averiados cuando el problema está en la realimentación del potenciómetro, no en el motor."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Desde el sistema entero muerto hasta chapaletas que se quedan en una posición fija. Cuando falla la comunicación, el sistema suele pasar a un modo de emergencia con una posición de compromiso."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Alimentación y masa en el conector de la unidad, con el contacto puesto. Memoria de averías y, sobre todo, función 08 para ver los valores de trabajo: una avería de posición de chapaleta casi nunca sale en la memoria, pero sí en los bloques de medición. Ajuste básico tras cualquier intervención en chapaletas o servomotores. Sin él, la unidad sigue con las posiciones aprendidas antiguas."
+    },
+    {
+     "titulo": "Advertencias",
+     "texto": "Antes de dar por averiada la unidad, descartar alimentación, masas y la realimentación de los potenciómetros. Es una pieza cara y el fallo casi siempre está fuera de ella."
+    }
+   ]
+  },
+  {
+   "id": "ssc.clima.carga-de-refrigerante-touareg",
+   "nt": 147,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "carga-de-agente-frigorifico-y-elementos-del-circuito",
+   "titulo": "Carga de agente frigorífico y elementos del circuito",
+   "codigo": "",
+   "menu": "Carga del circuito",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [
+    "VW Touareg"
+   ],
+   "ubicacion": "",
+   "fuentes": "VW SSP 301 «Climatización en el Touareg»",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Qué lleva el circuito frigorífico de este vehículo y con cuánto refrigerante trabaja. Llega hasta la cantidad de carga y la identificación de los elementos; no cubre el manejo de la estación de carga."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Un circuito frigorífico solo da el rendimiento previsto con la cantidad exacta de refrigerante. De menos no enfría; de más, sube la presión de alta y el rendimiento también cae. Por eso la carga se mide en gramos y no «hasta que enfríe»."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Circuito recuperado con la estación antes de abrir nada, y vehículo identificado: la cantidad de carga es de ese modelo y esa motorización, no del taller."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Estación de recuperación y carga, y el agente frigorífico del tipo que pide el vehículo. En este circuito, R134a ."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Los elementos que componen el circuito, según el manual: Filtro deshidratador , que retiene la humedad, filtra los residuos de la abrasión y evita que se formen burbujas en el circuito. Válvula de expansión , donde se controlan la presión y el caudal del agente frigorífico. Evaporador , en la unidad climática, donde se produce la expansión y el intercambio de calor con el aire que entra al habitáculo. Compresor , que genera la presión: autorregulado, de 7 cilindros. Silenciador , en el circuito de baja presión y cerca del compresor, para amortiguar el ruido de las ondas de presión entre la válvula de expansión y el compresor. En el circuito de alta, junto a la válvula de expansión, el conmutador de presión F129 o el transmisor electrónico G65 , según motorización."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Dato Valor Origen Carga del circuito 750 ± 50 g de R134a Teórico OEM Tarado de la válvula de seguridad 44 bares Teórico OEM Conexión del electroventilador 16 bares Teórico OEM"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "El error más repetido es cargar «a ojo» mirando solo los manómetros. Con el compresor autorregulado, además, las presiones no responden igual que en un circuito con embrague, así que la lectura de manómetros por sí sola despista todavía más. La cantidad se pesa. El silenciador desorienta a quien no lo conoce: no filtra ni regula nada, solo amortigua ruido. No es un elemento a sustituir cuando el sistema no enfría."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Carga pesada dentro de tolerancia, ausencia de fugas comprobada, y temperatura de salida del aire coherente con la temperatura ambiente."
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "El R134a es un gas fluorado: su recuperación es obligatoria y no puede liberarse a la atmósfera. Manipular el circuito cargado es la causa habitual de quemaduras por frío."
     }
    ]
   }
