@@ -1,0 +1,26 @@
+# Unidad didáctica del módulo SSC. Hereda los apartados comunes de
+# curriculo/ssc.yml; aquí solo va lo propio.
+
+modulo: ssc
+unidad: alarmas
+nombre: Alarmas e inmovilizadores
+orden: 4
+icono: 🔐
+color: '#5b3fa8'
+horas: 20
+descripcion: Grado de protección de una alarma, su instalación, el inmovilizador y la codificación
+  de llaves y componentes.
+cuadernos:
+- nombre: alarmas-1
+  contenido: alarmas, inmovilizador, llaves y codificación
+apartados_propios:
+  elemento:
+  - apartado: Grado de protección
+    criterios:
+    - 5e
+    pide: Qué protege y qué no, según sus características técnicas.
+  - apartado: Codificación y programación
+    criterios:
+    - 5h
+    - 5i
+    pide: Qué hay que codificar tras sustituirlo y con qué.

@@ -1,0 +1,27 @@
+# Unidad didáctica del módulo SSC. Hereda los apartados comunes de
+# curriculo/ssc.yml; aquí solo va lo propio.
+
+modulo: ssc
+unidad: prl
+nombre: Prevención y protección ambiental
+orden: 7
+icono: ⚠️
+color: '#8a1f11'
+horas: 8
+descripcion: 'Transversal a todas las unidades: riesgos del taller, protección personal y colectiva,
+  y qué se hace con cada residuo.'
+cuadernos:
+- nombre: prl-1
+  contenido: riesgos, equipos de protección y gestión de residuos
+apartados_propios:
+  elemento:
+  - apartado: Riesgos y protección
+    criterios:
+    - 7a
+    - 7b
+    - 7c
+    pide: Qué puede pasar y con qué se evita.
+  - apartado: Residuos
+    criterios:
+    - 7e
+    pide: Cómo se clasifica y dónde va cada uno.

@@ -537,6 +537,42 @@ def texto_plano(html_str):
     return re.sub(r"\s+", " ", t).strip()
 
 
+def catalogo_unidades():
+    """Las unidades didácticas, para las portadas del portal.
+
+    Cada unidad es un mini curso: tiene su nombre, su color, sus horas y
+    cuántos criterios del módulo toca. El portal necesita todo eso para pintar
+    la portada sin preguntar nada más al servidor.
+    """
+    dir_uni = RAIZ / "unidades"
+    if not dir_uni.exists():
+        return []
+    fuera = []
+    for ruta in sorted(dir_uni.glob("*.yml")):
+        u = yaml.safe_load(ruta.read_text(encoding="utf-8")) or {}
+        if not u.get("unidad"):
+            continue
+        # Los criterios que toca: los comunes del módulo valen para todas, así
+        # que aquí solo se cuentan los propios, que es lo que la distingue.
+        propios = u.get("apartados_propios") or {}
+        if isinstance(propios, list):
+            propios = {}
+        criterios = set()
+        for tipo in ("elemento", "proceso"):
+            for a in propios.get(tipo) or []:
+                criterios.update(a.get("criterios") or [])
+        fuera.append({
+            "modulo": u.get("modulo", ""), "unidad": u["unidad"],
+            "nombre": u.get("nombre", u["unidad"]),
+            "descripcion": u.get("descripcion", ""),
+            "icono": u.get("icono", "📘"), "color": u.get("color", "#0a63aa"),
+            "horas": u.get("horas"), "orden": u.get("orden", 99),
+            "criteriosPropios": sorted(criterios),
+        })
+    fuera.sort(key=lambda x: (x["orden"], x["nombre"]))
+    return fuera
+
+
 def volcar_json(notas):
     """Escribe web/notas.json: el corpus en texto, para el portal y la IA.
 
@@ -568,6 +604,7 @@ def volcar_json(notas):
         "generado": date.today().isoformat(),
         "total": len(fuera),
         "grupos": sorted({n.grupo for n in notas}),
+        "unidades": catalogo_unidades(),
         "notas": fuera,
     }
     ruta = DIR_WEB / "notas.json"

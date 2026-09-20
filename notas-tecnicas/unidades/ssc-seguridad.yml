@@ -1,0 +1,21 @@
+# Unidad didáctica del módulo SSC. Hereda los apartados comunes de
+# curriculo/ssc.yml; aquí solo va lo propio.
+
+modulo: ssc
+unidad: seguridad
+nombre: Sistemas de seguridad del vehículo
+orden: 3
+icono: 🛡️
+color: '#1e874b'
+horas: 20
+descripcion: 'Cinturones, captadores y la interrelación entre sistemas de seguridad: localizarlos,
+  interpretar su esquema y verificarlos.'
+cuadernos:
+- nombre: airbag-seguridad-1
+  contenido: componentes de seguridad, captadores e interconexión
+apartados_propios:
+  elemento:
+  - apartado: Localización en el vehículo
+    criterios:
+    - 5a
+    pide: Dónde va montado y cómo se llega a él.

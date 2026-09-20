@@ -46,8 +46,10 @@ def cargar_falso_notas():
     leidas = set(FALSO["miProgreso"]["notasLeidas"])
     return {
         "generado": d["generado"], "total": d["total"], "grupos": d["grupos"],
+        "unidades": d.get("unidades", []),
         "notas": [{"nt": n["nt"], "titulo": n["titulo"], "menu": n["menu"],
                    "grupo": n["grupo"], "codigo": n["codigo"], "tipo": n["tipo"],
+                   "unidad": n.get("unidad", ""),
                    "subtipo": n["subtipo"], "fuentes": n["fuentes"],
                    "leida": n["nt"] in leidas} for n in d["notas"]],
     }

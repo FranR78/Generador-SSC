@@ -1,0 +1,23 @@
+# Unidad didáctica del módulo SSC. Hereda los apartados comunes de
+# curriculo/ssc.yml; aquí solo va lo propio.
+
+modulo: ssc
+unidad: infotenimiento
+nombre: Audiovisuales y comunicación
+orden: 5
+icono: 🔊
+color: '#b26a00'
+horas: 20
+descripcion: 'Equipos de audio, comunicación y confort: esquema de instalación, sección de conductores,
+  montaje y verificación.'
+cuadernos:
+- nombre: info-1
+  contenido: equipos audiovisuales, de comunicación y de confort
+apartados_propios:
+  elemento:
+  - apartado: Instalación y sección de conductores
+    criterios:
+    - 1f
+    - 4d
+    - 4e
+    pide: Esquema previo de montaje y cálculo de la sección que pide el consumo.

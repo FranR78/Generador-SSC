@@ -1,0 +1,43 @@
+<!-- Cursos.html — Las unidades didácticas como mini cursos.
+     Es la primera pantalla de contenido: de aquí se entra a todo lo demás. -->
+<style>
+  .cur .intro{color:#5a6b78;font-size:14px;margin:0 0 14px}
+  .cur .rejilla{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
+  .cur .curso{position:relative;overflow:hidden;background:#fff;border:1px solid var(--borde);
+    border-radius:14px;padding:0;text-align:left;font-family:inherit;cursor:pointer;
+    display:flex;flex-direction:column;transition:transform .12s,box-shadow .12s}
+  .cur .curso:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(2,60,110,.14)}
+  .cur .curso:disabled{cursor:default;opacity:.62}
+  .cur .curso:disabled:hover{transform:none;box-shadow:none}
+  /* La portada: una banda de color con el icono. Es lo que hace que se
+     distinga una unidad de otra de un vistazo, sin leer. */
+  .cur .portada{height:76px;display:flex;align-items:center;gap:10px;padding:0 14px;color:#fff}
+  .cur .portada .ic{font-size:30px;line-height:1}
+  .cur .portada .n{font-size:11px;font-weight:700;opacity:.85;letter-spacing:.06em;
+    text-transform:uppercase}
+  .cur .portada h3{margin:0;font-size:15px;font-weight:800;line-height:1.2}
+  .cur .cuerpo{padding:12px 14px 14px;display:flex;flex-direction:column;flex:1;gap:8px}
+  .cur .desc{margin:0;font-size:13px;color:#42525c;line-height:1.5;flex:1}
+  .cur .meta{display:flex;gap:10px;flex-wrap:wrap;font-size:12px;color:#5a6b78}
+  .cur .meta b{color:var(--azul-osc)}
+  .cur .barra{background:#e3ecf3;border-radius:20px;height:8px;overflow:hidden}
+  .cur .barra > div{height:100%;width:0;border-radius:20px;transition:width .5s}
+  .cur .pie{display:flex;justify-content:space-between;align-items:baseline;font-size:12px}
+  .cur .pct{font-weight:800}
+  .cur .vacia{font-size:12px;color:#7c8b93;font-style:italic}
+  .cur .etiqueta{position:absolute;top:10px;right:10px;background:rgba(255,255,255,.92);
+    color:#42525c;font-size:10.5px;font-weight:700;border-radius:20px;padding:2px 8px}
+  @media (max-width:760px){
+    .cur .rejilla{grid-template-columns:1fr}
+    .cur .portada{height:64px}
+  }
+</style>
+
+<div class="cur">
+  <div class="panel">
+    <h2>Tus cursos</h2>
+    <p class="intro" id="cur-intro">Cada unidad es un curso corto. Entra en el que toque:
+      verás lo que ya has leído y lo que te falta.</p>
+    <div class="rejilla" id="cur-rejilla"></div>
+  </div>
+</div>

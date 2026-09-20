@@ -13,6 +13,115 @@
   "Sensores de presión",
   "Sensores de temperatura"
  ],
+ "unidades": [
+  {
+   "modulo": "ssc",
+   "unidad": "clima",
+   "nombre": "Climatización",
+   "descripcion": "El circuito frigorífico de arriba abajo: qué hace cada pieza, qué valores tiene que dar y cómo se diagnostica cuando no enfría.",
+   "icono": "❄️",
+   "color": "#0a63aa",
+   "horas": 40,
+   "orden": 1,
+   "criteriosPropios": [
+    "1c",
+    "1d",
+    "3e",
+    "3f",
+    "3g"
+   ]
+  },
+  {
+   "modulo": "ssc",
+   "unidad": "airbag",
+   "nombre": "Airbag y dispositivos pirotécnicos",
+   "descripcion": "Airbag y pretensores. Material pirotécnico: antes de tocar nada hay que saber desactivarlo, y eso es la mitad de la unidad.",
+   "icono": "🎈",
+   "color": "#a3341f",
+   "horas": 24,
+   "orden": 2,
+   "criteriosPropios": [
+    "1e",
+    "5d",
+    "7g"
+   ]
+  },
+  {
+   "modulo": "ssc",
+   "unidad": "seguridad",
+   "nombre": "Sistemas de seguridad del vehículo",
+   "descripcion": "Cinturones, captadores y la interrelación entre sistemas de seguridad: localizarlos, interpretar su esquema y verificarlos.",
+   "icono": "🛡️",
+   "color": "#1e874b",
+   "horas": 20,
+   "orden": 3,
+   "criteriosPropios": [
+    "5a"
+   ]
+  },
+  {
+   "modulo": "ssc",
+   "unidad": "alarmas",
+   "nombre": "Alarmas e inmovilizadores",
+   "descripcion": "Grado de protección de una alarma, su instalación, el inmovilizador y la codificación de llaves y componentes.",
+   "icono": "🔐",
+   "color": "#5b3fa8",
+   "horas": 20,
+   "orden": 4,
+   "criteriosPropios": [
+    "5e",
+    "5h",
+    "5i"
+   ]
+  },
+  {
+   "modulo": "ssc",
+   "unidad": "infotenimiento",
+   "nombre": "Audiovisuales y comunicación",
+   "descripcion": "Equipos de audio, comunicación y confort: esquema de instalación, sección de conductores, montaje y verificación.",
+   "icono": "🔊",
+   "color": "#b26a00",
+   "horas": 20,
+   "orden": 5,
+   "criteriosPropios": [
+    "1f",
+    "4d",
+    "4e"
+   ]
+  },
+  {
+   "modulo": "ssc",
+   "unidad": "carroceria",
+   "nombre": "Lunas y elementos de carrocería",
+   "descripcion": "Guarnecidos, cerraduras y lunas: tipos, simbología grabada, herramienta y sustitución de luna calzada y pegada.",
+   "icono": "🚪",
+   "color": "#4a6572",
+   "horas": 16,
+   "orden": 6,
+   "criteriosPropios": [
+    "6e",
+    "6f",
+    "6g",
+    "6h"
+   ]
+  },
+  {
+   "modulo": "ssc",
+   "unidad": "prl",
+   "nombre": "Prevención y protección ambiental",
+   "descripcion": "Transversal a todas las unidades: riesgos del taller, protección personal y colectiva, y qué se hace con cada residuo.",
+   "icono": "⚠️",
+   "color": "#8a1f11",
+   "horas": 8,
+   "orden": 7,
+   "criteriosPropios": [
+    "7a",
+    "7b",
+    "7c",
+    "7e"
+   ]
+  }
+ ],
  "notas": [
   {
    "id": "ssc.clima.compresor-de-aire-acondicionado",

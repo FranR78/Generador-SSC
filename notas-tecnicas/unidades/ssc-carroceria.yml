@@ -1,0 +1,27 @@
+# Unidad didáctica del módulo SSC. Hereda los apartados comunes de
+# curriculo/ssc.yml; aquí solo va lo propio.
+
+modulo: ssc
+unidad: carroceria
+nombre: Lunas y elementos de carrocería
+orden: 6
+icono: 🚪
+color: '#4a6572'
+horas: 16
+descripcion: 'Guarnecidos, cerraduras y lunas: tipos, simbología grabada, herramienta y sustitución
+  de luna calzada y pegada.'
+cuadernos:
+- nombre: carroceria-1
+  contenido: guarnecidos, cerraduras y lunas
+apartados_propios:
+  elemento:
+  - apartado: Tipos y simbología
+    criterios:
+    - 6e
+    - 6f
+    pide: Clasificación de la luna y qué dice su marcado.
+  - apartado: Herramienta y sustitución
+    criterios:
+    - 6g
+    - 6h
+    pide: Qué herramienta pide y cómo se extrae y se monta.

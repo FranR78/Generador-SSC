@@ -164,6 +164,7 @@
   <nav id="nav">
     <button data-sec="inicio" class="activo"><span class="icono" aria-hidden="true">🏠</span><span class="rotulo">Inicio</span></button>
     <button data-sec="consultar"><span class="icono" aria-hidden="true">💬</span><span class="rotulo">Consultar</span></button>
+    <button data-sec="cursos"><span class="icono" aria-hidden="true">🎓</span><span class="rotulo">Cursos</span></button>
     <button data-sec="apuntes"><span class="icono" aria-hidden="true">📘</span><span class="rotulo">Apuntes</span></button>
     <button data-sec="manual"><span class="icono" aria-hidden="true">📄</span><span class="rotulo">Manual</span></button>
     <button data-sec="juegos"><span class="icono" aria-hidden="true">🎮</span><span class="rotulo">Juegos</span></button>
@@ -175,6 +176,7 @@
   <main>
     <section id="sec-inicio"><?!= include('Inicio') ?></section>
     <section id="sec-consultar" hidden><?!= include('Consulta') ?></section>
+    <section id="sec-cursos" hidden><?!= include('Cursos') ?></section>
     <section id="sec-apuntes" hidden><?!= include('Apuntes') ?></section>
     <section id="sec-manual" hidden><?!= include('Manual') ?></section>
     <section id="sec-juegos" hidden><?!= include('Juegos') ?></section>
@@ -190,9 +192,11 @@
 
     function mostrar(sec) {
       seccionActual = sec;
-      ['inicio', 'consultar', 'apuntes', 'manual', 'juegos', 'simulador', 'cuenta', 'profesor'].forEach(function (s) {
-        document.getElementById('sec-' + s).hidden = (s !== sec);
-      });
+      /* Las secciones salen del propio HTML. Con la lista escrita a mano,
+         añadir una pestaña y olvidarse de apuntarla aquí la dejaba invisible
+         aunque su contenido se hubiera pintado: pasó con Cursos. */
+      Array.prototype.forEach.call(document.querySelectorAll('main > section'),
+        function (s) { s.hidden = (s.id !== 'sec-' + sec); });
       Array.prototype.forEach.call(document.querySelectorAll('#nav button'), function (b) {
         b.classList.toggle('activo', b.getAttribute('data-sec') === sec);
       });
@@ -201,6 +205,7 @@
       if (sec === 'consultar') refrescarGate();
       if (sec === 'manual') initManual();
       if (sec === 'cuenta' && !cuentaCargada) initCuenta();
+      if (sec === 'cursos') initCursos();
       if (sec === 'apuntes') initApuntes();
       if (sec === 'inicio') { iniCargado = false; initInicio(); }
       if (sec === 'simulador') initSimulador();
@@ -1283,6 +1288,107 @@
     // Leer no gasta consultas. Si no hay libros, esto es el libro.
     var apCorpus = null, apCargado = false;
 
+    // ---------- Cursos: cada unidad, un curso corto ----------
+    // Se calcula todo en el cliente a partir de notas.json, que ya trae la
+    // unidad de cada nota y el catálogo de unidades. Sin llamadas nuevas al
+    // servidor: entrar aquí no puede costar una espera.
+    var curCargado = false;
+
+    function initCursos(){
+      if(curCargado && apCorpus){ pintarCursos(); return; }
+      curCargado = true;
+      if(apCorpus){ pintarCursos(); return; }
+      google.script.run
+        .withSuccessHandler(function(d){ apCorpus = d; pintarCursos(); })
+        .withFailureHandler(function(e){
+          curCargado = false;
+          document.getElementById('cur-intro').textContent = e.message;
+        })
+        .listarNotas();
+    }
+
+    function pintarCursos(){
+      var cont = document.getElementById('cur-rejilla');
+      if(!cont || !apCorpus) return;
+      var unidades = apCorpus.unidades || [];
+      if(!unidades.length){
+        cont.innerHTML = '<p class="vacia">Todavía no hay ninguna unidad declarada.</p>';
+        return;
+      }
+
+      // Cuántas notas hay y cuántas leídas, por unidad.
+      var cuenta = {};
+      (apCorpus.notas||[]).forEach(function(n){
+        var u = n.unidad || 'sin-unidad';
+        if(!cuenta[u]) cuenta[u] = { total:0, leidas:0 };
+        cuenta[u].total++;
+        if(n.leida) cuenta[u].leidas++;
+      });
+
+      cont.innerHTML = '';
+      var conNotas = 0;
+      unidades.forEach(function(u){
+        var c = cuenta[u.unidad] || { total:0, leidas:0 };
+        var pct = c.total ? Math.round(c.leidas * 100 / c.total) : 0;
+        if(c.total) conNotas++;
+
+        var b = document.createElement('button');
+        b.className = 'curso';
+        b.setAttribute('data-unidad', u.unidad);
+        // Una unidad sin material todavía se enseña, pero no se entra: así se
+        // ve el recorrido completo del módulo desde el primer día.
+        if(!c.total) b.disabled = true;
+
+        var h = '<div class="portada" style="background:' + (u.color||'#0a63aa') + '">'
+          + '<span class="ic" aria-hidden="true">' + (u.icono||'📘') + '</span>'
+          + '<span><span class="n">Unidad ' + u.orden + '</span>'
+          + '<h3>' + u.nombre + '</h3></span></div>';
+        if(!c.total) h += '<span class="etiqueta">Aún sin material</span>';
+        h += '<div class="cuerpo">'
+          + '<p class="desc">' + (u.descripcion||'') + '</p>'
+          + '<div class="meta">'
+          + (u.horas ? '<span><b>' + u.horas + ' h</b> estimadas</span>' : '')
+          + (c.total ? '<span><b>' + c.total + '</b> apuntes</span>' : '')
+          + '</div>';
+        if(c.total){
+          h += '<div class="barra"><div style="width:' + pct + '%;background:'
+            + (u.color||'#0a63aa') + '"></div></div>'
+            + '<div class="pie"><span>' + c.leidas + ' de ' + c.total + ' leídos</span>'
+            + '<span class="pct" style="color:' + (u.color||'#0a63aa') + '">' + pct + '%</span></div>';
+        } else {
+          h += '<p class="vacia">Se abrirá cuando haya apuntes de esta unidad.</p>';
+        }
+        h += '</div>';
+        b.innerHTML = h;
+        if(c.total){
+          b.addEventListener('click', function(){ abrirCurso(u.unidad); });
+        }
+        cont.appendChild(b);
+      });
+
+      document.getElementById('cur-intro').textContent =
+        unidades.length + ' unidades en el módulo, ' + conNotas + ' con material. ' +
+        'Cada una es un curso corto: entra y verás lo leído y lo que falta.';
+    }
+
+    /* Entrar en un curso es ir a sus apuntes ya filtrados: no hace falta una
+       pantalla intermedia que no aporte nada. */
+    function abrirCurso(unidad){
+      mostrar('apuntes');
+      initApuntes();
+      /* El desplegable de unidades lo rellena pintarApuntes cuando llegan los
+         datos. Poner el valor antes de que exista la opción no da error: se
+         queda en blanco y se listan las 129 notas, que es lo contrario de
+         entrar en un curso. Así que se espera a que la opción esté. */
+      var intentos = 0;
+      (function aplicar(){
+        var sel = document.getElementById('ap-unidad');
+        var lista = sel && sel.querySelector('option[value="' + unidad + '"]');
+        if(lista){ sel.value = unidad; filtrarApuntes(); return; }
+        if(intentos++ < 20) setTimeout(aplicar, 150);
+      })();
+    }
+
     function initApuntes(){
       if(apCargado) return;
       apCargado = true;
@@ -1297,6 +1403,13 @@
     }
 
     function pintarApuntes(){
+      var selU = document.getElementById('ap-unidad');
+      if(selU && selU.options.length <= 1){
+        (apCorpus.unidades||[]).forEach(function(u){
+          var o=document.createElement('option'); o.value=u.unidad;
+          o.textContent=(u.icono||'')+' '+u.nombre; selU.appendChild(o);
+        });
+      }
       var sel = document.getElementById('ap-grupo');
       if(sel.options.length <= 1){
         apCorpus.grupos.forEach(function(g){
@@ -1313,11 +1426,13 @@
     function filtrarApuntes(){
       var q = (document.getElementById('ap-buscar').value||'').toLowerCase().trim();
       var g = document.getElementById('ap-grupo').value;
+      var uSel = (document.getElementById('ap-unidad')||{}).value || '';
       var f = document.getElementById('ap-filtro').value;
       var cont = document.getElementById('ap-resultados');
       cont.innerHTML = '';
       var n = 0;
       apCorpus.notas.forEach(function(x){
+        if(uSel && x.unidad !== uSel) return;
         if(g && x.grupo !== g) return;
         if(f === 'si' && !x.leida) return;
         if(f === 'no' && x.leida) return;
@@ -1340,7 +1455,7 @@
       if(!n) cont.innerHTML = '<p class="vacio">Nada con ese filtro.</p>';
     }
 
-    ['ap-buscar','ap-grupo','ap-filtro'].forEach(function(id){
+    ['ap-buscar','ap-unidad','ap-grupo','ap-filtro'].forEach(function(id){
       document.getElementById(id).addEventListener('input', function(){ if(apCorpus) filtrarApuntes(); });
     });
     /* En pantalla ancha la lista y la nota conviven, así que lo que se marca
