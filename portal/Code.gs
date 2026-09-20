@@ -13,6 +13,10 @@ var ROOT_FOLDER_PROP = 'ROOT_FOLDER_ID';
 // definiendo ROOT_FOLDER_ID en Propiedades del script.
 var ROOT_FOLDER_DEFAULT = '1cuQ8dpDkQg7lSFOBeP6Lf30gRP-7jHvv';
 var MAX_PDFS_PER_QUERY = 5;
+/* Las notas van como texto, no como PDF en base64: pesan tan poco al lado de
+   un manual escaneado que el límite no es el tamaño, es que la pregunta siga
+   teniendo un tema. Con 8 notas mezcladas ya no lo tiene. */
+var MAX_NOTAS_PER_QUERY = 8;
 var MAX_PDF_BYTES = 15 * 1024 * 1024;
 // Tope del conjunto: base64 infla ~33% y UrlFetchApp corta bastante antes.
 var MAX_TOTAL_BYTES = 18 * 1024 * 1024;

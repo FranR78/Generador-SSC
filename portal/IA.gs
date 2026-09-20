@@ -103,12 +103,26 @@ function comprobarClaveIA() {
   return { ok: false, error: ultimoError };
 }
 
-/** Pregunta usando SOLO los PDF seleccionados y la clave del propio usuario. */
-function preguntar(pregunta, fileIds) {
+/**
+ * Pregunta usando SOLO las fuentes que el alumno ha elegido, con su clave.
+ *
+ * Las fuentes son de dos clases y se pueden mezclar en la misma pregunta:
+ *   fileIds  PDF originales del fabricante (Drive)
+ *   nts      notas técnicas ya generadas, por número (NT1, NT2…)
+ *
+ * Mezclarlas es el caso interesante: "esto que dice la nota, ¿de dónde sale
+ * en el manual?". Y preguntar solo sobre notas es baratísimo comparado con
+ * adjuntar un PDF escaneado, así que conviene que sea lo normal.
+ */
+function preguntar(pregunta, fileIds, nts) {
   pregunta = (pregunta || '').trim();
   if (!pregunta) throw new Error('Escribe una pregunta.');
-  if (!fileIds || !fileIds.length) throw new Error('Selecciona al menos un PDF.');
+  fileIds = fileIds || [];
+  nts = (nts || []).map(Number).filter(function (n) { return n > 0; });
+
+  if (!fileIds.length && !nts.length) throw new Error('Selecciona al menos un PDF o una nota técnica.');
   if (fileIds.length > MAX_PDFS_PER_QUERY) throw new Error('Máximo ' + MAX_PDFS_PER_QUERY + ' PDF por pregunta.');
+  if (nts.length > MAX_NOTAS_PER_QUERY) throw new Error('Máximo ' + MAX_NOTAS_PER_QUERY + ' notas por pregunta.');
 
   var permitidos = idsPermitidos_();
   fileIds.forEach(function (id) {
@@ -121,6 +135,16 @@ function preguntar(pregunta, fileIds) {
 
   var key = ia_getKey_();
   var parts = [], nombres = [], total = 0;
+
+  // Primero las notas: son texto, van delante y salen gratis.
+  if (nts.length) {
+    var texto = textoNotasParaIA(nts);
+    if (texto) {
+      parts.push({ text: 'NOTAS TÉCNICAS SELECCIONADAS\n\n' + texto });
+      nts.forEach(function (n) { nombres.push('NT' + n); });
+    }
+  }
+
   fileIds.forEach(function (id) {
     var file = DriveApp.getFileById(id);
     if (file.getSize() > MAX_PDF_BYTES) throw new Error('"' + file.getName() + '" pesa >15 MB.');
@@ -135,7 +159,13 @@ function preguntar(pregunta, fileIds) {
   });
   parts.push({ text: pregunta });
 
-  var instruccion = ia_prompt_() + ' Documentos adjuntos: ' + nombres.join(', ') + '.';
+  var instruccion = ia_prompt_() + ' Fuentes adjuntas: ' + nombres.join(', ') + '.';
+  if (nts.length) {
+    // El prompt por defecto habla de "los PDF adjuntos". Sin esto, con solo
+    // notas seleccionadas el modelo puede responder que no hay ningún PDF.
+    instruccion += ' Las fuentes que empiezan por NT son notas técnicas en texto,' +
+      ' ya adjuntas más arriba; trátalas igual que un documento y cítalas por su NT.';
+  }
   var payload = {
     systemInstruction: { parts: [{ text: instruccion }] },
     contents: [{ role: 'user', parts: parts }]

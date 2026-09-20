@@ -1,8 +1,21 @@
 <div id="gate-info" class="estado" style="margin:0 0 12px">…</div>
 
 <div class="panel">
-  <h2>1. Elige los PDF (máx. 5)</h2>
-  <div id="arbol">Cargando colección…</div>
+  <h2>1. Elige tus fuentes</h2>
+
+  <div class="fuentes-sel">
+    <div class="fuente-bloque">
+      <h3>Notas técnicas <span class="pista">(máx. 8)</span></h3>
+      <input type="search" id="buscar-nt" placeholder="Buscar: compresor, presostato, G65…">
+      <div id="lista-nt" class="lista">Cargando notas…</div>
+    </div>
+
+    <div class="fuente-bloque">
+      <h3>PDF originales <span class="pista">(máx. 5)</span></h3>
+      <div id="arbol" class="lista">Cargando colección…</div>
+    </div>
+  </div>
+
   <div id="seleccion"></div>
 </div>
 
@@ -13,5 +26,5 @@
     <textarea id="pregunta" placeholder="Ej: ¿Cuál es la secuencia de comprobación de la válvula de expansión?"></textarea>
     <button type="submit" id="btn-enviar" class="accion">Enviar</button>
   </form>
-  <p class="aviso">Las respuestas salen solo de los PDF seleccionados. Si algo no aparece, el asistente lo dice en vez de inventarlo. Necesitas tu API key guardada en «Mi cuenta».</p>
+  <p class="aviso">Las respuestas salen solo de lo que hayas seleccionado. Si algo no aparece ahí, el asistente lo dice en vez de inventarlo. Puedes mezclar notas y PDF: sirve para preguntar de dónde sale en el manual lo que dice una nota. Necesitas tu API key guardada en «Mi cuenta».</p>
 </div>

@@ -51,7 +51,18 @@
     .carpeta > summary { cursor: pointer; font-weight: 600; padding: 4px 0; }
     label.archivo { display: flex; align-items: center; gap: 6px; padding: 3px 0; font-size: 13px; }
     label.archivo input { accent-color: var(--azul); }
-    #seleccion { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; min-height: 20px; }
+    /* Dos columnas de fuentes en pantalla ancha; apiladas en el móvil. */
+    .fuentes-sel { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 760px) { .fuentes-sel { grid-template-columns: 1fr; } }
+    .fuente-bloque h3 { margin: 0 0 6px; font-size: 14px; color: var(--azul-osc); }
+    .fuente-bloque .pista { font-weight: 400; color: #667; font-size: 12px; }
+    .fuente-bloque input[type=search] { width: 100%; box-sizing: border-box; margin-bottom: 6px;
+      padding: 6px 8px; border: 1px solid #ccd; border-radius: 6px; font-size: 13px; }
+    .lista { max-height: 260px; overflow-y: auto; border: 1px solid #dde; border-radius: 6px; padding: 6px 8px; }
+    .lista .vacio { color: #778; font-size: 13px; padding: 6px 0; }
+    .nt-num { color: var(--azul); font-weight: 700; margin-right: 4px; }
+    .nt-leida { color: #2e9e5b; margin-left: 4px; }
+    #seleccion { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; min-height: 20px; }
     .chip { background: #e4f3fe; border: 1px solid var(--azul); color: var(--azul-osc); border-radius: 14px; padding: 3px 10px; font-size: 12px; }
 
     #mensajes { display: flex; flex-direction: column; gap: 10px; max-height: 46vh; overflow-y: auto; margin-bottom: 10px; }
@@ -144,6 +155,7 @@
       Array.prototype.forEach.call(document.querySelectorAll('#nav button'), function (b) {
         b.classList.toggle('activo', b.getAttribute('data-sec') === sec);
       });
+      if (sec === 'consultar') cargarNotasFuente();
       if (sec === 'consultar' && !arbolCargado) cargarArbol();
       if (sec === 'consultar') refrescarGate();
       if (sec === 'manual') initManual();
@@ -174,8 +186,9 @@
     }, 30000);
 
     // ---------- Consultar ----------
-    var seleccionados = {}; // id -> nombre
-    var checkboxes = {};    // id -> input (para desmarcar desde el chip)
+    var seleccionados = {}; // id de Drive -> nombre del PDF
+    var notasSel = {};      // nt -> título
+    var checkboxes = {};    // id/nt -> input (para desmarcar desde el chip)
 
     function quitarSeleccion(id) {
       delete seleccionados[id];
@@ -183,21 +196,36 @@
       actualizarChips();
     }
 
+    function quitarNota(nt) {
+      delete notasSel[nt];
+      if (checkboxes['nt' + nt]) checkboxes['nt' + nt].checked = false;
+      actualizarChips();
+    }
+
+    function chip(texto, alQuitar) {
+      var c = document.createElement('span');
+      c.className = 'chip';
+      c.textContent = texto + ' ';
+      var x = document.createElement('span');
+      x.textContent = '×';
+      x.title = 'Quitar';
+      x.setAttribute('role', 'button');
+      x.style.cssText = 'cursor:pointer; font-weight:700; margin-left:2px;';
+      x.addEventListener('click', alQuitar);
+      c.appendChild(x);
+      return c;
+    }
+
     function actualizarChips() {
       var cont = document.getElementById('seleccion');
+      if (!cont) return;
       cont.innerHTML = '';
+      Object.keys(notasSel).forEach(function (nt) {
+        cont.appendChild(chip('NT' + nt + ' ' + notasSel[nt],
+          function () { quitarNota(nt); }));
+      });
       Object.keys(seleccionados).forEach(function (id) {
-        var chip = document.createElement('span');
-        chip.className = 'chip';
-        chip.textContent = seleccionados[id] + ' ';
-        var x = document.createElement('span');
-        x.textContent = '×';
-        x.title = 'Quitar';
-        x.setAttribute('role', 'button');
-        x.style.cssText = 'cursor:pointer; font-weight:700; margin-left:2px;';
-        x.addEventListener('click', function () { quitarSeleccion(id); });
-        chip.appendChild(x);
-        cont.appendChild(chip);
+        cont.appendChild(chip(seleccionados[id], function () { quitarSeleccion(id); }));
       });
     }
 
@@ -213,6 +241,85 @@
         delete seleccionados[id];
       }
       actualizarChips();
+    }
+
+    // ---------- Notas técnicas como fuente de la pregunta ----------
+    var ntCatalogo = null;   // índice completo, se pide una vez
+
+    function onToggleNota(nota, checkbox) {
+      if (checkbox.checked) {
+        if (Object.keys(notasSel).length >= 8) {
+          alert('Máximo 8 notas por pregunta. Con más, la pregunta se queda sin tema.');
+          checkbox.checked = false;
+          return;
+        }
+        notasSel[nota.nt] = nota.titulo;
+      } else {
+        delete notasSel[nota.nt];
+      }
+      actualizarChips();
+    }
+
+    function pintarListaNT(filtro) {
+      var cont = document.getElementById('lista-nt');
+      if (!cont || !ntCatalogo) return;
+      filtro = (filtro || '').trim().toLowerCase();
+      var vistas = ntCatalogo.filter(function (n) {
+        if (!filtro) return true;
+        return (n.titulo + ' ' + (n.codigo || '') + ' ' + (n.grupo || '') + ' NT' + n.nt)
+          .toLowerCase().indexOf(filtro) >= 0;
+      });
+      // Sin filtro son 129: enseñar las primeras y que el buscador haga el resto.
+      var recorte = filtro ? vistas : vistas.slice(0, 40);
+      cont.innerHTML = '';
+      if (!recorte.length) {
+        cont.innerHTML = '<p class="vacio">Ninguna nota con ese texto.</p>';
+        return;
+      }
+      recorte.forEach(function (n) {
+        var lab = document.createElement('label');
+        lab.className = 'archivo';
+        var chk = document.createElement('input');
+        chk.type = 'checkbox';
+        chk.checked = !!notasSel[n.nt];
+        chk.addEventListener('change', function () { onToggleNota(n, chk); });
+        checkboxes['nt' + n.nt] = chk;
+        var num = document.createElement('span');
+        num.className = 'nt-num';
+        num.textContent = 'NT' + n.nt;
+        lab.appendChild(chk);
+        lab.appendChild(num);
+        lab.appendChild(document.createTextNode(n.titulo));
+        if (n.leida) {
+          var v = document.createElement('span');
+          v.className = 'nt-leida';
+          v.textContent = '✓';
+          v.title = 'Ya la has leído';
+          lab.appendChild(v);
+        }
+        cont.appendChild(lab);
+      });
+      if (!filtro && vistas.length > recorte.length) {
+        var p = document.createElement('p');
+        p.className = 'vacio';
+        p.textContent = 'y ' + (vistas.length - recorte.length) + ' más: usa el buscador.';
+        cont.appendChild(p);
+      }
+    }
+
+    function cargarNotasFuente() {
+      var cont = document.getElementById('lista-nt');
+      if (!cont) return;
+      if (ntCatalogo) { pintarListaNT(document.getElementById('buscar-nt').value); return; }
+      google.script.run
+        .withSuccessHandler(function (d) {
+          ntCatalogo = (d && d.notas) || [];
+          pintarListaNT('');
+        })
+        .withFailureHandler(function (err) {
+          cont.innerHTML = '<p class="vacio">No se han podido cargar las notas: ' + err.message + '</p>';
+        })
+        .listarNotas();
     }
 
     function nodoArchivo(f) {
@@ -283,13 +390,22 @@
       return div;
     }
 
+    (function () {
+      var b = document.getElementById('buscar-nt');
+      if (b) b.addEventListener('input', function () { pintarListaNT(b.value); });
+    })();
+
     document.getElementById('form-pregunta').addEventListener('submit', function (e) {
       e.preventDefault();
       var campo = document.getElementById('pregunta');
       var pregunta = campo.value.trim();
       if (!pregunta) return;
       var ids = Object.keys(seleccionados);
-      if (!ids.length) { alert('Selecciona al menos un PDF antes de preguntar.'); return; }
+      var nts = Object.keys(notasSel).map(Number);
+      if (!ids.length && !nts.length) {
+        alert('Selecciona al menos una nota o un PDF antes de preguntar.');
+        return;
+      }
 
       addMsg(pregunta, 'user');
       campo.value = '';
@@ -304,7 +420,7 @@
           if (res.estado) pintarGate(res.estado);
         })
         .withFailureHandler(function (err) { pensando.remove(); addMsg(err.message, 'error'); btn.disabled = false; })
-        .preguntar(pregunta, ids);
+        .preguntar(pregunta, ids, nts);
     });
 
     // ---------- Participación (gating) ----------
@@ -314,6 +430,12 @@
       if (est.bloqueado) {
         g.textContent = '⛔ ' + est.mensaje;
         g.className = 'estado err';
+      } else if (est.sinLimite) {
+        /* LIBRES = 0 significa sin límite. Sin este caso salía
+           "Consultas: 3/null · te quedan null". */
+        g.textContent = 'Consultas sin límite: pregunta todo lo que necesites. Llevas ' +
+          est.consultas + '.';
+        g.className = 'estado ok';
       } else {
         g.textContent = 'Consultas: ' + est.consultas + '/' + est.permitidas + ' · te quedan ' + est.restantes + '.';
         g.className = 'estado ok';
