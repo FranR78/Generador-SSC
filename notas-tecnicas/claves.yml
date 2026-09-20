@@ -1,0 +1,221 @@
+# Qué notas hablan del mismo componente
+#
+# Cuatro manuales distintos llaman de cuatro formas a la misma pieza. El
+# dashboard agrupa por 'clave', y la clave sale del título, así que
+# "Compresor de aire acondicionado" y "Compresor De Climatización" acaban en
+# dos sitios distintos siendo lo mismo.
+#
+# Aquí se dice cuáles son la misma cosa. A la izquierda, el nombre con el que
+# se quiere que aparezca el grupo. Debajo, los títulos que significan eso.
+#
+#   compresor:
+#     - Compresor de aire acondicionado
+#     - Compresor De Climatización
+#
+# Reglas:
+#   - Agrupa, NO fusiona. Las cuatro notas siguen enteras, cada una con su
+#     fabricante y su fuente. Solo se ponen juntas.
+#   - No hace falta respetar mayúsculas ni tildes.
+#   - Un título solo puede estar en un grupo. Si se repite, construir.py avisa
+#     y no genera nada.
+#   - Si una nota concreta se resiste, se le pone 'clave: loquesea' en su
+#     propio archivo y eso manda sobre esta tabla.
+#   - Lo que no esté aquí, se agrupa solo por título idéntico, como siempre.
+#
+# Al ejecutar construir.py, al final salen los candidatos que ha detectado y
+# no están todavía en esta tabla, ya escritos para pegarlos aquí.
+
+# ---------------- Circuito frigorífico: componentes ----------------
+
+compresor:
+  - Compresor de aire acondicionado
+  - Compresor De Climatización
+
+embrague-electromagnetico:
+  - Embrague electromagnético
+  - Acoplamiento Electromagnético
+  - Acoplamiento Electromagnético Del Compresor
+
+condensador:
+  - Condensador
+
+ventilador-del-condensador:
+  - Ventilador eléctrico del condensador
+
+filtro-deshidratador:
+  - Filtro deshidratador y vaso de expansión
+  - Depósito De Líquido Y Deshidratador
+  - Filtro Deshidratador Y Depósito Colector (En Baja Presión)
+  - Filtro Deshidratador (Lado De Alta Presión)
+  - Tamiz
+
+deposito-colector:
+  - Depósito Colector (En Baja Presión)
+
+vaso-de-expansion:
+  - Vaso De Expansión
+
+mirilla:
+  - Mirilla o visor de flujo
+
+valvula-de-expansion:
+  - Válvula de expansión termostática y tubo de expansión
+  - Válvula De Expansión
+
+tubo-de-expansion:
+  - Tubo De Expansión
+
+estrangulador:
+  - Estrangulador
+
+evaporador:
+  - Evaporador
+
+filtro-de-habitaculo:
+  - Filtro de habitáculo
+
+amortiguador-de-oscilaciones:
+  - Amortiguador De Oscilaciones
+  - Amortiguador
+
+tuberias-y-racores:
+  - Tuberías Y Mangueras Frigoríficas
+  - Racores Y Empalmes Frigoríficos (Spring-Lock / Lokring
+
+tomas-de-servicio:
+  - Tomas De Servicio Y Válvulas Schrader
+
+# ---------------- Sensores y presostatos ----------------
+
+presostatos:
+  - Presostato de mínima (válvula binaria)
+  - Presostato de máxima (válvula binaria)
+  - Presostato de tres funciones (válvula trinaria)
+  - Presostato De Climatización
+  - Conmutador De Presión (Trinaria O Sensor Map De Alta)
+
+transmisor-de-presion:
+  - Transmisor de alta presión / sensor MAP
+  - Transmisor De Presión Piezoeléctrico (Pwm)
+
+valvula-de-descarga-de-sobrepresion:
+  - Válvula de descarga por sobrepresión
+  - Válvula De Descarga De Sobrepresión Del Compresor
+
+sensor-de-evaporador:
+  - Interruptor termostático y sensor de evaporador
+  - Sonda De Temperatura Del Evaporador
+  - Termosensor Para La Temperatura Del Evaporador
+  - Termostato Mecánico Y Electrónico De Evaporador
+  - Interruptor Térmico
+
+sensor-de-temperatura-exterior:
+  - Termosensores de temperatura exterior
+  - Sensor De Temperatura Exterior Y De Aire Aspirado
+
+sensor-de-temperatura-interior:
+  - Termosensor del habitáculo con turbina
+  - Termosensor De Temperatura Interior
+
+sensor-de-salida-de-aire:
+  - Transmisor de temperatura a la salida del vano reposapiés
+  - Termosensores De Temperatura Del Difusor Central Y De La Zona De Pies
+
+sensor-de-refrigerante-del-motor:
+  - Conmutador de aviso de temperatura del líquido refrigerante
+  - Sonda Ntc De Temperatura Del Refrigerante Del Motor
+
+sensor-de-calidad-del-aire:
+  - Sensor de la calidad del aire
+  - SENSOR DE CALIDAD DEL AIRE (SnO2)
+
+fotosensor-solar:
+  - Fotosensor de radiación solar
+  - Fotosensor Para Radiación Solar
+  - Fotosensor Doble Para Radiación Solar
+
+# ---------------- Actuadores, mandos y regulación ----------------
+
+servomotor-de-chapaleta:
+  - Servomotor de chapaleta de velocidad y recirculación
+
+unidad-de-control-y-mandos:
+  - Mandos de control manual y conmutador del ventilador
+  - Unidad De Control Del Climatizador Y Panel De Mandos
+
+regulacion-basica:
+  - Regulación Y Control Básico Del Sistema De Climatización
+
+regulacion-manual:
+  - Regulación Manual Del Sistema De Climatización
+
+regulacion-automatica:
+  - Regulación Automática Y Bizona De Climatización
+  - Regulación Automática De La Climatización
+  - Regulación De La Temperatura En Climatización Electrónica
+  - Regulación En Climatización Semiautomática Y Automática
+
+distribucion-bizona:
+  - Distribución De Aire Bizona
+
+recirculacion:
+  - Sistema De Recirculación Y Control De Calidad Del Aire
+  - Sistema De Recirculación De Aire
+  - Recirculación Automática Y Control De Calidad Del Aire
+
+can-bus:
+  - Gestión De Señales Suplementarias Vía Can-Bus
+
+carga-del-alternador:
+  - Gestión De La Carga Eléctrica Del Alternador
+
+interruptor-de-marcha-atras:
+  - Interruptor De Marcha Atrás
+
+# ---------------- Fundamentos, fluidos y procesos ----------------
+
+ciclo-frigorifico-valvula:
+  - Ciclo Frigorífico Con Válvula De Expansión
+  - Circuito Frigorífico Con Válvula De Expansión
+
+ciclo-frigorifico-estrangulador:
+  - Ciclo Frigorífico Con Estrangulador (Tubo Calibrado)
+  - Circuito Frigorífico Con Estrangulador
+
+circuito-frigorifico:
+  - Circuito Frigorífico
+  - Ciclo Frigorífico De Compresión De Vapor
+
+principios-de-refrigeracion:
+  - Principios Físicos De La Técnica De Refrigeración
+  - Conceptos Termodinámicos Y Magnitudes Físicas De La Refrigeración
+
+confort-termico:
+  - Efectos Climatológicos Y Confort Térmico En El Habitáculo
+
+subenfriamiento:
+  - Subenfriamiento
+
+refrigerante:
+  - AGENTE FRIGORÍFICO R134a
+  - REFRIGERANTE R134a (TETRAFLUORETANO)
+
+aceite-frigorifico:
+  - Aceite Para Máquinas Frigoríficas (Pag)
+  - Aceite Lubricante Para Compresor
+
+# ---------------- Taller y diagnóstico ----------------
+
+lavado-del-circuito:
+  - Lavado del circuito (flushing)
+  - Lavado Del Circuito Frigorífico
+
+vacio:
+  - Evacuación Y Proceso De Vacío En El Circuito Frigorífico
+
+limpieza-del-evaporador:
+  - Limpieza Y Desinfección Del Evaporador
+
+lectura-de-manometros:
+  - Lectura e interpretación de manómetros
+  - Diagnóstico De Averías Por Lectura De Manómetros

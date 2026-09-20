@@ -107,6 +107,36 @@ def slug(texto):
     return re.sub(r"[^a-z0-9]+", "-", normalizar(texto)).strip("-") or "nota"
 
 
+def cargar_alias():
+    """claves.yml: qué títulos son el mismo componente. {slug del título: clave}
+
+    Cuatro manuales llaman de cuatro formas a la misma pieza. Esta tabla la
+    mantiene el profesor; aquí solo se lee. Si no existe el archivo, todo
+    sigue funcionando como antes: se agrupa por título idéntico.
+    """
+    ruta = RAIZ / "claves.yml"
+    if not ruta.exists():
+        return {}
+    datos = yaml.safe_load(ruta.read_text(encoding="utf-8")) or {}
+
+    alias, de_quien = {}, {}
+    for clave, titulos in datos.items():
+        clave = slug(str(clave))
+        for titulo in (titulos or []):
+            s = slug(str(titulo))
+            if s in alias and alias[s] != clave:
+                raise SystemExit(
+                    f"claves.yml: «{titulo}» está en dos grupos a la vez, "
+                    f"«{de_quien[s]}» y «{clave}». Déjalo en uno solo."
+                )
+            alias[s] = clave
+            de_quien[s] = clave
+    return alias
+
+
+ALIAS = None   # se carga una vez, en construir()
+
+
 class Nota:
     def __init__(self, ruta):
         bruto = ruta.read_text(encoding="utf-8")
@@ -130,9 +160,14 @@ class Nota:
         self.grupo = str(meta.get("grupo", "")).strip()
         self.menu = str(meta.get("menu", "")).strip() or (self.codigo or self.titulo)
         # Identidad por componente: agrupa las notas que hablan de lo mismo.
-        # Si no se declara 'clave', se deriva del título, así los títulos
-        # idénticos (mismo componente reimportado) caen en el mismo grupo solos.
-        self.clave = slug(str(meta.get("clave", "")).strip() or self.titulo)
+        # Por orden: lo que diga la propia nota, lo que diga claves.yml, y si
+        # no, el título. Así los títulos idénticos siguen cayendo juntos solos
+        # y los que se llaman distinto los junta la tabla.
+        declarada = str(meta.get("clave", "")).strip()
+        if declarada:
+            self.clave = slug(declarada)
+        else:
+            self.clave = (ALIAS or {}).get(slug(self.titulo)) or slug(self.titulo)
         self.aplicacion = meta.get("aplicacion") or []
         self.ubicacion = str(meta.get("ubicacion", "")).strip()
         self.fuentes = str(meta.get("fuentes", "")).strip()
@@ -414,18 +449,42 @@ def posibles_duplicados(notas):
         palabras = set(re.findall(r"[a-z]{5,}", normalizar(n.titulo)))
         return palabras - {"sistema", "vehiculo", "circuito", "climatizacion"}
 
+    # Cada pareja una vez, y por clave: si ya hay cuatro notas "Condensador"
+    # agrupadas, la pareja interesa una vez, no dieciséis.
+    sueltas, vistas = {}, set()
     for i, a in enumerate(notas):
         for b in notas[i + 1:]:
+            if a.clave == b.clave:
+                continue        # ya están juntas: por título o por claves.yml
+            # Una pieza y un proceso no son lo mismo aunque compartan palabras:
+            # "Válvula de expansión" y "Ciclo frigorífico con válvula de
+            # expansión" comparten dos, y no hay nada que agrupar.
+            if a.tipo != b.tipo:
+                continue
+            par = tuple(sorted((a.clave, b.clave)))
+            if par in vistas:
+                continue
             ka, kb = clave(a), clave(b)
             if ka and kb and len(ka & kb) >= 2 and len(ka & kb) >= min(len(ka), len(kb)):
-                avisos.append(
-                    f"NT{a.nt} «{a.titulo}» y NT{b.nt} «{b.titulo}» tratan de lo mismo"
-                )
+                vistas.add(par)
+                sueltas.setdefault(a.titulo, set()).add(b.titulo)
+
+    if sueltas:
+        # Salen ya escritos para pegarlos en claves.yml: si hay que decidir a
+        # mano, que al menos no haya que teclear.
+        avisos.append("Parecen lo mismo y están en grupos distintos. Si lo son, "
+                      "pega esto en claves.yml y ponle el nombre al grupo:")
+        for titulo, otros in sorted(sueltas.items()):
+            avisos.append("    " + slug(titulo) + ":")
+            for x in [titulo] + sorted(otros):
+                avisos.append("      - " + x)
 
     return avisos
 
 
 def cargar():
+    global ALIAS
+    ALIAS = cargar_alias()      # antes de crear ninguna Nota: la usa su __init__
     notas, errores = [], []
     for ruta in sorted(DIR_NOTAS.glob("*.md")):
         try:
