@@ -1,7 +1,12 @@
 /**
  * Gating.gs — Regla de participación (prefijo gate_).
- * Cada alumno consulta libremente hasta un umbral; para desbloquear el siguiente
- * bloque de consultas debe RESPONDER tareas y VALORAR respuestas de otros.
+ *
+ * LIBRES = 0 significa SIN LÍMITE: queremos que pregunten cuanto quieran, que
+ * preguntar es trabajar. El freno del sistema no está aquí, está en el
+ * simulador, donde entre intento e intento tienen que pasar horas.
+ *
+ * Con LIBRES > 0 vuelve la regla por bloques: cada alumno consulta hasta un
+ * umbral y, para desbloquear el siguiente, RESPONDE tareas y VALORA respuestas.
  *
  * bloques = 1 + min( floor(aportaciones/REQ_APORTA), floor(valoraciones/REQ_VALORA) )
  * consultas_permitidas = bloques * LIBRES
@@ -18,14 +23,18 @@ function gate_estado(usuario) {
   usuario = usuario || usuarioActual();
   var c = gate_config_();
   var a = db_estadoUsuario_(usuario);
+  var sinLimite = !(c.LIBRES > 0);
   var k = Math.min(Math.floor(a.aportaciones / c.REQ_APORTA), Math.floor(a.valoraciones / c.REQ_VALORA));
-  var permitidas = (1 + k) * c.LIBRES;
-  var bloqueado = a.consultas >= permitidas;
+  var permitidas = sinLimite ? Infinity : (1 + k) * c.LIBRES;
+  var bloqueado = !sinLimite && a.consultas >= permitidas;
   var faltaAporta = Math.max(0, (k + 1) * c.REQ_APORTA - a.aportaciones);
   var faltaValora = Math.max(0, (k + 1) * c.REQ_VALORA - a.valoraciones);
   return {
     usuario: usuario,
-    consultas: a.consultas, permitidas: permitidas, restantes: Math.max(0, permitidas - a.consultas),
+    consultas: a.consultas,
+    sinLimite: sinLimite,
+    permitidas: sinLimite ? null : permitidas,
+    restantes: sinLimite ? null : Math.max(0, permitidas - a.consultas),
     aportaciones: a.aportaciones, valoraciones: a.valoraciones,
     bloqueado: bloqueado, faltaAporta: faltaAporta, faltaValora: faltaValora
   };

@@ -107,7 +107,9 @@
   </header>
 
   <nav id="nav">
-    <button data-sec="consultar" class="activo">Consultar</button>
+    <button data-sec="inicio" class="activo">Inicio</button>
+    <button data-sec="consultar">Consultar</button>
+    <button data-sec="apuntes">Apuntes</button>
     <button data-sec="manual">Manual</button>
     <button data-sec="juegos">Juegos</button>
     <button data-sec="simulador">Simulador</button>
@@ -116,7 +118,9 @@
   </nav>
 
   <main>
-    <section id="sec-consultar"><?!= include('Consulta') ?></section>
+    <section id="sec-inicio"><?!= include('Inicio') ?></section>
+    <section id="sec-consultar" hidden><?!= include('Consulta') ?></section>
+    <section id="sec-apuntes" hidden><?!= include('Apuntes') ?></section>
     <section id="sec-manual" hidden><?!= include('Manual') ?></section>
     <section id="sec-juegos" hidden><?!= include('Juegos') ?></section>
     <section id="sec-simulador" hidden><?!= include('Simulador') ?></section>
@@ -126,12 +130,12 @@
 
   <script>
     // ---------- Router ----------
-    var seccionActual = 'consultar';
+    var seccionActual = 'inicio';
     var arbolCargado = false, cuentaCargada = false, panelCargado = false;
 
     function mostrar(sec) {
       seccionActual = sec;
-      ['consultar', 'manual', 'juegos', 'simulador', 'cuenta', 'profesor'].forEach(function (s) {
+      ['inicio', 'consultar', 'apuntes', 'manual', 'juegos', 'simulador', 'cuenta', 'profesor'].forEach(function (s) {
         document.getElementById('sec-' + s).hidden = (s !== sec);
       });
       Array.prototype.forEach.call(document.querySelectorAll('#nav button'), function (b) {
@@ -141,6 +145,8 @@
       if (sec === 'consultar') refrescarGate();
       if (sec === 'manual') initManual();
       if (sec === 'cuenta' && !cuentaCargada) initCuenta();
+      if (sec === 'apuntes') initApuntes();
+      if (sec === 'inicio') { iniCargado = false; initInicio(); }
       if (sec === 'simulador') initSimulador();
       if (sec === 'profesor' && !panelCargado) initPanel();
     }
@@ -833,6 +839,7 @@
 
     var simM = null, simEstado = {contacto:'off',conector:true}, simInst = {funcion:'off',bornaRoja:'VΩ'};
     var simSel = {A:null,B:null}, simUlt = null, simN = 0, simCargado = false;
+    var simRepaso = false, simDesde = 0, simValidas = 0;
     var VEHICULO, NODOS, TRAMOS, AVERIAS, ALIMENTACION;   // los rellena el caso
 
     function initSimulador(){
@@ -863,16 +870,27 @@
     }
 
     function abrirCaso(id){
+      // El freno del sistema está aquí: entre intento e intento del mismo caso
+      // pasan horas, para que no se repita a lo bruto hasta acertar de memoria.
       google.script.run
-        .withSuccessHandler(montarCaso)
+        .withSuccessHandler(function(p){
+          if(!p.puede){ alert(p.mensaje); return; }
+          simRepaso = !!p.repaso;
+          google.script.run
+            .withSuccessHandler(montarCaso)
+            .withFailureHandler(function(e){ alert(e.message); })
+            .cargarCasoSimulador(id);
+        })
         .withFailureHandler(function(e){ alert(e.message); })
-        .cargarCasoSimulador(id);
+        .puedoIntentar(id);
     }
 
     function montarCaso(m){
       simM=m; VEHICULO=m.VEHICULO; NODOS=m.NODOS; TRAMOS=m.TRAMOS;
       AVERIAS=m.AVERIAS; ALIMENTACION=m.ALIMENTACION;
       simEstado={contacto:'off',conector:true}; simSel={A:null,B:null}; simUlt=null; simN=0;
+      simDesde = Date.now(); simValidas = 0;
+      simOpcionesDx();
       document.getElementById('sim-lista').hidden=true;
       document.getElementById('sim-caso').hidden=false;
       document.getElementById('sim-titulo').textContent=m.caso.titulo;
@@ -1005,11 +1023,78 @@
         +'<td>'+simPres(pres)+'</td><td>'+val+' '+uni+'</td>'
         +'<td class="vd '+j.clase+'">'+j.et+'</td>';
       document.getElementById('sim-fvacio').style.display='none';
+      if(simUlt.veredicto === 'medida') simValidas++;
       if(j.nota){ var n=document.getElementById('sim-nota');
         n.className='nota v '+(j.clase==='ok'?'ok':(j.clase==='fuera'?'invalida':'imposible'));
         n.innerHTML=j.nota; }
       document.getElementById('sim-anotar').style.display='none';
     });
+
+    /* La causa correcta se deduce de la avería inyectada: si el tramo cortado
+       lleva componente, el culpable es ese componente; si es un cable, es el
+       cableado; si la UCE no da mando, es el circuito de mando. */
+    function simCausaReal(){
+      var av = AVERIAS[simM.caso.averiaActiva];
+      if(!av || !av.efecto) return 'correcto';
+      if(av.efecto.sinMando) return 'uce';
+      var t = TRAMOS.filter(function(x){ return x.de+'|'+x.a === av.efecto.tramo; })[0];
+      return (t && t.componente) ? t.componente : 'cableado';
+    }
+
+    function simOpcionesDx(){
+      var sel = document.getElementById('sim-dx');
+      sel.innerHTML = '<option value="">Elige la causa…</option>';
+      var vistos = {};
+      TRAMOS.forEach(function(t){
+        if(t.componente && !vistos[t.componente]){
+          vistos[t.componente] = true;
+          sel.innerHTML += '<option value="'+t.componente+'">'+t.componente+'</option>';
+        }
+      });
+      sel.innerHTML += '<option value="cableado">Cableado o conector</option>'
+        + '<option value="uce">Circuito de mando / unidad de control</option>'
+        + '<option value="correcto">El sistema está correcto</option>';
+      document.getElementById('sim-emitir').disabled = true;
+      document.getElementById('sim-veredicto').className = 'nota';
+      sel.onchange = function(){
+        document.getElementById('sim-emitir').disabled = !sel.value;
+      };
+    }
+
+    document.getElementById('sim-emitir').addEventListener('click', function(){
+      var elegido = document.getElementById('sim-dx').value;
+      if(!elegido || !simM) return;
+      var real = simCausaReal();
+      var acertado = (elegido === real);
+      // Fundamentado = lo sostuvo con comprobaciones válidas. Acertar sin medir
+      // es suerte, y como suerte no desbloquea nada.
+      var fundamentado = acertado && simValidas > 0;
+
+      var v = document.getElementById('sim-veredicto');
+      v.className = 'nota v ' + (fundamentado ? 'ok' : (acertado ? 'invalida' : 'imposible'));
+      v.innerHTML = fundamentado
+        ? '<strong>✔ Correcto y fundamentado.</strong> Lo comprobaste antes de decidir.'
+        : (acertado
+            ? '<strong>◑ Acertaste, pero sin fundamento.</strong> No hiciste ninguna '
+              + 'comprobación válida: eso es suerte, no diagnóstico. Este caso sigue pendiente.'
+            : '<strong>✘ No es ahí.</strong> La avería estaba en: <strong>' + real + '</strong>.');
+
+      document.getElementById('sim-emitir').disabled = true;
+      simRegistrar(acertado, fundamentado);
+    });
+
+    function simRegistrar(acertado, fundamentado){
+      if(!simM || !simM.caso) return;
+      google.script.run
+        .withSuccessHandler(function(){ iniCargado = false; })
+        .withFailureHandler(function(){ /* no romper la práctica por esto */ })
+        .registrarIntento({
+          casoId: simM.caso.id,
+          acertado: !!acertado,
+          fundamentado: !!fundamentado,
+          segundos: Math.round((Date.now() - simDesde)/1000)
+        });
+    }
 
     function simBanda(){
       var t=TRAMOS.filter(function(x){return x.componente;})[0];
@@ -1018,6 +1103,149 @@
     function simPres(p){
       if(!p||p.min===undefined||p.min===null) return '—';
       return p.min+'–'+p.max+' '+p.unidad+' <span class="origen">'+p.origen+'</span>';
+    }
+
+
+    // ---------- Apuntes: las notas técnicas ----------
+    // Leer no gasta consultas. Si no hay libros, esto es el libro.
+    var apCorpus = null, apCargado = false;
+
+    function initApuntes(){
+      if(apCargado) return;
+      apCargado = true;
+      document.getElementById('ap-resumen').textContent = 'Cargando apuntes…';
+      google.script.run
+        .withSuccessHandler(function(d){ apCorpus = d; pintarApuntes(); })
+        .withFailureHandler(function(e){
+          apCargado = false;
+          document.getElementById('ap-resumen').textContent = e.message;
+        })
+        .listarNotas();
+    }
+
+    function pintarApuntes(){
+      var sel = document.getElementById('ap-grupo');
+      if(sel.options.length <= 1){
+        apCorpus.grupos.forEach(function(g){
+          var o=document.createElement('option'); o.value=g; o.textContent=g; sel.appendChild(o);
+        });
+      }
+      var leidas = apCorpus.notas.filter(function(n){return n.leida;}).length;
+      document.getElementById('ap-resumen').textContent =
+        apCorpus.total + ' notas · has leído ' + leidas +
+        ' · actualizadas el ' + apCorpus.generado;
+      filtrarApuntes();
+    }
+
+    function filtrarApuntes(){
+      var q = (document.getElementById('ap-buscar').value||'').toLowerCase().trim();
+      var g = document.getElementById('ap-grupo').value;
+      var f = document.getElementById('ap-filtro').value;
+      var cont = document.getElementById('ap-resultados');
+      cont.innerHTML = '';
+      var n = 0;
+      apCorpus.notas.forEach(function(x){
+        if(g && x.grupo !== g) return;
+        if(f === 'si' && !x.leida) return;
+        if(f === 'no' && x.leida) return;
+        if(q){
+          var heno = (x.titulo+' '+x.codigo+' '+x.grupo+' '+x.menu).toLowerCase();
+          if(heno.indexOf(q) < 0) return;
+        }
+        n++;
+        var b = document.createElement('button');
+        b.className = 'nt' + (x.leida?' leida':'');
+        b.innerHTML = '<span class="num">NT'+x.nt+'</span>'
+          + '<span class="tit">'+x.titulo
+          + '<small><span class="chip'+(x.tipo==='proceso'?' proceso':'')+'">'
+          + (x.tipo==='proceso'?(x.subtipo||'proceso'):'elemento')+'</span> '+x.grupo+'</small></span>'
+          + (x.leida?'<span class="ok">✓ leída</span>':'');
+        b.addEventListener('click', function(){ abrirNota(x.nt); });
+        cont.appendChild(b);
+      });
+      if(!n) cont.innerHTML = '<p class="vacio">Nada con ese filtro.</p>';
+    }
+
+    ['ap-buscar','ap-grupo','ap-filtro'].forEach(function(id){
+      document.getElementById(id).addEventListener('input', function(){ if(apCorpus) filtrarApuntes(); });
+    });
+    document.getElementById('ap-volver').addEventListener('click', function(){
+      document.getElementById('ap-lector').hidden = true;
+      document.getElementById('ap-lista').hidden = false;
+    });
+
+    function abrirNota(nt){
+      var d = document.getElementById('ap-nota');
+      d.innerHTML = '<p class="vacio">Abriendo NT'+nt+'…</p>';
+      document.getElementById('ap-lista').hidden = true;
+      document.getElementById('ap-lector').hidden = false;
+      google.script.run
+        .withSuccessHandler(function(n){
+          var h = '<h2>NT'+n.nt+' · '+n.titulo+(n.codigo?' — '+n.codigo:'')+'</h2>';
+          if(n.ubicacion) h += '<p class="aviso"><strong>Ubicación:</strong> '+n.ubicacion+'</p>';
+          n.apartados.forEach(function(a){
+            h += '<div class="apartado"><h4>'+a.titulo+'</h4><p>'+a.texto+'</p></div>';
+          });
+          if(n.fuentes) h += '<p class="fuente"><strong>Fuente:</strong> '+n.fuentes+'</p>';
+          d.innerHTML = h;
+          // queda marcada como leída en el servidor; refrescamos el listado
+          var x = apCorpus && apCorpus.notas.filter(function(y){return y.nt===n.nt;})[0];
+          if(x && !x.leida){ x.leida = true; pintarApuntes(); }
+        })
+        .withFailureHandler(function(e){ d.innerHTML = '<p class="vacio">'+e.message+'</p>'; })
+        .cargarNota(nt);
+    }
+
+    // ---------- Inicio: por dónde vas ----------
+    var iniCargado = false;
+
+    function initInicio(){
+      if(iniCargado) return;
+      iniCargado = true;
+      google.script.run
+        .withSuccessHandler(pintarInicio)
+        .withFailureHandler(function(e){
+          iniCargado = false;
+          document.getElementById('ini-sub').textContent = e.message;
+        })
+        .miProgreso();
+    }
+
+    function pintarInicio(p){
+      var nombre = (p.usuario||'').split('@')[0].replace(/[._]/g,' ');
+      document.getElementById('ini-saludo').textContent = 'Hola, ' + nombre;
+      document.getElementById('ini-leidas').textContent = p.leidas;
+      document.getElementById('ini-casos').textContent = p.casosResueltos + '/' + p.casosTotales;
+      document.getElementById('ini-intentos').textContent = p.intentos;
+
+      var total = (apCorpus && apCorpus.total) || 0;
+      var pct = total ? Math.round(p.leidas/total*100) : 0;
+      document.getElementById('ini-barra').style.width = pct + '%';
+      document.getElementById('ini-barra-txt').textContent = total
+        ? ('Llevas ' + p.leidas + ' de ' + total + ' notas (' + pct + '%).')
+        : ('Llevas ' + p.leidas + ' notas leídas.');
+
+      document.getElementById('ini-sub').textContent = p.leidas === 0 && p.intentos === 0
+        ? 'Es tu primera vez por aquí. Empieza por los apuntes, sin prisa.'
+        : 'Esto es lo que llevas. Sigue por donde lo dejaste.';
+
+      var txt = document.getElementById('ini-siguiente-txt');
+      var btn = document.getElementById('ini-ir');
+      if(p.siguiente){
+        txt.textContent = 'Tienes un caso esperándote: «' + p.siguiente.titulo + '».';
+        btn.hidden = false;
+        btn.onclick = function(){ mostrar('simulador'); };
+      } else if(p.casosTotales && p.casosResueltos >= p.casosTotales){
+        txt.textContent = 'Has resuelto todos los casos con fundamento. Repasa apuntes o espera a que haya casos nuevos.';
+        btn.hidden = true;
+      } else {
+        document.getElementById('ini-siguiente').className = 'siguiente espera';
+        txt.textContent = 'Ahora mismo no hay ningún caso abierto para ti: entre intento e intento pasan ' +
+          p.horasEntreIntentos + ' horas. Aprovecha y lee apuntes.';
+        btn.hidden = false;
+        btn.textContent = 'Ir a los apuntes';
+        btn.onclick = function(){ mostrar('apuntes'); };
+      }
     }
 
   </script>

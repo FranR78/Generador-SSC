@@ -1,0 +1,54 @@
+<!-- Apuntes.html — Las notas técnicas dentro del portal.
+     Leer NO gasta consultas: si no hay libros, esto es el libro. -->
+<style>
+  .ap .barra{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+  .ap input[type=search]{flex:1;min-width:180px;padding:9px 11px;border:1px solid var(--borde);
+    border-radius:8px;font-family:inherit;font-size:14px}
+  .ap select{padding:9px 11px;border:1px solid var(--borde);border-radius:8px;font-family:inherit;font-size:14px}
+  .ap .lista{display:grid;gap:6px}
+  .ap .nt{display:flex;gap:10px;align-items:baseline;text-align:left;width:100%;
+    background:#fff;border:1px solid var(--borde);border-radius:9px;padding:10px 12px;
+    cursor:pointer;font-family:inherit;font-size:14px}
+  .ap .nt:hover{border-color:var(--azul,#0a63aa);background:#f3f9ff}
+  .ap .nt .num{font-weight:800;color:var(--azul-os,#063f70);min-width:46px}
+  .ap .nt .tit{flex:1}
+  .ap .nt small{display:block;color:#5a6b78;font-size:12px;margin-top:2px}
+  .ap .nt .ok{color:#1e874b;font-weight:700;font-size:12px;white-space:nowrap}
+  .ap .nt.leida{background:#f6fbf8}
+  .ap .chip{display:inline-block;font-size:11px;font-weight:700;border-radius:10px;
+    padding:1px 7px;border:1px solid var(--borde);color:#5a6b78;background:#eef4f9}
+  .ap .chip.proceso{background:#e8f6f2;color:#0a7a6d;border-color:#b8e0d6}
+  .ap .lector h2{margin-top:0}
+  .ap .apartado{margin:14px 0;padding-left:12px;border-left:3px solid var(--azul,#0a63aa)}
+  .ap .apartado h4{font-size:12px;text-transform:uppercase;letter-spacing:.07em;
+    color:var(--azul-os,#063f70);margin:0 0 4px}
+  .ap .apartado p{margin:0;line-height:1.6;font-size:14.5px}
+  .ap .fuente{font-size:12px;color:#5a6b78;border-top:1px solid var(--borde);padding-top:8px;margin-top:14px}
+  .ap .vacio{color:#5a6b78;font-style:italic;font-size:14px}
+</style>
+
+<div class="ap">
+  <div id="ap-lista">
+    <div class="panel">
+      <h2>Apuntes</h2>
+      <p class="aviso" id="ap-resumen">Cargando apuntes…</p>
+      <div class="barra">
+        <input type="search" id="ap-buscar" placeholder="Buscar: compresor, subenfriamiento, G65…">
+        <select id="ap-grupo"><option value="">Todos los temas</option></select>
+        <select id="ap-filtro">
+          <option value="">Todas</option>
+          <option value="no">Sin leer</option>
+          <option value="si">Ya leídas</option>
+        </select>
+      </div>
+      <div class="lista" id="ap-resultados"></div>
+    </div>
+  </div>
+
+  <div id="ap-lector" hidden>
+    <div class="panel lector">
+      <button class="accion sec" id="ap-volver" style="margin-bottom:10px">← Volver a los apuntes</button>
+      <div id="ap-nota"></div>
+    </div>
+  </div>
+</div>

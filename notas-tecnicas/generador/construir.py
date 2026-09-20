@@ -7,6 +7,7 @@
 
 import argparse
 import html
+import json
 import re
 import sys
 import unicodedata
@@ -442,6 +443,49 @@ def cargar():
     return notas, errores
 
 
+def texto_plano(html_str):
+    """Quita etiquetas y deja texto corrido, que es lo que consume la IA."""
+    t = re.sub(r"<[^>]+>", " ", html_str)
+    t = (t.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
+          .replace("&nbsp;", " ").replace("&quot;", '"').replace("&#x27;", "'"))
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def volcar_json(notas):
+    """Escribe web/notas.json: el corpus en texto, para el portal y la IA.
+
+    El dashboard es para leer con los ojos; esto es para que lo lea el portal.
+    Va en texto plano y no en HTML porque pesa mucho menos y porque la IA
+    responde mejor sobre texto que sobre marcado.
+    """
+    fuera = []
+    for n in notas:
+        fuera.append({
+            "nt": n.nt,
+            "clave": n.clave,
+            "titulo": n.titulo,
+            "codigo": n.codigo,
+            "menu": n.menu,
+            "grupo": n.grupo,
+            "tipo": n.tipo,
+            "subtipo": n.subtipo,
+            "aplicacion": n.aplicacion,
+            "ubicacion": n.ubicacion,
+            "fuentes": n.fuentes,
+            "apartados": [{"titulo": k, "texto": texto_plano(v)}
+                          for k, v in n.apartados.items()],
+        })
+    doc = {
+        "generado": date.today().isoformat(),
+        "total": len(fuera),
+        "grupos": sorted({n.grupo for n in notas}),
+        "notas": fuera,
+    }
+    ruta = DIR_WEB / "notas.json"
+    ruta.write_text(json.dumps(doc, ensure_ascii=False, indent=1), encoding="utf-8")
+    return ruta
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__,
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -512,8 +556,12 @@ def main():
     (DIR_WEB / "notas-tecnicas.html").write_text(pagina, encoding="utf-8")
     (DIR_WEB / "notas-tecnicas.txt").write_text(pagina, encoding="utf-8")
 
+    ruta_json = volcar_json(notas)
+    kbj = ruta_json.stat().st_size / 1024
+
     kb = len(pagina.encode("utf-8")) / 1024
-    print(f"\nGenerado web/notas-tecnicas.html ({kb:.0f} KB)")
+    print(f"\nGenerado web/notas.json ({kbj:.0f} KB) — el corpus para el portal")
+    print(f"Generado web/notas-tecnicas.html ({kb:.0f} KB)")
     print("Y web/notas-tecnicas.txt para pegar en Google Sites.")
 
 

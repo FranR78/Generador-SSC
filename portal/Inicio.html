@@ -1,0 +1,39 @@
+<!-- Inicio.html — Lo primero que ve el alumno: por dónde va y qué hacer ahora.
+     No es un boletín de notas: es una guía. Por eso propone, no juzga. -->
+<style>
+  .ini .saludo{font-size:1.15rem;font-weight:800;color:var(--azul-os,#063f70);margin:0 0 4px}
+  .ini .sub{color:#5a6b78;font-size:14px;margin:0 0 14px}
+  .ini .tarjetas{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:14px}
+  .ini .dato{background:#fff;border:1px solid var(--borde);border-radius:10px;padding:12px;text-align:center}
+  .ini .dato .n{font-size:1.8rem;font-weight:800;color:var(--azul-os,#063f70);line-height:1.1}
+  .ini .dato .q{font-size:12px;color:#5a6b78;margin-top:2px}
+  .ini .progreso{background:#e3ecf3;border-radius:20px;height:10px;overflow:hidden;margin:6px 0 2px}
+  .ini .progreso > div{background:var(--azul,#0a63aa);height:100%;width:0;transition:width .4s}
+  .ini .siguiente{background:#f3f9ff;border:2px solid var(--azul,#0a63aa);border-radius:12px;padding:14px}
+  .ini .siguiente h3{margin:0 0 6px;font-size:14px;color:var(--azul-os,#063f70)}
+  .ini .siguiente p{margin:0 0 10px;font-size:14px}
+  .ini .espera{background:#fdf6e3;border-color:#b8860b}
+</style>
+
+<div class="ini">
+  <p class="saludo" id="ini-saludo">Hola</p>
+  <p class="sub" id="ini-sub">Cargando por dónde ibas…</p>
+
+  <div class="tarjetas">
+    <div class="dato"><div class="n" id="ini-leidas">—</div><div class="q">notas leídas</div></div>
+    <div class="dato"><div class="n" id="ini-casos">—</div><div class="q">casos resueltos</div></div>
+    <div class="dato"><div class="n" id="ini-intentos">—</div><div class="q">intentos hechos</div></div>
+  </div>
+
+  <div class="panel">
+    <h2>Tu avance en los apuntes</h2>
+    <div class="progreso"><div id="ini-barra"></div></div>
+    <p class="aviso" id="ini-barra-txt"></p>
+  </div>
+
+  <div class="siguiente" id="ini-siguiente">
+    <h3>Lo siguiente</h3>
+    <p id="ini-siguiente-txt">…</p>
+    <button class="accion" id="ini-ir" hidden>Vamos</button>
+  </div>
+</div>

@@ -149,6 +149,16 @@ function db_tocar_() {
 /** Telemetría: una entrada nueva y el tiempo conectado, por la puerta. */
 /** Simulador: los casos los sirve la puerta, que corre como el profe, para
     que el alumnado no pueda leer en la Hoja cuál es la avería. */
+/** Progreso del alumno: qué ha leído y qué ha intentado. */
+function db_leido_(nt) { return db_call_('leido', { nt: nt }); }
+
+function db_progreso_() { return db_call_('progreso'); }
+
+function db_puedoIntentar_(casoId) { return db_call_('puedoIntentar', { casoId: casoId }); }
+
+function db_registrarIntento_(datos) { return db_call_('registrarIntento', datos); }
+
+
 function db_casos_() { return db_call_('casos'); }
 
 function db_caso_(casoId) { return db_call_('caso', { casoId: casoId }); }

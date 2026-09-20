@@ -179,3 +179,51 @@ esté en manos del alumnado:
 | `PORTAL_AUD` | el ID de cliente OAuth del portal | Solo acepta tokens del portal, no de otra app |
 
 Si no las pones, esas dos comprobaciones simplemente no se hacen.
+
+---
+
+# Apuntes, progreso y freno del simulador
+
+Tres cambios de fondo, en esta dirección: **preguntar a la IA deja de estar
+racionado** (preguntar es trabajar) y **el freno se mueve al simulador**, donde
+entre dos intentos del mismo caso tienen que pasar horas.
+
+## Qué hay que hacer, una vez
+
+1. **Puerta** (*Datos SSC*): añade el archivo `datos/Progreso.gs` (+ → Secuencia
+   de comandos, nombre `Progreso`) y actualiza `Datos.gs`. Las pestañas
+   `Lecturas` e `Intentos` se crean solas.
+2. **Puente** (*el de las capturas*): actualiza `Codigo.gs` y ejecuta a mano
+   **`puenteNT_traerNotas`**. Deja `notas.json` en Drive y escribe en el
+   registro el **NOTAS_FILE_ID**. Cópialo.
+3. **Portal**: añade `Notas.gs`, `Apuntes.html` e `Inicio.html`, actualiza
+   `Code.gs`, `DB.gs`, `Gating.gs`, `Portal.html` y `Simulador.html`, y pon la
+   propiedad:
+
+   | Propiedad | Valor |
+   |---|---|
+   | `NOTAS_FILE_ID` | el id del paso 2 |
+
+4. Vuelve a ejecutar **`crearActivador`** en el puente, para que los apuntes se
+   refresquen solos una vez al día.
+
+## Los dos ajustes que ahora mandan
+
+En la pestaña **Ajustes** de la Hoja:
+
+| Clave | Por defecto | Qué hace |
+|---|---|---|
+| `LIBRES` | `0` | Consultas a la IA. **0 = sin límite.** |
+| `HORAS_ENTRE_INTENTOS` | `12` | Horas antes de repetir el MISMO caso |
+
+Un caso ya resuelto **con fundamento** no se bloquea: repetirlo es repasar, y
+repasar no se castiga. Lo que se frena es reintentar el que aún no domina.
+
+## Por qué las notas van a Drive y no se leen de GitHub
+
+El repositorio es privado y **el portal corre como el alumno**: un token de
+GitHub ahí sería un token en manos del alumnado. El puente, que sí es tuyo y ya
+tiene el token, deja el archivo en Drive. El alumno solo ve el resultado.
+
+El corpus entero son **371 KB de texto** frente a los 15 MB que puede pesar un
+solo PDF, así que se puede preguntar contra toda la asignatura de una vez.

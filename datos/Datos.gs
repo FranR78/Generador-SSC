@@ -22,10 +22,17 @@ var PROFES_PROP = 'PROFES';
 
 var TABS = {
   TAREAS: 'Tareas', APORTA: 'Aportaciones', VALORA: 'Valoraciones',
-  ACT: 'Actividad', CONFIG: 'Config', AJUSTES: 'Ajustes'
+  ACT: 'Actividad', CONFIG: 'Config', AJUSTES: 'Ajustes',
+  LECT: 'Lecturas', INT: 'Intentos'
 };
 
-var GATE_POR_DEFECTO = { LIBRES: 3, REQ_APORTA: 1, REQ_VALORA: 2 };
+/* LIBRES: 0 = sin límite de consultas a la IA. Preguntar es trabajar, así que
+   no se raciona; el freno está en el simulador (HORAS_ENTRE_INTENTOS). */
+var GATE_POR_DEFECTO = { LIBRES: 0, REQ_APORTA: 1, REQ_VALORA: 2 };
+
+/* Horas que deben pasar antes de repetir el MISMO caso del simulador. Evita
+   que lo repitan a lo bruto hasta acertar de memoria. Se edita en Ajustes. */
+var HORAS_ENTRE_INTENTOS = 12;
 
 // Estrellas que reparte cada alumno en una ronda: una de 3, una de 2 y una de 1.
 // Pesos distintos obligan a jerarquizar; un 1-5 plano se convierte en "4 a todo".
@@ -46,7 +53,11 @@ var HEADERS = {
   Tramos:    ['esquema_id', 'desde', 'hasta', 'componente',
               'r_min', 'r_max', 'unidad', 'origen', 'seccion', 'color', 'por_conector'],
   Casos:     ['caso_id', 'titulo', 'vehiculo_id', 'esquema_id', 'sintoma',
-              'averia', 'objetivo', 'activo']
+              'averia', 'objetivo', 'activo'],
+  /* Qué ha leído y qué ha intentado cada alumno: es lo que permite decirle al
+     entrar qué lleva hecho y qué le falta, en vez de soltarlo en medio. */
+  Lecturas:  ['usuario', 'nt', 'veces', 'primera', 'ultima'],
+  Intentos:  ['usuario', 'caso_id', 'cuando', 'fundamentado', 'acertado', 'segundos']
 };
 
 // ---------------------------------------------------------------- entrada ---
@@ -123,6 +134,10 @@ function ejecutar_(op, args, usuario) {
     case 'tocar': return tocar_(usuario);
     case 'casos': return listarCasos();
     case 'caso': return cargarCaso(args.casoId);
+    case 'leido': return marcarLeido_(usuario, args.nt);
+    case 'progreso': return progreso_(usuario);
+    case 'puedoIntentar': return puedoIntentar_(usuario, args.casoId);
+    case 'registrarIntento': return registrarIntento_(usuario, args);
     case 'conexion': return conexion_(usuario);
     case 'latido': return latido_(usuario, args.segundos);
     case 'resetUsuario': return resetUsuario_(usuario, args.alumno);

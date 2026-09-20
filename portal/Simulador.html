@@ -137,6 +137,18 @@
             <button class="ir" id="sim-anota" style="background:#0a63aa">Anotar en la ficha</button>
           </div>
         </div>
+
+        <div class="tarjeta">
+          <h3>Diagnóstico</h3>
+          <p class="pista">Cuando lo tengas claro, di dónde está la avería.
+             Acertar sin haber comprobado no cuenta como diagnóstico.</p>
+          <select id="sim-dx" style="width:100%;padding:9px;border:1.5px solid #0a63aa;
+                  border-radius:8px;font-family:inherit;margin-top:8px">
+            <option value="">Elige la causa…</option>
+          </select>
+          <button class="ir" id="sim-emitir" disabled>Emitir diagnóstico</button>
+          <div class="nota" id="sim-veredicto"></div>
+        </div>
       </div>
     </div>
   </div>

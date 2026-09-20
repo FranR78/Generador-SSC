@@ -119,6 +119,60 @@ function obtenerSubcarpeta(padre, nombre) {
 }
 
 
+/**
+ * Trae notas.json de GitHub y lo deja en Drive, para que el portal lo lea.
+ *
+ * El repositorio es privado y el portal corre COMO EL ALUMNO, así que allí no
+ * puede haber un token de GitHub. Aquí sí: este proyecto es tuyo y ya tiene el
+ * token configurado. El alumno solo ve el archivo resultante en Drive.
+ *
+ * Propiedades que usa:
+ *   CARPETA_NOTAS   opcional; dónde dejarlo. Por defecto, la de capturas.
+ *   ARCHIVO_NOTAS   lo escribe este script: id del archivo, para actualizarlo
+ *                   en el sitio en vez de crear uno nuevo cada vez (el portal
+ *                   guarda ese id, así que no puede cambiar).
+ */
+function puenteNT_traerNotas() {
+  const props = PropertiesService.getScriptProperties();
+  const token = props.getProperty('GITHUB_TOKEN');
+  if (!token) throw new Error('Falta GITHUB_TOKEN en las propiedades del script.');
+
+  const url = 'https://api.github.com/repos/' + REPO + '/contents/' +
+              rutaCodificada('notas-tecnicas/web/notas.json') + '?ref=' + RAMA;
+  const r = UrlFetchApp.fetch(url, {
+    headers: { Authorization: 'Bearer ' + token, Accept: 'application/vnd.github.raw' },
+    muteHttpExceptions: true
+  });
+  if (r.getResponseCode() !== 200) {
+    throw new Error('GitHub devuelve ' + r.getResponseCode() +
+      '. ¿Ha corrido ya el workflow que genera notas.json?');
+  }
+  const contenido = r.getContentText();
+  let datos;
+  try { datos = JSON.parse(contenido); }
+  catch (e) { throw new Error('Lo que ha llegado no es JSON válido.'); }
+
+  const blob = Utilities.newBlob(contenido, 'application/json', 'notas.json');
+  const idPrevio = props.getProperty('ARCHIVO_NOTAS');
+  let archivo = null;
+  if (idPrevio) {
+    // Actualizar en el sitio: el portal guarda este id y no puede cambiar.
+    try { archivo = DriveApp.getFileById(idPrevio); archivo.setContent(contenido); }
+    catch (e) { archivo = null; }
+  }
+  if (!archivo) {
+    const carpetaId = props.getProperty('CARPETA_NOTAS') || props.getProperty('CARPETA_CAPTURAS');
+    if (!carpetaId) throw new Error('Falta CARPETA_NOTAS (o CARPETA_CAPTURAS) donde dejarlo.');
+    archivo = DriveApp.getFolderById(carpetaId).createFile(blob);
+    props.setProperty('ARCHIVO_NOTAS', archivo.getId());
+  }
+
+  console.log(datos.total + ' notas llevadas a Drive.');
+  console.log('NOTAS_FILE_ID para el portal: ' + archivo.getId());
+  return archivo.getId();
+}
+
+
 /** Se ejecuta UNA vez, a mano, para dejar los dos automatismos en marcha. */
 function crearActivador() {
   // Las capturas, cada 15 minutos: el alumnado las sube durante la clase y
@@ -127,8 +181,10 @@ function crearActivador() {
   // Los documentos ya procesados no corren ninguna prisa: con una vez al día
   // sobra, y así no se gasta cuota de ejecución para nada.
   crearUno_('puenteNT_archivarProcesados', 60 * 24);
+  // Los apuntes del portal: una vez al día basta.
+  crearUno_('puenteNT_traerNotas', 60 * 24);
 
-  console.log('Activadores creados: capturas cada 15 min, archivado una vez al día.');
+  console.log('Activadores creados: capturas cada 15 min; archivado y apuntes, una vez al día.');
 }
 
 

@@ -214,6 +214,16 @@ function comprobarConfig() {
 }
 
 
+/** Lo que lleva hecho el alumno: alimenta la pantalla de inicio. */
+function miProgreso() { return db_progreso_(); }
+
+/** ¿Puede abrir ahora este caso, o tiene que esperar? */
+function puedoIntentar(casoId) { return db_puedoIntentar_(casoId); }
+
+/** Registra el resultado de un intento del simulador. */
+function registrarIntento(datos) { return db_registrarIntento_(datos); }
+
+
 /** Casos del simulador disponibles para el alumnado. */
 function listarCasosSimulador() { return db_casos_(); }
 
