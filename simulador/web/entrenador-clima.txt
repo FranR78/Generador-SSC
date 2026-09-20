@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entrenador de Climatización</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+  :root{
+    --azul:#0a63aa; --azul-os:#063f70; --fondo:#e3ecf3; --texto:#101f2b; --blanco:#fff;
+    --ok:#1e874b; --mal:#c0392b; --aviso:#b8860b; --gris:#5a6b78; --borde:#c6d9e6;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;font-family:'Open Sans',sans-serif;background:var(--fondo);color:var(--texto)}
+  .wrap{max-width:1100px;margin:0 auto;padding:14px}
+  header{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+  header h1{color:var(--azul-os);font-size:1.15rem;font-weight:800;margin:0}
+  header .veh{font-size:.78rem;color:var(--gris)}
+  .cols{display:grid;grid-template-columns:1fr 320px;gap:14px}
+  @media(max-width:900px){.cols{grid-template-columns:1fr}}
+  .card{background:var(--blanco);border:2px solid var(--azul);border-radius:12px;padding:12px;margin-bottom:12px}
+  h2{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--azul-os);
+     margin:0 0 8px;border-bottom:1px solid var(--borde);padding-bottom:4px}
+  .fila{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+  .seg button{font-family:inherit;font-size:.78rem;font-weight:700;cursor:pointer;border:1.5px solid var(--azul);
+    background:var(--blanco);color:var(--azul-os);border-radius:8px;padding:7px 11px}
+  .seg button.on{background:var(--azul);color:#fff}
+  .pista{font-size:.74rem;color:var(--gris);margin:6px 0 0}
+
+  /* esquema */
+  svg.esq{width:100%;height:auto;background:#fbfdff;border-radius:8px}
+  .caja{fill:#dfe9f2;stroke:var(--azul-os);stroke-width:2}
+  .cbl{stroke:#1a2b38;stroke-width:2.5;fill:none}
+  .cbl.off{stroke-dasharray:5 5;stroke:#b0bfcb}
+  .pin{fill:#fff;stroke:var(--azul-os);stroke-width:2;cursor:pointer}
+  .pin:hover{fill:#cfe6ff}
+  .pin.A{fill:#d1493b;stroke:#8e2a20} .pin.B{fill:#1a1a1a;stroke:#000}
+  .et{font-size:11px;font-weight:700;fill:var(--texto);text-anchor:middle}
+  .etp{font-size:9.5px;fill:var(--gris);text-anchor:middle}
+  .conector{cursor:pointer}
+  .conector rect{fill:#ffe9a8;stroke:#b8860b;stroke-width:2}
+  .conector rect.hit{fill:transparent;stroke:none}
+  .conector:hover rect.hit{fill:rgba(10,99,170,.08)}
+  .conector.off rect{fill:#f3d7d4;stroke:var(--mal)}
+
+  /* polímetro */
+  .mm{background:#f6c341;border-radius:14px;padding:10px;border:3px solid #2b2b2b}
+  .mm .disp{background:#cfd8c8;border:2px solid #2b2b2b;border-radius:6px;padding:8px;text-align:right;
+    font-family:ui-monospace,Menlo,Consolas,monospace;font-size:1.5rem;font-weight:700;color:#12200f;min-height:46px}
+  .mm .marca{font-size:.62rem;font-weight:800;color:#2b2b2b;letter-spacing:.1em;text-align:center;margin-top:4px}
+  .dial{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-top:8px}
+  .dial button{font-family:inherit;font-size:.72rem;font-weight:800;cursor:pointer;border:1.5px solid #2b2b2b;
+    background:#2b2b2b;color:#f6c341;border-radius:6px;padding:6px 2px}
+  .dial button.on{background:#f6c341;color:#2b2b2b}
+  .bornas{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-top:6px}
+  .bornas button{font-family:inherit;font-size:.66rem;font-weight:700;cursor:pointer;border:1.5px solid #2b2b2b;
+    background:#3c3c3c;color:#ddd;border-radius:6px;padding:6px 2px}
+  .bornas button.on{background:#d1493b;color:#fff;border-color:#8e2a20}
+  .bornas button.com{background:#1a1a1a;color:#fff}
+
+  .accion{width:100%;font-family:inherit;font-size:.92rem;font-weight:800;cursor:pointer;border:none;
+    border-radius:10px;padding:11px;color:#fff;background:var(--azul-os);margin-top:10px}
+  .accion:disabled{opacity:.4;cursor:default}
+
+  .aviso{margin-top:9px;border-radius:8px;padding:9px;font-size:.82rem;display:none}
+  .aviso.v{display:block}
+  .aviso.ok{background:#e9f7ef;border:1.5px solid var(--ok)}
+  .aviso.invalida{background:#fdf6e3;border:1.5px solid var(--aviso)}
+  .aviso.imposible{background:#fdeceb;border:1.5px solid var(--mal)}
+
+  table{width:100%;border-collapse:collapse;font-size:.74rem;margin-top:4px}
+  th{background:var(--azul-os);color:#fff;padding:5px 4px;text-align:left;font-size:.66rem;
+     text-transform:uppercase;letter-spacing:.04em}
+  td{padding:5px 4px;border-bottom:1px solid var(--borde)}
+  tr.ok td{background:#f0faf4} tr.fuera td{background:#fffaf0}
+  tr.escala td,tr.concepto td{background:#fdf0ee}
+  .vd{font-weight:700;font-size:.7rem}
+  .vd.ok{color:var(--ok)} .vd.fuera{color:var(--aviso)}
+  .vd.escala,.vd.concepto{color:var(--mal)} .vd.medida{color:var(--gris)}
+  .origen{display:inline-block;font-size:.6rem;font-weight:700;border-radius:8px;padding:1px 5px;
+    background:#eef4f9;color:var(--gris);border:1px solid var(--borde)}
+  .vacio{font-size:.78rem;color:var(--gris);font-style:italic}
+  .profe{font-size:.7rem;color:var(--gris);margin-top:10px}
+  .profe select{font-family:inherit;font-size:.72rem;padding:3px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Entrenador de Climatización — Válvula reguladora del compresor</h1>
+    <span class="veh" id="veh"></span>
+  </header>
+
+  <div class="cols">
+    <div>
+      <div class="card">
+        <h2>Esquema eléctrico</h2>
+        <div id="esquema"></div>
+        <p class="pista">Toca un <strong>pin</strong> para poner la punta roja (A+) y luego la negra (B−).
+           Toca el <strong>conector T4t</strong> para conectarlo o desconectarlo.</p>
+      </div>
+
+      <div class="card">
+        <h2>Ficha de comprobación</h2>
+        <table id="ficha">
+          <tr><th>Nº</th><th>Medir en</th><th>A+</th><th>B−</th><th>Conect.</th><th>Estado</th>
+              <th>Prescrito</th><th>Medida</th><th>Veredicto</th></tr>
+        </table>
+        <p class="vacio" id="fvacio">Todavía no has anotado ninguna comprobación.</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="card">
+        <h2>Estado del vehículo</h2>
+        <div class="fila seg" id="llave">
+          <button data-c="off" class="on">Sin contacto</button>
+          <button data-c="on">Contacto</button>
+          <button data-c="motor">Motor en marcha</button>
+        </div>
+        <p class="pista" id="estConector"></p>
+      </div>
+
+      <div class="card">
+        <h2>Polímetro</h2>
+        <div class="mm">
+          <div class="disp" id="disp">---</div>
+          <div class="marca">TRUE RMS · 6000 COUNTS</div>
+          <div class="dial seg" id="dial">
+            <button data-f="off" class="on">OFF</button>
+            <button data-f="vdc">V⎓</button>
+            <button data-f="ohm">Ω</button>
+            <button data-f="amp">A</button>
+          </div>
+          <div class="bornas" id="bornas">
+            <button data-b="20A">20A</button>
+            <button data-b="mA">µA mA</button>
+            <button class="com" disabled>COM</button>
+            <button data-b="VΩ" class="on">VΩHz</button>
+          </div>
+        </div>
+        <button class="accion" id="btnMedir" disabled>Medir</button>
+        <div class="aviso" id="aviso"></div>
+        <div id="anotar" style="display:none;margin-top:9px">
+          <div class="fila">
+            <input id="valAnot" style="flex:1;padding:7px;border:1.5px solid var(--azul);border-radius:7px;font-family:inherit">
+            <select id="uniAnot" style="padding:7px;border:1.5px solid var(--azul);border-radius:7px;font-family:inherit">
+              <option>Ω</option><option>kΩ</option><option>V</option><option>mV</option>
+            </select>
+          </div>
+          <button class="accion" id="btnAnotar" style="background:var(--azul)">Anotar en la ficha</button>
+        </div>
+        <div class="profe">
+          Modo profesor · avería inyectada:
+          <select id="averia"></select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ===== datos-leon.js ===== */
+/* ===========================================================================
+   datos-leon.js — Seat León 1P · Climatronic
+   Esquema de referencia: 1P1-016020407 (WI-XML, pág. 16/2)
+
+   ESTO NO ES UNA IMAGEN: es la topología en datos. El motor calcula las
+   lecturas recorriendo este grafo, así que un esquema nuevo son datos nuevos,
+   no código nuevo.
+
+   Etiquetado epistemológico de cada valor:
+     Medido      — tomado por el profesor sobre el vehículo real
+     OEM         — publicado por el fabricante
+     Inferido    — rango típico de esa familia de componente, SIN CONTRASTAR
+   =========================================================================== */
+
+var VEHICULO = {
+  marca: 'Seat', modelo: 'León 1P', sistema: 'Climatronic',
+  esquema: '1P1-016020407', pagina: '16/2'
+};
+
+/* --- Nodos accesibles con la punta del polímetro ------------------------- */
+var NODOS = {
+  'J255:T20c/19': { et: 'J255 · T20c/19', desc: 'Salida de mando a N280 (lado alto)', lado: 'uce' },
+  'J255:T20c/18': { et: 'J255 · T20c/18', desc: 'Retorno de N280 hacia la UCE',      lado: 'uce' },
+  'T4t/3':        { et: 'T4t/3',  desc: 'Conector 4 vías, cerca del motor de arranque', lado: 'mazo' },
+  'T4t/4':        { et: 'T4t/4',  desc: 'Conector 4 vías, cerca del motor de arranque', lado: 'mazo' },
+  'N280:2':       { et: 'N280 · 2', desc: 'Válvula reguladora del compresor, pin 2', lado: 'componente' },
+  'N280:1':       { et: 'N280 · 1', desc: 'Válvula reguladora del compresor, pin 1', lado: 'componente' },
+  'MASA85':       { et: 'Masa 85', desc: 'Conexión a masa -1-, mazo del vano motor', lado: 'masa' }
+};
+
+/* --- Tramos del circuito (aristas del grafo) ----------------------------- */
+/* r: resistencia en ohmios. Los cables ~0. La bobina lleva su banda.        */
+var TRAMOS = [
+  { de: 'J255:T20c/19', a: 'T4t/3', r: 0.1, cable: { sec: 0.35, color: 'li' } },
+  { de: 'T4t/3', a: 'N280:2',       r: 0.1, cable: { sec: 1.0,  color: 'gn/sw' }, porConector: 'T4t' },
+  { de: 'N280:2', a: 'N280:1',      componente: 'N280',
+    r: { min: 8, max: 14, unidad: 'Ω', origen: 'Inferido' } },
+  { de: 'N280:1', a: 'T4t/4',       r: 0.1, cable: { sec: 1.0,  color: 'br/sw' }, porConector: 'T4t' },
+  { de: 'T4t/4', a: 'J255:T20c/18', r: 0.1, cable: { sec: 0.5,  color: 'br' } }
+];
+
+/* --- Qué puede fallar ---------------------------------------------------- */
+var AVERIAS = {
+  ninguna:        { et: 'Sin avería', efecto: null },
+  bobina_cortada: { et: 'Bobina de N280 cortada', efecto: { tramo: 'N280:2|N280:1', r: Infinity } },
+  cable_cortado:  { et: 'Cable gn/sw cortado entre T4t/3 y N280', efecto: { tramo: 'T4t/3|N280:2', r: Infinity } },
+  sin_mando:      { et: 'La UCE no da mando (sin señal en T20c/19)', efecto: { sinMando: true } }
+};
+
+/* --- Alimentación: qué tensión hay en el lado alto ----------------------- */
+var ALIMENTACION = { min: 11.5, max: 14.5, unidad: 'V', origen: 'Inferido' };
+
+</script>
+<script>
+/* ===== motor.js ===== */
+/* ===========================================================================
+   motor.js — Motor de simulación
+
+   Regla de oro: el caso NO guarda respuestas. Guarda una avería inyectada en
+   el circuito, y el motor CALCULA lo que marca el instrumento en cada punto.
+   Por eso medir mal da una lectura falsa, y no un mensaje de "incorrecto".
+   =========================================================================== */
+
+/* Resistencia interna del driver de la UCE. Es la que se cuela en paralelo
+   cuando alguien mide ohmios con el conector puesto: la lectura baja y parece
+   buena, pero no es la bobina. */
+var R_UCE = 2200;
+
+function banda(r) { return (r && typeof r === 'object' && r.min !== undefined) ? r : null; }
+function valorDe(r) { var b = banda(r); return b ? (b.min + b.max) / 2 : r; }
+
+/* --- Grafo con la avería aplicada --------------------------------------- */
+function tramosCon(averiaId, conectorPuesto) {
+  var av = AVERIAS[averiaId] || AVERIAS.ninguna;
+  var ef = av.efecto || {};
+  var out = [];
+  TRAMOS.forEach(function (t) {
+    var r = valorDe(t.r);
+    if (ef.tramo === t.de + '|' + t.a) r = ef.r;
+    if (t.porConector === 'T4t' && !conectorPuesto) r = Infinity;  // conector fuera: tramo abierto
+    out.push({ de: t.de, a: t.a, r: r, componente: t.componente, base: t });
+  });
+  return out;
+}
+
+/* --- Resistencia entre dos puntos (camino más corto por el grafo) -------- */
+function resistenciaEntre(a, b, tramos) {
+  var mejor = Infinity;
+  (function dfs(n, visit, acc) {
+    if (acc === Infinity) return;
+    if (n === b) { mejor = Math.min(mejor, acc); return; }
+    tramos.forEach(function (t) {
+      var sig = t.de === n ? t.a : (t.a === n ? t.de : null);
+      if (!sig || visit.indexOf(sig) >= 0) return;
+      dfs(sig, visit.concat([sig]), acc + t.r);
+    });
+  })(a, [a], 0);
+  return mejor;
+}
+
+/* --- La medida ----------------------------------------------------------
+   estado  = { contacto:'off'|'on'|'motor', conector:true|false }
+   inst    = { funcion:'ohm'|'vdc', bornaRoja:'VΩ'|'mA'|'20A' }
+   ------------------------------------------------------------------------ */
+function medir(puntoA, puntoB, inst, estado, averiaId) {
+  var errores = [];
+  var tramos = tramosCon(averiaId, estado.conector);
+
+  /* Borna equivocada: esto en el taller funde el fusible del polímetro */
+  if (inst.bornaRoja !== 'VΩ') {
+    return {
+      lectura: '---', unidad: '', veredicto: 'imposible',
+      nota: 'Punta roja en la borna de ' + inst.bornaRoja + '. Para medir ' +
+            (inst.funcion === 'ohm' ? 'resistencia' : 'tensión') +
+            ' va en VΩ. Así has puesto el polímetro en serie: en el taller habrías fundido su fusible.'
+    };
+  }
+
+  if (inst.funcion === 'ohm') {
+    /* Condición de validez nº1: sin tensión en el circuito */
+    if (estado.contacto !== 'off') {
+      return {
+        lectura: 'OL', unidad: 'Ω', veredicto: 'imposible',
+        nota: 'Ohmios con el contacto dado. Con tensión presente la lectura no vale: ' +
+              'el polímetro mide inyectando su propia corriente. Quita el contacto.'
+      };
+    }
+    var r = resistenciaEntre(puntoA, puntoB, tramos);
+
+    /* Condición de validez nº2: el conector tiene que estar fuera */
+    if (estado.conector) {
+      var paralelo = (r === Infinity) ? R_UCE : (r * R_UCE) / (r + R_UCE);
+      errores.push('conector_puesto');
+      return {
+        lectura: paralelo.toFixed(1), unidad: 'Ω', veredicto: 'invalida',
+        nota: 'Has medido con el conector puesto: lo que lee el polímetro es la bobina ' +
+              'EN PARALELO con la electrónica de la UCE. El número parece razonable, pero no es la bobina.',
+        errores: errores
+      };
+    }
+    if (r === Infinity) {
+      return { lectura: 'OL', unidad: 'Ω', veredicto: 'medida',
+               nota: 'Circuito abierto entre esos dos puntos.' };
+    }
+    return { lectura: r.toFixed(1), unidad: 'Ω', veredicto: 'medida' };
+  }
+
+  /* --- Tensión ---------------------------------------------------------- */
+  if (estado.contacto === 'off') {
+    return { lectura: '0.00', unidad: 'V', veredicto: 'medida',
+             nota: 'Sin contacto no hay tensión: no es una avería, es que el circuito está muerto.' };
+  }
+  if (!estado.conector) {
+    return { lectura: '0.00', unidad: 'V', veredicto: 'invalida',
+             nota: 'Con el conector desconectado no circula corriente; medir tensión aquí no dice nada. ' +
+                   'Para tensión, el conector va puesto.' };
+  }
+  var av = AVERIAS[averiaId] || AVERIAS.ninguna;
+  var sinMando = !!(av.efecto && av.efecto.sinMando);
+  var abierto = resistenciaEntre('N280:2', 'N280:1', tramos) === Infinity ||
+                resistenciaEntre('T4t/3', 'N280:2', tramos) === Infinity;
+  var v = sinMando ? 0 : valorDe(ALIMENTACION);
+  if (abierto && !sinMando) v = valorDe(ALIMENTACION);   // sin consumo, la tensión se mantiene
+  return { lectura: v.toFixed(2), unidad: 'V', veredicto: 'medida' };
+}
+
+/* --- Veredicto de lo que ANOTA el alumno, por décadas --------------------
+   No exige precisión: exige orden de magnitud. Es lo que distingue
+   "no sé medir" de "he medido y el componente está mal".
+   ------------------------------------------------------------------------ */
+function juzgar(anotado, prescrito) {
+  var b = banda(prescrito);
+  if (!b) return { clase: 'medida', et: 'Anotada' };
+  var x = parseFloat(String(anotado).replace(',', '.'));
+  if (!isFinite(x)) return { clase: 'medida', et: 'Anotada' };
+
+  if (x >= b.min && x <= b.max) return { clase: 'ok', et: 'Dentro de rango' };
+
+  var centro = (b.min + b.max) / 2;
+  var decadas = Math.abs(Math.log10(Math.max(Math.abs(x), 1e-9) / centro));
+
+  /* Tres décadas justas = confundir ohmios con kiloohmios. Error de escala,
+     no de criterio: sabe qué mide, pero no ha leído bien el instrumento. */
+  if (Math.abs(decadas - 3) <= 0.4) return { clase: 'escala', et: 'Escala o unidad equivocada',
+    nota: 'Ese número encaja si cambias Ω por kΩ. Mira la escala del polímetro.' };
+
+  /* Dos décadas o más: no está midiendo lo que cree. */
+  if (decadas >= 2) return { clase: 'concepto', et: 'Orden de magnitud equivocado',
+    nota: 'Te separan ' + decadas.toFixed(1) + ' décadas del valor esperado. Eso no es ese componente.' };
+
+  /* Mismo orden, fuera de banda: la medida está bien hecha y el componente mal. */
+  return { clase: 'fuera', et: 'Fuera de especificación',
+    nota: 'El orden es correcto, así que la medida está bien hecha: el que está mal es el componente. Esto puede ser el hallazgo.' };
+}
+
+</script>
+<script>
+var estado = { contacto:'off', conector:true };
+var inst   = { funcion:'off', bornaRoja:'VΩ' };
+var sel    = { A:null, B:null };
+var averia = 'ninguna';
+var ultima = null;
+var nFila  = 0;
+
+document.getElementById('veh').textContent =
+  VEHICULO.marca+' '+VEHICULO.modelo+' · '+VEHICULO.sistema+' · esquema '+VEHICULO.esquema;
+
+/* ---------- esquema ---------- */
+function pin(id,x,y,et){
+  var c = sel.A===id?'A':(sel.B===id?'B':'');
+  return '<g><circle class="pin '+c+'" data-pin="'+id+'" cx="'+x+'" cy="'+y+'" r="8"></circle>'
+       + '<text class="etp" x="'+x+'" y="'+(y-13)+'">'+et+'</text></g>';
+}
+function pintarEsquema(){
+  var on = estado.conector;
+  var h = '<svg class="esq" viewBox="0 0 620 330">'
+    + '<rect class="caja" x="40" y="20" width="240" height="46" rx="5"/>'
+    + '<text class="et" x="160" y="48">J255 · Climatronic</text>'
+    + pin('J255:T20c/19',100,90,'T20c/19') + pin('J255:T20c/18',220,90,'T20c/18')
+    + '<path class="cbl" d="M100 66 V82"/><path class="cbl" d="M220 66 V82"/>'
+    + '<text class="etp" x="62" y="120">0,35 li</text>'
+    + '<text class="etp" x="258" y="120">0,5 br</text>'
+    + '<path class="cbl" d="M100 98 V145"/><path class="cbl" d="M220 98 V145"/>'
+    + '<g class="conector '+(on?'':'off')+'" data-con="T4t">'
+    +   '<rect class="hit" x="56" y="138" width="208" height="42" rx="8"/>'
+    +   '<rect x="72" y="145" width="56" height="26" rx="4"/>'
+    +   '<rect x="192" y="145" width="56" height="26" rx="4"/>'
+    +   '<text class="etp" x="100" y="162">T4t/3</text><text class="etp" x="220" y="162">T4t/4</text>'
+    + '</g>'
+    + pin('T4t/3',100,186,'') + pin('T4t/4',220,186,'')
+    + '<path class="cbl'+(on?'':' off')+'" d="M100 194 V245"/>'
+    + '<path class="cbl'+(on?'':' off')+'" d="M220 194 V245"/>'
+    + '<text class="etp" x="58" y="222">1,0 gn/sw</text>'
+    + '<text class="etp" x="264" y="222">1,0 br/sw</text>'
+    + pin('N280:2',100,252,'2') + pin('N280:1',220,252,'1')
+    + '<rect class="caja" x="60" y="268" width="200" height="44" rx="5"/>'
+    + '<text class="et" x="160" y="295">N280 · Válvula reguladora</text>'
+    + '<text class="etp" x="470" y="40">Conector de 4 vías,</text>'
+    + '<text class="etp" x="470" y="54">cerca del motor de arranque</text>'
+    + '<text class="etp" x="470" y="80">'+(on?'CONECTADO':'DESCONECTADO')+'</text>'
+    + '</svg>';
+  document.getElementById('esquema').innerHTML = h;
+  document.getElementById('estConector').innerHTML =
+    'Conector T4t: <strong>'+(on?'conectado':'desconectado')+'</strong>';
+  document.querySelectorAll('[data-pin]').forEach(function(el){
+    el.addEventListener('click',function(){ tocarPin(el.dataset.pin); });
+  });
+  document.querySelector('[data-con]').addEventListener('click',function(){
+    estado.conector = !estado.conector; pintarEsquema(); refrescar();
+  });
+}
+function tocarPin(id){
+  if(sel.A===id){ sel.A=null; }
+  else if(sel.B===id){ sel.B=null; }
+  else if(!sel.A){ sel.A=id; }
+  else if(!sel.B){ sel.B=id; }
+  else { sel.A=id; sel.B=null; }
+  pintarEsquema(); refrescar();
+}
+
+/* ---------- controles ---------- */
+document.querySelectorAll('#llave button').forEach(function(b){
+  b.addEventListener('click',function(){
+    estado.contacto=b.dataset.c;
+    document.querySelectorAll('#llave button').forEach(function(x){x.classList.toggle('on',x===b);});
+    refrescar();
+  });
+});
+document.querySelectorAll('#dial button').forEach(function(b){
+  b.addEventListener('click',function(){
+    inst.funcion=b.dataset.f;
+    document.querySelectorAll('#dial button').forEach(function(x){x.classList.toggle('on',x===b);});
+    refrescar();
+  });
+});
+document.querySelectorAll('#bornas button[data-b]').forEach(function(b){
+  b.addEventListener('click',function(){
+    inst.bornaRoja=b.dataset.b;
+    document.querySelectorAll('#bornas button[data-b]').forEach(function(x){x.classList.toggle('on',x===b);});
+  });
+});
+var selAv=document.getElementById('averia');
+Object.keys(AVERIAS).forEach(function(k){
+  var o=document.createElement('option'); o.value=k; o.textContent=AVERIAS[k].et; selAv.appendChild(o);
+});
+selAv.addEventListener('change',function(){ averia=selAv.value; });
+
+function refrescar(){
+  document.getElementById('btnMedir').disabled =
+    !(sel.A && sel.B && (inst.funcion==='ohm'||inst.funcion==='vdc'||inst.funcion==='amp'));
+}
+
+/* ---------- medir ---------- */
+document.getElementById('btnMedir').addEventListener('click',function(){
+  var r = medir(sel.A, sel.B, inst, estado, averia);
+  ultima = r;
+  document.getElementById('disp').textContent = r.lectura + (r.unidad? ' '+r.unidad : '');
+  var av=document.getElementById('aviso');
+  av.className='aviso v '+(r.veredicto==='medida'?'ok':r.veredicto);
+  av.innerHTML = r.nota ? r.nota : 'Lectura tomada. Anótala en la ficha.';
+  var puedeAnotar = (r.veredicto!=='imposible');
+  document.getElementById('anotar').style.display = puedeAnotar?'block':'none';
+  if(puedeAnotar){
+    document.getElementById('valAnot').value = (r.lectura==='OL'?'OL':r.lectura);
+    document.getElementById('uniAnot').value = r.unidad==='V'?'V':'Ω';
+  }
+});
+
+/* ---------- anotar en la ficha ---------- */
+document.getElementById('btnAnotar').addEventListener('click',function(){
+  if(!ultima) return;
+  var val=document.getElementById('valAnot').value.trim();
+  var uni=document.getElementById('uniAnot').value;
+  var esOhm = inst.funcion==='ohm';
+  var prescrito = esOhm ? bandaComponente() : ALIMENTACION;
+  var x = parseFloat(val.replace(',','.'));
+  if(uni==='kΩ' && isFinite(x)) x = x*1000;
+  if(uni==='mV' && isFinite(x)) x = x/1000;
+  var j = isFinite(x) ? juzgar(x, prescrito) : {clase:'medida',et:'Anotada'};
+  if(ultima.veredicto==='invalida') j={clase:'concepto',et:'Medida no válida',
+     nota:'La lectura no vale por cómo se ha tomado, aunque el número lo parezca.'};
+  nFila++;
+  var t=document.getElementById('ficha');
+  var tr=t.insertRow(-1); tr.className=j.clase;
+  tr.innerHTML='<td>'+nFila+'</td>'
+    +'<td>'+(esOhm?'Ω':(inst.funcion==='vdc'?'V⎓':'A'))+'</td>'
+    +'<td>'+NODOS[sel.A].et+'</td><td>'+NODOS[sel.B].et+'</td>'
+    +'<td>'+(estado.conector?'ON':'OFF')+'</td>'
+    +'<td>'+({off:'Sin contacto',on:'Contacto',motor:'Motor ON'})[estado.contacto]+'</td>'
+    +'<td>'+prescritoTxt(prescrito)+'</td>'
+    +'<td>'+val+' '+uni+'</td>'
+    +'<td class="vd '+j.clase+'">'+j.et+'</td>';
+  document.getElementById('fvacio').style.display='none';
+  if(j.nota){ var av=document.getElementById('aviso');
+    av.className='aviso v '+(j.clase==='ok'?'ok':(j.clase==='fuera'?'invalida':'imposible'));
+    av.innerHTML=j.nota; }
+  document.getElementById('anotar').style.display='none';
+});
+
+function bandaComponente(){
+  var t=TRAMOS.filter(function(x){return x.componente==='N280';})[0];
+  return t? t.r : null;
+}
+function prescritoTxt(p){
+  if(!p||p.min===undefined) return '—';
+  return p.min+'–'+p.max+' '+p.unidad+' <span class="origen">'+p.origen+'</span>';
+}
+
+pintarEsquema(); refrescar();
+</script>
+</body>
+</html>
