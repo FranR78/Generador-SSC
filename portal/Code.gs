@@ -177,7 +177,12 @@ function comprobarConfig() {
   // --- La puerta de datos ---
   var url = p.getProperty('DATOS_URL');
   if (!url) {
-    mal('DATOS_URL sin poner EN ESTE PROYECTO (el del portal, no el de Datos)');
+    // Enseña los NOMBRES que hay puestos (nunca los valores): así un error de
+    // tecleo como DATO_URL en vez de DATOS_URL salta a la vista.
+    var hay = Object.keys(p.getProperties());
+    mal('DATOS_URL sin poner EN ESTE PROYECTO (el del portal, no el de Datos).'
+        + ' Propiedades que sí hay aquí: ' + (hay.length ? hay.join(', ') : 'ninguna')
+        + '. Revisa que esté escrita EXACTAMENTE DATOS_URL.');
   } else if (url.indexOf('/exec') < 0) {
     mal('DATOS_URL no acaba en /exec: has copiado la URL equivocada');
   } else {
