@@ -35,7 +35,10 @@
     }
     nav button.activo { background: #fff; color: var(--azul-osc); opacity: 1; }
 
-    main { max-width: 900px; margin: 0 auto; padding: 12px; }
+    /* 900px se quedaba corto en pantalla grande y, de paso, impedía que el
+       simulador llegara nunca a sus dos columnas (su corte está en 900). */
+    main { max-width: 1280px; margin: 0 auto; padding: 16px 20px; }
+    @media (max-width: 700px) { main { padding: 12px; } }
     section[hidden] { display: none; }
     .panel { background: #fff; border: 1px solid var(--borde); border-radius: 12px; padding: 14px; margin-bottom: 12px; }
     .panel h2 { font-size: 15px; margin: 0 0 10px; color: var(--azul-osc); }
