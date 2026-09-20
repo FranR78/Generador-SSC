@@ -35,13 +35,20 @@ function db_call_(op, args) {
   };
 
   var resp = UrlFetchApp.fetch(url, opciones);
-  // Los webapp responden con un 302 a googleusercontent; al seguirlo hay que
-  // reenviar la cabecera a mano (UrlFetchApp no la arrastra en el redirect).
+  /* Los webapp responden con un 302 a googleusercontent. Hay que seguirlo a
+     mano porque UrlFetchApp no arrastra la cabecera Authorization, PERO el
+     destino del salto solo admite GET: reenviarlo como POST devuelve 405.
+     Se sigue con GET y sin cuerpo, conservando solo la cabecera. */
   var saltos = 0;
   while (resp.getResponseCode() >= 300 && resp.getResponseCode() < 400 && saltos++ < 3) {
     var destino = resp.getAllHeaders()['Location'] || resp.getAllHeaders()['location'];
     if (!destino) break;
-    resp = UrlFetchApp.fetch(destino, opciones);
+    resp = UrlFetchApp.fetch(destino, {
+      method: 'get',
+      headers: opciones.headers,
+      muteHttpExceptions: true,
+      followRedirects: false
+    });
   }
 
   if (resp.getResponseCode() !== 200) {
