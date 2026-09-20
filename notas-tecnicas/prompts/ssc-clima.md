@@ -58,16 +58,19 @@ Cómo lo hace. La física de por medio, al nivel del alumnado.
 **3. CARACTERÍSTICAS**
 Tipo, materiales, conexiones, número de vías, rango de medida.
 
-**4. VALORES DE TRABAJO**
+**4. FLUIDOS Y NORMATIVA**
+Qué refrigerante y qué aceite admite, sus propiedades, incompatibilidades y la normativa de manejo y almacenamiento que le aplica. Solo si la fuente habla de ello para este elemento.
+
+**5. VALORES DE TRABAJO**
 Los valores numéricos, cada uno con las condiciones en que es válido.
 
-**5. ANOMALÍAS FRECUENTES**
+**6. ANOMALÍAS FRECUENTES**
 Qué se le estropea y por qué.
 
-**6. COMPORTAMIENTO EN AVERÍA**
+**7. COMPORTAMIENTO EN AVERÍA**
 Qué nota el conductor y qué hace el sistema cuando este elemento falla.
 
-**7. CÓMO COMPROBARLO**
+**8. CÓMO COMPROBARLO**
 La comprobación concreta: qué se mide, con qué, entre qué bornes o pines, en qué condiciones y qué debe salir.
 ```
 
@@ -91,13 +94,16 @@ Herramienta, aparatos de medida y consumibles.
 **5. DESARROLLO**
 Los pasos, en lista numerada y en orden.
 
-**6. VALORES DE REFERENCIA**
+**6. CARGA, RECUPERACIÓN Y FUGAS**
+Cantidad de refrigerante y de lubricante, uso de la estación de carga, recuperación, y colorante para detectar fugas, si el procedimiento lo trata.
+
+**7. VALORES DE REFERENCIA**
 Los valores que hay que obtener, con sus condiciones y tolerancias.
 
-**7. INTERPRETACIÓN Y ERRORES FRECUENTES**
+**8. INTERPRETACIÓN Y ERRORES FRECUENTES**
 Qué significa cada lectura y en qué se falla normalmente al hacerlo.
 
-**8. VERIFICACIÓN FINAL**
+**9. VERIFICACIÓN FINAL**
 Cómo se comprueba que ha quedado bien.
 ```
 

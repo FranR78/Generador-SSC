@@ -1,120 +1,206 @@
-# Currículo del módulo SSC — Sistemas de Seguridad y Confortabilidad
+# Currículo oficial del módulo. Los RA y criterios los genera
+# generador/importar_curriculo.py desde el CSV de Séneca y NO se editan
+# a mano: se reimporta el CSV. 'apartados_comunes' sí es tuyo, y la
+# reimportación lo respeta.
 #
-# Esto es el nivel MÓDULO: lo que vale para todas sus unidades didácticas.
-# Lo de cada unidad va en unidades/ssc-<unidad>.yml.
-#
-# ATENCIÓN: la redacción literal de los criterios hay que copiarla de la orden.
-# Lo que está marcado PENDIENTE está sin rellenar a propósito: prefiero dejarlo
-# vacío a poner una redacción inventada que luego acabe en una programación.
-# Los que sí están puestos son los que confirmaste tú.
+# 'criterios' es una lista porque un apartado puede servir a varios:
+# "Cómo comprobarlo" cubre de verdad el 2d (elegir el equipo), el 2e
+# (conectarlo en los puntos correctos) y el 2g (comparar con lo
+# estipulado). Forzarlo a uno solo sería falsear la cobertura.
 
 modulo: ssc
 nombre: Sistemas de Seguridad y Confortabilidad
-
-# ---------------------------------------------------------------------------
-# Apartados COMUNES: los lleva toda nota de este módulo, sea de clima, de
-# airbag o de infotenimiento, y siempre van al mismo criterio. Por eso están
-# aquí y no repetidos en cada unidad: si mañana cambia la redacción de RA1a,
-# se toca este archivo y ya.
-# ---------------------------------------------------------------------------
-
 apartados_comunes:
   elemento:
-    - apartado: Misión
-      ra: 1
-      criterio: a
-      obligatorio: sí
-      pide: "Para qué sirve, en dos o tres frases."
-    - apartado: Principio de funcionamiento
-      ra: 1
-      criterio: b
-      obligatorio: sí
-      pide: "Cómo lo hace. La física de por medio, al nivel del alumnado."
-    - apartado: Características
-      ra: 1
-      criterio: b
-      obligatorio: sí
-      pide: "Tipo, materiales, conexiones, número de vías, rango de medida."
-    - apartado: Valores de trabajo
-      ra: 3
-      criterio: PENDIENTE
-      pide: "Los valores numéricos, cada uno con las condiciones en que es válido."
-    - apartado: Anomalías frecuentes
-      ra: 3
-      criterio: PENDIENTE
-      pide: "Qué se le estropea y por qué."
-    - apartado: Comportamiento en avería
-      ra: 3
-      criterio: PENDIENTE
-      obligatorio: sí
-      pide: "Qué nota el conductor y qué hace el sistema cuando este elemento falla."
-    - apartado: Cómo comprobarlo
-      ra: 3
-      criterio: PENDIENTE
-      obligatorio: sí
-      pide: "La comprobación concreta: qué se mide, con qué, entre qué bornes o pines, en qué condiciones y qué debe salir."
-
+  - apartado: Misión
+    criterios:
+    - 1a
+    pide: Para qué sirve, en dos o tres frases.
+    obligatorio: true
+  - apartado: Principio de funcionamiento
+    criterios:
+    - 1b
+    pide: Cómo lo hace. La física de por medio, al nivel del alumnado.
+    obligatorio: true
+  - apartado: Características
+    criterios:
+    - 1b
+    pide: Tipo, materiales, conexiones, número de vías, rango de medida.
+    obligatorio: true
+  - apartado: Valores de trabajo
+    criterios:
+    - 1g
+    pide: Los valores numéricos, cada uno con las condiciones en que es válido.
+  - apartado: Anomalías frecuentes
+    criterios:
+    - 2i
+    pide: Qué se le estropea y por qué.
+  - apartado: Comportamiento en avería
+    criterios:
+    - 2a
+    pide: Qué nota el conductor y qué hace el sistema cuando este elemento falla.
+    obligatorio: true
+  - apartado: Cómo comprobarlo
+    criterios:
+    - 2d
+    - 2e
+    - 2g
+    pide: 'La comprobación concreta: qué se mide, con qué, entre qué bornes o pines, en qué condiciones
+      y qué debe salir.'
+    obligatorio: true
   proceso:
-    - apartado: Objeto y alcance
-      ra: 1
-      criterio: a
-      obligatorio: sí
-      pide: "Qué resuelve este procedimiento y hasta dónde llega."
-    - apartado: Fundamento
-      ra: 1
-      criterio: b
-      obligatorio: sí
-      pide: "Por qué funciona, la física o la lógica de por medio."
-    - apartado: Condiciones previas
-      ra: 3
-      criterio: PENDIENTE
-      pide: "Qué tiene que cumplirse antes de empezar: estado del vehículo, temperatura, seguridad."
-    - apartado: Equipo y material
-      ra: 3
-      criterio: PENDIENTE
-      pide: "Herramienta, aparatos de medida y consumibles."
-    - apartado: Desarrollo
-      ra: 3
-      criterio: PENDIENTE
-      obligatorio: sí
-      pide: "Los pasos, en lista numerada y en orden."
-    - apartado: Valores de referencia
-      ra: 3
-      criterio: PENDIENTE
-      pide: "Los valores que hay que obtener, con sus condiciones y tolerancias."
-    - apartado: Interpretación y errores frecuentes
-      ra: 3
-      criterio: PENDIENTE
-      pide: "Qué significa cada lectura y en qué se falla normalmente al hacerlo."
-    - apartado: Verificación final
-      ra: 3
-      criterio: PENDIENTE
-      obligatorio: sí
-      pide: "Cómo se comprueba que ha quedado bien."
-
-# Apartados que no van a criterio: son de servicio, no de currículo.
+  - apartado: Objeto y alcance
+    criterios:
+    - 1a
+    pide: Qué resuelve este procedimiento y hasta dónde llega.
+    obligatorio: true
+  - apartado: Fundamento
+    criterios:
+    - 1b
+    pide: Por qué funciona, la física o la lógica de por medio.
+    obligatorio: true
+  - apartado: Condiciones previas
+    criterios:
+    - 2j
+    pide: 'Qué tiene que cumplirse antes de empezar: estado del vehículo, temperatura, seguridad.'
+  - apartado: Equipo y material
+    criterios:
+    - 2d
+    pide: Herramienta, aparatos de medida y consumibles.
+  - apartado: Desarrollo
+    criterios:
+    - 2b
+    pide: Los pasos, en lista numerada y en orden.
+    obligatorio: true
+  - apartado: Valores de referencia
+    criterios:
+    - 1g
+    - 2g
+    pide: Los valores que hay que obtener, con sus condiciones y tolerancias.
+  - apartado: Interpretación y errores frecuentes
+    criterios:
+    - 2g
+    - 2i
+    pide: Qué significa cada lectura y en qué se falla normalmente al hacerlo.
+  - apartado: Verificación final
+    criterios:
+    - 2h
+    pide: Cómo se comprueba que ha quedado bien.
+    obligatorio: true
 apartados_sin_criterio:
-  - Imágenes requeridas
-  - Advertencias
-  - Discrepancias
-
-# ---------------------------------------------------------------------------
-# Los RA y sus criterios, tal cual los redacta la orden.
-# ---------------------------------------------------------------------------
-
+- Imágenes requeridas
+- Advertencias
+- Discrepancias
 resultados:
   1:
-    enunciado: PENDIENTE — copiar de la orden
+    enunciado: "Caracteriza la funcionalidad y constitución de los elementos que conforman los sistemas\
+      \ de seguridad y con\x02fortabilidad, describiendo su función en el conjunto al que pertenece."
     criterios:
-      a: Identifica los elementos que componen los sistemas de seguridad y confortabilidad del vehículo.
-      b: Describe las características y los principios de funcionamiento de esos elementos.
-      # c, d, e… PENDIENTE
+      a: Se han identificado los elementos que componen los sistemas de seguridad y confortabilidad.
+      b: Se ha identificado el funcionamiento de los sistemas de seguridad y confortabilidad según sus
+        características.
+      c: "Se ha relacionado el uso de los fluidos utilizados en los sistemas de aire acondicionado y climatización\
+        \ con sus pro\x02piedades."
+      d: Se han seleccionado las normas de utilización de los fluidos de aire acondicionado y climatización.
+      e: Se han seleccionado las normas que hay que aplicar en el manejo, almacenamiento y seguridad de
+        los equipos con dispositivos pirotécnicos.
+      f: Se han realizado los esquemas de instalación de los sistemas de audiovisuales.
+      g: Se han relacionado los parámetros de funcionamiento con los distintos sistemas.
+      h: Se ha descrito el procedimiento que hay que utilizar en la recarga de datos y parámetros de funcionamiento
+        de las centrales electrónicas.
   2:
-    enunciado: PENDIENTE — copiar de la orden
-    criterios: {}
+    enunciado: "Localiza averías en los sistemas de seguridad y confor\x02tabilidad relacionando los síntomas\
+      \ y efectos con las causas que las producen."
+    criterios:
+      a: Se ha identificado el elemento o sistema que presenta la disfunción.
+      b: "Se ha realizado un diagrama del proceso de diagnós\x02tico de la avería."
+      c: Se ha seleccionado la documentación técnica y se ha relacionado la simbología y los esquemas
+        con los sistemas y elementos que hay que mantener.
+      d: Se ha seleccionado el equipo de medida o control, efectuando la puesta en servicio del aparato.
+      e: "Se ha efectuado la conexión del equipo en los puntos de medida correctos realizando la toma\
+        \ de parámetros nece\x02sarios."
+      f: "Se ha extraído la información de las unidades de ges\x02tión electrónica."
+      g: "Se han comparado los valores obtenidos en las com\x02probaciones con los estipulados, determinando\
+        \ el elemento a sustituir o reparar."
+      h: Se ha comprobado que no existen ruidos anómalos, tomas de aire o pérdidas de fluido.
+      i: Se han determinado las causas que han provocado la avería.
+      j: Se ha planificado de forma metódica la realización de las actividades en previsión de posibles
+        dificultades.
   3:
-    enunciado: PENDIENTE — copiar de la orden
-    criterios: {}
+    enunciado: "Mantiene los sistemas de control de la temperatura del habitáculo, analizando y aplicando\
+      \ procesos de trabajo esta\x02blecidos."
+    criterios:
+      a: Se han interpretado, en la documentación técnica, los parámetros de los sistemas de calefacción,
+        aire acondicionado y climatización.
+      b: Se ha realizado un esquema de secuenciación lógica de las operaciones a realizar.
+      c: Se han desmontado y montado componentes de los sistemas de calefacción, aire acondicionado y
+        climatización.
+      d: Se han regulado los parámetros de funcionamiento de estos sistemas.
+      e: "Se ha determinado la cantidad de refrigerante y lubri\x02cante necesarias para recargar el circuito."
+      f: "Se ha realizado la recuperación y recarga del fluido re\x02frigerante utilizando la estación\
+        \ de carga."
+      g: "Se ha añadido colorante en la recarga de fluido refrige\x02rante, para detectar fugas."
+      h: Se han verificado las presiones de trabajo así como la temperatura de salida del aire.
   4:
-    enunciado: PENDIENTE — mantenimiento de dispositivos pirotécnicos
-    criterios: {}
+    enunciado: "Mantiene las instalaciones y realiza el montaje de equi\x02pos audiovisuales, de comunicación\
+      \ y de confort, describiendo las técnicas de instalación y montaje."
+    criterios:
+      a: Se han localizado los componentes de los sistemas audiovisuales, de comunicación y de confort
+        en un vehículo, utilizando documentación del fabricante.
+      b: "Se ha comprobado la funcionalidad de las instalacio\x02nes de los sistemas."
+      c: Se ha seleccionado e interpretado la documentación técnica necesaria para la instalación de nuevos
+        equipos en el vehículo.
+      d: "Se ha efectuado un esquema previo de montaje de ins\x02talación del nuevo equipo."
+      e: "Se han seleccionado los elementos del equipo a insta\x02lar y se han calculado las secciones\
+        \ de los conductores."
+      f: Se ha realizado la recarga de parámetros y datos.
+      g: "Se ha realizado el montaje de los distintos componen\x02tes del sistema."
+      h: Se ha verificado su funcionamiento utilizando equipos de comprobación.
+      i: Se ha observado una actitud ordenada y metódica en la realización de las actividades.
+  5:
+    enunciado: Mantiene los sistemas de seguridad de las personas y del propio vehículo, interpretando
+      y aplicando procedimientos de trabajo establecidos.
+    criterios:
+      a: Se han localizado en un vehículo los elementos que componen los sistemas de seguridad.
+      b: Se ha interpretado el esquema de funcionamiento de los sistemas de seguridad.
+      c: "Se ha desmontado, verificado y montado los compo\x02nentes de los sistemas de seguridad."
+      d: Se han leído y borrado los códigos de avería de airbag y pretensor de cinturón de seguridad con
+        equipo de diagnosis.
+      e: Se ha determinado el grado de protección de una alarma observando sus características técnicas.
+      f: Se ha instalado un sistema de alarma en un vehículo realizando previamente un esquema con la
+        ubicación de los componentes y su interconexión eléctrica.
+      g: Se ha comprobado la interrelación entre los distintos sistemas.
+      h: Se han reprogramado y codificado los componentes de los sistemas de seguridad.
+      i: Se ha realizado el ajuste de parámetros y verificado el correcto funcionamiento.
+  6:
+    enunciado: Sustituye lunas y elementos auxiliares de la carrocería describiendo los procedimientos
+      de sustitución y montaje.
+    criterios:
+      a: "Se han descrito distintos tipos de carrocería y su cons\x02titución general."
+      b: "Se han desmontado y montado guarnecidos y elemen\x02tos auxiliares de puertas utilizando manuales\
+        \ de taller y docu\x02mentación técnica."
+      c: Se ha desmontado, verificado y montado el conjunto de cerradura de un vehículo.
+      d: Se ha ajustado el anclaje de cierre de la puerta.
+      e: Se han clasificado los tipos de lunas relacionándolas con su constitución y montaje.
+      f: Se han identificado las lunas por su simbología grabada.
+      g: Se han seleccionado las herramientas adecuadas para la extracción y montaje de una luna según
+        sus características.
+      h: "Se ha procedido a la extracción y montaje de una luna cal\x02zada y otra pegada, empleando los\
+        \ procedimientos establecidos."
+      i: Se ha observado una actitud ordenada y metódica en la realización de las actividades.
+  7:
+    enunciado: Aplica las normas de prevención de riesgos laborales y de protección ambiental, identificando
+      los riesgos asociados y las medidas y equipos para prevenirlos.
+    criterios:
+      a: "Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de materiales,\
+        \ herramientas, úti\x02les y máquinas del área de electromecánica de un taller."
+      b: "Se han descrito las medidas de seguridad y de protec\x02ción personal y colectiva que se deben\
+        \ adoptar en la ejecución de las operaciones del área de electromecánica."
+      c: Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales,
+        herramientas, máquinas y equipos de trabajo empleados en los procesos de electromecánica del vehículo.
+      d: Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención
+        de riesgos.
+      e: "Se han clasificado los residuos generados para su reti\x02rada selectiva."
+      f: "Se ha cumplido la normativa de prevención de riesgos la\x02borales y de protección ambiental\
+        \ en las operaciones realizadas."
+      g: Se han aplicado las normas de seguridad en el manejo y almacenamiento de los sistemas pirotécnicos.

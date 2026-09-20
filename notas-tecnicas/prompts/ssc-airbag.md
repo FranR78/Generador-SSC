@@ -70,6 +70,9 @@ La comprobación concreta: qué se mide, con qué, entre qué bornes o pines, en
 
 **8. MANIPULACIÓN Y SEGURIDAD**
 Tiempo de espera tras cortar la batería antes de tocar nada, orden de desconexión, cómo se transporta y se almacena el módulo, hacia dónde se deja apoyado, qué está prohibido medir con el polímetro, y qué hacer con una unidad disparada o caducada.
+
+**9. DIAGNOSIS Y BORRADO DE CÓDIGOS**
+Cómo se leen y se borran los códigos de avería de airbag y pretensor con el equipo de diagnosis, y qué hace falta para que el testigo se apague.
 ```
 
 ## Plantilla de NOTA DE PROCESO

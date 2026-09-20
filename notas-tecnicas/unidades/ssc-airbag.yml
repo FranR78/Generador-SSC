@@ -12,14 +12,17 @@ cuadernos:
   - nombre: airbag-2-manipulacion
     contenido: desactivación, desmontaje, transporte, almacenamiento y achatarrado
 
-# Lo que clima no tiene y esta unidad sí: es material pirotécnico, y el RA4
-# va justo de eso. No es un apartado más: es el que puede evitar un disparo
-# accidental en el taller del centro.
+# Lo que clima no tiene y esta unidad sí: es material pirotécnico. No es un
+# apartado más: es el que puede evitar un disparo accidental en el taller.
+#
+# Va al 1e ("normas que hay que aplicar en el manejo, almacenamiento y
+# seguridad de los equipos con dispositivos pirotécnicos") y al 7g ("normas de
+# seguridad en el manejo y almacenamiento de los sistemas pirotécnicos"). El
+# currículo lo dice dos veces, en dos RA distintos; el apartado cubre los dos.
 apartados_propios:
   elemento:
     - apartado: Manipulación y seguridad
-      ra: 4
-      criterio: PENDIENTE
+      criterios: [1e, 7g]
       obligatorio: sí
       despues_de: Cómo comprobarlo
       pide: >-
@@ -27,10 +30,15 @@ apartados_propios:
         desconexión, cómo se transporta y se almacena el módulo, hacia dónde se
         deja apoyado, qué está prohibido medir con el polímetro, y qué hacer con
         una unidad disparada o caducada.
+    - apartado: Diagnosis y borrado de códigos
+      criterios: [5d]
+      despues_de: Manipulación y seguridad
+      pide: >-
+        Cómo se leen y se borran los códigos de avería de airbag y pretensor con
+        el equipo de diagnosis, y qué hace falta para que el testigo se apague.
   proceso:
     - apartado: Manipulación y seguridad
-      ra: 4
-      criterio: PENDIENTE
+      criterios: [1e, 7g]
       obligatorio: sí
       despues_de: Condiciones previas
       pide: >-

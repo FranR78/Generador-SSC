@@ -20,4 +20,23 @@ cuadernos:
   - nombre: clima-4-taller
     contenido: procedimientos de taller, carga, vacío, diagnóstico
 
-apartados_propios: []     # de momento ninguno: todo cae en los comunes
+# Lo propio de clima: los fluidos (1c y 1d) y el mantenimiento del sistema de
+# temperatura del habitáculo (RA3 entero). Los apartados comunes ya cubren
+# misión, funcionamiento y comprobación.
+apartados_propios:
+  elemento:
+    - apartado: Fluidos y normativa
+      criterios: [1c, 1d]
+      despues_de: Características
+      pide: >-
+        Qué refrigerante y qué aceite admite, sus propiedades, incompatibilidades
+        y la normativa de manejo y almacenamiento que le aplica. Solo si la
+        fuente habla de ello para este elemento.
+  proceso:
+    - apartado: Carga, recuperación y fugas
+      criterios: [3e, 3f, 3g]
+      despues_de: Desarrollo
+      pide: >-
+        Cantidad de refrigerante y de lubricante, uso de la estación de carga,
+        recuperación, y colorante para detectar fugas, si el procedimiento lo
+        trata.
