@@ -83,7 +83,23 @@
     .fuente-bloque .pista { font-weight: 400; color: #667; font-size: 12px; }
     .fuente-bloque input[type=search] { width: 100%; box-sizing: border-box; margin-bottom: 6px;
       padding: 6px 8px; border: 1px solid #ccd; border-radius: 6px; font-size: 13px; }
-    .lista { max-height: 260px; overflow-y: auto; border: 1px solid #dde; border-radius: 6px; padding: 6px 8px; }
+    .lista { max-height: 260px; overflow-y: auto; border: 1px solid #dde; border-radius: 6px; padding: 6px 8px;
+      -webkit-overflow-scrolling: touch; }
+    /* El bloque de PDF es un <details> para poder plegarlo en el móvil, donde
+       dos listas con scroll propio apiladas dejan la pregunta fuera de la
+       pantalla. En PC se abre solo. */
+    details.fuente-bloque > summary { cursor: pointer; list-style: none; }
+    details.fuente-bloque > summary::-webkit-details-marker { display: none; }
+    details.fuente-bloque > summary h3 { display: inline-block; }
+    details.fuente-bloque > summary::after { content: ' ▸'; color: var(--azul); font-weight: 700; }
+    details.fuente-bloque[open] > summary::after { content: ' ▾'; }
+
+    @media (max-width: 760px) {
+      /* Sin scroll dentro de scroll: en táctil no se sabe cuál se está
+         moviendo y acaba moviéndose el que no toca. */
+      .lista { max-height: 44vh; }
+      .fuentes-sel { gap: 10px; }
+    }
     .lista .vacio { color: #778; font-size: 13px; padding: 6px 0; }
     .nt-num { color: var(--azul); font-weight: 700; margin-right: 4px; }
     .nt-leida { color: #2e9e5b; margin-left: 4px; }
@@ -331,6 +347,13 @@
         cont.appendChild(p);
       }
     }
+
+    // En PC caben las dos columnas, así que los PDF se ven desde el principio;
+    // en el móvil se dejan plegados para que la pregunta no caiga fuera.
+    (function () {
+      var d = document.getElementById('bloque-pdf');
+      if (d && window.matchMedia('(min-width: 761px)').matches) d.open = true;
+    })();
 
     function cargarNotasFuente() {
       var cont = document.getElementById('lista-nt');

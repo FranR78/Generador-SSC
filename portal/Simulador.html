@@ -12,6 +12,16 @@
   .sim .seg button.on{background:var(--azul,#0a63aa);color:#fff}
   .sim .pista{font-size:.74rem;color:#5a6b78;margin:6px 0 0}
   .sim svg.esq{width:100%;height:auto;background:#fbfdff;border-radius:8px}
+  /* En el móvil, encoger el esquema a 360px lo vuelve ilegible y los bornes
+     imposibles de tocar. Mejor mantenerlo a tamaño y dejar que se arrastre:
+     un esquema eléctrico se lee por partes, como en papel. */
+  @media(max-width:760px){
+    .sim #sim-esquema{overflow-x:auto;-webkit-overflow-scrolling:touch;
+      margin:0 -12px;padding:0 12px}
+    .sim #sim-esquema svg.esq{width:auto;min-width:560px;height:auto}
+    .sim .pista.arrastra{display:block}
+  }
+  .sim .pista.arrastra{display:none}
   .sim .caja{fill:#dfe9f2;stroke:#063f70;stroke-width:2}
   .sim .cbl{stroke:#1a2b38;stroke-width:2.5;fill:none}
   .sim .cbl.off{stroke-dasharray:5 5;stroke:#b0bfcb}
@@ -85,6 +95,8 @@
         <div class="tarjeta">
           <h3>Esquema eléctrico</h3>
           <div id="sim-esquema"></div>
+          <p class="pista arrastra">El esquema es más ancho que la pantalla:
+             arrástralo de lado para ver el resto.</p>
           <p class="pista">Toca un <strong>pin</strong> para la punta roja (A+) y luego la negra (B−).
              Toca el <strong>conector</strong> para conectarlo o desconectarlo.</p>
         </div>
