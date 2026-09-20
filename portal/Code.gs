@@ -153,6 +153,62 @@ function registrarConexion() { return db_conexion_(); }
 function registrarLatido(segundos) { return db_latido_(segundos); }
 
 
+/**
+ * Comprueba que el portal está bien configurado, antes de dar la cara.
+ *
+ * Se ejecuta a mano desde el editor y se mira el registro. No escribe nada, y
+ * no enseña ni la URL de la puerta ni la clave de IA: solo dice si sirven.
+ */
+function comprobarConfig() {
+  var p = PropertiesService.getScriptProperties();
+  var lineas = [];
+  var fallos = 0;
+  function bien(t) { lineas.push('  OK    ' + t); }
+  function mal(t)  { lineas.push('  FALLA ' + t); fallos++; }
+
+  // --- La carpeta de PDF ---
+  var carpeta = p.getProperty(ROOT_FOLDER_PROP) || ROOT_FOLDER_DEFAULT;
+  try {
+    bien('carpeta de PDF: "' + DriveApp.getFolderById(carpeta).getName() + '"');
+  } catch (e) {
+    mal('ROOT_FOLDER_ID: ese ID no abre ninguna carpeta');
+  }
+
+  // --- La puerta de datos ---
+  var url = p.getProperty('DATOS_URL');
+  if (!url) {
+    mal('DATOS_URL sin poner EN ESTE PROYECTO (el del portal, no el de Datos)');
+  } else if (url.indexOf('/exec') < 0) {
+    mal('DATOS_URL no acaba en /exec: has copiado la URL equivocada');
+  } else {
+    bien('DATOS_URL puesta y acaba en /exec');
+    try {
+      var r = db_call_('ping');
+      bien('la puerta responde y te reconoce como ' + (r && r.usuario ? r.usuario : '?'));
+      try {
+        bien(soyProfe() ? 'estás en PROFES: verás el Panel'
+                        : 'NO estás en PROFES: no verás el Panel (añádete en el proyecto Datos)');
+      } catch (e2) { mal('no se ha podido leer la configuración: ' + e2.message); }
+      try {
+        var casos = db_casos_();
+        if (casos && casos.length) bien(casos.length + ' caso(s) del simulador disponibles');
+        else mal('no hay casos activos: ejecuta prepararCasos() en el proyecto Datos');
+      } catch (e3) { mal('los casos no se pueden leer: ' + e3.message); }
+    } catch (e4) {
+      mal('la puerta no responde: ' + e4.message);
+    }
+  }
+
+  // --- La IA (solo si está, sin enseñar la clave) ---
+  bien(p.getProperty(IA_PROMPT_PROP) ? 'prompt de IA personalizado' : 'prompt de IA de fábrica');
+
+  console.log(lineas.join('\n'));
+  console.log('');
+  console.log(fallos ? fallos + ' cosa(s) que arreglar.' : 'Todo listo.');
+  return fallos;
+}
+
+
 /** Casos del simulador disponibles para el alumnado. */
 function listarCasosSimulador() { return db_casos_(); }
 

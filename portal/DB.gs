@@ -19,7 +19,8 @@ var DATOS_URL_PROP = 'DATOS_URL';
  */
 function db_call_(op, args) {
   var url = PropertiesService.getScriptProperties().getProperty(DATOS_URL_PROP);
-  if (!url) throw new Error('Falta configurar DATOS_URL en Propiedades del script.');
+  if (!url) throw new Error('Falta DATOS_URL en las Propiedades del script DEL PORTAL '
+    + '(no en el proyecto Datos). Ejecuta comprobarConfig() en el editor para ver qué falta.');
 
   var idToken = ScriptApp.getIdentityToken();
   if (!idToken) throw new Error('No se pudo obtener tu identidad. Vuelve a autorizar el portal.');
