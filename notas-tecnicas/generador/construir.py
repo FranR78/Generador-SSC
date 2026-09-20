@@ -119,6 +119,11 @@ def cargar_alias():
         return {}
     datos = yaml.safe_load(ruta.read_text(encoding="utf-8")) or {}
 
+    # Parejas ya miradas y descartadas: no vuelven a salir en los avisos.
+    distintos = set()
+    for a, b in (datos.pop("distintos", None) or []):
+        distintos.add(tuple(sorted((slug(str(a)), slug(str(b))))))
+
     alias, de_quien = {}, {}
     for clave, titulos in datos.items():
         clave = slug(str(clave))
@@ -131,10 +136,11 @@ def cargar_alias():
                 )
             alias[s] = clave
             de_quien[s] = clave
-    return alias
+    return alias, distintos
 
 
-ALIAS = None   # se carga una vez, en construir()
+ALIAS = None       # se carga una vez, en cargar()
+DISTINTOS = set()  # parejas que ya se han mirado y no son lo mismo
 
 
 class Nota:
@@ -462,7 +468,9 @@ def posibles_duplicados(notas):
             if a.tipo != b.tipo:
                 continue
             par = tuple(sorted((a.clave, b.clave)))
-            if par in vistas:
+            if par in vistas or par in DISTINTOS:
+                continue
+            if tuple(sorted((slug(a.titulo), slug(b.titulo)))) in DISTINTOS:
                 continue
             ka, kb = clave(a), clave(b)
             if ka and kb and len(ka & kb) >= 2 and len(ka & kb) >= min(len(ka), len(kb)):
@@ -483,8 +491,9 @@ def posibles_duplicados(notas):
 
 
 def cargar():
-    global ALIAS
-    ALIAS = cargar_alias()      # antes de crear ninguna Nota: la usa su __init__
+    global ALIAS, DISTINTOS
+    # Antes de crear ninguna Nota: su __init__ usa ALIAS.
+    ALIAS, DISTINTOS = cargar_alias()
     notas, errores = [], []
     for ruta in sorted(DIR_NOTAS.glob("*.md")):
         try:
