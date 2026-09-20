@@ -1,3 +1,9 @@
+> **El código se ha mudado.** Ahora vive en `datos/Puente.gs`, dentro del
+> proyecto *Datos*, junto con todo lo demás que corre como el profe. Así hay
+> un solo sitio con el token, un solo panel de propiedades y un solo juego de
+> activadores. Este README se queda porque la puesta en marcha del token y de
+> las carpetas de Drive sigue siendo la misma.
+
 # Puente Drive → GitHub (capturas del alumnado)
 
 Drive y GitHub no se hablan solos. Este script es el puente: cada 15 minutos mira

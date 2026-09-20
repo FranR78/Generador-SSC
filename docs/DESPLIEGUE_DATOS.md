@@ -227,3 +227,41 @@ tiene el token, deja el archivo en Drive. El alumno solo ve el resultado.
 
 El corpus entero son **371 KB de texto** frente a los 15 MB que puede pesar un
 solo PDF, así que se puede preguntar contra toda la asignatura de una vez.
+
+---
+
+# De tres proyectos a dos
+
+Había tres proyectos de Apps Script y eso se hace difícil de llevar. Se quedan
+en dos, y la separación que queda es la única que hace falta:
+
+| Proyecto | Corre como | Qué lleva dentro |
+|---|---|---|
+| **Portal** | **el alumno** | La cara: Consultar, Apuntes, Simulador, Manual, Panel |
+| **Datos** | **el profe** | `Datos.gs` (puerta), `Casos.gs`, `Progreso.gs`, `Puente.gs` |
+
+**El portal no se puede juntar con los otros dos**, y no es un capricho: corre
+como el alumno. Si el token de GitHub o la Hoja estuvieran ahí, estarían en sus
+manos. Esa frontera es la que sostiene todo lo demás.
+
+El puente sí, porque también corría como tú. Comprobado: **ni una función ni una
+variable chocan** entre el puente y la puerta.
+
+## Mudanza del puente (una vez)
+
+1. En **Datos**: + → Secuencia de comandos, nombre **`Puente`**, y pega
+   `datos/Puente.gs`.
+2. Copia a *Datos* las **propiedades** que tenía el proyecto del puente:
+   `GITHUB_TOKEN`, `CARPETA_CAPTURAS` y, si las usabas, `CARPETA_FUENTES`,
+   `CARPETA_NOTAS` y `MARCA_PROCESADO`.
+3. En **Datos**, ejecuta **`crearActivador`**. Deja los tres automatismos
+   puestos: capturas cada 15 min, archivado y apuntes una vez al día.
+4. Ejecuta **`puenteNT_comprobar`** y mira que salga todo OK.
+5. **En el proyecto viejo del puente**, borra sus activadores (icono del reloj →
+   los tres puntos de cada uno → Eliminar). Si no, **se ejecutarían las dos
+   copias** y subirían las capturas dos veces.
+6. Cuando lleves unos días y veas que va, borra el proyecto viejo.
+
+> El orden importa: primero se ponen los activadores nuevos y luego se quitan
+> los viejos, no al revés. Entre medias no pasa nada porque el puente no borra:
+> solo mueve, y lo que ya está subido lo reconoce.

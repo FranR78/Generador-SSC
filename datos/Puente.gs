@@ -1,20 +1,25 @@
 /**
- * Puente Drive → GitHub para las capturas de las notas técnicas.
+ * Puente.gs — Drive ⇄ GitHub. Vive dentro del proyecto Datos.
  *
- * El alumnado deja sus fotos en una carpeta de Drive. Este script las sube a
- * nt/imagenes/ del repositorio, que es donde el generador las busca. Drive y
- * GitHub no se hablan solos: esto es ese puente.
+ * Todo lo que corre COMO EL PROFE está en este proyecto: la puerta de datos
+ * (Datos.gs), los casos del simulador (Casos.gs), el progreso (Progreso.gs) y
+ * esto. El portal, que corre como el alumno, queda aparte: es la única
+ * separación que hace falta, y es la que sostiene la seguridad.
  *
- * Se ejecuta con un activador de tiempo (ver crearActivador), no a mano.
+ * Hace tres cosas, todas con activador de tiempo (ver crearActivador):
+ *   · sube a GitHub las capturas que el alumnado deja en Drive
+ *   · aparta los PDF ya procesados
+ *   · trae notas.json de GitHub a Drive, para que el portal lea los apuntes
  *
- * Configuración, en Configuración del proyecto → Propiedades del script:
- *   GITHUB_TOKEN       token de acceso personal con permiso de escritura de
- *                      contenido SOLO sobre este repositorio
- *   CARPETA_CAPTURAS   ID de la carpeta de Drive (lo que va detrás de
- *                      /folders/ en la URL)
+ * Propiedades del script (las mismas que tenía el proyecto suelto):
+ *   GITHUB_TOKEN      token con Contents: Read and write SOLO sobre este repo
+ *   CARPETA_CAPTURAS  carpeta de Drive donde el alumnado deja las fotos
+ *   CARPETA_FUENTES   carpeta con los PDF sin procesar (opcional)
+ *   CARPETA_NOTAS     dónde dejar notas.json (opcional; por defecto, capturas)
+ *   MARCA_PROCESADO   opcional; por defecto PRO
  *
- * El token NO se escribe aquí dentro: el código del proyecto viaja con las
- * copias, las propiedades del script no.
+ * El token NO se escribe aquí dentro: el código viaja con las copias del
+ * proyecto, las propiedades del script no.
  */
 
 const REPO = 'FranR78/Generador-SSC';
