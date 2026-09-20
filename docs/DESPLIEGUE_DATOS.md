@@ -102,3 +102,80 @@ Lo que solo tenía el antiguo se ha traído aquí:
   acceso a la puerta y se ha restaurado como operaciones `conexion` y `latido`.
   Las dos columnas **se crean solas** en la pestaña Actividad la primera vez, así
   que una Hoja ya existente no hay que tocarla a mano.
+
+---
+
+# Puesta al día del proyecto de Apps Script
+
+Orden que hay que respetar: **primero la puerta, luego el portal**. El portal ya
+no abre la Hoja por su cuenta, así que sin la puerta desplegada no arranca.
+
+Los archivos se copian de GitHub: `github.com/FranR78/Generador-SSC`.
+
+## Fase 1 — La puerta de datos (proyecto NUEVO)
+
+1. `script.google.com` → **Nuevo proyecto**. Nombre: *Datos SSC*.
+2. Pega `datos/Datos.gs` en `Código.gs`.
+3. **+ → Secuencia de comandos**, llámalo `Casos`, y pega `datos/Casos.gs`.
+4. ⚙ **Configuración del proyecto → Propiedades del script**:
+
+   | Propiedad | Valor |
+   |---|---|
+   | `PROFES` | tu correo del centro |
+
+   `DB_SHEET_ID` no lo pongas: lo escribe `db_setup()` solo.
+
+5. Ejecuta **`db_setup`** una vez. Crea la Hoja y devuelve su URL en el registro.
+6. Ejecuta **`prepararCasos`** una vez. Deja el caso del León relleno y añade
+   la pestaña *Cómo se rellena*.
+7. **Implementar → Nueva implementación → Aplicación web**:
+
+   | Campo | Valor |
+   |---|---|
+   | Ejecutar como | **Yo** |
+   | Quién tiene acceso | **Cualquier usuario de tu organización** |
+
+8. Copia la URL que acaba en `/exec`. Es lo que necesita el portal.
+
+## Fase 2 — El portal (proyecto que ya tienes)
+
+9. **Borra** `Admin.gs` y `AdminUI.html`. Ya no existen: su panel lo sustituye
+   `Profesor.html`, y si los dejas romperán, porque llaman a funciones de Hoja
+   que `DB.gs` ya no tiene.
+10. **Reemplaza** el contenido de `Code.gs`, `DB.gs`, `Gating.gs`, `IA.gs` y
+    `Portal.html` por el de la carpeta `portal/`.
+11. **Crea dos archivos HTML nuevos** (+ → HTML), con estos nombres exactos:
+    `Profesor` y `Simulador`. Pega dentro `portal/Profesor.html` y
+    `portal/Simulador.html`.
+
+    > Los nombres importan: `Portal.html` los llama con `include('Profesor')` e
+    > `include('Simulador')`.
+
+12. ⚙ **Propiedades del script** → añade:
+
+    | Propiedad | Valor |
+    |---|---|
+    | `DATOS_URL` | la URL `/exec` del paso 8 |
+
+13. **Implementar → Gestionar implementaciones** → lápiz → Versión **Nueva** →
+    **Implementar**. La URL del portal no cambia.
+
+## Comprobar que ha ido bien
+
+- Entra en el portal: deben aparecer las pestañas **Simulador** y **Panel**
+  (esta última solo si tu correo está en `PROFES`).
+- En **Simulador** deben salir los dos casos del León.
+- Abre uno y mide entre los dos pines de N280 con el conector puesto: marca
+  ~10,9 Ω y avisa de que la medida no vale. Desconéctalo y marca ~11 Ω.
+
+## Para más adelante: cerrar el acceso
+
+Dos propiedades **opcionales** de la puerta, que conviene poner cuando esto
+esté en manos del alumnado:
+
+| Propiedad | Valor | Para qué |
+|---|---|---|
+| `DOMINIO` | el dominio del centro | Rechaza cuentas de fuera |
+| `PORTAL_AUD` | el ID de cliente OAuth del portal | Solo acepta tokens del portal, no de otra app |
+
+Si no las pones, esas dos comprobaciones simplemente no se hacen.
