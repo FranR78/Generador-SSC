@@ -44,11 +44,19 @@ def main():
 
     WEB.mkdir(exist_ok=True)
     (WEB / "entrenador-clima.html").write_text(salida, encoding="utf-8")
-    (WEB / "entrenador-clima.txt").write_text(salida, encoding="utf-8")
+
+    # Copia lista para pegar como archivo HTML en el editor de Apps Script.
+    gas = RAIZ / "apps-script"
+    if gas.exists():
+        (gas / "Entrenador.html").write_text(salida, encoding="utf-8")
 
     kb = len(salida.encode("utf-8")) / 1024
     print(f"Generado web/entrenador-clima.html ({kb:.0f} KB), autocontenido.")
-    print("Y web/entrenador-clima.txt para pegar en Google Sites.")
+    print("Y apps-script/Entrenador.html, para servirlo como aplicación web.")
+    print()
+    print("Aviso: el insertador de código de Google Sites NO sirve para esto.")
+    print("Sanea el HTML (se come las tablas) y corta por tamaño. Incrusta la")
+    print("URL de la aplicación web en su lugar: ver apps-script/README.md.")
     return 0
 
 
