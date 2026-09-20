@@ -1,0 +1,139 @@
+# Sube el código a Apps Script y publica una versión nueva de la MISMA
+# implementación, así que la URL pública no cambia nunca.
+#
+# Dos niveles de riesgo, a propósito:
+#   clasp push    → deja el código en el editor (HEAD). No toca la URL. Seguro.
+#   clasp deploy  → actualiza la implementación existente. Eso sí lo ven los
+#                   alumnos, y por eso va con --deploymentId: nunca crea una
+#                   implementación nueva, que dejaría la URL vieja servida por
+#                   código viejo.
+#
+# Sin el secreto CLASPRC_JSON no hace nada y lo dice. Sin el DEPLOYMENT_ID de
+# un proyecto, sube el código pero no publica: la publicación se queda a mano.
+
+name: Desplegar Apps Script
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'portal/**'
+      - 'datos/**'
+      - '.github/workflows/deploy-gas.yml'
+  workflow_dispatch:
+
+# Dos despliegues a la vez sobre el mismo script se pisan.
+concurrency:
+  group: deploy-gas
+  cancel-in-progress: false
+
+jobs:
+  desplegar:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false      # que un proyecto roto no impida desplegar el otro
+      matrix:
+        include:
+          # Los Script ID no son secretos: sin CLASPRC_JSON no abren nada.
+          # Se sacan de: editor → Configuración del proyecto → ID de secuencia.
+          - proyecto: portal
+            script_id: "PON_AQUI_EL_SCRIPT_ID_DEL_PORTAL"
+            secreto_deploy: DEPLOYMENT_ID_PORTAL
+          - proyecto: datos
+            script_id: "PON_AQUI_EL_SCRIPT_ID_DE_DATOS"
+            secreto_deploy: DEPLOYMENT_ID_DATOS
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0        # hace falta para comparar con el commit anterior
+
+      - name: ¿Está puesto el Script ID?
+        id: config
+        run: |
+          if [[ "${{ matrix.script_id }}" == PON_AQUI_* ]]; then
+            echo "::warning::${{ matrix.proyecto }}: falta el Script ID en la matriz de este workflow."
+            echo "seguir=no" >> "$GITHUB_OUTPUT"
+          elif [[ -z "${{ secrets.CLASPRC_JSON }}" ]]; then
+            echo "::warning::Falta el secreto CLASPRC_JSON. No se despliega nada."
+            echo "seguir=no" >> "$GITHUB_OUTPUT"
+          else
+            echo "seguir=si" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: ¿Ha cambiado este proyecto?
+        id: cambios
+        if: steps.config.outputs.seguir == 'si'
+        run: |
+          # A mano (workflow_dispatch) se despliega siempre. En un push, solo
+          # si tocó esta carpeta: cada despliegue gasta una versión, y no se
+          # va a quemar el historial del portal por un cambio en datos.
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "hay=si" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          ANTES="${{ github.event.before }}"
+          if [[ -z "$ANTES" || "$ANTES" == "0000000000000000000000000000000000000000" ]]; then
+            echo "hay=si" >> "$GITHUB_OUTPUT"; exit 0   # rama nueva: sin punto de comparación
+          fi
+          if git diff --name-only "$ANTES" "${{ github.sha }}" \
+              | grep -q "^${{ matrix.proyecto }}/"; then
+            echo "hay=si" >> "$GITHUB_OUTPUT"
+          else
+            echo "${{ matrix.proyecto }}: sin cambios, se omite."
+            echo "hay=no" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-node@v4
+        if: steps.cambios.outputs.hay == 'si'
+        with:
+          node-version: '20'
+
+      - name: Instalar clasp
+        if: steps.cambios.outputs.hay == 'si'
+        # Versión fija: con @latest, un día cambia el comportamiento de deploy
+        # y el fallo aparece en el despliegue, no en un sitio donde se vea.
+        run: npm install -g @google/clasp@2.4.2
+
+      - name: Credenciales
+        if: steps.cambios.outputs.hay == 'si'
+        env:
+          CLASPRC_JSON: ${{ secrets.CLASPRC_JSON }}
+        run: |
+          printf '%s' "$CLASPRC_JSON" > "$HOME/.clasprc.json"
+          chmod 600 "$HOME/.clasprc.json"
+
+      - name: Enlazar la carpeta con el proyecto
+        if: steps.cambios.outputs.hay == 'si'
+        # .clasp.json no se versiona: se genera aquí. Así el repositorio no
+        # lleva dentro a qué proyecto apunta cada carpeta más que en un sitio.
+        run: |
+          cat > "${{ matrix.proyecto }}/.clasp.json" <<JSON
+          { "scriptId": "${{ matrix.script_id }}", "rootDir": "." }
+          JSON
+
+      - name: Subir el código al editor
+        if: steps.cambios.outputs.hay == 'si'
+        working-directory: ${{ matrix.proyecto }}
+        run: clasp push --force
+
+      - name: Publicar versión nueva
+        if: steps.cambios.outputs.hay == 'si'
+        working-directory: ${{ matrix.proyecto }}
+        env:
+          DID: ${{ secrets[matrix.secreto_deploy] }}
+        run: |
+          if [[ -z "$DID" ]]; then
+            echo "::warning::${{ matrix.proyecto }}: sin ${{ matrix.secreto_deploy }}."
+            echo "El código está en el editor, pero hay que publicarlo a mano:"
+            echo "Implementar → Gestionar implementaciones → lápiz → Versión: Nueva."
+            exit 0
+          fi
+          DESC="CI ${{ matrix.proyecto }} ${GITHUB_SHA:0:7} $(date -u +%Y-%m-%d\ %H:%M)"
+          if ! clasp deploy --deploymentId "$DID" --description "$DESC"; then
+            echo "::error::No se pudo publicar. Un ID de implementación es de UN"
+            echo "script concreto: si se copió del otro proyecto, da 'Invalid deployment ID'."
+            echo "Implementaciones reales de este proyecto:"
+            clasp deployments || true
+            exit 1
+          fi
+          echo "Publicado. La URL no ha cambiado."

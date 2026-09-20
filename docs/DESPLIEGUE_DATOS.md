@@ -265,3 +265,78 @@ variable chocan** entre el puente y la puerta.
 > El orden importa: primero se ponen los activadores nuevos y luego se quitan
 > los viejos, no al revés. Entre medias no pasa nada porque el puente no borra:
 > solo mueve, y lo que ya está subido lo reconoce.
+
+---
+
+# Despliegue automático (a partir de ahora)
+
+Desde que esto esté configurado, **no hay que tocar el editor de Apps Script**:
+un push a `main` que cambie `portal/` o `datos/` sube el código y publica una
+versión nueva de la misma implementación. La URL no cambia.
+
+## Puesta en marcha (una sola vez)
+
+**1. Sacar las credenciales de clasp.** En un ordenador, no en el móvil:
+
+```
+npm install -g @google/clasp@2.4.2
+clasp login
+```
+
+Se abre el navegador, entras con la cuenta que es dueña de los proyectos y
+queda un archivo `~/.clasprc.json`. En Windows está en
+`C:\Users\<tu usuario>\.clasprc.json`.
+
+**2. Crear el secreto `CLASPRC_JSON`** en GitHub: *Settings → Secrets and
+variables → Actions → New repository secret*. Nombre exactamente
+`CLASPRC_JSON`, y de valor **el contenido entero** de ese archivo.
+
+> Ese archivo es la llave de tus proyectos. No se pega en un chat, no se sube
+> al repositorio y no se enseña en clase. Si alguna vez se escapa:
+> `clasp logout` y repetir el paso 1, que invalida la anterior.
+
+**3. Poner los dos Script ID** en `.github/workflows/deploy-gas.yml`, donde
+ahora pone `PON_AQUI_...`. Se sacan del editor de cada proyecto:
+*Configuración del proyecto → ID de secuencia*. No son secretos: sin el archivo
+de credenciales no abren nada.
+
+**4. Crear los dos secretos de implementación**, para que además de subir el
+código publique:
+
+| Secreto | De dónde sale |
+|---|---|
+| `DEPLOYMENT_ID_PORTAL` | Portal → Implementar → Gestionar implementaciones → *ID de implementación* |
+| `DEPLOYMENT_ID_DATOS` | lo mismo en Datos SSC |
+
+**Cada ID pertenece a un script concreto.** Si se cruzan, el despliegue falla
+con *Invalid deployment ID*, y el workflow te enseña los IDs reales de ese
+proyecto para que lo corrijas.
+
+## Qué pasa si falta algo
+
+Nada se rompe, y el workflow lo dice en el resumen de la ejecución:
+
+| Falta | Qué hace |
+|---|---|
+| `CLASPRC_JSON` | no despliega nada y avisa |
+| un Script ID en la matriz | omite ese proyecto y avisa |
+| `DEPLOYMENT_ID_*` | sube el código al editor, pero la publicación se queda a mano |
+
+## Lo que conviene saber
+
+- **`clasp push` nunca toca la URL pública.** Deja el código en el editor. Lo
+  que ven los alumnos solo cambia con `clasp deploy`.
+- **Solo se despliega el proyecto que cambió.** Un cambio en `datos/` no gasta
+  una versión del portal. Lanzándolo a mano (*Actions → Desplegar Apps Script →
+  Run workflow*) se despliegan los dos.
+- **`.clasp.json` no está en el repositorio**: lo genera el workflow. Si
+  trabajas en local con clasp, el tuyo se queda solo tuyo.
+- **`.claspignore`**: `portal/previsualizar.py` no es código de Apps Script y
+  está excluido ahí. Cualquier archivo que se añada a esas carpetas y no sea
+  `.gs`, `.html` o `appsscript.json` hay que excluirlo igual.
+
+## El otro workflow: descargar
+
+*Actions → Descargar Apps Script → Run workflow*, con el ID de secuencia y una
+carpeta destino. Baja el proyecto y lo commitea. Sirve sobre todo para los
+scripts ligados a una hoja de cálculo, que no se pueden leer de otra forma.
