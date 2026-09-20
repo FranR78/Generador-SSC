@@ -45,7 +45,18 @@ function db_call_(op, args) {
   }
 
   if (resp.getResponseCode() !== 200) {
-    throw new Error('No se pudo contactar con la base de datos (HTTP ' + resp.getResponseCode() + ').');
+    var cod = resp.getResponseCode();
+    // 405 = ese destino no admite POST. Casi siempre significa que DATOS_URL
+    // apunta al propio portal (que solo tiene doGet) en vez de a la puerta.
+    if (cod === 405) {
+      throw new Error('DATOS_URL apunta a algo que no admite POST, casi seguro al propio '
+        + 'portal. Copia la URL /exec del proyecto Datos, que es el que tiene doPost.');
+    }
+    if (cod === 401 || cod === 403) {
+      throw new Error('La puerta rechaza la llamada (HTTP ' + cod + '). Revisa que se '
+        + 'desplegó con acceso para tu organización y que ejecuta como tú.');
+    }
+    throw new Error('No se pudo contactar con la base de datos (HTTP ' + cod + ').');
   }
 
   var cuerpo;
