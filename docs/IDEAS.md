@@ -14,10 +14,18 @@ sistema le dice *"repasemos lo aprendido"* y le pregunta sobre lo que ha leído
 **en esa sesión**. Su propia IA redacta las preguntas y corrige. Según el
 resultado:
 
+Los tramos son **orientativos y están sin pensar a fondo**. Primero se monta el
+sistema; los porcentajes y qué se recomienda en cada tramo se deciden cuando
+esté funcionando y se vea cómo responde el alumnado. Como punto de partida:
+
 | Resultado | Qué le dice el sistema |
 |---|---|
-| menos del 50 % | vuelve a leer esto, esto y esto (las notas concretas que ha fallado) |
-| 75-80 % o más | dado por bueno |
+| menos del 50 % | vuelve a leerlo todo |
+| 50-70 % | repasa lo que has fallado (las notas concretas, no todas) |
+| 75-90 % | puedes quedarte tranquilo |
+
+Que los tramos se toquen sin tocar el código: **van en propiedades del script**,
+no escritos dentro de las funciones.
 
 **Esto no es una nota y no pesa en ninguna parte.** No califica, no va al
 cuaderno del profesor, no puntúa. Es el alumno comprobando si se ha enterado. En
@@ -67,15 +75,11 @@ hay que racionarlo: preguntar es trabajar.
 1. **Un modelo no es un corrector fiable de sí mismo.** Corrige mejor si se le
    pide que cite el trozo de la nota en el que se apoya para dar por buena o
    mala cada respuesta. Sin eso aprueba de más.
-2. **La franja del 50 al 75 % está sin decidir.** Lo hablado es: por debajo de
-   50 %, releer; por encima de 75-80 %, bueno. En medio, lo razonable es repasar
-   solo lo fallado sin mandarlo a releer la nota entera, pero hay que
-   confirmarlo.
-3. **Nota corta = cuestionario pobre.** Hay notas de tres líneas. Conviene un
+2. **Nota corta = cuestionario pobre.** Hay notas de tres líneas. Conviene un
    mínimo de texto para ofrecer el cuestionario, o saldrán preguntas de relleno.
-4. Enganchar el resultado al *planing* de Inicio: "leída pero no consolidada" es
+3. Enganchar el resultado al *planing* de Inicio: "leída pero no consolidada" es
    un estado distinto de "leída", y es el que debería tirar del siguiente paso.
-5. **Cuándo aparece.** "Antes de cerrar la sesión" no es un momento que el
+4. **Cuándo aparece.** "Antes de cerrar la sesión" no es un momento que el
    navegador sepa: nadie pulsa *salir*, se cierra la pestaña. Habrá que
    dispararlo por otra vía (al volver a Inicio, tras leer la segunda o tercera
    nota, o un aviso que aparezca pasado un rato de lectura).
