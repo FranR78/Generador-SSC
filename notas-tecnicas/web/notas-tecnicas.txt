@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">463 notas · 21/09/2026</p>
+  <p class="sidebar-meta">477 notas · 21/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -265,8 +265,8 @@
     <li><a href="#grp-sensor-de-salida-de-aire">Transmisor de temperatura a la salida del vano reposapiés <span class="menu-cuenta">2 fuentes</span></a></li>
     <li><a href="#grp-sensor-de-refrigerante-del-motor">Conmutador de aviso de temperatura del líquido refrigerante <span class="menu-cuenta">3 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Sensores ambientales</span></li>
-    <li><a href="#grp-sensor-de-calidad-del-aire">Sensor de la calidad del aire <span class="menu-cuenta">5 fuentes</span></a></li>
-    <li><a href="#grp-fotosensor-solar">Fotosensor de radiación solar <span class="menu-cuenta">4 fuentes</span></a></li>
+    <li><a href="#grp-sensor-de-calidad-del-aire">Sensor de la calidad del aire <span class="menu-cuenta">6 fuentes</span></a></li>
+    <li><a href="#grp-fotosensor-solar">Fotosensor de radiación solar <span class="menu-cuenta">5 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Actuadores y mandos</span></li>
     <li><a href="#nt22">NT22 · Servomotor V71</a></li>
     <li><a href="#grp-unidad-de-control-y-mandos">Mandos de control manual y conmutador del ventilador <span class="menu-cuenta">2 fuentes</span></a></li>
@@ -591,6 +591,18 @@
     <li><a href="#nt476">NT476 · Drenajes De Agua De Condensación Del E</a></li>
     <li><a href="#nt477">NT477 · Sensor De Humedad En El Conduc G657</a></li>
     <li><a href="#nt478">NT478 · Cálculo De Humedad Y Control De Recirc</a></li>
+    <li><a href="#nt479">NT479 · Topología Y Arquitectura De Red Del Si</a></li>
+    <li><a href="#nt480">NT480 · Unidad De Control Climatronic J255</a></li>
+    <li><a href="#nt481">NT481 · Unidad De Pantalla Y Mandos De E265</a></li>
+    <li><a href="#nt482">NT482 · Unidad De Control De La Red De J519</a></li>
+    <li><a href="#nt483">NT483 · Interfaz De Diagnosis Para Bus J533</a></li>
+    <li><a href="#nt484">NT484 · Válvula Reguladora Del Compres N280</a></li>
+    <li><a href="#nt485">NT485 · Válvula De Corte Del Refrigera N82</a></li>
+    <li><a href="#nt486">NT486 · Bomba De Recirculación De Refr V50</a></li>
+    <li><a href="#nt488">NT488 · Transmisor De Presión Y Temper G395</a></li>
+    <li><a href="#nt489">NT489 · Sensor De Humedad En El Conduc G657</a></li>
+    <li><a href="#nt491">NT491 · Sensor De Humedad Del Aire G355</a></li>
+    <li><a href="#nt492">NT492 · Unidad De Control Del Turboven J126 / V2</a></li>
   </ul>
 </nav>
 
@@ -5845,10 +5857,10 @@ en el circuito frigorífico.</p>
   </div>
 
   <div class="grupo-componente" id="grp-sensor-de-calidad-del-aire">
-    <div class="grupo-cab"><span class="grupo-nombre">Sensor de la calidad del aire</span><span class="grupo-cuenta">5 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Sensor de la calidad del aire</span><span class="grupo-cuenta">6 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 5 · NT20 · Guía Técnica VAG, págs. 62, 112-113 · Dashboard Sensores VAG, págs. 79</summary>
+      <summary>Variante 1 de 6 · NT20 · Guía Técnica VAG, págs. 62, 112-113 · Dashboard Sensores VAG, págs. 79</summary>
   <section id="nt20" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 20 <span class="fusionado">✦ FUSIONADO — 2 fuentes</span></div>
     <div class="nota-body">
@@ -5946,7 +5958,7 @@ descongelación).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 5 · NT90 · fuente sin especificar</summary>
+      <summary>Variante 2 de 6 · NT90 · fuente sin especificar</summary>
   <section id="nt90" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 90 </div>
     <div class="nota-body">
@@ -5997,7 +6009,7 @@ descongelación).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 5 · NT171 · fuente sin especificar</summary>
+      <summary>Variante 3 de 6 · NT171 · fuente sin especificar</summary>
   <section id="nt171" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 171 </div>
     <div class="nota-body">
@@ -6078,7 +6090,7 @@ descongelación).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 5 · NT307 · fuente sin especificar</summary>
+      <summary>Variante 4 de 6 · NT307 · fuente sin especificar</summary>
   <section id="nt307" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 307 </div>
     <div class="nota-body">
@@ -6149,7 +6161,7 @@ descongelación).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 5 · NT363 · fuente sin especificar</summary>
+      <summary>Variante 5 de 6 · NT363 · fuente sin especificar</summary>
   <section id="nt363" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 363 </div>
     <div class="nota-body">
@@ -6219,13 +6231,47 @@ descongelación).</p>
     </div>
   </section>
     </details>
+    <details class="variante">
+      <summary>Variante 6 de 6 · NT490 · fuente sin especificar</summary>
+  <section id="nt490" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 490 </div>
+    <div class="nota-body">
+      <h1>Sensor De La Calidad Del Aire — <strong>G238</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">C</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">á</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Conducto de admisión de aire fresco</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Detectar la presencia de sustancias contaminantes en el aire exterior para activar de forma automática la recirculación de aire.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Analiza la concentración de gases nocivos en el aire exterior y envía la señal a través del bus LIN a la unidad J519.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Sensor semiconductor de calidad del aire con conexión bus LIN.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Inoperatividad de la función de recirculación automática de aire.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+    </details>
   </div>
 
   <div class="grupo-componente" id="grp-fotosensor-solar">
-    <div class="grupo-cab"><span class="grupo-nombre">Fotosensor de radiación solar</span><span class="grupo-cuenta">4 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Fotosensor de radiación solar</span><span class="grupo-cuenta">5 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 4 · NT21 · Guía Técnica VAG, págs. 50, 107-108 · Manual de Sensores G107-G192, pá</summary>
+      <summary>Variante 1 de 5 · NT21 · Guía Técnica VAG, págs. 50, 107-108 · Manual de Sensores G107-G192, pá</summary>
   <section id="nt21" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 21 <span class="fusionado">✦ FUSIONADO — 2 fuentes</span></div>
     <div class="nota-body">
@@ -6335,7 +6381,7 @@ una sustitución de luna que no se detecta en diagnosis.</div>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 4 · NT84 · fuente sin especificar</summary>
+      <summary>Variante 2 de 5 · NT84 · fuente sin especificar</summary>
   <section id="nt84" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 84 </div>
     <div class="nota-body">
@@ -6381,7 +6427,7 @@ una sustitución de luna que no se detecta en diagnosis.</div>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 4 · NT85 · fuente sin especificar</summary>
+      <summary>Variante 3 de 5 · NT85 · fuente sin especificar</summary>
   <section id="nt85" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 85 </div>
     <div class="nota-body">
@@ -6430,7 +6476,7 @@ una sustitución de luna que no se detecta en diagnosis.</div>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 4 · NT302 · fuente sin especificar</summary>
+      <summary>Variante 4 de 5 · NT302 · fuente sin especificar</summary>
   <section id="nt302" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 302 </div>
     <div class="nota-body">
@@ -6488,6 +6534,40 @@ una sustitución de luna que no se detecta en diagnosis.</div>
       <div class="apartado">
         <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
         <p>Verificar la variación de la corriente en el bloque de valores de medición del equipo OBD tapando y alumbrando el fotosensor con una lámpara.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 5 de 5 · NT487 · fuente sin especificar</summary>
+  <section id="nt487" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 487 </div>
+    <div class="nota-body">
+      <h1>Fotosensor De Radiación Solar — <strong>G107</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">M</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">g</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">C</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Parte superior del salpicadero</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir la radiación solar incidente sobre el vehículo e informar a la unidad Climatronic J255.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Captador óptico que genera una señal eléctrica proporcional a la intensidad de la luz solar recibida, permitiendo compensar el efecto térmico del sol sobre los ocupantes.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Sensor fotoeléctrico conectado como señal de entrada a la unidad J255.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>El sistema no compensa el aumento de temperatura causado por la radiación solar directa.</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
@@ -32631,8 +32711,403 @@ En el compresor Denso 6SEU12 de regulación externa (sin embrague), la UCE contr
     </div>
   </section>
 
+  <section id="nt479" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 479 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Topología Y Arquitectura De Red Del Sistema De Climatización</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Explicar la estructura de la red de comunicación, los buses de datos y la interconexión de las unidades de control, actuadores y sensores del sistema de climatización del Audi A7 (año modelo 2012).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>La arquitectura electrónica del sistema de climatización se basa en la red implementada en el Audi A8 (año modelo 2011). La unidad de control Climatronic J255 actúa como nodo principal del sistema, intercomunicándose con los buses CAN (Convenience CAN, Display and Control CAN), el bus MOST y diversas líneas LIN secundarias para gestionar sensores, actuadores y unidades periféricas.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>La unidad Climatronic J255 se conecta directamente al bus CAN de confort (Convenience CAN bus) y al bus CAN de pantalla y mando (Display and Control CAN bus).  </li>
+<li>A través de la interfaz de diagnosis J533 (Gateway) y la unidad J519, el sistema intercambia información con el bus MOST y los módulos de confort.  </li>
+<li>La unidad J255 controla directamente por bus LIN los servomotores de las trampillas (Flap control motors) y la unidad de pantalla/mando trasera E265.  </li>
+<li>La unidad de control de la red de a bordo J519 gestiona por medio de otra línea LIN los sensores ambientales: sensor de temperatura exterior G17, sensor de presión/temperatura G395, sensor de humedad en la admisión G657, sensor de calidad del aire G238 y sensor de humedad G355.  </li>
+<li>Se integran elementos de ejecución directa como la válvula reguladora del compresor N280, la válvula de corte N82, la bomba V50, el fotosensor de radiación solar G107 y la gestión de calefacción de asientos (SH).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Desconocer la distribución de las líneas LIN: un fallo o cortocircuito en la línea LIN asociada a J519 deja inoperativos múltiples sensores (G17, G395, G657, G238, G355) de forma simultánea.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT479_01</code> Esquema de topología de red con los buses CAN, MOST y líneas LIN del sistema de climatización — Fuente: SSP 484 A7 Info y Clima (arrastrado).pdf, pág. 52</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt480" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 480 </div>
+    <div class="nota-body">
+      <h1>Unidad De Control Climatronic — <strong>J255</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">S</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">7</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">(</span><span class="badge-aplicacion">2</span><span class="badge-aplicacion">0</span><span class="badge-aplicacion">1</span><span class="badge-aplicacion">2</span><span class="badge-aplicacion">)</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">8</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">(</span><span class="badge-aplicacion">2</span><span class="badge-aplicacion">0</span><span class="badge-aplicacion">1</span><span class="badge-aplicacion">1</span><span class="badge-aplicacion">)</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Salpicadero / consola central del vehículo</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Unidad de control principal encargada de procesar las señales de los sensores, gestionar la lógica de confort y gobernar los actuadores del sistema Climatronic.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Se comunica a través del bus CAN de confort (Convenience CAN) y del bus CAN de pantalla y mando. Procesa los datos recibidos y comanda por bus LIN a los servomotores de las trampillas de aire y al cuadro de mandos trasero E265, además de controlar componentes como el regulador del compresor N280.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Módulo de control electrónico integrado con interfaces para bus CAN y bus LIN.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Interrupción o fallo en la regulación automática de la temperatura, caudal y distribución de aire en el habitáculo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Diagnóstico electrónico mediante la lectura de memoria de averías e inspección de la red de buses de datos.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt481" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 481 </div>
+    <div class="nota-body">
+      <h1>Unidad De Pantalla Y Mandos Del Climatizador Trasero — <strong>E265</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">C</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">7</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">/</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">8</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Consola central en las plazas traseras</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Permitir a los ocupantes de las plazas traseras seleccionar la temperatura y los parámetros de confort independientes.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Unidad esclava conectada mediante una línea de bus LIN directamente a la unidad de control principal Climatronic J255. Transmite las órdenes de mando seleccionadas por los usuarios traseros.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Módulo con pantalla de visualización y botones de mando con conexión bus LIN.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Imposibilidad de ajustar o visualizar la regulación del clima en la zona trasera del habitáculo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt482" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 482 </div>
+    <div class="nota-body">
+      <h1>Unidad De Control De La Red De A Bordo — <strong>J519</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">G</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">é</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">b</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Red eléctrica del vehículo</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Gestionar componentes eléctricos de la red de a bordo e interconectar diversos sensores ambientales del climatizador con el bus CAN.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Recibe la información de múltiples sensores (G17, G395, G657, G238, G355) a través de una línea de comunicación por bus LIN y la retransmite a la red CAN de confort.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Unidad de control electrónica provista de interfaz para bus CAN de confort y bus LIN de sensores.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Pérdida de comunicación o lectura errónea de los sensores de calidad de aire, humedad, presión y temperatura exterior.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt483" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 483 </div>
+    <div class="nota-body">
+      <h1>Interfaz De Diagnosis Para Bus De Datos (Gateway) — <strong>J533</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">P</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">b</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">C</span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">N</span><span class="badge-aplicacion">,</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">M</span><span class="badge-aplicacion">O</span><span class="badge-aplicacion">S</span><span class="badge-aplicacion">T</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">g</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">s</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Red de arquitectura electrónica del vehículo</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Asegurar la transferencia de datos y la traducción de protocolos entre los distintos buses de comunicación del vehículo (Convenience CAN, Display/Control CAN, MOST).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Actúa como nodo pasarela (Gateway) coordinando la comunicación bidireccional entre la unidad Climatronic J255, la red de confort y las unidades de infotenamiento.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Unidad electrónica central con conexiones de bus CAN y bus MOST.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Fallos de comunicación intermitentes o totales entre el climatizador, el cuadro de instrumentos J285 y la pantalla MMI J794/J685.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt484" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 484 </div>
+    <div class="nota-body">
+      <h1>Válvula Reguladora Del Compresor De Climatización — <strong>N280</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">R</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">g</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Montada en el compresor de climatización</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Regular la cilindrada del compresor para ajustar la presión y el caudal de fluido refrigerante según la demanda.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Electroválvula accionada directamente por la unidad de control Climatronic J255 para modificar la presión en el cárter interno del compresor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Válvula reguladora de accionamiento eléctrico integrada en el compresor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>El compresor no genera la presión necesaria en el lado de alta o se queda fijo en una capacidad, impidiendo el enfriamiento correcto del habitáculo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt485" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 485 </div>
+    <div class="nota-body">
+      <h1>Válvula De Corte Del Refrigerante — <strong>N82</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">G</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">f</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">g</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">h</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">f</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Circuito de líquido refrigerante del motor / calefacción</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Abrir o interrumpir el paso de líquido refrigerante caliente procedente del motor hacia el circuito de calefacción del habitáculo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Válvula electromagnética comandada por la unidad Climatronic J255 que bloquea el paso de refrigerante cuando no se requiere calefacción o en fase de máxima refrigeración.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Electroválvula de corte para fluido refrigerante de motor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Falta de calefacción en el habitáculo o entrada indebida de calor cuando el sistema está en modo de máxima refrigeración.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt486" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 486 </div>
+    <div class="nota-body">
+      <h1>Bomba De Recirculación De Refrigerante — <strong>V50</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">R</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">f</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">í</span><span class="badge-aplicacion">q</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">f</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">g</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">f</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Circuito de líquido refrigerante del motor</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Garantizar el caudal necesario de líquido refrigerante caliente a través del radiador de calefacción, especialmente a bajas revoluciones del motor o con motor parado.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Bomba de accionamiento eléctrico gobernada por la unidad J255 que impulsa el fluido refrigerante de forma independiente a la bomba mecánica del motor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Electrobomba centrífuga para líquido refrigerante.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Rendimiento insuficiente de la calefacción a ralentí o en retenciones.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt488" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 488 </div>
+    <div class="nota-body">
+      <h1>Transmisor De Presión Y Temperatura Del Aire Acondicionado — <strong>G395</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">V</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">g</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">g</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">f</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">g</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">í</span><span class="badge-aplicacion">f</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Tubería del circuito frigorífico de alta presión</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir continuamente la presión y la temperatura del fluido refrigerante en el circuito de alta presión e informar al sistema de control.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Sensor dual que transmite sus datos de medición a través del bus LIN hacia la unidad de control de la red de a bordo J519.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Captador de presión y temperatura integrado con salida para bus LIN.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Desconexión de seguridad del compresor por falta de señal de presión del circuito.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt489" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 489 </div>
+    <div class="nota-body">
+      <h1>Sensor De Humedad En El Conducto De Admisión De Aire Fresco — <strong>G657</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">M</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">h</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">x</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Conducto de admisión de aire fresco del climatizador</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir la humedad y la temperatura del aire en la toma de aire fresco antes de que ingrese al mueble climatizador.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Capta los valores higrométricos del aire de admisión y transmite los datos por el bus LIN a la unidad J519.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Sensor de humedad y temperatura con electrónica para bus LIN.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Cálculo impreciso de la humedad relativa para la prevención de empañado de cristales.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt491" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 491 </div>
+    <div class="nota-body">
+      <h1>Sensor De Humedad Del Aire — <strong>G355</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">D</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">h</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">h</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">/</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">ñ</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">C</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Interior del habitáculo / zona del parabrisas</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir la humedad en el interior del habitáculo para prevenir el empañado de los cristales.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Transmite la señal de la humedad medida por medio de la línea bus LIN a la unidad J519.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Sensor higrométrico con interfaz bus LIN.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Retardo o fallo en la activación automática de las medidas antihielo/desempañado del parabrisas.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt492" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 492 </div>
+    <div class="nota-body">
+      <h1>Unidad De Control Del Turboventilador Y Turbina De Aire Fresco — <strong>J126 / V2</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">I</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">g</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">h</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">b</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">á</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">o</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Mueble climatizador</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Forzar y regular el caudal de aire impulsado hacia el habitáculo según las órdenes de la unidad Climatronic.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>La unidad de control J126 recibe la señal de mando de la unidad Climatronic y regula mediante una etapa de potencia la velocidad del motor eléctrico del ventilador V2.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Módulo de potencia J126 acoplado a la turbina/soplador eléctrico V2.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Ausencia de flujo de aire o velocidad fija inalterable en los difusores.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    463 notas técnicas · generado el 21/09/2026.
+    477 notas técnicas · generado el 21/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
