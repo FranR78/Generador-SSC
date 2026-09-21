@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-21",
- "total": 354,
+ "total": 380,
  "grupos": [
   "Actuadores y mandos",
   "Circuito frigorífico",
@@ -17212,6 +17212,930 @@
     {
      "titulo": "Imágenes requeridas",
      "texto": "Manómetros de lectura de alta y baja presión para R134a — Fuente: LA CLIMATIZACIÓN.pdf, pág. 158"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.confort-termico-y-acondicionamiento-del-habitaculo",
+   "nt": 370,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "confort-termico-y-acondicionamiento-del-habitaculo",
+   "titulo": "Confort Térmico Y Acondicionamiento Del Habitáculo",
+   "codigo": "",
+   "menu": "Confort Térmico Y Acondicionamiento De",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Explicar el proceso de acondicionamiento del aire en el habitáculo del vehículo para alcanzar el confort térmico mediante la mezcla de aire ambiente y aire soplado. Se aplica en el diseño y análisis del funcionamiento del sistema de climatización automática."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El sistema introduce aire exterior a través de la toma de aire, haciéndolo pasar por el evaporador y el radiador de calefacción a través del conjunto de distribución de trampillas. El aire acondicionado es conducido por los canales y difusores hacia el habitáculo, donde se mezcla con el aire ambiente hasta lograr la temperatura de consigna fijada por el usuario. El tiempo necesario para alcanzar dicha convergencia depende del aislamiento térmico, la conductividad y la temperatura inicial de las paredes del habitáculo y del salpicadero."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El aire exterior entra por la toma de aire e ingresa en el conjunto de distribución de trampillas (conjunto A/C). El aire atraviesa el evaporador (donde pierde calor) y/o el radiador de calefacción (donde absorbe calor) según la posición de las trampillas. El impulsor fuerza la circulación del caudal de aire soplado a través de las canalizaciones del salpicadero hacia los difusores. El aire soplado se impulsa al interior del habitáculo y se mezcla con el aire ambiente interior. El intercambio térmico progresivo con el aire ambiente y las paredes interiores continúa hasta alcanzar la temperatura de consigna."
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Ignorar la influencia de la temperatura inicial del salpicadero y de las paredes del habitáculo: si el vehículo ha estado expuesto al sol o al frío extremo, el tiempo de convergencia térmica será mayor debido a la transferencia de calor de la estructura."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del flujo de aire entre conductos, paredes del habitáculo y salpicadero — Fuente: LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, pág. 1-3"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.tablero-de-mandos-y-pantalla-de-presentacion",
+   "nt": 371,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "tablero-de-mandos-y-pantalla-de-presentacion",
+   "titulo": "Tablero De Mandos Y Pantalla De Presentación",
+   "codigo": "",
+   "menu": "Tablero De Mandos Y Pantalla De Presen",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Interfaz de usuario y control del sistema de climatización automática",
+   "ubicacion": "Salpicadero del vehículo, en la consola central",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Permitir al usuario seleccionar los parámetros de confort deseados (temperatura de consigna, velocidad del ventilador y distribución del aire) y visualizar el estado de funcionamiento del sistema en cada momento."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Actúa como la interfaz de comunicación entre el usuario y la centralita electrónica. Los botones transmiten las órdenes del usuario a la tarjeta electrónica. En modo automático, la propia centralita puede activar o modificar la selección de los botones y reflejar dichos cambios en el display."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Panel provisto de botones/mandos de selección y pantalla gráfica de visualización (display). Montado directamente sobre el frontal que aloja la tarjeta electrónica."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Incapacidad del usuario para introducir las órdenes de consigna o falta de indicación visual del estado del climatizador en el display."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.sonda-de-temperatura-del-habitaculo",
+   "nt": 372,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "sonda-de-temperatura-del-habitaculo",
+   "titulo": "Sonda De Temperatura Del Habitáculo",
+   "codigo": "",
+   "menu": "Sonda De Temperatura Del Habitáculo",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Climatización automática",
+   "ubicacion": "Parte delantera del salpicadero, cerca del limpiaparabrisas, o bien sobre el propio climatizador en el tablero de mandos",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir de forma continua la temperatura instantánea del aire en el interior del habitáculo e informar a la centralita para verificar si se ha alcanzado la temperatura de consigna."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Captador térmico que genera una señal eléctrica proporcional a la temperatura ambiente del habitáculo. Envía esta información como señal de entrada a la tarjeta electrónica para que regule el caudal, la temperatura de mezcla y la distribución de aire."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Sensor de temperatura (sonda) conectado como señal de entrada a la centralita."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "La centralita pierde la referencia de la temperatura real interior, lo que impide regular correctamente el sistema para alcanzar y mantener la temperatura de consigna."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.sonda-de-temperatura-exterior",
+   "nt": 373,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "sonda-de-temperatura-exterior",
+   "titulo": "Sonda De Temperatura Exterior",
+   "codigo": "",
+   "menu": "Sonda De Temperatura Exterior",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Medición de la temperatura atmosférica para el sistema de climatización automática",
+   "ubicacion": "Parte baja del retrovisor derecho (u otras ubicaciones del vehículo)",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Captar la temperatura del aire exterior al vehículo e informar a la centralita electrónica para calcular la regulación de mezcla, caudal y distribución de aire."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Genera una señal de entrada hacia la tarjeta electrónica según la temperatura ambiente exterior. La centralita compara este valor con el de la sonda de aire soplado para determinar la posición correcta de la trampilla de mezcla."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Sonda térmica instalada en el exterior del habitáculo conectada a la centralita."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Cálculo erróneo en el posicionado de la trampilla de mezcla y en la determinación del caudal de aire necesario para acondicionar el habitáculo."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.sonda-de-temperatura-de-aire-soplado",
+   "nt": 374,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "sonda-de-temperatura-de-aire-soplado",
+   "titulo": "Sonda De Temperatura De Aire Soplado",
+   "codigo": "",
+   "menu": "Sonda De Temperatura De Aire Soplado",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Control del aire tratado impulsado hacia el habitáculo",
+   "ubicacion": "Interior del conjunto de distribución de trampillas, colocada en los difusores frontales, conducto de pies o conducto de parabrisas",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la temperatura del aire que sale por los conductos de distribución para verificar que la mezcla térmica de aire sea la adecuada antes de ingresar al habitáculo."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Mide la temperatura del caudal de aire soplado y envía una señal de entrada a la centralita. Junto con la sonda exterior, permite a la tarjeta electrónica determinar si la posición de la trampilla de mezcla, el caudal y la distribución son correctos para converger a la temperatura de consigna."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Sensor térmico. Pueden existir varias sondas distribuidas en diferentes conductos (frontales, pies, parabrisas)."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Ajuste impreciso de la trampilla de mezcla, provocando que el aire salga demasiado caliente o demasiado frío por los difusores."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.conjunto-de-distribucion-de-trampillas-conjunto-a",
+   "nt": 375,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "conjunto-de-distribucion-de-trampillas-conjunto-a",
+   "titulo": "Conjunto De Distribución De Trampillas (Conjunto A",
+   "codigo": "",
+   "menu": "Conjunto De Distribución De Trampillas",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Mueble climatizador de regulación y distribución de aire",
+   "ubicacion": "Interior del salpicadero, enlazando el compartimento motor con el habitáculo",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Alojar los componentes intercambiadores de calor y encauzar, mezclar y distribuir el caudal de aire impulsado hacia las diferentes salidas del habitáculo."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Recibe el aire exterior soplado por el impulsor. Hace pasar el flujo de aire a través del evaporador y/o del radiador de calefacción según la orientación de sus trampillas internas accionadas por actuadores, derivándolo hacia los difusores correspondientes."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Mueble o carcasa que contiene en su interior el evaporador, el radiador de calefacción, el impulsor, los actuadores con sus trampillas, la sonda del evaporador y la sonda de aire soplado."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Fallo en la mezcla o en la distribución del aire hacia las distintas zonas del habitáculo."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.evaporador-7",
+   "nt": 376,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "evaporador",
+   "titulo": "Evaporador",
+   "codigo": "",
+   "menu": "Evaporador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Elemento productor de frío del circuito de climatización",
+   "ubicacion": "Alojado en el interior del conjunto de distribución de trampillas (conjunto A/C)",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Producir frío en el circuito de climatización, absorbiendo el calor del aire exterior que lo atraviesa para enfriarlo antes de que entre al habitáculo."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Intercambiador térmico perteneciente al circuito de frío. El fluido frigorífico circula por su interior absorbiendo la energía térmica del aire impulsado que pasa entre sus aletas, provocando el enfriamiento de dicho aire."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Intercambiador de calor integrado en el conjunto A/C e interconectado por las canalizaciones del circuito de frío."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Formación de hielo en su superficie si trabaja a temperaturas excesivamente bajas."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Falta de producción de aire frío hacia el habitáculo o bloqueo del paso de aire por congelación."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.radiador-de-calefaccion-3",
+   "nt": 377,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "radiador-de-calefaccion",
+   "titulo": "Radiador De Calefacción",
+   "codigo": "",
+   "menu": "Radiador De Calefacción",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Elemento intercambiador de calor del circuito de calefacción",
+   "ubicacion": "Alojado en el interior del conjunto de distribución de trampillas (conjunto A/C)",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Ceder calor al aire entrante desde el exterior utilizando la energía térmica del líquido refrigerante del motor."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Intercambiador de calor perteneciente al circuito de calor. El líquido refrigerante caliente procedente del motor circula por su interior; el aire atraído por el impulsor atraviesa sus aletas, absorbiendo calor antes de ser soplado al habitáculo."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Radiador intercalado en el circuito de refrigeración del motor e integrado dentro del mueble A/C."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Falta de calefacción en el aire soplado al habitáculo."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.impulsor-de-aire-electroventilador-del-habitaculo",
+   "nt": 378,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "impulsor-de-aire-electroventilador-del-habitaculo",
+   "titulo": "Impulsor De Aire (Electroventilador Del Habitáculo)",
+   "codigo": "",
+   "menu": "Impulsor De Aire (Electroventilador De",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Circuito de frío, circuito de calor y conjunto A/C",
+   "ubicacion": "Conjunto de distribución de trampillas",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Garantizar la circulación forzada del caudal de aire exterior a través del conjunto A/C y los conductos hacia el interior del habitáculo."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Ventilador eléctrico accionado por señal de salida de la centralita. Al recibir la orden electrónica, gira a la velocidad requerida para aumentar o disminuir el caudal de aire soplado hacia los difusores."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Soplador / electroventilador accionado eléctricamente por la tarjeta electrónica."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Ausencia o deficiencia en la circulación de aire hacia el habitáculo."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.sonda-del-evaporador-2",
+   "nt": 379,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "sonda-del-evaporador",
+   "titulo": "Sonda Del Evaporador",
+   "codigo": "",
+   "menu": "Sonda Del Evaporador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Protección contra la congelación del evaporador en sistemas de climatización",
+   "ubicacion": "Alojada en la zona más fría del evaporador, dentro del conjunto A/C",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Detectar el riesgo de formación de hielo en el evaporador e informar a la centralita para desacoplar el compresor."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Mide la temperatura en el punto más frío del evaporador y envía una señal de entrada a la tarjeta electrónica. Si la temperatura alcanza el umbral de congelación, la centralita envía una señal al compresor para que corte su funcionamiento (en compresores de cilindrada fija)."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Sonda térmica de temperatura conectada como señal de entrada a la centralita."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Formación de hielo en el evaporador por no cortar el compresor a tiempo, o corte permanente e injustificado del compresor."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.actuadores-de-trampillas",
+   "nt": 380,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "actuadores-de-trampillas",
+   "titulo": "Actuadores De Trampillas",
+   "codigo": "",
+   "menu": "Actuadores De Trampillas",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Movimiento automatizado de las trampillas de mezcla y distribución",
+   "ubicacion": "Montados sobre el conjunto de distribución de trampillas",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Mover mecánicamente cada una de las trampillas del conjunto A/C para regular la mezcla de aire y la distribución hacia los distintos difusores."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Dispositivos electromecánicos que reciben señales de salida de la tarjeta electrónica. Al recibir la corriente de la centralita, el actuador desplaza la trampilla correspondiente a la posición calculada en cada instante."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Actuadores eléctricos asociados individualmente a cada trampilla."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Bloqueo de trampillas en una posición fija, impidiendo modificar la temperatura de mezcla o la zona de salida del aire."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.compresor-de-climatizacion-4",
+   "nt": 381,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "compresor",
+   "titulo": "Compresor De Climatización",
+   "codigo": "",
+   "menu": "Compresor De Climatización",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Circuito de frío de la climatización",
+   "ubicacion": "Compartimento motor, arrastrado por la correa del alternador",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Comprimir y hacer circular el fluido frigorífico por todo el circuito de aire acondicionado."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Es arrastrado mecánicamente por el motor térmico a través de la correa del alternador. Recibe señales de control desde la centralita (que pueden acoplarlo o cortarlo mediante el presostato, la sonda del evaporador, la sonda de refrigerante o el módulo de inyección)."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Órgano de compresión accionado por correa. Puede ser de cilindrada fija o variable."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El fluido frigorífico no circula y el sistema no genera frío."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.bomba-de-liquido-refrigerante",
+   "nt": 382,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "bomba-de-liquido-refrigerante",
+   "titulo": "Bomba De Líquido Refrigerante",
+   "codigo": "",
+   "menu": "Bomba De Líquido Refrigerante",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Circuito de refrigeración del motor y circuito de calor de la climatización",
+   "ubicacion": "Compartimento motor, accionada por la correa del alternador",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Asegurar la circulación continua del líquido refrigerante a través del motor térmico y del radiador de calefacción."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Bomba hidráulica arrastrada mecánicamente por el motor mediante la correa del alternador. Impulsa el fluido refrigerante por los manguitos hacia el radiador de refrigeración y hacia el radiador de calefacción del mueble climatizador."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Bomba centrífuga de accionamiento mecánico por correa."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Sobrecalentamiento del motor térmico y falta de circulación de agua caliente hacia el radiador de calefacción."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.modulo-de-inyeccion-motor",
+   "nt": 383,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "modulo-de-inyeccion-motor",
+   "titulo": "Módulo De Inyección Motor",
+   "codigo": "",
+   "menu": "Módulo De Inyección Motor",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Interconexión entre la gestión de motor y la centralita de climatización",
+   "ubicacion": "Compartimento motor / Gestión de motor",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Informa a la centralita de climatización de las demandas de carga del motor (aceleraciones bruscas) y recibe la indicación del estado del compresor para ajustar el régimen de ralentí."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Calculador electrónico interconectado con la tarjeta de climatización. En caso de aceleración fuerte, transmite la señal para cortar temporalmente el compresor y no restar potencia al motor. Asimismo, cuando el compresor está conectado, el módulo eleva el régimen de ralentí para evitar que el motor se cale."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Unidad de control electrónica de inyección conectada bidireccionalmente con el sistema de climatización."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Pérdida de potencia en aceleraciones con A/C conectado o caída de revoluciones y calado del motor al conectar el compresor en ralentí."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.circuito-de-calor-y-refrigeracion-del-motor",
+   "nt": 384,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "circuito-de-calor-y-refrigeracion-del-motor",
+   "titulo": "Circuito De Calor Y Refrigeración Del Motor",
+   "codigo": "",
+   "menu": "Circuito De Calor Y Refrigeración Del",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Explicar el funcionamiento termodinámico y la circulación del fluido en el circuito de calor del motor y de la calefacción."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "La bomba impulsada por la correa hace circular el líquido refrigerante para absorber el calor residual del motor. El termostato gestiona la desviación inicial del flujo hacia el radiador de calefacción para calentar el aire del habitáculo. Cuando la temperatura del motor sube, el líquido se encausa hacia el radiador de refrigeración, donde el termocontacto activa el electroventilador (GMV) si el calor es excesivo."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Motor térmico en funcionamiento."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "La bomba de refrigerante impulsa el fluido a través del bloque del motor. El termostato dirige inicialmente el líquido hacia el radiador de calefacción alojado en el conjunto A/C. El impulsor fuerza el paso de aire exterior entre las aletas del radiador de calefacción, absorbiendo calor para el habitáculo. El fluido caliente circula por los manguitos hacia el radiador de refrigeración exterior para evacuar el calor residual. La sonda de refrigerante informa a la centralita de la temperatura del motor. Si la temperatura en el radiador de refrigeración es muy elevada, el termocontacto envía la señal para conectar la 2ª velocidad del GMV."
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Confundir la función del termostato con la del termocontacto: el termostato regula mecánicamente el paso del fluido hacia los radiadores, mientras que el termocontacto comanda eléctricamente la activación del electroventilador (GMV)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema general del circuito de calor y sus componentes interconectados — Fuente: LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, pág. 4-5"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.termostato",
+   "nt": 385,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "termostato",
+   "titulo": "Termostato",
+   "codigo": "",
+   "menu": "Termostato",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Regulación del flujo de líquido refrigerante en el circuito de calor",
+   "ubicacion": "Intercalado en los manguitos del circuito de refrigeración del motor",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Dirigir inicialmente todo el flujo de líquido refrigerante hacia el radiador de calefacción y regular el paso hacia el radiador de refrigeración según la temperatura."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Válvula termostática sensible a la temperatura del líquido refrigerante. En fase de calentamiento, prioriza el paso de fluido hacia el radiador de calefacción para acelerar la calefacción del habitáculo y alcanzar la temperatura de servicio."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Válvula pasiva reguladora de caudal colocada en el manguito de refrigeración."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Tardanza excesiva en salir aire caliente por la calefacción o sobrecalentamiento del motor si se queda bloqueado cerrado."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.sonda-de-temperatura-del-liquido-refrigerante",
+   "nt": 386,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "sonda-de-temperatura-del-liquido-refrigerante",
+   "titulo": "Sonda De Temperatura Del Líquido Refrigerante",
+   "codigo": "",
+   "menu": "Sonda De Temperatura Del Líquido Refri",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Vigilancia térmica del motor para la centralita de climatización",
+   "ubicacion": "Circuito de refrigeración del motor",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la temperatura del líquido refrigerante del motor e informar a la centralita de climatización para desacoplar el compresor en caso de sobrecalentamiento."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Captador térmico que transmite la señal de temperatura del motor a la tarjeta electrónica. Si la temperatura del líquido refrigerante es excesivamente elevada, la centralita ordena el corte del compresor para reducir la carga sobre el motor."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Sonda térmica roscada en el circuito de líquido refrigerante."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El compresor no se desconecta ante un calentamiento del motor o se desactiva sin causa real."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.termocontacto-y-electroventilador-gmv",
+   "nt": 387,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "termocontacto-y-electroventilador-gmv",
+   "titulo": "Termocontacto Y Electroventilador (Gmv)",
+   "codigo": "",
+   "menu": "Termocontacto Y Electroventilador (Gmv",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Evacuación de calor del radiador y del condensador",
+   "ubicacion": "Radiador de refrigeración (termocontacto) y frontal del vehículo (GMV)",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Forzar la corriente de aire a través del radiador de refrigeración y del condensador cuando la temperatura del motor o la presión del refrigerante superan los límites."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El termocontacto detecta la temperatura en el radiador de refrigeración y envía una señal a la centralita cuando esta es elevada para conectar la velocidad del electroventilador (GMV). Asimismo, la centralita activa el GMV en 2ª velocidad si el presostato detecta una presión excesiva en el condensador."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Termocontacto eléctrico asociado a un grupo motoventilador (GMV) de varias velocidades comandado por la centralita."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Sobrecalentamiento del líquido refrigerante en el radiador y disparo por sobrepresión en el circuito de aire acondicionado."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.presostato-del-circuito-frigorifico",
+   "nt": 388,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "presostato-del-circuito-frigorifico",
+   "titulo": "Presostato Del Circuito Frigorífico",
+   "codigo": "",
+   "menu": "Presostato Del Circuito Frigorífico",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Protección de presión del circuito de frío y control del electroventilador",
+   "ubicacion": "Tuberías del circuito de aire acondicionado / alta presión",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Proteger el circuito frigorífico desconectando el compresor ante presiones anormales (demasiado altas o demasiado bajas) y activar la 2ª velocidad del GMV si la presión es elevada."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Captador de presión hidráulico-eléctrico. Envía una señal de entrada continua o por conmutación a la centralita. Si la presión cae por debajo del mínimo (fuga) o supera el máximo seguro, la centralita corta la alimentación del compresor. Si excede un valor intermedio alto, ordena la conexión de la 2ª velocidad del GMV para reducir la presión en el condensador."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Presostato / captador de presión conectado eléctricamente a la tarjeta electrónica."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Inoperatividad del compresor o falta de salto de la 2ª velocidad del GMV provocando sobrepresión destructiva."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.modulo-electronico-de-refrigeracion",
+   "nt": 389,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "modulo-electronico-de-refrigeracion",
+   "titulo": "Módulo Electrónico De Refrigeración",
+   "codigo": "",
+   "menu": "Módulo Electrónico De Refrigeración",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Interfaz de datos entre el sistema de refrigeración y la centralita de climatización",
+   "ubicacion": "Compartimento motor / Sistema de refrigeración",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Informar a la centralita de climatización de diversos parámetros de la refrigeración del motor y de la calefacción."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Módulo electrónico de control interconectado de forma bidireccional con la tarjeta electrónica del climatizador. Procesa señales térmicas y de gestión de ventiladores y las transmite a la centralita."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Unidad electrónica de gestión de refrigeración conectada al calculador principal."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Fallos de coordinación entre la activación del climatizador y la gestión de ventiladores del motor."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.circuito-de-frio-y-circulacion-del-refrigerante",
+   "nt": 390,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "circuito-de-frio-y-circulacion-del-refrigerante",
+   "titulo": "Circuito De Frío Y Circulación Del Refrigerante",
+   "codigo": "",
+   "menu": "Circuito De Frío Y Circulación Del Ref",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Explicar el ciclo cerrado de refrigeración y la función de sus componentes en el circuito de frío del vehículo."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El fluido frigorífico es comprimido por el compresor e impulsado a alta presión hacia el condensador, donde cede calor al exterior con ayuda del GMV. A continuación, atraviesa el filtro deshidratante para purificarse de humedad y partículas. Al llegar al evaporador, se expande y absorbe calor del aire exterior soplado por el impulsor, produciendo frío antes de retornar por las canalizaciones al compresor."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Compresor acoplado y presiones del circuito dentro de márgenes de trabajo."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El compresor comprime el fluido frigorífico gaseoso. El gas caliente circula por las canalizaciones hacia el condensador. En el condensador, el fluido cede calor al aire impulsado por el GMV y se licúa. El líquido frigorífico pasa por el filtro deshidratante, donde se retiene la humedad y se filtra de impurezas. El fluido llega al evaporador dentro del conjunto A/C, donde ebulles absorbiendo el calor del aire del habitáculo. La sonda del evaporador vigila la temperatura para evitar la congelación. El fluido en fase gaseosa retorna por las canalizaciones de baja presión hacia el compresor."
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Ignorar el estado del filtro deshidratante: si se satura de humedad, pueden formarse tapones de hielo o acidez que dañe el compresor y las canalizaciones."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del circuito de frío con sus componentes y canalizaciones — Fuente: LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, pág. 5"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.condensador-7",
+   "nt": 391,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "condensador",
+   "titulo": "Condensador",
+   "codigo": "",
+   "menu": "Condensador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Intercambiador de calor de alta presión del circuito de frío",
+   "ubicacion": "Compartimento motor, en el frontal del vehículo",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Evacuar al aire exterior el calor extraído del habitáculo y el generado por la compresión del fluido frigorífico."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Intercambiador térmico situado en el circuito de frío. El fluido frigorífico a alta presión y temperatura fluye por sus tubos; el flujo de aire atravesado (forzado por la marcha o por el GMV) absorbe el calor, provocando la condensación del fluido."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Radiador de condensación instalado en el compartimento motor enfrente del GMV."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Aumento excesivo de la presión en el circuito de frío y pérdida de rendimiento frigorífico."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.filtro-deshidratante-5",
+   "nt": 392,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "filtro-deshidratante",
+   "titulo": "Filtro Deshidratante",
+   "codigo": "",
+   "menu": "Filtro Deshidratante",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Filtrado y secado del fluido frigorífico",
+   "ubicacion": "Compartimento motor, intercalado en las canalizaciones del circuito de frío",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Retener impurezas sólidas y absorber la humedad disuelta en el fluido frigorífico para proteger los componentes del circuito."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Recipiente filtrante y desecante. El fluido en estado líquido circula por su interior atravesando un elemento filtrante de partículas y una sustancia química higroscópica que retiene las moléculas de agua."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Filtro deshidratador metálico integrado en las canalizaciones entre el condensador y el evaporador."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Saturación del material deshidratante o taponamiento por impurezas."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Restricción al flujo de refrigerante, bajada de rendimiento o congelación de componentes por presencia de humedad libre."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.canalizaciones-del-fluido-frigorifico",
+   "nt": 393,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "canalizaciones-del-fluido-frigorifico",
+   "titulo": "Canalizaciones Del Fluido Frigorífico",
+   "codigo": "",
+   "menu": "Canalizaciones Del Fluido Frigorífico",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Conducción estanca del fluido en el circuito de frío",
+   "ubicacion": "Distribuidas entre el compartimento motor y el conjunto A/C del salpicadero",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Transportar el fluido frigorífico en sus diferentes estados (líquido y gas) a través de los componentes del circuito de frío."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Tuberías y manguitos estancos que interconectan el compresor, condensador, filtro deshidratante y evaporador. Soportan las presiones de alta y baja del sistema sin permitir fugas."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Conducciones metálicas y de caucho sintético especial para refrigerante."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fugas de fluido frigorífico por poro o racor defectuoso."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Pérdida de la carga de fluido frigorífico y disparo del presostato por baja presión."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.logica-de-control-y-gestion-de-la-tarjeta-electronica",
+   "nt": 394,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "logica-de-control-y-gestion-de-la-tarjeta-electronica",
+   "titulo": "Lógica De Control Y Gestión De La Tarjeta Electrónica",
+   "codigo": "",
+   "menu": "Lógica De Control Y Gestión De La Tarj",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Explicar la arquitectura de entradas, salidas y comunicaciones bidireccionales de la tarjeta electrónica (centralita) para la regulación automática de la climatización."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "La tarjeta electrónica actúa como el calculador central del sistema. Recibe informaciones de sensores (entradas) sobre temperaturas y presiones, procesa las órdenes del usuario y la lógica de confort, y emite señales de mando (salidas) hacia actuadores de trampillas, impulsor, GMV y compresor. Asimismo, mantiene comunicación bidireccional con los módulos de inyección y refrigeración del motor."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Encendido conectado y alimentación eléctrica de la centralita."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Procesamiento de Entradas (Sondas y Sensores): Sonda de habitáculo: Informa de la temperatura real interior. Sondas exterior y de aire soplado: Informan para calcular la posición de la trampilla de mezcla, el caudal y la distribución. Sonda de evaporador: Informa del riesgo de hielo para cortar el compresor. Presostato y termocontacto: Informan de presiones y temperaturas críticas para proteger el circuito y activar el GMV. Gestión de Salidas (Actuadores y Potencia): Actuadores: Reciben señales para mover las trampillas del conjunto A/C. Impulsor: Recibe la señal para regular el caudal de aire soplado. Compresor y GMV: Reciben órdenes de acoplamiento/desacoplamiento y cambio de velocidad. Relación Bidireccional con Módulos del Vehículo: Módulo de inyección: Coordina el corte en aceleración brusca y la elevación de ralentí. Módulo electrónico de refrigeración: Intercambia parámetros de temperatura de motor y demanda de calefacción/refrigeración."
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Intentar diagnosticar el climatizador automático sin considerar las señales de los módulos de inyección o refrigeración: una falta de señal de aceleración o de temperatura del motor puede bloquear el compresor aunque el circuito frigorífico esté perfecto."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema de entradas, salidas y conexiones bidireccionales de la tarjeta electrónica — Fuente: LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, pág. 6-8"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.tarjeta-electronica",
+   "nt": 395,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "tarjeta-electronica",
+   "titulo": "Tarjeta Electrónica",
+   "codigo": "",
+   "menu": "Tarjeta Electrónica",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Calculador y unidad de control principal de la climatización automática",
+   "ubicacion": "Montada en la parte trasera del panel de mandos y pantalla del salpicadero",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Procesar todas las señales de entrada de los sensores, gestionar las órdenes del usuario y controlar los actuadores y elementos de potencia para mantener el confort térmico en el habitáculo."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Unidad microprocesada provista de entradas analógicas/digitales, salidas de potencia/control e interfaces de comunicación. Analiza continuamente las temperaturas y presiones, calcula las desviaciones respecto a la consigna y gobierna los actuadores de trampillas, el impulsor, el compresor y el GMV."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Tarjeta o módulo electrónico ubicado detrás del display y mandos del salpicadero."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Inoperatividad total del modo automático, falta de respuesta de actuadores o desconexión ininterrumpida del compresor."
     }
    ]
   }
