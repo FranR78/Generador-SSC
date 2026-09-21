@@ -149,3 +149,18 @@ unidad, de tema o de criterios sin que se rompa nada que la apunte (lecturas,
 RAG, casos), porque nada de eso usa la unidad como identidad.
 
 Primera pregunta al arrancar: ¿etiquetas o lista manual?
+
+---
+
+## Pendiente de revisar: entrar en un curso no limita a ese curso
+
+Al pinchar una portada de Cursos lleva a Apuntes filtrado por esa unidad, pero
+el desplegable de unidad se puede cambiar y el alumno acaba viendo notas de otra
+unidad desde dentro de "un curso". Rompe la sensación de curso cerrado.
+
+Opciones a decidir:
+- Que al entrar por un curso, Apuntes quede BLOQUEADO en esa unidad (sin
+  desplegable), y para cambiar haya que volver a Cursos.
+- O una cabecera "Estás en: Climatización" con un botón claro de salir.
+
+No tocar aún; apuntado para cuando se revise la navegación de Cursos.
