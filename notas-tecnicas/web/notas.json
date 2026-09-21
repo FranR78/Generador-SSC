@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-21",
- "total": 452,
+ "total": 458,
  "grupos": [
   "Actuadores y mandos",
   "Circuito frigorífico",
@@ -21472,6 +21472,230 @@
     {
      "titulo": "Cómo comprobarlo",
      "texto": "Efectuar la diagnosis electrónica conectando el equipo VAS Scan Tool y accediendo a través de la dirección de diagnóstico 5F - Electrónica de información 1 ."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.circuito-frigorifico-de-tres-y-cuatro-zonas",
+   "nt": 468,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "circuito-frigorifico-de-tres-y-cuatro-zonas",
+   "titulo": "Circuito Frigorífico De Tres Y Cuatro Zonas",
+   "codigo": "",
+   "menu": "Circuito Frigorífico De Tres Y Cuatro",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Explicar las características y configuración general del circuito frigorífico en los sistemas de climatización de tres y cuatro zonas."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El circuito utiliza fluido refrigerante R134a y cuenta con un único evaporador para dar cobertura a las diferentes zonas. Además, incorpora un intercambiador térmico interno para optimizar el consumo de combustible y reducir las emisiones de CO2."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El sistema de climatización de tres y cuatro zonas funciona con el refrigerante R134a. El circuito integra un solo evaporador para todo el sistema de climatización. Incorpora un intercambiador térmico interno para maximizar el ahorro de combustible y minimizar las emisiones de CO2."
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Reducción de emisiones de CO2."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema general del circuito frigorífico con intercambiador térmico interno, depósito con secador y sensor G395 — Fuente: SSP 484 A7 Info y Clima (arrastrado).pdf, pág. 50"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.intercambiador-termico-interno",
+   "nt": 469,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "intercambiador-termico-interno",
+   "titulo": "Intercambiador Térmico Interno",
+   "codigo": "",
+   "menu": "Intercambiador Térmico Interno",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistemas de climatización de tres y cuatro zonas",
+   "ubicacion": "Intercalado en las líneas del circuito frigorífico",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Realizar el intercambio térmico entre las líneas del circuito para maximizar la eficiencia del combustible y reducir las emisiones de CO2."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Intercambia energía térmica entre la línea de alta presión y la línea de baja presión de refrigerante R134a."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Intercambiador térmico integrado en las conducciones de alta y baja presión."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.lavado-del-circuito-frigorifico",
+   "nt": 470,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "lavado-del-circuito",
+   "titulo": "Lavado Del Circuito Frigorífico",
+   "codigo": "",
+   "menu": "Lavado Del Circuito Frigorífico",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Establecer los pasos de trabajo para efectuar el lavado (flushing) del circuito frigorífico durante las tareas de reparación."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El circuito se diseña para poder lavarse sin requerir ningún adaptador adicional que puenteé el depósito de fluido. La válvula de expansión y el compresor de refrigerante se sustituyen temporalmente por adaptadores de lavado específicos, y se retira el cartucho secador para sellar de nuevo el depósito durante el proceso."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Circuito frigorífico descargado de refrigerante y abierto para la instalación de adaptadores."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Adaptador para sustituir la válvula de expansión. Adaptador para sustituir el compresor de refrigerante. Cartucho secador nuevo de recambio. Equipo de lavado de circuitos frigoríficos."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Desmontar la válvula de expansión e instalar en su lugar el adaptador correspondiente. Desmontar el compresor de refrigerante e instalar en su lugar el adaptador correspondiente. Extraer el cartucho secador del interior del depósito de fluido. Volver a sellar la carcasa del depósito de fluido sin el cartucho secador. Cerrar el circuito de refrigerante y realizar el ciclo de lavado. Tras completar el lavado, desmontar la tapa e instalar un cartucho secador nuevo en el depósito de fluido."
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Reutilizar el cartucho secador antiguo tras el lavado: es obligatorio montar un cartucho secador nuevo al finalizar el proceso. Intentar lavar el circuito sin retirar el compresor o la válvula de expansión: es necesario instalar adaptadores en lugar de ambos componentes."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Circuito cerrado con cartucho secador nuevo instalado."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.deposito-de-fluido-con-cartucho-secador",
+   "nt": 471,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "deposito-de-fluido-con-cartucho-secador",
+   "titulo": "Depósito De Fluido Con Cartucho Secador",
+   "codigo": "",
+   "menu": "Depósito De Fluido Con Cartucho Secado",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistemas de climatización de tres y cuatro zonas",
+   "ubicacion": "Intercalado en el circuito frigorífico junto al condensador",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Almacenar el fluido refrigerante y retener la humedad del circuito mediante un cartucho secador reemplazable."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El fluido refrigerante circula por el depósito atravesando el cartucho secador, el cual absorbe la humedad residual antes de continuar hacia la válvula de expansión."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Depósito de fluido resellable con cartucho secador (dryer cartridge) extraíble en su interior."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Saturación del cartucho secador por humedad."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.sensor-de-presion-y-temperatura-del-aire-acondicionado-g395",
+   "nt": 472,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "sensor-de-presion-y-temperatura-del-aire-acondicionado-g395",
+   "titulo": "Sensor De Presión Y Temperatura Del Aire Acondicionado G395",
+   "codigo": "G395",
+   "menu": "Sensor De Presión Y Temperatur G395",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema de climatización de tres y cuatro zonas",
+   "ubicacion": "Montado sobre la tubería del circuito frigorífico",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la presión y la temperatura del fluido refrigerante en el circuito e informar a la unidad de control del climatizador."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Captador combinado que registra los valores térmicos y de presión del gas refrigerante R134a enviando las señales correspondientes a la electrónica de gestión."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Sensor dual (presión y temperatura) integrado en la tubería del circuito."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.distribucion-y-reposicion-de-aceite-pag-en-el-circuito",
+   "nt": 473,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "distribucion-y-reposicion-de-aceite-pag-en-el-circuito",
+   "titulo": "Distribución Y Reposición De Aceite Pag En El Circuito",
+   "codigo": "",
+   "menu": "Distribución Y Reposición De Aceite Pa",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Establecer el criterio de conservación y reposición de aceite PAG durante la sustitución de componentes del circuito frigorífico."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Durante el funcionamiento del climatizador, el aceite PAG se distribuye continuamente por todo el circuito frigorífico. Al cambiar cualquier componente, debe reponerse la cantidad exacta de aceite retenida en la pieza sustituida para mantener la masa de lubricante prescrita."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Sustitución o desmontaje de componentes del circuito de refrigerante."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Aceite sintético PAG específico. Probeta o recipiente de medición de volumen."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Medir el volumen de aceite PAG extraído del componente defectuoso al desmontarlo. Añadir la cantidad equivalente de aceite PAG nuevo al componente de recambio antes de instalarlo. Asegurar que la cantidad de aceite PAG requerida se mantenga dentro del circuito."
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Montar componentes nuevos sin reponer el aceite PAG retenido en la pieza antigua: provoca falta de lubricación y daños mecánicos en el compresor."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Cantidad prescrita de aceite PAG conservada en el sistema tras la reparación."
     }
    ]
   }
