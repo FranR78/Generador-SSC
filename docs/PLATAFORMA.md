@@ -29,7 +29,12 @@ vale más que etiquetas libres, que se llenan de sinónimos y dejan de agrupar.
 Hoy: `ssc.clima.compresor`. En cuanto dos profesores compartan Drive, sus dos
 compresores colisionan: es el fallo del NT1 duplicado, pero entre personas.
 
-Con pool compartido, el id pasa a `<autor>.ssc.clima.compresor`. Como el id es
+DECIDIDO: el prefijo es la parte local del correo (lo anterior a la @). Para
+`frostov381@…` el prefijo es `frostov381`, y el id queda
+`frostov381.ssc.clima.compresor`. Es único por persona, ya lo tiene el sistema
+(userEmail) y no hay que inventar un registro de autores aparte.
+
+Como el id es
 opaco y permanente, añadir el prefijo ahora no rompe nada; añadirlo tarde obliga
 a renombrar el corpus entero y a rehacer todo lo que apunte a él (lecturas, RAG,
 casos). Por eso este cambio va el primero, aunque el pool venga después.
@@ -81,6 +86,20 @@ Decisión pendiente: ¿se puede saber que una NT copiada tiene una versión más
 nueva en el pool? Útil, pero no imprescindible para empezar.
 
 ---
+
+## 5b. Ya hay un precedente que funciona: Diario Docente
+
+El profesor ya trabaja así en otro proyecto suyo (Diario Docente): un proyecto,
+y cada usuario con su propia Hoja de cálculo, independiente. No hay que diseñar
+el multiusuario desde cero: hay que **leer cómo lo resuelve ahí y replicarlo**.
+
+Lo que hay que sacar de ese repositorio cuando se arranque:
+- cómo asocia cada usuario (correo) a su Hoja
+- cómo se da de alta un usuario nuevo (la plantilla, el clonado)
+- si es un despliegue único o uno por persona
+
+Copiar un mecanismo probado ahorra la parte de prueba y error de la sección 6.
+
 
 ## 6. La parte incómoda: Apps Script no es multiusuario de serie
 
