@@ -83,3 +83,28 @@ hay que racionarlo: preguntar es trabajar.
    navegador sepa: nadie pulsa *salir*, se cierra la pestaña. Habrá que
    dispararlo por otra vía (al volver a Inicio, tras leer la segunda o tercera
    nota, o un aviso que aparezca pasado un rato de lectura).
+
+---
+
+## Iconos y colores de las portadas de curso
+
+Pendiente de decidir con el profesor. Va en `notas-tecnicas/unidades/ssc-*.yml`,
+campos `icono` y `color`. No tocar hasta que los confirme todos.
+
+| Unidad | Icono pedido | Color de la barra |
+|---|---|---|
+| Airbag y pirotécnicos | el símbolo universal de airbag (persona + bolsa) | **amarillo** |
+| Audiovisuales / Infotenimiento | una tablet | — |
+| Lunas y carrocería | un parabrisas | — |
+| Prevención y medio ambiente | el actual (⚠️) vale, o el típico de reciclaje | verde |
+| Alarmas e inmovilizadores | un cuadro de instrumentos | — |
+| Seguridad del vehículo | **sin decidir** — lo mira él |
+| Climatización | el actual (❄️) se queda | azul |
+
+Notas para cuando toque:
+- El "símbolo universal de airbag" y "cuadro de instrumentos" no existen como
+  emoji estándar. Habrá que decidir: emoji aproximado, o SVG propio incrustado
+  en la portada (el sistema ya mete iconos como texto; para SVG hay que tocar
+  Cursos.html). Es una decisión de él: emoji rápido vs SVG fiel.
+- El color es un solo valor hex por unidad (`color:`), y pinta a la vez la
+  banda de la portada y la barra de progreso.
