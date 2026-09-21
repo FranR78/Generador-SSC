@@ -101,6 +101,9 @@ campos `icono` y `color`. No tocar hasta que los confirme todos.
 | Seguridad del vehículo | **sin decidir** — lo mira él |
 | Climatización | el actual (❄️) se queda | azul |
 
+DECIDIDO: se hará con SVG propio, no emoji, incluso donde hay emoji, para que
+# todas las portadas tengan el mismo acabado. Requiere tocar Cursos.html.
+
 Notas para cuando toque:
 - El "símbolo universal de airbag" y "cuadro de instrumentos" no existen como
   emoji estándar. Habrá que decidir: emoji aproximado, o SVG propio incrustado
