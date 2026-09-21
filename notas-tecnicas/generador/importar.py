@@ -95,6 +95,12 @@ SUBTIPOS = {"fundamento": "fundamento", "procedimiento": "procedimiento",
             "diagnostico": "diagnostico"}
 
 
+def slug(texto):
+    base = unicodedata.normalize("NFKD", texto or "")
+    base = "".join(c for c in base if not unicodedata.combining(c)).lower()
+    return re.sub(r"[^a-z0-9]+", "-", base).strip("-") or "nota"
+
+
 def normalizar(t):
     base = unicodedata.normalize("NFKD", t or "")
     return "".join(c for c in base if not unicodedata.combining(c)).lower().strip()
@@ -207,7 +213,9 @@ def procesar_nota(titulo_bruto, cuerpo, numero):
 
     apartados, imagenes = extraer_imagenes(apartados)
 
-    lineas = ["---", f"nt: {numero}"]
+    ident = "ssc.sin-clasificar." + slug(titulo)
+    lineas = ["---", f"id: {ident}", "modulo: ssc", "unidad: sin-clasificar",
+              f"nt: {numero}"]
     if subtipo:
         lineas += ["tipo: proceso", f"subtipo: {subtipo}"]
     lineas += [f'titulo: "{titulo}"']

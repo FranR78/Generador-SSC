@@ -15,8 +15,19 @@ ENTRADA = RAIZ / "entrada"
 PROCESADOS = ENTRADA / "procesados"
 
 
+# Lo que NO es una nota que procesar: el archivo de ayuda y cualquier cosa
+# oculta. Todo lo demás que se deje en entrada/ se intenta importar, tenga o no
+# extensión .md. Subiendo desde el móvil es fácil que el archivo llegue sin
+# extensión, y el pipeline debe tragárselo igual en vez de ignorarlo en
+# silencio, que es peor que fallar.
+IGNORAR = {"LEEME.txt", "PLANTILLA.md", ".gitkeep"}
+
+
 def main():
-    nuevos = sorted(p for p in ENTRADA.glob("*.md") if p.is_file())
+    nuevos = sorted(
+        p for p in ENTRADA.iterdir()
+        if p.is_file() and p.name not in IGNORAR and not p.name.startswith(".")
+    )
     if not nuevos:
         print("No hay nada nuevo en entrada/.")
         return 0
@@ -38,8 +49,9 @@ def main():
 
         # Solo se aparta lo que ha entrado bien: si algo falla, se queda a la
         # vista en entrada/ para poder mirarlo.
-        shutil.move(str(archivo), str(PROCESADOS / archivo.name))
-        print(f"  archivado en entrada/procesados/{archivo.name}")
+        destino_nombre = archivo.name if archivo.suffix == ".md" else archivo.name + ".md"
+        shutil.move(str(archivo), str(PROCESADOS / destino_nombre))
+        print(f"  archivado en entrada/procesados/{destino_nombre}")
 
     if fallos:
         print("\nNo se han podido importar: " + ", ".join(fallos), file=sys.stderr)
