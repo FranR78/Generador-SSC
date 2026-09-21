@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-21",
- "total": 202,
+ "total": 226,
  "grupos": [
   "Actuadores y mandos",
   "Circuito frigorífico",
@@ -10040,6 +10040,1126 @@
     {
      "titulo": "Cómo comprobarlo",
      "texto": "Inspección visual del color y estado del aceite purgado del compresor; verificación de la viscosidad especificada por el fabricante antes de rellenar."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.confort-termico-e-higrometria",
+   "nt": 218,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "confort-termico-e-higrometria",
+   "titulo": "Confort Térmico E Higrometría",
+   "codigo": "",
+   "menu": "Confort Térmico E Higrometría",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Explicar las bases físicas del confort térmico, las fuentes de calor en el vehículo y el concepto de higrometría. Se aplica a la definición de las condiciones de climatización en el habitáculo."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El confort térmico se alcanza cuando el cuerpo humano se encuentra en estado de equilibrio térmico, cediendo la cantidad justa de energía al ambiente. Si el ambiente es frío (20 ºC), el cuerpo cede demasiadas calorías; si es caluroso (28 ºC), no puede ceder calorías y se activa la sudoración. La higrometría es la relación entre la cantidad de agua contenida en el aire y la cantidad máxima que podría contener a la misma presión y temperatura. La zona de confort humano se sitúa entre el 30% y el 70% de humedad relativa para temperaturas de 20 ºC a 28 ºC."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Fuentes de calor: El habitáculo recibe calor por radiación solar, transmisión por la chapa y cristales, calor propio de los ocupantes y disipación del motor y tubo de escape. Comportamiento según la humedad: Humedad < 30%: Provoca deshidratación, sequedad de mucosas y calor seco. Humedad > 70%: Provoca bochorno, sudoración pegajosa o sensación de frío húmedo/niebla."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Parámetro Valor de referencia Condiciones de validez Temperatura de confort ambiental 20 ºC a 28 ºC Ocupantes en reposo Humedad relativa de confort 30 % a 70 % Dentro del margen de 20 ºC a 28 ºC"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Considerar solo la temperatura para el confort: sin deshumidificar el aire (reducir la higrometría), una temperatura de 22 ºC con 85% de humedad genera una sensación térmica incómoda y empañamiento de cristales."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.intercambios-termicos-y-cambios-de-estado",
+   "nt": 219,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "intercambios-termicos-y-cambios-de-estado",
+   "titulo": "Intercambios Térmicos Y Cambios De Estado",
+   "codigo": "",
+   "menu": "Intercambios Térmicos Y Cambios De Est",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Definir los conceptos de transferencia de calor, calor sensible, calor latente, entalpía y ebullición por vacío. Se aplica a la comprensión del ciclo frigorífico."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Dirección del calor: El calor fluye siempre desde el cuerpo más caliente hacia el más frío hasta igualar sus temperaturas (temperatura de equilibrio). Calor Sensible: Cantidad de calor aportada o extraída para variar la temperatura de un cuerpo sin cambiar su estado físico (ejemplo: calentar 1 kg de agua de 20 ºC a 100 ºC requiere 335 kJ). Calor Latente: Cantidad de energía necesaria para que una sustancia cambie de estado físico a temperatura constante (ejemplo: la vaporización de 1 kg de agua a 100 ºC absorbe 2.250 kJ de calor latente). Entalpía (H): Energía total contenida en un fluido por unidad de masa: H = U + P V (J/kg). Si un compresor aporta 1 J de trabajo mecánico a 1 kg de fluido, su entalpía aumenta en 1 J/kg. Ebullición por vacío: El punto de ebullición depende de la presión exterior. Si la presión cae (por vacío), la temperatura de ebullición desciende (el agua hierve a 30 ºC si la presión baja a 0,04 bar)."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "En el cambio de fase de un fluido (de líquido a gas), se crea una meseta de temperatura constante durante la cual toda la energía suministrada se invierte exclusivamente como calor latente de cambio de estado. La masa gaseosa resultante ocupa un volumen enormemente mayor que en fase líquida (1,2 kg de R134a líquido ocupan 1 litro a 20 ºC; la misma masa en gas ocupa 31 litros). Por esta razón, las tuberías de Alta Presión (líquido) son de pequeño diámetro y las de Baja Presión (gas) son de gran diámetro."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Parámetro Valor numérico Condiciones de validez Calor latente de fusión del hielo 335 kJ / kg A 0 ºC y 1,013 bar Calor latente de vaporización del agua 2.250 kJ / kg A 100 ºC y 1,013 bar Volumen de 1,2 kg de R134a líquido 1 litro A 20 ºC Volumen de 1,2 kg de R134a gas 31 litros A 20 ºC"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Confundir elevación de temperatura con cambio de estado: durante la condensación o evaporación, el termómetro no sube ni baja aunque exista una transferencia masiva de energía (calor latente)."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.diagrama-de-mollier-y-ciclo-frigorifico-teorico",
+   "nt": 220,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "diagrama-de-mollier-y-ciclo-frigorifico-teorico",
+   "titulo": "Diagrama De Mollier Y Ciclo Frigorífico Teórico",
+   "codigo": "",
+   "menu": "Diagrama De Mollier Y Ciclo Frigorífic",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Describir la estructura del diagrama de Mollier (presión frente a entalpía) y las cuatro fases del ciclo frigorífico. Se aplica al análisis termodinámico del aire acondicionado."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El diagrama de Mollier representa la presión absoluta (eje vertical) en función de la entalpía (eje horizontal). La campana central delimita tres zonas: líquido a la izquierda, estado difásico (líquido + gas) en el centro, y gas a la derecha. El vértice superior es la Presión Crítica (T_c), a partir de la cual no es posible licuar el gas."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Las 4 transformaciones del ciclo sobre el diagrama son: 1. Compresión (1 a 2): El compresor aspira gas a baja presión y baja temperatura (-1 ºC / 3 bar) y lo comprime elevando su presión y entalpía hasta alta presión y alta temperatura (110 ºC / 20 bar). 2. Condensación (2 a 5): En el condensador, el gas cede calor al aire exterior. Primero se enfría (sensible), luego se condensa a temperatura constante (60 ºC / 19 bar, calor latente difásico) y finalmente se subenfría a líquido (60 ºC / 19 bar). 3. Expansión (5 a 6): La válvula de expansión estrangula el líquido de alta presión (19 bar) a baja presión (3 bar). La entalpía se mantiene constante, pero la temperatura cae en picado a -1 ºC (mezcla difásica). 4. Evaporación (6 a 1): En el evaporador, el fluido ebulle a baja presión (3 bar / -1 ºC) absorbiendo el calor del aire del habitáculo. Pasa de líquido a gas y sufre un ligero recalentamiento final (+3 ºC a +5 ºC) antes de volver al compresor."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Fase / Punto del circuito Presión de trabajo Temperatura de trabajo Estado del fluido 1. Entrada al Compresor 3 bar 5 ºC Gas (recalentado) 2. Salida del Compresor 20 bar 110 ºC Gas (alta temperatura) 3. Entrando a Condensación 19 bar 70 ºC Gas cediendo calor 5. Salida del Condensador 19 bar 60 ºC Líquido (subenfriado) 6. Entrada al Evaporador 3 bar -1 ºC Difásico (mezcla líquido/gas) 8. Salida del Evaporador 3 bar 3 ºC a 10 ºC Gas cediendo frío al aire"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Entrada de líquido al compresor: si la evaporación no se completa (recalentamiento nulo), entra líquido al compresor provocando la destrucción mecánica inminente de sus válvulas (los líquidos son incompresibles)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Ciclo frigorífico representado sobre la campana del diagrama de Mollier — Fuente: CLIMATIZACION INTRODUCCION.PDF, pág. 57"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.refrigerantes-r12-y-r134a-y-lubricantes",
+   "nt": 221,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "refrigerantes-r12-y-r134a-y-lubricantes",
+   "titulo": "REFRIGERANTES R12 Y R134a Y LUBRICANTES",
+   "codigo": "",
+   "menu": "REFRIGERANTES R12 Y R134a Y LUBRICANTE",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Comparar las propiedades físicas, químicas y medioambientales de los refrigerantes R12 y R134a, y definir la compatibilidad de sus aceites. Se aplica a la gestión de fluidos en el taller."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "R12 (Diclorofluorometano - CFC): Gran capacidad térmica, pero destruye la capa de ozono por sus moléculas de cloro y se transforma en gas tóxico (gas mostaza) por encima de 150 ºC. Prohibida su comercialización. R134a (Tetrafluoroetano - HFC): No contiene cloro y no afecta al ozono, aunque es un gas de efecto invernadero. Presenta propiedades termodinámicas similares al R12 pero sus moléculas son más pequeñas y requieren un lubricante sintético."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Compatibilidad de Aceites: Aceites Minerales: Parafínicos o nafténicos. Compatibles exclusivamente con R12. Higroscopía muy débil. Prohibido usarlos con R134a. Aceites Sintéticos PAG (Polialquilenglicol): Específicos para R134a. Muy higroscópicos (absorben gran cantidad de agua). En presencia de agua se vuelven muy agresivos y corrosivos con metales, plásticos y elastómeros. Aceites Sintéticos ÉSTER: Compatibles con R12 y R134a. Higroscopía media. Utilizados principalmente en la reconversión (retrofit) de circuitos."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Tipo de Aceite Contenido en agua tras 24 h de exposición Compatibilidad de gas Sintético PAG ** 2.000 PPM** (Muy higroscópico) Exclusivo R134a Sintético ÉSTER ** 1.600 PPM** (Higroscopía media) R12 / R134a (Reconversión) Mineral < 100 PPM (Higroscopía muy débil) Exclusivo R12"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Jamás mezclar R12 y R134a: Son totalmente incompatibles. Jamás mezclar aceites minerales y PAG: Producen descomposición del lubricante y gripado inmediato del compresor. Dejar abierto un bote de aceite PAG: absorberá humedad ambiental en pocos minutos, contaminando el circuito con ácidos destructivos."
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Obligatoriedad de la recuperación del 100% de los fluidos frigoríficos en las intervenciones según la normativa vigente."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.compresor-de-climatizacion-2",
+   "nt": 222,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "compresor",
+   "titulo": "Compresor De Climatización",
+   "codigo": "No documentado en fuentes",
+   "menu": "Compresor De Climatización No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Circuito frigorífico de aire acondicionado del automóvil",
+   "ubicacion": "Fijado directamente sobre el bloque motor, arrastrado por la correa de accesorios",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Asegurar la circulación del fluido frigorífico por todos los componentes del sistema y elevar la presión del gas desde la salida del evaporador hasta la entrada del condensador."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Aspiración e impulsión mecánica. Transforma la energía mecánica del motor en trabajo de compresión. En compresores de cilindrada variable, el caudal se modula cambiando la inclinación del plato oscilante: la presión del cárter (regulada por una válvula de control) determina la carrera de los pistones. A menor inclinación, menor carrera y menor caudal."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Tecnologías: Alternativos (pistones con biela-manivela o disco oscilante revólver), Rotativos (paletas Seiko-Seiki) y Pseudo-rotativos (espiral o Scroll). Cilindrada Variable: Evita el funcionamiento cíclico \"todo o nada\", reduce los tirones en el motor y disminuye el consumo de combustible."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Parámetro / Condición Valor de trabajo Estado del fluido Lado de Aspiración (BP) 3 bar / 5 ºC Gas de baja presión Lado de Impulsión (HP) 19 a 20 bar / 110 ºC Gas comprimido a alta presión Test de Resistencia Valeo 556 horas (equivale a 80.000 km a 72 km/h) Prueba de durabilidad industrial"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Gripado por falta de engrase o acumulación de suciedad. Fugas por retenes del eje y juntas de culata. Rotura interna por golpe de líquido (presencia de refrigerante líquido a la entrada). Corrosión interna por presencia de agua/humedad."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Inoperatividad del sistema de aire acondicionado, ruidos metálicos intensos o bloqueo de la correa de accesorios."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Comprobar presiones en manómetros (BP alta y HP baja indican fallo de compresión). Verificar la estanqueidad con detector de fugas y probar la excitación del mando de regulación."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.embrague-electromagnetico-del-compresor",
+   "nt": 223,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "embrague-electromagnetico-del-compresor",
+   "titulo": "Embrague Electromagnético Del Compresor",
+   "codigo": "No documentado en fuentes",
+   "menu": "Embrague Electromagnético Del  No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Compresores de cilindrada fija o variable con desconexión",
+   "ubicacion": "Montado en el frontal de la polea del compresor",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Transmitir o interrumpir el movimiento de rotación desde la polea de la correa de accesorios hacia el eje del compresor."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Acoplamiento por electroimán. Al recibir corriente eléctrica, la bobina genera un campo magnético que atrae el disco de embrague contra la polea en movimiento, venciendo la fuerza de los flejes elásticos y haciendo girar el eje del compresor."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Consta de polea de arrastre con rodamiento, bobina electromagnética fija, disco de embrague y pieza de fijación al eje."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Parámetro Valor numérico Condiciones de validez Tensión de excitación 12 V CC Solicitud de A/C activa Entrehierro de fricción Valor milimétrico específico Medido con galgas de espesor"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Bobina interrumpida o quemada; desgaste excesivo del entrehierro por fricción; deformación de las láminas elásticas."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El compresor no gira al activar el aire acondicionado (la polea gira loca) o patina emitiendo chillidos."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Medir la resistencia de la bobina con multímetro (debe dar continuidad), aplicar 12 V directos para comprobar el atracado del disco y medir la holgura del entrehierro."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Despiece del embrague electromagnético con polea, bobina y disco — Fuente: CLIMATIZACION INTRODUCCION.PDF, pág. 72"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.condensador-2",
+   "nt": 224,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "condensador",
+   "titulo": "Condensador",
+   "codigo": "No documentado en fuentes",
+   "menu": "Condensador No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Circuito de aire acondicionado",
+   "ubicacion": "En la parte frontal del vehículo, delante del radiador de refrigeración del motor",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Liquidar el gas refrigerante a alta presión que sale del compresor, cediendo su calor al flujo de aire exterior que lo atraviesa."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Intercambiador térmico de alta presión. El gas a 110 ºC y 20 bar entra por la parte superior. Al ceder calor al aire exterior (a 35 ºC), se enfría hasta su temperatura de condensación (65 ºC / 19 bar), se licúa totalmente y sufre un subenfriamiento final antes de salir a 60 ºC."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Fabricado en aluminio. Tecnologías: Tubo/Intercalador (TI) o Serpentín/Multiflujo. Posee gran superficie de aletas de refrigeración."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tramo Presión Temperatura Estado del fluido Entrada 20 bar 110 ºC Gas de descarga Enfriamiento inicial 19 a 20 bar 110 ºC a 65 ºC Gas Condensación 19 bar 65 ºC Difásico (Gas + Líquido) Salida (Subenfriado) 19 bar 60 ºC Líquido"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Perforaciones por corrosión o impactos de piedras. Obstrucción externa de aletas por barro, suciedad e insectos. Fugas en racores. Pérdida de rendimiento por montar adaptables de baja calidad."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Falta de rendimiento frigorífico en el habitáculo y elevación anormal de la Alta Presión en el circuito."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Inspección visual de la limpieza de aletas, búsqueda de manchas de aceite (fugas) con lámpara UV y cálculo del subenfriamiento térmico."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.filtro-deshidratante-2",
+   "nt": 225,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "filtro-deshidratante",
+   "titulo": "Filtro Deshidratante",
+   "codigo": "No documentado en fuentes",
+   "menu": "Filtro Deshidratante No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Circuitos de A/C con válvula de expansión",
+   "ubicacion": "En el vano motor, entre el condensador y la válvula de expansión",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Almacenar líquido refrigerante, filtrar impurezas sólidas y absorber las trazas de humedad circulantes en el circuito."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El fluido entra en fase líquida por la parte superior. Atraviesa las mallas filtrantes y el bloque desecante (tamiz molecular/silicagel). El líquido deshidratado se acumula en el fondo y es aspirado por un tubo prolongador inferior para garantizar que sólo salga líquido hacia la válvula de expansión."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Botella metálica con racores de entrada y salida, malla filtrante interna, saco desecante e higroscópico y, en algunos modelos, mirilla/testigo de burbujas."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Parámetro Valor prescrito Condiciones de validez Intervalo de sustitución recomendado Cada 2 años Mantenimiento preventivo obligatorio Sustitución en reparación Obligatoria Siempre que se abra el circuito"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Saturación del desecante por humedad; taponamiento interno que provoca una pre-expansión no deseada en el propio filtro."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Pérdida de eficacia frigorífica, presencia de hielo exterior sobre el filtro y formación de ácidos que destruyen el compresor."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Medir la temperatura del tubo a la entrada y a la salida del filtro con un termómetro de contacto: si existe un salto térmico apreciable (salida más fría que entrada), el filtro está saturado y obstruido."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Sección interna del filtro deshidratante con desecante y tubo prolongador — Fuente: CLIMATIZACION INTRODUCCION.PDF, pág. 96"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.valvula-de-expansion-termostatica",
+   "nt": 226,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "valvula-de-expansion-termostatica",
+   "titulo": "Válvula De Expansión Termostática",
+   "codigo": "No documentado en fuentes",
+   "menu": "Válvula De Expansión Termostát No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Circuitos de A/C con filtro deshidratante",
+   "ubicacion": "Montada en el vano motor, pegada a la entrada del evaporador",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Provocar la caída brusca de presión y temperatura del refrigerante y regular automáticamente el caudal inyectado al evaporador para mantener un recalentamiento constante."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Equilibrio de presiones sobre una membrana (F_a = F_b + F_c). La presión del bulbo termostático (F_a, sensible a la temperatura de salida del evaporador) empuja la varilla para abrir la bola/válvula. En contra actúan la presión de evaporación (F_b) y la fuerza del muelle de reglaje (F_c). Si la temperatura a la salida sube, el bulbo aumenta su presión y abre el paso para inyectar más líquido."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Tipos: Bloque monobloc o tipo ángulo. Posee un orificio calibrado interno con aguja móvil, membrana y muelle tarado en fábrica."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Parámetro / Límite Valor numérico Condiciones de validez Caída de presión (HP a BP) De 19 bar a 3 bar En funcionamiento normal Caída de temperatura De 60 ºC a -1 ºC A la salida de la válvula Presión máxima soportada 15 bar Límite interno (presiones superiores deforman la membrana) Capacidad de filtrado requerida Partículas < 50 micras Impurezas mayores bloquean la aguja"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Bloqueo en posición abierta (inunda el evaporador de líquido). Bloqueo en posición cerrada o embozamiento por hielo/suciedad. Fuga del gas de la cabeza termostática. Modificación del tornillo de tarado por manipulación indebida."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Falta total de frío, evaporador congelado o congelación de la tubería de aspiración."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Medir el recalentamiento en manómetros y termómetro de contacto. Jamás manipular el tornillo de reglaje ni someterla a presiones superiores a 15 bar durante pruebas aisladas."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Sección de la válvula de expansión monobloc y sus presiones de equilibrio — Fuente: CLIMATIZACION INTRODUCCION.PDF, pág. 103 y 108"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.evaporador-2",
+   "nt": 227,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "evaporador",
+   "titulo": "Evaporador",
+   "codigo": "No documentado en fuentes",
+   "menu": "Evaporador No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Circuito de aire acondicionado",
+   "ubicacion": "En el interior del habitáculo, integrado dentro del mueble del salpicadero",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Enfriar y deshumidificar el aire impulsado hacia el habitáculo mediante la ebullición del fluido refrigerante en su interior."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Intercambiador térmico de baja presión. El refrigerante entra en estado difásico a -1 ºC y 3 bar. Al evaporarse, absorbe masivamente el calor del aire que atraviesa sus aletas. Al enfriarse el aire, la humedad ambiental se condensa sobre las aletas de aluminio y se evacua por el desagüe del salpicadero."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Construido en aluminio. Tipos: Evaporador de placas o de tubo/aleta."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tramo Presión Temperatura Estado del fluido Entrada 3 bar -1 ºC Difásico (Líquido + Gas) Evaporación 3 bar -1 ºC a +1 ºC Cambio de estado difásico Salida (Recalentado) 3 bar +3 ºC Gas de baja presión"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Perforación por corrosión. Obstrucción de aletas por formación de bloque de hielo (fallo de sonda o termostato). Fugas en racores. Proliferación de bacterias y hongos que generan malos olores en el habitáculo."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Charco de agua en los pies del habitáculo, aire sin enfriar o mal olor pestilente al conectar la ventilación."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Verificar la temperatura del aire soplado por los difusores, realizar desinfección higiénica y comprobar la estanqueidad con detector de fugas en la salida de condensados."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.canalizaciones-frigorificas",
+   "nt": 228,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "canalizaciones-frigorificas",
+   "titulo": "Canalizaciones Frigoríficas",
+   "codigo": "No documentado en fuentes",
+   "menu": "Canalizaciones Frigoríficas No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Conducción del fluido refrigerante R134a y aceite",
+   "ubicacion": "Vano motor e interconexiones entre los componentes de la climatización",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Unir los diferentes componentes del circuito cerrado para permitir la circulación del fluido frigorífico a Alta y Baja Presión."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Conducción estanca de fluidos. Absorbe las vibraciones del motor respecto a la carrocería mediante tramos flexibles y amortigua ruidos hidroacústicos mediante silenciadores (mufflers)."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Tramos rígidos: Tubos de aluminio o acero. Tramos flexibles: Manguitos multicapa formados por capa interior (barrera impermeabilizante), capa intermedia, refuerzo textil y revestimiento exterior sintético. Diámetros: Pequeño diámetro en línea de líquido HP; gran diámetro en línea de gas BP."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tramo del circuito Rango de presión Diámetro del tubo Línea de Alta Presión (HP) 19 a 20 bar Diámetro pequeño Línea de Baja Presión (BP) 3 bar Diámetro grande"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fugas en el engaste entre la parte rígida y flexible; porosidad por envejecimiento del caucho; roce mecánico contra partes metálicas."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Pérdida progresiva o rápida de gas refrigerante y trazas de aceite en la zona de rozamiento o engaste."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Inspección visual con luz ultravioleta (si lleva colorante) o paso del detector electrónico de fugas a lo largo de los manguitos."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.orificio-calibrado",
+   "nt": 229,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "orificio-calibrado",
+   "titulo": "Orificio Calibrado",
+   "codigo": "No documentado en fuentes",
+   "menu": "Orificio Calibrado No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Circuitos de A/C con acumulador y compresor de cilindrada variable",
+   "ubicacion": "Insertado en la tubería de alta presión, justo a la entrada del evaporador",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Provocar la expansión y caída de presión del líquido refrigerante a la entrada del evaporador (sin capacidad de regulación de caudal)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Restricción fija de sección constante. Expande el líquido de alta presión a baja presión al hacerlo pasar por un estrechamiento calibrado. Su uso requiere obligatoriamente la presencia de un acumulador a la salida del evaporador."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Cuerpo plástico cilíndrico provisto de un tubo capilar central de calibre fijo, mallas filtrantes en ambos extremos y juntas de estanqueidad."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Parámetro Valor de trabajo Condiciones de validez Caída de presión De 19 bar a 3 bar En funcionamiento de A/C Sección del orificio Fija e inalterable Calibración fija de origen"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Taponamiento total o parcial por virutas metálicas del compresor o desecante roto."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Falta de frío en el habitáculo, presión de baja anormalmente baja y presión de alta muy elevada."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Extraer el orificio mediante el útil extractor especial y verificar la limpieza de sus mallas filtrantes."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.acumulador",
+   "nt": 230,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "acumulador",
+   "titulo": "Acumulador",
+   "codigo": "No documentado en fuentes",
+   "menu": "Acumulador No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Circuitos de A/C provistos de orificio calibrado",
+   "ubicacion": "En el vano motor, entre la salida del evaporador y la aspiración del compresor",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Separar la fase líquida y gaseosa del refrigerante para garantizar que sólo entre gas al compresor, filtrando e reteniendo la humedad."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El fluido difásico procedante del evaporador choca contra un deflector interno. El líquido, más pesado, cae al fondo de la botella, mientras que el gas asciende y es aspirado por la parte superior del tubo de aspiración en \"U\". Un orificio de retorno en el fondo del tubo permite la aspiración progresiva del aceite decantado."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Depósito cilíndrico con deflector de entrada, bolsa de desecante en el fondo, tubo de aspiración curvado y orificio dosificador de aceite."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Parámetro Valor prescrito Condiciones de validez Intervalo de sustitución recomendado Cada 2 años Mantenimiento preventivo Sustitución obligatoria En cualquier apertura del circuito Para evitar la saturación del desecante"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Saturación del desecante por agua, generando obstrucción y post-expansión; ruptura del saco de desecante."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Pérdida de rendimiento de refrigeración, golpe de líquido en el compresor o presencia de corrosión ácida interna."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Verificar el historial de sustitución (máximo 2 años) y comprobar si existen diferencias de temperatura entre el tubo de entrada y salida del acumulador."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Despiece interno del acumulador con deflector y tubo en U — Fuente: CLIMATIZACION INTRODUCCION.PDF, pág. 135"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.presostato",
+   "nt": 231,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "presostato",
+   "titulo": "Presostato",
+   "codigo": "No documentado en fuentes",
+   "menu": "Presostato No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema de seguridad e intermediación del circuito frigorífico",
+   "ubicacion": "En la línea de alta presión, sobre el filtro deshidratante o en las canalizaciones HP",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Proteger el sistema desconectando el compresor por presión excesivamente alta o baja, y ordenar el salto de la 2ª velocidad del grupo motoventilador (GMV)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Interruptor accionado por presión hidráulica. Un diafragma bimetálico/mecanizado abre o cierra contactos eléctricos según los umbrales de presión alcanzados en la línea de alta."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Módulo estanco provisto de toma roscada para fluido y conector de contactos eléctricos (BP, HP y MP)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Función del presostato Umbral de presión de corte / activación Condiciones de validez Corte por sobrepresión (HP) ** 27 bar** Presión de marcha peligrosa Corte por baja presión (BP) < 2 bar Arranque con falta de gas o temp. exterior < -10 ºC Activación 2ª velocidad GMV ** 18 bar** Elevación de presión en condensador"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fogueo de contactos eléctricos; fugas por la rosca de conexión; fallo de conmutación de la 2ª velocidad del electroventilador."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El compresor no se acopla nunca, o el sistema se dispara por sobrepresión al no saltar la 2ª velocidad del ventilador a 18 bar."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Comprobar continuidad de los contactos con polímetro y verificar presiones reales en el puente de manómetros."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.sonda-del-evaporador",
+   "nt": 232,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "sonda-del-evaporador",
+   "titulo": "Sonda Del Evaporador",
+   "codigo": "No documentado en fuentes",
+   "menu": "Sonda Del Evaporador No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema de seguridad contra la congelación del evaporador",
+   "ubicacion": "Pinchada entre las aletas del evaporador, en el punto térmico más frío",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Supervisar la temperatura del evaporador para desconectar el compresor antes de que se forme hielo sobre las aletas."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Sensor termostático o termistencia. Si la temperatura del evaporador cae hasta -1 ºC, el interruptor/sensor ordena el corte eléctrico del compresor. Cuando la temperatura asciende a +4 ºC, vuelve a permitir el acoplamiento del compresor."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Sonda mecánica de capilar o sensor electrónico NTC de varilla de inserción directa."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Estado de la sonda Temperatura del evaporador Acción sobre el compresor Desconexión de seguridad -1 ºC Desconecta el compresor (Corte por hielo) Reconexión de servicio +4 ºC Vuelve a conectar el compresor"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Descalibración del elemento sensible; desprendimiento o mala posición de la sonda entre las aletas."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El evaporador se bloquea por una masa de hielo impenetrable, cortando por completo el caudal de aire hacia el habitáculo."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Medir la resistencia del captador o verificar los ciclos de corte (a -1 ºC) y reconexión (a +4 ºC) con el equipo de clima funcionando."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.radiocasete-e-interfaz-de-comunicacion",
+   "nt": 233,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "radiocasete-e-interfaz-de-comunicacion",
+   "titulo": "Radiocasete E Interfaz De Comunicación",
+   "codigo": "R (CLIM ON LINE / Módulo técnico)",
+   "menu": "Radiocasete E Interfaz De Comu R (CLIM ON LINE / Módulo técnico)",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Vehículos con gestión electrónica de climatización integrando la pasarela de datos",
+   "ubicacion": "Consola central del salpicadero",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Actuar como pasarela de comunicación e interfaz de datos entre el panel de mando, los captadores térmicos y el calculador de climatización."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Procesa señales multiplexadas bidireccionales, convirtiendo los códigos de entrada de la botonera en señales de control para la UCE y la pantalla de visualización."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Módulo electrónico multifunción con pasarela de bus de datos integrada."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Parámetro Valor de trabajo Alimentación de señal 5 V CC / 12 V CC según línea de bus"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Avería en el microprocesador del bus de comunicación; pérdida de transmisión hacia la pantalla del salpicadero."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Los datos del climatizador desaparecen del display o la UCE no responde a las órdenes de las teclas."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Verificar la comunicación mediante el útil de diagnosis e inspeccionar la continuidad de las líneas del bus."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.radiador-de-calefaccion",
+   "nt": 234,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "radiador-de-calefaccion",
+   "titulo": "Radiador De Calefacción",
+   "codigo": "No documentado en fuentes",
+   "menu": "Radiador De Calefacción No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema de calefacción del habitáculo",
+   "ubicacion": "En el interior del bloque de climatización del salpicadero",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Cedér calor al aire que entra al habitáculo utilizando la energía térmica del líquido de refrigeración del motor."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Intercambiador térmico líquido/aire. El líquido caliente del motor (a 80-90 ºC) circula por sus tubos de aluminio. El aire impulsado por el GMV atraviesa sus aletas, absorbe el calor y se calienta antes de salir por los difusores."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Radiador de aluminio compacto conectado en derivación al circuito de refrigeración del motor."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Parámetro Valor de trabajo Condiciones de validez Temperatura de entrada del líquido 80 ºC a 90 ºC Motor a temperatura de servicio"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Taponamiento interno por lodos del anticongelante; fugas de líquido que mojan la moqueta del vehículo."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "No sale aire caliente aunque el motor esté caliente, o aparece vaho grasiento en el parabrisas con olor a anticongelante."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Tocar los dos tubos de agua del radiador en el vano motor (ambos deben estar muy calientes) y comprobar que no existan fugas."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del circuito de refrigeración del motor y radiador de calefacción — Fuente: CLIMATIZACION INTRODUCCION.PDF, pág. 147"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.impulsor-de-aire",
+   "nt": 235,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "impulsor-de-aire",
+   "titulo": "Impulsor De Aire",
+   "codigo": "No documentado en fuentes",
+   "menu": "Impulsor De Aire No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema de ventilación, calefacción y aire acondicionado",
+   "ubicacion": "En el interior del mueble de climatización",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Poner en movimiento e impulsar el caudal de aire hacia las diferentes toberas del habitáculo."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Turbina centrífuga accionada por un motor eléctrico de corriente continua. El dispositivo de control de potencia varía la tensión aplicada al motor para regular el caudal de aire."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Consta de motor eléctrico, turbina de álabes, dispositivo de control de potencia (resistencias o módulo electrónico) y conducto de refrigeración propio."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Parámetro Valor de trabajo Tensión de alimentación 0 V a 12 V CC (variable según velocidad seleccionada)"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Desgaste de escobillas del motor; fallo térmico en la tarjeta/resistencia de velocidades; agarrotamiento por hojas o suciedad."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El aire no sale por ninguna tobera o el impulsor sólo funciona en la máxima velocidad (4ª)."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Alimentar el motor directamente con 12 V para verificar su giro y medir la caída de tensión en el módulo de control de potencia."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.sistemas-de-regulacion-y-accionadores",
+   "nt": 236,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "sistemas-de-regulacion-y-accionadores",
+   "titulo": "Sistemas De Regulación Y Accionadores",
+   "codigo": "",
+   "menu": "Sistemas De Regulación Y Accionadores",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Comparar la regulación manual y electrónica de climatización y definir la tipología de los accionadores de trampillas. Se aplica al diagnóstico del sistema de distribución de aire."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Regulación Manual: El conductor ajusta manualmente la mezcla y velocidad. El sistema funciona de forma intermitente y no compensa los cambios de temperatura exterior. Regulación Electrónica (Climatizador Automático): Un calculador procesa la información de múltiples sensores (CTN) y gestiona de forma continua el caudal, la mezcla y la distribución del aire sin intervención del usuario. Accionadores de trampillas: 1. Manuales: Mediante cables o varillas flexibles. 2. Por depresión: Accionados por pulmones neumáticas con bomba de vacío. 3. Motores de Corriente Continua: Simples, con funcionamiento en par de bloqueo (todo/nada) o potenciómetro de copia. 4. Motores Paso a Paso: Precisos, de fácil regulación digital intermitente por impulsos."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Los accionadores posicionan las trampillas de recirculación, mezcla (caliente/frío), distribución a pies, frontal y desempañado del parabrisas."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Tipo de sistema Intervención del conductor Precisión de ajuste Manual Ajuste continuo de mandos Variable según sensación térmica Electrónico (AUTO) Selección única de la temp. deseada Corrección automática continua"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Intentar calibrar un motor CC de bloqueo sin borrar averías: la UCE desactiva la salida por sobrecorriente si detecta atascos mecánicos en la trampilla."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.captadores-de-temperatura-ctn",
+   "nt": 237,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "captadores-de-temperatura-ctn",
+   "titulo": "Captadores De Temperatura Ctn",
+   "codigo": "No documentado en fuentes",
+   "menu": "Captadores De Temperatura Ctn No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Climatizadores automáticos con regulación electrónica",
+   "ubicacion": "Repartidos en la entrada de aire exterior, salida del evaporador, salida del radiador de calefacción y dentro del habitáculo",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir las temperaturas del aire en los puntos clave del circuito e informar al calculador electrónico."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Termistancias de Coeficiente de Temperatura Negativo (CTN). Su resistencia eléctrica es inversamente proporcional a la temperatura: al aumentar la temperatura, su resistencia disminuye según una curva característica no lineal. La sonda de habitáculo incorpora además una microturbina para aspirar aire y homogeneizar la lectura."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Sensor termistor de 2 vías encapsulado. La sonda interna incluye un micromotor de turbina."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Variación de Temperatura Comportamiento de la Resistencia Temperatura AUMENTA Resistencia DISMINUYE (R ) Temperatura DISMINUYE Resistencia AUMENTA (R )"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Bloqueo de la microturbina por pelusas; interrupción del hilo o cortocircuito a masa."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El climatizador expulsa aire excesivamente caliente o frío de forma descontrolada al asumir un valor sustitutivo por avería."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Medir la resistencia con multímetro en Ohmios a diferentes temperaturas y comprobar que la microturbina gira al conectar el encendido."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Curva característica de resistencia frente a temperatura de un sensor CTN — Fuente: CLIMATIZACION INTRODUCCION.PDF, pág. 171"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.filtro-de-habitaculo",
+   "nt": 238,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "filtro-de-habitaculo",
+   "titulo": "Filtro De Habitáculo",
+   "codigo": "No documentado en fuentes",
+   "menu": "Filtro De Habitáculo No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Filtrado de aire para el interior del vehículo",
+   "ubicacion": "En la entrada de aire en el compartimento motor o bajo el salpicadero entre el impulsor y el evaporador",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Retener los agentes contaminantes, alérgenos, polvo y partículas para evitar su entrada al habitáculo."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Filtración mecánica y por carga electrostática. Las fibras de polipropileno de sección rectangular atraen y retienen las partículas en profundidad sin frenar el flujo de aire. Al ser hidrófugas, evitan la proliferación de bacterias y mohos."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Módulo filtrante de polipropileno resistente a la humedad y productos químicos (sal, champús). Existen versiones simples de polen y de carbón activo."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Parámetro Valor prescrito Condiciones de validez Intervalo de sustitución Cada 15.000 km o 1 año Lo que antes ocurra Población sensible protegida 30% alérgicos / 10% asmáticos Retención de polen y esporas"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Saturación por polvo, hojas y hollín que taponan por completo el paso de aire."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Caudal de aire muy débil por las toberas, desempañado lento, vaho continuo en los cristales, depósitos de polvo en el salpicadero y malos olores."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Comprobar visualmente el grado de suciedad o realizar la medición de caudal con el equipo Airtest ."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.comprobacion-del-filtro-de-habitaculo-con-airtest",
+   "nt": 239,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "comprobacion-del-filtro-de-habitaculo-con-airtest",
+   "titulo": "Comprobación Del Filtro De Habitáculo Con Airtest",
+   "codigo": "",
+   "menu": "Comprobación Del Filtro De Habitáculo",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Diagnosticar de forma rápida y objetiva el nivel de saturación del filtro de habitáculo desde el interior del vehículo sin necesidad de desmontarlo. Se aplica en mantenimientos preventivos."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El equipo Airtest mide la presión de aire soplado en el difusor seleccionado. Un filtro saturado reduce el caudal y la presión, lo que es detectado por el captador electrónico del instrumento."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Motor a temperatura de servicio y estabilizado a 1.500 rpm. Mando de calefacción al mínimo, A/C desconectado y recirculación apagada. Ventilador del vehículo al máximo de velocidad."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Dispositivo de diagnóstico Valeo Airtest . Tabla de interpretación de medidas por modelo de vehículo."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Sentarse en el asiento del conductor; abrir el difusor de aire indicado en la tabla del vehículo y cerrar el resto de toberas frontales. Conectar el tubo del captador al racor + del Airtest. Pulsar ON y verificar que la pantalla marque cero ( 0,2). Arrancar el motor, seleccionar salida frontal, calefacción al mínimo, ventilación al máximo y estabilizar el motor a 1.500 rpm. Aplicar y presionar fuertemente el canalizador del captador sobre el difusor seleccionado. Anotar la lectura digital mostrada en el display. Consultar el código de color en la tabla de referencia: - ROJO: Filtro saturado. Sustituir de inmediato. - ÁMBAR: Filtro parcialmente saturado. Aconsejar cambio. - VERDE: Filtro correcto. Si se sustituye el filtro, repetición de la prueba: el nuevo valor debe situarse obligatoriamente en la zona VERDE."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Indicación / Código de color Estado del filtro de habitáculo Acción requerida Zona ROJA Filtro totalmente saturado Sustitución inmediata Zona ÁMBAR Parcialmente saturado Aconsejar cambio al cliente Zona VERDE Filtro en buen estado Sin intervención Puesta a cero del Airtest 0,0 ( 0,2) Antes de presionar sobre la tobera"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Si tras montar un filtro nuevo la lectura sigue en zona ROJA: existe una avería en el circuito de aire (conductos sueltos, trampilla encasquillada, relé o impulsor defectuoso). Jamás soplar dentro del canalizador del Airtest: se descalibra de forma irreversible."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Confirmar que la medición con el filtro nuevo instalado se ubica holgadamente dentro de la franja VERDE."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Equipo Airtest aplicado sobre la tobera central para la medición de caudal — Fuente: CLIMATIZACION INTRODUCCION.PDF, pág. 192"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.diagnostico-por-subenfriamiento-y-recalentamiento",
+   "nt": 240,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "diagnostico-por-subenfriamiento-y-recalentamiento",
+   "titulo": "Diagnóstico Por Subenfriamiento Y Recalentamiento",
+   "codigo": "",
+   "menu": "Diagnóstico Por Subenfriamiento Y Reca",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Determinar la carga exacta de refrigerante y el estado de la válvula de expansión calculando los valores de subenfriamiento y recalentamiento. Se aplica a la localización de averías en el circuito frigorífico."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Subenfriamiento (SR): Diferencia entre la temperatura de condensación (leída en la escala de temperatura del manómetro de Alta Presión) y la temperatura real medida con termómetro de contacto a la salida del condensador. [SR = T_{condensación (manómetro HP)} - T_{salida condensador (termómetro)}] Recalentamiento (RC): Diferencia entre la temperatura real medida a la salida del evaporador (aspiración del compresor) y la temperatura de evaporación (leída en la escala del manómetro de Baja Presión). [RC = T_{salida evaporador (termómetro)} - T_{evaporación (manómetro BP)}]"
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Motor en marcha y climatizador funcionando al máximo rendimiento. Temperatura exterior > 16 ºC."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Puente de manómetros (HP y BP). Termómetro digital de contacto de dos sondas."
+    },
+    {
+     "titulo": "Desarrollo y diagnóstico",
+     "texto": "Conectar los manómetros de HP y BP a las tomas de servicio. Colocar las sondas de contacto a la salida del condensador y a la salida del evaporador. Calcular SR y RC y comparar con los límites nominales (2 ºC a 10 ºC): - Falta de fluido refrigerante: Subenfriamiento DÉBIL (< 2 ºC) + Recalentamiento ALTO (> 10 ºC). - Exceso de fluido refrigerante: Subenfriamiento ALTO (> 10 ºC) + Recalentamiento DÉBIL (< 2 ºC). - Filtro deshidratante saturado / Obstruido: Subenfriamiento ALTO (> 10 ºC) + Recalentamiento NORMAL (2 a 10 ºC) + Caída de temperatura a lo largo del filtro. - Compresor averiado (Pérdida de compresión): BP demasiado alta + HP demasiado baja. - Aire / Incondensables en el circuito (Mal vacío): BP alta + HP alta + Subenfriamiento NORMAL."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Magnitud calculada Margen de correcto funcionamiento Diagnóstico por desviación Subenfriamiento (SR) 2 ºC a 10 ºC < 2 ºC: Falta de gas / > 10 ºC: Exceso de gas Recalentamiento (RC) 2 ºC a 10 ºC < 2 ºC: Exceso de gas / > 10 ºC: Falta de gas Temperatura de aire soplado 2 ºC a 10 ºC Para temperatura ambiente entre 15 ºC y 25 ºC"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Jamás recargar fluido sin haber controlado previamente el subenfriamiento y el recalentamiento. Confundir la falta de gas con una válvula de expansión adaptable inadaptada (una aguja de diámetro incorrecto provoca poco caudal, alta presión y temperatura de evaporación elevada simulando falta de carga)."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Verificar que tras el ajuste de carga o reparación, tanto el SR como el RC se estabilicen entre 2 ºC y 10 ºC."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Medición de temperaturas y presiones para el cálculo de subenfriamiento y recalentamiento — Fuente: CLIMATIZACION INTRODUCCION.PDF, pág. 203 y 209"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.diagnostico-de-climatizacion-con-climtest",
+   "nt": 241,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "diagnostico-de-climatizacion-con-climtest",
+   "titulo": "Diagnóstico De Climatización Con Climtest",
+   "codigo": "",
+   "menu": "Diagnóstico De Climatización Con Climt",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Realizar un diagnóstico automático integral de las prestaciones y componentes del circuito frigorífico mediante la estación de comprobación Climtest. Se aplica a mantenimientos preventivos y localización de averías."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El equipo Climtest toma simultáneamente 6 magnitudes (presión HP, presión BP, temperatura de entrada a la válvula de expansión, temperatura de aspiración del compresor, temperatura ambiente y temperatura del aire soplado en toberas). Realiza 100 mediciones cada 20 segundos y calcula automáticamente el subenfriamiento y el recalentamiento, mostrando el diagnóstico en pantalla."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Temperatura ambiente exterior > 16 ºC (a temperaturas inferiores el compresor corta por seguridad imposibilitando la prueba). Seleccionar correctamente el tipo de fluido frigorífico en el aparato (R12 o R134a)."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Estación portátil Valeo Climtest ."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Conectar las tomas de presión y las sondas térmicas del Climtest en los puntos del circuito correspondientes. Encender el Climtest y seleccionar el tipo de gas ( R12 o R134a ). Poner en marcha el motor y el sistema de aire acondicionado al máximo rendimiento. Esperar a que el microprocesador procese las cadenas de ciclos de medición. Leer el resultado del diagnóstico en el display digital del equipo: - \"OK\" Sistema en perfecto estado. - \"Falta fluido frigorífico\" Fuga o subcarga. - \"Exceso de fluido en circuito\" Sobrecarga. - \"Filtro Deshidratante saturado\" Obstrucción en la línea de líquido. - \"Problema en circuito\" Fallo en compresor o válvula de expansión. - \"Error. Revise conexiones\" Sonda o latiguillo mal conectado."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Parámetro evaluado por Climtest Criterio de validez interna Límite de temperatura ambiental > 16 ºC para realizar la prueba Muestreo del calculador 100 mediciones cada 20 segundos sobre 6 magnitudes Temperatura en difusores (T_{as}) 2 ºC a 10 ºC (para T_{ext} entre 15 ºC y 25 ºC)"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Realizar la prueba con temperatura exterior < 16 ºC: arroja diagnósticos erróneos al entrar la cilindrada variable en posición mínima. Un error de tan solo 1 ºC en la colocación de una sonda de contacto alterará el cálculo del subenfriamiento provocando un falso diagnóstico."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Confirmar la indicación de mensaje \"OK\" en la pantalla del Climtest tras concluir la reparación."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Dispositivo Valeo Climtest y sus conexiones para la medición del circuito — Fuente: CLIMATIZACION INTRODUCCION.PDF, pág. 190 y 238"
     }
    ]
   }
