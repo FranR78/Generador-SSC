@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">477 notas · 21/09/2026</p>
+  <p class="sidebar-meta">486 notas · 21/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -603,6 +603,15 @@
     <li><a href="#nt489">NT489 · Sensor De Humedad En El Conduc G657</a></li>
     <li><a href="#nt491">NT491 · Sensor De Humedad Del Aire G355</a></li>
     <li><a href="#nt492">NT492 · Unidad De Control Del Turboven J126 / V2</a></li>
+    <li><a href="#nt493">NT493 · Variantes Del Sistema Climático Y Desc</a></li>
+    <li><a href="#nt494">NT494 · Trampilla Central Con Orificio De Dese</a></li>
+    <li><a href="#nt495">NT495 · Transmisor De Presión Piezorre G65</a></li>
+    <li><a href="#nt496">NT496 · Unidad De Control Climatronic  J255 (Unidad de control) / E87 (Unidad de manejo e indicación)</a></li>
+    <li><a href="#nt497">NT497 · Autodiagnóstico Del Sistema Climatroni</a></li>
+    <li><a href="#nt498">NT498 · Fotosensor Para La Radiación S G107</a></li>
+    <li><a href="#nt499">NT499 · Transmisores De Temperatura Ex G17 (Exterior paragolpes) / G89 (Canal de aire aspirado)</a></li>
+    <li><a href="#nt500">NT500 · Motores Eléctricos De Trampill V68 (con potenciómetro G92), V70 (con G112), V71 (con G113), V85 (con G114)</a></li>
+    <li><a href="#nt501">NT501 · Regulación Conjunta De Las Trampillas</a></li>
   </ul>
 </nav>
 
@@ -33106,8 +33115,521 @@ En el compresor Denso 6SEU12 de regulación externa (sin embrague), la UCE contr
     </div>
   </section>
 
+  <section id="nt493" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 493 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Variantes Del Sistema Climático Y Desconexión De Recirculación</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Explicar las tres variantes del sistema de adecuación climática del habitáculo (sólo calefacción, aire acondicionado manual y Climatronic) y el mecanismo de desconexión de la recirculación de aire en la función de descongelación.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El accionamiento de la trampilla de recirculación se realiza mediante un motor eléctrico, eliminando la antigua electroválvula neumática de tres vías N63. Al seleccionar la salida de descongelación con la recirculación previamente activada, el sistema desconecta mecánicamente (en calefacción y aire acondicionado manual) o electrónicamente (en Climatronic) la recirculación. Esto impide enviar aire húmedo del interior del habitáculo hacia los cristales para evitar su empañado.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Variantes del sistema:</strong><br />
+  1. <em>Sólo calefacción:</em> Regulación manual.<br />
+  2. <em>Aire acondicionado manual:</em> Accionamiento de trampillas de distribución y temperatura mediante cables Bowden; trampilla de recirculación accionada por motor eléctrico.<br />
+  3. <em>Climatronic:</em> Regulación completamente electrónica de todas las trampillas mediante motores eléctricos.  </li>
+<li><strong>Lógica de desconexión de recirculación:</strong>  </li>
+<li>Al activar la función de descongelación/desempañado del parabrisas con la recirculación encendida, el mando desacopla mecánicamente la recirculación (en sistemas manuales) o la UCE J255 invierte la posición de la trampilla de forma electrónica (en Climatronic).  </li>
+<li>Se fuerza la entrada de aire fresco exterior para reducir la humedad en el flujo de ventilación.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Intentar desempañar los cristales con la recirculación conectada: mantiene la humedad en el interior provocando la condensación inmediata en el parabrisas.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobar que al pulsar o girar el mando a la posición de descongelación, el testigo/mando de recirculación se apaga y la trampilla abre el paso de aire fresco.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>Garantizar la visibilidad a través del parabrisas y cristales delanteros.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT493_01</code> Esquema del mueble climático y paneles de mando de aire acondicionado manual y Climatronic — Fuente: Toledo 99 CLIMA.pdf, pág. 44</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt494" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 494 </div>
+    <div class="nota-body">
+      <h1>Trampilla Central Con Orificio De Desempañado</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">S</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">b</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">S</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">T</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Mueble climatizador, regulando la salida de aire hacia los difusores centrales y laterales</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Regular la salida del caudal de aire hacia los difusores centrales y laterales, asegurando un flujo constante hacia las ventanillas laterales incluso con la trampilla cerrada.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Trampilla de distribución provista de un orificio físico en su estructura. Aunque la chapaleta se cierre completamente para derivar todo el aire hacia la salida superior de descongelación del parabrisas, el orificio permite el paso continuo de una fracción de aire hacia los difusores laterales para desempañar los cristales de las puertas delanteras.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Chapaleta con orificio calibrado de paso de aire integrado en su cuerpo. Posicionada por cable Bowden (manual) o por el motor eléctrico V70 (Climatronic).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Falta de desempañado en los cristales de las puertas delanteras si el orificio se obstruye.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Verificar la salida de flujo de aire por los difusores laterales al seleccionar la función de descongelación total.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt495" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 495 </div>
+    <div class="nota-body">
+      <h1>Transmisor De Presión Piezorresistivo G65 — <strong>G65</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">M</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">1</span><span class="badge-aplicacion">.</span><span class="badge-aplicacion">4</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">L</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">1</span><span class="badge-aplicacion">.</span><span class="badge-aplicacion">6</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">L</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">S</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">T</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Circuito frigorífico, instalado junto a la válvula de expansión (específico para motores 1.4 L y 1.6 L, sustituyendo al conmutador F129)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir de forma continua la presión instantánea del fluido refrigerante e informar a la UCE de motor y a la UCE de aire acondicionado para la gestión del ralentí y la protección del circuito.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Sensor piezoeléctrico de silicio. La presión del refrigerante deforma mecánicamente un elemento de silicio, lo que modifica su resistencia eléctrica. Un circuito electrónico interno convierte esta variación de resistencia en una señal de tensión proporcional a la presión existente.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Sensor piezorresistivo de 3 pines (alimentación 12 V, masa y señal de tensión variable hacia las UCEs).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Valor numérico</th>
+<th>Condiciones de validez</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tensión de alimentación</strong></td>
+<td><strong>12 V CC</strong></td>
+<td>Entre bornes del sensor</td>
+</tr>
+<tr>
+<td><strong>Señal de salida</strong></td>
+<td><strong>Tensión variable continua</strong></td>
+<td>Proporcional a la presión del circuito</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Fallo de la electrónica interna del sensor o interrupción de su cableado de señal.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>En caso de avería del transmisor G65, el sistema de aire acondicionado se desconecta completamente por seguridad.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Medir tensión de alimentación de 12 V en su conector, verificar la señal de tensión de salida emitida hacia las UCEs y consultar el registro de averías mediante el equipo de diagnosis.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt496" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 496 </div>
+    <div class="nota-body">
+      <h1>Unidad De Control Climatronic J255 — <strong>J255 (Unidad de control) / E87 (Unidad de manejo e indicación)</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">C</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">á</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">C</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">S</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">T</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Consola central / salpicadero del vehículo</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Gestionar de forma automatizada la temperatura interior del habitáculo, el posicionado de todas las trampillas, el acoplamiento del compresor y la velocidad de la turbina, además de incorporar autodiagnóstico.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Procesa las señales de entrada de los sensores térmicos (G17, G89, G56, G192), fotosensor (G107), presostato/transmisor (F129/G65) e interruptor de temperatura (F163). Tras calcular la necesidad de confort, emite señales de salida para los motores de trampillas (V68, V70, V71, V85), regulador de turbina (J126), relé de A/C (J293) y embrague N25.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Unidad electrónica integrada con pantalla digital display, pulsadores de control y conectores múltiples (A, B, C, D).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Fallo en la regulación de trampillas o fallos de comunicación con los sensores.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Inoperatividad de la regulación automática o parpadeo/corte de funciones de climatización.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Realizar el autodiagnóstico mediante VAG 1551 / VAG 1598 con los cables adaptadores VAG 1598/11 y VAG 1598/12.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt497" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 497 <span class="subtipo">Procedimiento</span></div>
+    <div class="nota-body proceso">
+      <h1>Autodiagnóstico Del Sistema Climatronic</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Establecer las funciones de autodiagnóstico disponibles en la unidad Climatronic J255 mediante el equipo de diagnosis VAG.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>La UCE J255 monitoriza continuamente el estado de sus sensores y actuadores. A través del conector OBD y el protocolo de diagnosis VAG, permite consultar memorias, activar componentes y realizar calibraciones de posición inicial.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Encendido conectado (15 ON).  </li>
+<li>Equipo de diagnosis (VAG 1551 / VAG 1552 / VAS) conectado al puerto de diagnosis del vehículo.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <ul>
+<li>Equipo de diagnosis VAG 1551 / VAG 1552 / VAG 1598 con adaptador VAG 1598/11 y 1598/12.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>Seleccionar la dirección <strong>08 - Electrónica del climatizador</strong> e ingresar en los siguientes modos de trabajo:<br />
+1. <strong>01 - Versión unidad de control:</strong> Muestra la identificación de hardware y firmware de la UCE.<br />
+2. <strong>02 - Consulta de la memoria de averías:</strong> Lee las averías registradas en sensores y motores.<br />
+3. <strong>03 - Diagnóstico de elementos actuadores:</strong> Activa secuencialmente relés, acoplamiento N25 y servomotores para verificar su respuesta física.<br />
+4. <strong>04 - Iniciar ajuste básico:</strong> Realiza el aprendizaje y calibración de los topes finales de los motores de las trampillas.<br />
+5. <strong>05 - Borrar la memoria de averías:</strong> Elimina los códigos de fallo tras reparar las averías.<br />
+6. <strong>06 - Finalizar la emisión:</strong> Cierra la comunicación de diagnosis.<br />
+7. <strong>07 - Codificar la unidad de control:</strong> Ajusta la codificación según equipamiento y motorización.<br />
+8. <strong>08 - Leer bloque de valores de medición:</strong> Muestra valores en tiempo real de temperatura, posición de potenciómetros y señales de presión.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Omitir la función <strong>04 - Iniciar ajuste básico</strong> tras sustituir un motor de trampilla o la UCE: la unidad no reconocerá los límites de carrera provocando errores de regulación.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Ausencia de códigos de avería en la función 02 y confirmación de "Ajuste básico realizado" en la función.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt498" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 498 </div>
+    <div class="nota-body">
+      <h1>Fotosensor Para La Radiación Solar G107 — <strong>G107</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">C</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">S</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">T</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Parte central del tablero de instrumentos / salpicadero</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir la intensidad de la radiación solar directa que incide sobre los ocupantes del vehículo para corregir la temperatura del aire soplado.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Contiene un fotodiodo semiconductor sensible a la luz que modifica su paso de corriente eléctrica según la intensidad luminosa recibida. Un filtro y un elemento óptico dirigen los rayos: si la radiación incide de forma oblicua, el elemento óptico canaliza un mayor porcentaje de luz al fotodiodo (exige mayor refrigeración); si la radiación es vertical, la apantalla parcialmente (reduce la exigencia de refrigeración al disminuir la sensación térmica).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Sensor fotoeléctrico formado por carcasa con tapa, filtro, elemento óptico apantallante y fotodiodo semiconductor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Estado de radiación solar</th>
+<th>Comportamiento del elemento óptico</th>
+<th>Respuesta del Climatronic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Incidencia oblicua del sol</strong></td>
+<td>Canaliza alto porcentaje de luz al fotodiodo</td>
+<td>Aumenta la capacidad de refrigeración</td>
+</tr>
+<tr>
+<td><strong>Incidencia vertical del sol</strong></td>
+<td>Apantalla y dirige menos radiación al fotodiodo</td>
+<td>Modera la capacidad de refrigeración</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Suciedad o tapado accidental de la lente con objetos depositados sobre el salpicadero.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>En caso de avería del fotosensor G107, la UCE adopta una <strong>función sustitutiva</strong>, asumiendo un <strong>valor fijo de radiación intermedio</strong> dentro de su escala de medición.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobar la variación de caída de tensión en sus bornes al taparlo y exponerlo a una fuente de luz intensa, o consultar el bloque de valores de medición (función 08).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt499" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 499 </div>
+    <div class="nota-body">
+      <h1>Transmisores De Temperatura Exterior G17 Y G89 — <strong>G17 (Exterior paragolpes) / G89 (Canal de aire aspirado)</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">C</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">S</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">T</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> - G17: Zona izquierda del paragolpes delantero</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir la temperatura del aire atmosférico exterior y del aire fresco de entrada para calcular la posición de las trampillas de mezcla, recirculación y velocidad del ventilador.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Sensores térmicos basados en resistencias de coeficiente de temperatura negativo (NTC). Al aumentar la temperatura del aire, disminuye su resistencia eléctrica. La UCE J255 lee ambos sensores y <strong>utiliza siempre el valor de temperatura más bajo</strong> para evitar errores causados por el calor radiado del motor o del asfalto.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Dos termistores NTC conectados a la unidad Climatronic J255.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Estado de los sensores</th>
+<th>Valor utilizado por la UCE J255</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ambos sensores OK</strong></td>
+<td>La UCE selecciona y procesa el <strong>valor más bajo</strong> de los dos</td>
+</tr>
+<tr>
+<td><strong>Avería de un transmisor</strong></td>
+<td>La UCE toma la medición del <strong>transmisor que funciona</strong></td>
+</tr>
+<tr>
+<td><strong>Avería de ambos transmisores (G17 y G89)</strong></td>
+<td>La UCE adopta el <strong>valor sustitutivo fijo de 10 ºC</strong></td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Corte por impacto en el paragolpes (G17) o sulfatación de conectores por humedad.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Si se avería uno, el sistema utiliza el otro. Si fallan ambos, adopta un valor fijo sustitutivo de 10 ºC.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Medir resistencia con un multímetro en bornes de cada sensor a diferentes temperaturas ambientales y comprobar lecturas en el bloque de valores de medición.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt500" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 500 </div>
+    <div class="nota-body">
+      <h1>Motores Eléctricos De Trampillas Con Potenciómetro (V68, V70, V71, V85) — <strong>V68 (con potenciómetro G92), V70 (con G112), V71 (con G113), V85 (con G114)</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">C</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">S</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">T</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Mueble climatizador</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Mover mecánicamente las trampillas de temperatura, central, velocidad/recirculación y reposapiés/descongelación, informando a la UCE de su posición exacta.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Motores de corriente continua de giro limitado. Se alimentan a 12 V y cambian su sentido de giro al invertir la polaridad de la alimentación enviada por la UCE J255. En su interior, un potenciómetro solidario al eje emite una señal de tensión variable que informa a la UCE de la posición angular real de la trampilla.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Valor prescrito</th>
+<th>Condiciones de validez</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tensión de alimentación del motor</strong></td>
+<td><strong>12 V CC</strong></td>
+<td>En bornes del motor (polaridad reversible)</td>
+</tr>
+<tr>
+<td><strong>Señal del potenciómetro</strong></td>
+<td><strong>Tensión variable de retorno</strong></td>
+<td>Entre cursor y masa según posición</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Desgaste o suciedad en las pistas de carbón del potenciómetro interno; rotura de piñones de plástico.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Bloqueo de la trampilla en una posición fija y registro de código de error en la memoria de averías.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Realizar el <strong>Ajuste Básico mediante el VAG 1551</strong> (función 04) cada vez que se sustituya un motor o la UCE J255 para memorizar los topes finales de carrera.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características y asociación de componentes</div>
+        <ul>
+<li><strong>V68:</strong> Motor de trampilla de temperatura (con potenciómetro <strong>G92</strong>).  </li>
+<li><strong>V70:</strong> Motor de trampilla central (con potenciómetro <strong>G112</strong>).  </li>
+<li><strong>V71:</strong> Motor de trampillas de velocidad y recirculación (con potenciómetro <strong>G113</strong>).  </li>
+<li><strong>V85:</strong> Motor de trampilla de descongelación / reposapiés (con potenciómetro <strong>G114</strong>).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt501" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 501 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Regulación Conjunta De Las Trampillas De Velocidad Y Recirculación</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Explicar el funcionamiento y las posiciones de trabajo de las trampillas de velocidad y recirculación accionadas mecánicamente por el único motor V71.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Ambas trampillas están vinculadas mecánicamente mediante dos guías a las que se conecta el eje del motor V71. El sistema adapta el caudal de aire fresco para evitar variaciones causadas por la presión dinámica al aumentar la velocidad del vehículo, o bien bloquea la entrada de aire exterior en modo recirculación.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Sistema Climatronic encendido y vehículo en circulación.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>El motor V71 posiciona simultáneamente ambas trampillas en tres estados de servicio:<br />
+1. <strong>Entrada de aire fresco:</strong> Las dos trampillas abren completamente el paso de aire desde el exterior hacia el habitáculo.<br />
+2. <strong>Entrada de aire en función de la velocidad:</strong> A altas velocidades, la chapaleta de velocidad reduce su apertura para evitar un aumento excesivo de caudal en el habitáculo.<br />
+   - Se activa a partir de <strong>80 km/h</strong>.<br />
+   - Por encima de <strong>160 km/h</strong> se cierra por completo, dejando únicamente una pequeña entrada residual de aire.<br />
+   - <em>Excepción:</em> Si existe una gran diferencia entre la temperatura solicitada y la temperatura real del habitáculo, la trampilla se mantiene abierta aunque se supere la velocidad para enfriar/calentar rápidamente la cabina.<br />
+3. <strong>Recirculación activada:</strong> Ambas trampillas se desplazan a su posición superior cerrando por completo la entrada de aire exterior.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Condición de velocidad del vehículo</th>
+<th>Estado de la trampilla de velocidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Velocidad &lt; 80 km/h</strong></td>
+<td>Trampilla totalmente abierta</td>
+</tr>
+<tr>
+<td><strong>Velocidad entre 80 km/h y 160 km/h</strong></td>
+<td>Cierre progresivo en función de la velocidad</td>
+</tr>
+<tr>
+<td><strong>Velocidad &gt; 160 km/h</strong></td>
+<td>Cierre completo (mantiene paso residual)</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Notar que el caudal de aire disminuye al superar 80 km/h o 160 km/h no es una avería: es la estrategia normal de la trampilla de velocidad para estabilizar la ventilación del habitáculo.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Verificar el movimiento simultáneo de las dos trampillas al activar la recirculación o al simular señal de velocidad mediante el autodiagnóstico.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT501_01</code> Posiciones de las guías de accionamiento del motor V71 para aire fresco, regulación por velocidad y recirculación — Fuente: Toledo 99 CLIMA.pdf, pág. 51</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    477 notas técnicas · generado el 21/09/2026.
+    486 notas técnicas · generado el 21/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
