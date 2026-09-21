@@ -93,12 +93,42 @@ El profesor ya trabaja así en otro proyecto suyo (Diario Docente): un proyecto,
 y cada usuario con su propia Hoja de cálculo, independiente. No hay que diseñar
 el multiusuario desde cero: hay que **leer cómo lo resuelve ahí y replicarlo**.
 
-Lo que hay que sacar de ese repositorio cuando se arranque:
-- cómo asocia cada usuario (correo) a su Hoja
-- cómo se da de alta un usuario nuevo (la plantilla, el clonado)
-- si es un despliegue único o uno por persona
+### Cómo lo hace (leído del repositorio, apps-script/diario/FR_HdC.gs)
 
-Copiar un mecanismo probado ahorra la parte de prueba y error de la sección 6.
+Es un **despliegue único, multi-inquilino por correo**, y resuelve justo lo que
+nos preocupaba. Las piezas:
+
+- `frTenantId_()` — coge el correo del usuario, lo pasa a minúsculas y sustituye
+  todo lo que no sea letra o número por `_`. Ese es el identificador de inquilino.
+  **Es exactamente nuestro prefijo de autor**, con la misma regla.
+- `frTenantKey_(clave)` — antepone `T_<tenant>__` a cada clave de configuración.
+  Así la config de cada profesor vive en las **Script Properties del mismo
+  proyecto**, separada por ese prefijo. Un despliegue, un juego de propiedades,
+  cada profesor ve solo lo suyo.
+- **Fallback a la clave sin prefijo**: si no encuentra la propiedad del inquilino,
+  lee la clave antigua (la del primer usuario, de antes de separar por profesor).
+  Es lo que permitió migrar de un usuario a varios sin romper al que ya estaba.
+- **Un DIRECTORIO** (una Hoja, `FR_DIRECTORIO_ID`) que asocia correo → HdC de ese
+  profesor. `frAccesoUsuario_()` busca al usuario por su correo en esa tabla.
+- **Puerta con interruptor explícito** (`FR_PUERTA_PROP`): crear el directorio NO
+  da de alta a nadie automáticamente. Mientras la puerta está apagada, todos
+  entran por el fallback; encenderla es un acto deliberado. Esto es el alta
+  manual que pediste, y con una red de seguridad para no dejar a nadie fuera sin
+  querer.
+
+Qué copiamos tal cual:
+- La regla del tenant-id por correo (idéntica a nuestro prefijo).
+- Separar la config por prefijo en Script Properties, con fallback a la clave sin
+  prefijo, para migrar sin romper.
+- El directorio correo → recurso, con puerta de interruptor explícito para el
+  alta manual.
+
+Qué cambia en nuestro caso: en Diario el recurso por profesor es una Hoja; en el
+nuestro es su Hoja de config **y** su carpeta de NT en Drive. El directorio
+tendría una columna más.
+
+Con esto, la sección 6 (¿un despliegue o varios?) ya está respondida por un
+sistema en producción: **uno solo**, multi-inquilino por correo.
 
 
 ## 6. La parte incómoda: Apps Script no es multiusuario de serie
@@ -113,9 +143,11 @@ Dos caminos, hay que elegir antes de escalar:
   decide qué Hoja usar según el profesor dueño del aula. Más elegante, bastante
   más trabajo, y hay que resolver cómo se asocia cada alumno a su profesor.
 
-Recomendación provisional: empezar por **un despliegue por profesor**, que
-funciona ya, y pasar al despliegue único solo si el número de profesores lo
-justifica. No montar la versión compleja para dos usuarios.
+Recomendación ACTUALIZADA tras leer Diario Docente: **un despliegue único,
+multi-inquilino por correo**. No es la versión compleja que temía: Diario ya lo
+tiene resuelto y en producción con el patrón de la sección 5b (tenant-id por
+correo + config por prefijo en Script Properties + directorio con puerta). Se
+replica ese mecanismo en vez de mantener N despliegues.
 
 ---
 
