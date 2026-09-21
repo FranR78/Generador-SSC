@@ -111,3 +111,41 @@ Notas para cuando toque:
   Cursos.html). Es una decisión de él: emoji rápido vs SVG fiel.
 - El color es un solo valor hex por unidad (`color:`), y pinta a la vez la
   banda de la portada y la barra de progreso.
+
+---
+
+## Unidades editables por el profesor (crear / editar / borrar)
+
+El profesor define una unidad seleccionando **qué criterios** quiere ver, y el
+sistema agrupa ahí las NT que los cubren. Sin tocar código ni archivos.
+
+**Lo que ya está resuelto y no hay que inventar:** distinguir `ssc1.a clima` de
+`ssc1.a airbag` de `ssc1.a infotenimiento`. El criterio es el mismo (1.a); lo
+que cambia es la unidad. Cada nota ya lleva `unidad`, así que la clave real es
+la pareja `(criterio, unidad)`. No hace falta un criterio nuevo por temática.
+
+**La bifurcación que decide si esto es barato o un rewrite:** hoy la unidad de
+una nota vive DENTRO de la nota (`unidad: clima` en el front-matter). Si las
+unidades se van a crear y editar desde el portal, la asignación nota→unidad
+NO puede seguir dentro de la nota, o editar una unidad obligaría a editar 129
+archivos. Tiene que salir fuera, igual que hicimos con claves.yml y el mapa RA.
+
+Dos caminos, a decidir cuando se arranque:
+
+1. **Por etiquetas (recomendado).** La nota lleva `temas: [clima, alta-presion]`.
+   La unidad dice: criterios 1a,1b,3h + tema `clima`. Editar la unidad no toca
+   ninguna nota. Una misma nota puede aparecer en dos unidades si comparten
+   tema, que es lo natural en un módulo con solapes.
+2. **Lista manual por id.** La unidad enumera las NT que la componen. Más
+   control, más trabajo a mano, y hay que acordarse de añadir cada nota nueva.
+
+**Dónde viven las unidades:** si son editables desde el portal, dejan de ser
+archivos YAML del repo y pasan a la Hoja (pestaña Unidades), como ya están los
+casos. El profesor las toca sin git. El generador de prompts y el informe de
+cobertura leerían de ahí en vez de de unidades/*.yml.
+
+**Lo que NO cambia:** el id permanente de cada nota. Una nota puede cambiar de
+unidad, de tema o de criterios sin que se rompa nada que la apunte (lecturas,
+RAG, casos), porque nada de eso usa la unidad como identidad.
+
+Primera pregunta al arrancar: ¿etiquetas o lista manual?
