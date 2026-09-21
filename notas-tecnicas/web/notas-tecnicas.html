@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">461 notas · 21/09/2026</p>
+  <p class="sidebar-meta">463 notas · 21/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -589,6 +589,8 @@
     <li><a href="#nt474">NT474 · Configuración Y Distribución Del Siste</a></li>
     <li><a href="#nt475">NT475 · Servomotores De Trampillas De  V71, V113, V158, V159, V110, V111, V299, V300, V107, V108, V109, V213, V313, V314, V239, V240</a></li>
     <li><a href="#nt476">NT476 · Drenajes De Agua De Condensación Del E</a></li>
+    <li><a href="#nt477">NT477 · Sensor De Humedad En El Conduc G657</a></li>
+    <li><a href="#nt478">NT478 · Cálculo De Humedad Y Control De Recirc</a></li>
   </ul>
 </nav>
 
@@ -32520,8 +32522,117 @@ En el compresor Denso 6SEU12 de regulación externa (sin embrague), la UCE contr
     </div>
   </section>
 
+  <section id="nt477" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 477 </div>
+    <div class="nota-body">
+      <h1>Sensor De Humedad En El Conducto De Admisión De Aire Fresco G657 — <strong>G657</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">C</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">C</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">s</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Conducto de admisión de aire fresco, junto a la rejilla atrapahojas</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Determinar la temperatura y el contenido de humedad del flujo de aire fresco de entrada. Transmitir los datos para que la unidad de control Climatronic J255 calcule la humedad relativa del aire aspirado.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Mide la temperatura y la humedad mediante sus elementos sensores integrados situados en el caudal de aire. Envía los datos de medición a través del bus LIN a la unidad de control de la red de a bordo J519. Desde la unidad J519, la información se reenvía al módulo Climatronic J255 para calcular la humedad relativa.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li><strong>En el sistema de tres zonas:</strong> Consta de un sensor de humedad del aire y un sensor de temperatura.  </li>
+<li><strong>En el sistema de cuatro zonas:</strong> El sensor G657 se combina en un único conjunto con el sensor de calidad del aire G238.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Valor numérico</th>
+<th>Condiciones de validez</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tiempo de configuración de G238</strong></td>
+<td><strong>Aprox. 2 minutos</strong></td>
+<td>Tras conectar el encendido (Ignition ON)</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt478" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 478 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Cálculo De Humedad Y Control De Recirculación En Tres Y Cuatro Zonas</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Explicar el flujo de datos de humedad, temperatura y calidad del aire desde el conducto de admisión hacia la unidad Climatronic J255 para el cálculo de la humedad relativa y el control de recirculación de aire.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El flujo de aire fresco entrante es evaluado por el sensor G657. Las señales se transmiten vía bus LIN a la unidad J519 y posteriormente a la unidad J255 para obtener el valor de humedad relativa. En los sistemas de cuatro zonas, la integración del sensor G238 añade la función de control automático de recirculación tras una fase de inicialización.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Encendido conectado.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Sistema de tres zonas:</strong> El sensor G657 determina la temperatura y la humedad en el conducto de aire fresco. Envía los datos mediante bus LIN al módulo de la red de a bordo J519, el cual transmite la información a la unidad Climatronic J255 para calcular la humedad relativa.  </li>
+<li><strong>Sistema de cuatro zonas:</strong> El sensor G657 combina en el mismo módulo el sensor de humedad, el sensor de temperatura y el sensor de calidad del aire G238. El sistema gestiona además el control automático de la recirculación de aire. El sensor G238 requiere aprox. 2 minutos para configurar el sistema tras dar el contacto.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Parámetro / Sistema</th>
+<th>Valor de referencia</th>
+<th>Condiciones de validez</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Inicialización de recirculación (G238)</strong></td>
+<td><strong>Aprox. 2 minutos</strong></td>
+<td>Tras conectar el encendido (Ignition ON)</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Intentar verificar la función de recirculación automática inmediatamente después de dar el contacto en sistemas de cuatro zonas: el sensor G238 necesita un tiempo de configuración inicial de aprox. 2 minutos.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT478_01</code> Disposición del sensor de humedad G657 solo y combinado con el sensor de calidad del aire G238 en el conducto de admisión — Fuente: SSP 484 A7 Info y Clima (arrastrado).pdf, pág. 51</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    461 notas técnicas · generado el 21/09/2026.
+    463 notas técnicas · generado el 21/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
