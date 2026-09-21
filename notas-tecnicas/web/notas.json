@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-21",
- "total": 445,
+ "total": 450,
  "grupos": [
   "Actuadores y mandos",
   "Circuito frigorífico",
@@ -21214,6 +21214,184 @@
     {
      "titulo": "Imágenes requeridas",
      "texto": "Despiece de la cremallera, piñón, rueda libre y posición de enclave de los rodillos — Fuente: SSP 484 A7 Info y Clima (arrastrado).pdf, pág. 17"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.deteccion-de-ocupacion-del-asiento-del-acompanante",
+   "nt": 461,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "deteccion-de-ocupacion-del-asiento-del-acompanante",
+   "titulo": "Detección De Ocupación Del Asiento Del Acompañante",
+   "codigo": "",
+   "menu": "Detección De Ocupación Del Asiento Del",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Explicar la lógica de funcionamiento y evaluación de la ocupación del asiento delantero del acompañante para determinar la activación o desactivación del airbag del acompañante."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El sistema mide de manera continua la variación de la capacidad eléctrica (capacitancia) del sensor G128 alojado en la banqueta del asiento. La unidad de control J706 realiza esta medición de forma cíclica para determinar si el asiento está ocupado por un adulto o por una silla infantil. La información se transmite a través del bus LIN a la unidad de control del airbag J234, la cual activa o desactiva el airbag e ilumina el testigo K145."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El sensor capacitivo G128 detecta la presencia y masa sobre el acolchado del asiento del acompañante. La unidad J706 mide cíclicamente los cambios de capacitancia recibidos desde el sensor G128 mediante un cable coaxial. La unidad J706 procesa la información mediante un software adaptado específicamente a cada tipo de asiento e informa a la UCE de airbag J234 por medio del bus LIN. La UCE de airbag J234 activa o desactiva la bolsa de aire del acompañante y conmuta el estado del testigo indicador K145 (\"PASSENGER AIRBAG OFF\")."
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Montar una unidad J706 que no corresponda al modelo exacto de asiento: el programa informático (software) de la unidad de control está adaptado de forma específica a cada tipo de asiento."
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Para cualquier trabajo de reparación en el sistema de detección de ocupación del asiento, se debe recurrir obligatoriamente a la Localización Guiada de Averías, al catálogo ETKA y a la información técnica de servicio actualizada."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema de interconexión entre la unidad J706, el sensor G128 por cable coaxial, la UCE J234 por bus LIN y el testigo K145 — Fuente: SSP 484 A7 Info y Clima (arrastrado).pdf, pág. 22"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.unidad-de-control-para-deteccion-de-ocupacion-del-asiento-j706",
+   "nt": 462,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "unidad-de-control-para-deteccion-de-ocupacion-del-asiento-j706",
+   "titulo": "Unidad De Control Para Detección De Ocupación Del Asiento J706",
+   "codigo": "J706",
+   "menu": "Unidad De Control Para Detecci J706",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema de seguridad pasiva (detección de ocupantes)",
+   "ubicacion": "Montada en la parte inferior del asiento del acompañante",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Detectar la variación de capacitancia del sensor del asiento para clasificar la ocupación (adulto o silla infantil) e informar a la unidad de control de airbag J234."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Unidad electrónica que mide cíclicamente la capacidad eléctrica del sensor G128 a través de una línea coaxial. Analiza los datos mediante software específico de asiento y transmite el estado por bus LIN a la UCE J234."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Módulo de control con software adaptado a la banqueta. Incorpora conexión de cable coaxial para G128, interfaz para bus LIN con J234 y conector eléctrico de asiento."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Error en la activación/desactivación del airbag del acompañante."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Efectuar la diagnosis mediante la Localización Guiada de Averías y la documentación técnica de servicio."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.sensor-de-ocupacion-del-asiento-del-acompanante-g128",
+   "nt": 463,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "sensor-de-ocupacion-del-asiento-del-acompanante-g128",
+   "titulo": "Sensor De Ocupación Del Asiento Del Acompañante G128",
+   "codigo": "G128",
+   "menu": "Sensor De Ocupación Del Asient G128",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Captación de presencia de ocupantes para la gestión del airbag",
+   "ubicacion": "Alojado en el acolchado de la banqueta del asiento del acompañante",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Modificar su capacidad eléctrica en respuesta a la presencia y peso de un ocupante o silla infantil sobre el asiento del acompañante."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Captador capacitivo que altera su valor de capacidad eléctrica según la carga recibida. Transmite la señal de capacitancia hacia la unidad J706 mediante un cable coaxial."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Sensor capacitivo flexible ubicado en el acolchado del asiento, provisto de conector para cable coaxial."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Comprobar mediante el procedimiento de Localización Guiada de Averías."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.testigo-de-desactivacion-del-airbag-del-acompanante-k145",
+   "nt": 464,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "testigo-de-desactivacion-del-airbag-del-acompanante-k145",
+   "titulo": "Testigo De Desactivación Del Airbag Del Acompañante K145",
+   "codigo": "K145",
+   "menu": "Testigo De Desactivación Del A K145",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Indicador óptico del estado del airbag del acompañante",
+   "ubicacion": "Salpicadero / consola central del vehículo",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Alertar visualmente a los ocupantes de que el airbag del acompañante se encuentra desactivado."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Indicador luminoso activado por la UCE de airbag J234 al recibir la señal de la unidad J706 indicando presencia de silla infantil o ausencia de ocupante adulto."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Lámpara / testigo indicador con la inscripción \"PASSENGER AIRBAG OFF\"."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Ausencia de indicación del estado de desactivación del airbag del acompañante."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.conmutador-del-cinturon-de-seguridad-del-acompanante-e25",
+   "nt": 465,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "conmutador-del-cinturon-de-seguridad-del-acompanante-e25",
+   "titulo": "Conmutador Del Cinturón De Seguridad Del Acompañante E25",
+   "codigo": "E25",
+   "menu": "Conmutador Del Cinturón De Seg E25",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Detección de abrochado de cinturón de seguridad",
+   "ubicacion": "Integrado en el cierre del cinturón de seguridad del asiento del acompañante",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Detectar la inserción de la lengüeta del cinturón en el abroche del acompañante."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Interruptor de contacto eléctrico que conmuta su estado al introducir o extraer la lengüeta del cinturón."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Conmutador eléctrico de contacto alojado en la hebilla de cierre."
     }
    ]
   }

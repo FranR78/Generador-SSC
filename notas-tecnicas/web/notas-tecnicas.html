@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">445 notas · 21/09/2026</p>
+  <p class="sidebar-meta">450 notas · 21/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -574,6 +574,11 @@
     <li><a href="#nt458">NT458 · Detonadores Del Limitador Adap G551 (Lado conductor) / G552 (Lado acompañante)</a></li>
     <li><a href="#nt459">NT459 · Unidades De Control Del Tensor J854 (Lado izquierdo) / J855 (Lado derecho)</a></li>
     <li><a href="#nt460">NT460 · Detonadores Del Pretensionador N153 (Lado conductor) / N154 (Lado acompañante)</a></li>
+    <li><a href="#nt461">NT461 · Detección De Ocupación Del Asiento Del</a></li>
+    <li><a href="#nt462">NT462 · Unidad De Control Para Detecci J706</a></li>
+    <li><a href="#nt463">NT463 · Sensor De Ocupación Del Asient G128</a></li>
+    <li><a href="#nt464">NT464 · Testigo De Desactivación Del A K145</a></li>
+    <li><a href="#nt465">NT465 · Conmutador Del Cinturón De Seg E25</a></li>
   </ul>
 </nav>
 
@@ -31895,8 +31900,178 @@ En el compresor Denso 6SEU12 de regulación externa (sin embrague), la UCE contr
     </div>
   </section>
 
+  <section id="nt461" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 461 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Detección De Ocupación Del Asiento Del Acompañante</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Explicar la lógica de funcionamiento y evaluación de la ocupación del asiento delantero del acompañante para determinar la activación o desactivación del airbag del acompañante.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El sistema mide de manera continua la variación de la capacidad eléctrica (capacitancia) del sensor G128 alojado en la banqueta del asiento. La unidad de control J706 realiza esta medición de forma cíclica para determinar si el asiento está ocupado por un adulto o por una silla infantil. La información se transmite a través del bus LIN a la unidad de control del airbag J234, la cual activa o desactiva el airbag e ilumina el testigo K145.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>El sensor capacitivo G128 detecta la presencia y masa sobre el acolchado del asiento del acompañante.  </li>
+<li>La unidad J706 mide cíclicamente los cambios de capacitancia recibidos desde el sensor G128 mediante un cable coaxial.  </li>
+<li>La unidad J706 procesa la información mediante un software adaptado específicamente a cada tipo de asiento e informa a la UCE de airbag J234 por medio del bus LIN.  </li>
+<li>La UCE de airbag J234 activa o desactiva la bolsa de aire del acompañante y conmuta el estado del testigo indicador K145 ("PASSENGER AIRBAG OFF").</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Montar una unidad J706 que no corresponda al modelo exacto de asiento: el programa informático (software) de la unidad de control está adaptado de forma específica a cada tipo de asiento.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>Para cualquier trabajo de reparación en el sistema de detección de ocupación del asiento, se debe recurrir obligatoriamente a la Localización Guiada de Averías, al catálogo ETKA y a la información técnica de servicio actualizada.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT461_01</code> Esquema de interconexión entre la unidad J706, el sensor G128 por cable coaxial, la UCE J234 por bus LIN y el testigo K145 — Fuente: SSP 484 A7 Info y Clima (arrastrado).pdf, pág. 22</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt462" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 462 </div>
+    <div class="nota-body">
+      <h1>Unidad De Control Para Detección De Ocupación Del Asiento J706 — <strong>J706</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">S</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">g</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">v</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">(</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">)</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Montada en la parte inferior del asiento del acompañante</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Detectar la variación de capacitancia del sensor del asiento para clasificar la ocupación (adulto o silla infantil) e informar a la unidad de control de airbag J234.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Unidad electrónica que mide cíclicamente la capacidad eléctrica del sensor G128 a través de una línea coaxial. Analiza los datos mediante software específico de asiento y transmite el estado por bus LIN a la UCE J234.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Módulo de control con software adaptado a la banqueta. Incorpora conexión de cable coaxial para G128, interfaz para bus LIN con J234 y conector eléctrico de asiento.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Error en la activación/desactivación del airbag del acompañante.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Efectuar la diagnosis mediante la Localización Guiada de Averías y la documentación técnica de servicio.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt463" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 463 </div>
+    <div class="nota-body">
+      <h1>Sensor De Ocupación Del Asiento Del Acompañante G128 — <strong>G128</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">C</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">g</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">b</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">g</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Alojado en el acolchado de la banqueta del asiento del acompañante</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Modificar su capacidad eléctrica en respuesta a la presencia y peso de un ocupante o silla infantil sobre el asiento del acompañante.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Captador capacitivo que altera su valor de capacidad eléctrica según la carga recibida. Transmite la señal de capacitancia hacia la unidad J706 mediante un cable coaxial.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Sensor capacitivo flexible ubicado en el acolchado del asiento, provisto de conector para cable coaxial.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobar mediante el procedimiento de Localización Guiada de Averías.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt464" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 464 </div>
+    <div class="nota-body">
+      <h1>Testigo De Desactivación Del Airbag Del Acompañante K145 — <strong>K145</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">I</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">b</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">g</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">ñ</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Salpicadero / consola central del vehículo</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Alertar visualmente a los ocupantes de que el airbag del acompañante se encuentra desactivado.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Indicador luminoso activado por la UCE de airbag J234 al recibir la señal de la unidad J706 indicando presencia de silla infantil o ausencia de ocupante adulto.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Lámpara / testigo indicador con la inscripción "PASSENGER AIRBAG OFF".</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Ausencia de indicación del estado de desactivación del airbag del acompañante.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt465" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 465 </div>
+    <div class="nota-body">
+      <h1>Conmutador Del Cinturón De Seguridad Del Acompañante E25 — <strong>E25</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">D</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">b</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">h</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">g</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Integrado en el cierre del cinturón de seguridad del asiento del acompañante</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Detectar la inserción de la lengüeta del cinturón en el abroche del acompañante.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Interruptor de contacto eléctrico que conmuta su estado al introducir o extraer la lengüeta del cinturón.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Conmutador eléctrico de contacto alojado en la hebilla de cierre.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    445 notas técnicas · generado el 21/09/2026.
+    450 notas técnicas · generado el 21/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
