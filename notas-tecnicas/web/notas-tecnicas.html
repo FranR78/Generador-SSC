@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">438 notas · 21/09/2026</p>
+  <p class="sidebar-meta">440 notas · 21/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -567,6 +567,8 @@
     <li><a href="#nt451">NT451 · Diagnóstico De Averías Mediante Prueba</a></li>
     <li><a href="#nt452">NT452 · Objetivos De La Climatización Automáti</a></li>
     <li><a href="#nt453">NT453 · Restricciones Y Limitaciones De La Cli</a></li>
+    <li><a href="#nt454">NT454 · Servomotor De Trampilla Con Co No documentado en fuentes</a></li>
+    <li><a href="#nt455">NT455 · Auto-Direccionamiento Y Diagnóstico De</a></li>
   </ul>
 </nav>
 
@@ -31436,8 +31438,166 @@ En el compresor Denso 6SEU12 de regulación externa (sin embrague), la UCE contr
     </div>
   </section>
 
+  <section id="nt454" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 454 </div>
+    <div class="nota-body">
+      <h1>Servomotor De Trampilla Con Comunicación Lin — <strong>No documentado en fuentes</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">S</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">C</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">(</span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">7</span><span class="badge-aplicacion">)</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">J</span><span class="badge-aplicacion">2</span><span class="badge-aplicacion">5</span><span class="badge-aplicacion">5</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">E</span><span class="badge-aplicacion">2</span><span class="badge-aplicacion">6</span><span class="badge-aplicacion">5</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Mueble climatizador del vehículo</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Accionar las trampillas del sistema de climatización ajustando la distribución, mezcla y caudal de aire según las órdenes transmitidas por la unidad de control a través del bus LIN.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Recibe órdenes digitales multiplexadas mediante una conexión en serie por bus LIN. Cada servomotor adapta su posición y se activa individualmente en función de la dirección atribuida a su trampilla durante el proceso de auto-direccionamiento.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Conector eléctrico de 4 vías con la siguiente distribución de pines:
+- <strong>Borne A1:</strong> Borne 31 (Masa).
+- <strong>Borne A2:</strong> LIN in (Entrada de señal del bus).
+- <strong>Borne A3:</strong> LIN out (Salida de señal del bus).
+- <strong>Borne A4:</strong> Borne 30 (Positivo de alimentación).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Parámetro / Conexión</th>
+<th>Valor de trabajo</th>
+<th>Condiciones de validez</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Alimentación eléctrica</strong></td>
+<td><strong>Borne 30 (A4) y Borne 31 (A1)</strong></td>
+<td>Tensión continua de batería</td>
+</tr>
+<tr>
+<td><strong>Línea de datos</strong></td>
+<td><strong>Bus LIN (A2 in / A3 out)</strong></td>
+<td>Conexión en serie multiplexada</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Corte o interrupción del bus LIN; cruce e intercambio accidental de conectores entre varios servomotores durante intervenciones de reparación.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Si se interrumpe la línea LIN en un servomotor, este y todos los servomotores conectados en serie por detrás (aguas abajo) quedan inoperativos y la unidad los registra como defectuosos. Si se cruzan los conectores, mantendrán las funciones antiguas hasta ejecutar un nuevo auto-direccionamiento, tras el cual responderán a trampillas equivocadas.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Conectar el equipo de diagnosis VAS Scan Tool y realizar la lectura del registro de memoria de averías (DTC) de la unidad J255 o E265.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt455" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 455 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Auto-Direccionamiento Y Diagnóstico De Servomotores Lin</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Explicar el proceso de asignación automática de direcciones (auto-addressing) y la localización de averías por interrupción o intercambio de conectores en la cadena en serie de servomotores del sistema Climatronic.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Los servomotores se conectan en serie (entrada A2 / salida A3) al módulo J255 o E265. La unidad de control utiliza el auto-direccionamiento para reconocer la secuencia física de los componentes en el mazo de cables y asignar a cada dirección el mando de la trampilla correspondiente.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Encendido conectado.  </li>
+<li>Equipo de diagnosis conectado al puerto OBD del vehículo.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <ul>
+<li>Equipo de diagnosis VAS Scan Tool.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ol>
+<li><strong>Diagnóstico de interrupción en la línea:</strong> Si el bus LIN se corta en un punto de la cadena, la unidad de control registra un código de avería (DTC) en el servomotor afectado y en todos los servomotores conectados a continuación en la serie.  </li>
+<li><strong>Efecto de intercambio de conectores:</strong><br />
+   - <em>Antes del auto-direccionamiento:</em> Conservan la asignación y función antiguas.<br />
+   - <em>Tras el auto-direccionamiento:</em> El sistema asigna funciones equivocadas a las trampillas debido al orden incorrecto de las clemas en el mazo de cables.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Borne del servomotor</th>
+<th>Función en la cadena LIN</th>
+<th>Condición de servicio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Borne A1</strong></td>
+<td><strong>Borne 31 (Masa)</strong></td>
+<td>Masa de carrocería</td>
+</tr>
+<tr>
+<td><strong>Borne A2</strong></td>
+<td><strong>LIN in</strong></td>
+<td>Entrada de datos desde el componente anterior</td>
+</tr>
+<tr>
+<td><strong>Borne A3</strong></td>
+<td><strong>LIN out</strong></td>
+<td>Salida de datos hacia el componente posterior</td>
+</tr>
+<tr>
+<td><strong>Borne A4</strong></td>
+<td><strong>Borne 30</strong></td>
+<td>Positivo permanente</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li><strong>Interpretación de fallos múltiples:</strong> La presencia de varios servomotores marcados como defectuosos suele estar originada por un único corte en la línea LIN del primer servomotor que encabeza el listado de averías.  </li>
+<li><strong>Error de montaje:</strong> Conectar las clemas en posiciones cambiadas provoca que, tras realizar el auto-direccionamiento, las trampillas de aire funcionen cruzadas.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Ejecución del ciclo de auto-direccionamiento mediante la máquina VAS Scan Tool, borrado de la memoria de averías DTC y comprobación de la respuesta física de cada trampilla.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT455_01</code> Esquema de conexión en serie del bus LIN entre servomotores con patinaje de bornes A1 a A4 — Fuente: SSP 484 A7 Info y Clima (arrastrado) 2 copia.pdf, pág. 1</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    438 notas técnicas · generado el 21/09/2026.
+    440 notas técnicas · generado el 21/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
