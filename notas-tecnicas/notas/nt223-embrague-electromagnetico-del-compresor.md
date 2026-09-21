@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.embrague-electromagnetico-del-compresor
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 223
 titulo: "Embrague Electromagnético Del Compresor"
 codigo: "No documentado en fuentes"

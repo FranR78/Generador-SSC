@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.comprobacion-de-presiones-de-trabajo-y-diagnostico-hidraulico
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 502
 tipo: proceso
 subtipo: diagnostico

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.deposito-de-fluido-con-cartucho-secador
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 471
 titulo: "Depósito De Fluido Con Cartucho Secador"
 ubicacion: "Intercalado en el circuito frigorífico junto al condensador"

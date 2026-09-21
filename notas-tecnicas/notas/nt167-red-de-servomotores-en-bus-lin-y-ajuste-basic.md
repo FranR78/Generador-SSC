@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.red-de-servomotores-en-bus-lin-y-ajuste-basico-de-aprendizaje
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 167
 tipo: proceso
 subtipo: fundamento

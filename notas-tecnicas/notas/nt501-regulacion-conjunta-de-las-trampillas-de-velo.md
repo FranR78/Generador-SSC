@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.regulacion-conjunta-de-las-trampillas-de-velocidad-y-recirculacion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 501
 tipo: proceso
 subtipo: fundamento

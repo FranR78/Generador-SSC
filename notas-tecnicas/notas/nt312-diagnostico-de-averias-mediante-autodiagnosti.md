@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.diagnostico-de-averias-mediante-autodiagnostico-y-pruebas-de-presion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 312
 tipo: proceso
 subtipo: diagnostico

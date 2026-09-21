@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.lavado-del-circuito-de-climatizacion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 211
 tipo: proceso
 subtipo: procedimiento

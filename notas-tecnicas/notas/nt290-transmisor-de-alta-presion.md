@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.transmisor-de-alta-presion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 290
 titulo: "Transmisor De Alta Presión"
 codigo: "G819 (o Transmisor de alta presión)"

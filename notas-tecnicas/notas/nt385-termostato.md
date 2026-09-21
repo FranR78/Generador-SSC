@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.termostato
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 385
 titulo: "Termostato"
 ubicacion: "Intercalado en los manguitos del circuito de refrigeración del motor"

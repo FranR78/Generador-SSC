@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.evaporador-2
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 227
 titulo: "Evaporador"
 codigo: "No documentado en fuentes"

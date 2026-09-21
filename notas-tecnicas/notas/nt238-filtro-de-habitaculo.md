@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.filtro-de-habitaculo
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 238
 titulo: "Filtro De Habitáculo"
 codigo: "No documentado en fuentes"

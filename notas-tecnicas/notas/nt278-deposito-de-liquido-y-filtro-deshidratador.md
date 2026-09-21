@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.deposito-de-liquido-y-filtro-deshidratador
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 278
 titulo: "Depósito De Líquido Y Filtro Deshidratador"
 ubicacion: "Lado de alta presión, intercalado entre el condensador y la válvula de expansión"

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.unidad-de-control-de-la-red-de-a-bordo
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 482
 titulo: "Unidad De Control De La Red De A Bordo"
 codigo: "J519"

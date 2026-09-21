@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.deteccion-de-fugas-en-el-circuito
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 257
 tipo: proceso
 subtipo: diagnostico

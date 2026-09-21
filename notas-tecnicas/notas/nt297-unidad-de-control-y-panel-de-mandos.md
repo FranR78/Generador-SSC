@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.unidad-de-control-y-panel-de-mandos
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 297
 titulo: "Unidad De Control Y Panel De Mandos"
 codigo: "E87 / Climatronic"

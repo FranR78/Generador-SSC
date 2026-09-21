@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.regulacion-y-proteccion-basica-del-sistema
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 285
 tipo: proceso
 subtipo: fundamento

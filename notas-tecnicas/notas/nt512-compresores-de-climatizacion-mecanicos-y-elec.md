@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.compresores-de-climatizacion-mecanicos-y-electronicos
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 512
 titulo: "Compresores De Climatización (Mecánicos Y Electrónicos)"
 ubicacion: "Montado en el bloque motor y accionado por la correa auxiliar"

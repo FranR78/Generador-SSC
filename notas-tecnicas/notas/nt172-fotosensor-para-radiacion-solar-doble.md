@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.fotosensor-para-radiacion-solar-doble
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 172
 titulo: "Fotosensor Para Radiación Solar Doble"
 codigo: "G107"

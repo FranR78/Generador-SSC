@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.logica-de-control-y-gestion-de-la-tarjeta-electronica
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 394
 tipo: proceso
 subtipo: fundamento

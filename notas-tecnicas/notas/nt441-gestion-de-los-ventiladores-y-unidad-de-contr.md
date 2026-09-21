@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.gestion-de-los-ventiladores-y-unidad-de-control-j293
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 441
 tipo: proceso
 subtipo: fundamento

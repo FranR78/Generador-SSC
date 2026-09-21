@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.guardallamas
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 154
 titulo: "Guardallamas"
 codigo: "G64"

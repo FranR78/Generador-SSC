@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.conmutador-de-presion-f129-y-transmisores-de-alta-presion-g65
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 538
 titulo: "Conmutador De Presión F129 Y Transmisores De Alta Presión G65"
 codigo: "F129 / G65 / G395"

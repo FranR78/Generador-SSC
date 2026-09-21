@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.evaporador-4
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 281
 titulo: "Evaporador"
 ubicacion: "Integrado dentro de la caja de distribución del calefactor/climatizador en el salpicadero"

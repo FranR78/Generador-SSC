@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.compresor-axial-de-cilindrada-variable-y-valvula-de-regulacion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 409
 titulo: "Compresor Axial De Cilindrada Variable Y Válvula De Regulación"
 ubicacion: "Compartimento motor"

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sensor-de-humedad-en-el-conducto-de-admision-de-aire-fresco-g657
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 477
 titulo: "Sensor De Humedad En El Conducto De Admisión De Aire Fresco G657"
 codigo: "G657"

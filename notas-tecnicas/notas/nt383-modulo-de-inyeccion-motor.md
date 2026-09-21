@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.modulo-de-inyeccion-motor
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 383
 titulo: "Módulo De Inyección Motor"
 ubicacion: "Compartimento motor / Gestión de motor"

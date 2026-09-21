@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.impulsor-de-aire
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 235
 titulo: "Impulsor De Aire"
 codigo: "No documentado en fuentes"

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.valvula-de-descarga-de-sobrepresion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 287
 titulo: "Válvula De Descarga De Sobrepresión"
 ubicacion: "Montada en la carcasa del compresor o en el filtro deshidratador"

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sensor-de-temperatura-de-entrada-al-habitaculo
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 357
 titulo: "Sensor De Temperatura De Entrada Al Habitáculo"
 ubicacion: "Alojado en la caja de distribución de aire, en el conducto de salida tras el evaporador"

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.compresor-sin-embrague-electromagnetico-regulacion-externa
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 213
 titulo: "Compresor Sin Embrague Electromagnético (Regulación Externa)"
 codigo: "Denso (6SEU / 7SEU), Sanden (PXE 13 / PXE 16), Delphi (CVC7)"

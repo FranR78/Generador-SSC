@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sonda-de-temperatura-del-evaporador
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 326
 titulo: "Sonda De Temperatura Del Evaporador"
 ubicacion: "Ubicada en la parte más fría del evaporador, dentro del conjunto de distribución de trampillas"

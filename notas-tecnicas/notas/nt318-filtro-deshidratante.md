@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.filtro-deshidratante-4
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 318
 titulo: "Filtro Deshidratante"
 ubicacion: "Compartimento motor, en la línea de alta presión"

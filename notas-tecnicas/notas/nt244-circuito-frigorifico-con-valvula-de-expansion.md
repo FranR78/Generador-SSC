@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.circuito-frigorifico-con-valvula-de-expansion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 244
 tipo: proceso
 subtipo: fundamento

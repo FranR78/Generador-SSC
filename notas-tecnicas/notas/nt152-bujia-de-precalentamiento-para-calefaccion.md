@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.bujia-de-precalentamiento-para-calefaccion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 152
 titulo: "Bujía De Precalentamiento Para Calefacción"
 codigo: "Q9"

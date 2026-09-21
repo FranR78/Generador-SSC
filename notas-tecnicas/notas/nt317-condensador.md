@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.condensador-5
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 317
 titulo: "Condensador"
 ubicacion: "Compartimento motor"

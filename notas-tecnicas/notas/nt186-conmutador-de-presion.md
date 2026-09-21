@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.conmutador-de-presion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 186
 titulo: "Conmutador De Presión"
 codigo: "F129"

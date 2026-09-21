@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.tuberias-y-acoplamientos-frigorificos
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 343
 titulo: "Tuberías Y Acoplamientos Frigoríficos"
 ubicacion: "Vano motor y distribución de canalizaciones a lo largo de la carrocería"

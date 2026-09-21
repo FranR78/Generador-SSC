@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.circuito-de-frio-y-circulacion-del-refrigerante
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 390
 tipo: proceso
 subtipo: fundamento

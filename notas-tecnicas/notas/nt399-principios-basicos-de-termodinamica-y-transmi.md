@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.principios-basicos-de-termodinamica-y-transmision-del-calor
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 399
 tipo: proceso
 subtipo: fundamento

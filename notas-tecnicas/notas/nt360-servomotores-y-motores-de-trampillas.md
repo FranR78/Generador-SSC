@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.servomotores-y-motores-de-trampillas
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 360
 titulo: "Servomotores Y Motores De Trampillas"
 ubicacion: "Montados sobre la carcasa del bloque climatizador en el salpicadero"

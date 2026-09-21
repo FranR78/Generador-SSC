@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.radiador-de-calefaccion-2
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 321
 titulo: "Radiador De Calefacción"
 ubicacion: "Conjunto de distribución de trampillas, dentro del mueble del salpicadero"

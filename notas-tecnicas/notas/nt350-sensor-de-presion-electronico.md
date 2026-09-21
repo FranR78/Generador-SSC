@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sensor-de-presion-electronico
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 350
 titulo: "Sensor De Presión Electrónico"
 ubicacion: "Montado en el depósito acumulador o en la tubería de alta presión"

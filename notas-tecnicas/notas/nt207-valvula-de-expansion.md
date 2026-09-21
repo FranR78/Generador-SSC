@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.valvula-de-expansion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 207
 titulo: "Válvula De Expansión"
 codigo: "No documentado en fuentes"

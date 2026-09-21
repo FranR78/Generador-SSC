@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sensores-de-temperatura-exterior
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 355
 titulo: "Sensores De Temperatura Exterior"
 ubicacion: "Uno sobre la carrocería exterior y otro en el conducto de entrada de aire al evaporador"

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.transmisor-de-presion-electronico
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 187
 titulo: "Transmisor De Presión Electrónico"
 codigo: "G65"

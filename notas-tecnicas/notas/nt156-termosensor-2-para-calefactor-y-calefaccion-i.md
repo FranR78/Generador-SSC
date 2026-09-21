@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.termosensor-2-para-calefactor-y-calefaccion-independiente
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 156
 titulo: "Termosensor 2 Para Calefactor Y Calefacción Independiente"
 codigo: "G587"

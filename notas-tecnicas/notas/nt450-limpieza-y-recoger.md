@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.limpieza-y-recoger-reciclar-refrigerante
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 450
 tipo: proceso
 subtipo: procedimiento

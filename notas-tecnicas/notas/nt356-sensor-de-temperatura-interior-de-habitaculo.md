@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sensor-de-temperatura-interior-de-habitaculo
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 356
 titulo: "Sensor De Temperatura Interior De Habitáculo"
 ubicacion: "Instalado directamente sobre la UEGAA en el panel de mandos del salpicadero"

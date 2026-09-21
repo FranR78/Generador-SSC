@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.recuperacion-y-reciclaje-de-refrigerante-mediante-estacion-de-servicio
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 309
 tipo: proceso
 subtipo: procedimiento

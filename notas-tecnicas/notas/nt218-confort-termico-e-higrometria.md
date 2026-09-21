@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.confort-termico-e-higrometria
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 218
 tipo: proceso
 subtipo: fundamento

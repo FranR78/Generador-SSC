@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.aceite-lubricante-para-equipos-frigorificos-pag-y-pao
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 427
 titulo: "Aceite Lubricante Para Equipos Frigoríficos (Pag Y Pao)"
 ubicacion: "Circuito frigorífico (almacenado en el compresor y distribuido en el sistema)"

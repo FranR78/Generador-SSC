@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.compresor-alternativo-biela-manivela
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 407
 titulo: "Compresor Alternativo Biela-Manivela"
 ubicacion: "Bloque motor, accionado por correa"

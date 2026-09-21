@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.valvula-de-cierre-para-liquido-refrigerante-de-la-calefaccion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 160
 titulo: "Válvula De Cierre Para Líquido Refrigerante De La Calefacción"
 codigo: "N279"

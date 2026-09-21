@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.conmutador-del-climatizador
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 286
 titulo: "Conmutador Del Climatizador"
 codigo: "E35"

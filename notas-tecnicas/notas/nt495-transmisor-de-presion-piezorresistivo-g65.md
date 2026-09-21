@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.transmisor-de-presion-piezorresistivo-g65
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 495
 titulo: "Transmisor De Presión Piezorresistivo G65"
 codigo: "G65"

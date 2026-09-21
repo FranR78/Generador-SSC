@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.diagnostico-de-climatizacion-con-climtest
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 241
 tipo: proceso
 subtipo: diagnostico

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.deteccion-de-ocupacion-del-asiento-del-acompanante
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 461
 tipo: proceso
 subtipo: fundamento

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.agente-frigorifico-r134a
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 529
 titulo: "AGENTE FRIGORÍFICO R134a"
 ubicacion: "Circuito cerrado de climatización"

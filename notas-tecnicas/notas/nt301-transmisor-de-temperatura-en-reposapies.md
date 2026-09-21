@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.transmisor-de-temperatura-en-reposapies
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 301
 titulo: "Transmisor De Temperatura En Reposapiés"
 codigo: "G192"

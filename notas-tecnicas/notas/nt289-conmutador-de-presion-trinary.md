@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.conmutador-de-presion-trinary
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 289
 titulo: "Conmutador De Presión Trinary"
 codigo: "F129"

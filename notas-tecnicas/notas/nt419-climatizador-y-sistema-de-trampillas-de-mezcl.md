@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.climatizador-y-sistema-de-trampillas-de-mezcla-y-distribucion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 419
 titulo: "Climatizador Y Sistema De Trampillas De Mezcla Y Distribución"
 ubicacion: "Mueble climatizador en el interior del salpicadero"

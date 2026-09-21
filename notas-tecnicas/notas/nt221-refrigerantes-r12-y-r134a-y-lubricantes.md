@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.refrigerantes-r12-y-r134a-y-lubricantes
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 221
 tipo: proceso
 subtipo: fundamento

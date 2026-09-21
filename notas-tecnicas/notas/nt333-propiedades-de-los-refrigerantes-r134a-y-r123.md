@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.propiedades-de-los-refrigerantes-r134a-y-r1234yf
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 333
 tipo: proceso
 subtipo: fundamento

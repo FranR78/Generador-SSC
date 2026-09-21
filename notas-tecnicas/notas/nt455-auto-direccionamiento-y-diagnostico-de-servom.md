@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.auto-direccionamiento-y-diagnostico-de-servomotores-lin
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 455
 tipo: proceso
 subtipo: diagnostico

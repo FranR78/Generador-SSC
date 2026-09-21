@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.impulsor-de-aire-electroventilador-del-habitaculo
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 378
 titulo: "Impulsor De Aire (Electroventilador Del Habitáculo)"
 ubicacion: "Conjunto de distribución de trampillas"

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.potenciometro-de-la-distribucion-de-aire
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 184
 titulo: "Potenciómetro De La Distribución De Aire"
 ubicacion: "En el interior de la propia unidad del autoclima o calefacción motorizada, accionado al girar el mando de distribución"

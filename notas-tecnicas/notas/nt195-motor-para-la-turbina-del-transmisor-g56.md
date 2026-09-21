@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.motor-para-la-turbina-del-transmisor-g56
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 195
 titulo: "Motor Para La Turbina Del Transmisor G56"
 codigo: "V42"

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.conmutador-por-sobretemperatura-del-refrigerante-motor
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 292
 titulo: "Conmutador Por Sobretemperatura Del Refrigerante Motor"
 ubicacion: "Enroscado en la culata o en la caja del termostato del motor"

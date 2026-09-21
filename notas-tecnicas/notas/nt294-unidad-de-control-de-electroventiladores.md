@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.unidad-de-control-de-electroventiladores
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 294
 titulo: "Unidad De Control De Electroventiladores"
 codigo: "J293"

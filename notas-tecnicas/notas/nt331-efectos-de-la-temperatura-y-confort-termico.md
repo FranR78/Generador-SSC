@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.efectos-de-la-temperatura-y-confort-termico
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 331
 tipo: proceso
 subtipo: fundamento

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.termosensor-de-temperatura-del-calefactor
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 155
 titulo: "Termosensor De Temperatura Del Calefactor"
 codigo: "G18"

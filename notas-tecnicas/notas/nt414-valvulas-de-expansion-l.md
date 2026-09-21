@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.valvulas-de-expansion-l-90o-bloque-h-y-ot
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 414
 titulo: "VÁLVULAS DE EXPANSIÓN (L/90º, BLOQUE/H Y OT"
 ubicacion: "Delimita la separación entre el lado de alta y baja presión, a la entrada del evaporador"

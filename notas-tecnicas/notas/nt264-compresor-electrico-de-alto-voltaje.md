@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.compresor-electrico-de-alto-voltaje-2
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 264
 titulo: "Compresor Eléctrico De Alto Voltaje"
 ubicacion: "Montado en el vano motor de vehículos híbridos y eléctricos"

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.deposito-colector-deshidratador-acumulador
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 284
 titulo: "Depósito Colector Deshidratador (Acumulador)"
 ubicacion: "Montado en el vano motor (zona caliente), intercalado en la línea de baja presión tras el evaporador"

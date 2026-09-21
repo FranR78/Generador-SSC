@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.condensador-2
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 224
 titulo: "Condensador"
 codigo: "No documentado en fuentes"

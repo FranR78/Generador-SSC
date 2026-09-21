@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.comprobacion-y-calibracion-de-manometros
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 396
 tipo: proceso
 subtipo: procedimiento

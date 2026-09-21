@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.limpieza-del-evaporador-por-ultrasonidos
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 175
 tipo: proceso
 subtipo: procedimiento

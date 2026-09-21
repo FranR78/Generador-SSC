@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sensor-de-temperatura-del-evaporador
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 348
 titulo: "Sensor De Temperatura Del Evaporador"
 ubicacion: "Pinchado directamente entre las aletas de aluminio del evaporador"

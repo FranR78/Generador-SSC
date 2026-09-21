@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.embrague-electromagnetico-del-compresor-3
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 515
 titulo: "Embrague Electromagnético Del Compresor"
 ubicacion: "Frontal de la carcasa del compresor"

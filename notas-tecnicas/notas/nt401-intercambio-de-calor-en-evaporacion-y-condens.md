@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.intercambio-de-calor-en-evaporacion-y-condensacion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 401
 tipo: proceso
 subtipo: fundamento

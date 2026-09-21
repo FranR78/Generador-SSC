@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sonda-de-temperatura-del-liquido-refrigerante
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 386
 titulo: "Sonda De Temperatura Del Líquido Refrigerante"
 ubicacion: "Circuito de refrigeración del motor"

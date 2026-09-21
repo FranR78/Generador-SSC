@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.tomas-de-servicio-de-alta-y-baja-presion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 517
 titulo: "Tomas De Servicio De Alta Y Baja Presión"
 ubicacion: "Intercaladas en las tuberías de la línea de alta y baja presión"

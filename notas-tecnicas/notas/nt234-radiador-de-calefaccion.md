@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.radiador-de-calefaccion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 234
 titulo: "Radiador De Calefacción"
 codigo: "No documentado en fuentes"

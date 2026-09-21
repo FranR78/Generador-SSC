@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.distribucion-y-conduccion-del-aire-simple-y-bizona-dual
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 446
 tipo: proceso
 subtipo: fundamento

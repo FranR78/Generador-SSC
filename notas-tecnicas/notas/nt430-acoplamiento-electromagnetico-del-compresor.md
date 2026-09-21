@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.acoplamiento-electromagnetico-del-compresor-2
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 430
 titulo: "Acoplamiento Electromagnético Del Compresor"
 codigo: "N25"

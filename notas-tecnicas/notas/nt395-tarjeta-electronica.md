@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.tarjeta-electronica
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 395
 titulo: "Tarjeta Electrónica"
 ubicacion: "Montada en la parte trasera del panel de mandos y pantalla del salpicadero"

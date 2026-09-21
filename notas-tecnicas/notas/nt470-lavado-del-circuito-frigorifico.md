@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.lavado-del-circuito-frigorifico
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 470
 tipo: proceso
 subtipo: procedimiento

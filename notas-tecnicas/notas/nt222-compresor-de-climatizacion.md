@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.compresor-de-climatizacion-2
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 222
 titulo: "Compresor De Climatización"
 codigo: "No documentado en fuentes"

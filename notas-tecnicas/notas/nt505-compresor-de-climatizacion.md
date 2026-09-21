@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.compresor-de-climatizacion-5
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 505
 titulo: "Compresor De Climatización"
 ubicacion: "Compartimento motor, fijado mediante orejetas al bloque y accionado por la correa de accesorios"

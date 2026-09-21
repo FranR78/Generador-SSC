@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.equipamiento-de-taller-y-mantenimiento-de-hibridos
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 267
 tipo: proceso
 subtipo: procedimiento

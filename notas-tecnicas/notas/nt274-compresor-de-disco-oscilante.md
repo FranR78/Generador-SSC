@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.compresor-de-disco-oscilante
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 274
 titulo: "Compresor De Disco Oscilante"
 ubicacion: "Montado sobre el bloque motor y accionado por correa Poly-V"

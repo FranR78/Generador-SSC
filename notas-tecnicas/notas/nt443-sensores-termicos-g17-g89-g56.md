@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sensores-termicos-g17-g89-g56
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 443
 titulo: "Sensores Térmicos (G17, G89, G56"
 codigo: "G17, G89, G56, G192, G107"

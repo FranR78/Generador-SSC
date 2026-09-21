@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.logica-y-control-de-la-uce-de-climatizacion-mmi-y-modelo-termico
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 421
 tipo: proceso
 subtipo: fundamento

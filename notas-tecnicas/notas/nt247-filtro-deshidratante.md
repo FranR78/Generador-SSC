@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.filtro-deshidratante-3
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 247
 titulo: "Filtro Deshidratante"
 ubicacion: "Montado en la zona de alta presión entre el condensador y la válvula de expansión (filtro deshidratante) o a la salida del evaporador (acumulador)"

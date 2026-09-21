@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.valvula-de-sobrepresion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 347
 titulo: "Válvula De Sobrepresión"
 ubicacion: "Montada en la carcasa del compresor o en el depósito acumulador"

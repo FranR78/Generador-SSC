@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.interfaz-de-diagnosis-para-bus-de-datos-gateway
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 483
 titulo: "Interfaz De Diagnosis Para Bus De Datos (Gateway)"
 codigo: "J533"

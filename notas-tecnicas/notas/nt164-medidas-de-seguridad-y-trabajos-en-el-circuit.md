@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.medidas-de-seguridad-y-trabajos-en-el-circuito-frigorifico-r134a
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 164
 tipo: proceso
 subtipo: procedimiento

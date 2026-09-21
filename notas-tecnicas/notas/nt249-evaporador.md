@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.evaporador-3
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 249
 titulo: "Evaporador"
 ubicacion: "Alojado en el interior del mueble de climatización, dentro del salpicadero del habitáculo"

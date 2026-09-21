@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.compresor-de-climatizacion-3
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 335
 titulo: "Compresor De Climatización"
 ubicacion: "Fijado al bloque motor y accionado por la correa auxiliar de accesorios"

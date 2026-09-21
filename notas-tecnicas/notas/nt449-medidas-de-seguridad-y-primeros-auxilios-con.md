@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.medidas-de-seguridad-y-primeros-auxilios-con-r134a
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 449
 tipo: proceso
 subtipo: procedimiento

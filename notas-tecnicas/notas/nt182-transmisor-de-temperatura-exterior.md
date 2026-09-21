@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.transmisor-de-temperatura-exterior
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 182
 titulo: "Transmisor De Temperatura Exterior"
 codigo: "G17"

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.busqueda-de-fallos-por-generacion-de-ruidos
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 255
 tipo: proceso
 subtipo: diagnostico

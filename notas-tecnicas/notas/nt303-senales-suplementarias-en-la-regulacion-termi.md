@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.senales-suplementarias-en-la-regulacion-termica
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 303
 tipo: proceso
 subtipo: fundamento

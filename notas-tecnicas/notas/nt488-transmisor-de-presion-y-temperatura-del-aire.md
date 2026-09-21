@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.transmisor-de-presion-y-temperatura-del-aire-acondicionado
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 488
 titulo: "Transmisor De Presión Y Temperatura Del Aire Acondicionado"
 codigo: "G395"

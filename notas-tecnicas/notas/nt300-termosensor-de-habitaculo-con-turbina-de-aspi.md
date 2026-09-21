@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.termosensor-de-habitaculo-con-turbina-de-aspiracion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 300
 titulo: "Termosensor De Habitáculo Con Turbina De Aspiración"
 codigo: "G56 (Termosensor) / V42 (Turbina de aire)"

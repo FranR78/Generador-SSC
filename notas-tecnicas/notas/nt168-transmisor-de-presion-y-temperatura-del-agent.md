@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.transmisor-de-presion-y-temperatura-del-agente-frigorifico
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 168
 titulo: "Transmisor De Presión Y Temperatura Del Agente Frigorífico"
 codigo: "G395"

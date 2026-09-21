@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.motores-electricos-de-trampillas-con-potenciometro-v68-v70-v71-v85
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 500
 titulo: "Motores Eléctricos De Trampillas Con Potenciómetro (V68, V70, V71, V85)"
 codigo: "V68 (con potenciómetro G92), V70 (con G112), V71 (con G113), V85 (con G114)"

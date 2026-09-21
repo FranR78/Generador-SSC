@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.esquemas-electricos-y-nomenclatura
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 420
 tipo: proceso
 subtipo: fundamento

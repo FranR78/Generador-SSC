@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.unidad-de-pantalla-y-mandos-del-climatizador-trasero
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 481
 titulo: "Unidad De Pantalla Y Mandos Del Climatizador Trasero"
 codigo: "E265"

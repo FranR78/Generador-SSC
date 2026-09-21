@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.unidad-de-control-de-electronica-de-informacion-1-j794
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 467
 titulo: "Unidad De Control De Electrónica De Información 1 J794"
 codigo: "J794"

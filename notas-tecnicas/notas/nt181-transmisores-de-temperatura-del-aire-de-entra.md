@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.transmisores-de-temperatura-del-aire-de-entrada
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 181
 titulo: "Transmisores De Temperatura Del Aire De Entrada"
 codigo: "G191 / G192"

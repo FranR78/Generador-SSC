@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.filtro-deshidratante-5
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 392
 titulo: "Filtro Deshidratante"
 ubicacion: "Compartimento motor, intercalado en las canalizaciones del circuito de frío"

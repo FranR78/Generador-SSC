@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.aceite-para-maquinas-frigorificas-pag
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 530
 titulo: "Aceite Para Máquinas Frigoríficas (Pag)"
 ubicacion: "Cárter del compresor y distribuido en emulsión por el circuito frigorífico"

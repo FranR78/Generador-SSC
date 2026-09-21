@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.funcion-de-recirculacion-de-aire
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 306
 tipo: proceso
 subtipo: fundamento

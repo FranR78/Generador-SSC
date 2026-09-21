@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.evaporador-acumulador-de-frio-2
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 263
 titulo: "Evaporador Acumulador De Frío"
 ubicacion: "Alojado en el mueble de climatización dentro del salpicadero"

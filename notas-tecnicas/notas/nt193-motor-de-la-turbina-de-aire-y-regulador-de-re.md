@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.motor-de-la-turbina-de-aire-y-regulador-de-regimen
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 193
 titulo: "Motor De La Turbina De Aire Y Regulador De Régimen"
 codigo: "V2 (Motor de la turbina) / J126 (Regulador de régimen)"

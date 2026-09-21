@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sensor-de-presion-y-temperatura-del-aire-acondicionado-g395
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 472
 titulo: "Sensor De Presión Y Temperatura Del Aire Acondicionado G395"
 codigo: "G395"

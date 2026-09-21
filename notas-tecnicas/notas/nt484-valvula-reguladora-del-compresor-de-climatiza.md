@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.valvula-reguladora-del-compresor-de-climatizacion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 484
 titulo: "Válvula Reguladora Del Compresor De Climatización"
 codigo: "N280"

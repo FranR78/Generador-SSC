@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.tubo-de-expansion-estrangulador-o-orifice-tube
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 436
 titulo: "Tubo De Expansión (Estrangulador O Orifice Tube)"
 ubicacion: "Intercalado en la tubería de entrada al evaporador (lado de alta hacia baja)"

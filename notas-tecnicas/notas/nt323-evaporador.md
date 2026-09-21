@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.evaporador-5
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 323
 titulo: "Evaporador"
 ubicacion: "Conjunto de distribución de trampillas, en el interior del salpicadero"

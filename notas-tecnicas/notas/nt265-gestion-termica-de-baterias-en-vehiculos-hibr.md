@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.gestion-termica-de-baterias-en-vehiculos-hibridos
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 265
 tipo: proceso
 subtipo: fundamento

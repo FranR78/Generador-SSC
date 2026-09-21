@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.lavado-del-circuito-frigorifico-con-estacion-y-kit-de-adaptadores
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 526
 tipo: proceso
 subtipo: procedimiento

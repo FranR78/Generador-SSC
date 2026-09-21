@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.fluidos-refrigerantes-r12-y-r134a-2
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 510
 titulo: "FLUIDOS REFRIGERANTES R12 Y R134a"
 ubicacion: "Circuito cerrado de refrigeración"

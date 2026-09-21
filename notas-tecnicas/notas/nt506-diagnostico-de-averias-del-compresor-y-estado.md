@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.diagnostico-de-averias-del-compresor-y-estado-del-aceite
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 506
 tipo: proceso
 subtipo: diagnostico

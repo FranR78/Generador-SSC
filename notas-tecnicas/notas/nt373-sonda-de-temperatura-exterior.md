@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sonda-de-temperatura-exterior
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 373
 titulo: "Sonda De Temperatura Exterior"
 ubicacion: "Parte baja del retrovisor derecho (u otras ubicaciones del vehículo)"

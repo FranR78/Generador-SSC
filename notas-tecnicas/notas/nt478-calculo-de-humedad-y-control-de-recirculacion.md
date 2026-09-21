@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.calculo-de-humedad-y-control-de-recirculacion-en-tres-y-cuatro-zonas
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 478
 tipo: proceso
 subtipo: fundamento

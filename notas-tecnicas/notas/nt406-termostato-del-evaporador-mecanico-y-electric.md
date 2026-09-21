@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.termostato-del-evaporador-mecanico-y-electrico
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 406
 titulo: "Termostato Del Evaporador (Mecánico Y Eléctrico)"
 ubicacion: "En el mueble climatizador, en contacto o proximidad al evaporador"

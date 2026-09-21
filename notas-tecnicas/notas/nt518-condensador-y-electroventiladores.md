@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.condensador-y-electroventiladores
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 518
 titulo: "Condensador Y Electroventiladores"
 ubicacion: "Frontal del vehículo, situado por delante del radiador de refrigeración de motor"

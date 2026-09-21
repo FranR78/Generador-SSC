@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.circuito-frigorifico-con-tubo-estrangulador
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 282
 tipo: proceso
 subtipo: fundamento

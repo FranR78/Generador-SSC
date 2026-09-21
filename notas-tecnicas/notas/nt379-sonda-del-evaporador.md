@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sonda-del-evaporador-2
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 379
 titulo: "Sonda Del Evaporador"
 ubicacion: "Alojada en la zona más fría del evaporador, dentro del conjunto A/C"

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.mantenimiento-y-servicio-de-climatizacion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 202
 tipo: proceso
 subtipo: procedimiento

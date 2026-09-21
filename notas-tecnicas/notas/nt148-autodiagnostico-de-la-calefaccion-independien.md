@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.autodiagnostico-de-la-calefaccion-independiente
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 148
 tipo: proceso
 subtipo: diagnostico

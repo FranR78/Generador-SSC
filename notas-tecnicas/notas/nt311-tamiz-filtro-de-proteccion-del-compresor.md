@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.tamiz-filtro-de-proteccion-del-compresor
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 311
 titulo: "Tamiz Filtro De Protección Del Compresor"
 ubicacion: "Insertado directamente en la boca de entrada (lado de baja presión) del compresor"

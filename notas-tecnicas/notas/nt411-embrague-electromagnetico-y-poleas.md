@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.embrague-electromagnetico-y-poleas
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 411
 titulo: "Embrague Electromagnético Y Poleas"
 ubicacion: "Frontal del compresor"

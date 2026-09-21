@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.compresor-de-cilindrada-variable-sin-embrague-con-valvula-n280-y-poleas-de-seguridad
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 423
 titulo: "Compresor De Cilindrada Variable Sin Embrague Con Válvula N280 Y Poleas De Seguridad"
 codigo: "Electroválvula N280"

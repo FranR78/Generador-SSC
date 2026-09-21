@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.evaporador-y-filtro-de-habitaculo
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 522
 titulo: "Evaporador Y Filtro De Habitáculo"
 ubicacion: "Mueble climatizador en el salpicadero del habitáculo"

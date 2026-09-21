@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.estrangulador-tubo-de-expansion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 536
 titulo: "Estrangulador (Tubo De Expansión"
 ubicacion: "Entrada del evaporador en circuitos con depósito colector en baja"

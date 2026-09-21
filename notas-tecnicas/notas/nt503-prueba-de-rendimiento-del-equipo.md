@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.prueba-de-rendimiento-del-equipo
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 503
 tipo: proceso
 subtipo: diagnostico

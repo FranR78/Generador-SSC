@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.transmisor-de-temperatura-interior
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 180
 titulo: "Transmisor De Temperatura Interior"
 codigo: "G56"

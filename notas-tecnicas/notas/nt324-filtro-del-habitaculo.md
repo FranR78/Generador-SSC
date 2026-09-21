@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.filtro-del-habitaculo
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 324
 titulo: "Filtro Del Habitáculo"
 ubicacion: "Entrada del conjunto de distribución de trampillas, antes del evaporador"

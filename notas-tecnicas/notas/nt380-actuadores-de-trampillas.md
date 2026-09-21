@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.actuadores-de-trampillas
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 380
 titulo: "Actuadores De Trampillas"
 ubicacion: "Montados sobre el conjunto de distribución de trampillas"

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.ventiladores-del-liquido-refrigerante
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 197
 titulo: "Ventiladores Del Líquido Refrigerante"
 codigo: "V7 / V35"

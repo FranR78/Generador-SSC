@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.unidad-del-equipo-de-mando-electronico
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 198
 titulo: "Unidad Del Equipo De Mando Electrónico"
 codigo: "J255"

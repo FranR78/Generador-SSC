@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.comprobacion-de-la-cantidad-de-refrigerante-a-motor-parado
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 397
 tipo: proceso
 subtipo: diagnostico

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.evaporador-7
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 376
 titulo: "Evaporador"
 ubicacion: "Alojado en el interior del conjunto de distribución de trampillas (conjunto A/C)"

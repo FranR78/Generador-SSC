@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.seguridad-en-la-manipulacion-del-refrigerante-r134a-y-trabajos-en-el-vehiculo
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 308
 tipo: proceso
 subtipo: procedimiento

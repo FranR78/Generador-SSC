@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.unidad-de-control-para-calefaccion-adicional
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 149
 titulo: "Unidad De Control Para Calefacción Adicional"
 codigo: "J364"

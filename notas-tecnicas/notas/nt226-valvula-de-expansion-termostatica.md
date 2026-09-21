@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.valvula-de-expansion-termostatica
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 226
 titulo: "Válvula De Expansión Termostática"
 codigo: "No documentado en fuentes"

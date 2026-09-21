@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.condensador-7
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 391
 titulo: "Condensador"
 ubicacion: "Compartimento motor, en el frontal del vehículo"

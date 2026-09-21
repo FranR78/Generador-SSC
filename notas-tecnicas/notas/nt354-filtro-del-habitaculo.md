@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.filtro-del-habitaculo-2
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 354
 titulo: "Filtro Del Habitáculo"
 ubicacion: "Delante del evaporador, accesible desde el vierteaguas o bajo el salpicadero"

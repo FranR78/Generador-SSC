@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.elemento-calefactor-adicional-electrico-ptc
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 174
 titulo: "Elemento Calefactor Adicional Eléctrico (Ptc)"
 codigo: "Z35"

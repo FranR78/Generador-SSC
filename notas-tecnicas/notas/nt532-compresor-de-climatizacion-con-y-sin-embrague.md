@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.compresor-de-climatizacion-con-y-sin-embrague-electromagnetico
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 532
 titulo: "Compresor De Climatización (Con Y Sin Embrague Electromagnético)"
 ubicacion: "Vano motor, accionado por la correa Poly-V del cigüeñal"

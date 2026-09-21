@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.valvulas-de-expansion-termostaticas-l-y-bloque
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 520
 titulo: "Válvulas De Expansión Termostáticas (L Y Bloque"
 ubicacion: "Montada a la entrada del evaporador, delimitando el lado de alta y baja presión"

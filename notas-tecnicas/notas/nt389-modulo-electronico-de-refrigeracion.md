@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.modulo-electronico-de-refrigeracion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 389
 titulo: "Módulo Electrónico De Refrigeración"
 ubicacion: "Compartimento motor / Sistema de refrigeración"

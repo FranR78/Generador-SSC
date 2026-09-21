@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.presostato-e-interruptor-trinario
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 209
 titulo: "Presostato E Interruptor Trinario"
 codigo: "No documentado en fuentes"

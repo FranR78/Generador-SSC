@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.calculador-ecm-y-centralita-bsi
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 320
 titulo: "Calculador Ecm Y Centralita Bsi"
 ubicacion: "Compartimento motor (ECM) y salpicadero/tablero de mandos (BSI y centralita de climatización)"

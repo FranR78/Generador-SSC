@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.logica-de-control-en-climatizacion-semiautomatica-y-automatica
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 525
 tipo: proceso
 subtipo: fundamento

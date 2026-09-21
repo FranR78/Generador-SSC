@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.comprobacion-de-la-potencia-frigorifica-y-salto-termico
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 176
 tipo: proceso
 subtipo: diagnostico

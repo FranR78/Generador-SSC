@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.bomba-de-recirculacion-de-liquido-refrigerante
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 158
 titulo: "Bomba De Recirculación De Líquido Refrigerante"
 codigo: "V55"

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.micromotores-actuadores-de-trampillas-mezcla-reparticion-y-recirculacion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 328
 titulo: "Micromotores Actuadores De Trampillas (Mezcla, Repartición Y Recirculación)"
 ubicacion: "Fijados sobre la carcasa del conjunto de distribución de trampillas"

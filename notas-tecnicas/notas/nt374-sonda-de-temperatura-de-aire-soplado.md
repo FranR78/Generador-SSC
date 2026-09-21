@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sonda-de-temperatura-de-aire-soplado
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 374
 titulo: "Sonda De Temperatura De Aire Soplado"
 ubicacion: "Interior del conjunto de distribución de trampillas, colocada en los difusores frontales, conducto de pies o conducto de parabrisas"

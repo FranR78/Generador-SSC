@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.compresor-de-climatizacion-4
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 381
 titulo: "Compresor De Climatización"
 ubicacion: "Compartimento motor, arrastrado por la correa del alternador"

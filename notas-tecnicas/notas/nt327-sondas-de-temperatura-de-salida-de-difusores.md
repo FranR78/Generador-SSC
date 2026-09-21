@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sondas-de-temperatura-de-salida-de-difusores-centrales-y-pies
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 327
 titulo: "Sondas De Temperatura De Salida De Difusores (Centrales Y Pies)"
 ubicacion: "Conductos de salida del aire hacia los difusores centrales y hacia los difusores de los pies en el mueble de trampillas"

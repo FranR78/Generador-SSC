@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.servomotores-de-trampillas-2
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 445
 titulo: "Servomotores De Trampillas"
 codigo: "V68, V70, V71, V85, V107, V158, V159"

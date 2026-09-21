@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.presostato-conmutador-de-presion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 349
 titulo: "Presostato Conmutador De Presión"
 ubicacion: "Enroscado sobre el depósito acumulador o en la tubería de alta presión"

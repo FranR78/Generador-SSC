@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.tablero-de-mandos-y-centralita-bizona
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 329
 titulo: "Tablero De Mandos Y Centralita Bizona"
 ubicacion: "Consola central del salpicadero"

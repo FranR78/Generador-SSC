@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.compresor-axial-de-cilindrada-fija-simple-y-doble-efecto
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 408
 titulo: "Compresor Axial De Cilindrada Fija (Simple Y Doble Efecto)"
 ubicacion: "Vano motor, accionado por la correa auxiliar"

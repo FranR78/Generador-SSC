@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.drenajes-de-agua-de-condensacion-del-evaporador
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 476
 titulo: "Drenajes De Agua De Condensación Del Evaporador"
 ubicacion: "Parte inferior del mueble climatizador, en el lado del conductor y en el lado del acompañante"

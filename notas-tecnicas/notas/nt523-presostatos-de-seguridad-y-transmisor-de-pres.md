@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.presostatos-de-seguridad-y-transmisor-de-presion-electronico
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 523
 titulo: "Presostatos De Seguridad Y Transmisor De Presión Electrónico"
 ubicacion: "Montados en las tuberías de la línea de alta presión o sobre el filtro deshidratador"

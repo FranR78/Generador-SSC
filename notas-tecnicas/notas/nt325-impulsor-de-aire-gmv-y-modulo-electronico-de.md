@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.impulsor-de-aire-gmv-y-modulo-electronico-de-velocidad
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 325
 titulo: "Impulsor De Aire (Gmv) Y Módulo Electrónico De Velocidad"
 ubicacion: "Conjunto de distribución de trampillas"

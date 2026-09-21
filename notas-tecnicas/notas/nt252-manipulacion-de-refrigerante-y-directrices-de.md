@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.manipulacion-de-refrigerante-y-directrices-de-montaje
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 252
 tipo: proceso
 subtipo: procedimiento

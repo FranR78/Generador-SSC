@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.orificio-calibrado
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 229
 titulo: "Orificio Calibrado"
 codigo: "No documentado en fuentes"

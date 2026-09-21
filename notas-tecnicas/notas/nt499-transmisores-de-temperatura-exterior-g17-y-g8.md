@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.transmisores-de-temperatura-exterior-g17-y-g89
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 499
 titulo: "Transmisores De Temperatura Exterior G17 Y G89"
 codigo: "G17 (Exterior paragolpes) / G89 (Canal de aire aspirado)"

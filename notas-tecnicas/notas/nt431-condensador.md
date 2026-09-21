@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.condensador-8
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 431
 titulo: "Condensador"
 ubicacion: "Frontal del vehículo, situado por delante del radiador del motor"

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.regulacion-y-sistema-de-proteccion-y-control-del-circuito
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 438
 tipo: proceso
 subtipo: fundamento

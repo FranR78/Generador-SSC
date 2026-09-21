@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.puesta-en-funcionamiento-tras-el-rellenado-de-refrigerante
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 177
 tipo: proceso
 subtipo: procedimiento

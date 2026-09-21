@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.funcion-y-recirculacion-automatica-del-aire-con-sensor-g238
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 447
 tipo: proceso
 subtipo: fundamento

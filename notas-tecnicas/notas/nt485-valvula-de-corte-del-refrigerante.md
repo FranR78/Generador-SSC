@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.valvula-de-corte-del-refrigerante
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 485
 titulo: "Válvula De Corte Del Refrigerante"
 codigo: "N82"

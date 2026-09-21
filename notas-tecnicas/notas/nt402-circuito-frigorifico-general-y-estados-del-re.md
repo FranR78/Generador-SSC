@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.circuito-frigorifico-general-y-estados-del-refrigerante
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 402
 tipo: proceso
 subtipo: fundamento

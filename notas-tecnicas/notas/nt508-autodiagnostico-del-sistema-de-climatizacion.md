@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.autodiagnostico-del-sistema-de-climatizacion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 508
 tipo: proceso
 subtipo: diagnostico

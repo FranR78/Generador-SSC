@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sensor-de-humedad-del-aire
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 491
 titulo: "Sensor De Humedad Del Aire"
 codigo: "G355"

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.deposito-acumulador-de-expansion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 345
 titulo: "Depósito Acumulador De Expansión"
 ubicacion: "Intercalado en el lado de baja presión, entre el evaporador y la aspiración del compresor, en una zona caliente del vano motor"

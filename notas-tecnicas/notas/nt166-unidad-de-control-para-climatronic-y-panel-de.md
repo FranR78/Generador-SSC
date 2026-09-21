@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.unidad-de-control-para-climatronic-y-panel-de-mandos
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 166
 titulo: "Unidad De Control Para Climatronic Y Panel De Mandos"
 codigo: "J255"

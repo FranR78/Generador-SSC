@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sistemas-de-climatizacion-y-sus-modos-de-funcionamiento
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 178
 tipo: proceso
 subtipo: fundamento

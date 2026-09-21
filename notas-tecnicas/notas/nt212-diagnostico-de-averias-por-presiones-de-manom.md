@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.diagnostico-de-averias-por-presiones-de-manometro
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 212
 tipo: proceso
 subtipo: diagnostico

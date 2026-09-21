@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.barrido-del-circuito-con-aire-comprimido-y-nitrogeno
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 540
 tipo: proceso
 subtipo: procedimiento

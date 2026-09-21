@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sensor-de-la-calidad-del-aire
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 171
 titulo: "Sensor De La Calidad Del Aire"
 codigo: "G238"

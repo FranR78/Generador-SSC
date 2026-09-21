@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sonda-de-temperatura-del-habitaculo
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 372
 titulo: "Sonda De Temperatura Del Habitáculo"
 ubicacion: "Parte delantera del salpicadero, cerca del limpiaparabrisas, o bien sobre el propio climatizador en el tablero de mandos"

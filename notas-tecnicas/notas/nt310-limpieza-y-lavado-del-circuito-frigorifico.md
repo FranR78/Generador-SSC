@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.limpieza-y-lavado-del-circuito-frigorifico
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 310
 tipo: proceso
 subtipo: procedimiento

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.control-y-mantenimiento-anual-del-sistema-de-climatizacion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 330
 tipo: proceso
 subtipo: procedimiento

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.intercambiador-termico-interno
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 469
 titulo: "Intercambiador Térmico Interno"
 ubicacion: "Intercalado en las líneas del circuito frigorífico"

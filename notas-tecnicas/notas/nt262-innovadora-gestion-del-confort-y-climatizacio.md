@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.innovadora-gestion-del-confort-y-climatizacion-multizona
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 262
 tipo: proceso
 subtipo: fundamento

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.tablero-de-mandos-y-pantalla-de-presentacion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 371
 titulo: "Tablero De Mandos Y Pantalla De Presentación"
 ubicacion: "Salpicadero del vehículo, en la consola central"

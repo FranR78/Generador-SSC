@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.circuito-de-climatizacion-con-valvula-de-expansion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 203
 tipo: proceso
 subtipo: fundamento

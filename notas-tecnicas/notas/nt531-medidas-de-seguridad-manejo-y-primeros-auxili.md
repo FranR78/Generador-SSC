@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.medidas-de-seguridad-manejo-y-primeros-auxilios
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 531
 tipo: proceso
 subtipo: procedimiento

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.ajuste-basico-y-adaptacion-en-la-calefaccion-independiente
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 151
 tipo: proceso
 subtipo: procedimiento

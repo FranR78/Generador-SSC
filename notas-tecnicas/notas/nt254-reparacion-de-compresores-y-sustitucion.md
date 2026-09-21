@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.reparacion-de-compresores-y-sustitucion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 254
 tipo: proceso
 subtipo: procedimiento

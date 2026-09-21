@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.vaciado-y-proceso-de-vacio-del-circuito
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 415
 tipo: proceso
 subtipo: procedimiento

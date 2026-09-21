@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sensor-de-radiacion-solar-fotosensor
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 358
 titulo: "Sensor De Radiación Solar (Fotosensor)"
 ubicacion: "Parte superior del salpicadero, repartido a ambos lados (derecho e izquierdo)"

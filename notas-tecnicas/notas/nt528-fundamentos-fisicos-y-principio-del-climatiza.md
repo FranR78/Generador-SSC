@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.fundamentos-fisicos-y-principio-del-climatizador
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 528
 tipo: proceso
 subtipo: fundamento

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.aceites-lubricantes-pag-ester-y-mineral
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 412
 titulo: "Aceites Lubricantes (Pag, Ester Y Mineral)"
 ubicacion: "Disuelto en el refrigerante y almacenado en el cárter del compresor"

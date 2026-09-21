@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.servomotores-de-trampillas-de-climatizacion-sistema-de-cuatro-zonas
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 475
 titulo: "Servomotores De Trampillas De Climatización (Sistema De Cuatro Zonas)"
 codigo: "V71, V113, V158, V159, V110, V111, V299, V300, V107, V108, V109, V213, V313, V314, V239, V240"

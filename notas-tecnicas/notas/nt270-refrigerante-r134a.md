@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.refrigerante-r134a
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 270
 titulo: "REFRIGERANTE R134a"
 ubicacion: "Circuito cerrado de climatización del vehículo"

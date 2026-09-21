@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.valvula-de-expansion-2
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 248
 titulo: "Válvula De Expansión"
 ubicacion: "Montada en la entrada del evaporador, marcando la separación entre la zona de alta y baja presión del circuito"

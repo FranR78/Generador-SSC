@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sensor-de-temperatura-del-habitaculo
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 260
 titulo: "Sensor De Temperatura Del Habitáculo"
 ubicacion: "Montado en el salpicadero, integrado en la propia unidad de mando de la climatización"

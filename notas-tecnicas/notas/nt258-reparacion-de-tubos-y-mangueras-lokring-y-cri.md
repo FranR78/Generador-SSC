@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.reparacion-de-tubos-y-mangueras-lokring-y-crimpado
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 258
 tipo: proceso
 subtipo: procedimiento

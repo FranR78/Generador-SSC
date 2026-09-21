@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.compresor-de-climatizacion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 204
 titulo: "Compresor De Climatización"
 codigo: "No documentado en fuentes"

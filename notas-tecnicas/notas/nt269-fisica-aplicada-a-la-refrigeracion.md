@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.fisica-aplicada-a-la-refrigeracion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 269
 tipo: proceso
 subtipo: fundamento

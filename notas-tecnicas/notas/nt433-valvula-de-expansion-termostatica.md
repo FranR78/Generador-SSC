@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.valvula-de-expansion-termostatica-3
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 433
 titulo: "Válvula De Expansión Termostática"
 ubicacion: "Delimita la separación entre alta y baja presión, montada directamente en la entrada del evaporador"

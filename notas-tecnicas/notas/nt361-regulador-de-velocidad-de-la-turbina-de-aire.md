@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.regulador-de-velocidad-de-la-turbina-de-aire-interior
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 361
 titulo: "Regulador De Velocidad De La Turbina De Aire Interior"
 ubicacion: "Montado en el conducto de entrada de aire, junto al motor de la turbina"

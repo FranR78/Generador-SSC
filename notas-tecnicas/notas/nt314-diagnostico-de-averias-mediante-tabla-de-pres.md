@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.diagnostico-de-averias-mediante-tabla-de-presion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 314
 tipo: proceso
 subtipo: diagnostico

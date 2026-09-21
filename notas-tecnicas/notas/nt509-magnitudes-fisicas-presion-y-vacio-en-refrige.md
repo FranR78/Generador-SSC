@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.magnitudes-fisicas-presion-y-vacio-en-refrigeracion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 509
 tipo: proceso
 subtipo: fundamento

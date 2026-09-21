@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.unidad-de-control-para-deteccion-de-ocupacion-del-asiento-j706
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 462
 titulo: "Unidad De Control Para Detección De Ocupación Del Asiento J706"
 codigo: "J706"

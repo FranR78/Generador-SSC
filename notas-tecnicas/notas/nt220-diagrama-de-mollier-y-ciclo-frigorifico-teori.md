@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.diagrama-de-mollier-y-ciclo-frigorifico-teorico
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 220
 tipo: proceso
 subtipo: fundamento

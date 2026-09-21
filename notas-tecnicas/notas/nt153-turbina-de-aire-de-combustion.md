@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.turbina-de-aire-de-combustion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 153
 titulo: "Turbina De Aire De Combustión"
 codigo: "V6"

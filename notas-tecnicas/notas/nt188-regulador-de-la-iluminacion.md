@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.regulador-de-la-iluminacion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 188
 titulo: "Regulador De La Iluminación"
 codigo: "E20"

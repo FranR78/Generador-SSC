@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.filtro-deshidratador-y-acumulador-de-baja-vaso-de-expansion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 519
 titulo: "Filtro Deshidratador Y Acumulador De Baja (Vaso De Expansión)"
 ubicacion: "Filtro en la línea de alta presión (entre condensador y válvula); Acumulador en la línea de baja presión (entre evaporador y compresor en sistemas OT)"

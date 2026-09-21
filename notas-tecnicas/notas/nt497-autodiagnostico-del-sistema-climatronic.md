@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.autodiagnostico-del-sistema-climatronic
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 497
 tipo: proceso
 subtipo: procedimiento

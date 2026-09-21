@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.termosensor-de-temperatura-exterior
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 298
 titulo: "Termosensor De Temperatura Exterior"
 codigo: "G17"

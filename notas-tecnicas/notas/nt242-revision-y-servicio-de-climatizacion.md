@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.revision-y-servicio-de-climatizacion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 242
 tipo: proceso
 subtipo: procedimiento

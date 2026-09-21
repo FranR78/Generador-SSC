@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.intercambios-termicos-y-cambios-de-estado
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 219
 tipo: proceso
 subtipo: fundamento

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.valvula-de-expansion-termostatica-2
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 341
 titulo: "Válvula De Expansión Termostática"
 ubicacion: "Intercalada entre el depósito acumulador y la entrada del evaporador"

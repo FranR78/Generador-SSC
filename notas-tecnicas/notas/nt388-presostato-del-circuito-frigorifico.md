@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.presostato-del-circuito-frigorifico
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 388
 titulo: "Presostato Del Circuito Frigorífico"
 ubicacion: "Tuberías del circuito de aire acondicionado / alta presión"

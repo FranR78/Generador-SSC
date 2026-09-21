@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.unidad-de-control-y-turbina-de-aire-fresco
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 173
 titulo: "Unidad De Control Y Turbina De Aire Fresco"
 codigo: "J126 (Unidad de control/Regulador) / V2 (Motor de la turbina)"

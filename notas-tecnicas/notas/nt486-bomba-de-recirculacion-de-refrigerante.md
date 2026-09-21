@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.bomba-de-recirculacion-de-refrigerante
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 486
 titulo: "Bomba De Recirculación De Refrigerante"
 codigo: "V50"

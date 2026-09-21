@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.aceite-lubricante-sintetico-pag
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 271
 titulo: "Aceite Lubricante Sintético Pag"
 ubicacion: "Interior del compresor y disuelto en el refrigerante R134a circulando por el circuito"

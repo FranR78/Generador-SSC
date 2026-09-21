@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.unidad-de-control-del-turboventilador-y-turbina-de-aire-fresco
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 492
 titulo: "Unidad De Control Del Turboventilador Y Turbina De Aire Fresco"
 codigo: "J126 / V2"

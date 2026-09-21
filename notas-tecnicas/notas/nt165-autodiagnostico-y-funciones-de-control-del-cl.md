@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.autodiagnostico-y-funciones-de-control-del-climatronic
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 165
 tipo: proceso
 subtipo: diagnostico

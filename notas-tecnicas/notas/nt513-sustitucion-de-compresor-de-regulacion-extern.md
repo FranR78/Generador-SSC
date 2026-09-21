@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sustitucion-de-compresor-de-regulacion-externa-por-compresor-con-embrague
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 513
 tipo: proceso
 subtipo: procedimiento

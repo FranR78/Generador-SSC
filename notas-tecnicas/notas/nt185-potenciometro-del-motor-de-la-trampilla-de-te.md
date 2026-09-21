@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.potenciometro-del-motor-de-la-trampilla-de-temperatura
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 185
 titulo: "Potenciómetro Del Motor De La Trampilla De Temperatura"
 codigo: "G92"

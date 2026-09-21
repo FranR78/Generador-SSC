@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.acoplamiento-magnetico-del-compresor
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 196
 titulo: "Acoplamiento Magnético Del Compresor"
 codigo: "N25"

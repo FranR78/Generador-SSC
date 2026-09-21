@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.compresor-electrico-de-alto-voltaje
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 216
 titulo: "Compresor Eléctrico De Alto Voltaje"
 codigo: "No documentado en fuentes"

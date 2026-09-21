@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sensor-antivaho
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 359
 titulo: "Sensor Antivaho"
 ubicacion: "Parte superior de la luna parabrisas, integrado con el soporte del retrovisor interior"

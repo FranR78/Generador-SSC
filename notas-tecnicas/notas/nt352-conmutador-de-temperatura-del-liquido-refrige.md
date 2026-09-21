@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.conmutador-de-temperatura-del-liquido-refrigerante
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 352
 titulo: "Conmutador De Temperatura Del Líquido Refrigerante"
 ubicacion: "Alojado en el circuito de refrigeración del motor o integrado en el sensor de temperatura del cuadro"

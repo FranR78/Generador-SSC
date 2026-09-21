@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.compresor-y-embrague-electromagnetico
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 316
 titulo: "Compresor Y Embrague Electromagnético"
 ubicacion: "Compartimento motor, fijado al bloque y arrastrado por la correa del alternador desde el cigüeñal"

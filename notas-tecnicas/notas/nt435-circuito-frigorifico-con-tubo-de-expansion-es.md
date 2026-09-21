@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.circuito-frigorifico-con-tubo-de-expansion-estrangulador
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 435
 tipo: proceso
 subtipo: fundamento

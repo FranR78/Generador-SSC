@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.control-y-gestion-de-los-ventiladores-del-condensador
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 353
 tipo: proceso
 subtipo: fundamento

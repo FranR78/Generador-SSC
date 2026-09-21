@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.gestion-de-electroventiladores-de-refrigeracion-y-condensador
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 293
 tipo: proceso
 subtipo: fundamento

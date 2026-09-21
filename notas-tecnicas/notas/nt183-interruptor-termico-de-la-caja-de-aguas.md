@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.interruptor-termico-de-la-caja-de-aguas
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 183
 titulo: "Interruptor Térmico De La Caja De Aguas"
 codigo: "F38"

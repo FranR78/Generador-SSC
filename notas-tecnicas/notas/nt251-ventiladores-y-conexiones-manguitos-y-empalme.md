@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.ventiladores-y-conexiones-manguitos-y-empalmes
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 251
 titulo: "Ventiladores Y Conexiones (Manguitos Y Empalmes)"
 ubicacion: "Ventilador de habitáculo dentro del mueble climático; ventilador de condensador en el frontal; manguitos uniendo los componentes del vano motor"

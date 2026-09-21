@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.motor-de-la-trampilla-de-temperatura
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 192
 titulo: "Motor De La Trampilla De Temperatura"
 codigo: "V68"

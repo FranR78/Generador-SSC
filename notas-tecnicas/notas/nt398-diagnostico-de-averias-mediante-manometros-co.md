@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.diagnostico-de-averias-mediante-manometros-con-motor-en-marcha
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 398
 tipo: proceso
 subtipo: diagnostico

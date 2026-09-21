@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.elemento-calefactor-para-precalentamiento-del-combustible
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 157
 titulo: "Elemento Calefactor Para Precalentamiento Del Combustible"
 codigo: "Z66"

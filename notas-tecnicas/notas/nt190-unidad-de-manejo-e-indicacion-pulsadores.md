@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.unidad-de-manejo-e-indicacion-pulsadores
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 190
 titulo: "Unidad De Manejo E Indicación (Pulsadores)"
 codigo: "E87"

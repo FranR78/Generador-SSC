@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.canalizaciones-frigorificas
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 228
 titulo: "Canalizaciones Frigoríficas"
 codigo: "No documentado en fuentes"

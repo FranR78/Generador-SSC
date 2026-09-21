@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.limpieza-interna-del-circuito-mediante-enjuague-con-r134a
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 539
 tipo: proceso
 subtipo: procedimiento

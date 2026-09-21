@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.tubo-de-expansion-u-orificio-calibrado-ot
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 521
 titulo: "Tubo De Expansión U Orificio Calibrado (Ot)"
 ubicacion: "Intercalado dentro de la tubería de entrada al evaporador (sistemas con acumulador en baja)"

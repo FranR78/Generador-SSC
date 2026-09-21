@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.bomba-de-liquido-refrigerante
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 382
 titulo: "Bomba De Líquido Refrigerante"
 ubicacion: "Compartimento motor, accionada por la correa del alternador"

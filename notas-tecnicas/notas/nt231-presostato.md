@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.presostato
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 231
 titulo: "Presostato"
 codigo: "No documentado en fuentes"

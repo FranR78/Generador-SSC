@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.valvula-de-regulacion-del-compresor-de-cilindrada-variable
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 336
 titulo: "Válvula De Regulación Del Compresor De Cilindrada Variable"
 ubicacion: "Alojada en el interior del cuerpo del compresor, en posición central entre los pistones"

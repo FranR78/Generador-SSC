@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.presostatos-e-interruptores-de-presion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 250
 titulo: "Presostatos E Interruptores De Presión"
 ubicacion: "Montados en las tuberías o componentes de la zona de alta presión del circuito de aire acondicionado"

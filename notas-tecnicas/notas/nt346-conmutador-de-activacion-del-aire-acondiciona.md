@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.conmutador-de-activacion-del-aire-acondicionado
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 346
 titulo: "Conmutador De Activación Del Aire Acondicionado"
 ubicacion: "Panel de mandos de la consola central del salpicadero"

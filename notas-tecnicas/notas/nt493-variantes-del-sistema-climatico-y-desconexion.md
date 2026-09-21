@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.variantes-del-sistema-climatico-y-desconexion-de-recirculacion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 493
 tipo: proceso
 subtipo: fundamento

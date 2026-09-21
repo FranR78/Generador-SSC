@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.distribucion-y-conduccion-del-aire-en-sistema-climatizador-dual
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 305
 tipo: proceso
 subtipo: fundamento

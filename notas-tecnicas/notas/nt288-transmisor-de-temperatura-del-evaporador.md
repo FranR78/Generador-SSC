@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.transmisor-de-temperatura-del-evaporador
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 288
 titulo: "Transmisor De Temperatura Del Evaporador"
 codigo: "G153"

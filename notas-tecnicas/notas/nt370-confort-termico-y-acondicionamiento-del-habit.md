@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.confort-termico-y-acondicionamiento-del-habitaculo
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 370
 tipo: proceso
 subtipo: fundamento

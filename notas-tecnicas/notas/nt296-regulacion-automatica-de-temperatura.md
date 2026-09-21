@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.regulacion-automatica-de-temperatura
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 296
 tipo: proceso
 subtipo: fundamento

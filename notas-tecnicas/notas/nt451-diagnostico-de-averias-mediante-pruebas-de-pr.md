@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.diagnostico-de-averias-mediante-pruebas-de-presion-y-tabla-de-divergencias
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 451
 tipo: proceso
 subtipo: diagnostico

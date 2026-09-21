@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.unidad-de-control-del-aire-acondicionado
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 199
 titulo: "Unidad De Control Del Aire Acondicionado"
 codigo: "J293"

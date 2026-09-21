@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.compresor-de-cilindrada-variable-con-proteccion-contra-sobrecarga
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 170
 titulo: "Compresor De Cilindrada Variable Con Protección Contra Sobrecarga"
 codigo: "Denso 6 SEU 14 (motores 4 y 6 cil.) / Denso 7 SEU 17 (motores 8 cil. FSI)"

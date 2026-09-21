@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sensor-de-ocupacion-del-asiento-del-acompanante-g128
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 463
 titulo: "Sensor De Ocupación Del Asiento Del Acompañante G128"
 codigo: "G128"

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.radiador-de-calefaccion-3
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 377
 titulo: "Radiador De Calefacción"
 ubicacion: "Alojado en el interior del conjunto de distribución de trampillas (conjunto A/C)"

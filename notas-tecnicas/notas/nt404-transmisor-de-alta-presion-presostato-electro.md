@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.transmisor-de-alta-presion-presostato-electronico
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 404
 titulo: "Transmisor De Alta Presión (Presostato Electrónico)"
 ubicacion: "Montado sobre el tubo de alta presión del circuito frigorífico"

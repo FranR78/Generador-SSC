@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.servomotor-de-trampilla-con-comunicacion-lin
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 454
 titulo: "Servomotor De Trampilla Con Comunicación Lin"
 codigo: "No documentado en fuentes"

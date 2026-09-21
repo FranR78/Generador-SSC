@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.diagnostico-de-averias-mediante-puente-de-manometros
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 527
 tipo: proceso
 subtipo: diagnostico

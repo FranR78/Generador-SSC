@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.efectos-del-clima-en-el-habitaculo-y-confort-termico
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 424
 tipo: proceso
 subtipo: fundamento

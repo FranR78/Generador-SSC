@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.tubo-estrangulador-orifice-tube
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 283
 titulo: "Tubo Estrangulador (Orifice Tube)"
 ubicacion: "Intercalado en la tubería de alta presión, justo a la entrada del evaporador"

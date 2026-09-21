@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.ambiente-climatizado-confort-y-seguridad
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 268
 tipo: proceso
 subtipo: fundamento

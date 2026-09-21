@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.unidad-de-control-climatronic-j255
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 496
 titulo: "Unidad De Control Climatronic J255"
 codigo: "J255 (Unidad de control) / E87 (Unidad de manejo e indicación)"

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.conmutador-termico-del-ventilador
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 189
 titulo: "Conmutador Térmico Del Ventilador"
 codigo: "F18"

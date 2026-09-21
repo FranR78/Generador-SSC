@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.valvula-de-expansion-termostatica-con-diafragma-exterior
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 279
 titulo: "Válvula De Expansión Termostática Con Diafragma Exterior"
 ubicacion: "Delimita el paso entre la línea de alta presión y la entrada del evaporador"

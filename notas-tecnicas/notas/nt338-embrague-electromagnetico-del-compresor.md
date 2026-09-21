@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.embrague-electromagnetico-del-compresor-2
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 338
 titulo: "Embrague Electromagnético Del Compresor"
 ubicacion: "Montado sobre el extremo del árbol de accionamiento del compresor"

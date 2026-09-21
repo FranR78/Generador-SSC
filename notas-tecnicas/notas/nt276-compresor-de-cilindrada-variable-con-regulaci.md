@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.compresor-de-cilindrada-variable-con-regulacion-externa
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 276
 titulo: "Compresor De Cilindrada Variable Con Regulación Externa"
 codigo: "Denso 6 SEU 12"

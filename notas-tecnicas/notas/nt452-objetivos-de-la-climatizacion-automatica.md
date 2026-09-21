@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.objetivos-de-la-climatizacion-automatica
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 452
 tipo: proceso
 subtipo: fundamento

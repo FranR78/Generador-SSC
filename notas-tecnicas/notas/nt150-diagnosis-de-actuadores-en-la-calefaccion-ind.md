@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.diagnosis-de-actuadores-en-la-calefaccion-independiente
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 150
 tipo: proceso
 subtipo: procedimiento

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.autodiagnosis-y-funciones-de-control-de-climatizacion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 201
 tipo: proceso
 subtipo: diagnostico

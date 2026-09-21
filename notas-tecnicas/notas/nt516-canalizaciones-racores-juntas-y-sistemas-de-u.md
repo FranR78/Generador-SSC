@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.canalizaciones-racores-juntas-y-sistemas-de-union-spring-lock-lokring
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 516
 titulo: "Canalizaciones, Racores, Juntas Y Sistemas De Unión (Spring-Lock, Lokring)"
 ubicacion: "Red de tuberías del circuito frigorífico"

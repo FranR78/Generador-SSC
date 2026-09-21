@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.termocontacto-y-electroventilador-gmv
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 387
 titulo: "Termocontacto Y Electroventilador (Gmv)"
 ubicacion: "Radiador de refrigeración (termocontacto) y frontal del vehículo (GMV)"

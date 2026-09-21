@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sustitucion-y-montaje-de-un-compresor-nuevo
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 507
 tipo: proceso
 subtipo: procedimiento

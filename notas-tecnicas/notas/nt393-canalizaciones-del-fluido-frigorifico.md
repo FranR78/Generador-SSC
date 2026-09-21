@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.canalizaciones-del-fluido-frigorifico
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 393
 titulo: "Canalizaciones Del Fluido Frigorífico"
 ubicacion: "Distribuidas entre el compartimento motor y el conjunto A/C del salpicadero"

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.filtro-deshidratante-2
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 225
 titulo: "Filtro Deshidratante"
 codigo: "No documentado en fuentes"

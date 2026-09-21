@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.restricciones-y-limitaciones-de-la-climatizacion-automatica
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 453
 tipo: proceso
 subtipo: fundamento

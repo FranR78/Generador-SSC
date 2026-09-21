@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.configuracion-y-distribucion-del-sistema-de-climatizacion-de-cuatro-zonas
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 474
 tipo: proceso
 subtipo: fundamento

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.regulacion-de-aire-bizona-y-modos-de-temperatura
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 362
 tipo: proceso
 subtipo: fundamento

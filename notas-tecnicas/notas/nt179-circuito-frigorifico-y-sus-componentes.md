@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.circuito-frigorifico-y-sus-componentes
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 179
 tipo: proceso
 subtipo: fundamento

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.evaporador-6
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 342
 titulo: "Evaporador"
 ubicacion: "Alojado en el interior de la caja de aireación del habitáculo (mueble climatizador)"

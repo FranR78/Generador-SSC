@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sondas-de-temperatura-y-sensores-del-climatizador
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 422
 titulo: "Sondas De Temperatura Y Sensores Del Climatizador"
 ubicacion: "Diversos puntos del habitáculo, canalizaciones y exterior"

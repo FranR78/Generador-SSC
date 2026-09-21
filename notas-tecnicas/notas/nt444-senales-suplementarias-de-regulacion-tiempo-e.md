@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.senales-suplementarias-de-regulacion-tiempo-en-parado-velocidad-y-regimen
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 444
 tipo: proceso
 subtipo: fundamento

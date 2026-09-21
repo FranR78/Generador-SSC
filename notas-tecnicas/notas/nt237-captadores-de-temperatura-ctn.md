@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.captadores-de-temperatura-ctn
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 237
 titulo: "Captadores De Temperatura Ctn"
 codigo: "No documentado en fuentes"

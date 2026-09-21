@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.busqueda-de-averias-por-manometros-y-potencia
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 253
 tipo: proceso
 subtipo: diagnostico

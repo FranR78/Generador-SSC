@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.conceptos-fundamentales-de-la-tecnica-de-refrigeracion-e-higrometria
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 313
 tipo: proceso
 subtipo: fundamento

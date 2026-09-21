@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sistemas-de-regulacion-y-accionadores
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 236
 tipo: proceso
 subtipo: fundamento

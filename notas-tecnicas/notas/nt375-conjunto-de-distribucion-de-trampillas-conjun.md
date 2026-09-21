@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.conjunto-de-distribucion-de-trampillas-conjunto-a
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 375
 titulo: "Conjunto De Distribución De Trampillas (Conjunto A"
 ubicacion: "Interior del salpicadero, enlazando el compartimento motor con el habitáculo"

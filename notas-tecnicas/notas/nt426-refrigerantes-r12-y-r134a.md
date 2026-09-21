@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.refrigerantes-r12-y-r134a
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 426
 titulo: "REFRIGERANTES R12 Y R134a"
 ubicacion: "Circuito cerrado frigorífico"

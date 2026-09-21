@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.equipo-de-recuperacion-reciclaje-y-botella-de-refrigerante
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 368
 titulo: "Equipo De Recuperación, Reciclaje Y Botella De Refrigerante"
 ubicacion: "Equipo móvil de taller"

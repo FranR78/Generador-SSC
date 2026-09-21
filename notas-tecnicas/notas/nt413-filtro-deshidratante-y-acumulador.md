@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.filtro-deshidratante-y-acumulador
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 413
 titulo: "Filtro Deshidratante Y Acumulador"
 ubicacion: "Filtro en la línea de alta presión (entre condensador y válvula de expansión); Acumulador en la línea de baja presión (entre evaporador y compresor)"

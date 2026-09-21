@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.evaporador-9
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 534
 titulo: "Evaporador"
 ubicacion: "Alojado en el interior de la caja de distribución de aire (salpicadero)"

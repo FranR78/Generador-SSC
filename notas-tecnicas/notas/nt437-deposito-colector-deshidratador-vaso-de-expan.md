@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.deposito-colector-deshidratador-vaso-de-expansion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 437
 titulo: "Depósito Colector Deshidratador (Vaso De Expansión)"
 ubicacion: "Lado de baja presión, entre la salida del evaporador y la aspiración del compresor (ubicado en zona caliente del vano motor)"

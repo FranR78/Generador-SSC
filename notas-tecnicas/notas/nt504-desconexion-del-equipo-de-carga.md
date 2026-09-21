@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.desconexion-del-equipo-de-carga
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 504
 tipo: proceso
 subtipo: procedimiento

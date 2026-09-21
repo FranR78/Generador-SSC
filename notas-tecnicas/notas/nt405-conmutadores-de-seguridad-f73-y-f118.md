@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.conmutadores-de-seguridad-f73-y-f118
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 405
 titulo: "Conmutadores De Seguridad F73 Y F118"
 codigo: "F73 (Baja Presión) / F118 (Alta Presión)"

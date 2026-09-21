@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.comprobacion-del-filtro-de-habitaculo-con-airtest
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 239
 tipo: proceso
 subtipo: procedimiento

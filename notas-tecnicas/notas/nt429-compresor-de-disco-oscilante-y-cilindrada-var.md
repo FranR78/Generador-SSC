@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.compresor-de-disco-oscilante-y-cilindrada-variable
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 429
 titulo: "Compresor De Disco Oscilante Y Cilindrada Variable"
 ubicacion: "Compartimento motor, accionado por la correa Poly-V del cigüeñal"

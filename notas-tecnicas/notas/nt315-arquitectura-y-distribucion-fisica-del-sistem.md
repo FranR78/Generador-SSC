@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.arquitectura-y-distribucion-fisica-del-sistema-de-climatizacion-automatica
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 315
 tipo: proceso
 subtipo: fundamento

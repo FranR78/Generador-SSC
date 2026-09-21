@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.conmutador-de-presion-trinary-y-transmisor-de-alta-presion-sensor-pwm
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 439
 titulo: "Conmutador De Presión (Trinary) Y Transmisor De Alta Presión (Sensor Pwm)"
 codigo: "F129 (Conmutador Trinary) / Transmisor de alta presión"

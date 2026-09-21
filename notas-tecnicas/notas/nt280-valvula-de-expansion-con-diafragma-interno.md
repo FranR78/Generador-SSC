@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.valvula-de-expansion-con-diafragma-interno
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 280
 titulo: "Válvula De Expansión Con Diafragma Interno"
 ubicacion: "Montada directamente sobre las bridas de entrada y salida del evaporador en el vano motor"

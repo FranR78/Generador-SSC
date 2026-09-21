@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.diagnosis-de-presiones-a-vehiculo-parado-y-en-marcha
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 418
 tipo: proceso
 subtipo: diagnostico

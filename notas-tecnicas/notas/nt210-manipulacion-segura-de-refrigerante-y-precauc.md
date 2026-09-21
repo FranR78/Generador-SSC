@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.manipulacion-segura-de-refrigerante-y-precauciones-en-taller
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 210
 tipo: proceso
 subtipo: procedimiento

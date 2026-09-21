@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sonda-del-evaporador
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 232
 titulo: "Sonda Del Evaporador"
 codigo: "No documentado en fuentes"

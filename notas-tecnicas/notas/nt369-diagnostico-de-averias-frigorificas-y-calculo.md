@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.diagnostico-de-averias-frigorificas-y-calculo-de-parametros
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 369
 tipo: proceso
 subtipo: diagnostico

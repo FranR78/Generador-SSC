@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.regulacion-de-temperatura-manual-y-automatica-climatronic
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 442
 tipo: proceso
 subtipo: fundamento

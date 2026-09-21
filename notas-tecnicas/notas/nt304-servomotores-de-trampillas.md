@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.servomotores-de-trampillas
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 304
 titulo: "Servomotores De Trampillas"
 ubicacion: "Montados sobre la carcasa del mueble del calefactor/climatizador"

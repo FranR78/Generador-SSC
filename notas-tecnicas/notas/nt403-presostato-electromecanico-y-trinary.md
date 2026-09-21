@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.presostato-electromecanico-y-trinary
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 403
 titulo: "Presostato Electromecánico Y Trinary"
 ubicacion: "Tuberías de la línea de alta presión"

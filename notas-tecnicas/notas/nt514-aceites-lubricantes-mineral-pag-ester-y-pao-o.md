@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.aceites-lubricantes-mineral-pag-ester-y-pao-oil
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 514
 titulo: "Aceites Lubricantes (Mineral, Pag, Ester Y Pao-Oil)"
 ubicacion: "En el cárter del compresor y repartido por las tuberías del circuito"

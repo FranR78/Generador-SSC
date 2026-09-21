@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.acumulador
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 230
 titulo: "Acumulador"
 codigo: "No documentado en fuentes"

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.interaccion-entre-climatizacion-y-refrigeracion-del-motor
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 243
 tipo: proceso
 subtipo: fundamento

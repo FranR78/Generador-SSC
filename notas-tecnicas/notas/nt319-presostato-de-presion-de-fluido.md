@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.presostato-de-presion-de-fluido
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 319
 titulo: "Presostato De Presión De Fluido"
 ubicacion: "Compartimento motor, montado en la línea de alta presión"

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.conmutadores-de-presion-de-baja-y-alta-en-circuito-con-inyector
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 351
 titulo: "Conmutadores De Presión De Baja Y Alta En Circuito Con Inyector"
 ubicacion: "Instalados por separado en las líneas de baja y alta presión del vano motor"

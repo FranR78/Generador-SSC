@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.comprobacion-de-presiones-y-diagnostico-en-circuitos-frigorificos
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 542
 tipo: proceso
 subtipo: diagnostico

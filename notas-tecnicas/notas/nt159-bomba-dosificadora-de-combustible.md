@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.bomba-dosificadora-de-combustible
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 159
 titulo: "Bomba Dosificadora De Combustible"
 codigo: "V54"

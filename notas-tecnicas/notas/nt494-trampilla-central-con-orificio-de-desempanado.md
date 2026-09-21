@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.trampilla-central-con-orificio-de-desempanado
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 494
 titulo: "Trampilla Central Con Orificio De Desempañado"
 ubicacion: "Mueble climatizador, regulando la salida de aire hacia los difusores centrales y laterales"

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.sensor-de-calidad-del-aire-2
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 363
 titulo: "Sensor De Calidad Del Aire"
 ubicacion: "Montado en el canal de aspiración de aire exterior, por delante del filtro de habitáculo"

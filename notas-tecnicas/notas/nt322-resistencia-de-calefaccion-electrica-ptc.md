@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.resistencia-de-calefaccion-electrica-ptc
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 322
 titulo: "Resistencia De Calefacción Eléctrica (Ptc)"
 ubicacion: "Conjunto de distribución de trampillas, junto al radiador de calefacción"

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.compresor-de-cilindrada-variable-sin-embrague-electromagnetico
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 256
 titulo: "Compresor De Cilindrada Variable Sin Embrague Electromagnético"
 codigo: "Denso (6SEU / 7SEU), Sanden (PXE 13 / PXE 16), Delphi/Harrison (serie CVC7)"

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.topologia-y-arquitectura-de-red-del-sistema-de-climatizacion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 479
 tipo: proceso
 subtipo: fundamento

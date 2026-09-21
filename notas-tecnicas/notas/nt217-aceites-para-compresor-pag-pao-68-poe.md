@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.aceites-para-compresor-pag-pao-68-poe
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 217
 titulo: "Aceites Para Compresor (Pag, Pao 68, Poe)"
 codigo: "PAG I (ISO 46), PAG II (ISO 100), PAG III (ISO 150), PAO 68 (AA1), POE"

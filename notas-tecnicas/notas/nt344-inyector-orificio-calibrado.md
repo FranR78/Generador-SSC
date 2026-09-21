@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.inyector-orificio-calibrado
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 344
 titulo: "Inyector (Orificio Calibrado)"
 ubicacion: "Insertado en el tubo de entrada del evaporador"

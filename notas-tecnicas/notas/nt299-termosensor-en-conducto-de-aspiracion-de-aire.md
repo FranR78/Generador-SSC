@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.termosensor-en-conducto-de-aspiracion-de-aire-fresco
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 299
 titulo: "Termosensor En Conducto De Aspiración De Aire Fresco"
 codigo: "G89"

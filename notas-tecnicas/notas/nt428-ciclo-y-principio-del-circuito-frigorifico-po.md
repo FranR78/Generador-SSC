@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.ciclo-y-principio-del-circuito-frigorifico-por-compresion
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 428
 tipo: proceso
 subtipo: fundamento

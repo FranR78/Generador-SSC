@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.el-ciclo-frigorifico-general
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 511
 tipo: proceso
 subtipo: fundamento

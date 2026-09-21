@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.compresor-de-aire-acondicionado
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 245
 titulo: "Compresor De Aire Acondicionado"
 ubicacion: "Montado en el bloque motor mediante soporte rígido y accionado por la correa trapezoidal o estriada"

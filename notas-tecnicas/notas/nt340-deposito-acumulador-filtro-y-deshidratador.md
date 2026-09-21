@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.deposito-acumulador-filtro-y-deshidratador
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 340
 titulo: "Depósito Acumulador, Filtro Y Deshidratador"
 ubicacion: "Intercalado en la línea de alta presión, entre el condensador y la válvula de expansión"

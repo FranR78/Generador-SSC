@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.compresor-rotativo-espiral-y-paletas
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 410
 titulo: "Compresor Rotativo (Espiral Y Paletas)"
 ubicacion: "Vano motor"

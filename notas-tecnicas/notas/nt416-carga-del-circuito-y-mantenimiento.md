@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.carga-del-circuito-y-mantenimiento
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 416
 tipo: proceso
 subtipo: procedimiento

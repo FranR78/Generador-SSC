@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.regulacion-manual-de-temperatura
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 295
 tipo: proceso
 subtipo: fundamento

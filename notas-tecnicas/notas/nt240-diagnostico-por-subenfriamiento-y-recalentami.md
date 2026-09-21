@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.diagnostico-por-subenfriamiento-y-recalentamiento
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 240
 tipo: proceso
 subtipo: diagnostico

@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.circuito-frigorifico-de-tres-y-cuatro-zonas
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 468
 tipo: proceso
 subtipo: fundamento

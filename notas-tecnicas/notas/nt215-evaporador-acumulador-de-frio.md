@@ -1,7 +1,7 @@
 ---
 id: ssc.sin-clasificar.evaporador-acumulador-de-frio
 modulo: ssc
-unidad: sin-clasificar
+unidad: clima
 nt: 215
 titulo: "Evaporador Acumulador De Frío"
 codigo: "No documentado en fuentes"
