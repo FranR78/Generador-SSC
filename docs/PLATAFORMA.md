@@ -22,6 +22,36 @@ Primera pregunta al arrancar: **¿qué etiquetas existen?** Un vocabulario corto
 cerrado (clima, seguridad, airbag, alta-presion, baja-presion, mando, sensor…)
 vale más que etiquetas libres, que se llenan de sinónimos y dejan de agrupar.
 
+### Las etiquetas son configuración CENTRAL, no de cada docente
+
+Aquí está el matiz que lo salva: si las etiquetas fueran config de cada profesor,
+cada uno etiquetaría a su manera y las NT comunes dejarían de agruparse entre
+sí. Así que son **configuración compartida, administrada por una sola persona**
+(el administrador). Es el mismo papel que hace `claves.yml` con los componentes,
+pero para toda la comunidad.
+
+Reglas:
+
+- **Un registro único de etiquetas** (una Hoja, del administrador). Fuente de
+  verdad.
+- El docente **elige de la lista; no escribe libre.** No puede crear una
+  etiqueta sobre la marcha, solo marcar las que existen.
+- Si le falta una, **solicita el alta.** La solicitud llega al administrador, se
+  valora con el proponente, y se aprueba / se fusiona con una existente / se
+  rechaza. Queda registro de la decisión.
+- **Defensa automática contra casi-duplicados:** al ir a solicitar una etiqueta,
+  el sistema muestra primero las **parecidas** que ya existen (búsqueda por
+  similitud, la misma técnica del detector de duplicados de las notas). El
+  proponente ve «ya existe *direcciones-asistidas*» antes de proponer
+  *direcciones-electromecanicas*, y el 90 % de los solapes se cortan sin llegar
+  al administrador. El ejemplo real del profesor: las direcciones asistidas son
+  todas; lo que varía son los tipos.
+
+**Pregunta abierta (no decidida):** ¿las etiquetas son de un nivel o de dos? El
+ejemplo de «direcciones asistidas» + tipo (`hidraulica`, `electromecanica`)
+sugiere una etiqueta amplia con sub-etiquetas. Un nivel es más simple; dos
+modelan mejor los tipos. A decidir con el vocabulario en la mano, no antes.
+
 ---
 
 ## 2. El id necesita autor (esto va ANTES del pool compartido)
