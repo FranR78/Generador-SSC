@@ -47,7 +47,8 @@ Reglas:
   al administrador. El ejemplo real del profesor: las direcciones asistidas son
   todas; lo que varía son los tipos.
 
-**Pregunta abierta (no decidida):** ¿las etiquetas son de un nivel o de dos? El
+DECIDIDO: dos niveles. Etiqueta amplia (direccion-asistida) + tipo (hidraulica,
+# electromecanica). El registro central guarda las dos columnas: etiqueta y tipo.
 ejemplo de «direcciones asistidas» + tipo (`hidraulica`, `electromecanica`)
 sugiere una etiqueta amplia con sub-etiquetas. Un nivel es más simple; dos
 modelan mejor los tipos. A decidir con el vocabulario en la mano, no antes.
