@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">380 notas · 21/09/2026</p>
+  <p class="sidebar-meta">383 notas · 21/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -515,6 +515,9 @@
     <li><a href="#nt393">NT393 · Canalizaciones Del Fluido Frigorífico</a></li>
     <li><a href="#nt394">NT394 · Lógica De Control Y Gestión De La Tarj</a></li>
     <li><a href="#nt395">NT395 · Tarjeta Electrónica</a></li>
+    <li><a href="#nt396">NT396 · Comprobación Y Calibración De Manómetr</a></li>
+    <li><a href="#nt397">NT397 · Comprobación De La Cantidad De Refrige</a></li>
+    <li><a href="#nt398">NT398 · Diagnóstico De Averías Mediante Manóme</a></li>
   </ul>
 </nav>
 
@@ -27142,8 +27145,357 @@ Manipular el circuito cargado es la causa habitual de quemaduras por frío.</p>
     </div>
   </section>
 
+  <section id="nt396" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 396 <span class="subtipo">Procedimiento</span></div>
+    <div class="nota-body proceso">
+      <h1>Comprobación Y Calibración De Manómetros</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Establecer el procedimiento de comprobación y ajuste del punto cero en los manómetros del puente de prueba a motor parado. Se aplica como paso previo a cualquier medición de presiones en el circuito de climatización.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>La precisión en el diagnóstico de presiones exige que los relojes del puente de medición no presenten desviaciones mecánicas iniciales cuando no están sometidos a la presión del fluido refrigerante.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Motor parado.  </li>
+<li>Puente de manómetros desconectado del vehículo y libre de fluido o presión de refrigerante.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <ul>
+<li>Puente de manómetros (relojes de baja "LO" y alta "HI" presión).  </li>
+<li>Destornillador para tornillos de ajuste a cero.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ol>
+<li>Verificar que los latiguillos del puente de manómetros estén libres de líquido refrigerante y desconectados de las tomas del vehículo.  </li>
+<li>Observar la posición exacta de las agujas en las escalas de baja y alta presión.  </li>
+<li>Si las agujas no marcan cero exactamente, actuar sobre los tornillos de ajuste de cero situados en la carátula hasta alinear las agujas con el valor cero.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Parámetro / Componente</th>
+<th>Valor de referencia</th>
+<th>Condiciones de validez</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Indicación de aguja en reposo</strong></td>
+<td><strong>0 bar / 0 kg/cm2</strong></td>
+<td>Relojes desconectados y libres de presión de refrigerante</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Omitir el calibrado inicial: provoca desviaciones sistemáticas en las lecturas de alta y baja presión, derivando en un diagnóstico falso de la carga o del estado del compresor.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Las agujas de ambos manómetros coinciden exactamente con la marca cero en ausencia de presión.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT396_01</code> Puente de manómetros y tornillos de calibración a cero en reposo — Fuente: MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, pág. 1</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt397" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 397 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Comprobación De La Cantidad De Refrigerante A Motor Parado</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Determinar el estado de la carga de fluido refrigerante y la presencia de aire o gases no condensables en el circuito midiendo presiones a motor parado.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>En reposo (motor detenido), las presiones de alta y baja del circuito se igualan y dependen de la temperatura del refrigerante (relación presión-temperatura de saturación). Como regla general, la presión de reposo se sitúa en función de la temperatura ambiente y de la temperatura del condensador. La temperatura ideal en el condensador se sitúa 20 ºC por encima de la ambiental.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Motor parado.  </li>
+<li>Presiones de alta y baja igualadas en reposo.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <ul>
+<li>Puente de manómetros.  </li>
+<li>Termómetro de contacto y termómetro ambiental.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Conectar las mangueras del puente de manómetros a las tomas de servicio de alta y baja presión del vehículo.  </li>
+<li>Medir la temperatura ambiente y la temperatura sobre la superficie del condensador.  </li>
+<li>Comprobar en la tabla técnica la presión que debe corresponder a la temperatura leída.  </li>
+<li>Comparar el valor de la tabla con la lectura del manómetro:  </li>
+<li><strong>Si la presión es mayor que el valor de tabla:</strong> existe aire o gases no condensables en el circuito (o bien exceso de carga).  </li>
+<li><strong>Si la presión es menor que el valor de tabla:</strong> falta líquido refrigerante (fuga o subcarga).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Estado de la carga / Parámetro</th>
+<th>Presión de referencia (Baja / Alta)</th>
+<th>Temp. Condensador</th>
+<th>Temp. Ambiente</th>
+<th>Temp. Motor / Manómetro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Presión de alta mínima en reposo</strong></td>
+<td><strong>9 bar</strong></td>
+<td><strong>40 ºC</strong></td>
+<td><strong>20 ºC</strong></td>
+<td>No documentado en fuentes</td>
+</tr>
+<tr>
+<td><strong>Presión de alta mínima en reposo</strong></td>
+<td><strong>12 bar</strong></td>
+<td><strong>50 ºC</strong></td>
+<td><strong>30 ºC</strong></td>
+<td>No documentado en fuentes</td>
+</tr>
+<tr>
+<td><strong>Presión de alta mínima en reposo</strong></td>
+<td><strong>15,5 bar</strong></td>
+<td><strong>60 ºC</strong></td>
+<td><strong>40 ºC</strong></td>
+<td>No documentado en fuentes</td>
+</tr>
+<tr>
+<td><strong>Carga correcta</strong></td>
+<td><strong>6,5 bar</strong></td>
+<td><strong>24 ºC a 26 ºC</strong></td>
+<td><strong>24 ºC a 26 ºC</strong></td>
+<td><strong>25 ºC motor / 24-26 ºC manómetro</strong></td>
+</tr>
+<tr>
+<td><strong>Exceso de carga</strong></td>
+<td><strong>7,5 bar</strong></td>
+<td><strong>24 ºC a 26 ºC</strong></td>
+<td><strong>24 ºC a 26 ºC</strong></td>
+<td><strong>30 ºC motor / 30 ºC manómetro</strong></td>
+</tr>
+<tr>
+<td><strong>Asociación de gases (Aire)</strong></td>
+<td><strong>7,5 bar</strong></td>
+<td><strong>24 ºC a 26 ºC</strong></td>
+<td><strong>24 ºC a 26 ºC</strong></td>
+<td><strong>24-26 ºC motor / 30 ºC manómetro</strong></td>
+</tr>
+<tr>
+<td><strong>Falta de líquido refrigerante</strong></td>
+<td><strong>6,5 bar</strong></td>
+<td><strong>30 ºC</strong></td>
+<td><strong>30 ºC</strong></td>
+<td><strong>25 ºC motor / 30 ºC manómetro</strong></td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Lectura de presión mayor a la de la tabla con motor parado: indica presencia de aire residual atrapado por una evacuación/vacío incompleto.  </li>
+<li>Lectura de presión menor a la de la tabla: indica falta de líquido refrigerante por fugas.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Coincidencia de la presión del manómetro con el valor de la tabla de saturación correspondiente a la temperatura medida.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT397_01</code> Conexión del puente de manómetros para verificación de carga a motor parado — Fuente: MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, pág. 2</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt398" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 398 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico De Averías Mediante Manómetros Con Motor En Marcha</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Identificar averías mecánicas del compresor, de la válvula de expansión, del electroventilador o descompensaciones de carga evaluando las presiones de alta y baja a régimen de ralentí y a 2.000 rpm.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>En funcionamiento, el compresor aspira el gas del lado de baja y lo comprime hacia el de alta. El comportamiento de las agujas (valores descompensados o fluctuaciones oscilantes) permite diagnosticar fallos en láminas de válvulas, obstrucciones en el elemento de expansión o deficiencias de intercambio térmico.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Motor en marcha a régimen de ralentí o acelerado a 2.000 rpm según la prueba.  </li>
+<li>Climatizador / Aire acondicionado conectado a máxima potencia frigorífica.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <ul>
+<li>Puente de manómetros acoplado a las tomas de servicio HD (alta) y ND (baja).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Presiones normales de trabajo (motor a ralentí):</strong>  </li>
+<li>Presión de alta: de <strong>14 a 17 bar</strong>.  </li>
+<li>Presión de baja: de <strong>1 a 2 bar</strong>.  </li>
+<li><strong>Exceso de líquido refrigerante:</strong>  </li>
+<li>A ralentí: Alta presión <strong>mayor de 17 bar</strong> y Baja presión <strong>mayor de 2 bar</strong>.  </li>
+<li>A 2.000 rpm: si a ralentí daba presiones normales pero a 2.000 rpm la Alta sube a <strong>Alta</strong> y la Baja sube a <strong>Alta</strong>, confirma sobrecarga de refrigerante.  </li>
+<li><strong>Falta de líquido refrigerante:</strong>  </li>
+<li>A ralentí: Alta presión <strong>menor de 14 bar</strong> y Baja presión <strong>menor de 1 bar</strong>.  </li>
+<li>A 2.000 rpm: si a ralentí daba normal pero a 2.000 rpm la Alta cae a <strong>Baja</strong> y la Baja cae a <strong>Baja</strong>, confirma falta de refrigerante.  </li>
+<li><strong>Obstrucción en válvula de expansión:</strong>  </li>
+<li>A ralentí: Alta presión <strong>mayor de 17 bar</strong> y Baja presión <strong>menor de 1 bar</strong>.  </li>
+<li><strong>Válvula de expansión abierta:</strong>  </li>
+<li>A ralentí: Alta presión <strong>normal</strong> (14 a 17 bar) y Baja presión <strong>mayor de 2 bar</strong>.  </li>
+<li><strong>Válvulas de escape del compresor defectuosas:</strong>  </li>
+<li>A ralentí: Alta presión <strong>oscilando</strong> y Baja presión <strong>normal</strong> (1 a 2 bar).  </li>
+<li><strong>Válvulas de admisión del compresor defectuosas:</strong>  </li>
+<li>A ralentí: Alta presión <strong>normal</strong> (14 a 17 bar) y Baja presión <strong>oscilando</strong>.  </li>
+<li><strong>Electroventilador del condensador parado:</strong>  </li>
+<li>A ralentí: Alta presión <strong>alta</strong> (mayor de 17 bar) y Baja presión <strong>normal</strong> (1 a 2 bar).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Estado del sistema / Avería diagnosticada</th>
+<th>Presión de Alta (HP)</th>
+<th>Presión de Baja (BP)</th>
+<th>Régimen de motor / Condición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Servicio normal</strong></td>
+<td><strong>14 a 17 bar</strong></td>
+<td><strong>1 a 2 bar</strong></td>
+<td>Motor arrancado a ralentí</td>
+</tr>
+<tr>
+<td><strong>Exceso de líquido refrigerante</strong></td>
+<td><strong>&gt; 17 bar</strong></td>
+<td><strong>&gt; 2 bar</strong></td>
+<td>Motor arrancado a ralentí</td>
+</tr>
+<tr>
+<td><strong>Exceso de líquido refrigerante</strong></td>
+<td><strong>Alta (&gt; 17 bar)</strong></td>
+<td><strong>Alta (&gt; 2 bar)</strong></td>
+<td>Motor acelerado a 2.000 rpm</td>
+</tr>
+<tr>
+<td><strong>Falta de líquido refrigerante</strong></td>
+<td><strong>&lt; 14 bar</strong></td>
+<td><strong>&lt; 1 bar</strong></td>
+<td>Motor arrancado a ralentí</td>
+</tr>
+<tr>
+<td><strong>Falta de líquido refrigerante</strong></td>
+<td><strong>Baja (&lt; 14 bar)</strong></td>
+<td><strong>Baja (&lt; 1 bar)</strong></td>
+<td>Motor acelerado a 2.000 rpm</td>
+</tr>
+<tr>
+<td><strong>Obstrucción en válvula de expansión</strong></td>
+<td><strong>&gt; 17 bar</strong></td>
+<td><strong>&lt; 1 bar</strong></td>
+<td>Motor arrancado a ralentí</td>
+</tr>
+<tr>
+<td><strong>Válvula de expansión abierta</strong></td>
+<td><strong>Normal (14-17 bar)</strong></td>
+<td><strong>&gt; 2 bar</strong></td>
+<td>Motor arrancado a ralentí</td>
+</tr>
+<tr>
+<td><strong>Válvulas de escape defectuosas</strong></td>
+<td><strong>Oscilando</strong></td>
+<td><strong>Normal (1-2 bar)</strong></td>
+<td>Motor arrancado a ralentí</td>
+</tr>
+<tr>
+<td><strong>Válvulas de admisión defectuosas</strong></td>
+<td><strong>Normal (14-17 bar)</strong></td>
+<td><strong>Oscilando</strong></td>
+<td>Motor arrancado a ralentí</td>
+</tr>
+<tr>
+<td><strong>Electroventilador del condensador parado</strong></td>
+<td><strong>Alta (&gt; 17 bar)</strong></td>
+<td><strong>Normal (1-2 bar)</strong></td>
+<td>Motor arrancado a ralentí</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li><strong>Diferenciación de válvulas rotas del compresor:</strong>  </li>
+<li>Aguja de alta <strong>oscilando</strong> con baja normal → fallos en láminas/válvulas de <strong>escape</strong>.  </li>
+<li>Aguja de baja <strong>oscilando</strong> con alta normal → fallos en láminas/válvulas de <strong>admisión</strong>.  </li>
+<li><strong>Diferenciación de fallos en válvula de expansión:</strong>  </li>
+<li>Alta &gt; 17 bar y Baja &lt; 1 bar → válvula de expansión <strong>obstruida/cerrada</strong>.  </li>
+<li>Alta normal y Baja &gt; 2 bar → válvula de expansión <strong>bloqueada abierta</strong>.  </li>
+<li><strong>Prueba a 2.000 rpm:</strong> Permite detectar subcargas o sobrecargas leves que a ralentí se disimulan en lecturas aparentemente normales.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Restablecimiento de los valores nominales (14 a 17 bar en alta y 1 a 2 bar en baja) a ralentí tras corregir la avería.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT398_01</code> Lecturas de manómetros en régimen de trabajo a ralentí y 2.000 rpm — Fuente: MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, pág. 3-12</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    380 notas técnicas · generado el 21/09/2026.
+    383 notas técnicas · generado el 21/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 

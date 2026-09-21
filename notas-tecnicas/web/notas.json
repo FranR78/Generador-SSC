@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-21",
- "total": 380,
+ "total": 383,
  "grupos": [
   "Actuadores y mandos",
   "Circuito frigorífico",
@@ -18136,6 +18136,168 @@
     {
      "titulo": "Comportamiento en avería",
      "texto": "Inoperatividad total del modo automático, falta de respuesta de actuadores o desconexión ininterrumpida del compresor."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.comprobacion-y-calibracion-de-manometros",
+   "nt": 396,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "comprobacion-y-calibracion-de-manometros",
+   "titulo": "Comprobación Y Calibración De Manómetros",
+   "codigo": "",
+   "menu": "Comprobación Y Calibración De Manómetr",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Establecer el procedimiento de comprobación y ajuste del punto cero en los manómetros del puente de prueba a motor parado. Se aplica como paso previo a cualquier medición de presiones en el circuito de climatización."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "La precisión en el diagnóstico de presiones exige que los relojes del puente de medición no presenten desviaciones mecánicas iniciales cuando no están sometidos a la presión del fluido refrigerante."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Motor parado. Puente de manómetros desconectado del vehículo y libre de fluido o presión de refrigerante."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Puente de manómetros (relojes de baja \"LO\" y alta \"HI\" presión). Destornillador para tornillos de ajuste a cero."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Verificar que los latiguillos del puente de manómetros estén libres de líquido refrigerante y desconectados de las tomas del vehículo. Observar la posición exacta de las agujas en las escalas de baja y alta presión. Si las agujas no marcan cero exactamente, actuar sobre los tornillos de ajuste de cero situados en la carátula hasta alinear las agujas con el valor cero."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Parámetro / Componente Valor de referencia Condiciones de validez Indicación de aguja en reposo 0 bar / 0 kg/cm2 Relojes desconectados y libres de presión de refrigerante"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Omitir el calibrado inicial: provoca desviaciones sistemáticas en las lecturas de alta y baja presión, derivando en un diagnóstico falso de la carga o del estado del compresor."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Las agujas de ambos manómetros coinciden exactamente con la marca cero en ausencia de presión."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Puente de manómetros y tornillos de calibración a cero en reposo — Fuente: MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, pág. 1"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.comprobacion-de-la-cantidad-de-refrigerante-a-motor-parado",
+   "nt": 397,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "comprobacion-de-la-cantidad-de-refrigerante-a-motor-parado",
+   "titulo": "Comprobación De La Cantidad De Refrigerante A Motor Parado",
+   "codigo": "",
+   "menu": "Comprobación De La Cantidad De Refrige",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Determinar el estado de la carga de fluido refrigerante y la presencia de aire o gases no condensables en el circuito midiendo presiones a motor parado."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "En reposo (motor detenido), las presiones de alta y baja del circuito se igualan y dependen de la temperatura del refrigerante (relación presión-temperatura de saturación). Como regla general, la presión de reposo se sitúa en función de la temperatura ambiente y de la temperatura del condensador. La temperatura ideal en el condensador se sitúa 20 ºC por encima de la ambiental."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Motor parado. Presiones de alta y baja igualadas en reposo."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Puente de manómetros. Termómetro de contacto y termómetro ambiental."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Conectar las mangueras del puente de manómetros a las tomas de servicio de alta y baja presión del vehículo. Medir la temperatura ambiente y la temperatura sobre la superficie del condensador. Comprobar en la tabla técnica la presión que debe corresponder a la temperatura leída. Comparar el valor de la tabla con la lectura del manómetro: Si la presión es mayor que el valor de tabla: existe aire o gases no condensables en el circuito (o bien exceso de carga). Si la presión es menor que el valor de tabla: falta líquido refrigerante (fuga o subcarga)."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Estado de la carga / Parámetro Presión de referencia (Baja / Alta) Temp. Condensador Temp. Ambiente Temp. Motor / Manómetro Presión de alta mínima en reposo 9 bar 40 ºC 20 ºC No documentado en fuentes Presión de alta mínima en reposo 12 bar 50 ºC 30 ºC No documentado en fuentes Presión de alta mínima en reposo 15,5 bar 60 ºC 40 ºC No documentado en fuentes Carga correcta 6,5 bar 24 ºC a 26 ºC 24 ºC a 26 ºC 25 ºC motor / 24-26 ºC manómetro Exceso de carga 7,5 bar 24 ºC a 26 ºC 24 ºC a 26 ºC 30 ºC motor / 30 ºC manómetro Asociación de gases (Aire) 7,5 bar 24 ºC a 26 ºC 24 ºC a 26 ºC 24-26 ºC motor / 30 ºC manómetro Falta de líquido refrigerante 6,5 bar 30 ºC 30 ºC 25 ºC motor / 30 ºC manómetro"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Lectura de presión mayor a la de la tabla con motor parado: indica presencia de aire residual atrapado por una evacuación/vacío incompleto. Lectura de presión menor a la de la tabla: indica falta de líquido refrigerante por fugas."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Coincidencia de la presión del manómetro con el valor de la tabla de saturación correspondiente a la temperatura medida."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Conexión del puente de manómetros para verificación de carga a motor parado — Fuente: MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, pág. 2"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.diagnostico-de-averias-mediante-manometros-con-motor-en-marcha",
+   "nt": 398,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "diagnostico-de-averias-mediante-manometros-con-motor-en-marcha",
+   "titulo": "Diagnóstico De Averías Mediante Manómetros Con Motor En Marcha",
+   "codigo": "",
+   "menu": "Diagnóstico De Averías Mediante Manóme",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Identificar averías mecánicas del compresor, de la válvula de expansión, del electroventilador o descompensaciones de carga evaluando las presiones de alta y baja a régimen de ralentí y a 2.000 rpm."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "En funcionamiento, el compresor aspira el gas del lado de baja y lo comprime hacia el de alta. El comportamiento de las agujas (valores descompensados o fluctuaciones oscilantes) permite diagnosticar fallos en láminas de válvulas, obstrucciones en el elemento de expansión o deficiencias de intercambio térmico."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Motor en marcha a régimen de ralentí o acelerado a 2.000 rpm según la prueba. Climatizador / Aire acondicionado conectado a máxima potencia frigorífica."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Puente de manómetros acoplado a las tomas de servicio HD (alta) y ND (baja)."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Presiones normales de trabajo (motor a ralentí): Presión de alta: de 14 a 17 bar . Presión de baja: de 1 a 2 bar . Exceso de líquido refrigerante: A ralentí: Alta presión mayor de 17 bar y Baja presión mayor de 2 bar . A 2.000 rpm: si a ralentí daba presiones normales pero a 2.000 rpm la Alta sube a Alta y la Baja sube a Alta , confirma sobrecarga de refrigerante. Falta de líquido refrigerante: A ralentí: Alta presión menor de 14 bar y Baja presión menor de 1 bar . A 2.000 rpm: si a ralentí daba normal pero a 2.000 rpm la Alta cae a Baja y la Baja cae a Baja , confirma falta de refrigerante. Obstrucción en válvula de expansión: A ralentí: Alta presión mayor de 17 bar y Baja presión menor de 1 bar . Válvula de expansión abierta: A ralentí: Alta presión normal (14 a 17 bar) y Baja presión mayor de 2 bar . Válvulas de escape del compresor defectuosas: A ralentí: Alta presión oscilando y Baja presión normal (1 a 2 bar). Válvulas de admisión del compresor defectuosas: A ralentí: Alta presión normal (14 a 17 bar) y Baja presión oscilando . Electroventilador del condensador parado: A ralentí: Alta presión alta (mayor de 17 bar) y Baja presión normal (1 a 2 bar)."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Estado del sistema / Avería diagnosticada Presión de Alta (HP) Presión de Baja (BP) Régimen de motor / Condición Servicio normal 14 a 17 bar 1 a 2 bar Motor arrancado a ralentí Exceso de líquido refrigerante > 17 bar > 2 bar Motor arrancado a ralentí Exceso de líquido refrigerante Alta (> 17 bar) Alta (> 2 bar) Motor acelerado a 2.000 rpm Falta de líquido refrigerante < 14 bar < 1 bar Motor arrancado a ralentí Falta de líquido refrigerante Baja (< 14 bar) Baja (< 1 bar) Motor acelerado a 2.000 rpm Obstrucción en válvula de expansión > 17 bar < 1 bar Motor arrancado a ralentí Válvula de expansión abierta Normal (14-17 bar) > 2 bar Motor arrancado a ralentí Válvulas de escape defectuosas Oscilando Normal (1-2 bar) Motor arrancado a ralentí Válvulas de admisión defectuosas Normal (14-17 bar) Oscilando Motor arrancado a ralentí Electroventilador del condensador parado Alta (> 17 bar) Normal (1-2 bar) Motor arrancado a ralentí"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Diferenciación de válvulas rotas del compresor: Aguja de alta oscilando con baja normal → fallos en láminas/válvulas de escape . Aguja de baja oscilando con alta normal → fallos en láminas/válvulas de admisión . Diferenciación de fallos en válvula de expansión: Alta > 17 bar y Baja < 1 bar → válvula de expansión obstruida/cerrada . Alta normal y Baja > 2 bar → válvula de expansión bloqueada abierta . Prueba a 2.000 rpm: Permite detectar subcargas o sobrecargas leves que a ralentí se disimulan en lecturas aparentemente normales."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Restablecimiento de los valores nominales (14 a 17 bar en alta y 1 a 2 bar en baja) a ralentí tras corregir la avería."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Lecturas de manómetros en régimen de trabajo a ralentí y 2.000 rpm — Fuente: MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, pág. 3-12"
     }
    ]
   }
