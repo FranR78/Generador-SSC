@@ -50,11 +50,18 @@ jobs:
 
       - name: ¿Está puesto el Script ID?
         id: config
+        # El secreto y el Script ID entran por 'env', NUNCA interpolados con
+        # ${{ }} dentro del script: CLASPRC_JSON es un JSON con corchetes y
+        # comillas que, metido en un [[ ]], rompe la condición de bash.
+        env:
+          CLASPRC_JSON: ${{ secrets.CLASPRC_JSON }}
+          SCRIPT_ID: ${{ matrix.script_id }}
+          PROYECTO: ${{ matrix.proyecto }}
         run: |
-          if [[ "${{ matrix.script_id }}" == PON_AQUI_* ]]; then
-            echo "::warning::${{ matrix.proyecto }}: falta el Script ID en la matriz de este workflow."
+          if [[ "$SCRIPT_ID" == PON_AQUI_* ]]; then
+            echo "::warning::$PROYECTO: falta el Script ID en la matriz de este workflow."
             echo "seguir=no" >> "$GITHUB_OUTPUT"
-          elif [[ -z "${{ secrets.CLASPRC_JSON }}" ]]; then
+          elif [[ -z "$CLASPRC_JSON" ]]; then
             echo "::warning::Falta el secreto CLASPRC_JSON. No se despliega nada."
             echo "seguir=no" >> "$GITHUB_OUTPUT"
           else
