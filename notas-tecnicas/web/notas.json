@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-21",
- "total": 299,
+ "total": 315,
  "grupos": [
   "Actuadores y mandos",
   "Circuito frigorífico",
@@ -14686,6 +14686,650 @@
     {
      "titulo": "Verificación final",
      "texto": "Restablecimiento de los valores de alta y baja presión dentro del diagrama de tolerancias tras la reparación."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.arquitectura-y-distribucion-fisica-del-sistema-de-climatizacion-automatica",
+   "nt": 315,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "arquitectura-y-distribucion-fisica-del-sistema-de-climatizacion-automatica",
+   "titulo": "Arquitectura Y Distribución Física Del Sistema De Climatización Automática",
+   "codigo": "",
+   "menu": "Arquitectura Y Distribución Física Del",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Explicar la distribución física en tres entornos (compartimento motor, conjunto de distribución de trampillas e interior del salpicadero) y la interconexión por haces de cables en un sistema de climatización automática."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El sistema distribuye sus componentes en tres áreas físicas interconectadas para gestionar el circuito frigorífico de alta presión, el intercambio térmico de aire caliente/frío y la interfaz de control de usuario. La interacción continua entre los calculadores y los sensores de los tres entornos permite mantener las condiciones de confort en el habitáculo."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Entorno 1 — Compartimento motor: Aloja los elementos de alta presión del circuito de aire acondicionado (condensador, compresor, filtro deshidratante y presostato) y los calculadores electrónicos (ECM y BSI). Entorno 2 — Conjunto de distribución de trampillas: Mueble alojado en el interior del salpicadero donde se encuentran el radiador de calefacción, la resistencia PTC, el evaporador, el filtro de habitáculo, el impulsor de aire (GMV) y los micromotores actuadores. Entorno 3 — Tablero de mandos: Situado en la consola central del salpicadero; aloja la centralita de climatización y los mandos de interfaz de usuario. Interconexión: Dos haces de cables principales conectan la centralita del salpicadero con el conjunto de trampillas y con el compartimento motor."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Parámetro / Entorno Componentes alojados Condiciones de validez Compartimento motor Alta presión (condensador, compresor, filtro, presostato) y calculadores (ECM, BSI) Circuito de alta presión e integración electrónica del vano Distribución de trampillas Evaporador, radiador de calefacción, PTC, GMV, filtro y micromotores Salpicadero interior Tablero de mandos Centralita A/C y panel de control de usuario Consola central"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Diagnosticar componentes de forma aislada sin considerar la comunicación entre la centralita A/C, el calculador ECM y la BSI. Una simple discontinuidad en un haz de cables o en una sonda provoca el mal funcionamiento del modo automático."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema general con la unión de los tres entornos del sistema de climatización — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 5"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.compresor-y-embrague-electromagnetico",
+   "nt": 316,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "compresor-y-embrague-electromagnetico",
+   "titulo": "Compresor Y Embrague Electromagnético",
+   "codigo": "",
+   "menu": "Compresor Y Embrague Electromagnético",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Lado de alta presión del circuito de aire acondicionado",
+   "ubicacion": "Compartimento motor, fijado al bloque y arrastrado por la correa del alternador desde el cigüeñal",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Elevar la presión del fluido refrigerante y hacerlo circular por el circuito frigorífico. El embrague electromagnético pone en contacto la polea con el compresor para transmitir el movimiento del motor cuando se requiere refrigeración."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "La polea recibe movimiento continuo de la correa del alternador accionada por el cigüeñal del motor. Al recibir corriente, el embrague electromagnético acopla mecánicamente la polea al eje del compresor, iniciando la compresión del fluido hacia el condensador. En compresores de cilindrada fija, la centralita interrumpe la alimentación del embrague si la sonda del evaporador detecta riesgo de congelación."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Componente mecánico de compresión de alta presión dotado de polea de arrastre y acoplamiento electromagnético."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Desgaste o avería eléctrica del embrague electromagnético que impide el acoplamiento de la polea."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El compresor no gira y el fluido no circula, por lo que el sistema no genera frío en el habitáculo."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.condensador-5",
+   "nt": 317,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "condensador",
+   "titulo": "Condensador",
+   "codigo": "",
+   "menu": "Condensador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Lado de alta presión del circuito de aire acondicionado",
+   "ubicacion": "Compartimento motor",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Ceder al aire exterior el calor extraído del habitáculo y disipar la energía del fluido refrigerante comprimido a alta presión."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El fluido frigorífico a alta presión y temperatura procedente del compresor atraviesa las canalizaciones del condensador. El flujo de aire generado por la marcha del vehículo o por el grupo motoventilador (GMV) enfría el fluido, provocando su cambio de estado y condensación."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Intercambiador de calor metálico situado en la zona de alta presión del vano motor."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Deficiente disipación de calor que eleva la presión del fluido en el compartimento motor y reduce el rendimiento del sistema."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.filtro-deshidratante-4",
+   "nt": 318,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "filtro-deshidratante",
+   "titulo": "Filtro Deshidratante",
+   "codigo": "",
+   "menu": "Filtro Deshidratante",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Circuito de alta presión de aire acondicionado",
+   "ubicacion": "Compartimento motor, en la línea de alta presión",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Retener las impurezas sólidas y absorber la humedad presente en el fluido frigorífico para proteger los componentes del circuito."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El fluido a alta presión circula por el interior del recipiente, donde atraviesa un elemento filtrante y un compuesto desecante que absorbe las trazas de agua antes de que continúe hacia el habitáculo."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Filtro metálico cilíndrico intercalado en la parte de alta presión del vano motor."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Saturación del material desecante o taponamiento por impurezas."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Restricción al paso de fluido que altera la circulación y las presiones en el circuito frigorífico."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.presostato-de-presion-de-fluido",
+   "nt": 319,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "presostato-de-presion-de-fluido",
+   "titulo": "Presostato De Presión De Fluido",
+   "codigo": "",
+   "menu": "Presostato De Presión De Fluido",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema de seguridad y regulación de la climatización automática",
+   "ubicacion": "Compartimento motor, montado en la línea de alta presión",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la presión del fluido frigorífico en la zona de alta presión e informar a la centralita para proteger el circuito y gestionar el grupo motoventilador."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El sensor reacciona a la presión ejercida por el fluido en el vano motor, modificando una señal eléctrica hacia los calculadores (ECM/BSI/centralita) para cortar el compresor o activar el grupo motoventilador (GMV) si la presión sale de los márgenes seguros."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Captador de presión provisto de conexión hidráulica al circuito y conector eléctrico."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Avería interna del sensor o fallos en las conexiones eléctricas."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "La centralita interrumpe el funcionamiento del compresor por seguridad o no activa el grupo motoventilador adecuadamente."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.calculador-ecm-y-centralita-bsi",
+   "nt": 320,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "calculador-ecm-y-centralita-bsi",
+   "titulo": "Calculador Ecm Y Centralita Bsi",
+   "codigo": "",
+   "menu": "Calculador Ecm Y Centralita Bsi",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Gestión electrónica integrada de motor y climatización automática",
+   "ubicacion": "Compartimento motor (ECM) y salpicadero/tablero de mandos (BSI y centralita de climatización)",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Procesar la información de las sondas, presostatos y consignas del usuario para gobernar los actuadores de las trampillas, el compresor y la ventilación."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El calculador de inyección (ECM) intercambia datos de temperatura y régimen con la centralita de climatización y el calculador BSI. Con estas señales calcula la activación del compresor, la velocidad del GMV y la posición de los micromotores de repartición y mezcla."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Centralitas electrónicas con microprocesador interconectadas por haces de cables principales."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Daños en la electrónica por sobretensiones originadas en el potenciómetro/módulo electrónico del electroventilador."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Pérdida del modo automático o inoperatividad total del sistema de climatización."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.radiador-de-calefaccion-2",
+   "nt": 321,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "radiador-de-calefaccion",
+   "titulo": "Radiador De Calefacción",
+   "codigo": "",
+   "menu": "Radiador De Calefacción",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema de calefacción del habitáculo",
+   "ubicacion": "Conjunto de distribución de trampillas, dentro del mueble del salpicadero",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Ceder calor al aire entrante al habitáculo utilizando la energía térmica del líquido refrigerante del motor."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Parte del caudal de líquido refrigerante del motor se desvía hacia el radiador de calefacción. El aire impulsado atraviesa sus aletas, absorbiendo el calor del refrigerante caliente antes de salir por los difusores."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Intercambiador térmico de agua/aire integrado en el mueble de trampillas. El circuito de refrigeración del motor está dimensionado contando con la disipación de este radiador."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Parámetro / Condición Indicación técnica Condiciones de validez Circulación de refrigerante No se debe anular la circulación El circuito del motor está dimensionado contando con la disipación del radiador"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Obstrucción interna por sedimentos o fugas de líquido refrigerante."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Falta de calefacción en el habitáculo o alteración en la disipación térmica del motor si se anula su paso."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.resistencia-de-calefaccion-electrica-ptc",
+   "nt": 322,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "resistencia-de-calefaccion-electrica-ptc",
+   "titulo": "Resistencia De Calefacción Eléctrica (Ptc)",
+   "codigo": "",
+   "menu": "Resistencia De Calefacción Eléctrica (",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Vehículos con motores de inyección directa de gasóleo",
+   "ubicacion": "Conjunto de distribución de trampillas, junto al radiador de calefacción",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Aportar calefacción inmediata al habitáculo durante los primeros minutos de marcha mientras el motor alcanza la temperatura de servicio."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Al arrancar en frío, la centralita alimenta eléctricamente los elementos calefactores PTC. El aire impulsado se calienta al pasar a través de la resistencia sin depender de la temperatura del líquido refrigerante."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Resistencia de caldeo eléctrico de coeficiente de temperatura positivo (PTC)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Parámetro Tiempo de aplicación Condiciones de validez Aporte de calefacción Primeros minutos tras el arranque en frío Motores de inyección directa de gasóleo"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fallo de los elementos calefactores o del circuito de alimentación eléctrica."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El aire sale frío durante los primeros minutos de funcionamiento en motores diésel de inyección directa."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.evaporador-5",
+   "nt": 323,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "evaporador",
+   "titulo": "Evaporador",
+   "codigo": "",
+   "menu": "Evaporador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Órgano productor de frío en el circuito de aire acondicionado",
+   "ubicacion": "Conjunto de distribución de trampillas, en el interior del salpicadero",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Absorber el calor del aire entrante al habitáculo para enfriarlo y deshumidificarlo."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El fluido frigorífico procedente del circuito de baja presión entra en el evaporador. Al ebullir en su interior, absorbe el calor del aire impulsado por el GMV (previamente filtrado), enfriándolo antes de que llegue a los difusores."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Intercambiador térmico de fluido/aire de baja presión situado en el mueble de distribución."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Formación de hielo en las aletas si la temperatura desciende en exceso sin cortar el compresor."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Falta de producción de frío o bloqueo del paso de aire por congelación del evaporador."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.filtro-del-habitaculo",
+   "nt": 324,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "filtro-del-habitaculo",
+   "titulo": "Filtro Del Habitáculo",
+   "codigo": "",
+   "menu": "Filtro Del Habitáculo",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Filtrado del aire de ventilación e higiene del habitáculo",
+   "ubicacion": "Entrada del conjunto de distribución de trampillas, antes del evaporador",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Filtrar el aire entrante del exterior para retener polvo, polen y partículas antes de que pase por el evaporador e ingrese al habitáculo."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El caudal de aire impulsado se fuerza a pasar a través del elemento filtrante, reteniendo mecánicamente las impurezas en su entramado de fibras."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Cartucho filtrante colocado en la canalización de admisión del mueble de distribución."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Saturación y colmatación por acumulación de suciedad."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Reducción del caudal de aire impulsado por los difusores y malos olores en el habitáculo."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.impulsor-de-aire-gmv-y-modulo-electronico-de-velocidad",
+   "nt": 325,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "impulsor-de-aire-gmv-y-modulo-electronico-de-velocidad",
+   "titulo": "Impulsor De Aire (Gmv) Y Módulo Electrónico De Velocidad",
+   "codigo": "",
+   "menu": "Impulsor De Aire (Gmv) Y Módulo Electr",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Ventilación y circulación forzada del aire en la climatización",
+   "ubicacion": "Conjunto de distribución de trampillas",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Impulsar el caudal de aire hacia el interior del habitáculo a la velocidad determinada por la consigna manual o automática del usuario."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El motor eléctrico hace girar la turbina. El módulo electrónico de velocidad (o potenciómetro) regula la corriente suministrada al motor para variar sus revoluciones según la orden enviada por la centralita o la rueda de selección."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Conjunto electromecánico formado por motor eléctrico, turbina centrífuga y módulo electrónico/potenciómetro de control de velocidad."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Parámetro Condición de funcionamiento Regulación de velocidad Ajuste continuo según consigna manual o automática"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Avería en el potenciómetro o módulo electrónico de velocidad."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El impulsor no gira, se queda en una sola velocidad o genera una sobretensión peligrosa para la integridad de la centralita."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.sonda-de-temperatura-del-evaporador",
+   "nt": 326,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "sensor-de-evaporador",
+   "titulo": "Sonda De Temperatura Del Evaporador",
+   "codigo": "",
+   "menu": "Sonda De Temperatura Del Evaporador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Protección anti-hielo del evaporador en sistemas con compresor de cilindrada fija",
+   "ubicacion": "Ubicada en la parte más fría del evaporador, dentro del conjunto de distribución de trampillas",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la temperatura del evaporador para evitar la formación de hielo en su superficie."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Captador térmico que transmite su señal a la centralita. Si la temperatura medida cae por debajo de la temperatura de formación de hielo, la centralita corta el funcionamiento del compresor (en sistemas de cilindrada fija)."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Sonda NTC de varilla alojada en el núcleo del evaporador."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Condición de disparo Acción del sistema Temperatura desciende de 0 ºC (formación de hielo) Corte del compresor por la centralita (en cilindrada fija)"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Corte o interrupción del cable de la sonda."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Funcionamiento incorrecto del sistema en modo automático o congelación del evaporador por no cortar a tiempo."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.sondas-de-temperatura-de-salida-de-difusores-centrales-y-pies",
+   "nt": 327,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "sondas-de-temperatura-de-salida-de-difusores-centrales-y-pies",
+   "titulo": "Sondas De Temperatura De Salida De Difusores (Centrales Y Pies)",
+   "codigo": "",
+   "menu": "Sondas De Temperatura De Salida De Dif",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Regulación de la mezcla de aire y bucle de control de la temperatura de consigna",
+   "ubicacion": "Conductos de salida del aire hacia los difusores centrales y hacia los difusores de los pies en el mueble de trampillas",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la temperatura real del aire que sale por los difusores centrales y de los pies para verificar el correcto funcionamiento de las trampillas de mezcla."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Envían señales de temperatura a la centralita. Junto con los datos de las sondas de temperatura exterior e interior, la centralita calcula las correcciones sobre los actuadores de las trampillas para alcanzar la temperatura seleccionada por el usuario."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Sondas térmicas de medición directa instaladas en las canalizaciones de aire."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Corte eléctrico o descalibración de la sonda."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "La centralita no puede regular con precisión la mezcla de aire caliente/frío, provocando fallos en el modo automático."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.micromotores-actuadores-de-trampillas-mezcla-reparticion-y-recirculacion",
+   "nt": 328,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "micromotores-actuadores-de-trampillas-mezcla-reparticion-y-recirculacion",
+   "titulo": "Micromotores Actuadores De Trampillas (Mezcla, Repartición Y Recirculación)",
+   "codigo": "",
+   "menu": "Micromotores Actuadores De Trampillas",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Mover las trampillas de mezcla (izq/der), repartición de aire y recirculación",
+   "ubicacion": "Fijados sobre la carcasa del conjunto de distribución de trampillas",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Posicionar mecánicamente las trampillas internas para regular la temperatura, la salida del aire y la entrada de aire exterior o recirculado."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Pequeños motores eléctricos reductores que reciben impulsos o órdenes eléctricas de la centralita. Modifican la orientación de las trampillas de mezcla izquierda y derecha, repartición a pies/frontal y trampilla de recirculación."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Servomotores eléctricos (micromotor mezcla izq, micromotor mezcla der, micromotor de repartición/distribución, motor de recirculación)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Avería interna del motor o rotura de los engranajes de accionamiento de la trampilla."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Bloqueo de la distribución de aire, imposibilidad de regular la temperatura en un lado (en bizona) o fallo de la recirculación."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.tablero-de-mandos-y-centralita-bizona",
+   "nt": 329,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "tablero-de-mandos-y-centralita-bizona",
+   "titulo": "Tablero De Mandos Y Centralita Bizona",
+   "codigo": "",
+   "menu": "Tablero De Mandos Y Centralita Bizona",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Interfaz de usuario y unidad de control del climatizador de regulación independiente (bizona)",
+   "ubicacion": "Consola central del salpicadero",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Permitir al usuario la selección de parámetros de confort e integrar la centralita de control que procesa el sistema."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Recibe la información de la botonera (dos teclas AUTO bizona, selector único de caudal por rueda, tecla A/C, tecla recirculación, desempañado rápido y luneta trasera) y los datos de los dos haces de cables principales. Procesa los algoritmos de confort y envía órdenes a los actuadores y al compartimento motor."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Módulo de control con pantalla de visualización y botones de mando para regulación independiente conductor/acompañante."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Parámetro Configuración de mando Regulación de temperatura / distribución Independiente para conductor y acompañante (dos teclas AUTO) Regulación de caudal de aire Única (una sola rueda de selección de velocidad)"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Daños mecánicos en los botones o fallos en el módulo electrónico interno por sobretensiones."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Inoperatividad de los mandos, falta de respuesta del display o fallo general del automatismo."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Panel del tablero de mandos de un climatizador automático bizona — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 3"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.control-y-mantenimiento-anual-del-sistema-de-climatizacion",
+   "nt": 330,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "control-y-mantenimiento-anual-del-sistema-de-climatizacion",
+   "titulo": "Control Y Mantenimiento Anual Del Sistema De Climatización",
+   "codigo": "",
+   "menu": "Control Y Mantenimiento Anual Del Sist",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Establecer la pauta de control periódico y mantenimiento preventivo para detectar anomalías y garantizar el correcto funcionamiento del climatizador automático tanto en invierno como en verano."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Al ser un sistema complejo compuesto por tres entornos interconectados, cualquier fallo menor (como una sonda cortada o una deriva en el potenciómetro del impulsor) altera el funcionamiento automático o pone en riesgo la centralita por sobretensión."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Vehículo con el sistema de climatización completo montado y encendido conectado."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Herramientas de diagnóstico de climatización."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Realizar una inspección visual de las conexiones del compartimento motor y del mazo de cables del salpicadero. Comprobar el estado del filtro del habitáculo y sustituirlo si presenta suciedad o colmatación. Verificar el funcionamiento del impulsor (GMV) en todas sus velocidades y comprobar que el módulo electrónico no genere fluctuaciones anormales. Comprobar la respuesta en modo automático activando la tecla AUTO y modificando las consignas de temperatura bizona. Verificar el acoplamiento del compresor mediante la tecla A/C y evaluar el corte de seguridad. Probar la conmutación de la trampilla de recirculación y la función de desempañado rápido. Medir las temperaturas de salida en difusores centrales y de pies para confirmar la correcta regulación de los micromotores de mezcla."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Intervención / Frecuencia Periodicidad recomendada Control de prestaciones del sistema Cada año (tanto en invierno como en verano)"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Pasar por alto ruidos o anomalías en el módulo del electroventilador: puede derivar en una sobretensión que destruya la centralita de climatización. Ignorar fallos de lectura en una sonda: desajusta por completo la lógica de regulación en modo automático."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Confirmar la ausencia de códigos de avería y verificar que el sistema alcance la temperatura de consigna deseada en ambos lados."
     }
    ]
   }
