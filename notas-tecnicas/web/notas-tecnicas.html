@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">162 notas · 21/09/2026</p>
+  <p class="sidebar-meta">186 notas · 21/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -340,6 +340,30 @@
     <li><a href="#nt175">NT175 · Limpieza Del Evaporador Por Ultrasonid</a></li>
     <li><a href="#nt176">NT176 · Comprobación De La Potencia Frigorífic</a></li>
     <li><a href="#nt177">NT177 · Puesta En Funcionamiento Tras El Relle</a></li>
+    <li><a href="#nt178">NT178 · Sistemas De Climatización Y Sus Modos</a></li>
+    <li><a href="#nt179">NT179 · Circuito Frigorífico Y Sus Componentes</a></li>
+    <li><a href="#nt180">NT180 · Transmisor De Temperatura Inte G56</a></li>
+    <li><a href="#nt181">NT181 · Transmisores De Temperatura De G191 / G192</a></li>
+    <li><a href="#nt182">NT182 · Transmisor De Temperatura Exte G17</a></li>
+    <li><a href="#nt183">NT183 · Interruptor Térmico De La Caja F38</a></li>
+    <li><a href="#nt184">NT184 · Potenciómetro De La Distribución De Ai</a></li>
+    <li><a href="#nt185">NT185 · Potenciómetro Del Motor De La  G92</a></li>
+    <li><a href="#nt186">NT186 · Conmutador De Presión F129</a></li>
+    <li><a href="#nt187">NT187 · Transmisor De Presión Electrón G65</a></li>
+    <li><a href="#nt188">NT188 · Regulador De La Iluminación E20</a></li>
+    <li><a href="#nt189">NT189 · Conmutador Térmico Del Ventila F18</a></li>
+    <li><a href="#nt190">NT190 · Unidad De Manejo E Indicación  E87</a></li>
+    <li><a href="#nt191">NT191 · Unidad De Manejo E Indicación  E87</a></li>
+    <li><a href="#nt192">NT192 · Motor De La Trampilla De Tempe V68</a></li>
+    <li><a href="#nt193">NT193 · Motor De La Turbina De Aire Y  V2 (Motor de la turbina) / J126 (Regulador de régimen)</a></li>
+    <li><a href="#nt194">NT194 · Motor De La Trampilla De Recir V113</a></li>
+    <li><a href="#nt195">NT195 · Motor Para La Turbina Del Tran V42</a></li>
+    <li><a href="#nt196">NT196 · Acoplamiento Magnético Del Com N25</a></li>
+    <li><a href="#nt197">NT197 · Ventiladores Del Líquido Refri V7 / V35</a></li>
+    <li><a href="#nt198">NT198 · Unidad Del Equipo De Mando Ele J255</a></li>
+    <li><a href="#nt199">NT199 · Unidad De Control Del Aire Aco J293</a></li>
+    <li><a href="#nt200">NT200 · Radiocasete R</a></li>
+    <li><a href="#nt201">NT201 · Autodiagnosis Y Funciones De Control D</a></li>
   </ul>
 </nav>
 
@@ -12667,8 +12691,1567 @@ Manipular el circuito cargado es la causa habitual de quemaduras por frío.</p>
     </div>
   </section>
 
+  <section id="nt178" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 178 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Sistemas De Climatización Y Sus Modos De Funcionamiento</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Definir los principios de funcionamiento, variantes de equipamiento y lógica de control de los cuatro sistemas de climatización (ventilación/calefacción, aire acondicionado manual, calefacción motorizada y autoclima). Se aplica a la gama SEAT Ibiza y Córdoba modelo 1999.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El sistema gestiona el caudal, la mezcla térmica y la distribución del aire impulsado al interior del habitáculo. En los equipos mecánicos, la temperatura y la distribución se seleccionan mediante cables y mandos giratorios. En la calefacción motorizada y el autoclima, una unidad de control electrónica (UCE) gobierna servomotores sobre la trampilla de mezcla y la recirculación, mostrando la información en una pantalla central. El autoclima mantiene automáticamente la temperatura seleccionada evaluando la radiación y las temperaturas interior y exterior.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Tensión de batería en rango nominal.  </li>
+<li>Encendido conectado ("borne 15 ON") o motor en marcha.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <ul>
+<li>Polímetro digital y estación de diagnosis con código de dirección.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ol>
+<li><strong>Ventilación / Calefacción:</strong> La temperatura se regula mezclando el aire que atraviesa el radiador de calefacción de forma mecánica. La velocidad de la turbina se selecciona mediante una escala de resistencias variables en el motor.  </li>
+<li><strong>Aire Acondicionado Manual:</strong> Mantiene la arquitectura mecánica de calefacción e incorpora un pulsador de acoplamiento eléctrico para el compresor de refrigeración.  </li>
+<li><strong>Calefacción Motorizada:</strong> Ajusta la temperatura mediante el servomotor V68 sobre la trampilla de mezcla y conmuta la recirculación con el servomotor V113. La distribución de aire se mantiene por mando giratorio mecánico.  </li>
+<li><strong>Autoclima:</strong> Gestiona electrónicamente la temperatura, la velocidad de la turbina V2, el compresor N25 y la recirculación V113 de forma automática, semiautomática o manual.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Sistema / Función</th>
+<th>Parámetro de control</th>
+<th>Condiciones de validez</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ajuste automático de sustitución</strong></td>
+<td>22 ºC en pantalla</td>
+<td>Modo sustitutivo por fallo de sensores o pulsadores</td>
+</tr>
+<tr>
+<td><strong>Límite de desconexión A/C por helada</strong></td>
+<td>&lt; 5 ºC ambiente</td>
+<td>Medido por interruptor térmico F38 en caja de aguas</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Confundir la calefacción motorizada con el autoclima: la calefacción motorizada no incorpora circuito frigorífico ni sensores de temperatura de conductos, por lo que no puede enfriar por debajo de la temperatura ambiente.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobar el desplazamiento suave de la trampilla de temperatura de extremo a extremo al modificar los valores en el panel y verificar la salida de aire a la temperatura deseada.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT178_01</code> Cuadro esquemático de los cuatro sistemas de climatización del vehículo — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 4</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt179" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 179 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Circuito Frigorífico Y Sus Componentes</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Describir la composición, presiones de trabajo y distribución de los componentes del circuito frigorífico de gas R134a. Se aplica a las versiones con aire acondicionado manual y autoclima.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El circuito frigorífico absorbe el calor del aire que entra al habitáculo haciendo ebullir el fluido R134a a baja presión dentro del evaporador. El compresor eleva la presión y temperatura del gas hacia el condensador, donde se licúa cediendo calor al aire exterior. La válvula de expansión dosifica el caudal de refrigerante líquido que entra al evaporador según la temperatura y presión.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Circuito hermético y libre de humedad.  </li>
+<li>Motor en marcha a ralentí o régimen constante.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <ul>
+<li>Estación de carga y reciclaje de R134a.  </li>
+<li>Puente de manómetros de alta y baja presión.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ol>
+<li><strong>Compresor:</strong> De 7 cilindros axial autorregulado, arrastrado por correa Poly-V y acoplado por electroimán N25. Incorpora una válvula de seguridad mecánica.  </li>
+<li><strong>Condensador:</strong> Situado en el frente, delante del radiador de refrigeración del motor.  </li>
+<li><strong>Filtro Deshidratador:</strong> Retiene humedad y partículas, evitando la formación de burbujas en la línea de líquido.  </li>
+<li><strong>Válvula de Expansión:</strong> Regula la presión y el caudal a la entrada del evaporador.  </li>
+<li><strong>Evaporador:</strong> Alojado dentro de la unidad climática del salpicadero.  </li>
+<li><strong>Silenciador de Pulsaciones:</strong> Alojado en el tubo de baja presión, cerca del compresor, para reducir el ruido hidroacústico.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Componente / Parámetro</th>
+<th>Valor numérico especificado</th>
+<th>Condiciones de medición / Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Carga de fluido refrigerante R134a</strong></td>
+<td><strong>750 ± 50 gramos</strong></td>
+<td>Carga total del circuito vacío</td>
+</tr>
+<tr>
+<td><strong>Tarado de la válvula de seguridad del compresor</strong></td>
+<td><strong>44 bares</strong></td>
+<td>Disparo de sobrepresión extrema en compresor</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Cargar fluido sin realizar el vacío previo: la presencia de humedad y aire genera burbujas en el circuito y reduce la eficiencia de condensación.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobar la presencia de frío continuo en la tubería de baja presión y la ausencia de burbujas en el filtro deshidratador.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT179_01</code> Esquema del circuito frigorífico con compresor, condensador, filtro, válvula de expansión y evaporador — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 7</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt180" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 180 </div>
+    <div class="nota-body">
+      <h1>Transmisor De Temperatura Interior — <strong>G56</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">S</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">S</span><span class="badge-aplicacion">E</span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">T</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">I</span><span class="badge-aplicacion">b</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">C</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">b</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">1</span><span class="badge-aplicacion">9</span><span class="badge-aplicacion">9</span><span class="badge-aplicacion">9</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Detrás del tablero de instrumentos, junto a la columna de dirección</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir la temperatura real del aire del habitáculo para permitir el cálculo de la regulación térmica en modo automático.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Resistencia de Coeficiente de Temperatura Negativo (NTC). Para garantizar que mida el aire representativo de la estancia y no la temperatura de la consola, el motor eléctrico V42 acciona una pequeña turbina que aspira aire continuo del habitáculo sobre la resistencia.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Sensor NTC térmico calibrado con un campo de medición entre -40 ºC y +85 ºC, integrado en un módulo compacto junto con la turbina V42.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Valor de referencia</th>
+<th>Condiciones de validez</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Rango de medición del sensor NTC</strong></td>
+<td><strong>-40 ºC a +85 ºC</strong></td>
+<td>Rango térmico operativo</td>
+</tr>
+<tr>
+<td><strong>Valor sustitutivo por avería</strong></td>
+<td><strong>22 ºC constante</strong></td>
+<td>Adoptado por la UCE J255 tras detectarse fallo</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Acumulación de pelusa y polvo en el conducto de la turbina V42; interrupción o cortocircuito en la resistencia NTC.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>La UCE adopta el valor de 22 ºC fijo. Al seleccionar temperaturas superiores o inferiores a 22 ºC en el panel, el sistema enfría o calienta en exceso sin detenerse al no registrar la temperatura real. Todos los dígitos del display parpadean al conectar el encendido.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Consultar el bloque de valores de medición grupo 006 campo 4 mediante el equipo de diagnosis. Comprobar la resistencia NTC desconectada mediante un polímetro en escala de ohmios a temperatura ambiente.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt181" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 181 </div>
+    <div class="nota-body">
+      <h1>Transmisores De Temperatura Del Aire De Entrada — <strong>G191 / G192</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">S</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">S</span><span class="badge-aplicacion">E</span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">T</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">I</span><span class="badge-aplicacion">b</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">C</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">b</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">1</span><span class="badge-aplicacion">9</span><span class="badge-aplicacion">9</span><span class="badge-aplicacion">9</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> G191 situado en el difusor central; G192 situado en el difusor de la zona de los pies</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir la temperatura del aire que sale hacia el habitáculo por los difusores para regular de forma precisa la mezcla de la trampilla de temperatura.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Sondas de resistencia NTC. La UCE calcula la media aritmética de las lecturas entregadas por ambos transmisores para ajustar el posicionamiento del servomotor de temperatura V68.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Sondas térmicas de inserción rápida con conector de 2 polos. Margen de medición de -40 ºC a +85 ºC.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Valor numérico</th>
+<th>Condiciones de validez</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Rango de medida NTC</strong></td>
+<td><strong>-40 ºC a +85 ºC</strong></td>
+<td>Mapeo térmico de la UCE</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Interrupción de los hilos de señal; descalibración del elemento cerámico.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Al perder la señal de cualquiera de los dos transmisores, la UCE anula la regulación automática del sistema y mantiene fijos los parámetros que existían en el momento de producirse la avería. Todos los dígitos del display parpadean.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Consultar la temperatura de G191 en el grupo de valores de medición 006 campo 2 y de G192 en el grupo 006 campo. Medir la resistencia eléctrica entre bornes con un multímetro.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT181_01</code> Ubicación de los transmisores G191 en el difusor central y G192 en la zona de los pies — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 13</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt182" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 182 </div>
+    <div class="nota-body">
+      <h1>Transmisor De Temperatura Exterior — <strong>G17</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">S</span><span class="badge-aplicacion">E</span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">T</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">I</span><span class="badge-aplicacion">b</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">C</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">b</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">1</span><span class="badge-aplicacion">9</span><span class="badge-aplicacion">9</span><span class="badge-aplicacion">9</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Montado en el interior de la carcasa del retrovisor exterior derecho (lado del acompañante)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Captar la temperatura del aire ambiente exterior para mostrarla en el display y permitir a las UCEs regular la temperatura del aire y la velocidad de la turbina.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Resistencia NTC conectada a la unidad del radiocasete R. La radio procesa el valor, lo muestra en la pantalla e informa a la UCE de climatización J255.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Sensor termistor estanco integrado en el conjunto del espejo retrovisor exterior derecho.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Parámetro / Condición</th>
+<th>Valor de referencia</th>
+<th>Estado del sistema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Lectura normal en display</strong></td>
+<td>Grados ºC</td>
+<td>Procesado por el radiocasete</td>
+</tr>
+<tr>
+<td><strong>Valor de sustitución en Autoclima</strong></td>
+<td><strong>20 ºC constante</strong></td>
+<td>Adoptado si falla la señal de G17</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Rotura o corte en el mazo de cables del retrovisor; sulfatación de contactos.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>El display muestra tres rayas '---' en la zona donde se indica la temperatura exterior. El autoclima asume 20 ºC fijos y elimina la señal de conexión del acoplamiento magnético. Todos los dígitos del display parpadean.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Consultar el bloque de valores de medición grupo 006 campo 1 en el equipo de diagnosis. Medir la continuidad y resistencia de la sonda con un polímetro.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt183" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 183 </div>
+    <div class="nota-body">
+      <h1>Interruptor Térmico De La Caja De Aguas — <strong>F38</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">C</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">g</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">I</span><span class="badge-aplicacion">b</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">/</span><span class="badge-aplicacion">C</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">b</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">1</span><span class="badge-aplicacion">9</span><span class="badge-aplicacion">9</span><span class="badge-aplicacion">9</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Alojado en el interior de la caja de aguas del vano motor</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Interrumpir la señal eléctrica de activación del compresor para evitar la congelación del evaporador por bajas temperaturas exteriores.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Interruptor térmico de contacto bimetálico normalmente cerrado. Recibe la tensión de 12 V procedente de la UCE J255 y la deja pasar hacia la unidad J293 siempre que la temperatura sea superior a 5 ºC.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Conmutador térmico estanco de 2 polos intercalado en serie en la línea de mando del compresor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Temperatura ambiente</th>
+<th>Estado de los contactos</th>
+<th>Tensión de salida a J293</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>&gt; 5 ºC</strong></td>
+<td>Cerrado</td>
+<td><strong>12 V CC</strong> (permite conectar A/C)</td>
+</tr>
+<tr>
+<td><strong>&lt; 5 ºC</strong></td>
+<td>Abierto</td>
+<td><strong>0 V CC</strong> (desconecta A/C)</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Contactos pegados por arco eléctrico o bloqueados en posición abierta por fallo del bimetal.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Si el interruptor permanece siempre cerrado, el compresor funciona a temperaturas inferiores a 5 ºC pudiendo provocar la congelación del evaporador. Si queda abierto permanente, la señal de 12 V no pasa y el compresor no se conecta jamás.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobar continuidad con polímetro entre sus dos bornes a temperatura ambiente por encima de 5 ºC (debe dar 0 Ω) y enfriarlo por debajo de 5 ºC (debe dar circuito abierto / infinito).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt184" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 184 </div>
+    <div class="nota-body">
+      <h1>Potenciómetro De La Distribución De Aire</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">C</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">f</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">S</span><span class="badge-aplicacion">E</span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">T</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">I</span><span class="badge-aplicacion">b</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">C</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">b</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">1</span><span class="badge-aplicacion">9</span><span class="badge-aplicacion">9</span><span class="badge-aplicacion">9</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> En el interior de la propia unidad del autoclima o calefacción motorizada, accionado al girar el mando de distribución</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Informar continuamente a la UCE de la posición angular seleccionada manualmente en el mando giratorio de salida de aire.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Resistencia variable rotativa accionada por ruedas de engranaje. Envía una tensión proporcional a la UCE J255. Cuando se selecciona la salida de aire hacia el parabrisas, la UCE activa la estrategia de máxima eficacia de desempañado.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Potenciómetro rotativo de carbón accionado por las ruedas mecánicas de la ruleta del mando giratorio.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Posición del mando giratorio</th>
+<th>Estrategia activada por UCE J255</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Posición Parabrisas (Defrost)</strong></td>
+<td>Eleva velocidad de turbina, pone recirculación en aire fresco y conecta compresor A/C</td>
+</tr>
+<tr>
+<td><strong>Otras posiciones de salida</strong></td>
+<td>Regulación estándar seleccionada</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Desgaste de la pista de carbón en la zona del parabrisas; rotura de los dientes de accionamiento de las ruedas plásticas.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>En caso de pérdida de señal, la UCE sitúa la trampilla de recirculación en posición de entrada de aire fresco, no regula la velocidad de la turbina ni conecta el compresor al seleccionar la salida hacia el parabrisas. Los dígitos del display parpadean.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Consultar la posición del mando de distribución en porcentaje (0% a 100%) en el bloque de valores de medición grupo 005 campo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt185" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 185 </div>
+    <div class="nota-body">
+      <h1>Potenciómetro Del Motor De La Trampilla De Temperatura — <strong>G92</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">C</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">f</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Alojado en el propio motor V68, en la parte inferior de la unidad climática</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Informar a la UCE de la posición angular exacta de la trampilla de mezcla de temperatura y reconocer los dos topes del recorrido mecánico.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Potenciómetro rotativo acoplado al eje del motor V68. Actúa como divisor de tensión entregando una señal variable a la UCE.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Posee una carrera angular de trabajo de 51º y un rango de resistencia eléctrica comprendido entre 0 y 4,7 kΩ.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Parámetro</th>
+<th>Valor numérico / Rango</th>
+<th>Condiciones de validez</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Carrera angular del potenciómetro</strong></td>
+<td><strong>51º</strong></td>
+<td>Desplazamiento máximo de la trampilla</td>
+</tr>
+<tr>
+<td><strong>Rango de resistencia eléctrica</strong></td>
+<td><strong>0 a 4,7 kΩ</strong></td>
+<td>Medido entre extremos de pista</td>
+</tr>
+<tr>
+<td><strong>Ajuste básico (Grupo 002)</strong></td>
+<td>Tensión en voltios de tope alto y bajo</td>
+<td>Leído en función 04 grupo 002</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Pérdida de contacto en los topes por suciedad de la pista resistiva; desalineación con el sinfín del servomotor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>En caso de avería del potenciómetro, la UCE deja la trampilla en la posición existente y reduce la velocidad de la turbina para evitar la entrada excesiva de aire frío o caliente. Parpadean los dígitos del display.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Consultar el grupo de valores de medición 002 (campos 1, 2, 3 y 4) donde se indican los voltajes de posición real, calculada y topes superior e inferior de G92. Realizar el Ajuste Básico en función 04 grupo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT185_01</code> Despiece del motor V68 con sinfín, engranajes y potenciómetro interno G92 — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 22</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt186" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 186 </div>
+    <div class="nota-body">
+      <h1>Conmutador De Presión — <strong>F129</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">V</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">h</span><span class="badge-aplicacion">í</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">D</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">é</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">q</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">/</span><span class="badge-aplicacion">C</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> En el circuito de alta presión, junto a la válvula de expansión en el vano motor</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Proteger el circuito frigorífico contra sobrepresión o falta de gas y gobernar la 2ª velocidad de los ventiladores del líquido refrigerante.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Integra dos interruptores en un mismo cuerpo:<br />
+1. <em>Interruptor de máxima o mínima:</em> Normalmente cerrado. Abre al detectar una presión superior a 32 bares o inferior a 2 bares, interrumpiendo la señal del compresor.<br />
+2. <em>Interruptor de presión media:</em> Normalmente abierto. Cierra al detectar una presión aproximada de 16 bares para enviar positivo (15) a la unidad del aire acondicionado.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Conmutador cuádruple presostático montado sobre toma de alta presión y conector eléctrico de 4 polos.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Contacto interno</th>
+<th>Umbral de presión de conmutación</th>
+<th>Función / Resultado eléctrico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Max / Min (Pines 1 y 2)</strong></td>
+<td>Abre a <strong>&lt; 2 bares</strong> o <strong>&gt; 32 bares</strong></td>
+<td>Corta señal de acoplamiento del compresor</td>
+</tr>
+<tr>
+<td><strong>Media presión (Pines 3 y 4)</strong></td>
+<td>Cierra a <strong>~16 bares</strong></td>
+<td>Conecta 2ª velocidad de ventiladores V7/V35</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Fugas de refrigerante por la toma de roscado; membrana bloqueada por sedimentos de aceite.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Si el contacto de máxima/mínima abre, la unidad desactiva el compresor y la 1ª velocidad. Si el de media no cierra, no se activa la 2ª velocidad de ventiladores al subir la presión a 16 bares.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Consultar el estado del conmutador F129 en el grupo de valores de medición 001 campo 2 (0 = fuera de rango, 1 = rango de trabajo). Comprobar la continuidad de bornes con polímetro.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt187" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 187 </div>
+    <div class="nota-body">
+      <h1>Transmisor De Presión Electrónico — <strong>G65</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">V</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">h</span><span class="badge-aplicacion">í</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">G</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">q</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">/</span><span class="badge-aplicacion">C</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Tubería de alta presión, junto a la válvula de expansión en el vano motor</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir la presión del gas R134a para informar a la UCE del motor y a la unidad de control del aire acondicionado J293.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Sensor piezoeléctrico de estado sólido. Convierte la presión en una señal modulada que envía a la UCE del motor (para regular el ralentí según la carga) y a la UCE J293 (para desconexión y control de ventiladores).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Sensor electrónico de 3 polos (Alimentación 12 V, Masa y Salida de señal).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Condición de presión en alta</th>
+<th>Respuesta del sistema vía J293</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Presión &lt; 2 bares o &gt; 32 bares</strong></td>
+<td>Desconexión del compresor por presión máxima o mínima</td>
+</tr>
+<tr>
+<td><strong>Presión &gt;= 16 bares</strong></td>
+<td>Conexión de la 2ª velocidad de ventiladores V7/V35</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Fallo de la electrónica interna del transmisor; sulfatación del conector.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Si el transmisor está averiado, la unidad de control del aire acondicionado desactiva el compresor. La avería de este transmisor únicamente se registra en la memoria de averías de la unidad de control del motor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Verificar la presencia de la señal con un osciloscopio o leer la memoria de averías en la dirección "01 - Motor" mediante el equipo de diagnosis.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt188" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 188 </div>
+    <div class="nota-body">
+      <h1>Regulador De La Iluminación — <strong>E20</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">T</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">S</span><span class="badge-aplicacion">E</span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">T</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">I</span><span class="badge-aplicacion">b</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">C</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">b</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">1</span><span class="badge-aplicacion">9</span><span class="badge-aplicacion">9</span><span class="badge-aplicacion">9</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Lado izquierdo del tablero de instrumentos, formando una pieza única con el conmutador de luces y la regulación de altura de faros</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Ajustar la intensidad luminosa del cuadro de instrumentos, el display de la unidad de manejo e indicación y los pictogramas de los mandos.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Modifica, mediante una resistencia interna, la tensión de alimentación aplicada a los componentes de iluminación.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Módulo electrónico integrado junto con el conmutador de luces y la regulación de alcance de faros.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Entrada de señal</th>
+<th>Función de control</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tensión analógica variable</td>
+<td>Modula la iluminación de pictogramas en J255 y pulsadores/display en la radio</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Interrupción de la resistencia interna por sobrecalentamiento.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Pérdida de regulación o apagado de la luz de localización en los pictogramas del mando de distribución y en el display central.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Medir la variación de voltaje con un multímetro en la línea de salida del regulador al accionar la rueda de control.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt189" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 189 </div>
+    <div class="nota-body">
+      <h1>Conmutador Térmico Del Ventilador — <strong>F18</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">T</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">q</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Roscado en el radiador del líquido refrigerante</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Conectar la 1ª y 2ª velocidad de los ventiladores del líquido refrigerante según la temperatura del motor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Formado por dos interruptores normalmente abiertos. El 1er interruptor cierra a los 95 ºC alimentando con positivo (30) la 1ª velocidad; el 2º interruptor cierra a los 105 ºC enviando un positivo (30) hacia la UCE del aire acondicionado J293 para conectar la 2ª velocidad.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Sensor termostático roscado con conector de 3 vías de potencia.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Escalón térmico</th>
+<th>Temp. Cierre de contactos</th>
+<th>Resultado eléctrico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1er Escalón (Velocidad I)</strong></td>
+<td><strong>95 ºC</strong></td>
+<td>Alimenta directamente con +30 la 1ª velocidad de V7/V35</td>
+</tr>
+<tr>
+<td><strong>2º Escalón (Velocidad II)</strong></td>
+<td><strong>105 ºC</strong></td>
+<td>Envía +30 a UCE J293 para activar la 2ª velocidad</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Fogueo o desgaste de los contactos bimetálicos internos.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>El motor del vehículo se sobrecalienta en parado al no saltar los electroventiladores.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Puentear el terminal de alimentación (+30) con las salidas de 1ª y 2ª velocidad para verificar la activación de los electroventiladores.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt190" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 190 </div>
+    <div class="nota-body">
+      <h1>Unidad De Manejo E Indicación (Pulsadores) — <strong>E87</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">C</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">f</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Consola central del salpicadero, formando un único conjunto compacto con el display y la radio</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Recoger las órdenes del usuario relativas a temperatura, turbina, recirculación y A/C para transmitirlas a la unidad de control J255.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Al presionar un pulsador, se transmite una señal mediante un bus de datos de 18 cables al radiocasete. El radiocasete la reenvía por un bus de datos de 1 cable hacia la unidad del autoclima o calefacción motorizada J255. La unidad E87 es alimentada por la radio.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Regleta frontal compacta de pulsadores integrada en el marco de la consola central.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Bus de comunicación</th>
+<th>Número de hilos</th>
+<th>Función</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bus E87 a Radiocasete R</strong></td>
+<td><strong>18 cables</strong></td>
+<td>Envió de pulsaciones</td>
+</tr>
+<tr>
+<td><strong>Bus Radiocasete R a J255</strong></td>
+<td><strong>1 cable</strong></td>
+<td>Enlace de datos serie</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Fallo mecánico o cortocircuito en alguno de los pulsadores de la regleta.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Cuando un pulsador no funciona, la radio emite una señal de avería hacia J255. El autoclima pasa a modo automático fijo, toma 22 ºC solicitados y 20 ºC exterior, desconecta el compresor y abre la recirculación a aire fresco. La calefacción motorizada trabaja con los parámetros existentes en el momento de la avería.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Consultar el estado de pulsación (0 = No presionado, 1 = Presionado) en los grupos 003 y 004 del bloque de valores de medición.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt191" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 191 </div>
+    <div class="nota-body">
+      <h1>Unidad De Manejo E Indicación (Display) — <strong>E87</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">C</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">f</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Consola central del salpicadero</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Informar sobre los parámetros de funcionamiento del autoclima o calefacción motorizada, del radiocasete y del ordenador de a bordo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Los dígitos referentes al climatizador son excitados por la unidad del radiocasete mediante el bus de 18 cables, tras recibir previamente la información desde J255 por el bus de 1 cable. Su alimentación eléctrica procede también de la radio.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Pantalla LCD de grandes dimensiones. Existen dos variantes según se monte autoclima (indica ºC o letras) o calefacción motorizada (indica escala Cold/Hot).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Tipo de equipo</th>
+<th>Formato de indicación de temperatura</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Autoclima</strong></td>
+<td>Valor numérico en ºC (modo automático) o letras (modo manual)</td>
+</tr>
+<tr>
+<td><strong>Calefacción Motorizada</strong></td>
+<td>Barras gráficas entre COLD y HOT</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Pérdida de segmentos de cristal líquido; interrupción del bus de datos de 1 cable entre J255 y la radio.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Si se produce una avería en la comunicación del bus de datos entre el radiocasete y J255, los datos referentes al climatizador dejan de ser visibles en el display.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Verificar la continuidad de la línea del bus de 1 cable. En caso de avería propia del display, debe sustituirse la unidad E87 completa.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt192" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 192 </div>
+    <div class="nota-body">
+      <h1>Motor De La Trampilla De Temperatura — <strong>V68</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">C</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">f</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Parte inferior de la unidad climática</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Accionar mecánicamente la trampilla de mezcla de temperatura para regular el paso de aire a través del radiador de calefacción.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Motor eléctrico de corriente continua de giro limitado. La UCE J255 lo excita con positivo y negativo, alternando la polaridad de los bornes según el sentido de giro deseado hacia frío o calor. Monta en su interior el potenciómetro G92.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Módulo actuador provisto de motor eléctrico, tornillo sinfín y rueda de transmisión de movimiento.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Prueba en diagnosis</th>
+<th>Comportamiento del motor V68</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Diagnosis de actuadores (Función 03)</strong></td>
+<td>Se desplaza progresivamente desde la posición mínima a la máxima</td>
+</tr>
+<tr>
+<td><strong>Ajuste básico (Función 04 Grupo 002)</strong></td>
+<td>Desplaza la trampilla a ambos extremos memorizando voltajes</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Ruptura o desgaste de los dientes de la rueda de transmisión o sinfín; agarrotamiento de la trampilla.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>En caso de avería, la trampilla se queda en la posición existente y la UCE aminora la velocidad de la turbina para reducir la entrada brusca de aire.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Ejecutar la Función 03 (Diagnosis de actuadores) para verificar el movimiento de mínimo a máximo. Ejecutar el Ajuste Básico grupo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT192_01</code> Sección del motor V68 con sinfín, engranajes y potenciómetro interno G92 — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 22</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt193" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 193 </div>
+    <div class="nota-body">
+      <h1>Motor De La Turbina De Aire Y Regulador De Régimen — <strong>V2 (Motor de la turbina) / J126 (Regulador de régimen)</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">C</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">f</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Alojados en la cavidad de entrada de la unidad climática</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Generar y ajustar de forma continua el caudal de aire impulsado al interior del habitáculo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>El regulador electrónico J126 recibe la tensión de mando de J255 y modula la tensión continua aplicada al motor V2 de la turbina.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Motor eléctrico de corriente continua alimentado a través de la etapa de potencia electrónica J126.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Diagnóstico de actuadores (Función 03)</th>
+<th>Respuesta de regulación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Verificación de la turbina V2</strong></td>
+<td>Regulación progresiva de la velocidad desde 0 hasta la máxima, en pasos de 2,5 V cada 2 segundos</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Desgaste de escobillas del motor V2; fallo de transistores en el regulador J126.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>La avería es detectable al disminuir notablemente o cesar por completo la entrada de aire al habitáculo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Consultar la tensión solicitada y real de V2 en el grupo 005 (campos 1 y 2) del bloque de valores de medición. Probar el barrido de tensión en el test de actuadores.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt194" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 194 </div>
+    <div class="nota-body">
+      <h1>Motor De La Trampilla De Recirculación — <strong>V113</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">T</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">g</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Parte superior de la unidad climática, unido a la trampilla de recirculación</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Conmutar el paso entre la admisión de aire fresco del exterior y la recirculación del aire del habitáculo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Motor de corriente continua de giro libre con un único sentido de rotación. Dispone de un cursor interno sobre una pista fija; el cursor se sitúa sobre la pista no excitada a la espera de la señal para activar de nuevo el motor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Actuador electromecánico provisto de guía y palanca de giro conectadas al eje de la trampilla.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Estado en bloque de valores 001 (Campo 3)</th>
+<th>Posición de la trampilla</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>0</strong></td>
+<td>Aire exterior</td>
+</tr>
+<tr>
+<td><strong>1</strong></td>
+<td>Recirculación</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Fallo de contacto en el cursor interno; desgaste de la palanca de giro o guía.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Imposibilidad de cambiar la posición de la trampilla de recirculación. Cada vez que se conecta el autoclima parpadean todos los dígitos del display.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobar el desplazamiento alternativo entre aire exterior y recirculación en el diagnóstico de actuadores (Función 03).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT194_01</code> Esquema del motor V113 con palanca de giro, guía y pista del cursor — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 23</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt195" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 195 </div>
+    <div class="nota-body">
+      <h1>Motor Para La Turbina Del Transmisor G56 — <strong>V42</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">S</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Forma un único conjunto con el transmisor de temperatura interior G56, tras el salpicadero</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Generar un flujo de aire continuo que atraviese el transmisor G56 para poder registrar el valor de temperatura real del habitáculo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Motor eléctrico con estator y rotor imantado. Monta en su interior una placa electrónica que gobierna el funcionamiento y detecta las posibles averías. Es alimentado con positivo y negativo por J255 mientras reciba la señal de encendido (15).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Soplante de turbina micrométrica con placa de control integrada.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Tensión de excitación</th>
+<th>Estado operativo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>12 V CC (Borne 15)</strong></td>
+<td>Funcionamiento continuo mientras el encendido esté conectado</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Bloqueo del rotor por acumulación de suciedad o pelusa.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Cuando se detecta una avería del motor V42, la unidad del autoclima aplica factores de corrección a la temperatura registrada por el transmisor G56 para simular un valor más o menos próximo al real.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Verificar si existe succión de aire en la rejilla del salpicadero con una tira fina de papel.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt196" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 196 </div>
+    <div class="nota-body">
+      <h1>Acoplamiento Magnético Del Compresor — <strong>N25</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">V</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Ubicado en el compresor de aire acondicionado</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Acoplar el eje del compresor para que gire solidario con la polea de arrastre y generar la presión en el circuito frigorífico.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Electroimán alimentado con positivo por la unidad de control del aire acondicionado J293. La fuerza de la bobina atrae el disco de embrague contra la polea en movimiento.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Bobina electromagnética de alta intensidad, polea de arrastre y disco de embrague de fricción.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Tensión de excitación</th>
+<th>Estado de acoplamiento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>12 V CC desde UCE J293</strong></td>
+<td>Conectado / Compresor girando solidario</td>
+</tr>
+<tr>
+<td><strong>0 V CC</strong></td>
+<td>Desconectado / Polea girando loca</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Interrupción del arrollamiento de la bobina por temperatura; desgaste en la cara de fricción del embrague.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>El compresor no gira y el aire que entra al habitáculo no se enfría.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobar la presencia de 12 V en el conector de N25. Ejecutar la prueba de conexión y desconexión en el test de actuadores (Función 03).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT196_01</code> Sección del acoplamiento magnético N25 con la bobina, embrague y polea — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 25</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt197" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 197 </div>
+    <div class="nota-body">
+      <h1>Ventiladores Del Líquido Refrigerante — <strong>V7 / V35</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">T</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">q</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">/</span><span class="badge-aplicacion">C</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Frontal del vehículo, en el radiador del líquido refrigerante</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Evacuar el calor cediéndolo al aire exterior a través del condensador y del radiador de refrigeración.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Motores eléctricos de corriente continua de dos velocidades. La 1ª velocidad se activa directamente por el conmutador térmico F18 (a 95 ºC) o por la UCE J293 al conectar el compresor. La 2ª velocidad se activa por F18 (a 105 ºC) o por J293 al superarse 16 bares de presión.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Dos electromotores independientes con material resistivo interno para la 1ª velocidad.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Velocidad del electroventilador</th>
+<th>Condiciones de activación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1ª Velocidad</strong></td>
+<td>Señal de conexión del compresor o Temp. refrigerante a <strong>95 ºC</strong></td>
+</tr>
+<tr>
+<td><strong>2ª Velocidad</strong></td>
+<td>Presión de gas <strong>&gt; 16 bares</strong> o Temp. refrigerante a <strong>105 ºC</strong></td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Fogueo o interrupción del material resistivo de la 1ª velocidad; desgaste de escobillas.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Sobrecalentamiento del líquido refrigerante del motor o disparo de sobrepresión en el circuito frigorífico.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Puentear las salidas de F18 para verificar la activación de la 1ª y 2ª velocidad.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt198" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 198 </div>
+    <div class="nota-body">
+      <h1>Unidad Del Equipo De Mando Electrónico — <strong>J255</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">C</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">f</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Ubicada detrás del mando giratorio de distribución de aire en la consola central</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Regular la temperatura del aire, gestionar los servomotores V68 y V113, controlar la turbina V2 y emitir la señal de conexión del compresor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Módulo electrónico microprocesado. La unidad es la misma para autoclima y calefacción motorizada. Al conectar la UCE al mazo de cables, si el contacto 21 recibe masa mediante un puente de codificación, la UCE adopta el programa de Calefacción Motorizada; si no hay puente, adopta el programa de Autoclima.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Unidad electrónica con autodiagnóstico integral accesible por dirección.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Codificación en lectura (Función 01)</th>
+<th>Tipo de equipo / Programa activo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>2 2 0</strong></td>
+<td><strong>Autoclima</strong> (Regulación electrónica de temperatura y caudal)</td>
+</tr>
+<tr>
+<td><strong>1 1 0</strong></td>
+<td><strong>Calefacción Motorizada</strong> (Accionamiento eléctrico sin regulación automática)</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Interrupción del puente de masa en el contacto 21 que modifica la codificación interna; fallo del microprocesador.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Inoperatividad del sistema o parpadeo continuo de todos los dígitos de la pantalla al conectar el encendido.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Consultar el código de equipo mediante la Función 01 en el equipo de diagnosis. Consultar la memoria de averías mediante la Función.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT198_01</code> Módulo de la unidad J255 con la asignación de pines y conector de diagnosis — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 11</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt199" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 199 </div>
+    <div class="nota-body">
+      <h1>Unidad De Control Del Aire Acondicionado — <strong>J293</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">V</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">h</span><span class="badge-aplicacion">í</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Alojada en el vano motor</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Gobernar la alimentación del acoplamiento magnético N25 y activar las dos velocidades de los ventiladores del líquido refrigerante.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Módulo electrónico relé de potencia. Conecta el acoplamiento N25 al recibir la señal de solicitud de J255 (pasando por F38 y F129/G65), siempre que no exista señal de corte por negativo enviada por la UCE del motor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Módulo estanco provisto de fusibles aéreos de protección S164 y S180.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Condición de entrada</th>
+<th>Salida en J293</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Señal J255 activa + F38 cerrado + F129/G65 OK + Sin negativo de UCE motor</strong></td>
+<td>Activa acoplamiento N25 y 1ª velocidad de ventiladores V7/V35</td>
+</tr>
+<tr>
+<td><strong>Señal de negativo desde UCE motor</strong></td>
+<td>Desconecta inmediatamente el acoplamiento N25</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Fogueo de los contactos de potencia internos; fundición de los fusibles S164 o S180.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>El compresor no se acopla o los electroventiladores no se activan al solicitar frío.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobar las alimentaciones de potencia en las patillas de J293 y verificar la presencia de 12 V en la salida hacia N25.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt200" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 200 </div>
+    <div class="nota-body">
+      <h1>Radiocasete — <strong>R</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">V</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">h</span><span class="badge-aplicacion">í</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">C</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">f</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">M</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Consola central del salpicadero</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Servir de pasarela de comunicación multiplexada entre la unidad E87 y la UCE J255, y controlar la iluminación del display.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Recibe las órdenes enviadas por E87 a través del bus de datos de 18 cables, las convierte y las reenvía a J255 mediante un bus de datos de 1 cable. Recibe de J255 los mensajes de indicación y los emite en el display.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Unidad central de audio e interfaz electrónica de comunicación multiplexada.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Línea de bus de datos</th>
+<th>Tipo de interconexión</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bus de 18 cables</strong></td>
+<td>Enlace entre pulsadores E87 y el radiocasete R</td>
+</tr>
+<tr>
+<td><strong>Bus de 1 cable</strong></td>
+<td>Enlace serie bidireccional entre radiocasete R y la UCE J255</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Interrupción de la línea del bus de 1 cable; fallo interno de la pasarela de datos de la radio.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Los datos referentes al autoclima o calefacción motorizada dejan de ser visibles en el display.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobar la continuidad del conductor del bus de 1 cable entre la radio y la UCE J255.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt201" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 201 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Autodiagnosis Y Funciones De Control De Climatización</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Establecer el procedimiento de autodiagnosis, lectura y borrado de averías, ajuste básico y análisis del bloque de valores de medición en las UCEs J255. Se aplica a la localización de averías en calefacción motorizada y autoclima.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>La UCE J255 supervisa el estado de sensores y actuadores. Memoriza averías esporádicas (se eliminan tras 40 puestas en marcha sin repetirse) y permanentes (requieren reparación física y borrado manual).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Tensión de batería correcta.  </li>
+<li>Encendido conectado ("borne 15 ON").</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <ul>
+<li>Equipo de diagnosis homologado con cable de conexión al puerto T16 de 16 polos.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ol>
+<li>Ingresar en la diagnosis por el <strong>Código de dirección "08 - Aire acondicionado"</strong>.  </li>
+<li><strong>Función 01 (Versión de la unidad de control):</strong> Comprobar la clave de recambios y el tipo de equipo (220 = Autoclima, 110 = Calefacción Motorizada).  </li>
+<li><strong>Función 02 (Consultar memoria de averías):</strong> Leer los códigos DTC de sensores y actuadores.  </li>
+<li><strong>Función 03 (Diagnóstico de elementos actuadores):</strong> Excitar cíclicamente el acoplamiento N25, la turbina V2 (variación de 0 a 12 V en pasos de 2,5 V cada 2 s), el motor V68 (de mínimo a máximo) y V113 (de aire exterior a recirculación).  </li>
+<li><strong>Función 04 (Ajuste básico):</strong> Introducir el <strong>Grupo 002</strong> para que la UCE reconozca y memorice las posiciones límite del motor V68. Realizar siempre al sustituir V68 o la UCE J255.  </li>
+<li><strong>Función 08 (Bloque de valores de medición):</strong> Analizar los parámetros de trabajo en tiempo real en los grupos 001 al.  </li>
+<li>Subsanar las averías, ejecutar la <strong>Función 05 (Borrar memoria de averías)</strong> y salir con <strong>Función 06 (Finalizar emisión)</strong>.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Función / Grupo</th>
+<th>Parámetro leído / Valor teóricamente correcto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Función 04 — Grupo 002</strong></td>
+<td>Muestra posición real, calculada y topes superior e inferior de V68 en Voltios</td>
+</tr>
+<tr>
+<td><strong>Función 08 — Grupo 001</strong></td>
+<td>Campo 1 (Compresor: 0=OFF, 1=ON); Campo 2 (Presostato F129: 1=OK); Campo 3 (V113: 0=Ext, 1=Rec)</td>
+</tr>
+<tr>
+<td><strong>Función 08 — Grupo 005</strong></td>
+<td>Campo 1 (Voltios solicitados V2); Campo 2 (Voltios reales V2); Campo 4 (Mando distribución: 0-100%)</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Omitir el Ajuste Básico (Función 04 Grupo 002) al sustituir el motor V68 o la UCE J255: genera desacoples en la regulación de mezcla de aire y parpadeo continuo en el display.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Confirmar la ausencia de códigos en la memoria de averías (Función 02) y comprobar que el display no parpadee al conectar el encendido.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    162 notas técnicas · generado el 21/09/2026.
+    186 notas técnicas · generado el 21/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 

@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-21",
- "total": 162,
+ "total": 186,
  "grupos": [
   "Actuadores y mandos",
   "Circuito frigorífico",
@@ -8088,6 +8088,1154 @@
     {
      "titulo": "Imágenes requeridas",
      "texto": "Placa de datos de llenado de agente frigorífico R134a colocada en el vano motor — Fuente: Audi A5 Coupé_2008_aire acondicionado.pdf, pág. 4"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.sistemas-de-climatizacion-y-sus-modos-de-funcionamiento",
+   "nt": 178,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "sistemas-de-climatizacion-y-sus-modos-de-funcionamiento",
+   "titulo": "Sistemas De Climatización Y Sus Modos De Funcionamiento",
+   "codigo": "",
+   "menu": "Sistemas De Climatización Y Sus Modos",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Definir los principios de funcionamiento, variantes de equipamiento y lógica de control de los cuatro sistemas de climatización (ventilación/calefacción, aire acondicionado manual, calefacción motorizada y autoclima). Se aplica a la gama SEAT Ibiza y Córdoba modelo 1999."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El sistema gestiona el caudal, la mezcla térmica y la distribución del aire impulsado al interior del habitáculo. En los equipos mecánicos, la temperatura y la distribución se seleccionan mediante cables y mandos giratorios. En la calefacción motorizada y el autoclima, una unidad de control electrónica (UCE) gobierna servomotores sobre la trampilla de mezcla y la recirculación, mostrando la información en una pantalla central. El autoclima mantiene automáticamente la temperatura seleccionada evaluando la radiación y las temperaturas interior y exterior."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Tensión de batería en rango nominal. Encendido conectado (\"borne 15 ON\") o motor en marcha."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Polímetro digital y estación de diagnosis con código de dirección."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Ventilación / Calefacción: La temperatura se regula mezclando el aire que atraviesa el radiador de calefacción de forma mecánica. La velocidad de la turbina se selecciona mediante una escala de resistencias variables en el motor. Aire Acondicionado Manual: Mantiene la arquitectura mecánica de calefacción e incorpora un pulsador de acoplamiento eléctrico para el compresor de refrigeración. Calefacción Motorizada: Ajusta la temperatura mediante el servomotor V68 sobre la trampilla de mezcla y conmuta la recirculación con el servomotor V113. La distribución de aire se mantiene por mando giratorio mecánico. Autoclima: Gestiona electrónicamente la temperatura, la velocidad de la turbina V2, el compresor N25 y la recirculación V113 de forma automática, semiautomática o manual."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Sistema / Función Parámetro de control Condiciones de validez Ajuste automático de sustitución 22 ºC en pantalla Modo sustitutivo por fallo de sensores o pulsadores Límite de desconexión A/C por helada < 5 ºC ambiente Medido por interruptor térmico F38 en caja de aguas"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Confundir la calefacción motorizada con el autoclima: la calefacción motorizada no incorpora circuito frigorífico ni sensores de temperatura de conductos, por lo que no puede enfriar por debajo de la temperatura ambiente."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Comprobar el desplazamiento suave de la trampilla de temperatura de extremo a extremo al modificar los valores en el panel y verificar la salida de aire a la temperatura deseada."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Cuadro esquemático de los cuatro sistemas de climatización del vehículo — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 4"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.circuito-frigorifico-y-sus-componentes",
+   "nt": 179,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "circuito-frigorifico-y-sus-componentes",
+   "titulo": "Circuito Frigorífico Y Sus Componentes",
+   "codigo": "",
+   "menu": "Circuito Frigorífico Y Sus Componentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Describir la composición, presiones de trabajo y distribución de los componentes del circuito frigorífico de gas R134a. Se aplica a las versiones con aire acondicionado manual y autoclima."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El circuito frigorífico absorbe el calor del aire que entra al habitáculo haciendo ebullir el fluido R134a a baja presión dentro del evaporador. El compresor eleva la presión y temperatura del gas hacia el condensador, donde se licúa cediendo calor al aire exterior. La válvula de expansión dosifica el caudal de refrigerante líquido que entra al evaporador según la temperatura y presión."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Circuito hermético y libre de humedad. Motor en marcha a ralentí o régimen constante."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Estación de carga y reciclaje de R134a. Puente de manómetros de alta y baja presión."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Compresor: De 7 cilindros axial autorregulado, arrastrado por correa Poly-V y acoplado por electroimán N25. Incorpora una válvula de seguridad mecánica. Condensador: Situado en el frente, delante del radiador de refrigeración del motor. Filtro Deshidratador: Retiene humedad y partículas, evitando la formación de burbujas en la línea de líquido. Válvula de Expansión: Regula la presión y el caudal a la entrada del evaporador. Evaporador: Alojado dentro de la unidad climática del salpicadero. Silenciador de Pulsaciones: Alojado en el tubo de baja presión, cerca del compresor, para reducir el ruido hidroacústico."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Componente / Parámetro Valor numérico especificado Condiciones de medición / Estado Carga de fluido refrigerante R134a 750 ± 50 gramos Carga total del circuito vacío Tarado de la válvula de seguridad del compresor 44 bares Disparo de sobrepresión extrema en compresor"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Cargar fluido sin realizar el vacío previo: la presencia de humedad y aire genera burbujas en el circuito y reduce la eficiencia de condensación."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Comprobar la presencia de frío continuo en la tubería de baja presión y la ausencia de burbujas en el filtro deshidratador."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del circuito frigorífico con compresor, condensador, filtro, válvula de expansión y evaporador — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 7"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.transmisor-de-temperatura-interior",
+   "nt": 180,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "transmisor-de-temperatura-interior",
+   "titulo": "Transmisor De Temperatura Interior",
+   "codigo": "G56",
+   "menu": "Transmisor De Temperatura Inte G56",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema Autoclima del SEAT Ibiza y Córdoba 1999",
+   "ubicacion": "Detrás del tablero de instrumentos, junto a la columna de dirección",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la temperatura real del aire del habitáculo para permitir el cálculo de la regulación térmica en modo automático."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Resistencia de Coeficiente de Temperatura Negativo (NTC). Para garantizar que mida el aire representativo de la estancia y no la temperatura de la consola, el motor eléctrico V42 acciona una pequeña turbina que aspira aire continuo del habitáculo sobre la resistencia."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Sensor NTC térmico calibrado con un campo de medición entre -40 ºC y +85 ºC, integrado en un módulo compacto junto con la turbina V42."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Parámetro Valor de referencia Condiciones de validez Rango de medición del sensor NTC -40 ºC a +85 ºC Rango térmico operativo Valor sustitutivo por avería 22 ºC constante Adoptado por la UCE J255 tras detectarse fallo"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Acumulación de pelusa y polvo en el conducto de la turbina V42; interrupción o cortocircuito en la resistencia NTC."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "La UCE adopta el valor de 22 ºC fijo. Al seleccionar temperaturas superiores o inferiores a 22 ºC en el panel, el sistema enfría o calienta en exceso sin detenerse al no registrar la temperatura real. Todos los dígitos del display parpadean al conectar el encendido."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Consultar el bloque de valores de medición grupo 006 campo 4 mediante el equipo de diagnosis. Comprobar la resistencia NTC desconectada mediante un polímetro en escala de ohmios a temperatura ambiente."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.transmisores-de-temperatura-del-aire-de-entrada",
+   "nt": 181,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "transmisores-de-temperatura-del-aire-de-entrada",
+   "titulo": "Transmisores De Temperatura Del Aire De Entrada",
+   "codigo": "G191 / G192",
+   "menu": "Transmisores De Temperatura De G191 / G192",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema Autoclima del SEAT Ibiza y Córdoba 1999",
+   "ubicacion": "G191 situado en el difusor central; G192 situado en el difusor de la zona de los pies",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la temperatura del aire que sale hacia el habitáculo por los difusores para regular de forma precisa la mezcla de la trampilla de temperatura."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Sondas de resistencia NTC. La UCE calcula la media aritmética de las lecturas entregadas por ambos transmisores para ajustar el posicionamiento del servomotor de temperatura V68."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Sondas térmicas de inserción rápida con conector de 2 polos. Margen de medición de -40 ºC a +85 ºC."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Parámetro Valor numérico Condiciones de validez Rango de medida NTC -40 ºC a +85 ºC Mapeo térmico de la UCE"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Interrupción de los hilos de señal; descalibración del elemento cerámico."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Al perder la señal de cualquiera de los dos transmisores, la UCE anula la regulación automática del sistema y mantiene fijos los parámetros que existían en el momento de producirse la avería. Todos los dígitos del display parpadean."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Consultar la temperatura de G191 en el grupo de valores de medición 006 campo 2 y de G192 en el grupo 006 campo. Medir la resistencia eléctrica entre bornes con un multímetro."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Ubicación de los transmisores G191 en el difusor central y G192 en la zona de los pies — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 13"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.transmisor-de-temperatura-exterior",
+   "nt": 182,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "transmisor-de-temperatura-exterior",
+   "titulo": "Transmisor De Temperatura Exterior",
+   "codigo": "G17",
+   "menu": "Transmisor De Temperatura Exte G17",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "SEAT Ibiza y Córdoba 1999 con Autoclima o radio con pantalla",
+   "ubicacion": "Montado en el interior de la carcasa del retrovisor exterior derecho (lado del acompañante)",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Captar la temperatura del aire ambiente exterior para mostrarla en el display y permitir a las UCEs regular la temperatura del aire y la velocidad de la turbina."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Resistencia NTC conectada a la unidad del radiocasete R. La radio procesa el valor, lo muestra en la pantalla e informa a la UCE de climatización J255."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Sensor termistor estanco integrado en el conjunto del espejo retrovisor exterior derecho."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Parámetro / Condición Valor de referencia Estado del sistema Lectura normal en display Grados ºC Procesado por el radiocasete Valor de sustitución en Autoclima 20 ºC constante Adoptado si falla la señal de G17"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Rotura o corte en el mazo de cables del retrovisor; sulfatación de contactos."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El display muestra tres rayas '---' en la zona donde se indica la temperatura exterior. El autoclima asume 20 ºC fijos y elimina la señal de conexión del acoplamiento magnético. Todos los dígitos del display parpadean."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Consultar el bloque de valores de medición grupo 006 campo 1 en el equipo de diagnosis. Medir la continuidad y resistencia de la sonda con un polímetro."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.interruptor-termico-de-la-caja-de-aguas",
+   "nt": 183,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "interruptor-termico-de-la-caja-de-aguas",
+   "titulo": "Interruptor Térmico De La Caja De Aguas",
+   "codigo": "F38",
+   "menu": "Interruptor Térmico De La Caja F38",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Circuitos de aire acondicionado y Autoclima en la gama Ibiza/Córdoba 1999",
+   "ubicacion": "Alojado en el interior de la caja de aguas del vano motor",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Interrumpir la señal eléctrica de activación del compresor para evitar la congelación del evaporador por bajas temperaturas exteriores."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Interruptor térmico de contacto bimetálico normalmente cerrado. Recibe la tensión de 12 V procedente de la UCE J255 y la deja pasar hacia la unidad J293 siempre que la temperatura sea superior a 5 ºC."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Conmutador térmico estanco de 2 polos intercalado en serie en la línea de mando del compresor."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Temperatura ambiente Estado de los contactos Tensión de salida a J293 > 5 ºC Cerrado 12 V CC (permite conectar A/C) < 5 ºC Abierto 0 V CC (desconecta A/C)"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Contactos pegados por arco eléctrico o bloqueados en posición abierta por fallo del bimetal."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si el interruptor permanece siempre cerrado, el compresor funciona a temperaturas inferiores a 5 ºC pudiendo provocar la congelación del evaporador. Si queda abierto permanente, la señal de 12 V no pasa y el compresor no se conecta jamás."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Comprobar continuidad con polímetro entre sus dos bornes a temperatura ambiente por encima de 5 ºC (debe dar 0 Ω) y enfriarlo por debajo de 5 ºC (debe dar circuito abierto / infinito)."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.potenciometro-de-la-distribucion-de-aire",
+   "nt": 184,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "potenciometro-de-la-distribucion-de-aire",
+   "titulo": "Potenciómetro De La Distribución De Aire",
+   "codigo": "",
+   "menu": "Potenciómetro De La Distribución De Ai",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Calefacción motorizada y Autoclima del SEAT Ibiza y Córdoba 1999",
+   "ubicacion": "En el interior de la propia unidad del autoclima o calefacción motorizada, accionado al girar el mando de distribución",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Informar continuamente a la UCE de la posición angular seleccionada manualmente en el mando giratorio de salida de aire."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Resistencia variable rotativa accionada por ruedas de engranaje. Envía una tensión proporcional a la UCE J255. Cuando se selecciona la salida de aire hacia el parabrisas, la UCE activa la estrategia de máxima eficacia de desempañado."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Potenciómetro rotativo de carbón accionado por las ruedas mecánicas de la ruleta del mando giratorio."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Posición del mando giratorio Estrategia activada por UCE J255 Posición Parabrisas (Defrost) Eleva velocidad de turbina, pone recirculación en aire fresco y conecta compresor A/C Otras posiciones de salida Regulación estándar seleccionada"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Desgaste de la pista de carbón en la zona del parabrisas; rotura de los dientes de accionamiento de las ruedas plásticas."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "En caso de pérdida de señal, la UCE sitúa la trampilla de recirculación en posición de entrada de aire fresco, no regula la velocidad de la turbina ni conecta el compresor al seleccionar la salida hacia el parabrisas. Los dígitos del display parpadean."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Consultar la posición del mando de distribución en porcentaje (0% a 100%) en el bloque de valores de medición grupo 005 campo."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.potenciometro-del-motor-de-la-trampilla-de-temperatura",
+   "nt": 185,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "potenciometro-del-motor-de-la-trampilla-de-temperatura",
+   "titulo": "Potenciómetro Del Motor De La Trampilla De Temperatura",
+   "codigo": "G92",
+   "menu": "Potenciómetro Del Motor De La  G92",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Calefacción motorizada y Autoclima",
+   "ubicacion": "Alojado en el propio motor V68, en la parte inferior de la unidad climática",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Informar a la UCE de la posición angular exacta de la trampilla de mezcla de temperatura y reconocer los dos topes del recorrido mecánico."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Potenciómetro rotativo acoplado al eje del motor V68. Actúa como divisor de tensión entregando una señal variable a la UCE."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Posee una carrera angular de trabajo de 51º y un rango de resistencia eléctrica comprendido entre 0 y 4,7 kΩ."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Parámetro Valor numérico / Rango Condiciones de validez Carrera angular del potenciómetro 51º Desplazamiento máximo de la trampilla Rango de resistencia eléctrica 0 a 4,7 kΩ Medido entre extremos de pista Ajuste básico (Grupo 002) Tensión en voltios de tope alto y bajo Leído en función 04 grupo 002"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Pérdida de contacto en los topes por suciedad de la pista resistiva; desalineación con el sinfín del servomotor."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "En caso de avería del potenciómetro, la UCE deja la trampilla en la posición existente y reduce la velocidad de la turbina para evitar la entrada excesiva de aire frío o caliente. Parpadean los dígitos del display."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Consultar el grupo de valores de medición 002 (campos 1, 2, 3 y 4) donde se indican los voltajes de posición real, calculada y topes superior e inferior de G92. Realizar el Ajuste Básico en función 04 grupo."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Despiece del motor V68 con sinfín, engranajes y potenciómetro interno G92 — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 22"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.conmutador-de-presion",
+   "nt": 186,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "conmutador-de-presion",
+   "titulo": "Conmutador De Presión",
+   "codigo": "F129",
+   "menu": "Conmutador De Presión F129",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Vehículos con motorización Diésel equipados con A/C o Autoclima",
+   "ubicacion": "En el circuito de alta presión, junto a la válvula de expansión en el vano motor",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Proteger el circuito frigorífico contra sobrepresión o falta de gas y gobernar la 2ª velocidad de los ventiladores del líquido refrigerante."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Integra dos interruptores en un mismo cuerpo: 1. Interruptor de máxima o mínima: Normalmente cerrado. Abre al detectar una presión superior a 32 bares o inferior a 2 bares, interrumpiendo la señal del compresor. 2. Interruptor de presión media: Normalmente abierto. Cierra al detectar una presión aproximada de 16 bares para enviar positivo (15) a la unidad del aire acondicionado."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Conmutador cuádruple presostático montado sobre toma de alta presión y conector eléctrico de 4 polos."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Contacto interno Umbral de presión de conmutación Función / Resultado eléctrico Max / Min (Pines 1 y 2) Abre a < 2 bares o > 32 bares Corta señal de acoplamiento del compresor Media presión (Pines 3 y 4) Cierra a ~16 bares Conecta 2ª velocidad de ventiladores V7/V35"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fugas de refrigerante por la toma de roscado; membrana bloqueada por sedimentos de aceite."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si el contacto de máxima/mínima abre, la unidad desactiva el compresor y la 1ª velocidad. Si el de media no cierra, no se activa la 2ª velocidad de ventiladores al subir la presión a 16 bares."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Consultar el estado del conmutador F129 en el grupo de valores de medición 001 campo 2 (0 = fuera de rango, 1 = rango de trabajo). Comprobar la continuidad de bornes con polímetro."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.transmisor-de-presion-electronico",
+   "nt": 187,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "transmisor-de-presion-electronico",
+   "titulo": "Transmisor De Presión Electrónico",
+   "codigo": "G65",
+   "menu": "Transmisor De Presión Electrón G65",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Vehículos con motorización de Gasolina equipados con A/C o Autoclima",
+   "ubicacion": "Tubería de alta presión, junto a la válvula de expansión en el vano motor",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la presión del gas R134a para informar a la UCE del motor y a la unidad de control del aire acondicionado J293."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Sensor piezoeléctrico de estado sólido. Convierte la presión en una señal modulada que envía a la UCE del motor (para regular el ralentí según la carga) y a la UCE J293 (para desconexión y control de ventiladores)."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Sensor electrónico de 3 polos (Alimentación 12 V, Masa y Salida de señal)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Condición de presión en alta Respuesta del sistema vía J293 Presión < 2 bares o > 32 bares Desconexión del compresor por presión máxima o mínima Presión >= 16 bares Conexión de la 2ª velocidad de ventiladores V7/V35"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fallo de la electrónica interna del transmisor; sulfatación del conector."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si el transmisor está averiado, la unidad de control del aire acondicionado desactiva el compresor. La avería de este transmisor únicamente se registra en la memoria de averías de la unidad de control del motor."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Verificar la presencia de la señal con un osciloscopio o leer la memoria de averías en la dirección \"01 - Motor\" mediante el equipo de diagnosis."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.regulador-de-la-iluminacion",
+   "nt": 188,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "regulador-de-la-iluminacion",
+   "titulo": "Regulador De La Iluminación",
+   "codigo": "E20",
+   "menu": "Regulador De La Iluminación E20",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Todos los modelos SEAT Ibiza y Córdoba 1999",
+   "ubicacion": "Lado izquierdo del tablero de instrumentos, formando una pieza única con el conmutador de luces y la regulación de altura de faros",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Ajustar la intensidad luminosa del cuadro de instrumentos, el display de la unidad de manejo e indicación y los pictogramas de los mandos."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Modifica, mediante una resistencia interna, la tensión de alimentación aplicada a los componentes de iluminación."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Módulo electrónico integrado junto con el conmutador de luces y la regulación de alcance de faros."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Entrada de señal Función de control Tensión analógica variable Modula la iluminación de pictogramas en J255 y pulsadores/display en la radio"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Interrupción de la resistencia interna por sobrecalentamiento."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Pérdida de regulación o apagado de la luz de localización en los pictogramas del mando de distribución y en el display central."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Medir la variación de voltaje con un multímetro en la línea de salida del regulador al accionar la rueda de control."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.conmutador-termico-del-ventilador",
+   "nt": 189,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "conmutador-termico-del-ventilador",
+   "titulo": "Conmutador Térmico Del Ventilador",
+   "codigo": "F18",
+   "menu": "Conmutador Térmico Del Ventila F18",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Todos los modelos equipados con aire acondicionado o Autoclima",
+   "ubicacion": "Roscado en el radiador del líquido refrigerante",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Conectar la 1ª y 2ª velocidad de los ventiladores del líquido refrigerante según la temperatura del motor."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Formado por dos interruptores normalmente abiertos. El 1er interruptor cierra a los 95 ºC alimentando con positivo (30) la 1ª velocidad; el 2º interruptor cierra a los 105 ºC enviando un positivo (30) hacia la UCE del aire acondicionado J293 para conectar la 2ª velocidad."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Sensor termostático roscado con conector de 3 vías de potencia."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Escalón térmico Temp. Cierre de contactos Resultado eléctrico 1er Escalón (Velocidad I) 95 ºC Alimenta directamente con +30 la 1ª velocidad de V7/V35 2º Escalón (Velocidad II) 105 ºC Envía +30 a UCE J293 para activar la 2ª velocidad"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fogueo o desgaste de los contactos bimetálicos internos."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El motor del vehículo se sobrecalienta en parado al no saltar los electroventiladores."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Puentear el terminal de alimentación (+30) con las salidas de 1ª y 2ª velocidad para verificar la activación de los electroventiladores."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.unidad-de-manejo-e-indicacion-pulsadores",
+   "nt": 190,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "unidad-de-manejo-e-indicacion-pulsadores",
+   "titulo": "Unidad De Manejo E Indicación (Pulsadores)",
+   "codigo": "E87",
+   "menu": "Unidad De Manejo E Indicación  E87",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Calefacción motorizada y Autoclima",
+   "ubicacion": "Consola central del salpicadero, formando un único conjunto compacto con el display y la radio",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Recoger las órdenes del usuario relativas a temperatura, turbina, recirculación y A/C para transmitirlas a la unidad de control J255."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Al presionar un pulsador, se transmite una señal mediante un bus de datos de 18 cables al radiocasete. El radiocasete la reenvía por un bus de datos de 1 cable hacia la unidad del autoclima o calefacción motorizada J255. La unidad E87 es alimentada por la radio."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Regleta frontal compacta de pulsadores integrada en el marco de la consola central."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Bus de comunicación Número de hilos Función Bus E87 a Radiocasete R 18 cables Envió de pulsaciones Bus Radiocasete R a J255 1 cable Enlace de datos serie"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fallo mecánico o cortocircuito en alguno de los pulsadores de la regleta."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Cuando un pulsador no funciona, la radio emite una señal de avería hacia J255. El autoclima pasa a modo automático fijo, toma 22 ºC solicitados y 20 ºC exterior, desconecta el compresor y abre la recirculación a aire fresco. La calefacción motorizada trabaja con los parámetros existentes en el momento de la avería."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Consultar el estado de pulsación (0 = No presionado, 1 = Presionado) en los grupos 003 y 004 del bloque de valores de medición."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.unidad-de-manejo-e-indicacion-display",
+   "nt": 191,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "unidad-de-manejo-e-indicacion-display",
+   "titulo": "Unidad De Manejo E Indicación (Display)",
+   "codigo": "E87",
+   "menu": "Unidad De Manejo E Indicación  E87",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Calefacción motorizada y Autoclima",
+   "ubicacion": "Consola central del salpicadero",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Informar sobre los parámetros de funcionamiento del autoclima o calefacción motorizada, del radiocasete y del ordenador de a bordo."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Los dígitos referentes al climatizador son excitados por la unidad del radiocasete mediante el bus de 18 cables, tras recibir previamente la información desde J255 por el bus de 1 cable. Su alimentación eléctrica procede también de la radio."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Pantalla LCD de grandes dimensiones. Existen dos variantes según se monte autoclima (indica ºC o letras) o calefacción motorizada (indica escala Cold/Hot)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tipo de equipo Formato de indicación de temperatura Autoclima Valor numérico en ºC (modo automático) o letras (modo manual) Calefacción Motorizada Barras gráficas entre COLD y HOT"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Pérdida de segmentos de cristal líquido; interrupción del bus de datos de 1 cable entre J255 y la radio."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si se produce una avería en la comunicación del bus de datos entre el radiocasete y J255, los datos referentes al climatizador dejan de ser visibles en el display."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Verificar la continuidad de la línea del bus de 1 cable. En caso de avería propia del display, debe sustituirse la unidad E87 completa."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.motor-de-la-trampilla-de-temperatura",
+   "nt": 192,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "motor-de-la-trampilla-de-temperatura",
+   "titulo": "Motor De La Trampilla De Temperatura",
+   "codigo": "V68",
+   "menu": "Motor De La Trampilla De Tempe V68",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Calefacción motorizada y Autoclima",
+   "ubicacion": "Parte inferior de la unidad climática",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Accionar mecánicamente la trampilla de mezcla de temperatura para regular el paso de aire a través del radiador de calefacción."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Motor eléctrico de corriente continua de giro limitado. La UCE J255 lo excita con positivo y negativo, alternando la polaridad de los bornes según el sentido de giro deseado hacia frío o calor. Monta en su interior el potenciómetro G92."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Módulo actuador provisto de motor eléctrico, tornillo sinfín y rueda de transmisión de movimiento."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Prueba en diagnosis Comportamiento del motor V68 Diagnosis de actuadores (Función 03) Se desplaza progresivamente desde la posición mínima a la máxima Ajuste básico (Función 04 Grupo 002) Desplaza la trampilla a ambos extremos memorizando voltajes"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Ruptura o desgaste de los dientes de la rueda de transmisión o sinfín; agarrotamiento de la trampilla."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "En caso de avería, la trampilla se queda en la posición existente y la UCE aminora la velocidad de la turbina para reducir la entrada brusca de aire."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Ejecutar la Función 03 (Diagnosis de actuadores) para verificar el movimiento de mínimo a máximo. Ejecutar el Ajuste Básico grupo."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Sección del motor V68 con sinfín, engranajes y potenciómetro interno G92 — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 22"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.motor-de-la-turbina-de-aire-y-regulador-de-regimen",
+   "nt": 193,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "motor-de-la-turbina-de-aire-y-regulador-de-regimen",
+   "titulo": "Motor De La Turbina De Aire Y Regulador De Régimen",
+   "codigo": "V2 (Motor de la turbina) / J126 (Regulador de régimen)",
+   "menu": "Motor De La Turbina De Aire Y  V2 (Motor de la turbina) / J126 (Regulador de régimen)",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Calefacción motorizada y Autoclima",
+   "ubicacion": "Alojados en la cavidad de entrada de la unidad climática",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Generar y ajustar de forma continua el caudal de aire impulsado al interior del habitáculo."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El regulador electrónico J126 recibe la tensión de mando de J255 y modula la tensión continua aplicada al motor V2 de la turbina."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Motor eléctrico de corriente continua alimentado a través de la etapa de potencia electrónica J126."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Diagnóstico de actuadores (Función 03) Respuesta de regulación Verificación de la turbina V2 Regulación progresiva de la velocidad desde 0 hasta la máxima, en pasos de 2,5 V cada 2 segundos"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Desgaste de escobillas del motor V2; fallo de transistores en el regulador J126."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "La avería es detectable al disminuir notablemente o cesar por completo la entrada de aire al habitáculo."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Consultar la tensión solicitada y real de V2 en el grupo 005 (campos 1 y 2) del bloque de valores de medición. Probar el barrido de tensión en el test de actuadores."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.motor-de-la-trampilla-de-recirculacion",
+   "nt": 194,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "motor-de-la-trampilla-de-recirculacion",
+   "titulo": "Motor De La Trampilla De Recirculación",
+   "codigo": "V113",
+   "menu": "Motor De La Trampilla De Recir V113",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Todos los sistemas de climatización de la gama",
+   "ubicacion": "Parte superior de la unidad climática, unido a la trampilla de recirculación",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Conmutar el paso entre la admisión de aire fresco del exterior y la recirculación del aire del habitáculo."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Motor de corriente continua de giro libre con un único sentido de rotación. Dispone de un cursor interno sobre una pista fija; el cursor se sitúa sobre la pista no excitada a la espera de la señal para activar de nuevo el motor."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Actuador electromecánico provisto de guía y palanca de giro conectadas al eje de la trampilla."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Estado en bloque de valores 001 (Campo 3) Posición de la trampilla 0 Aire exterior 1 Recirculación"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fallo de contacto en el cursor interno; desgaste de la palanca de giro o guía."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Imposibilidad de cambiar la posición de la trampilla de recirculación. Cada vez que se conecta el autoclima parpadean todos los dígitos del display."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Comprobar el desplazamiento alternativo entre aire exterior y recirculación en el diagnóstico de actuadores (Función 03)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del motor V113 con palanca de giro, guía y pista del cursor — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 23"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.motor-para-la-turbina-del-transmisor-g56",
+   "nt": 195,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "motor-para-la-turbina-del-transmisor-g56",
+   "titulo": "Motor Para La Turbina Del Transmisor G56",
+   "codigo": "V42",
+   "menu": "Motor Para La Turbina Del Tran V42",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema Autoclima",
+   "ubicacion": "Forma un único conjunto con el transmisor de temperatura interior G56, tras el salpicadero",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Generar un flujo de aire continuo que atraviese el transmisor G56 para poder registrar el valor de temperatura real del habitáculo."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Motor eléctrico con estator y rotor imantado. Monta en su interior una placa electrónica que gobierna el funcionamiento y detecta las posibles averías. Es alimentado con positivo y negativo por J255 mientras reciba la señal de encendido (15)."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Soplante de turbina micrométrica con placa de control integrada."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tensión de excitación Estado operativo 12 V CC (Borne 15) Funcionamiento continuo mientras el encendido esté conectado"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Bloqueo del rotor por acumulación de suciedad o pelusa."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Cuando se detecta una avería del motor V42, la unidad del autoclima aplica factores de corrección a la temperatura registrada por el transmisor G56 para simular un valor más o menos próximo al real."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Verificar si existe succión de aire en la rejilla del salpicadero con una tira fina de papel."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.acoplamiento-magnetico-del-compresor",
+   "nt": 196,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "acoplamiento-magnetico-del-compresor",
+   "titulo": "Acoplamiento Magnético Del Compresor",
+   "codigo": "N25",
+   "menu": "Acoplamiento Magnético Del Com N25",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Versiones con aire acondicionado manual y Autoclima",
+   "ubicacion": "Ubicado en el compresor de aire acondicionado",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Acoplar el eje del compresor para que gire solidario con la polea de arrastre y generar la presión en el circuito frigorífico."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Electroimán alimentado con positivo por la unidad de control del aire acondicionado J293. La fuerza de la bobina atrae el disco de embrague contra la polea en movimiento."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Bobina electromagnética de alta intensidad, polea de arrastre y disco de embrague de fricción."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tensión de excitación Estado de acoplamiento 12 V CC desde UCE J293 Conectado / Compresor girando solidario 0 V CC Desconectado / Polea girando loca"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Interrupción del arrollamiento de la bobina por temperatura; desgaste en la cara de fricción del embrague."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El compresor no gira y el aire que entra al habitáculo no se enfría."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Comprobar la presencia de 12 V en el conector de N25. Ejecutar la prueba de conexión y desconexión en el test de actuadores (Función 03)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Sección del acoplamiento magnético N25 con la bobina, embrague y polea — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 25"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.ventiladores-del-liquido-refrigerante",
+   "nt": 197,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "ventiladores-del-liquido-refrigerante",
+   "titulo": "Ventiladores Del Líquido Refrigerante",
+   "codigo": "V7 / V35",
+   "menu": "Ventiladores Del Líquido Refri V7 / V35",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Todos los modelos equipados con A/C o Autoclima",
+   "ubicacion": "Frontal del vehículo, en el radiador del líquido refrigerante",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Evacuar el calor cediéndolo al aire exterior a través del condensador y del radiador de refrigeración."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Motores eléctricos de corriente continua de dos velocidades. La 1ª velocidad se activa directamente por el conmutador térmico F18 (a 95 ºC) o por la UCE J293 al conectar el compresor. La 2ª velocidad se activa por F18 (a 105 ºC) o por J293 al superarse 16 bares de presión."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Dos electromotores independientes con material resistivo interno para la 1ª velocidad."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Velocidad del electroventilador Condiciones de activación 1ª Velocidad Señal de conexión del compresor o Temp. refrigerante a 95 ºC 2ª Velocidad Presión de gas > 16 bares o Temp. refrigerante a 105 ºC"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fogueo o interrupción del material resistivo de la 1ª velocidad; desgaste de escobillas."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Sobrecalentamiento del líquido refrigerante del motor o disparo de sobrepresión en el circuito frigorífico."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Puentear las salidas de F18 para verificar la activación de la 1ª y 2ª velocidad."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.unidad-del-equipo-de-mando-electronico",
+   "nt": 198,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "unidad-del-equipo-de-mando-electronico",
+   "titulo": "Unidad Del Equipo De Mando Electrónico",
+   "codigo": "J255",
+   "menu": "Unidad Del Equipo De Mando Ele J255",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Calefacción motorizada y Autoclima",
+   "ubicacion": "Ubicada detrás del mando giratorio de distribución de aire en la consola central",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Regular la temperatura del aire, gestionar los servomotores V68 y V113, controlar la turbina V2 y emitir la señal de conexión del compresor."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Módulo electrónico microprocesado. La unidad es la misma para autoclima y calefacción motorizada. Al conectar la UCE al mazo de cables, si el contacto 21 recibe masa mediante un puente de codificación, la UCE adopta el programa de Calefacción Motorizada; si no hay puente, adopta el programa de Autoclima."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Unidad electrónica con autodiagnóstico integral accesible por dirección."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Codificación en lectura (Función 01) Tipo de equipo / Programa activo 2 2 0 Autoclima (Regulación electrónica de temperatura y caudal) 1 1 0 Calefacción Motorizada (Accionamiento eléctrico sin regulación automática)"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Interrupción del puente de masa en el contacto 21 que modifica la codificación interna; fallo del microprocesador."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Inoperatividad del sistema o parpadeo continuo de todos los dígitos de la pantalla al conectar el encendido."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Consultar el código de equipo mediante la Función 01 en el equipo de diagnosis. Consultar la memoria de averías mediante la Función."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Módulo de la unidad J255 con la asignación de pines y conector de diagnosis — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 11"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.unidad-de-control-del-aire-acondicionado",
+   "nt": 199,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "unidad-de-control-del-aire-acondicionado",
+   "titulo": "Unidad De Control Del Aire Acondicionado",
+   "codigo": "J293",
+   "menu": "Unidad De Control Del Aire Aco J293",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Vehículos con aire acondicionado manual y Autoclima",
+   "ubicacion": "Alojada en el vano motor",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Gobernar la alimentación del acoplamiento magnético N25 y activar las dos velocidades de los ventiladores del líquido refrigerante."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Módulo electrónico relé de potencia. Conecta el acoplamiento N25 al recibir la señal de solicitud de J255 (pasando por F38 y F129/G65), siempre que no exista señal de corte por negativo enviada por la UCE del motor."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Módulo estanco provisto de fusibles aéreos de protección S164 y S180."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Condición de entrada Salida en J293 Señal J255 activa + F38 cerrado + F129/G65 OK + Sin negativo de UCE motor Activa acoplamiento N25 y 1ª velocidad de ventiladores V7/V35 Señal de negativo desde UCE motor Desconecta inmediatamente el acoplamiento N25"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fogueo de los contactos de potencia internos; fundición de los fusibles S164 o S180."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El compresor no se acopla o los electroventiladores no se activan al solicitar frío."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Comprobar las alimentaciones de potencia en las patillas de J293 y verificar la presencia de 12 V en la salida hacia N25."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.radiocasete",
+   "nt": 200,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "radiocasete",
+   "titulo": "Radiocasete",
+   "codigo": "R",
+   "menu": "Radiocasete R",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Vehículos con Calefacción Motorizada o Autoclima",
+   "ubicacion": "Consola central del salpicadero",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Servir de pasarela de comunicación multiplexada entre la unidad E87 y la UCE J255, y controlar la iluminación del display."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Recibe las órdenes enviadas por E87 a través del bus de datos de 18 cables, las convierte y las reenvía a J255 mediante un bus de datos de 1 cable. Recibe de J255 los mensajes de indicación y los emite en el display."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Unidad central de audio e interfaz electrónica de comunicación multiplexada."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Línea de bus de datos Tipo de interconexión Bus de 18 cables Enlace entre pulsadores E87 y el radiocasete R Bus de 1 cable Enlace serie bidireccional entre radiocasete R y la UCE J255"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Interrupción de la línea del bus de 1 cable; fallo interno de la pasarela de datos de la radio."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Los datos referentes al autoclima o calefacción motorizada dejan de ser visibles en el display."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Comprobar la continuidad del conductor del bus de 1 cable entre la radio y la UCE J255."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.autodiagnosis-y-funciones-de-control-de-climatizacion",
+   "nt": 201,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "autodiagnosis-y-funciones-de-control-de-climatizacion",
+   "titulo": "Autodiagnosis Y Funciones De Control De Climatización",
+   "codigo": "",
+   "menu": "Autodiagnosis Y Funciones De Control D",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Establecer el procedimiento de autodiagnosis, lectura y borrado de averías, ajuste básico y análisis del bloque de valores de medición en las UCEs J255. Se aplica a la localización de averías en calefacción motorizada y autoclima."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "La UCE J255 supervisa el estado de sensores y actuadores. Memoriza averías esporádicas (se eliminan tras 40 puestas en marcha sin repetirse) y permanentes (requieren reparación física y borrado manual)."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Tensión de batería correcta. Encendido conectado (\"borne 15 ON\")."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Equipo de diagnosis homologado con cable de conexión al puerto T16 de 16 polos."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Ingresar en la diagnosis por el Código de dirección \"08 - Aire acondicionado\" . Función 01 (Versión de la unidad de control): Comprobar la clave de recambios y el tipo de equipo (220 = Autoclima, 110 = Calefacción Motorizada). Función 02 (Consultar memoria de averías): Leer los códigos DTC de sensores y actuadores. Función 03 (Diagnóstico de elementos actuadores): Excitar cíclicamente el acoplamiento N25, la turbina V2 (variación de 0 a 12 V en pasos de 2,5 V cada 2 s), el motor V68 (de mínimo a máximo) y V113 (de aire exterior a recirculación). Función 04 (Ajuste básico): Introducir el Grupo 002 para que la UCE reconozca y memorice las posiciones límite del motor V68. Realizar siempre al sustituir V68 o la UCE J255. Función 08 (Bloque de valores de medición): Analizar los parámetros de trabajo en tiempo real en los grupos 001 al. Subsanar las averías, ejecutar la Función 05 (Borrar memoria de averías) y salir con Función 06 (Finalizar emisión) ."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Función / Grupo Parámetro leído / Valor teóricamente correcto Función 04 — Grupo 002 Muestra posición real, calculada y topes superior e inferior de V68 en Voltios Función 08 — Grupo 001 Campo 1 (Compresor: 0=OFF, 1=ON); Campo 2 (Presostato F129: 1=OK); Campo 3 (V113: 0=Ext, 1=Rec) Función 08 — Grupo 005 Campo 1 (Voltios solicitados V2); Campo 2 (Voltios reales V2); Campo 4 (Mando distribución: 0-100%)"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Omitir el Ajuste Básico (Función 04 Grupo 002) al sustituir el motor V68 o la UCE J255: genera desacoples en la regulación de mezcla de aire y parpadeo continuo en el display."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Confirmar la ausencia de códigos en la memoria de averías (Función 02) y comprobar que el display no parpadee al conectar el encendido."
     }
    ]
   }
