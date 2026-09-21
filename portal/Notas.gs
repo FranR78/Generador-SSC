@@ -47,11 +47,12 @@ function listarNotas() {
     generado: d.generado,
     total: d.total,
     grupos: d.grupos,
+    unidades: d.unidades || [],   // las portadas de Cursos salen de aquí
     notas: d.notas.map(function (n) {
       return {
         nt: n.nt, titulo: n.titulo, menu: n.menu, grupo: n.grupo,
         codigo: n.codigo, tipo: n.tipo, subtipo: n.subtipo,
-        fuentes: n.fuentes, leida: !!leidas[n.nt]
+        unidad: n.unidad || '', fuentes: n.fuentes, leida: !!leidas[n.nt]
       };
     })
   };
