@@ -37,10 +37,10 @@ jobs:
           # Los Script ID no son secretos: sin CLASPRC_JSON no abren nada.
           # Se sacan de: editor → Configuración del proyecto → ID de secuencia.
           - proyecto: portal
-            script_id: "PON_AQUI_EL_SCRIPT_ID_DEL_PORTAL"
+            script_id: "1j4Ow4avtTdMy3qEGNQuX76IF6hdVXpmL3vB2UaprQQ0tyhNTOrbjjaZc "
             secreto_deploy: DEPLOYMENT_ID_PORTAL
           - proyecto: datos
-            script_id: "PON_AQUI_EL_SCRIPT_ID_DE_DATOS"
+            script_id: "18vucVkCiXZk5SEiLX1vIf15IYO9N_CZBUbmhLtdXIhJ6xet91WLKhGR_"
             secreto_deploy: DEPLOYMENT_ID_DATOS
 
     steps:
