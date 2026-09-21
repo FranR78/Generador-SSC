@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">450 notas · 21/09/2026</p>
+  <p class="sidebar-meta">452 notas · 21/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -579,6 +579,8 @@
     <li><a href="#nt463">NT463 · Sensor De Ocupación Del Asient G128</a></li>
     <li><a href="#nt464">NT464 · Testigo De Desactivación Del A K145</a></li>
     <li><a href="#nt465">NT465 · Conmutador Del Cinturón De Seg E25</a></li>
+    <li><a href="#nt466">NT466 · Estructura E Integración De La Platafo</a></li>
+    <li><a href="#nt467">NT467 · Unidad De Control De Electróni J794</a></li>
   </ul>
 </nav>
 
@@ -32070,8 +32072,109 @@ En el compresor Denso 6SEU12 de regulación externa (sin embrague), la UCE contr
     </div>
   </section>
 
+  <section id="nt466" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 466 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Estructura E Integración De La Plataforma Radio Media Center (Rmc)</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Explicar la arquitectura e integración de funciones de infotenamiento dentro de la plataforma Radio Media Center (RMC) y el sistema MMI Radio plus.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>A diferencia de los sistemas MMI de tercera generación que utilizan un módulo de radio independiente, la plataforma RMC unifica casi todas las funciones de hardware de infotenamiento y el sintonizador de radio en una única unidad central (J794), simplificando el cableado y la estructura de red del vehículo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>La plataforma Radio Media Center (RMC) agrupa en una única carcasa equivalente a un dispositivo de tamaño 1-DIN la mayoría de las funciones de infotenamiento.  </li>
+<li>Actúa como controlador central del sistema de infotenamiento.  </li>
+<li>Elimina el módulo de control de radio separado, integrando sus funciones directamente en la unidad de control de electrónica de información 1 J794.  </li>
+<li>En vehículos con equipamiento MMI Radio plus, la unidad J794 incorpora además un amplificador de audio adicional.  </li>
+<li>Agrupa y gestiona de forma centralizada las siguientes funciones y componentes:  </li>
+<li>Reproductor de CD (R89).  </li>
+<li>Unidad de control para la pantalla de información frontal (J523).  </li>
+<li>Módulo de control de entrada por voz (J507).  </li>
+<li>Conexión para fuentes de audio externas Audi Music Interface / AMI (R199).  </li>
+<li>Lector de tarjetas SD.  </li>
+<li>Transceptor de teléfono (R36).  </li>
+<li>Interfaz con la unidad de control del sistema de sonido digital (J525).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th>Parámetro / Dimensión</th>
+<th>Valor de referencia</th>
+<th>Condiciones de validez</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tamaño del alojamiento del módulo RMC</strong></td>
+<td><strong>1-DIN</strong></td>
+<td>Estándar de montaje en salpicadero</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Buscar un módulo de control de radio independiente durante las tareas de diagnosis o sustitución: en la plataforma RMC la radio está integrada dentro de la propia unidad J794.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT466_01</code> Módulos de control y funciones agrupadas en la unidad J794 del Radio Media Center — Fuente: SSP 484 A7 Info y Clima (arrastrado).pdf, pág. 31</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt467" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 467 </div>
+    <div class="nota-body">
+      <h1>Unidad De Control De Electrónica De Información 1 J794 — <strong>J794</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">S</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">f</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">M</span><span class="badge-aplicacion">M</span><span class="badge-aplicacion">I</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">R</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">f</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">R</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">M</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">C</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">(</span><span class="badge-aplicacion">R</span><span class="badge-aplicacion">M</span><span class="badge-aplicacion">C</span><span class="badge-aplicacion">)</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Salpicadero / consola central (alojamiento de formato 1-DIN)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Actuar como la unidad de control central del sistema de infotenamiento, gestionando las funciones de radio, reproducción de audio, control de pantalla e interfaces de comunicación.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Unidad electrónica centralizada que procesa las señales de las distintas fuentes de audio y multimedia. Integra el sintonizador de radio y, en versiones MMI Radio plus, un amplificador de audio adicional, coordinando el flujo de datos hacia la pantalla frontal, el sistema de sonido y los periféricos de comunicación.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Carcasa metálica compacta de tamaño 1-DIN. Dispone en su frontal de ranura para reproductor de CD (R89) y lecturas para tarjetas SD. Agrupa las funciones de J523, J507, R199, R36 y la conexión con J525.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Fallo general o parcial de la radio, pérdida de reproducción de audio/CD/SD, inoperatividad de la pantalla de información frontal o interrupción del diálogo por voz y telefonía.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Efectuar la diagnosis electrónica conectando el equipo VAS Scan Tool y accediendo a través de la dirección de diagnóstico <strong>5F - Electrónica de información 1</strong>.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    450 notas técnicas · generado el 21/09/2026.
+    452 notas técnicas · generado el 21/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
