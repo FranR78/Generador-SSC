@@ -15,6 +15,8 @@ import io
 import re
 import sys
 import unicodedata
+
+import yaml
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -93,6 +95,50 @@ COBERTURA = re.compile(r"^\s*COBERTURA\s*:\s*(.+?)\s*$", re.M | re.I)
 
 SUBTIPOS = {"fundamento": "fundamento", "procedimiento": "procedimiento",
             "diagnostico": "diagnostico"}
+
+
+_IDS_VISTOS = None
+
+def _ids_existentes():
+    """Los ids ya escritos en notas/, para no repetirlos al crear nuevos."""
+    global _IDS_VISTOS
+    if _IDS_VISTOS is not None:
+        return _IDS_VISTOS
+    _IDS_VISTOS = set()
+    carpeta = RAIZ / "notas"
+    if carpeta.exists():
+        for ruta in carpeta.glob("*.md"):
+            m = re.search(r"^id:\s*(\S+)", ruta.read_text(encoding="utf-8"), re.M)
+            if m:
+                _IDS_VISTOS.add(m.group(1))
+    return _IDS_VISTOS
+
+
+def id_unico(base):
+    """base si está libre; si no, base-2, base-3… Reserva el que devuelve."""
+    vistos = _ids_existentes()
+    ident = base
+    n = 2
+    while ident in vistos:
+        ident = f"{base}-{n}"
+        n += 1
+    vistos.add(ident)
+    return ident
+
+
+def yval(valor):
+    """Un valor de front-matter, escapado para que nunca rompa el YAML.
+
+    Los textos de los manuales traen comillas dentro (un «cuerpo lobular»,
+    2\" de rosca…). Escribirlos entre comillas a mano rompía el bloque de
+    metadatos y construir.py rechazaba la nota entera. yaml.safe_dump escapa
+    lo que haga falta.
+    """
+    # json.dumps da una cadena entrecomillada con todo escapado, y YAML la
+    # acepta tal cual (YAML es superconjunto de JSON). Evita el marcador "..."
+    # que mete yaml.safe_dump y las comillas sin escapar del texto original.
+    import json
+    return json.dumps(str(valor), ensure_ascii=False)
 
 
 def slug(texto):
@@ -213,18 +259,18 @@ def procesar_nota(titulo_bruto, cuerpo, numero):
 
     apartados, imagenes = extraer_imagenes(apartados)
 
-    ident = "ssc.sin-clasificar." + slug(titulo)
+    ident = id_unico("ssc.sin-clasificar." + slug(titulo))
     lineas = ["---", f"id: {ident}", "modulo: ssc", "unidad: sin-clasificar",
               f"nt: {numero}"]
     if subtipo:
         lineas += ["tipo: proceso", f"subtipo: {subtipo}"]
-    lineas += [f'titulo: "{titulo}"']
+    lineas += [f'titulo: {yval(titulo)}']
     for clave in ("codigo", "ubicacion", "aplicacion"):
         if metadatos.get(clave):
-            lineas.append(f'{clave}: "{metadatos[clave]}"')
+            lineas.append(f'{clave}: {yval(metadatos[clave])}')
     menu = f"{titulo[:30]} {metadatos['codigo']}" if metadatos.get("codigo") else titulo[:38]
     lineas += [
-        f'menu: "{menu}"',
+        f'menu: {yval(menu)}',
         "grupo: POR CLASIFICAR",
         "fuentes: POR COMPLETAR",
         "---",
