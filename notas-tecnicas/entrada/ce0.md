@@ -1,0 +1,34 @@
+La fuente **"ce0.pdf"** corresponde al **"Cuaderno de ejercicios - Modalidad 0"** (Edición 04/1999 de SEAT). Se trata de un cuaderno práctico de evaluación y formación para técnicos de taller sobre el sistema de **Climatización en el SEAT Ibiza/Córdoba '99**.
+
+El cuaderno está dividido en dos bloques principales: **Prácticas de Diagnóstico** y **Cuestionario de Evaluación**.
+
+---
+
+### 1. Casos Prácticos de Taller (Prácticas 1 a 5)
+Incluye cinco supuestos prácticos de localización de averías reales en taller utilizando el lector de diagnosis:
+
+* **Práctica N° 1:** Diagnóstico en un Ibiza '99 donde los dígitos de la pantalla **AC parpadean continuamente** y el sistema no enfría. Exige determinar las causas, diagnosticar con el equipo V.A.G y justificar la reparación.
+* **Práctica N° 2:** Análisis en un Córdoba '99 con **calefacción motorizada inoperativa**. Identificación de los 5 componentes susceptibles de causar el fallo, procedimiento con el lector de averías y operaciones de montaje/desmontaje según el manual.
+* **Práctica N° 3:** Avería en la que el **autoclima no se conecta y la pantalla permanece totalmente apagada/en blanco**. Definición del proceso de comprobación eléctrica y sustitución de componentes.
+* **Práctica N° 4:** Incidencia por **imposibilidad de calentar el aire de entrada al habitáculo**. Evaluación de componentes implicados (motor o cable de la trampilla de temperatura, UCE del autoclima, radiocasete, sonda exterior, etc.).
+* **Práctica N° 5:** Avería en un Córdoba Vario '99 con autoclima donde el aire **nunca sale por la zona de los pies**. Diagnóstico guiado con el lector de averías evaluando la memoria de averías (función **02**) y la lectura de bloques de medición (función **08**, grupos 001 al 006).
+
+---
+
+### 2. Cuestiones de Evaluación Teórico-Práctica (Preguntas 1 a 10)
+Contiene diez cuestiones clave sobre la arquitectura y funcionamiento del sistema:
+
+1. **Circuito de alta y baja presión:** Clasificación de los componentes del circuito frigorífico según su ubicación en el tramo de alta o baja presión.
+2. **Funciones de la UCE del Autoclima:** Verificación de las tareas asumidas por la unidad (control de la trampilla de temperatura, velocidad de la turbina, compresor de A/C, ventiladores de refrigerante y comunicación con el display).
+3. **Equipamiento según motorización:** Identificación de los componentes que **no se montan** en modelos con autoclima y motor de gasolina.
+4. **Interpretación de diagnosis V.A.G:** Lectura e identificación de la pantalla de versión de la unidad de control (p. ej. referencia `6K0959291`, versión `6K-AUTOCLIMA-110` y código WSC).
+5. **Modo Desempañado (Salida Parabrisas):** Comportamiento de los actuadores al seleccionar aire al parabrisas (conexión del compresor, incremento de la turbina al máximo y posición de entrada de aire exterior en la recirculación).
+6. **Uso de la señal del sensor G17:** Determinación de qué unidades de control utilizan la lectura de la sonda de temperatura exterior **G17**.
+7. **Regulación Automática de Temperatura:** Identificación de los actuadores regulados automáticamente para mantener la temperatura de confort.
+8. **Variantes de Climatización:** Repaso de las cuatro configuraciones disponibles en la gama Ibiza/Córdoba '99 (ventilación/calefacción manual, A/C manual, calefacción motorizada y autoclima).
+9. **Fallo de Bus entre Autoclima y Radiocasete:** Síntomas provocados por la pérdida de comunicación entre la UCE del autoclima y la unidad del radiocasete (fallos de pantalla, falta de respuesta de pulsadores).
+10. **Gobierno de los Electroventiladores:** Identificación de las sondas, conmutadores y unidades que intervienen en la activación del sistema de refrigeración del motor.
+
+---
+
+💡 ¿Te gustaría resolver alguna de las prácticas o preguntas de evaluación del cuaderno comparando las respuestas con la teoría del Cuaderno Didáctico 72 (`cd.pdf`)?
