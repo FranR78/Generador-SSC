@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">851 notas · 22/09/2026</p>
+  <p class="sidebar-meta">858 notas · 22/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -548,6 +548,13 @@
     <li><a href="#nt856">NT856 · Diagnóstico De Distribución De Aire Y</a></li>
     <li><a href="#nt857">NT857 · Unidad De Control Del Autoclim 6K0959291 (versión software 6K-AUTOCLIMA-110, X01, WSC 00000)</a></li>
     <li><a href="#nt858">NT858 · Arquitectura, Estrategias De Control Y</a></li>
+    <li><a href="#nt867">NT867 · Diagnóstico De Compresor De Aire Acond</a></li>
+    <li><a href="#nt868">NT868 · Diagnóstico De Calefacción Motorizada</a></li>
+    <li><a href="#nt869">NT869 · Diagnóstico De Temperatura De Entrada</a></li>
+    <li><a href="#nt870">NT870 · Diagnóstico De Autoclima Inoperativo</a></li>
+    <li><a href="#nt871">NT871 · Diagnóstico De Autoclima Con Parpadeo</a></li>
+    <li><a href="#nt872">NT872 · Arquitectura, Funciones Y Componentes</a></li>
+    <li><a href="#nt873">NT873 · Lectura De Identificación De La Unidad</a></li>
   </ul>
 </nav>
 
@@ -52519,8 +52526,622 @@ Debido a diferencias en la estructura trasera de la carrocería, en la mayoría 
     </div>
   </section>
 
+  <section id="nt867" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 867 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico De Compresor De Aire Acondicionado Que No Se Activa</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Explica la metodología de localización de averías y comprobación visual cuando el compresor de aire acondicionado no se activa en el vehículo. Aplica al diagnóstico del sistema frigorífico y eléctrico en SEAT Ibiza/Córdoba '99.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>La activación del compresor requiere la integridad eléctrica de la bobina del acoplamiento magnético (N25), la presencia de presión adecuada de refrigerante en el circuito (validada por F129/G65), la autorización térmica (F38) y la gestión de potencia por la unidad J293 y la UCE del motor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Encendido del vehículo conectado (borne 15) y selección de aire acondicionado en la consola central.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Lector de averías / equipo de diagnosis, polímetro y esquemas eléctricos.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Componentes principales que pueden provocar que el compresor no se active:</strong>
+  1. Acoplamiento magnético del compresor N25 (bobina cortada o entrehierro excesivo).
+  2. Conmutador de presión F129 / Transmisor de presión electrónico G65 (falta de carga de gas o presostato defectuoso).
+  3. Interruptor térmico F38 (abierto por temperatura exterior &lt; 5 ºC o averiado).
+  4. Unidad de control del aire acondicionado J293 o fusibles de alimentación del sistema.</li>
+<li><strong>Pasos para la localización de averías:</strong>
+  1. Comprobación visual inicial: verificar la correa de accesorios Poly-V, el conector eléctrico del compresor N25, el estado de los fusibles y posibles fugas de refrigerante.
+  2. Interrogar la memoria de averías con el equipo de diagnosis (dirección 08 - Climatización y UCE del motor).
+  3. Verificar la presencia de alimentación de +12 V en la bobina del acoplamiento N25 al pulsar la tecla AC.
+  4. Si no llega tensión, comprobar la continuidad de los contactos en el conmutador F129/G65 y en el interruptor térmico F38.
+  5. Comprobar las masas y tensiones de alimentación en la unidad de control J293.
+  6. Sustituir el componente defectuoso y verificar el acoplamiento mecánico del compresor.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th style="text-align: left;">Componente / Parámetro</th>
+<th style="text-align: left;">Valor y Condición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tensión en bobina N25 al activar AC</td>
+<td style="text-align: left;">12 V (con motor en marcha tras 10 s y temp. &gt; 5 ºC)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Estado del interruptor F38</td>
+<td style="text-align: left;">Cerrado a temp. &gt; 5 ºC; Abierto a temp. &lt; 5 ºC</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Reemplazar el compresor sin verificar si la causa es la falta de gas (F129/G65 abierto) o la temperatura ambiente inferior a 5 ºC (F38 abierto).</li>
+<li>Intentar medir la activación del compresor durante los primeros 10 segundos tras arrancar el motor; la UCE de motor inhibe el compresor temporalmente.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Verificar el acoplamiento del plato frontal sobre la polea del compresor y el descenso de temperatura en los difusores al conectar la tecla AC.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT867_01</code> Mando central de climatización con pulsador AC — Fuente: ce2.pdf, pág. 1</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt868" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 868 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico De Calefacción Motorizada Inoperativa Con Display Apagado</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Establece el procedimiento de comprobación visual, verificación eléctrica y localización de averías cuando la calefacción motorizada no se conecta y la pantalla del display permanece totalmente apagada. Aplica a los sistemas de climatización de SEAT Ibiza/Córdoba '99.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>La pantalla del display y la botonera E87 son alimentadas y gestionadas eléctricamente a través del radiocasete R. La falta de alimentación general (+30, +15, masa) o la avería en el radiocasete/fusibles provoca el apagado total del display y la inoperatividad del sistema.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Tensión de batería suficiente (12 V) y encendido conectado.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Polímetro, esquemas eléctricos del vehículo y equipo de diagnosis.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Comprobación visual inicial:</strong></li>
+<li>Inspeccionar el estado de los fusibles de alimentación de la calefacción motorizada, cuadro e iluminación.</li>
+<li>Verificar la correcta inserción de los conectores traseros del radiocasete R y de la consola central E87.</li>
+<li><strong>Componentes que pueden provocar la avería:</strong></li>
+<li>Fusibles de alimentación (+30 / +15) fundidos.</li>
+<li>Unidad del radiocasete R (fallo interno en la alimentación de la pantalla).</li>
+<li>Mazo de cables de interconexión o fallo de masa en la línea.</li>
+<li>Unidad de control J255 / consola de mandos E87.</li>
+<li><strong>Tabla de verificaciones eléctricas:</strong>
+  1. Comprobar tensión de +12 V en borne 30 (positivo directo) y borne 15 (positivo tras contacto).
+  2. Comprobar continuidad a masa en borne 31 del radiocasete R y UCE J255.
+  3. Verificar la continuidad del bus de datos de interconexión.
+  4. Si las alimentaciones son correctas y el display continúa apagado, sustituir la unidad del radiocasete o la botonera E87.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th style="text-align: left;">Punto de Verificación</th>
+<th style="text-align: left;">Valor Esperado y Condición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tensión en línea +30</td>
+<td style="text-align: left;">12 V (constante directo de batería)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tensión en línea +15</td>
+<td style="text-align: left;">12 V (con contacto encendido)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Resistencia en línea 31 (Masa)</td>
+<td style="text-align: left;">0 Ω respecto a chasis</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Sustituir la centralita de clima J255 pensando que está averiada cuando el fallo real proviene del fusible del radiocasete R (encargado de alimentar y gestionar el display).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Verificar el encendido de los dígitos en el display al conectar el contacto y la respuesta de la calefacción motorizada al accionar los pulsadores.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt869" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 869 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico De Temperatura De Entrada Al Habitáculo Siempre Caliente</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Describe los pasos ordenados de diagnosis para localizar la causa por la cual la temperatura del aire introducido en el habitáculo se mantiene siempre caliente sin responder a los mandos. Aplica a sistemas con regulación electrónica de mezcla (Calefacción Motorizada y Autoclima).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El ajuste de la temperatura depende del posicionamiento del motor de la trampilla de mezcla V68 y de la lectura del potenciómetro G92 y sondas térmicas. Si el motor V68 queda trabado en la posición de calor o la UCE recibe lecturas erróneas, el aire atraviesa continuamente el radiador de calefacción.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Motor del vehículo a temperatura de trabajo y contacto encendido.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Lector de averías / equipo de diagnosis (VAG 1551 o equivalente) y herramienta manual para desmontaje de guarnecidos.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Componentes implicados que pueden provocar la avería:</strong></li>
+<li>Motor de la trampilla de temperatura V68 (engranaje roto, motor quemado o atascado).</li>
+<li>Potenciómetro de posición de la trampilla de temperatura G92 (integrado en V68).</li>
+<li>Articulación o palanca mecánica de la trampilla de mezcla.</li>
+<li>Sondas de temperatura (G17 exterior, G56 habitáculo, G191/G192 aire de entrada).</li>
+<li>Unidad de control de climatización J255 / Radiocasete R.</li>
+<li><strong>Pasos ordenados para la localización de la avería:</strong>
+  1. Conectar el lector de averías a la toma T16 e interrogar la memoria con la función "02".
+  2. Ejecutar el diagnóstico de actuadores (función "03") seleccionando el motor V68 para comprobar si conmuta físicamente de frío a calor.
+  3. Consultar en el bloque de valores de medición (función "08", Grupo 002) la tensión real y calculada del potenciómetro G92.
+  4. Si los valores de G92 no varían o la trampilla no mueve, acceder físicamente al motor V68 en la caja climática y verificar si la varilla mecánica está trabada.
+  5. Desmontar y sustituir el motor V68/G92 si presenta fallo interno.
+  6. Realizar obligatoriamente el <strong>Ajuste Básico (función "04", Grupo 002)</strong> para memorizar los topes de V68.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th style="text-align: left;">Función de Diagnosis</th>
+<th style="text-align: left;">Grupo / Campo</th>
+<th style="text-align: left;">Valor de Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Función "08" (Bloques)</td>
+<td style="text-align: left;">Grupo 002 / Campo 1 y 2</td>
+<td style="text-align: left;">Tensión real y calculada de G92 en V (0,76 V a 4,21 V)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Función "04" (Ajuste Básico)</td>
+<td style="text-align: left;">Grupo 002</td>
+<td style="text-align: left;">Aprendizaje de topes mínimo y máximo del motor V68</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Omitir el Ajuste Básico (función 04) tras cambiar el motor V68; provoca que la UCE no reconozca los topes y la temperatura siga funcionando de forma errática.</li>
+<li>Confundir un fallo mecánico de la varilla atascada con un fallo de la centralita electrónica.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobar en la función "08" que la tensión de G92 varía de forma fluida y verificar físicamente que al seleccionar la temperatura mínima sale aire fresco por los difusores.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt870" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 870 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico De Autoclima Inoperativo</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Explica la redacción del proceso de localización de averías ante un fallo total de funcionamiento del sistema Autoclima. Aplica a los modelos SEAT Ibiza '99 y Córdoba '99.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El funcionamiento global del Autoclima requiere la presencia de alimentación eléctrica, integridad del bus de datos serie entre el radiocasete R y la UCE J255, y ausencia de averías críticas que bloqueen la unidad de control.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Tensión de batería de 12 V y encendido conectado (borne 15).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Lector de averías, polímetro y esquemas de cableado del vehículo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Cuatro componentes principales que pueden provocar el fallo total:</strong>
+  1. Unidad de control del autoclima J255.
+  2. Unidad del radiocasete R (pasarela de datos e interfaz).
+  3. Fusibles de alimentación de la instalación de climatización y del radiocasete.
+  4. Mazo de cables del bus de datos o fallo en la línea de masa (borne 31).</li>
+<li><strong>Proceso de localización de averías:</strong>
+  1. Verificar los fusibles de la caja central del vehículo asociados al climatizador y la radio.
+  2. Conectar el equipo de diagnosis al conector T16 e intentar comunicar con la dirección 08 (Aire acondicionado).
+  3. Si hay comunicación, consultar la memoria de averías (función 02) para identificar el código de fallo.
+  4. Si no hay comunicación, comprobar con el polímetro las alimentaciones (+30 y +15) y la masa en la UCE J255 y en el radiocasete R.
+  5. Verificar la continuidad del cable del bus serie entre el radiocasete y la UCE J255.
+  6. Reparar el corte eléctrico o sustituir el elemento averiado, borrar códigos y verificar el sistema.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th style="text-align: left;">Punto de Comprobación</th>
+<th style="text-align: left;">Valor Numérico</th>
+<th style="text-align: left;">Condición de Validez</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Alimentaciones +30 y +15</td>
+<td style="text-align: left;">12 V</td>
+<td style="text-align: left;">Medido en conectores de UCE J255 y Radiocasete R</td>
+</tr>
+<tr>
+<td style="text-align: left;">Continuidad del Bus Serie</td>
+<td style="text-align: left;">0 Ω</td>
+<td style="text-align: left;">Entre conector del Radiocasete R y UCE J255</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Atribuir la falta de funcionamiento a la falta de gas refrigerante; si no hay gas el compresor no acopla, pero la electrónica y la turbina del Autoclima deben encender y funcionar.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Verificar que la UCE responde al equipo de diagnosis, enciende el display y ejecuta la regulación del caudal y de la temperatura.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt871" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 871 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico De Autoclima Con Parpadeo De Dígitos Y Análisis De Bloques De Medición</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Detalla el procedimiento de diagnosis cuando el cliente indica que el Autoclima no enfría y los dígitos AC parpadean constantemente, analizando los grupos de la función "08" (bloques de valores de medición). Aplica a SEAT Ibiza/Córdoba '99.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El parpadeo de los dígitos AC al encender indica que la UCE ha detectado un código de avería en sus sensores o actuadores. La función "08" del lector muestra en tiempo real los valores procesados por la UCE en los grupos 001 al 006, permitiendo identificar la señal anómala.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Contacto del vehículo encendido (+15) y equipo de diagnosis VAG 1551 conectado al puerto T16.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Lector de averías / equipo de diagnosis y manual de valores de referencia.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Componentes del Autoclima que pueden causar la avería (sin utilizar el lector):</strong></li>
+<li>Transmisor de temperatura exterior G17.</li>
+<li>Sonda de temperatura del habitáculo G56 / turbina V42.</li>
+<li>Transmisores de temperatura de entrada G191 / G192.</li>
+<li>Motor de la trampilla de temperatura V68 / potenciómetro G92.</li>
+<li>Conmutador de presión F129 / Transmisor G65.</li>
+<li><strong>Consulta de la función "08" (Bloques de valores de medición):</strong></li>
+<li><em>Grupo:</em> Campo 1 (Salida compresor 0/1), Campo 2 (Estado F129 0/1), Campo 3 (Estado V113 0/1), Campo 4 (Velocidad km/h).</li>
+<li><em>Grupo:</em> Campo 1 (V68 real V), Campo 2 (V68 calculada V), Campo 3 (Tope sup. V), Campo 4 (Tope inf. V).</li>
+<li><em>Grupo:</em> Estado de pulsadores de turbina, AC y AUTO (0/1).</li>
+<li><em>Grupo:</em> Estado de pulsadores de recirculación, temp. y posición de distribución (0-100%).</li>
+<li><em>Grupo:</em> Campo 1 (Tensión solicitada V2 V), Campo 2 (Tensión real V2 V), Campo 3 (Tensión alimentación V).</li>
+<li><em>Grupo:</em> Campo 1 (Temp. ext. G17 ºC), Campo 2 (Temp. G191 ºC), Campo 3 (Temp. G192 ºC), Campo 4 (Temp. G56 ºC).</li>
+<li><strong>Pasos si la avería no es detectada en los bloques:</strong>
+  1. Interrogar la memoria de averías (función 02) por si existe un fallo grabado intermitente (/SP).
+  2. Ejecutar el diagnóstico de actuadores (función 03) para forzar la marcha del acoplamiento N25 y la turbina V2.
+  3. Realizar la comprobación de la presión de gas en el circuito frigorífico con el puente de manómetros.
+  4. Borrar la memoria de averías (función 05) tras reparar el componente dañado.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th style="text-align: left;">N.º de Grupo</th>
+<th style="text-align: left;">Campo 1</th>
+<th style="text-align: left;">Campo 2</th>
+<th style="text-align: left;">Campo 3</th>
+<th style="text-align: left;">Campo 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>001</strong></td>
+<td style="text-align: left;">Estado compresor (0/1)</td>
+<td style="text-align: left;">Estado F129 (0 fuera/1 rango)</td>
+<td style="text-align: left;">Estado V113 (0 ext/1 recir)</td>
+<td style="text-align: left;">Velocidad vehículo (km/h)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>002</strong></td>
+<td style="text-align: left;">V68 posición real (V)</td>
+<td style="text-align: left;">V68 posición calculada (V)</td>
+<td style="text-align: left;">V68 tope superior (V)</td>
+<td style="text-align: left;">V68 tope inferior (V)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>003</strong></td>
+<td style="text-align: left;">Pulsador + turbina (0/1)</td>
+<td style="text-align: left;">Pulsador - turbina (0/1)</td>
+<td style="text-align: left;">Pulsador AC (0/1)</td>
+<td style="text-align: left;">Pulsador AUTO (0/1)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>004</strong></td>
+<td style="text-align: left;">Pulsador recirculación (0/1)</td>
+<td style="text-align: left;">Pulsador - temp. (0/1)</td>
+<td style="text-align: left;">Pulsador + temp. (0/1)</td>
+<td style="text-align: left;">Posición distribución (0-100%)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>005</strong></td>
+<td style="text-align: left;">Tensión solicitada V2 (V)</td>
+<td style="text-align: left;">Tensión real V2 (V)</td>
+<td style="text-align: left;">Tensión alimentación (V)</td>
+<td style="text-align: left;">Libre</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>006</strong></td>
+<td style="text-align: left;">Temp. exterior G17 (ºC)</td>
+<td style="text-align: left;">Temp. difusor central G191 (ºC)</td>
+<td style="text-align: left;">Temp. reposapiés G192 (ºC)</td>
+<td style="text-align: left;">Temp. habitáculo G56 (ºC)</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Si en el Grupo 006 la temperatura exterior G17 indica "---" o un valor incoherente (ej. -40 ºC), la UCE deshabilita la marcha del compresor para evitar congelación y hace parpadear los dígitos.</li>
+<li>Si en el Grupo 001 el campo 2 indica "0", la presión en el circuito está fuera del rango de trabajo (&lt; 2 bar o &gt; 32 bar).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Verificar que los dígitos del display dejan de parpadear al encender el Autoclima y que la temperatura del aire en difusores desciende progresivamente.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt872" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 872 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Arquitectura, Funciones Y Componentes En Climatización Y Refrigeración</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Explica las afirmaciones técnicas correctas, las funciones asumidas por la UCE del Autoclima, las motorizaciones con transmisor G65 y los componentes de activación de los ventiladores del radiador. Aplica a los sistemas de climatización de SEAT Ibiza/Córdoba '99.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Sistemas de climatización electrónica y analógica. La UCE del Autoclima asume la gestión de la mezcla de aire, velocidad de turbina, compresor y comunicación, mientras que los electroventiladores son gobernados por J293, F18, F129/G65 y la UCE del motor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Afirmaciones técnicas verdaderas en la gama Ibiza/Córdoba '99:</strong></li>
+<li>En todos los sistemas de climatización la selección de la distribución de aire se realiza mecánicamente mediante cables.</li>
+<li>El Autoclima regula y mantiene automáticamente la temperatura seleccionada por el usuario.</li>
+<li>La trampilla de recirculación es accionada de forma eléctrica en todos los casos (motor V113).</li>
+<li><em>(Es FALSO que la calefacción motorizada mantenga constante la temperatura o que el autoclima controle una trampilla de velocidad)</em>.</li>
+<li><strong>Funciones asumidas por la unidad de control del Autoclima J255:</strong></li>
+<li>Control de la trampilla de temperatura (motor V68).</li>
+<li>Control de la velocidad de la turbina (regulador J126 / motor V2).</li>
+<li>Control del compresor de aire acondicionado (acoplamiento N25).</li>
+<li><em>(Es FALSO que controle directamente los ventiladores del refrigerante o la comunicación directa con el usuario; los ventiladores los gobierna J293 y la comunicación la realiza el radiocasete R)</em>.</li>
+<li><strong>Motorizaciones que montan el transmisor de presión electrónico G65:</strong></li>
+<li>Exclusivamente en los <strong>motores de gasolina</strong> (los motores diésel montan el conmutador de presión mecánico F129).</li>
+<li><strong>Componentes existentes en un sistema de Calefacción Motorizada:</strong></li>
+<li>Unidad de control J255 (codificada con puente a masa en pin 21).</li>
+<li>Radiocasete R y panel con display E87.</li>
+<li>Motor de la trampilla de temperatura V68 / G92.</li>
+<li>Motor de la turbina V2 y regulador de régimen J126.</li>
+<li>Motor de la trampilla de recirculación V113.</li>
+<li>Mando de distribución de aire por cable con potenciómetro.</li>
+<li><em>(No equipa compresor, condensador, filtro deshidratador ni válvula de expansión)</em>.</li>
+<li><strong>Componentes que activan los ventiladores del líquido refrigerante:</strong></li>
+<li>La unidad de control del aire acondicionado J293.</li>
+<li>El conmutador térmico del radiador F18.</li>
+<li>El conmutador de presión F129 / Transmisor G65.</li>
+<li>La unidad de control del motor.</li>
+<li><strong>Unidades de control que utilizan la señal del transmisor de temperatura exterior G17:</strong></li>
+<li>La unidad del Radiocasete R (para mostrar la lectura en el display).</li>
+<li>La unidad del Autoclima J255 (para el cálculo de la mezcla de temperatura).</li>
+<li><strong>Componentes NO implicados en la regulación de la temperatura en modo automático:</strong></li>
+<li>Mandos/cables de distribución de aire.</li>
+<li>Conmutador de presión F129 / G65.</li>
+<li>Interruptor térmico de la caja de aguas F38.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th style="text-align: left;">Elemento / Sistema</th>
+<th style="text-align: left;">Configuración / Aplicación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Transmisor de presión G65</td>
+<td style="text-align: left;">Exclusivo para motores de GASOLINA</td>
+</tr>
+<tr>
+<td style="text-align: left;">Conmutador de presión F129</td>
+<td style="text-align: left;">Exclusivo para motores DIÉSEL</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unidades receptoras de señal G17</td>
+<td style="text-align: left;">Radiocasete R y UCE Autoclima J255</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Creer que la calefacción motorizada mantiene la temperatura constante; solo mueve la trampilla V68 a la posición solicitada pero no autorregula ante cambios térmicos.</li>
+<li>Confundir la unidad que gobierna los electroventiladores (J293) con la UCE del autoclima (J255).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT872_01</code> Despiece esquemático de componentes de la unidad climática del Ibiza/Córdoba '99 — Fuente: ce2.pdf, pág. 11</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt873" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 873 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Lectura De Identificación De La Unidad De Control Del Autoclima En Equipo De Diagnosis</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Explica la interpretación de los campos mostrados en la pantalla de identificación de la versión de la unidad de control del autoclima mediante la función "01" del equipo de diagnosis. Aplica al autodiagnóstico del SEAT Ibiza/Córdoba '99.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Al seleccionar la <strong>Función "01" (Interrogar la versión de la unidad de control)</strong> en la Dirección 08 del equipo de diagnosis (VAG 1551 o equivalente), la UCE transmite sus códigos de identificación de recambio, versión de software, hardware y código del taller.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Equipo de diagnosis conectado al puerto T16 del vehículo y contacto encendido.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Lector de averías / equipo de diagnosis (VAG 1551 o equivalente).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Interpretación de los campos en la pantalla de la función "01":</strong></li>
+<li><strong>Campo A (<code>6K0959291</code>):</strong> Número o código de recambio oficial SEAT de la Unidad de Control del Autoclima.</li>
+<li><strong>Campo B (<code>6K-AUTOCLIMA-110</code>):</strong> Denominación del sistema y versión de programa/software grabado en la UCE. Indica que la centralita física J255 está trabajando con la codificación de programa Autoclima (sin puente de masa en pin 21).</li>
+<li><strong>Campo C (<code>X01</code>):</strong> Versión de desarrollo del hardware/software de la centralita.</li>
+<li><strong>Campo D (<code>WSC 00000</code>):</strong> Código del taller (WorkShop Code) que realizó la última codificación o adaptación de la unidad.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th style="text-align: left;">Campo en Pantalla</th>
+<th style="text-align: left;">Código Mostrado</th>
+<th style="text-align: left;">Significado Técnico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Campo A</strong></td>
+<td style="text-align: left;"><code>6K0959291</code></td>
+<td style="text-align: left;">Número de recambio original de la UCE</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Campo B</strong></td>
+<td style="text-align: left;"><code>6K-AUTOCLIMA-110</code></td>
+<td style="text-align: left;">Sistema identificado y versión de software</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Campo C</strong></td>
+<td style="text-align: left;"><code>X01</code></td>
+<td style="text-align: left;">Versión de hardware / software</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Campo D</strong></td>
+<td style="text-align: left;"><code>WSC 00000</code></td>
+<td style="text-align: left;">Código de identificación del taller</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Si en el Campo B aparece la denominación de Calefacción Motorizada en lugar de Autoclima, significa que el conector posterior tiene colocado por error el puente de masa en el pin 21 del mazo de cables.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Verificar que el código de recambio y la versión de software mostrados en el lector coinciden con la equipamiento real del vehículo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT873_01</code> Pantalla de identificación de la unidad de control del autoclima en el equipo VAG 1551 — Fuente: ce2.pdf, pág. 12</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    851 notas técnicas · generado el 22/09/2026.
+    858 notas técnicas · generado el 22/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
