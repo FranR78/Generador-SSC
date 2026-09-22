@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">682 notas · 22/09/2026</p>
+  <p class="sidebar-meta">698 notas · 22/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -307,7 +307,7 @@
     <li><a href="#nt81">NT81 · Gestión De La Carga Eléctrica Del Alte</a></li>
     <li><a href="#nt82">NT82 · Interruptor De Marcha Atrás</a></li>
     <li><a href="#nt83">NT83 · Unidad De Control Del Climatizador Y P</a></li>
-    <li><a href="#nt84">NT84 · Fotosensor Para Radiación Solar</a></li>
+    <li><a href="#grp-fotosensor-para-radiacion-solar">Fotosensor Para Radiación Solar <span class="menu-cuenta">2 fuentes</span></a></li>
     <li><a href="#nt85">NT85 · Fotosensor Doble Para Radiación Solar</a></li>
     <li><a href="#nt87">NT87 · Regulación De La Temperatura En Climat</a></li>
     <li><a href="#nt88">NT88 · Distribución De Aire Bizona</a></li>
@@ -381,7 +381,7 @@
     <li><a href="#nt286">NT286 · Conmutador Del Climatizador E35</a></li>
     <li><a href="#grp-valvula-de-descarga-de-sobrepresion">Válvula De Descarga De Sobrepresión <span class="menu-cuenta">2 fuentes</span></a></li>
     <li><a href="#grp-sensor-de-refrigerante-del-motor">Conmutador Por Sobretemperatura Del Refrigerante Motor <span class="menu-cuenta">3 fuentes</span></a></li>
-    <li><a href="#grp-ventilador-del-condensador">Gestión De Electroventiladores De Refrigeración Y Condensador <span class="menu-cuenta">7 fuentes</span></a></li>
+    <li><a href="#grp-ventilador-del-condensador">Gestión De Electroventiladores De Refrigeración Y Condensador <span class="menu-cuenta">8 fuentes</span></a></li>
     <li><a href="#nt295">NT295 · Regulación Manual De Temperatura</a></li>
     <li><a href="#grp-sensor-de-salida-de-aire">Transmisor De Temperatura En Reposapiés <span class="menu-cuenta">4 fuentes</span></a></li>
     <li><a href="#grp-distribucion-de-aire">Distribución Y Conducción Del Aire En Sistema Climatizador Dual <span class="menu-cuenta">3 fuentes</span></a></li>
@@ -458,6 +458,20 @@
     <li><a href="#nt679">NT679 · Selección Y Métodos De Detección De Fu</a></li>
     <li><a href="#nt680">NT680 · Cuadro General De Localización De Aver</a></li>
     <li><a href="#nt681">NT681 · Tamiz Filtro De Aspiración Del Compres</a></li>
+    <li><a href="#nt698">NT698 · Esquema Y Lógica Eléctrica De Aire Aco</a></li>
+    <li><a href="#nt699">NT699 · Interruptor De Ac Y Selector D Componente 1 en esquema manual</a></li>
+    <li><a href="#nt700">NT700 · Relés De Alimentación Del Elec Componentes 2 y 12 en esquema manual</a></li>
+    <li><a href="#nt701">NT701 · Trinaria De Alta Presión Componente 4 en esquema manual</a></li>
+    <li><a href="#nt702">NT702 · Termostato De Refrigerante Del Componente 7 en esquema manual / Componente 29 en esquema automático</a></li>
+    <li><a href="#nt703">NT703 · Sonda Ntc Del Evaporador Componente 8 en esquema manual / Componente 18 (pág. 95) / Componente 24 (pág. 97)</a></li>
+    <li><a href="#nt704">NT704 · Esquema De Aire Acondicionado Semiauto</a></li>
+    <li><a href="#nt705">NT705 · Sensor Map De Alta Presión Componente 3 en esquemas semiautomático y automático</a></li>
+    <li><a href="#nt706">NT706 · Sensor De Temperatura Exterior Componente 4 (pág. 95) / Componentes 4 y 27 (pág. 97)</a></li>
+    <li><a href="#nt707">NT707 · Unidad De Control De Climatiza Componente 12 (pág. 95) / Componente 14 (pág. 97)</a></li>
+    <li><a href="#nt708">NT708 · Electroválvula De Regulación D Componente 21 (pág. 95) / Componente 28 (pág. 97)</a></li>
+    <li><a href="#nt709">NT709 · Esquema Didáctico Y Funcionamiento Del</a></li>
+    <li><a href="#nt711">NT711 · Servomotores Y Potenciómetros  Componentes 14 a 17 (pág. 95) / Componentes 16 a 23 (pág. 97)</a></li>
+    <li><a href="#nt713">NT713 · Autodiagnostico Y Lectura De Memoria D</a></li>
   </ul>
 </nav>
 
@@ -15323,6 +15337,11 @@ Finalmente, en el circuito de baja presión y cerca del compresor, se ubica un s
     </div>
   </section>
 
+  <div class="grupo-componente" id="grp-fotosensor-para-radiacion-solar">
+    <div class="grupo-cab"><span class="grupo-nombre">Fotosensor Para Radiación Solar</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 2 · NT84 · fuente sin especificar</summary>
   <section id="nt84" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 84 </div>
     <div class="nota-body">
@@ -15366,6 +15385,48 @@ Finalmente, en el circuito de baja presión y cerca del compresor, se ubica un s
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 2 · NT710 · fuente sin especificar</summary>
+  <section id="nt710" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 710 </div>
+    <div class="nota-body">
+      <h1>Fotosensor Para Radiación Solar — <strong>Componente 13 en esquema automático</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">C</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">á</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Cara superior del salpicadero</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir la intensidad de la radiación solar para ajustar automáticamente la temperatura del habitáculo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Fotodiodo semiconductor. Varía su señal de corriente en función de la radiación solar incidente, permitiendo a la UCE compensar el efecto térmico del sol sobre los ocupantes.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Sensor óptico conectado a la UCE del climatizador.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Comportamiento en avería: Si no funciona, se desactiva la función de ajuste por radiación solar.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Se desactiva la función de ajuste automático por radiación solar.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
   <section id="nt85" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 85 </div>
@@ -37185,10 +37246,10 @@ En el compresor Denso 6SEU12 de regulación externa (sin embrague), la UCE contr
   </div>
 
   <div class="grupo-componente" id="grp-ventilador-del-condensador">
-    <div class="grupo-cab"><span class="grupo-nombre">Gestión De Electroventiladores De Refrigeración Y Condensador</span><span class="grupo-cuenta">7 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Gestión De Electroventiladores De Refrigeración Y Condensador</span><span class="grupo-cuenta">8 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 7 · NT293 · fuente sin especificar</summary>
+      <summary>Variante 1 de 8 · NT293 · fuente sin especificar</summary>
   <section id="nt293" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 293 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -37274,7 +37335,7 @@ En el compresor Denso 6SEU12 de regulación externa (sin embrague), la UCE contr
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 7 · NT294 · fuente sin especificar</summary>
+      <summary>Variante 2 de 8 · NT294 · fuente sin especificar</summary>
   <section id="nt294" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 294 </div>
     <div class="nota-body">
@@ -37333,7 +37394,7 @@ En el compresor Denso 6SEU12 de regulación externa (sin embrague), la UCE contr
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 7 · NT325 · fuente sin especificar</summary>
+      <summary>Variante 3 de 8 · NT325 · fuente sin especificar</summary>
   <section id="nt325" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 325 </div>
     <div class="nota-body">
@@ -37388,7 +37449,7 @@ En el compresor Denso 6SEU12 de regulación externa (sin embrague), la UCE contr
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 7 · NT353 · fuente sin especificar</summary>
+      <summary>Variante 4 de 8 · NT353 · fuente sin especificar</summary>
   <section id="nt353" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 353 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -37476,7 +37537,7 @@ En el compresor Denso 6SEU12 de regulación externa (sin embrague), la UCE contr
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 7 · NT378 · fuente sin especificar</summary>
+      <summary>Variante 5 de 8 · NT378 · fuente sin especificar</summary>
   <section id="nt378" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 378 </div>
     <div class="nota-body">
@@ -37510,7 +37571,7 @@ En el compresor Denso 6SEU12 de regulación externa (sin embrague), la UCE contr
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 7 · NT387 · fuente sin especificar</summary>
+      <summary>Variante 6 de 8 · NT387 · fuente sin especificar</summary>
   <section id="nt387" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 387 </div>
     <div class="nota-body">
@@ -37544,7 +37605,7 @@ En el compresor Denso 6SEU12 de regulación externa (sin embrague), la UCE contr
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 7 · NT518 · fuente sin especificar</summary>
+      <summary>Variante 7 de 8 · NT518 · fuente sin especificar</summary>
   <section id="nt518" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 518 </div>
     <div class="nota-body">
@@ -37601,6 +37662,46 @@ En el compresor Denso 6SEU12 de regulación externa (sin embrague), la UCE contr
       <div class="apartado">
         <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
         <p>Regar el condensador con agua fría durante la prueba con manómetros; la aguja de alta debe bajar de inmediato.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 8 de 8 · NT712 · fuente sin especificar</summary>
+  <section id="nt712" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 712 </div>
+    <div class="nota-body">
+      <h1>Unidad De Control De Electroventiladores — <strong>Componente 6 (pág. 94) / Componente 23 (pág. 95) / Componente 30 (pág. 97)</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">C</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">,</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">á</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">á</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Vano motor, sobre el soporte del radiador</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Alimentar eléctricamente los electroventiladores del radiador y la electroválvula de regulación del compresor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Módulo electrónico de potencia. Recibe las órdenes de la UCE de clima, la trinaria o los termostatos para conmutar la corriente de alimentación hacia los electroventiladores y el compresor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Unidad electrónica de control y relés de potencia.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Comportamiento en avería: En caso de avería de la UCE de ventiladores, el climatizador no funciona.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>El climatizador queda totalmente fuera de servicio.</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
@@ -44411,8 +44512,715 @@ Debido a diferencias en la estructura trasera de la carrocería, en la mayoría 
     </div>
   </section>
 
+  <section id="nt698" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 698 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Esquema Y Lógica Eléctrica De Aire Acondicionado Manual Con Trinaria</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Explica la arquitectura del circuito eléctrico, la lógica de interconexión y las condiciones de activación del compresor y los electroventiladores en sistemas de aire acondicionado manual equipados con presostato trinario. Aplica al análisis de esquemas eléctricos de climatización manual.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>La UCE de motor y la electrónica de control condicionan la excitación del embrague electromagnético del compresor a la existencia de un régimen de ralentí estable, a la ausencia de aceleraciones bruscas y a la validación de presiones y temperaturas por parte de la trinaria y las sondas NTC.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Tensión de batería disponible, contacto conectado, motor térmico funcionando regularmente al ralentí y turbina de aire fresco seleccionada al menos en velocidad lenta.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Condiciones de activación del compresor:</strong>
+  1. El conductor acciona el interruptor de AC y selecciona al menos la velocidad lenta de la turbina de aire fresco.
+  2. La UCE del motor verifica que el motor gira a un régimen de ralentí regular.
+  3. La trinaria de alta mide que la presión del circuito se encuentra en el rango de trabajo entre 2 bar y 32 bar (bornes 1-2 cerrados).
+  4. La sonda NTC del evaporador confirma que no hay riesgo de congelación en el núcleo del evaporador.
+  5. La sonda NTC del refrigerante del motor confirma que el motor de combustión no padece sobretemperatura.
+  6. Cumplidas las condiciones, la electrónica alimenta el embrague electromagnético del compresor.</li>
+<li><strong>Gobierno del electroventilador del condensador:</strong></li>
+<li>Al conectar el aire acondicionado, el electroventilador del circuito de refrigeración se activa de forma continua en velocidad lenta.</li>
+<li>Cuando la presión en el circuito de alta alcanza los 16 bar, los bornes 3-4 de la trinaria se cierran excitando el relé para conectar la velocidad rápida (II velocidad) del electroventilador.</li>
+<li><strong>Estrategias de desconexión de seguridad:</strong></li>
+<li>La UCE del motor interrumpe la alimentación al compresor ante una aceleración brusca para entregar la máxima potencia a la transmisión.</li>
+<li>La sonda NTC del refrigerante desactiva el compresor si la temperatura del motor sube en exceso.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th style="text-align: left;">Parámetro / Componente</th>
+<th style="text-align: left;">Valor y Condiciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Presión de corte por baja o alta de la trinaria (P1)</td>
+<td style="text-align: left;">P1 = 2 bar (corte por baja) / 32 bar (corte por alta) en el circuito de alta</td>
+</tr>
+<tr>
+<td style="text-align: left;">Presión de conexión de II velocidad en trinaria (P2)</td>
+<td style="text-align: left;">P2 = 16 bar en el circuito de alta presión</td>
+</tr>
+<tr>
+<td style="text-align: left;">Temperatura de conexión de velocidad lenta (t1)</td>
+<td style="text-align: left;">t1 = 95 ºC en el termostato de refrigerante</td>
+</tr>
+<tr>
+<td style="text-align: left;">Temperatura de conexión de velocidad rápida (t2)</td>
+<td style="text-align: left;">t2 = 103 ºC en el termostato de refrigerante</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Tratar de conectar el A/C con la turbina del habitáculo desconectada (posición 0); el circuito eléctrico impide la activación del compresor si la turbina no gira como mínimo a velocidad lenta.</li>
+<li>Interpretar la desconexión del compresor en una incorporación como avería, cuando se trata de la función de corte por aceleración gestionada por la UCE del motor.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Verificar que al pulsar el interruptor de AC con la turbina en marcha lenta, el electroventilador arranca inmediatamente en velocidad lenta y el embrague electromagnético acopla el compresor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT698_01</code> Esquema eléctrico de aire acondicionado manual con trinaria y relés — Fuente: 12. Instalación eléctrica del aire acondicionado.pdf, pág. 94</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt699" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 699 </div>
+    <div class="nota-body">
+      <h1>Interruptor De Ac Y Selector De Velocidad De La Turbina — <strong>Componente 1 en esquema manual</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">S</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Consola central del salpicadero, en el panel de mandos de climatización</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Conectar o desconectar el aire acondicionado a voluntad del conductor y controlar la velocidad de giro de la turbina de aire fresco. Garantiza que el sistema solo funcione si la turbina está activa.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Conmutador electromecánico rotativo y por pulsación. Establece el paso de corriente hacia la electrónica de control y varía la resistencia en serie o las vías de alimentación para regular las revoluciones de la turbina.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Interruptor eléctrico conmutado con selección de velocidades para el ventilador del habitáculo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Condición eléctrica de conexión de A/C: Turbina girando como mínimo a velocidad lenta (velocidad 1).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt700" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 700 </div>
+    <div class="nota-body">
+      <h1>Relés De Alimentación Del Electroventilador (I Y Ii Velocidad) — <strong>Componentes 2 y 12 en esquema manual</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">C</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">f</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">g</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Caja de relés y fusibles en el compartimento motor</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Manejar las corrientes de potencia que alimentan el electroventilador de refrigeración en su velocidad lenta (I velocidad) y en su velocidad rápida (II velocidad).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Relés electromagnéticos de potencia. Al recibir señal de excitación en su bobina (desde la trinaria o el termostato de refrigerante), cierran sus contactos de trabajo aplicando tensión directa a la turbina o intercalando la resistencia en serie.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Relés automotrices de potencia de alta intensidad.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Excitación de I velocidad: Activación directa al conectar el A/C o por cierre del primer escalón del termostato a 95 ºC.</li>
+<li>Excitación de II velocidad (Relé 12): Activación al alcanzar 16 bar en la trinaria o 103 ºC en el termostato del radiador.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt701" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 701 </div>
+    <div class="nota-body">
+      <h1>Trinaria De Alta Presión — <strong>Componente 4 en esquema manual</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">S</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Instalada sobre la tubería de la línea de alta presión del circuito frigorífico</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Supervisar la presión en el tramo de alta del circuito frigorífico para autorizar el funcionamiento del compresor y activar la velocidad rápida del electroventilador.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Presostato mecánico triple provisto de dos contactos eléctricos internos accionados por membrana hidráulica: el contacto P1 (bornes 1-2) se abre por baja o alta presión crítica, mientras que el contacto P2 (bornes 3-4) se cierra al subir la presión para conectar la velocidad rápida del ventilador.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Presostato hidráulico-eléctrico de 4 vías de conexión (bornes 1, 2, 3, 4).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Presión de corte del compresor por baja/alta (P1, bornes 1-2): P1 = 2 bar (corte por falta de gas) y 32 bar (corte por sobrepresión).</li>
+<li>Presión de activación de II velocidad del electroventilador (P2, bornes 3-4): P2 = 16 bar en la línea de alta.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt702" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 702 </div>
+    <div class="nota-body">
+      <h1>Termostato De Refrigerante Del Radiador — <strong>Componente 7 en esquema manual / Componente 29 en esquema automático</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">S</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">f</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">g</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">v</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">l</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Montado en el cuerpo del radiador de refrigeración del motor</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Conectar las distintas velocidades del electroventilador del radiador en función de la temperatura del líquido refrigerante del motor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Termocontacto bimetálico escalonado. Al calentarse el líquido refrigerante, la dilatación térmica de sus elementos bimetálicos cierra sucesivamente dos pares de contactos eléctricos independientes.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Sensor termostático conectorizado para las velocidades del electroventilador.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Temperatura de conexión de velocidad lenta (t1): t1 = 95 ºC.</li>
+<li>Temperatura de conexión de velocidad rápida (t2): t2 = 103 ºC.</li>
+<li>Comportamiento de emergencia (climatización automática): Conecta normalmente los ventiladores a máxima velocidad.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>En función de emergencia, se conectan los ventiladores a máxima velocidad.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt703" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 703 </div>
+    <div class="nota-body">
+      <h1>Sonda Ntc Del Evaporador — <strong>Componente 8 en esquema manual / Componente 18 (pág. 95) / Componente 24 (pág. 97)</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">S</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">,</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">á</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">á</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">(</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">v</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">b</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">)</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Intercalada en el núcleo del evaporador o en la salida de aire del evaporador</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Controlar la temperatura de evaporación para prevenir la formación de hielo en el panal del evaporador y desconectar el compresor cuando sea necesario.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Resistencia de coeficiente de temperatura negativo (NTC). Su resistencia eléctrica aumenta al descender la temperatura. La electrónica evalúa el valor para desconectar el compresor si existe riesgo de congelación.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Sonda térmica NTC.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Comportamiento en avería (climatización automática): Si se pierde la señal, se trabaja con la información del sensor MAP.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>En climatización automática, si no hay señal se trabaja con la información del sensor MAP.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt704" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 704 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Esquema De Aire Acondicionado Semiautomático Con Sensor Map Y Electroválvula</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Explica la arquitectura electrónica, las señales de entrada y salida y la lógica de control de los sistemas de climatización semiautomáticos con compresor de cilindrada variable regulado por electroválvula (sin embrague) y sensor de presión MAP. Aplica al diagnóstico de climatizadores semiautomáticos.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>La UCE del climatizador procesa las señales de los sensores térmicos, del sensor digital MAP y de las UCEs de motor y red de a bordo a través del CAN-Bus para modular de forma continua la cilindrada del compresor mediante una señal de corriente hacia su electroválvula interna.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Tensión en línea 30 (batería) y línea 15 (contacto).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Intercambio de información por CAN-Bus y señales directas:</strong></li>
+<li><strong>Entradas principales a la UCE del climatizador (12):</strong> Sensor MAP de alta presión (3), sensor de temperatura exterior (4), transmisor de velocidad (5), alternador (7), transmisor de temperatura interior (13), sensores de salida del evaporador (18), pies (19) y difusor central (20), y potenciómetros de trampillas (15, 17).</li>
+<li><strong>Comunicación con UCE de Red de A Bordo (9) y Cuadro de Instrumentos (10):</strong> Transmisión de señales de velocidad del vehículo y temperatura exterior.</li>
+<li><strong>Comunicación con UCE del Motor (11):</strong> Gestión del ralentí y solicitud de corte por aceleración o carga.</li>
+<li><strong>Gobierno del compresor sin embrague:</strong></li>
+<li>La UCE del climatizador envía una señal de control a la electroválvula de regulación del compresor (21).</li>
+<li>La electroválvula modifica la cilindrada interna del compresor según la demanda de refrigeración.</li>
+<li><strong>Control del soplador del habitáculo:</strong></li>
+<li>La velocidad de la turbina de aire fresco (1) es gestionada mediante un regulador electrónico de velocidad (2).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th style="text-align: left;">Línea de Corriente DIN / Código</th>
+<th style="text-align: left;">Función y Especificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Línea 30</td>
+<td style="text-align: left;">Positivo directo de batería</td>
+</tr>
+<tr>
+<td style="text-align: left;">Línea 15</td>
+<td style="text-align: left;">Positivo después de contacto</td>
+</tr>
+<tr>
+<td style="text-align: left;">Línea 31</td>
+<td style="text-align: left;">Masa</td>
+</tr>
+<tr>
+<td style="text-align: left;">Código de color de cables</td>
+<td style="text-align: left;">Rojo = Alimentación positivo; Negro = Masa; Verde/Blanco = Señales de entrada/salida; Naranja = CAN-Bus</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Buscar un embrague electromagnético en un compresor regulado por electroválvula; este sistema regula su potencia internamente sin desacoplo mecánico.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Verificar la presencia de señales en las entradas y salidas de la UCE del climatizador según el código de colores del esquema.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT704_01</code> Esquema de aire acondicionado semiautomático con sensor MAP y electroválvula sin embrague — Fuente: 12. Instalación eléctrica del aire acondicionado.pdf, pág. 95</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt705" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 705 </div>
+    <div class="nota-body">
+      <h1>Sensor Map De Alta Presión — <strong>Componente 3 en esquemas semiautomático y automático</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">C</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">á</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">á</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Montado en la tubería de la línea de alta presión del circuito frigorífico</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Mapear y medir de forma continua la presión del gas refrigerante en el circuito de alta presión del sistema.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Sensor electrónico de presión de alta precisión. Emite una señal eléctrica proporcional a la presión existente en la línea de alta hacia la UCE del climatizador.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Transmisor electrónico de presión conectado a la UCE del climatizador.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Comportamiento en avería: En caso de avería del sensor MAP, el climatizador no funciona.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>El climatizador deja de funcionar por completo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt706" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 706 </div>
+    <div class="nota-body">
+      <h1>Sensor De Temperatura Exterior Y Entrada De Aire — <strong>Componente 4 (pág. 95) / Componentes 4 y 27 (pág. 97)</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">C</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">á</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">á</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Paragolpes delantero / retrovisor exterior (sensor exterior 4) y canal de aspiración de la caja climática (sensor de entrada 27)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir la temperatura del aire ambiente exterior y del aire de entrada para regular los parámetros de confort del climatizador.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Sensor térmico. Envía una señal analógica de temperatura a la UCE del climatizador.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Sensor térmico de temperatura exterior e interior.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Comportamiento en avería del sensor: No aparece la temperatura en el display, se muestra --.- ºC y se trabaja con el valor del sensor de entrada de aire (27).</li>
+<li>Comportamiento en avería del sensor: Si desaparece la señal, se trabaja con el valor indicado por el sensor de temperatura exterior (4).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>En el display aparece --.- ºC y la UCE adopta la lectura del sensor alternativo de entrada de aire.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt707" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 707 </div>
+    <div class="nota-body">
+      <h1>Unidad De Control De Climatización (Uce Climatizador) — <strong>Componente 12 (pág. 95) / Componente 14 (pág. 97)</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">S</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">á</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">á</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Consola central del salpicadero</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Controlar y gestionar de forma centralizada el funcionamiento global del sistema de climatización.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Unidad de control electrónica con microprocesador. Procesa todas las señales de entrada de los sensores y gestiona la activación de los servomotores, la turbina, los electroventiladores y el compresor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Módulo electrónico conectado a las líneas DIN 30, 15, 15x, 31, CAN-Bus y conectores múltiples.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Comportamiento en avería: En caso de avería de la UCE, el climatizador no funciona.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>El sistema de climatización queda completamente inoperativo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Mediante máquina de diagnóstico compatible conectada al conector de diagnóstico de 16 vías.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt708" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 708 </div>
+    <div class="nota-body">
+      <h1>Electroválvula De Regulación Del Compresor — <strong>Componente 21 (pág. 95) / Componente 28 (pág. 97)</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">C</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">v</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">b</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">b</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">g</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">g</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">é</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Montada en el cuerpo del compresor de cilindrada variable</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Ajustar la cilindrada interna del compresor a la demanda real de refrigeración del habitáculo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Electroválvula de control de flujo. Al recibir la señal de excitación procedente de la UCE de los ventiladores o del climatizador, modifica la presión interna para ajustar la inclinación del mecanismo de cilindrada del compresor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Electroválvula de control proporcional.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Comportamiento en avería: En caso de avería, el compresor se ajusta automáticamente a su mínimo rendimiento.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>El compresor funciona únicamente a su mínimo rendimiento de rendimiento frigorífico.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt709" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 709 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Esquema Didáctico Y Funcionamiento Del Climatizador Automático</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Explica la red completa de componentes, la distribución de líneas de corriente DIN, la interacción de los servomotores de trampillas y el intercambio de información distribuida en un climatizador automático. Aplica al análisis de instalaciones de climatización automática.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El climatizador automático gestiona la distribución, la mezcla de temperatura, el caudal de aire y la recirculación mediante servomotores individuales con potenciómetros de posición de retorno, adaptando su funcionamiento a la radiación solar, la velocidad del vehículo y el estado del motor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Tensión correcta en línea 30 (batería), línea 15 (contacto), línea 15x (contacto con desconexión en arranque) y masa (línea 31).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Líneas de corriente según normas DIN:</strong></li>
+<li>30: Positivo directo de batería.</li>
+<li>15: Positivo después de contacto.</li>
+<li>X: Positivo después de contacto con desconexión en arranque.</li>
+<li>31: Masa del vehículo.</li>
+<li><strong>Red de entradas y señales suplementarias:</strong></li>
+<li>Fotosensor para radiación solar (13): Ajusta la temperatura en función de la radiación solar. Si no funciona, se desactiva la función.</li>
+<li>Transmisor de velocidad (5) y Cuadro de Instrumentos (11): La señal de velocidad recibida por CAN-Bus activa la trampilla de velocidad.</li>
+<li>Interruptor de marcha atrás (7): Conecta automáticamente la recirculación al circular marcha atrás. Si no se recibe señal, se desactiva la función.</li>
+<li>Alternador (8): Identifica el trabajo del alternador y desconecta el compresor ante sobrecargas. Si no se recibe señal, se desactiva la función.</li>
+<li>Regulador de iluminación (9): Regula la intensidad de luz del display del climatizador.</li>
+<li><strong>Control de actuadores de flujo de aire:</strong></li>
+<li>Motor y potenciómetro de la trampilla de temperatura (16, 17): Mezclan el aire frío y caliente. Sin potenciómetro no se puede ajustar la temperatura.</li>
+<li>Motor y potenciómetro de la trampilla de deshielo (18, 19): Mueven la trampilla de deshielo. Sin potenciómetro no se puede dirigir aire hacia el parabrisas.</li>
+<li>Motor y potenciómetro de la trampilla central (20, 21): Mueven la trampilla central. Sin potenciómetro no se puede controlar la salida central o zona pies.</li>
+<li>Motor y potenciómetro de recirculación y velocidad (22, 23): Mueven la trampilla de recirculación. Sin potenciómetro no se puede conectar la recirculación.</li>
+<li><strong>Gestión de temperatura en difusores:</strong></li>
+<li>Sonda de salida del evaporador (24): Si no hay señal se trabaja con el sensor MAP.</li>
+<li>Sonda de zona pies (25) y sonda del difusor central (26): Si falta alguna señal, no es posible la regulación automática.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th style="text-align: left;">Componente / Función</th>
+<th style="text-align: left;">Estado y Comportamiento en Avería</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Turbina de aire fresco (1)</td>
+<td style="text-align: left;">Si no gira, el climatizador no funciona</td>
+</tr>
+<tr>
+<td style="text-align: left;">Regulador de velocidad de turbina (2)</td>
+<td style="text-align: left;">En caso de avería, el climatizador no funciona</td>
+</tr>
+<tr>
+<td style="text-align: left;">UCE de la red de a bordo (10)</td>
+<td style="text-align: left;">Intercambio por CAN-Bus; en avería puede dejar de funcionar el clima</td>
+</tr>
+<tr>
+<td style="text-align: left;">UCE de ventiladores (30)</td>
+<td style="text-align: left;">Alimenta ventiladores y electroválvula; en avería el clima no funciona</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Desmontar un servomotor sin comprobar antes la lectura de su potenciómetro en la máquina de diagnóstico.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Verificar mediante prueba de actuadores que cada servomotor responde a las órdenes de la UCE y que los potenciómetros devuelven señal.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT709_01</code> Esquema didáctico de un climatizador automático y sus componentes — Fuente: 12. Instalación eléctrica del aire acondicionado.pdf, pág. 96</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt711" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 711 </div>
+    <div class="nota-body">
+      <h1>Servomotores Y Potenciómetros De Trampillas De Climatización — <strong>Componentes 14 a 17 (pág. 95) / Componentes 16 a 23 (pág. 97)</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">S</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">á</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">á</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Montados sobre la carcasa de la caja climática</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Mover mecánicamente las trampillas de mezcla, deshielo, central y recirculación/velocidad, e indicar a la UCE la posición exacta de cada trampilla.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Motor eléctrico con reductora que acciona el eje de la trampilla y arrastra el cursor de un potenciómetro. La UCE analiza la tensión del potenciómetro para verificar el ángulo de la trampilla.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Conjunto formado por servomotor de corriente continua y potenciómetro de posición de retorno.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Avería en potenciómetro de temperatura (17): No se puede ajustar la temperatura.</li>
+<li>Avería en potenciómetro de deshielo (19): No se puede dirigir aire hacia el parabrisas.</li>
+<li>Avería en potenciómetro de trampilla central (21): No se puede controlar la salida central o zona pies.</li>
+<li>Avería en potenciómetro de recirculación (23): No se puede conectar la recirculación.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Imposibilidad de ajustar la función correspondiente (temperatura, deshielo, salida central o recirculación).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt713" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 713 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Autodiagnostico Y Lectura De Memoria De Averías Del Climatizador</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Explica la metodología para consultar y analizar las averías memorizadas en la UCE del climatizador a través del conector de diagnóstico de 16 vías. Aplica a la localización de averías en climatizadores electrónicos.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>La UCE de climatización detecta anomalías eléctricas y de plausibilidad en los sensores y actuadores del sistema, memorizando las incidencias para su lectura mediante equipo de diagnóstico.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Conector de diagnóstico (6) libre y contacto del vehículo encendido.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Máquina de diagnóstico compatible con el sistema de climatización del vehículo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ol>
+<li>Conectar la máquina de diagnóstico al conector de diagnóstico de 16 vías del vehículo (componente 6).</li>
+<li>Establecer comunicación con la UCE del climatizador (componente 14).</li>
+<li>Consultar la memoria de averías para identificar los códigos registrados.</li>
+<li>Evaluar los componentes afectados consultando las lecturas en tiempo real o bloques de valores si la máquina lo permite.</li>
+<li>Tras reparar la avería, efectuar el borrado de la memoria de averías y comprobar que no se reproduzcan los códigos.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th style="text-align: left;">Elemento de Diagnosis</th>
+<th style="text-align: left;">Especificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Conector de diagnóstico</td>
+<td style="text-align: left;">Conector estándar de 16 vías (Componente 6)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Estado de averías</td>
+<td style="text-align: left;">Las averías quedan memorizadas en la UCE</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Intentar la comunicación de diagnóstico sin conectar el contacto del vehículo o con el conector de diagnóstico dañado.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Verificar la ausencia de averías memorizadas en la UCE del climatizador tras la reparación y probar el funcionamiento correcto del sistema.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT713_01</code> Conector de diagnóstico de 16 vías conectado a la UCE del climatizador — Fuente: 12. Instalación eléctrica del aire acondicionado.pdf, pág. 95</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    682 notas técnicas · generado el 22/09/2026.
+    698 notas técnicas · generado el 22/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 

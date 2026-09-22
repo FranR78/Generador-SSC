@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-22",
- "total": 682,
+ "total": 698,
  "grupos": [
   "Actuadores y mandos",
   "Circuito frigorífico",
@@ -31121,6 +31121,674 @@
     {
      "titulo": "Características",
      "texto": "Montado en la canalización del circuito de baja presión, próximo al compresor."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.esquema-y-logica-electrica-de-aire-acondicionado-manual-con-trinaria",
+   "nt": 698,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "esquema-y-logica-electrica-de-aire-acondicionado-manual-con-trinaria",
+   "seccion": "",
+   "titulo": "Esquema Y Lógica Eléctrica De Aire Acondicionado Manual Con Trinaria",
+   "codigo": "",
+   "menu": "Esquema Y Lógica Eléctrica De Aire Aco",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Explica la arquitectura del circuito eléctrico, la lógica de interconexión y las condiciones de activación del compresor y los electroventiladores en sistemas de aire acondicionado manual equipados con presostato trinario. Aplica al análisis de esquemas eléctricos de climatización manual."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "La UCE de motor y la electrónica de control condicionan la excitación del embrague electromagnético del compresor a la existencia de un régimen de ralentí estable, a la ausencia de aceleraciones bruscas y a la validación de presiones y temperaturas por parte de la trinaria y las sondas NTC."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Tensión de batería disponible, contacto conectado, motor térmico funcionando regularmente al ralentí y turbina de aire fresco seleccionada al menos en velocidad lenta."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Condiciones de activación del compresor: 1. El conductor acciona el interruptor de AC y selecciona al menos la velocidad lenta de la turbina de aire fresco. 2. La UCE del motor verifica que el motor gira a un régimen de ralentí regular. 3. La trinaria de alta mide que la presión del circuito se encuentra en el rango de trabajo entre 2 bar y 32 bar (bornes 1-2 cerrados). 4. La sonda NTC del evaporador confirma que no hay riesgo de congelación en el núcleo del evaporador. 5. La sonda NTC del refrigerante del motor confirma que el motor de combustión no padece sobretemperatura. 6. Cumplidas las condiciones, la electrónica alimenta el embrague electromagnético del compresor. Gobierno del electroventilador del condensador: Al conectar el aire acondicionado, el electroventilador del circuito de refrigeración se activa de forma continua en velocidad lenta. Cuando la presión en el circuito de alta alcanza los 16 bar, los bornes 3-4 de la trinaria se cierran excitando el relé para conectar la velocidad rápida (II velocidad) del electroventilador. Estrategias de desconexión de seguridad: La UCE del motor interrumpe la alimentación al compresor ante una aceleración brusca para entregar la máxima potencia a la transmisión. La sonda NTC del refrigerante desactiva el compresor si la temperatura del motor sube en exceso."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Parámetro / Componente Valor y Condiciones Presión de corte por baja o alta de la trinaria (P1) P1 = 2 bar (corte por baja) / 32 bar (corte por alta) en el circuito de alta Presión de conexión de II velocidad en trinaria (P2) P2 = 16 bar en el circuito de alta presión Temperatura de conexión de velocidad lenta (t1) t1 = 95 ºC en el termostato de refrigerante Temperatura de conexión de velocidad rápida (t2) t2 = 103 ºC en el termostato de refrigerante"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Tratar de conectar el A/C con la turbina del habitáculo desconectada (posición 0); el circuito eléctrico impide la activación del compresor si la turbina no gira como mínimo a velocidad lenta. Interpretar la desconexión del compresor en una incorporación como avería, cuando se trata de la función de corte por aceleración gestionada por la UCE del motor."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Verificar que al pulsar el interruptor de AC con la turbina en marcha lenta, el electroventilador arranca inmediatamente en velocidad lenta y el embrague electromagnético acopla el compresor."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema eléctrico de aire acondicionado manual con trinaria y relés — Fuente: 12. Instalación eléctrica del aire acondicionado.pdf, pág. 94"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.interruptor-de-ac-y-selector-de-velocidad-de-la-turbina",
+   "nt": 699,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "interruptor-de-ac-y-selector-de-velocidad-de-la-turbina",
+   "seccion": "",
+   "titulo": "Interruptor De Ac Y Selector De Velocidad De La Turbina",
+   "codigo": "Componente 1 en esquema manual",
+   "menu": "Interruptor De Ac Y Selector D Componente 1 en esquema manual",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistemas de aire acondicionado manual",
+   "ubicacion": "Consola central del salpicadero, en el panel de mandos de climatización",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Conectar o desconectar el aire acondicionado a voluntad del conductor y controlar la velocidad de giro de la turbina de aire fresco. Garantiza que el sistema solo funcione si la turbina está activa."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Conmutador electromecánico rotativo y por pulsación. Establece el paso de corriente hacia la electrónica de control y varía la resistencia en serie o las vías de alimentación para regular las revoluciones de la turbina."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Interruptor eléctrico conmutado con selección de velocidades para el ventilador del habitáculo."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Condición eléctrica de conexión de A/C: Turbina girando como mínimo a velocidad lenta (velocidad 1)."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.reles-de-alimentacion-del-electroventilador-i-y-ii-velocidad",
+   "nt": 700,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "reles-de-alimentacion-del-electroventilador-i-y-ii-velocidad",
+   "seccion": "",
+   "titulo": "Relés De Alimentación Del Electroventilador (I Y Ii Velocidad)",
+   "codigo": "Componentes 2 y 12 en esquema manual",
+   "menu": "Relés De Alimentación Del Elec Componentes 2 y 12 en esquema manual",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Circuitos de refrigeración del motor y condensador de aire acondicionado",
+   "ubicacion": "Caja de relés y fusibles en el compartimento motor",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Manejar las corrientes de potencia que alimentan el electroventilador de refrigeración en su velocidad lenta (I velocidad) y en su velocidad rápida (II velocidad)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Relés electromagnéticos de potencia. Al recibir señal de excitación en su bobina (desde la trinaria o el termostato de refrigerante), cierran sus contactos de trabajo aplicando tensión directa a la turbina o intercalando la resistencia en serie."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Relés automotrices de potencia de alta intensidad."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Excitación de I velocidad: Activación directa al conectar el A/C o por cierre del primer escalón del termostato a 95 ºC. Excitación de II velocidad (Relé 12): Activación al alcanzar 16 bar en la trinaria o 103 ºC en el termostato del radiador."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.trinaria-de-alta-presion",
+   "nt": 701,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "trinaria-de-alta-presion",
+   "seccion": "",
+   "titulo": "Trinaria De Alta Presión",
+   "codigo": "Componente 4 en esquema manual",
+   "menu": "Trinaria De Alta Presión Componente 4 en esquema manual",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistemas de aire acondicionado manual",
+   "ubicacion": "Instalada sobre la tubería de la línea de alta presión del circuito frigorífico",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Supervisar la presión en el tramo de alta del circuito frigorífico para autorizar el funcionamiento del compresor y activar la velocidad rápida del electroventilador."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Presostato mecánico triple provisto de dos contactos eléctricos internos accionados por membrana hidráulica: el contacto P1 (bornes 1-2) se abre por baja o alta presión crítica, mientras que el contacto P2 (bornes 3-4) se cierra al subir la presión para conectar la velocidad rápida del ventilador."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Presostato hidráulico-eléctrico de 4 vías de conexión (bornes 1, 2, 3, 4)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Presión de corte del compresor por baja/alta (P1, bornes 1-2): P1 = 2 bar (corte por falta de gas) y 32 bar (corte por sobrepresión). Presión de activación de II velocidad del electroventilador (P2, bornes 3-4): P2 = 16 bar en la línea de alta."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.termostato-de-refrigerante-del-radiador",
+   "nt": 702,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "termostato-de-refrigerante-del-radiador",
+   "seccion": "",
+   "titulo": "Termostato De Refrigerante Del Radiador",
+   "codigo": "Componente 7 en esquema manual / Componente 29 en esquema automático",
+   "menu": "Termostato De Refrigerante Del Componente 7 en esquema manual / Componente 29 en esquema automático",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistemas de refrigeración y climatización del automóvil",
+   "ubicacion": "Montado en el cuerpo del radiador de refrigeración del motor",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Conectar las distintas velocidades del electroventilador del radiador en función de la temperatura del líquido refrigerante del motor."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Termocontacto bimetálico escalonado. Al calentarse el líquido refrigerante, la dilatación térmica de sus elementos bimetálicos cierra sucesivamente dos pares de contactos eléctricos independientes."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Sensor termostático conectorizado para las velocidades del electroventilador."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Temperatura de conexión de velocidad lenta (t1): t1 = 95 ºC. Temperatura de conexión de velocidad rápida (t2): t2 = 103 ºC. Comportamiento de emergencia (climatización automática): Conecta normalmente los ventiladores a máxima velocidad."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "En función de emergencia, se conectan los ventiladores a máxima velocidad."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.sonda-ntc-del-evaporador",
+   "nt": 703,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "sonda-ntc-del-evaporador",
+   "seccion": "",
+   "titulo": "Sonda Ntc Del Evaporador",
+   "codigo": "Componente 8 en esquema manual / Componente 18 (pág. 95) / Componente 24 (pág. 97)",
+   "menu": "Sonda Ntc Del Evaporador Componente 8 en esquema manual / Componente 18 (pág. 95) / Componente 24 (pág. 97)",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistemas de aire acondicionado manual, semiautomático y automático (no utilizada en compresores de cilindrada variable)",
+   "ubicacion": "Intercalada en el núcleo del evaporador o en la salida de aire del evaporador",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Controlar la temperatura de evaporación para prevenir la formación de hielo en el panal del evaporador y desconectar el compresor cuando sea necesario."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Resistencia de coeficiente de temperatura negativo (NTC). Su resistencia eléctrica aumenta al descender la temperatura. La electrónica evalúa el valor para desconectar el compresor si existe riesgo de congelación."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Sonda térmica NTC."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Comportamiento en avería (climatización automática): Si se pierde la señal, se trabaja con la información del sensor MAP."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "En climatización automática, si no hay señal se trabaja con la información del sensor MAP."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.esquema-de-aire-acondicionado-semiautomatico-con-sensor-map-y-electrovalvula",
+   "nt": 704,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "esquema-de-aire-acondicionado-semiautomatico-con-sensor-map-y-electrovalvula",
+   "seccion": "",
+   "titulo": "Esquema De Aire Acondicionado Semiautomático Con Sensor Map Y Electroválvula",
+   "codigo": "",
+   "menu": "Esquema De Aire Acondicionado Semiauto",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Explica la arquitectura electrónica, las señales de entrada y salida y la lógica de control de los sistemas de climatización semiautomáticos con compresor de cilindrada variable regulado por electroválvula (sin embrague) y sensor de presión MAP. Aplica al diagnóstico de climatizadores semiautomáticos."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "La UCE del climatizador procesa las señales de los sensores térmicos, del sensor digital MAP y de las UCEs de motor y red de a bordo a través del CAN-Bus para modular de forma continua la cilindrada del compresor mediante una señal de corriente hacia su electroválvula interna."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Tensión en línea 30 (batería) y línea 15 (contacto)."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Intercambio de información por CAN-Bus y señales directas: Entradas principales a la UCE del climatizador (12): Sensor MAP de alta presión (3), sensor de temperatura exterior (4), transmisor de velocidad (5), alternador (7), transmisor de temperatura interior (13), sensores de salida del evaporador (18), pies (19) y difusor central (20), y potenciómetros de trampillas (15, 17). Comunicación con UCE de Red de A Bordo (9) y Cuadro de Instrumentos (10): Transmisión de señales de velocidad del vehículo y temperatura exterior. Comunicación con UCE del Motor (11): Gestión del ralentí y solicitud de corte por aceleración o carga. Gobierno del compresor sin embrague: La UCE del climatizador envía una señal de control a la electroválvula de regulación del compresor (21). La electroválvula modifica la cilindrada interna del compresor según la demanda de refrigeración. Control del soplador del habitáculo: La velocidad de la turbina de aire fresco (1) es gestionada mediante un regulador electrónico de velocidad (2)."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Línea de Corriente DIN / Código Función y Especificación Línea 30 Positivo directo de batería Línea 15 Positivo después de contacto Línea 31 Masa Código de color de cables Rojo = Alimentación positivo; Negro = Masa; Verde/Blanco = Señales de entrada/salida; Naranja = CAN-Bus"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Buscar un embrague electromagnético en un compresor regulado por electroválvula; este sistema regula su potencia internamente sin desacoplo mecánico."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Verificar la presencia de señales en las entradas y salidas de la UCE del climatizador según el código de colores del esquema."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema de aire acondicionado semiautomático con sensor MAP y electroválvula sin embrague — Fuente: 12. Instalación eléctrica del aire acondicionado.pdf, pág. 95"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.sensor-map-de-alta-presion",
+   "nt": 705,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "sensor-map-de-alta-presion",
+   "seccion": "",
+   "titulo": "Sensor Map De Alta Presión",
+   "codigo": "Componente 3 en esquemas semiautomático y automático",
+   "menu": "Sensor Map De Alta Presión Componente 3 en esquemas semiautomático y automático",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Climatizadores semiautomáticos y automáticos",
+   "ubicacion": "Montado en la tubería de la línea de alta presión del circuito frigorífico",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Mapear y medir de forma continua la presión del gas refrigerante en el circuito de alta presión del sistema."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Sensor electrónico de presión de alta precisión. Emite una señal eléctrica proporcional a la presión existente en la línea de alta hacia la UCE del climatizador."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Transmisor electrónico de presión conectado a la UCE del climatizador."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Comportamiento en avería: En caso de avería del sensor MAP, el climatizador no funciona."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El climatizador deja de funcionar por completo."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.sensor-de-temperatura-exterior-y-entrada-de-aire",
+   "nt": 706,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "sensor-de-temperatura-exterior-y-entrada-de-aire",
+   "seccion": "",
+   "titulo": "Sensor De Temperatura Exterior Y Entrada De Aire",
+   "codigo": "Componente 4 (pág. 95) / Componentes 4 y 27 (pág. 97)",
+   "menu": "Sensor De Temperatura Exterior Componente 4 (pág. 95) / Componentes 4 y 27 (pág. 97)",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Climatizadores semiautomáticos y automáticos",
+   "ubicacion": "Paragolpes delantero / retrovisor exterior (sensor exterior 4) y canal de aspiración de la caja climática (sensor de entrada 27)",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la temperatura del aire ambiente exterior y del aire de entrada para regular los parámetros de confort del climatizador."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Sensor térmico. Envía una señal analógica de temperatura a la UCE del climatizador."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Sensor térmico de temperatura exterior e interior."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Comportamiento en avería del sensor: No aparece la temperatura en el display, se muestra --.- ºC y se trabaja con el valor del sensor de entrada de aire (27). Comportamiento en avería del sensor: Si desaparece la señal, se trabaja con el valor indicado por el sensor de temperatura exterior (4)."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "En el display aparece --.- ºC y la UCE adopta la lectura del sensor alternativo de entrada de aire."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.unidad-de-control-de-climatizacion-uce-climatizador",
+   "nt": 707,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "unidad-de-control-de-climatizacion-uce-climatizador",
+   "seccion": "",
+   "titulo": "Unidad De Control De Climatización (Uce Climatizador)",
+   "codigo": "Componente 12 (pág. 95) / Componente 14 (pág. 97)",
+   "menu": "Unidad De Control De Climatiza Componente 12 (pág. 95) / Componente 14 (pág. 97)",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistemas de climatización semiautomáticos y automáticos",
+   "ubicacion": "Consola central del salpicadero",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Controlar y gestionar de forma centralizada el funcionamiento global del sistema de climatización."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Unidad de control electrónica con microprocesador. Procesa todas las señales de entrada de los sensores y gestiona la activación de los servomotores, la turbina, los electroventiladores y el compresor."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Módulo electrónico conectado a las líneas DIN 30, 15, 15x, 31, CAN-Bus y conectores múltiples."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Comportamiento en avería: En caso de avería de la UCE, el climatizador no funciona."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El sistema de climatización queda completamente inoperativo."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Mediante máquina de diagnóstico compatible conectada al conector de diagnóstico de 16 vías."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.electrovalvula-de-regulacion-del-compresor",
+   "nt": 708,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "electrovalvula-de-regulacion-del-compresor",
+   "seccion": "",
+   "titulo": "Electroválvula De Regulación Del Compresor",
+   "codigo": "Componente 21 (pág. 95) / Componente 28 (pág. 97)",
+   "menu": "Electroválvula De Regulación D Componente 21 (pág. 95) / Componente 28 (pág. 97)",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Compresores de cilindrada variable sin embrague electromagnético",
+   "ubicacion": "Montada en el cuerpo del compresor de cilindrada variable",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Ajustar la cilindrada interna del compresor a la demanda real de refrigeración del habitáculo."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Electroválvula de control de flujo. Al recibir la señal de excitación procedente de la UCE de los ventiladores o del climatizador, modifica la presión interna para ajustar la inclinación del mecanismo de cilindrada del compresor."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Electroválvula de control proporcional."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Comportamiento en avería: En caso de avería, el compresor se ajusta automáticamente a su mínimo rendimiento."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El compresor funciona únicamente a su mínimo rendimiento de rendimiento frigorífico."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.esquema-didactico-y-funcionamiento-del-climatizador-automatico",
+   "nt": 709,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "esquema-didactico-y-funcionamiento-del-climatizador-automatico",
+   "seccion": "",
+   "titulo": "Esquema Didáctico Y Funcionamiento Del Climatizador Automático",
+   "codigo": "",
+   "menu": "Esquema Didáctico Y Funcionamiento Del",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Explica la red completa de componentes, la distribución de líneas de corriente DIN, la interacción de los servomotores de trampillas y el intercambio de información distribuida en un climatizador automático. Aplica al análisis de instalaciones de climatización automática."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El climatizador automático gestiona la distribución, la mezcla de temperatura, el caudal de aire y la recirculación mediante servomotores individuales con potenciómetros de posición de retorno, adaptando su funcionamiento a la radiación solar, la velocidad del vehículo y el estado del motor."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Tensión correcta en línea 30 (batería), línea 15 (contacto), línea 15x (contacto con desconexión en arranque) y masa (línea 31)."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Líneas de corriente según normas DIN: 30: Positivo directo de batería. 15: Positivo después de contacto. X: Positivo después de contacto con desconexión en arranque. 31: Masa del vehículo. Red de entradas y señales suplementarias: Fotosensor para radiación solar (13): Ajusta la temperatura en función de la radiación solar. Si no funciona, se desactiva la función. Transmisor de velocidad (5) y Cuadro de Instrumentos (11): La señal de velocidad recibida por CAN-Bus activa la trampilla de velocidad. Interruptor de marcha atrás (7): Conecta automáticamente la recirculación al circular marcha atrás. Si no se recibe señal, se desactiva la función. Alternador (8): Identifica el trabajo del alternador y desconecta el compresor ante sobrecargas. Si no se recibe señal, se desactiva la función. Regulador de iluminación (9): Regula la intensidad de luz del display del climatizador. Control de actuadores de flujo de aire: Motor y potenciómetro de la trampilla de temperatura (16, 17): Mezclan el aire frío y caliente. Sin potenciómetro no se puede ajustar la temperatura. Motor y potenciómetro de la trampilla de deshielo (18, 19): Mueven la trampilla de deshielo. Sin potenciómetro no se puede dirigir aire hacia el parabrisas. Motor y potenciómetro de la trampilla central (20, 21): Mueven la trampilla central. Sin potenciómetro no se puede controlar la salida central o zona pies. Motor y potenciómetro de recirculación y velocidad (22, 23): Mueven la trampilla de recirculación. Sin potenciómetro no se puede conectar la recirculación. Gestión de temperatura en difusores: Sonda de salida del evaporador (24): Si no hay señal se trabaja con el sensor MAP. Sonda de zona pies (25) y sonda del difusor central (26): Si falta alguna señal, no es posible la regulación automática."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Componente / Función Estado y Comportamiento en Avería Turbina de aire fresco (1) Si no gira, el climatizador no funciona Regulador de velocidad de turbina (2) En caso de avería, el climatizador no funciona UCE de la red de a bordo (10) Intercambio por CAN-Bus; en avería puede dejar de funcionar el clima UCE de ventiladores (30) Alimenta ventiladores y electroválvula; en avería el clima no funciona"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Desmontar un servomotor sin comprobar antes la lectura de su potenciómetro en la máquina de diagnóstico."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Verificar mediante prueba de actuadores que cada servomotor responde a las órdenes de la UCE y que los potenciómetros devuelven señal."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema didáctico de un climatizador automático y sus componentes — Fuente: 12. Instalación eléctrica del aire acondicionado.pdf, pág. 96"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.fotosensor-para-radiacion-solar",
+   "nt": 710,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "fotosensor-para-radiacion-solar",
+   "seccion": "",
+   "titulo": "Fotosensor Para Radiación Solar",
+   "codigo": "Componente 13 en esquema automático",
+   "menu": "Fotosensor Para Radiación Sola Componente 13 en esquema automático",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Climatizadores automáticos",
+   "ubicacion": "Cara superior del salpicadero",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la intensidad de la radiación solar para ajustar automáticamente la temperatura del habitáculo."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Fotodiodo semiconductor. Varía su señal de corriente en función de la radiación solar incidente, permitiendo a la UCE compensar el efecto térmico del sol sobre los ocupantes."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Sensor óptico conectado a la UCE del climatizador."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Comportamiento en avería: Si no funciona, se desactiva la función de ajuste por radiación solar."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Se desactiva la función de ajuste automático por radiación solar."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.servomotores-y-potenciometros-de-trampillas-de-climatizacion",
+   "nt": 711,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "servomotores-y-potenciometros-de-trampillas-de-climatizacion",
+   "seccion": "",
+   "titulo": "Servomotores Y Potenciómetros De Trampillas De Climatización",
+   "codigo": "Componentes 14 a 17 (pág. 95) / Componentes 16 a 23 (pág. 97)",
+   "menu": "Servomotores Y Potenciómetros  Componentes 14 a 17 (pág. 95) / Componentes 16 a 23 (pág. 97)",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistemas de climatización semiautomáticos y automáticos",
+   "ubicacion": "Montados sobre la carcasa de la caja climática",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Mover mecánicamente las trampillas de mezcla, deshielo, central y recirculación/velocidad, e indicar a la UCE la posición exacta de cada trampilla."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Motor eléctrico con reductora que acciona el eje de la trampilla y arrastra el cursor de un potenciómetro. La UCE analiza la tensión del potenciómetro para verificar el ángulo de la trampilla."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Conjunto formado por servomotor de corriente continua y potenciómetro de posición de retorno."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Avería en potenciómetro de temperatura (17): No se puede ajustar la temperatura. Avería en potenciómetro de deshielo (19): No se puede dirigir aire hacia el parabrisas. Avería en potenciómetro de trampilla central (21): No se puede controlar la salida central o zona pies. Avería en potenciómetro de recirculación (23): No se puede conectar la recirculación."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Imposibilidad de ajustar la función correspondiente (temperatura, deshielo, salida central o recirculación)."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.unidad-de-control-de-electroventiladores-2",
+   "nt": 712,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "ventilador-del-condensador",
+   "seccion": "",
+   "titulo": "Unidad De Control De Electroventiladores",
+   "codigo": "Componente 6 (pág. 94) / Componente 23 (pág. 95) / Componente 30 (pág. 97)",
+   "menu": "Unidad De Control De Electrove Componente 6 (pág. 94) / Componente 23 (pág. 95) / Componente 30 (pág. 97)",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Climatizadores manuales, semiautomáticos y automáticos",
+   "ubicacion": "Vano motor, sobre el soporte del radiador",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Alimentar eléctricamente los electroventiladores del radiador y la electroválvula de regulación del compresor."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Módulo electrónico de potencia. Recibe las órdenes de la UCE de clima, la trinaria o los termostatos para conmutar la corriente de alimentación hacia los electroventiladores y el compresor."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Unidad electrónica de control y relés de potencia."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Comportamiento en avería: En caso de avería de la UCE de ventiladores, el climatizador no funciona."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El climatizador queda totalmente fuera de servicio."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.autodiagnostico-y-lectura-de-memoria-de-averias-del-climatizador",
+   "nt": 713,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "autodiagnostico-y-lectura-de-memoria-de-averias-del-climatizador",
+   "seccion": "",
+   "titulo": "Autodiagnostico Y Lectura De Memoria De Averías Del Climatizador",
+   "codigo": "",
+   "menu": "Autodiagnostico Y Lectura De Memoria D",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Explica la metodología para consultar y analizar las averías memorizadas en la UCE del climatizador a través del conector de diagnóstico de 16 vías. Aplica a la localización de averías en climatizadores electrónicos."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "La UCE de climatización detecta anomalías eléctricas y de plausibilidad en los sensores y actuadores del sistema, memorizando las incidencias para su lectura mediante equipo de diagnóstico."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Conector de diagnóstico (6) libre y contacto del vehículo encendido."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Máquina de diagnóstico compatible con el sistema de climatización del vehículo."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Conectar la máquina de diagnóstico al conector de diagnóstico de 16 vías del vehículo (componente 6). Establecer comunicación con la UCE del climatizador (componente 14). Consultar la memoria de averías para identificar los códigos registrados. Evaluar los componentes afectados consultando las lecturas en tiempo real o bloques de valores si la máquina lo permite. Tras reparar la avería, efectuar el borrado de la memoria de averías y comprobar que no se reproduzcan los códigos."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Elemento de Diagnosis Especificación Conector de diagnóstico Conector estándar de 16 vías (Componente 6) Estado de averías Las averías quedan memorizadas en la UCE"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Intentar la comunicación de diagnóstico sin conectar el contacto del vehículo o con el conector de diagnóstico dañado."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Verificar la ausencia de averías memorizadas en la UCE del climatizador tras la reparación y probar el funcionamiento correcto del sistema."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Conector de diagnóstico de 16 vías conectado a la UCE del climatizador — Fuente: 12. Instalación eléctrica del aire acondicionado.pdf, pág. 95"
     }
    ]
   }
