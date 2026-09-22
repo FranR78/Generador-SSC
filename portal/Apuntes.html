@@ -25,6 +25,14 @@
   .ap .apartado p{margin:0;line-height:1.6;font-size:14.5px}
   .ap .fuente{font-size:12px;color:#5a6b78;border-top:1px solid var(--borde);padding-top:8px;margin-top:14px}
   .ap .vacio{color:#5a6b78;font-style:italic;font-size:14px}
+  .ap .curso-cab{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 10px}
+  .ap .volver-curso{background:var(--azul,#0a63aa);color:#fff;border:none;border-radius:8px;
+    padding:7px 12px;font-family:inherit;font-size:13px;font-weight:700;cursor:pointer}
+  .ap .curso-et{font-size:13px;color:#5a6b78}
+  .ap .curso-et strong{color:var(--azul-os,#063f70)}
+  /* Dentro de un curso el desplegable de unidad no tiene sentido: la unidad la
+     fija el curso. Se oculta para que el alumno no se salga sin querer. */
+  .ap.en-curso #ap-unidad{display:none}
 
   /* Móvil: una cosa cada vez. La nota sustituye a la lista. */
   .ap #ap-lector{display:none}
@@ -50,6 +58,10 @@
 <div class="ap">
   <div id="ap-lista">
     <div class="panel">
+      <div id="ap-curso" class="curso-cab" hidden>
+        <button id="ap-salir-curso" class="volver-curso">← Todos los cursos</button>
+        <span class="curso-et">Estás en: <strong id="ap-curso-nom"></strong></span>
+      </div>
       <h2>Apuntes</h2>
       <p class="aviso" id="ap-resumen">Cargando apuntes…</p>
       <div class="barra">

@@ -207,6 +207,13 @@
       if (sec === 'cuenta' && !cuentaCargada) initCuenta();
       if (sec === 'cursos') initCursos();
       if (sec === 'apuntes') initApuntes();
+      // Entrar por la pestaña Apuntes (no por una portada) sale del modo curso.
+      if (sec === 'apuntes' && !entrandoDeCurso) {
+        var ap = document.querySelector('.ap');
+        if (ap) { ap.classList.remove('en-curso'); }
+        var cab = document.getElementById('ap-curso'); if (cab) cab.hidden = true;
+      }
+      entrandoDeCurso = false;
       if (sec === 'inicio') { iniCargado = false; initInicio(); }
       if (sec === 'simulador') initSimulador();
       if (sec === 'profesor' && !panelCargado) initPanel();
@@ -1365,7 +1372,7 @@
         h += '</div>';
         b.innerHTML = h;
         if(c.total){
-          b.addEventListener('click', function(){ abrirCurso(u.unidad); });
+          b.addEventListener('click', function(){ abrirCurso(u.unidad, u.nombre); });
         }
         cont.appendChild(b);
       });
@@ -1382,13 +1389,19 @@
 
     /* Entrar en un curso es ir a sus apuntes ya filtrados: no hace falta una
        pantalla intermedia que no aporte nada. */
-    function abrirCurso(unidad){
+    var entrandoDeCurso = false;
+    function abrirCurso(unidad, nombre){
+      entrandoDeCurso = true;
       mostrar('apuntes');
       initApuntes();
-      /* El desplegable de unidades lo rellena pintarApuntes cuando llegan los
-         datos. Poner el valor antes de que exista la opción no da error: se
-         queda en blanco y se listan las 129 notas, que es lo contrario de
-         entrar en un curso. Así que se espera a que la opción esté. */
+      // Apuntes entra en "modo curso": fijado a esta unidad, con cabecera y sin
+      // desplegable, para que sea un curso cerrado y no una lista global.
+      var ap = document.querySelector('.ap');
+      ap.classList.add('en-curso');
+      var cab = document.getElementById('ap-curso');
+      if(cab){ cab.hidden = false; document.getElementById('ap-curso-nom').textContent = nombre || ''; }
+      // La opción del desplegable la crea pintarApuntes cuando llegan los datos;
+      // se espera a que exista antes de fijarla y filtrar.
       var intentos = 0;
       (function aplicar(){
         var sel = document.getElementById('ap-unidad');
@@ -1397,6 +1410,19 @@
         if(intentos++ < 20) setTimeout(aplicar, 150);
       })();
     }
+
+    // Salir del curso: quita el filtro fijo y vuelve a Cursos.
+    (function(){
+      var b = document.getElementById('ap-salir-curso');
+      if(b) b.addEventListener('click', function(){
+        var ap = document.querySelector('.ap');
+        ap.classList.remove('en-curso', 'leyendo');
+        document.getElementById('ap-curso').hidden = true;
+        var sel = document.getElementById('ap-unidad');
+        if(sel){ sel.value = ''; }
+        mostrar('cursos');
+      });
+    })();
 
     function initApuntes(){
       if(apCargado) return;
