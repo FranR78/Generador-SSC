@@ -10,6 +10,19 @@
     text-transform:uppercase;letter-spacing:.05em;color:#fff;
     background:var(--azul,#0a63aa);border-radius:8px}
   .ap .ap-seccion:first-child{margin-top:0}
+  /* Itinerario del curso: secciones plegables con su progreso. */
+  .ap details.itin{border:1px solid var(--borde);border-radius:10px;margin-bottom:8px;overflow:hidden;background:#fff}
+  .ap details.itin>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;
+    padding:11px 12px;background:#eef5fb;font-weight:700;color:var(--azul-os,#063f70);font-size:13.5px}
+  .ap details.itin>summary::-webkit-details-marker{display:none}
+  .ap details.itin>summary::before{content:'▸';color:var(--azul,#0a63aa);font-weight:700}
+  .ap details.itin[open]>summary::before{content:'▾'}
+  .ap .itin-tit{flex:1}
+  .ap .itin-prog{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:#5a6b78;white-space:nowrap}
+  .ap .itin-barra{width:54px;height:7px;background:#d7e6f2;border-radius:20px;overflow:hidden}
+  .ap .itin-barra>span{display:block;height:100%;background:var(--azul,#0a63aa);border-radius:20px}
+  .ap details.itin>.nt{margin:6px 8px}
+  .ap details.itin>.nt:first-of-type{margin-top:8px}
   .ap .nt{display:flex;gap:10px;align-items:baseline;text-align:left;width:100%;
     background:#fff;border:1px solid var(--borde);border-radius:9px;padding:10px 12px;
     cursor:pointer;font-family:inherit;font-size:14px}

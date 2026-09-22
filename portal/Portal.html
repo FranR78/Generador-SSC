@@ -1458,45 +1458,86 @@
       filtrarApuntes();
     }
 
+    // Un botón de nota (se reutiliza en lista plana y en el itinerario del curso).
+    function botonNota(x){
+      var b = document.createElement('button');
+      b.className = 'nt' + (x.leida?' leida':'');
+      b.setAttribute('data-nt', x.nt);
+      b.innerHTML = '<span class="num">NT'+x.nt+'</span>'
+        + '<span class="tit">'+x.titulo
+        + '<small><span class="chip'+(x.tipo==='proceso'?' proceso':'')+'">'
+        + (x.tipo==='proceso'?(x.subtipo||'proceso'):'elemento')+'</span> '+x.grupo+'</small></span>'
+        + (x.leida?'<span class="ok">✓ leída</span>':'');
+      b.addEventListener('click', function(){ abrirNota(x.nt); });
+      return b;
+    }
+
     function filtrarApuntes(){
       var q = (document.getElementById('ap-buscar').value||'').toLowerCase().trim();
       var g = document.getElementById('ap-grupo').value;
       var uSel = (document.getElementById('ap-unidad')||{}).value || '';
       var f = document.getElementById('ap-filtro').value;
       var cont = document.getElementById('ap-resultados');
+      var enCurso = document.querySelector('.ap').classList.contains('en-curso');
       cont.innerHTML = '';
-      var n = 0, seccionActual = null;
-      apCorpus.notas.forEach(function(x){
-        if(uSel && x.unidad !== uSel) return;
-        if(g && x.grupo !== g) return;
-        if(f === 'si' && !x.leida) return;
-        if(f === 'no' && x.leida) return;
+
+      // Filtro común.
+      var visibles = apCorpus.notas.filter(function(x){
+        if(uSel && x.unidad !== uSel) return false;
+        if(g && x.grupo !== g) return false;
+        if(f === 'si' && !x.leida) return false;
+        if(f === 'no' && x.leida) return false;
         if(q){
           var heno = (x.titulo+' '+x.codigo+' '+x.grupo+' '+x.menu).toLowerCase();
-          if(heno.indexOf(q) < 0) return;
+          if(heno.indexOf(q) < 0) return false;
         }
-        n++;
-        // Cabecera de sección cuando cambia: convierte la lista en un temario.
-        // Las notas ya vienen en el orden del índice desde el servidor.
-        if(x.seccion && x.seccion !== seccionActual){
-          seccionActual = x.seccion;
-          var h = document.createElement('div');
-          h.className = 'ap-seccion';
-          h.textContent = x.seccion;
-          cont.appendChild(h);
-        }
-        var b = document.createElement('button');
-        b.className = 'nt' + (x.leida?' leida':'');
-        b.setAttribute('data-nt', x.nt);
-        b.innerHTML = '<span class="num">NT'+x.nt+'</span>'
-          + '<span class="tit">'+x.titulo
-          + '<small><span class="chip'+(x.tipo==='proceso'?' proceso':'')+'">'
-          + (x.tipo==='proceso'?(x.subtipo||'proceso'):'elemento')+'</span> '+x.grupo+'</small></span>'
-          + (x.leida?'<span class="ok">✓ leída</span>':'');
-        b.addEventListener('click', function(){ abrirNota(x.nt); });
-        cont.appendChild(b);
+        return true;
       });
-      if(!n) cont.innerHTML = '<p class="vacio">Nada con ese filtro.</p>';
+
+      if(!visibles.length){ cont.innerHTML = '<p class="vacio">Nada con ese filtro.</p>'; return; }
+
+      if(enCurso){
+        // Modo curso: el itinerario. Cada sección es un desplegable con su
+        // progreso; la primera abierta, y al buscar se abren las que tengan
+        // resultados para que el alumno vea dónde cae lo que busca.
+        var orden = (apCorpus.secciones && apCorpus.secciones[uSel]) || [];
+        var porSec = {};
+        visibles.forEach(function(x){
+          var s = x.seccion || 'Otros';
+          (porSec[s] = porSec[s] || []).push(x);
+        });
+        // Secciones en el orden del índice; las que no estén, al final.
+        var claves = orden.filter(function(s){ return porSec[s]; })
+          .concat(Object.keys(porSec).filter(function(s){ return orden.indexOf(s) < 0; }));
+        claves.forEach(function(s, i){
+          var notas = porSec[s];
+          var leidas = notas.filter(function(x){ return x.leida; }).length;
+          var pct = Math.round(leidas*100/notas.length);
+          var d = document.createElement('details');
+          d.className = 'itin';
+          if(i === 0 || q) d.open = true;
+          var sum = document.createElement('summary');
+          sum.innerHTML = '<span class="itin-tit">'+s+'</span>'
+            + '<span class="itin-prog"><span class="itin-barra"><span style="width:'+pct+'%"></span></span>'
+            + leidas+'/'+notas.length+'</span>';
+          d.appendChild(sum);
+          notas.forEach(function(x){ d.appendChild(botonNota(x)); });
+          cont.appendChild(d);
+        });
+      } else {
+        // Lista plana con cabecera de sección cuando cambia.
+        var seccionActual = null;
+        visibles.forEach(function(x){
+          if(x.seccion && x.seccion !== seccionActual){
+            seccionActual = x.seccion;
+            var h = document.createElement('div');
+            h.className = 'ap-seccion';
+            h.textContent = x.seccion;
+            cont.appendChild(h);
+          }
+          cont.appendChild(botonNota(x));
+        });
+      }
     }
 
     ['ap-buscar','ap-unidad','ap-grupo','ap-filtro'].forEach(function(id){
