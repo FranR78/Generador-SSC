@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-22",
- "total": 641,
+ "total": 662,
  "grupos": [
   "Actuadores y mandos",
   "Circuito frigorífico",
@@ -29465,6 +29465,933 @@
   {
    "id": "ssc.sin-clasificar.silenciador-10",
    "nt": 656,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "silenciador",
+   "seccion": "",
+   "titulo": "Silenciador",
+   "codigo": "",
+   "menu": "Silenciador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y aire acondicionado de accionamiento manual",
+   "ubicacion": "Ubicado en el circuito de baja presión, cerca del compresor",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Amortiguar el ruido producido por las ondas de presión entre la válvula de expansión y el compresor."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Atenúa acústicamente las ondas de presión originadas durante la circulación del fluido en el tramo de baja presión."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Montado en la canalización del circuito de baja presión, próximo al compresor."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.arquitectura-y-logica-de-control-en-climatizacion-no-regulada-manual",
+   "nt": 657,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "arquitectura-y-logica-de-control-en-climatizacion-no-regulada-manual",
+   "seccion": "",
+   "titulo": "Arquitectura Y Lógica De Control En Climatización No Regulada (Manual)",
+   "codigo": "",
+   "menu": "Arquitectura Y Lógica De Control En Cl",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Explica el flujo de señales de entrada, la interconexión eléctrica y las condiciones de activación del compresor y ventiladores en sistemas de aire acondicionado manual sin climatizador electrónico. Aplica al diagnóstico de circuitos eléctricos de climatización no regulada."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Control por conmutación electromecánica directa y termostática sin unidad de cálculo centralizada de clima. Las señales de demanda del usuario, la sonda del evaporador y la alimentación eléctrica interactúan mediante relés para activar el embrague del compresor, el electroventilador de refrigeración (GMV) y el motor de reciclaje."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Tensión de batería disponible, contacto conectado (+15 / +30) y conmutador de ventilación del habitáculo posicionado en velocidad 1 o superior."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Modos y peticiones de señal: A/A ON: Demanda de puesta en marcha del aire acondicionado por parte del usuario mediante el pulsador. La UCE de motor incrementa el régimen de ralentí para compensar la carga mecánica antes del acoplamiento. A/A CICLO: Demanda de puesta en marcha del compresor autorizada por el termostato del evaporador cuando su temperatura supera los 4 ºC. A/A AUT: Autorización final de puesta en marcha emitida por la gestión electrónica del motor para asegurar la eficacia del compresor sin comprometer la estabilidad térmica del motor. Flujo de señales en el circuito: El usuario acciona el conmutador de aire acondicionado y selecciona la velocidad de ventilación. La corriente atraviesa el termostato del evaporador y el presostato tri-función de alta/baja presión. Si las presiones y la temperatura del evaporador son correctas, el relé de climatización (Relé CA) se excita alimentando la bobina del embrague electromagnético del compresor y activando la.ª velocidad del electroventilador (GMV) de refrigeración."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Condición de Señal Umbral / Estado Autorización por temperatura del evaporador (A/A CICLO) Temperatura superior a 4 ºC Condición de soplador de habitáculo Seleccionado en velocidad 1, 2, 3 o 4 (en posición 0 no se autoriza A/A)"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Si la temperatura del evaporador cae por debajo de 4 ºC, el termostato abre el circuito cortando A/A CICLO, lo cual interrumpe el compresor para prevenir la congelación de la condensación en el evaporador. Intentar encender el A/C con la turbina del habitáculo en posición; la línea eléctrica de excitación pasa a través del conmutador de ventilación."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Verificar que al accionar el pulsador A/A con la ventilación encendida, el motor eleva levemente su régimen de ralentí, el relé CA conmuta y el acoplamiento magnético del compresor atrae su disco frontal."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema sinóptico de entradas y salidas en climatización no regulada — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 3 Esquema general del circuito eléctrico de climatización manual sin unidad de funciones del motor — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 5 Esquema general con unidad de control de funciones del motor — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 7 Esquema general con gestión de inyección del motor — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 9"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.termostato-y-sonda-de-temperatura-del-evaporador",
+   "nt": 658,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "termostato-y-sonda-de-temperatura-del-evaporador",
+   "seccion": "",
+   "titulo": "Termostato Y Sonda De Temperatura Del Evaporador",
+   "codigo": "",
+   "menu": "Termostato Y Sonda De Temperatura Del",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Circuitos de aire acondicionado de climatización no regulada (manual)",
+   "ubicacion": "Intercalado entre las aletas de aluminio del evaporador en el interior de la caja climática",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Informar al sistema de la temperatura del evaporador para cortar la alimentación del compresor cuando la temperatura se aproxima al punto de congelación del agua y autorizar su conexión solo cuando supera los 4 ºC."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Termostato Mecánico: Utiliza un tubo capilar lleno de fluido dilatatorio conectado a un fuelle. La fuerza de presión del fuelle (Fp) se opone a la fuerza de un muelle regulable (Fm). Al enfriarse el evaporador, disminuye Fp hasta que la palanca invierte su posición y abre el interruptor eléctrico desconectando el compresor. Termostato Electrónico: Emplea una sonda termostática NTC cuya resistencia disminuye con la temperatura. La resistencia NTC es evaluada por una centralita de mando electrónica o potenciómetro, la cual conmuta el relé del compresor mediante transistores."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Variante Mecánica: Compuesta por carcasa, fuelle, tubo capilar, muelle regulador, tornillo de ajuste con pomo, palanca e interruptor eléctrico (de 2 contactos o de 3 contactos con dispositivo de servicio). Variante Electrónica: Sonda termostática NTC de varilla/bulbo, potenciómetro de ajuste de consigna y centralita de mando electrónica (relé termostático)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Umbral de autorización de acoplamiento del compresor: Temperaturas superiores a 4 ºC en el evaporador."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fuga de fluido dilatatorio por fisura en el tubo capilar mecánico, deformación del muelle de tarado o derivación a masa/corte en la sonda NTC electrónica."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El compresor funciona ininterrumpidamente provocando la congelación total del evaporador y el bloqueo del paso de aire al habitáculo, o el compresor no se acopla en ningún momento."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "En termostato mecánico: medir continuidad entre bornes sumergiendo el capilar en agua con hielo. En termostato electrónico: medir la resistencia NTC entre bornes de la sonda a temperatura ambiente y compararla con el valor de la gráfica de calibración."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Estructura interna de fuelle, capilar y palanca en termostato mecánico del evaporador — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 11 Esquema de conexiones de termostato de 2 y 3 contactos — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 13 Sonda termostática para evaporador — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 15 Conjunto de sonda termostática y centralita de mando electrónica — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 17 Componentes del termostato electrónico (centralita, potenciómetro y sonda) — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 19"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.conmutador-y-mandos-de-aire-acondicionado-y-ventilacion",
+   "nt": 659,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "conmutador-y-mandos-de-aire-acondicionado-y-ventilacion",
+   "seccion": "",
+   "titulo": "Conmutador Y Mandos De Aire Acondicionado Y Ventilación",
+   "codigo": "",
+   "menu": "Conmutador Y Mandos De Aire Acondicion",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Cuadro de mando en climatizaciones manuales",
+   "ubicacion": "Consola central del salpicadero, en el panel frontal de control",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Permitir la selección manual de la velocidad del electroventilador del habitáculo, la conexión del compresor de aire acondicionado y la conmutación de la trampilla de recirculación."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Conmutador rotativo o deslizante de pistas metálicas. Al girar el mando de ventilación, la corriente positiva (+15) pasa directamente a través de las resistencias R1, R2 y R3 para obtener las velocidades 1 (Low), 2 (Medium) y 3, o bien alimenta directamente la bobina del relé de.ª velocidad para conectar el motor a 12 V directos en la posición máxima (High)."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Configuración a: Pulsador cilíndrico A/A. Configuración b: Pulsador rectangular de trampilla. Configuración c: Grupo de mandos único. Configuración d/e: Mandos combinados deslizantes y giratorios con reostato e interruptor de potencia."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tensión de alimentación: 12 V (bajo contacto +15). Selección de posiciones: 0 (apagado), 1 (LOW), 2 (MEDIUM), 3 y 4 (HIGH)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fogueado de los contactos metálicos por sobrecorriente e intensidades elevadas, y deformación del soporte plástico por sobrecalentamiento."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Pérdida de funcionamiento de una o varias velocidades de la turbina del habitáculo o imposibilidad de mandar la señal de encendido al compresor."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Desconectar el conector y medir la continuidad con un polímetro en posición de óhmetro entre la vía de entrada (+12 V) y cada una de las vías de salida de velocidad (1, 2, 3, 4) al conmutar la posición del mando."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Variantes constructivas de pulsadores y grupos de mandos de climatización — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 21 Pulsador de trampilla de recirculación y mando combinado de marcha/recirculación — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 23 Detalle del conmutador de mando y reostato del electroventilador centrífugo — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 25 Esquema eléctrico básico de conexión entre conmutador, reostato, presostato y compresor — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 29"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.estrategia-de-corte-temporizado-del-compresor-en-motorizacion-diesel",
+   "nt": 660,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "estrategia-de-corte-temporizado-del-compresor-en-motorizacion-diesel",
+   "seccion": "",
+   "titulo": "Estrategia De Corte Temporizado Del Compresor En Motorización Diésel",
+   "codigo": "",
+   "menu": "Estrategia De Corte Temporizado Del Co",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Explica el funcionamiento del circuito de desconexión temporal del compresor al iniciar la marcha en pendiente para optimizar el par del motor diésel y evitar el calado. Aplica a versiones diésel con climatizador manual."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Liberación temporal de la carga mecánica impuesta por el compresor al motor térmico durante un intervalo de 4 segundos cuando se detecta simultáneamente el pedal de embrague pisado a fondo y una elevada demanda de carga sobre el pedal del acelerador."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Vehículo en fase de arranque en rampa o aceleración fuerte desde parado, con el pedal de embrague pisado a fondo y carga de inyección elevada."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Al pisar el pedal de embrague a fondo y acelerar, se abre el contacto del pedal de embrague 421 y el contactor 405 en la palanca de carga de la bomba de inyección. Al abrirse el circuito, se corta la alimentación a la bobina del relé. El relé 661 deja de alimentar al relé temporizado. El relé temporizado 635 interrumpe la excitación del relé 584 (relé del embrague del compresor) durante un periodo fijo de 4 segundos. El embrague del compresor 171 se desacopla, permitiendo al motor subiendo de vueltas con mayor facilidad. Transcurridos los 4 segundos, el relé 635 restablece la alimentación al relé 584 y el compresor vuelve a acoplarse. La línea incluye un diodo que impide que la tensión de la unidad de pre-postcalentamiento 257 alimente por retorno el embrague del compresor durante la fase de arranque y calentamiento del motor."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Componente / Parámetro Valor y Especificación Tiempo de corte del compresor por temporizador 635 4 segundos tras cumplir condiciones de carga y embrague Contactor en pedal de embrague 421 En reposo (pie levantado/embragado): normalmente cerrado. No requiere reglaje. Relé temporizado de prohibición de embragado Componente 635 Relé del embrague del compresor Componente 584"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Intentar regular mecánicamente el contactor 421 del pedal de embrague; no admite reglaje, solo debe comprobarse que está cerrado con el pie levantado. Si el compresor se acopla intermitentemente durante la marcha, comprobar si el contactor 405 de la bomba de inyección está mal posicionado o desgastado."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Verificar con un voltímetro conectado en el relé 584 que la alimentación cae a 0 V durante exactamente 4 segundos al accionar a fondo el pedal de embrague y acelerar."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del circuito de corte temporizado de A/A en motorización diésel — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 37 Cableado y relés interconectados en el circuito diésel — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 45"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.logica-y-secuencia-de-conmutacion-de-electroventiladores-gmv-de-refrigeracion",
+   "nt": 661,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "logica-y-secuencia-de-conmutacion-de-electroventiladores-gmv-de-refrigeracion",
+   "seccion": "",
+   "titulo": "Lógica Y Secuencia De Conmutación De Electroventiladores (Gmv) De Refrigeración",
+   "codigo": "",
+   "menu": "Lógica Y Secuencia De Conmutación De E",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Describe los circuitos de alimentación, relés y presostatos que gestionan las velocidades (1.ª, 2.ª, 3.ª) de los electroventiladores de refrigeración y el encendido del testigo de sobretemperatura del refrigerante. Aplica al diagnóstico de refrigeración y climatización."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Conmutación de la alimentación de los motores de los electroventiladores (asociación en serie para bajas revoluciones y asociación en paralelo para altas revoluciones) mediante la caja de relés comandada por el presostato de A/C (411) y el termostato de radiador (248)."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Contacto encendido (+12 V APC) y tensión de batería estable (+12 V AVC)."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Polímetro, lámpara de pruebas de 12 V y esquema eléctrico del fabricante."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "1.ª Velocidad (Baja): Se activa al conectar el A/C o cuando el termostato del radiador 248 cierra su primer contacto. La corriente circula a través de las resistencias en serie o asociando los dos electroventiladores (262 y 188) en serie, haciendo girar la turbina de forma silenciosa. 2.ª Velocidad (Media): Se activa al aumentar la presión del gas refrigerante a 19 bar en el presostato 411 o por el segundo escalón del termostato. Los relés 234 conmutan para aplicar mayor tensión a los motores. 3.ª Velocidad (Alta): Se activa en situaciones de extrema demanda térmica o sobrepresión. Los relés 234 acoplan ambos electroventiladores directamente a +12 V en paralelo, proporcionando el máximo caudal de aire sobre el condensador y radiador. Encendido del Testigo de Sobretemperatura: Si la temperatura del refrigerante supera el límite de seguridad, el termostato 248 cierra el circuito enviando masa directa a la lámpara de temperatura 247 en el cuadro de instrumentos y desactivando el relé del compresor 171 para reducir la carga térmica del motor."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Condición de Activación Umbral Técnico Presión de conmutación de velocidad por presostato 411 19 bar en el circuito de alta presión Tensión en los electroventiladores en velocidad máxima 12 V directo en configuración paralelo"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Si falla la.ª velocidad pero funcionan las superiores, revisar la resistencia en serie o los contactos del relé de velocidad lenta. Si el testigo de sobretemperatura se enciende y el compresor se desconecta, verificar la presencia de aire en el circuito de refrigeración del motor o el fallo de los relés de los electroventiladores."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Verificar el salto progresivo de las tres velocidades puenteando secuencialmente las patillas del termostato del radiador 248 con el motor en marcha."
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Peligro de atrapamiento. Mantener las manos alejadas de las pálpulas de los electroventiladores durante la prueba; pueden arrancar automáticamente."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Trazo de corriente en.ª velocidad de electroventiladores — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 47 Trazo de corriente en.ª velocidad de electroventiladores — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 48 Trazo de corriente en.ª velocidad de electroventiladores — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 49 Trazo de corriente en la fase de encendido de la lámpara de sobretemperatura — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 50"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.arquitectura-y-funcionamiento-de-la-climatizacion-regulada-automatica-y-semiautomatica",
+   "nt": 662,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "arquitectura-y-funcionamiento-de-la-climatizacion-regulada-automatica-y-semiautomatica",
+   "seccion": "",
+   "titulo": "Arquitectura Y Funcionamiento De La Climatización Regulada (Automática Y Semiautomática)",
+   "codigo": "",
+   "menu": "Arquitectura Y Funcionamiento De La Cl",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Describe la lógica de control, los sensores de entrada, la estrategia de cálculo y la gestión de actuadores en sistemas de climatización electrónica. Aplica a climatizadores semiautomáticos y automáticos."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Regulación en bucle cerrado gobernada por un Calculador de Climatización. La unidad procesa las variables de temperatura interior, temperatura exterior, radiación solar y temperatura del evaporador para accionar servomotores de mezcla, recirculación y distribución, manteniendo de forma estable la temperatura de confort fijada en el display."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Entradas de información al Calculador: Sonda de temperatura interior del habitáculo. Sonda de temperatura exterior. Sonda de temperatura del evaporador. Selección del nivel de confort (temperatura consignada en el cuadro de mandos). Petición de marcha/parada A/C e información de recirculación. Procesamiento y Lógica de Control: El calculador evalúa la diferencia entre la temperatura ambiente y la consigna. Para evitar choques térmicos perjudiciales, la unidad de control no autoriza un salto térmico superior a 20 ºC entre el habitáculo interior y el exterior. Asigna una distribución térmica en el habitáculo donde la temperatura es ligeramente más alta en la zona de los pies que a nivel de la cabeza para maximizar el confort del individuo. Salidas y Gestión de Actuadores: En Climatización Semiautomática: La UCE regula electrónicamente el nivel de confort (motor de mezcla), la velocidad del motoventilador del habitáculo y la trampilla de reciclaje. En Climatización Automática: Además de los parámetros de la semiautomática, la UCE gobierna de forma automatizada los motores de repartición para decidir por qué difusores saldrá el aire (parabrisas, frontal o pies)."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Criterio de Regulación Valor Límitado por Calculador Diferencia máxima de temperatura autorizado (interior vs. exterior) Máximo 20 ºC de salto térmico Gradiente térmico vertical Temperatura en pies > Temperatura en cabeza"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Si la sonda de temperatura exterior se avería indicando valores extremadamente fríos, el calculador cortará el compresor para no congelar la instalación. Confundir climatización semiautomática con automática; la semiautomática exige la selección manual de los difusores de salida por parte del usuario."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Verificar que la pantalla muestra la temperatura seleccionada y que el calculador ajusta automáticamente la velocidad del ventilador y la trampilla de mezcla al calentar o enfriar las sondas térmicas."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema sinóptico de entradas y salidas en climatización regulada — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 55 Esquema general del circuito eléctrico con calculador de climatización y display — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 57 Esquema de componentes y conexiones de climatización semiautomática — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 76 Esquema de conexiones de climatización automática completa con motores individuales — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 78 Paneles de mandos con display digital de climatizaciones reguladas — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 109, 110, 111"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.sonda-de-temperatura-interior",
+   "nt": 663,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "sonda-de-temperatura-interior",
+   "seccion": "",
+   "titulo": "Sonda De Temperatura Interior",
+   "codigo": "",
+   "menu": "Sonda De Temperatura Interior",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Climatizaciones reguladas automáticas y semiautomáticas",
+   "ubicacion": "Montada en la consola central, salpicadero o plafón de techo del habitáculo",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la temperatura del aire en el interior del habitáculo para permitir a la unidad de control de climatización verificar la coherencia entre el ambiente real y el nivel de confort seleccionado por el usuario."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Termistor de coeficiente de temperatura negativo (NTC). Al aumentar la temperatura del aire interior, disminuye la resistencia eléctrica del sensor, modificando la caída de tensión analógica leída por la unidad de control de climatización."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Sensor NTC con carcasa de protección, instalado con frecuencia junto a un micromotor de aspiración para forzar el paso del aire del habitáculo sobre la sonda."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Acumulación de polvo, fibras o suciedad en la rejilla de aspiración que aíslan la NTC, o avería eléctrica de la sonda."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El calculador pierde la referencia de temperatura ambiente e impone un valor de sustitución por defecto, provocando excesos de calefacción o de refrigeración en el habitáculo."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Desconectar el conector y medir la resistencia entre sus bornes con un multímetro a diferentes temperaturas ambiente, comprobando que la resistencia disminuye de forma continua al aplicar calor."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.sonda-de-temperatura-exterior-2",
+   "nt": 664,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "sensor-de-temperatura-exterior",
+   "seccion": "",
+   "titulo": "Sonda De Temperatura Exterior",
+   "codigo": "",
+   "menu": "Sonda De Temperatura Exterior",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistemas de climatización regulada",
+   "ubicacion": "Montada en la parte inferior del espejo retrovisor exterior o en la zona frontal del vehículo tras el paragolpes",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Captar la temperatura del aire atmosférico exterior para que la unidad de control limite la diferencia térmica con el habitáculo a un máximo de 20 ºC y gestione la entrada de aire o el reciclaje."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Resistencia NTC estanca. Modifica su valor óhmico en función de la temperatura exterior. La unidad de control calcula la diferencia entre la temperatura interior y exterior para ajustar la masa de aire fresco requerida."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Encapsulado plástico estanco de alta resistencia a la humedad, agua de lluvia y proyecciones de la carretera."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Criterio de seguridad de regulación: Limita la diferencia máxima de temperatura interior/exterior a 20 ºC."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Cortocircuito o corte de cables en el paso de puerta/retrovisor por fatiga mecánica de los conductores."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "La pantalla de climatización o cuadro muestra valores irreales (ej. -40 ºC o +50 ºC) e impide el acoplamiento del compresor de aire acondicionado."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Medir la resistencia de la sonda con un polímetro en el conector del espejo retrovisor y consultar la lectura de temperatura exterior registrada en los bloques de parámetros del equipo de diagnosis."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.servomotor-de-mezcla-de-corriente-continua-con-potenciometro",
+   "nt": 665,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "servomotor-de-mezcla-de-corriente-continua-con-potenciometro",
+   "seccion": "",
+   "titulo": "Servomotor De Mezcla De Corriente Continua Con Potenciómetro",
+   "codigo": "",
+   "menu": "Servomotor De Mezcla De Corriente Cont",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Climatizaciones reguladas electrónicas",
+   "ubicacion": "Montado en el lateral de la caja climática, acoplado directamente al eje de la trampilla de mezcla",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Mover mecánicamente la trampilla de mezcla de temperatura y memorizar su posición angular exacta para transmitirla a la unidad de control de climatización."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Electromotor de corriente continua de 12 V que arrastra un tren de engranajes reductor para mover el sector dentado de la trampilla. El eje de salida arrastra la pista de un potenciómetro. La unidad de control analiza la tensión de salida devuelta por el potenciómetro para conocer en todo momento la posición exacta de la trampilla."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Motor eléctrico de CC (12 V), mecanismo de engranajes reductores y potenciómetro interno de pista resistiva de carbón."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tensión de alimentación del motor: 12 V (inversión de sentido mediante cambio de polaridad). Posicionamiento: Requiere reglaje de tope o posicionamiento previo según marca."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Desgaste o rotura de los dientes de los engranajes de plástico y sucia o desgaste en las pistas internas del potenciómetro."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "La trampilla queda bloqueada en una posición fija o da saltos bruscos sin lograr estabilizar la temperatura del aire seleccionada en el display."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Alimentar directamente con 12 V los terminales del motor para verificar el movimiento completo en ambos sentidos y medir con un óhmetro la variación continua de resistencia en los bornes del potenciómetro mientras se mueve la trampilla."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Mecanismo interno de motor de CC, reductora y potenciómetro de posición — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 61"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.servomotor-de-mezcla-paso-a-paso",
+   "nt": 666,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "servomotor-de-mezcla-paso-a-paso",
+   "seccion": "",
+   "titulo": "Servomotor De Mezcla Paso A Paso",
+   "codigo": "",
+   "menu": "Servomotor De Mezcla Paso A Paso",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Climatizadores electrónicos de precisión",
+   "ubicacion": "Fijado sobre la carcasa de la caja climática, accionando las trampillas de mezcla, distribución o recirculación",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Posicionar con alta exactitud las trampillas de regulación del climatizador mediante impulsos eléctricos digitales sin necesidad de utilizar un potenciómetro de retorno."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Utiliza un rotor con imanes permanentes (polos Norte y Sur) y un estator con múltiples bobinados desfasados (ej. bobinado A y B a 45º). La unidad de control alimenta secuencialmente los bobinados invirtiendo la polaridad (+ / -), obligando al rotor a girar un ángulo discreto (\"paso\"). La unidad de control determina la posición exacta contando el número de pasos emitidos."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Motor sin escobillas paso a paso con rotor magnético de 4, 6 o 12 pares de polos y estator multifase."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Ángulo de giro: 1/8 de vuelta por cada paso eléctrico. Ciclo completo de conmutación: 4 pasos por ciclo elemental. Estrategia de posición real: Requiere un reglaje automático de re-inicialización (búsqueda mecánica del tope cero). Tabla de secuencias de impulsos para sentido horario: 1.er paso: Bobinado A1(+), A2(-); Bobinado B3(X), B4(X) 2.º paso: Bobinado A1(X), A2(X); Bobinado B3(-), B4(+) 3.er paso: Bobinado A1(-), A2(+); Bobinado B3(X), B4(X) 4.º paso: Bobinado A1(X), A2(X); Bobinado B3(+), B4(-) 5.º paso: Repite secuencia del.er paso. Tabla para sentido anti-horario: Inversión de las polaridades asignadas a los bobinados A y B."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Pérdida de pasos por duresa mecánica en las articulaciones de las trampillas o fallo de conmutación en la etapa de potencia de la UCE."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Desalineación entre la posición real de la trampilla y la posición calculada por la UCE, produciendo ruidos de chasquido (\"clac-clac\") continuo al intentar calibrar los topes."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Medir la resistencia interna de las fases A y B del motor con un polímetro (deben ofrecer valores idénticos) y ejecutar el procedimiento de re-inicialización o ajuste básico mediante la máquina de diagnosis. | |---|---|---|---|---|---|---| |"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del rotor bipolar y los bobinados de excitación del motor paso a paso — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx | pág. 64 | 65 | 67 | 69 | 70 | 71 | Tabla de secuencias de impulsos eléctricos para sentido horario y anti-horario — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx | pág. 73 | 74 | | | | |"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.reglas-de-uso-y-normas-de-seguridad-en-la-manipulacion-del-climatizador-y-refrigerantes",
+   "nt": 667,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "reglas-de-uso-y-normas-de-seguridad-en-la-manipulacion-del-climatizador-y-refrigerantes",
+   "seccion": "",
+   "titulo": "Reglas De Uso Y Normas De Seguridad En La Manipulación Del Climatizador Y Refrigerantes",
+   "codigo": "",
+   "menu": "Reglas De Uso Y Normas De Seguridad En",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Define las normas de utilización del climatizador para preservar sus componentes y las medidas de prevención de riesgos laborales durante las operaciones de mantenimiento con gases refrigerantes. Aplica a usuarios y mecánicos de taller."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Prevención de lesiones graves por congelación criogénica (-30 ºC), asfixia por desplazamiento de aire, intoxicación por descomposición térmica del gas y protección del retén frontal del compresor mediante lubricación continua."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Taller o zona de trabajo adecuadamente ventilada. Queda estrictamente prohibida la intervención en fosos de reparación."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Guantes de látex, gafas de protección ocular estancas y solución de lavado ocular."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Normas de uso en el vehículo: 1. Orientar difusores hacia el techo o paredes laterales para evitar corrientes de aire directas. 2. Hacer funcionar periódicamente el climatizador para hacer circular el gas y el aceite, lubricando el retén frontal del compresor e impidiendo fugas de gas por resecomiénto y deterioro de los rodamientos. 3. Tras estacionar bajo el sol: ajustar máxima ventilación y máximo frío, circular unos minutos con las ventanillas bajadas para ventilar y subirlas cuando se reduzca el calor interior. 4. Utilizar la recirculación en máximo frío solo por tiempo limitado para evitar viciar el aire del habitáculo. Normas de seguridad con fluidos refrigerantes: 1. Utilizar obligatoriamente guantes de látex y gafas de protección durante la manipulación. 2. Trabajar siempre en ambientes ventilados. Prohibido manipular el circuito en fosos de taller (el gas refrigerante es más pesado que el aire y se acumula en el fondo produciendo asfixia). 3. En caso de contacto con la piel: descongelar la zona con agua, retirar prendas no adheridas y lavar inmediatamente con abundante agua tibia. 4. En caso de contacto con los ojos: lavar inmediatamente con solución ocular o agua limpia manteniendo los párpados cerrados durante al menos 10 minutos y acudir urgentemente al médico. 5. En caso de ingestión: no provocar el vómito. Si está consciente, hacer enjuagar la boca y beber 200-300 ml de agua, acudiendo inmediatamente al médico. 6. Prohibido fumar cerca del circuito o equipos de carga (el refrigerante se decompone en sustancias tóxicas al contacto con el fuego). 7. No introducir vehículos con aire acondicionado más de 20 minutos en hornos de secado de pintura a 80 ºC; en tal caso, evacuar previamente todo el refrigerante del circuito. 8. No dirigir el chorro de agua o aire a presión directamente sobre los componentes de la instalación al lavar el motor."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Parámetro / Condición de Seguridad Valor Límite Temperatura de congelación al contacto con refrigerante Aproximadamente -30 ºC Tiempo de lavado ocular ante proyecciones Mínimo 10 minutos continuos Volumen de agua a beber en ingestión consciente 200 a 300 ml de agua Tiempo y temp. máxima en horno de secado de pintura Máximo 20 minutos a 80 ºC (con circuito totalmente vacío)"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Trabajar en fosos de reparación creyendo que la extracción de aire general es suficiente; el gas refrigerante desplaza el oxígeno en las zonas bajas. Provocar el vómito a un accidentado que ha ingerido refrigerante."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Verificar la estanqueidad de las conexiones de la estación y comprobar que el operario lleva puestas las gafas estancas y guantes antes de abrir las llaves del equipo."
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "EPI obligatorio (gafas y guantes). Cumplimiento de las normativas de gestión de residuos y prevención de riesgos en el taller de automoción."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.procedimiento-de-vacio-carga-y-diagnostico-de-presiones-en-el-circuito",
+   "nt": 668,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "procedimiento-de-vacio-carga-y-diagnostico-de-presiones-en-el-circuito",
+   "seccion": "",
+   "titulo": "Procedimiento De Vacío, Carga Y Diagnóstico De Presiones En El Circuito",
+   "codigo": "",
+   "menu": "Procedimiento De Vacío, Carga Y Diagnó",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Describe las fases de evacuación de humedad mediante depresión profunda, el proceso de carga por pesaje del refrigerante y el análisis de averías mediante la lectura de manómetros. Aplica a operaciones de mantenimiento y reparación del circuito frigorífico."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Al reducir la presión interior del circuito mediante la bomba de vacío, desciende la temperatura de ebullición del agua residual provocando su evaporación y extracción en forma de vapor. La carga posterior exige la introducción exacta del peso de fluido en gramos y la restitución del aceite del compresor."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Estación de carga conectada mediante los acoplamientos rápidos a las tomas de alta presión (AP) y baja presión (BP)."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Estación de carga con manómetros (BP, AP, MV, GP), bomba de vacío, cilindro dosificador o báscula de pesaje, envases de refrigerante (R12 o R134a) y probeta graduada para aceite."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Fase de Vacío del Circuito: 1. Conectar la bomba de vacío P al circuito abriendo las válvulas correspondientes. 2. Reducir la presión hasta crear una depresión profunda cercana a 0 bar absolutos. 3. Mantener la bomba en funcionamiento para hacer hervir el agua a temperatura ambiente y extraer la humedad. 4. Cerrar las llaves y verificar que la aguja del vacuómetro permanece estable durante la prueba de estanqueidad. Fase de Carga de Refrigerante (R134a): 1. Pesar e introducir en el circuito la cantidad exacta prescrita por el fabricante en gramos. 2. Separar y medir en la probeta el aceite extraído durante la fase de recuperación. 3. Introducir la misma cantidad medida de aceite nuevo antes o durante el proceso de carga. Diagnóstico de Averías por Manómetros: Refrigerante Insuficiente: Lecturas de BP y AP anormalmente bajas. El Refrigerante no Circula (Obstrucción): El manómetro de BP cae a depresión/vacío mientras que AP muestra valores bajos. Humedad en el Circuito: El manómetro de BP cae periódicamente a vacío (al congelarse la válvula de expansión) y vuelve a subir cuando el hielo se derrite. Avería en la Compresión del Compresor: Las presiones de BP y AP se igualan (BP muy alta y AP muy baja). Excesivo Refrigerante o Condensador Sucio: Presión de AP excesivamente alta y BP alta. Aire en el Circuito: Presión de AP anormalmente elevada y con oscilaciones en la aguja. Válvula de Expansión demasiado Abierta: BP excesivamente alta y formación de escarcha en la tubería de aspiración del compresor."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Estado del Circuito / Prueba Valor y Condición Punto de ebullición del agua a 1 bar 100 ºC Presión de vacío requerida Depresión cercana a 0 bar absolutos para evaporación a temp. ambiente"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Intentar cargar el circuito de R134a por presión en lugar de efectuar el pesaje exacto del gas en la báscula digital. Omitir la reposición de la cantidad exacta de aceite nuevo equivalente al aceite usado recuperado."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Verificar que la presión de alta y baja presión se sitúan dentro de los rangos especificados para la temperatura ambiente y comprobar la eficacia frigorífica en las rejillas del salpicadero."
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Prohibida la liberación de refrigerante a la atmósfera. Uso obligatorio de estaciones de recuperación y reciclaje homologadas."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Gráfica de relación entre la presión (bar) y la temperatura de ebullición del agua (ºC) — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 94 Esquema completo de la estación de carga con bomba de vacío, cilindro y manómetros — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 98"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.localizacion-y-diagnostico-de-fugas-en-el-circuito-frigorifico",
+   "nt": 669,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "localizacion-y-diagnostico-de-fugas-en-el-circuito-frigorifico",
+   "seccion": "",
+   "titulo": "Localización Y Diagnóstico De Fugas En El Circuito Frigorífico",
+   "codigo": "",
+   "menu": "Localización Y Diagnóstico De Fugas En",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Detalla las tecnologías de detección de fugas, la evaluación de sensibilidad de los equipos y el procedimiento técnico para localizar pérdidas de gas. Aplica a la diagnosis de faltas de estanqueidad."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Detección por conductividad térmica, ionización, principio de diodo calefactado, efecto Corona o identificación óptica por fluorescencia bajo luz ultravioleta (UV) del aditivo trazador mezclado con el aceite."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Circuito frigorífico presurizado o cargado con aditivo trazador en el aceite lubricante."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Detectores electrónicos de fugas (efecto Corona, conductividad térmica, diodo calefactado), lámpara ultravioleta (UV), aditivo trazador fluorescente (30 ml de aceite con trazador) y agua jabonosa."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Selección del Método de Detección: - Fugas muy rápidas / reventón de tubo: Inspección visual y aplicación de agua jabonosa sobre la zona sospechosa. - Fugas lentas (> 24 horas): Detección mediante equipo electrónico o lámpara UV con trazador. Evaluación de los Equipos de Detección: - Lámpara haloide: Inadaptada para refrigerantes HFC (R134a) y de muy baja fiabilidad. - Detección por ultrasonidos: Sensibilidad mediocre. - Detección por efecto Corona: Buena capacidad de detección (ej. Robinair 16500, CPS LS 790 A), aunque la sensibilidad depende del sensor. - Detección por conductividad térmica: Muy buena sensibilidad (< 5 g/año) para todos los fluidos y permite cuantificar la fuga. - Detección por diodo calefactado: Buena sensibilidad, salvo en ambientes muy contaminados donde el captador se dessensibiliza. - Fluorescencia UV: Apta para todos los fluidos; detecta fugas de hasta un máximo de 7 g/año. Requiere añadir 30 ml de aceite con aditivo trazador al circuito. Procedimiento de Barrido con Detector Electrónico: - Desplazar la sonda detectora lentamente por la parte inferior de racores, manguitos, condensador y retén del compresor (el gas es más pesado que el aire). - Observar el tiempo de respuesta y la señal acústica/luminosa del detector. | |---|---|---| |"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Método / Tipo de Detector Umbral de Sensibilidad / Parámetro Umbral de sensibilidad mínima estática 5 g / año Umbral de sensibilidad en movimiento 1 a 5 g / año Tiempo de respuesta del detector tras absorción < 2 segundos Sensibilidad de detector por conductividad térmica < 5 g / año para cualquier fluido Sensibilidad de detección por fluorescencia UV Fugas de un máximo de 7 g / año Cantidad de aceite con trazador a añadir 30 ml de aceite con aditivo"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Utilizar lámparas haloides para buscar fugas de R134a; no reaccionan al no contener átomos de cloro. Mover el sensor electrónico demasiado rápido o realizar la prueba en corrientes de aire que dispersen el gas emanado por la fuga."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Verificar la ausencia de emisiones acústicas en el detector electrónico tras reparar la fuga o confirmar la ausencia de manchas amarillas/verdes brillantes bajo la luz de la lámpara UV."
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Utilizar gafas filtrantes amarillas de protección ocular cuando se trabaje con la lámpara de luz ultravioleta (UV) para evitar lesiones en la retina."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Tabla comparativa de sensibilidad entre tipos de detectores de fugas — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx | pág. 102 | 103 | Modelos de detectores electrónicos por efecto Corona y conductividad — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx | pág. 105 | 106 | Lámpara de luz ultravioleta para detección de trazador fluorescente — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 107"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.circuito-frigorifico-11",
+   "nt": 670,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "circuito-frigorifico",
+   "seccion": "",
+   "titulo": "Circuito Frigorífico",
+   "codigo": "",
+   "menu": "Circuito Frigorífico",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Explica la estructura, la disposición de componentes y el funcionamiento general del circuito frigorífico en el sistema autoclima y en el aire acondicionado de accionamiento manual."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Circuito cerrado de climatización por el que circula el agente frigorífico R134a, elevando su presión mediante un compresor, cediendo calor en el condensador, filtrando humedad y residuos en el filtro deshidratador, regulando caudal y presión en la válvula de expansión y absorbiendo calor del habitáculo en el evaporador."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Agente frigorífico del tipo R134a."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El circuito frigorífico montado en el autoclima es idéntico al utilizado en el sistema de aire acondicionado de accionamiento manual. El fluido realiza el siguiente recorrido a través de los componentes del circuito: - Condensador: ubicado por delante del radiador del líquido refrigerante. - Filtro deshidratador: encargado de retener la humedad, filtrar los residuos procedentes de la abrasión y evitar que se produzcan burbujas en el circuito. - Válvula de expansión: punto donde se controla la presión y el caudal del agente frigorífico. - Evaporador: ubicado en la unidad climática, donde se produce la expansión y da lugar al intercambio de calor entre el agente frigorífico y el aire de entrada al habitáculo. - Compresor: genera la presión necesaria en el circuito y es del tipo autorregulado con 7 cilindros. Su arrastre se realiza mediante correa Poly V y acoplamiento magnético, activado por la solicitud del usuario o de la unidad de control del autoclima. Cuenta con una válvula de seguridad tarada a 44 bares. - Conmutador de presión F129 / Transmisor electrónico G65: montado en la línea de alta presión, junto a la válvula de expansión (según la motorización del vehículo). - Silenciador: ubicado en el circuito de baja presión, cerca del compresor, con la misión de amortiguar el ruido producido por las ondas de presión entre la válvula de expansión y el compresor."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Parámetro Valor Condiciones Carga de agente frigorífico 750-50 gramos Agente frigorífico R134a en el circuito frigorífico Presión de disparo de la válvula de seguridad 44 bares Válvula de seguridad integrada en el compresor"
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Válvula de seguridad integrada en el compresor tarada a 44 bares para prevenir sobrepresiones en el circuito."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema general del circuito frigorífico indicando la ubicación del compresor, transmisor de presión, filtro deshidratador, válvula de expansión, condensador, evaporador y silenciador — Fuente: CIRCUITO FRIGORÍFICO.pdf, pág. 1"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.condensador-20",
+   "nt": 671,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "condensador",
+   "seccion": "",
+   "titulo": "Condensador",
+   "codigo": "",
+   "menu": "Condensador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y aire acondicionado de accionamiento manual",
+   "ubicacion": "Ubicado por delante del radiador del líquido refrigerante",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Ceder calor al exterior en el circuito frigorífico enfriando el fluido procedente del compresor."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Montado en la parte frontal del vehículo, por delante del radiador del líquido refrigerante del motor."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.filtro-deshidratador-11",
+   "nt": 672,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "filtro-deshidratador",
+   "seccion": "",
+   "titulo": "Filtro Deshidratador",
+   "codigo": "",
+   "menu": "Filtro Deshidratador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y aire acondicionado de accionamiento manual",
+   "ubicacion": "En la tubería del circuito frigorífico",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Retener la humedad, filtrar los residuos procedentes de la abrasión y evitar que se produzcan burbujas en el circuito."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Integrado en el circuito frigorífico."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.valvula-de-expansion-13",
+   "nt": 673,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "dispositivos-de-expansion",
+   "seccion": "",
+   "titulo": "Válvula De Expansión",
+   "codigo": "",
+   "menu": "Válvula De Expansión",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y aire acondicionado de accionamiento manual",
+   "ubicacion": "En el circuito frigorífico, previa al evaporador y junto al conmutador F129 / transmisor G65",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Controlar la presión y el caudal del agente frigorífico en el circuito."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Montada en el circuito frigorífico junto al conmutador de presión F129 o transmisor electrónico G65."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.evaporador-21",
+   "nt": 674,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "evaporador",
+   "seccion": "",
+   "titulo": "Evaporador",
+   "codigo": "",
+   "menu": "Evaporador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y aire acondicionado de accionamiento manual",
+   "ubicacion": "Ubicado en la unidad climática",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Producir la expansión del agente frigorífico y dar lugar al intercambio de calor entre el agente frigorífico y el aire de entrada al habitáculo."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Montado dentro de la unidad climática."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.compresor-11",
+   "nt": 675,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "compresor",
+   "seccion": "",
+   "titulo": "Compresor",
+   "codigo": "",
+   "menu": "Compresor",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y aire acondicionado de accionamiento manual",
+   "ubicacion": "En el circuito frigorífico, accionado mediante correa Poly V desde el motor",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Generar la presión necesaria en el circuito frigorífico para impulsar el agente frigorífico R134a."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Compresor de tipo autorregulado dotado de 7 cilindros. Su arrastre se realiza mediante una correa Poly V y a través de un acoplamiento magnético, activándose por solicitud del usuario o de la unidad de control del autoclima."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Tipo autorregulado, 7 cilindros, accionamiento por correa Poly V y acoplamiento magnético. Dispone de una válvula de seguridad incorporada."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Válvula de seguridad tarada a 44 bares. Carga del circuito de 750-50 gramos de agente frigorífico R134a."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.conmutador-de-presion-f129-11",
+   "nt": 676,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "conmutador-de-presion-f129",
+   "seccion": "",
+   "titulo": "Conmutador De Presión F129",
+   "codigo": "F129 / G65",
+   "menu": "Conmutador De Presión F129 F129 / G65",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y aire acondicionado de accionamiento manual (según motorización del vehículo)",
+   "ubicacion": "En el circuito de alta presión, junto a la válvula de expansión",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Supervisar o medir la presión del agente frigorífico en la rama de alta presión del circuito."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Según la motorización del vehículo, se instala un conmutador electromecánico de presión (F129) o un transmisor electrónico de presión (G65)."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Conmutador de presión F129 o transmisor electrónico G65."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.silenciador-11",
+   "nt": 677,
    "modulo": "ssc",
    "unidad": "sin-clasificar",
    "clave": "silenciador",
