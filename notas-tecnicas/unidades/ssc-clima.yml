@@ -46,3 +46,111 @@ apartados_propios:
         Cantidad de refrigerante y de lubricante, uso de la estación de carga,
         recuperación, y colorante para detectar fugas, si el procedimiento lo
         trata.
+
+# ───────────────────────────────────────────────────────────────────────────
+# ÍNDICE DEL CURSO  (propuesta — reordénalo a tu gusto)
+#
+# El orden del curso lo manda esto, NO el número de nota. Cada sección agrupa
+# los componentes (claves) en el orden en que quieres que el alumno los vea.
+# Sigue el recorrido del circuito: el compresor primero, y de alta a baja.
+#
+# - Los nombres de la derecha son las 'claves' de agrupación (las que ves en
+#   claves.yml). Muévelas de sección, cámbialas de orden, o crea secciones.
+# - Lo que no esté aquí saldrá al final en "Por ubicar", nunca se pierde.
+# - "impacto-ambiental" aún no tiene notas: es el hueco reservado para cuando
+#   generemos ese contenido; de momento tira de normativa y refrigerantes.
+# ───────────────────────────────────────────────────────────────────────────
+
+indice:
+  - seccion: 1. Impacto ambiental y seguridad
+    claves:
+      - normativa-medioambiental-y-gestion-de-gases-fluorados
+      - seguridad-y-manipulacion
+      - refrigerante
+      - aceite-frigorifico
+
+  - seccion: 2. Principios de funcionamiento
+    claves:
+      - principios-de-refrigeracion
+      - confort-termico
+      - circuito-frigorifico
+      - ciclo-frigorifico-valvula
+      - ciclo-frigorifico-estrangulador
+      - subenfriamiento
+
+  - seccion: 3. Circuito frigorífico · lado de alta presión
+    claves:
+      - compresor              # el rey por excelencia
+      - embrague-electromagnetico
+      - valvula-reguladora-n280
+      - condensador
+      - ventilador-del-condensador
+      - deposito-colector
+      - filtro-deshidratador
+      - mirilla
+
+  - seccion: 4. Dispositivos de expansión
+    claves:
+      - valvula-de-expansion
+      - estrangulador
+      - tubo-de-expansion
+
+  - seccion: 5. Circuito frigorífico · lado de baja presión
+    claves:
+      - evaporador
+      - vaso-de-expansion
+      - amortiguador-de-oscilaciones
+      - tuberias-y-racores
+      - tomas-de-servicio
+
+  - seccion: 6. Sensores
+    claves:
+      - presostatos
+      - transmisor-de-presion
+      - sensor-de-evaporador
+      - sensor-de-temperatura-exterior
+      - sensor-de-temperatura-interior
+      - sensor-de-salida-de-aire
+      - sensor-de-refrigerante-del-motor
+      - sensor-de-calidad-del-aire
+      - sensor-de-humedad
+      - fotosensor-solar
+      - sensor-de-ocupacion
+
+  - seccion: 7. Actuadores y mandos
+    claves:
+      - servomotor-de-chapaleta
+      - ventilador-del-habitaculo
+      - unidad-de-control-y-mandos
+      - electronica-y-red
+
+  - seccion: 8. Regulación y control
+    claves:
+      - regulacion-basica
+      - regulacion-manual
+      - regulacion-automatica
+      - recirculacion
+      - distribucion-de-aire
+      - can-bus
+
+  - seccion: 9. Diagnóstico y mantenimiento
+    claves:
+      - diagnostico
+      - lectura-de-manometros
+      - deteccion-de-fugas
+      - vacio
+      - carga-refrigerante
+      - recuperacion-reciclaje
+      - lavado-del-circuito
+      - limpieza-del-evaporador
+      - mantenimiento-y-servicio
+
+  - seccion: 10. Calefacción auxiliar e independiente
+    claves:
+      - radiador-de-calefaccion
+      - elemento-calefactor-ptc
+      - valvula-corte-refrigerante
+      - bomba-dosificadora-combustible
+      - bujia-de-precalentamiento-para-calefaccion
+      - guardallamas
+      - turbina-de-aire-de-combustion
