@@ -295,6 +295,36 @@ def procesar_nota(titulo_bruto, cuerpo, numero):
     return "\n".join(lineas), None
 
 
+def importar_suelto(origen, texto, args, coberturas, pendientes):
+    """Un .md de prosa (sin cabeceras del prompt) entra como una sola nota."""
+    # Título a partir del nombre del archivo: sin número inicial ni guiones.
+    base = re.sub(r"\.md$", "", origen.name)
+    base = re.sub(r"^\d+[_\s-]*", "", base).replace("_", " ").strip()
+    titulo = (base[:1].upper() + base[1:]) if base else "Nota importada"
+
+    # Quitar el cierre conversacional típico de la IA ("❄️ ¿Te gustaría…?").
+    cuerpo = re.sub(r"\n+[^\n]*¿(Te gustar|Quieres|Deseas)[^\n]*\?\s*$", "", texto).strip()
+    cuerpo = re.sub(r"^\s*-{3,}\s*$", "", cuerpo, flags=re.M)
+    cuerpo = CITAS.sub("", cuerpo)
+
+    numero = args.desde
+    ident = id_unico("ssc.sin-clasificar." + slug(titulo))
+    lineas = ["---", f"id: {ident}", "modulo: ssc", "unidad: sin-clasificar",
+              f"nt: {numero}", f'titulo: {yval(titulo)}',
+              "menu: " + yval(titulo[:38]),
+              "grupo: POR CLASIFICAR", "fuentes: POR COMPLETAR",
+              "origen: extension (revisar y estructurar)",
+              "---", "",
+              "## Contenido", "", cuerpo, ""]
+    DIR_NOTAS.mkdir(exist_ok=True)
+    nombre = f"{args.prefijo}nt{numero:02d}-{slug(titulo)[:45].strip('-')}.md"
+    (DIR_NOTAS / nombre).write_text("\n".join(lineas), encoding="utf-8")
+    print(f"  creada  notas/{nombre}  (import suelto: 1 nota, revisar)")
+    for c in coberturas:
+        print(f"\n  cobertura declarada: {c}")
+    return
+
+
 def siguiente_libre():
     """El primer número de nota que no está usado, para no pisar nada."""
     usados = set()
@@ -344,7 +374,11 @@ def main():
 
     marcas = list(CABECERA.finditer(texto))
     if not marcas:
-        sys.exit("No he encontrado ninguna cabecera 'NOTA DE PROCESO —' o 'NOTA TÉCNICA —'")
+        # Sin cabeceras del prompt: es prosa suelta (respuesta cruda de la IA,
+        # típico de la extensión). Se salva como UNA nota, mejor que perderla.
+        # Sale marcada para que se sepa que es de baja estructura y hay que
+        # repasarla; el título sale del nombre del archivo.
+        return importar_suelto(origen, texto, args, coberturas, pendientes)
 
     if arreglos:
         print("Corregido en todo el archivo: " + ", ".join(arreglos) + "\n")

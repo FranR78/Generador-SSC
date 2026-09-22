@@ -54,9 +54,11 @@ def main():
         print(f"  archivado en entrada/procesados/{destino_nombre}")
 
     if fallos:
-        print("\nNo se han podido importar: " + ", ".join(fallos), file=sys.stderr)
-        print("Se quedan en entrada/ para revisarlos.", file=sys.stderr)
-        return 1
+        # Un archivo que falla NO bloquea a los demás ni al resto del workflow:
+        # los buenos ya se han importado y se deben generar y commitear. Los
+        # malos se quedan en entrada/ para revisarlos, y se avisa.
+        print("\nNo se han podido importar (se quedan en entrada/): "
+              + ", ".join(fallos), file=sys.stderr)
     return 0
 
 
