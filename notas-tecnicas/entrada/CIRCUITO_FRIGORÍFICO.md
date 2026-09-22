@@ -1,22 +1,22 @@
-El documento **CIRCUITO FRIGORÍFICO.pdf** describe la estructura, componentes y parámetros operativos del sistema de climatización de un vehículo (autoclima), el cual es equivalente al de accionamiento manual. El circuito trabaja con una carga de **750 ± 50 gramos** de refrigerante **R134a**.
+El documento **CIRCUITO FRIGORÍFICO.pdf** analiza la estructura, componentes y parámetros de funcionamiento del circuito frigorífico montado en el autoclima, el cual es idéntico al utilizado en el aire acondicionado de accionamiento manual. El sistema opera con una carga de **750 ± 50 gramos** de agente frigorífico del tipo **R134a**.
 
 ---
 
-### **Componentes del circuito y sus funciones**
+### **Componentes principales del circuito**
 
-* **Compresor**: Genera la presión necesaria para la circulación del refrigerante. Es un modelo autorregulado de **7 cilindros**, arrastrado por una **correa Poly V** mediante un **acoplamiento magnético** accionado a petición del usuario o por la unidad de control. Incluye una **válvula de seguridad** tarada a **44 bares**.
-* **Condensador**: Se ubica por delante del radiador del líquido refrigerante del motor.
-* **Filtro deshidratador**: Cumple la función de retener la humedad, filtrar los residuos de la abrasión y prevenir la formación de burbujas dentro del circuito.
-* **Válvula de expansión**: Regula el caudal y la presión del agente frigorífico.
-* **Evaporador**: Situado dentro de la unidad climática, es la zona donde se expande el refrigerante y se realiza el intercambio térmico para enfriar el aire que ingresa al habitáculo.
-
----
-
-### **Elementos de regulación y confort**
-
-* **Conmutador/Transmisor de presión**: En el lado de alta presión, junto a la válvula de expansión, se sitúa el conmutador **F129** o el transmisor electrónico **G65**, según la motorización.
-* **Silenciador**: Instalado en el lado de baja presión, cerca del compresor, su función es amortiguar el ruido provocado por las ondas de presión entre la válvula de expansión y el compresor.
+* **Compresor**: Es el encargado de generar la presión necesaria en el circuito. Corresponde a un modelo de tipo **autorregulado con 7 cilindros**. Su arrastre se realiza mediante una **correa Poly V** a través de un **acoplamiento magnético**, accionado según la solicitud del usuario o de la unidad de control del autoclima. Dispone además de una **válvula de seguridad** tarada a **44 bares**.
+* **Condensador**: Está ubicado estratégicamente por delante del radiador del líquido refrigerante.
+* **Filtro deshidratador**: Cumple las funciones de **retener la humedad**, **filtrar residuos** derivados de la abrasión y **prevenir la formación de burbujas** dentro del circuito.
+* **Válvula de expansión**: Punto donde se regulan y controlan la **presión** y el **caudal** del agente frigorífico.
+* **Evaporador**: Situado en la unidad climática, es el componente donde se realiza la expansión del fluido y el **intercambio térmico** para enfriar el aire que ingresa al habitáculo.
 
 ---
 
-🛠️ ¿Te gustaría profundizar en el funcionamiento de alguno de los componentes o que preparemos una guía de diagnóstico para esta configuración?
+### **Elementos de regulación y amortiguación de ruido**
+
+* **Conmutador / Transmisor de presión**: Instalado en la sección de **alta presión**, junto a la válvula de expansión. Según la motorización del vehículo, se utiliza el conmutador de presión **F129** o el transmisor electrónico **G65**.
+* **Silenciador**: Se encuentra posicionado en el circuito de **baja presión**, en las proximidades del compresor. Su misión es **amortiguar el ruido** provocado por las ondas de presión que se generan entre la válvula de expansión y el compresor.
+
+---
+
+💡 ¿Te gustaría que analicemos en detalle la función de las señales del transmisor de presión G65 frente al conmutador F129, o prefieres revisar las pautas de diagnóstico para este tipo de circuito?
