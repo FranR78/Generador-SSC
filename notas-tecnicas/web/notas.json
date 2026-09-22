@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-22",
- "total": 1206,
+ "total": 1214,
  "grupos": [
   "Actuadores y mandos",
   "Calefacción",
@@ -51961,6 +51961,258 @@
     {
      "titulo": "Características",
      "texto": "Montado en la canalización del circuito de baja presión, próximo al compresor."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.circuito-frigorifico-47",
+   "nt": 1232,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "circuito-frigorifico",
+   "seccion": "",
+   "titulo": "Circuito Frigorífico",
+   "codigo": "",
+   "menu": "Circuito Frigorífico",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Esta nota explica el esquema general, el recorrido del refrigerante y la función básica de cada componente dentro del circuito frigorífico en sistemas de aire acondicionado de accionamiento manual y en sistemas autoclima."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El circuito frigorífico es un sistema cerrado en el que el agente frigorífico R134a circula alternando estados de alta y baja presión para absorber calor del aire del habitáculo en el evaporador y cederlo al aire exterior a través del condensador."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Agente frigorífico del tipo R134a."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El circuito frigorífico montado en el sistema autoclima es idéntico al utilizado en el aire acondicionado de accionamiento manual. El fluido recorre secuencialmente los siguientes elementos en el circuito: - Compresor: eleva la presión del agente frigorífico mediante 7 cilindros autorregulados. - Condensador: situado en la parte frontal, disipa calor hacia el exterior. - Filtro deshidratador: retiene la humedad existente, filtra residuos de abrasión y evita la formación de burbujas en la tubería. - Válvula de expansión: regula el caudal y la presión del agente frigorífico previa entrada al evaporador. - Evaporador: ubicado dentro de la unidad climática, donde el refrigerante se expande y absorbe el calor del aire de entrada al habitáculo. - Silenciador: montado en la línea de baja presión, cerca del compresor, para amortiguar el ruido originado por las ondas de presión entre la válvula de expansión y el compresor. - Conmutador F129 / Transmisor G65: supervisa la presión en el tramo de alta presión junto a la válvula de expansión."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Parámetro Valor Condiciones Carga de agente frigorífico 750 - 50 gramos Carga total de R134a en el circuito frigorífico Presión de disparo de la válvula de seguridad 44 bares Tarado de la válvula de seguridad montada en el compresor"
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "El compresor cuenta con una válvula de seguridad tarada a 44 bares para prevenir sobrepresiones destructivas en la instalación."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema general del circuito frigorífico con la disposición del compresor, transmisor de presión, filtro deshidratador, válvula de expansión, condensador, evaporador y silenciador — Fuente: CIRCUITO FRIGORÍFICO.pdf, pág. 1"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.condensador-57",
+   "nt": 1233,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "condensador",
+   "seccion": "",
+   "titulo": "Condensador",
+   "codigo": "",
+   "menu": "Condensador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y aire acondicionado de accionamiento manual",
+   "ubicacion": "Por delante del radiador del líquido refrigerante del motor",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Formar parte del circuito frigorífico cediendo al aire exterior el calor transportado por el agente frigorífico."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Montado en el frontal del vehículo, situado por delante del radiador del circuito de refrigeración del motor."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.filtro-deshidratador-47",
+   "nt": 1234,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "filtro-deshidratador",
+   "seccion": "",
+   "titulo": "Filtro Deshidratador",
+   "codigo": "",
+   "menu": "Filtro Deshidratador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y aire acondicionado de accionamiento manual",
+   "ubicacion": "Integrado en las canalizaciones del circuito frigorífico",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Retener la humedad disuelta en el circuito, filtrar los residuos sólidos producidos por abrasión y evitar la formación de burbujas en el fluido."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Filtro de retención mecánica y deshidratante integrado en la tubería del circuito."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.valvula-de-expansion-50",
+   "nt": 1235,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "dispositivos-de-expansion",
+   "seccion": "",
+   "titulo": "Válvula De Expansión",
+   "codigo": "",
+   "menu": "Válvula De Expansión",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y aire acondicionado de accionamiento manual",
+   "ubicacion": "En el circuito frigorífico, previa a la entrada del evaporador y junto al sensor de presión (F129/G65)",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Dosificar y controlar el caudal y la presión del agente frigorífico que entra al evaporador."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Válvula de regulación montada junto al conmutador F129 o transmisor G65."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.evaporador-59",
+   "nt": 1236,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "evaporador",
+   "seccion": "",
+   "titulo": "Evaporador",
+   "codigo": "",
+   "menu": "Evaporador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y aire acondicionado de accionamiento manual",
+   "ubicacion": "Montado dentro de la unidad climática",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Provocar la expansión del agente frigorífico e intercambiar calor entre el refrigerante y el aire enfocado hacia el habitáculo."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Intercambiador térmico alojado en el interior de la unidad climática."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.compresor-47",
+   "nt": 1237,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "compresor",
+   "seccion": "",
+   "titulo": "Compresor",
+   "codigo": "",
+   "menu": "Compresor",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y aire acondicionado de accionamiento manual",
+   "ubicacion": "En el vano motor, accionado mediante correa Poly V",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Generar la presión necesaria en el circuito para hacer circular el agente frigorífico R134a."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Mecanismo de compresión mediante 7 cilindros autorregulados. Recibe el movimiento del motor mediante una correa Poly V a través de un acoplamiento magnético, el cual se conecta eléctricamente por demanda del usuario o por la unidad de control del autoclima."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Tipo: Autorregulado de 7 cilindros. Accionamiento: Correa Poly V con acoplamiento magnético. Dispositivo de protección: Válvula de seguridad integrada."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Válvula de seguridad: apertura tarada a 44 bares. Carga de refrigerante del circuito: 750 - 50 gramos de R134a."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.conmutador-de-presion-f129-47",
+   "nt": 1238,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "conmutador-de-presion-f129",
+   "seccion": "",
+   "titulo": "Conmutador De Presión F129",
+   "codigo": "F129 / G65",
+   "menu": "Conmutador De Presión F129 F129 / G65",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y aire acondicionado de accionamiento manual (según motorización)",
+   "ubicacion": "En la tubería de alta presión, junto a la válvula de expansión",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Monitorear y medir la presión existente en el tramo de alta presión del circuito frigorífico."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Dependiendo de la motorización del vehículo, se instala un conmutador electromecánico de presión (F129) o un transmisor electrónico de presión (G65)."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Conmutador de presión electromecánico F129 o transmisor electrónico G65."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.silenciador-47",
+   "nt": 1239,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "silenciador",
+   "seccion": "",
+   "titulo": "Silenciador",
+   "codigo": "",
+   "menu": "Silenciador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y aire acondicionado de accionamiento manual",
+   "ubicacion": "En el tramo de baja presión del circuito frigorífico, próximo al compresor",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Amortiguar las oscilaciones y ruidos generados por las ondas de presión en la tubería entre la válvula de expansión y el compresor."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Absorbe y disipa las pulsaciones de presión del fluido en la línea de baja presión."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Elemento amortiguador acústico montado directamente en la tubería de baja presión."
     }
    ]
   }
