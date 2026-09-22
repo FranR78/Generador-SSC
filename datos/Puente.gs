@@ -186,10 +186,12 @@ function crearActivador() {
   // Los documentos ya procesados no corren ninguna prisa: con una vez al día
   // sobra, y así no se gasta cuota de ejecución para nada.
   crearUno_('puenteNT_archivarProcesados', 60 * 24);
-  // Los apuntes del portal: una vez al día basta.
-  crearUno_('puenteNT_traerNotas', 60 * 24);
+  // Los apuntes del portal: cada hora. Así, cuando se regeneran las notas en
+  // GitHub, el portal se pone al día solo en menos de una hora, sin tener que
+  // ejecutar el puente a mano cada vez.
+  crearUno_('puenteNT_traerNotas', 60);
 
-  console.log('Activadores creados: capturas cada 15 min; archivado y apuntes, una vez al día.');
+  console.log('Activadores: capturas cada 15 min; apuntes cada hora; archivado una vez al día.');
 }
 
 
@@ -201,6 +203,9 @@ function crearUno_(funcion, minutos) {
   const disparador = ScriptApp.newTrigger(funcion).timeBased();
   if (minutos >= 60 * 24) {
     disparador.everyDays(1).atHour(6).create();
+  } else if (minutos % 60 === 0) {
+    // everyMinutes solo admite 1/5/10/15/30; para 60 o más, por horas.
+    disparador.everyHours(minutos / 60).create();
   } else {
     disparador.everyMinutes(minutos).create();
   }
