@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-22",
- "total": 575,
+ "total": 633,
  "grupos": [
   "Actuadores y mandos",
   "Circuito frigorífico",
@@ -26968,6 +26968,2272 @@
     {
      "titulo": "Principio de funcionamiento",
      "texto": "Atenúa acústicamente las ondas de presión generadas durante la circulación del gas en el tramo de baja presión."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Montado en la canalización del circuito de baja presión, próximo al compresor."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.circuito-frigorifico-6",
+   "nt": 591,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "circuito-frigorifico",
+   "seccion": "",
+   "titulo": "Circuito Frigorífico",
+   "codigo": "",
+   "menu": "Circuito Frigorífico",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Estructura y funcionamiento general del circuito frigorífico en el sistema autoclima y en el aire acondicionado de accionamiento manual."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Circuito cerrado de climatización por el que circula el agente frigorífico R134a, elevando su presión mediante un compresor, cediendo calor en el condensador, filtrando humedad y residuos en el filtro deshidratador, regulando caudal y presión en la válvula de expansión para absorber calor del habitáculo en el evaporador."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Agente frigorífico del tipo R134a."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El circuito frigorífico montado en el autoclima es idéntico al utilizado en el sistema de aire acondicionado de accionamiento manual. El fluido recorre los siguientes componentes en el circuito: - Condensador: ubicado por delante del radiador del líquido refrigerante del motor. - Filtro deshidratador: encargado de retener la humedad, filtrar los residuos procedentes de la abrasión y evitar que se produzcan burbujas en el circuito. - Válvula de expansión: punto donde se controla la presión y el caudal del agente frigorífico. - Evaporador: ubicado en la unidad climática, donde se produce la expansión y da lugar al intercambio de calor entre el agente frigorífico y el aire de entrada al habitáculo. - Compresor: genera la presión necesaria en el circuito y es del tipo autorregulado con 7 cilindros. Su arrastre se realiza mediante correa Poly V y acoplamiento magnético, activado por la solicitud del usuario o de la unidad de control del autoclima. Cuenta con una válvula de seguridad tarada a 44 bares. - Conmutador de presión F129 / Transmisor electrónico G65: montado en la línea de alta presión, junto a la válvula de expansión (según la motorización del vehículo). - Silenciador: ubicado en el circuito de baja presión, cerca del compresor, con la misión de amortiguar el ruido producido por las ondas de presión entre la válvula de expansión y el compresor."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Parámetro Valor Condiciones Carga de agente frigorífico 750-50 gramos Agente frigorífico R134a en el circuito frigorífico Presión de disparo de la válvula de seguridad 44 bares Válvula de seguridad integrada en el compresor"
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Válvula de seguridad en el compresor tarada a 44 bares para prevenir sobrepresiones en el circuito."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema general del circuito frigorífico con la ubicación del compresor, transmisor de presión, filtro deshidratador, válvula de expansión, condensador, evaporador y silenciador — Fuente: CIRCUITO FRIGORÍFICO.pdf, pág. 1"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.condensador-15",
+   "nt": 592,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "condensador",
+   "seccion": "",
+   "titulo": "Condensador",
+   "codigo": "",
+   "menu": "Condensador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "Por delante del radiador del líquido refrigerante",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Ceder al exterior el calor extraído del habitáculo enfriando el agente frigorífico."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Montado en el frontal del vehículo, por delante del radiador del líquido refrigerante."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.filtro-deshidratador-6",
+   "nt": 593,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "filtro-deshidratador",
+   "seccion": "",
+   "titulo": "Filtro Deshidratador",
+   "codigo": "",
+   "menu": "Filtro Deshidratador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "En el circuito frigorífico",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Retener la humedad, filtrar los residuos procedentes de la abrasión y evitar que se produzcan burbujas en el circuito."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Integrado en la canalización del circuito frigorífico."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.valvula-de-expansion-8",
+   "nt": 594,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "dispositivos-de-expansion",
+   "seccion": "",
+   "titulo": "Válvula De Expansión",
+   "codigo": "",
+   "menu": "Válvula De Expansión",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "En el circuito frigorífico, previa al evaporador y junto al conmutador F129 / transmisor G65",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Controlar la presión y el caudal del agente frigorífico hacia el evaporador."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Montada junto al conmutador de presión F129 o transmisor electrónico G65 en la línea de alta presión."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.evaporador-15",
+   "nt": 595,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "evaporador",
+   "seccion": "",
+   "titulo": "Evaporador",
+   "codigo": "",
+   "menu": "Evaporador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "Ubicado en la unidad climática",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Producir la expansión del agente frigorífico y dar lugar al intercambio de calor entre el agente frigorífico y el aire de entrada al habitáculo."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Montado en el interior de la unidad climática."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.compresor-6",
+   "nt": 596,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "compresor",
+   "seccion": "",
+   "titulo": "Compresor",
+   "codigo": "",
+   "menu": "Compresor",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "En el circuito frigorífico, accionado desde el motor térmico mediante correa Poly V",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Generar la presión necesaria en el circuito frigorífico para impulsar el agente frigorífico R134a."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Compresor del tipo autorregulado con 7 cilindros. Su arrastre se efectúa mediante correa Poly V a través de un acoplamiento magnético, el cual se activa por solicitud del usuario o de la unidad de control del autoclima."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Autorregulado, 7 cilindros, accionamiento por correa Poly V y acoplamiento magnético. Dispone de una válvula de seguridad incorporada."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Presión de tarado de la válvula de seguridad a 44 bares. Carga del circuito de 750-50 gramos de agente frigorífico R134a."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.conmutador-de-presion-f129-6",
+   "nt": 597,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "conmutador-de-presion-f129",
+   "seccion": "",
+   "titulo": "Conmutador De Presión F129",
+   "codigo": "F129 / G65",
+   "menu": "Conmutador De Presión F129 F129 / G65",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y aire acondicionado de accionamiento manual (según motorización del vehículo)",
+   "ubicacion": "En el circuito de alta presión, junto a la válvula de expansión",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Supervisar o medir la presión del agente frigorífico en el lado de alta presión del circuito."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Según la motorización del vehículo, se instala un conmutador de presión electromecánico (F129) o un transmisor electrónico de presión (G65)."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Conmutador de presión F129 o transmisor electrónico G65."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.silenciador-6",
+   "nt": 598,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "silenciador",
+   "seccion": "",
+   "titulo": "Silenciador",
+   "codigo": "",
+   "menu": "Silenciador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "Ubicado en el circuito de baja presión, cerca del compresor",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Amortiguar el ruido producido por las ondas de presión entre la válvula de expansión y el compresor."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Atenúa acústicamente las ondas de presión generadas durante la circulación del agente frigorífico en el tramo de baja presión."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Montado en la canalización del circuito de baja presión, próximo al compresor."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.circuito-frigorifico-7",
+   "nt": 599,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "circuito-frigorifico",
+   "seccion": "",
+   "titulo": "Circuito Frigorífico",
+   "codigo": "",
+   "menu": "Circuito Frigorífico",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Explica la estructura, disposición de componentes y funcionamiento básico del circuito frigorífico en el sistema autoclima y en el aire acondicionado de accionamiento manual."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Circuito cerrado de climatización por el que circula el agente frigorífico R134a sometido a cambios de presión y estado para absorber calor en el habitáculo y cederlo al exterior."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Agente frigorífico del tipo R134a."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El circuito frigorífico montado en el autoclima es idéntico al utilizado en el sistema de aire acondicionado de accionamiento manual. El agente frigorífico realiza el siguiente recorrido a través de los elementos del circuito: - Compresor: genera la presión necesaria en el circuito mediante un sistema autorregulado de 7 cilindros, accionado por correa Poly V y acoplamiento magnético. - Condensador: ubicado por delante del radiador del líquido refrigerante, disipa el calor del fluido al exterior. - Filtro deshidratador: retiene la humedad, filtra los residuos procedentes de la abrasión y evita la formación de burbujas en el circuito. - Válvula de expansión: regula y controla la presión y el caudal del agente frigorífico. - Evaporador: ubicado en la unidad climática, es el lugar donde se produce la expansión y tiene lugar el intercambio de calor entre el agente frigorífico y el aire de entrada al habitáculo. - Conmutador de presión F129 / Transmisor electrónico G65: situado en el circuito de alta presión, junto a la válvula de expansión (según la motorización del vehículo). - Silenciador: ubicado en el circuito de baja presión, cerca del compresor, con la misión de amortiguar el ruido producido por las ondas de presión entre la válvula de expansión y el compresor."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Parámetro Valor Condiciones Carga de agente frigorífico 750-50 gramos Agente frigorífico R134a en el circuito frigorífico Presión de disparo de la válvula de seguridad 44 bares Válvula de seguridad integrada en el compresor"
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "El compresor dispone de una válvula de seguridad tarada a 44 bares para evitar sobrepresiones en el circuito."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema general del circuito frigorífico indicando la ubicación del compresor, transmisor de presión, filtro deshidratador, válvula de expansión, condensador, evaporador y silenciador — Fuente: CIRCUITO FRIGORÍFICO.pdf, pág. 1"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.condensador-16",
+   "nt": 600,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "condensador",
+   "seccion": "",
+   "titulo": "Condensador",
+   "codigo": "",
+   "menu": "Condensador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "Ubicado por delante del radiador del líquido refrigerante",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Ceder calor al exterior enfriando el agente frigorífico que procede del compresor."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Montado en la parte frontal del vehículo, por delante del radiador del líquido refrigerante del motor."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.filtro-deshidratador-7",
+   "nt": 601,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "filtro-deshidratador",
+   "seccion": "",
+   "titulo": "Filtro Deshidratador",
+   "codigo": "",
+   "menu": "Filtro Deshidratador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "En el circuito frigorífico",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Retener la humedad, filtrar los residuos procedentes de la abrasión y evitar que se produzcan burbujas en el circuito."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Filtro deshidratador integrado en las tuberías del circuito frigorífico."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.valvula-de-expansion-9",
+   "nt": 602,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "dispositivos-de-expansion",
+   "seccion": "",
+   "titulo": "Válvula De Expansión",
+   "codigo": "",
+   "menu": "Válvula De Expansión",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "En el circuito frigorífico, previa al evaporador y junto al conmutador F129 / transmisor G65",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Controlar la presión y el caudal del agente frigorífico."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Ubicada junto al conmutador de presión F129 o transmisor electrónico G65 en la línea de alta presión."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.evaporador-16",
+   "nt": 603,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "evaporador",
+   "seccion": "",
+   "titulo": "Evaporador",
+   "codigo": "",
+   "menu": "Evaporador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "Ubicado en la unidad climática",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Producir la expansión del agente frigorífico y dar lugar al intercambio de calor entre el agente frigorífico y el aire de entrada al habitáculo."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Montado en el interior de la unidad climática."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.compresor-7",
+   "nt": 604,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "compresor",
+   "seccion": "",
+   "titulo": "Compresor",
+   "codigo": "",
+   "menu": "Compresor",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "En el circuito frigorífico, accionado desde el motor por correa Poly V",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Generar la presión necesaria en el circuito frigorífico."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Compresor del tipo autorregulado con 7 cilindros. Su arrastre se efectúa mediante correa Poly V a través de un acoplamiento magnético, activado por la solicitud del usuario o de la unidad de control del autoclima."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Autorregulado, 7 cilindros, accionamiento por correa Poly V y acoplamiento magnético. Dispone de una válvula de seguridad incorporada."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Presión de tarado de la válvula de seguridad a 44 bares. Carga del circuito de 750-50 gramos de agente frigorífico R134a."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.conmutador-de-presion-f129-7",
+   "nt": 605,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "conmutador-de-presion-f129",
+   "seccion": "",
+   "titulo": "Conmutador De Presión F129",
+   "codigo": "F129 / G65",
+   "menu": "Conmutador De Presión F129 F129 / G65",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y aire acondicionado de accionamiento manual (según motorización del vehículo)",
+   "ubicacion": "En el circuito de alta presión, junto a la válvula de expansión",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Supervisar o medir la presión del agente frigorífico en el lado de alta presión del circuito."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Según la motorización del vehículo, se instala un conmutador de presión electromecánico (F129) o un transmisor electrónico de presión (G65)."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Conmutador de presión F129 o transmisor electrónico G65."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.silenciador-7",
+   "nt": 606,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "silenciador",
+   "seccion": "",
+   "titulo": "Silenciador",
+   "codigo": "",
+   "menu": "Silenciador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "Ubicado en el circuito de baja presión, cerca del compresor",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Amortiguar el ruido producido por las ondas de presión entre la válvula de expansión y el compresor."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Atenúa acústicamente las ondas de presión generadas durante la circulación del agente frigorífico en la tubería de baja presión."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Montado en la canalización del circuito de baja presión, próximo al compresor."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.unidad-de-control-para-la-autorizacion-de-acceso-y-arranque",
+   "nt": 607,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "unidad-de-control-para-la-autorizacion-de-acceso-y-arranque",
+   "seccion": "",
+   "titulo": "Unidad De Control Para La Autorización De Acceso Y Arranque",
+   "codigo": "No documentado en fuentes",
+   "menu": "Unidad De Control Para La Auto No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistemas de acceso y arranque sin llave (Keyless Access) en vehículos del Grupo VAG",
+   "ubicacion": "No documentado en fuentes",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Analizar las señales recibidas de los sensores y la red de a bordo para gestionar la autorización de bloqueo y desbloqueo de puertas, la autorización de arranque del motor y el desbloqueo eléctrico de la columna de dirección."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Procesa las solicitudes de los sensores capacitivos y del pulsador de arranque, activa el patrón de búsqueda por baja frecuencia (125 kHz) a través de las antenas del vehículo y envía una señal codificada Wake Up por un cable convencional para reexcitar la unidad de red de a bordo."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Unidad electrónica programable interconectada por CAN-Bus de confort, LIN-Bus (con la UCE del portón) y cable discreto de reexcitación."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tensión de alimentación: No documentado en fuentes. Frecuencia de emisión de la señal de búsqueda por antenas: 125 kHz (baja frecuencia)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fallo de comunicación en el CAN-Bus de confort, interrupción en la línea de reexcitación o avería interna en la tarjeta lógica de procesamiento."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Imposibilidad de desbloquear o bloquear las puertas por proximidad, falta de detección de la llave en el habitáculo e imposibilidad de activar el contacto (borne 15) o arrancar el motor."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Lectura de la memoria de averías y consulta de bloques de valores de medición con el equipo de diagnosis para comprobar las líneas CAN-Bus y el estado de los canales de entrada y salida."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.sensores-de-contacto-y-antena-en-manillas-exteriores",
+   "nt": 608,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "sensores-de-contacto-y-antena-en-manillas-exteriores",
+   "seccion": "",
+   "titulo": "Sensores De Contacto Y Antena En Manillas Exteriores",
+   "codigo": "No documentado en fuentes",
+   "menu": "Sensores De Contacto Y Antena  No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema de acceso sin llave Keyless Access",
+   "ubicacion": "Manillas exteriores de las puertas delanteras (conductor y acompañante)",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Captar la presencia de la mano del usuario para solicitar el bloqueo o desbloqueo de las puertas y emitir señales de radiofrecuencia para buscar llaves autorizadas en los laterales del vehículo."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Incorporan dos sensores capacitivos cuya capacidad eléctrica aumenta al aproximar la mano a la superficie interior (desbloqueo) o al pulsar la superficie exterior (bloqueo). La tarjeta electrónica interna capta la variación de capacidad y activa una antena integrada por una bobina enrollada a un núcleo de hierro que emite una señal de baja frecuencia."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Tarjeta electrónica integrada en la manilla compuesta por dos sensores capacitivos de lámina y una antena emisora inductiva (núcleo de hierro y bobinado)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Radio máximo de búsqueda de la llave por la antena: 1,5 metros desde la puerta. Frecuencia de emisión de la antena: 125 kHz. Desconexión del sensor del acompañante por inactividad: Tras 30 horas en reposo. Desconexión del sensor del conductor por inactividad: Tras 90 horas en reposo."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Humedad o suciedad en la tarjeta electrónica, rotura del bobinado de la antena o desactivación por tiempo de reposo prolongado de la batería."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El sistema no responde al tocar la manilla; exige pulsar el mando a distancia para volver a activar el sensor tras periodos de reposo superiores a 30 h o 90 h."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Comprobar el estado del sensor en los bloques de medición de la UCE de acceso y arranque y verificar la emisión de la antena a 125 kHz con un detector de radiofrecuencia al aproximar la mano."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.antenas-para-la-deteccion-de-llaves-por-radiofrecuencia",
+   "nt": 609,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "antenas-para-la-deteccion-de-llaves-por-radiofrecuencia",
+   "seccion": "",
+   "titulo": "Antenas Para La Detección De Llaves Por Radiofrecuencia",
+   "codigo": "No documentado en fuentes",
+   "menu": "Antenas Para La Detección De L No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema Keyless Access",
+   "ubicacion": "Paragolpes o portón trasero (zona posterior exterior), maletero/respaldo de asientos traseros (banqueta posterior) y consola central del habitáculo (zona delantera interior)",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Emitir campos electromagnéticos de baja frecuencia para verificar la presencia y la posición exacta de una llave autorizada tanto en el exterior posterior como en el interior del habitáculo."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Constan de una bobina de cobre enrollada sobre un núcleo de hierro. Al recibir la orden de la UCE de acceso y arranque, generan un campo electromagnético de baja frecuencia que activa el transpondedor de la llave."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Antenas inductivas de baja frecuencia con núcleo ferromagnético."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Alcance de detección de las antenas exteriores (paragolpes y manillas): Distancia máxima de 1,5 metros. Frecuencia de trabajo: 125 kHz (baja frecuencia)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Interrupción o cortocircuito en el bobinado por impactos en el paragolpes o manipulaciones en el tapizado interior."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si falla la antena trasera, no se autoriza la apertura del portón; si fallan las antenas interiores, se muestra el mensaje de llave no detectada en el Cuadro e impide el arranque."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Medición de continuidad y resistencia del bobinado con polímetro y comprobación del campo magnético emitido mediante osciloscopio o equipo de diagnosis."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.bobina-lectora-del-inmovilizador",
+   "nt": 610,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "bobina-lectora-del-inmovilizador",
+   "seccion": "",
+   "titulo": "Bobina Lectora Del Inmovilizador",
+   "codigo": "No documentado en fuentes",
+   "menu": "Bobina Lectora Del Inmovilizad No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema Keyless Access (procedimiento de arranque de emergencia)",
+   "ubicacion": "Columna de dirección, en la posición donde se sitúa el clausor mecánico en modelos sin Keyless Access",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Leer el código del chip transpondedor de la llave cuando la pila del mando a distancia se encuentra agotada."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Induce por acoplamiento magnético una corriente en el chip pasivo de la llave al colocarla físicamente junto a la columna, permitiendo la lectura del código del inmovilizador sin consumir energía de la pila del mando."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Bobinado inductivo circular montado en la carcasa de la columna de dirección."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Corte en el cableado de conexión o avería en el bobinado por manipulación de la carcasa."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Imposibilidad de realizar el arranque de emergencia cuando la llave se ha quedado sin pila."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Aproximar la llave sin pila a la columna de dirección, accionar el pulsador de arranque y verificar con el equipo de diagnosis si el inmovilizador reconoce el código transpondedor."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.actuador-con-motor-de-bloqueo-de-la-columna-de-direccion",
+   "nt": 611,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "actuador-con-motor-de-bloqueo-de-la-columna-de-direccion",
+   "seccion": "",
+   "titulo": "Actuador Con Motor De Bloqueo De La Columna De Dirección",
+   "codigo": "No documentado en fuentes",
+   "menu": "Actuador Con Motor De Bloqueo  No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Bloqueo y desbloqueo eléctrico de la dirección en vehículos con Keyless Access",
+   "ubicacion": "Columna de dirección, alojado en el interior de una jaula metálica de protección",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Bloquear mecánicamente el giro del volante mediante un perno retenedor al parar el motor y abrir la puerta del conductor, y retirarlo para desbloquear la dirección antes de iniciar la marcha."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Un motor eléctrico transmite su giro a un engranaje de tornillo sin fin que desplaza un perno. Invertir la polaridad del motor invierte el sentido de giro del tornillo, haciendo subir el perno para liberar la columna. Dos sensores Hall integrados leen las posiciones finales."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Motor eléctrico de CC, reductor de tornillo sin fin, perno fijador antimanipulación y tarjeta electrónica interna con sensores Hall integrados."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tensión de alimentación: Tensión de red (12 V). Señales de posición: Estados discreto \"bloqueado\" o \"desbloqueado\" leídos por los sensores Hall."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Atascos mecánicos por rozamiento del perno contra la columna, fallo en el motor eléctrico o avería en los sensores Hall integrados."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "La columna queda trabada o no se bloquea. Si no se confirma el desbloqueo, el sistema no gestiona los bornes de corriente e impide el arranque."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Consultar las señales de los sensores Hall mediante bloques de valores de medición con la máquina de diagnosis. Para desmontar la unidad de la jaula es obligatorio que la columna esté DESBLOQUEADA; de lo contrario, el perno fijador antimanipulación impide su extracción."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.pulsador-del-dispositivo-de-arranque-del-motor",
+   "nt": 612,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "pulsador-del-dispositivo-de-arranque-del-motor",
+   "seccion": "",
+   "titulo": "Pulsador Del Dispositivo De Arranque Del Motor",
+   "codigo": "No documentado en fuentes",
+   "menu": "Pulsador Del Dispositivo De Ar No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema Keyless Access (Start Engine Stop)",
+   "ubicacion": "Consola central del habitáculo",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Permitir al conductor enviar manualmente las solicitudes de conexión de contacto (borne 15), arranque del motor (borne 50) y parada del motor."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Cuenta con un mecanismo de conmutación de doble contacto eléctrico y un diodo LED de iluminación. La UCE de acceso y arranque evalúa la plausibilidad entre las dos señales redundantes para detectar averías en la conmutación."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Pulsador con 4 contactos eléctricos: 2 contactos para el LED de iluminación/destello y 2 contactos para la solicitud redundante de arranque o paro."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Lógica de señal: Redundancia doble por masa/positivo enviada a la UCE de acceso y arranque. Indicación luminosa: Destello del LED al acceder al habitáculo para avisar al conductor."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Desgaste en los contactos internos, fallo del diodo LED o falta de plausibilidad entre las dos señales de conmutación."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "La UCE registra una avería de plausibilidad y el sistema no responde a la pulsación o requiere varias pulsaciones seguidas."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Verificar el cambio de estado de ambos contactos con polímetro en modo continuidad o leyendo el bloque de valores de medición en la UCE al presionar el botón."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.autorizacion-de-desbloqueo-y-bloqueo-de-puertas-en-keyless-access",
+   "nt": 613,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "autorizacion-de-desbloqueo-y-bloqueo-de-puertas-en-keyless-access",
+   "seccion": "",
+   "titulo": "Autorización De Desbloqueo Y Bloqueo De Puertas En Keyless Access",
+   "codigo": "",
+   "menu": "Autorización De Desbloqueo Y Bloqueo D",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Explica la secuencia de señales, radiofrecuencia y comunicación por bus para bloquear o desbloquear las puertas por proximidad. Aplica al diagnóstico de accesos en el sistema Keyless Access."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Emisión de búsqueda en baja frecuencia (125 kHz) desde las antenas y respuesta codificada de la llave en alta frecuencia (434 MHz) validada por la UCE de red de a bordo y transmitida por el CAN-Bus de confort a los motores de las puertas."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Llave autorizada con pila en buen estado a una distancia menor de 1,5 metros de la puerta delantera y vehículo parado."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Equipo de diagnosis y detector de radiofrecuencia (125 kHz / 434 MHz)."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El conductor introduce la mano en la manilla de la puerta delantera. El sensor capacitivo aumenta su capacidad y envía la solicitud de apertura a la UCE de acceso y arranque. La UCE de acceso y arranque activa la antena de la manilla a 125 kHz y reexcita por cable convencional a la UCE de la red de a bordo (señal Wake Up). La llave capta la señal de 125 kHz y responde emitiendo su código e identificación de posición a 434 MHz hacia la UCE de red de a bordo. La UCE de red de a bordo verifica la autenticidad de la llave y vuelca la autorización al CAN-Bus de confort. Las UCEs de puerta reciben el mensaje y alimentan los motores eléctricos de desbloqueo. Para el bloqueo, el conductor toca la superficie de contacto exterior de la manilla, ejecutándose idéntica secuencia hasta alimentar los motores de cierre."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Parámetro / Condición Valor y Especificación Distancia máxima de detección de la llave 1,5 metros desde la manilla de la puerta Frecuencia de emisión de las antenas 125 kHz (baja frecuencia) Frecuencia de emisión de la llave 434 MHz (alta frecuencia) Desconexión por reposo del sensor del acompañante 30 horas de inactividad Desconexión por reposo del sensor del conductor 90 horas de inactividad"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Falta de respuesta tras varios días parado: No es avería; el sistema deshabilita las manillas tras 30 h o 90 h para ahorrar batería (exige abrir con el mando para reactivar). Bloqueo rechazado con llave dentro: El sistema evita dejar la llave encerrada, salvo que se ordene el bloqueo desde el exterior con una segunda llave autorizada."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Verificar que las puertas se desbloquean al introducir la mano en la manilla y se bloquean al presionar el sensor exterior."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del proceso de solicitud de apertura desde la puerta del conductor — Fuente: 5. Confort.pdf, pág. 102 Tarjeta electrónica interior de la manilla con sensores capacitivos y bobina — Fuente: 5. Confort.pdf, pág. 101"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.autorizacion-de-contacto-arranque-y-gestion-de-bornes-en-keyless-access",
+   "nt": 614,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "autorizacion-de-contacto-arranque-y-gestion-de-bornes-en-keyless-access",
+   "seccion": "",
+   "titulo": "Autorización De Contacto, Arranque Y Gestión De Bornes En Keyless Access",
+   "codigo": "",
+   "menu": "Autorización De Contacto, Arranque Y G",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Describe el procedimiento de detección de la llave en el habitáculo, la comunicación con el inmovilizador y la activación de las líneas de alimentación (bornes S, 15 y 50). Aplica al diagnóstico de fallos de arranque sin llave."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Validación de la posición de la llave mediante campos de 125 kHz y 434 MHz, verificación de código con la UCE del inmovilizador y activación discreta/CAN-Bus de la gestión de bornes de corriente."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Llave autorizada en el habitáculo. En cambio manual: pedal de embrague pisado. En cambio automático: palanca en P o N y pedal de freno pisado."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Equipo de diagnosis."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El conductor presiona el pulsador de arranque en la consola central. La UCE de acceso y arranque recibe la señal, despierta el CAN-Bus de confort y activa las antenas interiores (consola y maletero) a 125 kHz. La llave en el habitáculo recibe la señal de mayor intensidad y envía su código y posición a 434 MHz a la UCE de red de a bordo. La UCE de red de a bordo consulta la validez del código con el inmovilizador (ubicado en el Cuadro J285), ignorando llaves externas. El inmovilizador valida el código y transmite la autorización al CAN-Bus de confort. La UCE de la columna de dirección retira el perno eléctrico liberando el volante. La UCE de red de a bordo y la UCE de acceso y arranque activan las líneas de corriente: Borne S (accesorios), Borne 15 (contacto) y Borne 50 (motor de arranque hacia la UCE del motor). En caso de pila de la llave agotada: realizar el arranque de emergencia aproximando la llave a la bobina lectora de la columna de dirección antes de pulsar el botón. Parada del motor: pulsar el botón con el coche parado. Si el vehículo circula a más de 2 km/h en una emergencia, presionar el botón y confirmar con una segunda pulsación tras el aviso en el cuadro."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Parámetro / Condición Valor y Especificación Umbral de velocidad para parada de emergencia > 2 km/h (exige doble pulsación de confirmación) Distancia de búsqueda de llave exterior 1,5 metros Frecuencia de antenas interiores 125 kHz (baja frecuencia) Frecuencia de respuesta de la llave 434 MHz (alta frecuencia)"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Pulsar el botón sin pisar pedales: Se conecta el contacto (borne 15) pero no se acciona el motor de arranque (borne 50). Mensaje \"llave no detectada\": Pila del mando agotada; se soluciona acercando la llave a la columna de dirección para la lectura por inducción."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Verificar que al pulsar el botón con el pedal pisado, la columna se desbloquea, el cuadro se enciende y el motor arranca sin demoras."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del proceso de autorización de contacto y arranque — Fuente: 5. Confort.pdf, pág. 104 Esquema de la gestión de bornes de alimentación (S, 15 y 50) — Fuente: 5. Confort.pdf, pág. 104"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.bloqueo-y-desbloqueo-electronico-de-la-columna-de-direccion",
+   "nt": 615,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "bloqueo-y-desbloqueo-electronico-de-la-columna-de-direccion",
+   "seccion": "",
+   "titulo": "Bloqueo Y Desbloqueo Electrónico De La Columna De Dirección",
+   "codigo": "",
+   "menu": "Bloqueo Y Desbloqueo Electrónico De La",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Explica la lógica de control, la electromecánica interna y los sistemas de seguridad antimanipulación del bloqueo eléctrico de la dirección. Aplica al mantenimiento del conjunto de la columna de dirección."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Conversión de movimiento rotativo a desplazamiento lineal del perno mediante reductor de tornillo sin fin. Verificación de posiciones mediante sensores Hall e intercambio de claves con el inmovilizador por CAN-Bus."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Mecanismo de Bloqueo: Al parar el motor y abrir la puerta del conductor, la UCE alimenta el motor eléctrico, girando el tornillo sin fin para introducir el perno en la columna de dirección. Mecanismo de Desbloqueo: Caso A (Acceso con llave por puerta): Al entrar y cerrar la puerta, la UCE de red de a bordo consulta las antenas interiores. Si hay llave autorizada, el inmovilizador ordena el desbloqueo a la UCE de la columna, invirtiendo la polaridad del motor para subir el perno. Caso B (Acceso sin llave / puertas abiertas): El desbloqueo se ejecuta al accionar el pulsador de arranque en la consola central tras validar la llave interior. Control de Posición: Sensores Hall integrados en la placa leen las posiciones finales del perno (bloqueado / desbloqueado). Protección Antimanipulación: La UCE se aloja en una jaula de metal retenida por un perno fijador. Este perno solo puede presionarse hacia dentro para desmontar la UCE si la columna está mecánicamente DESBLOQUEADA. Si la columna está bloqueada, es imposible desmontarla de la jaula."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Parámetro / Condición Especificación Técnica Condición obligatoria de desmontaje Columna de dirección en posición DESBLOQUEADA"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Forzar el desmontaje con la columna bloqueada: Provoca la rotura inservible del actuador al no poder presionar el perno fijador antimanipulación."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Comprobar en el equipo de diagnosis que las señales de los sensores Hall indican \"desbloqueado\" al conectar el contacto y \"bloqueado\" al apagar el motor y abrir la puerta."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Actuador con motor de bloqueo y perno fijador antimanipulación — Fuente: 5. Confort.pdf, pág. 106"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.unidad-de-control-del-porton-trasero-electrico",
+   "nt": 616,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "unidad-de-control-del-porton-trasero-electrico",
+   "seccion": "",
+   "titulo": "Unidad De Control Del Portón Trasero Eléctrico",
+   "codigo": "No documentado en fuentes",
+   "menu": "Unidad De Control Del Portón T No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Portones traseros con apertura y cierre eléctrico",
+   "ubicacion": "Maletero del vehículo",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Reconocer las órdenes de apertura y cierre, alimentar los motores eléctricos de elevación, gobernar el cierre asistido de la cerradura y gestionar la seguridad antiaprisionamiento."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Procesa las señales de los pulsadores de la manilla, consola, mando y línea LIN-Bus de Easy Open. Gobierna los motores de accionamiento comprobando su velocidad y sentido de giro mediante los impulsos de los sensores Hall."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Unidad electrónica de potencia conectada a CAN-Bus de confort, red LIN-Bus, zumbador de aviso y etapas de alimentación de motores CC."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tensión de trabajo: Tensión de red (12 V). Control de posición: Conteo de pulsos de los sensores Hall del Motor 1 y Motor."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Desajuste de los valores límite de apertura, fallos de lectura en los sensores Hall o caídas de tensión de alimentación."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El portón no responde a los mandos o detiene su recorrido a mitad de camino; requiere abrir y cerrar manualmente aplicando fuerza sobre el portón."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Realizar diagnosis con la máquina en la dirección 6D - Sistema electrónico de la puerta del maletero , consultar bloques de valores, realizar test de actuadores y ejecutar el ajuste básico de topes."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.motores-electricos-de-accionamiento-del-porton",
+   "nt": 617,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "motores-electricos-de-accionamiento-del-porton",
+   "seccion": "",
+   "titulo": "Motores Eléctricos De Accionamiento Del Portón",
+   "codigo": "Motor 1 y Motor 2 del portón trasero",
+   "menu": "Motores Eléctricos De Accionam Motor 1 y Motor 2 del portón trasero",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Portones traseros eléctricos",
+   "ubicacion": "Montados a ambos lados del portón trasero, sustituyendo a los amortiguadores de gas tradicionales",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Desplazar mecánicamente el portón para abrirlo y cerrarlo de forma automatizada y mantenerlo retendido de forma segura en cualquier posición intermedia."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Un motor eléctrico transmite su par a través de dos etapas de engranaje planetario doble hacia un husillo con tuerca, ayudado por un muelle helicoidal. Un freno de muelle envolvente (interior y exterior) aplica fricción mecánica sobre la carcasa en reposo para evitar que el peso del portón lo haga caer. Dos sensores Hall miden las revoluciones y el sentido de giro."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Conjunto cilíndrico de accionamiento compuesto por: motor eléctrico de CC, reductor planetario doble, husillo con tuerca, muelle helicoidal de refuerzo, freno de muelle envolvente y 2 sensores Hall de posición."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tensión de alimentación: Tensión de red (12 V). Sensores Hall: 2 sensores por motor (uno para revoluciones/velocidad y otro para sentido de giro)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Desgaste del freno mecánico de muelle, agarrotamiento del husillo o fallo en uno de los sensores Hall."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "La UCE detecta diferencias de velocidad entre el motor 1 y el motor 2 y corta la alimentación eléctrica por seguridad."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Medir el consumo de corriente de los motores con el equipo de diagnosis y comprobar los impulsos de los sensores Hall de ambos lados durante todo el recorrido."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.unidad-y-motor-de-cierre-asistido-del-porton",
+   "nt": 618,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "unidad-y-motor-de-cierre-asistido-del-porton",
+   "seccion": "",
+   "titulo": "Unidad Y Motor De Cierre Asistido Del Portón",
+   "codigo": "No documentado en fuentes",
+   "menu": "Unidad Y Motor De Cierre Asist No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Cierre asistido de portones traseros eléctricos",
+   "ubicacion": "Mecanismo de la cerradura y resbalón en el maletero",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Tirar del resbalón de la cerradura mediante un cable Bowden para realizar el enclavamiento final del portón de forma silenciosa y sin dar portazos."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Al encajar el portón en posición de precierre, se accionan los microinterruptores de la cerradura. La UCE del portón alimenta el motor de cierre asistido, que tensiona un cable Bowden y desplaza el trinquete bajo el resbalón hasta la posición de cerrado definitivo."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Motor eléctrico reductor, cable Bowden de tiro y unidad de cierre con dos microinterruptores interiores (Interruptor 1 e Interruptor 2)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tensión de alimentación: 12 V. Señales de confirmación: Interruptores 1 y 2 informan de precierre y cierre total a la UCE de red de a bordo."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Rotura o destensado del cable Bowden, agarrotamiento del electromotor o fallos de contacto en los microinterruptores."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El portón baja hasta el final pero no realiza el tramo de ajuste asistido, permaneciendo el aviso de maletero abierto en el Cuadro."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Verificar el cambio de estado de los microinterruptores 1 y 2 con polímetro o con el equipo de diagnosis al accionar manualmente el resbalón de la cerradura."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.sensores-de-apertura-del-porton-easy-open",
+   "nt": 619,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "sensores-de-apertura-del-porton-easy-open",
+   "seccion": "",
+   "titulo": "Sensores De Apertura Del Portón \"Easy Open\"",
+   "codigo": "Sensor 1 y Sensor 2 para la apertura del portón",
+   "menu": "Sensores De Apertura Del Portó Sensor 1 y Sensor 2 para la apertura del portón",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema de apertura del portón trasero por gesto del pie (Easy Open)",
+   "ubicacion": "Colocados horizontalmente bajo el revestimiento del paragolpes trasero",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Detectar el movimiento pendular del pie del usuario bajo el paragolpes trasero para ordenar la apertura automática del maletero sin contacto manual."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Son electrodos capacitivos que generan un campo magnético. Al pasar el pie por la zona del campo, varía la capacidad e intensidad de corriente, registrándose la solicitud en la UCE de apertura del portón."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Sensores fleximétricos capacitivos dobles (Sensor 1 superior y Sensor 2 inferior)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Variación capacitiva: Modulación de corriente al paso de masa corporal. Distancia de validación de la llave: Menos de 1,5 metros respecto al portón."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Acumulación de barro en la cara interior del paragolpes, interferencias por chorro de agua a presión o desconexión de conectores."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El gesto del pie no activa los intermitentes ni abre el portón, permaneciendo el maletero bloqueado."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Comprobar el cambio de capacidad de los sensores en los bloques de medición de la UCE de apertura al simular el movimiento pendular del pie."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.apertura-regulacion-y-funcion-easy-open-del-porton-electrico",
+   "nt": 620,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "apertura-regulacion-y-funcion-easy-open-del-porton-electrico",
+   "seccion": "",
+   "titulo": "Apertura, Regulación Y Función \"Easy Open\" Del Portón Eléctrico",
+   "codigo": "",
+   "menu": "Apertura, Regulación Y Función \"Easy O",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Establece los modos de accionamiento, la memorización de la altura de apertura y el funcionamiento de la función manos libres Easy Open. Aplica al uso y ajuste en taller del portón trasero."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Control coordinado por la UCE del portón entre los sensores capacitivos, la consulta de llave por LIN/CAN-Bus con Keyless Access y la inversión de marcha de los motores al detectar un aumento de intensidad (antiaprisionamiento)."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Para la función Easy Open: vehículo parado, borne 15 desconectado y llave autorizada a menos de 1,5 m del portón."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Modos de Apertura y Cierre: 1. Apertura exterior: accionar el mando a distancia o el pulsador de la manilla del portón. 2. Apertura interior: accionar el pulsador de la consola central. 3. Cierre: accionar el pulsador interior montado en el propio portón o los mandos anteriores. Memorización de la Regulación de Apertura Máxima: 1. Colocar el portón manualmente en la altura deseada. 2. Mantener presionado el pulsador de cierre del portón durante 3 segundos. 3. Confirmación: suena un aviso acústico y parpadean los intermitentes. Proceso de Apertura Manos Libres (\"Easy Open\"): 1. Situarse tras el maletero con la llave en el bolsillo (distancia < 1,5 m). 2. Realizar un movimiento pendular de entrada y salida con el pie debajo del paragolpes trasero. 3. Los sensores capacitivos 1 y 2 registran el movimiento y envían la señal a la UCE de apertura del portón. 4. La UCE de apertura consulta por LIN-Bus a la UCE de acceso y arranque para verificar la llave. 5. Validada la llave, parpadean los intermitentes y la.ª luz de freno, desbloqueándose la cerradura y activándose los motores de elevación. Condiciones de Desactivación de Easy Open: Se desactiva automáticamente ante lluvia torrencial o lavado a presión (se reactiva a los 90 segundos de cesar la causa). Se puede desactivar manualmente en el menú del Cuadro (Menú CAR / Ajustes / Cierre centralizado / Easy Open). Función Antiaprisionamiento: Si se detecta un obstáculo cerrando: se frena el portón, suena el zumbador y se abre automáticamente unos 40 cm. Si se detecta un obstáculo abriendo: el portón se frena de inmediato en esa posición."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Parámetro / Condición Valor y Especificación Tiempo de pulsación para memorizar altura de apertura 3 segundos (hasta confirmación acústica e intermitentes) Retroceso por antiaprisionamiento en cierre Apertura automática de aproximadamente 40 cm Tiempo de reactivación tras lavado a presión 90 segundos tras desaparecer la interferencia Distancia de la llave al portón en Easy Open Menor de 1,5 metros"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "El portón no sube hasta arriba: Se ha memorizado una altura baja por error; se soluciona empujándolo manualmente al tope superior y guardando la posición pulsando 3 s. Intentar usar Easy Open con remolque: En vehículos con gancho de remolque, la función Easy Open se deshabilita y la apertura solo se realiza desde la manilla."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Verificar que el portón invierte el sentido al encontrar resistencia física y que el gesto del pie responde activando los intermitentes antes de iniciar la subida."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Módulo de motores eléctricos con husillo y freno de muelle envolvente — Fuente: 5. Confort.pdf, pág. 109 Secuencia del gesto pendular con el pie para la función Easy Open — Fuente: 5. Confort.pdf, pág. 112 Pantalla del menú CAR para activar/desactivar la función Easy Open — Fuente: 5. Confort.pdf, pág. 111"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.diagnosis-eobd-del-porton-trasero-electrico",
+   "nt": 621,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "diagnosis-eobd-del-porton-trasero-electrico",
+   "seccion": "",
+   "titulo": "Diagnosis Eobd Del Portón Trasero Eléctrico",
+   "codigo": "",
+   "menu": "Diagnosis Eobd Del Portón Trasero Eléc",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Describe las comprobaciones y ajustes mediante equipo de diagnosis conectado a la dirección 6D - Sistema electrónico de la puerta del maletero . Aplica a la localización de averías y codificación del portón."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Comunicación por protocolo EOBD/CAN-Bus con la UCE del portón para memorización de topes en la EEPROM, lectura de sensores y test de componentes."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Equipo de diagnosis conectado al conector OBD2, contacto conectado (borne 15) y zona de recorrido del portón totalmente despejada."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Equipo de diagnosis compatible con el grupo VAG (VAS / ODIS / VCDS)."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Conectar la máquina de diagnosis y acceder a la dirección 6D - Sistema electrónico de la puerta del maletero . Lectura de Memoria de Averías y Bloques de Medición: - Seleccionar \"Leer bloque de valores de medición\" para verificar consumos de corriente de los motores, estado de los microinterruptores y señales de los sensores Hall. Ajuste Básico de la Electrónica del Portón Trasero: - Seleccionar \"6D - Ajuste básico\". - Confirmar la ausencia de obstáculos en el área de movimiento. - Iniciar el ajuste: la UCE desplaza el portón a los límites de cierre y de apertura máxima con la función antiaprisionamiento desactivada para guardar los topes de posición. Diagnosis de Actuadores: - Seleccionar \"6D - Diagnosis de actuadores\". - Ejecutar individualmente: 1-Abrir portón trasero, 2-Cerrar portón trasero, 3-Abrir gradualmente, 4-Cerrar gradualmente, 5-Zumbador de aviso. Codificación: - Seleccionar \"6D - Codificar la Unidad de Control\" en caso de sustituir la UCE para configurar opciones como Easy Open o gancho de remolque."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Función de Diagnosis Dirección EOBD / Parámetro Módulo de diagnosis del portón Dirección 6D (Electrónica del portón trasero) Función antiaprisionamiento en Ajuste Básico Desactivada totalmente durante la prueba de adaptación"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Tocar el portón durante el Ajuste Básico: Aborta el aprendizaje de topes y deja el sistema inoperativo en modo automático. No despejar el entorno en el Ajuste Básico: Riesgo de daños materiales al estar desactivada la función antiaprisionamiento durante la rutina."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Verificar que no quedan códigos de avería registrados y que el portón realiza sus recorridos completos y automáticos desde todos los pulsadores."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Capturas del equipo de diagnosis en la dirección 6D — Fuente: 5. Confort.pdf, pág. 113"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.conjunto-y-unidad-de-control-del-gancho-de-remolque-escamoteable",
+   "nt": 622,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "conjunto-y-unidad-de-control-del-gancho-de-remolque-escamoteable",
+   "seccion": "",
+   "titulo": "Conjunto Y Unidad De Control Del Gancho De Remolque Escamoteable",
+   "codigo": "No documentado en fuentes",
+   "menu": "Conjunto Y Unidad De Control D No documentado en fuentes",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Enganche para remolque escamoteable de accionamiento eléctrico",
+   "ubicacion": "Mecanismo oculto tras el paragolpes trasero; conmutador y UCE montados en el maletero",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Ocultar el gancho de remolque tras el paragolpes cuando no se utiliza y liberar su cierre mediante un motor eléctrico para desplegarlo hacia la posición de trabajo."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Al accionar el conmutador del maletero, la UCE de detección de remolque alimenta un motor eléctrico que retira el perno de bloqueo. Un sensor Hall mide la posición del eje del motor y un microinterruptor confirma la posición de enclavamiento. Al quedar bloqueado en posición de trabajo, la UCE activa la alimentación de la toma de corriente U10."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Estructura metálica de enganche, motor eléctrico de desbloqueo, sensor Hall de eje, microinterruptor de posición y toma de corriente U10 de 13 contactos."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Conector eléctrico de remolque: Toma de corriente U10 de 13 contactos. Condiciones de activación del motor: Vehículo totalmente parado y portón del maletero abierto."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Deformación por colisiones traseras, sulfatación en los terminales de la toma U10 o avería en el microinterruptor de posición."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El motor no libera el gancho al presionar el pulsador o la UCE no alimenta las luces del remolque al no recibir la señal de gancho bloqueado."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Comprobar el cambio de estado del microinterruptor y la señal del sensor Hall mediante el equipo de diagnosis en la UCE de detección de remolque. Debido a diferencias en la estructura trasera de la carrocería, en la mayoría de casos requiere pedido a fábrica y no admite montaje posterior."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.despliegue-bloqueo-y-recogida-del-gancho-de-remolque-escamoteable",
+   "nt": 623,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "despliegue-bloqueo-y-recogida-del-gancho-de-remolque-escamoteable",
+   "seccion": "",
+   "titulo": "Despliegue, Bloqueo Y Recogida Del Gancho De Remolque Escamoteable",
+   "codigo": "",
+   "menu": "Despliegue, Bloqueo Y Recogida Del Gan",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Describe las operaciones para desplegar, enclavar manualmente y recoger el gancho de remolque escamoteable. Aplica al mantenimiento y uso del sistema de remolque."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Liberación eléctrica del trinquete mediante motor y sensor Hall, guiado y enclavamiento mecánico manual por parte del usuario y activación automatizada de la toma de corriente U10."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Vehículo totalmente parado y portón del maletero abierto."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Procedimiento de Despliegue del Gancho: 1. Abrir el portón del maletero con el coche parado. 2. Presionar el conmutador de desbloqueo situado en el tapizado lateral del maletero. 3. La UCE de detección de remolque activa el motor eléctrico para liberar el cierre del gancho. 4. Mover manualmente el gancho desenclavado hacia fuera hasta la posición de trabajo. 5. Empujar manualmente hasta percibir el encastre mecánico rígido de bloqueo. 6. El microinterruptor detecta la posición de bloqueo y la UCE activa la corriente en la toma U10 de 13 contactos. Procedimiento de Plegado / Recogida del Gancho: 1. Desconectar la clavija del remolque de la toma U10. 2. Presionar nuevamente el conmutador del maletero para activar el motor de desbloqueo. 3. Mover manualmente el gancho hacia el interior, ocultándolo tras el protector del paragolpes. 4. Empujar hasta que el microinterruptor confirme que ha quedado retenido en la posición de reposo."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Parámetro / Condición Especificación Técnica Conector eléctrico de remolque Toma de corriente U10 de 13 contactos Requisito para autorizar el desbloqueo Vehículo completamente parado y portón trasero abierto"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Presionar el botón con el portón cerrado: El sistema no alimenta el motor de desbloqueo por seguridad. No llevar manualmente el gancho al tope final: La UCE no alimenta la piña de luces U10 al no cerrarse el microinterruptor de posición."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Comprobar que la toma de corriente U10 recibe tensión tras el bloqueo en posición de trabajo y que el gancho queda firmemente sujeto sin holguras."
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "No admite montaje posterior como reforma si la estructura del bastidor trasero difiere de origen. 💡 ¿Deseas que revisemos algún otro aspecto concreto de los sistemas de confort o que elaboremos alguna guía de comprobación eléctrica específica para la clase?"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Enganche escamoteable desplegado y pulsador de accionamiento en el maletero — Fuente: 5. Confort.pdf, pág. 114 Cuadro sinóptico de la UCE de detección de remolque y sus componentes — Fuente: 5. Confort.pdf, pág. 115"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.ventilador",
+   "nt": 624,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "ventilador",
+   "seccion": "",
+   "titulo": "Ventilador",
+   "codigo": "",
+   "menu": "Ventilador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Cajas climáticas de calefacción, aire acondicionado y climatización automática en vehículos",
+   "ubicacion": "Entrada de aire de la caja climatizadora del habitáculo",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Impulsar y generar el caudal de aire forzado procedente del exterior o del interior del habitáculo para encauzarlo a través de la caja climática hacia las distintas salidas de aireación."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Motor eléctrico de corriente continua que hace girar una turbina de álabes. La regulación de velocidad se realiza por resistencias en serie (variando la caída de tensión; a máxima velocidad un relé alimenta el motor en directo a 12 V sin pasar por las resistencias) o mediante un módulo electrónico (donde el módulo detecta la diferencia de tensión entre las vías A y B de un divisor con resistencias R1-R7 del mando y varía la tensión aplicada al borne de masa del motor alimentado a 12 V)."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Electromotor de corriente continua con turbina centrífuga. Regulado mediante grupo de resistencias en serie o módulo electrónico regulador transistorizado."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tensión de alimentación a máxima velocidad (montaje con resistencias): 12 V en directo sin pasar por resistencias. Tensión de trabajo (módulo electrónico): Diferencia de potencial variable entre bornes (ejemplo: 12 V en un borne y 3 V en el otro dan una tensión aplicada de 9 V)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Corte térmico o fundido de las resistencias en serie, fallo del transistor de potencia en el módulo electrónico o desgaste mecánico de escobillas y cojinetes del electromotor."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "En montaje con resistencias, el ventilador solo funciona en la velocidad máxima (a través del relé directo) o se detiene por completo. En montaje con módulo electrónico, pérdida total o parcial del control gradual de velocidad."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Medir la tensión de alimentación en los bornes del electromotor con un polímetro y verificar la continuidad eléctrica de las resistencias en serie o las variaciones de tensión entre los bornes del módulo electrónico al mover el mando de velocidad."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del circuito eléctrico de soplado con resistencias en serie y relé de velocidad máxima — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 8 Esquema del circuito eléctrico de soplado con módulo electrónico transistorizado — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 9"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.evaporador-17",
+   "nt": 625,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "evaporador",
+   "seccion": "",
+   "titulo": "Evaporador",
+   "codigo": "",
+   "menu": "Evaporador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Circuitos de aire acondicionado y climatización automática de automóviles",
+   "ubicacion": "Dentro de la caja climática, situado aguas abajo del ventilador y antes de la trampilla de mezcla",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Actuar como intercambiador térmico (\"bolsa de hielo\") para enfriar y deshumificar el aire impulsado hacia el habitáculo."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El fluido refrigerante entra en ebullición a baja presión en su interior absorbiendo la energía térmica del aire que atraviesa sus aletas. La humedad ambiental del aire se condensa en agua sobre su superficie exterior y se canaliza hacia el exterior del vehículo."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Intercambiador térmico de tubos y aletas de aluminio con tuberías de conexión y canalización inferior para expulsión de agua condensada."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Estado de funcionamiento: Operativo con el compresor acoplado (Compresor ON)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fugas de fluido refrigerante por poro o corrosión, obstrucción externa de aletas por suciedad acumulada y atasco del tubo de drenaje de condensados."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Falta de capacidad de enfriamiento del aire impulsado, congelación exterior por fallos de regulación o generación de malos olores y empañado por condensados retenidos."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Vista de la caja climática y el evaporador desmontado — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 16"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.radiador-de-calefaccion-o-aerotermo",
+   "nt": 626,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "radiador-de-calefaccion-o-aerotermo",
+   "seccion": "",
+   "titulo": "Radiador De Calefacción O Aerotermo",
+   "codigo": "",
+   "menu": "Radiador De Calefacción O Aerotermo",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistemas de calefacción y climatización de vehículos",
+   "ubicacion": "Interior de la caja climática, situado detrás del evaporador y de la trampilla de mezcla",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Ceder el calor del líquido refrigerante del motor al aire forzado para elevar la temperatura del habitáculo."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Intercambiador de calor agua-aire. El líquido refrigerante caliente procedente del motor circula por los tubos internos calentando las aletas de aluminio, las cuales ceden su calor al aire que las cruza impulsado por el ventilador."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Radiador compacto de tubos y aletas de aluminio con tubos de entrada y salida conectados al circuito de refrigeración del motor."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Obstrucción interna del circuito de agua por sedimentos del anticongelante o fugas de líquido refrigerante hacia el suelo del habitáculo."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Ausencia de aire caliente en el habitáculo, empañado persistente de lunas con olor dulce a anticongelante y descenso del nivel en el vaso de expansión del motor."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Vista de la caja climática con la ubicación del radiador de calefacción — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 18"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.trampilla-y-motor-de-reciclaje-recirculacion",
+   "nt": 627,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "trampilla-y-motor-de-reciclaje-recirculacion",
+   "seccion": "",
+   "titulo": "Trampilla Y Motor De Reciclaje (Recirculación)",
+   "codigo": "",
+   "menu": "Trampilla Y Motor De Reciclaje (Recirc",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Cajas de distribución de aire en sistemas de calefacción, aire acondicionado y climatización automática",
+   "ubicacion": "Canal de entrada de aire de la caja climatizadora",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Seleccionar la procedencia del aire de entrada a la caja climática, alternando entre aire fresco exterior o aire reciclado del propio habitáculo para aislarlo de la contaminación exterior."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Compuerta basculante accionada manualmente o por un motor eléctrico de corriente continua. En activación eléctrica por relé de doble paleta, la posición MAX del A/A pilota a masa el relé provocando el cierre de la trampilla. En activación con módulo electrónico, el módulo detecta la masa en la paleta de ventilación (posición 0) o A/A MAX y conmuta la polaridad del motor de reciclaje."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Trampilla basculante con juntas de estanqueidad. Mando de accionamiento manual o servomotor eléctrico de posicionamiento exclusivo en los extremos (sin posiciones intermedias)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Posicionamiento del motor: Únicamente en los extremos (aire exterior / aire habitáculo reciclado)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Rotura de levas o topes de engranaje en el motor eléctrico y agarrotamiento mecánico de la trampilla."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Imposibilidad de aislar el habitáculo frente a olores o gases exteriores, o imposibilidad de tomar aire exterior provocando empañado rápido de los cristales."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Verificar la alimentación eléctrica y la inversión de polaridades en las conexiones del motor de reciclaje al conmutar la paleta entre NORM y MAX o posición."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del circuito de aire en posición de reciclaje de habitáculo — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 20 Esquema eléctrico de control de reciclaje con relé de doble paleta — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 23 Esquema eléctrico de control de reciclaje con módulo electrónico — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 22"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.trampilla-de-mezcla",
+   "nt": 628,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "trampilla-de-mezcla",
+   "seccion": "",
+   "titulo": "Trampilla De Mezcla",
+   "codigo": "",
+   "menu": "Trampilla De Mezcla",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Cajas climáticas de aire acondicionado manual y climatizadores automáticos",
+   "ubicacion": "En el canal principal de la caja climática, situada entre el evaporador y el radiador de calefacción",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Sustituir al antiguo grifo de calefacción para regular la temperatura del aire mezclando las proporciones de aire frío y caliente."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Compuerta móvil basculante. Según su posición angular, obliga al aire que sale del evaporador a pasar en mayor o menor proporción a través del radiador de calefacción antes de mezclarse para obtener la temperatura seleccionada."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Accionamiento mecánico mediante cable o eléctrico mediante un motor eléctrico paso a paso / motor de excitación."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Rotura o desenganche del cable de mando, desgaste de piñones en la reductora del servomotor o desalineación de la resistencia de posición."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "La temperatura del aire impulsado se queda fija en frío máximo o en caliente máximo, sin responder a las variaciones del mando de temperatura."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del funcionamiento y posición de la trampilla de mezcla en la caja climática — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 29"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.trampillas-de-reparticion-de-aire",
+   "nt": 629,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "trampillas-de-reparticion-de-aire",
+   "seccion": "",
+   "titulo": "Trampillas De Repartición De Aire",
+   "codigo": "",
+   "menu": "Trampillas De Repartición De Aire",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Cajas de distribución de aire de habitáculo",
+   "ubicacion": "Salidas de distribución de la caja climática conectadas a los conductos del parabrisas, aireadores frontales del salpicadero y difusores de los pies",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Dirigir el caudal de aire tratado hacia las diferentes zonas del habitáculo (descongelación de parabrisas, aireación frontal o zona de pies)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Conjunto de chapaletas que abren o cierran el paso del aire hacia los diferentes conductos mediante mandos mecánicos, depresores neumáticos o servomotores eléctricos."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Trampillas orientables accionadas de forma manual (cables bowden), neumática (cápsulas de vacío) o eléctrica (servomotores)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Gripado de las articulaciones de varillaje, fuga de vacío en membranas neumáticas o fallo en servomotores de repartición."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El aire sale retenido por una única salida o no responde a la selección de las posiciones del mando de distribución."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema de la distribución de aire hacia parabrisas, aireadores frontales y reposapiés — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 31 Vista tridimensional de la caja climática en un conjunto multizona — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 6"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.calentamiento-del-aire-y-distribucion-termica",
+   "nt": 630,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "calentamiento-del-aire-y-distribucion-termica",
+   "seccion": "",
+   "titulo": "Calentamiento Del Aire Y Distribución Térmica",
+   "codigo": "",
+   "menu": "Calentamiento Del Aire Y Distribución",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Explica el proceso físico y la lógica de flujo de aire para elevar la temperatura en el habitáculo. Aplica a sistemas de calefacción y climatización automotriz."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El aire impulsado por el ventilador pasa por el evaporador inactivo (Compresor OFF). La trampilla de mezcla desvía el aire hacia el radiador de calefacción, donde absorbe la energía térmica del líquido refrigerante del motor antes de salir hacia los difusores."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Motor térmico a temperatura de servicio y compresor de aire acondicionado desconectado (Compresor OFF)."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El ventilador impulsa el aire procediendo del exterior o del habitáculo. El aire atraviesa el evaporador inactivo sin sufrir cambio térmico ni pérdida de humedad (Compresor OFF). La trampilla de mezcla se posiciona para obligar a pasar el aire a través del radiador de calefacción. El aire se calienta al contacto con las aletas del radiador de calefacción (pudiendo ser aire seco o húmedo según si ha funcionado previamente el compresor). Las trampillas de repartición dirigen el aire caliente hacia las rejillas seleccionadas."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Condición de Funcionamiento Estado del Compresor Posición de Trampilla de Mezcla Modo Calentamiento de Aire Compresor OFF Desviado hacia el radiador de calefacción"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Diagnosticar un fallo en el radiador de calefacción cuando la causa real es la falta de apertura mecánica o eléctrica de la trampilla de mezcla."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Comprobar el incremento térmico del aire en las salidas de aireación al seleccionar la zona de calefacción."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del circuito de aire en modo de calentamiento — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 33"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.refrigeracion-desecacion-y-desempanado-del-aire",
+   "nt": 631,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "refrigeracion-desecacion-y-desempanado-del-aire",
+   "seccion": "",
+   "titulo": "Refrigeración, Desecación Y Desempañado Del Aire",
+   "codigo": "",
+   "menu": "Refrigeración, Desecación Y Desempañad",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Describe los procesos físicos de enfriamiento, reducción de la humedad relativa y eliminación del vaho de los cristales. Aplica a sistemas de aire acondicionado y climatizadores."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Al conectar el compresor (Compresor ON), el evaporador enfría el aire por debajo del punto de rocío provocando la condensación del agua ambiental. Para desempañar, este aire previamente deshumificado se recalienta al atravesar el radiador de calefacción, obteniendo un caudal de aire caliente y seco."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Compresor de aire acondicionado conectado (Compresor ON)."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Refrigeración Estándar: Compresor ON. El evaporador enfría y deshumifica el aire exterior. La trampilla de mezcla cierra el paso al radiador de calefacción. Refrigeración Máxima: Compresor ON. La trampilla de reciclaje se cierra cortando el aire exterior y recirculando el del habitáculo. La trampilla de mezcla cierra el radiador de calefacción para obtener el máximo rendimiento frigorífico. Desecación y Desempañado: Compresor ON. El aire se enfría y deshumifica en el evaporador. Posteriormente, la trampilla de mezcla deriva el aire hacia el radiador de calefacción, enviando un aire deshumificado y caliente hacia el parabrisas. Recomendación de Confort: Debido a la baja humedad del aire en el habitáculo durante recorridos largos, se aconseja la ingesta de líquidos por los ocupantes. La instalación frigorífica debe hacerse funcionar periódicamente para favorecer el tiempo de vida del circuito."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Modo de Funcionamiento Estado del Compresor Trampilla de Reciclaje Trampilla de Mezcla Refrigeración Estándar Compresor ON Aire Exterior Cierra canal de calefacción Refrigeración Máxima Compresor ON Reciclaje de Habitáculo Cierra canal de calefacción Desecación / Desempañado Compresor ON Aire Exterior Abre canal de calefacción"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Desconectar el aire acondicionado durante el desempañado del parabrisas, imposibilitando la eliminación rápida del vaho al no deshumificar el aire en el evaporador."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Verificar el rápido desempañado de la luna parabrisas y el descenso de temperatura del aire en los difusores frontales."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del circuito de aire en modo refrigeración — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 35 Esquema del circuito en refrigeración máxima con recirculación — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 37 Esquema del circuito en modo desecación y desempañado — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 39"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.tipos-y-niveles-de-climatizacion-manual-semiautomatica-y-automatica",
+   "nt": 632,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "tipos-y-niveles-de-climatizacion-manual-semiautomatica-y-automatica",
+   "seccion": "",
+   "titulo": "Tipos Y Niveles De Climatización (Manual, Semiautomática Y Automática)",
+   "codigo": "",
+   "menu": "Tipos Y Niveles De Climatización (Manu",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Clasifica los sistemas de climatización del vehículo según su nivel de automatización y la estabilidad térmica en el habitáculo. Aplica al análisis de configuraciones de confort en automoción."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Comparativa entre el control por intervención directa del usuario frente a la regulación por bucle cerrado de una UCE, la cual contrarresta las perturbaciones térmicas exteriores ajustando automáticamente los actuadores."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Climatización Manual: El usuario ajusta manualmente la velocidad de la turbina, la trampilla de mezcla y la distribución. Las variaciones de temperatura exterior provocan oscilaciones amplias en la temperatura del habitáculo, obligando a modificar continuamente los mandos. Climatización Semi-automática: Automatiza parcialmente la regulación (mantiene la temperatura seleccionada mediante sensores), requiriendo ajuste manual en la velocidad de la turbina o en las trampillas de distribución. Climatización Automática: La UCE analiza la temperatura e incrementa o reduce automáticamente la velocidad del ventilador y la posición de las trampillas. Las oscilaciones térmicas respecto al valor deseado (ej. 21 ºC) son mínimas y la temperatura se estabiliza según la temperatura exterior."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Sistema de Climatización Control de Temperatura Estabilización Térmica Manual Ajuste manual discontinuo Oscilaciones amplias en torno al confort deseado Automática Bucle cerrado por UCE Oscilaciones mínimas estabilizadas a la consigna (ej. 21 ºC)"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Suponer que una climatización manual adapta el caudal de aire o la mezcla al cambiar la velocidad del vehículo o la temperatura exterior."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Mantenimiento de la temperatura seleccionada en el habitáculo sin necesidad de reajustes manuales por parte del conductor."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Gráfica de fluctuación de temperatura en climatización manual — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 41 Gráfica de estabilización de temperatura en climatización automática — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 42"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.circuito-frigorifico-8",
+   "nt": 633,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "circuito-frigorifico",
+   "seccion": "",
+   "titulo": "Circuito Frigorífico",
+   "codigo": "",
+   "menu": "Circuito Frigorífico",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Estructura y disposición general de los componentes en el circuito frigorífico del sistema autoclima y del aire acondicionado de accionamiento manual."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Circuito cerrado de climatización por el que circula el agente frigorífico R134a para generar elevación de presión, disipación de calor, filtrado de humedad, regulación de caudal y absorción de calor en el habitáculo."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Agente frigorífico del tipo R134a."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El circuito frigorífico montado en el autoclima es idéntico al utilizado en el sistema de aire acondicionado de accionamiento manual. El fluido recorre los siguientes componentes en el circuito: - Condensador: ubicado por delante del radiador del líquido refrigerante del motor. - Filtro deshidratador: encargado de retener la humedad, filtrar los residuos procedentes de la abrasión y evitar que se produzcan burbujas en el circuito. - Válvula de expansión: punto donde se controla la presión y el caudal del agente frigorífico. - Evaporador: ubicado en la unidad climática, donde se produce la expansión y da lugar al intercambio de calor entre el agente frigorífico y el aire de entrada al habitáculo. - Compresor: genera la presión necesaria en el circuito y es del tipo autorregulado con 7 cilindros. Su arrastre se realiza mediante correa Poly V y acoplamiento magnético, activado por la solicitud del usuario o de la unidad de control del autoclima. Cuenta con una válvula de seguridad tarada a 44 bares. - Conmutador de presión F129 / Transmisor electrónico G65: montado en la línea de alta presión, junto a la válvula de expansión (según la motorización del vehículo). - Silenciador: ubicado en el circuito de baja presión, cerca del compresor, con la misión de amortiguar el ruido producido por las ondas de presión entre la válvula de expansión y el compresor."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Parámetro Valor Condiciones Carga de agente frigorífico 750-50 gramos Agente frigorífico R134a en el circuito frigorífico Presión de disparo de la válvula de seguridad 44 bares Válvula de seguridad integrada en el compresor"
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Válvula de seguridad en el compresor tarada a 44 bares para prevenir sobrepresiones en el circuito."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema general del circuito frigorífico indicando la ubicación del compresor, transmisor de presión, filtro deshidratador, válvula de expansión, condensador, evaporador y silenciador — Fuente: CIRCUITO FRIGORÍFICO.pdf, pág. 1"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.condensador-17",
+   "nt": 634,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "condensador",
+   "seccion": "",
+   "titulo": "Condensador",
+   "codigo": "",
+   "menu": "Condensador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "Por delante del radiador del líquido refrigerante",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Ceder calor al exterior en el circuito frigorífico."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Montado en el frontal del vehículo, por delante del radiador del líquido refrigerante del motor."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.filtro-deshidratador-8",
+   "nt": 635,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "filtro-deshidratador",
+   "seccion": "",
+   "titulo": "Filtro Deshidratador",
+   "codigo": "",
+   "menu": "Filtro Deshidratador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "En el circuito frigorífico",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Retener la humedad, filtrar los residuos procedentes de la abrasión y evitar que se produzcan burbujas en el circuito."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Integrado en la canalización del circuito frigorífico."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.valvula-de-expansion-10",
+   "nt": 636,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "dispositivos-de-expansion",
+   "seccion": "",
+   "titulo": "Válvula De Expansión",
+   "codigo": "",
+   "menu": "Válvula De Expansión",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "En el circuito frigorífico, previa al evaporador y junto al conmutador F129 / transmisor G65",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Controlar la presión y el caudal del agente frigorífico hacia el evaporador."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Montada junto al conmutador de presión F129 o transmisor electrónico G65 en la línea de alta presión."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.evaporador-18",
+   "nt": 637,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "evaporador",
+   "seccion": "",
+   "titulo": "Evaporador",
+   "codigo": "",
+   "menu": "Evaporador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "Ubicado en la unidad climática",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Producir la expansión del agente frigorífico y dar lugar al intercambio de calor entre el agente frigorífico y el aire de entrada al habitáculo."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Montado en el interior de la unidad climática."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.compresor-8",
+   "nt": 638,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "compresor",
+   "seccion": "",
+   "titulo": "Compresor",
+   "codigo": "",
+   "menu": "Compresor",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "En el circuito frigorífico, accionado desde el motor térmico mediante correa Poly V",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Generar la presión necesaria en el circuito frigorífico para impulsar el agente frigorífico R134a."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Compresor del tipo autorregulado con 7 cilindros. Su arrastre se efectúa mediante correa Poly V a través de un acoplamiento magnético, el cual se activa por solicitud del usuario o de la unidad de control del autoclima."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Autorregulado, 7 cilindros, accionamiento por correa Poly V y acoplamiento magnético. Dispone de una válvula de seguridad incorporada."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Presión de tarado de la válvula de seguridad a 44 bares. Carga del circuito de 750-50 gramos de agente frigorífico R134a."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.conmutador-de-presion-f129-8",
+   "nt": 639,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "conmutador-de-presion-f129",
+   "seccion": "",
+   "titulo": "Conmutador De Presión F129",
+   "codigo": "F129 / G65",
+   "menu": "Conmutador De Presión F129 F129 / G65",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y aire acondicionado de accionamiento manual (según la motorización del vehículo)",
+   "ubicacion": "En el circuito de alta presión, junto a la válvula de expansión",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Supervisar o medir la presión del agente frigorífico en el lado de alta presión del circuito."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Según la motorización del vehículo, se instala un conmutador de presión electromecánico (F129) o un transmisor electrónico de presión (G65)."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Conmutador de presión F129 o transmisor electrónico G65."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.silenciador-8",
+   "nt": 640,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "silenciador",
+   "seccion": "",
+   "titulo": "Silenciador",
+   "codigo": "",
+   "menu": "Silenciador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "Ubicado en el circuito de baja presión, cerca del compresor",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Amortiguar el ruido producido por las ondas de presión entre la válvula de expansión y el compresor."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Atenúa acústicamente las ondas de presión generadas durante la circulación del agente frigorífico en el tramo de baja presión."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Montado en la canalización del circuito de baja presión, próximo al compresor."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.circuito-frigorifico-9",
+   "nt": 641,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "circuito-frigorifico",
+   "seccion": "",
+   "titulo": "Circuito Frigorífico",
+   "codigo": "",
+   "menu": "Circuito Frigorífico",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Estructura y disposición general de los componentes en el circuito frigorífico del sistema autoclima y del aire acondicionado de accionamiento manual."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Circuito cerrado de climatización por el que circula el agente frigorífico R134a para generar elevación de presión, disipación de calor, filtrado de humedad, regulación de caudal y absorción de calor en el habitáculo."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Agente frigorífico del tipo R134a."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El circuito frigorífico montado en el autoclima es idéntico al utilizado en el sistema de aire acondicionado de accionamiento manual. El fluido recorre los siguientes componentes en el circuito: - Condensador: ubicado por delante del radiador del líquido refrigerante del motor. - Filtro deshidratador: encargado de retener la humedad, filtrar los residuos procedentes de la abrasión y evitar que se produzcan burbujas en el circuito. - Válvula de expansión: punto donde se controla la presión y el caudal del agente frigorífico. - Evaporador: ubicado en la unidad climática, donde se produce la expansión y da lugar al intercambio de calor entre el agente frigorífico y el aire de entrada al habitáculo. - Compresor: genera la presión necesaria en el circuito y es del tipo autorregulado con 7 cilindros. Su arrastre se realiza mediante correa Poly V y acoplamiento magnético, activado por la solicitud del usuario o de la unidad de control del autoclima. Cuenta con una válvula de seguridad tarada a 44 bares. - Conmutador de presión F129 / Transmisor electrónico G65: montado en la línea de alta presión, junto a la válvula de expansión (según la motorización del vehículo). - Silenciador: ubicado en el circuito de baja presión, cerca del compresor, con la misión de amortiguar el ruido producido por las ondas de presión entre la válvula de expansión y el compresor."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Parámetro Valor Condiciones Carga de agente frigorífico 750-50 gramos Agente frigorífico R134a en el circuito frigorífico Presión de disparo de la válvula de seguridad 44 bares Válvula de seguridad integrada en el compresor"
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Válvula de seguridad en el compresor tarada a 44 bares para prevenir sobrepresiones en el circuito."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema general del circuito frigorífico indicando la ubicación del compresor, transmisor de presión, filtro deshidratador, válvula de expansión, condensador, evaporador y silenciador — Fuente: CIRCUITO FRIGORÍFICO.pdf, pág. 1"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.condensador-18",
+   "nt": 642,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "condensador",
+   "seccion": "",
+   "titulo": "Condensador",
+   "codigo": "",
+   "menu": "Condensador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "Por delante del radiador del líquido refrigerante",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Ceder calor al exterior en el circuito frigorífico."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Montado en el frontal del vehículo, por delante del radiador del líquido refrigerante del motor."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.filtro-deshidratador-9",
+   "nt": 643,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "filtro-deshidratador",
+   "seccion": "",
+   "titulo": "Filtro Deshidratador",
+   "codigo": "",
+   "menu": "Filtro Deshidratador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "En el circuito frigorífico",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Retener la humedad, filtrar los residuos procedentes de la abrasión y evitar que se produzcan burbujas en el circuito."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Integrado en la canalización del circuito frigorífico."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.valvula-de-expansion-11",
+   "nt": 644,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "dispositivos-de-expansion",
+   "seccion": "",
+   "titulo": "Válvula De Expansión",
+   "codigo": "",
+   "menu": "Válvula De Expansión",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "En el circuito frigorífico, previa al evaporador y junto al conmutador F129 / transmisor G65",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Controlar la presión y el caudal del agente frigorífico hacia el evaporador."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Montada junto al conmutador de presión F129 o transmisor electrónico G65 en la línea de alta presión."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.evaporador-19",
+   "nt": 645,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "evaporador",
+   "seccion": "",
+   "titulo": "Evaporador",
+   "codigo": "",
+   "menu": "Evaporador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "Ubicado en la unidad climática",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Producir la expansión del agente frigorífico y dar lugar al intercambio de calor entre el agente frigorífico y el aire de entrada al habitáculo."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Montado en el interior de la unidad climática."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.compresor-9",
+   "nt": 646,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "compresor",
+   "seccion": "",
+   "titulo": "Compresor",
+   "codigo": "",
+   "menu": "Compresor",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "En el circuito frigorífico, accionado desde el motor térmico mediante correa Poly V",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Generar la presión necesaria en el circuito frigorífico para impulsar el agente frigorífico R134a."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Compresor del tipo autorregulado con 7 cilindros. Su arrastre se efectúa mediante correa Poly V a través de un acoplamiento magnético, el cual se activa por solicitud del usuario o de la unidad de control del autoclima."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Autorregulado, 7 cilindros, accionamiento por correa Poly V y acoplamiento magnético. Dispone de una válvula de seguridad incorporada."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Presión de tarado de la válvula de seguridad a 44 bares. Carga del circuito de 750-50 gramos de agente frigorífico R134a."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.conmutador-de-presion-f129-9",
+   "nt": 647,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "conmutador-de-presion-f129",
+   "seccion": "",
+   "titulo": "Conmutador De Presión F129",
+   "codigo": "F129 / G65",
+   "menu": "Conmutador De Presión F129 F129 / G65",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y aire acondicionado de accionamiento manual (según la motorización del vehículo)",
+   "ubicacion": "En el circuito de alta presión, junto a la válvula de expansión",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Supervisar o medir la presión del agente frigorífico en el lado de alta presión del circuito."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Según la motorización del vehículo, se instala un conmutador de presión electromecánico (F129) o un transmisor electrónico de presión (G65)."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Conmutador de presión F129 o transmisor electrónico G65."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.silenciador-9",
+   "nt": 648,
+   "modulo": "ssc",
+   "unidad": "sin-clasificar",
+   "clave": "silenciador",
+   "seccion": "",
+   "titulo": "Silenciador",
+   "codigo": "",
+   "menu": "Silenciador",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Sistema autoclima y sistema de aire acondicionado de accionamiento manual",
+   "ubicacion": "Ubicado en el circuito de baja presión, cerca del compresor",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Amortiguar el ruido producido por las ondas de presión entre la válvula de expansión y el compresor."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Atenúa acústicamente las ondas de presión generadas durante la circulación del agente frigorífico en el tramo de baja presión."
     },
     {
      "titulo": "Características",
