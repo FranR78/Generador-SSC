@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">866 notas · 22/09/2026</p>
+  <p class="sidebar-meta">873 notas · 22/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -555,6 +555,13 @@
     <li><a href="#nt871">NT871 · Diagnóstico De Autoclima Con Parpadeo</a></li>
     <li><a href="#nt872">NT872 · Arquitectura, Funciones Y Componentes</a></li>
     <li><a href="#nt873">NT873 · Lectura De Identificación De La Unidad</a></li>
+    <li><a href="#nt882">NT882 · Análisis De Fallos Y Diagnóstico Del C</a></li>
+    <li><a href="#nt883">NT883 · Lavado Y Limpieza Del Circuito De Clim</a></li>
+    <li><a href="#nt884">NT884 · Tamiz Filtrante Del Conducto De Succió</a></li>
+    <li><a href="#nt885">NT885 · Aceite Para Refrigerante De Climatizac</a></li>
+    <li><a href="#nt886">NT886 · Dosificación De Aceite Y Preparación D</a></li>
+    <li><a href="#nt887">NT887 · Vacío, Prueba De Estanqueidad, Recarga</a></li>
+    <li><a href="#nt888">NT888 · Colorante Trazador Para Detección De F</a></li>
   </ul>
 </nav>
 
@@ -53407,8 +53414,470 @@ Debido a diferencias en la estructura trasera de la carrocería, en la mayoría 
     </div>
   </section>
 
+  <section id="nt882" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 882 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Análisis De Fallos Y Diagnóstico Del Compresor</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Explica la secuencia de comprobación para diagnosticar las causas de fallo de un compresor (circuito de refrigeración, sistema eléctrico o zona del compresor/correa) y evaluar el acoplamiento magnético, la válvula eléctrica de regulación, las fugas o los daños mecánicos. Aplica a la verificación y sustitución del compresor de climatización.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El fallo del compresor puede ser consecuencia directa de una anomalía propia (eléctrica o mecánica) o indirecta provocada por problemas en el circuito frigorífico (contaminación, falta de refrigerante o lubricación deficiente). Es necesario aislar la causa raíz antes de sustituir el compresor para evitar repetir el fallo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Compresor montado en el vehículo para comprobación inicial de funcionamiento o desmontado para inspección física.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Estación de servicio de climatización, equipo de prueba eléctrica / polímetro y herramientas manuales.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>Secuencia de análisis y diagnóstico de fallos:
+1. Comprobar si el origen del fallo está en:
+   a) El circuito de refrigeración.
+   b) El sistema eléctrico.
+   c) La zona del compresor (correa de transmisión, componentes añadidos).
+2. Si alguno de los puntos anteriores no es correcto, proceder a purgar el refrigerante y desmontar el compresor.
+3. Si las comprobaciones son correctas o tras desmontar el compresor, evaluar minuciosamente los cuatro puntos clave:
+   a) <strong>Acoplamiento magnético:</strong> verificar la alimentación eléctrica, el entrehierro y el acoplamiento mecánico.
+   b) <strong>Daños mecánicos:</strong> inspeccionar el giro libre del eje, la presencia de ruidos internos o el gripaje.
+   c) <strong>Válvula eléctrica de regulación:</strong> comprobar la señal de control y la resistencia de la bobina.
+   d) <strong>Fugas:</strong> verificar la estanqueidad en retenes, juntas de cuerpo y racores.
+4. Comprobar si en el sistema hay suciedad, sustancias sólidas o partículas extrañas (restos de abrasión, virutas).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th style="text-align: left;">Punto de Comprobación</th>
+<th style="text-align: left;">Criterio de Aceptación / Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Estado del circuito frigorífico / eléctrico / correa</td>
+<td style="text-align: left;">Correcto sin desviaciones</td>
+</tr>
+<tr>
+<td style="text-align: left;">Presencia de suciedad o virutas en el sistema</td>
+<td style="text-align: left;">Sin residuos sólidos ni contaminación</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Montar un compresor nuevo sin determinar la causa del fallo previo; si existían virutas o suciedad en el circuito, el nuevo compresor se gripa a corto plazo.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobar que el compresor gira suavemente sin ruidos y que la válvula y el acoplamiento magnético responden a las señales eléctricas.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>Recuperar el refrigerante mediante estación de servicio de climatización homologada antes de desacoplar tuberías o mangueras.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt883" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 883 <span class="subtipo">Procedimiento</span></div>
+    <div class="nota-body proceso">
+      <h1>Lavado Y Limpieza Del Circuito De Climatización</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Explica la metodología para lavar a fondo el circuito de climatización antes de instalar un compresor nuevo o reparado. Aplica obligatoriamente siempre que se sustituya el compresor o exista suciedad/virutas en el sistema.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Las impurezas, virutas y restos de abrasión acumulados en el circuito destruyen los componentes mecánicos internos del compresor nuevo. El lavado elimina estos contaminantes garantizando la limpieza interna de tuberías, condensador y evaporador.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Refrigerante recuperado del circuito. Compresor, filtro deshidratante/acumulador y válvula de expansión o de mariposa desmontados del vehículo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Estación de servicio de climatización con función de lavado usando refrigerante R134a, o equipo de lavado con solución especial de lavado (ej. HELLA Gutmann Solutions).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ol>
+<li>Desmontar el compresor defectuoso, el filtro deshidratante (o acumulador) y la válvula de expansión (o de mariposa).</li>
+<li>Conectar el equipo de lavado a los tramos de tubería, condensador y evaporador.</li>
+<li>Efectuar el lavado a fondo de todo el sistema utilizando refrigerante R134a o solución de lavado especial.</li>
+<li>Descartar el lavado del compresor, del filtro deshidratante y de la válvula de expansión (componentes no lavables).</li>
+<li>Sustituir obligatoriamente por componentes nuevos: la válvula de expansión/de mariposa, el filtro deshidratante/acumulador y todas las juntas tóricas de los racores.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th style="text-align: left;">Operación / Componente</th>
+<th style="text-align: left;">Condición y Especificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Componentes NO lavables (sustitución obligatoria)</td>
+<td style="text-align: left;">Compresor, filtro deshidratante/acumulador, válvula de expansión/mariposa</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fluido de lavado recomendado</td>
+<td style="text-align: left;">Refrigerante R134a o solución especial de lavado</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Intentar lavar el filtro deshidratante o la válvula de expansión; no es posible eliminar la suciedad de su interior y deben reemplazarse siempre.</li>
+<li>Omitir el lavado del circuito al cambiar el compresor; invalida la garantía y provoca el gripaje del nuevo compresor.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Verificar la ausencia de restos de fluido de lavado y comprobar la limpieza visual en las bocas de conexión de las tuberías.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>Utilizar gafas de protección estancas y guantes de nitrilo. Recoger los residuos de soluciones de lavado en recipientes específicos para su gestión ambiental.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt884" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 884 </div>
+    <div class="nota-body">
+      <h1>Tamiz Filtrante Del Conducto De Succión Del Compresor</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">P</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">v</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">v</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">f</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">o</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Insertado en el conducto o manguera de succión (baja presión) a la entrada del compresor</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Retener posibles impurezas residuales o partículas extrañas que hayan podido quedar en el circuito tras el proceso de lavado, evitando que ingresen al compresor nuevo y provoquen daños mecánicos.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Filtro de malla física (tamiz) que permite el paso libre del gas refrigerante y del aceite lubricante pero intercepta cualquier partícula sólida de tamaño superior a la luz de paso de la malla.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Filtro de malla fina de inserción directa en la boca o tubería de succión del compresor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Saturación o acumulación excesiva de partículas si el lavado previo del circuito fue insuficiente.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Restricción en el flujo de gas de aspiración al compresor, provocando una caída anormal de la presión en la línea de baja.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Inspección visual del estado de la malla antes de su montaje o tras una prueba de funcionamiento si se detectan caídas anormales de presión en baja.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt885" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 885 </div>
+    <div class="nota-body">
+      <h1>Aceite Para Refrigerante De Climatización</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">L</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">b</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">v</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">y</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">m</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">q</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">d</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">A</span><span class="badge-aplicacion">/</span><span class="badge-aplicacion">C</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Distribuido en el interior de todos los componentes del circuito frigorífico</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Lubricar las partes mecánicas en movimiento dentro del compresor (pistones, plato oscilante, rodamientos), evacuar calor y contribuir a la estanqueidad de retenes y juntas tóricas.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Aceite sintético especial miscible con el gas refrigerante, transportado por el propio caudal de refrigerante a través de todo el circuito durante el funcionamiento.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Aceite lubricante específico para sistemas de A/C. Requiere respetar estrictamente la viscosidad especificada por el fabricante del vehículo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Distribución media del volumen total de aceite en el circuito:</li>
+<li>Compresor: 50% del total.</li>
+<li>Evaporador: 20% del total.</li>
+<li>Condensador: 10% del total.</li>
+<li>Tubos / Mangueras: 10% del total.</li>
+<li>Filtro deshidratante / Acumulador: 10% del total.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Degradación por sobrecalentamiento o contaminación con humedad.</li>
+<li>Cantidad insuficiente por fugas o exceso de volumen por rellenados incorrectos.</li>
+<li>Mezcla de viscosidades no equivalentes.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Falta de lubricación que provoca el gripaje del compresor, o exceso de aceite que disminuye la capacidad de intercambio térmico en el evaporador y condensador.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Medición del volumen extraído mediante purga completa del compresor en una probeta graduada y verificación del aspecto y viscosidad del lubricante.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT885_01</code> Distribución media de la cantidad de aceite en los componentes del circuito frigorífico — Fuente: Cómo hacer el análisis de fallos de un compresor Área premium.pdf, pág. 2</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt886" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 886 <span class="subtipo">Procedimiento</span></div>
+    <div class="nota-body proceso">
+      <h1>Dosificación De Aceite Y Preparación Del Compresor Nuevo</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Explica el procedimiento para verificar, purgar y ajustar la cantidad exacta de aceite lubricante en un compresor nuevo antes de su montaje en el vehículo. Aplica al reemplazo de compresores de climatización.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Un mismo compresor de recambio puede aplicarse a diferentes modelos de vehículos con capacidades de aceite distintas. Verificar y ajustar la cantidad total especificada por el fabricante del vehículo previene el gripaje por defecto o el bajo rendimiento frigorífico por exceso de lubricante.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Compresor nuevo fuera del vehículo. Datos técnicos del fabricante sobre la cantidad y viscosidad exactas de aceite para el modelo concreto.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Probeta graduada de medición, aceite sintético nuevo de la viscosidad especificada por el fabricante del vehículo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ol>
+<li>Retirar los tapones de transporte del compresor nuevo.</li>
+<li>Purgar todo el aceite que contiene el compresor nuevo de fábrica, recogiéndolo en una probeta graduada.</li>
+<li>Rellenar el compresor con la cantidad total exacta de aceite (del sistema) indicada por el fabricante del vehículo para ese modelo específico.</li>
+<li>Para distribuir el aceite de forma uniforme por los mecanismos internos, girar manualmente el eje del compresor 10 vueltas completas antes de instalarlo.</li>
+<li>Humedecer todas las juntas tóricas nuevas con aceite de refrigerante antes de su colocación en los racores de conexión.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th style="text-align: left;">Operación / Parámetro</th>
+<th style="text-align: left;">Especificación y Condición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Giro manual previo al montaje</td>
+<td style="text-align: left;">10 vueltas completas al eje del compresor</td>
+</tr>
+<tr>
+<td style="text-align: left;">Volumen y viscosidad de aceite</td>
+<td style="text-align: left;">Ajuste estricto al valor especificado por el fabricante del vehículo</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Montar el compresor directamente como viene de fábrica sin verificar el aceite; el volumen interno de fábrica puede no coincidir con las especificaciones del vehículo.</li>
+<li>No girar el eje 10 veces a mano antes de arrancar; puede producirse un golpe de líquido o falta de lubricación inicial en la cara superior de los pistones.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobar el giro suave del eje a mano sin atascamientos y verificar que las juntas tóricas quedan humectadas y asentadas correctamente.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>Gestión ambiental de los residuos de aceite extraído conforme a la normativa de residuos peligrosos.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt887" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 887 <span class="subtipo">Procedimiento</span></div>
+    <div class="nota-body proceso">
+      <h1>Vacío, Prueba De Estanqueidad, Recarga Y Protocolo De Rodaje</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Explica los pasos para realizar la evacuación, prueba de estanqueidad, llenado de refrigerante por la toma de alta presión y el protocolo de arranque inicial en ralentí del compresor. Aplica al proceso de puesta en servicio tras sustituir el compresor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El vacío elimina el aire y la humedad. La carga exclusiva por la toma de alta presión evita el impacto de refrigerante líquido sobre los pistones del compresor. El protocolo de encendido escalonado distribuye el aceite sin someter al compresor a cargas mecánicas bruscas.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Circuito frigorífico cerrado con compresor nuevo, filtro deshidratante nuevo y válvula de expansión nueva montados. Estación de carga conectada.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Estación de servicio de climatización, botella de refrigerante especificado (ej. R134a).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ol>
+<li><strong>Evacuación y prueba:</strong>
+   - Conectar la estación de servicio y crear el vacío en el sistema respetando el tiempo indicado por el fabricante.
+   - Realizar la prueba de mantenimiento de vacío / estanqueidad.</li>
+<li><strong>Carga de refrigerante:</strong>
+   - Rellenar la cantidad exacta de refrigerante prescrita <strong>únicamente a través de la toma lateral de alta presión</strong>, evitando la entrada directa de líquido al compresor.</li>
+<li><strong>Ajuste de distribución en habitáculo previo al arranque:</strong>
+   - Posicionar la distribución de aire en "Boquilla central" y abrir todas las salidas centrales.
+   - Seleccionar el mando del ventilador de aire fresco en la posición media.
+   - Seleccionar la temperatura en máxima potencia de refrigeración (frío máximo).</li>
+<li><strong>Protocolo de rodaje e inicialización del compresor:</strong>
+   - Arrancar el motor (con el aire acondicionado apagado) y mantenerlo al ralentí durante 2 minutos sin interrupción.
+   - Encender el aire acondicionado y dejarlo funcionando al ralentí durante 10 segundos.
+   - Apagar el aire acondicionado durante 10 segundos.
+   - Repetir este ciclo de encendido/apagado de 10 segundos al menos 5 veces consecutivas.</li>
+<li><strong>Comprobación final:</strong>
+   - Realizar la comprobación de presiones y rendimiento del sistema.
+   - Realizar una prueba de conducción y documentar los trabajos realizados.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <table>
+<thead>
+<tr>
+<th style="text-align: left;">Paso / Parámetro</th>
+<th style="text-align: left;">Valor y Condición</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Toma de llenado de refrigerante</td>
+<td style="text-align: left;">Únicamente por la toma lateral de alta presión</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tiempo de motor a ralentí antes de A/C</td>
+<td style="text-align: left;">2 minutos ininterrumpidos</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ciclo de encendido/apagado de A/C a ralentí</td>
+<td style="text-align: left;">10 s encendido / 10 s apagado (repetir mínimo 5 veces)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Posición de mandos de habitáculo</td>
+<td style="text-align: left;">Boquillas centrales abiertas / Ventilador en posición media / Frío máximo</td>
+</tr>
+</tbody>
+</table>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Interpretación y errores frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Cargar refrigerante líquido por la toma de baja presión; provoca golpe de líquido en el compresor, doblando bielas o rompiendo las válvulas de lámina.</li>
+<li>Acelerar el motor o conectar el A/C inmediatamente tras el arranque sin cumplir el protocolo de 2 minutos y ciclos de 10 segundos; destruye el compresor por falta de lubricación inicial.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Verificar la estabilidad de las presiones de alta y baja en la estación de servicio y comprobar el enfriamiento continuo del aire en las boquillas centrales.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>Realizar la carga mediante estación de servicio automática con control de estanqueidad según la normativa sobre gases fluorados.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt888" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 888 </div>
+    <div class="nota-body">
+      <h1>Colorante Trazador Para Detección De Fugas</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <span class="badge-aplicacion">L</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">c</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">ó</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">v</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">o</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">z</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">v</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">l</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">(</span><span class="badge-aplicacion">U</span><span class="badge-aplicacion">V</span><span class="badge-aplicacion">)</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">p</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">o</span><span class="badge-aplicacion">s</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">f</span><span class="badge-aplicacion">u</span><span class="badge-aplicacion">g</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">d</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion"> </span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">f</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">i</span><span class="badge-aplicacion">g</span><span class="badge-aplicacion">e</span><span class="badge-aplicacion">r</span><span class="badge-aplicacion">a</span><span class="badge-aplicacion">n</span><span class="badge-aplicacion">t</span><span class="badge-aplicacion">e</span>
+        <p class="ubicacion"><strong>Ubicación:</strong> Añadido al fluido refrigerante y al aceite lubricante en el circuito de climatización</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Marcar los puntos de inestanqueidad en tuberías, racores y componentes por los que escapa el gas refrigerante, permitiendo su detección rápida.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Aditivo fluido fluorescente miscible con el aceite y el refrigerante. Al escapar por una fuga, se deposita exteriormente en la zona del defecto y brilla al ser iluminado con luz ultravioleta.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Características<span class="criterio">RA1-CEb</span></div>
+        <p>Líquido trazador de contraste para sistemas de climatización (ej. gama HELLA Gutmann Solutions).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Dosificación: Respetar estrictamente la dosis recomendada por el fabricante. Exige documentación obligatoria de su aplicación en la pegatina de servicio del vehículo.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Dosificación excesiva por aplicaciones repetidas sin control previo.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>La sobreconcentración de colorante en el aceite altera la viscosidad del lubricante, pudiendo llegar a producir daños mecánicos en el compresor.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Inspección con lámpara de luz ultravioleta (UV) y gafas de contraste en las uniones y retenes del circuito, y verificación del registro en la pegatina de servicio para evitar sobredosis.</p>
+<p>💡 ¿Deseas que adaptemos este protocolo de sustitución de compresor y vaciado/recarga en una guía de taller paso a paso para las prácticas del alumnado?</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">POR COMPLETAR</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    866 notas técnicas · generado el 22/09/2026.
+    873 notas técnicas · generado el 22/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
