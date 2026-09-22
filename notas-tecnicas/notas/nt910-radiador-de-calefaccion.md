@@ -2,7 +2,7 @@
 id: ssc.clima.radiador-de-calefaccion
 modulo: ssc
 unidad: clima
-nt: 902
+nt: 910
 tipo: elemento
 titulo: Radiador de calefacción
 codigo: No documentado en fuentes

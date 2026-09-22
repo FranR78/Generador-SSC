@@ -1302,6 +1302,7 @@
     var curCargado = false;
 
     function initCursos(){
+      if(cursoActual){ salirCurso(); }
       if(curCargado && apCorpus){ pintarCursos(); return; }
       curCargado = true;
       if(apCorpus){ pintarCursos(); return; }
@@ -1323,14 +1324,15 @@
         return;
       }
 
-      // Cuántas notas hay y cuántas leídas, por unidad.
+      // Por unidad se cuentan TEMAS (componentes), no fichas: cinco manuales
+      // hablando del compresor son un tema, no cinco. Un tema está visto en
+      // cuanto se ha leído cualquiera de sus fuentes.
       var cuenta = {};
-      (apCorpus.notas||[]).forEach(function(n){
-        var u = n.unidad || 'sin-unidad';
-        if(!cuenta[u]) cuenta[u] = { total:0, leidas:0, claves:{} };
-        cuenta[u].total++;
-        if(n.clave) cuenta[u].claves[n.clave] = true;
-        if(n.leida) cuenta[u].leidas++;
+      (apCorpus.unidades||[]).forEach(function(u){
+        var t = temasDe(u.unidad);
+        cuenta[u.unidad] = { total: t.length,
+          leidas: t.filter(function(x){ return x.visto; }).length,
+          secciones: seccionesDe(u.unidad, t).length };
       });
 
       cont.innerHTML = '';
@@ -1360,13 +1362,12 @@
           + '<p class="desc">' + (u.descripcion||'') + '</p>'
           + '<div class="meta">'
           + (u.horas ? '<span><b>' + u.horas + ' h</b> estimadas</span>' : '')
-          + (c.total ? '<span><b>' + Object.keys(c.claves||{}).length + '</b> componentes · '
-              + c.total + ' apuntes</span>' : '')
+          + (c.total ? '<span><b>' + c.secciones + '</b> bloques · <b>' + c.total + '</b> temas</span>' : '')
           + '</div>';
         if(c.total){
           h += '<div class="barra"><div style="width:' + pct + '%;background:'
             + (u.color||'#0a63aa') + '"></div></div>'
-            + '<div class="pie"><span>' + c.leidas + ' de ' + c.total + ' leídos</span>'
+            + '<div class="pie"><span>' + c.leidas + ' de ' + c.total + ' temas vistos</span>'
             + '<span class="pct" style="color:' + (u.color||'#0a63aa') + '">' + pct + '%</span></div>';
         } else {
           h += '<p class="vacia">Se abrirá cuando haya apuntes de esta unidad.</p>';
@@ -1374,7 +1375,7 @@
         h += '</div>';
         b.innerHTML = h;
         if(c.total){
-          b.addEventListener('click', function(){ abrirCurso(u.unidad, u.nombre); });
+          b.addEventListener('click', function(){ abrirCurso(u.unidad); });
         }
         cont.appendChild(b);
       });
@@ -1389,29 +1390,180 @@
         '. Cada una es un curso corto: entra y verás lo leído y lo que falta.';
     }
 
-    /* Entrar en un curso es ir a sus apuntes ya filtrados: no hace falta una
-       pantalla intermedia que no aporte nada. */
-    var entrandoDeCurso = false;
-    function abrirCurso(unidad, nombre){
-      entrandoDeCurso = true;
-      mostrar('apuntes');
-      initApuntes();
-      // Apuntes entra en "modo curso": fijado a esta unidad, con cabecera y sin
-      // desplegable, para que sea un curso cerrado y no una lista global.
-      var ap = document.querySelector('.ap');
-      ap.classList.add('en-curso');
-      var cab = document.getElementById('ap-curso');
-      if(cab){ cab.hidden = false; document.getElementById('ap-curso-nom').textContent = nombre || ''; }
-      // La opción del desplegable la crea pintarApuntes cuando llegan los datos;
-      // se espera a que exista antes de fijarla y filtrar.
-      var intentos = 0;
-      (function aplicar(){
-        var sel = document.getElementById('ap-unidad');
-        var lista = sel && sel.querySelector('option[value="' + unidad + '"]');
-        if(lista){ sel.value = unidad; filtrarApuntes(); return; }
-        if(intentos++ < 20) setTimeout(aplicar, 150);
-      })();
+    /* ---------- Dentro de un curso ----------
+       El curso es su propia pantalla, dentro de Cursos: índice por bloques en
+       el orden del programa → un tema por componente → la lectura. No se
+       salta a Apuntes (eso es la biblioteca entera, no un curso). */
+    var cursoActual = null, temaAbierto = null;
+    var entrandoDeCurso = false;   // lo sigue leyendo mostrar(); ya no se entra a Apuntes desde un curso
+
+    // Temas de una unidad: las fichas agrupadas por componente (clave), en el
+    // orden en que llegan (que ya es el del índice). Las fichas de un mismo
+    // componente NO tienen por qué venir seguidas: se agrupan por mapa.
+    function temasDe(unidad){
+      var orden = [], mapa = {};
+      (apCorpus.notas||[]).forEach(function(n){
+        if((n.unidad||'') !== unidad) return;
+        var k = n.clave || ('nt' + n.nt);
+        if(!mapa[k]){ mapa[k] = { clave:k, notas:[], seccion:'', visto:false }; orden.push(mapa[k]); }
+        var t = mapa[k];
+        t.notas.push(n);
+        if(n.leida) t.visto = true;
+        // La sección del tema: la de su primera ficha que la tenga. Sin índice
+        // (datos viejos), el grupo: algo ordenado siempre es mejor que "Otros".
+        if(!t.seccion) t.seccion = n.seccion || '';
+        if(!t.grupo) t.grupo = n.grupo || '';
+      });
+      orden.forEach(function(t){
+        var sec = t.seccion || t.grupo || 'Otros temas';
+        if(sec === 'Por ubicar' || sec === 'POR CLASIFICAR') sec = 'Otros temas';
+        t.bloque = sec;
+        t.nombre = nombreComponente(t.notas);
+      });
+      return orden;
     }
+
+    // Bloques en el orden del programa; lo que no esté en el índice, al final.
+    function seccionesDe(unidad, temas){
+      var orden = ((apCorpus.secciones||{})[unidad] || []).filter(function(s){ return s !== 'Por ubicar'; });
+      var hay = {};
+      temas.forEach(function(t){ hay[t.bloque] = true; });
+      var fuera = orden.filter(function(s){ return hay[s]; });
+      Object.keys(hay).sort().forEach(function(s){
+        if(fuera.indexOf(s) < 0 && s !== 'Otros temas') fuera.push(s);
+      });
+      if(hay['Otros temas']) fuera.push('Otros temas');
+      return fuera;
+    }
+
+    function abrirCurso(unidad){
+      cursoActual = unidad; temaAbierto = null;
+      document.getElementById('cur-portadas').hidden = true;
+      document.getElementById('cur-curso').hidden = false;
+      document.getElementById('cur-lector').hidden = true;
+      document.getElementById('cur-buscar').value = '';
+      var c = document.querySelector('.cur');
+      c.classList.add('en-curso'); c.classList.remove('leyendo');
+      pintarCurso();
+      window.scrollTo(0, 0);
+    }
+
+    function salirCurso(){
+      cursoActual = null; temaAbierto = null;
+      var c = document.querySelector('.cur');
+      if(!c) return;
+      c.classList.remove('en-curso', 'leyendo');
+      document.getElementById('cur-portadas').hidden = false;
+      document.getElementById('cur-curso').hidden = true;
+      document.getElementById('cur-lector').hidden = true;
+      if(apCorpus) pintarCursos();
+    }
+
+    function pintarCurso(){
+      if(!cursoActual || !apCorpus) return;
+      var u = (apCorpus.unidades||[]).filter(function(x){ return x.unidad === cursoActual; })[0] || {};
+      var color = u.color || '#0a63aa';
+      var temas = temasDe(cursoActual);
+      var vistos = temas.filter(function(t){ return t.visto; }).length;
+      var pct = temas.length ? Math.round(vistos*100/temas.length) : 0;
+      var cab = document.getElementById('cur-cab');
+      cab.style.background = color;
+      cab.innerHTML = '<div class="n">' + (u.icono||'') + ' Unidad ' + (u.orden||'') + '</div>'
+        + '<h2>' + (u.nombre||cursoActual) + '</h2>'
+        + '<div class="prog">' + vistos + ' de ' + temas.length + ' temas vistos · ' + pct + '%</div>'
+        + '<div class="barra"><div style="width:' + pct + '%"></div></div>';
+
+      var q = (document.getElementById('cur-buscar').value||'').toLowerCase().trim();
+      var visibles = temas.filter(function(t){
+        if(!q) return true;
+        return t.notas.some(function(n){
+          return (n.titulo+' '+(n.codigo||'')+' '+(n.menu||'')).toLowerCase().indexOf(q) >= 0;
+        });
+      });
+      var cont = document.getElementById('cur-itin');
+      cont.innerHTML = '';
+      if(!visibles.length){ cont.innerHTML = '<p class="vacio">Nada con esa búsqueda.</p>'; return; }
+
+      var abiertaYa = false;
+      seccionesDe(cursoActual, visibles).forEach(function(sec){
+        var ts = visibles.filter(function(t){ return t.bloque === sec; });
+        if(!ts.length) return;
+        var v = ts.filter(function(t){ return t.visto; }).length;
+        var d = document.createElement('details');
+        d.className = 'sec' + (v === ts.length ? ' hecha' : '');
+        // Abierto: el primer bloque sin terminar (por dónde vas), el del tema
+        // que se está leyendo, o todos si se está buscando.
+        var tieneAbierto = temaAbierto && ts.some(function(t){ return t.clave === temaAbierto; });
+        if(q || tieneAbierto || (!abiertaYa && v < ts.length && sec !== 'Otros temas')){ d.open = true; abiertaYa = true; }
+        var sum = document.createElement('summary');
+        sum.innerHTML = '<span class="sec-tit">' + sec + '</span>'
+          + '<span class="sec-prog"><span class="sec-barra"><span style="width:'
+          + Math.round(v*100/ts.length) + '%"></span></span>' + v + '/' + ts.length + '</span>';
+        d.appendChild(sum);
+        ts.forEach(function(t){
+          var b = document.createElement('button');
+          b.className = 'tema' + (t.visto ? ' visto' : '') + (t.clave === temaAbierto ? ' abierto' : '');
+          b.innerHTML = '<span class="t"></span>'
+            + (t.notas.length > 1 ? '<small>' + t.notas.length + ' fuentes</small>' : '')
+            + (t.visto ? '<span class="ok">✓</span>' : '');
+          b.querySelector('.t').textContent = t.nombre;
+          b.addEventListener('click', function(){ abrirTema(t, 0); });
+          d.appendChild(b);
+        });
+        cont.appendChild(d);
+      });
+    }
+
+    function abrirTema(t, i){
+      temaAbierto = t.clave;
+      document.getElementById('cur-lector').hidden = false;
+      document.querySelector('.cur').classList.add('leyendo');
+      // Varias fuentes del mismo tema: pestañas, no filas repetidas en el índice.
+      var f = document.getElementById('cur-fuentes');
+      f.innerHTML = '';
+      if(t.notas.length > 1){
+        t.notas.forEach(function(n, j){
+          var b = document.createElement('button');
+          b.textContent = 'Fuente ' + (j+1) + (n.leida ? ' ✓' : '');
+          if(j === i) b.className = 'activa';
+          b.addEventListener('click', function(){ abrirTema(t, j); });
+          f.appendChild(b);
+        });
+      }
+      var d = document.getElementById('cur-nota');
+      var nt = t.notas[i].nt;
+      d.innerHTML = '<p class="vacio">Abriendo…</p>';
+      if(window.innerWidth < 1000) window.scrollTo(0, 0);
+      pintarCurso();
+      google.script.run
+        .withSuccessHandler(function(n){
+          var h = '<h2>' + n.titulo + (n.codigo && !/documentad/i.test(n.codigo) ? ' — ' + n.codigo : '') + '</h2>';
+          if(n.ubicacion) h += '<p class="aviso"><strong>Ubicación:</strong> ' + n.ubicacion + '</p>';
+          (n.apartados||[]).forEach(function(a){
+            h += '<div class="apartado"><h4>' + a.titulo + '</h4><p>' + a.texto + '</p></div>';
+          });
+          if(n.fuentes) h += '<p class="fuente"><strong>Fuente:</strong> ' + n.fuentes + ' · NT' + n.nt + '</p>';
+          d.innerHTML = h;
+          var x = t.notas[i];
+          if(!x.leida){ x.leida = true; pintarCurso(); abrirTemaMarcar(t, i); }
+        })
+        .withFailureHandler(function(e){ d.innerHTML = '<p class="vacio">' + e.message + '</p>'; })
+        .cargarNota(nt);
+    }
+    // Refresca la marca ✓ de la pestaña recién leída sin recargar la nota.
+    function abrirTemaMarcar(t, i){
+      var b = document.getElementById('cur-fuentes').children[i];
+      if(b) b.textContent = 'Fuente ' + (i+1) + ' ✓';
+    }
+
+    (function(){
+      document.getElementById('cur-volver').addEventListener('click', salirCurso);
+      document.getElementById('cur-cerrar').addEventListener('click', function(){
+        document.querySelector('.cur').classList.remove('leyendo');
+        document.getElementById('cur-lector').hidden = true;
+      });
+      document.getElementById('cur-buscar').addEventListener('input', pintarCurso);
+    })();
 
     // Salir del curso: quita el filtro fijo y vuelve a Cursos.
     (function(){
@@ -1454,9 +1606,11 @@
         });
       }
       var leidas = apCorpus.notas.filter(function(n){return n.leida;}).length;
+      var temas = {};
+      apCorpus.notas.forEach(function(n){ temas[n.clave || ('nt'+n.nt)] = true; });
       document.getElementById('ap-resumen').textContent =
-        apCorpus.total + ' notas · has leído ' + leidas +
-        ' · actualizadas el ' + apCorpus.generado;
+        Object.keys(temas).length + ' temas · has leído ' + leidas +
+        ' fichas · actualizados el ' + apCorpus.generado;
       filtrarApuntes();
     }
 
@@ -1500,12 +1654,16 @@
     // Pinta una lista de notas (ya en orden) colapsando por componente: una
     // tarjeta por clave; si la clave tiene una sola nota, va suelta.
     function pintarComponentes(cont, notas){
-      var i = 0;
-      while(i < notas.length){
-        var c = notas[i].clave, run = [];
-        while(i < notas.length && notas[i].clave === c){ run.push(notas[i]); i++; }
+      var orden = [], mapa = {};
+      notas.forEach(function(n){
+        var k = n.clave || ('nt' + n.nt);
+        if(!mapa[k]){ mapa[k] = []; orden.push(k); }
+        mapa[k].push(n);
+      });
+      orden.forEach(function(k){
+        var run = mapa[k];
         cont.appendChild(run.length === 1 ? botonNota(run[0]) : tarjetaComponente(run));
-      }
+      });
     }
 
     function filtrarApuntes(){

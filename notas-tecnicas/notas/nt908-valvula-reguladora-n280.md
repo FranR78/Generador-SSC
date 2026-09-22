@@ -2,7 +2,7 @@
 id: ssc.clima.valvula-reguladora-n280
 modulo: ssc
 unidad: clima
-nt: 900
+nt: 908
 tipo: elemento
 titulo: Válvula reguladora del compresor N280
 codigo: N280

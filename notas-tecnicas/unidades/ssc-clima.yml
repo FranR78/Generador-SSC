@@ -77,6 +77,7 @@ indice:
       - ciclo-frigorifico-valvula
       - ciclo-frigorifico-estrangulador
       - subenfriamiento
+      - sistema-de-climatizacion
 
   - seccion: 3. Circuito frigorífico · lado de alta presión
     claves:
@@ -88,12 +89,16 @@ indice:
       - deposito-colector
       - filtro-deshidratador
       - mirilla
+      - valvula-de-descarga-de-sobrepresion
+      - intercambiador-termico-interno
+      - tamiz
 
   - seccion: 4. Dispositivos de expansión
     claves:
       - valvula-de-expansion
       - estrangulador
       - tubo-de-expansion
+      - dispositivos-de-expansion
 
   - seccion: 5. Circuito frigorífico · lado de baja presión
     claves:
@@ -102,6 +107,8 @@ indice:
       - amortiguador-de-oscilaciones
       - tuberias-y-racores
       - tomas-de-servicio
+      - filtro-deshidratador-y-deposito-colector-en-baja-presion
+      - filtro-deshidratador-y-vaso-de-expansion
 
   - seccion: 6. Sensores
     claves:
@@ -116,6 +123,10 @@ indice:
       - sensor-de-humedad
       - fotosensor-solar
       - sensor-de-ocupacion
+      - ntc-de-temperaturas
+      - transmisores-de-temperatura-del-aire-de-entrada
+      - interruptor-termico
+      - termostato
 
   - seccion: 7. Actuadores y mandos
     claves:
@@ -123,6 +134,7 @@ indice:
       - ventilador-del-habitaculo
       - unidad-de-control-y-mandos
       - electronica-y-red
+      - filtro-de-habitaculo
 
   - seccion: 8. Regulación y control
     claves:
@@ -132,6 +144,10 @@ indice:
       - recirculacion
       - distribucion-de-aire
       - can-bus
+      - interaccion-entre-climatizacion-y-refrigeracion-del-motor
+      - carga-del-alternador
+      - interruptor-de-marcha-atras
+      - regulador-de-la-iluminacion
 
   - seccion: 9. Diagnóstico y mantenimiento
     claves:
@@ -144,6 +160,7 @@ indice:
       - lavado-del-circuito
       - limpieza-del-evaporador
       - mantenimiento-y-servicio
+      - verificacion-del-contenido-de-co2-en-gases-de-escape
 
   - seccion: 10. Calefacción auxiliar e independiente
     claves:
@@ -154,3 +171,4 @@ indice:
       - bujia-de-precalentamiento-para-calefaccion
       - guardallamas
       - turbina-de-aire-de-combustion
+      - ajuste-basico-y-adaptacion-en-la-calefaccion-independiente

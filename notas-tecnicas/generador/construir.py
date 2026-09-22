@@ -116,8 +116,13 @@ def cargar_alias():
     """
     ruta = RAIZ / "claves.yml"
     if not ruta.exists():
-        return {}
+        return {}, set(), {}
     datos = yaml.safe_load(ruta.read_text(encoding="utf-8")) or {}
+
+    # Claves que son el mismo tema con otro nombre: {clave: clave canónica}.
+    # Más cómodo que mover títulos uno a uno cuando dos grupos enteros resultan
+    # ser la misma pieza ("compresor-de-climatizacion" -> "compresor").
+    plegar = {slug(str(a)): slug(str(b)) for a, b in (datos.pop("plegar", None) or {}).items()}
 
     # Parejas ya miradas y descartadas: no vuelven a salir en los avisos.
     distintos = set()
@@ -136,11 +141,21 @@ def cargar_alias():
                 )
             alias[s] = clave
             de_quien[s] = clave
-    return alias, distintos
+    return alias, distintos, plegar
+
+
+def plegada(clave):
+    """Sigue la cadena de 'plegar' hasta la clave canónica (sin bucles)."""
+    vistas = set()
+    while clave in PLEGAR and clave not in vistas:
+        vistas.add(clave)
+        clave = PLEGAR[clave]
+    return clave
 
 
 ALIAS = None       # se carga una vez, en cargar()
 DISTINTOS = set()  # parejas que ya se han mirado y no son lo mismo
+PLEGAR = {}        # clave -> clave canónica (bloque 'plegar' de claves.yml)
 
 
 class Nota:
@@ -180,6 +195,7 @@ class Nota:
             self.clave = slug(declarada)
         else:
             self.clave = (ALIAS or {}).get(slug(self.titulo)) or slug(self.titulo)
+        self.clave = plegada(self.clave)
         self.aplicacion = meta.get("aplicacion") or []
         self.ubicacion = str(meta.get("ubicacion", "")).strip()
         self.fuentes = str(meta.get("fuentes", "")).strip()
@@ -500,9 +516,9 @@ def posibles_duplicados(notas):
 
 
 def cargar():
-    global ALIAS, DISTINTOS, INDICES
+    global ALIAS, DISTINTOS, INDICES, PLEGAR
     # Antes de crear ninguna Nota: su __init__ usa ALIAS.
-    ALIAS, DISTINTOS = cargar_alias()
+    ALIAS, DISTINTOS, PLEGAR = cargar_alias()
     INDICES = cargar_indices()
     notas, errores = [], []
     for ruta in sorted(DIR_NOTAS.glob("*.md")):

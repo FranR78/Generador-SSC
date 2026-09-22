@@ -213,6 +213,74 @@ lectura-de-manometros:
 # son cosas distintas. Se anotan aquí para que no vuelva a preguntarlo.
 # Formato: una lista de parejas.
 
+# ---------------- Plegado de claves ----------------
+# Grupos enteros que son el mismo tema con otro nombre: izquierda, la clave que
+# sobra; derecha, la que manda. No fusiona texto: solo junta las fichas bajo un
+# mismo tema del curso. Si algo no es lo mismo, se borra la línea y listo.
+plegar:
+  # componentes
+  aceite-lubricante-para-compresor: aceite-frigorifico
+  aceite-para-maquinas-frigorificas-pag: aceite-frigorifico
+  acoplamiento-electromagnetico: embrague-electromagnetico
+  acoplamiento-electromagnetico-del-compresor: embrague-electromagnetico
+  agente-frigorifico-r134a: refrigerante
+  refrigerante-r134a-tetrafluoretano: refrigerante
+  amortiguador: amortiguador-de-oscilaciones
+  compresor-de-aire-acondicionado: compresor
+  compresor-de-climatizacion: compresor
+  deposito-colector-en-baja-presion: deposito-colector
+  deposito-de-fluido-con-cartucho-secador: filtro-deshidratador
+  deposito-de-liquido-y-deshidratador: filtro-deshidratador
+  filtro-deshidratador-lado-de-alta-presion: filtro-deshidratador
+  fotosensor-de-radiacion-solar: fotosensor-solar
+  fotosensor-doble-para-radiacion-solar: fotosensor-solar
+  fotosensor-para-radiacion-solar: fotosensor-solar
+  sensor-de-calidad-del-aire-sno2: sensor-de-calidad-del-aire
+  sensor-de-la-calidad-del-aire: sensor-de-calidad-del-aire
+  sensores-de-temperatura: ntc-de-temperaturas
+  presostato-de-climatizacion: presostatos
+  presostato-de-maxima-valvula-binaria: presostatos
+  presostato-de-minima-valvula-binaria: presostatos
+  presostato-de-tres-funciones-valvula-trinaria: presostatos
+  conmutador-de-presion-trinaria-o-sensor-map-de-alta: presostatos
+  transmisor-de-alta-presion-g65: transmisor-de-presion
+  transmisor-de-alta-presion-sensor-map: transmisor-de-presion
+  transmisor-de-presion-piezoelectrico-pwm: transmisor-de-presion
+  ventilador-electrico-del-condensador: ventilador-del-condensador
+  valvula-de-descarga-de-sobrepresion-del-compresor: valvula-de-descarga-de-sobrepresion
+  valvula-de-descarga-por-sobrepresion: valvula-de-descarga-de-sobrepresion
+  valvulas-de-expansion-l-90o-bloque-h-y-ot: valvula-de-expansion
+  servomotor-de-chapaleta-de-velocidad-y-recirculacion: servomotor-de-chapaleta
+  tomas-de-servicio-y-valvulas-schrader: tomas-de-servicio
+  tomas-de-servicio-de-alta-y-baja-presion: tomas-de-servicio
+  tuberias-y-mangueras-frigorificas: tuberias-y-racores
+  racores-y-empalmes-frigorificos-spring-lock-lokring: tuberias-y-racores
+  unidad-de-control-del-climatizador-y-panel-de-mandos: unidad-de-control-y-mandos
+  unidad-de-pantalla-y-mandos-del-climatizador-trasero: unidad-de-control-y-mandos
+  conmutador-del-climatizador: unidad-de-control-y-mandos
+  mandos-de-control-manual-y-conmutador-del-ventilador: unidad-de-control-y-mandos
+  # procesos y conceptos
+  ciclo-frigorifico-con-valvula-de-expansion: ciclo-frigorifico-valvula
+  circuito-frigorifico-con-valvula-de-expansion: ciclo-frigorifico-valvula
+  ciclo-frigorifico-de-compresion-de-vapor: circuito-frigorifico
+  principios-fisicos-de-la-tecnica-de-refrigeracion: principios-de-refrigeracion
+  conceptos-termodinamicos-y-magnitudes-fisicas-de-la-refrigeracion: principios-de-refrigeracion
+  efectos-climatologicos-y-confort-termico-en-el-habitaculo: confort-termico
+  diagnostico-por-subenfriamiento-y-recalentamiento: diagnostico
+  evacuacion-y-proceso-de-vacio-en-el-circuito-frigorifico: vacio
+  lavado-del-circuito-flushing: lavado-del-circuito
+  lavado-del-circuito-frigorifico: lavado-del-circuito
+  factores-de-contaminacion-y-limpieza-del-circuito: lavado-del-circuito
+  recirculacion-automatica-y-control-de-calidad-del-aire: recirculacion
+  sistema-de-recirculacion-de-aire: recirculacion
+  sistema-de-recirculacion-y-control-de-calidad-del-aire: recirculacion
+  regulacion-automatica-de-la-climatizacion: regulacion-automatica
+  regulacion-automatica-y-bizona-de-climatizacion: regulacion-automatica
+  regulacion-de-la-temperatura-en-climatizacion-electronica: regulacion-automatica
+  regulacion-en-climatizacion-semiautomatica-y-automatica: regulacion-automatica
+  regulacion-manual-de-temperatura: regulacion-manual
+  distribucion-bizona: distribucion-de-aire
+
 distintos:
   - ["Depósito Colector (En Baja Presión)", "Filtro Deshidratador Y Depósito Colector (En Baja Presión)"]
 

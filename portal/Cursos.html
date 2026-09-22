@@ -27,6 +27,56 @@
   .cur .vacia{font-size:12px;color:#7c8b93;font-style:italic}
   .cur .etiqueta{position:absolute;top:10px;right:10px;background:rgba(255,255,255,.92);
     color:#42525c;font-size:10.5px;font-weight:700;border-radius:20px;padding:2px 8px}
+  /* ---- Dentro de un curso: índice → tema → lectura, sin salir de Cursos ---- */
+  .cur .cur-volver{background:var(--azul,#0a63aa);color:#fff;border:none;border-radius:8px;
+    padding:8px 13px;font-family:inherit;font-size:13px;font-weight:700;cursor:pointer;margin-bottom:12px}
+  .cur .cur-cab{border-radius:12px;color:#fff;padding:14px 16px;margin-bottom:12px}
+  .cur .cur-cab .n{font-size:11px;font-weight:700;opacity:.85;letter-spacing:.06em;text-transform:uppercase}
+  .cur .cur-cab h2{margin:2px 0 8px;color:#fff;font-size:19px}
+  .cur .cur-cab .prog{font-size:13px;font-weight:600}
+  .cur .cur-cab .barra{background:rgba(255,255,255,.3);margin-top:6px}
+  .cur .cur-cab .barra>div{background:#fff}
+  .cur input[type=search]{width:100%;box-sizing:border-box;padding:10px 12px;border:1px solid var(--borde);
+    border-radius:8px;font-family:inherit;font-size:14px;margin-bottom:10px}
+  .cur details.sec{border:1px solid var(--borde);border-radius:10px;margin-bottom:8px;background:#fff;overflow:hidden}
+  .cur details.sec>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;
+    padding:12px;background:#eef5fb;font-weight:700;color:var(--azul-osc,#063f70);font-size:14px}
+  .cur details.sec>summary::-webkit-details-marker{display:none}
+  .cur details.sec>summary::before{content:'▸';color:var(--azul,#0a63aa)}
+  .cur details.sec[open]>summary::before{content:'▾'}
+  .cur details.sec.hecha>summary{background:#e9f7ef}
+  .cur .sec-tit{flex:1}
+  .cur .sec-prog{font-size:12px;color:#5a6b78;white-space:nowrap;display:flex;align-items:center;gap:6px}
+  .cur .sec-barra{width:48px;height:7px;background:#d7e6f2;border-radius:20px;overflow:hidden}
+  .cur .sec-barra>span{display:block;height:100%;background:var(--azul,#0a63aa)}
+  .cur .tema{display:flex;align-items:center;gap:10px;width:calc(100% - 16px);margin:6px 8px;text-align:left;
+    background:#fff;border:1px solid var(--borde);border-radius:9px;padding:11px 12px;cursor:pointer;
+    font-family:inherit;font-size:14.5px;color:#1d2b33}
+  .cur .tema:hover{border-color:var(--azul,#0a63aa);background:#f3f9ff}
+  .cur .tema .t{flex:1;font-weight:600}
+  .cur .tema small{color:#7c8b93;font-size:11.5px;white-space:nowrap}
+  .cur .tema.visto{background:#f6fbf8}
+  .cur .tema.visto .ok{color:#1e874b;font-weight:800}
+  .cur .tema.abierto{border-color:var(--azul-osc,#063f70);box-shadow:inset 3px 0 0 var(--azul-osc,#063f70)}
+  .cur .fuentes{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}
+  .cur .fuentes button{border:1px solid var(--borde);background:#eef4f9;border-radius:20px;padding:4px 11px;
+    font-family:inherit;font-size:12px;font-weight:700;color:#42525c;cursor:pointer}
+  .cur .fuentes button.activa{background:var(--azul,#0a63aa);color:#fff;border-color:var(--azul,#0a63aa)}
+  .cur .lector h2{margin-top:0}
+  .cur .apartado{margin:14px 0;padding-left:12px;border-left:3px solid var(--azul,#0a63aa)}
+  .cur .apartado h4{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--azul-osc,#063f70);margin:0 0 4px}
+  .cur .apartado p{margin:0;line-height:1.6;font-size:14.5px;white-space:pre-line}
+  .cur .fuente{font-size:12px;color:#5a6b78;border-top:1px solid var(--borde);padding-top:8px;margin-top:14px}
+  .cur .vacio{color:#5a6b78;font-style:italic;font-size:14px}
+  /* Móvil: una cosa cada vez. */
+  .cur.leyendo #cur-curso{display:none}
+  @media (min-width:1000px){
+    .cur.en-curso{display:grid;grid-template-columns:minmax(320px,400px) 1fr;gap:14px;align-items:start}
+    .cur.en-curso #cur-curso{display:block;position:sticky;top:60px}
+    .cur.en-curso #cur-itin{max-height:calc(100vh - 330px);overflow-y:auto;padding-right:4px}
+    .cur #cur-cerrar{display:none}
+    .cur .apartado p{font-size:15px;max-width:72ch}
+  }
   @media (max-width:760px){
     .cur .rejilla{grid-template-columns:1fr}
     .cur .portada{height:64px}
@@ -34,10 +84,27 @@
 </style>
 
 <div class="cur">
-  <div class="panel">
+  <div class="panel" id="cur-portadas">
     <h2>Tus cursos</h2>
     <p class="intro" id="cur-intro">Cada unidad es un curso corto. Entra en el que toque:
       verás lo que ya has leído y lo que te falta.</p>
     <div class="rejilla" id="cur-rejilla"></div>
+  </div>
+
+  <div id="cur-curso" hidden>
+    <div class="panel">
+      <button class="cur-volver" id="cur-volver">← Todos los cursos</button>
+      <div class="cur-cab" id="cur-cab"></div>
+      <input type="search" id="cur-buscar" placeholder="Buscar en este curso…">
+      <div id="cur-itin"></div>
+    </div>
+  </div>
+
+  <div id="cur-lector" hidden>
+    <div class="panel lector">
+      <button class="cur-volver" id="cur-cerrar">← Volver al índice</button>
+      <div class="fuentes" id="cur-fuentes"></div>
+      <div id="cur-nota"><p class="vacio">Elige un tema del índice para leerlo aquí.</p></div>
+    </div>
   </div>
 </div>

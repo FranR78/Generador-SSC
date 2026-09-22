@@ -2,7 +2,7 @@
 id: ssc.clima.sensor-de-refrigerante-del-motor
 modulo: ssc
 unidad: clima
-nt: 901
+nt: 909
 tipo: elemento
 titulo: Sensor / conmutador de temperatura del refrigerante del motor
 codigo: No documentado en fuentes
