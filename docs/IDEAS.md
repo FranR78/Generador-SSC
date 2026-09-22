@@ -164,3 +164,16 @@ Opciones a decidir:
 - O una cabecera "Estás en: Climatización" con un botón claro de salir.
 
 No tocar aún; apuntado para cuando se revise la navegación de Cursos.
+
+---
+
+## Optimizar la carga del portal (528 notas tardan)
+
+El portal se trae notas.json entero de Drive en cada arranque, con el texto
+completo de las 528 notas. Apuntes y Cursos solo necesitan el índice (título,
+unidad, grupo, leída). Partir el JSON en:
+- un índice ligero (lo que listan Apuntes/Cursos), que se carga al entrar;
+- el texto de cada nota, que se pide solo al abrirla (cargarNota ya lo hace).
+
+notas.json ya pesa cientos de KB y crece; con más unidades será peor. No urge,
+pero es la causa del "tarda en cargar".
