@@ -1465,7 +1465,7 @@
       var f = document.getElementById('ap-filtro').value;
       var cont = document.getElementById('ap-resultados');
       cont.innerHTML = '';
-      var n = 0;
+      var n = 0, seccionActual = null;
       apCorpus.notas.forEach(function(x){
         if(uSel && x.unidad !== uSel) return;
         if(g && x.grupo !== g) return;
@@ -1476,6 +1476,15 @@
           if(heno.indexOf(q) < 0) return;
         }
         n++;
+        // Cabecera de sección cuando cambia: convierte la lista en un temario.
+        // Las notas ya vienen en el orden del índice desde el servidor.
+        if(x.seccion && x.seccion !== seccionActual){
+          seccionActual = x.seccion;
+          var h = document.createElement('div');
+          h.className = 'ap-seccion';
+          h.textContent = x.seccion;
+          cont.appendChild(h);
+        }
         var b = document.createElement('button');
         b.className = 'nt' + (x.leida?' leida':'');
         b.setAttribute('data-nt', x.nt);

@@ -48,11 +48,13 @@ function listarNotas() {
     total: d.total,
     grupos: d.grupos,
     unidades: d.unidades || [],   // las portadas de Cursos salen de aquí
+    secciones: d.secciones || {}, // orden de secciones por unidad (el índice del curso)
     notas: d.notas.map(function (n) {
       return {
         nt: n.nt, titulo: n.titulo, menu: n.menu, grupo: n.grupo,
         codigo: n.codigo, tipo: n.tipo, subtipo: n.subtipo,
-        unidad: n.unidad || '', fuentes: n.fuentes, leida: !!leidas[n.nt]
+        unidad: n.unidad || '', seccion: n.seccion || '',
+        fuentes: n.fuentes, leida: !!leidas[n.nt]
       };
     })
   };

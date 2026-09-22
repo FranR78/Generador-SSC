@@ -500,9 +500,10 @@ def posibles_duplicados(notas):
 
 
 def cargar():
-    global ALIAS, DISTINTOS
+    global ALIAS, DISTINTOS, INDICES
     # Antes de crear ninguna Nota: su __init__ usa ALIAS.
     ALIAS, DISTINTOS = cargar_alias()
+    INDICES = cargar_indices()
     notas, errores = [], []
     for ruta in sorted(DIR_NOTAS.glob("*.md")):
         try:
@@ -535,6 +536,53 @@ def texto_plano(html_str):
     t = (t.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">")
           .replace("&nbsp;", " ").replace("&quot;", '"').replace("&#x27;", "'"))
     return re.sub(r"\s+", " ", t).strip()
+
+
+def cargar_indices():
+    """Lee el bloque 'indice' de cada unidad y arma el orden del curso.
+
+    Devuelve {unidad: {"secciones": [nombre,...],
+                       "clave": {clave: (rango_seccion, rango_dentro)}}}.
+    El orden del curso lo manda esto; una clave que no esté en el índice va a
+    una sección final "Por ubicar", nunca desaparece.
+    """
+    dir_uni = RAIZ / "unidades"
+    salida = {}
+    if not dir_uni.exists():
+        return salida
+    for ruta in sorted(dir_uni.glob("*.yml")):
+        u = yaml.safe_load(ruta.read_text(encoding="utf-8")) or {}
+        uni = u.get("unidad")
+        if not uni or not u.get("indice"):
+            continue
+        secciones, mapa = [], {}
+        for i, bloque in enumerate(u["indice"]):
+            nombre = str(bloque.get("seccion", f"Sección {i+1}"))
+            secciones.append(nombre)
+            for j, clave in enumerate(bloque.get("claves") or []):
+                mapa[slug(str(clave))] = (i, j)
+        secciones.append("Por ubicar")   # cajón del final para lo no listado
+        salida[uni] = {"secciones": secciones, "clave": mapa}
+    return salida
+
+
+INDICES = {}   # se carga en construir()
+
+
+def ubicar(nota):
+    """(rango_seccion, nombre_seccion, rango_dentro) de una nota según el índice.
+
+    Sin índice para su unidad, o clave no listada: va a "Por ubicar" al final,
+    ordenada por su número de nota para que salga algo estable.
+    """
+    idx = INDICES.get(nota.unidad)
+    if not idx:
+        return (10**6, "", nota.nt)
+    pos = idx["clave"].get(nota.clave)
+    if pos is None:
+        return (len(idx["secciones"]) - 1, "Por ubicar", nota.nt)
+    sec_rank, dentro = pos
+    return (sec_rank, idx["secciones"][sec_rank], dentro)
 
 
 def catalogo_unidades():
@@ -582,12 +630,15 @@ def volcar_json(notas):
     """
     fuera = []
     for n in notas:
+        sec_rank, sec_nombre, dentro = ubicar(n)
         fuera.append({
             "id": n.id,
             "nt": n.nt,
             "modulo": n.modulo,
             "unidad": n.unidad,
             "clave": n.clave,
+            "seccion": sec_nombre,
+            "_orden": [sec_rank, dentro, n.nt],
             "titulo": n.titulo,
             "codigo": n.codigo,
             "menu": n.menu,
@@ -600,11 +651,22 @@ def volcar_json(notas):
             "apartados": [{"titulo": k, "texto": texto_plano(v)}
                           for k, v in n.apartados.items()],
         })
+    # El orden del curso lo manda el índice: sección, luego posición dentro,
+    # luego número de nota como desempate estable.
+    fuera.sort(key=lambda x: x["_orden"])
+    for x in fuera:
+        del x["_orden"]   # era solo para ordenar; no viaja al portal
+
+    # Secciones en el orden del índice, por unidad, para que el portal pinte
+    # las cabeceras sin recalcular nada.
+    secciones_por_unidad = {u: idx["secciones"] for u, idx in INDICES.items()}
+
     doc = {
         "generado": date.today().isoformat(),
         "total": len(fuera),
         "grupos": sorted({n.grupo for n in notas}),
         "unidades": catalogo_unidades(),
+        "secciones": secciones_por_unidad,
         "notas": fuera,
     }
     ruta = DIR_WEB / "notas.json"
