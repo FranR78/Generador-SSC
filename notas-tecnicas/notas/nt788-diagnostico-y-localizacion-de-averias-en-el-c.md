@@ -1,18 +1,26 @@
-### NOTA DE PROCESO — DIAGNÓSTICO Y LOCALIZACIÓN DE AVERÍAS EN EL CLIMATIZADOR / DIAGNÓSTICO
+---
+id: ssc.sin-clasificar.diagnostico-y-localizacion-de-averias-en-el-climatizador
+modulo: ssc
+unidad: sin-clasificar
+nt: 788
+tipo: proceso
+subtipo: diagnostico
+titulo: "Diagnóstico Y Localización De Averías En El Climatizador"
+menu: "Diagnóstico Y Localización De Averías "
+grupo: POR CLASIFICAR
+fuentes: POR COMPLETAR
+---
 
-**1. OBJETO Y ALCANCE**
+## Objeto y alcance
+
 Establece la relación directa entre los defectos detectados en el sistema de climatización, sus causas probables y los remedios técnicos a aplicar. Se aplica a la diagnosis y resolución de averías en el circuito frigorífico, térmico y eléctrico de aire acondicionado en el taller.
 
-**2. FUNDAMENTO**
+## Fundamento
+
 Lógica de diagnóstico basada en la sintomatología funcional del circuito (falta de frío, desviaciones de presión en alta o baja, fallos de acoplamiento del compresor y sobrecalentamiento del motor) para aislar el componente o circuito afectado.
 
-**3. CONDICIONES PREVIAS**
-No documentado en fuentes.
+## Desarrollo
 
-**4. EQUIPO Y MATERIAL**
-No documentado en fuentes.
-
-**5. DESARROLLO**
 Cuadro completo de síntomas, causas y soluciones:
 
 * **DEFECTO CONSTATADO: Falta de frío**
@@ -69,23 +77,11 @@ Cuadro completo de síntomas, causas y soluciones:
 * **DEFECTO CONSTATADO: El motor se calienta**
   - El condensador está sucio: Limpieza del condensador y del circuito si procede.
 
-**6. VALORES DE REFERENCIA**
-No documentado en fuentes.
+## Interpretación y errores frecuentes
 
-**7. INTERPRETACIÓN Y ERRORES FRECUENTES**
 * Confundir un fallo de alimentación eléctrica o fusible defectuoso con una avería interna del propio compresor.
 * Omitir la comprobación y reparación de fugas antes de efectuar la recarga de gas tras detectar falta de fluido.
 
-**8. VERIFICACIÓN FINAL**
+## Verificación final
+
 Verificar que tras aplicar el remedio correspondiente desaparece el síntoma constatado y se recupera el rendimiento frigorífico del sistema.
-
-**9. SEGURIDAD Y NORMATIVA**
-No documentado en fuentes.
-
----
-
-COBERTURA: documento «AVERÍAS.pdf», páginas 1 a 5 de 5. [completo]
-
----
-
-💡 ¿Quieres que preparemos alguna guía de casos prácticos de taller o un cuestionario de comprobación de averías para el alumnado?
