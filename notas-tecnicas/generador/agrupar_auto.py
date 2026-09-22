@@ -81,10 +81,12 @@ REGLAS = [
     (r"unidad de control|climatronic|j255|j293|panel de mandos|tablero de mandos|display|unidad de manejo|tarjeta electronica|uce|mmi|equipo de mando", "unidad-de-control-y-mandos"),
     (r"gateway|interfaz de diagnosis|red de a bordo|bsi|can-bus|bus lin|topologia|arquitectura de red|esquemas electricos", "electronica-y-red"),
     # compresor (después de embrague y válvula reguladora)
+    # El aceite va ANTES que compresor: "Aceites para compresor" es aceite, no
+    # un compresor. Y antes que refrigerante, por si dice "aceite refrigerante".
+    (r"aceite|lubricante|\bpag\b|\bpao\b|\bpoe\b", "aceite-frigorifico"),
     (r"compresor", "compresor"),
     # fluidos y consumibles
     (r"refrigerante|r134a|r1234yf|r12\b|fluidos refrigerantes", "refrigerante"),
-    (r"aceite|lubricante|pag|pao|poe", "aceite-frigorifico"),
     (r"tuberia|canalizacion|racor|manguera|acoplamiento|lokring|spring-lock|empalme", "tuberias-y-racores"),
     (r"toma(s)? de servicio|valvula(s)? schrader", "tomas-de-servicio"),
     # --- procesos ---

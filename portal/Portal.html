@@ -1472,6 +1472,40 @@
       return b;
     }
 
+    // Nombre a mostrar de un componente: el título más corto del grupo suele
+    // ser el canónico ("Compresor" antes que "Compresor De Cilindrada...").
+    function nombreComponente(run){
+      return run.map(function(x){return x.titulo;})
+        .sort(function(a,b){return a.length-b.length;})[0];
+    }
+
+    // Una tarjeta de componente: un solo elemento que agrupa sus N fuentes.
+    // Al desplegarla salen las notas individuales.
+    function tarjetaComponente(run){
+      var leidas = run.filter(function(x){return x.leida;}).length;
+      var todas = leidas === run.length;
+      var d = document.createElement('details');
+      d.className = 'comp' + (todas?' leida':'');
+      var sum = document.createElement('summary');
+      sum.innerHTML = '<span class="comp-tit">'+nombreComponente(run)+'</span>'
+        + '<span class="comp-meta">'+run.length+' fuentes'
+        + (leidas?' · '+leidas+'/'+run.length+' leídas':'')+'</span>';
+      d.appendChild(sum);
+      run.forEach(function(x){ d.appendChild(botonNota(x)); });
+      return d;
+    }
+
+    // Pinta una lista de notas (ya en orden) colapsando por componente: una
+    // tarjeta por clave; si la clave tiene una sola nota, va suelta.
+    function pintarComponentes(cont, notas){
+      var i = 0;
+      while(i < notas.length){
+        var c = notas[i].clave, run = [];
+        while(i < notas.length && notas[i].clave === c){ run.push(notas[i]); i++; }
+        cont.appendChild(run.length === 1 ? botonNota(run[0]) : tarjetaComponente(run));
+      }
+    }
+
     function filtrarApuntes(){
       var q = (document.getElementById('ap-buscar').value||'').toLowerCase().trim();
       var g = document.getElementById('ap-grupo').value;
@@ -1521,22 +1555,23 @@
             + '<span class="itin-prog"><span class="itin-barra"><span style="width:'+pct+'%"></span></span>'
             + leidas+'/'+notas.length+'</span>';
           d.appendChild(sum);
-          notas.forEach(function(x){ d.appendChild(botonNota(x)); });
+          pintarComponentes(d, notas);
           cont.appendChild(d);
         });
       } else {
-        // Lista plana con cabecera de sección cuando cambia.
-        var seccionActual = null;
-        visibles.forEach(function(x){
-          if(x.seccion && x.seccion !== seccionActual){
-            seccionActual = x.seccion;
+        // Lista plana: cabecera de sección y, debajo, tarjetas por componente.
+        var i = 0;
+        while(i < visibles.length){
+          var s = visibles[i].seccion || '';
+          var run = [];
+          while(i < visibles.length && (visibles[i].seccion||'') === s){ run.push(visibles[i]); i++; }
+          if(s){
             var h = document.createElement('div');
-            h.className = 'ap-seccion';
-            h.textContent = x.seccion;
+            h.className = 'ap-seccion'; h.textContent = s;
             cont.appendChild(h);
           }
-          cont.appendChild(botonNota(x));
-        });
+          pintarComponentes(cont, run);
+        }
       }
     }
 

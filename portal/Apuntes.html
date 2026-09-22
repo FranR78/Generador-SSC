@@ -23,6 +23,19 @@
   .ap .itin-barra>span{display:block;height:100%;background:var(--azul,#0a63aa);border-radius:20px}
   .ap details.itin>.nt{margin:6px 8px}
   .ap details.itin>.nt:first-of-type{margin-top:8px}
+  /* Tarjeta de componente: agrupa N fuentes en una fila. */
+  .ap details.comp{border:1px solid var(--borde);border-radius:9px;background:#fff;margin:6px 0;overflow:hidden}
+  .ap details.comp.leida{background:#f6fbf8}
+  .ap details.comp>summary{list-style:none;cursor:pointer;display:flex;align-items:baseline;gap:10px;
+    padding:10px 12px;font-family:inherit;font-size:14px}
+  .ap details.comp>summary::-webkit-details-marker{display:none}
+  .ap details.comp>summary::before{content:'▸';color:var(--azul,#0a63aa);font-weight:700;align-self:center}
+  .ap details.comp[open]>summary::before{content:'▾'}
+  .ap .comp-tit{flex:1;font-weight:700;color:var(--azul-os,#063f70)}
+  .ap .comp-meta{font-size:12px;color:#5a6b78;white-space:nowrap}
+  .ap details.comp>.nt{margin:4px 8px}
+  .ap details.comp>.nt:first-of-type{margin-top:6px;border-top:1px dashed var(--borde);padding-top:10px}
+  .ap details.itin>details.comp{margin:6px 8px}
   .ap .nt{display:flex;gap:10px;align-items:baseline;text-align:left;width:100%;
     background:#fff;border:1px solid var(--borde);border-radius:9px;padding:10px 12px;
     cursor:pointer;font-family:inherit;font-size:14px}

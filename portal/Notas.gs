@@ -54,7 +54,7 @@ function listarNotas() {
         nt: n.nt, titulo: n.titulo, menu: n.menu, grupo: n.grupo,
         codigo: n.codigo, tipo: n.tipo, subtipo: n.subtipo,
         unidad: n.unidad || '', seccion: n.seccion || '',
-        fuentes: n.fuentes, leida: !!leidas[n.nt]
+        clave: n.clave || '', fuentes: n.fuentes, leida: !!leidas[n.nt]
       };
     })
   };

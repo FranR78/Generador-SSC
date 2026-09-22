@@ -563,49 +563,6 @@
    ]
   },
   {
-   "id": "ssc.sin-clasificar.refrigerantes-r12-y-r134a-y-lubricantes",
-   "nt": 221,
-   "modulo": "ssc",
-   "unidad": "clima",
-   "clave": "refrigerante",
-   "seccion": "1. Impacto ambiental y seguridad",
-   "titulo": "REFRIGERANTES R12 Y R134a Y LUBRICANTES",
-   "codigo": "",
-   "menu": "REFRIGERANTES R12 Y R134a Y LUBRICANTE",
-   "grupo": "POR CLASIFICAR",
-   "tipo": "proceso",
-   "subtipo": "fundamento",
-   "aplicacion": [],
-   "ubicacion": "",
-   "fuentes": "POR COMPLETAR",
-   "apartados": [
-    {
-     "titulo": "Objeto y alcance",
-     "texto": "Comparar las propiedades físicas, químicas y medioambientales de los refrigerantes R12 y R134a, y definir la compatibilidad de sus aceites. Se aplica a la gestión de fluidos en el taller."
-    },
-    {
-     "titulo": "Fundamento",
-     "texto": "R12 (Diclorofluorometano - CFC): Gran capacidad térmica, pero destruye la capa de ozono por sus moléculas de cloro y se transforma en gas tóxico (gas mostaza) por encima de 150 ºC. Prohibida su comercialización. R134a (Tetrafluoroetano - HFC): No contiene cloro y no afecta al ozono, aunque es un gas de efecto invernadero. Presenta propiedades termodinámicas similares al R12 pero sus moléculas son más pequeñas y requieren un lubricante sintético."
-    },
-    {
-     "titulo": "Desarrollo",
-     "texto": "Compatibilidad de Aceites: Aceites Minerales: Parafínicos o nafténicos. Compatibles exclusivamente con R12. Higroscopía muy débil. Prohibido usarlos con R134a. Aceites Sintéticos PAG (Polialquilenglicol): Específicos para R134a. Muy higroscópicos (absorben gran cantidad de agua). En presencia de agua se vuelven muy agresivos y corrosivos con metales, plásticos y elastómeros. Aceites Sintéticos ÉSTER: Compatibles con R12 y R134a. Higroscopía media. Utilizados principalmente en la reconversión (retrofit) de circuitos."
-    },
-    {
-     "titulo": "Valores de referencia",
-     "texto": "Tipo de Aceite Contenido en agua tras 24 h de exposición Compatibilidad de gas Sintético PAG ** 2.000 PPM** (Muy higroscópico) Exclusivo R134a Sintético ÉSTER ** 1.600 PPM** (Higroscopía media) R12 / R134a (Reconversión) Mineral < 100 PPM (Higroscopía muy débil) Exclusivo R12"
-    },
-    {
-     "titulo": "Interpretación y errores frecuentes",
-     "texto": "Jamás mezclar R12 y R134a: Son totalmente incompatibles. Jamás mezclar aceites minerales y PAG: Producen descomposición del lubricante y gripado inmediato del compresor. Dejar abierto un bote de aceite PAG: absorberá humedad ambiental en pocos minutos, contaminando el circuito con ácidos destructivos."
-    },
-    {
-     "titulo": "Seguridad y normativa",
-     "texto": "Obligatoriedad de la recuperación del 100% de los fluidos frigoríficos en las intervenciones según la normativa vigente."
-    }
-   ]
-  },
-  {
    "id": "ssc.sin-clasificar.manipulacion-de-refrigerante-y-directrices-de-montaje",
    "nt": 252,
    "modulo": "ssc",
@@ -1492,6 +1449,139 @@
    ]
   },
   {
+   "id": "ssc.sin-clasificar.aceites-para-compresor-pag-pao-68-poe",
+   "nt": 217,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "aceite-frigorifico",
+   "seccion": "1. Impacto ambiental y seguridad",
+   "titulo": "Aceites Para Compresor (Pag, Pao 68, Poe)",
+   "codigo": "PAG I (ISO 46), PAG II (ISO 100), PAG III (ISO 150), PAO 68 (AA1), POE",
+   "menu": "Aceites Para Compresor (Pag, P PAG I (ISO 46), PAG II (ISO 100), PAG III (ISO 150), PAO 68 (AA1), POE",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Lubricación y sellado de compresores de aire acondicionado",
+   "ubicacion": "En el interior del compresor y distribuido disuelto en el refrigerante por todo el circuito",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Lubricar las partes móviles del compresor, sellar las juntas y retenes contra fugas de gas y evacuar el calor generado por rozamiento."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Circula disuelto en el gas refrigerante impulsado por el compresor. Forma una película protectora sobre las superficies metálicas reduciendo la fricción y el desgaste."
+    },
+    {
+     "titulo": "Características y tipos",
+     "texto": "Aceites PAG (Polialquilenglicol): Sintéticos e higroscópicos (absorben humedad del aire rápidamente). Se emplean con R134a en viscosidades ISO 46, 100 y. Prohibidos en compresores eléctricos de híbridos. Aceite PAO 68 (Polialfaolefina): Sintético NO higroscópico. Compatible con R134a y utilizable como alternativa universal a los aceites PAG. Aceite POE (Polioléster): Sintético con alta resistencia dieléctrica (aislante eléctrico). Exclusivo para compresores eléctricos de vehículos híbridos y eléctricos."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tipo de aceite Rango térmico / Aplicación Particularidades PAO 68 -68 ºC a +315 ºC No absorbe humedad; compatible universal con R134a PAG (I, II, III) Viscosidades ISO 46, 100 y 150 Higroscópico; cerrar envases de inmediato POE Compresores eléctricos de alto voltaje Aislante eléctrico obligatorio"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Absorción de agua en aceites PAG por dejar frascos abiertos, generando ácidos y corrosión; confusión de aceite introduciendo PAG en un compresor eléctrico (provoca cortocircuito de alta tensión)."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Aceite purgado de color negro (compresor destruido); color grisáceo (presencia de virutas metálicas); color rojizo (exceso de humedad/ácidos en el circuito)."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Inspección visual del color y estado del aceite purgado del compresor; verificación de la viscosidad especificada por el fabricante antes de rellenar."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.refrigerantes-r12-y-r134a-y-lubricantes",
+   "nt": 221,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "aceite-frigorifico",
+   "seccion": "1. Impacto ambiental y seguridad",
+   "titulo": "REFRIGERANTES R12 Y R134a Y LUBRICANTES",
+   "codigo": "",
+   "menu": "REFRIGERANTES R12 Y R134a Y LUBRICANTE",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Comparar las propiedades físicas, químicas y medioambientales de los refrigerantes R12 y R134a, y definir la compatibilidad de sus aceites. Se aplica a la gestión de fluidos en el taller."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "R12 (Diclorofluorometano - CFC): Gran capacidad térmica, pero destruye la capa de ozono por sus moléculas de cloro y se transforma en gas tóxico (gas mostaza) por encima de 150 ºC. Prohibida su comercialización. R134a (Tetrafluoroetano - HFC): No contiene cloro y no afecta al ozono, aunque es un gas de efecto invernadero. Presenta propiedades termodinámicas similares al R12 pero sus moléculas son más pequeñas y requieren un lubricante sintético."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Compatibilidad de Aceites: Aceites Minerales: Parafínicos o nafténicos. Compatibles exclusivamente con R12. Higroscopía muy débil. Prohibido usarlos con R134a. Aceites Sintéticos PAG (Polialquilenglicol): Específicos para R134a. Muy higroscópicos (absorben gran cantidad de agua). En presencia de agua se vuelven muy agresivos y corrosivos con metales, plásticos y elastómeros. Aceites Sintéticos ÉSTER: Compatibles con R12 y R134a. Higroscopía media. Utilizados principalmente en la reconversión (retrofit) de circuitos."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Tipo de Aceite Contenido en agua tras 24 h de exposición Compatibilidad de gas Sintético PAG ** 2.000 PPM** (Muy higroscópico) Exclusivo R134a Sintético ÉSTER ** 1.600 PPM** (Higroscopía media) R12 / R134a (Reconversión) Mineral < 100 PPM (Higroscopía muy débil) Exclusivo R12"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Jamás mezclar R12 y R134a: Son totalmente incompatibles. Jamás mezclar aceites minerales y PAG: Producen descomposición del lubricante y gripado inmediato del compresor. Dejar abierto un bote de aceite PAG: absorberá humedad ambiental en pocos minutos, contaminando el circuito con ácidos destructivos."
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Obligatoriedad de la recuperación del 100% de los fluidos frigoríficos en las intervenciones según la normativa vigente."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.seleccion-y-propiedades-de-aceites-para-compresor-pag-pao-poe",
+   "nt": 266,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "aceite-frigorifico",
+   "seccion": "1. Impacto ambiental y seguridad",
+   "titulo": "Selección Y Propiedades De Aceites Para Compresor (Pag, Pao, Poe)",
+   "codigo": "",
+   "menu": "Selección Y Propiedades De Aceites Par",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Comparar la composición, higroscopía, compatibilidades y viscosidades de los aceites lubricantes PAG, PAO 68 y POE. Se aplica a la selección del lubricante correcto en las tareas de carga y mantenimiento de compresores."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El aceite lubrica e impermeabiliza las partes móviles del compresor y circula disuelto en el gas refrigerante. La elección incorrecta del tipo o la viscosidad del aceite altera la lubricación, provoca la opacidad del lubricante, genera corrosión ácida o causa cortocircuitos eléctricos en compresores de alto voltaje."
+    },
+    {
+     "titulo": "Desarrollo y comparativa de tipos",
+     "texto": "Aceites PAG (Polialquilenglicol): Totalmente sintéticos e higroscópicos (absorben activamente la humedad del aire). Específicos para gas R134a en turismos e industriales. Clases de viscosidad: PAG I (ISO 46), PAG II (ISO 100), PAG III (ISO 150). Prohibidos en compresores eléctricos de vehículos híbridos (carecen de propiedades aislantes) y no indicados para R1234yf. Aceite PAO 68 (Polialfaolefina - AA1 / ISO 68): Sintético NO higroscópico (no absorbe agua del ambiente). Utilizable como alternativa universal a los tres aceites PAG para R134a. Crea una película protectora de una sola molécula de grosor que reduce la fricción y mejora la estanqueidad sin acumularse en el evaporador. Rango de servicio amplio: de -68 ºC a +315 ºC. Versión PAO 68 Plus UV: incluye colorante de detección de fugas concentrado en baja proporción. Aceite POE (Polioléster): Sintético aislante eléctrico con alta resistencia a los cortocircuitos. Obligatorio en vehículos híbridos con compresor eléctrico cargado de fábrica con POE. Higroscópico; comercializado en cartuchos estancos de 120 ml protegidos en bolsas de aluminio con desecante."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Tipo de Aceite Propiedad de Higroscopía Rango Térmico de Servicio Aplicación Principal PAG (46, 100, 150) Higroscópico (Absorbe agua) Estándar R134a Compresores por correa convencionales PAO 68 (AA1 ISO 68) NO Higroscópico -68 ºC a +315 ºC Alternativa universal R134a POE (120 ml) Higroscópico (Envasado estanco) Aislante dieléctrico Compresores eléctricos Híbridos/EV"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Inyectar aceite PAG en un compresor eléctrico de vehículo híbrido: destruye el aislamiento dieléctrico provocando un cortocircuito a masa de alto voltaje. Dejar abiertos los envases de aceite PAG o POE: el aceite absorbe agua de la atmósfera en pocos minutos, convirtiéndose en un producto ácido que destruye retenes y daña el compresor. Diagnóstico por color del aceite purgado: Aceite con tono rojizo: Exceso grave de humedad en el circuito. Aceite de color negro: Compresor averiado / destruido por temperatura. Aceite de color grisáceo: Presencia masiva de virutas y restos metálicos en suspensión."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Confirmar la especificación del aceite de relleno en la etiqueta del compresor o del travesaño del vehículo antes de realizar la carga."
+    }
+   ]
+  },
+  {
    "id": "ssc.sin-clasificar.aceite-lubricante-sintetico-pag",
    "nt": 271,
    "modulo": "ssc",
@@ -1723,6 +1813,57 @@
     {
      "titulo": "Verificación final",
      "texto": "Cantidad prescrita de aceite PAG conservada en el sistema tras la reparación."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sin-clasificar.diagnostico-de-averias-del-compresor-y-estado-del-aceite",
+   "nt": 506,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "aceite-frigorifico",
+   "seccion": "1. Impacto ambiental y seguridad",
+   "titulo": "Diagnóstico De Averías Del Compresor Y Estado Del Aceite",
+   "codigo": "",
+   "menu": "Diagnóstico De Averías Del Compresor Y",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Objeto and alcance",
+     "texto": "Explicar el procedimiento para identificar las causas de fallo en el compresor mediante el análisis de presiones, ruidos mecánicos y el estado físico del aceite extraído."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Las averías del compresor no solo se deben a fallos mecánicos propios, sino a deficiencias del circuito como falta de lubricación, suciedad, entrada de refrigerante líquido o presencia de agua. El análisis visual del aceite permite determinar la causa raíz antes de instalar un recambio."
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Motor a ralentí o 1.500 rpm con el A/C conectado. Puente de manómetros instalado en las tomas de servicio."
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Puente de manómetros. Recipiente transparente de inspección. Multímetro / cable de alimentación directa."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Comprobación hidráulica e inspección de giro: - Si las presiones de ALTA y BAJA están igualadas con el compresor girando, existe una avería interna. - Si el compresor no gira, comprobar si el embrague recibe corriente. En caso negativo, alimentar el embrague directamente respetando la polaridad para verificar si atrae el disco. Diagnóstico de ruidos: - Con compresor desembragado: Rozamiento de la placa frontal con la polea, oscilación del rodamiento del rotor por impacto, o contacto de la polea con un cuerpo extraño. - Con compresor embragado: Carga incorrecta de refrigerante, compresión de líquido, tubos rozando contra el chasis, patinado del embrague por aceite/grasa, partícula atrapada en la válvula de descarga, o rotura de componentes internos. Análisis del estado del aceite y residuos: - Extraer el aceite del compresor y observar su coloración e impurezas: Aceite rojo: Contaminación por humedad residual. Aceite negro: Desgaste severo o gripado de pistones/mecanismos. Aceite purpurina: Daños mecánicos por desprendimiento de partículas metálicas. Inspeccionar la entrada de la válvula de expansión y el interior de las tuberías: si hay ferricha, suciedad o polvo gris, es obligatorio lavar el circuito."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Síntoma / Color de aceite Causa raíz diagnosticada Acción requerida Presiones igualadas con giro Avería en placa de válvulas, electroválvula o pistones Sustituir compresor y componentes Aceite Rojo Presencia de humedad en el circuito Lavar circuito, cambiar filtro y válvula Aceite Negro Gripado / Desgaste por falta de lubricante Lavar circuito, cambiar filtro y válvula Aceite Purpurina / Ferricha Desintegración mecánica de piezas internas Lavar circuito, cambiar filtro y válvula"
+    },
+    {
+     "titulo": "Interpretación y errores frecuentes",
+     "texto": "Sustituir un compresor averiado sin investigar el estado del aceite: Si existe aceite negro, purpurina o suciedad en las tuberías y no se limpia el circuito, el compresor nuevo se destruirá en pocos minutos."
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Determinación exacta de la causa raíz de la avería (humedad, falta de aceite, golpe de líquido o rotura mecánica)."
     }
    ]
   },
@@ -3565,53 +3706,6 @@
    ]
   },
   {
-   "id": "ssc.sin-clasificar.aceites-para-compresor-pag-pao-68-poe",
-   "nt": 217,
-   "modulo": "ssc",
-   "unidad": "clima",
-   "clave": "compresor",
-   "seccion": "3. Circuito frigorífico · lado de alta presión",
-   "titulo": "Aceites Para Compresor (Pag, Pao 68, Poe)",
-   "codigo": "PAG I (ISO 46), PAG II (ISO 100), PAG III (ISO 150), PAO 68 (AA1), POE",
-   "menu": "Aceites Para Compresor (Pag, P PAG I (ISO 46), PAG II (ISO 100), PAG III (ISO 150), PAO 68 (AA1), POE",
-   "grupo": "POR CLASIFICAR",
-   "tipo": "elemento",
-   "subtipo": "",
-   "aplicacion": "Lubricación y sellado de compresores de aire acondicionado",
-   "ubicacion": "En el interior del compresor y distribuido disuelto en el refrigerante por todo el circuito",
-   "fuentes": "POR COMPLETAR",
-   "apartados": [
-    {
-     "titulo": "Misión",
-     "texto": "Lubricar las partes móviles del compresor, sellar las juntas y retenes contra fugas de gas y evacuar el calor generado por rozamiento."
-    },
-    {
-     "titulo": "Principio de funcionamiento",
-     "texto": "Circula disuelto en el gas refrigerante impulsado por el compresor. Forma una película protectora sobre las superficies metálicas reduciendo la fricción y el desgaste."
-    },
-    {
-     "titulo": "Características y tipos",
-     "texto": "Aceites PAG (Polialquilenglicol): Sintéticos e higroscópicos (absorben humedad del aire rápidamente). Se emplean con R134a en viscosidades ISO 46, 100 y. Prohibidos en compresores eléctricos de híbridos. Aceite PAO 68 (Polialfaolefina): Sintético NO higroscópico. Compatible con R134a y utilizable como alternativa universal a los aceites PAG. Aceite POE (Polioléster): Sintético con alta resistencia dieléctrica (aislante eléctrico). Exclusivo para compresores eléctricos de vehículos híbridos y eléctricos."
-    },
-    {
-     "titulo": "Valores de trabajo",
-     "texto": "Tipo de aceite Rango térmico / Aplicación Particularidades PAO 68 -68 ºC a +315 ºC No absorbe humedad; compatible universal con R134a PAG (I, II, III) Viscosidades ISO 46, 100 y 150 Higroscópico; cerrar envases de inmediato POE Compresores eléctricos de alto voltaje Aislante eléctrico obligatorio"
-    },
-    {
-     "titulo": "Anomalías frecuentes",
-     "texto": "Absorción de agua en aceites PAG por dejar frascos abiertos, generando ácidos y corrosión; confusión de aceite introduciendo PAG en un compresor eléctrico (provoca cortocircuito de alta tensión)."
-    },
-    {
-     "titulo": "Comportamiento en avería",
-     "texto": "Aceite purgado de color negro (compresor destruido); color grisáceo (presencia de virutas metálicas); color rojizo (exceso de humedad/ácidos en el circuito)."
-    },
-    {
-     "titulo": "Cómo comprobarlo",
-     "texto": "Inspección visual del color y estado del aceite purgado del compresor; verificación de la viscosidad especificada por el fabricante antes de rellenar."
-    }
-   ]
-  },
-  {
    "id": "ssc.sin-clasificar.reparacion-de-compresores-y-sustitucion",
    "nt": 254,
    "modulo": "ssc",
@@ -3714,49 +3808,6 @@
     {
      "titulo": "Imágenes requeridas",
      "texto": "Sección del compresor eléctrico Scroll con motor e inversor de alto voltaje — Fuente: Climatizacion-conocimientos-basios-para-el-taller_3.pdf, pág. 52"
-    }
-   ]
-  },
-  {
-   "id": "ssc.sin-clasificar.seleccion-y-propiedades-de-aceites-para-compresor-pag-pao-poe",
-   "nt": 266,
-   "modulo": "ssc",
-   "unidad": "clima",
-   "clave": "compresor",
-   "seccion": "3. Circuito frigorífico · lado de alta presión",
-   "titulo": "Selección Y Propiedades De Aceites Para Compresor (Pag, Pao, Poe)",
-   "codigo": "",
-   "menu": "Selección Y Propiedades De Aceites Par",
-   "grupo": "POR CLASIFICAR",
-   "tipo": "proceso",
-   "subtipo": "fundamento",
-   "aplicacion": [],
-   "ubicacion": "",
-   "fuentes": "POR COMPLETAR",
-   "apartados": [
-    {
-     "titulo": "Objeto y alcance",
-     "texto": "Comparar la composición, higroscopía, compatibilidades y viscosidades de los aceites lubricantes PAG, PAO 68 y POE. Se aplica a la selección del lubricante correcto en las tareas de carga y mantenimiento de compresores."
-    },
-    {
-     "titulo": "Fundamento",
-     "texto": "El aceite lubrica e impermeabiliza las partes móviles del compresor y circula disuelto en el gas refrigerante. La elección incorrecta del tipo o la viscosidad del aceite altera la lubricación, provoca la opacidad del lubricante, genera corrosión ácida o causa cortocircuitos eléctricos en compresores de alto voltaje."
-    },
-    {
-     "titulo": "Desarrollo y comparativa de tipos",
-     "texto": "Aceites PAG (Polialquilenglicol): Totalmente sintéticos e higroscópicos (absorben activamente la humedad del aire). Específicos para gas R134a en turismos e industriales. Clases de viscosidad: PAG I (ISO 46), PAG II (ISO 100), PAG III (ISO 150). Prohibidos en compresores eléctricos de vehículos híbridos (carecen de propiedades aislantes) y no indicados para R1234yf. Aceite PAO 68 (Polialfaolefina - AA1 / ISO 68): Sintético NO higroscópico (no absorbe agua del ambiente). Utilizable como alternativa universal a los tres aceites PAG para R134a. Crea una película protectora de una sola molécula de grosor que reduce la fricción y mejora la estanqueidad sin acumularse en el evaporador. Rango de servicio amplio: de -68 ºC a +315 ºC. Versión PAO 68 Plus UV: incluye colorante de detección de fugas concentrado en baja proporción. Aceite POE (Polioléster): Sintético aislante eléctrico con alta resistencia a los cortocircuitos. Obligatorio en vehículos híbridos con compresor eléctrico cargado de fábrica con POE. Higroscópico; comercializado en cartuchos estancos de 120 ml protegidos en bolsas de aluminio con desecante."
-    },
-    {
-     "titulo": "Valores de referencia",
-     "texto": "Tipo de Aceite Propiedad de Higroscopía Rango Térmico de Servicio Aplicación Principal PAG (46, 100, 150) Higroscópico (Absorbe agua) Estándar R134a Compresores por correa convencionales PAO 68 (AA1 ISO 68) NO Higroscópico -68 ºC a +315 ºC Alternativa universal R134a POE (120 ml) Higroscópico (Envasado estanco) Aislante dieléctrico Compresores eléctricos Híbridos/EV"
-    },
-    {
-     "titulo": "Interpretación y errores frecuentes",
-     "texto": "Inyectar aceite PAG en un compresor eléctrico de vehículo híbrido: destruye el aislamiento dieléctrico provocando un cortocircuito a masa de alto voltaje. Dejar abiertos los envases de aceite PAG o POE: el aceite absorbe agua de la atmósfera en pocos minutos, convirtiéndose en un producto ácido que destruye retenes y daña el compresor. Diagnóstico por color del aceite purgado: Aceite con tono rojizo: Exceso grave de humedad en el circuito. Aceite de color negro: Compresor averiado / destruido por temperatura. Aceite de color grisáceo: Presencia masiva de virutas y restos metálicos en suspensión."
-    },
-    {
-     "titulo": "Verificación final",
-     "texto": "Confirmar la especificación del aceite de relleno en la etiqueta del compresor o del travesaño del vehículo antes de realizar la carga."
     }
    ]
   },
@@ -4078,57 +4129,6 @@
     {
      "titulo": "Cómo comprobarlo",
      "texto": "Medir presiones con puente de manómetros, verificar la señal PWM de 400 Hz en la electroválvula de control y comprobar el giro libre de la polea."
-    }
-   ]
-  },
-  {
-   "id": "ssc.sin-clasificar.diagnostico-de-averias-del-compresor-y-estado-del-aceite",
-   "nt": 506,
-   "modulo": "ssc",
-   "unidad": "clima",
-   "clave": "compresor",
-   "seccion": "3. Circuito frigorífico · lado de alta presión",
-   "titulo": "Diagnóstico De Averías Del Compresor Y Estado Del Aceite",
-   "codigo": "",
-   "menu": "Diagnóstico De Averías Del Compresor Y",
-   "grupo": "POR CLASIFICAR",
-   "tipo": "proceso",
-   "subtipo": "diagnostico",
-   "aplicacion": [],
-   "ubicacion": "",
-   "fuentes": "POR COMPLETAR",
-   "apartados": [
-    {
-     "titulo": "Objeto and alcance",
-     "texto": "Explicar el procedimiento para identificar las causas de fallo en el compresor mediante el análisis de presiones, ruidos mecánicos y el estado físico del aceite extraído."
-    },
-    {
-     "titulo": "Fundamento",
-     "texto": "Las averías del compresor no solo se deben a fallos mecánicos propios, sino a deficiencias del circuito como falta de lubricación, suciedad, entrada de refrigerante líquido o presencia de agua. El análisis visual del aceite permite determinar la causa raíz antes de instalar un recambio."
-    },
-    {
-     "titulo": "Condiciones previas",
-     "texto": "Motor a ralentí o 1.500 rpm con el A/C conectado. Puente de manómetros instalado en las tomas de servicio."
-    },
-    {
-     "titulo": "Equipo y material",
-     "texto": "Puente de manómetros. Recipiente transparente de inspección. Multímetro / cable de alimentación directa."
-    },
-    {
-     "titulo": "Desarrollo",
-     "texto": "Comprobación hidráulica e inspección de giro: - Si las presiones de ALTA y BAJA están igualadas con el compresor girando, existe una avería interna. - Si el compresor no gira, comprobar si el embrague recibe corriente. En caso negativo, alimentar el embrague directamente respetando la polaridad para verificar si atrae el disco. Diagnóstico de ruidos: - Con compresor desembragado: Rozamiento de la placa frontal con la polea, oscilación del rodamiento del rotor por impacto, o contacto de la polea con un cuerpo extraño. - Con compresor embragado: Carga incorrecta de refrigerante, compresión de líquido, tubos rozando contra el chasis, patinado del embrague por aceite/grasa, partícula atrapada en la válvula de descarga, o rotura de componentes internos. Análisis del estado del aceite y residuos: - Extraer el aceite del compresor y observar su coloración e impurezas: Aceite rojo: Contaminación por humedad residual. Aceite negro: Desgaste severo o gripado de pistones/mecanismos. Aceite purpurina: Daños mecánicos por desprendimiento de partículas metálicas. Inspeccionar la entrada de la válvula de expansión y el interior de las tuberías: si hay ferricha, suciedad o polvo gris, es obligatorio lavar el circuito."
-    },
-    {
-     "titulo": "Valores de referencia",
-     "texto": "Síntoma / Color de aceite Causa raíz diagnosticada Acción requerida Presiones igualadas con giro Avería en placa de válvulas, electroválvula o pistones Sustituir compresor y componentes Aceite Rojo Presencia de humedad en el circuito Lavar circuito, cambiar filtro y válvula Aceite Negro Gripado / Desgaste por falta de lubricante Lavar circuito, cambiar filtro y válvula Aceite Purpurina / Ferricha Desintegración mecánica de piezas internas Lavar circuito, cambiar filtro y válvula"
-    },
-    {
-     "titulo": "Interpretación y errores frecuentes",
-     "texto": "Sustituir un compresor averiado sin investigar el estado del aceite: Si existe aceite negro, purpurina o suciedad en las tuberías y no se limpia el circuito, el compresor nuevo se destruirá en pocos minutos."
-    },
-    {
-     "titulo": "Verificación final",
-     "texto": "Determinación exacta de la causa raíz de la avería (humedad, falta de aceite, golpe de líquido o rotura mecánica)."
     }
    ]
   },
@@ -7415,6 +7415,53 @@
    ]
   },
   {
+   "id": "ssc.clima.tubo-de-expansion",
+   "nt": 132,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "estrangulador",
+   "seccion": "4. Dispositivos de expansión",
+   "titulo": "Tubo De Expansión",
+   "codigo": "",
+   "menu": "Tubo De Expansión",
+   "grupo": "POR CLASIFICAR",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": "Circuitos frigoríficos sin válvula de expansión de caudal fijo (sistemas Ford, Audi, GM, Volvo, Chrysler) [116, 129]",
+   "ubicacion": "Insertado en el interior de la tubería de entrada de alta presión hacia el evaporador [116, 129, 137, 147]",
+   "fuentes": "POR COMPLETAR",
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Estrangular de forma continua y fija el flujo de refrigerante líquido a alta presión pulverizándolo hacia el evaporador y provocando su caída de presión y temperatura [116, 129, 137]."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Elemento estrangulador estático sin piezas móviles. La sección transversal fija del tubo capilar interno impone una resistencia constante al paso del fluido, convirtiendo el líquido a alta presión (14 kg/cm2, +50 ºC) en un rociado a baja presión (1.5 kg/cm2, -6 ºC) compuesto por un 70% de líquido y 30% de vapor en peso (4% líquido y 96% vapor en volumen) [116]."
+    },
+    {
+     "titulo": "Características",
+     "texto": "Cuerpo cilíndrico de plástico con junta tórica exterior de sellado, tamiz de entrada (malla más gruesa para retener impurezas) y tamiz de salida (malla más fina para homogeneizar el rociado) [116]. - Código de colores según diámetro del orificio calibrado y fabricante: - Rojo: Ford [116] - Azul: Audi / Ford [116] - Naranja: Ford [116] - Negro: General Motors (GM) [116] - Blanco: General Motors (GM) / Audi [116] - Marrón: Ford [116] - Amarillo: Volvo [116] - Verde: Ford [116] - Violeta: Chrysler [116]"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Parámetro Valor numérico Condiciones de validez Entrada desde condensador 14 kg/cm2 (bar) / +50 ºC Estado 100% líquido [116] Salida hacia evaporador 1.5 kg/cm2 (bar) / -6 ºC 70% líquido y 30% vapor en peso [116]"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Obstrucción total o parcial de las mallas filtrantes por limaduras metálicas o lodo negro derivado del aceite degradado; montaje de un tubo de color/diámetro diferente al especificado [31, 148]."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si el orificio se obtura por suciedad, la baja presión cae a la zona de vacío y el flujo de refrigerante cesa por completo [31, 116, 148]."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Extraer el tubo de expansión de la tubería utilizando la herramienta de extracción adecuada, inspeccionar visualmente el estado de las mallas y verificar que el color corresponda exactamente con la aplicación del vehículo [116, 148]."
+    }
+   ]
+  },
+  {
    "id": "ssc.sin-clasificar.orificio-calibrado",
    "nt": 229,
    "modulo": "ssc",
@@ -7854,53 +7901,6 @@
     {
      "titulo": "Imágenes requeridas",
      "texto": "Mallas filtrantes y flecha de sentido de flujo del estrangulador — Fuente: ZZAudi 100_1991_Climatizador.pdf, pág. 20"
-    }
-   ]
-  },
-  {
-   "id": "ssc.clima.tubo-de-expansion",
-   "nt": 132,
-   "modulo": "ssc",
-   "unidad": "clima",
-   "clave": "tubo-de-expansion",
-   "seccion": "4. Dispositivos de expansión",
-   "titulo": "Tubo De Expansión",
-   "codigo": "",
-   "menu": "Tubo De Expansión",
-   "grupo": "POR CLASIFICAR",
-   "tipo": "elemento",
-   "subtipo": "",
-   "aplicacion": "Circuitos frigoríficos sin válvula de expansión de caudal fijo (sistemas Ford, Audi, GM, Volvo, Chrysler) [116, 129]",
-   "ubicacion": "Insertado en el interior de la tubería de entrada de alta presión hacia el evaporador [116, 129, 137, 147]",
-   "fuentes": "POR COMPLETAR",
-   "apartados": [
-    {
-     "titulo": "Misión",
-     "texto": "Estrangular de forma continua y fija el flujo de refrigerante líquido a alta presión pulverizándolo hacia el evaporador y provocando su caída de presión y temperatura [116, 129, 137]."
-    },
-    {
-     "titulo": "Principio de funcionamiento",
-     "texto": "Elemento estrangulador estático sin piezas móviles. La sección transversal fija del tubo capilar interno impone una resistencia constante al paso del fluido, convirtiendo el líquido a alta presión (14 kg/cm2, +50 ºC) en un rociado a baja presión (1.5 kg/cm2, -6 ºC) compuesto por un 70% de líquido y 30% de vapor en peso (4% líquido y 96% vapor en volumen) [116]."
-    },
-    {
-     "titulo": "Características",
-     "texto": "Cuerpo cilíndrico de plástico con junta tórica exterior de sellado, tamiz de entrada (malla más gruesa para retener impurezas) y tamiz de salida (malla más fina para homogeneizar el rociado) [116]. - Código de colores según diámetro del orificio calibrado y fabricante: - Rojo: Ford [116] - Azul: Audi / Ford [116] - Naranja: Ford [116] - Negro: General Motors (GM) [116] - Blanco: General Motors (GM) / Audi [116] - Marrón: Ford [116] - Amarillo: Volvo [116] - Verde: Ford [116] - Violeta: Chrysler [116]"
-    },
-    {
-     "titulo": "Valores de trabajo",
-     "texto": "Parámetro Valor numérico Condiciones de validez Entrada desde condensador 14 kg/cm2 (bar) / +50 ºC Estado 100% líquido [116] Salida hacia evaporador 1.5 kg/cm2 (bar) / -6 ºC 70% líquido y 30% vapor en peso [116]"
-    },
-    {
-     "titulo": "Anomalías frecuentes",
-     "texto": "Obstrucción total o parcial de las mallas filtrantes por limaduras metálicas o lodo negro derivado del aceite degradado; montaje de un tubo de color/diámetro diferente al especificado [31, 148]."
-    },
-    {
-     "titulo": "Comportamiento en avería",
-     "texto": "Si el orificio se obtura por suciedad, la baja presión cae a la zona de vacío y el flujo de refrigerante cesa por completo [31, 116, 148]."
-    },
-    {
-     "titulo": "Cómo comprobarlo",
-     "texto": "Extraer el tubo de expansión de la tubería utilizando la herramienta de extracción adecuada, inspeccionar visualmente el estado de las mallas y verificar que el color corresponda exactamente con la aplicación del vehículo [116, 148]."
     }
    ]
   },
