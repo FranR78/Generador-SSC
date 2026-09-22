@@ -1327,8 +1327,9 @@
       var cuenta = {};
       (apCorpus.notas||[]).forEach(function(n){
         var u = n.unidad || 'sin-unidad';
-        if(!cuenta[u]) cuenta[u] = { total:0, leidas:0 };
+        if(!cuenta[u]) cuenta[u] = { total:0, leidas:0, claves:{} };
         cuenta[u].total++;
+        if(n.clave) cuenta[u].claves[n.clave] = true;
         if(n.leida) cuenta[u].leidas++;
       });
 
@@ -1359,7 +1360,8 @@
           + '<p class="desc">' + (u.descripcion||'') + '</p>'
           + '<div class="meta">'
           + (u.horas ? '<span><b>' + u.horas + ' h</b> estimadas</span>' : '')
-          + (c.total ? '<span><b>' + c.total + '</b> apuntes</span>' : '')
+          + (c.total ? '<span><b>' + Object.keys(c.claves||{}).length + '</b> componentes · '
+              + c.total + ' apuntes</span>' : '')
           + '</div>';
         if(c.total){
           h += '<div class="barra"><div style="width:' + pct + '%;background:'

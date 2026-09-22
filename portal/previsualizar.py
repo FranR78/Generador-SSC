@@ -51,6 +51,7 @@ def cargar_falso_notas():
         "notas": [{"nt": n["nt"], "titulo": n["titulo"], "menu": n["menu"],
                    "grupo": n["grupo"], "codigo": n["codigo"], "tipo": n["tipo"],
                    "unidad": n.get("unidad", ""), "seccion": n.get("seccion", ""),
+                   "clave": n.get("clave", ""),
                    "subtipo": n["subtipo"], "fuentes": n["fuentes"],
                    "leida": n["nt"] in leidas} for n in d["notas"]],
     }
