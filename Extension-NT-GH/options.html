@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Configuración · NotebookLM → GitHub</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+<style>
+  body { margin: 0; font: 15px/1.5 "Open Sans", system-ui, sans-serif; color: #222; background: #f5f8f6; }
+  header { background: #007932; color: #fff; padding: 22px 24px; }
+  header h1 { margin: 0; font-size: 1.4rem; font-weight: 700; }
+  header p { margin: 4px 0 0; opacity: .85; }
+  main { max-width: 620px; margin: 0 auto; padding: 24px; }
+  section { background: #fff; border-left: 4px solid #27ae60; padding: 18px 20px; margin-bottom: 18px; }
+  h2 { margin: 0 0 12px; font-size: 1.05rem; color: #007932; }
+  label { display: block; font-weight: 600; margin: 12px 0 4px; font-size: .9rem; }
+  small { display: block; color: #666; font-weight: 400; }
+  input, textarea { width: 100%; box-sizing: border-box; padding: 8px 10px; border: 1px solid #cfd8d2; border-radius: 5px; font: inherit; }
+  input:focus, textarea:focus { outline: 2px solid #27ae60; border-color: #27ae60; }
+  code, #sels input { font-family: ui-monospace, Menlo, monospace; font-size: .85rem; }
+  details summary { cursor: pointer; font-weight: 600; color: #007932; }
+  .row { display: flex; gap: 10px; align-items: center; margin-top: 14px; }
+  button { padding: 9px 16px; border: 0; border-radius: 6px; font: inherit; font-weight: 600; cursor: pointer; }
+  .primary { background: #27ae60; color: #fff; }
+  .secondary { background: #e3f1e8; color: #007932; }
+  button:focus-visible { outline: 2px solid #007932; outline-offset: 2px; }
+  .msg { font-size: .9rem; }
+  .ok { color: #007932; } .err { color: #c0392b; }
+  footer { position: sticky; bottom: 0; background: #f5f8f6; padding: 12px 0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>NotebookLM → GitHub</h1>
+  <p>Se guarda una vez y se usa en todos los cuadernos.</p>
+</header>
+<main>
+  <section>
+    <h2>Repositorio de GitHub</h2>
+    <label for="repo">Repositorio <small>Formato usuario/repo</small></label>
+    <input id="repo" placeholder="usuario/repo" autocomplete="off">
+    <label for="dir">Carpeta de destino <small>Se crea sola si no existe</small></label>
+    <input id="dir" placeholder="notebooklm">
+    <label for="token">Token (PAT fine-grained) <small>Con permiso Contents: Read and write sobre ese repo</small></label>
+    <input id="token" type="password" autocomplete="off">
+    <div class="row">
+      <button class="secondary" id="test">Probar conexión</button>
+      <button class="secondary" id="testUp">Subir fichero de prueba</button>
+    </div>
+    <div class="row">
+      <span class="msg" id="testMsg"></span>
+    </div>
+  </section>
+
+  <section>
+    <h2>NotebookLM</h2>
+    <label for="prompt">Mensaje que se envía por cada fuente</label>
+    <textarea id="prompt" rows="3"></textarea>
+  </section>
+
+  <section>
+    <details>
+      <summary>Selectores de la página (avanzado)</summary>
+      <p><small>Solo hay que tocarlos si Google cambia la interfaz o si el popup no detecta fuentes.</small></p>
+      <div id="sels"></div>
+      <div class="row"><button class="secondary" id="reset">Restaurar selectores</button></div>
+    </details>
+  </section>
+
+  <footer class="row">
+    <button class="primary" id="save">Guardar</button>
+    <span class="msg" id="saveMsg"></span>
+  </footer>
+</main>
+<script src="defaults.js"></script>
+<script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
+<style>
+  body { width: 300px; margin: 0; font: 14px/1.4 "Open Sans", system-ui, sans-serif; color: #222; }
+  header { background: #007932; color: #fff; padding: 10px 14px; font-weight: 600; }
+  main { padding: 14px; }
+  #status { margin: 0 0 12px; min-height: 2.8em; }
+  #status.err { color: #c0392b; }
+  button { width: 100%; padding: 9px; border: 0; border-radius: 6px; font: inherit; font-weight: 600; cursor: pointer; }
+  label { display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px; }
+  select { width: 100%; padding: 6px; margin-bottom: 12px; border: 1px solid #cfd8d2; border-radius: 5px; font: inherit; font-size: 13px; }
+  #startBox { display: none; }
+  #go { background: #27ae60; color: #fff; }
+  #go:disabled { background: #b8d9c3; cursor: default; }
+  #cfg { background: none; color: #007932; margin-top: 6px; }
+  button:focus-visible { outline: 2px solid #007932; outline-offset: 2px; }
+</style>
+</head>
+<body>
+  <header>NotebookLM → GitHub</header>
+  <main>
+    <p id="status">Comprobando…</p>
+    <div id="startBox">
+      <label for="start">Empezar por</label>
+      <select id="start"></select>
+    </div>
+    <button id="go" disabled>Procesar fuentes</button>
+    <button id="cfg">Configuración</button>
+  </main>
+  <script src="defaults.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
