@@ -142,8 +142,8 @@ Fundamento compartido primero, luego cada pieza.
 ## Resuelto en código (23/09)
 - IDs de Drive: **no se fijan en código**. Los pone él en las opciones de la
   extensión en cada extracción; viajan en el informe. En la hoja, B1/B2.
-- Informe: `.md` + `.json` gemelo. SuperSheets: hoja nueva `NT-GH`
-  (`supersheets/NT-GH.gs`), no toca `Drive2`. Duplicados: se marcan, no se mueven.
+- Informe: `.md` + `.json` gemelo. SuperSheets (web app, no hoja): botón «📥 NT-GH» en Diario-Docente
+  (`SS_NTGH.gs`): marca PDF confirmados y se mueven con 🚚 Mover. Duplicados: se marcan, no se mueven.
 
 ## Preguntas a resolver ya en código (no bloquean el plan)
 - ¿El título del cuaderno se lee del DOM de NotebookLM? (selector).

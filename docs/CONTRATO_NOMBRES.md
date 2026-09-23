@@ -11,7 +11,7 @@ sanear(s) = s.normalize("NFC")
 Copias que deben ser **idénticas** (si se toca una, se tocan todas):
 - `Extension-NT-GH/defaults.js` → `sanear()`
 - `datos/Movedor.gs` → `sanear()`
-- `supersheets/NT-GH.gs` → `sanear()`
+- Diario-Docente `apps-script/supersheets/SS_NTGH.gs` + `index.html` → `ntghSanear()`
 
 Definiciones:
 - **Subido** = la extensión hizo PUT OK de `entrada/<name>.md`.
