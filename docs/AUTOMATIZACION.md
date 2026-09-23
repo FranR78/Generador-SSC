@@ -70,6 +70,16 @@ Drive: carpeta "Procesados" = barra de progreso
 - **D2.** El **vaciado del cuaderno lo hace él a mano**, tras comprobar la
   exportación con el informe (abajo). El sistema **no** borra fuentes de
   NotebookLM (frágil, sin API). Mover el PDF ≠ vaciar cuaderno.
+- **D4 — Carpetas configurables desde la extensión.** En las opciones de la
+  extensión se ponen `origenId` (dónde están los PDF pendientes) y `destinoId`
+  (dónde moverlos). **Ojo:** la extensión **no** toca Drive (su manifest solo
+  permite NotebookLM y `api.github.com`); esos IDs **viajan dentro del informe**
+  como dato y **el movedor** (puente/SuperSheets) es quien crea/mueve.
+  - Sin `destinoId`: el movedor hace **buscar-o-crear** una carpeta
+    `NT-GH-Procesados` en *Mi unidad* y **guarda su ID** (una sola vez, no una
+    por ejecución).
+  - Sin `origenId`: se busca por nombre de forma acotada; si no, por todo Drive
+    (más lento y con riesgo de homónimos) → mejor ponerlo.
 
 ## Informe por cuaderno (nuevo — para no comprobar uno a uno)
 Al terminar un lote, la **extensión** deja un informe legible: *"el cuaderno ***
@@ -77,7 +87,8 @@ ha procesado estos PDF"*. Es lo que él mira antes de vaciar el cuaderno.
 
 - **Quién lo hace:** la extensión, al acabar el `run` (ya tiene token y hace PUT).
 - **Qué lleva:** nombre del cuaderno, fecha/hora, **subidas OK** (con su `.md`),
-  **fallidas** con el motivo, y totales.
+  **fallidas** con el motivo, totales y los **IDs de carpeta** (`origenId` /
+  `destinoId`) de las opciones, para que el movedor sepa de dónde a dónde.
 - **Dónde:** `PUT notas-tecnicas/informes/<fecha>_<cuaderno>.md` (uno por lote).
   Se lee desde el móvil en GitHub; más adelante se puede listar en el Panel del
   portal.
@@ -118,10 +129,11 @@ Fundamento compartido primero, luego cada pieza.
 3. **Informe (extensión)** — Leer el título del cuaderno del DOM; acumular el
    lote; al acabar, `PUT informes/<fecha>_<cuaderno>.md` con subidas/fallidas.
    Verificar antes que el título se puede leer.
-4. **Movedor (puente `datos/`)** — Nueva función en disparador: lee
-   `entrada/procesados/*.md` de GitHub → casa por nombre saneado con los PDF de
-   `Pendientes` → `moveTo(Procesados)` → registra no-casados. Guarda: mover
-   nunca borrar; solo si la nota está confirmada.
+4. **Movedor (puente `datos/`)** — Nueva función en disparador: lee el informe
+   (o `entrada/procesados/*.md`) de GitHub → toma `origenId`/`destinoId` → si no
+   hay destino, **buscar-o-crear** `NT-GH-Procesados` y guardar su ID → casa por
+   nombre saneado los PDF de `origen` → `moveTo(destino)` → registra no-casados.
+   Guarda: mover nunca borrar; solo si la nota está confirmada.
 5. **SuperSheets** — Extraer y adaptar `read new` + `ssp move` (matching por
    nombre, no por keyword). Hoja con archivo·ID·subido·confirmada·movido y botón.
    No volcar el resto de `original/`.
