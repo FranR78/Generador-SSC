@@ -1,365 +1,310 @@
 ```yaml
 tipo: diagnostico
-titulo: Lectura de manómetros y presiones de trabajo
+titulo: Comprobación de presiones de trabajo
 entidad: lectura-manometros
 area: climatizacion
 sistema: circuito-frigorifico
 fuente: "15. Diágnostico y averías.pdf"
-paginas: "123, 125"
-relacionados: [compresor, valvula-expansion, refrigerante-r134a]
-palabras: [manómetros, alta presión, baja presión, compresor fijo, compresor variable]
+paginas: "123"
+relacionados: [diagnostico-averias-hidraulicas, compresor]
+palabras: [manómetros, alta presión, baja presión, compresor variable, compresor fijo]
 ```
 
 ## Síntoma
-Verificación del estado operativo del sistema de aire acondicionado mediante el análisis de las presiones de trabajo en los lados de alta y baja presión. (pág. 123)
+Evaluación inicial del estado operativo del circuito frigorífico a través del análisis de las presiones de alta y baja (pág. 123).
 
 ## Causas posibles
-No aplica. (pág. 123)
+No aplica (pág. 123).
 
 ## Cómo separar las causas
-Conectar las mangueras de "ALTA" y "BAJA" al vehículo manteniendo cerradas todas las válvulas de la estación de carga. Arrancar el motor a 1.500 r.p.m. y conectar el aire acondicionado con la turbina de aire fresco a máxima velocidad. Comprobar que las presiones obtenidas se ajustan a los valores prescritos según el tipo de compresor. (pág. 123)
+1. Conectar las mangueras de "ALTA" y "BAJA" de la estación de carga a los tomas del vehículo (pág. 123).
+2. Mantener todas las válvulas de la estación de carga totalmente cerradas (pág. 123).
+3. Arrancar el motor del vehículo y mantenerlo estabilizado a unas 1.500 r.p.m. (pág. 123).
+4. Conectar el sistema de aire acondicionado seleccionando la turbina de aire fresco a la máxima velocidad (pág. 123).
+5. Observar las lecturas en los manómetros de alta y baja presión (pág. 123).
 
 ## Valores de referencia
-- **Compresor variable**:
-  - Alta presión: constante entre 8 y 10 bares (puede llegar a 12 bares con temperatura exterior muy alta). (pág. 123)
-  - Baja presión: constante a 2 bares (\\(1,8 \div 2,2 \text{ kg/cm}^2\\)). (pág. 123, 124)
-- **Compresor fijo**:
-  - Alta presión: variable entre 10 y 20 bares (en R134a a 1.500 r.p.m. con carga normal: \\(13,5 \div 15 \text{ bar}\\); R12: \\(14,5 \div 15 \text{ bar}\\)). (pág. 123, 125)
-  - Baja presión: variable entre 0,5 y 2,5 bares (en R134a a 1.500 r.p.m. con carga normal: \\(1,5 \div 2,5 \text{ bar}\\); R12: \\(1,5 \div 2 \text{ bar}\\)). (pág. 123, 125)
-- **Presiones aproximadas en reposo según temperatura exterior**:
-  - 15 ºC: 3,9 bar. (pág. 125)
-  - 20 ºC: 4,7 bar. (pág. 125)
-  - 25 ºC: 5,5 bar. (pág. 125)
-  - 30 ºC: 6,6 bar. (pág. 125)
-  - 35 ºC: 7,5 bar. (pág. 125)
-  - 40 ºC: 8,8 bar. (pág. 125)
-  - 45 ºC: 9,8 bar. (pág. 125)
+- **Compresor variable**: La presión de ALTA se mantiene constante entre 8 y 10 bares (pudiendo alcanzar 12 bares con temperatura exterior muy alta). La presión de BAJA se mantiene constante a 2 bares (pág. 123).
+- **Compresor fijo**: La presión de ALTA oscila entre 10 y 20 bares. La presión de BAJA oscila entre 0,5 y 2,5 bares (pág. 123).
 
 ## Verificación tras la reparación
-Comprobar que las agujas de los manómetros de alta y baja se estabilizan dentro de las márgenes de presión especificadas para la temperatura ambiente existente. (pág. 123, 125)
+Verificar que ambas presiones (alta y baja) se estabilizan dentro de los valores prescritos según el tipo de compresor instalado (pág. 123).
 
 ---
 
 ```yaml
 tipo: diagnostico
-titulo: Rendimiento frigorífico insuficiente («no enfría»)
-entidad: no-enfria
+titulo: Comprobación del rendimiento del equipo
+entidad: comprobacion-rendimiento-climatizador
 area: climatizacion
 sistema: circuito-frigorifico
 fuente: "15. Diágnostico y averías.pdf"
-paginas: "123-124"
-relacionados: [lectura-manometros, evaporador, ventilador-habitaculo]
-palabras: [rendimiento frigorífico, temperatura en aireadores, difusores centrales, termómetro]
+paginas: "123"
+relacionados: [lectura-manometros, evaporador]
+palabras: [temperatura aireadores, difusores centrales, recirculación, termómetro]
 ```
 
 ## Síntoma
-El aire expulsado por los difusores del habitáculo no alcanza el nivel de enfriamiento adecuado o sale a temperatura ambiente. (pág. 123, 126)
+Sensación de enfriamiento insuficiente en el habitáculo o verificación tras intervención en el circuito de climatización (pág. 123).
 
 ## Causas posibles
-- Carga de refrigerante insuficiente o excesiva. (pág. 124, 125)
-- Exceso de aceite en el sistema. (pág. 126)
-- Contaminación por aire o humedad en el circuito. (pág. 126)
-- Válvula de expansión cerrada o desajustada. (pág. 126)
-- Condensador obstruido o avería en el electroventilador. (pág. 126)
-- Problemas mecánicos o avería interna en el compresor. (pág. 126)
+No aplica (pág. 123).
 
 ## Cómo separar las causas
-Arrancar el motor a 1.500 r.p.m. Conectar el aire acondicionado a máxima velocidad de la turbina con la recirculación activada. Dirigir la salida hacia los difusores centrales y cerrar los laterales. Colocar un termómetro en los difusores centrales y medir la temperatura de salida del aire. (pág. 123)
+1. Arrancar el motor del vehículo y mantenerlo a 1.500 r.p.m. (pág. 123).
+2. Conectar el aire acondicionado con la turbina de aire fresco a máxima velocidad y la función de recirculación activada (pág. 123).
+3. Orientar la salida de aire exclusivamente hacia los difusores centrales y cerrar por completo los difusores laterales (pág. 123).
+4. Insertar un termómetro de varilla en el interior de los difusores centrales de aireación y medir la temperatura del aire impulsado (pág. 123).
 
 ## Valores de referencia
-Prueba de rendimiento (temperatura exterior frente a temperatura en aireadores a 1.500 r.p.m. con recirculación):
-- 15 ºC exterior: 2 a 4 ºC en aireadores. (pág. 124)
-- 20 ºC exterior: 4 a 6 ºC en aireadores. (pág. 124)
-- 26 ºC exterior: 4 a 7 ºC en aireadores. (pág. 124)
-- 32 ºC exterior: 5 a 8 ºC en aireadores. (pág. 124)
-- 37 ºC exterior: 7 a 10 ºC en aireadores. (pág. 124)
+- Temperatura exterior de 15 °C: salida en aireadores entre 2 y 4 °C (pág. 123).
+- Temperatura exterior de 20 °C: salida en aireadores entre 4 y 6 °C (pág. 123).
+- Temperatura exterior de 26 °C: salida en aireadores entre 4 y 7 °C (pág. 123).
+- Temperatura exterior de 32 °C: salida en aireadores entre 5 y 8 °C (pág. 123).
+- Temperatura exterior de 37 °C: salida en aireadores entre 7 y 10 °C (pág. 123).
 
 ## Verificación tras la reparación
-Comprobar que la temperatura medida en los difusores centrales desciende hasta los valores tabulados según la temperatura ambiente exterior. (pág. 124)
+Comprobar que la temperatura medida en los aireadores centrales se encuentra dentro del margen tabulado correspondiente a la temperatura ambiente exterior (pág. 123).
 
 ---
 
 ```yaml
 tipo: procedimiento
 titulo: Desconexión del equipo de carga
-entidad: vacio-y-carga
-variante: desconexion-y-purga
+entidad: desconexion-equipo-carga
 area: climatizacion
-sistema: equipos-taller
+sistema: circuito-frigorifico
 fuente: "15. Diágnostico y averías.pdf"
-paginas: "124"
-relacionados: [lectura-manometros, refrigerante-r134a]
-palabras: [mangueras, purga de refrigerante, calibración de manómetros, estación de carga]
+paginas: "123"
+relacionados: [vacio-y-carga, lectura-manometros]
+palabras: [recuperación mangueras, manguera alta, manguera baja, manómetros a cero]
 ```
 
 ## Objeto y alcance
-Recuperar el refrigerante de las mangueras del equipo de carga tras una comprobación o intervención, garantizando que los manómetros queden a cero para evitar su descalibración. (pág. 124)
+Recuperar el fluido refrigerante acumulado en las mangueras de servicio al finalizar los ensayos, garantizando que los manómetros queden a cero para evitar su descalibración con el tiempo (pág. 123).
 
 ## Condiciones previas
-Sistema de aire acondicionado del vehículo en funcionamiento. (pág. 124)
+Sistema de aire acondicionado en funcionamiento y mangueras de la estación conectadas al vehículo (pág. 123).
 
 ## Equipo y material
-Estación de carga o puente de manómetros de alta y baja presión con sus correspondientes mangueras. (pág. 124)
+Estación de carga y prueba de aire acondicionado con sus correspondientes mangueras y manómetros (pág. 123).
 
 ## Pasos
-1. Con el aire acondicionado funcionando, desconectar la manguera de "ALTA" del vehículo. (pág. 124)
-2. Abrir la válvula de "ALTA" de la estación de carga. (pág. 124)
-3. Abrir lentamente la válvula de "BAJA" para que el compresor aspire el refrigerante contenido en los tubos. (pág. 124)
-4. Cuando las presiones en ambos manómetros se igualen, cerrar las válvulas de "ALTA" y "BAJA". (pág. 124)
-5. Desconectar la manguera de "BAJA" del vehículo. (pág. 124)
-6. Recuperar el refrigerante restante de los tubos hasta que las agujas de los manómetros queden a cero. (pág. 124)
+1. Con el sistema de aire acondicionado en marcha, desconectar el acoplamiento rápido de la manguera de "ALTA" del vehículo (pág. 123).
+2. Abrir la válvula de "ALTA" del puente de manómetros (pág. 123).
+3. Abrir lentamente la válvula de "BAJA" para que el propio compresor del vehículo aspire el refrigerante contenido en las mangueras (pág. 123).
+4. Cuando las presiones de ambos manómetros se igualen, cerrar las válvulas de "ALTA" y "BAJA" de la estación (pág. 123).
+5. Desconectar el acoplamiento de la manguera de "BAJA" del vehículo (pág. 123).
+6. Recuperar el refrigerante residual de los tubos hasta que las agujas de los manómetros marquen exactamente cero (pág. 123).
 
 ## Valores de referencia
-Presión final en los manómetros: 0 bar (a cero). (pág. 124)
+Presión final en los manómetros de alta y baja: 0 bar (pág. 123).
 
 ## Verificación final
-Inspeccionar visualmente que ambos manómetros marquen exactamente cero para impedir que la lectura presurizada descalibre los instrumentos con el tiempo. (pág. 124)
+Confirmar visualmente que las agujas de ambos manómetros reposan en la marca del cero (pág. 123).
 
 ## Seguridad y normativa
-Es imprescindible purgar las mangueras y recuperar el gas hacia la estación de carga para evitar descargas de refrigerante a la atmósfera. (pág. 124)
+No documentado en fuentes (pág. 123).
 
 ---
 
 ```yaml
 tipo: diagnostico
-titulo: Diagnóstico de averías hidráulicas del circuito
-entidad: lectura-manometros
-variante: averias-hidraulicas
+titulo: Diagnóstico de averías hidráulicas por presiones
+entidad: diagnostico-averias-hidraulicas
 area: climatizacion
 sistema: circuito-frigorifico
 fuente: "15. Diágnostico y averías.pdf"
 paginas: "124-126"
-relacionados: [compresor, valvula-expansion, condensador, filtro-deshidratador]
-palabras: [alta presión, baja presión, congelación, obstrucción, falta de carga, exceso de carga]
+relacionados: [lectura-manometros, compresor, valvula-expansion, condensador, filtro-deshidratador]
+palabras: [carga insuficiente, carga excesiva, presión alta, presión baja, presiones en reposo]
 ```
 
 ## Síntoma
-Comportamiento anómalo en las presiones de trabajo de alta y baja presión acompañado de deficiencias en el enfriamiento o congelación en líneas de fluido. (pág. 124, 125, 126)
+Aireadores con temperatura insuficiente o igual a la ambiente, formación de hielo en la línea de líquido o filtro deshidratador, o presiones fuera de rango de trabajo (pág. 124-126).
+
+📷 IMAGEN: Manómetros de alta y baja presión midiendo circuito frigorífico — Fuente: 15. Diágnostico y averías.pdf, pág. 124
 
 ## Causas posibles
-- **Baja cantidad de refrigerante**:
-  - Compresor fijo: BAJA y ALTA muy bajas (BAJA \\(0,5 \div 1 \text{ bar}\\), ALTA \\(6,5 \div 9 \text{ bar}\\) en R134a a 1.500 r.p.m.). Temperatura en aireadores alta. Si al acelerar la BAJA cae de 0,5 bar, existe peligro de congelación. (pág. 125)
-  - Compresor variable: BAJA cae a \\(1,4 \div 1,6 \text{ bar}\\), ALTA fluctúa (\\(8 \div 12 \text{ bar}\\)). Presión en reposo algo baja. (pág. 124)
-- **Exceso de refrigerante**:
-  - Compresor fijo: BAJA y ALTA muy altas (BAJA \\(2,5 \div 3,5 \text{ bar}\\), ALTA \\(19 \div 24 \text{ bar}\\) en R134a). Temperatura en aireadores alta. (pág. 125)
-  - Compresor variable: BAJA \\(1,6 \div 1,8 \text{ bar}\\), ALTA \\(10 \div 10,5 \text{ bar}\\). Temperatura en aireadores muy baja, pero el compresor absorbe más potencia y sufre mayor desgaste. (pág. 124, 125)
-- **Exceso de aceite / Contaminación por aire o humedad**: Presiones normales en alta y baja, pero el aire en los difusores no enfría suficiente o sale a temperatura ambiente. (pág. 126)
-- **Válvula de expansión muy abierta**: Presiones normales, pero la tubería de baja presión está más fría que la carcasa del evaporador. (pág. 126)
-- **Válvula de expansión cerrada**: Presiones normales, aire no suficientemente frío. (pág. 126)
-- **Condensador obstruido o fallo del electroventilador**: ALTA elevada; la presión de ALTA desciende al enfriar el condensador con agua. (pág. 126)
-- **Problema mecánico o fugas internas en compresor**: Presiones de ALTA y BAJA igualadas o no varían al funcionar; se equilibran rápidamente al parar y fluctúan en marcha. (pág. 126)
-- **Obstrucción en línea de líquido / Filtro deshidratador bloqueado**: ALTA elevada y BAJA reducida; presencia de hielo en la línea de líquido o en el filtro deshidratador. (pág. 126)
-- **Obstrucción en la zona de baja presión**: Los manguitos metálicos de baja están más fríos que el evaporador. (pág. 126)
+- Exceso de aceite en el circuito (pág. 126).
+- Contaminación por aire o humedad (pág. 126).
+- Válvula de expansión bloqueada (cerrada o muy abierta) (pág. 126).
+- Exceso de carga de refrigerante (pág. 126).
+- Condensador obstruido o avería en el electroventilador (pág. 126).
+- Defecto mecánico en el compresor, juntas dañadas o partículas atrapadas en la válvula de descarga (pág. 126).
+- Carga insuficiente de refrigerante (pág. 126).
+- Obstrucción física en la línea de baja, línea de líquido o filtro deshidratador colmatado (pág. 126).
 
 ## Cómo separar las causas
-Evaluar de forma conjunta la presión de alta y baja en los manómetros a 1.500 r.p.m. y aplicar pruebas de contraste (enfriar el condensador con agua, tocar la temperatura relativa de los tubos y verificar presencia de hielo en filtros o racores). (pág. 125, 126)
+- **Evaluar la influencia de la carga y temperatura**: Comparar lecturas a ralentí (R) y a 1.500-1.700 r.p.m. (A) con los valores tabulados según la temperatura ambiente (pág. 124-125).
+- **Prueba del agua en condensador**: Si al enfriar el condensador con agua la presión de ALTA desciende, indica exceso de gas, condensador sucio o electroventilador inoperativo (pág. 126).
+- **Prueba de equilibrio de presiones**: Si al parar el compresor las presiones de ALTA y BAJA se equilibran de forma inmediata y fluctúan durante el funcionamiento, existen fugas internas entre válvulas/juntas o fallo mecánico del compresor (pág. 126).
+- **Inspección térmica del circuito**: Si el manguito de baja o la línea de líquido presenta hielo o una temperatura inferior a la carcasa del evaporador, existe una obstrucción local o la válvula de expansión está defectuosa (pág. 126).
 
 ## Valores de referencia
-- **Carga normal R134a (compresor fijo a 1.500 r.p.m.)**: BAJA \\(1,5 \div 2,5 \text{ bar}\\), ALTA \\(13,5 \div 15 \text{ bar}\\). (pág. 125)
-- **Carga baja R134a (compresor fijo a 1.500 r.p.m.)**: BAJA \\(0,5 \div 1 \text{ bar}\\), ALTA \\(6,5 \div 9 \text{ bar}\\). Umbral crítico de congelación: BAJA < 0,5 bar al acelerar. (pág. 125)
-- **Carga excesiva R134a (compresor fijo a 1.500 r.p.m.)**: BAJA \\(2,5 \div 3,5 \text{ bar}\\), ALTA \\(19 \div 24 \text{ bar}\\). (pág. 125)
-- **Compresor variable (carga normal 550 g)**: BAJA 1,8 bar, ALTA 9 bar a ralentí; BAJA 1,4 bar, ALTA 12 bar a 1.500 r.p.m. (pág. 124)
+- **Compresor fijo a 1.500 r.p.m. (R134a)**:
+  - Carga normal: BAJA a 1,5÷2,5 bar / ALTA a 13,5÷15 bar (pág. 125).
+  - Carga baja: BAJA a 0,5÷1 bar / ALTA a 6,5÷9 bar (pág. 125).
+  - Carga excesiva: BAJA a 2,5÷3,5 bar / ALTA a 19÷24 bar (pág. 125).
+- **Compresor variable eléctrico a 1.500 r.p.m.**:
+  - Carga normal (550 g): BAJA a 1,4 bar / ALTA a 12 bar / Aireadores a 1,7 °C (pág. 124).
+  - Carga baja (300 g): BAJA a 1,8 bar / ALTA a 9÷10 bar / Aireadores a 2,4 °C (pág. 124).
+  - Carga excesiva (1.000 g): BAJA a 1,6 bar / ALTA a 10,5 bar / Aireadores a 1,1 °C (pág. 124).
+- **Riesgo de congelación**: En compresores fijos con poco refrigerante, si al acelerar la BAJA desciende por debajo de 0,5 bar existe riesgo de congelación del evaporador (pág. 125).
+- **Variación por temperatura exterior (1.500 r.p.m.)**:
+  - 15 °C: BAJA 1,2÷1,5 bar | ALTA 8÷10 bar (pág. 125).
+  - 20 °C: BAJA 1,5÷1,8 bar | ALTA 9÷12 bar (pág. 125).
+  - 26 °C: BAJA 1,8÷2 bar | ALTA 12÷14,5 bar (pág. 125).
+  - 32 °C: BAJA 2,1÷2,3 bar | ALTA 14,5÷18 bar (pág. 125).
+  - 37 °C: BAJA 2,3÷2,5 bar | ALTA 18÷20 bar (pág. 125).
+- **Presiones aproximadas en reposo**: 15 °C (3,9 bar), 20 °C (4,7 bar), 25 °C (5,5 bar), 30 °C (6,6 bar), 35 °C (7,5 bar), 40 °C (8,8 bar), 45 °C (9,8 bar) (pág. 125).
 
 ## Verificación tras la reparación
-Recuperar el fluido, corregir la causa de la anomalía (ajustar carga de gas/aceite, desobstruir condensador, cambiar válvula de expansión o filtro deshidratador), hacer vacío y recargar; confirmar que las presiones vuelven a los márgenes normativos. (pág. 126)
+Realizar la recuperación, vacío y recarga exacta de refrigerante y aceite según datos de fabricante, verificando que las presiones de alta y baja se sitúan dentro del margen nominal (pág. 126).
 
 ---
 
 ```yaml
 tipo: diagnostico
-titulo: Diagnóstico de averías en el compresor
-entidad: compresor
-variante: diagnostico-averias
+titulo: Diagnóstico de averías del compresor
+entidad: diagnostico-compresor
 area: climatizacion
 sistema: circuito-frigorifico
 fuente: "15. Diágnostico y averías.pdf"
-paginas: "126-130"
-relacionados: [embrague-compresor, valvula-expansion, filtro-deshidratador]
-palabras: [igualación de presiones, virutas, aceite purpurina, aceite negro, aceite rojo, golpe de líquido]
+paginas: "127-130"
+relacionados: [compresor, embrague-compresor, valvula-expansion, filtro-deshidratador, aceite-frigorifico]
+palabras: [presiones igualadas, aceite rojo, aceite negro, aceite purpurina, ruidos compresor]
 ```
 
 ## Síntoma
-Las presiones de ALTA y BAJA permanecen igualadas estando el compresor en giro, o el compresor presenta ruidos, agarrotamiento y daños en sus componentes internos. (pág. 126, 127, 128)
+Presiones de ALTA y BAJA completamente igualadas mientras el compresor está girando, ruidos anómalos en la zona del compresor o gripado mecánico (pág. 127, 130).
+
+📷 IMAGEN: Desgastes en el plato oscilante y rotula de pistón deformada por falta de lubricante — Fuente: 15. Diágnostico y averías.pdf, pág. 128
+
+📷 IMAGEN: Bielas dobladas, pistones marcados y ataque ácido en cabeza de pistones por humedad — Fuente: 15. Diágnostico y averías.pdf, pág. 129
 
 ## Causas posibles
-- **Avería del accionamiento exterior**: Patinado del embrague electromagnético o rotura del sistema de seguridad de los compresores sin embrague. (pág. 126)
-- **Averías internas del compresor**:
-  - Fallo en la válvula o electroválvula de regulación. (pág. 127)
-  - Daños en la placa de válvulas de admisión o descarga (partícula atrapada bajo la válvula o rotura de la lámina). (pág. 127, 129)
-  - Daños en pistones y bielas (pistonaje marcado por partículas duras, bielas dobladas). (pág. 129, 130)
-  - Rótula de pistón soldada o desgastes severos en el plato oscilante por falta de lubricante/refrigerante. (pág. 128)
-- **Causas externas provocadoras**:
-  - **Falta de lubricante y/o refrigerante de retorno**: Fugas, carga incorrecta, porosidad en mangueras o pinzamiento de tuberías. (pág. 128)
-  - **Entrada de refrigerante en estado líquido (golpe de líquido)**: Válvula de expansión bloqueada abierta o realización de la carga por la toma de baja presión. Genera ruidos y quema el embrague. (pág. 128)
-  - **Presencia de humedad**: Reacciona formando ácidos que corroen la cabeza de los pistones y deterioran el lubricante. (pág. 128, 130)
-  - **Suciedad en el circuito**: Falta de limpieza en reparaciones anteriores o presencia de restos de disolventes. (pág. 128)
-  - **Mala manipulación en el montaje**: Forzado del compresor, falta de deslizamiento de casquillos, golpes en polea/placa frontal o grietas en orejetas. (pág. 127)
+- **Avería interna del compresor**: Fallo en la electroválvula o válvula mecánica de regulación, daño en la placa de válvulas (admisión o descarga), bielas dobladas, rótula de pistón soldada/deformada, desgastes en plato oscilante o grietas en pistones (pág. 127-129).
+- **Fallo en accionamiento**: Problemas en el embrague electromagnético o rotura del sistema de seguridad contra sobrecarga en compresores sin embrague (pág. 127).
+- **Falta de lubricación o refrigerante de retorno**: Fugas en el circuito, tuberías pinzadas, mangueras porosas o falta de aceite (pág. 128).
+- **Golpe de líquido**: Entrada de refrigerante en estado líquido por válvula de expansión abierta o por realizar la carga en fase líquida por la toma de baja presión (pág. 128).
+- **Presencia de humedad**: Formación de ácidos que atacan la cabeza de los pistones y provocan corrosión (pág. 128-129).
+- **Daños por montaje incorrecto**: Forzado de orejetas de fijación, golpes en la polea/plato frontal, o roscas de racores dañadas (pág. 127).
 
 ## Cómo separar las causas
-1. Verificar primero que el eje del compresor gira eficazmente y que no falla el accionamiento exterior. (pág. 126)
-2. Inspeccionar la entrada de la válvula de expansión, el interior de los tubos y el color/estado del aceite del circuito: (pág. 127, 130)
-   - **Aceite rojo**: Producido por restos de humedad en el circuito. (pág. 130)
-   - **Aceite negro**: Producido por desgastes graves o gripados térmicos/mecánicos. (pág. 130)
-   - **Aceite purpurina (partículas metálicas)**: Producido por golpes o daños internos graves con desprendimiento de virutas. (pág. 127, 130)
+- **Comprobación de giro y embrague**: Verificar si el compresor gira realmente. Si el embrague electromagnético no acopla, desconectar su conector y alimentarlo directamente a 12 V respetando la polaridad (pág. 127, 130).
+- **Análisis del estado del aceite extraído**:
+  - *Aceite rojo*: Indica presencia de humedad residual en el circuito (pág. 128, 129).
+  - *Aceite negro*: Indica desgastes severos, sobrecalentamiento o gripados internos (pág. 128, 129).
+  - *Aceite purpurina*: Indica presencia de virutas y partículas metálicas por destrucción interna (pág. 128, 129).
+- **Inspección visual de contaminación**: Comprobar la presencia de película gris en los tubos o virutas/suciedad en la entrada de la válvula de expansión (pág. 127).
+- **Diagnóstico de ruidos**:
+  - *Desembragado*: Rozamiento de la placa frontal con la polea, holgura/golpe en el rodamiento del rotor o roce de la polea con elementos externos (pág. 130).
+  - *Embragado*: Carga de gas incorrecta, golpe de líquido, tuberías en contacto con la carrocería, embrague patinando por grasa/aceite, o partícula atrapada bajo la válvula de descarga (pág. 130).
 
 ## Valores de referencia
-- Presiones con el compresor averiado internamente: ALTA e IGUAL a BAJA durante el giro. (pág. 126)
-- Separación plato-polea Sanden: \\(0,4 \div 0,8 \text{ mm}\\); otras marcas: \\(0,2 \div 0,5 \text{ mm}\\). (pág. 131)
+Distancia entre la polea y el plato del embrague: compresores Sanden de 0,4 a 0,8 mm; otras marcas de 0,2 a 0,5 mm (pág. 131).
 
 ## Verificación tras la reparación
-Sustituir el compresor. Si se detectan partículas, virutas o aceite rojo/negro/purpurina, es **obligatorio** realizar el lavado exhaustivo del circuito antes de montar el compresor nuevo, así como sustituir la válvula de expansión y el filtro deshidratador. (pág. 127, 130, 132)
+Confirmar el acoplamiento correcto sin patinamiento ni ruidos, comprobando que se establece el salto térmico y la diferencia de presiones entre ALTA y BAJA (pág. 130, 132).
 
 ---
 
 ```yaml
 tipo: procedimiento
-titulo: Sustitución del compresor y lavado del circuito
-entidad: lavado-circuito
-area: climatizacion
-sistema: equipos-taller
-fuente: "15. Diágnostico y averías.pdf"
-paginas: "127, 130, 131-132"
-relacionados: [compresor, valvula-expansion, filtro-deshidratador, vacio-y-carga]
-palabras: [lavado del circuito, nitrógeno líquido, aceite nuevo, vacío profundo, sustitución de componentes]
-```
-
-## Objeto y alcance
-Sustituir un compresor averiado garantizando la eliminación completa de virutas, suciedad, humedad y aceite deteriorado en las canalizaciones para evitar la avería repetitiva del compresor nuevo. (pág. 127, 131, 132)
-
-## Condiciones previas
-- Diagnóstico de avería del compresor confirmado. (pág. 131)
-- Refrigerante del circuito recuperado en la estación de carga. (pág. 131)
-
-## Equipo y material
-- Compresor nuevo, válvula de expansión nueva y filtro deshidratador/colector nuevo. (pág. 127, 132)
-- Equipo de lavado con aire seco y nitrógeno líquido. (pág. 127)
-- Aceite frigorífico nuevo especificado. (pág. 132)
-- Estación de vacío y carga. (pág. 132)
-
-## Pasos
-1. Recuperar el refrigerante anotando la cantidad de aceite y gas extraídos. (pág. 131)
-2. Desmontar la correa de accesorios, desconectar las tuberías y extraer el compresor averiado, taponando los racores para evitar la entrada de suciedad. (pág. 131)
-3. Inspeccionar el interior de los manguitos. En caso de detectar suciedad, virutas o aceite rojo, negro o purpurina, efectuar el lavado exhaustivo de tubos, manguitos, condensador y evaporador haciendo pasar aire seco y deshumedecer con nitrógeno líquido en **sentido contrario** al flujo habitual del refrigerante. (pág. 127, 130, 132)
-4. Extraer manualmente el aceite del compresor nuevo. (pág. 132)
-5. Ajustar la cantidad de aceite a introducir en el cárter del nuevo compresor:
-   - Tras lavado completo del circuito: introducir la cantidad total recomendada por el fabricante (normalmente el compresor trae el aceite total necesario). (pág. 132)
-   - Sin lavado previo: introducir una cantidad igual a la extraída manualmente del compresor viejo + la extraída en la recuperación + 20 cc adicionales. Añadir suplementos en caso de sustitución de otros componentes: +50 cc por evaporador, +30 cc por condensador, +10 cc por filtro, +10 cc por cada tubo. (pág. 132)
-6. Montar el compresor nuevo, la válvula de expansión nueva y el filtro nuevo. (pág. 127, 132)
-7. Realizar un vacío profundo al circuito de una duración mínima de 45 minutos. (pág. 128, 132)
-8. Comprobar la ausencia de fugas mediante el test de estanqueidad en vacío. (pág. 132)
-9. Cargar la cantidad prescrita de refrigerante por el lado de alta presión. (pág. 132)
-
-## Valores de referencia
-- Duración del vacío profundo obligatorio: mínimo 45 minutos. (pág. 128, 132)
-- Cantidades de aceite suplementario por componente:
-  - Evaporador: 50 cc. (pág. 132)
-  - Condensador: 30 cc. (pág. 132)
-  - Filtro deshidratador: 10 cc. (pág. 132)
-  - Tubería: 10 cc. (pág. 132)
-  - Margen adicional estándar: 20 cc. (pág. 132)
-- Régimen de rodaje inicial: no superar las 1.000 r.p.m. durante los primeros 5 minutos de funcionamiento del compresor nuevo. (pág. 132)
-
-## Verificación final
-1. Ajustar la tensión de la correa de accesorios. (pág. 132)
-2. Arrancar a ralentí y verificar la ausencia de ruidos extraños. (pág. 132)
-3. Conectar el A/A, comprobar el correcto acoplamiento del plato sobre la polea y mantener el motor por debajo de 1.000 r.p.m. los primeros 5 minutos. (pág. 132)
-4. Verificar las presiones de funcionamiento en los manómetros y medir la temperatura en aireadores. (pág. 132)
-
-## Seguridad y normativa
-La sustitución conjunta del filtro y de la válvula de expansión es requisito obligatorio impostergable para mantener la garantía del fabricante del compresor. (pág. 127, 132)
-
----
-
-```yaml
-tipo: diagnostico
-titulo: Diagnóstico de ruidos en el compresor
-entidad: compresor
-variante: ruidos
+titulo: Sustitución de compresor y lavado del circuito
+entidad: sustitucion-compresor
 area: climatizacion
 sistema: circuito-frigorifico
 fuente: "15. Diágnostico y averías.pdf"
-paginas: "131"
-relacionados: [embrague-compresor]
-palabras: [ruidos, compresor desembragado, compresor embragado, alineación, golpe de líquido, patinado]
+paginas: "127,131-132"
+relacionados: [compresor, valvula-expansion, filtro-deshidratador, vacio-y-carga, lavado-circuito]
+palabras: [limpieza de circuito, nitrógeno líquido, reajuste de aceite, vacío profundo, acoplamiento compresor]
 ```
 
-## Síntoma
-Aparición de ruidos anómalos, roces o chasquidos procedentes del compresor durante el funcionamiento del motor. (pág. 131)
+## Objeto y alcance
+Procedimiento paso a paso para desmontar un compresor averiado, lavar el circuito frigorífico contaminado, reemplazar componentes de sustitución obligatoria, reajustar el volumen de lubricante e instalar el nuevo compresor (pág. 127, 131-132).
 
-## Causas posibles
-- **Con el compresor desembragado (sin conectar A/A)**:
-  - Contacto directo de la placa frontal con la polea. (pág. 131)
-  - Oscilación del rodamiento del rotor por impacto o golpe externo. (pág. 131)
-  - Rozamiento de la polea con algún cuerpo o elemento extraño. (pág. 131)
-- **Con el compresor embragado (A/A conectado)**:
-  - Cantidad incorrecta de refrigerante en el circuito. (pág. 131)
-  - Compresión de refrigerante en estado líquido (golpe de líquido). (pág. 131)
-  - Contacto de las tuberías del circuito con la estructura del chasis o la carrocería. (pág. 131)
-  - Patinado del embrague por presencia de aceite o grasa en la superficie de acoplamiento. (pág. 131)
-  - Partícula atrapada bajo la válvula de descarga. (pág. 131)
-  - Daños o desprendimientos mecánicos en el interior del compresor. (pág. 131)
+## Condiciones previas
+Diagnóstico confirmado de avería en el compresor o evidencia de suciedad, partículas metálicas o aceite degradado en el circuito (pág. 127, 131).
 
-## Cómo separar las causas
-1. Determinar si el ruido se manifiesta con el compresor apagado (desembragado) o solo al acoplar el climatizador (embragado). (pág. 131)
-2. Si es desembragado: inspeccionar holguras en la polea, alineación y roces externos. (pág. 131)
-3. Si es embragado: hacer test de presiones, revisar apoyos de tuberías en carrocería y desengrasar las caras del embrague. (pág. 131)
+## Equipo y material
+Estación de reciclaje y carga, botella de nitrógeno líquido, fuente de aire seco, lubricante nuevo adecuado, compresor nuevo, válvula de expansión nueva y filtro deshidratador nuevo (pág. 127, 132).
+
+📷 IMAGEN: Desmontaje y comprobaciones exteriores e interiores de compresor — Fuente: 15. Diágnostico y averías.pdf, pág. 131
+
+📷 IMAGEN: Esquema de decisión para el lavado de circuito y sustitución de componentes — Fuente: 15. Diágnostico y averías.pdf, pág. 132
+
+## Pasos
+1. Recuperar el fluido refrigerante del circuito registrando la cantidad de gas y de aceite extraídos (pág. 131).
+2. Desmontar la correa de accesorios y las tuberías de aspiración y descarga, taponando los racores del vehículo para evitar la entrada de suciedad (pág. 131).
+3. Desmontar el compresor averiado y verificar su estado externo e interno (distancia polea-plato, color y olor del aceite, presencia de virutas) (pág. 131).
+4. Si se detectan partículas, ferricha o aceite alterado (rojo, negro o purpurina), realizar el lavado exhaustivo de todos los tubos, manguitos, condensador y evaporador haciendo pasar aire seco y deshumedeciendo a continuación con nitrógeno líquido en sentido contrario a la circulación habitual del fluido (pág. 127, 131-132).
+5. Sustituir conjuntamente e indiscutiblemente el compresor, la válvula de expansión y el filtro deshidratador (pág. 127, 132).
+6. Ajustar la carga de aceite en el compresor nuevo: vaciar su aceite de origen e introducir una cantidad equivalente al aceite extraído manualmente del compresor viejo + el recuperado en la máquina + 20 cc adicionales (pág. 132).
+7. En caso de cambiar componentes individuales sin lavado total, añadir al cárter del compresor: sustitución de evaporador (+50 cc), condensador (+30 cc), filtro (+10 cc), manguito/tubo (+10 cc) (pág. 132).
+8. En caso de lavado completo del circuito, introducir la cantidad total de aceite indicada por el fabricante (normalmente contenida íntegramente en el compresor nuevo) (pág. 132).
+9. Montar el compresor, la válvula de expansión y el filtro con sus juntas de estanqueidad nuevas (pág. 132).
+10. Efectuar un vacío profundo al circuito de una duración mínima ininterrumpida de 45 minutos (pág. 128, 132).
+11. Realizar la prueba de estanqueidad por vacío (pág. 132).
+12. Cargar el circuito con la cantidad exacta de refrigerante prescripta por el fabricante a través de la toma de alta presión (pág. 132).
 
 ## Valores de referencia
-Distancia de entrehierro polea-plato: Sanden \\(0,4 \div 0,8 \text{ mm}\\); otras marcas \\(0,2 \div 0,5 \text{ mm}\\). (pág. 131)
+- Duración mínima del vacío profundo: 45 minutos (pág. 128, 132).
+- Distancia entre polea y plato del embrague: Sanden de 0,4 a 0,8 mm; otras marcas de 0,2 a 0,5 mm (pág. 131).
+- Suplementos de aceite: evaporador 50 cc, condensador 30 cc, filtro 10 cc, manguito 10 cc, reserva compresor viejo +20 cc (pág. 132).
 
-## Verificación tras la reparación
-- En ruidos de origen externo: sustituir embrague o eliminar contactos con el chasis. (pág. 131)
-- En ruidos de origen interno: sustituir el compresor. (pág. 131)
-- Confirmar la ausencia total de ruidos en ralentí y con carga frigorífica. (pág. 131, 132)
+## Verificación final
+1. Verificar la tensión correcta de la correa de accesorios (pág. 132).
+2. Arrancar el motor a ralentí y comprobar la ausencia de ruidos anómalos (pág. 132).
+3. Conectar el A/C y verificar el acoplamiento directo del plato sobre la polea (pág. 132).
+4. No superar bajo ninguna circunstancia las 1.000 r.p.m. durante los primeros 5 minutos de funcionamiento del nuevo compresor (pág. 132).
+5. Medir presiones de ALTA y BAJA y comprobar la temperatura en los aireadores (pág. 132).
+
+## Seguridad y normativa
+No documentado en fuentes (pág. 132).
 
 ---
 
 ```yaml
 tipo: diagnostico
-titulo: Autodiagnóstico de la Unidad de Control del Climatizador
-entidad: regulacion-automatica
-variante: autodiagnostico
+titulo: Autodiagnóstico de climatización electrónica
+entidad: autodiagnostico-climatizador
 area: climatizacion
 sistema: control-climatizacion
 fuente: "15. Diágnostico y averías.pdf"
 paginas: "133-134"
-relacionados: [unidad-control-climatizador, servomotor-trampilla, sensor-temperatura-interior]
-palabras: [memoria de averías, test de actuadores, ajuste básico, bloques de medición, CAN-Bus]
+relacionados: [unidad-control-climatizador, servomotor-trampilla, sensor-temperatura-interior, sensor-temperatura-exterior, presostato]
+palabras: [memoria de averías, diagnóstico de actuadores, ajuste básico, lectura de valores, UCE clima]
 ```
 
 ## Síntoma
-Anomalías de funcionamiento en la gestión electrónica de la climatización automática, parpadeos en la pantalla de mandos o averías en la regulación de trampillas, turbina y compresor. (pág. 133)
+Mensajes de error en el panel de mandos, parpadeo del display, inoperatividad de servomotores de trampillas o bloqueo de activación del compresor (pág. 133).
+
+📷 IMAGEN: Esquema de componentes interconectados en el autodiagnóstico del climatizador — Fuente: 15. Diágnostico y averías.pdf, pág. 134
 
 ## Causas posibles
-- Fallo eléctrico/electrónico en sensores específicos de la climatización (memorizados directamente en la UCE de climatización). (pág. 133)
-- Fallo en sensores compartidos recibidos por CAN-Bus:
-  - UCE Cuadro de instrumentos: memoriza averías del sensor de temperatura exterior y sensor de velocidad. (pág. 133)
-  - UCE Red de a bordo: memoriza averías del sensor de marcha atrás, carga del alternador y regulador de iluminación. (pág. 134)
-  - UCE Motor: transmite la temperatura del líquido refrigerante. (pág. 134)
-- Avería en servomotores de trampillas, regulador del electroventilador/turbina o electroválvula del compresor. (pág. 133, 134)
-- Desconfiguración de los topes de servomotores tras intervenciones de taller. (pág. 133)
+- Averías en sensores específicos de climatización (pág. 133).
+- Averías en sensores compartidos recibidos por red CAN-Bus desde el cuadro de instrumentos (temperatura exterior, velocidad), red de a bordo (marcha atrás, alternador, regulador luz) o UCE motor (temperatura refrigerante, rpm) (pág. 133-134).
+- Fallos eléctricos en servomotores, turbina de aire, electroventiladores o electroválvula/embrague del compresor (pág. 133-134).
+- Desconfiguración de los límites de recorrido de las trampillas o fallo interno de la UCE de climatización (pág. 133).
 
 ## Cómo separar las causas
-Conectar la máquina de diagnosis y ejecutar las cuatro funciones principales de autodiagnóstico: (pág. 133, 134)
-1. **Consultar la memoria de averías**:
-   - Averías fugaces/esporádicas: se borran automáticamente si no se repiten. (pág. 133)
-   - Averías permanentes: permanecen en memoria hasta ser reparadas y borradas manualmente. (pág. 133)
-2. **Diagnóstico de elementos actuadores**:
-   - *Test de segmentos*: ilumina todos los dígitos del display. (pág. 133)
-   - *Velocidades del electroventilador y turbina*: comprueba su variación de marcha. (pág. 133)
-   - *Embrague del compresor*: realiza acoplamientos cíclicos. (pág. 133)
-   - *Motores de las trampillas*: activa los servomotores para verificar el direccionamiento del aire y mezcla. (pág. 133)
-3. **Ajuste básico**: Activa de extremo a extremo todos los servomotores y memoriza sus posiciones tope (mínima y máxima). (pág. 133)
-4. **Lectura de valores de funcionamiento individual**: Permite verificar en tiempo real el porcentaje PWM de la electroválvula del compresor, presiones del sensor MAP, temperaturas leídas por las sondas interior/exterior/evaporador y posición real de las trampillas. (pág. 133, 134)
+- **Consultar memoria de averías**:
+  - *Averías esporádicas/fugaces*: Se borran automáticamente de la UCE si no se repiten tras 30 o 40 arranques del vehículo (pág. 133).
+  - *Averías permanentes/actuales*: Quedan memorizadas y requieren reparación física y borrado manual desde la máquina de diagnosis (pág. 133).
+- **Diagnóstico de actuadores**: Realizar pruebas individuales para activar el test de segmentos del display, velocidades del electroventilador y turbina, acoplamiento del embrague del compresor y recorrido de los motores de trampillas (pág. 133).
+- **Ajuste básico**: Activar el recorrido de principio a fin de todos los servomotores para memorizar las posiciones límite de mínimo y máximo. Es obligatorio al sustituir un servomotor o la propia UCE del climatizador (pág. 133).
+- **Lectura de valores individuales**: Analizar en tiempo real el estado del compresor, rpm del motor, velocidad del vehículo, tiempo de parada, valores teórico y real de posición de servomotores (temperatura izq/der, central, deshielo, recirculación), lecturas de sondas NTC (exterior, entrada aire, habitáculo), porcentaje de radiación del fotosensor solar expuesto a luz intensa, tensión de batería, % de activación de la electroválvula del compresor y presión hidráulica transmitida por el sensor MAP de alta presión (pág. 133-134).
 
 ## Valores de referencia
-- Ciclo de borrado de averías esporádicas: \\(30 \div 40\\) arranques sin reincidencia del fallo. (pág. 133)
-- Tensión de alimentación leída: valor equivalente a la tensión de batería (~12 V). (pág. 134)
-- Posición de servomotores en ajuste básico: coincidencia exacta entre el valor teórico y real. (pág. 133)
+Tensión de alimentación aproximada a la tensión de batería. Borrado de averías esporádicas tras 30-40 ciclos de arranque (pág. 133-134).
 
 ## Verificación tras la reparación
-Realizar el *Ajuste Básico* de forma obligatoria tras cambiar un servomotor o la Unidad de Control de Climatizador, borrar los códigos de avería y confirmar en *Lectura de valores* que la respuesta de los sensores y actuadores es coherente. (pág. 133, 134)
+Ejecutar la función de borrado de averías, realizar el ajuste básico de trampillas si hubo sustitución de componentes y confirmar en la lectura de valores que todos los parámetros reaccionan coherentemente (pág. 133-134).
 
 ---
 
-COBERTURA: documento «15. Diágnostico y averías.pdf», páginas 123 a 134 de 134. [completo]
+COBERTURA: documento «15. Diágnostico y averías.pdf», páginas 123 a 134 de 134. completo
+
+💡 ¿Te gustaría redactar un cuestionario práctico sobre diagnóstico de presiones o una guía rápida sobre el reajuste de aceite en el compresor?
