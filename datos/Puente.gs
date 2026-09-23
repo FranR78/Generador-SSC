@@ -190,8 +190,10 @@ function crearActivador() {
   // GitHub, el portal se pone al día solo en menos de una hora, sin tener que
   // ejecutar el puente a mano cada vez.
   crearUno_('puenteNT_traerNotas', 60);
+  // Los PDF con nota confirmada (Movedor.gs): cada hora, tras el pipeline.
+  crearUno_('puenteNT_moverConfirmados', 60);
 
-  console.log('Activadores: capturas cada 15 min; apuntes cada hora; archivado una vez al día.');
+  console.log('Activadores: capturas cada 15 min; apuntes y movedor cada hora; archivado una vez al día.');
 }
 
 
@@ -347,7 +349,7 @@ function puenteNT_comprobar() {
 
   // --- Los activadores ---
   const activos = ScriptApp.getProjectTriggers().map(function (t) { return t.getHandlerFunction(); });
-  ['puenteNT_subirCapturas', 'puenteNT_archivarProcesados'].forEach(function (f) {
+  ['puenteNT_subirCapturas', 'puenteNT_archivarProcesados', 'puenteNT_moverConfirmados'].forEach(function (f) {
     if (activos.indexOf(f) >= 0) bien('activador puesto: ' + f);
     else mal('falta el activador de ' + f + ' — ejecuta crearActivador una vez');
   });

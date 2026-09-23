@@ -1,6 +1,7 @@
 const $ = id => document.getElementById(id);
-const F = ["repo", "dir", "token", "prompt"];
+const F = ["repo", "dir", "informes", "token", "prompt", "origenId", "destinoId"];
 const LABELS = {
+  notebookTitle: "Título del cuaderno (informe)",
   sourceRow: "Fila de cada fuente",
   sourceTitle: "Título de la fuente",
   sourceCheck: "Casilla de la fuente",
@@ -30,6 +31,8 @@ function flash(el, text, kind) {
 $("save").onclick = async () => {
   const cfg = Object.fromEntries(F.map(k => [k, $(k).value.trim()]));
   cfg.sel = Object.fromEntries(Object.keys(DEFAULTS.sel).map(k => [k, $("sel_" + k).value.trim() || DEFAULTS.sel[k]]));
+  const id = /^[\w-]{10,}$/;
+  if ([cfg.origenId, cfg.destinoId].some(v => v && !id.test(v))) return flash($("saveMsg"), "ID de carpeta no válido: pega solo lo que va tras /folders/.", "err");
   if (cfg.repo && !/^[\w.-]+\/[\w.-]+$/.test(cfg.repo)) return flash($("saveMsg"), "El repositorio debe tener formato usuario/repo.", "err");
   await chrome.storage.local.set({ cfg });
   flash($("saveMsg"), "Guardado ✓", "ok");

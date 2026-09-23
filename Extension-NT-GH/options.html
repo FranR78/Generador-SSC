@@ -39,7 +39,9 @@
     <label for="repo">Repositorio <small>Formato usuario/repo</small></label>
     <input id="repo" placeholder="usuario/repo" autocomplete="off">
     <label for="dir">Carpeta de destino <small>Se crea sola si no existe</small></label>
-    <input id="dir" placeholder="notebooklm">
+    <input id="dir" placeholder="notas-tecnicas/entrada">
+    <label for="informes">Carpeta de informes <small>Un informe .md + .json por lote</small></label>
+    <input id="informes" placeholder="notas-tecnicas/informes">
     <label for="token">Token (PAT fine-grained) <small>Con permiso Contents: Read and write sobre ese repo</small></label>
     <input id="token" type="password" autocomplete="off">
     <div class="row">
@@ -49,6 +51,15 @@
     <div class="row">
       <span class="msg" id="testMsg"></span>
     </div>
+  </section>
+
+  <section>
+    <h2>Carpetas de Drive</h2>
+    <p><small>La extensión no toca Drive: estos IDs viajan en el informe y el movedor (puente) mueve los PDF. Lo que va tras <code>/folders/</code>.</small></p>
+    <label for="origenId">Origen: PDF pendientes <small>Vacío → CARPETA_FUENTES del puente o búsqueda por nombre</small></label>
+    <input id="origenId" autocomplete="off">
+    <label for="destinoId">Destino: PDF procesados <small>Vacío → se crea «NT-GH-Procesados» en Mi unidad</small></label>
+    <input id="destinoId" autocomplete="off">
   </section>
 
   <section>

@@ -6,10 +6,11 @@ chrome.runtime.onMessage.addListener((m, _, reply) => {
   return true;
 });
 
-async function upload({ name, md }) {
+// dir opcional: por defecto la de las notas; el informe va a la suya
+async function upload({ name, md, dir: d, ext = "md" }) {
   const c = await getCfg();
-  const dir = c.dir.replace(/^\/+|\/+$/g, "");
-  const path = [dir, `${name}.md`].filter(Boolean).join("/");
+  const dir = (d ?? c.dir).replace(/^\/+|\/+$/g, "");
+  const path = [dir, `${name}.${ext}`].filter(Boolean).join("/");
   const url = `https://api.github.com/repos/${c.repo}/contents/${encodeURI(path)}`;
   const h = { Authorization: `Bearer ${c.token}`, Accept: "application/vnd.github+json" };
 

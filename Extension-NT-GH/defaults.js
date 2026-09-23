@@ -1,10 +1,14 @@
 // Configuración por defecto (compartida por todas las piezas)
 const DEFAULTS = {
   repo: "",
-  dir: "notebooklm",
+  dir: "notas-tecnicas/entrada",
+  informes: "notas-tecnicas/informes",
+  origenId: "",
+  destinoId: "",
   token: "",
   prompt: "Procesa la fuente seleccionada.",
   sel: {
+    notebookTitle: "h1.notebook-title, .notebook-title, input.title-input",
     sourceRow: ".single-source-container",
     sourceTitle: ".source-title",
     sourceCheck: "input.mdc-checkbox__native-control",
@@ -18,4 +22,10 @@ const DEFAULTS = {
 async function getCfg() {
   const { cfg = {} } = await chrome.storage.local.get("cfg");
   return { ...DEFAULTS, ...cfg, sel: { ...DEFAULTS.sel, ...(cfg.sel || {}) } };
+}
+
+// Contrato de nombres (docs/CONTRATO_NOMBRES.md): IDÉNTICO en datos/Movedor.gs.
+// Título de la fuente / nombre del PDF → nombre del .md en GitHub.
+function sanear(s) {
+  return String(s).normalize("NFC").replace(/\.[^.]+$/, "").replace(/[^\p{L}\p{M}\p{N}_-]+/gu, "_");
 }

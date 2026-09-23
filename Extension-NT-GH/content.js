@@ -156,13 +156,13 @@ async function run(start = 0, only = null) {
     ui(`${rows.length} fuentes. Empiezo por la ${start + 1}.`);
   }
   let ok = 0;
-  const failed = [];
+  const failed = [], lote = [];
 
   for (const i of queue) {
     if (stopRequested) { ui("Detenido por el usuario."); break; }
     const row = rows[i];
     const title = row.querySelector(SEL.sourceTitle)?.innerText.trim() || `fuente_${i + 1}`;
-    const name = title.normalize("NFC").replace(/\.[^.]+$/, "").replace(/[^\p{L}\p{M}\p{N}_-]+/gu, "_");
+    const name = sanear(title);
     try {
       ui(`${i + 1}/${rows.length} · ${title}…`);
       await selectOnly(rows, i);
@@ -175,15 +175,54 @@ async function run(start = 0, only = null) {
       if (!res.ok) throw new Error(`GitHub respondió ${res.status}`);
       ui(`✓ ${name}.md ${res.updated ? "actualizado" : "subido"} (${via})`, "ok");
       ok++;
+      lote.push({ title, name, ok: true });
     } catch (e) {
       ui(`✗ ${title}: ${e.message}`, "err");
       failed.push(i);
+      lote.push({ title, name, ok: false, motivo: e.message });
     }
     await sleep(5000);
   }
   ui(`Terminado: ${ok} subidos, ${failed.length} con error.`, failed.length ? "err" : "ok");
+  if (lote.length) await informe(cfg, lote);
   running = false;
   if (failed.length) retryButton(failed);
+}
+
+// ---------- Informe del lote (docs/AUTOMATIZACION.md) ----------
+// .md para leerlo en el móvil; .json gemelo para el movedor (datos/Movedor.gs).
+function tituloCuaderno() {
+  const el = document.querySelector(SEL.notebookTitle);
+  const t = (el?.value || el?.innerText || "").trim() || document.title.replace(/\s*[-|–].*NotebookLM.*$/i, "").trim();
+  return t || "cuaderno";
+}
+
+async function informe(cfg, lote) {
+  const cuaderno = tituloCuaderno();
+  const ahora = new Date();
+  const p = n => String(n).padStart(2, "0");
+  const fecha = `${ahora.getFullYear()}-${p(ahora.getMonth() + 1)}-${p(ahora.getDate())}_${p(ahora.getHours())}${p(ahora.getMinutes())}`;
+  const name = `${fecha}_${sanear(cuaderno)}`;
+  const oks = lote.filter(x => x.ok), kos = lote.filter(x => !x.ok);
+  const json = {
+    cuaderno, fecha: ahora.toISOString(), origenId: cfg.origenId || "", destinoId: cfg.destinoId || "",
+    dirNotas: cfg.dir, total: lote.length, subidos: oks.length, fallidos: kos.length, fuentes: lote
+  };
+  const md = [
+    `# Informe · ${cuaderno}`, "",
+    `- Fecha: ${ahora.toLocaleString("es-ES")}`,
+    `- Subidos: **${oks.length}** · Fallidos: **${kos.length}** · Total: ${lote.length}`,
+    `- Origen Drive: ${cfg.origenId || "(sin poner)"} · Destino: ${cfg.destinoId || "(NT-GH-Procesados)"}`, "",
+    "> **Subido** = PUT OK. **Nota confirmada** = existe `entrada/procesados/<name>.md`.",
+    "> Vaciar el cuaderno solo cuando el movedor haya pasado el PDF a Procesados.", "",
+    "## Subidos", "", ...(oks.length ? oks.map(x => `- [ ] ${x.title} → \`${x.name}.md\``) : ["(ninguno)"]), "",
+    "## Fallidos", "", ...(kos.length ? kos.map(x => `- ${x.title}: ${x.motivo}`) : ["(ninguno)"]), ""
+  ].join("\n");
+  for (const [ext, body] of [["json", JSON.stringify(json, null, 2) + "\n"], ["md", md]]) {
+    const res = await chrome.runtime.sendMessage({ cmd: "upload", name, md: body, dir: cfg.informes, ext });
+    if (!res.ok) { ui(`✗ Informe .${ext}: GitHub respondió ${res.status}`, "err"); return; }
+  }
+  ui(`✓ Informe: ${cfg.informes}/${name}.md`, "ok");
 }
 
 function retryButton(failed) {

@@ -118,7 +118,7 @@ ha procesado estos PDF"*. Es lo que él mira antes de vaciar el cuaderno.
 - No volcar todo `supersheets/original/` en el repo: extraer solo `read new` +
   `ssp move` adaptados; lo demás se queda fuera.
 
-## Tareas para la próxima sesión (en orden)
+## Tareas (en orden) — hechas 1, 3, 4 (23/09); pendientes 2, 5, 6
 Fundamento compartido primero, luego cada pieza.
 
 1. **Contrato** — Fijar el **saneado de nombres** en un solo sitio (documentado)
