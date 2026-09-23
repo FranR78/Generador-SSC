@@ -118,7 +118,7 @@ ha procesado estos PDF"*. Es lo que él mira antes de vaciar el cuaderno.
 - No volcar todo `supersheets/original/` en el repo: extraer solo `read new` +
   `ssp move` adaptados; lo demás se queda fuera.
 
-## Tareas (en orden) — hechas 1, 3, 4 (23/09); pendientes 2, 5, 6
+## Tareas (en orden) — hechas 1-5 (23/09); pendiente 6
 Fundamento compartido primero, luego cada pieza.
 
 1. **Contrato** — Fijar el **saneado de nombres** en un solo sitio (documentado)
@@ -138,6 +138,13 @@ Fundamento compartido primero, luego cada pieza.
    nombre, no por keyword). Hoja con archivo·ID·subido·confirmada·movido y botón.
    No volcar el resto de `original/`.
 6. **Prueba** — Un lote pequeño de punta a punta antes de soltarlo entero.
+
+## Resuelto en código (23/09)
+- Pendientes = Drive `CLIMA` (`1dLPXEWc9wkdBwEVfCVWSBL2GxBvs11gm`); la antigua
+  `input` está vacía. Procesados = `CLIMA/Procesados` (`1lxvL8Li5j2uF9QHpULeTvhoIrTEmpXFB`),
+  por defecto en la extensión. Hay un `CLIMA/Sistema/Procesados` del archivador PRO.
+- Informe: `.md` + `.json` gemelo. SuperSheets: hoja nueva `NT-GH`
+  (`supersheets/NT-GH.gs`), no toca `Drive2`. Duplicados: se marcan, no se mueven.
 
 ## Preguntas a resolver ya en código (no bloquean el plan)
 - ¿El título del cuaderno se lee del DOM de NotebookLM? (selector).

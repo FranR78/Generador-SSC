@@ -30,7 +30,8 @@ GitHub (`FranR78/Generador-SSC`) es la única fuente de verdad. PC y móvil, esp
 ## 2. Arquitectura (dónde corre cada cosa)
 - **GitHub** = armario del código. No ejecuta, no tiene PDF.
 - **Colab** (`colab/`) = ejecuta: monta Drive, lee los PDF, crea el índice.
-- **Drive** = los PDF (carpeta `1cuQ8dpDkQg7lSFOBeP6Lf30gRP-7jHvv`) y el índice.
+- **Drive** = los PDF (pendientes: `CLIMA` `1dLPXEWc9wkdBwEVfCVWSBL2GxBvs11gm`;
+  procesados: `CLIMA/Procesados` `1lxvL8Li5j2uF9QHpULeTvhoIrTEmpXFB`) y el índice.
 - **`portal/`** = Apps Script, frontend del alumnado (login Google, Gemini, Sites).
 - **`rag/`** = pipeline Python: `ingest` → `embed` → `query`.
 - Los PDF NUNCA se suben a git (los excluye `.gitignore`).
