@@ -63,9 +63,12 @@ fuentes de cosas distintas bajo «gas» deja de ser posible).
 
 ## Arranque desde cero (reversible)
 
-1. Etiqueta `notas-v1` en git (todo lo actual queda recuperable).
-2. Vaciar `notas/`, `entrada/`, `entrada/procesados/`, `claves.yml`, `informes/`.
-3. Nuevo prompt `prompts/notebooklm-v2.md` + importador/construir adaptados.
+1. ✅ Archivo: rama `claude/archivo-notas-v1` (= main antes de borrar; los tags no
+   se pueden subir desde la nube).
+2. ✅ Vaciados `notas/`, `entrada/procesados/`, `claves.yml` (en la rama; a `main`
+   cuando el importador v2 esté listo, para no disparar el workflow viejo).
+   Pruebas: la extensión sube a `notas-tecnicas/pruebas-v2/` (no dispara nada).
+3. ✅ Prompt `prompts/notebooklm-v2.md`; pendiente: + importador/construir adaptados.
 4. Prueba con **un** cuaderno de 3 PDF (gas, un componente, un procedimiento).
 5. Visto bueno → lote entero. Los PDF de Drive no se han movido: no hay que
    deshacer nada allí.
