@@ -62,16 +62,42 @@ SuperSheets (hoja + GAS, con acceso a Drive)
 Drive: carpeta "Procesados" = barra de progreso
 ```
 
-## Decisiones abiertas (a cerrar al empezar)
-- **D1 — ¿Dónde corre el movedor?**
-  - (a) **En el puente `datos/`** (ya tiene Drive + token GitHub + disparadores):
-    100% automático, sin abrir la hoja. *Recomendada para "todo automático".*
-  - (b) **En SuperSheets**: visual y a mano desde el menú; reusa su código tal cual.
-  - (c) Las dos: el puente lo hace solo y SuperSheets queda como vista/control.
-- **D2 — ¿La extensión deja informe?** No hace falta para mover (basta el repo).
-  Solo si más adelante queremos más datos (fecha, cuaderno de origen).
-- **D3 — Vaciar el cuaderno** (borrar fuentes en NotebookLM): sigue **aparte** y
-  frágil (DOM, sin API). No entra en este plan. Mover el PDF ≠ vaciar cuaderno.
+## Decisiones cerradas (23/09)
+- **D1 = C.** El movedor corre en **los dos sitios**, con la **misma lógica**:
+  - **Puente `datos/`**: automático, en disparador. Es el que mueve de verdad.
+  - **SuperSheets**: vista y control a mano (hoja + botón de menú). Reusa
+    `read new` (nombre→ID) y `ssp move` (mover), adaptado a casar por nombre.
+- **D2.** El **vaciado del cuaderno lo hace él a mano**, tras comprobar la
+  exportación con el informe (abajo). El sistema **no** borra fuentes de
+  NotebookLM (frágil, sin API). Mover el PDF ≠ vaciar cuaderno.
+
+## Informe por cuaderno (nuevo — para no comprobar uno a uno)
+Al terminar un lote, la **extensión** deja un informe legible: *"el cuaderno ***
+ha procesado estos PDF"*. Es lo que él mira antes de vaciar el cuaderno.
+
+- **Quién lo hace:** la extensión, al acabar el `run` (ya tiene token y hace PUT).
+- **Qué lleva:** nombre del cuaderno, fecha/hora, **subidas OK** (con su `.md`),
+  **fallidas** con el motivo, y totales.
+- **Dónde:** `PUT notas-tecnicas/informes/<fecha>_<cuaderno>.md` (uno por lote).
+  Se lee desde el móvil en GitHub; más adelante se puede listar en el Panel del
+  portal.
+- **Dos niveles de verdad** (que el informe distinga, para que el borrado sea
+  seguro):
+  - **Subido** = la extensión hizo PUT OK. Inmediato.
+  - **Nota confirmada** = existe `entrada/procesados/<name>.md` (el pipeline la
+    importó). Llega minutos después. **Este** es el que da luz verde a vaciar.
+- **Requiere tocar la extensión:** leer el **título del cuaderno** del DOM,
+  acumular el resultado del lote y subir el informe. *A verificar en código: que
+  el título del cuaderno sea legible en la página.*
+
+## Quién hace qué (con D1=C)
+- **Extensión:** procesa fuentes → sube `.md` a `entrada/` → **emite el informe**.
+- **Pipeline (ya existe):** importa → genera nota → archiva `entrada/procesados/`.
+- **Puente `datos/` (nuevo, automático):** lee `entrada/procesados/` → mueve en
+  Drive los PDF confirmados de `Pendientes` a `Procesados` → avisa de los que no
+  casan.
+- **SuperSheets (nuevo, manual/visual):** misma lógica en una hoja —
+  archivo · ID · subido · nota confirmada · movido— con botón para mover.
 
 ## Guardas (no negociables)
 - **Mover, nunca borrar** el PDF. Reversible.
@@ -81,11 +107,29 @@ Drive: carpeta "Procesados" = barra de progreso
 - No volcar todo `supersheets/original/` en el repo: extraer solo `read new` +
   `ssp move` adaptados; lo demás se queda fuera.
 
-## Tareas para la próxima sesión
-- [ ] Cerrar D1 (dónde corre el movedor).
-- [ ] Fijar el **saneado compartido** en un sitio y replicarlo en ambos lados.
-- [ ] Confirmar la carpeta `Pendientes` y crear `Procesados` en Drive (IDs).
-- [ ] Escribir el movedor: leer `entrada/procesados/*.md` de GitHub → casar por
-      nombre saneado → `moveTo(Procesados)` → reportar no casados.
-- [ ] Verificar la config `dir` de la extensión (que apunte a `entrada/`).
-- [ ] Probar con un lote pequeño antes de soltarlo entero.
+## Tareas para la próxima sesión (en orden)
+Fundamento compartido primero, luego cada pieza.
+
+1. **Contrato** — Fijar el **saneado de nombres** en un solo sitio (documentado)
+   y replicarlo idéntico en extensión (JS), puente y SuperSheets (GAS). Definir
+   que "nota confirmada" = existe `entrada/procesados/<name>.md`.
+2. **Drive** — Confirmar el ID de `Pendientes` y crear `Procesados` (que él dé
+   los IDs). Verificar la config `dir` de la extensión (que apunte a `entrada/`).
+3. **Informe (extensión)** — Leer el título del cuaderno del DOM; acumular el
+   lote; al acabar, `PUT informes/<fecha>_<cuaderno>.md` con subidas/fallidas.
+   Verificar antes que el título se puede leer.
+4. **Movedor (puente `datos/`)** — Nueva función en disparador: lee
+   `entrada/procesados/*.md` de GitHub → casa por nombre saneado con los PDF de
+   `Pendientes` → `moveTo(Procesados)` → registra no-casados. Guarda: mover
+   nunca borrar; solo si la nota está confirmada.
+5. **SuperSheets** — Extraer y adaptar `read new` + `ssp move` (matching por
+   nombre, no por keyword). Hoja con archivo·ID·subido·confirmada·movido y botón.
+   No volcar el resto de `original/`.
+6. **Prueba** — Un lote pequeño de punta a punta antes de soltarlo entero.
+
+## Preguntas a resolver ya en código (no bloquean el plan)
+- ¿El título del cuaderno se lee del DOM de NotebookLM? (selector).
+- IDs de las carpetas `Pendientes` / `Procesados`.
+- Informe: ¿solo `.md`, o también `.json` gemelo para que lo lea el movedor?
+- SuperSheets: ¿hoja nueva o reutiliza `Drive2`?
+- Nombres únicos en el corpus (dos PDF igual de nombre colisionan): ¿cómo avisar?
