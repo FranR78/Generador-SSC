@@ -140,9 +140,8 @@ Fundamento compartido primero, luego cada pieza.
 6. **Prueba** — Un lote pequeño de punta a punta antes de soltarlo entero.
 
 ## Resuelto en código (23/09)
-- Pendientes = Drive `CLIMA` (`1dLPXEWc9wkdBwEVfCVWSBL2GxBvs11gm`); la antigua
-  `input` está vacía. Procesados = `CLIMA/Procesados` (`1lxvL8Li5j2uF9QHpULeTvhoIrTEmpXFB`),
-  por defecto en la extensión. Hay un `CLIMA/Sistema/Procesados` del archivador PRO.
+- IDs de Drive: **no se fijan en código**. Los pone él en las opciones de la
+  extensión en cada extracción; viajan en el informe. En la hoja, B1/B2.
 - Informe: `.md` + `.json` gemelo. SuperSheets: hoja nueva `NT-GH`
   (`supersheets/NT-GH.gs`), no toca `Drive2`. Duplicados: se marcan, no se mueven.
 

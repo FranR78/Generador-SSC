@@ -3,8 +3,8 @@ const DEFAULTS = {
   repo: "",
   dir: "notas-tecnicas/entrada",
   informes: "notas-tecnicas/informes",
-  origenId: "1dLPXEWc9wkdBwEVfCVWSBL2GxBvs11gm",   // Drive: CLIMA (pendientes)
-  destinoId: "1lxvL8Li5j2uF9QHpULeTvhoIrTEmpXFB",  // Drive: CLIMA/Procesados
+  origenId: "",    // Drive: lo pone él en Opciones; cambia en cada extracción
+  destinoId: "",
   token: "",
   prompt: "Procesa la fuente seleccionada.",
   sel: {
