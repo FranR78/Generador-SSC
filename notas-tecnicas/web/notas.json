@@ -2194,6 +2194,70 @@
    "hecha": false
   },
   {
+   "nombre": "NT529_01",
+   "nt": 529,
+   "titulo": "Unidad de manejo e indicación",
+   "seccion": "8. Regulación y control",
+   "descripcion": "Vista frontal del display de la unidad de manejo e indicación E87 con indicación de parámetros — Fuente: Ibiza99 - Actuadores.pdf, pág. 21",
+   "hecha": false
+  },
+  {
+   "nombre": "NT530_01",
+   "nt": 530,
+   "titulo": "Motor de la trampilla de temperatura",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Despiece interno del motor V68 con potenciómetro G92, tornillo sin fin y rueda de transmisión — Fuente: Ibiza99 - Actuadores.pdf, pág. 22",
+   "hecha": false
+  },
+  {
+   "nombre": "NT531_01",
+   "nt": 531,
+   "titulo": "Motor de la turbina de aire y regulador de régimen",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Esquema del motor de la turbina V2 y regulador de régimen J126 — Fuente: Ibiza99 - Actuadores.pdf, pág. 22",
+   "hecha": false
+  },
+  {
+   "nombre": "NT532_01",
+   "nt": 532,
+   "titulo": "Motor de la trampilla de recirculación",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Disposición del motor V113, palanca de giro, guía, cursor y trampilla de recirculación — Fuente: Ibiza99 - Actuadores.pdf, pág. 22-23",
+   "hecha": false
+  },
+  {
+   "nombre": "NT533_01",
+   "nt": 533,
+   "titulo": "Motor para la turbina del transmisor de temperatura interior",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Vista explosionada del motor V42 con placa electrónica, estator y rotor con turbina imantada — Fuente: Ibiza99 - Actuadores.pdf, pág. 24",
+   "hecha": false
+  },
+  {
+   "nombre": "NT534_01",
+   "nt": 534,
+   "titulo": "Señal de salida para conexión del aire acondicionado",
+   "seccion": "8. Regulación y control",
+   "descripcion": "Esquema de envío de la señal de positivo desde la unidad del autoclima hacia la unidad del aire acondicionado y la unidad del motor — Fuente: Ibiza99 - Actuadores.pdf, pág. 24",
+   "hecha": false
+  },
+  {
+   "nombre": "NT535_01",
+   "nt": 535,
+   "titulo": "Acoplamiento magnético",
+   "seccion": "4. El compresor",
+   "descripcion": "Despiece del acoplamiento magnético N25 con bobina electromagnética, embrague, polea de arrastre y compresor — Fuente: Ibiza99 - Actuadores.pdf, pág. 25",
+   "hecha": false
+  },
+  {
+   "nombre": "NT536_01",
+   "nt": 536,
+   "titulo": "Ventiladores de líquido refrigerante",
+   "seccion": "5. Lado de alta",
+   "descripcion": "Montaje de los ventiladores V7 y V35 con motores independientes y resistencia de material resistivo en el canalizador — Fuente: Ibiza99 - Actuadores.pdf, pág. 25",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -2218,7 +2282,7 @@
    "hecha": false
   }
  ],
- "total": 520,
+ "total": 528,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -8384,6 +8448,78 @@
    ]
   },
   {
+   "id": "ssc.embrague-compresor.ibiza99-actuadores",
+   "nt": 535,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "embrague-compresor",
+   "seccion": "4. El compresor",
+   "subgrupo": "",
+   "titulo": "Acoplamiento magnético",
+   "codigo": "N25",
+   "menu": "Acoplamiento magnético N25",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Ibiza99 - Actuadores.pdf, págs. 24-25",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "compresor",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "compresor"
+   ],
+   "palabras": [
+    "embrague electromagnético",
+    "bobina",
+    "polea de arrastre",
+    "presión frigorífica"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Está montado en el compresor y se encarga de acoplarlo para que gire solidario con el motor térmico, generando la presión indispensable en el circuito frigorífico. (pág. 24)",
+     "html": "<p>Está montado en el compresor y se encarga de acoplarlo para que gire solidario con el motor térmico, generando la presión indispensable en el circuito frigorífico. <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "El conjunto está fijado al compresor y lo integran la bobina electromagnética, el embrague y la polea de arrastre. (pág. 24-25)",
+     "html": "<p>El conjunto está fijado al compresor y lo integran la bobina electromagnética, el embrague y la polea de arrastre. <span class=\"pag\">pág. 24-25</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Es excitado con positivo por la unidad de control del aire acondicionado, manteniéndose acoplado durante todo el tiempo que reciba dicha excitación. (pág. 25)",
+     "html": "<p>Es excitado con positivo por la unidad de control del aire acondicionado, manteniéndose acoplado durante todo el tiempo que reciba dicha excitación. <span class=\"pag\">pág. 25</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Señal de excitación: Positivo continuo enviado por la unidad de control. (pág. 25)",
+     "html": "<p>Señal de excitación: Positivo continuo enviado por la unidad de control. <span class=\"pag\">pág. 25</span></p>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Falta de enfriamiento del aire que entra al habitáculo. (pág. 25)",
+     "html": "<p>Falta de enfriamiento del aire que entra al habitáculo. <span class=\"pag\">pág. 25</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "No existe función sustitutiva. La avería es claramente perceptible dado que el aire impulsado al habitáculo no se enfría. (pág. 25)",
+     "html": "<p>No existe función sustitutiva. La avería es claramente perceptible dado que el aire impulsado al habitáculo no se enfría. <span class=\"pag\">pág. 25</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Despiece del acoplamiento magnético N25 con bobina electromagnética, embrague, polea de arrastre y compresor — Fuente: Ibiza99 - Actuadores.pdf, pág. 25",
+     "html": "<ul>\n<li>Despiece del acoplamiento magnético N25 con bobina electromagnética, embrague, polea de arrastre y compresor — Fuente: Ibiza99 - Actuadores.pdf, pág. 25</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.valvula-sobrepresion.11-dispositivos-de-regulacion-y-segurida",
    "nt": 64,
    "modulo": "ssc",
@@ -9650,6 +9786,75 @@
      "titulo": "Imágenes requeridas",
      "texto": "Disposición de los ventiladores de líquido refrigerante con motores independientes y resistencia eléctrica en el canalizador — Fuente: Acomplamiento magnetico Ventiladores.pdf, pág. 1-2",
      "html": "<ul>\n<li>Disposición de los ventiladores de líquido refrigerante con motores independientes y resistencia eléctrica en el canalizador — Fuente: Acomplamiento magnetico Ventiladores.pdf, pág. 1-2</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.electroventilador-condensador.ibiza99-actuadores",
+   "nt": 536,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "electroventilador-condensador",
+   "seccion": "5. Lado de alta",
+   "subgrupo": "",
+   "titulo": "Ventiladores de líquido refrigerante",
+   "codigo": "V7, V35",
+   "menu": "Ventiladores de líquido refrig V7, V35",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Ibiza99 - Actuadores.pdf, págs. 24-25",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "conmutador-termico-f18",
+    "unidad-control-climatizador",
+    "condensador",
+    "liquido-refrigerante-motor"
+   ],
+   "palabras": [
+    "electroventiladores",
+    "dos velocidades",
+    "resistencia eléctrica",
+    "conmutador térmico F18"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Generan el flujo de aire necesario para atravesar el condensador y rebajar la temperatura del agente frigorífico. Por su ubicación, ese mismo flujo de aire atraviesa el radiador del motor, reduciendo la temperatura del líquido refrigerante. (pág. 24-25)",
+     "html": "<p>Generan el flujo de aire necesario para atravesar el condensador y rebajar la temperatura del agente frigorífico. Por su ubicación, ese mismo flujo de aire atraviesa el radiador del motor, reduciendo la temperatura del líquido refrigerante. <span class=\"pag\">pág. 24-25</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Dispone de dos ventiladores accionados por motores independientes. Cada ventilador cuenta con dos velocidades de trabajo. La primera velocidad se obtiene mediante una resistencia eléctrica (material resistivo) alojada en el canalizador de aire de los propios ventiladores. (pág. 25)",
+     "html": "<p>Dispone de dos ventiladores accionados por motores independientes. Cada ventilador cuenta con dos velocidades de trabajo. La primera velocidad se obtiene mediante una resistencia eléctrica (material resistivo) alojada en el canalizador de aire de los propios ventiladores. <span class=\"pag\">pág. 25</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Son excitados a 12 V por la unidad de control del aire acondicionado y a través del conmutador térmico del ventilador F18. El circuito de la primera velocidad puede ser alimentado indistintamente por el conmutador térmico F18 o por la unidad de control del aire acondicionado. En cambio, el circuito de la segunda velocidad es alimentado siempre de forma exclusiva por la unidad de control del aire acondicionado. (pág. 25)",
+     "html": "<p>Son excitados a 12 V por la unidad de control del aire acondicionado y a través del conmutador térmico del ventilador F18. El circuito de la primera velocidad puede ser alimentado indistintamente por el conmutador térmico F18 o por la unidad de control del aire acondicionado. En cambio, el circuito de la segunda velocidad es alimentado siempre de forma exclusiva por la unidad de control del aire acondicionado. <span class=\"pag\">pág. 25</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tensión de excitación: 12 V. (pág. 25)",
+     "html": "<p>Tensión de excitación: 12 V. <span class=\"pag\">pág. 25</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "No existe función sustitutiva. (pág. 25)",
+     "html": "<p>No existe función sustitutiva. <span class=\"pag\">pág. 25</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Montaje de los ventiladores V7 y V35 con motores independientes y resistencia de material resistivo en el canalizador — Fuente: Ibiza99 - Actuadores.pdf, pág. 25",
+     "html": "<ul>\n<li>Montaje de los ventiladores V7 y V35 con motores independientes y resistencia de material resistivo en el canalizador — Fuente: Ibiza99 - Actuadores.pdf, pág. 25</li>\n</ul>"
     }
    ]
   },
@@ -16033,6 +16238,73 @@
    ]
   },
   {
+   "id": "ssc.sensor-temperatura-interior.ibiza99-actuadores",
+   "nt": 533,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-temperatura-ntc-interior",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Motor para la turbina del transmisor de temperatura interior",
+   "codigo": "V42",
+   "menu": "Motor para la turbina del tran V42",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Ibiza99 - Actuadores.pdf, págs. 23-24",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "transmisor-temperatura-interior-g56",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "turbina",
+    "transmisor G56",
+    "placa electrónica",
+    "señal de 15"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Genera una corriente constante de aire que aspira y fuerza el paso del aire sobre el transmisor de temperatura interior G56, permitiendo medir con precisión la temperatura del habitáculo. Forma un único conjunto con el transmisor G56. (pág. 23)",
+     "html": "<p>Genera una corriente constante de aire que aspira y fuerza el paso del aire sobre el transmisor de temperatura interior G56, permitiendo medir con precisión la temperatura del habitáculo. Forma un único conjunto con el transmisor G56. <span class=\"pag\">pág. 23</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Aloja en su interior una placa electrónica encargada del control de funcionamiento y del autodiagnóstico de averías. Su rotor consta de una turbina con eje imantado. (pág. 23-24)",
+     "html": "<p>Aloja en su interior una placa electrónica encargada del control de funcionamiento y del autodiagnóstico de averías. Su rotor consta de una turbina con eje imantado. <span class=\"pag\">pág. 23-24</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Es excitado con positivo y negativo desde la unidad de control del autoclima mientras dicha unidad reciba la señal de contacto (borne \"15\"). (pág. 24)",
+     "html": "<p>Es excitado con positivo y negativo desde la unidad de control del autoclima mientras dicha unidad reciba la señal de contacto (borne \"15\"). <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Señal de excitación: Positivo y negativo condicionados a la presencia de señal de borne \"15\". (pág. 24)",
+     "html": "<p>Señal de excitación: Positivo y negativo condicionados a la presencia de señal de borne \"15\". <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si la unidad del autoclima detecta un fallo en este motor, aplica factores de corrección sobre la señal registrada por el transmisor G56 para estimar un valor aproximado a la temperatura real. (pág. 24)",
+     "html": "<p>Si la unidad del autoclima detecta un fallo en este motor, aplica factores de corrección sobre la señal registrada por el transmisor G56 para estimar un valor aproximado a la temperatura real. <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Vista explosionada del motor V42 con placa electrónica, estator y rotor con turbina imantada — Fuente: Ibiza99 - Actuadores.pdf, pág. 24",
+     "html": "<ul>\n<li>Vista explosionada del motor V42 con placa electrónica, estator y rotor con turbina imantada — Fuente: Ibiza99 - Actuadores.pdf, pág. 24</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.sensor-evaporador.11-dispositivos-de-regulacion-y-segurida",
    "nt": 65,
    "modulo": "ssc",
@@ -19099,6 +19371,134 @@
    ]
   },
   {
+   "id": "ssc.servomotor-trampilla.temperatura.ibiza99-actuadores",
+   "nt": 530,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "servomotor-trampilla",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Motor de la trampilla de temperatura",
+   "codigo": "V68",
+   "menu": "Motor de la trampilla de tempe V68",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Ibiza99 - Actuadores.pdf, págs. 21-22",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "temperatura",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "potenciometro-g92",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "trampilla de temperatura",
+    "corriente continua",
+    "giro limitado",
+    "potenciómetro G92"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Actúa directamente sobre la trampilla de temperatura. Se encuentra alojado en la parte inferior de la unidad climática. (pág. 21)",
+     "html": "<p>Actúa directamente sobre la trampilla de temperatura. Se encuentra alojado en la parte inferior de la unidad climática. <span class=\"pag\">pág. 21</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Es un motor eléctrico de corriente continua de giro limitado. Integra en su interior el potenciómetro G92 para informar de su posición. (pág. 21-22)",
+     "html": "<p>Es un motor eléctrico de corriente continua de giro limitado. Integra en su interior el potenciómetro G92 para informar de su posición. <span class=\"pag\">pág. 21-22</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Es excitado con positivo y negativo desde la unidad de control de los equipos de selección eléctrica. La polaridad en bornes se conmuta en función del sentido de giro requerido. (pág. 22)",
+     "html": "<p>Es excitado con positivo y negativo desde la unidad de control de los equipos de selección eléctrica. La polaridad en bornes se conmuta en función del sentido de giro requerido. <span class=\"pag\">pág. 22</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Ante una avería, la trampilla permanece inmóvil en la posición en que se encontraba y la unidad de control reduce la velocidad de la turbina para disminuir la entrada de aire. (pág. 22)",
+     "html": "<p>Ante una avería, la trampilla permanece inmóvil en la posición en que se encontraba y la unidad de control reduce la velocidad de la turbina para disminuir la entrada de aire. <span class=\"pag\">pág. 22</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Despiece interno del motor V68 con potenciómetro G92, tornillo sin fin y rueda de transmisión — Fuente: Ibiza99 - Actuadores.pdf, pág. 22",
+     "html": "<ul>\n<li>Despiece interno del motor V68 con potenciómetro G92, tornillo sin fin y rueda de transmisión — Fuente: Ibiza99 - Actuadores.pdf, pág. 22</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.servomotor-trampilla.recirculacion.ibiza99-actuadores",
+   "nt": 532,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "servomotor-trampilla",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Motor de la trampilla de recirculación",
+   "codigo": "V113",
+   "menu": "Motor de la trampilla de recir V113",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Ibiza99 - Actuadores.pdf, págs. 22-23",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "recirculacion",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "trampilla de recirculación",
+    "giro libre",
+    "pistas internas",
+    "parpadeo display"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Acciona la trampilla de recirculación de aire. Está posicionado en la parte superior de la unidad climática. (pág. 22)",
+     "html": "<p>Acciona la trampilla de recirculación de aire. Está posicionado en la parte superior de la unidad climática. <span class=\"pag\">pág. 22</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Es un motor de corriente continua de giro libre con un único sentido de giro. Equipa en su interior tres pistas conductoras que regulan el tiempo de activación y la parada exacta de la trampilla. (pág. 22)",
+     "html": "<p>Es un motor de corriente continua de giro libre con un único sentido de giro. Equipa en su interior tres pistas conductoras que regulan el tiempo de activación y la parada exacta de la trampilla. <span class=\"pag\">pág. 22</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Se excita a 12 V desde la unidad de control del autoclima o de la calefacción motorizada. Dispone de tres terminales: uno alimentado con negativo continuo y los otros dos de forma alternativa según la maniobra. Al alimentar dos terminales, el motor gira recibiendo positivo desde una pista interna hasta alcanzar el final de la misma, momento en que el cursor queda sobre la pista no excitada hasta recibir un nuevo comando. (pág. 23)",
+     "html": "<p>Se excita a 12 V desde la unidad de control del autoclima o de la calefacción motorizada. Dispone de tres terminales: uno alimentado con negativo continuo y los otros dos de forma alternativa según la maniobra. Al alimentar dos terminales, el motor gira recibiendo positivo desde una pista interna hasta alcanzar el final de la misma, momento en que el cursor queda sobre la pista no excitada hasta recibir un nuevo comando. <span class=\"pag\">pág. 23</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tensión de alimentación: 12 V. (pág. 23)",
+     "html": "<p>Tensión de alimentación: 12 V. <span class=\"pag\">pág. 23</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "No dispone de función sustitutiva. Al producirse un fallo, parpadean todos los dígitos del display cada vez que se conecta el autoclima. (pág. 23)",
+     "html": "<p>No dispone de función sustitutiva. Al producirse un fallo, parpadean todos los dígitos del display cada vez que se conecta el autoclima. <span class=\"pag\">pág. 23</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Disposición del motor V113, palanca de giro, guía, cursor y trampilla de recirculación — Fuente: Ibiza99 - Actuadores.pdf, pág. 22-23",
+     "html": "<ul>\n<li>Disposición del motor V113, palanca de giro, guía, cursor y trampilla de recirculación — Fuente: Ibiza99 - Actuadores.pdf, pág. 22-23</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.ventilador-habitaculo.cd-072-climatizacion-en-el-ibiza-cordoba",
    "nt": 200,
    "modulo": "ssc",
@@ -19310,6 +19710,67 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema eléctrico de control de ventilador con resistencias en serie y relé de velocidad máxima — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 8 Esquema eléctrico de control de ventilador mediante módulo electrónico de transistores — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 9",
      "html": "<ul>\n<li>Esquema eléctrico de control de ventilador con resistencias en serie y relé de velocidad máxima — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 8</li>\n<li>Esquema eléctrico de control de ventilador mediante módulo electrónico de transistores — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 9</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.ventilador-habitaculo.ibiza99-actuadores",
+   "nt": 531,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ventilador-habitaculo",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Motor de la turbina de aire y regulador de régimen",
+   "codigo": "V2, J126",
+   "menu": "Motor de la turbina de aire y  V2, J126",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Ibiza99 - Actuadores.pdf, págs. 22",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "turbina de aire",
+    "regulador de régimen",
+    "caudal de aire",
+    "Climatronic"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Generan el caudal de aire necesario en el habitáculo para dar respuesta a cada situación de funcionamiento. (pág. 22)",
+     "html": "<p>Generan el caudal de aire necesario en el habitáculo para dar respuesta a cada situación de funcionamiento. <span class=\"pag\">pág. 22</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Su diseño y principio operativo son idénticos a los montados en el sistema Climatronic. (pág. 22)",
+     "html": "<p>Su diseño y principio operativo son idénticos a los montados en el sistema Climatronic. <span class=\"pag\">pág. 22</span></p>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Pérdida acusada o interrupción del caudal de aire introducido al habitáculo. (pág. 22)",
+     "html": "<p>Pérdida acusada o interrupción del caudal de aire introducido al habitáculo. <span class=\"pag\">pág. 22</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "No existe función sustitutiva. La avería se detecta de forma inmediata al reducirse notablemente el caudal de aire. (pág. 22)",
+     "html": "<p>No existe función sustitutiva. La avería se detecta de forma inmediata al reducirse notablemente el caudal de aire. <span class=\"pag\">pág. 22</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del motor de la turbina V2 y regulador de régimen J126 — Fuente: Ibiza99 - Actuadores.pdf, pág. 22",
+     "html": "<ul>\n<li>Esquema del motor de la turbina V2 y regulador de régimen J126 — Fuente: Ibiza99 - Actuadores.pdf, pág. 22</li>\n</ul>"
     }
    ]
   },
@@ -20114,6 +20575,77 @@
      "titulo": "Mantenimiento",
      "texto": "No requiere mantenimiento preventivo. (págs. 59-61)",
      "html": "<p>No requiere mantenimiento preventivo. <span class=\"pag\">págs. 59-61</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.unidad-control-climatizador.display.ibiza99-actuadores",
+   "nt": 529,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "unidad-control-climatizador",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Unidad de manejo e indicación",
+   "codigo": "E87",
+   "menu": "Unidad de manejo e indicación E87",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Ibiza99 - Actuadores.pdf, págs. 21-22",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "display",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-radiocasete"
+   ],
+   "palabras": [
+    "display",
+    "autoclima",
+    "calefacción motorizada",
+    "bus de datos"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Se ubica en la consola central e informa sobre los parámetros de funcionamiento del autoclima o la calefacción motorizada, el radiocasete y el ordenador de a bordo. (pág. 21)",
+     "html": "<p>Se ubica en la consola central e informa sobre los parámetros de funcionamiento del autoclima o la calefacción motorizada, el radiocasete y el ordenador de a bordo. <span class=\"pag\">pág. 21</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Existen dos tipos de display, según se trate de un montaje con autoclima o con calefacción motorizada. Destaca por sus grandes dimensiones, lo que facilita la lectura de una gran cantidad de datos. (pág. 21)",
+     "html": "<p>Existen dos tipos de display, según se trate de un montaje con autoclima o con calefacción motorizada. Destaca por sus grandes dimensiones, lo que facilita la lectura de una gran cantidad de datos. <span class=\"pag\">pág. 21</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Los dígitos del display relativos al autoclima o la calefacción motorizada son excitados según la información recibida a través de un bus de datos de 18 cables procedente de la unidad de control del radiocasete. A su vez, el radiocasete recibe previamente esta información de la unidad de control del autoclima o calefacción motorizada mediante otro bus de datos de 1 cable. La unidad de control del radiocasete suministra también la alimentación eléctrica al display. (pág. 21-22)",
+     "html": "<p>Los dígitos del display relativos al autoclima o la calefacción motorizada son excitados según la información recibida a través de un bus de datos de 18 cables procedente de la unidad de control del radiocasete. A su vez, el radiocasete recibe previamente esta información de la unidad de control del autoclima o calefacción motorizada mediante otro bus de datos de 1 cable. La unidad de control del radiocasete suministra también la alimentación eléctrica al display. <span class=\"pag\">pág. 21-22</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Bus de datos de 18 cables entre radiocasete y display; bus de datos de 1 cable entre unidad de autoclima/calefacción motorizada y radiocasete. (pág. 21-22)",
+     "html": "<p>Bus de datos de 18 cables entre radiocasete y display; bus de datos de 1 cable entre unidad de autoclima/calefacción motorizada y radiocasete. <span class=\"pag\">pág. 21-22</span></p>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Avería en la comunicación por el bus de datos entre la unidad del radiocasete y la unidad del autoclima o calefacción motorizada. (pág. 22)",
+     "html": "<p>Avería en la comunicación por el bus de datos entre la unidad del radiocasete y la unidad del autoclima o calefacción motorizada. <span class=\"pag\">pág. 22</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si falla la comunicación del bus de datos entre el radiocasete y la unidad del autoclima o la calefacción motorizada, los datos referentes a estos sistemas dejan de ser visibles. En caso de fallo del propio display, es necesario sustituir la unidad de manejo e indicación E87 completa. (pág. 22)",
+     "html": "<p>Si falla la comunicación del bus de datos entre el radiocasete y la unidad del autoclima o la calefacción motorizada, los datos referentes a estos sistemas dejan de ser visibles. En caso de fallo del propio display, es necesario sustituir la unidad de manejo e indicación E87 completa. <span class=\"pag\">pág. 22</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Vista frontal del display de la unidad de manejo e indicación E87 con indicación de parámetros — Fuente: Ibiza99 - Actuadores.pdf, pág. 21",
+     "html": "<ul>\n<li>Vista frontal del display de la unidad de manejo e indicación E87 con indicación de parámetros — Fuente: Ibiza99 - Actuadores.pdf, pág. 21</li>\n</ul>"
     }
    ]
   },
@@ -21782,6 +22314,69 @@
      "titulo": "Errores de concepto frecuentes",
      "texto": "Pensar que la temperatura trasera se calcula de forma estimada sin sensor de verificación. El sistema utiliza el sensor G174 montado en la consola central trasera para medir en tiempo real el aire soplado. (pág. 65)",
      "html": "<p>Pensar que la temperatura trasera se calcula de forma estimada sin sensor de verificación. El sistema utiliza el sensor G174 montado en la consola central trasera para medir en tiempo real el aire soplado. <span class=\"pag\">pág. 65</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.regulacion-automatica.ibiza99-actuadores",
+   "nt": 534,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-automatica",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Señal de salida para conexión del aire acondicionado",
+   "codigo": "",
+   "menu": "Señal de salida para conexión del aire",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Ibiza99 - Actuadores.pdf, págs. 24",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "compresor",
+    "embrague-compresor",
+    "unidad-control-motor"
+   ],
+   "palabras": [
+    "señal de positivo",
+    "excitación compresor",
+    "régimen de ralentí"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Habilitar la activación del compresor de aire acondicionado y coordinar la gestión de carga con la unidad de control del motor térmico. (pág. 24)",
+     "html": "<p>Habilitar la activación del compresor de aire acondicionado y coordinar la gestión de carga con la unidad de control del motor térmico. <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "La demanda de frío requiere el acoplamiento del compresor y el incremento simultáneo del par del motor para evitar oscilaciones o calados al ralentí. (pág. 24)",
+     "html": "<p>La demanda de frío requiere el acoplamiento del compresor y el incremento simultáneo del par del motor para evitar oscilaciones o calados al ralentí. <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "La unidad del autoclima envía una señal de positivo tanto a la unidad del aire acondicionado como a la unidad de control del motor. Mediante esta señal, la unidad del aire acondicionado conecta el compresor activando el acoplamiento magnético N25, mientras que la unidad del motor incrementa el régimen de ralentí. No existe función sustitutiva. (pág. 24)",
+     "html": "<p>La unidad del autoclima envía una señal de positivo tanto a la unidad del aire acondicionado como a la unidad de control del motor. Mediante esta señal, la unidad del aire acondicionado conecta el compresor activando el acoplamiento magnético N25, mientras que la unidad del motor incrementa el régimen de ralentí. No existe función sustitutiva. <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Tensión de señal: Positivo (12 V). (pág. 24)",
+     "html": "<p>Tensión de señal: Positivo (12 V). <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema de envío de la señal de positivo desde la unidad del autoclima hacia la unidad del aire acondicionado y la unidad del motor — Fuente: Ibiza99 - Actuadores.pdf, pág. 24",
+     "html": "<ul>\n<li>Esquema de envío de la señal de positivo desde la unidad del autoclima hacia la unidad del aire acondicionado y la unidad del motor — Fuente: Ibiza99 - Actuadores.pdf, pág. 24</li>\n</ul>"
     }
    ]
   },
