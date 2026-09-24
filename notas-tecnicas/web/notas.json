@@ -3066,6 +3066,14 @@
    "hecha": false
   },
   {
+   "nombre": "NT649_01",
+   "nt": 649,
+   "titulo": "Conmutador de presión para el aire acondicionado",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Ubicación del conmutador de presión F129 junto a la válvula de expansión — Fuente: Conmutador de presión.pdf, pág. 16",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -3090,7 +3098,7 @@
    "hecha": false
   }
  ],
- "total": 640,
+ "total": 641,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -17021,6 +17029,76 @@
      "titulo": "Mantenimiento",
      "texto": "Realizar un mantenimiento periódico del sistema para prevenir averías por suciedad o fallos en los contactos de las conexiones. (pág. 1)",
      "html": "<p>Realizar un mantenimiento periódico del sistema para prevenir averías por suciedad o fallos en los contactos de las conexiones. <span class=\"pag\">pág. 1</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.presostato.conmutador-de-presion",
+   "nt": 649,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "presostato-binary-trinary-cuatrinary",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Conmutador de presión para el aire acondicionado",
+   "codigo": "F129",
+   "menu": "Conmutador de presión para el  F129",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Conmutador de presión.pdf, págs. 16-17",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "electroventilador-condensador",
+    "compresor"
+   ],
+   "palabras": [
+    "F129",
+    "diésel",
+    "alta presión",
+    "baja presión",
+    "presión media",
+    "velocidad ventilador"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Detectar la presión en el circuito frigorífico del autoclima en motores diésel para verificar que se mantiene dentro de los límites admisibles de funcionamiento y gestionar la activación del compresor y de las velocidades del ventilador del radiador. (págs. 16-17)",
+     "html": "<p>Detectar la presión en el circuito frigorífico del autoclima en motores diésel para verificar que se mantiene dentro de los límites admisibles de funcionamiento y gestionar la activación del compresor y de las velocidades del ventilador del radiador. <span class=\"pag\">págs. 16-17</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Se instala en el circuito frigorífico junto a la válvula de expansión en vehículos con motor diésel. Se compone internamente de dos interruptores: Interruptor de presión máxima o mínima (normalmente cerrado). Interruptor de presión media (normalmente abierto). (pág. 16)",
+     "html": "<p>Se instala en el circuito frigorífico junto a la válvula de expansión en vehículos con motor diésel. Se compone internamente de dos interruptores:</p>\n<ul>\n<li>Interruptor de presión máxima o mínima (normalmente cerrado).</li>\n<li>Interruptor de presión media (normalmente abierto). <span class=\"pag\">pág. 16</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Interruptor de presión máxima o mínima: Recibe la señal de conexión del compresor enviada por la unidad de control del autoclima. Estando cerrado, deja pasar la señal hacia la unidad de control del aire acondicionado, la cual conecta el compresor y activa la 1ª velocidad del ventilador del radiador. Si la presión sale del margen admisible, el interruptor se abre e interrumpe la corriente. Interruptor de presión media: Está conectado directamente a positivo de contacto (borne 15) y envía su señal a la unidad de control del aire acondicionado. Al cerrar por aumento de presión, la unidad activa la 2ª velocidad del ventilador del radiador. (págs. 16-17)",
+     "html": "<ul>\n<li>Interruptor de presión máxima o mínima: Recibe la señal de conexión del compresor enviada por la unidad de control del autoclima. Estando cerrado, deja pasar la señal hacia la unidad de control del aire acondicionado, la cual conecta el compresor y activa la 1ª velocidad del ventilador del radiador. Si la presión sale del margen admisible, el interruptor se abre e interrumpe la corriente.</li>\n<li>Interruptor de presión media: Está conectado directamente a positivo de contacto (borne 15) y envía su señal a la unidad de control del aire acondicionado. Al cerrar por aumento de presión, la unidad activa la 2ª velocidad del ventilador del radiador. <span class=\"pag\">págs. 16-17</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Interruptor de presión máxima o mínima (normalmente cerrado): abre al detectar una presión superior a 32 bar (presión máxima) o inferior a 2 bar (presión mínima). Interruptor de presión media (normalmente abierto): cierra al alcanzar una presión aproximada de 16 bar. (pág. 16)",
+     "html": "<ul>\n<li>Interruptor de presión máxima o mínima (normalmente cerrado): abre al detectar una presión superior a 32 bar (presión máxima) o inferior a 2 bar (presión mínima).</li>\n<li>Interruptor de presión media (normalmente abierto): cierra al alcanzar una presión aproximada de 16 bar. <span class=\"pag\">pág. 16</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "No dispone de función sustitutiva. (pág. 17)",
+     "html": "<p>No dispone de función sustitutiva. <span class=\"pag\">pág. 17</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Ubicación del conmutador de presión F129 junto a la válvula de expansión — Fuente: Conmutador de presión.pdf, pág. 16",
+     "html": "<ul>\n<li>Ubicación del conmutador de presión F129 junto a la válvula de expansión — Fuente: Conmutador de presión.pdf, pág. 16</li>\n</ul>"
     }
    ]
   },
