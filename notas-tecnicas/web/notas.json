@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-24",
- "total": 55,
+ "total": 57,
  "grupos": [
   "Circuito frigorífico",
   "Control de climatización",
@@ -138,12 +138,68 @@
  },
  "notas": [
   {
+   "id": "ssc.efecto-invernadero-cambio-climatico.1-impacto-ambiental",
+   "nt": 2,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "efecto-invernadero-y-cambio-climatico",
+   "seccion": "1. Impacto ambiental y normativa",
+   "subgrupo": "",
+   "titulo": "Efecto invernadero y cambio climático",
+   "codigo": "",
+   "menu": "Efecto invernadero y cambio climático",
+   "grupo": "Normativa y medioambiente",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "1. Impacto Ambiental.pdf, págs. 4",
+   "clase": "fundamento",
+   "variante": "",
+   "area": "general",
+   "sistema": "normativa-y-medioambiente",
+   "formaParteDe": "",
+   "relacionados": [
+    "protocolo-kioto",
+    "indicadores-ambientales-pao-pca"
+   ],
+   "palabras": [
+    "CO2",
+    "calentamiento global",
+    "gases efecto invernadero",
+    "Mauna Loa"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Análisis del fenómeno del calentamiento global antropogénico y sus repercusiones directas sobre el equilibrio climático y ambiental del planeta (pág. 4)."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "La actividad humana, principalmente la quema de combustibles fósiles, es la responsable del incremento del efecto invernadero por la acumulación desmedida de gases de efecto invernadero en la atmósfera (pág. 4)."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El registro continuo de concentración de dióxido de carbono en el observatorio de Mauna Loa (Hawái) muestra un incremento continuado, alcanzando los 415,26 ppm en mayo de 2019 (pág. 4). Efectos observados y previstos del cambio climático: - Aumento de la temperatura global del planeta, provocando el deshielo de glaciares y casquetes polares (la principal reserva de agua dulce) (pág. 4). - Elevación del nivel del mar con riesgo de inundación de zonas costeras (pág. 4). - Alteración de hábitats animales y desplazamiento de especies vectoras de enfermedades hacia zonas geográficas anteriormente frías (pág. 4). - Ruptura del equilibrio dinámico de la atmósfera: incremento de fenómenos meteorológicos adversos (sequías, inundaciones) (pág. 4). - Desestabilización de los ciclos agrícolas, amenaza a la seguridad de recursos hídricos y alteración global de la cadena alimentaria (pág. 4)."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Concentración de CO2 atmosférico: 415,26 ppm (dato de mayo de 2019) (pág. 4)."
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Asumir que el cambio climático produce únicamente un aumento de la temperatura ambiente sin alterar la frecuencia de fenómenos meteorológicos extremos ni la propagación de enfermedades (pág. 4)."
+    }
+   ]
+  },
+  {
    "id": "ssc.agotamiento-capa-ozono.1-impacto-ambiental",
    "nt": 4,
    "modulo": "ssc",
    "unidad": "clima",
    "clave": "agotamiento-capa-ozono",
    "seccion": "1. Impacto ambiental y normativa",
+   "subgrupo": "",
    "titulo": "Agotamiento y destrucción de la capa de ozono",
    "codigo": "",
    "menu": "Agotamiento y destrucción de la capa d",
@@ -203,6 +259,7 @@
    "unidad": "clima",
    "clave": "protocolo-montreal",
    "seccion": "1. Impacto ambiental y normativa",
+   "subgrupo": "",
    "titulo": "Protocolo de Montreal",
    "codigo": "",
    "menu": "Protocolo de Montreal",
@@ -258,6 +315,7 @@
    "unidad": "clima",
    "clave": "protocolo-kioto",
    "seccion": "1. Impacto ambiental y normativa",
+   "subgrupo": "",
    "titulo": "Protocolo de Kioto",
    "codigo": "",
    "menu": "Protocolo de Kioto",
@@ -307,12 +365,182 @@
    ]
   },
   {
+   "id": "ssc.reglamento-1005-2009-sao.1-impacto-ambiental",
+   "nt": 7,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "reglamento-ce-1005-2009",
+   "seccion": "1. Impacto ambiental y normativa",
+   "subgrupo": "",
+   "titulo": "Reglamento (CE) nº 1005/2009 sobre sustancias agotadoras de la capa de ozono",
+   "codigo": "",
+   "menu": "Reglamento (CE) nº 1005/2009 sobre sus",
+   "grupo": "Normativa y medioambiente",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "1. Impacto Ambiental.pdf, págs. 11",
+   "clase": "fundamento",
+   "variante": "",
+   "area": "general",
+   "sistema": "normativa-y-medioambiente",
+   "formaParteDe": "",
+   "relacionados": [
+    "protocolo-montreal",
+    "agotamiento-capa-ozono"
+   ],
+   "palabras": [
+    "Reglamento 1005/2009",
+    "SAO",
+    "registro de fugas",
+    "HCFC",
+    "recuperacion"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Marco legislativo comunitario de obligado cumplimiento en la Unión Europea sobre el control, uso, recuperación y eliminación de sustancias que agotan la capa de ozono (pág. 11)."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Aplicación de las exigencias del Protocolo de Montreal dentro del territorio de la UE para prevenir fugas y emisiones de SAO a la atmósfera (pág. 11)."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Medidas principales del reglamento: - Prohibición total de la fabricación, comercialización y uso de CFCs y HCFCs (pág. 11). - Prohibición del uso de HCFCs vírgenes en operaciones de mantenimiento. Tolerancia de uso de HCFCs reciclados o regenerados etiquetados únicamente hasta el 31 de diciembre de 2014 (pág. 11). - Prohibición absoluta de liberar sustancias reguladas a la atmósfera (pág. 11). - Prohibición de comercialización de recipientes no recargables (pág. 11). - Prohibición de importaciones o exportaciones de productos o aparatos que contengan o dependan de sustancias reguladas hacia o desde países no signatarios (pág. 11). - Obligatoriedad de recuperación y destrucción de sustancias usadas (pág. 11). - Exigencia de mantenimiento de registros de revisiones y fugas en empresas que operen equipos fijos con cargas de fluido iguales o superiores a 3 kg (pág. 11)."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Prohibición definitiva de HCFCs reciclados o regenerados: 31 de diciembre de 2014 (pág. 11). Carga mínima de fluido para registro obligatorio de fugas en equipos fijos: igual o superior a 3 kg (pág. 11)."
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Pretender aplicar la obligación de registro de revisiones de fugas fijas de este reglamento a los equipos móviles de aire acondicionado instalados en automóviles (pág. 11)."
+    }
+   ]
+  },
+  {
+   "id": "ssc.directiva-2006-40-ce-mac.1-impacto-ambiental",
+   "nt": 8,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "directiva-2006-40-ce",
+   "seccion": "1. Impacto ambiental y normativa",
+   "subgrupo": "",
+   "titulo": "Directiva 2006/40/CE sobre emisiones de climatización en vehículos",
+   "codigo": "",
+   "menu": "Directiva 2006/40/CE sobre emisiones d",
+   "grupo": "Normativa y medioambiente",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "1. Impacto Ambiental.pdf, págs. 11-12",
+   "clase": "fundamento",
+   "variante": "",
+   "area": "general",
+   "sistema": "normativa-y-medioambiente",
+   "formaParteDe": "",
+   "relacionados": [
+    "indicadores-ambientales-pao-pca",
+    "reglamento-517-2014-f-gas"
+   ],
+   "palabras": [
+    "Directiva MAC",
+    "PCA 150",
+    "R134a",
+    "homologación M1 N1",
+    "control fugas"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Regulación técnica europea destinada a limitar las emisiones de gases fluorados de efecto invernadero procedentes de los sistemas de aire acondicionado en vehículos de motor (págs. 11-12)."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Erradicación paulatina en el sector de la automoción de fluidos frigoríficos con un Potencial de Calentamiento Atmosférico superior a 150 (págs. 11-12)."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Ámbito de aplicación: turismos de uso particular (categoría M1) y vehículos comerciales ligeros (categoría N1) (pág. 12). Disposiciones y fases de implantación: - Control de fugas inicial: prohibición de instalar sistemas con PCA > 150 si el índice de fuga supera los límites tolerados. Aplicado a nuevos modelos desde el 21 de junio de 2008 y a todos los vehículos nuevos desde el 21 de junio de 2009 (págs. 11-12). - Prohibición de homologación: prohibido homologar nuevos tipos de vehículos equipados con aire acondicionado para gases con PCA > 150 a partir del 1 de enero de 2011 (pág. 12). - Prohibición total de fabricación/matriculación: ningún vehículo nuevo fabricado o matriculado a partir del 1 de enero de 2017 puede equipar gases con PCA > 150 (como el R134a, PCA = 1430) (pág. 12). - Normas de taller y recarga: prohibición expresa de recargar un sistema de aire acondicionado si se ha detectado una fuga anormal de refrigerante, hasta que esta no haya sido reparada convenientemente (pág. 12). - Excepción de mantenimiento: se permite continuar recargando R134a en aquellos vehículos que fueron homologados e instalados de serie con dicho gas con anterioridad a las fechas límite marcadas (pág. 12)."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Umbral máximo permitido de PCA para el refrigerante: 150 (págs. 11-12). Fecha de prohibición para nuevas homologaciones con PCA > 150: 1 de enero de 2011 (pág. 12). Fecha de prohibición absoluta para vehículos nuevos comercializados: 1 de enero de 2017 (pág. 12)."
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Creer que está prohibido por ley recargar con R134a un vehículo matriculado antes de 2017 cuyo circuito venía cargado de origen con R134a (pág. 12)."
+    }
+   ]
+  },
+  {
+   "id": "ssc.reglamento-517-2014-f-gas.1-impacto-ambiental",
+   "nt": 9,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "reglamento-ue-517-2014",
+   "seccion": "1. Impacto ambiental y normativa",
+   "subgrupo": "",
+   "titulo": "Reglamento (UE) nº 517/2014 sobre gases fluorados de efecto invernadero",
+   "codigo": "",
+   "menu": "Reglamento (UE) nº 517/2014 sobre gase",
+   "grupo": "Normativa y medioambiente",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "1. Impacto Ambiental.pdf, págs. 13-14",
+   "clase": "fundamento",
+   "variante": "",
+   "area": "general",
+   "sistema": "normativa-y-medioambiente",
+   "formaParteDe": "",
+   "relacionados": [
+    "certificacion-manipulacion-gases-fluorados",
+    "directiva-2006-40-ce-mac"
+   ],
+   "palabras": [
+    "F-Gas",
+    "HFC",
+    "gases fluorados",
+    "R134a",
+    "SF6 neumáticos",
+    "exención automóviles"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Normativa comunitaria (Reglamento F-Gas) orientada a la contención, reducción y sustitución progresiva de los gases fluorados de efecto invernadero (HFC, PFC, SF6) (págs. 13-14)."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Cumplimiento de la hoja de ruta hacia una economía hipocarbónica para 2050, que exige reducir las emisiones de GEI entre un 80% y un 95% respecto a los niveles de 1990 (pág. 13)."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Exigencias y limitaciones en el ámbito industrial y de automoción: - Prohibición expresa de liberar gases fluorados a la atmósfera (pág. 13). - Reparación inmediata de cualquier fuga detectada por los operadores (pág. 13). - Exigencia de certificación oficial para el personal y empresas que instalen, mantengan o recuperen gases fluorados (44 horas de formación o títulos oficiales de FP en automoción) (págs. 13-14). - Prohibición de comercializar aparatos precargados con HFC desde el 1 de enero de 2017 (aplicado en automóviles implica el fin del llenado con R134a en cadenas de montaje) (pág. 14). - Exenciones específicas para automóviles: al tratarse de equipos móviles de climatización, no se exige someter los turismos a controles periódicos de fugas programados ni llevar registro individual de cuotas por parte del taller (págs. 13-14). - Prohibición explícita de comercialización: prohibido el uso de hexafluoruro de azufre (SF6) para el rellenado de neumáticos de automóviles y para el moldeo a presión de magnesio (pág. 14)."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Reducción objetivo de emisiones globales de GEI: 80% al 95% para el año 2050 (pág. 13). Prohibición de precarga con R134a en vehículos de fábrica: 1 de enero de 2017 (pág. 14)."
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Asumir que los talleres de reparación de automóviles están obligados a llevar un libro de registro de cuotas y realizar inspecciones periódicas de fugas en cada turismo que entra al taller (págs. 13-14)."
+    }
+   ]
+  },
+  {
    "id": "ssc.certificacion-manipulacion-gases-fluorados.1-impacto-ambiental",
    "nt": 1,
    "modulo": "ssc",
    "unidad": "clima",
    "clave": "certificacion-manipulacion-gases-fluorados",
    "seccion": "1. Impacto ambiental y normativa",
+   "subgrupo": "",
    "titulo": "Certificación profesional para la manipulación de gases fluorados",
    "codigo": "",
    "menu": "Certificación profesional para la mani",
@@ -367,6 +595,7 @@
    "unidad": "clima",
    "clave": "ciclo-frigorifico",
    "seccion": "2. Fundamentos",
+   "subgrupo": "",
    "titulo": "Principios físicos de la refrigeración y termodinámica",
    "codigo": "",
    "menu": "Principios físicos de la refrigeración",
@@ -428,6 +657,7 @@
    "unidad": "clima",
    "clave": "ciclo-frigorifico",
    "seccion": "2. Fundamentos",
+   "subgrupo": "",
    "titulo": "Ciclo frigorífico por compresión y funcionamiento hidráulico",
    "codigo": "",
    "menu": "Ciclo frigorífico por compresión y fun",
@@ -490,6 +720,7 @@
    "unidad": "clima",
    "clave": "ciclo-frigorifico",
    "seccion": "2. Fundamentos",
+   "subgrupo": "",
    "titulo": "Cambios de estado y diagrama de entalpía en el ciclo frigorífico",
    "codigo": "",
    "menu": "Cambios de estado y diagrama de entalp",
@@ -552,6 +783,7 @@
    "unidad": "clima",
    "clave": "refrigerante-r134a",
    "seccion": "3. Fluidos",
+   "subgrupo": "",
    "titulo": "Agente frigorífico R134a",
    "codigo": "",
    "menu": "Agente frigorífico R134a",
@@ -620,6 +852,7 @@
    "unidad": "clima",
    "clave": "refrigerante-r1234yf",
    "seccion": "3. Fluidos",
+   "subgrupo": "",
    "titulo": "Agente frigorífico R1234yf",
    "codigo": "",
    "menu": "Agente frigorífico R1234yf",
@@ -687,6 +920,7 @@
    "unidad": "clima",
    "clave": "aceite-frigorifico",
    "seccion": "3. Fluidos",
+   "subgrupo": "",
    "titulo": "Aceite PAG (Polialquilenglicol)",
    "codigo": "",
    "menu": "Aceite PAG (Polialquilenglicol)",
@@ -757,6 +991,7 @@
    "unidad": "clima",
    "clave": "aceite-frigorifico",
    "seccion": "3. Fluidos",
+   "subgrupo": "",
    "titulo": "Aceite PAO (Polialfaolefina)",
    "codigo": "",
    "menu": "Aceite PAO (Polialfaolefina)",
@@ -822,6 +1057,7 @@
    "unidad": "clima",
    "clave": "aceite-frigorifico",
    "seccion": "3. Fluidos",
+   "subgrupo": "",
    "titulo": "Aceite POE (Polioléster)",
    "codigo": "",
    "menu": "Aceite POE (Polioléster)",
@@ -891,6 +1127,7 @@
    "unidad": "clima",
    "clave": "compresor",
    "seccion": "4. El compresor",
+   "subgrupo": "",
    "titulo": "Compresor de aire acondicionado",
    "codigo": "",
    "menu": "Compresor de aire acondicionado",
@@ -946,6 +1183,7 @@
    "unidad": "clima",
    "clave": "compresor",
    "seccion": "4. El compresor",
+   "subgrupo": "",
    "titulo": "Compresor de émbolos",
    "codigo": "FK 50",
    "menu": "Compresor de émbolos FK 50",
@@ -1006,6 +1244,7 @@
    "unidad": "clima",
    "clave": "compresor",
    "seccion": "4. El compresor",
+   "subgrupo": "",
    "titulo": "Compresor de paletas",
    "codigo": "",
    "menu": "Compresor de paletas",
@@ -1069,6 +1308,7 @@
    "unidad": "clima",
    "clave": "compresor",
    "seccion": "4. El compresor",
+   "subgrupo": "",
    "titulo": "Compresor en espiral",
    "codigo": "",
    "menu": "Compresor en espiral",
@@ -1134,6 +1374,7 @@
    "unidad": "clima",
    "clave": "compresor",
    "seccion": "4. El compresor",
+   "subgrupo": "",
    "titulo": "Compresor de disco oscilante de cilindrada fija",
    "codigo": "",
    "menu": "Compresor de disco oscilante de cilind",
@@ -1194,6 +1435,7 @@
    "unidad": "clima",
    "clave": "compresor",
    "seccion": "4. El compresor",
+   "subgrupo": "",
    "titulo": "Compresor de disco oscilante autorregulado",
    "codigo": "",
    "menu": "Compresor de disco oscilante autorregu",
@@ -1252,6 +1494,7 @@
    "unidad": "clima",
    "clave": "compresor",
    "seccion": "4. El compresor",
+   "subgrupo": "",
    "titulo": "Compresor de disco oscilante regulado con electroválvula",
    "codigo": "",
    "menu": "Compresor de disco oscilante regulado",
@@ -1324,6 +1567,7 @@
    "unidad": "clima",
    "clave": "embrague-compresor",
    "seccion": "4. El compresor",
+   "subgrupo": "",
    "titulo": "Acoplamiento de embrague electromagnético del compresor",
    "codigo": "",
    "menu": "Acoplamiento de embrague electromagnét",
@@ -1395,6 +1639,7 @@
    "unidad": "clima",
    "clave": "condensador",
    "seccion": "5. Lado de alta",
+   "subgrupo": "",
    "titulo": "Condensador",
    "codigo": "",
    "menu": "Condensador",
@@ -1445,6 +1690,7 @@
    "unidad": "clima",
    "clave": "condensador",
    "seccion": "5. Lado de alta",
+   "subgrupo": "",
    "titulo": "Condensador",
    "codigo": "",
    "menu": "Condensador",
@@ -1507,12 +1753,403 @@
    ]
   },
   {
+   "id": "ssc.filtro-deshidratador.2-introduccion-a-la-refrigeracion",
+   "nt": 13,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "filtro-deshidratador-mirilla",
+   "seccion": "5. Lado de alta",
+   "subgrupo": "",
+   "titulo": "Filtro deshidratador",
+   "codigo": "",
+   "menu": "Filtro deshidratador",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "2. Introducción a la refrigeración.pdf, págs. 20",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "condensador",
+    "valvula-expansion"
+   ],
+   "palabras": [
+    "filtro deshidratador",
+    "humedad",
+    "impurezas",
+    "fase liquida"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Retener las impurezas sólidas y la humedad presentes en el fluido refrigerante líquido en la línea de alta presión (pág. 20)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Componente filtrante situado a la salida del condensador que trabaja con el agente frigorífico en fase líquida (págs. 20, 22)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El fluido en estado líquido procedente del condensador atraviesa el elemento filtrante deshidratador antes de llegar a la válvula de expansión, depurando el gas de agua e impurezas (págs. 20, 22)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Presión de paso: 14 bares (pág. 22). Temperatura de paso: 55 ºC en estado líquido (pág. 22)."
+    }
+   ]
+  },
+  {
+   "id": "ssc.filtro-deshidratador.alta.9-filtro-deshidratadores",
+   "nt": 56,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "filtro-deshidratador-mirilla",
+   "seccion": "5. Lado de alta",
+   "subgrupo": "",
+   "titulo": "Depósito colector de líquido y deshidratador en alta",
+   "codigo": "",
+   "menu": "Depósito colector de líquido y deshidr",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "9. Filtro deshidratadores.pdf, págs. 80",
+   "clase": "componente",
+   "variante": "alta",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "valvula-expansion",
+    "condensador"
+   ],
+   "palabras": [
+    "reserva refrigerante",
+    "zeolitas",
+    "absorción humedad",
+    "mirilla",
+    "expansión en filtro"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Facilitar la expansión del refrigerante y almacenar una reserva de líquido para compensar las variaciones de las condiciones operativas del sistema de aire acondicionado, como las cargas térmicas del evaporador o condensador y las variaciones de régimen del compresor (pág. 80)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Componente filtrante situado en la zona de alta presión del circuito frigorífico equipado con válvula de expansión (pág. 80). Integra en su interior un deshidratador químico compuesto por zeolitas y un tamiz filtrante (pág. 80). Los filtros de construcciones más antiguas incorporan una mirilla para observar la limpieza del fluido y la ausencia de burbujas de aire; los modelos actuales carecen de mirilla (pág. 80)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El agente frigorífico líquido procedente del condensador entra lateralmente al depósito (pág. 80). El fluido se colecta y atraviesa el deshidratador de zeolitas, donde se absorbe la humedad y se retienen las partículas de desgaste del compresor y la suciedad del montaje (pág. 80). A continuación, se dispone de un flujo continuo e ininterrumpido, exento de burbujas y suciedad, que asciende por el tubo central hacia la válvula de expansión (pág. 80)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Capacidad de absorción de agua: entre 6 y 12 gotas de agua según la versión del filtro (pág. 80). Comportamiento térmico de absorción: la capacidad de absorción de agua aumenta a medida que disminuye la temperatura (pág. 80). Salto térmico en condiciones normales: 0 ºC de diferencia entre la entrada y la salida del filtro (pág. 80). Periodo óptimo de sustitución: cada 3 o 4 años (pág. 80)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Desgaste por rozamiento del material deshidratador de zeolitas con el paso del tiempo (pág. 80). Emulsión del aceite sintético con el agua presente en el circuito, generando burbujas (pág. 80). Obstrucción interna del filtro por acumulación de impurezas (pág. 80)."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si el filtro se obstruye internamente, el refrigerante líquido expansiona en su interior, provocando un descenso de temperatura a la salida del filtro (pág. 80)."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Medir la temperatura en el tubo de entrada y en el tubo de salida del filtro deshidratador: una diferencia de 5 ºC menos en la salida respecto a la entrada indica que el filtro está obstruido y el líquido está expansionando dentro del depósito (pág. 80). En modelos antiguos, verificar a través de la mirilla la ausencia de burbujas y la limpieza del fluido (pág. 80)."
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Sustituir el depósito deshidratador cada vez que se abra el circuito frigorífico o cada 3 o 4 años (pág. 80). Mantener puestos los tapones de protección que trae de fábrica hasta justo antes del montaje para evitar la absorción de humedad ambiental (pág. 80)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Seccionado del depósito colector de líquido y deshidratador en alta con tubo ascendente central, deshidratador de zeolitas y tamiz filtro — Fuente: 9. Filtro deshidratadores.pdf, pág. 80"
+    }
+   ]
+  },
+  {
+   "id": "ssc.valvula-expansion.2-introduccion-a-la-refrigeracion",
+   "nt": 15,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "valvula-expansion",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "Dispositivos de expansión",
+   "titulo": "Válvula de expansión",
+   "codigo": "",
+   "menu": "Válvula de expansión",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "2. Introducción a la refrigeración.pdf, págs. 20",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "evaporador",
+    "filtro-deshidratador"
+   ],
+   "palabras": [
+    "valvula expansion",
+    "distension",
+    "caida de presion",
+    "pulverizacion"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Distensar y pulverizar el agente frigorífico líquido a la entrada del evaporador, provocando un rápido descenso de presión y temperatura (pág. 20)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Elemento de estrangulamiento hidráulico situado entre el tramo de alta presión y la entrada del evaporador (págs. 20, 22)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Recibe el agente frigorífico líquido a alta presión y lo rocía hacia el interior del evaporador. Al expandirse o distensarse repentinamente, el fluido experimenta un fuerte enfriamiento (págs. 20, 22)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Presión de entrada: 14 bares (fase líquida a 55 ºC) (pág. 22). Presión de salida hacia el evaporador: cae a 1,2 bares (pág. 22). Temperatura de salida: cae a -7 ºC (pág. 22)."
+    }
+   ]
+  },
+  {
+   "id": "ssc.valvula-expansion.bulbo-exterior.8-valvulas-de-expansion",
+   "nt": 53,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "valvula-expansion",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "Dispositivos de expansión",
+   "titulo": "Válvula de expansión con bulbo exterior",
+   "codigo": "",
+   "menu": "Válvula de expansión con bulbo exterio",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "8. Válvulas de Expansión.pdf, págs. 74-75, 79",
+   "clase": "componente",
+   "variante": "bulbo-exterior",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "evaporador",
+    "condensador"
+   ],
+   "palabras": [
+    "bulbo exterior",
+    "diafragma",
+    "muelle regulador",
+    "válvula de bola",
+    "termostato"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Gasificar el agente frigorífico líquido procedente del condensador y regular el caudal que se introduce en el evaporador en función de la temperatura de salida de este, manteniendo una refrigeración uniforme del evaporador (págs. 74-75). Constituye el punto de división entre la zona de alta y de baja presión del circuito de aire acondicionado (pág. 74)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Válvula de expansión termostática empleada en vehículos más antiguos, caracterizada por disponer de un bulbo sensor exterior conectado mediante un tubo capilar cargado con un agente frigorífico especial (págs. 74-75). Viene preajustada de fábrica y no permite manipulaciones en su tapón inferior (pág. 75)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El gas que abandona el evaporador circula en contacto con el bulbo sensor exterior (pág. 74). Sobre el mecanismo de la válvula de bola actúan tres fuerzas en equilibrio: 1. La fuerza de apertura producida por la presión del gas del interior del bulbo (pág. 75). 2. La presión del evaporador, que actúa sobre el diafragma en sentido opuesto a la apertura (pág. 75). 3. La presión del muelle regulador, que tiende a cerrar la válvula de bola (pág. 75). Si el gas que sale del evaporador está caliente: la temperatura dilata el gas del bulbo, aumenta su volumen y empuja el eje hacia abajo abriendo la válvula de bola. Aumenta el caudal de refrigerante hacia el evaporador para incrementar la capacidad de refrigeración (págs. 74-75). Si el gas sale frío: el gas del bulbo reduce su volumen, el eje sube y la presión del muelle cierra la válvula de bola, reduciendo el caudal de fluido para disminuir el rendimiento de la climatización (pág. 75)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Régimen del motor para pruebas de funcionamiento: 1.500 - 1.700 r.p.m. (pág. 79). Tiempo de conservación de depresión en prueba de frío (compresor fijo): al menos 3 minutos (pág. 79)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Plegado, deformación o rotura del tubo del sensor del termostato exterior: ocasiona la fuga del gas especial y anula la curva característica de regulación (págs. 75-76). Manipulación del tapón inferior preajustado: altera la curva característica del climatizador y reduce el rendimiento (pág. 75)."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si la válvula permanece bloqueada en posición de cierre, desciende bruscamente la presión de baja generando depresión en el circuito (pág. 79). Si se queda atascada en apertura total, no realiza la correcta caída de presión y se produce escarcha o retorno no deseado (pág. 79)."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Con el motor entre 1.500 y 1.700 r.p.m.: - Prueba de frío: aplicar frío al bulbo. En sistemas con compresor fijo, se observa un descenso gradual de la presión de baja hasta valores negativos (depresión) (pág. 79). Al marcar depresión, desconectar el equipo de A/C y seguir enfriando la válvula; la depresión debe permanecer constante durante al menos 3 minutos (si la depresión sube, el fallo es del compresor) (pág. 79). En sistemas con compresor variable, la válvula totalmente cerrada provoca un ralentí irregular (pág. 79). - Prueba de calor: aplicar calor al bulbo. En sistemas con compresor fijo, se produce un aumento de la presión de baja y una disminución gradual de la presión de alta (pág. 79). En sistemas con compresor variable, se observa la formación de escarcha en el tubo de baja cuando la válvula abre completamente (pág. 79)."
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "No manipular el tapón inferior ni doblar o deformar el tubo del sensor exterior (pág. 75). Ante cualquier defecto de funcionamiento, proceder a la sustitución de la válvula (pág. 75). Procedimiento de sustitución: recuperar previamente el refrigerante con la estación de carga adecuada, se aconseja limpiar el circuito y es obligatorio realizar un vacío profundo de al menos 45 minutos (pág. 75). Reinstalar obligatoriamente los aislamientos térmicos originales sobre el bulbo y el cuerpo de la válvula (pág. 75)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Sección de la válvula de expansión con bulbo exterior mostrando la ubicación del diafragma, muelle regulador, válvula de bola y las tres fuerzas que actúan sobre ella — Fuente: 8. Válvulas de Expansión.pdf, págs. 74-75"
+    }
+   ]
+  },
+  {
+   "id": "ssc.valvula-expansion.bulbo-interior.8-valvulas-de-expansion",
+   "nt": 54,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "valvula-expansion",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "Dispositivos de expansión",
+   "titulo": "Válvula de expansión con bulbo interior",
+   "codigo": "",
+   "menu": "Válvula de expansión con bulbo interio",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "8. Válvulas de Expansión.pdf, págs. 76-77, 79",
+   "clase": "componente",
+   "variante": "bulbo-interior",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "evaporador",
+    "condensador"
+   ],
+   "palabras": [
+    "bulbo interior",
+    "monobloque",
+    "cabezal térmico",
+    "taladros de compensación",
+    "protección térmica"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Gasificar el agente frigorífico líquido procedente del condensador y dosificar la cantidad exacta de refrigerante que se rocía al interior del evaporador en función de la temperatura de salida del gas (págs. 74, 76). Constituye el punto de división entre la zona de alta y baja presión del circuito de aire acondicionado (pág. 76)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Válvula de expansión monobloque muy compacta provista de bulbo interior, montada en la totalidad de los vehículos actuales (págs. 74, 76-77). Se instala inmediatamente antes del evaporador recubierta por una protección de aislamiento térmico (pág. 76). Viene preajustada de fábrica y no admite ningún tipo de ajuste manual (pág. 76)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Integra en su cabezal térmico el bulbo interior con un diafragma cargado con un gas especial (pág. 76). La cara superior del diafragma está en contacto con el gas especial del cabezal, mientras que la cara inferior recibe la presión de baja del evaporador a través de taladros internos de compensación de presión (págs. 76-77). El diafragma gobierna la válvula de bola mediante un eje (pág. 76): - Aumento de temperatura a la salida del evaporador (por mayor demanda térmica o más velocidad del ventilador): eleva la temperatura (Pa), la presión y el volumen del gas del bulbo (págs. 76-77). El diafragma empuja el eje y abre la válvula de bola aumentando la sección de paso (págs. 76-77). Fluye más agente frigorífico hacia el evaporador, el cual se distensa y absorbe más calor del aire (págs. 76-77). - Disminución de temperatura a la salida del evaporador: cae la temperatura y la presión (Pb) en la cámara de gas del bulbo (págs. 76-77). La sección de paso de la válvula de bola se reduce, disminuyendo el caudal de fluido pulverizado y enfriando menos el aire del habitáculo (págs. 76-77)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Régimen del motor para pruebas: 1.500 - 1.700 r.p.m. (pág. 79). Tiempo de conservación de depresión en prueba de frío: mínimo 3 minutos (pág. 79)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Ausencia del aislamiento de protección térmica exterior: altera la curva de regulación térmica programada al recibir calor directo del vano motor (pág. 76). Fuga de la carga de gas especial en el cabezal térmico: inhabilita la apertura o el cierre progresivo del diafragma (págs. 75-76)."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si la válvula queda bloqueada o cerrada, la presión de baja desciende a valores negativos (depresión) y se genera un ralentí irregular en compresores variables (pág. 79). Si se queda abierta en exceso, se observa formación de escarcha en la tubería de baja presión (pág. 79)."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Con el motor a 1.500 - 1.700 r.p.m.: - Prueba de frío: aplicar frío al cabezal térmico. En compresor fijo, produce un descenso gradual de la presión hasta valores negativos (depresión) (pág. 79). Al desconectar el A/C y continuar enfriando, la depresión debe mantenerse constante durante al menos 3 minutos (pág. 79). En compresor variable, causa un ralentí irregular al cerrarse la válvula por completo (pág. 79). - Prueba de calor: aplicar calor al cabezal térmico. En compresor fijo, la presión de baja aumenta y la de alta disminuye gradualmente (pág. 79). En compresor variable, se observa la formación de escarcha en la tubería de baja presión al abrir la válvula totalmente (pág. 79)."
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "No intentar ningún tipo de ajuste manual por ser una pieza precintada de fábrica (pág. 76). Ante cualquier fallo de regulación, sustituir la válvula por un recambio nuevo (pág. 76). Procedimiento de sustitución: recuperar el agente frigorífico con la estación de carga adecuada, se aconseja limpiar el circuito y es obligatorio realizar un vacío profundo de al menos 45 minutos (pág. 76). Sustituir imperativamente todas las juntas tóricas por otras nuevas (pág. 76). Reinstalar obligatoriamente el aislamiento térmico envolviendo la válvula (pág. 76)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Sección y esquema de funcionamiento de la válvula de expansión de bulbo interior monobloque en fases de apertura por alta temperatura y cierre por baja temperatura — Fuente: 8. Válvulas de Expansión.pdf, págs. 76-77"
+    }
+   ]
+  },
+  {
+   "id": "ssc.estrangulador.8-valvulas-de-expansion",
+   "nt": 55,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "estrangulador",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "Dispositivos de expansión",
+   "titulo": "Estrangulador",
+   "codigo": "",
+   "menu": "Estrangulador",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "8. Válvulas de Expansión.pdf, págs. 77-78",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "evaporador",
+    "deposito-colector"
+   ],
+   "palabras": [
+    "estrangulador",
+    "tubo calibrado",
+    "tamiz pulverizador",
+    "tamiz filtrante",
+    "colores de calibración"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Regular el caudal de agente frigorífico que ingresa al evaporador, mantener la presión en el lado de alta para conservar el fluido en estado líquido y provocar una brusca caída de presión y temperatura que pulveriza el refrigerante a la entrada del evaporador (págs. 77-78). Constituye el punto de división entre la zona de alta y de baja presión del circuito de aire acondicionado (pág. 77)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Tubo calibrado que realiza la función de la válvula de expansión, ubicado a la entrada del evaporador (pág. 77). - Componentes: cuerpo con tubo/taladro calibrado, filtro de tamiz de entrada (para retener impurezas y evitar la obturación del calibre), junta tórica de sellado perimetral (para obligar al fluido a pasar exclusivamente por el taladro calibrado) y tamiz pulverizador posterior (págs. 77-78). - Código de colores: el color del soporte de plástico está vinculado al diámetro del tubo calibrado (existen 6 colores diferentes) (pág. 78). - Variantes de montaje: en determinados modelos (Chrysler, Renault, Ford) se encuentra integrado en el interior del propio tubo de alta presión (exigiendo la sustitución de la tubería completa); en otros modelos dispone de recambio independiente (pág. 78)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El agente frigorífico llega a la entrada a alta presión y alta temperatura en fase líquida (págs. 77-78). Al atravesar el taladro calibrado, sufre una fuerte restricción de paso que mantiene presurizado el tramo de alta (pág. 78). A la salida de la estrechez, el fluido experimenta una rápida caída de presión y un importante descenso de temperatura, provocando su evaporación parcial y saliendo pulverizado a través del tamiz posterior hacia el evaporador (págs. 77-78)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Variedad de calibración: 6 colores de soporte según el diámetro del taladro calibrado (pág. 78)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Obturación del tamiz filtrante delantero por impurezas o virutas: interrumpe el flujo de refrigerante hacia el evaporador (pág. 78). Montaje invertido: altera el patrón de rociado y anula el filtrado de impurezas (pág. 78). Deterioro de la junta tórica perimetral: permite el paso directo de refrigerante por fuera del taladro calibrado, impidiendo la caída de presión entre la zona de alta y de baja (pág. 77)."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si se obstruye el estrangulador, se detiene la alimentación de refrigerante al evaporador, produciéndose una depresión acusada en la línea de baja y la pérdida total de rendimiento frigorífico."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Extraer el estrangulador de la tubería e inspeccionar visualmente la presencia de suciedad en el tamiz filtrante delantero y el estado de la junta tórica de sellado (págs. 77-78)."
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Respetar estrictamente el sentido de montaje indicado por la flecha grabada en el cuerpo (la flecha debe señalar siempre hacia el evaporador) (pág. 78). En caso de sustitución, instalar un estrangulador del mismo color de soporte para mantener el diámetro de calibración exacto (pág. 78). En versiones independientes, es susceptible de limpieza y reutilización sustituyendo obligatoriamente las juntas tóricas (pág. 78). En vehículos con estrangulador integrado en la canalización rígida (Chrysler, Renault, Ford), reemplazar el tramo de tubo de alta completo (pág. 78)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Despiece y sección del estrangulador con indicación del tamiz filtrante, junta tórica de sellado, tubo calibrado y tamiz pulverizador — Fuente: 8. Válvulas de Expansión.pdf, págs. 77-78"
+    }
+   ]
+  },
+  {
    "id": "ssc.evaporador.2-introduccion-a-la-refrigeracion",
    "nt": 16,
    "modulo": "ssc",
    "unidad": "clima",
    "clave": "evaporador",
    "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "",
    "titulo": "Evaporador",
    "codigo": "",
    "menu": "Evaporador",
@@ -1565,6 +2202,7 @@
    "unidad": "clima",
    "clave": "evaporador",
    "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "",
    "titulo": "Evaporador",
    "codigo": "",
    "menu": "Evaporador",
@@ -1631,12 +2269,78 @@
    ]
   },
   {
+   "id": "ssc.deposito-colector.baja.9-filtro-deshidratadores",
+   "nt": 57,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "deposito-colector",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "",
+   "titulo": "Depósito colector de líquido y deshidratador en baja",
+   "codigo": "",
+   "menu": "Depósito colector de líquido y deshidr",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "9. Filtro deshidratadores.pdf, págs. 81",
+   "clase": "componente",
+   "variante": "baja",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "estrangulador",
+    "compresor",
+    "evaporador"
+   ],
+   "palabras": [
+    "acumulador",
+    "tubo en U",
+    "taladro de aceite",
+    "protección compresor",
+    "estrangulador"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Asumir las funciones de depósito de expansión, reserva de agente frigorífico y colector de aceite para la máquina frigorífica, protegiendo al compresor para que solo aspire fluido en estado gaseoso (pág. 81)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Filtro acumulador de mayores dimensiones que los de alta presión, instalado en la zona de baja presión de sistemas provistos de estrangulador (pág. 81). Para facilitar la evaporación del líquido residual, se ubica habitualmente en un punto caliente del vano motor (pág. 81). Consta de depósito, caperuza de plástico, deshidratador, tubo interno en U con taladro inferior y tamiz filtrante de aceite (pág. 81)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El agente frigorífico gaseoso procedente del evaporador entra en el depósito por la parte superior (pág. 81). Si contiene humedad, esta es absorbida por el deshidratador incorporado (pág. 81). El compresor aspira el gas refrigerante a través de la parte superior del tubo en U, garantizando la ausencia de gotas en estado líquido que pudieran dañar mecánicamente el compresor debido a la menor precisión de regulación del estrangulador (pág. 81). El aceite lubricante se deposita en el fondo del recipiente y es aspirado gradualmente por el compresor a través del taladro inferior del tubo en U, filtrado por un tamiz para evitar el paso de impurezas (pág. 81)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tiempo mínimo de vacío profundo: 45 minutos antes de realizar la recarga de fluido (pág. 81)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Acumulación de humedad ambiental por aperturas del circuito o retiro prematuro de los tapones de protección (pág. 81). Taponamiento del taladro de recogida de aceite en el tubo en U si se satura el tamiz filtrante (pág. 81)."
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Recuperar previamente el fluido refrigerante con una estación de carga antes de desmontar el filtro (pág. 81). Sustituir imperativamente el filtro deshidratador cada vez que se abra el circuito frigorífico (pág. 81). Conservar puestos los tapones de protección de fábrica hasta el instante previo a su montaje para evitar la saturación por humedad ambiental (pág. 81). Realizar un vacío profundo en el circuito de al menos 45 minutos antes de efectuar la recarga del refrigerante (pág. 81)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Sección del depósito colector de líquido en baja mostrando la entrada del evaporador, caperuza de plástico, deshidratador, tubo en U con taladro de recogida de aceite y salida al compresor — Fuente: 9. Filtro deshidratadores.pdf, pág. 81"
+    }
+   ]
+  },
+  {
    "id": "ssc.tuberias-y-racores.2-introduccion-a-la-refrigeracion",
    "nt": 19,
    "modulo": "ssc",
    "unidad": "clima",
    "clave": "tuberias-y-racores",
    "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "",
    "titulo": "Tuberías, canalizaciones y juntas de estanqueidad del circuito frigorífico",
    "codigo": "",
    "menu": "Tuberías, canalizaciones y juntas de e",
@@ -1682,12 +2386,138 @@
    ]
   },
   {
+   "id": "ssc.transmisor-presion.2-introduccion-a-la-refrigeracion",
+   "nt": 14,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "transmisor-presion-map-maf",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Transmisor de presión",
+   "codigo": "",
+   "menu": "Transmisor de presión",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "2. Introducción a la refrigeración.pdf, págs. 20",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "compresor",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "transmisor presion",
+    "trinaria",
+    "sensor MAP",
+    "alta presion",
+    "control compresor"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Registrar la presión existente en la línea de alta del circuito cerrado para proporcionar esta información al sistema de gestión y controlar el funcionamiento del compresor (pág. 20)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Puede ser un manocontacto de presión de tipo electromecánico (trinaria) o un sensor electrónico de presión (tipo sensor MAP) (pág. 20)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Mide la presión del fluido refrigerante en el sector de alta y genera una señal de control para conectar, desconectar o regular el trabajo del compresor de aire acondicionado (pág. 20)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Ubicado en el tramo de alta presión (14 bares de presión nominal de funcionamiento) (págs. 20, 22)."
+    }
+   ]
+  },
+  {
+   "id": "ssc.valvula-reguladora-compresor.6-compresores",
+   "nt": 47,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "valvula-reguladora-compresor-variable",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Electroválvula de regulación del compresor",
+   "codigo": "N280",
+   "menu": "Electroválvula de regulación d N280",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "6. Compresores.pdf, págs. 62-63",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "compresor",
+   "relacionados": [
+    "compresor",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "electroválvula regulación",
+    "señal PWM",
+    "periodo positivo",
+    "vástago",
+    "posición de seguridad",
+    "2% a 98%"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Regular la presión en la cámara del cárter del compresor mediante el control electrónico de los pasos de fluido entre alta y baja presión (págs. 62-63)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Electroválvula proporcional montada directamente en la carcasa exterior del compresor (págs. 58, 63). Formada por una bobina eléctrica de accionamiento, un núcleo magnético de hierro dulce, un muelle de retorno y un vástago de cierre de orificios (pág. 63). Gobernada directamente por la Unidad de Control de Climatización (pág. 63)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "La Unidad de Control excita la bobina con una señal de tensión de frecuencia fija y proporción de periodo variable (señal modulada en anchura de pulso, PWM) (pág. 63): - Excitación elevada (hasta 98% de periodo positivo): la fuerza magnética desplaza el vástago cerrando el paso de alta presión al cárter y abriendo la comunicación entre cárter y baja presión. La presión de cárter cae y el compresor pasa a máximo rendimiento (pág. 63). - Excitación reducida (hasta 2% de periodo positivo): la fuerza magnética disminuye y el muelle retrotrae el vástago, comunicando la alta presión con el cárter. La presión en el cárter sube y el compresor pasa a mínimo rendimiento (carrera nula) (pág. 63)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Señal de control: frecuencia fija con ciclo de trabajo PWM variable (pág. 63). Margen de excitación del periodo positivo: de 2% (mínimo rendimiento) a 98% (máximo rendimiento) (pág. 63). Tensión de excitación: impulsos de 0 V a 12 V (pág. 63)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Cortocircuito o interrupción eléctrica en la bobina de la electroválvula (pág. 63). Agarrotamiento mecánico del vástago por suciedad o virutas en el fluido (pág. 63)."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "En caso de avería eléctrica de la electroválvula o corte de la señal de excitación, el muelle desplaza el vástago a la posición de reposo, manteniendo la comunicación de alta presión al cárter. El compresor se queda en posición de mínimo rendimiento (carrera nula) como medida de seguridad para evitar sobrepresiones en el circuito (pág. 63)."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Medir con osciloscopio la señal de excitación PWM enviada por la unidad de control entre los terminales de la electroválvula (pág. 63)."
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "En algunos modelos de compresores no existe despiece ni comercialización de la electroválvula como recambio independiente, exigiendo la sustitución completa del compresor en caso de avería de la electroválvula (pág. 63)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema interno de la electroválvula de regulación con vástago, núcleo y pasajes de alta/baja presión — Fuente: 6. Compresores.pdf, págs. 62-63 Oscilogramas de la corriente de excitación PWM al 2% y al 98% para el control de la electroválvula — Fuente: 6. Compresores.pdf, pág. 63"
+    }
+   ]
+  },
+  {
    "id": "ssc.regulacion-automatica.2-introduccion-a-la-refrigeracion",
    "nt": 20,
    "modulo": "ssc",
    "unidad": "clima",
    "clave": "regulacion-automatica",
    "seccion": "8. Regulación y control",
+   "subgrupo": "",
    "titulo": "Sistemas y opciones de climatización en el automóvil",
    "codigo": "",
    "menu": "Sistemas y opciones de climatización e",
@@ -1738,66 +2568,13 @@
    ]
   },
   {
-   "id": "ssc.efecto-invernadero-cambio-climatico.1-impacto-ambiental",
-   "nt": 2,
-   "modulo": "ssc",
-   "unidad": "clima",
-   "clave": "efecto-invernadero-cambio-climatico",
-   "seccion": "Por ubicar",
-   "titulo": "Efecto invernadero y cambio climático",
-   "codigo": "",
-   "menu": "Efecto invernadero y cambio climático",
-   "grupo": "Normativa y medioambiente",
-   "tipo": "proceso",
-   "subtipo": "fundamento",
-   "aplicacion": [],
-   "ubicacion": "",
-   "fuentes": "1. Impacto Ambiental.pdf, págs. 4",
-   "clase": "fundamento",
-   "variante": "",
-   "area": "general",
-   "sistema": "normativa-y-medioambiente",
-   "formaParteDe": "",
-   "relacionados": [
-    "protocolo-kioto",
-    "indicadores-ambientales-pao-pca"
-   ],
-   "palabras": [
-    "CO2",
-    "calentamiento global",
-    "gases efecto invernadero",
-    "Mauna Loa"
-   ],
-   "apartados": [
-    {
-     "titulo": "Objeto",
-     "texto": "Análisis del fenómeno del calentamiento global antropogénico y sus repercusiones directas sobre el equilibrio climático y ambiental del planeta (pág. 4)."
-    },
-    {
-     "titulo": "Fundamento",
-     "texto": "La actividad humana, principalmente la quema de combustibles fósiles, es la responsable del incremento del efecto invernadero por la acumulación desmedida de gases de efecto invernadero en la atmósfera (pág. 4)."
-    },
-    {
-     "titulo": "Desarrollo",
-     "texto": "El registro continuo de concentración de dióxido de carbono en el observatorio de Mauna Loa (Hawái) muestra un incremento continuado, alcanzando los 415,26 ppm en mayo de 2019 (pág. 4). Efectos observados y previstos del cambio climático: - Aumento de la temperatura global del planeta, provocando el deshielo de glaciares y casquetes polares (la principal reserva de agua dulce) (pág. 4). - Elevación del nivel del mar con riesgo de inundación de zonas costeras (pág. 4). - Alteración de hábitats animales y desplazamiento de especies vectoras de enfermedades hacia zonas geográficas anteriormente frías (pág. 4). - Ruptura del equilibrio dinámico de la atmósfera: incremento de fenómenos meteorológicos adversos (sequías, inundaciones) (pág. 4). - Desestabilización de los ciclos agrícolas, amenaza a la seguridad de recursos hídricos y alteración global de la cadena alimentaria (pág. 4)."
-    },
-    {
-     "titulo": "Valores de referencia",
-     "texto": "Concentración de CO2 atmosférico: 415,26 ppm (dato de mayo de 2019) (pág. 4)."
-    },
-    {
-     "titulo": "Errores de concepto frecuentes",
-     "texto": "Asumir que el cambio climático produce únicamente un aumento de la temperatura ambiente sin alterar la frecuencia de fenómenos meteorológicos extremos ni la propagación de enfermedades (pág. 4)."
-    }
-   ]
-  },
-  {
    "id": "ssc.indicadores-ambientales-pao-pca.1-impacto-ambiental",
    "nt": 6,
    "modulo": "ssc",
    "unidad": "clima",
    "clave": "indicadores-ambientales-pao-pca",
    "seccion": "Por ubicar",
+   "subgrupo": "",
    "titulo": "Indicadores ambientales PAO y PCA",
    "codigo": "",
    "menu": "Indicadores ambientales PAO y PCA",
@@ -1848,329 +2625,13 @@
    ]
   },
   {
-   "id": "ssc.reglamento-1005-2009-sao.1-impacto-ambiental",
-   "nt": 7,
-   "modulo": "ssc",
-   "unidad": "clima",
-   "clave": "reglamento-1005-2009-sao",
-   "seccion": "Por ubicar",
-   "titulo": "Reglamento (CE) nº 1005/2009 sobre sustancias agotadoras de la capa de ozono",
-   "codigo": "",
-   "menu": "Reglamento (CE) nº 1005/2009 sobre sus",
-   "grupo": "Normativa y medioambiente",
-   "tipo": "proceso",
-   "subtipo": "fundamento",
-   "aplicacion": [],
-   "ubicacion": "",
-   "fuentes": "1. Impacto Ambiental.pdf, págs. 11",
-   "clase": "fundamento",
-   "variante": "",
-   "area": "general",
-   "sistema": "normativa-y-medioambiente",
-   "formaParteDe": "",
-   "relacionados": [
-    "protocolo-montreal",
-    "agotamiento-capa-ozono"
-   ],
-   "palabras": [
-    "Reglamento 1005/2009",
-    "SAO",
-    "registro de fugas",
-    "HCFC",
-    "recuperacion"
-   ],
-   "apartados": [
-    {
-     "titulo": "Objeto",
-     "texto": "Marco legislativo comunitario de obligado cumplimiento en la Unión Europea sobre el control, uso, recuperación y eliminación de sustancias que agotan la capa de ozono (pág. 11)."
-    },
-    {
-     "titulo": "Fundamento",
-     "texto": "Aplicación de las exigencias del Protocolo de Montreal dentro del territorio de la UE para prevenir fugas y emisiones de SAO a la atmósfera (pág. 11)."
-    },
-    {
-     "titulo": "Desarrollo",
-     "texto": "Medidas principales del reglamento: - Prohibición total de la fabricación, comercialización y uso de CFCs y HCFCs (pág. 11). - Prohibición del uso de HCFCs vírgenes en operaciones de mantenimiento. Tolerancia de uso de HCFCs reciclados o regenerados etiquetados únicamente hasta el 31 de diciembre de 2014 (pág. 11). - Prohibición absoluta de liberar sustancias reguladas a la atmósfera (pág. 11). - Prohibición de comercialización de recipientes no recargables (pág. 11). - Prohibición de importaciones o exportaciones de productos o aparatos que contengan o dependan de sustancias reguladas hacia o desde países no signatarios (pág. 11). - Obligatoriedad de recuperación y destrucción de sustancias usadas (pág. 11). - Exigencia de mantenimiento de registros de revisiones y fugas en empresas que operen equipos fijos con cargas de fluido iguales o superiores a 3 kg (pág. 11)."
-    },
-    {
-     "titulo": "Valores de referencia",
-     "texto": "Prohibición definitiva de HCFCs reciclados o regenerados: 31 de diciembre de 2014 (pág. 11). Carga mínima de fluido para registro obligatorio de fugas en equipos fijos: igual o superior a 3 kg (pág. 11)."
-    },
-    {
-     "titulo": "Errores de concepto frecuentes",
-     "texto": "Pretender aplicar la obligación de registro de revisiones de fugas fijas de este reglamento a los equipos móviles de aire acondicionado instalados en automóviles (pág. 11)."
-    }
-   ]
-  },
-  {
-   "id": "ssc.directiva-2006-40-ce-mac.1-impacto-ambiental",
-   "nt": 8,
-   "modulo": "ssc",
-   "unidad": "clima",
-   "clave": "directiva-2006-40-ce-mac",
-   "seccion": "Por ubicar",
-   "titulo": "Directiva 2006/40/CE sobre emisiones de climatización en vehículos",
-   "codigo": "",
-   "menu": "Directiva 2006/40/CE sobre emisiones d",
-   "grupo": "Normativa y medioambiente",
-   "tipo": "proceso",
-   "subtipo": "fundamento",
-   "aplicacion": [],
-   "ubicacion": "",
-   "fuentes": "1. Impacto Ambiental.pdf, págs. 11-12",
-   "clase": "fundamento",
-   "variante": "",
-   "area": "general",
-   "sistema": "normativa-y-medioambiente",
-   "formaParteDe": "",
-   "relacionados": [
-    "indicadores-ambientales-pao-pca",
-    "reglamento-517-2014-f-gas"
-   ],
-   "palabras": [
-    "Directiva MAC",
-    "PCA 150",
-    "R134a",
-    "homologación M1 N1",
-    "control fugas"
-   ],
-   "apartados": [
-    {
-     "titulo": "Objeto",
-     "texto": "Regulación técnica europea destinada a limitar las emisiones de gases fluorados de efecto invernadero procedentes de los sistemas de aire acondicionado en vehículos de motor (págs. 11-12)."
-    },
-    {
-     "titulo": "Fundamento",
-     "texto": "Erradicación paulatina en el sector de la automoción de fluidos frigoríficos con un Potencial de Calentamiento Atmosférico superior a 150 (págs. 11-12)."
-    },
-    {
-     "titulo": "Desarrollo",
-     "texto": "Ámbito de aplicación: turismos de uso particular (categoría M1) y vehículos comerciales ligeros (categoría N1) (pág. 12). Disposiciones y fases de implantación: - Control de fugas inicial: prohibición de instalar sistemas con PCA > 150 si el índice de fuga supera los límites tolerados. Aplicado a nuevos modelos desde el 21 de junio de 2008 y a todos los vehículos nuevos desde el 21 de junio de 2009 (págs. 11-12). - Prohibición de homologación: prohibido homologar nuevos tipos de vehículos equipados con aire acondicionado para gases con PCA > 150 a partir del 1 de enero de 2011 (pág. 12). - Prohibición total de fabricación/matriculación: ningún vehículo nuevo fabricado o matriculado a partir del 1 de enero de 2017 puede equipar gases con PCA > 150 (como el R134a, PCA = 1430) (pág. 12). - Normas de taller y recarga: prohibición expresa de recargar un sistema de aire acondicionado si se ha detectado una fuga anormal de refrigerante, hasta que esta no haya sido reparada convenientemente (pág. 12). - Excepción de mantenimiento: se permite continuar recargando R134a en aquellos vehículos que fueron homologados e instalados de serie con dicho gas con anterioridad a las fechas límite marcadas (pág. 12)."
-    },
-    {
-     "titulo": "Valores de referencia",
-     "texto": "Umbral máximo permitido de PCA para el refrigerante: 150 (págs. 11-12). Fecha de prohibición para nuevas homologaciones con PCA > 150: 1 de enero de 2011 (pág. 12). Fecha de prohibición absoluta para vehículos nuevos comercializados: 1 de enero de 2017 (pág. 12)."
-    },
-    {
-     "titulo": "Errores de concepto frecuentes",
-     "texto": "Creer que está prohibido por ley recargar con R134a un vehículo matriculado antes de 2017 cuyo circuito venía cargado de origen con R134a (pág. 12)."
-    }
-   ]
-  },
-  {
-   "id": "ssc.reglamento-517-2014-f-gas.1-impacto-ambiental",
-   "nt": 9,
-   "modulo": "ssc",
-   "unidad": "clima",
-   "clave": "reglamento-517-2014-f-gas",
-   "seccion": "Por ubicar",
-   "titulo": "Reglamento (UE) nº 517/2014 sobre gases fluorados de efecto invernadero",
-   "codigo": "",
-   "menu": "Reglamento (UE) nº 517/2014 sobre gase",
-   "grupo": "Normativa y medioambiente",
-   "tipo": "proceso",
-   "subtipo": "fundamento",
-   "aplicacion": [],
-   "ubicacion": "",
-   "fuentes": "1. Impacto Ambiental.pdf, págs. 13-14",
-   "clase": "fundamento",
-   "variante": "",
-   "area": "general",
-   "sistema": "normativa-y-medioambiente",
-   "formaParteDe": "",
-   "relacionados": [
-    "certificacion-manipulacion-gases-fluorados",
-    "directiva-2006-40-ce-mac"
-   ],
-   "palabras": [
-    "F-Gas",
-    "HFC",
-    "gases fluorados",
-    "R134a",
-    "SF6 neumáticos",
-    "exención automóviles"
-   ],
-   "apartados": [
-    {
-     "titulo": "Objeto",
-     "texto": "Normativa comunitaria (Reglamento F-Gas) orientada a la contención, reducción y sustitución progresiva de los gases fluorados de efecto invernadero (HFC, PFC, SF6) (págs. 13-14)."
-    },
-    {
-     "titulo": "Fundamento",
-     "texto": "Cumplimiento de la hoja de ruta hacia una economía hipocarbónica para 2050, que exige reducir las emisiones de GEI entre un 80% y un 95% respecto a los niveles de 1990 (pág. 13)."
-    },
-    {
-     "titulo": "Desarrollo",
-     "texto": "Exigencias y limitaciones en el ámbito industrial y de automoción: - Prohibición expresa de liberar gases fluorados a la atmósfera (pág. 13). - Reparación inmediata de cualquier fuga detectada por los operadores (pág. 13). - Exigencia de certificación oficial para el personal y empresas que instalen, mantengan o recuperen gases fluorados (44 horas de formación o títulos oficiales de FP en automoción) (págs. 13-14). - Prohibición de comercializar aparatos precargados con HFC desde el 1 de enero de 2017 (aplicado en automóviles implica el fin del llenado con R134a en cadenas de montaje) (pág. 14). - Exenciones específicas para automóviles: al tratarse de equipos móviles de climatización, no se exige someter los turismos a controles periódicos de fugas programados ni llevar registro individual de cuotas por parte del taller (págs. 13-14). - Prohibición explícita de comercialización: prohibido el uso de hexafluoruro de azufre (SF6) para el rellenado de neumáticos de automóviles y para el moldeo a presión de magnesio (pág. 14)."
-    },
-    {
-     "titulo": "Valores de referencia",
-     "texto": "Reducción objetivo de emisiones globales de GEI: 80% al 95% para el año 2050 (pág. 13). Prohibición de precarga con R134a en vehículos de fábrica: 1 de enero de 2017 (pág. 14)."
-    },
-    {
-     "titulo": "Errores de concepto frecuentes",
-     "texto": "Asumir que los talleres de reparación de automóviles están obligados a llevar un libro de registro de cuotas y realizar inspecciones periódicas de fugas en cada turismo que entra al taller (págs. 13-14)."
-    }
-   ]
-  },
-  {
-   "id": "ssc.filtro-deshidratador.2-introduccion-a-la-refrigeracion",
-   "nt": 13,
-   "modulo": "ssc",
-   "unidad": "clima",
-   "clave": "filtro-deshidratador",
-   "seccion": "Por ubicar",
-   "titulo": "Filtro deshidratador",
-   "codigo": "",
-   "menu": "Filtro deshidratador",
-   "grupo": "Circuito frigorífico",
-   "tipo": "elemento",
-   "subtipo": "",
-   "aplicacion": [],
-   "ubicacion": "",
-   "fuentes": "2. Introducción a la refrigeración.pdf, págs. 20",
-   "clase": "componente",
-   "variante": "",
-   "area": "climatizacion",
-   "sistema": "circuito-frigorifico",
-   "formaParteDe": "circuito-frigorifico",
-   "relacionados": [
-    "condensador",
-    "valvula-expansion"
-   ],
-   "palabras": [
-    "filtro deshidratador",
-    "humedad",
-    "impurezas",
-    "fase liquida"
-   ],
-   "apartados": [
-    {
-     "titulo": "Misión",
-     "texto": "Retener las impurezas sólidas y la humedad presentes en el fluido refrigerante líquido en la línea de alta presión (pág. 20)."
-    },
-    {
-     "titulo": "Tipos y características",
-     "texto": "Componente filtrante situado a la salida del condensador que trabaja con el agente frigorífico en fase líquida (págs. 20, 22)."
-    },
-    {
-     "titulo": "Principio de funcionamiento",
-     "texto": "El fluido en estado líquido procedente del condensador atraviesa el elemento filtrante deshidratador antes de llegar a la válvula de expansión, depurando el gas de agua e impurezas (págs. 20, 22)."
-    },
-    {
-     "titulo": "Valores de trabajo",
-     "texto": "Presión de paso: 14 bares (pág. 22). Temperatura de paso: 55 ºC en estado líquido (pág. 22)."
-    }
-   ]
-  },
-  {
-   "id": "ssc.transmisor-presion.2-introduccion-a-la-refrigeracion",
-   "nt": 14,
-   "modulo": "ssc",
-   "unidad": "clima",
-   "clave": "transmisor-presion",
-   "seccion": "Por ubicar",
-   "titulo": "Transmisor de presión",
-   "codigo": "",
-   "menu": "Transmisor de presión",
-   "grupo": "Control de climatización",
-   "tipo": "elemento",
-   "subtipo": "",
-   "aplicacion": [],
-   "ubicacion": "",
-   "fuentes": "2. Introducción a la refrigeración.pdf, págs. 20",
-   "clase": "componente",
-   "variante": "",
-   "area": "climatizacion",
-   "sistema": "control-climatizacion",
-   "formaParteDe": "circuito-frigorifico",
-   "relacionados": [
-    "compresor",
-    "unidad-control-climatizador"
-   ],
-   "palabras": [
-    "transmisor presion",
-    "trinaria",
-    "sensor MAP",
-    "alta presion",
-    "control compresor"
-   ],
-   "apartados": [
-    {
-     "titulo": "Misión",
-     "texto": "Registrar la presión existente en la línea de alta del circuito cerrado para proporcionar esta información al sistema de gestión y controlar el funcionamiento del compresor (pág. 20)."
-    },
-    {
-     "titulo": "Tipos y características",
-     "texto": "Puede ser un manocontacto de presión de tipo electromecánico (trinaria) o un sensor electrónico de presión (tipo sensor MAP) (pág. 20)."
-    },
-    {
-     "titulo": "Principio de funcionamiento",
-     "texto": "Mide la presión del fluido refrigerante en el sector de alta y genera una señal de control para conectar, desconectar o regular el trabajo del compresor de aire acondicionado (pág. 20)."
-    },
-    {
-     "titulo": "Valores de trabajo",
-     "texto": "Ubicado en el tramo de alta presión (14 bares de presión nominal de funcionamiento) (págs. 20, 22)."
-    }
-   ]
-  },
-  {
-   "id": "ssc.valvula-expansion.2-introduccion-a-la-refrigeracion",
-   "nt": 15,
-   "modulo": "ssc",
-   "unidad": "clima",
-   "clave": "valvula-expansion",
-   "seccion": "Por ubicar",
-   "titulo": "Válvula de expansión",
-   "codigo": "",
-   "menu": "Válvula de expansión",
-   "grupo": "Circuito frigorífico",
-   "tipo": "elemento",
-   "subtipo": "",
-   "aplicacion": [],
-   "ubicacion": "",
-   "fuentes": "2. Introducción a la refrigeración.pdf, págs. 20",
-   "clase": "componente",
-   "variante": "",
-   "area": "climatizacion",
-   "sistema": "circuito-frigorifico",
-   "formaParteDe": "circuito-frigorifico",
-   "relacionados": [
-    "evaporador",
-    "filtro-deshidratador"
-   ],
-   "palabras": [
-    "valvula expansion",
-    "distension",
-    "caida de presion",
-    "pulverizacion"
-   ],
-   "apartados": [
-    {
-     "titulo": "Misión",
-     "texto": "Distensar y pulverizar el agente frigorífico líquido a la entrada del evaporador, provocando un rápido descenso de presión y temperatura (pág. 20)."
-    },
-    {
-     "titulo": "Tipos y características",
-     "texto": "Elemento de estrangulamiento hidráulico situado entre el tramo de alta presión y la entrada del evaporador (págs. 20, 22)."
-    },
-    {
-     "titulo": "Principio de funcionamiento",
-     "texto": "Recibe el agente frigorífico líquido a alta presión y lo rocía hacia el interior del evaporador. Al expandirse o distensarse repentinamente, el fluido experimenta un fuerte enfriamiento (págs. 20, 22)."
-    },
-    {
-     "titulo": "Valores de trabajo",
-     "texto": "Presión de entrada: 14 bares (fase líquida a 55 ºC) (pág. 22). Presión de salida hacia el evaporador: cae a 1,2 bares (pág. 22). Temperatura de salida: cae a -7 ºC (pág. 22)."
-    }
-   ]
-  },
-  {
    "id": "ssc.silenciador-deposito-receptor.2-introduccion-a-la-refrigeracion",
    "nt": 17,
    "modulo": "ssc",
    "unidad": "clima",
    "clave": "silenciador-deposito-receptor",
    "seccion": "Por ubicar",
+   "subgrupo": "",
    "titulo": "Silenciador-depósito receptor",
    "codigo": "",
    "menu": "Silenciador-depósito receptor",
@@ -2222,6 +2683,7 @@
    "unidad": "clima",
    "clave": "refrigerante-r12",
    "seccion": "Por ubicar",
+   "subgrupo": "",
    "titulo": "Agente frigorífico R12",
    "codigo": "",
    "menu": "Agente frigorífico R12",
@@ -2281,6 +2743,7 @@
    "unidad": "clima",
    "clave": "refrigerante-r744",
    "seccion": "Por ubicar",
+   "subgrupo": "",
    "titulo": "Agente frigorífico R744 (dióxido de carbono)",
    "codigo": "",
    "menu": "Agente frigorífico R744 (dióxido de ca",
@@ -2350,6 +2813,7 @@
    "unidad": "clima",
    "clave": "equipos-proteccion-individual-climatizacion",
    "seccion": "Por ubicar",
+   "subgrupo": "",
    "titulo": "Equipos de protección individual en el mantenimiento de climatización",
    "codigo": "",
    "menu": "Equipos de protección individual en el",
@@ -2406,6 +2870,7 @@
    "unidad": "clima",
    "clave": "estacion-carga",
    "seccion": "Por ubicar",
+   "subgrupo": "",
    "titulo": "Máquina de verificación y carga con cilindro de carga",
    "codigo": "",
    "menu": "Máquina de verificación y carga con ci",
@@ -2466,6 +2931,7 @@
    "unidad": "clima",
    "clave": "estacion-carga",
    "seccion": "Por ubicar",
+   "subgrupo": "",
    "titulo": "Estación de servicio y recarga automática de refrigerante",
    "codigo": "",
    "menu": "Estación de servicio y recarga automát",
@@ -2540,6 +3006,7 @@
    "unidad": "clima",
    "clave": "estacion-carga",
    "seccion": "Por ubicar",
+   "subgrupo": "",
    "titulo": "Estación de servicio y recarga para gas R1234yf",
    "codigo": "",
    "menu": "Estación de servicio y recarga para ga",
@@ -2606,6 +3073,7 @@
    "unidad": "clima",
    "clave": "recuperacion-refrigerante-contaminado",
    "seccion": "Por ubicar",
+   "subgrupo": "",
    "titulo": "Recuperación de refrigerante R1234yf contaminado mediante condensación por hielo seco",
    "codigo": "",
    "menu": "Recuperación de refrigerante R1234yf c",
@@ -2674,6 +3142,7 @@
    "unidad": "clima",
    "clave": "estacion-carga",
    "seccion": "Por ubicar",
+   "subgrupo": "",
    "titulo": "Estación de servicio y recarga para gas R744 (CO2)",
    "codigo": "",
    "menu": "Estación de servicio y recarga para ga",
@@ -2739,6 +3208,7 @@
    "unidad": "clima",
    "clave": "detector-fugas",
    "seccion": "Por ubicar",
+   "subgrupo": "",
    "titulo": "Detector sonoro-visual de fugas de refrigerante",
    "codigo": "",
    "menu": "Detector sonoro-visual de fugas de ref",
@@ -2808,6 +3278,7 @@
    "unidad": "clima",
    "clave": "detector-fugas",
    "seccion": "Por ubicar",
+   "subgrupo": "",
    "titulo": "Lámpara de luz ultravioleta y trazador de contraste para detección de fugas",
    "codigo": "",
    "menu": "Lámpara de luz ultravioleta y trazador",
@@ -2876,6 +3347,7 @@
    "unidad": "clima",
    "clave": "endoscopio-inspeccion",
    "seccion": "Por ubicar",
+   "subgrupo": "",
    "titulo": "Endoscopio de inspección con pantalla LCD",
    "codigo": "",
    "menu": "Endoscopio de inspección con pantalla",
@@ -2940,6 +3412,7 @@
    "unidad": "clima",
    "clave": "seguridad-y-precauciones-climatizacion",
    "seccion": "Por ubicar",
+   "subgrupo": "",
    "titulo": "Precauciones de seguridad, prohibición de soldadura y contaminación en climatización",
    "codigo": "",
    "menu": "Precauciones de seguridad, prohibición",
@@ -3002,6 +3475,7 @@
    "unidad": "clima",
    "clave": "bomba-calor-climatizacion",
    "seccion": "Por ubicar",
+   "subgrupo": "",
    "titulo": "Climatización por bomba de calor en vehículos eléctricos",
    "codigo": "",
    "menu": "Climatización por bomba de calor en ve",
@@ -3058,84 +3532,13 @@
    ]
   },
   {
-   "id": "ssc.valvula-reguladora-compresor.6-compresores",
-   "nt": 47,
-   "modulo": "ssc",
-   "unidad": "clima",
-   "clave": "valvula-reguladora-compresor",
-   "seccion": "Por ubicar",
-   "titulo": "Electroválvula de regulación del compresor",
-   "codigo": "N280",
-   "menu": "Electroválvula de regulación d N280",
-   "grupo": "Circuito frigorífico",
-   "tipo": "elemento",
-   "subtipo": "",
-   "aplicacion": [],
-   "ubicacion": "",
-   "fuentes": "6. Compresores.pdf, págs. 62-63",
-   "clase": "componente",
-   "variante": "",
-   "area": "climatizacion",
-   "sistema": "circuito-frigorifico",
-   "formaParteDe": "compresor",
-   "relacionados": [
-    "compresor",
-    "unidad-control-climatizador"
-   ],
-   "palabras": [
-    "electroválvula regulación",
-    "señal PWM",
-    "periodo positivo",
-    "vástago",
-    "posición de seguridad",
-    "2% a 98%"
-   ],
-   "apartados": [
-    {
-     "titulo": "Misión",
-     "texto": "Regular la presión en la cámara del cárter del compresor mediante el control electrónico de los pasos de fluido entre alta y baja presión (págs. 62-63)."
-    },
-    {
-     "titulo": "Tipos y características",
-     "texto": "Electroválvula proporcional montada directamente en la carcasa exterior del compresor (págs. 58, 63). Formada por una bobina eléctrica de accionamiento, un núcleo magnético de hierro dulce, un muelle de retorno y un vástago de cierre de orificios (pág. 63). Gobernada directamente por la Unidad de Control de Climatización (pág. 63)."
-    },
-    {
-     "titulo": "Principio de funcionamiento",
-     "texto": "La Unidad de Control excita la bobina con una señal de tensión de frecuencia fija y proporción de periodo variable (señal modulada en anchura de pulso, PWM) (pág. 63): - Excitación elevada (hasta 98% de periodo positivo): la fuerza magnética desplaza el vástago cerrando el paso de alta presión al cárter y abriendo la comunicación entre cárter y baja presión. La presión de cárter cae y el compresor pasa a máximo rendimiento (pág. 63). - Excitación reducida (hasta 2% de periodo positivo): la fuerza magnética disminuye y el muelle retrotrae el vástago, comunicando la alta presión con el cárter. La presión en el cárter sube y el compresor pasa a mínimo rendimiento (carrera nula) (pág. 63)."
-    },
-    {
-     "titulo": "Valores de trabajo",
-     "texto": "Señal de control: frecuencia fija con ciclo de trabajo PWM variable (pág. 63). Margen de excitación del periodo positivo: de 2% (mínimo rendimiento) a 98% (máximo rendimiento) (pág. 63). Tensión de excitación: impulsos de 0 V a 12 V (pág. 63)."
-    },
-    {
-     "titulo": "Anomalías frecuentes",
-     "texto": "Cortocircuito o interrupción eléctrica en la bobina de la electroválvula (pág. 63). Agarrotamiento mecánico del vástago por suciedad o virutas en el fluido (pág. 63)."
-    },
-    {
-     "titulo": "Comportamiento en avería",
-     "texto": "En caso de avería eléctrica de la electroválvula o corte de la señal de excitación, el muelle desplaza el vástago a la posición de reposo, manteniendo la comunicación de alta presión al cárter. El compresor se queda en posición de mínimo rendimiento (carrera nula) como medida de seguridad para evitar sobrepresiones en el circuito (pág. 63)."
-    },
-    {
-     "titulo": "Cómo comprobarlo",
-     "texto": "Medir con osciloscopio la señal de excitación PWM enviada por la unidad de control entre los terminales de la electroválvula (pág. 63)."
-    },
-    {
-     "titulo": "Mantenimiento",
-     "texto": "En algunos modelos de compresores no existe despiece ni comercialización de la electroválvula como recambio independiente, exigiendo la sustitución completa del compresor en caso de avería de la electroválvula (pág. 63)."
-    },
-    {
-     "titulo": "Imágenes requeridas",
-     "texto": "Esquema interno de la electroválvula de regulación con vástago, núcleo y pasajes de alta/baja presión — Fuente: 6. Compresores.pdf, págs. 62-63 Oscilogramas de la corriente de excitación PWM al 2% y al 98% para el control de la electroválvula — Fuente: 6. Compresores.pdf, pág. 63"
-    }
-   ]
-  },
-  {
    "id": "ssc.desmontaje-montaje-condensador.7-condensadores-y-evaporadores",
    "nt": 49,
    "modulo": "ssc",
    "unidad": "clima",
    "clave": "desmontaje-montaje-condensador",
    "seccion": "Por ubicar",
+   "subgrupo": "",
    "titulo": "Desmontaje y montaje del condensador",
    "codigo": "",
    "menu": "Desmontaje y montaje del condensador",
@@ -3203,6 +3606,7 @@
    "unidad": "clima",
    "clave": "filtro-habitaculo",
    "seccion": "Por ubicar",
+   "subgrupo": "",
    "titulo": "Filtro de habitáculo",
    "codigo": "",
    "menu": "Filtro de habitáculo",
@@ -3269,6 +3673,7 @@
    "unidad": "clima",
    "clave": "desmontaje-montaje-evaporador",
    "seccion": "Por ubicar",
+   "subgrupo": "",
    "titulo": "Desmontaje y montaje del evaporador",
    "codigo": "",
    "menu": "Desmontaje y montaje del evaporador",
@@ -3327,219 +3732,6 @@
     {
      "titulo": "Imágenes requeridas",
      "texto": "Despiece y ubicación de componentes del climatizador en el tablero de instrumentos y habitáculo — Fuente: 7. Condensadores y evaporadores.pdf, págs. 68-69 Apertura de las dos mitades de la carcasa de la unidad climática mostrando la posición del evaporador y su aislamiento térmico — Fuente: 7. Condensadores y evaporadores.pdf, pág. 70"
-    }
-   ]
-  },
-  {
-   "id": "ssc.valvula-expansion.bulbo-exterior.8-valvulas-de-expansion",
-   "nt": 53,
-   "modulo": "ssc",
-   "unidad": "clima",
-   "clave": "valvula-expansion",
-   "seccion": "Por ubicar",
-   "titulo": "Válvula de expansión con bulbo exterior",
-   "codigo": "",
-   "menu": "Válvula de expansión con bulbo exterio",
-   "grupo": "Circuito frigorífico",
-   "tipo": "elemento",
-   "subtipo": "",
-   "aplicacion": [],
-   "ubicacion": "",
-   "fuentes": "8. Válvulas de Expansión.pdf, págs. 74-75, 79",
-   "clase": "componente",
-   "variante": "bulbo-exterior",
-   "area": "climatizacion",
-   "sistema": "circuito-frigorifico",
-   "formaParteDe": "circuito-frigorifico",
-   "relacionados": [
-    "evaporador",
-    "condensador"
-   ],
-   "palabras": [
-    "bulbo exterior",
-    "diafragma",
-    "muelle regulador",
-    "válvula de bola",
-    "termostato"
-   ],
-   "apartados": [
-    {
-     "titulo": "Misión",
-     "texto": "Gasificar el agente frigorífico líquido procedente del condensador y regular el caudal que se introduce en el evaporador en función de la temperatura de salida de este, manteniendo una refrigeración uniforme del evaporador (págs. 74-75). Constituye el punto de división entre la zona de alta y de baja presión del circuito de aire acondicionado (pág. 74)."
-    },
-    {
-     "titulo": "Tipos y características",
-     "texto": "Válvula de expansión termostática empleada en vehículos más antiguos, caracterizada por disponer de un bulbo sensor exterior conectado mediante un tubo capilar cargado con un agente frigorífico especial (págs. 74-75). Viene preajustada de fábrica y no permite manipulaciones en su tapón inferior (pág. 75)."
-    },
-    {
-     "titulo": "Principio de funcionamiento",
-     "texto": "El gas que abandona el evaporador circula en contacto con el bulbo sensor exterior (pág. 74). Sobre el mecanismo de la válvula de bola actúan tres fuerzas en equilibrio: 1. La fuerza de apertura producida por la presión del gas del interior del bulbo (pág. 75). 2. La presión del evaporador, que actúa sobre el diafragma en sentido opuesto a la apertura (pág. 75). 3. La presión del muelle regulador, que tiende a cerrar la válvula de bola (pág. 75). Si el gas que sale del evaporador está caliente: la temperatura dilata el gas del bulbo, aumenta su volumen y empuja el eje hacia abajo abriendo la válvula de bola. Aumenta el caudal de refrigerante hacia el evaporador para incrementar la capacidad de refrigeración (págs. 74-75). Si el gas sale frío: el gas del bulbo reduce su volumen, el eje sube y la presión del muelle cierra la válvula de bola, reduciendo el caudal de fluido para disminuir el rendimiento de la climatización (pág. 75)."
-    },
-    {
-     "titulo": "Valores de trabajo",
-     "texto": "Régimen del motor para pruebas de funcionamiento: 1.500 - 1.700 r.p.m. (pág. 79). Tiempo de conservación de depresión en prueba de frío (compresor fijo): al menos 3 minutos (pág. 79)."
-    },
-    {
-     "titulo": "Anomalías frecuentes",
-     "texto": "Plegado, deformación o rotura del tubo del sensor del termostato exterior: ocasiona la fuga del gas especial y anula la curva característica de regulación (págs. 75-76). Manipulación del tapón inferior preajustado: altera la curva característica del climatizador y reduce el rendimiento (pág. 75)."
-    },
-    {
-     "titulo": "Comportamiento en avería",
-     "texto": "Si la válvula permanece bloqueada en posición de cierre, desciende bruscamente la presión de baja generando depresión en el circuito (pág. 79). Si se queda atascada en apertura total, no realiza la correcta caída de presión y se produce escarcha o retorno no deseado (pág. 79)."
-    },
-    {
-     "titulo": "Cómo comprobarlo",
-     "texto": "Con el motor entre 1.500 y 1.700 r.p.m.: - Prueba de frío: aplicar frío al bulbo. En sistemas con compresor fijo, se observa un descenso gradual de la presión de baja hasta valores negativos (depresión) (pág. 79). Al marcar depresión, desconectar el equipo de A/C y seguir enfriando la válvula; la depresión debe permanecer constante durante al menos 3 minutos (si la depresión sube, el fallo es del compresor) (pág. 79). En sistemas con compresor variable, la válvula totalmente cerrada provoca un ralentí irregular (pág. 79). - Prueba de calor: aplicar calor al bulbo. En sistemas con compresor fijo, se produce un aumento de la presión de baja y una disminución gradual de la presión de alta (pág. 79). En sistemas con compresor variable, se observa la formación de escarcha en el tubo de baja cuando la válvula abre completamente (pág. 79)."
-    },
-    {
-     "titulo": "Mantenimiento",
-     "texto": "No manipular el tapón inferior ni doblar o deformar el tubo del sensor exterior (pág. 75). Ante cualquier defecto de funcionamiento, proceder a la sustitución de la válvula (pág. 75). Procedimiento de sustitución: recuperar previamente el refrigerante con la estación de carga adecuada, se aconseja limpiar el circuito y es obligatorio realizar un vacío profundo de al menos 45 minutos (pág. 75). Reinstalar obligatoriamente los aislamientos térmicos originales sobre el bulbo y el cuerpo de la válvula (pág. 75)."
-    },
-    {
-     "titulo": "Imágenes requeridas",
-     "texto": "Sección de la válvula de expansión con bulbo exterior mostrando la ubicación del diafragma, muelle regulador, válvula de bola y las tres fuerzas que actúan sobre ella — Fuente: 8. Válvulas de Expansión.pdf, págs. 74-75"
-    }
-   ]
-  },
-  {
-   "id": "ssc.valvula-expansion.bulbo-interior.8-valvulas-de-expansion",
-   "nt": 54,
-   "modulo": "ssc",
-   "unidad": "clima",
-   "clave": "valvula-expansion",
-   "seccion": "Por ubicar",
-   "titulo": "Válvula de expansión con bulbo interior",
-   "codigo": "",
-   "menu": "Válvula de expansión con bulbo interio",
-   "grupo": "Circuito frigorífico",
-   "tipo": "elemento",
-   "subtipo": "",
-   "aplicacion": [],
-   "ubicacion": "",
-   "fuentes": "8. Válvulas de Expansión.pdf, págs. 76-77, 79",
-   "clase": "componente",
-   "variante": "bulbo-interior",
-   "area": "climatizacion",
-   "sistema": "circuito-frigorifico",
-   "formaParteDe": "circuito-frigorifico",
-   "relacionados": [
-    "evaporador",
-    "condensador"
-   ],
-   "palabras": [
-    "bulbo interior",
-    "monobloque",
-    "cabezal térmico",
-    "taladros de compensación",
-    "protección térmica"
-   ],
-   "apartados": [
-    {
-     "titulo": "Misión",
-     "texto": "Gasificar el agente frigorífico líquido procedente del condensador y dosificar la cantidad exacta de refrigerante que se rocía al interior del evaporador en función de la temperatura de salida del gas (págs. 74, 76). Constituye el punto de división entre la zona de alta y baja presión del circuito de aire acondicionado (pág. 76)."
-    },
-    {
-     "titulo": "Tipos y características",
-     "texto": "Válvula de expansión monobloque muy compacta provista de bulbo interior, montada en la totalidad de los vehículos actuales (págs. 74, 76-77). Se instala inmediatamente antes del evaporador recubierta por una protección de aislamiento térmico (pág. 76). Viene preajustada de fábrica y no admite ningún tipo de ajuste manual (pág. 76)."
-    },
-    {
-     "titulo": "Principio de funcionamiento",
-     "texto": "Integra en su cabezal térmico el bulbo interior con un diafragma cargado con un gas especial (pág. 76). La cara superior del diafragma está en contacto con el gas especial del cabezal, mientras que la cara inferior recibe la presión de baja del evaporador a través de taladros internos de compensación de presión (págs. 76-77). El diafragma gobierna la válvula de bola mediante un eje (pág. 76): - Aumento de temperatura a la salida del evaporador (por mayor demanda térmica o más velocidad del ventilador): eleva la temperatura (Pa), la presión y el volumen del gas del bulbo (págs. 76-77). El diafragma empuja el eje y abre la válvula de bola aumentando la sección de paso (págs. 76-77). Fluye más agente frigorífico hacia el evaporador, el cual se distensa y absorbe más calor del aire (págs. 76-77). - Disminución de temperatura a la salida del evaporador: cae la temperatura y la presión (Pb) en la cámara de gas del bulbo (págs. 76-77). La sección de paso de la válvula de bola se reduce, disminuyendo el caudal de fluido pulverizado y enfriando menos el aire del habitáculo (págs. 76-77)."
-    },
-    {
-     "titulo": "Valores de trabajo",
-     "texto": "Régimen del motor para pruebas: 1.500 - 1.700 r.p.m. (pág. 79). Tiempo de conservación de depresión en prueba de frío: mínimo 3 minutos (pág. 79)."
-    },
-    {
-     "titulo": "Anomalías frecuentes",
-     "texto": "Ausencia del aislamiento de protección térmica exterior: altera la curva de regulación térmica programada al recibir calor directo del vano motor (pág. 76). Fuga de la carga de gas especial en el cabezal térmico: inhabilita la apertura o el cierre progresivo del diafragma (págs. 75-76)."
-    },
-    {
-     "titulo": "Comportamiento en avería",
-     "texto": "Si la válvula queda bloqueada o cerrada, la presión de baja desciende a valores negativos (depresión) y se genera un ralentí irregular en compresores variables (pág. 79). Si se queda abierta en exceso, se observa formación de escarcha en la tubería de baja presión (pág. 79)."
-    },
-    {
-     "titulo": "Cómo comprobarlo",
-     "texto": "Con el motor a 1.500 - 1.700 r.p.m.: - Prueba de frío: aplicar frío al cabezal térmico. En compresor fijo, produce un descenso gradual de la presión hasta valores negativos (depresión) (pág. 79). Al desconectar el A/C y continuar enfriando, la depresión debe mantenerse constante durante al menos 3 minutos (pág. 79). En compresor variable, causa un ralentí irregular al cerrarse la válvula por completo (pág. 79). - Prueba de calor: aplicar calor al cabezal térmico. En compresor fijo, la presión de baja aumenta y la de alta disminuye gradualmente (pág. 79). En compresor variable, se observa la formación de escarcha en la tubería de baja presión al abrir la válvula totalmente (pág. 79)."
-    },
-    {
-     "titulo": "Mantenimiento",
-     "texto": "No intentar ningún tipo de ajuste manual por ser una pieza precintada de fábrica (pág. 76). Ante cualquier fallo de regulación, sustituir la válvula por un recambio nuevo (pág. 76). Procedimiento de sustitución: recuperar el agente frigorífico con la estación de carga adecuada, se aconseja limpiar el circuito y es obligatorio realizar un vacío profundo de al menos 45 minutos (pág. 76). Sustituir imperativamente todas las juntas tóricas por otras nuevas (pág. 76). Reinstalar obligatoriamente el aislamiento térmico envolviendo la válvula (pág. 76)."
-    },
-    {
-     "titulo": "Imágenes requeridas",
-     "texto": "Sección y esquema de funcionamiento de la válvula de expansión de bulbo interior monobloque en fases de apertura por alta temperatura y cierre por baja temperatura — Fuente: 8. Válvulas de Expansión.pdf, págs. 76-77"
-    }
-   ]
-  },
-  {
-   "id": "ssc.estrangulador.8-valvulas-de-expansion",
-   "nt": 55,
-   "modulo": "ssc",
-   "unidad": "clima",
-   "clave": "estrangulador",
-   "seccion": "Por ubicar",
-   "titulo": "Estrangulador",
-   "codigo": "",
-   "menu": "Estrangulador",
-   "grupo": "Circuito frigorífico",
-   "tipo": "elemento",
-   "subtipo": "",
-   "aplicacion": [],
-   "ubicacion": "",
-   "fuentes": "8. Válvulas de Expansión.pdf, págs. 77-78",
-   "clase": "componente",
-   "variante": "",
-   "area": "climatizacion",
-   "sistema": "circuito-frigorifico",
-   "formaParteDe": "circuito-frigorifico",
-   "relacionados": [
-    "evaporador",
-    "deposito-colector"
-   ],
-   "palabras": [
-    "estrangulador",
-    "tubo calibrado",
-    "tamiz pulverizador",
-    "tamiz filtrante",
-    "colores de calibración"
-   ],
-   "apartados": [
-    {
-     "titulo": "Misión",
-     "texto": "Regular el caudal de agente frigorífico que ingresa al evaporador, mantener la presión en el lado de alta para conservar el fluido en estado líquido y provocar una brusca caída de presión y temperatura que pulveriza el refrigerante a la entrada del evaporador (págs. 77-78). Constituye el punto de división entre la zona de alta y de baja presión del circuito de aire acondicionado (pág. 77)."
-    },
-    {
-     "titulo": "Tipos y características",
-     "texto": "Tubo calibrado que realiza la función de la válvula de expansión, ubicado a la entrada del evaporador (pág. 77). - Componentes: cuerpo con tubo/taladro calibrado, filtro de tamiz de entrada (para retener impurezas y evitar la obturación del calibre), junta tórica de sellado perimetral (para obligar al fluido a pasar exclusivamente por el taladro calibrado) y tamiz pulverizador posterior (págs. 77-78). - Código de colores: el color del soporte de plástico está vinculado al diámetro del tubo calibrado (existen 6 colores diferentes) (pág. 78). - Variantes de montaje: en determinados modelos (Chrysler, Renault, Ford) se encuentra integrado en el interior del propio tubo de alta presión (exigiendo la sustitución de la tubería completa); en otros modelos dispone de recambio independiente (pág. 78)."
-    },
-    {
-     "titulo": "Principio de funcionamiento",
-     "texto": "El agente frigorífico llega a la entrada a alta presión y alta temperatura en fase líquida (págs. 77-78). Al atravesar el taladro calibrado, sufre una fuerte restricción de paso que mantiene presurizado el tramo de alta (pág. 78). A la salida de la estrechez, el fluido experimenta una rápida caída de presión y un importante descenso de temperatura, provocando su evaporación parcial y saliendo pulverizado a través del tamiz posterior hacia el evaporador (págs. 77-78)."
-    },
-    {
-     "titulo": "Valores de trabajo",
-     "texto": "Variedad de calibración: 6 colores de soporte según el diámetro del taladro calibrado (pág. 78)."
-    },
-    {
-     "titulo": "Anomalías frecuentes",
-     "texto": "Obturación del tamiz filtrante delantero por impurezas o virutas: interrumpe el flujo de refrigerante hacia el evaporador (pág. 78). Montaje invertido: altera el patrón de rociado y anula el filtrado de impurezas (pág. 78). Deterioro de la junta tórica perimetral: permite el paso directo de refrigerante por fuera del taladro calibrado, impidiendo la caída de presión entre la zona de alta y de baja (pág. 77)."
-    },
-    {
-     "titulo": "Comportamiento en avería",
-     "texto": "Si se obstruye el estrangulador, se detiene la alimentación de refrigerante al evaporador, produciéndose una depresión acusada en la línea de baja y la pérdida total de rendimiento frigorífico."
-    },
-    {
-     "titulo": "Cómo comprobarlo",
-     "texto": "Extraer el estrangulador de la tubería e inspeccionar visualmente la presencia de suciedad en el tamiz filtrante delantero y el estado de la junta tórica de sellado (págs. 77-78)."
-    },
-    {
-     "titulo": "Mantenimiento",
-     "texto": "Respetar estrictamente el sentido de montaje indicado por la flecha grabada en el cuerpo (la flecha debe señalar siempre hacia el evaporador) (pág. 78). En caso de sustitución, instalar un estrangulador del mismo color de soporte para mantener el diámetro de calibración exacto (pág. 78). En versiones independientes, es susceptible de limpieza y reutilización sustituyendo obligatoriamente las juntas tóricas (pág. 78). En vehículos con estrangulador integrado en la canalización rígida (Chrysler, Renault, Ford), reemplazar el tramo de tubo de alta completo (pág. 78)."
-    },
-    {
-     "titulo": "Imágenes requeridas",
-     "texto": "Despiece y sección del estrangulador con indicación del tamiz filtrante, junta tórica de sellado, tubo calibrado y tamiz pulverizador — Fuente: 8. Válvulas de Expansión.pdf, págs. 77-78"
     }
    ]
   }
