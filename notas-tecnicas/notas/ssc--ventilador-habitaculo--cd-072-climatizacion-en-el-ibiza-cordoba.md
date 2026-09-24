@@ -5,43 +5,44 @@ unidad: clima
 nt: 200
 tipo: elemento
 clase: componente
-titulo: "Motor de la turbina de aire y regulador de régimen"
+titulo: "Turbina de aire e interior y regulador de régimen"
 codigo: "V2 / J126"
-menu: "Motor de la turbina de aire y  V2 / J126"
+menu: "Turbina de aire e interior y r V2 / J126"
 grupo: "Distribución de aire"
 clave: ventilador-habitaculo
 area: climatizacion
 sistema: "distribucion-aire"
+forma_parte_de: unidad-climatizadora
 marca: "SEAT"
 fuentes: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 22"
-relacionados: ["unidad-control-climatizador", "distribucion-aire"]
-palabras: ["V2", "J126", "turbina de aire", "regulador de régimen", "caudal de aire"]
+relacionados: ["unidad-control-climatizador"]
+palabras: ["V2", "J126", "soplador", "regulador electrónico", "variación lineal de tensión"]
 ---
 
 ## Misión
 
-Impulsar el caudal de aire necesario a través de la unidad climática para renovar y climatizar la atmósfera del habitáculo. (pág. 22).
+Impulsar el caudal de aire necesario a través de la unidad climática hacia los difusores del habitáculo. (pág. 22)
 
 ## Tipos y características
 
-Motor eléctrico impulsado por un módulo electrónico de potencia (regulador de régimen J126) en lugar de resistencias fijas en los sistemas con autoclima y calefacción motorizada. (págs. 6, 22).
+Conjunto formado por un electromotor soplador (V2) y una etapa de potencia o regulador electrónico de régimen (J126) montado directamente en el flujo de aire de la unidad climática. (pág. 22)
 
 ## Principio de funcionamiento
 
-La unidad de control J255 envía una señal de tensión de mando al regulador J126, el cual varía progresivamente la corriente aplicada al motor V2 para ajustar su velocidad de giro de manera continua. (págs. 22, 36).
+La unidad de control J255 envía una señal de pilotaje en tensión al regulador J126. El regulador modula progresivamente la corriente principal suministrada al motor V2, permitiendo un ajuste continuo del caudal de aire sin escalas fijas por resistencias. (pág. 22)
 
 ## Valores de trabajo
 
-Variación de tensión de regulación en pasos de 2,5 V de 0 V a máxima tensión durante diagnosis de actuadores. (pág. 36).
-
-## Anomalías frecuentes
-
-Desgaste de escobillas del motor V2, fallo de los transistores de potencia del regulador J126, agarrotamiento del rodamiento de la turbina. (pág. 22).
+- Tensión de salida regulada hacia la turbina: de 0 V a 12 V (en pasos progresivos de 2,5 V durante diagnosis). (págs. 22, 36)
 
 ## Comportamiento en avería
 
-No existe función sustitutiva. La avería se detecta de inmediato al interrumpirse o reducirse drásticamente el flujo de aire por los difusores. (pág. 22).
+- Interrupción total o falta de variación en el flujo de soplado de aire hacia el habitáculo. (pág. 22)
 
 ## Cómo comprobarlo
 
-Se comprueba mediante la función "03 - Diagnóstico de elementos actuadores": el sistema realiza una regulación progresiva de la velocidad desde 0 V hasta la máxima en pasos de 2,5 V cada 2 segundos. (pág. 36).
+Mediante la función "03" (diagnosis de actuadores) y función "08" (bloque de valores de medición, grupo 005) con el equipo de autodiagnosis. (págs. 36-37)
+
+## Imágenes requeridas
+
+- Esquema e instalación de la turbina de aire V2 y el módulo regulador de régimen J126 — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 22

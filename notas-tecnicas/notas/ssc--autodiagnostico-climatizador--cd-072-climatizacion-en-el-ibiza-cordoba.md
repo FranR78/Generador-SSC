@@ -4,46 +4,50 @@ modulo: ssc
 unidad: clima
 nt: 207
 tipo: proceso
-subtipo: fundamento
-clase: fundamento
-titulo: "Autodiagnóstico del autoclima y calefacción motorizada"
+subtipo: procedimiento
+clase: procedimiento
+titulo: "Autodiagnóstico de los equipos de mando electrónico"
 codigo: "J255"
-menu: "Autodiagnóstico del autoclima  J255"
+menu: "Autodiagnóstico de los equipos J255"
 grupo: "Control de climatización"
 clave: autodiagnostico-climatizador
 area: climatizacion
 sistema: "control-climatizacion"
 marca: "SEAT"
-fuentes: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 34-38"
+fuentes: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 34-37"
 relacionados: ["unidad-control-climatizador"]
-palabras: ["autodiagnóstico", "memoria de averías", "dirección 08", "función 01", "función 02", "función 03", "función 04", "función 08"]
+palabras: ["autodiagnóstico", "dirección 08", "función 01", "función 02", "función 03", "función 04", "función 08"]
 ---
 
-## Objeto
+## Objeto y alcance
 
-Supervisar eléctricamente los sensores y actuadores del sistema de climatización, memorizar los fallos detectados y permitir el diagnóstico guiado en taller a través del equipo de diagnosis. (págs. 34-38).
+Identificar averías registradas en sensores y actuadores, verificar el funcionamiento de los componentes mediante pruebas guiadas y analizar parámetros operativos en tiempo real. (págs. 34-37)
 
-## Fundamento
+## Condiciones previas
 
-La unidad de control J255 vigila constantemente sus circuitos de entrada y salida. Para acceder a la autodiagnosis se utiliza el equipo de diagnosis conectado al conector de 16 polos bajo la dirección "08 - Aire acondicionado". (págs. 34-35).
+- Tensión de la batería correcta. (pág. 34)
+- Encendido conectado (borne 15). (pág. 34)
 
-## Desarrollo
+## Equipo y material
 
-Las funciones disponibles en el menú de autodiagnosis son:
-- Función 01 (Versión de la unidad de control): Muestra la clave de recambio (p. ej. 6K0959291), versión de software (p. ej. X01), código de taller y tipo de equipo (código 220 para autoclima, código 110 para calefacción motorizada). (pág. 34).
-- Función 02 (Consultar memoria de averías): Muestra los fallos de sensores y actuadores memorizados. Distingue entre averías permanentes (requieren reparación y borrado manual) y esporádicas (se borran automáticamente tras 40 puestas en marcha sin repetirse). (págs. 34-35).
-- Función 03 (Diagnóstico de elementos actuadores): Activa secuencialmente el acoplamiento N25 (2 s ON/OFF), turbina V2 (pasos de 2,5 V), motor V68 (mínimo a máximo) y motor V113 (recirculación a aire fresco). (pág. 36).
-- Función 04 (Ajuste básico): Ejecuta la calibración y memorización de topes del motor V68 seleccionando el grupo. Obligatorio tras sustituir V68 o J255. (pág. 36).
-- Función 05 (Borrar memoria de averías). (pág. 34).
-- Función 06 (Finalizar emisión). (pág. 34).
-- Función 08 (Leer bloque de valores de medición): Muestra parámetros reales en tiempo real (grupos 001 a: estados del compresor, presostato, posiciones de potenciómetro V68 en voltios, estado de pulsadores, temperaturas NTC y posición del mando de distribución en %). (págs. 36-37).
+- Equipo de diagnosis (V.A.G 1551, V.A.G 1552 o lector compatible) conectado al conector de diagnóstico de 16 polos T16. (págs. 31, 34)
+
+## Pasos
+
+1. Conectar el equipo de diagnosis e ingresar mediante el código de dirección "08 - Aire acondicionado". (pág. 34)
+2. **Función 01 (Versión de la unidad):** Consultar el código de recambios, la versión del software y el tipo de equipo (reconoce autoclima o calefacción motorizada mediante la presencia del puente a masa en el pin 21). (pág. 34)
+3. **Función 02 (Consultar memoria de averías):** Leer los fallos memorizados (distingue entre esporádicas y permanentes). (pág. 35)
+4. **Función 03 (Diagnóstico de actuadores):** Ejecutar la prueba de elementos (activa cíclicamente N25, la turbina V2 en rampa de 0 a 12 V, el servomotor V68 de tope a tope y V113 entre aire fresco y recirculación). (pág. 36)
+5. **Función 04 (Iniciar ajuste básico):** Acceder al grupo "002" para que la unidad reconozca y grabe electrónicamente la posición real del servomotor de la trampilla de temperatura V68. (pág. 36)
+6. **Función 05 (Borrar memoria de averías):** Borrar el registro de fallos una vez subsanados. (pág. 34)
+7. **Función 08 (Leer bloque de valores de medición):** Analizar los grupos de indicación 001 al 006 para evaluar presiones, temperaturas de NTC, estados de pulsadores y voltajes en tiempo real. (pág. 37)
 
 ## Valores de referencia
 
-Dirección de acceso en equipo de diagnosis: "08".
-Averías esporádicas: borradas tras 40 ciclos de arranque sin fallo.
-Código de tipo de equipo en función: 220 = Autoclima, 110 = Calefacción motorizada. (págs. 34-35).
+- Código de dirección del sistema: 08. (pág. 34)
+- Criterio de borrado automático de averías esporádicas: tras 40 puestas en marcha sin reproducirse el fallo. (pág. 34)
+- Grupo de ajuste básico para servomotor V68: Grupo 002 (valores en voltios entre 0,76 V y 4,21 V). (págs. 36-37)
 
-## Errores de concepto frecuentes
+## Verificación final
 
-Intentar borrar la memoria de averías sin solucionar la falla física previa; si el fallo es permanente, permanecerá grabado en la unidad de control. (págs. 34-35).
+Comprobar que al reconectar el climatizador ya no parpadean los dígitos del display de la consola central y la memoria de averías permanece limpia. (págs. 12, 34)

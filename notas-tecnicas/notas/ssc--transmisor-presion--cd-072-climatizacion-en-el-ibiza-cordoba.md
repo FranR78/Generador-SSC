@@ -12,32 +12,38 @@ grupo: "Control de climatización"
 clave: transmisor-presion
 area: climatizacion
 sistema: "control-climatizacion"
+forma_parte_de: circuito-frigorifico
 marca: "SEAT"
 fuentes: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 16-17"
-relacionados: ["unidad-control-aire-acondicionado", "transmisor-presion"]
-palabras: ["G65", "transmisor de presión", "PWM", "motores gasolina", "16 bares"]
+relacionados: ["compresor", "electroventilador-condensador", "unidad-control-climatizador"]
+palabras: ["G65", "gasolina", "PWM", "señal modulada", "16 bares"]
 ---
 
 ## Misión
 
-Medir de forma continua e instantánea la presión del fluido frigorífico en el ramal de alta presión para la gestión del compresor, electroventiladores y adaptación del ralentí en motorizaciones de gasolina. (págs. 16-17).
+Medir de forma continua el valor exacto de presión del agente frigorífico en el circuito de alta presión e informar a la unidad de control del motor y a la unidad del aire acondicionado. (págs. 16-17)
 
 ## Tipos y características
 
-Sensor de presión electrónico capacitivo/piezoeléctrico montado en el circuito de alta presión junto a la válvula de expansión en motores de gasolina. Emite una señal modulada en anchura de impulsos (PWM). (págs. 16-17).
+Sensor de presión electrónico montado en las motorizaciones de gasolina, ubicado junto a la válvula de expansión. Emite una señal de onda cuadrada modulada en anchura de impulso (PWM). (págs. 16-17)
 
 ## Principio de funcionamiento
 
-Transforma la presión del gas en un tren de impulsos eléctricos de frecuencia fija donde la anchura del impulso varía con la presión. Envía la señal simultáneamente a la unidad de control del motor y a la unidad de control del aire acondicionado J293. La unidad J293 conmuta la 2ª velocidad del ventilador al llegar a 16 bares y desconecta el compresor por presiones límite. (págs. 16-17).
+Transforma la presión física del gas frigorífico en una señal de alta frecuencia cuya anchura de impulso varía proporcionalmente a la presión. La unidad del aire acondicionado J293 procesa la señal para desacoplar el compresor por presión crítica (mínima o máxima) e iniciar la 2ª velocidad de los electroventiladores al alcanzar 16 bares. La unidad de control del motor utiliza la información para compensar el régimen de ralentí según la carga absorbida por el compresor. (págs. 16-17)
 
 ## Valores de trabajo
 
-- Umbral de activación de la 2ª velocidad de ventiladores: 16 bares. (pág. 17).
-
-## Anomalías frecuentes
-
-Fallo en la electrónica interna del sensor, corte o cortocircuito de la línea de señal PWM. (pág. 17).
+- Umbral de activación de la 2ª velocidad de ventiladores: 16 bares. (pág. 17)
 
 ## Comportamiento en avería
 
-La unidad de control del aire acondicionado desactiva el compresor inmediatamente. La avería de este transmisor únicamente queda registrada en la memoria de averías de la unidad de control del motor. (pág. 17).
+- La unidad de control del aire acondicionado desactiva de inmediato el compresor. (pág. 17)
+- La avería de este transmisor queda registrada únicamente en la memoria de averías de la unidad de control del motor. (pág. 17)
+
+## Cómo comprobarlo
+
+A través de la lectura de memoria de averías y bloques de valores de medición en la unidad de control del motor. (pág. 17)
+
+## Imágenes requeridas
+
+- Instalación del transmisor de presión electrónico G65 en la tubería de alta presión — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 16

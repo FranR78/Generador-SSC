@@ -1,353 +1,90 @@
 ```yaml
-tipo: fundamento
-titulo: Equipos de climatización en el Ibiza y Córdoba 99
-entidad: regulacion-automatica
-area: climatizacion
-sistema: control-climatizacion
-fabricante: SEAT
-fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
-paginas: "4-5"
-relacionados: [unidad-control-climatizador, circuito-frigorifico]
-palabras: [ventilación, calefacción motorizada, autoclima, aire acondicionado manual]
-```
-
-## Objeto
-Definir los diferentes sistemas instalados en el Ibiza/Córdoba '99 para regular y mantener la temperatura en el interior del habitáculo. (pág. 4).
-
-## Fundamento
-El acondicionamiento del aire se realiza mediante cuatro variantes de equipamiento según el nivel de confort y regulación: ventilación-calefacción manual, aire acondicionado manual, calefacción motorizada y autoclima. (págs. 4-5).
-
-## Desarrollo
-1. Ventilación-calefacción: La distribución de aire y la temperatura se seleccionan mecánicamente con mandos giratorios. La recirculación de aire y la turbina de ventilación son impulsadas por motores eléctricos. Con este equipo solo es posible elevar la temperatura de entrada pasándola por el radiador de la calefacción. (pág. 4).
-2. Aire acondicionado manual: Dispone del mismo accionamiento para distribución, temperatura, recirculación y turbina que la ventilación-calefacción, añadiendo un pulsador que conecta eléctricamente el aire acondicionado. Permite elevar o disminuir la temperatura canalizando el aire a través del evaporador y del radiador de calefacción. (pág. 4).
-3. Calefacción motorizada: La turbina, la trampilla de temperatura de entrada y la trampilla de recirculación se accionan mediante motores eléctricos comandados por una unidad de control electrónica. La distribución de aire se selecciona mecánicamente con un mando giratorio. Un display en la consola central informa de los parámetros de funcionamiento. (pág. 5).
-4. Autoclima: Equipo de aire acondicionado con regulación y mantenimiento electrónico de la temperatura. Una unidad de control regula la temperatura del aire y activa la recirculación, el aire acondicionado y la velocidad de la turbina, automáticamente o a voluntad del usuario. La distribución de aire se realiza mecánicamente con mando giratorio. (pág. 5).
-
-## Valores de referencia
-No documentado en fuentes. (págs. 4-5).
-
-## Errores de concepto frecuentes
-Confundir el autoclima con la calefacción motorizada; la calefacción motorizada no dispone de circuito frigorífico ni de función de refrigeración por evaporador, limitándose a elevar la temperatura mediante el radiador de calefacción con gestión eléctrica de trampillas. (págs. 4-5).
-
----
-
-```yaml
-tipo: fundamento
-titulo: Unidad climática
-entidad: distribucion-aire
-area: climatizacion
-sistema: distribucion-aire
-fabricante: SEAT
-fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
-paginas: "6"
-relacionados: [evaporador, servomotor-trampilla, ventilador-habitaculo]
-palabras: [unidad climática, cables bowden, trampilla de temperatura, trampilla de recirculación, regulador electrónico]
-```
-
-## Objeto
-Albergar los componentes de intercambio térmico (evaporador y radiador de calefacción), la turbina de ventilación y las trampillas de mezcla y distribución del aire hacia el habitáculo. (pág. 6).
-
-## Fundamento
-La unidad climática es constructivamente idéntica para todos los equipos de climatización del vehículo, diferenciándose únicamente en el modo de activación de la trampilla de temperatura (eléctricamente o mecánicamente), la ubicación de transmisores de temperatura y el tipo de regulación de la turbina. (pág. 6).
-
-## Desarrollo
-- Trampilla de temperatura: se activa eléctricamente en los equipos de mando electrónico (autoclima y calefacción motorizada) o mecánicamente mediante cable. (pág. 6).
-- Trampilla de recirculación: movida siempre por un motor eléctrico en todos los equipos. (pág. 6).
-- Trampillas de distribución de aire: accionadas mediante cables Bowden desde el mando giratorio central para dirigir el caudal hacia los difusores superiores, centrales o inferiores. (pág. 6).
-- Turbina de ventilación: asegura el caudal de entrada. En los sistemas manuales la velocidad se logra mediante una escala de resistencias en el propio motor; en los de mando electrónico (autoclima y calefacción motorizada) mediante un regulador electrónico de régimen. (pág. 6).
-- Intercambiadores: contiene el evaporador y el radiador de la calefacción. (pág. 6).
-
-📷 IMAGEN: Esquema de componentes y trampillas de la unidad climática — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, pág. 6
-
-## Valores de referencia
-No documentado en fuentes. (pág. 6).
-
-## Errores de concepto frecuentes
-Suponer que la unidad climática tiene una carcasa diferente según el equipamiento; la estructura física es idéntica y solo cambian los actuadores, reguladores y sensores instalados sobre ella. (pág. 6).
-
----
-
-```yaml
-tipo: fundamento
-titulo: Circuito frigorífico del Ibiza y Córdoba 99
-entidad: ciclo-frigorifico
-area: climatizacion
-sistema: circuito-frigorifico
-fabricante: SEAT
-fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
-paginas: "7"
-relacionados: [compresor, condensador, filtro-deshidratador, valvula-expansion, evaporador, refrigerante-r134a]
-palabras: [circuito frigorífico, R134a, compresor autorregulado, silenciador, válvula de seguridad]
-```
-
-## Objeto
-Generar el ciclo de refrigeración para enfriar y deshumidificar el aire de entrada al habitáculo mediante la circulación y cambio de estado del fluido frigorífico. (pág. 7).
-
-## Fundamento
-El circuito frigorífico es idéntico en el sistema de aire acondicionado manual y en el autoclima. Utiliza un compresor autorregulado de 7 cilindros impulsado por correa Poly V y acoplamiento electromagnético. (pág. 7).
-
-## Desarrollo
-El circuito consta de los siguientes componentes acoplados en serie:
-1. Condensador: ubicado por delante del radiador del líquido refrigerante del motor. (pág. 7).
-2. Filtro deshidratador: retiene la humedad, filtra residuos de abrasión y evita la formación de burbujas. (pág. 7).
-3. Válvula de expansión: controla la presión y el caudal del agente frigorífico. (pág. 7).
-4. Evaporador: ubicado en la unidad climática, donde se produce la expansión y el intercambio de calor con el aire. (pág. 7).
-5. Compresor: tipo autorregulado de 7 cilindros con válvula de seguridad incorporada. (pág. 7).
-6. Elementos de control de presión: conmutador F129 (motores diésel) o transmisor electrónico G65 (motores gasolina), montados en el ramal de alta presión junto a la válvula de expansión. (pág. 7).
-7. Silenciador: situado en la tubería de baja presión, cerca del compresor, para amortiguar los ruidos producidos por las ondas de presión entre la válvula de expansión y el compresor. (pág. 7).
-
-📷 IMAGEN: Esquema del circuito frigorífico con la ubicación de componentes y tuberías — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, pág. 7
-
-## Valores de referencia
-- Carga de agente frigorífico: 750 ± 50 gramos de R134a. (pág. 7).
-- Tarado de la válvula de seguridad del compresor: 44 bares. (pág. 7).
-
-## Errores de concepto frecuentes
-Creer que el circuito frigorífico del autoclima es diferente al del aire acondicionado manual; el circuito físico, sus componentes frigoríficos y la cantidad de carga son exactamente idénticos. (pág. 7).
-
----
-
-```yaml
-tipo: componente
-titulo: Transmisor de temperatura interior
-entidad: sensor-temperatura-interior
-area: climatizacion
-sistema: control-climatizacion
-codigo: G56
-fabricante: SEAT
-fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
-paginas: "12, 24"
-relacionados: [unidad-control-climatizador]
-palabras: [G56, NTC, temperatura interior, turbina de aire, V42]
-```
-
-## Misión
-Medir la temperatura real del aire del interior del habitáculo para que la unidad de control del autoclima calcule la posición de la trampilla de temperatura. (págs. 12, 24).
-
-## Tipos y características
-Resistencia de tipo NTC (coeficiente de temperatura negativo) montada detrás del tablero de instrumentos, junto a la columna de dirección, formando un único conjunto con un motor de turbina V42. (págs. 12, 24).
-
-## Principio de funcionamiento
-El motor V42 hace girar una turbina que provoca un flujo continuo de aire del habitáculo a través del sensor NTC. La resistencia eléctrica varía de forma inversamente proporcional a la temperatura del aire aspirado. (págs. 12, 24).
-
-## Valores de trabajo
-Campo de medición de la NTC: entre -40 ºC y +85 ºC. (pág. 12).
-
-## Anomalías frecuentes
-Acumulación de polvo o suciedad en la toma de aire de la turbina o en la NTC, avería eléctrica del motor V42 o interrupción/cortocircuito en la NTC. (págs. 12, 24).
-
-## Comportamiento en avería
-La unidad de control toma como referencia un valor fijo de temperatura de 22 ºC. Al seleccionar temperaturas distintas a 22 ºC, el habitáculo se calienta o enfría más de lo solicitado. Cada vez que se conecta el autoclima, parpadean los dígitos del display. (pág. 12).
-
-## Cómo comprobarlo
-No documentado en fuentes. (págs. 12, 24).
-
-## Mantenimiento
-No documentado en fuentes. (págs. 12, 24).
-
----
-
-```yaml
-tipo: componente
-titulo: Transmisores de temperatura del aire de entrada
-entidad: sensor-evaporador
-variante: aire de entrada
-area: climatizacion
-sistema: control-climatizacion
-codigo: G191 / G192
-fabricante: SEAT
-fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
-paginas: "13"
-relacionados: [unidad-control-climatizador]
-palabras: [G191, G192, NTC, difusor central, zona de los pies, temperatura de entrada]
-```
-
-## Misión
-Medir la temperatura del aire impulsado hacia el habitáculo a la salida de la unidad climática. El G191 mide en el difusor central y el G192 en el difusor de la zona de los pies. (pág. 13).
-
-## Tipos y características
-Dos resistencias térmicas de tipo NTC ubicadas en el interior de los conductos de la unidad climática. (pág. 13).
-
-## Principio de funcionamiento
-Registran térmicamente el aire que sale de la unidad climática. La unidad de control del autoclima calcula y procesa un valor medio entre las lecturas de ambos sensores para regular la posición de la trampilla de mezcla de temperatura. (pág. 13).
-
-## Valores de trabajo
-Margen de medición referenciado: entre -40 ºC y +85 ºC. (pág. 13).
-
-## Anomalías frecuentes
-Desconexión eléctrica, cortocircuito o fallo de medición NTC por degradación. (pág. 13).
-
-## Comportamiento en avería
-Al perderse la señal de cualquiera de los dos transmisores, la unidad pasa automáticamente a funcionar sin regulación automática, manteniendo fijos los parámetros de funcionamiento existentes en el momento de la avería. Cada vez que se conecta el autoclima, parpadean todos los dígitos del display. (pág. 13).
-
-## Cómo comprobarlo
-No documentado en fuentes. (pág. 13).
-
-## Mantenimiento
-No documentado en fuentes. (pág. 13).
-
----
-
-```yaml
-tipo: componente
-titulo: Transmisor de temperatura exterior
-entidad: sensor-temperatura-exterior
-area: climatizacion
-sistema: control-climatizacion
-codigo: G17
-fabricante: SEAT
-fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
-paginas: "14"
-relacionados: [unidad-control-climatizador, radiocasete-comunicacion]
-palabras: [G17, NTC, retrovisor, temperatura exterior, acoplamiento magnético]
-```
-
-## Misión
-Determinar de forma continua la temperatura del aire exterior del vehículo para la indicación en el display y para la gestión del sistema autoclima. (pág. 14).
-
-## Tipos y características
-Resistencia de tipo NTC ubicada en el interior de la carcasa del retrovisor exterior derecho (lado del acompañante). (pág. 14).
-
-## Principio de funcionamiento
-Varía su resistencia eléctrica según la temperatura ambiente. La señal es leída por la unidad del radiocasete, que la muestra en el display y la transmite mediante línea de datos a la unidad de control del autoclima. (pág. 14).
-
-## Valores de trabajo
-No documentado en fuentes. (pág. 14).
-
-## Anomalías frecuentes
-Fallo de la NTC, rotura del cableado en el paso de la puerta o conector del retrovisor deteriorado. (pág. 14).
-
-## Comportamiento en avería
-El radiocasete muestra tres rayas en la zona de temperatura del display. La unidad del autoclima toma un valor fijo sustitutivo de 20 ºC y elimina la señal de conexión del acoplamiento magnético del compresor (desconecta el aire acondicionado). El sistema sigue funcionando pero sin capacidad de enfriar. Parpadean todos los dígitos del display al conectar. (pág. 14).
-
-## Cómo comprobarlo
-No documentado en fuentes. (pág. 14).
-
-## Mantenimiento
-No documentado en fuentes. (pág. 14).
-
----
-
-```yaml
-tipo: componente
-titulo: Interruptor térmico
-entidad: presostato
-variante: térmico de seguridad
-area: climatizacion
-sistema: control-climatizacion
-codigo: F38
-fabricante: SEAT
-fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
-paginas: "14"
-relacionados: [unidad-control-climatizador, unidad-control-aire-acondicionado]
-palabras: [F38, caja de aguas, congelación del evaporador, 5 ºC, interruptor térmico]
-```
-
-## Misión
-Interrumpir la señal eléctrica de conexión del compresor cuando la temperatura ambiente en la caja de aguas cae por debajo de 5 ºC, evitando la congelación del agua condensada en las aletas del evaporador. (pág. 14).
-
-## Tipos y características
-Interruptor bimetálico térmico normalmente cerrado, ubicado en la caja de aguas del vehículo. (pág. 14).
-
-## Principio de funcionamiento
-Deja pasar la señal de activación de 12 V procedente del autoclima hacia la unidad del aire acondicionado J293. Cuando la temperatura en la caja de aguas desciende de 5 ºC, el interruptor abre sus contactos cortando la tensión. (pág. 14).
-
-## Valores de trabajo
-- Estado de contactos: normalmente cerrado a temperaturas superiores a 5 ºC.
-- Umbral de apertura: temperatura inferior a 5 ºC (apertura de contactos).
-- Tensión de paso: 12 V. (pág. 14).
-
-## Anomalías frecuentes
-Bloqueo de los contactos en posición permanentemente cerrada por agarrotamiento o cortocircuito. (pág. 14).
-
-## Comportamiento en avería
-No tiene función sustitutiva. Si el interruptor permanece siempre cerrado, el compresor funciona incluso con temperaturas ambiente muy bajas, pudiendo congelar el evaporador y bloquear el flujo de aire. (pág. 14).
-
-## Cómo comprobarlo
-No documentado en fuentes. (pág. 14).
-
-## Mantenimiento
-No documentado en fuentes. (pág. 14).
-
----
-
-```yaml
 tipo: componente
 titulo: Potenciómetro de la distribución de aire
-entidad: potenciometro-distribucion-aire
+entidad: sensor-posicion-distribucion
 area: climatizacion
-sistema: distribucion-aire
+sistema: control-climatizacion
 fabricante: SEAT
 fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
-paginas: "14-15"
-relacionados: [unidad-control-climatizador, distribucion-aire]
-palabras: [potenciómetro, mando de distribución, parabrisas, desempañado]
+paginas: "15"
+forma_parte_de: distribucion-aire
+relacionados: [unidad-control-climatizador, servomotor-trampilla]
+palabras: [potenciómetro, distribución de aire, desempañamiento, parabrisas]
 ```
 
 ## Misión
-Informar constantemente a la unidad de control sobre la posición física seleccionada por el usuario en el mando giratorio de distribución de aire. (págs. 14-15).
+Indicar constantemente a la unidad de control la posición del mando de distribución de aire elegida por el usuario. (pág. 15)
 
 ## Tipos y características
-Potenciómetro rotativo instalado en el interior de la unidad de control del autoclima o calefacción motorizada, accionado mecánicamente al girar el mando de distribución. (págs. 14-15).
+Potenciómetro resistivo accionado mecánicamente al girar la rueda del mando de distribución de aire en la consola central. (pág. 15)
 
 ## Principio de funcionamiento
-Modifica su resistencia eléctrica y tensión de salida según el ángulo de giro del mando. La unidad detecta la posición específica (difusores centrales, pies, parabrisas). Al detectar la posición de salida hacia el parabrisas, la unidad ejecuta automáticamente el protocolo de desempañado: aumenta la turbina, pasa a aire fresco y conecta el compresor (autoclima). (págs. 14-15).
+Al girar el mando de distribución, varía la resistencia del potenciómetro enviando una señal de tensión analógica a la unidad de control (autoclima o calefacción motorizada). Cuando la señal indica la selección de salida hacia el parabrisas, la unidad incrementa la velocidad de la turbina, coloca la trampilla de recirculación en entrada de aire fresco y conecta el compresor (en autoclima). (pág. 15)
+
+📷 IMAGEN: Mando con potenciómetro de distribución de aire y rueda de accionamiento — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, pág. 15
 
 ## Valores de trabajo
-No documentado en fuentes. (págs. 14-15).
+No documentado en fuentes en la página 15.
 
 ## Anomalías frecuentes
-Desgaste de la pista resistiva interna, desalineación de las ruedas de accionamiento mecánicas. (pág. 15).
+No documentado en fuentes en la página 15.
 
 ## Comportamiento en avería
-La unidad sitúa la trampilla de recirculación en posición de entrada de aire fresco. No regula la velocidad de la turbina ni conecta el compresor de aire acondicionado al seleccionar la posición de parabrisas. Cada vez que se conecta el equipo, parpadean los dígitos del display. (pág. 15).
+- La unidad sitúa automáticamente la trampilla de recirculación en posición de entrada de aire fresco. (pág. 15)
+- No se incrementa automáticamente la velocidad de la turbina ni se conecta el compresor al seleccionar la salida de aire hacia el parabrisas. (pág. 15)
+- Parpadean todos los dígitos de la pantalla del display al conectar el equipo. (pág. 15)
 
 ## Cómo comprobarlo
-No documentado en fuentes. (págs. 14-15).
+Mediante la función "08" (bloque de valores de medición, grupo 004, campo 4) del equipo de autodiagnosis. (pág. 37)
 
 ## Mantenimiento
-No documentado en fuentes. (págs. 14-15).
+No documentado en fuentes en la página 15.
 
 ---
 
 ```yaml
 tipo: componente
 titulo: Potenciómetro del motor de la trampilla de temperatura
-entidad: potenciometro-trampilla-temperatura
+entidad: sensor-posicion-trampilla
 area: climatizacion
 sistema: control-climatizacion
 codigo: G92
 fabricante: SEAT
 fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
-paginas: "15"
+paginas: "15, 22"
+forma_parte_de: servomotor-trampilla
 relacionados: [servomotor-trampilla, unidad-control-climatizador]
-palabras: [G92, potenciómetro, V68, tope de recorrido, 51 grados, 4.7 kOhm]
+palabras: [G92, V68, 51 grados, topes finales, resistencia variable]
 ```
 
 ## Misión
-Informar continuamente a la unidad de control sobre la posición exacta de apertura y los topes de recorrido del servomotor V68 de la trampilla de mezcla de temperatura. (pág. 15).
+Informa constantemente a la unidad de control sobre la posición física angular exacta de la trampilla de mezcla de temperatura. (págs. 15, 22)
 
 ## Tipos y características
-Potenciómetro de resistencia variable integrado en el interior del propio servomotor V68. (pág. 15).
+Potenciómetro rotativo de resistencia variable integrado en el interior de la carcasa del servomotor V68. (págs. 15, 22)
 
 ## Principio de funcionamiento
-Su eje gira solidario con la reductora del servomotor V68. Ofrece una variación de resistencia proporcional al ángulo de la trampilla. Permite a la unidad controlar la temperatura del aire y reconocer los topes mecánicos. (pág. 15).
+El eje del potenciómetro gira solidario con el engranaje de salida del servomotor V68. Al modificar la posición de la trampilla, varía el valor de resistencia eléctrica informando a la unidad de control sobre el ángulo real alcanzado y permitiendo la detección de los dos topes mecánicos del recorrido. (págs. 15, 22)
+
+📷 IMAGEN: Vista interna del servomotor V68 mostrando la ubicación del potenciómetro G92 y las ruedas de transmisión — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, pág. 22
 
 ## Valores de trabajo
-- Carrera angular: 51º.
-- Rango de resistencia: de 0 a 4,7 kΩ. (pág. 15).
+- Carrera angular de trabajo: 51º. (pág. 15)
+- Rango de resistencia eléctrica: de 0 a 4,7 kΩ. (pág. 15)
 
 ## Anomalías frecuentes
-Pista resistiva gastada o sucia, cortocircuito o corte de señal. (pág. 15).
+No documentado en fuentes en las páginas 15, 22.
 
 ## Comportamiento en avería
-La unidad de control deja la trampilla de temperatura fija en la posición en la que se produjo la avería y reduce la velocidad de la turbina para minimizar la entrada excesiva de aire frío o caliente. Parpadean los dígitos del display al conectar el sistema. (pág. 15).
+- La unidad de control inmoviliza la trampilla de temperatura en la posición en que se encontraba al detectar el fallo. (pág. 15)
+- Se reduce automáticamente la velocidad de la turbina para evitar la entrada excesiva de aire frío o caliente no regulado. (pág. 15)
+- Parpadeo de los dígitos del display al encender el sistema. (pág. 15)
 
 ## Cómo comprobarlo
-No documentado en fuentes. (pág. 15).
+Mediante la función "08" (bloque de valores de medición, grupo 002) del equipo de autodiagnosis. (pág. 37)
 
 ## Mantenimiento
-No documentado en fuentes. (pág. 15).
+No documentado en fuentes en las páginas 15, 22.
 
 ---
 
@@ -360,38 +97,41 @@ sistema: control-climatizacion
 codigo: F129
 fabricante: SEAT
 fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
-paginas: "16-17"
-relacionados: [unidad-control-aire-acondicionado, electroventilador-condensador]
-palabras: [F129, conmutador de presión, presostato, 2 bares, 16 bares, 32 bares, motores diésel]
+paginas: "16"
+forma_parte_de: circuito-frigorifico
+relacionados: [compresor, electroventilador-condensador, unidad-control-climatizador]
+palabras: [F129, diésel, 32 bares, 2 bares, 16 bares, presostato triple]
 ```
 
 ## Misión
-Proteger el circuito frigorífico frente a presiones anormalmente altas o bajas y controlar la activación de las velocidades del electroventilador del radiador en motorizaciones diésel. (págs. 16-17).
+Supervisar la presión del agente frigorífico en el lado de alta presión para autorizar el funcionamiento del compresor y gestionar las velocidades de los electroventiladores. (pág. 16)
 
 ## Tipos y características
-Presostato cuádruple de 4 contactos instalado en la tubería de alta presión junto a la válvula de expansión en vehículos con motor diésel. (págs. 16-17).
+Conmutador de presión triple montado exclusivamente en las motorizaciones diésel, ubicado en la línea de alta presión junto a la válvula de expansión. Consta de dos interruptores internos independientes. (pág. 16)
 
 ## Principio de funcionamiento
-Consta de dos interruptores internos independientes:
-1. Interruptor de alta/baja presión: normalmente cerrado. Abre sus contactos si la presión desciende de 2 bares (falta de gas) o supera los 32 bares (sobrepresión), interrumpiendo la señal de conexión hacia la unidad J293 para desconectar el compresor.
-2. Interruptor de presión media: normalmente abierto. Cierra sus contactos cuando la presión alcanza los 16 bares, enviando un positivo de borne 15 a la unidad J293 para activar la 2ª velocidad del ventilador. (págs. 16-17).
+- **Interruptor de máxima/mínima presión:** Normally cerrado. Permite el paso de la señal de conexión del compresor enviada por el autoclima hacia la unidad J293. Se abre mecánicamente interrumpiendo la señal si la presión desciende por debajo de 2 bares (fuga de gas) o supera los 32 bares (sobrepresión). (pág. 16)
+- **Interruptor de presión media:** Normally abierto. Conectado a positivo de contacto (borne 15). Se cierra mecánicamente al alcanzar una presión aproximada de 16 bares, enviando una señal a la unidad J293 para conectar la 2ª velocidad de los electroventiladores del radiador. (págs. 16, 29)
+
+📷 IMAGEN: Ubicación del conmutador F129 en la tubería de alta presión junto a la válvula de expansión — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, pág. 16
 
 ## Valores de trabajo
-- Presión mínima de desconexión: < 2 bares (contacto abre).
-- Presión máxima de desconexión: > 32 bares (contacto abre).
-- Presión de conmutación de velocidad de ventilador: 16 bares (contacto cierra). (pág. 16).
+- Umbral de desconexión por baja presión: < 2 bares. (pág. 16)
+- Umbral de desconexión por alta presión: > 32 bares. (pág. 16)
+- Umbral de activación de la 2ª velocidad de ventiladores: aprox. 16 bares. (pág. 16)
 
 ## Anomalías frecuentes
-Agarrotamiento de los contactos internos, fugas de fluido en la rosca de montaje o fallos de conexión eléctrica. (págs. 16-17).
+No documentado en fuentes en la página 16.
 
 ## Comportamiento en avería
-No tiene función sustitutiva. Si el contacto de baja/alta se queda abierto, el compresor no se conecta jamás. Si no cierra el de presión media, la 2ª velocidad del ventilador no entra por presión de refrigerante. (págs. 16-17).
+- Si el interruptor de máxima/mínima se queda abierto, el compresor no conecta. (pág. 16)
+- Si el interruptor de presión media falla, la 2ª velocidad de los electroventiladores no se activa por presión del circuito frigorífico. (págs. 16, 29)
 
 ## Cómo comprobarlo
-No documentado en fuentes. (págs. 16-17).
+Mediante la función "08" (bloque de valores de medición, grupo 001, campo 2) en el equipo de autodiagnosis. (pág. 37)
 
 ## Mantenimiento
-No documentado en fuentes. (págs. 16-17).
+No documentado en fuentes en la página 16.
 
 ---
 
@@ -405,205 +145,263 @@ codigo: G65
 fabricante: SEAT
 fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
 paginas: "16-17"
-relacionados: [unidad-control-aire-acondicionado, transmisor-presion]
-palabras: [G65, transmisor de presión, PWM, motores gasolina, 16 bares]
+forma_parte_de: circuito-frigorifico
+relacionados: [compresor, electroventilador-condensador, unidad-control-climatizador]
+palabras: [G65, gasolina, PWM, señal modulada, 16 bares]
 ```
 
 ## Misión
-Medir de forma continua e instantánea la presión del fluido frigorífico en el ramal de alta presión para la gestión del compresor, electroventiladores y adaptación del ralentí en motorizaciones de gasolina. (págs. 16-17).
+Medir de forma continua el valor exacto de presión del agente frigorífico en el circuito de alta presión e informar a la unidad de control del motor y a la unidad del aire acondicionado. (págs. 16-17)
 
 ## Tipos y características
-Sensor de presión electrónico capacitivo/piezoeléctrico montado en el circuito de alta presión junto a la válvula de expansión en motores de gasolina. Emite una señal modulada en anchura de impulsos (PWM). (págs. 16-17).
+Sensor de presión electrónico montado en las motorizaciones de gasolina, ubicado junto a la válvula de expansión. Emite una señal de onda cuadrada modulada en anchura de impulso (PWM). (págs. 16-17)
 
 ## Principio de funcionamiento
-Transforma la presión del gas en un tren de impulsos eléctricos de frecuencia fija donde la anchura del impulso varía con la presión. Envía la señal simultáneamente a la unidad de control del motor y a la unidad de control del aire acondicionado J293. La unidad J293 conmuta la 2ª velocidad del ventilador al llegar a 16 bares y desconecta el compresor por presiones límite. (págs. 16-17).
+Transforma la presión física del gas frigorífico en una señal de alta frecuencia cuya anchura de impulso varía proporcionalmente a la presión. La unidad del aire acondicionado J293 procesa la señal para desacoplar el compresor por presión crítica (mínima o máxima) e iniciar la 2ª velocidad de los electroventiladores al alcanzar 16 bares. La unidad de control del motor utiliza la información para compensar el régimen de ralentí según la carga absorbida por el compresor. (págs. 16-17)
+
+📷 IMAGEN: Instalación del transmisor de presión electrónico G65 en la tubería de alta presión — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, pág. 16
 
 ## Valores de trabajo
-- Umbral de activación de la 2ª velocidad de ventiladores: 16 bares. (pág. 17).
+- Umbral de activación de la 2ª velocidad de ventiladores: 16 bares. (pág. 17)
 
 ## Anomalías frecuentes
-Fallo en la electrónica interna del sensor, corte o cortocircuito de la línea de señal PWM. (pág. 17).
+No documentado en fuentes en las páginas 16-17.
 
 ## Comportamiento en avería
-La unidad de control del aire acondicionado desactiva el compresor inmediatamente. La avería de este transmisor únicamente queda registrada en la memoria de averías de la unidad de control del motor. (pág. 17).
+- La unidad de control del aire acondicionado desactiva de inmediato el compresor. (pág. 17)
+- La avería de este transmisor queda registrada únicamente en la memoria de averías de la unidad de control del motor. (pág. 17)
 
 ## Cómo comprobarlo
-No documentado en fuentes. (págs. 16-17).
+A través de la lectura de memoria de averías y bloques de valores de medición en la unidad de control del motor. (pág. 17)
 
 ## Mantenimiento
-No documentado en fuentes. (págs. 16-17).
+No documentado en fuentes en las páginas 16-17.
+
+---
+
+```yaml
+tipo: fundamento
+titulo: Gestión de acoplamiento del compresor por la unidad de control del motor
+entidad: regulacion-automatica
+variante: corte-compresor-motor
+area: climatizacion
+sistema: control-climatizacion
+fabricante: SEAT
+fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
+paginas: "18"
+relacionados: [compresor, embrague-compresor, unidad-control-climatizador]
+palabras: [corte compresor, plena carga, arranque, kick-down, señal negativo]
+```
+
+## Objeto
+Inhibir la conexión del compresor de aire acondicionado durante fases críticas de funcionamiento del motor térmico para priorizar la potencia de propulsión o facilitar el arranque. (pág. 18)
+
+## Fundamento
+El compresor de aire acondicionado representa una carga mecánica considerable para el motor. La unidad de control del motor interrumpe el acoplamiento magnético mediante una señal de inactivación en situaciones de alta demanda dinámica o inestabilidad de revoluciones. (pág. 18)
+
+## Desarrollo
+La unidad de control del motor genera y envía una señal de masa (negativo) hacia la unidad del aire acondicionado J293 para desactivar el compresor en las siguientes circunstancias:
+- Ausencia de señal de revoluciones del motor.
+- Durante los primeros 10 segundos transcurridos tras el arranque del motor.
+- Solicitud de plena aceleración (plena carga) a altas velocidades de circulación.
+- Accionamiento de la función kick-down en vehículos equipados con cambio automático.
+
+Al recibir esta señal de negativo, la unidad J293 interrumpe la alimentación de la bobina del acoplamiento magnético N25. (pág. 18)
+
+📷 IMAGEN: Diagrama de bloques entre la unidad de control del motor, la unidad de climatización y la unidad J293 — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, pág. 18
+
+## Valores de referencia
+- Tiempo de inhibición tras el arranque del motor: 10 segundos. (pág. 18)
+
+## Errores de concepto frecuentes
+- Suponer que el desacoplamiento del compresor en aceleraciones intensas se debe a una avería del presostato o de la unidad del climatizador. (pág. 18)
 
 ---
 
 ```yaml
 tipo: componente
-titulo: Conmutador térmico del ventilador
+titulo: Conmutador térmico del ventilador del radiador
 entidad: conmutador-termico-ventilador
-area: climatizacion
+area: motor
 sistema: refrigeracion-motor
 codigo: F18
 fabricante: SEAT
 fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
 paginas: "19"
-relacionados: [electroventilador-condensador, unidad-control-aire-acondicionado]
-palabras: [F18, termocontacto, radiador, 95 ºC, 105 ºC, 1ª velocidad, 2ª velocidad]
+forma_parte_de: circuito-refrigeracion-motor
+relacionados: [electroventilador-condensador, unidad-control-climatizador]
+palabras: [F18, 95 ºC, 105 ºC, termoswitch, 1ª velocidad, 2ª velocidad]
 ```
 
 ## Misión
-Conectar directamente o solicitar a la unidad de aire acondicionado la activación de las velocidades del electroventilador en función de la temperatura del líquido refrigerante del motor. (pág. 19).
+Conectar directamente o gobernar las dos velocidades de los electroventiladores según la temperatura del líquido refrigerante del motor. (pág. 19)
 
 ## Tipos y características
-Termocontacto escalonado de doble escalón montado en la carcasa del radiador de líquido refrigerante. Consta de dos interruptores bimetálicos normalmente abiertos. (pág. 19).
+Termostato térmico doble normalmente abierto roscado en el depósito del radiador de líquido refrigerante. (pág. 19)
 
 ## Principio de funcionamiento
-- El primer interruptor cierra al alcanzar los 95 ºC de temperatura de líquido refrigerante, alimentando con positivo (30) directamente a los motores de los ventiladores para activar la 1ª velocidad. (pág. 19).
-- El segundo interruptor cierra a los 105 ºC, enviando una señal de positivo (30) a la unidad de control del aire acondicionado J293, la cual activa la 2ª velocidad. (pág. 19).
+- **Primer conmutador interno:** Cierra sus contactos cuando la temperatura del líquido refrigerante alcanza 95 ºC, enviando corriente de positivo directo (borne 30) a los motores de los ventiladores para activar la 1ª velocidad. (pág. 19)
+- **Segundo conmutador interno:** Cierra sus contactos cuando la temperatura alcanza 105 ºC, enviando una señal de positivo (borne 30) a la unidad de control del aire acondicionado J293 para activar la 2ª velocidad. (págs. 19, 29)
+
+📷 IMAGEN: Conmutador térmico F18 montado en el radiador de refrigerante — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, pág. 19
 
 ## Valores de trabajo
-- Cierre del primer interruptor (1ª velocidad): 95 ºC.
-- Cierre del segundo interruptor (2ª velocidad): 105 ºC.
-- Alimentación: Positivo directo de batería (borne 30). (pág. 19).
+- Temperatura de cierre de 1ª velocidad: 95 ºC. (pág. 19)
+- Temperatura de cierre de 2ª velocidad: 105 ºC. (pág. 19)
 
 ## Anomalías frecuentes
-Incrustaciones de cal o suciedad que aíslan térmicamente la ampolla, agarrotamiento de contactos bimetálicos. (pág. 19).
+No documentado en fuentes en la página 19.
 
 ## Comportamiento en avería
-No tiene función sustitutiva. Si el termocontacto falla, el electroventilador no entrará por temperatura de motor, pudiendo producir sobrecalentamientos al ralentí o en retenciones. (pág. 19).
+- Si no cierra el primer contacto, los ventiladores no se activan por temperatura de motor a 95 ºC. (pág. 19)
+- Si no cierra el segundo contacto, se pierde el escalonamiento a 2ª velocidad por sobrecalentamiento del motor a 105 ºC. (págs. 19, 29)
 
 ## Cómo comprobarlo
-No documentado en fuentes. (pág. 19).
+Comprobación de continuidad eléctrica entre bornes en baño térmico a 95 ºC y 105 ºC. (pág. 19)
 
 ## Mantenimiento
-No documentado en fuentes. (pág. 19).
+No documentado en fuentes en la página 19.
 
 ---
 
 ```yaml
 tipo: componente
-titulo: Pulsadores de activación de la unidad de manejo e indicación
-entidad: unidad-mando-climatizador
-variante: pulsadores de activación
+titulo: Unidad de manejo e indicación - Pulsadores
+entidad: unidad-manejo-indicacion
+variante: pulsadores
 area: climatizacion
 sistema: control-climatizacion
 codigo: E87
 fabricante: SEAT
 fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
 paginas: "20"
-relacionados: [unidad-control-climatizador, radiocasete-comunicacion]
-palabras: [E87, pulsadores, bus de datos, 18 cables, radiocasete, 22 ºC]
+forma_parte_de: control-climatizacion
+relacionados: [unidad-control-climatizador]
+palabras: [E87, bus 18 cables, bus 1 cable, radiocasete, teclado]
 ```
 
 ## Misión
-Permitir al usuario seleccionar las funciones del climatizador o la calefacción motorizada (temperatura, velocidad de turbina, recirculación, modo AC/AUTO). (pág. 20).
+Permitir al usuario seleccionar la temperatura, velocidad de la turbina, modo de recirculación, encendido del aire acondicionado y modo de trabajo del sistema. (pág. 20)
 
 ## Tipos y características
-Regleta de pulsadores integrada con el radiocasete y el display formando un bloque único compacto en la consola central. (pág. 20).
+Botonera de pulsadores integrada en el conjunto frontal compacto de la consola central que agrupa la climatización, el radiocasete y la pantalla. (pág. 20)
 
 ## Principio de funcionamiento
-Al presionar un pulsador, la orden se envía a través de un bus de datos de 18 cables al radiocasete. La unidad del radiocasete retransmite la información a la unidad de control J255 por un bus de datos monofilamento (1 cable). La regleta es alimentada eléctricamente desde el propio radiocasete. (pág. 20).
+Al presionar cualquier pulsador, la orden se envía a través de un bus de datos paralelo de 18 cables hacia la unidad del radiocasete. La radio procesa la pulsación y la retransmite mediante un bus de datos de 1 solo cable hacia la unidad de control del climatizador J255. (pág. 20)
+
+📷 IMAGEN: Frontal de la unidad de manejo e indicación E87 con el desglose de los pulsadores de climatización y radio — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, pág. 20
 
 ## Valores de trabajo
-Bus de conexión E87 - Radiocasete: 18 cables.
-Bus de conexión Radiocasete - UCE J255: 1 cable. (pág. 20).
+- Alimentación eléctrica de la botonera: proporcionada directamente por el módulo del radiocasete. (pág. 20)
 
 ## Anomalías frecuentes
-Desgaste mecánico de los contactos de los pulsadores o interrupción en las líneas del bus de datos. (pág. 20).
+No documentado en fuentes en la página 20.
 
 ## Comportamiento en avería
-Al fallar un pulsador, el radiocasete emite una señal de avería general hacia la unidad J255 sin precisar el pulsador concreto. La unidad anula la señal de los pulsadores y pasa a modo automático con temperatura solicitada fija de 22 ºC, exterior de 20 ºC, desconecta el compresor y abre la recirculación a aire fresco. En calefacción motorizada mantiene los parámetros fijos vigentes al ocurrir la avería. (pág. 20).
+- Al fallar un pulsador, la radio emite un mensaje genérico de avería hacia la unidad J255 (sin identificar el botón concreto). (pág. 20)
+- La unidad J255 ignora todas las señales de la botonera y entra en un modo de emergencia: fija el autoclima en modo automático a 22 ºC solicitados, asume 20 ºC exteriores, desconecta el compresor y abre la entrada de aire fresco exterior. (pág. 20)
+- En calefacción motorizada, mantiene fijos los parámetros existentes antes del fallo. (pág. 20)
 
 ## Cómo comprobarlo
-No documentado en fuentes. (pág. 20).
+Mediante la función "08" (bloque de valores de medición, grupos 003 y 004) del equipo de autodiagnosis. (pág. 37)
 
 ## Mantenimiento
-No documentado en fuentes. (pág. 20).
+No documentado en fuentes en la página 20.
 
 ---
 
 ```yaml
 tipo: componente
 titulo: Display de la unidad de manejo e indicación
-entidad: display-climatizador
+entidad: display-unidad-manejo
 area: climatizacion
 sistema: control-climatizacion
 codigo: E87
 fabricante: SEAT
 fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
 paginas: "21"
-relacionados: [unidad-mando-climatizador, radiocasete-comunicacion]
-palabras: [E87, display, pantalla, bus de datos, cristal líquido, consola central]
+forma_parte_de: unidad-manejo-indicacion
+relacionados: [unidad-control-climatizador]
+palabras: [display, consola central, gran formato, bus 18 cables]
 ```
 
 ## Misión
-Visualizar de forma clara los parámetros de funcionamiento del autoclima o la calefacción motorizada, así como del radiocasete y del ordenador de a bordo. (pág. 21).
+Visualizar de forma clara los parámetros operativos de la climatización, datos del radiocasete y funciones del ordenador de a bordo. (pág. 21)
 
 ## Tipos y características
-Pantalla de cristal líquido (LCD) de grandes dimensiones situada en la consola central, integrada en el conjunto E87. Existen dos versiones según monte autoclima o calefacción motorizada. (pág. 21).
+Pantalla de cristal líquido (LCD) de gran formato integrada en el centro de la consola central. Existen dos variantes de pantalla según se monte autoclima (indicación en ºC) o calefacción motorizada (indicación por barras COLD/HOT). (pág. 21)
 
 ## Principio de funcionamiento
-La unidad de control J255 transmite los datos de funcionamiento mediante el bus de 1 cable al radiocasete. El radiocasete procesa los datos y excita los segmentos del display a través del bus interno de 18 cables. El radiocasete proporciona asimismo la alimentación eléctrica a la pantalla. (pág. 21).
+La unidad de control J255 transmite los datos de estado a través del bus de 1 cable al radiocasete. El radiocasete procesa los gráficos y excita los segmentos de la pantalla a través del bus de datos de 18 cables. (pág. 21)
+
+📷 IMAGEN: Muestra de indicaciones en el display para los sistemas Autoclima y Calefacción Motorizada — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, pág. 21
 
 ## Valores de trabajo
-No documentado en fuentes. (pág. 21).
+- Alimentación eléctrica de la pantalla: suministrada directamente por la unidad del radiocasete. (pág. 21)
 
 ## Anomalías frecuentes
-Fallo de píxeles/segmentos, rotura del cristal o pérdida de la línea de comunicación con el radiocasete. (pág. 21).
+No documentado en fuentes en la página 21.
 
 ## Comportamiento en avería
-Si falla la comunicación por el bus entre el radiocasete y la unidad de climatización, los datos del climatizador dejan de ser visibles en el display. Ante la avería del display es necesario sustituir el conjunto completo E87. (pág. 21).
+- Si falla la comunicación por bus entre la radio y la unidad J255, desaparece toda la información gráfica referente a la climatización en la pantalla. (pág. 21)
+- Si se avería el propio display, debe sustituirse la unidad de manejo e indicación E87 completa. (pág. 21)
 
 ## Cómo comprobarlo
-No documentado en fuentes. (pág. 21).
+Inspección visual del encendido de segmentos durante la prueba de autodiagnosis. (pág. 21)
 
 ## Mantenimiento
-Sustitución de la unidad completa de manejo e indicación E87 en caso de avería del display. (pág. 21).
+No documentado en fuentes en la página 21.
 
 ---
 
 ```yaml
 tipo: componente
-titulo: Motor de la trampilla de temperatura
+titulo: Servomotor de la trampilla de temperatura
 entidad: servomotor-trampilla
-variante: de temperatura
+variante: temperatura
 area: climatizacion
 sistema: distribucion-aire
 codigo: V68
 fabricante: SEAT
 fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
 paginas: "22"
-relacionados: [potenciometro-trampilla-temperatura, unidad-control-climatizador]
-palabras: [V68, servomotor, G92, trampilla de mezcla, corriente continua]
+forma_parte_de: unidad-climatizadora
+relacionados: [sensor-posicion-trampilla, unidad-control-climatizador]
+palabras: [V68, G92, corriente continua, giro limitado, tornillo sin fin]
 ```
 
 ## Misión
-Posicionar mecánicamente la trampilla de temperatura de la unidad climática para regular la mezcla de aire frío y caliente hacia el habitáculo. (pág. 22).
+Accionar mecánicamente el posicionamiento de la trampilla de mezcla de temperatura dentro de la unidad climática. (pág. 22)
 
 ## Tipos y características
-Servomotor eléctrico de corriente continua de giro limitado, situado en la parte inferior de la unidad climática, con el potenciómetro G92 integrado en su interior. (pág. 22).
+Motor eléctrico de corriente continua de giro limitado mediante engranaje de tornillo sin fin. Va ubicado en la parte inferior de la unidad climática e integra en su interior el potenciómetro de posición G92. (pág. 22)
 
 ## Principio de funcionamiento
-La unidad de control J255 alimenta el motor con positivo y negativo, invirtiendo la polaridad de sus bornes para cambiar el sentido de giro del motor térmico. El movimiento se transmite mediante un tornillo sin fin a una rueda de transmisión acoplada a la trampilla. (pág. 22).
+Recibe alimentación de corriente continua desde la unidad de control J255. La unidad invierte la polaridad de los bornes de alimentación para modificar el sentido de giro del motor, desplazando la trampilla hacia la posición de aire más caliente o más frío. (pág. 22)
+
+📷 IMAGEN: Despiece del motor V68 con su mecanismo de tornillo sin fin, rueda de transmisión y potenciómetro G92 — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, pág. 22
 
 ## Valores de trabajo
-Alimentación de polaridad variable (12 V CC). (pág. 22).
+- Tensión de excitación: 12 V con polaridad reversible. (pág. 22)
 
 ## Anomalías frecuentes
-Bloqueo mecánico de la piñonería interna de plástico, agarrotamiento de la trampilla o fallo del bobinado del motor eléctrico. (pág. 22).
+No documentado en fuentes en la página 22.
 
 ## Comportamiento en avería
-La trampilla de temperatura permanece inmóvil en la posición en que falló y la unidad de control disminuye la velocidad de la turbina para reducir el flujo de aire molesto. (pág. 22).
+- La trampilla permanece inmovilizada en la posición en que se produjo el fallo. (pág. 22)
+- La unidad de control reduce el régimen del soplador de aire para limitar la entrada incontrolada de flujo térmico. (pág. 22)
 
 ## Cómo comprobarlo
-Mediante la función de autodiagnóstico "03 - Diagnóstico de elementos actuadores", la unidad desplaza el motor V68 desde la posición mínima a la máxima para verificar su recorrido. (pág. 36).
+Mediante la función "03" (diagnosis de actuadores) y función "04" (ajuste básico en grupo 002) con el equipo de autodiagnosis. (págs. 36-37)
 
 ## Mantenimiento
-Tras la sustitución del motor V68 o de la unidad J255, es obligatorio realizar el procedimiento de ajuste básico (función 04, grupo 002) con el equipo de diagnosis. (pág. 36).
+Tras la sustitución del servomotor V68 o de la unidad de control J255, es obligatorio realizar el ajuste básico (grupo 002) para memorizar los topes mecánicos. (pág. 36)
 
 ---
 
 ```yaml
 tipo: componente
-titulo: Motor de la turbina de aire y regulador de régimen
+titulo: Turbina de aire e interior y regulador de régimen
 entidad: ventilador-habitaculo
 area: climatizacion
 sistema: distribucion-aire
@@ -611,121 +409,87 @@ codigo: V2 / J126
 fabricante: SEAT
 fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
 paginas: "22"
-relacionados: [unidad-control-climatizador, distribucion-aire]
-palabras: [V2, J126, turbina de aire, regulador de régimen, caudal de aire]
+forma_parte_de: unidad-climatizadora
+relacionados: [unidad-control-climatizador]
+palabras: [V2, J126, soplador, regulador electrónico, variación lineal de tensión]
 ```
 
 ## Misión
-Impulsar el caudal de aire necesario a través de la unidad climática para renovar y climatizar la atmósfera del habitáculo. (pág. 22).
+Impulsar el caudal de aire necesario a través de la unidad climática hacia los difusores del habitáculo. (pág. 22)
 
 ## Tipos y características
-Motor eléctrico impulsado por un módulo electrónico de potencia (regulador de régimen J126) en lugar de resistencias fijas en los sistemas con autoclima y calefacción motorizada. (págs. 6, 22).
+Conjunto formado por un electromotor soplador (V2) y una etapa de potencia o regulador electrónico de régimen (J126) montado directamente en el flujo de aire de la unidad climática. (pág. 22)
 
 ## Principio de funcionamiento
-La unidad de control J255 envía una señal de tensión de mando al regulador J126, el cual varía progresivamente la corriente aplicada al motor V2 para ajustar su velocidad de giro de manera continua. (págs. 22, 36).
+La unidad de control J255 envía una señal de pilotaje en tensión al regulador J126. El regulador modula progresivamente la corriente principal suministrada al motor V2, permitiendo un ajuste continuo del caudal de aire sin escalas fijas por resistencias. (pág. 22)
+
+📷 IMAGEN: Esquema e instalación de la turbina de aire V2 y el módulo regulador de régimen J126 — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, pág. 22
 
 ## Valores de trabajo
-Variación de tensión de regulación en pasos de 2,5 V de 0 V a máxima tensión durante diagnosis de actuadores. (pág. 36).
+- Tensión de salida regulada hacia la turbina: de 0 V a 12 V (en pasos progresivos de 2,5 V durante diagnosis). (págs. 22, 36)
 
 ## Anomalías frecuentes
-Desgaste de escobillas del motor V2, fallo de los transistores de potencia del regulador J126, agarrotamiento del rodamiento de la turbina. (pág. 22).
+No documentado en fuentes en la página 22.
 
 ## Comportamiento en avería
-No existe función sustitutiva. La avería se detecta de inmediato al interrumpirse o reducirse drásticamente el flujo de aire por los difusores. (pág. 22).
+- Interrupción total o falta de variación en el flujo de soplado de aire hacia el habitáculo. (pág. 22)
 
 ## Cómo comprobarlo
-Se comprueba mediante la función "03 - Diagnóstico de elementos actuadores": el sistema realiza una regulación progresiva de la velocidad desde 0 V hasta la máxima en pasos de 2,5 V cada 2 segundos. (pág. 36).
+Mediante la función "03" (diagnosis de actuadores) y función "08" (bloque de valores de medición, grupo 005) con el equipo de autodiagnosis. (págs. 36-37)
 
 ## Mantenimiento
-No documentado en fuentes. (pág. 22).
+No documentado en fuentes en la página 22.
 
 ---
 
 ```yaml
 tipo: componente
-titulo: Motor de la trampilla de recirculación
+titulo: Servomotor de la trampilla de recirculación
 entidad: servomotor-trampilla
-variante: de recirculación
+variante: recirculacion
 area: climatizacion
 sistema: distribucion-aire
 codigo: V113
 fabricante: SEAT
 fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
 paginas: "23"
-relacionados: [unidad-control-climatizador, recirculacion]
-palabras: [V113, recirculación, tres pistas, giro libre, aire fresco]
+forma_parte_de: unidad-climatizadora
+relacionados: [unidad-control-climatizador]
+palabras: [V113, giro libre, tres pistas, recirculación, aire fresco]
 ```
 
 ## Misión
-Cambiar la posición de la trampilla de recirculación para conmutar entre la admisión de aire fresco exterior y la recirculación del aire interno del habitáculo. (pág. 23).
+Alternar la entrada de aire a la unidad climática entre aire fresco del exterior y aire recirculado del habitáculo. (pág. 23)
 
 ## Tipos y características
-Motor eléctrico de corriente continua de giro libre en un único sentido, instalado en la parte superior de la unidad climática. Dispone internamente de tres pistas eléctricas de contactos. (pág. 23).
+Motor eléctrico de corriente continua de giro libre en un solo sentido. Ubicado en la parte superior del cuerpo de la unidad climática y dotado de tres pistas de contacto internas. (pág. 23)
 
 ## Principio de funcionamiento
-Tiene tres bornes: uno con masa continua y dos alimentados alternativamente a 12 V según el movimiento requerido. Al recibir tensión en uno de los contactos, el motor gira alimentándose internamente a través de una de sus pistas de contacto hasta que el cursor llega al final de pista y se detiene sobre la pista no excitada, quedando listo para la siguiente conmutación. (pág. 23).
+Alimentado a 12 V con un borne de masa permanente y dos bornes de positivo seleccionables de forma alternativa. Al recibir positivo por una de las pistas, el motor gira moviendo la palanca de la trampilla hasta que el cursor sale de la pista conductora e interrumpe la corriente, deteniéndose en la posición exacta (aire fresco o recirculación). (pág. 23)
+
+📷 IMAGEN: Módulo del motor V113 y esquema de excitación por pistas deslizantes internas — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, pág. 23
 
 ## Valores de trabajo
-Tensión de alimentación: 12 V CC. (pág. 23).
+- Tensión de excitación: 12 V. (pág. 23)
 
 ## Anomalías frecuentes
-Desgaste o suciedad en las pistas eléctricas internas, rotura de las palancas o guías de accionamiento de la trampilla. (pág. 23).
+No documentado en fuentes en la página 23.
 
 ## Comportamiento en avería
-No tiene función sustitutiva. Cada vez que se conecta el autoclima, parpadean todos los dígitos del display. (pág. 23).
+- La trampilla de recirculación no cambia de posición. (pág. 23)
+- Parpadean todos los dígitos de la pantalla al conectar el autoclima. (pág. 23)
 
 ## Cómo comprobarlo
-Se comprueba mediante la función "03 - Diagnóstico de elementos actuadores": el motor desplaza la trampilla desde la posición de aire exterior a recirculación y viceversa. (pág. 36).
+Mediante la función "03" (diagnosis de actuadores) y función "08" (bloque de valores de medición, grupo 001, campo 3) con el equipo de autodiagnosis. (págs. 36-37)
 
 ## Mantenimiento
-No documentado en fuentes. (pág. 23).
+No documentado en fuentes en la página 23.
 
 ---
 
 ```yaml
 tipo: componente
-titulo: Motor para la turbina del transmisor de temperatura interior
-entidad: sensor-temperatura-interior
-variante: turbina de aspiración
-area: climatizacion
-sistema: control-climatizacion
-codigo: V42
-fabricante: SEAT
-fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
-paginas: "24"
-relacionados: [sensor-temperatura-interior, unidad-control-climatizador]
-palabras: [V42, turbina, G56, rotor imantado, placa electrónica]
-```
-
-## Misión
-Aspirar y forzar un flujo continuo de aire procedente del habitáculo hacia la resistencia NTC del sensor G56 para asegurar mediciones térmicas precisas y sin estancamiento. (pág. 24).
-
-## Tipos y características
-Pequeño motor eléctrico integrado con el transmisor G56. Consta de un estator, un rotor imantado acoplado a la turbina y una placa electrónica de gestión interna. (pág. 24).
-
-## Principio de funcionamiento
-La unidad J255 alimenta el motor V42 con positivo y negativo siempre que la línea de encendido (borne 15) esté conectada. La placa electrónica del motor gobierna el giro y detecta posibles fallos en el motor. (pág. 24).
-
-## Valores de trabajo
-Alimentación: Borne 15 (12 V CC). (pág. 24).
-
-## Anomalías frecuentes
-Bloqueo del rotor por acumulación de pelusa o polvo del habitáculo, fallo de los componentes de la placa electrónica integrada. (pág. 24).
-
-## Comportamiento en avería
-Al detectar una avería en el motor V42, la unidad del autoclima aplica factores de corrección matemáticos a la temperatura medida por el transmisor G56 para simular un valor aproximado al real. (pág. 24).
-
-## Cómo comprobarlo
-No documentado en fuentes. (pág. 24).
-
-## Mantenimiento
-Limpieza periódica del conducto de aspiración para evitar el agarrotamiento de la turbina por suciedad. (pág. 24).
-
----
-
-```yaml
-tipo: componente
-titulo: Acoplamiento magnético
+titulo: Acoplamiento magnético del compresor
 entidad: embrague-compresor
 area: climatizacion
 sistema: circuito-frigorifico
@@ -733,190 +497,174 @@ codigo: N25
 fabricante: SEAT
 fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
 paginas: "25"
-relacionados: [compresor, unidad-control-aire-acondicionado]
-palabras: [N25, acoplamiento magnético, electroembrague, bobina, polea]
+forma_parte_de: compresor
+relacionados: [compresor, unidad-control-climatizador]
+palabras: [N25, acoplamiento magnético, electroimán, 12 V, polea]
 ```
 
 ## Misión
-Acoplar mecánicamente el eje del compresor a la polea de arrastre para que gire solidario con el motor térmico cuando se solicita la producción de frío. (pág. 25).
+Conectar o desconectar mecánicamente el arrastre del compresor de aire acondicionado a la polea impulsada por el motor térmico. (pág. 25)
 
 ## Tipos y características
-Electroembrague magnético montado en el plato frontal del compresor del aire acondicionado. (pág. 25).
+Embrague electromagnético montado en el extremo frontal del cuerpo del compresor. Consta de bobina electromagnética, polea de arrastre libre y disco de acoplamiento estriado al eje. (pág. 25)
 
 ## Principio de funcionamiento
-Al recibir una tensión de 12 V procedentes de la unidad de control del aire acondicionado J293, la bobina electromagnética crea un campo magnético que atrae la placa del embrague contra la polea en movimiento, transmitiendo el par motor al eje del compresor. (págs. 25, 29).
+Al recibir una señal de positivo de 12 V desde la unidad del aire acondicionado J293, la bobina genera un campo magnético que atrae axialmente el disco de acoplamiento contra la polea en giro, haciendo rotar el eje del compresor. Al interrumpirse la corriente, unos muelles separan el disco deshabilitando el compresor. (pág. 25)
+
+📷 IMAGEN: Sección del acoplamiento magnético N25 sobre el cuerpo del compresor — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, pág. 25
 
 ## Valores de trabajo
-Tensión de activación: 12 V CC. (pág. 25).
+- Tensión de alimentación: 12 V de corriente continua. (pág. 25)
 
 ## Anomalías frecuentes
-Bobina cortada o derivada a masa, separación (entrehierro) excesiva por desgaste de la superficie de fricción, cortocircuito. (pág. 25).
+No documentado en fuentes en la página 25.
 
 ## Comportamiento en avería
-No existe función sustitutiva. El compresor no gira y el aire que entra al habitáculo no se enfría en absoluto. (pág. 25).
+- El compresor no gira y la instalación es incapaz de generar frío en el habitáculo. (pág. 25)
 
 ## Cómo comprobarlo
-En la función "03 - Diagnóstico de elementos actuadores", la unidad ejecuta la conexión y desconexión repetida del acoplamiento N25 cada dos segundos para verificar el chasquido de acoplamiento. (pág. 36).
+Mediante la función "03" (diagnosis de actuadores) y función "08" (bloque de valores de medición, grupo 001, campo 1) con el equipo de autodiagnosis. (págs. 36-37)
 
 ## Mantenimiento
-No documentado en fuentes. (pág. 25).
+No documentado en fuentes en la página 25.
 
 ---
 
 ```yaml
 tipo: componente
-titulo: Ventiladores de líquido refrigerante
+titulo: Electroventiladores del radiador y condensador
 entidad: electroventilador-condensador
-area: climatizacion
-sistema: circuito-frigorifico
+area: motor
+sistema: refrigeracion-motor
 codigo: V7 / V35
 fabricante: SEAT
 fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
 paginas: "25"
-relacionados: [unidad-control-aire-acondicionado, condensador]
-palabras: [V7, V35, electroventilador, 1ª velocidad, 2ª velocidad, resistencia previa]
+forma_parte_de: circuito-refrigeracion-motor
+relacionados: [conmutador-termico-ventilador, unidad-control-climatizador]
+palabras: [V7, V35, dos velocidades, resistencia serie, canalizador]
 ```
 
 ## Misión
-Generar un flujo forzado de aire a través del condensador y del radiador para enfriar el fluido frigorífico R134a y el líquido refrigerante del motor. (pág. 25).
+Forzar el paso de aire a través del condensador y del radiador para condensar el gas frigorífico y enfriar el líquido refrigerante del motor. (pág. 25)
 
 ## Tipos y características
-Dos electroventiladores independientes montados en el frontal del vano motor, cada uno con motor eléctrico de dos velocidades. (pág. 25).
+Pareja de motores eléctricos independientes de dos velocidades montados sobre el canalizador de aire posterior del radiador. (pág. 25)
 
 ## Principio de funcionamiento
-- 1ª velocidad: Se activa a través de una resistencia eléctrica integrada en el canalizador. Se alimenta por la unidad J293 (al conectar el compresor) o por el conmutador térmico F18 al alcanzar 95 ºC. (págs. 25, 29).
-- 2ª velocidad: Se alimenta directamente con 12 V sin resistencia desde la unidad J293 cuando la presión en el circuito frigorífico supera 16 bares (vía F129/G65) o la temperatura del motor supera 105 ºC (vía F18). (págs. 25, 29).
+- **Primera velocidad:** Al recibir positivo desde el conmutador térmico F18 (a 95 ºC) o desde la unidad J293 (al conectar el compresor), la corriente pasa a través de una resistencia eléctrica integrada reduciendo la velocidad de giro. (págs. 25, 29)
+- **Segunda velocidad:** Al recibir positivo desde la unidad J293 (por presión > 16 bares en F129/G65 o por temperatura > 105 ºC en F18), la corriente alimenta directamente los devanados del motor a máxima potencia. (págs. 25, 29)
+
+📷 IMAGEN: Módulo con los dos ventiladores independientes V7 y V35 instalados sobre el canalizador — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, pág. 25
 
 ## Valores de trabajo
-- Alimentación: 12 V CC.
-- Conexión 1ª velocidad: señal de compresor o t ºC motor = 95 ºC.
-- Conexión 2ª velocidad: P frigorífica > 16 bares o t ºC motor = 105 ºC. (págs. 25, 29).
+- Tensión de alimentación: 12 V. (pág. 25)
 
 ## Anomalías frecuentes
-Resistencia de la 1ª velocidad cortada, escobillas quemadas, fusible principal fundido en el portafusibles de la batería. (pág. 25).
+No documentado en fuentes en la página 25.
 
 ## Comportamiento en avería
-No existe función sustitutiva. El fluido frigorífico sube drásticamente de presión por falta de condensación, provocando la desconexión del compresor por alta presión (32 bares). (págs. 16, 25).
+- Elevación anómala de la presión de alta en el circuito frigorífico con falta de rendimiento frigorífico al ralentí. (pág. 25)
+- Sobrecalentamiento del líquido refrigerante del motor térmico. (pág. 25)
 
 ## Cómo comprobarlo
-No documentado en fuentes. (pág. 25).
+Mediante excitación directa con corriente de batería o verificando la respuesta en la función "03" de diagnosis de actuadores de la unidad del motor. (págs. 25, 36)
 
 ## Mantenimiento
-No documentado en fuentes. (pág. 25).
+No documentado en fuentes en la página 25.
 
 ---
 
 ```yaml
-tipo: fundamento
-titulo: Unidad del equipo de mando electrónico J255
+tipo: componente
+titulo: Unidad de control del aire acondicionado
 entidad: unidad-control-climatizador
-area: climatizacion
-sistema: control-climatizacion
-codigo: J255
-fabricante: SEAT
-fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
-paginas: "26-28, 34"
-relacionados: [autodiagnostico-climatizador, regulacion-automatica]
-palabras: [J255, modo automático, modo semiautomático, modo manual, codificación]
-```
-
-## Objeto
-Procesar las señales de los sensores, los comandos del usuario y gestionar la regulación térmica y la activación de los actuadores del autoclima o de la calefacción motorizada. (págs. 26-28).
-
-## Fundamento
-La unidad J255 es idéntica físicamente para el autoclima y para la calefacción motorizada. Su programa de funcionamiento se determina mediante una codificación externa por cableado en el conector de la unidad. (pág. 34).
-
-## Desarrollo
-1. Codificación: Al conectar la unidad al mazo de cables, si el contacto 21 recibe masa a través de un puente de codificación, la unidad trabaja como calefacción motorizada. Si no recibe masa en el contacto 21, funciona como autoclima. (pág. 34).
-2. Modos de funcionamiento del Autoclima:
-   - Modo automático (AUTO): La unidad evalúa la temperatura solicitada, exterior, interior y del aire de entrada. Controla automáticamente la trampilla de temperatura, velocidad de turbina, recirculación y conexión del compresor. (págs. 26-27).
-   - Modo semiautomático: La regulación de temperatura se mantiene activa, pero el usuario fija manualmente uno o varios parámetros (velocidad de turbina, recirculación o conexión AC). Desaparece la palabra AUTO del display. (pág. 27).
-   - Modo manual: La unidad acciona los componentes únicamente a petición del usuario desde los pulsadores. En el display la temperatura se indica con letras (p. ej. COLD / HOT) en lugar de ºC. (pág. 28).
-3. Iluminación: Regula la intensidad luminosa de los leds de los pictogramas del mando de distribución según la señal del regulador E20. (pág. 28).
-
-## Valores de referencia
-Masa en el contacto 21 del conector de J255: Calefacción motorizada.
-Sin masa en contacto 21: Autoclima. (pág. 34).
-
-## Errores de concepto frecuentes
-Creer que existen dos unidades de control físicamente distintas para recambio (una para autoclima y otra para calefacción motorizada); se comercializa una única unidad de control J255 cuya lógica de funcionamiento se selecciona mediante la masa presente en el pín 21 del conector. (pág. 34).
-
----
-
-```yaml
-tipo: fundamento
-titulo: Unidad de control del aire acondicionado J293
-entidad: unidad-control-aire-acondicionado
+variante: reles
 area: climatizacion
 sistema: control-climatizacion
 codigo: J293
 fabricante: SEAT
 fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
 paginas: "29"
+forma_parte_de: control-climatizacion
 relacionados: [embrague-compresor, electroventilador-condensador, presostato]
-palabras: [J293, rele de aire acondicionado, acoplamiento magnético, ventiladores, corte por motor]
+palabras: [J293, módulo de relés, acoplamiento magnético, velocidades electroventiladores]
 ```
 
-## Objeto
-Gestionar la alimentación eléctrica de potencia hacia el acoplamiento magnético N25 del compresor y la excitación de los electroventiladores V7 y V35. (pág. 29).
+## Misión
+Gobernar la alimentación eléctrica de alta potencia del acoplamiento magnético N25 y gestionar la activación de las dos velocidades de los electroventiladores V7/V35. (pág. 29)
 
-## Fundamento
-Recibe las solicitudes de conexión desde la unidad de climatización J255 y contrasta dichas órdenes con los interruptores de seguridad de presión (F129/G65), temperatura de agua (F38/F18) y las señales de inhibición enviadas por la unidad de control del motor. (pág. 29).
+## Tipos y características
+Módulo electromecánico con etapas de potencia y relés integrado en la caja de aguas / vano motor. (pág. 29)
 
-## Desarrollo
-1. Control del acoplamiento magnético N25:
-   - Para conectar N25 requiere recibir la señal de positivo desde la UCE J255. Dicha señal debe atravesar previamente el conmutador de presión F129 (cerrado en rango 2-32 bares) y el interruptor térmico F38 (cerrado con t > 5 ºC) o bien estar en margen correcto en el sensor G65. (pág. 29).
-   - Simultáneamente exige la ausencia de señal de masa enviada por la UCE del motor (quien inhibe el compresor en aceleración brusca, kick-down, primeros 10 s tras arranque o falta de r.p.m.). (págs. 18, 29).
-2. Control de ventiladores V7 y V35:
-   - Conecta la 1ª velocidad al activarse el compresor o por señal de 95 ºC del termocontacto F18. (pág. 29).
-   - Conecta la 2ª velocidad si la presión del circuito alcanza 16 bares (vía F129/G65) o el refrigerante alcanza 105 ºC (vía F18). (pág. 29).
+## Principio de funcionamiento
+- **Gobierno del compresor:** Al recibir la señal de activación enviada por la unidad J255 (pasando previamente por el presostato F129/G65 y el termostato F38) y constatar la ausencia de señal de corte por parte de la UCE del motor, conecta el relé interno para alimentar el acoplamiento N25. (pág. 29)
+- **Gobierno de ventiladores:** Activa la 1ª velocidad al conectar el compresor o al recibir señal del termocontacto F18 (95 ºC). Activa la 2ª velocidad si la presión del gas supera los 16 bares (señal de F129/G65) o si la temperatura del agua alcanza los 105 ºC (señal de F18). (pág. 29)
 
-## Valores de referencia
-Inhibición por UCE de motor: envío de masa a la unidad J293.
-Corte de compresor por baja presión: < 2 bares.
-Corte de compresor por alta presión: > 32 bares. (págs. 16, 18, 29).
+📷 IMAGEN: Diagrama de bloques funcional de las entradas y salidas de la unidad J293 — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, pág. 29
 
-## Errores de concepto frecuentes
-Sustituir la unidad J293 ante la falta de acoplamiento del compresor sin comprobar la línea de inhibición procedente de la UCE de motor; si la UCE de motor envía masa fija a la J293, el compresor no se conectará aunque el circuito frigorífico esté en perfectas condiciones. (págs. 18, 29).
+## Valores de trabajo
+- Tensión de alimentación: 12 V (protegido por fusibles de potencia S164 y S180). (pág. 32)
+
+## Anomalías frecuentes
+No documentado en fuentes en la página 29.
+
+## Comportamiento en avería
+- Incapacidad para accionar el acoplamiento electromagnético del compresor. (pág. 29)
+- Fallo en la activación de las velocidades de los electroventiladores de refrigeración. (pág. 29)
+
+## Cómo comprobarlo
+Comprobación de tensiones de entrada de señales en el conector y salidas hacia N25 y V7/V35. (págs. 29, 32)
+
+## Mantenimiento
+No documentado en fuentes en la página 29.
 
 ---
 
 ```yaml
-tipo: fundamento
-titulo: Autodiagnóstico del autoclima y calefacción motorizada
+tipo: procedimiento
+titulo: Autodiagnóstico de los equipos de mando electrónico
 entidad: autodiagnostico-climatizador
 area: climatizacion
 sistema: control-climatizacion
 codigo: J255
 fabricante: SEAT
 fuente: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf"
-paginas: "34-38"
+paginas: "34-37"
 relacionados: [unidad-control-climatizador]
-palabras: [autodiagnóstico, memoria de averías, dirección 08, función 01, función 02, función 03, función 04, función 08]
+palabras: [autodiagnóstico, dirección 08, función 01, función 02, función 03, función 04, función 08]
 ```
 
-## Objeto
-Supervisar eléctricamente los sensores y actuadores del sistema de climatización, memorizar los fallos detectados y permitir el diagnóstico guiado en taller a través del equipo de diagnosis. (págs. 34-38).
+## Objeto y alcance
+Identificar averías registradas en sensores y actuadores, verificar el funcionamiento de los componentes mediante pruebas guiadas y analizar parámetros operativos en tiempo real. (págs. 34-37)
 
-## Fundamento
-La unidad de control J255 vigila constantemente sus circuitos de entrada y salida. Para acceder a la autodiagnosis se utiliza el equipo de diagnosis conectado al conector de 16 polos bajo la dirección "08 - Aire acondicionado". (págs. 34-35).
+## Condiciones previas
+- Tensión de la batería correcta. (pág. 34)
+- Encendido conectado (borne 15). (pág. 34)
 
-## Desarrollo
-Las funciones disponibles en el menú de autodiagnosis son:
-- Función 01 (Versión de la unidad de control): Muestra la clave de recambio (p. ej. 6K0959291), versión de software (p. ej. X01), código de taller y tipo de equipo (código 220 para autoclima, código 110 para calefacción motorizada). (pág. 34).
-- Función 02 (Consultar memoria de averías): Muestra los fallos de sensores y actuadores memorizados. Distingue entre averías permanentes (requieren reparación y borrado manual) y esporádicas (se borran automáticamente tras 40 puestas en marcha sin repetirse). (págs. 34-35).
-- Función 03 (Diagnóstico de elementos actuadores): Activa secuencialmente el acoplamiento N25 (2 s ON/OFF), turbina V2 (pasos de 2,5 V), motor V68 (mínimo a máximo) y motor V113 (recirculación a aire fresco). (pág. 36).
-- Función 04 (Ajuste básico): Ejecuta la calibración y memorización de topes del motor V68 seleccionando el grupo 002. Obligatorio tras sustituir V68 o J255. (pág. 36).
-- Función 05 (Borrar memoria de averías). (pág. 34).
-- Función 06 (Finalizar emisión). (pág. 34).
-- Función 08 (Leer bloque de valores de medición): Muestra parámetros reales en tiempo real (grupos 001 a 006: estados del compresor, presostato, posiciones de potenciómetro V68 en voltios, estado de pulsadores, temperaturas NTC y posición del mando de distribución en %). (págs. 36-37).
+## Equipo y material
+- Equipo de diagnosis (V.A.G 1551, V.A.G 1552 o lector compatible) conectado al conector de diagnóstico de 16 polos T16. (págs. 31, 34)
+
+## Pasos
+1. Conectar el equipo de diagnosis e ingresar mediante el código de dirección "08 - Aire acondicionado". (pág. 34)
+2. **Función 01 (Versión de la unidad):** Consultar el código de recambios, la versión del software y el tipo de equipo (reconoce autoclima o calefacción motorizada mediante la presencia del puente a masa en el pin 21). (pág. 34)
+3. **Función 02 (Consultar memoria de averías):** Leer los fallos memorizados (distingue entre esporádicas y permanentes). (pág. 35)
+4. **Función 03 (Diagnóstico de actuadores):** Ejecutar la prueba de elementos (activa cíclicamente N25, la turbina V2 en rampa de 0 a 12 V, el servomotor V68 de tope a tope y V113 entre aire fresco y recirculación). (pág. 36)
+5. **Función 04 (Iniciar ajuste básico):** Acceder al grupo "002" para que la unidad reconozca y grabe electrónicamente la posición real del servomotor de la trampilla de temperatura V68. (pág. 36)
+6. **Función 05 (Borrar memoria de averías):** Borrar el registro de fallos una vez subsanados. (pág. 34)
+7. **Función 08 (Leer bloque de valores de medición):** Analizar los grupos de indicación 001 al 006 para evaluar presiones, temperaturas de NTC, estados de pulsadores y voltajes en tiempo real. (pág. 37)
 
 ## Valores de referencia
-Dirección de acceso en equipo de diagnosis: "08".
-Averías esporádicas: borradas tras 40 ciclos de arranque sin fallo.
-Código de tipo de equipo en función 01: 220 = Autoclima, 110 = Calefacción motorizada. (págs. 34-35).
+- Código de dirección del sistema: 08. (pág. 34)
+- Criterio de borrado automático de averías esporádicas: tras 40 puestas en marcha sin reproducirse el fallo. (pág. 34)
+- Grupo de ajuste básico para servomotor V68: Grupo 002 (valores en voltios entre 0,76 V y 4,21 V). (págs. 36-37)
 
-## Errores de concepto frecuentes
-Intentar borrar la memoria de averías sin solucionar la falla física previa; si el fallo es permanente, permanecerá grabado en la unidad de control. (págs. 34-35).
+## Verificación final
+Comprobar que al reconectar el climatizador ya no parpadean los dígitos del display de la consola central y la memoria de averías permanece limpia. (págs. 12, 34)
 
-COBERTURA: documento «CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf», páginas 1 a 38 de 38. [completo]
+## Seguridad y normativa
+No documentado en fuentes en las páginas 34-37.
+
+---
+
+COBERTURA: documento «CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf», páginas 15 a 38 de 38. [completo]

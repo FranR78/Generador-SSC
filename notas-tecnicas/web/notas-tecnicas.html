@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">569 notas · 24/09/2026</p>
+  <p class="sidebar-meta">577 notas · 24/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -269,7 +269,7 @@
     <li><a href="#nt17">NT17 · Silenciador-depósito receptor</a></li>
     <li><a href="#grp-tuberias-y-racores">Tuberías, canalizaciones y juntas de estanqueidad del circuito frigorífico <span class="menu-cuenta">3 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
-    <li><a href="#grp-regulacion-automatica">Sistemas y opciones de climatización en el automóvil <span class="menu-cuenta">31 fuentes</span></a></li>
+    <li><a href="#grp-regulacion-automatica">Sistemas y opciones de climatización en el automóvil <span class="menu-cuenta">32 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Fluidos frigoríficos</span></li>
     <li><a href="#grp-refrigerante-r12">Agente frigorífico R12 <span class="menu-cuenta">2 fuentes</span></a></li>
     <li><a href="#grp-refrigerante-r1234yf">Agente frigorífico R1234yf <span class="menu-cuenta">4 fuentes</span></a></li>
@@ -342,12 +342,12 @@
     <li><a href="#nt93">NT93 · Circuito de climatización con CO2 (R74</a></li>
     <li><a href="#nt94">NT94 · Limpieza y eliminación de humedad en c</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
-    <li><a href="#grp-unidad-control-climatizador">Unidad de control de climatización <span class="menu-cuenta">10 fuentes</span></a></li>
+    <li><a href="#grp-unidad-control-climatizador">Unidad de control de climatización <span class="menu-cuenta">11 fuentes</span></a></li>
     <li><a href="#grp-sensor-temperatura-ntc-exterior">Termosensor de temperatura exterior <span class="menu-cuenta">14 fuentes</span></a></li>
     <li><a href="#grp-sensor-temperatura-ntc-interior">Termosensor del tablero de instrumentos con turbina de aire <span class="menu-cuenta">17 fuentes</span></a></li>
     <li><a href="#grp-fotosensor-solar">Fotosensor de radiación solar <span class="menu-cuenta">5 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Distribución de aire</span></li>
-    <li><a href="#grp-servomotor-trampilla">Servomotores de las chapaletas de aire <span class="menu-cuenta">22 fuentes</span></a></li>
+    <li><a href="#grp-servomotor-trampilla">Servomotores de las chapaletas de aire <span class="menu-cuenta">24 fuentes</span></a></li>
     <li><a href="#grp-distribucion-aire">Conducción del aire en el calefactor/climatizador <span class="menu-cuenta">7 fuentes</span></a></li>
     <li><a href="#grp-recirculacion">Función de recirculación de aire <span class="menu-cuenta">5 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
@@ -403,7 +403,7 @@
     <li><a href="#nt197">NT197 · Pulsadores de activación de la E87</a></li>
     <li><a href="#nt198">NT198 · Display de la unidad de manejo E87</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Distribución de aire</span></li>
-    <li><a href="#grp-ventilador-habitaculo">Motor de la turbina de aire y regulador de régimen <span class="menu-cuenta">5 fuentes</span></a></li>
+    <li><a href="#grp-ventilador-habitaculo">Turbina de aire e interior y regulador de régimen <span class="menu-cuenta">5 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
     <li><a href="#nt206">NT206 · Unidad de control del aire aco J293</a></li>
     <li><a href="#grp-esquema-electrico-climatizador">Esquema eléctrico del sistema de climatización del Ibiza 99 <span class="menu-cuenta">2 fuentes</span></a></li>
@@ -553,6 +553,10 @@
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
     <li><a href="#nt576">NT576 · Ajuste básico de la calefacció J364</a></li>
     <li><a href="#nt577">NT577 · Codificación de la unidad de c J364</a></li>
+    <li><a href="#nt578">NT578 · Potenciómetro de la distribución de ai</a></li>
+    <li><a href="#nt579">NT579 · Potenciómetro del motor de la  G92</a></li>
+    <li><a href="#nt581">NT581 · Unidad de manejo e indicación  E87</a></li>
+    <li><a href="#nt582">NT582 · Display de la unidad de manejo E87</a></li>
   </ul>
 </nav>
 
@@ -4332,29 +4336,36 @@ Las unidades de control utilizan esta señal para adaptar con precisión el rale
       <h1>Transmisor de presión electrónico — <strong>G65</strong></h1>
       <div class="apartado">
         <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Medir de forma continua e instantánea la presión del fluido frigorífico en el ramal de alta presión para la gestión del compresor, electroventiladores y adaptación del ralentí en motorizaciones de gasolina. (págs. 16-17).</p>
+        <p>Medir de forma continua el valor exacto de presión del agente frigorífico en el circuito de alta presión e informar a la unidad de control del motor y a la unidad del aire acondicionado. (págs. 16-17)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>Transforma la presión del gas en un tren de impulsos eléctricos de frecuencia fija donde la anchura del impulso varía con la presión. Envía la señal simultáneamente a la unidad de control del motor y a la unidad de control del aire acondicionado J293. La unidad J293 conmuta la 2ª velocidad del ventilador al llegar a 16 bares y desconecta el compresor por presiones límite. (págs. 16-17).</p>
+        <p>Transforma la presión física del gas frigorífico en una señal de alta frecuencia cuya anchura de impulso varía proporcionalmente a la presión. La unidad del aire acondicionado J293 procesa la señal para desacoplar el compresor por presión crítica (mínima o máxima) e iniciar la 2ª velocidad de los electroventiladores al alcanzar 16 bares. La unidad de control del motor utiliza la información para compensar el régimen de ralentí según la carga absorbida por el compresor. (págs. 16-17)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
         <ul>
-<li>Umbral de activación de la 2ª velocidad de ventiladores: 16 bares. (pág. 17).</li>
+<li>Umbral de activación de la 2ª velocidad de ventiladores: 16 bares. (pág. 17)</li>
 </ul>
       </div>
       <div class="apartado">
-        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <p>Fallo en la electrónica interna del sensor, corte o cortocircuito de la línea de señal PWM. (pág. 17).</p>
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <ul>
+<li>La unidad de control del aire acondicionado desactiva de inmediato el compresor. (pág. 17)</li>
+<li>La avería de este transmisor queda registrada únicamente en la memoria de averías de la unidad de control del motor. (pág. 17)</li>
+</ul>
       </div>
       <div class="apartado">
-        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
-        <p>La unidad de control del aire acondicionado desactiva el compresor inmediatamente. La avería de este transmisor únicamente queda registrada en la memoria de averías de la unidad de control del motor. (pág. 17).</p>
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>A través de la lectura de memoria de averías y bloques de valores de medición en la unidad de control del motor. (pág. 17)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Tipos y características</div>
-        <p>Sensor de presión electrónico capacitivo/piezoeléctrico montado en el circuito de alta presión junto a la válvula de expansión en motores de gasolina. Emite una señal modulada en anchura de impulsos (PWM). (págs. 16-17).</p>
+        <p>Sensor de presión electrónico montado en las motorizaciones de gasolina, ubicado junto a la válvula de expansión. Emite una señal de onda cuadrada modulada en anchura de impulso (PWM). (págs. 16-17)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT195_01</code> Instalación del transmisor de presión electrónico G65 en la tubería de alta presión — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 16</span></div>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
@@ -5727,10 +5738,10 @@ Incluye carcasa envolvente, canal de recogida de agua condensada y tubo de desca
   </div>
 
   <div class="grupo-componente" id="grp-regulacion-automatica">
-    <div class="grupo-cab"><span class="grupo-nombre">Sistemas y opciones de climatización en el automóvil</span><span class="grupo-cuenta">31 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Sistemas y opciones de climatización en el automóvil</span><span class="grupo-cuenta">32 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 31 · NT20 · 2. Introducción a la refrigeración.pdf, págs. 22-23</summary>
+      <summary>Variante 1 de 32 · NT20 · 2. Introducción a la refrigeración.pdf, págs. 22-23</summary>
   <section id="nt20" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 20 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -5786,7 +5797,7 @@ Incluye carcasa envolvente, canal de recogida de agua condensada y tubo de desca
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 31 · NT96 · 208. Regulación de la temperatura.pdf, págs. 42-44</summary>
+      <summary>Variante 2 de 32 · NT96 · 208. Regulación de la temperatura.pdf, págs. 42-44</summary>
   <section id="nt96" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 96 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -5822,7 +5833,7 @@ En los sistemas automáticos (Climatronic o regulación digital), la unidad de c
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 31 · NT103 · 208. Regulación de la temperatura.pdf, págs. 52-53</summary>
+      <summary>Variante 3 de 32 · NT103 · 208. Regulación de la temperatura.pdf, págs. 52-53</summary>
   <section id="nt103" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 103 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -5862,7 +5873,7 @@ En los sistemas automáticos (Climatronic o regulación digital), la unidad de c
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 31 · NT106 · 208. Regulación de la temperatura.pdf, págs. 58-59</summary>
+      <summary>Variante 4 de 32 · NT106 · 208. Regulación de la temperatura.pdf, págs. 58-59</summary>
   <section id="nt106" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 106 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -5910,7 +5921,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 31 · NT152 · PRO 13. Climatización Electrónica.pdf, págs. 100-101</summary>
+      <summary>Variante 5 de 32 · NT152 · PRO 13. Climatización Electrónica.pdf, págs. 100-101</summary>
   <section id="nt152" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 152 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -5965,7 +5976,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 31 · NT158 · PRO 13. Climatización Electrónica.pdf, págs. 105</summary>
+      <summary>Variante 6 de 32 · NT158 · PRO 13. Climatización Electrónica.pdf, págs. 105</summary>
   <section id="nt158" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 158 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -6007,7 +6018,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 31 · NT162 · PRO 13. Climatización Electrónica.pdf, págs. 109</summary>
+      <summary>Variante 7 de 32 · NT162 · PRO 13. Climatización Electrónica.pdf, págs. 109</summary>
   <section id="nt162" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 162 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -6043,7 +6054,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 8 de 31 · NT163 · PRO 13. Climatización Electrónica.pdf, págs. 110</summary>
+      <summary>Variante 8 de 32 · NT163 · PRO 13. Climatización Electrónica.pdf, págs. 110</summary>
   <section id="nt163" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 163 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -6083,7 +6094,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 9 de 31 · NT164 · PRO 13. Climatización Electrónica.pdf, págs. 111</summary>
+      <summary>Variante 9 de 32 · NT164 · PRO 13. Climatización Electrónica.pdf, págs. 111</summary>
   <section id="nt164" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 164 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -6124,7 +6135,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 10 de 31 · NT185 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 4-5</summary>
+      <summary>Variante 10 de 32 · NT185 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 4-5</summary>
   <section id="nt185" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 185 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -6165,7 +6176,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 11 de 31 · NT259 · DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, págs</summary>
+      <summary>Variante 11 de 32 · NT259 · DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, págs</summary>
   <section id="nt259" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 259 <span class="subtipo">Fundamento</span><span class="fusionado">Valeo</span></div>
     <div class="nota-body proceso">
@@ -6231,7 +6242,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 12 de 31 · NT299 · LA CLIMATIZACIÓN.pdf, págs. 127-131</summary>
+      <summary>Variante 12 de 32 · NT299 · LA CLIMATIZACIÓN.pdf, págs. 127-131</summary>
   <section id="nt299" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 299 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -6269,7 +6280,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 13 de 31 · NT307 · LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, págs. 1-7</summary>
+      <summary>Variante 13 de 32 · NT307 · LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, págs. 1-7</summary>
   <section id="nt307" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 307 <span class="subtipo">Fundamento</span><span class="fusionado">Valeo</span></div>
     <div class="nota-body proceso">
@@ -6325,7 +6336,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 14 de 31 · NT326 · OBJETIVOS Y RESTRICCIONES DE LOS SISTEMAS DE CLIMATIZACION AU.PDF, pág</summary>
+      <summary>Variante 14 de 32 · NT326 · OBJETIVOS Y RESTRICCIONES DE LOS SISTEMAS DE CLIMATIZACION AU.PDF, pág</summary>
   <section id="nt326" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 326 <span class="subtipo">Fundamento</span><span class="fusionado">Valeo</span></div>
     <div class="nota-body proceso">
@@ -6360,7 +6371,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 15 de 31 · NT327 · OBJETIVOS Y RESTRICCIONES DE LOS SISTEMAS DE CLIMATIZACION AU.PDF, pág</summary>
+      <summary>Variante 15 de 32 · NT327 · OBJETIVOS Y RESTRICCIONES DE LOS SISTEMAS DE CLIMATIZACION AU.PDF, pág</summary>
   <section id="nt327" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 327 <span class="subtipo">Fundamento</span><span class="fusionado">Valeo</span></div>
     <div class="nota-body proceso">
@@ -6408,7 +6419,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 16 de 31 · NT329 · SSP 484 A7 Info y Clima (arrastrado) 2 copia.pdf, págs. 52-53</summary>
+      <summary>Variante 16 de 32 · NT329 · SSP 484 A7 Info y Clima (arrastrado) 2 copia.pdf, págs. 52-53</summary>
   <section id="nt329" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 329 <span class="subtipo">Fundamento</span><span class="fusionado">Audi</span></div>
     <div class="nota-body proceso">
@@ -6445,7 +6456,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 17 de 31 · NT341 · SSP 484 A7 Info y Clima (arrastrado).pdf, págs. 52</summary>
+      <summary>Variante 17 de 32 · NT341 · SSP 484 A7 Info y Clima (arrastrado).pdf, págs. 52</summary>
   <section id="nt341" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 341 <span class="subtipo">Fundamento</span><span class="fusionado">Audi</span></div>
     <div class="nota-body proceso">
@@ -6495,7 +6506,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 18 de 31 · NT392 · 5. EL CIRCUITO DE AIRE.pptx, págs. 21-23</summary>
+      <summary>Variante 18 de 32 · NT392 · 5. EL CIRCUITO DE AIRE.pptx, págs. 21-23</summary>
   <section id="nt392" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 392 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -6536,7 +6547,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 19 de 31 · NT397 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 42, 44-45, 52-54, 108-111</summary>
+      <summary>Variante 19 de 32 · NT397 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 42, 44-45, 52-54, 108-111</summary>
   <section id="nt397" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 397 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -6584,7 +6595,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 20 de 31 · NT416 · 409_e         Audi A4 _08.pdf, págs. 64-66</summary>
+      <summary>Variante 20 de 32 · NT416 · 409_e         Audi A4 _08.pdf, págs. 64-66</summary>
   <section id="nt416" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 416 <span class="subtipo">Fundamento</span><span class="fusionado">Audi</span></div>
     <div class="nota-body proceso">
@@ -6631,7 +6642,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 21 de 31 · NT436 · cd.pdf, págs. 4-5, 8-9</summary>
+      <summary>Variante 21 de 32 · NT436 · cd.pdf, págs. 4-5, 8-9</summary>
   <section id="nt436" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 436 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -6666,7 +6677,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 22 de 31 · NT450 · GESTIÓN ELÉCTRICA A5.pdf, págs. 80</summary>
+      <summary>Variante 22 de 32 · NT450 · GESTIÓN ELÉCTRICA A5.pdf, págs. 80</summary>
   <section id="nt450" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 450 <span class="subtipo">Fundamento</span><span class="fusionado">Audi</span></div>
     <div class="nota-body proceso">
@@ -6705,7 +6716,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 23 de 31 · NT456 · Nº10. Carga y Diagonostico.pdf, págs. 116-117</summary>
+      <summary>Variante 23 de 32 · NT456 · Nº10. Carga y Diagonostico.pdf, págs. 116-117</summary>
   <section id="nt456" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 456 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -6745,7 +6756,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 24 de 31 · NT509 · SEÑALES SUPLEMENTARIAS.pdf, págs. 50-51</summary>
+      <summary>Variante 24 de 32 · NT509 · SEÑALES SUPLEMENTARIAS.pdf, págs. 50-51</summary>
   <section id="nt509" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 509 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -6792,7 +6803,7 @@ Informa de forma continua a la unidad de control del climatizador sobre el funci
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 25 de 31 · NT517 · SSP172 TARRACO (arrastrado).pdf, págs. 59-61</summary>
+      <summary>Variante 25 de 32 · NT517 · SSP172 TARRACO (arrastrado).pdf, págs. 59-61</summary>
   <section id="nt517" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 517 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -6840,7 +6851,7 @@ Informa de forma continua a la unidad de control del climatizador sobre el funci
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 26 de 31 · NT524 · SSP172 TARRACO (arrastrado).pdf, págs. 64-65</summary>
+      <summary>Variante 26 de 32 · NT524 · SSP172 TARRACO (arrastrado).pdf, págs. 64-65</summary>
   <section id="nt524" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 524 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -6874,7 +6885,7 @@ Informa de forma continua a la unidad de control del climatizador sobre el funci
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 27 de 31 · NT534 · Ibiza99 - Actuadores.pdf, págs. 24</summary>
+      <summary>Variante 27 de 32 · NT534 · Ibiza99 - Actuadores.pdf, págs. 24</summary>
   <section id="nt534" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 534 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -6907,7 +6918,7 @@ Informa de forma continua a la unidad de control del climatizador sobre el funci
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 28 de 31 · NT538 · MOTOR PARA LA TURBINA DEL S. Cº interior.pdf, págs. 24</summary>
+      <summary>Variante 28 de 32 · NT538 · MOTOR PARA LA TURBINA DEL S. Cº interior.pdf, págs. 24</summary>
   <section id="nt538" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 538 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -6940,7 +6951,7 @@ Informa de forma continua a la unidad de control del climatizador sobre el funci
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 29 de 31 · NT546 · 301_e         Climatización en el Touareg.pdf, págs. 4-5</summary>
+      <summary>Variante 29 de 32 · NT546 · 301_e         Climatización en el Touareg.pdf, págs. 4-5</summary>
   <section id="nt546" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 546 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -6989,7 +7000,7 @@ Informa de forma continua a la unidad de control del climatizador sobre el funci
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 30 de 31 · NT553 · MOTOR TURBINA S. Cº interior.pdf, págs. 24</summary>
+      <summary>Variante 30 de 32 · NT553 · MOTOR TURBINA S. Cº interior.pdf, págs. 24</summary>
   <section id="nt553" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 553 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -7022,7 +7033,7 @@ Informa de forma continua a la unidad de control del climatizador sobre el funci
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 31 de 31 · NT559 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 8-10</summary>
+      <summary>Variante 31 de 32 · NT559 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 8-10</summary>
   <section id="nt559" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 559 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -7058,6 +7069,54 @@ Informa de forma continua a la unidad de control del climatizador sobre el funci
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 8-10</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 32 de 32 · NT580 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 18</summary>
+  <section id="nt580" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 580 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
+    <div class="nota-body proceso">
+      <h1>Gestión de acoplamiento del compresor por la unidad de control del motor</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El compresor de aire acondicionado representa una carga mecánica considerable para el motor. La unidad de control del motor interrumpe el acoplamiento magnético mediante una señal de inactivación en situaciones de alta demanda dinámica o inestabilidad de revoluciones. (pág. 18)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>La unidad de control del motor genera y envía una señal de masa (negativo) hacia la unidad del aire acondicionado J293 para desactivar el compresor en las siguientes circunstancias:</p>
+<ul>
+<li>Ausencia de señal de revoluciones del motor.</li>
+<li>Durante los primeros 10 segundos transcurridos tras el arranque del motor.</li>
+<li>Solicitud de plena aceleración (plena carga) a altas velocidades de circulación.</li>
+<li>Accionamiento de la función kick-down en vehículos equipados con cambio automático.</li>
+</ul>
+<p>Al recibir esta señal de negativo, la unidad J293 interrumpe la alimentación de la bobina del acoplamiento magnético N25. (pág. 18)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Tiempo de inhibición tras el arranque del motor: 10 segundos. (pág. 18)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Inhibir la conexión del compresor de aire acondicionado durante fases críticas de funcionamiento del motor térmico para priorizar la potencia de propulsión o facilitar el arranque. (pág. 18)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <ul>
+<li>Suponer que el desacoplamiento del compresor en aceleraciones intensas se debe a una avería del presostato o de la unidad del climatizador. (pág. 18)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT580_01</code> Diagrama de bloques entre la unidad de control del motor, la unidad de climatización y la unidad J293 — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 18</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 18</p>
       </div>
     </div>
   </section>
@@ -9268,34 +9327,38 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
   <section id="nt203" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 203 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
-      <h1>Acoplamiento magnético — <strong>N25</strong></h1>
+      <h1>Acoplamiento magnético del compresor — <strong>N25</strong></h1>
       <div class="apartado">
         <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Acoplar mecánicamente el eje del compresor a la polea de arrastre para que gire solidario con el motor térmico cuando se solicita la producción de frío. (pág. 25).</p>
+        <p>Conectar o desconectar mecánicamente el arrastre del compresor de aire acondicionado a la polea impulsada por el motor térmico. (pág. 25)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>Al recibir una tensión de 12 V procedentes de la unidad de control del aire acondicionado J293, la bobina electromagnética crea un campo magnético que atrae la placa del embrague contra la polea en movimiento, transmitiendo el par motor al eje del compresor. (págs. 25, 29).</p>
+        <p>Al recibir una señal de positivo de 12 V desde la unidad del aire acondicionado J293, la bobina genera un campo magnético que atrae axialmente el disco de acoplamiento contra la polea en giro, haciendo rotar el eje del compresor. Al interrumpirse la corriente, unos muelles separan el disco deshabilitando el compresor. (pág. 25)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
-        <p>Tensión de activación: 12 V CC. (pág. 25).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <p>Bobina cortada o derivada a masa, separación (entrehierro) excesiva por desgaste de la superficie de fricción, cortocircuito. (pág. 25).</p>
+        <ul>
+<li>Tensión de alimentación: 12 V de corriente continua. (pág. 25)</li>
+</ul>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
-        <p>No existe función sustitutiva. El compresor no gira y el aire que entra al habitáculo no se enfría en absoluto. (pág. 25).</p>
+        <ul>
+<li>El compresor no gira y la instalación es incapaz de generar frío en el habitáculo. (pág. 25)</li>
+</ul>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
-        <p>En la función "03 - Diagnóstico de elementos actuadores", la unidad ejecuta la conexión y desconexión repetida del acoplamiento N25 cada dos segundos para verificar el chasquido de acoplamiento. (pág. 36).</p>
+        <p>Mediante la función "03" (diagnosis de actuadores) y función "08" (bloque de valores de medición, grupo 001, campo 1) con el equipo de autodiagnosis. (págs. 36-37)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Tipos y características</div>
-        <p>Electroembrague magnético montado en el plato frontal del compresor del aire acondicionado. (pág. 25).</p>
+        <p>Embrague electromagnético montado en el extremo frontal del cuerpo del compresor. Consta de bobina electromagnética, polea de arrastre libre y disco de acoplamiento estriado al eje. (pág. 25)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT203_01</code> Sección del acoplamiento magnético N25 sobre el cuerpo del compresor — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 25</span></div>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
@@ -10642,37 +10705,42 @@ El aceite acumulado en el fondo es progresivamente succionado por el pequeño or
   <section id="nt204" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 204 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
-      <h1>Ventiladores de líquido refrigerante — <strong>V7 / V35</strong></h1>
+      <h1>Electroventiladores del radiador y condensador — <strong>V7 / V35</strong></h1>
       <div class="apartado">
         <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Generar un flujo forzado de aire a través del condensador y del radiador para enfriar el fluido frigorífico R134a y el líquido refrigerante del motor. (pág. 25).</p>
+        <p>Forzar el paso de aire a través del condensador y del radiador para condensar el gas frigorífico y enfriar el líquido refrigerante del motor. (pág. 25)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
         <ul>
-<li>1ª velocidad: Se activa a través de una resistencia eléctrica integrada en el canalizador. Se alimenta por la unidad J293 (al conectar el compresor) o por el conmutador térmico F18 al alcanzar 95 ºC. (págs. 25, 29).</li>
-<li>2ª velocidad: Se alimenta directamente con 12 V sin resistencia desde la unidad J293 cuando la presión en el circuito frigorífico supera 16 bares (vía F129/G65) o la temperatura del motor supera 105 ºC (vía F18). (págs. 25, 29).</li>
+<li><strong>Primera velocidad:</strong> Al recibir positivo desde el conmutador térmico F18 (a 95 ºC) o desde la unidad J293 (al conectar el compresor), la corriente pasa a través de una resistencia eléctrica integrada reduciendo la velocidad de giro. (págs. 25, 29)</li>
+<li><strong>Segunda velocidad:</strong> Al recibir positivo desde la unidad J293 (por presión &gt; 16 bares en F129/G65 o por temperatura &gt; 105 ºC en F18), la corriente alimenta directamente los devanados del motor a máxima potencia. (págs. 25, 29)</li>
 </ul>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
         <ul>
-<li>Alimentación: 12 V CC.</li>
-<li>Conexión 1ª velocidad: señal de compresor o t ºC motor = 95 ºC.</li>
-<li>Conexión 2ª velocidad: P frigorífica &gt; 16 bares o t ºC motor = 105 ºC. (págs. 25, 29).</li>
+<li>Tensión de alimentación: 12 V. (pág. 25)</li>
 </ul>
       </div>
       <div class="apartado">
-        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <p>Resistencia de la 1ª velocidad cortada, escobillas quemadas, fusible principal fundido en el portafusibles de la batería. (pág. 25).</p>
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <ul>
+<li>Elevación anómala de la presión de alta en el circuito frigorífico con falta de rendimiento frigorífico al ralentí. (pág. 25)</li>
+<li>Sobrecalentamiento del líquido refrigerante del motor térmico. (pág. 25)</li>
+</ul>
       </div>
       <div class="apartado">
-        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
-        <p>No existe función sustitutiva. El fluido frigorífico sube drásticamente de presión por falta de condensación, provocando la desconexión del compresor por alta presión (32 bares). (págs. 16, 25).</p>
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Mediante excitación directa con corriente de batería o verificando la respuesta en la función "03" de diagnosis de actuadores de la unidad del motor. (págs. 25, 36)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Tipos y características</div>
-        <p>Dos electroventiladores independientes montados en el frontal del vano motor, cada uno con motor eléctrico de dos velocidades. (pág. 25).</p>
+        <p>Pareja de motores eléctricos independientes de dos velocidades montados sobre el canalizador de aire posterior del radiador. (pág. 25)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT204_01</code> Módulo con los dos ventiladores independientes V7 y V35 instalados sobre el canalizador — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 25</span></div>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
@@ -12104,46 +12172,52 @@ Desconecta el compresor cuando la temperatura desciende a valores próximos a la
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 19 · NT194 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 16-17</summary>
+      <summary>Variante 7 de 19 · NT194 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 16</summary>
   <section id="nt194" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 194 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
       <h1>Conmutador de presión para aire acondicionado — <strong>F129</strong></h1>
       <div class="apartado">
         <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Proteger el circuito frigorífico frente a presiones anormalmente altas o bajas y controlar la activación de las velocidades del electroventilador del radiador en motorizaciones diésel. (págs. 16-17).</p>
+        <p>Supervisar la presión del agente frigorífico en el lado de alta presión para autorizar el funcionamiento del compresor y gestionar las velocidades de los electroventiladores. (pág. 16)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>Consta de dos interruptores internos independientes:</p>
-<ol>
-<li>Interruptor de alta/baja presión: normalmente cerrado. Abre sus contactos si la presión desciende de 2 bares (falta de gas) o supera los 32 bares (sobrepresión), interrumpiendo la señal de conexión hacia la unidad J293 para desconectar el compresor.</li>
-<li>Interruptor de presión media: normalmente abierto. Cierra sus contactos cuando la presión alcanza los 16 bares, enviando un positivo de borne 15 a la unidad J293 para activar la 2ª velocidad del ventilador. (págs. 16-17).</li>
-</ol>
+        <ul>
+<li><strong>Interruptor de máxima/mínima presión:</strong> Normally cerrado. Permite el paso de la señal de conexión del compresor enviada por el autoclima hacia la unidad J293. Se abre mecánicamente interrumpiendo la señal si la presión desciende por debajo de 2 bares (fuga de gas) o supera los 32 bares (sobrepresión). (pág. 16)</li>
+<li><strong>Interruptor de presión media:</strong> Normally abierto. Conectado a positivo de contacto (borne 15). Se cierra mecánicamente al alcanzar una presión aproximada de 16 bares, enviando una señal a la unidad J293 para conectar la 2ª velocidad de los electroventiladores del radiador. (págs. 16, 29)</li>
+</ul>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
         <ul>
-<li>Presión mínima de desconexión: &lt; 2 bares (contacto abre).</li>
-<li>Presión máxima de desconexión: &gt; 32 bares (contacto abre).</li>
-<li>Presión de conmutación de velocidad de ventilador: 16 bares (contacto cierra). (pág. 16).</li>
+<li>Umbral de desconexión por baja presión: &lt; 2 bares. (pág. 16)</li>
+<li>Umbral de desconexión por alta presión: &gt; 32 bares. (pág. 16)</li>
+<li>Umbral de activación de la 2ª velocidad de ventiladores: aprox. 16 bares. (pág. 16)</li>
 </ul>
       </div>
       <div class="apartado">
-        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <p>Agarrotamiento de los contactos internos, fugas de fluido en la rosca de montaje o fallos de conexión eléctrica. (págs. 16-17).</p>
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <ul>
+<li>Si el interruptor de máxima/mínima se queda abierto, el compresor no conecta. (pág. 16)</li>
+<li>Si el interruptor de presión media falla, la 2ª velocidad de los electroventiladores no se activa por presión del circuito frigorífico. (págs. 16, 29)</li>
+</ul>
       </div>
       <div class="apartado">
-        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
-        <p>No tiene función sustitutiva. Si el contacto de baja/alta se queda abierto, el compresor no se conecta jamás. Si no cierra el de presión media, la 2ª velocidad del ventilador no entra por presión de refrigerante. (págs. 16-17).</p>
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Mediante la función "08" (bloque de valores de medición, grupo 001, campo 2) en el equipo de autodiagnosis. (pág. 37)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Tipos y características</div>
-        <p>Presostato cuádruple de 4 contactos instalado en la tubería de alta presión junto a la válvula de expansión en vehículos con motor diésel. (págs. 16-17).</p>
+        <p>Conmutador de presión triple montado exclusivamente en las motorizaciones diésel, ubicado en la línea de alta presión junto a la válvula de expansión. Consta de dos interruptores internos independientes. (pág. 16)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT194_01</code> Ubicación del conmutador F129 en la tubería de alta presión junto a la válvula de expansión — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 16</span></div>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 16-17</p>
+        <p class="fuentes">CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 16</p>
       </div>
     </div>
   </section>
@@ -15637,45 +15711,55 @@ Desconecta el compresor cuando la temperatura desciende a valores próximos a la
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 8 · NT207 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 34-38</summary>
+      <summary>Variante 3 de 8 · NT207 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 34-37</summary>
   <section id="nt207" data-tipo="proceso">
-    <div class="nota-header proceso">Nota de Proceso Nº 207 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
+    <div class="nota-header proceso">Nota de Proceso Nº 207 <span class="subtipo">Procedimiento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
-      <h1>Autodiagnóstico del autoclima y calefacción motorizada — <strong>J255</strong></h1>
+      <h1>Autodiagnóstico de los equipos de mando electrónico — <strong>J255</strong></h1>
       <div class="apartado">
-        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
-        <p>La unidad de control J255 vigila constantemente sus circuitos de entrada y salida. Para acceder a la autodiagnosis se utiliza el equipo de diagnosis conectado al conector de 16 polos bajo la dirección "08 - Aire acondicionado". (págs. 34-35).</p>
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Identificar averías registradas en sensores y actuadores, verificar el funcionamiento de los componentes mediante pruebas guiadas y analizar parámetros operativos en tiempo real. (págs. 34-37)</p>
       </div>
       <div class="apartado">
-        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
-        <p>Las funciones disponibles en el menú de autodiagnosis son:</p>
-<ul>
-<li>Función 01 (Versión de la unidad de control): Muestra la clave de recambio (p. ej. 6K0959291), versión de software (p. ej. X01), código de taller y tipo de equipo (código 220 para autoclima, código 110 para calefacción motorizada). (pág. 34).</li>
-<li>Función 02 (Consultar memoria de averías): Muestra los fallos de sensores y actuadores memorizados. Distingue entre averías permanentes (requieren reparación y borrado manual) y esporádicas (se borran automáticamente tras 40 puestas en marcha sin repetirse). (págs. 34-35).</li>
-<li>Función 03 (Diagnóstico de elementos actuadores): Activa secuencialmente el acoplamiento N25 (2 s ON/OFF), turbina V2 (pasos de 2,5 V), motor V68 (mínimo a máximo) y motor V113 (recirculación a aire fresco). (pág. 36).</li>
-<li>Función 04 (Ajuste básico): Ejecuta la calibración y memorización de topes del motor V68 seleccionando el grupo. Obligatorio tras sustituir V68 o J255. (pág. 36).</li>
-<li>Función 05 (Borrar memoria de averías). (pág. 34).</li>
-<li>Función 06 (Finalizar emisión). (pág. 34).</li>
-<li>Función 08 (Leer bloque de valores de medición): Muestra parámetros reales en tiempo real (grupos 001 a: estados del compresor, presostato, posiciones de potenciómetro V68 en voltios, estado de pulsadores, temperaturas NTC y posición del mando de distribución en %). (págs. 36-37).</li>
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Tensión de la batería correcta. (pág. 34)</li>
+<li>Encendido conectado (borne 15). (pág. 34)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <ul>
+<li>Equipo de diagnosis (V.A.G 1551, V.A.G 1552 o lector compatible) conectado al conector de diagnóstico de 16 polos T16. (págs. 31, 34)</li>
 </ul>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
-        <p>Dirección de acceso en equipo de diagnosis: "08".
-Averías esporádicas: borradas tras 40 ciclos de arranque sin fallo.
-Código de tipo de equipo en función: 220 = Autoclima, 110 = Calefacción motorizada. (págs. 34-35).</p>
+        <ul>
+<li>Código de dirección del sistema: 08. (pág. 34)</li>
+<li>Criterio de borrado automático de averías esporádicas: tras 40 puestas en marcha sin reproducirse el fallo. (pág. 34)</li>
+<li>Grupo de ajuste básico para servomotor V68: Grupo 002 (valores en voltios entre 0,76 V y 4,21 V). (págs. 36-37)</li>
+</ul>
       </div>
       <div class="apartado">
-        <div class="apartado-titulo">Objeto</div>
-        <p>Supervisar eléctricamente los sensores y actuadores del sistema de climatización, memorizar los fallos detectados y permitir el diagnóstico guiado en taller a través del equipo de diagnosis. (págs. 34-38).</p>
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobar que al reconectar el climatizador ya no parpadean los dígitos del display de la consola central y la memoria de averías permanece limpia. (págs. 12, 34)</p>
       </div>
       <div class="apartado">
-        <div class="apartado-titulo">Errores de concepto frecuentes</div>
-        <p>Intentar borrar la memoria de averías sin solucionar la falla física previa; si el fallo es permanente, permanecerá grabado en la unidad de control. (págs. 34-35).</p>
+        <div class="apartado-titulo">Pasos</div>
+        <ol>
+<li>Conectar el equipo de diagnosis e ingresar mediante el código de dirección "08 - Aire acondicionado". (pág. 34)</li>
+<li><strong>Función 01 (Versión de la unidad):</strong> Consultar el código de recambios, la versión del software y el tipo de equipo (reconoce autoclima o calefacción motorizada mediante la presencia del puente a masa en el pin 21). (pág. 34)</li>
+<li><strong>Función 02 (Consultar memoria de averías):</strong> Leer los fallos memorizados (distingue entre esporádicas y permanentes). (pág. 35)</li>
+<li><strong>Función 03 (Diagnóstico de actuadores):</strong> Ejecutar la prueba de elementos (activa cíclicamente N25, la turbina V2 en rampa de 0 a 12 V, el servomotor V68 de tope a tope y V113 entre aire fresco y recirculación). (pág. 36)</li>
+<li><strong>Función 04 (Iniciar ajuste básico):</strong> Acceder al grupo "002" para que la unidad reconozca y grabe electrónicamente la posición real del servomotor de la trampilla de temperatura V68. (pág. 36)</li>
+<li><strong>Función 05 (Borrar memoria de averías):</strong> Borrar el registro de fallos una vez subsanados. (pág. 34)</li>
+<li><strong>Función 08 (Leer bloque de valores de medición):</strong> Analizar los grupos de indicación 001 al 006 para evaluar presiones, temperaturas de NTC, estados de pulsadores y voltajes en tiempo real. (pág. 37)</li>
+</ol>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 34-38</p>
+        <p class="fuentes">CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 34-37</p>
       </div>
     </div>
   </section>
@@ -16199,10 +16283,10 @@ Código de tipo de equipo en función: 220 = Autoclima, 110 = Calefacción motor
   </section>
 
   <div class="grupo-componente" id="grp-unidad-control-climatizador">
-    <div class="grupo-cab"><span class="grupo-nombre">Unidad de control de climatización</span><span class="grupo-cuenta">10 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Unidad de control de climatización</span><span class="grupo-cuenta">11 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 10 · NT97 · 208. Regulación de la temperatura.pdf, págs. 45-47</summary>
+      <summary>Variante 1 de 11 · NT97 · 208. Regulación de la temperatura.pdf, págs. 45-47</summary>
   <section id="nt97" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 97 <span class="fusionado">VW</span></div>
     <div class="nota-body">
@@ -16241,7 +16325,7 @@ Código de tipo de equipo en función: 220 = Autoclima, 110 = Calefacción motor
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 10 · NT160 · PRO 13. Climatización Electrónica.pdf, págs. 106</summary>
+      <summary>Variante 2 de 11 · NT160 · PRO 13. Climatización Electrónica.pdf, págs. 106</summary>
   <section id="nt160" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 160 </div>
     <div class="nota-body">
@@ -16280,7 +16364,7 @@ Código de tipo de equipo en función: 220 = Autoclima, 110 = Calefacción motor
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 10 · NT205 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 26-28, 34</summary>
+      <summary>Variante 3 de 11 · NT205 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 26-28, 34</summary>
   <section id="nt205" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 205 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -16323,7 +16407,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 10 · NT290 · LA CLIMATIZACIÓN.pdf, págs. 109-110</summary>
+      <summary>Variante 4 de 11 · NT290 · LA CLIMATIZACIÓN.pdf, págs. 109-110</summary>
   <section id="nt290" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 290 </div>
     <div class="nota-body">
@@ -16368,7 +16452,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 10 · NT308 · LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, págs. 7-8</summary>
+      <summary>Variante 5 de 11 · NT308 · LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, págs. 7-8</summary>
   <section id="nt308" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 308 <span class="fusionado">Valeo</span></div>
     <div class="nota-body">
@@ -16397,7 +16481,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 10 · NT344 · Toledo 99 CLIMA.pdf, págs. 46-47</summary>
+      <summary>Variante 6 de 11 · NT344 · Toledo 99 CLIMA.pdf, págs. 46-47</summary>
   <section id="nt344" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 344 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -16448,7 +16532,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 10 · NT395 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 16, 21-29</summary>
+      <summary>Variante 7 de 11 · NT395 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 16, 21-29</summary>
   <section id="nt395" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 395 </div>
     <div class="nota-body">
@@ -16488,7 +16572,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 8 de 10 · NT518 · SSP172 TARRACO (arrastrado).pdf, págs. 59-61</summary>
+      <summary>Variante 8 de 11 · NT518 · SSP172 TARRACO (arrastrado).pdf, págs. 59-61</summary>
   <section id="nt518" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 518 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -16527,7 +16611,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 9 de 10 · NT529 · Ibiza99 - Actuadores.pdf, págs. 21-22</summary>
+      <summary>Variante 9 de 11 · NT529 · Ibiza99 - Actuadores.pdf, págs. 21-22</summary>
   <section id="nt529" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 529 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -16568,7 +16652,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 10 de 10 · NT562 · UCE Clima Actuador.pdf, págs. 21-22</summary>
+      <summary>Variante 10 de 11 · NT562 · UCE Clima Actuador.pdf, págs. 21-22</summary>
   <section id="nt562" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 562 </div>
     <div class="nota-body">
@@ -16600,6 +16684,55 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">UCE Clima Actuador.pdf, págs. 21-22</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 11 de 11 · NT585 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 29</summary>
+  <section id="nt585" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 585 <span class="fusionado">SEAT</span></div>
+    <div class="nota-body">
+      <h1>Unidad de control del aire acondicionado — <strong>J293</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Gobernar la alimentación eléctrica de alta potencia del acoplamiento magnético N25 y gestionar la activación de las dos velocidades de los electroventiladores V7/V35. (pág. 29)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li><strong>Gobierno del compresor:</strong> Al recibir la señal de activación enviada por la unidad J255 (pasando previamente por el presostato F129/G65 y el termostato F38) y constatar la ausencia de señal de corte por parte de la UCE del motor, conecta el relé interno para alimentar el acoplamiento N25. (pág. 29)</li>
+<li><strong>Gobierno de ventiladores:</strong> Activa la 1ª velocidad al conectar el compresor o al recibir señal del termocontacto F18 (95 ºC). Activa la 2ª velocidad si la presión del gas supera los 16 bares (señal de F129/G65) o si la temperatura del agua alcanza los 105 ºC (señal de F18). (pág. 29)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Tensión de alimentación: 12 V (protegido por fusibles de potencia S164 y S180). (pág. 32)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <ul>
+<li>Incapacidad para accionar el acoplamiento electromagnético del compresor. (pág. 29)</li>
+<li>Fallo en la activación de las velocidades de los electroventiladores de refrigeración. (pág. 29)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobación de tensiones de entrada de señales en el conector y salidas hacia N25 y V7/V35. (págs. 29, 32)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Módulo electromecánico con etapas de potencia y relés integrado en la caja de aguas / vano motor. (pág. 29)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT585_01</code> Diagrama de bloques funcional de las entradas y salidas de la unidad J293 — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 29</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 29</p>
       </div>
     </div>
   </section>
@@ -18141,10 +18274,10 @@ El elemento óptico redirige un alto porcentaje de rayos cuando inciden de forma
   </div>
 
   <div class="grupo-componente" id="grp-servomotor-trampilla">
-    <div class="grupo-cab"><span class="grupo-nombre">Servomotores de las chapaletas de aire</span><span class="grupo-cuenta">22 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Servomotores de las chapaletas de aire</span><span class="grupo-cuenta">24 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 22 · NT104 · 208. Regulación de la temperatura.pdf, págs. 54-55</summary>
+      <summary>Variante 1 de 24 · NT104 · 208. Regulación de la temperatura.pdf, págs. 54-55</summary>
   <section id="nt104" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 104 </div>
     <div class="nota-body">
@@ -18202,7 +18335,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 22 · NT199 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 22</summary>
+      <summary>Variante 2 de 24 · NT199 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 22</summary>
   <section id="nt199" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 199 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -18247,7 +18380,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 22 · NT201 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 23</summary>
+      <summary>Variante 3 de 24 · NT201 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 23</summary>
   <section id="nt201" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 201 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -18288,7 +18421,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 22 · NT296 · LA CLIMATIZACIÓN.pdf, págs. 118-119</summary>
+      <summary>Variante 4 de 24 · NT296 · LA CLIMATIZACIÓN.pdf, págs. 118-119</summary>
   <section id="nt296" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 296 </div>
     <div class="nota-body">
@@ -18343,7 +18476,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 22 · NT297 · LA CLIMATIZACIÓN.pdf, págs. 120-122</summary>
+      <summary>Variante 5 de 24 · NT297 · LA CLIMATIZACIÓN.pdf, págs. 120-122</summary>
   <section id="nt297" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 297 </div>
     <div class="nota-body">
@@ -18395,7 +18528,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 22 · NT328 · SSP 484 A7 Info y Clima (arrastrado) 2 copia.pdf, págs. 52-53</summary>
+      <summary>Variante 6 de 24 · NT328 · SSP 484 A7 Info y Clima (arrastrado) 2 copia.pdf, págs. 52-53</summary>
   <section id="nt328" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 328 <span class="fusionado">Audi</span></div>
     <div class="nota-body">
@@ -18455,7 +18588,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 22 · NT347 · Toledo 99 CLIMA.pdf, págs. 50</summary>
+      <summary>Variante 7 de 24 · NT347 · Toledo 99 CLIMA.pdf, págs. 50</summary>
   <section id="nt347" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 347 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -18498,7 +18631,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 8 de 22 · NT385 · 5. EL CIRCUITO DE AIRE.pptx, págs. 13-14</summary>
+      <summary>Variante 8 de 24 · NT385 · 5. EL CIRCUITO DE AIRE.pptx, págs. 13-14</summary>
   <section id="nt385" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 385 </div>
     <div class="nota-body">
@@ -18535,7 +18668,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 9 de 22 · NT386 · 5. EL CIRCUITO DE AIRE.pptx, págs. 15</summary>
+      <summary>Variante 9 de 24 · NT386 · 5. EL CIRCUITO DE AIRE.pptx, págs. 15</summary>
   <section id="nt386" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 386 </div>
     <div class="nota-body">
@@ -18568,7 +18701,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 10 de 22 · NT387 · 5. EL CIRCUITO DE AIRE.pptx, págs. 16</summary>
+      <summary>Variante 10 de 24 · NT387 · 5. EL CIRCUITO DE AIRE.pptx, págs. 16</summary>
   <section id="nt387" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 387 </div>
     <div class="nota-body">
@@ -18602,7 +18735,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 11 de 22 · NT398 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 46, 61-62</summary>
+      <summary>Variante 11 de 24 · NT398 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 46, 61-62</summary>
   <section id="nt398" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 398 </div>
     <div class="nota-body">
@@ -18649,7 +18782,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 12 de 22 · NT399 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 47-51, 63-75</summary>
+      <summary>Variante 12 de 24 · NT399 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 47-51, 63-75</summary>
   <section id="nt399" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 399 </div>
     <div class="nota-body">
@@ -18698,7 +18831,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 13 de 22 · NT499 · AA AUTOMOCION MD FR.pdf, págs. 145-146</summary>
+      <summary>Variante 13 de 24 · NT499 · AA AUTOMOCION MD FR.pdf, págs. 145-146</summary>
   <section id="nt499" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 499 </div>
     <div class="nota-body">
@@ -18748,7 +18881,7 @@ En la velocidad máxima (H), el conmutador alimenta directamente el motor sin pa
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 14 de 22 · NT506 · Regulación del Sistema.pdf, págs. 47, 52</summary>
+      <summary>Variante 14 de 24 · NT506 · Regulación del Sistema.pdf, págs. 47, 52</summary>
   <section id="nt506" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 506 </div>
     <div class="nota-body">
@@ -18781,7 +18914,7 @@ En la velocidad máxima (H), el conmutador alimenta directamente el motor sin pa
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 15 de 22 · NT521 · SSP172 TARRACO (arrastrado).pdf, págs. 60, 62-64</summary>
+      <summary>Variante 15 de 24 · NT521 · SSP172 TARRACO (arrastrado).pdf, págs. 60, 62-64</summary>
   <section id="nt521" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 521 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -18831,7 +18964,7 @@ Cuando se selecciona salida por el tablero, abre difusores del tablero y consola
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 16 de 22 · NT522 · SSP172 TARRACO (arrastrado).pdf, págs. 60, 62-65</summary>
+      <summary>Variante 16 de 24 · NT522 · SSP172 TARRACO (arrastrado).pdf, págs. 60, 62-65</summary>
   <section id="nt522" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 522 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -18881,7 +19014,7 @@ Variando la apertura proporcional de ambas trampillas se logra la mezcla térmic
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 17 de 22 · NT530 · Ibiza99 - Actuadores.pdf, págs. 21-22</summary>
+      <summary>Variante 17 de 24 · NT530 · Ibiza99 - Actuadores.pdf, págs. 21-22</summary>
   <section id="nt530" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 530 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -18914,7 +19047,7 @@ Variando la apertura proporcional de ambas trampillas se logra la mezcla térmic
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 18 de 22 · NT532 · Ibiza99 - Actuadores.pdf, págs. 22-23</summary>
+      <summary>Variante 18 de 24 · NT532 · Ibiza99 - Actuadores.pdf, págs. 22-23</summary>
   <section id="nt532" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 532 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -18951,7 +19084,7 @@ Variando la apertura proporcional de ambas trampillas se logra la mezcla térmic
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 19 de 22 · NT544 · Motor tramapilla temperatura y turbina de aire.pdf, págs. 22</summary>
+      <summary>Variante 19 de 24 · NT544 · Motor tramapilla temperatura y turbina de aire.pdf, págs. 22</summary>
   <section id="nt544" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 544 </div>
     <div class="nota-body">
@@ -18984,7 +19117,7 @@ Variando la apertura proporcional de ambas trampillas se logra la mezcla térmic
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 20 de 22 · NT554 · Motor trampilla recirculación.pdf, págs. 22-23</summary>
+      <summary>Variante 20 de 24 · NT554 · Motor trampilla recirculación.pdf, págs. 22-23</summary>
   <section id="nt554" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 554 </div>
     <div class="nota-body">
@@ -19021,7 +19154,7 @@ Variando la apertura proporcional de ambas trampillas se logra la mezcla térmic
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 21 de 22 · NT555 · SERVOMOTORES SIN POTENCIOMETROS.pdf, págs. 81</summary>
+      <summary>Variante 21 de 24 · NT555 · SERVOMOTORES SIN POTENCIOMETROS.pdf, págs. 81</summary>
   <section id="nt555" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 555 </div>
     <div class="nota-body">
@@ -19070,7 +19203,7 @@ Asignación de bornes en el conector:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 22 de 22 · NT557 · SERVOMOTORES.pdf, págs. 52</summary>
+      <summary>Variante 22 de 24 · NT557 · SERVOMOTORES.pdf, págs. 52</summary>
   <section id="nt557" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 557 </div>
     <div class="nota-body">
@@ -19098,6 +19231,102 @@ Asignación de bornes en el conector:</p>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">SERVOMOTORES.pdf, págs. 52</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 23 de 24 · NT583 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 22</summary>
+  <section id="nt583" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 583 <span class="fusionado">SEAT</span></div>
+    <div class="nota-body">
+      <h1>Servomotor de la trampilla de temperatura — <strong>V68</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Accionar mecánicamente el posicionamiento de la trampilla de mezcla de temperatura dentro de la unidad climática. (pág. 22)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Recibe alimentación de corriente continua desde la unidad de control J255. La unidad invierte la polaridad de los bornes de alimentación para modificar el sentido de giro del motor, desplazando la trampilla hacia la posición de aire más caliente o más frío. (pág. 22)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Tensión de excitación: 12 V con polaridad reversible. (pág. 22)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <ul>
+<li>La trampilla permanece inmovilizada en la posición en que se produjo el fallo. (pág. 22)</li>
+<li>La unidad de control reduce el régimen del soplador de aire para limitar la entrada incontrolada de flujo térmico. (pág. 22)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Mediante la función "03" (diagnosis de actuadores) y función "04" (ajuste básico en grupo 002) con el equipo de autodiagnosis. (págs. 36-37)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Motor eléctrico de corriente continua de giro limitado mediante engranaje de tornillo sin fin. Va ubicado en la parte inferior de la unidad climática e integra en su interior el potenciómetro de posición G92. (pág. 22)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <p>Tras la sustitución del servomotor V68 o de la unidad de control J255, es obligatorio realizar el ajuste básico (grupo 002) para memorizar los topes mecánicos. (pág. 36)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT583_01</code> Despiece del motor V68 con su mecanismo de tornillo sin fin, rueda de transmisión y potenciómetro G92 — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 22</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 22</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 24 de 24 · NT584 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 23</summary>
+  <section id="nt584" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 584 <span class="fusionado">SEAT</span></div>
+    <div class="nota-body">
+      <h1>Servomotor de la trampilla de recirculación — <strong>V113</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Alternar la entrada de aire a la unidad climática entre aire fresco del exterior y aire recirculado del habitáculo. (pág. 23)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Alimentado a 12 V con un borne de masa permanente y dos bornes de positivo seleccionables de forma alternativa. Al recibir positivo por una de las pistas, el motor gira moviendo la palanca de la trampilla hasta que el cursor sale de la pista conductora e interrumpe la corriente, deteniéndose en la posición exacta (aire fresco o recirculación). (pág. 23)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Tensión de excitación: 12 V. (pág. 23)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <ul>
+<li>La trampilla de recirculación no cambia de posición. (pág. 23)</li>
+<li>Parpadean todos los dígitos de la pantalla al conectar el autoclima. (pág. 23)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Mediante la función "03" (diagnosis de actuadores) y función "08" (bloque de valores de medición, grupo 001, campo 3) con el equipo de autodiagnosis. (págs. 36-37)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Motor eléctrico de corriente continua de giro libre en un solo sentido. Ubicado en la parte superior del cuerpo de la unidad climática y dotado de tres pistas de contacto internas. (pág. 23)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT584_01</code> Módulo del motor V113 y esquema de excitación por pistas deslizantes internas — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 23</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 23</p>
       </div>
     </div>
   </section>
@@ -22321,37 +22550,43 @@ Velocidad del vehículo no superior a 5 km/h para ejecutar la función de diagno
   <section id="nt196" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 196 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
-      <h1>Conmutador térmico del ventilador — <strong>F18</strong></h1>
+      <h1>Conmutador térmico del ventilador del radiador — <strong>F18</strong></h1>
       <div class="apartado">
         <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Conectar directamente o solicitar a la unidad de aire acondicionado la activación de las velocidades del electroventilador en función de la temperatura del líquido refrigerante del motor. (pág. 19).</p>
+        <p>Conectar directamente o gobernar las dos velocidades de los electroventiladores según la temperatura del líquido refrigerante del motor. (pág. 19)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
         <ul>
-<li>El primer interruptor cierra al alcanzar los 95 ºC de temperatura de líquido refrigerante, alimentando con positivo (30) directamente a los motores de los ventiladores para activar la 1ª velocidad. (pág. 19).</li>
-<li>El segundo interruptor cierra a los 105 ºC, enviando una señal de positivo (30) a la unidad de control del aire acondicionado J293, la cual activa la 2ª velocidad. (pág. 19).</li>
+<li><strong>Primer conmutador interno:</strong> Cierra sus contactos cuando la temperatura del líquido refrigerante alcanza 95 ºC, enviando corriente de positivo directo (borne 30) a los motores de los ventiladores para activar la 1ª velocidad. (pág. 19)</li>
+<li><strong>Segundo conmutador interno:</strong> Cierra sus contactos cuando la temperatura alcanza 105 ºC, enviando una señal de positivo (borne 30) a la unidad de control del aire acondicionado J293 para activar la 2ª velocidad. (págs. 19, 29)</li>
 </ul>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
         <ul>
-<li>Cierre del primer interruptor (1ª velocidad): 95 ºC.</li>
-<li>Cierre del segundo interruptor (2ª velocidad): 105 ºC.</li>
-<li>Alimentación: Positivo directo de batería (borne 30). (pág. 19).</li>
+<li>Temperatura de cierre de 1ª velocidad: 95 ºC. (pág. 19)</li>
+<li>Temperatura de cierre de 2ª velocidad: 105 ºC. (pág. 19)</li>
 </ul>
       </div>
       <div class="apartado">
-        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <p>Incrustaciones de cal o suciedad que aíslan térmicamente la ampolla, agarrotamiento de contactos bimetálicos. (pág. 19).</p>
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <ul>
+<li>Si no cierra el primer contacto, los ventiladores no se activan por temperatura de motor a 95 ºC. (pág. 19)</li>
+<li>Si no cierra el segundo contacto, se pierde el escalonamiento a 2ª velocidad por sobrecalentamiento del motor a 105 ºC. (págs. 19, 29)</li>
+</ul>
       </div>
       <div class="apartado">
-        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
-        <p>No tiene función sustitutiva. Si el termocontacto falla, el electroventilador no entrará por temperatura de motor, pudiendo producir sobrecalentamientos al ralentí o en retenciones. (pág. 19).</p>
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobación de continuidad eléctrica entre bornes en baño térmico a 95 ºC y 105 ºC. (pág. 19)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Tipos y características</div>
-        <p>Termocontacto escalonado de doble escalón montado en la carcasa del radiador de líquido refrigerante. Consta de dos interruptores bimetálicos normalmente abiertos. (pág. 19).</p>
+        <p>Termostato térmico doble normalmente abierto roscado en el depósito del radiador de líquido refrigerante. (pág. 19)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT196_01</code> Conmutador térmico F18 montado en el radiador de refrigerante — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 19</span></div>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
@@ -22432,41 +22667,45 @@ Bus de conexión Radiocasete - UCE J255: 1 cable. (pág. 20).</p>
   </section>
 
   <div class="grupo-componente" id="grp-ventilador-habitaculo">
-    <div class="grupo-cab"><span class="grupo-nombre">Motor de la turbina de aire y regulador de régimen</span><span class="grupo-cuenta">5 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Turbina de aire e interior y regulador de régimen</span><span class="grupo-cuenta">5 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
       <summary>Variante 1 de 5 · NT200 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 22</summary>
   <section id="nt200" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 200 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
-      <h1>Motor de la turbina de aire y regulador de régimen — <strong>V2 / J126</strong></h1>
+      <h1>Turbina de aire e interior y regulador de régimen — <strong>V2 / J126</strong></h1>
       <div class="apartado">
         <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Impulsar el caudal de aire necesario a través de la unidad climática para renovar y climatizar la atmósfera del habitáculo. (pág. 22).</p>
+        <p>Impulsar el caudal de aire necesario a través de la unidad climática hacia los difusores del habitáculo. (pág. 22)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>La unidad de control J255 envía una señal de tensión de mando al regulador J126, el cual varía progresivamente la corriente aplicada al motor V2 para ajustar su velocidad de giro de manera continua. (págs. 22, 36).</p>
+        <p>La unidad de control J255 envía una señal de pilotaje en tensión al regulador J126. El regulador modula progresivamente la corriente principal suministrada al motor V2, permitiendo un ajuste continuo del caudal de aire sin escalas fijas por resistencias. (pág. 22)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
-        <p>Variación de tensión de regulación en pasos de 2,5 V de 0 V a máxima tensión durante diagnosis de actuadores. (pág. 36).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <p>Desgaste de escobillas del motor V2, fallo de los transistores de potencia del regulador J126, agarrotamiento del rodamiento de la turbina. (pág. 22).</p>
+        <ul>
+<li>Tensión de salida regulada hacia la turbina: de 0 V a 12 V (en pasos progresivos de 2,5 V durante diagnosis). (págs. 22, 36)</li>
+</ul>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
-        <p>No existe función sustitutiva. La avería se detecta de inmediato al interrumpirse o reducirse drásticamente el flujo de aire por los difusores. (pág. 22).</p>
+        <ul>
+<li>Interrupción total o falta de variación en el flujo de soplado de aire hacia el habitáculo. (pág. 22)</li>
+</ul>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
-        <p>Se comprueba mediante la función "03 - Diagnóstico de elementos actuadores": el sistema realiza una regulación progresiva de la velocidad desde 0 V hasta la máxima en pasos de 2,5 V cada 2 segundos. (pág. 36).</p>
+        <p>Mediante la función "03" (diagnosis de actuadores) y función "08" (bloque de valores de medición, grupo 005) con el equipo de autodiagnosis. (págs. 36-37)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Tipos y características</div>
-        <p>Motor eléctrico impulsado por un módulo electrónico de potencia (regulador de régimen J126) en lugar de resistencias fijas en los sistemas con autoclima y calefacción motorizada. (págs. 6, 22).</p>
+        <p>Conjunto formado por un electromotor soplador (V2) y una etapa de potencia o regulador electrónico de régimen (J126) montado directamente en el flujo de aire de la unidad climática. (pág. 22)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT200_01</code> Esquema e instalación de la turbina de aire V2 y el módulo regulador de régimen J126 — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 22</span></div>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
@@ -28127,8 +28366,182 @@ En la versión de nueva generación, ha sido revisada técnicamente y adaptada e
     </div>
   </section>
 
+  <section id="nt578" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 578 <span class="fusionado">SEAT</span></div>
+    <div class="nota-body">
+      <h1>Potenciómetro de la distribución de aire</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Indicar constantemente a la unidad de control la posición del mando de distribución de aire elegida por el usuario. (pág. 15)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Al girar el mando de distribución, varía la resistencia del potenciómetro enviando una señal de tensión analógica a la unidad de control (autoclima o calefacción motorizada). Cuando la señal indica la selección de salida hacia el parabrisas, la unidad incrementa la velocidad de la turbina, coloca la trampilla de recirculación en entrada de aire fresco y conecta el compresor (en autoclima). (pág. 15)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <ul>
+<li>La unidad sitúa automáticamente la trampilla de recirculación en posición de entrada de aire fresco. (pág. 15)</li>
+<li>No se incrementa automáticamente la velocidad de la turbina ni se conecta el compresor al seleccionar la salida de aire hacia el parabrisas. (pág. 15)</li>
+<li>Parpadean todos los dígitos de la pantalla del display al conectar el equipo. (pág. 15)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Mediante la función "08" (bloque de valores de medición, grupo 004, campo 4) del equipo de autodiagnosis. (pág. 37)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Potenciómetro resistivo accionado mecánicamente al girar la rueda del mando de distribución de aire en la consola central. (pág. 15)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT578_01</code> Mando con potenciómetro de distribución de aire y rueda de accionamiento — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 15</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 15</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt579" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 579 <span class="fusionado">SEAT</span></div>
+    <div class="nota-body">
+      <h1>Potenciómetro del motor de la trampilla de temperatura — <strong>G92</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Informa constantemente a la unidad de control sobre la posición física angular exacta de la trampilla de mezcla de temperatura. (págs. 15, 22)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>El eje del potenciómetro gira solidario con el engranaje de salida del servomotor V68. Al modificar la posición de la trampilla, varía el valor de resistencia eléctrica informando a la unidad de control sobre el ángulo real alcanzado y permitiendo la detección de los dos topes mecánicos del recorrido. (págs. 15, 22)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Carrera angular de trabajo: 51º. (pág. 15)</li>
+<li>Rango de resistencia eléctrica: de 0 a 4,7 kΩ. (pág. 15)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <ul>
+<li>La unidad de control inmoviliza la trampilla de temperatura en la posición en que se encontraba al detectar el fallo. (pág. 15)</li>
+<li>Se reduce automáticamente la velocidad de la turbina para evitar la entrada excesiva de aire frío o caliente no regulado. (pág. 15)</li>
+<li>Parpadeo de los dígitos del display al encender el sistema. (pág. 15)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Mediante la función "08" (bloque de valores de medición, grupo 002) del equipo de autodiagnosis. (pág. 37)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Potenciómetro rotativo de resistencia variable integrado en el interior de la carcasa del servomotor V68. (págs. 15, 22)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT579_01</code> Vista interna del servomotor V68 mostrando la ubicación del potenciómetro G92 y las ruedas de transmisión — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 22</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 15, 22</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt581" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 581 <span class="fusionado">SEAT</span></div>
+    <div class="nota-body">
+      <h1>Unidad de manejo e indicación - Pulsadores — <strong>E87</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Permitir al usuario seleccionar la temperatura, velocidad de la turbina, modo de recirculación, encendido del aire acondicionado y modo de trabajo del sistema. (pág. 20)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Al presionar cualquier pulsador, la orden se envía a través de un bus de datos paralelo de 18 cables hacia la unidad del radiocasete. La radio procesa la pulsación y la retransmite mediante un bus de datos de 1 solo cable hacia la unidad de control del climatizador J255. (pág. 20)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Alimentación eléctrica de la botonera: proporcionada directamente por el módulo del radiocasete. (pág. 20)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <ul>
+<li>Al fallar un pulsador, la radio emite un mensaje genérico de avería hacia la unidad J255 (sin identificar el botón concreto). (pág. 20)</li>
+<li>La unidad J255 ignora todas las señales de la botonera y entra en un modo de emergencia: fija el autoclima en modo automático a 22 ºC solicitados, asume 20 ºC exteriores, desconecta el compresor y abre la entrada de aire fresco exterior. (pág. 20)</li>
+<li>En calefacción motorizada, mantiene fijos los parámetros existentes antes del fallo. (pág. 20)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Mediante la función "08" (bloque de valores de medición, grupos 003 y 004) del equipo de autodiagnosis. (pág. 37)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Botonera de pulsadores integrada en el conjunto frontal compacto de la consola central que agrupa la climatización, el radiocasete y la pantalla. (pág. 20)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT581_01</code> Frontal de la unidad de manejo e indicación E87 con el desglose de los pulsadores de climatización y radio — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 20</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 20</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt582" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 582 <span class="fusionado">SEAT</span></div>
+    <div class="nota-body">
+      <h1>Display de la unidad de manejo e indicación — <strong>E87</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Visualizar de forma clara los parámetros operativos de la climatización, datos del radiocasete y funciones del ordenador de a bordo. (pág. 21)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>La unidad de control J255 transmite los datos de estado a través del bus de 1 cable al radiocasete. El radiocasete procesa los gráficos y excita los segmentos de la pantalla a través del bus de datos de 18 cables. (pág. 21)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Alimentación eléctrica de la pantalla: suministrada directamente por la unidad del radiocasete. (pág. 21)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <ul>
+<li>Si falla la comunicación por bus entre la radio y la unidad J255, desaparece toda la información gráfica referente a la climatización en la pantalla. (pág. 21)</li>
+<li>Si se avería el propio display, debe sustituirse la unidad de manejo e indicación E87 completa. (pág. 21)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Inspección visual del encendido de segmentos durante la prueba de autodiagnosis. (pág. 21)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Pantalla de cristal líquido (LCD) de gran formato integrada en el centro de la consola central. Existen dos variantes de pantalla según se monte autoclima (indicación en ºC) o calefacción motorizada (indicación por barras COLD/HOT). (pág. 21)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT582_01</code> Muestra de indicaciones en el display para los sistemas Autoclima y Calefacción Motorizada — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 21</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 21</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    569 notas técnicas · generado el 24/09/2026.
+    577 notas técnicas · generado el 24/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 

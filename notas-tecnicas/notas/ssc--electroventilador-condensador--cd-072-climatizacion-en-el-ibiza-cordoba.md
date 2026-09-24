@@ -5,42 +5,46 @@ unidad: clima
 nt: 204
 tipo: elemento
 clase: componente
-titulo: "Ventiladores de líquido refrigerante"
+titulo: "Electroventiladores del radiador y condensador"
 codigo: "V7 / V35"
-menu: "Ventiladores de líquido refrig V7 / V35"
-grupo: "Circuito frigorífico"
+menu: "Electroventiladores del radiad V7 / V35"
+grupo: "Refrigeración del motor"
 clave: electroventilador-condensador
-area: climatizacion
-sistema: "circuito-frigorifico"
+area: motor
+sistema: "refrigeracion-motor"
+forma_parte_de: circuito-refrigeracion-motor
 marca: "SEAT"
 fuentes: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 25"
-relacionados: ["unidad-control-aire-acondicionado", "condensador"]
-palabras: ["V7", "V35", "electroventilador", "1ª velocidad", "2ª velocidad", "resistencia previa"]
+relacionados: ["conmutador-termico-ventilador", "unidad-control-climatizador"]
+palabras: ["V7", "V35", "dos velocidades", "resistencia serie", "canalizador"]
 ---
 
 ## Misión
 
-Generar un flujo forzado de aire a través del condensador y del radiador para enfriar el fluido frigorífico R134a y el líquido refrigerante del motor. (pág. 25).
+Forzar el paso de aire a través del condensador y del radiador para condensar el gas frigorífico y enfriar el líquido refrigerante del motor. (pág. 25)
 
 ## Tipos y características
 
-Dos electroventiladores independientes montados en el frontal del vano motor, cada uno con motor eléctrico de dos velocidades. (pág. 25).
+Pareja de motores eléctricos independientes de dos velocidades montados sobre el canalizador de aire posterior del radiador. (pág. 25)
 
 ## Principio de funcionamiento
 
-- 1ª velocidad: Se activa a través de una resistencia eléctrica integrada en el canalizador. Se alimenta por la unidad J293 (al conectar el compresor) o por el conmutador térmico F18 al alcanzar 95 ºC. (págs. 25, 29).
-- 2ª velocidad: Se alimenta directamente con 12 V sin resistencia desde la unidad J293 cuando la presión en el circuito frigorífico supera 16 bares (vía F129/G65) o la temperatura del motor supera 105 ºC (vía F18). (págs. 25, 29).
+- **Primera velocidad:** Al recibir positivo desde el conmutador térmico F18 (a 95 ºC) o desde la unidad J293 (al conectar el compresor), la corriente pasa a través de una resistencia eléctrica integrada reduciendo la velocidad de giro. (págs. 25, 29)
+- **Segunda velocidad:** Al recibir positivo desde la unidad J293 (por presión > 16 bares en F129/G65 o por temperatura > 105 ºC en F18), la corriente alimenta directamente los devanados del motor a máxima potencia. (págs. 25, 29)
 
 ## Valores de trabajo
 
-- Alimentación: 12 V CC.
-- Conexión 1ª velocidad: señal de compresor o t ºC motor = 95 ºC.
-- Conexión 2ª velocidad: P frigorífica > 16 bares o t ºC motor = 105 ºC. (págs. 25, 29).
-
-## Anomalías frecuentes
-
-Resistencia de la 1ª velocidad cortada, escobillas quemadas, fusible principal fundido en el portafusibles de la batería. (pág. 25).
+- Tensión de alimentación: 12 V. (pág. 25)
 
 ## Comportamiento en avería
 
-No existe función sustitutiva. El fluido frigorífico sube drásticamente de presión por falta de condensación, provocando la desconexión del compresor por alta presión (32 bares). (págs. 16, 25).
+- Elevación anómala de la presión de alta en el circuito frigorífico con falta de rendimiento frigorífico al ralentí. (pág. 25)
+- Sobrecalentamiento del líquido refrigerante del motor térmico. (pág. 25)
+
+## Cómo comprobarlo
+
+Mediante excitación directa con corriente de batería o verificando la respuesta en la función "03" de diagnosis de actuadores de la unidad del motor. (págs. 25, 36)
+
+## Imágenes requeridas
+
+- Módulo con los dos ventiladores independientes V7 y V35 instalados sobre el canalizador — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 25
