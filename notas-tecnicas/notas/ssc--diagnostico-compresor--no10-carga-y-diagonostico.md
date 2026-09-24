@@ -13,7 +13,7 @@ clave: diagnostico-compresor
 area: climatizacion
 sistema: "circuito-frigorifico"
 fuentes: "Nº10. Carga y Diagonostico.pdf, págs. 126-131"
-relacionados: ["compresor", "embrague-compresor", "aceite-frigorifico", "ruidos-compresor"]
+relacionados: ["compresor", "embrague-compresor", "aceite-frigorifico"]
 palabras: ["avería compresor", "aceite rojo", "aceite negro", "aceite purpurina", "ruidos", "embrague", "placa de válvulas"]
 ---
 
@@ -52,4 +52,4 @@ Alta y Baja presión igualadas con el compresor girando, presencia de ruidos ext
 
 ## Verificación tras la reparación
 
-Si se detecta aceite rojo, negro, purpurina, o partículas en el circuito, es strictly obligatorio realizar el lavado completo del circuito con aire seco y nitrógeno líquido, y sustituir sin excepción el compresor, la válvula de expansión y el filtro deshidratador. (págs. 127, 131)
+Si se detecta aceite rojo, negro, purpurina, o partículas en el circuito, es estrictamente obligatorio realizar el lavado completo del circuito con aire seco y nitrógeno líquido, y sustituir sin excepción el compresor, la válvula de expansión y el filtro deshidratador. (págs. 127, 131)

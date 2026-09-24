@@ -13,7 +13,7 @@ clave: lectura-manometros
 area: climatizacion
 sistema: "circuito-frigorifico"
 fuentes: "Nº10. Carga y Diagonostico.pdf, págs. 123-125"
-relacionados: ["compresor", "no-enfria", "prueba-rendimiento"]
+relacionados: ["compresor", "no-enfria"]
 palabras: ["presiones de trabajo", "compresor variable", "compresor fijo", "aireadores", "1500 rpm"]
 ---
 

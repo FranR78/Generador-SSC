@@ -13,7 +13,7 @@ clave: sustitucion-compresor
 area: climatizacion
 sistema: "circuito-frigorifico"
 fuentes: "Nº10. Carga y Diagonostico.pdf, págs. 127, 131-132"
-relacionados: ["compresor", "aceite-frigorifico", "vacio-circuito", "rodaje-compresor"]
+relacionados: ["compresor", "aceite-frigorifico", "vacio-circuito"]
 palabras: ["sustitución compresor", "vaciado de aceite", "adición de aceite", "rodaje", "1000 rpm"]
 ---
 
