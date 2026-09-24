@@ -6,54 +6,50 @@ nt: 257
 tipo: elemento
 clase: componente
 titulo: "Acoplamiento electromagnético del compresor"
-menu: "Acoplamiento electromagnético del comp"
+codigo: "N25"
+menu: "Acoplamiento electromagnético  N25"
 grupo: "Circuito frigorífico"
 clave: embrague-compresor
 area: climatizacion
 sistema: "circuito-frigorifico"
 forma_parte_de: compresor
-fuentes: "CLIMATIZADOR MD FRAN.docx, págs. Sección Acoplamiento electromagnético"
-relacionados: ["compresor", "unidad-control-climatizador"]
-palabras: ["electroembrague", "polea", "bobina electromagnética", "placa elástica", "entrehierro"]
+fuentes: "CLIMATIZADOR MD FRAN.docx, págs. 7"
+relacionados: ["compresor"]
+palabras: ["N25", "bobina", "polea", "placa elástica", "espacio libre A", "correa Poly-V"]
 ---
 
 ## Misión
 
-Establecer o interrumpir mecánicamente la transmisión de fuerza entre el motor del vehículo y el eje de impulsión del compresor de climatización. (Sección Acoplamiento electromagnético).
+Conectar o desconectar mecánicamente el eje del compresor a la correa de arrastre movida por el motor del vehículo. (pág. 7)
 
 ## Tipos y características
 
-Electroembrague instalado en la parte frontal de la carcasa del compresor.
-Componentes principales:
-1. Polea montada sobre rodamiento/cojinete en la carcasa del compresor (giratoria e independiente del eje). (Sección Acoplamiento electromagnético).
-2. Placa elástica de acero dotada de cubo, fijada rígidamente al eje de impulsión del compresor. (Sección Acoplamiento electromagnético).
-3. Bobina electromagnética fijada a la carcasa del compresor. (Sección Acoplamiento electromagnético).
+Acoplamiento electromagnético formado por polea con rodamiento, bobina magnética fija a la carcasa y placa elástica estriada al eje del compresor. (pág. 7)
 
 ## Principio de funcionamiento
 
-El motor del vehículo impulsa la polea continuamente mediante una correa Poly-V.
-- Desactivado: la polea gira libremente sobre su rodamiento sin arrastrar el eje del compresor (existe un espacio libre o entrehierro A entre la placa elástica y la polea). (Sección Acoplamiento electromagnético).
-- Activado: al aplicar tensión eléctrica a la bobina, el campo magnético atrae la placa elástica contra la superficie de la polea venciendo la fuerza de los muelles, anulando el espacio A y acoplando el eje del compresor. (Sección Acoplamiento electromagnético).
-- Desconexión: al cortar la corriente de la bobina, la placa elástica regresa a su posición inicial impulsada por los muelles, liberando el eje. (Sección Acoplamiento electromagnético).
+Al aplicar 12 V a la bobina, el campo magnético atrae la placa elástica contra la polea giratoria venciendo el espacio libre "A". El eje gira solidario con la polea. Al cortar la corriente, los muelles separan la placa y la polea vuelve a girar libremente. (pág. 7)
 
 ## Valores de trabajo
 
-Espacio libre/entrehierro de separación A entre la placa elástica y la polea. (Sección Acoplamiento electromagnético).
+- Tensión de excitación de la bobina: 12 V de corriente continua. (pág. 7)
 
 ## Anomalías frecuentes
 
-Interrupción o cortocircuito en el bobinado del electroimán, desgaste excesivo de la superficie de fricción con entrehierro A fuera de tolerancia, y fallo del rodamiento de la polea. (Sección Acoplamiento electromagnético).
+Desgaste del rodamiento de la polea, fogueo de la bobina electromagnética o holgura excesiva en el espacio libre "A". (pág. 7)
 
 ## Comportamiento en avería
 
-El eje del compresor no gira al activar el climatizador (falta de acoplamiento), o bien se produce patinado con sobrecalentamiento y ruidos de fricción. (Sección Acoplamiento electromagnético).
+El compresor no acopla al activar el climatizador o patina emitiendo ruidos mecánicos. (pág. 7)
 
 ## Cómo comprobarlo
 
-1. Verificar la llegada de tensión (+12 V) a la bobina electromagnética al conectar el climatizador. (Sección Acoplamiento electromagnético).
-2. Medir la resistencia eléctrica de la bobina. (Sección Acoplamiento electromagnético).
-3. Verificar la medida del entrehierro A entre la placa elástica y la polea. (Sección Acoplamiento electromagnético).
+Medir la resistencia eléctrica de la bobina y verificar la separación axial en el espacio "A". (pág. 7)
 
 ## Mantenimiento
 
-Comprobar el desgaste de la superficie de fricción de la placa elástica y el estado de la correa Poly-V de accionamiento. (Sección Acoplamiento electromagnético).
+Ajustar la holgura "A" mediante arandelas de calado en caso de desgaste. (pág. 7)
+
+## Imágenes requeridas
+
+- Esquema del acoplamiento electromagnético con detalle del espacio libre A y rodamiento — Fuente: CLIMATIZADOR MD FRAN.docx, pág. 7

@@ -11,43 +11,37 @@ grupo: "Fluidos frigoríficos"
 clave: refrigerante-r134a
 area: climatizacion
 sistema: "fluidos-frigorificos"
-fuentes: "CLIMATIZADOR MD FRAN.docx, págs. Sección Agente frigorífico"
+fuentes: "CLIMATIZADOR MD FRAN.docx, págs. 3-4, 13-14"
 relacionados: ["aceite-frigorifico", "ciclo-frigorifico"]
-palabras: ["tetrafluoretano", "CH2F-CF3", "HFC", "ODP", "GWP", "punto de ebullición"]
+palabras: ["tetrafluoretano", "HFC", "ODP", "GWP", "ácido fluorhídrico"]
 ---
 
 ## Designación y norma
 
-Tetrafluoretano (fórmula química CH2F-CF3). Hidrocarburo fluorado (HFC). (Sección Agente frigorífico).
+Agente frigorífico R134a (tetrafluoretano, CH2F-CF3). Hidrocarburo fluorado (HFC) sin átomos de cloro. (pág. 3)
 
 ## Propiedades
 
-- Incoloro como el agua en estado líquido e invisible en estado gaseoso/vapor. (Sección Agente frigorífico).
-- Punto de ebullición a presión atmosférica (0,1 MPa / 1 bar): -26,5 ºC. (Sección Agente frigorífico).
-- Punto de solidificación: -101,6 ºC. (Sección Agente frigorífico).
-- Temperatura crítica: 100,6 ºC. (Sección Agente frigorífico).
-- Presión crítica: 40,56 bar (4,56 MPa). (Sección Agente frigorífico).
-- Coeficiente de destrucción del ozono (ODP): 0. (Sección Agente frigorífico).
-- Coeficiente de calentamiento global (GWP): 0,26 (frente a 3,1 del R12). (Sección Agente frigorífico).
-- Potencial de escape de cloro (CLP): 0. (Sección Agente frigorífico).
-- Ausencia de átomos de cloro en su molécula, por lo que no perjudica la capa de ozono. (Sección Agente frigorífico).
+- Incoloro en estado líquido y vapor; invisible en estado gaseoso. (pág. 3)
+- ODP (potencial de destrucción del ozono): 0. GWP (potencial de calentamiento global): 0,26. (pág. 3)
+- Al combinarse con humedad a altas presiones y temperaturas forma ácido fluorhídrico, un compuesto altamente corrosivo para metales y plásticos del circuito. (págs. 4, 13)
 
 ## Dónde se usa y cantidades
 
-Se utiliza de forma exclusiva en los circuitos frigoríficos de climatización de automoción actuales. (Sección Agente frigorífico).
+Se utiliza en el circuito cerrado de climatización como fluido de trabajo para la absorción de calor en el evaporador y disipación en el condensador. La carga exacta en gramos depende del modelo de vehículo. (págs. 3, 4)
 
 ## Compatibilidades y mezclas prohibidas
 
-Prohibido mezclar el R134a con otros agentes frigoríficos (como el R12). Solo debe emplearse el fluido especificado para cada sistema. Los equipos antiguos que funcionaban con R12 se pueden transformar mediante un kit especial (método Retrofit) empleando un lubricante adecuado, aunque el rendimiento frigorífico resultante es ligeramente inferior al original. En contacto con la humedad produce un ácido altamente corrosivo para los metales (ácido fluorhídrico). (Sección Agente frigorífico).
+Prohibida la mezcla con R12 o con refrigerantes de distinta naturaleza. Incompatible con aceites de base mineral usados en circuitos antiguos de R12. (págs. 3, 4)
 
 ## Identificación
 
-Especificado en las placas adhesivas de identificación del sistema en el vehículo. (Sección Agente frigorífico).
+Líquido incoloro suministrado en recipientes presurizados específicos para R134a. (pág. 3)
 
 ## Manipulación, almacenamiento y residuos
 
-Prohibido liberar el R134a libremente a la atmósfera. Recuperación, reciclaje y deshidratación obligatorios mediante estaciones de servicio especializadas. Si se requiere abrir el circuito para reparar el vehículo, es obligatorio extraer previamente el refrigerante. (Sección Técnica de Servicio).
+Recuperar obligatoriamente mediante estación de reciclaje en botellas de almacenamiento (llenadas como máximo al 75% de su capacidad). Prohibido su vertido a la atmósfera. (págs. 12, 13)
 
 ## Riesgos y normativa
 
-Al fugarse, el fluido despedido es sumamente frío (-26,5 ºC) y provoca subenfriamientos o congelaciones inmediatas en contacto con la piel. Si entra en contacto con los ojos, se deben lavar con agua abundante durante 15 minutos y acudir al oftalmólogo. El gas es más denso que el aire, inodoro e incoloro, desplazando al oxígeno en recintos cerrados o fosas con riesgo de asfixia. Prohibido realizar soldaduras o estañado en componentes cargados; a altas temperaturas o ante llamas abiertas se disocia químicamente produciendo gases tóxicos irritantes. (Sección Técnica de Servicio).
+Riesgo de congelación en la piel (-26,5 ºC) y riesgo de asfixia en fosos por desplazamiento de oxígeno. Prohibido fumar o soldar cerca por riesgo de descomposición tóxica. (págs. 12, 13)

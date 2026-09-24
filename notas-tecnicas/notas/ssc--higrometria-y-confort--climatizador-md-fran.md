@@ -6,44 +6,44 @@ nt: 251
 tipo: proceso
 subtipo: fundamento
 clase: fundamento
-titulo: "Ambiente climatizado en el vehículo"
-menu: "Ambiente climatizado en el vehículo"
-grupo: "Control de climatización"
+titulo: "Bienestar e higrometría en el habitáculo"
+menu: "Bienestar e higrometría en el habitácu"
+grupo: "Distribución de aire"
 clave: higrometria-y-confort
 area: climatizacion
-sistema: "control-climatizacion"
-fuentes: "CLIMATIZADOR MD FRAN.docx, págs. Sección Ambiente climatizado en el vehículo"
-relacionados: ["regulacion-automatica", "distribucion-aire"]
-palabras: ["estrés climatológico", "seguridad activa", "concentración", "humedad", "habitáculo"]
+sistema: "distribucion-aire"
+fuentes: "CLIMATIZADOR MD FRAN.docx, págs. 1-2"
+relacionados: ["circuito-frigorifico", "filtro-habitaculo"]
+palabras: ["bienestar", "seguridad activa", "OMS", "estrólosis", "humedad relativa"]
 ---
 
 ## Objeto
 
-Garantizar el bienestar físico y mental del conductor reduciendo la fatiga, mejorando la concentración y manteniendo la capacidad de reacción mediante el acondicionamiento, depuración y deshidratación del aire del habitáculo. (Sección Ambiente climatizado en el vehículo).
+Definir las condiciones térmicas, de humedad y pureza del aire interior para mantener la capacidad de concentración del conductor y garantizar la seguridad activa. (pág. 1)
 
 ## Fundamento
 
-El bienestar del ser humano en el habitáculo depende de la combinación adecuada de temperatura ambiental interior, humedad del aire y caudal circulante. La elevación excesiva de la temperatura constituye una carga física («estrés climatológico») que perjudica la seguridad activa al reducir la concentración y la capacidad de reacción. (Sección Ambiente climatizado en el vehículo).
+El bienestar térmico influye directamente sobre la capacidad física y mental del conductor. Según estudios de la Organización Mundial de la Salud (OMS), someterse a temperaturas elevadas reduce la facultad combinatoria y el tiempo de reacción, generando un riesgo equivalente a conducir bajo los efectos del alcohol. (págs. 1-2)
 
 ## Desarrollo
 
-- Cargas climatológicas e influencia en la conducción:
-  - Temperatura ideal para el conductor: entre 20 ºC y 22 ºC (área A de cargas climatológicas, margen agradable). (Sección Ambiente climatizado en el vehículo).
-  - Radiación solar intensa: puede elevar la temperatura del habitáculo más de 15 ºC por encima de la atmosférica, acumulándose especialmente en la zona de la cabeza. (Sección Ambiente climatizado en el vehículo).
-  - Efectos fisiológicos del calor (áreas B y C): incremento de la temperatura corporal, aceleración del ritmo cardíaco, sudoración intensa y menor aportación de oxígeno al cerebro. (Sección Ambiente climatizado en el vehículo).
-  - Pérdida de rendimiento: al subir la temperatura de 25 ºC a 35 ºC, la capacidad perceptiva y la facultad combinatoria del ser humano disminuyen un 20% (equivalente a una tasa de alcoholemia de 0,5 g/l de sangre). (Sección Ambiente climatizado en el vehículo).
-- Caudales de aire requeridos según la temperatura exterior:
-  - Temperatura ambiental de -20 ºC: requiere 28 ºC interiores con caudal intenso de 8 kg/min. (Sección Ambiente climatizado en el vehículo).
-  - Temperatura ambiental de 40 ºC: requiere 23 ºC interiores con caudal intenso de 10 kg/min. (Sección Ambiente climatizado en el vehículo).
-  - Temperatura ambiental de 10 ºC: requiere 21,5 ºC interiores con caudal reducido de 4 kg/min. (Sección Ambiente climatizado en el vehículo).
-- Funciones del climatizador: además de reducir la temperatura, el climatizador deshidrata y depura el aire mediante el filtro antipolen y el filtro de carbón activo, eliminando alérgenos y partículas. (Sección Ambiente climatizado en el vehículo).
+Una temperatura interior adecuada se consigue combinando la temperatura ambiental y un caudal de aire suficiente. La radiación solar intensa puede incrementar la temperatura en la zona de la cabeza más de 15 ºC respecto a la temperatura exterior, provocando transpiración, aumento del ritmo cardíaco y menor aporte de oxígeno al cerebro (estrés climatológico).
+
+El climatizador no solo reduce la temperatura sino que depura y deshidrata el aire de entrada. La incorporación de filtros antipolen o de carbón activo retiene partículas y contaminantes, beneficiando a las personas con procesos alérgicos. (págs. 1-2)
 
 ## Valores de referencia
 
-- Temperatura ideal del conductor: 20 ºC a 22 ºC. (Sección Ambiente climatizado en el vehículo).
-- Disminución de la capacidad perceptiva de 25 ºC a 35 ºC: 20% de reducción. (Sección Ambiente climatizado en el vehículo).
-- Caudal de aire a 40 ºC exterior: 10 kg/min. (Sección Ambiente climatizado en el vehículo).
+- Temperatura ideal para el conductor (margen de confort A): entre 20 ºC y 22 ºC. (pág. 1)
+- Reducción de la capacidad de reacción por aumento de temperatura de 25 ºC a 35 ºC: 20% (equivalente a 0,5 g/l de alcohol en sangre). (pág. 2)
+- Caudal de aire a -20 ºC exterior (28 ºC interior): 8 kg/min. (pág. 1)
+- Caudal de aire a 40 ºC exterior (23 ºC interior): 10 kg/min. (pág. 1)
+- Caudal de aire a 10 ºC exterior (21,5 ºC interior): 4 kg/min. (pág. 1)
 
 ## Errores de concepto frecuentes
 
-Considerar el climatizador únicamente como un equipo de confort o lujo; se trata de un elemento de seguridad activa de primer orden que evita el estrés climatológico y la pérdida de capacidad de reacción al volante. (Sección Ambiente climatizado en el vehículo).
+- Considerar el climatizador como un equipo de confort opcional y no como un elemento clave de la seguridad activa del vehículo. (pág. 1)
+- Suponer que abrir las ventanillas o el techo practicable sustituye la función del climatizador en días calurosos sin generar corrientes y ruidos molestos. (pág. 2)
+
+## Imágenes requeridas
+
+- Gráfica con la zona de confort térmico delimitada por la temperatura ambiental y el porcentaje de humedad relativa del aire — Fuente: CLIMATIZADOR MD FRAN.docx, pág. 2
