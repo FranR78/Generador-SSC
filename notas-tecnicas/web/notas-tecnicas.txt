@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">108 notas · 24/09/2026</p>
+  <p class="sidebar-meta">114 notas · 24/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -262,7 +262,7 @@
     <li><a href="#grp-condensador">Condensador <span class="menu-cuenta">2 fuentes</span></a></li>
     <li><a href="#grp-filtro-deshidratador-mirilla">Filtro deshidratador <span class="menu-cuenta">2 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
-    <li><a href="#grp-transmisor-presion-map-maf">Transmisor de presión <span class="menu-cuenta">2 fuentes</span></a></li>
+    <li><a href="#grp-transmisor-presion-map-maf">Transmisor de presión <span class="menu-cuenta">3 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
     <li><a href="#grp-valvula-expansion">Válvula de expansión <span class="menu-cuenta">3 fuentes</span></a></li>
     <li><a href="#grp-evaporador">Evaporador <span class="menu-cuenta">2 fuentes</span></a></li>
@@ -305,12 +305,12 @@
     <li><a href="#nt60">NT60 · Función de elevación de ralentí en ata</a></li>
     <li><a href="#nt61">NT61 · Regulación continua de electroventilad</a></li>
     <li><a href="#nt62">NT62 · Electroventiladores funcionando de for</a></li>
-    <li><a href="#nt63">NT63 · Interruptor de climatización</a></li>
+    <li><a href="#grp-interruptor-climatizacion">Interruptor de climatización <span class="menu-cuenta">2 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
-    <li><a href="#nt64">NT64 · Válvula de descarga por sobrepresión</a></li>
+    <li><a href="#grp-valvula-sobrepresion">Válvula de descarga por sobrepresión <span class="menu-cuenta">2 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
-    <li><a href="#nt65">NT65 · Sensor de temperatura del evaporador</a></li>
-    <li><a href="#grp-presostato-binary-trinary-cuatrinary">Conmutador de presión trinario <span class="menu-cuenta">2 fuentes</span></a></li>
+    <li><a href="#grp-sensor-ntc-evaporador">Sensor de temperatura del evaporador <span class="menu-cuenta">2 fuentes</span></a></li>
+    <li><a href="#grp-presostato-binary-trinary-cuatrinary">Conmutador de presión trinario <span class="menu-cuenta">3 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Refrigeración del motor</span></li>
     <li><a href="#nt69">NT69 · Termoconmutador para la temperatura de</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
@@ -353,6 +353,7 @@
     <li><a href="#nt107">NT107 · Función de recirculación de aire</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
     <li><a href="#nt108">NT108 · Sensor de la calidad del aire G238</a></li>
+    <li><a href="#nt109">NT109 · Regulación y protección del sistema de</a></li>
   </ul>
 </nav>
 
@@ -1501,10 +1502,10 @@ Si el compresor se bloquea mecánicamente, el disco de arrastre de chapa se defo
   </div>
 
   <div class="grupo-componente" id="grp-transmisor-presion-map-maf">
-    <div class="grupo-cab"><span class="grupo-nombre">Transmisor de presión</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Transmisor de presión</span><span class="grupo-cuenta">3 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 2 · NT14 · 2. Introducción a la refrigeración.pdf, págs. 20</summary>
+      <summary>Variante 1 de 3 · NT14 · 2. Introducción a la refrigeración.pdf, págs. 20</summary>
   <section id="nt14" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 14 </div>
     <div class="nota-body">
@@ -1533,7 +1534,7 @@ Si el compresor se bloquea mecánicamente, el disco de arrastre de chapa se defo
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 2 · NT67 · 11. Dispositivos de regulación y seguridad.pdf, págs. 89-91</summary>
+      <summary>Variante 2 de 3 · NT67 · 11. Dispositivos de regulación y seguridad.pdf, págs. 89-91</summary>
   <section id="nt67" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 67 </div>
     <div class="nota-body">
@@ -1578,6 +1579,58 @@ Si el compresor se bloquea mecánicamente, el disco de arrastre de chapa se defo
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">11. Dispositivos de regulación y seguridad.pdf, págs. 89-91</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 3 de 3 · NT114 · 208. Regulación del Sistema.pdf, págs. 36-37</summary>
+  <section id="nt114" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 114 <span class="fusionado">VW</span></div>
+    <div class="nota-body">
+      <h1>Transmisor de alta presión — <strong>G65</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir de forma continua y electrónica la presión del agente frigorífico en todo el ciclo de trabajo, transformando la magnitud física de presión en una señal eléctrica para las unidades de control del climatizador, del motor y de los ventiladores (págs. 36-37).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>La presión del refrigerante actúa contra el cristal de silicio deformándolo en proporción a la fuerza ejercida (pág. 37). Al deformarse, el cristal modifica su resistencia eléctrica y varía la tensión de medición captada en su estructura (pág. 37). El microprocesador interno procesa esta tensión y emite una señal digital modulada en anchura de impulsos (PWM) a una frecuencia fija de 50 Hz (duración de período de 20 ms = 100%) (pág. 37).
+- A presión baja (0,14 MPa / 1,4 bares): la deformación es leve, la resistencia es baja y el microprocesador genera impulsos estrechos de 2,6 ms (13% del período) (pág. 37).
+Las unidades de control utilizan esta señal para adaptar con precisión el ralentí del motor a la potencia absorbida por el compresor y para conmutar las velocidades del ventilador de forma decalada (con un breve retardo), evitando variaciones bruscas de régimen al ralentí (pág. 37).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Frecuencia de la señal PWM: 50 Hz (período de 20 ms = 100%) (pág. 37).</li>
+<li>Ancho de impulso a 0,14 MPa (1,4 bares): 2,6 ms (13% de la duración del período) (pág. 37).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Registro del código de avería 00819 "Transmisor de alta presión G65 - Señal muy baja" en la memoria del autodiagnóstico (pág. 37).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Si la unidad de control para el ventilador del líquido refrigerante no detecta señal proveniente del sensor G65, desconecta el compresor automáticamente por motivos de seguridad (pág. 37).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Consultar la memoria de averías del sistema mediante el equipo de diagnosis (código 00819) y verificar con osciloscopio la señal PWM entre sus terminales (pág. 37).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Sensor de presión electrónico que sustituye al conmutador F129, instalado en el tubo de alta presión (págs. 36-37). Integra un cristal de silicio (resistencia variable) y un microprocesador en el propio cuerpo del sensor (pág. 37). Susceptible de autodiagnóstico (pág. 37).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT114_01</code> Transmisor de alta presión G65, sección del sensor con cristal de silicio y gráfica de la señal PWM (frecuencia 50 Hz, periodo 20 ms, pulso 2,6 ms a 1,4 bar) — Fuente: 208. Regulación del Sistema.pdf, págs. 36-37</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">208. Regulación del Sistema.pdf, págs. 36-37</p>
       </div>
     </div>
   </section>
@@ -3913,6 +3966,11 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
     </div>
   </section>
 
+  <div class="grupo-componente" id="grp-interruptor-climatizacion">
+    <div class="grupo-cab"><span class="grupo-nombre">Interruptor de climatización</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 2 · NT63 · 11. Dispositivos de regulación y seguridad.pdf, págs. 87</summary>
   <section id="nt63" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 63 </div>
     <div class="nota-body">
@@ -3941,7 +3999,46 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 2 · NT110 · 208. Regulación del Sistema.pdf, págs. 35</summary>
+  <section id="nt110" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 110 <span class="fusionado">VW</span></div>
+    <div class="nota-body">
+      <h1>Conmutador para climatizador — <strong>E35</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Establecer la orden eléctrica de activación hacia el compresor a través del acoplamiento electromagnético N25 e informar a la unidad de control del motor para elevar el ralentí (pág. 35).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Al accionar el conmutador E35, se habilita la alimentación del acoplamiento electromagnético N25 (pág. 35). En sistemas de regulación automática, arrancan simultáneamente el ventilador para líquido refrigerante V7 y la turbina de aire fresco V2 (pág. 35). En climatizadores manuales, se exige seleccionar al menos el escalón de velocidad 1 en la turbina (pág. 35). Paralelamente, la unidad de control del motor eleva el régimen de ralentí para compensar la potencia absorbida por el compresor (pág. 35). Si equipa conmutador de temperatura exterior conectado en serie, este impide la puesta en marcha con temperaturas inferiores a 5 ºC (pág. 35).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Umbral de bloqueo por temperatura exterior: inferior a 5 ºC (pág. 35).</li>
+<li>Escalón mínimo requerido en la turbina (manual): escalón 1 (pág. 35).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Mando de accionamiento manual situado en el salpicadero que puede llevar conectado a continuación un conmutador de temperatura exterior (pág. 35).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">208. Regulación del Sistema.pdf, págs. 35</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
+  <div class="grupo-componente" id="grp-valvula-sobrepresion">
+    <div class="grupo-cab"><span class="grupo-nombre">Válvula de descarga por sobrepresión</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 2 · NT64 · 11. Dispositivos de regulación y seguridad.pdf, págs. 87-88</summary>
   <section id="nt64" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 64 </div>
     <div class="nota-body">
@@ -3989,7 +4086,64 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 2 · NT111 · 208. Regulación del Sistema.pdf, págs. 35</summary>
+  <section id="nt111" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 111 <span class="fusionado">VW</span></div>
+    <div class="nota-body">
+      <h1>Válvula de descarga de sobrepresión</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Evitar daños estructurales e higiénicos en el circuito frigorífico liberando fluido al exterior al registrarse una sobrepresión excesiva (pág. 35).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Permanece cerrada durante el funcionamiento normal. Si la presión en el lado de alta alcanza aproximadamente 3,8 MPa (38 bares), la válvula abre descargando fluido a la atmósfera (pág. 35). Una vez cedida la sobrepresión y cuando el nivel desciende a un rango de 3,0 a 3,5 MPa (30 a 35 bares), la válvula se vuelve a cerrar (pág. 35).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Presión de apertura de la válvula: 3,8 MPa (38 bares) aprox. (pág. 35).</li>
+<li>Presión de cierre de la válvula: 3,0 a 3,5 MPa (30 a 35 bares) aprox. (pág. 35).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Reventón del disco de plástico por sobrepresión derivada de anomalías en la condensación o bloqueos del circuito (pág. 35).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Descarga de agente frigorífico al exterior y rotura del precinto plástico protector (pág. 35).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Inspección visual del disco de plástico para verificar si ha reventado tras un episodio de sobrepresión (pág. 35).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Válvula de seguridad mecánica montada directamente en el cuerpo del compresor o en el depósito de líquido deshidratador (pág. 35). Según la versión, puede incorporar un disco o precinto de plástico que se revienta al responder la válvula (pág. 35).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <p>Tras la respuesta de la válvula, investigar la causa que originó la sobrepresión en el sistema (pág. 35). El precinto de ruptura sólo se debe sustituir estando el sistema completamente vacío de refrigerante (pág. 35).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">208. Regulación del Sistema.pdf, págs. 35</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
+  <div class="grupo-componente" id="grp-sensor-ntc-evaporador">
+    <div class="grupo-cab"><span class="grupo-nombre">Sensor de temperatura del evaporador</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 2 · NT65 · 11. Dispositivos de regulación y seguridad.pdf, págs. 87-88</summary>
   <section id="nt65" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 65 </div>
     <div class="nota-body">
@@ -4019,12 +4173,46 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 2 · NT112 · 208. Regulación del Sistema.pdf, págs. 35</summary>
+  <section id="nt112" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 112 <span class="fusionado">VW</span></div>
+    <div class="nota-body">
+      <h1>Transmisor de temperatura del evaporador — <strong>G153</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir la temperatura en el bloque del evaporador para evitar su engelamiento por congelación del agua de condensación acumulada en las aletas (pág. 35).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Capta la temperatura en la matriz del evaporador y transmite una señal eléctrica a la unidad de control del climatizador (pág. 35). Si la temperatura desciende entre -1 ºC y 0 ºC, la unidad de control desactiva el acoplamiento electromagnético N25 interrumpiendo el trabajo del compresor (pág. 35). Cuando la temperatura asciende de nuevo hasta +3 ºC, se vuelve a conectar el compresor (pág. 35). En los sistemas con conmutador E33, este interrumpe directamente la corriente de alimentación del acoplamiento electromagnético (pág. 35).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Temperatura de desconexión del compresor: de -1 ºC a 0 ºC (pág. 35).</li>
+<li>Temperatura de reconexión del compresor: +3 ºC (pág. 35).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Sensor térmico alojado directamente entre las aletas de refrigeración del evaporador (pág. 35). En otros sistemas se sustituye por el conmutador de temperatura del evaporador E33 de corte directo (pág. 35).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">208. Regulación del Sistema.pdf, págs. 35</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
   <div class="grupo-componente" id="grp-presostato-binary-trinary-cuatrinary">
-    <div class="grupo-cab"><span class="grupo-nombre">Conmutador de presión trinario</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Conmutador de presión trinario</span><span class="grupo-cuenta">3 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 2 · NT66 · 11. Dispositivos de regulación y seguridad.pdf, págs. 88</summary>
+      <summary>Variante 1 de 3 · NT66 · 11. Dispositivos de regulación y seguridad.pdf, págs. 88</summary>
   <section id="nt66" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 66 </div>
     <div class="nota-body">
@@ -4067,7 +4255,7 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 2 · NT68 · 11. Dispositivos de regulación y seguridad.pdf, págs. 91</summary>
+      <summary>Variante 2 de 3 · NT68 · 11. Dispositivos de regulación y seguridad.pdf, págs. 91</summary>
   <section id="nt68" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 68 </div>
     <div class="nota-body">
@@ -4104,6 +4292,53 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">11. Dispositivos de regulación y seguridad.pdf, págs. 91</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 3 de 3 · NT113 · 208. Regulación del Sistema.pdf, págs. 36</summary>
+  <section id="nt113" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 113 <span class="fusionado">VW</span></div>
+    <div class="nota-body">
+      <h1>Conmutador de presión para climatizador — <strong>F129</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Vigilar y limitar la presión en el lado de alta del circuito frigorífico cerrado, protegiendo el compresor mediante desacoplamiento y garantizando el caudal de aire en el condensador (pág. 36).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Supervisa la presión del agente frigorífico actuando sobre tres umbrales de seguridad (pág. 36):
+1. Desconexión por alta presión: a una presión positiva de 2,4 a 3,2 MPa (24 a 32 bares), la unidad de control del climatizador desactiva el acoplamiento electromagnético del compresor (ej. por suciedad intensa en el condensador) (pág. 36).
+2. Desconexión por baja presión: si la presión cae a 0,2 MPa (2 bares), la unidad de control desactiva el acoplamiento electromagnético para evitar que el compresor gire sin gas ni lubricante (ej. por fugas de refrigerante) (pág. 36).
+3. Conmutación del electroventilador: a una presión de 1,6 MPa (16 bares), conmuta el ventilador V7 a un escalón de velocidad superior para incrementar la condensación (pág. 36).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Umbral de desconexión por sobrepresión alta: 2,4 a 3,2 MPa (24 a 32 bares) (pág. 36).</li>
+<li>Umbral de desconexión por falta de presión: 0,2 MPa (2 bares) (pág. 36).</li>
+<li>Umbral de activación del escalón superior del ventilador: 1,6 MPa (16 bares) (pág. 36).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Desconexión del compresor por sobrepresión (&gt; 24-32 bar) derivada de colmatación exterior o falta de intercambio en el condensador (pág. 36).</li>
+<li>Desconexión por baja presión (&lt; 2 bar) por fugas de agente frigorífico (pág. 36).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Conmutador de presión de versión combinada triple montado en la tubería de alta presión o en el depósito de líquido (pág. 36).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT113_01</code> Conmutador de presión triple F129 y sus rangos de actuación sobre el circuito de refrigeración y compresor — Fuente: 208. Regulación del Sistema.pdf, pág. 36</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">208. Regulación del Sistema.pdf, págs. 36</p>
       </div>
     </div>
   </section>
@@ -5878,8 +6113,49 @@ El sensor es autoadaptable: analiza el nivel medio de polución de fondo y enví
     </div>
   </section>
 
+  <section id="nt109" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 109 <span class="subtipo">Fundamento</span><span class="fusionado">VW</span></div>
+    <div class="nota-body proceso">
+      <h1>Regulación y protección del sistema de climatización</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Una unidad de control procesa la información enviada por los equipos de vigilancia del circuito de alta y baja presión y gestiona la conexión y desconexión periódica del compresor, así como la velocidad del ventilador para mantener la presión en valores normales (pág. 34).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>En los sistemas con compresor no regulado, las señales de vigilancia permiten adaptar la activación del acoplamiento electromagnético N25 y del ventilador V7 a las necesidades de rendimiento frigorífico (pág. 34). Al conectar el conmutador de climatización E35, la unidad de control del motor J257 recibe la señal e incrementa el régimen de ralentí para compensar la carga mecánica del compresor (págs. 34-35).
+El circuito básico de regulación de mando manual integra los siguientes componentes interconectados: conmutador E35, válvula de descarga de sobrepresión, conmutador de presión F129 (o transmisor de alta presión G65 en sistemas modernos), transmisor de temperatura del evaporador G153 (o conmutador E33), termoconmutador F18, relés J32 y J101, unidad de control del climatizador J301 (y/o unidad de control del ventilador J293) y unidad de control del motor J257 (págs. 34-35).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Umbrales de conmutación del termoconmutador F18: t1 = 95 ºC (escalón 1), t2 = 103 ºC (escalón 2) (pág. 35).</li>
+<li>Umbrales del conmutador de presión F129: P1 = 0,2 MPa (2 bar) / 3,2 MPa (32 bar); P2 = 1,6 MPa (16 bar) (pág. 35).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Evitar alteraciones en las presiones de trabajo que puedan provocar daños en el circuito frigorífico y en el motor, previniendo al mismo tiempo el engelamiento del evaporador (pág. 34).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <ul>
+<li>Asumir que la activación del conmutador de climatización acciona el compresor sin que la unidad de control del motor intervenga para ajustar el ralentí (págs. 34-35).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT109_01</code> Esquema general de la regulación del sistema de aire acondicionado manual con sus equipos de vigilancia, relés y unidades de control — Fuente: 208. Regulación del Sistema.pdf, págs. 34-35</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">208. Regulación del Sistema.pdf, págs. 34-35</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    108 notas técnicas · generado el 24/09/2026.
+    114 notas técnicas · generado el 24/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 

@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-24",
- "total": 108,
+ "total": 114,
  "grupos": [
   "Circuito frigorífico",
   "Control de climatización",
@@ -1775,6 +1775,74 @@
    ]
   },
   {
+   "id": "ssc.valvula-sobrepresion.208-regulacion-del-sistema",
+   "nt": 111,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "valvula-sobrepresion",
+   "seccion": "4. El compresor",
+   "subgrupo": "",
+   "titulo": "Válvula de descarga de sobrepresión",
+   "codigo": "",
+   "menu": "Válvula de descarga de sobrepresión",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208. Regulación del Sistema.pdf, págs. 35",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "compresor",
+   "relacionados": [
+    "compresor",
+    "filtro-deshidratador"
+   ],
+   "palabras": [
+    "válvula descarga",
+    "sobrepresión",
+    "38 bares",
+    "30-35 bares",
+    "precinto de ruptura"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Evitar daños estructurales e higiénicos en el circuito frigorífico liberando fluido al exterior al registrarse una sobrepresión excesiva (pág. 35)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Válvula de seguridad mecánica montada directamente en el cuerpo del compresor o en el depósito de líquido deshidratador (pág. 35). Según la versión, puede incorporar un disco o precinto de plástico que se revienta al responder la válvula (pág. 35)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Permanece cerrada durante el funcionamiento normal. Si la presión en el lado de alta alcanza aproximadamente 3,8 MPa (38 bares), la válvula abre descargando fluido a la atmósfera (pág. 35). Una vez cedida la sobrepresión y cuando el nivel desciende a un rango de 3,0 a 3,5 MPa (30 a 35 bares), la válvula se vuelve a cerrar (pág. 35)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Presión de apertura de la válvula: 3,8 MPa (38 bares) aprox. (pág. 35). Presión de cierre de la válvula: 3,0 a 3,5 MPa (30 a 35 bares) aprox. (pág. 35)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Reventón del disco de plástico por sobrepresión derivada de anomalías en la condensación o bloqueos del circuito (pág. 35)."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Descarga de agente frigorífico al exterior y rotura del precinto plástico protector (pág. 35)."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Inspección visual del disco de plástico para verificar si ha reventado tras un episodio de sobrepresión (pág. 35)."
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Tras la respuesta de la válvula, investigar la causa que originó la sobrepresión en el sistema (pág. 35). El precinto de ruptura sólo se debe sustituir estando el sistema completamente vacío de refrigerante (pág. 35)."
+    }
+   ]
+  },
+  {
    "id": "ssc.condensador.2-introduccion-a-la-refrigeracion",
    "nt": 12,
    "modulo": "ssc",
@@ -2632,6 +2700,69 @@
    ]
   },
   {
+   "id": "ssc.presostato.trinaria.208-regulacion-del-sistema",
+   "nt": 113,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "presostato-binary-trinary-cuatrinary",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Conmutador de presión para climatizador",
+   "codigo": "F129",
+   "menu": "Conmutador de presión para cli F129",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208. Regulación del Sistema.pdf, págs. 36",
+   "clase": "componente",
+   "variante": "trinaria",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "embrague-compresor",
+    "electroventilador-condensador",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "F129",
+    "trinaria",
+    "24-32 bar",
+    "2 bar",
+    "16 bar",
+    "suciedad condensador",
+    "fugas"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Vigilar y limitar la presión en el lado de alta del circuito frigorífico cerrado, protegiendo el compresor mediante desacoplamiento y garantizando el caudal de aire en el condensador (pág. 36)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Conmutador de presión de versión combinada triple montado en la tubería de alta presión o en el depósito de líquido (pág. 36)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Supervisa la presión del agente frigorífico actuando sobre tres umbrales de seguridad (pág. 36): 1. Desconexión por alta presión: a una presión positiva de 2,4 a 3,2 MPa (24 a 32 bares), la unidad de control del climatizador desactiva el acoplamiento electromagnético del compresor (ej. por suciedad intensa en el condensador) (pág. 36). 2. Desconexión por baja presión: si la presión cae a 0,2 MPa (2 bares), la unidad de control desactiva el acoplamiento electromagnético para evitar que el compresor gire sin gas ni lubricante (ej. por fugas de refrigerante) (pág. 36). 3. Conmutación del electroventilador: a una presión de 1,6 MPa (16 bares), conmuta el ventilador V7 a un escalón de velocidad superior para incrementar la condensación (pág. 36)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Umbral de desconexión por sobrepresión alta: 2,4 a 3,2 MPa (24 a 32 bares) (pág. 36). Umbral de desconexión por falta de presión: 0,2 MPa (2 bares) (pág. 36). Umbral de activación del escalón superior del ventilador: 1,6 MPa (16 bares) (pág. 36)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Desconexión del compresor por sobrepresión (> 24-32 bar) derivada de colmatación exterior o falta de intercambio en el condensador (pág. 36). Desconexión por baja presión (< 2 bar) por fugas de agente frigorífico (pág. 36)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Conmutador de presión triple F129 y sus rangos de actuación sobre el circuito de refrigeración y compresor — Fuente: 208. Regulación del Sistema.pdf, pág. 36"
+    }
+   ]
+  },
+  {
    "id": "ssc.transmisor-presion.2-introduccion-a-la-refrigeracion",
    "nt": 14,
    "modulo": "ssc",
@@ -2747,6 +2878,80 @@
     {
      "titulo": "Cómo comprobarlo",
      "texto": "Conectar un osciloscopio en el cable de señal del sensor y medir la amplitud de la señal (12 V) y el ancho de impulso en milisegundos (ms), verificando que varía en proporción directa a la presión del circuito de alta (págs. 90-91). En versiones analógicas, medir la tensión con un polímetro (entre 1 V y 4 V) (pág. 91)."
+    }
+   ]
+  },
+  {
+   "id": "ssc.transmisor-presion.map.208-regulacion-del-sistema",
+   "nt": 114,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "transmisor-presion-map-maf",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Transmisor de alta presión",
+   "codigo": "G65",
+   "menu": "Transmisor de alta presión G65",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208. Regulación del Sistema.pdf, págs. 36-37",
+   "clase": "componente",
+   "variante": "map",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "presostato",
+    "unidad-control-climatizador",
+    "unidad-control-ventiladores",
+    "electroventilador-condensador"
+   ],
+   "palabras": [
+    "G65",
+    "cristal de silicio",
+    "PWM",
+    "50 Hz",
+    "20 ms",
+    "1.4 bar",
+    "2.6 ms",
+    "13%",
+    "avería 00819"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir de forma continua y electrónica la presión del agente frigorífico en todo el ciclo de trabajo, transformando la magnitud física de presión en una señal eléctrica para las unidades de control del climatizador, del motor y de los ventiladores (págs. 36-37)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Sensor de presión electrónico que sustituye al conmutador F129, instalado en el tubo de alta presión (págs. 36-37). Integra un cristal de silicio (resistencia variable) y un microprocesador en el propio cuerpo del sensor (pág. 37). Susceptible de autodiagnóstico (pág. 37)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "La presión del refrigerante actúa contra el cristal de silicio deformándolo en proporción a la fuerza ejercida (pág. 37). Al deformarse, el cristal modifica su resistencia eléctrica y varía la tensión de medición captada en su estructura (pág. 37). El microprocesador interno procesa esta tensión y emite una señal digital modulada en anchura de impulsos (PWM) a una frecuencia fija de 50 Hz (duración de período de 20 ms = 100%) (pág. 37). - A presión baja (0,14 MPa / 1,4 bares): la deformación es leve, la resistencia es baja y el microprocesador genera impulsos estrechos de 2,6 ms (13% del período) (pág. 37). Las unidades de control utilizan esta señal para adaptar con precisión el ralentí del motor a la potencia absorbida por el compresor y para conmutar las velocidades del ventilador de forma decalada (con un breve retardo), evitando variaciones bruscas de régimen al ralentí (pág. 37)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Frecuencia de la señal PWM: 50 Hz (período de 20 ms = 100%) (pág. 37). Ancho de impulso a 0,14 MPa (1,4 bares): 2,6 ms (13% de la duración del período) (pág. 37)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Registro del código de avería 00819 \"Transmisor de alta presión G65 - Señal muy baja\" en la memoria del autodiagnóstico (pág. 37)."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si la unidad de control para el ventilador del líquido refrigerante no detecta señal proveniente del sensor G65, desconecta el compresor automáticamente por motivos de seguridad (pág. 37)."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Consultar la memoria de averías del sistema mediante el equipo de diagnosis (código 00819) y verificar con osciloscopio la señal PWM entre sus terminales (pág. 37)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Transmisor de alta presión G65, sección del sensor con cristal de silicio y gráfica de la señal PWM (frecuencia 50 Hz, periodo 20 ms, pulso 2,6 ms a 1,4 bar) — Fuente: 208. Regulación del Sistema.pdf, págs. 36-37"
     }
    ]
   },
@@ -3047,6 +3252,60 @@
     {
      "titulo": "Valores de trabajo",
      "texto": "Temperatura de desconexión del compresor: entre -1 ºC y 0 ºC (pág. 87). Temperatura de reconexión del compresor: 3 ºC aproximadamente (pág. 87)."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sensor-evaporador.208-regulacion-del-sistema",
+   "nt": 112,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-ntc-evaporador",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Transmisor de temperatura del evaporador",
+   "codigo": "G153",
+   "menu": "Transmisor de temperatura del  G153",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208. Regulación del Sistema.pdf, págs. 35",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "evaporador",
+   "relacionados": [
+    "evaporador",
+    "unidad-control-climatizador",
+    "compresor"
+   ],
+   "palabras": [
+    "G153",
+    "E33",
+    "congelación",
+    "-1 ºC a 0 ºC",
+    "+3 ºC",
+    "aletas evaporador"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la temperatura en el bloque del evaporador para evitar su engelamiento por congelación del agua de condensación acumulada en las aletas (pág. 35)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Sensor térmico alojado directamente entre las aletas de refrigeración del evaporador (pág. 35). En otros sistemas se sustituye por el conmutador de temperatura del evaporador E33 de corte directo (pág. 35)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Capta la temperatura en la matriz del evaporador y transmite una señal eléctrica a la unidad de control del climatizador (pág. 35). Si la temperatura desciende entre -1 ºC y 0 ºC, la unidad de control desactiva el acoplamiento electromagnético N25 interrumpiendo el trabajo del compresor (pág. 35). Cuando la temperatura asciende de nuevo hasta +3 ºC, se vuelve a conectar el compresor (pág. 35). En los sistemas con conmutador E33, este interrumpe directamente la corriente de alimentación del acoplamiento electromagnético (pág. 35)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Temperatura de desconexión del compresor: de -1 ºC a 0 ºC (pág. 35). Temperatura de reconexión del compresor: +3 ºC (pág. 35)."
     }
    ]
   },
@@ -6945,6 +7204,122 @@
     {
      "titulo": "Anomalías frecuentes",
      "texto": "Descenso del rendimiento del condensador y detención del funcionamiento del climatizador por falta de refrigeración (pág. 38)."
+    }
+   ]
+  },
+  {
+   "id": "ssc.regulacion-sistema-climatizacion.208-regulacion-del-sistema",
+   "nt": 109,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-sistema-climatizacion",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Regulación y protección del sistema de climatización",
+   "codigo": "",
+   "menu": "Regulación y protección del sistema de",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208. Regulación del Sistema.pdf, págs. 34-35",
+   "clase": "fundamento",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "electroventilador-condensador",
+    "presostato",
+    "transmisor-presion",
+    "sensor-evaporador"
+   ],
+   "palabras": [
+    "vigilancia",
+    "presiones de trabajo",
+    "engelamiento evaporador",
+    "mando manual",
+    "elevación ralentí"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Evitar alteraciones en las presiones de trabajo que puedan provocar daños en el circuito frigorífico y en el motor, previniendo al mismo tiempo el engelamiento del evaporador (pág. 34)."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Una unidad de control procesa la información enviada por los equipos de vigilancia del circuito de alta y baja presión y gestiona la conexión y desconexión periódica del compresor, así como la velocidad del ventilador para mantener la presión en valores normales (pág. 34)."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "En los sistemas con compresor no regulado, las señales de vigilancia permiten adaptar la activación del acoplamiento electromagnético N25 y del ventilador V7 a las necesidades de rendimiento frigorífico (pág. 34). Al conectar el conmutador de climatización E35, la unidad de control del motor J257 recibe la señal e incrementa el régimen de ralentí para compensar la carga mecánica del compresor (págs. 34-35). El circuito básico de regulación de mando manual integra los siguientes componentes interconectados: conmutador E35, válvula de descarga de sobrepresión, conmutador de presión F129 (o transmisor de alta presión G65 en sistemas modernos), transmisor de temperatura del evaporador G153 (o conmutador E33), termoconmutador F18, relés J32 y J101, unidad de control del climatizador J301 (y/o unidad de control del ventilador J293) y unidad de control del motor J257 (págs. 34-35)."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Umbrales de conmutación del termoconmutador F18: t1 = 95 ºC (escalón 1), t2 = 103 ºC (escalón 2) (pág. 35). Umbrales del conmutador de presión F129: P1 = 0,2 MPa (2 bar) / 3,2 MPa (32 bar); P2 = 1,6 MPa (16 bar) (pág. 35)."
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Asumir que la activación del conmutador de climatización acciona el compresor sin que la unidad de control del motor intervenga para ajustar el ralentí (págs. 34-35)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema general de la regulación del sistema de aire acondicionado manual con sus equipos de vigilancia, relés y unidades de control — Fuente: 208. Regulación del Sistema.pdf, págs. 34-35"
+    }
+   ]
+  },
+  {
+   "id": "ssc.interruptor-climatizacion.208-regulacion-del-sistema",
+   "nt": 110,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "interruptor-climatizacion",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Conmutador para climatizador",
+   "codigo": "E35",
+   "menu": "Conmutador para climatizador E35",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208. Regulación del Sistema.pdf, págs. 35",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "control-climatizacion",
+   "relacionados": [
+    "embrague-compresor",
+    "electroventilador-condensador",
+    "ventilador-habitaculo"
+   ],
+   "palabras": [
+    "E35",
+    "mando A/C",
+    "ralentí",
+    "conmutador temperatura exterior",
+    "< 5 ºC"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Establecer la orden eléctrica de activación hacia el compresor a través del acoplamiento electromagnético N25 e informar a la unidad de control del motor para elevar el ralentí (pág. 35)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Mando de accionamiento manual situado en el salpicadero que puede llevar conectado a continuación un conmutador de temperatura exterior (pág. 35)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Al accionar el conmutador E35, se habilita la alimentación del acoplamiento electromagnético N25 (pág. 35). En sistemas de regulación automática, arrancan simultáneamente el ventilador para líquido refrigerante V7 y la turbina de aire fresco V2 (pág. 35). En climatizadores manuales, se exige seleccionar al menos el escalón de velocidad 1 en la turbina (pág. 35). Paralelamente, la unidad de control del motor eleva el régimen de ralentí para compensar la potencia absorbida por el compresor (pág. 35). Si equipa conmutador de temperatura exterior conectado en serie, este impide la puesta en marcha con temperaturas inferiores a 5 ºC (pág. 35)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Umbral de bloqueo por temperatura exterior: inferior a 5 ºC (pág. 35). Escalón mínimo requerido en la turbina (manual): escalón 1 (pág. 35)."
     }
    ]
   }
