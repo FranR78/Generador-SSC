@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">508 notas · 24/09/2026</p>
+  <p class="sidebar-meta">517 notas · 24/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -269,7 +269,7 @@
     <li><a href="#nt17">NT17 · Silenciador-depósito receptor</a></li>
     <li><a href="#grp-tuberias-y-racores">Tuberías, canalizaciones y juntas de estanqueidad del circuito frigorífico <span class="menu-cuenta">3 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
-    <li><a href="#grp-regulacion-automatica">Sistemas y opciones de climatización en el automóvil <span class="menu-cuenta">24 fuentes</span></a></li>
+    <li><a href="#grp-regulacion-automatica">Sistemas y opciones de climatización en el automóvil <span class="menu-cuenta">26 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Fluidos frigoríficos</span></li>
     <li><a href="#grp-refrigerante-r12">Agente frigorífico R12 <span class="menu-cuenta">2 fuentes</span></a></li>
     <li><a href="#grp-refrigerante-r1234yf">Agente frigorífico R1234yf <span class="menu-cuenta">4 fuentes</span></a></li>
@@ -342,13 +342,13 @@
     <li><a href="#nt93">NT93 · Circuito de climatización con CO2 (R74</a></li>
     <li><a href="#nt94">NT94 · Limpieza y eliminación de humedad en c</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
-    <li><a href="#grp-unidad-control-climatizador">Unidad de control de climatización <span class="menu-cuenta">7 fuentes</span></a></li>
+    <li><a href="#grp-unidad-control-climatizador">Unidad de control de climatización <span class="menu-cuenta">8 fuentes</span></a></li>
     <li><a href="#grp-sensor-temperatura-ntc-exterior">Termosensor de temperatura exterior <span class="menu-cuenta">14 fuentes</span></a></li>
     <li><a href="#grp-sensor-temperatura-ntc-interior">Termosensor del tablero de instrumentos con turbina de aire <span class="menu-cuenta">13 fuentes</span></a></li>
     <li><a href="#grp-fotosensor-solar">Fotosensor de radiación solar <span class="menu-cuenta">5 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Distribución de aire</span></li>
-    <li><a href="#grp-servomotor-trampilla">Servomotores de las chapaletas de aire <span class="menu-cuenta">14 fuentes</span></a></li>
-    <li><a href="#grp-distribucion-aire">Conducción del aire en el calefactor/climatizador <span class="menu-cuenta">6 fuentes</span></a></li>
+    <li><a href="#grp-servomotor-trampilla">Servomotores de las chapaletas de aire <span class="menu-cuenta">16 fuentes</span></a></li>
+    <li><a href="#grp-distribucion-aire">Conducción del aire en el calefactor/climatizador <span class="menu-cuenta">7 fuentes</span></a></li>
     <li><a href="#grp-recirculacion">Función de recirculación de aire <span class="menu-cuenta">5 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
     <li><a href="#grp-sensor-calidad-aire">Sensor de la calidad del aire <span class="menu-cuenta">6 fuentes</span></a></li>
@@ -487,7 +487,7 @@
     <li class="grupo"><span class="menu-grupo-titulo">Refrigeración del motor</span></li>
     <li><a href="#nt433">NT433 · Diagnóstico por sobrecalentamiento del</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Distribución de aire</span></li>
-    <li><a href="#nt437">NT437 · Unidad climática</a></li>
+    <li><a href="#grp-caja-climatizadora">Unidad climática <span class="menu-cuenta">2 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">POR CLASIFICAR</span></li>
     <li><a href="#nt440">NT440 · Ce0</a></li>
     <li><a href="#nt441">NT441 · Ce2</a></li>
@@ -528,6 +528,10 @@
     <li><a href="#nt515">NT515 · Techo panorámico deflector y corredizo</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Equipo remolque</span></li>
     <li><a href="#nt516">NT516 · Unidad de control para detecci J345</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
+    <li><a href="#nt519">NT519 · Unidad de mandos e indicación  E265</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Calefaccion asientos</span></li>
+    <li><a href="#nt525">NT525 · Gestión eléctrica de los asientos cale</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Fluidos frigoríficos</span></li>
     <li><a href="#nt1001">NT1001 · Agente frigorífico R134a</a></li>
   </ul>
@@ -5428,10 +5432,10 @@ Incluye carcasa envolvente, canal de recogida de agua condensada y tubo de desca
   </div>
 
   <div class="grupo-componente" id="grp-regulacion-automatica">
-    <div class="grupo-cab"><span class="grupo-nombre">Sistemas y opciones de climatización en el automóvil</span><span class="grupo-cuenta">24 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Sistemas y opciones de climatización en el automóvil</span><span class="grupo-cuenta">26 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 24 · NT20 · 2. Introducción a la refrigeración.pdf, págs. 22-23</summary>
+      <summary>Variante 1 de 26 · NT20 · 2. Introducción a la refrigeración.pdf, págs. 22-23</summary>
   <section id="nt20" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 20 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -5487,7 +5491,7 @@ Incluye carcasa envolvente, canal de recogida de agua condensada y tubo de desca
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 24 · NT96 · 208. Regulación de la temperatura.pdf, págs. 42-44</summary>
+      <summary>Variante 2 de 26 · NT96 · 208. Regulación de la temperatura.pdf, págs. 42-44</summary>
   <section id="nt96" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 96 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -5523,7 +5527,7 @@ En los sistemas automáticos (Climatronic o regulación digital), la unidad de c
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 24 · NT103 · 208. Regulación de la temperatura.pdf, págs. 52-53</summary>
+      <summary>Variante 3 de 26 · NT103 · 208. Regulación de la temperatura.pdf, págs. 52-53</summary>
   <section id="nt103" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 103 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -5563,7 +5567,7 @@ En los sistemas automáticos (Climatronic o regulación digital), la unidad de c
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 24 · NT106 · 208. Regulación de la temperatura.pdf, págs. 58-59</summary>
+      <summary>Variante 4 de 26 · NT106 · 208. Regulación de la temperatura.pdf, págs. 58-59</summary>
   <section id="nt106" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 106 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -5611,7 +5615,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 24 · NT152 · PRO 13. Climatización Electrónica.pdf, págs. 100-101</summary>
+      <summary>Variante 5 de 26 · NT152 · PRO 13. Climatización Electrónica.pdf, págs. 100-101</summary>
   <section id="nt152" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 152 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -5666,7 +5670,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 24 · NT158 · PRO 13. Climatización Electrónica.pdf, págs. 105</summary>
+      <summary>Variante 6 de 26 · NT158 · PRO 13. Climatización Electrónica.pdf, págs. 105</summary>
   <section id="nt158" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 158 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -5708,7 +5712,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 24 · NT162 · PRO 13. Climatización Electrónica.pdf, págs. 109</summary>
+      <summary>Variante 7 de 26 · NT162 · PRO 13. Climatización Electrónica.pdf, págs. 109</summary>
   <section id="nt162" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 162 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -5744,7 +5748,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 8 de 24 · NT163 · PRO 13. Climatización Electrónica.pdf, págs. 110</summary>
+      <summary>Variante 8 de 26 · NT163 · PRO 13. Climatización Electrónica.pdf, págs. 110</summary>
   <section id="nt163" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 163 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -5784,7 +5788,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 9 de 24 · NT164 · PRO 13. Climatización Electrónica.pdf, págs. 111</summary>
+      <summary>Variante 9 de 26 · NT164 · PRO 13. Climatización Electrónica.pdf, págs. 111</summary>
   <section id="nt164" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 164 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -5825,7 +5829,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 10 de 24 · NT185 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 4-5</summary>
+      <summary>Variante 10 de 26 · NT185 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 4-5</summary>
   <section id="nt185" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 185 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -5859,7 +5863,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 11 de 24 · NT259 · DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, págs</summary>
+      <summary>Variante 11 de 26 · NT259 · DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, págs</summary>
   <section id="nt259" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 259 <span class="subtipo">Fundamento</span><span class="fusionado">Valeo</span></div>
     <div class="nota-body proceso">
@@ -5925,7 +5929,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 12 de 24 · NT299 · LA CLIMATIZACIÓN.pdf, págs. 127-131</summary>
+      <summary>Variante 12 de 26 · NT299 · LA CLIMATIZACIÓN.pdf, págs. 127-131</summary>
   <section id="nt299" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 299 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -5963,7 +5967,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 13 de 24 · NT307 · LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, págs. 1-7</summary>
+      <summary>Variante 13 de 26 · NT307 · LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, págs. 1-7</summary>
   <section id="nt307" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 307 <span class="subtipo">Fundamento</span><span class="fusionado">Valeo</span></div>
     <div class="nota-body proceso">
@@ -6019,7 +6023,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 14 de 24 · NT326 · OBJETIVOS Y RESTRICCIONES DE LOS SISTEMAS DE CLIMATIZACION AU.PDF, pág</summary>
+      <summary>Variante 14 de 26 · NT326 · OBJETIVOS Y RESTRICCIONES DE LOS SISTEMAS DE CLIMATIZACION AU.PDF, pág</summary>
   <section id="nt326" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 326 <span class="subtipo">Fundamento</span><span class="fusionado">Valeo</span></div>
     <div class="nota-body proceso">
@@ -6054,7 +6058,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 15 de 24 · NT327 · OBJETIVOS Y RESTRICCIONES DE LOS SISTEMAS DE CLIMATIZACION AU.PDF, pág</summary>
+      <summary>Variante 15 de 26 · NT327 · OBJETIVOS Y RESTRICCIONES DE LOS SISTEMAS DE CLIMATIZACION AU.PDF, pág</summary>
   <section id="nt327" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 327 <span class="subtipo">Fundamento</span><span class="fusionado">Valeo</span></div>
     <div class="nota-body proceso">
@@ -6102,7 +6106,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 16 de 24 · NT329 · SSP 484 A7 Info y Clima (arrastrado) 2 copia.pdf, págs. 52-53</summary>
+      <summary>Variante 16 de 26 · NT329 · SSP 484 A7 Info y Clima (arrastrado) 2 copia.pdf, págs. 52-53</summary>
   <section id="nt329" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 329 <span class="subtipo">Fundamento</span><span class="fusionado">Audi</span></div>
     <div class="nota-body proceso">
@@ -6139,7 +6143,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 17 de 24 · NT341 · SSP 484 A7 Info y Clima (arrastrado).pdf, págs. 52</summary>
+      <summary>Variante 17 de 26 · NT341 · SSP 484 A7 Info y Clima (arrastrado).pdf, págs. 52</summary>
   <section id="nt341" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 341 <span class="subtipo">Fundamento</span><span class="fusionado">Audi</span></div>
     <div class="nota-body proceso">
@@ -6189,7 +6193,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 18 de 24 · NT392 · 5. EL CIRCUITO DE AIRE.pptx, págs. 21-23</summary>
+      <summary>Variante 18 de 26 · NT392 · 5. EL CIRCUITO DE AIRE.pptx, págs. 21-23</summary>
   <section id="nt392" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 392 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -6230,7 +6234,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 19 de 24 · NT397 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 42, 44-45, 52-54, 108-111</summary>
+      <summary>Variante 19 de 26 · NT397 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 42, 44-45, 52-54, 108-111</summary>
   <section id="nt397" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 397 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -6278,7 +6282,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 20 de 24 · NT416 · 409_e         Audi A4 _08.pdf, págs. 64-66</summary>
+      <summary>Variante 20 de 26 · NT416 · 409_e         Audi A4 _08.pdf, págs. 64-66</summary>
   <section id="nt416" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 416 <span class="subtipo">Fundamento</span><span class="fusionado">Audi</span></div>
     <div class="nota-body proceso">
@@ -6325,7 +6329,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 21 de 24 · NT436 · cd.pdf, págs. 4-5, 8-9</summary>
+      <summary>Variante 21 de 26 · NT436 · cd.pdf, págs. 4-5, 8-9</summary>
   <section id="nt436" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 436 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -6360,7 +6364,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 22 de 24 · NT450 · GESTIÓN ELÉCTRICA A5.pdf, págs. 80</summary>
+      <summary>Variante 22 de 26 · NT450 · GESTIÓN ELÉCTRICA A5.pdf, págs. 80</summary>
   <section id="nt450" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 450 <span class="subtipo">Fundamento</span><span class="fusionado">Audi</span></div>
     <div class="nota-body proceso">
@@ -6399,7 +6403,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 23 de 24 · NT456 · Nº10. Carga y Diagonostico.pdf, págs. 116-117</summary>
+      <summary>Variante 23 de 26 · NT456 · Nº10. Carga y Diagonostico.pdf, págs. 116-117</summary>
   <section id="nt456" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 456 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -6439,7 +6443,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 24 de 24 · NT509 · SEÑALES SUPLEMENTARIAS.pdf, págs. 50-51</summary>
+      <summary>Variante 24 de 26 · NT509 · SEÑALES SUPLEMENTARIAS.pdf, págs. 50-51</summary>
   <section id="nt509" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 509 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -6481,6 +6485,88 @@ Informa de forma continua a la unidad de control del climatizador sobre el funci
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">SEÑALES SUPLEMENTARIAS.pdf, págs. 50-51</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 25 de 26 · NT517 · SSP172 TARRACO (arrastrado).pdf, págs. 59-61</summary>
+  <section id="nt517" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 517 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
+    <div class="nota-body proceso">
+      <h1>Climatronic de 3 zonas</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El sistema utiliza dos configuraciones de climatización (manual y Climatronic). En la versión Climatronic de 3 zonas, la unidad de control J255 procesa la información de múltiples sensores térmicos y solares, y se comunica vía CAN-Bus Confort y LIN-Bus Clima para accionar eléctricamente los servomotores y la turbina. (págs. 59-61)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>El sistema Climatronic de 3 zonas abarca las siguientes funciones principales:</p>
+<ul>
+<li>Regulación independiente de la temperatura para el conductor, acompañante y plazas traseras (esta última gestionada localmente desde la unidad de mandos E265 en la consola central trasera).</li>
+<li>Regulación del caudal y de las salidas de aire hacia los difusores.</li>
+<li>Recirculación automática según la calidad del aire detectada por el sensor G238.</li>
+<li>Función PureAir (AirCare) para la purificación del aire del habitáculo.</li>
+<li>Solicitud de activación de la luneta térmica y de los asientos calefactados (delanteros y traseros).</li>
+<li>Programación de la calefacción estacionaria y gestión de parámetros desde la pantalla del equipo de infotenimiento.</li>
+</ul>
+<p>La arquitectura de red interconecta a la UCE J255 mediante el CAN-Bus Confort con la interfaz J533, UCE de red de a bordo J519 y unidades de puerta, mientras que al LIN-Bus Clima están abonados el sensor de presión G805, el sensor de calidad del aire G238, la unidad trasera E265 y la UCE de la turbina J126. (págs. 59-61)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Número de zonas de regulación independiente: 3 zonas (conductor, acompañante y plazas traseras). (pág. 59)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Regular automáticamente la temperatura, el caudal y la salida del aire de forma independiente en 3 zonas del habitáculo (conductor, acompañante y plazas traseras) en el SEAT Tarraco. (págs. 59-60)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <p>Asumir que los mandos traseros E265 regulan la temperatura directamente mediante cableado analógico hacia los servomotores. La unidad E265 transmite las solicitudes a la UCE J255 a través de la línea digital LIN-Bus Clima. (págs. 59, 61)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT517_01</code> Esquema de interconexión vía CAN-Bus Confort y LIN-Bus Clima de la unidad de control J255 con sus sensores y actuadores — Fuente: SSP172 TARRACO (arrastrado).pdf, pág. 61</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">SSP172 TARRACO (arrastrado).pdf, págs. 59-61</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 26 de 26 · NT524 · SSP172 TARRACO (arrastrado).pdf, págs. 64-65</summary>
+  <section id="nt524" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 524 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
+    <div class="nota-body proceso">
+      <h1>Regulación de la temperatura del aire en la zona trasera</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>La UCE J255 regula la posición del servomotor V137 según el valor solicitado en los mandos traseros E265 (o en la pantalla principal) y retroalimenta el bucle de control con el sensor G174. (págs. 64-65)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>El proceso de regulación abarca los siguientes componentes y pasos:</p>
+<ul>
+<li>Servomotor V137: modifica la posición de las trampillas de aire frío (ubicadas a la izquierda) y de aire caliente (ubicadas a la derecha de la unidad climática) mediante palancas articuladas.</li>
+<li>Sensor de temperatura G174: montado en el difusor trasero de la consola central, mide continuamente la temperatura del aire soplado hacia atrás.</li>
+<li>Control en bucle cerrado: la UCE J255 compara la medición de G174 con la consigna solicitada en E265 y corrige la posición de V137 hasta estabilizar la temperatura del flujo. (págs. 64-65)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Gestionar la mezcla de aire frío y caliente necesaria para mantener la temperatura consignada en la 3ª zona (plazas traseras). (págs. 64-65)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <p>Pensar que la temperatura trasera se calcula de forma estimada sin sensor de verificación. El sistema utiliza el sensor G174 montado en la consola central trasera para medir en tiempo real el aire soplado. (pág. 65)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">SSP172 TARRACO (arrastrado).pdf, págs. 64-65</p>
       </div>
     </div>
   </section>
@@ -15262,10 +15348,10 @@ Código de tipo de equipo en función: 220 = Autoclima, 110 = Calefacción motor
   </section>
 
   <div class="grupo-componente" id="grp-unidad-control-climatizador">
-    <div class="grupo-cab"><span class="grupo-nombre">Unidad de control de climatización</span><span class="grupo-cuenta">7 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Unidad de control de climatización</span><span class="grupo-cuenta">8 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 7 · NT97 · 208. Regulación de la temperatura.pdf, págs. 45-47</summary>
+      <summary>Variante 1 de 8 · NT97 · 208. Regulación de la temperatura.pdf, págs. 45-47</summary>
   <section id="nt97" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 97 <span class="fusionado">VW</span></div>
     <div class="nota-body">
@@ -15304,7 +15390,7 @@ Código de tipo de equipo en función: 220 = Autoclima, 110 = Calefacción motor
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 7 · NT160 · PRO 13. Climatización Electrónica.pdf, págs. 106</summary>
+      <summary>Variante 2 de 8 · NT160 · PRO 13. Climatización Electrónica.pdf, págs. 106</summary>
   <section id="nt160" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 160 </div>
     <div class="nota-body">
@@ -15343,7 +15429,7 @@ Código de tipo de equipo en función: 220 = Autoclima, 110 = Calefacción motor
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 7 · NT205 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 26-28, 34</summary>
+      <summary>Variante 3 de 8 · NT205 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 26-28, 34</summary>
   <section id="nt205" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 205 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -15386,7 +15472,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 7 · NT290 · LA CLIMATIZACIÓN.pdf, págs. 109-110</summary>
+      <summary>Variante 4 de 8 · NT290 · LA CLIMATIZACIÓN.pdf, págs. 109-110</summary>
   <section id="nt290" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 290 </div>
     <div class="nota-body">
@@ -15431,7 +15517,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 7 · NT308 · LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, págs. 7-8</summary>
+      <summary>Variante 5 de 8 · NT308 · LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, págs. 7-8</summary>
   <section id="nt308" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 308 <span class="fusionado">Valeo</span></div>
     <div class="nota-body">
@@ -15460,7 +15546,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 7 · NT344 · Toledo 99 CLIMA.pdf, págs. 46-47</summary>
+      <summary>Variante 6 de 8 · NT344 · Toledo 99 CLIMA.pdf, págs. 46-47</summary>
   <section id="nt344" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 344 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -15511,7 +15597,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 7 · NT395 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 16, 21-29</summary>
+      <summary>Variante 7 de 8 · NT395 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 16, 21-29</summary>
   <section id="nt395" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 395 </div>
     <div class="nota-body">
@@ -15546,6 +15632,45 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">6. EL CIRCUITO ELÉCTRICO.pptx, págs. 16, 21-29</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 8 de 8 · NT518 · SSP172 TARRACO (arrastrado).pdf, págs. 59-61</summary>
+  <section id="nt518" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 518 <span class="fusionado">SEAT</span></div>
+    <div class="nota-body">
+      <h1>Unidad de control del Climatronic — <strong>J255</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Procesar las señales de los sensores, gestionar las comunicaciones de red y gobernar los actuadores del sistema para conseguir el funcionamiento totalmente automático de la climatización de 3 zonas. (págs. 59-61)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Recibe señales analógicas y digitales de sensores (G308, G385, G386, G192, G107, G174 y potenciómetros) e información del LIN-Bus Clima (G805, G238, E265, J126). Procesa estos datos para calcular la temperatura y caudal óptimos, gobernando la válvula N280 del compresor, la turbina V2 y los servomotores de trampillas (V158, V159, V137, V237, V425, V107). (págs. 59-61)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Tensión de alimentación: tensión de red de a bordo (12 V nominales). (pág. 61)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Diagnóstico electrónico mediante la conexión U31 accediendo por la interfaz J533 a la memoria de averías y valores de medición del CAN-Bus Confort. (pág. 61)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Unidad de control electrónica integrada en la consola central con panel de mandos e indicación digital. Conectada al CAN-Bus Confort como nodo principal del sistema y como maestra de la línea LIN-Bus Clima. (págs. 59-61)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <p>No requiere mantenimiento preventivo. (págs. 59-61)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">SSP172 TARRACO (arrastrado).pdf, págs. 59-61</p>
       </div>
     </div>
   </section>
@@ -16902,10 +17027,10 @@ El elemento óptico redirige un alto porcentaje de rayos cuando inciden de forma
   </div>
 
   <div class="grupo-componente" id="grp-servomotor-trampilla">
-    <div class="grupo-cab"><span class="grupo-nombre">Servomotores de las chapaletas de aire</span><span class="grupo-cuenta">14 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Servomotores de las chapaletas de aire</span><span class="grupo-cuenta">16 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 14 · NT104 · 208. Regulación de la temperatura.pdf, págs. 54-55</summary>
+      <summary>Variante 1 de 16 · NT104 · 208. Regulación de la temperatura.pdf, págs. 54-55</summary>
   <section id="nt104" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 104 </div>
     <div class="nota-body">
@@ -16963,7 +17088,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 14 · NT199 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 22</summary>
+      <summary>Variante 2 de 16 · NT199 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 22</summary>
   <section id="nt199" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 199 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -17008,7 +17133,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 14 · NT201 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 23</summary>
+      <summary>Variante 3 de 16 · NT201 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 23</summary>
   <section id="nt201" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 201 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -17049,7 +17174,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 14 · NT296 · LA CLIMATIZACIÓN.pdf, págs. 118-119</summary>
+      <summary>Variante 4 de 16 · NT296 · LA CLIMATIZACIÓN.pdf, págs. 118-119</summary>
   <section id="nt296" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 296 </div>
     <div class="nota-body">
@@ -17104,7 +17229,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 14 · NT297 · LA CLIMATIZACIÓN.pdf, págs. 120-122</summary>
+      <summary>Variante 5 de 16 · NT297 · LA CLIMATIZACIÓN.pdf, págs. 120-122</summary>
   <section id="nt297" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 297 </div>
     <div class="nota-body">
@@ -17156,7 +17281,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 14 · NT328 · SSP 484 A7 Info y Clima (arrastrado) 2 copia.pdf, págs. 52-53</summary>
+      <summary>Variante 6 de 16 · NT328 · SSP 484 A7 Info y Clima (arrastrado) 2 copia.pdf, págs. 52-53</summary>
   <section id="nt328" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 328 <span class="fusionado">Audi</span></div>
     <div class="nota-body">
@@ -17216,7 +17341,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 14 · NT347 · Toledo 99 CLIMA.pdf, págs. 50</summary>
+      <summary>Variante 7 de 16 · NT347 · Toledo 99 CLIMA.pdf, págs. 50</summary>
   <section id="nt347" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 347 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -17259,7 +17384,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 8 de 14 · NT385 · 5. EL CIRCUITO DE AIRE.pptx, págs. 13-14</summary>
+      <summary>Variante 8 de 16 · NT385 · 5. EL CIRCUITO DE AIRE.pptx, págs. 13-14</summary>
   <section id="nt385" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 385 </div>
     <div class="nota-body">
@@ -17296,7 +17421,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 9 de 14 · NT386 · 5. EL CIRCUITO DE AIRE.pptx, págs. 15</summary>
+      <summary>Variante 9 de 16 · NT386 · 5. EL CIRCUITO DE AIRE.pptx, págs. 15</summary>
   <section id="nt386" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 386 </div>
     <div class="nota-body">
@@ -17329,7 +17454,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 10 de 14 · NT387 · 5. EL CIRCUITO DE AIRE.pptx, págs. 16</summary>
+      <summary>Variante 10 de 16 · NT387 · 5. EL CIRCUITO DE AIRE.pptx, págs. 16</summary>
   <section id="nt387" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 387 </div>
     <div class="nota-body">
@@ -17363,7 +17488,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 11 de 14 · NT398 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 46, 61-62</summary>
+      <summary>Variante 11 de 16 · NT398 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 46, 61-62</summary>
   <section id="nt398" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 398 </div>
     <div class="nota-body">
@@ -17410,7 +17535,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 12 de 14 · NT399 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 47-51, 63-75</summary>
+      <summary>Variante 12 de 16 · NT399 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 47-51, 63-75</summary>
   <section id="nt399" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 399 </div>
     <div class="nota-body">
@@ -17459,7 +17584,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 13 de 14 · NT499 · AA AUTOMOCION MD FR.pdf, págs. 145-146</summary>
+      <summary>Variante 13 de 16 · NT499 · AA AUTOMOCION MD FR.pdf, págs. 145-146</summary>
   <section id="nt499" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 499 </div>
     <div class="nota-body">
@@ -17509,7 +17634,7 @@ En la velocidad máxima (H), el conmutador alimenta directamente el motor sin pa
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 14 de 14 · NT506 · Regulación del Sistema.pdf, págs. 47, 52</summary>
+      <summary>Variante 14 de 16 · NT506 · Regulación del Sistema.pdf, págs. 47, 52</summary>
   <section id="nt506" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 506 </div>
     <div class="nota-body">
@@ -17541,13 +17666,113 @@ En la velocidad máxima (H), el conmutador alimenta directamente el motor sin pa
     </div>
   </section>
     </details>
+    <details class="variante">
+      <summary>Variante 15 de 16 · NT521 · SSP172 TARRACO (arrastrado).pdf, págs. 60, 62-64</summary>
+  <section id="nt521" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 521 <span class="fusionado">SEAT</span></div>
+    <div class="nota-body">
+      <h1>Servomotor del difusor de aire directo delantero izquierdo — <strong>V237</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Accionar mecánicamente las trampillas de distribución de aire hacia los difusores del tablero de instrumentos, zona reposapiés delantera, reposapiés trasera y consola central trasera. (págs. 63-64)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Al recibir órdenes de la UCE J255, el servomotor V237 gira accionado sus varillajes:</p>
+<ul>
+<li>Sistema de palancas: acciona directamente las trampillas de los difusores del tablero de instrumentos y de la zona reposapiés delantera.</li>
+<li>Cables Bowden: transmiten el movimiento hacia la trampilla de la zona reposapiés trasera (izquierda y derecha) y hacia la trampilla trasera de la consola central.
+Cuando se selecciona salida por el tablero, abre difusores del tablero y consola central trasera mientras cierra reposapiés delantero y trasero; al seleccionar reposapiés, actúa de forma inversa. (págs. 63-64)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Desajuste, agarrotamiento o rotura en los cables Bowden o palancas articuladas. (págs. 63-64)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Imposibilidad de alternar el flujo de aire entre la zona superior (tablero/consola) y la zona inferior (reposapiés). (págs. 63-64)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobación del recorrido de los cables Bowden y lectura de posiciones del potenciómetro en la función de diagnóstico de actuadores y ajuste básico de J255. (págs. 60, 63-64)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Actuador eléctrico de posicionamiento con potenciómetro de realimentación integrado, ubicado en la unidad climática. Conectado cinemáticamente mediante un sistema combinado de palancas rígidas y dos cables Bowden. (págs. 60, 63-64)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <p>Ajuste básico de topes mediante equipo de diagnosis tras su sustitución o desmontaje. (págs. 60, 63-64)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT521_01</code> Mecanismo cinemático del servomotor V237 con sistema de palancas y cables Bowden hacia la zona trasera — Fuente: SSP172 TARRACO (arrastrado).pdf, pág. 64</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">SSP172 TARRACO (arrastrado).pdf, págs. 60, 62-64</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 16 de 16 · NT522 · SSP172 TARRACO (arrastrado).pdf, págs. 60, 62-65</summary>
+  <section id="nt522" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 522 <span class="fusionado">SEAT</span></div>
+    <div class="nota-body">
+      <h1>Servomotor de la trampilla de temperatura trasera — <strong>V137</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Accionar las trampillas de mezcla de aire frío y aire caliente dedicadas específicamente a la regulación térmica de las plazas traseras. (págs. 63, 65)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Gobernado por la UCE J255, su eje acciona un mecanismo cinemático de palancas dobles:</p>
+<ul>
+<li>Parte izquierda de la unidad climática: el sistema de palancas acciona la trampilla de aire frío de la zona trasera.</li>
+<li>Parte derecha de la unidad climática: el sistema de palancas acciona la trampilla de aire caliente de la zona trasera.
+Variando la apertura proporcional de ambas trampillas se logra la mezcla térmica solicitada, la cual es supervisada por el termosensor G174. (págs. 64-65)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Holguras o desarticulación en las palancas laterales. (págs. 64-65)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Incapacidad para ajustar la temperatura en la zona trasera (salida constante de aire frío o caliente). (págs. 64-65)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Supervisión del valor de temperatura del sensor G174 y diagnóstico de actuadores/ajuste básico con máquina de diagnosis. (págs. 60, 65)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Servomotor eléctrico de regulación con potenciómetro de posición interno, montado en la unidad climática y enlazado con dos sistemas independientes de palancas a ambos lados de la carcasa. (págs. 60, 63, 65)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <p>Ajuste básico con equipo de diagnosis tras cualquier intervención. (págs. 60, 65)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT522_01</code> Ubicación del servomotor V137 y sistema de palancas articuladas a ambos lados de la unidad climática — Fuente: SSP172 TARRACO (arrastrado).pdf, pág. 65</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">SSP172 TARRACO (arrastrado).pdf, págs. 60, 62-65</p>
+      </div>
+    </div>
+  </section>
+    </details>
   </div>
 
   <div class="grupo-componente" id="grp-distribucion-aire">
-    <div class="grupo-cab"><span class="grupo-nombre">Conducción del aire en el calefactor/climatizador</span><span class="grupo-cuenta">6 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Conducción del aire en el calefactor/climatizador</span><span class="grupo-cuenta">7 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 6 · NT105 · 208. Regulación de la temperatura.pdf, págs. 55-57</summary>
+      <summary>Variante 1 de 7 · NT105 · 208. Regulación de la temperatura.pdf, págs. 55-57</summary>
   <section id="nt105" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 105 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -17587,7 +17812,7 @@ En la velocidad máxima (H), el conmutador alimenta directamente el motor sin pa
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 6 · NT186 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 6</summary>
+      <summary>Variante 2 de 7 · NT186 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 6</summary>
   <section id="nt186" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 186 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -17626,7 +17851,7 @@ En la velocidad máxima (H), el conmutador alimenta directamente el motor sin pa
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 6 · NT339 · SSP 484 A7 Info y Clima (arrastrado) 6.pdf, págs. 49</summary>
+      <summary>Variante 3 de 7 · NT339 · SSP 484 A7 Info y Clima (arrastrado) 6.pdf, págs. 49</summary>
   <section id="nt339" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 339 <span class="subtipo">Fundamento</span><span class="fusionado">Audi</span></div>
     <div class="nota-body proceso">
@@ -17669,7 +17894,7 @@ En la velocidad máxima (H), el conmutador alimenta directamente el motor sin pa
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 6 · NT342 · Toledo 99 CLIMA.pdf, págs. 44-45</summary>
+      <summary>Variante 4 de 7 · NT342 · Toledo 99 CLIMA.pdf, págs. 44-45</summary>
   <section id="nt342" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 342 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -17694,7 +17919,7 @@ En la velocidad máxima (H), el conmutador alimenta directamente el motor sin pa
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 6 · NT434 · CAJA CLIMATICA.pdf, págs. 53-55</summary>
+      <summary>Variante 5 de 7 · NT434 · CAJA CLIMATICA.pdf, págs. 53-55</summary>
   <section id="nt434" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 434 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -17733,7 +17958,7 @@ En la velocidad máxima (H), el conmutador alimenta directamente el motor sin pa
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 6 · NT435 · CAJA CLIMATICA.pdf, págs. 55-57</summary>
+      <summary>Variante 6 de 7 · NT435 · CAJA CLIMATICA.pdf, págs. 55-57</summary>
   <section id="nt435" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 435 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -17768,6 +17993,39 @@ En la velocidad máxima (H), el conmutador alimenta directamente el motor sin pa
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">CAJA CLIMATICA.pdf, págs. 55-57</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 7 de 7 · NT523 · SSP172 TARRACO (arrastrado).pdf, págs. 63-64</summary>
+  <section id="nt523" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 523 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
+    <div class="nota-body proceso">
+      <h1>Distribución del aire en la zona trasera</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>La distribución trasera no cuenta con un servomotor independiente exclusivo, sino que se realiza de forma conjunta con la delantera mediante el accionamiento del servomotor V237. (págs. 63-64)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>Cuando el usuario selecciona la salida del aire desde el panel de mandos, la UCE J255 acciona el servomotor V237 de la siguiente forma:</p>
+<ul>
+<li>Selección por difusores del tablero: el V237 abre las trampillas del tablero de instrumentos y cierra las del reposapiés delantero (mediante palancas); simultáneamente, abre la trampilla de la consola central trasera y cierra las trampillas del reposapiés trasero (mediante los cables Bowden).</li>
+<li>Selección por reposapiés: el V237 invierte el movimiento, cerrando el tablero de instrumentos y la consola central trasera, y abriendo las trampillas de reposapiés delantero y reposapiés trasero. (págs. 63-64)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Coordinar el flujo de aire hacia los difusores de las plazas traseras de forma simultánea a la selección realizada para las plazas delanteras. (págs. 63-64)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <p>Creer que la zona trasera dispone de un servomotor independiente para seleccionar si el aire sale por los pies o por la consola central. La selección de salida trasera está vinculada a la delantera a través del servomotor V237 y sus cables Bowden. (págs. 63-64)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">SSP172 TARRACO (arrastrado).pdf, págs. 63-64</p>
       </div>
     </div>
   </section>
@@ -24195,6 +24453,11 @@ Se montan 4 unidades por asiento:</p>
     </div>
   </section>
 
+  <div class="grupo-componente" id="grp-caja-climatizadora">
+    <div class="grupo-cab"><span class="grupo-nombre">Unidad climática</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 2 · NT437 · cd.pdf, págs. 6</summary>
   <section id="nt437" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 437 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -24221,6 +24484,41 @@ Se montan 4 unidades por asiento:</p>
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 2 · NT520 · SSP172 TARRACO (arrastrado).pdf, págs. 62-63</summary>
+  <section id="nt520" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 520 <span class="fusionado">SEAT</span></div>
+    <div class="nota-body">
+      <h1>Unidad climática</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Albergar y agrupar físicamente los intercambiadores térmicos (evaporador del aire acondicionado y radiador de la calefacción), los sensores de temperatura y los actuadores encargados de mezclar e impulsar el aire hacia el habitáculo. (págs. 62-63)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Canaliza el flujo de aire generado por la turbina V2 impulsándolo a través del evaporador y/o radiador de calefacción según la posición geométrica de las trampillas accionadas por los servomotores (V158, V159, V137, V237, V425, V107). (págs. 62-63)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Caja o bloque de distribución térmica montado tras el salpicadero. Integra el evaporador, el radiador de la calefacción, la turbina de aire exterior V2 con su UCE J126, los sensores G308 y G192, y 6 servomotores eléctricos de trampillas. (págs. 62-63)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <p>Sustitución o limpieza periódica de componentes asociados según el plan de mantenimiento del vehículo. (págs. 62-63)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT520_01</code> Despiece de componentes de la unidad climática con ubicación de servomotores, radiador de calefacción y sensores — Fuente: SSP172 TARRACO (arrastrado).pdf, pág. 62</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">SSP172 TARRACO (arrastrado).pdf, págs. 62-63</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
   <section id="nt440" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 440 </div>
@@ -25287,6 +25585,79 @@ La presencia de cloro o bromo eleva el PAO. Los HFC y HFO carecen de cloro y bro
     </div>
   </section>
 
+  <section id="nt519" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 519 <span class="fusionado">SEAT</span></div>
+    <div class="nota-body">
+      <h1>Unidad de mandos e indicación trasera del climatizador — <strong>E265</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Permitir a los pasajeros de las plazas traseras ajustar de forma independiente la temperatura de su zona y accionar la calefacción de los asientos traseros. (págs. 59, 61, 66)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Captura los impulsos de los botones de selección de temperatura y de los pulsadores de los asientos traseros calefactados (ZX10 y ZX12), transmitiendo estos estados a la UCE máster J255 a través del LIN-Bus Clima. (págs. 59, 61, 66)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Verificación de la comunicación en la línea LIN-Bus Clima y lectura de bloques de valores mediante el equipo de diagnosis conectado a J255. (pág. 61)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Módulo de mando e indicación ubicado en la parte trasera de la consola central, abonado como esclavo a la línea LIN-Bus Clima. (págs. 59, 61)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <p>No requiere. (págs. 59, 61, 66)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">SSP172 TARRACO (arrastrado).pdf, págs. 59, 61, 66</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt525" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 525 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
+    <div class="nota-body proceso">
+      <h1>Gestión eléctrica de los asientos calefactados</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Los pulsadores de activación leen sus órdenes a través de la UCE J255 (asientos delanteros Z45 y Z46) o de la unidad trasera E265 (asientos traseros ZX10 y ZX12 vía LIN-Bus Clima). La activación final la autoriza la UCE de la red de a bordo J519. (págs. 65-66)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>El flujo de funcionamiento y control eléctrico es el siguiente:</p>
+<ul>
+<li>Selección de mando: los asientos delanteros se activan desde los pulsadores de la UCE J255. Los asientos traseros laterales de la segunda fila se activan desde la unidad E265, la cual envía el estado de los pulsadores a J255 por la línea LIN-Bus Clima.</li>
+<li>Transmisión por CAN-Bus: la UCE J255 emite hacia el CAN-Bus Confort las solicitudes de encendido de todos los asientos calefactados.</li>
+<li>Validación por la UCE J519: la unidad de control de la red de a bordo J519 recibe los mensajes. Si la función de gestión de la carga eléctrica está activa (por baja tensión de batería o elevado consumo del alternador), J519 deniega o desactiva la alimentación de los asientos calefactados para proteger el balance eléctrico. (págs. 65-66)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Ubicación de plazas calefactadas: delanteras e izquierda/derecha de la 2ª fila trasera. (pág. 65)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Gobernar la alimentación y encendido de las mantas térmicas de los asientos delanteros y traseros coordinadamente con la gestión de la carga eléctrica del vehículo. (págs. 65-66)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <p>Creer que el climatizador activa directamente los relés o mantas térmicas de los asientos calefactados. La habilitación definitiva depende de la UCE J519, que puede desactivarlos en función del estado de la gestión de carga eléctrica. (pág. 66)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT525_01</code> Esquema eléctrico de conexiones de los asientos calefactados Z45, Z46, ZX10, ZX12 con J255, E265 y J519 vía CAN-Bus — Fuente: SSP172 TARRACO (arrastrado).pdf, pág. 65</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">SSP172 TARRACO (arrastrado).pdf, págs. 65-66</p>
+      </div>
+    </div>
+  </section>
+
   <section id="nt1001" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 1001 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -25559,7 +25930,7 @@ La presencia de cloro o bromo eleva el PAO. Los HFC y HFO carecen de cloro y bro
   </section>
 
   <div class="pie">
-    508 notas técnicas · generado el 24/09/2026.
+    517 notas técnicas · generado el 24/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
