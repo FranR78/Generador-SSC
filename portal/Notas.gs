@@ -90,3 +90,18 @@ function textoNotasParaIA(nts) {
     return cab + '\n' + cuerpo;
   }).join('\n\n---\n\n');
 }
+
+/** Huecos de captura aún sin foto, para la pestaña «Capturas». */
+function huecosCaptura() {
+  return (notas_().huecos || []).filter(function (h) { return !h.hecha; });
+}
+
+/** El alumno envía la captura de un hueco. Va a aprobación, no se publica. */
+function subirCaptura(nombre, datos, mini) {
+  if (!/^NT\d+_\d{2}$/.test(String(nombre))) throw new Error('Elige primero qué captura es.');
+  return db_capturaSubir_({ nombre: nombre, datos: datos, mini: mini });
+}
+
+/** Panel: capturas pendientes (con miniatura) y su aprobación o rechazo. */
+function capturasPorAprobar() { return db_capturasPorAprobar_(); }
+function resolverCaptura(id, aprobar) { return db_capturaResolver_(id, aprobar); }

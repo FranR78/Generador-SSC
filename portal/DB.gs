@@ -181,3 +181,9 @@ function db_estadoUsuario_(usuario) {
 function db_incConsulta_(usuario) {
   return db_call_('incConsulta');
 }
+
+// Capturas del alumnado (datos/Aprobacion.gs): suben a «Por aprobar» y el
+// profe las aprueba en el Panel. Corre en Datos, que es quien tiene el Drive.
+function db_capturaSubir_(args) { return db_call_('capturaSubir', args); }
+function db_capturasPorAprobar_() { return db_call_('capturasPorAprobar'); }
+function db_capturaResolver_(id, aprobar) { return db_call_('capturaResolver', { id: id, aprobar: !!aprobar }); }

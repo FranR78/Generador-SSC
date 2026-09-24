@@ -783,8 +783,28 @@ def volcar_json(notas):
     # las cabeceras sin recalcular nada.
     secciones_por_unidad = {u: idx["secciones"] for u, idx in INDICES.items()}
 
+    # Huecos de captura de todo el corpus visible, para la pestaña «Capturas»
+    # del portal: nombre exacto del archivo, de qué nota es y si ya existe.
+    hechas = {f"NT{nt}_{o:02d}" for nt, lista in TODAS_CAPTURAS.items() for o, _, _ in lista}
+    huecos, vistos = [], set()
+    for n in notas:
+        html = n.apartados.get("Imágenes requeridas", "")
+        for i, li in enumerate(re.findall(r"<li>(.*?)</li>", html, re.S), start=1):
+            desc = re.sub(r"^\s*📷\s*(IMAGEN:)?\s*", "", texto_plano(li), flags=re.I)
+            nombre = f"NT{n.nt}_{i:02d}"
+            m = HUECO_AJENO.match(desc)
+            if m:
+                nombre, desc = f"NT{int(m.group(1))}_{int(m.group(2)):02d}", desc[m.end():]
+            if nombre in vistos:
+                continue
+            vistos.add(nombre)
+            huecos.append({"nombre": nombre, "nt": n.nt, "titulo": n.titulo,
+                           "seccion": ubicar(n)[1], "descripcion": desc.strip(),
+                           "hecha": nombre in hechas})
+
     doc = {
         "generado": date.today().isoformat(),
+        "huecos": huecos,
         "total": len(fuera),
         "grupos": sorted({n.grupo for n in notas}),
         "unidades": catalogo_unidades(),

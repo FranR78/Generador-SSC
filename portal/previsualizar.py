@@ -70,7 +70,7 @@ window.google = { script: { run: (function () {
                  'tengoClaveIA','registrarConexion','registrarLatido','listarNotas',
                  'cargarNota','listarCasosSimulador','cargarCasoSimulador','puedoIntentar',
                  'registrarIntento','tareasAbiertas','aportacionesParaValorar','panelProfesor',
-                 'listarRondas','obtenerPrompt'];
+                 'listarRondas','obtenerPrompt','huecosCaptura','subirCaptura','capturasPorAprobar','resolverCaptura'];
   metodos.forEach(function (m) {
     API.prototype[m] = function () {
       var args = arguments, self = this;
@@ -84,6 +84,10 @@ window.google = { script: { run: (function () {
           fuentes: 'Manual de ejemplo, pág. 1' };
         else if (m === 'listarCasosSimulador') r = [{ id: 'x', titulo: 'Caso de ejemplo',
           vehiculo: 'Seat León 1P · Climatronic', sintoma: 'No enfría.' }];
+        else if (m === 'huecosCaptura') r = [{ nombre: 'NT22_01', nt: 1001, titulo: 'Agente frigorífico R134a',
+          seccion: '3. Fluidos', descripcion: 'Curvas presión-temperatura R134a / R1234yf — Fuente: 3. Refrigerantes.pdf, pág. 26' },
+          { nombre: 'NT4_01', nt: 4, titulo: 'Capa de ozono', seccion: '1. Impacto ambiental', descripcion: 'Esquema del ozono' }];
+        else if (m === 'capturasPorAprobar') r = [];
         else if (m === 'puedoIntentar') r = { puede: true };
         else if (m === 'tareasAbiertas' || m === 'aportacionesParaValorar' || m === 'listarRondas') r = [];
         else r = _FALSO[m];

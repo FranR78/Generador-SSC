@@ -141,6 +141,9 @@ function ejecutar_(op, args, usuario) {
     case 'conexion': return conexion_(usuario);
     case 'latido': return latido_(usuario, args.segundos);
     case 'resetUsuario': return resetUsuario_(usuario, args.alumno);
+    case 'capturaSubir': return capturaSubir_(usuario, args);
+    case 'capturasPorAprobar': return capturasPorAprobar_(usuario);
+    case 'capturaResolver': return capturaResolver_(usuario, args);
     default: throw new Error('Operación desconocida: ' + op);
   }
 }

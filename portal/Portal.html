@@ -13,6 +13,8 @@
     .apartado .txt li{margin:.35em 0}
     .apartado .txt li>ul,.apartado .txt li>ol{margin:.2em 0}
     .apartado .txt strong{color:#063f70}
+    .cap-pend{display:flex;gap:10px;align-items:center;border:1px solid var(--borde);border-radius:10px;padding:8px;margin:6px 0;flex-wrap:wrap}
+    .cap-pend img{width:120px;max-height:90px;object-fit:contain;border-radius:6px;background:#f3f6f8}
     .apartado .txt h3{font-size:15px;color:#063f70;margin:1.1em 0 .4em}
     .apartado .txt table{border-collapse:collapse;width:100%;font-size:14px;margin:.4em 0 1em;text-align:left}
     .apartado .txt th,.apartado .txt td{border:1px solid #d7e1ea;padding:6px 9px;vertical-align:top}
@@ -184,10 +186,9 @@
 
   <nav id="nav">
     <button data-sec="inicio" class="activo"><span class="icono" aria-hidden="true">🏠</span><span class="rotulo">Inicio</span></button>
-    <button data-sec="consultar"><span class="icono" aria-hidden="true">💬</span><span class="rotulo">Consultar</span></button>
     <button data-sec="cursos"><span class="icono" aria-hidden="true">🎓</span><span class="rotulo">Cursos</span></button>
     <button data-sec="apuntes"><span class="icono" aria-hidden="true">📘</span><span class="rotulo">Apuntes</span></button>
-    <button data-sec="manual"><span class="icono" aria-hidden="true">📄</span><span class="rotulo">Manual</span></button>
+    <button data-sec="capturas"><span class="icono" aria-hidden="true">📷</span><span class="rotulo">Capturas</span></button>
     <button data-sec="juegos"><span class="icono" aria-hidden="true">🎮</span><span class="rotulo">Juegos</span></button>
     <button data-sec="simulador"><span class="icono" aria-hidden="true">🔧</span><span class="rotulo">Simulador</span></button>
     <button data-sec="cuenta"><span class="icono" aria-hidden="true">⚙️</span><span class="rotulo">Cuenta</span></button>
@@ -200,6 +201,7 @@
     <section id="sec-cursos" hidden><?!= include('Cursos') ?></section>
     <section id="sec-apuntes" hidden><?!= include('Apuntes') ?></section>
     <section id="sec-manual" hidden><?!= include('Manual') ?></section>
+    <section id="sec-capturas" hidden><?!= include('Capturas') ?></section>
     <section id="sec-juegos" hidden><?!= include('Juegos') ?></section>
     <section id="sec-simulador" hidden><?!= include('Simulador') ?></section>
     <section id="sec-cuenta" hidden><?!= include('Cuenta') ?></section>
@@ -225,6 +227,7 @@
       if (sec === 'consultar' && !arbolCargado) cargarArbol();
       if (sec === 'consultar') refrescarGate();
       if (sec === 'manual') initManual();
+      if (sec === 'capturas') initCapturas();
       if (sec === 'cuenta' && !cuentaCargada) initCuenta();
       if (sec === 'cursos') initCursos();
       if (sec === 'apuntes') initApuntes();
@@ -396,6 +399,7 @@
         .withSuccessHandler(function (d) {
           ntCatalogo = (d && d.notas) || [];
           pintarListaNT('');
+          aplicarPreguntaNT();
         })
         .withFailureHandler(function (err) {
           cont.innerHTML = '<p class="vacio">No se han podido cargar las notas: ' + err.message + '</p>';
@@ -851,6 +855,7 @@
           pintarPulso(d.pulso, d.gate);
           cargarRondas();
           cargarPrompt();
+          cargarCapturasPanel();
         })
         .withFailureHandler(function (err) { cont.textContent = err.message; })
         .panelProfesor();
@@ -909,7 +914,155 @@
       if (esProfe) document.getElementById('nav-profesor').hidden = false;
     }).soyProfe();
 
-    mostrar('consultar');
+    // Consultar y Manual ya no están en el menú: Consultar se abre desde el
+    // botón «Preguntar sobre esta nota» de Apuntes y Cursos.
+    mostrar('inicio');
+
+    // ---------- Preguntar sobre una nota (lleva a Consultar con ella marcada) ----------
+    var preguntarNT = null;
+    function preguntarSobre(nt) {
+      preguntarNT = nt;
+      mostrar('consultar');
+      aplicarPreguntaNT();
+    }
+    function aplicarPreguntaNT() {
+      if (preguntarNT === null || !ntCatalogo) return;
+      var n = ntCatalogo.filter(function (x) { return x.nt === preguntarNT; })[0];
+      preguntarNT = null;
+      if (!n) return;
+      if (!notasSel[n.nt]) onToggleNota(n, { checked: true });
+      pintarListaNT(document.getElementById('buscar-nt').value);
+      var p = document.getElementById('pregunta');
+      if (p) { p.focus(); p.scrollIntoView({ block: 'center' }); }
+    }
+    function botonPreguntar(nt) {
+      return '<p style="margin:16px 0 0"><button type="button" class="accion sec" ' +
+             'onclick="preguntarSobre(' + nt + ')">💬 Preguntar sobre esta nota</button></p>';
+    }
+
+    // ---------- Capturas del alumnado ----------
+    var capHuecos = null, capImagen = null;
+    function initCapturas() {
+      var sel = document.getElementById('cap-hueco');
+      if (capHuecos) return;
+      google.script.run
+        .withSuccessHandler(function (h) {
+          capHuecos = h || [];
+          sel.innerHTML = '<option value="">— Elige el hueco (' + capHuecos.length + ' sin foto) —</option>';
+          var grupo = null, og = null;
+          capHuecos.forEach(function (x, i) {
+            if (x.seccion !== grupo) {
+              grupo = x.seccion;
+              og = document.createElement('optgroup');
+              og.label = grupo || 'Otras';
+              sel.appendChild(og);
+            }
+            var o = document.createElement('option');
+            o.value = i;
+            o.textContent = x.nombre + ' · ' + x.titulo;
+            og.appendChild(o);
+          });
+        })
+        .withFailureHandler(function (e) { sel.innerHTML = '<option value="">' + e.message + '</option>'; })
+        .huecosCaptura();
+    }
+    function capListo() {
+      document.getElementById('cap-enviar').disabled =
+        !(capImagen && document.getElementById('cap-hueco').value !== '');
+    }
+    // Reduce en el navegador: 1600 px para publicar y 320 px para el Panel.
+    function capReducir(img, max, calidad) {
+      var k = Math.min(1, max / Math.max(img.width, img.height));
+      var c = document.createElement('canvas');
+      c.width = Math.round(img.width * k); c.height = Math.round(img.height * k);
+      var g = c.getContext('2d');
+      g.fillStyle = '#fff'; g.fillRect(0, 0, c.width, c.height);
+      g.drawImage(img, 0, 0, c.width, c.height);
+      return c.toDataURL('image/jpeg', calidad).split(',')[1];
+    }
+    function capCargar(archivo) {
+      if (!archivo || !/^image\//.test(archivo.type)) return;
+      var url = URL.createObjectURL(archivo);
+      var img = new Image();
+      img.onload = function () {
+        capImagen = { datos: capReducir(img, 1600, 0.85), mini: capReducir(img, 320, 0.7) };
+        document.getElementById('cap-prev').innerHTML = '<img src="' + url + '" alt="">';
+        document.getElementById('cap-zona').classList.add('lista');
+        capListo();
+      };
+      img.src = url;
+    }
+    (function () {
+      var zona = document.getElementById('cap-zona');
+      if (!zona) return;
+      var inp = document.getElementById('cap-archivo');
+      zona.addEventListener('click', function () { inp.click(); });
+      inp.addEventListener('change', function () { capCargar(inp.files[0]); });
+      document.addEventListener('paste', function (e) {
+        if (seccionActual !== 'capturas') return;
+        var items = (e.clipboardData || {}).items || [];
+        for (var i = 0; i < items.length; i++) {
+          if (items[i].type.indexOf('image') === 0) { capCargar(items[i].getAsFile()); e.preventDefault(); return; }
+        }
+      });
+      var sel = document.getElementById('cap-hueco');
+      sel.addEventListener('change', function () {
+        var d = document.getElementById('cap-desc');
+        var x = capHuecos && capHuecos[sel.value];
+        d.hidden = !x;
+        if (x) d.textContent = x.descripcion;
+        capListo();
+      });
+      document.getElementById('cap-enviar').addEventListener('click', function () {
+        var x = capHuecos[sel.value], est = document.getElementById('cap-estado'), b = this;
+        b.disabled = true; est.textContent = 'Enviando…';
+        google.script.run
+          .withSuccessHandler(function () {
+            est.textContent = '✓ Enviada ' + x.nombre + '. El profesor la revisará antes de publicarla.';
+            capImagen = null;
+            document.getElementById('cap-prev').innerHTML = '';
+            zona.classList.remove('lista');
+            sel.value = ''; document.getElementById('cap-desc').hidden = true;
+          })
+          .withFailureHandler(function (e) { est.textContent = '✗ ' + e.message; b.disabled = false; })
+          .subirCaptura(x.nombre, capImagen.datos, capImagen.mini);
+      });
+    })();
+
+    // ---------- Panel: capturas por aprobar ----------
+    function cargarCapturasPanel() {
+      var cont = document.getElementById('prof-capturas');
+      if (!cont) return;
+      cont.textContent = 'Cargando…';
+      google.script.run
+        .withSuccessHandler(function (lista) {
+          if (!lista.length) { cont.innerHTML = '<p class="vacio">No hay capturas pendientes.</p>'; return; }
+          cont.innerHTML = '';
+          lista.forEach(function (c) {
+            var d = document.createElement('div');
+            d.className = 'cap-pend';
+            d.innerHTML = (c.mini ? '<img src="data:image/jpeg;base64,' + c.mini + '" alt="">' : '') +
+              '<div style="flex:1"><strong>' + c.nombre + '</strong><br><small>' +
+              c.alumno + ' · ' + c.fecha + '</small></div>';
+            ['Aprobar', 'Rechazar'].forEach(function (t) {
+              var b = document.createElement('button');
+              b.type = 'button'; b.className = 'accion' + (t === 'Rechazar' ? ' sec' : '');
+              b.textContent = t;
+              b.addEventListener('click', function () {
+                d.style.opacity = .5;
+                google.script.run
+                  .withSuccessHandler(function () { d.remove(); if (!cont.children.length) cargarCapturasPanel(); })
+                  .withFailureHandler(function (e) { d.style.opacity = 1; alert(e.message); })
+                  .resolverCaptura(c.id, t === 'Aprobar');
+              });
+              d.appendChild(b);
+            });
+            cont.appendChild(d);
+          });
+        })
+        .withFailureHandler(function (e) { cont.textContent = e.message; })
+        .capturasPorAprobar();
+    }
 
     // ---------- Simulador de diagnóstico ----------
     // El motor es el mismo que se probó suelto; los casos vienen de la Hoja.
@@ -1584,6 +1737,7 @@
             h += '<div class="apartado"><h4>' + a.titulo + '</h4>' + cuerpoApartado(a, n.nt) + '</div>';
           });
           if(n.fuentes) h += '<p class="fuente"><strong>Fuente:</strong> ' + n.fuentes + ' · NT' + n.nt + '</p>';
+          h += botonPreguntar(n.nt);
           d.innerHTML = h;
           var x = t.notas[i];
           if(!x.leida){ x.leida = true; pintarCurso(); abrirTemaMarcar(t, i); }
@@ -1805,6 +1959,7 @@
             h += '<div class="apartado"><h4>'+a.titulo+'</h4>'+cuerpoApartado(a, n.nt)+'</div>';
           });
           if(n.fuentes) h += '<p class="fuente"><strong>Fuente:</strong> '+n.fuentes+'</p>';
+          h += botonPreguntar(n.nt);
           d.innerHTML = h;
           // queda marcada como leída en el servidor; refrescamos el listado
           var x = apCorpus && apCorpus.notas.filter(function(y){return y.nt===n.nt;})[0];
