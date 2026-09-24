@@ -3074,6 +3074,22 @@
    "hecha": false
   },
   {
+   "nombre": "NT650_01",
+   "nt": 650,
+   "titulo": "Regulador de la iluminación",
+   "seccion": "Por ubicar",
+   "descripcion": "Regulador de iluminación E20 e interconexión con la unidad de manejo — Fuente: Conmutador térmico del ventilador.pdf, pág. 19",
+   "hecha": false
+  },
+  {
+   "nombre": "NT651_01",
+   "nt": 651,
+   "titulo": "Conmutador térmico del ventilador",
+   "seccion": "Por ubicar",
+   "descripcion": "Ubicación y conexionado del conmutador térmico F18 en el radiador del líquido refrigerante — Fuente: Conmutador térmico del ventilador.pdf, pág. 19",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -3098,7 +3114,7 @@
    "hecha": false
   }
  ],
- "total": 641,
+ "total": 643,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -47972,6 +47988,138 @@
      "titulo": "Imágenes requeridas",
      "texto": "Marcos de salida de aire para desaireación forzada en la carrocería del maletero — Fuente: Sensor Calidad del Aire G238.pdf, pág. 201",
      "html": "<ul>\n<li>Marcos de salida de aire para desaireación forzada en la carrocería del maletero — Fuente: Sensor Calidad del Aire G238.pdf, pág. 201</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.regulador-iluminacion.conmutador-termico-del-ventilador",
+   "nt": 650,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulador-iluminacion",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Regulador de la iluminación",
+   "codigo": "E20",
+   "menu": "Regulador de la iluminación E20",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Conmutador térmico del ventilador.pdf, págs. 19",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "electricidad-electronica",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "conmutador-luces",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "E20",
+    "resistencia interna",
+    "iluminación",
+    "tensión de alimentación"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Modificar la tensión de alimentación para variar la luminosidad de los distintos componentes (cuadro de instrumentos, display de la unidad de manejo e indicación y luz de localización de los mandos), permitiendo regular el nivel de iluminación de los pictogramas del mando giratorio de la distribución de aire y la intensidad de la iluminación del display y pulsadores. (pág. 19)",
+     "html": "<p>Modificar la tensión de alimentación para variar la luminosidad de los distintos componentes (cuadro de instrumentos, display de la unidad de manejo e indicación y luz de localización de los mandos), permitiendo regular el nivel de iluminación de los pictogramas del mando giratorio de la distribución de aire y la intensidad de la iluminación del display y pulsadores. <span class=\"pag\">pág. 19</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Está ubicado en el lado izquierdo del tablero de instrumentos y forma una pieza única con el conmutador de luces y la regulación de altura de los faros. (pág. 19)",
+     "html": "<p>Está ubicado en el lado izquierdo del tablero de instrumentos y forma una pieza única con el conmutador de luces y la regulación de altura de los faros. <span class=\"pag\">pág. 19</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Modifica la tensión de alimentación mediante una resistencia interna. La señal emitida es utilizada por la unidad de control del autoclima o calefacción motorizada para regular la iluminación de los pictogramas del mando giratorio de la distribución de aire, y por el radiocasete para controlar la intensidad de la iluminación del display y pulsadores de la unidad de manejo e indicación. (pág. 19)",
+     "html": "<p>Modifica la tensión de alimentación mediante una resistencia interna. La señal emitida es utilizada por la unidad de control del autoclima o calefacción motorizada para regular la iluminación de los pictogramas del mando giratorio de la distribución de aire, y por el radiocasete para controlar la intensidad de la iluminación del display y pulsadores de la unidad de manejo e indicación. <span class=\"pag\">pág. 19</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "No tiene función sustitutiva. (pág. 19)",
+     "html": "<p>No tiene función sustitutiva. <span class=\"pag\">pág. 19</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Regulador de iluminación E20 e interconexión con la unidad de manejo — Fuente: Conmutador térmico del ventilador.pdf, pág. 19",
+     "html": "<ul>\n<li>Regulador de iluminación E20 e interconexión con la unidad de manejo — Fuente: Conmutador térmico del ventilador.pdf, pág. 19</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.conmutador-termico-ventilador.conmutador-termico-del-ventilador",
+   "nt": 651,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "conmutador-termico-ventilador",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Conmutador térmico del ventilador",
+   "codigo": "F18",
+   "menu": "Conmutador térmico del ventila F18",
+   "grupo": "Refrigeración del motor",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Conmutador térmico del ventilador.pdf, págs. 19",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "motor",
+   "sistema": "refrigeracion-motor",
+   "formaParteDe": "circuito-refrigeracion-motor",
+   "relacionados": [
+    "electroventilador-condensador",
+    "unidad-control-climatizador",
+    "liquido-refrigerante-motor"
+   ],
+   "palabras": [
+    "F18",
+    "radiador",
+    "95 ºC",
+    "105 ºC",
+    "primera velocidad",
+    "segunda velocidad",
+    "positivo 30"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Garantizar la refrigeración del líquido refrigerante activando las velocidades del ventilador al alcanzar temperaturas determinadas en el radiador. (pág. 19)",
+     "html": "<p>Garantizar la refrigeración del líquido refrigerante activando las velocidades del ventilador al alcanzar temperaturas determinadas en el radiador. <span class=\"pag\">pág. 19</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Se encuentra en el radiador del líquido refrigerante y está formado por dos interruptores normalmente abiertos. (pág. 19)",
+     "html": "<p>Se encuentra en el radiador del líquido refrigerante y está formado por dos interruptores normalmente abiertos. <span class=\"pag\">pág. 19</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El primer interruptor cierra a los 95 ºC de temperatura del líquido refrigerante y alimenta con positivo directo (borne 30) a los motores de los ventiladores del líquido refrigerante, activando la 1ª velocidad. El segundo interruptor cierra a los 105 ºC y envía una señal de positivo (borne 30) a la unidad de control del aire acondicionado, la cual activa la 2ª velocidad de los ventiladores del líquido refrigerante al recibir dicha señal. (pág. 19)",
+     "html": "<ul>\n<li>El primer interruptor cierra a los 95 ºC de temperatura del líquido refrigerante y alimenta con positivo directo (borne 30) a los motores de los ventiladores del líquido refrigerante, activando la 1ª velocidad.</li>\n<li>El segundo interruptor cierra a los 105 ºC y envía una señal de positivo (borne 30) a la unidad de control del aire acondicionado, la cual activa la 2ª velocidad de los ventiladores del líquido refrigerante al recibir dicha señal. <span class=\"pag\">pág. 19</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Cierre del primer interruptor (activación de 1ª velocidad): 95 ºC del líquido refrigerante. Cierre del segundo interruptor (señal para 2ª velocidad): 105 ºC del líquido refrigerante. Tensión de alimentación: positivo directo (borne 30). (pág. 19)",
+     "html": "<ul>\n<li>Cierre del primer interruptor (activación de 1ª velocidad): 95 ºC del líquido refrigerante.</li>\n<li>Cierre del segundo interruptor (señal para 2ª velocidad): 105 ºC del líquido refrigerante.</li>\n<li>Tensión de alimentación: positivo directo (borne 30). <span class=\"pag\">pág. 19</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "No tiene función sustitutiva. (pág. 19)",
+     "html": "<p>No tiene función sustitutiva. <span class=\"pag\">pág. 19</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Ubicación y conexionado del conmutador térmico F18 en el radiador del líquido refrigerante — Fuente: Conmutador térmico del ventilador.pdf, pág. 19",
+     "html": "<ul>\n<li>Ubicación y conexionado del conmutador térmico F18 en el radiador del líquido refrigerante — Fuente: Conmutador térmico del ventilador.pdf, pág. 19</li>\n</ul>"
     }
    ]
   },

@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">641 notas · 24/09/2026</p>
+  <p class="sidebar-meta">643 notas · 24/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -398,7 +398,7 @@
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
     <li><a href="#grp-potenciometro-trampilla-temperatura">Potenciómetro del motor de la trampilla de temperatura <span class="menu-cuenta">2 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Refrigeración del motor</span></li>
-    <li><a href="#nt196">NT196 · Conmutador térmico del ventila F18</a></li>
+    <li><a href="#grp-conmutador-termico-ventilador">Conmutador térmico del ventilador del radiador <span class="menu-cuenta">2 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
     <li><a href="#nt197">NT197 · Pulsadores de activación de la E87</a></li>
     <li><a href="#nt198">NT198 · Display de la unidad de manejo E87</a></li>
@@ -566,6 +566,8 @@
     <li><a href="#nt641">NT641 · OBJETIVOS Y RESTRICCIONES DE LOS SISTE</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Distribución de aire</span></li>
     <li><a href="#nt646">NT646 · Marco de salida de aire para desaireac</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
+    <li><a href="#nt650">NT650 · Regulador de la iluminación E20</a></li>
   </ul>
 </nav>
 
@@ -25023,6 +25025,11 @@ Velocidad del vehículo no superior a 5 km/h para ejecutar la función de diagno
     </details>
   </div>
 
+  <div class="grupo-componente" id="grp-conmutador-termico-ventilador">
+    <div class="grupo-cab"><span class="grupo-nombre">Conmutador térmico del ventilador del radiador</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 2 · NT196 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 19</summary>
   <section id="nt196" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 196 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -25070,6 +25077,52 @@ Velocidad del vehículo no superior a 5 km/h para ejecutar la función de diagno
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 2 · NT651 · Conmutador térmico del ventilador.pdf, págs. 19</summary>
+  <section id="nt651" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 651 </div>
+    <div class="nota-body">
+      <h1>Conmutador térmico del ventilador — <strong>F18</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Garantizar la refrigeración del líquido refrigerante activando las velocidades del ventilador al alcanzar temperaturas determinadas en el radiador. (pág. 19)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li>El primer interruptor cierra a los 95 ºC de temperatura del líquido refrigerante y alimenta con positivo directo (borne 30) a los motores de los ventiladores del líquido refrigerante, activando la 1ª velocidad.</li>
+<li>El segundo interruptor cierra a los 105 ºC y envía una señal de positivo (borne 30) a la unidad de control del aire acondicionado, la cual activa la 2ª velocidad de los ventiladores del líquido refrigerante al recibir dicha señal. (pág. 19)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Cierre del primer interruptor (activación de 1ª velocidad): 95 ºC del líquido refrigerante.</li>
+<li>Cierre del segundo interruptor (señal para 2ª velocidad): 105 ºC del líquido refrigerante.</li>
+<li>Tensión de alimentación: positivo directo (borne 30). (pág. 19)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>No tiene función sustitutiva. (pág. 19)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Se encuentra en el radiador del líquido refrigerante y está formado por dos interruptores normalmente abiertos. (pág. 19)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT651_01</code> Ubicación y conexionado del conmutador térmico F18 en el radiador del líquido refrigerante — Fuente: Conmutador térmico del ventilador.pdf, pág. 19</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Conmutador térmico del ventilador.pdf, págs. 19</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
   <section id="nt197" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 197 <span class="fusionado">SEAT</span></div>
@@ -31665,8 +31718,39 @@ En la versión de nueva generación, ha sido revisada técnicamente y adaptada e
     </div>
   </section>
 
+  <section id="nt650" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 650 </div>
+    <div class="nota-body">
+      <h1>Regulador de la iluminación — <strong>E20</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Modificar la tensión de alimentación para variar la luminosidad de los distintos componentes (cuadro de instrumentos, display de la unidad de manejo e indicación y luz de localización de los mandos), permitiendo regular el nivel de iluminación de los pictogramas del mando giratorio de la distribución de aire y la intensidad de la iluminación del display y pulsadores. (pág. 19)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Modifica la tensión de alimentación mediante una resistencia interna. La señal emitida es utilizada por la unidad de control del autoclima o calefacción motorizada para regular la iluminación de los pictogramas del mando giratorio de la distribución de aire, y por el radiocasete para controlar la intensidad de la iluminación del display y pulsadores de la unidad de manejo e indicación. (pág. 19)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>No tiene función sustitutiva. (pág. 19)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Está ubicado en el lado izquierdo del tablero de instrumentos y forma una pieza única con el conmutador de luces y la regulación de altura de los faros. (pág. 19)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT650_01</code> Regulador de iluminación E20 e interconexión con la unidad de manejo — Fuente: Conmutador térmico del ventilador.pdf, pág. 19</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Conmutador térmico del ventilador.pdf, págs. 19</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    641 notas técnicas · generado el 24/09/2026.
+    643 notas técnicas · generado el 24/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
