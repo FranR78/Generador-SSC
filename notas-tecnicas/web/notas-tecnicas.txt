@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">530 notas · 24/09/2026</p>
+  <p class="sidebar-meta">537 notas · 24/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -257,8 +257,8 @@
     <li><a href="#nt8">NT8 · Directiva 2006/40/CE sobre emisiones d</a></li>
     <li><a href="#nt9">NT9 · Reglamento (UE) nº 517/2014 sobre gase</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
-    <li><a href="#grp-ciclo-frigorifico">Principios físicos de la refrigeración y termodinámica <span class="menu-cuenta">21 fuentes</span></a></li>
-    <li><a href="#grp-compresor">Compresor de aire acondicionado <span class="menu-cuenta">17 fuentes</span></a></li>
+    <li><a href="#grp-ciclo-frigorifico">Principios físicos de la refrigeración y termodinámica <span class="menu-cuenta">23 fuentes</span></a></li>
+    <li><a href="#grp-compresor">Compresor de aire acondicionado <span class="menu-cuenta">18 fuentes</span></a></li>
     <li><a href="#grp-condensador">Condensador <span class="menu-cuenta">8 fuentes</span></a></li>
     <li><a href="#grp-filtro-deshidratador-mirilla">Filtro deshidratador <span class="menu-cuenta">8 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
@@ -347,7 +347,7 @@
     <li><a href="#grp-sensor-temperatura-ntc-interior">Termosensor del tablero de instrumentos con turbina de aire <span class="menu-cuenta">15 fuentes</span></a></li>
     <li><a href="#grp-fotosensor-solar">Fotosensor de radiación solar <span class="menu-cuenta">5 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Distribución de aire</span></li>
-    <li><a href="#grp-servomotor-trampilla">Servomotores de las chapaletas de aire <span class="menu-cuenta">18 fuentes</span></a></li>
+    <li><a href="#grp-servomotor-trampilla">Servomotores de las chapaletas de aire <span class="menu-cuenta">19 fuentes</span></a></li>
     <li><a href="#grp-distribucion-aire">Conducción del aire en el calefactor/climatizador <span class="menu-cuenta">7 fuentes</span></a></li>
     <li><a href="#grp-recirculacion">Función de recirculación de aire <span class="menu-cuenta">5 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
@@ -381,7 +381,7 @@
     <li><a href="#nt145">NT145 · Magnitudes ambientales de los refriger</a></li>
     <li><a href="#nt146">NT146 · Normativa europea de gases fluorados e</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
-    <li><a href="#grp-higrometria-y-confort">Estrés climatológico y márgenes de agrado térmico <span class="menu-cuenta">6 fuentes</span></a></li>
+    <li><a href="#grp-higrometria-y-confort">Estrés climatológico y márgenes de agrado térmico <span class="menu-cuenta">7 fuentes</span></a></li>
     <li><a href="#nt169">NT169 · Diagnosis de actuadores del climatizad</a></li>
     <li><a href="#nt170">NT170 · Ajuste básico del climatizador</a></li>
     <li><a href="#nt174">NT174 · Autodiagnóstico de la calefacc J364</a></li>
@@ -403,7 +403,7 @@
     <li><a href="#nt197">NT197 · Pulsadores de activación de la E87</a></li>
     <li><a href="#nt198">NT198 · Display de la unidad de manejo E87</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Distribución de aire</span></li>
-    <li><a href="#grp-ventilador-habitaculo">Motor de la turbina de aire y regulador de régimen <span class="menu-cuenta">4 fuentes</span></a></li>
+    <li><a href="#grp-ventilador-habitaculo">Motor de la turbina de aire y regulador de régimen <span class="menu-cuenta">5 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
     <li><a href="#nt206">NT206 · Unidad de control del aire aco J293</a></li>
     <li><a href="#grp-esquema-electrico-climatizador">Esquema eléctrico del sistema de climatización del Ibiza 99 <span class="menu-cuenta">2 fuentes</span></a></li>
@@ -533,7 +533,7 @@
     <li class="grupo"><span class="menu-grupo-titulo">Calefaccion asientos</span></li>
     <li><a href="#nt525">NT525 · Gestión eléctrica de los asientos cale</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Fluidos frigoríficos</span></li>
-    <li><a href="#nt1001">NT1001 · Agente frigorífico R134a</a></li>
+    <li><a href="#grp-refrigerante-r134a">Agente frigorífico R134a <span class="menu-cuenta">2 fuentes</span></a></li>
   </ul>
 </nav>
 
@@ -1059,10 +1059,10 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
 
   <div class="grupo-componente" id="grp-ciclo-frigorifico">
-    <div class="grupo-cab"><span class="grupo-nombre">Principios físicos de la refrigeración y termodinámica</span><span class="grupo-cuenta">21 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Principios físicos de la refrigeración y termodinámica</span><span class="grupo-cuenta">23 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 21 · NT10 · 2. Introducción a la refrigeración.pdf, págs. 17-19</summary>
+      <summary>Variante 1 de 23 · NT10 · 2. Introducción a la refrigeración.pdf, págs. 17-19</summary>
   <section id="nt10" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 10 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -1126,7 +1126,7 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 21 · NT18 · 2. Introducción a la refrigeración.pdf, págs. 21-22</summary>
+      <summary>Variante 2 de 23 · NT18 · 2. Introducción a la refrigeración.pdf, págs. 21-22</summary>
   <section id="nt18" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 18 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -1186,7 +1186,7 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 21 · NT25 · 3. Refrigerantes.pdf, págs. 25-26</summary>
+      <summary>Variante 3 de 23 · NT25 · 3. Refrigerantes.pdf, págs. 25-26</summary>
   <section id="nt25" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 25 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -1237,7 +1237,7 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 21 · NT148 · PRO 5. Sistemas de Aire Acondicionado.pdf, págs. 44</summary>
+      <summary>Variante 4 de 23 · NT148 · PRO 5. Sistemas de Aire Acondicionado.pdf, págs. 44</summary>
   <section id="nt148" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 148 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -1302,7 +1302,7 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 21 · NT149 · PRO 5. Sistemas de Aire Acondicionado.pdf, págs. 45-46</summary>
+      <summary>Variante 5 de 23 · NT149 · PRO 5. Sistemas de Aire Acondicionado.pdf, págs. 45-46</summary>
   <section id="nt149" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 149 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -1373,7 +1373,7 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 21 · NT187 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 7</summary>
+      <summary>Variante 6 de 23 · NT187 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 7</summary>
   <section id="nt187" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 187 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -1422,7 +1422,7 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 21 · NT215 · Climatizacion basicos.pdf, págs. 6</summary>
+      <summary>Variante 7 de 23 · NT215 · Climatizacion basicos.pdf, págs. 6</summary>
   <section id="nt215" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 215 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -1460,7 +1460,7 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 8 de 21 · NT244 · Climatizacion-conocimientos-basios-para-el-taller_3.pdf, págs. 7-9</summary>
+      <summary>Variante 8 de 23 · NT244 · Climatizacion-conocimientos-basios-para-el-taller_3.pdf, págs. 7-9</summary>
   <section id="nt244" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 244 <span class="subtipo">Fundamento</span><span class="fusionado">Behr Hella Service</span></div>
     <div class="nota-body proceso">
@@ -1498,7 +1498,7 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 9 de 21 · NT252 · CLIMATIZADOR MD FRAN.docx, págs. Sección Física aplicada</summary>
+      <summary>Variante 9 de 23 · NT252 · CLIMATIZADOR MD FRAN.docx, págs. Sección Física aplicada</summary>
   <section id="nt252" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 252 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -1555,7 +1555,7 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 10 de 21 · NT255 · CLIMATIZADOR MD FRAN.docx, págs. Secciones Circuito frigorífico - prin</summary>
+      <summary>Variante 10 de 23 · NT255 · CLIMATIZADOR MD FRAN.docx, págs. Secciones Circuito frigorífico - prin</summary>
   <section id="nt255" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 255 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -1615,7 +1615,7 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 11 de 21 · NT264 · LA CLIMATIZACIÓN.pdf, págs. 28-31</summary>
+      <summary>Variante 11 de 23 · NT264 · LA CLIMATIZACIÓN.pdf, págs. 28-31</summary>
   <section id="nt264" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 264 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -1660,7 +1660,7 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 12 de 21 · NT267 · LA CLIMATIZACIÓN.pdf, págs. 41-46</summary>
+      <summary>Variante 12 de 23 · NT267 · LA CLIMATIZACIÓN.pdf, págs. 41-46</summary>
   <section id="nt267" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 267 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -1708,7 +1708,7 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 13 de 21 · NT301 · LA CLIMATIZACIÓN.pdf, págs. 138-142</summary>
+      <summary>Variante 13 de 23 · NT301 · LA CLIMATIZACIÓN.pdf, págs. 138-142</summary>
   <section id="nt301" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 301 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -1741,7 +1741,7 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 14 de 21 · NT311 · MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 4</summary>
+      <summary>Variante 14 de 23 · NT311 · MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 4</summary>
   <section id="nt311" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 311 <span class="subtipo">Fundamento</span><span class="fusionado">Formauto</span></div>
     <div class="nota-body proceso">
@@ -1781,7 +1781,7 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 15 de 21 · NT314 · MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 7-9</summary>
+      <summary>Variante 15 de 23 · NT314 · MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 7-9</summary>
   <section id="nt314" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 314 <span class="subtipo">Fundamento</span><span class="fusionado">Formauto</span></div>
     <div class="nota-body proceso">
@@ -1830,7 +1830,7 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 16 de 21 · NT315 · MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 9-10</summary>
+      <summary>Variante 16 de 23 · NT315 · MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 9-10</summary>
   <section id="nt315" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 315 <span class="subtipo">Fundamento</span><span class="fusionado">Formauto</span></div>
     <div class="nota-body proceso">
@@ -1879,7 +1879,7 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 17 de 21 · NT316 · MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 10-12</summary>
+      <summary>Variante 17 de 23 · NT316 · MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 10-12</summary>
   <section id="nt316" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 316 <span class="subtipo">Fundamento</span><span class="fusionado">Formauto</span></div>
     <div class="nota-body proceso">
@@ -1937,7 +1937,7 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 18 de 21 · NT322 · MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 6-7</summary>
+      <summary>Variante 18 de 23 · NT322 · MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 6-7</summary>
   <section id="nt322" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 322 <span class="subtipo">Fundamento</span><span class="fusionado">Hella</span></div>
     <div class="nota-body proceso">
@@ -1990,7 +1990,7 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 19 de 21 · NT325 · MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 12-15</summary>
+      <summary>Variante 19 de 23 · NT325 · MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 12-15</summary>
   <section id="nt325" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 325 <span class="subtipo">Fundamento</span><span class="fusionado">Hella</span></div>
     <div class="nota-body proceso">
@@ -2047,7 +2047,7 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 20 de 21 · NT337 · SSP 484 A7 Info y Clima (arrastrado) 5.pdf, págs. 50</summary>
+      <summary>Variante 20 de 23 · NT337 · SSP 484 A7 Info y Clima (arrastrado) 5.pdf, págs. 50</summary>
   <section id="nt337" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 337 <span class="subtipo">Fundamento</span><span class="fusionado">Audi</span></div>
     <div class="nota-body proceso">
@@ -2085,7 +2085,7 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 21 de 21 · NT438 · cd.pdf, págs. 7</summary>
+      <summary>Variante 21 de 23 · NT438 · cd.pdf, págs. 7</summary>
   <section id="nt438" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 438 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -2129,13 +2129,111 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
     </div>
   </section>
     </details>
+    <details class="variante">
+      <summary>Variante 22 de 23 · NT540 · 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 6-7</summary>
+  <section id="nt540" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 540 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Leyes físicas aplicadas a la refrigeración</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El proceso de refrigeración utilizado en los climatizadores de automóviles es la evaporación de una sustancia de fácil ebullición denominada agente frigorífico. Para enfriar un cuerpo o un recinto es necesario extraerle calor. Un líquido absorbe calor al evaporarse y cede calor al licuarse o condensarse. (págs. 6-7)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>El punto de ebullición de un líquido varía según la presión ejercida sobre él: a mayor presión, mayor es la temperatura de ebullición.</p>
+<ul>
+<li>Si se mantiene constante la presión y se reduce la temperatura, el vapor pasa a estado líquido (licuefacción o condensación en el condensador).</li>
+<li>Si se reduce la presión, el agente frigorífico pasa de estado líquido a gaseoso (evaporación en el evaporador). (págs. 6-7)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Presión atmosférica normal de referencia en tablas de ebullición: 0,1 MPa (1 bar). (pág. 6)</li>
+<li>Punto de ebullición del agente frigorífico R12 a 0,1 MPa (1 bar): -29,8 ºC. (pág. 6)</li>
+<li>Punto de ebullición del agente frigorífico R134a a 0,1 MPa (1 bar): -26,5 ºC. (pág. 6)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Explicar los principios físicos de la transmisión de calor, los cambios de estado de agregación y la relación entre la presión y el punto de ebullición aplicados al circuito de climatización. (págs. 6-7)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <ul>
+<li>Creer que los sistemas de refrigeración generan frío en lugar de extraer el calor presente en el aire. (pág. 7)</li>
+<li>Asumir que la temperatura de ebullición de una sustancia permanece constante indistintamente de la presión del circuito. (pág. 6)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT540_01</code> Diagrama con curvas de presión de vapor en función de la temperatura para el agua, el R12 y el R134a — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 6</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 6-7</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 23 de 23 · NT542 · 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 12-15</summary>
+  <section id="nt542" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 542 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Ciclo frigorífico elemental con válvula de expansión</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El sistema no genera frío, sino que extrae el calor del aire fresco entrante al habitáculo. Para ello, un agente frigorífico circula en un circuito cerrado alternando continuamente entre los estados de agregación líquido y gaseoso mediante cuatro fases operativas consecutivas. (págs. 12-14)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ol>
+<li><strong>Compresión:</strong> El compresor aspira el agente frigorífico en estado gaseoso, frío y a baja presión, lo comprime elevando su presión y temperatura, y lo impele hacia el lado de alta presión. (pág. 13)</li>
+<li><strong>Condensación:</strong> En el condensador, el gas comprimido y caliente cede su calor al aire de refrigeración exterior (viento de marcha y ventilador). Al alcanzar el punto de rocío, el gas se condensa y pasa a estado líquido a alta presión y temperatura media. (págs. 14-15)</li>
+<li><strong>Expansión:</strong> El agente frigorífico líquido y comprimido fluye hasta la válvula de expansión, donde se pulveriza hacia el evaporador sufriendo una drástica caída de presión. (pág. 14)</li>
+<li><strong>Evaporación:</strong> En el evaporador, el líquido pulverizado se distensa y evapora. El calor necesario para la evaporación se extrae del aire caliente que pasa por las aletas, enfriándolo antes de entrar al habitáculo. El agente frigorífico sale del evaporador en estado gaseoso a baja presión y temperatura baja hacia el compresor. (págs. 14-15)</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Presión tras compresión (ejemplo): aprox. 1,4 MPa (14 bares) a una temperatura de aprox. 65 ºC. (pág. 15)</li>
+<li>Condensación (ejemplo): presión de aprox. 1,4 MPa (14 bares) con un enfriamiento de aprox. 10 ºC. (pág. 15)</li>
+<li>Evaporación (ejemplo): presión de aprox. 0,12 MPa (1,2 bares) a una temperatura de aprox. -7 ºC. (pág. 15)</li>
+<li>Conversión de unidades: 1 MPa = 10 bares. (pág. 15)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Explicar la secuencia funcional del proceso de refrigeración por compresión en un circuito frigorífico provisto de válvula de expansión. (págs. 12-15)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <ul>
+<li>Creer que el aire fresco caliente se mezcla directamente con gas frío sin pasar por un proceso de intercambio térmico en las aletas del evaporador. (pág. 14)</li>
+<li>Abrir el circuito frigorífico para realizar intervenciones en el vehículo sin evacuar previamente el agente frigorífico con una estación de servicio. (pág. 15)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT542_01</code> Esquema funcional del circuito frigorífico con válvula de expansión indicando compresión, condensación, expansión y evaporación con sus zonas de presión — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 14-15</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 12-15</p>
+      </div>
+    </div>
+  </section>
+    </details>
   </div>
 
   <div class="grupo-componente" id="grp-compresor">
-    <div class="grupo-cab"><span class="grupo-nombre">Compresor de aire acondicionado</span><span class="grupo-cuenta">17 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Compresor de aire acondicionado</span><span class="grupo-cuenta">18 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 17 · NT11 · 2. Introducción a la refrigeración.pdf, págs. 20</summary>
+      <summary>Variante 1 de 18 · NT11 · 2. Introducción a la refrigeración.pdf, págs. 20</summary>
   <section id="nt11" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 11 </div>
     <div class="nota-body">
@@ -2173,7 +2271,7 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 17 · NT39 · 6. Compresores.pdf, págs. 49-50</summary>
+      <summary>Variante 2 de 18 · NT39 · 6. Compresores.pdf, págs. 49-50</summary>
   <section id="nt39" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 39 </div>
     <div class="nota-body">
@@ -2222,7 +2320,7 @@ Características:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 17 · NT40 · 6. Compresores.pdf, págs. 50-51</summary>
+      <summary>Variante 3 de 18 · NT40 · 6. Compresores.pdf, págs. 50-51</summary>
   <section id="nt40" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 40 </div>
     <div class="nota-body">
@@ -2278,7 +2376,7 @@ Características principales:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 17 · NT41 · 6. Compresores.pdf, págs. 51-52</summary>
+      <summary>Variante 4 de 18 · NT41 · 6. Compresores.pdf, págs. 51-52</summary>
   <section id="nt41" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 41 </div>
     <div class="nota-body">
@@ -2326,7 +2424,7 @@ Características principales:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 17 · NT43 · 6. Compresores.pdf, págs. 53-54</summary>
+      <summary>Variante 5 de 18 · NT43 · 6. Compresores.pdf, págs. 53-54</summary>
   <section id="nt43" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 43 </div>
     <div class="nota-body">
@@ -2368,7 +2466,7 @@ Características principales:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 17 · NT45 · 6. Compresores.pdf, págs. 55-58</summary>
+      <summary>Variante 6 de 18 · NT45 · 6. Compresores.pdf, págs. 55-58</summary>
   <section id="nt45" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 45 <span class="fusionado">Seat</span></div>
     <div class="nota-body">
@@ -2456,7 +2554,7 @@ Características principales:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 17 · NT46 · 6. Compresores.pdf, págs. 58-62</summary>
+      <summary>Variante 7 de 18 · NT46 · 6. Compresores.pdf, págs. 58-62</summary>
   <section id="nt46" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 46 <span class="fusionado">Seat</span></div>
     <div class="nota-body">
@@ -2517,7 +2615,7 @@ Si el compresor se bloquea mecánicamente, el disco de arrastre de chapa se defo
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 8 de 17 · NT216 · Climatizacion basicos.pdf, págs. 7, 20-33</summary>
+      <summary>Variante 8 de 18 · NT216 · Climatizacion basicos.pdf, págs. 7, 20-33</summary>
   <section id="nt216" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 216 </div>
     <div class="nota-body">
@@ -2576,7 +2674,7 @@ Si el compresor se bloquea mecánicamente, el disco de arrastre de chapa se defo
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 9 de 17 · NT230 · CLIMATIZACION INTRODUCCION.PDF, págs. 58-79</summary>
+      <summary>Variante 9 de 18 · NT230 · CLIMATIZACION INTRODUCCION.PDF, págs. 58-79</summary>
   <section id="nt230" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 230 </div>
     <div class="nota-body">
@@ -2641,7 +2739,7 @@ Tecnologías de construcción:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 10 de 17 · NT245 · Climatizacion-conocimientos-basios-para-el-taller_3.pdf, págs. 10-11</summary>
+      <summary>Variante 10 de 18 · NT245 · Climatizacion-conocimientos-basios-para-el-taller_3.pdf, págs. 10-11</summary>
   <section id="nt245" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 245 <span class="fusionado">Behr Hella Service</span></div>
     <div class="nota-body">
@@ -2678,7 +2776,7 @@ Tecnologías de construcción:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 11 de 17 · NT256 · CLIMATIZADOR MD FRAN.docx, págs. Secciones Compresor y Funcionamiento </summary>
+      <summary>Variante 11 de 18 · NT256 · CLIMATIZADOR MD FRAN.docx, págs. Secciones Compresor y Funcionamiento </summary>
   <section id="nt256" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 256 </div>
     <div class="nota-body">
@@ -2742,7 +2840,7 @@ Según la regulación de cilindrada:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 12 de 17 · NT268 · LA CLIMATIZACIÓN.pdf, págs. 47-54</summary>
+      <summary>Variante 12 de 18 · NT268 · LA CLIMATIZACIÓN.pdf, págs. 47-54</summary>
   <section id="nt268" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 268 </div>
     <div class="nota-body">
@@ -2796,7 +2894,7 @@ Presión de salida: aprox. 16 bares (1,6 MPa). (pág. 43).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 13 de 17 · NT269 · LA CLIMATIZACIÓN.pdf, págs. 55-59</summary>
+      <summary>Variante 13 de 18 · NT269 · LA CLIMATIZACIÓN.pdf, págs. 55-59</summary>
   <section id="nt269" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 269 </div>
     <div class="nota-body">
@@ -2853,7 +2951,7 @@ Cuando la demanda de frío sube (P_b aumenta), la válvula de regulación reduce
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 14 de 17 · NT270 · LA CLIMATIZACIÓN.pdf, págs. 60</summary>
+      <summary>Variante 14 de 18 · NT270 · LA CLIMATIZACIÓN.pdf, págs. 60</summary>
   <section id="nt270" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 270 </div>
     <div class="nota-body">
@@ -2894,7 +2992,7 @@ Cuando la demanda de frío sube (P_b aumenta), la válvula de regulación reduce
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 15 de 17 · NT271 · LA CLIMATIZACIÓN.pdf, págs. 61</summary>
+      <summary>Variante 15 de 18 · NT271 · LA CLIMATIZACIÓN.pdf, págs. 61</summary>
   <section id="nt271" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 271 </div>
     <div class="nota-body">
@@ -2942,7 +3040,7 @@ Cuando la demanda de frío sube (P_b aumenta), la válvula de regulación reduce
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 16 de 17 · NT356 · ZZAA AUTOMOCION 1 Enero 2010 HELLA.pptx, págs. 69-82</summary>
+      <summary>Variante 16 de 18 · NT356 · ZZAA AUTOMOCION 1 Enero 2010 HELLA.pptx, págs. 69-82</summary>
   <section id="nt356" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 356 <span class="fusionado">Denso</span></div>
     <div class="nota-body">
@@ -3004,7 +3102,7 @@ Cuando la demanda de frío sube (P_b aumenta), la válvula de regulación reduce
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 17 de 17 · NT484 · AA AUTOMOCION MD FR.pdf, págs. 35-67</summary>
+      <summary>Variante 17 de 18 · NT484 · AA AUTOMOCION MD FR.pdf, págs. 35-67</summary>
   <section id="nt484" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 484 <span class="fusionado">Sanden</span></div>
     <div class="nota-body">
@@ -3059,6 +3157,52 @@ Cuerpo fabricado en aluminio. Requiere lubricante sintético de tipo PAG o PAO e
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">AA AUTOMOCION MD FR.pdf, págs. 35-67</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 18 de 18 · NT543 · 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 16-20</summary>
+  <section id="nt543" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 543 </div>
+    <div class="nota-body">
+      <h1>Compresor de climatizador</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Aumentar la presión del agente frigorífico gaseoso procedente del evaporador para elevar su temperatura, permitiendo la posterior expansión y enfriamiento dentro del circuito. Actúa como punto de separación entre el lado de baja presión y el lado de alta presión. (págs. 16-17)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>El eje de impulsión transforma su movimiento rotativo en un movimiento axial de los émbolos (de 3 a 10 émbolos dispuestos céntricamente) mediante la inclinación del disco oscilante. Cada émbolo dispone de válvulas de aspiración e impelida que abren y cierran automáticamente. En las versiones autorreguladas, la variación de presión en la cámara interior ajusta el ángulo del disco oscilante venciendo la acción de los muelles para regular el volumen de alimentación. (págs. 17-19)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Margen de regulación de caudal en compresores autorregulados: entre el 5% (tope inferior) y el 100% (tope superior). (pág. 18)</li>
+<li>Ajuste del disco oscilante en reposo por muelles: aprox. 40% del caudal impelido. (pág. 19)</li>
+<li>Variación de régimen de trabajo: de 0 a 6.000 rpm en función del régimen del motor del vehículo. (pág. 17)</li>
+<li>Reparto de aceite frigorífico: aprox. 50% permanece en el cuerpo del compresor y el 50% restante circula disuelto con el agente frigorífico. (pág. 16)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <ul>
+<li><strong>Procedimientos de trabajo:</strong> Compresor de émbolo, compresor de espiral, compresor de aletas celulares y compresor de disco oscilante. (pág. 17)</li>
+<li><strong>Compresor de cilindrada constante:</strong> Disco oscilante con ángulo fijo. La adaptación de la potencia frigorífica se realiza conectando y desconectando cíclicamente el acoplamiento electromagnético. (pág. 17)</li>
+<li><strong>Compresor autorregulado (cilindrada variable):</strong> Varía el ángulo de inclinación del disco oscilante para modificar la carrera de los émbolos según las necesidades térmicas. Funciona de manera continua sin tirones de activación. (págs. 17-18)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <p>Utilizar exclusivamente aceite especial para máquinas frigoríficas para su lubricación interna, manteniendo el nivel adecuado para evitar daños en los émbolos. (pág. 16)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT543_01</code> Sección del compresor de disco oscilante autorregulado en posición de alto y bajo caudal impelido — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 18-19</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 16-20</p>
       </div>
     </div>
   </section>
@@ -17406,10 +17550,10 @@ El elemento óptico redirige un alto porcentaje de rayos cuando inciden de forma
   </div>
 
   <div class="grupo-componente" id="grp-servomotor-trampilla">
-    <div class="grupo-cab"><span class="grupo-nombre">Servomotores de las chapaletas de aire</span><span class="grupo-cuenta">18 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Servomotores de las chapaletas de aire</span><span class="grupo-cuenta">19 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 18 · NT104 · 208. Regulación de la temperatura.pdf, págs. 54-55</summary>
+      <summary>Variante 1 de 19 · NT104 · 208. Regulación de la temperatura.pdf, págs. 54-55</summary>
   <section id="nt104" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 104 </div>
     <div class="nota-body">
@@ -17467,7 +17611,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 18 · NT199 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 22</summary>
+      <summary>Variante 2 de 19 · NT199 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 22</summary>
   <section id="nt199" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 199 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -17512,7 +17656,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 18 · NT201 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 23</summary>
+      <summary>Variante 3 de 19 · NT201 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 23</summary>
   <section id="nt201" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 201 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -17553,7 +17697,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 18 · NT296 · LA CLIMATIZACIÓN.pdf, págs. 118-119</summary>
+      <summary>Variante 4 de 19 · NT296 · LA CLIMATIZACIÓN.pdf, págs. 118-119</summary>
   <section id="nt296" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 296 </div>
     <div class="nota-body">
@@ -17608,7 +17752,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 18 · NT297 · LA CLIMATIZACIÓN.pdf, págs. 120-122</summary>
+      <summary>Variante 5 de 19 · NT297 · LA CLIMATIZACIÓN.pdf, págs. 120-122</summary>
   <section id="nt297" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 297 </div>
     <div class="nota-body">
@@ -17660,7 +17804,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 18 · NT328 · SSP 484 A7 Info y Clima (arrastrado) 2 copia.pdf, págs. 52-53</summary>
+      <summary>Variante 6 de 19 · NT328 · SSP 484 A7 Info y Clima (arrastrado) 2 copia.pdf, págs. 52-53</summary>
   <section id="nt328" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 328 <span class="fusionado">Audi</span></div>
     <div class="nota-body">
@@ -17720,7 +17864,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 18 · NT347 · Toledo 99 CLIMA.pdf, págs. 50</summary>
+      <summary>Variante 7 de 19 · NT347 · Toledo 99 CLIMA.pdf, págs. 50</summary>
   <section id="nt347" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 347 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -17763,7 +17907,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 8 de 18 · NT385 · 5. EL CIRCUITO DE AIRE.pptx, págs. 13-14</summary>
+      <summary>Variante 8 de 19 · NT385 · 5. EL CIRCUITO DE AIRE.pptx, págs. 13-14</summary>
   <section id="nt385" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 385 </div>
     <div class="nota-body">
@@ -17800,7 +17944,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 9 de 18 · NT386 · 5. EL CIRCUITO DE AIRE.pptx, págs. 15</summary>
+      <summary>Variante 9 de 19 · NT386 · 5. EL CIRCUITO DE AIRE.pptx, págs. 15</summary>
   <section id="nt386" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 386 </div>
     <div class="nota-body">
@@ -17833,7 +17977,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 10 de 18 · NT387 · 5. EL CIRCUITO DE AIRE.pptx, págs. 16</summary>
+      <summary>Variante 10 de 19 · NT387 · 5. EL CIRCUITO DE AIRE.pptx, págs. 16</summary>
   <section id="nt387" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 387 </div>
     <div class="nota-body">
@@ -17867,7 +18011,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 11 de 18 · NT398 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 46, 61-62</summary>
+      <summary>Variante 11 de 19 · NT398 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 46, 61-62</summary>
   <section id="nt398" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 398 </div>
     <div class="nota-body">
@@ -17914,7 +18058,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 12 de 18 · NT399 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 47-51, 63-75</summary>
+      <summary>Variante 12 de 19 · NT399 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 47-51, 63-75</summary>
   <section id="nt399" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 399 </div>
     <div class="nota-body">
@@ -17963,7 +18107,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 13 de 18 · NT499 · AA AUTOMOCION MD FR.pdf, págs. 145-146</summary>
+      <summary>Variante 13 de 19 · NT499 · AA AUTOMOCION MD FR.pdf, págs. 145-146</summary>
   <section id="nt499" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 499 </div>
     <div class="nota-body">
@@ -18013,7 +18157,7 @@ En la velocidad máxima (H), el conmutador alimenta directamente el motor sin pa
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 14 de 18 · NT506 · Regulación del Sistema.pdf, págs. 47, 52</summary>
+      <summary>Variante 14 de 19 · NT506 · Regulación del Sistema.pdf, págs. 47, 52</summary>
   <section id="nt506" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 506 </div>
     <div class="nota-body">
@@ -18046,7 +18190,7 @@ En la velocidad máxima (H), el conmutador alimenta directamente el motor sin pa
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 15 de 18 · NT521 · SSP172 TARRACO (arrastrado).pdf, págs. 60, 62-64</summary>
+      <summary>Variante 15 de 19 · NT521 · SSP172 TARRACO (arrastrado).pdf, págs. 60, 62-64</summary>
   <section id="nt521" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 521 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -18096,7 +18240,7 @@ Cuando se selecciona salida por el tablero, abre difusores del tablero y consola
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 16 de 18 · NT522 · SSP172 TARRACO (arrastrado).pdf, págs. 60, 62-65</summary>
+      <summary>Variante 16 de 19 · NT522 · SSP172 TARRACO (arrastrado).pdf, págs. 60, 62-65</summary>
   <section id="nt522" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 522 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -18146,7 +18290,7 @@ Variando la apertura proporcional de ambas trampillas se logra la mezcla térmic
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 17 de 18 · NT530 · Ibiza99 - Actuadores.pdf, págs. 21-22</summary>
+      <summary>Variante 17 de 19 · NT530 · Ibiza99 - Actuadores.pdf, págs. 21-22</summary>
   <section id="nt530" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 530 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -18179,7 +18323,7 @@ Variando la apertura proporcional de ambas trampillas se logra la mezcla térmic
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 18 de 18 · NT532 · Ibiza99 - Actuadores.pdf, págs. 22-23</summary>
+      <summary>Variante 18 de 19 · NT532 · Ibiza99 - Actuadores.pdf, págs. 22-23</summary>
   <section id="nt532" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 532 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -18211,6 +18355,39 @@ Variando la apertura proporcional de ambas trampillas se logra la mezcla térmic
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">Ibiza99 - Actuadores.pdf, págs. 22-23</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 19 de 19 · NT544 · Motor tramapilla temperatura y turbina de aire.pdf, págs. 22</summary>
+  <section id="nt544" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 544 </div>
+    <div class="nota-body">
+      <h1>Motor de la trampilla de temperatura — <strong>V68</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Actúa sobre la trampilla de temperatura. Se encuentra ubicado en la parte inferior de la unidad climática. (pág. 22)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Es excitado con positivo y negativo desde la unidad de control de los equipos de selección eléctrica, polarizándose en bornes según el sentido de giro deseado. (pág. 22)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>En caso de avería, la trampilla se queda en la posición existente y la unidad de control aminora la velocidad de la turbina para reducir la entrada de aire. (pág. 22)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Es un motor eléctrico de corriente continua de giro limitado. Monta en su interior el potenciómetro G92. (pág. 22)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT544_01</code> Esquema del motor V68 mostrando el potenciómetro G92, la rueda de transmisión de movimiento y el tornillo sin fin — Fuente: Motor tramapilla temperatura y turbina de aire.pdf, pág. 22</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Motor tramapilla temperatura y turbina de aire.pdf, págs. 22</p>
       </div>
     </div>
   </section>
@@ -20366,10 +20543,10 @@ Mide la capacidad de una sustancia para destruir el ozono estratosférico en com
   </section>
 
   <div class="grupo-componente" id="grp-higrometria-y-confort">
-    <div class="grupo-cab"><span class="grupo-nombre">Estrés climatológico y márgenes de agrado térmico</span><span class="grupo-cuenta">6 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Estrés climatológico y márgenes de agrado térmico</span><span class="grupo-cuenta">7 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 6 · NT151 · PRO 13. Climatización Electrónica.pdf, págs. 98-99</summary>
+      <summary>Variante 1 de 7 · NT151 · PRO 13. Climatización Electrónica.pdf, págs. 98-99</summary>
   <section id="nt151" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 151 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -20427,7 +20604,7 @@ Mide la capacidad de una sustancia para destruir el ozono estratosférico en com
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 6 · NT224 · CLIMATIZACION INTRODUCCION.PDF, págs. 5-9</summary>
+      <summary>Variante 2 de 7 · NT224 · CLIMATIZACION INTRODUCCION.PDF, págs. 5-9</summary>
   <section id="nt224" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 224 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -20482,7 +20659,7 @@ Mide la capacidad de una sustancia para destruir el ozono estratosférico en com
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 6 · NT251 · CLIMATIZADOR MD FRAN.docx, págs. Sección Ambiente climatizado en el ve</summary>
+      <summary>Variante 3 de 7 · NT251 · CLIMATIZADOR MD FRAN.docx, págs. Sección Ambiente climatizado en el ve</summary>
   <section id="nt251" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 251 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -20534,7 +20711,7 @@ Mide la capacidad de una sustancia para destruir el ozono estratosférico en com
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 6 · NT263 · LA CLIMATIZACIÓN.pdf, págs. 26-28</summary>
+      <summary>Variante 4 de 7 · NT263 · LA CLIMATIZACIÓN.pdf, págs. 26-28</summary>
   <section id="nt263" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 263 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -20575,7 +20752,7 @@ Mide la capacidad de una sustancia para destruir el ozono estratosférico en com
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 6 · NT320 · MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 3-5</summary>
+      <summary>Variante 5 de 7 · NT320 · MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 3-5</summary>
   <section id="nt320" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 320 <span class="subtipo">Fundamento</span><span class="fusionado">Hella</span></div>
     <div class="nota-body proceso">
@@ -20630,7 +20807,7 @@ Mide la capacidad de una sustancia para destruir el ozono estratosférico en com
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 6 · NT400 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 56, 58-59, 82-85</summary>
+      <summary>Variante 6 de 7 · NT400 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 56, 58-59, 82-85</summary>
   <section id="nt400" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 400 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -20665,6 +20842,54 @@ Mide la capacidad de una sustancia para destruir el ozono estratosférico en com
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">6. EL CIRCUITO ELÉCTRICO.pptx, págs. 56, 58-59, 82-85</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 7 de 7 · NT539 · 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 4-5</summary>
+  <section id="nt539" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 539 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Bienestar e higrometría en el habitáculo</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El ser humano experimenta sensación de confort cuando su entorno se encuentra dentro de un margen determinado de temperatura y humedad del aire. Según estudios científicos de la Organización Mundial de la Salud (OMS), someterse a cargas térmicas o climatológicas adversas reduce intensamente la capacidad de concentración y de reacción de la persona. El climatizador acondiciona el aire a una temperatura agradable, deshidratándolo y depurándolo mediante elementos filtrantes. (págs. 4-5)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>La radiación solar directa produce un reparto térmico desigual y elevado en el habitáculo de un vehículo sin climatizador. La instalación del climatizador permite generar temperaturas intensamente reducidas en los aireadores independientemente de si el vehículo está parado o en marcha.</p>
+<p>Aparte del descenso térmico, el sistema realiza la deshidratación y depuración del aire. La incorporación de un filtro antipolen o de un filtro de carbón activo complementa la depuración, beneficiando a las personas con enfermedades alérgicas. (págs. 4-5)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Temperatura en cabeza con climatizador (radiación solar): 23 ºC. (pág. 4)</li>
+<li>Temperatura en cabeza sin climatizador (radiación solar): 42 ºC. (pág. 4)</li>
+<li>Temperatura en tórax con climatizador (radiación solar): 24 ºC. (pág. 4)</li>
+<li>Temperatura en tórax sin climatizador (radiación solar): 40 ºC. (pág. 4)</li>
+<li>Temperatura en pies con climatizador (radiación solar): 28 ºC. (pág. 4)</li>
+<li>Temperatura en pies sin climatizador (radiación solar): 35 ºC. (pág. 4)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Definir las condiciones de temperatura, humedad y pureza del aire necesarias en el habitáculo para garantizar el bienestar de los ocupantes, reducir la fatiga al volante y mantener la seguridad activa en la conducción. (págs. 4-5)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <ul>
+<li>Considerar el aire acondicionado únicamente como un equipamiento de lujo y no como un elemento de la seguridad activa del vehículo. (pág. 4)</li>
+<li>Pensar que la refrigeración del habitáculo solo se puede lograr cuando el vehículo está circulando a velocidad de marcha. (pág. 5)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT539_01</code> Comparativa de temperaturas en cabeza, tórax y pies en un vehículo con y sin climatizador bajo radiación solar — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 4</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 4-5</p>
       </div>
     </div>
   </section>
@@ -21454,10 +21679,10 @@ Bus de conexión Radiocasete - UCE J255: 1 cable. (pág. 20).</p>
   </section>
 
   <div class="grupo-componente" id="grp-ventilador-habitaculo">
-    <div class="grupo-cab"><span class="grupo-nombre">Motor de la turbina de aire y regulador de régimen</span><span class="grupo-cuenta">4 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Motor de la turbina de aire y regulador de régimen</span><span class="grupo-cuenta">5 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 4 · NT200 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 22</summary>
+      <summary>Variante 1 de 5 · NT200 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 22</summary>
   <section id="nt200" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 200 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -21498,7 +21723,7 @@ Bus de conexión Radiocasete - UCE J255: 1 cable. (pág. 20).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 4 · NT298 · LA CLIMATIZACIÓN.pdf, págs. 125-126</summary>
+      <summary>Variante 2 de 5 · NT298 · LA CLIMATIZACIÓN.pdf, págs. 125-126</summary>
   <section id="nt298" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 298 </div>
     <div class="nota-body">
@@ -21550,7 +21775,7 @@ Bus de conexión Radiocasete - UCE J255: 1 cable. (pág. 20).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 4 · NT382 · 5. EL CIRCUITO DE AIRE.pptx, págs. 6-10</summary>
+      <summary>Variante 3 de 5 · NT382 · 5. EL CIRCUITO DE AIRE.pptx, págs. 6-10</summary>
   <section id="nt382" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 382 </div>
     <div class="nota-body">
@@ -21593,7 +21818,7 @@ Bus de conexión Radiocasete - UCE J255: 1 cable. (pág. 20).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 4 · NT531 · Ibiza99 - Actuadores.pdf, págs. 22</summary>
+      <summary>Variante 4 de 5 · NT531 · Ibiza99 - Actuadores.pdf, págs. 22</summary>
   <section id="nt531" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 531 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -21621,6 +21846,39 @@ Bus de conexión Radiocasete - UCE J255: 1 cable. (pág. 20).</p>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">Ibiza99 - Actuadores.pdf, págs. 22</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 5 de 5 · NT545 · Motor tramapilla temperatura y turbina de aire.pdf, págs. 22</summary>
+  <section id="nt545" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 545 </div>
+    <div class="nota-body">
+      <h1>Motor de la turbina de aire y regulador de régimen — <strong>V2, J126</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Son los encargados de generar el caudal de aire necesario para cada situación. (pág. 22)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Disminución notable de la entrada de aire. (pág. 22)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>No existe función sustitutiva. La avería puede ser detectada rápidamente al disminuir notablemente la entrada de aire. (pág. 22)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>El diseño y funcionamiento de estos elementos es el mismo que los montados en el Climatronic. (pág. 22)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT545_01</code> Esquema conjunto del motor de la turbina V2 y el regulador de régimen J126 — Fuente: Motor tramapilla temperatura y turbina de aire.pdf, pág. 22</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Motor tramapilla temperatura y turbina de aire.pdf, págs. 22</p>
       </div>
     </div>
   </section>
@@ -26140,6 +26398,51 @@ La presencia de cloro o bromo eleva el PAO. Los HFC y HFO carecen de cloro y bro
     </div>
   </section>
 
+  <div class="grupo-componente" id="grp-refrigerante-r134a">
+    <div class="grupo-cab"><span class="grupo-nombre">Agente frigorífico R134a</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 2 · NT541 · 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 8-11</summary>
+  <section id="nt541" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 541 <span class="subtipo">Fluido</span></div>
+    <div class="nota-body">
+      <h1>Agente frigorífico R134a</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Designación y norma</div>
+        <p>Agente frigorífico R134a (tetrafluoretano). Sustancia de bajo punto de ebullición utilizada en los climatizadores de vehículos. (pág. 8)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Propiedades</div>
+        <ul>
+<li>En estado gaseoso es invisible. En estados de vapor y líquido es incoloro como el agua. (pág. 8)</li>
+<li>Cambia continuamente entre estado líquido y gaseoso en función de la presión y la temperatura aplicadas dentro del circuito cerrado. (pág. 11)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Dónde se usa y cantidades</div>
+        <p>Se utiliza como fluido de trabajo intermediario para absorber calor en el evaporador y cederlo en el condensador. La cantidad absoluta de llenado depende de las necesidades de rendimiento frigorífico de cada modelo de vehículo. (págs. 8, 11)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Compatibilidades y mezclas prohibidas</div>
+        <p>No se deben mezclar agentes frigoríficos de distinto tipo. Los sistemas transformados con mezclas no autorizadas pierden su rendimiento frigorífico original. (págs. 8, 11)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <p>Incoloro en estado líquido o de vapor e invisible en estado gaseoso. (pág. 8)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT541_01</code> Gráfico de la curva de presión de vapor y extracto del diagrama de estados de agregación del R134a — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 11</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 8-11</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 2 · NT1001 · Fusión de 9 fuentes: ETAI, Audi, Serca, Hella (2), Formauto, La Climat</summary>
   <section id="nt1001" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 1001 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -26410,9 +26713,11 @@ La presencia de cloro o bromo eleva el PAO. Los HFC y HFO carecen de cloro y bro
       </div>
     </div>
   </section>
+    </details>
+  </div>
 
   <div class="pie">
-    530 notas técnicas · generado el 24/09/2026.
+    537 notas técnicas · generado el 24/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
