@@ -7308,15 +7308,15 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
       <h1>Regulación automática de la climatización e interacción de entornos</h1>
       <div class="apartado">
         <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
-        <p>El sistema de climatización automática recopila datos y parámetros procedentes de diversos entornos del vehículo (habitáculo, salpicadero, conjunto A/C, motor térmico, circuito de calor y circuito de frío) para regular el funcionamiento global de la instalación mediante una tarjeta electrónica o centralita. (págs. 1-6)</p>
+        <p>El sistema de climatización automática recopila datos y parámetros procedentes de diversos entornos del vehículo (habitáculo, salpicadero, conjunto A/C, motor térmico, circuito de calor y circuito de frío) para regular el funcionamiento global de la instalación mediante una tarjeta electrónica o centralita. (págs. 1, 8)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
         <p>El funcionamiento global del sistema se estructura mediante las interacciones de sus entornos funcionales:</p>
 <ul>
-<li><strong>Habitáculo y salpicadero:</strong> El aire impulsado por los difusores se mezcla con el aire ambiente para alcanzar la temperatura de consigna. La calidad del aislamiento térmico, la temperatura inicial de las paredes y la conductividad térmica del salpicadero influyen directamente en el tiempo necesario para lograr la convergencia térmica. (págs. 1-2, 5)</li>
-<li><strong>Conjunto A/C (distribución de trampillas):</strong> Enlaza la parte del compartimento motor con el habitáculo. Alberga el radiador de calefacción, el evaporador, el impulsor de aire y las trampillas con sus correspondientes actuadores. (págs. 3, 7)</li>
-<li><strong>Motor térmico y circuitos térmicos:</strong> El motor arrastra mediante correa el compresor y la bomba de líquido refrigerante. El circuito de calor aporta la energía térmica mediante el radiador de calefacción. (págs. 4-5)</li>
+<li><strong>Habitáculo y salpicadero:</strong> El aire impulsado por los difusores se mezcla con el aire ambiente para alcanzar la temperatura de consigna. La calidad del aislamiento térmico, la temperatura inicial de las paredes y la conductividad térmica del salpicadero influyen directamente en el tiempo necesario para lograr la convergencia térmica. (págs. 1-2)</li>
+<li><strong>Conjunto A/C (distribución de trampillas):</strong> Enlaza la parte del compartimento motor con el habitáculo. Alberga el radiador de calefacción, el evaporador, el impulsor de aire y las trampillas con sus correspondientes actuadores. (pág. 3)</li>
+<li><strong>Motor térmico y circuitos térmicos:</strong> El motor arrastra mediante correa el compresor y la bomba de líquido refrigerante. El circuito de calor aporta la energía térmica mediante el radiador de calefacción. (págs. 4, 6)</li>
 <li><strong>Interacción de señales con la centralita:</strong><ul>
 <li><strong>Sonda de habitáculo:</strong> Informa de la temperatura interior instantánea para verificar si se ha alcanzado la consigna. (pág. 6)</li>
 <li><strong>Sondas de aire soplado y exterior:</strong> Informan si la posición de la trampilla de mezcla es la adecuada para alcanzar la temperatura elegida, así como el caudal de aire y la distribución necesarios. (pág. 7)</li>
@@ -7330,12 +7330,12 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Objeto</div>
-        <p>Acondicionar el habitáculo del vehículo para alcanzar y mantener en su interior el confort térmico correspondiente a la temperatura de consigna seleccionada. (págs. 1-2)</p>
+        <p>Acondicionar el habitáculo del vehículo para alcanzar y mantener en su interior el confort térmico correspondiente a la temperatura de consigna seleccionada. (pág. 1)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Errores de concepto frecuentes</div>
         <ul>
-<li>Creer que la temperatura interior depende únicamente de la temperatura del aire soplado, omitiendo la influencia térmica inicial del salpicadero y de las paredes del habitáculo. (págs. 1-2, 5)</li>
+<li>Creer que la temperatura interior depende únicamente de la temperatura del aire soplado, omitiendo la influencia térmica inicial del salpicadero y de las paredes del habitáculo. (págs. 1-2)</li>
 <li>Suponer que la centralita de climatización funciona de manera aislada sin comunicarse con los módulos electrónicos de inyección y refrigeración del motor. (págs. 4, 7)</li>
 </ul>
       </div>
@@ -18261,7 +18261,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
       <h1>Tarjeta electrónica de climatización</h1>
       <div class="apartado">
         <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Gobernar y coordinar automáticamente el funcionamiento del sistema de climatización procesando la información de las sondas y captadores para enviar órdenes de control a los actuadores, impulsor, compresor y electroventiladores. (págs. 6-8)</p>
+        <p>Gobernar y coordinar automáticamente el funcionamiento del sistema de climatización procesando la información de las sondas y captadores para enviar órdenes de control a los actuadores, impulsor, compresor y electroventiladores. (pág. 8)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
@@ -18269,7 +18269,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Tipos y características</div>
-        <p>Calculador o centralita electrónica ubicada habitualmente detrás de los mandos y de la pantalla del climatizador en el salpicadero. Dispone de canales de entrada, salidas de potencia e interfaces de comunicación bidireccionales. (págs. 6, 8)</p>
+        <p>Calculador o centralita electrónica ubicada habitualmente detrás de los mandos y de la pantalla del climatizador en el salpicadero. Dispone de canales de entrada, salidas de potencia e interfaces de comunicación bidireccionales. (pág. 8)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Imágenes requeridas</div>
