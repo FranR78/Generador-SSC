@@ -2330,6 +2330,78 @@
    "hecha": false
   },
   {
+   "nombre": "NT546_01",
+   "nt": 546,
+   "titulo": "Sistemas de climatización en el VW Touareg",
+   "seccion": "8. Regulación y control",
+   "descripcion": "Paneles de mando e indicación delantero y posterior del 4C-Climatronic, 2C-Climatronic y aire acondicionado manual — Fuente: 301_e Climatización en el Touareg.pdf, págs. 4-5",
+   "hecha": false
+  },
+  {
+   "nombre": "NT547_01",
+   "nt": 547,
+   "titulo": "Elemento de fijación del climatizador",
+   "seccion": "Por ubicar",
+   "descripcion": "Detalle del elemento de fijación del climatizador con espiga, elemento de goma y rosca — Fuente: 301_e Climatización en el Touareg.pdf, pág. 6",
+   "hecha": false
+  },
+  {
+   "nombre": "NT548_01",
+   "nt": 548,
+   "titulo": "Filtro para polvo y polen con carbón activo",
+   "seccion": "Por ubicar",
+   "descripcion": "Ubicación e inserción del filtro antipolvo y antipolen en la parte inferior del climatizador — Fuente: 301_e Climatización en el Touareg.pdf, pág. 7",
+   "hecha": false
+  },
+  {
+   "nombre": "NT549_01",
+   "nt": 549,
+   "titulo": "Intercambiador de calor de la calefacción",
+   "seccion": "Por ubicar",
+   "descripcion": "Intercambiador de calor montado en el cuerpo del climatizador con zona abatible de la carcasa — Fuente: 301_e Climatización en el Touareg.pdf, pág. 7",
+   "hecha": false
+  },
+  {
+   "nombre": "NT550_01",
+   "nt": 550,
+   "titulo": "Función de calor residual",
+   "seccion": "Por ubicar",
+   "descripcion": "Esquema del circuito de líquido refrigerante para la función de calor residual con bomba eléctrica V55 y calefacción adicional en motor V10-TDI — Fuente: 301_e Climatización en el Touareg.pdf, pág. 8",
+   "hecha": false
+  },
+  {
+   "nombre": "NT551_01",
+   "nt": 551,
+   "titulo": "Bomba eléctrica para recirculación de líquido refrigerante",
+   "seccion": "Por ubicar",
+   "descripcion": "Tabla de asignación de bombas eléctricas V36, V51 y V55 según motorización (V6, V8, W12, V10-TDI, R5-TDI) y equipamiento — Fuente: 301_e Climatización en el Touareg.pdf, pág. 10",
+   "hecha": false
+  },
+  {
+   "nombre": "NT552_01",
+   "nt": 552,
+   "titulo": "Motor para la turbina del transmisor de temperatura interior",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Componentes del motor V42 mostrando la placa electrónica, el estator y la turbina con eje imantado (rotor) — Fuente: MOTOR TURBINA S. Cº interior.pdf, pág. 24",
+   "hecha": false
+  },
+  {
+   "nombre": "NT553_01",
+   "nt": 553,
+   "titulo": "Señal de salida para conexión del aire acondicionado",
+   "seccion": "8. Regulación y control",
+   "descripcion": "Esquema del envío de la señal de positivo desde la unidad del autoclima hacia la unidad del aire acondicionado y la unidad del motor — Fuente: MOTOR TURBINA S. Cº interior.pdf, pág. 24",
+   "hecha": false
+  },
+  {
+   "nombre": "NT554_01",
+   "nt": 554,
+   "titulo": "Motor de la trampilla de recirculación",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Esquema de excitación del motor V113 mostrando contactos, cursor, guía, palanca de giro y eje de la trampilla — Fuente: Motor trampilla recirculación.pdf, pág. 22",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -2354,7 +2426,7 @@
    "hecha": false
   }
  ],
- "total": 537,
+ "total": 546,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -16787,6 +16859,73 @@
    ]
   },
   {
+   "id": "ssc.sensor-temperatura-interior.motor-turbina-s-co-interior",
+   "nt": 552,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-temperatura-ntc-interior",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Motor para la turbina del transmisor de temperatura interior",
+   "codigo": "V42",
+   "menu": "Motor para la turbina del tran V42",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "MOTOR TURBINA S. Cº interior.pdf, págs. 24",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "transmisor-temperatura-interior-g56",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "turbina",
+    "transmisor G56",
+    "placa electrónica",
+    "señal de 15"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Forma un único conjunto con el transmisor de temperatura interior G56 y su misión es generar un flujo de aire continuo que atraviese el transmisor para poder registrar el valor de temperatura del habitáculo. (pág. 24)",
+     "html": "<p>Forma un único conjunto con el transmisor de temperatura interior G56 y su misión es generar un flujo de aire continuo que atraviese el transmisor para poder registrar el valor de temperatura del habitáculo. <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "El motor monta en su interior una placa electrónica que gobierna su funcionamiento y detecta sus posibles averías. Su rotor está constituido por una turbina con eje imantado. (pág. 24)",
+     "html": "<p>El motor monta en su interior una placa electrónica que gobierna su funcionamiento y detecta sus posibles averías. Su rotor está constituido por una turbina con eje imantado. <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Es excitado con positivo y negativo por la unidad de control del autoclima mientras esta reciba la señal de \"15\". (pág. 24)",
+     "html": "<p>Es excitado con positivo y negativo por la unidad de control del autoclima mientras esta reciba la señal de \"15\". <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Señal de excitación: Positivo y negativo condicionados a la presencia de señal de borne \"15\". (pág. 24)",
+     "html": "<p>Señal de excitación: Positivo y negativo condicionados a la presencia de señal de borne \"15\". <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Cuando se detecta una avería del motor, la unidad del autoclima aplica factores de corrección a la temperatura registrada por el transmisor G56 para simular un valor más o menos próximo al real. (pág. 24)",
+     "html": "<p>Cuando se detecta una avería del motor, la unidad del autoclima aplica factores de corrección a la temperatura registrada por el transmisor G56 para simular un valor más o menos próximo al real. <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Componentes del motor V42 mostrando la placa electrónica, el estator y la turbina con eje imantado (rotor) — Fuente: MOTOR TURBINA S. Cº interior.pdf, pág. 24",
+     "html": "<ul>\n<li>Componentes del motor V42 mostrando la placa electrónica, el estator y la turbina con eje imantado (rotor) — Fuente: MOTOR TURBINA S. Cº interior.pdf, pág. 24</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.sensor-evaporador.11-dispositivos-de-regulacion-y-segurida",
    "nt": 65,
    "modulo": "ssc",
@@ -20043,6 +20182,72 @@
    ]
   },
   {
+   "id": "ssc.servomotor-trampilla.recirculacion.motor-trampilla-recirculacion",
+   "nt": 554,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "servomotor-trampilla",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Motor de la trampilla de recirculación",
+   "codigo": "V113",
+   "menu": "Motor de la trampilla de recir V113",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Motor trampilla recirculación.pdf, págs. 22-23",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "recirculacion",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "trampilla de recirculación",
+    "giro libre",
+    "pistas internas",
+    "parpadeo display"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Se encuentra en la parte superior de la unidad climática, unido a la trampilla de recirculación, y se encarga de accionarla. (pág. 22-23)",
+     "html": "<p>Se encuentra en la parte superior de la unidad climática, unido a la trampilla de recirculación, y se encarga de accionarla. <span class=\"pag\">pág. 22-23</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Es un motor de corriente continua de giro libre con un único sentido de giro. Internamente equipa tres pistas conductoras que permiten determinar el tiempo de movimiento del motor y situar la trampilla en la posición deseada. (pág. 22)",
+     "html": "<p>Es un motor de corriente continua de giro libre con un único sentido de giro. Internamente equipa tres pistas conductoras que permiten determinar el tiempo de movimiento del motor y situar la trampilla en la posición deseada. <span class=\"pag\">pág. 22</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Es excitado con una tensión de 12 V desde la unidad de control del autoclima o de la calefacción motorizada. Cuenta con tres contactos: uno alimentado de forma constante con negativo y los otros dos alimentados de forma alternativa en función del movimiento a realizar. Al excitar dos contactos, el motor se pone en marcha alimentándose con positivo desde una de las pistas internas hasta llegar al final de la misma. En ese instante, el cursor queda situado sobre la pista no excitada a la espera de una nueva señal de la unidad de control. (pág. 23)",
+     "html": "<p>Es excitado con una tensión de 12 V desde la unidad de control del autoclima o de la calefacción motorizada. Cuenta con tres contactos: uno alimentado de forma constante con negativo y los otros dos alimentados de forma alternativa en función del movimiento a realizar. Al excitar dos contactos, el motor se pone en marcha alimentándose con positivo desde una de las pistas internas hasta llegar al final de la misma. En ese instante, el cursor queda situado sobre la pista no excitada a la espera de una nueva señal de la unidad de control. <span class=\"pag\">pág. 23</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tensión de excitación: 12 V. (pág. 23)",
+     "html": "<p>Tensión de excitación: 12 V. <span class=\"pag\">pág. 23</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "No tiene función sustitutiva. En caso de fallo, cada vez que se conecta el autoclima parpadean todos los dígitos del display. (pág. 23)",
+     "html": "<p>No tiene función sustitutiva. En caso de fallo, cada vez que se conecta el autoclima parpadean todos los dígitos del display. <span class=\"pag\">pág. 23</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema de excitación del motor V113 mostrando contactos, cursor, guía, palanca de giro y eje de la trampilla — Fuente: Motor trampilla recirculación.pdf, pág. 22",
+     "html": "<ul>\n<li>Esquema de excitación del motor V113 mostrando contactos, cursor, guía, palanca de giro y eje de la trampilla — Fuente: Motor trampilla recirculación.pdf, pág. 22</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.ventilador-habitaculo.cd-072-climatizacion-en-el-ibiza-cordoba",
    "nt": 200,
    "modulo": "ssc",
@@ -23046,6 +23251,136 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema del envío de la señal de positivo desde la unidad del autoclima hacia la unidad del aire acondicionado y la unidad del motor — Fuente: MOTOR PARA LA TURBINA DEL S. Cº interior.pdf, pág. 24",
      "html": "<ul>\n<li>Esquema del envío de la señal de positivo desde la unidad del autoclima hacia la unidad del aire acondicionado y la unidad del motor — Fuente: MOTOR PARA LA TURBINA DEL S. Cº interior.pdf, pág. 24</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.regulacion-automatica.301-e-climatizacion-en-el-touareg",
+   "nt": 546,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-automatica",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Sistemas de climatización en el VW Touareg",
+   "codigo": "",
+   "menu": "Sistemas de climatización en el VW Tou",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "301_e         Climatización en el Touareg.pdf, págs. 4-5",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "4C-Climatronic",
+    "2C-Climatronic",
+    "manual",
+    "climatizador delantero"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Describir la gama de sistemas de climatización disponibles en el Volkswagen Touareg y la estructura básica compartida entre sus distintas variantes. (págs. 4-5)",
+     "html": "<p>Describir la gama de sistemas de climatización disponibles en el Volkswagen Touareg y la estructura básica compartida entre sus distintas variantes. <span class=\"pag\">págs. 4-5</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Para adaptarse a los diferentes requerimientos de confort de un vehículo todo terreno, el Touareg dispone de tres variantes de equipamiento de climatización. Aunque difieren en sus unidades de mando e indicación y en sus posibilidades funcionales, las tres variantes comparten la misma estructura básica en el climatizador delantero. (págs. 4-5)",
+     "html": "<p>Para adaptarse a los diferentes requerimientos de confort de un vehículo todo terreno, el Touareg dispone de tres variantes de equipamiento de climatización. Aunque difieren en sus unidades de mando e indicación y en sus posibilidades funcionales, las tres variantes comparten la misma estructura básica en el climatizador delantero. <span class=\"pag\">págs. 4-5</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Las tres variantes de climatización ofrecidas son: 4C-Climatronic: Sistema de alta gama con regulación automática de 4 zonas climatizables independientes. 2C-Climatronic: Sistema de nivel medio con regulación automática de 2 zonas climatizables (izquierda y derecha). Calefacción y aire acondicionado manual: Sistema básico con regulación manual para una única zona climatizable común. Los sistemas se identifican visualmente por el diseño de sus paneles de mando e indicación en el tablero de instrumentos. La disposición de componentes internos (evaporador, intercambiador de calor) y los puntos de fijación del climatizador delantero son idénticos en todas las variantes. (págs. 4-5)",
+     "html": "<p>Las tres variantes de climatización ofrecidas son:</p>\n<ol>\n<li><strong>4C-Climatronic:</strong> Sistema de alta gama con regulación automática de 4 zonas climatizables independientes.</li>\n<li><strong>2C-Climatronic:</strong> Sistema de nivel medio con regulación automática de 2 zonas climatizables (izquierda y derecha).</li>\n<li><strong>Calefacción y aire acondicionado manual:</strong> Sistema básico con regulación manual para una única zona climatizable común.</li>\n</ol>\n<p>Los sistemas se identifican visualmente por el diseño de sus paneles de mando e indicación en el tablero de instrumentos. La disposición de componentes internos (evaporador, intercambiador de calor) y los puntos de fijación del climatizador delantero son idénticos en todas las variantes. <span class=\"pag\">págs. 4-5</span></p>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Número de zonas climatizables en 4C-Climatronic: 4 zonas independientes. (pág. 4) Número de zonas climatizables en 2C-Climatronic: 2 zonas independientes. (pág. 4) Número de zonas climatizables en sistema manual: 1 zona común. (pág. 4)",
+     "html": "<ul>\n<li>Número de zonas climatizables en 4C-Climatronic: 4 zonas independientes. <span class=\"pag\">pág. 4</span></li>\n<li>Número de zonas climatizables en 2C-Climatronic: 2 zonas independientes. <span class=\"pag\">pág. 4</span></li>\n<li>Número de zonas climatizables en sistema manual: 1 zona común. <span class=\"pag\">pág. 4</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Suponer que cada sistema de climatización del Touareg utiliza un cuerpo de climatizador delantero con puntos de fijación y componentes principales totalmente distintos. (págs. 4-5)",
+     "html": "<ul>\n<li>Suponer que cada sistema de climatización del Touareg utiliza un cuerpo de climatizador delantero con puntos de fijación y componentes principales totalmente distintos. <span class=\"pag\">págs. 4-5</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Paneles de mando e indicación delantero y posterior del 4C-Climatronic, 2C-Climatronic y aire acondicionado manual — Fuente: 301_e Climatización en el Touareg.pdf, págs. 4-5",
+     "html": "<ul>\n<li>Paneles de mando e indicación delantero y posterior del 4C-Climatronic, 2C-Climatronic y aire acondicionado manual — Fuente: 301_e         Climatización en el Touareg.pdf, págs. 4-5</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.regulacion-automatica.motor-turbina-s-co-interior",
+   "nt": 553,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-automatica",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Señal de salida para conexión del aire acondicionado",
+   "codigo": "",
+   "menu": "Señal de salida para conexión del aire",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "MOTOR TURBINA S. Cº interior.pdf, págs. 24",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "compresor",
+    "embrague-compresor",
+    "unidad-control-motor"
+   ],
+   "palabras": [
+    "activación aire acondicionado",
+    "señal de positivo",
+    "régimen de ralentí",
+    "acoplamiento magnético"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Habilitar la activación del compresor de aire acondicionado y coordinar el incremento de carga con la unidad de control del motor térmico. (pág. 24)",
+     "html": "<p>Habilitar la activación del compresor de aire acondicionado y coordinar el incremento de carga con la unidad de control del motor térmico. <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "La solicitud de conexión del aire acondicionado requiere el acoplamiento del compresor y el aumento simultáneo del régimen de ralentí para compensar el esfuerzo mecánico aplicado al motor. (pág. 24)",
+     "html": "<p>La solicitud de conexión del aire acondicionado requiere el acoplamiento del compresor y el aumento simultáneo del régimen de ralentí para compensar el esfuerzo mecánico aplicado al motor. <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Para activar el aire acondicionado, la unidad del autoclima envía una señal de positivo hacia la unidad del aire acondicionado y a la unidad de control del motor. Con esta señal, la unidad del aire acondicionado conecta el compresor activando el acoplamiento magnético y la del motor eleva el régimen de ralentí. No existe función sustitutiva. (pág. 24)",
+     "html": "<p>Para activar el aire acondicionado, la unidad del autoclima envía una señal de positivo hacia la unidad del aire acondicionado y a la unidad de control del motor. Con esta señal, la unidad del aire acondicionado conecta el compresor activando el acoplamiento magnético y la del motor eleva el régimen de ralentí. No existe función sustitutiva. <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Tensión de señal: Positivo (12 V). (pág. 24)",
+     "html": "<p>Tensión de señal: Positivo (12 V). <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del envío de la señal de positivo desde la unidad del autoclima hacia la unidad del aire acondicionado y la unidad del motor — Fuente: MOTOR TURBINA S. Cº interior.pdf, pág. 24",
+     "html": "<ul>\n<li>Esquema del envío de la señal de positivo desde la unidad del autoclima hacia la unidad del aire acondicionado y la unidad del motor — Fuente: MOTOR TURBINA S. Cº interior.pdf, pág. 24</li>\n</ul>"
     }
    ]
   },
@@ -40018,6 +40353,319 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema eléctrico de conexiones de los asientos calefactados Z45, Z46, ZX10, ZX12 con J255, E265 y J519 vía CAN-Bus — Fuente: SSP172 TARRACO (arrastrado).pdf, pág. 65",
      "html": "<ul>\n<li>Esquema eléctrico de conexiones de los asientos calefactados Z45, Z46, ZX10, ZX12 con J255, E265 y J519 vía CAN-Bus — Fuente: SSP172 TARRACO (arrastrado).pdf, pág. 65</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.soporte-climatizador.301-e-climatizacion-en-el-touareg",
+   "nt": 547,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "soporte-climatizador",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Elemento de fijación del climatizador",
+   "codigo": "",
+   "menu": "Elemento de fijación del climatizador",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "301_e         Climatización en el Touareg.pdf, págs. 6-7",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "unidad-climatizadora",
+   "relacionados": [],
+   "palabras": [
+    "placa de montaje",
+    "elemento de goma",
+    "intersticio",
+    "rosca",
+    "espiga"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Fijar la carcasa del climatizador a la placa de montaje del vehículo, compensando las tensiones mecánicas y ajustando el juego de separación (intersticio) con los revestimientos interiores. (págs. 6-7)",
+     "html": "<p>Fijar la carcasa del climatizador a la placa de montaje del vehículo, compensando las tensiones mecánicas y ajustando el juego de separación (intersticio) con los revestimientos interiores. <span class=\"pag\">págs. 6-7</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Consta de un elemento de fijación compuesto por un extremo con rosca de atornillado, un extremo con espiga en forma de estrella para el acoplamiento del climatizador y un cuerpo central de goma flexible que une ambas partes. (págs. 6-7)",
+     "html": "<p>Consta de un elemento de fijación compuesto por un extremo con rosca de atornillado, un extremo con espiga en forma de estrella para el acoplamiento del climatizador y un cuerpo central de goma flexible que une ambas partes. <span class=\"pag\">págs. 6-7</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El lado de la rosca se atornilla a la placa de montaje y el climatizador se acopla a presión en la espiga. El elemento de goma absorbe y compensa las tensiones mecánicas originadas al ajustar el juego intersticial entre el tablero de instrumentos y los revestimientos de las puertas, evitando esfuerzos sobre los canales de distribución de aire. (págs. 6-7)",
+     "html": "<p>El lado de la rosca se atornilla a la placa de montaje y el climatizador se acopla a presión en la espiga. El elemento de goma absorbe y compensa las tensiones mecánicas originadas al ajustar el juego intersticial entre el tablero de instrumentos y los revestimientos de las puertas, evitando esfuerzos sobre los canales de distribución de aire. <span class=\"pag\">págs. 6-7</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Puntos de fijación delanteros: 2 elementos de fijación acoplados a la placa de montaje. (pág. 6)",
+     "html": "<ul>\n<li>Puntos de fijación delanteros: 2 elementos de fijación acoplados a la placa de montaje. <span class=\"pag\">pág. 6</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Detalle del elemento de fijación del climatizador con espiga, elemento de goma y rosca — Fuente: 301_e Climatización en el Touareg.pdf, pág. 6",
+     "html": "<ul>\n<li>Detalle del elemento de fijación del climatizador con espiga, elemento de goma y rosca — Fuente: 301_e         Climatización en el Touareg.pdf, pág. 6</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.filtro-habitaculo.301-e-climatizacion-en-el-touareg",
+   "nt": 548,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "filtro-habitaculo",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Filtro para polvo y polen con carbón activo",
+   "codigo": "",
+   "menu": "Filtro para polvo y polen con carbón a",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "301_e         Climatización en el Touareg.pdf, págs. 6-7",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "unidad-climatizadora",
+   "relacionados": [],
+   "palabras": [
+    "carbón activo",
+    "evaporador",
+    "aire interior",
+    "recirculación",
+    "mantenimiento inferior"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Depurar el aire fresco exterior y el aire interior recirculado del habitáculo reteniendo partículas de polvo, polen y contaminantes gaseosos antes de su paso por el evaporador. (págs. 6-7)",
+     "html": "<p>Depurar el aire fresco exterior y el aire interior recirculado del habitáculo reteniendo partículas de polvo, polen y contaminantes gaseosos antes de su paso por el evaporador. <span class=\"pag\">págs. 6-7</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Filtro de aire combinado con elemento de carbón activo integrado directamente en la carcasa del climatizador delantero. (págs. 6-7)",
+     "html": "<p>Filtro de aire combinado con elemento de carbón activo integrado directamente en la carcasa del climatizador delantero. <span class=\"pag\">págs. 6-7</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Está situado directamente delante del evaporador. Debido a esta ubicación, tanto en modo de entrada de aire fresco como con la función de recirculación de aire activada, todo el caudal impulsado por el soplador pasa forzosamente a través del filtro antes de llegar al evaporador. (págs. 6-7)",
+     "html": "<p>Está situado directamente delante del evaporador. Debido a esta ubicación, tanto en modo de entrada de aire fresco como con la función de recirculación de aire activada, todo el caudal impulsado por el soplador pasa forzosamente a través del filtro antes de llegar al evaporador. <span class=\"pag\">págs. 6-7</span></p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Se introduce por la parte inferior del climatizador. Se puede sustituir durante las operaciones de inspección sin necesidad de desmontar la unidad del climatizador del vehículo. (págs. 6-7)",
+     "html": "<p>Se introduce por la parte inferior del climatizador. Se puede sustituir durante las operaciones de inspección sin necesidad de desmontar la unidad del climatizador del vehículo. <span class=\"pag\">págs. 6-7</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Ubicación e inserción del filtro antipolvo y antipolen en la parte inferior del climatizador — Fuente: 301_e Climatización en el Touareg.pdf, pág. 7",
+     "html": "<ul>\n<li>Ubicación e inserción del filtro antipolvo y antipolen en la parte inferior del climatizador — Fuente: 301_e         Climatización en el Touareg.pdf, pág. 7</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.intercambiador-calor.301-e-climatizacion-en-el-touareg",
+   "nt": 549,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "intercambiador-calor",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Intercambiador de calor de la calefacción",
+   "codigo": "",
+   "menu": "Intercambiador de calor de la calefacc",
+   "grupo": "Calefacción",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "301_e         Climatización en el Touareg.pdf, págs. 7",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "calefaccion",
+   "formaParteDe": "unidad-climatizadora",
+   "relacionados": [
+    "liquido-refrigerante-motor"
+   ],
+   "palabras": [
+    "regulación por aire",
+    "líquido refrigerante",
+    "carcasa abatible",
+    "mantenimiento"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Transferir el calor del líquido refrigerante del motor al flujo de aire que se dirige al habitáculo para elevar su temperatura. (pág. 7)",
+     "html": "<p>Transferir el calor del líquido refrigerante del motor al flujo de aire que se dirige al habitáculo para elevar su temperatura. <span class=\"pag\">pág. 7</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Intercambiador de calor agua-aire integrado en la carcasa del climatizador. La regulación de la temperatura se realiza exclusivamente por el lado del aire (sin válvula de paso de agua). (pág. 7)",
+     "html": "<p>Intercambiador de calor agua-aire integrado en la carcasa del climatizador. La regulación de la temperatura se realiza exclusivamente por el lado del aire (sin válvula de paso de agua). <span class=\"pag\">pág. 7</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El líquido refrigerante del circuito de refrigeración del motor circula permanentemente por el interior del intercambiador de calor. La temperatura del aire proporcionado al habitáculo se regula modificando la proporción de caudal de aire que atraviesa el intercambiador mediante las chapaletas de mezcla de temperatura. (pág. 7)",
+     "html": "<p>El líquido refrigerante del circuito de refrigeración del motor circula permanentemente por el interior del intercambiador de calor. La temperatura del aire proporcionado al habitáculo se regula modificando la proporción de caudal de aire que atraviesa el intercambiador mediante las chapaletas de mezcla de temperatura. <span class=\"pag\">pág. 7</span></p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Se puede sustituir estando montado el climatizador en el vehículo, abatiendo una sección de la carcasa para tener acceso directo al radiador. (pág. 7)",
+     "html": "<p>Se puede sustituir estando montado el climatizador en el vehículo, abatiendo una sección de la carcasa para tener acceso directo al radiador. <span class=\"pag\">pág. 7</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Intercambiador de calor montado en el cuerpo del climatizador con zona abatible de la carcasa — Fuente: 301_e Climatización en el Touareg.pdf, pág. 7",
+     "html": "<ul>\n<li>Intercambiador de calor montado en el cuerpo del climatizador con zona abatible de la carcasa — Fuente: 301_e         Climatización en el Touareg.pdf, pág. 7</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.calor-residual.301-e-climatizacion-en-el-touareg",
+   "nt": 550,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "calor-residual",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Función de calor residual",
+   "codigo": "",
+   "menu": "Función de calor residual",
+   "grupo": "Calefacción",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "301_e         Climatización en el Touareg.pdf, págs. 8-9",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "calefaccion",
+   "formaParteDe": "",
+   "relacionados": [
+    "bomba-recirculacion-liquido-refrigerante",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "REST",
+    "motor parado",
+    "batería",
+    "recirculación de agua",
+    "soplador reducido"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Permitir el caldeamiento y mantenimiento de la temperatura del habitáculo aprovechando el calor acumulado en el motor una vez parado este. (págs. 8-9)",
+     "html": "<p>Permitir el caldeamiento y mantenimiento de la temperatura del habitáculo aprovechando el calor acumulado en el motor una vez parado este. <span class=\"pag\">págs. 8-9</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Al detener el motor térmico, la bomba de agua mecánica deja de girar. La función de calor residual activa una bomba eléctrica para mantener la circulación de líquido refrigerante caliente a través del intercambiador de calor, mientras el soplador impulsa aire al habitáculo a régimen bajo para preservar la batería. (págs. 8-9)",
+     "html": "<p>Al detener el motor térmico, la bomba de agua mecánica deja de girar. La función de calor residual activa una bomba eléctrica para mantener la circulación de líquido refrigerante caliente a través del intercambiador de calor, mientras el soplador impulsa aire al habitáculo a régimen bajo para preservar la batería. <span class=\"pag\">págs. 8-9</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El sistema impulsa el líquido refrigerante sin necesidad de calefacción adicional mientras exista calor acumulado en el motor. Si el vehículo equipa calefacción adicional por agua, es posible calentar el líquido refrigerante incluso después de que el motor térmico se haya enfriado. Para evitar la descarga de la batería con el motor parado, la unidad de control hace funcionar el soplador a potencia reducida. Esta reducción de potencia del soplador no se indica en el visualizador del panel de mandos. (págs. 8-9)",
+     "html": "<p>El sistema impulsa el líquido refrigerante sin necesidad de calefacción adicional mientras exista calor acumulado en el motor. Si el vehículo equipa calefacción adicional por agua, es posible calentar el líquido refrigerante incluso después de que el motor térmico se haya enfriado.</p>\n<p>Para evitar la descarga de la batería con el motor parado, la unidad de control hace funcionar el soplador a potencia reducida. Esta reducción de potencia del soplador no se indica en el visualizador del panel de mandos. <span class=\"pag\">págs. 8-9</span></p>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Potencia del soplador de aire: reducida automáticamente durante la función activada para minimizar el consumo eléctrico. (pág. 9)",
+     "html": "<ul>\n<li>Potencia del soplador de aire: reducida automáticamente durante la función activada para minimizar el consumo eléctrico. <span class=\"pag\">pág. 9</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Creer que la indicación de potencia del soplador en la pantalla disminuye cuando el sistema entra en modo de ahorro energético por calor residual. (pág. 9) Pensar que la función de calor residual puede generar calefacción indefinidamente sin disponer de calor acumulado en el motor o de calefacción adicional por agua. (pág. 8)",
+     "html": "<ul>\n<li>Creer que la indicación de potencia del soplador en la pantalla disminuye cuando el sistema entra en modo de ahorro energético por calor residual. <span class=\"pag\">pág. 9</span></li>\n<li>Pensar que la función de calor residual puede generar calefacción indefinidamente sin disponer de calor acumulado en el motor o de calefacción adicional por agua. <span class=\"pag\">pág. 8</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del circuito de líquido refrigerante para la función de calor residual con bomba eléctrica V55 y calefacción adicional en motor V10-TDI — Fuente: 301_e Climatización en el Touareg.pdf, pág. 8",
+     "html": "<ul>\n<li>Esquema del circuito de líquido refrigerante para la función de calor residual con bomba eléctrica V55 y calefacción adicional en motor V10-TDI — Fuente: 301_e         Climatización en el Touareg.pdf, pág. 8</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.bomba-recirculacion-liquido-refrigerante.agua.301-e-climatizacion-en-el-touareg",
+   "nt": 551,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "bomba-recirculacion-liquido-refrigerante",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Bomba eléctrica para recirculación de líquido refrigerante",
+   "codigo": "V36",
+   "menu": "Bomba eléctrica para recircula V36",
+   "grupo": "Refrigeración del motor",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "301_e         Climatización en el Touareg.pdf, págs. 8-10",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "agua",
+   "area": "motor",
+   "sistema": "refrigeracion-motor",
+   "formaParteDe": "circuito-refrigeracion-motor",
+   "relacionados": [
+    "calor-residual",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "V36",
+    "V51",
+    "V55",
+    "reflujo de refrigerante",
+    "calefacción asistida",
+    "calor residual"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Impulsar eléctricamente el líquido refrigerante a través del intercambiador de calor o del bloque motor en fases de motor parado, ralentí, baja velocidad o posfuncionamiento. (págs. 8-10)",
+     "html": "<p>Impulsar eléctricamente el líquido refrigerante a través del intercambiador de calor o del bloque motor en fases de motor parado, ralentí, baja velocidad o posfuncionamiento. <span class=\"pag\">págs. 8-10</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Según la motorización y el equipamiento del vehículo se emplean tres bombas eléctricas distintas: Bomba de agua V36: Empleada en motores V6, V8, W12 y R5-TDI (según equipamiento de calefacción adicional). Bomba para reflujo de líquido refrigerante V51: Empleada en motores V10-TDI y R5-TDI sin calefacción adicional por agua. Bomba de circulación V55: Empleada en motores V10-TDI y R5-TDI equipados con calefacción adicional por agua (ZWH). (págs. 8-10)",
+     "html": "<p>Según la motorización y el equipamiento del vehículo se emplean tres bombas eléctricas distintas:</p>\n<ul>\n<li><strong>Bomba de agua V36:</strong> Empleada en motores V6, V8, W12 y R5-TDI (según equipamiento de calefacción adicional).</li>\n<li><strong>Bomba para reflujo de líquido refrigerante V51:</strong> Empleada en motores V10-TDI y R5-TDI sin calefacción adicional por agua.</li>\n<li><strong>Bomba de circulación V55:</strong> Empleada en motores V10-TDI y R5-TDI equipados con calefacción adicional por agua (ZWH). <span class=\"pag\">págs. 8-10</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Las bombas V36, V51 o V55 son activadas por la unidad de control del motor para la función de reflujo de líquido refrigerante (posfuncionamiento). Para las funciones de calefacción asistida (HU) a bajas revoluciones con gran demanda térmica, función de calor residual (RW) y calefacción adicional por agua (ZWH), son activadas por la unidad de control para el Climatronic J255. (págs. 8-10)",
+     "html": "<p>Las bombas V36, V51 o V55 son activadas por la unidad de control del motor para la función de reflujo de líquido refrigerante (posfuncionamiento). Para las funciones de calefacción asistida (HU) a bajas revoluciones con gran demanda térmica, función de calor residual (RW) y calefacción adicional por agua (ZWH), son activadas por la unidad de control para el Climatronic J255. <span class=\"pag\">págs. 8-10</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tensión de alimentación: 12 V (controlada por unidad de control J255 o unidad de control del motor). (págs. 8-10)",
+     "html": "<ul>\n<li>Tensión de alimentación: 12 V (controlada por unidad de control J255 o unidad de control del motor). <span class=\"pag\">págs. 8-10</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Tabla de asignación de bombas eléctricas V36, V51 y V55 según motorización (V6, V8, W12, V10-TDI, R5-TDI) y equipamiento — Fuente: 301_e Climatización en el Touareg.pdf, pág. 10",
+     "html": "<ul>\n<li>Tabla de asignación de bombas eléctricas V36, V51 y V55 según motorización (V6, V8, W12, V10-TDI, R5-TDI) y equipamiento — Fuente: 301_e         Climatización en el Touareg.pdf, pág. 10</li>\n</ul>"
     }
    ]
   },

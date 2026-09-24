@@ -11,10 +11,12 @@ clima:
   - autodiagnostico-calefaccion-independiente   # Autodiagnóstico de la calefacción independiente
   - autorizacion-acceso-y-arranque   # Sistema Keyless Access
   - bomba-calor-climatizacion   # Climatización por bomba de calor en vehículos eléctricos
+  - bomba-recirculacion-liquido-refrigerante   # Bomba eléctrica para recirculación de líquido refrigerante
   - bujia-precalentamiento-calefaccion   # Bujía de precalentamiento para calefacción
   - caja-climatizadora   # Unidad climática
   - calefactor-ptc   # Resistencia de calefacción eléctrica
   - calentamiento-aire   # Calentamiento del aire
+  - calor-residual   # Función de calor residual
   - calor-sensible-y-latente   # Intercambios térmicos, calor sensible y calor latente
   - capa-ozono-protocolo-montreal   # Protección de la capa de ozono y Protocolo de Montreal
   - carga-refrigerante-estacion   # Carga de refrigerante en la bombona de la estación de servicio
@@ -80,6 +82,7 @@ clima:
   - instalacion-electrica-ac-semiautomatico   # Instalación eléctrica de aire acondicionado semiautomático con sensor MAP y compresor de cilindrada variable
   - instalacion-electrica-climatizador-automatico   # Instalación eléctrica y gestión de averías del climatizador automático
   - intensidad-corriente-electrica   # Intensidad de corriente eléctrica
+  - intercambiador-calor   # Intercambiador de calor de la calefacción
   - interruptor-climatizacion   # Interruptor de climatización
   - inyeccion-aceite-circuito   # Descarga e introducción de aceite del circuito
   - inyeccion-aceite-y-trazador   # Inyección de aceite sintético y trazador de contraste
@@ -133,6 +136,7 @@ clima:
   - sensor-temperatura-motor   # Termoconmutador para la temperatura de refrigerante
   - servicio-climatizacion   # Revisión y servicio de climatización
   - silenciador-deposito-receptor   # Silenciador-depósito receptor
+  - soporte-climatizador   # Elemento de fijación del climatizador
   - sustitucion-compresor-y-lavado-circuito   # Sustitución de un compresor nuevo y preparación del circuito
   - tamiz-filtro-aspiracion   # Tamiz del filtro de aspiración del compresor
   - techo-panoramico   # Techo panorámico deflector y corredizo
