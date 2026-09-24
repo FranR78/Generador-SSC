@@ -2058,6 +2058,22 @@
    "hecha": false
   },
   {
+   "nombre": "NT508_01",
+   "nt": 508,
+   "titulo": "Recirculación del aire en el habitáculo",
+   "seccion": "8. Regulación y control",
+   "descripcion": "Esquema del sistema de climatización accionado neumáticamente en función de recirculación de aire con chapaleta de aire fresco, chapaleta de recirculación y depresor — Fuente: Recirculación.pdf, pág. 4",
+   "hecha": false
+  },
+  {
+   "nombre": "NT509_01",
+   "nt": 509,
+   "titulo": "Señales suplementarias para la regulación de la climatización",
+   "seccion": "8. Regulación y control",
+   "descripcion": "Esquema del flujo de señales suplementarias entre el cuadro de instrumentos, la UCE de motor y la UCE del climatizador hacia las chapaletas y el compresor — Fuente: SEÑALES SUPLEMENTARIAS.pdf, pág. 50",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -2082,7 +2098,7 @@
    "hecha": false
   }
  ],
- "total": 499,
+ "total": 501,
  "grupos": [
   "Acceso y arranque",
   "Calefacción",
@@ -21018,6 +21034,70 @@
    ]
   },
   {
+   "id": "ssc.regulacion-automatica.senales-suplementarias",
+   "nt": 509,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-automatica",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Señales suplementarias para la regulación de la climatización",
+   "codigo": "",
+   "menu": "Señales suplementarias para la regulac",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "SEÑALES SUPLEMENTARIAS.pdf, págs. 50-51",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "servomotor-trampilla",
+    "sensor-temperatura-exterior"
+   ],
+   "palabras": [
+    "senales suplementarias",
+    "tiempo en parado",
+    "velocidad de marcha",
+    "regimen del motor",
+    "chapaleta de velocidad"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Aumentar el confort y optimizar la regulación del sistema de climatización mediante el procesamiento de información adicional procedente de otras unidades de control del vehículo. (pág. 50)",
+     "html": "<p>Aumentar el confort y optimizar la regulación del sistema de climatización mediante el procesamiento de información adicional procedente de otras unidades de control del vehículo. <span class=\"pag\">pág. 50</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "La unidad de control del climatizador no trabaja únicamente con las mediciones de sus propios sensores térmicos, sino que procesa señales enviadas por otras UCEs del vehículo (cuadro de instrumentos, UCE del motor) para ajustar la posición de las trampillas y gestionar la conexión del compresor. (págs. 50-51)",
+     "html": "<p>La unidad de control del climatizador no trabaja únicamente con las mediciones de sus propios sensores térmicos, sino que procesa señales enviadas por otras UCEs del vehículo (cuadro de instrumentos, UCE del motor) para ajustar la posición de las trampillas y gestionar la conexión del compresor. <span class=\"pag\">págs. 50-51</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El sistema procesa tres señales suplementarias principales: Señal de tiempo en parado (th): Contabiliza el intervalo transcurrido con el encendido desconectado hasta que se vuelve a arrancar el motor. Tras un nuevo arranque, la unidad de control procesa los valores de temperatura exterior memorizados antes de la parada. De este modo, la regulación evita verse influida por mediciones erróneas causadas por el calor radiado del motor en parado, logrando alcanzar la temperatura de confort más rápidamente y evitando un enfriamiento excesivo. (págs. 50-51) Señal de velocidad de marcha (v): Procede del transmisor del velocímetro y es procesada por la unidad de control para gestionar la chapaleta de velocidad. A velocidades elevadas del vehículo, reduce la sección de paso para el aire fresco con el fin de mantener prácticamente constante el caudal de aire que ingresa al habitáculo. (págs. 50-51) Señal de régimen del motor (n): Informa de forma continua a la unidad de control del climatizador sobre el funcionamiento del motor. Se utiliza para la regulación del sistema y la desactivación de seguridad del acoplamiento electromagnético del compresor, por ejemplo desconectando el compresor al ausentarse la señal de revoluciones. (págs. 50-51)",
+     "html": "<p>El sistema procesa tres señales suplementarias principales:</p>\n<ol>\n<li>\n<p>Señal de tiempo en parado (th):\nContabiliza el intervalo transcurrido con el encendido desconectado hasta que se vuelve a arrancar el motor. Tras un nuevo arranque, la unidad de control procesa los valores de temperatura exterior memorizados antes de la parada. De este modo, la regulación evita verse influida por mediciones erróneas causadas por el calor radiado del motor en parado, logrando alcanzar la temperatura de confort más rápidamente y evitando un enfriamiento excesivo. <span class=\"pag\">págs. 50-51</span></p>\n</li>\n<li>\n<p>Señal de velocidad de marcha (v):\nProcede del transmisor del velocímetro y es procesada por la unidad de control para gestionar la chapaleta de velocidad. A velocidades elevadas del vehículo, reduce la sección de paso para el aire fresco con el fin de mantener prácticamente constante el caudal de aire que ingresa al habitáculo. <span class=\"pag\">págs. 50-51</span></p>\n</li>\n<li>\n<p>Señal de régimen del motor (n):\nInforma de forma continua a la unidad de control del climatizador sobre el funcionamiento del motor. Se utiliza para la regulación del sistema y la desactivación de seguridad del acoplamiento electromagnético del compresor, por ejemplo desconectando el compresor al ausentarse la señal de revoluciones. <span class=\"pag\">págs. 50-51</span></p>\n</li>\n</ol>"
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Considerar que tras arrancar el motor la unidad de climatización toma de inmediato la medición directa del sensor de temperatura exterior. Si el tiempo en parado ha sido breve, la unidad utiliza inicialmente los valores memorizados antes de la parada para evitar que el calor radiado por el motor desajuste la regulación térmica. (págs. 50-51)",
+     "html": "<p>Considerar que tras arrancar el motor la unidad de climatización toma de inmediato la medición directa del sensor de temperatura exterior. Si el tiempo en parado ha sido breve, la unidad utiliza inicialmente los valores memorizados antes de la parada para evitar que el calor radiado por el motor desajuste la regulación térmica. <span class=\"pag\">págs. 50-51</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del flujo de señales suplementarias entre el cuadro de instrumentos, la UCE de motor y la UCE del climatizador hacia las chapaletas y el compresor — Fuente: SEÑALES SUPLEMENTARIAS.pdf, pág. 50",
+     "html": "<ul>\n<li>Esquema del flujo de señales suplementarias entre el cuadro de instrumentos, la UCE de motor y la UCE del climatizador hacia las chapaletas y el compresor — Fuente: SEÑALES SUPLEMENTARIAS.pdf, pág. 50</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.distribucion-aire.208-regulacion-de-la-temperatura",
    "nt": 105,
    "modulo": "ssc",
@@ -21643,6 +21723,76 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema de las posiciones de las trampillas de velocidad y recirculación en la entrada de aire fresco, regulación por velocidad y recirculación total — Fuente: Toledo 99 CLIMA.pdf, pág. 51",
      "html": "<ul>\n<li>Esquema de las posiciones de las trampillas de velocidad y recirculación en la entrada de aire fresco, regulación por velocidad y recirculación total — Fuente: Toledo 99 CLIMA.pdf, pág. 51</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.recirculacion.recirculacion",
+   "nt": 508,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "recirculacion",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Recirculación del aire en el habitáculo",
+   "codigo": "",
+   "menu": "Recirculación del aire en el habitácul",
+   "grupo": "Distribución de aire",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Recirculación.pdf, págs. 1-4",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "",
+   "relacionados": [
+    "higrometria-y-confort",
+    "distribucion-aire"
+   ],
+   "palabras": [
+    "recirculación",
+    "aire fresco",
+    "evaporador",
+    "humedad",
+    "empañamiento",
+    "punto de rocío",
+    "15 minutos"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Explicar la función de recirculación de aire en el sistema de climatización, sus ventajas operativas, sus limitaciones de tiempo y el mecanismo de control de las chapaletas. (págs. 1-4)",
+     "html": "<p>Explicar la función de recirculación de aire en el sistema de climatización, sus ventajas operativas, sus limitaciones de tiempo y el mecanismo de control de las chapaletas. <span class=\"pag\">págs. 1-4</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El sistema utiliza el aire del propio habitáculo en lugar de captar aire atmosférico del exterior, enfriándolo o calentándolo de forma cíclica para ajustar la temperatura con mayor rapidez y menor consumo energético. (págs. 1-2)",
+     "html": "<p>El sistema utiliza el aire del propio habitáculo en lugar de captar aire atmosférico del exterior, enfriándolo o calentándolo de forma cíclica para ajustar la temperatura con mayor rapidez y menor consumo energético. <span class=\"pag\">págs. 1-2</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "En el modo de recirculación, el flujo de aire interior se canaliza y acondiciona continuamente pasando a través de la unidad climática. Ventajas y efectos principales: Enfriamiento y caldeo rápido: al reutilizar el aire interior que ya ha sido tratado térmicamente, la temperatura de confort se alcanza en menor tiempo que utilizando aire atmosférico. (pág. 2) Reducción del consumo energético: al refrigerar en modo de recirculación se necesita menos de la mitad de la potencia del evaporador y de accionamiento del compresor. (pág. 2) Aislamiento de contaminantes: evita la entrada de malos olores, polen y cargas contaminantes procedentes del aire exterior. (pág. 3) Desventajas y limitaciones: Enrarecimiento del aire: al no existir renovación con aire exterior, la calidad del aire se degrada. Se recomienda no prolongar su uso continuo más de 15 minutos. (pág. 3) Empañamiento de cristales: la humedad aportada por los ocupantes se acumula en el habitáculo. Cuando el punto de rocío del aire interior supera la temperatura de los cristales, se produce el empañamiento de las lunas. Por este motivo, al seleccionar la función de descongelación/desempañado del parabrisas, la recirculación se bloquea automáticamente. (págs. 3-4) Accionamiento de chapaletas: El paso entre aire atmosférico y aire recirculado se realiza mediante una chapaleta de aire fresco y una chapaleta de recirculación de aire, las cuales pueden estar accionadas neumáticamente mediante un depresor. (pág. 4)",
+     "html": "<p>En el modo de recirculación, el flujo de aire interior se canaliza y acondiciona continuamente pasando a través de la unidad climática.</p>\n<p>Ventajas y efectos principales:</p>\n<ul>\n<li>Enfriamiento y caldeo rápido: al reutilizar el aire interior que ya ha sido tratado térmicamente, la temperatura de confort se alcanza en menor tiempo que utilizando aire atmosférico. <span class=\"pag\">pág. 2</span></li>\n<li>Reducción del consumo energético: al refrigerar en modo de recirculación se necesita menos de la mitad de la potencia del evaporador y de accionamiento del compresor. <span class=\"pag\">pág. 2</span></li>\n<li>Aislamiento de contaminantes: evita la entrada de malos olores, polen y cargas contaminantes procedentes del aire exterior. <span class=\"pag\">pág. 3</span></li>\n</ul>\n<p>Desventajas y limitaciones:</p>\n<ul>\n<li>Enrarecimiento del aire: al no existir renovación con aire exterior, la calidad del aire se degrada. Se recomienda no prolongar su uso continuo más de 15 minutos. <span class=\"pag\">pág. 3</span></li>\n<li>Empañamiento de cristales: la humedad aportada por los ocupantes se acumula en el habitáculo. Cuando el punto de rocío del aire interior supera la temperatura de los cristales, se produce el empañamiento de las lunas. Por este motivo, al seleccionar la función de descongelación/desempañado del parabrisas, la recirculación se bloquea automáticamente. <span class=\"pag\">págs. 3-4</span></li>\n</ul>\n<p>Accionamiento de chapaletas:\nEl paso entre aire atmosférico y aire recirculado se realiza mediante una chapaleta de aire fresco y una chapaleta de recirculación de aire, las cuales pueden estar accionadas neumáticamente mediante un depresor. <span class=\"pag\">pág. 4</span></p>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Tiempo máximo recomendado de uso continuo: 15 minutos. Potencia requerida en el evaporador/compresor respecto al uso de aire atmosférico: menos de la mitad de la potencia de accionamiento. (págs. 2-3)",
+     "html": "<ul>\n<li>Tiempo máximo recomendado de uso continuo: 15 minutos.</li>\n<li>Potencia requerida en el evaporador/compresor respecto al uso de aire atmosférico: menos de la mitad de la potencia de accionamiento. <span class=\"pag\">págs. 2-3</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Pensar que la recirculación se puede mantener activada indefinidamente de forma segura. Si se sobrepasan los 15 minutos de uso continuo, el aire interior se vicia y el incremento de humedad relativa provoca el empañamiento de las lunas por superar el punto de rocío. (págs. 3-4)",
+     "html": "<p>Pensar que la recirculación se puede mantener activada indefinidamente de forma segura. Si se sobrepasan los 15 minutos de uso continuo, el aire interior se vicia y el incremento de humedad relativa provoca el empañamiento de las lunas por superar el punto de rocío. <span class=\"pag\">págs. 3-4</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del sistema de climatización accionado neumáticamente en función de recirculación de aire con chapaleta de aire fresco, chapaleta de recirculación y depresor — Fuente: Recirculación.pdf, pág. 4",
+     "html": "<ul>\n<li>Esquema del sistema de climatización accionado neumáticamente en función de recirculación de aire con chapaleta de aire fresco, chapaleta de recirculación y depresor — Fuente: Recirculación.pdf, pág. 4</li>\n</ul>"
     }
    ]
   },
