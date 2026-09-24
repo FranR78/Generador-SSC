@@ -6,6 +6,7 @@ const DEFAULTS = {
   origenId: "",    // Drive: lo pone él en Opciones; cambia en cada extracción
   destinoId: "",
   token: "",
+  limite: 6,   // minutos máximos por fuente antes de darla por colgada
   prompt: "Procesa la fuente seleccionada.",
   sel: {
     notebookTitle: "h1.notebook-title, .notebook-title, input.title-input",

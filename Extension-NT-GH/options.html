@@ -66,6 +66,8 @@
     <h2>NotebookLM</h2>
     <label for="prompt">Mensaje que se envía por cada fuente</label>
     <textarea id="prompt" rows="3"></textarea>
+    <label for="limite">Minutos máximos por fuente <small>Pasado este tiempo se da por colgada y sigue con la siguiente (por la tarde NotebookLM se satura)</small></label>
+    <input id="limite" type="number" min="2" max="30" placeholder="6">
   </section>
 
   <section>

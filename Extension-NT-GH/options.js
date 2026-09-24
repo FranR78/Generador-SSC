@@ -1,5 +1,5 @@
 const $ = id => document.getElementById(id);
-const F = ["repo", "dir", "informes", "token", "prompt", "origenId", "destinoId"];
+const F = ["repo", "dir", "informes", "token", "prompt", "origenId", "destinoId", "limite"];
 const LABELS = {
   notebookTitle: "Título del cuaderno (informe)",
   sourceRow: "Fila de cada fuente",

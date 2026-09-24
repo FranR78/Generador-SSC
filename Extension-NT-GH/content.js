@@ -2,6 +2,10 @@
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 let SEL = DEFAULTS.sel;
 let running = false, stopRequested = false;
+let turno = 0;   // cambia al vencer el límite de una fuente: los bucles del turno viejo se paran
+const vigente = t => { if (t !== turno || stopRequested) throw new Error("cancelado"); };
+// Texto de NotebookLM cuando está saturado o falla (por la tarde pasa mucho).
+const ERROR_NLM = /algo (ha )?(salido|ido) mal|se ha producido un error|int[ée]ntalo de nuevo|something went wrong|try again|no se ha podido generar/i;
 const $$ = s => [...document.querySelectorAll(s)];
 
 // ---------- Panel de progreso en la página ----------
@@ -38,13 +42,16 @@ function ui(msg, kind = "") {
 
 // ---------- Pasos ----------
 // Espera a que haya respuesta nueva, con botón copiar (= terminada) y texto estable
-async function waitAnswer(prev) {
+async function waitAnswer(prev, t0 = turno) {
   let last = "", stable = 0;
   for (let t = 0; t < 600 && stable < 3; t++) {
     await sleep(1500);
+    vigente(t0);
     const a = $$(SEL.answer);
     if (a.length <= prev) continue;
     const el = a.at(-1);
+    if (ERROR_NLM.test(el.innerText || "") && (el.innerText || "").length < 400)
+      throw new Error("NotebookLM devolvió un error (saturado)");
     if (!el.querySelector(SEL.copy)) { stable = 0; continue; }
     const txt = el.innerText;
     stable = (txt && txt === last) ? stable + 1 : 0;
@@ -120,7 +127,7 @@ async function selectOnly(rows, i) {
   await sleep(800);
 }
 
-async function sendPrompt(prompt) {
+async function sendPrompt(prompt, t0 = turno) {
   const box = document.querySelector(SEL.input);
   if (!box) throw new Error("no encuentro la caja del chat");
   box.focus();
@@ -129,6 +136,7 @@ async function sendPrompt(prompt) {
   // Reintenta hasta que la caja se vacíe (= enviado). Si NotebookLM sigue generando, espera.
   for (let t = 0; t < 300; t++) {
     await sleep(t ? 3000 : 500);
+    vigente(t0);
     if (!box.value.trim()) return;
     const btn = document.querySelector(SEL.send) || (box.closest("form") || document).querySelector("button[type=submit]");
     if (btn && !btn.disabled) btn.click();
@@ -139,12 +147,13 @@ async function sendPrompt(prompt) {
 
 // ---------- Bucle principal ----------
 // start: índice inicial (popup). only: lista de índices concretos (reintentar fallidas).
-async function run(start = 0, only = null) {
+async function run(start = 0, only = null, auto = false) {
   if (running) return;
   running = true; stopRequested = false;
   document.getElementById("nlm-retry")?.remove();
   const cfg = await getCfg();
   SEL = cfg.sel;
+  const limite = Math.max(2, +cfg.limite || 6) * 60000;   // minutos por fuente
   const rows = $$(SEL.sourceRow);
   let queue;
   if (only) {
@@ -155,38 +164,69 @@ async function run(start = 0, only = null) {
     queue = rows.map((_, i) => i).slice(start);
     ui(`${rows.length} fuentes. Empiezo por la ${start + 1}.`);
   }
-  let ok = 0;
+  let ok = 0, seguidos = 0;
   const failed = [], lote = [];
+  const lotId = nombreLote();
 
-  for (const i of queue) {
+  for (const [k, i] of queue.entries()) {
     if (stopRequested) { ui("Detenido por el usuario."); break; }
     const row = rows[i];
     const title = row.querySelector(SEL.sourceTitle)?.innerText.trim() || `fuente_${i + 1}`;
     const name = sanear(title);
+    const t0 = ++turno;
     try {
       ui(`${i + 1}/${rows.length} · ${title}…`);
-      await selectOnly(rows, i);
-      const prev = $$(SEL.answer).length;
-      await sendPrompt(cfg.prompt);
-      await waitAnswer(prev);
-      const { md, via } = await copyAnswer($$(SEL.answer).at(-1));
-      if (/no puede responder/i.test(md)) throw new Error("NotebookLM no ha podido responder");
-      const res = await chrome.runtime.sendMessage({ cmd: "upload", name, md });
+      const r = await conLimite(procesar(rows, i, cfg, t0), limite,
+        `sin respuesta en ${limite / 60000} min (NotebookLM colgado o saturado)`);
+      const res = await chrome.runtime.sendMessage({ cmd: "upload", name, md: r.md });
       if (!res.ok) throw new Error(`GitHub respondió ${res.status}`);
-      ui(`✓ ${name}.md ${res.updated ? "actualizado" : "subido"} (${via})`, "ok");
-      ok++;
+      ui(`✓ ${name}.md ${res.updated ? "actualizado" : "subido"} (${r.via})`, "ok");
+      ok++; seguidos = 0;
       lote.push({ title, name, ok: true });
     } catch (e) {
+      turno++;   // corta cualquier bucle que siguiera vivo de esta fuente
       ui(`✗ ${title}: ${e.message}`, "err");
-      failed.push(i);
+      failed.push(i); seguidos++;
       lote.push({ title, name, ok: false, motivo: e.message });
     }
-    await sleep(5000);
+    // El informe se sube tras CADA fuente: si la tanda se cuelga, queda escrito hasta dónde llegó.
+    await informe(cfg, lote, lotId, `EN CURSO · ${k + 1} de ${queue.length}`);
+    if (seguidos >= 2 && !stopRequested) {
+      ui("NotebookLM parece saturado: pausa de 3 min antes de seguir…", "err");
+      await sleep(180000); seguidos = 0;
+    } else await sleep(5000);
   }
-  ui(`Terminado: ${ok} subidos, ${failed.length} con error.`, failed.length ? "err" : "ok");
-  if (lote.length) await informe(cfg, lote);
+  const estado = stopRequested ? "DETENIDO" : "TERMINADO";
+  ui(`${estado === "DETENIDO" ? "Detenido" : "Terminado"}: ${ok} subidos, ${failed.length} con error.`, failed.length ? "err" : "ok");
+  await informe(cfg, lote, lotId, estado, true);
   running = false;
+  // Un reintento automático de las fallidas, tras una pausa, si no lo ha parado el usuario.
+  if (failed.length && !only && !stopRequested && !auto) {
+    ui("Reintento automático de las fallidas en 2 min…");
+    await sleep(120000);
+    if (!stopRequested) return run(0, failed, true);
+  }
   if (failed.length) retryButton(failed);
+}
+
+// Una fuente: seleccionar, preguntar, esperar y copiar. Devuelve {md, via}.
+async function procesar(rows, i, cfg, t0) {
+  await selectOnly(rows, i);
+  vigente(t0);
+  const prev = $$(SEL.answer).length;
+  await sendPrompt(cfg.prompt, t0);
+  await waitAnswer(prev, t0);
+  vigente(t0);
+  const r = await copyAnswer($$(SEL.answer).at(-1));
+  if (/no puede responder/i.test(r.md)) throw new Error("NotebookLM no ha podido responder");
+  if (ERROR_NLM.test(r.md) && r.md.length < 400) throw new Error("NotebookLM devolvió un error (saturado)");
+  return r;
+}
+
+function conLimite(promesa, ms, motivo) {
+  let t;
+  return Promise.race([promesa, new Promise((_, no) => { t = setTimeout(() => no(new Error(motivo)), ms); })])
+    .finally(() => clearTimeout(t));
 }
 
 // ---------- Informe del lote (docs/AUTOMATIZACION.md) ----------
@@ -197,20 +237,23 @@ function tituloCuaderno() {
   return t || "cuaderno";
 }
 
-async function informe(cfg, lote) {
+function nombreLote() {
+  const a = new Date(), p = n => String(n).padStart(2, "0");
+  return `${a.getFullYear()}-${p(a.getMonth() + 1)}-${p(a.getDate())}_${p(a.getHours())}${p(a.getMinutes())}_${sanear(tituloCuaderno())}`;
+}
+
+async function informe(cfg, lote, name, estado, avisar = false) {
   const cuaderno = tituloCuaderno();
   const ahora = new Date();
-  const p = n => String(n).padStart(2, "0");
-  const fecha = `${ahora.getFullYear()}-${p(ahora.getMonth() + 1)}-${p(ahora.getDate())}_${p(ahora.getHours())}${p(ahora.getMinutes())}`;
-  const name = `${fecha}_${sanear(cuaderno)}`;
   const oks = lote.filter(x => x.ok), kos = lote.filter(x => !x.ok);
   const json = {
-    cuaderno, fecha: ahora.toISOString(), origenId: cfg.origenId || "", destinoId: cfg.destinoId || "",
+    cuaderno, estado, fecha: ahora.toISOString(), origenId: cfg.origenId || "", destinoId: cfg.destinoId || "",
     dirNotas: cfg.dir, total: lote.length, subidos: oks.length, fallidos: kos.length, fuentes: lote
   };
   const md = [
     `# Informe · ${cuaderno}`, "",
-    `- Fecha: ${ahora.toLocaleString("es-ES")}`,
+    `- Estado: **${estado}**`,
+    `- Última actualización: ${ahora.toLocaleString("es-ES")}`,
     `- Subidos: **${oks.length}** · Fallidos: **${kos.length}** · Total: ${lote.length}`,
     `- Origen Drive: ${cfg.origenId || "(sin poner)"} · Destino: ${cfg.destinoId || "(NT-GH-Procesados)"}`, "",
     "> **Subido** = PUT OK. **Nota confirmada** = existe `entrada/procesados/<name>.md`.",
@@ -222,7 +265,7 @@ async function informe(cfg, lote) {
     const res = await chrome.runtime.sendMessage({ cmd: "upload", name, md: body, dir: cfg.informes, ext });
     if (!res.ok) { ui(`✗ Informe .${ext}: GitHub respondió ${res.status}`, "err"); return; }
   }
-  ui(`✓ Informe: ${cfg.informes}/${name}.md`, "ok");
+  if (avisar) ui(`✓ Informe: ${cfg.informes}/${name}.md`, "ok");
 }
 
 function retryButton(failed) {
