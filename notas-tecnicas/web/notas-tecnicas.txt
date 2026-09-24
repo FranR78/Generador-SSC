@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">354 notas · 24/09/2026</p>
+  <p class="sidebar-meta">359 notas · 24/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -258,7 +258,7 @@
     <li><a href="#nt9">NT9 · Reglamento (UE) nº 517/2014 sobre gase</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
     <li><a href="#grp-ciclo-frigorifico">Principios físicos de la refrigeración y termodinámica <span class="menu-cuenta">20 fuentes</span></a></li>
-    <li><a href="#grp-compresor">Compresor de aire acondicionado <span class="menu-cuenta">15 fuentes</span></a></li>
+    <li><a href="#grp-compresor">Compresor de aire acondicionado <span class="menu-cuenta">16 fuentes</span></a></li>
     <li><a href="#grp-condensador">Condensador <span class="menu-cuenta">6 fuentes</span></a></li>
     <li><a href="#grp-filtro-deshidratador-mirilla">Filtro deshidratador <span class="menu-cuenta">6 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
@@ -272,10 +272,10 @@
     <li><a href="#grp-regulacion-automatica">Sistemas y opciones de climatización en el automóvil <span class="menu-cuenta">17 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Fluidos frigoríficos</span></li>
     <li><a href="#nt21">NT21 · Agente frigorífico R12</a></li>
-    <li><a href="#grp-refrigerante-r134a">Agente frigorífico R134a <span class="menu-cuenta">7 fuentes</span></a></li>
+    <li><a href="#grp-refrigerante-r134a">Agente frigorífico R134a <span class="menu-cuenta">8 fuentes</span></a></li>
     <li><a href="#grp-refrigerante-r1234yf">Agente frigorífico R1234yf <span class="menu-cuenta">3 fuentes</span></a></li>
     <li><a href="#grp-refrigerante-r744">Agente frigorífico R744 (dióxido de carbono) <span class="menu-cuenta">2 fuentes</span></a></li>
-    <li><a href="#grp-aceite-frigorifico">Aceite PAG (Polialquilenglicol) <span class="menu-cuenta">7 fuentes</span></a></li>
+    <li><a href="#grp-aceite-frigorifico">Aceite PAG (Polialquilenglicol) <span class="menu-cuenta">8 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">PRL y seguridad</span></li>
     <li><a href="#nt29">NT29 · Equipos de protección individual en el</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Equipos de taller</span></li>
@@ -431,8 +431,8 @@
     <li class="grupo"><span class="menu-grupo-titulo">Infotainment</span></li>
     <li><a href="#nt336">NT336 · Unidad de control de electróni J794</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
-    <li><a href="#nt338">NT338 · Lavado del circuito del agente frigorí</a></li>
-    <li><a href="#nt353">NT353 · Procedimiento de montaje y sustitución</a></li>
+    <li><a href="#grp-lavado-circuito">Lavado del circuito del agente frigorífico <span class="menu-cuenta">2 fuentes</span></a></li>
+    <li><a href="#grp-sustitucion-compresor">Procedimiento de montaje y sustitución de un compresor nuevo <span class="menu-cuenta">2 fuentes</span></a></li>
   </ul>
 </nav>
 
@@ -1890,10 +1890,10 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </div>
 
   <div class="grupo-componente" id="grp-compresor">
-    <div class="grupo-cab"><span class="grupo-nombre">Compresor de aire acondicionado</span><span class="grupo-cuenta">15 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Compresor de aire acondicionado</span><span class="grupo-cuenta">16 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 15 · NT11 · 2. Introducción a la refrigeración.pdf, págs. 20</summary>
+      <summary>Variante 1 de 16 · NT11 · 2. Introducción a la refrigeración.pdf, págs. 20</summary>
   <section id="nt11" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 11 </div>
     <div class="nota-body">
@@ -1931,7 +1931,7 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 15 · NT39 · 6. Compresores.pdf, págs. 49-50</summary>
+      <summary>Variante 2 de 16 · NT39 · 6. Compresores.pdf, págs. 49-50</summary>
   <section id="nt39" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 39 </div>
     <div class="nota-body">
@@ -1980,7 +1980,7 @@ Características:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 15 · NT40 · 6. Compresores.pdf, págs. 50-51</summary>
+      <summary>Variante 3 de 16 · NT40 · 6. Compresores.pdf, págs. 50-51</summary>
   <section id="nt40" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 40 </div>
     <div class="nota-body">
@@ -2036,7 +2036,7 @@ Características principales:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 15 · NT41 · 6. Compresores.pdf, págs. 51-52</summary>
+      <summary>Variante 4 de 16 · NT41 · 6. Compresores.pdf, págs. 51-52</summary>
   <section id="nt41" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 41 </div>
     <div class="nota-body">
@@ -2084,7 +2084,7 @@ Características principales:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 15 · NT43 · 6. Compresores.pdf, págs. 53-54</summary>
+      <summary>Variante 5 de 16 · NT43 · 6. Compresores.pdf, págs. 53-54</summary>
   <section id="nt43" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 43 </div>
     <div class="nota-body">
@@ -2126,7 +2126,7 @@ Características principales:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 15 · NT45 · 6. Compresores.pdf, págs. 55-58</summary>
+      <summary>Variante 6 de 16 · NT45 · 6. Compresores.pdf, págs. 55-58</summary>
   <section id="nt45" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 45 <span class="fusionado">Seat</span></div>
     <div class="nota-body">
@@ -2214,7 +2214,7 @@ Características principales:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 15 · NT46 · 6. Compresores.pdf, págs. 58-62</summary>
+      <summary>Variante 7 de 16 · NT46 · 6. Compresores.pdf, págs. 58-62</summary>
   <section id="nt46" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 46 <span class="fusionado">Seat</span></div>
     <div class="nota-body">
@@ -2275,7 +2275,7 @@ Si el compresor se bloquea mecánicamente, el disco de arrastre de chapa se defo
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 8 de 15 · NT216 · Climatizacion basicos.pdf, págs. 7, 20-33</summary>
+      <summary>Variante 8 de 16 · NT216 · Climatizacion basicos.pdf, págs. 7, 20-33</summary>
   <section id="nt216" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 216 </div>
     <div class="nota-body">
@@ -2334,7 +2334,7 @@ Si el compresor se bloquea mecánicamente, el disco de arrastre de chapa se defo
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 9 de 15 · NT230 · CLIMATIZACION INTRODUCCION.PDF, págs. 58-79</summary>
+      <summary>Variante 9 de 16 · NT230 · CLIMATIZACION INTRODUCCION.PDF, págs. 58-79</summary>
   <section id="nt230" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 230 </div>
     <div class="nota-body">
@@ -2399,7 +2399,7 @@ Tecnologías de construcción:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 10 de 15 · NT245 · Climatizacion-conocimientos-basios-para-el-taller_3.pdf, págs. 10-11</summary>
+      <summary>Variante 10 de 16 · NT245 · Climatizacion-conocimientos-basios-para-el-taller_3.pdf, págs. 10-11</summary>
   <section id="nt245" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 245 <span class="fusionado">Behr Hella Service</span></div>
     <div class="nota-body">
@@ -2436,7 +2436,7 @@ Tecnologías de construcción:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 11 de 15 · NT256 · CLIMATIZADOR MD FRAN.docx, págs. Secciones Compresor y Funcionamiento </summary>
+      <summary>Variante 11 de 16 · NT256 · CLIMATIZADOR MD FRAN.docx, págs. Secciones Compresor y Funcionamiento </summary>
   <section id="nt256" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 256 </div>
     <div class="nota-body">
@@ -2500,7 +2500,7 @@ Según la regulación de cilindrada:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 12 de 15 · NT268 · LA CLIMATIZACIÓN.pdf, págs. 47-54</summary>
+      <summary>Variante 12 de 16 · NT268 · LA CLIMATIZACIÓN.pdf, págs. 47-54</summary>
   <section id="nt268" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 268 </div>
     <div class="nota-body">
@@ -2554,7 +2554,7 @@ Presión de salida: aprox. 16 bares (1,6 MPa). (pág. 43).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 13 de 15 · NT269 · LA CLIMATIZACIÓN.pdf, págs. 55-59</summary>
+      <summary>Variante 13 de 16 · NT269 · LA CLIMATIZACIÓN.pdf, págs. 55-59</summary>
   <section id="nt269" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 269 </div>
     <div class="nota-body">
@@ -2611,7 +2611,7 @@ Cuando la demanda de frío sube (P_b aumenta), la válvula de regulación reduce
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 14 de 15 · NT270 · LA CLIMATIZACIÓN.pdf, págs. 60</summary>
+      <summary>Variante 14 de 16 · NT270 · LA CLIMATIZACIÓN.pdf, págs. 60</summary>
   <section id="nt270" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 270 </div>
     <div class="nota-body">
@@ -2652,7 +2652,7 @@ Cuando la demanda de frío sube (P_b aumenta), la válvula de regulación reduce
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 15 de 15 · NT271 · LA CLIMATIZACIÓN.pdf, págs. 61</summary>
+      <summary>Variante 15 de 16 · NT271 · LA CLIMATIZACIÓN.pdf, págs. 61</summary>
   <section id="nt271" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 271 </div>
     <div class="nota-body">
@@ -2695,6 +2695,68 @@ Cuando la demanda de frío sube (P_b aumenta), la válvula de regulación reduce
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">LA CLIMATIZACIÓN.pdf, págs. 61</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 16 de 16 · NT356 · ZZAA AUTOMOCION 1 Enero 2010 HELLA.pptx, págs. 69-82</summary>
+  <section id="nt356" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 356 <span class="fusionado">Denso</span></div>
+    <div class="nota-body">
+      <h1>Compresor Denso 6 SEU 12 de cilindrada variable — <strong>6 SEU 12</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Ajustar de forma continua la cilindrada y el caudal de refrigerante impulsado mediante regulación electrónica externa para adaptarse a la demanda térmica de los ocupantes, la temperatura exterior y las cargas del habitáculo. (págs. 69, 72).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>La UCE de climatización gobierna la electroválvula enviando una señal cuadrada de 500 Hz con modulación por ancho de impulsos (PWM). Debido a la alta frecuencia, el empujador de la válvula trabaja en estado flotante.</p>
+<ul>
+<li>Mínimo rendimiento (2% de activación): la válvula permanece totalmente abierta sin corriente, comunicando la alta presión con el cárter (A y B igualan presiones). El muelle de recuperación endereza el disco oscilante a mínima carrera de los émbolos. (págs. 74, 81).</li>
+<li>Máximo rendimiento (98% de activación): la electroválvula se cierra impulsada por la UCE, separando el cárter (A) de la alta presión (B). La presión del cárter disminuye hacia la baja presión y la fuerza de alta presión inclina el disco oscilante a máxima carrera. (págs. 74, 82).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Frecuencia de la señal de activación PWM: 500 Hz. (pág. 78).</li>
+<li>Margen de ciclo de trabajo (señal de activación): entre +2% (mínima carga) y +98% (plena carga). (págs. 74, 82).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Bloqueo o agarrotamiento mecánico de la electroválvula de regulación externa por suciedad o limaduras en el circuito. (págs. 82, 286).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <ul>
+<li>Si la electroválvula se bloquea abierta (o sin corriente): el compresor se mantiene en posición de mínima carga (2%) y no enfría. (págs. 81, 286).</li>
+<li>Si la electroválvula se bloquea cerrada: el compresor trabaja permanentemente a máxima carga (98%), pudiendo provocar la congelación del evaporador. (págs. 82, 254).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <ol>
+<li>Analizar con osciloscopio la señal cuadrada de 500 Hz enviada por la UCE a la electroválvula. (pág. 78).</li>
+<li>Consultar el porcentaje de activación PWM en los bloques de valores de medición del equipo de diagnosis. (págs. 73, 78).</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Compresor alternativo de pistones impulsados por disco oscilante, sin embrague electromagnético, equipado con una válvula de regulación externa fijada en la tapa posterior. En la válvula confluyen la presión de la carcasa del cárter (A), el lado de alta presión (B) y el lado de baja presión (C). (págs. 69, 76, 80).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <p>Control del estado de limpieza del refrigerante y aceite del circuito. Si la electroválvula falla por suciedad, es obligatorio lavar el circuito y sustituir el filtro deshidratador. (págs. 82, 287).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT356_01</code> Sección del compresor Denso 6 SEU 12 mostrando el disco oscilante, émbolos y la válvula de regulación externa de alta frecuencia — Fuente: ZZAA AUTOMOCION 1 Enero 2010 HELLA.pptx, pág. 70</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">ZZAA AUTOMOCION 1 Enero 2010 HELLA.pptx, págs. 69-82</p>
       </div>
     </div>
   </section>
@@ -5282,10 +5344,10 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
 
   <div class="grupo-componente" id="grp-refrigerante-r134a">
-    <div class="grupo-cab"><span class="grupo-nombre">Agente frigorífico R134a</span><span class="grupo-cuenta">7 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Agente frigorífico R134a</span><span class="grupo-cuenta">8 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 7 · NT22 · 3. Refrigerantes.pdf, págs. 24-27</summary>
+      <summary>Variante 1 de 8 · NT22 · 3. Refrigerantes.pdf, págs. 24-27</summary>
   <section id="nt22" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 22 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -5339,7 +5401,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 7 · NT167 · Audi A5 Coupé_2008_aire acondicionado.pdf, págs. 1-4</summary>
+      <summary>Variante 2 de 8 · NT167 · Audi A5 Coupé_2008_aire acondicionado.pdf, págs. 1-4</summary>
   <section id="nt167" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 167 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -5373,7 +5435,7 @@ Está prohibido realizar trabajos de soldadura (dura o blanda) en componentes de
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 7 · NT228 · CLIMATIZACION INTRODUCCION.PDF, págs. 33-42</summary>
+      <summary>Variante 3 de 8 · NT228 · CLIMATIZACION INTRODUCCION.PDF, págs. 33-42</summary>
   <section id="nt228" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 228 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -5420,7 +5482,7 @@ Está prohibido realizar trabajos de soldadura (dura o blanda) en componentes de
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 7 · NT253 · CLIMATIZADOR MD FRAN.docx, págs. Sección Agente frigorífico</summary>
+      <summary>Variante 4 de 8 · NT253 · CLIMATIZADOR MD FRAN.docx, págs. Sección Agente frigorífico</summary>
   <section id="nt253" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 253 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -5471,7 +5533,7 @@ Está prohibido realizar trabajos de soldadura (dura o blanda) en componentes de
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 7 · NT265 · LA CLIMATIZACIÓN.pdf, págs. 32-38</summary>
+      <summary>Variante 5 de 8 · NT265 · LA CLIMATIZACIÓN.pdf, págs. 32-38</summary>
   <section id="nt265" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 265 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -5519,7 +5581,7 @@ Está prohibido realizar trabajos de soldadura (dura o blanda) en componentes de
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 7 · NT313 · MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 5-7</summary>
+      <summary>Variante 6 de 8 · NT313 · MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 5-7</summary>
   <section id="nt313" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 313 <span class="subtipo">Fluido</span><span class="fusionado">Formauto</span></div>
     <div class="nota-body">
@@ -5566,7 +5628,7 @@ Está prohibido realizar trabajos de soldadura (dura o blanda) en componentes de
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 7 · NT323 · MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 7-10</summary>
+      <summary>Variante 7 de 8 · NT323 · MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 7-10</summary>
   <section id="nt323" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 323 <span class="subtipo">Fluido</span><span class="fusionado">Hella</span></div>
     <div class="nota-body">
@@ -5613,6 +5675,46 @@ Está prohibido realizar trabajos de soldadura (dura o blanda) en componentes de
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 7-10</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 8 de 8 · NT355 · ZZAA AUTOMOCION 1 Enero 2010 HELLA.pptx, págs. 99</summary>
+  <section id="nt355" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 355 <span class="subtipo">Fluido</span><span class="fusionado">Hella</span></div>
+    <div class="nota-body">
+      <h1>Gases refrigerantes alternativos R-406a y R-413a</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Designación y norma</div>
+        <p>R-406a y R-413a (denominado comercialmente ISCEON-49). Mezclas de refrigerantes sintéticos desarrolladas como gases de sustitución directa para reconversiones de circuitos de aire acondicionado. (pág. 99).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Propiedades</div>
+        <ul>
+<li>R-406a: compuesto por R-22 (55% +/- 2%), R-142b (41% +/- 1%, parcialmente inflamable) y R-600a (4% +/- 1%, inflamable). (pág. 99).</li>
+<li>R-413a (ISCEON-49): compuesto por R-134a (88% +/- 2%), R-218 (9% +/- 1%) y R-600a (3% +/- 1%, inflamable). (pág. 99).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Dónde se usa y cantidades</div>
+        <p>Se utilizan en instalaciones frigoríficas de automoción como gases de sustitución para reconversión de sistemas antiguos. (pág. 99).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Compatibilidades y mezclas prohibidas</div>
+        <p>Contienen componentes inflamables (como el isobutano R-600a al 3%-4%) y parcialmente inflamables (R-142b al 41%), por lo que requieren precauciones especiales de manejo. (pág. 99).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <p>Especificados por su denominación comercial R-406a y R-413a (ISCEON-49) en los recipientes de almacenamiento y fichas técnicas de composición. (pág. 99).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Riesgos y normativa</div>
+        <p>Riesgo de inflamabilidad por la presencia de isobutano (R-600a) en la mezcla. (pág. 99).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">ZZAA AUTOMOCION 1 Enero 2010 HELLA.pptx, págs. 99</p>
       </div>
     </div>
   </section>
@@ -5925,10 +6027,10 @@ Está prohibido realizar trabajos de soldadura (dura o blanda) en componentes de
   </div>
 
   <div class="grupo-componente" id="grp-aceite-frigorifico">
-    <div class="grupo-cab"><span class="grupo-nombre">Aceite PAG (Polialquilenglicol)</span><span class="grupo-cuenta">7 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Aceite PAG (Polialquilenglicol)</span><span class="grupo-cuenta">8 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 7 · NT26 · 3. Refrigerantes.pdf, págs. 27-28</summary>
+      <summary>Variante 1 de 8 · NT26 · 3. Refrigerantes.pdf, págs. 27-28</summary>
   <section id="nt26" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 26 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -5995,7 +6097,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 7 · NT27 · 3. Refrigerantes.pdf, págs. 28-29</summary>
+      <summary>Variante 2 de 8 · NT27 · 3. Refrigerantes.pdf, págs. 28-29</summary>
   <section id="nt27" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 27 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -6044,7 +6146,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 7 · NT28 · 3. Refrigerantes.pdf, págs. 28-29</summary>
+      <summary>Variante 3 de 8 · NT28 · 3. Refrigerantes.pdf, págs. 28-29</summary>
   <section id="nt28" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 28 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -6094,7 +6196,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 7 · NT229 · CLIMATIZACION INTRODUCCION.PDF, págs. 43-50</summary>
+      <summary>Variante 4 de 8 · NT229 · CLIMATIZACION INTRODUCCION.PDF, págs. 43-50</summary>
   <section id="nt229" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 229 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -6155,7 +6257,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 7 · NT254 · CLIMATIZADOR MD FRAN.docx, págs. Sección Aceite lubricante para equipo</summary>
+      <summary>Variante 5 de 8 · NT254 · CLIMATIZADOR MD FRAN.docx, págs. Sección Aceite lubricante para equipo</summary>
   <section id="nt254" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 254 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -6202,7 +6304,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 7 · NT273 · LA CLIMATIZACIÓN.pdf, págs. 67-70</summary>
+      <summary>Variante 6 de 8 · NT273 · LA CLIMATIZACIÓN.pdf, págs. 67-70</summary>
   <section id="nt273" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 273 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -6255,7 +6357,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 7 · NT324 · MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 10-11</summary>
+      <summary>Variante 7 de 8 · NT324 · MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 10-11</summary>
   <section id="nt324" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 324 <span class="subtipo">Fluido</span><span class="fusionado">Hella</span></div>
     <div class="nota-body">
@@ -6303,6 +6405,51 @@ Distribución del aceite en el circuito frigorífico:</p>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 10-11</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 8 de 8 · NT358 · ZZAA AUTOMOCION 1 Enero 2010 HELLA.pptx, págs. 96, 411-412</summary>
+  <section id="nt358" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 358 <span class="subtipo">Fluido</span><span class="fusionado">Hella</span></div>
+    <div class="nota-body">
+      <h1>Aceite sintético universal PAO-Oil 68</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Designación y norma</div>
+        <p>Aceite sintético base Polialfaolefina (PAO-Oil 68 / AA1). Lubricante frigorífico multiuso para instalaciones de climatización en automoción. (págs. 96, 411-412).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Propiedades</div>
+        <ul>
+<li>No es higroscópico: a diferencia del aceite PAG, no absorbe la humedad del aire ambiental, eliminando el riesgo de formación de ácidos corrosivos en el circuito. (pág. 412).</li>
+<li>Amplio margen de viscosidad e índice de fluidez constante. (págs. 411-412).</li>
+<li>Alta capacidad de separación de fases y excelente estabilidad térmica. (págs. 411-412).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Dónde se usa y cantidades</div>
+        <p>Se utiliza en compresores de aire acondicionado de turismos y vehículos industriales, incluyendo compresores de accionamiento eléctrico de alto voltaje. La cantidad se distribuye por regla general: 50% en el compresor, 20% en el evaporador, 10% en el condensador, 10% en el filtro deshidratador y 10% en las mangueras. (págs. 97, 412, 413).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Compatibilidades y mezclas prohibidas</div>
+        <p>Compatible y miscible con todos los lubricantes de climatización (PAG, Ester, aceite mineral) y con los agentes refrigerantes R12, R134a y R1234yf. Es apto para compresores eléctricos. (pág. 412).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <p>Envase de plástico blanco etiquetado con la marca PAO-Oil 68 (ISO Grade 68). (págs. 96, 411).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Manipulación, almacenamiento y residuos</div>
+        <p>Al no ser higroscópico, simplifica el almacenamiento en el taller sin degradarse al contacto breve con el aire. Almacenar en su envase original y gestionar los restos usados como residuo industrial de aceite sintético. (págs. 411-412).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Riesgos y normativa</div>
+        <p>No genera ácido fluorhídrico por hidratación al no absorber agua del ambiente, protegiendo las juntas y componentes metálicos del compresor. (pág. 412).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">ZZAA AUTOMOCION 1 Enero 2010 HELLA.pptx, págs. 96, 411-412</p>
       </div>
     </div>
   </section>
@@ -17971,6 +18118,11 @@ Al recibir señal de la unidad de control del airbag J234 ante un impacto leve q
     </div>
   </section>
 
+  <div class="grupo-componente" id="grp-lavado-circuito">
+    <div class="grupo-cab"><span class="grupo-nombre">Lavado del circuito del agente frigorífico</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 2 · NT338 · SSP 484 A7 Info y Clima (arrastrado) 5.pdf, págs. 50</summary>
   <section id="nt338" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 338 <span class="subtipo">Procedimiento</span><span class="fusionado">Audi</span></div>
     <div class="nota-body proceso">
@@ -18008,7 +18160,66 @@ Al recibir señal de la unidad de control del airbag J234 ante un impacto leve q
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 2 · NT359 · ZZAA AUTOMOCION 1 Enero 2010 HELLA.pptx, págs. 208-209, 218-221, 556-5</summary>
+  <section id="nt359" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 359 <span class="subtipo">Procedimiento</span><span class="fusionado">Hella</span></div>
+    <div class="nota-body proceso">
+      <h1>Lavado del circuito frigorífico con estación Hella ACTT 200 y montaje de tamiz de protección</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Limpiar y arrastrar del interior de las tuberías e intercambiadores las limaduras metálicas, aceites degradados, humedad y acidez producidos tras el gripado o fallo mecánico grave de un compresor. (págs. 214, 221).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ol>
+<li>Desmontar del circuito los elementos de paso restringido: el compresor, la válvula de expansión (o tubo de expansión) y el filtro deshidratador. (págs. 217, 563).</li>
+<li>Instalar los adaptadores puente específicos en las conexiones del compresor y de la válvula de expansión. (págs. 217, 218).</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Estación de servicio Hella ACTT 200 (o SECUsmart/SECUmobile) equipada con función de lavado, módulo visor transparente de decantación y juego de mangueras (azul, roja y amarilla). (págs. 209, 218-219).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Verificar que el refrigerante extraído en el visor transparente sale totalmente limpio y sin limaduras, ejecutar el vacío del circuito y comprobar la ausencia de fugas. (págs. 219, 221).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>Es imprescindible insertar el tamiz de protección en la aspiración del compresor tras el lavado para impedir que limaduras residuales atrapadas en los rincones del evaporador entren al compresor provocando un nuevo gripado. Instalar el tamiz sin haber lavado previamente el circuito provocará un efecto de esmerilado que destruirá el compresor a medio plazo. (págs. 221, 568).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Pasos</div>
+        <ol>
+<li>Conectar la manguera azul desde la salida del dispositivo visor de lavado hasta la toma de entrada de la estación de servicio. (págs. 218, 565).</li>
+<li>Conectar la manguera roja con la válvula antirretorno a la entrada de alta presión del circuito de aire acondicionado del vehículo. (págs. 220, 567).</li>
+<li>Conectar la manguera amarilla desde la salida de baja presión del circuito hasta la entrada del dispositivo visor transparente de lavado. (págs. 220, 567).</li>
+<li>Iniciar el ciclo de lavado automático impulsando el líquido de lavado a través de las canalizaciones y observando la extracción de suciedad y partículas en las botellas de cristal transparentes del visor. (págs. 218-219).</li>
+<li>Tras completar el lavado y secado con nitrógeno, desmontar los adaptadores puente. (pág. 217).</li>
+<li>Insertar obligatoriamente un tamiz o filtro de malla en el tubo de aspiración (lado de baja presión) del compresor antes de conectar las tuberías. (págs. 221, 568).</li>
+<li>Instalar un compresor nuevo (o revisado), una válvula de expansión nueva y un filtro deshidratador nuevo. (págs. 221, 246).</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT359_01</code> Módulo visor transparente de decantación de la estación Hella ACTT 200 conectado al condensador mediante las mangueras de lavado — Fuente: ZZAA AUTOMOCION 1 Enero 2010 HELLA.pptx, pág. 219</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">ZZAA AUTOMOCION 1 Enero 2010 HELLA.pptx, págs. 208-209, 218-221, 556-557, 565-568</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
+  <div class="grupo-componente" id="grp-sustitucion-compresor">
+    <div class="grupo-cab"><span class="grupo-nombre">Procedimiento de montaje y sustitución de un compresor nuevo</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 2 · NT353 · ZZ15. Diágnostico y averías.pdf, págs. 130-132</summary>
   <section id="nt353" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 353 <span class="subtipo">Procedimiento</span></div>
     <div class="nota-body proceso">
@@ -18072,9 +18283,71 @@ Al recibir señal de la unidad de control del airbag J234 ante un impacto leve q
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 2 · NT357 · ZZAA AUTOMOCION 1 Enero 2010 HELLA.pptx, págs. 84-88</summary>
+  <section id="nt357" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 357 <span class="subtipo">Procedimiento</span><span class="fusionado">Hella</span></div>
+    <div class="nota-body proceso">
+      <h1>Adaptación eléctrica para sustituir un compresor de regulación externa por uno con embrague electromagnético</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Adaptar la instalación eléctrica del vehículo para permitir el montaje de un compresor equipado con embrague electromagnético tradicional en sustitución de un compresor original de regulación externa. (págs. 84, 87).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ol>
+<li>Compresor de regulación externa desmontado del vehículo.</li>
+<li>Identificación de los dos cables de alimentación de la antigua electroválvula de regulación: un cable de +12 V y un cable de masa (-) por pulsos PWM. (págs. 84, 87).</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Relé automotriz de 4 terminales (contactos 30, 85, 86, 87), portafusible aéreo con fusible de protección, cableado eléctrico, terminales y equipo de diagnosis del vehículo. (págs. 84, 87).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <p>Tensión de excitación del relé y del embrague: +12 V CC. (págs. 84, 87).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Arrancar el motor, conectar el acondicionador de aire y comprobar que el relé conmuta y el embrague electromagnético acopla la polea sin tirones ni falsos acoplamientos. (págs. 84-88).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>Instalar siempre un fusible aéreo de amperaje adecuado en la toma positiva directa de la batería para evitar cortocircuitos. (págs. 84, 87).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Pasos</div>
+        <p>Opción A — Proceso recomendado por el fabricante (Opel):</p>
+<ol>
+<li>Conectar el cable de +12 V procedente de la línea de la antigua válvula al cable positivo (marrón) del embrague del compresor nuevo. (pág. 84).</li>
+<li>Conectar un cable positivo (+) directo de batería a través de un fusible al terminal 86 del relé. (pág. 84).</li>
+<li>Conectar un cable negativo (-) directo de batería al terminal 30 del relé. (pág. 85).</li>
+<li>Conectar el cable de masa (-) por pulsos procedente de la antigua válvula al terminal 85 del relé. (pág. 85).</li>
+<li>Conectar la salida del terminal 87 del relé al cable de masa (negro/blanco) del nuevo compresor. (pág. 85).</li>
+<li>Reprogramar la UCE del vehículo mediante el equipo de diagnosis original para modificar la señal de salida de negativo por pulsos (-) a negativo (-) continuo. (pág. 85).</li>
+</ol>
+<p>Opción B — Proceso alternativo extraoficial (sin reprogramación de UCE):</p>
+<ol>
+<li>Conectar el cable negativo (-) del nuevo compresor directamente a masa/batería. (pág. 87).</li>
+<li>Conectar positivo (+) de batería con fusible al terminal 30 del relé y masa (-) de batería al terminal 86 del relé. (pág. 87).</li>
+<li>Conectar el cable de +12 V procedente de la antigua válvula al terminal 85 del relé (para excitar la bobina del relé). (pág. 88).</li>
+<li>Conectar el terminal 87 del relé al cable positivo del embrague del nuevo compresor. (pág. 88).</li>
+<li>Aislar y anular el cable de negativo por pulsos (-) de la antigua válvula. (pág. 88).</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">ZZAA AUTOMOCION 1 Enero 2010 HELLA.pptx, págs. 84-88</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
   <div class="pie">
-    354 notas técnicas · generado el 24/09/2026.
+    359 notas técnicas · generado el 24/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
