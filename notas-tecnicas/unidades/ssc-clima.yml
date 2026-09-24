@@ -91,37 +91,45 @@ indice:
     claves:
       - compresor
       - embrague-compresor
+      - polea-dumper
+      - plato de valvulas
+      - disco oscilante
+      - pistones-embolos
       - valvula-sobrepresion
       - fusible-mecanico-compresor
-      - valvula-reguladora-compresor
+      - valvula-reguladora-compresor-variable
+        -  mecanica
+        -  electrónica PWM
 
   - seccion: 5. Lado de alta
     claves:
       - condensador
       - electroventilador-condensador
-      - filtro-deshidratador
-      - mirilla
+      - filtro-deshidratador-mirilla
+      
 
   - seccion: 6. Expansión y lado de baja
     claves:
-      - valvula-expansion
-      - estrangulador
+      - Dispositivos-expansion
+          - valvula-expansion
+          - estrangulador
       - evaporador
       - deposito-colector
       - tuberias-y-racores
 
   - seccion: 7. Sensores y actuadores
     claves:
-      - presostato
-      - transmisor-presion
-      - sensor-temperatura-exterior
-      - sensor-temperatura-interior
-      - sensor-evaporador
+      - presostato-binary-trinary-cuatrinary
+      - transmisor-presion-map-maf
+      - sensor-temperatura-ntc-exterior
+      - sensor-temperatura-ntc-interior
+      - sensor-ntc-evaporador
       - sensor-humedad
       - sensor-calidad-aire
       - fotosensor-solar
       - servomotor-trampilla
       - ventilador-habitaculo
+      - valvula-reguladora-compresor-variable
 
   - seccion: 8. Regulación y control
     claves:
