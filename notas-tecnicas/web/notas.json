@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-24",
- "total": 179,
+ "total": 180,
  "grupos": [
   "Calefacción",
   "Circuito frigorífico",
@@ -3870,6 +3870,71 @@
     {
      "titulo": "Imágenes requeridas",
      "texto": "Ubicación y disposición de los transmisores de temperatura G191 (difusor central) y G192 (zona de los pies) — Fuente: Sensor temperatura aire de entrada.pdf, pág. 2"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sensor-temperatura-interior.sensor-temperatura-interior",
+   "nt": 180,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-temperatura-ntc-interior",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Transmisor de temperatura interior",
+   "codigo": "G56",
+   "menu": "Transmisor de temperatura inte G56",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Sensor temperatura interior.pdf, págs. 1-2",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "control-climatizacion",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "servomotor-trampilla"
+   ],
+   "palabras": [
+    "G56",
+    "NTC",
+    "turbina de aspiración",
+    "columna de dirección",
+    "valor fijo 22 ºC",
+    "parpadeo display"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Suministrar la lectura real de la temperatura del aire del habitáculo a la unidad del autoclima para calcular la posición de la trampilla de temperatura en el modo de funcionamiento automático (pág. 1)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Sensor térmico del tipo resistencia NTC ubicado detrás del tablero de instrumentos, junto a la columna de dirección, provisto de una turbina de aspiración impulsada por un motor eléctrico (pág. 1)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El motor eléctrico hace girar la turbina de forma continua para provocar un flujo constante de aire del habitáculo a través de la resistencia NTC, garantizando una medición real de la temperatura ambiental sin interferencias de calor estático (pág. 1). La variación de resistencia de la NTC es analizada por la unidad del autoclima para posicionar la trampilla de temperatura (pág. 1)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Campo o rango de medición de la resistencia NTC: de -40 ºC a +85 ºC (pág. 1)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Avería eléctrica o fallo de señal en el transmisor (pág. 2)."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Al detectarse una avería en el transmisor, la unidad de control toma como referencia un valor supletorio fijo de 22 ºC (pág. 2). Al seleccionar temperaturas superiores o inferiores a 22 ºC, el sistema sigue funcionando pero calienta o enfría el habitáculo más allá de lo solicitado al no disponer de lectura real (pág. 2). Cada vez que se conecta el autoclima, parpadean todos los dígitos del display (pág. 2)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Ubicación del transmisor G56 junto a la columna de dirección, turbina de aspiración y resistencia NTC — Fuente: Sensor temperatura interior.pdf, págs. 1-2"
     }
    ]
   },
