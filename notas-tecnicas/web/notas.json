@@ -2698,6 +2698,14 @@
    "hecha": false
   },
   {
+   "nombre": "NT594_01",
+   "nt": 594,
+   "titulo": "Esquema eléctrico del sistema de climatización",
+   "seccion": "8. Regulación y control",
+   "descripcion": "Esquema eléctrico de climatización indicando el código de colores de señales, líneas de bus y patillaje de interconexión entre J255, J293, E87 y T16 — Fuente: Clima Ibiza.pdf, pág. 1",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -2722,7 +2730,7 @@
    "hecha": false
   }
  ],
- "total": 585,
+ "total": 586,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -25289,6 +25297,73 @@
      "titulo": "Imágenes requeridas",
      "texto": "Cuadro sinóptico de la estructura descentralizada identificando la unidad J255, J293, radiocasete R, unidad del motor y sensores/actuadores asociados — Fuente: CD. Climatización en Ibiza99.pdf, págs. 8-11",
      "html": "<ul>\n<li>Cuadro sinóptico de la estructura descentralizada identificando la unidad J255, J293, radiocasete R, unidad del motor y sensores/actuadores asociados — Fuente: CD. Climatización en Ibiza99.pdf, págs. 8-11</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.regulacion-automatica.clima-ibiza-99",
+   "nt": 594,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-automatica",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Esquema eléctrico del sistema de climatización",
+   "codigo": "",
+   "menu": "Esquema eléctrico del sistema de clima",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Clima Ibiza 99.pdf, págs. 1-2",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "esquema eléctrico",
+    "codificación de colores",
+    "interconexiones",
+    "leyenda",
+    "circuito de climatización"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Representar la arquitectura de interconexión eléctrica, líneas de alimentación, masas, entradas, salidas y comunicaciones por bus entre los componentes del sistema de climatización en el SEAT Ibiza '99. (págs. 1-2)",
+     "html": "<p>Representar la arquitectura de interconexión eléctrica, líneas de alimentación, masas, entradas, salidas y comunicaciones por bus entre los componentes del sistema de climatización en el SEAT Ibiza '99. <span class=\"pag\">págs. 1-2</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El esquema eléctrico normalizado utiliza una codificación gráfica de colores para identificar inequívocamente la naturaleza técnica de cada conductor e hilo de señal que une los sensores, actuadores, conmutadores y unidades de control de la instalación. (págs. 1-2)",
+     "html": "<p>El esquema eléctrico normalizado utiliza una codificación gráfica de colores para identificar inequívocamente la naturaleza técnica de cada conductor e hilo de señal que une los sensores, actuadores, conmutadores y unidades de control de la instalación. <span class=\"pag\">págs. 1-2</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El circuito eléctrico estructura el conexionado entre los siguientes bloques funcionales: Unidades de control y manejo: Unidad de manejo e indicación (E87), unidad de control del autoclima (J255), unidad de control del aire acondicionado (J293), unidad de control del motor (Jxxx), radiocasete (R) y cuadro de instrumentos (J285). (págs. 1-2) Sensores y transmisores: Transmisor de temperatura exterior (G17), transmisor de temperatura interior (G56), transmisores de temperatura en los difusores centrales (G191) y zona de pies (G192), transmisor de presión electrónico (G65), conmutador de presión para aire acondicionado (F129) y potenciómetro del motor de la trampilla de temperatura (G92). (págs. 1-2) Actuadores y motores: Acoplamiento magnético (N25), motor de la turbina de aire (V2), motor para la turbina del transmisor interior (V42), motor para la trampilla de temperatura (V68), motor para la trampilla de recirculación (V113), ventiladores del líquido refrigerante (V7 y V35) y regulador de régimen de la turbina (J126). (págs. 1-2) Conmutadores y elementos de ajuste: Conmutador térmico de los ventiladores (F18), interruptor térmico (F38) y regulador de iluminación (E20). (págs. 1-2) Líneas de alimentación y diagnosis: Alimentación con positivo de contacto (S26), alimentación de positivo directo/contacto (S30), alimentación de la unidad J293 (S180) y conector de diagnóstico de 16 polos (T16). (págs. 1-2) La codificación por colores de los conductores establece la siguiente asignación: Señal de entrada. Señal de salida. Alimentación de positivo. Masa. Señal bidireccional. Línea Bus. (pág. 1)",
+     "html": "<p>El circuito eléctrico estructura el conexionado entre los siguientes bloques funcionales:</p>\n<ul>\n<li><strong>Unidades de control y manejo:</strong> Unidad de manejo e indicación (E87), unidad de control del autoclima (J255), unidad de control del aire acondicionado (J293), unidad de control del motor (Jxxx), radiocasete (R) y cuadro de instrumentos (J285). <span class=\"pag\">págs. 1-2</span></li>\n<li><strong>Sensores y transmisores:</strong> Transmisor de temperatura exterior (G17), transmisor de temperatura interior (G56), transmisores de temperatura en los difusores centrales (G191) y zona de pies (G192), transmisor de presión electrónico (G65), conmutador de presión para aire acondicionado (F129) y potenciómetro del motor de la trampilla de temperatura (G92). <span class=\"pag\">págs. 1-2</span></li>\n<li><strong>Actuadores y motores:</strong> Acoplamiento magnético (N25), motor de la turbina de aire (V2), motor para la turbina del transmisor interior (V42), motor para la trampilla de temperatura (V68), motor para la trampilla de recirculación (V113), ventiladores del líquido refrigerante (V7 y V35) y regulador de régimen de la turbina (J126). <span class=\"pag\">págs. 1-2</span></li>\n<li><strong>Conmutadores y elementos de ajuste:</strong> Conmutador térmico de los ventiladores (F18), interruptor térmico (F38) y regulador de iluminación (E20). <span class=\"pag\">págs. 1-2</span></li>\n<li><strong>Líneas de alimentación y diagnosis:</strong> Alimentación con positivo de contacto (S26), alimentación de positivo directo/contacto (S30), alimentación de la unidad J293 (S180) y conector de diagnóstico de 16 polos (T16). <span class=\"pag\">págs. 1-2</span></li>\n</ul>\n<p>La codificación por colores de los conductores establece la siguiente asignación:</p>\n<ul>\n<li>Señal de entrada.</li>\n<li>Señal de salida.</li>\n<li>Alimentación de positivo.</li>\n<li>Masa.</li>\n<li>Señal bidireccional.</li>\n<li>Línea Bus. <span class=\"pag\">pág. 1</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Conector de diagnosis para equipo de taller: T16 (conector normalizado de 16 polos). (pág. 2)",
+     "html": "<ul>\n<li>Conector de diagnosis para equipo de taller: T16 (conector normalizado de 16 polos). <span class=\"pag\">pág. 2</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Interpretar la función de una línea de cableado por el tono del aislante sin consultar la leyenda de codificación del esquema. (pág. 1)",
+     "html": "<ul>\n<li>Interpretar la función de una línea de cableado por el tono del aislante sin consultar la leyenda de codificación del esquema. <span class=\"pag\">pág. 1</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema eléctrico de climatización indicando el código de colores de señales, líneas de bus y patillaje de interconexión entre J255, J293, E87 y T16 — Fuente: Clima Ibiza.pdf, pág. 1",
+     "html": "<ul>\n<li>Esquema eléctrico de climatización indicando el código de colores de señales, líneas de bus y patillaje de interconexión entre J255, J293, E87 y T16 — Fuente: Clima Ibiza.pdf, pág. 1</li>\n</ul>"
     }
    ]
   },
