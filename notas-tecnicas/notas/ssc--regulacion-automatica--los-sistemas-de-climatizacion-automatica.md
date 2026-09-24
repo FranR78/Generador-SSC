@@ -6,8 +6,8 @@ nt: 307
 tipo: proceso
 subtipo: fundamento
 clase: fundamento
-titulo: "Sistemas de climatización automática e interacción de entornos"
-menu: "Sistemas de climatización automática e"
+titulo: "Regulación automática de la climatización e interacción de entornos"
+menu: "Regulación automática de la climatizac"
 grupo: "Control de climatización"
 clave: regulacion-automatica
 area: climatizacion
@@ -20,18 +20,18 @@ palabras: ["climatización automática", "confort térmico", "temperatura de con
 
 ## Objeto
 
-Acondicionar el habitáculo del vehículo para alcanzar y mantener en su interior el confort térmico correspondiente a la temperatura de consigna seleccionada. (págs. 1-2)
+Acondicionar el habitáculo del vehículo para alcanzar y mantener en su interior el confort térmico correspondiente a la temperatura de consigna seleccionada. (pág. 1)
 
 ## Fundamento
 
-El sistema de climatización automática recopila datos y parámetros procedentes de diversos entornos del vehículo (habitáculo, salpicadero, conjunto A/C, motor térmico, circuito de calor y circuito de frío) para regular el funcionamiento global de la instalación mediante una tarjeta electrónica o centralita. (págs. 1-7)
+El sistema de climatización automática recopila datos y parámetros procedentes de diversos entornos del vehículo (habitáculo, salpicadero, conjunto A/C, motor térmico, circuito de calor y circuito de frío) para regular el funcionamiento global de la instalación mediante una tarjeta electrónica o centralita. (págs. 1, 8)
 
 ## Desarrollo
 
 El funcionamiento global del sistema se estructura mediante las interacciones de sus entornos funcionales:
 - **Habitáculo y salpicadero:** El aire impulsado por los difusores se mezcla con el aire ambiente para alcanzar la temperatura de consigna. La calidad del aislamiento térmico, la temperatura inicial de las paredes y la conductividad térmica del salpicadero influyen directamente en el tiempo necesario para lograr la convergencia térmica. (págs. 1-2)
-- **Conjunto A/C (distribución de trampillas):** Enlaza la parte del compartimento motor con el habitáculo. Alberga el radiador de calefacción, el evaporador, el impulsor de aire y las trampillas con sus correspondientes actuadores. (págs. 3, 5, 6)
-- **Motor térmico y circuitos térmicos:** El motor arrastra mediante correa el compresor y la bomba de líquido refrigerante. El circuito de calor aporta la energía térmica mediante el radiador de calefacción. (págs. 4, 5)
+- **Conjunto A/C (distribución de trampillas):** Enlaza la parte del compartimento motor con el habitáculo. Alberga el radiador de calefacción, el evaporador, el impulsor de aire y las trampillas con sus correspondientes actuadores. (pág. 3)
+- **Motor térmico y circuitos térmicos:** El motor arrastra mediante correa el compresor y la bomba de líquido refrigerante. El circuito de calor aporta la energía térmica mediante el radiador de calefacción. (págs. 4, 6)
 - **Interacción de señales con la centralita:**
   - **Sonda de habitáculo:** Informa de la temperatura interior instantánea para verificar si se ha alcanzado la consigna. (pág. 6)
   - **Sondas de aire soplado y exterior:** Informan si la posición de la trampilla de mezcla es la adecuada para alcanzar la temperatura elegida, así como el caudal de aire y la distribución necesarios. (pág. 7)
@@ -43,7 +43,7 @@ El funcionamiento global del sistema se estructura mediante las interacciones de
 ## Errores de concepto frecuentes
 
 - Creer que la temperatura interior depende únicamente de la temperatura del aire soplado, omitiendo la influencia térmica inicial del salpicadero y de las paredes del habitáculo. (págs. 1-2)
-- Suponer que la centralita de climatización funciona de manera aislada sin comunicarse con los módulos electrónicos de inyección y refrigeración del motor. (págs. 4, 7)
+- Suponer que la centralita de climatización funciona de manera aislada sin comunicarse con los módulos electrónicos de inyección y refrigeración del motor. (págs. 4, 7, 8)
 
 ## Imágenes requeridas
 
