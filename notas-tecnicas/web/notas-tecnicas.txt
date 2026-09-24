@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">425 notas · 24/09/2026</p>
+  <p class="sidebar-meta">433 notas · 24/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -477,6 +477,16 @@
     <li class="grupo"><span class="menu-grupo-titulo">Climatizacion asientos</span></li>
     <li><a href="#nt423">NT423 · Sistema de climatización de asientos</a></li>
     <li><a href="#nt424">NT424 · Ventiladores axiales del asiento de co</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
+    <li><a href="#nt426">NT426 · Diagnóstico por falta de frío</a></li>
+    <li><a href="#nt427">NT427 · Diagnóstico por evaporador congelado</a></li>
+    <li><a href="#nt428">NT428 · Diagnóstico por alta presión elevada</a></li>
+    <li><a href="#nt429">NT429 · Diagnóstico por baja presión elevada</a></li>
+    <li><a href="#nt430">NT430 · Diagnóstico por alta presión baja y ba</a></li>
+    <li><a href="#nt431">NT431 · Diagnóstico por baja presión baja</a></li>
+    <li><a href="#nt432">NT432 · Diagnóstico por inoperatividad del com</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Refrigeración del motor</span></li>
+    <li><a href="#nt433">NT433 · Diagnóstico por sobrecalentamiento del</a></li>
   </ul>
 </nav>
 
@@ -21597,8 +21607,206 @@ Se montan 4 unidades por asiento:</p>
     </div>
   </section>
 
+  <section id="nt426" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 426 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico por falta de frío</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Falta de frío en el sistema de climatización. (pág. 1)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>Evaporador congelado: verificar el termostato.</li>
+<li>El embrague no actúa: verificar la alimentación eléctrica.</li>
+<li>La correa patina: verificar la tensión de la correa.</li>
+<li>Depósito deshidratador sucio: sustituir el depósito deshidratador.</li>
+<li>Válvula de expansión averiada: sustituir la válvula de expansión.</li>
+<li>Alta presión demasiado elevada: verificar la causa de alta elevada.</li>
+<li>Baja presión demasiado elevada: verificar la causa de baja elevada.</li>
+<li>Válvula de expansión congelada: limpiar el circuito y carga circuito (filtro).</li>
+<li>Válvula de expansión bloqueada: sustituir la válvula de expansión.</li>
+<li>El compresor no arranca: verificar presiones y llenar el circuito. (pág. 1)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AVERÍAS.pdf, págs. 1</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt427" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 427 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico por evaporador congelado</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Evaporador congelado. (pág. 2)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>Termostato fuera de servicio: sustituir el termostato.</li>
+<li>Evaporador sucio: limpiar el conjunto evaporador. (pág. 2)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AVERÍAS.pdf, págs. 2</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt428" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 428 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico por alta presión elevada</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Alta presión demasiado elevada en el circuito frigorífico. (pág. 2)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>Condensador sucio: limpiar el condensador.</li>
+<li>Aire en el interior del circuito (humedad): limpieza del circuito y cargar circuito (filtro).</li>
+<li>Exceso de carga: recuperar refrigerante y cargar el circuito.</li>
+<li>Refrigeración insuficiente: revisar los ventiladores.</li>
+<li>Filtro deshidratador sucio: sustituir el filtro deshidratador. (pág. 2)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AVERÍAS.pdf, págs. 2</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt429" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 429 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico por baja presión elevada</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Baja presión demasiado elevada en el circuito frigorífico. (pág. 3)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>Bulbo de la válvula de expansión no actúa: sustituir la válvula de expansión.</li>
+<li>Exceso de carga: recuperar y volver a llenar el circuito.</li>
+<li>Válvula de aspiración abierta: reparar o sustituir el compresor. (pág. 3)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AVERÍAS.pdf, págs. 3</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt430" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 430 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico por alta presión baja y baja presión baja</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Alta presión baja y baja presión baja en el circuito frigorífico. (pág. 3)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>Fuga de fluido frigorífico: reparar (preguntar por la última carga).</li>
+<li>Falta de fluido frigorífico: comprobar la fuga y cargar el circuito.</li>
+<li>Filtro deshidratador sucio: sustituir el filtro deshidratador.</li>
+<li>Válvula de expansión averiada: sustituir la válvula de expansión.</li>
+<li>Evaporador congelado: verificar la sonda termostática (termostato).</li>
+<li>Evaporador sucio: limpiar el conjunto evaporador.</li>
+<li>Ventilador centrífugo parado: verificar el circuito eléctrico. (pág. 3)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AVERÍAS.pdf, págs. 3</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt431" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 431 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico por baja presión baja</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Baja presión baja en el circuito frigorífico. (pág. 4)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>Carga insuficiente: verificar fugas y llenar el circuito.</li>
+<li>Válvula de expansión agarrotada: sustituir la válvula de expansión.</li>
+<li>Evaporador congelado: verificar la sonda termostática (termostato).</li>
+<li>Evaporador sucio: limpiar el conjunto evaporador.</li>
+<li>Ventilador centrífugo parado: verificar el circuito eléctrico. (pág. 4)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AVERÍAS.pdf, págs. 4</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt432" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 432 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico por inoperatividad del compresor</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>El compresor no funciona. (pág. 4)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>La correa está rota: comprobar el incidente y sustituirla.</li>
+<li>El embrague no funciona: comprobar el embrague y sustituir.</li>
+<li>Alimentación eléctrica defectuosa: verificar el circuito eléctrico (siguiendo un orden).</li>
+<li>Termostato fuera de servicio: sustituir el termostato.</li>
+<li>Fusible fuera de servicio: comprobar el incidente y sustituirlo. (pág. 4)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AVERÍAS.pdf, págs. 4</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt433" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 433 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico por sobrecalentamiento del motor</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>El motor del vehículo se calienta. (pág. 5)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>El condensador está sucio: limpieza del condensador y del circuito si procede. (pág. 5)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">AVERÍAS.pdf, págs. 5</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    425 notas técnicas · generado el 24/09/2026.
+    433 notas técnicas · generado el 24/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
