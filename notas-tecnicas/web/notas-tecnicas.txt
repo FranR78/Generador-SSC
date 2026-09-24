@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">466 notas · 24/09/2026</p>
+  <p class="sidebar-meta">475 notas · 24/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -272,9 +272,9 @@
     <li><a href="#grp-regulacion-automatica">Sistemas y opciones de climatización en el automóvil <span class="menu-cuenta">23 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Fluidos frigoríficos</span></li>
     <li><a href="#grp-refrigerante-r12">Agente frigorífico R12 <span class="menu-cuenta">2 fuentes</span></a></li>
-    <li><a href="#grp-refrigerante-r1234yf">Agente frigorífico R1234yf <span class="menu-cuenta">3 fuentes</span></a></li>
-    <li><a href="#grp-refrigerante-r744">Agente frigorífico R744 (dióxido de carbono) <span class="menu-cuenta">2 fuentes</span></a></li>
-    <li><a href="#grp-aceite-frigorifico">Aceite PAG (Polialquilenglicol) <span class="menu-cuenta">14 fuentes</span></a></li>
+    <li><a href="#grp-refrigerante-r1234yf">Agente frigorífico R1234yf <span class="menu-cuenta">4 fuentes</span></a></li>
+    <li><a href="#grp-refrigerante-r744">Agente frigorífico R744 (dióxido de carbono) <span class="menu-cuenta">3 fuentes</span></a></li>
+    <li><a href="#grp-aceite-frigorifico">Aceite PAG (Polialquilenglicol) <span class="menu-cuenta">15 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">PRL y seguridad</span></li>
     <li><a href="#nt29">NT29 · Equipos de protección individual en el</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Equipos de taller</span></li>
@@ -492,7 +492,7 @@
     <li><a href="#nt440">NT440 · Ce0</a></li>
     <li><a href="#nt441">NT441 · Ce2</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Normativa y medioambiente</span></li>
-    <li><a href="#nt451">NT451 · Certificación para la manipulación de</a></li>
+    <li><a href="#grp-normativa-gases-fluorados">Certificación para la manipulación de gases fluorados <span class="menu-cuenta">2 fuentes</span></a></li>
     <li><a href="#nt454">NT454 · Indicadores ambientales PAO y PCA</a></li>
     <li><a href="#nt455">NT455 · Directiva 2006/40/CE y Reglamento UE 5</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Fluidos frigoríficos</span></li>
@@ -504,6 +504,14 @@
     <li><a href="#nt473">NT473 · Diagnóstico de averías hidráulicas por</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">POR CLASIFICAR</span></li>
     <li><a href="#nt474">NT474 · Nº10 Esquemas eléctricos</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">PRL y seguridad</span></li>
+    <li><a href="#nt477">NT477 · Protocolo de seguridad para la manipul</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Equipos de taller</span></li>
+    <li><a href="#grp-estacion-de-carga">Estación de carga y detectores de fugas para R-1234yf <span class="menu-cuenta">2 fuentes</span></a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">PRL y seguridad</span></li>
+    <li><a href="#nt480">NT480 · Protocolo de seguridad para la manipul</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Equipos de taller</span></li>
+    <li><a href="#nt483">NT483 · Protocolo de servicio y reglas de oro</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Fluidos frigoríficos</span></li>
     <li><a href="#nt1001">NT1001 · Agente frigorífico R134a</a></li>
   </ul>
@@ -6151,10 +6159,10 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </div>
 
   <div class="grupo-componente" id="grp-refrigerante-r1234yf">
-    <div class="grupo-cab"><span class="grupo-nombre">Agente frigorífico R1234yf</span><span class="grupo-cuenta">3 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Agente frigorífico R1234yf</span><span class="grupo-cuenta">4 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 3 · NT23 · 3. Refrigerantes.pdf, págs. 24-27</summary>
+      <summary>Variante 1 de 4 · NT23 · 3. Refrigerantes.pdf, págs. 24-27</summary>
   <section id="nt23" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 23 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -6208,7 +6216,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 3 · NT89 · 16. Alternativa a los gases fluorados.pdf, págs. 137, 139-144</summary>
+      <summary>Variante 2 de 4 · NT89 · 16. Alternativa a los gases fluorados.pdf, págs. 137, 139-144</summary>
   <section id="nt89" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 89 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -6281,7 +6289,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 3 · NT266 · LA CLIMATIZACIÓN.pdf, págs. 38-40</summary>
+      <summary>Variante 3 de 4 · NT266 · LA CLIMATIZACIÓN.pdf, págs. 38-40</summary>
   <section id="nt266" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 266 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -6328,13 +6336,54 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
     </div>
   </section>
     </details>
+    <details class="variante">
+      <summary>Variante 4 de 4 · NT476 · Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 3-5, 12</summary>
+  <section id="nt476" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 476 <span class="subtipo">Fluido</span></div>
+    <div class="nota-body">
+      <h1>Refrigerante HFO-1234yf</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Designación y norma</div>
+        <p>Nombre químico: 2,3,3,3-Tetrafluoropropeno. Clasificación ASHRAE: A2L (baja toxicidad, ligeramente inflamable). (pág. 5)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Propiedades</div>
+        <p>Gas sintético de la familia de las Hidrofluoroolefinas (HFO) diseñado como sustituto directo del R-134a. Presenta propiedades termodinámicas y presiones de trabajo similares al R-134a, pero con un impacto ambiental drásticamente inferior. (págs. 4-5)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Dónde se usa y cantidades</div>
+        <p>Utilizado como estándar de climatización en la mayoría de vehículos de nuevos modelos desde 2017. Las presiones de trabajo en el lado de alta son de aproximadamente 17 bar. (págs. 3-4, 12)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Compatibilidades y mezclas prohibidas</div>
+        <p>Incompatible con equipos, estaciones de carga y detectores de fugas diseñados para R-134a. Prohibida la mezcla con R-134a, R-744 u otros gases. Requiere el uso exclusivo de aceites PAG específicos para R-1234yf. (págs. 7, 12, 15)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <p>Etiqueta de servicio en el vehículo e indicación de clasificación A2L de inflamabilidad en envases. (págs. 5, 14)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Manipulación, almacenamiento y residuos</div>
+        <p>Almacenar los recipientes en un lugar fresco, seco y bien ventilado, protegidos de la luz solar directa y alejados de fuentes de calor. (pág. 7)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Riesgos y normativa</div>
+        <p>Riesgo principal: inflamabilidad. Es un gas ligeramente inflamable (difícil de encender, baja velocidad de propagación de llama). Puede arder si entra en contacto con una fuente de ignición a su temperatura de autoignición de 405 ºC. Posee un PAO = 0 y un PCA = 4 (un 99,7 % inferior al del R-134a). Cumple la restricción legal de PCA &lt; 150 de la UE. (págs. 3, 5)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 3-5, 12</p>
+      </div>
+    </div>
+  </section>
+    </details>
   </div>
 
   <div class="grupo-componente" id="grp-refrigerante-r744">
-    <div class="grupo-cab"><span class="grupo-nombre">Agente frigorífico R744 (dióxido de carbono)</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Agente frigorífico R744 (dióxido de carbono)</span><span class="grupo-cuenta">3 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 2 · NT24 · 3. Refrigerantes.pdf, págs. 24-27</summary>
+      <summary>Variante 1 de 3 · NT24 · 3. Refrigerantes.pdf, págs. 24-27</summary>
   <section id="nt24" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 24 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -6385,7 +6434,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 2 · NT91 · 16. Alternativa a los gases fluorados.pdf, págs. 137, 139, 145-149</summary>
+      <summary>Variante 2 de 3 · NT91 · 16. Alternativa a los gases fluorados.pdf, págs. 137, 139, 145-149</summary>
   <section id="nt91" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 91 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -6453,13 +6502,54 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
     </div>
   </section>
     </details>
+    <details class="variante">
+      <summary>Variante 3 de 3 · NT479 · Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 4, 8-9, </summary>
+  <section id="nt479" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 479 <span class="subtipo">Fluido</span></div>
+    <div class="nota-body">
+      <h1>Refrigerante R-744 (Dióxido de Carbono)</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Designación y norma</div>
+        <p>Nombre químico: Dióxido de Carbono (CO2). Denominación de refrigerante: R-744. Clasificación de seguridad ASHRAE: A1 (baja toxicidad, no inflamable). (pág. 8)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Propiedades</div>
+        <p>Refrigerante natural inorgánico con un impacto ambiental mínimo. No es tóxico ni inflamable, pero opera a presiones extremadamente altas en régimen transcrítico. (págs. 4, 8-9)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Dónde se usa y cantidades</div>
+        <p>Utilizado en sistemas de climatización específicos (adoptado por fabricantes como Mercedes-Benz). Las presiones de trabajo en el lado de alta son entre 5 y 10 veces superiores a los sistemas R-134a/R-1234yf, superando los 130 bar. (págs. 4, 9, 12)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Compatibilidades y mezclas prohibidas</div>
+        <p>Incompatibilidad total. Ningún componente (mangueras, racores, válvulas, compresor, evaporador) ni equipo de los sistemas R-134a o R-1234yf es compatible con un sistema R-744. Emplea aceites específicos POE o PAG. (págs. 11-12)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <p>Etiqueta identificativa R-744 / CO2 en el vano motor e indicaciones de alerta por alta presión. (págs. 8-9)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Manipulación, almacenamiento y residuos</div>
+        <p>Almacenar las botellas protegidas del calor. Prohibido calentar las botellas para elevar la presión. (pág. 10)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Riesgos y normativa</div>
+        <p>Riesgos principales: presiones extremas (&gt;130 bar) con riesgo de explosión de elementos no adecuados, quemaduras por congelación severas al contacto con CO2 líquido (-78,5 ºC) y riesgo de asfixia por desplazamiento del oxígeno en espacios cerrados o fosos. Posee PAO = 0 y PCA = 1 (gas de referencia). Cumple holgadamente la directiva europea PCA &lt; 150. (págs. 4, 8-10)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 4, 8-9, 12</p>
+      </div>
+    </div>
+  </section>
+    </details>
   </div>
 
   <div class="grupo-componente" id="grp-aceite-frigorifico">
-    <div class="grupo-cab"><span class="grupo-nombre">Aceite PAG (Polialquilenglicol)</span><span class="grupo-cuenta">14 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Aceite PAG (Polialquilenglicol)</span><span class="grupo-cuenta">15 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 14 · NT26 · 3. Refrigerantes.pdf, págs. 27-28</summary>
+      <summary>Variante 1 de 15 · NT26 · 3. Refrigerantes.pdf, págs. 27-28</summary>
   <section id="nt26" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 26 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -6526,7 +6616,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 14 · NT27 · 3. Refrigerantes.pdf, págs. 28-29</summary>
+      <summary>Variante 2 de 15 · NT27 · 3. Refrigerantes.pdf, págs. 28-29</summary>
   <section id="nt27" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 27 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -6575,7 +6665,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 14 · NT28 · 3. Refrigerantes.pdf, págs. 28-29</summary>
+      <summary>Variante 3 de 15 · NT28 · 3. Refrigerantes.pdf, págs. 28-29</summary>
   <section id="nt28" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 28 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -6625,7 +6715,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 14 · NT229 · CLIMATIZACION INTRODUCCION.PDF, págs. 43-50</summary>
+      <summary>Variante 4 de 15 · NT229 · CLIMATIZACION INTRODUCCION.PDF, págs. 43-50</summary>
   <section id="nt229" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 229 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -6686,7 +6776,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 14 · NT254 · CLIMATIZADOR MD FRAN.docx, págs. Sección Aceite lubricante para equipo</summary>
+      <summary>Variante 5 de 15 · NT254 · CLIMATIZADOR MD FRAN.docx, págs. Sección Aceite lubricante para equipo</summary>
   <section id="nt254" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 254 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -6733,7 +6823,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 14 · NT273 · LA CLIMATIZACIÓN.pdf, págs. 67-70</summary>
+      <summary>Variante 6 de 15 · NT273 · LA CLIMATIZACIÓN.pdf, págs. 67-70</summary>
   <section id="nt273" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 273 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -6786,7 +6876,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 14 · NT324 · MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 10-11</summary>
+      <summary>Variante 7 de 15 · NT324 · MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 10-11</summary>
   <section id="nt324" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 324 <span class="subtipo">Fluido</span><span class="fusionado">Hella</span></div>
     <div class="nota-body">
@@ -6839,7 +6929,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 8 de 14 · NT358 · ZZAA AUTOMOCION 1 Enero 2010 HELLA.pptx, págs. 96, 411-412</summary>
+      <summary>Variante 8 de 15 · NT358 · ZZAA AUTOMOCION 1 Enero 2010 HELLA.pptx, págs. 96, 411-412</summary>
   <section id="nt358" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 358 <span class="subtipo">Fluido</span><span class="fusionado">Hella</span></div>
     <div class="nota-body">
@@ -6884,7 +6974,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 9 de 14 · NT360 · aceites-para-compresorpdf-1586190505.pdf, págs. 22-25</summary>
+      <summary>Variante 9 de 15 · NT360 · aceites-para-compresorpdf-1586190505.pdf, págs. 22-25</summary>
   <section id="nt360" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 360 <span class="subtipo">Fluido</span><span class="fusionado">Behr Hella</span></div>
     <div class="nota-body">
@@ -6962,7 +7052,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 10 de 14 · NT361 · aceites-para-compresorpdf-1586190505.pdf, págs. 22-25</summary>
+      <summary>Variante 10 de 15 · NT361 · aceites-para-compresorpdf-1586190505.pdf, págs. 22-25</summary>
   <section id="nt361" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 361 <span class="subtipo">Fluido</span><span class="fusionado">Behr Hella</span></div>
     <div class="nota-body">
@@ -7055,7 +7145,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 11 de 14 · NT362 · aceites-para-compresorpdf-1586190505.pdf, págs. 22-25</summary>
+      <summary>Variante 11 de 15 · NT362 · aceites-para-compresorpdf-1586190505.pdf, págs. 22-25</summary>
   <section id="nt362" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 362 <span class="subtipo">Fluido</span><span class="fusionado">Behr Hella</span></div>
     <div class="nota-body">
@@ -7125,7 +7215,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 12 de 14 · NT365 · Cargas Aire Acondicionado.pdf, págs. 1-10</summary>
+      <summary>Variante 12 de 15 · NT365 · Cargas Aire Acondicionado.pdf, págs. 1-10</summary>
   <section id="nt365" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 365 <span class="subtipo">Fluido</span><span class="fusionado">Serca</span></div>
     <div class="nota-body">
@@ -7210,7 +7300,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 13 de 14 · NT444 · Cómo hacer el análisis de fallos de un compresor Área premium.pdf, </summary>
+      <summary>Variante 13 de 15 · NT444 · Cómo hacer el análisis de fallos de un compresor Área premium.pdf, </summary>
   <section id="nt444" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 444 <span class="subtipo">Fluido</span><span class="fusionado">Hella</span></div>
     <div class="nota-body">
@@ -7251,7 +7341,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 14 de 14 · NT459 · Nº10. Carga y Diagonostico.pdf, págs. 118, 121</summary>
+      <summary>Variante 14 de 15 · NT459 · Nº10. Carga y Diagonostico.pdf, págs. 118, 121</summary>
   <section id="nt459" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 459 <span class="subtipo">Procedimiento</span></div>
     <div class="nota-body proceso">
@@ -7304,6 +7394,58 @@ Distribución del aceite en el circuito frigorífico:</p>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">Nº10. Carga y Diagonostico.pdf, págs. 118, 121</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 15 de 15 · NT482 · Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 8, 12-14</summary>
+  <section id="nt482" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 482 <span class="subtipo">Fluido</span></div>
+    <div class="nota-body">
+      <h1>Aceites para refrigerantes PAG y POE</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Designación y norma</div>
+        <p>Aceites sintéticos de las familias PAG (PoliAlquilenGlicol) y POE (PoliolÉster). (pág. 13)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Propiedades</div>
+        <p>Encargados de lubricar, refrigerar el compresor y sellar los componentes móviles del circuito de climatización. Presentan un carácter altamente higroscópico (capacidad extrema de absorber humedad del aire). (págs. 12-13)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Dónde se usa y cantidades</div>
+        <p>Se distribuyen por todo el circuito disueltos con el refrigerante con la siguiente proporción aproximada:</p>
+<ul>
+<li>Compresor: 50 %.</li>
+<li>Evaporador: 20 %.</li>
+<li>Condensador: 10 %.</li>
+<li>Tubo de aspiración: 10 %.</li>
+<li>Filtro: 10 %. (págs. 13-14)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Compatibilidades y mezclas prohibidas</div>
+        <p>Incompatibilidad entre tipos y variantes: los aceites PAG para R-1234yf no son compatibles con los aceites PAG para R-134a. En R-744 se emplean formulaciones específicas POE o PAG. Se debe usar SIEMPRE el tipo y la viscosidad exactos especificados en la etiqueta del fabricante. Usar el aceite incorrecto destruye el compresor. (págs. 8, 12-14)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <p>Envases sellados con especificación de la viscosidad (ej. PAG 46, PAG 100, PAG 150) y tipo de refrigerante compatible. (págs. 7, 13)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Manipulación, almacenamiento y residuos</div>
+        <p>Debido a su alta higroscopicidad, los envases deben permanecer herméticamente sellados hasta su uso inmediato. Un envase abierto absorbe humedad rápidamente, la cual reacciona con el aceite formando ácidos corrosivos que destruyen el sistema. (pág. 13)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Riesgos y normativa</div>
+        <p>La contaminación del aceite por humedad o la mezcla de viscosidades provoca el gripado del compresor (donde reside hasta el 50 % del aceite del sistema). (págs. 13-14)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT482_01</code> Esquema de distribución del porcentaje de aceite en los componentes del circuito de climatización — Fuente: Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, pág. 14</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 8, 12-14</p>
       </div>
     </div>
   </section>
@@ -22907,6 +23049,11 @@ Se montan 4 unidades por asiento:</p>
     </div>
   </section>
 
+  <div class="grupo-componente" id="grp-normativa-gases-fluorados">
+    <div class="grupo-cab"><span class="grupo-nombre">Certificación para la manipulación de gases fluorados</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 2 · NT451 · Nº10. Autodidactico Diagonostico y climatización OCR.pdf, págs. 1-2</summary>
   <section id="nt451" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 451 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -22947,6 +23094,54 @@ Se montan 4 unidades por asiento:</p>
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 2 · NT475 · Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 1-3, 16</summary>
+  <section id="nt475" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 475 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Regulación ambiental y normativa F-Gas para refrigerantes</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>La normativa europea F-Gas (UE 517/2014) impone limitaciones legales progresivas a los gases HFC (como el R-134a) que, aunque no dañan la capa de ozono (PAO = 0), presentan un PCA muy elevado. (pág. 2)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>Los indicadores ambientales clave que rigen la legislación son:</p>
+<ul>
+<li>PAO (Potencial de Agotamiento de Ozono): mide el daño a la capa de ozono estratosférica, teniendo como objetivo el valor.</li>
+<li>PCA (Potencial de Calentamiento Atmosférico): mide la contribución de un gas al efecto invernadero respecto al CO2 (al que se asigna un PCA = 1). El R-134a tiene un PCA de aproximadamente 1.430.</li>
+</ul>
+<p>La Directiva de la UE establece como requisito legal obligatorio un límite máximo de PCA &lt; 150 para los refrigerantes utilizados en todos los vehículos nuevos comercializados a partir de 2017. Esto impulsó la transición hacia sustitutos con bajo impacto ambiental como el HFO-1234yf (PCA = 4) y el R-744 / CO2 (PCA = 1). (págs. 2-4, 16)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Límite máximo legal de PCA para vehículos nuevos desde 2017: PCA &lt; 150.</li>
+<li>Referencia de PCA: CO2 = 1.</li>
+<li>PCA del R-134a: ~1.430. (págs. 2-3)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Regular y reducir drásticamente el uso de gases refrigerantes fluorados con elevado Potencial de Calentamiento Atmosférico (PCA) en los sistemas de climatización del automóvil para mitigar el efecto invernadero. (págs. 1-3)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <p>Considerar que los gases HFC como el R-134a son ecológicos por no destruir la capa de ozono (PAO = 0). Aunque no dañan el ozono, su elevado PCA (~1.430) contribuye gravemente al calentamiento global, motivo por el que han sido sustituidos en vehículos nuevos. (pág. 2)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT475_01</code> Gráfica comparativa del nivel de PCA de los refrigerantes con las líneas límite de la normativa europea — Fuente: Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, pág. 3</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 1-3, 16</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
   <section id="nt454" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 454 <span class="subtipo">Fundamento</span></div>
@@ -23287,6 +23482,249 @@ La presencia de cloro o bromo eleva el PAO. Los HFC y HFO carecen de cloro y bro
     </div>
   </section>
 
+  <section id="nt477" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 477 <span class="subtipo">Procedimiento</span></div>
+    <div class="nota-body proceso">
+      <h1>Protocolo de seguridad para la manipulación de R-1234yf</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Establecer las pautas de prevención de riesgos laborales y protección individual para la manipulación segura del refrigerante ligeramente inflamable HFO-1234yf en el taller. (págs. 5-7)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Área de trabajo identificada y libre de fuentes de calor o chispas. (págs. 6-7)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Gafas de seguridad (norma EN 166), guantes de protección resistentes (norma EN 374), sistema de ventilación y equipos eléctricos antideflagrantes. (pág. 6)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Temperatura de autoignición del R-1234yf: 405 ºC.</li>
+<li>Normas de EPI: EN 166 (protección ocular) y EN 374 (guantes de protección). (págs. 5-6)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Confirmar la ausencia de fugas con un detector certificado para HFO y comprobar que el área permanece libre de fuentes de ignición. (págs. 6-8)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>Debido a la clasificación A2L (ligeramente inflamable), el incumplimiento del control de fuentes de ignición o el uso de equipos no antideflagrantes puede provocar la combustión del gas. (págs. 5-6)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Pasos</div>
+        <ol>
+<li>Equiparse con el EPI obligatorio: gafas de seguridad (EN 166) y guantes de protección (EN 374).</li>
+<li>Asegurar una ventilación adecuada en la zona de trabajo para evitar acumulaciones de gas, considerando que los vapores son más densos que el aire.</li>
+<li>Eliminar y controlar todas las fuentes de ignición en el área de trabajo: prohibido fumar, soldar, usar llamas abiertas o utilizar herramientas que generen chispas (como amoladoras).</li>
+<li>Emplear exclusivamente equipos eléctricos e iluminación de tipo antideflagrante.</li>
+<li>Almacenar las botellas y recipientes en lugares frescos, secos, bien ventilados y protegidos de la radiación solar directa y fuentes de calor. (págs. 6-7)</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 5-7</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="grupo-componente" id="grp-estacion-de-carga">
+    <div class="grupo-cab"><span class="grupo-nombre">Estación de carga y detectores de fugas para R-1234yf</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 2 · NT478 · Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 7-8</summary>
+  <section id="nt478" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 478 </div>
+    <div class="nota-body">
+      <h1>Estación de carga y detectores de fugas para R-1234yf</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Recuperar, evacuar, reciclar y cargar el fluido R-1234yf e identificar fugas en el circuito de climatización de forma segura sin riesgo de deflagración ni contaminación cruzada. (págs. 7-8)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Incorporan componentes eléctricos antideflagrantes y sistemas de ventilación interna para manipular un gas ligeramente inflamable (A2L). Los detectores utilizan sensores calibrados para la estructura química del Tetrafluoropropeno. (págs. 5, 7-8)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Estándar de homologación de la estación: SAE J2788.</li>
+<li>Presión de trabajo del sistema: ~17 bar en el lado de alta. (págs. 7, 12)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Contaminación cruzada por intentar conectar o cargar refrigerante R-134a u otros aceites no compatibles. (pág. 7)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Lecturas erróneas e ineficacia en la localización de fugas si se utilizan detectores convencionales para HFC en lugar de los certificados para HFO. (pág. 8)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Verificación periódica del calibrado del detector de fugas HFO y comprobación del certificado de conformidad SAE J2788 de la máquina. (págs. 7-8)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Estaciones de servicio automatizadas diseñadas específicamente para refrigerantes inflamables HFO. Deben cumplir obligatoriamente la norma SAE J2788. Los detectores de fugas deben ser específicos y certificados para gases HFO. (págs. 7-8)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <p>Mantenimiento de filtros y bombas según las especificaciones del fabricante del equipo. Prohibido utilizar adaptadores para conectar mangueras a sistemas incompatibles. (págs. 7, 15)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 7-8</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 2 · NT481 · Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 9, 11</summary>
+  <section id="nt481" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 481 </div>
+    <div class="nota-body">
+      <h1>Estación de carga y componentes reforzados para R-744</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Soportar las presiones extremas de trabajo del CO2 y prestar servicio de recuperación, vacío y carga en circuitos de climatización R-744. (págs. 9, 11)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Diseñado mecánicamente para gestionar las propiedades termodinámicas del CO2 en estado supercrítico/transcrítico con presiones de servicio de 5 a 10 veces superiores a los sistemas convencionales. (págs. 9, 11)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Presión de diseño/trabajo continua en lado de alta: superior a 130 bar. (págs. 9, 11)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Intento de acoplamiento de herramental o racores de R-134a o R-1234yf (incompatibilidad absoluta). (pág. 11)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Riesgo de explosión o rotura catastrófica de mangueras si se utilizan latiguillos no homologados para 130 bar. (págs. 9, 11)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Inspección visual periódica de latiguillos, racores de seguridad y calibrado del sensor de presión de la estación R-744. (pág. 11)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Estación de carga dedicada exclusivamente a R-744, dotada de racores, mangueras y manómetros especiales. Todos los componentes del circuito del vehículo (compresor, evaporador, condensador/gas cooler, tuberías) son reforzados y específicos. (pág. 11)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <p>Revisión según el manual del fabricante del equipo. Prohibido intercambiar piezas con estaciones de otros gases. (págs. 11, 16)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 9, 11</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
+
+  <section id="nt480" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 480 <span class="subtipo">Procedimiento</span></div>
+    <div class="nota-body proceso">
+      <h1>Protocolo de seguridad para la manipulación de R-744</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Establecer las medidas de prevención de riesgos y primeros auxilios para la manipulación segura del refrigerante de alta presión R-744 (CO2) en el taller. (págs. 9-10)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Instalación provista de ventilación forzada o libre a nivel de suelo y zona de trabajo despejada. (pág. 10)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Gafas de seguridad (norma EN 166), guantes de protección criogénicos resistentes a bajas temperaturas y detectores de oxígeno (O2) en espacios cerrados/fosos. (págs. 9-10)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Temperatura del CO2 líquido al expandirse: –78,5 ºC.</li>
+<li>Presión de trabajo en alta presión: superior a 130 bar.</li>
+<li>Normas EPI: EN 166 (gafas) y guantes criogénicos. (págs. 9-10)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobar la estanqueidad de las conexiones de alta presión y verificar que los niveles de O2 en fosos y áreas cerradas son normales. (pág. 10)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>El contacto directo con el flujo de CO2 líquido provoca quemaduras criogénicas instantáneas (–78,5 ºC) y las fugas masivas en lugares cerrados provocan asfixia por desplazamiento del aire. (págs. 9-10)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Pasos</div>
+        <ol>
+<li>Utilizar el EPI obligatorio: gafas de seguridad (EN 166) y guantes de protección criogénicos específicos para evitar congelaciones.</li>
+<li>Garantizar la máxima ventilación en la zona de trabajo. Al ser el CO2 más denso que el aire, se acumula en zonas bajas y fosos; emplear detectores de O2 si se trabaja en espacios cerrados.</li>
+<li>Conectar y desconectar las mangueras y válvulas de alta presión con extremo cuidado, asegurando que los acoples están bloqueados.</li>
+<li>No aplicar calor bajo ningún concepto a las botellas de R-744 para evitar sobrepresiones peligrosas.</li>
+<li>En caso de contacto del CO2 líquido con la piel (primeros auxilios): no frotar la zona afectada, descongelar inmediatamente con agua tibia abundante y acudir urgentemente al médico. (págs. 9-10)</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 9-10</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt483" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 483 <span class="subtipo">Procedimiento</span></div>
+    <div class="nota-body proceso">
+      <h1>Protocolo de servicio y reglas de oro en climatización</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Establecer la secuencia sistemática de comprobación e intervención en el taller para garantizar un servicio seguro y evitar daños o contaminación en los sistemas de climatización con nuevos refrigerantes. (págs. 14-15)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Vehículo estacionado en el área de servicio de climatización. (págs. 14-15)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Estación de carga específica (SAE J2788 para R-1234yf o específica para R-744), EPI adecuado (EN 166, EN 374 o criogénico) y consumibles (aceite y trazadores) prescritos. (págs. 6, 9, 14-15)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Límite de PCA de la instalación: PCA &lt; 150. (pág. 3)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobar el correcto funcionamiento del climatizador, verificar la ausencia de fugas y documentar en la ficha de servicio los datos de gas y aceite introducidos. (págs. 8, 14-16)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>La contaminación de sistemas por mezcla de gases o aceites destruye los componentes del circuito y anula las garantías de los equipos. (págs. 7, 13, 15)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Pasos</div>
+        <ol>
+<li>IDENTIFICA: Localizar y leer la etiqueta de servicio del sistema de A/A en el vano motor antes de conectar ningún equipo. Confirmar el gas refrigerante, la capacidad en gramos y la viscosidad/tipo de aceite.</li>
+<li>UTILIZA EL EQUIPO CORRECTO: Seleccionar la estación de carga, herramientas, detectores de fugas y consumibles (aceite, trazador) específicos para el gas identificado.</li>
+<li>PROTÉGETE ADECUADAMENTE: Colocarse el EPI específico según el riesgo del gas: protección contra inflamabilidad (R-1234yf) o contra alta presión y frío extremo (R-744).</li>
+<li>NO MEZCLES JAMÁS: Conectar los equipos sin usar adaptadores para evitar la contaminación cruzada entre refrigerantes o aceites incompatibles. (págs. 14-15)</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 14-15</p>
+      </div>
+    </div>
+  </section>
+
   <section id="nt1001" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 1001 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -23559,7 +23997,7 @@ La presencia de cloro o bromo eleva el PAO. Los HFC y HFO carecen de cloro y bro
   </section>
 
   <div class="pie">
-    466 notas técnicas · generado el 24/09/2026.
+    475 notas técnicas · generado el 24/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 

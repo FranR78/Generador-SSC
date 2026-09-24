@@ -1890,6 +1890,22 @@
    "hecha": false
   },
   {
+   "nombre": "NT475_01",
+   "nt": 475,
+   "titulo": "Regulación ambiental y normativa F-Gas para refrigerantes",
+   "seccion": "Por ubicar",
+   "descripcion": "Gráfica comparativa del nivel de PCA de los refrigerantes con las líneas límite de la normativa europea — Fuente: Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, pág. 3",
+   "hecha": false
+  },
+  {
+   "nombre": "NT482_01",
+   "nt": 482,
+   "titulo": "Aceites para refrigerantes PAG y POE",
+   "seccion": "3. Fluidos",
+   "descripcion": "Esquema de distribución del porcentaje de aceite en los componentes del circuito de climatización — Fuente: Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, pág. 14",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -1914,7 +1930,7 @@
    "hecha": false
   }
  ],
- "total": 466,
+ "total": 475,
  "grupos": [
   "Acceso y arranque",
   "Calefacción",
@@ -4870,6 +4886,79 @@
    ]
   },
   {
+   "id": "ssc.refrigerante-r1234yf.nuevos-refrigerantes-automocion-guia-pro",
+   "nt": 476,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "refrigerante-r1234yf",
+   "seccion": "3. Fluidos",
+   "subgrupo": "",
+   "titulo": "Refrigerante HFO-1234yf",
+   "codigo": "",
+   "menu": "Refrigerante HFO-1234yf",
+   "grupo": "Fluidos frigoríficos",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 3-5, 12",
+   "clase": "fluido",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "fluidos-frigorificos",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r134a",
+    "aceite-frigorifico"
+   ],
+   "palabras": [
+    "hfo-1234yf",
+    "tetrafluoropropeno",
+    "a2l",
+    "inflamable",
+    "pca 4"
+   ],
+   "apartados": [
+    {
+     "titulo": "Designación y norma",
+     "texto": "Nombre químico: 2,3,3,3-Tetrafluoropropeno. Clasificación ASHRAE: A2L (baja toxicidad, ligeramente inflamable). (pág. 5)",
+     "html": "<p>Nombre químico: 2,3,3,3-Tetrafluoropropeno. Clasificación ASHRAE: A2L (baja toxicidad, ligeramente inflamable). <span class=\"pag\">pág. 5</span></p>"
+    },
+    {
+     "titulo": "Propiedades",
+     "texto": "Gas sintético de la familia de las Hidrofluoroolefinas (HFO) diseñado como sustituto directo del R-134a. Presenta propiedades termodinámicas y presiones de trabajo similares al R-134a, pero con un impacto ambiental drásticamente inferior. (págs. 4-5)",
+     "html": "<p>Gas sintético de la familia de las Hidrofluoroolefinas (HFO) diseñado como sustituto directo del R-134a. Presenta propiedades termodinámicas y presiones de trabajo similares al R-134a, pero con un impacto ambiental drásticamente inferior. <span class=\"pag\">págs. 4-5</span></p>"
+    },
+    {
+     "titulo": "Dónde se usa y cantidades",
+     "texto": "Utilizado como estándar de climatización en la mayoría de vehículos de nuevos modelos desde 2017. Las presiones de trabajo en el lado de alta son de aproximadamente 17 bar. (págs. 3-4, 12)",
+     "html": "<p>Utilizado como estándar de climatización en la mayoría de vehículos de nuevos modelos desde 2017. Las presiones de trabajo en el lado de alta son de aproximadamente 17 bar. <span class=\"pag\">págs. 3-4, 12</span></p>"
+    },
+    {
+     "titulo": "Compatibilidades y mezclas prohibidas",
+     "texto": "Incompatible con equipos, estaciones de carga y detectores de fugas diseñados para R-134a. Prohibida la mezcla con R-134a, R-744 u otros gases. Requiere el uso exclusivo de aceites PAG específicos para R-1234yf. (págs. 7, 12, 15)",
+     "html": "<p>Incompatible con equipos, estaciones de carga y detectores de fugas diseñados para R-134a. Prohibida la mezcla con R-134a, R-744 u otros gases. Requiere el uso exclusivo de aceites PAG específicos para R-1234yf. <span class=\"pag\">págs. 7, 12, 15</span></p>"
+    },
+    {
+     "titulo": "Identificación",
+     "texto": "Etiqueta de servicio en el vehículo e indicación de clasificación A2L de inflamabilidad en envases. (págs. 5, 14)",
+     "html": "<p>Etiqueta de servicio en el vehículo e indicación de clasificación A2L de inflamabilidad en envases. <span class=\"pag\">págs. 5, 14</span></p>"
+    },
+    {
+     "titulo": "Manipulación, almacenamiento y residuos",
+     "texto": "Almacenar los recipientes en un lugar fresco, seco y bien ventilado, protegidos de la luz solar directa y alejados de fuentes de calor. (pág. 7)",
+     "html": "<p>Almacenar los recipientes en un lugar fresco, seco y bien ventilado, protegidos de la luz solar directa y alejados de fuentes de calor. <span class=\"pag\">pág. 7</span></p>"
+    },
+    {
+     "titulo": "Riesgos y normativa",
+     "texto": "Riesgo principal: inflamabilidad. Es un gas ligeramente inflamable (difícil de encender, baja velocidad de propagación de llama). Puede arder si entra en contacto con una fuente de ignición a su temperatura de autoignición de 405 ºC. Posee un PAO = 0 y un PCA = 4 (un 99,7 % inferior al del R-134a). Cumple la restricción legal de PCA < 150 de la UE. (págs. 3, 5)",
+     "html": "<p>Riesgo principal: inflamabilidad. Es un gas ligeramente inflamable (difícil de encender, baja velocidad de propagación de llama). Puede arder si entra en contacto con una fuente de ignición a su temperatura de autoignición de 405 ºC. Posee un PAO = 0 y un PCA = 4 (un 99,7 % inferior al del R-134a). Cumple la restricción legal de PCA &lt; 150 de la UE. <span class=\"pag\">págs. 3, 5</span></p>"
+    }
+   ]
+  },
+  {
    "id": "ssc.aceite-frigorifico.pag.3-refrigerantes",
    "nt": 26,
    "modulo": "ssc",
@@ -5934,6 +6023,86 @@
      "titulo": "Seguridad y normativa",
      "texto": "No prolongar la apertura de la válvula del separador de aceite más de 30 segundos para impedir la entrada de aire en la máquina. No reutilizar en ningún caso el aceite descargado. (págs. 118, 121)",
      "html": "<p>No prolongar la apertura de la válvula del separador de aceite más de 30 segundos para impedir la entrada de aire en la máquina. No reutilizar en ningún caso el aceite descargado. <span class=\"pag\">págs. 118, 121</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.aceite-frigorifico.nuevos-refrigerantes-automocion-guia-pro",
+   "nt": 482,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "aceite-frigorifico",
+   "seccion": "3. Fluidos",
+   "subgrupo": "",
+   "titulo": "Aceites para refrigerantes PAG y POE",
+   "codigo": "",
+   "menu": "Aceites para refrigerantes PAG y POE",
+   "grupo": "Fluidos frigoríficos",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 8, 12-14",
+   "clase": "fluido",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "fluidos-frigorificos",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "refrigerante-r1234yf",
+    "refrigerante-r744"
+   ],
+   "palabras": [
+    "aceite frigorifico",
+    "pag",
+    "poe",
+    "higroscopicidad",
+    "humedad",
+    "viscosidad"
+   ],
+   "apartados": [
+    {
+     "titulo": "Designación y norma",
+     "texto": "Aceites sintéticos de las familias PAG (PoliAlquilenGlicol) y POE (PoliolÉster). (pág. 13)",
+     "html": "<p>Aceites sintéticos de las familias PAG (PoliAlquilenGlicol) y POE (PoliolÉster). <span class=\"pag\">pág. 13</span></p>"
+    },
+    {
+     "titulo": "Propiedades",
+     "texto": "Encargados de lubricar, refrigerar el compresor y sellar los componentes móviles del circuito de climatización. Presentan un carácter altamente higroscópico (capacidad extrema de absorber humedad del aire). (págs. 12-13)",
+     "html": "<p>Encargados de lubricar, refrigerar el compresor y sellar los componentes móviles del circuito de climatización. Presentan un carácter altamente higroscópico (capacidad extrema de absorber humedad del aire). <span class=\"pag\">págs. 12-13</span></p>"
+    },
+    {
+     "titulo": "Dónde se usa y cantidades",
+     "texto": "Se distribuyen por todo el circuito disueltos con el refrigerante con la siguiente proporción aproximada: Compresor: 50 %. Evaporador: 20 %. Condensador: 10 %. Tubo de aspiración: 10 %. Filtro: 10 %. (págs. 13-14)",
+     "html": "<p>Se distribuyen por todo el circuito disueltos con el refrigerante con la siguiente proporción aproximada:</p>\n<ul>\n<li>Compresor: 50 %.</li>\n<li>Evaporador: 20 %.</li>\n<li>Condensador: 10 %.</li>\n<li>Tubo de aspiración: 10 %.</li>\n<li>Filtro: 10 %. <span class=\"pag\">págs. 13-14</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Compatibilidades y mezclas prohibidas",
+     "texto": "Incompatibilidad entre tipos y variantes: los aceites PAG para R-1234yf no son compatibles con los aceites PAG para R-134a. En R-744 se emplean formulaciones específicas POE o PAG. Se debe usar SIEMPRE el tipo y la viscosidad exactos especificados en la etiqueta del fabricante. Usar el aceite incorrecto destruye el compresor. (págs. 8, 12-14)",
+     "html": "<p>Incompatibilidad entre tipos y variantes: los aceites PAG para R-1234yf no son compatibles con los aceites PAG para R-134a. En R-744 se emplean formulaciones específicas POE o PAG. Se debe usar SIEMPRE el tipo y la viscosidad exactos especificados en la etiqueta del fabricante. Usar el aceite incorrecto destruye el compresor. <span class=\"pag\">págs. 8, 12-14</span></p>"
+    },
+    {
+     "titulo": "Identificación",
+     "texto": "Envases sellados con especificación de la viscosidad (ej. PAG 46, PAG 100, PAG 150) y tipo de refrigerante compatible. (págs. 7, 13)",
+     "html": "<p>Envases sellados con especificación de la viscosidad (ej. PAG 46, PAG 100, PAG 150) y tipo de refrigerante compatible. <span class=\"pag\">págs. 7, 13</span></p>"
+    },
+    {
+     "titulo": "Manipulación, almacenamiento y residuos",
+     "texto": "Debido a su alta higroscopicidad, los envases deben permanecer herméticamente sellados hasta su uso inmediato. Un envase abierto absorbe humedad rápidamente, la cual reacciona con el aceite formando ácidos corrosivos que destruyen el sistema. (pág. 13)",
+     "html": "<p>Debido a su alta higroscopicidad, los envases deben permanecer herméticamente sellados hasta su uso inmediato. Un envase abierto absorbe humedad rápidamente, la cual reacciona con el aceite formando ácidos corrosivos que destruyen el sistema. <span class=\"pag\">pág. 13</span></p>"
+    },
+    {
+     "titulo": "Riesgos y normativa",
+     "texto": "La contaminación del aceite por humedad o la mezcla de viscosidades provoca el gripado del compresor (donde reside hasta el 50 % del aceite del sistema). (págs. 13-14)",
+     "html": "<p>La contaminación del aceite por humedad o la mezcla de viscosidades provoca el gripado del compresor (donde reside hasta el 50 % del aceite del sistema). <span class=\"pag\">págs. 13-14</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema de distribución del porcentaje de aceite en los componentes del circuito de climatización — Fuente: Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, pág. 14",
+     "html": "<ul>\n<li>Esquema de distribución del porcentaje de aceite en los componentes del circuito de climatización — Fuente: Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, pág. 14</li>\n</ul>"
     }
    ]
   },
@@ -34541,6 +34710,528 @@
      "titulo": "Seguridad y normativa",
      "texto": "No desconectar la manguera de baja con presión en su interior para evitar proyecciones de fluido a la atmósfera. (págs. 123-124)",
      "html": "<p>No desconectar la manguera de baja con presión en su interior para evitar proyecciones de fluido a la atmósfera. <span class=\"pag\">págs. 123-124</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.normativa-gases-fluorados.nuevos-refrigerantes-automocion-guia-pro",
+   "nt": 475,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "normativa-gases-fluorados",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Regulación ambiental y normativa F-Gas para refrigerantes",
+   "codigo": "",
+   "menu": "Regulación ambiental y normativa F-Gas",
+   "grupo": "Normativa y medioambiente",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 1-3, 16",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "general",
+   "sistema": "normativa-y-medioambiente",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r134a",
+    "refrigerante-r1234yf",
+    "refrigerante-r744"
+   ],
+   "palabras": [
+    "f-gas",
+    "ue 517/2014",
+    "pca 150",
+    "pao",
+    "efecto invernadero"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Regular y reducir drásticamente el uso de gases refrigerantes fluorados con elevado Potencial de Calentamiento Atmosférico (PCA) en los sistemas de climatización del automóvil para mitigar el efecto invernadero. (págs. 1-3)",
+     "html": "<p>Regular y reducir drásticamente el uso de gases refrigerantes fluorados con elevado Potencial de Calentamiento Atmosférico (PCA) en los sistemas de climatización del automóvil para mitigar el efecto invernadero. <span class=\"pag\">págs. 1-3</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "La normativa europea F-Gas (UE 517/2014) impone limitaciones legales progresivas a los gases HFC (como el R-134a) que, aunque no dañan la capa de ozono (PAO = 0), presentan un PCA muy elevado. (pág. 2)",
+     "html": "<p>La normativa europea F-Gas (UE 517/2014) impone limitaciones legales progresivas a los gases HFC (como el R-134a) que, aunque no dañan la capa de ozono (PAO = 0), presentan un PCA muy elevado. <span class=\"pag\">pág. 2</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Los indicadores ambientales clave que rigen la legislación son: PAO (Potencial de Agotamiento de Ozono): mide el daño a la capa de ozono estratosférica, teniendo como objetivo el valor. PCA (Potencial de Calentamiento Atmosférico): mide la contribución de un gas al efecto invernadero respecto al CO2 (al que se asigna un PCA = 1). El R-134a tiene un PCA de aproximadamente 1.430. La Directiva de la UE establece como requisito legal obligatorio un límite máximo de PCA < 150 para los refrigerantes utilizados en todos los vehículos nuevos comercializados a partir de 2017. Esto impulsó la transición hacia sustitutos con bajo impacto ambiental como el HFO-1234yf (PCA = 4) y el R-744 / CO2 (PCA = 1). (págs. 2-4, 16)",
+     "html": "<p>Los indicadores ambientales clave que rigen la legislación son:</p>\n<ul>\n<li>PAO (Potencial de Agotamiento de Ozono): mide el daño a la capa de ozono estratosférica, teniendo como objetivo el valor.</li>\n<li>PCA (Potencial de Calentamiento Atmosférico): mide la contribución de un gas al efecto invernadero respecto al CO2 (al que se asigna un PCA = 1). El R-134a tiene un PCA de aproximadamente 1.430.</li>\n</ul>\n<p>La Directiva de la UE establece como requisito legal obligatorio un límite máximo de PCA &lt; 150 para los refrigerantes utilizados en todos los vehículos nuevos comercializados a partir de 2017. Esto impulsó la transición hacia sustitutos con bajo impacto ambiental como el HFO-1234yf (PCA = 4) y el R-744 / CO2 (PCA = 1). <span class=\"pag\">págs. 2-4, 16</span></p>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Límite máximo legal de PCA para vehículos nuevos desde 2017: PCA < 150. Referencia de PCA: CO2 = 1. PCA del R-134a: ~1.430. (págs. 2-3)",
+     "html": "<ul>\n<li>Límite máximo legal de PCA para vehículos nuevos desde 2017: PCA &lt; 150.</li>\n<li>Referencia de PCA: CO2 = 1.</li>\n<li>PCA del R-134a: ~1.430. <span class=\"pag\">págs. 2-3</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Considerar que los gases HFC como el R-134a son ecológicos por no destruir la capa de ozono (PAO = 0). Aunque no dañan el ozono, su elevado PCA (~1.430) contribuye gravemente al calentamiento global, motivo por el que han sido sustituidos en vehículos nuevos. (pág. 2)",
+     "html": "<p>Considerar que los gases HFC como el R-134a son ecológicos por no destruir la capa de ozono (PAO = 0). Aunque no dañan el ozono, su elevado PCA (~1.430) contribuye gravemente al calentamiento global, motivo por el que han sido sustituidos en vehículos nuevos. <span class=\"pag\">pág. 2</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Gráfica comparativa del nivel de PCA de los refrigerantes con las líneas límite de la normativa europea — Fuente: Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, pág. 3",
+     "html": "<ul>\n<li>Gráfica comparativa del nivel de PCA de los refrigerantes con las líneas límite de la normativa europea — Fuente: Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, pág. 3</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.manipulacion-r1234yf.nuevos-refrigerantes-automocion-guia-pro",
+   "nt": 477,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "manipulacion-r1234yf",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Protocolo de seguridad para la manipulación de R-1234yf",
+   "codigo": "",
+   "menu": "Protocolo de seguridad para la manipul",
+   "grupo": "PRL y seguridad",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 5-7",
+   "clase": "procedimiento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "prl-y-seguridad",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r1234yf",
+    "estacion-de-carga"
+   ],
+   "palabras": [
+    "protocolo seguridad",
+    "en 166",
+    "en 374",
+    "inflamable",
+    "antideflagrante",
+    "ventilacion"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Establecer las pautas de prevención de riesgos laborales y protección individual para la manipulación segura del refrigerante ligeramente inflamable HFO-1234yf en el taller. (págs. 5-7)",
+     "html": "<p>Establecer las pautas de prevención de riesgos laborales y protección individual para la manipulación segura del refrigerante ligeramente inflamable HFO-1234yf en el taller. <span class=\"pag\">págs. 5-7</span></p>"
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Área de trabajo identificada y libre de fuentes de calor o chispas. (págs. 6-7)",
+     "html": "<p>Área de trabajo identificada y libre de fuentes de calor o chispas. <span class=\"pag\">págs. 6-7</span></p>"
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Gafas de seguridad (norma EN 166), guantes de protección resistentes (norma EN 374), sistema de ventilación y equipos eléctricos antideflagrantes. (pág. 6)",
+     "html": "<p>Gafas de seguridad (norma EN 166), guantes de protección resistentes (norma EN 374), sistema de ventilación y equipos eléctricos antideflagrantes. <span class=\"pag\">pág. 6</span></p>"
+    },
+    {
+     "titulo": "Pasos",
+     "texto": "Equiparse con el EPI obligatorio: gafas de seguridad (EN 166) y guantes de protección (EN 374). Asegurar una ventilación adecuada en la zona de trabajo para evitar acumulaciones de gas, considerando que los vapores son más densos que el aire. Eliminar y controlar todas las fuentes de ignición en el área de trabajo: prohibido fumar, soldar, usar llamas abiertas o utilizar herramientas que generen chispas (como amoladoras). Emplear exclusivamente equipos eléctricos e iluminación de tipo antideflagrante. Almacenar las botellas y recipientes en lugares frescos, secos, bien ventilados y protegidos de la radiación solar directa y fuentes de calor. (págs. 6-7)",
+     "html": "<ol>\n<li>Equiparse con el EPI obligatorio: gafas de seguridad (EN 166) y guantes de protección (EN 374).</li>\n<li>Asegurar una ventilación adecuada en la zona de trabajo para evitar acumulaciones de gas, considerando que los vapores son más densos que el aire.</li>\n<li>Eliminar y controlar todas las fuentes de ignición en el área de trabajo: prohibido fumar, soldar, usar llamas abiertas o utilizar herramientas que generen chispas (como amoladoras).</li>\n<li>Emplear exclusivamente equipos eléctricos e iluminación de tipo antideflagrante.</li>\n<li>Almacenar las botellas y recipientes en lugares frescos, secos, bien ventilados y protegidos de la radiación solar directa y fuentes de calor. <span class=\"pag\">págs. 6-7</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Temperatura de autoignición del R-1234yf: 405 ºC. Normas de EPI: EN 166 (protección ocular) y EN 374 (guantes de protección). (págs. 5-6)",
+     "html": "<ul>\n<li>Temperatura de autoignición del R-1234yf: 405 ºC.</li>\n<li>Normas de EPI: EN 166 (protección ocular) y EN 374 (guantes de protección). <span class=\"pag\">págs. 5-6</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Confirmar la ausencia de fugas con un detector certificado para HFO y comprobar que el área permanece libre de fuentes de ignición. (págs. 6-8)",
+     "html": "<p>Confirmar la ausencia de fugas con un detector certificado para HFO y comprobar que el área permanece libre de fuentes de ignición. <span class=\"pag\">págs. 6-8</span></p>"
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Debido a la clasificación A2L (ligeramente inflamable), el incumplimiento del control de fuentes de ignición o el uso de equipos no antideflagrantes puede provocar la combustión del gas. (págs. 5-6)",
+     "html": "<p>Debido a la clasificación A2L (ligeramente inflamable), el incumplimiento del control de fuentes de ignición o el uso de equipos no antideflagrantes puede provocar la combustión del gas. <span class=\"pag\">págs. 5-6</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.estacion-de-carga.r1234yf.nuevos-refrigerantes-automocion-guia-pro",
+   "nt": 478,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "estacion-de-carga",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Estación de carga y detectores de fugas para R-1234yf",
+   "codigo": "",
+   "menu": "Estación de carga y detectores de fuga",
+   "grupo": "Equipos de taller",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 7-8",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "r1234yf",
+   "area": "climatizacion",
+   "sistema": "equipos-taller",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r1234yf",
+    "manipulacion-r1234yf"
+   ],
+   "palabras": [
+    "estacion de carga",
+    "sae j2788",
+    "detector hfo",
+    "antideflagrante",
+    "inflamable"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Recuperar, evacuar, reciclar y cargar el fluido R-1234yf e identificar fugas en el circuito de climatización de forma segura sin riesgo de deflagración ni contaminación cruzada. (págs. 7-8)",
+     "html": "<p>Recuperar, evacuar, reciclar y cargar el fluido R-1234yf e identificar fugas en el circuito de climatización de forma segura sin riesgo de deflagración ni contaminación cruzada. <span class=\"pag\">págs. 7-8</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Estaciones de servicio automatizadas diseñadas específicamente para refrigerantes inflamables HFO. Deben cumplir obligatoriamente la norma SAE J2788. Los detectores de fugas deben ser específicos y certificados para gases HFO. (págs. 7-8)",
+     "html": "<p>Estaciones de servicio automatizadas diseñadas específicamente para refrigerantes inflamables HFO. Deben cumplir obligatoriamente la norma SAE J2788. Los detectores de fugas deben ser específicos y certificados para gases HFO. <span class=\"pag\">págs. 7-8</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Incorporan componentes eléctricos antideflagrantes y sistemas de ventilación interna para manipular un gas ligeramente inflamable (A2L). Los detectores utilizan sensores calibrados para la estructura química del Tetrafluoropropeno. (págs. 5, 7-8)",
+     "html": "<p>Incorporan componentes eléctricos antideflagrantes y sistemas de ventilación interna para manipular un gas ligeramente inflamable (A2L). Los detectores utilizan sensores calibrados para la estructura química del Tetrafluoropropeno. <span class=\"pag\">págs. 5, 7-8</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Estándar de homologación de la estación: SAE J2788. Presión de trabajo del sistema: ~17 bar en el lado de alta. (págs. 7, 12)",
+     "html": "<ul>\n<li>Estándar de homologación de la estación: SAE J2788.</li>\n<li>Presión de trabajo del sistema: ~17 bar en el lado de alta. <span class=\"pag\">págs. 7, 12</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Contaminación cruzada por intentar conectar o cargar refrigerante R-134a u otros aceites no compatibles. (pág. 7)",
+     "html": "<p>Contaminación cruzada por intentar conectar o cargar refrigerante R-134a u otros aceites no compatibles. <span class=\"pag\">pág. 7</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Lecturas erróneas e ineficacia en la localización de fugas si se utilizan detectores convencionales para HFC en lugar de los certificados para HFO. (pág. 8)",
+     "html": "<p>Lecturas erróneas e ineficacia en la localización de fugas si se utilizan detectores convencionales para HFC en lugar de los certificados para HFO. <span class=\"pag\">pág. 8</span></p>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Verificación periódica del calibrado del detector de fugas HFO y comprobación del certificado de conformidad SAE J2788 de la máquina. (págs. 7-8)",
+     "html": "<p>Verificación periódica del calibrado del detector de fugas HFO y comprobación del certificado de conformidad SAE J2788 de la máquina. <span class=\"pag\">págs. 7-8</span></p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Mantenimiento de filtros y bombas según las especificaciones del fabricante del equipo. Prohibido utilizar adaptadores para conectar mangueras a sistemas incompatibles. (págs. 7, 15)",
+     "html": "<p>Mantenimiento de filtros y bombas según las especificaciones del fabricante del equipo. Prohibido utilizar adaptadores para conectar mangueras a sistemas incompatibles. <span class=\"pag\">págs. 7, 15</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.refrigerante-r744.nuevos-refrigerantes-automocion-guia-pro",
+   "nt": 479,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "refrigerante-r744",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Refrigerante R-744 (Dióxido de Carbono)",
+   "codigo": "",
+   "menu": "Refrigerante R-744 (Dióxido de Carbono",
+   "grupo": "Fluidos frigoríficos",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 4, 8-9, 12",
+   "clase": "fluido",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "fluidos-frigorificos",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r134a",
+    "refrigerante-r1234yf",
+    "aceite-frigorifico"
+   ],
+   "palabras": [
+    "r-744",
+    "co2",
+    "alta presion",
+    "130 bar",
+    "pca 1",
+    "a1"
+   ],
+   "apartados": [
+    {
+     "titulo": "Designación y norma",
+     "texto": "Nombre químico: Dióxido de Carbono (CO2). Denominación de refrigerante: R-744. Clasificación de seguridad ASHRAE: A1 (baja toxicidad, no inflamable). (pág. 8)",
+     "html": "<p>Nombre químico: Dióxido de Carbono (CO2). Denominación de refrigerante: R-744. Clasificación de seguridad ASHRAE: A1 (baja toxicidad, no inflamable). <span class=\"pag\">pág. 8</span></p>"
+    },
+    {
+     "titulo": "Propiedades",
+     "texto": "Refrigerante natural inorgánico con un impacto ambiental mínimo. No es tóxico ni inflamable, pero opera a presiones extremadamente altas en régimen transcrítico. (págs. 4, 8-9)",
+     "html": "<p>Refrigerante natural inorgánico con un impacto ambiental mínimo. No es tóxico ni inflamable, pero opera a presiones extremadamente altas en régimen transcrítico. <span class=\"pag\">págs. 4, 8-9</span></p>"
+    },
+    {
+     "titulo": "Dónde se usa y cantidades",
+     "texto": "Utilizado en sistemas de climatización específicos (adoptado por fabricantes como Mercedes-Benz). Las presiones de trabajo en el lado de alta son entre 5 y 10 veces superiores a los sistemas R-134a/R-1234yf, superando los 130 bar. (págs. 4, 9, 12)",
+     "html": "<p>Utilizado en sistemas de climatización específicos (adoptado por fabricantes como Mercedes-Benz). Las presiones de trabajo en el lado de alta son entre 5 y 10 veces superiores a los sistemas R-134a/R-1234yf, superando los 130 bar. <span class=\"pag\">págs. 4, 9, 12</span></p>"
+    },
+    {
+     "titulo": "Compatibilidades y mezclas prohibidas",
+     "texto": "Incompatibilidad total. Ningún componente (mangueras, racores, válvulas, compresor, evaporador) ni equipo de los sistemas R-134a o R-1234yf es compatible con un sistema R-744. Emplea aceites específicos POE o PAG. (págs. 11-12)",
+     "html": "<p>Incompatibilidad total. Ningún componente (mangueras, racores, válvulas, compresor, evaporador) ni equipo de los sistemas R-134a o R-1234yf es compatible con un sistema R-744. Emplea aceites específicos POE o PAG. <span class=\"pag\">págs. 11-12</span></p>"
+    },
+    {
+     "titulo": "Identificación",
+     "texto": "Etiqueta identificativa R-744 / CO2 en el vano motor e indicaciones de alerta por alta presión. (págs. 8-9)",
+     "html": "<p>Etiqueta identificativa R-744 / CO2 en el vano motor e indicaciones de alerta por alta presión. <span class=\"pag\">págs. 8-9</span></p>"
+    },
+    {
+     "titulo": "Manipulación, almacenamiento y residuos",
+     "texto": "Almacenar las botellas protegidas del calor. Prohibido calentar las botellas para elevar la presión. (pág. 10)",
+     "html": "<p>Almacenar las botellas protegidas del calor. Prohibido calentar las botellas para elevar la presión. <span class=\"pag\">pág. 10</span></p>"
+    },
+    {
+     "titulo": "Riesgos y normativa",
+     "texto": "Riesgos principales: presiones extremas (>130 bar) con riesgo de explosión de elementos no adecuados, quemaduras por congelación severas al contacto con CO2 líquido (-78,5 ºC) y riesgo de asfixia por desplazamiento del oxígeno en espacios cerrados o fosos. Posee PAO = 0 y PCA = 1 (gas de referencia). Cumple holgadamente la directiva europea PCA < 150. (págs. 4, 8-10)",
+     "html": "<p>Riesgos principales: presiones extremas (&gt;130 bar) con riesgo de explosión de elementos no adecuados, quemaduras por congelación severas al contacto con CO2 líquido (-78,5 ºC) y riesgo de asfixia por desplazamiento del oxígeno en espacios cerrados o fosos. Posee PAO = 0 y PCA = 1 (gas de referencia). Cumple holgadamente la directiva europea PCA &lt; 150. <span class=\"pag\">págs. 4, 8-10</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.manipulacion-r744.nuevos-refrigerantes-automocion-guia-pro",
+   "nt": 480,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "manipulacion-r744",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Protocolo de seguridad para la manipulación de R-744",
+   "codigo": "",
+   "menu": "Protocolo de seguridad para la manipul",
+   "grupo": "PRL y seguridad",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 9-10",
+   "clase": "procedimiento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "prl-y-seguridad",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r744",
+    "estacion-de-carga"
+   ],
+   "palabras": [
+    "protocolo seguridad",
+    "en 166",
+    "criogenico",
+    "asfixia",
+    "-78.5 ºC",
+    "130 bar"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Establecer las medidas de prevención de riesgos y primeros auxilios para la manipulación segura del refrigerante de alta presión R-744 (CO2) en el taller. (págs. 9-10)",
+     "html": "<p>Establecer las medidas de prevención de riesgos y primeros auxilios para la manipulación segura del refrigerante de alta presión R-744 (CO2) en el taller. <span class=\"pag\">págs. 9-10</span></p>"
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Instalación provista de ventilación forzada o libre a nivel de suelo y zona de trabajo despejada. (pág. 10)",
+     "html": "<p>Instalación provista de ventilación forzada o libre a nivel de suelo y zona de trabajo despejada. <span class=\"pag\">pág. 10</span></p>"
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Gafas de seguridad (norma EN 166), guantes de protección criogénicos resistentes a bajas temperaturas y detectores de oxígeno (O2) en espacios cerrados/fosos. (págs. 9-10)",
+     "html": "<p>Gafas de seguridad (norma EN 166), guantes de protección criogénicos resistentes a bajas temperaturas y detectores de oxígeno (O2) en espacios cerrados/fosos. <span class=\"pag\">págs. 9-10</span></p>"
+    },
+    {
+     "titulo": "Pasos",
+     "texto": "Utilizar el EPI obligatorio: gafas de seguridad (EN 166) y guantes de protección criogénicos específicos para evitar congelaciones. Garantizar la máxima ventilación en la zona de trabajo. Al ser el CO2 más denso que el aire, se acumula en zonas bajas y fosos; emplear detectores de O2 si se trabaja en espacios cerrados. Conectar y desconectar las mangueras y válvulas de alta presión con extremo cuidado, asegurando que los acoples están bloqueados. No aplicar calor bajo ningún concepto a las botellas de R-744 para evitar sobrepresiones peligrosas. En caso de contacto del CO2 líquido con la piel (primeros auxilios): no frotar la zona afectada, descongelar inmediatamente con agua tibia abundante y acudir urgentemente al médico. (págs. 9-10)",
+     "html": "<ol>\n<li>Utilizar el EPI obligatorio: gafas de seguridad (EN 166) y guantes de protección criogénicos específicos para evitar congelaciones.</li>\n<li>Garantizar la máxima ventilación en la zona de trabajo. Al ser el CO2 más denso que el aire, se acumula en zonas bajas y fosos; emplear detectores de O2 si se trabaja en espacios cerrados.</li>\n<li>Conectar y desconectar las mangueras y válvulas de alta presión con extremo cuidado, asegurando que los acoples están bloqueados.</li>\n<li>No aplicar calor bajo ningún concepto a las botellas de R-744 para evitar sobrepresiones peligrosas.</li>\n<li>En caso de contacto del CO2 líquido con la piel (primeros auxilios): no frotar la zona afectada, descongelar inmediatamente con agua tibia abundante y acudir urgentemente al médico. <span class=\"pag\">págs. 9-10</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Temperatura del CO2 líquido al expandirse: –78,5 ºC. Presión de trabajo en alta presión: superior a 130 bar. Normas EPI: EN 166 (gafas) y guantes criogénicos. (págs. 9-10)",
+     "html": "<ul>\n<li>Temperatura del CO2 líquido al expandirse: –78,5 ºC.</li>\n<li>Presión de trabajo en alta presión: superior a 130 bar.</li>\n<li>Normas EPI: EN 166 (gafas) y guantes criogénicos. <span class=\"pag\">págs. 9-10</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Comprobar la estanqueidad de las conexiones de alta presión y verificar que los niveles de O2 en fosos y áreas cerradas son normales. (pág. 10)",
+     "html": "<p>Comprobar la estanqueidad de las conexiones de alta presión y verificar que los niveles de O2 en fosos y áreas cerradas son normales. <span class=\"pag\">pág. 10</span></p>"
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "El contacto directo con el flujo de CO2 líquido provoca quemaduras criogénicas instantáneas (–78,5 ºC) y las fugas masivas en lugares cerrados provocan asfixia por desplazamiento del aire. (págs. 9-10)",
+     "html": "<p>El contacto directo con el flujo de CO2 líquido provoca quemaduras criogénicas instantáneas (–78,5 ºC) y las fugas masivas en lugares cerrados provocan asfixia por desplazamiento del aire. <span class=\"pag\">págs. 9-10</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.estacion-de-carga.r744.nuevos-refrigerantes-automocion-guia-pro",
+   "nt": 481,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "estacion-de-carga",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Estación de carga y componentes reforzados para R-744",
+   "codigo": "",
+   "menu": "Estación de carga y componentes reforz",
+   "grupo": "Equipos de taller",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 9, 11",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "r744",
+   "area": "climatizacion",
+   "sistema": "equipos-taller",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r744",
+    "manipulacion-r744"
+   ],
+   "palabras": [
+    "estacion de carga",
+    "r744",
+    "co2",
+    "componentes reforzados",
+    "130 bar"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Soportar las presiones extremas de trabajo del CO2 y prestar servicio de recuperación, vacío y carga en circuitos de climatización R-744. (págs. 9, 11)",
+     "html": "<p>Soportar las presiones extremas de trabajo del CO2 y prestar servicio de recuperación, vacío y carga en circuitos de climatización R-744. <span class=\"pag\">págs. 9, 11</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Estación de carga dedicada exclusivamente a R-744, dotada de racores, mangueras y manómetros especiales. Todos los componentes del circuito del vehículo (compresor, evaporador, condensador/gas cooler, tuberías) son reforzados y específicos. (pág. 11)",
+     "html": "<p>Estación de carga dedicada exclusivamente a R-744, dotada de racores, mangueras y manómetros especiales. Todos los componentes del circuito del vehículo (compresor, evaporador, condensador/gas cooler, tuberías) son reforzados y específicos. <span class=\"pag\">pág. 11</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Diseñado mecánicamente para gestionar las propiedades termodinámicas del CO2 en estado supercrítico/transcrítico con presiones de servicio de 5 a 10 veces superiores a los sistemas convencionales. (págs. 9, 11)",
+     "html": "<p>Diseñado mecánicamente para gestionar las propiedades termodinámicas del CO2 en estado supercrítico/transcrítico con presiones de servicio de 5 a 10 veces superiores a los sistemas convencionales. <span class=\"pag\">págs. 9, 11</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Presión de diseño/trabajo continua en lado de alta: superior a 130 bar. (págs. 9, 11)",
+     "html": "<ul>\n<li>Presión de diseño/trabajo continua en lado de alta: superior a 130 bar. <span class=\"pag\">págs. 9, 11</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Intento de acoplamiento de herramental o racores de R-134a o R-1234yf (incompatibilidad absoluta). (pág. 11)",
+     "html": "<p>Intento de acoplamiento de herramental o racores de R-134a o R-1234yf (incompatibilidad absoluta). <span class=\"pag\">pág. 11</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Riesgo de explosión o rotura catastrófica de mangueras si se utilizan latiguillos no homologados para 130 bar. (págs. 9, 11)",
+     "html": "<p>Riesgo de explosión o rotura catastrófica de mangueras si se utilizan latiguillos no homologados para 130 bar. <span class=\"pag\">págs. 9, 11</span></p>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Inspección visual periódica de latiguillos, racores de seguridad y calibrado del sensor de presión de la estación R-744. (pág. 11)",
+     "html": "<p>Inspección visual periódica de latiguillos, racores de seguridad y calibrado del sensor de presión de la estación R-744. <span class=\"pag\">pág. 11</span></p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Revisión según el manual del fabricante del equipo. Prohibido intercambiar piezas con estaciones de otros gases. (págs. 11, 16)",
+     "html": "<p>Revisión según el manual del fabricante del equipo. Prohibido intercambiar piezas con estaciones de otros gases. <span class=\"pag\">págs. 11, 16</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.mantenimiento-climatizacion.nuevos-refrigerantes-automocion-guia-pro",
+   "nt": 483,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "mantenimiento-climatizacion",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Protocolo de servicio y reglas de oro en climatización",
+   "codigo": "",
+   "menu": "Protocolo de servicio y reglas de oro",
+   "grupo": "Equipos de taller",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, págs. 14-15",
+   "clase": "procedimiento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "equipos-taller",
+   "formaParteDe": "",
+   "relacionados": [
+    "estacion-de-carga",
+    "aceite-frigorifico",
+    "manipulacion-r1234yf",
+    "manipulacion-r744"
+   ],
+   "palabras": [
+    "protocolo servicio",
+    "reglas de oro",
+    "identificacion",
+    "contaminacion cruzada"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Establecer la secuencia sistemática de comprobación e intervención en el taller para garantizar un servicio seguro y evitar daños o contaminación en los sistemas de climatización con nuevos refrigerantes. (págs. 14-15)",
+     "html": "<p>Establecer la secuencia sistemática de comprobación e intervención en el taller para garantizar un servicio seguro y evitar daños o contaminación en los sistemas de climatización con nuevos refrigerantes. <span class=\"pag\">págs. 14-15</span></p>"
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Vehículo estacionado en el área de servicio de climatización. (págs. 14-15)",
+     "html": "<p>Vehículo estacionado en el área de servicio de climatización. <span class=\"pag\">págs. 14-15</span></p>"
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Estación de carga específica (SAE J2788 para R-1234yf o específica para R-744), EPI adecuado (EN 166, EN 374 o criogénico) y consumibles (aceite y trazadores) prescritos. (págs. 6, 9, 14-15)",
+     "html": "<p>Estación de carga específica (SAE J2788 para R-1234yf o específica para R-744), EPI adecuado (EN 166, EN 374 o criogénico) y consumibles (aceite y trazadores) prescritos. <span class=\"pag\">págs. 6, 9, 14-15</span></p>"
+    },
+    {
+     "titulo": "Pasos",
+     "texto": "IDENTIFICA: Localizar y leer la etiqueta de servicio del sistema de A/A en el vano motor antes de conectar ningún equipo. Confirmar el gas refrigerante, la capacidad en gramos y la viscosidad/tipo de aceite. UTILIZA EL EQUIPO CORRECTO: Seleccionar la estación de carga, herramientas, detectores de fugas y consumibles (aceite, trazador) específicos para el gas identificado. PROTÉGETE ADECUADAMENTE: Colocarse el EPI específico según el riesgo del gas: protección contra inflamabilidad (R-1234yf) o contra alta presión y frío extremo (R-744). NO MEZCLES JAMÁS: Conectar los equipos sin usar adaptadores para evitar la contaminación cruzada entre refrigerantes o aceites incompatibles. (págs. 14-15)",
+     "html": "<ol>\n<li>IDENTIFICA: Localizar y leer la etiqueta de servicio del sistema de A/A en el vano motor antes de conectar ningún equipo. Confirmar el gas refrigerante, la capacidad en gramos y la viscosidad/tipo de aceite.</li>\n<li>UTILIZA EL EQUIPO CORRECTO: Seleccionar la estación de carga, herramientas, detectores de fugas y consumibles (aceite, trazador) específicos para el gas identificado.</li>\n<li>PROTÉGETE ADECUADAMENTE: Colocarse el EPI específico según el riesgo del gas: protección contra inflamabilidad (R-1234yf) o contra alta presión y frío extremo (R-744).</li>\n<li>NO MEZCLES JAMÁS: Conectar los equipos sin usar adaptadores para evitar la contaminación cruzada entre refrigerantes o aceites incompatibles. <span class=\"pag\">págs. 14-15</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Límite de PCA de la instalación: PCA < 150. (pág. 3)",
+     "html": "<ul>\n<li>Límite de PCA de la instalación: PCA &lt; 150. <span class=\"pag\">pág. 3</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Comprobar el correcto funcionamiento del climatizador, verificar la ausencia de fugas y documentar en la ficha de servicio los datos de gas y aceite introducidos. (págs. 8, 14-16)",
+     "html": "<p>Comprobar el correcto funcionamiento del climatizador, verificar la ausencia de fugas y documentar en la ficha de servicio los datos de gas y aceite introducidos. <span class=\"pag\">págs. 8, 14-16</span></p>"
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "La contaminación de sistemas por mezcla de gases o aceites destruye los componentes del circuito y anula las garantías de los equipos. (págs. 7, 13, 15)",
+     "html": "<p>La contaminación de sistemas por mezcla de gases o aceites destruye los componentes del circuito y anula las garantías de los equipos. <span class=\"pag\">págs. 7, 13, 15</span></p>"
     }
    ]
   },
