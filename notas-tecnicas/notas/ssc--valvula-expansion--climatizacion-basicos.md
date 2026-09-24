@@ -11,41 +11,48 @@ grupo: "Circuito frigorífico"
 clave: valvula-expansion
 area: climatizacion
 sistema: "circuito-frigorifico"
-fuentes: "Climatizacion basicos.pdf, págs. 10-11"
-relacionados: ["evaporador", "filtro-deshidratador", "compresor"]
-palabras: ["válvula de expansión", "dosificación", "alta presión", "baja presión", "bulbo termostático"]
+forma_parte_de: circuito-frigorifico
+fuentes: "Climatizacion basicos.pdf, págs. 8-9, 18-21"
+relacionados: ["filtro-deshidratador", "evaporador", "compresor"]
+palabras: ["punto de separación", "atomización", "regulación de caudal", "sobrecalentamiento", "congelación"]
 ---
 
 ## Misión
 
-Separar el lado de alta presión del lado de baja presión, dosificando y regulando la cantidad de refrigerante líquido inyectado al evaporador en función de la temperatura de salida de este para lograr la máxima eficiencia de enfriamiento y evitar el retorno de líquido al compresor. (págs. 10-11).
+Dosificar y regular el caudal de agente frigorífico líquido inyectado en el evaporador en función de la temperatura, actuando como punto de separación física entre la zona de alta presión y la zona de baja presión. (págs. 18-19)
 
 ## Tipos y características
 
-Existen válvulas de expansión termostáticas (bloque o con tubo capilar) y tubos con orificio fijo (estrangulador o tubo de mariposa). (págs. 10, 18).
+Dispositivo de estrangulación montado justo a la entrada del evaporador. Existen diseños de bloque con elemento termostático o de tubo de orificio (mariposa fija). (pág. 18)
 
 ## Principio de funcionamiento
 
-El refrigerante líquido a alta presión entra en la válvula y es forzado a pasar por un estrechamiento (orificio de expansión), sufriendo una caída brusca de presión que causa su atomización y enfriamiento antes de entrar al evaporador. Un elemento termostático sensible a la temperatura del gas a la salida del evaporador ajusta mecánicamente el paso de la aguja: si la temperatura sube, la válvula abre aumentando el caudal; si la temperatura baja, reduce el paso. (págs. 10-11).
+El refrigerante líquido a alta presión procedente del filtro deshidratante atraviesa el paso estrecho de la válvula, expandiéndose e inyectándose en el evaporador a baja presión. La válvula mide la temperatura del gas a la salida del evaporador: si la temperatura sube, abre el paso para aumentar el caudal inyectado; si disminuye, reduce la sección del paso para limitar el caudal y asegurar que al compresor solo llegue gas en estado gaseoso. (pág. 19)
 
 ## Valores de trabajo
 
-Prohibido manipular el ajuste de fábrica de su tornillo de regulación. (pág. 14).
+- Ajuste de fábrica del tornillo de regulación: inalterable, no debe modificarse bajo ningún concepto. (pág. 33)
 
 ## Anomalías frecuentes
 
-Obstrucción o bloqueo por suciedad/virutas del compresor, congelación del orificio por presencia de humedad en el fluido, y pérdida de carga en el elemento termostático. (págs. 10-11, 25).
+- Bloqueo por acumulación de suciedad o congelación de la humedad en el orificio. (págs. 18, 20)
+- Fugas en los componentes o tuberías de conexión. (pág. 20)
+- Desajuste térmico por sobrecalentamiento. (pág. 20)
 
 ## Comportamiento en avería
 
-Si la válvula queda bloqueada en posición cerrada: falta de rendimiento, presión de baja muy baja o en vacío y alta presión elevada. Si se queda bloqueada abierta: baja presión excesivamente alta, falta de enfriamiento y riesgo de entrada de refrigerante líquido al compresor. (págs. 10-11, 18, 32).
+Baja potencia de refrigeración, interrupción del ciclo frigorífico, congelación del evaporador o paso de líquido hacia el compresor. (pág. 20)
 
 ## Cómo comprobarlo
 
-1. Medición de presiones en alta y baja presión con el equipo en marcha.
-2. Medición de temperatura con termómetro en las tuberías de entrada y salida de la válvula.
-3. Inspección acústica y comprobación de ausencia de fugas en sus conexiones. (págs. 10-11).
+- Realizar inspección visual y comprobación acústica del flujo. (págs. 20-21)
+- Medir la temperatura en el cuerpo de la válvula y en los conductos de salida. (pág. 21)
+- Medir presiones con el compresor y el motor en funcionamiento. (pág. 21)
 
 ## Mantenimiento
 
-La válvula de expansión no es lavable; si se contamina con virutas o suciedad tras una avería de compresor, debe ser reemplazada. No modificar en ningún caso el ajuste de fábrica del tornillo de regulación. (págs. 14, 16, 22).
+Prohibido modificar el ajuste de fábrica del tornillo de regulación. Sustituir en caso de contaminación del circuito o avería del compresor. (págs. 20, 33, 39)
+
+## Imágenes requeridas
+
+- Corte funcional de la válvula de expansión mostrando el paso de regulación de caudal — Fuente: Climatizacion basicos.pdf, pág. 18

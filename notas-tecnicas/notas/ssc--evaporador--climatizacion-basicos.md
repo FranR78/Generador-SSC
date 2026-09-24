@@ -11,43 +11,46 @@ grupo: "Circuito frigorífico"
 clave: evaporador
 area: climatizacion
 sistema: "circuito-frigorifico"
-fuentes: "Climatizacion basicos.pdf, págs. 11-12"
-relacionados: ["valvula-expansion", "ventilador-habitaculo", "filtro-deshidratador"]
-palabras: ["evaporador", "calor latente", "deshumidificación", "habitáculo", "agua condensada"]
+forma_parte_de: unidad-climatizadora
+fuentes: "Climatizacion basicos.pdf, págs. 9-10, 21-24"
+relacionados: ["valvula-expansion", "compresor", "ventilador-habitaculo"]
+palabras: ["intercambio térmico", "ebullición", "absorción de calor", "aire frío", "desinfección"]
 ---
 
 ## Misión
 
-Absorber el calor del aire destinado al habitáculo mediante la evaporación del refrigerante líquido inyectado a baja presión, enfriando y deshumidificando el aire entrante. (págs. 11-12).
+Absorber el calor del aire que ingresa al habitáculo mediante la ebullición y evaporación del agente frigorífico que circula por su interior. (págs. 21-22)
 
 ## Tipos y características
 
-Intercambiador de calor de tubos y aletas de aluminio situado en la unidad climática del habitáculo. Alberga una gran superficie de transferencia térmica y un canal de recogida de condensados. (págs. 11-12).
+Intercambiador de calor de gran superficie de aluminio formado por tubos y aletas, ubicado en el interior de la unidad climática bajo el tablero de instrumentos. (págs. 22-23)
 
 ## Principio de funcionamiento
 
-El refrigerante líquido pulverizado a baja presión entra en el evaporador. Al atravesar sus conductos, absorbe el calor del aire que la turbina del habitáculo hace pasar a través de sus aletas externas. Al calentarse, el refrigerante hierve y se transforma íntegramente en gas antes de salir hacia el compresor. La humedad presente en el aire se condensa sobre las aletas frías y se evacúa al exterior. (págs. 11-12).
-
-## Valores de trabajo
-
-- Alberga un 20% de la cantidad total de aceite de lubricación del sistema. (pág. 22).
-- Temperatura del aire en tobera media con el equipo a máxima potencia: 3 a 8 ºC. (pág. 17).
+El refrigerante líquido pulverizado a baja presión por la válvula de expansión entra al evaporador y entra en ebullición. Para evaporarse, absorbe la energía térmica del aire exterior impulsado por el soplador a través de sus aletas. El aire se enfría y deshidrata antes de entrar al habitáculo, mientras que el refrigerante sale completamente gaseoso hacia el compresor. (pág. 22)
 
 ## Anomalías frecuentes
 
-Obstrucción o acumulación de suciedad en las aletas externas, pérdidas de estanqueidad (fugas) por corrosión o vibraciones, e infección por microorganismos, hongos y bacterias que generan malos olores. (págs. 4, 11-12, 72).
+- Obstrucción interna de las tuberías por suciedad o virutas. (pág. 23)
+- Fugas de agente frigorífico por corrosión o fisuras en empalmes. (pág. 23)
+- Obstrucción externa de la entrada de aire por polvo, polen y suciedad. (pág. 23)
+- Acumulación de humedad, bacterias y hongos en las láminas. (págs. 4, 21)
 
 ## Comportamiento en avería
 
-Rendimiento de refrigeración deficiente, imposibilidad de enfriar el habitáculo, caudal de aire de ventilación reducido por aletas tupidas y presencia de humedad o malos olores en el interior. (págs. 11-12).
+Rendimiento deficiente de la refrigeración, fallo total del aire acondicionado, caudal de aire insuficiente por el ventilador y emisión de malos olores. (pág. 23)
 
 ## Cómo comprobarlo
 
-1. Comprobar la temperatura del aire en la tobera central (debe situarse entre 3 y 8 ºC).
-2. Medir presiones de trabajo en alta y baja presión con motor entre 2.000 y 2.500 rpm.
-3. Medir la diferencia de temperatura entre el tubo de entrada y el de salida del evaporador.
-4. Inspeccionar la presencia de fugas de refrigerante/colorante mediante detector electrónico en el drenaje de condensados. (págs. 12, 17).
+- Comprobar visualmente el estado de limpieza exterior de la matriz de aletas. (pág. 23)
+- Comprobar la estanqueidad del cuerpo y de las tuberías. (pág. 24)
+- Medir la temperatura en la tubería de entrada y en la tubería de salida. (pág. 24)
+- Medir las presiones de trabajo con el compresor activado. (pág. 24)
 
 ## Mantenimiento
 
-Desinfección periódica del evaporador mediante tratamiento antiséptico/vaporizador para eliminar la colonia de bacterias y microorganismos. Sustituir el filtro de habitáculo cada 12 meses. (págs. 4, 72).
+Realizar la desinfección periódica del evaporador para eliminar bacterias y hongos retenidos en el agua de condensación. (págs. 4, 21)
+
+## Imágenes requeridas
+
+- Módulo del evaporador con sus tubos de entrada y aletas de disipación — Fuente: Climatizacion basicos.pdf, pág. 22

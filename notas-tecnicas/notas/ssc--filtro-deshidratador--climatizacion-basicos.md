@@ -11,41 +11,48 @@ grupo: "Circuito frigorífico"
 clave: filtro-deshidratador
 area: climatizacion
 sistema: "circuito-frigorifico"
-fuentes: "Climatizacion basicos.pdf, págs. 9-10"
-relacionados: ["condensador", "valvula-expansion", "aceite-frigorifico"]
-palabras: ["filtro deshidratante", "agente secante", "higroscópico", "humedad", "acumulador"]
+forma_parte_de: circuito-frigorifico
+fuentes: "Climatizacion basicos.pdf, págs. 7, 14-17"
+relacionados: ["condensador", "valvula-expansion", "refrigerante-r134a"]
+palabras: ["agente secante", "higroscópico", "acumulador", "retención humedad", "2 años"]
 ---
 
 ## Misión
 
-Filtrar partículas y cuerpos extraños del refrigerante, absorber la humedad disuelta en el fluido y actuar como depósito de compensación y acumulación de refrigerante líquido frente a oscilaciones de presión. (págs. 9-10).
+Eliminar la humedad residual disuelta en el agente frigorífico y retener impurezas o cuerpos extraños, actuando además como depósito acumulador y compensador de oscilaciones de presión. (págs. 7, 15)
 
 ## Tipos y características
 
-Denominado filtro deshidratante (instalado en el lado de alta presión tras el condensador) o acumulador (instalado en el lado de baja presión tras el evaporador en sistemas con estrangulador fijo). Contiene un agente secante altamente higroscópico y una almohadilla filtrante interna. (págs. 9-10).
+Recipiente metálico cilíndrico montado en la línea de alta presión tras el condensador (o acumulador en línea de baja). Contiene un agente secante altamente higroscópico y una almohadilla filtrante. (págs. 15-16)
 
 ## Principio de funcionamiento
 
-El refrigerante líquido entra por la parte superior, atraviesa la almohadilla filtrante y la masa granulada del agente secante, reteniendo el agua y las impurezas sólidas, y sale en estado líquido hacia la válvula de expansión. La parte superior actúa como volumen de amortiguación de presión. (págs. 9-10).
+El refrigerante en estado líquido penetra en el filtro, atraviesa el agente secante e higroscópico para ceder la humedad y cruza la almohadilla filtrante para retener partículas. Sale del filtro en estado líquido hacia la válvula de expansión. La parte superior del cilindro actúa como cámara de compensación y la parte inferior como reserva de líquido. (pág. 15)
 
 ## Valores de trabajo
 
-Contiene un 10% de la cantidad total de aceite de lubricación del sistema. (pág. 22).
+- Capacidad de absorción de humedad: limitada por el volumen de sustancia desecante integrada. (pág. 16)
 
 ## Anomalías frecuentes
 
-Saturación del agente secante por exceso de humedad, envejecimiento natural, descomposición de la almohadilla filtrante interna con liberación de silicato al circuito, y fugas en sus racores de empalme. (págs. 9-10, 15).
+- Saturación completa del agente desecante por envejecimiento. (pág. 16)
+- Rotura o defecto en la almohadilla filtrante interior. (pág. 16)
+- Fugas o daños en los racores de empalme. (pág. 17)
 
 ## Comportamiento en avería
 
-Disminución drástica o pérdida total de la potencia de refrigeración, formación de hielo sobre el propio filtro deshidratante por obstrucción interna, y congelación de la válvula de expansión por presencia de agua libre en el circuito. (págs. 9-10, 32).
+Baja potencia de refrigeración, fallo del aire acondicionado y posible desprendimiento de partículas de silicato que destruyen otros componentes. (págs. 16, 35)
 
 ## Cómo comprobarlo
 
-1. Comprobar la fecha del último reemplazo (intervalo recomendado de 2 años).
-2. Tocar los tubos de entrada y salida: si existe una diferencia acusada de temperatura entre entrada y salida, el filtro se halla obstruido internamente.
-3. Inspeccionar visualmente racores y cuerpo en busca de fugas o corrosión. (págs. 9-10).
+- Verificar el tiempo transcurrido desde la última sustitución (máximo 2 años). (pág. 17)
+- Comprobar la estanqueidad y el estado de fijación de los empalmes. (pág. 17)
+- Comprobar la presión en la zona de alta y baja presión. (pág. 17)
 
 ## Mantenimiento
 
-Sustituir obligatoriamente cada 2 años o cada vez que se abra el circuito frigorífico por reparación. (págs. 10, 15).
+Renovar obligatoriamente cada 2 años o cada vez que se abra el circuito de refrigerante por cualquier reparación. (págs. 14, 17)
+
+## Imágenes requeridas
+
+- Vista del filtro deshidratante y su agente secante interno — Fuente: Climatizacion basicos.pdf, pág. 15

@@ -5,48 +5,57 @@ unidad: clima
 nt: 221
 tipo: elemento
 clase: componente
-titulo: "Presostato e interruptor trinario"
-menu: "Presostato e interruptor trinario"
+titulo: "Presostatos e interruptores de presión"
+menu: "Presostatos e interruptores de presión"
 grupo: "Control de climatización"
 clave: presostato
 area: climatizacion
 sistema: "control-climatizacion"
-fuentes: "Climatizacion basicos.pdf, págs. 12-13"
+forma_parte_de: circuito-frigorifico
+fuentes: "Climatizacion basicos.pdf, págs. 10-11, 24-28"
 relacionados: ["compresor", "embrague-compresor", "electroventilador-condensador"]
-palabras: ["presostato", "interruptor trinario", "alta presión", "baja presión", "desconexión de seguridad"]
+palabras: ["baja presión", "alta presión", "trinario", "protección compresor", "26-33 bar", "2 bar"]
 ---
 
 ## Misión
 
-Proteger el sistema de climatización frente a presiones de trabajo peligrosamente altas o insuficientemente bajas y gestionar la activación del electroventilador del condensador para garantizar la condensación del fluido. (págs. 12-13).
+Proteger el sistema de climatización y el compresor contra sobrepresiones o presiones excesivamente bajas, y gestionar el funcionamiento del ventilador del condensador. (pág. 25)
 
 ## Tipos y características
 
-Presostatos simples (de alta o baja presión) o interruptores trinarios (combinan en una única ampolla el contacto de baja presión, el de alta presión y el contacto de conmutación del ventilador). (págs. 12-13).
+Interruptores electromecánicos o electrónicos montados en la zona de alta presión. Se clasifican en interruptores de baja presión, de alta presión e interruptores trinarios (que combinan alta presión, baja presión y mando de electroventilador). (pág. 25)
 
 ## Principio de funcionamiento
 
-Instalado por lo general en la tubería del lado de alta presión. Si la presión sube excesivamente (26-33 bar) o desciende por debajo del límite mínimo por fuga (aprox. 2 bar), abre sus contactos interrumpiendo la alimentación eléctrica hacia el acoplamiento magnético del compresor. Su tercer contacto conmuta el circuito eléctrico del electroventilador del condensador al alcanzar el umbral de presión intermedia. (págs. 12-13).
+- **Protección por alta presión:** Si la presión del circuito alcanza valores de sobrepresión críticos (aprox. 26-33 bar), abre el contacto e interrumpe la corriente al embrague del compresor, reanudando la marcha cuando la presión cae a valores seguros (aprox. 5 bar). (pág. 26)
+- **Protección por baja presión:** Si la presión cae por debajo de aprox. 2 bar (debido a falta de refrigerante), interrumpe la corriente para evitar la destrucción del compresor por falta de lubricación. (pág. 26)
+- **Contacto del ventilador (trinario):** Cierra un contacto adicional al subir la presión para activar el ventilador del condensador y forzar la condensación. (pág. 26)
 
 ## Valores de trabajo
 
-- Umbral de desconexión por alta presión: 26 a 33 bares (reconexión al descender a aprox. 5 bares).
-- Umbral de desconexión por baja presión: aprox. 2 bares. (págs. 12-13).
+- Umbral de desconexión por alta presión: aprox. 26 a 33 bar. (pág. 26)
+- Umbral de reconexión tras alta presión: aprox. 5 bar. (pág. 26)
+- Umbral de desconexión por baja presión: aprox. 2 bar. (pág. 26)
 
 ## Anomalías frecuentes
 
-Fallo o sulfatación en los contactos eléctricos internos, suciedad acumulada en el puerto de toma de presión, y grietas en la carcasa producidas por vibraciones. (págs. 12-13).
+- Fallos en los contactos eléctricos por suciedad o fogueo. (pág. 27)
+- Daños en la carcasa causados por vibraciones mecánicas o colisiones. (pág. 27)
 
 ## Comportamiento en avería
 
-Fallo completo de funcionamiento del aire acondicionado, desacoplamiento y acoplamiento continuo y errático del embrague del compresor, o inactividad del electroventilador del condensador produciendo sobrepresiones. (págs. 12-13).
+Rendimiento de refrigeración deficiente, inoperatividad total del aire acondicionado o ciclos continuos e intermitentes de encendido/apagado del embrague del compresor. (pág. 27)
 
 ## Cómo comprobarlo
 
-1. Inspección visual del enchufe y conector eléctrico.
-2. Medición de continuidad eléctrica en los contactos según la presión real medida en la instalación con manómetros.
-3. Prueba del componente desmontado aplicando presión controlada mediante botella de nitrógeno con manorreductor y comprobando la conmutación de contactos con multímetro. (págs. 12-13).
+- Verificar que los enchufes eléctricos estén firmemente apretados. (pág. 28)
+- Medir la presión del circuito con el compresor encendido y motor en marcha. (pág. 28)
+- Probar el presostato desmontado utilizando una botella de nitrógeno con manorreductor y un multímetro para verificar el disparo de contactos. (pág. 28)
 
 ## Mantenimiento
 
-Verificación del apriete del conector y sustitución de la junta tórica en el racor al desmontar. (págs. 12-13).
+Realizar revisiones periódicas de los contactos eléctricos durante el servicio de climatización. (pág. 25)
+
+## Imágenes requeridas
+
+- Presostato trinario con su rosca de acoplamiento e interfaz de conexión eléctrica — Fuente: Climatizacion basicos.pdf, pág. 25

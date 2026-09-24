@@ -1,64 +1,149 @@
 ```yaml
-tipo: fundamento
-titulo: Interacción entre la climatización y la refrigeración del motor
-entidad: liquido-refrigerante-motor
+tipo: procedimiento
+titulo: Comprobación anual de la climatización
+entidad: comprobacion-climatizacion
+area: climatizacion
+sistema: circuito-frigorifico
+fuente: "Climatizacion basicos.pdf"
+paginas: "4"
+relacionados: [filtro-habitaculo, evaporador]
+palabras: [revisión anual, polen, desinfección, comprobación visual]
+```
+
+## Objeto y alcance
+Comprobar el funcionamiento, la potencia y el estado de conservación de los componentes del aire acondicionado cada 12 meses para garantizar la calidad del aire y la capacidad de filtrado del habitáculo. (pág. 4)
+
+## Condiciones previas
+Vehículo equipado con sistema de aire acondicionado, con intervalo de mantenimiento anual alcanzado. (pág. 4)
+
+## Equipo y material
+- Filtro del habitáculo nuevo. (pág. 4)
+- Producto desinfectante para el evaporador (en caso necesario). (pág. 4)
+
+## Pasos
+1. Realizar una comprobación visual de todos los componentes del sistema de climatización. (pág. 4)
+2. Ejecutar una prueba de funcionamiento y evaluar la potencia frigorífica. (pág. 4)
+3. Sustituir el filtro de habitáculo para recuperar la capacidad de filtrado de polvo, polen y suciedad. (pág. 4)
+4. Desinfectar el evaporador para eliminar bacterias, hongos y microorganismos acumulados en las láminas por condensación, en caso necesario. (pág. 4)
+
+## Valores de referencia
+- Periodicidad recomendada: cada 12 meses. (pág. 4)
+
+## Verificación final
+Comprobar el caudal de aire fresco y limpio en el habitáculo tras la sustitución del filtro. (pág. 4)
+
+## Seguridad y normativa
+Evitar la acumulación descontrolada de bacterias y microorganismos en las láminas del evaporador para prevenir riesgos sanitarios en los ocupantes. (pág. 4)
+
+---
+
+```yaml
+tipo: procedimiento
+titulo: Servicio bienal de climatización
+entidad: servicio-climatizacion
 area: climatizacion
 sistema: circuito-frigorifico
 fuente: "Climatizacion basicos.pdf"
 paginas: "5"
-relacionados: [ciclo-frigorifico, electroventilador-condensador]
-palabras: [refrigeración motor, punto de ebullición, sobrecalentamiento, 120 ºC]
+relacionados: [filtro-deshidratador, filtro-habitaculo, refrigerante-r134a]
+palabras: [servicio bienal, pérdida refrigerante, estanqueidad, desinfección]
 ```
 
-## Objeto
-Analizar la relación operativa y la influencia mutua entre el sistema de aire acondicionado y el sistema de refrigeración del motor térmico. (pág. 5).
+## Objeto y alcance
+Realizar la revisión completa del circuito de climatización cada 2 años para compensar la pérdida natural de refrigerante, sustituir elementos filtrantes y evitar averías en el compresor. (pág. 5)
 
-## Fundamento
-Aunque el aire acondicionado y la refrigeración del motor son dos sistemas independientes, al activar el aire acondicionado se incrementa la exigencia térmica sobre el sistema de refrigeración del motor, elevando la temperatura del líquido refrigerante. (pág. 5).
+## Condiciones previas
+Intervalo de 2 años alcanzado o apertura del circuito de refrigerante. (pág. 5)
 
-## Desarrollo
-La composición correcta del líquido refrigerante no solo protege contra la congelación, sino que incrementa el punto de ebullición del fluido por encima de los 120 ºC, proporcionando una reserva de potencia imprescindible durante el uso estival, cuando la temperatura ambiental y los trayectos largos sobrecargan ambos sistemas. Por ello, la revisión del líquido refrigerante debe formar parte del servicio de climatización. (pág. 5).
+## Equipo y material
+- Estación de servicio de climatización. (pág. 5)
+- Agente frigorífico y aceite lubricante. (pág. 5)
+- Filtro deshidratante nuevo. (pág. 5)
+- Filtro de habitáculo nuevo. (pág. 5)
+- Producto desinfectante para evaporador (si procede). (pág. 5)
+
+## Pasos
+1. Realizar la inspección visual de todos los componentes de la instalación. (pág. 5)
+2. Ejecutar la prueba de funcionamiento y de potencia del sistema. (pág. 5)
+3. Sustituir el filtro deshidratante para asegurar la retención de humedad e impurezas. (pág. 5)
+4. Desinfectar el evaporador en caso necesario. (pág. 5)
+5. Sustituir el agente frigorífico recuperando la carga antigua e inyectando refrigerante nuevo. (pág. 5)
+6. Comprobar la estanqueidad del circuito frigorífico. (pág. 5)
+7. Sustituir el filtro del habitáculo. (pág. 5)
 
 ## Valores de referencia
-Punto de ebullición del líquido refrigerante del motor con composición correcta: superior a 120 ºC. (pág. 5).
+- Periodicidad recomendada: cada 2 años. (pág. 5)
+- Pérdida anual habitual de refrigerante por difusión normal: hasta un 10% anual en sistemas nuevos. (pág. 5)
 
-## Errores de concepto frecuentes
-Tratar el circuito de aire acondicionado y el de refrigeración del motor como sistemas totalmente aislados en el taller; el fallo en la disipación térmica de uno afecta directamente al rendimiento y a la presión del otro. (pág. 5).
+## Verificación final
+Verificar la ausencia de fugas y confirmar que la potencia de refrigeración cumple las especificaciones. (pág. 5)
+
+## Seguridad y normativa
+Mantener la carga correcta de refrigerante para evitar la falta de lubricación y posteriores fallos mecánicos en el compresor. (pág. 5)
 
 ---
 
 ```yaml
 tipo: fundamento
-titulo: Ciclo frigorífico con válvula de expansión
-entidad: ciclo-frigorifico
+titulo: Interdependencia entre la climatización y la refrigeración del motor
+entidad: interdependencia-climatizacion-refrigeracion
 area: climatizacion
 sistema: circuito-frigorifico
 fuente: "Climatizacion basicos.pdf"
 paginas: "6"
-relacionados: [compresor, condensador, filtro-deshidratador, valvula-expansion, evaporador]
-palabras: [alta presión, baja presión, circuito cerrado, R134a, aceite de lubricación]
+relacionados: [liquido-refrigerante-motor, condensador]
+palabras: [temperatura refrigerante, sobrecalentamiento, punto ebullición, 120 ºC]
 ```
 
 ## Objeto
-Describir el principio de funcionamiento y la división física de presiones del circuito de aire acondicionado accionado por compresor y regulado por válvula de expansión. (pág. 6).
+Explicar la influencia mutua entre el funcionamiento del aire acondicionado y el sistema de refrigeración del motor. (pág. 6)
 
 ## Fundamento
-Todos los componentes del circuito se interconectan mediante mangueras flexibles y conductos de aluminio formando un sistema cerrado hermético por el que circulan, impulsados por el compresor, el gas refrigerante y una porción del aceite de lubricación. (pág. 6).
+El aire acondicionado y la refrigeración del motor forman un conjunto funcional interconectado. Al activar la climatización, se incrementa la exigencia térmica sobre el sistema de refrigeración del motor, aumentando la temperatura del líquido refrigerante. (pág. 6)
 
 ## Desarrollo
-El circuito se divide en dos zonas bien diferenciadas de trabajo:
-1. Zona de alta presión: comprendida entre la salida del compresor y la entrada a la válvula de expansión (incluye el condensador y el filtro deshidratante).
-2. Zona de baja presión: comprendida entre la salida de la válvula de expansión y la aspiración del compresor (incluye el evaporador).
-
-El compresor comprime el gas refrigerante elevando su temperatura y presión hacia el condensador, donde libera calor al exterior y se liquida. A continuación, el filtro deshidratante retiene impurezas y humedad. El refrigerante líquido entra en la válvula de expansión, donde se pulveriza e inyecta al evaporador, absorbiendo calor del aire del habitáculo al evaporarse antes de regresar al compresor en estado gaseoso. (pág. 6).
-
-📷 IMAGEN: Esquema del circuito del refrigerante con válvula de expansión indicando las zonas de alta y baja presión — Fuente: Climatizacion basicos.pdf, pág. 6
+El líquido refrigerante del motor protege el bloque térmico tanto frente a la congelación como frente al sobrecalentamiento. Una adición correcta de aditivos en el líquido refrigerante eleva su punto de ebullición por encima de los 120 ºC, creando una reserva de potencia imprescindible durante periodos calurosos o trayectos prolongados con el aire acondicionado conectado. Por ello, la revisión del estado del líquido refrigerante debe incluirse dentro del servicio de climatización. (pág. 6)
 
 ## Valores de referencia
-No documentado en fuentes. (pág. 6).
+- Punto de ebullición del líquido refrigerante del motor con composición correcta: > 120 ºC. (pág. 6)
 
 ## Errores de concepto frecuentes
-Considerar que solo circula refrigerante en el circuito; un porcentaje del aceite de lubricación del compresor circula continuamente arrastrado por el refrigerante a través de todas las tuberías y componentes. (págs. 6, 22).
+- Considerar el aire acondicionado y el circuito de refrigeración del motor como dos sistemas totalmente independientes sin interacción térmica entre sí. (pág. 6)
+- Negligenciar la comprobación del líquido refrigerante del motor durante el mantenimiento del aire acondicionado. (pág. 6)
+
+---
+
+```yaml
+tipo: fundamento
+titulo: Circuito de climatización con válvula de expansión
+entidad: ciclo-frigorifico
+variante: valvula-expansion
+area: climatizacion
+sistema: circuito-frigorifico
+fuente: "Climatizacion basicos.pdf"
+paginas: "6-7"
+relacionados: [compresor, condensador, filtro-deshidratador, valvula-expansion, evaporador]
+palabras: [alta presión, baja presión, condensación, evaporación, sistema cerrado]
+```
+
+## Objeto
+Describir la estructura, división de zonas de presión y circulación de fluido en un circuito de climatización cerrado provisto de válvula de expansión. (págs. 6-7)
+
+## Fundamento
+El sistema combina el refrigerante con el circuito mecánico para tratar el aire impulsado. El compresor acciona la circulación del gas refrigerante y del aceite de lubricación disuelto en un circuito cerrado de tuberías y mangueras flexibles. (págs. 6-7)
+
+## Desarrollo
+El circuito frigorífico se divide en dos zonas bien diferenciadas:
+- **Zona de alta presión:** Comprendida entre la salida del compresor y la entrada de la válvula de expansión. El compresor aspira el gas a baja presión y lo comprime, elevando intensamente su temperatura y presión. Al pasar por el condensador, cede calor al aire exterior y se condensa pasando a estado líquido. A continuación, el filtro deshidratante retiene las impurezas y la humedad. (págs. 6-7)
+- **Zona de baja presión:** Comprendida entre la válvula de expansión y la aspiración del compresor. En la válvula de expansión se pulveriza el refrigerante hacia el evaporador, donde se evapora absorbiendo el calor del aire del habitáculo antes de regresar al compresor en estado gaseoso. (págs. 6-7)
+
+📷 IMAGEN: Esquema del circuito de refrigerante con válvula de expansión indicando la zona de alta presión (ámbar/rojo) y la zona de baja presión (azul) — Fuente: Climatizacion basicos.pdf, pág. 6
+
+## Valores de referencia
+No documentado en fuentes en las páginas 6-7.
+
+## Errores de concepto frecuentes
+- Asumir que el aceite de lubricación permanece estático en el cuerpo del compresor sin circular disuelto con el agente frigorífico a través de los componentes del circuito. (págs. 6-7)
 
 ---
 
@@ -69,42 +154,37 @@ entidad: compresor
 area: climatizacion
 sistema: circuito-frigorifico
 fuente: "Climatizacion basicos.pdf"
-paginas: "7, 20-33"
-relacionados: [embrague-compresor, condensador, aceite-frigorifico, valvula-reguladora-compresor]
-palabras: [compresor, aspiración, compresión, aceite especial, correa trapezoidal]
+paginas: "7, 10-11"
+forma_parte_de: circuito-frigorifico
+relacionados: [aceite-frigorifico, condensador, evaporador]
+palabras: [correa trapezoidal, compresión, estado gaseoso, lubricación, estanqueidad]
 ```
 
 ## Misión
-Aspirar el gas refrigerante a baja presión y baja temperatura procedente del evaporador, comprimirlo y enviarlo a alta presión y alta temperatura hacia el condensador, garantizando además el flujo del aceite de lubricación por el circuito. (págs. 7, 20).
+Succionar el gas refrigerante en estado gaseoso y a baja temperatura procedente del evaporador, comprimirlo e impulsarlo a alta presión y elevada temperatura hacia el condensador. (págs. 7, 10-11)
 
 ## Tipos y características
-Accionado habitualmente por correa trapezoidal o estriada desde el motor térmico. Existen modelos con acoplamiento electromagnético y compresores variables sin embrague (de accionamiento externo con disco de arrastre, fusibles de sobrecarga de goma y válvula de regulación electrónica PWM). Internamente incorporan un lubricante sintético especial. (págs. 7, 20, 29).
+Accionado habitualmente por el motor térmico mediante una correa trapezoidal o correa estriada. Existen diversos diseños adaptados a la capacidad frigorífica del sistema. (pág. 10)
 
 ## Principio de funcionamiento
-Succiona el fluido frigorífico en estado gaseoso a baja temperatura y baja presión. Mediante el movimiento de sus componentes internos (pistones, plato oscilante, rotor o espirales scroll) incrementa la presión y temperatura del fluido, impulsándolo gaseoso hacia el condensador. (págs. 7, 20, 31).
+Comprime el refrigerante gaseoso reduciendo su volumen para incrementar su presión y temperatura. Contiene en su interior un aceite especial para lubricar sus componentes móviles; una parte de este aceite es arrastrada por el flujo de gas y circula por todo el circuito. (págs. 10-11)
+
+📷 IMAGEN: Vista general de un compresor de aire acondicionado accionable por correa — Fuente: Climatizacion basicos.pdf, pág. 10
 
 ## Valores de trabajo
-- Presión de baja en funcionamiento normal: 0,5 a 3,0 bares (aprox. 2 bares constantes en compresores de potencia regulada).
-- Presión de alta en funcionamiento normal: 6,0 a 25,0 bares.
-- Giro manual pre-montaje: 10 vueltas para distribuir el aceite. (págs. 16, 18, 22).
+No documentado en fuentes en las páginas 7, 10-11.
 
 ## Anomalías frecuentes
-Falta de estanqueidad en el retén del eje (anillo tórico) o en las juntas de carcasa, daños en rodamientos por exceso de tensión de correa, agarrotamiento de pistones por falta de lubricación/pérdida de refrigerante, y depósitos de virutas metálicas por desgaste interno. (págs. 7, 20, 24).
+Falta de estanqueidad en el anillo tórico del eje, fugas en las juntas de la carcasa, desgaste en los rodamientos y agarrotamiento/sujeción de los pistones. (pág. 10)
 
 ## Comportamiento en avería
-Pérdida parcial o total de la capacidad de enfriamiento del aire, generación de ruidos anormales, presiones de alta y baja equilibradas (idénticas) con el compresor en marcha o registro de códigos de avería en la unidad de control de climatización. (págs. 20, 24).
+Fallo completo de compresión, pérdida del agente frigorífico y ruido mecánico anómalo. (pág. 10)
 
 ## Cómo comprobarlo
-1. Comprobar tensión y alineación de la correa de accionamiento.
-2. Comprobar la presencia de alimentación eléctrica y estado de conectores.
-3. Inspeccionar visualmente en busca de fugas de aceite o colorante.
-4. Desmontar y purgar el aceite para inspeccionar su estado: si presenta tono grisáceo o virutas metálicas, el compresor está destruido internamente y exige lavado del circuito.
-5. En compresores de regulación variable, medir la señal PWM con osciloscopio (5 V/div, 0,5 ms/div) evaluando la variación del ciclo de trabajo (aprox. 75% en demanda máxima de frío "Lo" y 0% en "Econ"). (págs. 20, 24, 30).
-
-📷 IMAGEN: Despiece del compresor mostrando culata, pistón, plato oscilante, eje y válvula de admisión — Fuente: Climatizacion basicos.pdf, pág. 20
+Revisar visualmente el estado del retén del eje y juntas de carcasa para detectar manchas de aceite o fugas de refrigerante. (págs. 10-11)
 
 ## Mantenimiento
-Revisar el estado y tensión de la correa de transmisión. Sustituir obligatoriamente el filtro deshidratante, las juntas tóricas y la válvula de expansión al reemplazar el compresor. Antes de la instalación, ajustar la cantidad exacta y viscosidad del aceite según especificación del fabricante y girar el eje a mano 10 veces. (págs. 16, 22).
+Asegurar una lubricación adecuada manteniendo la carga correcta de refrigerante y aceite. La falta de estanqueidad provoca pérdida de aceite y el consecuente fallo por falta de lubricación. (pág. 10)
 
 ---
 
@@ -115,36 +195,41 @@ entidad: condensador
 area: climatizacion
 sistema: circuito-frigorifico
 fuente: "Climatizacion basicos.pdf"
-paginas: "8-9"
+paginas: "7, 12-14"
+forma_parte_de: circuito-frigorifico
 relacionados: [compresor, filtro-deshidratador, electroventilador-condensador]
-palabras: [condensador, disipación de calor, cambio de estado, tubos y láminas, multiflujo]
+palabras: [intercambio térmico, condensación, tubos y láminas, impacto frontal, suciedad]
 ```
 
 ## Misión
-Enfriar el gas refrigerante sobrecalentado procedente del compresor mediante la disipación de calor al aire exterior, provocando el cambio de estado del refrigerante de gaseoso a líquido. (págs. 8-9).
+Disipar al aire exterior el calor absorbido por el refrigerante en el evaporador y el generado durante la compresión, transformando el gas de estado gaseoso a estado líquido. (págs. 7, 12-13)
 
 ## Tipos y características
-Intercambiador de calor ubicado en el frontal del vehículo. Existen constructivamente modelos de tubos y láminas, serpentín y de flujo paralelo (multiflujo). (págs. 8, 37).
+Intercambiador de calor formado por un serpentín o entramado de tuberías y laminillas de aluminio montado en el frente del vehículo. (págs. 12-13)
 
 ## Principio de funcionamiento
-El gas refrigerante a alta presión y alta temperatura entra por la toma superior del condensador. Al circular por sus tuberías y láminas, transfiere su calor al aire exterior forzado por la marcha o el electroventilador, enfriándose hasta condensar y abandonar el componente en estado líquido por la toma inferior. (págs. 8-9).
+El gas refrigerante sobrecalentado entra por la toma superior del condensador. A medida que fluye hacia abajo por las tuberías, el aire exterior que atraviesa las láminas absorbe su energía térmica. Al enfriarse y alcanzar la temperatura de condensación, el fluido se licúa y abandona el condensador por la toma inferior en estado líquido. (pág. 13)
+
+📷 IMAGEN: Estructura del condensador de aire acondicionado con tuberías y laminillas de disipación — Fuente: Climatizacion basicos.pdf, pág. 12
 
 ## Valores de trabajo
-No documentado en fuentes. (págs. 8-9).
+No documentado en fuentes en las páginas 7, 12-14.
 
 ## Anomalías frecuentes
-Fugas de refrigerante por impactos de gravilla o accidentes frontales, corrosión, y obstrucción externa de las láminas por suciedad, insectos o barro. (págs. 8-9).
+- Fugas o daños en los racores de empalme. (pág. 14)
+- Obstrucción externa e intercambio de calor insuficiente por acumulación de suciedad, insectos o impactos de gravilla. (págs. 12, 14)
+- Deformación o rotura por accidentes con impacto en la parte frontal. (pág. 12)
 
 ## Comportamiento en avería
-Rendimiento deficiente de refrigeración, fallo completo del aire acondicionado, presiones de alta excesivamente elevadas y funcionamiento ininterrumpido del electroventilador del condensador. (págs. 8-9).
+Pobre rendimiento de refrigeración, fallo total del aire acondicionado y funcionamiento continuo del ventilador del condensador. (pág. 13)
 
 ## Cómo comprobarlo
-1. Inspección visual externa de láminas y tuberías para detectar deformaciones, suciedad o fugas.
-2. Comprobación de estanqueidad mediante detector electrónico o gas formier.
-3. Medición de presiones en alta y baja presión con el equipo conectado. (págs. 8-9).
+- Comprobar visualmente si las láminas presentan suciedad o deformaciones por gravilla. (pág. 14)
+- Comprobar si existen fugas de agente frigorífico. (pág. 14)
+- Comprobar la presión en los sectores de alta y baja presión del circuito. (pág. 14)
 
 ## Mantenimiento
-Limpieza periódica externa de la superficie de las láminas con aire o agua a baja presión (sin aplicar limpiadores de vapor directos sobre las aletas). En caso de lavado interno tras fallo de compresor, los modelos de flujo paralelo (multiflujo) no se pueden lavar con garantía y deben ser sustituidos. (págs. 8, 14, 37).
+Mantener limpias las aletas de refrigeración y revisar periódicamente la estanqueidad de las conexiones. (págs. 12, 14)
 
 ---
 
@@ -155,36 +240,41 @@ entidad: filtro-deshidratador
 area: climatizacion
 sistema: circuito-frigorifico
 fuente: "Climatizacion basicos.pdf"
-paginas: "9-10"
-relacionados: [condensador, valvula-expansion, aceite-frigorifico]
-palabras: [filtro deshidratante, agente secante, higroscópico, humedad, acumulador]
+paginas: "7, 14-17"
+forma_parte_de: circuito-frigorifico
+relacionados: [condensador, valvula-expansion, refrigerante-r134a]
+palabras: [agente secante, higroscópico, acumulador, retención humedad, 2 años]
 ```
 
 ## Misión
-Filtrar partículas y cuerpos extraños del refrigerante, absorber la humedad disuelta en el fluido y actuar como depósito de compensación y acumulación de refrigerante líquido frente a oscilaciones de presión. (págs. 9-10).
+Eliminar la humedad residual disuelta en el agente frigorífico y retener impurezas o cuerpos extraños, actuando además como depósito acumulador y compensador de oscilaciones de presión. (págs. 7, 15)
 
 ## Tipos y características
-Denominado filtro deshidratante (instalado en el lado de alta presión tras el condensador) o acumulador (instalado en el lado de baja presión tras el evaporador en sistemas con estrangulador fijo). Contiene un agente secante altamente higroscópico y una almohadilla filtrante interna. (págs. 9-10).
+Recipiente metálico cilíndrico montado en la línea de alta presión tras el condensador (o acumulador en línea de baja). Contiene un agente secante altamente higroscópico y una almohadilla filtrante. (págs. 15-16)
 
 ## Principio de funcionamiento
-El refrigerante líquido entra por la parte superior, atraviesa la almohadilla filtrante y la masa granulada del agente secante, reteniendo el agua y las impurezas sólidas, y sale en estado líquido hacia la válvula de expansión. La parte superior actúa como volumen de amortiguación de presión. (págs. 9-10).
+El refrigerante en estado líquido penetra en el filtro, atraviesa el agente secante e higroscópico para ceder la humedad y cruza la almohadilla filtrante para retener partículas. Sale del filtro en estado líquido hacia la válvula de expansión. La parte superior del cilindro actúa como cámara de compensación y la parte inferior como reserva de líquido. (pág. 15)
+
+📷 IMAGEN: Vista del filtro deshidratante y su agente secante interno — Fuente: Climatizacion basicos.pdf, pág. 15
 
 ## Valores de trabajo
-Contiene un 10% de la cantidad total de aceite de lubricación del sistema. (pág. 22).
+- Capacidad de absorción de humedad: limitada por el volumen de sustancia desecante integrada. (pág. 16)
 
 ## Anomalías frecuentes
-Saturación del agente secante por exceso de humedad, envejecimiento natural, descomposición de la almohadilla filtrante interna con liberación de silicato al circuito, y fugas en sus racores de empalme. (págs. 9-10, 15).
+- Saturación completa del agente desecante por envejecimiento. (pág. 16)
+- Rotura o defecto en la almohadilla filtrante interior. (pág. 16)
+- Fugas o daños en los racores de empalme. (pág. 17)
 
 ## Comportamiento en avería
-Disminución drástica o pérdida total de la potencia de refrigeración, formación de hielo sobre el propio filtro deshidratante por obstrucción interna, y congelación de la válvula de expansión por presencia de agua libre en el circuito. (págs. 9-10, 32).
+Baja potencia de refrigeración, fallo del aire acondicionado y posible desprendimiento de partículas de silicato que destruyen otros componentes. (págs. 16, 35)
 
 ## Cómo comprobarlo
-1. Comprobar la fecha del último reemplazo (intervalo recomendado de 2 años).
-2. Tocar los tubos de entrada y salida: si existe una diferencia acusada de temperatura entre entrada y salida, el filtro se halla obstruido internamente.
-3. Inspeccionar visualmente racores y cuerpo en busca de fugas o corrosión. (págs. 9-10).
+- Verificar el tiempo transcurrido desde la última sustitución (máximo 2 años). (pág. 17)
+- Comprobar la estanqueidad y el estado de fijación de los empalmes. (pág. 17)
+- Comprobar la presión en la zona de alta y baja presión. (pág. 17)
 
 ## Mantenimiento
-Sustituir obligatoriamente cada 2 años o cada vez que se abra el circuito frigorífico por reparación. (págs. 10, 15).
+Renovar obligatoriamente cada 2 años o cada vez que se abra el circuito de refrigerante por cualquier reparación. (págs. 14, 17)
 
 ---
 
@@ -195,36 +285,41 @@ entidad: valvula-expansion
 area: climatizacion
 sistema: circuito-frigorifico
 fuente: "Climatizacion basicos.pdf"
-paginas: "10-11"
-relacionados: [evaporador, filtro-deshidratador, compresor]
-palabras: [válvula de expansión, dosificación, alta presión, baja presión, bulbo termostático]
+paginas: "8-9, 18-21"
+forma_parte_de: circuito-frigorifico
+relacionados: [filtro-deshidratador, evaporador, compresor]
+palabras: [punto de separación, atomización, regulación de caudal, sobrecalentamiento, congelación]
 ```
 
 ## Misión
-Separar el lado de alta presión del lado de baja presión, dosificando y regulando la cantidad de refrigerante líquido inyectado al evaporador en función de la temperatura de salida de este para lograr la máxima eficiencia de enfriamiento y evitar el retorno de líquido al compresor. (págs. 10-11).
+Dosificar y regular el caudal de agente frigorífico líquido inyectado en el evaporador en función de la temperatura, actuando como punto de separación física entre la zona de alta presión y la zona de baja presión. (págs. 18-19)
 
 ## Tipos y características
-Existen válvulas de expansión termostáticas (bloque o con tubo capilar) y tubos con orificio fijo (estrangulador o tubo de mariposa). (págs. 10, 18).
+Dispositivo de estrangulación montado justo a la entrada del evaporador. Existen diseños de bloque con elemento termostático o de tubo de orificio (mariposa fija). (pág. 18)
 
 ## Principio de funcionamiento
-El refrigerante líquido a alta presión entra en la válvula y es forzado a pasar por un estrechamiento (orificio de expansión), sufriendo una caída brusca de presión que causa su atomización y enfriamiento antes de entrar al evaporador. Un elemento termostático sensible a la temperatura del gas a la salida del evaporador ajusta mecánicamente el paso de la aguja: si la temperatura sube, la válvula abre aumentando el caudal; si la temperatura baja, reduce el paso. (págs. 10-11).
+El refrigerante líquido a alta presión procedente del filtro deshidratante atraviesa el paso estrecho de la válvula, expandiéndose e inyectándose en el evaporador a baja presión. La válvula mide la temperatura del gas a la salida del evaporador: si la temperatura sube, abre el paso para aumentar el caudal inyectado; si disminuye, reduce la sección del paso para limitar el caudal y asegurar que al compresor solo llegue gas en estado gaseoso. (pág. 19)
+
+📷 IMAGEN: Corte funcional de la válvula de expansión mostrando el paso de regulación de caudal — Fuente: Climatizacion basicos.pdf, pág. 18
 
 ## Valores de trabajo
-Prohibido manipular el ajuste de fábrica de su tornillo de regulación. (pág. 14).
+- Ajuste de fábrica del tornillo de regulación: inalterable, no debe modificarse bajo ningún concepto. (pág. 33)
 
 ## Anomalías frecuentes
-Obstrucción o bloqueo por suciedad/virutas del compresor, congelación del orificio por presencia de humedad en el fluido, y pérdida de carga en el elemento termostático. (págs. 10-11, 25).
+- Bloqueo por acumulación de suciedad o congelación de la humedad en el orificio. (págs. 18, 20)
+- Fugas en los componentes o tuberías de conexión. (pág. 20)
+- Desajuste térmico por sobrecalentamiento. (pág. 20)
 
 ## Comportamiento en avería
-Si la válvula queda bloqueada en posición cerrada: falta de rendimiento, presión de baja muy baja o en vacío y alta presión elevada. Si se queda bloqueada abierta: baja presión excesivamente alta, falta de enfriamiento y riesgo de entrada de refrigerante líquido al compresor. (págs. 10-11, 18, 32).
+Baja potencia de refrigeración, interrupción del ciclo frigorífico, congelación del evaporador o paso de líquido hacia el compresor. (pág. 20)
 
 ## Cómo comprobarlo
-1. Medición de presiones en alta y baja presión con el equipo en marcha.
-2. Medición de temperatura con termómetro en las tuberías de entrada y salida de la válvula.
-3. Inspección acústica y comprobación de ausencia de fugas en sus conexiones. (págs. 10-11).
+- Realizar inspección visual y comprobación acústica del flujo. (págs. 20-21)
+- Medir la temperatura en el cuerpo de la válvula y en los conductos de salida. (pág. 21)
+- Medir presiones con el compresor y el motor en funcionamiento. (pág. 21)
 
 ## Mantenimiento
-La válvula de expansión no es lavable; si se contamina con virutas o suciedad tras una avería de compresor, debe ser reemplazada. No modificar en ningún caso el ajuste de fábrica del tornillo de regulación. (págs. 14, 16, 22).
+Prohibido modificar el ajuste de fábrica del tornillo de regulación. Sustituir en caso de contaminación del circuito o avería del compresor. (págs. 20, 33, 39)
 
 ---
 
@@ -235,160 +330,215 @@ entidad: evaporador
 area: climatizacion
 sistema: circuito-frigorifico
 fuente: "Climatizacion basicos.pdf"
-paginas: "11-12"
-relacionados: [valvula-expansion, ventilador-habitaculo, filtro-deshidratador]
-palabras: [evaporador, calor latente, deshumidificación, habitáculo, agua condensada]
+paginas: "9-10, 21-24"
+forma_parte_de: unidad-climatizadora
+relacionados: [valvula-expansion, compresor, ventilador-habitaculo]
+palabras: [intercambio térmico, ebullición, absorción de calor, aire frío, desinfección]
 ```
 
 ## Misión
-Absorber el calor del aire destinado al habitáculo mediante la evaporación del refrigerante líquido inyectado a baja presión, enfriando y deshumidificando el aire entrante. (págs. 11-12).
+Absorber el calor del aire que ingresa al habitáculo mediante la ebullición y evaporación del agente frigorífico que circula por su interior. (págs. 21-22)
 
 ## Tipos y características
-Intercambiador de calor de tubos y aletas de aluminio situado en la unidad climática del habitáculo. Alberga una gran superficie de transferencia térmica y un canal de recogida de condensados. (págs. 11-12).
+Intercambiador de calor de gran superficie de aluminio formado por tubos y aletas, ubicado en el interior de la unidad climática bajo el tablero de instrumentos. (págs. 22-23)
 
 ## Principio de funcionamiento
-El refrigerante líquido pulverizado a baja presión entra en el evaporador. Al atravesar sus conductos, absorbe el calor del aire que la turbina del habitáculo hace pasar a través de sus aletas externas. Al calentarse, el refrigerante hierve y se transforma íntegramente en gas antes de salir hacia el compresor. La humedad presente en el aire se condensa sobre las aletas frías y se evacúa al exterior. (págs. 11-12).
+El refrigerante líquido pulverizado a baja presión por la válvula de expansión entra al evaporador y entra en ebullición. Para evaporarse, absorbe la energía térmica del aire exterior impulsado por el soplador a través de sus aletas. El aire se enfría y deshidrata antes de entrar al habitáculo, mientras que el refrigerante sale completamente gaseoso hacia el compresor. (pág. 22)
+
+📷 IMAGEN: Módulo del evaporador con sus tubos de entrada y aletas de disipación — Fuente: Climatizacion basicos.pdf, pág. 22
 
 ## Valores de trabajo
-- Alberga un 20% de la cantidad total de aceite de lubricación del sistema. (pág. 22).
-- Temperatura del aire en tobera media con el equipo a máxima potencia: 3 a 8 ºC. (pág. 17).
+No documentado en fuentes en las páginas 9-10, 21-24.
 
 ## Anomalías frecuentes
-Obstrucción o acumulación de suciedad en las aletas externas, pérdidas de estanqueidad (fugas) por corrosión o vibraciones, e infección por microorganismos, hongos y bacterias que generan malos olores. (págs. 4, 11-12, 72).
+- Obstrucción interna de las tuberías por suciedad o virutas. (pág. 23)
+- Fugas de agente frigorífico por corrosión o fisuras en empalmes. (pág. 23)
+- Obstrucción externa de la entrada de aire por polvo, polen y suciedad. (pág. 23)
+- Acumulación de humedad, bacterias y hongos en las láminas. (págs. 4, 21)
 
 ## Comportamiento en avería
-Rendimiento de refrigeración deficiente, imposibilidad de enfriar el habitáculo, caudal de aire de ventilación reducido por aletas tupidas y presencia de humedad o malos olores en el interior. (págs. 11-12).
+Rendimiento deficiente de la refrigeración, fallo total del aire acondicionado, caudal de aire insuficiente por el ventilador y emisión de malos olores. (pág. 23)
 
 ## Cómo comprobarlo
-1. Comprobar la temperatura del aire en la tobera central (debe situarse entre 3 y 8 ºC).
-2. Medir presiones de trabajo en alta y baja presión con motor entre 2.000 y 2.500 rpm.
-3. Medir la diferencia de temperatura entre el tubo de entrada y el de salida del evaporador.
-4. Inspeccionar la presencia de fugas de refrigerante/colorante mediante detector electrónico en el drenaje de condensados. (págs. 12, 17).
+- Comprobar visualmente el estado de limpieza exterior de la matriz de aletas. (pág. 23)
+- Comprobar la estanqueidad del cuerpo y de las tuberías. (pág. 24)
+- Medir la temperatura en la tubería de entrada y en la tubería de salida. (pág. 24)
+- Medir las presiones de trabajo con el compresor activado. (pág. 24)
 
 ## Mantenimiento
-Desinfección periódica del evaporador mediante tratamiento antiséptico/vaporizador para eliminar la colonia de bacterias y microorganismos. Sustituir el filtro de habitáculo cada 12 meses. (págs. 4, 72).
+Realizar la desinfección periódica del evaporador para eliminar bacterias y hongos retenidos en el agua de condensación. (págs. 4, 21)
 
 ---
 
 ```yaml
 tipo: componente
-titulo: Presostato e interruptor trinario
+titulo: Presostatos e interruptores de presión
 entidad: presostato
 area: climatizacion
 sistema: control-climatizacion
 fuente: "Climatizacion basicos.pdf"
-paginas: "12-13"
+paginas: "10-11, 24-28"
+forma_parte_de: circuito-frigorifico
 relacionados: [compresor, embrague-compresor, electroventilador-condensador]
-palabras: [presostato, interruptor trinario, alta presión, baja presión, desconexión de seguridad]
+palabras: [baja presión, alta presión, trinario, protección compresor, 26-33 bar, 2 bar]
 ```
 
 ## Misión
-Proteger el sistema de climatización frente a presiones de trabajo peligrosamente altas o insuficientemente bajas y gestionar la activación del electroventilador del condensador para garantizar la condensación del fluido. (págs. 12-13).
+Proteger el sistema de climatización y el compresor contra sobrepresiones o presiones excesivamente bajas, y gestionar el funcionamiento del ventilador del condensador. (pág. 25)
 
 ## Tipos y características
-Presostatos simples (de alta o baja presión) o interruptores trinarios (combinan en una única ampolla el contacto de baja presión, el de alta presión y el contacto de conmutación del ventilador). (págs. 12-13).
+Interruptores electromecánicos o electrónicos montados en la zona de alta presión. Se clasifican en interruptores de baja presión, de alta presión e interruptores trinarios (que combinan alta presión, baja presión y mando de electroventilador). (pág. 25)
 
 ## Principio de funcionamiento
-Instalado por lo general en la tubería del lado de alta presión. Si la presión sube excesivamente (26-33 bar) o desciende por debajo del límite mínimo por fuga (aprox. 2 bar), abre sus contactos interrumpiendo la alimentación eléctrica hacia el acoplamiento magnético del compresor. Su tercer contacto conmuta el circuito eléctrico del electroventilador del condensador al alcanzar el umbral de presión intermedia. (págs. 12-13).
+- **Protección por alta presión:** Si la presión del circuito alcanza valores de sobrepresión críticos (aprox. 26-33 bar), abre el contacto e interrumpe la corriente al embrague del compresor, reanudando la marcha cuando la presión cae a valores seguros (aprox. 5 bar). (pág. 26)
+- **Protección por baja presión:** Si la presión cae por debajo de aprox. 2 bar (debido a falta de refrigerante), interrumpe la corriente para evitar la destrucción del compresor por falta de lubricación. (pág. 26)
+- **Contacto del ventilador (trinario):** Cierra un contacto adicional al subir la presión para activar el ventilador del condensador y forzar la condensación. (pág. 26)
+
+📷 IMAGEN: Presostato trinario con su rosca de acoplamiento e interfaz de conexión eléctrica — Fuente: Climatizacion basicos.pdf, pág. 25
 
 ## Valores de trabajo
-- Umbral de desconexión por alta presión: 26 a 33 bares (reconexión al descender a aprox. 5 bares).
-- Umbral de desconexión por baja presión: aprox. 2 bares. (págs. 12-13).
+- Umbral de desconexión por alta presión: aprox. 26 a 33 bar. (pág. 26)
+- Umbral de reconexión tras alta presión: aprox. 5 bar. (pág. 26)
+- Umbral de desconexión por baja presión: aprox. 2 bar. (pág. 26)
 
 ## Anomalías frecuentes
-Fallo o sulfatación en los contactos eléctricos internos, suciedad acumulada en el puerto de toma de presión, y grietas en la carcasa producidas por vibraciones. (págs. 12-13).
+- Fallos en los contactos eléctricos por suciedad o fogueo. (pág. 27)
+- Daños en la carcasa causados por vibraciones mecánicas o colisiones. (pág. 27)
 
 ## Comportamiento en avería
-Fallo completo de funcionamiento del aire acondicionado, desacoplamiento y acoplamiento continuo y errático del embrague del compresor, o inactividad del electroventilador del condensador produciendo sobrepresiones. (págs. 12-13).
+Rendimiento de refrigeración deficiente, inoperatividad total del aire acondicionado o ciclos continuos e intermitentes de encendido/apagado del embrague del compresor. (pág. 27)
 
 ## Cómo comprobarlo
-1. Inspección visual del enchufe y conector eléctrico.
-2. Medición de continuidad eléctrica en los contactos según la presión real medida en la instalación con manómetros.
-3. Prueba del componente desmontado aplicando presión controlada mediante botella de nitrógeno con manorreductor y comprobando la conmutación de contactos con multímetro. (págs. 12-13).
+- Verificar que los enchufes eléctricos estén firmemente apretados. (pág. 28)
+- Medir la presión del circuito con el compresor encendido y motor en marcha. (pág. 28)
+- Probar el presostato desmontado utilizando una botella de nitrógeno con manorreductor y un multímetro para verificar el disparo de contactos. (pág. 28)
 
 ## Mantenimiento
-Verificación del apriete del conector y sustitución de la junta tórica en el racor al desmontar. (págs. 12-13).
+Realizar revisiones periódicas de los contactos eléctricos durante el servicio de climatización. (pág. 25)
 
 ---
 
 ```yaml
 tipo: componente
-titulo: Ventilador del condensador
-entidad: electroventilador-condensador
+titulo: Ventilador del habitáculo
+entidad: ventilador-habitaculo
 area: climatizacion
-sistema: circuito-frigorifico
+sistema: distribucion-aire
 fuente: "Climatizacion basicos.pdf"
-paginas: "13"
-relacionados: [condensador, presostato, compresor]
-palabras: [ventilador del condensador, refrigeración forzada, condensación, flujo de aire]
+paginas: "11, 28-29"
+forma_parte_de: distribucion-aire
+relacionados: [evaporador, filtro-habitaculo]
+palabras: [soplador, caudal de aire, desempañamiento, visibilidad, confort]
 ```
 
 ## Misión
-Proporcionar un flujo forzado de aire a través del condensador cuando el vehículo se encuentra al ralentí o a baja velocidad, asegurando la disipación térmica necesaria para la licuación del refrigerante. (pág. 13).
+Impulsar el caudal de aire ambiente o recirculado a través del evaporador y del radiador de calefacción hacia los difusores del habitáculo. (págs. 28-29)
 
 ## Tipos y características
-Soplante accionado por motor eléctrico, montado como conjunto independiente o combinado con el sistema de refrigeración del motor, situado por delante o por detrás del condensador. (pág. 13).
+Electromotor soplador con rodete centrífugo montado en el cuerpo de la unidad climática. (págs. 28-29)
 
 ## Principio de funcionamiento
-Se activa eléctricamente por orden de la unidad de control o del presostato/interruptor trinario cuando el aire acondicionado está conectado o al detectarse un incremento de la presión en el lado de alta presión, haciendo pasar aire fresco exterior entre las láminas del condensador. (págs. 12-13).
+Al recibir alimentación eléctrica, el motor hace girar el rodete que aspira aire del exterior o del habitáculo y lo fuerza a pasar por los intercambiadores térmicos de la unidad climática hacia las salidas de ventilación. (págs. 28-29)
+
+📷 IMAGEN: Módulo soplador del ventilador del habitáculo — Fuente: Climatizacion basicos.pdf, pág. 28
 
 ## Valores de trabajo
-No documentado en fuentes. (pág. 13).
+No documentado en fuentes en las páginas 11, 28-29.
 
 ## Anomalías frecuentes
-Quemado del motor eléctrico, desgaste de escobillas, fallo en el relé de excitación o resistencia previa, y rotura o agarrotamiento de los álabes del ventilador. (págs. 13, 17).
+Averías en el motor eléctrico o en sus resistencias/regulador de velocidad. (págs. 28-29)
 
 ## Comportamiento en avería
-El refrigerante no logra condensarse correctamente, produciendo un disparo de la alta presión en la instalación, pérdida drástica de la potencia de frío al estar el vehículo parado o a baja velocidad, y ruidos anómalos. (págs. 8, 13, 28).
+Falta de caudal de aire en el interior, imposibilidad de desempañar el parabrisas y deterioro grave del confort térmico y de la seguridad al conducir. (pág. 29)
 
 ## Cómo comprobarlo
-1. Verificación de la rotación libre manual de las palas del ventilador con el motor parado.
-2. Comprobación de la presencia de tensión de alimentación (+12 V) y masa en su conector al activar el climatizador.
-3. Verificar el cierre del contacto del presostato trinario que demanda su puesta en marcha. (págs. 12, 17).
+Verificar la llegada de tensión al conector del motor y probar el selector de velocidades. (pág. 28)
 
 ## Mantenimiento
-Comprobar periódicamente que no existen cuerpos extraños que bloqueen el giro del ventilador. (págs. 13, 28).
+No documentado en fuentes en las páginas 11, 28-29.
 
 ---
 
 ```yaml
-tipo: diagnostico
-titulo: Diagnosis de averías mediante lectura de presiones de manómetros
-entidad: lectura-manometros
+tipo: componente
+titulo: Tuberías y manguitos del circuito
+entidad: tuberias-y-racores
 area: climatizacion
 sistema: circuito-frigorifico
 fuente: "Climatizacion basicos.pdf"
-paginas: "17-19, 32-33"
-relacionados: [compresor, valvula-expansion, condensador, filtro-deshidratador]
-palabras: [manómetros, baja presión, alta presión, diagnóstico por presiones, falta de refrigerante]
+paginas: "11, 29-30"
+forma_parte_de: circuito-frigorifico
+relacionados: [compresor, condensador, evaporador]
+palabras: [manguitos flexibles, tubería de aluminio, prensado, racores, estanqueidad]
 ```
 
-## Síntoma
-Insuficiente o nulo rendimiento de refrigeración en el habitáculo (temperatura en tobera central superior a 8 ºC). (pág. 17).
+## Misión
+Canalizar el agente frigorífico y el aceite disuelto conectando herméticamente todos los componentes del circuito de climatización. (págs. 29-30)
 
-## Causas posibles
-1. BP alta y AP alta: Condensador sucio, electroventilador averiado, sobrecarga de refrigerante o motor sobrecalentado.
-2. BP baja y AP baja: Falta/fuga de gas refrigerante en el circuito.
-3. BP alta y AP baja: Válvula de expansión bloqueada abierta o compresor defectuoso (pérdida de estanqueidad/compresión interna).
-4. BP igual a AP (presiones equilibradas con compresor conectado): Compresor defectuoso, falta total de refrigerante o fallo eléctrico de activación del embrague/válvula PWM.
-5. BP variable y AP variable: Presencia de humedad en la instalación o válvula de expansión defectuosa. (págs. 18-19, 32-33).
+## Tipos y características
+Combinación de conductos rígidos de aluminio y mangueras flexibles de caucho sintético de baja permeabilidad, unidas a los racores metálicos mediante prensado con casquillos especiales. (págs. 29-30)
 
-## Cómo separar las causas
-1. Conectar la estación de diagnosis con puente de manómetros a las tomas de servicio de alta y baja presión.
-2. Arrancar el motor, ajustar el climatizador a máxima potencia de frío con ventilación media y mantener el régimen entre 2.000 y 2.500 rpm.
-3. Leer los valores estabilizados en los relojes de baja presión (BP) y alta presión (AP).
-4. Si BP es baja y AP es baja: realizar prueba de estanqueidad con nitrógeno o gas formier para confirmar fuga antes de recargar.
-5. Si BP es alta y AP es baja: purgar el aceite del compresor; si el aceite muestra partículas metálicas o tono grisáceo, el compresor está destruido internamente y requiere sustitución y lavado del circuito. Si el aceite es limpio, verificar el estado de la válvula de expansión.
-6. Si BP es alta y AP es alta: rociar agua sobre el condensador; si la alta presión desciende inmediatamente, el fallo está en la suciedad del condensador o en la falta de caudal del electroventilador. (págs. 17-19, 24, 32-33).
+## Principio de funcionamiento
+Soportan las altas presiones y pulsaciones del circuito y absorben los movimientos mecánicos relativos entre el motor térmico y la carrocería del vehículo, evitando fugas de fluido por porosidad o grietas. (págs. 29-30)
 
-## Valores de referencia
-Condiciones de medición: motor entre 2.000 y 2.500 rpm, climatizador a máxima potencia de frío.
-- Baja presión (BP) en sistema con válvula de expansión: 0,5 a 3,0 bares.
-- Baja presión (BP) en compresor de potencia regulada: aprox. 2,0 bares constantes.
-- Alta presión (AP): 6,0 a 25,0 bares.
-- Temperatura del aire de salida en tobera central: 3 a 8 ºC. (págs. 17-18).
+📷 IMAGEN: Conjunto de manguitos flexibles con racores de conexión prensados — Fuente: Climatizacion basicos.pdf, pág. 29
 
-## Verificación tras la reparación
-Con la cantidad exacta de refrigerante y aceite cargados, poner el sistema en marcha a máxima potencia y confirmar que la baja presión se sitúa en torno a 2 bares, la alta presión en rango normal (6-25 bar) y la temperatura en tobera media desciende entre 3 y 8 ºC. (pág. 17).
+## Valores de trabajo
+No documentado en fuentes en las páginas 11, 29-30.
 
-COBERTURA: documento «Climatizacion basicos.pdf», páginas 1 a 33 de 75. [queda pendiente desde la página 34]
+## Anomalías frecuentes
+Fugas de agente frigorífico en las zonas de prensado del casquillo, porosidad por envejecimiento del caucho o rozamiento mecánico con partes de la carrocería. (págs. 30, 36)
+
+## Comportamiento en avería
+Pérdida progresiva de refrigerante, disminución del rendimiento frigorífico y posible entrada de humedad al circuito. (págs. 30, 38)
+
+## Cómo comprobarlo
+Inspeccionar las zonas de unión para detectar manchas de aceite de lubricación y aplicar detectores de fugas. (págs. 30, 38)
+
+## Mantenimiento
+Utilizar siempre dos llaves al aflojar o apretar las conexiones para no retorcer las mangueras. Asegurar que no rocen contra bordes afilados o componentes móviles. (pág. 36)
+
+---
+
+```yaml
+tipo: componente
+titulo: Electroventilador del condensador
+entidad: electroventilador-condensador
+area: climatizacion
+sistema: circuito-frigorifico
+fuente: "Climatizacion basicos.pdf"
+paginas: "11, 30"
+forma_parte_de: circuito-frigorifico
+relacionados: [condensador, presostato]
+palabras: [ventilador auxiliar, flujo de aire, condensación, alta presión]
+```
+
+## Misión
+Forzar el paso de aire a través de la matriz del condensador para garantizar la correcta licuación del gas refrigerante con el vehículo parado o a baja velocidad. (pág. 30)
+
+## Tipos y características
+Electromotor provisto de hélice montado junto al condensador, funcionando como ventilador auxiliar dedicado o en combinación con el ventilador del radiador del motor. (pág. 30)
+
+## Principio de funcionamiento
+Se activa mediante una señal eléctrica comandada por el presostato trinario o por la unidad de control cuando la presión de alta se eleva o se conecta el aire acondicionado, impulsando un fuerte caudal de aire fresco a través de las láminas del condensador. (págs. 26, 30)
+
+📷 IMAGEN: Electroventilador auxiliar para el condensador — Fuente: Climatizacion basicos.pdf, pág. 30
+
+## Valores de trabajo
+No documentado en fuentes en las páginas 11, 30.
+
+## Anomalías frecuentes
+Fallo eléctrico del motor, desgaste de escobillas, fusibles fundidos o agarrotamiento mecánico del eje por suciedad o impacto. (pág. 30)
+
+## Comportamiento en avería
+Elevación excesiva de la alta presión, deficiente licuación del refrigerante y caída acusada de la potencia frigorífica con el vehículo al ralentí. (pág. 30)
+
+## Cómo comprobarlo
+Verificar la activación eléctrica al conectar el aire acondicionado o al puentear el presostato. (págs. 26, 30)
+
+## Mantenimiento
+Revisar el giro libre de las paletas y mantener limpio el canalizador. (pág. 30)
+
+---
+
+COBERTURA: documento «Climatizacion basicos.pdf», páginas 4 a 11 de 75. queda pendiente desde la página 12

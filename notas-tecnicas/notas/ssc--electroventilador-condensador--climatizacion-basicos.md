@@ -5,43 +5,46 @@ unidad: clima
 nt: 222
 tipo: elemento
 clase: componente
-titulo: "Ventilador del condensador"
-menu: "Ventilador del condensador"
+titulo: "Electroventilador del condensador"
+menu: "Electroventilador del condensador"
 grupo: "Circuito frigorífico"
 clave: electroventilador-condensador
 area: climatizacion
 sistema: "circuito-frigorifico"
-fuentes: "Climatizacion basicos.pdf, págs. 13"
-relacionados: ["condensador", "presostato", "compresor"]
-palabras: ["ventilador del condensador", "refrigeración forzada", "condensación", "flujo de aire"]
+forma_parte_de: circuito-frigorifico
+fuentes: "Climatizacion basicos.pdf, págs. 11, 30"
+relacionados: ["condensador", "presostato"]
+palabras: ["ventilador auxiliar", "flujo de aire", "condensación", "alta presión"]
 ---
 
 ## Misión
 
-Proporcionar un flujo forzado de aire a través del condensador cuando el vehículo se encuentra al ralentí o a baja velocidad, asegurando la disipación térmica necesaria para la licuación del refrigerante. (pág. 13).
+Forzar el paso de aire a través de la matriz del condensador para garantizar la correcta licuación del gas refrigerante con el vehículo parado o a baja velocidad. (pág. 30)
 
 ## Tipos y características
 
-Soplante accionado por motor eléctrico, montado como conjunto independiente o combinado con el sistema de refrigeración del motor, situado por delante o por detrás del condensador. (pág. 13).
+Electromotor provisto de hélice montado junto al condensador, funcionando como ventilador auxiliar dedicado o en combinación con el ventilador del radiador del motor. (pág. 30)
 
 ## Principio de funcionamiento
 
-Se activa eléctricamente por orden de la unidad de control o del presostato/interruptor trinario cuando el aire acondicionado está conectado o al detectarse un incremento de la presión en el lado de alta presión, haciendo pasar aire fresco exterior entre las láminas del condensador. (págs. 12-13).
+Se activa mediante una señal eléctrica comandada por el presostato trinario o por la unidad de control cuando la presión de alta se eleva o se conecta el aire acondicionado, impulsando un fuerte caudal de aire fresco a través de las láminas del condensador. (págs. 26, 30)
 
 ## Anomalías frecuentes
 
-Quemado del motor eléctrico, desgaste de escobillas, fallo en el relé de excitación o resistencia previa, y rotura o agarrotamiento de los álabes del ventilador. (págs. 13, 17).
+Fallo eléctrico del motor, desgaste de escobillas, fusibles fundidos o agarrotamiento mecánico del eje por suciedad o impacto. (pág. 30)
 
 ## Comportamiento en avería
 
-El refrigerante no logra condensarse correctamente, produciendo un disparo de la alta presión en la instalación, pérdida drástica de la potencia de frío al estar el vehículo parado o a baja velocidad, y ruidos anómalos. (págs. 8, 13, 28).
+Elevación excesiva de la alta presión, deficiente licuación del refrigerante y caída acusada de la potencia frigorífica con el vehículo al ralentí. (pág. 30)
 
 ## Cómo comprobarlo
 
-1. Verificación de la rotación libre manual de las palas del ventilador con el motor parado.
-2. Comprobación de la presencia de tensión de alimentación (+12 V) y masa en su conector al activar el climatizador.
-3. Verificar el cierre del contacto del presostato trinario que demanda su puesta en marcha. (págs. 12, 17).
+Verificar la activación eléctrica al conectar el aire acondicionado o al puentear el presostato. (págs. 26, 30)
 
 ## Mantenimiento
 
-Comprobar periódicamente que no existen cuerpos extraños que bloqueen el giro del ventilador. (págs. 13, 28).
+Revisar el giro libre de las paletas y mantener limpio el canalizador. (pág. 30)
+
+## Imágenes requeridas
+
+- Electroventilador auxiliar para el condensador — Fuente: Climatizacion basicos.pdf, pág. 30

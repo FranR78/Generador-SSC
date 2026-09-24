@@ -1126,7 +1126,55 @@
    "nt": 216,
    "titulo": "Compresor de climatización",
    "seccion": "4. El compresor",
-   "descripcion": "Despiece del compresor mostrando culata, pistón, plato oscilante, eje y válvula de admisión — Fuente: Climatizacion basicos.pdf, pág. 20",
+   "descripcion": "Vista general de un compresor de aire acondicionado accionable por correa — Fuente: Climatizacion basicos.pdf, pág. 10",
+   "hecha": false
+  },
+  {
+   "nombre": "NT217_01",
+   "nt": 217,
+   "titulo": "Condensador",
+   "seccion": "5. Lado de alta",
+   "descripcion": "Estructura del condensador de aire acondicionado con tuberías y laminillas de disipación — Fuente: Climatizacion basicos.pdf, pág. 12",
+   "hecha": false
+  },
+  {
+   "nombre": "NT218_01",
+   "nt": 218,
+   "titulo": "Filtro deshidratante",
+   "seccion": "5. Lado de alta",
+   "descripcion": "Vista del filtro deshidratante y su agente secante interno — Fuente: Climatizacion basicos.pdf, pág. 15",
+   "hecha": false
+  },
+  {
+   "nombre": "NT219_01",
+   "nt": 219,
+   "titulo": "Válvula de expansión",
+   "seccion": "6. Expansión y lado de baja",
+   "descripcion": "Corte funcional de la válvula de expansión mostrando el paso de regulación de caudal — Fuente: Climatizacion basicos.pdf, pág. 18",
+   "hecha": false
+  },
+  {
+   "nombre": "NT220_01",
+   "nt": 220,
+   "titulo": "Evaporador",
+   "seccion": "6. Expansión y lado de baja",
+   "descripcion": "Módulo del evaporador con sus tubos de entrada y aletas de disipación — Fuente: Climatizacion basicos.pdf, pág. 22",
+   "hecha": false
+  },
+  {
+   "nombre": "NT221_01",
+   "nt": 221,
+   "titulo": "Presostatos e interruptores de presión",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Presostato trinario con su rosca de acoplamiento e interfaz de conexión eléctrica — Fuente: Climatizacion basicos.pdf, pág. 25",
+   "hecha": false
+  },
+  {
+   "nombre": "NT222_01",
+   "nt": 222,
+   "titulo": "Electroventilador del condensador",
+   "seccion": "5. Lado de alta",
+   "descripcion": "Electroventilador auxiliar para el condensador — Fuente: Climatizacion basicos.pdf, pág. 30",
    "hecha": false
   },
   {
@@ -2714,6 +2762,30 @@
    "hecha": false
   },
   {
+   "nombre": "NT599_01",
+   "nt": 599,
+   "titulo": "Circuito de climatización con válvula de expansión",
+   "seccion": "2. Fundamentos",
+   "descripcion": "Esquema del circuito de refrigerante con válvula de expansión indicando la zona de alta presión (ámbar/rojo) y la zona de baja presión (azul) — Fuente: Climatizacion basicos.pdf, pág. 6",
+   "hecha": false
+  },
+  {
+   "nombre": "NT600_01",
+   "nt": 600,
+   "titulo": "Ventilador del habitáculo",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Módulo soplador del ventilador del habitáculo — Fuente: Climatizacion basicos.pdf, pág. 28",
+   "hecha": false
+  },
+  {
+   "nombre": "NT601_01",
+   "nt": 601,
+   "titulo": "Tuberías y manguitos del circuito",
+   "seccion": "6. Expansión y lado de baja",
+   "descripcion": "Conjunto de manguitos flexibles con racores de conexión prensados — Fuente: Climatizacion basicos.pdf, pág. 29",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -2738,7 +2810,7 @@
    "hecha": false
   }
  ],
- "total": 587,
+ "total": 593,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -5902,6 +5974,72 @@
    ]
   },
   {
+   "id": "ssc.ciclo-frigorifico.valvula-expansion.climatizacion-basicos",
+   "nt": 599,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ciclo-frigorifico",
+   "seccion": "2. Fundamentos",
+   "subgrupo": "",
+   "titulo": "Circuito de climatización con válvula de expansión",
+   "codigo": "",
+   "menu": "Circuito de climatización con válvula",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Climatizacion basicos.pdf, págs. 6-7",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "valvula-expansion",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "condensador",
+    "filtro-deshidratador",
+    "valvula-expansion",
+    "evaporador"
+   ],
+   "palabras": [
+    "alta presión",
+    "baja presión",
+    "condensación",
+    "evaporación",
+    "sistema cerrado"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Describir la estructura, división de zonas de presión y circulación de fluido en un circuito de climatización cerrado provisto de válvula de expansión. (págs. 6-7)",
+     "html": "<p>Describir la estructura, división de zonas de presión y circulación de fluido en un circuito de climatización cerrado provisto de válvula de expansión. <span class=\"pag\">págs. 6-7</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El sistema combina el refrigerante con el circuito mecánico para tratar el aire impulsado. El compresor acciona la circulación del gas refrigerante y del aceite de lubricación disuelto en un circuito cerrado de tuberías y mangueras flexibles. (págs. 6-7)",
+     "html": "<p>El sistema combina el refrigerante con el circuito mecánico para tratar el aire impulsado. El compresor acciona la circulación del gas refrigerante y del aceite de lubricación disuelto en un circuito cerrado de tuberías y mangueras flexibles. <span class=\"pag\">págs. 6-7</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El circuito frigorífico se divide en dos zonas bien diferenciadas: Zona de alta presión: Comprendida entre la salida del compresor y la entrada de la válvula de expansión. El compresor aspira el gas a baja presión y lo comprime, elevando intensamente su temperatura y presión. Al pasar por el condensador, cede calor al aire exterior y se condensa pasando a estado líquido. A continuación, el filtro deshidratante retiene las impurezas y la humedad. (págs. 6-7) Zona de baja presión: Comprendida entre la válvula de expansión y la aspiración del compresor. En la válvula de expansión se pulveriza el refrigerante hacia el evaporador, donde se evapora absorbiendo el calor del aire del habitáculo antes de regresar al compresor en estado gaseoso. (págs. 6-7)",
+     "html": "<p>El circuito frigorífico se divide en dos zonas bien diferenciadas:</p>\n<ul>\n<li><strong>Zona de alta presión:</strong> Comprendida entre la salida del compresor y la entrada de la válvula de expansión. El compresor aspira el gas a baja presión y lo comprime, elevando intensamente su temperatura y presión. Al pasar por el condensador, cede calor al aire exterior y se condensa pasando a estado líquido. A continuación, el filtro deshidratante retiene las impurezas y la humedad. <span class=\"pag\">págs. 6-7</span></li>\n<li><strong>Zona de baja presión:</strong> Comprendida entre la válvula de expansión y la aspiración del compresor. En la válvula de expansión se pulveriza el refrigerante hacia el evaporador, donde se evapora absorbiendo el calor del aire del habitáculo antes de regresar al compresor en estado gaseoso. <span class=\"pag\">págs. 6-7</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Asumir que el aceite de lubricación permanece estático en el cuerpo del compresor sin circular disuelto con el agente frigorífico a través de los componentes del circuito. (págs. 6-7)",
+     "html": "<ul>\n<li>Asumir que el aceite de lubricación permanece estático en el cuerpo del compresor sin circular disuelto con el agente frigorífico a través de los componentes del circuito. <span class=\"pag\">págs. 6-7</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del circuito de refrigerante con válvula de expansión indicando la zona de alta presión (ámbar/rojo) y la zona de baja presión (azul) — Fuente: Climatizacion basicos.pdf, pág. 6",
+     "html": "<ul>\n<li>Esquema del circuito de refrigerante con válvula de expansión indicando la zona de alta presión (ámbar/rojo) y la zona de baja presión (azul) — Fuente: Climatizacion basicos.pdf, pág. 6</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.refrigerante-r134a.208-climatizadores-en-los-vehic",
    "nt": 541,
    "modulo": "ssc",
@@ -8319,72 +8457,66 @@
    "subtipo": "",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "Climatizacion basicos.pdf, págs. 7, 20-33",
+   "fuentes": "Climatizacion basicos.pdf, págs. 7, 10-11",
    "clase": "componente",
    "estado": "",
    "fusionadas": [],
    "variante": "",
    "area": "climatizacion",
    "sistema": "circuito-frigorifico",
-   "formaParteDe": "",
+   "formaParteDe": "circuito-frigorifico",
    "relacionados": [
-    "embrague-compresor",
-    "condensador",
     "aceite-frigorifico",
-    "valvula-reguladora-compresor"
+    "condensador",
+    "evaporador"
    ],
    "palabras": [
-    "compresor",
-    "aspiración",
+    "correa trapezoidal",
     "compresión",
-    "aceite especial",
-    "correa trapezoidal"
+    "estado gaseoso",
+    "lubricación",
+    "estanqueidad"
    ],
    "apartados": [
     {
      "titulo": "Misión",
-     "texto": "Aspirar el gas refrigerante a baja presión y baja temperatura procedente del evaporador, comprimirlo y enviarlo a alta presión y alta temperatura hacia el condensador, garantizando además el flujo del aceite de lubricación por el circuito. (págs. 7, 20).",
-     "html": "<p>Aspirar el gas refrigerante a baja presión y baja temperatura procedente del evaporador, comprimirlo y enviarlo a alta presión y alta temperatura hacia el condensador, garantizando además el flujo del aceite de lubricación por el circuito. <span class=\"pag\">págs. 7, 20</span>.</p>"
+     "texto": "Succionar el gas refrigerante en estado gaseoso y a baja temperatura procedente del evaporador, comprimirlo e impulsarlo a alta presión y elevada temperatura hacia el condensador. (págs. 7, 10-11)",
+     "html": "<p>Succionar el gas refrigerante en estado gaseoso y a baja temperatura procedente del evaporador, comprimirlo e impulsarlo a alta presión y elevada temperatura hacia el condensador. <span class=\"pag\">págs. 7, 10-11</span></p>"
     },
     {
      "titulo": "Tipos y características",
-     "texto": "Accionado habitualmente por correa trapezoidal o estriada desde el motor térmico. Existen modelos con acoplamiento electromagnético y compresores variables sin embrague (de accionamiento externo con disco de arrastre, fusibles de sobrecarga de goma y válvula de regulación electrónica PWM). Internamente incorporan un lubricante sintético especial. (págs. 7, 20, 29).",
-     "html": "<p>Accionado habitualmente por correa trapezoidal o estriada desde el motor térmico. Existen modelos con acoplamiento electromagnético y compresores variables sin embrague (de accionamiento externo con disco de arrastre, fusibles de sobrecarga de goma y válvula de regulación electrónica PWM). Internamente incorporan un lubricante sintético especial. <span class=\"pag\">págs. 7, 20, 29</span>.</p>"
+     "texto": "Accionado habitualmente por el motor térmico mediante una correa trapezoidal o correa estriada. Existen diversos diseños adaptados a la capacidad frigorífica del sistema. (pág. 10)",
+     "html": "<p>Accionado habitualmente por el motor térmico mediante una correa trapezoidal o correa estriada. Existen diversos diseños adaptados a la capacidad frigorífica del sistema. <span class=\"pag\">pág. 10</span></p>"
     },
     {
      "titulo": "Principio de funcionamiento",
-     "texto": "Succiona el fluido frigorífico en estado gaseoso a baja temperatura y baja presión. Mediante el movimiento de sus componentes internos (pistones, plato oscilante, rotor o espirales scroll) incrementa la presión y temperatura del fluido, impulsándolo gaseoso hacia el condensador. (págs. 7, 20, 31).",
-     "html": "<p>Succiona el fluido frigorífico en estado gaseoso a baja temperatura y baja presión. Mediante el movimiento de sus componentes internos (pistones, plato oscilante, rotor o espirales scroll) incrementa la presión y temperatura del fluido, impulsándolo gaseoso hacia el condensador. <span class=\"pag\">págs. 7, 20, 31</span>.</p>"
-    },
-    {
-     "titulo": "Valores de trabajo",
-     "texto": "Presión de baja en funcionamiento normal: 0,5 a 3,0 bares (aprox. 2 bares constantes en compresores de potencia regulada). Presión de alta en funcionamiento normal: 6,0 a 25,0 bares. Giro manual pre-montaje: 10 vueltas para distribuir el aceite. (págs. 16, 18, 22).",
-     "html": "<ul>\n<li>Presión de baja en funcionamiento normal: 0,5 a 3,0 bares (aprox. 2 bares constantes en compresores de potencia regulada).</li>\n<li>Presión de alta en funcionamiento normal: 6,0 a 25,0 bares.</li>\n<li>Giro manual pre-montaje: 10 vueltas para distribuir el aceite. <span class=\"pag\">págs. 16, 18, 22</span>.</li>\n</ul>"
+     "texto": "Comprime el refrigerante gaseoso reduciendo su volumen para incrementar su presión y temperatura. Contiene en su interior un aceite especial para lubricar sus componentes móviles; una parte de este aceite es arrastrada por el flujo de gas y circula por todo el circuito. (págs. 10-11)",
+     "html": "<p>Comprime el refrigerante gaseoso reduciendo su volumen para incrementar su presión y temperatura. Contiene en su interior un aceite especial para lubricar sus componentes móviles; una parte de este aceite es arrastrada por el flujo de gas y circula por todo el circuito. <span class=\"pag\">págs. 10-11</span></p>"
     },
     {
      "titulo": "Anomalías frecuentes",
-     "texto": "Falta de estanqueidad en el retén del eje (anillo tórico) o en las juntas de carcasa, daños en rodamientos por exceso de tensión de correa, agarrotamiento de pistones por falta de lubricación/pérdida de refrigerante, y depósitos de virutas metálicas por desgaste interno. (págs. 7, 20, 24).",
-     "html": "<p>Falta de estanqueidad en el retén del eje (anillo tórico) o en las juntas de carcasa, daños en rodamientos por exceso de tensión de correa, agarrotamiento de pistones por falta de lubricación/pérdida de refrigerante, y depósitos de virutas metálicas por desgaste interno. <span class=\"pag\">págs. 7, 20, 24</span>.</p>"
+     "texto": "Falta de estanqueidad en el anillo tórico del eje, fugas en las juntas de la carcasa, desgaste en los rodamientos y agarrotamiento/sujeción de los pistones. (pág. 10)",
+     "html": "<p>Falta de estanqueidad en el anillo tórico del eje, fugas en las juntas de la carcasa, desgaste en los rodamientos y agarrotamiento/sujeción de los pistones. <span class=\"pag\">pág. 10</span></p>"
     },
     {
      "titulo": "Comportamiento en avería",
-     "texto": "Pérdida parcial o total de la capacidad de enfriamiento del aire, generación de ruidos anormales, presiones de alta y baja equilibradas (idénticas) con el compresor en marcha o registro de códigos de avería en la unidad de control de climatización. (págs. 20, 24).",
-     "html": "<p>Pérdida parcial o total de la capacidad de enfriamiento del aire, generación de ruidos anormales, presiones de alta y baja equilibradas (idénticas) con el compresor en marcha o registro de códigos de avería en la unidad de control de climatización. <span class=\"pag\">págs. 20, 24</span>.</p>"
+     "texto": "Fallo completo de compresión, pérdida del agente frigorífico y ruido mecánico anómalo. (pág. 10)",
+     "html": "<p>Fallo completo de compresión, pérdida del agente frigorífico y ruido mecánico anómalo. <span class=\"pag\">pág. 10</span></p>"
     },
     {
      "titulo": "Cómo comprobarlo",
-     "texto": "Comprobar tensión y alineación de la correa de accionamiento. Comprobar la presencia de alimentación eléctrica y estado de conectores. Inspeccionar visualmente en busca de fugas de aceite o colorante. Desmontar y purgar el aceite para inspeccionar su estado: si presenta tono grisáceo o virutas metálicas, el compresor está destruido internamente y exige lavado del circuito. En compresores de regulación variable, medir la señal PWM con osciloscopio (5 V/div, 0,5 ms/div) evaluando la variación del ciclo de trabajo (aprox. 75% en demanda máxima de frío \"Lo\" y 0% en \"Econ\"). (págs. 20, 24, 30).",
-     "html": "<ol>\n<li>Comprobar tensión y alineación de la correa de accionamiento.</li>\n<li>Comprobar la presencia de alimentación eléctrica y estado de conectores.</li>\n<li>Inspeccionar visualmente en busca de fugas de aceite o colorante.</li>\n<li>Desmontar y purgar el aceite para inspeccionar su estado: si presenta tono grisáceo o virutas metálicas, el compresor está destruido internamente y exige lavado del circuito.</li>\n<li>En compresores de regulación variable, medir la señal PWM con osciloscopio (5 V/div, 0,5 ms/div) evaluando la variación del ciclo de trabajo (aprox. 75% en demanda máxima de frío \"Lo\" y 0% en \"Econ\"). <span class=\"pag\">págs. 20, 24, 30</span>.</li>\n</ol>"
+     "texto": "Revisar visualmente el estado del retén del eje y juntas de carcasa para detectar manchas de aceite o fugas de refrigerante. (págs. 10-11)",
+     "html": "<p>Revisar visualmente el estado del retén del eje y juntas de carcasa para detectar manchas de aceite o fugas de refrigerante. <span class=\"pag\">págs. 10-11</span></p>"
     },
     {
      "titulo": "Mantenimiento",
-     "texto": "Revisar el estado y tensión de la correa de transmisión. Sustituir obligatoriamente el filtro deshidratante, las juntas tóricas y la válvula de expansión al reemplazar el compresor. Antes de la instalación, ajustar la cantidad exacta y viscosidad del aceite según especificación del fabricante y girar el eje a mano 10 veces. (págs. 16, 22).",
-     "html": "<p>Revisar el estado y tensión de la correa de transmisión. Sustituir obligatoriamente el filtro deshidratante, las juntas tóricas y la válvula de expansión al reemplazar el compresor. Antes de la instalación, ajustar la cantidad exacta y viscosidad del aceite según especificación del fabricante y girar el eje a mano 10 veces. <span class=\"pag\">págs. 16, 22</span>.</p>"
+     "texto": "Asegurar una lubricación adecuada manteniendo la carga correcta de refrigerante y aceite. La falta de estanqueidad provoca pérdida de aceite y el consecuente fallo por falta de lubricación. (pág. 10)",
+     "html": "<p>Asegurar una lubricación adecuada manteniendo la carga correcta de refrigerante y aceite. La falta de estanqueidad provoca pérdida de aceite y el consecuente fallo por falta de lubricación. <span class=\"pag\">pág. 10</span></p>"
     },
     {
      "titulo": "Imágenes requeridas",
-     "texto": "Despiece del compresor mostrando culata, pistón, plato oscilante, eje y válvula de admisión — Fuente: Climatizacion basicos.pdf, pág. 20",
-     "html": "<ul>\n<li>Despiece del compresor mostrando culata, pistón, plato oscilante, eje y válvula de admisión — Fuente: Climatizacion basicos.pdf, pág. 20</li>\n</ul>"
+     "texto": "Vista general de un compresor de aire acondicionado accionable por correa — Fuente: Climatizacion basicos.pdf, pág. 10",
+     "html": "<ul>\n<li>Vista general de un compresor de aire acondicionado accionable por correa — Fuente: Climatizacion basicos.pdf, pág. 10</li>\n</ul>"
     }
    ]
   },
@@ -10174,61 +10306,66 @@
    "subtipo": "",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "Climatizacion basicos.pdf, págs. 8-9",
+   "fuentes": "Climatizacion basicos.pdf, págs. 7, 12-14",
    "clase": "componente",
    "estado": "",
    "fusionadas": [],
    "variante": "",
    "area": "climatizacion",
    "sistema": "circuito-frigorifico",
-   "formaParteDe": "",
+   "formaParteDe": "circuito-frigorifico",
    "relacionados": [
     "compresor",
     "filtro-deshidratador",
     "electroventilador-condensador"
    ],
    "palabras": [
-    "condensador",
-    "disipación de calor",
-    "cambio de estado",
+    "intercambio térmico",
+    "condensación",
     "tubos y láminas",
-    "multiflujo"
+    "impacto frontal",
+    "suciedad"
    ],
    "apartados": [
     {
      "titulo": "Misión",
-     "texto": "Enfriar el gas refrigerante sobrecalentado procedente del compresor mediante la disipación de calor al aire exterior, provocando el cambio de estado del refrigerante de gaseoso a líquido. (págs. 8-9).",
-     "html": "<p>Enfriar el gas refrigerante sobrecalentado procedente del compresor mediante la disipación de calor al aire exterior, provocando el cambio de estado del refrigerante de gaseoso a líquido. <span class=\"pag\">págs. 8-9</span>.</p>"
+     "texto": "Disipar al aire exterior el calor absorbido por el refrigerante en el evaporador y el generado durante la compresión, transformando el gas de estado gaseoso a estado líquido. (págs. 7, 12-13)",
+     "html": "<p>Disipar al aire exterior el calor absorbido por el refrigerante en el evaporador y el generado durante la compresión, transformando el gas de estado gaseoso a estado líquido. <span class=\"pag\">págs. 7, 12-13</span></p>"
     },
     {
      "titulo": "Tipos y características",
-     "texto": "Intercambiador de calor ubicado en el frontal del vehículo. Existen constructivamente modelos de tubos y láminas, serpentín y de flujo paralelo (multiflujo). (págs. 8, 37).",
-     "html": "<p>Intercambiador de calor ubicado en el frontal del vehículo. Existen constructivamente modelos de tubos y láminas, serpentín y de flujo paralelo (multiflujo). <span class=\"pag\">págs. 8, 37</span>.</p>"
+     "texto": "Intercambiador de calor formado por un serpentín o entramado de tuberías y laminillas de aluminio montado en el frente del vehículo. (págs. 12-13)",
+     "html": "<p>Intercambiador de calor formado por un serpentín o entramado de tuberías y laminillas de aluminio montado en el frente del vehículo. <span class=\"pag\">págs. 12-13</span></p>"
     },
     {
      "titulo": "Principio de funcionamiento",
-     "texto": "El gas refrigerante a alta presión y alta temperatura entra por la toma superior del condensador. Al circular por sus tuberías y láminas, transfiere su calor al aire exterior forzado por la marcha o el electroventilador, enfriándose hasta condensar y abandonar el componente en estado líquido por la toma inferior. (págs. 8-9).",
-     "html": "<p>El gas refrigerante a alta presión y alta temperatura entra por la toma superior del condensador. Al circular por sus tuberías y láminas, transfiere su calor al aire exterior forzado por la marcha o el electroventilador, enfriándose hasta condensar y abandonar el componente en estado líquido por la toma inferior. <span class=\"pag\">págs. 8-9</span>.</p>"
+     "texto": "El gas refrigerante sobrecalentado entra por la toma superior del condensador. A medida que fluye hacia abajo por las tuberías, el aire exterior que atraviesa las láminas absorbe su energía térmica. Al enfriarse y alcanzar la temperatura de condensación, el fluido se licúa y abandona el condensador por la toma inferior en estado líquido. (pág. 13)",
+     "html": "<p>El gas refrigerante sobrecalentado entra por la toma superior del condensador. A medida que fluye hacia abajo por las tuberías, el aire exterior que atraviesa las láminas absorbe su energía térmica. Al enfriarse y alcanzar la temperatura de condensación, el fluido se licúa y abandona el condensador por la toma inferior en estado líquido. <span class=\"pag\">pág. 13</span></p>"
     },
     {
      "titulo": "Anomalías frecuentes",
-     "texto": "Fugas de refrigerante por impactos de gravilla o accidentes frontales, corrosión, y obstrucción externa de las láminas por suciedad, insectos o barro. (págs. 8-9).",
-     "html": "<p>Fugas de refrigerante por impactos de gravilla o accidentes frontales, corrosión, y obstrucción externa de las láminas por suciedad, insectos o barro. <span class=\"pag\">págs. 8-9</span>.</p>"
+     "texto": "Fugas o daños en los racores de empalme. (pág. 14) Obstrucción externa e intercambio de calor insuficiente por acumulación de suciedad, insectos o impactos de gravilla. (págs. 12, 14) Deformación o rotura por accidentes con impacto en la parte frontal. (pág. 12)",
+     "html": "<ul>\n<li>Fugas o daños en los racores de empalme. <span class=\"pag\">pág. 14</span></li>\n<li>Obstrucción externa e intercambio de calor insuficiente por acumulación de suciedad, insectos o impactos de gravilla. <span class=\"pag\">págs. 12, 14</span></li>\n<li>Deformación o rotura por accidentes con impacto en la parte frontal. <span class=\"pag\">pág. 12</span></li>\n</ul>"
     },
     {
      "titulo": "Comportamiento en avería",
-     "texto": "Rendimiento deficiente de refrigeración, fallo completo del aire acondicionado, presiones de alta excesivamente elevadas y funcionamiento ininterrumpido del electroventilador del condensador. (págs. 8-9).",
-     "html": "<p>Rendimiento deficiente de refrigeración, fallo completo del aire acondicionado, presiones de alta excesivamente elevadas y funcionamiento ininterrumpido del electroventilador del condensador. <span class=\"pag\">págs. 8-9</span>.</p>"
+     "texto": "Pobre rendimiento de refrigeración, fallo total del aire acondicionado y funcionamiento continuo del ventilador del condensador. (pág. 13)",
+     "html": "<p>Pobre rendimiento de refrigeración, fallo total del aire acondicionado y funcionamiento continuo del ventilador del condensador. <span class=\"pag\">pág. 13</span></p>"
     },
     {
      "titulo": "Cómo comprobarlo",
-     "texto": "Inspección visual externa de láminas y tuberías para detectar deformaciones, suciedad o fugas. Comprobación de estanqueidad mediante detector electrónico o gas formier. Medición de presiones en alta y baja presión con el equipo conectado. (págs. 8-9).",
-     "html": "<ol>\n<li>Inspección visual externa de láminas y tuberías para detectar deformaciones, suciedad o fugas.</li>\n<li>Comprobación de estanqueidad mediante detector electrónico o gas formier.</li>\n<li>Medición de presiones en alta y baja presión con el equipo conectado. <span class=\"pag\">págs. 8-9</span>.</li>\n</ol>"
+     "texto": "Comprobar visualmente si las láminas presentan suciedad o deformaciones por gravilla. (pág. 14) Comprobar si existen fugas de agente frigorífico. (pág. 14) Comprobar la presión en los sectores de alta y baja presión del circuito. (pág. 14)",
+     "html": "<ul>\n<li>Comprobar visualmente si las láminas presentan suciedad o deformaciones por gravilla. <span class=\"pag\">pág. 14</span></li>\n<li>Comprobar si existen fugas de agente frigorífico. <span class=\"pag\">pág. 14</span></li>\n<li>Comprobar la presión en los sectores de alta y baja presión del circuito. <span class=\"pag\">pág. 14</span></li>\n</ul>"
     },
     {
      "titulo": "Mantenimiento",
-     "texto": "Limpieza periódica externa de la superficie de las láminas con aire o agua a baja presión (sin aplicar limpiadores de vapor directos sobre las aletas). En caso de lavado interno tras fallo de compresor, los modelos de flujo paralelo (multiflujo) no se pueden lavar con garantía y deben ser sustituidos. (págs. 8, 14, 37).",
-     "html": "<p>Limpieza periódica externa de la superficie de las láminas con aire o agua a baja presión (sin aplicar limpiadores de vapor directos sobre las aletas). En caso de lavado interno tras fallo de compresor, los modelos de flujo paralelo (multiflujo) no se pueden lavar con garantía y deben ser sustituidos. <span class=\"pag\">págs. 8, 14, 37</span>.</p>"
+     "texto": "Mantener limpias las aletas de refrigeración y revisar periódicamente la estanqueidad de las conexiones. (págs. 12, 14)",
+     "html": "<p>Mantener limpias las aletas de refrigeración y revisar periódicamente la estanqueidad de las conexiones. <span class=\"pag\">págs. 12, 14</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Estructura del condensador de aire acondicionado con tuberías y laminillas de disipación — Fuente: Climatizacion basicos.pdf, pág. 12",
+     "html": "<ul>\n<li>Estructura del condensador de aire acondicionado con tuberías y laminillas de disipación — Fuente: Climatizacion basicos.pdf, pág. 12</li>\n</ul>"
     }
    ]
   },
@@ -10762,68 +10899,72 @@
    "clave": "electroventilador-condensador",
    "seccion": "5. Lado de alta",
    "subgrupo": "",
-   "titulo": "Ventilador del condensador",
+   "titulo": "Electroventilador del condensador",
    "codigo": "",
-   "menu": "Ventilador del condensador",
+   "menu": "Electroventilador del condensador",
    "grupo": "Circuito frigorífico",
    "tipo": "elemento",
    "subtipo": "",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "Climatizacion basicos.pdf, págs. 13",
+   "fuentes": "Climatizacion basicos.pdf, págs. 11, 30",
    "clase": "componente",
    "estado": "",
    "fusionadas": [],
    "variante": "",
    "area": "climatizacion",
    "sistema": "circuito-frigorifico",
-   "formaParteDe": "",
+   "formaParteDe": "circuito-frigorifico",
    "relacionados": [
     "condensador",
-    "presostato",
-    "compresor"
+    "presostato"
    ],
    "palabras": [
-    "ventilador del condensador",
-    "refrigeración forzada",
+    "ventilador auxiliar",
+    "flujo de aire",
     "condensación",
-    "flujo de aire"
+    "alta presión"
    ],
    "apartados": [
     {
      "titulo": "Misión",
-     "texto": "Proporcionar un flujo forzado de aire a través del condensador cuando el vehículo se encuentra al ralentí o a baja velocidad, asegurando la disipación térmica necesaria para la licuación del refrigerante. (pág. 13).",
-     "html": "<p>Proporcionar un flujo forzado de aire a través del condensador cuando el vehículo se encuentra al ralentí o a baja velocidad, asegurando la disipación térmica necesaria para la licuación del refrigerante. <span class=\"pag\">pág. 13</span>.</p>"
+     "texto": "Forzar el paso de aire a través de la matriz del condensador para garantizar la correcta licuación del gas refrigerante con el vehículo parado o a baja velocidad. (pág. 30)",
+     "html": "<p>Forzar el paso de aire a través de la matriz del condensador para garantizar la correcta licuación del gas refrigerante con el vehículo parado o a baja velocidad. <span class=\"pag\">pág. 30</span></p>"
     },
     {
      "titulo": "Tipos y características",
-     "texto": "Soplante accionado por motor eléctrico, montado como conjunto independiente o combinado con el sistema de refrigeración del motor, situado por delante o por detrás del condensador. (pág. 13).",
-     "html": "<p>Soplante accionado por motor eléctrico, montado como conjunto independiente o combinado con el sistema de refrigeración del motor, situado por delante o por detrás del condensador. <span class=\"pag\">pág. 13</span>.</p>"
+     "texto": "Electromotor provisto de hélice montado junto al condensador, funcionando como ventilador auxiliar dedicado o en combinación con el ventilador del radiador del motor. (pág. 30)",
+     "html": "<p>Electromotor provisto de hélice montado junto al condensador, funcionando como ventilador auxiliar dedicado o en combinación con el ventilador del radiador del motor. <span class=\"pag\">pág. 30</span></p>"
     },
     {
      "titulo": "Principio de funcionamiento",
-     "texto": "Se activa eléctricamente por orden de la unidad de control o del presostato/interruptor trinario cuando el aire acondicionado está conectado o al detectarse un incremento de la presión en el lado de alta presión, haciendo pasar aire fresco exterior entre las láminas del condensador. (págs. 12-13).",
-     "html": "<p>Se activa eléctricamente por orden de la unidad de control o del presostato/interruptor trinario cuando el aire acondicionado está conectado o al detectarse un incremento de la presión en el lado de alta presión, haciendo pasar aire fresco exterior entre las láminas del condensador. <span class=\"pag\">págs. 12-13</span>.</p>"
+     "texto": "Se activa mediante una señal eléctrica comandada por el presostato trinario o por la unidad de control cuando la presión de alta se eleva o se conecta el aire acondicionado, impulsando un fuerte caudal de aire fresco a través de las láminas del condensador. (págs. 26, 30)",
+     "html": "<p>Se activa mediante una señal eléctrica comandada por el presostato trinario o por la unidad de control cuando la presión de alta se eleva o se conecta el aire acondicionado, impulsando un fuerte caudal de aire fresco a través de las láminas del condensador. <span class=\"pag\">págs. 26, 30</span></p>"
     },
     {
      "titulo": "Anomalías frecuentes",
-     "texto": "Quemado del motor eléctrico, desgaste de escobillas, fallo en el relé de excitación o resistencia previa, y rotura o agarrotamiento de los álabes del ventilador. (págs. 13, 17).",
-     "html": "<p>Quemado del motor eléctrico, desgaste de escobillas, fallo en el relé de excitación o resistencia previa, y rotura o agarrotamiento de los álabes del ventilador. <span class=\"pag\">págs. 13, 17</span>.</p>"
+     "texto": "Fallo eléctrico del motor, desgaste de escobillas, fusibles fundidos o agarrotamiento mecánico del eje por suciedad o impacto. (pág. 30)",
+     "html": "<p>Fallo eléctrico del motor, desgaste de escobillas, fusibles fundidos o agarrotamiento mecánico del eje por suciedad o impacto. <span class=\"pag\">pág. 30</span></p>"
     },
     {
      "titulo": "Comportamiento en avería",
-     "texto": "El refrigerante no logra condensarse correctamente, produciendo un disparo de la alta presión en la instalación, pérdida drástica de la potencia de frío al estar el vehículo parado o a baja velocidad, y ruidos anómalos. (págs. 8, 13, 28).",
-     "html": "<p>El refrigerante no logra condensarse correctamente, produciendo un disparo de la alta presión en la instalación, pérdida drástica de la potencia de frío al estar el vehículo parado o a baja velocidad, y ruidos anómalos. <span class=\"pag\">págs. 8, 13, 28</span>.</p>"
+     "texto": "Elevación excesiva de la alta presión, deficiente licuación del refrigerante y caída acusada de la potencia frigorífica con el vehículo al ralentí. (pág. 30)",
+     "html": "<p>Elevación excesiva de la alta presión, deficiente licuación del refrigerante y caída acusada de la potencia frigorífica con el vehículo al ralentí. <span class=\"pag\">pág. 30</span></p>"
     },
     {
      "titulo": "Cómo comprobarlo",
-     "texto": "Verificación de la rotación libre manual de las palas del ventilador con el motor parado. Comprobación de la presencia de tensión de alimentación (+12 V) y masa en su conector al activar el climatizador. Verificar el cierre del contacto del presostato trinario que demanda su puesta en marcha. (págs. 12, 17).",
-     "html": "<ol>\n<li>Verificación de la rotación libre manual de las palas del ventilador con el motor parado.</li>\n<li>Comprobación de la presencia de tensión de alimentación (+12 V) y masa en su conector al activar el climatizador.</li>\n<li>Verificar el cierre del contacto del presostato trinario que demanda su puesta en marcha. <span class=\"pag\">págs. 12, 17</span>.</li>\n</ol>"
+     "texto": "Verificar la activación eléctrica al conectar el aire acondicionado o al puentear el presostato. (págs. 26, 30)",
+     "html": "<p>Verificar la activación eléctrica al conectar el aire acondicionado o al puentear el presostato. <span class=\"pag\">págs. 26, 30</span></p>"
     },
     {
      "titulo": "Mantenimiento",
-     "texto": "Comprobar periódicamente que no existen cuerpos extraños que bloqueen el giro del ventilador. (págs. 13, 28).",
-     "html": "<p>Comprobar periódicamente que no existen cuerpos extraños que bloqueen el giro del ventilador. <span class=\"pag\">págs. 13, 28</span>.</p>"
+     "texto": "Revisar el giro libre de las paletas y mantener limpio el canalizador. (pág. 30)",
+     "html": "<p>Revisar el giro libre de las paletas y mantener limpio el canalizador. <span class=\"pag\">pág. 30</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Electroventilador auxiliar para el condensador — Fuente: Climatizacion basicos.pdf, pág. 30",
+     "html": "<ul>\n<li>Electroventilador auxiliar para el condensador — Fuente: Climatizacion basicos.pdf, pág. 30</li>\n</ul>"
     }
    ]
   },
@@ -11285,66 +11426,71 @@
    "subtipo": "",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "Climatizacion basicos.pdf, págs. 9-10",
+   "fuentes": "Climatizacion basicos.pdf, págs. 7, 14-17",
    "clase": "componente",
    "estado": "",
    "fusionadas": [],
    "variante": "",
    "area": "climatizacion",
    "sistema": "circuito-frigorifico",
-   "formaParteDe": "",
+   "formaParteDe": "circuito-frigorifico",
    "relacionados": [
     "condensador",
     "valvula-expansion",
-    "aceite-frigorifico"
+    "refrigerante-r134a"
    ],
    "palabras": [
-    "filtro deshidratante",
     "agente secante",
     "higroscópico",
-    "humedad",
-    "acumulador"
+    "acumulador",
+    "retención humedad",
+    "2 años"
    ],
    "apartados": [
     {
      "titulo": "Misión",
-     "texto": "Filtrar partículas y cuerpos extraños del refrigerante, absorber la humedad disuelta en el fluido y actuar como depósito de compensación y acumulación de refrigerante líquido frente a oscilaciones de presión. (págs. 9-10).",
-     "html": "<p>Filtrar partículas y cuerpos extraños del refrigerante, absorber la humedad disuelta en el fluido y actuar como depósito de compensación y acumulación de refrigerante líquido frente a oscilaciones de presión. <span class=\"pag\">págs. 9-10</span>.</p>"
+     "texto": "Eliminar la humedad residual disuelta en el agente frigorífico y retener impurezas o cuerpos extraños, actuando además como depósito acumulador y compensador de oscilaciones de presión. (págs. 7, 15)",
+     "html": "<p>Eliminar la humedad residual disuelta en el agente frigorífico y retener impurezas o cuerpos extraños, actuando además como depósito acumulador y compensador de oscilaciones de presión. <span class=\"pag\">págs. 7, 15</span></p>"
     },
     {
      "titulo": "Tipos y características",
-     "texto": "Denominado filtro deshidratante (instalado en el lado de alta presión tras el condensador) o acumulador (instalado en el lado de baja presión tras el evaporador en sistemas con estrangulador fijo). Contiene un agente secante altamente higroscópico y una almohadilla filtrante interna. (págs. 9-10).",
-     "html": "<p>Denominado filtro deshidratante (instalado en el lado de alta presión tras el condensador) o acumulador (instalado en el lado de baja presión tras el evaporador en sistemas con estrangulador fijo). Contiene un agente secante altamente higroscópico y una almohadilla filtrante interna. <span class=\"pag\">págs. 9-10</span>.</p>"
+     "texto": "Recipiente metálico cilíndrico montado en la línea de alta presión tras el condensador (o acumulador en línea de baja). Contiene un agente secante altamente higroscópico y una almohadilla filtrante. (págs. 15-16)",
+     "html": "<p>Recipiente metálico cilíndrico montado en la línea de alta presión tras el condensador (o acumulador en línea de baja). Contiene un agente secante altamente higroscópico y una almohadilla filtrante. <span class=\"pag\">págs. 15-16</span></p>"
     },
     {
      "titulo": "Principio de funcionamiento",
-     "texto": "El refrigerante líquido entra por la parte superior, atraviesa la almohadilla filtrante y la masa granulada del agente secante, reteniendo el agua y las impurezas sólidas, y sale en estado líquido hacia la válvula de expansión. La parte superior actúa como volumen de amortiguación de presión. (págs. 9-10).",
-     "html": "<p>El refrigerante líquido entra por la parte superior, atraviesa la almohadilla filtrante y la masa granulada del agente secante, reteniendo el agua y las impurezas sólidas, y sale en estado líquido hacia la válvula de expansión. La parte superior actúa como volumen de amortiguación de presión. <span class=\"pag\">págs. 9-10</span>.</p>"
+     "texto": "El refrigerante en estado líquido penetra en el filtro, atraviesa el agente secante e higroscópico para ceder la humedad y cruza la almohadilla filtrante para retener partículas. Sale del filtro en estado líquido hacia la válvula de expansión. La parte superior del cilindro actúa como cámara de compensación y la parte inferior como reserva de líquido. (pág. 15)",
+     "html": "<p>El refrigerante en estado líquido penetra en el filtro, atraviesa el agente secante e higroscópico para ceder la humedad y cruza la almohadilla filtrante para retener partículas. Sale del filtro en estado líquido hacia la válvula de expansión. La parte superior del cilindro actúa como cámara de compensación y la parte inferior como reserva de líquido. <span class=\"pag\">pág. 15</span></p>"
     },
     {
      "titulo": "Valores de trabajo",
-     "texto": "Contiene un 10% de la cantidad total de aceite de lubricación del sistema. (pág. 22).",
-     "html": "<p>Contiene un 10% de la cantidad total de aceite de lubricación del sistema. <span class=\"pag\">pág. 22</span>.</p>"
+     "texto": "Capacidad de absorción de humedad: limitada por el volumen de sustancia desecante integrada. (pág. 16)",
+     "html": "<ul>\n<li>Capacidad de absorción de humedad: limitada por el volumen de sustancia desecante integrada. <span class=\"pag\">pág. 16</span></li>\n</ul>"
     },
     {
      "titulo": "Anomalías frecuentes",
-     "texto": "Saturación del agente secante por exceso de humedad, envejecimiento natural, descomposición de la almohadilla filtrante interna con liberación de silicato al circuito, y fugas en sus racores de empalme. (págs. 9-10, 15).",
-     "html": "<p>Saturación del agente secante por exceso de humedad, envejecimiento natural, descomposición de la almohadilla filtrante interna con liberación de silicato al circuito, y fugas en sus racores de empalme. <span class=\"pag\">págs. 9-10, 15</span>.</p>"
+     "texto": "Saturación completa del agente desecante por envejecimiento. (pág. 16) Rotura o defecto en la almohadilla filtrante interior. (pág. 16) Fugas o daños en los racores de empalme. (pág. 17)",
+     "html": "<ul>\n<li>Saturación completa del agente desecante por envejecimiento. <span class=\"pag\">pág. 16</span></li>\n<li>Rotura o defecto en la almohadilla filtrante interior. <span class=\"pag\">pág. 16</span></li>\n<li>Fugas o daños en los racores de empalme. <span class=\"pag\">pág. 17</span></li>\n</ul>"
     },
     {
      "titulo": "Comportamiento en avería",
-     "texto": "Disminución drástica o pérdida total de la potencia de refrigeración, formación de hielo sobre el propio filtro deshidratante por obstrucción interna, y congelación de la válvula de expansión por presencia de agua libre en el circuito. (págs. 9-10, 32).",
-     "html": "<p>Disminución drástica o pérdida total de la potencia de refrigeración, formación de hielo sobre el propio filtro deshidratante por obstrucción interna, y congelación de la válvula de expansión por presencia de agua libre en el circuito. <span class=\"pag\">págs. 9-10, 32</span>.</p>"
+     "texto": "Baja potencia de refrigeración, fallo del aire acondicionado y posible desprendimiento de partículas de silicato que destruyen otros componentes. (págs. 16, 35)",
+     "html": "<p>Baja potencia de refrigeración, fallo del aire acondicionado y posible desprendimiento de partículas de silicato que destruyen otros componentes. <span class=\"pag\">págs. 16, 35</span></p>"
     },
     {
      "titulo": "Cómo comprobarlo",
-     "texto": "Comprobar la fecha del último reemplazo (intervalo recomendado de 2 años). Tocar los tubos de entrada y salida: si existe una diferencia acusada de temperatura entre entrada y salida, el filtro se halla obstruido internamente. Inspeccionar visualmente racores y cuerpo en busca de fugas o corrosión. (págs. 9-10).",
-     "html": "<ol>\n<li>Comprobar la fecha del último reemplazo (intervalo recomendado de 2 años).</li>\n<li>Tocar los tubos de entrada y salida: si existe una diferencia acusada de temperatura entre entrada y salida, el filtro se halla obstruido internamente.</li>\n<li>Inspeccionar visualmente racores y cuerpo en busca de fugas o corrosión. <span class=\"pag\">págs. 9-10</span>.</li>\n</ol>"
+     "texto": "Verificar el tiempo transcurrido desde la última sustitución (máximo 2 años). (pág. 17) Comprobar la estanqueidad y el estado de fijación de los empalmes. (pág. 17) Comprobar la presión en la zona de alta y baja presión. (pág. 17)",
+     "html": "<ul>\n<li>Verificar el tiempo transcurrido desde la última sustitución (máximo 2 años). <span class=\"pag\">pág. 17</span></li>\n<li>Comprobar la estanqueidad y el estado de fijación de los empalmes. <span class=\"pag\">pág. 17</span></li>\n<li>Comprobar la presión en la zona de alta y baja presión. <span class=\"pag\">pág. 17</span></li>\n</ul>"
     },
     {
      "titulo": "Mantenimiento",
-     "texto": "Sustituir obligatoriamente cada 2 años o cada vez que se abra el circuito frigorífico por reparación. (págs. 10, 15).",
-     "html": "<p>Sustituir obligatoriamente cada 2 años o cada vez que se abra el circuito frigorífico por reparación. <span class=\"pag\">págs. 10, 15</span>.</p>"
+     "texto": "Renovar obligatoriamente cada 2 años o cada vez que se abra el circuito de refrigerante por cualquier reparación. (págs. 14, 17)",
+     "html": "<p>Renovar obligatoriamente cada 2 años o cada vez que se abra el circuito de refrigerante por cualquier reparación. <span class=\"pag\">págs. 14, 17</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Vista del filtro deshidratante y su agente secante interno — Fuente: Climatizacion basicos.pdf, pág. 15",
+     "html": "<ul>\n<li>Vista del filtro deshidratante y su agente secante interno — Fuente: Climatizacion basicos.pdf, pág. 15</li>\n</ul>"
     }
    ]
   },
@@ -11983,66 +12129,71 @@
    "subtipo": "",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "Climatizacion basicos.pdf, págs. 10-11",
+   "fuentes": "Climatizacion basicos.pdf, págs. 8-9, 18-21",
    "clase": "componente",
    "estado": "",
    "fusionadas": [],
    "variante": "",
    "area": "climatizacion",
    "sistema": "circuito-frigorifico",
-   "formaParteDe": "",
+   "formaParteDe": "circuito-frigorifico",
    "relacionados": [
-    "evaporador",
     "filtro-deshidratador",
+    "evaporador",
     "compresor"
    ],
    "palabras": [
-    "válvula de expansión",
-    "dosificación",
-    "alta presión",
-    "baja presión",
-    "bulbo termostático"
+    "punto de separación",
+    "atomización",
+    "regulación de caudal",
+    "sobrecalentamiento",
+    "congelación"
    ],
    "apartados": [
     {
      "titulo": "Misión",
-     "texto": "Separar el lado de alta presión del lado de baja presión, dosificando y regulando la cantidad de refrigerante líquido inyectado al evaporador en función de la temperatura de salida de este para lograr la máxima eficiencia de enfriamiento y evitar el retorno de líquido al compresor. (págs. 10-11).",
-     "html": "<p>Separar el lado de alta presión del lado de baja presión, dosificando y regulando la cantidad de refrigerante líquido inyectado al evaporador en función de la temperatura de salida de este para lograr la máxima eficiencia de enfriamiento y evitar el retorno de líquido al compresor. <span class=\"pag\">págs. 10-11</span>.</p>"
+     "texto": "Dosificar y regular el caudal de agente frigorífico líquido inyectado en el evaporador en función de la temperatura, actuando como punto de separación física entre la zona de alta presión y la zona de baja presión. (págs. 18-19)",
+     "html": "<p>Dosificar y regular el caudal de agente frigorífico líquido inyectado en el evaporador en función de la temperatura, actuando como punto de separación física entre la zona de alta presión y la zona de baja presión. <span class=\"pag\">págs. 18-19</span></p>"
     },
     {
      "titulo": "Tipos y características",
-     "texto": "Existen válvulas de expansión termostáticas (bloque o con tubo capilar) y tubos con orificio fijo (estrangulador o tubo de mariposa). (págs. 10, 18).",
-     "html": "<p>Existen válvulas de expansión termostáticas (bloque o con tubo capilar) y tubos con orificio fijo (estrangulador o tubo de mariposa). <span class=\"pag\">págs. 10, 18</span>.</p>"
+     "texto": "Dispositivo de estrangulación montado justo a la entrada del evaporador. Existen diseños de bloque con elemento termostático o de tubo de orificio (mariposa fija). (pág. 18)",
+     "html": "<p>Dispositivo de estrangulación montado justo a la entrada del evaporador. Existen diseños de bloque con elemento termostático o de tubo de orificio (mariposa fija). <span class=\"pag\">pág. 18</span></p>"
     },
     {
      "titulo": "Principio de funcionamiento",
-     "texto": "El refrigerante líquido a alta presión entra en la válvula y es forzado a pasar por un estrechamiento (orificio de expansión), sufriendo una caída brusca de presión que causa su atomización y enfriamiento antes de entrar al evaporador. Un elemento termostático sensible a la temperatura del gas a la salida del evaporador ajusta mecánicamente el paso de la aguja: si la temperatura sube, la válvula abre aumentando el caudal; si la temperatura baja, reduce el paso. (págs. 10-11).",
-     "html": "<p>El refrigerante líquido a alta presión entra en la válvula y es forzado a pasar por un estrechamiento (orificio de expansión), sufriendo una caída brusca de presión que causa su atomización y enfriamiento antes de entrar al evaporador. Un elemento termostático sensible a la temperatura del gas a la salida del evaporador ajusta mecánicamente el paso de la aguja: si la temperatura sube, la válvula abre aumentando el caudal; si la temperatura baja, reduce el paso. <span class=\"pag\">págs. 10-11</span>.</p>"
+     "texto": "El refrigerante líquido a alta presión procedente del filtro deshidratante atraviesa el paso estrecho de la válvula, expandiéndose e inyectándose en el evaporador a baja presión. La válvula mide la temperatura del gas a la salida del evaporador: si la temperatura sube, abre el paso para aumentar el caudal inyectado; si disminuye, reduce la sección del paso para limitar el caudal y asegurar que al compresor solo llegue gas en estado gaseoso. (pág. 19)",
+     "html": "<p>El refrigerante líquido a alta presión procedente del filtro deshidratante atraviesa el paso estrecho de la válvula, expandiéndose e inyectándose en el evaporador a baja presión. La válvula mide la temperatura del gas a la salida del evaporador: si la temperatura sube, abre el paso para aumentar el caudal inyectado; si disminuye, reduce la sección del paso para limitar el caudal y asegurar que al compresor solo llegue gas en estado gaseoso. <span class=\"pag\">pág. 19</span></p>"
     },
     {
      "titulo": "Valores de trabajo",
-     "texto": "Prohibido manipular el ajuste de fábrica de su tornillo de regulación. (pág. 14).",
-     "html": "<p>Prohibido manipular el ajuste de fábrica de su tornillo de regulación. <span class=\"pag\">pág. 14</span>.</p>"
+     "texto": "Ajuste de fábrica del tornillo de regulación: inalterable, no debe modificarse bajo ningún concepto. (pág. 33)",
+     "html": "<ul>\n<li>Ajuste de fábrica del tornillo de regulación: inalterable, no debe modificarse bajo ningún concepto. <span class=\"pag\">pág. 33</span></li>\n</ul>"
     },
     {
      "titulo": "Anomalías frecuentes",
-     "texto": "Obstrucción o bloqueo por suciedad/virutas del compresor, congelación del orificio por presencia de humedad en el fluido, y pérdida de carga en el elemento termostático. (págs. 10-11, 25).",
-     "html": "<p>Obstrucción o bloqueo por suciedad/virutas del compresor, congelación del orificio por presencia de humedad en el fluido, y pérdida de carga en el elemento termostático. <span class=\"pag\">págs. 10-11, 25</span>.</p>"
+     "texto": "Bloqueo por acumulación de suciedad o congelación de la humedad en el orificio. (págs. 18, 20) Fugas en los componentes o tuberías de conexión. (pág. 20) Desajuste térmico por sobrecalentamiento. (pág. 20)",
+     "html": "<ul>\n<li>Bloqueo por acumulación de suciedad o congelación de la humedad en el orificio. <span class=\"pag\">págs. 18, 20</span></li>\n<li>Fugas en los componentes o tuberías de conexión. <span class=\"pag\">pág. 20</span></li>\n<li>Desajuste térmico por sobrecalentamiento. <span class=\"pag\">pág. 20</span></li>\n</ul>"
     },
     {
      "titulo": "Comportamiento en avería",
-     "texto": "Si la válvula queda bloqueada en posición cerrada: falta de rendimiento, presión de baja muy baja o en vacío y alta presión elevada. Si se queda bloqueada abierta: baja presión excesivamente alta, falta de enfriamiento y riesgo de entrada de refrigerante líquido al compresor. (págs. 10-11, 18, 32).",
-     "html": "<p>Si la válvula queda bloqueada en posición cerrada: falta de rendimiento, presión de baja muy baja o en vacío y alta presión elevada. Si se queda bloqueada abierta: baja presión excesivamente alta, falta de enfriamiento y riesgo de entrada de refrigerante líquido al compresor. <span class=\"pag\">págs. 10-11, 18, 32</span>.</p>"
+     "texto": "Baja potencia de refrigeración, interrupción del ciclo frigorífico, congelación del evaporador o paso de líquido hacia el compresor. (pág. 20)",
+     "html": "<p>Baja potencia de refrigeración, interrupción del ciclo frigorífico, congelación del evaporador o paso de líquido hacia el compresor. <span class=\"pag\">pág. 20</span></p>"
     },
     {
      "titulo": "Cómo comprobarlo",
-     "texto": "Medición de presiones en alta y baja presión con el equipo en marcha. Medición de temperatura con termómetro en las tuberías de entrada y salida de la válvula. Inspección acústica y comprobación de ausencia de fugas en sus conexiones. (págs. 10-11).",
-     "html": "<ol>\n<li>Medición de presiones en alta y baja presión con el equipo en marcha.</li>\n<li>Medición de temperatura con termómetro en las tuberías de entrada y salida de la válvula.</li>\n<li>Inspección acústica y comprobación de ausencia de fugas en sus conexiones. <span class=\"pag\">págs. 10-11</span>.</li>\n</ol>"
+     "texto": "Realizar inspección visual y comprobación acústica del flujo. (págs. 20-21) Medir la temperatura en el cuerpo de la válvula y en los conductos de salida. (pág. 21) Medir presiones con el compresor y el motor en funcionamiento. (pág. 21)",
+     "html": "<ul>\n<li>Realizar inspección visual y comprobación acústica del flujo. <span class=\"pag\">págs. 20-21</span></li>\n<li>Medir la temperatura en el cuerpo de la válvula y en los conductos de salida. <span class=\"pag\">pág. 21</span></li>\n<li>Medir presiones con el compresor y el motor en funcionamiento. <span class=\"pag\">pág. 21</span></li>\n</ul>"
     },
     {
      "titulo": "Mantenimiento",
-     "texto": "La válvula de expansión no es lavable; si se contamina con virutas o suciedad tras una avería de compresor, debe ser reemplazada. No modificar en ningún caso el ajuste de fábrica del tornillo de regulación. (págs. 14, 16, 22).",
-     "html": "<p>La válvula de expansión no es lavable; si se contamina con virutas o suciedad tras una avería de compresor, debe ser reemplazada. No modificar en ningún caso el ajuste de fábrica del tornillo de regulación. <span class=\"pag\">págs. 14, 16, 22</span>.</p>"
+     "texto": "Prohibido modificar el ajuste de fábrica del tornillo de regulación. Sustituir en caso de contaminación del circuito o avería del compresor. (págs. 20, 33, 39)",
+     "html": "<p>Prohibido modificar el ajuste de fábrica del tornillo de regulación. Sustituir en caso de contaminación del circuito o avería del compresor. <span class=\"pag\">págs. 20, 33, 39</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Corte funcional de la válvula de expansión mostrando el paso de regulación de caudal — Fuente: Climatizacion basicos.pdf, pág. 18",
+     "html": "<ul>\n<li>Corte funcional de la válvula de expansión mostrando el paso de regulación de caudal — Fuente: Climatizacion basicos.pdf, pág. 18</li>\n</ul>"
     }
    ]
   },
@@ -12532,66 +12683,66 @@
    "subtipo": "",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "Climatizacion basicos.pdf, págs. 11-12",
+   "fuentes": "Climatizacion basicos.pdf, págs. 9-10, 21-24",
    "clase": "componente",
    "estado": "",
    "fusionadas": [],
    "variante": "",
    "area": "climatizacion",
    "sistema": "circuito-frigorifico",
-   "formaParteDe": "",
+   "formaParteDe": "unidad-climatizadora",
    "relacionados": [
     "valvula-expansion",
-    "ventilador-habitaculo",
-    "filtro-deshidratador"
+    "compresor",
+    "ventilador-habitaculo"
    ],
    "palabras": [
-    "evaporador",
-    "calor latente",
-    "deshumidificación",
-    "habitáculo",
-    "agua condensada"
+    "intercambio térmico",
+    "ebullición",
+    "absorción de calor",
+    "aire frío",
+    "desinfección"
    ],
    "apartados": [
     {
      "titulo": "Misión",
-     "texto": "Absorber el calor del aire destinado al habitáculo mediante la evaporación del refrigerante líquido inyectado a baja presión, enfriando y deshumidificando el aire entrante. (págs. 11-12).",
-     "html": "<p>Absorber el calor del aire destinado al habitáculo mediante la evaporación del refrigerante líquido inyectado a baja presión, enfriando y deshumidificando el aire entrante. <span class=\"pag\">págs. 11-12</span>.</p>"
+     "texto": "Absorber el calor del aire que ingresa al habitáculo mediante la ebullición y evaporación del agente frigorífico que circula por su interior. (págs. 21-22)",
+     "html": "<p>Absorber el calor del aire que ingresa al habitáculo mediante la ebullición y evaporación del agente frigorífico que circula por su interior. <span class=\"pag\">págs. 21-22</span></p>"
     },
     {
      "titulo": "Tipos y características",
-     "texto": "Intercambiador de calor de tubos y aletas de aluminio situado en la unidad climática del habitáculo. Alberga una gran superficie de transferencia térmica y un canal de recogida de condensados. (págs. 11-12).",
-     "html": "<p>Intercambiador de calor de tubos y aletas de aluminio situado en la unidad climática del habitáculo. Alberga una gran superficie de transferencia térmica y un canal de recogida de condensados. <span class=\"pag\">págs. 11-12</span>.</p>"
+     "texto": "Intercambiador de calor de gran superficie de aluminio formado por tubos y aletas, ubicado en el interior de la unidad climática bajo el tablero de instrumentos. (págs. 22-23)",
+     "html": "<p>Intercambiador de calor de gran superficie de aluminio formado por tubos y aletas, ubicado en el interior de la unidad climática bajo el tablero de instrumentos. <span class=\"pag\">págs. 22-23</span></p>"
     },
     {
      "titulo": "Principio de funcionamiento",
-     "texto": "El refrigerante líquido pulverizado a baja presión entra en el evaporador. Al atravesar sus conductos, absorbe el calor del aire que la turbina del habitáculo hace pasar a través de sus aletas externas. Al calentarse, el refrigerante hierve y se transforma íntegramente en gas antes de salir hacia el compresor. La humedad presente en el aire se condensa sobre las aletas frías y se evacúa al exterior. (págs. 11-12).",
-     "html": "<p>El refrigerante líquido pulverizado a baja presión entra en el evaporador. Al atravesar sus conductos, absorbe el calor del aire que la turbina del habitáculo hace pasar a través de sus aletas externas. Al calentarse, el refrigerante hierve y se transforma íntegramente en gas antes de salir hacia el compresor. La humedad presente en el aire se condensa sobre las aletas frías y se evacúa al exterior. <span class=\"pag\">págs. 11-12</span>.</p>"
-    },
-    {
-     "titulo": "Valores de trabajo",
-     "texto": "Alberga un 20% de la cantidad total de aceite de lubricación del sistema. (pág. 22). Temperatura del aire en tobera media con el equipo a máxima potencia: 3 a 8 ºC. (pág. 17).",
-     "html": "<ul>\n<li>Alberga un 20% de la cantidad total de aceite de lubricación del sistema. <span class=\"pag\">pág. 22</span>.</li>\n<li>Temperatura del aire en tobera media con el equipo a máxima potencia: 3 a 8 ºC. <span class=\"pag\">pág. 17</span>.</li>\n</ul>"
+     "texto": "El refrigerante líquido pulverizado a baja presión por la válvula de expansión entra al evaporador y entra en ebullición. Para evaporarse, absorbe la energía térmica del aire exterior impulsado por el soplador a través de sus aletas. El aire se enfría y deshidrata antes de entrar al habitáculo, mientras que el refrigerante sale completamente gaseoso hacia el compresor. (pág. 22)",
+     "html": "<p>El refrigerante líquido pulverizado a baja presión por la válvula de expansión entra al evaporador y entra en ebullición. Para evaporarse, absorbe la energía térmica del aire exterior impulsado por el soplador a través de sus aletas. El aire se enfría y deshidrata antes de entrar al habitáculo, mientras que el refrigerante sale completamente gaseoso hacia el compresor. <span class=\"pag\">pág. 22</span></p>"
     },
     {
      "titulo": "Anomalías frecuentes",
-     "texto": "Obstrucción o acumulación de suciedad en las aletas externas, pérdidas de estanqueidad (fugas) por corrosión o vibraciones, e infección por microorganismos, hongos y bacterias que generan malos olores. (págs. 4, 11-12, 72).",
-     "html": "<p>Obstrucción o acumulación de suciedad en las aletas externas, pérdidas de estanqueidad (fugas) por corrosión o vibraciones, e infección por microorganismos, hongos y bacterias que generan malos olores. <span class=\"pag\">págs. 4, 11-12, 72</span>.</p>"
+     "texto": "Obstrucción interna de las tuberías por suciedad o virutas. (pág. 23) Fugas de agente frigorífico por corrosión o fisuras en empalmes. (pág. 23) Obstrucción externa de la entrada de aire por polvo, polen y suciedad. (pág. 23) Acumulación de humedad, bacterias y hongos en las láminas. (págs. 4, 21)",
+     "html": "<ul>\n<li>Obstrucción interna de las tuberías por suciedad o virutas. <span class=\"pag\">pág. 23</span></li>\n<li>Fugas de agente frigorífico por corrosión o fisuras en empalmes. <span class=\"pag\">pág. 23</span></li>\n<li>Obstrucción externa de la entrada de aire por polvo, polen y suciedad. <span class=\"pag\">pág. 23</span></li>\n<li>Acumulación de humedad, bacterias y hongos en las láminas. <span class=\"pag\">págs. 4, 21</span></li>\n</ul>"
     },
     {
      "titulo": "Comportamiento en avería",
-     "texto": "Rendimiento de refrigeración deficiente, imposibilidad de enfriar el habitáculo, caudal de aire de ventilación reducido por aletas tupidas y presencia de humedad o malos olores en el interior. (págs. 11-12).",
-     "html": "<p>Rendimiento de refrigeración deficiente, imposibilidad de enfriar el habitáculo, caudal de aire de ventilación reducido por aletas tupidas y presencia de humedad o malos olores en el interior. <span class=\"pag\">págs. 11-12</span>.</p>"
+     "texto": "Rendimiento deficiente de la refrigeración, fallo total del aire acondicionado, caudal de aire insuficiente por el ventilador y emisión de malos olores. (pág. 23)",
+     "html": "<p>Rendimiento deficiente de la refrigeración, fallo total del aire acondicionado, caudal de aire insuficiente por el ventilador y emisión de malos olores. <span class=\"pag\">pág. 23</span></p>"
     },
     {
      "titulo": "Cómo comprobarlo",
-     "texto": "Comprobar la temperatura del aire en la tobera central (debe situarse entre 3 y 8 ºC). Medir presiones de trabajo en alta y baja presión con motor entre 2.000 y 2.500 rpm. Medir la diferencia de temperatura entre el tubo de entrada y el de salida del evaporador. Inspeccionar la presencia de fugas de refrigerante/colorante mediante detector electrónico en el drenaje de condensados. (págs. 12, 17).",
-     "html": "<ol>\n<li>Comprobar la temperatura del aire en la tobera central (debe situarse entre 3 y 8 ºC).</li>\n<li>Medir presiones de trabajo en alta y baja presión con motor entre 2.000 y 2.500 rpm.</li>\n<li>Medir la diferencia de temperatura entre el tubo de entrada y el de salida del evaporador.</li>\n<li>Inspeccionar la presencia de fugas de refrigerante/colorante mediante detector electrónico en el drenaje de condensados. <span class=\"pag\">págs. 12, 17</span>.</li>\n</ol>"
+     "texto": "Comprobar visualmente el estado de limpieza exterior de la matriz de aletas. (pág. 23) Comprobar la estanqueidad del cuerpo y de las tuberías. (pág. 24) Medir la temperatura en la tubería de entrada y en la tubería de salida. (pág. 24) Medir las presiones de trabajo con el compresor activado. (pág. 24)",
+     "html": "<ul>\n<li>Comprobar visualmente el estado de limpieza exterior de la matriz de aletas. <span class=\"pag\">pág. 23</span></li>\n<li>Comprobar la estanqueidad del cuerpo y de las tuberías. <span class=\"pag\">pág. 24</span></li>\n<li>Medir la temperatura en la tubería de entrada y en la tubería de salida. <span class=\"pag\">pág. 24</span></li>\n<li>Medir las presiones de trabajo con el compresor activado. <span class=\"pag\">pág. 24</span></li>\n</ul>"
     },
     {
      "titulo": "Mantenimiento",
-     "texto": "Desinfección periódica del evaporador mediante tratamiento antiséptico/vaporizador para eliminar la colonia de bacterias y microorganismos. Sustituir el filtro de habitáculo cada 12 meses. (págs. 4, 72).",
-     "html": "<p>Desinfección periódica del evaporador mediante tratamiento antiséptico/vaporizador para eliminar la colonia de bacterias y microorganismos. Sustituir el filtro de habitáculo cada 12 meses. <span class=\"pag\">págs. 4, 72</span>.</p>"
+     "texto": "Realizar la desinfección periódica del evaporador para eliminar bacterias y hongos retenidos en el agua de condensación. (págs. 4, 21)",
+     "html": "<p>Realizar la desinfección periódica del evaporador para eliminar bacterias y hongos retenidos en el agua de condensación. <span class=\"pag\">págs. 4, 21</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Módulo del evaporador con sus tubos de entrada y aletas de disipación — Fuente: Climatizacion basicos.pdf, pág. 22",
+     "html": "<ul>\n<li>Módulo del evaporador con sus tubos de entrada y aletas de disipación — Fuente: Climatizacion basicos.pdf, pág. 22</li>\n</ul>"
     }
    ]
   },
@@ -13556,6 +13707,85 @@
    ]
   },
   {
+   "id": "ssc.tuberias-y-racores.climatizacion-basicos",
+   "nt": 601,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "tuberias-y-racores",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "",
+   "titulo": "Tuberías y manguitos del circuito",
+   "codigo": "",
+   "menu": "Tuberías y manguitos del circuito",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Climatizacion basicos.pdf, págs. 11, 29-30",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "compresor",
+    "condensador",
+    "evaporador"
+   ],
+   "palabras": [
+    "manguitos flexibles",
+    "tubería de aluminio",
+    "prensado",
+    "racores",
+    "estanqueidad"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Canalizar el agente frigorífico y el aceite disuelto conectando herméticamente todos los componentes del circuito de climatización. (págs. 29-30)",
+     "html": "<p>Canalizar el agente frigorífico y el aceite disuelto conectando herméticamente todos los componentes del circuito de climatización. <span class=\"pag\">págs. 29-30</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Combinación de conductos rígidos de aluminio y mangueras flexibles de caucho sintético de baja permeabilidad, unidas a los racores metálicos mediante prensado con casquillos especiales. (págs. 29-30)",
+     "html": "<p>Combinación de conductos rígidos de aluminio y mangueras flexibles de caucho sintético de baja permeabilidad, unidas a los racores metálicos mediante prensado con casquillos especiales. <span class=\"pag\">págs. 29-30</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Soportan las altas presiones y pulsaciones del circuito y absorben los movimientos mecánicos relativos entre el motor térmico y la carrocería del vehículo, evitando fugas de fluido por porosidad o grietas. (págs. 29-30)",
+     "html": "<p>Soportan las altas presiones y pulsaciones del circuito y absorben los movimientos mecánicos relativos entre el motor térmico y la carrocería del vehículo, evitando fugas de fluido por porosidad o grietas. <span class=\"pag\">págs. 29-30</span></p>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fugas de agente frigorífico en las zonas de prensado del casquillo, porosidad por envejecimiento del caucho o rozamiento mecánico con partes de la carrocería. (págs. 30, 36)",
+     "html": "<p>Fugas de agente frigorífico en las zonas de prensado del casquillo, porosidad por envejecimiento del caucho o rozamiento mecánico con partes de la carrocería. <span class=\"pag\">págs. 30, 36</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Pérdida progresiva de refrigerante, disminución del rendimiento frigorífico y posible entrada de humedad al circuito. (págs. 30, 38)",
+     "html": "<p>Pérdida progresiva de refrigerante, disminución del rendimiento frigorífico y posible entrada de humedad al circuito. <span class=\"pag\">págs. 30, 38</span></p>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Inspeccionar las zonas de unión para detectar manchas de aceite de lubricación y aplicar detectores de fugas. (págs. 30, 38)",
+     "html": "<p>Inspeccionar las zonas de unión para detectar manchas de aceite de lubricación y aplicar detectores de fugas. <span class=\"pag\">págs. 30, 38</span></p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Utilizar siempre dos llaves al aflojar o apretar las conexiones para no retorcer las mangueras. Asegurar que no rocen contra bordes afilados o componentes móviles. (pág. 36)",
+     "html": "<p>Utilizar siempre dos llaves al aflojar o apretar las conexiones para no retorcer las mangueras. Asegurar que no rocen contra bordes afilados o componentes móviles. <span class=\"pag\">pág. 36</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Conjunto de manguitos flexibles con racores de conexión prensados — Fuente: Climatizacion basicos.pdf, pág. 29",
+     "html": "<ul>\n<li>Conjunto de manguitos flexibles con racores de conexión prensados — Fuente: Climatizacion basicos.pdf, pág. 29</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.presostato.trinaria.11-dispositivos-de-regulacion-y-segurida",
    "nt": 66,
    "modulo": "ssc",
@@ -14043,74 +14273,80 @@
    "clave": "presostato-binary-trinary-cuatrinary",
    "seccion": "7. Sensores y actuadores",
    "subgrupo": "",
-   "titulo": "Presostato e interruptor trinario",
+   "titulo": "Presostatos e interruptores de presión",
    "codigo": "",
-   "menu": "Presostato e interruptor trinario",
+   "menu": "Presostatos e interruptores de presión",
    "grupo": "Control de climatización",
    "tipo": "elemento",
    "subtipo": "",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "Climatizacion basicos.pdf, págs. 12-13",
+   "fuentes": "Climatizacion basicos.pdf, págs. 10-11, 24-28",
    "clase": "componente",
    "estado": "",
    "fusionadas": [],
    "variante": "",
    "area": "climatizacion",
    "sistema": "control-climatizacion",
-   "formaParteDe": "",
+   "formaParteDe": "circuito-frigorifico",
    "relacionados": [
     "compresor",
     "embrague-compresor",
     "electroventilador-condensador"
    ],
    "palabras": [
-    "presostato",
-    "interruptor trinario",
-    "alta presión",
     "baja presión",
-    "desconexión de seguridad"
+    "alta presión",
+    "trinario",
+    "protección compresor",
+    "26-33 bar",
+    "2 bar"
    ],
    "apartados": [
     {
      "titulo": "Misión",
-     "texto": "Proteger el sistema de climatización frente a presiones de trabajo peligrosamente altas o insuficientemente bajas y gestionar la activación del electroventilador del condensador para garantizar la condensación del fluido. (págs. 12-13).",
-     "html": "<p>Proteger el sistema de climatización frente a presiones de trabajo peligrosamente altas o insuficientemente bajas y gestionar la activación del electroventilador del condensador para garantizar la condensación del fluido. <span class=\"pag\">págs. 12-13</span>.</p>"
+     "texto": "Proteger el sistema de climatización y el compresor contra sobrepresiones o presiones excesivamente bajas, y gestionar el funcionamiento del ventilador del condensador. (pág. 25)",
+     "html": "<p>Proteger el sistema de climatización y el compresor contra sobrepresiones o presiones excesivamente bajas, y gestionar el funcionamiento del ventilador del condensador. <span class=\"pag\">pág. 25</span></p>"
     },
     {
      "titulo": "Tipos y características",
-     "texto": "Presostatos simples (de alta o baja presión) o interruptores trinarios (combinan en una única ampolla el contacto de baja presión, el de alta presión y el contacto de conmutación del ventilador). (págs. 12-13).",
-     "html": "<p>Presostatos simples (de alta o baja presión) o interruptores trinarios (combinan en una única ampolla el contacto de baja presión, el de alta presión y el contacto de conmutación del ventilador). <span class=\"pag\">págs. 12-13</span>.</p>"
+     "texto": "Interruptores electromecánicos o electrónicos montados en la zona de alta presión. Se clasifican en interruptores de baja presión, de alta presión e interruptores trinarios (que combinan alta presión, baja presión y mando de electroventilador). (pág. 25)",
+     "html": "<p>Interruptores electromecánicos o electrónicos montados en la zona de alta presión. Se clasifican en interruptores de baja presión, de alta presión e interruptores trinarios (que combinan alta presión, baja presión y mando de electroventilador). <span class=\"pag\">pág. 25</span></p>"
     },
     {
      "titulo": "Principio de funcionamiento",
-     "texto": "Instalado por lo general en la tubería del lado de alta presión. Si la presión sube excesivamente (26-33 bar) o desciende por debajo del límite mínimo por fuga (aprox. 2 bar), abre sus contactos interrumpiendo la alimentación eléctrica hacia el acoplamiento magnético del compresor. Su tercer contacto conmuta el circuito eléctrico del electroventilador del condensador al alcanzar el umbral de presión intermedia. (págs. 12-13).",
-     "html": "<p>Instalado por lo general en la tubería del lado de alta presión. Si la presión sube excesivamente (26-33 bar) o desciende por debajo del límite mínimo por fuga (aprox. 2 bar), abre sus contactos interrumpiendo la alimentación eléctrica hacia el acoplamiento magnético del compresor. Su tercer contacto conmuta el circuito eléctrico del electroventilador del condensador al alcanzar el umbral de presión intermedia. <span class=\"pag\">págs. 12-13</span>.</p>"
+     "texto": "Protección por alta presión: Si la presión del circuito alcanza valores de sobrepresión críticos (aprox. 26-33 bar), abre el contacto e interrumpe la corriente al embrague del compresor, reanudando la marcha cuando la presión cae a valores seguros (aprox. 5 bar). (pág. 26) Protección por baja presión: Si la presión cae por debajo de aprox. 2 bar (debido a falta de refrigerante), interrumpe la corriente para evitar la destrucción del compresor por falta de lubricación. (pág. 26) Contacto del ventilador (trinario): Cierra un contacto adicional al subir la presión para activar el ventilador del condensador y forzar la condensación. (pág. 26)",
+     "html": "<ul>\n<li><strong>Protección por alta presión:</strong> Si la presión del circuito alcanza valores de sobrepresión críticos (aprox. 26-33 bar), abre el contacto e interrumpe la corriente al embrague del compresor, reanudando la marcha cuando la presión cae a valores seguros (aprox. 5 bar). <span class=\"pag\">pág. 26</span></li>\n<li><strong>Protección por baja presión:</strong> Si la presión cae por debajo de aprox. 2 bar (debido a falta de refrigerante), interrumpe la corriente para evitar la destrucción del compresor por falta de lubricación. <span class=\"pag\">pág. 26</span></li>\n<li><strong>Contacto del ventilador (trinario):</strong> Cierra un contacto adicional al subir la presión para activar el ventilador del condensador y forzar la condensación. <span class=\"pag\">pág. 26</span></li>\n</ul>"
     },
     {
      "titulo": "Valores de trabajo",
-     "texto": "Umbral de desconexión por alta presión: 26 a 33 bares (reconexión al descender a aprox. 5 bares). Umbral de desconexión por baja presión: aprox. 2 bares. (págs. 12-13).",
-     "html": "<ul>\n<li>Umbral de desconexión por alta presión: 26 a 33 bares (reconexión al descender a aprox. 5 bares).</li>\n<li>Umbral de desconexión por baja presión: aprox. 2 bares. <span class=\"pag\">págs. 12-13</span>.</li>\n</ul>"
+     "texto": "Umbral de desconexión por alta presión: aprox. 26 a 33 bar. (pág. 26) Umbral de reconexión tras alta presión: aprox. 5 bar. (pág. 26) Umbral de desconexión por baja presión: aprox. 2 bar. (pág. 26)",
+     "html": "<ul>\n<li>Umbral de desconexión por alta presión: aprox. 26 a 33 bar. <span class=\"pag\">pág. 26</span></li>\n<li>Umbral de reconexión tras alta presión: aprox. 5 bar. <span class=\"pag\">pág. 26</span></li>\n<li>Umbral de desconexión por baja presión: aprox. 2 bar. <span class=\"pag\">pág. 26</span></li>\n</ul>"
     },
     {
      "titulo": "Anomalías frecuentes",
-     "texto": "Fallo o sulfatación en los contactos eléctricos internos, suciedad acumulada en el puerto de toma de presión, y grietas en la carcasa producidas por vibraciones. (págs. 12-13).",
-     "html": "<p>Fallo o sulfatación en los contactos eléctricos internos, suciedad acumulada en el puerto de toma de presión, y grietas en la carcasa producidas por vibraciones. <span class=\"pag\">págs. 12-13</span>.</p>"
+     "texto": "Fallos en los contactos eléctricos por suciedad o fogueo. (pág. 27) Daños en la carcasa causados por vibraciones mecánicas o colisiones. (pág. 27)",
+     "html": "<ul>\n<li>Fallos en los contactos eléctricos por suciedad o fogueo. <span class=\"pag\">pág. 27</span></li>\n<li>Daños en la carcasa causados por vibraciones mecánicas o colisiones. <span class=\"pag\">pág. 27</span></li>\n</ul>"
     },
     {
      "titulo": "Comportamiento en avería",
-     "texto": "Fallo completo de funcionamiento del aire acondicionado, desacoplamiento y acoplamiento continuo y errático del embrague del compresor, o inactividad del electroventilador del condensador produciendo sobrepresiones. (págs. 12-13).",
-     "html": "<p>Fallo completo de funcionamiento del aire acondicionado, desacoplamiento y acoplamiento continuo y errático del embrague del compresor, o inactividad del electroventilador del condensador produciendo sobrepresiones. <span class=\"pag\">págs. 12-13</span>.</p>"
+     "texto": "Rendimiento de refrigeración deficiente, inoperatividad total del aire acondicionado o ciclos continuos e intermitentes de encendido/apagado del embrague del compresor. (pág. 27)",
+     "html": "<p>Rendimiento de refrigeración deficiente, inoperatividad total del aire acondicionado o ciclos continuos e intermitentes de encendido/apagado del embrague del compresor. <span class=\"pag\">pág. 27</span></p>"
     },
     {
      "titulo": "Cómo comprobarlo",
-     "texto": "Inspección visual del enchufe y conector eléctrico. Medición de continuidad eléctrica en los contactos según la presión real medida en la instalación con manómetros. Prueba del componente desmontado aplicando presión controlada mediante botella de nitrógeno con manorreductor y comprobando la conmutación de contactos con multímetro. (págs. 12-13).",
-     "html": "<ol>\n<li>Inspección visual del enchufe y conector eléctrico.</li>\n<li>Medición de continuidad eléctrica en los contactos según la presión real medida en la instalación con manómetros.</li>\n<li>Prueba del componente desmontado aplicando presión controlada mediante botella de nitrógeno con manorreductor y comprobando la conmutación de contactos con multímetro. <span class=\"pag\">págs. 12-13</span>.</li>\n</ol>"
+     "texto": "Verificar que los enchufes eléctricos estén firmemente apretados. (pág. 28) Medir la presión del circuito con el compresor encendido y motor en marcha. (pág. 28) Probar el presostato desmontado utilizando una botella de nitrógeno con manorreductor y un multímetro para verificar el disparo de contactos. (pág. 28)",
+     "html": "<ul>\n<li>Verificar que los enchufes eléctricos estén firmemente apretados. <span class=\"pag\">pág. 28</span></li>\n<li>Medir la presión del circuito con el compresor encendido y motor en marcha. <span class=\"pag\">pág. 28</span></li>\n<li>Probar el presostato desmontado utilizando una botella de nitrógeno con manorreductor y un multímetro para verificar el disparo de contactos. <span class=\"pag\">pág. 28</span></li>\n</ul>"
     },
     {
      "titulo": "Mantenimiento",
-     "texto": "Verificación del apriete del conector y sustitución de la junta tórica en el racor al desmontar. (págs. 12-13).",
-     "html": "<p>Verificación del apriete del conector y sustitución de la junta tórica en el racor al desmontar. <span class=\"pag\">págs. 12-13</span>.</p>"
+     "texto": "Realizar revisiones periódicas de los contactos eléctricos durante el servicio de climatización. (pág. 25)",
+     "html": "<p>Realizar revisiones periódicas de los contactos eléctricos durante el servicio de climatización. <span class=\"pag\">pág. 25</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Presostato trinario con su rosca de acoplamiento e interfaz de conexión eléctrica — Fuente: Climatizacion basicos.pdf, pág. 25",
+     "html": "<ul>\n<li>Presostato trinario con su rosca de acoplamiento e interfaz de conexión eléctrica — Fuente: Climatizacion basicos.pdf, pág. 25</li>\n</ul>"
     }
    ]
   },
@@ -22106,6 +22342,79 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema conjunto del motor de la turbina V2 y el regulador de régimen J126 — Fuente: Motor tramapilla temperatura y turbina de aire.pdf, pág. 22",
      "html": "<ul>\n<li>Esquema conjunto del motor de la turbina V2 y el regulador de régimen J126 — Fuente: Motor tramapilla temperatura y turbina de aire.pdf, pág. 22</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.ventilador-habitaculo.climatizacion-basicos",
+   "nt": 600,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ventilador-habitaculo",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Ventilador del habitáculo",
+   "codigo": "",
+   "menu": "Ventilador del habitáculo",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Climatizacion basicos.pdf, págs. 11, 28-29",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "evaporador",
+    "filtro-habitaculo"
+   ],
+   "palabras": [
+    "soplador",
+    "caudal de aire",
+    "desempañamiento",
+    "visibilidad",
+    "confort"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Impulsar el caudal de aire ambiente o recirculado a través del evaporador y del radiador de calefacción hacia los difusores del habitáculo. (págs. 28-29)",
+     "html": "<p>Impulsar el caudal de aire ambiente o recirculado a través del evaporador y del radiador de calefacción hacia los difusores del habitáculo. <span class=\"pag\">págs. 28-29</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Electromotor soplador con rodete centrífugo montado en el cuerpo de la unidad climática. (págs. 28-29)",
+     "html": "<p>Electromotor soplador con rodete centrífugo montado en el cuerpo de la unidad climática. <span class=\"pag\">págs. 28-29</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Al recibir alimentación eléctrica, el motor hace girar el rodete que aspira aire del exterior o del habitáculo y lo fuerza a pasar por los intercambiadores térmicos de la unidad climática hacia las salidas de ventilación. (págs. 28-29)",
+     "html": "<p>Al recibir alimentación eléctrica, el motor hace girar el rodete que aspira aire del exterior o del habitáculo y lo fuerza a pasar por los intercambiadores térmicos de la unidad climática hacia las salidas de ventilación. <span class=\"pag\">págs. 28-29</span></p>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Averías en el motor eléctrico o en sus resistencias/regulador de velocidad. (págs. 28-29)",
+     "html": "<p>Averías en el motor eléctrico o en sus resistencias/regulador de velocidad. <span class=\"pag\">págs. 28-29</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Falta de caudal de aire en el interior, imposibilidad de desempañar el parabrisas y deterioro grave del confort térmico y de la seguridad al conducir. (pág. 29)",
+     "html": "<p>Falta de caudal de aire en el interior, imposibilidad de desempañar el parabrisas y deterioro grave del confort térmico y de la seguridad al conducir. <span class=\"pag\">pág. 29</span></p>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Verificar la llegada de tensión al conector del motor y probar el selector de velocidades. (pág. 28)",
+     "html": "<p>Verificar la llegada de tensión al conector del motor y probar el selector de velocidades. <span class=\"pag\">pág. 28</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Módulo soplador del ventilador del habitáculo — Fuente: Climatizacion basicos.pdf, pág. 28",
+     "html": "<ul>\n<li>Módulo soplador del ventilador del habitáculo — Fuente: Climatizacion basicos.pdf, pág. 28</li>\n</ul>"
     }
    ]
   },
@@ -43758,6 +44067,213 @@
      "titulo": "Imágenes requeridas",
      "texto": "Despiece de la unidad climática con la ubicación del evaporador, radiador de calefacción, turbina, regulador electrónico y motores de trampillas — Fuente: CD. Climatización en Ibiza99.pdf, pág. 6",
      "html": "<ul>\n<li>Despiece de la unidad climática con la ubicación del evaporador, radiador de calefacción, turbina, regulador electrónico y motores de trampillas — Fuente: CD. Climatización en Ibiza99.pdf, pág. 6</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.comprobacion-climatizacion.climatizacion-basicos",
+   "nt": 596,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "comprobacion-climatizacion",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Comprobación anual de la climatización",
+   "codigo": "",
+   "menu": "Comprobación anual de la climatización",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Climatizacion basicos.pdf, págs. 4",
+   "clase": "procedimiento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "filtro-habitaculo",
+    "evaporador"
+   ],
+   "palabras": [
+    "revisión anual",
+    "polen",
+    "desinfección",
+    "comprobación visual"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Comprobar el funcionamiento, la potencia y el estado de conservación de los componentes del aire acondicionado cada 12 meses para garantizar la calidad del aire y la capacidad de filtrado del habitáculo. (pág. 4)",
+     "html": "<p>Comprobar el funcionamiento, la potencia y el estado de conservación de los componentes del aire acondicionado cada 12 meses para garantizar la calidad del aire y la capacidad de filtrado del habitáculo. <span class=\"pag\">pág. 4</span></p>"
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Vehículo equipado con sistema de aire acondicionado, con intervalo de mantenimiento anual alcanzado. (pág. 4)",
+     "html": "<p>Vehículo equipado con sistema de aire acondicionado, con intervalo de mantenimiento anual alcanzado. <span class=\"pag\">pág. 4</span></p>"
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Filtro del habitáculo nuevo. (pág. 4) Producto desinfectante para el evaporador (en caso necesario). (pág. 4)",
+     "html": "<ul>\n<li>Filtro del habitáculo nuevo. <span class=\"pag\">pág. 4</span></li>\n<li>Producto desinfectante para el evaporador (en caso necesario). <span class=\"pag\">pág. 4</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Pasos",
+     "texto": "Realizar una comprobación visual de todos los componentes del sistema de climatización. (pág. 4) Ejecutar una prueba de funcionamiento y evaluar la potencia frigorífica. (pág. 4) Sustituir el filtro de habitáculo para recuperar la capacidad de filtrado de polvo, polen y suciedad. (pág. 4) Desinfectar el evaporador para eliminar bacterias, hongos y microorganismos acumulados en las láminas por condensación, en caso necesario. (pág. 4)",
+     "html": "<ol>\n<li>Realizar una comprobación visual de todos los componentes del sistema de climatización. <span class=\"pag\">pág. 4</span></li>\n<li>Ejecutar una prueba de funcionamiento y evaluar la potencia frigorífica. <span class=\"pag\">pág. 4</span></li>\n<li>Sustituir el filtro de habitáculo para recuperar la capacidad de filtrado de polvo, polen y suciedad. <span class=\"pag\">pág. 4</span></li>\n<li>Desinfectar el evaporador para eliminar bacterias, hongos y microorganismos acumulados en las láminas por condensación, en caso necesario. <span class=\"pag\">pág. 4</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Periodicidad recomendada: cada 12 meses. (pág. 4)",
+     "html": "<ul>\n<li>Periodicidad recomendada: cada 12 meses. <span class=\"pag\">pág. 4</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Comprobar el caudal de aire fresco y limpio en el habitáculo tras la sustitución del filtro. (pág. 4)",
+     "html": "<p>Comprobar el caudal de aire fresco y limpio en el habitáculo tras la sustitución del filtro. <span class=\"pag\">pág. 4</span></p>"
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Evitar la acumulación descontrolada de bacterias y microorganismos en las láminas del evaporador para prevenir riesgos sanitarios en los ocupantes. (pág. 4)",
+     "html": "<p>Evitar la acumulación descontrolada de bacterias y microorganismos en las láminas del evaporador para prevenir riesgos sanitarios en los ocupantes. <span class=\"pag\">pág. 4</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.servicio-climatizacion.climatizacion-basicos",
+   "nt": 597,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "servicio-climatizacion",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Servicio bienal de climatización",
+   "codigo": "",
+   "menu": "Servicio bienal de climatización",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Climatizacion basicos.pdf, págs. 5",
+   "clase": "procedimiento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "filtro-deshidratador",
+    "filtro-habitaculo",
+    "refrigerante-r134a"
+   ],
+   "palabras": [
+    "servicio bienal",
+    "pérdida refrigerante",
+    "estanqueidad",
+    "desinfección"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Realizar la revisión completa del circuito de climatización cada 2 años para compensar la pérdida natural de refrigerante, sustituir elementos filtrantes y evitar averías en el compresor. (pág. 5)",
+     "html": "<p>Realizar la revisión completa del circuito de climatización cada 2 años para compensar la pérdida natural de refrigerante, sustituir elementos filtrantes y evitar averías en el compresor. <span class=\"pag\">pág. 5</span></p>"
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Intervalo de 2 años alcanzado o apertura del circuito de refrigerante. (pág. 5)",
+     "html": "<p>Intervalo de 2 años alcanzado o apertura del circuito de refrigerante. <span class=\"pag\">pág. 5</span></p>"
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Estación de servicio de climatización. (pág. 5) Agente frigorífico y aceite lubricante. (pág. 5) Filtro deshidratante nuevo. (pág. 5) Filtro de habitáculo nuevo. (pág. 5) Producto desinfectante para evaporador (si procede). (pág. 5)",
+     "html": "<ul>\n<li>Estación de servicio de climatización. <span class=\"pag\">pág. 5</span></li>\n<li>Agente frigorífico y aceite lubricante. <span class=\"pag\">pág. 5</span></li>\n<li>Filtro deshidratante nuevo. <span class=\"pag\">pág. 5</span></li>\n<li>Filtro de habitáculo nuevo. <span class=\"pag\">pág. 5</span></li>\n<li>Producto desinfectante para evaporador (si procede). <span class=\"pag\">pág. 5</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Pasos",
+     "texto": "Realizar la inspección visual de todos los componentes de la instalación. (pág. 5) Ejecutar la prueba de funcionamiento y de potencia del sistema. (pág. 5) Sustituir el filtro deshidratante para asegurar la retención de humedad e impurezas. (pág. 5) Desinfectar el evaporador en caso necesario. (pág. 5) Sustituir el agente frigorífico recuperando la carga antigua e inyectando refrigerante nuevo. (pág. 5) Comprobar la estanqueidad del circuito frigorífico. (pág. 5) Sustituir el filtro del habitáculo. (pág. 5)",
+     "html": "<ol>\n<li>Realizar la inspección visual de todos los componentes de la instalación. <span class=\"pag\">pág. 5</span></li>\n<li>Ejecutar la prueba de funcionamiento y de potencia del sistema. <span class=\"pag\">pág. 5</span></li>\n<li>Sustituir el filtro deshidratante para asegurar la retención de humedad e impurezas. <span class=\"pag\">pág. 5</span></li>\n<li>Desinfectar el evaporador en caso necesario. <span class=\"pag\">pág. 5</span></li>\n<li>Sustituir el agente frigorífico recuperando la carga antigua e inyectando refrigerante nuevo. <span class=\"pag\">pág. 5</span></li>\n<li>Comprobar la estanqueidad del circuito frigorífico. <span class=\"pag\">pág. 5</span></li>\n<li>Sustituir el filtro del habitáculo. <span class=\"pag\">pág. 5</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Periodicidad recomendada: cada 2 años. (pág. 5) Pérdida anual habitual de refrigerante por difusión normal: hasta un 10% anual en sistemas nuevos. (pág. 5)",
+     "html": "<ul>\n<li>Periodicidad recomendada: cada 2 años. <span class=\"pag\">pág. 5</span></li>\n<li>Pérdida anual habitual de refrigerante por difusión normal: hasta un 10% anual en sistemas nuevos. <span class=\"pag\">pág. 5</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Verificar la ausencia de fugas y confirmar que la potencia de refrigeración cumple las especificaciones. (pág. 5)",
+     "html": "<p>Verificar la ausencia de fugas y confirmar que la potencia de refrigeración cumple las especificaciones. <span class=\"pag\">pág. 5</span></p>"
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Mantener la carga correcta de refrigerante para evitar la falta de lubricación y posteriores fallos mecánicos en el compresor. (pág. 5)",
+     "html": "<p>Mantener la carga correcta de refrigerante para evitar la falta de lubricación y posteriores fallos mecánicos en el compresor. <span class=\"pag\">pág. 5</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.interdependencia-climatizacion-refrigeracion.climatizacion-basicos",
+   "nt": 598,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "interdependencia-climatizacion-refrigeracion",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Interdependencia entre la climatización y la refrigeración del motor",
+   "codigo": "",
+   "menu": "Interdependencia entre la climatizació",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Climatizacion basicos.pdf, págs. 6",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "liquido-refrigerante-motor",
+    "condensador"
+   ],
+   "palabras": [
+    "temperatura refrigerante",
+    "sobrecalentamiento",
+    "punto ebullición",
+    "120 ºC"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Explicar la influencia mutua entre el funcionamiento del aire acondicionado y el sistema de refrigeración del motor. (pág. 6)",
+     "html": "<p>Explicar la influencia mutua entre el funcionamiento del aire acondicionado y el sistema de refrigeración del motor. <span class=\"pag\">pág. 6</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El aire acondicionado y la refrigeración del motor forman un conjunto funcional interconectado. Al activar la climatización, se incrementa la exigencia térmica sobre el sistema de refrigeración del motor, aumentando la temperatura del líquido refrigerante. (pág. 6)",
+     "html": "<p>El aire acondicionado y la refrigeración del motor forman un conjunto funcional interconectado. Al activar la climatización, se incrementa la exigencia térmica sobre el sistema de refrigeración del motor, aumentando la temperatura del líquido refrigerante. <span class=\"pag\">pág. 6</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El líquido refrigerante del motor protege el bloque térmico tanto frente a la congelación como frente al sobrecalentamiento. Una adición correcta de aditivos en el líquido refrigerante eleva su punto de ebullición por encima de los 120 ºC, creando una reserva de potencia imprescindible durante periodos calurosos o trayectos prolongados con el aire acondicionado conectado. Por ello, la revisión del estado del líquido refrigerante debe incluirse dentro del servicio de climatización. (pág. 6)",
+     "html": "<p>El líquido refrigerante del motor protege el bloque térmico tanto frente a la congelación como frente al sobrecalentamiento. Una adición correcta de aditivos en el líquido refrigerante eleva su punto de ebullición por encima de los 120 ºC, creando una reserva de potencia imprescindible durante periodos calurosos o trayectos prolongados con el aire acondicionado conectado. Por ello, la revisión del estado del líquido refrigerante debe incluirse dentro del servicio de climatización. <span class=\"pag\">pág. 6</span></p>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Punto de ebullición del líquido refrigerante del motor con composición correcta: > 120 ºC. (pág. 6)",
+     "html": "<ul>\n<li>Punto de ebullición del líquido refrigerante del motor con composición correcta: &gt; 120 ºC. <span class=\"pag\">pág. 6</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Considerar el aire acondicionado y el circuito de refrigeración del motor como dos sistemas totalmente independientes sin interacción térmica entre sí. (pág. 6) Negligenciar la comprobación del líquido refrigerante del motor durante el mantenimiento del aire acondicionado. (pág. 6)",
+     "html": "<ul>\n<li>Considerar el aire acondicionado y el circuito de refrigeración del motor como dos sistemas totalmente independientes sin interacción térmica entre sí. <span class=\"pag\">pág. 6</span></li>\n<li>Negligenciar la comprobación del líquido refrigerante del motor durante el mantenimiento del aire acondicionado. <span class=\"pag\">pág. 6</span></li>\n</ul>"
     }
    ]
   },

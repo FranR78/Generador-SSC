@@ -11,37 +11,44 @@ grupo: "Circuito frigorífico"
 clave: condensador
 area: climatizacion
 sistema: "circuito-frigorifico"
-fuentes: "Climatizacion basicos.pdf, págs. 8-9"
+forma_parte_de: circuito-frigorifico
+fuentes: "Climatizacion basicos.pdf, págs. 7, 12-14"
 relacionados: ["compresor", "filtro-deshidratador", "electroventilador-condensador"]
-palabras: ["condensador", "disipación de calor", "cambio de estado", "tubos y láminas", "multiflujo"]
+palabras: ["intercambio térmico", "condensación", "tubos y láminas", "impacto frontal", "suciedad"]
 ---
 
 ## Misión
 
-Enfriar el gas refrigerante sobrecalentado procedente del compresor mediante la disipación de calor al aire exterior, provocando el cambio de estado del refrigerante de gaseoso a líquido. (págs. 8-9).
+Disipar al aire exterior el calor absorbido por el refrigerante en el evaporador y el generado durante la compresión, transformando el gas de estado gaseoso a estado líquido. (págs. 7, 12-13)
 
 ## Tipos y características
 
-Intercambiador de calor ubicado en el frontal del vehículo. Existen constructivamente modelos de tubos y láminas, serpentín y de flujo paralelo (multiflujo). (págs. 8, 37).
+Intercambiador de calor formado por un serpentín o entramado de tuberías y laminillas de aluminio montado en el frente del vehículo. (págs. 12-13)
 
 ## Principio de funcionamiento
 
-El gas refrigerante a alta presión y alta temperatura entra por la toma superior del condensador. Al circular por sus tuberías y láminas, transfiere su calor al aire exterior forzado por la marcha o el electroventilador, enfriándose hasta condensar y abandonar el componente en estado líquido por la toma inferior. (págs. 8-9).
+El gas refrigerante sobrecalentado entra por la toma superior del condensador. A medida que fluye hacia abajo por las tuberías, el aire exterior que atraviesa las láminas absorbe su energía térmica. Al enfriarse y alcanzar la temperatura de condensación, el fluido se licúa y abandona el condensador por la toma inferior en estado líquido. (pág. 13)
 
 ## Anomalías frecuentes
 
-Fugas de refrigerante por impactos de gravilla o accidentes frontales, corrosión, y obstrucción externa de las láminas por suciedad, insectos o barro. (págs. 8-9).
+- Fugas o daños en los racores de empalme. (pág. 14)
+- Obstrucción externa e intercambio de calor insuficiente por acumulación de suciedad, insectos o impactos de gravilla. (págs. 12, 14)
+- Deformación o rotura por accidentes con impacto en la parte frontal. (pág. 12)
 
 ## Comportamiento en avería
 
-Rendimiento deficiente de refrigeración, fallo completo del aire acondicionado, presiones de alta excesivamente elevadas y funcionamiento ininterrumpido del electroventilador del condensador. (págs. 8-9).
+Pobre rendimiento de refrigeración, fallo total del aire acondicionado y funcionamiento continuo del ventilador del condensador. (pág. 13)
 
 ## Cómo comprobarlo
 
-1. Inspección visual externa de láminas y tuberías para detectar deformaciones, suciedad o fugas.
-2. Comprobación de estanqueidad mediante detector electrónico o gas formier.
-3. Medición de presiones en alta y baja presión con el equipo conectado. (págs. 8-9).
+- Comprobar visualmente si las láminas presentan suciedad o deformaciones por gravilla. (pág. 14)
+- Comprobar si existen fugas de agente frigorífico. (pág. 14)
+- Comprobar la presión en los sectores de alta y baja presión del circuito. (pág. 14)
 
 ## Mantenimiento
 
-Limpieza periódica externa de la superficie de las láminas con aire o agua a baja presión (sin aplicar limpiadores de vapor directos sobre las aletas). En caso de lavado interno tras fallo de compresor, los modelos de flujo paralelo (multiflujo) no se pueden lavar con garantía y deben ser sustituidos. (págs. 8, 14, 37).
+Mantener limpias las aletas de refrigeración y revisar periódicamente la estanqueidad de las conexiones. (págs. 12, 14)
+
+## Imágenes requeridas
+
+- Estructura del condensador de aire acondicionado con tuberías y laminillas de disipación — Fuente: Climatizacion basicos.pdf, pág. 12
