@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-24",
- "total": 57,
+ "total": 62,
  "grupos": [
   "Circuito frigorífico",
   "Control de climatización",
@@ -1753,6 +1753,67 @@
    ]
   },
   {
+   "id": "ssc.electroventilador-condensador.10-electroventiladores",
+   "nt": 58,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "electroventilador-condensador",
+   "seccion": "5. Lado de alta",
+   "subgrupo": "",
+   "titulo": "Electroventilador",
+   "codigo": "",
+   "menu": "Electroventilador",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "10. Electroventiladores.pdf, págs. 83-85",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "condensador",
+    "refrigeracion-motor",
+    "unidad-control-ventiladores"
+   ],
+   "palabras": [
+    "corriente de aire",
+    "I velocidad",
+    "II velocidad",
+    "16 bares",
+    "sobrepresión"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Establecer una corriente de aire fresco a través del condensador y del radiador para forzar la circulación de aire cuando el aire de marcha es insuficiente, especialmente a baja velocidad o con el vehículo parado (pág. 83)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Se instalan uno, dos o hasta tres electroventiladores para garantizar la adecuada refrigeración de la climatización y del motor (pág. 83). Funcionan de manera combinada ofreciendo distintas etapas de rendimiento (I velocidad y II velocidad) (págs. 83-84)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Al activar el climatizador y funcionar el compresor con una presión superior a 2 bares, la unidad de control activa la I velocidad de los electroventiladores (págs. 83-84). Si la presión en el circuito frigorífico alcanza los 16 bares o la temperatura del líquido refrigerante supera los 99 ºC, los ventiladores conmutan a la II velocidad (pág. 84). Cuando el climatizador está desconectado, el funcionamiento depende exclusivamente de la temperatura del refrigerante del motor (pág. 85)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Presión de activación de I velocidad (con A/A activado): superior a 2 bares en el circuito frigorífico (págs. 83-84). Temperatura de activación de I velocidad (sin A/A): entre 84 ºC y 98 ºC según el termocontacto del radiador (pág. 84). Presión de activación de II velocidad: superior a 16 bares en el circuito de alta del fluido refrigerante (pág. 84). Temperatura de activación de II velocidad: superior a 99 ºC (entre 99 ºC y 105 ºC) (pág. 84). Desactivación de II velocidad a I velocidad: cuando la presión cae por debajo de 16 bares y la temperatura de refrigerante desciende de 99 ºC (pág. 85)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Falta de funcionamiento de los electroventiladores por avería en relés, fusible de protección, cableado o electrónica de control (págs. 84-86)."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si los electroventiladores no funcionan al estar el vehículo parado, la presión de alta del circuito frigorífico sube de forma excesiva y el compresor se desconecta automáticamente por motivos de seguridad (pág. 85). El climatizador solo enfriará con el vehículo en circulación por efecto del aire de marcha y dejará de enfriar en cuanto el vehículo se detenga (pág. 85)."
+    }
+   ]
+  },
+  {
    "id": "ssc.filtro-deshidratador.2-introduccion-a-la-refrigeracion",
    "nt": 13,
    "modulo": "ssc",
@@ -2067,78 +2128,6 @@
     {
      "titulo": "Imágenes requeridas",
      "texto": "Sección y esquema de funcionamiento de la válvula de expansión de bulbo interior monobloque en fases de apertura por alta temperatura y cierre por baja temperatura — Fuente: 8. Válvulas de Expansión.pdf, págs. 76-77"
-    }
-   ]
-  },
-  {
-   "id": "ssc.estrangulador.8-valvulas-de-expansion",
-   "nt": 55,
-   "modulo": "ssc",
-   "unidad": "clima",
-   "clave": "estrangulador",
-   "seccion": "6. Expansión y lado de baja",
-   "subgrupo": "Dispositivos de expansión",
-   "titulo": "Estrangulador",
-   "codigo": "",
-   "menu": "Estrangulador",
-   "grupo": "Circuito frigorífico",
-   "tipo": "elemento",
-   "subtipo": "",
-   "aplicacion": [],
-   "ubicacion": "",
-   "fuentes": "8. Válvulas de Expansión.pdf, págs. 77-78",
-   "clase": "componente",
-   "variante": "",
-   "area": "climatizacion",
-   "sistema": "circuito-frigorifico",
-   "formaParteDe": "circuito-frigorifico",
-   "relacionados": [
-    "evaporador",
-    "deposito-colector"
-   ],
-   "palabras": [
-    "estrangulador",
-    "tubo calibrado",
-    "tamiz pulverizador",
-    "tamiz filtrante",
-    "colores de calibración"
-   ],
-   "apartados": [
-    {
-     "titulo": "Misión",
-     "texto": "Regular el caudal de agente frigorífico que ingresa al evaporador, mantener la presión en el lado de alta para conservar el fluido en estado líquido y provocar una brusca caída de presión y temperatura que pulveriza el refrigerante a la entrada del evaporador (págs. 77-78). Constituye el punto de división entre la zona de alta y de baja presión del circuito de aire acondicionado (pág. 77)."
-    },
-    {
-     "titulo": "Tipos y características",
-     "texto": "Tubo calibrado que realiza la función de la válvula de expansión, ubicado a la entrada del evaporador (pág. 77). - Componentes: cuerpo con tubo/taladro calibrado, filtro de tamiz de entrada (para retener impurezas y evitar la obturación del calibre), junta tórica de sellado perimetral (para obligar al fluido a pasar exclusivamente por el taladro calibrado) y tamiz pulverizador posterior (págs. 77-78). - Código de colores: el color del soporte de plástico está vinculado al diámetro del tubo calibrado (existen 6 colores diferentes) (pág. 78). - Variantes de montaje: en determinados modelos (Chrysler, Renault, Ford) se encuentra integrado en el interior del propio tubo de alta presión (exigiendo la sustitución de la tubería completa); en otros modelos dispone de recambio independiente (pág. 78)."
-    },
-    {
-     "titulo": "Principio de funcionamiento",
-     "texto": "El agente frigorífico llega a la entrada a alta presión y alta temperatura en fase líquida (págs. 77-78). Al atravesar el taladro calibrado, sufre una fuerte restricción de paso que mantiene presurizado el tramo de alta (pág. 78). A la salida de la estrechez, el fluido experimenta una rápida caída de presión y un importante descenso de temperatura, provocando su evaporación parcial y saliendo pulverizado a través del tamiz posterior hacia el evaporador (págs. 77-78)."
-    },
-    {
-     "titulo": "Valores de trabajo",
-     "texto": "Variedad de calibración: 6 colores de soporte según el diámetro del taladro calibrado (pág. 78)."
-    },
-    {
-     "titulo": "Anomalías frecuentes",
-     "texto": "Obturación del tamiz filtrante delantero por impurezas o virutas: interrumpe el flujo de refrigerante hacia el evaporador (pág. 78). Montaje invertido: altera el patrón de rociado y anula el filtrado de impurezas (pág. 78). Deterioro de la junta tórica perimetral: permite el paso directo de refrigerante por fuera del taladro calibrado, impidiendo la caída de presión entre la zona de alta y de baja (pág. 77)."
-    },
-    {
-     "titulo": "Comportamiento en avería",
-     "texto": "Si se obstruye el estrangulador, se detiene la alimentación de refrigerante al evaporador, produciéndose una depresión acusada en la línea de baja y la pérdida total de rendimiento frigorífico."
-    },
-    {
-     "titulo": "Cómo comprobarlo",
-     "texto": "Extraer el estrangulador de la tubería e inspeccionar visualmente la presencia de suciedad en el tamiz filtrante delantero y el estado de la junta tórica de sellado (págs. 77-78)."
-    },
-    {
-     "titulo": "Mantenimiento",
-     "texto": "Respetar estrictamente el sentido de montaje indicado por la flecha grabada en el cuerpo (la flecha debe señalar siempre hacia el evaporador) (pág. 78). En caso de sustitución, instalar un estrangulador del mismo color de soporte para mantener el diámetro de calibración exacto (pág. 78). En versiones independientes, es susceptible de limpieza y reutilización sustituyendo obligatoriamente las juntas tóricas (pág. 78). En vehículos con estrangulador integrado en la canalización rígida (Chrysler, Renault, Ford), reemplazar el tramo de tubo de alta completo (pág. 78)."
-    },
-    {
-     "titulo": "Imágenes requeridas",
-     "texto": "Despiece y sección del estrangulador con indicación del tamiz filtrante, junta tórica de sellado, tubo calibrado y tamiz pulverizador — Fuente: 8. Válvulas de Expansión.pdf, págs. 77-78"
     }
    ]
   },
@@ -3732,6 +3721,301 @@
     {
      "titulo": "Imágenes requeridas",
      "texto": "Despiece y ubicación de componentes del climatizador en el tablero de instrumentos y habitáculo — Fuente: 7. Condensadores y evaporadores.pdf, págs. 68-69 Apertura de las dos mitades de la carcasa de la unidad climática mostrando la posición del evaporador y su aislamiento térmico — Fuente: 7. Condensadores y evaporadores.pdf, pág. 70"
+    }
+   ]
+  },
+  {
+   "id": "ssc.estrangulador.8-valvulas-de-expansion",
+   "nt": 55,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "estrangulador",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Estrangulador",
+   "codigo": "",
+   "menu": "Estrangulador",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "8. Válvulas de Expansión.pdf, págs. 77-78",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "evaporador",
+    "deposito-colector"
+   ],
+   "palabras": [
+    "estrangulador",
+    "tubo calibrado",
+    "tamiz pulverizador",
+    "tamiz filtrante",
+    "colores de calibración"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Regular el caudal de agente frigorífico que ingresa al evaporador, mantener la presión en el lado de alta para conservar el fluido en estado líquido y provocar una brusca caída de presión y temperatura que pulveriza el refrigerante a la entrada del evaporador (págs. 77-78). Constituye el punto de división entre la zona de alta y de baja presión del circuito de aire acondicionado (pág. 77)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Tubo calibrado que realiza la función de la válvula de expansión, ubicado a la entrada del evaporador (pág. 77). - Componentes: cuerpo con tubo/taladro calibrado, filtro de tamiz de entrada (para retener impurezas y evitar la obturación del calibre), junta tórica de sellado perimetral (para obligar al fluido a pasar exclusivamente por el taladro calibrado) y tamiz pulverizador posterior (págs. 77-78). - Código de colores: el color del soporte de plástico está vinculado al diámetro del tubo calibrado (existen 6 colores diferentes) (pág. 78). - Variantes de montaje: en determinados modelos (Chrysler, Renault, Ford) se encuentra integrado en el interior del propio tubo de alta presión (exigiendo la sustitución de la tubería completa); en otros modelos dispone de recambio independiente (pág. 78)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El agente frigorífico llega a la entrada a alta presión y alta temperatura en fase líquida (págs. 77-78). Al atravesar el taladro calibrado, sufre una fuerte restricción de paso que mantiene presurizado el tramo de alta (pág. 78). A la salida de la estrechez, el fluido experimenta una rápida caída de presión y un importante descenso de temperatura, provocando su evaporación parcial y saliendo pulverizado a través del tamiz posterior hacia el evaporador (págs. 77-78)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Variedad de calibración: 6 colores de soporte según el diámetro del taladro calibrado (pág. 78)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Obturación del tamiz filtrante delantero por impurezas o virutas: interrumpe el flujo de refrigerante hacia el evaporador (pág. 78). Montaje invertido: altera el patrón de rociado y anula el filtrado de impurezas (pág. 78). Deterioro de la junta tórica perimetral: permite el paso directo de refrigerante por fuera del taladro calibrado, impidiendo la caída de presión entre la zona de alta y de baja (pág. 77)."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si se obstruye el estrangulador, se detiene la alimentación de refrigerante al evaporador, produciéndose una depresión acusada en la línea de baja y la pérdida total de rendimiento frigorífico."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Extraer el estrangulador de la tubería e inspeccionar visualmente la presencia de suciedad en el tamiz filtrante delantero y el estado de la junta tórica de sellado (págs. 77-78)."
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Respetar estrictamente el sentido de montaje indicado por la flecha grabada en el cuerpo (la flecha debe señalar siempre hacia el evaporador) (pág. 78). En caso de sustitución, instalar un estrangulador del mismo color de soporte para mantener el diámetro de calibración exacto (pág. 78). En versiones independientes, es susceptible de limpieza y reutilización sustituyendo obligatoriamente las juntas tóricas (pág. 78). En vehículos con estrangulador integrado en la canalización rígida (Chrysler, Renault, Ford), reemplazar el tramo de tubo de alta completo (pág. 78)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Despiece y sección del estrangulador con indicación del tamiz filtrante, junta tórica de sellado, tubo calibrado y tamiz pulverizador — Fuente: 8. Válvulas de Expansión.pdf, págs. 77-78"
+    }
+   ]
+  },
+  {
+   "id": "ssc.unidad-control-ventiladores.10-electroventiladores",
+   "nt": 59,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "unidad-control-ventiladores",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Unidad de control para los ventiladores de refrigeración",
+   "codigo": "",
+   "menu": "Unidad de control para los ventiladore",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "10. Electroventiladores.pdf, págs. 84-85",
+   "clase": "componente",
+   "variante": "",
+   "area": "electricidad-electronica",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "electroventilador-condensador",
+    "compresor",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "caja de relés",
+    "embrague compresor",
+    "fusible",
+    "Can-Bus",
+    "trinaria",
+    "sensor MAP"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Gestionar la activación de las distintas velocidades de los electroventiladores, controlar el acoplamiento magnético del compresor y supervisar la temperatura del sistema (págs. 83-85)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Módulo o caja electrónica instalada en el compartimento motor (pág. 84). Integra en su interior los relés de conmutación de los electroventiladores, el relé de excitación del embrague del compresor, un fusible de protección y la electrónica de gestión (pág. 84)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Recibe señales de entrada desde el termocontacto del radiador, el conmutador de presión (trinaria), el transmisor de alta presión (sensor MAP), el panel de mandos de la climatización y la red Can-Bus de datos (pág. 85). Procesa esta información para activar los relés de velocidad de los electroventiladores y la excitación del compresor, vigilar la temperatura del refrigerante, gestionar bombas de agua auxiliares e intercambiar información con la unidad de motor y de cambio automático (pág. 85)."
+    }
+   ]
+  },
+  {
+   "id": "ssc.elevacion-ralenti-climatizador.10-electroventiladores",
+   "nt": 60,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "elevacion-ralenti-climatizador",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Función de elevación de ralentí en atascos por baja potencia frigorífica",
+   "codigo": "",
+   "menu": "Función de elevación de ralentí en ata",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "10. Electroventiladores.pdf, págs. 85",
+   "clase": "fundamento",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "compresor",
+    "sensor-evaporador"
+   ],
+   "palabras": [
+    "sensor evaporador",
+    "potencia insuficiente",
+    "Can-Bus confort",
+    "< 5 km/h",
+    "subida r.p.m."
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Incrementar el rendimiento del compresor y la capacidad de refrigeración del habitáculo durante la circulación a velocidad muy reducida o en retenciones de tráfico (pág. 85)."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "A velocidades inferiores a 5 km/h el régimen del motor se mantiene al ralentí, lo que reduce las revoluciones del compresor y disminuye la potencia frigorífica suministrada por el evaporador al habitáculo (pág. 85)."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "La unidad de control de climatización monitoriza la potencia frigorífica mediante el sensor de temperatura de salida del evaporador (pág. 85). Si detecta que la potencia es insuficiente estando la activación del compresor al máximo (98%), envía un mensaje de solicitud a la red Can-Bus de confort (pág. 85). Al recibir este mensaje, la unidad de control del motor incrementa automáticamente las revoluciones de ralentí para aumentar la velocidad del compresor y mejorar su rendimiento frigorífico (pág. 85)."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Grado de activación máxima del compresor para solicitar la función: 98% (pág. 85). Velocidad máxima del vehículo para habilitar la función: inferior a 5 km/h (pág. 85)."
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Asumir que el aumento del ralentí en retenciones se debe únicamente a una elevación de la temperatura del motor, omitiendo que la propia unidad de climatización puede solicitarlo por falta de rendimiento en el evaporador (pág. 85)."
+    }
+   ]
+  },
+  {
+   "id": "ssc.regulacion-electroventiladores-pwm.10-electroventiladores",
+   "nt": 61,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-electroventiladores-pwm",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Regulación continua de electroventiladores mediante señal PWM",
+   "codigo": "",
+   "menu": "Regulación continua de electroventilad",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "10. Electroventiladores.pdf, págs. 85-86",
+   "clase": "fundamento",
+   "variante": "",
+   "area": "electricidad-electronica",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "electroventilador-condensador",
+    "unidad-control-ventiladores"
+   ],
+   "palabras": [
+    "PWM",
+    "periodo positivo",
+    "variador continuo",
+    "función de emergencia",
+    "Can-Bus"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Ajustar de manera continua y progresiva la velocidad de giro de los electroventiladores en función de la demanda instantánea del motor y del sistema de climatización (págs. 85-86)."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Control electrónico integrado en el propio cuerpo del electroventilador que interpreta una señal de excitación modulada en anchura de pulso (PWM) emitida por la unidad de control del motor (pág. 86)."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "La unidad de control de climatización solicita la activación de los ventiladores mediante un mensaje en la línea Can-Bus de confort, en función de la carga del compresor y de la presión de refrigerante (pág. 85). La unidad de control del motor genera una señal PWM de frecuencia fija y proporción de periodo positivo variable hacia la electrónica del ventilador (pág. 86). A medida que aumenta el porcentaje de periodo positivo de la señal PWM, incrementa proporcionalmente la velocidad de giro de los electroventiladores (pág. 86). Si la proporción de periodo supera el 90%, los ventiladores funcionan a la máxima velocidad (pág. 86)."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Frecuencia de la señal PWM: fija (pág. 86). Proporción de periodo positivo para máxima velocidad de giro (100%): superior al 90% (pág. 86). Umbrales de activación de la función de emergencia: señal PWM inferior al 8% o superior al 95% (pág. 86)."
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Creer que este sistema emplea resistencias escalonadas de potencia para variar la velocidad en lugar de un módulo electrónico de regulación por señal PWM (págs. 85-86)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Gráfica de la velocidad de los electroventiladores (%) frente a la proporción de periodo positivo (%) de la señal PWM y zona de función de emergencia — Fuente: 10. Electroventiladores.pdf, pág. 86"
+    }
+   ]
+  },
+  {
+   "id": "ssc.diagnostico-electroventiladores-maxima-velocidad.10-electroventiladores",
+   "nt": 62,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "diagnostico-electroventiladores-maxima-velocidad",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Electroventiladores funcionando de forma continua a la máxima velocidad al conectar el contacto",
+   "codigo": "",
+   "menu": "Electroventiladores funcionando de for",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "10. Electroventiladores.pdf, págs. 86",
+   "clase": "diagnostico",
+   "variante": "",
+   "area": "electricidad-electronica",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "electroventilador-condensador",
+    "unidad-control-ventiladores"
+   ],
+   "palabras": [
+    "función de emergencia",
+    "derivación a masa",
+    "derivación a positivo",
+    "máxima velocidad",
+    "máquina de diagnosis"
+   ],
+   "apartados": [
+    {
+     "titulo": "Síntoma",
+     "texto": "Los electroventiladores de refrigeración se activan y giran de forma ininterrumpida a su velocidad máxima desde el mismo instante en que se conecta el contacto de encendido del vehículo (pág. 86)."
+    },
+    {
+     "titulo": "Causas posibles",
+     "texto": "Activación de la función de emergencia de la electrónica del electroventilador por recepción de una señal PWM fuera del margen válido (proporción de periodo positivo inferior al 8% o superior al 95%) (pág. 86). Cortocircuito o derivación del cable de la señal de excitación a masa (GND) o a positivo (+12 V) (pág. 86). Avería detectada y memorizada en los componentes del circuito de refrigeración del motor o del sistema de climatización (pág. 86)."
+    },
+    {
+     "titulo": "Cómo separar las causas",
+     "texto": "Conectar la máquina de diagnosis al conector OBD del vehículo y consultar la memoria de averías de la unidad de control del motor y de la unidad de climatización para identificar el código registrado (pág. 86). Medir con osciloscopio o polímetro en el cable de señal PWM hacia la electrónica del ventilador para comprobar si la proporción de periodo positivo está fuera del margen del 8% al 95% o si la línea se encuentra derivada a masa o a positivo (+12 V) (pág. 86)."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Margen de periodo positivo de la señal PWM para funcionamiento normal: del 8% al 95% (pág. 86). Rango de señal PWM que desencadena la función de emergencia: menor del 8% o mayor del 95% (pág. 86)."
+    },
+    {
+     "titulo": "Verificación tras la reparación",
+     "texto": "Borrar la memoria de averías mediante la máquina de diagnosis y conectar el contacto verificando que los electroventiladores permanecen apagados en frío y que la señal PWM se mantiene dentro de los valores de trabajo especificados (pág. 86)."
     }
    ]
   }

@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">57 notas · 24/09/2026</p>
+  <p class="sidebar-meta">62 notas · 24/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -299,6 +299,12 @@
     <li><a href="#nt52">NT52 · Desmontaje y montaje del evaporador</a></li>
     <li><a href="#nt55">NT55 · Estrangulador</a></li>
     <li><a href="#nt57">NT57 · Depósito colector de líquido y deshidr</a></li>
+    <li><a href="#nt58">NT58 · Electroventilador</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
+    <li><a href="#nt59">NT59 · Unidad de control para los ventiladore</a></li>
+    <li><a href="#nt60">NT60 · Función de elevación de ralentí en ata</a></li>
+    <li><a href="#nt61">NT61 · Regulación continua de electroventilad</a></li>
+    <li><a href="#nt62">NT62 · Electroventiladores funcionando de for</a></li>
   </ul>
 </nav>
 
@@ -3194,8 +3200,194 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
     </div>
   </section>
 
+  <section id="nt58" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 58 </div>
+    <div class="nota-body">
+      <h1>Electroventilador</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Establecer una corriente de aire fresco a través del condensador y del radiador para forzar la circulación de aire cuando el aire de marcha es insuficiente, especialmente a baja velocidad o con el vehículo parado (pág. 83).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Al activar el climatizador y funcionar el compresor con una presión superior a 2 bares, la unidad de control activa la I velocidad de los electroventiladores (págs. 83-84). Si la presión en el circuito frigorífico alcanza los 16 bares o la temperatura del líquido refrigerante supera los 99 ºC, los ventiladores conmutan a la II velocidad (pág. 84). Cuando el climatizador está desconectado, el funcionamiento depende exclusivamente de la temperatura del refrigerante del motor (pág. 85).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Presión de activación de I velocidad (con A/A activado): superior a 2 bares en el circuito frigorífico (págs. 83-84).</li>
+<li>Temperatura de activación de I velocidad (sin A/A): entre 84 ºC y 98 ºC según el termocontacto del radiador (pág. 84).</li>
+<li>Presión de activación de II velocidad: superior a 16 bares en el circuito de alta del fluido refrigerante (pág. 84).</li>
+<li>Temperatura de activación de II velocidad: superior a 99 ºC (entre 99 ºC y 105 ºC) (pág. 84).</li>
+<li>Desactivación de II velocidad a I velocidad: cuando la presión cae por debajo de 16 bares y la temperatura de refrigerante desciende de 99 ºC (pág. 85).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Falta de funcionamiento de los electroventiladores por avería en relés, fusible de protección, cableado o electrónica de control (págs. 84-86).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Si los electroventiladores no funcionan al estar el vehículo parado, la presión de alta del circuito frigorífico sube de forma excesiva y el compresor se desconecta automáticamente por motivos de seguridad (pág. 85). El climatizador solo enfriará con el vehículo en circulación por efecto del aire de marcha y dejará de enfriar en cuanto el vehículo se detenga (pág. 85).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Se instalan uno, dos o hasta tres electroventiladores para garantizar la adecuada refrigeración de la climatización y del motor (pág. 83). Funcionan de manera combinada ofreciendo distintas etapas de rendimiento (I velocidad y II velocidad) (págs. 83-84).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">10. Electroventiladores.pdf, págs. 83-85</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt59" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 59 </div>
+    <div class="nota-body">
+      <h1>Unidad de control para los ventiladores de refrigeración</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Gestionar la activación de las distintas velocidades de los electroventiladores, controlar el acoplamiento magnético del compresor y supervisar la temperatura del sistema (págs. 83-85).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Recibe señales de entrada desde el termocontacto del radiador, el conmutador de presión (trinaria), el transmisor de alta presión (sensor MAP), el panel de mandos de la climatización y la red Can-Bus de datos (pág. 85). Procesa esta información para activar los relés de velocidad de los electroventiladores y la excitación del compresor, vigilar la temperatura del refrigerante, gestionar bombas de agua auxiliares e intercambiar información con la unidad de motor y de cambio automático (pág. 85).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Módulo o caja electrónica instalada en el compartimento motor (pág. 84). Integra en su interior los relés de conmutación de los electroventiladores, el relé de excitación del embrague del compresor, un fusible de protección y la electrónica de gestión (pág. 84).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">10. Electroventiladores.pdf, págs. 84-85</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt60" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 60 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Función de elevación de ralentí en atascos por baja potencia frigorífica</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>A velocidades inferiores a 5 km/h el régimen del motor se mantiene al ralentí, lo que reduce las revoluciones del compresor y disminuye la potencia frigorífica suministrada por el evaporador al habitáculo (pág. 85).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>La unidad de control de climatización monitoriza la potencia frigorífica mediante el sensor de temperatura de salida del evaporador (pág. 85). Si detecta que la potencia es insuficiente estando la activación del compresor al máximo (98%), envía un mensaje de solicitud a la red Can-Bus de confort (pág. 85). Al recibir este mensaje, la unidad de control del motor incrementa automáticamente las revoluciones de ralentí para aumentar la velocidad del compresor y mejorar su rendimiento frigorífico (pág. 85).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Grado de activación máxima del compresor para solicitar la función: 98% (pág. 85).</li>
+<li>Velocidad máxima del vehículo para habilitar la función: inferior a 5 km/h (pág. 85).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Incrementar el rendimiento del compresor y la capacidad de refrigeración del habitáculo durante la circulación a velocidad muy reducida o en retenciones de tráfico (pág. 85).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <ul>
+<li>Asumir que el aumento del ralentí en retenciones se debe únicamente a una elevación de la temperatura del motor, omitiendo que la propia unidad de climatización puede solicitarlo por falta de rendimiento en el evaporador (pág. 85).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">10. Electroventiladores.pdf, págs. 85</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt61" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 61 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Regulación continua de electroventiladores mediante señal PWM</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Control electrónico integrado en el propio cuerpo del electroventilador que interpreta una señal de excitación modulada en anchura de pulso (PWM) emitida por la unidad de control del motor (pág. 86).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>La unidad de control de climatización solicita la activación de los ventiladores mediante un mensaje en la línea Can-Bus de confort, en función de la carga del compresor y de la presión de refrigerante (pág. 85). La unidad de control del motor genera una señal PWM de frecuencia fija y proporción de periodo positivo variable hacia la electrónica del ventilador (pág. 86). A medida que aumenta el porcentaje de periodo positivo de la señal PWM, incrementa proporcionalmente la velocidad de giro de los electroventiladores (pág. 86). Si la proporción de periodo supera el 90%, los ventiladores funcionan a la máxima velocidad (pág. 86).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Frecuencia de la señal PWM: fija (pág. 86).</li>
+<li>Proporción de periodo positivo para máxima velocidad de giro (100%): superior al 90% (pág. 86).</li>
+<li>Umbrales de activación de la función de emergencia: señal PWM inferior al 8% o superior al 95% (pág. 86).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Ajustar de manera continua y progresiva la velocidad de giro de los electroventiladores en función de la demanda instantánea del motor y del sistema de climatización (págs. 85-86).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <ul>
+<li>Creer que este sistema emplea resistencias escalonadas de potencia para variar la velocidad en lugar de un módulo electrónico de regulación por señal PWM (págs. 85-86).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT61_01</code> Gráfica de la velocidad de los electroventiladores (%) frente a la proporción de periodo positivo (%) de la señal PWM y zona de función de emergencia — Fuente: 10. Electroventiladores.pdf, pág. 86</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">10. Electroventiladores.pdf, págs. 85-86</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt62" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 62 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Electroventiladores funcionando de forma continua a la máxima velocidad al conectar el contacto</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Margen de periodo positivo de la señal PWM para funcionamiento normal: del 8% al 95% (pág. 86).</li>
+<li>Rango de señal PWM que desencadena la función de emergencia: menor del 8% o mayor del 95% (pág. 86).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Los electroventiladores de refrigeración se activan y giran de forma ininterrumpida a su velocidad máxima desde el mismo instante en que se conecta el contacto de encendido del vehículo (pág. 86).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>Activación de la función de emergencia de la electrónica del electroventilador por recepción de una señal PWM fuera del margen válido (proporción de periodo positivo inferior al 8% o superior al 95%) (pág. 86).</li>
+<li>Cortocircuito o derivación del cable de la señal de excitación a masa (GND) o a positivo (+12 V) (pág. 86).</li>
+<li>Avería detectada y memorizada en los componentes del circuito de refrigeración del motor o del sistema de climatización (pág. 86).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo separar las causas</div>
+        <ul>
+<li>Conectar la máquina de diagnosis al conector OBD del vehículo y consultar la memoria de averías de la unidad de control del motor y de la unidad de climatización para identificar el código registrado (pág. 86).</li>
+<li>Medir con osciloscopio o polímetro en el cable de señal PWM hacia la electrónica del ventilador para comprobar si la proporción de periodo positivo está fuera del margen del 8% al 95% o si la línea se encuentra derivada a masa o a positivo (+12 V) (pág. 86).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación tras la reparación</div>
+        <ul>
+<li>Borrar la memoria de averías mediante la máquina de diagnosis y conectar el contacto verificando que los electroventiladores permanecen apagados en frío y que la señal PWM se mantiene dentro de los valores de trabajo especificados (pág. 86).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">10. Electroventiladores.pdf, págs. 86</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    57 notas técnicas · generado el 24/09/2026.
+    62 notas técnicas · generado el 24/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
