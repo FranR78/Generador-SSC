@@ -1,83 +1,86 @@
 ```yaml
-tipo: componente
-titulo: Unidad de control para la detección de ocupación del asiento J706
-entidad: unidad-control-deteccion-ocupacion-asiento
-area: confort-y-seguridad
-sistema: NUEVO-seguridad-pasiva
-codigo: J706
-fabricante: Audi
-fuente: "SSP 484 A7 Info y Clima (arrastrado) 3.pdf"
-paginas: "22-23"
-forma_parte_de: sistema-airbag
-relacionados: [sensor-ocupacion-asiento-g128, unidad-control-airbag-j234]
-palabras: [J706, detección de ocupación, bus LIN, cable coaxial, desactivación de airbag]
+tipo: fundamento
+titulo: Sistemas de climatización automática e interacción de entornos
+entidad: regulacion-automatica
+area: climatizacion
+sistema: control-climatizacion
+fabricante: Valeo
+fuente: "LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF"
+paginas: "1-7"
+relacionados: [unidad-control-climatizador, distribucion-aire]
+palabras: [climatización automática, confort térmico, temperatura de consigna, entornos del vehículo, tarjeta electrónica]
 ```
 
-## Misión
-Detectar la ocupación del asiento del acompañante y determinar si está ocupado por una silla infantil o por un adulto, transmitiendo esta información a la unidad de control del airbag J234 para activar o desactivar el airbag frontal del acompañante. (págs. 22-23).
+## Objeto
+Acondicionar el habitáculo del vehículo para alcanzar y mantener en su interior el confort térmico correspondiente a la temperatura de consigna seleccionada. (págs. 1-2)
 
-## Tipos y características
-Unidad de control electrónica montada debajo del asiento del acompañante delantero. Existen diferentes tipos de asientos y diferentes módulos de control de reconocimiento de ocupación, contando cada uno con un software adaptado específicamente a cada tipo de asiento. Se conecta mediante un cable coaxial con el sensor de ocupación G128 y mediante bus LIN con la unidad de control del airbag J234. (págs. 22-23).
+## Fundamento
+El sistema de climatización automática recopila datos y parámetros procedentes de diversos entornos funcionales del vehículo (habitáculo, salpicadero, conjunto A/C, motor térmico, circuito de calor y circuito de frío) para regular el funcionamiento de la instalación mediante una tarjeta electrónica o centralita. (págs. 1-6)
 
-## Principio de funcionamiento
-Mide de forma cíclica la variación de la capacidad eléctrica (capacitancia) del sensor del asiento G128. En función de este cambio de capacidad, determina si el asiento está ocupado por un adulto o por un asiento infantil. Envía esta información a través del bus LIN a la unidad de control del airbag J234, la cual activa o desactiva el airbag del acompañante e ilumina el testigo de advertencia de airbag del acompañante desactivado K145. (págs. 22-23).
+## Desarrollo
+El funcionamiento global del sistema se estructura mediante las interacciones de sus entornos funcionales:
+- **Habitáculo y salpicadero:** El aire soplado por los difusores se mezcla con el aire ambiente para alcanzar la temperatura de consigna. La calidad del aislamiento térmico, la temperatura inicial de las paredes y la conductividad térmica del salpicadero influyen directamente en el tiempo necesario para lograr la convergencia térmica. (págs. 1-2)
+- **Conjunto A/C (distribución de trampillas):** Enlaza el compartimento motor con el habitáculo. Alberga el radiador de calefacción, el evaporador, el impulsor de aire y las trampillas con sus correspondientes actuadores. (págs. 3, 5, 6)
+- **Motor térmico y circuitos térmicos:** El motor arrastra mediante correa el compresor y la bomba de líquido refrigerante. El circuito de calor aporta la energía térmica mediante el radiador de calefacción. (págs. 4, 5)
+- **Interacción de señales con la centralita:**
+  - *Sonda de habitáculo:* Informa de la temperatura interior instantánea para verificar si se ha alcanzado la consigna. (pág. 6)
+  - *Sondas de aire soplado y exterior:* Informan si la posición de la trampilla de mezcla es la adecuada para alcanzar la temperatura elegida, así como el caudal de aire y la distribución necesarios. (pág. 7)
+  - *Sonda del evaporador:* Informa si se está formando hielo en el evaporador para cortar el compresor en sistemas de cilindrada fija. (págs. 3, 7)
+  - *Presostato:* Informa de la presión en el circuito de fluido frigorífico. Si la presión es excesiva o demasiado baja, manda cortar el compresor; si excede de un cierto valor, conecta la segunda velocidad del GMV (electroventilador). (págs. 5, 7)
+  - *Termocontacto y módulo de refrigeración:* Conectan la segunda velocidad del GMV si la temperatura del líquido refrigerante es demasiado elevada en el radiador. (págs. 4, 7)
+  - *Módulo de inyección:* Informa si se produce una aceleración brusca para cortar el compresor y no restar potencia al motor, e incrementa el régimen de ralentí cuando el compresor está conectado para evitar que el motor se cale. (págs. 4, 7)
 
-📷 IMAGEN: Esquema de la unidad de control J706 bajo el asiento del acompañante, conectada al sensor G128, unidad J234 y testigo K145 — Fuente: SSP 484 A7 Info y Clima (arrastrado) 3.pdf, pág. 22
+📷 IMAGEN: Esquema general de interacciones entre los entornos del vehículo y la tarjeta electrónica del sistema de climatización — Fuente: LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, pág. 7
 
-## Valores de trabajo
-No documentado en fuentes. (págs. 22-23).
+## Valores de referencia
+No documentado en fuentes en las páginas 1-7.
 
-## Anomalías frecuentes
-No documentado en fuentes. (págs. 22-23).
-
-## Comportamiento en avería
-No documentado en fuentes. (págs. 22-23).
-
-## Cómo comprobarlo
-Consultar la Localización Guiada de Averías (Guided Fault Finding), el catálogo ETKA y la información técnica de servicio electrónica actual. (pág. 23).
-
-## Mantenimiento
-No documentado en fuentes. (págs. 22-23).
+## Errores de concepto frecuentes
+- Creer que la temperatura interior depende únicamente de la temperatura del aire soplado, omitiendo la influencia térmica inicial del salpicadero y de las paredes del habitáculo. (págs. 1-2)
+- Suponer que la centralita de climatización funciona de manera aislada sin comunicarse con los módulos electrónicos de inyección y refrigeración del motor. (págs. 4, 7)
 
 ---
 
 ```yaml
 tipo: componente
-titulo: Sensor de ocupación del asiento del acompañante G128
-entidad: sensor-ocupacion-asiento
-area: confort-y-seguridad
-sistema: NUEVO-seguridad-pasiva
-codigo: G128
-fabricante: Audi
-fuente: "SSP 484 A7 Info y Clima (arrastrado) 3.pdf"
-paginas: "22-23"
-forma_parte_de: unidad-control-deteccion-ocupacion-asiento
-relacionados: [unidad-control-deteccion-ocupacion-asiento, unidad-control-airbag-j234]
-palabras: [G128, sensor de ocupación, capacitancia, cable coaxial, cojín del asiento]
+titulo: Tarjeta electrónica de climatización
+entidad: unidad-control-climatizador
+area: climatizacion
+sistema: control-climatizacion
+fabricante: Valeo
+fuente: "LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF"
+paginas: "6-8"
+forma_parte_de: control-climatizacion
+relacionados: [regulacion-automatica, servomotor-trampilla]
+palabras: [tarjeta electrónica, centralita, calculador, señales de entrada, señales de salida, conexiones bidireccionales]
 ```
 
 ## Misión
-Captar la presencia y el tipo de ocupante en el asiento del acompañante delantero mediante la variación de su capacidad eléctrica (capacitancia). (págs. 22-23).
+Gobernar y coordinar automáticamente el funcionamiento del sistema de climatización procesando la información de las sondas y captadores para enviar órdenes de control a los actuadores, impulsor, compresor y electroventiladores. (págs. 6-8)
 
 ## Tipos y características
-Sensor de tipo capacitivo integrado en el cojín del asiento del acompañante delantero. Se conecta directamente a la unidad de control J706 mediante un cable coaxial a través del conector situado debajo del asiento. (págs. 22-23).
+Calculador o centralita electrónica ubicada habitualmente detrás de los mandos y de la pantalla del climatizador en el salpicadero. Dispone de canales de entrada, salidas de potencia e interfaces de comunicación bidireccionales. (págs. 6, 8)
 
 ## Principio de funcionamiento
-Modifica su capacidad eléctrica (capacitancia) en función de la masa y presión ejercidas sobre el cojín del asiento. Esta variación es medida cíclicamente por la unidad de control J706 a través del cable coaxial para discriminar entre un asiento infantil y un ocupante adulto. (págs. 22-23).
+Recibe las órdenes del usuario desde los mandos del cuadro y analiza de forma continua las señales de entrada procedentes de las sondas térmicas (habitáculo, exterior, aire soplado, evaporador) y del presostato. Con estos datos, emite señales de salida para posicionar los actuadores de las trampillas del conjunto de distribución, ajustar el caudal del impulsor de aire, acoplar o desacoplar el compresor y activar el electroventilador (GMV). Mantiene enlaces bidireccionales de intercambio de datos con los módulos electrónicos de inyección y refrigeración. (págs. 6-8)
+
+📷 IMAGEN: Esquema de la tarjeta electrónica identificando las entradas de sondas/presostato, salidas hacia actuadores/GMV/compresor y enlaces bidireccionales con inyección y refrigeración — Fuente: LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, pág. 8
 
 ## Valores de trabajo
-No documentado en fuentes. (págs. 22-23).
+No documentado en fuentes en las páginas 6-8.
 
 ## Anomalías frecuentes
-No documentado en fuentes. (págs. 22-23).
+No documentado en fuentes en las páginas 6-8.
 
 ## Comportamiento en avería
-No documentado en fuentes. (págs. 22-23).
+No documentado en fuentes en las páginas 6-8.
 
 ## Cómo comprobarlo
-Consultar la Localización Guiada de Averías (Guided Fault Finding) y la documentación técnica de servicio. (pág. 23).
+No documentado en fuentes en las páginas 6-8.
 
 ## Mantenimiento
-No documentado en fuentes. (págs. 22-23).
+No documentado en fuentes en las páginas 6-8.
 
-COBERTURA: documento «SSP 484 A7 Info y Clima (arrastrado) 3.pdf», páginas 22 a 23 de 23. [completo]
+---
+
+COBERTURA: documento «LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF», páginas 1 a 8 de 8. [completo]
