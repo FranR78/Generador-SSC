@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">442 notas · 24/09/2026</p>
+  <p class="sidebar-meta">447 notas · 24/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -249,8 +249,8 @@
     <li class="grupo"><span class="menu-grupo-titulo">Normativa y medioambiente</span></li>
     <li><a href="#nt1">NT1 · Certificación profesional para la mani</a></li>
     <li><a href="#nt2">NT2 · Efecto invernadero y cambio climático</a></li>
-    <li><a href="#nt3">NT3 · Protocolo de Kioto</a></li>
-    <li><a href="#nt4">NT4 · Agotamiento y destrucción de la capa d</a></li>
+    <li><a href="#grp-protocolo-kioto">Protocolo de Kioto <span class="menu-cuenta">2 fuentes</span></a></li>
+    <li><a href="#grp-agotamiento-capa-ozono">Agotamiento y destrucción de la capa de ozono <span class="menu-cuenta">2 fuentes</span></a></li>
     <li><a href="#nt5">NT5 · Protocolo de Montreal</a></li>
     <li><a href="#nt6">NT6 · Indicadores ambientales PAO y PCA</a></li>
     <li><a href="#nt7">NT7 · Reglamento (CE) nº 1005/2009 sobre sus</a></li>
@@ -491,6 +491,10 @@
     <li class="grupo"><span class="menu-grupo-titulo">POR CLASIFICAR</span></li>
     <li><a href="#nt440">NT440 · Ce0</a></li>
     <li><a href="#nt441">NT441 · Ce2</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Normativa y medioambiente</span></li>
+    <li><a href="#nt451">NT451 · Certificación para la manipulación de</a></li>
+    <li><a href="#nt454">NT454 · Indicadores ambientales PAO y PCA</a></li>
+    <li><a href="#nt455">NT455 · Directiva 2006/40/CE y Reglamento UE 5</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Fluidos frigoríficos</span></li>
     <li><a href="#nt1001">NT1001 · Agente frigorífico R134a</a></li>
   </ul>
@@ -587,6 +591,11 @@
     </div>
   </section>
 
+  <div class="grupo-componente" id="grp-protocolo-kioto">
+    <div class="grupo-cab"><span class="grupo-nombre">Protocolo de Kioto</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 2 · NT3 · 1. Impacto Ambiental.pdf, págs. 5</summary>
   <section id="nt3" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 3 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -632,7 +641,55 @@
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 2 · NT452 · Nº10. Autodidactico Diagonostico y climatización OCR.pdf, págs. 4-5</summary>
+  <section id="nt452" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 452 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Protocolo de Kioto y gases de efecto invernadero</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Acuerdo internacional firmado en 1997 dentro del Convenio Marco de Naciones Unidas sobre el Cambio Climático (CMNUCC), que entró en vigor en febrero de 2005. (pág. 5)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>El protocolo establece que los países industrializados deben reducir sus emisiones conjuntas de GEI en al menos un 5 % respecto a los niveles de 1990 durante el periodo 2008-2012 (asumiendo la Unión Europea una reducción del 8 %).</p>
+<p>El tratado regula seis gases principales responsables del efecto invernadero:</p>
+<ul>
+<li>Origen natural (incrementados por la actividad humana, agrícola o ganadera): Dióxido de Carbono (CO2), Metano (CH4) y Óxido Nitroso (N2O).</li>
+<li>Origen industrial (usados en la industria y como sustitutos de sustancias agotadoras de ozono): Hidrofluorocarbonos (HFC), Perfluorocarbonos (PFC) y Hexafluoruro de Azufre (SF6). (pág. 5)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Objetivo de reducción global de GEI en países industrializados: al menos 5 % respecto a 1990 (periodo 2008-2012).</li>
+<li>Objetivo de reducción para los Estados miembros de la UE: 8 % entre 2008 y 2012. (pág. 5)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Establecer compromisos internacionales obligatorios de reducción y limitación de las emisiones de Gases de Efecto Invernadero (GEI) para frenar el calentamiento global. (pág. 5)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <p>Considerar que los HFC usados en climatización son inocuos porque no dañan la capa de ozono. Aunque su PAO es cero, los HFC son gases de efecto invernadero regulados por el Protocolo de Kioto debido a su elevado potencial de calentamiento. (pág. 5)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Nº10. Autodidactico Diagonostico y climatización OCR.pdf, págs. 4-5</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
+  <div class="grupo-componente" id="grp-agotamiento-capa-ozono">
+    <div class="grupo-cab"><span class="grupo-nombre">Agotamiento y destrucción de la capa de ozono</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 2 · NT4 · 1. Impacto Ambiental.pdf, págs. 6-8</summary>
   <section id="nt4" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 4 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -690,6 +747,49 @@
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 2 · NT453 · Nº10. Autodidactico Diagonostico y climatización OCR.pdf, págs. 6-9</summary>
+  <section id="nt453" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 453 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Agotamiento de la capa de ozono y Protocolo de Montreal</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El ozono estratosférico (O3), situado entre los 15 y 50 km de altura, filtra la radiación ultravioleta nociva (UV-B y UV-C). La emisión de halocarbonos, especialmente Clorofluorocarbonos (CFC), destruye las moléculas de ozono mediante la liberación de átomos de cloro activados por la radiación solar. (págs. 6-7)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>El proceso de destrucción se inicia cuando la radiación UV separa un átomo de cloro de la molécula de CFC; este átomo de cloro choca contra el ozono (O3), le roba un átomo de oxígeno y forma monóxido de cloro y O2, destruyendo el filtro protector.</p>
+<p>El Protocolo de Montreal (firmado en 1987, en vigor desde 1989) fijó la eliminación gradual de los CFC, halones y otras SAO. La Unión Europea aplicó este tratado mediante el Reglamento CE 2037/2000 y posteriormente el Reglamento CE 1005/2009, prohibiendo la fabricación, comercialización y uso de CFCs y regulando la sustitución gradual de los HCFCs. (págs. 6, 9)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Ubicación de la capa de ozono estratosférica: entre 15 y 50 km sobre la superficie terrestre.</li>
+<li>Absorción de radiación ultravioleta en la estratosfera: atrapa hasta el 99 % de los rayos UV. (págs. 6, 8)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Proteger la capa de ozono estratosférica prohibiendo y reduciendo gradualmente la producción y consumo de Sustancias que Agotan la Capa de Ozono (SAO). (págs. 6, 9)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <p>Confundir el ozono estratosférico con el ozono troposférico. El ozono en la troposfera (nivel del suelo) es un contaminante peligroso producido por la polución de los motores diésel en días soleados, mientras que en la estratosfera es la capa protectora imprescindible para la vida. (pág. 6)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT453_01</code> Esquema del mecanismo de destrucción de la molécula de ozono por un átomo de cloro separado por rayos UV — Fuente: Nº10. Autodidactico Diagonostico y climatización OCR.pdf, pág. 6</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Nº10. Autodidactico Diagonostico y climatización OCR.pdf, págs. 6-9</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
   <section id="nt5" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 5 <span class="subtipo">Fundamento</span></div>
@@ -22018,6 +22118,136 @@ Se montan 4 unidades por asiento:</p>
     </div>
   </section>
 
+  <section id="nt451" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 451 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Certificación para la manipulación de gases fluorados</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El Real Decreto 115/2017 establece los requisitos de habilitación profesional y las condiciones de instalación, mantenimiento, revisión, control de fugas, carga y recuperación de refrigerantes fluorados en sistemas de confort térmico de vehículos. (págs. 1-2)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>La certificación habilita para la instalación, mantenimiento, revisión (incluidos control de fugas, carga y recuperación) y manipulación de contenedores de gas en turismos, autobuses, vehículos industriales y agrícolas (quedando excluidos ferrocarriles, embarcaciones y aeronaves).</p>
+<p>Para obtener la certificación existen tres vías:</p>
+<ol>
+<li>Superar un curso de formación específico de 44 horas de duración (28 horas a distancia y 16 horas presenciales).</li>
+<li>Poseer un título de Formación Profesional de Grado Medio o Superior que cubra las competencias mínimas.</li>
+<li>Poseer una titulación universitaria equivalente.</li>
+</ol>
+<p>Los certificados son personales, con validez en todo el territorio español y de la Unión Europea, sin límite de capacidad del equipo. Los profesionales que obtuvieron la certificación con el RD 795/2010 anterior a febrero de 2017 deben realizar una formación complementaria sobre tecnologías alternativas y manipulación segura en un plazo inferior a 4 años. (págs. 1-2)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Duración del curso específico: 44 horas (28 h a distancia + 16 h presenciales).</li>
+<li>Plazo de formación complementaria para certificados anteriores a 2017: inferior a 4 años. (págs. 1-2)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Regular la comercialización y manipulación de gases fluorados y equipos basados en ellos, así como la certificación técnica obligatoria de los profesionales del taller. (pág. 1)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <p>Creer que el certificado de manipulación tiene límites según el tamaño del vehículo. El certificado habilita para trabajar en climatización de vehículos sin límite de capacidad de carga. (pág. 2)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Nº10. Autodidactico Diagonostico y climatización OCR.pdf, págs. 1-2</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt454" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 454 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Indicadores ambientales PAO y PCA</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li>PAO (Potencial de Agotamiento de Ozono) / ODP: relación de la pérdida global de ozono producida por una sustancia respecto al R11 (tomado como valor 1,0).</li>
+<li>PCA (Potencial de Calentamiento Atmosférico) / GWP: índice que mide la capacidad de una sustancia para contribuir al efecto invernadero en un periodo de 100 años respecto al CO2 (al que se asigna valor 1). (pág. 10)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>Cuanto menores sean los valores de PAO y PCA, menor es el impacto del refrigerante sobre el medio ambiente.
+La presencia de cloro o bromo eleva el PAO. Los HFC y HFO carecen de cloro y bromo, por lo que su PAO es cero.</p>
+<p>Valores comparativos de refrigerantes:</p>
+<ul>
+<li>R12 (CFC): PAO = 1,0 · PCA = 8.100.</li>
+<li>R22 (HCFC): PAO = 0,05.</li>
+<li>R134a (HFC): PAO = 0 · PCA = 1.430.</li>
+<li>R152a (HFC): PAO = 0 · PCA = 124.</li>
+<li>R1234yf (HFO): PAO = 0 · PCA = 4.</li>
+<li>CO2 (R744): PAO = 0 · PCA = 1.</li>
+</ul>
+<p>El impacto global de un gas depende tanto de su indicador PCA como de la cantidad total emitida (Impacto global = PCA × cantidad emitida). (pág. 10)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Referencia de PAO: R11 = 1,0 (CFC-12 = 1,0; R134a = 0).</li>
+<li>Referencia de PCA: CO2 = 1 (R12 = 8.100; R134a = 1.430; R1234yf = 4). (pág. 10)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Medir de forma estandarizada el impacto ambiental de cada fluido refrigerante sobre el agotamiento del ozono y sobre el calentamiento global de la atmósfera. (pág. 10)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <p>Evaluar el daño ambiental de un gas atendiendo únicamente a su valor de PCA. Un gas con PCA bajo pero emitido en volúmenes masivos (como el CO2) puede tener un impacto global muy superior al de gases con PCA elevado emitidos en cantidades pequeñas. (pág. 10)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Nº10. Autodidactico Diagonostico y climatización OCR.pdf, págs. 10</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt455" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 455 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Directiva 2006/40/CE y Reglamento UE 517/2014 sobre climatización en automóviles</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>La Directiva 2006/40/CE (sobre emisiones en AC de vehículos M1 y N1) y el Reglamento UE 517/2014 (Reglamento F-Gas) establecen límites de PCA para los refrigerantes y normas sobre contención, recuperación y prohibiciones de comercialización. (págs. 11-13)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>La Directiva 2006/40/CE prohíbe la instalación de sistemas de aire acondicionado diseñados para contener gases fluorados con un PCA superior a.</p>
+<ul>
+<li>Aplica a la homologación de nuevos tipos de vehículos a partir del 1 de enero de 2011.</li>
+<li>Aplica a todos los vehículos nuevos fabricados/matriculados a partir del 1 de enero de 2017.</li>
+</ul>
+<p>Como consecuencia, el refrigerante R134a (PCA = 1.430) dejó de instalarse en vehículos nuevos fabricados desde el 1 de enero de 2017. No obstante, se permite continuar realizando la recarga de R134a en aquellos vehículos matriculados antes de esa fecha que lo llevaban instalado de serie.</p>
+<p>El Reglamento UE 517/2014 obliga a la recuperación de los gases fluorados por personal certificado, exige la prevención de fugas y prohíbe explícitamente recargar el climatizador si se detecta una fuga anormal hasta que no haya sido reparada. (págs. 11-14)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Límite máximo de PCA permitido para refrigerantes en vehículos nuevos: PCA &lt; 150.</li>
+<li>Fecha límite de homologación de nuevos modelos con PCA &gt; 150: 1 de enero de 2011.</li>
+<li>Fecha límite de fabricación/matriculación de todo vehículo nuevo con R134a: 1 de enero de 2017. (págs. 11-14)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Prohibir progresivamente la utilización de gases fluorados con alto potencial de calentamiento atmosférico en los sistemas de aire acondicionado de los automóviles nuevos. (págs. 11-13)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <p>Creer que el gas R134a está totalmente prohibido en el taller. Está prohibido en vehículos de nueva matriculación desde 2017, pero sigue estando totalmente autorizado para recargar y mantener vehículos matriculados antes de 2017 que equiparan R134a de serie. (págs. 12, 14)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Nº10. Autodidactico Diagonostico y climatización OCR.pdf, págs. 11-14</p>
+      </div>
+    </div>
+  </section>
+
   <section id="nt1001" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 1001 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -22290,7 +22520,7 @@ Se montan 4 unidades por asiento:</p>
   </section>
 
   <div class="pie">
-    442 notas técnicas · generado el 24/09/2026.
+    447 notas técnicas · generado el 24/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
