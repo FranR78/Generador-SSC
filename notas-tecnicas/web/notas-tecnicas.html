@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">501 notas · 24/09/2026</p>
+  <p class="sidebar-meta">508 notas · 24/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -514,6 +514,20 @@
     <li><a href="#nt483">NT483 · Protocolo de servicio y reglas de oro</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Distribución de aire</span></li>
     <li><a href="#nt500">NT500 · Malos olores en el habitáculo</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Cierre y bloqueo</span></li>
+    <li><a href="#nt510">NT510 · Cierre centralizado en la red de a bor</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Elevalunas</span></li>
+    <li><a href="#nt511">NT511 · Elevalunas eléctricos y funciones de c</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Alarma antirrobo</span></li>
+    <li><a href="#nt512">NT512 · Sistema de alarma antirrobo</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Retrovisores</span></li>
+    <li><a href="#nt513">NT513 · Espejos retrovisores exteriores</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Inmovilizador</span></li>
+    <li><a href="#nt514">NT514 · Inmovilizador electrónico 5C</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Techo panoramico</span></li>
+    <li><a href="#nt515">NT515 · Techo panorámico deflector y corredizo</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Equipo remolque</span></li>
+    <li><a href="#nt516">NT516 · Unidad de control para detecci J345</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Fluidos frigoríficos</span></li>
     <li><a href="#nt1001">NT1001 · Agente frigorífico R134a</a></li>
   </ul>
@@ -24968,6 +24982,311 @@ La presencia de cloro o bromo eleva el PAO. Los HFC y HFO carecen de cloro y bro
     </div>
   </section>
 
+  <section id="nt510" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 510 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
+    <div class="nota-body proceso">
+      <h1>Cierre centralizado en la red de a bordo</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>La unidad de control de la red de a bordo J519 actúa como unidad maestra y coordina las funciones del cierre centralizado procesando señales de la llave, sensores de choque, ABS e interruptores. (págs. 39-41)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>El cierre centralizado asume las siguientes funciones:</p>
+<ul>
+<li>Bloqueo simple o SAFE: se realiza al recibir señales del mando a distancia, cerradura de puerta o unidad J518 (acceso y arranque).</li>
+<li>Bloqueo por velocidad: se activa al superar los 15 km/h con la señal de velocidad enviada por la UCE del ABS J104 a través del CAN-Bus.</li>
+<li>Bloqueo automático: si tras desbloquear con el mando no se abre ninguna puerta en 45 segundos, las puertas se vuelven a bloquear de forma automática.</li>
+<li>Desbloqueo por borne S: desbloquea las cerraduras al extraer la llave del conmutador de encendido tras haber conectado el contacto.</li>
+<li>Desbloqueo por activación del airbag: recibe por CAN-Bus la señal de colisión de la UCE del airbag J234 y desbloquea inmediatamente todas las puertas.</li>
+<li>Desbloqueo del portón: accionado por el conmutador E165.</li>
+<li>Avisos de confirmación: la UCE J519 realiza 1 destello de intermitentes al bloquear y 2 destellos al desbloquear. (págs. 39-41)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Umbral de velocidad para bloqueo automático: mayor a 15 km/h.</li>
+<li>Tiempo para rebloqueo automático sin apertura de puerta: 45 segundos.</li>
+<li>Destellos de confirmación de intermitentes: 1 destello al bloquear / 2 destellos al desbloquear. (págs. 39-40)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Gestionar el bloqueo y desbloqueo de las puertas y portón del vehículo bajo diversas condiciones de seguridad e interacción del usuario. (pág. 39)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <p>Creer que el desbloqueo por impacto requiere una conexión cableada directa entre la UCE de airbag y las cerraduras. La señal de colisión se transmite digitalmente a través de la red CAN-Bus a la unidad J519. (págs. 39-41)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT510_01</code> Esquema del circuito del cierre centralizado con UCE J519, unidades de cierre VX21 a VX25 e interconexión CAN-Bus — Fuente: SSP 168 SISTEMA ELÉCTRICO Confort.pdf, pág. 40</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">SSP 168 SISTEMA ELÉCTRICO Confort.pdf, págs. 39-41</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt511" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 511 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
+    <div class="nota-body proceso">
+      <h1>Elevalunas eléctricos y funciones de confort</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Las unidades de control de puerta (J386, J387, J388, J389) comunican los cambios de estado de los conmutadores a la UCE de red de a bordo J519 mediante el LIN-Bus puertas, autorizando J519 la subida o bajada. (págs. 42-43)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>El sistema abarca las siguientes funciones:</p>
+<ul>
+<li>Subida y bajada: comandada desde los pulsadores de las puertas bajo autorización de la UCE J519.</li>
+<li>Normalización: proceso de aprendizaje mediante el cual las UCEs de puerta reconocen los topes mecánicos superior e inferior. Se realiza subiendo manualmente el cristal al tope superior, liberando el pulsador y volviéndolo a mantener en subida unos segundos, para ejecutar luego una bajada automática.</li>
+<li>Apertura y cierre de confort: permite subir o bajar todos los cristales desde la cerradura, mando a distancia o manilla con sistema sin llave (requiere haber realizado la normalización previa).</li>
+<li>Antiaprisionamiento: detiene e invierte la subida del cristal al detectar un obstáculo (requiere normalización previa).</li>
+<li>Bloqueo de elevalunas traseros: accionado desde la puerta del conductor (iluminado en amarillo). La UCE J519 recibe las peticiones de las puertas traseras pero deniega la autorización de movimiento.</li>
+<li>Protección térmica: cálculo interno en la UCE de puerta que bloquea el motor en su posición hasta que la temperatura calculada sea segura.</li>
+<li>Función de emergencia: en caso de avería o corte de la línea LIN-Bus, se anulan las funciones centralizadas y solo es posible accionar cada elevalunas desde su propia puerta. (págs. 42-43)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Gobernar el movimiento de los cristales de las puertas garantizando la protección antiaprisionamiento, el confort de manejo y la seguridad térmica de los motores. (págs. 42-43)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <p>Pensar que si se interrumpe el LIN-Bus los elevalunas quedan totalmente inoperativos. En modo de emergencia, cada cristal se puede seguir accionando localmente desde el pulsador de su propia puerta. (pág. 43)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT511_01</code> Esquema del sistema de elevalunas eléctricos con red LIN-Bus puertas y unidades de control J386-J389 — Fuente: SSP 168 SISTEMA ELÉCTRICO Confort.pdf, pág. 43</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">SSP 168 SISTEMA ELÉCTRICO Confort.pdf, págs. 42-43</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt512" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 512 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
+    <div class="nota-body proceso">
+      <h1>Sistema de alarma antirrobo</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>La UCE de la red de a bordo J519 monitoriza los sensores de habitáculo, inclinación, conmutadores de accesos y la continuidad de la bocina H12 por LIN-Bus. (pág. 44)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>El sistema integra las siguientes funciones de vigilancia:</p>
+<ul>
+<li>Vigilancia del habitáculo y protección contra remolcado: realizadas mediante el sensor G273. La vigilancia del habitáculo utiliza tecnología de ultrasonidos, mientras que la protección contra remolcado emplea un sensor capacitivo que actúa como acelerómetro de inclinación.</li>
+<li>Vigilancia de aperturas: supervisa el estado de puertas, maletero y capó delantero mediante sus respectivos conmutadores de contacto.</li>
+<li>Vigilancia de la bocina H12: realiza verificaciones continuas por la línea serie LIN-Bus de la bocina de alarma.</li>
+<li>Disparo de alarma: ante cualquier anomalía detectada, la UCE J519 activa cíclicamente la bocina H12 y las lámparas de los intermitentes. (pág. 44)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Detectar e indicar intentos de intrusión, remolcado no autorizado o apertura de accesos en el vehículo. (pág. 44)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <p>Creer que el sensor de remolcado utiliza un interruptor de mercurio o péndulo físico. Emplea un sensor capacitivo integrado que funciona como acelerómetro para medir variaciones de inclinación. (pág. 44)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT512_01</code> Esquema eléctrico de la alarma antirrobo con sensor G273, bocina H8/H12 en LIN-Bus y conexiones a J519 — Fuente: SSP 168 SISTEMA ELÉCTRICO Confort.pdf, pág. 44</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">SSP 168 SISTEMA ELÉCTRICO Confort.pdf, págs. 44</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt513" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 513 <span class="fusionado">SEAT</span></div>
+    <div class="nota-body">
+      <h1>Espejos retrovisores exteriores</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Proporcionar visibilidad trasera al conductor permitiendo la regulación eléctrica de los espejos, su desempañado térmico y el plegado del conjunto. (pág. 45)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li>Calefacción: se conecta conjuntamente con la luneta térmica Z1 y la gobierna la UCE de la red de a bordo J519 controlando el positivo y la masa de los cristales térmicos.</li>
+<li>Regulación: ajusta la orientación del cristal mediante motores eléctricos internos. En versión "Min" accionados por E43; en versión "Max" accionados por J386/J387.</li>
+<li>Plegado: exclusivo de la versión "Max", repliega eléctricamente la carcasa del retrovisor hacia la carrocería. (pág. 45)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Existen dos equipamientos según la versión de las UCEs de puerta:</p>
+<ul>
+<li>Versión "Min": no admite plegado eléctrico. La regulación eléctrica se alimenta directamente desde el conmutador E43.</li>
+<li>Versión "Max": admite plegado eléctrico. La regulación y el plegado los alimentan las UCEs de las puertas delanteras J386 y J387. (págs. 38, 45)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT513_01</code> Esquema del sistema de retrovisores exteriores con conmutador E43 y UCEs de puerta J386/J387 — Fuente: SSP 168 SISTEMA ELÉCTRICO Confort.pdf, pág. 45</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">SSP 168 SISTEMA ELÉCTRICO Confort.pdf, págs. 45</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt514" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 514 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
+    <div class="nota-body proceso">
+      <h1>Inmovilizador electrónico 5C</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Generación de inmovilizador que evoluciona respecto a la 5A incorporando un nuevo transponder en las llaves y mayor robustez criptográfica. El cuadro de instrumentos J285 actúa como UCE maestra y valida las UCEs esclavas antes de autorizar el arranque. (págs. 49-50)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>Estructura de componentes:</p>
+<ul>
+<li>UCE Maestra: Cuadro de instrumentos J285.</li>
+<li>UCEs Esclavas: UCE de motor J623, UCE mecatrónica del cambio DSG J743 y actuador de bloqueo de la columna de dirección N360.</li>
+<li>Elementos de lectura: Bobina lectora D2 y transponder integrado en la llave con mando.</li>
+</ul>
+<p>Diagnóstico y valores de medición (Código de dirección 17 - Cuadro de instrumentos):</p>
+<ul>
+<li>Estado de la UCE Maestra: código hexadecimal de 20 cifras.<ul>
+<li>Dígitos: Estado del inmovilizador (1: virgen, 2: adaptado, 3: adaptando llaves).</li>
+<li>Dígitos: Contador de nuevas identidades.</li>
+<li>Dígitos: Número de llaves adaptadas.</li>
+<li>Dígitos: Tiempo restante para conectar borne 15 tras un bloqueo.</li>
+<li>Dígitos: Tiempo de bloqueo para descarga en servidor FAZIT.</li>
+<li>Dígitos: Tiempo de bloqueo en minutos para acceso GeKo.</li>
+</ul>
+</li>
+<li>Estado de UCEs Esclavas: código hexadecimal de 2 cifras convertible a binario de 8 cifras para verificar si está codificada, adaptada, si responde a solicitudes y si posee firma digital y contraseña válidas. (págs. 49-51)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Código de dirección de diagnosis: 17 (Cuadro de instrumentos).</li>
+<li>Valores de estado del inmovilizador (dígitos 1-2): 1 = virgen, 2 = adaptado, 3 = adaptando llaves. (págs. 50-51)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Impedir el arranque del motor y la puesta en marcha del vehículo a personas no autorizadas mediante una arquitectura de seguridad digital criptográfica. (págs. 49-50)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <p>Creer que el inmovilizador solo bloquea la UCE del motor. En el inmovilizador 5C, la mecatrónica del cambio DSG (J743) y el bloqueo de la columna (N360) son UCEs esclavas que deben autenticarse de forma independiente ante el cuadro J285. (pág. 50)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT514_01</code> Esquema de la red de componentes del inmovilizador 5C con J285, J623, J743, N360 y D2 — Fuente: SSP 168 SISTEMA ELÉCTRICO Confort.pdf, pág. 49</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">SSP 168 SISTEMA ELÉCTRICO Confort.pdf, págs. 49-51</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt515" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 515 <span class="fusionado">SEAT</span></div>
+    <div class="nota-body">
+      <h1>Techo panorámico deflector y corredizo</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Proporcionar iluminación natural y ventilación al habitáculo mediante un cristal deflector y corredizo de accionamiento eléctrico. (págs. 52-53)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>El motor V1 contiene internamente 2 sensores Hall enfrentados al eje y decalados entre sí, lo que permite a la UCE J245 reconocer la posición exacta y el sentido de giro del cristal.</p>
+<ul>
+<li>Apertura y cierre: comandados desde el conmutador E8.</li>
+<li>Normalización: se realiza cerrando por completo el techo y manteniendo accionado el conmutador E8 en posición de cierre. Es imprescindible para habilitar las funciones confort y antiaprisionamiento.</li>
+<li>Apertura/cierre de confort: ejecutados por la UCE J245 tras recibir la orden de J519 conjuntamente con los elevalunas.</li>
+<li>Antiaprisionamiento: si detecta un obstáculo durante el cierre, invierte inmediatamente la marcha y abre el techo. Si se intenta cerrar de nuevo en los siguientes 5 segundos, la función antiaprisionamiento queda desactivada. (págs. 52-53)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Intervalo de anulación del antiaprisionamiento tras reacondicionamiento: 5 segundos. (pág. 53)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Si se pierde la normalización, se anulan automáticamente la apertura/cierre de confort y el antiaprisionamiento. (pág. 53)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Sistema electromecánico compuesto por la UCE para techo corredizo J245 (conectada al CAN-Bus Confort) y el motor eléctrico V1 como dos componentes independientes ubicados en la parte trasera del techo. (pág. 52)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <p>Realizar el proceso de normalización mediante el conmutador E8 tras intervenciones eléctricas o mecánicas. (pág. 53)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT515_01</code> Ubicación de la UCE J245, motor V1 y conmutador E8 en el techo panorámico — Fuente: SSP 168 SISTEMA ELÉCTRICO Confort.pdf, pág. 52</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">SSP 168 SISTEMA ELÉCTRICO Confort.pdf, págs. 52-53</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt516" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 516 <span class="fusionado">SEAT</span></div>
+    <div class="nota-body">
+      <h1>Unidad de control para detección del remolque J345 — <strong>J345</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Detectar la conexión eléctrica de un remolque e informar a la red de a bordo para adaptar el funcionamiento de los sistemas de seguridad, motor, alumbrado y asistencia del vehículo. (pág. 54)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Al conectar un remolque en la toma U10, la J345 lo detecta e emite un mensaje por la red CAN-Bus. Las distintas UCEs reaccionan adaptando sus funciones:</p>
+<ul>
+<li>UCE de red de a bordo J519: desactiva las luces antiniebla traseras del vehículo, activa los pilotos del remolque y supervisa sus lámparas.</li>
+<li>UCE del ABS J104: activa la función de estabilización del conjunto vehículo-remolque (TSA).</li>
+<li>UCE de motor J623: ajusta los mapas de inyección para compensar el incremento de masa del vehículo.</li>
+<li>UCE de ayuda al aparcamiento J446: desconecta automáticamente los sensores de aparcamiento traseros.</li>
+<li>UCEs de detección de ángulo muerto J1086 y J1087: se desactivan temporalmente. (pág. 54)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Verificar la presencia del código de avería en el diagnóstico del CAN-Bus Confort y comprobar la señal de detección al insertar la clavija en la toma U10. (pág. 54)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Unidad de control electrónica conectada al CAN-Bus Confort e interconectada con la toma de corriente para remolque U10. (pág. 54)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <p>No requiere. (pág. 54)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT516_01</code> Esquema de interconexión vía CAN-Bus de la UCE J345 con J519, J104, J623, J446 e interfaz J533 — Fuente: SSP 168 SISTEMA ELÉCTRICO Confort.pdf, pág. 54</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">SSP 168 SISTEMA ELÉCTRICO Confort.pdf, págs. 54</p>
+      </div>
+    </div>
+  </section>
+
   <section id="nt1001" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 1001 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -25240,7 +25559,7 @@ La presencia de cloro o bromo eleva el PAO. Los HFC y HFO carecen de cloro y bro
   </section>
 
   <div class="pie">
-    501 notas técnicas · generado el 24/09/2026.
+    508 notas técnicas · generado el 24/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
