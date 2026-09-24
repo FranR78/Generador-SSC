@@ -4,7 +4,9 @@
 clima:
   - agrupacion-resistencias   # Agrupación de resistencias en serie, paralelo y mixta
   - ajuste-basico-climatizador   # Ajuste básico del climatizador
+  - autodiagnostico-calefaccion-independiente   # Autodiagnóstico de la calefacción independiente
   - bomba-calor-climatizacion   # Climatización por bomba de calor en vehículos eléctricos
+  - bujia-precalentamiento-calefaccion   # Bujía de precalentamiento para calefacción
   - capa-ozono-protocolo-montreal   # Protección de la capa de ozono y Protocolo de Montreal
   - certificacion-gases-fluorados   # Certificación profesional para la manipulación de gases fluorados en vehículos
   - ciclo-frigorifico-r744   # Circuito de climatización con CO2 (R744) y ciclo frigorífico supercrítico
@@ -32,6 +34,7 @@ clima:
   - exceso-refrigerante   # Diagnóstico por exceso de fluido refrigerante mediante lectura de manómetros
   - falta-refrigerante   # Diagnóstico por falta de fluido refrigerante mediante lectura de manómetros
   - filtro-habitaculo   # Filtro de habitáculo
+  - guardallamas   # Guardallamas
   - identificacion-compatibilidad-equipos-carga   # Identificación y compatibilidad de equipos de carga por refrigerante
   - indicadores-ambientales-pao-pca   # Indicadores ambientales PAO y PCA
   - intensidad-corriente-electrica   # Intensidad de corriente eléctrica
@@ -55,9 +58,12 @@ clima:
   - resistencia-electrica   # Resistencia eléctrica
   - ruidos-compresor   # Diagnóstico de ruidos en el compresor de aire acondicionado
   - seguridad-y-precauciones-climatizacion   # Precauciones de seguridad, prohibición de soldadura y contaminación en climatización
+  - sensor-temperatura-calefactor   # Termosensor de temperatura del calefactor
+  - sensor-temperatura-calefactor-2   # Termosensor 2 para calefactor y calefacción independiente
   - sensor-temperatura-motor   # Termoconmutador para la temperatura de refrigerante
   - silenciador-deposito-receptor   # Silenciador-depósito receptor
   - sustitucion-compresor-y-lavado-circuito   # Sustitución de un compresor nuevo y preparación del circuito
   - tension-electrica-voltaje   # Tensión eléctrica o voltaje
   - tipos-corriente-automovil   # Tipos de corriente eléctrica en el automóvil
+  - turbina-aire-combustion   # Turbina de aire de combustión
   - unidad-control-ventiladores   # Unidad de control para los ventiladores de refrigeración
