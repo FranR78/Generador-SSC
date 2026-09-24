@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">166 notas · 24/09/2026</p>
+  <p class="sidebar-meta">170 notas · 24/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -272,7 +272,7 @@
     <li><a href="#grp-regulacion-automatica">Sistemas y opciones de climatización en el automóvil <span class="menu-cuenta">9 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Fluidos frigoríficos</span></li>
     <li><a href="#nt21">NT21 · Agente frigorífico R12</a></li>
-    <li><a href="#nt22">NT22 · Agente frigorífico R134a</a></li>
+    <li><a href="#grp-refrigerante-r134a">Agente frigorífico R134a <span class="menu-cuenta">2 fuentes</span></a></li>
     <li><a href="#grp-refrigerante-r1234yf">Agente frigorífico R1234yf <span class="menu-cuenta">2 fuentes</span></a></li>
     <li><a href="#grp-refrigerante-r744">Agente frigorífico R744 (dióxido de carbono) <span class="menu-cuenta">2 fuentes</span></a></li>
     <li><a href="#grp-aceite-frigorifico">Aceite PAG (Polialquilenglicol) <span class="menu-cuenta">3 fuentes</span></a></li>
@@ -336,7 +336,7 @@
     <li><a href="#nt85">NT85 · Diagnóstico de ruidos en el compresor</a></li>
     <li><a href="#nt86">NT86 · Sustitución de un compresor nuevo y pr</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
-    <li><a href="#nt87">NT87 · Autodiagnóstico del sistema de climati</a></li>
+    <li><a href="#grp-autodiagnostico-climatizador">Autodiagnóstico del sistema de climatización automática mediante equipo OBD <span class="menu-cuenta">2 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Normativa y medioambiente</span></li>
     <li><a href="#nt88">NT88 · Normativa de gases fluorados y regulac</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
@@ -383,6 +383,8 @@
     <li><a href="#nt146">NT146 · Normativa europea de gases fluorados e</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
     <li><a href="#nt151">NT151 · Estrés climatológico y márgenes de agr</a></li>
+    <li><a href="#nt169">NT169 · Diagnosis de actuadores del climatizad</a></li>
+    <li><a href="#nt170">NT170 · Ajuste básico del climatizador</a></li>
   </ul>
 </nav>
 
@@ -2537,6 +2539,11 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
     </div>
   </section>
 
+  <div class="grupo-componente" id="grp-refrigerante-r134a">
+    <div class="grupo-cab"><span class="grupo-nombre">Agente frigorífico R134a</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 2 · NT22 · 3. Refrigerantes.pdf, págs. 24-27</summary>
   <section id="nt22" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 22 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -2586,6 +2593,42 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 2 · NT167 · Audi A5 Coupé_2008_aire acondicionado.pdf, págs. 1-4</summary>
+  <section id="nt167" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 167 <span class="subtipo">Fluido</span></div>
+    <div class="nota-body">
+      <h1>Refrigerante R134a</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Designación y norma</div>
+        <p>Tetrafluoretano (CF3-CH2F o CH2F-CF3). Se conoce bajo las denominaciones comerciales R134a, H-FKW 134a, SUVA 134a y KLEA 134a. (págs. 1-2).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Dónde se usa y cantidades</div>
+        <p>Se utiliza como agente frigorífico en los grupos y en el sistema de conducciones del aire acondicionado del vehículo. El tipo de agente y la cantidad de llenado exacta vienen especificados en una placa colocada en el vano motor. (págs. 1, 4).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <p>Se identifica mediante una placa colocada en el vano motor que indica el tipo de agente frigorífico utilizado y la cantidad de llenado. (pág. 4).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Manipulación, almacenamiento y residuos</div>
+        <p>Antes de abrir el circuito frigorífico para trabajos de reparación, es obligatorio vaciar el circuito. Se debe evitar el contacto con el agente frigorífico líquido o sus vapores. Si se fugara gas, la mezcla de agente frigorífico y aire no se debe inhalar y se debe extraer mediante un equipo de aspiración de gases de taller adecuado.
+Está prohibido realizar trabajos de soldadura (dura o blanda) en componentes de un acondicionador de aire lleno o en zonas del vehículo que provoquen el calentamiento del climatizador. En trabajos de pintado de reparación, la temperatura del objeto no debe superar los 80 ºC en el horno de secado o en la zona de precalentamiento. Si los componentes permanecen abiertos durante un período prolongado, penetra humedad y no se puede volver a cargar el sistema sin sustituir ciertos componentes. (págs. 2-3).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Riesgos y normativa</div>
+        <p>El contacto del agente frigorífico líquido o gaseoso con la piel u otras partes del cuerpo provoca congelaciones. En caso de contacto, enjuagar de inmediato y minuciosamente la zona afectada con agua fría durante 15 minutos como mínimo e informar al médico del tipo de refrigerante. El calentamiento del circuito lleno produce una fuerte sobrepresión interna que puede ocasionar el estallido de la instalación. (págs. 1-3).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Audi A5 Coupé_2008_aire acondicionado.pdf, págs. 1-4</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
   <div class="grupo-componente" id="grp-refrigerante-r1234yf">
     <div class="grupo-cab"><span class="grupo-nombre">Agente frigorífico R1234yf</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
@@ -6244,6 +6287,11 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
     </div>
   </section>
 
+  <div class="grupo-componente" id="grp-autodiagnostico-climatizador">
+    <div class="grupo-cab"><span class="grupo-nombre">Autodiagnóstico del sistema de climatización automática mediante equipo OBD</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 2 · NT87 · 15. Diágnostico y averías.pdf, págs. 133-134</summary>
   <section id="nt87" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 87 <span class="subtipo">Procedimiento</span></div>
     <div class="nota-body proceso">
@@ -6310,6 +6358,56 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 2 · NT168 · Audi A5 Coupé_2008_aire acondicionado.pdf, págs. 4-11</summary>
+  <section id="nt168" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 168 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Autodiagnóstico del climatizador</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>La unidad de control para Climatronic J255 analiza continuamente las señales e informaciones del sistema. Al detectar un fallo en un sensor o componente vigilado, graba el registro en su memoria de averías junto con el tipo de avería correspondiente. (págs. 4-5).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>La unidad de control J255 clasifica las averías registradas en dos categorías:
+1. Averías estáticas o permanentes: se registran si las condiciones de fallo se mantienen de forma continua durante un tiempo determinado.
+2. Averías esporádicas: se registran cuando la condición de fallo desaparece durante un tiempo determinado, añadiéndose la indicación /SP en la pantalla del equipo de diagnosis. Este proceso de evaluación se repite ininterrumpidamente.</p>
+<p>Para acceder a la autodiagnosis, se conecta el equipo de diagnosis (VAS 5051 o VAS 5052) al conector de diagnosis de 16 polos del vehículo con el encendido desconectado, accediendo a la dirección "08 - Electrónica de climatización/calefacción".</p>
+<p>Las funciones de autodiagnosis disponibles son:
+- 01 / 001: Consultar la versión de la unidad de control.
+- 02 / 004: Consultar la memoria de averías.
+- 03 / 005: Diagnosis de actuadores.
+- 04 / 006: Ajuste básico.
+- 05 / 004.10: Borrar la memoria de averías.
+- 06 / 022: Finalizar la edición.
+- 07 / 007: Codificación.
+- 08 / 011: Leer el bloque de valores de medición.
+- 10 / 012: Adaptación.</p>
+<p>Antes de sustituir el panel de mandos e indicación J255, es obligatorio consultar su codificación y adaptación mediante la función "Unidad de control: sustituir" en la localización guiada de averías. (págs. 4-9).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <p>Conector de diagnosis de 16 polos.
+Velocidad del vehículo no superior a 5 km/h para ejecutar la diagnosis de actuadores. (págs. 6, 8).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Monitorizar y supervisar el funcionamiento de los componentes y sensores gestionados por el climatizador, memorizando los fallos para la localización asistida de averías en el taller. (págs. 4-5).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <p>Considerar las averías esporádicas como errores de lectura sin valor técnico; reflejan fallos reales cuya condición desapareció temporalmente pero que permanecen memorizados hasta su borrado explícito. (pág. 5).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Audi A5 Coupé_2008_aire acondicionado.pdf, págs. 4-11</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
   <section id="nt88" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 88 <span class="subtipo">Fundamento</span></div>
@@ -8669,8 +8767,120 @@ Mide la capacidad de una sustancia para destruir el ozono estratosférico en com
     </div>
   </section>
 
+  <section id="nt169" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 169 <span class="subtipo">Procedimiento</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnosis de actuadores del climatizador</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Verificar de forma secuencial y controlada la excitación eléctrica y la respuesta funcional de los actuadores del climatizador (válvula reguladora del compresor N280, ventiladores del radiador V7/V177, luneta térmica trasera Z1) para descartar fallos de activación o funciones confundidas. (págs. 12-13).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ol>
+<li>Tensión de alimentación de la red de a bordo correcta y batería con suficiente carga.</li>
+<li>Fusibles del sistema verificados y en buen estado.</li>
+<li>Velocidad del vehículo inferior o igual a 5 km/h.</li>
+<li>Para comprobar la válvula reguladora N280: encendido conectado con el motor parado.</li>
+<li>Para comprobar los ventiladores del radiador (V7/V177) y la luneta térmica trasera (Z1): motor en marcha.</li>
+<li>Difusores de aire del tablero de instrumentos totalmente abiertos. (págs. 6, 8, 12-13).</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Sistema de información, medición y diagnóstico de vehículos VAS 5051 o VAS 5052 con cable de diagnóstico VAS 5051/5A. (págs. 8, 9).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <p>Velocidad del vehículo durante la prueba: máximo 5 km/h.
+Señal de solicitud enviada a la unidad del motor para los ventiladores del radiador V7: de 0% a 100%. (págs. 6, 12).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Consultar la memoria de averías al concluir el procedimiento. Si la diagnosis se interrumpe, consultar la memoria de averías y el bloque de valores de medición para diagnosticar el estado del sistema. (pág. 14).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>Si se requieren pruebas dinámicas o mediciones con el vehículo en movimiento, los equipos de diagnosis deben ser operados por un segundo técnico para evitar distracciones durante la conducción. (pág. 7).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Pasos</div>
+        <ol>
+<li>Conectar el cable de diagnóstico VAS 5051/5A al conector de 16 polos del vehículo con el encendido desconectado.</li>
+<li>Conectar el encendido o arrancar el motor según el actuador a verificar.</li>
+<li>Seleccionar la dirección "08 - Electrónica de climatización/calefacción" (unidad J255).</li>
+<li>Consultar y registrar la memoria de averías.</li>
+<li>Activar el climatizador desde la unidad J255 y abrir los difusores del tablero de instrumentos.</li>
+<li>Seleccionar la función "Diagnosis de actuadores" y activar la secuencia de prueba. La solicitud de excitación de la válvula N280 se envía desde la J255 a la unidad de control de la red de a bordo J519, que ejecuta la activación física.</li>
+<li>Finalizar la prueba y volver a consultar la memoria de averías para comprobar si se han memorizado fallos durante la activación de los componentes. (págs. 8, 12-14).</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Audi A5 Coupé_2008_aire acondicionado.pdf, págs. 12-14</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt170" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 170 <span class="subtipo">Procedimiento</span></div>
+    <div class="nota-body proceso">
+      <h1>Ajuste básico del climatizador</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Calibrar y memorizar las posiciones extremas (topes finales) de los servomotores del climatizador, efectuar la asignación automática de direcciones LIN-Bus de los servomotores y realizar la primera puesta en funcionamiento (rodaje) del compresor tras sustituir la unidad de control J255 o componentes del sistema. (págs. 15-24).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ol>
+<li>Batería con tensión suficiente y fusibles del sistema en buen estado.</li>
+<li>Memoria de averías consultada y sin averías almacenadas (o subsanadas previamente).</li>
+<li>Para el grupo de indicación 001 (calibración de topes de servomotores): encendido conectado.</li>
+<li>Para el grupo de indicación 003 (puesta en marcha del compresor): motor en marcha al ralentí como mínimo y difusores del tablero de instrumentos abiertos.</li>
+<li>En caso de haber sustituido un servomotor o modificado su posición, debe haberse ejecutado con éxito previamente el ajuste básico en el grupo 004 antes de realizar el grupo. (págs. 8, 15, 17, 18, 22).</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Sistema de información, medición y diagnóstico de vehículos VAS 5051 con cable de diagnóstico VAS 5051/5A. (págs. 8, 15).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <p>Tiempo de ejecución en grupo: aprox. 1 a 2 minutos.
+Tiempo de ejecución en grupo: aprox. 5 minutos.
+Tope inferior memorizado en servomotores: valor 10000.
+Tope superior memorizado en servomotores: valor entre 11000 y 20000 según la posición del motor. (págs. 16, 22, 45).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Confirmar que aparezca la indicación "Ajuste básico ejecutado" en el equipo de diagnosis y que el parpadeo del testigo de la tecla AC o de la pantalla haya cesado. Consultar de nuevo la memoria de averías para verificar que no queden registros de fallo. (págs. 17, 22, 25).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>Si el proceso en el grupo 003 se interrumpe (por apagar el motor o por valores fuera de tolerancia), se inscribe la avería "Especificación de rodaje, ajuste básico nulo o incorrecto". Esta avería solo se puede borrar repitiendo la función del grupo 003 de principio a fin hasta completarla con éxito. (pág. 22).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Pasos</div>
+        <ol>
+<li>Conectar el cable VAS 5051/5A al conector de diagnóstico de 16 polos con el encendido desconectado.</li>
+<li>Conectar el encendido o arrancar el motor según el grupo de indicación a calibrar.</li>
+<li>Entrar en el código de dirección "08 - Electrónica de climatización/calefacción" (unidad J255).</li>
+<li>Consultar y borrar la memoria de averías.</li>
+<li>Seleccionar la función "Ajuste básico".</li>
+<li>Para dirección e identificación de servomotores mediante bus serie LIN-Bus: seleccionar el grupo de indicación "004". Durante este proceso, los servomotores autoadaptan de forma permanente su dirección según su posición física en el cableado en serie.</li>
+<li>Para calibración de topes de servomotores: seleccionar el grupo de indicación "001". Parpadeará el testigo de la tecla AC (versión Basis) o la pantalla (versión Komfort). Esperar a que todos los servomotores alcancen ambos topes finales y se memoricen los valores.</li>
+<li>Para primera puesta en funcionamiento del compresor (rodaje) tras sustituir la UCE J255: seleccionar el grupo de indicación "003" con el motor al ralentí y esperar aprox. 5 minutos hasta que la pantalla muestre "Ajuste básico ejecutado" y el testigo de la tecla AC deje de parpadear.</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Audi A5 Coupé_2008_aire acondicionado.pdf, págs. 15-25</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    166 notas técnicas · generado el 24/09/2026.
+    170 notas técnicas · generado el 24/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
