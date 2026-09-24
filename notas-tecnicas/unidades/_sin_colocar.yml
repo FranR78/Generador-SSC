@@ -2,14 +2,18 @@
 # cópialas al 'indice' de su unidad, en la sección que toque.
 
 clima:
+  - actuador-bloqueo-columna-direccion   # Actuador de bloqueo de la columna de dirección
   - agrupacion-resistencias   # Agrupación de resistencias en serie, paralelo y mixta
   - ajuste-basico-climatizador   # Ajuste básico del climatizador
+  - antena-deteccion-llaves   # Antenas para la detección de llaves
   - autodiagnostico-calefaccion-independiente   # Autodiagnóstico de la calefacción independiente
+  - autorizacion-acceso-y-arranque   # Sistema Keyless Access
   - bomba-calor-climatizacion   # Climatización por bomba de calor en vehículos eléctricos
   - bujia-precalentamiento-calefaccion   # Bujía de precalentamiento para calefacción
   - calefactor-ptc   # Resistencia de calefacción eléctrica
   - calor-sensible-y-latente   # Intercambios térmicos, calor sensible y calor latente
   - capa-ozono-protocolo-montreal   # Protección de la capa de ozono y Protocolo de Montreal
+  - cerradura-porton-electrico   # Cerradura del portón eléctrico y motor de cierre asistido
   - certificacion-gases-fluorados   # Certificación profesional para la manipulación de gases fluorados en vehículos
   - ciclo-frigorifico-r744   # Circuito de climatización con CO2 (R744) y ciclo frigorífico supercrítico
   - circuito-electrico-aire-acondicionado-manual   # Circuito eléctrico de aire acondicionado manual con trinaria
@@ -27,6 +31,7 @@ clima:
   - diagnostico-electroventilador   # Diagnóstico por electroventilador girando en sentido contrario
   - diagnostico-electroventiladores-maxima-velocidad   # Electroventiladores funcionando de forma continua a la máxima velocidad al conectar el contacto
   - diagnostico-evaporador   # Diagnóstico por congelación del evaporador o válvula de regulación bloqueada
+  - diagnostico-porton-electrico   # Diagnosis EOBD del portón eléctrico
   - diagnostico-valvula-expansion   # Diagnóstico por bulbo de la válvula de expansión suelto
   - diagrama-mollier   # Diagrama de Mollier y ciclo teórico
   - display-climatizador   # Display de la unidad de manejo e indicación
@@ -41,6 +46,8 @@ clima:
   - exceso-refrigerante   # Diagnóstico por exceso de fluido refrigerante mediante lectura de manómetros
   - falta-refrigerante   # Diagnóstico por falta de fluido refrigerante mediante lectura de manómetros
   - filtro-habitaculo   # Filtro de habitáculo
+  - funcion-easy-open   # Función Easy Open del portón eléctrico
+  - gancho-remolque-escamoteable   # Gancho de remolque escamoteable eléctrico
   - guardallamas   # Guardallamas
   - identificacion-compatibilidad-equipos-carga   # Identificación y compatibilidad de equipos de carga por refrigerante
   - indicadores-ambientales-pao-pca   # Indicadores ambientales PAO y PCA
@@ -52,17 +59,22 @@ clima:
   - limitador-fuerza-cinturon   # Limitador adaptativo de la fuerza del cinturón
   - liquido-refrigerante-motor   # Interacción entre la climatización y la refrigeración del motor
   - magnitudes-pao-pca   # Magnitudes ambientales de los refrigerantes (PAO y PCA)
+  - motor-porton-trasero   # Motor eléctrico de accionamiento del portón trasero
   - normativa-europea-climatizacion-vehiculos   # Normativa europea de gases fluorados en climatización de vehículos
   - normativa-medioambiental-refrigerantes   # Normativa de gases fluorados y regulación medioambiental
   - normativa-y-medioambiente   # Normativa medioambiental y certificación de gases fluorados
   - polimetro-multimetro   # Polímetro o multímetro de automoción
+  - porton-maletero-electrico   # Portón del maletero eléctrico
   - potencia-electrica   # Potencia eléctrica
   - potenciometro-distribucion-aire   # Potenciómetro de la distribución de aire
   - potenciometro-trampilla-temperatura   # Potenciómetro del motor de la trampilla de temperatura
   - pretensor-cinturon   # Pretensor pirotécnico de cinturón de cinta metálica
   - principios-electricos-transformaciones-energia   # Principios eléctricos y transformaciones de energía en el automóvil
   - prl-y-seguridad   # Seguridad y prevención de riesgos laborales en climatización
+  - proceso-apertura-bloqueo-puertas   # Proceso de solicitud de apertura y bloqueo de puertas
+  - proceso-autorizacion-contacto-arranque   # Proceso de autorización de contacto y arranque del motor
   - protocolo-kioto-efecto-invernadero   # Protocolo de Kioto y regulación de gases de efecto invernadero
+  - pulsador-arranque   # Pulsador del dispositivo de arranque del motor
   - purga-medicion-aceite-recuperado   # Purga y medición del aceite evacuado en la recuperación
   - recuperacion-refrigerante-contaminado   # Recuperación de refrigerante R1234yf contaminado mediante condensación por hielo seco
   - refrigerante-r12   # Agente frigorífico R12
@@ -72,6 +84,7 @@ clima:
   - resistencia-electrica   # Resistencia eléctrica
   - ruidos-compresor   # Diagnóstico de ruidos en el compresor de aire acondicionado
   - seguridad-y-precauciones-climatizacion   # Precauciones de seguridad, prohibición de soldadura y contaminación en climatización
+  - sensor-contacto-manilla   # Sensor de contacto de la manilla exterior de la puerta delantera
   - sensor-ocupacion-asiento   # Sensor de ocupación del asiento del acompañante G128
   - sensor-temperatura-calefactor   # Termosensor de temperatura del calefactor
   - sensor-temperatura-calefactor-2   # Termosensor 2 para calefactor y calefacción independiente
@@ -82,6 +95,7 @@ clima:
   - tension-electrica-voltaje   # Tensión eléctrica o voltaje
   - tipos-corriente-automovil   # Tipos de corriente eléctrica en el automóvil
   - turbina-aire-combustion   # Turbina de aire de combustión
+  - unidad-control-acceso-y-arranque   # Unidad de control para la autorización de acceso y arranque
   - unidad-control-aire-acondicionado   # Unidad de control del aire acondicionado J293
   - unidad-control-deteccion-ocupacion-asiento   # Unidad de control para la detección de ocupación del asiento J706
   - unidad-control-electronica-informacion-j794   # Unidad de control de electrónica de información 1 J794
