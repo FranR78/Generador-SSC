@@ -2410,6 +2410,14 @@
    "hecha": false
   },
   {
+   "nombre": "NT557_01",
+   "nt": 557,
+   "titulo": "Servomotor de trampillas con potenciómetro",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Disposición de los servomotores sobre el calefactor/climatizador y esquema de conexión eléctrica con la unidad de control — Fuente: SERVOMOTORES.pdf, pág. 52",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -2434,7 +2442,7 @@
    "hecha": false
   }
  ],
- "total": 548,
+ "total": 549,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -20319,6 +20327,68 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema de conexión en serie de los servomotores en el LIN-Bus con asignación de bornes (A1 a A4) — Fuente: SERVOMOTORES SIN POTENCIOMETROS.pdf, pág. 81",
      "html": "<ul>\n<li>Esquema de conexión en serie de los servomotores en el LIN-Bus con asignación de bornes (A1 a A4) — Fuente: SERVOMOTORES SIN POTENCIOMETROS.pdf, pág. 81</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.servomotor-trampilla.con-potenciometro.servomotores",
+   "nt": 557,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "servomotor-trampilla",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Servomotor de trampillas con potenciómetro",
+   "codigo": "",
+   "menu": "Servomotor de trampillas con potencióm",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "SERVOMOTORES.pdf, págs. 52",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "con-potenciometro",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "servomotor",
+    "potenciómetro",
+    "chapaleta",
+    "realimentación",
+    "climatizador automático"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Accionar las chapaletas para la conducción del aire en el climatizador automático, transformando las señales eléctricas de la unidad de control en movimientos mecánicos. (pág. 52)",
+     "html": "<p>Accionar las chapaletas para la conducción del aire en el climatizador automático, transformando las señales eléctricas de la unidad de control en movimientos mecánicos. <span class=\"pag\">pág. 52</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Se instalan directamente a la altura del eje de la chapaleta en el calefactor/climatizador. En el climatizador automático existen servomotores para la chapaleta de temperatura, la chapaleta central, la chapaleta para vano reposapiés / descongelación y la chapaleta de aire fresco / recirculación de aire y velocidad. El mecanismo de reglaje, la posición de la cigüeña y los ángulos de giro varían en función de la chapaleta de la que se trate. Cada servomotor equipa un potenciómetro interno. (pág. 52)",
+     "html": "<p>Se instalan directamente a la altura del eje de la chapaleta en el calefactor/climatizador. En el climatizador automático existen servomotores para la chapaleta de temperatura, la chapaleta central, la chapaleta para vano reposapiés / descongelación y la chapaleta de aire fresco / recirculación de aire y velocidad. El mecanismo de reglaje, la posición de la cigüeña y los ángulos de giro varían en función de la chapaleta de la que se trate. Cada servomotor equipa un potenciómetro interno. <span class=\"pag\">pág. 52</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Los motores son excitados eléctricamente por la unidad de control para el climatizador. El potenciómetro integrado transmite una señal de realimentación a la unidad de control para informar de la posición momentánea de la chapaleta. (pág. 52)",
+     "html": "<p>Los motores son excitados eléctricamente por la unidad de control para el climatizador. El potenciómetro integrado transmite una señal de realimentación a la unidad de control para informar de la posición momentánea de la chapaleta. <span class=\"pag\">pág. 52</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tensión de alimentación del transmisor: +5 V. (pág. 52)",
+     "html": "<p>Tensión de alimentación del transmisor: +5 V. <span class=\"pag\">pág. 52</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Disposición de los servomotores sobre el calefactor/climatizador y esquema de conexión eléctrica con la unidad de control — Fuente: SERVOMOTORES.pdf, pág. 52",
+     "html": "<ul>\n<li>Disposición de los servomotores sobre el calefactor/climatizador y esquema de conexión eléctrica con la unidad de control — Fuente: SERVOMOTORES.pdf, pág. 52</li>\n</ul>"
     }
    ]
   },
