@@ -1,11 +1,12 @@
 {
  "generado": "2026-09-24",
- "total": 415,
+ "total": 424,
  "grupos": [
   "Acceso y arranque",
   "Calefacción",
   "Cierre y aperturas",
   "Circuito frigorífico",
+  "Climatizacion asientos",
   "Control de climatización",
   "Distribución de aire",
   "Equipos de taller",
@@ -8316,6 +8317,82 @@
    ]
   },
   {
+   "id": "ssc.evaporador.409-e-audi-a4-08",
+   "nt": 418,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "evaporador",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "",
+   "titulo": "Evaporador de la climatización",
+   "codigo": "",
+   "menu": "Evaporador de la climatización",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "409_e         Audi A4 _08.pdf, págs. 64-65",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "tuberias-y-racores",
+    "valvula-expansion"
+   ],
+   "palabras": [
+    "evaporador",
+    "tubos soldados",
+    "tubos atornillables",
+    "grupo de tubos",
+    "servicio"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Absorber el calor del aire que ingresa al habitáculo provocando la evaporación del refrigerante en su interior. (págs. 64-65)",
+     "html": "<p>Absorber el calor del aire que ingresa al habitáculo provocando la evaporación del refrigerante en su interior. <span class=\"pag\">págs. 64-65</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Intercambiador térmico alojado en el interior de la carcasa del grupo climatizador. Versión de fábrica/serie: incorpora tubos unidos mecánicamente por soldadura fija. Versión de recambio/Servicio: utiliza un grupo de tubos independientes en versión atornillable. (págs. 64-65)",
+     "html": "<p>Intercambiador térmico alojado en el interior de la carcasa del grupo climatizador. </p>\n<ul>\n<li>Versión de fábrica/serie: incorpora tubos unidos mecánicamente por soldadura fija.</li>\n<li>Versión de recambio/Servicio: utiliza un grupo de tubos independientes en versión atornillable. <span class=\"pag\">págs. 64-65</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El refrigerante líquido a baja presión se evapora al absorber la energía térmica del caudal de aire impulsado por la turbina, enfriándolo y condensando la humedad ambiental sobre sus aletas. (págs. 64-65)",
+     "html": "<p>El refrigerante líquido a baja presión se evapora al absorber la energía térmica del caudal de aire impulsado por la turbina, enfriándolo y condensando la humedad ambiental sobre sus aletas. <span class=\"pag\">págs. 64-65</span></p>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fugas de refrigerante en los tubos o acumulación de suciedad/humedad en el panal. (págs. 64-65)",
+     "html": "<p>Fugas de refrigerante en los tubos o acumulación de suciedad/humedad en el panal. <span class=\"pag\">págs. 64-65</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Pérdida de capacidad de enfriamiento en el habitáculo. (pág. 64)",
+     "html": "<p>Pérdida de capacidad de enfriamiento en el habitáculo. <span class=\"pag\">pág. 64</span></p>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Verificar la estanqueidad del circuito de alta/baja presión y la ausencia de congelación en la superficie. (págs. 64-65)",
+     "html": "<p>Verificar la estanqueidad del circuito de alta/baja presión y la ausencia de congelación en la superficie. <span class=\"pag\">págs. 64-65</span></p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "En caso de reparación que requiera sustituir el evaporador de serie (con tubos soldados), se deben desunir los tubos originales y montar el grupo de tubos atornillables previsto para el área de Servicio Postventa. (pág. 65)",
+     "html": "<p>En caso de reparación que requiera sustituir el evaporador de serie (con tubos soldados), se deben desunir los tubos originales y montar el grupo de tubos atornillables previsto para el área de Servicio Postventa. <span class=\"pag\">pág. 65</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Despiece del evaporador del grupo climatizador y detalle del conjunto de tubos atornillables para Servicio — Fuente: 409_e Audi A4 _08.pdf, pág. 65",
+     "html": "<ul>\n<li>Despiece del evaporador del grupo climatizador y detalle del conjunto de tubos atornillables para Servicio — Fuente: 409_e         Audi A4 _08.pdf, pág. 65</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.deposito-colector.baja.9-filtro-deshidratadores",
    "nt": 57,
    "modulo": "ssc",
@@ -8666,6 +8743,72 @@
      "titulo": "Mantenimiento",
      "texto": "Reemplazar siempre las juntas tóricas por piezas originales nuevas de HNBR en cada desmontaje, humedeciéndolas en aceite frigorífico antes de apretar al par prescrito. (págs. 83, 140).",
      "html": "<p>Reemplazar siempre las juntas tóricas por piezas originales nuevas de HNBR en cada desmontaje, humedeciéndolas en aceite frigorífico antes de apretar al par prescrito. <span class=\"pag\">págs. 83, 140</span>.</p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.tuberias-y-racores.coaxial.409-e-audi-a4-08",
+   "nt": 417,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "tuberias-y-racores",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "",
+   "titulo": "Tubo coaxial de refrigerante",
+   "codigo": "",
+   "menu": "Tubo coaxial de refrigerante",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "409_e         Audi A4 _08.pdf, págs. 64",
+   "clase": "componente",
+   "variante": "coaxial",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "evaporador",
+    "compresor"
+   ],
+   "palabras": [
+    "tubo coaxial",
+    "alta presion",
+    "baja presion",
+    "acoplamiento rapido",
+    "empalme de servicio"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Canalizar simultáneamente el flujo de refrigerante de alta y de baja presión en una sola conducción concéntrica para optimizar espacio y mejorar el intercambio térmico. (pág. 64)",
+     "html": "<p>Canalizar simultáneamente el flujo de refrigerante de alta y de baja presión en una sola conducción concéntrica para optimizar espacio y mejorar el intercambio térmico. <span class=\"pag\">pág. 64</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Conducción compuesta por un conducto de alta presión ubicado en el interior del conducto de baja presión. Dispone de empalmes con acoplamientos rápidos para el servicio. (pág. 64)",
+     "html": "<p>Conducción compuesta por un conducto de alta presión ubicado en el interior del conducto de baja presión. Dispone de empalmes con acoplamientos rápidos para el servicio. <span class=\"pag\">pág. 64</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El tubo coaxial agrupa las dos líneas de fluido en un solo cuerpo. El paso del refrigerante frío de baja presión por la canalización exterior contribuye al subenfriamiento del refrigerante de alta presión que circula por el conducto interior. (pág. 64)",
+     "html": "<p>El tubo coaxial agrupa las dos líneas de fluido en un solo cuerpo. El paso del refrigerante frío de baja presión por la canalización exterior contribuye al subenfriamiento del refrigerante de alta presión que circula por el conducto interior. <span class=\"pag\">pág. 64</span></p>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Inspección visual de fugas en los acoplamientos rápidos y comprobación de la estanqueidad mediante estación de carga o trazador. (pág. 64)",
+     "html": "<p>Inspección visual de fugas en los acoplamientos rápidos y comprobación de la estanqueidad mediante estación de carga o trazador. <span class=\"pag\">pág. 64</span></p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Desconexión mediante la manipulación de los acoplamientos rápidos específicos de la línea. (pág. 64)",
+     "html": "<p>Desconexión mediante la manipulación de los acoplamientos rápidos específicos de la línea. <span class=\"pag\">pág. 64</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Sección transversal y empalmes del tubo coaxial de alta y baja presión con acoplamientos rápidos — Fuente: 409_e Audi A4 _08.pdf, pág. 64",
+     "html": "<ul>\n<li>Sección transversal y empalmes del tubo coaxial de alta y baja presión con acoplamientos rápidos — Fuente: 409_e         Audi A4 _08.pdf, pág. 64</li>\n</ul>"
     }
    ]
   },
@@ -10153,6 +10296,77 @@
    ]
   },
   {
+   "id": "ssc.transmisor-presion.409-e-audi-a4-08",
+   "nt": 422,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "transmisor-presion-map-maf",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Sensor de presión y temperatura del agente frigorífico G395",
+   "codigo": "G395",
+   "menu": "Sensor de presión y temperatur G395",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "409_e         Audi A4 _08.pdf, págs. 66-67",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "transmisor-presion"
+   ],
+   "palabras": [
+    "g395",
+    "presion agente frigorifico",
+    "bus lin",
+    "j519",
+    "valores de medicion"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la presión y la temperatura del fluido refrigerante en la línea de alta presión del circuito frigorífico. (págs. 66-67)",
+     "html": "<p>Medir la presión y la temperatura del fluido refrigerante en la línea de alta presión del circuito frigorífico. <span class=\"pag\">págs. 66-67</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Sensor combinado de presión y temperatura con salida de datos digital a través de bus LIN. (págs. 66-67)",
+     "html": "<p>Sensor combinado de presión y temperatura con salida de datos digital a través de bus LIN. <span class=\"pag\">págs. 66-67</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Mide la presión y temperatura en el circuito y transmite los datos mediante una señal de bus LIN a la unidad de control de la red de a bordo J519. La J519 retransmite esta información por el bus CAN a la unidad de control para Climatronic J255. El valor medido por el sensor G395 no se analiza actualmente en la lógica de regulación del climatizador, pero permanece disponible para consulta. (págs. 66-67)",
+     "html": "<p>Mide la presión y temperatura en el circuito y transmite los datos mediante una señal de bus LIN a la unidad de control de la red de a bordo J519. La J519 retransmite esta información por el bus CAN a la unidad de control para Climatronic J255.\nEl valor medido por el sensor G395 no se analiza actualmente en la lógica de regulación del climatizador, pero permanece disponible para consulta. <span class=\"pag\">págs. 66-67</span></p>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fallo de comunicación en la línea de bus LIN o fallo del elemento piezorresistivo/térmico. (pág. 67)",
+     "html": "<p>Fallo de comunicación en la línea de bus LIN o fallo del elemento piezorresistivo/térmico. <span class=\"pag\">pág. 67</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Interrupción del intercambio de datos LIN con la unidad J519. (pág. 67)",
+     "html": "<p>Interrupción del intercambio de datos LIN con la unidad J519. <span class=\"pag\">pág. 67</span></p>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Consultar el valor de presión y temperatura registrado en los bloques de valores de medición de la unidad J519/J255 a través del terminal de diagnosis. (pág. 67)",
+     "html": "<p>Consultar el valor de presión y temperatura registrado en los bloques de valores de medición de la unidad J519/J255 a través del terminal de diagnosis. <span class=\"pag\">pág. 67</span></p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "No requiere mantenimiento. (págs. 66-67)",
+     "html": "<p>No requiere mantenimiento. <span class=\"pag\">págs. 66-67</span></p>"
+    }
+   ]
+  },
+  {
    "id": "ssc.sensor-temperatura-exterior.g17.208-regulacion-de-la-temperatura",
    "nt": 98,
    "modulo": "ssc",
@@ -10898,6 +11112,76 @@
      "titulo": "Comportamiento en avería",
      "texto": "Si se avería un transmisor, la unidad de control toma la lectura del transmisor que permanece operativo. (pág. 49). Si se averían ambos transmisores (G17 y G89), la unidad de control asume un valor fijo sustitutivo de 10 ºC. (pág. 49).",
      "html": "<ul>\n<li>Si se avería un transmisor, la unidad de control toma la lectura del transmisor que permanece operativo. <span class=\"pag\">pág. 49</span>.</li>\n<li>Si se averían ambos transmisores (G17 y G89), la unidad de control asume un valor fijo sustitutivo de 10 ºC. <span class=\"pag\">pág. 49</span>.</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sensor-temperatura-exterior.409-e-audi-a4-08",
+   "nt": 419,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-temperatura-ntc-exterior",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Sensor de temperatura exterior G17",
+   "codigo": "G17",
+   "menu": "Sensor de temperatura exterior G17",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "409_e         Audi A4 _08.pdf, págs. 66-67",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "control-climatizacion",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "g17",
+    "temperatura exterior",
+    "paragolpes",
+    "led ac",
+    "desactivación ac"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la temperatura del aire ambiente exterior para la regulación de la climatización y la indicación en el cuadro de instrumentos. (págs. 66-67)",
+     "html": "<p>Medir la temperatura del aire ambiente exterior para la regulación de la climatización y la indicación en el cuadro de instrumentos. <span class=\"pag\">págs. 66-67</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Sensor de temperatura único (NTC) montado en la zona frontal del vehículo, situado detrás del paragolpes delantero y por delante del condensador. (págs. 66-67)",
+     "html": "<p>Sensor de temperatura único (NTC) montado en la zona frontal del vehículo, situado detrás del paragolpes delantero y por delante del condensador. <span class=\"pag\">págs. 66-67</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Mide la temperatura exterior y transmite su señal resistiva a la unidad de control de la red de a bordo J519. La J519 retransmite el valor por el bus CAN a la unidad indicadora del cuadro de instrumentos J285 y a la unidad de control para Climatronic J255. (págs. 66-67)",
+     "html": "<p>Mide la temperatura exterior y transmite su señal resistiva a la unidad de control de la red de a bordo J519. La J519 retransmite el valor por el bus CAN a la unidad indicadora del cuadro de instrumentos J285 y a la unidad de control para Climatronic J255. <span class=\"pag\">págs. 66-67</span></p>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Avería en la resistencia interna del sensor o interrupción de su cableado. (pág. 67)",
+     "html": "<p>Avería en la resistencia interna del sensor o interrupción de su cableado. <span class=\"pag\">pág. 67</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si se avería el sensor de temperatura exterior G17, se desactiva de forma automática la función AC. El LED de la tecla AC permanece inactivo señalizando que el compresor del climatizador no marcha y que el climatizador automático está desactivado. (pág. 67)",
+     "html": "<p>Si se avería el sensor de temperatura exterior G17, se desactiva de forma automática la función AC. El LED de la tecla AC permanece inactivo señalizando que el compresor del climatizador no marcha y que el climatizador automático está desactivado. <span class=\"pag\">pág. 67</span></p>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Lectura del bloque de valores de medición a través del puerto de diagnosis en la unidad J519/J255 y verificación visual del estado del LED AC. (págs. 66-67)",
+     "html": "<p>Lectura del bloque de valores de medición a través del puerto de diagnosis en la unidad J519/J255 y verificación visual del estado del LED AC. <span class=\"pag\">págs. 66-67</span></p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "No requiere mantenimiento periódico. En caso de colisión frontal, verificar su correcto posicionamiento ante el condensador. (pág. 66)",
+     "html": "<p>No requiere mantenimiento periódico. En caso de colisión frontal, verificar su correcto posicionamiento ante el condensador. <span class=\"pag\">pág. 66</span></p>"
     }
    ]
   },
@@ -12592,6 +12876,76 @@
    ]
   },
   {
+   "id": "ssc.sensor-humedad.409-e-audi-a4-08",
+   "nt": 421,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-humedad",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Sensor de humedad y temperatura del parabrisas G355",
+   "codigo": "G355",
+   "menu": "Sensor de humedad y temperatur G355",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "409_e         Audi A4 _08.pdf, págs. 66-67",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "control-climatizacion",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "g355",
+    "humedad parabrisas",
+    "empañamiento",
+    "sensor capacitivo",
+    "punto de rocío"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la humedad relativa del aire interior y la temperatura de la cara interna del cristal para prevenir el empañamiento del parabrisas. (págs. 66-67)",
+     "html": "<p>Medir la humedad relativa del aire interior y la temperatura de la cara interna del cristal para prevenir el empañamiento del parabrisas. <span class=\"pag\">págs. 66-67</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Sensor capacitivo de capa delgada que funciona de forma comparable a un condensador de laminillas. Montado en contacto directo con el parabrisas (exclusivo de la versión confort plus). (págs. 66-67)",
+     "html": "<p>Sensor capacitivo de capa delgada que funciona de forma comparable a un condensador de laminillas. Montado en contacto directo con el parabrisas (exclusivo de la versión confort plus). <span class=\"pag\">págs. 66-67</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Mide el contenido de agua en el aire midiendo las variaciones de capacidad en su capa delgada y transforma dicho valor en una tensión eléctrica. Mide la temperatura del cristal por contacto directo. La unidad central para sistema de confort J393 procesa la señal y la envía vía CAN a la unidad J255 para ajustar la mezcla y el caudal de aire antes de que la temperatura del cristal descienda por debajo del punto de rocío. (págs. 66-67)",
+     "html": "<p>Mide el contenido de agua en el aire midiendo las variaciones de capacidad en su capa delgada y transforma dicho valor en una tensión eléctrica. Mide la temperatura del cristal por contacto directo. La unidad central para sistema de confort J393 procesa la señal y la envía vía CAN a la unidad J255 para ajustar la mezcla y el caudal de aire antes de que la temperatura del cristal descienda por debajo del punto de rocío. <span class=\"pag\">págs. 66-67</span></p>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Pérdida de contacto físico con el cristal o fallo de la electrónica integrada. (págs. 66-67)",
+     "html": "<p>Pérdida de contacto físico con el cristal o fallo de la electrónica integrada. <span class=\"pag\">págs. 66-67</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Desactivación de la regulación preventiva contra el empañamiento del parabrisas. (págs. 66-67)",
+     "html": "<p>Desactivación de la regulación preventiva contra el empañamiento del parabrisas. <span class=\"pag\">págs. 66-67</span></p>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Lectura de los valores de capacidad/tensión y temperatura de cristal en los bloques de valores de medición de la unidad J393/J255. (págs. 66-67)",
+     "html": "<p>Lectura de los valores de capacidad/tensión y temperatura de cristal en los bloques de valores de medición de la unidad J393/J255. <span class=\"pag\">págs. 66-67</span></p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Garantizar el contacto térmico directo contra la superficie del parabrisas tras operaciones de sustitución del cristal. (págs. 66-67)",
+     "html": "<p>Garantizar el contacto térmico directo contra la superficie del parabrisas tras operaciones de sustitución del cristal. <span class=\"pag\">págs. 66-67</span></p>"
+    }
+   ]
+  },
+  {
    "id": "ssc.sensor-calidad-aire.208-regulacion-de-la-temperatura",
    "nt": 108,
    "modulo": "ssc",
@@ -12872,6 +13226,76 @@
      "titulo": "Mantenimiento",
      "texto": "Sustitución conjunta con el filtro de habitáculo polivalente de carbón activo. (págs. 106, 135).",
      "html": "<p>Sustitución conjunta con el filtro de habitáculo polivalente de carbón activo. <span class=\"pag\">págs. 106, 135</span>.</p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sensor-calidad-aire.409-e-audi-a4-08",
+   "nt": 420,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-calidad-aire",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Sensor de la calidad del aire G238",
+   "codigo": "G238",
+   "menu": "Sensor de la calidad del aire  G238",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "409_e         Audi A4 _08.pdf, págs. 66-67",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "control-climatizacion",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "recirculacion"
+   ],
+   "palabras": [
+    "g238",
+    "calidad del aire",
+    "recirculacion automatica",
+    "confort plus"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Detectar la presencia de sustancias nocivas o contaminantes en el aire exterior para activar de forma automática la trampilla de recirculación. (págs. 66-67)",
+     "html": "<p>Detectar la presencia de sustancias nocivas o contaminantes en el aire exterior para activar de forma automática la trampilla de recirculación. <span class=\"pag\">págs. 66-67</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Sensor electrónico de contaminantes montado exclusivamente en vehículos equipados con el climatizador automático de confort plus (de tres zonas). (págs. 66-67)",
+     "html": "<p>Sensor electrónico de contaminantes montado exclusivamente en vehículos equipados con el climatizador automático de confort plus (de tres zonas). <span class=\"pag\">págs. 66-67</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Analiza la composición del aire que ingresa por la caja de agua y envía su señal a la unidad de control para Climatronic J255. Si la concentración de gases contaminantes supera el umbral límite, la J255 ordena el cierre de la trampilla de aire exterior y conmuta a recirculación automática. (págs. 66-67)",
+     "html": "<p>Analiza la composición del aire que ingresa por la caja de agua y envía su señal a la unidad de control para Climatronic J255. Si la concentración de gases contaminantes supera el umbral límite, la J255 ordena el cierre de la trampilla de aire exterior y conmuta a recirculación automática. <span class=\"pag\">págs. 66-67</span></p>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Contaminación de la superficie sensible del sensor o fallo en el elemento sensor interno. (pág. 67)",
+     "html": "<p>Contaminación de la superficie sensible del sensor o fallo en el elemento sensor interno. <span class=\"pag\">pág. 67</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si se avería el sensor G238, deja de estar disponible la función de recirculación automática del aire en el climatizador. (pág. 67)",
+     "html": "<p>Si se avería el sensor G238, deja de estar disponible la función de recirculación automática del aire en el climatizador. <span class=\"pag\">pág. 67</span></p>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Comprobar el registro de averías en la unidad J255 y verificar la disponibilidad del modo de recirculación automática en la pantalla del climatizador. (págs. 66-67)",
+     "html": "<p>Comprobar el registro de averías en la unidad J255 y verificar la disponibilidad del modo de recirculación automática en la pantalla del climatizador. <span class=\"pag\">págs. 66-67</span></p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "No requiere mantenimiento. (págs. 66-67)",
+     "html": "<p>No requiere mantenimiento. <span class=\"pag\">págs. 66-67</span></p>"
     }
    ]
   },
@@ -16108,6 +16532,77 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema sinóptico de la climatización regulada con entradas de sondas y salidas a servomotores y relés — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 55",
      "html": "<ul>\n<li>Esquema sinóptico de la climatización regulada con entradas de sondas y salidas a servomotores y relés — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 55</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.regulacion-automatica.409-e-audi-a4-08",
+   "nt": 416,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-automatica",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Climatizador automático de confort",
+   "codigo": "J255",
+   "menu": "Climatizador automático de con J255",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "409_e         Audi A4 _08.pdf, págs. 64-66",
+   "clase": "fundamento",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "servomotor-trampilla",
+    "sensor-temperatura-exterior",
+    "sensor-calidad-aire",
+    "sensor-humedad",
+    "transmisor-presion"
+   ],
+   "palabras": [
+    "climatizador automatico",
+    "una zona",
+    "tres zonas",
+    "confort plus",
+    "bus lin",
+    "can confort"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Deshidratar y enfriar el aire del habitáculo garantizando el mantenimiento automático de las condiciones de confort térmico. (pág. 64)",
+     "html": "<p>Deshidratar y enfriar el aire del habitáculo garantizando el mantenimiento automático de las condiciones de confort térmico. <span class=\"pag\">pág. 64</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Combina un sistema de calefacción y ventilación con uno de refrigeración, controlado electrónicamente por la unidad de control para Climatronic J255 e interconectado mediante bus CAN Confort y bus LIN con sensores y servomotores. (págs. 64, 66)",
+     "html": "<p>Combina un sistema de calefacción y ventilación con uno de refrigeración, controlado electrónicamente por la unidad de control para Climatronic J255 e interconectado mediante bus CAN Confort y bus LIN con sensores y servomotores. <span class=\"pag\">págs. 64, 66</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El vehículo equipa de serie dos versiones de climatizador automático que se diferencian principalmente por su panel de mandos: Climatizador automático de confort de una zona (versión estándar). Climatizador automático de confort plus de tres zonas (versión opcional). El grupo climatizador se compone de la carcasa para el intercambiador de calor, la carcasa de distribución de aire y un mecanismo de empuje que permite separar la carcasa del filtro de aire de la carcasa de aspiración. La gestión de los servomotores de las chapaletas se realiza mediante una conexión en serie sobre el bus LIN con 4 pines por conector (Borne 30, LIN OUT, LIN IN, Borne 31). En la arquitectura eléctrica, la unidad J255 no lee directamente todas las señales de los sensores; por ejemplo, el sensor de presión y temperatura G395 y el sensor de humedad G355 procesan sus datos en la unidad de control de la red de a bordo J519 y en la unidad central de confort J393 respectivamente, transmitiéndolos a la J255 a través del bus CAN. (págs. 64-66)",
+     "html": "<p>El vehículo equipa de serie dos versiones de climatizador automático que se diferencian principalmente por su panel de mandos:</p>\n<ul>\n<li>Climatizador automático de confort de una zona (versión estándar).</li>\n<li>Climatizador automático de confort plus de tres zonas (versión opcional).</li>\n</ul>\n<p>El grupo climatizador se compone de la carcasa para el intercambiador de calor, la carcasa de distribución de aire y un mecanismo de empuje que permite separar la carcasa del filtro de aire de la carcasa de aspiración.</p>\n<p>La gestión de los servomotores de las chapaletas se realiza mediante una conexión en serie sobre el bus LIN con 4 pines por conector (Borne 30, LIN OUT, LIN IN, Borne 31).</p>\n<p>En la arquitectura eléctrica, la unidad J255 no lee directamente todas las señales de los sensores; por ejemplo, el sensor de presión y temperatura G395 y el sensor de humedad G355 procesan sus datos en la unidad de control de la red de a bordo J519 y en la unidad central de confort J393 respectivamente, transmitiéndolos a la J255 a través del bus CAN. <span class=\"pag\">págs. 64-66</span></p>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Conexión del conector de servomotores en bus LIN: A1 (Borne 31), A2 (LIN IN), A3 (LIN OUT), A4 (Borne 30). (pág. 64)",
+     "html": "<ul>\n<li>Conexión del conector de servomotores en bus LIN: A1 (Borne 31), A2 (LIN IN), A3 (LIN OUT), A4 (Borne 30). <span class=\"pag\">pág. 64</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Pensar que la unidad de control para Climatronic J255 recibe directamente el cableado de todos los sensores del sistema. Sensores como el G395 o el G355 envían sus señales a otras unidades de control (J519 y J393) que las comparten con la J255 mediante la red CAN Confort. (págs. 66-67)",
+     "html": "<p>Pensar que la unidad de control para Climatronic J255 recibe directamente el cableado de todos los sensores del sistema. Sensores como el G395 o el G355 envían sus señales a otras unidades de control (J519 y J393) que las comparten con la J255 mediante la red CAN Confort. <span class=\"pag\">págs. 66-67</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Grupo climatizador completo con separación de la carcasa del filtro de aire y de la carcasa de aspiración — Fuente: 409_e Audi A4 _08.pdf, pág. 64 Esquema de interconexión eléctrica por bus CAN Confort y bus LIN entre J255, J519, J393 y red de sensores — Fuente: 409_e Audi A4 _08.pdf, pág. 66",
+     "html": "<ul>\n<li>Grupo climatizador completo con separación de la carcasa del filtro de aire y de la carcasa de aspiración — Fuente: 409_e         Audi A4 _08.pdf, pág. 64</li>\n<li>Esquema de interconexión eléctrica por bus CAN Confort y bus LIN entre J255, J519, J393 y red de sensores — Fuente: 409_e         Audi A4 _08.pdf, pág. 66</li>\n</ul>"
     }
    ]
   },
@@ -28655,6 +29150,152 @@
      "titulo": "Verificación tras la reparación",
      "texto": "Recuperar el refrigerante, realizar un vacío profundo, cargar la cantidad exacta de aceite nuevo y refrigerante prescrita por el fabricante y verificar que desciende la temperatura en los aireadores. (pág. 126)",
      "html": "<p>Recuperar el refrigerante, realizar un vacío profundo, cargar la cantidad exacta de aceite nuevo y refrigerante prescrita por el fabricante y verificar que desciende la temperatura en los aireadores. <span class=\"pag\">pág. 126</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.nuevo-climatizacion-asientos.409-e-audi-a4-08",
+   "nt": 423,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "nuevo-climatizacion-asientos",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Sistema de climatización de asientos",
+   "codigo": "",
+   "menu": "Sistema de climatización de asientos",
+   "grupo": "Climatizacion asientos",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "409_e         Audi A4 _08.pdf, págs. 68-71",
+   "clase": "fundamento",
+   "variante": "",
+   "area": "confort-y-seguridad",
+   "sistema": "NUEVO-climatizacion-asientos",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "asiento confort climatizado",
+    "ventiladores axiales",
+    "conjunto distanciador",
+    "calefaccion protectora",
+    "15 ºC",
+    "6 intensidades"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Mantener la confortabilidad térmica del ocupante mediante la ventilación y calefacción combinada de la superficie del asiento. (pág. 68)",
+     "html": "<p>Mantener la confortabilidad térmica del ocupante mediante la ventilación y calefacción combinada de la superficie del asiento. <span class=\"pag\">pág. 68</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El sistema utiliza ventiladores axiales que soplan aire extraído del habitáculo a través de un conjunto distanciador dispuesto entre el tapizado y el acolchado, combinado con mallas calefactoras integradas. (págs. 68-69)",
+     "html": "<p>El sistema utiliza ventiladores axiales que soplan aire extraído del habitáculo a través de un conjunto distanciador dispuesto entre el tapizado y el acolchado, combinado con mallas calefactoras integradas. <span class=\"pag\">págs. 68-69</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El asiento de confort climatizado integra dos ventiladores axiales en la banqueta (aspiran aire del vano reposapiés) y dos ventiladores axiales en el respaldo (aspiran aire de la zona posterior). La selección se efectúa en la unidad J255 mediante el mando giratorio: Giro a la derecha (zona roja): activa la calefacción en 6 intensidades. Giro a la izquierda (zona azul): activa la climatización (ventilación) en 6 intensidades. Para prevenir el subenfriamiento corporal, al activar la ventilación el sistema enciende automáticamente la calefacción de forma independiente de la intensidad seleccionada. Si la temperatura del asiento es inferior a 15 ºC, se deja de excitar los motores de los ventiladores y no es posible activar la ventilación por seguridad. En el Audi A4 2008, los rebordes laterales del respaldo no se calefactan cuando se activa la calefacción o ventilación. Existen tres arquitecturas eléctricas de gestión: Variante 1 (Solo calefacción): excitación directa desde la unidad de control de la red de a bordo J519. Variante 2 (Calefacción y ventilación sin memoria): J519 gestiona las unidades de ventilación J799 (derecha) y J800 (izquierda) a través del bus LIN. Variante 3 (Calefacción y ventilación con memoria en conductor): el lado conductor es gestionado directamente por la unidad J136 (memoria de asiento/columna); el lado acompañante por la J799 vía LIN desde la J519. (págs. 68-71)",
+     "html": "<p>El asiento de confort climatizado integra dos ventiladores axiales en la banqueta (aspiran aire del vano reposapiés) y dos ventiladores axiales en el respaldo (aspiran aire de la zona posterior).</p>\n<p>La selección se efectúa en la unidad J255 mediante el mando giratorio:</p>\n<ul>\n<li>Giro a la derecha (zona roja): activa la calefacción en 6 intensidades.</li>\n<li>Giro a la izquierda (zona azul): activa la climatización (ventilación) en 6 intensidades.</li>\n</ul>\n<p>Para prevenir el subenfriamiento corporal, al activar la ventilación el sistema enciende automáticamente la calefacción de forma independiente de la intensidad seleccionada. </p>\n<p>Si la temperatura del asiento es inferior a 15 ºC, se deja de excitar los motores de los ventiladores y no es posible activar la ventilación por seguridad. En el Audi A4 2008, los rebordes laterales del respaldo no se calefactan cuando se activa la calefacción o ventilación.</p>\n<p>Existen tres arquitecturas eléctricas de gestión:</p>\n<ul>\n<li>Variante 1 (Solo calefacción): excitación directa desde la unidad de control de la red de a bordo J519.</li>\n<li>Variante 2 (Calefacción y ventilación sin memoria): J519 gestiona las unidades de ventilación J799 (derecha) y J800 (izquierda) a través del bus LIN.</li>\n<li>Variante 3 (Calefacción y ventilación con memoria en conductor): el lado conductor es gestionado directamente por la unidad J136 (memoria de asiento/columna); el lado acompañante por la J799 vía LIN desde la J519. <span class=\"pag\">págs. 68-71</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Número de intensidades de reglaje: 6 niveles (calefacción y ventilación). Umbral de temperatura para bloqueo de ventiladores: 15 ºC (por debajo de 15 ºC la ventilación se inhabilita). (págs. 69-70)",
+     "html": "<ul>\n<li>Número de intensidades de reglaje: 6 niveles (calefacción y ventilación).</li>\n<li>Umbral de temperatura para bloqueo de ventiladores: 15 ºC (por debajo de 15 ºC la ventilación se inhabilita). <span class=\"pag\">págs. 69-70</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Pensar que la ventilación del asiento echa aire frío inmediatamente al arrancar con el habitáculo muy caliente. Como el sistema aspira el aire del vano reposapiés y de la zona trasera, el aire soplado estará caliente hasta que el climatizador refrigere el aire del habitáculo. (pág. 68)",
+     "html": "<p>Pensar que la ventilación del asiento echa aire frío inmediatamente al arrancar con el habitáculo muy caliente. Como el sistema aspira el aire del vano reposapiés y de la zona trasera, el aire soplado estará caliente hasta que el climatizador refrigere el aire del habitáculo. <span class=\"pag\">pág. 68</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Estructura del asiento de confort climatizado con conjunto distanciador, ventiladores axiales y malla calefactora — Fuente: 409_e Audi A4 _08.pdf, pág. 68 Diagrama de variantes de excitación eléctrica (Variantes 1, 2 y 3) entre J255, J519, J136, J799 y J800 — Fuente: 409_e Audi A4 _08.pdf, págs. 70-71",
+     "html": "<ul>\n<li>Estructura del asiento de confort climatizado con conjunto distanciador, ventiladores axiales y malla calefactora — Fuente: 409_e         Audi A4 _08.pdf, pág. 68</li>\n<li>Diagrama de variantes de excitación eléctrica (Variantes 1, 2 y 3) entre J255, J519, J136, J799 y J800 — Fuente: 409_e         Audi A4 _08.pdf, págs. 70-71</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.nuevo-ventilador-axial-asiento.409-e-audi-a4-08",
+   "nt": 424,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "nuevo-ventilador-axial-asiento",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Ventiladores axiales del asiento de confort",
+   "codigo": "",
+   "menu": "Ventiladores axiales del asiento de co",
+   "grupo": "Climatizacion asientos",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "409_e         Audi A4 _08.pdf, págs. 68-69, 71",
+   "clase": "componente",
+   "variante": "",
+   "area": "confort-y-seguridad",
+   "sistema": "NUEVO-climatizacion-asientos",
+   "formaParteDe": "nuevo-climatizacion-asientos",
+   "relacionados": [
+    "NUEVO-climatizacion-asientos"
+   ],
+   "palabras": [
+    "ventilador axial",
+    "banqueta",
+    "respaldo",
+    "caudal volumetrico",
+    "rejilla proteccion"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Impulsar un flujo de aire uniforme a través del conjunto distanciador del asiento hacia la espalda y muslos del ocupante. (págs. 68-69)",
+     "html": "<p>Impulsar un flujo de aire uniforme a través del conjunto distanciador del asiento hacia la espalda y muslos del ocupante. <span class=\"pag\">págs. 68-69</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Motores eléctricos de diseño axial caracterizados por un alto caudal volumétrico y baja sonoridad. Se montan 4 unidades por asiento: 2 ventiladores en la banqueta: atornillados directamente al armazón del asiento. 2 ventiladores en el respaldo: alojados e integrados en el cuerpo de material espumoso con rejillas de protección. (págs. 68-69, 71)",
+     "html": "<p>Motores eléctricos de diseño axial caracterizados por un alto caudal volumétrico y baja sonoridad.\nSe montan 4 unidades por asiento:</p>\n<ul>\n<li>2 ventiladores en la banqueta: atornillados directamente al armazón del asiento.</li>\n<li>2 ventiladores en el respaldo: alojados e integrados en el cuerpo de material espumoso con rejillas de protección. <span class=\"pag\">págs. 68-69, 71</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El aire recorre el ventilador en trayectoria paralela a su eje de rotación (dirección axial). Aspira aire ambiental del habitáculo (reposapiés o zona trasera) y lo introduce a presión en la estructura textil del conjunto distanciador para distribuirlo bajo el tapizado microperforado. (págs. 68-69)",
+     "html": "<p>El aire recorre el ventilador en trayectoria paralela a su eje de rotación (dirección axial). Aspira aire ambiental del habitáculo (reposapiés o zona trasera) y lo introduce a presión en la estructura textil del conjunto distanciador para distribuirlo bajo el tapizado microperforado. <span class=\"pag\">págs. 68-69</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Cantidad de ventiladores por asiento: 4 unidades (2 en banqueta y 2 en respaldo). (pág. 68)",
+     "html": "<ul>\n<li>Cantidad de ventiladores por asiento: 4 unidades (2 en banqueta y 2 en respaldo). <span class=\"pag\">pág. 68</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Obstrucción de la rejilla de protección o degradación del conjunto distanciador por aplastamiento excesivo. (pág. 69)",
+     "html": "<p>Obstrucción de la rejilla de protección o degradación del conjunto distanciador por aplastamiento excesivo. <span class=\"pag\">pág. 69</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Inoperatividad del flujo de aire en la zona de la banqueta o del respaldo. (págs. 68-69)",
+     "html": "<p>Inoperatividad del flujo de aire en la zona de la banqueta o del respaldo. <span class=\"pag\">págs. 68-69</span></p>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Test de actuadores mediante la máquina de diagnosis en las unidades J799, J800 o J136 y verificación del zumbido característico. (págs. 70-71)",
+     "html": "<p>Test de actuadores mediante la máquina de diagnosis en las unidades J799, J800 o J136 y verificación del zumbido característico. <span class=\"pag\">págs. 70-71</span></p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Limpieza de las rejillas protectoras en caso de acumulación de suciedad bajo el asiento. (pág. 68)",
+     "html": "<p>Limpieza de las rejillas protectoras en caso de acumulación de suciedad bajo el asiento. <span class=\"pag\">pág. 68</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Ventilador axial de asiento con rejilla de protección e integración en el cuerpo de material espumoso — Fuente: 409_e Audi A4 _08.pdf, pág. 68",
+     "html": "<ul>\n<li>Ventilador axial de asiento con rejilla de protección e integración en el cuerpo de material espumoso — Fuente: 409_e         Audi A4 _08.pdf, pág. 68</li>\n</ul>"
     }
    ]
   }
