@@ -24,11 +24,11 @@ Gobernar y coordinar automáticamente el funcionamiento del sistema de climatiza
 
 ## Tipos y características
 
-Calculador o centralita electrónica ubicada habitualmente detrás de los mandos y de la pantalla del climatizador en el salpicadero. Dispone de canales de entrada, salidas de potencia e interfaces de comunicación bidireccionales. (págs. 6, 8)
+Calculador o centralita electrónica ubicada habitualmente detrás de los mandos y de la pantalla del climatizador en el salpicadero. Dispone de canales de entrada, salidas de potencia e interfaces de comunicación bidireccionales. (págs. 6-8)
 
 ## Principio de funcionamiento
 
-Recibe las órdenes del usuario desde los mandos del cuadro y analiza de forma continua las señales de entrada procedentes de las sondas térmicas (habitáculo, exterior, aire soplado, evaporador) y del presostato. Con estos datos, emite señales de salida para posicionar los actuadores de las trampillas del conjunto de distribución, ajustar el caudal del impulsor de aire, acoplar o desacoplar el compresor y activar el electroventilador (GMV). Mantiene enlaces bidireccionales de intercambio de datos con los módulos electrónicos de inyección y refrigeración. (págs. 6-8)
+Recibe las órdenes del usuario desde los mandos del cuadro y analiza de forma continua las **señales de entrada** procedentes de las sondas térmicas (habitáculo, exterior, aire soplado, evaporador) y del presostato. Con estos datos, emite **señales de salida** para posicionar los actuadores de las trampillas del conjunto de distribución, ajustar el caudal del impulsor de aire, acoplar o desacoplar el compresor y activar el electroventilador (GMV). Mantiene enlaces bidireccionales de intercambio de datos con los módulos electrónicos de inyección y refrigeración. (págs. 6-8)
 
 ## Imágenes requeridas
 
