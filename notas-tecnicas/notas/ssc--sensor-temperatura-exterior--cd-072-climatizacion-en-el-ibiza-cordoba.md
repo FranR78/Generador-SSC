@@ -12,28 +12,39 @@ grupo: "Control de climatización"
 clave: sensor-temperatura-exterior
 area: climatizacion
 sistema: "control-climatizacion"
+forma_parte_de: control-climatizacion
 marca: "SEAT"
 fuentes: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 14"
-relacionados: ["unidad-control-climatizador", "radiocasete-comunicacion"]
-palabras: ["G17", "NTC", "retrovisor", "temperatura exterior", "acoplamiento magnético"]
+relacionados: ["unidad-control-climatizador"]
+palabras: ["G17", "NTC", "retrovisor derecho", "valor sustitutivo 20 ºC", "tres rayas"]
 ---
 
 ## Misión
 
-Determinar de forma continua la temperatura del aire exterior del vehículo para la indicación en el display y para la gestión del sistema autoclima. (pág. 14).
+Captar la temperatura del aire exterior para permitir el cálculo de la carga térmica y gestionar las funciones automáticas de climatización y acoplamiento del compresor. (pág. 14)
 
 ## Tipos y características
 
-Resistencia de tipo NTC ubicada en el interior de la carcasa del retrovisor exterior derecho (lado del acompañante). (pág. 14).
+Resistencia con coeficiente de temperatura negativo (NTC) montada en el interior de la carcasa del retrovisor exterior derecho (lado del acompañante). (pág. 14)
 
 ## Principio de funcionamiento
 
-Varía su resistencia eléctrica según la temperatura ambiente. La señal es leída por la unidad del radiocasete, que la muestra en el display y la transmite mediante línea de datos a la unidad de control del autoclima. (pág. 14).
+Modifica su resistencia eléctrica en proporción inversa a la temperatura del aire exterior. La señal es recibida por la unidad del radiocasete, que la presenta en el display y la retransmite mediante el bus de datos a la unidad del autoclima. (pág. 14)
 
-## Anomalías frecuentes
+## Valores de trabajo
 
-Fallo de la NTC, rotura del cableado en el paso de la puerta o conector del retrovisor deteriorado. (pág. 14).
+- Valor de temperatura sustitutivo por avería: 20 ºC. (pág. 14)
 
 ## Comportamiento en avería
 
-El radiocasete muestra tres rayas en la zona de temperatura del display. La unidad del autoclima toma un valor fijo sustitutivo de 20 ºC y elimina la señal de conexión del acoplamiento magnético del compresor (desconecta el aire acondicionado). El sistema sigue funcionando pero sin capacidad de enfriar. Parpadean todos los dígitos del display al conectar. (pág. 14).
+- La pantalla del display del radiocasete muestra tres rayas ("---") en el campo de temperatura exterior. (pág. 14)
+- La unidad del autoclima asume un valor fijo sustitutivo de 20 ºC y deshabilita la conexión del compresor de aire acondicionado. (pág. 14)
+- Todos los dígitos del display parpadean al conectar el autoclima. (pág. 14)
+
+## Cómo comprobarlo
+
+Mediante la función "08" (bloque de valores de medición, grupo 006) en el equipo de autodiagnosis. (pág. 37)
+
+## Imágenes requeridas
+
+- Ubicación del transmisor de temperatura exterior G17 en el retrovisor del lado del acompañante — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 14

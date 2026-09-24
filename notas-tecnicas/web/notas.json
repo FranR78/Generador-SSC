@@ -994,6 +994,14 @@
    "hecha": false
   },
   {
+   "nombre": "NT185_01",
+   "nt": 185,
+   "titulo": "Sistemas de climatización en el SEAT Ibiza y Córdoba '99",
+   "seccion": "8. Regulación y control",
+   "descripcion": "Ilustración de los mandos e indicación en pantalla de los sistemas de ventilación, calefacción motorizada y autoclima — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, págs. 4-5",
+   "hecha": false
+  },
+  {
    "nombre": "NT186_01",
    "nt": 186,
    "titulo": "Unidad climática",
@@ -1004,9 +1012,25 @@
   {
    "nombre": "NT187_01",
    "nt": 187,
-   "titulo": "Circuito frigorífico del Ibiza y Córdoba 99",
+   "titulo": "Circuito frigorífico del SEAT Ibiza y Córdoba '99",
    "seccion": "2. Fundamentos",
-   "descripcion": "Esquema del circuito frigorífico con la ubicación de componentes y tuberías — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 7",
+   "descripcion": "Esquema del circuito frigorífico mostrando la posición del compresor, condensador, filtro deshidratador, válvula de expansión, evaporador, silenciador y transmisor de presión — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 7",
+   "hecha": false
+  },
+  {
+   "nombre": "NT188_01",
+   "nt": 188,
+   "titulo": "Transmisor de temperatura interior con turbina de aspiración",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Sección del transmisor de temperatura interior G56 mostrando la resistencia NTC, la turbina y el motor eléctrico de aspiración V42 — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, págs. 12, 24",
+   "hecha": false
+  },
+  {
+   "nombre": "NT190_01",
+   "nt": 190,
+   "titulo": "Transmisor de temperatura exterior",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Ubicación del transmisor de temperatura exterior G17 en el retrovisor del lado del acompañante — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 14",
    "hecha": false
   },
   {
@@ -2418,6 +2442,46 @@
    "hecha": false
   },
   {
+   "nombre": "NT558_01",
+   "nt": 558,
+   "titulo": "Unidad climática",
+   "seccion": "Por ubicar",
+   "descripcion": "Vista en despiece de la unidad climática con la ubicación del evaporador, radiador de calefacción, turbina, regulador y motores de trampillas — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 6",
+   "hecha": false
+  },
+  {
+   "nombre": "NT559_01",
+   "nt": 559,
+   "titulo": "Estructura descentralizada de los equipos de mando electrónico",
+   "seccion": "8. Regulación y control",
+   "descripcion": "Cuadro sinóptico de la estructura descentralizada con las unidades J255, J293, radiocasete R, unidad de motor y sus sensores/actuadores asociados — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, págs. 8-11",
+   "hecha": false
+  },
+  {
+   "nombre": "NT560_01",
+   "nt": 560,
+   "titulo": "Transmisores de temperatura del aire de entrada",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Ubicación de los transmisores de temperatura del aire impulsado G191 en el difusor central y G192 en el difusor de los pies — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 13",
+   "hecha": false
+  },
+  {
+   "nombre": "NT561_01",
+   "nt": 561,
+   "titulo": "Interruptor térmico de temperatura exterior",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Ubicación e instalación del interruptor térmico F38 en la caja de aguas — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 14",
+   "hecha": false
+  },
+  {
+   "nombre": "NT562_01",
+   "nt": 562,
+   "titulo": "Unidad de manejo e indicación",
+   "seccion": "8. Regulación y control",
+   "descripcion": "Vista frontal del display E87 indicando parámetros de autoclima y calefacción motorizada — Fuente: UCE Clima Actuador.pdf, pág. 21-22",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -2442,7 +2506,7 @@
    "hecha": false
   }
  ],
- "total": 549,
+ "total": 554,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -4058,9 +4122,9 @@
    "clave": "ciclo-frigorifico",
    "seccion": "2. Fundamentos",
    "subgrupo": "",
-   "titulo": "Circuito frigorífico del Ibiza y Córdoba 99",
+   "titulo": "Circuito frigorífico del SEAT Ibiza y Córdoba '99",
    "codigo": "",
-   "menu": "Circuito frigorífico del Ibiza y Córdo",
+   "menu": "Circuito frigorífico del SEAT Ibiza y",
    "grupo": "Circuito frigorífico",
    "tipo": "proceso",
    "subtipo": "fundamento",
@@ -4083,42 +4147,42 @@
     "refrigerante-r134a"
    ],
    "palabras": [
-    "circuito frigorífico",
     "R134a",
-    "compresor autorregulado",
+    "compresor 7 cilindros",
     "silenciador",
-    "válvula de seguridad"
+    "válvula de seguridad",
+    "44 bares"
    ],
    "apartados": [
     {
      "titulo": "Objeto",
-     "texto": "Generar el ciclo de refrigeración para enfriar y deshumidificar el aire de entrada al habitáculo mediante la circulación y cambio de estado del fluido frigorífico. (pág. 7).",
-     "html": "<p>Generar el ciclo de refrigeración para enfriar y deshumidificar el aire de entrada al habitáculo mediante la circulación y cambio de estado del fluido frigorífico. <span class=\"pag\">pág. 7</span>.</p>"
+     "texto": "Explicar la disposición, estructura y parámetros operativos del circuito frigorífico de aire acondicionado empleado en el SEAT Ibiza y Córdoba '99. (pág. 7)",
+     "html": "<p>Explicar la disposición, estructura y parámetros operativos del circuito frigorífico de aire acondicionado empleado en el SEAT Ibiza y Córdoba '99. <span class=\"pag\">pág. 7</span></p>"
     },
     {
      "titulo": "Fundamento",
-     "texto": "El circuito frigorífico es idéntico en el sistema de aire acondicionado manual y en el autoclima. Utiliza un compresor autorregulado de 7 cilindros impulsado por correa Poly V y acoplamiento electromagnético. (pág. 7).",
-     "html": "<p>El circuito frigorífico es idéntico en el sistema de aire acondicionado manual y en el autoclima. Utiliza un compresor autorregulado de 7 cilindros impulsado por correa Poly V y acoplamiento electromagnético. <span class=\"pag\">pág. 7</span>.</p>"
+     "texto": "El circuito es cerrado y utiliza agente frigorífico R134a para extraer el calor del aire del habitáculo a través de cambios de estado del fluido entre las zonas de alta y baja presión. (pág. 7)",
+     "html": "<p>El circuito es cerrado y utiliza agente frigorífico R134a para extraer el calor del aire del habitáculo a través de cambios de estado del fluido entre las zonas de alta y baja presión. <span class=\"pag\">pág. 7</span></p>"
     },
     {
      "titulo": "Desarrollo",
-     "texto": "El circuito consta de los siguientes componentes acoplados en serie: Condensador: ubicado por delante del radiador del líquido refrigerante del motor. (pág. 7). Filtro deshidratador: retiene la humedad, filtra residuos de abrasión y evita la formación de burbujas. (pág. 7). Válvula de expansión: controla la presión y el caudal del agente frigorífico. (pág. 7). Evaporador: ubicado en la unidad climática, donde se produce la expansión y el intercambio de calor con el aire. (pág. 7). Compresor: tipo autorregulado de 7 cilindros con válvula de seguridad incorporada. (pág. 7). Elementos de control de presión: conmutador F129 (motores diésel) o transmisor electrónico G65 (motores gasolina), montados en el ramal de alta presión junto a la válvula de expansión. (pág. 7). Silenciador: situado en la tubería de baja presión, cerca del compresor, para amortiguar los ruidos producidos por las ondas de presión entre la válvula de expansión y el compresor. (pág. 7).",
-     "html": "<p>El circuito consta de los siguientes componentes acoplados en serie:</p>\n<ol>\n<li>Condensador: ubicado por delante del radiador del líquido refrigerante del motor. <span class=\"pag\">pág. 7</span>.</li>\n<li>Filtro deshidratador: retiene la humedad, filtra residuos de abrasión y evita la formación de burbujas. <span class=\"pag\">pág. 7</span>.</li>\n<li>Válvula de expansión: controla la presión y el caudal del agente frigorífico. <span class=\"pag\">pág. 7</span>.</li>\n<li>Evaporador: ubicado en la unidad climática, donde se produce la expansión y el intercambio de calor con el aire. <span class=\"pag\">pág. 7</span>.</li>\n<li>Compresor: tipo autorregulado de 7 cilindros con válvula de seguridad incorporada. <span class=\"pag\">pág. 7</span>.</li>\n<li>Elementos de control de presión: conmutador F129 (motores diésel) o transmisor electrónico G65 (motores gasolina), montados en el ramal de alta presión junto a la válvula de expansión. <span class=\"pag\">pág. 7</span>.</li>\n<li>Silenciador: situado en la tubería de baja presión, cerca del compresor, para amortiguar los ruidos producidos por las ondas de presión entre la válvula de expansión y el compresor. <span class=\"pag\">pág. 7</span>.</li>\n</ol>"
+     "texto": "El circuito frigorífico es idéntico tanto para el sistema manual como para el autoclima y consta de los siguientes elementos: Compresor: De 7 cilindros, tipo autorregulado. Arrastrado por correa Poly V mediante acoplamiento magnético. Incorpora una válvula de seguridad. (pág. 7) Condensador: Situado delante del radiador de refrigerante del motor para disipar el calor del gas comprimido. (pág. 7) Filtro deshidratador: Retiene la humedad, filtra residuos de abrasión y evita la formación de burbujas en el flujo de líquido. (pág. 7) Válvula de expansión: Controla el caudal y la presión del refrigerante que entra al evaporador. (pág. 7) Evaporador: Integrado en la unidad climática; en él se expande el refrigerante absorbiendo el calor del aire de entrada al habitáculo. (pág. 7) Elemento de control de presión: Conmutador F129 o transmisor electrónico G65 (según motorización), montado en alta presión junto a la válvula de expansión. (pág. 7) Silenciador: Situado en la línea de baja presión, próximo al compresor, para amortiguar los ruidos de las ondas de presión entre la válvula de expansión y el compresor. (pág. 7)",
+     "html": "<p>El circuito frigorífico es idéntico tanto para el sistema manual como para el autoclima y consta de los siguientes elementos:</p>\n<ul>\n<li><strong>Compresor:</strong> De 7 cilindros, tipo autorregulado. Arrastrado por correa Poly V mediante acoplamiento magnético. Incorpora una válvula de seguridad. <span class=\"pag\">pág. 7</span></li>\n<li><strong>Condensador:</strong> Situado delante del radiador de refrigerante del motor para disipar el calor del gas comprimido. <span class=\"pag\">pág. 7</span></li>\n<li><strong>Filtro deshidratador:</strong> Retiene la humedad, filtra residuos de abrasión y evita la formación de burbujas en el flujo de líquido. <span class=\"pag\">pág. 7</span></li>\n<li><strong>Válvula de expansión:</strong> Controla el caudal y la presión del refrigerante que entra al evaporador. <span class=\"pag\">pág. 7</span></li>\n<li><strong>Evaporador:</strong> Integrado en la unidad climática; en él se expande el refrigerante absorbiendo el calor del aire de entrada al habitáculo. <span class=\"pag\">pág. 7</span></li>\n<li><strong>Elemento de control de presión:</strong> Conmutador F129 o transmisor electrónico G65 (según motorización), montado en alta presión junto a la válvula de expansión. <span class=\"pag\">pág. 7</span></li>\n<li><strong>Silenciador:</strong> Situado en la línea de baja presión, próximo al compresor, para amortiguar los ruidos de las ondas de presión entre la válvula de expansión y el compresor. <span class=\"pag\">pág. 7</span></li>\n</ul>"
     },
     {
      "titulo": "Valores de referencia",
-     "texto": "Carga de agente frigorífico: 750 ± 50 gramos de R134a. (pág. 7). Tarado de la válvula de seguridad del compresor: 44 bares. (pág. 7).",
-     "html": "<ul>\n<li>Carga de agente frigorífico: 750 ± 50 gramos de R134a. <span class=\"pag\">pág. 7</span>.</li>\n<li>Tarado de la válvula de seguridad del compresor: 44 bares. <span class=\"pag\">pág. 7</span>.</li>\n</ul>"
+     "texto": "Cantidad de agente frigorífico R134a: 750 ± 50 gramos. (pág. 7) Presión de tarado de la válvula de seguridad del compresor: 44 bares. (pág. 7) Número de cilindros del compresor: 7 cilindros. (pág. 7)",
+     "html": "<ul>\n<li>Cantidad de agente frigorífico R134a: 750 ± 50 gramos. <span class=\"pag\">pág. 7</span></li>\n<li>Presión de tarado de la válvula de seguridad del compresor: 44 bares. <span class=\"pag\">pág. 7</span></li>\n<li>Número de cilindros del compresor: 7 cilindros. <span class=\"pag\">pág. 7</span></li>\n</ul>"
     },
     {
      "titulo": "Errores de concepto frecuentes",
-     "texto": "Creer que el circuito frigorífico del autoclima es diferente al del aire acondicionado manual; el circuito físico, sus componentes frigoríficos y la cantidad de carga son exactamente idénticos. (pág. 7).",
-     "html": "<p>Creer que el circuito frigorífico del autoclima es diferente al del aire acondicionado manual; el circuito físico, sus componentes frigoríficos y la cantidad de carga son exactamente idénticos. <span class=\"pag\">pág. 7</span>.</p>"
+     "texto": "Pensar que el circuito frigorífico del sistema con climatizador automático (autoclima) requiere componentes mecánicos principales distintos a los del sistema de aire acondicionado manual. (pág. 7) Confundir la función del silenciador de baja presión con un filtro de impurezas del circuito. (pág. 7)",
+     "html": "<ul>\n<li>Pensar que el circuito frigorífico del sistema con climatizador automático (autoclima) requiere componentes mecánicos principales distintos a los del sistema de aire acondicionado manual. <span class=\"pag\">pág. 7</span></li>\n<li>Confundir la función del silenciador de baja presión con un filtro de impurezas del circuito. <span class=\"pag\">pág. 7</span></li>\n</ul>"
     },
     {
      "titulo": "Imágenes requeridas",
-     "texto": "Esquema del circuito frigorífico con la ubicación de componentes y tuberías — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 7",
-     "html": "<ul>\n<li>Esquema del circuito frigorífico con la ubicación de componentes y tuberías — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 7</li>\n</ul>"
+     "texto": "Esquema del circuito frigorífico mostrando la posición del compresor, condensador, filtro deshidratador, válvula de expansión, evaporador, silenciador y transmisor de presión — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 7",
+     "html": "<ul>\n<li>Esquema del circuito frigorífico mostrando la posición del compresor, condensador, filtro deshidratador, válvula de expansión, evaporador, silenciador y transmisor de presión — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 7</li>\n</ul>"
     }
    ]
   },
@@ -14134,6 +14198,80 @@
    ]
   },
   {
+   "id": "ssc.presostato.termostato-caja-aguas.cd-072-climatizacion-en-el-ibiza-cordoba",
+   "nt": 561,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "presostato-binary-trinary-cuatrinary",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Interruptor térmico de temperatura exterior",
+   "codigo": "F38",
+   "menu": "Interruptor térmico de tempera F38",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 14",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "termostato-caja-aguas",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "control-climatizacion",
+   "relacionados": [
+    "compresor",
+    "evaporador",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "F38",
+    "caja de aguas",
+    "5 ºC",
+    "protección congelación",
+    "normalmente cerrado"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Impedir el funcionamiento del compresor de aire acondicionado a temperaturas ambiente excesivamente bajas para evitar la congelación de la humedad en el evaporador. (pág. 14)",
+     "html": "<p>Impedir el funcionamiento del compresor de aire acondicionado a temperaturas ambiente excesivamente bajas para evitar la congelación de la humedad en el evaporador. <span class=\"pag\">pág. 14</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Interruptor térmico bimetálico normalmente cerrado instalado en la caja de aguas del vehículo. (pág. 14)",
+     "html": "<p>Interruptor térmico bimetálico normalmente cerrado instalado en la caja de aguas del vehículo. <span class=\"pag\">pág. 14</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Mantiene sus contactos cerrados por encima de 5 ºC permitiendo el paso de la señal de conexión de 12 V enviada desde la unidad de control del autoclima hacia la unidad del aire acondicionado J293. Al descender la temperatura por debajo de 5 ºC, sus contactos se abren mecánicamente e interrumpen la línea eléctrica. (pág. 14)",
+     "html": "<p>Mantiene sus contactos cerrados por encima de 5 ºC permitiendo el paso de la señal de conexión de 12 V enviada desde la unidad de control del autoclima hacia la unidad del aire acondicionado J293. Al descender la temperatura por debajo de 5 ºC, sus contactos se abren mecánicamente e interrumpen la línea eléctrica. <span class=\"pag\">pág. 14</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Temperatura de apertura de contactos: < 5 ºC. (pág. 14) Tensión de la señal conducida: 12 V. (pág. 14)",
+     "html": "<ul>\n<li>Temperatura de apertura de contactos: &lt; 5 ºC. <span class=\"pag\">pág. 14</span></li>\n<li>Tensión de la señal conducida: 12 V. <span class=\"pag\">pág. 14</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Contactos pegados o agarrotados en posición de cierre permanente. (pág. 14)",
+     "html": "<p>Contactos pegados o agarrotados en posición de cierre permanente. <span class=\"pag\">pág. 14</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si sus contactos quedan permanentemente cerrados, el compresor continua conectando a temperaturas inferiores a 5 ºC, provocando la congelación de la humedad retenida en el evaporador y bloqueando el paso de aire. (pág. 14) Si sus contactos quedan abiertos, el compresor no conectará en ningún momento. (pág. 14)",
+     "html": "<ul>\n<li>Si sus contactos quedan permanentemente cerrados, el compresor continua conectando a temperaturas inferiores a 5 ºC, provocando la congelación de la humedad retenida en el evaporador y bloqueando el paso de aire. <span class=\"pag\">pág. 14</span></li>\n<li>Si sus contactos quedan abiertos, el compresor no conectará en ningún momento. <span class=\"pag\">pág. 14</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Ubicación e instalación del interruptor térmico F38 en la caja de aguas — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 14",
+     "html": "<ul>\n<li>Ubicación e instalación del interruptor térmico F38 en la caja de aguas — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 14</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.transmisor-presion.2-introduccion-a-la-refrigeracion",
    "nt": 14,
    "modulo": "ssc",
@@ -15229,43 +15367,52 @@
    "variante": "",
    "area": "climatizacion",
    "sistema": "control-climatizacion",
-   "formaParteDe": "",
+   "formaParteDe": "control-climatizacion",
    "relacionados": [
-    "unidad-control-climatizador",
-    "radiocasete-comunicacion"
+    "unidad-control-climatizador"
    ],
    "palabras": [
     "G17",
     "NTC",
-    "retrovisor",
-    "temperatura exterior",
-    "acoplamiento magnético"
+    "retrovisor derecho",
+    "valor sustitutivo 20 ºC",
+    "tres rayas"
    ],
    "apartados": [
     {
      "titulo": "Misión",
-     "texto": "Determinar de forma continua la temperatura del aire exterior del vehículo para la indicación en el display y para la gestión del sistema autoclima. (pág. 14).",
-     "html": "<p>Determinar de forma continua la temperatura del aire exterior del vehículo para la indicación en el display y para la gestión del sistema autoclima. <span class=\"pag\">pág. 14</span>.</p>"
+     "texto": "Captar la temperatura del aire exterior para permitir el cálculo de la carga térmica y gestionar las funciones automáticas de climatización y acoplamiento del compresor. (pág. 14)",
+     "html": "<p>Captar la temperatura del aire exterior para permitir el cálculo de la carga térmica y gestionar las funciones automáticas de climatización y acoplamiento del compresor. <span class=\"pag\">pág. 14</span></p>"
     },
     {
      "titulo": "Tipos y características",
-     "texto": "Resistencia de tipo NTC ubicada en el interior de la carcasa del retrovisor exterior derecho (lado del acompañante). (pág. 14).",
-     "html": "<p>Resistencia de tipo NTC ubicada en el interior de la carcasa del retrovisor exterior derecho (lado del acompañante). <span class=\"pag\">pág. 14</span>.</p>"
+     "texto": "Resistencia con coeficiente de temperatura negativo (NTC) montada en el interior de la carcasa del retrovisor exterior derecho (lado del acompañante). (pág. 14)",
+     "html": "<p>Resistencia con coeficiente de temperatura negativo (NTC) montada en el interior de la carcasa del retrovisor exterior derecho (lado del acompañante). <span class=\"pag\">pág. 14</span></p>"
     },
     {
      "titulo": "Principio de funcionamiento",
-     "texto": "Varía su resistencia eléctrica según la temperatura ambiente. La señal es leída por la unidad del radiocasete, que la muestra en el display y la transmite mediante línea de datos a la unidad de control del autoclima. (pág. 14).",
-     "html": "<p>Varía su resistencia eléctrica según la temperatura ambiente. La señal es leída por la unidad del radiocasete, que la muestra en el display y la transmite mediante línea de datos a la unidad de control del autoclima. <span class=\"pag\">pág. 14</span>.</p>"
+     "texto": "Modifica su resistencia eléctrica en proporción inversa a la temperatura del aire exterior. La señal es recibida por la unidad del radiocasete, que la presenta en el display y la retransmite mediante el bus de datos a la unidad del autoclima. (pág. 14)",
+     "html": "<p>Modifica su resistencia eléctrica en proporción inversa a la temperatura del aire exterior. La señal es recibida por la unidad del radiocasete, que la presenta en el display y la retransmite mediante el bus de datos a la unidad del autoclima. <span class=\"pag\">pág. 14</span></p>"
     },
     {
-     "titulo": "Anomalías frecuentes",
-     "texto": "Fallo de la NTC, rotura del cableado en el paso de la puerta o conector del retrovisor deteriorado. (pág. 14).",
-     "html": "<p>Fallo de la NTC, rotura del cableado en el paso de la puerta o conector del retrovisor deteriorado. <span class=\"pag\">pág. 14</span>.</p>"
+     "titulo": "Valores de trabajo",
+     "texto": "Valor de temperatura sustitutivo por avería: 20 ºC. (pág. 14)",
+     "html": "<ul>\n<li>Valor de temperatura sustitutivo por avería: 20 ºC. <span class=\"pag\">pág. 14</span></li>\n</ul>"
     },
     {
      "titulo": "Comportamiento en avería",
-     "texto": "El radiocasete muestra tres rayas en la zona de temperatura del display. La unidad del autoclima toma un valor fijo sustitutivo de 20 ºC y elimina la señal de conexión del acoplamiento magnético del compresor (desconecta el aire acondicionado). El sistema sigue funcionando pero sin capacidad de enfriar. Parpadean todos los dígitos del display al conectar. (pág. 14).",
-     "html": "<p>El radiocasete muestra tres rayas en la zona de temperatura del display. La unidad del autoclima toma un valor fijo sustitutivo de 20 ºC y elimina la señal de conexión del acoplamiento magnético del compresor (desconecta el aire acondicionado). El sistema sigue funcionando pero sin capacidad de enfriar. Parpadean todos los dígitos del display al conectar. <span class=\"pag\">pág. 14</span>.</p>"
+     "texto": "La pantalla del display del radiocasete muestra tres rayas (\"---\") en el campo de temperatura exterior. (pág. 14) La unidad del autoclima asume un valor fijo sustitutivo de 20 ºC y deshabilita la conexión del compresor de aire acondicionado. (pág. 14) Todos los dígitos del display parpadean al conectar el autoclima. (pág. 14)",
+     "html": "<ul>\n<li>La pantalla del display del radiocasete muestra tres rayas (\"---\") en el campo de temperatura exterior. <span class=\"pag\">pág. 14</span></li>\n<li>La unidad del autoclima asume un valor fijo sustitutivo de 20 ºC y deshabilita la conexión del compresor de aire acondicionado. <span class=\"pag\">pág. 14</span></li>\n<li>Todos los dígitos del display parpadean al conectar el autoclima. <span class=\"pag\">pág. 14</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Mediante la función \"08\" (bloque de valores de medición, grupo 006) en el equipo de autodiagnosis. (pág. 37)",
+     "html": "<p>Mediante la función \"08\" (bloque de valores de medición, grupo 006) en el equipo de autodiagnosis. <span class=\"pag\">pág. 37</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Ubicación del transmisor de temperatura exterior G17 en el retrovisor del lado del acompañante — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 14",
+     "html": "<ul>\n<li>Ubicación del transmisor de temperatura exterior G17 en el retrovisor del lado del acompañante — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 14</li>\n</ul>"
     }
    ]
   },
@@ -16253,7 +16400,7 @@
    "clave": "sensor-temperatura-ntc-interior",
    "seccion": "7. Sensores y actuadores",
    "subgrupo": "",
-   "titulo": "Transmisor de temperatura interior",
+   "titulo": "Transmisor de temperatura interior con turbina de aspiración",
    "codigo": "G56",
    "menu": "Transmisor de temperatura inte G56",
    "grupo": "Control de climatización",
@@ -16268,47 +16415,52 @@
    "variante": "",
    "area": "climatizacion",
    "sistema": "control-climatizacion",
-   "formaParteDe": "",
+   "formaParteDe": "control-climatizacion",
    "relacionados": [
     "unidad-control-climatizador"
    ],
    "palabras": [
     "G56",
+    "V42",
     "NTC",
-    "temperatura interior",
-    "turbina de aire",
-    "V42"
+    "aspiración de aire",
+    "parpadeo display"
    ],
    "apartados": [
     {
      "titulo": "Misión",
-     "texto": "Medir la temperatura real del aire del interior del habitáculo para que la unidad de control del autoclima calcule la posición de la trampilla de temperatura. (págs. 12, 24).",
-     "html": "<p>Medir la temperatura real del aire del interior del habitáculo para que la unidad de control del autoclima calcule la posición de la trampilla de temperatura. <span class=\"pag\">págs. 12, 24</span>.</p>"
+     "texto": "Medir con precisión la temperatura real del aire del habitáculo para que la unidad de control del autoclima ajuste la potencia de refrigeración y calefacción. (págs. 12, 24)",
+     "html": "<p>Medir con precisión la temperatura real del aire del habitáculo para que la unidad de control del autoclima ajuste la potencia de refrigeración y calefacción. <span class=\"pag\">págs. 12, 24</span></p>"
     },
     {
      "titulo": "Tipos y características",
-     "texto": "Resistencia de tipo NTC (coeficiente de temperatura negativo) montada detrás del tablero de instrumentos, junto a la columna de dirección, formando un único conjunto con un motor de turbina V42. (págs. 12, 24).",
-     "html": "<p>Resistencia de tipo NTC (coeficiente de temperatura negativo) montada detrás del tablero de instrumentos, junto a la columna de dirección, formando un único conjunto con un motor de turbina V42. <span class=\"pag\">págs. 12, 24</span>.</p>"
+     "texto": "Sensor térmico tipo NTC integrado en un conjunto junto a un pequeño electromotor con turbina de aspiración (V42). Va montado detrás del tablero de instrumentos, junto a la columna de dirección. (pág. 12)",
+     "html": "<p>Sensor térmico tipo NTC integrado en un conjunto junto a un pequeño electromotor con turbina de aspiración (V42). Va montado detrás del tablero de instrumentos, junto a la columna de dirección. <span class=\"pag\">pág. 12</span></p>"
     },
     {
      "titulo": "Principio de funcionamiento",
-     "texto": "El motor V42 hace girar una turbina que provoca un flujo continuo de aire del habitáculo a través del sensor NTC. La resistencia eléctrica varía de forma inversamente proporcional a la temperatura del aire aspirado. (págs. 12, 24).",
-     "html": "<p>El motor V42 hace girar una turbina que provoca un flujo continuo de aire del habitáculo a través del sensor NTC. La resistencia eléctrica varía de forma inversamente proporcional a la temperatura del aire aspirado. <span class=\"pag\">págs. 12, 24</span>.</p>"
+     "texto": "El motor eléctrico V42 impulsa de forma continua una turbina que aspira aire del habitáculo haciéndolo pasar a través del elemento sensor NTC. La resistencia NTC varía su valor en función de la temperatura del aire aspirado, enviando la señal eléctrica correspondiente a la unidad de control. El motor V42 incorpora una placa electrónica interna que gobierna su giro y detecta fallos funcionales. (págs. 12, 24)",
+     "html": "<p>El motor eléctrico V42 impulsa de forma continua una turbina que aspira aire del habitáculo haciéndolo pasar a través del elemento sensor NTC. La resistencia NTC varía su valor en función de la temperatura del aire aspirado, enviando la señal eléctrica correspondiente a la unidad de control. El motor V42 incorpora una placa electrónica interna que gobierna su giro y detecta fallos funcionales. <span class=\"pag\">págs. 12, 24</span></p>"
     },
     {
      "titulo": "Valores de trabajo",
-     "texto": "Campo de medición de la NTC: entre -40 ºC y +85 ºC. (pág. 12).",
-     "html": "<p>Campo de medición de la NTC: entre -40 ºC y +85 ºC. <span class=\"pag\">pág. 12</span>.</p>"
-    },
-    {
-     "titulo": "Anomalías frecuentes",
-     "texto": "Acumulación de polvo o suciedad en la toma de aire de la turbina o en la NTC, avería eléctrica del motor V42 o interrupción/cortocircuito en la NTC. (págs. 12, 24).",
-     "html": "<p>Acumulación de polvo o suciedad en la toma de aire de la turbina o en la NTC, avería eléctrica del motor V42 o interrupción/cortocircuito en la NTC. <span class=\"pag\">págs. 12, 24</span>.</p>"
+     "texto": "Campo de medición de la NTC: de -40 ºC a +85 ºC. (pág. 12) Alimentación eléctrica del motor V42: 12 V con señal de borne 15 (contacto). (pág. 24)",
+     "html": "<ul>\n<li>Campo de medición de la NTC: de -40 ºC a +85 ºC. <span class=\"pag\">pág. 12</span></li>\n<li>Alimentación eléctrica del motor V42: 12 V con señal de borne 15 (contacto). <span class=\"pag\">pág. 24</span></li>\n</ul>"
     },
     {
      "titulo": "Comportamiento en avería",
-     "texto": "La unidad de control toma como referencia un valor fijo de temperatura de 22 ºC. Al seleccionar temperaturas distintas a 22 ºC, el habitáculo se calienta o enfría más de lo solicitado. Cada vez que se conecta el autoclima, parpadean los dígitos del display. (pág. 12).",
-     "html": "<p>La unidad de control toma como referencia un valor fijo de temperatura de 22 ºC. Al seleccionar temperaturas distintas a 22 ºC, el habitáculo se calienta o enfría más de lo solicitado. Cada vez que se conecta el autoclima, parpadean los dígitos del display. <span class=\"pag\">pág. 12</span>.</p>"
+     "texto": "Si falla el transmisor o el motor de la turbina V42, parpadean todos los dígitos del display central al conectar el autoclima. (págs. 12, 24) En caso de avería en el motor V42, la unidad de control del autoclima aplica un factor de corrección sobre el valor del transmisor G56 para simular la temperatura del habitáculo. (pág. 24)",
+     "html": "<ul>\n<li>Si falla el transmisor o el motor de la turbina V42, parpadean todos los dígitos del display central al conectar el autoclima. <span class=\"pag\">págs. 12, 24</span></li>\n<li>En caso de avería en el motor V42, la unidad de control del autoclima aplica un factor de corrección sobre el valor del transmisor G56 para simular la temperatura del habitáculo. <span class=\"pag\">pág. 24</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Mediante la función \"08\" (bloque de valores de medición, grupo 005) del equipo de autodiagnosis. (pág. 37)",
+     "html": "<p>Mediante la función \"08\" (bloque de valores de medición, grupo 005) del equipo de autodiagnosis. <span class=\"pag\">pág. 37</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Sección del transmisor de temperatura interior G56 mostrando la resistencia NTC, la turbina y el motor eléctrico de aspiración V42 — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, págs. 12, 24",
+     "html": "<ul>\n<li>Sección del transmisor de temperatura interior G56 mostrando la resistencia NTC, la turbina y el motor eléctrico de aspiración V42 — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, págs. 12, 24</li>\n</ul>"
     }
    ]
   },
@@ -16938,6 +17090,79 @@
      "titulo": "Imágenes requeridas",
      "texto": "Componentes del motor V42 mostrando la placa electrónica, el estator y la turbina con eje imantado (rotor) — Fuente: MOTOR TURBINA S. Cº interior.pdf, pág. 24",
      "html": "<ul>\n<li>Componentes del motor V42 mostrando la placa electrónica, el estator y la turbina con eje imantado (rotor) — Fuente: MOTOR TURBINA S. Cº interior.pdf, pág. 24</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sensor-temperatura-interior.difusores.cd-072-climatizacion-en-el-ibiza-cordoba",
+   "nt": 560,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-temperatura-ntc-interior",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Transmisores de temperatura del aire de entrada",
+   "codigo": "G191 / G192",
+   "menu": "Transmisores de temperatura de G191 / G192",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 12-13",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "difusores",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "G191",
+    "G192",
+    "difusor central",
+    "difusor pies",
+    "NTC",
+    "valor medio"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la temperatura del aire impulsado a través de las salidas de ventilación hacia el habitáculo para ajustar la mezcla de aire de la unidad climática. (págs. 12-13)",
+     "html": "<p>Medir la temperatura del aire impulsado a través de las salidas de ventilación hacia el habitáculo para ajustar la mezcla de aire de la unidad climática. <span class=\"pag\">págs. 12-13</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Pareja de termistores tipo NTC ubicados en puntos clave de los canales de distribución: Transmisor G191: Montado en el difusor central. (pág. 13) Transmisor G192: Montado en el difusor de la zona de los pies. (pág. 13)",
+     "html": "<p>Pareja de termistores tipo NTC ubicados en puntos clave de los canales de distribución:</p>\n<ul>\n<li><strong>Transmisor G191:</strong> Montado en el difusor central. <span class=\"pag\">pág. 13</span></li>\n<li><strong>Transmisor G192:</strong> Montado en el difusor de la zona de los pies. <span class=\"pag\">pág. 13</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Cada elemento varía su resistencia eléctrica según la temperatura del aire impulsado que pasa a su alrededor. La unidad de control del autoclima procesa ambas señales y calcula un valor medio de temperatura para regular con precisión el posicionamiento de la trampilla de mezcla. (págs. 12-13)",
+     "html": "<p>Cada elemento varía su resistencia eléctrica según la temperatura del aire impulsado que pasa a su alrededor. La unidad de control del autoclima procesa ambas señales y calcula un valor medio de temperatura para regular con precisión el posicionamiento de la trampilla de mezcla. <span class=\"pag\">págs. 12-13</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Margen de temperatura referenciado de las NTC: de -40 ºC a +85 ºC. (pág. 13)",
+     "html": "<ul>\n<li>Margen de temperatura referenciado de las NTC: de -40 ºC a +85 ºC. <span class=\"pag\">pág. 13</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Pérdida de regulación automática del autoclima: el sistema fija los parámetros operativos en el estado en que se encontraban al producirse el fallo. (pág. 13) Parpadeo de todos los dígitos de la pantalla del display al conectar el equipo. (pág. 13)",
+     "html": "<ul>\n<li>Pérdida de regulación automática del autoclima: el sistema fija los parámetros operativos en el estado en que se encontraban al producirse el fallo. <span class=\"pag\">pág. 13</span></li>\n<li>Parpadeo de todos los dígitos de la pantalla del display al conectar el equipo. <span class=\"pag\">pág. 13</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Mediante la función \"08\" (bloque de valores de medición, grupo 006) del equipo de autodiagnosis. (pág. 37)",
+     "html": "<p>Mediante la función \"08\" (bloque de valores de medición, grupo 006) del equipo de autodiagnosis. <span class=\"pag\">pág. 37</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Ubicación de los transmisores de temperatura del aire impulsado G191 en el difusor central y G192 en el difusor de los pies — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 13",
+     "html": "<ul>\n<li>Ubicación de los transmisores de temperatura del aire impulsado G191 en el difusor central y G192 en el difusor de los pies — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 13</li>\n</ul>"
     }
    ]
   },
@@ -21605,6 +21830,72 @@
    ]
   },
   {
+   "id": "ssc.unidad-control-climatizador.display.uce-clima-actuador",
+   "nt": 562,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "unidad-control-climatizador",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Unidad de manejo e indicación",
+   "codigo": "E87",
+   "menu": "Unidad de manejo e indicación E87",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "UCE Clima Actuador.pdf, págs. 21-22",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "display",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-radiocasete"
+   ],
+   "palabras": [
+    "display",
+    "autoclima",
+    "calefacción motorizada",
+    "bus de datos"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Se ubica en la consola central e informa sobre los parámetros de funcionamiento del autoclima o la calefacción motorizada, el radiocasete y el ordenador de a bordo. (pág. 21)",
+     "html": "<p>Se ubica en la consola central e informa sobre los parámetros de funcionamiento del autoclima o la calefacción motorizada, el radiocasete y el ordenador de a bordo. <span class=\"pag\">pág. 21</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Existen dos tipos de display, según se trate de un montaje de autoclima o de calefacción motorizada. Destaca por sus grandes dimensiones, lo que permite ofrecer una gran cantidad de información y facilita su lectura. (pág. 21)",
+     "html": "<p>Existen dos tipos de display, según se trate de un montaje de autoclima o de calefacción motorizada. Destaca por sus grandes dimensiones, lo que permite ofrecer una gran cantidad de información y facilita su lectura. <span class=\"pag\">pág. 21</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Los dígitos del display referentes al autoclima o la calefacción motorizada son excitados de acuerdo con la información transmitida a través de un bus de datos de 18 cables desde la unidad de control del radiocasete. A su vez, el radiocasete recibe previamente esta información mediante otro bus de datos de 1 cable procedente de la unidad de control del autoclima o la calefacción motorizada. La alimentación eléctrica del display la realiza también la unidad de control del radiocasete. (pág. 21-22)",
+     "html": "<p>Los dígitos del display referentes al autoclima o la calefacción motorizada son excitados de acuerdo con la información transmitida a través de un bus de datos de 18 cables desde la unidad de control del radiocasete. A su vez, el radiocasete recibe previamente esta información mediante otro bus de datos de 1 cable procedente de la unidad de control del autoclima o la calefacción motorizada. La alimentación eléctrica del display la realiza también la unidad de control del radiocasete. <span class=\"pag\">pág. 21-22</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Bus de datos de 18 cables entre radiocasete y display; bus de datos de 1 cable entre unidad de autoclima/calefacción motorizada y radiocasete. (pág. 21-22)",
+     "html": "<p>Bus de datos de 18 cables entre radiocasete y display; bus de datos de 1 cable entre unidad de autoclima/calefacción motorizada y radiocasete. <span class=\"pag\">pág. 21-22</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si se produce una avería en la comunicación del bus de datos entre el radiocasete y la unidad del autoclima o la calefacción motorizada, los datos referentes a estos equipos dejan de ser visibles. En caso de avería del propio display, debe sustituirse la unidad de manejo e indicación E87 completa. (pág. 22)",
+     "html": "<p>Si se produce una avería en la comunicación del bus de datos entre el radiocasete y la unidad del autoclima o la calefacción motorizada, los datos referentes a estos equipos dejan de ser visibles. En caso de avería del propio display, debe sustituirse la unidad de manejo e indicación E87 completa. <span class=\"pag\">pág. 22</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Vista frontal del display E87 indicando parámetros de autoclima y calefacción motorizada — Fuente: UCE Clima Actuador.pdf, pág. 21-22",
+     "html": "<ul>\n<li>Vista frontal del display E87 indicando parámetros de autoclima y calefacción motorizada — Fuente: UCE Clima Actuador.pdf, pág. 21-22</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.regulacion-automatica.2-introduccion-a-la-refrigeracion",
    "nt": 20,
    "modulo": "ssc",
@@ -22193,9 +22484,9 @@
    "clave": "regulacion-automatica",
    "seccion": "8. Regulación y control",
    "subgrupo": "",
-   "titulo": "Equipos de climatización en el Ibiza y Córdoba 99",
+   "titulo": "Sistemas de climatización en el SEAT Ibiza y Córdoba '99",
    "codigo": "",
-   "menu": "Equipos de climatización en el Ibiza y",
+   "menu": "Sistemas de climatización en el SEAT I",
    "grupo": "Control de climatización",
    "tipo": "proceso",
    "subtipo": "fundamento",
@@ -22210,35 +22501,40 @@
    "sistema": "control-climatizacion",
    "formaParteDe": "",
    "relacionados": [
-    "unidad-control-climatizador",
-    "circuito-frigorifico"
+    "unidad-control-climatizador"
    ],
    "palabras": [
     "ventilación",
     "calefacción motorizada",
     "autoclima",
-    "aire acondicionado manual"
+    "confort",
+    "mandos giratorios"
    ],
    "apartados": [
     {
      "titulo": "Objeto",
-     "texto": "Definir los diferentes sistemas instalados en el Ibiza/Córdoba '99 para regular y mantener la temperatura en el interior del habitáculo. (pág. 4).",
-     "html": "<p>Definir los diferentes sistemas instalados en el Ibiza/Córdoba '99 para regular y mantener la temperatura en el interior del habitáculo. <span class=\"pag\">pág. 4</span>.</p>"
+     "texto": "Obtener la temperatura deseada en el interior del habitáculo para garantizar el confort de los ocupantes mediante distintos niveles de equipamiento. (págs. 4-5)",
+     "html": "<p>Obtener la temperatura deseada en el interior del habitáculo para garantizar el confort de los ocupantes mediante distintos niveles de equipamiento. <span class=\"pag\">págs. 4-5</span></p>"
     },
     {
      "titulo": "Fundamento",
-     "texto": "El acondicionamiento del aire se realiza mediante cuatro variantes de equipamiento según el nivel de confort y regulación: ventilación-calefacción manual, aire acondicionado manual, calefacción motorizada y autoclima. (págs. 4-5).",
-     "html": "<p>El acondicionamiento del aire se realiza mediante cuatro variantes de equipamiento según el nivel de confort y regulación: ventilación-calefacción manual, aire acondicionado manual, calefacción motorizada y autoclima. <span class=\"pag\">págs. 4-5</span>.</p>"
+     "texto": "Dependiendo del equipamiento del vehículo, la regulación térmica puede realizarse mediante accionamiento puramente mecánico (ventilación-calefacción) o mediante sistemas de mando electrónico (calefacción motorizada y autoclima). El equipo autoclima combina el aire acondicionado con la gestión electrónica para mantener de forma automática la temperatura preseleccionada. (págs. 4-5)",
+     "html": "<p>Dependiendo del equipamiento del vehículo, la regulación térmica puede realizarse mediante accionamiento puramente mecánico (ventilación-calefacción) o mediante sistemas de mando electrónico (calefacción motorizada y autoclima). El equipo autoclima combina el aire acondicionado con la gestión electrónica para mantener de forma automática la temperatura preseleccionada. <span class=\"pag\">págs. 4-5</span></p>"
     },
     {
      "titulo": "Desarrollo",
-     "texto": "Ventilación-calefacción: La distribución de aire y la temperatura se seleccionan mecánicamente con mandos giratorios. La recirculación de aire y la turbina de ventilación son impulsadas por motores eléctricos. Con este equipo solo es posible elevar la temperatura de entrada pasándola por el radiador de la calefacción. (pág. 4). Aire acondicionado manual: Dispone del mismo accionamiento para distribución, temperatura, recirculación y turbina que la ventilación-calefacción, añadiendo un pulsador que conecta eléctricamente el aire acondicionado. Permite elevar o disminuir la temperatura canalizando el aire a través del evaporador y del radiador de calefacción. (pág. 4). Calefacción motorizada: La turbina, la trampilla de temperatura de entrada y la trampilla de recirculación se accionan mediante motores eléctricos comandados por una unidad de control electrónica. La distribución de aire se selecciona mecánicamente con un mando giratorio. Un display en la consola central informa de los parámetros de funcionamiento. (pág. 5). Autoclima: Equipo de aire acondicionado con regulación y mantenimiento electrónico de la temperatura. Una unidad de control regula la temperatura del aire y activa la recirculación, el aire acondicionado y la velocidad de la turbina, automáticamente o a voluntad del usuario. La distribución de aire se realiza mecánicamente con mando giratorio. (pág. 5).",
-     "html": "<ol>\n<li>Ventilación-calefacción: La distribución de aire y la temperatura se seleccionan mecánicamente con mandos giratorios. La recirculación de aire y la turbina de ventilación son impulsadas por motores eléctricos. Con este equipo solo es posible elevar la temperatura de entrada pasándola por el radiador de la calefacción. <span class=\"pag\">pág. 4</span>.</li>\n<li>Aire acondicionado manual: Dispone del mismo accionamiento para distribución, temperatura, recirculación y turbina que la ventilación-calefacción, añadiendo un pulsador que conecta eléctricamente el aire acondicionado. Permite elevar o disminuir la temperatura canalizando el aire a través del evaporador y del radiador de calefacción. <span class=\"pag\">pág. 4</span>.</li>\n<li>Calefacción motorizada: La turbina, la trampilla de temperatura de entrada y la trampilla de recirculación se accionan mediante motores eléctricos comandados por una unidad de control electrónica. La distribución de aire se selecciona mecánicamente con un mando giratorio. Un display en la consola central informa de los parámetros de funcionamiento. <span class=\"pag\">pág. 5</span>.</li>\n<li>Autoclima: Equipo de aire acondicionado con regulación y mantenimiento electrónico de la temperatura. Una unidad de control regula la temperatura del aire y activa la recirculación, el aire acondicionado y la velocidad de la turbina, automáticamente o a voluntad del usuario. La distribución de aire se realiza mecánicamente con mando giratorio. <span class=\"pag\">pág. 5</span>.</li>\n</ol>"
+     "texto": "El Ibiza/Córdoba '99 dispone de tres alternativas de climatización: Ventilación-calefacción: La distribución de aire y la temperatura se seleccionan mecánicamente con dos mandos giratorios. La recirculación de aire y la turbina de ventilación se impulsan mediante dos motores eléctricos. Solo permite elevar la temperatura del aire exterior al hacerlo pasar por el radiador de la calefacción. (pág. 4) Calefacción motorizada: Equipo de mando electrónico que regula mecánicamente la distribución de aire y electrónicamente la temperatura deseada, siempre que la temperatura exterior lo permita. (pág. 4) Autoclima: Equipo de aire acondicionado con gestión electrónica integral. Una unidad de control regula la temperatura del aire, activa la recirculación, conecta el aire acondicionado y ajusta la velocidad de la turbina de forma automática o manual. Los datos de funcionamiento se visualizan en un display central y la distribución de aire se mantiene por mando giratorio mecánico. (pág. 5)",
+     "html": "<p>El Ibiza/Córdoba '99 dispone de tres alternativas de climatización:</p>\n<ul>\n<li><strong>Ventilación-calefacción:</strong> La distribución de aire y la temperatura se seleccionan mecánicamente con dos mandos giratorios. La recirculación de aire y la turbina de ventilación se impulsan mediante dos motores eléctricos. Solo permite elevar la temperatura del aire exterior al hacerlo pasar por el radiador de la calefacción. <span class=\"pag\">pág. 4</span></li>\n<li><strong>Calefacción motorizada:</strong> Equipo de mando electrónico que regula mecánicamente la distribución de aire y electrónicamente la temperatura deseada, siempre que la temperatura exterior lo permita. <span class=\"pag\">pág. 4</span></li>\n<li><strong>Autoclima:</strong> Equipo de aire acondicionado con gestión electrónica integral. Una unidad de control regula la temperatura del aire, activa la recirculación, conecta el aire acondicionado y ajusta la velocidad de la turbina de forma automática o manual. Los datos de funcionamiento se visualizan en un display central y la distribución de aire se mantiene por mando giratorio mecánico. <span class=\"pag\">pág. 5</span></li>\n</ul>"
     },
     {
      "titulo": "Errores de concepto frecuentes",
-     "texto": "Confundir el autoclima con la calefacción motorizada; la calefacción motorizada no dispone de circuito frigorífico ni de función de refrigeración por evaporador, limitándose a elevar la temperatura mediante el radiador de calefacción con gestión eléctrica de trampillas. (págs. 4-5).",
-     "html": "<p>Confundir el autoclima con la calefacción motorizada; la calefacción motorizada no dispone de circuito frigorífico ni de función de refrigeración por evaporador, limitándose a elevar la temperatura mediante el radiador de calefacción con gestión eléctrica de trampillas. <span class=\"pag\">págs. 4-5</span>.</p>"
+     "texto": "Creer que el equipo de ventilación-calefacción manual permite enfriar el aire por debajo de la temperatura ambiente exterior. (pág. 4) Suponer que la distribución de aire en el autoclima se gestiona mediante servomotores eléctricos, cuando se realiza mediante un mando giratorio mecánico. (pág. 5)",
+     "html": "<ul>\n<li>Creer que el equipo de ventilación-calefacción manual permite enfriar el aire por debajo de la temperatura ambiente exterior. <span class=\"pag\">pág. 4</span></li>\n<li>Suponer que la distribución de aire en el autoclima se gestiona mediante servomotores eléctricos, cuando se realiza mediante un mando giratorio mecánico. <span class=\"pag\">pág. 5</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Ilustración de los mandos e indicación en pantalla de los sistemas de ventilación, calefacción motorizada y autoclima — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, págs. 4-5",
+     "html": "<ul>\n<li>Ilustración de los mandos e indicación en pantalla de los sistemas de ventilación, calefacción motorizada y autoclima — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, págs. 4-5</li>\n</ul>"
     }
    ]
   },
@@ -23526,6 +23822,68 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema del envío de la señal de positivo desde la unidad del autoclima hacia la unidad del aire acondicionado y la unidad del motor — Fuente: MOTOR TURBINA S. Cº interior.pdf, pág. 24",
      "html": "<ul>\n<li>Esquema del envío de la señal de positivo desde la unidad del autoclima hacia la unidad del aire acondicionado y la unidad del motor — Fuente: MOTOR TURBINA S. Cº interior.pdf, pág. 24</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.regulacion-automatica.cd-072-climatizacion-en-el-ibiza-cordoba-2",
+   "nt": 559,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-automatica",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Estructura descentralizada de los equipos de mando electrónico",
+   "codigo": "",
+   "menu": "Estructura descentralizada de los equi",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 8-10",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "descentralizada",
+    "J255",
+    "J293",
+    "radiocasete",
+    "gestión electrónica"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Explicar el funcionamiento interconectado y descentralizado de los equipos de mando electrónico (calefacción motorizada y autoclima) en el SEAT Ibiza/Córdoba '99. (págs. 8-10)",
+     "html": "<p>Explicar el funcionamiento interconectado y descentralizado de los equipos de mando electrónico (calefacción motorizada y autoclima) en el SEAT Ibiza/Córdoba '99. <span class=\"pag\">págs. 8-10</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Para gestionar la climatización se utiliza una arquitectura descentralizada en la que las tareas de selección, procesamiento de datos, acoplamiento de potencia y gestión de ventilación se reparten entre varias unidades de control interconectadas. (págs. 8-10)",
+     "html": "<p>Para gestionar la climatización se utiliza una arquitectura descentralizada en la que las tareas de selección, procesamiento de datos, acoplamiento de potencia y gestión de ventilación se reparten entre varias unidades de control interconectadas. <span class=\"pag\">págs. 8-10</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El sistema distribuye sus funciones entre los siguientes módulos: Unidad del equipo de mando electrónico (J255): Procesa las señales de los sensores térmicos y establece la estrategia de regulación de temperatura, aire de entrada y soplado. (págs. 8, 10) Radiocasete (R): Actúa como pasarela de comunicación entre la unidad de manejo e indicación (E87) accesible al usuario y la unidad de control J255. (págs. 8, 10) Unidad del aire acondicionado (J293): Gobierna directamente la alimentación del acoplamiento magnético del compresor y activa las distintas velocidades de los electroventiladores del radiador según la presión del gas y la temperatura del motor. (págs. 8, 10) Unidad de control del motor: Interviene en la gestión del compresor para inhibir su acoplamiento en fases de arranque, solicitud de plena carga, kick-down o falta de señal de revoluciones. (págs. 8, 10)",
+     "html": "<p>El sistema distribuye sus funciones entre los siguientes módulos:</p>\n<ul>\n<li><strong>Unidad del equipo de mando electrónico (J255):</strong> Procesa las señales de los sensores térmicos y establece la estrategia de regulación de temperatura, aire de entrada y soplado. <span class=\"pag\">págs. 8, 10</span></li>\n<li><strong>Radiocasete (R):</strong> Actúa como pasarela de comunicación entre la unidad de manejo e indicación (E87) accesible al usuario y la unidad de control J255. <span class=\"pag\">págs. 8, 10</span></li>\n<li><strong>Unidad del aire acondicionado (J293):</strong> Gobierna directamente la alimentación del acoplamiento magnético del compresor y activa las distintas velocidades de los electroventiladores del radiador según la presión del gas y la temperatura del motor. <span class=\"pag\">págs. 8, 10</span></li>\n<li><strong>Unidad de control del motor:</strong> Interviene en la gestión del compresor para inhibir su acoplamiento en fases de arranque, solicitud de plena carga, kick-down o falta de señal de revoluciones. <span class=\"pag\">págs. 8, 10</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Considerar que la unidad de control del climatizador J255 alimenta directamente el embrague del compresor y los electroventiladores del radiador sin pasar por el módulo J293. (págs. 8-10)",
+     "html": "<ul>\n<li>Considerar que la unidad de control del climatizador J255 alimenta directamente el embrague del compresor y los electroventiladores del radiador sin pasar por el módulo J293. <span class=\"pag\">págs. 8-10</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Cuadro sinóptico de la estructura descentralizada con las unidades J255, J293, radiocasete R, unidad de motor y sus sensores/actuadores asociados — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, págs. 8-11",
+     "html": "<ul>\n<li>Cuadro sinóptico de la estructura descentralizada con las unidades J255, J293, radiocasete R, unidad de motor y sus sensores/actuadores asociados — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, págs. 8-11</li>\n</ul>"
     }
    ]
   },
@@ -40884,6 +41242,64 @@
      "titulo": "Seguridad y normativa",
      "texto": "Una vez ejecutado el direccionamiento, queda prohibido intercambiar la posición de los conectores o de los servomotores. (pág. 81)",
      "html": "<p>Una vez ejecutado el direccionamiento, queda prohibido intercambiar la posición de los conectores o de los servomotores. <span class=\"pag\">pág. 81</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.unidad-climatizadora.cd-072-climatizacion-en-el-ibiza-cordoba",
+   "nt": 558,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "unidad-climatizadora",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Unidad climática",
+   "codigo": "",
+   "menu": "Unidad climática",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 6",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "evaporador",
+    "intercambiador-calor",
+    "ventilador-habitaculo"
+   ],
+   "palabras": [
+    "cuerpo climatizador",
+    "trampilla de temperatura",
+    "regulador electrónico",
+    "carcasa"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Albergar y estructurar los elementos de calefacción, refrigeración, filtrado y distribución de aire que tratan el flujo enviado al habitáculo del vehículo. (pág. 6)",
+     "html": "<p>Albergar y estructurar los elementos de calefacción, refrigeración, filtrado y distribución de aire que tratan el flujo enviado al habitáculo del vehículo. <span class=\"pag\">pág. 6</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "La estructura constructiva del cuerpo de la unidad climática es idéntica para todos los equipamientos del vehículo. Las únicas diferencias según el sistema instalado son: Método de accionamiento de la trampilla de temperatura (mecánico por cable o eléctrico por motor). (pág. 6) Presencia de dos transmisores de temperatura en los difusores (exclusivo del autoclima). (pág. 6) Incorporación de un regulador electrónico de régimen para la turbina (en autoclima y calefacción motorizada). (pág. 6)",
+     "html": "<p>La estructura constructiva del cuerpo de la unidad climática es idéntica para todos los equipamientos del vehículo. Las únicas diferencias según el sistema instalado son:</p>\n<ul>\n<li>Método de accionamiento de la trampilla de temperatura (mecánico por cable o eléctrico por motor). <span class=\"pag\">pág. 6</span></li>\n<li>Presencia de dos transmisores de temperatura en los difusores (exclusivo del autoclima). <span class=\"pag\">pág. 6</span></li>\n<li>Incorporación de un regulador electrónico de régimen para la turbina (en autoclima y calefacción motorizada). <span class=\"pag\">pág. 6</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Canaliza el aire impulsado por la turbina haciéndolo pasar forzosamente a través del evaporador y, según la posición de la trampilla de temperatura, desviando todo o parte del caudal a través del radiador de calefacción. La mezcla de aire caliente y frío resultante se dirige hacia los difusores seleccionados mediante los cables de accionamiento mecánico. (pág. 6)",
+     "html": "<p>Canaliza el aire impulsado por la turbina haciéndolo pasar forzosamente a través del evaporador y, según la posición de la trampilla de temperatura, desviando todo o parte del caudal a través del radiador de calefacción. La mezcla de aire caliente y frío resultante se dirige hacia los difusores seleccionados mediante los cables de accionamiento mecánico. <span class=\"pag\">pág. 6</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Vista en despiece de la unidad climática con la ubicación del evaporador, radiador de calefacción, turbina, regulador y motores de trampillas — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 6",
+     "html": "<ul>\n<li>Vista en despiece de la unidad climática con la ubicación del evaporador, radiador de calefacción, turbina, regulador y motores de trampillas — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 6</li>\n</ul>"
     }
    ]
   },

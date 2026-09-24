@@ -6,8 +6,8 @@ nt: 187
 tipo: proceso
 subtipo: fundamento
 clase: fundamento
-titulo: "Circuito frigorífico del Ibiza y Córdoba 99"
-menu: "Circuito frigorífico del Ibiza y Córdo"
+titulo: "Circuito frigorífico del SEAT Ibiza y Córdoba '99"
+menu: "Circuito frigorífico del SEAT Ibiza y "
 grupo: "Circuito frigorífico"
 clave: ciclo-frigorifico
 area: climatizacion
@@ -15,37 +15,39 @@ sistema: "circuito-frigorifico"
 marca: "SEAT"
 fuentes: "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 7"
 relacionados: ["compresor", "condensador", "filtro-deshidratador", "valvula-expansion", "evaporador", "refrigerante-r134a"]
-palabras: ["circuito frigorífico", "R134a", "compresor autorregulado", "silenciador", "válvula de seguridad"]
+palabras: ["R134a", "compresor 7 cilindros", "silenciador", "válvula de seguridad", "44 bares"]
 ---
 
 ## Objeto
 
-Generar el ciclo de refrigeración para enfriar y deshumidificar el aire de entrada al habitáculo mediante la circulación y cambio de estado del fluido frigorífico. (pág. 7).
+Explicar la disposición, estructura y parámetros operativos del circuito frigorífico de aire acondicionado empleado en el SEAT Ibiza y Córdoba '99. (pág. 7)
 
 ## Fundamento
 
-El circuito frigorífico es idéntico en el sistema de aire acondicionado manual y en el autoclima. Utiliza un compresor autorregulado de 7 cilindros impulsado por correa Poly V y acoplamiento electromagnético. (pág. 7).
+El circuito es cerrado y utiliza agente frigorífico R134a para extraer el calor del aire del habitáculo a través de cambios de estado del fluido entre las zonas de alta y baja presión. (pág. 7)
 
 ## Desarrollo
 
-El circuito consta de los siguientes componentes acoplados en serie:
-1. Condensador: ubicado por delante del radiador del líquido refrigerante del motor. (pág. 7).
-2. Filtro deshidratador: retiene la humedad, filtra residuos de abrasión y evita la formación de burbujas. (pág. 7).
-3. Válvula de expansión: controla la presión y el caudal del agente frigorífico. (pág. 7).
-4. Evaporador: ubicado en la unidad climática, donde se produce la expansión y el intercambio de calor con el aire. (pág. 7).
-5. Compresor: tipo autorregulado de 7 cilindros con válvula de seguridad incorporada. (pág. 7).
-6. Elementos de control de presión: conmutador F129 (motores diésel) o transmisor electrónico G65 (motores gasolina), montados en el ramal de alta presión junto a la válvula de expansión. (pág. 7).
-7. Silenciador: situado en la tubería de baja presión, cerca del compresor, para amortiguar los ruidos producidos por las ondas de presión entre la válvula de expansión y el compresor. (pág. 7).
+El circuito frigorífico es idéntico tanto para el sistema manual como para el autoclima y consta de los siguientes elementos:
+- **Compresor:** De 7 cilindros, tipo autorregulado. Arrastrado por correa Poly V mediante acoplamiento magnético. Incorpora una válvula de seguridad. (pág. 7)
+- **Condensador:** Situado delante del radiador de refrigerante del motor para disipar el calor del gas comprimido. (pág. 7)
+- **Filtro deshidratador:** Retiene la humedad, filtra residuos de abrasión y evita la formación de burbujas en el flujo de líquido. (pág. 7)
+- **Válvula de expansión:** Controla el caudal y la presión del refrigerante que entra al evaporador. (pág. 7)
+- **Evaporador:** Integrado en la unidad climática; en él se expande el refrigerante absorbiendo el calor del aire de entrada al habitáculo. (pág. 7)
+- **Elemento de control de presión:** Conmutador F129 o transmisor electrónico G65 (según motorización), montado en alta presión junto a la válvula de expansión. (pág. 7)
+- **Silenciador:** Situado en la línea de baja presión, próximo al compresor, para amortiguar los ruidos de las ondas de presión entre la válvula de expansión y el compresor. (pág. 7)
 
 ## Valores de referencia
 
-- Carga de agente frigorífico: 750 ± 50 gramos de R134a. (pág. 7).
-- Tarado de la válvula de seguridad del compresor: 44 bares. (pág. 7).
+- Cantidad de agente frigorífico R134a: 750 ± 50 gramos. (pág. 7)
+- Presión de tarado de la válvula de seguridad del compresor: 44 bares. (pág. 7)
+- Número de cilindros del compresor: 7 cilindros. (pág. 7)
 
 ## Errores de concepto frecuentes
 
-Creer que el circuito frigorífico del autoclima es diferente al del aire acondicionado manual; el circuito físico, sus componentes frigoríficos y la cantidad de carga son exactamente idénticos. (pág. 7).
+- Pensar que el circuito frigorífico del sistema con climatizador automático (autoclima) requiere componentes mecánicos principales distintos a los del sistema de aire acondicionado manual. (pág. 7)
+- Confundir la función del silenciador de baja presión con un filtro de impurezas del circuito. (pág. 7)
 
 ## Imágenes requeridas
 
-- Esquema del circuito frigorífico con la ubicación de componentes y tuberías — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 7
+- Esquema del circuito frigorífico mostrando la posición del compresor, condensador, filtro deshidratador, válvula de expansión, evaporador, silenciador y transmisor de presión — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 7
