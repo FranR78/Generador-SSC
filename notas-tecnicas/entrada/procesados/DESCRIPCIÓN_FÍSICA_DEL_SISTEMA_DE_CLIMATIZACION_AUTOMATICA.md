@@ -1,170 +1,251 @@
 ```yaml
 tipo: fundamento
-titulo: Estructura física del sistema de climatización automática
+titulo: Descripción física del sistema de climatización automática
 entidad: regulacion-automatica
 area: climatizacion
 sistema: control-climatizacion
 fabricante: Valeo
 fuente: "DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF"
 paginas: "1-5"
-relacionados: [unidad-control-climatizador, distribucion-aire, circuito-frigorifico]
-palabras: [compartimento motor, conjunto de distribución, tablero de mandos, haz de cables, climatización automática]
+relacionados: [unidad-control-climatizador, distribucion-aire]
+palabras: [compartimento motor, salpicadero, tablero de mandos, haces de cables, BSI, ECM]
 ```
 
 ## Objeto
-Describir la ubicación física, división por entornos y comunicación del sistema de climatización automática en el vehículo. (pág. 1).
+Describir la ubicación física, la estructura de interconexión por cableado y la distribución de componentes del sistema de climatización regulada en las distintas zonas del vehículo. (págs. 1-5)
 
 ## Fundamento
-El sistema de climatización automática se distribuye físicamente en tres zonas del vehículo: compartimento motor, conjunto de distribución de trampillas e interior del salpicadero (tablero de mandos). Los elementos están interconectados mediante dos haces de cables principales que unen el cuadro de mandos con el conjunto de trampillas y con el compartimento motor. (págs. 1, 3).
+El sistema se divide físicamente en tres áreas operativas (compartimento motor, conjunto de distribución de trampillas y tablero de mandos) interconectadas mediante dos haces de cables principales y redes de comunicación con las centralitas del vehículo (BSI y ECM). (págs. 1-5)
 
 ## Desarrollo
-1. Compartimento motor:
-   - Contiene la parte de alta presión del circuito de aire acondicionado (condensador, compresor, filtro deshidratante y presostato). (pág. 1).
-   - El compresor es arrastrado por la correa del alternador desde el cigüeñal, acoplándose mediante un embrague electromagnético. (pág. 1).
-   - Alberga el calculador del circuito de refrigeración del motor, que desvía parte del caudal de refrigerante hacia el conjunto de trampillas para la calefacción. (pág. 1).
-   - Contiene el calculador de inyección (ECM), que intercambia información con la centralita de climatización y el calculador BSI. (pág. 1).
+- **Compartimento motor:** Alberga los componentes de alta presión del circuito de aire acondicionado (compresor, condensador, filtro deshidratante y presostato), el calculador de inyección (ECM), el calculador del circuito de refrigeración del motor y la BSI. (págs. 1-3)
+- **Conjunto de distribución de trampillas (interior/salpicadero):** Contiene el evaporador (productor de frío), el radiador de calefacción, la resistencia eléctrica PTC, el filtro del habitáculo, el impulsor de aire (GMV) con su módulo electrónico de velocidad, las trampillas motorizadas (recirculación, mezcla izquierda/derecha y reparto de aire) y las sondas térmicas (evaporador y difusores). (págs. 2-3)
+- **Tablero de mandos:** Ubicado en la consola central, alberga la centralita de climatización y la interfaz de usuario con regulación automática/manual (bizona), conectada mediante los haces de cables del vano motor y de la caja climática. (págs. 3-4)
 
-2. Conjunto de distribución de trampillas:
-   - Es el entorno que concentra la mayoría de componentes de la climatización regulada. (pág. 2).
-   - Alberga el radiador de calefacción (cuya circulación no debe anularse al estar dimensionado el circuito del motor con su disipación), el evaporador (órgano productor de frío tras el filtro del habitáculo) y, en algunos vehículos, una resistencia PTC. (pág. 2).
-   - El aire es impulsado por el grupo motoventilador (GMV), regulado por un módulo electrónico de velocidad o potenciómetro. (pág. 2).
-   - Contiene sondas de temperatura (sonda del evaporador y sondas de salida de difusores centrales y pies) y los actuadores/micromotores que gobiernan las trampillas de recirculación, distribución y mezcla. (págs. 2-3).
-
-3. Tablero de mandos:
-   - Es la interfaz para que el usuario gobierne el sistema en modo manual o automático (por ejemplo, con regulación de temperatura independiente para conductor y acompañante). (págs. 3-4).
-   - Incorpora teclas de Auto, botón para desconectar el compresor (A/C), botón de recirculación, botón de desempañado rápido y botón para la luneta térmica trasera. (pág. 4).
-
-4. Sistema completo y diagnóstico:
-   - Es un sistema complejo donde una avería sencilla (como una sonda cortada) provoca un funcionamiento incorrecto en modo automático. (pág. 5).
-   - La avería del potenciómetro del electroventilador puede generar una sobretensión que ponga en riesgo la integridad de la centralita. (pág. 5).
-
-📷 IMAGEN: Esquema físico general del sistema de climatización automática interconectando compartimento motor, conjunto de distribución de trampillas y panel de mandos — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 5
+📷 IMAGEN: Esquema general del sistema completo de climatización automática indicando la interconexión entre compartimento motor, caja de trampillas y panel de mandos — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 5
 
 ## Valores de referencia
-No documentado en fuentes. (págs. 1-5).
+No documentado en fuentes.
 
 ## Errores de concepto frecuentes
-Anular la circulación del radiador de calefacción; en los vehículos actuales, el circuito de refrigeración del motor está dimensionado contando con la disipación térmica producida en el radiador de calefacción. (pág. 2).
+- Anular la circulación del radiador de calefacción, ignorando que el circuito de refrigeración del motor está dimensionado contando con la disipación térmica de dicho radiador. (pág. 2)
+- Desatender las anomalías en el potenciómetro del electroventilador, las cuales pueden generar sobretensiones peligrosas para la centralita de climatización. (pág. 5)
 
 ---
 
 ```yaml
 tipo: componente
-titulo: Resistencia de calefacción eléctrica
+titulo: Resistencia de calefacción eléctrica PTC
 entidad: calefactor-ptc
 area: climatizacion
 sistema: calefaccion
 fabricante: Valeo
 fuente: "DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF"
 paginas: "2"
-forma_parte_de: regulacion-automatica
-relacionados: [liquido-refrigerante-motor]
-palabras: [resistencia PTC, calefacción eléctrica, inyección directa, gasóleo]
+forma_parte_de: distribucion-aire
+relacionados: [unidad-control-climatizador]
+palabras: [PTC, calefacción eléctrica, inyección directa, gasóleo, calentamiento rápido]
 ```
 
 ## Misión
-Aportar calefacción al habitáculo durante los primeros minutos de funcionamiento en vehículos donde la temperatura del líquido refrigerante tarda mucho tiempo en alcanzar el valor adecuado. (pág. 2).
+Aportar calefacción eléctrica al aire que entra al habitáculo durante los primeros minutos de funcionamiento del vehículo. (pág. 2)
 
 ## Tipos y características
-Resistencia eléctrica adicional (PTC) situada en el conjunto de distribución de trampillas, empleada sobre todo en vehículos con motores de inyección directa de gasóleo. (pág. 2).
+Resistencia térmica de tipo PTC (coeficiente de temperatura positivo) integrada en la unidad de distribución de aire, utilizada especialmente en vehículos con motores de inyección directa de gasóleo. (pág. 2)
 
 ## Principio de funcionamiento
-Genera calor por efecto eléctrico al recibir alimentación para calentar el aire entrante mientras el circuito de refrigeración del motor alcanza la temperatura de servicio adecuada. (pág. 2).
+En los motores diésel de inyección directa, el líquido refrigerante tarda un tiempo prolongado en alcanzar la temperatura de servicio adecuada para la calefacción por radiador. La resistencia PTC se conecta eléctricamente al iniciar la marcha para calentar el caudal de aire entrante hasta que el circuito de refrigeración del motor pueda asumir la aportación térmica. (pág. 2)
+
+📷 IMAGEN: Ubicación de la resistencia de calefacción eléctrica PTC en la unidad climática — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 2
 
 ## Valores de trabajo
-No documentado en fuentes. (pág. 2).
+No documentado en fuentes.
 
 ## Anomalías frecuentes
-No documentado en fuentes. (pág. 2).
+No documentado en fuentes.
 
 ## Comportamiento en avería
-No documentado en fuentes. (pág. 2).
+No documentado en fuentes.
 
 ## Cómo comprobarlo
-No documentado en fuentes. (pág. 2).
+No documentado en fuentes.
 
 ## Mantenimiento
-No documentado en fuentes. (pág. 2).
+No documentado en fuentes.
 
 ---
 
 ```yaml
 tipo: componente
-titulo: Sonda del evaporador
+titulo: Impulsor de aire y módulo electrónico de velocidad
+entidad: ventilador-habitaculo
+area: climatizacion
+sistema: distribucion-aire
+fabricante: Valeo
+fuente: "DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF"
+paginas: "2, 5"
+forma_parte_de: distribucion-aire
+relacionados: [unidad-control-climatizador]
+palabras: [GMV, impulsor, turbina, módulo electrónico, potenciómetro, sobretensión]
+```
+
+## Misión
+Impulsar el caudal de aire previamente filtrado a través del evaporador y del radiador de calefacción hacia el interior del habitáculo. (pág. 2)
+
+## Tipos y características
+Grupo motoventilador (GMV) con turbina de soplado asociado a un módulo electrónico de regulación de velocidad o potenciómetro. (pág. 2)
+
+## Principio de funcionamiento
+El módulo electrónico varía el régimen de giro de la turbina del impulsor respondiendo a la consigna de caudal seleccionada manualmente por el usuario o fijada de forma automática por la centralita de climatización. (pág. 2)
+
+📷 IMAGEN: Módulo impulsor GMV y regulador electrónico montado en el cuerpo de distribución — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 2
+
+## Valores de trabajo
+No documentado en fuentes.
+
+## Anomalías frecuentes
+Avería en el potenciómetro o módulo electrónico del electroventilador. (pág. 5)
+
+## Comportamiento en avería
+Una avería en el potenciómetro del electroventilador puede originar una sobretensión que ponga en riesgo la integridad de la centralita de climatización. (pág. 5)
+
+## Cómo comprobarlo
+No documentado en fuentes.
+
+## Mantenimiento
+Controlar las prestaciones y el estado del sistema anualmente para detectar sobretensiones o fallos en la regulación de soplado. (pág. 5)
+
+---
+
+```yaml
+tipo: componente
+titulo: Sonda de temperatura del evaporador
 entidad: sensor-evaporador
 area: climatizacion
 sistema: control-climatizacion
 fabricante: Valeo
 fuente: "DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF"
-paginas: "2-3"
-forma_parte_de: regulacion-automatica
+paginas: "2-3, 5"
+forma_parte_de: distribucion-aire
 relacionados: [evaporador, compresor, unidad-control-climatizador]
 palabras: [sonda evaporador, formación de hielo, corte de compresor, cilindrada fija]
 ```
 
 ## Misión
-Medir la temperatura en el evaporador para ordenar la desconexión del compresor de cilindrada fija si existe riesgo de congelación. (págs. 2-3).
+Captar la temperatura en el punto más frío de la matriz del evaporador para evitar su congelación. (págs. 2-3)
 
 ## Tipos y características
-Captador o sonda de temperatura alojado en la caja de distribución de trampillas, ubicado en la parte más fría del evaporador. (págs. 2-3).
+Captador o sonda térmica montada directamente en la zona de menor temperatura del evaporador. (págs. 2-3)
 
 ## Principio de funcionamiento
-Mide continuamente la temperatura de la zona más fría del evaporador y transmite la señal a la centralita de climatización. Si la temperatura desciende por debajo del punto de formación de hielo, la centralita corta la alimentación del compresor en sistemas con compresor de cilindrada fija. (págs. 2-3).
+Mide de forma continua la temperatura del evaporador. Si el valor detectado desciende por debajo del umbral de formación de hielo, transmite una señal a la centralita para que interrumpa el funcionamiento del compresor en sistemas con compresor de cilindrada fija. (págs. 2-3)
+
+📷 IMAGEN: Posición de la sonda de temperatura sobre el cuerpo del evaporador — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 2
 
 ## Valores de trabajo
-Umbral de activación: temperatura inferior a la de formación de hielo. (pág. 3).
+- Umbral de disparo de la señal de corte: temperatura inferior a la formación de hielo. (pág. 3)
 
 ## Anomalías frecuentes
-No documentado en fuentes. (págs. 2-3).
+Corte eléctrico o fallo en la sonda. (pág. 5)
 
 ## Comportamiento en avería
-Una avería en la sonda (por ejemplo, sonda cortada) provoca un funcionamiento incorrecto del sistema de climatización en modo automático. (págs. 3, 5).
+Una sonda cortada o averiada impide el correcto funcionamiento del sistema en modo automático. (pág. 5)
 
 ## Cómo comprobarlo
-No documentado en fuentes. (págs. 2-3).
+No documentado en fuentes.
 
 ## Mantenimiento
-No documentado en fuentes. (págs. 2-3).
+No documentado en fuentes.
 
 ---
 
 ```yaml
 tipo: componente
-titulo: Sondas de temperatura de salida de difusores
-entidad: sensor-evaporador
-variante: salida de difusores
+titulo: Sondas de temperatura de salida de los difusores
+entidad: sensor-temperatura-interior
+variante: difusores
 area: climatizacion
 sistema: control-climatizacion
 fabricante: Valeo
 fuente: "DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF"
-paginas: "2-3"
-forma_parte_de: regulacion-automatica
-relacionados: [servomotor-trampilla, unidad-control-climatizador]
-palabras: [sondas de temperatura, difusores centrales, difusores a los pies, trampilla de mezcla, temperatura de consigna]
+paginas: "2-3, 5"
+forma_parte_de: distribucion-aire
+relacionados: [unidad-control-climatizador, servomotor-trampilla]
+palabras: [sonda difusores, salida central, salida pies, trampilla de mezcla, consigna]
 ```
 
 ## Misión
-Medir la temperatura del aire a la salida de los difusores para controlar el correcto funcionamiento de la trampilla de mezcla y permitir la regulación de la temperatura de consigna. (págs. 2-3).
+Medir la temperatura del aire en las salidas de los difusores centrales y de los pies para verificar el funcionamiento de las trampillas de mezcla y ajustar la temperatura del habitáculo. (págs. 2-3)
 
 ## Tipos y características
-Captadores de temperatura ubicados en el conjunto de distribución de trampillas, instalados específicamente en los difusores centrales y en los difusores a los pies. (págs. 2-3).
+Conjunto de captadores térmicos ubicados en las canalizaciones de salida del aire tratado: una sonda en los difusores centrales y otra en la salida de los pies. (págs. 2-3)
 
 ## Principio de funcionamiento
-Registran la temperatura del aire impulsado hacia los difusores centrales y de los pies, enviando sus señales a la centralita de climatización. Junto con las lecturas de las sondas de temperatura exterior e interior, la centralita calcula y gobierna los actuadores de la trampilla de mezcla para alcanzar la temperatura de consigna seleccionada. (págs. 2-3).
+Miden la temperatura del caudal de aire impulsado. La centralita de climatización procesa sus datos junto con los de las sondas de temperatura interior y exterior para controlar el posicionamiento de las trampillas de mezcla de aire y alcanzar la temperatura de consigna seleccionada. (págs. 2-3)
+
+📷 IMAGEN: Ubicación de las sondas de salida de difusores centrales y pies en la unidad climática — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 2
 
 ## Valores de trabajo
-No documentado en fuentes. (págs. 2-3).
+No documentado en fuentes.
 
 ## Anomalías frecuentes
-No documentado en fuentes. (págs. 2-3).
+Corte en la línea eléctrica del captador. (pág. 5)
 
 ## Comportamiento en avería
-Si una sonda se corta o avería, el sistema de climatización no puede gestionar correctamente el modo automático. (págs. 3, 5).
+La avería o corte en una sonda altera la regulación automática del climatizador, impidiendo alcanzar la temperatura deseada. (pág. 5)
 
 ## Cómo comprobarlo
-No documentado en fuentes. (págs. 2-3).
+No documentado en fuentes.
 
 ## Mantenimiento
-No documentado en fuentes. (págs. 2-3).
+No documentado en fuentes.
+
+---
+
+```yaml
+tipo: componente
+titulo: Tablero de mandos de la climatización bizona
+entidad: unidad-manejo-indicacion
+variante: bizona
+area: climatizacion
+sistema: control-climatizacion
+fabricante: Valeo
+fuente: "DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF"
+paginas: "3-4"
+forma_parte_de: control-climatizacion
+relacionados: [unidad-control-climatizador]
+palabras: [tablero de mandos, bizona, AUTO, A/C, recirculación, desempañado rápido, luneta térmica]
+```
+
+## Misión
+Permitir al usuario seleccionar y gobernar los parámetros de temperatura, caudal, distribución de aire y funciones adicionales del sistema de climatización. (págs. 3-4)
+
+## Tipos y características
+Panel de mandos compacto situado en el centro del salpicadero que integra la centralita de climatización. Cuenta con regulación de temperatura independiente para conductor y acompañante (bizona). (págs. 3-4)
+
+## Principio de funcionamiento
+Recibe las órdenes del usuario a través de sus pulsadores e interfaces de selección y comunica directamente con los actuadores de la unidad climática y las centralitas del vano motor (ECM y BSI). Permite gestionar:
+- Dos teclas AUTO independientes para regular de forma automática o manual el confort térmico de cada lado. (pág. 4)
+- Una rueda única de selección para la velocidad del impulsor de aire. (pág. 4)
+- Un botón A/C para conectar o desconectar el compresor de refrigeración. (pág. 4)
+- Un botón de recirculación de aire para conmutar entre entrada de aire exterior e interior. (pág. 4)
+- Un botón de desempañado rápido y un botón para la luneta térmica trasera. (pág. 4)
+
+📷 IMAGEN: Frontal del tablero de mandos bizona con la disposición de pantallas, teclas AUTO, A/C y mandos de selección — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, págs. 3-4
+
+## Valores de trabajo
+No documentado en fuentes.
+
+## Anomalías frecuentes
+No documentado en fuentes.
+
+## Comportamiento en avería
+No documentado en fuentes.
+
+## Cómo comprobarlo
+No documentado en fuentes.
+
+## Mantenimiento
+No documentado en fuentes.
 
 COBERTURA: documento «DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF», páginas 1 a 5 de 5. [completo]

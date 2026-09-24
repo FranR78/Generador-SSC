@@ -1308,9 +1308,25 @@
   {
    "nombre": "NT259_01",
    "nt": 259,
-   "titulo": "Estructura física del sistema de climatización automática",
+   "titulo": "Descripción física del sistema de climatización automática",
    "seccion": "8. Regulación y control",
-   "descripcion": "Esquema físico general del sistema de climatización automática interconectando compartimento motor, conjunto de distribución de trampillas y panel de mandos — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 5",
+   "descripcion": "Esquema general del sistema completo de climatización automática indicando la interconexión entre compartimento motor, caja de trampillas y panel de mandos — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 5",
+   "hecha": false
+  },
+  {
+   "nombre": "NT260_01",
+   "nt": 260,
+   "titulo": "Resistencia de calefacción eléctrica PTC",
+   "seccion": "Por ubicar",
+   "descripcion": "Ubicación de la resistencia de calefacción eléctrica PTC en la unidad climática — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 2",
+   "hecha": false
+  },
+  {
+   "nombre": "NT261_01",
+   "nt": 261,
+   "titulo": "Sonda de temperatura del evaporador",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Posición de la sonda de temperatura sobre el cuerpo del evaporador — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 2",
    "hecha": false
   },
   {
@@ -2946,6 +2962,30 @@
    "hecha": false
   },
   {
+   "nombre": "NT632_01",
+   "nt": 632,
+   "titulo": "Impulsor de aire y módulo electrónico de velocidad",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Módulo impulsor GMV y regulador electrónico montado en el cuerpo de distribución — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 2",
+   "hecha": false
+  },
+  {
+   "nombre": "NT633_01",
+   "nt": 633,
+   "titulo": "Sondas de temperatura de salida de los difusores",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Ubicación de las sondas de salida de difusores centrales y pies en la unidad climática — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 2",
+   "hecha": false
+  },
+  {
+   "nombre": "NT634_01",
+   "nt": 634,
+   "titulo": "Tablero de mandos de la climatización bizona",
+   "seccion": "Por ubicar",
+   "descripcion": "Frontal del tablero de mandos bizona con la disposición de pantallas, teclas AUTO, A/C y mandos de selección — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, págs. 3-4",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -2970,7 +3010,7 @@
    "hecha": false
   }
  ],
- "total": 623,
+ "total": 626,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -20040,6 +20080,74 @@
    ]
   },
   {
+   "id": "ssc.sensor-temperatura-interior.difusores.descripcion-fisica-del-sistema-de-climat",
+   "nt": 633,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-temperatura-ntc-interior",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Sondas de temperatura de salida de los difusores",
+   "codigo": "",
+   "menu": "Sondas de temperatura de salida de los",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, págs. 2-3, 5",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "difusores",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "servomotor-trampilla"
+   ],
+   "palabras": [
+    "sonda difusores",
+    "salida central",
+    "salida pies",
+    "trampilla de mezcla",
+    "consigna"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la temperatura del aire en las salidas de los difusores centrales y de los pies para verificar el funcionamiento de las trampillas de mezcla y ajustar la temperatura del habitáculo. (págs. 2-3)",
+     "html": "<p>Medir la temperatura del aire en las salidas de los difusores centrales y de los pies para verificar el funcionamiento de las trampillas de mezcla y ajustar la temperatura del habitáculo. <span class=\"pag\">págs. 2-3</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Conjunto de captadores térmicos ubicados en las canalizaciones de salida del aire tratado: una sonda en los difusores centrales y otra en la salida de los pies. (págs. 2-3)",
+     "html": "<p>Conjunto de captadores térmicos ubicados en las canalizaciones de salida del aire tratado: una sonda en los difusores centrales y otra en la salida de los pies. <span class=\"pag\">págs. 2-3</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Miden la temperatura del caudal de aire impulsado. La centralita de climatización procesa sus datos junto con los de las sondas de temperatura interior y exterior para controlar el posicionamiento de las trampillas de mezcla de aire y alcanzar la temperatura de consigna seleccionada. (págs. 2-3)",
+     "html": "<p>Miden la temperatura del caudal de aire impulsado. La centralita de climatización procesa sus datos junto con los de las sondas de temperatura interior y exterior para controlar el posicionamiento de las trampillas de mezcla de aire y alcanzar la temperatura de consigna seleccionada. <span class=\"pag\">págs. 2-3</span></p>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Corte en la línea eléctrica del captador. (pág. 5)",
+     "html": "<p>Corte en la línea eléctrica del captador. <span class=\"pag\">pág. 5</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "La avería o corte en una sonda altera la regulación automática del climatizador, impidiendo alcanzar la temperatura deseada. (pág. 5)",
+     "html": "<p>La avería o corte en una sonda altera la regulación automática del climatizador, impidiendo alcanzar la temperatura deseada. <span class=\"pag\">pág. 5</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Ubicación de las sondas de salida de difusores centrales y pies en la unidad climática — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 2",
+     "html": "<ul>\n<li>Ubicación de las sondas de salida de difusores centrales y pies en la unidad climática — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 2</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.sensor-evaporador.11-dispositivos-de-regulacion-y-segurida",
    "nt": 65,
    "modulo": "ssc",
@@ -20377,22 +20485,22 @@
    "clave": "sensor-ntc-evaporador",
    "seccion": "7. Sensores y actuadores",
    "subgrupo": "",
-   "titulo": "Sonda del evaporador",
+   "titulo": "Sonda de temperatura del evaporador",
    "codigo": "",
-   "menu": "Sonda del evaporador",
+   "menu": "Sonda de temperatura del evaporador",
    "grupo": "Control de climatización",
    "tipo": "elemento",
    "subtipo": "",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, págs. 2-3",
+   "fuentes": "DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, págs. 2-3, 5",
    "clase": "componente",
    "estado": "",
    "fusionadas": [],
    "variante": "",
    "area": "climatizacion",
    "sistema": "control-climatizacion",
-   "formaParteDe": "regulacion-automatica",
+   "formaParteDe": "distribucion-aire",
    "relacionados": [
     "evaporador",
     "compresor",
@@ -20407,28 +20515,38 @@
    "apartados": [
     {
      "titulo": "Misión",
-     "texto": "Medir la temperatura en el evaporador para ordenar la desconexión del compresor de cilindrada fija si existe riesgo de congelación. (págs. 2-3).",
-     "html": "<p>Medir la temperatura en el evaporador para ordenar la desconexión del compresor de cilindrada fija si existe riesgo de congelación. <span class=\"pag\">págs. 2-3</span>.</p>"
+     "texto": "Captar la temperatura en el punto más frío de la matriz del evaporador para evitar su congelación. (págs. 2-3)",
+     "html": "<p>Captar la temperatura en el punto más frío de la matriz del evaporador para evitar su congelación. <span class=\"pag\">págs. 2-3</span></p>"
     },
     {
      "titulo": "Tipos y características",
-     "texto": "Captador o sonda de temperatura alojado en la caja de distribución de trampillas, ubicado en la parte más fría del evaporador. (págs. 2-3).",
-     "html": "<p>Captador o sonda de temperatura alojado en la caja de distribución de trampillas, ubicado en la parte más fría del evaporador. <span class=\"pag\">págs. 2-3</span>.</p>"
+     "texto": "Captador o sonda térmica montada directamente en la zona de menor temperatura del evaporador. (págs. 2-3)",
+     "html": "<p>Captador o sonda térmica montada directamente en la zona de menor temperatura del evaporador. <span class=\"pag\">págs. 2-3</span></p>"
     },
     {
      "titulo": "Principio de funcionamiento",
-     "texto": "Mide continuamente la temperatura de la zona más fría del evaporador y transmite la señal a la centralita de climatización. Si la temperatura desciende por debajo del punto de formación de hielo, la centralita corta la alimentación del compresor en sistemas con compresor de cilindrada fija. (págs. 2-3).",
-     "html": "<p>Mide continuamente la temperatura de la zona más fría del evaporador y transmite la señal a la centralita de climatización. Si la temperatura desciende por debajo del punto de formación de hielo, la centralita corta la alimentación del compresor en sistemas con compresor de cilindrada fija. <span class=\"pag\">págs. 2-3</span>.</p>"
+     "texto": "Mide de forma continua la temperatura del evaporador. Si el valor detectado desciende por debajo del umbral de formación de hielo, transmite una señal a la centralita para que interrumpa el funcionamiento del compresor en sistemas con compresor de cilindrada fija. (págs. 2-3)",
+     "html": "<p>Mide de forma continua la temperatura del evaporador. Si el valor detectado desciende por debajo del umbral de formación de hielo, transmite una señal a la centralita para que interrumpa el funcionamiento del compresor en sistemas con compresor de cilindrada fija. <span class=\"pag\">págs. 2-3</span></p>"
     },
     {
      "titulo": "Valores de trabajo",
-     "texto": "Umbral de activación: temperatura inferior a la de formación de hielo. (pág. 3).",
-     "html": "<p>Umbral de activación: temperatura inferior a la de formación de hielo. <span class=\"pag\">pág. 3</span>.</p>"
+     "texto": "Umbral de disparo de la señal de corte: temperatura inferior a la formación de hielo. (pág. 3)",
+     "html": "<ul>\n<li>Umbral de disparo de la señal de corte: temperatura inferior a la formación de hielo. <span class=\"pag\">pág. 3</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Corte eléctrico o fallo en la sonda. (pág. 5)",
+     "html": "<p>Corte eléctrico o fallo en la sonda. <span class=\"pag\">pág. 5</span></p>"
     },
     {
      "titulo": "Comportamiento en avería",
-     "texto": "Una avería en la sonda (por ejemplo, sonda cortada) provoca un funcionamiento incorrecto del sistema de climatización en modo automático. (págs. 3, 5).",
-     "html": "<p>Una avería en la sonda (por ejemplo, sonda cortada) provoca un funcionamiento incorrecto del sistema de climatización en modo automático. <span class=\"pag\">págs. 3, 5</span>.</p>"
+     "texto": "Una sonda cortada o averiada impide el correcto funcionamiento del sistema en modo automático. (pág. 5)",
+     "html": "<p>Una sonda cortada o averiada impide el correcto funcionamiento del sistema en modo automático. <span class=\"pag\">pág. 5</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Posición de la sonda de temperatura sobre el cuerpo del evaporador — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 2",
+     "html": "<ul>\n<li>Posición de la sonda de temperatura sobre el cuerpo del evaporador — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 2</li>\n</ul>"
     }
    ]
   },
@@ -24296,6 +24414,79 @@
    ]
   },
   {
+   "id": "ssc.ventilador-habitaculo.descripcion-fisica-del-sistema-de-climat",
+   "nt": 632,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ventilador-habitaculo",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Impulsor de aire y módulo electrónico de velocidad",
+   "codigo": "",
+   "menu": "Impulsor de aire y módulo electrónico",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, págs. 2, 5",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "GMV",
+    "impulsor",
+    "turbina",
+    "módulo electrónico",
+    "potenciómetro",
+    "sobretensión"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Impulsar el caudal de aire previamente filtrado a través del evaporador y del radiador de calefacción hacia el interior del habitáculo. (pág. 2)",
+     "html": "<p>Impulsar el caudal de aire previamente filtrado a través del evaporador y del radiador de calefacción hacia el interior del habitáculo. <span class=\"pag\">pág. 2</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Grupo motoventilador (GMV) con turbina de soplado asociado a un módulo electrónico de regulación de velocidad o potenciómetro. (pág. 2)",
+     "html": "<p>Grupo motoventilador (GMV) con turbina de soplado asociado a un módulo electrónico de regulación de velocidad o potenciómetro. <span class=\"pag\">pág. 2</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El módulo electrónico varía el régimen de giro de la turbina del impulsor respondiendo a la consigna de caudal seleccionada manualmente por el usuario o fijada de forma automática por la centralita de climatización. (pág. 2)",
+     "html": "<p>El módulo electrónico varía el régimen de giro de la turbina del impulsor respondiendo a la consigna de caudal seleccionada manualmente por el usuario o fijada de forma automática por la centralita de climatización. <span class=\"pag\">pág. 2</span></p>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Avería en el potenciómetro o módulo electrónico del electroventilador. (pág. 5)",
+     "html": "<p>Avería en el potenciómetro o módulo electrónico del electroventilador. <span class=\"pag\">pág. 5</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Una avería en el potenciómetro del electroventilador puede originar una sobretensión que ponga en riesgo la integridad de la centralita de climatización. (pág. 5)",
+     "html": "<p>Una avería en el potenciómetro del electroventilador puede originar una sobretensión que ponga en riesgo la integridad de la centralita de climatización. <span class=\"pag\">pág. 5</span></p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Controlar las prestaciones y el estado del sistema anualmente para detectar sobretensiones o fallos en la regulación de soplado. (pág. 5)",
+     "html": "<p>Controlar las prestaciones y el estado del sistema anualmente para detectar sobretensiones o fallos en la regulación de soplado. <span class=\"pag\">pág. 5</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Módulo impulsor GMV y regulador electrónico montado en el cuerpo de distribución — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 2",
+     "html": "<ul>\n<li>Módulo impulsor GMV y regulador electrónico montado en el cuerpo de distribución — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 2</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.valvula-reguladora-compresor.6-compresores",
    "nt": 47,
    "modulo": "ssc",
@@ -26045,9 +26236,9 @@
    "clave": "regulacion-automatica",
    "seccion": "8. Regulación y control",
    "subgrupo": "",
-   "titulo": "Estructura física del sistema de climatización automática",
+   "titulo": "Descripción física del sistema de climatización automática",
    "codigo": "",
-   "menu": "Estructura física del sistema de clima",
+   "menu": "Descripción física del sistema de clim",
    "grupo": "Control de climatización",
    "tipo": "proceso",
    "subtipo": "fundamento",
@@ -26063,41 +26254,41 @@
    "formaParteDe": "",
    "relacionados": [
     "unidad-control-climatizador",
-    "distribucion-aire",
-    "circuito-frigorifico"
+    "distribucion-aire"
    ],
    "palabras": [
     "compartimento motor",
-    "conjunto de distribución",
+    "salpicadero",
     "tablero de mandos",
-    "haz de cables",
-    "climatización automática"
+    "haces de cables",
+    "BSI",
+    "ECM"
    ],
    "apartados": [
     {
      "titulo": "Objeto",
-     "texto": "Describir la ubicación física, división por entornos y comunicación del sistema de climatización automática en el vehículo. (pág. 1).",
-     "html": "<p>Describir la ubicación física, división por entornos y comunicación del sistema de climatización automática en el vehículo. <span class=\"pag\">pág. 1</span>.</p>"
+     "texto": "Describir la ubicación física, la estructura de interconexión por cableado y la distribución de componentes del sistema de climatización regulada en las distintas zonas del vehículo. (págs. 1-5)",
+     "html": "<p>Describir la ubicación física, la estructura de interconexión por cableado y la distribución de componentes del sistema de climatización regulada en las distintas zonas del vehículo. <span class=\"pag\">págs. 1-5</span></p>"
     },
     {
      "titulo": "Fundamento",
-     "texto": "El sistema de climatización automática se distribuye físicamente en tres zonas del vehículo: compartimento motor, conjunto de distribución de trampillas e interior del salpicadero (tablero de mandos). Los elementos están interconectados mediante dos haces de cables principales que unen el cuadro de mandos con el conjunto de trampillas y con el compartimento motor. (págs. 1, 3).",
-     "html": "<p>El sistema de climatización automática se distribuye físicamente en tres zonas del vehículo: compartimento motor, conjunto de distribución de trampillas e interior del salpicadero (tablero de mandos). Los elementos están interconectados mediante dos haces de cables principales que unen el cuadro de mandos con el conjunto de trampillas y con el compartimento motor. <span class=\"pag\">págs. 1, 3</span>.</p>"
+     "texto": "El sistema se divide físicamente en tres áreas operativas (compartimento motor, conjunto de distribución de trampillas y tablero de mandos) interconectadas mediante dos haces de cables principales y redes de comunicación con las centralitas del vehículo (BSI y ECM). (págs. 1-5)",
+     "html": "<p>El sistema se divide físicamente en tres áreas operativas (compartimento motor, conjunto de distribución de trampillas y tablero de mandos) interconectadas mediante dos haces de cables principales y redes de comunicación con las centralitas del vehículo (BSI y ECM). <span class=\"pag\">págs. 1-5</span></p>"
     },
     {
      "titulo": "Desarrollo",
-     "texto": "Compartimento motor: Contiene la parte de alta presión del circuito de aire acondicionado (condensador, compresor, filtro deshidratante y presostato). (pág. 1). El compresor es arrastrado por la correa del alternador desde el cigüeñal, acoplándose mediante un embrague electromagnético. (pág. 1). Alberga el calculador del circuito de refrigeración del motor, que desvía parte del caudal de refrigerante hacia el conjunto de trampillas para la calefacción. (pág. 1). Contiene el calculador de inyección (ECM), que intercambia información con la centralita de climatización y el calculador BSI. (pág. 1). Conjunto de distribución de trampillas: Es el entorno que concentra la mayoría de componentes de la climatización regulada. (pág. 2). Alberga el radiador de calefacción (cuya circulación no debe anularse al estar dimensionado el circuito del motor con su disipación), el evaporador (órgano productor de frío tras el filtro del habitáculo) y, en algunos vehículos, una resistencia PTC. (pág. 2). El aire es impulsado por el grupo motoventilador (GMV), regulado por un módulo electrónico de velocidad o potenciómetro. (pág. 2). Contiene sondas de temperatura (sonda del evaporador y sondas de salida de difusores centrales y pies) y los actuadores/micromotores que gobiernan las trampillas de recirculación, distribución y mezcla. (págs. 2-3). Tablero de mandos: Es la interfaz para que el usuario gobierne el sistema en modo manual o automático (por ejemplo, con regulación de temperatura independiente para conductor y acompañante). (págs. 3-4). Incorpora teclas de Auto, botón para desconectar el compresor (A/C), botón de recirculación, botón de desempañado rápido y botón para la luneta térmica trasera. (pág. 4). Sistema completo y diagnóstico: Es un sistema complejo donde una avería sencilla (como una sonda cortada) provoca un funcionamiento incorrecto en modo automático. (pág. 5). La avería del potenciómetro del electroventilador puede generar una sobretensión que ponga en riesgo la integridad de la centralita. (pág. 5).",
-     "html": "<ol>\n<li>\n<p>Compartimento motor:</p>\n<ul>\n<li>Contiene la parte de alta presión del circuito de aire acondicionado (condensador, compresor, filtro deshidratante y presostato). <span class=\"pag\">pág. 1</span>.</li>\n<li>El compresor es arrastrado por la correa del alternador desde el cigüeñal, acoplándose mediante un embrague electromagnético. <span class=\"pag\">pág. 1</span>.</li>\n<li>Alberga el calculador del circuito de refrigeración del motor, que desvía parte del caudal de refrigerante hacia el conjunto de trampillas para la calefacción. <span class=\"pag\">pág. 1</span>.</li>\n<li>Contiene el calculador de inyección (ECM), que intercambia información con la centralita de climatización y el calculador BSI. <span class=\"pag\">pág. 1</span>.</li>\n</ul>\n</li>\n<li>\n<p>Conjunto de distribución de trampillas:</p>\n<ul>\n<li>Es el entorno que concentra la mayoría de componentes de la climatización regulada. <span class=\"pag\">pág. 2</span>.</li>\n<li>Alberga el radiador de calefacción (cuya circulación no debe anularse al estar dimensionado el circuito del motor con su disipación), el evaporador (órgano productor de frío tras el filtro del habitáculo) y, en algunos vehículos, una resistencia PTC. <span class=\"pag\">pág. 2</span>.</li>\n<li>El aire es impulsado por el grupo motoventilador (GMV), regulado por un módulo electrónico de velocidad o potenciómetro. <span class=\"pag\">pág. 2</span>.</li>\n<li>Contiene sondas de temperatura (sonda del evaporador y sondas de salida de difusores centrales y pies) y los actuadores/micromotores que gobiernan las trampillas de recirculación, distribución y mezcla. <span class=\"pag\">págs. 2-3</span>.</li>\n</ul>\n</li>\n<li>\n<p>Tablero de mandos:</p>\n<ul>\n<li>Es la interfaz para que el usuario gobierne el sistema en modo manual o automático (por ejemplo, con regulación de temperatura independiente para conductor y acompañante). <span class=\"pag\">págs. 3-4</span>.</li>\n<li>Incorpora teclas de Auto, botón para desconectar el compresor (A/C), botón de recirculación, botón de desempañado rápido y botón para la luneta térmica trasera. <span class=\"pag\">pág. 4</span>.</li>\n</ul>\n</li>\n<li>\n<p>Sistema completo y diagnóstico:</p>\n<ul>\n<li>Es un sistema complejo donde una avería sencilla (como una sonda cortada) provoca un funcionamiento incorrecto en modo automático. <span class=\"pag\">pág. 5</span>.</li>\n<li>La avería del potenciómetro del electroventilador puede generar una sobretensión que ponga en riesgo la integridad de la centralita. <span class=\"pag\">pág. 5</span>.</li>\n</ul>\n</li>\n</ol>"
+     "texto": "Compartimento motor: Alberga los componentes de alta presión del circuito de aire acondicionado (compresor, condensador, filtro deshidratante y presostato), el calculador de inyección (ECM), el calculador del circuito de refrigeración del motor y la BSI. (págs. 1-3) Conjunto de distribución de trampillas (interior/salpicadero): Contiene el evaporador (productor de frío), el radiador de calefacción, la resistencia eléctrica PTC, el filtro del habitáculo, el impulsor de aire (GMV) con su módulo electrónico de velocidad, las trampillas motorizadas (recirculación, mezcla izquierda/derecha y reparto de aire) y las sondas térmicas (evaporador y difusores). (págs. 2-3) Tablero de mandos: Ubicado en la consola central, alberga la centralita de climatización y la interfaz de usuario con regulación automática/manual (bizona), conectada mediante los haces de cables del vano motor y de la caja climática. (págs. 3-4)",
+     "html": "<ul>\n<li><strong>Compartimento motor:</strong> Alberga los componentes de alta presión del circuito de aire acondicionado (compresor, condensador, filtro deshidratante y presostato), el calculador de inyección (ECM), el calculador del circuito de refrigeración del motor y la BSI. <span class=\"pag\">págs. 1-3</span></li>\n<li><strong>Conjunto de distribución de trampillas (interior/salpicadero):</strong> Contiene el evaporador (productor de frío), el radiador de calefacción, la resistencia eléctrica PTC, el filtro del habitáculo, el impulsor de aire (GMV) con su módulo electrónico de velocidad, las trampillas motorizadas (recirculación, mezcla izquierda/derecha y reparto de aire) y las sondas térmicas (evaporador y difusores). <span class=\"pag\">págs. 2-3</span></li>\n<li><strong>Tablero de mandos:</strong> Ubicado en la consola central, alberga la centralita de climatización y la interfaz de usuario con regulación automática/manual (bizona), conectada mediante los haces de cables del vano motor y de la caja climática. <span class=\"pag\">págs. 3-4</span></li>\n</ul>"
     },
     {
      "titulo": "Errores de concepto frecuentes",
-     "texto": "Anular la circulación del radiador de calefacción; en los vehículos actuales, el circuito de refrigeración del motor está dimensionado contando con la disipación térmica producida en el radiador de calefacción. (pág. 2).",
-     "html": "<p>Anular la circulación del radiador de calefacción; en los vehículos actuales, el circuito de refrigeración del motor está dimensionado contando con la disipación térmica producida en el radiador de calefacción. <span class=\"pag\">pág. 2</span>.</p>"
+     "texto": "Anular la circulación del radiador de calefacción, ignorando que el circuito de refrigeración del motor está dimensionado contando con la disipación térmica de dicho radiador. (pág. 2) Desatender las anomalías en el potenciómetro del electroventilador, las cuales pueden generar sobretensiones peligrosas para la centralita de climatización. (pág. 5)",
+     "html": "<ul>\n<li>Anular la circulación del radiador de calefacción, ignorando que el circuito de refrigeración del motor está dimensionado contando con la disipación térmica de dicho radiador. <span class=\"pag\">pág. 2</span></li>\n<li>Desatender las anomalías en el potenciómetro del electroventilador, las cuales pueden generar sobretensiones peligrosas para la centralita de climatización. <span class=\"pag\">pág. 5</span></li>\n</ul>"
     },
     {
      "titulo": "Imágenes requeridas",
-     "texto": "Esquema físico general del sistema de climatización automática interconectando compartimento motor, conjunto de distribución de trampillas y panel de mandos — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 5",
-     "html": "<ul>\n<li>Esquema físico general del sistema de climatización automática interconectando compartimento motor, conjunto de distribución de trampillas y panel de mandos — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 5</li>\n</ul>"
+     "texto": "Esquema general del sistema completo de climatización automática indicando la interconexión entre compartimento motor, caja de trampillas y panel de mandos — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 5",
+     "html": "<ul>\n<li>Esquema general del sistema completo de climatización automática indicando la interconexión entre compartimento motor, caja de trampillas y panel de mandos — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 5</li>\n</ul>"
     }
    ]
   },
@@ -39401,9 +39592,9 @@
    "clave": "calefactor-ptc",
    "seccion": "Por ubicar",
    "subgrupo": "",
-   "titulo": "Resistencia de calefacción eléctrica",
+   "titulo": "Resistencia de calefacción eléctrica PTC",
    "codigo": "",
-   "menu": "Resistencia de calefacción eléctrica",
+   "menu": "Resistencia de calefacción eléctrica P",
    "grupo": "Calefacción",
    "tipo": "elemento",
    "subtipo": "",
@@ -39416,31 +39607,37 @@
    "variante": "",
    "area": "climatizacion",
    "sistema": "calefaccion",
-   "formaParteDe": "regulacion-automatica",
+   "formaParteDe": "distribucion-aire",
    "relacionados": [
-    "liquido-refrigerante-motor"
+    "unidad-control-climatizador"
    ],
    "palabras": [
-    "resistencia PTC",
+    "PTC",
     "calefacción eléctrica",
     "inyección directa",
-    "gasóleo"
+    "gasóleo",
+    "calentamiento rápido"
    ],
    "apartados": [
     {
      "titulo": "Misión",
-     "texto": "Aportar calefacción al habitáculo durante los primeros minutos de funcionamiento en vehículos donde la temperatura del líquido refrigerante tarda mucho tiempo en alcanzar el valor adecuado. (pág. 2).",
-     "html": "<p>Aportar calefacción al habitáculo durante los primeros minutos de funcionamiento en vehículos donde la temperatura del líquido refrigerante tarda mucho tiempo en alcanzar el valor adecuado. <span class=\"pag\">pág. 2</span>.</p>"
+     "texto": "Aportar calefacción eléctrica al aire que entra al habitáculo durante los primeros minutos de funcionamiento del vehículo. (pág. 2)",
+     "html": "<p>Aportar calefacción eléctrica al aire que entra al habitáculo durante los primeros minutos de funcionamiento del vehículo. <span class=\"pag\">pág. 2</span></p>"
     },
     {
      "titulo": "Tipos y características",
-     "texto": "Resistencia eléctrica adicional (PTC) situada en el conjunto de distribución de trampillas, empleada sobre todo en vehículos con motores de inyección directa de gasóleo. (pág. 2).",
-     "html": "<p>Resistencia eléctrica adicional (PTC) situada en el conjunto de distribución de trampillas, empleada sobre todo en vehículos con motores de inyección directa de gasóleo. <span class=\"pag\">pág. 2</span>.</p>"
+     "texto": "Resistencia térmica de tipo PTC (coeficiente de temperatura positivo) integrada en la unidad de distribución de aire, utilizada especialmente en vehículos con motores de inyección directa de gasóleo. (pág. 2)",
+     "html": "<p>Resistencia térmica de tipo PTC (coeficiente de temperatura positivo) integrada en la unidad de distribución de aire, utilizada especialmente en vehículos con motores de inyección directa de gasóleo. <span class=\"pag\">pág. 2</span></p>"
     },
     {
      "titulo": "Principio de funcionamiento",
-     "texto": "Genera calor por efecto eléctrico al recibir alimentación para calentar el aire entrante mientras el circuito de refrigeración del motor alcanza la temperatura de servicio adecuada. (pág. 2).",
-     "html": "<p>Genera calor por efecto eléctrico al recibir alimentación para calentar el aire entrante mientras el circuito de refrigeración del motor alcanza la temperatura de servicio adecuada. <span class=\"pag\">pág. 2</span>.</p>"
+     "texto": "En los motores diésel de inyección directa, el líquido refrigerante tarda un tiempo prolongado en alcanzar la temperatura de servicio adecuada para la calefacción por radiador. La resistencia PTC se conecta eléctricamente al iniciar la marcha para calentar el caudal de aire entrante hasta que el circuito de refrigeración del motor pueda asumir la aportación térmica. (pág. 2)",
+     "html": "<p>En los motores diésel de inyección directa, el líquido refrigerante tarda un tiempo prolongado en alcanzar la temperatura de servicio adecuada para la calefacción por radiador. La resistencia PTC se conecta eléctricamente al iniciar la marcha para calentar el caudal de aire entrante hasta que el circuito de refrigeración del motor pueda asumir la aportación térmica. <span class=\"pag\">pág. 2</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Ubicación de la resistencia de calefacción eléctrica PTC en la unidad climática — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 2",
+     "html": "<ul>\n<li>Ubicación de la resistencia de calefacción eléctrica PTC en la unidad climática — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 2</li>\n</ul>"
     }
    ]
   },
@@ -46732,6 +46929,65 @@
      "titulo": "Errores de concepto frecuentes",
      "texto": "Intentar reparar tuberías de aluminio inestancas mediante soldadura o estañado en lugar de sustituir el componente. (pág. 22) Trabajar en fosos no ventilados con circuitos de aire acondicionado abiertos. (pág. 22)",
      "html": "<ul>\n<li>Intentar reparar tuberías de aluminio inestancas mediante soldadura o estañado en lugar de sustituir el componente. <span class=\"pag\">pág. 22</span></li>\n<li>Trabajar en fosos no ventilados con circuitos de aire acondicionado abiertos. <span class=\"pag\">pág. 22</span></li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.unidad-manejo-indicacion.bizona.descripcion-fisica-del-sistema-de-climat",
+   "nt": 634,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "unidad-manejo-indicacion",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Tablero de mandos de la climatización bizona",
+   "codigo": "",
+   "menu": "Tablero de mandos de la climatización",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, págs. 3-4",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "bizona",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "control-climatizacion",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "tablero de mandos",
+    "bizona",
+    "AUTO",
+    "A/C",
+    "recirculación",
+    "desempañado rápido",
+    "luneta térmica"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Permitir al usuario seleccionar y gobernar los parámetros de temperatura, caudal, distribución de aire y funciones adicionales del sistema de climatización. (págs. 3-4)",
+     "html": "<p>Permitir al usuario seleccionar y gobernar los parámetros de temperatura, caudal, distribución de aire y funciones adicionales del sistema de climatización. <span class=\"pag\">págs. 3-4</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Panel de mandos compacto situado en el centro del salpicadero que integra la centralita de climatización. Cuenta con regulación de temperatura independiente para conductor y acompañante (bizona). (págs. 3-4)",
+     "html": "<p>Panel de mandos compacto situado en el centro del salpicadero que integra la centralita de climatización. Cuenta con regulación de temperatura independiente para conductor y acompañante (bizona). <span class=\"pag\">págs. 3-4</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Recibe las órdenes del usuario a través de sus pulsadores e interfaces de selección y comunica directamente con los actuadores de la unidad climática y las centralitas del vano motor (ECM y BSI). Permite gestionar: Dos teclas AUTO independientes para regular de forma automática o manual el confort térmico de cada lado. (pág. 4) Una rueda única de selección para la velocidad del impulsor de aire. (pág. 4) Un botón A/C para conectar o desconectar el compresor de refrigeración. (pág. 4) Un botón de recirculación de aire para conmutar entre entrada de aire exterior e interior. (pág. 4) Un botón de desempañado rápido y un botón para la luneta térmica trasera. (pág. 4)",
+     "html": "<p>Recibe las órdenes del usuario a través de sus pulsadores e interfaces de selección y comunica directamente con los actuadores de la unidad climática y las centralitas del vano motor (ECM y BSI). Permite gestionar:</p>\n<ul>\n<li>Dos teclas AUTO independientes para regular de forma automática o manual el confort térmico de cada lado. <span class=\"pag\">pág. 4</span></li>\n<li>Una rueda única de selección para la velocidad del impulsor de aire. <span class=\"pag\">pág. 4</span></li>\n<li>Un botón A/C para conectar o desconectar el compresor de refrigeración. <span class=\"pag\">pág. 4</span></li>\n<li>Un botón de recirculación de aire para conmutar entre entrada de aire exterior e interior. <span class=\"pag\">pág. 4</span></li>\n<li>Un botón de desempañado rápido y un botón para la luneta térmica trasera. <span class=\"pag\">pág. 4</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Frontal del tablero de mandos bizona con la disposición de pantallas, teclas AUTO, A/C y mandos de selección — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, págs. 3-4",
+     "html": "<ul>\n<li>Frontal del tablero de mandos bizona con la disposición de pantallas, teclas AUTO, A/C y mandos de selección — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, págs. 3-4</li>\n</ul>"
     }
    ]
   },

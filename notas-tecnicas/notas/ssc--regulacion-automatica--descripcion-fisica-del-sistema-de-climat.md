@@ -6,52 +6,37 @@ nt: 259
 tipo: proceso
 subtipo: fundamento
 clase: fundamento
-titulo: "Estructura física del sistema de climatización automática"
-menu: "Estructura física del sistema de clima"
+titulo: "Descripción física del sistema de climatización automática"
+menu: "Descripción física del sistema de clim"
 grupo: "Control de climatización"
 clave: regulacion-automatica
 area: climatizacion
 sistema: "control-climatizacion"
 marca: "Valeo"
 fuentes: "DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, págs. 1-5"
-relacionados: ["unidad-control-climatizador", "distribucion-aire", "circuito-frigorifico"]
-palabras: ["compartimento motor", "conjunto de distribución", "tablero de mandos", "haz de cables", "climatización automática"]
+relacionados: ["unidad-control-climatizador", "distribucion-aire"]
+palabras: ["compartimento motor", "salpicadero", "tablero de mandos", "haces de cables", "BSI", "ECM"]
 ---
 
 ## Objeto
 
-Describir la ubicación física, división por entornos y comunicación del sistema de climatización automática en el vehículo. (pág. 1).
+Describir la ubicación física, la estructura de interconexión por cableado y la distribución de componentes del sistema de climatización regulada en las distintas zonas del vehículo. (págs. 1-5)
 
 ## Fundamento
 
-El sistema de climatización automática se distribuye físicamente en tres zonas del vehículo: compartimento motor, conjunto de distribución de trampillas e interior del salpicadero (tablero de mandos). Los elementos están interconectados mediante dos haces de cables principales que unen el cuadro de mandos con el conjunto de trampillas y con el compartimento motor. (págs. 1, 3).
+El sistema se divide físicamente en tres áreas operativas (compartimento motor, conjunto de distribución de trampillas y tablero de mandos) interconectadas mediante dos haces de cables principales y redes de comunicación con las centralitas del vehículo (BSI y ECM). (págs. 1-5)
 
 ## Desarrollo
 
-1. Compartimento motor:
-   - Contiene la parte de alta presión del circuito de aire acondicionado (condensador, compresor, filtro deshidratante y presostato). (pág. 1).
-   - El compresor es arrastrado por la correa del alternador desde el cigüeñal, acoplándose mediante un embrague electromagnético. (pág. 1).
-   - Alberga el calculador del circuito de refrigeración del motor, que desvía parte del caudal de refrigerante hacia el conjunto de trampillas para la calefacción. (pág. 1).
-   - Contiene el calculador de inyección (ECM), que intercambia información con la centralita de climatización y el calculador BSI. (pág. 1).
-
-2. Conjunto de distribución de trampillas:
-   - Es el entorno que concentra la mayoría de componentes de la climatización regulada. (pág. 2).
-   - Alberga el radiador de calefacción (cuya circulación no debe anularse al estar dimensionado el circuito del motor con su disipación), el evaporador (órgano productor de frío tras el filtro del habitáculo) y, en algunos vehículos, una resistencia PTC. (pág. 2).
-   - El aire es impulsado por el grupo motoventilador (GMV), regulado por un módulo electrónico de velocidad o potenciómetro. (pág. 2).
-   - Contiene sondas de temperatura (sonda del evaporador y sondas de salida de difusores centrales y pies) y los actuadores/micromotores que gobiernan las trampillas de recirculación, distribución y mezcla. (págs. 2-3).
-
-3. Tablero de mandos:
-   - Es la interfaz para que el usuario gobierne el sistema en modo manual o automático (por ejemplo, con regulación de temperatura independiente para conductor y acompañante). (págs. 3-4).
-   - Incorpora teclas de Auto, botón para desconectar el compresor (A/C), botón de recirculación, botón de desempañado rápido y botón para la luneta térmica trasera. (pág. 4).
-
-4. Sistema completo y diagnóstico:
-   - Es un sistema complejo donde una avería sencilla (como una sonda cortada) provoca un funcionamiento incorrecto en modo automático. (pág. 5).
-   - La avería del potenciómetro del electroventilador puede generar una sobretensión que ponga en riesgo la integridad de la centralita. (pág. 5).
+- **Compartimento motor:** Alberga los componentes de alta presión del circuito de aire acondicionado (compresor, condensador, filtro deshidratante y presostato), el calculador de inyección (ECM), el calculador del circuito de refrigeración del motor y la BSI. (págs. 1-3)
+- **Conjunto de distribución de trampillas (interior/salpicadero):** Contiene el evaporador (productor de frío), el radiador de calefacción, la resistencia eléctrica PTC, el filtro del habitáculo, el impulsor de aire (GMV) con su módulo electrónico de velocidad, las trampillas motorizadas (recirculación, mezcla izquierda/derecha y reparto de aire) y las sondas térmicas (evaporador y difusores). (págs. 2-3)
+- **Tablero de mandos:** Ubicado en la consola central, alberga la centralita de climatización y la interfaz de usuario con regulación automática/manual (bizona), conectada mediante los haces de cables del vano motor y de la caja climática. (págs. 3-4)
 
 ## Errores de concepto frecuentes
 
-Anular la circulación del radiador de calefacción; en los vehículos actuales, el circuito de refrigeración del motor está dimensionado contando con la disipación térmica producida en el radiador de calefacción. (pág. 2).
+- Anular la circulación del radiador de calefacción, ignorando que el circuito de refrigeración del motor está dimensionado contando con la disipación térmica de dicho radiador. (pág. 2)
+- Desatender las anomalías en el potenciómetro del electroventilador, las cuales pueden generar sobretensiones peligrosas para la centralita de climatización. (pág. 5)
 
 ## Imágenes requeridas
 
-- Esquema físico general del sistema de climatización automática interconectando compartimento motor, conjunto de distribución de trampillas y panel de mandos — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 5
+- Esquema general del sistema completo de climatización automática indicando la interconexión entre compartimento motor, caja de trampillas y panel de mandos — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 5

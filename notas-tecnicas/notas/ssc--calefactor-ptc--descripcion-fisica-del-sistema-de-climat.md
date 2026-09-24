@@ -5,27 +5,31 @@ unidad: clima
 nt: 260
 tipo: elemento
 clase: componente
-titulo: "Resistencia de calefacción eléctrica"
-menu: "Resistencia de calefacción eléctrica"
+titulo: "Resistencia de calefacción eléctrica PTC"
+menu: "Resistencia de calefacción eléctrica P"
 grupo: "Calefacción"
 clave: calefactor-ptc
 area: climatizacion
 sistema: "calefaccion"
-forma_parte_de: regulacion-automatica
+forma_parte_de: distribucion-aire
 marca: "Valeo"
 fuentes: "DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, págs. 2"
-relacionados: ["liquido-refrigerante-motor"]
-palabras: ["resistencia PTC", "calefacción eléctrica", "inyección directa", "gasóleo"]
+relacionados: ["unidad-control-climatizador"]
+palabras: ["PTC", "calefacción eléctrica", "inyección directa", "gasóleo", "calentamiento rápido"]
 ---
 
 ## Misión
 
-Aportar calefacción al habitáculo durante los primeros minutos de funcionamiento en vehículos donde la temperatura del líquido refrigerante tarda mucho tiempo en alcanzar el valor adecuado. (pág. 2).
+Aportar calefacción eléctrica al aire que entra al habitáculo durante los primeros minutos de funcionamiento del vehículo. (pág. 2)
 
 ## Tipos y características
 
-Resistencia eléctrica adicional (PTC) situada en el conjunto de distribución de trampillas, empleada sobre todo en vehículos con motores de inyección directa de gasóleo. (pág. 2).
+Resistencia térmica de tipo PTC (coeficiente de temperatura positivo) integrada en la unidad de distribución de aire, utilizada especialmente en vehículos con motores de inyección directa de gasóleo. (pág. 2)
 
 ## Principio de funcionamiento
 
-Genera calor por efecto eléctrico al recibir alimentación para calentar el aire entrante mientras el circuito de refrigeración del motor alcanza la temperatura de servicio adecuada. (pág. 2).
+En los motores diésel de inyección directa, el líquido refrigerante tarda un tiempo prolongado en alcanzar la temperatura de servicio adecuada para la calefacción por radiador. La resistencia PTC se conecta eléctricamente al iniciar la marcha para calentar el caudal de aire entrante hasta que el circuito de refrigeración del motor pueda asumir la aportación térmica. (pág. 2)
+
+## Imágenes requeridas
+
+- Ubicación de la resistencia de calefacción eléctrica PTC en la unidad climática — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 2
