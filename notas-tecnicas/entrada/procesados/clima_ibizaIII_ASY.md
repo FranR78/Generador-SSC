@@ -1,81 +1,42 @@
 ```yaml
 tipo: fundamento
-titulo: Esquema eléctrico del Climatronic en el Ibiza III (motor ASY)
-entidad: esquema-electrico-climatizador
+titulo: Esquema eléctrico del Climatronic en el SEAT Ibiza III (motor ASY)
+entidad: regulacion-automatica
 area: climatizacion
 sistema: control-climatizacion
 fabricante: SEAT
 fuente: "clima ibizaIII ASY.pdf"
 paginas: "1-7"
-relacionados: [unidad-control-climatizador, unidad-control-aire-acondicionado]
-palabras: [esquema eléctrico, Climatronic, Ibiza III, motor ASY, CAN-Bus]
+relacionados: [unidad-control-climatizador, regulacion-automatica]
+palabras: [esquema eléctrico, Climatronic, ASY, colores de cables, fusibles, puntos de masa]
 ```
 
 ## Objeto
-Definir la arquitectura eléctrica, la distribución de alimentaciones, masas, sensores, servomotores de trampillas y conexiones del sistema Climatronic en el SEAT Ibiza III (a partir de noviembre de 2001, motor 1,9 l SDI letras ASY y motores gasolina AZQ, BBY, AUB). (pág. 1).
+Definir la distribución de corriente, interconexiones eléctricas, patillaje de conectores, codificación de colores de cables y protección por fusibles del sistema Climatronic en el SEAT Ibiza III con motor 1,9l SDI (ASY) a partir de noviembre de 2001. (págs. 1-7)
 
 ## Fundamento
-El sistema se representa mediante esquemas de circuitos de corriente numerados del 10/1 al 10/7, identificando los elementos por códigos alfanuméricos, secciones y colores de cable, así como sus interconexiones con el conector de diagnosis T16, el cuadro de instrumentos J285, la unidad de red de a bordo y la unidad de control de motor mediante CAN-Bus Confort (High/Low). (págs. 1-7).
+El esquema de circuitos de corriente documenta gráficamente el conexionado eléctrico entre la unidad de control para Climatronic J255, la unidad de manejo e indicación E87, los servomotores con sus potenciómetros de posición, los sensores térmicos y de presión, y los módulos de potencia para la turbina de aire y los electroventiladores. (págs. 1-7)
 
 ## Desarrollo
-El esquema eléctrico se estructura en siete hojas principales:
+La arquitectura eléctrica del Climatronic se compone de los siguientes bloques interconectados:
+- **Alimentación y mando de la turbina de aire:** La unidad J255 y la unidad de manejo E87 reciben alimentación desde el distribuidor de cables TV2 (borne 30) y las líneas de contacto 15 y X (a través del relé J59) protegidas por los fusibles SB18, SB29 y SB36. La turbina V2 es gobernada por la unidad de control J126, recibiendo información del fotosensor de radiación solar G107. (págs. 1-2)
+- **Servomotores de mezcla y distribución de aire:** La unidad J255 controla la alimentación e inversión de polaridad de los servomotores V68 (trampilla de temperatura), V70 (trampilla central), V107 (trampilla de descongelación) y V113 (trampilla de recirculación). Asimismo, lee la posición real de sus potenciómetros G92, G112, G135 y G143 alimentados a 5 V por la línea L46. (págs. 3-4)
+- **Red de sensores térmicos y comunicación CAN-Bus:** Procesa las señales analógicas de los termosensores del canal de aspiración G89, difusor central G191, difusor de reposapiés G192 y salida del evaporador G263. Incorpora las conexiones CAN-Bus Confort High (A146/B397) y Low (A147/B406) para la red de a bordo. (págs. 5)
+- **Gestión de la válvula del compresor y electroventiladores:** La unidad J255 gobierna la válvula reguladora del compresor N280 y lee el termosensor de temperatura interior G56 (asociado a la turbina V42). En los vehículos con motor ASY, la unidad J293 controla el funcionamiento de los dos ventiladores del radiador (V7 y V35) en sus velocidades I y II (líneas D167 y D168), recibiendo señales del termoconmutador F18 y del transmisor de alta presión G65. La alimentación principal de la unidad J293 proviene del portafusibles de batería mediante S177 (40 A), S180 (30 A) y S269 (5 A). (págs. 6-7)
 
-1. Identificación del vehículo y motorizaciones (Hoja 10/1):
-- Válido para Ibiza a partir de noviembre de 2001 con motores 1,2 l Simos (AZQ), 1,4 l 16V Marelli (BBY/AUB) y 1,9 l SDI 47 kW (ASY). (pág. 1).
-
-2. Alimentación eléctrica y turbina de aire fresco (Hoja 10/2):
-- Alimentación por positivo de encendido (15) desde el fusible SB18 y el distribuidor TV2.
-- Alimentación por positivo de contacto X desde el relé J59 a través del fusible SB29.
-- Alimentación por positivo permanente (30) a través del fusible SB36.
-- Unidad de manejo e indicación E87 / Unidad de control para Climatronic J255.
-- Unidad de control para turbina de aire fresco J126 y motor de la turbina V2.
-- Fotosensor para radiación solar G107.
-- Punto de masa 606 (debajo de la consola central, cerca de la palanca de cambios). (pág. 2).
-
-3. Trampillas de temperatura y central (Hoja 10/3):
-- Servomotor de la trampilla de temperatura V68 con su potenciómetro G92.
-- Servomotor para trampilla central V70 con su potenciómetro G112.
-- Conexión de alimentación de 5 V (L46) y masa de sensores Climatronic (243). (pág. 3).
-
-4. Trampillas de descongelación y recirculación (Hoja 10/4):
-- Servomotor para trampilla de descongelación V107 con su potenciómetro G135.
-- Servomotor para trampilla de recirculación V113 con su potenciómetro G143.
-- Conexión a la unidad de control de red de a bordo (T18b) y líneas de masa/alimentación de 5 V. (pág. 4).
-
-5. Sensores de temperatura y CAN-Bus (Hoja 10/5):
-- Termosensor del canal de aspiración de aire fresco G89.
-- Transmisor de temperatura del difusor central G191.
-- Transmisor de temperatura del difusor de la zona de los pies G192.
-- Transmisor de temperatura del aire a la salida del evaporador G263.
-- Líneas CAN-Bus Confort High (A146/B397) y Low (A147/B406) conectadas a la UCE J255 (conectores T12/9 y T12/10).
-- Conexión al conector de diagnosis T16a (pines 13 y 14) y puntos de masa 80 (cuadro de instrumentos) y 605 (columna de dirección, arriba). (pág. 5).
-
-6. Válvula del compresor, ventiladores e iluminación/sensor interior (Hoja 10/6):
-- Termosensor de temperatura interior G56 con turbina de aspiración V42.
-- Válvula reguladora del compresor de aire acondicionado N280 (conectada a J255 pines T11c/8 y T11c/9).
-- Unidad de control para ventilador del líquido refrigerante J293.
-- Ventiladores del líquido refrigerante V7 y V35 (conexiones D167 para velocidad I y D168 para velocidad II en mazo de vano motor).
-- Conexión a masa 162 en mazo de cables del motor de ventilador. (pág. 6).
-
-7. Presostato, termoconmutador y protecciones de batería (Hoja 10/7):
-- Transmisor de alta presión G65 (conectado a J293 pin T6y/2).
-- Termoconmutador del ventilador del líquido de refrigeración F18 (conectado a J293 pines T6y/6 y T6y/5).
-- Fusibles en el portafusibles de la batería A: S177 (40 A), S180 (30 A) y S269 (5 A).
-- Punto de masa 49 (cerca de la servodirección, en larguero izquierdo delantero) y conexión D61 en mazo de vano motor. (pág. 7).
-
-📷 IMAGEN: Esquema eléctrico general de corriente de Climatronic para Ibiza III — Fuente: clima ibizaIII ASY.pdf, pág. 1
+📷 IMAGEN: Esquema eléctrico de la unidad J293 con el conexionado de la válvula N280, el sensor G65 y los ventiladores V7 y V35 para el motor ASY — Fuente: clima ibizaIII ASY.pdf, págs. 6-7
 
 ## Valores de referencia
-- Fusible SB18: línea de positivo (15) en portafusibles. (pág. 2).
-- Fusible SB29: línea de positivo (X) en portafusibles. (pág. 2).
-- Fusible SB36: línea de positivo permanente (30) en portafusibles. (pág. 2).
-- Fusible S177: 40 A en portafusibles/batería. (pág. 7).
-- Fusible S180: 30 A en portafusibles/batería. (pág. 7).
-- Fusible S269: 5 A en portafusibles/batería. (pág. 7).
-- Alimentación de potenciómetros (L46): 5 V. (págs. 3, 4).
-- Secciones de cableado: de 0,35 mm² (líneas de señal/sensores) a 6 mm² (alimentación principal de ventiladores). (págs. 2-7).
+- Fusible de la turbina/Climatronic SB36: 25 A. (pág. 2)
+- Fusibles en el portafusibles de batería para J293: S177 (40 A), S180 (30 A) y S269 (5 A). (pág. 7)
+- Tensión de alimentación de los potenciómetros de trampillas (línea L46): 5 V. (págs. 3, 4)
+- Motorizaciones aplicables documentadas: 1,9l SDI / 47 kW (ASY), 1,2l / 47 kW (AZQ), 1,4l 16V / 55 kW (BBY), 1,4l 16V / 74 kW (AUB). (pág. 1)
+- Conector de diagnóstico: T16a (conector de 16 polos). (págs. 2, 5)
 
 ## Errores de concepto frecuentes
-No documentado en fuentes. (págs. 1-7).
+- Confundir el mando de los electroventiladores pensando que cada uno requiere un módulo independiente en la motorización ASY, cuando la unidad J293 gobierna simultáneamente el ventilador principal V7 y el secundario V35. (pág. 6)
+- Ignorar que los potenciómetros de todas las trampillas motorizadas comparten una misma línea estabilizada de referencia a 5 voltios (L46) suministrada desde la unidad J255. (págs. 3, 4)
+
+---
 
 COBERTURA: documento «clima ibizaIII ASY.pdf», páginas 1 a 7 de 7. [completo]
