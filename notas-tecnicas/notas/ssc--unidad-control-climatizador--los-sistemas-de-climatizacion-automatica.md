@@ -24,7 +24,7 @@ Gobernar y coordinar automáticamente el funcionamiento del sistema de climatiza
 
 ## Tipos y características
 
-Calculador o centralita electrónica ubicada habitualmente detrás de los mandos y de la pantalla del climatizador en el salpicadero. Dispone de canales de entrada, salidas de potencia e interfaces de comunicación bidireccionales. (págs. 6-8)
+Calculador o centralita electrónica ubicada habitualmente detrás de los mandos y de la pantalla del climatizador en el salpicadero. Dispone de canales de entrada, salidas de potencia e interfaces de comunicación bidireccionales. (págs. 6, 8)
 
 ## Principio de funcionamiento
 
