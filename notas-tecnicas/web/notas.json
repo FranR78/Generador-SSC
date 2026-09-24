@@ -2178,6 +2178,22 @@
    "hecha": false
   },
   {
+   "nombre": "NT527_01",
+   "nt": 527,
+   "titulo": "Acoplamiento magnético",
+   "seccion": "4. El compresor",
+   "descripcion": "Esquema del acoplamiento magnético N25 mostrando la bobina electromagnética, el compresor, el embrague y la polea de arrastre — Fuente: Acomplamiento magnetico Ventiladores.pdf, pág. 1",
+   "hecha": false
+  },
+  {
+   "nombre": "NT528_01",
+   "nt": 528,
+   "titulo": "Ventiladores de líquido refrigerante",
+   "seccion": "5. Lado de alta",
+   "descripcion": "Disposición de los ventiladores de líquido refrigerante con motores independientes y resistencia eléctrica en el canalizador — Fuente: Acomplamiento magnetico Ventiladores.pdf, pág. 1-2",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -2202,7 +2218,7 @@
    "hecha": false
   }
  ],
- "total": 518,
+ "total": 520,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -8301,6 +8317,73 @@
    ]
   },
   {
+   "id": "ssc.embrague-compresor.acomplamiento-magnetico-ventiladores",
+   "nt": 527,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "embrague-compresor",
+   "seccion": "4. El compresor",
+   "subgrupo": "",
+   "titulo": "Acoplamiento magnético",
+   "codigo": "N25",
+   "menu": "Acoplamiento magnético N25",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Acomplamiento magnetico Ventiladores.pdf, págs. 1",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "compresor",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "compresor"
+   ],
+   "palabras": [
+    "embrague electromagnético",
+    "bobina",
+    "polea",
+    "aire acondicionado"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Está ubicado en el compresor y es el encargado de acoplarlo para que gire solidario con el motor y así generar la presión necesaria en el circuito frigorífico. (pág. 1)",
+     "html": "<p>Está ubicado en el compresor y es el encargado de acoplarlo para que gire solidario con el motor y así generar la presión necesaria en el circuito frigorífico. <span class=\"pag\">pág. 1</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "El conjunto está montado en el compresor y compuesto por bobina electromagnética, embrague y polea de arrastre. (pág. 1)",
+     "html": "<p>El conjunto está montado en el compresor y compuesto por bobina electromagnética, embrague y polea de arrastre. <span class=\"pag\">pág. 1</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Es excitado con positivo por la unidad de control del aire acondicionado y se mantiene conectado mientras exista dicha excitación. (pág. 1)",
+     "html": "<p>Es excitado con positivo por la unidad de control del aire acondicionado y se mantiene conectado mientras exista dicha excitación. <span class=\"pag\">pág. 1</span></p>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "En caso de avería, el aire que entra al habitáculo no se enfría. (pág. 1)",
+     "html": "<p>En caso de avería, el aire que entra al habitáculo no se enfría. <span class=\"pag\">pág. 1</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "No existe función sustitutiva. La avería es apreciable fácilmente ya que el aire que entra al habitáculo no se enfría. (pág. 1)",
+     "html": "<p>No existe función sustitutiva. La avería es apreciable fácilmente ya que el aire que entra al habitáculo no se enfría. <span class=\"pag\">pág. 1</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del acoplamiento magnético N25 mostrando la bobina electromagnética, el compresor, el embrague y la polea de arrastre — Fuente: Acomplamiento magnetico Ventiladores.pdf, pág. 1",
+     "html": "<ul>\n<li>Esquema del acoplamiento magnético N25 mostrando la bobina electromagnética, el compresor, el embrague y la polea de arrastre — Fuente: Acomplamiento magnetico Ventiladores.pdf, pág. 1</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.valvula-sobrepresion.11-dispositivos-de-regulacion-y-segurida",
    "nt": 64,
    "modulo": "ssc",
@@ -9498,6 +9581,75 @@
      "titulo": "Imágenes requeridas",
      "texto": "Posibilidades de montaje del electroventilador (empujando y en aspiración) — Fuente: AA AUTOMOCION MD FR.pdf, pág. 97",
      "html": "<ul>\n<li>Posibilidades de montaje del electroventilador (empujando y en aspiración) — Fuente: AA AUTOMOCION MD FR.pdf, pág. 97</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.electroventilador-condensador.acomplamiento-magnetico-ventiladores",
+   "nt": 528,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "electroventilador-condensador",
+   "seccion": "5. Lado de alta",
+   "subgrupo": "",
+   "titulo": "Ventiladores de líquido refrigerante",
+   "codigo": "V7, V35",
+   "menu": "Ventiladores de líquido refrig V7, V35",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Acomplamiento magnetico Ventiladores.pdf, págs. 1-2",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "conmutador-termico-f18",
+    "unidad-control-climatizador",
+    "condensador",
+    "liquido-refrigerante-motor"
+   ],
+   "palabras": [
+    "electroventilador",
+    "resistencia eléctrica",
+    "conmutador térmico",
+    "dos velocidades"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Dos ventiladores se encargan de generar el flujo de aire adecuado que atraviesa el condensador para reducir la temperatura del agente frigorífico. Además, por su ubicación, este mismo flujo de aire atraviesa el radiador, reduciendo la temperatura del líquido refrigerante. (pág. 1-2)",
+     "html": "<p>Dos ventiladores se encargan de generar el flujo de aire adecuado que atraviesa el condensador para reducir la temperatura del agente frigorífico. Además, por su ubicación, este mismo flujo de aire atraviesa el radiador, reduciendo la temperatura del líquido refrigerante. <span class=\"pag\">pág. 1-2</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Cuenta con dos ventiladores impulsados por motores independientes. Cada ventilador dispone de dos velocidades de funcionamiento. La primera velocidad se obtiene mediante la ayuda de una resistencia eléctrica (material resistivo) ubicada en el propio canalizador de aire de los ventiladores. (pág. 1-2)",
+     "html": "<p>Cuenta con dos ventiladores impulsados por motores independientes. Cada ventilador dispone de dos velocidades de funcionamiento. La primera velocidad se obtiene mediante la ayuda de una resistencia eléctrica (material resistivo) ubicada en el propio canalizador de aire de los ventiladores. <span class=\"pag\">pág. 1-2</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Son excitados con 12 V por la unidad de control del aire acondicionado y a través del conmutador térmico del ventilador F18. El circuito de la primera velocidad es alimentado por el conmutador térmico o por la unidad de control del aire acondicionado. El circuito de la segunda velocidad siempre es alimentado por la unidad de control del aire acondicionado. (pág. 1-2)",
+     "html": "<p>Son excitados con 12 V por la unidad de control del aire acondicionado y a través del conmutador térmico del ventilador F18. El circuito de la primera velocidad es alimentado por el conmutador térmico o por la unidad de control del aire acondicionado. El circuito de la segunda velocidad siempre es alimentado por la unidad de control del aire acondicionado. <span class=\"pag\">pág. 1-2</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tensión de excitación: 12 V suministrados por la unidad de control del aire acondicionado o el conmutador térmico F18. (pág. 1-2)",
+     "html": "<p>Tensión de excitación: 12 V suministrados por la unidad de control del aire acondicionado o el conmutador térmico F18. <span class=\"pag\">pág. 1-2</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "No existe función sustitutiva. (pág. 1-2)",
+     "html": "<p>No existe función sustitutiva. <span class=\"pag\">pág. 1-2</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Disposición de los ventiladores de líquido refrigerante con motores independientes y resistencia eléctrica en el canalizador — Fuente: Acomplamiento magnetico Ventiladores.pdf, pág. 1-2",
+     "html": "<ul>\n<li>Disposición de los ventiladores de líquido refrigerante con motores independientes y resistencia eléctrica en el canalizador — Fuente: Acomplamiento magnetico Ventiladores.pdf, pág. 1-2</li>\n</ul>"
     }
    ]
   },
