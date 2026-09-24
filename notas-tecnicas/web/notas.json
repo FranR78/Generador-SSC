@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-24",
- "total": 335,
+ "total": 336,
  "grupos": [
   "Calefacción",
   "Circuito frigorífico",
@@ -9,6 +9,7 @@
   "Equipos de taller",
   "Fluidos frigoríficos",
   "Herramientas y medida",
+  "Infotainment",
   "Normativa y medioambiente",
   "PRL y seguridad",
   "Refrigeración del motor",
@@ -23294,6 +23295,68 @@
      "titulo": "Cómo comprobarlo",
      "texto": "Consultar la Localización Guiada de Averías (Guided Fault Finding) y la documentación técnica de servicio. (pág. 23).",
      "html": "<p>Consultar la Localización Guiada de Averías (Guided Fault Finding) y la documentación técnica de servicio. <span class=\"pag\">pág. 23</span>.</p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.unidad-control-electronica-informacion-j794.ssp-484-a7-info-y-clima-arrastrado-4",
+   "nt": 336,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "unidad-control-electronica-informacion-j794",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Unidad de control de electrónica de información 1 J794",
+   "codigo": "J794",
+   "menu": "Unidad de control de electróni J794",
+   "grupo": "Infotainment",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "SSP 484 A7 Info y Clima (arrastrado) 4.pdf, págs. 30-31",
+   "clase": "componente",
+   "variante": "",
+   "area": "electricidad-electronica",
+   "sistema": "NUEVO-infotainment",
+   "formaParteDe": "",
+   "relacionados": [
+    "mmi-radio-plus",
+    "reproductor-cd-r89",
+    "amplificador-audio"
+   ],
+   "palabras": [
+    "J794",
+    "RMC",
+    "Radio Media Center",
+    "MMI Radio plus",
+    "dirección 5F"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Actuar como controlador central de la plataforma de infotainment Radio Media Center (RMC) y agrupar prácticamente todas las funciones de hardware del sistema en una sola carcasa equivalente a un dispositivo de formato 1-DIN. (págs. 30-31).",
+     "html": "<p>Actuar como controlador central de la plataforma de infotainment Radio Media Center (RMC) y agrupar prácticamente todas las funciones de hardware del sistema en una sola carcasa equivalente a un dispositivo de formato 1-DIN. <span class=\"pag\">págs. 30-31</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Módulo electrónico central en formato 1-DIN correspondiente a la plataforma Radio Media Center (RMC). A diferencia del sistema MMI de tercera generación, no utiliza un módulo de control de radio independiente, sino que integra la radio dentro de la propia unidad J794. Integra en su interior o gestiona los siguientes módulos y funciones: Lector de tarjetas SD. Reproductor de CD R89. Unidad de control para la pantalla de información frontal J523. Módulo de control de entrada por voz J507. Conexión para fuente de audio externa (AMI) R199. Módulo emisor/receptor de teléfono R36. En versiones con MMI Radio plus, incorpora un amplificador de audio adicional o la gestión del módulo del sistema de sonido digital J525. (págs. 30-31).",
+     "html": "<p>Módulo electrónico central en formato 1-DIN correspondiente a la plataforma Radio Media Center (RMC). A diferencia del sistema MMI de tercera generación, no utiliza un módulo de control de radio independiente, sino que integra la radio dentro de la propia unidad J794. Integra en su interior o gestiona los siguientes módulos y funciones:</p>\n<ul>\n<li>Lector de tarjetas SD.</li>\n<li>Reproductor de CD R89.</li>\n<li>Unidad de control para la pantalla de información frontal J523.</li>\n<li>Módulo de control de entrada por voz J507.</li>\n<li>Conexión para fuente de audio externa (AMI) R199.</li>\n<li>Módulo emisor/receptor de teléfono R36.</li>\n<li>En versiones con MMI Radio plus, incorpora un amplificador de audio adicional o la gestión del módulo del sistema de sonido digital J525. <span class=\"pag\">págs. 30-31</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Centraliza el procesamiento de señales de audio, radio, reproductor de medios, pantalla de visualización, telefonía y comandos de voz en un único bloque de control, distribuyendo las salidas amplificadas de audio hacia los altavoces o hacia el módulo de sonido digital. (págs. 30-31).",
+     "html": "<p>Centraliza el procesamiento de señales de audio, radio, reproductor de medios, pantalla de visualización, telefonía y comandos de voz en un único bloque de control, distribuyendo las salidas amplificadas de audio hacia los altavoces o hacia el módulo de sonido digital. <span class=\"pag\">págs. 30-31</span>.</p>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Realizar la diagnosis del sistema mediante el equipo de diagnosis VAS Scan Tool accediendo a través de la dirección 5F (Unidad de control de electrónica de información 1 J794). (pág. 30).",
+     "html": "<p>Realizar la diagnosis del sistema mediante el equipo de diagnosis VAS Scan Tool accediendo a través de la dirección 5F (Unidad de control de electrónica de información 1 J794). <span class=\"pag\">pág. 30</span>.</p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Panel frontal de la unidad J794 e ilustración de los módulos de control integrados en el Radio Media Center — Fuente: SSP 484 A7 Info y Clima (arrastrado).pdf, pág. 30",
+     "html": "<ul>\n<li>Panel frontal de la unidad J794 e ilustración de los módulos de control integrados en el Radio Media Center — Fuente: SSP 484 A7 Info y Clima (arrastrado).pdf, pág. 30</li>\n</ul>"
     }
    ]
   }
