@@ -20,15 +20,15 @@ palabras: ["tarjeta electrónica", "centralita", "calculador", "señales de entr
 
 ## Misión
 
-Gobernar y coordinar automáticamente el funcionamiento del sistema de climatización procesando la información de las sondas y captadores para enviar órdenes de control a los actuadores, impulsor, compresor y electroventiladores. (págs. 6-8)
+Gobernar y coordinar automáticamente el funcionamiento del sistema de climatización procesando la información de las sondas y captadores para enviar órdenes de control a los actuadores, impulsor, compresor y electroventiladores.
 
 ## Tipos y características
 
-Calculador o centralita electrónica ubicada habitualmente detrás de los mandos y de la pantalla de presentación del climatizador en el salpicadero. Dispone de canales de entrada, salidas de potencia e interfaces de comunicación bidireccionales. (págs. 6, 8)
+Calculador o centralita electrónica ubicada habitualmente detrás de los mandos y de la pantalla del climatizador en el salpicadero. Dispone de canales de entrada, salidas de potencia e interfaces de comunicación bidireccionales.
 
 ## Principio de funcionamiento
 
-Recibe las órdenes del usuario desde los mandos del cuadro y analiza de forma continua las señales de entrada procedentes de las sondas térmicas (habitáculo, exterior, aire soplado, evaporador) y del presostato. Con estos datos, emite señales de salida para posicionar los actuadores de las trampillas, ajustar la velocidad del impulsor de aire, acoplar o desacoplar el compresor y activar el electroventilador (GMV). Mantiene enlaces bidireccionales de intercambio de datos con el módulo de inyección del motor y el módulo electrónico de refrigeración. (págs. 6-8)
+Recibe las órdenes del usuario desde los mandos del cuadro y analiza de forma continua las **señales de entrada** procedentes de las sondas térmicas (habitáculo, exterior, aire soplado, evaporador) y del presostato. Con estos datos, emite **señales de salida** para posicionar los actuadores de las trampillas del conjunto de distribución, ajustar el caudal del impulsor de aire, acoplar o desacoplar el compresor y activar el electroventilador (GMV). Mantiene enlaces bidireccionales de intercambio de datos con los módulos electrónicos de inyección y refrigeración.
 
 ## Imágenes requeridas
 
