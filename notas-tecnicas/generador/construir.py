@@ -223,6 +223,28 @@ class Nota:
             raise ValueError("la ficha no tiene contenido")
         self.apartados = self._partir(cuerpo)
 
+    @staticmethod
+    def _preparar_md(texto):
+        """Arregla el Markdown de NotebookLM para que las listas sean listas.
+
+        NotebookLM pega la lista a la frase que la presenta («Ubicación:» y en
+        la línea siguiente «- Troposfera…») y anida con 2 espacios. Python-
+        Markdown necesita línea en blanco antes y 4 espacios por nivel; si no,
+        todo sale como un párrafo corrido.
+        """
+        lista = re.compile(r"^\s*(?:[-*+]|\d+[.)])\s")
+        salida, previa = [], ""
+        for linea in texto.split("\n"):
+            m = re.match(r"^( +)(?=(?:[-*+]|\d+[.)])\s)", linea)
+            if m:
+                linea = " " * (len(m.group(1)) // 2 * 4) + linea.lstrip(" ")
+            if lista.match(linea) and previa.strip() and not lista.match(previa) \
+                    and not previa.lstrip().startswith("|"):
+                salida.append("")
+            salida.append(linea)
+            previa = linea
+        return "\n".join(salida)
+
     def _partir(self, cuerpo):
         """Divide el cuerpo por encabezados de nivel 2 en {titulo: html}."""
         trozos = re.split(r"^##\s+(.+?)\s*$", cuerpo, flags=re.M)
@@ -235,7 +257,7 @@ class Nota:
             texto = trozos[i + 1].strip()
             if texto:
                 md = markdown.Markdown(extensions=EXTENSIONES_MD)
-                apartados[nombre] = md.convert(texto)
+                apartados[nombre] = md.convert(self._preparar_md(texto))
         return apartados
 
     @property
@@ -556,6 +578,18 @@ def cargar():
     return notas, errores
 
 
+PAGINA = re.compile(r"\s*\((p[áa]gs?\.?\s*[^()]{1,40})\)")
+PELIGROSO = re.compile(r"<\s*(script|style|iframe|object|embed)[^>]*>.*?<\s*/\s*\1\s*>|\son\w+=\"[^\"]*\"",
+                       re.I | re.S)
+
+
+def html_lectura(html_str):
+    """El HTML de un apartado para leerlo en el portal: sin nada ejecutable y
+    con las referencias «(pág. 6)» convertidas en una marca discreta."""
+    h = PELIGROSO.sub("", html_str)
+    return PAGINA.sub(lambda m: f' <span class="pag">{m.group(1)}</span>', h)
+
+
 def texto_plano(html_str):
     """Quita etiquetas y deja texto corrido, que es lo que consume la IA."""
     t = re.sub(r"<[^>]+>", " ", html_str)
@@ -698,7 +732,7 @@ def volcar_json(notas):
             "formaParteDe": n.forma_parte_de,
             "relacionados": n.relacionados,
             "palabras": n.palabras,
-            "apartados": [{"titulo": k, "texto": texto_plano(v)}
+            "apartados": [{"titulo": k, "texto": texto_plano(v), "html": html_lectura(v)}
                           for k, v in n.apartados.items()],
         })
     # El orden del curso lo manda el índice: sección, luego posición dentro,

@@ -5,6 +5,26 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    /* Lectura de notas: texto largo cómodo en PC y en móvil. */
+    .apartado .txt{font-size:16px;line-height:1.7;max-width:70ch;text-align:justify;
+      hyphens:auto;-webkit-hyphens:auto;overflow-x:auto;color:#1f2d38}
+    .apartado .txt p{margin:0 0 .75em;white-space:normal !important;font-size:inherit !important;line-height:inherit !important;max-width:none !important}
+    .apartado .txt ul,.apartado .txt ol{margin:.2em 0 .9em;padding-left:1.4em}
+    .apartado .txt li{margin:.35em 0}
+    .apartado .txt li>ul,.apartado .txt li>ol{margin:.2em 0}
+    .apartado .txt strong{color:#063f70}
+    .apartado .txt table{border-collapse:collapse;width:100%;font-size:14px;margin:.4em 0 1em;text-align:left}
+    .apartado .txt th,.apartado .txt td{border:1px solid #d7e1ea;padding:6px 9px;vertical-align:top}
+    .apartado .txt th{background:#eef5fb;color:#063f70}
+    .apartado .txt tr:nth-child(even) td{background:#f8fbfd}
+    .apartado .txt .pag{font-size:11px;color:#6b7c88;background:#eef2f5;border-radius:6px;
+      padding:1px 6px;white-space:nowrap;vertical-align:1px}
+    .apartado h4+.txt{margin-top:6px}
+    .apartado .foto-hueco{display:flex;gap:10px;align-items:flex-start;border:1px dashed #9fb8cc;
+      background:#f6fafd;border-radius:10px;padding:10px 12px;margin:8px 0;font-size:14px;line-height:1.5;text-align:left}
+    .apartado .foto-hueco code{font-weight:700;color:#063f70;background:#e3eef8;border-radius:5px;padding:1px 6px}
+    @media (max-width:600px){ .apartado .txt{font-size:15.5px;text-align:left} }
+
     :root {
       --azul: #038df1;
       --azul-osc: #026bb5;
@@ -1514,6 +1534,23 @@
       });
     }
 
+    // Cuerpo de un apartado. Las notas nuevas traen 'html' (listas, tablas,
+    // negritas) generado por construir.py; las antiguas, solo texto.
+    // «Imágenes requeridas» no es texto de estudio: son los huecos para las
+    // capturas del alumnado, con el nombre exacto que debe tener el archivo.
+    function cuerpoApartado(a, nt){
+      if(a.titulo === 'Imágenes requeridas' && a.html){
+        var i = 0;
+        return a.html.replace(/<\/?ul>/g, '').replace(/<li>([\s\S]*?)<\/li>/g, function(_, desc){
+          i++;
+          var nombre = 'NT' + nt + '_' + (i < 10 ? '0' : '') + i;
+          return '<div class="foto-hueco">📷<span>¿Tienes esta captura? Súbela a la carpeta de capturas como <code>' +
+                 nombre + '.jpg</code><br>' + desc + '</span></div>';
+        });
+      }
+      return a.html ? '<div class="txt">' + a.html + '</div>' : '<p>' + a.texto + '</p>';
+    }
+
     function abrirTema(t, i){
       temaAbierto = t.clave;
       document.getElementById('cur-lector').hidden = false;
@@ -1540,7 +1577,7 @@
           var h = '<h2>' + n.titulo + (n.codigo && !/documentad/i.test(n.codigo) ? ' — ' + n.codigo : '') + '</h2>';
           if(n.ubicacion) h += '<p class="aviso"><strong>Ubicación:</strong> ' + n.ubicacion + '</p>';
           (n.apartados||[]).forEach(function(a){
-            h += '<div class="apartado"><h4>' + a.titulo + '</h4><p>' + a.texto + '</p></div>';
+            h += '<div class="apartado"><h4>' + a.titulo + '</h4>' + cuerpoApartado(a, n.nt) + '</div>';
           });
           if(n.fuentes) h += '<p class="fuente"><strong>Fuente:</strong> ' + n.fuentes + ' · NT' + n.nt + '</p>';
           d.innerHTML = h;
@@ -1761,7 +1798,7 @@
           var h = '<h2>NT'+n.nt+' · '+n.titulo+(n.codigo?' — '+n.codigo:'')+'</h2>';
           if(n.ubicacion) h += '<p class="aviso"><strong>Ubicación:</strong> '+n.ubicacion+'</p>';
           n.apartados.forEach(function(a){
-            h += '<div class="apartado"><h4>'+a.titulo+'</h4><p>'+a.texto+'</p></div>';
+            h += '<div class="apartado"><h4>'+a.titulo+'</h4>'+cuerpoApartado(a, n.nt)+'</div>';
           });
           if(n.fuentes) h += '<p class="fuente"><strong>Fuente:</strong> '+n.fuentes+'</p>';
           d.innerHTML = h;
