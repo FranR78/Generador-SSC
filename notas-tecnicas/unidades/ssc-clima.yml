@@ -92,25 +92,24 @@ indice:
       - compresor
       - embrague-compresor
       - polea-dumper
-      - plato de valvulas
-      - disco oscilante
+      - plato-valvulas
+      - disco-oscilante
       - pistones-embolos
       - valvula-sobrepresion
       - fusible-mecanico-compresor
-      - valvula-reguladora-compresor-variable
-        -  mecanica
-        -  electrónica PWM
+      # valvula-reguladora-compresor-variable: se estudia en la sección 7.
+      # Mecánica y electrónica PWM salen solas como pestañas (campo variante).
 
   - seccion: 5. Lado de alta
     claves:
       - condensador
       - electroventilador-condensador
       - filtro-deshidratador-mirilla
-      
 
   - seccion: 6. Expansión y lado de baja
     claves:
-      - Dispositivos-expansion
+      - grupo: Dispositivos de expansión
+        claves:
           - valvula-expansion
           - estrangulador
       - evaporador
@@ -166,3 +165,24 @@ indice:
       - llenado-bombona-estacion-carga
       - reciclado-interno-estacion-carga
       - desconexion-equipo-carga
+
+# ───────────────────────────────────────────────────────────────────────────
+# ALIAS — nombres distintos de la MISMA cosa.  otro-nombre: el-tuyo
+# NotebookLM no siempre escribe la entidad igual en cada PDF. Aquí la juntas
+# con la tuya sin tocar las notas. Mira unidades/_sin_colocar.yml tras cada
+# lote: lo que sea un duplicado de algo que ya tienes, va aquí.
+# ───────────────────────────────────────────────────────────────────────────
+
+alias:
+  filtro-deshidratador: filtro-deshidratador-mirilla
+  mirilla: filtro-deshidratador-mirilla
+  valvula-reguladora-compresor: valvula-reguladora-compresor-variable
+  presostato: presostato-binary-trinary-cuatrinary
+  transmisor-presion: transmisor-presion-map-maf
+  sensor-temperatura-exterior: sensor-temperatura-ntc-exterior
+  sensor-temperatura-interior: sensor-temperatura-ntc-interior
+  sensor-evaporador: sensor-ntc-evaporador
+  efecto-invernadero-cambio-climatico: efecto-invernadero-y-cambio-climatico
+  directiva-2006-40-ce-mac: directiva-2006-40-ce
+  reglamento-1005-2009-sao: reglamento-ce-1005-2009
+  reglamento-517-2014-f-gas: reglamento-ue-517-2014

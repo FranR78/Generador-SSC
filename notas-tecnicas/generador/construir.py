@@ -565,12 +565,17 @@ def texto_plano(html_str):
 
 
 def cargar_indices():
-    """Lee el bloque 'indice' de cada unidad y arma el orden del curso.
+    """Lee el guion ('indice' y 'alias') de cada unidad y arma el orden del curso.
 
     Devuelve {unidad: {"secciones": [nombre,...],
-                       "clave": {clave: (rango_seccion, rango_dentro)}}}.
-    El orden del curso lo manda esto; una clave que no esté en el índice va a
-    una sección final "Por ubicar", nunca desaparece.
+                       "clave": {clave: (rango_seccion, rango_dentro)},
+                       "subgrupo": {clave: nombre del subgrupo}}}.
+    En 'claves' cada línea es una entidad, o un subgrupo:
+        - grupo: Dispositivos de expansión
+          claves: [valvula-expansion, estrangulador]
+    'alias' junta nombres distintos de la misma cosa ({otro: el tuyo}); se
+    añade a PLEGAR, así que manda también sobre la clave de cada nota.
+    Una clave que no esté en el guion va a «Por ubicar», nunca desaparece.
     """
     dir_uni = RAIZ / "unidades"
     salida = {}
@@ -579,18 +584,29 @@ def cargar_indices():
     for ruta in sorted(dir_uni.glob("*.yml")):
         u = yaml.safe_load(ruta.read_text(encoding="utf-8")) or {}
         uni = u.get("unidad")
-        if not uni or not u.get("indice"):
+        if not uni:
             continue
-        secciones, mapa = [], {}
+        for otro, tuyo in (u.get("alias") or {}).items():
+            PLEGAR[slug(str(otro))] = slug(str(tuyo))
+        if not u.get("indice"):
+            continue
+        secciones, mapa, sub = [], {}, {}
         for i, bloque in enumerate(u["indice"]):
             nombre = str(bloque.get("seccion", f"Sección {i+1}"))
             secciones.append(nombre)
-            for j, clave in enumerate(bloque.get("claves") or []):
-                mapa[slug(str(clave))] = (i, j)
+            j = 0
+            for item in bloque.get("claves") or []:
+                if isinstance(item, dict) and "grupo" in item:
+                    for clave in item.get("claves") or []:
+                        mapa[slug(str(clave))] = (i, j)
+                        sub[slug(str(clave))] = str(item["grupo"])
+                        j += 1
+                else:
+                    mapa[slug(str(item))] = (i, j)
+                    j += 1
         secciones.append("Por ubicar")   # cajón del final para lo no listado
-        salida[uni] = {"secciones": secciones, "clave": mapa}
+        salida[uni] = {"secciones": secciones, "clave": mapa, "subgrupo": sub}
     return salida
-
 
 INDICES = {}   # se carga en construir()
 
@@ -664,6 +680,7 @@ def volcar_json(notas):
             "unidad": n.unidad,
             "clave": n.clave,
             "seccion": sec_nombre,
+            "subgrupo": (INDICES.get(n.unidad) or {}).get("subgrupo", {}).get(n.clave, ""),
             "_orden": [sec_rank, dentro, n.nt],
             "titulo": n.titulo,
             "codigo": n.codigo,
