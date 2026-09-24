@@ -3090,6 +3090,22 @@
    "hecha": false
   },
   {
+   "nombre": "NT652_01",
+   "nt": 652,
+   "titulo": "Conmutador de baja presión para climatizador",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Disposición de los conmutadores de seguridad en el circuito frigorífico con estrangulador — Fuente: Conmutadores Seguridad Estrangulador.pdf, pág. 38",
+   "hecha": false
+  },
+  {
+   "nombre": "NT654_01",
+   "nt": 654,
+   "titulo": "Termoconmutador para desactivación del climatizador",
+   "seccion": "Por ubicar",
+   "descripcion": "Esquema del conmutador para testigo de aviso de temperatura del líquido refrigerante — Fuente: Conmutadores Seguridad Estrangulador.pdf, pág. 39",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -3114,7 +3130,7 @@
    "hecha": false
   }
  ],
- "total": 643,
+ "total": 646,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -17115,6 +17131,135 @@
      "titulo": "Imágenes requeridas",
      "texto": "Ubicación del conmutador de presión F129 junto a la válvula de expansión — Fuente: Conmutador de presión.pdf, pág. 16",
      "html": "<ul>\n<li>Ubicación del conmutador de presión F129 junto a la válvula de expansión — Fuente: Conmutador de presión.pdf, pág. 16</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.presostato.baja-presion.conmutadores-seguridad-estrangulador",
+   "nt": 652,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "presostato-binary-trinary-cuatrinary",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Conmutador de baja presión para climatizador",
+   "codigo": "F73",
+   "menu": "Conmutador de baja presión par F73",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Conmutadores Seguridad Estrangulador.pdf, págs. 38-39",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "baja-presion",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "embrague-compresor",
+    "compresor"
+   ],
+   "palabras": [
+    "F73",
+    "baja presión",
+    "protección compresor",
+    "estrangulador"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Vigilar la baja presión en el circuito frigorífico con estrangulador para desactivar el compresor y protegerlo ante pérdidas de fluido o llenado insuficiente. (págs. 38-39)",
+     "html": "<p>Vigilar la baja presión en el circuito frigorífico con estrangulador para desactivar el compresor y protegerlo ante pérdidas de fluido o llenado insuficiente. <span class=\"pag\">págs. 38-39</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Conmutador de seguridad instalado por separado en la zona de baja presión del circuito frigorífico dotado de estrangulador. (pág. 38)",
+     "html": "<p>Conmutador de seguridad instalado por separado en la zona de baja presión del circuito frigorífico dotado de estrangulador. <span class=\"pag\">pág. 38</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Interrumpe la alimentación al compresor cuando detecta una caída de presión excesiva en el circuito frigorífico, evitando el funcionamiento en seco y posibles daños mecánicos por falta de lubricación. (págs. 38-39)",
+     "html": "<p>Interrumpe la alimentación al compresor cuando detecta una caída de presión excesiva en el circuito frigorífico, evitando el funcionamiento en seco y posibles daños mecánicos por falta de lubricación. <span class=\"pag\">págs. 38-39</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Presión de desactivación del compresor: inferior a aprox. 0,17 MPa (1,7 bares) en el circuito frigorífico. (pág. 38)",
+     "html": "<ul>\n<li>Presión de desactivación del compresor: inferior a aprox. 0,17 MPa (1,7 bares) en el circuito frigorífico. <span class=\"pag\">pág. 38</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Desactivación permanente o intempestiva del compresor. (págs. 38-39)",
+     "html": "<p>Desactivación permanente o intempestiva del compresor. <span class=\"pag\">págs. 38-39</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Disposición de los conmutadores de seguridad en el circuito frigorífico con estrangulador — Fuente: Conmutadores Seguridad Estrangulador.pdf, pág. 38",
+     "html": "<ul>\n<li>Disposición de los conmutadores de seguridad en el circuito frigorífico con estrangulador — Fuente: Conmutadores Seguridad Estrangulador.pdf, pág. 38</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.presostato.alta-presion.conmutadores-seguridad-estrangulador",
+   "nt": 653,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "presostato-binary-trinary-cuatrinary",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Conmutador de alta presión para el acoplamiento electromagnético",
+   "codigo": "F118",
+   "menu": "Conmutador de alta presión par F118",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Conmutadores Seguridad Estrangulador.pdf, págs. 38-39",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "alta-presion",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "embrague-compresor",
+    "compresor"
+   ],
+   "palabras": [
+    "F118",
+    "alta presión",
+    "acoplamiento electromagnético",
+    "protección compresor"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Vigilar la alta presión en el circuito frigorífico con estrangulador para desactivar el acoplamiento electromagnético del compresor si la presión supera el límite de seguridad. (págs. 38-39)",
+     "html": "<p>Vigilar la alta presión en el circuito frigorífico con estrangulador para desactivar el acoplamiento electromagnético del compresor si la presión supera el límite de seguridad. <span class=\"pag\">págs. 38-39</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Conmutador de seguridad montado por separado en la zona de alta presión del circuito frigorífico dotado de estrangulador. (pág. 38)",
+     "html": "<p>Conmutador de seguridad montado por separado en la zona de alta presión del circuito frigorífico dotado de estrangulador. <span class=\"pag\">pág. 38</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Desconecta eléctricamente el acoplamiento electromagnético del compresor al sobrepasar el umbral superior de presión admisible en el sistema, evitando sobrepresiones peligrosas. (págs. 38-39)",
+     "html": "<p>Desconecta eléctricamente el acoplamiento electromagnético del compresor al sobrepasar el umbral superior de presión admisible en el sistema, evitando sobrepresiones peligrosas. <span class=\"pag\">págs. 38-39</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Presión de desactivación del acoplamiento electromagnético: superior a aprox. 3,0 MPa (30 bares). (pág. 39)",
+     "html": "<ul>\n<li>Presión de desactivación del acoplamiento electromagnético: superior a aprox. 3,0 MPa (30 bares). <span class=\"pag\">pág. 39</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Desconexión del compresor por sobrepresión en el circuito frigorífico. (págs. 38-39)",
+     "html": "<p>Desconexión del compresor por sobrepresión en el circuito frigorífico. <span class=\"pag\">págs. 38-39</span></p>"
     }
    ]
   },
@@ -48120,6 +48265,70 @@
      "titulo": "Imágenes requeridas",
      "texto": "Ubicación y conexionado del conmutador térmico F18 en el radiador del líquido refrigerante — Fuente: Conmutador térmico del ventilador.pdf, pág. 19",
      "html": "<ul>\n<li>Ubicación y conexionado del conmutador térmico F18 en el radiador del líquido refrigerante — Fuente: Conmutador térmico del ventilador.pdf, pág. 19</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.conmutador-termico-desactivacion-climatizador.conmutadores-seguridad-estrangulador",
+   "nt": 654,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "conmutador-termico-desactivacion-climatizador",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Termoconmutador para desactivación del climatizador",
+   "codigo": "F163",
+   "menu": "Termoconmutador para desactiva F163",
+   "grupo": "Refrigeración del motor",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Conmutadores Seguridad Estrangulador.pdf, págs. 38-39",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "motor",
+   "sistema": "refrigeracion-motor",
+   "formaParteDe": "circuito-refrigeracion-motor",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "compresor",
+    "liquido-refrigerante-motor"
+   ],
+   "palabras": [
+    "F163",
+    "F18",
+    "temperatura refrigerante",
+    "desactivación climatizador",
+    "carga motor"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Vigilar la temperatura del líquido refrigerante para desactivar temporalmente el compresor del aire acondicionado cuando el motor trabaja sombreado por cargas muy intensas (por ejemplo, en subidas de montaña), reduciendo la exigencia térmica sobre el circuito de refrigeración del motor. (págs. 38-39)",
+     "html": "<p>Vigilar la temperatura del líquido refrigerante para desactivar temporalmente el compresor del aire acondicionado cuando el motor trabaja sombreado por cargas muy intensas (por ejemplo, en subidas de montaña), reduciendo la exigencia térmica sobre el circuito de refrigeración del motor. <span class=\"pag\">págs. 38-39</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Conmutador térmico para testigo de aviso y gestión de carga (denominado F163 para la desactivación del climatizador o F18 según la versión de vehículo). En vehículos con analizador electrónico ampliado en el cuadro de instrumentos, se suprime este testigo adicional y se aprovecha la señal del transmisor principal de temperatura del líquido refrigerante. (págs. 38-39)",
+     "html": "<p>Conmutador térmico para testigo de aviso y gestión de carga (denominado F163 para la desactivación del climatizador o F18 según la versión de vehículo). En vehículos con analizador electrónico ampliado en el cuadro de instrumentos, se suprime este testigo adicional y se aprovecha la señal del transmisor principal de temperatura del líquido refrigerante. <span class=\"pag\">págs. 38-39</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Evalúa la temperatura del líquido refrigerante del motor. Si la temperatura alcanza el umbral de sobrecalentamiento bajo carga, abre su contacto para desconectar la carga mecánica que representa el compresor. Cuando la temperatura desciende a un nivel seguro, vuelve a autorizar la conexión del compresor. (págs. 38-39)",
+     "html": "<p>Evalúa la temperatura del líquido refrigerante del motor. Si la temperatura alcanza el umbral de sobrecalentamiento bajo carga, abre su contacto para desconectar la carga mecánica que representa el compresor. Cuando la temperatura desciende a un nivel seguro, vuelve a autorizar la conexión del compresor. <span class=\"pag\">págs. 38-39</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Desactivación del compresor: al alcanzar aprox. 119 ºC en el líquido refrigerante. Reactivación del compresor: al descender la temperatura a aprox. 112 ºC. (pág. 39)",
+     "html": "<ul>\n<li>Desactivación del compresor: al alcanzar aprox. 119 ºC en el líquido refrigerante.</li>\n<li>Reactivación del compresor: al descender la temperatura a aprox. 112 ºC. <span class=\"pag\">pág. 39</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del conmutador para testigo de aviso de temperatura del líquido refrigerante — Fuente: Conmutadores Seguridad Estrangulador.pdf, pág. 39",
+     "html": "<ul>\n<li>Esquema del conmutador para testigo de aviso de temperatura del líquido refrigerante — Fuente: Conmutadores Seguridad Estrangulador.pdf, pág. 39</li>\n</ul>"
     }
    ]
   },
