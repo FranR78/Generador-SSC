@@ -1874,6 +1874,14 @@
    "hecha": false
   },
   {
+   "nombre": "NT456_01",
+   "nt": 456,
+   "titulo": "Identificación de refrigerantes y compatibilidad de estaciones de carga",
+   "seccion": "8. Regulación y control",
+   "descripcion": "Etiquetas identificativas del tipo de fluido, carga en gramos y aceite específico para R134a, R1234yf y R744 (CO2) — Fuente: Nº10. Carga y Diagonostico.pdf, pág. 116",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -1898,7 +1906,7 @@
    "hecha": false
   }
  ],
- "total": 447,
+ "total": 460,
  "grupos": [
   "Acceso y arranque",
   "Calefacción",
@@ -5844,6 +5852,80 @@
      "titulo": "Manipulación, almacenamiento y residuos",
      "texto": "Al sustituir un compresor nuevo, debido a que un mismo modelo puede valer para varios vehículos, se debe purgar todo el aceite contenido en el compresor nuevo, recogerlo y rellenarlo con la cantidad total del sistema especificada por el fabricante. Girar manualmente el compresor 10 veces antes del montaje para distribuir el aceite de forma uniforme. (págs. 2-3)",
      "html": "<p>Al sustituir un compresor nuevo, debido a que un mismo modelo puede valer para varios vehículos, se debe purgar todo el aceite contenido en el compresor nuevo, recogerlo y rellenarlo con la cantidad total del sistema especificada por el fabricante. Girar manualmente el compresor 10 veces antes del montaje para distribuir el aceite de forma uniforme. <span class=\"pag\">págs. 2-3</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.aceite-frigorifico.no10-carga-y-diagonostico",
+   "nt": 459,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "aceite-frigorifico",
+   "seccion": "3. Fluidos",
+   "subgrupo": "",
+   "titulo": "Descarga e introducción de aceite del circuito",
+   "codigo": "",
+   "menu": "Descarga e introducción de aceite del",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Nº10. Carga y Diagonostico.pdf, págs. 118, 121",
+   "clase": "procedimiento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "recuperacion-refrigerante",
+    "vacio-circuito",
+    "carga-refrigerante"
+   ],
+   "palabras": [
+    "descarga de aceite",
+    "separador",
+    "30 segundos",
+    "inyección por vacío",
+    "adición componentes"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Medir el volumen de aceite extraído durante la fase de recuperación e introducir en el circuito la dosis equivalente de aceite nuevo tras el vacío. (págs. 118, 121)",
+     "html": "<p>Medir el volumen de aceite extraído durante la fase de recuperación e introducir en el circuito la dosis equivalente de aceite nuevo tras el vacío. <span class=\"pag\">págs. 118, 121</span></p>"
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Proceso de recuperación finalizado y vacío del circuito completado. (págs. 118, 121)",
+     "html": "<p>Proceso de recuperación finalizado y vacío del circuito completado. <span class=\"pag\">págs. 118, 121</span></p>"
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Recipiente graduado de la estación de carga, aceite específico para el refrigerante utilizado y aditivo trazador UV (opcional). (págs. 118, 121)",
+     "html": "<p>Recipiente graduado de la estación de carga, aceite específico para el refrigerante utilizado y aditivo trazador UV (opcional). <span class=\"pag\">págs. 118, 121</span></p>"
+    },
+    {
+     "titulo": "Pasos",
+     "texto": "Finalizado el ciclo de recuperación, abrir la válvula del decantador/separador de aceite de la máquina durante unos 30 segundos hasta que cese el flujo. Medir y anotar el volumen exacto de aceite evacuado. Llenar el recipiente de inyección de aceite nuevo con una cantidad superior a la requerida (mínimo 30 g más del volumen a cargar). Con el circuito del vehículo bajo vacío, abrir la válvula de BAJA y la válvula del recipiente de aceite para que la depresión aspire la dosis programada. En caso de haber sustituido componentes del circuito, añadir los siguientes suplementos de aceite al volumen recuperado: Evaporador = 50 cc. Condensador = 30 cc. Filtro = 10 cc. Tubos = 10 cc. Cerrar la válvula del recipiente inmediatamente al ingresar la cantidad ajustada. (págs. 118, 121)",
+     "html": "<ol>\n<li>Finalizado el ciclo de recuperación, abrir la válvula del decantador/separador de aceite de la máquina durante unos 30 segundos hasta que cese el flujo.</li>\n<li>Medir y anotar el volumen exacto de aceite evacuado.</li>\n<li>Llenar el recipiente de inyección de aceite nuevo con una cantidad superior a la requerida (mínimo 30 g más del volumen a cargar).</li>\n<li>Con el circuito del vehículo bajo vacío, abrir la válvula de BAJA y la válvula del recipiente de aceite para que la depresión aspire la dosis programada.</li>\n<li>En caso de haber sustituido componentes del circuito, añadir los siguientes suplementos de aceite al volumen recuperado:<ul>\n<li>Evaporador = 50 cc.</li>\n<li>Condensador = 30 cc.</li>\n<li>Filtro = 10 cc.</li>\n<li>Tubos = 10 cc.</li>\n</ul>\n</li>\n<li>Cerrar la válvula del recipiente inmediatamente al ingresar la cantidad ajustada. <span class=\"pag\">págs. 118, 121</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Tiempo de apertura de la válvula de drenaje de aceite: unos 30 segundos. Margen mínimo de aceite en el vaso de inyección: 30 g por encima del valor a introducir. Dosis de adición por sustitución de componentes: Evaporador = 50 cc, Condensador = 30 cc, Filtro = 10 cc, Tubo = 10 cc. (págs. 118, 121)",
+     "html": "<ul>\n<li>Tiempo de apertura de la válvula de drenaje de aceite: unos 30 segundos.</li>\n<li>Margen mínimo de aceite en el vaso de inyección: 30 g por encima del valor a introducir.</li>\n<li>Dosis de adición por sustitución de componentes: Evaporador = 50 cc, Condensador = 30 cc, Filtro = 10 cc, Tubo = 10 cc. <span class=\"pag\">págs. 118, 121</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Comprobar que el volumen de aceite nuevo introducido coincide exactamente con la suma del aceite recuperado más los añadidos prescritos por componentes sustituidos. (págs. 118, 121)",
+     "html": "<p>Comprobar que el volumen de aceite nuevo introducido coincide exactamente con la suma del aceite recuperado más los añadidos prescritos por componentes sustituidos. <span class=\"pag\">págs. 118, 121</span></p>"
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "No prolongar la apertura de la válvula del separador de aceite más de 30 segundos para impedir la entrada de aire en la máquina. No reutilizar en ningún caso el aceite descargado. (págs. 118, 121)",
+     "html": "<p>No prolongar la apertura de la válvula del separador de aceite más de 30 segundos para impedir la entrada de aire en la máquina. No reutilizar en ningún caso el aceite descargado. <span class=\"pag\">págs. 118, 121</span></p>"
     }
    ]
   },
@@ -18873,6 +18955,76 @@
    ]
   },
   {
+   "id": "ssc.regulacion-automatica.identificacion-refrigerantes.no10-carga-y-diagonostico",
+   "nt": 456,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-automatica",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Identificación de refrigerantes y compatibilidad de estaciones de carga",
+   "codigo": "",
+   "menu": "Identificación de refrigerantes y comp",
+   "grupo": "Fluidos frigoríficos",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Nº10. Carga y Diagonostico.pdf, págs. 116-117",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "identificacion-refrigerantes",
+   "area": "climatizacion",
+   "sistema": "fluidos-frigorificos",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r134a",
+    "refrigerante-r1234yf",
+    "aceite-frigorifico"
+   ],
+   "palabras": [
+    "etiqueta identificativa",
+    "r134a",
+    "r1234yf",
+    "r744",
+    "co2",
+    "maquina especifica"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Identificar el tipo de gas refrigerante, la capacidad del circuito y el lubricante prescrito en cada vehículo para seleccionar el equipo de carga compatible. (pág. 116)",
+     "html": "<p>Identificar el tipo de gas refrigerante, la capacidad del circuito y el lubricante prescrito en cada vehículo para seleccionar el equipo de carga compatible. <span class=\"pag\">pág. 116</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Cada vehículo incorpora una etiqueta identificativa del refrigerante, su masa en gramos, el aceite necesario e instrucciones de seguridad. (pág. 116)",
+     "html": "<p>Cada vehículo incorpora una etiqueta identificativa del refrigerante, su masa en gramos, el aceite necesario e instrucciones de seguridad. <span class=\"pag\">pág. 116</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "En el automóvil se emplean tres tipos de agentes refrigerantes: R134a, R1234yf y R744 (CO2). Es un requisito imperativo respetar las indicaciones de la etiqueta identificativa. Para cada tipo de gas refrigerante se requiere utilizar una máquina de recuperación, diagnóstico y carga específica. No son compatibles entre sí ni las estaciones de servicio ni los aceites lubricantes de cada sistema. (págs. 116-117)",
+     "html": "<p>En el automóvil se emplean tres tipos de agentes refrigerantes: R134a, R1234yf y R744 (CO2).</p>\n<p>Es un requisito imperativo respetar las indicaciones de la etiqueta identificativa. Para cada tipo de gas refrigerante se requiere utilizar una máquina de recuperación, diagnóstico y carga específica. No son compatibles entre sí ni las estaciones de servicio ni los aceites lubricantes de cada sistema. <span class=\"pag\">págs. 116-117</span></p>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Tipos de refrigerante en automoción: R134a, R1234yf y R744 (CO2). (págs. 116-117)",
+     "html": "<ul>\n<li>Tipos de refrigerante en automoción: R134a, R1234yf y R744 (CO2). <span class=\"pag\">págs. 116-117</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Considerar que las estaciones de carga o los aceites son universales e intercambiables entre distintos gases. Cada refrigerante exige el uso exclusivo de su máquina y aceite específico. (págs. 116-117)",
+     "html": "<p>Considerar que las estaciones de carga o los aceites son universales e intercambiables entre distintos gases. Cada refrigerante exige el uso exclusivo de su máquina y aceite específico. <span class=\"pag\">págs. 116-117</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Etiquetas identificativas del tipo de fluido, carga en gramos y aceite específico para R134a, R1234yf y R744 (CO2) — Fuente: Nº10. Carga y Diagonostico.pdf, pág. 116",
+     "html": "<ul>\n<li>Etiquetas identificativas del tipo de fluido, carga en gramos y aceite específico para R134a, R1234yf y R744 (CO2) — Fuente: Nº10. Carga y Diagonostico.pdf, pág. 116</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.distribucion-aire.208-regulacion-de-la-temperatura",
    "nt": 105,
    "modulo": "ssc",
@@ -19728,6 +19880,81 @@
    ]
   },
   {
+   "id": "ssc.recuperacion-refrigerante.no10-carga-y-diagonostico",
+   "nt": 458,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "recuperacion-refrigerante",
+   "seccion": "9. Taller: recuperación, vacío y carga",
+   "subgrupo": "",
+   "titulo": "Recuperación del refrigerante del vehículo",
+   "codigo": "",
+   "menu": "Recuperación del refrigerante del vehí",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Nº10. Carga y Diagonostico.pdf, págs. 117-120",
+   "clase": "procedimiento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "carga-refrigerante",
+    "aceite-frigorifico",
+    "compresor"
+   ],
+   "palabras": [
+    "recuperación",
+    "4500-5000 rpm",
+    "3 minutos",
+    "5 bar",
+    "0.2 bar",
+    "0.8 bar"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Extraer la totalidad del fluido refrigerante del vehículo minimizando el arrastre y pérdida de aceite lubricante del compresor. (págs. 117-120)",
+     "html": "<p>Extraer la totalidad del fluido refrigerante del vehículo minimizando el arrastre y pérdida de aceite lubricante del compresor. <span class=\"pag\">págs. 117-120</span></p>"
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Vehículo a temperatura de servicio y estación de carga conectada a la red. (págs. 117-120)",
+     "html": "<p>Vehículo a temperatura de servicio y estación de carga conectada a la red. <span class=\"pag\">págs. 117-120</span></p>"
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Estación de recuperación y reciclaje con mangueras de Alta y Baja presión. (págs. 117-120)",
+     "html": "<p>Estación de recuperación y reciclaje con mangueras de Alta y Baja presión. <span class=\"pag\">págs. 117-120</span></p>"
+    },
+    {
+     "titulo": "Pasos",
+     "texto": "Arrancar el motor del vehículo y mantenerlo a temperatura de trabajo con la climatización conectada. Acelerar el motor entre 4.500 y 5.000 rpm durante 3 minutos con la calefacción y el aire acondicionado al máximo, dirigiendo la mayor masa de aceite hacia el compresor. Parar el motor, mantener la turbina de aire fresco a máxima velocidad e iniciar el proceso cuando las presiones del circuito se igualen. Con todas las válvulas cerradas, conectar los acoples de Alta y Baja a las tomas de servicio del vehículo. Seleccionar la función de recuperación (programar 0.00 para extraer la totalidad del gas). Abrir lentamente las válvulas de ALTA y BAJA modulando su apertura para que la presión de entrada en la máquina no supere en ningún caso los 5 bar. La máquina detiene el proceso automáticamente al descender la presión por debajo de 0,2 bar y entra en espera durante 2 minutos. Si en ese intervalo la presión se eleva por encima de 0,8 bar, inicia de forma automática un nuevo ciclo de recuperación. (págs. 117-120)",
+     "html": "<ol>\n<li>Arrancar el motor del vehículo y mantenerlo a temperatura de trabajo con la climatización conectada.</li>\n<li>Acelerar el motor entre 4.500 y 5.000 rpm durante 3 minutos con la calefacción y el aire acondicionado al máximo, dirigiendo la mayor masa de aceite hacia el compresor.</li>\n<li>Parar el motor, mantener la turbina de aire fresco a máxima velocidad e iniciar el proceso cuando las presiones del circuito se igualen.</li>\n<li>Con todas las válvulas cerradas, conectar los acoples de Alta y Baja a las tomas de servicio del vehículo.</li>\n<li>Seleccionar la función de recuperación (programar 0.00 para extraer la totalidad del gas).</li>\n<li>Abrir lentamente las válvulas de ALTA y BAJA modulando su apertura para que la presión de entrada en la máquina no supere en ningún caso los 5 bar.</li>\n<li>La máquina detiene el proceso automáticamente al descender la presión por debajo de 0,2 bar y entra en espera durante 2 minutos. Si en ese intervalo la presión se eleva por encima de 0,8 bar, inicia de forma automática un nuevo ciclo de recuperación. <span class=\"pag\">págs. 117-120</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Régimen de aceleración previa del motor: 4.500 a 5.000 rpm durante 3 minutos. Presión máxima de entrada en manómetros durante el trasvase: 5 bar. Presión de desconexión automática del compresor de recuperación: inferior a 0,2 bar. Umbral de rearme automático tras 2 minutos de espera: presión superior a 0,8 bar. (págs. 117-120)",
+     "html": "<ul>\n<li>Régimen de aceleración previa del motor: 4.500 a 5.000 rpm durante 3 minutos.</li>\n<li>Presión máxima de entrada en manómetros durante el trasvase: 5 bar.</li>\n<li>Presión de desconexión automática del compresor de recuperación: inferior a 0,2 bar.</li>\n<li>Umbral de rearme automático tras 2 minutos de espera: presión superior a 0,8 bar. <span class=\"pag\">págs. 117-120</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Anotar la masa final de refrigerante recuperado que muestra el display de la máquina. (págs. 118, 120)",
+     "html": "<p>Anotar la masa final de refrigerante recuperado que muestra el display de la máquina. <span class=\"pag\">págs. 118, 120</span></p>"
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Mantener la presión de admisión por debajo de 5 bar para evitar la succión involuntaria del aceite del cárter del compresor. (págs. 118, 120)",
+     "html": "<p>Mantener la presión de admisión por debajo de 5 bar para evitar la succión involuntaria del aceite del cárter del compresor. <span class=\"pag\">págs. 118, 120</span></p>"
+    }
+   ]
+  },
+  {
    "id": "ssc.vacio-circuito.14-carga-del-circuito-de-aire-acondicion",
    "nt": 78,
    "modulo": "ssc",
@@ -19882,6 +20109,80 @@
      "titulo": "Imágenes requeridas",
      "texto": "Gráfica de curva de presión (bar) frente a temperatura de ebullición del agua (ºC) — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 94",
      "html": "<ul>\n<li>Gráfica de curva de presión (bar) frente a temperatura de ebullición del agua (ºC) — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 94</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.vacio-circuito.no10-carga-y-diagonostico",
+   "nt": 460,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "vacio-circuito",
+   "seccion": "9. Taller: recuperación, vacío y carga",
+   "subgrupo": "",
+   "titulo": "Vacío del circuito de aire acondicionado",
+   "codigo": "",
+   "menu": "Vacío del circuito de aire acondiciona",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Nº10. Carga y Diagonostico.pdf, págs. 118, 121",
+   "clase": "procedimiento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "recuperacion-refrigerante",
+    "carga-refrigerante"
+   ],
+   "palabras": [
+    "vacío",
+    "30 minutos",
+    "estanqueidad",
+    "5 minutos",
+    "depresión",
+    "humedad"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Evacuar el aire no condensable y evaporar la humedad residual acumulada en el interior de las tuberías del climatizador. (págs. 118, 121)",
+     "html": "<p>Evacuar el aire no condensable y evaporar la humedad residual acumulada en el interior de las tuberías del climatizador. <span class=\"pag\">págs. 118, 121</span></p>"
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Refrigerante del vehículo recuperado en su totalidad y mangueras de Alta y Baja conectadas a las tomas de servicio. (págs. 118, 121)",
+     "html": "<p>Refrigerante del vehículo recuperado en su totalidad y mangueras de Alta y Baja conectadas a las tomas de servicio. <span class=\"pag\">págs. 118, 121</span></p>"
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Estación de carga con bomba de vacío de doble efecto y manómetros de control. (págs. 118, 121)",
+     "html": "<p>Estación de carga con bomba de vacío de doble efecto y manómetros de control. <span class=\"pag\">págs. 118, 121</span></p>"
+    },
+    {
+     "titulo": "Pasos",
+     "texto": "Con las mangueras de Alta y Baja conectadas al vehículo, abrir las válvulas de ALTA, BAJA y VAC de la estación de carga. Poner en funcionamiento la bomba de vacío durante un intervalo mínimo de 30 minutos (mínimo 45 minutos si el circuito ha permanecido abierto o tras un lavado). Cerrar la válvula VAC y detener la bomba de vacío. Mantener el sistema en reposo durante al menos 5 minutos para realizar el test de estanqueidad. (págs. 118, 121)",
+     "html": "<ol>\n<li>Con las mangueras de Alta y Baja conectadas al vehículo, abrir las válvulas de ALTA, BAJA y VAC de la estación de carga.</li>\n<li>Poner en funcionamiento la bomba de vacío durante un intervalo mínimo de 30 minutos (mínimo 45 minutos si el circuito ha permanecido abierto o tras un lavado).</li>\n<li>Cerrar la válvula VAC y detener la bomba de vacío.</li>\n<li>Mantener el sistema en reposo durante al menos 5 minutos para realizar el test de estanqueidad. <span class=\"pag\">págs. 118, 121</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Duración del vacío estándar: mínimo 30 minutos. Duración del vacío profundo (tras apertura o lavado): mínimo 45 minutos. Tiempo de prueba de estanqueidad en reposo: mínimo 5 minutos (la aguja del vacuómetro debe mantenerse fija en depresión). (págs. 118, 121)",
+     "html": "<ul>\n<li>Duración del vacío estándar: mínimo 30 minutos.</li>\n<li>Duración del vacío profundo (tras apertura o lavado): mínimo 45 minutos.</li>\n<li>Tiempo de prueba de estanqueidad en reposo: mínimo 5 minutos (la aguja del vacuómetro debe mantenerse fija en depresión). <span class=\"pag\">págs. 118, 121</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Comprobar que durante los 5 minutos de estanqueidad no se produce pérdida de depresión en las agujas de los manómetros. (págs. 118, 121)",
+     "html": "<p>Comprobar que durante los 5 minutos de estanqueidad no se produce pérdida de depresión en las agujas de los manómetros. <span class=\"pag\">págs. 118, 121</span></p>"
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Si la aguja sube hacia la presión atmosférica durante la prueba en reposo, existe una fuga en el circuito que exige reparación antes de introducir el gas refrigerante. (págs. 118, 121)",
+     "html": "<p>Si la aguja sube hacia la presión atmosférica durante la prueba en reposo, existe una fuga en el circuito que exige reparación antes de introducir el gas refrigerante. <span class=\"pag\">págs. 118, 121</span></p>"
     }
    ]
   },
@@ -20119,6 +20420,224 @@
      "titulo": "Seguridad y normativa",
      "texto": "Rellenar exclusivamente por la toma de alta presión para evitar golpes de líquido directos en el compresor. Renovar todos los anillos tóricos humedeciéndolos previamente con aceite de refrigerante. (págs. 3, 4)",
      "html": "<p>Rellenar exclusivamente por la toma de alta presión para evitar golpes de líquido directos en el compresor. Renovar todos los anillos tóricos humedeciéndolos previamente con aceite de refrigerante. <span class=\"pag\">págs. 3, 4</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.carga-refrigerante.bombona-estacion.no10-carga-y-diagonostico",
+   "nt": 457,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "carga-refrigerante",
+   "seccion": "9. Taller: recuperación, vacío y carga",
+   "subgrupo": "",
+   "titulo": "Carga de refrigerante en la bombona de la estación de servicio",
+   "codigo": "",
+   "menu": "Carga de refrigerante en la bombona de",
+   "grupo": "Equipos de taller",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Nº10. Carga y Diagonostico.pdf, págs. 117-118, 120, 122",
+   "clase": "procedimiento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "bombona-estacion",
+   "area": "climatizacion",
+   "sistema": "equipos-taller",
+   "formaParteDe": "",
+   "relacionados": [
+    "carga-refrigerante",
+    "recuperacion-refrigerante"
+   ],
+   "palabras": [
+    "bombona de la maquina",
+    "4 a 5 kg",
+    "reciclado interno",
+    "bombona exterior",
+    "visor de humedad"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Introducir y mantener entre 4 y 5 kg de fluido refrigerante en la bombona interna de la estación de carga para garantizar la presión de trabajo durante las intervenciones. (págs. 117-118, 122)",
+     "html": "<p>Introducir y mantener entre 4 y 5 kg de fluido refrigerante en la bombona interna de la estación de carga para garantizar la presión de trabajo durante las intervenciones. <span class=\"pag\">págs. 117-118, 122</span></p>"
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Válvulas cerradas, interruptores desconectados y comprobado el nivel de aceite en el visor de la bomba de vacío. Balanza ajustada a cero. (págs. 117-118)",
+     "html": "<p>Válvulas cerradas, interruptores desconectados y comprobado el nivel de aceite en el visor de la bomba de vacío. Balanza ajustada a cero. <span class=\"pag\">págs. 117-118</span></p>"
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Estación de carga, bombona exterior de suministro de refrigerante y mangueras de conexión. (págs. 117-118)",
+     "html": "<p>Estación de carga, bombona exterior de suministro de refrigerante y mangueras de conexión. <span class=\"pag\">págs. 117-118</span></p>"
+    },
+    {
+     "titulo": "Pasos",
+     "texto": "Método por introducción directa: Comprobar que todas las válvulas están cerradas. Conectar la bombona exterior a la válvula de servicio colocándola en posición elevada para extraer líquido. Efectuar el vacío durante 1 minuto en la manguera utilizada. Abrir las válvulas de la bombona exterior y de servicio hasta transferir entre 4 y 5 kg de refrigerante. Cerrar la bombona, dar la vuelta a la misma y abrir la válvula para que el gas empuje el líquido residual de la manguera. Cerrar las válvulas y desconectar. Método por proceso de recuperación (recomendado ante dudas de limpieza): Conectar la manguera de alta a la bombona exterior, abrir válvulas de ALTA y VAC, hacer el vacío de la manguera y cerrar VAC. Conectar el interruptor de recuperación y abrir la válvula de la bombona exterior hasta transferir de 4 a 5 kg. Cerrar la bombona, purgar la manguera mediante la recicladora y cerrar ALTA. Reciclado interno de la estación de carga: Se realiza si el visor marca humedad (color amarillo) o para elevar la presión de la bombona. Conectar la manguera de alta a la válvula de servicio, hacer el vacío de la manguera, activar la recuperación y abrir lentamente manteniendo la presión de entrada por debajo de 5 bar. Detener el proceso cuando por el visor pase líquido verde intenso. (págs. 117-118, 120, 122)",
+     "html": "<ol>\n<li>Método por introducción directa:<ul>\n<li>Comprobar que todas las válvulas están cerradas.</li>\n<li>Conectar la bombona exterior a la válvula de servicio colocándola en posición elevada para extraer líquido.</li>\n<li>Efectuar el vacío durante 1 minuto en la manguera utilizada.</li>\n<li>Abrir las válvulas de la bombona exterior y de servicio hasta transferir entre 4 y 5 kg de refrigerante.</li>\n<li>Cerrar la bombona, dar la vuelta a la misma y abrir la válvula para que el gas empuje el líquido residual de la manguera.</li>\n<li>Cerrar las válvulas y desconectar.</li>\n</ul>\n</li>\n<li>Método por proceso de recuperación (recomendado ante dudas de limpieza):<ul>\n<li>Conectar la manguera de alta a la bombona exterior, abrir válvulas de ALTA y VAC, hacer el vacío de la manguera y cerrar VAC.</li>\n<li>Conectar el interruptor de recuperación y abrir la válvula de la bombona exterior hasta transferir de 4 a 5 kg.</li>\n<li>Cerrar la bombona, purgar la manguera mediante la recicladora y cerrar ALTA.</li>\n</ul>\n</li>\n<li>Reciclado interno de la estación de carga:<ul>\n<li>Se realiza si el visor marca humedad (color amarillo) o para elevar la presión de la bombona.</li>\n<li>Conectar la manguera de alta a la válvula de servicio, hacer el vacío de la manguera, activar la recuperación y abrir lentamente manteniendo la presión de entrada por debajo de 5 bar.</li>\n<li>Detener el proceso cuando por el visor pase líquido verde intenso. <span class=\"pag\">págs. 117-118, 120, 122</span></li>\n</ul>\n</li>\n</ol>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Masa de refrigerante idónea en la bombona de la estación: de 4 a 5 kg (mínimo siempre > 1 kg; capacidad máxima de bombona: 10 kg). Presión máxima de entrada durante el reciclado interno: 5 bar. Indicador de presencia de humedad en el visor: color amarillo (color verde intenso indica refrigerante deshidratado). (págs. 117-118, 120, 122)",
+     "html": "<ul>\n<li>Masa de refrigerante idónea en la bombona de la estación: de 4 a 5 kg (mínimo siempre &gt; 1 kg; capacidad máxima de bombona: 10 kg).</li>\n<li>Presión máxima de entrada durante el reciclado interno: 5 bar.</li>\n<li>Indicador de presencia de humedad en el visor: color amarillo (color verde intenso indica refrigerante deshidratado). <span class=\"pag\">págs. 117-118, 120, 122</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Comprobar en el visor que el fluido circula de color verde intenso y que la báscula de la máquina registra entre 4 y 5 kg de refrigerante almacenado. (págs. 118, 120)",
+     "html": "<p>Comprobar en el visor que el fluido circula de color verde intenso y que la báscula de la máquina registra entre 4 y 5 kg de refrigerante almacenado. <span class=\"pag\">págs. 118, 120</span></p>"
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Evitar superar los 10 kg de masa máxima en la bombona interna de la máquina para no provocar el paro automático de seguridad. (págs. 118, 120)",
+     "html": "<p>Evitar superar los 10 kg de masa máxima en la bombona interna de la máquina para no provocar el paro automático de seguridad. <span class=\"pag\">págs. 118, 120</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.carga-refrigerante.no10-carga-y-diagonostico",
+   "nt": 461,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "carga-refrigerante",
+   "seccion": "9. Taller: recuperación, vacío y carga",
+   "subgrupo": "",
+   "titulo": "Carga de fluido refrigerante al vehículo",
+   "codigo": "",
+   "menu": "Carga de fluido refrigerante al vehícu",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Nº10. Carga y Diagonostico.pdf, págs. 118-119, 122",
+   "clase": "procedimiento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "vacio-circuito",
+    "aceite-frigorifico"
+   ],
+   "palabras": [
+    "carga refrigerante",
+    "alta presión",
+    "masa prescrita",
+    "apoyo por baja",
+    "aspiración lenta"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Introducir la masa exacta en gramos de fluido refrigerante prescrita por el fabricante en el circuito del vehículo. (págs. 118-119, 122)",
+     "html": "<p>Introducir la masa exacta en gramos de fluido refrigerante prescrita por el fabricante en el circuito del vehículo. <span class=\"pag\">págs. 118-119, 122</span></p>"
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Vacío del circuito ejecutado con éxito y dosis de aceite nuevo inyectada. Verificar que en la bombona interna de la máquina hay más de 1 kg de gas. (págs. 118-119, 122)",
+     "html": "<p>Vacío del circuito ejecutado con éxito y dosis de aceite nuevo inyectada. Verificar que en la bombona interna de la máquina hay más de 1 kg de gas. <span class=\"pag\">págs. 118-119, 122</span></p>"
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Estación de carga automatizada y placa de datos del vehículo. (págs. 118, 122)",
+     "html": "<p>Estación de carga automatizada y placa de datos del vehículo. <span class=\"pag\">págs. 118, 122</span></p>"
+    },
+    {
+     "titulo": "Pasos",
+     "texto": "Programar en el teclado de la máquina la masa exacta de refrigerante indicada en la etiqueta del vehículo (nunca programar 0.00 en la carga). Con las mangueras de Alta y Baja conectadas, abrir exclusivamente la válvula de ALTA e iniciar el proceso para introducir el gas en fase líquida favorecido por la depresión del vacío. Al completar la transferencia, la máquina se detiene automáticamente. Cerrar la válvula de ALTA. Si el fluido no entra por completo en el circuito por equilibrio de presiones: Arrancar el motor del vehículo y conectar la climatización. Abrir muy poco y muy lentamente la válvula de BAJA para que el compresor aspire el volumen restante en estado gaseoso hasta completar la masa especificada. Si el vehículo no dispone de toma de baja, calentar la bombona o ejecutar un reciclado interno en la máquina para elevar la presión de alimentación. (págs. 118-119, 122)",
+     "html": "<ol>\n<li>Programar en el teclado de la máquina la masa exacta de refrigerante indicada en la etiqueta del vehículo (nunca programar 0.00 en la carga).</li>\n<li>Con las mangueras de Alta y Baja conectadas, abrir exclusivamente la válvula de ALTA e iniciar el proceso para introducir el gas en fase líquida favorecido por la depresión del vacío.</li>\n<li>Al completar la transferencia, la máquina se detiene automáticamente. Cerrar la válvula de ALTA.</li>\n<li>Si el fluido no entra por completo en el circuito por equilibrio de presiones:<ul>\n<li>Arrancar el motor del vehículo y conectar la climatización.</li>\n<li>Abrir muy poco y muy lentamente la válvula de BAJA para que el compresor aspire el volumen restante en estado gaseoso hasta completar la masa especificada.</li>\n</ul>\n</li>\n<li>Si el vehículo no dispone de toma de baja, calentar la bombona o ejecutar un reciclado interno en la máquina para elevar la presión de alimentación. <span class=\"pag\">págs. 118-119, 122</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Masa de refrigerante a cargar: valor numérico exacto indicado en la etiqueta identificativa del fabricante. Margen de seguridad en la bombona de la recicladora: debe conservar siempre más de 1 kg tras la carga (óptimo de 4 a 5 kg). (págs. 118-119, 122)",
+     "html": "<ul>\n<li>Masa de refrigerante a cargar: valor numérico exacto indicado en la etiqueta identificativa del fabricante.</li>\n<li>Margen de seguridad en la bombona de la recicladora: debe conservar siempre más de 1 kg tras la carga (óptimo de 4 a 5 kg). <span class=\"pag\">págs. 118-119, 122</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Confirmar en el display que la báscula de la estación ha transferido la masa completa prescrita al vehículo. (págs. 119, 122)",
+     "html": "<p>Confirmar en el display que la báscula de la estación ha transferido la masa completa prescrita al vehículo. <span class=\"pag\">págs. 119, 122</span></p>"
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "En caso de completar la carga por la toma de Baja con el motor en marcha, la válvula se debe abrir de forma muy lenta y reducida para impedir el paso de refrigerante en estado líquido hacia el compresor, evitando golpes de líquido que destruyen sus componentes internos. (págs. 119, 122)",
+     "html": "<p>En caso de completar la carga por la toma de Baja con el motor en marcha, la válvula se debe abrir de forma muy lenta y reducida para impedir el paso de refrigerante en estado líquido hacia el compresor, evitando golpes de líquido que destruyen sus componentes internos. <span class=\"pag\">págs. 119, 122</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.carga-refrigerante.desconexion-mangueras.no10-carga-y-diagonostico",
+   "nt": 463,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "carga-refrigerante",
+   "seccion": "9. Taller: recuperación, vacío y carga",
+   "subgrupo": "",
+   "titulo": "Desconexión del equipo de carga y recuperación de mangueras",
+   "codigo": "",
+   "menu": "Desconexión del equipo de carga y recu",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Nº10. Carga y Diagonostico.pdf, págs. 123-124",
+   "clase": "procedimiento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "desconexion-mangueras",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "carga-refrigerante",
+    "recuperacion-refrigerante"
+   ],
+   "palabras": [
+    "desconexión mangueras",
+    "purga de mangueras",
+    "manómetros a cero",
+    "calibración"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Recuperar el refrigerante atrapado en el interior de los tubos de servicio tras finalizar la carga, dejando los manómetros calibrados a cero. (págs. 123-124)",
+     "html": "<p>Recuperar el refrigerante atrapado en el interior de los tubos de servicio tras finalizar la carga, dejando los manómetros calibrados a cero. <span class=\"pag\">págs. 123-124</span></p>"
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Proceso de carga completado y sistema de aire acondicionado del vehículo en pleno funcionamiento. (págs. 123-124)",
+     "html": "<p>Proceso de carga completado y sistema de aire acondicionado del vehículo en pleno funcionamiento. <span class=\"pag\">págs. 123-124</span></p>"
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Estación de carga conectada al vehículo. (págs. 123-124)",
+     "html": "<p>Estación de carga conectada al vehículo. <span class=\"pag\">págs. 123-124</span></p>"
+    },
+    {
+     "titulo": "Pasos",
+     "texto": "Con el aire acondicionado del vehículo funcionando, desconectar la manguera de ALTA de la toma del vehículo. Abrir la válvula de ALTA en el puente de manómetros de la máquina. Abrir lentamente la válvula de BAJA para que el compresor del vehículo aspire el refrigerante acumulado en el interior de las mangueras de servicio. Cuando las agujas de los manómetros de Alta y Baja se igualen, cerrar ambas válvulas en la máquina. Desconectar la manguera de BAJA de la toma del vehículo. Activar la recuperación en la estación de servicio para evacuar el gas residual de los tubos hasta que las agujas de los manómetros queden exactamente a cero. (págs. 123-124)",
+     "html": "<ol>\n<li>Con el aire acondicionado del vehículo funcionando, desconectar la manguera de ALTA de la toma del vehículo.</li>\n<li>Abrir la válvula de ALTA en el puente de manómetros de la máquina.</li>\n<li>Abrir lentamente la válvula de BAJA para que el compresor del vehículo aspire el refrigerante acumulado en el interior de las mangueras de servicio.</li>\n<li>Cuando las agujas de los manómetros de Alta y Baja se igualen, cerrar ambas válvulas en la máquina.</li>\n<li>Desconectar la manguera de BAJA de la toma del vehículo.</li>\n<li>Activar la recuperación en la estación de servicio para evacuar el gas residual de los tubos hasta que las agujas de los manómetros queden exactamente a cero. <span class=\"pag\">págs. 123-124</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Lectura final en los manómetros de Alta y Baja: 0 bar. (págs. 123-124)",
+     "html": "<ul>\n<li>Lectura final en los manómetros de Alta y Baja: 0 bar. <span class=\"pag\">págs. 123-124</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Verificar que ambos manómetros marcan 0 bar para evitar descalibraciones mecánicas y lecturas erróneas en trabajos futuros. (págs. 123-124)",
+     "html": "<p>Verificar que ambos manómetros marcan 0 bar para evitar descalibraciones mecánicas y lecturas erróneas en trabajos futuros. <span class=\"pag\">págs. 123-124</span></p>"
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "No desconectar la manguera de baja con presión en su interior para evitar proyecciones de fluido a la atmósfera. (págs. 123-124)",
+     "html": "<p>No desconectar la manguera de baja con presión en su interior para evitar proyecciones de fluido a la atmósfera. <span class=\"pag\">págs. 123-124</span></p>"
     }
    ]
   },
@@ -20541,6 +21060,81 @@
      "titulo": "Verificación final",
      "texto": "Comprobar que el circuito ha quedado libre de impurezas y partículas extrañas antes de montar el compresor nuevo o reparado. (págs. 1-2)",
      "html": "<p>Comprobar que el circuito ha quedado libre de impurezas y partículas extrañas antes de montar el compresor nuevo o reparado. <span class=\"pag\">págs. 1-2</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.lavado-circuito.no10-carga-y-diagonostico",
+   "nt": 466,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "lavado-circuito",
+   "seccion": "9. Taller: recuperación, vacío y carga",
+   "subgrupo": "",
+   "titulo": "Lavado del circuito de climatización",
+   "codigo": "",
+   "menu": "Lavado del circuito de climatización",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Nº10. Carga y Diagonostico.pdf, págs. 127-128, 131-132",
+   "clase": "procedimiento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "valvula-expansion",
+    "filtro-deshidratador",
+    "vacio-circuito"
+   ],
+   "palabras": [
+    "lavado circuito",
+    "aire seco",
+    "nitrógeno líquido",
+    "partículas",
+    "sustitución obligatoria"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Limpiar minuciosamente el interior de las canalizaciones, condensador y evaporador para eliminar restos de suciedad, partículas metálicas, ferricha o aceite degradado tras el fallo de un compresor. (págs. 127, 131)",
+     "html": "<p>Limpiar minuciosamente el interior de las canalizaciones, condensador y evaporador para eliminar restos de suciedad, partículas metálicas, ferricha o aceite degradado tras el fallo de un compresor. <span class=\"pag\">págs. 127, 131</span></p>"
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Refrigerante del circuito recuperado en su totalidad. Compresor averiado, válvula de expansión y filtro deshidratador desmontados del vehículo. (págs. 127, 131)",
+     "html": "<p>Refrigerante del circuito recuperado en su totalidad. Compresor averiado, válvula de expansión y filtro deshidratador desmontados del vehículo. <span class=\"pag\">págs. 127, 131</span></p>"
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Instalación de aire seco y botella de nitrógeno líquido. (págs. 127, 131)",
+     "html": "<p>Instalación de aire seco y botella de nitrógeno líquido. <span class=\"pag\">págs. 127, 131</span></p>"
+    },
+    {
+     "titulo": "Pasos",
+     "texto": "Desmontar y apartar los componentes no lavables: compresor, válvula de expansión y filtro deshidratador. Hacer pasar aire seco por el interior de cada uno de los tubos, manguitos, condensador y evaporador para arrastrar los residuos sueltos. Inyectar nitrógeno líquido a través de los mismos componentes para deshumedecer y limpiar las superficies internas, haciendo circular el flujo en sentido contrario a la circulación habitual del refrigerante. Montar en el vehículo el compresor nuevo, la válvula de expansión nueva y el filtro deshidratador nuevo. (págs. 127, 131)",
+     "html": "<ol>\n<li>Desmontar y apartar los componentes no lavables: compresor, válvula de expansión y filtro deshidratador.</li>\n<li>Hacer pasar aire seco por el interior de cada uno de los tubos, manguitos, condensador y evaporador para arrastrar los residuos sueltos.</li>\n<li>Inyectar nitrógeno líquido a través de los mismos componentes para deshumedecer y limpiar las superficies internas, haciendo circular el flujo en sentido contrario a la circulación habitual del refrigerante.</li>\n<li>Montar en el vehículo el compresor nuevo, la válvula de expansión nueva y el filtro deshidratador nuevo. <span class=\"pag\">págs. 127, 131</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Sentido de aplicación del barrido con nitrógeno: a contracorriente respecto al flujo del gas. Componentes de sustitución obligatoria tras el lavado: compresor, válvula de expansión y filtro. (págs. 127, 131)",
+     "html": "<ul>\n<li>Sentido de aplicación del barrido con nitrógeno: a contracorriente respecto al flujo del gas.</li>\n<li>Componentes de sustitución obligatoria tras el lavado: compresor, válvula de expansión y filtro. <span class=\"pag\">págs. 127, 131</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Ejecutar un vacío profundo al circuito de al menos 45 minutos de duración para garantizar la eliminación absoluta de humedad tras el proceso de limpieza. (págs. 128, 132)",
+     "html": "<p>Ejecutar un vacío profundo al circuito de al menos 45 minutos de duración para garantizar la eliminación absoluta de humedad tras el proceso de limpieza. <span class=\"pag\">págs. 128, 132</span></p>"
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "No lavar nunca la válvula de expansión, el filtro deshidratador ni el compresor. (págs. 127, 131)",
+     "html": "<p>No lavar nunca la válvula de expansión, el filtro deshidratador ni el compresor. <span class=\"pag\">págs. 127, 131</span></p>"
     }
    ]
   },
@@ -21278,6 +21872,135 @@
    ]
   },
   {
+   "id": "ssc.lectura-manometros.no10-carga-y-diagonostico",
+   "nt": 462,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "lectura-manometros",
+   "seccion": "10. Diagnóstico",
+   "subgrupo": "",
+   "titulo": "Diagnóstico del sistema por presiones de trabajo y prueba de rendimiento",
+   "codigo": "",
+   "menu": "Diagnóstico del sistema por presiones",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Nº10. Carga y Diagonostico.pdf, págs. 123-125",
+   "clase": "diagnostico",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "no-enfria",
+    "prueba-rendimiento"
+   ],
+   "palabras": [
+    "presiones de trabajo",
+    "compresor variable",
+    "compresor fijo",
+    "aireadores",
+    "1500 rpm"
+   ],
+   "apartados": [
+    {
+     "titulo": "Síntoma",
+     "texto": "Insuficiencia de enfriamiento o anomalías en el rendimiento del equipo de climatización. (págs. 123-125)",
+     "html": "<p>Insuficiencia de enfriamiento o anomalías en el rendimiento del equipo de climatización. <span class=\"pag\">págs. 123-125</span></p>"
+    },
+    {
+     "titulo": "Causas posibles",
+     "texto": "Presión de Alta fuera de tolerancias nominales. Presión de Baja fuera de tolerancias nominales. Desviación motivada por excesos o defectos de carga, o por la influencia de la temperatura ambiente exterior. (págs. 123-125)",
+     "html": "<ul>\n<li>Presión de Alta fuera de tolerancias nominales.</li>\n<li>Presión de Baja fuera de tolerancias nominales.</li>\n<li>Desviación motivada por excesos o defectos de carga, o por la influencia de la temperatura ambiente exterior. <span class=\"pag\">págs. 123-125</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Cómo separar las causas",
+     "texto": "Comprobación de presiones de trabajo: Conectar mangueras de Alta y Baja con las válvulas de la máquina cerradas. Arrancar el motor a 1.500 rpm con la turbina de aire fresco a máxima velocidad y el aire acondicionado activado. Evaluar las presiones según la tecnología del compresor: Compresor variable: Alta constante a 8-10 bar (hasta 12 bar con calor extremo); Baja constante a 2 bar. Compresor fijo: Alta variable de 10 a 20 bar; Baja variable de 0,5 a 2,5 bar. Comprobación de rendimiento del equipo: Mantener el motor a 1.500 rpm, turbina al máximo y conectar la recirculación de aire. Dirigir la salida de aire a los difusores centrales y cerrar los laterales. Colocar un termómetro en la salida central y comparar la temperatura con la tabla de referencia frente a la temperatura ambiente exterior. (págs. 123-125)",
+     "html": "<ol>\n<li>Comprobación de presiones de trabajo:<ul>\n<li>Conectar mangueras de Alta y Baja con las válvulas de la máquina cerradas.</li>\n<li>Arrancar el motor a 1.500 rpm con la turbina de aire fresco a máxima velocidad y el aire acondicionado activado.</li>\n<li>Evaluar las presiones según la tecnología del compresor:<ul>\n<li>Compresor variable: Alta constante a 8-10 bar (hasta 12 bar con calor extremo); Baja constante a 2 bar.</li>\n<li>Compresor fijo: Alta variable de 10 a 20 bar; Baja variable de 0,5 a 2,5 bar.</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>Comprobación de rendimiento del equipo:<ul>\n<li>Mantener el motor a 1.500 rpm, turbina al máximo y conectar la recirculación de aire.</li>\n<li>Dirigir la salida de aire a los difusores centrales y cerrar los laterales.</li>\n<li>Colocar un termómetro en la salida central y comparar la temperatura con la tabla de referencia frente a la temperatura ambiente exterior. <span class=\"pag\">págs. 123-125</span></li>\n</ul>\n</li>\n</ol>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Régimen de prueba del motor: 1.500 rpm. Presiones nominales compresor variable: Alta = 8 a 10 bar (máx. 12 bar); Baja = 2 bar. Presiones nominales compresor fijo: Alta = 10 a 20 bar; Baja = 0,5 a 2,5 bar. Tabla de rendimiento (Temperatura exterior frente a Temperatura en aireadores): 15 ºC exterior: 2 a 4 ºC en aireadores. 20 ºC exterior: 4 a 6 ºC en aireadores. 26 ºC exterior: 4 a 7 ºC en aireadores. 32 ºC exterior: 5 a 8 ºC en aireadores. 37 ºC exterior: 7 a 10 ºC en aireadores. Presiones en reposo según temperatura exterior: 15 ºC = 3,9 bar; 20 ºC = 4,7 bar; 25 ºC = 5,5 bar; 30 ºC = 6,6 bar; 35 ºC = 7,5 bar; 40 ºC = 8,8 bar; 45 ºC = 9,8 bar. (págs. 123-125)",
+     "html": "<ul>\n<li>Régimen de prueba del motor: 1.500 rpm.</li>\n<li>Presiones nominales compresor variable: Alta = 8 a 10 bar (máx. 12 bar); Baja = 2 bar.</li>\n<li>Presiones nominales compresor fijo: Alta = 10 a 20 bar; Baja = 0,5 a 2,5 bar.</li>\n<li>Tabla de rendimiento (Temperatura exterior frente a Temperatura en aireadores):<ul>\n<li>15 ºC exterior: 2 a 4 ºC en aireadores.</li>\n<li>20 ºC exterior: 4 a 6 ºC en aireadores.</li>\n<li>26 ºC exterior: 4 a 7 ºC en aireadores.</li>\n<li>32 ºC exterior: 5 a 8 ºC en aireadores.</li>\n<li>37 ºC exterior: 7 a 10 ºC en aireadores.</li>\n</ul>\n</li>\n<li>Presiones en reposo según temperatura exterior: 15 ºC = 3,9 bar; 20 ºC = 4,7 bar; 25 ºC = 5,5 bar; 30 ºC = 6,6 bar; 35 ºC = 7,5 bar; 40 ºC = 8,8 bar; 45 ºC = 9,8 bar. <span class=\"pag\">págs. 123-125</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación tras la reparación",
+     "texto": "Comprobar que las presiones se estabilizan dentro de los rangos nominales y que la temperatura registrada en los difusores centrales cumple la tabla de rendimiento. (págs. 123-125)",
+     "html": "<p>Comprobar que las presiones se estabilizan dentro de los rangos nominales y que la temperatura registrada en los difusores centrales cumple la tabla de rendimiento. <span class=\"pag\">págs. 123-125</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.lectura-manometros.averias-hidraulicas.no10-carga-y-diagonostico",
+   "nt": 464,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "lectura-manometros",
+   "seccion": "10. Diagnóstico",
+   "subgrupo": "",
+   "titulo": "Diagnóstico de averías hidráulicas por combinación de presiones",
+   "codigo": "",
+   "menu": "Diagnóstico de averías hidráulicas por",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Nº10. Carga y Diagonostico.pdf, págs. 124-126",
+   "clase": "diagnostico",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "averias-hidraulicas",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "valvula-expansion",
+    "electroventilador-condensador",
+    "filtro-deshidratador"
+   ],
+   "palabras": [
+    "averías hidráulicas",
+    "combinación presiones",
+    "falta refrigerante",
+    "exceso refrigerante",
+    "compresor averiado"
+   ],
+   "apartados": [
+    {
+     "titulo": "Síntoma",
+     "texto": "Ausencia de aire frío, enfriamiento insuficiente o comportamiento anómalo de las agujas de los manómetros de Alta y Baja. (págs. 124-126)",
+     "html": "<p>Ausencia de aire frío, enfriamiento insuficiente o comportamiento anómalo de las agujas de los manómetros de Alta y Baja. <span class=\"pag\">págs. 124-126</span></p>"
+    },
+    {
+     "titulo": "Causas posibles",
+     "texto": "Alta normal / Baja normal con aire caliente: exceso de aceite en el sistema, contaminación por aire/humedad, o válvula de expansión cerrada. Alta normal / Baja normal con manguito de baja muy frío: válvula de expansión demasiado abierta. Alta igual a Baja (presiones igualadas): La presión de alta desciende al enfriar el condensador con agua: exceso de refrigerante, condensador obstruido o avería en el electroventilador. Presiones se equilibran rápidamente al parar el compresor y fluctúan en marcha: partícula bajo la válvula de descarga, o avería en válvulas/juntas. Presiones no varían: problema mecánico del compresor o baja cantidad de refrigerante en el circuito. Alta baja / Baja baja: Manguito de baja más frío que el evaporador: obstrucción mecánica en la línea de baja presión. Hielo en la línea de líquido o en el filtro: obstrucción en la línea de líquido o filtro deshidratador bloqueado. Compresor fijo (1.500 rpm): Carga baja (R134a: Baja 0,5-1 bar; Alta 6,5-9,5 bar): peligro de congelación si la baja cae a < 0,5 bar al acelerar. Carga excesiva (R134a: Baja 2,5-3,5 bar; Alta 19-24 bar): presiones y temperaturas en aireadores muy elevadas. (págs. 124-126)",
+     "html": "<ul>\n<li>Alta normal / Baja normal con aire caliente: exceso de aceite en el sistema, contaminación por aire/humedad, o válvula de expansión cerrada.</li>\n<li>Alta normal / Baja normal con manguito de baja muy frío: válvula de expansión demasiado abierta.</li>\n<li>Alta igual a Baja (presiones igualadas):<ul>\n<li>La presión de alta desciende al enfriar el condensador con agua: exceso de refrigerante, condensador obstruido o avería en el electroventilador.</li>\n<li>Presiones se equilibran rápidamente al parar el compresor y fluctúan en marcha: partícula bajo la válvula de descarga, o avería en válvulas/juntas.</li>\n<li>Presiones no varían: problema mecánico del compresor o baja cantidad de refrigerante en el circuito.</li>\n</ul>\n</li>\n<li>Alta baja / Baja baja:<ul>\n<li>Manguito de baja más frío que el evaporador: obstrucción mecánica en la línea de baja presión.</li>\n<li>Hielo en la línea de líquido o en el filtro: obstrucción en la línea de líquido o filtro deshidratador bloqueado.</li>\n</ul>\n</li>\n<li>Compresor fijo (1.500 rpm):<ul>\n<li>Carga baja (R134a: Baja 0,5-1 bar; Alta 6,5-9,5 bar): peligro de congelación si la baja cae a &lt; 0,5 bar al acelerar.</li>\n<li>Carga excesiva (R134a: Baja 2,5-3,5 bar; Alta 19-24 bar): presiones y temperaturas en aireadores muy elevadas. <span class=\"pag\">págs. 124-126</span></li>\n</ul>\n</li>\n</ul>"
+    },
+    {
+     "titulo": "Cómo separar las causas",
+     "texto": "Si la Alta baja al rociar agua sobre el condensador: limpiar el condensador o reparar el electroventilador. Si las presiones permanecen igualadas y no reaccionan: comprobar si existe fuga o sustituir el compresor por fallo mecánico interno. Si hay hielo en el filtro o tubería de líquido: sustituir la tubería obstruida y cambiar el filtro deshidratador. (pág. 126)",
+     "html": "<ul>\n<li>Si la Alta baja al rociar agua sobre el condensador: limpiar el condensador o reparar el electroventilador.</li>\n<li>Si las presiones permanecen igualadas y no reaccionan: comprobar si existe fuga o sustituir el compresor por fallo mecánico interno.</li>\n<li>Si hay hielo en el filtro o tubería de líquido: sustituir la tubería obstruida y cambiar el filtro deshidratador. <span class=\"pag\">pág. 126</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Valores normales compresor fijo (R134a a 1.500 rpm): Baja = 1,5 a 2 bar; Alta = 13,5 a 15 bar. Valores normales compresor variable eléctrico: Baja = 1,4 a 1,8 bar; Alta = 9 a 12 bar. Umbral de peligro de congelación por baja carga: presión de Baja < 0,5 bar al acelerar. (págs. 124-125)",
+     "html": "<ul>\n<li>Valores normales compresor fijo (R134a a 1.500 rpm): Baja = 1,5 a 2 bar; Alta = 13,5 a 15 bar.</li>\n<li>Valores normales compresor variable eléctrico: Baja = 1,4 a 1,8 bar; Alta = 9 a 12 bar.</li>\n<li>Umbral de peligro de congelación por baja carga: presión de Baja &lt; 0,5 bar al acelerar. <span class=\"pag\">págs. 124-125</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación tras la reparación",
+     "texto": "Recuperar el refrigerante, reparar el componente defectuoso, efectuar el vacío, cargar la cantidad exacta de aceite nuevo y gas prescritos y verificar la estabilización de presiones. (pág. 126)",
+     "html": "<p>Recuperar el refrigerante, reparar el componente defectuoso, efectuar el vacío, cargar la cantidad exacta de aceite nuevo y gas prescritos y verificar la estabilización de presiones. <span class=\"pag\">pág. 126</span></p>"
+    }
+   ]
+  },
+  {
    "id": "ssc.no-enfria.7-mantenimiento-diagnostico-y-reparacion",
    "nt": 407,
    "modulo": "ssc",
@@ -21876,6 +22599,73 @@
    ]
   },
   {
+   "id": "ssc.diagnostico-compresor.no10-carga-y-diagonostico",
+   "nt": 465,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "diagnostico-compresor",
+   "seccion": "10. Diagnóstico",
+   "subgrupo": "",
+   "titulo": "Diagnóstico de averías del compresor y análisis del aceite",
+   "codigo": "",
+   "menu": "Diagnóstico de averías del compresor y",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Nº10. Carga y Diagonostico.pdf, págs. 126-131",
+   "clase": "diagnostico",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "embrague-compresor",
+    "aceite-frigorifico",
+    "ruidos-compresor"
+   ],
+   "palabras": [
+    "avería compresor",
+    "aceite rojo",
+    "aceite negro",
+    "aceite purpurina",
+    "ruidos",
+    "embrague",
+    "placa de válvulas"
+   ],
+   "apartados": [
+    {
+     "titulo": "Síntoma",
+     "texto": "Alta y Baja presión igualadas con el compresor girando, presencia de ruidos extraños, sobrecalentamiento o parada del sistema. (págs. 126-131)",
+     "html": "<p>Alta y Baja presión igualadas con el compresor girando, presencia de ruidos extraños, sobrecalentamiento o parada del sistema. <span class=\"pag\">págs. 126-131</span></p>"
+    },
+    {
+     "titulo": "Causas posibles",
+     "texto": "Avería en el embrague electromagnético o en el sistema de seguridad en compresores sin embrague. Averías internas: fallo en electroválvula de regulación, rotura o suciedad en placa de válvulas de descarga, bielas dobladas, pistones marcados o ataque ácido por humedad. Causas operativas de avería: Falta de lubricante o refrigerante de retorno (fugas, válvula de expansión defectuosa, obstrucción). Suciedad en la instalación o falta de limpieza en reparaciones previas. Golpe de líquido por válvula de expansión abierta o carga de gas por la toma de baja. Falta de uso (fugas por el retén del eje). Tensión de alimentación inadecuada o caídas de tensión por contactos defectuosos. Ruidos anómalos: Compresor desembragado: roce de placa frontal con polea, oscilación de rodamiento por golpe o roce con elementos extraños. Compresor embragado: carga de gas incorrecta, golpe de líquido, roce de tubos con el chasis, patinado del embrague por grasa/aceite o partícula en válvula de descarga. (págs. 126-128, 131)",
+     "html": "<ul>\n<li>Avería en el embrague electromagnético o en el sistema de seguridad en compresores sin embrague.</li>\n<li>Averías internas: fallo en electroválvula de regulación, rotura o suciedad en placa de válvulas de descarga, bielas dobladas, pistones marcados o ataque ácido por humedad.</li>\n<li>Causas operativas de avería:<ul>\n<li>Falta de lubricante o refrigerante de retorno (fugas, válvula de expansión defectuosa, obstrucción).</li>\n<li>Suciedad en la instalación o falta de limpieza en reparaciones previas.</li>\n<li>Golpe de líquido por válvula de expansión abierta o carga de gas por la toma de baja.</li>\n<li>Falta de uso (fugas por el retén del eje).</li>\n<li>Tensión de alimentación inadecuada o caídas de tensión por contactos defectuosos.</li>\n</ul>\n</li>\n<li>Ruidos anómalos:<ul>\n<li>Compresor desembragado: roce de placa frontal con polea, oscilación de rodamiento por golpe o roce con elementos extraños.</li>\n<li>Compresor embragado: carga de gas incorrecta, golpe de líquido, roce de tubos con el chasis, patinado del embrague por grasa/aceite o partícula en válvula de descarga. <span class=\"pag\">págs. 126-128, 131</span></li>\n</ul>\n</li>\n</ul>"
+    },
+    {
+     "titulo": "Cómo separar las causas",
+     "texto": "Verificar si el compresor gira realmente alimentando el embrague directamente a 12 V si no acciona. Medir la distancia de separación entre la polea y el plato frontal (Sanden = 0,4 a 0,8 mm; otras marcas = 0,2 a 0,5 mm). Inspeccionar el estado y color del aceite extraído: Aceite rojo: presencia de humedad que genera ácido y corrosión. Aceite negro: desgastes severos o gripados por falta de lubricación/sobrecalentamiento. Aceite purpurina: presencia de partículas metálicas por golpes o daños mecánicos internos. Desmontar e inspeccionar internamente: bielas dobladas indican golpe de líquido; cabeza de pistones corroída indica ataque ácido; placa de válvulas rota indica partículas duras en la cámara. (págs. 128-131)",
+     "html": "<ol>\n<li>Verificar si el compresor gira realmente alimentando el embrague directamente a 12 V si no acciona.</li>\n<li>Medir la distancia de separación entre la polea y el plato frontal (Sanden = 0,4 a 0,8 mm; otras marcas = 0,2 a 0,5 mm).</li>\n<li>Inspeccionar el estado y color del aceite extraído:<ul>\n<li>Aceite rojo: presencia de humedad que genera ácido y corrosión.</li>\n<li>Aceite negro: desgastes severos o gripados por falta de lubricación/sobrecalentamiento.</li>\n<li>Aceite purpurina: presencia de partículas metálicas por golpes o daños mecánicos internos.</li>\n</ul>\n</li>\n<li>Desmontar e inspeccionar internamente: bielas dobladas indican golpe de líquido; cabeza de pistones corroída indica ataque ácido; placa de válvulas rota indica partículas duras en la cámara. <span class=\"pag\">págs. 128-131</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Distancia entre polea y plato frontal: Sanden = 0,4 a 0,8 mm; otras marcas = 0,2 a 0,5 mm. Apariencia de aceite en circuito correcto: transparente, sin emulsiones rojas, negras o metálicas. (págs. 130-131)",
+     "html": "<ul>\n<li>Distancia entre polea y plato frontal: Sanden = 0,4 a 0,8 mm; otras marcas = 0,2 a 0,5 mm.</li>\n<li>Apariencia de aceite en circuito correcto: transparente, sin emulsiones rojas, negras o metálicas. <span class=\"pag\">págs. 130-131</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación tras la reparación",
+     "texto": "Si se detecta aceite rojo, negro, purpurina, o partículas en el circuito, es estrictamente obligatorio realizar el lavado completo del circuito con aire seco y nitrógeno líquido, y sustituir sin excepción el compresor, la válvula de expansión y el filtro deshidratador. (págs. 127, 131)",
+     "html": "<p>Si se detecta aceite rojo, negro, purpurina, o partículas en el circuito, es estrictamente obligatorio realizar el lavado completo del circuito con aire seco y nitrógeno líquido, y sustituir sin excepción el compresor, la válvula de expansión y el filtro deshidratador. <span class=\"pag\">págs. 127, 131</span></p>"
+    }
+   ]
+  },
+  {
    "id": "ssc.sustitucion-compresor.zz15-diagnostico-y-averias",
    "nt": 353,
    "modulo": "ssc",
@@ -22094,6 +22884,81 @@
      "titulo": "Verificación final",
      "texto": "Comprobar las presiones de trabajo en el puente de manómetros y verificar que la temperatura de salida de aire en los aireadores es correcta. (pág. 132)",
      "html": "<p>Comprobar las presiones de trabajo en el puente de manómetros y verificar que la temperatura de salida de aire en los aireadores es correcta. <span class=\"pag\">pág. 132</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sustitucion-compresor.no10-carga-y-diagonostico",
+   "nt": 467,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sustitucion-compresor",
+   "seccion": "10. Diagnóstico",
+   "subgrupo": "",
+   "titulo": "Montaje y sustitución de un compresor nuevo",
+   "codigo": "",
+   "menu": "Montaje y sustitución de un compresor",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Nº10. Carga y Diagonostico.pdf, págs. 127, 131-132",
+   "clase": "procedimiento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "aceite-frigorifico",
+    "vacio-circuito",
+    "rodaje-compresor"
+   ],
+   "palabras": [
+    "sustitución compresor",
+    "vaciado de aceite",
+    "adición de aceite",
+    "rodaje",
+    "1000 rpm"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Instalar un compresor nuevo en el vehículo garantizando el ajuste preciso de la masa de aceite, la estanqueidad y el rodaje inicial de sus componentes mecánicos. (págs. 127, 131-132)",
+     "html": "<p>Instalar un compresor nuevo en el vehículo garantizando el ajuste preciso de la masa de aceite, la estanqueidad y el rodaje inicial de sus componentes mecánicos. <span class=\"pag\">págs. 127, 131-132</span></p>"
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Circuito verificado y lavado previamente si presentaba contaminación o aceite alterado. Válvula de expansión y filtro renovados. (págs. 127, 131-132)",
+     "html": "<p>Circuito verificado y lavado previamente si presentaba contaminación o aceite alterado. Válvula de expansión y filtro renovados. <span class=\"pag\">págs. 127, 131-132</span></p>"
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Compresor nuevo, aceite frigorífico prescrito, estación de vacío y carga, y llaves de apriete. (págs. 131-132)",
+     "html": "<p>Compresor nuevo, aceite frigorífico prescrito, estación de vacío y carga, y llaves de apriete. <span class=\"pag\">págs. 131-132</span></p>"
+    },
+    {
+     "titulo": "Pasos",
+     "texto": "Extraer manualmente todo el aceite del cárter del compresor nuevo. Reintroducir en el compresor nuevo una cantidad de aceite calculada mediante la suma de: el volumen extraído manualmente del compresor viejo + el volumen recuperado por la máquina + 20 cc adicionales. (Si se han cambiado piezas adicionales sin lavar todo el sistema, añadir también: Evaporador = 50 cc; Condensador = 30 cc; Filtro = 10 cc; Tubo = 10 cc. Si se realizó el lavado completo del circuito, cargar la cantidad total recomendada por el fabricante). Instalar en la carrocería el compresor nuevo evitando forzar las orejetas de fijación y verificando el libre deslizamiento de los casquillos. Conectar las tuberías utilizando juntas tóricas nuevas y respetar los pares de apriete para no dañar los orificios roscados. Realizar un vacío profundo al circuito con una duración mínima de 45 minutos y ejecutar el test de estanqueidad. Cargar la masa de refrigerante prescrita exclusivamente por la toma de Alta presión. Comprobar la tensión de la correa de accesorios y arrancar el motor al ralentí, verificando la ausencia de ruidos anómalos. Conectar la climatización, comprobar el acoplamiento del plato y realizar el rodaje inicial del compresor sin superar en ningún caso las 1.000 rpm durante los primeros 5 minutos de funcionamiento. (págs. 127, 131-132)",
+     "html": "<ol>\n<li>Extraer manualmente todo el aceite del cárter del compresor nuevo.</li>\n<li>\n<p>Reintroducir en el compresor nuevo una cantidad de aceite calculada mediante la suma de: el volumen extraído manualmente del compresor viejo + el volumen recuperado por la máquina + 20 cc adicionales.\n   (Si se han cambiado piezas adicionales sin lavar todo el sistema, añadir también: Evaporador = 50 cc; Condensador = 30 cc; Filtro = 10 cc; Tubo = 10 cc. Si se realizó el lavado completo del circuito, cargar la cantidad total recomendada por el fabricante).</p>\n</li>\n<li>\n<p>Instalar en la carrocería el compresor nuevo evitando forzar las orejetas de fijación y verificando el libre deslizamiento de los casquillos.</p>\n</li>\n<li>Conectar las tuberías utilizando juntas tóricas nuevas y respetar los pares de apriete para no dañar los orificios roscados.</li>\n<li>Realizar un vacío profundo al circuito con una duración mínima de 45 minutos y ejecutar el test de estanqueidad.</li>\n<li>Cargar la masa de refrigerante prescrita exclusivamente por la toma de Alta presión.</li>\n<li>Comprobar la tensión de la correa de accesorios y arrancar el motor al ralentí, verificando la ausencia de ruidos anómalos.</li>\n<li>Conectar la climatización, comprobar el acoplamiento del plato y realizar el rodaje inicial del compresor sin superar en ningún caso las 1.000 rpm durante los primeros 5 minutos de funcionamiento. <span class=\"pag\">págs. 127, 131-132</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Suplemento fijo de aceite en el cálculo de reposición: +20 cc. Tiempo mínimo de vacío profundo: 45 minutos. Régimen máximo del motor durante el rodaje inicial: 1.000 rpm durante los primeros 5 minutos. (págs. 128, 132)",
+     "html": "<ul>\n<li>Suplemento fijo de aceite en el cálculo de reposición: +20 cc.</li>\n<li>Tiempo mínimo de vacío profundo: 45 minutos.</li>\n<li>Régimen máximo del motor durante el rodaje inicial: 1.000 rpm durante los primeros 5 minutos. <span class=\"pag\">págs. 128, 132</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Verificar las presiones de funcionamiento en los manómetros y comprobar que la temperatura de salida en los aireadores centrales cumple los valores especificados. (pág. 132)",
+     "html": "<p>Verificar las presiones de funcionamiento en los manómetros y comprobar que la temperatura de salida en los aireadores centrales cumple los valores especificados. <span class=\"pag\">pág. 132</span></p>"
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Cargar el refrigerante únicamente por el lado de alta presión con el motor parado para evitar golpes de líquido en el compresor nuevo. (pág. 132)",
+     "html": "<p>Cargar el refrigerante únicamente por el lado de alta presión con el motor parado para evitar golpes de líquido en el compresor nuevo. <span class=\"pag\">pág. 132</span></p>"
     }
    ]
   },
@@ -22490,6 +23355,71 @@
      "titulo": "Verificación tras la reparación",
      "texto": "Ejecutar el ajuste básico (función 04, grupo 002) tras cambiar componentes, borrar la memoria de averías (función 05) y comprobar la ausencia de parpadeo en los dígitos del display. (págs. 34, 36)",
      "html": "<p>Ejecutar el ajuste básico (función 04, grupo 002) tras cambiar componentes, borrar la memoria de averías (función 05) y comprobar la ausencia de parpadeo en los dígitos del display. <span class=\"pag\">págs. 34, 36</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.autodiagnostico-climatizador.no10-carga-y-diagonostico",
+   "nt": 468,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "autodiagnostico-climatizador",
+   "seccion": "10. Diagnóstico",
+   "subgrupo": "",
+   "titulo": "Autodiagnóstico del sistema de climatización automática",
+   "codigo": "",
+   "menu": "Autodiagnóstico del sistema de climati",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Nº10. Carga y Diagonostico.pdf, págs. 133-134",
+   "clase": "diagnostico",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "servomotor-trampilla",
+    "sensor-temperatura-exterior"
+   ],
+   "palabras": [
+    "autodiagnóstico",
+    "memoria averías",
+    "esporádicas",
+    "actuadores",
+    "ajuste básico",
+    "valores individuales"
+   ],
+   "apartados": [
+    {
+     "titulo": "Síntoma",
+     "texto": "Aparición de códigos de fallo en la unidad de control de la climatización, parpadeo de datos en la pantalla o mal funcionamiento de servomotores y electroventiladores. (págs. 133-134)",
+     "html": "<p>Aparición de códigos de fallo en la unidad de control de la climatización, parpadeo de datos en la pantalla o mal funcionamiento de servomotores y electroventiladores. <span class=\"pag\">págs. 133-134</span></p>"
+    },
+    {
+     "titulo": "Causas posibles",
+     "texto": "Averías esporádicas o fugaces: fallos puntuales de señal o caídas de tensión (se borran automáticamente tras 30 o 40 puestas en marcha sin repetirse). Averías actuales o permanentes: interrupciones, cortocircuitos o fallos físicos en sensores y actuadores (solo se borran tras su reparación y borrado manual). Fallos en sensores compartidos: memorizados en otras unidades de control y transmitidos por CAN-Bus (en Cuadro de Instrumentos: sensor de temperatura exterior y velocidad; en Red de A Bordo: marcha atrás, alternador y regulador de iluminación). (págs. 133-134)",
+     "html": "<ul>\n<li>Averías esporádicas o fugaces: fallos puntuales de señal o caídas de tensión (se borran automáticamente tras 30 o 40 puestas en marcha sin repetirse).</li>\n<li>Averías actuales o permanentes: interrupciones, cortocircuitos o fallos físicos en sensores y actuadores (solo se borran tras su reparación y borrado manual).</li>\n<li>Fallos en sensores compartidos: memorizados en otras unidades de control y transmitidos por CAN-Bus (en Cuadro de Instrumentos: sensor de temperatura exterior y velocidad; en Red de A Bordo: marcha atrás, alternador y regulador de iluminación). <span class=\"pag\">págs. 133-134</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Cómo separar las causas",
+     "texto": "Conectar una máquina de diagnosis compatible y acceder a las funciones del autodiagnóstico: Consultar la memoria de averías: identificar si los códigos corresponden a sensores específicos de la UCE de climatización o a sensores compartidos recibidos por CAN-Bus. Diagnóstico de elementos actuadores: Test de segmentos: ilumina todos los dígitos del display para verificar la pantalla. Velocidades del electroventilador: acciona las velocidades o variación continua del ventilador del radiador. Turbina de aire: acciona la turbina de aire fresco en todo su rango de trabajo. Embrague del compresor: conmuta cíclicamente el acoplamiento magnético (se aprecia auditiva y visualmente). Motores de las trampillas: activa los servomotores para comprobar el reparto de flujo y el salto térmico. Ajuste básico: desplaza de principio a fin todos los servomotores y memoriza sus posiciones de mínimo y máximo (obligatorio tras sustituir un servomotor o la UCE del climatizador). Lectura de valores de funcionamiento individual: supervisa parámetros en tiempo real como estado del compresor, revoluciones del motor, posición teórica/real de servomotores (temperatura, central, deshielo, recirculación), lecturas de sondas (exterior, entrada de aire, habitáculo, refrigerante), porcentaje de radiación del fotosensor solar, tensión de alimentación, presión del circuito (sensor MAP) y porcentaje de activación de la electroválvula del compresor. (págs. 133-134)",
+     "html": "<p>Conectar una máquina de diagnosis compatible y acceder a las funciones del autodiagnóstico:</p>\n<ol>\n<li>Consultar la memoria de averías: identificar si los códigos corresponden a sensores específicos de la UCE de climatización o a sensores compartidos recibidos por CAN-Bus.</li>\n<li>Diagnóstico de elementos actuadores:<ul>\n<li>Test de segmentos: ilumina todos los dígitos del display para verificar la pantalla.</li>\n<li>Velocidades del electroventilador: acciona las velocidades o variación continua del ventilador del radiador.</li>\n<li>Turbina de aire: acciona la turbina de aire fresco en todo su rango de trabajo.</li>\n<li>Embrague del compresor: conmuta cíclicamente el acoplamiento magnético (se aprecia auditiva y visualmente).</li>\n<li>Motores de las trampillas: activa los servomotores para comprobar el reparto de flujo y el salto térmico.</li>\n</ul>\n</li>\n<li>Ajuste básico: desplaza de principio a fin todos los servomotores y memoriza sus posiciones de mínimo y máximo (obligatorio tras sustituir un servomotor o la UCE del climatizador).</li>\n<li>Lectura de valores de funcionamiento individual: supervisa parámetros en tiempo real como estado del compresor, revoluciones del motor, posición teórica/real de servomotores (temperatura, central, deshielo, recirculación), lecturas de sondas (exterior, entrada de aire, habitáculo, refrigerante), porcentaje de radiación del fotosensor solar, tensión de alimentación, presión del circuito (sensor MAP) y porcentaje de activación de la electroválvula del compresor. <span class=\"pag\">págs. 133-134</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Criterio de borrado automático de averías esporádicas: 30 a 40 arranques del sistema sin reproducciones del fallo. Tensión de alimentación leída en diagnosis: aproximadamente igual a la tensión de batería. (págs. 133-134)",
+     "html": "<ul>\n<li>Criterio de borrado automático de averías esporádicas: 30 a 40 arranques del sistema sin reproducciones del fallo.</li>\n<li>Tensión de alimentación leída en diagnosis: aproximadamente igual a la tensión de batería. <span class=\"pag\">págs. 133-134</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación tras la reparación",
+     "texto": "Ejecutar la función de ajuste básico tras sustituir componentes, borrar la memoria de averías y comprobar en la lectura de valores individuales que las posiciones teóricas y reales de los servomotores coinciden. (págs. 133-134)",
+     "html": "<p>Ejecutar la función de ajuste básico tras sustituir componentes, borrar la memoria de averías y comprobar en la lectura de valores individuales que las posiciones teóricas y reales de los servomotores coinciden. <span class=\"pag\">págs. 133-134</span></p>"
     }
    ]
   },
