@@ -6,51 +6,42 @@ nt: 168
 tipo: proceso
 subtipo: fundamento
 clase: fundamento
-titulo: "Autodiagnóstico del climatizador"
-menu: "Autodiagnóstico del climatizador"
+titulo: "Autodiagnosis y protección de componentes en la unidad Climatronic"
+codigo: "J255"
+menu: "Autodiagnosis y protección de  J255"
 grupo: "Control de climatización"
 clave: autodiagnostico-climatizador
 area: climatizacion
 sistema: "control-climatizacion"
-fuentes: "Audi A5 Coupé_2008_aire acondicionado.pdf, págs. 4-11"
+marca: "Audi"
+fuentes: "Audi A5 Coupé_2008_aire acondicionado.pdf, págs. 4-11"
 relacionados: ["unidad-control-climatizador"]
-palabras: ["autodiagnosis", "memoria de averías", "avería estática", "avería esporádica", "VAS 5051"]
+palabras: ["J255", "dirección 08", "protección de componentes", "memoria no volátil", "averías esporádicas"]
 ---
 
 ## Objeto
 
-Monitorizar y supervisar el funcionamiento de los componentes y sensores gestionados por el climatizador, memorizando los fallos para la localización asistida de averías en el taller. (págs. 4-5).
+Explicar el funcionamiento del sistema de autodiagnosis, la gestión de memoria de averías y el mecanismo de protección de componentes en la unidad de control para Climatronic J255. (págs. 4-11)
 
 ## Fundamento
 
-La unidad de control para Climatronic J255 analiza continuamente las señales e informaciones del sistema. Al detectar un fallo en un sensor o componente vigilado, graba el registro en su memoria de averías junto con el tipo de avería correspondiente. (págs. 4-5).
+La unidad de control J255 supervisa continuamente los sensores y actuadores del sistema. Integra una memoria no volátil que registra las averías e incorpora un protocolo de seguridad antirrobo denominado protección de componentes. (págs. 4-7)
 
 ## Desarrollo
 
-La unidad de control J255 clasifica las averías registradas en dos categorías:
-1. Averías estáticas o permanentes: se registran si las condiciones de fallo se mantienen de forma continua durante un tiempo determinado.
-2. Averías esporádicas: se registran cuando la condición de fallo desaparece durante un tiempo determinado, añadiéndose la indicación /SP en la pantalla del equipo de diagnosis. Este proceso de evaluación se repite ininterrumpidamente.
-
-Para acceder a la autodiagnosis, se conecta el equipo de diagnosis (VAS 5051 o VAS 5052) al conector de diagnosis de 16 polos del vehículo con el encendido desconectado, accediendo a la dirección "08 - Electrónica de climatización/calefacción".
-
-Las funciones de autodiagnosis disponibles son:
-- 01 / 001: Consultar la versión de la unidad de control.
-- 02 / 004: Consultar la memoria de averías.
-- 03 / 005: Diagnosis de actuadores.
-- 04 / 006: Ajuste básico.
-- 05 / 004.10: Borrar la memoria de averías.
-- 06 / 022: Finalizar la edición.
-- 07 / 007: Codificación.
-- 08 / 011: Leer el bloque de valores de medición.
-- 10 / 012: Adaptación.
-
-Antes de sustituir el panel de mandos e indicación J255, es obligatorio consultar su codificación y adaptación mediante la función "Unidad de control: sustituir" en la localización guiada de averías. (págs. 4-9).
+- **Dirección de diagnóstico:** El acceso al sistema mediante el equipo de diagnosis (VAS 5051/5052) se realiza a través del código de dirección "08 - Electrónica de climatización/calefacción". (pág. 8)
+- **Memoria de averías:** Es de tipo no volátil (no pierde los datos al desconectar la batería). Clasifica los fallos en estáticos (permanentes) o esporádicos (/SP). Las averías esporádicas que no vuelven a reproducirse se borran automáticamente tras un periodo determinado. Junto a la avería se memorizan las condiciones de entorno (kilometraje, fecha, temperatura del motor, régimen y tensión). (págs. 5, 9)
+- **Protección de componentes:** Al adaptar una unidad J255 a un vehículo, queda vinculada electrónicamente a él. Si se instala en otro vehículo sin desinmovilizar previa verificación, la protección de componentes inhibe las funciones de confort y solo mantiene operativas las funciones de seguridad. (págs. 4, 26)
 
 ## Valores de referencia
 
-Conector de diagnosis de 16 polos.
-Velocidad del vehículo no superior a 5 km/h para ejecutar la diagnosis de actuadores. (págs. 6, 8).
+- Código de dirección del climatizador: 08 (Electrónica de climatización/calefacción). (pág. 8)
 
 ## Errores de concepto frecuentes
 
-Considerar las averías esporádicas como errores de lectura sin valor técnico; reflejan fallos reales cuya condición desapareció temporalmente pero que permanecen memorizados hasta su borrado explícito. (pág. 5).
+- Asumir que al desconectar la batería del vehículo se borra la memoria de averías del Climatronic J255. (pág. 5)
+- Creer que una unidad de control J255 usada se puede intercambiar directamente entre dos vehículos sin desactivar la protección de componentes. (pág. 4)
+
+## Imágenes requeridas
+
+- Pantalla del equipo de diagnosis VAS 5051 con la selección del código de dirección 08 — Fuente: Audi A5 Coupé_2008_aire acondicionado.pdf, pág. 9
