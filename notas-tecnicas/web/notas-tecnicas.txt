@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">338 notas · 24/09/2026</p>
+  <p class="sidebar-meta">339 notas · 24/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -349,7 +349,7 @@
     <li><a href="#grp-fotosensor-solar">Fotosensor de radiación solar <span class="menu-cuenta">3 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Distribución de aire</span></li>
     <li><a href="#grp-servomotor-trampilla">Servomotores de las chapaletas de aire <span class="menu-cuenta">6 fuentes</span></a></li>
-    <li><a href="#grp-distribucion-aire">Conducción del aire en el calefactor/climatizador <span class="menu-cuenta">2 fuentes</span></a></li>
+    <li><a href="#grp-distribucion-aire">Conducción del aire en el calefactor/climatizador <span class="menu-cuenta">3 fuentes</span></a></li>
     <li><a href="#grp-recirculacion">Función de recirculación de aire <span class="menu-cuenta">3 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
     <li><a href="#grp-sensor-calidad-aire">Sensor de la calidad del aire <span class="menu-cuenta">4 fuentes</span></a></li>
@@ -13369,10 +13369,10 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </div>
 
   <div class="grupo-componente" id="grp-distribucion-aire">
-    <div class="grupo-cab"><span class="grupo-nombre">Conducción del aire en el calefactor/climatizador</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Conducción del aire en el calefactor/climatizador</span><span class="grupo-cuenta">3 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 2 · NT105 · 208. Regulación de la temperatura.pdf, págs. 55-57</summary>
+      <summary>Variante 1 de 3 · NT105 · 208. Regulación de la temperatura.pdf, págs. 55-57</summary>
   <section id="nt105" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 105 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -13412,7 +13412,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 2 · NT186 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 6</summary>
+      <summary>Variante 2 de 3 · NT186 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 6</summary>
   <section id="nt186" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 186 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -13446,6 +13446,49 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 6</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 3 de 3 · NT339 · SSP 484 A7 Info y Clima (arrastrado) 6.pdf, págs. 49</summary>
+  <section id="nt339" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 339 <span class="subtipo">Fundamento</span><span class="fusionado">Audi</span></div>
+    <div class="nota-body proceso">
+      <h1>Configuración y distribución de componentes del sistema de climatización de cuatro zonas</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>La disposición física de los componentes en las variantes de sistema de tres zonas y de cuatro zonas difiere entre sí para permitir el control térmico y de caudal independiente en las plazas traseras y delanteras. (pág. 49).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>La arquitectura del conjunto climatizador para el sistema de cuatro zonas distribuye los siguientes servomotores de trampilla y drenajes de agua:</p>
+<ul>
+<li>Trampillas de recirculación de aire: servomotor de la trampilla de recirculación V71 y servomotor de la trampilla de recirculación V113. (pág. 49).</li>
+<li>Trampillas de temperatura delanteras: servomotor de la trampilla de temperatura izquierda V158 y servomotor de la trampilla de temperatura derecha V159. (pág. 49).</li>
+<li>Trampillas de difusores centrales y laterales: servomotor del difusor central izquierdo V110, servomotor del difusor central derecho V111, servomotor del difusor lateral izquierdo V299 y servomotor del difusor lateral derecho V300. (pág. 49).</li>
+<li>Trampilla de descongelación/desempañado: servomotor de la trampilla del defrost V107. (pág. 49).</li>
+<li>Trampillas de espacio para los pies delanteros: servomotor de la trampilla del espacio para los pies izquierdo V108 y servomotor de la trampilla del espacio para los pies derecho V109. (pág. 49).</li>
+<li>Trampillas para las plazas traseras: servomotor de temperatura trasera izquierda V313, servomotor de temperatura trasera derecha V314, servomotor de aire trasero izquierdo V239 y servomotor de aire trasero derecho V240. (pág. 49).</li>
+<li>Ventilación indirecta: servomotor de la trampilla de ventilación indirecta V213. (pág. 49).</li>
+<li>Drenaje de condensados: salidas de agua de evacuación del evaporador en el lado del conductor y en el lado del acompañante. (pág. 49).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Mostrar la arquitectura y disposición física de los servomotores y canalizaciones en la caja climática para el sistema de climatización de cuatro zonas. (pág. 49).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <p>Asumir que la disposición y componentes de la caja climática son idénticos entre las versiones de tres y cuatro zonas; los esquemas y componentes difieren entre ambas configuraciones. (pág. 49).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT339_01</code> Esquema de distribución de componentes y servomotores del sistema de climatización de cuatro zonas (figuras 484_118 y 484_119) — Fuente: SSP 484 A7 Info y Clima (arrastrado).pdf, pág. 49</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">SSP 484 A7 Info y Clima (arrastrado) 6.pdf, págs. 49</p>
       </div>
     </div>
   </section>
@@ -17301,7 +17344,7 @@ Al recibir señal de la unidad de control del airbag J234 ante un impacto leve q
   </section>
 
   <div class="pie">
-    338 notas técnicas · generado el 24/09/2026.
+    339 notas técnicas · generado el 24/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
