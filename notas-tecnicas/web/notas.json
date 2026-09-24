@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-24",
- "total": 327,
+ "total": 329,
  "grupos": [
   "Calefacción",
   "Circuito frigorífico",
@@ -12291,6 +12291,87 @@
    ]
   },
   {
+   "id": "ssc.servomotor-trampilla.bus-lin.ssp-484-a7-info-y-clima-arrastrado-2-cop",
+   "nt": 328,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "servomotor-trampilla",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Servomotor de trampilla con bus LIN",
+   "codigo": "J255",
+   "menu": "Servomotor de trampilla con bu J255",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "SSP 484 A7 Info y Clima (arrastrado) 2 copia.pdf, págs. 52-53",
+   "clase": "componente",
+   "variante": "bus-lin",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "unidad-control-climatizador",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "autodiagnostico-climatizador"
+   ],
+   "palabras": [
+    "servomotor",
+    "bus LIN",
+    "conector de 4 pines",
+    "direccionamiento automático",
+    "terminal 30"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Accionar y posicionar las trampillas individuales del sistema de climatización mediante la recepción de órdenes e información de adaptación a través del bus LIN. (pág. 53).",
+     "html": "<p>Accionar y posicionar las trampillas individuales del sistema de climatización mediante la recepción de órdenes e información de adaptación a través del bus LIN. <span class=\"pag\">pág. 53</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Servomotores conectados en serie a la unidad de control Climatronic J255 o a la unidad de control e indicación del climatizador trasero E265 mediante el bus LIN. Incorporan un conector de 4 pines: Pin A1: terminal 31 (masa). Pin A2: LIN in (entrada de la línea de datos bus LIN). Pin A3: LIN out (salida de la línea de datos bus LIN). Pin A4: terminal 30 (alimentación de positivo permanente). (págs. 52-53).",
+     "html": "<p>Servomotores conectados en serie a la unidad de control Climatronic J255 o a la unidad de control e indicación del climatizador trasero E265 mediante el bus LIN. Incorporan un conector de 4 pines:</p>\n<ul>\n<li>Pin A1: terminal 31 (masa).</li>\n<li>Pin A2: LIN in (entrada de la línea de datos bus LIN).</li>\n<li>Pin A3: LIN out (salida de la línea de datos bus LIN).</li>\n<li>Pin A4: terminal 30 (alimentación de positivo permanente). <span class=\"pag\">págs. 52-53</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Se adaptan y activan mediante la conexión en serie a la línea de datos bus LIN. Cada servomotor recibe la asignación de su trampilla correspondiente mediante una codificación de dirección obtenida durante el proceso de direccionamiento automático (auto-addressing). La señal de datos entra por el pin A2 (LIN in) y se transmite hacia el siguiente servomotor de la serie por el pin A3 (LIN out). (págs. 52-53).",
+     "html": "<p>Se adaptan y activan mediante la conexión en serie a la línea de datos bus LIN. Cada servomotor recibe la asignación de su trampilla correspondiente mediante una codificación de dirección obtenida durante el proceso de direccionamiento automático (auto-addressing). La señal de datos entra por el pin A2 (LIN in) y se transmite hacia el siguiente servomotor de la serie por el pin A3 (LIN out). <span class=\"pag\">págs. 52-53</span>.</p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Alimentación eléctrica por terminal 30 (positivo permanente) y terminal 31 (masa). (pág. 53).",
+     "html": "<p>Alimentación eléctrica por terminal 30 (positivo permanente) y terminal 31 (masa). <span class=\"pag\">pág. 53</span>.</p>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Interrupción de la línea del bus LIN en el servomotor, o intercambio accidental de conectores o de posiciones físicas entre servomotores durante trabajos de reparación. (pág. 53).",
+     "html": "<p>Interrupción de la línea del bus LIN en el servomotor, o intercambio accidental de conectores o de posiciones físicas entre servomotores durante trabajos de reparación. <span class=\"pag\">pág. 53</span>.</p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si la línea del bus LIN se interrumpe en un servomotor, se indican como averiados ese servomotor y todos los servomotores conectados en serie a continuación (aguas abajo / downstream). Si se intercambian los conectores de dos o más servomotores, mantendrán sus funciones anteriores hasta el siguiente ciclo de direccionamiento automático; tras dicho ciclo, se les asignarán trampillas incorrectas al no coincidir el orden de los conectores en el mazo de cables. Si se intercambia la ubicación física de dos servomotores, no funcionarán correctamente con la asignación de dirección antigua en la nueva posición. Ante cualquier fallo se registra un código de avería (DTC) en la memoria de averías. (pág. 53).",
+     "html": "<ul>\n<li>Si la línea del bus LIN se interrumpe en un servomotor, se indican como averiados ese servomotor y todos los servomotores conectados en serie a continuación (aguas abajo / downstream).</li>\n<li>Si se intercambian los conectores de dos o más servomotores, mantendrán sus funciones anteriores hasta el siguiente ciclo de direccionamiento automático; tras dicho ciclo, se les asignarán trampillas incorrectas al no coincidir el orden de los conectores en el mazo de cables.</li>\n<li>Si se intercambia la ubicación física de dos servomotores, no funcionarán correctamente con la asignación de dirección antigua en la nueva posición.</li>\n<li>Ante cualquier fallo se registra un código de avería (DTC) en la memoria de averías. <span class=\"pag\">pág. 53</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Leer y consultar la memoria de averías (DTC) utilizando la herramienta de diagnóstico (VAS Scan Tool). (pág. 53).",
+     "html": "<p>Leer y consultar la memoria de averías (DTC) utilizando la herramienta de diagnóstico (VAS Scan Tool). <span class=\"pag\">pág. 53</span>.</p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Respetar el orden correcto de los conectores en el mazo de cables y ejecutar el ciclo de direccionamiento automático tras sustituir o permutar servomotores. (pág. 53).",
+     "html": "<p>Respetar el orden correcto de los conectores en el mazo de cables y ejecutar el ciclo de direccionamiento automático tras sustituir o permutar servomotores. <span class=\"pag\">pág. 53</span>.</p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema de conexión en serie del conector de 4 pines (A1 terminal 31, A2 LIN in, A3 LIN out, A4 terminal 30) entre servomotores — Fuente: SSP 484 A7 Info y Clima (arrastrado) 2 copia.pdf, pág. 53",
+     "html": "<ul>\n<li>Esquema de conexión en serie del conector de 4 pines (A1 terminal 31, A2 LIN in, A3 LIN out, A4 terminal 30) entre servomotores — Fuente: SSP 484 A7 Info y Clima (arrastrado) 2 copia.pdf, pág. 53</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.ventilador-habitaculo.cd-072-climatizacion-en-el-ibiza-cordoba",
    "nt": 200,
    "modulo": "ssc",
@@ -13927,6 +14008,63 @@
      "titulo": "Errores de concepto frecuentes",
      "texto": "Asumir que la temperatura de consigna seleccionada en la pantalla coincide exactamente y en todo momento con la temperatura real del habitáculo; la radiación del salpicadero y el aislamiento del vehículo generan desviaciones temporales. (pág. 3).",
      "html": "<p>Asumir que la temperatura de consigna seleccionada en la pantalla coincide exactamente y en todo momento con la temperatura real del habitáculo; la radiación del salpicadero y el aislamiento del vehículo generan desviaciones temporales. <span class=\"pag\">pág. 3</span>.</p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.regulacion-automatica.ssp-484-a7-info-y-clima-arrastrado-2-cop",
+   "nt": 329,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-automatica",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Direccionamiento automático de servomotores en bus LIN",
+   "codigo": "J255",
+   "menu": "Direccionamiento automático de J255",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "SSP 484 A7 Info y Clima (arrastrado) 2 copia.pdf, págs. 52-53",
+   "clase": "fundamento",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "servomotor-trampilla",
+    "unidad-control-climatizador",
+    "autodiagnostico-climatizador"
+   ],
+   "palabras": [
+    "auto-addressing",
+    "direccionamiento automático",
+    "bus LIN",
+    "conexión en serie",
+    "codificación de dirección"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Asignar direcciones individuales a cada servomotor de trampilla conectado en serie en el bus LIN para su adaptación y control desde la unidad Climatronic J255 o E265. (pág. 53).",
+     "html": "<p>Asignar direcciones individuales a cada servomotor de trampilla conectado en serie en el bus LIN para su adaptación y control desde la unidad Climatronic J255 o E265. <span class=\"pag\">pág. 53</span>.</p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Los servomotores están enlazados en serie a través del bus LIN. Para que la unidad de mando identifique qué trampilla acciona cada servomotor, se ejecuta un proceso de codificación de dirección denominado direccionamiento automático (auto-addressing). (pág. 53).",
+     "html": "<p>Los servomotores están enlazados en serie a través del bus LIN. Para que la unidad de mando identifique qué trampilla acciona cada servomotor, se ejecuta un proceso de codificación de dirección denominado direccionamiento automático (auto-addressing). <span class=\"pag\">pág. 53</span>.</p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Estructura de la conexión: La línea de datos bus LIN entra en cada servomotor por el pin A2 (LIN in) y sale hacia el siguiente por el pin A3 (LIN out), compartiendo todos la alimentación por terminal 30 (pin A4) y terminal 31 (pin A1). (pág. 53). Proceso de asignación: La unidad de control J255 o E265 asigna las direcciones a las trampillas respetando el orden físico de los conectores en el mazo de cables de la conexión en serie. (pág. 53). Gestión de averías en la red LIN: Si se interrumpe el bus LIN en un servomotor, se detecta avería en dicho servomotor y en todos los situados a continuación en la serie (aguas abajo). (pág. 53). Cualquier fallo genera un registro de avería (DTC) en la memoria de averías accesible por diagnóstico. (pág. 53).",
+     "html": "<ol>\n<li>Estructura de la conexión: La línea de datos bus LIN entra en cada servomotor por el pin A2 (LIN in) y sale hacia el siguiente por el pin A3 (LIN out), compartiendo todos la alimentación por terminal 30 (pin A4) y terminal 31 (pin A1). <span class=\"pag\">pág. 53</span>.</li>\n<li>Proceso de asignación: La unidad de control J255 o E265 asigna las direcciones a las trampillas respetando el orden físico de los conectores en el mazo de cables de la conexión en serie. <span class=\"pag\">pág. 53</span>.</li>\n<li>Gestión de averías en la red LIN:<ul>\n<li>Si se interrumpe el bus LIN en un servomotor, se detecta avería en dicho servomotor y en todos los situados a continuación en la serie (aguas abajo). <span class=\"pag\">pág. 53</span>.</li>\n<li>Cualquier fallo genera un registro de avería (DTC) en la memoria de averías accesible por diagnóstico. <span class=\"pag\">pág. 53</span>.</li>\n</ul>\n</li>\n</ol>"
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Creer que permutar la posición física de dos servomotores soluciona un fallo; no funcionarán con la dirección antigua en la nueva ubicación y, tras el siguiente ciclo de auto-addressing, se les asignarán las trampillas correspondientes al orden físico de los conectores del mazo de cables. (pág. 53).",
+     "html": "<p>Creer que permutar la posición física de dos servomotores soluciona un fallo; no funcionarán con la dirección antigua en la nueva ubicación y, tras el siguiente ciclo de auto-addressing, se les asignarán las trampillas correspondientes al orden físico de los conectores del mazo de cables. <span class=\"pag\">pág. 53</span>.</p>"
     }
    ]
   },
