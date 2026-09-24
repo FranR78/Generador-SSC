@@ -2482,6 +2482,30 @@
    "hecha": false
   },
   {
+   "nombre": "NT563_01",
+   "nt": 563,
+   "titulo": "Bases físicas y presión de vapor en climatización",
+   "seccion": "2. Fundamentos",
+   "descripcion": "Gráfico de los estados de agregación y curva de presión de vapor para el agente frigorífico R134a — Fuente: Audi 100_1991_Climatizador.pdf, pág. 3",
+   "hecha": false
+  },
+  {
+   "nombre": "NT566_01",
+   "nt": 566,
+   "titulo": "Bienestar e higrometría en el habitáculo",
+   "seccion": "2. Fundamentos",
+   "descripcion": "Cuadro comparativo de reparto de temperaturas interior en zona de cabeza, pecho y pies con y sin climatizador — Fuente: Audi 100_1991_Climatizador.pdf, pág. 9",
+   "hecha": false
+  },
+  {
+   "nombre": "NT569_01",
+   "nt": 569,
+   "titulo": "Unidad de control para el ventilador del líquido refrigerante",
+   "seccion": "Por ubicar",
+   "descripcion": "Unidad de control para el ventilador del líquido refrigerante J293 y conector con terminales de diseño modificado — Fuente: Unidad Ventilador VAG.pdf, pág. 41",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -2506,7 +2530,7 @@
    "hecha": false
   }
  ],
- "total": 554,
+ "total": 561,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -3756,6 +3780,73 @@
      "titulo": "Imágenes requeridas",
      "texto": "Comparativa de temperaturas en cabeza, tórax y pies en un vehículo con y sin climatizador bajo radiación solar — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 4",
      "html": "<ul>\n<li>Comparativa de temperaturas en cabeza, tórax y pies en un vehículo con y sin climatizador bajo radiación solar — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 4</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.higrometria-y-confort.audi-100-1991-climatizador",
+   "nt": 566,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "higrometria-y-confort",
+   "seccion": "2. Fundamentos",
+   "subgrupo": "",
+   "titulo": "Bienestar e higrometría en el habitáculo",
+   "codigo": "",
+   "menu": "Bienestar e higrometría en el habitácu",
+   "grupo": "Distribución de aire",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Audi 100_1991_Climatizador.pdf, págs. 9",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "",
+   "relacionados": [
+    "circuito-frigorifico",
+    "evaporador"
+   ],
+   "palabras": [
+    "bienestar",
+    "confort térmico",
+    "radiación solar",
+    "humedad"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Definir las condiciones térmicas y de humedad del aire necesarias dentro del habitáculo para garantizar el bienestar de los ocupantes y mantener la capacidad de concentración y seguridad activa del conductor. (pág. 9)",
+     "html": "<p>Definir las condiciones térmicas y de humedad del aire necesarias dentro del habitáculo para garantizar el bienestar de los ocupantes y mantener la capacidad de concentración y seguridad activa del conductor. <span class=\"pag\">pág. 9</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Las temperaturas elevadas y la alta humedad relativa reducen la concentración del conductor. El climatizador crea un ambiente térmico equilibrado, deshidratando y depurando el aire sin recurrir a corrientes de aire directas ni generar ruidos molestos. (pág. 9)",
+     "html": "<p>Las temperaturas elevadas y la alta humedad relativa reducen la concentración del conductor. El climatizador crea un ambiente térmico equilibrado, deshidratando y depurando el aire sin recurrir a corrientes de aire directas ni generar ruidos molestos. <span class=\"pag\">pág. 9</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El sistema regula la temperatura y la humedad tanto con el vehículo parado como en marcha. Durante el paso del aire exterior por el evaporador, las láminas húmedas retienen las partículas de polvo y polen, las cuales se expulsan al exterior disueltas en el agua de condensación. (pág. 9)",
+     "html": "<p>El sistema regula la temperatura y la humedad tanto con el vehículo parado como en marcha. Durante el paso del aire exterior por el evaporador, las láminas húmedas retienen las partículas de polvo y polen, las cuales se expulsan al exterior disueltas en el agua de condensación. <span class=\"pag\">pág. 9</span></p>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Condiciones de prueba: vehículo expuesto al sol tras breve recorrido con 30 ºC exteriores a la sombra. (pág. 9) Temperatura en cabeza (zona alta): 23 ºC con climatizador frente a 42 ºC sin climatizador. (pág. 9) Temperatura en pecho: 24 ºC con climatizador frente a 40 ºC sin climatizador. (pág. 9) Temperatura en pies: 30 ºC con climatizador frente a 35 ºC sin climatizador. (pág. 9)",
+     "html": "<ul>\n<li>Condiciones de prueba: vehículo expuesto al sol tras breve recorrido con 30 ºC exteriores a la sombra. <span class=\"pag\">pág. 9</span></li>\n<li>Temperatura en cabeza (zona alta): 23 ºC con climatizador frente a 42 ºC sin climatizador. <span class=\"pag\">pág. 9</span></li>\n<li>Temperatura en pecho: 24 ºC con climatizador frente a 40 ºC sin climatizador. <span class=\"pag\">pág. 9</span></li>\n<li>Temperatura en pies: 30 ºC con climatizador frente a 35 ºC sin climatizador. <span class=\"pag\">pág. 9</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Asumir que la apertura de ventanillas o del techo solar sustituye las funciones de confort y deshidratación de un climatizador regulado. (pág. 9)",
+     "html": "<ul>\n<li>Asumir que la apertura de ventanillas o del techo solar sustituye las funciones de confort y deshidratación de un climatizador regulado. <span class=\"pag\">pág. 9</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Cuadro comparativo de reparto de temperaturas interior en zona de cabeza, pecho y pies con y sin climatizador — Fuente: Audi 100_1991_Climatizador.pdf, pág. 9",
+     "html": "<ul>\n<li>Cuadro comparativo de reparto de temperaturas interior en zona de cabeza, pecho y pies con y sin climatizador — Fuente: Audi 100_1991_Climatizador.pdf, pág. 9</li>\n</ul>"
     }
    ]
   },
@@ -5346,6 +5437,191 @@
    ]
   },
   {
+   "id": "ssc.ciclo-frigorifico.audi-100-1991-climatizador",
+   "nt": 563,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ciclo-frigorifico",
+   "seccion": "2. Fundamentos",
+   "subgrupo": "",
+   "titulo": "Bases físicas y presión de vapor en climatización",
+   "codigo": "",
+   "menu": "Bases físicas y presión de vapor en cl",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Audi 100_1991_Climatizador.pdf, págs. 2-4",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r134a"
+   ],
+   "palabras": [
+    "estados de agregación",
+    "ebullición",
+    "presión absoluta",
+    "sobrepresión"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Explicar las bases físicas de los cambios de estado de agregación en los agentes frigoríficos y la relación existente entre la presión ejercida y la temperatura de ebullición. (págs. 2-4)",
+     "html": "<p>Explicar las bases físicas de los cambios de estado de agregación en los agentes frigoríficos y la relación existente entre la presión ejercida y la temperatura de ebullición. <span class=\"pag\">págs. 2-4</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El principio de refrigeración se basa en la absorción y cesión de calor durante los cambios de estado de agregación de la sustancia de trabajo. Los agentes frigoríficos presentan cuatro estados de agregación: gaseoso (invisible), evaporado, líquido y sólido. (págs. 2-3)",
+     "html": "<p>El principio de refrigeración se basa en la absorción y cesión de calor durante los cambios de estado de agregación de la sustancia de trabajo. Los agentes frigoríficos presentan cuatro estados de agregación: gaseoso (invisible), evaporado, líquido y sólido. <span class=\"pag\">págs. 2-3</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Cuando una sustancia absorbe calor cambia de estado; el vapor visible se convierte en gas invisible al seguir absorbiendo energía térmica. El proceso es reversible mediante la extracción de calor. El punto de ebullición de un líquido varía en función de la presión ejercida sobre él: a mayor presión corresponde una temperatura de ebullición más elevada. Para cada agente frigorífico existe una tabla y una curva característica de presión de vapor. Midiendo simultáneamente la presión y la temperatura de un recipiente cerrado, es posible determinar con precisión de qué agente frigorífico se trata. La presión atmosférica normal equivale a 1 bar de presión absoluta (0 bar de sobrepresión en la escala del manómetro). (págs. 2-4)",
+     "html": "<p>Cuando una sustancia absorbe calor cambia de estado; el vapor visible se convierte en gas invisible al seguir absorbiendo energía térmica. El proceso es reversible mediante la extracción de calor.</p>\n<p>El punto de ebullición de un líquido varía en función de la presión ejercida sobre él: a mayor presión corresponde una temperatura de ebullición más elevada. Para cada agente frigorífico existe una tabla y una curva característica de presión de vapor. Midiendo simultáneamente la presión y la temperatura de un recipiente cerrado, es posible determinar con precisión de qué agente frigorífico se trata.</p>\n<p>La presión atmosférica normal equivale a 1 bar de presión absoluta (0 bar de sobrepresión en la escala del manómetro). <span class=\"pag\">págs. 2-4</span></p>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Unidades de presión: 1 MPa (Mega-Pascal) = 10 bares de sobrepresión (145 psi). (pág. 2) Presión de vapor de R134a a -25 ºC: 0,06 bares de sobrepresión. (pág. 4) Presión de vapor de R134a a 0 ºC: 1,92 bares de sobrepresión. (pág. 4) Presión de vapor de R134a a 20 ºC: 4,70 bares de sobrepresión. (pág. 4) Presión de vapor de R134a a 80 ºC: 25,21 bares de sobrepresión. (pág. 4)",
+     "html": "<ul>\n<li>Unidades de presión: 1 MPa (Mega-Pascal) = 10 bares de sobrepresión (145 psi). <span class=\"pag\">pág. 2</span></li>\n<li>Presión de vapor de R134a a -25 ºC: 0,06 bares de sobrepresión. <span class=\"pag\">pág. 4</span></li>\n<li>Presión de vapor de R134a a 0 ºC: 1,92 bares de sobrepresión. <span class=\"pag\">pág. 4</span></li>\n<li>Presión de vapor de R134a a 20 ºC: 4,70 bares de sobrepresión. <span class=\"pag\">pág. 4</span></li>\n<li>Presión de vapor de R134a a 80 ºC: 25,21 bares de sobrepresión. <span class=\"pag\">pág. 4</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Confundir la presión absoluta (donde 0 bar es el vacío absoluto) con la sobrepresión de los manómetros de taller (donde 0 bar equivale a 1 bar absoluto atmosférico). (págs. 2-3)",
+     "html": "<ul>\n<li>Confundir la presión absoluta (donde 0 bar es el vacío absoluto) con la sobrepresión de los manómetros de taller (donde 0 bar equivale a 1 bar absoluto atmosférico). <span class=\"pag\">págs. 2-3</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Gráfico de los estados de agregación y curva de presión de vapor para el agente frigorífico R134a — Fuente: Audi 100_1991_Climatizador.pdf, pág. 3",
+     "html": "<ul>\n<li>Gráfico de los estados de agregación y curva de presión de vapor para el agente frigorífico R134a — Fuente: Audi 100_1991_Climatizador.pdf, pág. 3</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.ciclo-frigorifico.audi-100-1991-climatizador-2",
+   "nt": 567,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ciclo-frigorifico",
+   "seccion": "2. Fundamentos",
+   "subgrupo": "",
+   "titulo": "Principio de funcionamiento del climatizador",
+   "codigo": "",
+   "menu": "Principio de funcionamiento del climat",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Audi 100_1991_Climatizador.pdf, págs. 10",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "evaporador",
+    "compresor",
+    "condensador"
+   ],
+   "palabras": [
+    "transferencia de calor",
+    "evaporación",
+    "compresión",
+    "condensación"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Explicar el proceso de transporte y evacuación del calor del habitáculo hacia el aire ambiente exterior mediante un circuito cerrado de agente frigorífico. (pág. 10)",
+     "html": "<p>Explicar el proceso de transporte y evacuación del calor del habitáculo hacia el aire ambiente exterior mediante un circuito cerrado de agente frigorífico. <span class=\"pag\">pág. 10</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Dado que la energía térmica se difunde naturalmente desde las zonas calientes hacia las más frías, se genera un punto de baja temperatura en el habitáculo para que el agente frigorífico absorba el calor al evaporarse ininterrumpidamente. (pág. 10)",
+     "html": "<p>Dado que la energía térmica se difunde naturalmente desde las zonas calientes hacia las más frías, se genera un punto de baja temperatura en el habitáculo para que el agente frigorífico absorba el calor al evaporarse ininterrumpidamente. <span class=\"pag\">pág. 10</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Absorción de calor: El aire del habitáculo atraviesa el evaporador; el agente frigorífico entra en ebullición y absorbe la energía térmica del aire. (pág. 10) Elevación de temperatura: El compresor aspira el gas caliente a baja presión y lo comprime. La compresión eleva su presión y su temperatura por encima de la temperatura del aire ambiente exterior. (pág. 10) Cesión de calor: El gas caliente a alta presión pasa al condensador. Debido a la diferencia de temperatura con el aire exterior, cede su calor y se liquida. (pág. 10) Retorno: El agente frigorífico en estado líquido regresa al evaporador para reiniciar el ciclo de transporte térmico. (pág. 10)",
+     "html": "<ol>\n<li><strong>Absorción de calor:</strong> El aire del habitáculo atraviesa el evaporador; el agente frigorífico entra en ebullición y absorbe la energía térmica del aire. <span class=\"pag\">pág. 10</span></li>\n<li><strong>Elevación de temperatura:</strong> El compresor aspira el gas caliente a baja presión y lo comprime. La compresión eleva su presión y su temperatura por encima de la temperatura del aire ambiente exterior. <span class=\"pag\">pág. 10</span></li>\n<li><strong>Cesión de calor:</strong> El gas caliente a alta presión pasa al condensador. Debido a la diferencia de temperatura con el aire exterior, cede su calor y se liquida. <span class=\"pag\">pág. 10</span></li>\n<li><strong>Retorno:</strong> El agente frigorífico en estado líquido regresa al evaporador para reiniciar el ciclo de transporte térmico. <span class=\"pag\">pág. 10</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Creer que el climatizador introduce aire frío en el vehículo, cuando su función física real es extraer el calor presente en el habitáculo e impelerlo al exterior. (pág. 10)",
+     "html": "<ul>\n<li>Creer que el climatizador introduce aire frío en el vehículo, cuando su función física real es extraer el calor presente en el habitáculo e impelerlo al exterior. <span class=\"pag\">pág. 10</span></li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.ciclo-frigorifico.audi-100-1991-climatizador-3",
+   "nt": 568,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ciclo-frigorifico",
+   "seccion": "2. Fundamentos",
+   "subgrupo": "",
+   "titulo": "Normas de seguridad y prevención de riesgos en el manejo de agentes frigoríficos",
+   "codigo": "",
+   "menu": "Normas de seguridad y prevención de ri",
+   "grupo": "PRL y seguridad",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Audi 100_1991_Climatizador.pdf, págs. 11-15",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "general",
+   "sistema": "prl-y-seguridad",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r134a"
+   ],
+   "palabras": [
+    "seguridad laboral",
+    "depósitos presurizados",
+    "congelación",
+    "descomposición tóxica"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Establecer las medidas de seguridad y prevención de riesgos laborales necesarias para la manipulación de agentes frigoríficos, recipientes a presión y equipos de servicio en el taller. (págs. 11-15)",
+     "html": "<p>Establecer las medidas de seguridad y prevención de riesgos laborales necesarias para la manipulación de agentes frigoríficos, recipientes a presión y equipos de servicio en el taller. <span class=\"pag\">págs. 11-15</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El agente frigorífico R134a se almacena como gas licuado a presión. Un manejo inadecuado provoca riesgos graves de congelación por contacto, asfixia por desplazamiento de aire, intoxicación por descomposición térmica o explosión de depósitos por dilatación del líquido. (págs. 11-14)",
+     "html": "<p>El agente frigorífico R134a se almacena como gas licuado a presión. Un manejo inadecuado provoca riesgos graves de congelación por contacto, asfixia por desplazamiento de aire, intoxicación por descomposición térmica o explosión de depósitos por dilatación del líquido. <span class=\"pag\">págs. 11-14</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Protección individual: Uso obligatorio de gafas de protección con solapas laterales y guantes resistentes. Disponer de una botella de agua para enjuague ocular en el área de trabajo. (págs. 13-14) Manipulación de recipientes: Asegurar las botellas contra caídas o deslizamientos. No llenar recipientes por encima del factor de llenado (1,15 kg/l) para mantener la cámara de expansión de gas. No calentar botellas ni exponerlas al sol directo. (págs. 12-14) Prevención de toxicidad: Prohibición absoluta de fumar o realizar trabajos de soldadura cerca de componentes del circuito. Las llamas o arcos volticos descomponen el R134a en gases tóxicos e irritantes. (págs. 11, 14) Condiciones del taller: Trabajar en zonas bien ventiladas con los sistemas de aspiración activados. Prohibido manipular o almacenar gas en recintos subterráneos, fosos o bajadas de ventanas. (págs. 13-14) Horno de secado de pintura: Si se introduce un vehículo con el circuito lleno en un horno de secado, la temperatura máxima de los componentes no debe superar 80 ºC para evitar sobrepresiones y la apertura de la válvula de descarga. Si se supera esa temperatura, vaciar previamente el gas. (págs. 14-15)",
+     "html": "<ul>\n<li><strong>Protección individual:</strong> Uso obligatorio de gafas de protección con solapas laterales y guantes resistentes. Disponer de una botella de agua para enjuague ocular en el área de trabajo. <span class=\"pag\">págs. 13-14</span></li>\n<li><strong>Manipulación de recipientes:</strong> Asegurar las botellas contra caídas o deslizamientos. No llenar recipientes por encima del factor de llenado (1,15 kg/l) para mantener la cámara de expansión de gas. No calentar botellas ni exponerlas al sol directo. <span class=\"pag\">págs. 12-14</span></li>\n<li><strong>Prevención de toxicidad:</strong> Prohibición absoluta de fumar o realizar trabajos de soldadura cerca de componentes del circuito. Las llamas o arcos volticos descomponen el R134a en gases tóxicos e irritantes. <span class=\"pag\">págs. 11, 14</span></li>\n<li><strong>Condiciones del taller:</strong> Trabajar en zonas bien ventiladas con los sistemas de aspiración activados. Prohibido manipular o almacenar gas en recintos subterráneos, fosos o bajadas de ventanas. <span class=\"pag\">págs. 13-14</span></li>\n<li><strong>Horno de secado de pintura:</strong> Si se introduce un vehículo con el circuito lleno en un horno de secado, la temperatura máxima de los componentes no debe superar 80 ºC para evitar sobrepresiones y la apertura de la válvula de descarga. Si se supera esa temperatura, vaciar previamente el gas. <span class=\"pag\">págs. 14-15</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Temperatura máxima admisible de los componentes con el circuito lleno en hornos de secado: 80 ºC. (pág. 14) Factor de llenado máximo permitido en botellas presurizadas: 1,15 kg/l. (pág. 12)",
+     "html": "<ul>\n<li>Temperatura máxima admisible de los componentes con el circuito lleno en hornos de secado: 80 ºC. <span class=\"pag\">pág. 14</span></li>\n<li>Factor de llenado máximo permitido en botellas presurizadas: 1,15 kg/l. <span class=\"pag\">pág. 12</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Intentar reparar tuberías o componentes de aluminio dañados mediante soldadura sin evacuar totalmente el agente frigorífico. (pág. 14) Llenar un recipiente de gas por completo en estado líquido sin dejar espacio para la dilatación térmica. (pág. 14)",
+     "html": "<ul>\n<li>Intentar reparar tuberías o componentes de aluminio dañados mediante soldadura sin evacuar totalmente el agente frigorífico. <span class=\"pag\">pág. 14</span></li>\n<li>Llenar un recipiente de gas por completo en estado líquido sin dejar espacio para la dilatación térmica. <span class=\"pag\">pág. 14</span></li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.refrigerante-r134a.208-climatizadores-en-los-vehic",
    "nt": 541,
    "modulo": "ssc",
@@ -5409,6 +5685,78 @@
      "titulo": "Imágenes requeridas",
      "texto": "Gráfico de la curva de presión de vapor y extracto del diagrama de estados de agregación del R134a — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 11",
      "html": "<ul>\n<li>Gráfico de la curva de presión de vapor y extracto del diagrama de estados de agregación del R134a — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 11</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.refrigerante-r134a.audi-100-1991-climatizador",
+   "nt": 564,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "refrigerante-r134a",
+   "seccion": "3. Fluidos",
+   "subgrupo": "",
+   "titulo": "Agente frigorífico R134a",
+   "codigo": "",
+   "menu": "Agente frigorífico R134a",
+   "grupo": "Fluidos frigoríficos",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Audi 100_1991_Climatizador.pdf, págs. 4-7",
+   "clase": "fluido",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "fluidos-frigorificos",
+   "formaParteDe": "",
+   "relacionados": [
+    "aceite-frigorifico",
+    "ciclo-frigorifico"
+   ],
+   "palabras": [
+    "tetrafluoretano",
+    "punto de ebullición",
+    "presión de vapor",
+    "factor de llenado"
+   ],
+   "apartados": [
+    {
+     "titulo": "Designación y norma",
+     "texto": "Agente frigorífico R134a (tetrafluoretano, fórmula química CH2F-CF3 / CF3-CH2F). Pertenece a los hidrocarburos parcialmente fluorados sin cloro (H-FKW / H-CF). Nombres comerciales autorizados: H-FKW 134a, SUVA 134a, KLEA 134a. (págs. 4-5)",
+     "html": "<p>Agente frigorífico R134a (tetrafluoretano, fórmula química CH2F-CF3 / CF3-CH2F). Pertenece a los hidrocarburos parcialmente fluorados sin cloro (H-FKW / H-CF). Nombres comerciales autorizados: H-FKW 134a, SUVA 134a, KLEA 134a. <span class=\"pag\">págs. 4-5</span></p>"
+    },
+    {
+     "titulo": "Propiedades",
+     "texto": "Incoloro como el agua en estado líquido o de vapor; invisible en estado gaseoso. (pág. 5) Punto de ebullición a 1 bar (presión atmosférica): -26,5 ºC. (pág. 4) Punto de solidificación: -101,6 ºC. (pág. 4) Temperatura crítica: 100,6 ºC (presión crítica: 40,56 bares absolutos). Mantiene estabilidad química hasta 39,5 bares de sobrepresión (101 ºC). (págs. 4, 6) El agua es soluble en el R134a líquido en cantidades muy reducidas. Al saturarse el deshidratador (aprox. 7 gramos de agua retenidos), la humedad se congela en la tobera de la válvula de expansión o estrangulador bloqueando la refrigeración y generando ácidos corrosivos. (pág. 6) Incombustible, con efecto ignífugo. Se descompone bajo llama, superficies incandescentes o radiación ultravioleta de soldadura, produciendo vapores tóxicos. (pág. 6)",
+     "html": "<ul>\n<li>Incoloro como el agua en estado líquido o de vapor; invisible en estado gaseoso. <span class=\"pag\">pág. 5</span></li>\n<li>Punto de ebullición a 1 bar (presión atmosférica): -26,5 ºC. <span class=\"pag\">pág. 4</span></li>\n<li>Punto de solidificación: -101,6 ºC. <span class=\"pag\">pág. 4</span></li>\n<li>Temperatura crítica: 100,6 ºC (presión crítica: 40,56 bares absolutos). Mantiene estabilidad química hasta 39,5 bares de sobrepresión (101 ºC). <span class=\"pag\">págs. 4, 6</span></li>\n<li>El agua es soluble en el R134a líquido en cantidades muy reducidas. Al saturarse el deshidratador (aprox. 7 gramos de agua retenidos), la humedad se congela en la tobera de la válvula de expansión o estrangulador bloqueando la refrigeración y generando ácidos corrosivos. <span class=\"pag\">pág. 6</span></li>\n<li>Incombustible, con efecto ignífugo. Se descompone bajo llama, superficies incandescentes o radiación ultravioleta de soldadura, produciendo vapores tóxicos. <span class=\"pag\">pág. 6</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Dónde se usa y cantidades",
+     "texto": "Se utiliza en el circuito cerrado de climatización como medio de transporte de calor por evaporación y condensación. El factor de llenado máximo regulado para recipientes presurizados es de 1,15 kg por cada litro de volumen interior. (págs. 4, 6)",
+     "html": "<p>Se utiliza en el circuito cerrado de climatización como medio de transporte de calor por evaporación y condensación. El factor de llenado máximo regulado para recipientes presurizados es de 1,15 kg por cada litro de volumen interior. <span class=\"pag\">págs. 4, 6</span></p>"
+    },
+    {
+     "titulo": "Compatibilidades y mezclas prohibidas",
+     "texto": "Prohibido mezclar con otros agentes frigoríficos (como el R12). Las impurezas con compuestos clorados atacan metales y plásticos, formando incrustaciones y obstrucciones en los émbolos del compresor. (págs. 5-6)",
+     "html": "<p>Prohibido mezclar con otros agentes frigoríficos (como el R12). Las impurezas con compuestos clorados atacan metales y plásticos, formando incrustaciones y obstrucciones en los émbolos del compresor. <span class=\"pag\">págs. 5-6</span></p>"
+    },
+    {
+     "titulo": "Identificación",
+     "texto": "Invisible como gas e incoloro como líquido. Componentes y envases identificados mediante inscripciones y adhesivos de color verde. (págs. 5, 42)",
+     "html": "<p>Invisible como gas e incoloro como líquido. Componentes y envases identificados mediante inscripciones y adhesivos de color verde. <span class=\"pag\">págs. 5, 42</span></p>"
+    },
+    {
+     "titulo": "Manipulación, almacenamiento y residuos",
+     "texto": "Asegurar las botellas contra caídas o volcamientos. Almacenar en lugares bien ventilados. Prohibida la evacuación a la atmósfera; el gas debe extraerse por aspiración con estación de servicio y envasarse en botellas de reciclaje. (págs. 6, 12-13, 40)",
+     "html": "<p>Asegurar las botellas contra caídas o volcamientos. Almacenar en lugares bien ventilados. Prohibida la evacuación a la atmósfera; el gas debe extraerse por aspiración con estación de servicio y envasarse en botellas de reciclaje. <span class=\"pag\">págs. 6, 12-13, 40</span></p>"
+    },
+    {
+     "titulo": "Riesgos y normativa",
+     "texto": "Riesgo de congelaciones locales en la piel al contacto con líquido (-26,5 ºC). Riesgo de asfixia por desplazamiento de oxígeno en espacios cerrados o fosos. Prohibición de fumar durante su manipulación. (págs. 11-12)",
+     "html": "<p>Riesgo de congelaciones locales en la piel al contacto con líquido (-26,5 ºC). Riesgo de asfixia por desplazamiento de oxígeno en espacios cerrados o fosos. Prohibición de fumar durante su manipulación. <span class=\"pag\">págs. 11-12</span></p>"
     }
    ]
   },
@@ -6961,6 +7309,78 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema de distribución del porcentaje de aceite en los componentes del circuito de climatización — Fuente: Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, pág. 14",
      "html": "<ul>\n<li>Esquema de distribución del porcentaje de aceite en los componentes del circuito de climatización — Fuente: Nuevos_Refrigerantes_Automoción_Guía_Profesional.pdf, pág. 14</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.aceite-frigorifico.pag.audi-100-1991-climatizador",
+   "nt": 565,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "aceite-frigorifico",
+   "seccion": "3. Fluidos",
+   "subgrupo": "",
+   "titulo": "Aceite para máquinas frigoríficas PAG",
+   "codigo": "",
+   "menu": "Aceite para máquinas frigoríficas PAG",
+   "grupo": "Fluidos frigoríficos",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Audi 100_1991_Climatizador.pdf, págs. 8-9",
+   "clase": "fluido",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "pag",
+   "area": "climatizacion",
+   "sistema": "fluidos-frigorificos",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r134a",
+    "compresor"
+   ],
+   "palabras": [
+    "polialquilenglicol",
+    "higroscópico",
+    "viscosidad",
+    "lubricación"
+   ],
+   "apartados": [
+    {
+     "titulo": "Designación y norma",
+     "texto": "Aceite sintético especial de tipo PAG (poli-alquilen-glicol) diseñado exclusivamente para circuitos de climatización de vehículos que utilizan agente frigorífico R134a. (págs. 8-9)",
+     "html": "<p>Aceite sintético especial de tipo PAG (poli-alquilen-glicol) diseñado exclusivamente para circuitos de climatización de vehículos que utilizan agente frigorífico R134a. <span class=\"pag\">págs. 8-9</span></p>"
+    },
+    {
+     "titulo": "Propiedades",
+     "texto": "Elevada capacidad de disolución y miscibilidad con el R134a. (pág. 8) Excelentes propiedades lubricantes, exento de ácidos y con muy bajo contenido de humedad inicial. (págs. 8-9) Altamente higroscópico (absorbe rápidamente la humedad del aire ambiente). Al envejecer por efecto del agua y ácidos, se vuelve oscuro, viscoso y agresivo para los componentes metálicos. (págs. 8-9)",
+     "html": "<ul>\n<li>Elevada capacidad de disolución y miscibilidad con el R134a. <span class=\"pag\">pág. 8</span></li>\n<li>Excelentes propiedades lubricantes, exento de ácidos y con muy bajo contenido de humedad inicial. <span class=\"pag\">págs. 8-9</span></li>\n<li>Altamente higroscópico (absorbe rápidamente la humedad del aire ambiente). Al envejecer por efecto del agua y ácidos, se vuelve oscuro, viscoso y agresivo para los componentes metálicos. <span class=\"pag\">págs. 8-9</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Dónde se usa y cantidades",
+     "texto": "Circula disuelto con el agente frigorífico R134a en una proporción del 20% al 40% (según el modelo de compresor y la carga de gas) para lubricar las partes móviles del compresor. (pág. 8)",
+     "html": "<p>Circula disuelto con el agente frigorífico R134a en una proporción del 20% al 40% (según el modelo de compresor y la carga de gas) para lubricar las partes móviles del compresor. <span class=\"pag\">pág. 8</span></p>"
+    },
+    {
+     "titulo": "Compatibilidades y mezclas prohibidas",
+     "texto": "No es miscible con otros tipos de aceite (aceites minerales de R12, aceites de motor o de cajas de cambio). Prohibido utilizar aceites estéricos (reservados para grandes instalaciones industriales). (págs. 8-9)",
+     "html": "<p>No es miscible con otros tipos de aceite (aceites minerales de R12, aceites de motor o de cajas de cambio). Prohibido utilizar aceites estéricos (reservados para grandes instalaciones industriales). <span class=\"pag\">págs. 8-9</span></p>"
+    },
+    {
+     "titulo": "Identificación",
+     "texto": "Aceite transparente suministrado en envases herméticos específicos autorizados por el fabricante. (págs. 8-9)",
+     "html": "<p>Aceite transparente suministrado en envases herméticos específicos autorizados por el fabricante. <span class=\"pag\">págs. 8-9</span></p>"
+    },
+    {
+     "titulo": "Manipulación, almacenamiento y residuos",
+     "texto": "Mantener los recipientes cerrados herméticamente hasta el momento de su uso y cerrarlos de inmediato tras verter el producto. Deschar envases abiertos durante mucho tiempo. No reutilizar aceite usado. (págs. 8-9)",
+     "html": "<p>Mantener los recipientes cerrados herméticamente hasta el momento de su uso y cerrarlos de inmediato tras verter el producto. Deschar envases abiertos durante mucho tiempo. No reutilizar aceite usado. <span class=\"pag\">págs. 8-9</span></p>"
+    },
+    {
+     "titulo": "Riesgos y normativa",
+     "texto": "Eliminar obligatoriamente como residuo especial de origen desconocido. Prohibido mezclarlo con aceite de motor usado o de transmisiones. (págs. 8, 40)",
+     "html": "<p>Eliminar obligatoriamente como residuo especial de origen desconocido. Prohibido mezclarlo con aceite de motor usado o de transmisiones. <span class=\"pag\">págs. 8, 40</span></p>"
     }
    ]
   },
@@ -41300,6 +41720,67 @@
      "titulo": "Imágenes requeridas",
      "texto": "Vista en despiece de la unidad climática con la ubicación del evaporador, radiador de calefacción, turbina, regulador y motores de trampillas — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 6",
      "html": "<ul>\n<li>Vista en despiece de la unidad climática con la ubicación del evaporador, radiador de calefacción, turbina, regulador y motores de trampillas — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 6</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.unidad-control-electroventiladores.unidad-ventilador-vag",
+   "nt": 569,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "unidad-control-electroventiladores",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Unidad de control para el ventilador del líquido refrigerante",
+   "codigo": "J293",
+   "menu": "Unidad de control para el vent J293",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Unidad Ventilador VAG.pdf, págs. 41",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "transmisor-presion",
+    "electroventilador-condensador",
+    "embrague-compresor",
+    "bomba-recirculacion-liquido-refrigerante"
+   ],
+   "palabras": [
+    "J293",
+    "PWM",
+    "transmisor G65",
+    "electroventilador",
+    "acoplamiento electromagnético",
+    "cronorruptor"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Procesar las señales de entrada para la activación y desactivación de los escalones de velocidad del ventilador del radiador y del acoplamiento electromagnético para el compresor del climatizador, además de vigilar la temperatura del líquido refrigerante. (pág. 41)",
+     "html": "<p>Procesar las señales de entrada para la activación y desactivación de los escalones de velocidad del ventilador del radiador y del acoplamiento electromagnético para el compresor del climatizador, además de vigilar la temperatura del líquido refrigerante. <span class=\"pag\">pág. 41</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Va integrada en el conjunto interconectado de unidades de control del vehículo. Existen versiones variantes de la conmutación en las que sus funciones se integran directamente en la unidad de control para el climatizador. En la versión de nueva generación, ha sido revisada técnicamente y adaptada en sus funciones para trabajar conjuntamente con el transmisor de alta presión G65, caracterizándose por el diseño modificado de sus terminales de conector. Puede incorporar un módulo cronorruptor para excitar el funcionamiento de la bomba de reflujo de líquido refrigerante V51 (por ejemplo, en el motor 1,8 l 5V / 165 kW). (pág. 41)",
+     "html": "<p>Va integrada en el conjunto interconectado de unidades de control del vehículo. Existen versiones variantes de la conmutación en las que sus funciones se integran directamente en la unidad de control para el climatizador.\nEn la versión de nueva generación, ha sido revisada técnicamente y adaptada en sus funciones para trabajar conjuntamente con el transmisor de alta presión G65, caracterizándose por el diseño modificado de sus terminales de conector. Puede incorporar un módulo cronorruptor para excitar el funcionamiento de la bomba de reflujo de líquido refrigerante V51 (por ejemplo, en el motor 1,8 l 5V / 165 kW). <span class=\"pag\">pág. 41</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "En la versión variante básica, recibe e interpreta señales de entrada procedentes del termoconmutador F18, del conmutador de presión F129 y del panel de mandos e indicación E87 (en versiones con climatizador automático). En la versión adaptada al transmisor de alta presión G65, analiza la señal modulada en anchura de los impulsos (PWM) emitida por dicho transmisor para vigilar de forma continua toda el área de presión del circuito frigorífico. Mantiene un intercambio bidireccional de señales con las unidades de control del motor y del cambio. (pág. 41)",
+     "html": "<p>En la versión variante básica, recibe e interpreta señales de entrada procedentes del termoconmutador F18, del conmutador de presión F129 y del panel de mandos e indicación E87 (en versiones con climatizador automático).\nEn la versión adaptada al transmisor de alta presión G65, analiza la señal modulada en anchura de los impulsos (PWM) emitida por dicho transmisor para vigilar de forma continua toda el área de presión del circuito frigorífico. Mantiene un intercambio bidireccional de señales con las unidades de control del motor y del cambio. <span class=\"pag\">pág. 41</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Unidad de control para el ventilador del líquido refrigerante J293 y conector con terminales de diseño modificado — Fuente: Unidad Ventilador VAG.pdf, pág. 41",
+     "html": "<ul>\n<li>Unidad de control para el ventilador del líquido refrigerante J293 y conector con terminales de diseño modificado — Fuente: Unidad Ventilador VAG.pdf, pág. 41</li>\n</ul>"
     }
    ]
   },
