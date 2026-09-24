@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">424 notas · 24/09/2026</p>
+  <p class="sidebar-meta">425 notas · 24/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -336,7 +336,7 @@
     <li><a href="#nt85">NT85 · Diagnóstico de ruidos anómalos en el c</a></li>
     <li><a href="#nt86">NT86 · Sustitución de un compresor nuevo y pr</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
-    <li><a href="#grp-autodiagnostico-climatizador">Autodiagnóstico del sistema de climatización automática <span class="menu-cuenta">4 fuentes</span></a></li>
+    <li><a href="#grp-autodiagnostico-climatizador">Autodiagnóstico del sistema de climatización automática <span class="menu-cuenta">5 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Normativa y medioambiente</span></li>
     <li><a href="#nt88">NT88 · Normativa de gases fluorados y regulac</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
@@ -13047,10 +13047,10 @@ El aceite acumulado en el fondo es progresivamente succionado por el pequeño or
   </section>
 
   <div class="grupo-componente" id="grp-autodiagnostico-climatizador">
-    <div class="grupo-cab"><span class="grupo-nombre">Autodiagnóstico del sistema de climatización automática</span><span class="grupo-cuenta">4 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Autodiagnóstico del sistema de climatización automática</span><span class="grupo-cuenta">5 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 4 · NT87 · 15. Diágnostico y averías.pdf, págs. 133-134</summary>
+      <summary>Variante 1 de 5 · NT87 · 15. Diágnostico y averías.pdf, págs. 133-134</summary>
   <section id="nt87" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 87 <span class="subtipo">Diagnóstico</span></div>
     <div class="nota-body proceso">
@@ -13103,7 +13103,7 @@ El aceite acumulado en el fondo es progresivamente succionado por el pequeño or
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 4 · NT168 · Audi A5 Coupé_2008_aire acondicionado.pdf, págs. 4-11</summary>
+      <summary>Variante 2 de 5 · NT168 · Audi A5 Coupé_2008_aire acondicionado.pdf, págs. 4-11</summary>
   <section id="nt168" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 168 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -13155,7 +13155,7 @@ Velocidad del vehículo no superior a 5 km/h para ejecutar la diagnosis de actua
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 4 · NT207 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 34-38</summary>
+      <summary>Variante 3 de 5 · NT207 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 34-38</summary>
   <section id="nt207" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 207 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -13199,7 +13199,7 @@ Código de tipo de equipo en función: 220 = Autoclima, 110 = Calefacción motor
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 4 · NT354 · ZZ15. Diágnostico y averías.pdf, págs. 133-134</summary>
+      <summary>Variante 4 de 5 · NT354 · ZZ15. Diágnostico y averías.pdf, págs. 133-134</summary>
   <section id="nt354" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 354 <span class="subtipo">Diagnóstico</span></div>
     <div class="nota-body proceso">
@@ -13255,6 +13255,131 @@ Código de tipo de equipo en función: 220 = Autoclima, 110 = Calefacción motor
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">ZZ15. Diágnostico y averías.pdf, págs. 133-134</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 5 de 5 · NT425 · averí́as clima ibizaIII ASY.pdf, págs. 1-7</summary>
+  <section id="nt425" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 425 <span class="subtipo">Diagnóstico</span><span class="fusionado">SEAT</span></div>
+    <div class="nota-body proceso">
+      <h1>Tabla de averías del aire acondicionado — <strong>J301</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Umbral de caída de tensión en la red de a bordo (avería 01273): inferior a 9,5 V.</li>
+<li>Umbral de tensión excesiva en la red de a bordo (avería 01273): superior a 15 V.</li>
+<li>Retención de memoria: el contenido de la memoria se conserva hasta su borrado. Las averías en el BUS de datos se borran automáticamente al quedar la señal libre de errores. (págs. 1, 5, 7)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Registro de códigos de avería en la memoria de la unidad de mandos del aire acondicionado -J301- consultados con el equipo de diagnosis -VAG 1551-. Presencia de averías esporádicas identificadas en la pantalla con el sufijo "/SP". (págs. 1-7)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>Código 00538 (Tensión de referencia):<ul>
+<li>Señal demasiado alta: cortocircuito o interrupción en los cables o conectores hacia la unidad -J301-.</li>
+<li>Señal demasiado baja: motor regulador de la trampilla de temperatura -V68- o motor de la trampilla de aire fresco/recirculación -V154- defectuoso, o unidad de control -J301- defectuosa.</li>
+</ul>
+</li>
+<li>Código 00576 (Borne 15):<ul>
+<li>Señal excesiva: regulador de tensión del alternador defectuoso, o cables/conectores de -J301- defectuosos.</li>
+<li>Señal insuficiente: batería agotada, alternador defectuoso, o cables/conectores de -J301- defectuosos.</li>
+<li>Interrupción/cortocircuito con masa: interrupción o cortocircuito a masa en los cables o conectores de -J301-.</li>
+</ul>
+</li>
+<li>Código 00705 (Relé para el ventilador del radiador nivel 1 -J279-, integrado en la unidad -J293-):<ul>
+<li>Cortocircuito con positivo o interrupción/cortocircuito a masa en los cables/conectores hacia la unidad de control del ventilador -J293-, o unidad -J293- defectuosa.</li>
+</ul>
+</li>
+<li>Código 00706 (Relé para el ventilador del radiador nivel 2 -J513-, integrado en la unidad -J293-):<ul>
+<li>Cortocircuito con positivo o interrupción/cortocircuito a masa en los cables/conectores hacia la unidad de control del ventilador -J293-, o unidad -J293- defectuosa.</li>
+</ul>
+</li>
+<li>Código 00796 (Turbina de aire para termosensor -V42-):<ul>
+<li>Turbina de aire para termosensor -V42- bloqueada, sin tensión /SP, o averiada.</li>
+</ul>
+</li>
+<li>Código 00819 (Transmisor de alta presión -G65-):<ul>
+<li>Cortocircuito con positivo, interrupción/cortocircuito a masa, o señal demasiado alta: defecto en cables/conectores hacia -G65-, o sensor -G65- defectuoso.</li>
+<li>Señal demasiado baja: interrupción/cortocircuito a masa en cables hacia -G65- y -J301-, fallo en el circuito de refrigerante (presión excesivamente alta o baja), válvula de regulación del compresor -N280- defectuosa, o unidad -J301- defectuosa.</li>
+</ul>
+</li>
+<li>Código 00898 (Activación del compresor de aire acondicionado):<ul>
+<li>Cortocircuito a masa, interrupción/cortocircuito a positivo: defecto en cables/conectores a la válvula de regulación -N280-, válvula -N280- defectuosa, o unidad -J301- defectuosa.</li>
+</ul>
+</li>
+<li>Código 01233 (Válvula de cierre para el refrigerante -N279-):<ul>
+<li>Cortocircuito a positivo, o interrupción/cortocircuito a masa en cables/conectores a -N279-, o válvula -N279- defectuosa.</li>
+</ul>
+</li>
+<li>Código 01271 (Motor regulador para la trampilla de temperatura -V68-):<ul>
+<li>Cortocircuito a positivo/masa, bloqueado o sin corriente, límite de ajuste excedido o no alcanzado: fallo en cables/conectores hacia -V68-, motor -V68- defectuoso, o trampilla de temperatura atascada.</li>
+<li>No se ha realizado el ajuste: configuración básica (función 04) no ejecutada o incorrecta.</li>
+</ul>
+</li>
+<li>Código 01273 (Turbina de aire fresco -V2-):<ul>
+<li>Diferencia de regulación /SP, bloqueada o sin tensión /SP, corto con positivo /SP: cortocircuito o interrupción en cable entre -V2-, unidad de control de la turbina -J126- y/o -E87-, falta de alimentación/masa hacia -J126-, -J126- averiada, o turbina -V2- averiada.</li>
+<li>Alimentación de tensión muy baja /SP: caída de tensión en la red de a bordo a valores inferiores a 9,5 V, o resistencia de contacto/interrupción en la alimentación de -V2-.</li>
+<li>Alimentación de tensión muy alta /SP: tensión en la red de a bordo superior a 15 V, o empleo de un cargador de batería inadecuado.</li>
+</ul>
+</li>
+<li>Código 01296 (Transmisor de temperatura para difusor central -G191-):<ul>
+<li>Interrupción/cortocircuito a polo positivo o cortocircuito a masa: no hay montado ningún -G191-, defecto en cables/conectores, o -G191- defectuoso.</li>
+</ul>
+</li>
+<li>Código 01297 (Transmisor de temperatura para difusor zona reposapiés -G192-):<ul>
+<li>Interrupción/cortocircuito a polo positivo o cortocircuito a masa: no hay montado ningún -G192-, defecto en cables/conectores, o -G192- defectuoso.</li>
+</ul>
+</li>
+<li>Código 01299 (Interfaz de diagnóstico para el bus de datos -J533- / Gateway, integrado en -J519-):<ul>
+<li>Sin comunicación o consultar la memoria de fallos: fallo en cables del BUS de datos, unidad -J519- incorrecta o defectuosa, o fallo registrado en el Gateway.</li>
+</ul>
+</li>
+<li>Código 01314 (Unidad de control del motor):<ul>
+<li>Consultar la memoria de fallos: fallos almacenados en la memoria de averías de la unidad del motor.</li>
+</ul>
+</li>
+<li>Código 01317 (Unidad de control para el cuadro de instrumentos -J285-):<ul>
+<li>Consultar memoria de averías / señal no plausible: fallos en cables del BUS de datos, o cuadro de instrumentos incorrecto/defectuoso.</li>
+</ul>
+</li>
+<li>Código 01596 (Motor regulador para la trampilla de aire fresco/recirculación -V154-):<ul>
+<li>Cortocircuito a positivo/masa, bloqueo o sin corriente, límite de ajuste excedido o no alcanzado: defecto en cables/conectores hacia -V154-, trampilla de recirculación atascada, o motor -V154- defectuoso.</li>
+<li>No se ha realizado el ajuste: configuración básica (función 04) no realizada o incorrecta.</li>
+</ul>
+</li>
+<li>Código 65535 (Unidad de control defectuosa):<ul>
+<li>Unidad de control para el aire acondicionado -J301- defectuosa. (págs. 1-7)</li>
+</ul>
+</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo separar las causas</div>
+        <ul>
+<li>Comprobaciones previas: antes de sustituir cualquier componente, verificar sus conectores e inspeccionar el cableado según el esquema eléctrico respecto a cortocircuito e interrupción. Antes de cambiar la unidad -J301-, comprobar la alimentación de tensión y masa.</li>
+<li>Avería 00538 (Tensión de referencia baja): consultar los grupos de valores de medición 004 y. Ejecutar la diagnosis de actuadores (función 03). Desenchufar sucesivamente los conectores de los motores reguladores -V68- y -V154-, borrar la memoria de fallos y volver a consultar; el motor que vuelva a registrar el fallo al reconectarlo debe ser sustituido.</li>
+<li>Avería 00819 (-G65-): consultar el grupo de valores de medición. Si la señal es demasiado baja, seguir la localización de averías sin autodiagnóstico para determinar si la causa es el circuito de refrigerante, la válvula -N280- o la unidad -J301-.</li>
+<li>Avería 00898 (Activación de -N280-): consultar el grupo de valores de medición 002 y ejecutar el diagnóstico de actuadores (función 03).</li>
+<li>Averías de motores de trampillas (-V68- y -V154-): consultar el grupo de valores de medición correspondiente (005 para V68; 004 para V154), realizar la diagnosis del actuador (función 03) y comprobar mecánicamente si la trampilla se desplaza sin atrancarse.</li>
+<li>Averías de transmisores de temperatura (-G191- y -G192-): comprobar el grupo 08 ("Leer bloque valores de medición") para verificar el montaje o la señal del sensor.</li>
+<li>Averías de comunicación (-J533-, -J1314-, -J285-): consultar la memoria de fallos de la unidad correspondiente (Gateway en grupo 90, motor en grupo 01, cuadro de instrumentos en grupo 90). (págs. 1-7)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación tras la reparación</div>
+        <ul>
+<li>Tras sustituir componentes, motores reguladores (-V68-, -V154-) o la unidad -J301-, realizar obligatoriamente la configuración básica (función 04).</li>
+<li>Borrar la memoria de fallos y realizar una nueva consulta mediante el equipo de diagnosis para confirmar la ausencia de códigos de avería. (págs. 1, 3, 4, 7)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">averí́as clima ibizaIII ASY.pdf, págs. 1-7</p>
       </div>
     </div>
   </section>
@@ -21473,7 +21598,7 @@ Se montan 4 unidades por asiento:</p>
   </section>
 
   <div class="pie">
-    424 notas técnicas · generado el 24/09/2026.
+    425 notas técnicas · generado el 24/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
