@@ -13,8 +13,7 @@
     `rag/` (`google.genai`, `gemini-2.5-flash`). Allí no se aplica ninguna
     regla específica de la API de Claude.
 - No se propone cambiar de proveedor.
-- **No se ha aplicado nada:** esto es informe más diff propuesto. Coge los
-  bloques que quieras.
+- **Aplicado el 24/09:** A1-A4 y M1-M4. F1-F4 se quedan como están.
 
 ## Resumen
 

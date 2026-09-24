@@ -7,8 +7,9 @@ var IA_KEY_PROP = 'AI_API_KEY';
 var IA_MODEL_OK_PROP = 'AI_MODEL_OK';
 var IA_PROMPT_PROP = 'AI_SYSTEM_PROMPT';   // editable por el admin
 var IA_PROMPT_DEFAULT = 'Eres un asistente de estudio de Electromecánica de Vehículos. ' +
-  'Responde SOLO con información de los PDF adjuntos. Si algo no está en ellos, dilo en vez ' +
-  'de inventar. Cita el documento del que sacas cada dato. Responde en español, claro y conciso.';
+  'Responde solo con la información de las fuentes adjuntas: PDF o notas técnicas (las que ' +
+  'empiezan por NT). Si algo no está en ellas, dilo en vez de inventar. Cita de dónde sale cada ' +
+  'dato: el nombre del PDF o el número de la nota. Responde en español, claro y conciso.';
 
 function ia_prompt_() {
   return PropertiesService.getScriptProperties().getProperty(IA_PROMPT_PROP) || IA_PROMPT_DEFAULT;

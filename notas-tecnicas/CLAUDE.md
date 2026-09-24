@@ -82,14 +82,15 @@ menores: eso pasa por jefatura antes de existir.
 | Carpeta | Qué es |
 |---|---|
 | `entrada/` | donde se suelta el `.md` de NotebookLM; se archiva solo en `procesados/` |
-| `generador/` | `importar.py` (NotebookLM → ficha), `construir.py` (fichas → HTML), `imagenes.py` |
+| `generador/` | `importar_v2.py` (NotebookLM v2 → ficha), `construir.py` (fichas → HTML y `notas.json`), `auditar_fusion.py`, `imagenes.py` |
 | `notas/` | una ficha Markdown por nota, con front-matter |
+| `maestras/` | una nota fusionada por entidad; sustituye a sus fichas |
+| `informes/` | informe por tanda que deja la extensión |
 | `imagenes/` | las capturas, nombradas `NT21_02.jpg` |
 | `web/` | el HTML generado y su copia `.txt` para Google Sites |
-| `prompts/` | el prompt único de NotebookLM |
+| `prompts/` | `notebooklm-v2.md`, el prompt vigente (los antiguos en `prompts/archivo/`) |
 | `FUENTES.md` | qué documentos están procesados |
 | `PENDIENTES.md` | elementos detectados que aún no tienen nota |
-| `puente-nt/` | Apps Script que sube a `imagenes/` las capturas que el alumnado deja en Drive |
 
 ## Cómo se ejecuta
 
@@ -100,13 +101,12 @@ vuelve a commitear. Los push que hace `GITHUB_TOKEN` no disparan otro workflow,
 así que no se reengancha solo.
 
 Si se toca el nombre de esta carpeta hay que tocar a la vez las rutas del
-workflow y `DESTINO` en `puente-nt/Codigo.gs`. Si no, la automatización deja de
-dispararse **en silencio**: no falla, simplemente no ocurre. Ya pasó una vez.
+workflow y `DESTINO` en `datos/Puente.gs`. Si no, la automatización deja de
+dispararse **en silencio**: no falla, simplemente no ocurre.
 
 ## Estado
 
-34 notas (23 de elemento, 11 de proceso), de los manuales de climatización.
-Pendiente: el puente de Drive está escrito pero le falta configurar el token y
-las propiedades del script; hasta entonces las capturas se suben a mano a
-`imagenes/`. Y la publicación en Google Sites sigue siendo un pegado manual
-del `.txt`.
+Fichas v2 en `notas/` (una por PDF y entidad) y maestras fusionadas en
+`maestras/`. El puente (`datos/Puente.gs`) está activo; las capturas entran por
+la pestaña «Capturas» del portal con aprobación en el Panel. La cifra exacta de
+notas, en el registro de `construir.py`.

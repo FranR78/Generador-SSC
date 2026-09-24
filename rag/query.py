@@ -83,12 +83,12 @@ def main():
     mat, meta = load_index()
     hits = search(embed_query(client, question), mat, meta, config.TOP_K)
 
-    prompt = (
-        f"{SYSTEM_PROMPT}\n\n"
-        f"FRAGMENTOS:\n{build_context(hits)}\n\n"
-        f"PREGUNTA: {question}\n\nRESPUESTA:"
+    contenido = f"FRAGMENTOS:\n{build_context(hits)}\n\nPREGUNTA: {question}"
+    resp = client.models.generate_content(
+        model=config.GEN_MODEL,
+        contents=contenido,
+        config=types.GenerateContentConfig(system_instruction=SYSTEM_PROMPT),
     )
-    resp = client.models.generate_content(model=config.GEN_MODEL, contents=prompt)
 
     print("\n" + "=" * 70)
     print(resp.text)

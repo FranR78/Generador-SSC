@@ -11,9 +11,9 @@ No hay que ejecutar nada en el PC ni abrir la terminal.
    documento: el prompt decide por sí mismo qué sale como nota de elemento (una
    pieza que se sustituye) y qué sale como nota de proceso (cómo funciona, cómo
    se hace, cómo se diagnostica). El prompt está en
-   `prompts/notebooklm-unico.md`.
-2. Lanza el prompt y **exporta la respuesta a `.md`**.
-3. Sube ese `.md` a la carpeta **`notas-tecnicas/entrada/`** de este repositorio.
+   `prompts/notebooklm-v2.md` (va en «Configurar conversación» del cuaderno).
+2. Lanza la extensión NotebookLM → GitHub: copia cada respuesta (no la
+   exporta) y la sube sola a **`notas-tecnicas/entrada/`**.
 
 Y ya está. A los dos minutos GitHub ha hecho solo:
 

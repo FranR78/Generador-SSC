@@ -2,7 +2,10 @@
 """Genera el prompt de NotebookLM de una unidad, a partir de sus archivos.
 
     python3 generador/prompt.py ssc-airbag           # a pantalla
-    python3 generador/prompt.py ssc-airbag --guardar # a prompts/ssc-airbag.md
+    python3 generador/prompt.py ssc-airbag --guardar # a prompts/archivo/ssc-airbag.md
+
+HEREDADO: genera los prompts de las plantillas antiguas (ELEMENTO/PROCESO).
+El prompt vigente es prompts/notebooklm-v2.md, escrito a mano.
 
 La gracia es que el prompt no se escribe a mano: sale de curriculo/<modulo>.yml
 (los apartados comunes de todo el módulo) más unidades/<unidad>.yml (lo propio
@@ -179,9 +182,9 @@ def main():
     texto = construir(mod, uni)
 
     if args.guardar:
-        destino = RAIZ / "prompts" / f"{args.unidad}.md"
+        destino = RAIZ / "prompts" / "archivo" / f"{args.unidad}.md"
         destino.write_text(texto, encoding="utf-8")
-        print(f"Generado prompts/{destino.name}")
+        print(f"Generado prompts/archivo/{destino.name}")
     else:
         print(texto)
     return 0

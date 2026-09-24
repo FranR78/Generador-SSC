@@ -1,7 +1,8 @@
 # CLAUDE.md — Generador-SSC (biblioteca PDF + super-manual)
 
 ## 0. Formato de respuesta (regla nº1)
-- Español. Máx ~10 líneas salvo que pida profundidad.
+- Español. Respuestas cortas, que se lean en el móvil sin desplazar; más
+  detalle solo si lo pido.
 - Cierre de tarea: `OK` + checklist de verificación. Nada más.
 - Prohibido: narrar pasos, resumir lo hecho, explicar el código, repetir mi
   petición, preámbulos/cierres ("Perfecto", "He actualizado…", "¿Quieres que…?").
