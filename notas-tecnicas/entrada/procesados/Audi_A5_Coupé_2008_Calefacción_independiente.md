@@ -1,292 +1,224 @@
 ```yaml
 tipo: fundamento
-titulo: Autodiagnóstico de la calefacción independiente
-entidad: autodiagnostico-calefaccion-independiente
+titulo: Prevención de la corrosión por contacto y normas de limpieza
+entidad: prl-y-seguridad
+area: general
+sistema: prl-y-seguridad
+fabricante: Audi
+fuente: "Audi A5 Coupé_2008_Calefacción independiente.pdf"
+paginas: "1-2"
+relacionados: [calefaccion-independiente]
+palabras: [corrosión galvánica, elementos de unión, limpieza, sistema de combustible]
+```
+
+## Objeto
+Prevenir la corrosión galvánica por contacto en componentes de aluminio y garantizar la limpieza rigurosa en las intervenciones del sistema de combustible y de la calefacción independiente. (págs. 1-2)
+
+## Fundamento
+El contacto directo entre materiales metálicos disímiles (como el aluminio y metales no revestidos) origina corrosión galvánica. La entrada de impurezas, partículas de fibra o agua en el sistema de combustible provoca sedimentaciones e irregularidades en la combustión. (págs. 1-2)
+
+## Desarrollo
+Para evitar la corrosión por contacto, en fábrica se instalan únicamente elementos de unión (tornillos, tuercas, remaches, tapones) provistos de un revestimiento aislante especial, combinados con piezas de goma o plástico no conductoras. Los recambios montados deben ser piezas originales comprobadas y compatibles con el aluminio.
+
+Durante los trabajos en el sistema de combustible de la calefacción independiente deben observarse las siguientes reglas de limpieza:
+- Limpiar a fondo los empalmes y sus zonas adyacentes antes de aflojarlos.
+- Depositar las piezas desmontadas sobre superficies limpias (papel o lámina de plástico, nunca trapos que desprendan fibras) y mantenerlas cubiertas.
+- Extraer los recambios de su embalaje protector únicamente en el momento de su instalación.
+- Con el circuito de combustible abierto, queda prohibido trabajar con aire comprimido, mover el vehículo, poner en marcha el motor o activar la calefacción independiente (incluso desde la función de ajuste básico). (págs. 1-2)
+
+## Valores de referencia
+No documentado en fuentes en las páginas 1-2.
+
+## Errores de concepto frecuentes
+- Utilizar paños o trapos convencionales que desprendan fibras para limpiar o cubrir componentes abiertos del sistema de combustible. (pág. 2)
+- Aplicar aire comprimido para limpiar racores o conductos cuando el sistema de combustible se encuentra abierto. (pág. 2)
+
+---
+
+```yaml
+tipo: fundamento
+titulo: Autodiagnosis y gestión de memoria de averías de la calefacción independiente
+entidad: autodiagnostico-climatizador
 area: climatizacion
 sistema: control-climatizacion
 codigo: J364
 fabricante: Audi
 fuente: "Audi A5 Coupé_2008_Calefacción independiente.pdf"
-paginas: "3-10"
-relacionados: [calefaccion-independiente, unidad-control-climatizador]
-palabras: [autodiagnosis, memoria de averías, VAS 5051, J364]
+paginas: "3-6"
+relacionados: [unidad-control-j364]
+palabras: [J364, dirección 18, memoria permanente, averías esporádicas, protección de componentes]
 ```
 
 ## Objeto
-Supervisar el funcionamiento de los componentes y sensores gestionados por la unidad de control para calefacción adicional J364, registrando averías y permitiendo el diagnóstico mediante equipos de diagnosis del taller. (págs. 3-4).
+Explicar el funcionamiento del sistema de autodiagnosis, el registro de fallos en memoria no volátil y el protocolo de protección de componentes en la unidad de control para calefacción adicional J364. (págs. 3-6)
 
 ## Fundamento
-La unidad de control J364 analiza ininterrumpidamente las señales de los sensores e indica las anomalías memorizándolas en su memoria permanente no dependiente de la alimentación de tensión. Distingue entre averías estáticas y esporádicas. (págs. 4-5).
+La unidad de control J364 analiza continuamente las señales registradas por los sensores y supervisa los actuadores del calefactor independiente. Las anomalías detectadas se inscriben en una memoria no volátil que conserva la información independientemente de la tensión de alimentación. (págs. 3-5)
 
 ## Desarrollo
-El diagnóstico se realiza conectando el equipo de diagnosis (VAS 5051 o VAS 5052) con el cable VAS 5051/5A al conector de 16 polos del vehículo con el encendido desconectado, accediendo a la dirección "18 - Calefacción adicional/independiente".
-La transmisión de datos se realiza por transmisión rápida de datos.
-Funciones disponibles en la autodiagnosis:
-- 01 / 001: Consultar la versión de la unidad de control.
-- 02 / 004: Consultar la memoria de averías.
-- 03 / 005: Diagnosis de actuadores.
-- 04 / 006: Ajuste básico.
-- 05 / 004.10: Borrar la memoria de averías.
-- 06 / 022: Finalizar la emisión.
-- 07 / 008 / 07: Codificación de la unidad de control.
-- 08 / 011: Leer bloque de valores de medición.
-- 10 / 012: Adaptación. (págs. 5-8).
+- **Acceso al sistema:** La autodiagnosis se realiza con el equipo de diagnosis (VAS 5051/5052) bajo el código de dirección "18 - Calefacción adicional/independiente". Requiere el encendido conectado para iniciar la comunicación con la interfaz J533; una vez establecida la fase de diagnosis, esta puede continuar con el encendido desconectado. (págs. 5, 8)
+- **Clasificación de averías:** Los fallos se catalogan en estáticos (permanentes) o esporádicos (/SP). Si las condiciones de la avería desaparecen durante un periodo determinado, el registro pasa a esporádico y termina borrándose automáticamente tras un tiempo. Junto a cada código se memorizan las condiciones de entorno (kilometraje, hora, fecha, temperatura del motor, tensión de servicio y régimen). (págs. 4, 8)
+- **Bloqueos especiales:** En caso de impacto con transmisión de la "señal de colisión" por el bus de datos, el sistema se bloquea de inmediato sin registrar ningún fallo explícito. (pág. 9)
+- **Protección de componentes:** Al instalar una calefacción nueva o sustituir la unidad J364, puede activarse el bloqueo por protección de componentes, requiriendo la ejecución de un ciclo de autoadaptación en la localización guiada de averías. (págs. 3-4)
 
 ## Valores de referencia
-Conector de diagnóstico de 16 polos del vehículo.
-Velocidad del vehículo no superior a 5 km/h para ejecutar la función de diagnosis de actuadores. (págs. 6, 8).
+- Código de dirección para equipo de diagnosis: 18 (Calefacción adicional/independiente). (pág. 8)
 
 ## Errores de concepto frecuentes
-Creer que las averías esporádicas son fallos inexistentes o lecturas erróneas del equipo; corresponden a condiciones de avería reales que desaparecieron temporalmente y se identifiican con la indicación /SP, borrándose automáticamente solo si no vuelven a reproducirse durante un periodo prolongado. (págs. 4-5).
+- Intentar realizar la diagnosis de la calefacción independiente utilizando los lectores de averías antiguos V.A.G 1551 o V.A.G 1552. (pág. 4)
+- Esperar un código de avería específico tras un accidente con disparo de la señal de colisión, cuando el sistema realiza un bloqueo directo e incondicional. (pág. 9)
 
 ---
 
 ```yaml
-tipo: componente
-titulo: Bujía de precalentamiento para calefacción
-entidad: bujia-precalentamiento-calefaccion
+tipo: procedimiento
+titulo: Diagnosis de actuadores de la calefacción independiente
+entidad: diagnosis-actuadores
 area: climatizacion
 sistema: calefaccion
-codigo: Q9
-fabricante: Eberspächer
+codigo: J364
+fabricante: Audi
 fuente: "Audi A5 Coupé_2008_Calefacción independiente.pdf"
-paginas: "65, 71-75, 141-142"
-forma_parte_de: calefaccion-independiente
-relacionados: [guardallamas, suplemento-quemador]
-palabras: [bujía de incandescencia, Q9, precalentamiento, vigilancia de llama]
+paginas: "10-11"
+relacionados: [bomba-recirculacion-liquido-refrigerante, bomba-dosificadora-v54, bujia-precalentamiento-q9]
+palabras: [J364, V55, V6, Q9, V54, N279, Z66, prueba estática]
 ```
 
-## Misión
-Inflamar la mezcla de combustible y aire en la cámara de combustión del calefactor independiente durante el proceso de arranque y realizar la vigilancia de la llama en determinadas fases de funcionamiento. (págs. 65, 72-73).
+## Objeto y alcance
+Comprobar secuencialmente la respuesta eléctrica y mecánica de los componentes activados por la unidad de control para calefacción adicional J364 (V55, V6, Q9, V54, G6, N279 y Z66). (págs. 10-11)
 
-## Tipos y características
-Bujía de incandescencia eléctrica con espiga calefactora alimentada a una tensión nominal de 8 V. Absorción de corriente de 9 a 20 A al aplicarle 9 V. (págs. 65, 137).
+## Condiciones previas
+- Tensión de la batería correcta y fusibles en buen estado. (pág. 7)
+- Memoria de averías previamente consultada y subsanada. (pág. 10)
+- Velocidad del vehículo no superior a 5 km/h. (pág. 6)
+- Encendido conectado. (pág. 8)
 
-## Principio de funcionamiento
-Recibe alimentación eléctrica regulada por la unidad de control J364 durante la fase de arranque para alcanzar la temperatura de incandescencia e inflamar el combustible suministrado por la bomba dosificadora V54. Una vez establecida la combustión, se desactiva o pasa a monitorizar la presencia de llama. (págs. 72-73, 142).
+## Equipo y material
+- Sistema de información, medición y diagnóstico de vehículos (VAS 5051 o VAS 5052) con cable de diagnóstico VAS 5051/5A y pinza amperimétrica. (págs. 7, 11)
 
-## Valores de trabajo
-- Tensión nominal: 8 V. (pág. 137).
-- Absorción de corriente: entre 9 A y 20 A a 9 V de tensión continua. (pág. 65).
-- Resistencia nominal: 0,42 a 0,63 Ω a 20 ± 2 ºC de temperatura ambiente. (pág. 65).
+## Pasos
+1. Conectar el equipo de diagnosis al conector de 16 polos con el encendido desconectado. (pág. 7)
+2. Conectar el encendido y seleccionar la dirección "18 - Calefacción adicional/independiente". (págs. 8, 10)
+3. Consultar y corregir las averías memorizadas. (pág. 10)
+4. Seleccionar la función "Diagnosis de actuadores" e iniciar la prueba secuencial. (pág. 10)
+5. Comprobar la bomba de recirculación V55 (activación y desactivación a ritmo de 5 segundos; verificar sonoridad). (pág. 11)
+6. Comprobar la turbina de aire de combustión V6 (activación y desactivación a ritmo de 5 segundos; verificar sonoridad). (pág. 11)
+7. Comprobar la bujía de precalentamiento Q9 (activación durante 5 segundos; medir corriente absorbida con pinza amperimétrica en el conector de alimentación). (pág. 11)
+8. Comprobar la bomba dosificadora V54 (emisión de impulsos audibles durante 10 segundos; no se reactiva al repetir el test si no ha funcionado a plena carga previamente). (págs. 10-11)
+9. Comprobar la bomba de preelevación de combustible G6 (verificar sonoridad de funcionamiento). (pág. 11)
+10. Comprobar la válvula de cierre para líquido refrigerante N279 (excitación intermitente a 0,5 Hz; verificar chasquido audible). (pág. 11)
+11. Comprobar el elemento calefactor de precalentamiento del combustible Z66 (medir consumo de corriente con pinza amperimétrica). (pág. 11)
+12. Consultar nuevamente la memoria de averías al finalizar la secuencia. (pág. 11)
 
-## Anomalías frecuentes
-Desgaste térmico de la espiga de incandescencia, acumulación de carbonilla o sedimentos del combustible, cortocircuito o interrupción eléctrica en sus cables de alimentación. (págs. 76, 142).
+## Valores de referencia
+- Consumo de corriente de la bujía Q9 en frío: hasta aprox. 20 A. (pág. 11)
+- Frecuencia de excitación de la válvula N279: 0,5 Hz. (pág. 11)
+- Consumo de corriente del elemento Z66: hasta aprox. 20 A. (pág. 11)
+- Velocidad límite del vehículo para la prueba: < 5 km/h. (pág. 6)
 
-## Comportamiento en avería
-Si la resistencia de Q9 se encuentra fuera del margen definido, se cancela el proceso de arranque (se realiza 1 repetición de arranque). Si el fallo persiste, se aborta el ciclo, se inscribe la avería en la memoria de la UCE J364 y se desactiva el calefactor tras varias repeticiones. (págs. 76, 88).
+## Verificación final
+Asegurar que la memoria de averías de la unidad J364 permanezca limpia de registros tras completar la prueba de actuadores. (pág. 11)
 
-## Cómo comprobarlo
-1. Desconectar el encendido y desacoplar el conector de 14 polos de la unidad de control J364.
-2. Medir la resistencia en el conector entre el contacto 3 (cable marrón) y el contacto 6 (cable blanco).
-3. El valor teórico debe ser de 0,42 a 0,63 Ω a 20 ± 2 ºC (resistencia en conector inferior a 1 Ω).
-4. Medir el aislamiento midiendo la resistencia entre el contacto 3 y la carcasa del calefactor (valor teórico: sin derivación a masa).
-5. Aplicar una tensión de 9 V CC y verificar con pinza amperimétrica que la absorción de corriente se sitúa entre 9 y 20 A.
-6. Limpiar cuidadosamente la espiga de incandescencia con un cepillo de latón. (págs. 65, 137).
-
-📷 IMAGEN: Esquema del conector de 14 polos indicando los contactos 3 y 6 para la comprobación de la bujía Q9 — Fuente: Audi A5 Coupé_2008_Calefacción independiente.pdf, pág. 65
-
-## Mantenimiento
-Limpiar la espiga de incandescencia con cepillo de latón. Si la bujía Q9 resulta dañada, comprobar y limpiar o sustituir el suplemento del quemador si presenta sedimentos no eliminables. (págs. 137, 142).
+## Seguridad y normativa
+No realizar la prueba de actuadores con el vehículo en circulación a velocidades superiores a 5 km/h para evitar distracciones durante la marcha. (págs. 6, 10)
 
 ---
 
 ```yaml
-tipo: componente
-titulo: Turbina de aire de combustión
-entidad: turbina-aire-combustion
+tipo: procedimiento
+titulo: Ajuste básico de la calefacción independiente
+entidad: ajuste-basico-calefaccion-independiente
 area: climatizacion
-sistema: calefaccion
-codigo: V6
-fabricante: Eberspächer
+sistema: control-climatizacion
+codigo: J364
+fabricante: Audi
 fuente: "Audi A5 Coupé_2008_Calefacción independiente.pdf"
-paginas: "66, 71-82, 143"
-forma_parte_de: calefaccion-independiente
-relacionados: [bomba-dosificadora-v54, bujia-precalentamiento-calefaccion]
-palabras: [turbina de aire, V6, aire de combustión, barrido, ventilador]
+paginas: "12-18"
+relacionados: [unidad-control-j364, mando-distancia-r64, bomba-dosificadora-v54]
+palabras: [J364, grupo 004, grupo 011, grupo 022, grupo 033, grupo 066, llenado conducto]
 ```
 
-## Misión
-Aspirar aire del exterior e impulsarlo de forma regulada hacia la cámara de combustión del calefactor independiente para formar la mezcla carburada y realizar el barrido de gases de escape. (págs. 66, 69, 143).
+## Objeto y alcance
+Ejecutar las funciones de ajuste básico para la autoadaptación del mando a distancia por radiofrecuencia, pruebas de funcionamiento del calefactor y purga inicial del conducto de combustible. (págs. 12-18)
 
-## Tipos y características
-Soplante eléctrico impulsado por motor de corriente continua a 12 V, regulado en tensión por la unidad de control J364. (págs. 66, 69, 136).
+## Condiciones previas
+- Encendido conectado. (pág. 12)
+- Memoria de averías consultada y subsanada previamente. (pág. 12)
+- Nivel de combustible suficiente en el depósito (indicador fuera de la franja roja). (pág. 13)
 
-## Principio de funcionamiento
-Su régimen de giro se regula variando la tensión aplicada por la unidad de control J364 (entre 0 V y 12 V) en coordinación con la frecuencia de la bomba dosificadora V54. Funciona en fases de pre-barrido, arranque, plena carga (12 V), carga parcial (aprox. 5 a 6 V) y ciclo de continuación/post-barrido para enfriamiento (8 a 12 V). (págs. 72-82).
+## Equipo y material
+- Sistema de información, medición y diagnóstico de vehículos (VAS 5051 / VAS 5052) conectado al conector de 16 polos. (pág. 12)
 
-## Valores de trabajo
-- Tensión de alimentación: 0 a 12 V CC.
-- Absorción de corriente: 2 a 3 A a una tensión aplicada de 12 V CC. (pág. 66).
-- Resistencia interna: entre 3 y 6 Ω (hasta 40 Ω si lleva mucho tiempo sin funcionar). (pág. 66).
+## Pasos
+1. Conectar el equipo de diagnosis e iniciar la función "18 - Calefacción adicional/independiente". (pág. 12)
+2. Seleccionar la función "006 - Ajuste básico". (pág. 12)
+3. **Autoadaptación del mando a distancia (Grupo 004):** Introducir el grupo "004". Al mostrar la pantalla "Autoadaptación", oprimir la tecla OFF en el mando a distancia por radiofrecuencia hasta confirmar la indicación "Autoadaptado". (pág. 16)
+4. **Activación de prueba ordinaria (Grupo 011):** Introducir el grupo "011" para iniciar el arranque del calefactor; este se desactiva tras transcurrir el tiempo programado en la pantalla del MMI. (pág. 16)
+5. **Activación de prueba a plena carga (Grupo 022):** Introducir el grupo "022" para operar el calefactor a plena carga fija durante un máximo de 10 minutos (pasa a continuación si el termosensor G18 alcanza ≥ 110 ºC). (pág. 17)
+6. **Desactivación manual (Grupo 033):** Introducir el grupo "033" para interrumpir el funcionamiento del calefactor y de la bomba V54, activando la fase de marcha por inercia/enfriamiento. (pág. 17)
+7. **Llenado del conducto de combustible (Grupo 066):** Desbloquear previamente la función poniendo a "1" el canal de adaptación 36; introducir el grupo "066" para activar la bomba dosificadora V54 durante el tiempo programado en el canal de adaptación 30. (págs. 17-18)
+8. Esperar a la indicación de "Fin" y consultar la memoria de averías. (págs. 13, 18)
 
-## Anomalías frecuentes
-Bloqueo mecánico por suciedad en la toma de aspiración o silenciador, desgaste del motor eléctrico, interrupción o cortocircuito en el bobinado. (págs. 66, 117).
+## Valores de referencia
+- Tiempo de marcha por inercia/enfriamiento en grupo 033: entre 15 y 180 segundos. (pág. 17)
+- Tiempo máximo de funcionamiento en grupo 022: 10 minutos. (pág. 17)
+- Temperatura límite de seguridad en grupo 022: ≥ 110 ºC. (pág. 17)
 
-## Comportamiento en avería
-Imposibilidad de formar la mezcla aire-combustible correcta, generando mala combustión, exceso de CO2 o falta de llama. El sistema aborta el arranque y registra la avería en la unidad de control J364. (págs. 84, 117).
+## Verificación final
+Comprobar que el sistema retorna al estado de reposo sin generar averías memorizadas tras finalizar el ajuste básico. (pág. 13)
 
-## Cómo comprobarlo
-1. Desconectar el encendido y desacoplar el conector de 14 polos de la UCE J364.
-2. Medir la resistencia en el conector entre la celda 13 (cable negro) y la celda 14 (cable marrón) (valor teórico entre 3 y 6 Ω).
-3. Medir la resistencia entre la celda 13 y la carcasa del calefactor (debe ser infinita / sin derivación a masa).
-4. Aplicar una tensión de 12 V CC y verificar con pinza amperimétrica que la corriente absorbida se sitúa entre 2 y 3 A. (págs. 66, 136).
-
-📷 IMAGEN: Medición de la resistencia de la turbina de aire de combustión V6 en el conector de 14 polos — Fuente: Audi A5 Coupé_2008_Calefacción independiente.pdf, pág. 66
-
-## Mantenimiento
-Sustituir la junta entre la turbina de aire de combustión V6 y la carcasa del calefactor en cada desmontaje. Comprobar que el tubo de aspiración y el silenciador no presenten suciedad ni obstrucciones. (págs. 117, 143).
+## Seguridad y normativa
+Si se produce un fallo durante la activación por ajuste básico, la calefacción solo se podrá volver a encender previa desactivación explícita mediante el grupo "033", evitando acumulaciones peligrosas de combustible no quemado en la cámara. (págs. 13, 91)
 
 ---
 
 ```yaml
-tipo: componente
-titulo: Guardallamas
-entidad: guardallamas
+tipo: procedimiento
+titulo: Codificación de la unidad de control para calefacción adicional
+entidad: codificacion-calefaccion-independiente
 area: climatizacion
-sistema: calefaccion
-codigo: G64
-fabricante: Eberspächer
+sistema: control-climatizacion
+codigo: J364
+fabricante: Audi
 fuente: "Audi A5 Coupé_2008_Calefacción independiente.pdf"
-paginas: "66-67, 72-88, 141"
-forma_parte_de: calefaccion-independiente
-relacionados: [bujia-precalentamiento-calefaccion, unidad-control-calefaccion-adicional]
-palabras: [G64, termosensor, detector de llama, resistencia NTC, llama]
+paginas: "21-25"
+relacionados: [unidad-control-j364, interfaz-bus-j533, unidad-bateria-j367]
+palabras: [J364, codificación larga, byte 0, sistema binario, hexadecimal, SVM]
 ```
 
-## Misión
-Detectar la presencia y estabilidad de la llama en la cámara de combustión del calefactor independiente mediante la variación de su resistencia eléctrica según la temperatura existente. (págs. 66, 88).
+## Objeto y alcance
+Configurar la estructura de datos (codificación larga) de la unidad de control J364 según la variante del vehículo, el tipo de motorización y los componentes opcionales instalados. (págs. 21-25)
 
-## Tipos y características
-Sensor de temperatura resistente a altas temperaturas montado en la zona del quemador, dotado de una junta de grafito. (págs. 66, 137, 141).
+## Condiciones previas
+- Calefacción independiente totalmente desactivada. (pág. 22)
+- Memoria de averías consultada, corregida y borrada. (pág. 22)
+- Encendido conectado. (pág. 22)
 
-## Principio de funcionamiento
-Modifica su resistencia eléctrica en función de la temperatura en la cámara de combustión. La unidad de control J364 evalúa constantemente la curva característica de resistencia de G64 para determinar si se ha formado llama ("detectada") o si la temperatura es insuficiente ("no detectada"). (págs. 34, 88).
+## Equipo y material
+- Equipo de diagnosis VAS 5051 / VAS 5052 configurado con la gestión de versiones de software (SVM). (págs. 21-23)
 
-## Valores de trabajo
-- Estado "detectada": temperatura de cámara propia de combustión activa.
-- Estado "no detectada": temperatura inferior a la requerida para el modo de combustión.
-- Límite de interrupción (avería): Resistencia superior a 3040 Ω.
-- Límite de cortocircuito (avería): Resistencia inferior a 780 Ω. (págs. 34, 67).
+## Pasos
+1. Conectar el equipo de diagnosis al conector de 16 polos y seleccionar la dirección "18 - Calefacción adicional/independiente". (págs. 8, 22)
+2. Seleccionar la función "07 - Codificar la unidad de control" (o función "008" según la versión del software). (págs. 6, 22)
+3. Seleccionar la codificación guiada o gestionar el código largo mediante la muestra de bits/bytes. (págs. 21-22)
+4. Configurar las opciones correspondientes al Byte 0:
+   - Desactivación por subtensión (a través del bus de datos mediante J533/J367 o por valor fijo de adaptación). (págs. 22-23)
+   - Presencia de bomba de recirculación V55. (pág. 24)
+   - Presencia de válvula de cierre de líquido refrigerante N279. (pág. 24)
+   - Tipo de motor y combustible (gasolina o diésel). (págs. 24-25)
+   - Presencia de mando a distancia por radiofrecuencia R64. (pág. 25)
+5. Confirmar y guardar la nueva codificación en la unidad J364. (pág. 22)
+6. Finalizar la función y consultar la memoria de averías para verificar la ausencia de fallos de configuración. (págs. 20, 22)
 
-## Anomalías frecuentes
-Deformación por sobrecalentamiento, acumulación de carbonilla, interrupción del cableado o cortocircuito. (págs. 67, 141).
+## Valores de referencia
+- Ejemplo de codificación larga típica (Audi A5 Coupé diésel con V55, N279 y mando a distancia): "\$5D 00 00". (pág. 22)
 
-## Comportamiento en avería
-Si la resistencia de G64 se encuentra fuera de margen durante el ciclo de arranque, se cancela el proceso y se realiza un intento de repetición. Si tras la repetición persiste el fallo, la UCE J364 aborta la puesta en marcha, registra la avería y desactiva el sistema. (págs. 76, 86-87).
+## Verificación final
+Acceder al bloque de valores de medición (grupo de indicación "017", campo 3) para corroborar la recepción y validez del código largo en la unidad J364. (págs. 21, 50)
 
-## Cómo comprobarlo
-1. Desconectar el encendido y desacoplar la carcasa del conector de 14 polos de la unidad de control J364.
-2. Medir la resistencia con un multímetro entre la celda 1 (cable marrón) y la celda 2 (cable marrón).
-3. Evaluar el valor según la temperatura momentánea: si la resistencia es superior a 3040 Ω indica interrupción; si es inferior a 780 Ω indica cortocircuito. (págs. 66-67, 136).
-
-📷 IMAGEN: Gráfica de curva característica resistencia-temperatura para la comprobación del guardallamas G64 — Fuente: Audi A5 Coupé_2008_Calefacción independiente.pdf, pág. 67
-
-## Mantenimiento
-Reemplazar obligatoriamente la junta de grafito por una nueva en cada desmontaje, orientando el lado sin rebarbas hacia el collar del guardallamas G64 e introduciéndola sin aristas vivas. (pág. 141).
+## Seguridad y normativa
+Es imprescindible asegurar que el tipo de motor (gasolina o diésel) codificado en el Byte 0 coincida con el combustible real del vehículo, ya que la unidad de control aplica estrategias de combustión y tiempos de precalentamiento completamente incompatibles entre ambas variantes. (págs. 23, 44)
 
 ---
 
-```yaml
-tipo: componente
-titulo: Termosensor de temperatura del calefactor
-entidad: sensor-temperatura-calefactor
-area: climatizacion
-sistema: calefaccion
-codigo: G18
-fabricante: Eberspächer
-fuente: "Audi A5 Coupé_2008_Calefacción independiente.pdf"
-paginas: "67, 72-90, 139"
-forma_parte_de: calefaccion-independiente
-relacionados: [sensor-temperatura-calefactor-2, unidad-control-calefaccion-adicional]
-palabras: [G18, termosensor, NTC, temperatura del refrigerante, sobrecalentamiento]
-```
-
-## Misión
-Medir la temperatura del líquido refrigerante en el interior del calefactor independiente para regular el rendimiento de la calefacción y proteger la instalación contra sobrecalentamientos. (págs. 67, 77-89, 139).
-
-## Tipos y características
-Sensor de temperatura de tipo NTC (coeficiente de temperatura negativo) montado mediante estribo de sujeción sobre la carcasa del intercambiador de calor y sellado con junta tórica. (págs. 67, 136, 139).
-
-## Principio de funcionamiento
-Disminuye su resistencia eléctrica a medida que aumenta la temperatura del líquido refrigerante en el calefactor. La UCE J364 utiliza esta señal para conmutar los modos de funcionamiento:
-- Menor de 77 ºC: Plena carga (100% potencia calorífica).
-- Alcanza 77 ºC: Conmuta a carga parcial (50% potencia calorífica).
-- Cae por debajo de 60 ºC: Retorna a plena carga.
-- Alcanza 89 ºC: Conmuta a pausa de regulación (desconexión de combustión).
-- Si alcanza 110 ºC o más: Desconexión de seguridad inmediata (OFF). (págs. 18, 77-80).
-
-## Valores de trabajo
-- Rango de medición normal NTC según curva característica:
-  - A 20 ºC: aprox. 12 a 15 kΩ.
-  - A 80 ºC: aprox. 1,5 a 2,5 kΩ.
-  - A 100 ºC: aprox. 1 kΩ.
-- Límite de interrupción (avería): Resistencia superior a 2 MΩ.
-- Límite de cortocircuito (avería): Resistencia inferior a 50 Ω. (pág. 67).
-
-## Anomalías frecuentes
-Fallo de estanqueidad de la junta tórica (fuga de refrigerante), degradación del elemento NTC, cortocircuito o interrupción de los cables. (págs. 67, 139).
-
-## Comportamiento en avería
-El equipo de diagnosis muestra la indicación "fallo" en el grupo de medición 002 campo 1. Se interrumpe el funcionamiento del calefactor por seguridad y se registra la avería en la unidad J364. (págs. 31, 67).
-
-## Cómo comprobarlo
-1. Desconectar el encendido y desacoplar la carcasa del conector de 14 polos de la UCE J364.
-2. Medir la resistencia eléctrica entre la celda 10 (cable negro) y la celda 11 (cable negro).
-3. Comparar el valor medido con la curva característica según la temperatura del líquido en ese momento.
-4. Si la resistencia es mayor a 2 MΩ existe interrupción; si es menor a 50 Ω existe cortocircuito. (págs. 67, 136).
-
-📷 IMAGEN: Curva característica de resistencia NTC en función de la temperatura para el termosensor G18 — Fuente: Audi A5 Coupé_2008_Calefacción independiente.pdf, pág. 67
-
-## Mantenimiento
-Sustituir el anillo toroidal de goma en cada desmontaje, humedeciéndolo ligeramente con líquido refrigerante antes de la instalación. (pág. 139).
-
----
-
-```yaml
-tipo: componente
-titulo: Termosensor 2 para calefactor y calefacción independiente
-entidad: sensor-temperatura-calefactor-2
-area: climatizacion
-sistema: calefaccion
-codigo: G587
-fabricante: Eberspächer
-fuente: "Audi A5 Coupé_2008_Calefacción independiente.pdf"
-paginas: "67-68, 140"
-forma_parte_de: calefaccion-independiente
-relacionados: [sensor-temperatura-calefactor, unidad-control-calefaccion-adicional]
-palabras: [G587, termosensor 2, vigilancia redundante, sobretemperatura]
-```
-
-## Misión
-Proporcionar una segunda medición redundante de la temperatura del líquido refrigerante en el intercambiador de calor para verificar la plausibilidad del sensor G18 y garantizar la protección térmica redundante del calefactor. (págs. 67, 140).
-
-## Tipos y características
-Termosensor NTC montado mediante estribo de sujeción e integrado en el conector de 14 polos de la unidad J364. (págs. 68, 136).
-
-## Principio de funcionamiento
-Varía su resistencia eléctrica de forma inversamente proporcional a la temperatura del refrigerante. La UCE J364 compara la señal de G587 con la de G18; si detecta una incoherencia de valores o un gradiente de temperatura excesivo, desactiva el calefactor. (págs. 31, 68).
-
-## Valores de trabajo
-- Curva característica NTC de resistencia frente a temperatura (idéntica a G18).
-- Límite de interrupción (avería): Resistencia superior a 2 MΩ.
-- Límite de cortocircuito (avería): Resistencia inferior a 50 Ω. (pág. 68).
-
-## Anomalías frecuentes
-Interrupción del cableado, cortocircuito interno, desviación de la curva de tolerancia. (pág. 68).
-
-## Comportamiento en avería
-Muestra "fallo" en el bloque de valores de medición 002 campo 3. Provoca la desactivación de seguridad del sistema de calefacción independiente para evitar daños por sobrecalentamiento no detectado. (págs. 31, 68).
-
-## Cómo comprobarlo
-1. Desconectar el encendido y desacoplar la carcasa del conector de 14 polos de la UCE J364.
-2. Medir la resistencia entre la celda 7 (cable blanco) y la celda 8 (cable blanco).
-3. Verificar que la resistencia medida se corresponde con la temperatura actual mediante la gráfica de curva NTC.
-4. Valorar interrupción si R > 2 MΩ o cortocircuito si R < 50 Ω. (págs. 67-68, 136).
-
-📷 IMAGEN: Curva de resistencia en kΩ según la temperatura en ºC para el termosensor G587 — Fuente: Audi A5 Coupé_2008_Calefacción independiente.pdf, pág. 68
-
-## Mantenimiento
-Revisar el estado de los cables blancos y asegurar la correcta fijación del estribo de sujeción al montar. (págs. 136, 140).
-
-COBERTURA: documento «Audi A5 Coupé_2008_Calefacción independiente.pdf», páginas 1 a 68 de 149. [queda pendiente desde la página 68]
+COBERTURA: documento «Audi A5 Coupé_2008_Calefacción independiente.pdf», páginas 1 a 25 de 149. queda pendiente desde la página 26
