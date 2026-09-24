@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-24",
- "total": 381,
+ "total": 392,
  "grupos": [
   "Acceso y arranque",
   "Calefacción",
@@ -8197,6 +8197,63 @@
    ]
   },
   {
+   "id": "ssc.evaporador.5-el-circuito-de-aire",
+   "nt": 383,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "evaporador",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "",
+   "titulo": "Evaporador",
+   "codigo": "",
+   "menu": "Evaporador",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "5. EL CIRCUITO DE AIRE.pptx, págs. 11",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "valvula-expansion",
+    "compresor",
+    "filtro-deshidratador"
+   ],
+   "palabras": [
+    "evaporador",
+    "refrigeracion",
+    "condensacion",
+    "deshumectacion",
+    "bolsa de hielo"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Enfriar y deshumificar el aire que lo atraviesa antes de enviarlo al habitáculo. (pág. 11)",
+     "html": "<p>Enfriar y deshumificar el aire que lo atraviesa antes de enviarlo al habitáculo. <span class=\"pag\">pág. 11</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Intercambiador de calor de tubos y aletas integrado en la caja climatizadora. Denominado internamente como la «bolsa de hielo» del sistema. (pág. 11)",
+     "html": "<p>Intercambiador de calor de tubos y aletas integrado en la caja climatizadora. Denominado internamente como la «bolsa de hielo» del sistema. <span class=\"pag\">pág. 11</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El refrigerante que se evapora en su interior absorbe el calor del aire impulsado por el ventilador. La humedad presente en el aire se condensa sobre sus aletas frías, canalizándose y expulsándose al exterior del vehículo. (pág. 11)",
+     "html": "<p>El refrigerante que se evapora en su interior absorbe el calor del aire impulsado por el ventilador. La humedad presente en el aire se condensa sobre sus aletas frías, canalizándose y expulsándose al exterior del vehículo. <span class=\"pag\">pág. 11</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Evaporador de climatización junto a la caja de distribución de aire — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 11",
+     "html": "<ul>\n<li>Evaporador de climatización junto a la caja de distribución de aire — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 11</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.deposito-colector.baja.9-filtro-deshidratadores",
    "nt": 57,
    "modulo": "ssc",
@@ -13505,6 +13562,173 @@
    ]
   },
   {
+   "id": "ssc.servomotor-trampilla.recirculacion.5-el-circuito-de-aire",
+   "nt": 385,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "servomotor-trampilla",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Trampilla de recirculación",
+   "codigo": "",
+   "menu": "Trampilla de recirculación",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "5. EL CIRCUITO DE AIRE.pptx, págs. 13-14",
+   "clase": "componente",
+   "variante": "recirculacion",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "ventilador-habitaculo",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "trampilla reciclaje",
+    "recirculacion",
+    "rele doble paleta",
+    "modulo electronico",
+    "aire exterior"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Seleccionar el origen del caudal de aire aspirado por el ventilador, conmutando entre la entrada de aire exterior o el reciclado del aire del habitáculo. (pág. 13)",
+     "html": "<p>Seleccionar el origen del caudal de aire aspirado por el ventilador, conmutando entre la entrada de aire exterior o el reciclado del aire del habitáculo. <span class=\"pag\">pág. 13</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Trampilla orientable accionada mecánicamente (manual) o mediante motor eléctrico. En sistemas eléctricos se emplean principalmente dos tipos de gobierno: Gobierno mediante relé de doble paleta. Gobierno mediante módulo electrónico. (págs. 13-14)",
+     "html": "<p>Trampilla orientable accionada mecánicamente (manual) o mediante motor eléctrico. En sistemas eléctricos se emplean principalmente dos tipos de gobierno:</p>\n<ul>\n<li>Gobierno mediante relé de doble paleta.</li>\n<li>Gobierno mediante módulo electrónico. <span class=\"pag\">págs. 13-14</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Con relé de doble paleta: el motor de reciclaje actúa solo en los topes extremos (sin posiciones intermedias). Al seleccionar la posición de aire acondicionado MAX en el mando, se conmuta a masa el relé de doble paleta, cerrando la entrada de aire exterior. Con módulo electrónico: el módulo detecta la masa de la paleta en posición 0 o en posición MAX del A/A y acciona el motor por inversión de polaridad para cambiar el flujo. (pág. 14)",
+     "html": "<ul>\n<li>Con relé de doble paleta: el motor de reciclaje actúa solo en los topes extremos (sin posiciones intermedias). Al seleccionar la posición de aire acondicionado MAX en el mando, se conmuta a masa el relé de doble paleta, cerrando la entrada de aire exterior.</li>\n<li>Con módulo electrónico: el módulo detecta la masa de la paleta en posición 0 o en posición MAX del A/A y acciona el motor por inversión de polaridad para cambiar el flujo. <span class=\"pag\">pág. 14</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del flujo de aire en caja climatizadora en modo recirculación (aire exterior cerrado) — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 13 Circuitos de mando de la trampilla de reciclaje mediante relé de doble paleta y por módulo electrónico — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 14",
+     "html": "<ul>\n<li>Esquema del flujo de aire en caja climatizadora en modo recirculación (aire exterior cerrado) — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 13</li>\n<li>Circuitos de mando de la trampilla de reciclaje mediante relé de doble paleta y por módulo electrónico — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 14</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.servomotor-trampilla.mezcla.5-el-circuito-de-aire",
+   "nt": 386,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "servomotor-trampilla",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Trampilla de mezcla",
+   "codigo": "",
+   "menu": "Trampilla de mezcla",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "5. EL CIRCUITO DE AIRE.pptx, págs. 15",
+   "clase": "componente",
+   "variante": "mezcla",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "radiador-calefaccion",
+    "evaporador"
+   ],
+   "palabras": [
+    "trampilla de mezcla",
+    "proporcion aire",
+    "caliente frio",
+    "cable",
+    "paso a paso"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Regular la proporción de aire frío y caliente canalizado hacia el habitáculo, sustituyendo el uso de grifos de calefacción. (pág. 15)",
+     "html": "<p>Regular la proporción de aire frío y caliente canalizado hacia el habitáculo, sustituyendo el uso de grifos de calefacción. <span class=\"pag\">pág. 15</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Trampilla deflectora situada entre el evaporador y el radiador de calefacción. Su accionamiento se realiza mediante: Cable bowden (mando manual). Motor eléctrico de excitación o motor paso a paso (mando electrónico). (págs. 15)",
+     "html": "<p>Trampilla deflectora situada entre el evaporador y el radiador de calefacción. Su accionamiento se realiza mediante:</p>\n<ul>\n<li>Cable bowden (mando manual).</li>\n<li>Motor eléctrico de excitación o motor paso a paso (mando electrónico). <span class=\"pag\">págs. 15</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Modifica gradualmente su ángulo de apertura para desviar una parte del aire frío (procedente del evaporador) a través del radiador de calefacción y dejar pasar directamente la otra parte, mezclándose ambas corrientes antes de salir al habitáculo. (pág. 15)",
+     "html": "<p>Modifica gradualmente su ángulo de apertura para desviar una parte del aire frío (procedente del evaporador) a través del radiador de calefacción y dejar pasar directamente la otra parte, mezclándose ambas corrientes antes de salir al habitáculo. <span class=\"pag\">pág. 15</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema de derivación de aire por la trampilla de mezcla hacia el aerotermo o en baipás directo — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 15",
+     "html": "<ul>\n<li>Esquema de derivación de aire por la trampilla de mezcla hacia el aerotermo o en baipás directo — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 15</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.servomotor-trampilla.distribucion-aire.5-el-circuito-de-aire",
+   "nt": 387,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "servomotor-trampilla",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Trampillas de repartición de aire",
+   "codigo": "",
+   "menu": "Trampillas de repartición de aire",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "5. EL CIRCUITO DE AIRE.pptx, págs. 16",
+   "clase": "componente",
+   "variante": "distribucion-aire",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "trampillas reparticion",
+    "distribucion aire",
+    "difusores",
+    "desempañado",
+    "aireacion"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Dirigir la corriente de aire tratada hacia las distintas salidas del habitáculo (parabrisas/desempañado, difusores frontales y zona de pies). (pág. 16)",
+     "html": "<p>Dirigir la corriente de aire tratada hacia las distintas salidas del habitáculo (parabrisas/desempañado, difusores frontales y zona de pies). <span class=\"pag\">pág. 16</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Conjunto de trampillas situadas en los canales de salida de la caja climática. Pueden ser accionadas de forma: Manual. Neumática. Eléctrica. (pág. 16)",
+     "html": "<p>Conjunto de trampillas situadas en los canales de salida de la caja climática. Pueden ser accionadas de forma:</p>\n<ul>\n<li>Manual.</li>\n<li>Neumática.</li>\n<li>Eléctrica. <span class=\"pag\">pág. 16</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Bloquean o liberan el paso de aire en las distintas canalizaciones según la selección del usuario o de la unidad de control, permitiendo salidas individuales o combinadas. (pág. 16)",
+     "html": "<p>Bloquean o liberan el paso de aire en las distintas canalizaciones según la selección del usuario o de la unidad de control, permitiendo salidas individuales o combinadas. <span class=\"pag\">pág. 16</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Disposición de las trampillas de distribución dirigiéndose a las salidas de parabrisas, frontal y pies — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 16",
+     "html": "<ul>\n<li>Disposición de las trampillas de distribución dirigiéndose a las salidas de parabrisas, frontal y pies — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 16</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.ventilador-habitaculo.cd-072-climatizacion-en-el-ibiza-cordoba",
    "nt": 200,
    "modulo": "ssc",
@@ -13648,6 +13872,68 @@
      "titulo": "Mantenimiento",
      "texto": "Asegurar que el disipador de aluminio del módulo está limpio dentro del conducto de aire. (pág. 126).",
      "html": "<p>Asegurar que el disipador de aluminio del módulo está limpio dentro del conducto de aire. <span class=\"pag\">pág. 126</span>.</p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.ventilador-habitaculo.5-el-circuito-de-aire",
+   "nt": 382,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ventilador-habitaculo",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Ventilador del habitáculo",
+   "codigo": "",
+   "menu": "Ventilador del habitáculo",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "5. EL CIRCUITO DE AIRE.pptx, págs. 6-10",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "evaporador",
+    "radiador-calefaccion"
+   ],
+   "palabras": [
+    "ventilador",
+    "soplador",
+    "resistencias en serie",
+    "modulo electronico",
+    "impulsor"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Impulsar el aire exterior o reciclado a través del grupo climatizador hacia el habitáculo. (pág. 6)",
+     "html": "<p>Impulsar el aire exterior o reciclado a través del grupo climatizador hacia el habitáculo. <span class=\"pag\">pág. 6</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Existen dos tipos de montajes para la regulación de velocidad del motor eléctrico del ventilador: Montaje con resistencias en serie. Montaje con módulo electrónico. (pág. 6)",
+     "html": "<p>Existen dos tipos de montajes para la regulación de velocidad del motor eléctrico del ventilador:</p>\n<ul>\n<li>Montaje con resistencias en serie.</li>\n<li>Montaje con módulo electrónico. <span class=\"pag\">pág. 6</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Montaje con resistencias en serie: varía la tensión de alimentación aplicada al motor haciéndola pasar por diferentes resistencias fijas. En la posición de máxima velocidad, un relé alimenta directamente el motor a 12 V sin pasar por la red de resistencias. Montaje con módulo electrónico: el mando selector dispone de resistencias para que el módulo identifique la posición midiendo la diferencia de tensión entre las vías A y B. El motor trabaja por diferencia de potencial entre bornes: alimentado con 12 V fijos en un borne, el módulo ajusta la tensión aplicada en el otro borne (por ejemplo, 12 V en un borne y 3 V en el otro generan una tensión de trabajo de 9 V). (págs. 7, 10)",
+     "html": "<ul>\n<li>Montaje con resistencias en serie: varía la tensión de alimentación aplicada al motor haciéndola pasar por diferentes resistencias fijas. En la posición de máxima velocidad, un relé alimenta directamente el motor a 12 V sin pasar por la red de resistencias.</li>\n<li>Montaje con módulo electrónico: el mando selector dispone de resistencias para que el módulo identifique la posición midiendo la diferencia de tensión entre las vías A y B. El motor trabaja por diferencia de potencial entre bornes: alimentado con 12 V fijos en un borne, el módulo ajusta la tensión aplicada en el otro borne (por ejemplo, 12 V en un borne y 3 V en el otro generan una tensión de trabajo de 9 V). <span class=\"pag\">págs. 7, 10</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tensión nominal de alimentación fija: 12 V. (pág. 10)",
+     "html": "<ul>\n<li>Tensión nominal de alimentación fija: 12 V. <span class=\"pag\">pág. 10</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema eléctrico de control de ventilador con resistencias en serie y relé de velocidad máxima — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 8 Esquema eléctrico de control de ventilador mediante módulo electrónico de transistores — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 9",
+     "html": "<ul>\n<li>Esquema eléctrico de control de ventilador con resistencias en serie y relé de velocidad máxima — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 8</li>\n<li>Esquema eléctrico de control de ventilador mediante módulo electrónico de transistores — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 9</li>\n</ul>"
     }
    ]
   },
@@ -15335,6 +15621,68 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema de la topología de red de climatización del Audi A7 mostrando las conexiones CAN, LIN y MOST — Fuente: SSP 484 A7 Info y Clima (arrastrado).pdf, pág. 52",
      "html": "<ul>\n<li>Esquema de la topología de red de climatización del Audi A7 mostrando las conexiones CAN, LIN y MOST — Fuente: SSP 484 A7 Info y Clima (arrastrado).pdf, pág. 52</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.regulacion-automatica.5-el-circuito-de-aire",
+   "nt": 392,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-automatica",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Sistemas de regulación de climatización",
+   "codigo": "",
+   "menu": "Sistemas de regulación de climatizació",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "5. EL CIRCUITO DE AIRE.pptx, págs. 21-23",
+   "clase": "fundamento",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "servomotor-trampilla",
+    "ventilador-habitaculo"
+   ],
+   "palabras": [
+    "climatizacion manual",
+    "semiautomatica",
+    "automatica",
+    "confort",
+    "oscilaciones temperatura"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Gestionar la temperatura y el caudal de aire impulsado para mantener las condiciones de confort en el habitáculo. (pág. 21)",
+     "html": "<p>Gestionar la temperatura y el caudal de aire impulsado para mantener las condiciones de confort en el habitáculo. <span class=\"pag\">pág. 21</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Evolución de los sistemas de mando según la capacidad de autorregulación del equipo frente a las variaciones térmicas exteriores e interiores. (págs. 21-23)",
+     "html": "<p>Evolución de los sistemas de mando según la capacidad de autorregulación del equipo frente a las variaciones térmicas exteriores e interiores. <span class=\"pag\">págs. 21-23</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Existen tres niveles de equipamiento: Climatizaciones manuales: el usuario reajusta constantemente los mandos mecánicos. Esto genera marcadas oscilaciones en la temperatura real del habitáculo respecto al valor deseado. Climatizaciones semi-automáticas: la temperatura se regula de forma automática pero la velocidad o distribución del aire se gestiona manualmente. Climatizaciones automáticas: la unidad de control gestiona las trampillas de mezcla, distribución y la velocidad del ventilador. Logra oscilaciones de temperatura muy pequeñas alrededor del consignado de confort (por ejemplo, 21 ºC) y estabiliza el clima en función de la temperatura exterior. (págs. 21-23)",
+     "html": "<p>Existen tres niveles de equipamiento:</p>\n<ul>\n<li>Climatizaciones manuales: el usuario reajusta constantemente los mandos mecánicos. Esto genera marcadas oscilaciones en la temperatura real del habitáculo respecto al valor deseado.</li>\n<li>Climatizaciones semi-automáticas: la temperatura se regula de forma automática pero la velocidad o distribución del aire se gestiona manualmente.</li>\n<li>Climatizaciones automáticas: la unidad de control gestiona las trampillas de mezcla, distribución y la velocidad del ventilador. Logra oscilaciones de temperatura muy pequeñas alrededor del consignado de confort (por ejemplo, 21 ºC) y estabiliza el clima en función de la temperatura exterior. <span class=\"pag\">págs. 21-23</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Temperatura de confort de referencia: 21 ºC. (págs. 22-23)",
+     "html": "<ul>\n<li>Temperatura de confort de referencia: 21 ºC. <span class=\"pag\">págs. 22-23</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Gráfica de oscilaciones de temperatura interior en climatización manual frente a la línea de confort — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 22 Gráfica de estabilización de temperatura en climatización automática entorno a los 21 ºC — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 23",
+     "html": "<ul>\n<li>Gráfica de oscilaciones de temperatura interior en climatización manual frente a la línea de confort — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 22</li>\n<li>Gráfica de estabilización de temperatura en climatización automática entorno a los 21 ºC — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 23</li>\n</ul>"
     }
    ]
   },
@@ -26451,6 +26799,300 @@
      "titulo": "Mantenimiento",
      "texto": "Este accesorio debe solicitarse habitualmente al encargar el vehículo a fábrica. En la mayoría de los casos no es posible su montaje posterior como reforma debido a diferencias estructurales en la carrocería trasera. (pág. 114)",
      "html": "<p>Este accesorio debe solicitarse habitualmente al encargar el vehículo a fábrica. En la mayoría de los casos no es posible su montaje posterior como reforma debido a diferencias estructurales en la carrocería trasera. <span class=\"pag\">pág. 114</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.radiador-calefaccion.5-el-circuito-de-aire",
+   "nt": 384,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "radiador-calefaccion",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Radiador de calefacción",
+   "codigo": "",
+   "menu": "Radiador de calefacción",
+   "grupo": "Calefacción",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "5. EL CIRCUITO DE AIRE.pptx, págs. 12",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "calefaccion",
+   "formaParteDe": "circuito-refrigeracion-motor",
+   "relacionados": [
+    "liquido-refrigerante-motor",
+    "servomotor-trampilla"
+   ],
+   "palabras": [
+    "radiador calefaccion",
+    "aerotermo",
+    "aire caliente",
+    "intercambio termico"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Transferir el calor del líquido refrigerante del motor al flujo de aire que entra al habitáculo. (pág. 12)",
+     "html": "<p>Transferir el calor del líquido refrigerante del motor al flujo de aire que entra al habitáculo. <span class=\"pag\">pág. 12</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Intercambiador térmico (aerotermo) montado en el cuerpo de la caja climatizadora a continuación del evaporador. (pág. 12)",
+     "html": "<p>Intercambiador térmico (aerotermo) montado en el cuerpo de la caja climatizadora a continuación del evaporador. <span class=\"pag\">pág. 12</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El líquido refrigerante del motor circula de forma continua por su interior. El aire que lo atraviesa absorbe energía térmica. Según esté activado o no el compresor del aire acondicionado, el aire calentado resultará seco o húmedo. (pág. 12)",
+     "html": "<p>El líquido refrigerante del motor circula de forma continua por su interior. El aire que lo atraviesa absorbe energía térmica. Según esté activado o no el compresor del aire acondicionado, el aire calentado resultará seco o húmedo. <span class=\"pag\">pág. 12</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Radiador de calefacción o aerotermo extraído de la caja de aire — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 12",
+     "html": "<ul>\n<li>Radiador de calefacción o aerotermo extraído de la caja de aire — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 12</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.calentamiento-aire.5-el-circuito-de-aire",
+   "nt": 388,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "calentamiento-aire",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Calentamiento del aire",
+   "codigo": "",
+   "menu": "Calentamiento del aire",
+   "grupo": "Calefacción",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "5. EL CIRCUITO DE AIRE.pptx, págs. 17",
+   "clase": "fundamento",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "calefaccion",
+   "formaParteDe": "",
+   "relacionados": [
+    "radiador-calefaccion",
+    "servomotor-trampilla",
+    "evaporador"
+   ],
+   "palabras": [
+    "calentamiento",
+    "aire caliente",
+    "compresor off",
+    "caudal termico"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Aumentar la temperatura del aire destinado al habitáculo mediante la energía térmica del sistema de refrigeración del motor. (pág. 17)",
+     "html": "<p>Aumentar la temperatura del aire destinado al habitáculo mediante la energía térmica del sistema de refrigeración del motor. <span class=\"pag\">pág. 17</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El aire frío exterior es impulsado a través del evaporador (con el compresor desactivado) y canalizado obligatoriamente por la trampilla de mezcla hacia el radiador de calefacción antes de su distribución. (pág. 17)",
+     "html": "<p>El aire frío exterior es impulsado a través del evaporador (con el compresor desactivado) y canalizado obligatoriamente por la trampilla de mezcla hacia el radiador de calefacción antes de su distribución. <span class=\"pag\">pág. 17</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El compresor permanece desconectado (Compresor Off). El aire procedente del exterior atraviesa el evaporador sin sufrir variación de temperatura. La trampilla de mezcla se posiciona cerrando el paso directo y desviando la totalidad del caudal de aire hacia el radiador de calefacción. Al atravesar el radiador de calefacción, el aire incrementa su temperatura y es derivado a los difusores seleccionados. (pág. 17)",
+     "html": "<ol>\n<li>El compresor permanece desconectado (Compresor Off).</li>\n<li>El aire procedente del exterior atraviesa el evaporador sin sufrir variación de temperatura.</li>\n<li>La trampilla de mezcla se posiciona cerrando el paso directo y desviando la totalidad del caudal de aire hacia el radiador de calefacción.</li>\n<li>Al atravesar el radiador de calefacción, el aire incrementa su temperatura y es derivado a los difusores seleccionados. <span class=\"pag\">pág. 17</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Estado del compresor: Compresor Off. (pág. 17)",
+     "html": "<ul>\n<li>Estado del compresor: Compresor Off. <span class=\"pag\">pág. 17</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Recorrido del aire durante el modo de calentamiento con compresor desconectado — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 17",
+     "html": "<ul>\n<li>Recorrido del aire durante el modo de calentamiento con compresor desconectado — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 17</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.refrigeracion-aire.5-el-circuito-de-aire",
+   "nt": 389,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "refrigeracion-aire",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Refrigeración del aire",
+   "codigo": "",
+   "menu": "Refrigeración del aire",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "5. EL CIRCUITO DE AIRE.pptx, págs. 18",
+   "clase": "fundamento",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "evaporador",
+    "servomotor-trampilla",
+    "radiador-calefaccion"
+   ],
+   "palabras": [
+    "refrigeracion",
+    "aire frio",
+    "compresor on",
+    "humedad habitaculo"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Reducir la temperatura y el nivel de humedad del aire que se introduce en el habitáculo. (pág. 18)",
+     "html": "<p>Reducir la temperatura y el nivel de humedad del aire que se introduce en el habitáculo. <span class=\"pag\">pág. 18</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El aire exterior atraviesa el evaporador mientras el circuito frigorífico está en marcha, enfriándose y cediendo su humedad por condensación antes de ser distribuido. (pág. 18)",
+     "html": "<p>El aire exterior atraviesa el evaporador mientras el circuito frigorífico está en marcha, enfriándose y cediendo su humedad por condensación antes de ser distribuido. <span class=\"pag\">pág. 18</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El compresor entra en funcionamiento (Compresor On). El aire exterior pasa por el evaporador, donde se enfría y deshumecta. La trampilla de mezcla cierra el paso hacia el radiador de calefacción para evitar recalentar el aire. El aire frío se canaliza directamente hacia las salidas del habitáculo. Debido a la baja humedad que se alcanza en el interior del habitáculo por el efecto deshumectador del evaporador, se recomienda que los ocupantes ingieran líquidos durante viajes largos. (pág. 18)",
+     "html": "<ol>\n<li>El compresor entra en funcionamiento (Compresor On).</li>\n<li>El aire exterior pasa por el evaporador, donde se enfría y deshumecta.</li>\n<li>La trampilla de mezcla cierra el paso hacia el radiador de calefacción para evitar recalentar el aire.</li>\n<li>El aire frío se canaliza directamente hacia las salidas del habitáculo.</li>\n</ol>\n<p>Debido a la baja humedad que se alcanza en el interior del habitáculo por el efecto deshumectador del evaporador, se recomienda que los ocupantes ingieran líquidos durante viajes largos. <span class=\"pag\">pág. 18</span></p>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Estado del compresor: Compresor On. (pág. 18)",
+     "html": "<ul>\n<li>Estado del compresor: Compresor On. <span class=\"pag\">pág. 18</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema de flujo de refrigeración de aire con compresor conectado — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 18",
+     "html": "<ul>\n<li>Esquema de flujo de refrigeración de aire con compresor conectado — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 18</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.refrigeracion-maxima.5-el-circuito-de-aire",
+   "nt": 390,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "refrigeracion-maxima",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Refrigeración máxima del aire",
+   "codigo": "",
+   "menu": "Refrigeración máxima del aire",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "5. EL CIRCUITO DE AIRE.pptx, págs. 19",
+   "clase": "fundamento",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "servomotor-trampilla",
+    "evaporador"
+   ],
+   "palabras": [
+    "refrigeracion maxima",
+    "reciclaje",
+    "aire acondicionado max",
+    "enfriamiento rapido"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Conseguir el máximo rendimiento de enfriamiento en el habitáculo en el menor tiempo posible. (pág. 19)",
+     "html": "<p>Conseguir el máximo rendimiento de enfriamiento en el habitáculo en el menor tiempo posible. <span class=\"pag\">pág. 19</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Se aísla la entrada de aire exterior y se hace recircular de forma continua el aire que ya se encuentra en el habitáculo a través del evaporador activo. (pág. 19)",
+     "html": "<p>Se aísla la entrada de aire exterior y se hace recircular de forma continua el aire que ya se encuentra en el habitáculo a través del evaporador activo. <span class=\"pag\">pág. 19</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "La trampilla de recirculación se cierra completamente, bloqueando la entrada de aire exterior. El ventilador aspira el aire directamente del interior del habitáculo. El caudal pasa por el evaporador en funcionamiento (Compresor On) enfriándose de forma progresiva a una temperatura inferior a la del exterior. La trampilla de mezcla mantiene cerrado el paso al radiador de calefacción. (pág. 19)",
+     "html": "<ol>\n<li>La trampilla de recirculación se cierra completamente, bloqueando la entrada de aire exterior.</li>\n<li>El ventilador aspira el aire directamente del interior del habitáculo.</li>\n<li>El caudal pasa por el evaporador en funcionamiento (Compresor On) enfriándose de forma progresiva a una temperatura inferior a la del exterior.</li>\n<li>La trampilla de mezcla mantiene cerrado el paso al radiador de calefacción. <span class=\"pag\">pág. 19</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Flujo de aire interno en modo de refrigeración máxima con recirculación cerrada — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 19",
+     "html": "<ul>\n<li>Flujo de aire interno en modo de refrigeración máxima con recirculación cerrada — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 19</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.desecacion-y-desempando.5-el-circuito-de-aire",
+   "nt": 391,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "desecacion-y-desempando",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Desecación del aire y desempañado",
+   "codigo": "",
+   "menu": "Desecación del aire y desempañado",
+   "grupo": "Distribución de aire",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "5. EL CIRCUITO DE AIRE.pptx, págs. 20",
+   "clase": "fundamento",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "",
+   "relacionados": [
+    "evaporador",
+    "radiador-calefaccion",
+    "servomotor-trampilla"
+   ],
+   "palabras": [
+    "desecacion",
+    "desempañado",
+    "humedad",
+    "parabrisas",
+    "condensacion"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Eliminar el vaho condensado en los cristales del vehículo de forma rápida secando el flujo de aire impulsado. (pág. 20)",
+     "html": "<p>Eliminar el vaho condensado en los cristales del vehículo de forma rápida secando el flujo de aire impulsado. <span class=\"pag\">pág. 20</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Aprovecha la capacidad del evaporador para condensar la humedad del aire y la capacidad del radiador de calefacción para atemperarlo antes de dirigirlo hacia el parabrisas. (pág. 20)",
+     "html": "<p>Aprovecha la capacidad del evaporador para condensar la humedad del aire y la capacidad del radiador de calefacción para atemperarlo antes de dirigirlo hacia el parabrisas. <span class=\"pag\">pág. 20</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Se activa el compresor para enfriar el aire exterior en el evaporador y provocar la condensación de su agua de humedad. El aire ya seco se hace pasar parcialmente por el radiador de calefacción regulando la trampilla de mezcla para aumentar su temperatura. Las trampillas de repartición dirigen todo el caudal seco y caliente hacia la salida del parabrisas. El uso habitual de la instalación frigorífica en esta función resulta beneficioso para la vida útil de los componentes del circuito frigorífico. (pág. 20)",
+     "html": "<ol>\n<li>Se activa el compresor para enfriar el aire exterior en el evaporador y provocar la condensación de su agua de humedad.</li>\n<li>El aire ya seco se hace pasar parcialmente por el radiador de calefacción regulando la trampilla de mezcla para aumentar su temperatura.</li>\n<li>Las trampillas de repartición dirigen todo el caudal seco y caliente hacia la salida del parabrisas.\nEl uso habitual de la instalación frigorífica en esta función resulta beneficioso para la vida útil de los componentes del circuito frigorífico. <span class=\"pag\">pág. 20</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Creer que el aire acondicionado solo sirve para enfriar en verano. Su función de desecación es esencial para el desempañado en tiempo frío. (pág. 20)",
+     "html": "<p>Creer que el aire acondicionado solo sirve para enfriar en verano. Su función de desecación es esencial para el desempañado en tiempo frío. <span class=\"pag\">pág. 20</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Canalización del aire desempañado pasando por el evaporador y el radiador hacia la luna frontal — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 20",
+     "html": "<ul>\n<li>Canalización del aire desempañado pasando por el evaporador y el radiador hacia la luna frontal — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 20</li>\n</ul>"
     }
    ]
   }
