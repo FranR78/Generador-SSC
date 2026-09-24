@@ -1330,6 +1330,14 @@
    "hecha": false
   },
   {
+   "nombre": "NT263_01",
+   "nt": 263,
+   "titulo": "Bienestar e higrometría en el habitáculo",
+   "seccion": "2. Fundamentos",
+   "descripcion": "Tabla comparativa de variación térmica interior tras 1 hora a 30 ºC exteriores — Fuente: LA CLIMATIZACIÓN.pdf, pág. 27",
+   "hecha": false
+  },
+  {
    "nombre": "NT264_01",
    "nt": 264,
    "titulo": "Principios físicos de la refrigeración y cambio de estado",
@@ -2986,6 +2994,38 @@
    "hecha": false
   },
   {
+   "nombre": "NT635_01",
+   "nt": 635,
+   "titulo": "Bases físicas y gráfica de vapor en refrigeración",
+   "seccion": "2. Fundamentos",
+   "descripcion": "Gráfica de vapor relacionando presión (MPa) y temperatura (ºC) de cambio de estado — Fuente: LA CLIMATIZACIÓN.pdf, págs. 30-31",
+   "hecha": false
+  },
+  {
+   "nombre": "NT636_01",
+   "nt": 636,
+   "titulo": "Ciclo frigorífico con válvula de expansión",
+   "seccion": "2. Fundamentos",
+   "descripcion": "Esquema del circuito frigorífico con las fases de presión, temperatura y estados de agregación — Fuente: LA CLIMATIZACIÓN.pdf, págs. 42-45",
+   "hecha": false
+  },
+  {
+   "nombre": "NT637_01",
+   "nt": 637,
+   "titulo": "Compresor alternativo biela-manivela",
+   "seccion": "4. El compresor",
+   "descripcion": "Sección del compresor alternativo biela-manivela indicando cilindro, pistón y lumbreras — Fuente: LA CLIMATIZACIÓN.pdf, pág. 49",
+   "hecha": false
+  },
+  {
+   "nombre": "NT638_01",
+   "nt": 638,
+   "titulo": "Compresor alternativo de pistones de cilindrada fija",
+   "seccion": "4. El compresor",
+   "descripcion": "Despiece y sección del compresor de plato oscilante de cilindrada fija indicando cuerpo, cilindros y válvulas — Fuente: LA CLIMATIZACIÓN.pdf, págs. 51-54",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -3010,7 +3050,7 @@
    "hecha": false
   }
  ],
- "total": 626,
+ "total": 630,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -4012,58 +4052,63 @@
    "clave": "higrometria-y-confort",
    "seccion": "2. Fundamentos",
    "subgrupo": "",
-   "titulo": "Higrometría, confort térmico y seguridad activa",
+   "titulo": "Bienestar e higrometría en el habitáculo",
    "codigo": "",
-   "menu": "Higrometría, confort térmico y segurid",
-   "grupo": "Control de climatización",
+   "menu": "Bienestar e higrometría en el habitácu",
+   "grupo": "Distribución de aire",
    "tipo": "proceso",
    "subtipo": "fundamento",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 26-28",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 26-27",
    "clase": "fundamento",
    "estado": "",
    "fusionadas": [],
    "variante": "",
    "area": "climatizacion",
-   "sistema": "control-climatizacion",
+   "sistema": "distribucion-aire",
    "formaParteDe": "",
    "relacionados": [
-    "regulacion-automatica",
+    "circuito-frigorifico",
     "filtro-habitaculo"
    ],
    "palabras": [
+    "OMS",
     "confort térmico",
+    "deshidratación",
     "seguridad activa",
-    "temperatura ideal",
-    "tasa de alcoholemia",
-    "deshidratación"
+    "alcoholemia"
    ],
    "apartados": [
     {
      "titulo": "Objeto",
-     "texto": "Mantener la temperatura y el grado de humedad del aire interior del habitáculo en valores óptimos para garantizar el bienestar, la concentración y la capacidad de reacción del conductor. (pág. 27).",
-     "html": "<p>Mantener la temperatura y el grado de humedad del aire interior del habitáculo en valores óptimos para garantizar el bienestar, la concentración y la capacidad de reacción del conductor. <span class=\"pag\">pág. 27</span>.</p>"
+     "texto": "Definir la influencia de la temperatura, la humedad y la depuración del aire interior sobre la concentración del conductor, la comodidad de los pasajeros y la seguridad activa del vehículo. (págs. 26-27)",
+     "html": "<p>Definir la influencia de la temperatura, la humedad y la depuración del aire interior sobre la concentración del conductor, la comodidad de los pasajeros y la seguridad activa del vehículo. <span class=\"pag\">págs. 26-27</span></p>"
     },
     {
      "titulo": "Fundamento",
-     "texto": "El exceso de calor y la humedad elevada someten al cuerpo humano a un estrés fisiológico que incrementa la fatiga y reduce las facultades físicas y mentales del conductor, convirtiendo al sistema de climatización en un elemento de seguridad activa de primer orden. (págs. 26-28).",
-     "html": "<p>El exceso de calor y la humedad elevada someten al cuerpo humano a un estrés fisiológico que incrementa la fatiga y reduce las facultades físicas y mentales del conductor, convirtiendo al sistema de climatización en un elemento de seguridad activa de primer orden. <span class=\"pag\">págs. 26-28</span>.</p>"
+     "texto": "Según estudios de la Organización Mundial de la Salud (OMS), la temperatura y el grado de humedad del aire en el habitáculo deben mantenerse en valores ideales para garantizar el bienestar térmico del conductor. El calor excesivo provoca sobrecarga física, aumento de la frecuencia cardíaca, sudoración e incremento de la fatiga con menor aporte de oxígeno al cerebro. (págs. 26-27)",
+     "html": "<p>Según estudios de la Organización Mundial de la Salud (OMS), la temperatura y el grado de humedad del aire en el habitáculo deben mantenerse en valores ideales para garantizar el bienestar térmico del conductor. El calor excesivo provoca sobrecarga física, aumento de la frecuencia cardíaca, sudoración e incremento de la fatiga con menor aporte de oxígeno al cerebro. <span class=\"pag\">págs. 26-27</span></p>"
     },
     {
      "titulo": "Desarrollo",
-     "texto": "Temperatura ideal del habitáculo: comprendida entre 20 ºC y 22 ºC. (pág. 26). Efectos del incremento térmico: si la temperatura sube de 25 ºC a 35 ºC, la atención y capacidad de percepción disminuyen un 20%, lo que equivale a conducir con una tasa de alcoholemia de 0,5 g/l de sangre. (pág. 26). Radiación solar intensa: puede elevar la temperatura interior más de 15 ºC por encima de la atmosférica. En un vehículo tras 1 hora a 30 ºC ambiente sin climatización, la zona de la cabeza alcanza 42 ºC (frente a 23 ºC con climatizador), el tórax 40 ºC (frente a 24 ºC) y las piernas 35 ºC (frente a 28 ºC). (págs. 26-28). Funciones adicionales del sistema: reduce la humedad del aire (deshidratación) y depura el aire de partículas mediante filtros antipolen y de carbón activo. (pág. 28).",
-     "html": "<ul>\n<li>Temperatura ideal del habitáculo: comprendida entre 20 ºC y 22 ºC. <span class=\"pag\">pág. 26</span>.</li>\n<li>Efectos del incremento térmico: si la temperatura sube de 25 ºC a 35 ºC, la atención y capacidad de percepción disminuyen un 20%, lo que equivale a conducir con una tasa de alcoholemia de 0,5 g/l de sangre. <span class=\"pag\">pág. 26</span>.</li>\n<li>Radiación solar intensa: puede elevar la temperatura interior más de 15 ºC por encima de la atmosférica. En un vehículo tras 1 hora a 30 ºC ambiente sin climatización, la zona de la cabeza alcanza 42 ºC (frente a 23 ºC con climatizador), el tórax 40 ºC (frente a 24 ºC) y las piernas 35 ºC (frente a 28 ºC). <span class=\"pag\">págs. 26-28</span>.</li>\n<li>Funciones adicionales del sistema: reduce la humedad del aire (deshidratación) y depura el aire de partículas mediante filtros antipolen y de carbón activo. <span class=\"pag\">pág. 28</span>.</li>\n</ul>"
+     "texto": "El sistema de aire acondicionado reduce la temperatura del aire exterior y lo deshidrata independientemente de la marcha o parada del vehículo. Asimismo, incorpora un sistema de depuración mediante filtros antipolen y de carbón activo que reducen las reacciones alérgicas. Por ello, la climatización se considera un elemento esencial de la seguridad activa. (págs. 26-27)",
+     "html": "<p>El sistema de aire acondicionado reduce la temperatura del aire exterior y lo deshidrata independientemente de la marcha o parada del vehículo. Asimismo, incorpora un sistema de depuración mediante filtros antipolen y de carbón activo que reducen las reacciones alérgicas. Por ello, la climatización se considera un elemento esencial de la seguridad activa. <span class=\"pag\">págs. 26-27</span></p>"
     },
     {
      "titulo": "Valores de referencia",
-     "texto": "Temperatura de confort óptima: 20 ºC a 22 ºC. (pág. 26). Reducción de la atención a 35 ºC: 20% (equivalente a 0,5 g/l de alcohol en sangre). (pág. 26).",
-     "html": "<ul>\n<li>Temperatura de confort óptima: 20 ºC a 22 ºC. <span class=\"pag\">pág. 26</span>.</li>\n<li>Reducción de la atención a 35 ºC: 20% (equivalente a 0,5 g/l de alcohol en sangre). <span class=\"pag\">pág. 26</span>.</li>\n</ul>"
+     "texto": "Temperatura ideal dentro del habitáculo: entre 20 ºC y 22 ºC. (pág. 26) Reducción de la atención del conductor si la temperatura sube de 25 ºC a 35 ºC: 20% (equivalente a 0,5 g/l de alcohol en sangre). (pág. 26) Incremento de temperatura interior por radiación solar intensa: más de 15 ºC por encima de la atmosférica. (pág. 26) Temperatura en cabeza con climatización: 23 ºC (frente a 42 ºC sin climatización). (pág. 27) Temperatura en tórax con climatización: 24 ºC (frente a 40 ºC sin climatización). (pág. 27) Temperatura en piernas con climatización: 28 ºC (frente a 35 ºC sin climatización). (pág. 27)",
+     "html": "<ul>\n<li>Temperatura ideal dentro del habitáculo: entre 20 ºC y 22 ºC. <span class=\"pag\">pág. 26</span></li>\n<li>Reducción de la atención del conductor si la temperatura sube de 25 ºC a 35 ºC: 20% (equivalente a 0,5 g/l de alcohol en sangre). <span class=\"pag\">pág. 26</span></li>\n<li>Incremento de temperatura interior por radiación solar intensa: más de 15 ºC por encima de la atmosférica. <span class=\"pag\">pág. 26</span></li>\n<li>Temperatura en cabeza con climatización: 23 ºC (frente a 42 ºC sin climatización). <span class=\"pag\">pág. 27</span></li>\n<li>Temperatura en tórax con climatización: 24 ºC (frente a 40 ºC sin climatización). <span class=\"pag\">pág. 27</span></li>\n<li>Temperatura en piernas con climatización: 28 ºC (frente a 35 ºC sin climatización). <span class=\"pag\">pág. 27</span></li>\n</ul>"
     },
     {
      "titulo": "Errores de concepto frecuentes",
-     "texto": "Considerar el sistema de aire acondicionado como un mero equipo de lujo o confort estival; es un elemento clave de seguridad activa que previene accidentes al evitar la fatiga y la somnolencia del conductor. (pág. 28).",
-     "html": "<p>Considerar el sistema de aire acondicionado como un mero equipo de lujo o confort estival; es un elemento clave de seguridad activa que previene accidentes al evitar la fatiga y la somnolencia del conductor. <span class=\"pag\">pág. 28</span>.</p>"
+     "texto": "Considerar la climatización únicamente como un equipamiento de lujo u opcional en lugar de un elemento clave de la seguridad activa. (págs. 25, 27) Creer que bajar las ventanillas en días calurosos sustituye las funciones de regulación térmica, deshidratación y depuración del aire del climatizador. (págs. 25, 27)",
+     "html": "<ul>\n<li>Considerar la climatización únicamente como un equipamiento de lujo u opcional en lugar de un elemento clave de la seguridad activa. <span class=\"pag\">págs. 25, 27</span></li>\n<li>Creer que bajar las ventanillas en días calurosos sustituye las funciones de regulación térmica, deshidratación y depuración del aire del climatizador. <span class=\"pag\">págs. 25, 27</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Tabla comparativa de variación térmica interior tras 1 hora a 30 ºC exteriores — Fuente: LA CLIMATIZACIÓN.pdf, pág. 27",
+     "html": "<ul>\n<li>Tabla comparativa de variación térmica interior tras 1 hora a 30 ºC exteriores — Fuente: LA CLIMATIZACIÓN.pdf, pág. 27</li>\n</ul>"
     }
    ]
   },
@@ -6580,6 +6625,147 @@
    ]
   },
   {
+   "id": "ssc.ciclo-frigorifico.la-climatizacion",
+   "nt": 635,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ciclo-frigorifico",
+   "seccion": "2. Fundamentos",
+   "subgrupo": "",
+   "titulo": "Bases físicas y gráfica de vapor en refrigeración",
+   "codigo": "",
+   "menu": "Bases físicas y gráfica de vapor en re",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 28-31",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r134a"
+   ],
+   "palabras": [
+    "estados de la materia",
+    "ebullición",
+    "presión de vapor",
+    "licuación",
+    "1 bar"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Explicar las leyes físicas de cambio de estado de la materia por cesión o absorción de energía calorífica y la relación entre la presión ejercida y la temperatura de ebullición. (págs. 28-31)",
+     "html": "<p>Explicar las leyes físicas de cambio de estado de la materia por cesión o absorción de energía calorífica y la relación entre la presión ejercida y la temperatura de ebullición. <span class=\"pag\">págs. 28-31</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El funcionamiento del aire acondicionado se basa en los cambios de estado (líquido a gaseoso y viceversa) del agente frigorífico al modificar la presión y la temperatura aplicadas sobre el fluido. (págs. 28, 30)",
+     "html": "<p>El funcionamiento del aire acondicionado se basa en los cambios de estado (líquido a gaseoso y viceversa) del agente frigorífico al modificar la presión y la temperatura aplicadas sobre el fluido. <span class=\"pag\">págs. 28, 30</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Cuando dos sustancias a diferente temperatura se ponen en contacto, se produce una transferencia de calor desde la de mayor temperatura hacia la de menor hasta igualarse. Cada sustancia cambia de estado a una temperatura específica determinada por la presión atmosférica o del recipiente. Al reducir la presión ejercida sobre el líquido, disminuye de forma directamente proporcional su temperatura de ebullición. Las gráficas de vapor representan esta relación proporcional entre la presión de trabajo y la temperatura a la cual se produce la ebullición o licuación. (págs. 29-31)",
+     "html": "<p>Cuando dos sustancias a diferente temperatura se ponen en contacto, se produce una transferencia de calor desde la de mayor temperatura hacia la de menor hasta igualarse.</p>\n<p>Cada sustancia cambia de estado a una temperatura específica determinada por la presión atmosférica o del recipiente. Al reducir la presión ejercida sobre el líquido, disminuye de forma directamente proporcional su temperatura de ebullición. Las gráficas de vapor representan esta relación proporcional entre la presión de trabajo y la temperatura a la cual se produce la ebullición o licuación. <span class=\"pag\">págs. 29-31</span></p>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Temperatura de ebullición del agua a presión atmosférica normal (1 bar / 0,1 MPa): 100 ºC. (pág. 30) Punto de ebullición del agente frigorífico a 1 bar de presión atmosférica: -26,5 ºC. (pág. 30) Estado del agua a 125 ºC y 3 bares: líquido. (pág. 31) Estado del agua a 125 ºC y 1,5 bares: vapor. (pág. 31)",
+     "html": "<ul>\n<li>Temperatura de ebullición del agua a presión atmosférica normal (1 bar / 0,1 MPa): 100 ºC. <span class=\"pag\">pág. 30</span></li>\n<li>Punto de ebullición del agente frigorífico a 1 bar de presión atmosférica: -26,5 ºC. <span class=\"pag\">pág. 30</span></li>\n<li>Estado del agua a 125 ºC y 3 bares: líquido. <span class=\"pag\">pág. 31</span></li>\n<li>Estado del agua a 125 ºC y 1,5 bares: vapor. <span class=\"pag\">pág. 31</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Asumir que la temperatura de ebullición de un fluido es una constante fija inaccesible a las variaciones de presión del circuito. (págs. 30-31)",
+     "html": "<ul>\n<li>Asumir que la temperatura de ebullición de un fluido es una constante fija inaccesible a las variaciones de presión del circuito. <span class=\"pag\">págs. 30-31</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Gráfica de vapor relacionando presión (MPa) y temperatura (ºC) de cambio de estado — Fuente: LA CLIMATIZACIÓN.pdf, págs. 30-31",
+     "html": "<ul>\n<li>Gráfica de vapor relacionando presión (MPa) y temperatura (ºC) de cambio de estado — Fuente: LA CLIMATIZACIÓN.pdf, págs. 30-31</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.ciclo-frigorifico.valvula-expansion.la-climatizacion",
+   "nt": 636,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ciclo-frigorifico",
+   "seccion": "2. Fundamentos",
+   "subgrupo": "",
+   "titulo": "Ciclo frigorífico con válvula de expansión",
+   "codigo": "",
+   "menu": "Ciclo frigorífico con válvula de expan",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 40-46",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "valvula-expansion",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "condensador",
+    "valvula-expansion",
+    "evaporador",
+    "refrigerante-r134a"
+   ],
+   "palabras": [
+    "compresión",
+    "condensación",
+    "expansión",
+    "evaporación",
+    "16 bares",
+    "2 bares",
+    "4",
+    "7 bares"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Describir las fases de compresión, condensación, expansión y evaporación del fluido R134a en un circuito cerrado estanco equipado con válvula de expansión. (págs. 40-46)",
+     "html": "<p>Describir las fases de compresión, condensación, expansión y evaporación del fluido R134a en un circuito cerrado estanco equipado con válvula de expansión. <span class=\"pag\">págs. 40-46</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El sistema absorbe calor del aire exterior o del habitáculo cuando el refrigerante cambia de líquido a gaseoso en el evaporador, y cede ese calor al aire exterior cuando cambia de gaseoso a líquido en el condensador. (págs. 41-42)",
+     "html": "<p>El sistema absorbe calor del aire exterior o del habitáculo cuando el refrigerante cambia de líquido a gaseoso en el evaporador, y cede ese calor al aire exterior cuando cambia de gaseoso a líquido en el condensador. <span class=\"pag\">págs. 41-42</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Compresión y calentamiento: El compresor acoplado electromagnéticamente aspira el gas a baja presión y temperatura, lo comprime y lo impulsa a alta presión (aprox. 16 bares / 1,6 MPa) y alta temperatura (entre 80 ºC y 90 ºC). (págs. 42-43) Enfriamiento y condensación: En el condensador, el gas cede calor al aire de la marcha o del ventilador, sufriendo un enfriamiento de aprox. 15 ºC que provoca su licuación. Sale en estado líquido a alta presión y temperatura media (50-60 ºC). (pág. 44) Expansión y evaporación: La válvula de expansión inyecta el líquido pulverizado a la zona de baja presión, cayendo la presión a unos 2 bares (0,2 MPa) y la temperatura a unos -1 ºC. En el evaporador, el fluido pasa a gas absorbiendo el calor del aire, que se enfría y deshidrata hacia el habitáculo. El gas regresa al compresor. (págs. 44-45)",
+     "html": "<ol>\n<li><strong>Compresión y calentamiento:</strong> El compresor acoplado electromagnéticamente aspira el gas a baja presión y temperatura, lo comprime y lo impulsa a alta presión (aprox. 16 bares / 1,6 MPa) y alta temperatura (entre 80 ºC y 90 ºC). <span class=\"pag\">págs. 42-43</span></li>\n<li><strong>Enfriamiento y condensación:</strong> En el condensador, el gas cede calor al aire de la marcha o del ventilador, sufriendo un enfriamiento de aprox. 15 ºC que provoca su licuación. Sale en estado líquido a alta presión y temperatura media (50-60 ºC). <span class=\"pag\">pág. 44</span></li>\n<li><strong>Expansión y evaporación:</strong> La válvula de expansión inyecta el líquido pulverizado a la zona de baja presión, cayendo la presión a unos 2 bares (0,2 MPa) y la temperatura a unos -1 ºC. En el evaporador, el fluido pasa a gas absorbiendo el calor del aire, que se enfría y deshidrata hacia el habitáculo. El gas regresa al compresor. <span class=\"pag\">págs. 44-45</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Presión y temperatura de salida del compresor: ~16 bares (1,6 MPa) y 80 a 90 ºC. (pág. 43) Presión y temperatura de salida del condensador: ~16 bares (1,6 MPa) y 50 a 60 ºC. (pág. 44) Presión y temperatura de salida de la válvula de expansión: ~2 bares (0,2 MPa) y -1 ºC. (pág. 45) Presión en reposo con motor parado a 20 ºC ambiente: ~4,7 bares (0,47 MPa). (pág. 46) Condiciones normativas de comprobación: tras 20 minutos de funcionamiento a 20 ºC exterior y motor a 1.500-2.000 rpm. (pág. 46)",
+     "html": "<ul>\n<li>Presión y temperatura de salida del compresor: ~16 bares (1,6 MPa) y 80 a 90 ºC. <span class=\"pag\">pág. 43</span></li>\n<li>Presión y temperatura de salida del condensador: ~16 bares (1,6 MPa) y 50 a 60 ºC. <span class=\"pag\">pág. 44</span></li>\n<li>Presión y temperatura de salida de la válvula de expansión: ~2 bares (0,2 MPa) y -1 ºC. <span class=\"pag\">pág. 45</span></li>\n<li>Presión en reposo con motor parado a 20 ºC ambiente: ~4,7 bares (0,47 MPa). <span class=\"pag\">pág. 46</span></li>\n<li>Condiciones normativas de comprobación: tras 20 minutos de funcionamiento a 20 ºC exterior y motor a 1.500-2.000 rpm. <span class=\"pag\">pág. 46</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Interpretar que los valores de presión y temperatura son fijos e idénticos en todos los vehículos, ignorando que varían según las características del circuito y el régimen de revoluciones. (pág. 46)",
+     "html": "<ul>\n<li>Interpretar que los valores de presión y temperatura son fijos e idénticos en todos los vehículos, ignorando que varían según las características del circuito y el régimen de revoluciones. <span class=\"pag\">pág. 46</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del circuito frigorífico con las fases de presión, temperatura y estados de agregación — Fuente: LA CLIMATIZACIÓN.pdf, págs. 42-45",
+     "html": "<ul>\n<li>Esquema del circuito frigorífico con las fases de presión, temperatura y estados de agregación — Fuente: LA CLIMATIZACIÓN.pdf, págs. 42-45</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.refrigerante-r134a.208-climatizadores-en-los-vehic",
    "nt": 541,
    "modulo": "ssc",
@@ -6983,15 +7169,15 @@
    "clave": "refrigerante-r1234yf",
    "seccion": "3. Fluidos",
    "subgrupo": "",
-   "titulo": "Agente refrigerante HFO-R1234yf",
+   "titulo": "Agente frigorífico R1234yf",
    "codigo": "",
-   "menu": "Agente refrigerante HFO-R1234yf",
+   "menu": "Agente frigorífico R1234yf",
    "grupo": "Fluidos frigoríficos",
    "tipo": "elemento",
    "subtipo": "",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 38-40",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 39-40",
    "clase": "fluido",
    "estado": "",
    "fusionadas": [],
@@ -7004,9 +7190,8 @@
     "ciclo-frigorifico"
    ],
    "palabras": [
-    "R1234yf",
-    "HFO",
-    "hidrofluoroolefina",
+    "HFO-R1234yf",
+    "GWP",
     "PCG",
     "PAO",
     "baja inflamabilidad"
@@ -7014,38 +7199,38 @@
    "apartados": [
     {
      "titulo": "Designación y norma",
-     "texto": "Hidrofluoroolefina (HFO-R1234yf). Regulado por la Directiva 2006/40/CE y obligatorio en vehículos nuevos de peso inferior a 3,5 toneladas homologados a partir de enero de 2011. (págs. 38-39).",
-     "html": "<p>Hidrofluoroolefina (HFO-R1234yf). Regulado por la Directiva 2006/40/CE y obligatorio en vehículos nuevos de peso inferior a 3,5 toneladas homologados a partir de enero de 2011. <span class=\"pag\">págs. 38-39</span>.</p>"
+     "texto": "Agente frigorífico HFO-R1234yf (hidrofluoroolefina). Implantado por exigencia de la Comisión Europea desde enero de 2011 para vehículos de nueva fabricación de peso inferior a 3,5 toneladas. (págs. 39-40)",
+     "html": "<p>Agente frigorífico HFO-R1234yf (hidrofluoroolefina). Implantado por exigencia de la Comisión Europea desde enero de 2011 para vehículos de nueva fabricación de peso inferior a 3,5 toneladas. <span class=\"pag\">págs. 39-40</span></p>"
     },
     {
      "titulo": "Propiedades",
-     "texto": "Potencial de Calentamiento Global (PCG / GWP): 4 (frente a 1430 del R134a). (pág. 40). Potencial de Agotamiento del Ozono (PAO / ODP): 0. (pág. 40). Punto de ebullición a 1 bar: -29 ºC. (pág. 39). Temperatura crítica: 95 ºC. (pág. 39). Presión crítica: 36,5 bares (3,65 MPa). (pág. 39). Presenta muy baja toxicidad y baja inflamabilidad. Es térmicamente estable y ofrece un rendimiento térmico equivalente al R134a. (pág. 40).",
-     "html": "<ul>\n<li>Potencial de Calentamiento Global (PCG / GWP): 4 (frente a 1430 del R134a). <span class=\"pag\">pág. 40</span>.</li>\n<li>Potencial de Agotamiento del Ozono (PAO / ODP): 0. <span class=\"pag\">pág. 40</span>.</li>\n<li>Punto de ebullición a 1 bar: -29 ºC. <span class=\"pag\">pág. 39</span>.</li>\n<li>Temperatura crítica: 95 ºC. <span class=\"pag\">pág. 39</span>.</li>\n<li>Presión crítica: 36,5 bares (3,65 MPa). <span class=\"pag\">pág. 39</span>.</li>\n<li>Presenta muy baja toxicidad y baja inflamabilidad. Es térmicamente estable y ofrece un rendimiento térmico equivalente al R134a. <span class=\"pag\">pág. 40</span>.</li>\n</ul>"
+     "texto": "Potencial de calentamiento global muy reducido: PCG (GWP) = 4 a los 100 años (frente a 1430 del R134a), con un índice de eficiencia de 4 frente a 1,4 del R134a. (págs. 39-40) Potencial de agotamiento del ozono nulo: PAO (ODP) = 0. (pág. 40) Temperatura de ebullición: -29 ºC. (pág. 39) Temperatura crítica: 95 ºC. Presión crítica: 36,5 bares (3,65 MPa). (pág. 39) Térmicamente estable, de baja toxicidad y baja inflamabilidad. Rendimiento equivalente al R134a en todos los climas. (págs. 39-40)",
+     "html": "<ul>\n<li>Potencial de calentamiento global muy reducido: PCG (GWP) = 4 a los 100 años (frente a 1430 del R134a), con un índice de eficiencia de 4 frente a 1,4 del R134a. <span class=\"pag\">págs. 39-40</span></li>\n<li>Potencial de agotamiento del ozono nulo: PAO (ODP) = 0. <span class=\"pag\">pág. 40</span></li>\n<li>Temperatura de ebullición: -29 ºC. <span class=\"pag\">pág. 39</span></li>\n<li>Temperatura crítica: 95 ºC. Presión crítica: 36,5 bares (3,65 MPa). <span class=\"pag\">pág. 39</span></li>\n<li>Térmicamente estable, de baja toxicidad y baja inflamabilidad. Rendimiento equivalente al R134a en todos los climas. <span class=\"pag\">págs. 39-40</span></li>\n</ul>"
     },
     {
      "titulo": "Dónde se usa y cantidades",
-     "texto": "Se utiliza en los circuitos de climatización de todos los turismos de nueva homologación desde 2011 y de nueva matriculación desde 2017. (págs. 39, 152).",
-     "html": "<p>Se utiliza en los circuitos de climatización de todos los turismos de nueva homologación desde 2011 y de nueva matriculación desde 2017. <span class=\"pag\">págs. 39, 152</span>.</p>"
+     "texto": "Se utiliza como fluido refrigerante ecológico de bajo impacto ambiental en turismos y vehículos comerciales ligeros de nueva homologación. (págs. 39, 152)",
+     "html": "<p>Se utiliza como fluido refrigerante ecológico de bajo impacto ambiental en turismos y vehículos comerciales ligeros de nueva homologación. <span class=\"pag\">págs. 39, 152</span></p>"
     },
     {
      "titulo": "Compatibilidades y mezclas prohibidas",
-     "texto": "Compatible con los materiales del circuito del R134a pero exige acoplamientos de carga y estaciones de servicio específicas con identificación propia para evitar contaminación cruzada. (págs. 40, 152).",
-     "html": "<p>Compatible con los materiales del circuito del R134a pero exige acoplamientos de carga y estaciones de servicio específicas con identificación propia para evitar contaminación cruzada. <span class=\"pag\">págs. 40, 152</span>.</p>"
+     "texto": "Compatible con la tecnología de componentes utilizada para el R134a. (pág. 40)",
+     "html": "<p>Compatible con la tecnología de componentes utilizada para el R134a. <span class=\"pag\">pág. 40</span></p>"
     },
     {
      "titulo": "Identificación",
-     "texto": "Etiqueta adhesiva específica en el vano motor e indicación en las tomas de servicio de alta y baja presión. (pág. 39).",
-     "html": "<p>Etiqueta adhesiva específica en el vano motor e indicación en las tomas de servicio de alta y baja presión. <span class=\"pag\">pág. 39</span>.</p>"
+     "texto": "Gas fluorado HFO incoloro suministrado en envases presurizados identificados para R1234yf. (págs. 39-40)",
+     "html": "<p>Gas fluorado HFO incoloro suministrado en envases presurizados identificados para R1234yf. <span class=\"pag\">págs. 39-40</span></p>"
     },
     {
      "titulo": "Manipulación, almacenamiento y residuos",
-     "texto": "Recuperación y reciclaje obligatorios con estaciones automáticas certificadas para R1234yf. (págs. 40, 149).",
-     "html": "<p>Recuperación y reciclaje obligatorios con estaciones automáticas certificadas para R1234yf. <span class=\"pag\">págs. 40, 149</span>.</p>"
+     "texto": "Recuperar mediante equipos específicos para evitar emisiones. (págs. 39, 154)",
+     "html": "<p>Recuperar mediante equipos específicos para evitar emisiones. <span class=\"pag\">págs. 39, 154</span></p>"
     },
     {
      "titulo": "Riesgos y normativa",
-     "texto": "Cumple con la Directiva 2006/40/CE al tener un PCG inferior al límite de. Debido a su clasificación de baja inflamabilidad, deben respetarse las precauciones de seguridad frente a fuentes de ignición o chispas durante el servicio. (págs. 39-40, 152).",
-     "html": "<p>Cumple con la Directiva 2006/40/CE al tener un PCG inferior al límite de. Debido a su clasificación de baja inflamabilidad, deben respetarse las precauciones de seguridad frente a fuentes de ignición o chispas durante el servicio. <span class=\"pag\">págs. 39-40, 152</span>.</p>"
+     "texto": "Regulado por la Directiva 2006/40/CE para restringir el uso de gases con PCG superior a. (págs. 39, 149)",
+     "html": "<p>Regulado por la Directiva 2006/40/CE para restringir el uso de gases con PCG superior a. <span class=\"pag\">págs. 39, 149</span></p>"
     }
    ]
   },
@@ -10066,6 +10251,163 @@
      "titulo": "Imágenes requeridas",
      "texto": "Detalle de la válvula reguladora por PWM a 400 Hz y mecanismo de desacoplamiento de goma en la polea — Fuente: CLIMATIZADOR MD FRAN.docx, págs. 7-8",
      "html": "<ul>\n<li>Detalle de la válvula reguladora por PWM a 400 Hz y mecanismo de desacoplamiento de goma en la polea — Fuente: CLIMATIZADOR MD FRAN.docx, págs. 7-8</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.compresor.biela-manivela.la-climatizacion",
+   "nt": 637,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "compresor",
+   "seccion": "4. El compresor",
+   "subgrupo": "",
+   "titulo": "Compresor alternativo biela-manivela",
+   "codigo": "",
+   "menu": "Compresor alternativo biela-manivela",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 48-49",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "biela-manivela",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "compresor"
+   ],
+   "palabras": [
+    "biela-manivela",
+    "cigüeñal",
+    "lumbrera de admisión",
+    "lumbrera de escape",
+    "rendimiento volumétrico"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Aspirar el gas refrigerante en estado gaseoso a baja presión procedente del evaporador y comprimirlo mecánicamente para impulsarlo a alta presión y temperatura hacia el condensador. (págs. 47-49)",
+     "html": "<p>Aspirar el gas refrigerante en estado gaseoso a baja presión procedente del evaporador y comprimirlo mecánicamente para impulsarlo a alta presión y temperatura hacia el condensador. <span class=\"pag\">págs. 47-49</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Compresor alternativo volumétrico basado en el diseño de los motores de combustión interna, compuesto por cilindro, pistón, biela, manivela (cigüeñal) y lumbreras de admisión y escape con válvulas automáticas. (pág. 49)",
+     "html": "<p>Compresor alternativo volumétrico basado en el diseño de los motores de combustión interna, compuesto por cilindro, pistón, biela, manivela (cigüeñal) y lumbreras de admisión y escape con válvulas automáticas. <span class=\"pag\">pág. 49</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El movimiento giratorio del cigüeñal desplaza el pistón de forma alternativa dentro del cilindro. Dado que el gas comprimido a alta presión requiere menor sección de paso que el gas a baja presión, la lumbrera de escape presenta una sección calibrada menor que la lumbrera de admisión. (pág. 49)",
+     "html": "<p>El movimiento giratorio del cigüeñal desplaza el pistón de forma alternativa dentro del cilindro. Dado que el gas comprimido a alta presión requiere menor sección de paso que el gas a baja presión, la lumbrera de escape presenta una sección calibrada menor que la lumbrera de admisión. <span class=\"pag\">pág. 49</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Rendimiento volumétrico: comprendido entre el 80% y el 90%. (pág. 49)",
+     "html": "<ul>\n<li>Rendimiento volumétrico: comprendido entre el 80% y el 90%. <span class=\"pag\">pág. 49</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Elevado nivel de vibraciones mecánicas generadas durante el funcionamiento alternativo. (pág. 49)",
+     "html": "<p>Elevado nivel de vibraciones mecánicas generadas durante el funcionamiento alternativo. <span class=\"pag\">pág. 49</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Pérdida de estanqueidad en las válvulas de admisión/escape o ruidos e incomodidad por vibraciones en el motor. (pág. 49)",
+     "html": "<p>Pérdida de estanqueidad en las válvulas de admisión/escape o ruidos e incomodidad por vibraciones en el motor. <span class=\"pag\">pág. 49</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Sección del compresor alternativo biela-manivela indicando cilindro, pistón y lumbreras — Fuente: LA CLIMATIZACIÓN.pdf, pág. 49",
+     "html": "<ul>\n<li>Sección del compresor alternativo biela-manivela indicando cilindro, pistón y lumbreras — Fuente: LA CLIMATIZACIÓN.pdf, pág. 49</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.compresor.plato-oscilante-fijo.la-climatizacion",
+   "nt": 638,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "compresor",
+   "seccion": "4. El compresor",
+   "subgrupo": "",
+   "titulo": "Compresor alternativo de pistones de cilindrada fija",
+   "codigo": "",
+   "menu": "Compresor alternativo de pistones de c",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 50-54",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "plato-oscilante-fijo",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "embrague-compresor",
+    "condensador",
+    "evaporador"
+   ],
+   "palabras": [
+    "plato oscilante fijo",
+    "de 5 a 10 cilindros",
+    "placa portaválvulas",
+    "golpe de ariete",
+    "PMS",
+    "PMI"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Comprimir un volumen fijo e inalterable de gas refrigerante por cada vuelta del eje, asegurando la circulación forzada del fluido por todo el circuito. (págs. 47, 50)",
+     "html": "<p>Comprimir un volumen fijo e inalterable de gas refrigerante por cada vuelta del eje, asegurando la circulación forzada del fluido por todo el circuito. <span class=\"pag\">págs. 47, 50</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Compresor volumétrico de plato oscilante de ángulo fijo. Consta de un cuerpo cilíndrico de aleación de aluminio con un número de cilindros comprendido entre 5 y 10 distribuidos circularmente alrededor del eje central. (págs. 50-51)",
+     "html": "<p>Compresor volumétrico de plato oscilante de ángulo fijo. Consta de un cuerpo cilíndrico de aleación de aluminio con un número de cilindros comprendido entre 5 y 10 distribuidos circularmente alrededor del eje central. <span class=\"pag\">págs. 50-51</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El eje de accionamiento hace girar un disco de arrastre con plano inclinado fijo sobre el que se apoya un plato oscilante (impedido de girar mediante una corredera y traviesa). El plato transmite un movimiento alternativo a los pistones mediante bielas de extremos esféricos. La aspiración e impulsión están reguladas por válvulas de lámina elástica de acero en una placa portaválvulas. Al ser de cilindrada fija, la potencia frigorífica se regula conectando y desconectando cíclicamente el embrague electromagnético. (págs. 50-54)",
+     "html": "<p>El eje de accionamiento hace girar un disco de arrastre con plano inclinado fijo sobre el que se apoya un plato oscilante (impedido de girar mediante una corredera y traviesa). El plato transmite un movimiento alternativo a los pistones mediante bielas de extremos esféricos. La aspiración e impulsión están reguladas por válvulas de lámina elástica de acero en una placa portaválvulas. Al ser de cilindrada fija, la potencia frigorífica se regula conectando y desconectando cíclicamente el embrague electromagnético. <span class=\"pag\">págs. 50-54</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Número de cilindros: entre 5 y 10 cilindros. (pág. 51) Estado del fluido a la entrada: 100% gaseoso a baja presión. (pág. 54)",
+     "html": "<ul>\n<li>Número de cilindros: entre 5 y 10 cilindros. <span class=\"pag\">pág. 51</span></li>\n<li>Estado del fluido a la entrada: 100% gaseoso a baja presión. <span class=\"pag\">pág. 54</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fluctuaciones y tirones en el motor térmico provocados por los acoplamientos y desacoplamientos del embrague. (pág. 50) Destrucción por entrada de refrigerante en estado líquido (golpe de ariete al ser incompresible). (pág. 54)",
+     "html": "<ul>\n<li>Fluctuaciones y tirones en el motor térmico provocados por los acoplamientos y desacoplamientos del embrague. <span class=\"pag\">pág. 50</span></li>\n<li>Destrucción por entrada de refrigerante en estado líquido (golpe de ariete al ser incompresible). <span class=\"pag\">pág. 54</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Falta de compresión por rotura de las láminas de la placa portaválvulas o agarrotamiento de los pistones. (págs. 52, 54)",
+     "html": "<p>Falta de compresión por rotura de las láminas de la placa portaválvulas o agarrotamiento de los pistones. <span class=\"pag\">págs. 52, 54</span></p>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Medir las presiones de alta y baja presión con manómetros para evaluar la estanqueidad de las válvulas de lámina. (págs. 52, 158)",
+     "html": "<p>Medir las presiones de alta y baja presión con manómetros para evaluar la estanqueidad de las válvulas de lámina. <span class=\"pag\">págs. 52, 158</span></p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Asegurar la llegada exclusiva de fluido en estado gaseoso para evitar el golpe de ariete. (pág. 54)",
+     "html": "<p>Asegurar la llegada exclusiva de fluido en estado gaseoso para evitar el golpe de ariete. <span class=\"pag\">pág. 54</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Despiece y sección del compresor de plato oscilante de cilindrada fija indicando cuerpo, cilindros y válvulas — Fuente: LA CLIMATIZACIÓN.pdf, págs. 51-54",
+     "html": "<ul>\n<li>Despiece y sección del compresor de plato oscilante de cilindrada fija indicando cuerpo, cilindros y válvulas — Fuente: LA CLIMATIZACIÓN.pdf, págs. 51-54</li>\n</ul>"
     }
    ]
   },

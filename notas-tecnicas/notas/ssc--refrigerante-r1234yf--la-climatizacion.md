@@ -5,46 +5,45 @@ unidad: clima
 nt: 266
 tipo: elemento
 clase: fluido
-titulo: "Agente refrigerante HFO-R1234yf"
-menu: "Agente refrigerante HFO-R1234yf"
+titulo: "Agente frigorífico R1234yf"
+menu: "Agente frigorífico R1234yf"
 grupo: "Fluidos frigoríficos"
 clave: refrigerante-r1234yf
 area: climatizacion
 sistema: "fluidos-frigorificos"
-fuentes: "LA CLIMATIZACIÓN.pdf, págs. 38-40"
+fuentes: "LA CLIMATIZACIÓN.pdf, págs. 39-40"
 relacionados: ["refrigerante-r134a", "ciclo-frigorifico"]
-palabras: ["R1234yf", "HFO", "hidrofluoroolefina", "PCG", "PAO", "baja inflamabilidad"]
+palabras: ["HFO-R1234yf", "GWP", "PCG", "PAO", "baja inflamabilidad"]
 ---
 
 ## Designación y norma
 
-Hidrofluoroolefina (HFO-R1234yf). Regulado por la Directiva 2006/40/CE y obligatorio en vehículos nuevos de peso inferior a 3,5 toneladas homologados a partir de enero de 2011. (págs. 38-39).
+Agente frigorífico HFO-R1234yf (hidrofluoroolefina). Implantado por exigencia de la Comisión Europea desde enero de 2011 para vehículos de nueva fabricación de peso inferior a 3,5 toneladas. (págs. 39-40)
 
 ## Propiedades
 
-- Potencial de Calentamiento Global (PCG / GWP): 4 (frente a 1430 del R134a). (pág. 40).
-- Potencial de Agotamiento del Ozono (PAO / ODP): 0. (pág. 40).
-- Punto de ebullición a 1 bar: -29 ºC. (pág. 39).
-- Temperatura crítica: 95 ºC. (pág. 39).
-- Presión crítica: 36,5 bares (3,65 MPa). (pág. 39).
-- Presenta muy baja toxicidad y baja inflamabilidad. Es térmicamente estable y ofrece un rendimiento térmico equivalente al R134a. (pág. 40).
+- Potencial de calentamiento global muy reducido: PCG (GWP) = 4 a los 100 años (frente a 1430 del R134a), con un índice de eficiencia de 4 frente a 1,4 del R134a. (págs. 39-40)
+- Potencial de agotamiento del ozono nulo: PAO (ODP) = 0. (pág. 40)
+- Temperatura de ebullición: -29 ºC. (pág. 39)
+- Temperatura crítica: 95 ºC. Presión crítica: 36,5 bares (3,65 MPa). (pág. 39)
+- Térmicamente estable, de baja toxicidad y baja inflamabilidad. Rendimiento equivalente al R134a en todos los climas. (págs. 39-40)
 
 ## Dónde se usa y cantidades
 
-Se utiliza en los circuitos de climatización de todos los turismos de nueva homologación desde 2011 y de nueva matriculación desde 2017. (págs. 39, 152).
+Se utiliza como fluido refrigerante ecológico de bajo impacto ambiental en turismos y vehículos comerciales ligeros de nueva homologación. (págs. 39, 152)
 
 ## Compatibilidades y mezclas prohibidas
 
-Compatible con los materiales del circuito del R134a pero exige acoplamientos de carga y estaciones de servicio específicas con identificación propia para evitar contaminación cruzada. (págs. 40, 152).
+Compatible con la tecnología de componentes utilizada para el R134a. (pág. 40)
 
 ## Identificación
 
-Etiqueta adhesiva específica en el vano motor e indicación en las tomas de servicio de alta y baja presión. (pág. 39).
+Gas fluorado HFO incoloro suministrado en envases presurizados identificados para R1234yf. (págs. 39-40)
 
 ## Manipulación, almacenamiento y residuos
 
-Recuperación y reciclaje obligatorios con estaciones automáticas certificadas para R1234yf. (págs. 40, 149).
+Recuperar mediante equipos específicos para evitar emisiones. (págs. 39, 154)
 
 ## Riesgos y normativa
 
-Cumple con la Directiva 2006/40/CE al tener un PCG inferior al límite de. Debido a su clasificación de baja inflamabilidad, deben respetarse las precauciones de seguridad frente a fuentes de ignición o chispas durante el servicio. (págs. 39-40, 152).
+Regulado por la Directiva 2006/40/CE para restringir el uso de gases con PCG superior a. (págs. 39, 149)
