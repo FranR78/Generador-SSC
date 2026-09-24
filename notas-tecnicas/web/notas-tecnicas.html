@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">47 notas · 24/09/2026</p>
+  <p class="sidebar-meta">52 notas · 24/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -259,13 +259,13 @@
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
     <li><a href="#grp-ciclo-frigorifico">Principios físicos de la refrigeración y termodinámica <span class="menu-cuenta">3 fuentes</span></a></li>
     <li><a href="#grp-compresor">Compresor de aire acondicionado <span class="menu-cuenta">7 fuentes</span></a></li>
-    <li><a href="#nt12">NT12 · Condensador</a></li>
+    <li><a href="#grp-condensador">Condensador <span class="menu-cuenta">2 fuentes</span></a></li>
     <li><a href="#nt13">NT13 · Filtro deshidratador</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
     <li><a href="#nt14">NT14 · Transmisor de presión</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
     <li><a href="#nt15">NT15 · Válvula de expansión</a></li>
-    <li><a href="#nt16">NT16 · Evaporador</a></li>
+    <li><a href="#grp-evaporador">Evaporador <span class="menu-cuenta">2 fuentes</span></a></li>
     <li><a href="#nt17">NT17 · Silenciador-depósito receptor</a></li>
     <li><a href="#nt19">NT19 · Tuberías, canalizaciones y juntas de e</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
@@ -292,6 +292,11 @@
     <li><a href="#nt42">NT42 · Climatización por bomba de calor en ve</a></li>
     <li><a href="#nt44">NT44 · Acoplamiento de embrague electromagnét</a></li>
     <li><a href="#nt47">NT47 · Electroválvula de regulación d N280</a></li>
+    <li><a href="#nt49">NT49 · Desmontaje y montaje del condensador</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Distribución de aire</span></li>
+    <li><a href="#nt51">NT51 · Filtro de habitáculo</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
+    <li><a href="#nt52">NT52 · Desmontaje y montaje del evaporador</a></li>
   </ul>
 </nav>
 
@@ -1243,6 +1248,11 @@ Si el compresor se bloquea mecánicamente, el disco de arrastre de chapa se defo
     </details>
   </div>
 
+  <div class="grupo-componente" id="grp-condensador">
+    <div class="grupo-cab"><span class="grupo-nombre">Condensador</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 2 · NT12 · 2. Introducción a la refrigeración.pdf, págs. 20</summary>
   <section id="nt12" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 12 </div>
     <div class="nota-body">
@@ -1273,6 +1283,68 @@ Si el compresor se bloquea mecánicamente, el disco de arrastre de chapa se defo
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 2 · NT48 · 7. Condensadores y evaporadores.pdf, págs. 64-67</summary>
+  <section id="nt48" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 48 </div>
+    <div class="nota-body">
+      <h1>Condensador</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Enfriar ligeramente y licuar el refrigerante gaseoso y caliente procedente del compresor en la parte de alta presión del circuito frigorífico (pág. 64).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>El gas caliente entra por la parte superior del condensador entre 50 ºC y 70 ºC (págs. 64-65). Las aletas absorben el calor del gas y la corriente de aire (de la marcha y forzada por el electroventilador) lo enfría (págs. 64-65). Al enfriarse, el refrigerante se condensa pasando a estado líquido y sale por la parte inferior a unos 10 ºC menos de temperatura que a la entrada (pág. 65).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Temperatura del agente frigorífico a la entrada: entre 50 ºC y 70 ºC en estado gaseoso (pág. 64).</li>
+<li>Temperatura del agente frigorífico a la salida: aproximadamente 10 ºC inferior a la entrada, en estado líquido (pág. 65).</li>
+<li>Volumen de aceite retrazado/retenido en el condensador: 30 cc aproximadamente (pág. 67).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Acumulación de suciedad frontal (polvo, hojarasca, insectos muertos): reduce sensiblemente el rendimiento del aire acondicionado y empeora la refrigeración del motor (pág. 64).</li>
+<li>Deformación de aletas por chorro de agua a presión no perpendicular: obtura la circulación de aire (pág. 64).</li>
+<li>Fugas microscópicas por soldaduras de aluminio debido a dilataciones térmicas en condensadores de flujo paralelo (pág. 65).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Inspeccionar visualmente el estado de limpieza del panel frontal y verificar que las aletas no estén dobladas o taponadas (pág. 64).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Intercambiador térmico de aluminio montado en el frontal del vehículo, delante del radiador de refrigeración del motor (págs. 64-65). Sus conductos se unen mediante aletas para aumentar la superficie de refrigeración (pág. 64).
+- Modelo serpentín: el fluido recorre un único tubo continuo desde la parte superior a la inferior (pág. 65).
+- Modelo de flujo paralelo: el fluido dispone de varios caminos de paso entre entrada y salida (pág. 65). Ofrece un rendimiento superior al aumentar la velocidad de paso del refrigerante, pero es más sensible a las dilataciones térmicas y propenso a fugas microscópicas por las soldaduras de aluminio (pág. 65). Requiere dos electroventiladores (pág. 65).
+- Placa protectora contra impactos: montada con presillas en la parte inferior de algunos modelos para proteger el condensador de impactos de piedras (pág. 67).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <ul>
+<li>Limpiar con agua a presión lanzada de forma estrictamente perpendicular a la superficie del condensador para no doblar las aletas (pág. 64).</li>
+<li>Al sustituirlo, reponer 30 cc de aceite nuevo en el circuito o limpiar el circuito completo según el fabricante (pág. 67).</li>
+<li>Montar juntas tóricas nuevas, colocar las tiras separadoras adhesivas de separación con el radiador y apretar los tornillos al par prescrito (pág. 67).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT48_01</code> Disposición del condensador en el frontal del vehículo delante del radiador de refrigeración y electroventilador — Fuente: 7. Condensadores y evaporadores.pdf, pág. 64</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">7. Condensadores y evaporadores.pdf, págs. 64-67</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
   <section id="nt13" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 13 </div>
@@ -1362,6 +1434,11 @@ Si el compresor se bloquea mecánicamente, el disco de arrastre de chapa se defo
     </div>
   </section>
 
+  <div class="grupo-componente" id="grp-evaporador">
+    <div class="grupo-cab"><span class="grupo-nombre">Evaporador</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 2 · NT16 · 2. Introducción a la refrigeración.pdf, págs. 20-21</summary>
   <section id="nt16" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 16 </div>
     <div class="nota-body">
@@ -1392,6 +1469,70 @@ Si el compresor se bloquea mecánicamente, el disco de arrastre de chapa se defo
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 2 · NT50 · 7. Condensadores y evaporadores.pdf, págs. 64-66, 71</summary>
+  <section id="nt50" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 50 </div>
+    <div class="nota-body">
+      <h1>Evaporador</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Extraer el calor del aire del habitáculo en la unidad climática mediante la evaporación total del agente frigorífico en su interior, enfriando, deshidratando y depurando dicho aire (págs. 64-66).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>El agente frigorífico entra por la parte inferior en estado líquido/distensado tras pasar por la válvula de expansión y entra en ebullición a una temperatura inferior a 0 ºC (pág. 65). El refrigerante absorbe el calor del aire impulsado por la turbina entre las aletas (pág. 65). Al enfriarse el aire por debajo de su punto de rocío, la humedad ambiental se condensa en las aletas frías del evaporador generando agua deshidratada y reteniendo las partículas en suspensión (pág. 65).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Temperatura de ebullición del agente frigorífico: bastante inferior a los 0 ºC de congelación del agua (pág. 65).</li>
+<li>Volumen de aceite retrazado/retenido en el evaporador: 50 cc aproximadamente (pág. 71).</li>
+<li>Purgado de aceite retenido: 3 minutos a 5.000 r.p.m. del motor con A/C y calefacción al máximo y recirculación activada (pág. 65).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Acumulación excesiva o inundación de aceite sintético en el interior del evaporador: disminuye notablemente el rendimiento frigorífico (pág. 65).</li>
+<li>Proliferación de bacterias por acumulación de humedad: provoca mal olor en vehículos sin filtro antipolen (pág. 65).</li>
+<li>Fuga de rendimiento por montaje incorrecto del aislamiento térmico de los tubos o de la válvula de expansión: altera la curva de regulación de la válvula por radiación de calor (pág. 71).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Si la turbina de aire fresco falla o no funciona como mínimo a velocidad lenta, la unidad de control interrumpe el funcionamiento del compresor para evitar la congelación del evaporador (pág. 65).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Para comprobar si el evaporador está inundado de aceite, hacer funcionar el motor a 5.000 r.p.m. durante 3 minutos con el A/C y la calefacción al máximo en modo recirculación. Si el rendimiento frigorífico aumenta tras esta maniobra, indica exceso de aceite en el sistema (pág. 65).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Intercambiador de calor fabricado en aluminio provisto de aletas de refrigeración, situado dentro de la unidad climática del habitáculo, colocado inmediatamente antes del radiador de la calefacción (pág. 66).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <ul>
+<li>Comprobar que el desagüe del agua de condensación esté completamente limpio (pág. 71).</li>
+<li>Verificar que la junta aislante contorneada esté pegada en todo su perímetro sin dañarla durante el montaje (pág. 71).</li>
+<li>Sustituir juntas tóricas, aislar los tubos de empalme y la válvula de expansión, y añadir 50 cc de aceite nuevo tras la sustitución (pág. 71).</li>
+<li>Efectuar un vacío profundo de al menos 45 minutos antes de la recarga (pág. 71).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT50_01</code> Esquema del evaporador con la entrada de agente frigorífico a través de la válvula de expansión y flujo de aire refrigerado — Fuente: 7. Condensadores y evaporadores.pdf, pág. 65</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">7. Condensadores y evaporadores.pdf, págs. 64-66, 71</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
   <section id="nt17" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 17 </div>
@@ -2541,8 +2682,199 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
     </div>
   </section>
 
+  <section id="nt49" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 49 <span class="subtipo">Procedimiento</span></div>
+    <div class="nota-body proceso">
+      <h1>Desmontaje y montaje del condensador</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Sustitución del condensador de aire acondicionado por deterioro o fugas de refrigerante (págs. 66-67).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Recuperación previa completa del agente frigorífico del circuito mediante estación de recarga (pág. 66).</li>
+<li>Vaciado del circuito de refrigeración del motor si el conjunto frontal exige la retirada del radiador (pág. 66).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <ul>
+<li>Estación de servicio para A/C (recuperación y vacío) (págs. 66-67).</li>
+<li>Herramienta manual para desmontaje de paragolpes y racores (pág. 66).</li>
+<li>Tapones para canalizaciones de A/C (pág. 66).</li>
+<li>Juntas tóricas nuevas (pág. 67).</li>
+<li>Tiras separadoras adhesivas térmicas (pág. 67).</li>
+<li>Aceite sintético nuevo para A/C (30 cc) (pág. 67).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Tiempo de vacío profundo: mínimo 45 minutos (pág. 67).</li>
+<li>Volumen de aceite a reposicionar por sustitución del condensador: 30 cc (pág. 67).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobar la estanqueidad de las uniones tras la recarga y verificar el funcionamiento de los electroventiladores con el A/C conectado (págs. 65, 67).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>Obligatorio recuperar el gas antes de abrir el circuito. Taponar inmediatamente las tuberías para prevenir la contaminación por humedad del filtro y del lubricante (págs. 66-67).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Pasos</div>
+        <ol>
+<li>Recuperar el agente frigorífico del sistema con la estación de servicio (pág. 66).</li>
+<li>Vaciar el circuito de refrigeración del motor en los modelos en que sea preciso (pág. 66).</li>
+<li>Desmontar el paragolpes delantero siguiendo las indicaciones del fabricante (pág. 66).</li>
+<li>Desconectar las tuberías de agente frigorífico del condensador y taponar inmediatamente las bocas para impedir la entrada de suciedad y humedad (pág. 66).</li>
+<li>Desconectar manguitos de refrigerante y extraer el módulo frontal completo (radiador, condensador y electroventiladores) si van unidos (pág. 66).</li>
+<li>Separar el condensador del radiador de refrigeración y de la estructura de los electroventiladores (pág. 66).</li>
+<li>Pegar las tiras separadoras adhesivas en el radiador respetando las cotas del fabricante (pág. 67).</li>
+<li>Montar la placa protectora inferior contra impactos sujetándola con sus presillas si la equipa (pág. 67).</li>
+<li>Limpiar los alojamientos de los tubos, colocar juntas tóricas nuevas y apretar los tornillos de sujeción al par prescrito (pág. 67).</li>
+<li>Añadir los 30 cc de aceite correspondientes al condensador (pág. 67).</li>
+<li>Realizar un vacío profundo en el circuito de al menos 45 minutos antes de recargar el refrigerante y el aceite (pág. 67).</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT49_01</code> Despiece del módulo frontal desmontado con radiador, condensador, electroventiladores y canalizaciones — Fuente: 7. Condensadores y evaporadores.pdf, pág. 66</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">7. Condensadores y evaporadores.pdf, págs. 66-67</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt51" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 51 </div>
+    <div class="nota-body">
+      <h1>Filtro de habitáculo</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Filtrar el aire procedente del exterior o del modo recirculación, reteniendo polen, polvo y partículas antes de atravesar el evaporador para mantener la higiene del habitáculo (págs. 65, 68).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Retiene mecánicamente los contaminantes sólidos del aire impulsado por la turbina, evitando que las partículas se adhieran a la matriz húmeda del evaporador (pág. 65).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Frecuencia de sustitución prescrita: al menos una vez al año (pág. 65).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Obstrucción por acumulación de suciedad: reduce el caudal de aire impulsado por los difusores.</li>
+<li>Proliferación de bacterias y mohos en el evaporador por falta de filtrado o humedad acumulada: genera olores desagradables en el interior del vehículo (pág. 65).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Pérdida de caudal de ventilación y aparición de mal olor al conectar el climatizador (pág. 65).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Extraer el cartucho filtrante de su alojamiento en el tablero de instrumentos para inspeccionar visualmente su nivel de colmatación (págs. 65, 68).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Filtro de celulosa o carbón activo (filtro antipolen) alojado en la carcasa de la unidad climática del habitáculo (págs. 65, 68).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <ul>
+<li>Sustituir el filtro antipolen al menos una vez al año (pág. 65).</li>
+<li>Aplicar productos higienizantes antibacterias específicos en el conducto del evaporador si persisten los malos olores (pág. 65).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">7. Condensadores y evaporadores.pdf, págs. 65, 68</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt52" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 52 <span class="subtipo">Procedimiento</span></div>
+    <div class="nota-body proceso">
+      <h1>Desmontaje y montaje del evaporador</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Desmontaje del tablero de instrumentos y extracción de la unidad climática para la sustitución del evaporador por fugas o avería (págs. 68-71).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Recuperación previa completa del agente refrigerante con la estación de carga (pág. 68).</li>
+<li>Desconexión obligatoria de la batería para evitar averías o cortocircuitos durante el desmontaje eléctrico del salpicadero (pág. 68).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <ul>
+<li>Estación de servicio para A/C (recuperación y vacío) (págs. 68, 71).</li>
+<li>Herramienta manual para desmontaje de salpicadero y unidad climática (págs. 68, 70).</li>
+<li>Tapones para tubos de refrigerante (pág. 69).</li>
+<li>Juntas tóricas nuevas (pág. 71).</li>
+<li>Junta aislante perimetral y aislamiento térmico de tubos y válvula de expansión (pág. 71).</li>
+<li>Aceite sintético nuevo para A/C (50 cc) (pág. 71).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Volumen de aceite a añadir por sustitución del evaporador: 50 cc (pág. 71).</li>
+<li>Tiempo de vacío profundo: al menos 45 minutos (pág. 71).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobar la evacuación libre de agua de condensación por el desagüe inferior del vehículo y verificar que el aislamiento térmico no altere la regulación de la válvula de expansión por radiación de calor (pág. 71).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>Desconectar la batería al iniciar los trabajos para evitar desplegados accidentales de airbag o cortocircuitos en el cuadro de instrumentos. Recuperar obligatoriamente el gas refrigerante en la estación de servicio antes de desacoplar la válvula de expansión (págs. 68-69).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Pasos</div>
+        <ol>
+<li>Recuperar el fluido refrigerante mediante la estación de carga (págs. 68, 69).</li>
+<li>Desconectar la batería antes de comenzar a desmontar el habitáculo (pág. 68).</li>
+<li>Desmontar el tablero de instrumentos para acceder a la unidad climática según el manual de taller del vehículo (págs. 68-70).</li>
+<li>Desconectar las tuberías de entrada a la válvula de expansión, desmontar la válvula y taponar inmediatamente todos los conductos (pág. 69).</li>
+<li>Identificar, marcar y desconectar todos los conectores eléctricos, sondas y servomotores del climatizador (págs. 68, 70).</li>
+<li>Extraer la unidad climática completa del vehículo (pág. 70).</li>
+<li>Retirar las presillas, grapas y tornillos de fijación para separar las dos mitades de la carcasa del evaporador (págs. 70-71).</li>
+<li>Comprobar el estado del aislamiento térmico y extraer el evaporador con cuidado de no dañarlo (págs. 70-71).</li>
+<li>Limpiar el conducto/tubo flexible de desagüe del agua de condensado (pág. 71).</li>
+<li>Verificar que la junta aislante perimetral esté pegada en todo el contorno del nuevo evaporador antes de alojarlo en la carcasa (pág. 71).</li>
+<li>Montar el soporte y el aislamiento térmico sobre los tubos de empalme y la válvula de expansión (pág. 71).</li>
+<li>Unir las dos mitades de la carcasa comprobando el correcto asiento de los aislantes y sustituir las juntas tóricas de las tuberías (pág. 71).</li>
+<li>Añadir los 50 cc de aceite sintético correspondientes al evaporador (pág. 71).</li>
+<li>Realizar un vacío profundo en el circuito de al menos 45 minutos antes de efectuar la recarga de refrigerante y aceite (pág. 71).</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT52_01</code> Despiece y ubicación de componentes del climatizador en el tablero de instrumentos y habitáculo — Fuente: 7. Condensadores y evaporadores.pdf, págs. 68-69</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT52_02</code> Apertura de las dos mitades de la carcasa de la unidad climática mostrando la posición del evaporador y su aislamiento térmico — Fuente: 7. Condensadores y evaporadores.pdf, pág. 70</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">7. Condensadores y evaporadores.pdf, págs. 68-71</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    47 notas técnicas · generado el 24/09/2026.
+    52 notas técnicas · generado el 24/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
