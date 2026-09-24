@@ -1,85 +1,84 @@
 ```yaml
-tipo: componente
-titulo: Servomotor de trampilla con bus LIN
-entidad: servomotor-trampilla
-variante: bus-lin
+tipo: fundamento
+titulo: Sistemas de climatización automática e interacción de entornos
+entidad: regulacion-automatica
 area: climatizacion
-sistema: distribucion-aire
-codigo: J255
-fabricante: Audi
-fuente: "SSP 484 A7 Info y Clima (arrastrado) 2 copia.pdf"
-paginas: "52-53"
-forma_parte_de: unidad-control-climatizador
-relacionados: [unidad-control-climatizador, autodiagnostico-climatizador]
-palabras: [servomotor, bus LIN, conector de 4 pines, direccionamiento automático, terminal 30]
+sistema: control-climatizacion
+fabricante: Valeo
+fuente: "LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF"
+paginas: "1-7"
+relacionados: [unidad-control-climatizador, distribucion-aire]
+palabras: [climatización automática, confort térmico, temperatura de consigna, entornos del vehículo, tarjeta electrónica]
 ```
 
-## Misión
-Accionar y posicionar las trampillas individuales del sistema de climatización mediante la recepción de órdenes e información de adaptación a través del bus LIN. (pág. 53).
+## Objeto
+Acondicionar el habitáculo del vehículo para alcanzar y mantener la temperatura de consigna deseada de forma automatizada. (págs. 1-2)
 
-## Tipos y características
-Servomotores conectados en serie a la unidad de control Climatronic J255 o a la unidad de control e indicación del climatizador trasero E265 mediante el bus LIN. Incorporan un conector de 4 pines:
-- Pin A1: terminal 31 (masa).
-- Pin A2: LIN in (entrada de la línea de datos bus LIN).
-- Pin A3: LIN out (salida de la línea de datos bus LIN).
-- Pin A4: terminal 30 (alimentación de positivo permanente). (págs. 52-53).
+## Fundamento
+El sistema de climatización automática procesa los datos provinientes de diferentes entornos del vehículo (habitáculo, salpicadero, conjunto A/C, motor térmico, circuito de calor y circuito de frío) a través de una tarjeta electrónica o centralita para controlar la temperatura, el caudal y la distribución de aire. (págs. 1-6)
 
-## Principio de funcionamiento
-Se adaptan y activan mediante la conexión en serie a la línea de datos bus LIN. Cada servomotor recibe la asignación de su trampilla correspondiente mediante una codificación de dirección obtenida durante el proceso de direccionamiento automático (auto-addressing). La señal de datos entra por el pin A2 (LIN in) y se transmite hacia el siguiente servomotor de la serie por el pin A3 (LIN out). (págs. 52-53).
+## Desarrollo
+El funcionamiento global del sistema se estructura mediante las interacciones de sus entornos funcionales:
+- **Habitáculo y salpicadero:** El aire soplado por los difusores se mezcla con el aire ambiente para alcanzar la temperatura de consigna. La calidad del aislamiento térmico, la temperatura inicial de las paredes y la masa térmica del salpicadero influyen directamente en el tiempo necesario para lograr la convergencia térmica. (págs. 1-2)
+- **Conjunto A/C (distribución de trampillas):** Enlaza el compartimento motor con el habitáculo. Alberga el evaporador, el radiador de calefacción, el impulsor de aire y las trampillas con sus correspondientes actuadores. (págs. 3, 5, 6)
+- **Motor térmico y circuitos térmicos:** El motor arrastra mediante correa el compresor y la bomba de líquido refrigerante. El circuito de calor aporta la energía térmica mediante el radiador de calefacción. (págs. 4, 5)
+- **Interacción de señales con la centralita:**
+  - *Sonda de habitáculo:* Informa de la temperatura interior instantánea para verificar si se ha alcanzado la consigna. (págs. 6, 7)
+  - *Sondas de aire soplado y exterior:* Determinan la posición adecuada de la trampilla de mezcla, el caudal de aire y el modo de distribución. (págs. 6, 7)
+  - *Sonda del evaporador:* Detecta la formación de hielo e informa a la centralita para cortar el compresor en sistemas de cilindrada fija. (págs. 3, 7)
+  - *Presostato:* Supervisa la presión del fluido frigorífico; ordena el corte del compresor ante presiones anormales (excesiva o demasiado baja) y conecta la segunda velocidad del GMV si la presión es elevada en el condensador. (págs. 5, 7)
+  - *Termocontacto y módulo de refrigeración:* Ordenan la activación de la segunda velocidad del GMV si la temperatura del líquido refrigerante es demasiado alta. (págs. 4, 7)
+  - *Módulo de inyección:* Informa de una aceleración brusca para desacoplar el compresor y no restar potencia al motor, e incrementa el régimen de ralentí cuando el compresor entra en servicio para evitar que el motor se cale. (págs. 4, 7)
 
-📷 IMAGEN: Esquema de conexión en serie del conector de 4 pines (A1 terminal 31, A2 LIN in, A3 LIN out, A4 terminal 30) entre servomotores — Fuente: SSP 484 A7 Info y Clima (arrastrado) 2 copia.pdf, pág. 53
+📷 IMAGEN: Esquema general de interacciones entre los entornos del vehículo y la tarjeta electrónica del sistema de climatización — Fuente: LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, pág. 7
 
-## Valores de trabajo
-Alimentación eléctrica por terminal 30 (positivo permanente) y terminal 31 (masa). (pág. 53).
+## Valores de referencia
+No documentado en fuentes.
 
-## Anomalías frecuentes
-Interrupción de la línea del bus LIN en el servomotor, o intercambio accidental de conectores o de posiciones físicas entre servomotores durante trabajos de reparación. (pág. 53).
-
-## Comportamiento en avería
-- Si la línea del bus LIN se interrumpe en un servomotor, se indican como averiados ese servomotor y todos los servomotores conectados en serie a continuación (aguas abajo / downstream).
-- Si se intercambian los conectores de dos o más servomotores, mantendrán sus funciones anteriores hasta el siguiente ciclo de direccionamiento automático; tras dicho ciclo, se les asignarán trampillas incorrectas al no coincidir el orden de los conectores en el mazo de cables.
-- Si se intercambia la ubicación física de dos servomotores, no funcionarán correctamente con la asignación de dirección antigua en la nueva posición.
-- Ante cualquier fallo se registra un código de avería (DTC) en la memoria de averías. (pág. 53).
-
-## Cómo comprobarlo
-Leer y consultar la memoria de averías (DTC) utilizando la herramienta de diagnóstico (VAS Scan Tool). (pág. 53).
-
-## Mantenimiento
-Respetar el orden correcto de los conectores en el mazo de cables y ejecutar el ciclo de direccionamiento automático tras sustituir o permutar servomotores. (pág. 53).
+## Errores de concepto frecuentes
+- Creer que la temperatura interior depende únicamente de la temperatura del aire soplado, omitiendo la influencia térmica inicial del salpicadero y de las paredes del habitáculo. (págs. 1-2)
+- Suponer que la centralita de climatización funciona de manera aislada sin comunicarse con los módulos electrónicos de inyección y refrigeración del motor. (págs. 4, 7)
 
 ---
 
 ```yaml
-tipo: fundamento
-titulo: Direccionamiento automático de servomotores en bus LIN
-entidad: regulacion-automatica
+tipo: componente
+titulo: Tarjeta electrónica de climatización
+entidad: unidad-control-climatizador
 area: climatizacion
 sistema: control-climatizacion
-codigo: J255
-fabricante: Audi
-fuente: "SSP 484 A7 Info y Clima (arrastrado) 2 copia.pdf"
-paginas: "52-53"
-relacionados: [servomotor-trampilla, unidad-control-climatizador, autodiagnostico-climatizador]
-palabras: [auto-addressing, direccionamiento automático, bus LIN, conexión en serie, codificación de dirección]
+fabricante: Valeo
+fuente: "LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF"
+paginas: "6-8"
+forma_parte_de: control-climatizacion
+relacionados: [regulacion-automatica, servomotor-trampilla]
+palabras: [tarjeta electrónica, centralita, calculador, señales de entrada, señales de salida, conexiones bidireccionales]
 ```
 
-## Objeto
-Asignar direcciones individuales a cada servomotor de trampilla conectado en serie en el bus LIN para su adaptación y control desde la unidad Climatronic J255 o E265. (pág. 53).
+## Misión
+Gobernar y coordinar automáticamente el funcionamiento del sistema de climatización procesando la información de las sondas y captadores para enviar órdenes de control a los actuadores, impulsor, compresor y electroventiladores. (págs. 6-8)
 
-## Fundamento
-Los servomotores están enlazados en serie a través del bus LIN. Para que la unidad de mando identifique qué trampilla acciona cada servomotor, se ejecuta un proceso de codificación de dirección denominado direccionamiento automático (auto-addressing). (pág. 53).
+## Tipos y características
+Calculador o centralita electrónica ubicada habitualmente detrás de los mandos y de la pantalla de presentación del climatizador en el salpicadero. Dispone de canales de entrada, salidas de potencia e interfaces de comunicación bidireccionales. (págs. 6, 8)
 
-## Desarrollo
-1. Estructura de la conexión: La línea de datos bus LIN entra en cada servomotor por el pin A2 (LIN in) y sale hacia el siguiente por el pin A3 (LIN out), compartiendo todos la alimentación por terminal 30 (pin A4) y terminal 31 (pin A1). (pág. 53).
-2. Proceso de asignación: La unidad de control J255 o E265 asigna las direcciones a las trampillas respetando el orden físico de los conectores en el mazo de cables de la conexión en serie. (pág. 53).
-3. Gestión de averías en la red LIN:
-   - Si se interrumpe el bus LIN en un servomotor, se detecta avería en dicho servomotor y en todos los situados a continuación en la serie (aguas abajo). (pág. 53).
-   - Cualquier fallo genera un registro de avería (DTC) en la memoria de averías accesible por diagnóstico. (pág. 53).
+## Principio de funcionamiento
+Recibe las órdenes del usuario desde los mandos del cuadro y analiza de forma continua las señales de entrada procedentes de las sondas térmicas (habitáculo, exterior, aire soplado, evaporador) y del presostato. Con estos datos, emite señales de salida para posicionar los actuadores de las trampillas, ajustar la velocidad del impulsor de aire, acoplar o desacoplar el compresor y activar el electroventilador (GMV). Mantiene enlaces bidireccionales de intercambio de datos con el módulo de inyección del motor y el módulo electrónico de refrigeración. (págs. 6-8)
 
-## Valores de referencia
-No documentado en fuentes. (págs. 52-53).
+📷 IMAGEN: Esquema de la tarjeta electrónica identificando las entradas de sondas/presostato, salidas hacia actuadores/GMV/compresor y enlaces bidireccionales con inyección y refrigeración — Fuente: LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, pág. 8
 
-## Errores de concepto frecuentes
-Creer que permutar la posición física de dos servomotores soluciona un fallo; no funcionarán con la dirección antigua en la nueva ubicación y, tras el siguiente ciclo de auto-addressing, se les asignarán las trampillas correspondientes al orden físico de los conectores del mazo de cables. (pág. 53).
+## Valores de trabajo
+No documentado en fuentes.
 
-COBERTURA: documento «SSP 484 A7 Info y Clima (arrastrado) 2 copia.pdf», páginas 52 a 53 de 53. [completo]
+## Anomalías frecuentes
+No documentado en fuentes.
+
+## Comportamiento en avería
+No documentado en fuentes.
+
+## Cómo comprobarlo
+No documentado en fuentes.
+
+## Mantenimiento
+No documentado en fuentes.
+
+COBERTURA: documento «LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF», páginas 1 a 8 de 8. [completo]

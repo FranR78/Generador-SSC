@@ -7200,22 +7200,22 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
       <h1>Sistemas de climatización automática e interacción de entornos</h1>
       <div class="apartado">
         <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
-        <p>El sistema de climatización automática procesa datos procedentes de diversos entornos del vehículo (habitáculo, salpicadero, conjunto A/C, motor térmico, circuito de frío y circuito de calor) mediante una centralita electrónica para regular el flujo de aire, la temperatura y la distribución. (págs. 1-6)</p>
+        <p>El sistema de climatización automática procesa los datos provinientes de diferentes entornos del vehículo (habitáculo, salpicadero, conjunto A/C, motor térmico, circuito de calor y circuito de frío) a través de una tarjeta electrónica o centralita para controlar la temperatura, el caudal y la distribución de aire. (págs. 1-6)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
-        <p>El funcionamiento integrado del sistema se organiza a través de las interacciones entre sus entornos:</p>
+        <p>El funcionamiento global del sistema se estructura mediante las interacciones de sus entornos funcionales:</p>
 <ul>
-<li><strong>Habitáculo y salpicadero:</strong> El aire soplado por los difusores se mezcla con el aire ambiente para alcanzar la temperatura de consigna. La masa térmica del salpicadero y las paredes influye directamente en el tiempo necesario para lograr el equilibrio térmico. (págs. 1-2)</li>
-<li><strong>Conjunto A/C:</strong> Aloja el evaporador y el radiador de calefacción. Contiene el impulsor de aire y los actuadores que mueven las trampillas según las órdenes de la centralita. (págs. 3, 5)</li>
-<li><strong>Motor térmico y circuitos térmicos:</strong> El motor arrastra el compresor y la bomba de líquido refrigerante. El circuito de calor aporta la energía térmica a través del radiador de calefacción. (pág. 4)</li>
+<li><strong>Habitáculo y salpicadero:</strong> El aire soplado por los difusores se mezcla con el aire ambiente para alcanzar la temperatura de consigna. La calidad del aislamiento térmico, la temperatura inicial de las paredes y la masa térmica del salpicadero influyen directamente en el tiempo necesario para lograr la convergencia térmica. (págs. 1-2)</li>
+<li><strong>Conjunto A/C (distribución de trampillas):</strong> Enlaza el compartimento motor con el habitáculo. Alberga el evaporador, el radiador de calefacción, el impulsor de aire y las trampillas con sus correspondientes actuadores. (págs. 3, 5, 6)</li>
+<li><strong>Motor térmico y circuitos térmicos:</strong> El motor arrastra mediante correa el compresor y la bomba de líquido refrigerante. El circuito de calor aporta la energía térmica mediante el radiador de calefacción. (págs. 4, 5)</li>
 <li><strong>Interacción de señales con la centralita:</strong><ul>
-<li><em>Sonda de habitáculo:</em> Mide la temperatura interior real instantánea. (pág. 6)</li>
-<li><em>Sondas de aire soplado y exterior:</em> Determinan la posición de la trampilla de mezcla, el caudal de soplado y la distribución. (págs. 6-7)</li>
-<li><em>Sonda del evaporador:</em> Detecta la formación de hielo y ordena el corte del compresor en sistemas de cilindrada fija. (págs. 3, 7)</li>
-<li><em>Presostato:</em> Supervisa las presiones del fluido frigorífico; desacopla el compresor ante presiones anómalas y activa la velocidad rápida del electroventilador (GMV) si la presión sube en el condensador. (págs. 5, 7)</li>
-<li><em>Termocontacto y módulo de refrigeración:</em> Activan la velocidad rápida del GMV cuando la temperatura del refrigerante del motor es excesiva. (págs. 4, 7)</li>
-<li><em>Módulo de inyección:</em> Desconecta temporalmente el compresor en aceleraciones intensas para no restar potencia al motor y eleva el régimen de ralentí cuando el compresor entra en servicio. (págs. 4, 7)</li>
+<li><em>Sonda de habitáculo:</em> Informa de la temperatura interior instantánea para verificar si se ha alcanzado la consigna. (págs. 6, 7)</li>
+<li><em>Sondas de aire soplado y exterior:</em> Determinan la posición adecuada de la trampilla de mezcla, el caudal de aire y el modo de distribución. (págs. 6, 7)</li>
+<li><em>Sonda del evaporador:</em> Detecta la formación de hielo e informa a la centralita para cortar el compresor en sistemas de cilindrada fija. (págs. 3, 7)</li>
+<li><em>Presostato:</em> Supervisa la presión del fluido frigorífico; ordena el corte del compresor ante presiones anormales (excesiva o demasiado baja) y conecta la segunda velocidad del GMV si la presión es elevada en el condensador. (págs. 5, 7)</li>
+<li><em>Termocontacto y módulo de refrigeración:</em> Ordenan la activación de la segunda velocidad del GMV si la temperatura del líquido refrigerante es demasiado alta. (págs. 4, 7)</li>
+<li><em>Módulo de inyección:</em> Informa de una aceleración brusca para desacoplar el compresor y no restar potencia al motor, e incrementa el régimen de ralentí cuando el compresor entra en servicio para evitar que el motor se cale. (págs. 4, 7)</li>
 </ul>
 </li>
 </ul>
@@ -7227,13 +7227,13 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
       <div class="apartado">
         <div class="apartado-titulo">Errores de concepto frecuentes</div>
         <ul>
-<li>Asumir que la temperatura interior depende exclusivamente de la temperatura del aire soplado, sin considerar la influencia térmica inicial de las paredes del habitáculo y del salpicadero. (págs. 1-2)</li>
-<li>Considerar que la centralita de climatización funciona aislada del sistema de gestión del motor térmico y de la refrigeración. (págs. 4, 7)</li>
+<li>Creer que la temperatura interior depende únicamente de la temperatura del aire soplado, omitiendo la influencia térmica inicial del salpicadero y de las paredes del habitáculo. (págs. 1-2)</li>
+<li>Suponer que la centralita de climatización funciona de manera aislada sin comunicarse con los módulos electrónicos de inyección y refrigeración del motor. (págs. 4, 7)</li>
 </ul>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT307_01</code> Diagrama general de interacciones entre los entornos del vehículo y la tarjeta electrónica de climatización — Fuente: LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, pág. 6</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT307_01</code> Esquema general de interacciones entre los entornos del vehículo y la tarjeta electrónica del sistema de climatización — Fuente: LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, pág. 7</span></div>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
@@ -17955,19 +17955,19 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
       <h1>Tarjeta electrónica de climatización</h1>
       <div class="apartado">
         <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Procesar las señales de las sondas y captadores para calcular y enviar las órdenes de activación hacia los actuadores de trampillas, el impulsor de aire, el electroventilador y el compresor. (págs. 6-8)</p>
+        <p>Gobernar y coordinar automáticamente el funcionamiento del sistema de climatización procesando la información de las sondas y captadores para enviar órdenes de control a los actuadores, impulsor, compresor y electroventiladores. (págs. 6-8)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>Recibe las solicitudes del usuario desde el tablero de mandos y analiza de forma continua las señales de entrada de las sondas térmicas (habitáculo, exterior, aire soplado, evaporador) y del presostato. Con esta información, emite señales de salida para posicionar los actuadores de las trampillas, variar la velocidad del impulsor de aire, acoplar o desacoplar el compresor y activar el electroventilador (GMV). Mantiene comunicación bidireccional con el módulo de inyección del motor y el módulo electrónico de refrigeración. (págs. 6-8)</p>
+        <p>Recibe las órdenes del usuario desde los mandos del cuadro y analiza de forma continua las señales de entrada procedentes de las sondas térmicas (habitáculo, exterior, aire soplado, evaporador) y del presostato. Con estos datos, emite señales de salida para posicionar los actuadores de las trampillas, ajustar la velocidad del impulsor de aire, acoplar o desacoplar el compresor y activar el electroventilador (GMV). Mantiene enlaces bidireccionales de intercambio de datos con el módulo de inyección del motor y el módulo electrónico de refrigeración. (págs. 6-8)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Tipos y características</div>
-        <p>Centralita o calculador electrónico equipado con microprocesador, ubicado físicamente en el tablero de mandos detrás de la pantalla y de los botones de control. Dispone de canales de entrada, salida y líneas de comunicación bidireccionales. (págs. 6, 8)</p>
+        <p>Calculador o centralita electrónica ubicada habitualmente detrás de los mandos y de la pantalla de presentación del climatizador en el salpicadero. Dispone de canales de entrada, salidas de potencia e interfaces de comunicación bidireccionales. (págs. 6, 8)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT308_01</code> Esquema del calculador electrónico indicando los canales de entrada, salida y enlaces bidireccionales — Fuente: LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, pág. 8</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT308_01</code> Esquema de la tarjeta electrónica identificando las entradas de sondas/presostato, salidas hacia actuadores/GMV/compresor y enlaces bidireccionales con inyección y refrigeración — Fuente: LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, pág. 8</span></div>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
