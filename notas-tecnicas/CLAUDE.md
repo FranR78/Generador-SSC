@@ -40,9 +40,11 @@ no lo está, y son tres palabras que en automoción salen a todas horas.
 Markdown de las notas; la maquetación es determinista. Es lo que hace que el
 dashboard sea reproducible y que una nota mal generada no rompa la página.
 
-**Los duplicados se avisan, no se fusionan.** `construir.py` detecta notas que
-tratan de lo mismo y las lista al final. Fusionarlas es decisión del profesor,
-con sus capturas y sus fuentes. El sistema no decide qué versión sobrevive.
+**Fusión: una maestra por entidad (`maestras/`, docs/FUSION.md).** Sustituye a
+sus fichas de fuente (`fusionadas:`), que se quedan en `notas/`. Nace
+`estado: borrador`; la pasa a `revisada` él. Ningún dato de las fuentes puede
+faltar: `generador/auditar_fusion.py` lo comprueba sin IA. Las cifras que no
+cuadran entre fuentes van a «Discrepancias», nunca se elige una en silencio.
 
 **Las capturas se emparejan por el nombre del archivo**, y ese nombre exacto
 (`NT21_02`) se enseña al alumnado en una etiqueta dentro de la nota. No hay

@@ -20,6 +20,7 @@ on:
     paths:
       - 'notas-tecnicas/entrada/**'
       - 'notas-tecnicas/notas/**'
+      - 'notas-tecnicas/maestras/**'
       - 'notas-tecnicas/imagenes/**'
       - 'notas-tecnicas/generador/**'
       - '.github/workflows/notas-tecnicas.yml'
@@ -54,6 +55,13 @@ jobs:
 
       - name: Importar lo que haya en entrada/
         run: python3 generador/procesar_entrada.py
+
+      - name: Auditar las notas maestras (ningún dato perdido)
+        run: |
+          for f in maestras/*.md; do
+            [ -e "$f" ] || continue
+            python3 generador/auditar_fusion.py "$f" || echo "::warning::$f ha perdido datos de sus fuentes: revísala"
+          done
 
       - name: Comprobar las fichas antes de generar nada
         run: python3 generador/construir.py --validar

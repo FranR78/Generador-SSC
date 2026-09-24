@@ -21,6 +21,7 @@ import imagenes as mod_imagenes
 
 RAIZ = Path(__file__).resolve().parent.parent
 DIR_NOTAS = RAIZ / "notas"
+DIR_MAESTRAS = RAIZ / "maestras"   # una nota fusionada por entidad (docs/FUSION.md)
 DIR_WEB = RAIZ / "web"
 DIR_IMAGENES = RAIZ / "imagenes"
 
@@ -211,6 +212,8 @@ class Nota:
         self.forma_parte_de = str(meta.get("forma_parte_de", "") or "").strip()
         self.relacionados = meta.get("relacionados") or []
         self.palabras = meta.get("palabras") or []
+        self.estado = str(meta.get("estado", "") or "").strip()
+        self.fusionadas = [int(x) for x in (meta.get("fusionadas") or [])]
         if self.tipo not in ("elemento", "proceso"):
             raise ValueError(f"tipo '{self.tipo}' desconocido: usa 'elemento' o 'proceso'")
         if self.tipo == "proceso" and self.subtipo not in SUBTIPOS:
@@ -553,11 +556,17 @@ def cargar():
     ALIAS, DISTINTOS, PLEGAR = cargar_alias()
     INDICES = cargar_indices()
     notas, errores = [], []
-    for ruta in sorted(DIR_NOTAS.glob("*.md")):
+    rutas = sorted(DIR_NOTAS.glob("*.md")) + sorted(DIR_MAESTRAS.glob("*.md"))
+    for ruta in rutas:
         try:
             notas.append(Nota(ruta))
         except ValueError as e:
             errores.append(f"{ruta.name}: {e}")
+
+    # Una maestra sustituye a sus fichas de fuente en el dashboard y en el
+    # portal. Las fichas siguen en notas/ (trazabilidad y refusión).
+    tapadas = {nt for n in notas for nt in n.fusionadas}
+    notas = [n for n in notas if n.nt not in tapadas]
 
     vistos, ids = {}, {}
     for n in notas:
@@ -578,7 +587,7 @@ def cargar():
     return notas, errores
 
 
-PAGINA = re.compile(r"\s*\((p[áa]gs?\.?\s*[^()]{1,40})\)")
+PAGINA = re.compile(r"\s*\(([^()]{0,60}?\bp[áa]gs?\.?\s*[^()]{1,60})\)")
 PELIGROSO = re.compile(r"<\s*(script|style|iframe|object|embed)[^>]*>.*?<\s*/\s*\1\s*>|\son\w+=\"[^\"]*\"",
                        re.I | re.S)
 
@@ -726,6 +735,8 @@ def volcar_json(notas):
             "ubicacion": n.ubicacion,
             "fuentes": n.fuentes,
             "clase": n.clase,
+            "estado": n.estado,
+            "fusionadas": n.fusionadas,
             "variante": n.variante,
             "area": n.area,
             "sistema": n.sistema,
