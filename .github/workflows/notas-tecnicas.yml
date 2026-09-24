@@ -72,4 +72,12 @@ jobs:
             exit 0
           fi
           git commit -m "Notas técnicas: regenerar tras los últimos cambios"
-          git push
+          # La extensión sube el siguiente PDF mientras esto trabaja: el push
+          # choca («fetch first»). Se integra lo nuevo y se reintenta. Lo que
+          # llega solo añade archivos en entrada/, así que el rebase no choca.
+          for i in 1 2 3 4 5; do
+            git push && exit 0
+            sleep $((i * 3))
+            git pull --rebase origin main || exit 1
+          done
+          exit 1
