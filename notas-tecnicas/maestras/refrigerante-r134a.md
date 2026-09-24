@@ -165,6 +165,6 @@ Es el fluido de los circuitos cerrados de aire acondicionado de turismos y vehí
 
 ## Imágenes requeridas
 
-- Curvas comparativas de presión-temperatura del R134a y el R1234yf — Fuente: 3. Refrigerantes.pdf, pág. 26
-- Etiqueta identificativa de un vehículo con R134a y cantidad de carga — Fuente: 3. Refrigerantes.pdf, pág. 27
-- Cabecera de la tabla de cargas Serca en gramos — Fuente: Cargas Aire Acondicionado.pdf, pág. 2
+- [NT22_01] Curvas comparativas de presión-temperatura del R134a y el R1234yf — Fuente: 3. Refrigerantes.pdf, pág. 26
+- [NT22_02] Etiqueta identificativa de un vehículo con R134a y cantidad de carga — Fuente: 3. Refrigerantes.pdf, pág. 27
+- [NT363_01] Cabecera de la tabla de cargas Serca en gramos — Fuente: Cargas Aire Acondicionado.pdf, pág. 2

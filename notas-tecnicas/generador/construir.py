@@ -276,6 +276,10 @@ class Nota:
         return re.sub(r"\s+", " ", f"{self.titulo} {self.codigo} {plano}").strip()
 
 
+HUECO_AJENO = re.compile(r"^\s*\[NT(\d+)_(\d+)\]\s*")
+TODAS_CAPTURAS = {}   # {nt: [(orden, pie, ruta)]}; lo rellena main()
+
+
 def render_imagenes(nota, html_str, capturas):
     """Empareja cada hueco declarado con su captura, por número de orden.
 
@@ -290,6 +294,29 @@ def render_imagenes(nota, html_str, capturas):
     for i, hueco in enumerate(huecos, start=1):
         descripcion = re.sub(r"^\s*📷\s*(IMAGEN:)?\s*", "", hueco.strip(), flags=re.I)
         nombre = f"NT{nota.nt}_{i:02d}"
+
+        # En una maestra el hueco conserva el nombre de su ficha de fuente
+        # («[NT22_01] …»): la captura que ya subió el alumnado sigue valiendo
+        # y el nombre no cambia aunque se refusione.
+        ajeno = HUECO_AJENO.match(descripcion)
+        if ajeno:
+            descripcion = descripcion[ajeno.end():]
+            nt_o, orden_o = int(ajeno.group(1)), int(ajeno.group(2))
+            nombre = f"NT{nt_o}_{orden_o:02d}"
+            cap = {o: (p, r) for o, p, r in TODAS_CAPTURAS.get(nt_o, ())}.get(orden_o)
+            if cap:
+                pie, ruta = cap
+                uri, _ = mod_imagenes.incrustar(ruta)
+                leyenda = pie or re.sub(r"<[^>]+>", "", descripcion)
+                salida.append(
+                    f'<figure class="captura"><img src="{uri}" alt="{esc(leyenda[:120])}" '
+                    f'loading="lazy"><figcaption><strong>{nombre}</strong> · {leyenda}'
+                    f"</figcaption></figure>")
+            else:
+                salida.append(
+                    f'<div class="img-pendiente"><span class="icono">📷</span>'
+                    f'<span><code class="nombre-archivo">{nombre}</code> {descripcion}</span></div>')
+            continue
 
         if i in porOrden:
             pie, ruta = porOrden.pop(i)
@@ -829,7 +856,8 @@ def main():
         return
 
     capturas, descartes = mod_imagenes.recopilar(DIR_IMAGENES)
-    numeros = {n.nt for n in notas}
+    TODAS_CAPTURAS.update(capturas)
+    numeros = {n.nt for n in notas} | {nt for n in notas for nt in n.fusionadas}
 
     if capturas:
         total_fotos = sum(len(v) for v in capturas.values())

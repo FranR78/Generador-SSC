@@ -1545,6 +1545,9 @@
         return a.html.replace(/<\/?ul>/g, '').replace(/<li>([\s\S]*?)<\/li>/g, function(_, desc){
           i++;
           var nombre = 'NT' + nt + '_' + (i < 10 ? '0' : '') + i;
+          // En una maestra, el hueco trae el nombre de su ficha de origen.
+          var ajeno = /^\s*\[(NT\d+_\d+)\]\s*/.exec(desc);
+          if(ajeno){ nombre = ajeno[1]; desc = desc.slice(ajeno[0].length); }
           return '<div class="foto-hueco">📷<span>¿Tienes esta captura? Súbela a la carpeta de capturas como <code>' +
                  nombre + '.jpg</code><br>' + desc + '</span></div>';
         });
