@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-24",
- "total": 427,
+ "total": 431,
  "grupos": [
   "Acceso y arranque",
   "Calefacción",
@@ -2421,6 +2421,74 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema general del circuito del agente frigorífico con intercambiador de calor interno, depósito de líquido con secador, sensor G395 y conductos de alta y baja presión — Fuente: SSP 484 A7 Info y Clima (arrastrado).pdf, pág. 50",
      "html": "<ul>\n<li>Esquema general del circuito del agente frigorífico con intercambiador de calor interno, depósito de líquido con secador, sensor G395 y conductos de alta y baja presión — Fuente: SSP 484 A7 Info y Clima (arrastrado).pdf, pág. 50</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.ciclo-frigorifico.cd",
+   "nt": 438,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ciclo-frigorifico",
+   "seccion": "2. Fundamentos",
+   "subgrupo": "",
+   "titulo": "Circuito frigorífico del Autoclima y aire acondicionado manual",
+   "codigo": "",
+   "menu": "Circuito frigorífico del Autoclima y a",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "cd.pdf, págs. 7",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "condensador",
+    "filtro-deshidratador",
+    "valvula-expansion",
+    "evaporador",
+    "refrigerante-r134a"
+   ],
+   "palabras": [
+    "circuito frigorifico",
+    "r134a",
+    "750g",
+    "silenciador",
+    "compresor autorregulado",
+    "44 bares"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Generar el salto térmico necesario para enfriar y deshumectar el aire destinado al habitáculo. (pág. 7)",
+     "html": "<p>Generar el salto térmico necesario para enfriar y deshumectar el aire destinado al habitáculo. <span class=\"pag\">pág. 7</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Ciclo de compresión y expansión de refrigerante R134a con intercambio térmico en condensador y evaporador. (pág. 7)",
+     "html": "<p>Ciclo de compresión y expansión de refrigerante R134a con intercambio térmico en condensador y evaporador. <span class=\"pag\">pág. 7</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El circuito frigorífico consta de los siguientes componentes: Condensador: ubicado por delante del radiador del líquido refrigerante. Filtro deshidratador: retiene humedad, filtra residuos de abrasión y evita la formación de burbujas. Válvula de expansión: controla la presión y el caudal del fluido. Evaporador: ubicado en la unidad climática para el intercambio térmico. Compresor: de 7 cilindros, del tipo autorregulado, arrastrado por correa Poly V y acoplamiento magnético. Incorpora una válvula de seguridad tarada a 44 bares. Presostato/Transmisor: conmutador F129 (diésel) o transmisor G65 (gasolina) en la línea de alta. Silenciador: ubicado en la línea de baja presión, cerca del compresor, para amortiguar el ruido de las ondas de presión entre la válvula de expansión y el compresor. (pág. 7)",
+     "html": "<p>El circuito frigorífico consta de los siguientes componentes:</p>\n<ul>\n<li>Condensador: ubicado por delante del radiador del líquido refrigerante.</li>\n<li>Filtro deshidratador: retiene humedad, filtra residuos de abrasión y evita la formación de burbujas.</li>\n<li>Válvula de expansión: controla la presión y el caudal del fluido.</li>\n<li>Evaporador: ubicado en la unidad climática para el intercambio térmico.</li>\n<li>Compresor: de 7 cilindros, del tipo autorregulado, arrastrado por correa Poly V y acoplamiento magnético. Incorpora una válvula de seguridad tarada a 44 bares.</li>\n<li>Presostato/Transmisor: conmutador F129 (diésel) o transmisor G65 (gasolina) en la línea de alta.</li>\n<li>Silenciador: ubicado en la línea de baja presión, cerca del compresor, para amortiguar el ruido de las ondas de presión entre la válvula de expansión y el compresor. <span class=\"pag\">pág. 7</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Carga de refrigerante: 750 ± 50 gramos de R134a. Tarado de la válvula de seguridad del compresor: 44 bares. (pág. 7)",
+     "html": "<ul>\n<li>Carga de refrigerante: 750 ± 50 gramos de R134a.</li>\n<li>Tarado de la válvula de seguridad del compresor: 44 bares. <span class=\"pag\">pág. 7</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del circuito frigorífico con condensador, filtro, válvula de expansión, evaporador, compresor y silenciador — Fuente: cd.pdf, pág. 7",
+     "html": "<ul>\n<li>Esquema del circuito frigorífico con condensador, filtro, válvula de expansión, evaporador, compresor y silenciador — Fuente: cd.pdf, pág. 7</li>\n</ul>"
     }
    ]
   },
@@ -16516,6 +16584,63 @@
    ]
   },
   {
+   "id": "ssc.regulacion-automatica.cd",
+   "nt": 436,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-automatica",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Sistemas de climatización en el Ibiza/Córdoba '99",
+   "codigo": "",
+   "menu": "Sistemas de climatización en el Ibiza/",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "cd.pdf, págs. 4-5, 8-9",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "servomotor-trampilla"
+   ],
+   "palabras": [
+    "ventilacion",
+    "calefaccion motorizada",
+    "autoclima",
+    "aire acondicionado manual"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Definir las cuatro opciones de climatización disponibles en el Ibiza/Córdoba '99 para obtener la temperatura de confort deseada en el habitáculo. (pág. 4)",
+     "html": "<p>Definir las cuatro opciones de climatización disponibles en el Ibiza/Córdoba '99 para obtener la temperatura de confort deseada en el habitáculo. <span class=\"pag\">pág. 4</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Variación del nivel de automatización y control del caudal, temperatura y distribución del aire, abarcando desde sistemas puramente mecánicos hasta equipos electrónicos regulados. (págs. 4-5, 8-9)",
+     "html": "<p>Variación del nivel de automatización y control del caudal, temperatura y distribución del aire, abarcando desde sistemas puramente mecánicos hasta equipos electrónicos regulados. <span class=\"pag\">págs. 4-5, 8-9</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Se montan cuatro equipamientos de climatización: Ventilación-calefacción: la distribución y la temperatura se seleccionan mecánicamente mediante dos mandos giratorios. Únicamente permite elevar la temperatura de entrada sobre la ambiental haciendo pasar el aire por el radiador de calefacción. La recirculación y la turbina se accionan mediante motores eléctricos. Aire acondicionado manual: añade a la estructura de ventilación-calefacción un pulsador de conexión eléctrica del aire acondicionado. Permite el aumento o disminución de la temperatura del aire independientemente de la exterior canalizándolo a través del evaporador y del radiador de calefacción. Calefacción motorizada: sustituye la selección mecánica de temperatura y velocidad por motores eléctricos comandados por una unidad de control electrónica. La distribución de aire sigue siendo mecánica mediante mando giratorio. Un display en la consola central informa de los parámetros. Autoclima: regula y mantiene electrónicamente la temperatura seleccionada de forma automática o a voluntad del usuario. Gestiona automáticamente la temperatura, la velocidad de la turbina, la recirculación y la conexión del compresor. (págs. 4-5, 8-9)",
+     "html": "<p>Se montan cuatro equipamientos de climatización:</p>\n<ol>\n<li>Ventilación-calefacción: la distribución y la temperatura se seleccionan mecánicamente mediante dos mandos giratorios. Únicamente permite elevar la temperatura de entrada sobre la ambiental haciendo pasar el aire por el radiador de calefacción. La recirculación y la turbina se accionan mediante motores eléctricos.</li>\n<li>Aire acondicionado manual: añade a la estructura de ventilación-calefacción un pulsador de conexión eléctrica del aire acondicionado. Permite el aumento o disminución de la temperatura del aire independientemente de la exterior canalizándolo a través del evaporador y del radiador de calefacción.</li>\n<li>Calefacción motorizada: sustituye la selección mecánica de temperatura y velocidad por motores eléctricos comandados por una unidad de control electrónica. La distribución de aire sigue siendo mecánica mediante mando giratorio. Un display en la consola central informa de los parámetros.</li>\n<li>Autoclima: regula y mantiene electrónicamente la temperatura seleccionada de forma automática o a voluntad del usuario. Gestiona automáticamente la temperatura, la velocidad de la turbina, la recirculación y la conexión del compresor. <span class=\"pag\">págs. 4-5, 8-9</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Confundir la calefacción motorizada con el Autoclima. La calefacción motorizada no dispone de circuito frigorífico ni de sensores para regular automáticamente la temperatura frente a variaciones del exterior. (págs. 4-5, 8-9)",
+     "html": "<p>Confundir la calefacción motorizada con el Autoclima. La calefacción motorizada no dispone de circuito frigorífico ni de sensores para regular automáticamente la temperatura frente a variaciones del exterior. <span class=\"pag\">págs. 4-5, 8-9</span></p>"
+    }
+   ]
+  },
+  {
    "id": "ssc.distribucion-aire.208-regulacion-de-la-temperatura",
    "nt": 105,
    "modulo": "ssc",
@@ -19866,6 +19991,73 @@
      "titulo": "Verificación tras la reparación",
      "texto": "Tras sustituir componentes, motores reguladores (-V68-, -V154-) o la unidad -J301-, realizar obligatoriamente la configuración básica (función 04). Borrar la memoria de fallos y realizar una nueva consulta mediante el equipo de diagnosis para confirmar la ausencia de códigos de avería. (págs. 1, 3, 4, 7)",
      "html": "<ul>\n<li>Tras sustituir componentes, motores reguladores (-V68-, -V154-) o la unidad -J301-, realizar obligatoriamente la configuración básica (función 04).</li>\n<li>Borrar la memoria de fallos y realizar una nueva consulta mediante el equipo de diagnosis para confirmar la ausencia de códigos de avería. <span class=\"pag\">págs. 1, 3, 4, 7</span></li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.autodiagnostico-climatizador.cd",
+   "nt": 439,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "autodiagnostico-climatizador",
+   "seccion": "10. Diagnóstico",
+   "subgrupo": "",
+   "titulo": "Autodiagnóstico de los equipos de mando electrónico",
+   "codigo": "J255",
+   "menu": "Autodiagnóstico de los equipos J255",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "cd.pdf, págs. 34-38",
+   "clase": "diagnostico",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "servomotor-trampilla",
+    "sensor-temperatura-interior"
+   ],
+   "palabras": [
+    "autodiagnosis",
+    "direccion 08",
+    "funcion 01",
+    "funcion 02",
+    "funcion 03",
+    "funcion 04",
+    "funcion 08",
+    "40 puestas en marcha"
+   ],
+   "apartados": [
+    {
+     "titulo": "Síntoma",
+     "texto": "Parpadeo general de los dígitos del display al conectar el equipo o mal funcionamiento del sistema. (págs. 12-15, 20, 23, 34)",
+     "html": "<p>Parpadeo general de los dígitos del display al conectar el equipo o mal funcionamiento del sistema. <span class=\"pag\">págs. 12-15, 20, 23, 34</span></p>"
+    },
+    {
+     "titulo": "Causas posibles",
+     "texto": "Averías en sensores, actuadores, potenciómetros o líneas de bus de datos. (págs. 34-35)",
+     "html": "<p>Averías en sensores, actuadores, potenciómetros o líneas de bus de datos. <span class=\"pag\">págs. 34-35</span></p>"
+    },
+    {
+     "titulo": "Cómo separar las causas",
+     "texto": "Conectar un equipo de diagnosis (VAG 1551/1552) e introducir el código de dirección \"08 - Aire acondicionado\" : Función 01 (Versión de la unidad): identifica el número de recambio y la codificación (un puente a masa en el pin 21 indica Calefacción motorizada; sin puente indica Autoclima). Función 02 (Consultar memoria de averías): muestra los fallos registrados. Distingue averías esporádicas (se borran tras 40 puestas en marcha sin repetirse) de permanentes (exigen reparación física y borrado manual). Función 03 (Diagnóstico de actuadores): conmuta el compresor N25 cada 2 s, acelera la turbina V2 de 0 a 12 V en pasos de 2,5 V, desplaza la trampilla V68 de tope a tope y conmuta la recirculación V113. Función 04 (Ajuste básico): en el grupo 002 calibra los topes del motor V68 (obligatorio al cambiar V68 o la UCE J255). Función 08 (Bloque de valores de medición): analiza en tiempo real los valores numéricos y estados lógicos divididos en grupos (001 a 006): Grupo: estado salida compresor (0/1), estado presostato F129 (0/1), estado recirculación V113 (0/1). Grupo: tensión real, calculada y topes (superior/inferior) del servomotor V68 en voltios. Grupo 003 a: estado de pulsadores (0/1), tensiones de turbina V2, lecturas de sondas G17, G56, G191, G192 en ºC y tensión de alimentación. (págs. 34-38)",
+     "html": "<p>Conectar un equipo de diagnosis (VAG 1551/1552) e introducir el código de dirección <strong>\"08 - Aire acondicionado\"</strong>:</p>\n<ol>\n<li>Función 01 (Versión de la unidad): identifica el número de recambio y la codificación (un puente a masa en el pin 21 indica Calefacción motorizada; sin puente indica Autoclima).</li>\n<li>Función 02 (Consultar memoria de averías): muestra los fallos registrados. Distingue averías esporádicas (se borran tras 40 puestas en marcha sin repetirse) de permanentes (exigen reparación física y borrado manual).</li>\n<li>Función 03 (Diagnóstico de actuadores): conmuta el compresor N25 cada 2 s, acelera la turbina V2 de 0 a 12 V en pasos de 2,5 V, desplaza la trampilla V68 de tope a tope y conmuta la recirculación V113.</li>\n<li>Función 04 (Ajuste básico): en el grupo 002 calibra los topes del motor V68 (obligatorio al cambiar V68 o la UCE J255).</li>\n<li>Función 08 (Bloque de valores de medición): analiza en tiempo real los valores numéricos y estados lógicos divididos en grupos (001 a 006):<ul>\n<li>Grupo: estado salida compresor (0/1), estado presostato F129 (0/1), estado recirculación V113 (0/1).</li>\n<li>Grupo: tensión real, calculada y topes (superior/inferior) del servomotor V68 en voltios.</li>\n<li>Grupo 003 a: estado de pulsadores (0/1), tensiones de turbina V2, lecturas de sondas G17, G56, G191, G192 en ºC y tensión de alimentación. <span class=\"pag\">págs. 34-38</span></li>\n</ul>\n</li>\n</ol>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Código de dirección de diagnosis: 08. Criterio de borrado de averías esporádicas: 40 puestas en marcha sin fallo. Pin de codificación de equipo en conector: Pin 21 a masa = Calefacción motorizada; Pin 21 libre = Autoclima. (págs. 34, 38)",
+     "html": "<ul>\n<li>Código de dirección de diagnosis: 08.</li>\n<li>Criterio de borrado de averías esporádicas: 40 puestas en marcha sin fallo.</li>\n<li>Pin de codificación de equipo en conector: Pin 21 a masa = Calefacción motorizada; Pin 21 libre = Autoclima. <span class=\"pag\">págs. 34, 38</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación tras la reparación",
+     "texto": "Ejecutar el ajuste básico (función 04, grupo 002) tras cambiar componentes, borrar la memoria de averías (función 05) y comprobar la ausencia de parpadeo en los dígitos del display. (págs. 34, 36)",
+     "html": "<p>Ejecutar el ajuste básico (función 04, grupo 002) tras cambiar componentes, borrar la memoria de averías (función 05) y comprobar la ausencia de parpadeo en los dígitos del display. <span class=\"pag\">págs. 34, 36</span></p>"
     }
    ]
   },
@@ -30156,6 +30348,65 @@
      "titulo": "Causas posibles",
      "texto": "El condensador está sucio: limpieza del condensador y del circuito si procede. (pág. 5)",
      "html": "<ul>\n<li>El condensador está sucio: limpieza del condensador y del circuito si procede. <span class=\"pag\">pág. 5</span></li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.caja-climatizadora.cd",
+   "nt": 437,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "caja-climatizadora",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Unidad climática",
+   "codigo": "",
+   "menu": "Unidad climática",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "cd.pdf, págs. 6",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "evaporador",
+    "radiador-calefaccion",
+    "servomotor-trampilla",
+    "ventilador-habitaculo"
+   ],
+   "palabras": [
+    "unidad climatica",
+    "caja climatica",
+    "trampillas",
+    "cables bowden"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Alojar los intercambiadores térmicos, la turbina y las trampillas encauzadoras para tratar y distribuir el caudal de aire hacia el habitáculo. (pág. 6)",
+     "html": "<p>Alojar los intercambiadores térmicos, la turbina y las trampillas encauzadoras para tratar y distribuir el caudal de aire hacia el habitáculo. <span class=\"pag\">pág. 6</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Constructivamente idéntica para todos los equipamientos. Varía únicamente en el accionamiento de la trampilla de temperatura (eléctrico en mandos electrónicos o mecánico por cable), la presencia de sensores de temperatura (Autoclima) y el módulo regulador de la turbina. (pág. 6)",
+     "html": "<p>Constructivamente idéntica para todos los equipamientos. Varía únicamente en el accionamiento de la trampilla de temperatura (eléctrico en mandos electrónicos o mecánico por cable), la presencia de sensores de temperatura (Autoclima) y el módulo regulador de la turbina. <span class=\"pag\">pág. 6</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Contiene la trampilla de recirculación (accionada por motor eléctrico V113), la turbina de aire V2, el evaporador y el radiador de calefacción. La distribución de aire se efectúa mediante cables Bowden conectados al mando giratorio central hacia los difusores superior, inferior y centrales. (pág. 6)",
+     "html": "<p>Contiene la trampilla de recirculación (accionada por motor eléctrico V113), la turbina de aire V2, el evaporador y el radiador de calefacción. La distribución de aire se efectúa mediante cables Bowden conectados al mando giratorio central hacia los difusores superior, inferior y centrales. <span class=\"pag\">pág. 6</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Despiece de la unidad climática con ubicación del evaporador, radiador de calefacción, turbina y trampillas — Fuente: cd.pdf, pág. 6",
+     "html": "<ul>\n<li>Despiece de la unidad climática con ubicación del evaporador, radiador de calefacción, turbina y trampillas — Fuente: cd.pdf, pág. 6</li>\n</ul>"
     }
    ]
   }
