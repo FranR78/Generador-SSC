@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">180 notas · 24/09/2026</p>
+  <p class="sidebar-meta">184 notas · 24/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -262,7 +262,7 @@
     <li><a href="#grp-condensador">Condensador <span class="menu-cuenta">2 fuentes</span></a></li>
     <li><a href="#grp-filtro-deshidratador-mirilla">Filtro deshidratador <span class="menu-cuenta">2 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
-    <li><a href="#grp-transmisor-presion-map-maf">Transmisor de presión <span class="menu-cuenta">3 fuentes</span></a></li>
+    <li><a href="#grp-transmisor-presion-map-maf">Transmisor de presión <span class="menu-cuenta">4 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
     <li><a href="#grp-valvula-expansion">Válvula de expansión <span class="menu-cuenta">3 fuentes</span></a></li>
     <li><a href="#grp-evaporador">Evaporador <span class="menu-cuenta">2 fuentes</span></a></li>
@@ -344,7 +344,7 @@
     <li><a href="#nt94">NT94 · Limpieza y eliminación de humedad en c</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
     <li><a href="#grp-unidad-control-climatizador">Unidad de control de climatización <span class="menu-cuenta">2 fuentes</span></a></li>
-    <li><a href="#grp-sensor-temperatura-ntc-exterior">Termosensor de temperatura exterior <span class="menu-cuenta">4 fuentes</span></a></li>
+    <li><a href="#grp-sensor-temperatura-ntc-exterior">Termosensor de temperatura exterior <span class="menu-cuenta">5 fuentes</span></a></li>
     <li><a href="#grp-sensor-temperatura-ntc-interior">Termosensor del tablero de instrumentos con turbina de aire <span class="menu-cuenta">6 fuentes</span></a></li>
     <li><a href="#grp-fotosensor-solar">Fotosensor de radiación solar <span class="menu-cuenta">2 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Distribución de aire</span></li>
@@ -352,7 +352,7 @@
     <li><a href="#nt105">NT105 · Conducción del aire en el calefactor/c</a></li>
     <li><a href="#grp-recirculacion">Función de recirculación de aire <span class="menu-cuenta">3 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
-    <li><a href="#grp-sensor-calidad-aire">Sensor de la calidad del aire <span class="menu-cuenta">2 fuentes</span></a></li>
+    <li><a href="#grp-sensor-calidad-aire">Sensor de la calidad del aire <span class="menu-cuenta">3 fuentes</span></a></li>
     <li><a href="#grp-regulacion-sistema-climatizacion">Regulación y protección del sistema de climatización <span class="menu-cuenta">2 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
     <li><a href="#nt116">NT116 · Diagnóstico del estado de la carga de</a></li>
@@ -392,6 +392,8 @@
     <li><a href="#nt177">NT177 · Guardallamas G64</a></li>
     <li><a href="#nt178">NT178 · Termosensor de temperatura del G18</a></li>
     <li><a href="#nt179">NT179 · Termosensor 2 para calefactor  G587</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
+    <li><a href="#nt182">NT182 · Sensor de humedad y temperatur G458</a></li>
   </ul>
 </nav>
 
@@ -1666,10 +1668,10 @@ Si el compresor se bloquea mecánicamente, el disco de arrastre de chapa se defo
   </div>
 
   <div class="grupo-componente" id="grp-transmisor-presion-map-maf">
-    <div class="grupo-cab"><span class="grupo-nombre">Transmisor de presión</span><span class="grupo-cuenta">3 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Transmisor de presión</span><span class="grupo-cuenta">4 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 3 · NT14 · 2. Introducción a la refrigeración.pdf, págs. 20</summary>
+      <summary>Variante 1 de 4 · NT14 · 2. Introducción a la refrigeración.pdf, págs. 20</summary>
   <section id="nt14" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 14 </div>
     <div class="nota-body">
@@ -1698,7 +1700,7 @@ Si el compresor se bloquea mecánicamente, el disco de arrastre de chapa se defo
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 3 · NT67 · 11. Dispositivos de regulación y seguridad.pdf, págs. 89-91</summary>
+      <summary>Variante 2 de 4 · NT67 · 11. Dispositivos de regulación y seguridad.pdf, págs. 89-91</summary>
   <section id="nt67" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 67 </div>
     <div class="nota-body">
@@ -1748,7 +1750,7 @@ Si el compresor se bloquea mecánicamente, el disco de arrastre de chapa se defo
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 3 · NT114 · 208. Regulación del Sistema.pdf, págs. 36-37</summary>
+      <summary>Variante 3 de 4 · NT114 · 208. Regulación del Sistema.pdf, págs. 36-37</summary>
   <section id="nt114" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 114 <span class="fusionado">VW</span></div>
     <div class="nota-body">
@@ -1795,6 +1797,35 @@ Las unidades de control utilizan esta señal para adaptar con precisión el rale
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">208. Regulación del Sistema.pdf, págs. 36-37</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 4 de 4 · NT183 · TERMOSENSORES A5.pdf, págs. 82</summary>
+  <section id="nt183" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 183 <span class="fusionado">Audi</span></div>
+    <div class="nota-body">
+      <h1>Sensor de presión y temperatura del agente frigorífico — <strong>G395</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir la presión y la temperatura del agente frigorífico en el circuito de climatización (pág. 82).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Capta la presión y temperatura del fluido y transmite sus datos mediante señales LIN-Bus a la unidad de control de la red de a bordo J519 (pág. 82). Desde la UCE J519, los datos se retransmiten a través del CAN-Bus a la unidad de control para Climatronic J255 (pág. 82). La magnitud medida no se analiza activamente en la regulación del sistema, aunque sus valores se pueden consultar en los bloques de valores de medición (pág. 82).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Consultar los bloques de valores de medición mediante el equipo de diagnosis conectado a la unidad de control (pág. 82).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Sensor electrónico combinado de presión y temperatura (código G395) implantado en la línea del refrigerante (pág. 82).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">TERMOSENSORES A5.pdf, págs. 82</p>
       </div>
     </div>
   </section>
@@ -6713,10 +6744,10 @@ Velocidad del vehículo no superior a 5 km/h para ejecutar la diagnosis de actua
   </div>
 
   <div class="grupo-componente" id="grp-sensor-temperatura-ntc-exterior">
-    <div class="grupo-cab"><span class="grupo-nombre">Termosensor de temperatura exterior</span><span class="grupo-cuenta">4 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Termosensor de temperatura exterior</span><span class="grupo-cuenta">5 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 4 · NT98 · 208. Regulación de la temperatura.pdf, págs. 48-49</summary>
+      <summary>Variante 1 de 5 · NT98 · 208. Regulación de la temperatura.pdf, págs. 48-49</summary>
   <section id="nt98" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 98 <span class="fusionado">VW</span></div>
     <div class="nota-body">
@@ -6761,7 +6792,7 @@ Velocidad del vehículo no superior a 5 km/h para ejecutar la diagnosis de actua
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 4 · NT99 · 208. Regulación de la temperatura.pdf, págs. 48-49</summary>
+      <summary>Variante 2 de 5 · NT99 · 208. Regulación de la temperatura.pdf, págs. 48-49</summary>
   <section id="nt99" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 99 <span class="fusionado">VW</span></div>
     <div class="nota-body">
@@ -6800,7 +6831,7 @@ Velocidad del vehículo no superior a 5 km/h para ejecutar la diagnosis de actua
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 4 · NT153 · PRO 13. Climatización Electrónica.pdf, págs. 103</summary>
+      <summary>Variante 3 de 5 · NT153 · PRO 13. Climatización Electrónica.pdf, págs. 103</summary>
   <section id="nt153" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 153 </div>
     <div class="nota-body">
@@ -6845,7 +6876,7 @@ Velocidad del vehículo no superior a 5 km/h para ejecutar la diagnosis de actua
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 4 · NT172 · Sensor temperatura aire exterior e interruptor térmico.pdf, págs. 1-2</summary>
+      <summary>Variante 4 de 5 · NT172 · Sensor temperatura aire exterior e interruptor térmico.pdf, págs. 1-2</summary>
   <section id="nt172" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 172 </div>
     <div class="nota-body">
@@ -6879,6 +6910,41 @@ Velocidad del vehículo no superior a 5 km/h para ejecutar la diagnosis de actua
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">Sensor temperatura aire exterior e interruptor térmico.pdf, págs. 1-2</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 5 de 5 · NT181 · TERMOSENSORES A5.pdf, págs. 82</summary>
+  <section id="nt181" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 181 <span class="fusionado">Audi</span></div>
+    <div class="nota-body">
+      <h1>Sensor de temperatura exterior — <strong>G17</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Suministrar la lectura de la temperatura exterior para el análisis y regulación del sistema de climatización en las distintas unidades de control del vehículo (pág. 82).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Captura la temperatura exterior y envía sus señales a la unidad de control de la red de a bordo J519 (pág. 82). A través de la red CAN-Bus, la información se distribuye desde la UCE J519 hacia la unidad de control con cuadro de instrumentos J285 y a la unidad de control para Climatronic J255 (pág. 82).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Avería del sensor G17 registrada en el sistema de control (pág. 82).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Al averiarse el sensor G17, el sistema activa automáticamente la función ECON e ilumina su LED indicador, señalizando que el compresor del climatizador queda desactivado y que el climatizador automático deja de marchar (pág. 82).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Sensor único ubicado en la zona frontal del vehículo, situado detrás del paragolpes y directamente por delante del condensador (pág. 82).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">TERMOSENSORES A5.pdf, págs. 82</p>
       </div>
     </div>
   </section>
@@ -7469,10 +7535,10 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </div>
 
   <div class="grupo-componente" id="grp-sensor-calidad-aire">
-    <div class="grupo-cab"><span class="grupo-nombre">Sensor de la calidad del aire</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Sensor de la calidad del aire</span><span class="grupo-cuenta">3 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 2 · NT108 · 208. Regulación de la temperatura.pdf, págs. 61-63</summary>
+      <summary>Variante 1 de 3 · NT108 · 208. Regulación de la temperatura.pdf, págs. 61-63</summary>
   <section id="nt108" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 108 <span class="fusionado">VW</span></div>
     <div class="nota-body">
@@ -7530,7 +7596,7 @@ El sensor es autoadaptable: analiza el nivel medio de polución de fondo y enví
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 2 · NT166 · PRO 13. Climatización Electrónica.pdf, págs. 112-113</summary>
+      <summary>Variante 2 de 3 · NT166 · PRO 13. Climatización Electrónica.pdf, págs. 112-113</summary>
   <section id="nt166" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 166 </div>
     <div class="nota-body">
@@ -7564,6 +7630,41 @@ La electrónica integrada mide la variación de resistencia y emite una señal d
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">PRO 13. Climatización Electrónica.pdf, págs. 112-113</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 3 de 3 · NT184 · TERMOSENSORES A5.pdf, págs. 82</summary>
+  <section id="nt184" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 184 <span class="fusionado">Audi</span></div>
+    <div class="nota-body">
+      <h1>Sensor de la calidad del aire — <strong>G238</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Detectar contaminantes en el aire para enviar su señal a la unidad de control para Climatronic J255 y gobernar la regulación automática de la recirculación de aire (pág. 82).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Analiza el aire de entrada e informa a la UCE J519 / J255 para activar de forma automatizada el modo de recirculación de aire (pág. 82).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Avería interna o fallo de señal del sensor G238 (pág. 82).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>En caso de avería del sensor G238, deja de estar disponible la función de recirculación de aire automática (pág. 82).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Sensor electrónico de detección de la calidad del aire exterior (código G238) (pág. 82).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">TERMOSENSORES A5.pdf, págs. 82</p>
       </div>
     </div>
   </section>
@@ -9390,8 +9491,31 @@ Velocidad del vehículo no superior a 5 km/h para ejecutar la función de diagno
     </div>
   </section>
 
+  <section id="nt182" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 182 <span class="fusionado">Audi</span></div>
+    <div class="nota-body">
+      <h1>Sensor de humedad y temperatura del parabrisas — <strong>G458</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir la humedad del aire y la temperatura directamente ante el cristal parabrisas para evitar su empañamiento (pág. 82).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Funciona de forma comparable a un condensador de placas (pág. 82). Mide la variación de capacidad eléctrica generada por el contenido de humedad del aire ante el parabrisas (pág. 82). El sistema electrónico integrado transforma la capacidad medida en una magnitud de tensión que transmite hacia la unidad de control (pág. 82).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Sensor térmico e higrométrico de capa delgada de tipo capacitivo (código G458 / G355) instalado directamente ante el parabrisas (pág. 82).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">TERMOSENSORES A5.pdf, págs. 82</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    180 notas técnicas · generado el 24/09/2026.
+    184 notas técnicas · generado el 24/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
