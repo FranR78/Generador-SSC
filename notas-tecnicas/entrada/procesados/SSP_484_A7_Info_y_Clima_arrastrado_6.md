@@ -1,39 +1,86 @@
 ```yaml
 tipo: fundamento
-titulo: Configuración y distribución de componentes del sistema de climatización de cuatro zonas
-entidad: distribucion-aire
+titulo: Sistemas de climatización automática e interacción de entornos
+entidad: regulacion-automatica
 area: climatizacion
-sistema: distribucion-aire
-fabricante: Audi
-fuente: "SSP 484 A7 Info y Clima (arrastrado) 6.pdf"
-paginas: "49"
-relacionados: [regulacion-automatica, servomotor-trampilla, evaporador]
-palabras: [climatización cuatro zonas, servomotores, trampillas de distribución, evacuación de agua, Audi A7]
+sistema: control-climatizacion
+fabricante: Valeo
+fuente: "LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF"
+paginas: "1-7"
+relacionados: [unidad-control-climatizador, distribucion-aire]
+palabras: [climatización automática, confort térmico, temperatura de consigna, entornos del vehículo, tarjeta electrónica]
 ```
 
 ## Objeto
-Mostrar la arquitectura y disposición física de los servomotores y canalizaciones en la caja climática para el sistema de climatización de cuatro zonas. (pág. 49).
+Acondicionar el habitáculo del vehículo para alcanzar y mantener en su interior el confort térmico correspondiente a la temperatura de consigna seleccionada. (págs. 1-2)
 
 ## Fundamento
-La disposición física de los componentes en las variantes de sistema de tres zonas y de cuatro zonas difiere entre sí para permitir el control térmico y de caudal independiente en las plazas traseras y delanteras. (pág. 49).
+El sistema de climatización automática recopila datos y parámetros procedentes de diversos entornos del vehículo (habitáculo, salpicadero, conjunto A/C, motor térmico, circuito de calor y circuito de frío) para regular el funcionamiento global de la instalación mediante una tarjeta electrónica o centralita. (págs. 1-7)
 
 ## Desarrollo
-La arquitectura del conjunto climatizador para el sistema de cuatro zonas distribuye los siguientes servomotores de trampilla y drenajes de agua:
-- Trampillas de recirculación de aire: servomotor de la trampilla de recirculación V71 y servomotor de la trampilla de recirculación V113. (pág. 49).
-- Trampillas de temperatura delanteras: servomotor de la trampilla de temperatura izquierda V158 y servomotor de la trampilla de temperatura derecha V159. (pág. 49).
-- Trampillas de difusores centrales y laterales: servomotor del difusor central izquierdo V110, servomotor del difusor central derecho V111, servomotor del difusor lateral izquierdo V299 y servomotor del difusor lateral derecho V300. (pág. 49).
-- Trampilla de descongelación/desempañado: servomotor de la trampilla del defrost V107. (pág. 49).
-- Trampillas de espacio para los pies delanteros: servomotor de la trampilla del espacio para los pies izquierdo V108 y servomotor de la trampilla del espacio para los pies derecho V109. (pág. 49).
-- Trampillas para las plazas traseras: servomotor de temperatura trasera izquierda V313, servomotor de temperatura trasera derecha V314, servomotor de aire trasero izquierdo V239 y servomotor de aire trasero derecho V240. (pág. 49).
-- Ventilación indirecta: servomotor de la trampilla de ventilación indirecta V213. (pág. 49).
-- Drenaje de condensados: salidas de agua de evacuación del evaporador en el lado del conductor y en el lado del acompañante. (pág. 49).
+El funcionamiento global del sistema se estructura mediante las interacciones de sus entornos funcionales:
+- **Habitáculo y salpicadero:** El aire impulsado por los difusores se mezcla con el aire ambiente para alcanzar la temperatura de consigna. La calidad del aislamiento térmico, la temperatura inicial de las paredes y la conductividad térmica del salpicadero influyen directamente en el tiempo necesario para lograr la convergencia térmica. (págs. 1-2)
+- **Conjunto A/C (distribución de trampillas):** Enlaza la parte del compartimento motor con el habitáculo. Alberga el radiador de calefacción, el evaporador, el impulsor de aire y las trampillas con sus correspondientes actuadores. (págs. 3, 5, 6)
+- **Motor térmico y circuitos térmicos:** El motor arrastra mediante correa el compresor y la bomba de líquido refrigerante. El circuito de calor aporta la energía térmica mediante el radiador de calefacción. (págs. 4, 5)
+- **Interacción de señales con la centralita:**
+  - **Sonda de habitáculo:** Informa de la temperatura interior instantánea para verificar si se ha alcanzado la consigna. (pág. 6)
+  - **Sondas de aire soplado y exterior:** Informan si la posición de la trampilla de mezcla es la adecuada para alcanzar la temperatura elegida, así como el caudal de aire y la distribución necesarios. (pág. 7)
+  - **Sonda del evaporador:** Informa si se está formando hielo en el evaporador para cortar el compresor en sistemas de cilindrada fija. (págs. 3, 7)
+  - **Presostato:** Informa de la presión en el circuito de fluido frigorífico. Si la presión es excesiva o demasiado baja, manda cortar el compresor; si excede de un cierto valor, conecta la segunda velocidad del GMV (electroventilador). (págs. 5, 7)
+  - **Termocontacto y módulo de refrigeración:** Conectan la segunda velocidad del GMV si la temperatura del líquido refrigerante es demasiado elevada en el radiador. (págs. 4, 7)
+  - **Módulo de inyección:** Informa si se produce una aceleración brusca para cortar el compresor y no restar potencia al motor, e incrementa el régimen de ralentí cuando el compresor está conectado para evitar que el motor se cale. (págs. 4, 7)
 
-📷 IMAGEN: Esquema de distribución de componentes y servomotores del sistema de climatización de cuatro zonas (figuras 484_118 y 484_119) — Fuente: SSP 484 A7 Info y Clima (arrastrado) 6.pdf, pág. 49
+📷 IMAGEN: Esquema general de interacciones entre los entornos del vehículo y la tarjeta electrónica del sistema de climatización — Fuente: LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, pág. 7
 
 ## Valores de referencia
-No documentado en fuentes. (pág. 49).
+No documentado en fuentes en las páginas 1-7.
 
 ## Errores de concepto frecuentes
-Asumir que la disposición y componentes de la caja climática son idénticos entre las versiones de tres y cuatro zonas; los esquemas y componentes difieren entre ambas configuraciones. (pág. 49).
+- Creer que la temperatura interior depende únicamente de la temperatura del aire soplado, omitiendo la influencia térmica inicial del salpicadero y de las paredes del habitáculo. (págs. 1-2)
+- Suponer que la centralita de climatización funciona de manera aislada sin comunicarse con los módulos electrónicos de inyección y refrigeración del motor. (págs. 4, 7)
 
-COBERTURA: documento «SSP 484 A7 Info y Clima (arrastrado) 6.pdf», páginas 49 a 49 de 49. [completo]
+---
+
+```yaml
+tipo: componente
+titulo: Tarjeta electrónica de climatización
+entidad: unidad-control-climatizador
+area: climatizacion
+sistema: control-climatizacion
+fabricante: Valeo
+fuente: "LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF"
+paginas: "6-8"
+forma_parte_de: control-climatizacion
+relacionados: [regulacion-automatica, servomotor-trampilla]
+palabras: [tarjeta electrónica, centralita, calculador, señales de entrada, señales de salida, conexiones bidireccionales]
+```
+
+## Misión
+Gobernar y coordinar automáticamente el funcionamiento del sistema de climatización procesando la información de las sondas y captadores para enviar órdenes de control a los actuadores, impulsor, compresor y electroventiladores. (págs. 6-8)
+
+## Tipos y características
+Calculador o centralita electrónica ubicada habitualmente detrás de los mandos y de la pantalla del climatizador en el salpicadero. Dispone de canales de entrada, salidas de potencia e interfaces de comunicación bidireccionales. (págs. 6, 8)
+
+## Principio de funcionamiento
+Recibe las órdenes del usuario desde los mandos del cuadro y analiza de forma continua las señales de entrada procedentes de las sondas térmicas (habitáculo, exterior, aire soplado, evaporador) y del presostato. Con estos datos, emite señales de salida para posicionar los actuadores de las trampillas del conjunto de distribución, ajustar el caudal del impulsor de aire, acoplar o desacoplar el compresor y activar el electroventilador (GMV). Mantiene enlaces bidireccionales de intercambio de datos con los módulos electrónicos de inyección y refrigeración. (págs. 6-8)
+
+📷 IMAGEN: Esquema de la tarjeta electrónica identificando las entradas de sondas/presostato, salidas hacia actuadores/GMV/compresor y enlaces bidireccionales con inyección y refrigeración — Fuente: LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, pág. 8
+
+## Valores de trabajo
+No documentado en fuentes en las páginas 6-8.
+
+## Anomalías frecuentes
+No documentado en fuentes en las páginas 6-8.
+
+## Comportamiento en avería
+No documentado en fuentes en las páginas 6-8.
+
+## Cómo comprobarlo
+No documentado en fuentes en las páginas 6-8.
+
+## Mantenimiento
+No documentado en fuentes en las páginas 6-8.
+
+---
+
+COBERTURA: documento «LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF», páginas 1 a 8 de 8. [completo]
