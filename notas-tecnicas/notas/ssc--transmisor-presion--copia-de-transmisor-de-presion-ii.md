@@ -20,16 +20,16 @@ palabras: ["G65", "transmisor de presión", "ralentí", "16 bares", "función su
 
 ## Misión
 
-Medir la presión del fluido refrigerante en el circuito y enviar la señal electrónica a la unidad de control del motor y a la unidad de control del aire acondicionado. (pág. 15)
+Medir la presión del fluido refrigerante en el circuito y enviar la señal de presión a la **unidad de control del motor** y a la **unidad de control del aire acondicionado**. (págs. 15-17)
 
 ## Tipos y características
 
-Transmisor de presión electrónico con un diseño idéntico al montado en el modelo Toledo.
+Es un transmisor de presión electrónico de diseño idéntico al montado en el modelo Toledo.
 
 ## Principio de funcionamiento
 
-El transmisor mide la presión del circuito frigorífico y envía la señal a dos unidades de control:
-- **Unidad del aire acondicionado:** procesa la señal para efectuar la desconexión del compresor por presión máxima o mínima, conectar la 2ª velocidad de los ventiladores del líquido refrigerante al llegar a 16 bares e informar a la unidad del autoclima sobre la conexión o desconexión del compresor.
+El transmisor mide la presión del circuito frigorífico y transmite la señal a dos unidades de control:
+- **Unidad del aire acondicionado:** procesa la señal para efectuar la desconexión del compresor por presión máxima o mínima, conectar la 2ª velocidad de los ventiladores del líquido refrigerante al llegar a 16 bares e informar a la unidad del autoclima J255 sobre la conexión o desconexión del compresor.
 - **Unidad de control del motor:** procesa la señal enviada por el transmisor y actúa sobre la regulación del ralentí según las necesidades requeridas por la carga del motor. (págs. 15-17)
 
 ## Valores de trabajo
@@ -38,14 +38,14 @@ El transmisor mide la presión del circuito frigorífico y envía la señal a do
 
 ## Anomalías frecuentes
 
-Avería o fallo interno en el propio transmisor de presión. (pág. 17)
+Avería en el propio transmisor de presión. (pág. 17)
 
 ## Comportamiento en avería
 
 En caso de avería en el transmisor G65:
-- La unidad de control del aire acondicionado desactiva el compresor como función sustitutiva.
-- La avería de este transmisor únicamente queda registrada en la memoria de averías de la unidad de control del motor. (pág. 17)
+- La **unidad de control del aire acondicionado desactiva el compresor** como función sustitutiva.
+- La avería de este transmisor únicamente queda registrada en la **memoria de averías de la unidad de control del motor**. (pág. 17)
 
 ## Imágenes requeridas
 
-- Transmisor de presión G65 y esquema de conexionado eléctrico con la unidad del aire acondicionado J293, la unidad del motor y la unidad del autoclima J255 — Fuente: Copia de Transmisor de presión II.pdf, págs. 15-17
+- Transmisor de presión G65 y esquema de conexionado eléctrico con la unidad del aire acondicionado J293, la unidad del motor y la unidad del autoclima J255 — Fuente: Copia de Transmisor de presión II.pdf, pág. 17
