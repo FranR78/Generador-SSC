@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">150 notas · 24/09/2026</p>
+  <p class="sidebar-meta">166 notas · 24/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -269,7 +269,7 @@
     <li><a href="#nt17">NT17 · Silenciador-depósito receptor</a></li>
     <li><a href="#nt19">NT19 · Tuberías, canalizaciones y juntas de e</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
-    <li><a href="#grp-regulacion-automatica">Sistemas y opciones de climatización en el automóvil <span class="menu-cuenta">4 fuentes</span></a></li>
+    <li><a href="#grp-regulacion-automatica">Sistemas y opciones de climatización en el automóvil <span class="menu-cuenta">9 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Fluidos frigoríficos</span></li>
     <li><a href="#nt21">NT21 · Agente frigorífico R12</a></li>
     <li><a href="#nt22">NT22 · Agente frigorífico R134a</a></li>
@@ -309,8 +309,8 @@
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
     <li><a href="#grp-valvula-sobrepresion">Válvula de descarga por sobrepresión <span class="menu-cuenta">2 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
-    <li><a href="#grp-sensor-ntc-evaporador">Sensor de temperatura del evaporador <span class="menu-cuenta">2 fuentes</span></a></li>
-    <li><a href="#grp-presostato-binary-trinary-cuatrinary">Conmutador de presión trinario <span class="menu-cuenta">3 fuentes</span></a></li>
+    <li><a href="#grp-sensor-ntc-evaporador">Sensor de temperatura del evaporador <span class="menu-cuenta">3 fuentes</span></a></li>
+    <li><a href="#grp-presostato-binary-trinary-cuatrinary">Conmutador de presión trinario <span class="menu-cuenta">4 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Refrigeración del motor</span></li>
     <li><a href="#nt69">NT69 · Termoconmutador para la temperatura de</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
@@ -343,16 +343,16 @@
     <li><a href="#nt93">NT93 · Circuito de climatización con CO2 (R74</a></li>
     <li><a href="#nt94">NT94 · Limpieza y eliminación de humedad en c</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
-    <li><a href="#nt97">NT97 · Unidad de control de climatiza J255</a></li>
-    <li><a href="#grp-sensor-temperatura-ntc-exterior">Termosensor de temperatura exterior <span class="menu-cuenta">2 fuentes</span></a></li>
-    <li><a href="#grp-sensor-temperatura-ntc-interior">Termosensor del tablero de instrumentos con turbina de aire <span class="menu-cuenta">2 fuentes</span></a></li>
-    <li><a href="#nt102">NT102 · Fotosensor de radiación solar G107</a></li>
+    <li><a href="#grp-unidad-control-climatizador">Unidad de control de climatización <span class="menu-cuenta">2 fuentes</span></a></li>
+    <li><a href="#grp-sensor-temperatura-ntc-exterior">Termosensor de temperatura exterior <span class="menu-cuenta">3 fuentes</span></a></li>
+    <li><a href="#grp-sensor-temperatura-ntc-interior">Termosensor del tablero de instrumentos con turbina de aire <span class="menu-cuenta">4 fuentes</span></a></li>
+    <li><a href="#grp-fotosensor-solar">Fotosensor de radiación solar <span class="menu-cuenta">2 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Distribución de aire</span></li>
     <li><a href="#nt104">NT104 · Servomotores de las chapaletas de aire</a></li>
     <li><a href="#nt105">NT105 · Conducción del aire en el calefactor/c</a></li>
-    <li><a href="#nt107">NT107 · Función de recirculación de aire</a></li>
+    <li><a href="#grp-recirculacion">Función de recirculación de aire <span class="menu-cuenta">3 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
-    <li><a href="#nt108">NT108 · Sensor de la calidad del aire G238</a></li>
+    <li><a href="#grp-sensor-calidad-aire">Sensor de la calidad del aire <span class="menu-cuenta">2 fuentes</span></a></li>
     <li><a href="#grp-regulacion-sistema-climatizacion">Regulación y protección del sistema de climatización <span class="menu-cuenta">2 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
     <li><a href="#nt116">NT116 · Diagnóstico del estado de la carga de</a></li>
@@ -381,6 +381,8 @@
     <li><a href="#nt144">NT144 · Protección de la capa de ozono y Proto</a></li>
     <li><a href="#nt145">NT145 · Magnitudes ambientales de los refriger</a></li>
     <li><a href="#nt146">NT146 · Normativa europea de gases fluorados e</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
+    <li><a href="#nt151">NT151 · Estrés climatológico y márgenes de agr</a></li>
   </ul>
 </nav>
 
@@ -2120,10 +2122,10 @@ Las unidades de control utilizan esta señal para adaptar con precisión el rale
   </section>
 
   <div class="grupo-componente" id="grp-regulacion-automatica">
-    <div class="grupo-cab"><span class="grupo-nombre">Sistemas y opciones de climatización en el automóvil</span><span class="grupo-cuenta">4 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Sistemas y opciones de climatización en el automóvil</span><span class="grupo-cuenta">9 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 4 · NT20 · 2. Introducción a la refrigeración.pdf, págs. 22-23</summary>
+      <summary>Variante 1 de 9 · NT20 · 2. Introducción a la refrigeración.pdf, págs. 22-23</summary>
   <section id="nt20" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 20 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -2179,7 +2181,7 @@ Las unidades de control utilizan esta señal para adaptar con precisión el rale
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 4 · NT96 · 208. Regulación de la temperatura.pdf, págs. 42-44</summary>
+      <summary>Variante 2 de 9 · NT96 · 208. Regulación de la temperatura.pdf, págs. 42-44</summary>
   <section id="nt96" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 96 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -2215,7 +2217,7 @@ En los sistemas automáticos (Climatronic o regulación digital), la unidad de c
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 4 · NT103 · 208. Regulación de la temperatura.pdf, págs. 52-53</summary>
+      <summary>Variante 3 de 9 · NT103 · 208. Regulación de la temperatura.pdf, págs. 52-53</summary>
   <section id="nt103" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 103 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -2253,7 +2255,7 @@ En los sistemas automáticos (Climatronic o regulación digital), la unidad de c
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 4 · NT106 · 208. Regulación de la temperatura.pdf, págs. 58-59</summary>
+      <summary>Variante 4 de 9 · NT106 · 208. Regulación de la temperatura.pdf, págs. 58-59</summary>
   <section id="nt106" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 106 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -2294,6 +2296,206 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">208. Regulación de la temperatura.pdf, págs. 58-59</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 5 de 9 · NT152 · PRO 13. Climatización Electrónica.pdf, págs. 100-101</summary>
+  <section id="nt152" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 152 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Comparativa entre climatización manual y regulación automática</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>En el sistema manual el conductor realiza las funciones de unidad de control y actuador ajustando mandos mecánicos por cable; en el sistema automático una UCE procesa información de múltiples sensores y comanda servomotores con potenciómetro de realimentación (págs. 100-101).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>Características comparativas:
+1. Climatización manual:
+   - El movimiento de las trampillas de mezcla y distribución se realiza mediante cables conectados físicamente al panel de mandos (pág. 100).
+   - El caudal de aire depende de la selección manual entre las 4 velocidades de giro de la turbina (págs. 100-101).
+   - El conductor debe corregir manualmente de forma continua las fluctuaciones de temperatura provocadas por cambios en el clima exterior, la velocidad de marcha o la temperatura del refrigerante del motor (pág. 100).
+2. Climatización automática:
+   - El conductor únicamente selecciona la temperatura de confort deseada (pág. 101).
+   - La UCE del climatizador recibe lecturas de sensores térmicos (entrada de aire, salida del evaporador, difusor central, zona pies, interior, exterior, radiación solar) e información vía Can-Bus (velocidad de marcha, r.p.m. del motor, tiempo parado) (pág. 101).
+   - La UCE calcula las señales de salida para alimentar servomotores eléctricos que posicionan las trampillas, modula el regulador de la turbina de aire fresco y memoriza las averías en su registro de diagnóstico (pág. 101).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Velocidades de selección manual de la turbina: 4 velocidades (pág. 100).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Diferenciar la arquitectura, el modo de gestión y la intervención del conductor entre los sistemas de aire acondicionado manuales y los climatizadores automáticos (págs. 100-101).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <ul>
+<li>Asumir que en un climatizador automático el conductor debe reajustar los mandos cuando varía la velocidad del vehículo o la temperatura del motor (págs. 100-101).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT152_01</code> Esquema comparativo de la unidad climática manual con mando por cables frente a la unidad automática provista de servomotores y sensores — Fuente: PRO. Climatización Electrónica.pdf, págs. 100-101</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">PRO 13. Climatización Electrónica.pdf, págs. 100-101</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 6 de 9 · NT158 · PRO 13. Climatización Electrónica.pdf, págs. 105</summary>
+  <section id="nt158" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 158 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Señal de carga eléctrica del alternador en la climatización</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El alternador genera una señal digital evaluando la tensión de trabajo (borne L) y el rendimiento (borne +/DF) que envía a la UCE de la red de a bordo, la cual emite un mensaje por el Can-Bus de confort (pág. 105).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>Procesamiento y estrategia de gestión:
+- Cuando el alternador supera un límite de trabajo prefijado, la UCE de la red de a bordo transmite un mensaje de exceso de carga a través del Can-Bus (pág. 105).
+- La UCE del climatizador interpreta el mensaje y desactiva el compresor al tiempo que desconecta los electroventiladores (pág. 105).
+- Esta acción reduce drásticamente el consumo de corriente impidiendo la descarga de la batería (pág. 105).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Bornes de evaluación del alternador: borne L (tensión de trabajo) y borne +/DF (rendimiento) (pág. 105).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Informar a la UCE del climatizador sobre el nivel de saturación o trabajo del alternador para evitar la descarga accidental de la batería (pág. 105).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <ul>
+<li>Creer que el climatizador funciona al máximo rendimiento ignorando las situaciones de sobrecarga eléctrica del alternador (pág. 105).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">PRO 13. Climatización Electrónica.pdf, págs. 105</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 7 de 9 · NT162 · PRO 13. Climatización Electrónica.pdf, págs. 109</summary>
+  <section id="nt162" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 162 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Señales suplementarias de intercambio de datos entre UCEs</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Uso compartido de las señales de tiempo de parada, velocidad del vehículo y r.p.m. del motor entre el cuadro de instrumentos, la UCE de motor y la UCE del climatizador (pág. 109).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>Efecto de las tres señales suplementarias:
+1. Tiempo del vehículo parado (Tp): mide el tiempo desde que se desconecta el encendido hasta que se vuelve a conectar. Al arrancar, la UCE utiliza la temperatura exterior previa para evitar errores por calor radiado del motor, impidiendo un enfriamiento excesivo (pág. 109).
+2. Velocidad de marcha (v): procedente del velocímetro/ABS. A medida que aumenta la velocidad, la UCE reduce la sección de paso de la chapaleta de velocidad para mantener invariable el caudal que entra (pág. 109).
+3. Régimen de revoluciones (n): procedente de la UCE de motor. Impide conectar el compresor si el motor está parado o el ralentí no está estabilizado, y desconecta el compresor unos segundos al pisar el acelerador a fondo para disponer de toda la potencia en adelantamientos (pág. 109).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Aumentar el confort térmico y optimizar la potencia del motor integrando datos dinámicos transmitidos vía Can-Bus desde otras unidades de control (pág. 109).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <ul>
+<li>Creer que al pisar a fondo el acelerador para adelantar el compresor permanece conectado restando potencia al motor (pág. 109).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">PRO 13. Climatización Electrónica.pdf, págs. 109</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 8 de 9 · NT163 · PRO 13. Climatización Electrónica.pdf, págs. 110</summary>
+  <section id="nt163" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 163 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Modo de regulación de la temperatura (frío, caliente e intermedio)</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Posicionamiento automático de las chapaletas de mezcla según la temperatura exterior medida y la selección del usuario (pág. 110).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>Estrategia de paso del aire:
+- Con temperatura exterior fría: el aire de entrada se dirige hacia el radiador de calefacción antes de introducirlo en el habitáculo (pág. 110).
+- Con temperatura exterior caliente: el aire de entrada se hace pasar por el evaporador, donde se enfría, deshidrata y depura (pág. 110).
+- Con temperatura exterior intermedia: el aire pasa por el evaporador y una fracción se calienta en el radiador; la mezcla entra exactamente a la temperatura seleccionada sin intervención manual (pág. 110).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Mantener invariable la temperatura interior del habitáculo ajustando automáticamente el paso de aire por los intercambiadores térmicos (pág. 110).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <ul>
+<li>Asumir que en temperaturas intermedias el climatizador apaga el compresor en lugar de mezclar proporciones de aire frío y caliente (pág. 110).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT163_01</code> Esquema del paso de aire en la unidad climática automática en modos de temperatura fría, caliente e intermedia — Fuente: PRO. Climatización Electrónica.pdf, pág. 110</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">PRO 13. Climatización Electrónica.pdf, págs. 110</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 9 de 9 · NT164 · PRO 13. Climatización Electrónica.pdf, págs. 111</summary>
+  <section id="nt164" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 164 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Distribución de aire y regulación bizona</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Utilización de dos servomotores eléctricos independientes para accionar la chapaleta de mezcla del lado izquierdo y la del lado derecho (pág. 111).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>Gestión bizona y multizona:
+- En los conductos de distribución se divide el caudal en frío o caliente y para las partes izquierda y derecha del habitáculo (pág. 111).
+- Un servomotor regula la mezcla en la zona izquierda y otro en la derecha (pág. 111).
+- Aunque el aire se mezcla finalmente en el habitáculo, a la salida de los aireadores se aprecia una clara diferencia de temperatura y sensación térmica (pág. 111).
+- En vehículos de alta gama se instala una segunda unidad climática en la zona trasera para regular hasta cuatro zonas independientes con su propio panel de mandos (pág. 111).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Permitir el ajuste de temperaturas independientes entre el lado del conductor y el del acompañante mediante la división del caudal de aire (pág. 111).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <ul>
+<li>Creer que la regulación bizona exige montar dos evaporadores independientes en la parte delantera (pág. 111).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT164_01</code> Esquema de la carcasa de distribución bizona dividida en conductos izquierdo y derecho accionados por servomotores — Fuente: PRO. Climatización Electrónica.pdf, pág. 111</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">PRO 13. Climatización Electrónica.pdf, págs. 111</p>
       </div>
     </div>
   </section>
@@ -4293,10 +4495,10 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
   </div>
 
   <div class="grupo-componente" id="grp-sensor-ntc-evaporador">
-    <div class="grupo-cab"><span class="grupo-nombre">Sensor de temperatura del evaporador</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Sensor de temperatura del evaporador</span><span class="grupo-cuenta">3 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 2 · NT65 · 11. Dispositivos de regulación y seguridad.pdf, págs. 87-88</summary>
+      <summary>Variante 1 de 3 · NT65 · 11. Dispositivos de regulación y seguridad.pdf, págs. 87-88</summary>
   <section id="nt65" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 65 </div>
     <div class="nota-body">
@@ -4328,7 +4530,7 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 2 · NT112 · 208. Regulación del Sistema.pdf, págs. 35</summary>
+      <summary>Variante 2 de 3 · NT112 · 208. Regulación del Sistema.pdf, págs. 35</summary>
   <section id="nt112" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 112 <span class="fusionado">VW</span></div>
     <div class="nota-body">
@@ -4359,13 +4561,48 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
     </div>
   </section>
     </details>
+    <details class="variante">
+      <summary>Variante 3 de 3 · NT157 · PRO 13. Climatización Electrónica.pdf, págs. 105</summary>
+  <section id="nt157" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 157 </div>
+    <div class="nota-body">
+      <h1>Termosensor para la temperatura del evaporador</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Registrar la temperatura del aire enfriado inmediatamente a la salida del evaporador para regular el rendimiento del compresor y evitar su congelación (pág. 105).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Emite una señal eléctrica hacia la UCE informando de la temperatura del aire tras pasar por el evaporador (pág. 105). La UCE utiliza este dato para ajustar el trabajo del compresor y garantizar la temperatura requerida evitando la formación de hielo (pág. 105).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Corte del cableado o avería interna de la sonda (pág. 105).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Al ausentarse la señal o averiarse la sonda, el compresor se pasa a regular exclusivamente mediante la señal del sensor MAP de alta presión, limitándose el rendimiento del compresor para prevenir la congelación (pág. 105).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Sonda térmica de tipo NTC ubicada a la salida del evaporador o alojada directamente entre sus aletas (pág. 105). En compresores de cilindrada variable suele omitirse (pág. 105).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">PRO 13. Climatización Electrónica.pdf, págs. 105</p>
+      </div>
+    </div>
+  </section>
+    </details>
   </div>
 
   <div class="grupo-componente" id="grp-presostato-binary-trinary-cuatrinary">
-    <div class="grupo-cab"><span class="grupo-nombre">Conmutador de presión trinario</span><span class="grupo-cuenta">3 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Conmutador de presión trinario</span><span class="grupo-cuenta">4 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 3 · NT66 · 11. Dispositivos de regulación y seguridad.pdf, págs. 88</summary>
+      <summary>Variante 1 de 4 · NT66 · 11. Dispositivos de regulación y seguridad.pdf, págs. 88</summary>
   <section id="nt66" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 66 </div>
     <div class="nota-body">
@@ -4408,7 +4645,7 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 3 · NT68 · 11. Dispositivos de regulación y seguridad.pdf, págs. 91</summary>
+      <summary>Variante 2 de 4 · NT68 · 11. Dispositivos de regulación y seguridad.pdf, págs. 91</summary>
   <section id="nt68" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 68 </div>
     <div class="nota-body">
@@ -4450,7 +4687,7 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 3 · NT113 · 208. Regulación del Sistema.pdf, págs. 36</summary>
+      <summary>Variante 3 de 4 · NT113 · 208. Regulación del Sistema.pdf, págs. 36</summary>
   <section id="nt113" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 113 <span class="fusionado">VW</span></div>
     <div class="nota-body">
@@ -4492,6 +4729,47 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">208. Regulación del Sistema.pdf, págs. 36</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 4 de 4 · NT154 · PRO 13. Climatización Electrónica.pdf, págs. 104</summary>
+  <section id="nt154" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 154 </div>
+    <div class="nota-body">
+      <h1>Interruptor térmico para desacoplamiento del compresor</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Interrumpir la alimentación eléctrica del embrague electromagnético del compresor cuando la temperatura exterior desciende de un límite de seguridad para prevenir la congelación del evaporador (pág. 104).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Sus contactos permanecen normalmente cerrados permitiendo el paso de corriente hacia el embrague (pág. 104). Cuando la temperatura exterior desciende por debajo de 5 ºC, abre automáticamente sus contactos cortando la corriente al compresor (pág. 104).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Umbral de apertura de contactos por baja temperatura: 5 ºC (pág. 104).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Bloqueo mecánico de contactos en posición cerrada (pág. 104).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>No dispone de función de emergencia; si el interruptor no abre sus contactos por debajo de 5 ºC, el compresor continúa funcionando provocando la congelación del evaporador (pág. 104).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Conmutador térmico mecánico instalado en la caja de aguas o zonas próximas, conectado en serie con la línea de alimentación del embrague del compresor (pág. 104).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">PRO 13. Climatización Electrónica.pdf, págs. 104</p>
       </div>
     </div>
   </section>
@@ -6204,6 +6482,11 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
     </div>
   </section>
 
+  <div class="grupo-componente" id="grp-unidad-control-climatizador">
+    <div class="grupo-cab"><span class="grupo-nombre">Unidad de control de climatización</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 2 · NT97 · 208. Regulación de la temperatura.pdf, págs. 45-47</summary>
   <section id="nt97" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 97 <span class="fusionado">VW</span></div>
     <div class="nota-body">
@@ -6240,12 +6523,53 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 2 · NT160 · PRO 13. Climatización Electrónica.pdf, págs. 106</summary>
+  <section id="nt160" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 160 </div>
+    <div class="nota-body">
+      <h1>Unidad de control del climatizador y panel de mandos</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Procesar las lecturas de los sensores e instrucciones del usuario para gobernar servomotores, turbina, compresor y luneta térmica (pág. 106).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Recibe las señales de los sensores y las solicitudes del usuario (temperatura conductor/acompañante, salidas de aire, recirculación manual/automática, turbina, modo AUTO, ECON, luneta, asientos térmicos) (pág. 106). Calcula y envía señales de salida hacia los actuadores para regular la temperatura y el caudal (págs. 101, 106).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Registro de averías de sensores o servomotores en la memoria de autodiagnóstico (págs. 101, 106).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>A través de la lectura de averías mediante el conector de diagnóstico OBD (págs. 101, 103).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Módulo electrónico que forma un conjunto indivisible con el panel de mandos frontal, adaptado a la estética del salpicadero de cada modelo (pág. 106).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT160_01</code> Panel de mandos y UCE indivisible de un climatizador automático bizona con pantallas digitales y pulsadores de función — Fuente: PRO. Climatización Electrónica.pdf, pág. 106</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">PRO 13. Climatización Electrónica.pdf, págs. 106</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
   <div class="grupo-componente" id="grp-sensor-temperatura-ntc-exterior">
-    <div class="grupo-cab"><span class="grupo-nombre">Termosensor de temperatura exterior</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Termosensor de temperatura exterior</span><span class="grupo-cuenta">3 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 2 · NT98 · 208. Regulación de la temperatura.pdf, págs. 48-49</summary>
+      <summary>Variante 1 de 3 · NT98 · 208. Regulación de la temperatura.pdf, págs. 48-49</summary>
   <section id="nt98" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 98 <span class="fusionado">VW</span></div>
     <div class="nota-body">
@@ -6290,7 +6614,7 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 2 · NT99 · 208. Regulación de la temperatura.pdf, págs. 48-49</summary>
+      <summary>Variante 2 de 3 · NT99 · 208. Regulación de la temperatura.pdf, págs. 48-49</summary>
   <section id="nt99" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 99 <span class="fusionado">VW</span></div>
     <div class="nota-body">
@@ -6328,13 +6652,58 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
     </div>
   </section>
     </details>
+    <details class="variante">
+      <summary>Variante 3 de 3 · NT153 · PRO 13. Climatización Electrónica.pdf, págs. 103</summary>
+  <section id="nt153" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 153 </div>
+    <div class="nota-body">
+      <h1>Sensor de temperatura exterior y de aire aspirado</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir la temperatura del aire ambiente exterior y la temperatura en el canal de entrada de aire fresco a la unidad climática para la regulación de las trampillas y de la turbina (pág. 103).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Modifican su resistencia eléctrica de forma inversamente proporcional a la temperatura (pág. 103). La UCE del climatizador recibe ambas señales y suele utilizar el valor más bajo de las dos para realizar los cálculos de regulación de la trampilla de temperatura, recirculación, velocidad de la turbina e indicación en el cuadro de instrumentos (pág. 103). En sistemas actuales, el sensor exterior comunica la señal al cuadro de instrumentos y este la transmite por Can-Bus a la UCE del climatizador (pág. 103).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Valor supletorio fijo por fallo de ambos sensores: +10 ºC (pág. 103).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Registradas en la memoria de autodiagnóstico de la UCE (pág. 103).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Si se avería uno de los dos sensores, la UCE adopta la señal del sensor que funciona (pág. 103). Si fallan ambos, se aplica el valor sustitutivo de +10 ºC (pág. 103). Si falla el sensor exterior, desaparece la indicación en el cuadro de instrumentos (pág. 103). En sistemas con un único sensor exterior, su fallo puede cancelar el acoplamiento magnético del compresor (pág. 103).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>A través del volumen de diagnóstico del equipo de diagnosis conectado a la UCE (pág. 103).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Sensores formados por resistencias de coeficiente de temperatura negativo (NTC). El sensor exterior se instala en el paragolpes delantero o en el espejo retrovisor derecho; el sensor de aire aspirado se ubica en el canal de entrada de aire (pág. 103).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">PRO 13. Climatización Electrónica.pdf, págs. 103</p>
+      </div>
+    </div>
+  </section>
+    </details>
   </div>
 
   <div class="grupo-componente" id="grp-sensor-temperatura-ntc-interior">
-    <div class="grupo-cab"><span class="grupo-nombre">Termosensor del tablero de instrumentos con turbina de aire</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Termosensor del tablero de instrumentos con turbina de aire</span><span class="grupo-cuenta">4 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 2 · NT100 · 208. Regulación de la temperatura.pdf, págs. 50</summary>
+      <summary>Variante 1 de 4 · NT100 · 208. Regulación de la temperatura.pdf, págs. 50</summary>
   <section id="nt100" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 100 <span class="fusionado">VW</span></div>
     <div class="nota-body">
@@ -6379,7 +6748,7 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 2 · NT101 · 208. Regulación de la temperatura.pdf, págs. 50-51</summary>
+      <summary>Variante 2 de 4 · NT101 · 208. Regulación de la temperatura.pdf, págs. 50-51</summary>
   <section id="nt101" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 101 <span class="fusionado">VW</span></div>
     <div class="nota-body">
@@ -6423,8 +6792,95 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
     </div>
   </section>
     </details>
+    <details class="variante">
+      <summary>Variante 3 de 4 · NT155 · PRO 13. Climatización Electrónica.pdf, págs. 104</summary>
+  <section id="nt155" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 155 </div>
+    <div class="nota-body">
+      <h1>Termosensor de temperatura interior</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir la temperatura real del aire en el habitáculo para el cálculo de la posición de la trampilla de temperatura (pág. 104).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>El motor con turbina aspira de forma continua un caudal de aire del habitáculo haciéndolo pasar sobre la resistencia NTC para obtener una lectura precisa sin interferencias del calor local de la consola (pág. 104). La UCE analiza la variación de resistencia para posicionar las trampillas (pág. 104).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Valor supletorio por ausencia de señal: entre +22 ºC y +26 ºC según el sistema (pág. 104).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Ausencia de señal por fallo de la resistencia NTC o agarrotamiento del motorcillo de la turbina (pág. 104).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>La UCE sustituye la señal ausente por un valor fijo de entre 22 ºC y 26 ºC (pág. 104). El sistema sigue funcionando, pero al seleccionar temperaturas superiores o inferiores a la de referencia, el habitáculo se calentará o enfriará por encima de lo solicitado al carecer de lectura real (pág. 104).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Sensor térmico NTC que puede estar integrado directamente en la UCE/panel de mandos o alojarse de forma independiente en el salpicadero (págs. 104-105). Incorpora un pequeño electro motor que hace girar una turbina de aspiración (pág. 104).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">PRO 13. Climatización Electrónica.pdf, págs. 104</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 4 de 4 · NT156 · PRO 13. Climatización Electrónica.pdf, págs. 104</summary>
+  <section id="nt156" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 156 </div>
+    <div class="nota-body">
+      <h1>Termosensores de temperatura del difusor central y zona de pies</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Registrar la temperatura del aire tratado en las salidas del difusor central y del vano reposapiés de la unidad climática para la regulación de la temperatura de entrada (pág. 104).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Miden la temperatura de impulsión del aire en ambas salidas (pág. 104). La UCE del climatizador procesa un valor medio de las lecturas indicadas por ambos sensores, siendo este un factor fundamental para la regulación automática (pág. 104).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Rango de temperatura de registro de las sondas: de -10 ºC a +85 ºC (pág. 104).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Ausencia de señal por fallo de una de las sondas (pág. 104).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Si uno de los sensores deja de emitir señal, el sistema no puede realizar la regulación automática, manteniéndose fijos los parámetros existentes en el momento de producirse la avería (pág. 104).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Sondas térmicas del tipo NTC ubicadas directamente en las canalizaciones de salida del difusor central y de la zona de pies (pág. 104).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">PRO 13. Climatización Electrónica.pdf, págs. 104</p>
+      </div>
+    </div>
+  </section>
+    </details>
   </div>
 
+  <div class="grupo-componente" id="grp-fotosensor-solar">
+    <div class="grupo-cab"><span class="grupo-nombre">Fotosensor de radiación solar</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 2 · NT102 · 208. Regulación de la temperatura.pdf, págs. 51-52</summary>
   <section id="nt102" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 102 <span class="fusionado">VW</span></div>
     <div class="nota-body">
@@ -6467,6 +6923,58 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 2 · NT161 · PRO 13. Climatización Electrónica.pdf, págs. 107-108</summary>
+  <section id="nt161" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 161 </div>
+    <div class="nota-body">
+      <h1>Fotosensor para radiación solar</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir la intensidad y el ángulo de incidencia de la radiación solar sobre el salpicadero para corregir la regulación de la temperatura, trampillas y turbina (págs. 107-108).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>La corriente que atraviesa el fotodiodo es directamente proporcional a la luminosidad (pág. 107). El elemento óptico apantalla la luz de incidencia vertical y encauza mayor radiación hacia el fotodiodo cuando el sol entra de forma oblicua (que genera mayor sensación térmica), ordenando a la UCE aumentar la refrigeración y modificar la velocidad de la turbina (págs. 107-108).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Tensión de alimentación suministrada por la UCE: 5 V (pág. 108).</li>
+<li>Tensión de salida en osciloscopio ante luz intensa: subida de tensión hasta aprox. 3 V (pág. 108).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Sustitución del parabrisas atérmico original por uno normal, lo que provoca que el climatizador no regule correctamente al recibir mayor radiación (pág. 108).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>En fotosensores dobles, si falla uno la UCE utiliza la señal del otro; si fallan ambos o el sensor simple, la UCE adopta un valor sustitutivo de radiación intermedia (pág. 108).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Verificar continuidad del cableado y alimentación de 5 V con encendido puesto (pág. 108). Conectar osciloscopio a las salidas de señal y acercar una luz intensa; la tensión debe subir hasta aprox. 3 V (pág. 108).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Sensor óptico compuesto por carcasa, filtro, elemento óptico y fotodiodo, ubicado en el centro del salpicadero (págs. 107-108). Puede ser de versión simple (climatizador normal) o doble (climatizador bizona) (pág. 108).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT161_01</code> Sección del fotosensor solar con filtro, elemento óptico y fotodiodo, junto con señal de osciloscopio al aplicar luz — Fuente: PRO. Climatización Electrónica.pdf, págs. 107-108</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">PRO 13. Climatización Electrónica.pdf, págs. 107-108</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
   <section id="nt104" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 104 </div>
@@ -6558,6 +7066,11 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
     </div>
   </section>
 
+  <div class="grupo-componente" id="grp-recirculacion">
+    <div class="grupo-cab"><span class="grupo-nombre">Función de recirculación de aire</span><span class="grupo-cuenta">3 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 3 · NT107 · 208. Regulación de la temperatura.pdf, págs. 60-61</summary>
   <section id="nt107" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 107 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -6608,7 +7121,82 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 3 · NT159 · PRO 13. Climatización Electrónica.pdf, págs. 106</summary>
+  <section id="nt159" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 159 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Señal de marcha atrás para el cierre automático de aire exterior</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El conmutador de la caja de cambios informa de la selección de la marcha atrás a la UCE de la red de a bordo, la cual vuelca el dato a la línea Can-Bus de confort hacia la UCE del climatizador (pág. 106).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>Lógica de actuación:
+- Al reconocer el mensaje de marcha atrás conectada, la UCE del climatizador manda accionar la trampilla de recirculación (pág. 106).
+- La trampilla cierra la entrada de aire exterior impidiendo que los humos del tubo de escape sean aspirados hacia el interior mientras el vehículo recula (pág. 106).
+- Si la señal se ausenta por avería, la función no se realiza, manteniéndose abierta la entrada de aire exterior al circular marcha atrás (pág. 106).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Activar de forma automática la recirculación de aire al engranar la marcha atrás para evitar la penetración de los gases de escape al habitáculo (pág. 106).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <ul>
+<li>Pensar que el cierre de la entrada de aire exterior solo se produce mediante la pulsación manual del botón de recirculación (pág. 106).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">PRO 13. Climatización Electrónica.pdf, págs. 106</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 3 de 3 · NT165 · PRO 13. Climatización Electrónica.pdf, págs. 112</summary>
+  <section id="nt165" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 165 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Sistema de recirculación de aire</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Cierre de la chapaleta de entrada de aire fresco mediante un actuador de vacío o un servomotor eléctrico (combinado en ocasiones con el reglaje de velocidad) (pág. 112).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>Ventajas y limitaciones:
+- Permite calentar o enfriar más rápidamente al hacer recircular aire previamente acondicionado (pág. 112).
+- Evita la entrada de gases contaminantes u olores molesto (pág. 112).
+- Debe limitarse en el tiempo: si no se desactiva, el aire se vicia por falta de renovación de oxígeno y los cristales se empañan por acumulación de humedad (pág. 112).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Acondicionar el aire del propio habitáculo sin tomar aire del exterior para acelerar el calentamiento o enfriamiento y aislar de olores o contaminación (pág. 112).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <ul>
+<li>Mantener conectada la recirculación de forma permanente durante viajes largos ignorando el empañamiento de cristales y la falta de oxígeno (pág. 112).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">PRO 13. Climatización Electrónica.pdf, págs. 112</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
+  <div class="grupo-componente" id="grp-sensor-calidad-aire">
+    <div class="grupo-cab"><span class="grupo-nombre">Sensor de la calidad del aire</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 2 · NT108 · 208. Regulación de la temperatura.pdf, págs. 61-63</summary>
   <section id="nt108" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 108 <span class="fusionado">VW</span></div>
     <div class="nota-body">
@@ -6664,6 +7252,47 @@ El sensor es autoadaptable: analiza el nivel medio de polución de fondo y enví
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 2 · NT166 · PRO 13. Climatización Electrónica.pdf, págs. 112-113</summary>
+  <section id="nt166" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 166 </div>
+    <div class="nota-body">
+      <h1>Sensor de la calidad del aire</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Detectar la presencia de gases contaminantes en el aire de entrada y enviar una señal digital a la UCE para activar automáticamente la recirculación (págs. 112-113).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Trabaja a una temperatura de servicio de unos 350 ºC con un consumo de 0,5 W, funcionando de forma similar a una sonda lambda (pág. 112). Modifica su resistencia al absorber o liberar oxígeno (pág. 113):
+- Gases oxidables (absorben oxígeno): monóxido de carbono (CO), vapores de gasolina, hexano (C6H14), benceno (C6H6), n-heptano (C7H16). Al contacto con el SnO2 liberan oxígeno, reduciendo la resistencia del sensor (págs. 112-113).
+- Gases reducibles (ceden oxígeno): óxidos nítricos (NOx), dióxido de azufre (SO2), ácido sulfhídrico (H2S), carbono sulfuro (CS2). Al contacto con el SnO2 ceden oxígeno, aumentando la resistencia del sensor (págs. 112-113).
+La electrónica integrada mide la variación de resistencia y emite una señal digital a la UCE del climatizador (pág. 113).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Temperatura de servicio interna: 350 ºC aprox. (pág. 112).</li>
+<li>Potencia absorbida: 0,5 W (pág. 112).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Sensor de óxidos mixtos con semiconductor de dióxido de estaño (SnO2), situado en la entrada de aire a la unidad climática junto al sensor de temperatura (págs. 112-113).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT166_01</code> Estructura interna del sensor G238, zona de medición de SnO2 y esquema de reacción ante gases oxidables y reducibles — Fuente: PRO. Climatización Electrónica.pdf, págs. 112-113</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">PRO 13. Climatización Electrónica.pdf, págs. 112-113</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
   <div class="grupo-componente" id="grp-regulacion-sistema-climatizacion">
     <div class="grupo-cab"><span class="grupo-nombre">Regulación y protección del sistema de climatización</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
@@ -7988,8 +8617,60 @@ Mide la capacidad de una sustancia para destruir el ozono estratosférico en com
     </div>
   </section>
 
+  <section id="nt151" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 151 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Estrés climatológico y márgenes de agrado térmico</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El cuerpo humano se mantiene en estado confortable cuando su entorno se encuentra dentro de límites definidos de temperatura y humedad; el exceso de calor genera una sobrecarga térmica (estrés climatológico) que reduce la oxigenación cerebral y disminuye la seguridad activa del vehículo (págs. 98-99).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>Efectos de las condiciones climáticas en el habitáculo:
+- Margen agradable (Zona A): se sitúa entre 20 ºC y 22 ºC de temperatura ambiente (págs. 98-99).
+- Caudales de aire requeridos según la temperatura exterior:
+  - A 40 ºC exterior: requiere reducir la temperatura interior a 23 ºC con un caudal intenso de 10 kg/min (pág. 98).
+  - A -20 ºC exterior: requiere aumentar la temperatura interior a 28 ºC con un caudal intenso de 8 kg/min (pág. 98).
+  - A 10 ºC exterior: requiere elevar la temperatura interior a 21 ºC con un caudal reducido de 4 kg/min (pág. 98).
+- Influencia de la radiación solar: en vehículos expuestos al sol, la temperatura del habitáculo puede subir más de 15 ºC respecto al exterior, afectando principalmente a la zona de la cabeza (págs. 98-99).
+- Disminución de aptitudes por calor: el aumento de temperatura de 25 ºC a 35 ºC disminuye en un 20% la capacidad perceptiva y la facultad combinatoria del ser humano, lo que equivale en pérdida de concentración a una tasa de alcoholemia de 0,5 g/l de sangre (pág. 99).
+- Estrés climatológico (Zona C): sobrecarga térmica intensa donde aumentan la transpiración, la temperatura corporal y la frecuencia cardíaca, impidiendo que el cerebro reciba suficiente oxígeno (págs. 98-99).
+- Depuración y deshidratación: el evaporador condensa la humedad del aire reteniendo impurezas; la adición de filtros antipolen y de carbón activo mejora la calidad del aire para personas alérgicas (pág. 99).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Margen de temperatura confortable en habitáculo: 20 ºC a 22 ºC (págs. 98-99).</li>
+<li>Caudal de aire a 40 ºC ambiente: 10 kg/min (pág. 98).</li>
+<li>Caudal de aire a -20 ºC ambiente: 8 kg/min (pág. 98).</li>
+<li>Caudal de aire a 10 ºC ambiente: 4 kg/min (pág. 98).</li>
+<li>Disminución de capacidad perceptiva de 25 ºC a 35 ºC: 20% (equivalente a 0,5 g/l de alcoholemia) (pág. 99).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Analizar la influencia de las condiciones higrotérmicas del habitáculo sobre la capacidad perceptiva del conductor y definir los márgenes de confort y sobrecarga ambiental (págs. 98-99).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <ul>
+<li>Considerar el equipo de climatización exclusivamente como un opcional de confort, ignorando que es un elemento de seguridad activa clave para prevenir accidentes por fatiga térmica (pág. 99).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT151_01</code> Gráfica de curvas de agrado térmico, caudal de aire en kg/min y zonas de confort, carga media y estrés climatológico — Fuente: PRO. Climatización Electrónica.pdf, pág. 98</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">PRO 13. Climatización Electrónica.pdf, págs. 98-99</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    150 notas técnicas · generado el 24/09/2026.
+    166 notas técnicas · generado el 24/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 

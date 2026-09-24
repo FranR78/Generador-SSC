@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-24",
- "total": 150,
+ "total": 166,
  "grupos": [
   "Circuito frigorífico",
   "Control de climatización",
@@ -586,6 +586,64 @@
     {
      "titulo": "Errores de concepto frecuentes",
      "texto": "Creer que el certificado habilita para intervenir en sistemas de climatización de trenes, barcos o aviones (pág. 1). Pensar que la certificación pierde validez al cambiar de comunidad autónoma dentro de España o al desplazarse a otro país de la Unión Europea (pág. 1)."
+    }
+   ]
+  },
+  {
+   "id": "ssc.higrometria-y-confort.pro-13-climatizacion-electronica",
+   "nt": 151,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "higrometria-y-confort",
+   "seccion": "2. Fundamentos",
+   "subgrupo": "",
+   "titulo": "Estrés climatológico y márgenes de agrado térmico",
+   "codigo": "",
+   "menu": "Estrés climatológico y márgenes de agr",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "PRO 13. Climatización Electrónica.pdf, págs. 98-99",
+   "clase": "fundamento",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "regulacion-automatica"
+   ],
+   "palabras": [
+    "estrés climatológico",
+    "margen agradable",
+    "transpiración",
+    "seguridad activa"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Analizar la influencia de las condiciones higrotérmicas del habitáculo sobre la capacidad perceptiva del conductor y definir los márgenes de confort y sobrecarga ambiental (págs. 98-99)."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El cuerpo humano se mantiene en estado confortable cuando su entorno se encuentra dentro de límites definidos de temperatura y humedad; el exceso de calor genera una sobrecarga térmica (estrés climatológico) que reduce la oxigenación cerebral y disminuye la seguridad activa del vehículo (págs. 98-99)."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Efectos de las condiciones climáticas en el habitáculo: - Margen agradable (Zona A): se sitúa entre 20 ºC y 22 ºC de temperatura ambiente (págs. 98-99). - Caudales de aire requeridos según la temperatura exterior: - A 40 ºC exterior: requiere reducir la temperatura interior a 23 ºC con un caudal intenso de 10 kg/min (pág. 98). - A -20 ºC exterior: requiere aumentar la temperatura interior a 28 ºC con un caudal intenso de 8 kg/min (pág. 98). - A 10 ºC exterior: requiere elevar la temperatura interior a 21 ºC con un caudal reducido de 4 kg/min (pág. 98). - Influencia de la radiación solar: en vehículos expuestos al sol, la temperatura del habitáculo puede subir más de 15 ºC respecto al exterior, afectando principalmente a la zona de la cabeza (págs. 98-99). - Disminución de aptitudes por calor: el aumento de temperatura de 25 ºC a 35 ºC disminuye en un 20% la capacidad perceptiva y la facultad combinatoria del ser humano, lo que equivale en pérdida de concentración a una tasa de alcoholemia de 0,5 g/l de sangre (pág. 99). - Estrés climatológico (Zona C): sobrecarga térmica intensa donde aumentan la transpiración, la temperatura corporal y la frecuencia cardíaca, impidiendo que el cerebro reciba suficiente oxígeno (págs. 98-99). - Depuración y deshidratación: el evaporador condensa la humedad del aire reteniendo impurezas; la adición de filtros antipolen y de carbón activo mejora la calidad del aire para personas alérgicas (pág. 99)."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Margen de temperatura confortable en habitáculo: 20 ºC a 22 ºC (págs. 98-99). Caudal de aire a 40 ºC ambiente: 10 kg/min (pág. 98). Caudal de aire a -20 ºC ambiente: 8 kg/min (pág. 98). Caudal de aire a 10 ºC ambiente: 4 kg/min (pág. 98). Disminución de capacidad perceptiva de 25 ºC a 35 ºC: 20% (equivalente a 0,5 g/l de alcoholemia) (pág. 99)."
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Considerar el equipo de climatización exclusivamente como un opcional de confort, ignorando que es un elemento de seguridad activa clave para prevenir accidentes por fatiga térmica (pág. 99)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Gráfica de curvas de agrado térmico, caudal de aire en kg/min y zonas de confort, carga media y estrés climatológico — Fuente: PRO. Climatización Electrónica.pdf, pág. 98"
     }
    ]
   },
@@ -2890,6 +2948,66 @@
    ]
   },
   {
+   "id": "ssc.presostato.interruptor-termico.pro-13-climatizacion-electronica",
+   "nt": 154,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "presostato-binary-trinary-cuatrinary",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Interruptor térmico para desacoplamiento del compresor",
+   "codigo": "",
+   "menu": "Interruptor térmico para desacoplamien",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "PRO 13. Climatización Electrónica.pdf, págs. 104",
+   "clase": "componente",
+   "variante": "interruptor-termico",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "control-climatizacion",
+   "relacionados": [
+    "embrague-compresor",
+    "evaporador"
+   ],
+   "palabras": [
+    "interruptor térmico",
+    "caja de aguas",
+    "< 5 ºC",
+    "congelación evaporador",
+    "normalmente cerrado"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Interrumpir la alimentación eléctrica del embrague electromagnético del compresor cuando la temperatura exterior desciende de un límite de seguridad para prevenir la congelación del evaporador (pág. 104)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Conmutador térmico mecánico instalado en la caja de aguas o zonas próximas, conectado en serie con la línea de alimentación del embrague del compresor (pág. 104)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Sus contactos permanecen normalmente cerrados permitiendo el paso de corriente hacia el embrague (pág. 104). Cuando la temperatura exterior desciende por debajo de 5 ºC, abre automáticamente sus contactos cortando la corriente al compresor (pág. 104)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Umbral de apertura de contactos por baja temperatura: 5 ºC (pág. 104)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Bloqueo mecánico de contactos en posición cerrada (pág. 104)."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "No dispone de función de emergencia; si el interruptor no abre sus contactos por debajo de 5 ºC, el compresor continúa funcionando provocando la congelación del evaporador (pág. 104)."
+    }
+   ]
+  },
+  {
    "id": "ssc.transmisor-presion.2-introduccion-a-la-refrigeracion",
    "nt": 14,
    "modulo": "ssc",
@@ -3205,6 +3323,70 @@
    ]
   },
   {
+   "id": "ssc.sensor-temperatura-exterior.pro-13-climatizacion-electronica",
+   "nt": 153,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-temperatura-ntc-exterior",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Sensor de temperatura exterior y de aire aspirado",
+   "codigo": "",
+   "menu": "Sensor de temperatura exterior y de ai",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "PRO 13. Climatización Electrónica.pdf, págs. 103",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "NTC",
+    "paragolpes",
+    "retrovisor",
+    "canal aspiración",
+    "valor más bajo",
+    "10 ºC"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la temperatura del aire ambiente exterior y la temperatura en el canal de entrada de aire fresco a la unidad climática para la regulación de las trampillas y de la turbina (pág. 103)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Sensores formados por resistencias de coeficiente de temperatura negativo (NTC). El sensor exterior se instala en el paragolpes delantero o en el espejo retrovisor derecho; el sensor de aire aspirado se ubica en el canal de entrada de aire (pág. 103)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Modifican su resistencia eléctrica de forma inversamente proporcional a la temperatura (pág. 103). La UCE del climatizador recibe ambas señales y suele utilizar el valor más bajo de las dos para realizar los cálculos de regulación de la trampilla de temperatura, recirculación, velocidad de la turbina e indicación en el cuadro de instrumentos (pág. 103). En sistemas actuales, el sensor exterior comunica la señal al cuadro de instrumentos y este la transmite por Can-Bus a la UCE del climatizador (pág. 103)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Valor supletorio fijo por fallo de ambos sensores: +10 ºC (pág. 103)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Registradas en la memoria de autodiagnóstico de la UCE (pág. 103)."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si se avería uno de los dos sensores, la UCE adopta la señal del sensor que funciona (pág. 103). Si fallan ambos, se aplica el valor sustitutivo de +10 ºC (pág. 103). Si falla el sensor exterior, desaparece la indicación en el cuadro de instrumentos (pág. 103). En sistemas con un único sensor exterior, su fallo puede cancelar el acoplamiento magnético del compresor (pág. 103)."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "A través del volumen de diagnóstico del equipo de diagnosis conectado a la UCE (pág. 103)."
+    }
+   ]
+  },
+  {
    "id": "ssc.sensor-temperatura-interior.208-regulacion-de-la-temperatura",
    "nt": 100,
    "modulo": "ssc",
@@ -3330,6 +3512,124 @@
    ]
   },
   {
+   "id": "ssc.sensor-temperatura-interior.pro-13-climatizacion-electronica",
+   "nt": 155,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-temperatura-ntc-interior",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Termosensor de temperatura interior",
+   "codigo": "",
+   "menu": "Termosensor de temperatura interior",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "PRO 13. Climatización Electrónica.pdf, págs. 104",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "unidad-control-climatizador",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "servomotor-trampilla"
+   ],
+   "palabras": [
+    "NTC interior",
+    "turbina aspiración",
+    "valor supletorio 22 a 26 ºC",
+    "salpicadero"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la temperatura real del aire en el habitáculo para el cálculo de la posición de la trampilla de temperatura (pág. 104)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Sensor térmico NTC que puede estar integrado directamente en la UCE/panel de mandos o alojarse de forma independiente en el salpicadero (págs. 104-105). Incorpora un pequeño electro motor que hace girar una turbina de aspiración (pág. 104)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El motor con turbina aspira de forma continua un caudal de aire del habitáculo haciéndolo pasar sobre la resistencia NTC para obtener una lectura precisa sin interferencias del calor local de la consola (pág. 104). La UCE analiza la variación de resistencia para posicionar las trampillas (pág. 104)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Valor supletorio por ausencia de señal: entre +22 ºC y +26 ºC según el sistema (pág. 104)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Ausencia de señal por fallo de la resistencia NTC o agarrotamiento del motorcillo de la turbina (pág. 104)."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "La UCE sustituye la señal ausente por un valor fijo de entre 22 ºC y 26 ºC (pág. 104). El sistema sigue funcionando, pero al seleccionar temperaturas superiores o inferiores a la de referencia, el habitáculo se calentará o enfriará por encima de lo solicitado al carecer de lectura real (pág. 104)."
+    }
+   ]
+  },
+  {
+   "id": "ssc.sensor-temperatura-interior.difusores.pro-13-climatizacion-electronica",
+   "nt": 156,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-temperatura-ntc-interior",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Termosensores de temperatura del difusor central y zona de pies",
+   "codigo": "",
+   "menu": "Termosensores de temperatura del difus",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "PRO 13. Climatización Electrónica.pdf, págs. 104",
+   "clase": "componente",
+   "variante": "difusores",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "control-climatizacion",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "difusor central",
+    "zona pies",
+    "NTC",
+    "-10 a +85 ºC",
+    "valor medio"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Registrar la temperatura del aire tratado en las salidas del difusor central y del vano reposapiés de la unidad climática para la regulación de la temperatura de entrada (pág. 104)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Sondas térmicas del tipo NTC ubicadas directamente en las canalizaciones de salida del difusor central y de la zona de pies (pág. 104)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Miden la temperatura de impulsión del aire en ambas salidas (pág. 104). La UCE del climatizador procesa un valor medio de las lecturas indicadas por ambos sensores, siendo este un factor fundamental para la regulación automática (pág. 104)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Rango de temperatura de registro de las sondas: de -10 ºC a +85 ºC (pág. 104)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Ausencia de señal por fallo de una de las sondas (pág. 104)."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si uno de los sensores deja de emitir señal, el sistema no puede realizar la regulación automática, manteniéndose fijos los parámetros existentes en el momento de producirse la avería (pág. 104)."
+    }
+   ]
+  },
+  {
    "id": "ssc.sensor-evaporador.11-dispositivos-de-regulacion-y-segurida",
    "nt": 65,
    "modulo": "ssc",
@@ -3437,6 +3737,62 @@
    ]
   },
   {
+   "id": "ssc.sensor-evaporador.pro-13-climatizacion-electronica",
+   "nt": 157,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-ntc-evaporador",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Termosensor para la temperatura del evaporador",
+   "codigo": "",
+   "menu": "Termosensor para la temperatura del ev",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "PRO 13. Climatización Electrónica.pdf, págs. 105",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "evaporador",
+   "relacionados": [
+    "compresor",
+    "transmisor-presion"
+   ],
+   "palabras": [
+    "NTC evaporador",
+    "congelación",
+    "sensor MAP",
+    "rendimiento reducido",
+    "cilindrada variable"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Registrar la temperatura del aire enfriado inmediatamente a la salida del evaporador para regular el rendimiento del compresor y evitar su congelación (pág. 105)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Sonda térmica de tipo NTC ubicada a la salida del evaporador o alojada directamente entre sus aletas (pág. 105). En compresores de cilindrada variable suele omitirse (pág. 105)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Emite una señal eléctrica hacia la UCE informando de la temperatura del aire tras pasar por el evaporador (pág. 105). La UCE utiliza este dato para ajustar el trabajo del compresor y garantizar la temperatura requerida evitando la formación de hielo (pág. 105)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Corte del cableado o avería interna de la sonda (pág. 105)."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Al ausentarse la señal o averiarse la sonda, el compresor se pasa a regular exclusivamente mediante la señal del sensor MAP de alta presión, limitándose el rendimiento del compresor para prevenir la congelación (pág. 105)."
+    }
+   ]
+  },
+  {
    "id": "ssc.sensor-calidad-aire.208-regulacion-de-la-temperatura",
    "nt": 108,
    "modulo": "ssc",
@@ -3510,6 +3866,66 @@
    ]
   },
   {
+   "id": "ssc.sensor-calidad-aire.pro-13-climatizacion-electronica",
+   "nt": 166,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-calidad-aire",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Sensor de la calidad del aire",
+   "codigo": "",
+   "menu": "Sensor de la calidad del aire",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "PRO 13. Climatización Electrónica.pdf, págs. 112-113",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "control-climatizacion",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "recirculacion"
+   ],
+   "palabras": [
+    "G238",
+    "dióxido de estaño",
+    "SnO2",
+    "350 ºC",
+    "0.5 W",
+    "gases oxidables",
+    "gases reducibles",
+    "CO",
+    "NOx"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Detectar la presencia de gases contaminantes en el aire de entrada y enviar una señal digital a la UCE para activar automáticamente la recirculación (págs. 112-113)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Sensor de óxidos mixtos con semiconductor de dióxido de estaño (SnO2), situado en la entrada de aire a la unidad climática junto al sensor de temperatura (págs. 112-113)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Trabaja a una temperatura de servicio de unos 350 ºC con un consumo de 0,5 W, funcionando de forma similar a una sonda lambda (pág. 112). Modifica su resistencia al absorber o liberar oxígeno (pág. 113): - Gases oxidables (absorben oxígeno): monóxido de carbono (CO), vapores de gasolina, hexano (C6H14), benceno (C6H6), n-heptano (C7H16). Al contacto con el SnO2 liberan oxígeno, reduciendo la resistencia del sensor (págs. 112-113). - Gases reducibles (ceden oxígeno): óxidos nítricos (NOx), dióxido de azufre (SO2), ácido sulfhídrico (H2S), carbono sulfuro (CS2). Al contacto con el SnO2 ceden oxígeno, aumentando la resistencia del sensor (págs. 112-113). La electrónica integrada mide la variación de resistencia y emite una señal digital a la UCE del climatizador (pág. 113)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Temperatura de servicio interna: 350 ºC aprox. (pág. 112). Potencia absorbida: 0,5 W (pág. 112)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Estructura interna del sensor G238, zona de medición de SnO2 y esquema de reacción ante gases oxidables y reducibles — Fuente: PRO. Climatización Electrónica.pdf, págs. 112-113"
+    }
+   ]
+  },
+  {
    "id": "ssc.fotosensor-solar.208-regulacion-de-la-temperatura",
    "nt": 102,
    "modulo": "ssc",
@@ -3570,6 +3986,75 @@
     {
      "titulo": "Imágenes requeridas",
      "texto": "Sección y componentes del fotosensor de radiación solar G107 (filtro, elemento óptico y fotodiodo) en versiones simple y doble — Fuente: 208. Regulación de la temperatura.pdf, pág. 52"
+    }
+   ]
+  },
+  {
+   "id": "ssc.fotosensor-solar.pro-13-climatizacion-electronica",
+   "nt": 161,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "fotosensor-solar",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Fotosensor para radiación solar",
+   "codigo": "",
+   "menu": "Fotosensor para radiación solar",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "PRO 13. Climatización Electrónica.pdf, págs. 107-108",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "control-climatizacion",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "servomotor-trampilla"
+   ],
+   "palabras": [
+    "fotodiodo",
+    "elemento óptico",
+    "incidencia oblicua",
+    "5 V",
+    "3 V osciloscopio",
+    "parabrisas atérmico"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la intensidad y el ángulo de incidencia de la radiación solar sobre el salpicadero para corregir la regulación de la temperatura, trampillas y turbina (págs. 107-108)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Sensor óptico compuesto por carcasa, filtro, elemento óptico y fotodiodo, ubicado en el centro del salpicadero (págs. 107-108). Puede ser de versión simple (climatizador normal) o doble (climatizador bizona) (pág. 108)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "La corriente que atraviesa el fotodiodo es directamente proporcional a la luminosidad (pág. 107). El elemento óptico apantalla la luz de incidencia vertical y encauza mayor radiación hacia el fotodiodo cuando el sol entra de forma oblicua (que genera mayor sensación térmica), ordenando a la UCE aumentar la refrigeración y modificar la velocidad de la turbina (págs. 107-108)."
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tensión de alimentación suministrada por la UCE: 5 V (pág. 108). Tensión de salida en osciloscopio ante luz intensa: subida de tensión hasta aprox. 3 V (pág. 108)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Sustitución del parabrisas atérmico original por uno normal, lo que provoca que el climatizador no regule correctamente al recibir mayor radiación (pág. 108)."
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "En fotosensores dobles, si falla uno la UCE utiliza la señal del otro; si fallan ambos o el sensor simple, la UCE adopta un valor sustitutivo de radiación intermedia (pág. 108)."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Verificar continuidad del cableado y alimentación de 5 V con encendido puesto (pág. 108). Conectar osciloscopio a las salidas de señal y acercar una luz intensa; la tensión debe subir hasta aprox. 3 V (pág. 108)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Sección del fotosensor solar con filtro, elemento óptico y fotodiodo, junto con señal de osciloscopio al aplicar luz — Fuente: PRO. Climatización Electrónica.pdf, págs. 107-108"
     }
    ]
   },
@@ -3778,6 +4263,67 @@
     {
      "titulo": "Cómo comprobarlo",
      "texto": "Localizar los defectos mediante el equipo de autodiagnóstico conectado al terminal de diagnosis de 16 polos T16 (págs. 46-47)."
+    }
+   ]
+  },
+  {
+   "id": "ssc.unidad-control-climatizador.pro-13-climatizacion-electronica",
+   "nt": 160,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "unidad-control-climatizador",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Unidad de control del climatizador y panel de mandos",
+   "codigo": "",
+   "menu": "Unidad de control del climatizador y p",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "PRO 13. Climatización Electrónica.pdf, págs. 106",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "servomotor-trampilla",
+    "sensor-temperatura-interior"
+   ],
+   "palabras": [
+    "panel de mandos",
+    "UCE indivisible",
+    "display",
+    "AUTO",
+    "ECON",
+    "bizona"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Procesar las lecturas de los sensores e instrucciones del usuario para gobernar servomotores, turbina, compresor y luneta térmica (pág. 106)."
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Módulo electrónico que forma un conjunto indivisible con el panel de mandos frontal, adaptado a la estética del salpicadero de cada modelo (pág. 106)."
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Recibe las señales de los sensores y las solicitudes del usuario (temperatura conductor/acompañante, salidas de aire, recirculación manual/automática, turbina, modo AUTO, ECON, luneta, asientos térmicos) (pág. 106). Calcula y envía señales de salida hacia los actuadores para regular la temperatura y el caudal (págs. 101, 106)."
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Registro de averías de sensores o servomotores en la memoria de autodiagnóstico (págs. 101, 106)."
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "A través de la lectura de averías mediante el conector de diagnóstico OBD (págs. 101, 103)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Panel de mandos y UCE indivisible de un climatizador automático bizona con pantallas digitales y pulsadores de función — Fuente: PRO. Climatización Electrónica.pdf, pág. 106"
     }
    ]
   },
@@ -4016,6 +4562,289 @@
    ]
   },
   {
+   "id": "ssc.regulacion-automatica.manual-vs-automatica.pro-13-climatizacion-electronica",
+   "nt": 152,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-automatica",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Comparativa entre climatización manual y regulación automática",
+   "codigo": "",
+   "menu": "Comparativa entre climatización manual",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "PRO 13. Climatización Electrónica.pdf, págs. 100-101",
+   "clase": "fundamento",
+   "variante": "manual-vs-automatica",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "servomotor-trampilla"
+   ],
+   "palabras": [
+    "climatización manual",
+    "climatización automática",
+    "servomotores",
+    "UCE",
+    "sensores"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Diferenciar la arquitectura, el modo de gestión y la intervención del conductor entre los sistemas de aire acondicionado manuales y los climatizadores automáticos (págs. 100-101)."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "En el sistema manual el conductor realiza las funciones de unidad de control y actuador ajustando mandos mecánicos por cable; en el sistema automático una UCE procesa información de múltiples sensores y comanda servomotores con potenciómetro de realimentación (págs. 100-101)."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Características comparativas: 1. Climatización manual: - El movimiento de las trampillas de mezcla y distribución se realiza mediante cables conectados físicamente al panel de mandos (pág. 100). - El caudal de aire depende de la selección manual entre las 4 velocidades de giro de la turbina (págs. 100-101). - El conductor debe corregir manualmente de forma continua las fluctuaciones de temperatura provocadas por cambios en el clima exterior, la velocidad de marcha o la temperatura del refrigerante del motor (pág. 100). 2. Climatización automática: - El conductor únicamente selecciona la temperatura de confort deseada (pág. 101). - La UCE del climatizador recibe lecturas de sensores térmicos (entrada de aire, salida del evaporador, difusor central, zona pies, interior, exterior, radiación solar) e información vía Can-Bus (velocidad de marcha, r.p.m. del motor, tiempo parado) (pág. 101). - La UCE calcula las señales de salida para alimentar servomotores eléctricos que posicionan las trampillas, modula el regulador de la turbina de aire fresco y memoriza las averías en su registro de diagnóstico (pág. 101)."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Velocidades de selección manual de la turbina: 4 velocidades (pág. 100)."
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Asumir que en un climatizador automático el conductor debe reajustar los mandos cuando varía la velocidad del vehículo o la temperatura del motor (págs. 100-101)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema comparativo de la unidad climática manual con mando por cables frente a la unidad automática provista de servomotores y sensores — Fuente: PRO. Climatización Electrónica.pdf, págs. 100-101"
+    }
+   ]
+  },
+  {
+   "id": "ssc.regulacion-automatica.carga-alternador.pro-13-climatizacion-electronica",
+   "nt": 158,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-automatica",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Señal de carga eléctrica del alternador en la climatización",
+   "codigo": "",
+   "menu": "Señal de carga eléctrica del alternado",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "PRO 13. Climatización Electrónica.pdf, págs. 105",
+   "clase": "fundamento",
+   "variante": "carga-alternador",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "compresor",
+    "electroventilador-condensador"
+   ],
+   "palabras": [
+    "borne L",
+    "borne DF",
+    "red de abordo",
+    "Can-Bus",
+    "desconexión compresor",
+    "batería"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Informar a la UCE del climatizador sobre el nivel de saturación o trabajo del alternador para evitar la descarga accidental de la batería (pág. 105)."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El alternador genera una señal digital evaluando la tensión de trabajo (borne L) y el rendimiento (borne +/DF) que envía a la UCE de la red de a bordo, la cual emite un mensaje por el Can-Bus de confort (pág. 105)."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Procesamiento y estrategia de gestión: - Cuando el alternador supera un límite de trabajo prefijado, la UCE de la red de a bordo transmite un mensaje de exceso de carga a través del Can-Bus (pág. 105). - La UCE del climatizador interpreta el mensaje y desactiva el compresor al tiempo que desconecta los electroventiladores (pág. 105). - Esta acción reduce drásticamente el consumo de corriente impidiendo la descarga de la batería (pág. 105)."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Bornes de evaluación del alternador: borne L (tensión de trabajo) y borne +/DF (rendimiento) (pág. 105)."
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Creer que el climatizador funciona al máximo rendimiento ignorando las situaciones de sobrecarga eléctrica del alternador (pág. 105)."
+    }
+   ]
+  },
+  {
+   "id": "ssc.regulacion-automatica.senales-suplementarias.pro-13-climatizacion-electronica",
+   "nt": 162,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-automatica",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Señales suplementarias de intercambio de datos entre UCEs",
+   "codigo": "",
+   "menu": "Señales suplementarias de intercambio",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "PRO 13. Climatización Electrónica.pdf, págs. 109",
+   "clase": "fundamento",
+   "variante": "senales-suplementarias",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "servomotor-trampilla",
+    "compresor"
+   ],
+   "palabras": [
+    "tiempo parado Tp",
+    "velocidad marcha v",
+    "régimen n",
+    "acelerador a fondo",
+    "Can-Bus"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Aumentar el confort térmico y optimizar la potencia del motor integrando datos dinámicos transmitidos vía Can-Bus desde otras unidades de control (pág. 109)."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Uso compartido de las señales de tiempo de parada, velocidad del vehículo y r.p.m. del motor entre el cuadro de instrumentos, la UCE de motor y la UCE del climatizador (pág. 109)."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Efecto de las tres señales suplementarias: 1. Tiempo del vehículo parado (Tp): mide el tiempo desde que se desconecta el encendido hasta que se vuelve a conectar. Al arrancar, la UCE utiliza la temperatura exterior previa para evitar errores por calor radiado del motor, impidiendo un enfriamiento excesivo (pág. 109). 2. Velocidad de marcha (v): procedente del velocímetro/ABS. A medida que aumenta la velocidad, la UCE reduce la sección de paso de la chapaleta de velocidad para mantener invariable el caudal que entra (pág. 109). 3. Régimen de revoluciones (n): procedente de la UCE de motor. Impide conectar el compresor si el motor está parado o el ralentí no está estabilizado, y desconecta el compresor unos segundos al pisar el acelerador a fondo para disponer de toda la potencia en adelantamientos (pág. 109)."
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Creer que al pisar a fondo el acelerador para adelantar el compresor permanece conectado restando potencia al motor (pág. 109)."
+    }
+   ]
+  },
+  {
+   "id": "ssc.regulacion-automatica.pro-13-climatizacion-electronica",
+   "nt": 163,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-automatica",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Modo de regulación de la temperatura (frío, caliente e intermedio)",
+   "codigo": "",
+   "menu": "Modo de regulación de la temperatura (",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "PRO 13. Climatización Electrónica.pdf, págs. 110",
+   "clase": "fundamento",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "evaporador",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "modo frío",
+    "modo caliente",
+    "modo intermedio",
+    "mezcla de aire",
+    "regulación automática"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Mantener invariable la temperatura interior del habitáculo ajustando automáticamente el paso de aire por los intercambiadores térmicos (pág. 110)."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Posicionamiento automático de las chapaletas de mezcla según la temperatura exterior medida y la selección del usuario (pág. 110)."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Estrategia de paso del aire: - Con temperatura exterior fría: el aire de entrada se dirige hacia el radiador de calefacción antes de introducirlo en el habitáculo (pág. 110). - Con temperatura exterior caliente: el aire de entrada se hace pasar por el evaporador, donde se enfría, deshidrata y depura (pág. 110). - Con temperatura exterior intermedia: el aire pasa por el evaporador y una fracción se calienta en el radiador; la mezcla entra exactamente a la temperatura seleccionada sin intervención manual (pág. 110)."
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Asumir que en temperaturas intermedias el climatizador apaga el compresor en lugar de mezclar proporciones de aire frío y caliente (pág. 110)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del paso de aire en la unidad climática automática en modos de temperatura fría, caliente e intermedia — Fuente: PRO. Climatización Electrónica.pdf, pág. 110"
+    }
+   ]
+  },
+  {
+   "id": "ssc.regulacion-automatica.bizona.pro-13-climatizacion-electronica",
+   "nt": 164,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-automatica",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Distribución de aire y regulación bizona",
+   "codigo": "",
+   "menu": "Distribución de aire y regulación bizo",
+   "grupo": "Distribución de aire",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "PRO 13. Climatización Electrónica.pdf, págs. 111",
+   "clase": "fundamento",
+   "variante": "bizona",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "",
+   "relacionados": [
+    "servomotor-trampilla",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "bizona",
+    "servomotor izquierdo",
+    "servomotor derecho",
+    "cuatro zonas",
+    "unidad trasera"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Permitir el ajuste de temperaturas independientes entre el lado del conductor y el del acompañante mediante la división del caudal de aire (pág. 111)."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Utilización de dos servomotores eléctricos independientes para accionar la chapaleta de mezcla del lado izquierdo y la del lado derecho (pág. 111)."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Gestión bizona y multizona: - En los conductos de distribución se divide el caudal en frío o caliente y para las partes izquierda y derecha del habitáculo (pág. 111). - Un servomotor regula la mezcla en la zona izquierda y otro en la derecha (pág. 111). - Aunque el aire se mezcla finalmente en el habitáculo, a la salida de los aireadores se aprecia una clara diferencia de temperatura y sensación térmica (pág. 111). - En vehículos de alta gama se instala una segunda unidad climática en la zona trasera para regular hasta cuatro zonas independientes con su propio panel de mandos (pág. 111)."
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Creer que la regulación bizona exige montar dos evaporadores independientes en la parte delantera (pág. 111)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema de la carcasa de distribución bizona dividida en conductos izquierdo y derecho accionados por servomotores — Fuente: PRO. Climatización Electrónica.pdf, pág. 111"
+    }
+   ]
+  },
+  {
    "id": "ssc.distribucion-aire.208-regulacion-de-la-temperatura",
    "nt": 105,
    "modulo": "ssc",
@@ -4132,6 +4961,110 @@
     {
      "titulo": "Imágenes requeridas",
      "texto": "Esquema de posicionamiento de chapaleta de aire fresco cerrada y chapaleta de recirculación abierta en accionamiento neumático y eléctrico — Fuente: 208. Regulación de la temperatura.pdf, págs. 60-62"
+    }
+   ]
+  },
+  {
+   "id": "ssc.recirculacion.marcha-atras.pro-13-climatizacion-electronica",
+   "nt": 159,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "recirculacion",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Señal de marcha atrás para el cierre automático de aire exterior",
+   "codigo": "",
+   "menu": "Señal de marcha atrás para el cierre a",
+   "grupo": "Distribución de aire",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "PRO 13. Climatización Electrónica.pdf, págs. 106",
+   "clase": "fundamento",
+   "variante": "marcha-atras",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "servomotor-trampilla"
+   ],
+   "palabras": [
+    "marcha atrás",
+    "gases de escape",
+    "Can-Bus",
+    "trampilla recirculación",
+    "aire exterior"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Activar de forma automática la recirculación de aire al engranar la marcha atrás para evitar la penetración de los gases de escape al habitáculo (pág. 106)."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El conmutador de la caja de cambios informa de la selección de la marcha atrás a la UCE de la red de a bordo, la cual vuelca el dato a la línea Can-Bus de confort hacia la UCE del climatizador (pág. 106)."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Lógica de actuación: - Al reconocer el mensaje de marcha atrás conectada, la UCE del climatizador manda accionar la trampilla de recirculación (pág. 106). - La trampilla cierra la entrada de aire exterior impidiendo que los humos del tubo de escape sean aspirados hacia el interior mientras el vehículo recula (pág. 106). - Si la señal se ausenta por avería, la función no se realiza, manteniéndose abierta la entrada de aire exterior al circular marcha atrás (pág. 106)."
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Pensar que el cierre de la entrada de aire exterior solo se produce mediante la pulsación manual del botón de recirculación (pág. 106)."
+    }
+   ]
+  },
+  {
+   "id": "ssc.recirculacion.pro-13-climatizacion-electronica",
+   "nt": 165,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "recirculacion",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Sistema de recirculación de aire",
+   "codigo": "",
+   "menu": "Sistema de recirculación de aire",
+   "grupo": "Distribución de aire",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "PRO 13. Climatización Electrónica.pdf, págs. 112",
+   "clase": "fundamento",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "",
+   "relacionados": [
+    "servomotor-trampilla",
+    "sensor-calidad-aire"
+   ],
+   "palabras": [
+    "recirculación",
+    "empañamiento",
+    "aire viciado",
+    "servomotor",
+    "vacío"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Acondicionar el aire del propio habitáculo sin tomar aire del exterior para acelerar el calentamiento o enfriamiento y aislar de olores o contaminación (pág. 112)."
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Cierre de la chapaleta de entrada de aire fresco mediante un actuador de vacío o un servomotor eléctrico (combinado en ocasiones con el reglaje de velocidad) (pág. 112)."
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Ventajas y limitaciones: - Permite calentar o enfriar más rápidamente al hacer recircular aire previamente acondicionado (pág. 112). - Evita la entrada de gases contaminantes u olores molesto (pág. 112). - Debe limitarse en el tiempo: si no se desactiva, el aire se vicia por falta de renovación de oxígeno y los cristales se empañan por acumulación de humedad (pág. 112)."
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Mantener conectada la recirculación de forma permanente durante viajes largos ignorando el empañamiento de cristales y la falta de oxígeno (pág. 112)."
     }
    ]
   },
