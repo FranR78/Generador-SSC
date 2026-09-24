@@ -1,0 +1,38 @@
+name: Limpiar historial de Actions
+
+# Borra del historial las ejecuciones que ya no sirven: todas las fallidas o
+# canceladas, y de las correctas deja solo las 30 últimas de cada workflow.
+# No toca código ni archivos: solo la lista de la pestaña Actions.
+# Se lanza a mano (Actions → este workflow → Run workflow) y además cada lunes.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * 1'
+
+permissions:
+  actions: write
+
+jobs:
+  limpiar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Borrar ejecuciones viejas
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          GUARDAR: 30
+        run: |
+          borrar() { xargs -r -n1 gh run delete -R "$REPO" || true; }
+
+          echo "Fallidas y canceladas:"
+          gh run list -R "$REPO" --limit 1000 --json databaseId,status,conclusion \
+            -q '.[] | select(.status=="completed" and (.conclusion=="failure" or .conclusion=="cancelled" or .conclusion=="startup_failure")) | .databaseId' \
+            | borrar
+
+          echo "Correctas más allá de las $GUARDAR últimas de cada workflow:"
+          for wf in $(gh workflow list -R "$REPO" --all --json id -q '.[].id'); do
+            gh run list -R "$REPO" -w "$wf" --limit 1000 --json databaseId,status \
+              -q "[.[] | select(.status==\"completed\")] | .[$GUARDAR:] | .[].databaseId" \
+              | borrar
+          done
