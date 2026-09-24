@@ -2170,6 +2170,14 @@
    "hecha": false
   },
   {
+   "nombre": "NT526_01",
+   "nt": 526,
+   "titulo": "Conmutador de presión trinario",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Esquema del conmutador de presión trinario con los bornes de accionamiento del compresor (1 y 2) y del electroventilador (3 y 4) — Fuente: Trinary y conmutadores.pdf, pág. 88",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -2194,7 +2202,7 @@
    "hecha": false
   }
  ],
- "total": 517,
+ "total": 518,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -13192,6 +13200,76 @@
      "titulo": "Mantenimiento",
      "texto": "Sustitución del conmutador y verificación del nivel de anticongelante del motor. (pág. 138)",
      "html": "<p>Sustitución del conmutador y verificación del nivel de anticongelante del motor. <span class=\"pag\">pág. 138</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.presostato.trinario.trinary-y-conmutadores",
+   "nt": 526,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "presostato-binary-trinary-cuatrinary",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Conmutador de presión trinario",
+   "codigo": "",
+   "menu": "Conmutador de presión trinario",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Trinary y conmutadores.pdf, págs. 88",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "trinario",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "embrague-compresor",
+    "electroventilador-condensador",
+    "transmisor-presion"
+   ],
+   "palabras": [
+    "presostato trinario",
+    "conmutador de presion",
+    "trinaria",
+    "corte por alta",
+    "corte por baja",
+    "electroventilador"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Vigilar y limitar las condiciones de presión del circuito hidráulico del climatizador en el lado de alta presión, desactivando el compresor mediante el embrague electromagnético ante presiones anómalas y conectando el electroventilador para asegurar el caudal de aire de refrigeración del condensador. (pág. 88)",
+     "html": "<p>Vigilar y limitar las condiciones de presión del circuito hidráulico del climatizador en el lado de alta presión, desactivando el compresor mediante el embrague electromagnético ante presiones anómalas y conectando el electroventilador para asegurar el caudal de aire de refrigeración del condensador. <span class=\"pag\">pág. 88</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Conmutador electromecánico instalado en el circuito de alta presión (ubicado directamente en el tubo de alta o en el filtro deshidratador). Es una versión combinada triple (trinaria) de control de presión. En sistemas más actuales, este componente se ha sustituido por un sensor MAP (transmisor de presión). (pág. 88)",
+     "html": "<p>Conmutador electromecánico instalado en el circuito de alta presión (ubicado directamente en el tubo de alta o en el filtro deshidratador). Es una versión combinada triple (trinaria) de control de presión. En sistemas más actuales, este componente se ha sustituido por un sensor MAP (transmisor de presión). <span class=\"pag\">pág. 88</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Integra tres funciones de control mediante contactos eléctricos operados por la presión del circuito de alta: Corte por alta presión: interrumpe la alimentación del embrague electromagnético del compresor cuando la presión sube en exceso por suciedad en el condensador o por obturación del circuito. Corte por baja presión: interrumpe la alimentación del embrague electromagnético del compresor cuando la presión cae por debajo del umbral de seguridad debido a una fuga de fluido refrigerante. Conexión del electroventilador: cierra los contactos de alimentación del electroventilador a máxima velocidad para optimizar el rendimiento del condensador y evitar aumentos de presión excesivos. (pág. 88)",
+     "html": "<p>Integra tres funciones de control mediante contactos eléctricos operados por la presión del circuito de alta:</p>\n<ul>\n<li>Corte por alta presión: interrumpe la alimentación del embrague electromagnético del compresor cuando la presión sube en exceso por suciedad en el condensador o por obturación del circuito.</li>\n<li>Corte por baja presión: interrumpe la alimentación del embrague electromagnético del compresor cuando la presión cae por debajo del umbral de seguridad debido a una fuga de fluido refrigerante.</li>\n<li>Conexión del electroventilador: cierra los contactos de alimentación del electroventilador a máxima velocidad para optimizar el rendimiento del condensador y evitar aumentos de presión excesivos. <span class=\"pag\">pág. 88</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Presión de corte por baja presión: P < 2 bar. Presión de conexión del electroventilador a máxima velocidad: P > 16 bar. Presión de corte por alta presión: P > 24 a 32 bar (según el tarado del presostato). (pág. 88)",
+     "html": "<ul>\n<li>Presión de corte por baja presión: P &lt; 2 bar.</li>\n<li>Presión de conexión del electroventilador a máxima velocidad: P &gt; 16 bar.</li>\n<li>Presión de corte por alta presión: P &gt; 24 a 32 bar (según el tarado del presostato). <span class=\"pag\">pág. 88</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Corte de la alimentación del embrague electromagnético del compresor por detección de baja presión (fuga de gas) o alta presión (obturación o suciedad en el condensador), o imposibilidad de activar la máxima velocidad del electroventilador provocando sobrepresiones en el circuito. (pág. 88)",
+     "html": "<p>Corte de la alimentación del embrague electromagnético del compresor por detección de baja presión (fuga de gas) o alta presión (obturación o suciedad en el condensador), o imposibilidad de activar la máxima velocidad del electroventilador provocando sobrepresiones en el circuito. <span class=\"pag\">pág. 88</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del conmutador de presión trinario con los bornes de accionamiento del compresor (1 y 2) y del electroventilador (3 y 4) — Fuente: Trinary y conmutadores.pdf, pág. 88",
+     "html": "<ul>\n<li>Esquema del conmutador de presión trinario con los bornes de accionamiento del compresor (1 y 2) y del electroventilador (3 y 4) — Fuente: Trinary y conmutadores.pdf, pág. 88</li>\n</ul>"
     }
    ]
   },
