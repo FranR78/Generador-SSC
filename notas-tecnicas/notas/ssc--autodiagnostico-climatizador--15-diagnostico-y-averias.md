@@ -4,63 +4,47 @@ modulo: ssc
 unidad: clima
 nt: 87
 tipo: proceso
-subtipo: procedimiento
-clase: procedimiento
-titulo: "Autodiagnóstico del sistema de climatización automática mediante equipo OBD"
+subtipo: diagnostico
+clase: diagnostico
+titulo: "Autodiagnóstico del sistema de climatización automática"
 menu: "Autodiagnóstico del sistema de climati"
 grupo: "Control de climatización"
 clave: autodiagnostico-climatizador
 area: climatizacion
 sistema: "control-climatizacion"
 fuentes: "15. Diágnostico y averías.pdf, págs. 133-134"
-relacionados: ["unidad-control-climatizador", "servomotor-trampilla", "transmisor-presion", "sensor-evaporador"]
-palabras: ["autodiagnóstico", "memoria de averías", "averías fugaces", "test de actuadores", "ajuste básico", "valores de medición"]
+relacionados: ["unidad-control-climatizador", "servomotor-trampilla", "sensor-temperatura-exterior", "transmisor-presion"]
+palabras: ["autodiagnostico", "memoria averias", "test actuadores", "ajuste basico", "valores individuales"]
 ---
 
-## Objeto y alcance
+## Síntoma
 
-Ejecución de las funciones de diagnóstico electrónico con máquina OBD en sistemas de climatización automática para la localización de fallos en sensores, verificación de actuadores y calibración de servomotores (págs. 133-134).
+Registros de avería memorizados en la centralita de climatización, mal funcionamiento de servomotores o indicación anómala de parámetros en el panel de mandos. (págs. 133-134)
 
-## Condiciones previas
+## Causas posibles
 
-- Conector de diagnóstico OBD del vehículo localizado y equipo de diagnosis compatible conectado (págs. 133, 134).
-- Tensión de batería estabilizada y contacto puesto (págs. 133-134).
+- Averías fugaces o esporádicas: fallos temporales de comunicación o lecturas puntuales fuera de rango.
+- Averías actuales o permanentes: interrupciones de circuito, cortocircuitos o fallos en sensores y actuadores.
+- Fallos en sensores específicos (memorizados en la UCE del climatizador) o en sensores compartidos (memorizados en Cuadro de Instrumentos para temperatura exterior y velocidad; o en Red de A bordo para marcha atrás, alternador e iluminación). (págs. 133-134)
 
-## Equipo y material
+## Cómo separar las causas
 
-- Máquina o terminal de diagnosis multimarca o específica con protocolo de comunicación OBD / Can-Bus (págs. 133-134).
-
-## Pasos
-
-1. Conectar la máquina de diagnosis al terminal OBD e interrogar la UCE del climatizador (págs. 133-134).
-2. Función 1 — Consultar la memoria de averías:
-   - Diferenciar entre averías esporádicas/fugaces (se borran automáticamente tras 30 a 40 arranques si no se repiten) y averías permanentes/actuales (requieren reparación física y borrado manual con la máquina) (pág. 133).
-   - Verificar averías en unidades asociadas vía Can-Bus: Cuadro de instrumentos (sensor de temperatura exterior y velocidad), UCE Red de a Bordo (sensor de marcha atrás, alternador, reóstato) y UCE del Motor (temperatura refrigerante y revoluciones) (págs. 133-134).
-3. Función 2 — Diagnóstico de elementos actuadores (test de actuadores):
-   - Test de segmentos: ilumina todos los dígitos del display para verificar fallos de información en el panel (pág. 133).
-   - Velocidades del electroventilador: activa las distintas etapas para comprobar la conmutación eléctrica (pág. 133).
-   - Turbina de aire: acciona la turbina en todo su rango de trabajo (pág. 133).
-   - Embrague del compresor: conmuta cíclicamente el acoplamiento magnético comprobando acústicamente su funcionamiento (pág. 133).
-   - Motores de trampillas: activa los servomotores comprobando la variación de temperatura y las salidas de aire (pág. 133).
-4. Función 3 — Ajuste básico:
-   - Activar el aprendizaje de topes mecánicos. La UCE mueve todos los servomotores desde el principio hasta el fin de su recorrido memorizando las posiciones de mínimo y máximo de cada potenciómetro de posición (pág. 133).
-5. Función 4 — Lectura de valores de funcionamiento individual (bloques de valores de medición):
-   - Verificar parámetros en tiempo real: estado del compresor, r.p.m. del motor, velocidad de marcha, tiempo de parada, posición teórica/real de los servomotores (temperatura, central, deshielo, recirculación), lecturas de sondas (exterior, entrada de aire, interior, evaporador, pies, difusor central, fotosensor solar), porcentaje de activación de la electroválvula del compresor, señal del sensor MAP y solicitud de elevación de ralentí (págs. 133-134).
+Conectar una máquina de diagnosis al terminal del vehículo y ejecutar las siguientes funciones:
+1. Consultar la memoria de averías: diferenciar averías esporádicas (se borran tras 30 o 40 arranques si no se repiten) de averías permanentes (solo se borran tras reparar la pieza y ejecutar "borrar memoria").
+2. Diagnóstico de elementos actuadores:
+   - Test de segmentos: ilumina los dígitos del display.
+   - Velocidades del electroventilador: verifica las distintas velocidades o la regulación continua.
+   - Turbina de aire: acciona el motor en todo su margen de trabajo.
+   - Embrague del compresor: conecta y desconecta cíclicamente el embrague.
+   - Motores de trampillas: activa los servomotores para comprobar la variación de temperatura y el reparto del flujo.
+3. Ajuste básico: activa todos los servomotores de principio a fin memorizando sus posiciones límite de mínimo y máximo (obligatorio al cambiar un servomotor o la UCE del climatizador).
+4. Lectura de valores de funcionamiento individual: comprobar los valores teóricos y reales de los servomotores (temperatura, central, deshielo, recirculación), las lecturas de los sensores de temperatura (exterior, entrada de aire, habitáculo, refrigerante), el porcentaje de radiación del fotosensor solar, la tensión de alimentación, la señal de alta presión del sensor MAP y la activación de la electroválvula del compresor. (págs. 133-134)
 
 ## Valores de referencia
 
-- Borrado automático de averías fugaces: tras 30 a 40 arranques del vehículo sin reproducirse el fallo (pág. 133).
-- Tensión de alimentación leída en bloques de valores: aproximadamente igual a la tensión de batería (~12 V) (pág. 134).
-- Ajuste básico obligatorio: tras sustituir cualquier servomotor o la propia UCE del Climatizador (pág. 133).
+- Borrado automático de averías esporádicas: 30 a 40 arranques del sistema sin reproducirse el fallo.
+- Tensión de alimentación en diagnosis: aproximadamente igual a la tensión real de batería. (págs. 133-135)
 
-## Verificación final
+## Verificación tras la reparación
 
-Efectuar el borrado de la memoria de averías tras reparar el componente defectuoso y realizar una nueva lectura para confirmar que no se registran averías permanentes (pág. 133).
-
-## Seguridad y normativa
-
-Es estrictamente imprescindible ejecutar la función de ajuste básico tras sustituir un servomotor o la UCE del climatizador; de lo contrario, la UCE no reconocerá las posiciones límite de las trampillas ocasionando fallos de regulación (pág. 133).
-
-## Imágenes requeridas
-
-- Mapeo de componentes contemplados en el autodiagnóstico del climatizador automático y unidades de control interconectadas — Fuente: 15. Diágnostico y averías.pdf, pág. 134
+Borrar la memoria de averías, realizar el ajuste básico de los servomotores y comprobar en el bloque de valores de medición que las lecturas reales se corresponden con las teóricas al accionar los mandos del climatizador. (págs. 133-134)
