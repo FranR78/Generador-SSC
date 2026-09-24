@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-24",
- "total": 404,
+ "total": 408,
  "grupos": [
   "Acceso y arranque",
   "Calefacción",
@@ -17205,6 +17205,74 @@
    ]
   },
   {
+   "id": "ssc.deteccion-fugas.7-mantenimiento-diagnostico-y-reparacion",
+   "nt": 406,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "deteccion-fugas",
+   "seccion": "9. Taller: recuperación, vacío y carga",
+   "subgrupo": "",
+   "titulo": "Detección de fugas en el circuito de climatización",
+   "codigo": "",
+   "menu": "Detección de fugas en el circuito de c",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "7. MANTENIMIENTO, DIAGNOSTICO Y REPARACION.pptx, págs. 101-108",
+   "clase": "diagnostico",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "trazador-uv",
+    "aceite-frigorifico",
+    "refrigerante-r134a"
+   ],
+   "palabras": [
+    "detector de fugas",
+    "efecto corona",
+    "conductividad termica",
+    "diodo calefactado",
+    "fluorescencia",
+    "g/año"
+   ],
+   "apartados": [
+    {
+     "titulo": "Síntoma",
+     "texto": "Pérdida progresiva de refrigerante, disminución de la capacidad de enfriamiento y descarga total del circuito frigorífico. (págs. 101-108)",
+     "html": "<p>Pérdida progresiva de refrigerante, disminución de la capacidad de enfriamiento y descarga total del circuito frigorífico. <span class=\"pag\">págs. 101-108</span></p>"
+    },
+    {
+     "titulo": "Causas posibles",
+     "texto": "Infiltraciones o porosidades en racores, uniones, retén del compresor, tubos flexibles, condensador o evaporador. (págs. 101-108)",
+     "html": "<p>Infiltraciones o porosidades en racores, uniones, retén del compresor, tubos flexibles, condensador o evaporador. <span class=\"pag\">págs. 101-108</span></p>"
+    },
+    {
+     "titulo": "Cómo separar las causas",
+     "texto": "Seleccionar la herramienta de diagnóstico adecuada según la sensibilidad exigida y las condiciones de la prueba: Electrónica de conductividad térmica: sensibilidad muy buena (< 5 g/año) para todos los fluidos y fugas cuantificables. Electrónica de diodo calefactado: buena sensibilidad, salvo en ambientes contaminados donde el captador no detecta el fluido. Electrónica de efecto Corona: sensibilidad dependiente del modelo (CPS LS 790 A, Robinair 16500). Célula de permeabilidad cerámica / ionización: buena detección recomendada (Kane-May RD 99, Sapre HFC). Fluorescencia con trazador UV: requiere añadir 30 ml de aceite con trazador al circuito; detecta fugas de hasta un máximo de 7 g/año. Agua jabonosa: apta para todos los fluidos, pero restringida a la localización de fugas importantes. Métodos descartados por baja fiabilidad o ineficacia: lámpara haloide (inadaptada a HFC) y detectores por ultrasonidos (sensibilidad mediocre). (págs. 101-108)",
+     "html": "<p>Seleccionar la herramienta de diagnóstico adecuada según la sensibilidad exigida y las condiciones de la prueba:</p>\n<ul>\n<li>Electrónica de conductividad térmica: sensibilidad muy buena (&lt; 5 g/año) para todos los fluidos y fugas cuantificables.</li>\n<li>Electrónica de diodo calefactado: buena sensibilidad, salvo en ambientes contaminados donde el captador no detecta el fluido.</li>\n<li>Electrónica de efecto Corona: sensibilidad dependiente del modelo (CPS LS 790 A, Robinair 16500).</li>\n<li>Célula de permeabilidad cerámica / ionización: buena detección recomendada (Kane-May RD 99, Sapre HFC).</li>\n<li>Fluorescencia con trazador UV: requiere añadir 30 ml de aceite con trazador al circuito; detecta fugas de hasta un máximo de 7 g/año.</li>\n<li>Agua jabonosa: apta para todos los fluidos, pero restringida a la localización de fugas importantes.</li>\n<li>Métodos descartados por baja fiabilidad o ineficacia: lámpara haloide (inadaptada a HFC) y detectores por ultrasonidos (sensibilidad mediocre). <span class=\"pag\">págs. 101-108</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Umbral de sensibilidad mínima en posición estática: 5 g/año. Umbral de sensibilidad en movimiento: 1 a 5 g/año. Umbral en ambiente contaminado: 1 a 5 g/año sin destrucción de la célula. Tiempo de recuperación tras saturación (fuga de 40 g/año): 2 a 4 segundos (< 2 s tras la absorción de una bocanada). Dosis de aceite trazador para fluorescencia: 30 ml. (págs. 101, 103, 109)",
+     "html": "<ul>\n<li>Umbral de sensibilidad mínima en posición estática: 5 g/año.</li>\n<li>Umbral de sensibilidad en movimiento: 1 a 5 g/año.</li>\n<li>Umbral en ambiente contaminado: 1 a 5 g/año sin destrucción de la célula.</li>\n<li>Tiempo de recuperación tras saturación (fuga de 40 g/año): 2 a 4 segundos (&lt; 2 s tras la absorción de una bocanada).</li>\n<li>Dosis de aceite trazador para fluorescencia: 30 ml. <span class=\"pag\">págs. 101, 103, 109</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación tras la reparación",
+     "texto": "Volver a rastrear la zona de intervención con el detector electrónico o la lámpara UV tras la reparación y presurización del circuito para confirmar la estanqueidad. (págs. 101-108)",
+     "html": "<p>Volver a rastrear la zona de intervención con el detector electrónico o la lámpara UV tras la reparación y presurización del circuito para confirmar la estanqueidad. <span class=\"pag\">págs. 101-108</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Comparativa de detectores de fugas electrónicos, de ionización y de célula de permeabilidad cerámica — Fuente: 7. MANTENIMIENTO, DIAGNOSTICO Y REPARACION.pptx, pág. 107",
+     "html": "<ul>\n<li>Comparativa de detectores de fugas electrónicos, de ionización y de célula de permeabilidad cerámica — Fuente: 7. MANTENIMIENTO, DIAGNOSTICO Y REPARACION.pptx, pág. 107</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.lavado-circuito.ssp-484-a7-info-y-clima-arrastrado-5",
    "nt": 338,
    "modulo": "ssc",
@@ -17984,6 +18052,134 @@
      "titulo": "Verificación tras la reparación",
      "texto": "Medir que las presiones de alta y baja se estabilicen dentro de los rangos teóricos de la tabla según la temperatura exterior y comprobar la temperatura en los aireadores. (págs. 123, 125).",
      "html": "<p>Medir que las presiones de alta y baja se estabilicen dentro de los rangos teóricos de la tabla según la temperatura exterior y comprobar la temperatura en los aireadores. <span class=\"pag\">págs. 123, 125</span>.</p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.lectura-manometros.7-mantenimiento-diagnostico-y-reparacion",
+   "nt": 405,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "lectura-manometros",
+   "seccion": "10. Diagnóstico",
+   "subgrupo": "",
+   "titulo": "Diagnóstico del circuito por lectura de manómetros",
+   "codigo": "",
+   "menu": "Diagnóstico del circuito por lectura d",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "7. MANTENIMIENTO, DIAGNOSTICO Y REPARACION.pptx, págs. 1-100",
+   "clase": "diagnostico",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "valvula-expansion",
+    "electroventilador-condensador",
+    "filtro-deshidratador",
+    "evaporador"
+   ],
+   "palabras": [
+    "manómetros",
+    "alta presión",
+    "baja presión",
+    "diagnóstico",
+    "carga refrigerante"
+   ],
+   "apartados": [
+    {
+     "titulo": "Síntoma",
+     "texto": "Anomalías en el rendimiento del climatizador, enfriamiento insuficiente o nulo, o presiones de trabajo fuera de tolerancia. (págs. 1-100)",
+     "html": "<p>Anomalías en el rendimiento del climatizador, enfriamiento insuficiente o nulo, o presiones de trabajo fuera de tolerancia. <span class=\"pag\">págs. 1-100</span></p>"
+    },
+    {
+     "titulo": "Causas posibles",
+     "texto": "Compresor de cilindrada variable correcto: Baja entre 1,8 y 2,1 bar; Alta entre 6 y 13 bar. Compresor de cilindrada fija o cíclico correcto: Baja entre 0,8 y 2,2 bar (0,8 bar solo con humedad muy baja); Alta entre 10 y 20 bar. Falta de refrigerante o válvula de Alta del compresor semi cerrada: Baja entre 0,5 y 0,8 bar; Alta entre 6 y 8 bar. Bulbo de válvula de expansión suelto: Baja entre 3 y 3,8 bar; Alta entre 12 y 14 bar. Válvula de expansión demasiado abierta: Baja entre 3,5 y 4,5 bar; Alta entre 10 y 14 bar. Válvula de expansión cerrada/obturada o bulbo roto: Baja a 0 bar (o zona de vacío); Alta entre 10 y 13 bar. Válvulas de baja del compresor tapadas o gota de hielo en válvula de expansión: Baja sobre 0 bar; Alta entre 4 y 6 bar. Válvula de baja comunicada: Baja entre 2,2 y 2,5 bar; Alta entre 10 y 12 bar. Evaporador congelado o válvula de regulación de cilindrada bloqueada en máximo rendimiento: Baja casi a 0 bar; Alta entre 7 y 10 bar. Manómetros no conectados, obuses sin pisar o circuito totalmente vacío: Baja 0 bar; Alta 0 bar. Vacío efectuado y comprobación de estanqueidad: Baja a 1 atmósfera de depresión; Alta con aguja al tope. Motor parado tras primera carga (~350 g): Baja entre 3 y 4 bar; Alta igualada a la Baja. Presiones en marcha con media carga: Baja sobre 0,8 bar; Alta entre 7 y 8 bar. Exceso de carga de refrigerante: Baja entre 2,5 y 2,7 bar; Alta entre 16 y 18 bar. Electroventilador girando en sentido contrario (cableado invertido): Baja entre 2,3 y 2,5 bar; Alta sobre 22 bar. Electroventilador inoperativo o condensador sucio: Baja entre 2,3 y 2,8 bar; Alta sobre 25 bar. Filtro deshumidificador obstruido o saturado: Baja entre 4,5 y 4,7 bar (o 0,3 a 0,5 bar si está helado/saturado); Alta entre 21 y 27 bar (o 19 a 20 bar). Entrada de aire caliente por trampillas de calefacción o grifo defectuoso: Baja 1,8 bar; Alta entre 12 y 15 bar. Tubos de aspiración y descarga invertidos en compresor Rotalock: Baja entre 4,5 y 4,8 bar; Alta entre 7 y 8 bar. Compresor no conecta, embrague patina o válvula de regulación de cilindrada defectuosa: Baja entre 4,5 y 6 bar; Alta igual a la Baja. (págs. 10-97)",
+     "html": "<ul>\n<li>Compresor de cilindrada variable correcto: Baja entre 1,8 y 2,1 bar; Alta entre 6 y 13 bar.</li>\n<li>Compresor de cilindrada fija o cíclico correcto: Baja entre 0,8 y 2,2 bar (0,8 bar solo con humedad muy baja); Alta entre 10 y 20 bar.</li>\n<li>Falta de refrigerante o válvula de Alta del compresor semi cerrada: Baja entre 0,5 y 0,8 bar; Alta entre 6 y 8 bar.</li>\n<li>Bulbo de válvula de expansión suelto: Baja entre 3 y 3,8 bar; Alta entre 12 y 14 bar.</li>\n<li>Válvula de expansión demasiado abierta: Baja entre 3,5 y 4,5 bar; Alta entre 10 y 14 bar.</li>\n<li>Válvula de expansión cerrada/obturada o bulbo roto: Baja a 0 bar (o zona de vacío); Alta entre 10 y 13 bar.</li>\n<li>Válvulas de baja del compresor tapadas o gota de hielo en válvula de expansión: Baja sobre 0 bar; Alta entre 4 y 6 bar.</li>\n<li>Válvula de baja comunicada: Baja entre 2,2 y 2,5 bar; Alta entre 10 y 12 bar.</li>\n<li>Evaporador congelado o válvula de regulación de cilindrada bloqueada en máximo rendimiento: Baja casi a 0 bar; Alta entre 7 y 10 bar.</li>\n<li>Manómetros no conectados, obuses sin pisar o circuito totalmente vacío: Baja 0 bar; Alta 0 bar.</li>\n<li>Vacío efectuado y comprobación de estanqueidad: Baja a 1 atmósfera de depresión; Alta con aguja al tope.</li>\n<li>Motor parado tras primera carga (~350 g): Baja entre 3 y 4 bar; Alta igualada a la Baja.</li>\n<li>Presiones en marcha con media carga: Baja sobre 0,8 bar; Alta entre 7 y 8 bar.</li>\n<li>Exceso de carga de refrigerante: Baja entre 2,5 y 2,7 bar; Alta entre 16 y 18 bar.</li>\n<li>Electroventilador girando en sentido contrario (cableado invertido): Baja entre 2,3 y 2,5 bar; Alta sobre 22 bar.</li>\n<li>Electroventilador inoperativo o condensador sucio: Baja entre 2,3 y 2,8 bar; Alta sobre 25 bar.</li>\n<li>Filtro deshumidificador obstruido o saturado: Baja entre 4,5 y 4,7 bar (o 0,3 a 0,5 bar si está helado/saturado); Alta entre 21 y 27 bar (o 19 a 20 bar).</li>\n<li>Entrada de aire caliente por trampillas de calefacción o grifo defectuoso: Baja 1,8 bar; Alta entre 12 y 15 bar.</li>\n<li>Tubos de aspiración y descarga invertidos en compresor Rotalock: Baja entre 4,5 y 4,8 bar; Alta entre 7 y 8 bar.</li>\n<li>Compresor no conecta, embrague patina o válvula de regulación de cilindrada defectuosa: Baja entre 4,5 y 6 bar; Alta igual a la Baja. <span class=\"pag\">págs. 10-97</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Cómo separar las causas",
+     "texto": "Para diferenciar falta de refrigerante de válvula de Alta semicerrada: añadir de 50 a 100 g de refrigerante. Si los manómetros no reaccionan positivamente, la causa es la válvula de Alta del compresor semicerrada. (pág. 20) Para verificar bulbo de expansión suelto o válvula muy abierta: rociar el bulbo con espray enfriador o refrigerante líquido. Si la válvula es monobloc y no reacciona, sustituir la válvula y el filtro deshumidificador. (págs. 24, 28) Para comprobar si se han dañado las válvulas del compresor tras sustituir la válvula de expansión: enfriar el bulbo hasta que la Baja baje a 0 bar y parar el compresor. Si la aguja sube rápidamente hacia arriba, las válvulas del compresor están dañadas. (pág. 29) Para diferenciar válvulas de baja tapadas de gota de hielo en la expansión: parar el equipo y volver a arrancar. Si el fallo desaparece temporalmente y reaparece al pasar la humedad, se trata de una gota de hielo. Requiere sustituir el filtro deshidratador y realizar un vacío prolongado. (pág. 39) Para verificar válvula de baja comunicada: enfriar el bulbo de la expansión. Cuando la aguja de Baja llegue a 0 bar, parar el compresor. Si la aguja sube rápidamente en positivo, existe comunicación entre presiones en un cilindro. (pág. 43) Para confirmar condensador sucio interiormente: regar con agua la parte superior del condensador. Si la aguja de Alta inicia un descenso mientras cae el agua, se confirma la suciedad. (pág. 80) Para realizar la carga final de refrigerante líquido por Baja en marcha: añadir dosis pequeñas con el motor al ralentí sin acelerar, asegurando que la presión de Baja no sobrepase los 2,5 bar. (pág. 67) (págs. 20-80)",
+     "html": "<ul>\n<li>Para diferenciar falta de refrigerante de válvula de Alta semicerrada: añadir de 50 a 100 g de refrigerante. Si los manómetros no reaccionan positivamente, la causa es la válvula de Alta del compresor semicerrada. <span class=\"pag\">pág. 20</span></li>\n<li>Para verificar bulbo de expansión suelto o válvula muy abierta: rociar el bulbo con espray enfriador o refrigerante líquido. Si la válvula es monobloc y no reacciona, sustituir la válvula y el filtro deshumidificador. <span class=\"pag\">págs. 24, 28</span></li>\n<li>Para comprobar si se han dañado las válvulas del compresor tras sustituir la válvula de expansión: enfriar el bulbo hasta que la Baja baje a 0 bar y parar el compresor. Si la aguja sube rápidamente hacia arriba, las válvulas del compresor están dañadas. <span class=\"pag\">pág. 29</span></li>\n<li>Para diferenciar válvulas de baja tapadas de gota de hielo en la expansión: parar el equipo y volver a arrancar. Si el fallo desaparece temporalmente y reaparece al pasar la humedad, se trata de una gota de hielo. Requiere sustituir el filtro deshidratador y realizar un vacío prolongado. <span class=\"pag\">pág. 39</span></li>\n<li>Para verificar válvula de baja comunicada: enfriar el bulbo de la expansión. Cuando la aguja de Baja llegue a 0 bar, parar el compresor. Si la aguja sube rápidamente en positivo, existe comunicación entre presiones en un cilindro. <span class=\"pag\">pág. 43</span></li>\n<li>Para confirmar condensador sucio interiormente: regar con agua la parte superior del condensador. Si la aguja de Alta inicia un descenso mientras cae el agua, se confirma la suciedad. <span class=\"pag\">pág. 80</span></li>\n<li>Para realizar la carga final de refrigerante líquido por Baja en marcha: añadir dosis pequeñas con el motor al ralentí sin acelerar, asegurando que la presión de Baja no sobrepase los 2,5 bar. <span class=\"pag\">pág. 67</span> <span class=\"pag\">págs. 20-80</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Condiciones de prueba: Temperatura exterior 30 ºC y régimen de motor a 1.500 - 1.800 rpm (salvo en ralentí durante la carga por Baja). Compresor de cilindrada variable correcto: Baja 1,8 a 2,1 bar; Alta 6 a 13 bar. Compresor de cilindrada fija correcto: Baja 0,8 a 2,2 bar; Alta 10 a 20 bar. Límite de presión en carga líquida por Baja: máximo 2,5 bar a ralentí. (págs. 7, 10, 16, 67)",
+     "html": "<ul>\n<li>Condiciones de prueba: Temperatura exterior 30 ºC y régimen de motor a 1.500 - 1.800 rpm (salvo en ralentí durante la carga por Baja).</li>\n<li>Compresor de cilindrada variable correcto: Baja 1,8 a 2,1 bar; Alta 6 a 13 bar.</li>\n<li>Compresor de cilindrada fija correcto: Baja 0,8 a 2,2 bar; Alta 10 a 20 bar.</li>\n<li>Límite de presión en carga líquida por Baja: máximo 2,5 bar a ralentí. <span class=\"pag\">págs. 7, 10, 16, 67</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación tras la reparación",
+     "texto": "Poner el motor en marcha a 1.500 - 1.800 rpm con 30 ºC de temperatura ambiente y verificar que las presiones de Alta y Baja se mantienen estabilizadas dentro de las tolerancias nominales de trabajo. (págs. 10, 16, 58)",
+     "html": "<p>Poner el motor en marcha a 1.500 - 1.800 rpm con 30 ºC de temperatura ambiente y verificar que las presiones de Alta y Baja se mantienen estabilizadas dentro de las tolerancias nominales de trabajo. <span class=\"pag\">págs. 10, 16, 58</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Manómetros de alta y baja presión midiendo las presiones del circuito frigorífico — Fuente: 7. MANTENIMIENTO, DIAGNOSTICO Y REPARACION.pptx, pág. 11",
+     "html": "<ul>\n<li>Manómetros de alta y baja presión midiendo las presiones del circuito frigorífico — Fuente: 7. MANTENIMIENTO, DIAGNOSTICO Y REPARACION.pptx, pág. 11</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.no-enfria.7-mantenimiento-diagnostico-y-reparacion",
+   "nt": 407,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "no-enfria",
+   "seccion": "10. Diagnóstico",
+   "subgrupo": "",
+   "titulo": "Diagnóstico del sistema por síntoma de falta de frío",
+   "codigo": "",
+   "menu": "Diagnóstico del sistema por síntoma de",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "7. MANTENIMIENTO, DIAGNOSTICO Y REPARACION.pptx, págs. 109-115",
+   "clase": "diagnostico",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "valvula-expansion",
+    "condensador",
+    "evaporador",
+    "filtro-deshidratador"
+   ],
+   "palabras": [
+    "falta de frio",
+    "alta presion",
+    "baja presion",
+    "embrague",
+    "congelacion evaporador"
+   ],
+   "apartados": [
+    {
+     "titulo": "Síntoma",
+     "texto": "Falta de frío en el habitáculo, enfriamiento deficiente, sobrecalentamiento del motor del vehículo o inoperatividad del compresor. (págs. 109-115)",
+     "html": "<p>Falta de frío en el habitáculo, enfriamiento deficiente, sobrecalentamiento del motor del vehículo o inoperatividad del compresor. <span class=\"pag\">págs. 109-115</span></p>"
+    },
+    {
+     "titulo": "Causas posibles",
+     "texto": "Evaporador congelado: termostato fuera de servicio o evaporador sucio. El embrague no actúa: alimentación eléctrica defectuosa, fusible fundido, correa rota o destensada. Filtro deshidratador saturado o sucio. Válvula de expansión averiada, congelada por humedad, bloqueada o con bulbo inoperativo. Alta presión elevada: condensador sucio, aire/humedad en el circuito, exceso de carga de refrigerante, electroventiladores inoperativos. Baja presión elevada: exceso de carga, bulbo de expansión inoperativo o válvula de aspiración del compresor abierta. Alta presión baja / Baja presión baja: fuga o falta de fluido frigorífico, filtro deshidratador sucio, válvula de expansión agarrotada o ventilador centrífugo parado. El compresor no funciona: correa rota, embrague defectuoso, alimentación eléctrica interrumpida, termostato averiado o fusible fundido. El motor del vehículo se calienta: condensador sucio que impide el paso de aire al radiador. (págs. 109-115)",
+     "html": "<ul>\n<li>Evaporador congelado: termostato fuera de servicio o evaporador sucio.</li>\n<li>El embrague no actúa: alimentación eléctrica defectuosa, fusible fundido, correa rota o destensada.</li>\n<li>Filtro deshidratador saturado o sucio.</li>\n<li>Válvula de expansión averiada, congelada por humedad, bloqueada o con bulbo inoperativo.</li>\n<li>Alta presión elevada: condensador sucio, aire/humedad en el circuito, exceso de carga de refrigerante, electroventiladores inoperativos.</li>\n<li>Baja presión elevada: exceso de carga, bulbo de expansión inoperativo o válvula de aspiración del compresor abierta.</li>\n<li>Alta presión baja / Baja presión baja: fuga o falta de fluido frigorífico, filtro deshidratador sucio, válvula de expansión agarrotada o ventilador centrífugo parado.</li>\n<li>El compresor no funciona: correa rota, embrague defectuoso, alimentación eléctrica interrumpida, termostato averiado o fusible fundido.</li>\n<li>El motor del vehículo se calienta: condensador sucio que impide el paso de aire al radiador. <span class=\"pag\">págs. 109-115</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Cómo separar las causas",
+     "texto": "Si el evaporador se congela: verificar la sonda termostática y limpiar el panal del evaporador. Si la alta presión sube en exceso: inspeccionar si el condensador requiere limpieza externa, revisar la conmutación de los electroventiladores o evacuar el exceso de refrigerante. Si la válvula de expansión se congela periódicamente: efectuar un lavado del circuito, sustituir el filtro deshidratador y recargar el gas. Si el compresor no engancha: comprobar la tensión de la correa y seguir la línea de alimentación eléctrica en orden secuencial (fusible, termostato, conectores y bobina del embrague). Si el motor se calienta: realizar la limpieza externa del panal del condensador. (págs. 109-115)",
+     "html": "<ul>\n<li>Si el evaporador se congela: verificar la sonda termostática y limpiar el panal del evaporador.</li>\n<li>Si la alta presión sube en exceso: inspeccionar si el condensador requiere limpieza externa, revisar la conmutación de los electroventiladores o evacuar el exceso de refrigerante.</li>\n<li>Si la válvula de expansión se congela periódicamente: efectuar un lavado del circuito, sustituir el filtro deshidratador y recargar el gas.</li>\n<li>Si el compresor no engancha: comprobar la tensión de la correa y seguir la línea de alimentación eléctrica en orden secuencial (fusible, termostato, conectores y bobina del embrague).</li>\n<li>Si el motor se calienta: realizar la limpieza externa del panal del condensador. <span class=\"pag\">págs. 109-115</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación tras la reparación",
+     "texto": "Comprobar el correcto desacople del embrague, la estabilización de las presiones de Alta y Baja en el puente de manómetros y el correcto flujo de aire frío en los difusores. (págs. 109-115)",
+     "html": "<p>Comprobar el correcto desacople del embrague, la estabilización de las presiones de Alta y Baja en el puente de manómetros y el correcto flujo de aire frío en los difusores. <span class=\"pag\">págs. 109-115</span></p>"
     }
    ]
   },
@@ -27943,6 +28139,82 @@
      "titulo": "Errores de concepto frecuentes",
      "texto": "Fumar durante la manipulación del gas refrigerante asumiendo que no es inflamable. La incandescencia del cigarrillo descompone el fluido creando productos venenosos de alta toxicidad. (págs. 62, 90)",
      "html": "<p>Fumar durante la manipulación del gas refrigerante asumiendo que no es inflamable. La incandescencia del cigarrillo descompone el fluido creando productos venenosos de alta toxicidad. <span class=\"pag\">págs. 62, 90</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.tamiz-filtro-aspiracion.7-mantenimiento-diagnostico-y-reparacion",
+   "nt": 408,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "tamiz-filtro-aspiracion",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Tamiz del filtro de aspiración del compresor",
+   "codigo": "",
+   "menu": "Tamiz del filtro de aspiración del com",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "7. MANTENIMIENTO, DIAGNOSTICO Y REPARACION.pptx, págs. 116-117",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "compresor",
+   "relacionados": [
+    "compresor",
+    "lavado-circuito"
+   ],
+   "palabras": [
+    "tamiz",
+    "filtro aspiracion",
+    "limaduras",
+    "lavado de circuito",
+    "gripaje"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Retener limaduras y partículas metálicas en el tubo de aspiración (Baja presión) del compresor tras operaciones de lavado o reparación del circuito frigorífico. (págs. 116-117)",
+     "html": "<p>Retener limaduras y partículas metálicas en el tubo de aspiración (Baja presión) del compresor tras operaciones de lavado o reparación del circuito frigorífico. <span class=\"pag\">págs. 116-117</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Tamiz metálico en forma de dedal cilíndrico de malla fina, diseñado para insertarse directamente en la entrada de la tubería de aspiración del compresor. (pág. 116)",
+     "html": "<p>Tamiz metálico en forma de dedal cilíndrico de malla fina, diseñado para insertarse directamente en la entrada de la tubería de aspiración del compresor. <span class=\"pag\">pág. 116</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Filtra mecánicamente el refrigerante en estado gaseoso que regresa al compresor. Atrapa las virutas sólidas sueltas en las tuberías impidiendo que penetren en los cilindros o paletas y causen el gripaje de la bomba. (pág. 117)",
+     "html": "<p>Filtra mecánicamente el refrigerante en estado gaseoso que regresa al compresor. Atrapa las virutas sólidas sueltas en las tuberías impidiendo que penetren en los cilindros o paletas y causen el gripaje de la bomba. <span class=\"pag\">pág. 117</span></p>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Inserción del tamiz en circuitos sucios sin haber realizado previamente el lavado o barrido de las tuberías. (pág. 117)",
+     "html": "<p>Inserción del tamiz en circuitos sucios sin haber realizado previamente el lavado o barrido de las tuberías. <span class=\"pag\">pág. 117</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si no se efectúa el lavado del circuito, las impurezas finas atraviesan el tamiz creando una pasta abrasiva que ejerce un efecto de esmerilado en las zonas de fricción interna del compresor, provocando su fallo prematuro. (pág. 117)",
+     "html": "<p>Si no se efectúa el lavado del circuito, las impurezas finas atraviesan el tamiz creando una pasta abrasiva que ejerce un efecto de esmerilado en las zonas de fricción interna del compresor, provocando su fallo prematuro. <span class=\"pag\">pág. 117</span></p>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Inspección visual del estado de limpieza de la malla al desmontar el racor de la toma de Baja del compresor. (págs. 116-117)",
+     "html": "<p>Inspección visual del estado de limpieza de la malla al desmontar el racor de la toma de Baja del compresor. <span class=\"pag\">págs. 116-117</span></p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Es muy recomendable instalar este tamiz en el tubo de aspiración una vez completado el lavado del circuito. Montar el tamiz no sustituye en ningún caso la obligación de lavar el circuito frigorífico. (pág. 117)",
+     "html": "<p>Es muy recomendable instalar este tamiz en el tubo de aspiración una vez completado el lavado del circuito. Montar el tamiz no sustituye en ningún caso la obligación de lavar el circuito frigorífico. <span class=\"pag\">pág. 117</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Conjunto de tamices para el tubo de aspiración del compresor — Fuente: 7. MANTENIMIENTO, DIAGNOSTICO Y REPARACION.pptx, pág. 116",
+     "html": "<ul>\n<li>Conjunto de tamices para el tubo de aspiración del compresor — Fuente: 7. MANTENIMIENTO, DIAGNOSTICO Y REPARACION.pptx, pág. 116</li>\n</ul>"
     }
    ]
   }
