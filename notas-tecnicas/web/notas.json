@@ -2258,6 +2258,22 @@
    "hecha": false
   },
   {
+   "nombre": "NT537_01",
+   "nt": 537,
+   "titulo": "Motor para la turbina del transmisor de temperatura interior",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Componentes internos del motor V42 mostrando la placa electrónica, el estator y la turbina con eje imantado (rotor) — Fuente: MOTOR PARA LA TURBINA DEL S. Cº interior.pdf, pág. 24",
+   "hecha": false
+  },
+  {
+   "nombre": "NT538_01",
+   "nt": 538,
+   "titulo": "Señal de salida para conexión del aire acondicionado",
+   "seccion": "8. Regulación y control",
+   "descripcion": "Esquema del envío de la señal de positivo desde la unidad del autoclima hacia la unidad del aire acondicionado y la unidad del motor — Fuente: MOTOR PARA LA TURBINA DEL S. Cº interior.pdf, pág. 24",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -2282,7 +2298,7 @@
    "hecha": false
   }
  ],
- "total": 528,
+ "total": 530,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -16305,6 +16321,73 @@
    ]
   },
   {
+   "id": "ssc.sensor-temperatura-interior.motor-para-la-turbina-del-s-co-interior",
+   "nt": 537,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-temperatura-ntc-interior",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Motor para la turbina del transmisor de temperatura interior",
+   "codigo": "V42",
+   "menu": "Motor para la turbina del tran V42",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "MOTOR PARA LA TURBINA DEL S. Cº interior.pdf, págs. 24",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "transmisor-temperatura-interior-g56",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "turbina",
+    "transmisor G56",
+    "placa electrónica",
+    "señal de 15"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Forma un único conjunto con el transmisor de temperatura interior G56. Su misión es generar un flujo de aire continuo que atraviese el transmisor para poder registrar el valor de la temperatura del habitáculo. (pág. 24)",
+     "html": "<p>Forma un único conjunto con el transmisor de temperatura interior G56. Su misión es generar un flujo de aire continuo que atraviese el transmisor para poder registrar el valor de la temperatura del habitáculo. <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "El motor monta en su interior una placa electrónica que gobierna su funcionamiento y detecta sus posibles averías. Su rotor está constituido por una turbina con eje imantado. (pág. 24)",
+     "html": "<p>El motor monta en su interior una placa electrónica que gobierna su funcionamiento y detecta sus posibles averías. Su rotor está constituido por una turbina con eje imantado. <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Es excitado con positivo y negativo por la unidad de control del autoclima mientras esta reciba la señal de «15». (pág. 24)",
+     "html": "<p>Es excitado con positivo y negativo por la unidad de control del autoclima mientras esta reciba la señal de «15». <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Señal de excitación: Positivo y negativo condicionados a la presencia de señal de borne «15». (pág. 24)",
+     "html": "<p>Señal de excitación: Positivo y negativo condicionados a la presencia de señal de borne «15». <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Cuando se detecta una avería del motor, la unidad del autoclima aplica factores de corrección a la temperatura registrada por el transmisor G56 para simular un valor más o menos próximo al real. (pág. 24)",
+     "html": "<p>Cuando se detecta una avería del motor, la unidad del autoclima aplica factores de corrección a la temperatura registrada por el transmisor G56 para simular un valor más o menos próximo al real. <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Componentes internos del motor V42 mostrando la placa electrónica, el estator y la turbina con eje imantado (rotor) — Fuente: MOTOR PARA LA TURBINA DEL S. Cº interior.pdf, pág. 24",
+     "html": "<ul>\n<li>Componentes internos del motor V42 mostrando la placa electrónica, el estator y la turbina con eje imantado (rotor) — Fuente: MOTOR PARA LA TURBINA DEL S. Cº interior.pdf, pág. 24</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.sensor-evaporador.11-dispositivos-de-regulacion-y-segurida",
    "nt": 65,
    "modulo": "ssc",
@@ -22377,6 +22460,70 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema de envío de la señal de positivo desde la unidad del autoclima hacia la unidad del aire acondicionado y la unidad del motor — Fuente: Ibiza99 - Actuadores.pdf, pág. 24",
      "html": "<ul>\n<li>Esquema de envío de la señal de positivo desde la unidad del autoclima hacia la unidad del aire acondicionado y la unidad del motor — Fuente: Ibiza99 - Actuadores.pdf, pág. 24</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.regulacion-automatica.motor-para-la-turbina-del-s-co-interior",
+   "nt": 538,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-automatica",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Señal de salida para conexión del aire acondicionado",
+   "codigo": "",
+   "menu": "Señal de salida para conexión del aire",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "MOTOR PARA LA TURBINA DEL S. Cº interior.pdf, págs. 24",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "compresor",
+    "embrague-compresor",
+    "unidad-control-motor"
+   ],
+   "palabras": [
+    "activación aire acondicionado",
+    "señal de positivo",
+    "régimen de ralentí",
+    "acoplamiento magnético"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Habilitar la activación del compresor de aire acondicionado y coordinar el incremento de carga con la unidad de control del motor térmico. (pág. 24)",
+     "html": "<p>Habilitar la activación del compresor de aire acondicionado y coordinar el incremento de carga con la unidad de control del motor térmico. <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "La solicitud de conexión del aire acondicionado requiere el acoplamiento del compresor y el aumento simultáneo del régimen de ralentí para compensar el esfuerzo mecánico aplicado al motor. (pág. 24)",
+     "html": "<p>La solicitud de conexión del aire acondicionado requiere el acoplamiento del compresor y el aumento simultáneo del régimen de ralentí para compensar el esfuerzo mecánico aplicado al motor. <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Para activar el aire acondicionado, la unidad del autoclima envía una señal de positivo hacia la unidad del aire acondicionado y a la unidad de control del motor. Con esta señal, la unidad del aire acondicionado conecta el compresor activando el acoplamiento magnético y la unidad del motor eleva el régimen de ralentí. No existe función sustitutiva. (pág. 24)",
+     "html": "<p>Para activar el aire acondicionado, la unidad del autoclima envía una señal de positivo hacia la unidad del aire acondicionado y a la unidad de control del motor. Con esta señal, la unidad del aire acondicionado conecta el compresor activando el acoplamiento magnético y la unidad del motor eleva el régimen de ralentí. No existe función sustitutiva. <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Tensión de señal: Positivo (12 V). (pág. 24)",
+     "html": "<p>Tensión de señal: Positivo (12 V). <span class=\"pag\">pág. 24</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del envío de la señal de positivo desde la unidad del autoclima hacia la unidad del aire acondicionado y la unidad del motor — Fuente: MOTOR PARA LA TURBINA DEL S. Cº interior.pdf, pág. 24",
+     "html": "<ul>\n<li>Esquema del envío de la señal de positivo desde la unidad del autoclima hacia la unidad del aire acondicionado y la unidad del motor — Fuente: MOTOR PARA LA TURBINA DEL S. Cº interior.pdf, pág. 24</li>\n</ul>"
     }
    ]
   },
