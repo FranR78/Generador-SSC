@@ -48,127 +48,113 @@ apartados_propios:
         trata.
 
 # ───────────────────────────────────────────────────────────────────────────
-# ÍNDICE DEL CURSO  (propuesta — reordénalo a tu gusto)
+# GUION DEL CURSO — LO ESCRIBES TÚ (orden de aprendizaje)
 #
-# El orden del curso lo manda esto, NO el número de nota. Cada sección agrupa
-# los componentes (claves) en el orden en que quieres que el alumno los vea.
-# Sigue el recorrido del circuito: el compresor primero, y de alta a baja.
+# Cada sección es una lección. Debajo, las ENTIDADES (el campo 'entidad' del
+# YAML de cada nota) en el orden en que quieres que el alumno las vea.
+# - Una entidad junta todas sus notas: variantes (compresor de paletas,
+#   espiral…) y fuentes distintas salen como pestañas dentro de ella.
+# - Lo que no esté aquí sale al final en «Por ubicar» y se lista en
+#   unidades/_sin_colocar.yml tras cada generación: copia de ahí.
+# - Esto no lo toca ningún script. Reprocesar un PDF no cambia el orden.
 #
-# - Los nombres de la derecha son las 'claves' de agrupación (las que ves en
-#   claves.yml). Muévelas de sección, cámbialas de orden, o crea secciones.
-# - Lo que no esté aquí saldrá al final en "Por ubicar", nunca se pierde.
-# - "impacto-ambiental" aún no tiene notas: es el hueco reservado para cuando
-#   generemos ese contenido; de momento tira de normativa y refrigerantes.
+# Borrador con los nombres del prompt v2: reordena, mueve o borra a tu gusto.
 # ───────────────────────────────────────────────────────────────────────────
 
 indice:
-  - seccion: 1. Impacto ambiental y seguridad
+  - seccion: 1. Impacto ambiental y normativa
     claves:
-      - normativa-medioambiental-y-gestion-de-gases-fluorados
-      - seguridad-y-manipulacion
-      - refrigerante
+      - efecto-invernadero-y-cambio-climatico
+      - agotamiento-capa-ozono
+      - potencial-agotamiento-ozono
+      - potencial-calentamiento-atmosferico
+      - protocolo-montreal
+      - protocolo-kioto
+      - reglamento-ce-1005-2009
+      - directiva-2006-40-ce
+      - reglamento-ue-517-2014
+      - certificacion-manipulacion-gases-fluorados
+
+  - seccion: 2. Fundamentos
+    claves:
+      - higrometria-y-confort
+      - ciclo-frigorifico
+
+  - seccion: 3. Fluidos
+    claves:
+      - refrigerante-r134a
+      - refrigerante-r1234yf
       - aceite-frigorifico
+      - trazador-uv
 
-  - seccion: 2. Principios de funcionamiento
+  - seccion: 4. El compresor
     claves:
-      - principios-de-refrigeracion
-      - confort-termico
-      - circuito-frigorifico
-      - ciclo-frigorifico-valvula
-      - ciclo-frigorifico-estrangulador
-      - subenfriamiento
-      - sistema-de-climatizacion
+      - compresor
+      - embrague-compresor
+      - valvula-sobrepresion
+      - fusible-mecanico-compresor
+      - valvula-reguladora-compresor
 
-  - seccion: 3. Circuito frigorífico · lado de alta presión
+  - seccion: 5. Lado de alta
     claves:
-      - compresor              # el rey por excelencia
-      - embrague-electromagnetico
-      - valvula-reguladora-n280
       - condensador
-      - ventilador-del-condensador
-      - deposito-colector
+      - electroventilador-condensador
       - filtro-deshidratador
       - mirilla
-      - valvula-de-descarga-de-sobrepresion
-      - intercambiador-termico-interno
-      - tamiz
 
-  - seccion: 4. Dispositivos de expansión
+  - seccion: 6. Expansión y lado de baja
     claves:
-      - valvula-de-expansion
+      - valvula-expansion
       - estrangulador
-      - tubo-de-expansion
-      - dispositivos-de-expansion
-
-  - seccion: 5. Circuito frigorífico · lado de baja presión
-    claves:
       - evaporador
-      - vaso-de-expansion
-      - amortiguador-de-oscilaciones
+      - deposito-colector
       - tuberias-y-racores
-      - tomas-de-servicio
-      - filtro-deshidratador-y-deposito-colector-en-baja-presion
-      - filtro-deshidratador-y-vaso-de-expansion
 
-  - seccion: 6. Sensores
+  - seccion: 7. Sensores y actuadores
     claves:
-      - presostatos
-      - transmisor-de-presion
-      - sensor-de-evaporador
-      - sensor-de-temperatura-exterior
-      - sensor-de-temperatura-interior
-      - sensor-de-salida-de-aire
-      - sensor-de-refrigerante-del-motor
-      - sensor-de-calidad-del-aire
-      - sensor-de-humedad
+      - presostato
+      - transmisor-presion
+      - sensor-temperatura-exterior
+      - sensor-temperatura-interior
+      - sensor-evaporador
+      - sensor-humedad
+      - sensor-calidad-aire
       - fotosensor-solar
-      - sensor-de-ocupacion
-      - ntc-de-temperaturas
-      - transmisores-de-temperatura-del-aire-de-entrada
-      - interruptor-termico
-      - termostato
-
-  - seccion: 7. Actuadores y mandos
-    claves:
-      - servomotor-de-chapaleta
-      - ventilador-del-habitaculo
-      - unidad-de-control-y-mandos
-      - electronica-y-red
-      - filtro-de-habitaculo
+      - servomotor-trampilla
+      - ventilador-habitaculo
 
   - seccion: 8. Regulación y control
     claves:
-      - regulacion-basica
-      - regulacion-manual
+      - unidad-control-climatizador
       - regulacion-automatica
+      - distribucion-aire
       - recirculacion
-      - distribucion-de-aire
-      - can-bus
-      - interaccion-entre-climatizacion-y-refrigeracion-del-motor
-      - carga-del-alternador
-      - interruptor-de-marcha-atras
-      - regulador-de-la-iluminacion
 
-  - seccion: 9. Diagnóstico y mantenimiento
+  - seccion: "9. Taller: recuperación, vacío y carga"
     claves:
-      - diagnostico
-      - lectura-de-manometros
-      - deteccion-de-fugas
-      - vacio
+      - etiqueta-identificativa-climatizacion
+      - recuperacion-refrigerante
+      - extraccion-medicion-aceite
+      - vacio-circuito
+      - introduccion-aceite-circuito
       - carga-refrigerante
-      - recuperacion-reciclaje
-      - lavado-del-circuito
-      - limpieza-del-evaporador
-      - mantenimiento-y-servicio
-      - verificacion-del-contenido-de-co2-en-gases-de-escape
+      - deteccion-fugas
+      - lavado-circuito
+      - limpieza-evaporador
 
-  - seccion: 10. Calefacción auxiliar e independiente
+  - seccion: 10. Diagnóstico
     claves:
-      - radiador-de-calefaccion
-      - elemento-calefactor-ptc
-      - valvula-corte-refrigerante
-      - bomba-dosificadora-combustible
-      - bujia-de-precalentamiento-para-calefaccion
-      - guardallamas
-      - turbina-de-aire-de-combustion
-      - ajuste-basico-y-adaptacion-en-la-calefaccion-independiente
+      - lectura-manometros
+      - comprobacion-rendimiento-climatizador
+      - no-enfria
+      - diagnostico-averias-hidraulicas
+      - diagnostico-compresor
+      - sustitucion-compresor
+      - autodiagnostico-climatizador
+
+  - seccion: 11. Equipos de taller
+    claves:
+      - preparacion-estacion-carga
+      - llenado-bombona-estacion-carga
+      - reciclado-interno-estacion-carga
+      - desconexion-equipo-carga

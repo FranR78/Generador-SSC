@@ -203,6 +203,14 @@ class Nota:
         self.marca = str(meta.get("marca", "")).strip()
         self.tipo = normalizar(meta.get("tipo", "elemento")) or "elemento"
         self.subtipo = normalizar(meta.get("subtipo", ""))
+        # Campos del prompt v2 (importar_v2.py). En fichas antiguas, vacíos.
+        self.clase = normalizar(meta.get("clase", ""))
+        self.variante = str(meta.get("variante", "") or "").strip()
+        self.area = str(meta.get("area", "") or "").strip()
+        self.sistema = str(meta.get("sistema", "") or "").strip()
+        self.forma_parte_de = str(meta.get("forma_parte_de", "") or "").strip()
+        self.relacionados = meta.get("relacionados") or []
+        self.palabras = meta.get("palabras") or []
         if self.tipo not in ("elemento", "proceso"):
             raise ValueError(f"tipo '{self.tipo}' desconocido: usa 'elemento' o 'proceso'")
         if self.tipo == "proceso" and self.subtipo not in SUBTIPOS:
@@ -300,6 +308,8 @@ def render_nota(nota, capturas=()):
         clase = "nota-header proceso"
     else:
         rotulo = f"Nota Técnica Nº {nota.nt}"
+        if nota.clase == "fluido":
+            marca = '<span class="subtipo">Fluido</span>' + marca
         clase = "nota-header"
 
     partes.append(f'    <div class="{clase}">{rotulo} {marca}</div>')
@@ -664,6 +674,13 @@ def volcar_json(notas):
             "aplicacion": n.aplicacion,
             "ubicacion": n.ubicacion,
             "fuentes": n.fuentes,
+            "clase": n.clase,
+            "variante": n.variante,
+            "area": n.area,
+            "sistema": n.sistema,
+            "formaParteDe": n.forma_parte_de,
+            "relacionados": n.relacionados,
+            "palabras": n.palabras,
             "apartados": [{"titulo": k, "texto": texto_plano(v)}
                           for k, v in n.apartados.items()],
         })
@@ -688,6 +705,31 @@ def volcar_json(notas):
     ruta = DIR_WEB / "notas.json"
     ruta.write_text(json.dumps(doc, ensure_ascii=False, indent=1), encoding="utf-8")
     return ruta
+
+
+def sin_colocar(notas):
+    """unidades/_sin_colocar.yml: entidades que aún no están en el guion.
+
+    Para que ninguna nota se quede olvidada en «Por ubicar»: se copian de aquí
+    al índice de la unidad. Lo reescribe cada generación; no se edita a mano.
+    """
+    faltan = {}
+    for n in notas:
+        idx = INDICES.get(n.unidad)
+        if idx is None or n.clave not in idx["clave"]:
+            faltan.setdefault(n.unidad or "sin-unidad", {}).setdefault(n.clave, n.titulo)
+    ruta = RAIZ / "unidades" / "_sin_colocar.yml"
+    if not faltan:
+        ruta.unlink(missing_ok=True)
+        return
+    lineas = ["# Generado por construir.py. Entidades sin sección en el guion:",
+              "# cópialas al 'indice' de su unidad, en la sección que toque.", ""]
+    for uni, claves in sorted(faltan.items()):
+        lineas.append(f"{uni}:")
+        lineas += [f"  - {c}   # {t}" for c, t in sorted(claves.items())]
+    ruta.parent.mkdir(exist_ok=True)
+    ruta.write_text("\n".join(lineas) + "\n", encoding="utf-8")
+    print(f"\n{sum(len(c) for c in faltan.values())} entidades sin colocar → unidades/_sin_colocar.yml")
 
 
 def main():
@@ -761,6 +803,7 @@ def main():
     (DIR_WEB / "notas-tecnicas.txt").write_text(pagina, encoding="utf-8")
 
     ruta_json = volcar_json(notas)
+    sin_colocar(notas)
     kbj = ruta_json.stat().st_size / 1024
 
     kb = len(pagina.encode("utf-8")) / 1024

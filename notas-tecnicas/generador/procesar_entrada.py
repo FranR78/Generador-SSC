@@ -37,8 +37,11 @@ def main():
 
     for archivo in nuevos:
         print(f"\n=== {archivo.name} ===")
+        # Prompt v2 (bloques ```yaml) → importar_v2.py; lo antiguo, importar.py
+        v2 = "```yaml" in archivo.read_text(encoding="utf-8", errors="ignore")
+        importador = "importar_v2.py" if v2 else "importar.py"
         r = subprocess.run(
-            [sys.executable, str(RAIZ / "generador" / "importar.py"), str(archivo)],
+            [sys.executable, str(RAIZ / "generador" / importador), str(archivo)],
             capture_output=True, text=True,
         )
         print(r.stdout, end="")

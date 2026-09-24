@@ -49,8 +49,11 @@ con sus capturas y sus fuentes. El sistema no decide qué versión sobrevive.
 acuerdo verbal que recordar: el alumno lee el nombre que tiene que poner. Si se
 cambia el renderizado, esa etiqueta se queda.
 
-**`grupo: POR CLASIFICAR` es decisión suya.** El importador deja así las notas
-nuevas y salen agrupadas aparte, bien visibles. No las clasifiques tú.
+**Prompt v2 (desde 24/09).** Cada nota trae su YAML (tipo, entidad, sistema,
+fuente). `importar_v2.py` valida: lo incompleto va a `entrada/rechazadas/`,
+nunca al dashboard. El orden del curso lo manda el `indice` de
+`unidades/ssc-clima.yml`, que escribe él a mano; no lo reordenes tú.
+`unidades/_sin_colocar.yml` lo regenera `construir.py`.
 
 ## Lo que NotebookLM no hace
 
