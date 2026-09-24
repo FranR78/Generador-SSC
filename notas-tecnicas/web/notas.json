@@ -3026,6 +3026,46 @@
    "hecha": false
   },
   {
+   "nombre": "NT643_01",
+   "nt": 643,
+   "titulo": "Potenciómetro de la distribución de aire",
+   "seccion": "Por ubicar",
+   "descripcion": "Potenciómetro de distribución y rueda de accionamiento — Fuente: Potenciometro de distribución de aire.pdf, pág. 15",
+   "hecha": false
+  },
+  {
+   "nombre": "NT645_01",
+   "nt": 645,
+   "titulo": "Sensor de la calidad del aire",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Desmontaje y ubicación del sensor G238 en la toma de aire fresco — Fuente: Sensor Calidad del Aire G238.pdf, pág. 196",
+   "hecha": false
+  },
+  {
+   "nombre": "NT646_01",
+   "nt": 646,
+   "titulo": "Marco de salida de aire para desaireación forzada",
+   "seccion": "Por ubicar",
+   "descripcion": "Marcos de salida de aire para desaireación forzada en la carrocería del maletero — Fuente: Sensor Calidad del Aire G238.pdf, pág. 201",
+   "hecha": false
+  },
+  {
+   "nombre": "NT647_01",
+   "nt": 647,
+   "titulo": "Sensor de la calidad del aire",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Conexión y esquema del sensor de calidad del aire G238 con la unidad de control E87 — Fuente: Sensor Calidad del Aire.pdf, pág. 63",
+   "hecha": false
+  },
+  {
+   "nombre": "NT648_01",
+   "nt": 648,
+   "titulo": "Transmisor de presión electrónico",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Transmisor de presión G65 y su conexionado con la unidad del aire acondicionado J293 y la unidad de motor — Fuente: Transmisor de presión II.pdf, pág. 17",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -3050,7 +3090,7 @@
    "hecha": false
   }
  ],
- "total": 633,
+ "total": 640,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -16906,6 +16946,85 @@
    ]
   },
   {
+   "id": "ssc.presostato.climatizacion-basicos-presostatos-e-inte",
+   "nt": 642,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "presostato-binary-trinary-cuatrinary",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Presostato",
+   "codigo": "",
+   "menu": "Presostato",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Climatizacion basicos - Presostatos e interruptores.pdf, págs. 1-4",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "embrague-compresor",
+    "electroventilador-condensador",
+    "compresor"
+   ],
+   "palabras": [
+    "presostato",
+    "alta presión",
+    "baja presión",
+    "interruptor trinario",
+    "protección compresor"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Proteger el sistema de aire acondicionado de daños provocados por presiones excesivamente altas o demasiado bajas en el circuito frigorífico. (pág. 1)",
+     "html": "<p>Proteger el sistema de aire acondicionado de daños provocados por presiones excesivamente altas o demasiado bajas en el circuito frigorífico. <span class=\"pag\">pág. 1</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Se distingue entre tres tipos de interruptores: Interruptor de baja presión. Interruptor de alta presión. Interruptor trinario: incluye el interruptor de alta presión, el interruptor de baja presión y un contacto de conmutación adicional para el ventilador del condensador. Generalmente se encuentra montado en la zona de alta presión del sistema de aire acondicionado. (págs. 1-2)",
+     "html": "<p>Se distingue entre tres tipos de interruptores:</p>\n<ul>\n<li>Interruptor de baja presión.</li>\n<li>Interruptor de alta presión.</li>\n<li>Interruptor trinario: incluye el interruptor de alta presión, el interruptor de baja presión y un contacto de conmutación adicional para el ventilador del condensador.</li>\n</ul>\n<p>Generalmente se encuentra montado en la zona de alta presión del sistema de aire acondicionado. <span class=\"pag\">págs. 1-2</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El presostato conmuta la corriente eléctrica según la presión existente en la zona de alta presión: Situación de alta presión: interrumpe la entrada de corriente hasta el embrague del compresor y vuelve a conectarlo cuando la presión desciende. Situación de baja presión: interrumpe la corriente eléctrica para evitar daños en el compresor debidos a una falta de lubricación. Contacto adicional del interruptor trinario: controla el ventilador del condensador eléctrico para garantizar una condensación óptima del refrigerante. (pág. 2)",
+     "html": "<p>El presostato conmuta la corriente eléctrica según la presión existente en la zona de alta presión:</p>\n<ul>\n<li>Situación de alta presión: interrumpe la entrada de corriente hasta el embrague del compresor y vuelve a conectarlo cuando la presión desciende.</li>\n<li>Situación de baja presión: interrumpe la corriente eléctrica para evitar daños en el compresor debidos a una falta de lubricación.</li>\n<li>Contacto adicional del interruptor trinario: controla el ventilador del condensador eléctrico para garantizar una condensación óptima del refrigerante. <span class=\"pag\">pág. 2</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Desconexión por alta presión: aprox. 26-33 bar. Reconexión tras alta presión: cuando la presión desciende a aprox. 5 bar. Desconexión por baja presión: aprox. 2 bar. (pág. 2)",
+     "html": "<ul>\n<li>Desconexión por alta presión: aprox. 26-33 bar.</li>\n<li>Reconexión tras alta presión: cuando la presión desciende a aprox. 5 bar.</li>\n<li>Desconexión por baja presión: aprox. 2 bar. <span class=\"pag\">pág. 2</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Un presostato puede fallar debido a las siguientes causas: Fallos en los contactos de las conexiones eléctricas. Suciedad en el sistema. Daños en la carcasa debido a vibraciones o accidentes. (págs. 1, 3)",
+     "html": "<p>Un presostato puede fallar debido a las siguientes causas:</p>\n<ul>\n<li>Fallos en los contactos de las conexiones eléctricas.</li>\n<li>Suciedad en el sistema.</li>\n<li>Daños en la carcasa debido a vibraciones o accidentes. <span class=\"pag\">págs. 1, 3</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "En caso de fallo o avería en el presostato se observan los siguientes síntomas: Rendimiento de refrigeración deficiente. El aire acondicionado no funciona. Frecuente encendido y apagado del embrague del compresor. (pág. 3)",
+     "html": "<p>En caso de fallo o avería en el presostato se observan los siguientes síntomas:</p>\n<ul>\n<li>Rendimiento de refrigeración deficiente.</li>\n<li>El aire acondicionado no funciona.</li>\n<li>Frecuente encendido y apagado del embrague del compresor. <span class=\"pag\">pág. 3</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Pasos a seguir en la diagnosis y comprobación: Realizar una inspección visual de la pieza. Comprobar que los enchufes de las conexiones eléctricas están bien apretados. Comprobar si la pieza presenta algún daño en la carcasa. Medir la presión con el compresor encendido y el motor en marcha. Comprobar los recambios desmontados con una botella de nitrógeno, un manorreductor y un multímetro. (págs. 3-4)",
+     "html": "<p>Pasos a seguir en la diagnosis y comprobación:</p>\n<ol>\n<li>Realizar una inspección visual de la pieza.</li>\n<li>Comprobar que los enchufes de las conexiones eléctricas están bien apretados.</li>\n<li>Comprobar si la pieza presenta algún daño en la carcasa.</li>\n<li>Medir la presión con el compresor encendido y el motor en marcha.</li>\n<li>Comprobar los recambios desmontados con una botella de nitrógeno, un manorreductor y un multímetro. <span class=\"pag\">págs. 3-4</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Realizar un mantenimiento periódico del sistema para prevenir averías por suciedad o fallos en los contactos de las conexiones. (pág. 1)",
+     "html": "<p>Realizar un mantenimiento periódico del sistema para prevenir averías por suciedad o fallos en los contactos de las conexiones. <span class=\"pag\">pág. 1</span></p>"
+    }
+   ]
+  },
+  {
    "id": "ssc.transmisor-presion.2-introduccion-a-la-refrigeracion",
    "nt": 14,
    "modulo": "ssc",
@@ -17720,6 +17839,80 @@
      "titulo": "Imágenes requeridas",
      "texto": "Muestra de la señal PWM de 50 Hz en osciloscopio con variaciones del ciclo de trabajo según la presión — Fuente: CLIMATIZADOR MD FRAN.docx, pág. 15",
      "html": "<ul>\n<li>Muestra de la señal PWM de 50 Hz en osciloscopio con variaciones del ciclo de trabajo según la presión — Fuente: CLIMATIZADOR MD FRAN.docx, pág. 15</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.transmisor-presion.transmisor-de-presion-ii",
+   "nt": 648,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "transmisor-presion-map-maf",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Transmisor de presión electrónico",
+   "codigo": "G65",
+   "menu": "Transmisor de presión electrón G65",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Transmisor de presión II.pdf, págs. 15-17",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "electroventilador-condensador",
+    "compresor"
+   ],
+   "palabras": [
+    "G65",
+    "transmisor de presión",
+    "ralentí",
+    "16 bares",
+    "función sustitutiva"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la presión del fluido refrigerante y enviar la señal electrónica a la unidad de control del motor y a la unidad de control del aire acondicionado. (pág. 15)",
+     "html": "<p>Medir la presión del fluido refrigerante y enviar la señal electrónica a la unidad de control del motor y a la unidad de control del aire acondicionado. <span class=\"pag\">pág. 15</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Transmisor de presión electrónico de diseño idéntico al montado en el modelo Toledo. (pág. 15)",
+     "html": "<p>Transmisor de presión electrónico de diseño idéntico al montado en el modelo Toledo. <span class=\"pag\">pág. 15</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El transmisor mide la presión del circuito y transmite la señal a dos unidades de control: Unidad del aire acondicionado: procesa la señal para efectuar la desconexión del compresor por presión máxima o mínima, conectar la 2ª velocidad de los ventiladores del líquido refrigerante al llegar a 16 bar, e informar sobre el estado de conexión del compresor. Unidad de control del motor: procesa la señal para actuar sobre la gestión del ralentí según las necesidades requeridas por la carga del motor. (pág. 15)",
+     "html": "<p>El transmisor mide la presión del circuito y transmite la señal a dos unidades de control:</p>\n<ul>\n<li>Unidad del aire acondicionado: procesa la señal para efectuar la desconexión del compresor por presión máxima o mínima, conectar la 2ª velocidad de los ventiladores del líquido refrigerante al llegar a 16 bar, e informar sobre el estado de conexión del compresor.</li>\n<li>Unidad de control del motor: procesa la señal para actuar sobre la gestión del ralentí según las necesidades requeridas por la carga del motor. <span class=\"pag\">pág. 15</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Presión de activación de la 2ª velocidad de los ventiladores del líquido refrigerante: 16 bar. (pág. 15)",
+     "html": "<ul>\n<li>Presión de activación de la 2ª velocidad de los ventiladores del líquido refrigerante: 16 bar. <span class=\"pag\">pág. 15</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Avería en el transmisor de presión o en su línea de señal. (pág. 15)",
+     "html": "<p>Avería en el transmisor de presión o en su línea de señal. <span class=\"pag\">pág. 15</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "En caso de avería en el transmisor G65: La unidad de control del aire acondicionado desactiva el compresor. La avería únicamente queda registrada en la memoria de averías de la unidad de control del motor. (pág. 15)",
+     "html": "<p>En caso de avería en el transmisor G65:</p>\n<ul>\n<li>La unidad de control del aire acondicionado desactiva el compresor.</li>\n<li>La avería únicamente queda registrada en la memoria de averías de la unidad de control del motor. <span class=\"pag\">pág. 15</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Transmisor de presión G65 y su conexionado con la unidad del aire acondicionado J293 y la unidad de motor — Fuente: Transmisor de presión II.pdf, pág. 17",
+     "html": "<ul>\n<li>Transmisor de presión G65 y su conexionado con la unidad del aire acondicionado J293 y la unidad de motor — Fuente: Transmisor de presión II.pdf, pág. 17</li>\n</ul>"
     }
    ]
   },
@@ -22188,6 +22381,163 @@
      "titulo": "Imágenes requeridas",
      "texto": "Estructura interna del sensor de calidad del aire G238 con su electrónica de evaluación y sonda SnO2 — Fuente: CLIMATIZADOR MD FRAN.docx, pág. 21",
      "html": "<ul>\n<li>Estructura interna del sensor de calidad del aire G238 con su electrónica de evaluación y sonda SnO2 — Fuente: CLIMATIZADOR MD FRAN.docx, pág. 21</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sensor-calidad-aire.sensor-calidad-del-aire-g238",
+   "nt": 645,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-calidad-aire",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Sensor de la calidad del aire",
+   "codigo": "G238",
+   "menu": "Sensor de la calidad del aire G238",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Sensor Calidad del Aire G238.pdf, págs. 191-200",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "unidad-control-climatizador",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "filtro-habitaculo",
+    "recirculacion"
+   ],
+   "palabras": [
+    "G238",
+    "NOx",
+    "CO",
+    "LIN-Bus",
+    "recirculación automática",
+    "fase de caldeo",
+    "prueba con mechero"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Detectar la presencia de sustancias nocivas en el aire del entorno (principalmente gases de escape de gasolina y diésel) para que la unidad de control Climatronic J255 active el servicio de recirculación de aire y evite la entrada de contaminantes al habitáculo. (págs. 191, 192)",
+     "html": "<p>Detectar la presencia de sustancias nocivas en el aire del entorno (principalmente gases de escape de gasolina y diésel) para que la unidad de control Climatronic J255 active el servicio de recirculación de aire y evite la entrada de contaminantes al habitáculo. <span class=\"pag\">págs. 191, 192</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Componente electrónico altamente sensible. Montado únicamente en vehículos con climatizador en versión \"Confort\". Integra un sensor de óxidos nítricos (NOx) y un sensor de monóxido de carbono (CO). Intercambia información con la unidad de control de la red de a bordo J519 a través del sistema de bus de datos LIN-Bus. (págs. 191, 194, 199)",
+     "html": "<p>Componente electrónico altamente sensible. Montado únicamente en vehículos con climatizador en versión \"Confort\". Integra un sensor de óxidos nítricos (NOx) y un sensor de monóxido de carbono (CO). Intercambia información con la unidad de control de la red de a bordo J519 a través del sistema de bus de datos LIN-Bus. <span class=\"pag\">págs. 191, 194, 199</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "La señal del sensor es analizada por la unidad de control de la red de a bordo J519 y transmitida por bus de datos a la unidad de control para Climatronic J255, la cual decide conmutar a recirculación de aire si no existen condiciones de desactivación. El sensor cuenta con un programa de autoadaptación que ajusta su sensibilidad al nivel medio de contaminación del ambiente para evitar que el climatizador trabaje de forma continua en recirculación en zonas de alta contaminación persistente (la solicitud suele ser inferior a 12 minutos salvo picos consecutivos). Para evitar la conmutación frecuente de las trampillas, una solicitud de recirculación automática se mantiene como mínimo 25 segundos (tiempo mínimo de permanencia). Ante pequeños aumentos de contaminación no conmuta inmediatamente, confiando en la filtración del elemento de carbón activo. Al conectar el encendido, el sensor requiere un tiempo de calentamiento (fase de caldeo) de aprox. 30 segundos a 2 minutos para alcanzar su temperatura operativa, estando su función limitada durante ese periodo. (págs. 191-193)",
+     "html": "<ul>\n<li>La señal del sensor es analizada por la unidad de control de la red de a bordo J519 y transmitida por bus de datos a la unidad de control para Climatronic J255, la cual decide conmutar a recirculación de aire si no existen condiciones de desactivación.</li>\n<li>El sensor cuenta con un programa de autoadaptación que ajusta su sensibilidad al nivel medio de contaminación del ambiente para evitar que el climatizador trabaje de forma continua en recirculación en zonas de alta contaminación persistente (la solicitud suele ser inferior a 12 minutos salvo picos consecutivos).</li>\n<li>Para evitar la conmutación frecuente de las trampillas, una solicitud de recirculación automática se mantiene como mínimo 25 segundos (tiempo mínimo de permanencia). Ante pequeños aumentos de contaminación no conmuta inmediatamente, confiando en la filtración del elemento de carbón activo.</li>\n<li>Al conectar el encendido, el sensor requiere un tiempo de calentamiento (fase de caldeo) de aprox. 30 segundos a 2 minutos para alcanzar su temperatura operativa, estando su función limitada durante ese periodo. <span class=\"pag\">págs. 191-193</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Ocupación de contactos del conector de 3 polos: Pin: Polo positivo (borne 15). Pin: Polo negativo (borne 31). Pin: Cable de señales hacia la unidad de control de la red de a bordo J519. Tiempo de calentamiento tras conectar el encendido: de 30 segundos a 2 minutos. Tiempo mínimo de permanencia en recirculación: 25 segundos. Duración máxima habitual de recirculación continua por autoadaptación: inferior a 12 minutos. Condiciones de funcionamiento según temperatura exterior y modo operativo: Temp. exterior > +2 °C: conmuta a recirculación al ascender ligeramente los contaminantes. Temp. exterior < -1 °C y modo Econ (compresor desactivado): conmuta solo ante aumentos intensos de contaminantes y por aprox. 15 segundos máximo. Temp. exterior < +10 °C: permanece aprox. 30 segundos en recirculación automática antes de volver a aire fresco. Temp. exterior < -5 °C: no es posible hacer funcionar el compresor. Bloques de valores de medición en Climatronic J255 (VAS 5051): Grupo 058, campo: contaminación del aire medida (00 = sin contaminación). Grupo 058, campo: contenido de NOx medido. Grupo 058, campo: contenido de CO medido. Grupo 039, campo: 00 = modo aire fresco; 1X = solicitud de recirculación por G238; 11 = solicitud activa pero no ejecutada por condición de desactivación en J255. (págs. 191-193, 196-200)",
+     "html": "<ul>\n<li>Ocupación de contactos del conector de 3 polos:<ul>\n<li>Pin: Polo positivo (borne 15).</li>\n<li>Pin: Polo negativo (borne 31).</li>\n<li>Pin: Cable de señales hacia la unidad de control de la red de a bordo J519.</li>\n</ul>\n</li>\n<li>Tiempo de calentamiento tras conectar el encendido: de 30 segundos a 2 minutos.</li>\n<li>Tiempo mínimo de permanencia en recirculación: 25 segundos.</li>\n<li>Duración máxima habitual de recirculación continua por autoadaptación: inferior a 12 minutos.</li>\n<li>Condiciones de funcionamiento según temperatura exterior y modo operativo:<ul>\n<li>Temp. exterior &gt; +2 °C: conmuta a recirculación al ascender ligeramente los contaminantes.</li>\n<li>Temp. exterior &lt; -1 °C y modo Econ (compresor desactivado): conmuta solo ante aumentos intensos de contaminantes y por aprox. 15 segundos máximo.</li>\n<li>Temp. exterior &lt; +10 °C: permanece aprox. 30 segundos en recirculación automática antes de volver a aire fresco.</li>\n<li>Temp. exterior &lt; -5 °C: no es posible hacer funcionar el compresor.</li>\n</ul>\n</li>\n<li>Bloques de valores de medición en Climatronic J255 (VAS 5051):<ul>\n<li>Grupo 058, campo: contaminación del aire medida (00 = sin contaminación).</li>\n<li>Grupo 058, campo: contenido de NOx medido.</li>\n<li>Grupo 058, campo: contenido de CO medido.</li>\n<li>Grupo 039, campo: 00 = modo aire fresco; 1X = solicitud de recirculación por G238; 11 = solicitud activa pero no ejecutada por condición de desactivación en J255. <span class=\"pag\">págs. 191-193, 196-200</span></li>\n</ul>\n</li>\n</ul>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Posible inscripción de mensaje de avería durante la fase de caldeo si existen altas cargas contaminantes en el aire al conectar el encendido. Destrucción del sensor por contacto directo o vapores de disolventes, combustibles o compuestos químicos. Filtro antipolvo y antipolen saturado, imposibilitando la retención de gases nocivos antes del cierre de trampillas. (págs. 192, 193, 199)",
+     "html": "<ul>\n<li>Posible inscripción de mensaje de avería durante la fase de caldeo si existen altas cargas contaminantes en el aire al conectar el encendido.</li>\n<li>Destrucción del sensor por contacto directo o vapores de disolventes, combustibles o compuestos químicos.</li>\n<li>Filtro antipolvo y antipolen saturado, imposibilitando la retención de gases nocivos antes del cierre de trampillas. <span class=\"pag\">págs. 192, 193, 199</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Registro de avería estática o esporádica en la memoria de la unidad de control J519 (código de dirección 09, bloques 73 y 74) o de Climatronic J255. Sin señal válida del sensor no se ejecuta la solicitud automática de recirculación. (págs. 192, 193, 195)",
+     "html": "<ul>\n<li>Registro de avería estática o esporádica en la memoria de la unidad de control J519 (código de dirección 09, bloques 73 y 74) o de Climatronic J255.</li>\n<li>Sin señal válida del sensor no se ejecuta la solicitud automática de recirculación. <span class=\"pag\">págs. 192, 193, 195</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Condiciones previas: Vehículo en zona con aire ambiental limpio, compartimento motor y caja de aguas limpios sin presencia ni rociado de disolventes, combustibles o productos con disolventes. Función \"recirculación automática de aire\" activada en el MMI. Procedimiento de comprobación con VAS 5051 y mechero de gas: Conectar el equipo VAS 5051 al conector de diagnosis de 16 polos con el encendido desconectado y arrancar el motor. Seleccionar modo \"Auto\" en Climatronic J255 y activar la recirculación automática en el MMI. Esperar 2 minutos (tiempo de calentamiento del sensor G238). Seleccionar \"Leer bloque de valores de medición\", grupo de indicación 058, y consultar campos 1, 3 (NOx) y 4 (CO). Girar el sensor G238 90° a la izquierda y desmontarlo de la toma de aspiración de aire fresco. Hacer pasar una pequeña cantidad de gas de mechero por arriba en la zona A del sensor. Comprobar que en los campos 3 y 4 del grupo 058 los valores de medición aumentan en comparación con el valor inicial, confirmando el correcto funcionamiento de los semiconductores y la electrónica. Esperar aprox. 1 minuto y verificar que los valores retornan a los niveles iniciales. Consultar el grupo 039, campo: al aplicar gas debe indicar la solicitud de recirculación y regresar a \"00\" tras disiparse el gas. Si existe avería registrada al conectar el encendido, desconectar el encendido como mínimo 2 minutos, volver a conectar y esperar como mínimo 2 minutos. Consultar la memoria de averías en J519: si la avería pasa de estática a esporádica, el sensor está en perfectas condiciones y solo debe borrarse la memoria. (págs. 194-198)",
+     "html": "<p>Condiciones previas:</p>\n<ul>\n<li>Vehículo en zona con aire ambiental limpio, compartimento motor y caja de aguas limpios sin presencia ni rociado de disolventes, combustibles o productos con disolventes.</li>\n<li>Función \"recirculación automática de aire\" activada en el MMI.</li>\n</ul>\n<p>Procedimiento de comprobación con VAS 5051 y mechero de gas:</p>\n<ol>\n<li>Conectar el equipo VAS 5051 al conector de diagnosis de 16 polos con el encendido desconectado y arrancar el motor.</li>\n<li>Seleccionar modo \"Auto\" en Climatronic J255 y activar la recirculación automática en el MMI.</li>\n<li>Esperar 2 minutos (tiempo de calentamiento del sensor G238).</li>\n<li>Seleccionar \"Leer bloque de valores de medición\", grupo de indicación 058, y consultar campos 1, 3 (NOx) y 4 (CO).</li>\n<li>Girar el sensor G238 90° a la izquierda y desmontarlo de la toma de aspiración de aire fresco.</li>\n<li>Hacer pasar una pequeña cantidad de gas de mechero por arriba en la zona A del sensor.</li>\n<li>Comprobar que en los campos 3 y 4 del grupo 058 los valores de medición aumentan en comparación con el valor inicial, confirmando el correcto funcionamiento de los semiconductores y la electrónica.</li>\n<li>Esperar aprox. 1 minuto y verificar que los valores retornan a los niveles iniciales.</li>\n<li>Consultar el grupo 039, campo: al aplicar gas debe indicar la solicitud de recirculación y regresar a \"00\" tras disiparse el gas.</li>\n<li>Si existe avería registrada al conectar el encendido, desconectar el encendido como mínimo 2 minutos, volver a conectar y esperar como mínimo 2 minutos. Consultar la memoria de averías en J519: si la avería pasa de estática a esporádica, el sensor está en perfectas condiciones y solo debe borrarse la memoria. <span class=\"pag\">págs. 194-198</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Sustituir el filtro de polvo y polen con capa de carbón activo en los intervalos de servicio. Precaución de taller: No montar sensores que hayan estado guardados en cajas de herramientas o en contacto con disolventes o combustibles. (págs. 193, 199)",
+     "html": "<ul>\n<li>Sustituir el filtro de polvo y polen con capa de carbón activo en los intervalos de servicio.</li>\n<li>Precaución de taller: No montar sensores que hayan estado guardados en cajas de herramientas o en contacto con disolventes o combustibles. <span class=\"pag\">págs. 193, 199</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Desmontaje y ubicación del sensor G238 en la toma de aire fresco — Fuente: Sensor Calidad del Aire G238.pdf, pág. 196",
+     "html": "<ul>\n<li>Desmontaje y ubicación del sensor G238 en la toma de aire fresco — Fuente: Sensor Calidad del Aire G238.pdf, pág. 196</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sensor-calidad-aire.sensor-calidad-del-aire",
+   "nt": 647,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-calidad-aire",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Sensor de la calidad del aire",
+   "codigo": "G238",
+   "menu": "Sensor de la calidad del aire G238",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Sensor Calidad del Aire.pdf, págs. 62-63",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "unidad-control-climatizador",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "servomotor-trampilla",
+    "filtro-habitaculo"
+   ],
+   "palabras": [
+    "G238",
+    "dióxido de estaño",
+    "SnO2",
+    "platino",
+    "paladio",
+    "sonda lambda",
+    "señal rectangular digitalizada"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Determinar la polución del aire atmosférico para que la unidad de control del climatizador cierre automáticamente la chapaleta de recirculación al detectar concentraciones punta de contaminantes. (págs. 62, 63)",
+     "html": "<p>Determinar la polución del aire atmosférico para que la unidad de control del climatizador cierre automáticamente la chapaleta de recirculación al detectar concentraciones punta de contaminantes. <span class=\"pag\">págs. 62, 63</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Componente electrónico no sujeto a desgaste. Funciona básicamente como una sonda lambda. Su elemento de medición es un semiconductor de óxidos mixtos de dióxido de estaño (SnO2), cuya sensibilidad se incrementa con aditivos catalíticos de platino y paladio. Incorpora un analizador electrónico en el módulo sensor. (págs. 62, 63)",
+     "html": "<p>Componente electrónico no sujeto a desgaste. Funciona básicamente como una sonda lambda. Su elemento de medición es un semiconductor de óxidos mixtos de dióxido de estaño (SnO2), cuya sensibilidad se incrementa con aditivos catalíticos de platino y paladio. Incorpora un analizador electrónico en el módulo sensor. <span class=\"pag\">págs. 62, 63</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El analizador electrónico integrado reacciona ante las variaciones en la conductividad eléctrica del sensor causadas por los gases contaminantes. La electrónica detecta el contenido medio de contaminantes del aire y transmite hacia la unidad de control del climatizador una señal rectangular digitalizada con la índole y cantidad de contaminantes. El sistema es autoadaptable: reconoce el nivel medio de contaminación ambiental para actuar únicamente ante picos de polución, evitando la conexión continua en recirculación. La unidad de control cierra la chapaleta de recirculación según la polución y la temperatura exterior. Adicionalmente, en algunos sistemas se conmuta a recirculación al accionar el limpia-lavaparabrisas. (págs. 62, 63)",
+     "html": "<ul>\n<li>El analizador electrónico integrado reacciona ante las variaciones en la conductividad eléctrica del sensor causadas por los gases contaminantes.</li>\n<li>La electrónica detecta el contenido medio de contaminantes del aire y transmite hacia la unidad de control del climatizador una señal rectangular digitalizada con la índole y cantidad de contaminantes.</li>\n<li>El sistema es autoadaptable: reconoce el nivel medio de contaminación ambiental para actuar únicamente ante picos de polución, evitando la conexión continua en recirculación.</li>\n<li>La unidad de control cierra la chapaleta de recirculación según la polución y la temperatura exterior. Adicionalmente, en algunos sistemas se conmuta a recirculación al accionar el limpia-lavaparabrisas. <span class=\"pag\">págs. 62, 63</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Temperatura de servicio: aprox. 350 ºC. Potencia absorbida: 0,5 W. Fase de calentamiento del sensor: aprox. 30 s (sin función de recirculación). Comportamiento según temperatura atmosférica y contaminación: +2 ºC y leve ascenso de contaminación: Recirculación activada (mínimo 25 s). +2 ºC y escasa contaminación: Recirculación no activada. De +2 ºC a -5 ºC y ascenso más intenso: Recirculación activada. < -5 ºC y ascenso más intenso: Recirculación activada por un máximo de 15 s. Función ECON (compresor desactivado): Recirculación activada por un máximo de 15 s. Función de descongelación: Recirculación no activada. (págs. 62, 63)",
+     "html": "<ul>\n<li>Temperatura de servicio: aprox. 350 ºC.</li>\n<li>Potencia absorbida: 0,5 W.</li>\n<li>Fase de calentamiento del sensor: aprox. 30 s (sin función de recirculación).</li>\n<li>Comportamiento según temperatura atmosférica y contaminación:<ul>\n<li>\n<blockquote>\n<p>+2 ºC y leve ascenso de contaminación: Recirculación activada (mínimo 25 s).</p>\n</blockquote>\n</li>\n<li>\n<blockquote>\n<p>+2 ºC y escasa contaminación: Recirculación no activada.</p>\n</blockquote>\n</li>\n<li>De +2 ºC a -5 ºC y ascenso más intenso: Recirculación activada.</li>\n<li>&lt; -5 ºC y ascenso más intenso: Recirculación activada por un máximo de 15 s.</li>\n<li>Función ECON (compresor desactivado): Recirculación activada por un máximo de 15 s.</li>\n<li>Función de descongelación: Recirculación no activada. <span class=\"pag\">págs. 62, 63</span></li>\n</ul>\n</li>\n</ul>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "El sensor no requiere mantenimiento por no estar sujeto a desgaste. Se debe sustituir el filtro combinado en los intervalos de servicio. (pág. 63)",
+     "html": "<p>El sensor no requiere mantenimiento por no estar sujeto a desgaste. Se debe sustituir el filtro combinado en los intervalos de servicio. <span class=\"pag\">pág. 63</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Conexión y esquema del sensor de calidad del aire G238 con la unidad de control E87 — Fuente: Sensor Calidad del Aire.pdf, pág. 63",
+     "html": "<ul>\n<li>Conexión y esquema del sensor de calidad del aire G238 con la unidad de control E87 — Fuente: Sensor Calidad del Aire.pdf, pág. 63</li>\n</ul>"
     }
    ]
   },
@@ -47332,6 +47682,218 @@
      "titulo": "Imágenes requeridas",
      "texto": "Frontal del tablero de mandos bizona con la disposición de pantallas, teclas AUTO, A/C y mandos de selección — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, págs. 3-4",
      "html": "<ul>\n<li>Frontal del tablero de mandos bizona con la disposición de pantallas, teclas AUTO, A/C y mandos de selección — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, págs. 3-4</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.potenciometro-distribucion-aire.potenciometro-de-distribucion-de-aire",
+   "nt": 643,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "potenciometro-distribucion-aire",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Potenciómetro de la distribución de aire",
+   "codigo": "",
+   "menu": "Potenciómetro de la distribución de ai",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Potenciometro de distribución de aire.pdf, págs. 15",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "unidad-control-climatizador",
+   "relacionados": [
+    "ventilador-habitaculo",
+    "recirculacion",
+    "compresor"
+   ],
+   "palabras": [
+    "potenciómetro",
+    "mando de distribución",
+    "desempañado",
+    "parabrisas"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Indicar constantemente a la unidad del autoclima o calefacción motorizada la posición del mando de distribución de aire elegida por el usuario. (pág. 15)",
+     "html": "<p>Indicar constantemente a la unidad del autoclima o calefacción motorizada la posición del mando de distribución de aire elegida por el usuario. <span class=\"pag\">pág. 15</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Se encuentra ubicado en el interior de la propia unidad del autoclima o calefacción motorizada y es accionado al girar el mando de distribución de aire. (pág. 15)",
+     "html": "<p>Se encuentra ubicado en el interior de la propia unidad del autoclima o calefacción motorizada y es accionado al girar el mando de distribución de aire. <span class=\"pag\">pág. 15</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El potenciómetro envía una señal de salida a la unidad de control. Al seleccionar la salida de aire hacia el parabrisas, la unidad procesa la señal y ejecuta las siguientes funciones: Aumenta la velocidad de la turbina. Coloca la trampilla de recirculación en la posición de entrada de aire fresco. Conecta el compresor (sólo en el autoclima). (pág. 15)",
+     "html": "<p>El potenciómetro envía una señal de salida a la unidad de control. Al seleccionar la salida de aire hacia el parabrisas, la unidad procesa la señal y ejecuta las siguientes funciones:</p>\n<ul>\n<li>Aumenta la velocidad de la turbina.</li>\n<li>Coloca la trampilla de recirculación en la posición de entrada de aire fresco.</li>\n<li>Conecta el compresor (sólo en el autoclima). <span class=\"pag\">pág. 15</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Pérdida de la señal del potenciómetro por fallo en el componente o en sus conexiones. (pág. 15)",
+     "html": "<p>Pérdida de la señal del potenciómetro por fallo en el componente o en sus conexiones. <span class=\"pag\">pág. 15</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Con la pérdida de la señal del potenciómetro, la unidad de control actúa con la siguiente función sustitutiva: Sitúa la trampilla de recirculación en la posición de entrada de aire fresco. No regula la velocidad de la turbina ni conecta el compresor (en autoclima) al seleccionar la salida de aire hacia el parabrisas. Cada vez que se conecta el equipo parpadean los dígitos del display. (pág. 15)",
+     "html": "<p>Con la pérdida de la señal del potenciómetro, la unidad de control actúa con la siguiente función sustitutiva:</p>\n<ul>\n<li>Sitúa la trampilla de recirculación en la posición de entrada de aire fresco.</li>\n<li>No regula la velocidad de la turbina ni conecta el compresor (en autoclima) al seleccionar la salida de aire hacia el parabrisas.</li>\n<li>Cada vez que se conecta el equipo parpadean los dígitos del display. <span class=\"pag\">pág. 15</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Potenciómetro de distribución y rueda de accionamiento — Fuente: Potenciometro de distribución de aire.pdf, pág. 15",
+     "html": "<ul>\n<li>Potenciómetro de distribución y rueda de accionamiento — Fuente: Potenciometro de distribución de aire.pdf, pág. 15</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.potenciometro-trampilla-temperatura.potenciometro-de-distribucion-de-aire",
+   "nt": 644,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "potenciometro-trampilla-temperatura",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Potenciómetro del motor de la trampilla de temperatura",
+   "codigo": "G92",
+   "menu": "Potenciómetro del motor de la  G92",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Potenciometro de distribución de aire.pdf, págs. 15",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "servomotor-trampilla",
+   "relacionados": [
+    "servomotor-trampilla",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "G92",
+    "trampilla de temperatura",
+    "resistencia",
+    "carrera angular"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Informar constantemente de la posición del motor y, en consecuencia, de la posición exacta de la trampilla de temperatura a la unidad de control del autoclima o calefacción motorizada. (pág. 15)",
+     "html": "<p>Informar constantemente de la posición del motor y, en consecuencia, de la posición exacta de la trampilla de temperatura a la unidad de control del autoclima o calefacción motorizada. <span class=\"pag\">pág. 15</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Está ubicado en el propio motor accionador. Dispone de una carrera angular de 51° y presenta un rango de resistencia comprendido entre 0 y 4,7 kΩ. (pág. 15)",
+     "html": "<p>Está ubicado en el propio motor accionador. Dispone de una carrera angular de 51° y presenta un rango de resistencia comprendido entre 0 y 4,7 kΩ. <span class=\"pag\">pág. 15</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Envía una señal eléctrica de resistencia variable proporcional a su posición angular. La unidad de control utiliza esta señal para: Regular la temperatura del aire de entrada al habitáculo. Reconocer el funcionamiento del motor y localizar la posición de los dos topes del recorrido de la trampilla. (pág. 15)",
+     "html": "<p>Envía una señal eléctrica de resistencia variable proporcional a su posición angular. La unidad de control utiliza esta señal para:</p>\n<ul>\n<li>Regular la temperatura del aire de entrada al habitáculo.</li>\n<li>Reconocer el funcionamiento del motor y localizar la posición de los dos topes del recorrido de la trampilla. <span class=\"pag\">pág. 15</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Carrera angular: 51°. Rango de resistencia: entre 0 y 4,7 kΩ. (pág. 15)",
+     "html": "<ul>\n<li>Carrera angular: 51°.</li>\n<li>Rango de resistencia: entre 0 y 4,7 kΩ. <span class=\"pag\">pág. 15</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Avería en el potenciómetro o interrupción en la señal emitida hacia la unidad de control. (pág. 15)",
+     "html": "<p>Avería en el potenciómetro o interrupción en la señal emitida hacia la unidad de control. <span class=\"pag\">pág. 15</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "En caso de avería del potenciómetro, la unidad de control adopta el siguiente comportamiento: Deja la trampilla de temperatura en la posición existente en el momento del fallo. Reduce la velocidad de la turbina para evitar la entrada excesiva de aire frío o caliente. Parpadean los dígitos del display cada vez que se conecta el equipo. (pág. 15)",
+     "html": "<p>En caso de avería del potenciómetro, la unidad de control adopta el siguiente comportamiento:</p>\n<ul>\n<li>Deja la trampilla de temperatura en la posición existente en el momento del fallo.</li>\n<li>Reduce la velocidad de la turbina para evitar la entrada excesiva de aire frío o caliente.</li>\n<li>Parpadean los dígitos del display cada vez que se conecta el equipo. <span class=\"pag\">pág. 15</span></li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.marco-desaireacion-habitaculo.sensor-calidad-del-aire-g238",
+   "nt": 646,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "marco-desaireacion-habitaculo",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Marco de salida de aire para desaireación forzada",
+   "codigo": "",
+   "menu": "Marco de salida de aire para desaireac",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Sensor Calidad del Aire G238.pdf, págs. 200-201",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "ventilador-habitaculo",
+    "filtro-habitaculo"
+   ],
+   "palabras": [
+    "desaireación forzada",
+    "marco de salida de aire",
+    "maletero",
+    "tapadera acústica"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Garantizar la evacuación del caudal de aire del interior del habitáculo hacia el exterior para permitir la correcta circulación y renovación del aire introducido por el climatizador. (págs. 200, 201)",
+     "html": "<p>Garantizar la evacuación del caudal de aire del interior del habitáculo hacia el exterior para permitir la correcta circulación y renovación del aire introducido por el climatizador. <span class=\"pag\">págs. 200, 201</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Se compone de dos marcos de salida de aire (uno a la izquierda y otro a la derecha) montados en las bocas de desaireación de la carrocería en el maletero. Existen versiones con y sin tapadera acústica. (pág. 200)",
+     "html": "<p>Se compone de dos marcos de salida de aire (uno a la izquierda y otro a la derecha) montados en las bocas de desaireación de la carrocería en el maletero. Existen versiones con y sin tapadera acústica. <span class=\"pag\">pág. 200</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El aire interior fluye desde el habitáculo a través de las rendijas del revestimiento del maletero y atraviesa los marcos de salida de aire hacia el exterior del vehículo. (pág. 200)",
+     "html": "<p>El aire interior fluye desde el habitáculo a través de las rendijas del revestimiento del maletero y atraviesa los marcos de salida de aire hacia el exterior del vehículo. <span class=\"pag\">pág. 200</span></p>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Obstrucción de las rendijas del revestimiento o bloqueo de los marcos de salida por suciedad o equipaje. (págs. 200, 201)",
+     "html": "<p>Obstrucción de las rendijas del revestimiento o bloqueo de los marcos de salida por suciedad o equipaje. <span class=\"pag\">págs. 200, 201</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Dificultad en la renovación del aire, empañamiento de cristales o sobrepresión en el habitáculo al cerrar puertas. (págs. 200, 201)",
+     "html": "<p>Dificultad en la renovación del aire, empañamiento de cristales o sobrepresión en el habitáculo al cerrar puertas. <span class=\"pag\">págs. 200, 201</span></p>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Revisar la limpieza y despeje de las rendijas de desaireación en el revestimiento del maletero. Comprobar la continuidad de paso del aire desde el guarnecido del maletero hacia los marcos de salida. Para desmontar y montar los marcos de salida de aire, retirar por el exterior el moldeado del paragolpes. (págs. 200, 201)",
+     "html": "<ol>\n<li>Revisar la limpieza y despeje de las rendijas de desaireación en el revestimiento del maletero.</li>\n<li>Comprobar la continuidad de paso del aire desde el guarnecido del maletero hacia los marcos de salida.</li>\n<li>Para desmontar y montar los marcos de salida de aire, retirar por el exterior el moldeado del paragolpes. <span class=\"pag\">págs. 200, 201</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Mantener libres de obstáculos las rendijas de desaireación del maletero. (págs. 200, 201)",
+     "html": "<p>Mantener libres de obstáculos las rendijas de desaireación del maletero. <span class=\"pag\">págs. 200, 201</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Marcos de salida de aire para desaireación forzada en la carrocería del maletero — Fuente: Sensor Calidad del Aire G238.pdf, pág. 201",
+     "html": "<ul>\n<li>Marcos de salida de aire para desaireación forzada en la carrocería del maletero — Fuente: Sensor Calidad del Aire G238.pdf, pág. 201</li>\n</ul>"
     }
    ]
   },
