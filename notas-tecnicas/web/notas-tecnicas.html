@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">333 notas · 24/09/2026</p>
+  <p class="sidebar-meta">335 notas · 24/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -426,6 +426,8 @@
     <li><a href="#grp-pretensor-cinturon">Pretensor pirotécnico de cinturón de cinta metálica <span class="menu-cuenta">2 fuentes</span></a></li>
     <li><a href="#nt331">NT331 · Limitador adaptativo de la fue G551 / G552</a></li>
     <li><a href="#nt332">NT332 · Unidad de control del tensor d J854 / J855</a></li>
+    <li><a href="#nt334">NT334 · Unidad de control para la dete J706</a></li>
+    <li><a href="#nt335">NT335 · Sensor de ocupación del asient G128</a></li>
   </ul>
 </nav>
 
@@ -17120,8 +17122,66 @@ Al recibir señal de la unidad de control del airbag J234 ante un impacto leve q
     </div>
   </section>
 
+  <section id="nt334" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 334 <span class="fusionado">Audi</span></div>
+    <div class="nota-body">
+      <h1>Unidad de control para la detección de ocupación del asiento J706 — <strong>J706</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Detectar la ocupación del asiento del acompañante y determinar si está ocupado por una silla infantil o por un adulto, transmitiendo esta información a la unidad de control del airbag J234 para activar o desactivar el airbag frontal del acompañante. (págs. 22-23).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Mide de forma cíclica la variación de la capacidad eléctrica (capacitancia) del sensor del asiento G128. En función de este cambio de capacidad, determina si el asiento está ocupado por un adulto o por un asiento infantil. Envía esta información a través del bus LIN a la unidad de control del airbag J234, la cual activa o desactiva el airbag del acompañante e ilumina el testigo de advertencia de airbag del acompañante desactivado K145. (págs. 22-23).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Consultar la Localización Guiada de Averías (Guided Fault Finding), el catálogo ETKA y la información técnica de servicio electrónica actual. (pág. 23).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Unidad de control electrónica montada debajo del asiento del acompañante delantero. Existen diferentes tipos de asientos y diferentes módulos de control de reconocimiento de ocupación, contando cada uno con un software adaptado específicamente a cada tipo de asiento. Se conecta mediante un cable coaxial con el sensor de ocupación G128 y mediante bus LIN con la unidad de control del airbag J234. (págs. 22-23).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT334_01</code> Esquema de la unidad de control J706 bajo el asiento del acompañante, conectada al sensor G128, unidad J234 y testigo K145 — Fuente: SSP 484 A7 Info y Clima (arrastrado).pdf, pág. 22</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">SSP 484 A7 Info y Clima (arrastrado) 3.pdf, págs. 22-23</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt335" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 335 <span class="fusionado">Audi</span></div>
+    <div class="nota-body">
+      <h1>Sensor de ocupación del asiento del acompañante G128 — <strong>G128</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Captar la presencia y el tipo de ocupante en el asiento del acompañante delantero mediante la variación de su capacidad eléctrica (capacitancia). (págs. 22-23).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Modifica su capacidad eléctrica (capacitancia) en función de la masa y presión ejercidas sobre el cojín del asiento. Esta variación es medida cíclicamente por la unidad de control J706 a través del cable coaxial para discriminar entre un asiento infantil y un ocupante adulto. (págs. 22-23).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Consultar la Localización Guiada de Averías (Guided Fault Finding) y la documentación técnica de servicio. (pág. 23).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Sensor de tipo capacitivo integrado en el cojín del asiento del acompañante delantero. Se conecta directamente a la unidad de control J706 mediante un cable coaxial a través del conector situado debajo del asiento. (págs. 22-23).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">SSP 484 A7 Info y Clima (arrastrado) 3.pdf, págs. 22-23</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    333 notas técnicas · generado el 24/09/2026.
+    335 notas técnicas · generado el 24/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
