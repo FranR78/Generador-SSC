@@ -20,21 +20,21 @@ palabras: ["G65", "transmisor de presión", "ralentí", "16 bares", "función su
 
 ## Misión
 
-Medir la presión del fluido refrigerante en el circuito y enviar la señal de presión a la **unidad de control del motor** y a la **unidad de control del aire acondicionado**. (pág. 15)
+Medir la presión del fluido refrigerante en el circuito y enviar la señal de presión a la **unidad de control del motor** y a la **unidad de control del aire acondicionado**. (págs. 15-17)
 
 ## Tipos y características
 
-Es un transmisor de presión electrónico con un diseño idéntico al que se monta en el modelo Toledo.
+Es un transmisor de presión electrónico de diseño idéntico al montado en el modelo Toledo.
 
 ## Principio de funcionamiento
 
 El transmisor mide la presión del circuito frigorífico y transmite la señal a dos unidades de control:
-- **Unidad del aire acondicionado:** procesa la señal para efectuar la desconexión del compresor por presión máxima o mínima, conectar la 2ª velocidad de los ventiladores del líquido refrigerante al llegar a 16 bares e informar a la unidad del autoclima sobre la conexión o desconexión del compresor.
+- **Unidad del aire acondicionado:** procesa la señal para efectuar la desconexión del compresor por presión máxima o mínima, conectar la 2ª velocidad de los ventiladores del líquido refrigerante al llegar a 16 bares e informar a la unidad del autoclima J255 sobre la conexión o desconexión del compresor.
 - **Unidad de control del motor:** procesa la señal enviada por el transmisor y actúa sobre la regulación del ralentí según las necesidades requeridas por la carga del motor. (págs. 15-17)
 
 ## Valores de trabajo
 
-- **Presión para la conexión de la 2ª velocidad de los ventiladores del líquido refrigerante:** 16 bares. (pág. 15)
+- **Presión para conexión de la 2ª velocidad de los ventiladores del líquido refrigerante:** 16 bares. (pág. 15)
 
 ## Anomalías frecuentes
 
@@ -48,4 +48,4 @@ En caso de avería en el transmisor G65:
 
 ## Imágenes requeridas
 
-- Transmisor de presión G65 y esquema de conexionado eléctrico con la unidad del aire acondicionado J293, la unidad del motor y la unidad del autoclima J255 — Fuente: Copia de Transmisor de presión II.pdf, págs. 15-17
+- Transmisor de presión G65 y esquema de conexionado eléctrico con la unidad del aire acondicionado J293, la unidad del motor y la unidad del autoclima J255 — Fuente: Copia de Transmisor de presión II.pdf, pág. 17 (págs. 15-17)
