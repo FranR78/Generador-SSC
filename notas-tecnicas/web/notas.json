@@ -2402,6 +2402,14 @@
    "hecha": false
   },
   {
+   "nombre": "NT555_01",
+   "nt": 555,
+   "titulo": "Servomotor de trampillas sin potenciómetro",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Esquema de conexión en serie de los servomotores en el LIN-Bus con asignación de bornes (A1 a A4) — Fuente: SERVOMOTORES SIN POTENCIOMETROS.pdf, pág. 81",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -2426,7 +2434,7 @@
    "hecha": false
   }
  ],
- "total": 546,
+ "total": 548,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -20244,6 +20252,73 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema de excitación del motor V113 mostrando contactos, cursor, guía, palanca de giro y eje de la trampilla — Fuente: Motor trampilla recirculación.pdf, pág. 22",
      "html": "<ul>\n<li>Esquema de excitación del motor V113 mostrando contactos, cursor, guía, palanca de giro y eje de la trampilla — Fuente: Motor trampilla recirculación.pdf, pág. 22</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.servomotor-trampilla.sin-potenciometro.servomotores-sin-potenciometros",
+   "nt": 555,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "servomotor-trampilla",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Servomotor de trampillas sin potenciómetro",
+   "codigo": "",
+   "menu": "Servomotor de trampillas sin potencióm",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "SERVOMOTORES SIN POTENCIOMETROS.pdf, págs. 81",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "sin-potenciometro",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "unidad-control-j255",
+    "lin-bus"
+   ],
+   "palabras": [
+    "motor paso a paso",
+    "bus LIN",
+    "conexión en serie",
+    "sin potenciómetro"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Son los encargados de realizar el accionamiento de las diferentes chapaletas del sistema de climatización. (pág. 81)",
+     "html": "<p>Son los encargados de realizar el accionamiento de las diferentes chapaletas del sistema de climatización. <span class=\"pag\">pág. 81</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Todos los servomotores de accionamiento presentan el mismo diseño, lo que permite asociarlos a cualquier chapaleta. Son motores paso a paso que no necesitan potenciómetros. Se conectan en serie y son gestionados a través de un LIN-Bus independiente. El climatizador automático de zona única dispone de 6 servomotores, mientras que el climatizador automático de tres zonas posee 10 servomotores conectados en serie. Asignación de bornes en el conector: A1: Borne 31 (masa). A2: LIN IN (entrada de datos LIN-Bus). A3: LIN OUT (salida de datos LIN-Bus). A4: Borne 30 (positivo constante). (pág. 81)",
+     "html": "<p>Todos los servomotores de accionamiento presentan el mismo diseño, lo que permite asociarlos a cualquier chapaleta. Son motores paso a paso que no necesitan potenciómetros. Se conectan en serie y son gestionados a través de un LIN-Bus independiente.\nEl climatizador automático de zona única dispone de 6 servomotores, mientras que el climatizador automático de tres zonas posee 10 servomotores conectados en serie.\nAsignación de bornes en el conector:</p>\n<ul>\n<li>A1: Borne 31 (masa).</li>\n<li>A2: LIN IN (entrada de datos LIN-Bus).</li>\n<li>A3: LIN OUT (salida de datos LIN-Bus).</li>\n<li>A4: Borne 30 (positivo constante). <span class=\"pag\">pág. 81</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Funcionan como motores paso a paso gestionados por la unidad de control Climatronic J255 mediante comunicación por LIN-Bus en serie. Para que cada servomotor pueda ser asignado a su chapaleta correspondiente, debe vincularse con un código de dirección específico de cada accionamiento. (pág. 81)",
+     "html": "<p>Funcionan como motores paso a paso gestionados por la unidad de control Climatronic J255 mediante comunicación por LIN-Bus en serie. Para que cada servomotor pueda ser asignado a su chapaleta correspondiente, debe vincularse con un código de dirección específico de cada accionamiento. <span class=\"pag\">pág. 81</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Alimentación eléctrica: Borne 30 en terminal A4 y Borne 31 en terminal A1. Línea de datos: LIN IN en terminal A2 y LIN OUT en terminal A3. Cantidad de actuadores: 6 servomotores en climatizador monozona y 10 servomotores en climatizador trizona. (pág. 81)",
+     "html": "<ul>\n<li>Alimentación eléctrica: Borne 30 en terminal A4 y Borne 31 en terminal A1.</li>\n<li>Línea de datos: LIN IN en terminal A2 y LIN OUT en terminal A3.</li>\n<li>Cantidad de actuadores: 6 servomotores en climatizador monozona y 10 servomotores en climatizador trizona. <span class=\"pag\">pág. 81</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Una vez realizado el direccionamiento, no se deben intercambiar los conectores ni los servomotores entre sí. (pág. 81)",
+     "html": "<p>Una vez realizado el direccionamiento, no se deben intercambiar los conectores ni los servomotores entre sí. <span class=\"pag\">pág. 81</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema de conexión en serie de los servomotores en el LIN-Bus con asignación de bornes (A1 a A4) — Fuente: SERVOMOTORES SIN POTENCIOMETROS.pdf, pág. 81",
+     "html": "<ul>\n<li>Esquema de conexión en serie de los servomotores en el LIN-Bus con asignación de bornes (A1 a A4) — Fuente: SERVOMOTORES SIN POTENCIOMETROS.pdf, pág. 81</li>\n</ul>"
     }
    ]
   },
@@ -40666,6 +40741,79 @@
      "titulo": "Imágenes requeridas",
      "texto": "Tabla de asignación de bombas eléctricas V36, V51 y V55 según motorización (V6, V8, W12, V10-TDI, R5-TDI) y equipamiento — Fuente: 301_e Climatización en el Touareg.pdf, pág. 10",
      "html": "<ul>\n<li>Tabla de asignación de bombas eléctricas V36, V51 y V55 según motorización (V6, V8, W12, V10-TDI, R5-TDI) y equipamiento — Fuente: 301_e         Climatización en el Touareg.pdf, pág. 10</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.direccionamiento-servomotores.servomotores-sin-potenciometros",
+   "nt": 556,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "direccionamiento-servomotores",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Direccionamiento de servomotores",
+   "codigo": "",
+   "menu": "Direccionamiento de servomotores",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "SERVOMOTORES SIN POTENCIOMETROS.pdf, págs. 81",
+   "clase": "procedimiento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "servomotor-trampilla",
+    "unidad-control-j255"
+   ],
+   "palabras": [
+    "tester VAS",
+    "autodireccionamiento",
+    "ajuste básico",
+    "canal 001",
+    "LIN-Bus"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Asignar automáticamente las direcciones a los diferentes servomotores de las chapaletas conectados en serie por LIN-Bus para que la unidad de control Climatronic J255 reconozca la función de cada uno. Es obligatorio ejecutarlo antes del ajuste básico y cada vez que se desacople un conector o un servomotor. (pág. 81)",
+     "html": "<p>Asignar automáticamente las direcciones a los diferentes servomotores de las chapaletas conectados en serie por LIN-Bus para que la unidad de control Climatronic J255 reconozca la función de cada uno. Es obligatorio ejecutarlo antes del ajuste básico y cada vez que se desacople un conector o un servomotor. <span class=\"pag\">pág. 81</span></p>"
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Debe ejecutarse antes de realizar el ajuste básico en el canal 001 y canal. Es imprescindible realizarlo si se ha desacoplado uno o varios conectores o un servomotor. (pág. 81)",
+     "html": "<p>Debe ejecutarse antes de realizar el ajuste básico en el canal 001 y canal. Es imprescindible realizarlo si se ha desacoplado uno o varios conectores o un servomotor. <span class=\"pag\">pág. 81</span></p>"
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Tester de diagnosis VAS (programas de Localización guiada de averías o Funciones guiadas). (pág. 81)",
+     "html": "<p>Tester de diagnosis VAS (programas de Localización guiada de averías o Funciones guiadas). <span class=\"pag\">pág. 81</span></p>"
+    },
+    {
+     "titulo": "Pasos",
+     "texto": "Conectar el tester de diagnosis VAS y acceder a los programas de Localización guiada de averías o Funciones guiadas. (pág. 81) Seleccionar la función de direccionamiento antes de efectuar el ajuste básico en el canal. (pág. 81) Iniciar el procedimiento para provocar el reinicio de todos los servomotores. (pág. 81) Transmitir desde la unidad de control Climatronic J255 la orden de autodireccionamiento para asignar automáticamente las direcciones a los servomotores. (pág. 81) Realizar los ajustes básicos en los canales 001 y 003 una vez finalizado el direccionamiento. (pág. 81)",
+     "html": "<ol>\n<li>Conectar el tester de diagnosis VAS y acceder a los programas de Localización guiada de averías o Funciones guiadas. <span class=\"pag\">pág. 81</span></li>\n<li>Seleccionar la función de direccionamiento antes de efectuar el ajuste básico en el canal. <span class=\"pag\">pág. 81</span></li>\n<li>Iniciar el procedimiento para provocar el reinicio de todos los servomotores. <span class=\"pag\">pág. 81</span></li>\n<li>Transmitir desde la unidad de control Climatronic J255 la orden de autodireccionamiento para asignar automáticamente las direcciones a los servomotores. <span class=\"pag\">pág. 81</span></li>\n<li>Realizar los ajustes básicos en los canales 001 y 003 una vez finalizado el direccionamiento. <span class=\"pag\">pág. 81</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Paso previo al ajuste básico: Direccionamiento en canal. Canales de ajuste básico posterior: Canal 001 y Canal. (pág. 81)",
+     "html": "<ul>\n<li>Paso previo al ajuste básico: Direccionamiento en canal.</li>\n<li>Canales de ajuste básico posterior: Canal 001 y Canal. <span class=\"pag\">pág. 81</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Comprobar la correcta asignación automática de direcciones antes de dar paso a los ajustes básicos en los canales 001 y. (pág. 81)",
+     "html": "<p>Comprobar la correcta asignación automática de direcciones antes de dar paso a los ajustes básicos en los canales 001 y. <span class=\"pag\">pág. 81</span></p>"
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Una vez ejecutado el direccionamiento, queda prohibido intercambiar la posición de los conectores o de los servomotores. (pág. 81)",
+     "html": "<p>Una vez ejecutado el direccionamiento, queda prohibido intercambiar la posición de los conectores o de los servomotores. <span class=\"pag\">pág. 81</span></p>"
     }
    ]
   },
