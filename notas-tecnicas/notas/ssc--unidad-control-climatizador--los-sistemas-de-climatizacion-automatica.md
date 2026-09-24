@@ -5,30 +5,31 @@ unidad: clima
 nt: 308
 tipo: elemento
 clase: componente
-titulo: "Centralita de climatización"
-menu: "Centralita de climatización"
+titulo: "Tarjeta electrónica de climatización"
+menu: "Tarjeta electrónica de climatización"
 grupo: "Control de climatización"
 clave: unidad-control-climatizador
 area: climatizacion
 sistema: "control-climatizacion"
+forma_parte_de: control-climatizacion
 marca: "Valeo"
-fuentes: "LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, págs. 7-8"
-relacionados: ["regulacion-automatica", "servomotor-trampilla", "presostato"]
-palabras: ["tarjeta electrónica", "centralita", "calculador", "señales de entrada", "señales de salida", "bidireccional"]
+fuentes: "LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, págs. 6-8"
+relacionados: ["regulacion-automatica", "servomotor-trampilla"]
+palabras: ["tarjeta electrónica", "centralita", "calculador", "señales de entrada", "señales de salida", "conexiones bidireccionales"]
 ---
 
 ## Misión
 
-Regular el funcionamiento integral del sistema de climatización automática procesando las señales de los sensores del vehículo y gobernando los actuadores y equipos periféricos. (pág. 8).
+Procesar las señales de las sondas y captadores para calcular y enviar las órdenes de activación hacia los actuadores de trampillas, el impulsor de aire, el electroventilador y el compresor. (págs. 6-8)
 
 ## Tipos y características
 
-Tarjeta electrónica, centralita o calculador ubicada normalmente en el salpicadero, detrás de los mandos y de la pantalla del climatizador. Dispone de terminales para señales de entrada, señales de salida y conexiones bidireccionales. (pág. 8).
+Centralita o calculador electrónico equipado con microprocesador, ubicado físicamente en el tablero de mandos detrás de la pantalla y de los botones de control. Dispone de canales de entrada, salida y líneas de comunicación bidireccionales. (págs. 6, 8)
 
 ## Principio de funcionamiento
 
-Procesa la información de entrada procedente de las sondas de temperatura (habitáculo, exterior, aire soplado, evaporador) y del presostato. Con estos datos y las órdenes introducidas desde el tablero de mandos, envía señales de salida a los actuadores de las trampillas, al módulo del impulsor, al electroventilador (GMV) y al acoplamiento del compresor. Mantiene comunicación bidireccional con el módulo de inyección motor (para desacoplar el compresor en aceleraciones y elevar el ralentí) y con el módulo electrónico de refrigeración. (págs. 7-8).
+Recibe las solicitudes del usuario desde el tablero de mandos y analiza de forma continua las señales de entrada de las sondas térmicas (habitáculo, exterior, aire soplado, evaporador) y del presostato. Con esta información, emite señales de salida para posicionar los actuadores de las trampillas, variar la velocidad del impulsor de aire, acoplar o desacoplar el compresor y activar el electroventilador (GMV). Mantiene comunicación bidireccional con el módulo de inyección del motor y el módulo electrónico de refrigeración. (págs. 6-8)
 
 ## Imágenes requeridas
 
-- Esquema de entradas, salidas y conexiones bidireccionales de la tarjeta electrónica de climatización — Fuente: LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, pág. 8
+- Esquema del calculador electrónico indicando los canales de entrada, salida y enlaces bidireccionales — Fuente: LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, pág. 8
