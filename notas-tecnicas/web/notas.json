@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-24",
- "total": 339,
+ "total": 340,
  "grupos": [
   "Calefacción",
   "Circuito frigorífico",
@@ -11462,6 +11462,67 @@
      "titulo": "Mantenimiento",
      "texto": "Usar láminas de gel adhesivas originales al sustituir el parabrisas. (pág. 116).",
      "html": "<p>Usar láminas de gel adhesivas originales al sustituir el parabrisas. <span class=\"pag\">pág. 116</span>.</p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.sensor-humedad.ssp-484-a7-info-y-clima-arrastrado-7",
+   "nt": 340,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-humedad",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Sensor de humedad en el conducto de admisión de aire fresco",
+   "codigo": "G657",
+   "menu": "Sensor de humedad en el conduc G657",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "SSP 484 A7 Info y Clima (arrastrado) 7.pdf, págs. 51",
+   "clase": "componente",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "regulacion-automatica",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "sensor-calidad-aire"
+   ],
+   "palabras": [
+    "G657",
+    "sensor de humedad",
+    "bus LIN",
+    "J519",
+    "J255"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Determinar la temperatura y el contenido de humedad del flujo de aire de admisión en el conducto de entrada de aire fresco. (pág. 51).",
+     "html": "<p>Determinar la temperatura y el contenido de humedad del flujo de aire de admisión en el conducto de entrada de aire fresco. <span class=\"pag\">pág. 51</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Sensor de humedad y temperatura G657 alojado en el conducto de admisión de aire fresco. En el sistema de climatización de tres zonas: consta de sensor de humedad de aire y sensor de temperatura. (pág. 51). En el sistema de climatización de cuatro zonas: se combina con el sensor de calidad del aire G238, disponiendo además de un sistema de control automático de recirculación de aire. (pág. 51).",
+     "html": "<p>Sensor de humedad y temperatura G657 alojado en el conducto de admisión de aire fresco.</p>\n<ul>\n<li>En el sistema de climatización de tres zonas: consta de sensor de humedad de aire y sensor de temperatura. <span class=\"pag\">pág. 51</span>.</li>\n<li>En el sistema de climatización de cuatro zonas: se combina con el sensor de calidad del aire G238, disponiendo además de un sistema de control automático de recirculación de aire. <span class=\"pag\">pág. 51</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Mide la temperatura y el nivel de humedad del flujo de aire de admisión. Transmite los datos de medición a la unidad de control de la red de a bordo J519 a través del bus LIN. Desde J519, la información se envía a la unidad de control Climatronic J255, que calcula la humedad relativa del aire fresco admitido para la regulación del sistema. (pág. 51).",
+     "html": "<p>Mide la temperatura y el nivel de humedad del flujo de aire de admisión. Transmite los datos de medición a la unidad de control de la red de a bordo J519 a través del bus LIN. Desde J519, la información se envía a la unidad de control Climatronic J255, que calcula la humedad relativa del aire fresco admitido para la regulación del sistema. <span class=\"pag\">pág. 51</span>.</p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tiempo de inicialización y configuración del sensor G238 tras conectar el encendido (ON): aprox. 2 minutos. (pág. 51).",
+     "html": "<p>Tiempo de inicialización y configuración del sensor G238 tras conectar el encendido (ON): aprox. 2 minutos. <span class=\"pag\">pág. 51</span>.</p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Ubicación del sensor de humedad G657 con rejilla de protección de hojas en el conducto de admisión y variante combinada con G238 — Fuente: SSP 484 A7 Info y Clima (arrastrado).pdf, pág. 51",
+     "html": "<ul>\n<li>Ubicación del sensor de humedad G657 con rejilla de protección de hojas en el conducto de admisión y variante combinada con G238 — Fuente: SSP 484 A7 Info y Clima (arrastrado).pdf, pág. 51</li>\n</ul>"
     }
    ]
   },
