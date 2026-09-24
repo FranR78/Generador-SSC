@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-24",
- "total": 146,
+ "total": 147,
  "grupos": [
   "Circuito frigorífico",
   "Control de climatización",
@@ -4405,6 +4405,60 @@
     {
      "titulo": "Imágenes requeridas",
      "texto": "Manómetros marcando 0 bar en ambas carátulas por falta de accionamiento de los obuses o vaciado total — Fuente: Manometros.pdf, págs. 32-33"
+    }
+   ]
+  },
+  {
+   "id": "ssc.lectura-manometros.orihuela",
+   "nt": 147,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "lectura-manometros",
+   "seccion": "10. Diagnóstico",
+   "subgrupo": "",
+   "titulo": "Lectura de manómetros de alta y baja presión en estación de carga",
+   "codigo": "",
+   "menu": "Lectura de manómetros de alta y baja p",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Orihuela, págs. 1",
+   "clase": "diagnostico",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "valvula-expansion",
+    "condensador",
+    "evaporador"
+   ],
+   "palabras": [
+    "manómetros",
+    "alta presión",
+    "baja presión",
+    "16 bar",
+    "1.8 bar"
+   ],
+   "apartados": [
+    {
+     "titulo": "Síntoma",
+     "texto": "Indicación visual de presiones en los relojes de la estación de servicio durante la comprobación del sistema de aire acondicionado (pág. 1)."
+    },
+    {
+     "titulo": "Causas posibles",
+     "texto": "Funcionamiento del circuito frigorífico en condición de trabajo con lecturas de alta y baja presión dentro del rango nominal de servicio (pág. 1)."
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Presión de alta en manómetro rojo (HP): 16 bar (230 psi) (pág. 1). Presión de baja en manómetro azul (LP): 1,8 bar (26 psi) (pág. 1)."
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Manómetro de alta presión (HP, reloj rojo) en 16 bar (230 psi) y manómetro de baja presión (LP, reloj azul) en 1,8 bar (26 psi) — Fuente: Orihuela, pág. 1"
     }
    ]
   },
