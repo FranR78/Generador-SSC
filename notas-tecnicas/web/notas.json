@@ -1,6 +1,6 @@
 {
  "generado": "2026-09-24",
- "total": 211,
+ "total": 212,
  "grupos": [
   "Calefacción",
   "Circuito frigorífico",
@@ -14538,6 +14538,66 @@
      "titulo": "Errores de concepto frecuentes",
      "texto": "Sustituir la unidad J293 ante la falta de acoplamiento del compresor sin comprobar la línea de inhibición procedente de la UCE de motor; si la UCE de motor envía masa fija a la J293, el compresor no se conectará aunque el circuito frigorífico esté en perfectas condiciones. (págs. 18, 29).",
      "html": "<p>Sustituir la unidad J293 ante la falta de acoplamiento del compresor sin comprobar la línea de inhibición procedente de la UCE de motor; si la UCE de motor envía masa fija a la J293, el compresor no se conectará aunque el circuito frigorífico esté en perfectas condiciones. <span class=\"pag\">págs. 18, 29</span>.</p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.esquema-electrico-climatizador.clima-ibiza-99",
+   "nt": 212,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "esquema-electrico-climatizador",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Esquema eléctrico del sistema de climatización del Ibiza 99",
+   "codigo": "",
+   "menu": "Esquema eléctrico del sistema de clima",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Clima Ibiza 99.pdf, págs. 1",
+   "clase": "fundamento",
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "unidad-control-aire-acondicionado"
+   ],
+   "palabras": [
+    "esquema eléctrico",
+    "código de colores",
+    "leyenda de componentes",
+    "Ibiza 99"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Representar la interconexión eléctrica, la distribución de señales y las líneas de alimentación entre los componentes, sensores, actuadores y unidades de control del sistema de climatización del SEAT Ibiza '99. (pág. 1).",
+     "html": "<p>Representar la interconexión eléctrica, la distribución de señales y las líneas de alimentación entre los componentes, sensores, actuadores y unidades de control del sistema de climatización del SEAT Ibiza '99. <span class=\"pag\">pág. 1</span>.</p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El circuito eléctrico utiliza una codificación normalizada de colores para identificar el tipo de señal o alimentación de cada conductor y se apoya en una leyenda identificativa de componentes para el seguimiento y diagnóstico de averías. (pág. 1).",
+     "html": "<p>El circuito eléctrico utiliza una codificación normalizada de colores para identificar el tipo de señal o alimentación de cada conductor y se apoya en una leyenda identificativa de componentes para el seguimiento y diagnóstico de averías. <span class=\"pag\">pág. 1</span>.</p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Código de colores del cableado: - Señal de entrada. - Señal de salida. - Alimentación de positivo. - Masa. - Señal bidireccional. - Línea Bus. (pág. 1). Unidades de control e interconexiones: - J255: Unidad de control del autoclima. - J293: Unidad de control del aire acondicionado. - J285: Cuadro de instrumentos. - Jxxx: Unidad de control motor (según motorización). - R: Radiocasete. (pág. 1). Sensores y transmisores del sistema: - G17: Transmisor de temperatura exterior. - G56: Transmisor de temperatura interior. - G65: Transmisor de presión electrónico. - G92: Potenciómetro del motor de la trampilla de temperatura. - G191: Transmisor de temperatura en los difusores centrales. - G192: Transmisor de temperatura de la zona de los pies. (pág. 1). Interruptores, conmutadores y elementos de mando: - E20: Regulador de iluminación. - E87: Unidad de manejo e indicación. - F18: Conmutador térmico de los ventiladores. - F38: Interruptor térmico. - F129: Conmutador de presión para aire acondicionado. (pág. 1). Actuadores y motores eléctricos: - J126: Regulador de régimen de la turbina. - N25: Acoplamiento magnético. - V2: Motor de la turbina de aire. - V7: Ventilador del líquido refrigerante (con conmutador F129 o transmisor de presión G65). - V35: Ventilador del líquido refrigerante. - V42: Motor para la turbina del transmisor de temperatura interior G56. - V68: Motor para la trampilla de temperatura. - V113: Motor para la trampilla de recirculación. (pág. 1). Protecciones, alimentaciones y conector de diagnosis: - S26: Alimentación (15). - S30: Alimentación (X). - S180: Alimentación unidad J293. - T16: Conector de diagnóstico. (pág. 1).",
+     "html": "<ol>\n<li>\n<p>Código de colores del cableado:\n- Señal de entrada.\n- Señal de salida.\n- Alimentación de positivo.\n- Masa.\n- Señal bidireccional.\n- Línea Bus. <span class=\"pag\">pág. 1</span>.</p>\n</li>\n<li>\n<p>Unidades de control e interconexiones:\n- J255: Unidad de control del autoclima.\n- J293: Unidad de control del aire acondicionado.\n- J285: Cuadro de instrumentos.\n- Jxxx: Unidad de control motor (según motorización).\n- R: Radiocasete. <span class=\"pag\">pág. 1</span>.</p>\n</li>\n<li>\n<p>Sensores y transmisores del sistema:\n- G17: Transmisor de temperatura exterior.\n- G56: Transmisor de temperatura interior.\n- G65: Transmisor de presión electrónico.\n- G92: Potenciómetro del motor de la trampilla de temperatura.\n- G191: Transmisor de temperatura en los difusores centrales.\n- G192: Transmisor de temperatura de la zona de los pies. <span class=\"pag\">pág. 1</span>.</p>\n</li>\n<li>\n<p>Interruptores, conmutadores y elementos de mando:\n- E20: Regulador de iluminación.\n- E87: Unidad de manejo e indicación.\n- F18: Conmutador térmico de los ventiladores.\n- F38: Interruptor térmico.\n- F129: Conmutador de presión para aire acondicionado. <span class=\"pag\">pág. 1</span>.</p>\n</li>\n<li>\n<p>Actuadores y motores eléctricos:\n- J126: Regulador de régimen de la turbina.\n- N25: Acoplamiento magnético.\n- V2: Motor de la turbina de aire.\n- V7: Ventilador del líquido refrigerante (con conmutador F129 o transmisor de presión G65).\n- V35: Ventilador del líquido refrigerante.\n- V42: Motor para la turbina del transmisor de temperatura interior G56.\n- V68: Motor para la trampilla de temperatura.\n- V113: Motor para la trampilla de recirculación. <span class=\"pag\">pág. 1</span>.</p>\n</li>\n<li>\n<p>Protecciones, alimentaciones y conector de diagnosis:\n- S26: Alimentación (15).\n- S30: Alimentación (X).\n- S180: Alimentación unidad J293.\n- T16: Conector de diagnóstico. <span class=\"pag\">pág. 1</span>.</p>\n</li>\n</ol>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "S26: Línea de alimentación por positivo de encendido (borne 15). S30: Línea de alimentación por positivo bajo contacto desconectado durante el arranque (borne X). T16: Conector de diagnóstico de 16 pines. (pág. 1).",
+     "html": "<ul>\n<li>S26: Línea de alimentación por positivo de encendido (borne 15).</li>\n<li>S30: Línea de alimentación por positivo bajo contacto desconectado durante el arranque (borne X).</li>\n<li>T16: Conector de diagnóstico de 16 pines. <span class=\"pag\">pág. 1</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema eléctrico general de climatización con leyenda de componentes y código de colores — Fuente: Clima Ibiza.pdf, pág. 1",
+     "html": "<ul>\n<li>Esquema eléctrico general de climatización con leyenda de componentes y código de colores — Fuente: Clima Ibiza.pdf, pág. 1</li>\n</ul>"
     }
    ]
   }

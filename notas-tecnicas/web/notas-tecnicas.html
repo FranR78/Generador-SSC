@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">211 notas · 24/09/2026</p>
+  <p class="sidebar-meta">212 notas · 24/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -407,6 +407,7 @@
     <li><a href="#nt200">NT200 · Motor de la turbina de aire y  V2 / J126</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
     <li><a href="#nt206">NT206 · Unidad de control del aire aco J293</a></li>
+    <li><a href="#nt212">NT212 · Esquema eléctrico del sistema de clima</a></li>
   </ul>
 </nav>
 
@@ -10950,8 +10951,96 @@ Corte de compresor por alta presión: &gt; 32 bares. (págs. 16, 18, 29).</p>
     </div>
   </section>
 
+  <section id="nt212" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 212 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
+    <div class="nota-body proceso">
+      <h1>Esquema eléctrico del sistema de climatización del Ibiza 99</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El circuito eléctrico utiliza una codificación normalizada de colores para identificar el tipo de señal o alimentación de cada conductor y se apoya en una leyenda identificativa de componentes para el seguimiento y diagnóstico de averías. (pág. 1).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ol>
+<li>
+<p>Código de colores del cableado:
+- Señal de entrada.
+- Señal de salida.
+- Alimentación de positivo.
+- Masa.
+- Señal bidireccional.
+- Línea Bus. (pág. 1).</p>
+</li>
+<li>
+<p>Unidades de control e interconexiones:
+- J255: Unidad de control del autoclima.
+- J293: Unidad de control del aire acondicionado.
+- J285: Cuadro de instrumentos.
+- Jxxx: Unidad de control motor (según motorización).
+- R: Radiocasete. (pág. 1).</p>
+</li>
+<li>
+<p>Sensores y transmisores del sistema:
+- G17: Transmisor de temperatura exterior.
+- G56: Transmisor de temperatura interior.
+- G65: Transmisor de presión electrónico.
+- G92: Potenciómetro del motor de la trampilla de temperatura.
+- G191: Transmisor de temperatura en los difusores centrales.
+- G192: Transmisor de temperatura de la zona de los pies. (pág. 1).</p>
+</li>
+<li>
+<p>Interruptores, conmutadores y elementos de mando:
+- E20: Regulador de iluminación.
+- E87: Unidad de manejo e indicación.
+- F18: Conmutador térmico de los ventiladores.
+- F38: Interruptor térmico.
+- F129: Conmutador de presión para aire acondicionado. (pág. 1).</p>
+</li>
+<li>
+<p>Actuadores y motores eléctricos:
+- J126: Regulador de régimen de la turbina.
+- N25: Acoplamiento magnético.
+- V2: Motor de la turbina de aire.
+- V7: Ventilador del líquido refrigerante (con conmutador F129 o transmisor de presión G65).
+- V35: Ventilador del líquido refrigerante.
+- V42: Motor para la turbina del transmisor de temperatura interior G56.
+- V68: Motor para la trampilla de temperatura.
+- V113: Motor para la trampilla de recirculación. (pág. 1).</p>
+</li>
+<li>
+<p>Protecciones, alimentaciones y conector de diagnosis:
+- S26: Alimentación (15).
+- S30: Alimentación (X).
+- S180: Alimentación unidad J293.
+- T16: Conector de diagnóstico. (pág. 1).</p>
+</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>S26: Línea de alimentación por positivo de encendido (borne 15).</li>
+<li>S30: Línea de alimentación por positivo bajo contacto desconectado durante el arranque (borne X).</li>
+<li>T16: Conector de diagnóstico de 16 pines. (pág. 1).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Representar la interconexión eléctrica, la distribución de señales y las líneas de alimentación entre los componentes, sensores, actuadores y unidades de control del sistema de climatización del SEAT Ibiza '99. (pág. 1).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT212_01</code> Esquema eléctrico general de climatización con leyenda de componentes y código de colores — Fuente: Clima Ibiza.pdf, pág. 1</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Clima Ibiza 99.pdf, págs. 1</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    211 notas técnicas · generado el 24/09/2026.
+    212 notas técnicas · generado el 24/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
