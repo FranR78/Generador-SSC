@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">362 notas · 24/09/2026</p>
+  <p class="sidebar-meta">365 notas · 24/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -271,11 +271,11 @@
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
     <li><a href="#grp-regulacion-automatica">Sistemas y opciones de climatización en el automóvil <span class="menu-cuenta">17 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Fluidos frigoríficos</span></li>
-    <li><a href="#nt21">NT21 · Agente frigorífico R12</a></li>
-    <li><a href="#grp-refrigerante-r134a">Agente frigorífico R134a <span class="menu-cuenta">8 fuentes</span></a></li>
+    <li><a href="#grp-refrigerante-r12">Agente frigorífico R12 <span class="menu-cuenta">2 fuentes</span></a></li>
+    <li><a href="#grp-refrigerante-r134a">Agente frigorífico R134a <span class="menu-cuenta">9 fuentes</span></a></li>
     <li><a href="#grp-refrigerante-r1234yf">Agente frigorífico R1234yf <span class="menu-cuenta">3 fuentes</span></a></li>
     <li><a href="#grp-refrigerante-r744">Agente frigorífico R744 (dióxido de carbono) <span class="menu-cuenta">2 fuentes</span></a></li>
-    <li><a href="#grp-aceite-frigorifico">Aceite PAG (Polialquilenglicol) <span class="menu-cuenta">11 fuentes</span></a></li>
+    <li><a href="#grp-aceite-frigorifico">Aceite PAG (Polialquilenglicol) <span class="menu-cuenta">12 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">PRL y seguridad</span></li>
     <li><a href="#nt29">NT29 · Equipos de protección individual en el</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Equipos de taller</span></li>
@@ -5308,6 +5308,11 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
     </details>
   </div>
 
+  <div class="grupo-componente" id="grp-refrigerante-r12">
+    <div class="grupo-cab"><span class="grupo-nombre">Agente frigorífico R12</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 2 · NT21 · 3. Refrigerantes.pdf, págs. 24</summary>
   <section id="nt21" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 21 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -5342,12 +5347,90 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 2 · NT364 · Cargas Aire Acondicionado.pdf, págs. 1-10</summary>
+  <section id="nt364" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 364 <span class="subtipo">Fluido</span><span class="fusionado">Serca</span></div>
+    <div class="nota-body">
+      <h1>Refrigerante R12</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Designación y norma</div>
+        <ul>
+<li>Gas refrigerante de tipo R12 empleado en los circuitos de climatización de vehículos automotores antiguos. (págs. 1-10)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Propiedades</div>
+        <ul>
+<li>No documentado en fuentes. (pág. 2)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Dónde se usa y cantidades</div>
+        <ul>
+<li>Utilizado en turismos e industriales de años de fabricación anteriores a la reconversión de los sistemas (aproximadamente hasta 1992-1994).</li>
+<li>Las cantidades de carga de R12 se expresan en gramos (g) y están especificadas por marca, modelo y periodo de fabricación:<ul>
+<li>Alfa Romeo 33 (1983-94): 1.150 g.</li>
+<li>Alfa Romeo 75 (1985-93): 900 g.</li>
+<li>Alfa Romeo 164 (1987-93): 1.250 g.</li>
+<li>Audi 80 (1986-91): 1.000-1.100 g.</li>
+<li>Audi 100 / 200 (1984-91): 1.050-1.150 g.</li>
+<li>BMW Serie 3 (E30) (1986-93): 950-1.000 g.</li>
+<li>BMW Serie 5 (E34) (1987-93): 1.900-1.950 g.</li>
+<li>Citroën BX (1987-94): 1.000 g.</li>
+<li>Fiat Tipo (1987-93): 850-950 g.</li>
+<li>Ford Fiesta (1989-93): 810-830 g.</li>
+<li>Peugeot 205 (1986-93): 900 g.</li>
+<li>Renault R19 1.7 (1988-92): 850 g.</li>
+<li>VW Golf / Jetta (1985-92): 1.050-1.150 g.</li>
+<li>Volvo 240 (1985-90): 1.300 g. (págs. 2-9)</li>
+</ul>
+</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Compatibilidades y mezclas prohibidas</div>
+        <ul>
+<li>No documentado en fuentes. (pág. 2)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <ul>
+<li>En las tablas de datos de Serca se identifica explícitamente mediante el símbolo o punto negro (<code>•</code>) posicionado junto al modelo y año de fabricación. (pág. 2)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Manipulación, almacenamiento y residuos</div>
+        <ul>
+<li>No documentado en fuentes. (pág. 2)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Riesgos y normativa</div>
+        <ul>
+<li>No documentado en fuentes. (pág. 2)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT364_01</code> Simbología de identificación de refrigerante R12 en las tablas Serca — Fuente: Cargas Aire Acondicionado.pdf, pág. 2</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Cargas Aire Acondicionado.pdf, págs. 1-10</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
   <div class="grupo-componente" id="grp-refrigerante-r134a">
-    <div class="grupo-cab"><span class="grupo-nombre">Agente frigorífico R134a</span><span class="grupo-cuenta">8 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Agente frigorífico R134a</span><span class="grupo-cuenta">9 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 8 · NT22 · 3. Refrigerantes.pdf, págs. 24-27</summary>
+      <summary>Variante 1 de 9 · NT22 · 3. Refrigerantes.pdf, págs. 24-27</summary>
   <section id="nt22" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 22 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -5401,7 +5484,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 8 · NT167 · Audi A5 Coupé_2008_aire acondicionado.pdf, págs. 1-4</summary>
+      <summary>Variante 2 de 9 · NT167 · Audi A5 Coupé_2008_aire acondicionado.pdf, págs. 1-4</summary>
   <section id="nt167" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 167 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -5435,7 +5518,7 @@ Está prohibido realizar trabajos de soldadura (dura o blanda) en componentes de
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 8 · NT228 · CLIMATIZACION INTRODUCCION.PDF, págs. 33-42</summary>
+      <summary>Variante 3 de 9 · NT228 · CLIMATIZACION INTRODUCCION.PDF, págs. 33-42</summary>
   <section id="nt228" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 228 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -5482,7 +5565,7 @@ Está prohibido realizar trabajos de soldadura (dura o blanda) en componentes de
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 8 · NT253 · CLIMATIZADOR MD FRAN.docx, págs. Sección Agente frigorífico</summary>
+      <summary>Variante 4 de 9 · NT253 · CLIMATIZADOR MD FRAN.docx, págs. Sección Agente frigorífico</summary>
   <section id="nt253" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 253 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -5533,7 +5616,7 @@ Está prohibido realizar trabajos de soldadura (dura o blanda) en componentes de
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 8 · NT265 · LA CLIMATIZACIÓN.pdf, págs. 32-38</summary>
+      <summary>Variante 5 de 9 · NT265 · LA CLIMATIZACIÓN.pdf, págs. 32-38</summary>
   <section id="nt265" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 265 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -5581,7 +5664,7 @@ Está prohibido realizar trabajos de soldadura (dura o blanda) en componentes de
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 8 · NT313 · MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 5-7</summary>
+      <summary>Variante 6 de 9 · NT313 · MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 5-7</summary>
   <section id="nt313" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 313 <span class="subtipo">Fluido</span><span class="fusionado">Formauto</span></div>
     <div class="nota-body">
@@ -5628,7 +5711,7 @@ Está prohibido realizar trabajos de soldadura (dura o blanda) en componentes de
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 8 · NT323 · MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 7-10</summary>
+      <summary>Variante 7 de 9 · NT323 · MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 7-10</summary>
   <section id="nt323" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 323 <span class="subtipo">Fluido</span><span class="fusionado">Hella</span></div>
     <div class="nota-body">
@@ -5680,7 +5763,7 @@ Está prohibido realizar trabajos de soldadura (dura o blanda) en componentes de
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 8 de 8 · NT355 · ZZAA AUTOMOCION 1 Enero 2010 HELLA.pptx, págs. 99</summary>
+      <summary>Variante 8 de 9 · NT355 · ZZAA AUTOMOCION 1 Enero 2010 HELLA.pptx, págs. 99</summary>
   <section id="nt355" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 355 <span class="subtipo">Fluido</span><span class="fusionado">Hella</span></div>
     <div class="nota-body">
@@ -5715,6 +5798,89 @@ Está prohibido realizar trabajos de soldadura (dura o blanda) en componentes de
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">ZZAA AUTOMOCION 1 Enero 2010 HELLA.pptx, págs. 99</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 9 de 9 · NT363 · Cargas Aire Acondicionado.pdf, págs. 1-10</summary>
+  <section id="nt363" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 363 <span class="subtipo">Fluido</span><span class="fusionado">Serca</span></div>
+    <div class="nota-body">
+      <h1>Refrigerante R134a</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Designación y norma</div>
+        <ul>
+<li>Gas refrigerante de tipo R134a utilizado como fluido frigorígeno estándar en los circuitos de climatización automotriz de turismos e industriales. (págs. 1-10)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Propiedades</div>
+        <ul>
+<li>No documentado en fuentes. (pág. 2)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Dónde se usa y cantidades</div>
+        <ul>
+<li>Utilizado en la mayoría de turismos y vehículos industriales comercializados a partir de los años 1992-1994.</li>
+<li>Las cantidades de carga de R134a se miden en gramos (g) y varían según la marca, modelo, motorización, año de fabricación y la presencia de evaporador/equipo de aire acondicionado adicional en las plazas traseras:<ul>
+<li>Turismos (ejemplos de referencia):<ul>
+<li>Smart Fortwo (450) (2003-06): 450 g.</li>
+<li>Opel Corsa C diésel (2000-05): 560 g.</li>
+<li>Citroën Xsara 1.6i / 2.0HDi (2000-06): 540-590 g.</li>
+<li>Audi A4 (8E, B6) (2000-04): 480-530 g.</li>
+<li>BMW Serie 3 (E46) gasolina (1998-04): 715-765 g.</li>
+<li>Seat Ibiza II / Córdoba (1993-99, volante a la izquierda): 850-880 g.</li>
+<li>Chrysler Voyager con aire acondicionado detrás (1994-00): 1.360 g (frente a 960 g sin equipo trasero).</li>
+<li>VW Sharan con aire acondicionado detrás (1995-00): 1.350-1.400 g (frente a 950-1.000 g sin equipo trasero).</li>
+</ul>
+</li>
+<li>Vehículos industriales (ejemplos de referencia):<ul>
+<li>Iveco Eurocargo (05/2003-05): 440 g.</li>
+<li>DAF 95 XF / XF 95 (1997-2004): 700 g.</li>
+<li>Mercedes-Benz Actros 1996 (1997-02): 1.100 g.</li>
+<li>Renault Magnum / Kerax (1996-99): 1.400-1.450 g.</li>
+<li>Scania 114 / 124 / 144 / 164 (1995-): 1.450 g.</li>
+<li>Iveco Eurostar / Eurotech con condensador lateral (1992-00): 1.900 g. (págs. 1-10)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Compatibilidades y mezclas prohibidas</div>
+        <ul>
+<li>Se utiliza en todos los vehículos tabulados en el manual de Serca que no incluyan la indicación específica de refrigerante R12.</li>
+<li>Mezclas con otros agentes frigoríficos o aceites: No documentado en fuentes. (págs. 2, 10)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <ul>
+<li>Fluido frigorífico de serie en las tablas de datos Serca para los modelos que no están marcados con el símbolo de R12. (pág. 2)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Manipulación, almacenamiento y residuos</div>
+        <ul>
+<li>No documentado en fuentes. (pág. 2)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Riesgos y normativa</div>
+        <ul>
+<li>No documentado en fuentes. (pág. 2)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT363_01</code> Cabecera de la tabla de cargas Serca indicando la cantidad de refrigerante en gramos — Fuente: Cargas Aire Acondicionado.pdf, pág. 2</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Cargas Aire Acondicionado.pdf, págs. 1-10</p>
       </div>
     </div>
   </section>
@@ -6027,10 +6193,10 @@ Está prohibido realizar trabajos de soldadura (dura o blanda) en componentes de
   </div>
 
   <div class="grupo-componente" id="grp-aceite-frigorifico">
-    <div class="grupo-cab"><span class="grupo-nombre">Aceite PAG (Polialquilenglicol)</span><span class="grupo-cuenta">11 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Aceite PAG (Polialquilenglicol)</span><span class="grupo-cuenta">12 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 11 · NT26 · 3. Refrigerantes.pdf, págs. 27-28</summary>
+      <summary>Variante 1 de 12 · NT26 · 3. Refrigerantes.pdf, págs. 27-28</summary>
   <section id="nt26" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 26 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -6097,7 +6263,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 11 · NT27 · 3. Refrigerantes.pdf, págs. 28-29</summary>
+      <summary>Variante 2 de 12 · NT27 · 3. Refrigerantes.pdf, págs. 28-29</summary>
   <section id="nt27" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 27 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -6146,7 +6312,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 11 · NT28 · 3. Refrigerantes.pdf, págs. 28-29</summary>
+      <summary>Variante 3 de 12 · NT28 · 3. Refrigerantes.pdf, págs. 28-29</summary>
   <section id="nt28" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 28 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -6196,7 +6362,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 11 · NT229 · CLIMATIZACION INTRODUCCION.PDF, págs. 43-50</summary>
+      <summary>Variante 4 de 12 · NT229 · CLIMATIZACION INTRODUCCION.PDF, págs. 43-50</summary>
   <section id="nt229" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 229 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -6257,7 +6423,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 11 · NT254 · CLIMATIZADOR MD FRAN.docx, págs. Sección Aceite lubricante para equipo</summary>
+      <summary>Variante 5 de 12 · NT254 · CLIMATIZADOR MD FRAN.docx, págs. Sección Aceite lubricante para equipo</summary>
   <section id="nt254" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 254 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -6304,7 +6470,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 11 · NT273 · LA CLIMATIZACIÓN.pdf, págs. 67-70</summary>
+      <summary>Variante 6 de 12 · NT273 · LA CLIMATIZACIÓN.pdf, págs. 67-70</summary>
   <section id="nt273" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 273 <span class="subtipo">Fluido</span></div>
     <div class="nota-body">
@@ -6357,7 +6523,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 11 · NT324 · MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 10-11</summary>
+      <summary>Variante 7 de 12 · NT324 · MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 10-11</summary>
   <section id="nt324" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 324 <span class="subtipo">Fluido</span><span class="fusionado">Hella</span></div>
     <div class="nota-body">
@@ -6410,7 +6576,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 8 de 11 · NT358 · ZZAA AUTOMOCION 1 Enero 2010 HELLA.pptx, págs. 96, 411-412</summary>
+      <summary>Variante 8 de 12 · NT358 · ZZAA AUTOMOCION 1 Enero 2010 HELLA.pptx, págs. 96, 411-412</summary>
   <section id="nt358" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 358 <span class="subtipo">Fluido</span><span class="fusionado">Hella</span></div>
     <div class="nota-body">
@@ -6455,7 +6621,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 9 de 11 · NT360 · aceites-para-compresorpdf-1586190505.pdf, págs. 22-25</summary>
+      <summary>Variante 9 de 12 · NT360 · aceites-para-compresorpdf-1586190505.pdf, págs. 22-25</summary>
   <section id="nt360" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 360 <span class="subtipo">Fluido</span><span class="fusionado">Behr Hella</span></div>
     <div class="nota-body">
@@ -6533,7 +6699,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 10 de 11 · NT361 · aceites-para-compresorpdf-1586190505.pdf, págs. 22-25</summary>
+      <summary>Variante 10 de 12 · NT361 · aceites-para-compresorpdf-1586190505.pdf, págs. 22-25</summary>
   <section id="nt361" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 361 <span class="subtipo">Fluido</span><span class="fusionado">Behr Hella</span></div>
     <div class="nota-body">
@@ -6626,7 +6792,7 @@ Distribución del aceite en el circuito frigorífico:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 11 de 11 · NT362 · aceites-para-compresorpdf-1586190505.pdf, págs. 22-25</summary>
+      <summary>Variante 11 de 12 · NT362 · aceites-para-compresorpdf-1586190505.pdf, págs. 22-25</summary>
   <section id="nt362" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 362 <span class="subtipo">Fluido</span><span class="fusionado">Behr Hella</span></div>
     <div class="nota-body">
@@ -6691,6 +6857,91 @@ Distribución del aceite en el circuito frigorífico:</p>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">aceites-para-compresorpdf-1586190505.pdf, págs. 22-25</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 12 de 12 · NT365 · Cargas Aire Acondicionado.pdf, págs. 1-10</summary>
+  <section id="nt365" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 365 <span class="subtipo">Fluido</span><span class="fusionado">Serca</span></div>
+    <div class="nota-body">
+      <h1>Aceite para compresor de climatización</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Designación y norma</div>
+        <ul>
+<li>Aceite de lubricación de relleno para compresores de sistemas de climatización en vehículos turismos e industriales. (págs. 1-10)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Propiedades</div>
+        <ul>
+<li>No documentado en fuentes. (pág. 2)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Dónde se usa y cantidades</div>
+        <ul>
+<li>Utilizado para el reabastecimiento y mantenimiento del circuito de lubricación del compresor de aire acondicionado.</li>
+<li>La cantidad de relleno se especifica en mililitros (ml) y varía en función del vehículo, motorización y marca/modelo de compresor instalado (Sanden, Denso, Zexel, Harrison, Seiko, Calsonic, York, Visteon, Matsushita, etc.):<ul>
+<li>Turismos (ejemplos de referencia):<ul>
+<li>Honda Jazz 1.2i / 1.3i (2001-06): 85 ml.</li>
+<li>Fiat Punto (188) (1999-03): 60-100 ml.</li>
+<li>VW Polo (1994-02): 100 ml.</li>
+<li>Audi A3 compresor Sanden PXE 16 (05.03-): 100-120 ml.</li>
+<li>Citroën Saxo / Xsara 1.6i / 2.0i: 135 ml.</li>
+<li>Ford Focus / Mondeo: 200 ml.</li>
+<li>VW Golf III / Vento compresor Harrison (1992-97): 250 ml.</li>
+<li>Opel Vectra B / Astra F: 295 ml.</li>
+<li>BMW Serie 3 (E30) compresor de émbolo (1986-93): 300 ml.</li>
+<li>Mercedes-Benz Clase S (W126) 420 / 500 / 560 (1989-91): 300 ml.</li>
+</ul>
+</li>
+<li>Vehículos industriales (ejemplos de referencia):<ul>
+<li>DAF 95 XF / CF 75 / CF: 135 ml.</li>
+<li>Renault Mascott / Midlum / Premium / Kerax / Magnum: 165 ml.</li>
+<li>Iveco Daily I / II (1996-2005): 135-150 ml.</li>
+<li>Scania 113 / 143 / 93 (1988-96): 175 ml; Scania 114 / 124 / 144 / 164 (1995-): 240 ml.</li>
+<li>MAN TG-A (2000-05): 250 ml.</li>
+<li>Volvo F10 / F12 / F16 (1990-93): 310 ml. (págs. 1-10)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Compatibilidades y mezclas prohibidas</div>
+        <ul>
+<li>La cantidad y especificación de relleno se adaptan al compresor montado en origen o sustitución en cada circuito.</li>
+<li>Compatibilidad de tipos o mezclas entre aceites: No documentado en fuentes. (págs. 2-10)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Identificación</div>
+        <ul>
+<li>Indicado en las tablas de Serca con el icono de la aceitera y la cabecera «CANTIDAD DE RELLENO DE ACEITE DE COMPRESOR (mililitros)» / ml. (pág. 2)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Manipulación, almacenamiento y residuos</div>
+        <ul>
+<li>No documentado en fuentes. (pág. 2)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Riesgos y normativa</div>
+        <ul>
+<li>No documentado en fuentes. (pág. 2)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT365_01</code> Icono de la aceitera de compresor y unidades en mililitros — Fuente: Cargas Aire Acondicionado.pdf, pág. 2</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Cargas Aire Acondicionado.pdf, págs. 1-10</p>
       </div>
     </div>
   </section>
@@ -18588,7 +18839,7 @@ Al recibir señal de la unidad de control del airbag J234 ante un impacto leve q
   </div>
 
   <div class="pie">
-    362 notas técnicas · generado el 24/09/2026.
+    365 notas técnicas · generado el 24/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
