@@ -5,51 +5,51 @@ unidad: clima
 nt: 250
 tipo: elemento
 clase: componente
-titulo: "Presostato e interruptor trinario"
-menu: "Presostato e interruptor trinario"
+titulo: "Presostatos e interruptores de presión"
+menu: "Presostatos e interruptores de presión"
 grupo: "Control de climatización"
 clave: presostato
 area: climatizacion
 sistema: "control-climatizacion"
-marca: "Behr Hella Service"
-fuentes: "Climatizacion-conocimientos-basios-para-el-taller_3.pdf, págs. 25-28"
-relacionados: ["compresor", "embrague-compresor", "electroventilador-condensador"]
-palabras: ["presostato", "interruptor trinario", "alta presión", "baja presión", "26-33 bar", "2 bar"]
+forma_parte_de: circuito-frigorifico
+fuentes: "Climatizacion-conocimientos-basios-para-el-taller_3.pdf, págs. 24-28"
+relacionados: ["compresor", "electroventilador-condensador", "embrague-compresor"]
+palabras: ["presostato trinario", "alta presión", "baja presión", "26-33 bar", "2 bar"]
 ---
 
 ## Misión
 
-Proteger el sistema de aire acondicionado contra daños provocados por presiones excesivamente altas o bajas, y controlar la activación del ventilador del condensador. (pág. 25).
+Proteger el sistema de aire acondicionado frente a daños producidos por presiones excesivamente altas o bajas, y gestionar la activación del ventilador del condensador. (pág. 25)
 
 ## Tipos y características
 
-Existen interruptores de baja presión, de alta presión e interruptores trinarios (que integran alta presión, baja presión y el contacto de conmutación adicional para el ventilador del condensador). (pág. 25).
+Interruptores de presión instalados generalmente en la línea de alta presión. Se clasifican en interruptores de baja presión, de alta presión e interruptores trinarios (que integran alta presión, baja presión y el contacto de mando para el ventilador del condensador). (pág. 25)
 
 ## Principio de funcionamiento
 
-Montado generalmente en la zona de alta presión. Ante una alta presión (aprox. 26-33 bar) interrumpe la corriente hacia el embrague del compresor, rearmándolo al descender la presión a aprox. 5 bar. Ante una presión demasiado baja (aprox. 2 bar) corta la corriente para evitar daños por falta de lubricación en el compresor. El tercer contacto del trinario activa el ventilador eléctrico del condensador para garantizar la condensación. (pág. 26).
+En situación de sobrepresión alta (aprox. 26-33 bar) abre sus contactos e interrumpe la corriente hacia el acoplamiento del compresor, reanudando la marcha al descender la presión (aprox. 5 bar). Ante presiones excesivamente bajas (aprox. 2 bar) interrumpe también la corriente para evitar el agarrotamiento del compresor por falta de lubricación. El tercer contacto del presostato trinario conmuta la alimentación del ventilador del condensador para optimizar la condensación. (pág. 26)
 
 ## Valores de trabajo
 
-- Desconexión por alta presión: aprox. 26 a 33 bar.
-- Reconexión por alta presión: aprox. 5 bar.
-- Desconexión por baja presión: aprox. 2 bar. (pág. 26).
+- Desconexión por alta presión: aprox. 26 a 33 bar. (pág. 26)
+- Reconexión tras alta presión: aprox. 5 bar. (pág. 26)
+- Desconexión por baja presión: aprox. 2 bar. (pág. 26)
 
 ## Anomalías frecuentes
 
-Fallo en los contactos eléctricos internos por problemas o suciedad, y daños mecánicos o grietas en la carcasa provocados por vibraciones o accidentes. (págs. 24, 27).
+Fogueo o fallos en los contactos de las conexiones eléctricas, acumulación de suciedad en la toma de presión y daños en la carcasa causados por vibraciones mecánicas o colisiones. (págs. 24, 27)
 
 ## Comportamiento en avería
 
-Rendimiento de refrigeración deficiente, inactividad completa del aire acondicionado y encendido/apagado continuo y frecuente del embrague del compresor. (pág. 27).
+Rendimiento de refrigeración deficiente, inoperatividad del aire acondicionado y ciclos continuos e intermitentes de encendido/apagado del embrague del compresor. (pág. 27)
 
 ## Cómo comprobarlo
 
-1. Inspección visual y comprobación del apriete de los enchufes de conexión.
-2. Comprobar si la pieza presenta daños externos.
-3. Medir las presiones de trabajo con el compresor encendido y el motor en marcha.
-4. Probar la pieza desmontada aplicando presión con botella de nitrógeno, manorreductor y multímetro para comprobar la conmutación de contactos. (págs. 27-28).
+1. Realizar inspección visual y verificar el correcto apriete de las conexiones eléctricas. (págs. 27-28)
+2. Comprobar si el cuerpo del presostato presenta daños mecánicos. (pág. 28)
+3. Medir la presión en la zona de alta con el compresor encendido y motor en marcha. (pág. 28)
+4. Probar los conmutadores desmontados con una botella de nitrógeno, mano-reductor y multímetro para verificar los umbrales de disparo. (pág. 28)
 
 ## Mantenimiento
 
-Realizar revisiones periódicas de los conectores eléctricos y limpiar la suciedad del puerto de toma de presión. (págs. 25, 28).
+Realizar revisiones periódicas del sistema para evitar fallos de señal originados por suciedad en los contactos eléctricos. (pág. 25)

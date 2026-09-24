@@ -11,39 +11,40 @@ grupo: "Circuito frigorífico"
 clave: evaporador
 area: climatizacion
 sistema: "circuito-frigorifico"
-marca: "Behr Hella Service"
-fuentes: "Climatizacion-conocimientos-basios-para-el-taller_3.pdf, págs. 22-24"
-relacionados: ["valvula-expansion", "ventilador-habitaculo", "filtro-habitaculo"]
-palabras: ["evaporador", "intercambio térmico", "desinfección", "bacterias", "hongos"]
+forma_parte_de: unidad-climatizadora
+fuentes: "Climatizacion-conocimientos-basios-para-el-taller_3.pdf, págs. 21-24"
+relacionados: ["valvula-expansion", "ventilador-habitaculo", "compresor"]
+palabras: ["intercambio de calor", "expansión", "desinfección", "bacterias", "condensación"]
 ---
 
 ## Misión
 
-Efectuar el intercambio de calor entre el aire procedente del exterior/habitáculo y el refrigerante del sistema de aire acondicionado, enfriando el aire que se envía al interior del vehículo. (pág. 22).
+Realizar el intercambio térmico entre el aire exterior y el fluido refrigerante del sistema de aire acondicionado. (pág. 22)
 
 ## Tipos y características
 
-Intercambiador de gran superficie ubicado en la caja climática. Propenso a fallos por acumulación de humedad, suciedad y formación de colonias de bacterias y hongos en sus láminas. (págs. 21-22).
+Intercambiador de calor de gran superficie formado por tubos y aletas integrado en la unidad climática. (págs. 21-22)
 
 ## Principio de funcionamiento
 
-El refrigerante líquido a alta presión se inyecta al evaporador a través de la válvula de expansión, sufriendo una expansión. Durante esta evaporación se genera aire frío sobre la superficie del evaporador, el cual se transmite al habitáculo impulsado por la corriente del ventilador. (pág. 22).
+El refrigerante líquido a alta presión se inyecta y se expande en el interior del evaporador a través de la válvula de expansión. El aire frío generado durante la evaporación se transmite al habitáculo a través de la gran superficie de aletas gracias al caudal impulsado por el ventilador del habitáculo. (pág. 22)
 
 ## Anomalías frecuentes
 
-Tuberías internas del evaporador obturadas, falta de estanqueidad (fugas en empalmes o por daños físicos), y suciedad en las aletas de entrada que obstruye el flujo de aire. (pág. 23).
+Obstrucción o taponamiento en las tuberías internas del evaporador, falta de estanqueidad en empalmes o por fisuras en el cuerpo, y suciedad acumulada en la matriz exterior que bloquea la entrada de aire. (págs. 21, 23)
 
 ## Comportamiento en avería
 
-Rendimiento deficiente de refrigeración, fallo del aire acondicionado y potencia o caudal del ventilador deficiente. (pág. 23).
+Rendimiento deficiente de refrigeración, fallo del aire acondicionado y reducción acusado del caudal del ventilador hacia el habitáculo. (pág. 23)
 
 ## Cómo comprobarlo
 
-1. Comprobar si el evaporador se encuentra sucio o dañado.
-2. Comprobar la correcta colocación de las mangueras y la estanqueidad del conjunto.
-3. Medir la presión con el compresor encendido y el motor en marcha.
-4. Medir la temperatura en las tuberías de entrada y salida del evaporador. (págs. 23-24).
+1. Comprobar si el evaporador presenta suciedad o daños en la matriz. (págs. 23-24)
+2. Comprobar la colocación correcta de los manguitos de conexión. (pág. 24)
+3. Comprobar la estanqueidad del conjunto. (pág. 24)
+4. Medir las presiones de trabajo con el compresor conectado y motor en marcha. (pág. 24)
+5. Medir la temperatura en la tubería de entrada y en la de salida. (pág. 24)
 
 ## Mantenimiento
 
-Realizar mantenimientos y desinfecciones periódicas de las láminas para eliminar bacterias y hongos, manteniendo además el filtro de habitáculo en buen estado. (págs. 21, 23).
+Realizar un mantenimiento y desinfección periódicos de las láminas para impedir la acumulación y proliferación de bacterias, hongos y microorganismos en la humedad condensada. (págs. 4, 21)
