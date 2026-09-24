@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">114 notas · 24/09/2026</p>
+  <p class="sidebar-meta">130 notas · 24/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -331,8 +331,8 @@
     <li><a href="#nt81">NT81 · Reciclado interno y deshidratación de</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
     <li><a href="#nt82">NT82 · Comprobación de presiones de trabajo y</a></li>
-    <li><a href="#nt83">NT83 · Diagnóstico de averías hidráulicas del</a></li>
-    <li><a href="#nt84">NT84 · Diagnóstico de averías y daños mecánic</a></li>
+    <li><a href="#grp-lectura-manometros">Diagnóstico de averías hidráulicas del circuito frigorífico por lectura de manómetros <span class="menu-cuenta">3 fuentes</span></a></li>
+    <li><a href="#grp-diagnostico-compresor">Diagnóstico de averías y daños mecánicos en el compresor <span class="menu-cuenta">6 fuentes</span></a></li>
     <li><a href="#nt85">NT85 · Diagnóstico de ruidos en el compresor</a></li>
     <li><a href="#nt86">NT86 · Sustitución de un compresor nuevo y pr</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
@@ -354,6 +354,14 @@
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
     <li><a href="#nt108">NT108 · Sensor de la calidad del aire G238</a></li>
     <li><a href="#nt109">NT109 · Regulación y protección del sistema de</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
+    <li><a href="#nt116">NT116 · Diagnóstico del estado de la carga de</a></li>
+    <li><a href="#nt117">NT117 · Diagnóstico por falta de fluido refrig</a></li>
+    <li><a href="#nt118">NT118 · Diagnóstico por exceso de fluido refri</a></li>
+    <li><a href="#grp-diagnostico-valvula-expansion">Diagnóstico por bulbo de la válvula de expansión suelto <span class="menu-cuenta">3 fuentes</span></a></li>
+    <li><a href="#nt122">NT122 · Diagnóstico por congelación del evapor</a></li>
+    <li><a href="#nt125">NT125 · Diagnóstico por electroventilador gira</a></li>
+    <li><a href="#nt126">NT126 · Diagnóstico por electroventilador para</a></li>
   </ul>
 </nav>
 
@@ -5139,6 +5147,11 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
     </div>
   </section>
 
+  <div class="grupo-componente" id="grp-lectura-manometros">
+    <div class="grupo-cab"><span class="grupo-nombre">Diagnóstico de averías hidráulicas del circuito frigorífico por lectura de manómetros</span><span class="grupo-cuenta">3 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 3 · NT83 · 15. Diágnostico y averías.pdf, págs. 124-126</summary>
   <section id="nt83" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 83 <span class="subtipo">Diagnóstico</span></div>
     <div class="nota-body proceso">
@@ -5217,7 +5230,118 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 3 · NT115 · Manometros.pdf, págs. 1, 17-18</summary>
+  <section id="nt115" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 115 <span class="subtipo">Procedimiento</span></div>
+    <div class="nota-body proceso">
+      <h1>Ajuste a cero y comprobación previa del puente de manómetros</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Verificación del estado mecánico y calibración previa a cero de las agujas de los manómetros de alta y baja presión sin conectar al circuito hidráulico (págs. 1, 17-18).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Mangueras de conexión totalmente desconectadas del vehículo y puente de manómetros libre de presión y de agente frigorífico en su interior (págs. 17-18).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <ul>
+<li>Puente de manómetros de alta y baja presión para R134a (págs. 1, 17-18).</li>
+<li>Destornillador plano fino para tornillos de ajuste a cero (pág. 18).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Presión de lectura con manómetros libres: 0 bar (págs. 17-18).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Confirmar que ambas agujas permanecen estables en 0 bar antes de acoplar los latiguillos a las tomas de servicio del automóvil (págs. 17-18).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>No forzar los tornillos de ajuste si la aguja presenta deformación mecánica o descalibración interna severa (pág. 18).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Pasos</div>
+        <ol>
+<li>Observar la posición de las agujas en los relojes de alta y baja presión con el equipo libre de fluido refrigerante (págs. 17-18).</li>
+<li>Verificar que ambas agujas marcan exactamente en la posición "0 bar" de la escala graduada (pág. 18).</li>
+<li>Si alguna aguja no coincide con el cero, girar el tornillo de ajuste de cero del reloj correspondiente hasta alinear perfectamente la aguja con la marca de 0 bar (pág. 18).</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT115_01</code> Puente de manómetros de alta y baja presión indicando la ubicación de los tornillos de ajuste de cero en la carátula — Fuente: Manometros.pdf, págs. 17-18</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Manometros.pdf, págs. 1, 17-18</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 3 de 3 · NT130 · Manometros.pdf, págs. 32-33</summary>
+  <section id="nt130" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 130 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico por manómetros sin conectar o tomas de servicio no acopladas</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Lectura de manómetros en fallo de conexión o vaciado total: 0 bar en Alta y 0 bar en Baja (págs. 32-33).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Las agujas de los manómetros de alta y baja presión se quedan inmóviles marcando 0 bar tanto con el motor parado como con el motor en marcha (págs. 32-33).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>Falta de accionamiento o "pinchado" de los obuses de las válvulas de servicio del vehículo (pág. 32).</li>
+<li>Mangueras de conexión de acoplamiento rápido invertidas entre sí (caso de instalaciones antiguas de R-12) (pág. 32).</li>
+<li>Obuses mecánicamente muy hundidos por exceso de mecanización en la rosca del alojamiento de la toma de servicio (pág. 32).</li>
+<li>Juntas tóricas de los tapones de plástico pegadas en las tomas que impiden que el empujador del conector alcance el obús (pág. 32).</li>
+<li>Circuito de climatización totalmente vacío de refrigerante por fuga masiva (en este caso el compresor no arrancará por seguridad del presostato) (pág. 32).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo separar las causas</div>
+        <ul>
+<li>Verificar si el compresor arranca al conectar el A/C: si el compresor no se pone en marcha, comprobar la presión con un conmutador de prueba para confirmar si el circuito está vacío de gas (pág. 32).</li>
+<li>Si el compresor sí arranca pero los manómetros marcan 0 bar: desenroscar los acopladores rápidos y revisar el interior de las tomas de servicio (pág. 32).</li>
+<li>Comprobar si hay restos de juntas tóricas de los tapones enganchadas en la boca de la toma de servicio impidiendo el paso del empujador (pág. 32).</li>
+<li>Inspeccionar si la aguja central del obús está demasiado profunda por exceso de mecanizado de la rosca (pág. 32).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación tras la reparación</div>
+        <p>Retirar juntas pegadas, reajustar los empujadores de los conectores rápidos o recargar el circuito si estaba vacío, comprobando que las agujas registran la presión estática del sistema (págs. 32-33).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT130_01</code> Manómetros marcando 0 bar en ambas carátulas por falta de accionamiento de los obuses o vaciado total — Fuente: Manometros.pdf, págs. 32-33</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Manometros.pdf, págs. 32-33</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
+  <div class="grupo-componente" id="grp-diagnostico-compresor">
+    <div class="grupo-cab"><span class="grupo-nombre">Diagnóstico de averías y daños mecánicos en el compresor</span><span class="grupo-cuenta">6 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 6 · NT84 · 15. Diágnostico y averías.pdf, págs. 126-130</summary>
   <section id="nt84" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 84 <span class="subtipo">Diagnóstico</span></div>
     <div class="nota-body proceso">
@@ -5277,6 +5401,255 @@ El plato de acoplamiento se fabrica en acero con menos del 0,6% de carbono para 
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 6 · NT123 · Manometros.pdf, págs. 7, 30, 46</summary>
+  <section id="nt123" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 123 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico por válvula de baja del compresor comunicada</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Presión de Baja con válvula comunicada: entre 2,2 y 2,5 bar (págs. 7, 30).</li>
+<li>Presión de Alta con válvula comunicada: entre 10 y 12 bar (págs. 7, 30).</li>
+<li>Comportamiento de confirmación: retorno rápido de la aguja de Baja hacia positivo tras parar el compresor con la expansión forzada a 0 bar (págs. 7, 30).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Compresión defectuosa del compresor, imposibilidad de generar salto térmico adecuado y presión de baja excesivamente alta con presión de alta baja (págs. 7, 30, 46).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>Comunicación interna por fallo de estanqueidad en las válvulas de la culata de un cilindro del compresor entre la zona de baja y de alta presión (págs. 7, 30).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo separar las causas</div>
+        <ul>
+<li>Conectar los manómetros con el motor a 1.500 - 1.800 r.p.m. y 30 ºC ambiente (págs. 7, 30).</li>
+<li>Observar que la presión de Alta se mantiene reducida (10 a 12 bar) y la de Baja permanece alta (2,2 a 2,5 bar) (págs. 7, 30).</li>
+<li>Método de confirmación de comunicación de presiones:
+  1. Rociar espray enfriador o refrigerante líquido sobre el bulbo de la válvula de expansión para forzar su cierre (págs. 7, 30).
+  2. Observar el manómetro de Baja hasta que la aguja descienda y alcance exactamente los 0 bar (págs. 7, 30).
+  3. Parar el compresor en ese instante preciso (págs. 7, 30).
+  4. Observar la aguja de Baja: si al detener el compresor la aguja se desplaza con cierta rapidez hacia arriba (en sentido positivo hacia presiones altas), se confirma con absoluta seguridad que la válvula de baja está comunicada (págs. 7, 30).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación tras la reparación</div>
+        <p>Reparar la culata/placa de válvulas o sustituir el compresor defectuoso, verificando que la Baja desciende a valores normales de trabajo (págs. 7, 30, 46).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT123_01</code> Manómetros (Baja 2,2 - 2,5 bar, Alta 10 - 12 bar) y esquema del ensayo de parada para verificar la comunicación de la válvula de baja — Fuente: Manometros.pdf, págs. 7, 30</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Manometros.pdf, págs. 7, 30, 46</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 3 de 6 · NT124 · Manometros.pdf, págs. 28-29</summary>
+  <section id="nt124" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 124 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico por válvulas de baja del compresor tapadas o gota de hielo</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Presiones por válvulas de baja tapadas: Alta = 4 a 6 bar; Baja = sobre 0 bar (pág. 28).</li>
+<li>Presiones por gota de hielo en expansión: Alta = 7 a 12 bar; Baja = sobre 0 bar (pág. 29).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Presión de baja cayendo a 0 bar con presión de alta baja o moderada, perdiendo completamente la capacidad de enfriamiento (págs. 28-29).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>Válvulas de baja del compresor tapadas/cerradas por deformación derivada de la llegada de refrigerante en estado líquido (golpe de ariete) (pág. 28).</li>
+<li>Formación de una gota de hielo que tapona intermitentemente el orificio de la válvula de expansión por humedad en el circuito (págs. 28-29).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo separar las causas</div>
+        <ul>
+<li>Conectar los manómetros a 30 ºC ambiente:</li>
+<li>Si las válvulas de baja del compresor están tapadas: Alta entre 4 y 6 bar, Baja sobre 0 bar (pág. 28).</li>
+<li>Si es una gota de hielo en la expansión: Alta entre 7 y 12 bar, Baja sobre 0 bar (pág. 29).</li>
+<li>Criterio de diferenciación de ambos incidentes:
+  1. Parar el equipo frigorífico unos minutos y volverlo a poner en marcha (págs. 28-29).
+  2. Si se trata de una gota de hielo en la válvula de expansión: al volver a arrancar el sistema funciona correctamente de inmediato, hasta que la humedad vuelve a pasar por la válvula congelándose de nuevo (págs. 28-29).
+  3. Si se trata de las válvulas de baja del compresor tapadas: la anomalía persiste continuamente desde el mismo instante del arranque (pág. 28).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación tras la reparación</div>
+        <p>Si la causa es por válvulas de baja tapadas, sustituir el compresor y el filtro deshidratador (pág. 28). Si es por gota de hielo, sustituir el filtro deshidratador saturado y realizar un vacío prolongado antes de recargar (págs. 28-29).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT124_01</code> Lecturas de manómetros comparativas entre válvulas de baja tapadas (Alta 4-6 bar, Baja 0 bar) y gota de hielo (Alta 7-12 bar, Baja 0 bar) — Fuente: Manometros.pdf, págs. 28-29</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Manometros.pdf, págs. 28-29</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 4 de 6 · NT127 · Manometros.pdf, págs. 12, 20, 41</summary>
+  <section id="nt127" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 127 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico por válvula de escape del compresor defectuosa</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Presión de Baja: 2 bar (estable) (págs. 12, 41).</li>
+<li>Presión de Alta: oscilante alrededor de 12 bar (págs. 12, 41).</li>
+<li>Régimen de prueba: ralentí (1.000 r.p.m.) a 30 ºC de temperatura exterior (págs. 12, 41).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Oscilación continua de la aguja del manómetro de alta presión durante el funcionamiento del compresor a ralentí o régimen constante (págs. 12, 20, 41).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>Defecto, rotura o falta de estanqueidad en la lámina de la válvula de escape/impulsión de la placa de válvulas del compresor (págs. 12, 41).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo separar las causas</div>
+        <ul>
+<li>Conectar el puente de manómetros y arrancar el motor a ralentí (1.000 r.p.m.) con 30 ºC ambiente (págs. 12, 41).</li>
+<li>Observar la aguja del manómetro de Baja: se mantiene estable en valor normal (2 bar) (págs. 12, 41).</li>
+<li>Observar la aguja del manómetro de Alta: presenta una vibración o movimiento oscilante continuo sin fijarse en una lectura estable (alrededor de 12 bar) (págs. 12, 41).</li>
+<li>Confirmar que la oscilación no procede del electroventilador conmutando de velocidad; si los electroventiladores están estables y solo oscila la Alta, confirma el fallo en la válvula de escape de la placa del compresor (págs. 12, 41).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación tras la reparación</div>
+        <p>Sustituir la placa de válvulas de la culata o el compresor completo, comprobando que la aguja de Alta permanece firme y sin oscilaciones (págs. 12, 41).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT127_01</code> Manómetro de Alta con aguja en movimiento oscilante y manómetro de Baja estable a 2 bar por válvula de escape defectuosa — Fuente: Manometros.pdf, págs. 12, 41</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Manometros.pdf, págs. 12, 20, 41</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 5 de 6 · NT128 · Manometros.pdf, págs. 12, 20, 41, 46</summary>
+  <section id="nt128" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 128 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico por válvula de admisión del compresor defectuosa</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Presión de Alta: 12 bar (fija) (págs. 12, 41).</li>
+<li>Presión de Baja: oscilante (págs. 12, 41).</li>
+<li>Régimen de prueba: ralentí (1.000 r.p.m.) a 30 ºC exterior (págs. 12, 41).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Oscilación de la aguja del manómetro de baja presión mientras el compresor trabaja a ralentí o régimen constante (págs. 12, 20, 41).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>Defecto, deformación o falta de estanqueidad en la lámina de la válvula de admisión/aspiración de la culata del compresor (págs. 12, 41, 46).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo separar las causas</div>
+        <ul>
+<li>Conectar el puente de manómetros y mantener el motor a ralentí (1.000 r.p.m.) a 30 ºC ambiente (págs. 12, 41).</li>
+<li>Observar la aguja del manómetro de Alta: se mantiene fija en un valor normal (12 bar) (págs. 12, 41).</li>
+<li>Observar la aguja del manómetro de Baja: muestra oscilaciones y pulsaciones continuas de presión (págs. 12, 41).</li>
+<li>En determinados modelos de compresores pueden apreciarse ligeras oscilaciones normales en la aguja de Baja debido a golpes de ariete; si la oscilación es amplia e inestable, confirma la avería de la válvula de admisión (págs. 31, 41).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación tras la reparación</div>
+        <p>Reparar la placa de válvulas o cambiar el compresor, verificando que la aguja de Baja recupera la estabilidad sin vibraciones (págs. 12, 41, 46).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT128_01</code> Manómetro de Baja oscilando e indicación de manómetro de Alta fijo a 12 bar por válvula de admisión defectuosa — Fuente: Manometros.pdf, págs. 12, 41</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Manometros.pdf, págs. 12, 20, 41, 46</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 6 de 6 · NT129 · Manometros.pdf, págs. 39</summary>
+  <section id="nt129" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 129 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico por inversión de tubos de aspiración y descarga en el compresor</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Presión de Baja con tubos invertidos: entre 4,5 y 4,8 bar (pág. 39).</li>
+<li>Presión de Alta con tubos invertidos: entre 7 y 8 bar (pág. 39).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Acoplamientos y desacoplamientos continuos y muy frecuentes del compresor a intervalos de pocos segundos y presiones totalmente alteradas (pág. 39).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>Manguitos o tubos rígidos de aspiración (baja) y descarga (alta) montados de forma invertida en las conexiones de la culata del compresor (tipo Rotalock) (pág. 39).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo separar las causas</div>
+        <ul>
+<li>Conectar los manómetros y verificar presiones a 1.500 - 1.800 r.p.m. y 30 ºC ambiente (pág. 39).</li>
+<li>Observar que la presión de Baja sube anormalmente a 4,5 - 4,8 bar mientras la Alta se queda reducida en 7 - 8 bar (pág. 39).</li>
+<li>Evaluar el comportamiento del compresor:</li>
+<li>En compresor de cilindrada fija o cíclico: el compresor se conecta muy pocas veces y cuando lo hace dura activo solo unos pocos segundos (pág. 39).</li>
+<li>En compresor de cilindrada variable: se activa y desactiva con una frecuencia muy elevada (pág. 39).</li>
+<li>Si en un compresor variable se aprecian además repetidas y pequeñas variaciones de presión en Baja sin desacoplar, puede ser motivado por fallo interno de la válvula de regulación de cilindrada (pág. 39).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación tras la reparación</div>
+        <p>Desmontar y conectar correctamente los racores de aspiración y descarga en sus tomas respectivas de la culata del compresor, comprobando el restablecimiento de los ciclos normales (pág. 39).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT129_01</code> Manómetros registrando Baja a 4,5 - 4,8 bar y Alta a 7 - 8 bar por inversión de tubos de entrada y salida — Fuente: Manometros.pdf, pág. 39</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Manometros.pdf, págs. 39</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
   <section id="nt85" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 85 <span class="subtipo">Diagnóstico</span></div>
@@ -6154,8 +6527,455 @@ El circuito básico de regulación de mando manual integra los siguientes compon
     </div>
   </section>
 
+  <section id="nt116" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 116 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico del estado de la carga de refrigerante con motor parado</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Temperatura del condensador ideal: 20 ºC por encima de la temperatura ambiente (ejemplo: 50 ºC para 30 ºC ambiente) (págs. 19, 49).</li>
+<li>Valores tipo a vehículo parado (30 ºC ambiente):</li>
+<li>Carga correcta: 6,5 bar en manómetros con condensador a 25 ºC (o 24-26 ºC) (págs. 14, 19, 42, 49).</li>
+<li>Falta de líquido: 6,5 bar con condensador a 30 ºC (igual a temperatura ambiente) (págs. 14, 19, 42, 49).</li>
+<li>Exceso de carga / Asociación de gases: 7,5 bar con condensador a 30 ºC o frío (págs. 15, 19, 43, 49).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Dudas sobre el estado de la carga o presencia de incondensables en el circuito hidráulico comprobado con el motor del vehículo detenido (págs. 18-19, 40, 48-49).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>Carga correcta de fluido refrigerante (págs. 14, 19, 42, 49).</li>
+<li>Falta de líquido refrigerante por fuga o carga incompleta (págs. 14, 18-19, 42, 49).</li>
+<li>Exceso de carga de líquido refrigerante (págs. 15, 18-19, 43, 49).</li>
+<li>Presencia de aire incondensable en el interior del circuito frigorífico por vacío deficiente (págs. 15, 18-19, 43, 49).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo separar las causas</div>
+        <ul>
+<li>Conectar el puente de manómetros a las tomas de alta y baja presión con el motor parado (págs. 18, 48).</li>
+<li>Medir la temperatura en el cuerpo del condensador mediante un termómetro de contacto (págs. 18, 48).</li>
+<li>Consultar en la tabla la presión teórica de saturación que le corresponde a la temperatura medida en el condensador (págs. 18, 48).</li>
+<li>Si la presión medida en los manómetros es mayor que la teórica de la tabla: existe presencia de aire incondensable en el circuito (págs. 18, 48).</li>
+<li>Si la presión medida es menor que la de la tabla: falta líquido refrigerante en el circuito (págs. 18, 48).</li>
+<li>Verificar que la temperatura del condensador se sitúe idealmente 20 ºC por encima de la temperatura ambiente (págs. 19, 49).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación tras la reparación</div>
+        <p>Realizar la evacuación por vacío si hay aire, o reajustar la masa de gas al valor de etiqueta y confirmar que la presión igualada en reposo coincide con la temperatura ambiente (págs. 18-19, 48-49).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT116_01</code> Manómetros marcando presiones igualadas en reposo y tabla de diagnóstico a vehículo parado — Fuente: Manometros.pdf, págs. 18-19, 40</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Manometros.pdf, págs. 14-15, 18-19, 40, 48-49</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt117" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 117 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico por falta de fluido refrigerante mediante lectura de manómetros</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Presiones nominales correctas a 30 ºC ambiente (1.500 - 1.800 r.p.m.):</li>
+<li>Compresor variable: Baja = 1,8 a 2,1 bar; Alta = 9 a 13 bar (págs. 1, 23).</li>
+<li>Compresor fijo: Baja = 0,8 a 2,2 bar; Alta = 10 a 20 bar (págs. 2, 23).</li>
+<li>Presiones con falta de refrigerante a 1.000 r.p.m. y 30 ºC:</li>
+<li>Baja: entre 0,5 y 0,8 bar (o &lt; 1 bar) (págs. 2, 4).</li>
+<li>Alta: entre 6 y 8 bar (o &lt; 14 bar) (págs. 2, 4).</li>
+<li>Presiones a 2.500 r.p.m. con falta de gas: Alta muy baja y Baja muy baja (págs. 3, 13, 21).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Rendimiento frigorífico insuficiente o nulo en los aireadores del habitáculo con el compresor en funcionamiento (págs. 2-3, 10, 13, 21).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>Carga insuficiente o fuga de fluido refrigerante en el circuito (págs. 2-3, 10, 13, 21, 46-47).</li>
+<li>Válvula de alta del compresor semicerrada o defectuosa (pág. 2).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo separar las causas</div>
+        <ul>
+<li>Conectar los manómetros y hacer funcionar el motor a 1.500 - 1.800 r.p.m. con 30 ºC de temperatura exterior (págs. 1-3).</li>
+<li>Observar si las presiones se sitúan por debajo de los márgenes nominales (Baja &lt; 1 bar y Alta &lt; 14 bar) (págs. 2, 4).</li>
+<li>Para diferenciar la falta de gas de una válvula de alta del compresor semicerrada: añadir al circuito una pequeña dosis de entre 50 y 100 gramos de fluido refrigerante (pág. 2).</li>
+<li>Si tras introducir los 50-100 g los manómetros no reaccionan positivamente subiendo de presión: la avería se debe a una válvula de alta del compresor semicerrada (pág. 2).</li>
+<li>Si las presiones aumentan hacia valores normales: confirma la falta de refrigerante por fuga o carga incompleta (págs. 2, 10, 35).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación tras la reparación</div>
+        <p>Localizar y reparar la fuga, efectuar un vacío profundo y cargar la masa exacta prescrita en etiqueta, verificando que la Baja se estabiliza entre 1,8 y 2,1 bar a 30 ºC (págs. 1, 2, 46-47).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT117_01</code> Manómetros indicando presiones anormalmente bajas (Baja &lt; 1 bar, Alta &lt; 14 bar) por falta de carga de refrigerante — Fuente: Manometros.pdf, págs. 2-3</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Manometros.pdf, págs. 2-3, 10, 13, 21, 24, 35, 42, 46-47</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt118" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 118 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico por exceso de fluido refrigerante mediante lectura de manómetros</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Presiones con exceso de refrigerante a 1.000 r.p.m. / 1.500 r.p.m. (30 ºC ambiente):</li>
+<li>Presión de Baja: &gt; 2 bar (entre 2,5 y 2,7 bar) (págs. 3, 36).</li>
+<li>Presión de Alta: &gt; 17 bar (entre 16 y 18 bar a 1.000 r.p.m. / hasta 22-25 bar a 2.000 r.p.m.) (págs. 3-4, 21, 36).</li>
+<li>Capacidad de referencia de ejemplo: 1.100 g introducidos sobre una capacidad nominal de 800 g (pág. 36).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Compresor absorbiendo excesiva potencia del motor, rendimiento de refrigeración deficiente y electroventilador de condensación funcionando de forma ininterrumpida a máxima velocidad (págs. 3-4, 36).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>Sobrecarga o exceso de masa de fluido refrigerante introducida en el circuito durante la recarga (ejemplo: 1.100 g en un circuito diseñado para 800 g) (págs. 36, 45-46).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo separar las causas</div>
+        <ul>
+<li>Conectar los manómetros y verificar las presiones con el motor a 1.000 r.p.m. o 1.500 r.p.m. y 30 ºC ambiente (págs. 3-4, 36).</li>
+<li>Observar que tanto la presión de Baja como la de Alta se encuentran excesivamente elevadas a pesar de que el electroventilador trabaja de forma continua sin detenerse (págs. 36, 45-46).</li>
+<li>Descartar suciedad en el condensador regándolo con agua fría: si la Alta no cede de forma duradera y la Baja permanece muy alta, confirma la sobrecarga de líquido (págs. 36, 38, 45).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación tras la reparación</div>
+        <p>Recuperar la totalidad del refrigerante mediante una estación de recarga y volver a cargar el circuito con la masa exacta especificada por el fabricante (págs. 36, 45-46).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT118_01</code> Manómetros mostrando presiones muy elevadas (Baja &gt; 2 bar, Alta &gt; 17 bar) por exceso de refrigerante en el circuito — Fuente: Manometros.pdf, págs. 3-4, 36</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Manometros.pdf, págs. 3-4, 11, 14, 21, 36, 42, 45-46</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="grupo-componente" id="grp-diagnostico-valvula-expansion">
+    <div class="grupo-cab"><span class="grupo-nombre">Diagnóstico por bulbo de la válvula de expansión suelto</span><span class="grupo-cuenta">3 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 3 · NT119 · Manometros.pdf, págs. 4-5, 24-25, 45</summary>
+  <section id="nt119" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 119 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico por bulbo de la válvula de expansión suelto</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Presión de Baja con bulbo suelto: entre 3 y 3,8 bar (págs. 4, 24).</li>
+<li>Presión de Alta con bulbo suelto: entre 12 y 14 bar (págs. 4, 24).</li>
+<li>Régimen de prueba del motor: 1.500 a 1.800 r.p.m. a 30 ºC ambiente (págs. 4-5, 24-25).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Presión de baja más alta de lo normal y enfriamiento irregular o insuficiente en el habitáculo (págs. 4, 24, 45).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>Desprendimiento o falta de fijación mecánica del bulbo sensor exterior sobre la tubería de salida del evaporador (págs. 5, 25, 45).</li>
+<li>Avería interna de la memoria térmica en válvulas de expansión monobloc (págs. 5, 25).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo separar las causas</div>
+        <ul>
+<li>Conectar los manómetros y verificar las presiones con el motor a 1.500 - 1.800 r.p.m. y 30 ºC exterior (págs. 4, 24).</li>
+<li>Observar si la presión de Baja está elevada (3 a 3,8 bar) y la de Alta permanece dentro de valores normales (12 a 14 bar) (págs. 4, 24).</li>
+<li>Inspeccionar visualmente la válvula de expansión: si es de bulbo exterior, comprobar si el bulbo está suelto y colocarlo en su posición original con su abrazadera de sujeción (págs. 5, 25).</li>
+<li>Si se trata de una válvula monobloc: aplicar espray enfriador o refrigerante líquido directamente sobre el cabezal térmico superior (págs. 5, 25).</li>
+<li>Si al enfriar el cabezal la presión de Baja no reacciona descendiendo hacia 0 bar, la válvula de expansión está averiada y debe sustituirse junto con el filtro deshidratador (págs. 5, 25).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación tras la reparación</div>
+        <p>Fijar el bulbo o sustituir la válvula de expansión y el filtro deshidratador, verificando que la presión de Baja retorna al rango normal de 1,8 a 2,1 bar (págs. 1, 5, 25).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT119_01</code> Lectura de manómetros (Baja 3 - 3,8 bar, Alta 12 - 14 bar) correspondiente a un bulbo de la válvula de expansión suelto — Fuente: Manometros.pdf, págs. 4, 24</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Manometros.pdf, págs. 4-5, 24-25, 45</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 3 · NT120 · Manometros.pdf, págs. 20, 26-27</summary>
+  <section id="nt120" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 120 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico por válvula de expansión demasiado abierta</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Presión de Baja con válvula muy abierta: entre 3,5 y 4,5 bar (o &gt; 2 bar a ralentí) (págs. 20, 26).</li>
+<li>Presión de Alta: entre 10 y 14 bar (págs. 20, 26).</li>
+<li>Umbral de control en prueba de estanqueidad: aguja de Baja estabilizada en 0 bar tras parar el compresor (pág. 26).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Presión de baja muy elevada, falta de rendimiento frigorífico y riesgo de retorno de refrigerante líquido hacia el compresor (págs. 20, 26-27).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>Bloqueo o avería mecánica interna de la válvula de expansión que la mantiene excesivamente abierta (págs. 20, 26).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo separar las causas</div>
+        <ul>
+<li>Conectar los manómetros y mantener el motor a 1.500 - 1.800 r.p.m. con 30 ºC ambiente (pág. 26).</li>
+<li>Observar que la presión de Baja se encuentra anormalmente alta (entre 3,5 y 4,5 bar, o &gt; 2 bar a ralentí) mientras la Alta permanece normal (10 a 14 bar) (págs. 20, 26).</li>
+<li>Rociar espray enfriador o refrigerante líquido sobre el bulbo o cabezal de la válvula de expansión (pág. 26).</li>
+<li>Si la válvula no reacciona cerrando la sección de paso, sustituir la válvula de expansión y el filtro deshidratador (págs. 26-27).</li>
+<li>Comprobación de posibles daños en las válvulas del compresor por golpe de líquido:
+  1. Una vez instaladas la nueva válvula y el filtro, rociar nuevamente espray enfriador sobre el bulbo de la nueva válvula (pág. 26).
+  2. Observar que el manómetro de Baja cae rápidamente hacia 0 bar (pág. 26).
+  3. Parar inmediatamente el compresor en ese instante (pág. 26).
+  4. Verificar la aguja de Baja: si se mantiene abajo sin subir bruscamente, las válvulas del compresor están en perfecto estado (págs. 26-27).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación tras la reparación</div>
+        <p>Sustituir la válvula de expansión y el filtro deshidratador, asegurando la comprobación posterior de las válvulas del compresor para descartar deformaciones por golpe de líquido (págs. 26-27).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT120_01</code> Manómetros registrando Alta entre 10 y 14 bar y Baja entre 3,5 y 4,5 bar por válvula de expansión demasiado abierta — Fuente: Manometros.pdf, pág. 26</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Manometros.pdf, págs. 20, 26-27</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 3 de 3 · NT121 · Manometros.pdf, págs. 6, 15-16, 27-28, 44, 46-47</summary>
+  <section id="nt121" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 121 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico por válvula de expansión cerrada o bloqueada</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Presión de Baja con válvula cerrada: 0 bar o valores de depresión/vacío al acelerar (págs. 6, 27).</li>
+<li>Presión de Alta: entre 12 y 15 bar (págs. 6, 27).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Ausencia total de frío en los difusores y aguja de baja presión cayendo a cero o entrando en la zona de vacío (págs. 6, 27, 46-47).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>Válvula de expansión bloqueada en posición de cierre u obturada por suciedad (págs. 6, 27, 46-47).</li>
+<li>Rotura del bulbo térmico capilar con pérdida de su carga de gas interna (págs. 6, 27).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo separar las causas</div>
+        <ul>
+<li>Conectar los manómetros y hacer funcionar el motor a 1.500 - 1.800 r.p.m. a 30 ºC ambiente (págs. 6, 27).</li>
+<li>Observar que la presión de Alta se mantiene en valores normales o ligeramente bajos (12 a 15 bar) mientras la Baja cae a 0 bar (págs. 6, 27).</li>
+<li>Acelerar el motor: si la aguja de Baja se desplaza internamente por la zona de vacío (presión negativa), se confirma que la válvula de expansión está cerrada o su bulbo roto (págs. 6, 27).</li>
+<li>Comprobar que no se trate de una gota de hielo en la válvula: parar el equipo y volverlo a arrancar; si es hielo, el frío retorna momentáneamente hasta congelarse de nuevo (págs. 28-29).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación tras la reparación</div>
+        <p>Sustituir la válvula de expansión y el filtro deshidratador (págs. 27-28). Comprobar imperativamente el nivel de aceite dentro del compresor, ya que al estar la válvula antigua obturada se interrumpe el retorno de aceite provocando el gripado del compresor por falta de lubricación (pág. 28).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT121_01</code> Manómetros con presión de Baja a 0 bar (zona de vacío) y Alta entre 12 y 15 bar por válvula de expansión cerrada — Fuente: Manometros.pdf, págs. 6, 27</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Manometros.pdf, págs. 6, 15-16, 27-28, 44, 46-47</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
+
+  <section id="nt122" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 122 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico por congelación del evaporador o válvula de regulación bloqueada</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Presión de Baja con evaporador congelado: casi 0 bar (sobre los 0,8 bar) (pág. 31).</li>
+<li>Presión de Alta: entre 7 y 10 bar (pág. 31).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Disminución progresiva del caudal de aire impulsado por las rejillas de ventilación hasta desaparecer casi por completo durante trayectos largos, recuperándose tras parar el equipo un tiempo (págs. 31, 43, 47).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>En compresor de cilindrada variable: válvula de regulación de cilindrada bloqueada en posición de máximo rendimiento (pág. 31).</li>
+<li>En compresor cíclico/fijo: sonda termostática del evaporador o termostato fuera de servicio, impidiendo la desconexión del compresor (págs. 31, 43, 47).</li>
+<li>Matriz exterior del evaporador sucia o colmatada de polvo (págs. 44, 47).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo separar las causas</div>
+        <ul>
+<li>Conectar los manómetros con el motor a 1.500 - 1.800 r.p.m. y 30 ºC de temperatura exterior (pág. 31).</li>
+<li>Observar que la presión de Baja desciende progresivamente hasta quedar rozando los 0 bar (casi a 0 bar / 0,8 bar) y la Alta se mantiene entre 7 y 10 bar (pág. 31).</li>
+<li>Verificar el caudal de aire en las rejillas: la formación de un bloque de hielo sobre las aletas del evaporador tapona el paso físico del aire (págs. 31, 44).</li>
+<li>Si al apagar el A/C y ponerlo en marcha tras derretirse el hielo funciona bien temporalmente: confirma fallo de desconexión del termostato o válvula de cilindrada agarrotada (pág. 31).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación tras la reparación</div>
+        <p>En compresores variables, sustituir el compresor y el filtro deshidratador (pág. 31). En compresores fijos, reemplazar el termostato/sonda NTC del evaporador o limpiar el módulo evaporador (págs. 31, 43-44).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT122_01</code> Lectura de manómetros (Baja casi 0 bar, Alta 7 - 10 bar) indicativa de congelación del evaporador — Fuente: Manometros.pdf, pág. 31</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Manometros.pdf, págs. 15-16, 31-32, 43-44, 46-47</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt125" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 125 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico por electroventilador girando en sentido contrario</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Presión de Alta con giro invertido: 22 bar (págs. 11, 37).</li>
+<li>Presión de Baja con giro invertido: entre 2,3 y 2,5 bar (págs. 11, 37).</li>
+<li>Régimen de prueba: 1.500 a 1.800 r.p.m. a 30 ºC ambiente (págs. 11, 37).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Presión de alta extremadamente elevada, flujo de aire expulsado hacia el frontal en lugar de ser aspirado hacia el motor y ventilador funcionando continuamente sin parar (págs. 11, 37-38).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>Conexión eléctrica invertida de los cables de alimentación del motor del electroventilador tras una intervención de taller (págs. 11, 37).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo separar las causas</div>
+        <ul>
+<li>Conectar los manómetros y mantener el motor a 1.500 - 1.800 r.p.m. con 30 ºC de temperatura exterior (págs. 11, 37).</li>
+<li>Observar que tanto la presión de Baja (2,3 a 2,5 bar) como la de Alta (22 bar) se encuentran muy altas (págs. 11, 37).</li>
+<li>Verificar visualmente y con una hoja de papel la dirección del flujo de aire en el frontal del condensador: si el aire es soplado hacia el exterior del vehículo en vez de ser aspirado hacia el vano motor, confirma que el ventilador gira al revés por polaridad invertida (págs. 11, 37).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación tras la reparación</div>
+        <p>Invertir los terminales en el conector del electroventilador para restablecer el sentido de giro correcto y verificar que la presión de Alta desciende a los valores normales de condensación (págs. 11, 37).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT125_01</code> Manómetros registrando 22 bar en Alta y 2,3 - 2,5 bar en Baja por polaridad invertida en el electroventilador — Fuente: Manometros.pdf, págs. 11, 37</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Manometros.pdf, págs. 11, 37-38</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt126" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 126 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico por electroventilador parado o condensador sucio</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Presión de Alta con fallo de condensación: 25 bar (o &gt; 17 bar) (págs. 20, 38).</li>
+<li>Presión de Baja: entre 2,3 y 2,8 bar (pág. 38).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Disparo continuo del presostato de máxima presión, detención periódica del compresor y pérdida brusca de frío con el vehículo detenido a ralentí (págs. 38, 45).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <ul>
+<li>Electroventilador de refrigeración fuera de servicio por avería eléctrica, fusible o relé (págs. 38, 45).</li>
+<li>Malla del condensador colmatada exteriormente por suciedad (hojas, barro, insectos) u obstrucción interna (págs. 38, 45).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo separar las causas</div>
+        <ul>
+<li>Conectar los manómetros a 1.500 - 1.800 r.p.m. y 30 ºC ambiente (pág. 38).</li>
+<li>Observar que la presión de Alta asciende drásticamente hasta alcanzar unos 25 bar (o &gt; 17 bar a ralentí) mientras la Baja se sitúa entre 2,3 y 2,8 bar (págs. 20, 38).</li>
+<li>Inspeccionar el electroventilador: si no gira al subir la presión, comprobar el circuito eléctrico (págs. 38, 45).</li>
+<li>Si el electroventilador gira sin parar a máxima velocidad pero la Alta continúa en 25 bar: efectuar la prueba de regado del condensador (pág. 38).</li>
+<li>Prueba de diagnóstico de condensador sucio: mojar / regar la parte superior del condensador con un chorro de agua fría desde una manguera (pág. 38).</li>
+<li>Si al regar con agua la aguja del manómetro de Alta inicia un rápido descenso mientras se mantenga el flujo de agua, se confirma que el condensador está sucio u obstruido (pág. 38).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación tras la reparación</div>
+        <p>Reparar el circuito del electroventilador o limpiar profundamente el panel de aletas del condensador con agua a presión perpendicular, comprobando que la Alta no sobrepasa los 14-16 bar (págs. 38, 45).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT126_01</code> Manómetros (Alta 25 bar, Baja 2,3 - 2,8 bar) y esquema de la prueba de aplicación de agua sobre el condensador — Fuente: Manometros.pdf, pág. 38</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Manometros.pdf, págs. 20, 38, 45</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    114 notas técnicas · generado el 24/09/2026.
+    130 notas técnicas · generado el 24/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
