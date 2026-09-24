@@ -3106,6 +3106,14 @@
    "hecha": false
   },
   {
+   "nombre": "NT655_01",
+   "nt": 655,
+   "titulo": "Transmisor de presión electrónico",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Transmisor de presión G65 y su esquemática de conexionado con la unidad del aire acondicionado J293, la unidad de control del motor y la unidad del autoclima J255 — Fuente: Copia de Transmisor de presión II.pdf, págs. 15, 17",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -3130,7 +3138,7 @@
    "hecha": false
   }
  ],
- "total": 646,
+ "total": 647,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -18152,6 +18160,80 @@
      "titulo": "Imágenes requeridas",
      "texto": "Transmisor de presión G65 y su conexionado con la unidad del aire acondicionado J293 y la unidad de motor — Fuente: Transmisor de presión II.pdf, pág. 17",
      "html": "<ul>\n<li>Transmisor de presión G65 y su conexionado con la unidad del aire acondicionado J293 y la unidad de motor — Fuente: Transmisor de presión II.pdf, pág. 17</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.transmisor-presion.copia-de-transmisor-de-presion-ii",
+   "nt": 655,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "transmisor-presion-map-maf",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Transmisor de presión electrónico",
+   "codigo": "G65",
+   "menu": "Transmisor de presión electrón G65",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Copia de Transmisor de presión II.pdf, págs. 15-17",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "electroventilador-condensador",
+    "compresor"
+   ],
+   "palabras": [
+    "G65",
+    "transmisor de presión",
+    "ralentí",
+    "16 bares",
+    "función sustitutiva"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la presión del fluido refrigerante y enviar la señal electrónica a la unidad de control del motor y a la unidad de control del aire acondicionado. (pág. 15)",
+     "html": "<p>Medir la presión del fluido refrigerante y enviar la señal electrónica a la unidad de control del motor y a la unidad de control del aire acondicionado. <span class=\"pag\">pág. 15</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Transmisor de presión electrónico de diseño idéntico al montado en el modelo Toledo. (pág. 15)",
+     "html": "<p>Transmisor de presión electrónico de diseño idéntico al montado en el modelo Toledo. <span class=\"pag\">pág. 15</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El transmisor mide la presión del circuito y transmite la señal a dos unidades de control: Unidad del aire acondicionado: procesa la señal para efectuar la desconexión del compresor por presión máxima o mínima, conectar la 2ª velocidad de los ventiladores del líquido refrigerante al alcanzar la presión de consigna e informar a la unidad del autoclima sobre la conexión o desconexión del compresor. Unidad de control del motor: procesa la señal enviada para actuar sobre la regulación del ralentí según las necesidades requeridas por la carga del motor. (págs. 15, 17)",
+     "html": "<p>El transmisor mide la presión del circuito y transmite la señal a dos unidades de control:</p>\n<ul>\n<li>Unidad del aire acondicionado: procesa la señal para efectuar la desconexión del compresor por presión máxima o mínima, conectar la 2ª velocidad de los ventiladores del líquido refrigerante al alcanzar la presión de consigna e informar a la unidad del autoclima sobre la conexión o desconexión del compresor.</li>\n<li>Unidad de control del motor: procesa la señal enviada para actuar sobre la regulación del ralentí según las necesidades requeridas por la carga del motor. <span class=\"pag\">págs. 15, 17</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Presión de activación de la 2ª velocidad de los ventiladores del líquido refrigerante: 16 bares. (pág. 15)",
+     "html": "<ul>\n<li>Presión de activación de la 2ª velocidad de los ventiladores del líquido refrigerante: 16 bares. <span class=\"pag\">pág. 15</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Avería en el propio transmisor de presión. (pág. 17)",
+     "html": "<p>Avería en el propio transmisor de presión. <span class=\"pag\">pág. 17</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "En caso de avería en el transmisor G65: La unidad de control del aire acondicionado desactiva el compresor como función sustitutiva. La avería únicamente queda registrada en la memoria de averías de la unidad de control del motor. (pág. 17)",
+     "html": "<p>En caso de avería en el transmisor G65:</p>\n<ul>\n<li>La unidad de control del aire acondicionado desactiva el compresor como función sustitutiva.</li>\n<li>La avería únicamente queda registrada en la memoria de averías de la unidad de control del motor. <span class=\"pag\">pág. 17</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Transmisor de presión G65 y su esquemática de conexionado con la unidad del aire acondicionado J293, la unidad de control del motor y la unidad del autoclima J255 — Fuente: Copia de Transmisor de presión II.pdf, págs. 15, 17",
+     "html": "<ul>\n<li>Transmisor de presión G65 y su esquemática de conexionado con la unidad del aire acondicionado J293, la unidad de control del motor y la unidad del autoclima J255 — Fuente: Copia de Transmisor de presión II.pdf, págs. 15, 17</li>\n</ul>"
     }
    ]
   },
