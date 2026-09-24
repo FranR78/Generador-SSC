@@ -20,11 +20,11 @@ palabras: ["tarjeta electrónica", "centralita", "calculador", "señales de entr
 
 ## Misión
 
-Gobernar y coordinar automáticamente el funcionamiento del sistema de climatización procesando la información de las sondas y captadores para enviar órdenes de control a los actuadores, impulsor, compresor y electroventiladores. (pág. 8)
+Gobernar y coordinar automáticamente el funcionamiento del sistema de climatización procesando la información de las sondas y captadores para enviar órdenes de control a los actuadores, impulsor, compresor y electroventiladores. (págs. 6-8)
 
 ## Tipos y características
 
-Calculador o centralita electrónica ubicada habitualmente detrás de los mandos y de la pantalla del climatizador en el salpicadero. Dispone de canales de entrada, salidas de potencia e interfaces de comunicación bidireccionales. (pág. 8)
+Calculador o centralita electrónica ubicada habitualmente detrás de los mandos y de la pantalla del climatizador en el salpicadero. Dispone de canales de entrada, salidas de potencia e interfaces de comunicación bidireccionales. (págs. 6, 8)
 
 ## Principio de funcionamiento
 
