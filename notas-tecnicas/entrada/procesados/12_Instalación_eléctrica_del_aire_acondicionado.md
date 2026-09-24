@@ -1,133 +1,132 @@
 ```yaml
 tipo: fundamento
-titulo: Circuito eléctrico de aire acondicionado manual con trinaria
-entidad: circuito-electrico-aire-acondicionado-manual
+titulo: Instalación eléctrica de aire acondicionado manual con trinaria
+entidad: instalacion-electrica-ac-manual
 area: climatizacion
 sistema: control-climatizacion
 fuente: "12. Instalación eléctrica del aire acondicionado.pdf"
-paginas: "94-95"
-relacionados: [presostato, electroventilador-condensador, compresor]
-palabras: [A/A manual, trinaria, presostato, NTC evaporador, NTC motor, UCE motor]
+paginas: "94"
+relacionados: [presostato, electroventilador-condensador, sensor-evaporador, embrague-compresor, unidad-control-climatizador]
+palabras: [esquema manual, trinaria, presostato, conmutador turbina, relé electroventilador, sonda evaporador]
 ```
 
 ## Objeto
-Estructura y lógica de funcionamiento de la instalación eléctrica y de control para un sistema de aire acondicionado manual regulado por presostato trinario (págs. 94-95).
+Explicar la estructura eléctrica, la interconexión de componentes y la lógica de control para el funcionamiento de un sistema de aire acondicionado manual equipado con presostato trinaria. (pág. 94)
 
 ## Fundamento
-Interconexión eléctrica de elementos de mando, relés, sensores térmicos y dispositivos de seguridad requerida para gobernar el embrague del compresor, el electroventilador de refrigeración y la turbina de aire fresco (págs. 94-95).
+El sistema combina la activación manual de la turbina por el conductor con la supervisión eléctrica automatizada de presiones, temperaturas de evaporación y refrigerante del motor, junto con la autorización de la UCE del motor para acoplar el compresor y accionar las velocidades del electroventilador. (pág. 94)
 
 ## Desarrollo
-Componentes y lógica de gestión del circuito:
-1. Interruptor de AC y selector de velocidad de la turbina (1): conecta o desconecta el sistema a voluntad del conductor y regula la velocidad de la turbina. Exige que la turbina gire al menos a velocidad lenta para habilitar el funcionamiento del sistema (págs. 94-95).
-2. Relé de alimentación del electroventilador (2): suministra corriente a las dos velocidades del electroventilador (págs. 94-95).
-3. Electroventilador del circuito de refrigeración (3): enfría el condensador. Al activar el A/C funciona en velocidad lenta; si la presión del circuito aumenta, conmuta a la velocidad rápida (págs. 94-95).
-4. Presostato trinario de alta (4): mide la presión en la línea de alta. Determina el arranque o parada del compresor mediante sus bornes 1-2 (P1 = 2 bar / 32 bar) y la activación de la velocidad rápida del electroventilador mediante sus bornes 3-4 (P2 = 16 bar) (págs. 94-95).
-5. NTC de temperatura del refrigerante del motor (5): desconecta el aire acondicionado si la temperatura del motor sobrepasa los límites de seguridad (págs. 94-95).
-6. Electrónica de control y relés (6): conmutan la alimentación eléctrica hacia los componentes del circuito (págs. 94-95).
-7. Termostato de refrigerante del radiador (7): conmuta las velocidades del electroventilador según la temperatura del líquido refrigerante (t1 = 95 ºC para velocidad lenta; t2 = 103 ºC para velocidad rápida) (págs. 94-95).
-8. Sonda NTC del evaporador (8): supervisa la temperatura de evaporación y desconecta el compresor si hay riesgo de congelación. No se instala en sistemas con compresor de cilindrada variable (págs. 94-95).
-9. Turbina de aire fresco (9): hace pasar el aire a través del evaporador para su enfriamiento y deshidratación (págs. 94-95).
-10. UCE del motor (10): autoriza la conexión del compresor únicamente cuando el motor gira al ralentí de forma estable y lo desconecta durante aceleraciones bruscas (págs. 94-95).
-11. Compresor de aire acondicionado (11): acoplado mecánicamente mediante embrague electromagnético (págs. 94-95).
-12. Relé de II velocidad del electroventilador (12): conmuta la alimentación de alta velocidad del ventilador (págs. 94-95).
+El circuito eléctrico articula la activación de sus componentes mediante las siguientes funciones interconectadas:
+1. Interruptor de A/C y selector de turbina: conecta o desconecta el sistema a voluntad del conductor y selecciona la velocidad de la turbina de aire fresco. Es condición imprescindible que la turbina gire como mínimo a velocidad lenta para habilitar la conexión eléctrica del A/C.
+2. Control de presiones (Trinaria de alta): presostato que mide la presión en la línea de alta. Sus bornes 1-2 determinan el arranque o parada de seguridad del compresor (corte por baja presión a 2 bar o por sobrepresión a 32 bar). Sus bornes 3-4 conectan la II velocidad del electroventilador al alcanzar 16 bar.
+3. Control de temperatura del evaporador (Sonda NTC del evaporador): monitoriza la temperatura de evaporación para desconectar el compresor si existe riesgo de congelación en el panal. No se utiliza en sistemas provistos de compresor variable.
+4. Gestión del motor (UCE de motor y NTC de refrigerante): la UCE del motor no autoriza la conexión del compresor hasta que el motor gire de forma regular a ralentí y desconecta el embrague en aceleraciones bruscas. Además, si la sonda NTC del refrigerante del motor detecta un sobrecalentamiento excesivo, se interrumpe la alimentación del A/C por seguridad.
+5. Control de ventilación del condensador (Termostato de refrigerante y relés): el electroventilador se activa siempre en velocidad lenta al conectar el aire acondicionado. El termostato del radiador conecta la velocidad lenta a 95 ºC (t1) y la velocidad rápida a 103 ºC (t2) o mediante el relé de II velocidad cuando la trinaria cierra a 16 bar. (pág. 94)
 
-📷 IMAGEN: Esquema eléctrico de un sistema de aire acondicionado manual con presostato trinario y relés de control — Fuente: 12. Instalación eléctrica del aire acondicionado.pdf, pág. 94
+📷 IMAGEN: Esquema eléctrico de aire acondicionado manual con presostato trinaria, relés, sonda NTC y UCE de motor — Fuente: 12. Instalación eléctrica del aire acondicionado.pdf, pág. 94
 
 ## Valores de referencia
-- Presostato trinario (P1 - corte compresor por baja/alta): 2 bar por baja / 32 bar por alta (pág. 94).
-- Presostato trinario (P2 - activación II velocidad electroventilador): 16 bar (pág. 94).
-- Termostato de refrigerante (t1 - velocidad lenta electroventilador): 95 ºC (pág. 94).
-- Termostato de refrigerante (t2 - velocidad rápida electroventilador): 103 ºC (pág. 94).
-- Condición de funcionamiento inicial: turbina girando como mínimo a velocidad lenta (pág. 94).
+- Presión P1 de corte por baja presión en trinaria: 2 bar.
+- Presión P1 de corte por sobrepresión en trinaria: 32 bar.
+- Presión P2 de activación de la II velocidad del electroventilador en trinaria: 16 bar.
+- Temperatura t1 de activación de I velocidad en termostato de refrigerante: 95 ºC.
+- Temperatura t2 de activación de II velocidad en termostato de refrigerante: 103 ºC. (pág. 94)
 
 ## Errores de concepto frecuentes
-- Creer que el compresor puede acoplarse estando la turbina de aire fresco totalmente apagada (pág. 94).
-- Asumir que la sonda del evaporador se utiliza en sistemas provistos de compresor de cilindrada variable (pág. 94).
+Creer que el compresor se conecta inmediatamente al accionar el interruptor de A/C. El sistema exige que la turbina esté girando al menos en velocidad lenta, que la UCE de motor confirme el ralentí regular, que la sonda del evaporador no detecte hielo y que la presión en la trinaria esté comprendida entre 2 y 32 bar. (pág. 94)
+
+---
 
 ```yaml
 tipo: fundamento
-titulo: Circuito eléctrico de aire acondicionado semiautomático con sensor MAP y compresor variable
-entidad: circuito-electrico-aire-acondicionado-semiautomatico
+titulo: Instalación eléctrica de aire acondicionado semiautomático con sensor MAP y compresor de cilindrada variable
+entidad: instalacion-electrica-ac-semiautomatico
 area: climatizacion
 sistema: control-climatizacion
 fuente: "12. Instalación eléctrica del aire acondicionado.pdf"
 paginas: "95"
 relacionados: [transmisor-presion, valvula-reguladora-compresor, unidad-control-climatizador]
-palabras: [A/A semiautomático, sensor MAP, electroválvula regulación, sin embrague, Can-Bus]
+palabras: [semiautomático, sensor map, electroválvula, compresor sin embrague, uce climatizador]
 ```
 
 ## Objeto
-Estructura de la instalación eléctrica e interconexión de señales en un sistema de aire acondicionado semiautomático provisto de transmisor de presión de alta (sensor MAP) y compresor de cilindrada variable sin embrague (pág. 95).
+Describir la arquitectura eléctrica y de control de un sistema de climatización semiautomático con compresor regulado mediante electroválvula interna (sin embrague electromagnético) y sensor de presión MAP. (pág. 95)
 
 ## Fundamento
-Gestión electrónica distribuida mediante intercambio de señales analógicas, digitales y de red Can-Bus entre la UCE del Climatizador, la UCE del Motor y la UCE de la Red de a Bordo para regular la cilindrada del compresor y la distribución de aire (pág. 95).
+Sustituye el acoplamiento mecánico por embrague y los presostatos de contactos por una electroválvula de regulación de cilindrada modulada por la UCE del climatizador y un sensor de presión continua (MAP) situado en la línea de alta. (pág. 95)
 
 ## Desarrollo
-Estructura de conexionado y código de colores de líneas:
-- Tipo de líneas de corriente: línea 30 (positivo directo de batería), línea 15 (positivo tras contacto), línea X (positivo tras contacto con desconexión en arranque) y línea 31 (masa) (págs. 95-96).
-- Tipo de señales representadas: señal de entrada, señal de salida, alimentación de positivo, masa, señal bidireccional y bus de datos Can-Bus (págs. 95-96).
+El sistema semiautomático integra la señalización de múltiples sensores y actuadores gestionados centralizadamente:
+1. Regulación del compresor: el compresor carece de embrague electromagnético y gira continuamente movido por el motor. La UCE del climatizador regula su rendimiento mediante una electroválvula proporcional de cilindrada.
+2. Medición de presión (Sensor MAP): transmite una señal de presión continua de la línea de alta a la UCE de climatización y a la UCE de motor para ajustar la cilindrada y gestionar la velocidad de los electroventiladores.
+3. Red de sensores de temperatura: consta de sensor de temperatura exterior, sensor de temperatura de salida del evaporador, sensores en difusores central y zona de pies.
+4. Gestión de trampillas: motores eléctricos con potenciómetros de posición de retorno para la trampilla de temperatura (mezcla) y la trampilla de recirculación.
+5. Módulo de potencia del ventilador: regulador electrónico de velocidad para la turbina de aire fresco.
+6. Interconexión de unidades: la UCE del climatizador intercambia datos con la UCE del motor, la UCE de la red de a bordo y el cuadro de instrumentos para la gestión de cargas y la diagnosis. (pág. 95)
 
-Componentes e integración en el circuito:
-- Módulos de control: UCE de la red de a bordo (9), Cuadro de instrumentos (10), UCE del motor (11), UCE del climatizador (12) y UCE de los ventiladores (23) (pág. 95).
-- Captadores de información: Sensor MAP en alta (3), Sensor de temperatura exterior (4), Transmisor de velocidad del vehículo (5), Alternador (7), Transmisor de temperatura interior (13), Sensor de temperatura de salida del evaporador (18), Sensor de temperatura de zona pies (19) y Sensor de temperatura de difusor central (20) (pág. 95).
-- Actuadores de ajuste: Regulador de velocidad de la turbina (2), Motor y potenciómetro de la trampilla de temperatura (14, 15), Motor y potenciómetro de la trampilla de recirculación (16, 17), Electroválvula de regulación del compresor sin embrague (21) y Electroventiladores de refrigeración (24, 25) (pág. 95).
-- Diagnóstico y confort: Conector de diagnosis OBD (6) y Regulador de iluminación del display (8) (pág. 95).
-
-📷 IMAGEN: Esquema eléctrico de un aire acondicionado semiautomático con sensor MAP, compresor regulado por electroválvula sin embrague y código de colores de señales — Fuente: 12. Instalación eléctrica del aire acondicionado.pdf, pág. 95
+📷 IMAGEN: Esquema eléctrico de sistema semiautomático con sensor MAP, UCE de climatización y compresor con electroválvula de regulación — Fuente: 12. Instalación eléctrica del aire acondicionado.pdf, pág. 95
 
 ## Valores de referencia
-- Líneas de corriente norma DIN: Línea 30 (positivo directo de batería), Línea 15 (positivo después de contacto), Línea X (desconexión en arranque), Línea 31 (masa) (págs. 95-96).
+No documentado en fuentes.
 
 ## Errores de concepto frecuentes
-- Confundir la señal de un compresor de cilindrada variable regulado por electroválvula con la alimentación de un embrague electromagnético convencional (pág. 95).
+Pensar que la ausencia de corriente en el compresor significa que este se detiene por completo. Al ser un compresor sin embrague, gira siempre mecánicamente y la electroválvula simplemente ajusta su rendimiento al mínimo. (págs. 95, 97)
+
+---
 
 ```yaml
 tipo: fundamento
-titulo: Circuito eléctrico y gestión electrónica del climatizador automático
-entidad: circuito-electrico-climatizador-automatico
+titulo: Instalación eléctrica y gestión de averías del climatizador automático
+entidad: instalacion-electrica-climatizador-automatico
 area: climatizacion
 sistema: control-climatizacion
 fuente: "12. Instalación eléctrica del aire acondicionado.pdf"
 paginas: "96-97"
-relacionados: [unidad-control-climatizador, servomotor-trampilla, sensor-evaporador, sensor-calidad-aire]
-palabras: [climatizador automático, autodiagnóstico, sustitución de señal, valor supletorio, Can-Bus]
+relacionados: [unidad-control-climatizador, servomotor-trampilla, fotosensor-solar, sensor-temperatura-exterior, valvula-reguladora-compresor]
+palabras: [climatizador automático, can-bus, líneas din, código de colores, función de emergencia]
 ```
 
 ## Objeto
-Esquema eléctrico didáctico, asignación de pines, funciones de componentes y estrategia de funcionamiento en caso de avería en un climatizador automático (págs. 96-97).
+Explicar la arquitectura eléctrica integral, las líneas de alimentación estándar DIN, la red CAN-Bus de sensores y actuadores, y las funciones de emergencia en caso de avería de un climatizador automático. (págs. 96-97)
 
 ## Fundamento
-Control integral de la temperatura, caudal y distribución del aire mediante una UCE centralizada que procesa captadores, gobierna servomotores con potenciómetro de posición y realiza el autodiagnóstico del sistema memorizando averías (págs. 96-97).
+El climatizador automático gestiona electrónicamente todas las variables del sistema (temperatura, caudal y distribución) mediante una UCE central comunicada por CAN-Bus con las demás unidades del vehículo y equipada con autodiagnosis de averías. (págs. 96-97)
 
 ## Desarrollo
-Lógica de funcionamiento y sustitución de señales en caso de avería:
-1. Turbina de aire fresco (1) y Regulador (2): hacen pasar aire por el evaporador. Si fallan la turbina o el regulador, el climatizador deja de funcionar (págs. 96-97).
-2. Sensor MAP de alta (3): mide la presión de alta. En caso de avería, el climatizador no funciona (págs. 96-97).
-3. Sensor de temperatura exterior (4): mide la temperatura ambiente. Si falla, el display muestra "--.- ºC" y se adopta el valor del sensor de temperatura de entrada de aire (págs. 96-97).
-4. Transmisor de velocidad (5) y Cuadro de instrumentos (11): transmiten la velocidad por Can-Bus. Si falla la señal, no se indica la velocidad ni actúa la trampilla de velocidad (págs. 96-97).
-5. Conector de diagnóstico (6): permite la comunicación entre la máquina de diagnosis OBD y la UCE del climatizador para consultar la memoria de averías (págs. 96-97).
-6. Interruptor de marcha atrás (7): activa automáticamente la recirculación al engranar la marcha atrás. Si falla, se desactiva la función (págs. 96-97).
-7. Alternador (8): informa de la carga o trabajo del alternador para desconectar el compresor en momentos críticos. Si falla la señal, se anula la función (págs. 96-97).
-8. UCE de la red de a bordo (10): gestiona el intercambio de datos Can-Bus. Si falla, el climatizador puede dejar de funcionar (págs. 96-97).
-9. UCE del motor (12): ajusta el ralentí y desconecta el compresor en aceleraciones. Si falla la comunicación, se desactivan estas funciones (págs. 96-97).
-10. Fotosensor de radiación solar (13): corrige la regulación según el soleamiento. Si falla, se desactiva la función (págs. 96-97).
-11. UCE del climatizador (14): unidad central de control. En caso de fallo interno, el climatizador no funciona (págs. 96-97).
-12. Transmisor de temperatura interior (15): mide la temperatura del habitáculo. En caso de fallo, la UCE asume un valor fijo (págs. 96-97).
-13. Servomotores y potenciómetros de trampillas (16 a 23): mueven las trampillas de temperatura, deshielo, central y recirculación/velocidad. Los potenciómetros informan de la posición real a la UCE. Si falla un potenciómetro, no se puede ajustar o controlar la función correspondiente (págs. 96-97).
-14. Sensor de temperatura de salida del evaporador (24): si falta la señal, la UCE calcula el estado con la información del sensor MAP (págs. 96-97).
-15. Sensores de temperatura de zona pies (25) y difusor central (26): si se interrumpe la señal, se anula la regulación automática (págs. 96-97).
-16. Sensor de temperatura de entrada de aire (27): si falla, se adopta la lectura del sensor de temperatura exterior (págs. 96-97).
-17. Electroválvula de regulación del compresor (28): ajusta la cilindrada. Si se avería, el compresor se ajusta automáticamente a su mínimo rendimiento (carrera nula) (págs. 96-97).
-18. Termostato del radiador (29) y UCE de ventiladores (30): si la UCE de ventiladores falla, el climatizador no funciona. En función de emergencia del termostato, los ventiladores se conectan a máxima velocidad (págs. 96-97).
+1. Líneas de alimentación (Normas DIN):
+   - Línea 30: Positivo directo de batería.
+   - Línea 15: Positivo después de contacto.
+   - Línea X: Positivo después de contacto con desconexión durante el arranque del motor.
+   - Línea 31: Masa. (pág. 96)
 
-📷 IMAGEN: Esquema didáctico de un climatizador automático con indicación de conectores T2, T4, T6, líneas DIN y tabla de averías — Fuente: 12. Instalación eléctrica del aire acondicionado.pdf, pág. 96
+2. Gestión de entradas, sensores y comportamiento en avería:
+   - Sensor de temperatura exterior: en caso de fallo, se muestra «--.- ºC» en el display y se utiliza el valor del sensor de temperatura de entrada de aire ambiente.
+   - Sensor de entrada de aire ambiente: si falla, se trabaja con la información del sensor de temperatura exterior.
+   - Sensor de salida del evaporador: si falta la señal, la UCE trabaja con la información del sensor MAP de alta presión.
+   - Fotosensor para radiación solar: ajusta la temperatura según la insolación; si falla, se desactiva la función solar.
+   - Transmisor de velocidad y Cuadro de instrumentos: la señal de velocidad vía CAN-Bus ajusta la trampilla de velocidad; en caso de avería, no funciona la trampilla de velocidad.
+   - Sensores de temperatura de zona de pies y difusor central: sin su señal no es posible la regulación automática.
+   - Interruptor de marcha atrás: conecta la recirculación al circular marcha atrás para evitar la entrada de gases de escape; sin señal se desactiva la función.
+   - Alternador: identifica el trabajo del alternador y desconecta el compresor si es preciso; sin señal se desactiva la función. (págs. 96-97)
+
+3. Gestión de salidas y actuadores:
+   - Servotores de trampillas (temperatura, deshielo, central, recirculación y velocidad): cada motor eléctrico dispone de un potenciómetro de posición. Si falla el potenciómetro, no se puede ajustar la posición de esa trampilla.
+   - Electroválvula de regulación del compresor: ajusta la cilindrada a la demanda. En caso de avería eléctrica, el compresor se ajusta a mínimo rendimiento.
+   - Termostato del radiador y UCE de ventiladores: comandan la refrigeración del condensador. En función de emergencia, normalmente se conectan los ventiladores a máxima velocidad.
+   - Turbina y regulador de velocidad: en caso de avería de la turbina o de su regulador, el climatizador no funciona. (págs. 96-97)
+
+4. Diagnosis de averías: las averías producidas en el climatizador quedan memorizadas en la UCE y son consultables mediante una máquina de diagnóstico compatible. (págs. 96-97)
+
+📷 IMAGEN: Esquema didáctico completo del climatizador automático con codificación de colores de señales y líneas DIN 30, 15, X y 31 — Fuente: 12. Instalación eléctrica del aire acondicionado.pdf, pág. 96
 
 ## Valores de referencia
-- Lectura en display en caso de fallo del sensor de temperatura exterior: "--.- ºC" (pág. 97).
-- Modo de emergencia de la electroválvula del compresor (28): ajuste a mínimo rendimiento (pág. 97).
-- Modo de emergencia del termostato del radiador (29): conexión de electroventiladores a máxima velocidad (pág. 97).
+- Tensión de alimentación en líneas DIN: Líneas 30, 15 y X a 12 V; Línea 31 a 0 V (Masa).
+- Indicación en pantalla por fallo del sensor exterior: «--.- ºC». (págs. 96-97)
 
 ## Errores de concepto frecuentes
-- Creer que ante el fallo de un sensor de temperatura en un climatizador automático el sistema se apaga siempre, en lugar de adoptar valores fijos o lecturas supletorias de otros sensores (págs. 96-97).
+Pensar que la avería de un sensor de temperatura detiene por completo el climatizador. La UCE dispone de estrategias de emergencia que utilizan valores supletorios o sensores alternativos (como recurrir al sensor de entrada de aire si falla el exterior, o al MAP si falla el del evaporador) para continuar funcionando en modo degradado. (págs. 96-97)
 
-COBERTURA: documento «12. Instalación eléctrica del aire acondicionado.pdf», páginas 94 a 97 de 97. completo
+---
+
+COBERTURA: documento «12. Instalación eléctrica del aire acondicionado.pdf», páginas 94 a 97 de 97. [completo]
