@@ -39,7 +39,7 @@ RAIZ = Path(__file__).resolve().parent.parent
 DIR_NOTAS = RAIZ / "notas"
 DIR_MAESTRAS = RAIZ / "maestras"
 DIR_PENDIENTES = DIR_MAESTRAS / "pendientes"
-MODELO = os.environ.get("FUSION_MODELO", "gemini-2.5-flash")
+MODELO = os.environ.get("FUSION_MODELO", "").strip() or "auto"   # «auto»: el Flash más nuevo que vea la key
 
 APARTADOS = {
     "componente": ["Misión", "Tipos y características", "Principio de funcionamiento",
@@ -170,6 +170,23 @@ def huella(fichas):
 
 
 # ───────────────────────────── Gemini ─────────────────────────────
+
+def elegir_modelo(cliente):
+    """El Gemini Flash estable más nuevo que la key puede usar (sin lite, preview,
+    imagen ni audio). Así no hay que tocar el código cuando sale uno nuevo."""
+    candidatos = []
+    for m in cliente.models.list():
+        n = m.name.split("/")[-1]
+        acciones = getattr(m, "supported_actions", None) or []
+        if acciones and "generateContent" not in acciones:
+            continue
+        if not re.fullmatch(r"gemini-(\d+(?:\.\d+)?)-flash", n):
+            continue
+        candidatos.append((float(re.search(r"\d+(?:\.\d+)?", n).group()), n))
+    if not candidatos:
+        return "gemini-2.5-flash"
+    return max(candidatos)[1]
+
 
 def pedir(cliente, texto, tipo):
     from google.genai import types
@@ -311,6 +328,7 @@ def main():
     p.add_argument("claves", nargs="*", help="entidades a fusionar")
     p.add_argument("--todas", action="store_true", help="todas las entidades con 2 o más fuentes")
     p.add_argument("--max", type=int, default=0, help="como mucho N entidades en esta ejecución")
+    p.add_argument("--probar", action="store_true", help="solo comprueba key y modelo")
     a = p.parse_args()
 
     key = os.environ.get("GEMINI_API_KEY")
@@ -318,6 +336,14 @@ def main():
         sys.exit("Falta GEMINI_API_KEY (secreto del repositorio en GitHub).")
     from google import genai
     cliente = genai.Client(api_key=key)
+    global MODELO
+    if MODELO == "auto":
+        MODELO = elegir_modelo(cliente)
+    print(f"Modelo: {MODELO}")
+    if a.probar:
+        r = cliente.models.generate_content(model=MODELO, contents="Responde solo: OK")
+        print("Prueba de configuración:", (r.text or "").strip()[:40])
+        return
 
     por = leer_fichas()
     if a.todas:

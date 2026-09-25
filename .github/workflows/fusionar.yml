@@ -20,8 +20,12 @@ on:
         description: 'Como mucho N entidades en esta ejecución'
         default: '10'
       modelo:
-        description: 'Modelo de Gemini'
-        default: 'gemini-2.5-flash'
+        description: 'Modelo de Gemini («auto» = el Flash más nuevo disponible)'
+        default: 'auto'
+      probar:
+        description: 'Solo probar la configuración (key y modelo), sin fusionar'
+        type: boolean
+        default: false
 
 concurrency:
   group: notas-tecnicas      # la misma cola que la regeneración: nunca a la vez
@@ -51,8 +55,11 @@ jobs:
           ENTIDADES: ${{ inputs.entidades }}
           TODAS: ${{ inputs.todas }}
           MAX: ${{ inputs.max }}
+          PROBAR: ${{ inputs.probar }}
         run: |
-          if [ "$TODAS" = "true" ]; then
+          if [ "$PROBAR" = "true" ]; then
+            python3 generador/fusionar.py --probar; exit 0
+          elif [ "$TODAS" = "true" ]; then
             python3 generador/fusionar.py --todas --max "$MAX"
           else
             python3 generador/fusionar.py --max "$MAX" $ENTIDADES
