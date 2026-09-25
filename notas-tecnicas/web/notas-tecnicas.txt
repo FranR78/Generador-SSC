@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">705 notas · 25/09/2026</p>
+  <p class="sidebar-meta">709 notas · 25/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -258,7 +258,7 @@
     <li><a href="#nt9">NT9 · Reglamento (UE) nº 517/2014 sobre gase</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
     <li><a href="#grp-ciclo-frigorifico">Ciclo frigorífico <span class="menu-cuenta">39 fuentes</span></a></li>
-    <li><a href="#grp-compresor">Compresor de aire acondicionado <span class="menu-cuenta">32 fuentes</span></a></li>
+    <li><a href="#grp-compresor">Compresor de aire acondicionado <span class="menu-cuenta">33 fuentes</span></a></li>
     <li><a href="#grp-condensador">Condensador <span class="menu-cuenta">10 fuentes</span></a></li>
     <li><a href="#grp-filtro-deshidratador-mirilla">Filtro deshidratador <span class="menu-cuenta">13 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
@@ -269,7 +269,7 @@
     <li><a href="#nt17">NT17 · Silenciador-depósito receptor</a></li>
     <li><a href="#grp-tuberias-y-racores">Tuberías, canalizaciones y juntas de estanqueidad del circuito frigorífico <span class="menu-cuenta">5 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
-    <li><a href="#grp-regulacion-automatica">Sistemas y opciones de climatización en el automóvil <span class="menu-cuenta">37 fuentes</span></a></li>
+    <li><a href="#grp-regulacion-automatica">Sistemas y opciones de climatización en el automóvil <span class="menu-cuenta">38 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Fluidos frigoríficos</span></li>
     <li><a href="#grp-refrigerante-r12">Agente frigorífico R12 <span class="menu-cuenta">3 fuentes</span></a></li>
     <li><a href="#grp-refrigerante-r1234yf">Agente frigorífico R1234yf <span class="menu-cuenta">4 fuentes</span></a></li>
@@ -290,7 +290,7 @@
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
     <li><a href="#nt42">NT42 · Climatización por bomba de calor en ve</a></li>
     <li><a href="#grp-embrague-compresor">Acoplamiento de embrague electromagnético del compresor <span class="menu-cuenta">10 fuentes</span></a></li>
-    <li><a href="#grp-valvula-reguladora-compresor-variable">Electroválvula de regulación del compresor <span class="menu-cuenta">5 fuentes</span></a></li>
+    <li><a href="#grp-valvula-reguladora-compresor-variable">Electroválvula de regulación del compresor <span class="menu-cuenta">6 fuentes</span></a></li>
     <li><a href="#nt49">NT49 · Desmontaje y montaje del condensador</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Distribución de aire</span></li>
     <li><a href="#grp-filtro-habitaculo">Filtro de habitáculo <span class="menu-cuenta">8 fuentes</span></a></li>
@@ -600,7 +600,7 @@
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
     <li><a href="#nt684">NT684 · Sustitución de compresor de regulación</a></li>
     <li><a href="#nt697">NT697 · Tipos de instalaciones de climatizació</a></li>
-    <li><a href="#nt713">NT713 · Polea de accionamiento con protección</a></li>
+    <li><a href="#grp-polea-compresor">Polea de accionamiento con protección de sobrecarga <span class="menu-cuenta">2 fuentes</span></a></li>
   </ul>
 </nav>
 
@@ -3027,10 +3027,10 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </div>
 
   <div class="grupo-componente" id="grp-compresor">
-    <div class="grupo-cab"><span class="grupo-nombre">Compresor de aire acondicionado</span><span class="grupo-cuenta">32 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Compresor de aire acondicionado</span><span class="grupo-cuenta">33 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 32 · NT11 · 2. Introducción a la refrigeración.pdf, págs. 20</summary>
+      <summary>Variante 1 de 33 · NT11 · 2. Introducción a la refrigeración.pdf, págs. 20</summary>
   <section id="nt11" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 11 </div>
     <div class="nota-body">
@@ -3068,7 +3068,7 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 32 · NT39 · 6. Compresores.pdf, págs. 49-50</summary>
+      <summary>Variante 2 de 33 · NT39 · 6. Compresores.pdf, págs. 49-50</summary>
   <section id="nt39" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 39 </div>
     <div class="nota-body">
@@ -3117,7 +3117,7 @@ Características:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 32 · NT40 · 6. Compresores.pdf, págs. 50-51</summary>
+      <summary>Variante 3 de 33 · NT40 · 6. Compresores.pdf, págs. 50-51</summary>
   <section id="nt40" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 40 </div>
     <div class="nota-body">
@@ -3173,7 +3173,7 @@ Características principales:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 32 · NT41 · 6. Compresores.pdf, págs. 51-52</summary>
+      <summary>Variante 4 de 33 · NT41 · 6. Compresores.pdf, págs. 51-52</summary>
   <section id="nt41" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 41 </div>
     <div class="nota-body">
@@ -3221,7 +3221,7 @@ Características principales:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 32 · NT43 · 6. Compresores.pdf, págs. 53-54</summary>
+      <summary>Variante 5 de 33 · NT43 · 6. Compresores.pdf, págs. 53-54</summary>
   <section id="nt43" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 43 </div>
     <div class="nota-body">
@@ -3263,7 +3263,7 @@ Características principales:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 32 · NT45 · 6. Compresores.pdf, págs. 55-58</summary>
+      <summary>Variante 6 de 33 · NT45 · 6. Compresores.pdf, págs. 55-58</summary>
   <section id="nt45" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 45 <span class="fusionado">Seat</span></div>
     <div class="nota-body">
@@ -3351,7 +3351,7 @@ Características principales:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 32 · NT46 · 6. Compresores.pdf, págs. 58-62</summary>
+      <summary>Variante 7 de 33 · NT46 · 6. Compresores.pdf, págs. 58-62</summary>
   <section id="nt46" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 46 <span class="fusionado">Seat</span></div>
     <div class="nota-body">
@@ -3412,7 +3412,7 @@ Si el compresor se bloquea mecánicamente, el disco de arrastre de chapa se defo
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 8 de 32 · NT216 · Climatizacion basicos.pdf, págs. 7, 10-11</summary>
+      <summary>Variante 8 de 33 · NT216 · Climatizacion basicos.pdf, págs. 7, 10-11</summary>
   <section id="nt216" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 216 </div>
     <div class="nota-body">
@@ -3457,7 +3457,7 @@ Si el compresor se bloquea mecánicamente, el disco de arrastre de chapa se defo
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 9 de 32 · NT230 · CLIMATIZACION INTRODUCCION.PDF, págs. 58-79</summary>
+      <summary>Variante 9 de 33 · NT230 · CLIMATIZACION INTRODUCCION.PDF, págs. 58-79</summary>
   <section id="nt230" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 230 </div>
     <div class="nota-body">
@@ -3522,7 +3522,7 @@ Tecnologías de construcción:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 10 de 32 · NT245 · Climatizacion-conocimientos-basios-para-el-taller_3.pdf, págs. 10-11</summary>
+      <summary>Variante 10 de 33 · NT245 · Climatizacion-conocimientos-basios-para-el-taller_3.pdf, págs. 10-11</summary>
   <section id="nt245" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 245 </div>
     <div class="nota-body">
@@ -3559,7 +3559,7 @@ Tecnologías de construcción:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 11 de 32 · NT256 · CLIMATIZADOR MD FRAN.docx, págs. Secciones Compresor y Funcionamiento </summary>
+      <summary>Variante 11 de 33 · NT256 · CLIMATIZADOR MD FRAN.docx, págs. Secciones Compresor y Funcionamiento </summary>
   <section id="nt256" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 256 </div>
     <div class="nota-body">
@@ -3623,7 +3623,7 @@ Según la regulación de cilindrada:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 12 de 32 · NT268 · LA CLIMATIZACIÓN.pdf, págs. 47-54</summary>
+      <summary>Variante 12 de 33 · NT268 · LA CLIMATIZACIÓN.pdf, págs. 47-54</summary>
   <section id="nt268" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 268 </div>
     <div class="nota-body">
@@ -3677,7 +3677,7 @@ Presión de salida: aprox. 16 bares (1,6 MPa). (pág. 43).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 13 de 32 · NT269 · LA CLIMATIZACIÓN.pdf, págs. 55-59</summary>
+      <summary>Variante 13 de 33 · NT269 · LA CLIMATIZACIÓN.pdf, págs. 55-59</summary>
   <section id="nt269" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 269 </div>
     <div class="nota-body">
@@ -3734,7 +3734,7 @@ Cuando la demanda de frío sube (P_b aumenta), la válvula de regulación reduce
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 14 de 32 · NT270 · LA CLIMATIZACIÓN.pdf, págs. 60</summary>
+      <summary>Variante 14 de 33 · NT270 · LA CLIMATIZACIÓN.pdf, págs. 60</summary>
   <section id="nt270" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 270 </div>
     <div class="nota-body">
@@ -3775,7 +3775,7 @@ Cuando la demanda de frío sube (P_b aumenta), la válvula de regulación reduce
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 15 de 32 · NT271 · LA CLIMATIZACIÓN.pdf, págs. 61</summary>
+      <summary>Variante 15 de 33 · NT271 · LA CLIMATIZACIÓN.pdf, págs. 61</summary>
   <section id="nt271" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 271 </div>
     <div class="nota-body">
@@ -3823,7 +3823,7 @@ Cuando la demanda de frío sube (P_b aumenta), la válvula de regulación reduce
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 16 de 32 · NT356 · ZZAA AUTOMOCION 1 Enero 2010 HELLA.pptx, págs. 69-82</summary>
+      <summary>Variante 16 de 33 · NT356 · ZZAA AUTOMOCION 1 Enero 2010 HELLA.pptx, págs. 69-82</summary>
   <section id="nt356" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 356 <span class="fusionado">Denso</span></div>
     <div class="nota-body">
@@ -3885,7 +3885,7 @@ Cuando la demanda de frío sube (P_b aumenta), la válvula de regulación reduce
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 17 de 32 · NT484 · AA AUTOMOCION MD FR.pdf, págs. 35-67</summary>
+      <summary>Variante 17 de 33 · NT484 · AA AUTOMOCION MD FR.pdf, págs. 35-67</summary>
   <section id="nt484" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 484 <span class="fusionado">Sanden</span></div>
     <div class="nota-body">
@@ -3945,7 +3945,7 @@ Cuerpo fabricado en aluminio. Requiere lubricante sintético de tipo PAG o PAO e
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 18 de 32 · NT543 · 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 16-20</summary>
+      <summary>Variante 18 de 33 · NT543 · 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 16-20</summary>
   <section id="nt543" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 543 </div>
     <div class="nota-body">
@@ -3991,7 +3991,7 @@ Cuerpo fabricado en aluminio. Requiere lubricante sintético de tipo PAG o PAO e
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 19 de 32 · NT610 · CLIMATIZADOR MD FRAN.docx, págs. 5-7</summary>
+      <summary>Variante 19 de 33 · NT610 · CLIMATIZADOR MD FRAN.docx, págs. 5-7</summary>
   <section id="nt610" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 610 </div>
     <div class="nota-body">
@@ -4035,7 +4035,7 @@ Cuerpo fabricado en aluminio. Requiere lubricante sintético de tipo PAG o PAO e
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 20 de 32 · NT611 · CLIMATIZADOR MD FRAN.docx, págs. 7-8</summary>
+      <summary>Variante 20 de 33 · NT611 · CLIMATIZADOR MD FRAN.docx, págs. 7-8</summary>
   <section id="nt611" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 611 <span class="fusionado">Denso</span></div>
     <div class="nota-body">
@@ -4087,7 +4087,7 @@ Cuerpo fabricado en aluminio. Requiere lubricante sintético de tipo PAG o PAO e
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 21 de 32 · NT637 · LA CLIMATIZACIÓN.pdf, págs. 48-49</summary>
+      <summary>Variante 21 de 33 · NT637 · LA CLIMATIZACIÓN.pdf, págs. 48-49</summary>
   <section id="nt637" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 637 </div>
     <div class="nota-body">
@@ -4130,7 +4130,7 @@ Cuerpo fabricado en aluminio. Requiere lubricante sintético de tipo PAG o PAO e
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 22 de 32 · NT638 · LA CLIMATIZACIÓN.pdf, págs. 50-54</summary>
+      <summary>Variante 22 de 33 · NT638 · LA CLIMATIZACIÓN.pdf, págs. 50-54</summary>
   <section id="nt638" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 638 </div>
     <div class="nota-body">
@@ -4185,7 +4185,7 @@ Cuerpo fabricado en aluminio. Requiere lubricante sintético de tipo PAG o PAO e
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 23 de 32 · NT660 · CIRCUITO FRIGORÍFICO.pdf, págs. 7</summary>
+      <summary>Variante 23 de 33 · NT660 · CIRCUITO FRIGORÍFICO.pdf, págs. 7</summary>
   <section id="nt660" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 660 </div>
     <div class="nota-body">
@@ -4218,7 +4218,7 @@ Cuerpo fabricado en aluminio. Requiere lubricante sintético de tipo PAG o PAO e
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 24 de 32 · NT678 · 3. CIRCUITO FRIGORÍGENO 1 AL 4.pptx, págs. 95-109, 113-189, 201</summary>
+      <summary>Variante 24 de 33 · NT678 · 3. CIRCUITO FRIGORÍGENO 1 AL 4.pptx, págs. 95-109, 113-189, 201</summary>
   <section id="nt678" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 678 </div>
     <div class="nota-body">
@@ -4298,7 +4298,7 @@ Cuerpo fabricado en aluminio. Requiere lubricante sintético de tipo PAG o PAO e
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 25 de 32 · NT698 · 6. Compresores, págs. 49</summary>
+      <summary>Variante 25 de 33 · NT698 · 6. Compresores, págs. 49</summary>
   <section id="nt698" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 698 </div>
     <div class="nota-body">
@@ -4343,7 +4343,7 @@ Es primordial que el agente frigorífico aspirado se encuentre en estado gaseoso
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 26 de 32 · NT699 · 6. Compresores, págs. 49-50</summary>
+      <summary>Variante 26 de 33 · NT699 · 6. Compresores, págs. 49-50</summary>
   <section id="nt699" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 699 </div>
     <div class="nota-body">
@@ -4380,7 +4380,7 @@ Es primordial que el agente frigorífico aspirado se encuentre en estado gaseoso
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 27 de 32 · NT700 · 6. Compresores, págs. 50-51</summary>
+      <summary>Variante 27 de 33 · NT700 · 6. Compresores, págs. 50-51</summary>
   <section id="nt700" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 700 </div>
     <div class="nota-body">
@@ -4427,7 +4427,7 @@ Es primordial que el agente frigorífico aspirado se encuentre en estado gaseoso
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 28 de 32 · NT701 · 6. Compresores, págs. 51-52</summary>
+      <summary>Variante 28 de 33 · NT701 · 6. Compresores, págs. 51-52</summary>
   <section id="nt701" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 701 </div>
     <div class="nota-body">
@@ -4476,7 +4476,7 @@ Es primordial que el agente frigorífico aspirado se encuentre en estado gaseoso
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 29 de 32 · NT703 · 6. Compresores, págs. 53-54</summary>
+      <summary>Variante 29 de 33 · NT703 · 6. Compresores, págs. 53-54</summary>
   <section id="nt703" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 703 </div>
     <div class="nota-body">
@@ -4517,7 +4517,7 @@ Es primordial que el agente frigorífico aspirado se encuentre en estado gaseoso
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 30 de 32 · NT705 · 6. Compresores, págs. 55-58</summary>
+      <summary>Variante 30 de 33 · NT705 · 6. Compresores, págs. 55-58</summary>
   <section id="nt705" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 705 </div>
     <div class="nota-body">
@@ -4567,7 +4567,7 @@ Es primordial que el agente frigorífico aspirado se encuentre en estado gaseoso
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 31 de 32 · NT706 · 6. Compresores, págs. 58-62</summary>
+      <summary>Variante 31 de 33 · NT706 · 6. Compresores, págs. 58-62</summary>
   <section id="nt706" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 706 </div>
     <div class="nota-body">
@@ -4626,7 +4626,7 @@ Es primordial que el agente frigorífico aspirado se encuentre en estado gaseoso
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 32 de 32 · NT711 · Compresor 6 SEU 12 de Denso.docx, págs. 1-2</summary>
+      <summary>Variante 32 de 33 · NT711 · Compresor 6 SEU 12 de Denso.docx, págs. 1-2</summary>
   <section id="nt711" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 711 <span class="fusionado">Denso</span></div>
     <div class="nota-body">
@@ -4662,6 +4662,48 @@ Es primordial que el agente frigorífico aspirado se encuentre en estado gaseoso
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">Compresor 6 SEU 12 de Denso.docx, págs. 1-2</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 33 de 33 · NT714 · COMPRESOR__AC.PDF, págs. 3</summary>
+  <section id="nt714" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 714 <span class="fusionado">DENSO</span></div>
+    <div class="nota-body">
+      <h1>Compresor del climatizador de regulación externa 6 SEU 12 — <strong>6 SEU 12</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Comprimir el agente frigorífico adaptando progresivamente la cilindrada y el rendimiento desde el 0% (estado OFF) hasta el 100% (plena carga) según las necesidades de refrigeración (pág. 3).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>El eje de impulsión acciona el disco oscilante desplazando los 6 émbolos. La inclinación del disco oscilante se regula de forma continua mediante la presión del cárter controlada por la válvula reguladora externa N280, variando la carrera de los émbolos desde un rendimiento inferior al 2% (desconexión o estado OFF) hasta el 100% de capacidad impelida (pág. 3).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Reducción de masa por omisión de acoplamiento electromagnético: 500 gramos aproximadamente (pág. 3).</li>
+<li>Cilindrada en estado operativo OFF: inferior a casi el 0% (pág. 3).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <ul>
+<li>Compresor del climatizador de regulación externa modelo 6 SEU 12 de la marca DENSO (pág. 3).</li>
+<li>Construcción unilateral de disco oscilante provista de 6 émbolos (pág. 3).</li>
+<li>Utilizado en el vehículo Lupo FSI siguiendo el principio de regulación de disco oscilante (pág. 3).</li>
+<li>Prescinde del acoplamiento electromagnético convencional gracias a que la cilindrada puede descender hasta casi el 0% en estado operativo OFF, reduciendo el peso del conjunto en unos 500 gramos aproximadamente (pág. 3).</li>
+<li>Incorpora una nueva polea de impulsión con dispositivo de seguridad integrado contra sobrecargas (pág. 3).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT714_01</code> Vista del compresor de climatización de regulación externa DENSO 6 SEU 12 — Fuente: COMPRESOR__AC.PDF, pág. 3 (pág. 3).</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">COMPRESOR__AC.PDF, págs. 3</p>
       </div>
     </div>
   </section>
@@ -8090,10 +8132,10 @@ Incluye carcasa envolvente, canal de recogida de agua condensada y tubo de desca
   </div>
 
   <div class="grupo-componente" id="grp-regulacion-automatica">
-    <div class="grupo-cab"><span class="grupo-nombre">Sistemas y opciones de climatización en el automóvil</span><span class="grupo-cuenta">37 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Sistemas y opciones de climatización en el automóvil</span><span class="grupo-cuenta">38 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 37 · NT20 · 2. Introducción a la refrigeración.pdf, págs. 22-23</summary>
+      <summary>Variante 1 de 38 · NT20 · 2. Introducción a la refrigeración.pdf, págs. 22-23</summary>
   <section id="nt20" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 20 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -8149,7 +8191,7 @@ Incluye carcasa envolvente, canal de recogida de agua condensada y tubo de desca
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 37 · NT96 · 208. Regulación de la temperatura.pdf, págs. 42-44</summary>
+      <summary>Variante 2 de 38 · NT96 · 208. Regulación de la temperatura.pdf, págs. 42-44</summary>
   <section id="nt96" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 96 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -8185,7 +8227,7 @@ En los sistemas automáticos (Climatronic o regulación digital), la unidad de c
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 37 · NT103 · 208. Regulación de la temperatura.pdf, págs. 52-53</summary>
+      <summary>Variante 3 de 38 · NT103 · 208. Regulación de la temperatura.pdf, págs. 52-53</summary>
   <section id="nt103" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 103 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -8225,7 +8267,7 @@ En los sistemas automáticos (Climatronic o regulación digital), la unidad de c
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 37 · NT106 · 208. Regulación de la temperatura.pdf, págs. 58-59</summary>
+      <summary>Variante 4 de 38 · NT106 · 208. Regulación de la temperatura.pdf, págs. 58-59</summary>
   <section id="nt106" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 106 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -8273,7 +8315,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 37 · NT152 · PRO 13. Climatización Electrónica.pdf, págs. 100-101</summary>
+      <summary>Variante 5 de 38 · NT152 · PRO 13. Climatización Electrónica.pdf, págs. 100-101</summary>
   <section id="nt152" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 152 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -8328,7 +8370,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 37 · NT158 · PRO 13. Climatización Electrónica.pdf, págs. 105</summary>
+      <summary>Variante 6 de 38 · NT158 · PRO 13. Climatización Electrónica.pdf, págs. 105</summary>
   <section id="nt158" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 158 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -8370,7 +8412,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 37 · NT162 · PRO 13. Climatización Electrónica.pdf, págs. 109</summary>
+      <summary>Variante 7 de 38 · NT162 · PRO 13. Climatización Electrónica.pdf, págs. 109</summary>
   <section id="nt162" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 162 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -8406,7 +8448,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 8 de 37 · NT163 · PRO 13. Climatización Electrónica.pdf, págs. 110</summary>
+      <summary>Variante 8 de 38 · NT163 · PRO 13. Climatización Electrónica.pdf, págs. 110</summary>
   <section id="nt163" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 163 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -8446,7 +8488,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 9 de 37 · NT164 · PRO 13. Climatización Electrónica.pdf, págs. 111</summary>
+      <summary>Variante 9 de 38 · NT164 · PRO 13. Climatización Electrónica.pdf, págs. 111</summary>
   <section id="nt164" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 164 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -8487,7 +8529,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 10 de 37 · NT185 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 4-5</summary>
+      <summary>Variante 10 de 38 · NT185 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 4-5</summary>
   <section id="nt185" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 185 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -8528,7 +8570,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 11 de 37 · NT259 · DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, págs</summary>
+      <summary>Variante 11 de 38 · NT259 · DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, págs</summary>
   <section id="nt259" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 259 <span class="subtipo">Fundamento</span><span class="fusionado">Valeo</span></div>
     <div class="nota-body proceso">
@@ -8568,7 +8610,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 12 de 37 · NT299 · LA CLIMATIZACIÓN.pdf, págs. 127-131</summary>
+      <summary>Variante 12 de 38 · NT299 · LA CLIMATIZACIÓN.pdf, págs. 127-131</summary>
   <section id="nt299" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 299 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -8606,7 +8648,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 13 de 37 · NT307 · LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, págs. 1-7</summary>
+      <summary>Variante 13 de 38 · NT307 · LOS SISTEMAS DE CLIMATIZACION AUTOMATICA.PDF, págs. 1-7</summary>
   <section id="nt307" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 307 <span class="subtipo">Fundamento</span><span class="fusionado">Valeo</span></div>
     <div class="nota-body proceso">
@@ -8656,7 +8698,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 14 de 37 · NT326 · OBJETIVOS Y RESTRICCIONES DE LOS SISTEMAS DE CLIMATIZACION AU.PDF, pág</summary>
+      <summary>Variante 14 de 38 · NT326 · OBJETIVOS Y RESTRICCIONES DE LOS SISTEMAS DE CLIMATIZACION AU.PDF, pág</summary>
   <section id="nt326" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 326 <span class="subtipo">Fundamento</span><span class="fusionado">Valeo</span></div>
     <div class="nota-body proceso">
@@ -8691,7 +8733,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 15 de 37 · NT327 · OBJETIVOS Y RESTRICCIONES DE LOS SISTEMAS DE CLIMATIZACION AU.PDF, pág</summary>
+      <summary>Variante 15 de 38 · NT327 · OBJETIVOS Y RESTRICCIONES DE LOS SISTEMAS DE CLIMATIZACION AU.PDF, pág</summary>
   <section id="nt327" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 327 <span class="subtipo">Fundamento</span><span class="fusionado">Valeo</span></div>
     <div class="nota-body proceso">
@@ -8739,7 +8781,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 16 de 37 · NT329 · SSP 484 A7 Info y Clima (arrastrado) 2 copia.pdf, págs. 52-53</summary>
+      <summary>Variante 16 de 38 · NT329 · SSP 484 A7 Info y Clima (arrastrado) 2 copia.pdf, págs. 52-53</summary>
   <section id="nt329" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 329 <span class="subtipo">Fundamento</span><span class="fusionado">Audi</span></div>
     <div class="nota-body proceso">
@@ -8776,7 +8818,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 17 de 37 · NT341 · SSP 484 A7 Info y Clima (arrastrado).pdf, págs. 52</summary>
+      <summary>Variante 17 de 38 · NT341 · SSP 484 A7 Info y Clima (arrastrado).pdf, págs. 52</summary>
   <section id="nt341" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 341 <span class="subtipo">Fundamento</span><span class="fusionado">Audi</span></div>
     <div class="nota-body proceso">
@@ -8826,7 +8868,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 18 de 37 · NT392 · 5. EL CIRCUITO DE AIRE.pptx, págs. 21-23</summary>
+      <summary>Variante 18 de 38 · NT392 · 5. EL CIRCUITO DE AIRE.pptx, págs. 21-23</summary>
   <section id="nt392" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 392 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -8867,7 +8909,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 19 de 37 · NT397 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 42, 44-45, 52-54, 108-111</summary>
+      <summary>Variante 19 de 38 · NT397 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 42, 44-45, 52-54, 108-111</summary>
   <section id="nt397" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 397 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -8915,7 +8957,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 20 de 37 · NT416 · 409_e         Audi A4 _08.pdf, págs. 64-66</summary>
+      <summary>Variante 20 de 38 · NT416 · 409_e         Audi A4 _08.pdf, págs. 64-66</summary>
   <section id="nt416" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 416 <span class="subtipo">Fundamento</span><span class="fusionado">Audi</span></div>
     <div class="nota-body proceso">
@@ -8962,7 +9004,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 21 de 37 · NT436 · cd.pdf, págs. 4-5, 8-9</summary>
+      <summary>Variante 21 de 38 · NT436 · cd.pdf, págs. 4-5, 8-9</summary>
   <section id="nt436" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 436 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -8997,7 +9039,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 22 de 37 · NT450 · GESTIÓN ELÉCTRICA A5.pdf, págs. 80</summary>
+      <summary>Variante 22 de 38 · NT450 · GESTIÓN ELÉCTRICA A5.pdf, págs. 80</summary>
   <section id="nt450" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 450 <span class="subtipo">Fundamento</span><span class="fusionado">Audi</span></div>
     <div class="nota-body proceso">
@@ -9036,7 +9078,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 23 de 37 · NT456 · Nº10. Carga y Diagonostico.pdf, págs. 116-117</summary>
+      <summary>Variante 23 de 38 · NT456 · Nº10. Carga y Diagonostico.pdf, págs. 116-117</summary>
   <section id="nt456" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 456 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -9076,7 +9118,7 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 24 de 37 · NT509 · SEÑALES SUPLEMENTARIAS.pdf, págs. 50-51</summary>
+      <summary>Variante 24 de 38 · NT509 · SEÑALES SUPLEMENTARIAS.pdf, págs. 50-51</summary>
   <section id="nt509" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 509 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -9123,7 +9165,7 @@ Informa de forma continua a la unidad de control del climatizador sobre el funci
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 25 de 37 · NT517 · SSP172 TARRACO (arrastrado).pdf, págs. 59-61</summary>
+      <summary>Variante 25 de 38 · NT517 · SSP172 TARRACO (arrastrado).pdf, págs. 59-61</summary>
   <section id="nt517" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 517 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -9171,7 +9213,7 @@ Informa de forma continua a la unidad de control del climatizador sobre el funci
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 26 de 37 · NT524 · SSP172 TARRACO (arrastrado).pdf, págs. 64-65</summary>
+      <summary>Variante 26 de 38 · NT524 · SSP172 TARRACO (arrastrado).pdf, págs. 64-65</summary>
   <section id="nt524" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 524 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -9205,7 +9247,7 @@ Informa de forma continua a la unidad de control del climatizador sobre el funci
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 27 de 37 · NT534 · Ibiza99 - Actuadores.pdf, págs. 24</summary>
+      <summary>Variante 27 de 38 · NT534 · Ibiza99 - Actuadores.pdf, págs. 24</summary>
   <section id="nt534" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 534 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -9238,7 +9280,7 @@ Informa de forma continua a la unidad de control del climatizador sobre el funci
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 28 de 37 · NT538 · MOTOR PARA LA TURBINA DEL S. Cº interior.pdf, págs. 24</summary>
+      <summary>Variante 28 de 38 · NT538 · MOTOR PARA LA TURBINA DEL S. Cº interior.pdf, págs. 24</summary>
   <section id="nt538" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 538 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -9271,7 +9313,7 @@ Informa de forma continua a la unidad de control del climatizador sobre el funci
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 29 de 37 · NT546 · 301_e         Climatización en el Touareg.pdf, págs. 4-5</summary>
+      <summary>Variante 29 de 38 · NT546 · 301_e         Climatización en el Touareg.pdf, págs. 4-5</summary>
   <section id="nt546" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 546 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -9320,7 +9362,7 @@ Informa de forma continua a la unidad de control del climatizador sobre el funci
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 30 de 37 · NT553 · MOTOR TURBINA S. Cº interior.pdf, págs. 24</summary>
+      <summary>Variante 30 de 38 · NT553 · MOTOR TURBINA S. Cº interior.pdf, págs. 24</summary>
   <section id="nt553" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 553 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -9353,7 +9395,7 @@ Informa de forma continua a la unidad de control del climatizador sobre el funci
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 31 de 37 · NT559 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 8-10</summary>
+      <summary>Variante 31 de 38 · NT559 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 8-10</summary>
   <section id="nt559" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 559 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -9394,7 +9436,7 @@ Informa de forma continua a la unidad de control del climatizador sobre el funci
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 32 de 37 · NT580 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 18</summary>
+      <summary>Variante 32 de 38 · NT580 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 18</summary>
   <section id="nt580" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 580 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -9442,7 +9484,7 @@ Informa de forma continua a la unidad de control del climatizador sobre el funci
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 33 de 37 · NT586 · CD 72. Climatización en Ibiza99.pdf, págs. 4-5</summary>
+      <summary>Variante 33 de 38 · NT586 · CD 72. Climatización en Ibiza99.pdf, págs. 4-5</summary>
   <section id="nt586" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 586 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -9484,7 +9526,7 @@ Informa de forma continua a la unidad de control del climatizador sobre el funci
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 34 de 37 · NT589 · CD 72. Climatización en Ibiza99.pdf, págs. 8-10</summary>
+      <summary>Variante 34 de 38 · NT589 · CD 72. Climatización en Ibiza99.pdf, págs. 8-10</summary>
   <section id="nt589" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 589 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -9525,7 +9567,7 @@ Informa de forma continua a la unidad de control del climatizador sobre el funci
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 35 de 37 · NT594 · Clima Ibiza 99.pdf, págs. 1-2</summary>
+      <summary>Variante 35 de 38 · NT594 · Clima Ibiza 99.pdf, págs. 1-2</summary>
   <section id="nt594" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 594 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -9582,7 +9624,7 @@ Informa de forma continua a la unidad de control del climatizador sobre el funci
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 36 de 37 · NT595 · clima ibizaIII ASY.pdf, págs. 1-7</summary>
+      <summary>Variante 36 de 38 · NT595 · clima ibizaIII ASY.pdf, págs. 1-7</summary>
   <section id="nt595" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 595 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -9634,7 +9676,7 @@ Informa de forma continua a la unidad de control del climatizador sobre el funci
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 37 de 37 · NT622 · CLIMATIZADOR MD FRAN.docx, págs. 16-17</summary>
+      <summary>Variante 37 de 38 · NT622 · CLIMATIZADOR MD FRAN.docx, págs. 16-17</summary>
   <section id="nt622" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 622 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -9668,6 +9710,39 @@ Un microprocesador procesa estos datos y calcula las órdenes de salida transmit
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">CLIMATIZADOR MD FRAN.docx, págs. 16-17</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 38 de 38 · NT715 · COMPRESOR__AC.PDF, págs. 4</summary>
+  <section id="nt715" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 715 <span class="subtipo">Fundamento</span><span class="fusionado">Audi</span></div>
+    <div class="nota-body proceso">
+      <h1>Regulación externa del rendimiento del compresor — <strong>E87</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>La regulación se efectúa externamente mediante la unidad de manejo e indicación E87, la cual gobierna una válvula de regulación electromagnética (N280) que modifica la cilindrada del compresor a partir de la temperatura de salida del aire en el evaporador (pág. 4).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Captación de datos de entrada</strong>: La unidad de manejo e indicación E87 procesa la señal enviada por el transmisor de temperatura del aire a la salida del evaporador G263 (pág. 4).</li>
+<li><strong>Gestión del rendimiento frigorífico</strong>: A partir del valor de temperatura medido por el transmisor G263, la unidad E87 modula la señal de excitación hacia la válvula reguladora N280 para ajustar la presión del cárter del compresor (pág. 4).</li>
+<li><strong>Optimización energética</strong>: Adapta la temperatura de salida del aire en el evaporador ajustando exactamente el caudal de gas refrigerante necesario, minimizando el calentamiento posterior mediante la calefacción (Reheat) y reduciendo la demanda de potencia al motor (pág. 4).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Ajustar de forma progresiva la potencia frigorífica del compresor en función de las necesidades térmicas reales del evaporador para reducir el consumo energético y evitar la necesidad de calefactar adicionalmente el aire (Reheat) (pág. 4).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <p>Creer que el compresor trabaja siempre a máxima potencia y que la temperatura del habitáculo se regula únicamente mezclando aire frío con aire caliente procedente de la calefacción (Reheat) (pág. 4).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">COMPRESOR__AC.PDF, págs. 4</p>
       </div>
     </div>
   </section>
@@ -12487,10 +12562,10 @@ Al aplicar corriente eléctrica a la bobina, se genera un campo magnético que a
   </div>
 
   <div class="grupo-componente" id="grp-valvula-reguladora-compresor-variable">
-    <div class="grupo-cab"><span class="grupo-nombre">Electroválvula de regulación del compresor</span><span class="grupo-cuenta">5 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Electroválvula de regulación del compresor</span><span class="grupo-cuenta">6 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 5 · NT47 · 6. Compresores.pdf, págs. 62-63</summary>
+      <summary>Variante 1 de 6 · NT47 · 6. Compresores.pdf, págs. 62-63</summary>
   <section id="nt47" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 47 </div>
     <div class="nota-body">
@@ -12551,7 +12626,7 @@ Al aplicar corriente eléctrica a la bobina, se genera un campo magnético que a
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 5 · NT258 · CLIMATIZADOR MD FRAN.docx, págs. Secciones Regulación externa, Compres</summary>
+      <summary>Variante 2 de 6 · NT258 · CLIMATIZADOR MD FRAN.docx, págs. Secciones Regulación externa, Compres</summary>
   <section id="nt258" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 258 <span class="fusionado">Denso</span></div>
     <div class="nota-body">
@@ -12613,7 +12688,7 @@ Al aplicar corriente eléctrica a la bobina, se genera un campo magnético que a
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 5 · NT272 · LA CLIMATIZACIÓN.pdf, págs. 62-66</summary>
+      <summary>Variante 3 de 6 · NT272 · LA CLIMATIZACIÓN.pdf, págs. 62-66</summary>
   <section id="nt272" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 272 </div>
     <div class="nota-body">
@@ -12669,7 +12744,7 @@ Al aplicar corriente eléctrica a la bobina, se genera un campo magnético que a
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 5 · NT707 · 6. Compresores, págs. 62-63</summary>
+      <summary>Variante 4 de 6 · NT707 · 6. Compresores, págs. 62-63</summary>
   <section id="nt707" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 707 </div>
     <div class="nota-body">
@@ -12729,7 +12804,7 @@ Al aplicar corriente eléctrica a la bobina, se genera un campo magnético que a
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 5 · NT712 · Compresor 6 SEU 12 de Denso.docx, págs. 1-2</summary>
+      <summary>Variante 5 de 6 · NT712 · Compresor 6 SEU 12 de Denso.docx, págs. 1-2</summary>
   <section id="nt712" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 712 <span class="fusionado">Denso</span></div>
     <div class="nota-body">
@@ -12772,6 +12847,63 @@ Al aplicar corriente eléctrica a la bobina, se genera un campo magnético que a
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">Compresor 6 SEU 12 de Denso.docx, págs. 1-2</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 6 de 6 · NT716 · COMPRESOR__AC.PDF, págs. 5-10</summary>
+  <section id="nt716" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 716 <span class="fusionado">Audi</span></div>
+    <div class="nota-body">
+      <h1>Válvula reguladora del compresor del climatizador — <strong>N280</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Gobernar la cilindrada del compresor regulando el paso de refrigerante entre la cámara de alta presión, la cámara del cárter y el lado de baja presión (pág. 5, 7).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li><strong>Accionamiento electromagnético (B)</strong>: La unidad E87 excita la válvula mediante una señal cuadrada de frecuencia fija a 500 Hz modulada en anchura de impulsos (PWM). Debido a la alta frecuencia, el empujador se mantiene en un estado "flotante", realizando desplazamientos de pocas décimas de milímetro entre sus topes para regular todos los márgenes intermedios (pág. 6).</li>
+<li><strong>Estado sin corriente</strong>: La válvula permanece totalmente abierta interconectando el conducto de alta presión (B) con el cárter (A), compensando ambas presiones (pág. 7).</li>
+<li><strong>Plena carga (100% de caudal)</strong>: La válvula cierra la comunicación entre el cárter (A) y la alta presión (B). Al disminuir la presión en el cárter, la alta presión sobre los pistones vence la fuerza del muelle del disco oscilante y lo desplaza a máxima inclinación (pág. 8, 9).</li>
+<li><strong>Regulación descendente / Estado OFF (inferior a 2%)</strong>: Al desactivar o solicitar muy baja potencia, la válvula abre la conexión entre alta presión y cárter. Se igualan las presiones a ambos lados del pistón y el muelle del disco desplaza la inclinación a valor inferior al 2% (alimentación cero o compresor OFF) (pág. 9, 10).</li>
+<li><strong>Componente mecánico (A - Regulación por baja presión C)</strong>:<ul>
+<li>Si la baja presión (C) es demasiado alta, comprime el elemento sensible interior, permitiendo al empujador separar más la alta presión del cárter para aumentar la capacidad de aspiración del compresor (pág. 11, 12).</li>
+<li>Si la baja presión (C) es demasiado baja, el elemento se relaja y limita la carrera del empujador, impidiendo la separación total entre alta presión y cárter para reducir la cilindrada (pág. 12).</li>
+</ul>
+</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Frecuencia de la señal PWM de excitación (E87): 500 Hz (pág. 6).</li>
+<li>Recorrido del empujador en estado flotante: pocas décimas de milímetro (pág. 6).</li>
+<li>Nivel de alimentación en posición de desconexión / OFF: inferior a 2% (pág. 10).</li>
+<li>Caudal impelido a plena carga: 100% (pág. 9).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>En ausencia de señal eléctrica de excitación (sin corriente), la válvula permanece abierta uniendo la alta presión con el cárter, manteniendo el compresor en un nivel de alimentación inferior al 2% (compresor OFF) (pág. 7, 10).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <ul>
+<li>Válvula reguladora del compresor del climatizador N280 (pág. 4, 5).</li>
+<li>Combina un componente mecánico (A) sensible a la presión y una unidad electromagnética (B) que realiza la función esencial de regulación (pág. 5).</li>
+<li>En la válvula confluyen las tres presiones del sistema: cárter del compresor (A), lado de alta presión (B) y lado de baja presión (C) (pág. 7).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT716_01</code> Ubicación y vías de presión A (cárter), B (alta presión) y C (baja presión) en la válvula reguladora N280 — Fuente: COMPRESOR__AC.PDF, pág. 7 (pág. 7).</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT716_02</code> Posición del empujador de la válvula N280 en régimen de plena carga y en regulación descendente — Fuente: COMPRESOR__AC.PDF, pág. 8 y 9 (pág. 8, 9).</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">COMPRESOR__AC.PDF, págs. 5-10</p>
       </div>
     </div>
   </section>
@@ -34855,6 +34987,11 @@ En la versión de nueva generación, ha sido revisada técnicamente y adaptada e
     </div>
   </section>
 
+  <div class="grupo-componente" id="grp-polea-compresor">
+    <div class="grupo-cab"><span class="grupo-nombre">Polea de accionamiento con protección de sobrecarga</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 2 · NT713 · Compresor 6 SEU 12 de Denso.docx, págs. 2</summary>
   <section id="nt713" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 713 <span class="fusionado">Denso</span></div>
     <div class="nota-body">
@@ -34896,9 +35033,63 @@ En la versión de nueva generación, ha sido revisada técnicamente y adaptada e
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 2 · NT717 · COMPRESOR__AC.PDF, págs. 11-12</summary>
+  <section id="nt717" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 717 <span class="fusionado">Audi</span></div>
+    <div class="nota-body">
+      <h1>Polea de impulsión con protección contra sobrecarga</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Transmitir el giro de la correa única del motor al eje del compresor y desacoplar mecánicamente el arrastre en caso de bloqueo interno para proteger la correa y evitar la inhabilitación de los grupos auxiliares del motor (pág. 11).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li><strong>Funcionamiento normal</strong>: El compresor gira solidario con el motor térmico. Durante la alimentación cero (rendimiento &lt; 2%), el compresor no genera carga sobre la polea (pág. 11, 12).</li>
+<li><strong>Funcionamiento en sobrecarga (bloqueo)</strong>: Si el compresor se bloquea por avería mecánica, la polea (A) se desplaza a través del elemento de goma con capa de grafito (B) sobre el disco de arrastre bloqueado (C). El disco de arrastre se deforma permanentemente según la temperatura del elemento de goma (caliente o frío), liberando el giro de la polea (pág. 12).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Deformación permanente del elemento moldeado de goma o del disco de arrastre tras un episodio de sobrecarga o bloqueo del compresor (pág. 12).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Al desacoplarse por sobrecarga, la polea gira libremente sin arrastrar el eje del compresor, evitando que la correa auxiliar se rompa y garantizando que la bomba de refrigerante del motor y el alternador sigan funcionando (pág. 11).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Inspección visual del elemento de goma y del disco de arrastre para verificar si presentan deformación o desplazamiento fuera de alineación (pág. 12).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <ul>
+<li>Polea de impulsión sin acoplamiento electromagnético (pág. 11).</li>
+<li>Dispone de un dispositivo de seguridad integrado contra sobrecargas (pág. 11).</li>
+<li>La polea (A) se une al disco de arrastre del compresor (C) mediante un elemento moldeado de goma provisto de una capa de grafito (B) (pág. 11).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <p>Si el elemento moldeado de goma o el disco de arrastre están deformados por actuación de la protección de sobrecarga, es obligatorio sustituir el compresor del climatizador completo (pág. 12).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT717_01</code> Detalle de la polea de impulsión (A), el elemento de goma con grafito (B) y el disco de arrastre (C) en estado normal y deformado por sobrecarga — Fuente: COMPRESOR__AC.PDF, pág. 11 y 12 (pág. 11, 12).</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">COMPRESOR__AC.PDF, págs. 11-12</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
   <div class="pie">
-    705 notas técnicas · generado el 25/09/2026.
+    709 notas técnicas · generado el 25/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 

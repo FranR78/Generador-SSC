@@ -3594,6 +3594,38 @@
    "hecha": false
   },
   {
+   "nombre": "NT714_01",
+   "nt": 714,
+   "titulo": "Compresor del climatizador de regulación externa 6 SEU 12",
+   "seccion": "4. El compresor",
+   "descripcion": "Vista del compresor de climatización de regulación externa DENSO 6 SEU 12 — Fuente: COMPRESOR__AC.PDF, pág. 3 (pág. 3).",
+   "hecha": false
+  },
+  {
+   "nombre": "NT716_01",
+   "nt": 716,
+   "titulo": "Válvula reguladora del compresor del climatizador",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Ubicación y vías de presión A (cárter), B (alta presión) y C (baja presión) en la válvula reguladora N280 — Fuente: COMPRESOR__AC.PDF, pág. 7 (pág. 7).",
+   "hecha": false
+  },
+  {
+   "nombre": "NT716_02",
+   "nt": 716,
+   "titulo": "Válvula reguladora del compresor del climatizador",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Posición del empujador de la válvula N280 en régimen de plena carga y en regulación descendente — Fuente: COMPRESOR__AC.PDF, pág. 8 y 9 (pág. 8, 9).",
+   "hecha": false
+  },
+  {
+   "nombre": "NT717_01",
+   "nt": 717,
+   "titulo": "Polea de impulsión con protección contra sobrecarga",
+   "seccion": "Por ubicar",
+   "descripcion": "Detalle de la polea de impulsión (A), el elemento de goma con grafito (B) y el disco de arrastre (C) en estado normal y deformado por sobrecarga — Fuente: COMPRESOR__AC.PDF, pág. 11 y 12 (pág. 11, 12).",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -3618,7 +3650,7 @@
    "hecha": false
   }
  ],
- "total": 705,
+ "total": 709,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -12210,6 +12242,70 @@
      "titulo": "Comportamiento en avería",
      "texto": "Ante un bloqueo mecánico, actúa el sistema de protección de sobrecarga integrado en la polea para desolidarizar el arrastre y evitar el deterioro de la correa auxiliar (pág. 2).",
      "html": "<p>Ante un bloqueo mecánico, actúa el sistema de protección de sobrecarga integrado en la polea para desolidarizar el arrastre y evitar el deterioro de la correa auxiliar <span class=\"pag\">pág. 2</span>.</p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.compresor.denso-6-seu-12.compresor-ac",
+   "nt": 714,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "compresor",
+   "seccion": "4. El compresor",
+   "subgrupo": "",
+   "titulo": "Compresor del climatizador de regulación externa 6 SEU 12",
+   "codigo": "6 SEU 12",
+   "menu": "Compresor del climatizador de  6 SEU 12",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "COMPRESOR__AC.PDF, págs. 3",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "denso-6-seu-12",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "valvula-reguladora-compresor",
+    "polea-compresor",
+    "regulacion-automatica"
+   ],
+   "palabras": [
+    "disco oscilante",
+    "6 embolos",
+    "Lupo FSI",
+    "sin acoplamiento electromagnetico",
+    "variacion de cilindrada"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Comprimir el agente frigorífico adaptando progresivamente la cilindrada y el rendimiento desde el 0% (estado OFF) hasta el 100% (plena carga) según las necesidades de refrigeración (pág. 3).",
+     "html": "<p>Comprimir el agente frigorífico adaptando progresivamente la cilindrada y el rendimiento desde el 0% (estado OFF) hasta el 100% (plena carga) según las necesidades de refrigeración <span class=\"pag\">pág. 3</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Compresor del climatizador de regulación externa modelo 6 SEU 12 de la marca DENSO (pág. 3). Construcción unilateral de disco oscilante provista de 6 émbolos (pág. 3). Utilizado en el vehículo Lupo FSI siguiendo el principio de regulación de disco oscilante (pág. 3). Prescinde del acoplamiento electromagnético convencional gracias a que la cilindrada puede descender hasta casi el 0% en estado operativo OFF, reduciendo el peso del conjunto en unos 500 gramos aproximadamente (pág. 3). Incorpora una nueva polea de impulsión con dispositivo de seguridad integrado contra sobrecargas (pág. 3).",
+     "html": "<ul>\n<li>Compresor del climatizador de regulación externa modelo 6 SEU 12 de la marca DENSO <span class=\"pag\">pág. 3</span>.</li>\n<li>Construcción unilateral de disco oscilante provista de 6 émbolos <span class=\"pag\">pág. 3</span>.</li>\n<li>Utilizado en el vehículo Lupo FSI siguiendo el principio de regulación de disco oscilante <span class=\"pag\">pág. 3</span>.</li>\n<li>Prescinde del acoplamiento electromagnético convencional gracias a que la cilindrada puede descender hasta casi el 0% en estado operativo OFF, reduciendo el peso del conjunto en unos 500 gramos aproximadamente <span class=\"pag\">pág. 3</span>.</li>\n<li>Incorpora una nueva polea de impulsión con dispositivo de seguridad integrado contra sobrecargas <span class=\"pag\">pág. 3</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El eje de impulsión acciona el disco oscilante desplazando los 6 émbolos. La inclinación del disco oscilante se regula de forma continua mediante la presión del cárter controlada por la válvula reguladora externa N280, variando la carrera de los émbolos desde un rendimiento inferior al 2% (desconexión o estado OFF) hasta el 100% de capacidad impelida (pág. 3).",
+     "html": "<p>El eje de impulsión acciona el disco oscilante desplazando los 6 émbolos. La inclinación del disco oscilante se regula de forma continua mediante la presión del cárter controlada por la válvula reguladora externa N280, variando la carrera de los émbolos desde un rendimiento inferior al 2% (desconexión o estado OFF) hasta el 100% de capacidad impelida <span class=\"pag\">pág. 3</span>.</p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Reducción de masa por omisión de acoplamiento electromagnético: 500 gramos aproximadamente (pág. 3). Cilindrada en estado operativo OFF: inferior a casi el 0% (pág. 3).",
+     "html": "<ul>\n<li>Reducción de masa por omisión de acoplamiento electromagnético: 500 gramos aproximadamente <span class=\"pag\">pág. 3</span>.</li>\n<li>Cilindrada en estado operativo OFF: inferior a casi el 0% <span class=\"pag\">pág. 3</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Vista del compresor de climatización de regulación externa DENSO 6 SEU 12 — Fuente: COMPRESOR__AC.PDF, pág. 3 (pág. 3).",
+     "html": "<ul>\n<li>Vista del compresor de climatización de regulación externa DENSO 6 SEU 12 — Fuente: COMPRESOR__AC.PDF, pág. 3 <span class=\"pag\">pág. 3</span>.</li>\n</ul>"
     }
    ]
   },
@@ -28952,6 +29048,78 @@
    ]
   },
   {
+   "id": "ssc.valvula-reguladora-compresor.compresor-ac",
+   "nt": 716,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "valvula-reguladora-compresor-variable",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Válvula reguladora del compresor del climatizador",
+   "codigo": "N280",
+   "menu": "Válvula reguladora del compres N280",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "COMPRESOR__AC.PDF, págs. 5-10",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "compresor",
+   "relacionados": [
+    "compresor",
+    "unidad-control-climatizador",
+    "sensor-evaporador"
+   ],
+   "palabras": [
+    "N280",
+    "electroválvula",
+    "PWM",
+    "500 Hz",
+    "estado flotante",
+    "cárter",
+    "alta presión",
+    "baja presión"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Gobernar la cilindrada del compresor regulando el paso de refrigerante entre la cámara de alta presión, la cámara del cárter y el lado de baja presión (pág. 5, 7).",
+     "html": "<p>Gobernar la cilindrada del compresor regulando el paso de refrigerante entre la cámara de alta presión, la cámara del cárter y el lado de baja presión <span class=\"pag\">pág. 5, 7</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Válvula reguladora del compresor del climatizador N280 (pág. 4, 5). Combina un componente mecánico (A) sensible a la presión y una unidad electromagnética (B) que realiza la función esencial de regulación (pág. 5). En la válvula confluyen las tres presiones del sistema: cárter del compresor (A), lado de alta presión (B) y lado de baja presión (C) (pág. 7).",
+     "html": "<ul>\n<li>Válvula reguladora del compresor del climatizador N280 <span class=\"pag\">pág. 4, 5</span>.</li>\n<li>Combina un componente mecánico (A) sensible a la presión y una unidad electromagnética (B) que realiza la función esencial de regulación <span class=\"pag\">pág. 5</span>.</li>\n<li>En la válvula confluyen las tres presiones del sistema: cárter del compresor (A), lado de alta presión (B) y lado de baja presión (C) <span class=\"pag\">pág. 7</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Accionamiento electromagnético (B) : La unidad E87 excita la válvula mediante una señal cuadrada de frecuencia fija a 500 Hz modulada en anchura de impulsos (PWM). Debido a la alta frecuencia, el empujador se mantiene en un estado \"flotante\", realizando desplazamientos de pocas décimas de milímetro entre sus topes para regular todos los márgenes intermedios (pág. 6). Estado sin corriente : La válvula permanece totalmente abierta interconectando el conducto de alta presión (B) con el cárter (A), compensando ambas presiones (pág. 7). Plena carga (100% de caudal) : La válvula cierra la comunicación entre el cárter (A) y la alta presión (B). Al disminuir la presión en el cárter, la alta presión sobre los pistones vence la fuerza del muelle del disco oscilante y lo desplaza a máxima inclinación (pág. 8, 9). Regulación descendente / Estado OFF (inferior a 2%) : Al desactivar o solicitar muy baja potencia, la válvula abre la conexión entre alta presión y cárter. Se igualan las presiones a ambos lados del pistón y el muelle del disco desplaza la inclinación a valor inferior al 2% (alimentación cero o compresor OFF) (pág. 9, 10). Componente mecánico (A - Regulación por baja presión C) : Si la baja presión (C) es demasiado alta, comprime el elemento sensible interior, permitiendo al empujador separar más la alta presión del cárter para aumentar la capacidad de aspiración del compresor (pág. 11, 12). Si la baja presión (C) es demasiado baja, el elemento se relaja y limita la carrera del empujador, impidiendo la separación total entre alta presión y cárter para reducir la cilindrada (pág. 12).",
+     "html": "<ul>\n<li><strong>Accionamiento electromagnético (B)</strong>: La unidad E87 excita la válvula mediante una señal cuadrada de frecuencia fija a 500 Hz modulada en anchura de impulsos (PWM). Debido a la alta frecuencia, el empujador se mantiene en un estado \"flotante\", realizando desplazamientos de pocas décimas de milímetro entre sus topes para regular todos los márgenes intermedios <span class=\"pag\">pág. 6</span>.</li>\n<li><strong>Estado sin corriente</strong>: La válvula permanece totalmente abierta interconectando el conducto de alta presión (B) con el cárter (A), compensando ambas presiones <span class=\"pag\">pág. 7</span>.</li>\n<li><strong>Plena carga (100% de caudal)</strong>: La válvula cierra la comunicación entre el cárter (A) y la alta presión (B). Al disminuir la presión en el cárter, la alta presión sobre los pistones vence la fuerza del muelle del disco oscilante y lo desplaza a máxima inclinación <span class=\"pag\">pág. 8, 9</span>.</li>\n<li><strong>Regulación descendente / Estado OFF (inferior a 2%)</strong>: Al desactivar o solicitar muy baja potencia, la válvula abre la conexión entre alta presión y cárter. Se igualan las presiones a ambos lados del pistón y el muelle del disco desplaza la inclinación a valor inferior al 2% (alimentación cero o compresor OFF) <span class=\"pag\">pág. 9, 10</span>.</li>\n<li><strong>Componente mecánico (A - Regulación por baja presión C)</strong>:<ul>\n<li>Si la baja presión (C) es demasiado alta, comprime el elemento sensible interior, permitiendo al empujador separar más la alta presión del cárter para aumentar la capacidad de aspiración del compresor <span class=\"pag\">pág. 11, 12</span>.</li>\n<li>Si la baja presión (C) es demasiado baja, el elemento se relaja y limita la carrera del empujador, impidiendo la separación total entre alta presión y cárter para reducir la cilindrada <span class=\"pag\">pág. 12</span>.</li>\n</ul>\n</li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Frecuencia de la señal PWM de excitación (E87): 500 Hz (pág. 6). Recorrido del empujador en estado flotante: pocas décimas de milímetro (pág. 6). Nivel de alimentación en posición de desconexión / OFF: inferior a 2% (pág. 10). Caudal impelido a plena carga: 100% (pág. 9).",
+     "html": "<ul>\n<li>Frecuencia de la señal PWM de excitación (E87): 500 Hz <span class=\"pag\">pág. 6</span>.</li>\n<li>Recorrido del empujador en estado flotante: pocas décimas de milímetro <span class=\"pag\">pág. 6</span>.</li>\n<li>Nivel de alimentación en posición de desconexión / OFF: inferior a 2% <span class=\"pag\">pág. 10</span>.</li>\n<li>Caudal impelido a plena carga: 100% <span class=\"pag\">pág. 9</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "En ausencia de señal eléctrica de excitación (sin corriente), la válvula permanece abierta uniendo la alta presión con el cárter, manteniendo el compresor en un nivel de alimentación inferior al 2% (compresor OFF) (pág. 7, 10).",
+     "html": "<p>En ausencia de señal eléctrica de excitación (sin corriente), la válvula permanece abierta uniendo la alta presión con el cárter, manteniendo el compresor en un nivel de alimentación inferior al 2% (compresor OFF) <span class=\"pag\">pág. 7, 10</span>.</p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Ubicación y vías de presión A (cárter), B (alta presión) y C (baja presión) en la válvula reguladora N280 — Fuente: COMPRESOR__AC.PDF, pág. 7 (pág. 7). Posición del empujador de la válvula N280 en régimen de plena carga y en regulación descendente — Fuente: COMPRESOR__AC.PDF, pág. 8 y 9 (pág. 8, 9).",
+     "html": "<ul>\n<li>Ubicación y vías de presión A (cárter), B (alta presión) y C (baja presión) en la válvula reguladora N280 — Fuente: COMPRESOR__AC.PDF, pág. 7 <span class=\"pag\">pág. 7</span>.</li>\n<li>Posición del empujador de la válvula N280 en régimen de plena carga y en regulación descendente — Fuente: COMPRESOR__AC.PDF, pág. 8 y 9 <span class=\"pag\">pág. 8, 9</span>.</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.unidad-control-climatizador.208-regulacion-de-la-temperatura",
    "nt": 97,
    "modulo": "ssc",
@@ -32184,6 +32352,67 @@
      "titulo": "Errores de concepto frecuentes",
      "texto": "Suponer que al fallar un sensor de temperatura el Climatronic deja de funcionar por completo, ignorando el modo de funcionamiento de emergencia. (pág. 17)",
      "html": "<ul>\n<li>Suponer que al fallar un sensor de temperatura el Climatronic deja de funcionar por completo, ignorando el modo de funcionamiento de emergencia. <span class=\"pag\">pág. 17</span></li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.regulacion-automatica.compresor-ac",
+   "nt": 715,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-automatica",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Regulación externa del rendimiento del compresor",
+   "codigo": "E87",
+   "menu": "Regulación externa del rendimi E87",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "COMPRESOR__AC.PDF, págs. 4",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "valvula-reguladora-compresor",
+    "sensor-evaporador",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "regulación externa",
+    "E87",
+    "G263",
+    "N280",
+    "Reheat",
+    "temperatura evaporador"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Ajustar de forma progresiva la potencia frigorífica del compresor en función de las necesidades térmicas reales del evaporador para reducir el consumo energético y evitar la necesidad de calefactar adicionalmente el aire (Reheat) (pág. 4).",
+     "html": "<p>Ajustar de forma progresiva la potencia frigorífica del compresor en función de las necesidades térmicas reales del evaporador para reducir el consumo energético y evitar la necesidad de calefactar adicionalmente el aire (Reheat) <span class=\"pag\">pág. 4</span>.</p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "La regulación se efectúa externamente mediante la unidad de manejo e indicación E87, la cual gobierna una válvula de regulación electromagnética (N280) que modifica la cilindrada del compresor a partir de la temperatura de salida del aire en el evaporador (pág. 4).",
+     "html": "<p>La regulación se efectúa externamente mediante la unidad de manejo e indicación E87, la cual gobierna una válvula de regulación electromagnética (N280) que modifica la cilindrada del compresor a partir de la temperatura de salida del aire en el evaporador <span class=\"pag\">pág. 4</span>.</p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Captación de datos de entrada : La unidad de manejo e indicación E87 procesa la señal enviada por el transmisor de temperatura del aire a la salida del evaporador G263 (pág. 4). Gestión del rendimiento frigorífico : A partir del valor de temperatura medido por el transmisor G263, la unidad E87 modula la señal de excitación hacia la válvula reguladora N280 para ajustar la presión del cárter del compresor (pág. 4). Optimización energética : Adapta la temperatura de salida del aire en el evaporador ajustando exactamente el caudal de gas refrigerante necesario, minimizando el calentamiento posterior mediante la calefacción (Reheat) y reduciendo la demanda de potencia al motor (pág. 4).",
+     "html": "<ul>\n<li><strong>Captación de datos de entrada</strong>: La unidad de manejo e indicación E87 procesa la señal enviada por el transmisor de temperatura del aire a la salida del evaporador G263 <span class=\"pag\">pág. 4</span>.</li>\n<li><strong>Gestión del rendimiento frigorífico</strong>: A partir del valor de temperatura medido por el transmisor G263, la unidad E87 modula la señal de excitación hacia la válvula reguladora N280 para ajustar la presión del cárter del compresor <span class=\"pag\">pág. 4</span>.</li>\n<li><strong>Optimización energética</strong>: Adapta la temperatura de salida del aire en el evaporador ajustando exactamente el caudal de gas refrigerante necesario, minimizando el calentamiento posterior mediante la calefacción (Reheat) y reduciendo la demanda de potencia al motor <span class=\"pag\">pág. 4</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Creer que el compresor trabaja siempre a máxima potencia y que la temperatura del habitáculo se regula únicamente mezclando aire frío con aire caliente procedente de la calefacción (Reheat) (pág. 4).",
+     "html": "<p>Creer que el compresor trabaja siempre a máxima potencia y que la temperatura del habitáculo se regula únicamente mezclando aire frío con aire caliente procedente de la calefacción (Reheat) <span class=\"pag\">pág. 4</span>.</p>"
     }
    ]
   },
@@ -52999,6 +53228,83 @@
      "titulo": "Imágenes requeridas",
      "texto": "Detalle de la polea del compresor con la pieza preformada de goma y el disco de arrastre — Fuente: Compresor 6 SEU 12 de Denso.docx, pág. 2 (pág. 2).",
      "html": "<ul>\n<li>Detalle de la polea del compresor con la pieza preformada de goma y el disco de arrastre — Fuente: Compresor 6 SEU 12 de Denso.docx, pág. 2 <span class=\"pag\">pág. 2</span>.</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.polea-compresor.compresor-ac",
+   "nt": 717,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "polea-compresor",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Polea de impulsión con protección contra sobrecarga",
+   "codigo": "",
+   "menu": "Polea de impulsión con protección cont",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "COMPRESOR__AC.PDF, págs. 11-12",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "compresor",
+   "relacionados": [
+    "compresor"
+   ],
+   "palabras": [
+    "dispositivo de sobrecarga",
+    "elemento moldeado de goma",
+    "grafito",
+    "disco de arrastre",
+    "deformacion"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Transmitir el giro de la correa única del motor al eje del compresor y desacoplar mecánicamente el arrastre en caso de bloqueo interno para proteger la correa y evitar la inhabilitación de los grupos auxiliares del motor (pág. 11).",
+     "html": "<p>Transmitir el giro de la correa única del motor al eje del compresor y desacoplar mecánicamente el arrastre en caso de bloqueo interno para proteger la correa y evitar la inhabilitación de los grupos auxiliares del motor <span class=\"pag\">pág. 11</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Polea de impulsión sin acoplamiento electromagnético (pág. 11). Dispone de un dispositivo de seguridad integrado contra sobrecargas (pág. 11). La polea (A) se une al disco de arrastre del compresor (C) mediante un elemento moldeado de goma provisto de una capa de grafito (B) (pág. 11).",
+     "html": "<ul>\n<li>Polea de impulsión sin acoplamiento electromagnético <span class=\"pag\">pág. 11</span>.</li>\n<li>Dispone de un dispositivo de seguridad integrado contra sobrecargas <span class=\"pag\">pág. 11</span>.</li>\n<li>La polea (A) se une al disco de arrastre del compresor (C) mediante un elemento moldeado de goma provisto de una capa de grafito (B) <span class=\"pag\">pág. 11</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Funcionamiento normal : El compresor gira solidario con el motor térmico. Durante la alimentación cero (rendimiento < 2%), el compresor no genera carga sobre la polea (pág. 11, 12). Funcionamiento en sobrecarga (bloqueo) : Si el compresor se bloquea por avería mecánica, la polea (A) se desplaza a través del elemento de goma con capa de grafito (B) sobre el disco de arrastre bloqueado (C). El disco de arrastre se deforma permanentemente según la temperatura del elemento de goma (caliente o frío), liberando el giro de la polea (pág. 12).",
+     "html": "<ul>\n<li><strong>Funcionamiento normal</strong>: El compresor gira solidario con el motor térmico. Durante la alimentación cero (rendimiento &lt; 2%), el compresor no genera carga sobre la polea <span class=\"pag\">pág. 11, 12</span>.</li>\n<li><strong>Funcionamiento en sobrecarga (bloqueo)</strong>: Si el compresor se bloquea por avería mecánica, la polea (A) se desplaza a través del elemento de goma con capa de grafito (B) sobre el disco de arrastre bloqueado (C). El disco de arrastre se deforma permanentemente según la temperatura del elemento de goma (caliente o frío), liberando el giro de la polea <span class=\"pag\">pág. 12</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Deformación permanente del elemento moldeado de goma o del disco de arrastre tras un episodio de sobrecarga o bloqueo del compresor (pág. 12).",
+     "html": "<p>Deformación permanente del elemento moldeado de goma o del disco de arrastre tras un episodio de sobrecarga o bloqueo del compresor <span class=\"pag\">pág. 12</span>.</p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Al desacoplarse por sobrecarga, la polea gira libremente sin arrastrar el eje del compresor, evitando que la correa auxiliar se rompa y garantizando que la bomba de refrigerante del motor y el alternador sigan funcionando (pág. 11).",
+     "html": "<p>Al desacoplarse por sobrecarga, la polea gira libremente sin arrastrar el eje del compresor, evitando que la correa auxiliar se rompa y garantizando que la bomba de refrigerante del motor y el alternador sigan funcionando <span class=\"pag\">pág. 11</span>.</p>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Inspección visual del elemento de goma y del disco de arrastre para verificar si presentan deformación o desplazamiento fuera de alineación (pág. 12).",
+     "html": "<p>Inspección visual del elemento de goma y del disco de arrastre para verificar si presentan deformación o desplazamiento fuera de alineación <span class=\"pag\">pág. 12</span>.</p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Si el elemento moldeado de goma o el disco de arrastre están deformados por actuación de la protección de sobrecarga, es obligatorio sustituir el compresor del climatizador completo (pág. 12).",
+     "html": "<p>Si el elemento moldeado de goma o el disco de arrastre están deformados por actuación de la protección de sobrecarga, es obligatorio sustituir el compresor del climatizador completo <span class=\"pag\">pág. 12</span>.</p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Detalle de la polea de impulsión (A), el elemento de goma con grafito (B) y el disco de arrastre (C) en estado normal y deformado por sobrecarga — Fuente: COMPRESOR__AC.PDF, pág. 11 y 12 (pág. 11, 12).",
+     "html": "<ul>\n<li>Detalle de la polea de impulsión (A), el elemento de goma con grafito (B) y el disco de arrastre (C) en estado normal y deformado por sobrecarga — Fuente: COMPRESOR__AC.PDF, pág. 11 y 12 <span class=\"pag\">pág. 11, 12</span>.</li>\n</ul>"
     }
    ]
   },
