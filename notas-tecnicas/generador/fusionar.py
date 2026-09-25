@@ -40,6 +40,7 @@ DIR_NOTAS = RAIZ / "notas"
 DIR_MAESTRAS = RAIZ / "maestras"
 DIR_PENDIENTES = DIR_MAESTRAS / "pendientes"
 MODELO = os.environ.get("FUSION_MODELO", "").strip() or "auto"   # «auto»: el Flash más nuevo que vea la key
+MODELOS = []   # alternativas si MODELO está saturado (las rellena main)
 
 APARTADOS = {
     "componente": ["Misión", "Tipos y características", "Principio de funcionamiento",
@@ -171,9 +172,9 @@ def huella(fichas):
 
 # ───────────────────────────── Gemini ─────────────────────────────
 
-def elegir_modelo(cliente):
-    """El Gemini Flash estable más nuevo que la key puede usar (sin lite, preview,
-    imagen ni audio). Así no hay que tocar el código cuando sale uno nuevo."""
+def elegir_modelos(cliente):
+    """Los Gemini Flash estables que la key puede usar, del más nuevo al más viejo
+    (sin lite, preview, imagen ni audio). Si uno está saturado se pasa al siguiente."""
     candidatos = []
     for m in cliente.models.list():
         n = m.name.split("/")[-1]
@@ -184,32 +185,39 @@ def elegir_modelo(cliente):
             continue
         candidatos.append((float(re.search(r"\d+(?:\.\d+)?", n).group()), n))
     print("Flash disponibles:", ", ".join(n for _, n in sorted(candidatos)) or "ninguno")
-    if not candidatos:
-        return "gemini-flash-latest"
-    return max(candidatos)[1]
+    return [n for _, n in sorted(candidatos, reverse=True)] or ["gemini-flash-latest"]
 
 
 def pedir(cliente, texto, tipo):
     from google.genai import types
     apart = APARTADOS.get(tipo, APARTADOS["componente"])
     sistema = SISTEMA + f"\nTipo de nota: {tipo}. Apartados posibles, en este orden: {', '.join(apart)}.\n"
+    global MODELO
     for intento in range(4):
-        try:
-            r = cliente.models.generate_content(
-                model=MODELO, contents=texto,
-                config=types.GenerateContentConfig(
-                    system_instruction=sistema, temperature=0.2,
-                    response_mime_type="application/json", response_schema=Maestra))
-            if r.parsed:
-                return r.parsed
-            return Maestra.model_validate(json.loads(r.text))
-        except Exception as e:  # cuota o error transitorio: esperar y reintentar
-            codigo = getattr(e, "code", None)
-            if isinstance(codigo, int) and 400 <= codigo < 500 and codigo != 429:
-                raise RuntimeError(f"Gemini rechaza la petición ({codigo}): {str(e)[:200]}")
-            espera = 30 * (intento + 1)
-            print(f"    aviso: {str(e)[:160]} · reintento en {espera}s")
-            time.sleep(espera)
+        for modelo in [MODELO] + [m for m in MODELOS if m != MODELO]:
+            try:
+                r = cliente.models.generate_content(
+                    model=modelo, contents=texto,
+                    config=types.GenerateContentConfig(
+                        system_instruction=sistema, temperature=0.2,
+                        response_mime_type="application/json", response_schema=Maestra))
+                if modelo != MODELO:
+                    print(f"    usando {modelo} ({MODELO} saturado)")
+                    MODELO = modelo
+                if r.parsed:
+                    return r.parsed
+                return Maestra.model_validate(json.loads(r.text))
+            except Exception as e:
+                codigo = getattr(e, "code", None)
+                print(f"    aviso ({modelo}): {str(e)[:140]}")
+                if codigo in (404, 500, 503, 504):   # modelo retirado o saturado: probar otro
+                    continue
+                if isinstance(codigo, int) and 400 <= codigo < 500 and codigo != 429:
+                    raise RuntimeError(f"Gemini rechaza la petición ({codigo}): {str(e)[:200]}")
+                break                                # cuota (429) u otro: esperar
+        espera = 30 * (intento + 1)
+        print(f"    reintento en {espera}s")
+        time.sleep(espera)
     raise RuntimeError("Gemini no ha respondido tras 4 intentos")
 
 
@@ -340,9 +348,10 @@ def main():
         sys.exit("Falta GEMINI_API_KEY (secreto del repositorio en GitHub).")
     from google import genai
     cliente = genai.Client(api_key=key)
-    global MODELO
+    global MODELO, MODELOS
+    MODELOS = elegir_modelos(cliente)
     if MODELO == "auto":
-        MODELO = elegir_modelo(cliente)
+        MODELO = MODELOS[0]
     print(f"Modelo: {MODELO}")
     if a.probar:
         m = pedir(cliente, "### FICHA NT1 [prueba] — Filtro de habitáculo\n\n"
