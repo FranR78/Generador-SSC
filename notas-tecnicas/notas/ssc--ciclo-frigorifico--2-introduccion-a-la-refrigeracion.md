@@ -6,57 +6,54 @@ nt: 10
 tipo: proceso
 subtipo: fundamento
 clase: fundamento
-titulo: "Principios físicos de la refrigeración y termodinámica"
-menu: "Principios físicos de la refrigeración"
+titulo: "Ciclo frigorífico"
+menu: "Ciclo frigorífico"
 grupo: "Circuito frigorífico"
 clave: ciclo-frigorifico
-area: general
+area: climatizacion
 sistema: "circuito-frigorifico"
-fuentes: "2. Introducción a la refrigeración.pdf, págs. 17-19"
-relacionados: ["refrigerante-r134a", "refrigerante-r1234yf"]
-palabras: ["calor", "frio", "ebullicion", "condensacion", "distension", "punto critico", "punto de rocio"]
+fuentes: "2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, págs. 127-140"
+relacionados: ["compresor", "condensador", "filtro-deshidratador", "valvula-expansion", "evaporador"]
+palabras: ["alta presión", "baja presión", "expansor", "compresor", "evaporador", "condensador", "botella deshidratadora"]
 ---
 
 ## Objeto
 
-Explicación de las leyes físicas naturales de la termodinámica que regulan el intercambio de calor, las variaciones de presión y los cambios de estado en los sistemas de climatización (págs. 17-19).
+Explicación del ciclo cerrado de refrigeración para extraer calor del habitáculo y disiparlo en el aire exterior mediante cambios de estado del fluido (pág. 127, 134, 136).
 
 ## Fundamento
 
-Los cambios de estado físico de la materia (sólido, líquido, gaseoso) exigen un aporte o cesión energética en forma de calor y son fenómenos reversibles mediante transferencias térmicas y variaciones de presión en un circuito cerrado (págs. 17-18).
+Combina los procesos de expansión-evaporación (producción de frío / absorción de calor) en la zona de baja presión con los de compresión-condensación (producción de calor / cesión térmica) en la zona de alta presión (pág. 113, 136, 140).
 
 ## Desarrollo
 
-Principios térmicos y termodinámicos fundamentales:
-- Una sustancia absorbe calor al pasar de estado líquido a gaseoso (evaporación) y entrega calor al pasar de estado gaseoso a líquido (condensación) (pág. 18).
-- La propagación térmica se produce de forma natural siempre desde la zona o sustancia más caliente hacia la más fría (pág. 18).
-- El frío no existe como magnitud física medible; representa la ausencia de calor o un calor de baja intensidad (considerado cotidianamente por debajo de 0 ºC) (pág. 18).
-- Relación presión-temperatura: en un circuito cerrado, la presión y la temperatura están unidas; al aumentar la presión aumenta la temperatura de ebullición y al disminuir la presión disminuye dicha temperatura (págs. 18-19).
-- Ejemplos de enfriamiento por evaporación: el alcohol rociado en la piel (absorbe calor corporal), el botijo (el agua se evapora por los poros de la arcilla absorbiendo calor del interior) o la distensión de un gas a través de una válvula (pág. 18).
-- Punto crítico: límite de presión y temperatura por encima del cual no existe separación entre fase líquida y vapor. Si se calienta un gas por encima de su punto crítico, no es posible licuarlo debido a una descomposición química y molecular (pág. 18).
-- Punto de rocío: temperatura a la que comienza a condensarse el vapor de agua contenido en el aire (pág. 19).
-- Enfriamiento por distensión: cuando un gas sometido a presión se expande o distensa repentinamente al atravesar una válvula, su temperatura desciende bruscamente (pág. 19).
-- Transiciones de fase (entalpía del sistema): sólido a líquido (fusión), líquido a sólido (solidificación), líquido a gas (vaporización), gas a líquido (condensación), sólido a gas (sublimación), gas a sólido (deposición), gas a plasma (ionización) y plasma a gas (desionización) (pág. 19).
+- **Elementos y función en el ciclo**:
+  1. **Expansor / Válvula de expansión**: Orificio calibrado que estrangula el fluido líquido reduciendo bruscamente la presión (pág. 127, 140).
+  2. **Evaporador**: Intercambiador donde el fluido a baja presión ebulle y se evapora a 10 ºC absorbiendo el calor del aire del habitáculo impulsado por el ventilador (pág. 128, 129, 140).
+  3. **Compresor**: Aspira el vapor a baja presión, lo comprime elevando su presión y temperatura, y lo envía al condensador (pág. 134, 140).
+  4. **Condensador**: Intercambiador exterior enfriado por soplado donde el vapor a alta presión cede calor al aire exterior y se licúa por completo (pág. 136, 140).
+  5. **Botella deshidratadora**: Depósito que acumula el fluido líquido a alta presión y retiene humedad o impurezas antes del expansor (pág. 138, 140).
+- **Parámetros del fluido en el circuito**:
+  - Salida del compresor / entrada al condensador: Vapor a Alta Presión y Alta Temperatura (45 ºC) (pág. 140).
+  - Tramo condensador - botella deshidratadora: Líquido a Alta Presión y Temperatura Media (35 ºC) (pág. 140).
+  - Salida del expansor / entrada al evaporador: Mezcla Líquido + Vapor (20% vapor) a Baja Presión y Baja Temperatura (10 ºC) (pág. 140).
+  - Salida del evaporador / entrada al compresor: Vapor a Baja Presión y Baja Temperatura (10 ºC) (pág. 140).
 
-
-
-- Puntos de ebullición de agentes frigoríficos a presión atmosférica: R134a (-26,5 ºC) y R1234yf (-29 ºC) (pág. 19).
+| 
+|---|---|---|---|---|---|
+|
 
 ## Valores de referencia
 
-- Conversión a grados Kelvin: K = ºC + 273,15 (ejemplo: 10 ºC = 283,15 K; cero absoluto = -273,15 ºC) (pág. 18).
-- Conversión a grados Fahrenheit: ºF = (ºC x 9/5) + 32 (ejemplo: 10 ºC = 50 ºF) (pág. 18).
-- Ebullición del agua: 100 ºC a 1 bar de presión atmosférica; 135 ºC a 3 bares de presión en circuito presurizado (pág. 18).
-- Ebullición del aceite de compresor: 380-400 ºC (pág. 19).
-- Ebullición del agente frigorífico R134a: -26,5 ºC a presión atmosférica (pág. 19).
-- Ebullición del agente frigorífico R1234yf: -29 ºC a presión atmosférica (pág. 19).
+- Temperatura de vaporización en evaporador (baja presión): 10 ºC (pág. 140).
+- Temperatura de condensación en condensador (alta presión): 35 ºC a 45 ºC (pág. 140).
+- Porcentaje de vapor tras la expansión: 20% (pág. 140).
 
 ## Errores de concepto frecuentes
 
-- Tratar el frío como una energía independiente o medible, en lugar de la ausencia de calor (pág. 18).
-- Considerar que la temperatura de ebullición de un líquido es constante y no varía al modificar la presión (págs. 18-19).
+Creer que el aire acondicionado "introduce frío", en lugar de comprender que extrae el calor presente en el habitáculo evaporando el refrigerante (pág. 136).
 
 ## Imágenes requeridas
 
-- Esquema con los estados de agregación de la materia (sólido, líquido, gas, plasma) y sus transiciones de fase en función de la entalpía — Fuente: 2. Introducción a la refrigeración.pdf, pág. 19
-- Gráfica de las curvas de presión de vapor de los fluidos refrigerantes R134a y R1234yf — Fuente: 2. Introducción a la refrigeración.pdf, pág. 19
+- Esquema del circuito frigorífico con expansor | evaporador | ventilador | compresor y condensador — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx | pág. 135 y 137 (pág. 135 | 137) |
+- Diagrama de los dos niveles de presión (alta en rojo | baja en azul) y tabla de estados del fluido — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx | pág. 139 y 140 (pág. 139 | 140) |  |  |

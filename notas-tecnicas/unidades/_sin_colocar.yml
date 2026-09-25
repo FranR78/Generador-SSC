@@ -19,6 +19,7 @@ clima:
   - calentamiento-aire   # Calentamiento del aire
   - calor-residual   # Función de calor residual
   - calor-sensible-y-latente   # Intercambios térmicos, calor sensible y calor latente
+  - cambios-de-estado   # Cambios de estado de la materia
   - capa-ozono-protocolo-montreal   # Protección de la capa de ozono y Protocolo de Montreal
   - carga-refrigerante-estacion   # Carga de refrigerante en la bombona de la estación de servicio
   - cerradura-porton-electrico   # Cerradura del portón eléctrico y motor de cierre asistido
@@ -29,6 +30,7 @@ clima:
   - circuito-electrico-aire-acondicionado-semiautomatico   # Circuito eléctrico de aire acondicionado semiautomático con sensor MAP y compresor variable
   - circuito-electrico-climatizador-automatico   # Circuito eléctrico y gestión electrónica del climatizador automático
   - codificacion-calefaccion-independiente   # Codificación de la unidad de control para calefacción adicional
+  - composicion-aire   # Composición del aire atmosférico y contaminación
   - comprobacion-climatizacion   # Comprobación anual de la climatización
   - comprobacion-presiones-y-rendimiento-climatizador   # Comprobación de presiones de trabajo y rendimiento de la climatización
   - conductores-electricos-cableado   # Conductores eléctricos y dimensionamiento de cableado
@@ -77,9 +79,11 @@ clima:
   - exceso-refrigerante   # Diagnóstico por exceso de fluido refrigerante mediante lectura de manómetros
   - falta-refrigerante   # Diagnóstico por falta de fluido refrigerante mediante lectura de manómetros
   - filtro-habitaculo   # Filtro de habitáculo
+  - fuentes-de-calor-vehiculo   # Fuentes de calor en un vehículo
   - funcion-easy-open   # Función Easy Open del portón eléctrico
   - gancho-remolque-escamoteable   # Gancho de remolque escamoteable eléctrico
   - guardallamas   # Guardallamas
+  - higrometria-humedad-aire   # Humedad absoluta y humedad relativa del aire
   - identificacion-compatibilidad-equipos-carga   # Identificación y compatibilidad de equipos de carga por refrigerante
   - identificacion-refrigerantes   # Identificación de refrigerantes y compatibilidad de estaciones de carga
   - indicadores-ambientales-pao-pca   # Indicadores ambientales PAO y PCA
@@ -98,6 +102,7 @@ clima:
   - ley-de-ohm   # Ley de Ohm
   - limitador-fuerza-cinturon   # Limitador adaptativo de la fuerza del cinturón
   - liquido-refrigerante-motor   # Interacción entre la climatización y la refrigeración del motor
+  - lunas-atermicas   # Lunas atérmicas
   - magnitudes-pao-pca   # Magnitudes ambientales de los refrigerantes (PAO y PCA)
   - malos-olores   # Malos olores en el habitáculo
   - manipulacion-r1234yf   # Protocolo de seguridad para la manipulación de R-1234yf
@@ -116,6 +121,7 @@ clima:
   - potencia-electrica   # Potencia eléctrica
   - potenciometro-distribucion-aire   # Potenciómetro de la distribución de aire
   - potenciometro-trampilla-temperatura   # Potenciómetro del motor de la trampilla de temperatura
+  - presion-temperatura-cambio-estado   # Presión, temperatura y cambio de estado
   - pretensor-cinturon   # Pretensor pirotécnico de cinturón de cinta metálica
   - principios-electricos-transformaciones-energia   # Principios eléctricos y transformaciones de energía en el automóvil
   - prl-refrigerantes   # Seguridad y riesgos en la manipulación de fluidos refrigerantes
@@ -135,6 +141,7 @@ clima:
   - regulacion-manual   # Climatización no regulada
   - regulacion-sistema-climatizacion   # Regulación y protección del sistema de climatización
   - regulador-iluminacion   # Regulador de la iluminación
+  - requisitos-instalacion-climatizacion   # Requisitos de la instalación de climatización
   - resistencia-electrica   # Resistencia eléctrica
   - retrovisores-exteriores   # Espejos retrovisores exteriores
   - ruidos-compresor   # Diagnóstico de ruidos anómalos en el compresor
@@ -153,6 +160,7 @@ clima:
   - sustitucion-compresor-y-lavado-circuito   # Sustitución de un compresor nuevo y preparación del circuito
   - tamiz-filtro-aspiracion   # Tamiz del filtro de aspiración del compresor
   - techo-panoramico   # Techo panorámico deflector y corredizo
+  - temperatura-y-calor   # Nociones de temperatura y calor
   - tension-electrica-voltaje   # Tensión eléctrica o voltaje
   - tipos-corriente-automovil   # Tipos de corriente eléctrica en el automóvil
   - turbina-aire-combustion   # Turbina de aire de combustión

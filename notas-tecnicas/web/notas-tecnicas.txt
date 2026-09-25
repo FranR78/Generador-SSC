@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">654 notas · 25/09/2026</p>
+  <p class="sidebar-meta">664 notas · 25/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -257,7 +257,7 @@
     <li><a href="#nt8">NT8 · Directiva 2006/40/CE sobre emisiones d</a></li>
     <li><a href="#nt9">NT9 · Reglamento (UE) nº 517/2014 sobre gase</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
-    <li><a href="#grp-ciclo-frigorifico">Principios físicos de la refrigeración y termodinámica <span class="menu-cuenta">36 fuentes</span></a></li>
+    <li><a href="#grp-ciclo-frigorifico">Ciclo frigorífico <span class="menu-cuenta">36 fuentes</span></a></li>
     <li><a href="#grp-compresor">Compresor de aire acondicionado <span class="menu-cuenta">23 fuentes</span></a></li>
     <li><a href="#grp-condensador">Condensador <span class="menu-cuenta">9 fuentes</span></a></li>
     <li><a href="#grp-filtro-deshidratador-mirilla">Filtro deshidratador <span class="menu-cuenta">10 fuentes</span></a></li>
@@ -293,7 +293,7 @@
     <li><a href="#grp-valvula-reguladora-compresor-variable">Electroválvula de regulación del compresor <span class="menu-cuenta">3 fuentes</span></a></li>
     <li><a href="#nt49">NT49 · Desmontaje y montaje del condensador</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Distribución de aire</span></li>
-    <li><a href="#grp-filtro-habitaculo">Filtro de habitáculo <span class="menu-cuenta">7 fuentes</span></a></li>
+    <li><a href="#grp-filtro-habitaculo">Filtro de habitáculo <span class="menu-cuenta">8 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
     <li><a href="#nt52">NT52 · Desmontaje y montaje del evaporador</a></li>
     <li><a href="#grp-estrangulador-orifico-calibrado">Estrangulador <span class="menu-cuenta">4 fuentes</span></a></li>
@@ -381,7 +381,7 @@
     <li><a href="#nt145">NT145 · Magnitudes ambientales de los refriger</a></li>
     <li><a href="#nt146">NT146 · Normativa europea de gases fluorados e</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
-    <li><a href="#grp-higrometria-y-confort">Estrés climatológico y márgenes de agrado térmico <span class="menu-cuenta">8 fuentes</span></a></li>
+    <li><a href="#grp-higrometria-y-confort">Estrés climatológico y márgenes de agrado térmico <span class="menu-cuenta">9 fuentes</span></a></li>
     <li><a href="#nt169">NT169 · Diagnosis de actuadores del climatizad</a></li>
     <li><a href="#nt170">NT170 · Ajuste básico de los component J255</a></li>
     <li><a href="#nt174">NT174 · Autodiagnóstico de la calefacc J364</a></li>
@@ -572,6 +572,21 @@
     <li><a href="#nt654">NT654 · Termoconmutador para desactiva F163</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
     <li><a href="#nt661">NT661 · Silenciador</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Normativa y medioambiente</span></li>
+    <li><a href="#nt664">NT664 · Composición del aire atmosférico y con</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
+    <li><a href="#nt666">NT666 · Nociones de temperatura y calor</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
+    <li><a href="#nt667">NT667 · Humedad absoluta y humedad relativa de</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
+    <li><a href="#nt668">NT668 · Cambios de estado de la materia</a></li>
+    <li><a href="#nt669">NT669 · Presión, temperatura y cambio de estad</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
+    <li><a href="#nt670">NT670 · Fuentes de calor en un vehículo</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Carroceria y cristales</span></li>
+    <li><a href="#nt671">NT671 · Lunas atérmicas</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
+    <li><a href="#nt672">NT672 · Requisitos de la instalación de climat</a></li>
   </ul>
 </nav>
 
@@ -1097,68 +1112,65 @@ El PCA por sí solo no define el daño real; se requiere calcular la masa total 
   </section>
 
   <div class="grupo-componente" id="grp-ciclo-frigorifico">
-    <div class="grupo-cab"><span class="grupo-nombre">Principios físicos de la refrigeración y termodinámica</span><span class="grupo-cuenta">36 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Ciclo frigorífico</span><span class="grupo-cuenta">36 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 36 · NT10 · 2. Introducción a la refrigeración.pdf, págs. 17-19</summary>
+      <summary>Variante 1 de 36 · NT10 · 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, págs. 127-140</summary>
   <section id="nt10" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 10 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
-      <h1>Principios físicos de la refrigeración y termodinámica</h1>
+      <h1>Ciclo frigorífico</h1>
       <div class="apartado">
         <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
-        <p>Los cambios de estado físico de la materia (sólido, líquido, gaseoso) exigen un aporte o cesión energética en forma de calor y son fenómenos reversibles mediante transferencias térmicas y variaciones de presión en un circuito cerrado (págs. 17-18).</p>
+        <p>Combina los procesos de expansión-evaporación (producción de frío / absorción de calor) en la zona de baja presión con los de compresión-condensación (producción de calor / cesión térmica) en la zona de alta presión (pág. 113, 136, 140).</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
-        <p>Principios térmicos y termodinámicos fundamentales:</p>
-<ul>
-<li>Una sustancia absorbe calor al pasar de estado líquido a gaseoso (evaporación) y entrega calor al pasar de estado gaseoso a líquido (condensación) (pág. 18).</li>
-<li>La propagación térmica se produce de forma natural siempre desde la zona o sustancia más caliente hacia la más fría (pág. 18).</li>
-<li>El frío no existe como magnitud física medible; representa la ausencia de calor o un calor de baja intensidad (considerado cotidianamente por debajo de 0 ºC) (pág. 18).</li>
-<li>Relación presión-temperatura: en un circuito cerrado, la presión y la temperatura están unidas; al aumentar la presión aumenta la temperatura de ebullición y al disminuir la presión disminuye dicha temperatura (págs. 18-19).</li>
-<li>Ejemplos de enfriamiento por evaporación: el alcohol rociado en la piel (absorbe calor corporal), el botijo (el agua se evapora por los poros de la arcilla absorbiendo calor del interior) o la distensión de un gas a través de una válvula (pág. 18).</li>
-<li>Punto crítico: límite de presión y temperatura por encima del cual no existe separación entre fase líquida y vapor. Si se calienta un gas por encima de su punto crítico, no es posible licuarlo debido a una descomposición química y molecular (pág. 18).</li>
-<li>Punto de rocío: temperatura a la que comienza a condensarse el vapor de agua contenido en el aire (pág. 19).</li>
-<li>Enfriamiento por distensión: cuando un gas sometido a presión se expande o distensa repentinamente al atravesar una válvula, su temperatura desciende bruscamente (pág. 19).</li>
-<li>
-<p>Transiciones de fase (entalpía del sistema): sólido a líquido (fusión), líquido a sólido (solidificación), líquido a gas (vaporización), gas a líquido (condensación), sólido a gas (sublimación), gas a sólido (deposición), gas a plasma (ionización) y plasma a gas (desionización) (pág. 19).</p>
+        <ul>
+<li><strong>Elementos y función en el ciclo</strong>:<ol>
+<li><strong>Expansor / Válvula de expansión</strong>: Orificio calibrado que estrangula el fluido líquido reduciendo bruscamente la presión (pág. 127, 140).</li>
+<li><strong>Evaporador</strong>: Intercambiador donde el fluido a baja presión ebulle y se evapora a 10 ºC absorbiendo el calor del aire del habitáculo impulsado por el ventilador (pág. 128, 129, 140).</li>
+<li><strong>Compresor</strong>: Aspira el vapor a baja presión, lo comprime elevando su presión y temperatura, y lo envía al condensador (pág. 134, 140).</li>
+<li><strong>Condensador</strong>: Intercambiador exterior enfriado por soplado donde el vapor a alta presión cede calor al aire exterior y se licúa por completo (pág. 136, 140).</li>
+<li><strong>Botella deshidratadora</strong>: Depósito que acumula el fluido líquido a alta presión y retiene humedad o impurezas antes del expansor (pág. 138, 140).</li>
+</ol>
 </li>
-<li>
-<p>Puntos de ebullición de agentes frigoríficos a presión atmosférica: R134a (-26,5 ºC) y R1234yf (-29 ºC) (pág. 19).</p>
+<li><strong>Parámetros del fluido en el circuito</strong>:<ul>
+<li>Salida del compresor / entrada al condensador: Vapor a Alta Presión y Alta Temperatura (45 ºC) (pág. 140).</li>
+<li>Tramo condensador - botella deshidratadora: Líquido a Alta Presión y Temperatura Media (35 ºC) (pág. 140).</li>
+<li>Salida del expansor / entrada al evaporador: Mezcla Líquido + Vapor (20% vapor) a Baja Presión y Baja Temperatura (10 ºC) (pág. 140).</li>
+<li>Salida del evaporador / entrada al compresor: Vapor a Baja Presión y Baja Temperatura (10 ºC) (pág. 140).</li>
+</ul>
 </li>
 </ul>
+<p>| 
+|---|---|---|---|---|---|
+|</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
         <ul>
-<li>Conversión a grados Kelvin: K = ºC + 273,15 (ejemplo: 10 ºC = 283,15 K; cero absoluto = -273,15 ºC) (pág. 18).</li>
-<li>Conversión a grados Fahrenheit: ºF = (ºC x 9/5) + 32 (ejemplo: 10 ºC = 50 ºF) (pág. 18).</li>
-<li>Ebullición del agua: 100 ºC a 1 bar de presión atmosférica; 135 ºC a 3 bares de presión en circuito presurizado (pág. 18).</li>
-<li>Ebullición del aceite de compresor: 380-400 ºC (pág. 19).</li>
-<li>Ebullición del agente frigorífico R134a: -26,5 ºC a presión atmosférica (pág. 19).</li>
-<li>Ebullición del agente frigorífico R1234yf: -29 ºC a presión atmosférica (pág. 19).</li>
+<li>Temperatura de vaporización en evaporador (baja presión): 10 ºC (pág. 140).</li>
+<li>Temperatura de condensación en condensador (alta presión): 35 ºC a 45 ºC (pág. 140).</li>
+<li>Porcentaje de vapor tras la expansión: 20% (pág. 140).</li>
 </ul>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Objeto</div>
-        <p>Explicación de las leyes físicas naturales de la termodinámica que regulan el intercambio de calor, las variaciones de presión y los cambios de estado en los sistemas de climatización (págs. 17-19).</p>
+        <p>Explicación del ciclo cerrado de refrigeración para extraer calor del habitáculo y disiparlo en el aire exterior mediante cambios de estado del fluido (pág. 127, 134, 136).</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Errores de concepto frecuentes</div>
-        <ul>
-<li>Tratar el frío como una energía independiente o medible, en lugar de la ausencia de calor (pág. 18).</li>
-<li>Considerar que la temperatura de ebullición de un líquido es constante y no varía al modificar la presión (págs. 18-19).</li>
-</ul>
+        <p>Creer que el aire acondicionado "introduce frío", en lugar de comprender que extrae el calor presente en el habitáculo evaporando el refrigerante (pág. 136).</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT10_01</code> Esquema con los estados de agregación de la materia (sólido, líquido, gas, plasma) y sus transiciones de fase en función de la entalpía — Fuente: 2. Introducción a la refrigeración.pdf, pág. 19</span></div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT10_02</code> Gráfica de las curvas de presión de vapor de los fluidos refrigerantes R134a y R1234yf — Fuente: 2. Introducción a la refrigeración.pdf, pág. 19</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT10_01</code> Esquema del circuito frigorífico con expansor | evaporador | ventilador | compresor y condensador — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx | pág. 135 y 137 (pág. 135 | 137) |</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT10_02</code> Diagrama de los dos niveles de presión (alta en rojo | baja en azul) y tabla de estados del fluido — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx | pág. 139 y 140 (pág. 139 | 140) |  |  |</span></div>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">2. Introducción a la refrigeración.pdf, págs. 17-19</p>
+        <p class="fuentes">2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, págs. 127-140</p>
       </div>
     </div>
   </section>
@@ -11336,10 +11348,10 @@ Al aplicar corriente eléctrica a la bobina, se genera un campo magnético que a
   </section>
 
   <div class="grupo-componente" id="grp-filtro-habitaculo">
-    <div class="grupo-cab"><span class="grupo-nombre">Filtro de habitáculo</span><span class="grupo-cuenta">7 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Filtro de habitáculo</span><span class="grupo-cuenta">8 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 7 · NT51 · 7. Condensadores y evaporadores.pdf, págs. 65, 68</summary>
+      <summary>Variante 1 de 8 · NT51 · 7. Condensadores y evaporadores.pdf, págs. 65, 68</summary>
   <section id="nt51" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 51 </div>
     <div class="nota-body">
@@ -11392,7 +11404,7 @@ Al aplicar corriente eléctrica a la bobina, se genera un campo magnético que a
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 7 · NT240 · CLIMATIZACION INTRODUCCION.PDF, págs. 177-188, 190-198</summary>
+      <summary>Variante 2 de 8 · NT240 · CLIMATIZACION INTRODUCCION.PDF, págs. 177-188, 190-198</summary>
   <section id="nt240" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 240 </div>
     <div class="nota-body">
@@ -11450,7 +11462,7 @@ Al aplicar corriente eléctrica a la bobina, se genera un campo magnético que a
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 7 · NT289 · LA CLIMATIZACIÓN.pdf, págs. 105-106</summary>
+      <summary>Variante 3 de 8 · NT289 · LA CLIMATIZACIÓN.pdf, págs. 105-106</summary>
   <section id="nt289" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 289 </div>
     <div class="nota-body">
@@ -11499,7 +11511,7 @@ Al aplicar corriente eléctrica a la bobina, se genera un campo magnético que a
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 7 · NT448 · EL FILTRO DE HABITACULO.PDF, págs. 1-7</summary>
+      <summary>Variante 4 de 8 · NT448 · EL FILTRO DE HABITACULO.PDF, págs. 1-7</summary>
   <section id="nt448" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 448 <span class="fusionado">Valeo</span></div>
     <div class="nota-body">
@@ -11556,7 +11568,7 @@ Al aplicar corriente eléctrica a la bobina, se genera un campo magnético que a
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 7 · NT449 · EL FILTRO DE HABITACULO.PDF, págs. 7-10</summary>
+      <summary>Variante 5 de 8 · NT449 · EL FILTRO DE HABITACULO.PDF, págs. 7-10</summary>
   <section id="nt449" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 449 <span class="fusionado">Valeo</span></div>
     <div class="nota-body">
@@ -11609,7 +11621,7 @@ Al aplicar corriente eléctrica a la bobina, se genera un campo magnético que a
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 7 · NT492 · AA AUTOMOCION MD FR.pdf, págs. 127-128</summary>
+      <summary>Variante 6 de 8 · NT492 · AA AUTOMOCION MD FR.pdf, págs. 127-128</summary>
   <section id="nt492" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 492 </div>
     <div class="nota-body">
@@ -11654,7 +11666,7 @@ Al aplicar corriente eléctrica a la bobina, se genera un campo magnético que a
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 7 · NT548 · 301_e         Climatización en el Touareg.pdf, págs. 6-7</summary>
+      <summary>Variante 7 de 8 · NT548 · 301_e         Climatización en el Touareg.pdf, págs. 6-7</summary>
   <section id="nt548" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 548 </div>
     <div class="nota-body">
@@ -11682,6 +11694,74 @@ Al aplicar corriente eléctrica a la bobina, se genera un campo magnético que a
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">301_e         Climatización en el Touareg.pdf, págs. 6-7</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 8 de 8 · NT665 · 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, págs. 21-23, 28, 32-44</summary>
+  <section id="nt665" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 665 </div>
+    <div class="nota-body">
+      <h1>Filtro del habitáculo</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Retener las partículas alérgicas, agentes infecciosos, polvo y gases tóxicos impidiendo su paso al habitáculo, purificar el aire ambiente y facilitar el desempañado de los cristales (pág. 21, 32, 33, 45).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li><strong>Filtración mecánica y electrostática</strong>: Las fibras de polipropileno generan un campo eléctrico que polariza las partículas neutras del aire y las atrae hacia el tejido mediante impacto inercial, intercepción directa, difusión browniana y aumento eléctrico (pág. 37, 39).</li>
+<li><strong>Estructura en pliegues</strong>: Minimiza la resistencia al paso del aire y aumenta la superficie útil de filtrado (pág. 37).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Diámetro de partículas capturadas: desde 0,01 µm hasta más de 1,0 µm (pág. 40).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Reducción brusca del caudal de aire en los difusores.</li>
+<li>Empañado persistente del parabrisas.</li>
+<li>Acumulación de polvo sobre el salpicadero.</li>
+<li>Presencia de malos olores al conectar la calefacción o el aire acondicionado (pág. 42, 43).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Pérdida de capacidad filtrante por colmatación o rotura del tejido, elevando la concentración de alérgenos y gases en el interior del vehículo (pág. 21).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <ul>
+<li>Comprobación del caudal de aire: utilizando la herramienta de diagnóstico de fabricantes como Valeo, que mide el caudal en la salida de los difusores sin abrir el capó (pág. 43).</li>
+<li>Inspección visual directa del grado de suciedad de los pliegues (pág. 22).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <ul>
+<li><strong>Filtro antipolen convencional</strong>: Malla o entramado de fibras sintéticas de polipropileno (pág. 28, 37).</li>
+<li><strong>Filtro de carbón activado</strong>: Gama alta. Incorpora una capa intermedia de carbón activo que absorbe adicionalmente los gases de combustión del escape (SO2, NO2, benceno) (pág. 28, 43, 45).</li>
+<li><strong>Ubicación</strong>: Se instala en la entrada de aire del compartimento motor o entre el impulsor y el evaporador bajo el salpicadero (pág. 35).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <p>Reemplazo cada 15.000 km o al menos una vez al año, o inmediatamente ante síntomas de mal olor o déficit de caudal (pág. 42).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT665_01</code> Elemento filtrante plegado y detalle de la atracción electrostática en la fibra — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, pág. 36 y 38 (pág. 36, 38)</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT665_02</code> Curva de eficacia de filtración según el diámetro de partícula — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, pág. 40 (pág. 40)</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT665_03</code> Muestra de filtro convencional frente a filtro de carbón activado — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, pág. 41 y 44 (pág. 41, 44)</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, págs. 21-23, 28, 32-44</p>
       </div>
     </div>
   </section>
@@ -24118,10 +24198,10 @@ Mide la capacidad de una sustancia para destruir el ozono estratosférico en com
   </section>
 
   <div class="grupo-componente" id="grp-higrometria-y-confort">
-    <div class="grupo-cab"><span class="grupo-nombre">Estrés climatológico y márgenes de agrado térmico</span><span class="grupo-cuenta">8 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Estrés climatológico y márgenes de agrado térmico</span><span class="grupo-cuenta">9 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 8 · NT151 · PRO 13. Climatización Electrónica.pdf, págs. 98-99</summary>
+      <summary>Variante 1 de 9 · NT151 · PRO 13. Climatización Electrónica.pdf, págs. 98-99</summary>
   <section id="nt151" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 151 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -24179,7 +24259,7 @@ Mide la capacidad de una sustancia para destruir el ozono estratosférico en com
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 8 · NT224 · CLIMATIZACION INTRODUCCION.PDF, págs. 5-9</summary>
+      <summary>Variante 2 de 9 · NT224 · CLIMATIZACION INTRODUCCION.PDF, págs. 5-9</summary>
   <section id="nt224" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 224 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -24227,7 +24307,7 @@ Mide la capacidad de una sustancia para destruir el ozono estratosférico en com
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 8 · NT251 · CLIMATIZADOR MD FRAN.docx, págs. 1-2</summary>
+      <summary>Variante 3 de 9 · NT251 · CLIMATIZADOR MD FRAN.docx, págs. 1-2</summary>
   <section id="nt251" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 251 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -24274,7 +24354,7 @@ Mide la capacidad de una sustancia para destruir el ozono estratosférico en com
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 8 · NT263 · LA CLIMATIZACIÓN.pdf, págs. 26-27</summary>
+      <summary>Variante 4 de 9 · NT263 · LA CLIMATIZACIÓN.pdf, págs. 26-27</summary>
   <section id="nt263" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 263 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -24321,7 +24401,7 @@ Mide la capacidad de una sustancia para destruir el ozono estratosférico en com
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 8 · NT320 · MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 3-5</summary>
+      <summary>Variante 5 de 9 · NT320 · MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 3-5</summary>
   <section id="nt320" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 320 <span class="subtipo">Fundamento</span><span class="fusionado">Hella</span></div>
     <div class="nota-body proceso">
@@ -24376,7 +24456,7 @@ Mide la capacidad de una sustancia para destruir el ozono estratosférico en com
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 8 · NT400 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 56, 58-59, 82-85</summary>
+      <summary>Variante 6 de 9 · NT400 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 56, 58-59, 82-85</summary>
   <section id="nt400" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 400 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -24416,7 +24496,7 @@ Mide la capacidad de una sustancia para destruir el ozono estratosférico en com
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 8 · NT539 · 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 4-5</summary>
+      <summary>Variante 7 de 9 · NT539 · 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 4-5</summary>
   <section id="nt539" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 539 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -24464,7 +24544,7 @@ Mide la capacidad de una sustancia para destruir el ozono estratosférico en com
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 8 de 8 · NT566 · Audi 100_1991_Climatizador.pdf, págs. 9</summary>
+      <summary>Variante 8 de 9 · NT566 · Audi 100_1991_Climatizador.pdf, págs. 9</summary>
   <section id="nt566" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 566 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -24503,6 +24583,60 @@ Mide la capacidad de una sustancia para destruir el ozono estratosférico en com
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">Audi 100_1991_Climatizador.pdf, págs. 9</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 9 de 9 · NT663 · 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, págs. 2-11, 18-20, 54-57, 6</summary>
+  <section id="nt663" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 663 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Higrometría y confort térmico</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El desequilibrio térmico compromete la comodidad y la salud de los ocupantes. El sistema de aire acondicionado o climatización es el medio eficaz para controlar la acumulación de calor, mantener el estado de bienestar y regular el contenido de humedad del aire (pág. 18, 20, 54, 60).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Curvas del agrado y caudal de aire</strong>:<ul>
+<li>Para temperatura ambiental baja (-20 ºC): requiere temperatura interior de 28 ºC y un caudal de aire de 8 kg/min (pág. 5).</li>
+<li>Para temperatura ambiental media (10 ºC): requiere temperatura interior de 21,5 ºC y un caudal de aire de 4 kg/min (pág. 9).</li>
+<li>Para temperatura ambiental alta (40 ºC): requiere temperatura interior de 23 ºC y un caudal de aire de 10 kg/min (pág. 7).</li>
+</ul>
+</li>
+<li><strong>Influencia de la humedad</strong>: Una alta humedad multiplica la carga corporal de las personas. El estado de bienestar se sitúa en un rango de humedad relativa entre el 30% y el 70% para temperaturas entre 18 ºC y 28 ºC (pág. 3, 20).</li>
+<li><strong>Comparativa de temperaturas en habitáculo</strong> (turismo de clase media tras 1 h de circulación a 30 ºC ambiente con radiación solar):<ul>
+<li>Cabeza: 23 ºC con climatizador / 42 ºC sin climatizador (pág. 10).</li>
+<li>Tórax: 24 ºC con climatizador / 40 ºC sin climatizador (pág. 10).</li>
+<li>Pies: 28 ºC con climatizador / 35 ºC sin climatizador (pág. 10).</li>
+</ul>
+</li>
+<li><strong>Deshumidificación y visibilidad</strong>: El exceso de humedad del aire ambiente se condensa sobre las aletas del evaporador, reduciendo la humedad relativa del habitáculo al 25-35%. El aire deshumidificado absorbe la humedad interior, eliminando el vaho de los cristales y mejorando la visibilidad en otoño e invierno (pág. 54, 56).</li>
+<li><strong>Efectos orgánicos</strong>: Una carga climatológica alta provoca el incremento de la transpiración, de la frecuencia cardíaca y de la temperatura corporal, derivando en fatiga, somnolencia y pérdida de concentración (pág. 11, 61).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Margen del área de bienestar: 18 ºC a 28 ºC con un 30% a 70% de humedad relativa (pág. 20).</li>
+<li>Humedad relativa deshumidificada en habitáculo: 25% a 35% (pág. 56).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Definición de las condiciones de temperatura, humedad y renovación de aire necesarias para lograr la comodidad, salud y seguridad de los ocupantes en el habitáculo del vehículo (pág. 2-11, 18-20).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT663_01</code> Curvas del agrado con las demandas de temperatura interior y caudal de aire según la temperatura exterior — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, pág. 2 (pág. 2)</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT663_02</code> Cuadro comparativo de temperaturas por zonas del cuerpo con y sin climatizador — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, pág. 10 (pág. 10)</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT663_03</code> Gráfica de la zona de confort en función de la humedad relativa y la temperatura — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, pág. 20 (pág. 20)</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, págs. 2-11, 18-20, 54-57, 60-61</p>
       </div>
     </div>
   </section>
@@ -32085,8 +32219,443 @@ En la versión de nueva generación, ha sido revisada técnicamente y adaptada e
     </div>
   </section>
 
+  <section id="nt664" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 664 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Composición del aire atmosférico y contaminación</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El aire introducido al habitáculo contiene gases atmosféricos naturales y contaminantes generados por la combustión en motores, procesos industriales y erosión. En retenciones o espacios cerrados, la contaminación interior puede ser de 2 a 8 veces superior a la exterior (pág. 21, 27).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Composición del aire atmosférico</strong>:<ul>
+<li>Nitrógeno: 77% - 78% (pág. 14, 15).</li>
+<li>Oxígeno: 21% - 23% (pág. 14, 15).</li>
+<li>Argón: 0,9% (pág. 14).</li>
+<li>Dióxido de carbono, vapor de agua y otros gases: 0,07% - 1% (pág. 14, 15).</li>
+<li><strong>Ozono (O3)</strong>: Estado alotrópico del oxígeno formado por tres átomos (O3), a diferencia de la molécula diatómica del aire (O2) (pág. 16).</li>
+</ul>
+</li>
+<li><strong>Agentes contaminantes en el automóvil</strong>:<ul>
+<li>Partículas (polen, esporas, ácaros, mohos, hollín, amianto, metales pesados, desgaste de neumáticos). Concentración media habitual: 0,6 mg/m³ (12 mg inhalados en 24 h) (pág. 23).</li>
+<li><strong>Dióxido de azufre (SO2)</strong>: Proviene de escapes de vehículos sin catalizador. Provoca irritación ocular y alteraciones respiratorias. Al combinarse con partículas de negro de carbono acentúa su nocividad y reduce las defensas orgánicas (pág. 45, 46).</li>
+<li><strong>Dióxido de nitrógeno (NO2)</strong>: Producido al reaccionar el monóxido de nitrógeno con el aire. Inflama las vías aéreas y obstruye el flujo en personas con asma y bronquitis (pág. 46, 48, 49).</li>
+<li><strong>Benceno e hidrocarburos policíclicos</strong>: Procedentes del humo de escape diésel. Tienen efectos cancerígenos, soporíferos y alteran la formulación sanguínea (pág. 30, 52).</li>
+</ul>
+</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Concentración media de partículas en aire: 0,6 mg/m³ (pág. 23).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Análisis de la composición química del aire atmosférico y de los contaminantes gaseosos y de partículas que afectan al interior del automóvil (pág. 12-17, 23, 27, 45-53).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT664_01</code> Gráfico de sectores de los componentes del aire atmosférico — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, pág. 13 (pág. 13)</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT664_02</code> Estructura de la molécula de ozono — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, pág. 17 (pág. 17)</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, págs. 12-17, 23, 27, 30, 45-53</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt666" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 666 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Nociones de temperatura y calor</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>La temperatura mide el nivel térmico de un cuerpo con un termómetro. El calor es la energía transmitida de un cuerpo caliente a uno frío hasta alcanzar el equilibrio térmico (pág. 62, 75, 76).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Efectos de la aportación de calor</strong>:<ul>
+<li>Aumento de la temperatura y dilatación del cuerpo (longitud y volumen) (pág. 75).</li>
+<li>Incremento de la resistencia eléctrica en conductores (pág. 75).</li>
+<li>Aumento de presión a volumen constante, o aumento de volumen a presión constante (pág. 75).</li>
+</ul>
+</li>
+<li><strong>Principios de intercambio</strong>:<ul>
+<li>Calentamiento = Ganancia de calor.</li>
+<li>Refrigeración = Pérdida de calor (Pérdida de calor = Ganancia de frío) (pág. 75).</li>
+<li>El cuerpo a mayor temperatura no contiene necesariamente mayor cantidad de calor, ya que esta depende también de su masa (pág. 78).</li>
+</ul>
+</li>
+<li><strong>Unidades de medida</strong>:<ul>
+<li><strong>Caloría</strong>: Calor necesario para elevar 1 g de agua de 14,5 ºC a 15,5 ºC a presión atmosférica (pág. 77).</li>
+<li><strong>Julio</strong>: Unidad de energía. Equivalencia: 1 cal = 4,185 julios; 1 kcal = 1.000 cal = 4,185 kilojulios (pág. 76, 77).</li>
+</ul>
+</li>
+<li><strong>Escalas de temperatura</strong>: Celsius (ºC), Fahrenheit (ºF) y Kelvin (K). Cero absoluto: -273,16 ºC (0 K / -459,67 ºF) (pág. 122).</li>
+<li><strong>Mecanismos de transferencia de calor</strong>:<ul>
+<li><strong>Conducción</strong>: Transferencia contacto a contacto a través de la materia (pág. 76, 127).</li>
+<li><strong>Convección</strong>: Transferencia mediante la circulación de un fluido (pág. 76, 127).</li>
+<li><strong>Radiación</strong>: Transferencia por ondas electromagnéticas sin soporte material (pág. 76, 127).</li>
+</ul>
+</li>
+</ul>
+<p>| 
+|---|---|---|---|---|---|
+| 
+|</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Equivalencias: 1 cal = 4,185 J; 1 kcal = 4,185 kJ (pág. 76, 77).</li>
+<li>Cero absoluto: -273,16 ºC = 0 K (pág. 122).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Estudio de los conceptos físicos de temperatura, medición termométrica, cantidad de calor y los mecanismos de transferencia de energía térmica (pág. 62, 76, 123).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <p>Asumir que un cuerpo con mayor temperatura almacena siempre más calor que uno a menor temperatura (pág. 78).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT666_01</code> Efectos del calor sobre la masa de un cuerpo (dilatación | temperatura | resistencia) — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx | pág. 70-72 (pág. 70 | 71 | 72) |</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT666_02</code> Comparación entre escalas termométricas ºF | ºC y K — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx | pág. 122 (pág. 122) |  |  |  |</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT666_03</code> Representación de la conducción | convección y radiación — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx | pág. 124-126 (pág. 124 | 125 | 126) |  |</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, págs. 62-78, 121-126</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt667" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 667 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Humedad absoluta y humedad relativa del aire</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>La cantidad máxima de agua en estado gaseoso que puede contener el aire depende de su temperatura. Al elevarse la temperatura, el aire admite más vapor de agua antes de llegar a la saturación (pág. 80, 81).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Humedad absoluta</strong>: Masa de agua presente en un volumen determinado de aire, medida en gramos por metro cúbico (g/m³) (pág. 79).</li>
+<li><strong>Humedad relativa</strong>: Relación porcentual (%) entre la masa de vapor de agua contenida en el aire y la cantidad máxima que podría contener a esa misma temperatura antes de condensar (pág. 79).</li>
+<li><strong>Valores límite de saturación de agua en el aire según temperatura</strong>:<ul>
+<li>-5 ºC: 3,25 g/m³ (pág. 81).</li>
+<li>0 ºC: 4,85 g/m³ (pág. 81).</li>
+<li>5 ºC: 6,80 g/m³ (pág. 81).</li>
+<li>10 ºC: 9,41 g/m³ (pág. 81).</li>
+<li>15 ºC: 12,84 g/m³ (pág. 81).</li>
+<li>20 ºC: 17,32 g/m³ (pág. 81).</li>
+<li>25 ºC: 23,07 g/m³ (pág. 81).</li>
+<li>28 ºC: 27,26 g/m³ (pág. 81).</li>
+</ul>
+</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Cantidad de agua en saturación a 0 ºC: 4,85 g/m³ (pág. 81).</li>
+<li>Cantidad de agua en saturación a 20 ºC: 17,32 g/m³ (pág. 81).</li>
+<li>Cantidad de agua en saturación a 28 ºC: 27,26 g/m³ (pág. 81).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Cuantificación de la masa de vapor de agua disuelta en el aire atmosférico en función de la temperatura (pág. 79, 82).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <p>Confundir la humedad absoluta en g/m³ con el porcentaje de humedad relativa (pág. 79).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT667_01</code> Curva y tabla de contenido máximo de vapor de agua (g/m³) según la temperatura (ºC) — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, pág. 80 y 81 (pág. 80, 81)</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, págs. 79-82</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt668" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 668 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Cambios de estado de la materia</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Los estados líquido y gaseoso se clasifican como fluidos (pág. 84). Las transiciones de fase ocurren a temperatura constante mientras conviven ambas fases, requiriendo la absorción o cesión de una cantidad determinada de calor (pág. 93, 95).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Procesos de cambio de estado</strong>:<ul>
+<li><strong>Fusión</strong>: Transición de sólido a líquido absorbiendo calor (pág. 83, 87).</li>
+<li><strong>Solidificación</strong>: Transición de líquido a sólido cediendo calor (pág. 83, 89).</li>
+<li><strong>Vaporización / Evaporación</strong>: Transición de líquido a gas absorbiendo calor del entorno (pág. 83, 93, 95, 113).</li>
+<li><strong>Licuefacción / Condensación</strong>: Transición de gas a líquido cediendo calor al exterior (pág. 83, 95).</li>
+<li><strong>Sublimación</strong>: Transición directa de sólido a gas o viceversa (pág. 83).</li>
+</ul>
+</li>
+<li><strong>Fases del calentamiento de un líquido</strong>:<ol>
+<li>Aportación de calor en fase líquida: la temperatura sube (pág. 93).</li>
+<li>Aportación de calor en cambio de fase (líquido + vapor): la temperatura permanece fija durante la ebullición (pág. 93).</li>
+<li>Aportación de calor en fase vapor: la temperatura vuelve a aumentar (pág. 93).</li>
+</ol>
+</li>
+<li><strong>Volatilidad de los fluidos</strong>: Mide la velocidad de evaporación. A mayor velocidad de evaporación, mayor es la tasa de absorción de calor y más intensa la sensación de frío producida (pág. 110, 111, 113).</li>
+</ul>
+<p>| 
+|---|---|---|---|
+|</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>La cantidad de calor intercambiada en la evaporación es exactamente idéntica a la liberada durante la licuefacción del mismo fluido (pág. 95).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Análisis de las transformaciones entre las fases sólida, líquida y gaseosa mediante intercambio de calor latente (pág. 83, 84, 93).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <p>Creer que durante la ebullición la temperatura del fluido sigue elevándose al aplicar más fuego (pág. 93).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT668_01</code> Diagrama general de cambios de estado entre sólido | líquido y gas — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx | pág. 83 (pág. 83) |  |</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT668_02</code> Fases del calentamiento del agua hasta su vaporización total — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx | pág. 92-94 (pág. 92 | 93 | 94) |</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, págs. 83-97, 110-113</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt669" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 669 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Presión, temperatura y cambio de estado</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>La temperatura de cambio de estado de un fluido es directamente proporcional a la presión aplicada. Variar la presión de un fluido modifica su temperatura y su capacidad para absorber o ceder calor (pág. 103, 106).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Efecto de la presión sobre la ebullición</strong>:<ul>
+<li>Aumentar la presión: eleva la temperatura de ebullición y conserva la fase líquida a temperaturas superiores (pág. 101).</li>
+<li>Disminuir la presión: reduce la temperatura de ebullición y permite la evaporación a temperaturas más bajas (pág. 101).</li>
+<li><em>Ejemplo en agua</em>: ebullición a 100 ºC a 1 bar (nivel del mar); ebullición a 71 ºC a 0,5 bar; ebullición a 126 ºC a 1,4 bar (pág. 102, 103).</li>
+</ul>
+</li>
+<li><strong>Leyes de compresión y expansión</strong>:<ul>
+<li><strong>Compresión de un gas</strong>: incrementa la presión y aumenta la temperatura, cediendo calor al medio exterior. Favorece la licuefacción (pág. 106, 115).</li>
+<li><strong>Expansión de un fluido</strong>: disminuye la presión y reduce la temperatura, absorbiendo calor del medio exterior. Favorece la vaporización. La absorción térmica es mayor cuanto mayor es la caída de presión (pág. 106, 109, 115).</li>
+</ul>
+</li>
+<li><strong>Magnitudes de presión</strong>:<ul>
+<li><strong>Presión atmosférica</strong>: 1 atm = 760 mm Hg ≈ 1 kg/cm² = 1 bar al nivel del mar (pág. 118, 119, 121).</li>
+<li><strong>Presión absoluta</strong>: Suma de la presión atmosférica más la presión manométrica o relativa (Presión absoluta = Presión atmosférica + Presión manométrica) (pág. 119).</li>
+</ul>
+</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Agua a 0,5 bar: ebullición a 71 ºC (pág. 103).</li>
+<li>Agua a 1,0 bar: ebullición a 100 ºC (pág. 103).</li>
+<li>Agua a 1,4 bar: ebullición a 126 ºC (pág. 103).</li>
+<li>Referencia de conversión: 1 kg/cm² = 1 bar = 760 mm Hg (pág. 118, 121).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Análisis del comportamiento de los fluidos al variar la presión, el punto de ebullición y la temperatura en procesos de compresión y expansión (pág. 98, 101, 103, 106).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <p>Confundir la presión absoluta con la lectura manométrica del equipo de taller, la cual ignora la presión atmosférica de base (pág. 119).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT669_01</code> Variación del punto de ebullición según la presión atmosférica a distintas altitudes — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, pág. 102 (pág. 102)</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT669_02</code> Proceso de compresión de gas en cilindro y formación de escarcha en válvula por expansión — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, pág. 104 y 105 (pág. 104, 105)</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT669_03</code> Medición de la presión atmosférica mediante columna de mercurio de 760 mm — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, pág. 118 (pág. 118)</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, págs. 98-109, 114-121</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt670" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 670 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Fuentes de calor en un vehículo</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El balance térmico del habitáculo resulta de la suma de cargas térmicas sensibles (cambio de temperatura) y latentes (cambio de humedad) procedentes del entorno, la mecánica y los ocupantes (pág. 141).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Tipos de calor</strong>:<ul>
+<li><strong>Calor sensible</strong>: Calor que produce un aumento directo de la temperatura medida en el habitáculo (pág. 141).</li>
+<li><strong>Calor latente</strong>: Calor que modifica la humedad relativa del aire ambiente (pág. 141).</li>
+</ul>
+</li>
+<li><strong>Fuentes principales de calor sensible</strong>:<ul>
+<li><strong>Insolación / Radiación solar</strong>: Radiación directa transmitida a través de las lunas y absorbida por la chapa de la carrocería (pág. 143).</li>
+<li><strong>Gradiente térmico exterior/interior</strong>: Conducción de calor a través de la carrocería por diferencia de temperatura (pág. 143).</li>
+<li><strong>Metabolismo de los ocupantes</strong>: Calor corporal emitido por los pasajeros (pág. 146).</li>
+<li><strong>Infiltraciones de aire</strong>: Aire cálido no filtrado que entra por rendijas y desajustes de la carrocería (pág. 146).</li>
+<li><strong>Calor de componentes mecánicos</strong>: Radiación del motor y del sistema de escape descargada hacia el habitáculo (pág. 146).</li>
+<li><strong>Radiación del firme</strong>: Calor emitido por el asfalto caliente de la carretera durante el verano (pág. 146).</li>
+</ul>
+</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Clasificación de las fuentes de calor externas e internas que elevan la temperatura del habitáculo y condicionan la capacidad del sistema de climatización (pág. 141).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <p>Evaluar la carga térmica considerando solo la temperatura del aire exterior, ignorando el fuerte aporte por radiación solar (pág. 143).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT670_01</code> Vehículo expuesto a radiación solar, calor del firme e infiltraciones — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, pág. 142 y 147 (pág. 142, 147)</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, págs. 141-147</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt671" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 671 </div>
+    <div class="nota-body">
+      <h1>Lunas atérmicas</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Reducir la transmisión de radiaciones caloríficas procedentes del sol y aminorar la entrada de ruido exterior al habitáculo (pág. 150).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Filtra los rayos infrarrojos solares responsables del calentamiento por insolación sin alterar la transparencia óptica del cristal, atenuando además las vibraciones acústicas (pág. 150).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li>Delaminación o decoloración de las capas internas por impacto o degradación.</li>
+<li>Fisuras mecánicas que reducen la resistencia del laminado.</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Aumento de la temperatura interior del habitáculo al perder capacidad de filtrado infrarrojo, obligando a un mayor trabajo del climatizador.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Verificación del marcado o serigrafía de homologación en la luna (indicación "atérmico" o "solar") y prueba visual de transparencia sin irisaciones.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <ul>
+<li>Vidrios laminados estratificados: formados por una doble capa de vidrio exterior que encierra dos capas de polivinil butiral (PVB) y una capa intermedia de resina (pág. 150).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <p>Sustitución completa del cristal dañado en caso de rotura o grietas.</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT671_01</code> Ilustración de vehículo equipado con lunas atérmicas — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, pág. 151 (pág. 151)</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, págs. 148-152</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt672" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 672 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Requisitos de la instalación de climatización</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Asegurar una climatización confortable y segura mediante la correcta distribución del flujo de aire, desempañado eficaz, bajo nivel sonoro y mandos de accionar suave (pág. 155).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Exigencias de acondicionamiento de aire</strong>:<ul>
+<li><strong>Estratificación térmica vertical</strong>: Mantenimiento de una diferencia de temperatura de 5 ºC a 8 ºC entre la parte superior e inferior del habitáculo (zona de pies más cálida que la de la cabeza) (pág. 155).</li>
+<li><strong>Homogeneidad horizontal</strong>: Variación máxima de temperatura de 1 ºC a 2 ºC entre la zona anterior/posterior y entre los lados derecho/izquierdo (pág. 155).</li>
+<li><strong>Deshelamiento</strong>: Función rápida para desempañar y deshelar lunas (pág. 155).</li>
+<li><strong>Aislamiento exterior</strong>: Opción de aislamiento mediante la trampilla de recirculación de aire (pág. 155).</li>
+</ul>
+</li>
+<li><strong>Exigencias acústicas y de manejo</strong>:<ul>
+<li><strong>Nivel sonoro</strong>: Sonoridad del sistema limitada a 70 dBA como máximo (pág. 155).</li>
+<li><strong>Ergonomía de mandos</strong>: Pares de accionamiento de los mandos comprendidos entre 2 Ncm y 4 Ncm como máximo, con graduación adecuada (pág. 155).</li>
+</ul>
+</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Estratificación vertical (cabeza/pies): 5 ºC a 8 ºC de diferencia (pág. 155).</li>
+<li>Tolerancia transversal/longitudinal: 1 ºC a 2 ºC de variación (pág. 155).</li>
+<li>Nivel de ruido máximo: 70 dBA (pág. 155).</li>
+<li>Par de esfuerzo de mandos: 2 Ncm a 4 Ncm (pág. 155).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Definición de los criterios de rendimiento térmico, acústico, ergonómico y de aireación que debe cumplir el sistema de climatización del vehículo (pág. 153, 155, 156).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <p>Buscar una temperatura idéntica en todo el habitáculo, desconociendo que la zona superior (cabeza) debe mantenerse más fresca que la inferior (pies) para evitar fatiga (pág. 155).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT672_01</code> Curva del agrado y representación de la estratificación de temperaturas en el vehículo — Fuente: 2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, pág. 154 (pág. 154)</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">2. INTRODUCCIÓN A LA REFRIGERACIÓN.pptx, págs. 153-156</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    654 notas técnicas · generado el 25/09/2026.
+    664 notas técnicas · generado el 25/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
