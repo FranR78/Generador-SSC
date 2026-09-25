@@ -1074,6 +1074,14 @@
    "hecha": false
   },
   {
+   "nombre": "NT207_01",
+   "nt": 207,
+   "titulo": "Autodiagnóstico del sistema Autoclima",
+   "seccion": "10. Diagnóstico",
+   "descripcion": "Muestra de la pantalla del lector de diagnosis indicando la clave de recambio y la codificación del tipo de equipo Autoclima (6K-AUTOCLIMA-220) — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 34",
+   "hecha": false
+  },
+  {
    "nombre": "NT210_01",
    "nt": 210,
    "titulo": "Termosensor del tablero de instrumentos con turbina de aire",
@@ -4442,6 +4450,38 @@
    "hecha": false
   },
   {
+   "nombre": "NT850_01",
+   "nt": 850,
+   "titulo": "Sistema de climatización automática Autoclima",
+   "seccion": "8. Regulación y control",
+   "descripcion": "Esquema del cuadro sinóptico del Autoclima con la red de sensores y unidades de control descentralizadas — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 8",
+   "hecha": false
+  },
+  {
+   "nombre": "NT851_01",
+   "nt": 851,
+   "titulo": "Circuito frigorífico del Autoclima con silenciador de baja presión",
+   "seccion": "2. Fundamentos",
+   "descripcion": "Disposición de los componentes del circuito frigorífico indicando la ubicación del silenciador en baja presión y presostato F129/G65 — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 7",
+   "hecha": false
+  },
+  {
+   "nombre": "NT852_01",
+   "nt": 852,
+   "titulo": "Interruptor térmico de la caja de aguas",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Ubicación del interruptor térmico F38 en el interior de la caja de aguas — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 14",
+   "hecha": false
+  },
+  {
+   "nombre": "NT853_01",
+   "nt": 853,
+   "titulo": "Unidad de control para el aire acondicionado",
+   "seccion": "8. Regulación y control",
+   "descripcion": "Esquema de conexión de la unidad J293 con el acoplamiento magnético N25, ventiladores y conmutador de presión F129 — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 29",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -4466,7 +4506,7 @@
    "hecha": false
   }
  ],
- "total": 841,
+ "total": 845,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -9481,6 +9521,83 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema del circuito frigorífico con inyector y depósito acumulador instalado en la línea de baja presión — Fuente: LA CLIMATIZACIÓN.pdf, pág. 84",
      "html": "<ul>\n<li>Esquema del circuito frigorífico con inyector y depósito acumulador instalado en la línea de baja presión — Fuente: LA CLIMATIZACIÓN.pdf, pág. 84</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.ciclo-frigorifico.silenciador-baja-presion.cd-072-climatizacion-en-el-ibiza-cordoba",
+   "nt": 851,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ciclo-frigorifico",
+   "seccion": "2. Fundamentos",
+   "subgrupo": "",
+   "titulo": "Circuito frigorífico del Autoclima con silenciador de baja presión",
+   "codigo": "",
+   "menu": "Circuito frigorífico del Autoclima con",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 6-7",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "silenciador-baja-presion",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "condensador",
+    "valvula-expansion",
+    "evaporador"
+   ],
+   "palabras": [
+    "silenciador",
+    "baja presión",
+    "R134a",
+    "750 gramos",
+    "44 bares",
+    "compresor autorregulado"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Extraer el calor del aire que entra al habitáculo mediante la circulación de fluido frigorífico R134a en un circuito cerrado equipado con un amortiguador de ondas de presión. (págs. 6-7)",
+     "html": "<p>Extraer el calor del aire que entra al habitáculo mediante la circulación de fluido frigorífico R134a en un circuito cerrado equipado con un amortiguador de ondas de presión. <span class=\"pag\">págs. 6-7</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El circuito frigorífico hace circular el refrigerante a través del condensador, filtro deshidratador, válvula de expansión y evaporador mediante la acción de un compresor autorregulado de 7 cilindros provisto de un silenciador en la tubería de baja presión. (págs. 6-7)",
+     "html": "<p>El circuito frigorífico hace circular el refrigerante a través del condensador, filtro deshidratador, válvula de expansión y evaporador mediante la acción de un compresor autorregulado de 7 cilindros provisto de un silenciador en la tubería de baja presión. <span class=\"pag\">págs. 6-7</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El fluido refrigerante recorre los siguientes componentes: Compresión: El compresor autorregulado de 7 cilindros eleva la presión del refrigerante impulsado por correa Poly V a través de un acoplamiento magnético N25. Incorpora una válvula mecánica de seguridad tarada a 44 bares para protección contra sobrepresiones extremas. (pág. 7) Amortiguación de ruido: En la línea de baja presión, entre la válvula de expansión y el compresor, se intercala un silenciador que amortigua los ruidos generados por las pulsaciones y ondas de presión del gas. (pág. 7) Condensación y deshidratación: El condensador cede calor por delante del radiador del motor. El líquido pasa por el filtro deshidratador para retener humedad y residuos de abrasión. (págs. 6-7) Expansión y evaporación: La válvula de expansión dosifica el caudal hacia el evaporador ubicado en la unidad climática interior, donde el refrigerante se evapora absorbiendo energía térmica del aire del habitáculo. (págs. 6-7)",
+     "html": "<p>El fluido refrigerante recorre los siguientes componentes:</p>\n<ul>\n<li><strong>Compresión:</strong> El compresor autorregulado de 7 cilindros eleva la presión del refrigerante impulsado por correa Poly V a través de un acoplamiento magnético N25. Incorpora una válvula mecánica de seguridad tarada a 44 bares para protección contra sobrepresiones extremas. <span class=\"pag\">pág. 7</span></li>\n<li><strong>Amortiguación de ruido:</strong> En la línea de baja presión, entre la válvula de expansión y el compresor, se intercala un silenciador que amortigua los ruidos generados por las pulsaciones y ondas de presión del gas. <span class=\"pag\">pág. 7</span></li>\n<li><strong>Condensación y deshidratación:</strong> El condensador cede calor por delante del radiador del motor. El líquido pasa por el filtro deshidratador para retener humedad y residuos de abrasión. <span class=\"pag\">págs. 6-7</span></li>\n<li><strong>Expansión y evaporación:</strong> La válvula de expansión dosifica el caudal hacia el evaporador ubicado en la unidad climática interior, donde el refrigerante se evapora absorbiendo energía térmica del aire del habitáculo. <span class=\"pag\">págs. 6-7</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Carga nominal de agente frigorífico R134a: 750 ± 50 gramos. (pág. 7) Tarado de la válvula de seguridad del compresor: 44 bares. (pág. 7) Número de cilindros del compresor: 7 cilindros autorregulados. (pág. 7)",
+     "html": "<ul>\n<li>Carga nominal de agente frigorífico R134a: 750 ± 50 gramos. <span class=\"pag\">pág. 7</span></li>\n<li>Tarado de la válvula de seguridad del compresor: 44 bares. <span class=\"pag\">pág. 7</span></li>\n<li>Número de cilindros del compresor: 7 cilindros autorregulados. <span class=\"pag\">pág. 7</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Suponer que el silenciador del circuito está situado en la línea de alta presión, cuando va instalado en la tubería de baja presión próximo a la aspiración del compresor. (pág. 7)",
+     "html": "<ul>\n<li>Suponer que el silenciador del circuito está situado en la línea de alta presión, cuando va instalado en la tubería de baja presión próximo a la aspiración del compresor. <span class=\"pag\">pág. 7</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Disposición de los componentes del circuito frigorífico indicando la ubicación del silenciador en baja presión y presostato F129/G65 — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 7",
+     "html": "<ul>\n<li>Disposición de los componentes del circuito frigorífico indicando la ubicación del silenciador en baja presión y presostato F129/G65 — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 7</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -29228,6 +29345,98 @@
    ]
   },
   {
+   "id": "ssc.sensor-temperatura-exterior.interruptor-termico-f38.cd-072-climatizacion-en-el-ibiza-cordoba",
+   "nt": 852,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-temperatura-ntc-exterior",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Interruptor térmico de la caja de aguas",
+   "codigo": "F38",
+   "menu": "Interruptor térmico de la caja F38",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 14, 28",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "interruptor-termico-f38",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "control-climatizacion",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "compresor"
+   ],
+   "palabras": [
+    "F38",
+    "interruptor térmico",
+    "5 ºC",
+    "caja de aguas",
+    "protección contra congelación"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Interrumpir la alimentación eléctrica hacia el compresor de climatización cuando la temperatura del aire exterior desciende por debajo de los límites de seguridad antihielo. (págs. 14, 28)",
+     "html": "<p>Interrumpir la alimentación eléctrica hacia el compresor de climatización cuando la temperatura del aire exterior desciende por debajo de los límites de seguridad antihielo. <span class=\"pag\">págs. 14, 28</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Interruptor térmico de contactos mecánicos normalmente cerrados en reposo, instalado en la intemperie dentro de la caja de aguas del vehículo. (pág. 14)",
+     "html": "<p>Interruptor térmico de contactos mecánicos normalmente cerrados en reposo, instalado en la intemperie dentro de la caja de aguas del vehículo. <span class=\"pag\">pág. 14</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "La señal eléctrica de 12 V enviada desde la unidad del Autoclima para conectar el compresor pasa forzosamente a través de los contactos del interruptor F38. Mientras la temperatura de la caja de aguas se mantenga por encima de 5 ºC, el interruptor permanece cerrado. Si la temperatura exterior cae por debajo de 5 ºC, sus contactos se abren, interrumpiendo la línea eléctrica e impidiendo el acoplamiento magnético del compresor. (págs. 14, 28)",
+     "html": "<p>La señal eléctrica de 12 V enviada desde la unidad del Autoclima para conectar el compresor pasa forzosamente a través de los contactos del interruptor F38. Mientras la temperatura de la caja de aguas se mantenga por encima de 5 ºC, el interruptor permanece cerrado. Si la temperatura exterior cae por debajo de 5 ºC, sus contactos se abren, interrumpiendo la línea eléctrica e impidiendo el acoplamiento magnético del compresor. <span class=\"pag\">págs. 14, 28</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Temperatura umbral de apertura de contactos: < 5 ºC. (pág. 14) Tensión de la línea de señal interrumpida: 12 V de corriente continua. (pág. 14)",
+     "html": "<ul>\n<li>Temperatura umbral de apertura de contactos: &lt; 5 ºC. <span class=\"pag\">pág. 14</span></li>\n<li>Tensión de la línea de señal interrumpida: 12 V de corriente continua. <span class=\"pag\">pág. 14</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Sulfatación de los bornes de conexión por exposición a la humedad de la caja de aguas o agarrotamiento del contacto interno en apertura. (págs. 14, 28)",
+     "html": "<p>Sulfatación de los bornes de conexión por exposición a la humedad de la caja de aguas o agarrotamiento del contacto interno en apertura. <span class=\"pag\">págs. 14, 28</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El compresor no se acopla en ninguna condición de servicio aunque la temperatura del habitáculo sea elevada. (págs. 14, 28)",
+     "html": "<p>El compresor no se acopla en ninguna condición de servicio aunque la temperatura del habitáculo sea elevada. <span class=\"pag\">págs. 14, 28</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Medir la continuidad eléctrica con multímetro entre las dos bornes del interruptor F38 con temperatura ambiental superior a 5 ºC. (págs. 14, 28)",
+     "html": "<p>Medir la continuidad eléctrica con multímetro entre las dos bornes del interruptor F38 con temperatura ambiental superior a 5 ºC. <span class=\"pag\">págs. 14, 28</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Verificar la estanqueidad de su conector eléctrico y mantener limpia de hojas la zona de la caja de aguas. (pág. 14)",
+     "html": "<p>Verificar la estanqueidad de su conector eléctrico y mantener limpia de hojas la zona de la caja de aguas. <span class=\"pag\">pág. 14</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Ubicación del interruptor térmico F38 en el interior de la caja de aguas — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 14",
+     "html": "<ul>\n<li>Ubicación del interruptor térmico F38 en el interior de la caja de aguas — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 14</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.sensor-temperatura-interior.208-regulacion-de-la-temperatura",
    "nt": 100,
    "modulo": "ssc",
@@ -39053,6 +39262,99 @@
    ]
   },
   {
+   "id": "ssc.unidad-control-climatizador.modulo-rele-j293.cd-072-climatizacion-en-el-ibiza-cordoba",
+   "nt": 853,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "unidad-control-climatizador",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Unidad de control para el aire acondicionado",
+   "codigo": "J293",
+   "menu": "Unidad de control para el aire J293",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 15, 28-29",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "modulo-rele-j293",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "control-climatizacion",
+   "relacionados": [
+    "embrague-compresor",
+    "presostato"
+   ],
+   "palabras": [
+    "J293",
+    "unidad de control aire acondicionado",
+    "relé de potencia",
+    "F129",
+    "G65",
+    "electroventilador"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Gobernar la alimentación eléctrica directa del acoplamiento electromagnético del compresor (N25) y gestionar la activación de las velocidades del electroventilador (V7 / V35). (págs. 15, 28-29)",
+     "html": "<p>Gobernar la alimentación eléctrica directa del acoplamiento electromagnético del compresor (N25) y gestionar la activación de las velocidades del electroventilador (V7 / V35). <span class=\"pag\">págs. 15, 28-29</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Módulo electrónico de potencia e interfaz de relés instalado en el vano motor, comunicado con la centralita del climatizador (J255), el presostato (F129 o G65) y la unidad de control del motor. (págs. 15, 28-29)",
+     "html": "<p>Módulo electrónico de potencia e interfaz de relés instalado en el vano motor, comunicado con la centralita del climatizador (J255), el presostato (F129 o G65) y la unidad de control del motor. <span class=\"pag\">págs. 15, 28-29</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Recibe la señal de solicitud de conexión del compresor desde la centralita J255 (tras atravesar el conmutador F129/G65 y el interruptor térmico F38). La unidad J293 valida las condiciones de la UCE del motor (régimen, aceleración a plena carga o primeros 10 segundos tras el arranque) y suministra positivo de batería a la bobina del acoplamiento magnético N25. Asimismo, activa el primer escalón de velocidad de los ventiladores al conectar el A/C y conmuta a la velocidad máxima si el termoconmutador F18 detecta más de 105 ºC en el líquido refrigerante. (págs. 15, 28-29)",
+     "html": "<p>Recibe la señal de solicitud de conexión del compresor desde la centralita J255 (tras atravesar el conmutador F129/G65 y el interruptor térmico F38). La unidad J293 valida las condiciones de la UCE del motor (régimen, aceleración a plena carga o primeros 10 segundos tras el arranque) y suministra positivo de batería a la bobina del acoplamiento magnético N25. Asimismo, activa el primer escalón de velocidad de los ventiladores al conectar el A/C y conmuta a la velocidad máxima si el termoconmutador F18 detecta más de 105 ºC en el líquido refrigerante. <span class=\"pag\">págs. 15, 28-29</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Inhibición del compresor por la UCE motor: durante los primeros 10 segundos tras el arranque o por aceleración Kick-down a plena carga. (pág. 15) Activación de velocidad máxima de ventiladores por temperatura de líquido refrigerante: > 105 ºC. (pág. 29)",
+     "html": "<ul>\n<li>Inhibición del compresor por la UCE motor: durante los primeros 10 segundos tras el arranque o por aceleración Kick-down a plena carga. <span class=\"pag\">pág. 15</span></li>\n<li>Activación de velocidad máxima de ventiladores por temperatura de líquido refrigerante: &gt; 105 ºC. <span class=\"pag\">pág. 29</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fallo en los contactos internos de potencia del relé o degradación del conector expuesto a la intemperie en el compartimento motor. (págs. 28-29)",
+     "html": "<p>Fallo en los contactos internos de potencia del relé o degradación del conector expuesto a la intemperie en el compartimento motor. <span class=\"pag\">págs. 28-29</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El compresor no se acopla o los electroventiladores no se activan al conectar la climatización, provocando sobrepresión en el circuito frigorífico. (págs. 28-29)",
+     "html": "<p>El compresor no se acopla o los electroventiladores no se activan al conectar la climatización, provocando sobrepresión en el circuito frigorífico. <span class=\"pag\">págs. 28-29</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Verificar la presencia de masa y tensiones de alimentación en las bornes de entrada del módulo J293 y ejecutar la prueba de actuadores con el equipo de diagnosis. (págs. 29, 33)",
+     "html": "<p>Verificar la presencia de masa y tensiones de alimentación en las bornes de entrada del módulo J293 y ejecutar la prueba de actuadores con el equipo de diagnosis. <span class=\"pag\">págs. 29, 33</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Revisar el estado de los fusibles aéreos montados sobre la batería que alimentan la unidad J293. (pág. 31)",
+     "html": "<p>Revisar el estado de los fusibles aéreos montados sobre la batería que alimentan la unidad J293. <span class=\"pag\">pág. 31</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema de conexión de la unidad J293 con el acoplamiento magnético N25, ventiladores y conmutador de presión F129 — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 29",
+     "html": "<ul>\n<li>Esquema de conexión de la unidad J293 con el acoplamiento magnético N25, ventiladores y conmutador de presión F129 — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 29</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.regulacion-automatica.2-introduccion-a-la-refrigeracion",
    "nt": 20,
    "modulo": "ssc",
@@ -41900,6 +42202,80 @@
      "titulo": "Imágenes requeridas",
      "texto": "Vista seccionada del climatizador Komfort mostrando la pared divisoria de separación entre los flujos izquierdo y derecho — Fuente: Audi A5 Coupé_2008_aire acondicionado.pdf, pág. 307",
      "html": "<ul>\n<li>Vista seccionada del climatizador Komfort mostrando la pared divisoria de separación entre los flujos izquierdo y derecho — Fuente: Audi A5 Coupé_2008_aire acondicionado.pdf, pág. 307</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.regulacion-automatica.autoclima-seat.cd-072-climatizacion-en-el-ibiza-cordoba",
+   "nt": 850,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-automatica",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Sistema de climatización automática Autoclima",
+   "codigo": "",
+   "menu": "Sistema de climatización automática Au",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 4-5, 26-27",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "autoclima-seat",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "distribucion-aire"
+   ],
+   "palabras": [
+    "Autoclima",
+    "regulación electrónica",
+    "estructura descentralizada",
+    "pantalla compartida",
+    "radiocasete"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Regular y mantener automáticamente la temperatura del habitáculo seleccionada por el usuario de forma independiente de las condiciones meteorológicas exteriores. (págs. 4-5)",
+     "html": "<p>Regular y mantener automáticamente la temperatura del habitáculo seleccionada por el usuario de forma independiente de las condiciones meteorológicas exteriores. <span class=\"pag\">págs. 4-5</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El Autoclima utiliza una estructura de control electrónica descentralizada donde participan la unidad de control del equipo (J255), la unidad del aire acondicionado (J293) y la unidad de control del motor para gestionar automáticamente el caudal, la temperatura del aire de entrada, la recirculación y la activación del compresor. (págs. 5, 8-9)",
+     "html": "<p>El Autoclima utiliza una estructura de control electrónica descentralizada donde participan la unidad de control del equipo (J255), la unidad del aire acondicionado (J293) y la unidad de control del motor para gestionar automáticamente el caudal, la temperatura del aire de entrada, la recirculación y la activación del compresor. <span class=\"pag\">págs. 5, 8-9</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El funcionamiento del Autoclima se adapta a las condiciones seleccionadas: Funcionamiento automático: La unidad de control procesa las señales enviadas por los transmisores de temperatura exterior (G17), interior (G56) y del aire de entrada (G191, G192), además de los datos de presión del circuito frigorífico. Con estos datos ajusta la posición del servomotor de la trampilla de mezcla (V68), la velocidad de la turbina mediante el regulador electrónico J126 y la conmutación de la recirculación. (págs. 5, 8-9, 26) Descentralización e integración en pantalla: Los datos de funcionamiento de la climatización se muestran en una pantalla o display central compartido con el equipo de radiocasete y el ordenador de a bordo. (págs. 5, 27) Modo descongelación del parabrisas: Al seleccionar la salida de aire hacia el parabrisas con el mando de distribución, la centralita mantiene la regulación de temperatura pero posiciona forzosamente la trampilla de recirculación en entrada de aire exterior. (pág. 26)",
+     "html": "<p>El funcionamiento del Autoclima se adapta a las condiciones seleccionadas:</p>\n<ul>\n<li><strong>Funcionamiento automático:</strong> La unidad de control procesa las señales enviadas por los transmisores de temperatura exterior (G17), interior (G56) y del aire de entrada (G191, G192), además de los datos de presión del circuito frigorífico. Con estos datos ajusta la posición del servomotor de la trampilla de mezcla (V68), la velocidad de la turbina mediante el regulador electrónico J126 y la conmutación de la recirculación. <span class=\"pag\">págs. 5, 8-9, 26</span></li>\n<li><strong>Descentralización e integración en pantalla:</strong> Los datos de funcionamiento de la climatización se muestran en una pantalla o display central compartido con el equipo de radiocasete y el ordenador de a bordo. <span class=\"pag\">págs. 5, 27</span></li>\n<li><strong>Modo descongelación del parabrisas:</strong> Al seleccionar la salida de aire hacia el parabrisas con el mando de distribución, la centralita mantiene la regulación de temperatura pero posiciona forzosamente la trampilla de recirculación en entrada de aire exterior. <span class=\"pag\">pág. 26</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Margen de temperatura solicitada: seleccionable mediante pulsadores en la unidad de manejo. (pág. 19)",
+     "html": "<ul>\n<li>Margen de temperatura solicitada: seleccionable mediante pulsadores en la unidad de manejo. <span class=\"pag\">pág. 19</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Asumir que la distribución de aire entre difusores es motorizada en el Autoclima, cuando en este modelo la distribución se realiza mecánicamente mediante cable y mando giratorio. (págs. 5, 26)",
+     "html": "<ul>\n<li>Asumir que la distribución de aire entre difusores es motorizada en el Autoclima, cuando en este modelo la distribución se realiza mecánicamente mediante cable y mando giratorio. <span class=\"pag\">págs. 5, 26</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del cuadro sinóptico del Autoclima con la red de sensores y unidades de control descentralizadas — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 8",
+     "html": "<ul>\n<li>Esquema del cuadro sinóptico del Autoclima con la red de sensores y unidades de control descentralizadas — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 8</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -47273,16 +47649,16 @@
    "clave": "autodiagnostico-climatizador",
    "seccion": "10. Diagnóstico",
    "subgrupo": "",
-   "titulo": "Autodiagnóstico de los equipos de mando electrónico",
-   "codigo": "J255",
-   "menu": "Autodiagnóstico de los equipos J255",
+   "titulo": "Autodiagnóstico del sistema Autoclima",
+   "codigo": "",
+   "menu": "Autodiagnóstico del sistema Autoclima",
    "grupo": "Control de climatización",
    "tipo": "proceso",
-   "subtipo": "procedimiento",
+   "subtipo": "diagnostico",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 34-37",
-   "clase": "procedimiento",
+   "fuentes": "CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 33-36",
+   "clase": "diagnostico",
    "estado": "",
    "fusionadas": [],
    "variante": "",
@@ -47299,43 +47675,45 @@
     "función 02",
     "función 03",
     "función 04",
-    "función 08"
+    "función 08",
+    "parpadeo display",
+    "puente pin 21"
    ],
    "apartados": [
     {
-     "titulo": "Objeto y alcance",
-     "texto": "Identificar averías registradas en sensores y actuadores, verificar el funcionamiento de los componentes mediante pruebas guiadas y analizar parámetros operativos en tiempo real. (págs. 34-37)",
-     "html": "<p>Identificar averías registradas en sensores y actuadores, verificar el funcionamiento de los componentes mediante pruebas guiadas y analizar parámetros operativos en tiempo real. <span class=\"pag\">págs. 34-37</span></p>",
+     "titulo": "Síntoma",
+     "texto": "Parpadeo de todos los dígitos de la pantalla o display al conectar el encendido, falta de producción de aire frío o imposibilidad de regular la temperatura en la versión Autoclima. (págs. 14, 33)",
+     "html": "<p>Parpadeo de todos los dígitos de la pantalla o display al conectar el encendido, falta de producción de aire frío o imposibilidad de regular la temperatura en la versión Autoclima. <span class=\"pag\">págs. 14, 33</span></p>",
      "nivel": ""
     },
     {
-     "titulo": "Condiciones previas",
-     "texto": "Tensión de la batería correcta. (pág. 34) Encendido conectado (borne 15). (pág. 34)",
-     "html": "<ul>\n<li>Tensión de la batería correcta. <span class=\"pag\">pág. 34</span></li>\n<li>Encendido conectado (borne 15). <span class=\"pag\">pág. 34</span></li>\n</ul>",
+     "titulo": "Causas posibles",
+     "texto": "Registro de averías permanentes en la memoria no volátil de la unidad J255 (sensores de temperatura G17, G56, G191, G192 o potenciómetro V68). (págs. 17, 33) Interrupción de la señal de presión del circuito frigorífico (F129 / G65) o apertura del interruptor térmico F38. (págs. 14-15) Fallo interno en la unidad de control J255 o puunteado de codificación de mazo de cables defectuoso. (pág. 34)",
+     "html": "<ul>\n<li>Registro de averías permanentes en la memoria no volátil de la unidad J255 (sensores de temperatura G17, G56, G191, G192 o potenciómetro V68). <span class=\"pag\">págs. 17, 33</span></li>\n<li>Interrupción de la señal de presión del circuito frigorífico (F129 / G65) o apertura del interruptor térmico F38. <span class=\"pag\">págs. 14-15</span></li>\n<li>Fallo interno en la unidad de control J255 o puunteado de codificación de mazo de cables defectuoso. <span class=\"pag\">pág. 34</span></li>\n</ul>",
      "nivel": ""
     },
     {
-     "titulo": "Equipo y material",
-     "texto": "Equipo de diagnosis (V.A.G 1551, V.A.G 1552 o lector compatible) conectado al conector de diagnóstico de 16 polos T16. (págs. 31, 34)",
-     "html": "<ul>\n<li>Equipo de diagnosis (V.A.G 1551, V.A.G 1552 o lector compatible) conectado al conector de diagnóstico de 16 polos T16. <span class=\"pag\">págs. 31, 34</span></li>\n</ul>",
-     "nivel": ""
-    },
-    {
-     "titulo": "Pasos",
-     "texto": "Conectar el equipo de diagnosis e ingresar mediante el código de dirección \"08 - Aire acondicionado\". (pág. 34) Función 01 (Versión de la unidad): Consultar el código de recambios, la versión del software y el tipo de equipo (reconoce autoclima o calefacción motorizada mediante la presencia del puente a masa en el pin 21). (pág. 34) Función 02 (Consultar memoria de averías): Leer los fallos memorizados (distingue entre esporádicas y permanentes). (pág. 35) Función 03 (Diagnóstico de actuadores): Ejecutar la prueba de elementos (activa cíclicamente N25, la turbina V2 en rampa de 0 a 12 V, el servomotor V68 de tope a tope y V113 entre aire fresco y recirculación). (pág. 36) Función 04 (Iniciar ajuste básico): Acceder al grupo \"002\" para que la unidad reconozca y grabe electrónicamente la posición real del servomotor de la trampilla de temperatura V68. (pág. 36) Función 05 (Borrar memoria de averías): Borrar el registro de fallos una vez subsanados. (pág. 34) Función 08 (Leer bloque de valores de medición): Analizar los grupos de indicación 001 al 006 para evaluar presiones, temperaturas de NTC, estados de pulsadores y voltajes en tiempo real. (pág. 37)",
-     "html": "<ol>\n<li>Conectar el equipo de diagnosis e ingresar mediante el código de dirección \"08 - Aire acondicionado\". <span class=\"pag\">pág. 34</span></li>\n<li><strong>Función 01 (Versión de la unidad):</strong> Consultar el código de recambios, la versión del software y el tipo de equipo (reconoce autoclima o calefacción motorizada mediante la presencia del puente a masa en el pin 21). <span class=\"pag\">pág. 34</span></li>\n<li><strong>Función 02 (Consultar memoria de averías):</strong> Leer los fallos memorizados (distingue entre esporádicas y permanentes). <span class=\"pag\">pág. 35</span></li>\n<li><strong>Función 03 (Diagnóstico de actuadores):</strong> Ejecutar la prueba de elementos (activa cíclicamente N25, la turbina V2 en rampa de 0 a 12 V, el servomotor V68 de tope a tope y V113 entre aire fresco y recirculación). <span class=\"pag\">pág. 36</span></li>\n<li><strong>Función 04 (Iniciar ajuste básico):</strong> Acceder al grupo \"002\" para que la unidad reconozca y grabe electrónicamente la posición real del servomotor de la trampilla de temperatura V68. <span class=\"pag\">pág. 36</span></li>\n<li><strong>Función 05 (Borrar memoria de averías):</strong> Borrar el registro de fallos una vez subsanados. <span class=\"pag\">pág. 34</span></li>\n<li><strong>Función 08 (Leer bloque de valores de medición):</strong> Analizar los grupos de indicación 001 al 006 para evaluar presiones, temperaturas de NTC, estados de pulsadores y voltajes en tiempo real. <span class=\"pag\">pág. 37</span></li>\n</ol>",
+     "titulo": "Cómo separar las causas",
+     "texto": "Conectar el lector de averías V.A.G 1551, V.A.G 1552 o estación equivalente al conector de diagnóstico T16 de 16 polos del vehículo. (pág. 33) Seleccionar la dirección \"08 - Aire acondicionado\". (pág. 33) Seleccionar la función \"01 - Versión de la unidad de control\" para verificar la clave de recambios (6K0959291) y confirmar el tipo de equipo (Autoclima = código; Calefacción motorizada = código 110 por presencia de masa en el pin 21 del conector). (págs. 33-34) Ejecutar la función \"02 - Consultar memoria de averías\" para identificar los códigos de fallo registrados (diferenciando averías esporádicas de permanentes). (págs. 33-34) Seleccionar la función \"03 - Diagnóstico de elementos actuadores\" para activar secuencialmente el servomotor de temperatura V68, el servomotor de recirculación V113 y el embrague N25. (pág. 33) Seleccionar la función \"08 - Leer bloque de valores de medición\" para analizar las señales de los sensores de temperatura y la tensión de los potenciómetros en tiempo real. (pág. 33) Tras reparar las anomalías, seleccionar la función \"04 - Iniciar ajuste básico\" para autoadaptar los topes del motor de la trampilla de mezcla y finalizar ejecutando la función \"05 - Borrar la memoria de averías\". (pág. 33)",
+     "html": "<ol>\n<li>Conectar el lector de averías V.A.G 1551, V.A.G 1552 o estación equivalente al conector de diagnóstico T16 de 16 polos del vehículo. <span class=\"pag\">pág. 33</span></li>\n<li>Seleccionar la dirección \"08 - Aire acondicionado\". <span class=\"pag\">pág. 33</span></li>\n<li>Seleccionar la función \"01 - Versión de la unidad de control\" para verificar la clave de recambios (6K0959291) y confirmar el tipo de equipo (Autoclima = código; Calefacción motorizada = código 110 por presencia de masa en el pin 21 del conector). <span class=\"pag\">págs. 33-34</span></li>\n<li>Ejecutar la función \"02 - Consultar memoria de averías\" para identificar los códigos de fallo registrados (diferenciando averías esporádicas de permanentes). <span class=\"pag\">págs. 33-34</span></li>\n<li>Seleccionar la función \"03 - Diagnóstico de elementos actuadores\" para activar secuencialmente el servomotor de temperatura V68, el servomotor de recirculación V113 y el embrague N25. <span class=\"pag\">pág. 33</span></li>\n<li>Seleccionar la función \"08 - Leer bloque de valores de medición\" para analizar las señales de los sensores de temperatura y la tensión de los potenciómetros en tiempo real. <span class=\"pag\">pág. 33</span></li>\n<li>Tras reparar las anomalías, seleccionar la función \"04 - Iniciar ajuste básico\" para autoadaptar los topes del motor de la trampilla de mezcla y finalizar ejecutando la función \"05 - Borrar la memoria de averías\". <span class=\"pag\">pág. 33</span></li>\n</ol>",
      "nivel": ""
     },
     {
      "titulo": "Valores de referencia",
-     "texto": "Código de dirección del sistema: 08. (pág. 34) Criterio de borrado automático de averías esporádicas: tras 40 puestas en marcha sin reproducirse el fallo. (pág. 34) Grupo de ajuste básico para servomotor V68: Grupo 002 (valores en voltios entre 0,76 V y 4,21 V). (págs. 36-37)",
-     "html": "<ul>\n<li>Código de dirección del sistema: 08. <span class=\"pag\">pág. 34</span></li>\n<li>Criterio de borrado automático de averías esporádicas: tras 40 puestas en marcha sin reproducirse el fallo. <span class=\"pag\">pág. 34</span></li>\n<li>Grupo de ajuste básico para servomotor V68: Grupo 002 (valores en voltios entre 0,76 V y 4,21 V). <span class=\"pag\">págs. 36-37</span></li>\n</ul>",
+     "texto": "Dirección de acceso en diagnosis: \"08 - Aire acondicionado\". (pág. 33) Clave de recambios leída en función: 6K0959291. (pág. 34) Código de tipo de equipo: \"220\" para Autoclima; \"110\" para Calefacción motorizada (pin 21 a masa). (pág. 34) Criterio de borrado automático de averías esporádicas: tras 40 puestas en marcha sin reaparición del fallo. (pág. 33)",
+     "html": "<ul>\n<li>Dirección de acceso en diagnosis: \"08 - Aire acondicionado\". <span class=\"pag\">pág. 33</span></li>\n<li>Clave de recambios leída en función: 6K0959291. <span class=\"pag\">pág. 34</span></li>\n<li>Código de tipo de equipo: \"220\" para Autoclima; \"110\" para Calefacción motorizada (pin 21 a masa). <span class=\"pag\">pág. 34</span></li>\n<li>Criterio de borrado automático de averías esporádicas: tras 40 puestas en marcha sin reaparición del fallo. <span class=\"pag\">pág. 33</span></li>\n</ul>",
      "nivel": ""
     },
     {
-     "titulo": "Verificación final",
-     "texto": "Comprobar que al reconectar el climatizador ya no parpadean los dígitos del display de la consola central y la memoria de averías permanece limpia. (págs. 12, 34)",
-     "html": "<p>Comprobar que al reconectar el climatizador ya no parpadean los dígitos del display de la consola central y la memoria de averías permanece limpia. <span class=\"pag\">págs. 12, 34</span></p>",
+     "titulo": "Verificación tras la reparación",
+     "texto": "Conectar el encendido y confirmar que los símbolos del display central no parpadean y que al ingresar en la función 02 no se registran códigos de avería almacenados. (págs. 14, 33)",
+     "html": "<p>Conectar el encendido y confirmar que los símbolos del display central no parpadean y que al ingresar en la función 02 no se registran códigos de avería almacenados. <span class=\"pag\">págs. 14, 33</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Muestra de la pantalla del lector de diagnosis indicando la clave de recambio y la codificación del tipo de equipo Autoclima (6K-AUTOCLIMA-220) — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 34",
+     "html": "<ul>\n<li>Muestra de la pantalla del lector de diagnosis indicando la clave de recambio y la codificación del tipo de equipo Autoclima (6K-AUTOCLIMA-220) — Fuente: CD 072 Climatizacion en el Ibiza-Cordoba.pdf, pág. 34</li>\n</ul>",
      "nivel": ""
     }
    ]
