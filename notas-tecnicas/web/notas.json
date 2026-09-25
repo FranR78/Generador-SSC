@@ -3946,6 +3946,14 @@
    "hecha": false
   },
   {
+   "nombre": "NT767_01",
+   "nt": 767,
+   "titulo": "Componentes del climatizador en el vano motor",
+   "seccion": "Por ubicar",
+   "descripcion": "Esquema de ubicación de los componentes del climatizador en el vano motor (referencia E87-0133) — Fuente: despiece4 clima ibizaIII ASY.pdf, pág. 1",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -3970,7 +3978,7 @@
    "hecha": false
   }
  ],
- "total": 758,
+ "total": 759,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -56616,6 +56624,76 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema de ubicación de los componentes del climatizador en el habitáculo (tablero y zona frontal) — Fuente: despiece3 clima ibizaIII ASY.pdf, pág. 1 Disposición de los servomotores, sensores y grupo climatizador en la consola central — Fuente: despiece3 clima ibizaIII ASY.pdf, pág. 3",
      "html": "<ul>\n<li>Esquema de ubicación de los componentes del climatizador en el habitáculo (tablero y zona frontal) — Fuente: despiece3 clima ibizaIII ASY.pdf, pág. 1</li>\n<li>Disposición de los servomotores, sensores y grupo climatizador en la consola central — Fuente: despiece3 clima ibizaIII ASY.pdf, pág. 3</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.componentes-vano-motor-climatizador.despiece4-clima-ibizaiii-asy",
+   "nt": 767,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "componentes-vano-motor-climatizador",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Componentes del climatizador en el vano motor",
+   "codigo": "G65",
+   "menu": "Componentes del climatizador e G65",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "despiece4 clima ibizaIII ASY.pdf, págs. 1-2",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "compresor",
+    "condensador",
+    "electroventilador-condensador",
+    "filtro-deshidratador",
+    "sensor-temperatura-exterior"
+   ],
+   "palabras": [
+    "vano motor",
+    "despiece",
+    "G65",
+    "N280",
+    "J293",
+    "G17",
+    "G89",
+    "desaireación"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Alojar, ubicar y estructurar el conjunto de componentes del sistema de climatización situados en el vano motor, el frontal del vehículo y las vías de ventilación y evacuación, asegurando la captación de aire exterior, el intercambio térmico, la regulación de presión, la gestión de la ventilación del condensador y la evacuación de condensados. (pág. 1)",
+     "html": "<p>Alojar, ubicar y estructurar el conjunto de componentes del sistema de climatización situados en el vano motor, el frontal del vehículo y las vías de ventilación y evacuación, asegurando la captación de aire exterior, el intercambio térmico, la regulación de presión, la gestión de la ventilación del condensador y la evacuación de condensados. <span class=\"pag\">pág. 1</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Disposición general modular de los componentes en el vano motor y áreas periféricas (SEAT Ibiza III ASY) estructurada en 14 elementos numerados en el esquema E87-0133: Desaireación forzada: situada en el maletero; los labios de estanqueidad de su marco deben tener libertad de movimiento y cerrar por sí solos. Para una desaireación intachable del habitáculo, no deben estar obstruidas las conducciones de aire a través del guarnecido del maletero. (pág. 1) Conducto de aspiración de aire fresco: ubicado en el vano motor para canalizar la entrada de aire exterior. (pág. 1) Transmisor de temperatura -G89- en la entrada de aire: mide la temperatura del aire aspirado; su conexión eléctrica se sitúa en el lado izquierdo de la turbina. (pág. 2) Válvula de extracción y de llenado (lado de alta presión): destinada a la evacuación, llenado y medición de presiones. Debe llevar siempre enroscado su capuchón con anillo junta. (pág. 2) Válvula de extracción y de llenado (lado de baja presión): destinada exclusivamente a la evacuación y medición. (pág. 2) Unidad de control del ventilador para líquido refrigerante -J293-: excitada por la unidad de control para Climatronic -J255- para conectar los diferentes escalones de velocidad de los ventiladores de líquido refrigerante. Se incorpora en diferentes versiones según el equipamiento del vehículo. (pág. 2) Depósito de secado (filtro deshidratador): acumulador de secado del circuito. (pág. 2) Transmisor de alta presión para el Climatizador -G65-: proporciona la señal de presión del circuito cuya lectura se visualiza en la función \"Leer bloque de valores de medición\" de la unidad de mando e indicación. (pág. 2) Termosensor para temperatura exterior -G17-: ubicado tras el paragolpes delantero. Su valor de medición es analizado por la unidad de control en el cuadro de instrumentos y transmitido a la unidad de control -J255- a través del CAN-Bus de datos del área de confort. (pág. 2) Condensador: intercambiador térmico frontal del circuito frigorífico. (pág. 2) Válvula reguladora para el compresor del climatizador -N280-: electroválvula de regulación de cilindrada variable. (pág. 2) Compresor: accionado por correa Poly-V y fijado a su soporte en el motor. (pág. 2) Conectores rápidos para las tuberías de refrigerante. (pág. 2) Válvula para el drenaje del agua condensada. (pág. 2) (pág. 2)",
+     "html": "<p>Disposición general modular de los componentes en el vano motor y áreas periféricas (SEAT Ibiza III ASY) estructurada en 14 elementos numerados en el esquema E87-0133:</p>\n<ol>\n<li>Desaireación forzada: situada en el maletero; los labios de estanqueidad de su marco deben tener libertad de movimiento y cerrar por sí solos. Para una desaireación intachable del habitáculo, no deben estar obstruidas las conducciones de aire a través del guarnecido del maletero. <span class=\"pag\">pág. 1</span></li>\n<li>Conducto de aspiración de aire fresco: ubicado en el vano motor para canalizar la entrada de aire exterior. <span class=\"pag\">pág. 1</span></li>\n<li>Transmisor de temperatura -G89- en la entrada de aire: mide la temperatura del aire aspirado; su conexión eléctrica se sitúa en el lado izquierdo de la turbina. <span class=\"pag\">pág. 2</span></li>\n<li>Válvula de extracción y de llenado (lado de alta presión): destinada a la evacuación, llenado y medición de presiones. Debe llevar siempre enroscado su capuchón con anillo junta. <span class=\"pag\">pág. 2</span></li>\n<li>Válvula de extracción y de llenado (lado de baja presión): destinada exclusivamente a la evacuación y medición. <span class=\"pag\">pág. 2</span></li>\n<li>Unidad de control del ventilador para líquido refrigerante -J293-: excitada por la unidad de control para Climatronic -J255- para conectar los diferentes escalones de velocidad de los ventiladores de líquido refrigerante. Se incorpora en diferentes versiones según el equipamiento del vehículo. <span class=\"pag\">pág. 2</span></li>\n<li>Depósito de secado (filtro deshidratador): acumulador de secado del circuito. <span class=\"pag\">pág. 2</span></li>\n<li>Transmisor de alta presión para el Climatizador -G65-: proporciona la señal de presión del circuito cuya lectura se visualiza en la función \"Leer bloque de valores de medición\" de la unidad de mando e indicación. <span class=\"pag\">pág. 2</span></li>\n<li>Termosensor para temperatura exterior -G17-: ubicado tras el paragolpes delantero. Su valor de medición es analizado por la unidad de control en el cuadro de instrumentos y transmitido a la unidad de control -J255- a través del CAN-Bus de datos del área de confort. <span class=\"pag\">pág. 2</span></li>\n<li>Condensador: intercambiador térmico frontal del circuito frigorífico. <span class=\"pag\">pág. 2</span></li>\n<li>Válvula reguladora para el compresor del climatizador -N280-: electroválvula de regulación de cilindrada variable. <span class=\"pag\">pág. 2</span></li>\n<li>Compresor: accionado por correa Poly-V y fijado a su soporte en el motor. <span class=\"pag\">pág. 2</span></li>\n<li>Conectores rápidos para las tuberías de refrigerante. <span class=\"pag\">pág. 2</span></li>\n<li>Válvula para el drenaje del agua condensada. <span class=\"pag\">pág. 2</span></li>\n</ol>\n<p> <span class=\"pag\">pág. 2</span></p>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Comprobar la libertad de movimiento y el cierre autónomo de los labios de estanqueidad del marco de desaireación forzada en el maletero. (pág. 1) Comprobar que no estén obstruidas las conducciones de aire a través del guarnecido en el maletero. (pág. 1) Consultar la señal del transmisor de alta presión -G65- mediante el equipo de autodiagnóstico en la función \"Leer bloque de valores de medición\". (pág. 2) Comprobar la excitación y el funcionamiento de la unidad de control del ventilador -J293- y de la válvula reguladora del compresor -N280-. (pág. 2) Verificar el estado de la válvula para el drenaje del agua condensada. (pág. 2) (pág. 2)",
+     "html": "<ul>\n<li>Comprobar la libertad de movimiento y el cierre autónomo de los labios de estanqueidad del marco de desaireación forzada en el maletero. <span class=\"pag\">pág. 1</span></li>\n<li>Comprobar que no estén obstruidas las conducciones de aire a través del guarnecido en el maletero. <span class=\"pag\">pág. 1</span></li>\n<li>Consultar la señal del transmisor de alta presión -G65- mediante el equipo de autodiagnóstico en la función \"Leer bloque de valores de medición\". <span class=\"pag\">pág. 2</span></li>\n<li>Comprobar la excitación y el funcionamiento de la unidad de control del ventilador -J293- y de la válvula reguladora del compresor -N280-. <span class=\"pag\">pág. 2</span></li>\n<li>Verificar el estado de la válvula para el drenaje del agua condensada. <span class=\"pag\">pág. 2</span></li>\n</ul>\n<p> <span class=\"pag\">pág. 2</span></p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Enroscar siempre el capuchón con su anillo junta en la válvula de extracción y llenado del lado de alta presión. (pág. 2) El depósito de secado (filtro deshidratador) y el condensador únicamente se deben desmontar estando el circuito frigorífico completamente vacío. (pág. 2) Para desmontar el termosensor de temperatura exterior -G17-, se debe desmontar el paragolpes delantero, desacoplar el conector eléctrico y desgraparlo de su alojamiento en la conducción de aire. (pág. 2) (pág. 2)",
+     "html": "<ul>\n<li>Enroscar siempre el capuchón con su anillo junta en la válvula de extracción y llenado del lado de alta presión. <span class=\"pag\">pág. 2</span></li>\n<li>El depósito de secado (filtro deshidratador) y el condensador únicamente se deben desmontar estando el circuito frigorífico completamente vacío. <span class=\"pag\">pág. 2</span></li>\n<li>Para desmontar el termosensor de temperatura exterior -G17-, se debe desmontar el paragolpes delantero, desacoplar el conector eléctrico y desgraparlo de su alojamiento en la conducción de aire. <span class=\"pag\">pág. 2</span></li>\n</ul>\n<p> <span class=\"pag\">pág. 2</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema de ubicación de los componentes del climatizador en el vano motor (referencia E87-0133) — Fuente: despiece4 clima ibizaIII ASY.pdf, pág. 1",
+     "html": "<ul>\n<li>Esquema de ubicación de los componentes del climatizador en el vano motor (referencia E87-0133) — Fuente: despiece4 clima ibizaIII ASY.pdf, pág. 1</li>\n</ul>"
     }
    ]
   },
