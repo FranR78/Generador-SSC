@@ -5,47 +5,46 @@ unidad: clima
 nt: 282
 tipo: elemento
 clase: componente
-titulo: "Válvula de sobrepresión de seguridad"
-menu: "Válvula de sobrepresión de seguridad"
+titulo: "Válvula de sobrepresión"
+menu: "Válvula de sobrepresión"
 grupo: "Circuito frigorífico"
 clave: valvula-sobrepresion
 area: climatizacion
 sistema: "circuito-frigorifico"
 forma_parte_de: compresor
-fuentes: "LA CLIMATIZACIÓN.pdf, págs. 89"
-relacionados: ["compresor", "filtro-deshidratador", "presostato"]
-palabras: ["válvula de sobrepresión", "muelle de seguridad", "38 bares", "disco fusible", "evacuación de emergencia"]
+fuentes: "LA CLIMATIZACIÓN.pdf, págs. 87, 164"
+relacionados: ["compresor", "presostato"]
+palabras: ["válvula de sobrepresión", "descarga", "muelle", "38 bares", "protección mecánica"]
 ---
 
 ## Misión
 
-Proteger mecánicamente los componentes del circuito abriéndose para evacuar refrigerante al exterior si la alta presión alcanza un límite crítico peligroso. (pág. 89).
+Proteger mecánicamente el circuito de fluido refrigerante contra sobrepresiones peligrosas liberando gas a la atmósfera. (pág. 87)
 
 ## Tipos y características
 
-Válvula mecánica de muelle tarado integrada normalmente en el cuerpo del compresor o en el cuerpo del depósito acumulador. En algunos casos incorpora un disco fusible plástico protector. (pág. 89).
+Válvula de descarga mecánica de seguridad con cierre por muelle tarado, instalada en el propio cuerpo del compresor o en la línea de alta presión. (págs. 87, 164)
 
 ## Principio de funcionamiento
 
-Un muelle interno mantiene una bola o platillo apretado contra su asiento. Si la presión del circuito alcanza aprox. 3,8 MPa (38 bares), la fuerza vence la resistencia del muelle y la válvula se abre, liberando gas a la atmósfera para bajar la presión. Cuando la presión desciende de 3,5 MPa (35 bares), el muelle vuelve a cerrar la válvula. (pág. 89).
+Permanece cerrada por la acción de su muelle interno. Si la presión en el lado de alta supera la fuerza ejercida por el muelle, la válvula vence la resistencia y se abre, liberando una porción de refrigerante al exterior para reducir la presión del circuito a niveles seguros. (pág. 87)
 
 ## Valores de trabajo
 
-- Presión de apertura: aprox. 3,8 MPa (38 bares). (pág. 89).
-- Presión de cierre: aprox. 3,5 MPa (35 bares). (pág. 89).
+- Umbral de apertura de seguridad por sobrepresión: 38 bares. (pág. 164)
 
 ## Anomalías frecuentes
 
-Apertura accidental por fallo de los electroventiladores o sobrecarga de gas, y rotura del disco fusible plástico indicador. (págs. 89, 271).
+Disparo de la válvula provocado por falta de condensación, fallo en los electroventiladores o sobrecalentamiento excesivo del motor, con pérdida del gas del circuito. (págs. 87, 144)
 
 ## Comportamiento en avería
 
-Escape de refrigerante con pérdida parcial o total de la carga de gas del circuito. (págs. 89, 271).
+Salida violenta de gas refrigerante al exterior e inoperatividad posterior del circuito frigorífico por falta de presión. (pág. 87)
 
 ## Cómo comprobarlo
 
-Inspección visual del estado del disco plástico indicador de rotura en la boca de salida de la válvula. (pág. 89).
+Verificar la presencia de restos de aceite lubricante en la salida de la válvula e inspeccionar las presiones del circuito con la estación de manómetros tras corregir la causa de la sobrepresión. (págs. 87, 157)
 
 ## Mantenimiento
 
-Tras la apertura de la válvula, averiguar y reparar la causa de la sobrepresión (ej. ventiladores inactivos o condensador tapado), sustituir el disco plástico e instalar carga nueva. (págs. 89, 271).
+Evitar que los componentes del circuito alcancen temperaturas superiores a 80 ºC durante trabajos de soldadura para impedir la apertura involuntaria de la válvula. (pág. 144)

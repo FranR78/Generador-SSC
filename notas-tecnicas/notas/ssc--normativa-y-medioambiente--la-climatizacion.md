@@ -6,39 +6,36 @@ nt: 303
 tipo: proceso
 subtipo: fundamento
 clase: fundamento
-titulo: "Normativa medioambiental y certificación de gases fluorados"
-menu: "Normativa medioambiental y certificaci"
+titulo: "Normativa de gases fluorados y certificación profesional"
+menu: "Normativa de gases fluorados y certifi"
 grupo: "Normativa y medioambiente"
 clave: normativa-y-medioambiente
 area: general
 sistema: "normativa-y-medioambiente"
-fuentes: "LA CLIMATIZACIÓN.pdf, págs. 148-152"
+fuentes: "LA CLIMATIZACIÓN.pdf, págs. 148-151"
 relacionados: ["refrigerante-r134a", "refrigerante-r1234yf"]
-palabras: ["RD 795/2010", "gases fluorados", "certificado manipulador", "Protocolo de Kioto", "Directiva 2006/40/CE"]
+palabras: ["Real Decreto 795/2010", "certificación profesional", "gases fluorados", "Directiva 2006/40/CE"]
 ---
 
 ## Objeto
 
-Definir las obligaciones legales, programas de formación y limitaciones medioambientales para la manipulación y comercialización de refrigerantes fluorados en talleres de automoción. (págs. 148-152).
+Compilar el marco legal, las obligaciones de los talleres y la certificación exigida para la comercialización y manipulación de gases refrigerantes fluorados. (págs. 148-151)
 
 ## Fundamento
 
-Para cumplir con los Protocolos de Montreal y Kioto, el RD 795/2010 y los Reglamentos CE 842/2006 y 307/2008 regulan el control de emisiones de HFC y prohíben el uso de sustancias que agotan la capa de ozono (CFC/HCFC). (págs. 148-149).
+El Real Decreto 795/2010 y la Directiva europea 2006/40/CE regulan la manipulación de gases fluorados de efecto invernadero para mitigar el calentamiento global y proteger la atmósfera. (págs. 148-151)
 
 ## Desarrollo
 
-- Requisitos a profesionales y talleres: el personal que realice carga, recuperación, mantenimiento o control de fugas en aire acondicionado de vehículos debe estar en posesión del "Certificado Acreditativo de la Competencia para la Manipulación de Sistemas Frigoríficos que empleen Refrigerantes Fluorados". Solo los talleres con personal certificado pueden adquirir botellas de gas R134a. (págs. 149-150).
-- Recuperación de gases: prohibido emitir refrigerantes a la atmósfera. Los residuos de R12 o R134a no reutilizables deben entregarse a un gestor de residuos peligrosos. (pág. 151).
-- Directiva 2006/40/CE (fases de eliminación del R134a):
-  1. Límite de fugas de homologación: máximo 40 g/año en evaporador único y 60 g/año en evaporador doble. (pág. 152).
-  2. A partir del 1 de enero de 2011: prohibida la homologación de turismos nuevos con refrigerantes de PCG > 150 (sustitución por R1234yf). (pág. 152).
-  3. A partir del 1 de enero de 2017: prohibida la venta y matriculación de cualquier vehículo nuevo con R134a. (pág. 152).
+- **Certificación profesional:** Todo técnico que realice operaciones de instalación, mantenimiento, carga o recuperación de refrigerantes fluorados en climatización de vehículos debe poseer la certificación oficial acreditativa de competencia profesional. (págs. 149-150)
+- **Compra de refrigerantes:** Los talleres solo pueden adquirir gases fluorados acreditando la posesión del certificado profesional y empleando equipos de recuperación homologados. (págs. 149-150)
+- **Directiva 2006/40/CE:** Establece la reducción paulatina del uso del refrigerante R134a en vehículos de nueva fabricación por su potencial de calentamiento global, fijando un límite máximo de fugas de 40 g/año en sistemas sencillos y 60 g/año en sistemas de doble evaporador. (pág. 151)
 
 ## Valores de referencia
 
-- Límite de fuga anual para homologación: 40 g/año (evaporador sencillo) / 60 g/año (evaporador doble). (pág. 152).
-- Límite de PCG/GWP permitido para nuevos vehículos: < 150. (pág. 152).
+- Límite máximo de fugas anuales de gas fluorado: 40 g/año (evaporador único) y 60 g/año (evaporador doble). (pág. 151)
+- Marco legal aplicable: Real Decreto 795/2010 y Directiva 2006/40/CE. (págs. 148, 151)
 
 ## Errores de concepto frecuentes
 
-Suponer que cualquier operario del taller puede comprar o recargar botellas de R134a libremente; la ley exige la certificación personal individual acreditada. (pág. 150).
+- Pensar que cualquier operario sin certificación específica de gases fluorados puede realizar recargas o manipulaciones del circuito frigorífico. (págs. 149-150)

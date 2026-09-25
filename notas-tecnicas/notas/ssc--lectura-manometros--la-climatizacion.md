@@ -6,51 +6,49 @@ nt: 306
 tipo: proceso
 subtipo: diagnostico
 clase: diagnostico
-titulo: "Diagnosis de averías en el circuito frigorífico mediante lectura de manómetros"
-menu: "Diagnosis de averías en el circuito fr"
+titulo: "Diagnóstico del circuito frigorífico por lectura de manómetros"
+menu: "Diagnóstico del circuito frigorífico p"
 grupo: "Circuito frigorífico"
 clave: lectura-manometros
 area: climatizacion
 sistema: "circuito-frigorifico"
-fuentes: "LA CLIMATIZACIÓN.pdf, págs. 156-162"
-relacionados: ["compresor", "valvula-expansion", "condensador", "filtro-deshidratador"]
-palabras: ["alta presión", "baja presión", "subenfriamiento", "sobrecalentamiento", "pre-expansión", "tabla de averías"]
+fuentes: "LA CLIMATIZACIÓN.pdf, págs. 157-158"
+relacionados: ["compresor", "valvula-expansion", "condensador", "presostato"]
+palabras: ["manómetros", "alta presión", "baja presión", "diagnóstico de presiones", "carga de gas"]
 ---
 
 ## Síntoma
 
-Rendimiento frigorífico insuficiente o nulo en el habitáculo, aire impulsado caliente o disparos del compresor. (págs. 156, 162).
+Falta de rendimiento frigorífico en el habitáculo, enfriamiento deficiente o cortes intermitentes del climatizador. (pág. 157)
 
 ## Causas posibles
 
-- Compresor averiado/sin compresión o falta de alimentación en el acoplamiento electromagnético. (pág. 162).
-- Carga de gas incorrecta (falta de gas por fuga o sobrecarga). (pág. 162).
-- Válvula de expansión bloqueada cerrada o abierta. (pág. 162).
-- Condensador sucio o inactividad de los electroventiladores. (pág. 162).
-- Filtro deshidratador colmatado (pre-expansión). (págs. 160, 162).
+- Carga insuficiente o falta total de refrigerante por fugas. (págs. 157-158, 161)
+- Exceso de gas refrigerante en la instalación. (pág. 161)
+- Válvula de expansión bloqueada en posición abierta o cerrada. (pág. 161)
+- Compresor dañado por pérdida de capacidad de compresión o falta de aspiración. (pág. 161)
+- Obstrucción en el condensador o falta de ventilación forzada. (pág. 161)
 
 ## Cómo separar las causas
 
-1. Conectar las mangueras del puente de manómetros de la estación de servicio a las tomas de alta (HP) y baja presión (LP). (pág. 157).
-2. Arrancar el motor a 1.500-2.000 rpm con el climatizador a máxima potencia de frío (LO) y medir valores estabilizados:
-   - Presiones normales: Alta presión (HP) entre 16 y 22 bares; Baja presión (LP) entre 1 y 3 bares. (pág. 158).
-3. Evaluar el Subenfriamiento: diferencia entre la temperatura de condensación (leída en la escala del manómetro HP) y la temperatura real del tubo a la salida del condensador. Valor óptimo: 5 ºC a 7 ºC. (pág. 159).
-4. Evaluar el Sobrecalentamiento: diferencia entre la temperatura real del tubo a la salida del evaporador y la temperatura de evaporación (leída en la escala del manómetro LP). Valor óptimo: 2 ºC a 10 ºC. (pág. 159).
-5. Comprobar Pre-expansión en el filtro deshidratante: medir temperatura a la entrada y salida del cuerpo del filtro. Si la diferencia de temperatura es mayor de 6 ºC, el filtro está colmatado y actúa como válvula de expansión. (pág. 160).
-6. Analizar combinación de presiones:
-   - HP alta (> 22 bar) y LP alta (> 3 bar): sobrecarga de gas o mala condensación/ventilador averiado. (pág. 162).
-   - HP baja (< 16 bar) y LP baja (< 1 bar): carga insuficiente por fuga de gas o filtro deshidratador obstruido. (pág. 162).
-   - HP baja y LP alta (presiones tendiendo a igualarse): compresor defectuoso (pérdida de compresión interna). (pág. 162).
-   - LP en vacío o excesivamente baja con HP normal/baja: válvula de expansión bloqueada cerrada o evaporador congelado. (pág. 162).
+1. Conectar los manómetros de baja presión (azul) y alta presión (rojo) a las tomas de servicio del vehículo. (pág. 157)
+2. Arrancar el motor, estabilizar el régimen a 1.500-2.000 rpm y conectar el climatizador al máximo rendimiento frigorífico. (págs. 46, 157)
+3. Observar la lectura combinada de presiones:
+   - Alta y baja presión más bajas de lo normal: Indican carga insuficiente de refrigerante o fuga en el circuito. (pág. 161)
+   - Alta presión excesivamente elevada y baja presión alta: Indican exceso de carga de gas o mala refrigeración del condensador por fallo del electroventilador. (pág. 161)
+   - Baja presión excesivamente baja y alta presión normal/baja: Indica válvula de expansión bloqueada en cierre, congelación del evaporador o filtro deshidratante colmatado. (págs. 159, 161)
+   - Baja presión demasiado alta y alta presión anormalmente baja: Indican pérdida de rendimiento compresión del compresor (daño interno en las válvulas de lámina). (pág. 161)
 
 ## Valores de referencia
 
-- Alta Presión (HP) normal: 16 a 22 bares. (pág. 158).
-- Baja Presión (LP) normal: 1 a 3 bares. (pág. 158).
-- Subenfriamiento óptimo: 5 ºC a 7 ºC. (pág. 159).
-- Sobrecalentamiento óptimo: 2 ºC a 10 ºC. (pág. 159).
-- Salto térmico máximo en filtro deshidratador:  6 ºC. (pág. 160).
+- Condiciones de prueba: Motor a 1.500-2.000 rpm, temperatura ambiente 20 ºC. (pág. 46)
+- Presión en reposo a 20 ºC: aprox. 4,7 bares (0,47 MPa). (pág. 46)
+- Presiones normales de trabajo con R134a: Baja presión entre 1,5 y 2,5 bares; Alta presión entre 12 y 18 bares. (págs. 43, 45, 157-158)
 
 ## Verificación tras la reparación
 
-Revisar que la temperatura soplada en las toberas se mantiene entre 3 ºC y 7 ºC y que los relojes de manómetros retornan al rango de 16-22 bares en HP y 1-3 bares en LP. (págs. 82, 158).
+Verificar que tras corregir la avería las presiones de alta y baja se estabilizan dentro de los márgenes teóricos y la temperatura en el difusor desciende a valores de confort. (págs. 157, 161)
+
+## Imágenes requeridas
+
+- Manómetros de alta y baja presión con las escalas de lectura de presión y temperatura — Fuente: LA CLIMATIZACIÓN.pdf, pág. 157

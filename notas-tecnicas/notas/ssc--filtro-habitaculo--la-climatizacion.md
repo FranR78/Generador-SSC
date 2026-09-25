@@ -5,47 +5,42 @@ unidad: clima
 nt: 289
 tipo: elemento
 clase: componente
-titulo: "Filtro de habitáculo"
-menu: "Filtro de habitáculo"
+titulo: "Filtro del habitáculo"
+menu: "Filtro del habitáculo"
 grupo: "Distribución de aire"
 clave: filtro-habitaculo
 area: climatizacion
 sistema: "distribucion-aire"
-fuentes: "LA CLIMATIZACIÓN.pdf, págs. 105-106"
-relacionados: ["ventilador-habitaculo", "evaporador", "sensor-calidad-aire"]
-palabras: ["filtro de habitáculo", "filtro de polen", "carbón activo", "polipropileno", "alérgenos", "sustitución anual"]
+forma_parte_de: unidad-climatizadora
+fuentes: "LA CLIMATIZACIÓN.pdf, págs. 104-105, 160"
+relacionados: ["evaporador", "ventilador-habitaculo"]
+palabras: ["filtro antipolen", "carbón activo", "bacterias", "depuración", "microorganismos"]
 ---
 
 ## Misión
 
-Filtrar y depurar el aire exterior antes de su entrada al habitáculo, reteniendo polvo, polen, esporas, bacterias y gases nocivos. (págs. 105-106).
+Filtrar el aire exterior que entra al habitáculo reteniendo polvo, polen, bacterias y partículas nocivas, e impedir la proliferación de microorganismos. (págs. 105, 160)
 
 ## Tipos y características
 
-Ubicado en la entrada de aire de la caja climática (vierteaguas o bajo el salpicadero).
-- Filtro de polen convencional: papel de celulosa o fibras de polipropileno. Retiene partículas sólidas y bacterias. (pág. 106).
-- Filtro de carbón activo: incorpora una capa de carbón activado capaz de absorber hasta el 90% de los gases contaminantes y partículas muy finas (< 1 micra). (pág. 106).
+Elemento filtrante sintético/celulosa (filtro antipolen) o combinado con un lecho interior de carbón activo para la absorción de gases y malos olores. Alojado en el conducto de aspiración del bloque climatizador. (págs. 105, 160)
 
 ## Principio de funcionamiento
 
-El aire soplado por la turbina atraviesa la estructura porosa de pliegues del filtro. La malla retiene mecánicamente partículas y polen, mientras que la capa de carbón activo adsorbe molecularmente los gases tóxicos y los malos olores del tráfico. (pág. 106).
-
-## Valores de trabajo
-
-Intervalo de sustitución recomendado: cada 15.000 km o al menos una vez al año. (pág. 106).
+Todo el aire impulsado por la turbina pasa forzosamente a través del tamiz de microfibras del filtro antes de llegar al evaporador, reteniendo las partículas en suspensión. En los filtros con carbón activo, los poros del carbón atraen y neutralizan las moléculas de gas contaminante y olores. (págs. 105, 160)
 
 ## Anomalías frecuentes
 
-Saturación y colmatación por polvo y hojas, apelmazamiento por humedad y formación de moho. (págs. 106, 161).
+Colmatación por acumulación de suciedad y polvo, o absorción excesiva de humedad ambiental. (págs. 105, 160)
 
 ## Comportamiento en avería
 
-Reducción drástica del caudal de aire en los difusores, cristal empañado y generación de malos olores en el habitáculo. (págs. 106, 161).
+Reducción drástica del caudal de aire en los difusores, empañado persistente de los cristales y generación de olores desagradables en el habitáculo por proliferación de bacterias en la materia retenida. (pág. 160)
 
 ## Cómo comprobarlo
 
-Inspección visual del grado de suciedad entre los pliegues y comprobación del caudal en toberas. (págs. 106, 161).
+Extraer e inspeccionar visualmente el estado de suciedad y el nivel de obstrucción del elemento filtrante. (págs. 105, 160)
 
 ## Mantenimiento
 
-Sustitución obligatoria cada 15.000 km o 12 meses. Respetar las flechas de sentido de flujo de aire impresas en el marco. (pág. 106).
+Sustituir periódicamente el filtro de habitáculo según las pautas de mantenimiento para garantizar la calidad del aire y evitar infecciones por microorganismos. (pág. 160)

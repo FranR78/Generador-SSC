@@ -11,42 +11,36 @@ grupo: "Control de climatización"
 clave: sensor-evaporador
 area: climatizacion
 sistema: "control-climatizacion"
-fuentes: "LA CLIMATIZACIÓN.pdf, págs. 90"
-relacionados: ["evaporador", "unidad-control-climatizador", "embrague-compresor"]
-palabras: ["sensor evaporador", "NTC", "protección antihielo", "0 ºC", "3 ºC", "corte de compresor"]
+forma_parte_de: control-climatizacion
+fuentes: "LA CLIMATIZACIÓN.pdf, págs. 88-90"
+relacionados: ["unidad-control-climatizador", "compresor", "evaporador"]
+palabras: ["sonda del evaporador", "termistor NTC", "protección antihielo", "desconexión del compresor"]
 ---
 
 ## Misión
 
-Informar a la UEGAA de la temperatura de las aletas del evaporador para desconectar el compresor cuando existe riesgo de congelación del agua condensada. (pág. 90).
+Medir la temperatura de la matriz de aletas del evaporador para prevenir la congelación del agua de condensación. (págs. 88-89)
 
 ## Tipos y características
 
-Resistencia NTC (coeficiente de temperatura negativo) montada entre las aletas de la zona más fría del evaporador, o bien un interruptor térmico bimetálico. (pág. 90).
+Sensor térmico de tipo termistor (NTC) o interruptor térmico, alojado directamente entre las aletas del evaporador. (págs. 88-90)
 
 ## Principio de funcionamiento
 
-Mide continuamente la temperatura del evaporador y envía la señal eléctrica a la UEGAA. Si la temperatura desciende hasta valores críticos de congelación (entre 0 ºC y -1 ºC), la UEGAA (o el interruptor térmico directamente) corta la alimentación del acoplamiento electromagnético del compresor. Al subir la temperatura por encima de +3 ºC, se restablece la alimentación y el compresor vuelve a funcionar. (pág. 90).
-
-## Valores de trabajo
-
-- Temperatura de desconexión del compresor: 0 ºC a -1 ºC. (pág. 90).
-- Temperatura de reconexión del compresor: > +3 ºC. (pág. 90).
+Mide de forma continua la temperatura del evaporador y transmite su señal eléctrica a la unidad de gestión electrónica (UEGAA). Si la temperatura desciende hasta el umbral de formación de hielo, la centralita (o el interruptor térmico directamente) abre el circuito e interrumpe la corriente hacia el acoplamiento electromagnético del compresor. Al subir la temperatura, vuelve a acoplar el compresor. (págs. 88-90)
 
 ## Anomalías frecuentes
 
-Desplazamiento físico fuera de las aletas del evaporador, o derivación a masa/interrupción del cableado NTC. (págs. 90, 271).
+Descalibración de la resistencia NTC o mal posicionamiento físico del elemento sensible entre las aletas del evaporador. (págs. 88, 90)
 
 ## Comportamiento en avería
 
-- Si mide temperatura erróneamente alta: el compresor no corta nunca y el evaporador se congela, bloqueando el paso de aire al habitáculo. (págs. 90, 271).
-- Si mide temperatura erróneamente baja: la UCE desactiva el compresor permanentemente. (págs. 90, 271).
+Bloqueo del flujo de aire hacia el habitáculo por congelación total del agua en el evaporador o corte prematuro e injustificado del compresor. (págs. 88, 161)
 
 ## Cómo comprobarlo
 
-1. Medir la resistencia eléctrica de la NTC a distintas temperaturas. (págs. 90, 179).
-2. Consultar el bloque de valores de medición con el equipo de autodiagnosis. (pág. 274).
+Comprobar la curva de resistencia NTC del sensor a diferentes temperaturas y consultar la memoria de averías mediante autodiagnóstico. (págs. 88, 161)
 
 ## Mantenimiento
 
-Asegurar el correcto calado de la sonda entre las aletas del evaporador al intervenir en el bloque climatizador. (pág. 90).
+Asegurar la correcta colocación e inserción del elemento sensible en el cuerpo del evaporador. (págs. 88-89)

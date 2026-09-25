@@ -5,46 +5,46 @@ unidad: clima
 nt: 291
 tipo: elemento
 clase: componente
-titulo: "Sensores de temperatura exterior"
-menu: "Sensores de temperatura exterior"
+titulo: "Sensor de temperatura exterior"
+menu: "Sensor de temperatura exterior"
 grupo: "Control de climatización"
 clave: sensor-temperatura-exterior
 area: climatizacion
 sistema: "control-climatizacion"
-fuentes: "LA CLIMATIZACIÓN.pdf, págs. 111-112"
-relacionados: ["unidad-control-climatizador", "regulacion-automatica"]
-palabras: ["sensor de temperatura exterior", "NTC", "valor sustitutivo +10 ºC", "entrada de aire"]
+forma_parte_de: control-climatizacion
+fuentes: "LA CLIMATIZACIÓN.pdf, págs. 110-111"
+relacionados: ["unidad-control-climatizador", "servomotor-trampilla"]
+palabras: ["sensor exterior", "NTC", "temperatura ambiental", "paragolpes"]
 ---
 
 ## Misión
 
-Medir la temperatura del aire atmosférico exterior para que la UEGAA posicione las trampillas de mezcla y regule la velocidad de la turbina. (págs. 111-112).
+Captar la temperatura del aire atmosférico exterior para proporcionar a la unidad de control la señal primaria de cálculo de la mezcla de aire. (págs. 110-111)
 
 ## Tipos y características
 
-Dos resistencias NTC independientes: una montada en la parte frontal de la carrocería (paragolpes/retrovisor) y otra sobre el canal de entrada de aire fresco al evaporador. (pág. 112).
+Sensores de tipo resistencia NTC. En muchas instalaciones se montan dos sondas: una en el paragolpes frontal/retrovisor y otra en el conducto de aspiración de aire fresco. (págs. 110-111)
 
 ## Principio de funcionamiento
 
-Varían su resistencia eléctrica según la temperatura del aire exterior. La UEGAA recibe ambas lecturas y procesa el valor más bajo para sus cálculos de regulación. (pág. 112).
+Modifica su resistencia eléctrica inversamente a la temperatura del aire ambiental. La unidad de control analiza la señal para calcular la cantidad de calor o frío a aportar y posicionar las trampillas de mezcla y distribución. (págs. 110-111)
 
 ## Valores de trabajo
 
-Valor por defecto asignado en caso de avería de ambos sensores: +10 ºC. (pág. 112).
+- Característica NTC (la resistencia disminuye al elevarse la temperatura). (págs. 110-111)
 
 ## Anomalías frecuentes
 
-Corte del cableado por impactos frontales o derivación a masa. (págs. 112, 163).
+Rotura por impactos frontales, humedad en el conector o lecturas infladas por la proximidad del radiador del motor. (págs. 110-111)
 
 ## Comportamiento en avería
 
-Si falla un sensor, la UEGAA toma la lectura del segundo. Si fallan ambos, la UEGAA asume +10 ºC fijos y se anula la función de recirculación de aire. (pág. 112).
+Desactivación de la función de recirculación de aire y registro del código de avería en la memoria del autodiagnóstico. (págs. 111, 161)
 
 ## Cómo comprobarlo
 
-1. Comprobar la resistencia de la NTC a distintas temperaturas ambiente. (pág. 112).
-2. Consultar el valor medido en el bloque de valores de medición del equipo de diagnosis. (pág. 163).
+Medir la resistencia eléctrica del sensor con un multímetro y comparar con su tabla característica de temperatura. (págs. 110-111)
 
 ## Mantenimiento
 
-Asegurar que el sensor de carrocería está limpio de barro o nieve. (pág. 112).
+Proteger el conector contra la sulfatación por agua de lluvia o lavado. (pág. 111)

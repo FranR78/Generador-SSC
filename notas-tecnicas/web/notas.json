@@ -1394,19 +1394,19 @@
    "hecha": false
   },
   {
-   "nombre": "NT284_01",
-   "nt": 284,
-   "titulo": "Presostato o conmutador de presión de tres niveles",
-   "seccion": "7. Sensores y actuadores",
-   "descripcion": "Sección del presostato electromecánico con la membrana, arandelas, pasadores e interruptores — Fuente: LA CLIMATIZACIÓN.pdf, pág. 93",
-   "hecha": false
-  },
-  {
    "nombre": "NT297_01",
    "nt": 297,
    "titulo": "Servomotores paso a paso para trampillas",
    "seccion": "7. Sensores y actuadores",
    "descripcion": "Esquema eléctrico y despiece del servomotor paso a paso con rotor de 5 dientes y estátor de 4 polos — Fuente: LA CLIMATIZACIÓN.pdf, pág. 121",
+   "hecha": false
+  },
+  {
+   "nombre": "NT306_01",
+   "nt": 306,
+   "titulo": "Diagnóstico del circuito frigorífico por lectura de manómetros",
+   "seccion": "10. Diagnóstico",
+   "descripcion": "Manómetros de alta y baja presión con las escalas de lectura de presión y temperatura — Fuente: LA CLIMATIZACIÓN.pdf, pág. 157",
    "hecha": false
   },
   {
@@ -4402,7 +4402,7 @@
    "hecha": false
   }
  ],
- "total": 820,
+ "total": 829,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -16822,15 +16822,15 @@
    "clave": "valvula-sobrepresion",
    "seccion": "4. El compresor",
    "subgrupo": "",
-   "titulo": "Válvula de sobrepresión de seguridad",
+   "titulo": "Válvula de sobrepresión",
    "codigo": "",
-   "menu": "Válvula de sobrepresión de seguridad",
+   "menu": "Válvula de sobrepresión",
    "grupo": "Circuito frigorífico",
    "tipo": "elemento",
    "subtipo": "",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 89",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 87, 164",
    "clase": "componente",
    "estado": "",
    "fusionadas": [],
@@ -16840,63 +16840,62 @@
    "formaParteDe": "compresor",
    "relacionados": [
     "compresor",
-    "filtro-deshidratador",
     "presostato"
    ],
    "palabras": [
     "válvula de sobrepresión",
-    "muelle de seguridad",
+    "descarga",
+    "muelle",
     "38 bares",
-    "disco fusible",
-    "evacuación de emergencia"
+    "protección mecánica"
    ],
    "apartados": [
     {
      "titulo": "Misión",
-     "texto": "Proteger mecánicamente los componentes del circuito abriéndose para evacuar refrigerante al exterior si la alta presión alcanza un límite crítico peligroso. (pág. 89).",
-     "html": "<p>Proteger mecánicamente los componentes del circuito abriéndose para evacuar refrigerante al exterior si la alta presión alcanza un límite crítico peligroso. <span class=\"pag\">pág. 89</span>.</p>",
+     "texto": "Proteger mecánicamente el circuito de fluido refrigerante contra sobrepresiones peligrosas liberando gas a la atmósfera. (pág. 87)",
+     "html": "<p>Proteger mecánicamente el circuito de fluido refrigerante contra sobrepresiones peligrosas liberando gas a la atmósfera. <span class=\"pag\">pág. 87</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Tipos y características",
-     "texto": "Válvula mecánica de muelle tarado integrada normalmente en el cuerpo del compresor o en el cuerpo del depósito acumulador. En algunos casos incorpora un disco fusible plástico protector. (pág. 89).",
-     "html": "<p>Válvula mecánica de muelle tarado integrada normalmente en el cuerpo del compresor o en el cuerpo del depósito acumulador. En algunos casos incorpora un disco fusible plástico protector. <span class=\"pag\">pág. 89</span>.</p>",
+     "texto": "Válvula de descarga mecánica de seguridad con cierre por muelle tarado, instalada en el propio cuerpo del compresor o en la línea de alta presión. (págs. 87, 164)",
+     "html": "<p>Válvula de descarga mecánica de seguridad con cierre por muelle tarado, instalada en el propio cuerpo del compresor o en la línea de alta presión. <span class=\"pag\">págs. 87, 164</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Principio de funcionamiento",
-     "texto": "Un muelle interno mantiene una bola o platillo apretado contra su asiento. Si la presión del circuito alcanza aprox. 3,8 MPa (38 bares), la fuerza vence la resistencia del muelle y la válvula se abre, liberando gas a la atmósfera para bajar la presión. Cuando la presión desciende de 3,5 MPa (35 bares), el muelle vuelve a cerrar la válvula. (pág. 89).",
-     "html": "<p>Un muelle interno mantiene una bola o platillo apretado contra su asiento. Si la presión del circuito alcanza aprox. 3,8 MPa (38 bares), la fuerza vence la resistencia del muelle y la válvula se abre, liberando gas a la atmósfera para bajar la presión. Cuando la presión desciende de 3,5 MPa (35 bares), el muelle vuelve a cerrar la válvula. <span class=\"pag\">pág. 89</span>.</p>",
+     "texto": "Permanece cerrada por la acción de su muelle interno. Si la presión en el lado de alta supera la fuerza ejercida por el muelle, la válvula vence la resistencia y se abre, liberando una porción de refrigerante al exterior para reducir la presión del circuito a niveles seguros. (pág. 87)",
+     "html": "<p>Permanece cerrada por la acción de su muelle interno. Si la presión en el lado de alta supera la fuerza ejercida por el muelle, la válvula vence la resistencia y se abre, liberando una porción de refrigerante al exterior para reducir la presión del circuito a niveles seguros. <span class=\"pag\">pág. 87</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Valores de trabajo",
-     "texto": "Presión de apertura: aprox. 3,8 MPa (38 bares). (pág. 89). Presión de cierre: aprox. 3,5 MPa (35 bares). (pág. 89).",
-     "html": "<ul>\n<li>Presión de apertura: aprox. 3,8 MPa (38 bares). <span class=\"pag\">pág. 89</span>.</li>\n<li>Presión de cierre: aprox. 3,5 MPa (35 bares). <span class=\"pag\">pág. 89</span>.</li>\n</ul>",
+     "texto": "Umbral de apertura de seguridad por sobrepresión: 38 bares. (pág. 164)",
+     "html": "<ul>\n<li>Umbral de apertura de seguridad por sobrepresión: 38 bares. <span class=\"pag\">pág. 164</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Anomalías frecuentes",
-     "texto": "Apertura accidental por fallo de los electroventiladores o sobrecarga de gas, y rotura del disco fusible plástico indicador. (págs. 89, 271).",
-     "html": "<p>Apertura accidental por fallo de los electroventiladores o sobrecarga de gas, y rotura del disco fusible plástico indicador. <span class=\"pag\">págs. 89, 271</span>.</p>",
+     "texto": "Disparo de la válvula provocado por falta de condensación, fallo en los electroventiladores o sobrecalentamiento excesivo del motor, con pérdida del gas del circuito. (págs. 87, 144)",
+     "html": "<p>Disparo de la válvula provocado por falta de condensación, fallo en los electroventiladores o sobrecalentamiento excesivo del motor, con pérdida del gas del circuito. <span class=\"pag\">págs. 87, 144</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Comportamiento en avería",
-     "texto": "Escape de refrigerante con pérdida parcial o total de la carga de gas del circuito. (págs. 89, 271).",
-     "html": "<p>Escape de refrigerante con pérdida parcial o total de la carga de gas del circuito. <span class=\"pag\">págs. 89, 271</span>.</p>",
+     "texto": "Salida violenta de gas refrigerante al exterior e inoperatividad posterior del circuito frigorífico por falta de presión. (pág. 87)",
+     "html": "<p>Salida violenta de gas refrigerante al exterior e inoperatividad posterior del circuito frigorífico por falta de presión. <span class=\"pag\">pág. 87</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Cómo comprobarlo",
-     "texto": "Inspección visual del estado del disco plástico indicador de rotura en la boca de salida de la válvula. (pág. 89).",
-     "html": "<p>Inspección visual del estado del disco plástico indicador de rotura en la boca de salida de la válvula. <span class=\"pag\">pág. 89</span>.</p>",
+     "texto": "Verificar la presencia de restos de aceite lubricante en la salida de la válvula e inspeccionar las presiones del circuito con la estación de manómetros tras corregir la causa de la sobrepresión. (págs. 87, 157)",
+     "html": "<p>Verificar la presencia de restos de aceite lubricante en la salida de la válvula e inspeccionar las presiones del circuito con la estación de manómetros tras corregir la causa de la sobrepresión. <span class=\"pag\">págs. 87, 157</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Mantenimiento",
-     "texto": "Tras la apertura de la válvula, averiguar y reparar la causa de la sobrepresión (ej. ventiladores inactivos o condensador tapado), sustituir el disco plástico e instalar carga nueva. (págs. 89, 271).",
-     "html": "<p>Tras la apertura de la válvula, averiguar y reparar la causa de la sobrepresión (ej. ventiladores inactivos o condensador tapado), sustituir el disco plástico e instalar carga nueva. <span class=\"pag\">págs. 89, 271</span>.</p>",
+     "texto": "Evitar que los componentes del circuito alcancen temperaturas superiores a 80 ºC durante trabajos de soldadura para impedir la apertura involuntaria de la válvula. (pág. 144)",
+     "html": "<p>Evitar que los componentes del circuito alcancen temperaturas superiores a 80 ºC durante trabajos de soldadura para impedir la apertura involuntaria de la válvula. <span class=\"pag\">pág. 144</span></p>",
      "nivel": ""
     }
    ]
@@ -24838,89 +24837,82 @@
    "clave": "presostato-binary-trinary-cuatrinary",
    "seccion": "7. Sensores y actuadores",
    "subgrupo": "",
-   "titulo": "Presostato o conmutador de presión de tres niveles",
+   "titulo": "Presostato",
    "codigo": "",
-   "menu": "Presostato o conmutador de presión de",
+   "menu": "Presostato",
    "grupo": "Control de climatización",
    "tipo": "elemento",
    "subtipo": "",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 91-94",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 91-97",
    "clase": "componente",
    "estado": "",
    "fusionadas": [],
    "variante": "",
    "area": "climatizacion",
    "sistema": "control-climatizacion",
-   "formaParteDe": "",
+   "formaParteDe": "circuito-frigorifico",
    "relacionados": [
-    "unidad-control-climatizador",
+    "embrague-compresor",
     "electroventilador-condensador",
-    "embrague-compresor"
+    "transmisor-presion"
    ],
    "palabras": [
     "presostato",
-    "tres niveles",
-    "arandelas elásticas",
+    "trinary",
+    "transmisor de silicio",
+    "PWM",
     "2 bares",
-    "16 bares",
-    "25 bares",
-    "obús de aislamiento"
+    "30 bares"
    ],
    "apartados": [
     {
      "titulo": "Misión",
-     "texto": "Proteger el circuito frigorífico frente a presiones peligrosas (por defecto o exceso) y ordenar la activación de la velocidad del electroventilador del condensador. (págs. 91, 94).",
-     "html": "<p>Proteger el circuito frigorífico frente a presiones peligrosas (por defecto o exceso) y ordenar la activación de la velocidad del electroventilador del condensador. <span class=\"pag\">págs. 91, 94</span>.</p>",
+     "texto": "Monitorizar la presión del circuito frigorífico para proteger el compresor contra presiones anormales (baja o alta) y gobernar las velocidades del electroventilador. (págs. 91-97)",
+     "html": "<p>Monitorizar la presión del circuito frigorífico para proteger el compresor contra presiones anormales (baja o alta) y gobernar las velocidades del electroventilador. <span class=\"pag\">págs. 91-97</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Tipos y características",
-     "texto": "Conmutador de presión electromecánico montado sobre el depósito acumulador o la tubería de alta presión. Su rosca presiona una válvula de obús interna que permite sustituirlo sin vaciar el circuito. Contiene una membrana con junta de goma, arandelas elásticas de diferente grosor, pasadores y 3 interruptores (dos NA y uno NC). (págs. 92-93).",
-     "html": "<p>Conmutador de presión electromecánico montado sobre el depósito acumulador o la tubería de alta presión. Su rosca presiona una válvula de obús interna que permite sustituirlo sin vaciar el circuito. Contiene una membrana con junta de goma, arandelas elásticas de diferente grosor, pasadores y 3 interruptores (dos NA y uno NC). <span class=\"pag\">págs. 92-93</span>.</p>",
+     "texto": "Interruptor de presión hidromecánico (de 2, 3 o 4 funciones) o transmisor de presión piezoeléctrico de silicio (señal PWM). Instalado en la línea de alta presión, entre el condensador y la válvula de expansión. (págs. 91, 96-97)",
+     "html": "<p>Interruptor de presión hidromecánico (de 2, 3 o 4 funciones) o transmisor de presión piezoeléctrico de silicio (señal PWM). Instalado en la línea de alta presión, entre el condensador y la válvula de expansión. <span class=\"pag\">págs. 91, 96-97</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Principio de funcionamiento",
-     "texto": "Nivel 1 (baja presión / seguridad): si la presión desciende de 0,2 MPa (2 bares), la arandela fina se endereza y abre el contacto NC, desconectando el compresor para evitar que trabaje sin gas o aceite. (pág. 94). Nivel 2 (presión media / condensación): al funcionar el compresor y subir la presión entre 1,5 y 1,7 MPa (15-17 bares), la arandela intermedia se deforma y cierra el primer contacto NA, conectando el electroventilador del condensador. (pág. 94). Nivel 3 (alta presión / seguridad): si la presión sobrepasa 2,5 MPa (25 bares), la arandela más gruesa se deforma y abre el segundo contacto de seguridad, desconectando el compresor para evitar reventones. (pág. 94).",
-     "html": "<ul>\n<li>Nivel 1 (baja presión / seguridad): si la presión desciende de 0,2 MPa (2 bares), la arandela fina se endereza y abre el contacto NC, desconectando el compresor para evitar que trabaje sin gas o aceite. <span class=\"pag\">pág. 94</span>.</li>\n<li>Nivel 2 (presión media / condensación): al funcionar el compresor y subir la presión entre 1,5 y 1,7 MPa (15-17 bares), la arandela intermedia se deforma y cierra el primer contacto NA, conectando el electroventilador del condensador. <span class=\"pag\">pág. 94</span>.</li>\n<li>Nivel 3 (alta presión / seguridad): si la presión sobrepasa 2,5 MPa (25 bares), la arandela más gruesa se deforma y abre el segundo contacto de seguridad, desconectando el compresor para evitar reventones. <span class=\"pag\">pág. 94</span>.</li>\n</ul>",
+     "texto": "En presostatos convencionales: La presión actúa sobre una arandela o diafragma interno que desplaza contactos eléctricos. Si la presión desciende de 2 bares (fuga) o supera los 30 bares (sobrepresión), abre sus contactos y desconecta el compresor. A presiones intermedias (aprox. 16 bares), cierra contactos para activar la velocidad rápida del ventilador. (págs. 93-95, 98) En transmisores de silicio (G65): La presión deforma un cristal de silicio cambiando su resistencia. Un microprocesador convierte la tensión en una señal cuadrada modulada en anchura de impulso (PWM) enviada a la centralita. (págs. 96-97)",
+     "html": "<ul>\n<li>En presostatos convencionales: La presión actúa sobre una arandela o diafragma interno que desplaza contactos eléctricos. Si la presión desciende de 2 bares (fuga) o supera los 30 bares (sobrepresión), abre sus contactos y desconecta el compresor. A presiones intermedias (aprox. 16 bares), cierra contactos para activar la velocidad rápida del ventilador. <span class=\"pag\">págs. 93-95, 98</span></li>\n<li>En transmisores de silicio (G65): La presión deforma un cristal de silicio cambiando su resistencia. Un microprocesador convierte la tensión en una señal cuadrada modulada en anchura de impulso (PWM) enviada a la centralita. <span class=\"pag\">págs. 96-97</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Valores de trabajo",
-     "texto": "Umbral de corte por baja presión: < 0,2 MPa (2 bares). (pág. 94). Umbral de conexión del electroventilador: 1,5 a 1,7 MPa (15 a 17 bares). (pág. 94). Umbral de corte por alta presión: > 2,5 MPa (25 bares). (pág. 94).",
-     "html": "<ul>\n<li>Umbral de corte por baja presión: &lt; 0,2 MPa (2 bares). <span class=\"pag\">pág. 94</span>.</li>\n<li>Umbral de conexión del electroventilador: 1,5 a 1,7 MPa (15 a 17 bares). <span class=\"pag\">pág. 94</span>.</li>\n<li>Umbral de corte por alta presión: &gt; 2,5 MPa (25 bares). <span class=\"pag\">pág. 94</span>.</li>\n</ul>",
+     "texto": "Presión de reposo del circuito a 20 ºC: aprox. 0,5 MPa (5 bares). (pág. 93) Umbral de corte por baja presión: < 2 bares (0,2 MPa). (pág. 98) Umbral de corte por alta presión: > 30 bares (3,0 MPa). (pág. 98)",
+     "html": "<ul>\n<li>Presión de reposo del circuito a 20 ºC: aprox. 0,5 MPa (5 bares). <span class=\"pag\">pág. 93</span></li>\n<li>Umbral de corte por baja presión: &lt; 2 bares (0,2 MPa). <span class=\"pag\">pág. 98</span></li>\n<li>Umbral de corte por alta presión: &gt; 30 bares (3,0 MPa). <span class=\"pag\">pág. 98</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Anomalías frecuentes",
-     "texto": "Fallo de contactos internos por chispazo o agarrotamiento de los pasadores de accionamiento. (págs. 92, 271).",
-     "html": "<p>Fallo de contactos internos por chispazo o agarrotamiento de los pasadores de accionamiento. <span class=\"pag\">págs. 92, 271</span>.</p>",
+     "texto": "Fugas de refrigerante por la toma de fijación, agarrotamiento de los contactos eléctricos o descalibración del cristal de silicio. (págs. 93, 97, 161)",
+     "html": "<p>Fugas de refrigerante por la toma de fijación, agarrotamiento de los contactos eléctricos o descalibración del cristal de silicio. <span class=\"pag\">págs. 93, 97, 161</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Comportamiento en avería",
-     "texto": "El compresor no acopla (presostato abierto en baja o alta) o el electroventilador no entra en marcha al subir la presión en parado. (págs. 94, 271).",
-     "html": "<p>El compresor no acopla (presostato abierto en baja o alta) o el electroventilador no entra en marcha al subir la presión en parado. <span class=\"pag\">págs. 94, 271</span>.</p>",
+     "texto": "Falta de acoplamiento del compresor o imposibilidad de conectar los escalones de velocidad del electroventilador. (págs. 93, 161)",
+     "html": "<p>Falta de acoplamiento del compresor o imposibilidad de conectar los escalones de velocidad del electroventilador. <span class=\"pag\">págs. 93, 161</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Cómo comprobarlo",
-     "texto": "Comprobar la continuidad de los 3 interruptores según la presión leída en manómetros. (págs. 94, 158). Comprobar que al desenroscar no fuga refrigerante gracias al obús interior de la toma. (pág. 92).",
-     "html": "<ol>\n<li>Comprobar la continuidad de los 3 interruptores según la presión leída en manómetros. <span class=\"pag\">págs. 94, 158</span>.</li>\n<li>Comprobar que al desenroscar no fuga refrigerante gracias al obús interior de la toma. <span class=\"pag\">pág. 92</span>.</li>\n</ol>",
+     "texto": "Medir la continuidad eléctrica entre terminales con el circuito presurizado o verificar la señal modulada PWM con un osciloscopio. (págs. 93, 96)",
+     "html": "<p>Medir la continuidad eléctrica entre terminales con el circuito presurizado o verificar la señal modulada PWM con un osciloscopio. <span class=\"pag\">págs. 93, 96</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Mantenimiento",
-     "texto": "Verificación periódica del conector y de la junta de estanqueidad de la rosca. (pág. 92).",
-     "html": "<p>Verificación periódica del conector y de la junta de estanqueidad de la rosca. <span class=\"pag\">pág. 92</span>.</p>",
-     "nivel": ""
-    },
-    {
-     "titulo": "Imágenes requeridas",
-     "texto": "Sección del presostato electromecánico con la membrana, arandelas, pasadores e interruptores — Fuente: LA CLIMATIZACIÓN.pdf, pág. 93",
-     "html": "<ul>\n<li>Sección del presostato electromecánico con la membrana, arandelas, pasadores e interruptores — Fuente: LA CLIMATIZACIÓN.pdf, pág. 93</li>\n</ul>",
+     "texto": "La toma de conexión del presostato incorpora una válvula Schrader que permite su sustitución sin necesidad de vaciar la carga de refrigerante del circuito. (pág. 91)",
+     "html": "<p>La toma de conexión del presostato incorpora una válvula Schrader que permite su sustitución sin necesidad de vaciar la carga de refrigerante del circuito. <span class=\"pag\">pág. 91</span></p>",
      "nivel": ""
     }
    ]
@@ -28331,79 +28323,79 @@
    "clave": "sensor-temperatura-ntc-exterior",
    "seccion": "7. Sensores y actuadores",
    "subgrupo": "",
-   "titulo": "Sensores de temperatura exterior",
+   "titulo": "Sensor de temperatura exterior",
    "codigo": "",
-   "menu": "Sensores de temperatura exterior",
+   "menu": "Sensor de temperatura exterior",
    "grupo": "Control de climatización",
    "tipo": "elemento",
    "subtipo": "",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 111-112",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 110-111",
    "clase": "componente",
    "estado": "",
    "fusionadas": [],
    "variante": "",
    "area": "climatizacion",
    "sistema": "control-climatizacion",
-   "formaParteDe": "",
+   "formaParteDe": "control-climatizacion",
    "relacionados": [
     "unidad-control-climatizador",
-    "regulacion-automatica"
+    "servomotor-trampilla"
    ],
    "palabras": [
-    "sensor de temperatura exterior",
+    "sensor exterior",
     "NTC",
-    "valor sustitutivo +10 ºC",
-    "entrada de aire"
+    "temperatura ambiental",
+    "paragolpes"
    ],
    "apartados": [
     {
      "titulo": "Misión",
-     "texto": "Medir la temperatura del aire atmosférico exterior para que la UEGAA posicione las trampillas de mezcla y regule la velocidad de la turbina. (págs. 111-112).",
-     "html": "<p>Medir la temperatura del aire atmosférico exterior para que la UEGAA posicione las trampillas de mezcla y regule la velocidad de la turbina. <span class=\"pag\">págs. 111-112</span>.</p>",
+     "texto": "Captar la temperatura del aire atmosférico exterior para proporcionar a la unidad de control la señal primaria de cálculo de la mezcla de aire. (págs. 110-111)",
+     "html": "<p>Captar la temperatura del aire atmosférico exterior para proporcionar a la unidad de control la señal primaria de cálculo de la mezcla de aire. <span class=\"pag\">págs. 110-111</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Tipos y características",
-     "texto": "Dos resistencias NTC independientes: una montada en la parte frontal de la carrocería (paragolpes/retrovisor) y otra sobre el canal de entrada de aire fresco al evaporador. (pág. 112).",
-     "html": "<p>Dos resistencias NTC independientes: una montada en la parte frontal de la carrocería (paragolpes/retrovisor) y otra sobre el canal de entrada de aire fresco al evaporador. <span class=\"pag\">pág. 112</span>.</p>",
+     "texto": "Sensores de tipo resistencia NTC. En muchas instalaciones se montan dos sondas: una en el paragolpes frontal/retrovisor y otra en el conducto de aspiración de aire fresco. (págs. 110-111)",
+     "html": "<p>Sensores de tipo resistencia NTC. En muchas instalaciones se montan dos sondas: una en el paragolpes frontal/retrovisor y otra en el conducto de aspiración de aire fresco. <span class=\"pag\">págs. 110-111</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Principio de funcionamiento",
-     "texto": "Varían su resistencia eléctrica según la temperatura del aire exterior. La UEGAA recibe ambas lecturas y procesa el valor más bajo para sus cálculos de regulación. (pág. 112).",
-     "html": "<p>Varían su resistencia eléctrica según la temperatura del aire exterior. La UEGAA recibe ambas lecturas y procesa el valor más bajo para sus cálculos de regulación. <span class=\"pag\">pág. 112</span>.</p>",
+     "texto": "Modifica su resistencia eléctrica inversamente a la temperatura del aire ambiental. La unidad de control analiza la señal para calcular la cantidad de calor o frío a aportar y posicionar las trampillas de mezcla y distribución. (págs. 110-111)",
+     "html": "<p>Modifica su resistencia eléctrica inversamente a la temperatura del aire ambiental. La unidad de control analiza la señal para calcular la cantidad de calor o frío a aportar y posicionar las trampillas de mezcla y distribución. <span class=\"pag\">págs. 110-111</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Valores de trabajo",
-     "texto": "Valor por defecto asignado en caso de avería de ambos sensores: +10 ºC. (pág. 112).",
-     "html": "<p>Valor por defecto asignado en caso de avería de ambos sensores: +10 ºC. <span class=\"pag\">pág. 112</span>.</p>",
+     "texto": "Característica NTC (la resistencia disminuye al elevarse la temperatura). (págs. 110-111)",
+     "html": "<ul>\n<li>Característica NTC (la resistencia disminuye al elevarse la temperatura). <span class=\"pag\">págs. 110-111</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Anomalías frecuentes",
-     "texto": "Corte del cableado por impactos frontales o derivación a masa. (págs. 112, 163).",
-     "html": "<p>Corte del cableado por impactos frontales o derivación a masa. <span class=\"pag\">págs. 112, 163</span>.</p>",
+     "texto": "Rotura por impactos frontales, humedad en el conector o lecturas infladas por la proximidad del radiador del motor. (págs. 110-111)",
+     "html": "<p>Rotura por impactos frontales, humedad en el conector o lecturas infladas por la proximidad del radiador del motor. <span class=\"pag\">págs. 110-111</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Comportamiento en avería",
-     "texto": "Si falla un sensor, la UEGAA toma la lectura del segundo. Si fallan ambos, la UEGAA asume +10 ºC fijos y se anula la función de recirculación de aire. (pág. 112).",
-     "html": "<p>Si falla un sensor, la UEGAA toma la lectura del segundo. Si fallan ambos, la UEGAA asume +10 ºC fijos y se anula la función de recirculación de aire. <span class=\"pag\">pág. 112</span>.</p>",
+     "texto": "Desactivación de la función de recirculación de aire y registro del código de avería en la memoria del autodiagnóstico. (págs. 111, 161)",
+     "html": "<p>Desactivación de la función de recirculación de aire y registro del código de avería en la memoria del autodiagnóstico. <span class=\"pag\">págs. 111, 161</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Cómo comprobarlo",
-     "texto": "Comprobar la resistencia de la NTC a distintas temperaturas ambiente. (pág. 112). Consultar el valor medido en el bloque de valores de medición del equipo de diagnosis. (pág. 163).",
-     "html": "<ol>\n<li>Comprobar la resistencia de la NTC a distintas temperaturas ambiente. <span class=\"pag\">pág. 112</span>.</li>\n<li>Consultar el valor medido en el bloque de valores de medición del equipo de diagnosis. <span class=\"pag\">pág. 163</span>.</li>\n</ol>",
+     "texto": "Medir la resistencia eléctrica del sensor con un multímetro y comparar con su tabla característica de temperatura. (págs. 110-111)",
+     "html": "<p>Medir la resistencia eléctrica del sensor con un multímetro y comparar con su tabla característica de temperatura. <span class=\"pag\">págs. 110-111</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Mantenimiento",
-     "texto": "Asegurar que el sensor de carrocería está limpio de barro o nieve. (pág. 112).",
-     "html": "<p>Asegurar que el sensor de carrocería está limpio de barro o nieve. <span class=\"pag\">pág. 112</span>.</p>",
+     "texto": "Proteger el conector contra la sulfatación por agua de lluvia o lavado. (pág. 111)",
+     "html": "<p>Proteger el conector contra la sulfatación por agua de lluvia o lavado. <span class=\"pag\">pág. 111</span></p>",
      "nivel": ""
     }
    ]
@@ -29884,71 +29876,70 @@
    "subtipo": "",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 113",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 112",
    "clase": "componente",
    "estado": "",
    "fusionadas": [],
    "variante": "",
    "area": "climatizacion",
    "sistema": "control-climatizacion",
-   "formaParteDe": "",
+   "formaParteDe": "unidad-control-climatizador",
    "relacionados": [
-    "unidad-control-climatizador",
-    "regulacion-automatica"
+    "unidad-control-climatizador"
    ],
    "palabras": [
-    "sensor interior",
-    "turbina de aspiración",
+    "sensor habitáculo",
+    "microturbina",
     "NTC",
-    "valor sustitutivo +24 ºC"
+    "aspiración de aire"
    ],
    "apartados": [
     {
      "titulo": "Misión",
-     "texto": "Medir la temperatura real del aire en la zona de los pasajeros dentro del habitáculo. (pág. 113).",
-     "html": "<p>Medir la temperatura real del aire en la zona de los pasajeros dentro del habitáculo. <span class=\"pag\">pág. 113</span>.</p>",
+     "texto": "Medir la temperatura real del aire en el interior del habitáculo para que la centralita verifique la convergencia con la temperatura seleccionada. (pág. 112)",
+     "html": "<p>Medir la temperatura real del aire en el interior del habitáculo para que la centralita verifique la convergencia con la temperatura seleccionada. <span class=\"pag\">pág. 112</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Tipos y características",
-     "texto": "Resistencia NTC integrada en el panel de mandos de la UEGAA, equipada con una pequeña turbina eléctrica de aspiración forzada. (pág. 113).",
-     "html": "<p>Resistencia NTC integrada en el panel de mandos de la UEGAA, equipada con una pequeña turbina eléctrica de aspiración forzada. <span class=\"pag\">pág. 113</span>.</p>",
+     "texto": "Termistor NTC montado en la propia carcasa del panel de mandos del climatizador. Dispone de una microturbina de aspiración de aire accionada por motor eléctrico. (pág. 112)",
+     "html": "<p>Termistor NTC montado en la propia carcasa del panel de mandos del climatizador. Dispone de una microturbina de aspiración de aire accionada por motor eléctrico. <span class=\"pag\">pág. 112</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Principio de funcionamiento",
-     "texto": "La turbina de aspiración fuerce un flujo continuo de aire del habitáculo a través del sensor NTC. La UEGAA compara el valor medido con la temperatura de consigna solicitada por el usuario y corrige la velocidad de la turbina y la posición de las trampillas de mezcla. (pág. 113).",
-     "html": "<p>La turbina de aspiración fuerce un flujo continuo de aire del habitáculo a través del sensor NTC. La UEGAA compara el valor medido con la temperatura de consigna solicitada por el usuario y corrige la velocidad de la turbina y la posición de las trampillas de mezcla. <span class=\"pag\">pág. 113</span>.</p>",
+     "texto": "La microturbina aspira una muestra constante de aire desde la zona del conductor a través de la rejilla del panel, haciéndolo pasar sobre la resistencia NTC. La variación de tensión resultante es procesada por la UEGAA para corregir el caudal del soplador y el ángulo de las trampillas. (pág. 112)",
+     "html": "<p>La microturbina aspira una muestra constante de aire desde la zona del conductor a través de la rejilla del panel, haciéndolo pasar sobre la resistencia NTC. La variación de tensión resultante es procesada por la UEGAA para corregir el caudal del soplador y el ángulo de las trampillas. <span class=\"pag\">pág. 112</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Valores de trabajo",
-     "texto": "Valor por defecto en caso de fallo: +24 ºC. (pág. 113).",
-     "html": "<p>Valor por defecto en caso de fallo: +24 ºC. <span class=\"pag\">pág. 113</span>.</p>",
+     "texto": "Tipo de elemento sensible: resistencia NTC. (pág. 112)",
+     "html": "<ul>\n<li>Tipo de elemento sensible: resistencia NTC. <span class=\"pag\">pág. 112</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Anomalías frecuentes",
-     "texto": "Bloqueo de la turbina de aspiración por pelusa o polvo, o fallo del elemento NTC. (págs. 113, 163).",
-     "html": "<p>Bloqueo de la turbina de aspiración por pelusa o polvo, o fallo del elemento NTC. <span class=\"pag\">págs. 113, 163</span>.</p>",
+     "texto": "Bloqueo mecánico de la microturbina por pelusa o acumulación de polvo sobre el elemento sensible. (pág. 112)",
+     "html": "<p>Bloqueo mecánico de la microturbina por pelusa o acumulación de polvo sobre el elemento sensible. <span class=\"pag\">pág. 112</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Comportamiento en avería",
-     "texto": "La UEGAA asume un valor sustitutivo fijo de +24 ºC, perdiéndose la precisión de la regulación automática. (pág. 113).",
-     "html": "<p>La UEGAA asume un valor sustitutivo fijo de +24 ºC, perdiéndose la precisión de la regulación automática. <span class=\"pag\">pág. 113</span>.</p>",
+     "texto": "Medición errónea de la temperatura ambiente debido al calor propio acumulado en los circuitos de la centralita, provocando una regulación oscilante. (pág. 112)",
+     "html": "<p>Medición errónea de la temperatura ambiente debido al calor propio acumulado en los circuitos de la centralita, provocando una regulación oscilante. <span class=\"pag\">pág. 112</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Cómo comprobarlo",
-     "texto": "Verificar que la turbina gira al conectar el encendido. (pág. 113). Consultar el registro de averías en autodiagnosis. (pág. 163).",
-     "html": "<ol>\n<li>Verificar que la turbina gira al conectar el encendido. <span class=\"pag\">pág. 113</span>.</li>\n<li>Consultar el registro de averías en autodiagnosis. <span class=\"pag\">pág. 163</span>.</li>\n</ol>",
+     "texto": "Limpiar la rejilla con aire a baja presión y verificar el valor leído en el bloque de valores de medición. (págs. 112, 161)",
+     "html": "<p>Limpiar la rejilla con aire a baja presión y verificar el valor leído en el bloque de valores de medición. <span class=\"pag\">págs. 112, 161</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Mantenimiento",
-     "texto": "Limpieza de las rejillas de aspiración de la consola con aire a baja presión. (pág. 113).",
-     "html": "<p>Limpieza de las rejillas de aspiración de la consola con aire a baja presión. <span class=\"pag\">pág. 113</span>.</p>",
+     "texto": "Mantener limpia la rejilla frontal del panel de mandos. (pág. 112)",
+     "html": "<p>Mantener limpia la rejilla frontal del panel de mandos. <span class=\"pag\">pág. 112</span></p>",
      "nivel": ""
     }
    ]
@@ -31023,6 +31014,85 @@
    ]
   },
   {
+   "id": "ssc.sensor-temperatura-interior.aire-soplado.la-climatizacion",
+   "nt": 831,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-temperatura-ntc-interior",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Sensor de temperatura del aire de soplado",
+   "codigo": "",
+   "menu": "Sensor de temperatura del aire de sopl",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 113",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "aire-soplado",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "servomotor-trampilla"
+   ],
+   "palabras": [
+    "sonda de soplado",
+    "conducto de aire",
+    "NTC",
+    "realimentación de mezcla"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la temperatura del aire tratado en el canal de salida hacia los difusores antes de que penetre en el habitáculo. (pág. 113)",
+     "html": "<p>Medir la temperatura del aire tratado en el canal de salida hacia los difusores antes de que penetre en el habitáculo. <span class=\"pag\">pág. 113</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Sonda térmica de resistencia NTC ubicada en la caja de distribución de aire, tras el evaporador y el radiador de calefacción. (pág. 113)",
+     "html": "<p>Sonda térmica de resistencia NTC ubicada en la caja de distribución de aire, tras el evaporador y el radiador de calefacción. <span class=\"pag\">pág. 113</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El aire tratado baña la sonda NTC, cuyo valor resistivo aumenta al descender la temperatura. La UEGAA utiliza esta señal como bucle de realimentación para ajustar la posición exacta de la trampilla de mezcla. (pág. 113)",
+     "html": "<p>El aire tratado baña la sonda NTC, cuyo valor resistivo aumenta al descender la temperatura. La UEGAA utiliza esta señal como bucle de realimentación para ajustar la posición exacta de la trampilla de mezcla. <span class=\"pag\">pág. 113</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Variación de resistencia inversamente proporcional a la temperatura del flujo de aire impulsado. (pág. 113)",
+     "html": "<ul>\n<li>Variación de resistencia inversamente proporcional a la temperatura del flujo de aire impulsado. <span class=\"pag\">pág. 113</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Descalibración de la curva NTC o desconexión del conector eléctrico. (pág. 113)",
+     "html": "<p>Descalibración de la curva NTC o desconexión del conector eléctrico. <span class=\"pag\">pág. 113</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Inestabilidad en la temperatura del aire soplado por los aireadores. (pág. 113)",
+     "html": "<p>Inestabilidad en la temperatura del aire soplado por los aireadores. <span class=\"pag\">pág. 113</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Medir la resistencia eléctrica entre sus terminales a temperatura conocida. (pág. 113)",
+     "html": "<p>Medir la resistencia eléctrica entre sus terminales a temperatura conocida. <span class=\"pag\">pág. 113</span></p>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.sensor-evaporador.11-dispositivos-de-regulacion-y-segurida",
    "nt": 65,
    "modulo": "ssc",
@@ -31537,74 +31607,66 @@
    "subtipo": "",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 90",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 88-90",
    "clase": "componente",
    "estado": "",
    "fusionadas": [],
    "variante": "",
    "area": "climatizacion",
    "sistema": "control-climatizacion",
-   "formaParteDe": "",
+   "formaParteDe": "control-climatizacion",
    "relacionados": [
-    "evaporador",
     "unidad-control-climatizador",
-    "embrague-compresor"
+    "compresor",
+    "evaporador"
    ],
    "palabras": [
-    "sensor evaporador",
-    "NTC",
+    "sonda del evaporador",
+    "termistor NTC",
     "protección antihielo",
-    "0 ºC",
-    "3 ºC",
-    "corte de compresor"
+    "desconexión del compresor"
    ],
    "apartados": [
     {
      "titulo": "Misión",
-     "texto": "Informar a la UEGAA de la temperatura de las aletas del evaporador para desconectar el compresor cuando existe riesgo de congelación del agua condensada. (pág. 90).",
-     "html": "<p>Informar a la UEGAA de la temperatura de las aletas del evaporador para desconectar el compresor cuando existe riesgo de congelación del agua condensada. <span class=\"pag\">pág. 90</span>.</p>",
+     "texto": "Medir la temperatura de la matriz de aletas del evaporador para prevenir la congelación del agua de condensación. (págs. 88-89)",
+     "html": "<p>Medir la temperatura de la matriz de aletas del evaporador para prevenir la congelación del agua de condensación. <span class=\"pag\">págs. 88-89</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Tipos y características",
-     "texto": "Resistencia NTC (coeficiente de temperatura negativo) montada entre las aletas de la zona más fría del evaporador, o bien un interruptor térmico bimetálico. (pág. 90).",
-     "html": "<p>Resistencia NTC (coeficiente de temperatura negativo) montada entre las aletas de la zona más fría del evaporador, o bien un interruptor térmico bimetálico. <span class=\"pag\">pág. 90</span>.</p>",
+     "texto": "Sensor térmico de tipo termistor (NTC) o interruptor térmico, alojado directamente entre las aletas del evaporador. (págs. 88-90)",
+     "html": "<p>Sensor térmico de tipo termistor (NTC) o interruptor térmico, alojado directamente entre las aletas del evaporador. <span class=\"pag\">págs. 88-90</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Principio de funcionamiento",
-     "texto": "Mide continuamente la temperatura del evaporador y envía la señal eléctrica a la UEGAA. Si la temperatura desciende hasta valores críticos de congelación (entre 0 ºC y -1 ºC), la UEGAA (o el interruptor térmico directamente) corta la alimentación del acoplamiento electromagnético del compresor. Al subir la temperatura por encima de +3 ºC, se restablece la alimentación y el compresor vuelve a funcionar. (pág. 90).",
-     "html": "<p>Mide continuamente la temperatura del evaporador y envía la señal eléctrica a la UEGAA. Si la temperatura desciende hasta valores críticos de congelación (entre 0 ºC y -1 ºC), la UEGAA (o el interruptor térmico directamente) corta la alimentación del acoplamiento electromagnético del compresor. Al subir la temperatura por encima de +3 ºC, se restablece la alimentación y el compresor vuelve a funcionar. <span class=\"pag\">pág. 90</span>.</p>",
-     "nivel": ""
-    },
-    {
-     "titulo": "Valores de trabajo",
-     "texto": "Temperatura de desconexión del compresor: 0 ºC a -1 ºC. (pág. 90). Temperatura de reconexión del compresor: > +3 ºC. (pág. 90).",
-     "html": "<ul>\n<li>Temperatura de desconexión del compresor: 0 ºC a -1 ºC. <span class=\"pag\">pág. 90</span>.</li>\n<li>Temperatura de reconexión del compresor: &gt; +3 ºC. <span class=\"pag\">pág. 90</span>.</li>\n</ul>",
+     "texto": "Mide de forma continua la temperatura del evaporador y transmite su señal eléctrica a la unidad de gestión electrónica (UEGAA). Si la temperatura desciende hasta el umbral de formación de hielo, la centralita (o el interruptor térmico directamente) abre el circuito e interrumpe la corriente hacia el acoplamiento electromagnético del compresor. Al subir la temperatura, vuelve a acoplar el compresor. (págs. 88-90)",
+     "html": "<p>Mide de forma continua la temperatura del evaporador y transmite su señal eléctrica a la unidad de gestión electrónica (UEGAA). Si la temperatura desciende hasta el umbral de formación de hielo, la centralita (o el interruptor térmico directamente) abre el circuito e interrumpe la corriente hacia el acoplamiento electromagnético del compresor. Al subir la temperatura, vuelve a acoplar el compresor. <span class=\"pag\">págs. 88-90</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Anomalías frecuentes",
-     "texto": "Desplazamiento físico fuera de las aletas del evaporador, o derivación a masa/interrupción del cableado NTC. (págs. 90, 271).",
-     "html": "<p>Desplazamiento físico fuera de las aletas del evaporador, o derivación a masa/interrupción del cableado NTC. <span class=\"pag\">págs. 90, 271</span>.</p>",
+     "texto": "Descalibración de la resistencia NTC o mal posicionamiento físico del elemento sensible entre las aletas del evaporador. (págs. 88, 90)",
+     "html": "<p>Descalibración de la resistencia NTC o mal posicionamiento físico del elemento sensible entre las aletas del evaporador. <span class=\"pag\">págs. 88, 90</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Comportamiento en avería",
-     "texto": "Si mide temperatura erróneamente alta: el compresor no corta nunca y el evaporador se congela, bloqueando el paso de aire al habitáculo. (págs. 90, 271). Si mide temperatura erróneamente baja: la UCE desactiva el compresor permanentemente. (págs. 90, 271).",
-     "html": "<ul>\n<li>Si mide temperatura erróneamente alta: el compresor no corta nunca y el evaporador se congela, bloqueando el paso de aire al habitáculo. <span class=\"pag\">págs. 90, 271</span>.</li>\n<li>Si mide temperatura erróneamente baja: la UCE desactiva el compresor permanentemente. <span class=\"pag\">págs. 90, 271</span>.</li>\n</ul>",
+     "texto": "Bloqueo del flujo de aire hacia el habitáculo por congelación total del agua en el evaporador o corte prematuro e injustificado del compresor. (págs. 88, 161)",
+     "html": "<p>Bloqueo del flujo de aire hacia el habitáculo por congelación total del agua en el evaporador o corte prematuro e injustificado del compresor. <span class=\"pag\">págs. 88, 161</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Cómo comprobarlo",
-     "texto": "Medir la resistencia eléctrica de la NTC a distintas temperaturas. (págs. 90, 179). Consultar el bloque de valores de medición con el equipo de autodiagnosis. (pág. 274).",
-     "html": "<ol>\n<li>Medir la resistencia eléctrica de la NTC a distintas temperaturas. <span class=\"pag\">págs. 90, 179</span>.</li>\n<li>Consultar el bloque de valores de medición con el equipo de autodiagnosis. <span class=\"pag\">pág. 274</span>.</li>\n</ol>",
+     "texto": "Comprobar la curva de resistencia NTC del sensor a diferentes temperaturas y consultar la memoria de averías mediante autodiagnóstico. (págs. 88, 161)",
+     "html": "<p>Comprobar la curva de resistencia NTC del sensor a diferentes temperaturas y consultar la memoria de averías mediante autodiagnóstico. <span class=\"pag\">págs. 88, 161</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Mantenimiento",
-     "texto": "Asegurar el correcto calado de la sonda entre las aletas del evaporador al intervenir en el bloque climatizador. (pág. 90).",
-     "html": "<p>Asegurar el correcto calado de la sonda entre las aletas del evaporador al intervenir en el bloque climatizador. <span class=\"pag\">pág. 90</span>.</p>",
+     "texto": "Asegurar la correcta colocación e inserción del elemento sensible en el cuerpo del evaporador. (págs. 88-89)",
+     "html": "<p>Asegurar la correcta colocación e inserción del elemento sensible en el cuerpo del evaporador. <span class=\"pag\">págs. 88-89</span></p>",
      "nivel": ""
     }
    ]
@@ -33575,80 +33637,79 @@
    "clave": "fotosensor-solar",
    "seccion": "7. Sensores y actuadores",
    "subgrupo": "",
-   "titulo": "Sensor de radiación solar o fotosensor",
+   "titulo": "Fotosensor de radiación solar",
    "codigo": "",
-   "menu": "Sensor de radiación solar o fotosensor",
+   "menu": "Fotosensor de radiación solar",
    "grupo": "Control de climatización",
    "tipo": "elemento",
    "subtipo": "",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 115",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 114-115",
    "clase": "componente",
    "estado": "",
    "fusionadas": [],
    "variante": "",
    "area": "climatizacion",
    "sistema": "control-climatizacion",
-   "formaParteDe": "",
+   "formaParteDe": "control-climatizacion",
    "relacionados": [
-    "unidad-control-climatizador",
-    "regulacion-automatica"
+    "unidad-control-climatizador"
    ],
    "palabras": [
     "fotosensor",
     "radiación solar",
     "fotodiodo",
     "filtro UV",
-    "regulación por lados"
+    "corriente proporcional"
    ],
    "apartados": [
     {
      "titulo": "Misión",
-     "texto": "Medir la intensidad de la radiación solar que incide sobre los ocupantes del habitáculo para compensar el calentamiento por radiación. (pág. 115).",
-     "html": "<p>Medir la intensidad de la radiación solar que incide sobre los ocupantes del habitáculo para compensar el calentamiento por radiación. <span class=\"pag\">pág. 115</span>.</p>",
+     "texto": "Detectar la intensidad de la radiación solar incidente sobre los ocupantes para incrementar preventivamente la potencia de refrigeración. (págs. 114-115)",
+     "html": "<p>Detectar la intensidad de la radiación solar incidente sobre los ocupantes para incrementar preventivamente la potencia de refrigeración. <span class=\"pag\">págs. 114-115</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Tipos y características",
-     "texto": "Uno o dos fotosensores colocados sobre la parte superior del salpicadero. Disponen de un filtro UV, un elemento óptico y un semiconductor fotodiodo. (pág. 115).",
-     "html": "<p>Uno o dos fotosensores colocados sobre la parte superior del salpicadero. Disponen de un filtro UV, un elemento óptico y un semiconductor fotodiodo. <span class=\"pag\">pág. 115</span>.</p>",
+     "texto": "Sensor óptico de montaje superior en el salpicadero, compuesto por filtro de radiaciones ultravioleta, elemento óptico orientativo y uno o dos fotodiodos. (págs. 114-115)",
+     "html": "<p>Sensor óptico de montaje superior en el salpicadero, compuesto por filtro de radiaciones ultravioleta, elemento óptico orientativo y uno o dos fotodiodos. <span class=\"pag\">págs. 114-115</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Principio de funcionamiento",
-     "texto": "La luz solar atraviesa el filtro UV e incide en el fotodiodo. La corriente eléctrica que circula por el fotodiodo aumenta en proporción directa a la intensidad de la luz solar recibida. La UEGAA procesa esta corriente y aumenta el caudal de la turbina o reduce la temperatura de mezcla. En sistemas con dos fotosensores, ajusta la temperatura de forma independiente en el lado más soleado. (pág. 115).",
-     "html": "<p>La luz solar atraviesa el filtro UV e incide en el fotodiodo. La corriente eléctrica que circula por el fotodiodo aumenta en proporción directa a la intensidad de la luz solar recibida. La UEGAA procesa esta corriente y aumenta el caudal de la turbina o reduce la temperatura de mezcla. En sistemas con dos fotosensores, ajusta la temperatura de forma independiente en el lado más soleado. <span class=\"pag\">pág. 115</span>.</p>",
+     "texto": "La luz solar atraviesa el filtro UV e incide en el fotodiodo semiconductor. La corriente eléctrica que circula por el fotodiodo aumenta de forma directamente proporcional a la intensidad de la luz solar. La UEGAA procesa el incremento de corriente y ajusta el régimen del soplador y la mezcla antes de que se eleve la temperatura interior. (págs. 114-115)",
+     "html": "<p>La luz solar atraviesa el filtro UV e incide en el fotodiodo semiconductor. La corriente eléctrica que circula por el fotodiodo aumenta de forma directamente proporcional a la intensidad de la luz solar. La UEGAA procesa el incremento de corriente y ajusta el régimen del soplador y la mezcla antes de que se eleve la temperatura interior. <span class=\"pag\">págs. 114-115</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Valores de trabajo",
-     "texto": "Proporcionalidad de corriente según la luz incidente. (pág. 115).",
-     "html": "<p>Proporcionalidad de corriente según la luz incidente. <span class=\"pag\">pág. 115</span>.</p>",
+     "texto": "Generación de corriente proporcional a la intensidad lumínica incidente. (págs. 114-115)",
+     "html": "<ul>\n<li>Generación de corriente proporcional a la intensidad lumínica incidente. <span class=\"pag\">págs. 114-115</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Anomalías frecuentes",
-     "texto": "Cubrimiento accidental del sensor con objetos sobre el salpicadero o rotura del fotodiodo. (pág. 115).",
-     "html": "<p>Cubrimiento accidental del sensor con objetos sobre el salpicadero o rotura del fotodiodo. <span class=\"pag\">pág. 115</span>.</p>",
+     "texto": "Ocultación de la lente óptica por objetos depositados en la parte superior del salpicadero. (pág. 115)",
+     "html": "<p>Ocultación de la lente óptica por objetos depositados en la parte superior del salpicadero. <span class=\"pag\">pág. 115</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Comportamiento en avería",
-     "texto": "La UEGAA adopta un valor por defecto fijo programado. (pág. 115).",
-     "html": "<p>La UEGAA adopta un valor por defecto fijo programado. <span class=\"pag\">pág. 115</span>.</p>",
+     "texto": "La centralita asume un valor fijo supletorio de radiación solar y la avería queda memorizada en el sistema. (pág. 115)",
+     "html": "<p>La centralita asume un valor fijo supletorio de radiación solar y la avería queda memorizada en el sistema. <span class=\"pag\">pág. 115</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Cómo comprobarlo",
-     "texto": "Incidir con una lámpara sobre el sensor y observar en la máquina de diagnosis si varía la lectura de radiación. (págs. 115, 163).",
-     "html": "<p>Incidir con una lámpara sobre el sensor y observar en la máquina de diagnosis si varía la lectura de radiación. <span class=\"pag\">págs. 115, 163</span>.</p>",
+     "texto": "Tapar e iluminar el sensor con una linterna observando las variaciones de corriente o parámetro leídos por la máquina de diagnosis. (págs. 115, 161)",
+     "html": "<p>Tapar e iluminar el sensor con una linterna observando las variaciones de corriente o parámetro leídos por la máquina de diagnosis. <span class=\"pag\">págs. 115, 161</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Mantenimiento",
-     "texto": "Mantener la lente del sensor limpia de objetos, pegatinas o polvo. (pág. 115).",
-     "html": "<p>Mantener la lente del sensor limpia de objetos, pegatinas o polvo. <span class=\"pag\">pág. 115</span>.</p>",
+     "texto": "Mantener limpia la carcasa protectora del fotosensor. (pág. 114)",
+     "html": "<p>Mantener limpia la carcasa protectora del fotosensor. <span class=\"pag\">pág. 114</span></p>",
      "nivel": ""
     }
    ]
@@ -36129,6 +36190,91 @@
    ]
   },
   {
+   "id": "ssc.servomotor-trampilla.la-climatizacion",
+   "nt": 832,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "servomotor-trampilla",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Servomotores de las compuertas de distribución",
+   "codigo": "",
+   "menu": "Servomotores de las compuertas de dist",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 117-124",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "servomotores",
+    "motor CC",
+    "motor paso a paso",
+    "potenciómetro",
+    "200 Hz"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Accionar eléctricamente las compuertas de mezcla, entrada de aire fresco, recirculación y distribución hacia los difusores del habitáculo. (págs. 117-118, 122-124)",
+     "html": "<p>Accionar eléctricamente las compuertas de mezcla, entrada de aire fresco, recirculación y distribución hacia los difusores del habitáculo. <span class=\"pag\">págs. 117-118, 122-124</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Actuadores eléctricos constituidos por motores de corriente continua (ON/OFF a par de bloqueo o con potenciómetro de realimentación de 5 terminales) o motores paso a paso de imán permanente (alimentados por señales cuadradas de 200 Hz). (págs. 118-121)",
+     "html": "<p>Actuadores eléctricos constituidos por motores de corriente continua (ON/OFF a par de bloqueo o con potenciómetro de realimentación de 5 terminales) o motores paso a paso de imán permanente (alimentados por señales cuadradas de 200 Hz). <span class=\"pag\">págs. 118-121</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "La unidad de control alimenta las bobinas del servomotor para girar su eje y desplazar las palancas de la trampilla. En motores de CC con potenciómetro, este varía su resistencia informando del ángulo exacto. En motores paso a paso, la centralita conmuta la polaridad de las bobinas a 200 Hz para girar el rotor el número exacto de pasos deseado sin necesitar potenciómetro. (págs. 118-121)",
+     "html": "<p>La unidad de control alimenta las bobinas del servomotor para girar su eje y desplazar las palancas de la trampilla. En motores de CC con potenciómetro, este varía su resistencia informando del ángulo exacto. En motores paso a paso, la centralita conmuta la polaridad de las bobinas a 200 Hz para girar el rotor el número exacto de pasos deseado sin necesitar potenciómetro. <span class=\"pag\">págs. 118-121</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Frecuencia de alimentación en motores paso a paso: señal cuadrada a 200 Hz. (pág. 121) Ángulo de los dientes del rotor en paso a paso: 72º (360º / 5 dientes). (pág. 120)",
+     "html": "<ul>\n<li>Frecuencia de alimentación en motores paso a paso: señal cuadrada a 200 Hz. <span class=\"pag\">pág. 121</span></li>\n<li>Ángulo de los dientes del rotor en paso a paso: 72º (360º / 5 dientes). <span class=\"pag\">pág. 120</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Pistas del potenciómetro interno desgastadas, rotura de los engranajes reductores plásticos o agarrotamiento mecánico de las compuertas. (págs. 118, 121)",
+     "html": "<p>Pistas del potenciómetro interno desgastadas, rotura de los engranajes reductores plásticos o agarrotamiento mecánico de las compuertas. <span class=\"pag\">págs. 118, 121</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Bloqueo de la distribución de aire en un difusor fijo o imposibilidad de regular la temperatura del habitáculo. (págs. 118, 161)",
+     "html": "<p>Bloqueo de la distribución de aire en un difusor fijo o imposibilidad de regular la temperatura del habitáculo. <span class=\"pag\">págs. 118, 161</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Realizar el autodiagnóstico de actuadores y verificar el recorrido mecánico de las levas. (págs. 118, 161)",
+     "html": "<p>Realizar el autodiagnóstico de actuadores y verificar el recorrido mecánico de las levas. <span class=\"pag\">págs. 118, 161</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Lubricar los pivotes mecánicos de las trampillas en trabajos de desmontaje. (pág. 122)",
+     "html": "<p>Lubricar los pivotes mecánicos de las trampillas en trabajos de desmontaje. <span class=\"pag\">pág. 122</span></p>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.ventilador-habitaculo.cd-072-climatizacion-en-el-ibiza-cordoba",
    "nt": 200,
    "modulo": "ssc",
@@ -36849,6 +36995,90 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema del regulador G462 recibiendo la señal PWM de la centralita J255 y alimentando al motor del soplador V305 — Fuente: 301_e Climatización en el Touareg.pdf, pág. 72",
      "html": "<ul>\n<li>Esquema del regulador G462 recibiendo la señal PWM de la centralita J255 y alimentando al motor del soplador V305 — Fuente: 301_e         Climatización en el Touareg.pdf, pág. 72</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.ventilador-habitaculo.regulador-potencia.la-climatizacion",
+   "nt": 833,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ventilador-habitaculo",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Regulador de velocidad del ventilador del habitáculo",
+   "codigo": "",
+   "menu": "Regulador de velocidad del ventilador",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 125",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "regulador-potencia",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "regulador de velocidad",
+    "transistores de potencia",
+    "variación continua",
+    "turbina de aire"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Variar de forma progresiva y continua la velocidad de giro de la turbina de aire interior según las demandas de la unidad de control. (pág. 125)",
+     "html": "<p>Variar de forma progresiva y continua la velocidad de giro de la turbina de aire interior según las demandas de la unidad de control. <span class=\"pag\">pág. 125</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Módulo electrónico provisto de transistores de potencia (mosfet), instalado en la carcasa de la turbina refrigerado por la propia corriente de aire. (pág. 125)",
+     "html": "<p>Módulo electrónico provisto de transistores de potencia (mosfet), instalado en la carcasa de la turbina refrigerado por la propia corriente de aire. <span class=\"pag\">pág. 125</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Recibe una señal de mando procedente de la UEGAA y modula la tensión aplicada al motor eléctrico del soplador mediante los transistores de potencia, permitiendo una variación continua del caudal sin las pérdidas térmicas de las resistencias fijas antiguas. (pág. 125)",
+     "html": "<p>Recibe una señal de mando procedente de la UEGAA y modula la tensión aplicada al motor eléctrico del soplador mediante los transistores de potencia, permitiendo una variación continua del caudal sin las pérdidas térmicas de las resistencias fijas antiguas. <span class=\"pag\">pág. 125</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Regulación continua de tensión de alimentación. (pág. 125)",
+     "html": "<ul>\n<li>Regulación continua de tensión de alimentación. <span class=\"pag\">pág. 125</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Cortocircuito o destrucción térmica del transistor de potencia por sobrecalentamiento. (pág. 125)",
+     "html": "<p>Cortocircuito o destrucción térmica del transistor de potencia por sobrecalentamiento. <span class=\"pag\">pág. 125</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El soplador queda inoperativo o gira permanentemente a la máxima velocidad sin obedecer a los mandos. (pág. 125)",
+     "html": "<p>El soplador queda inoperativo o gira permanentemente a la máxima velocidad sin obedecer a los mandos. <span class=\"pag\">pág. 125</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Medir la tensión de salida suministrada al motor del soplador al variar la velocidad seleccionada en la centralita. (págs. 125, 161)",
+     "html": "<p>Medir la tensión de salida suministrada al motor del soplador al variar la velocidad seleccionada en la centralita. <span class=\"pag\">págs. 125, 161</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Reemplazar el filtro de habitáculo para evitar falta de caudal de aire de refrigeración sobre las aletas del módulo electrónico. (págs. 105, 125)",
+     "html": "<p>Reemplazar el filtro de habitáculo para evitar falta de caudal de aire de refrigeración sobre las aletas del módulo electrónico. <span class=\"pag\">págs. 105, 125</span></p>",
      "nivel": ""
     }
    ]
@@ -41784,6 +42014,74 @@
    ]
   },
   {
+   "id": "ssc.distribucion-aire.bizona.la-climatizacion",
+   "nt": 834,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "distribucion-aire",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Distribución y mezcla de aire bizona",
+   "codigo": "",
+   "menu": "Distribución y mezcla de aire bizona",
+   "grupo": "Distribución de aire",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 126-130",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "bizona",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "",
+   "relacionados": [
+    "servomotor-trampilla",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "bizona",
+    "mezcla de aire",
+    "compuerta de mezcla",
+    "temperatura mínima",
+    "temperatura máxima"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Regular de forma independiente la temperatura del aire impulsado hacia el lado del conductor y del acompañante (o zonas traseras en trizona/cuatrizona). (pág. 130)",
+     "html": "<p>Regular de forma independiente la temperatura del aire impulsado hacia el lado del conductor y del acompañante (o zonas traseras en trizona/cuatrizona). <span class=\"pag\">pág. 130</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El bloque climatizador dispone de dos conductos de distribución y dos compuertas de mezcla independientes a la salida del evaporador y del radiador de calefacción, gobernadas por servomotores separados. (págs. 126, 130)",
+     "html": "<p>El bloque climatizador dispone de dos conductos de distribución y dos compuertas de mezcla independientes a la salida del evaporador y del radiador de calefacción, gobernadas por servomotores separados. <span class=\"pag\">págs. 126, 130</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "La turbina impulsa el aire a través del evaporador enfriándolo y deshidratándolo. A la salida, el flujo se divide hacia dos cámaras de mezcla (izquierda y derecha). Según la consigna elegida en cada lado, la UEGAA posiciona las dos compuertas de mezcla: Temperatura mínima (LO): La compuerta cierra totalmente el paso al radiador de calefacción y todo el aire entra frío al habitáculo. (pág. 127) Temperatura máxima (HI): La compuerta obliga a todo el aire frío a atravesar el radiador de calefacción antes de salir. (pág. 128) Temperatura intermedia: La compuerta adopta una posición angular específica que mezcla en proporción exacta aire frío y caliente. (pág. 129)",
+     "html": "<p>La turbina impulsa el aire a través del evaporador enfriándolo y deshidratándolo. A la salida, el flujo se divide hacia dos cámaras de mezcla (izquierda y derecha). Según la consigna elegida en cada lado, la UEGAA posiciona las dos compuertas de mezcla:</p>\n<ul>\n<li><strong>Temperatura mínima (LO):</strong> La compuerta cierra totalmente el paso al radiador de calefacción y todo el aire entra frío al habitáculo. <span class=\"pag\">pág. 127</span></li>\n<li><strong>Temperatura máxima (HI):</strong> La compuerta obliga a todo el aire frío a atravesar el radiador de calefacción antes de salir. <span class=\"pag\">pág. 128</span></li>\n<li><strong>Temperatura intermedia:</strong> La compuerta adopta una posición angular específica que mezcla en proporción exacta aire frío y caliente. <span class=\"pag\">pág. 129</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Configuración de zonas: bizona (conductor/acompañante), trizona o cuatrizona. (pág. 130)",
+     "html": "<ul>\n<li>Configuración de zonas: bizona (conductor/acompañante), trizona o cuatrizona. <span class=\"pag\">pág. 130</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Creer que los sistemas bizona disponen de dos evaporadores independientes bajo el salpicadero, cuando en realidad comparten un único evaporador y dividen mecánicamente el aire en la caja de mezcla. (págs. 126, 130)",
+     "html": "<ul>\n<li>Creer que los sistemas bizona disponen de dos evaporadores independientes bajo el salpicadero, cuando en realidad comparten un único evaporador y dividen mecánicamente el aire en la caja de mezcla. <span class=\"pag\">págs. 126, 130</span></li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.recirculacion.208-regulacion-de-la-temperatura",
    "nt": 107,
    "modulo": "ssc",
@@ -42136,6 +42434,74 @@
    ]
   },
   {
+   "id": "ssc.recirculacion.la-climatizacion",
+   "nt": 835,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "recirculacion",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Recirculación de aire y detección de contaminantes",
+   "codigo": "",
+   "menu": "Recirculación de aire y detección de c",
+   "grupo": "Distribución de aire",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 131-136",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "",
+   "relacionados": [
+    "servomotor-trampilla",
+    "sensor-calidad-aire"
+   ],
+   "palabras": [
+    "recirculación",
+    "calidad del aire",
+    "CO",
+    "NOx",
+    "recirculación automática"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Reaspirar el aire del interior del habitáculo para acelerar el acondicionamiento térmico y evitar la entrada de gases nocivos del exterior. (págs. 131-132, 136)",
+     "html": "<p>Reaspirar el aire del interior del habitáculo para acelerar el acondicionamiento térmico y evitar la entrada de gases nocivos del exterior. <span class=\"pag\">págs. 131-132, 136</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "La recirculación cierra la compuerta de aire exterior y abre la compuerta de aspiración interior. El aire ya enfriado vuelve a pasar por el evaporador, alcanzando la temperatura de consigna en menor tiempo y con menor esfuerzo del compresor. (págs. 131-132)",
+     "html": "<p>La recirculación cierra la compuerta de aire exterior y abre la compuerta de aspiración interior. El aire ya enfriado vuelve a pasar por el evaporador, alcanzando la temperatura de consigna en menor tiempo y con menor esfuerzo del compresor. <span class=\"pag\">págs. 131-132</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Recirculación manual: El conductor activa la función mediante un pulsador en el salpicadero. (pág. 133) Recirculación automática: Un sensor de calidad del aire instalado en la toma de aspiración mide sustancias contaminantes (gases de escape, monóxido de carbono, óxidos de nitrógeno e hidrocarburos no quemados). Al detectar picos de contaminación, la UEGAA cierra automáticamente la compuerta de aire exterior. La función se inhibe durante el empañado o con la compuerta de descongelación activada. (págs. 134, 136)",
+     "html": "<ul>\n<li><strong>Recirculación manual:</strong> El conductor activa la función mediante un pulsador en el salpicadero. <span class=\"pag\">pág. 133</span></li>\n<li><strong>Recirculación automática:</strong> Un sensor de calidad del aire instalado en la toma de aspiración mide sustancias contaminantes (gases de escape, monóxido de carbono, óxidos de nitrógeno e hidrocarburos no quemados). Al detectar picos de contaminación, la UEGAA cierra automáticamente la compuerta de aire exterior. La función se inhibe durante el empañado o con la compuerta de descongelación activada. <span class=\"pag\">págs. 134, 136</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Sustancias detectadas: CO, NOx e hidrocarburos no quemados de los motores de combustión. (pág. 136)",
+     "html": "<ul>\n<li>Sustancias detectadas: CO, NOx e hidrocarburos no quemados de los motores de combustión. <span class=\"pag\">pág. 136</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Mantener la recirculación activada de forma prolongada, lo que provoca la acumulación de humedad por respiración de los ocupantes y el empañado instantáneo de los cristales. (págs. 132-133)",
+     "html": "<ul>\n<li>Mantener la recirculación activada de forma prolongada, lo que provoca la acumulación de humedad por respiración de los ocupantes y el empañado instantáneo de los cristales. <span class=\"pag\">págs. 132-133</span></li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.recuperacion-refrigerante.14-carga-del-circuito-de-aire-acondicion",
    "nt": 76,
    "modulo": "ssc",
@@ -42231,15 +42597,15 @@
    "clave": "recuperacion-refrigerante",
    "seccion": "9. Taller: recuperación, vacío y carga",
    "subgrupo": "",
-   "titulo": "Proceso de recuperación, reciclaje, vacío y carga de refrigerante",
+   "titulo": "Recuperación y reciclaje de refrigerante",
    "codigo": "",
-   "menu": "Proceso de recuperación, reciclaje, va",
+   "menu": "Recuperación y reciclaje de refrigeran",
    "grupo": "Equipos de taller",
    "tipo": "proceso",
    "subtipo": "procedimiento",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 154-155",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 153-154",
    "clase": "procedimiento",
    "estado": "",
    "fusionadas": [],
@@ -42248,58 +42614,56 @@
    "sistema": "equipos-taller",
    "formaParteDe": "",
    "relacionados": [
-    "vacio-circuito",
-    "carga-refrigerante",
-    "refrigerante-r134a"
+    "refrigerante-r134a",
+    "aceite-frigorifico"
    ],
    "palabras": [
     "estación de reciclaje",
-    "bomba de vacío",
-    "enchufe rápido",
-    "botella de almacenamiento",
-    "75% peso"
+    "recuperación",
+    "balanza de precisión",
+    "botella de almacenamiento"
    ],
    "apartados": [
     {
      "titulo": "Objeto y alcance",
-     "texto": "Vaciar el circuito de forma ecológica, reciclar el gas extraído, efectuar el vacío para eliminar la humedad e inyectar la carga exacta de refrigerante y aceite nuevo prescrita por el fabricante. (págs. 154-155).",
-     "html": "<p>Vaciar el circuito de forma ecológica, reciclar el gas extraído, efectuar el vacío para eliminar la humedad e inyectar la carga exacta de refrigerante y aceite nuevo prescrita por el fabricante. <span class=\"pag\">págs. 154-155</span>.</p>",
+     "texto": "Extraer, deshidratar y purificar el agente frigorífico R134a del vehículo para permitir la apertura segura del circuito o su reutilización. (págs. 153-154)",
+     "html": "<p>Extraer, deshidratar y purificar el agente frigorífico R134a del vehículo para permitir la apertura segura del circuito o su reutilización. <span class=\"pag\">págs. 153-154</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Condiciones previas",
-     "texto": "Motor del vehículo parado e interrupción del encendido. Identificación del tipo de gas en la placa del vehículo (R134a o R1234yf) y determinación de la masa de carga en gramos. (págs. 34, 154).",
-     "html": "<ol>\n<li>Motor del vehículo parado e interrupción del encendido.</li>\n<li>Identificación del tipo de gas en la placa del vehículo (R134a o R1234yf) y determinación de la masa de carga en gramos. <span class=\"pag\">págs. 34, 154</span>.</li>\n</ol>",
+     "texto": "Estación de servicio para aire acondicionado conectada a la red eléctrica y mangueras de servicio acopladas a las tomas del vehículo. Prohibido liberar gas a la atmósfera. (págs. 153-154)",
+     "html": "<p>Estación de servicio para aire acondicionado conectada a la red eléctrica y mangueras de servicio acopladas a las tomas del vehículo. Prohibido liberar gas a la atmósfera. <span class=\"pag\">págs. 153-154</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Equipo y material",
-     "texto": "Estación automática de recuperación, reciclado y carga con bomba de vacío integrada, mangueras de servicio con enchufes de acoplamiento rápido, balanza de precisión y botella de almacenamiento. (págs. 154-155).",
-     "html": "<p>Estación automática de recuperación, reciclado y carga con bomba de vacío integrada, mangueras de servicio con enchufes de acoplamiento rápido, balanza de precisión y botella de almacenamiento. <span class=\"pag\">págs. 154-155</span>.</p>",
+     "texto": "Estación de recuperación y reciclaje de R134a, mangueras con acoplamientos rápidos de alta y baja presión, balanza de precisión integrada y botella de almacenamiento para gas usado/contaminado. (págs. 153-154)",
+     "html": "<p>Estación de recuperación y reciclaje de R134a, mangueras con acoplamientos rápidos de alta y baja presión, balanza de precisión integrada y botella de almacenamiento para gas usado/contaminado. <span class=\"pag\">págs. 153-154</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Pasos",
-     "texto": "Conectar las mangueras de alta (roja) y baja presión (azul) con los acoplamientos rápidos a las válvulas de servicio del vehículo. (pág. 154). Iniciar el ciclo de extracción/recuperación: la estación aspira el refrigerante, separa el aceite usado contaminado y mide la cantidad recuperada. (pág. 154). Iniciar la fase de vacío durante un mínimo de 20-30 minutos para hacer hervir y evacuar la humedad residual. (págs. 24, 154). Efectuar la prueba de estanqueidad en vacío manteniendo la depresión durante 5 minutos para confirmar ausencia de fugas. (pág. 154). Inyectar la dosis de aceite PAG nuevo (equivalente a la extraída más suplemento) y trazador UV si se requiere. (págs. 70, 153). Iniciar la reprogramación de carga e inyectar la masa exacta de gas R134a en gramos fijada por el fabricante medida por la balanza interna. (págs. 154-155).",
-     "html": "<ol>\n<li>Conectar las mangueras de alta (roja) y baja presión (azul) con los acoplamientos rápidos a las válvulas de servicio del vehículo. <span class=\"pag\">pág. 154</span>.</li>\n<li>Iniciar el ciclo de extracción/recuperación: la estación aspira el refrigerante, separa el aceite usado contaminado y mide la cantidad recuperada. <span class=\"pag\">pág. 154</span>.</li>\n<li>Iniciar la fase de vacío durante un mínimo de 20-30 minutos para hacer hervir y evacuar la humedad residual. <span class=\"pag\">págs. 24, 154</span>.</li>\n<li>Efectuar la prueba de estanqueidad en vacío manteniendo la depresión durante 5 minutos para confirmar ausencia de fugas. <span class=\"pag\">pág. 154</span>.</li>\n<li>Inyectar la dosis de aceite PAG nuevo (equivalente a la extraída más suplemento) y trazador UV si se requiere. <span class=\"pag\">págs. 70, 153</span>.</li>\n<li>Iniciar la reprogramación de carga e inyectar la masa exacta de gas R134a en gramos fijada por el fabricante medida por la balanza interna. <span class=\"pag\">págs. 154-155</span>.</li>\n</ol>",
+     "texto": "Conectar las mangueras de alta (roja) y baja presión (azul) de la estación de servicio a las tomas rápidas del vehículo. (págs. 153-154) Abrir los grifos de las mangueras de acoplamiento. (págs. 153-154) Seleccionar e iniciar la función de \"Recuperación / Reciclaje\" en el panel de control de la estación. (págs. 153-154) Extraer el fluido del circuito del vehículo; la estación separa automáticamente el aceite usado extraído y filtra el agua y la suciedad del refrigerante. (págs. 153-154) Verificar el peso de gas recuperado indicado en el display de la balanza de precisión. (págs. 153-154) Si el gas recuperado está excesivamente degradado, contaminado o hidratado, derivarlo a la botella de almacenamiento de residuos para entregarlo a un gestor autorizado cuando alcance el 75% de su capacidad. (pág. 154)",
+     "html": "<ol>\n<li>Conectar las mangueras de alta (roja) y baja presión (azul) de la estación de servicio a las tomas rápidas del vehículo. <span class=\"pag\">págs. 153-154</span></li>\n<li>Abrir los grifos de las mangueras de acoplamiento. <span class=\"pag\">págs. 153-154</span></li>\n<li>Seleccionar e iniciar la función de \"Recuperación / Reciclaje\" en el panel de control de la estación. <span class=\"pag\">págs. 153-154</span></li>\n<li>Extraer el fluido del circuito del vehículo; la estación separa automáticamente el aceite usado extraído y filtra el agua y la suciedad del refrigerante. <span class=\"pag\">págs. 153-154</span></li>\n<li>Verificar el peso de gas recuperado indicado en el display de la balanza de precisión. <span class=\"pag\">págs. 153-154</span></li>\n<li>Si el gas recuperado está excesivamente degradado, contaminado o hidratado, derivarlo a la botella de almacenamiento de residuos para entregarlo a un gestor autorizado cuando alcance el 75% de su capacidad. <span class=\"pag\">pág. 154</span></li>\n</ol>",
      "nivel": ""
     },
     {
      "titulo": "Valores de referencia",
-     "texto": "Límite de llenado de la botella de recuperación: máximo 75% de su capacidad en peso por balanza de precisión. (pág. 155). Tiempo de vacío recomendable: 20 a 30 minutos. (págs. 24, 154).",
-     "html": "<ul>\n<li>Límite de llenado de la botella de recuperación: máximo 75% de su capacidad en peso por balanza de precisión. <span class=\"pag\">pág. 155</span>.</li>\n<li>Tiempo de vacío recomendable: 20 a 30 minutos. <span class=\"pag\">págs. 24, 154</span>.</li>\n</ul>",
+     "texto": "Límite máximo de llenado de la botella de recuperación de residuos: 75% del peso nominal especificado. (pág. 154)",
+     "html": "<ul>\n<li>Límite máximo de llenado de la botella de recuperación de residuos: 75% del peso nominal especificado. <span class=\"pag\">pág. 154</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Verificación final",
-     "texto": "Arrancar el motor, conectar el climatizador a máxima potencia de frío y verificar que las presiones estabilizadas se sitúan entre 16-22 bares en alta y 1-3 bares en baja presión. (págs. 158, 264).",
-     "html": "<p>Arrancar el motor, conectar el climatizador a máxima potencia de frío y verificar que las presiones estabilizadas se sitúan entre 16-22 bares en alta y 1-3 bares en baja presión. <span class=\"pag\">págs. 158, 264</span>.</p>",
+     "texto": "Comprobar en la batería de manómetros de la estación que la presión del circuito del vehículo se mantiene a 0 bar (vacío parcial). (págs. 153-154)",
+     "html": "<p>Comprobar en la batería de manómetros de la estación que la presión del circuito del vehículo se mantiene a 0 bar (vacío parcial). <span class=\"pag\">págs. 153-154</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Seguridad y normativa",
-     "texto": "Obligatorio uso de gafas de protección y guantes. Queda prohibida la expulsión de gas a la atmósfera según el RD 795/2010. (págs. 144, 149).",
-     "html": "<p>Obligatorio uso de gafas de protección y guantes. Queda prohibida la expulsión de gas a la atmósfera según el RD 795/2010. <span class=\"pag\">págs. 144, 149</span>.</p>",
+     "texto": "Prohibida la emisión deliberada de gases fluorados a la atmósfera según el Real Decreto 795/2010. Utilizar gafas y guantes de seguridad. (págs. 149, 153)",
+     "html": "<p>Prohibida la emisión deliberada de gases fluorados a la atmósfera según el Real Decreto 795/2010. Utilizar gafas y guantes de seguridad. <span class=\"pag\">págs. 149, 153</span></p>",
      "nivel": ""
     }
    ]
@@ -43374,6 +43738,85 @@
    ]
   },
   {
+   "id": "ssc.deteccion-fugas.la-climatizacion",
+   "nt": 836,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "deteccion-fugas",
+   "seccion": "9. Taller: recuperación, vacío y carga",
+   "subgrupo": "",
+   "titulo": "Detección de fugas por contraste fluorescente",
+   "codigo": "",
+   "menu": "Detección de fugas por contraste fluor",
+   "grupo": "Equipos de taller",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 152",
+   "clase": "procedimiento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "equipos-taller",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r134a",
+    "trazador-uv"
+   ],
+   "palabras": [
+    "contraste fluorescente",
+    "luz UV",
+    "inyector de aditivo",
+    "detección de fugas"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Localizar puntos de inestanqueidad y fugas de fluido refrigerante en las tuberías y componentes del circuito frigorífico mediante aditivo trazador UV. (pág. 152)",
+     "html": "<p>Localizar puntos de inestanqueidad y fugas de fluido refrigerante en las tuberías y componentes del circuito frigorífico mediante aditivo trazador UV. <span class=\"pag\">pág. 152</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Circuito frigorífico con carga parcial o completa de refrigerante y compresor operativo para hacer circular el aditivo. (pág. 152)",
+     "html": "<p>Circuito frigorífico con carga parcial o completa de refrigerante y compresor operativo para hacer circular el aditivo. <span class=\"pag\">pág. 152</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Inyector de aditivo trazador, ampolla de tinte fluorescente compatible con R134a/aceite, lámpara de luz ultravioleta (UV) y gafas de contraste filtrantes. (pág. 152)",
+     "html": "<p>Inyector de aditivo trazador, ampolla de tinte fluorescente compatible con R134a/aceite, lámpara de luz ultravioleta (UV) y gafas de contraste filtrantes. <span class=\"pag\">pág. 152</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Pasos",
+     "texto": "Cargar el inyector especial con una ampolla de líquido colorante fluorescente. (pág. 152) Conectar el inyector a la toma de servicio de baja presión del circuito de climatización. (pág. 152) Inyectar la dosis de aditivo trazador al interior del circuito presurizado. (pág. 152) Poner en marcha el motor del vehículo y conectar el climatizador durante al menos 15-20 minutos para distribuir homogéneamente el tinte por todas las canalizaciones. (pág. 152) Oscurecer la zona de trabajo e inspeccionar detenidamente todas las uniones, racores, retén del compresor y condensador iluminando con la lámpara de luz ultravioleta y equipando gafas de contraste. (pág. 152) Identificar los puntos de fuga por el resplandor de color verde/amarillo fluorescente emitido por el tinte extraviado. (pág. 152)",
+     "html": "<ol>\n<li>Cargar el inyector especial con una ampolla de líquido colorante fluorescente. <span class=\"pag\">pág. 152</span></li>\n<li>Conectar el inyector a la toma de servicio de baja presión del circuito de climatización. <span class=\"pag\">pág. 152</span></li>\n<li>Inyectar la dosis de aditivo trazador al interior del circuito presurizado. <span class=\"pag\">pág. 152</span></li>\n<li>Poner en marcha el motor del vehículo y conectar el climatizador durante al menos 15-20 minutos para distribuir homogéneamente el tinte por todas las canalizaciones. <span class=\"pag\">pág. 152</span></li>\n<li>Oscurecer la zona de trabajo e inspeccionar detenidamente todas las uniones, racores, retén del compresor y condensador iluminando con la lámpara de luz ultravioleta y equipando gafas de contraste. <span class=\"pag\">pág. 152</span></li>\n<li>Identificar los puntos de fuga por el resplandor de color verde/amarillo fluorescente emitido por el tinte extraviado. <span class=\"pag\">pág. 152</span></li>\n</ol>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Dosis de aditivo ajustada a las especificaciones del fabricante del tinte para no alterar la viscosidad del aceite. (pág. 152)",
+     "html": "<p>Dosis de aditivo ajustada a las especificaciones del fabricante del tinte para no alterar la viscosidad del aceite. <span class=\"pag\">pág. 152</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Reparar la inestanqueidad sustituyendo las juntas tóricas o el componente defectuoso y limpiar los restos de aditivo de la zona con limpiador específico. (pág. 152)",
+     "html": "<p>Reparar la inestanqueidad sustituyendo las juntas tóricas o el componente defectuoso y limpiar los restos de aditivo de la zona con limpiador específico. <span class=\"pag\">pág. 152</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Utilizar gafas de protección UV para evitar lesiones oculares por radiación directa de la lámpara ultravioleta. (pág. 152)",
+     "html": "<p>Utilizar gafas de protección UV para evitar lesiones oculares por radiación directa de la lámpara ultravioleta. <span class=\"pag\">pág. 152</span></p>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.lavado-circuito.ssp-484-a7-info-y-clima-arrastrado-5",
    "nt": 338,
    "modulo": "ssc",
@@ -44276,15 +44719,15 @@
    "clave": "lectura-manometros",
    "seccion": "10. Diagnóstico",
    "subgrupo": "",
-   "titulo": "Diagnosis de averías en el circuito frigorífico mediante lectura de manómetros",
+   "titulo": "Diagnóstico del circuito frigorífico por lectura de manómetros",
    "codigo": "",
-   "menu": "Diagnosis de averías en el circuito fr",
+   "menu": "Diagnóstico del circuito frigorífico p",
    "grupo": "Circuito frigorífico",
    "tipo": "proceso",
    "subtipo": "diagnostico",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 156-162",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 157-158",
    "clase": "diagnostico",
    "estado": "",
    "fusionadas": [],
@@ -44296,45 +44739,50 @@
     "compresor",
     "valvula-expansion",
     "condensador",
-    "filtro-deshidratador"
+    "presostato"
    ],
    "palabras": [
+    "manómetros",
     "alta presión",
     "baja presión",
-    "subenfriamiento",
-    "sobrecalentamiento",
-    "pre-expansión",
-    "tabla de averías"
+    "diagnóstico de presiones",
+    "carga de gas"
    ],
    "apartados": [
     {
      "titulo": "Síntoma",
-     "texto": "Rendimiento frigorífico insuficiente o nulo en el habitáculo, aire impulsado caliente o disparos del compresor. (págs. 156, 162).",
-     "html": "<p>Rendimiento frigorífico insuficiente o nulo en el habitáculo, aire impulsado caliente o disparos del compresor. <span class=\"pag\">págs. 156, 162</span>.</p>",
+     "texto": "Falta de rendimiento frigorífico en el habitáculo, enfriamiento deficiente o cortes intermitentes del climatizador. (pág. 157)",
+     "html": "<p>Falta de rendimiento frigorífico en el habitáculo, enfriamiento deficiente o cortes intermitentes del climatizador. <span class=\"pag\">pág. 157</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Causas posibles",
-     "texto": "Compresor averiado/sin compresión o falta de alimentación en el acoplamiento electromagnético. (pág. 162). Carga de gas incorrecta (falta de gas por fuga o sobrecarga). (pág. 162). Válvula de expansión bloqueada cerrada o abierta. (pág. 162). Condensador sucio o inactividad de los electroventiladores. (pág. 162). Filtro deshidratador colmatado (pre-expansión). (págs. 160, 162).",
-     "html": "<ul>\n<li>Compresor averiado/sin compresión o falta de alimentación en el acoplamiento electromagnético. <span class=\"pag\">pág. 162</span>.</li>\n<li>Carga de gas incorrecta (falta de gas por fuga o sobrecarga). <span class=\"pag\">pág. 162</span>.</li>\n<li>Válvula de expansión bloqueada cerrada o abierta. <span class=\"pag\">pág. 162</span>.</li>\n<li>Condensador sucio o inactividad de los electroventiladores. <span class=\"pag\">pág. 162</span>.</li>\n<li>Filtro deshidratador colmatado (pre-expansión). <span class=\"pag\">págs. 160, 162</span>.</li>\n</ul>",
+     "texto": "Carga insuficiente o falta total de refrigerante por fugas. (págs. 157-158, 161) Exceso de gas refrigerante en la instalación. (pág. 161) Válvula de expansión bloqueada en posición abierta o cerrada. (pág. 161) Compresor dañado por pérdida de capacidad de compresión o falta de aspiración. (pág. 161) Obstrucción en el condensador o falta de ventilación forzada. (pág. 161)",
+     "html": "<ul>\n<li>Carga insuficiente o falta total de refrigerante por fugas. <span class=\"pag\">págs. 157-158, 161</span></li>\n<li>Exceso de gas refrigerante en la instalación. <span class=\"pag\">pág. 161</span></li>\n<li>Válvula de expansión bloqueada en posición abierta o cerrada. <span class=\"pag\">pág. 161</span></li>\n<li>Compresor dañado por pérdida de capacidad de compresión o falta de aspiración. <span class=\"pag\">pág. 161</span></li>\n<li>Obstrucción en el condensador o falta de ventilación forzada. <span class=\"pag\">pág. 161</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Cómo separar las causas",
-     "texto": "Conectar las mangueras del puente de manómetros de la estación de servicio a las tomas de alta (HP) y baja presión (LP). (pág. 157). Arrancar el motor a 1.500-2.000 rpm con el climatizador a máxima potencia de frío (LO) y medir valores estabilizados: Presiones normales: Alta presión (HP) entre 16 y 22 bares; Baja presión (LP) entre 1 y 3 bares. (pág. 158). Evaluar el Subenfriamiento: diferencia entre la temperatura de condensación (leída en la escala del manómetro HP) y la temperatura real del tubo a la salida del condensador. Valor óptimo: 5 ºC a 7 ºC. (pág. 159). Evaluar el Sobrecalentamiento: diferencia entre la temperatura real del tubo a la salida del evaporador y la temperatura de evaporación (leída en la escala del manómetro LP). Valor óptimo: 2 ºC a 10 ºC. (pág. 159). Comprobar Pre-expansión en el filtro deshidratante: medir temperatura a la entrada y salida del cuerpo del filtro. Si la diferencia de temperatura es mayor de 6 ºC, el filtro está colmatado y actúa como válvula de expansión. (pág. 160). Analizar combinación de presiones: HP alta (> 22 bar) y LP alta (> 3 bar): sobrecarga de gas o mala condensación/ventilador averiado. (pág. 162). HP baja (< 16 bar) y LP baja (< 1 bar): carga insuficiente por fuga de gas o filtro deshidratador obstruido. (pág. 162). HP baja y LP alta (presiones tendiendo a igualarse): compresor defectuoso (pérdida de compresión interna). (pág. 162). LP en vacío o excesivamente baja con HP normal/baja: válvula de expansión bloqueada cerrada o evaporador congelado. (pág. 162).",
-     "html": "<ol>\n<li>Conectar las mangueras del puente de manómetros de la estación de servicio a las tomas de alta (HP) y baja presión (LP). <span class=\"pag\">pág. 157</span>.</li>\n<li>Arrancar el motor a 1.500-2.000 rpm con el climatizador a máxima potencia de frío (LO) y medir valores estabilizados:<ul>\n<li>Presiones normales: Alta presión (HP) entre 16 y 22 bares; Baja presión (LP) entre 1 y 3 bares. <span class=\"pag\">pág. 158</span>.</li>\n</ul>\n</li>\n<li>Evaluar el Subenfriamiento: diferencia entre la temperatura de condensación (leída en la escala del manómetro HP) y la temperatura real del tubo a la salida del condensador. Valor óptimo: 5 ºC a 7 ºC. <span class=\"pag\">pág. 159</span>.</li>\n<li>Evaluar el Sobrecalentamiento: diferencia entre la temperatura real del tubo a la salida del evaporador y la temperatura de evaporación (leída en la escala del manómetro LP). Valor óptimo: 2 ºC a 10 ºC. <span class=\"pag\">pág. 159</span>.</li>\n<li>Comprobar Pre-expansión en el filtro deshidratante: medir temperatura a la entrada y salida del cuerpo del filtro. Si la diferencia de temperatura es mayor de 6 ºC, el filtro está colmatado y actúa como válvula de expansión. <span class=\"pag\">pág. 160</span>.</li>\n<li>Analizar combinación de presiones:<ul>\n<li>HP alta (&gt; 22 bar) y LP alta (&gt; 3 bar): sobrecarga de gas o mala condensación/ventilador averiado. <span class=\"pag\">pág. 162</span>.</li>\n<li>HP baja (&lt; 16 bar) y LP baja (&lt; 1 bar): carga insuficiente por fuga de gas o filtro deshidratador obstruido. <span class=\"pag\">pág. 162</span>.</li>\n<li>HP baja y LP alta (presiones tendiendo a igualarse): compresor defectuoso (pérdida de compresión interna). <span class=\"pag\">pág. 162</span>.</li>\n<li>LP en vacío o excesivamente baja con HP normal/baja: válvula de expansión bloqueada cerrada o evaporador congelado. <span class=\"pag\">pág. 162</span>.</li>\n</ul>\n</li>\n</ol>",
+     "texto": "Conectar los manómetros de baja presión (azul) y alta presión (rojo) a las tomas de servicio del vehículo. (pág. 157) Arrancar el motor, estabilizar el régimen a 1.500-2.000 rpm y conectar el climatizador al máximo rendimiento frigorífico. (págs. 46, 157) Observar la lectura combinada de presiones: Alta y baja presión más bajas de lo normal: Indican carga insuficiente de refrigerante o fuga en el circuito. (pág. 161) Alta presión excesivamente elevada y baja presión alta: Indican exceso de carga de gas o mala refrigeración del condensador por fallo del electroventilador. (pág. 161) Baja presión excesivamente baja y alta presión normal/baja: Indica válvula de expansión bloqueada en cierre, congelación del evaporador o filtro deshidratante colmatado. (págs. 159, 161) Baja presión demasiado alta y alta presión anormalmente baja: Indican pérdida de rendimiento compresión del compresor (daño interno en las válvulas de lámina). (pág. 161)",
+     "html": "<ol>\n<li>Conectar los manómetros de baja presión (azul) y alta presión (rojo) a las tomas de servicio del vehículo. <span class=\"pag\">pág. 157</span></li>\n<li>Arrancar el motor, estabilizar el régimen a 1.500-2.000 rpm y conectar el climatizador al máximo rendimiento frigorífico. <span class=\"pag\">págs. 46, 157</span></li>\n<li>Observar la lectura combinada de presiones:<ul>\n<li>Alta y baja presión más bajas de lo normal: Indican carga insuficiente de refrigerante o fuga en el circuito. <span class=\"pag\">pág. 161</span></li>\n<li>Alta presión excesivamente elevada y baja presión alta: Indican exceso de carga de gas o mala refrigeración del condensador por fallo del electroventilador. <span class=\"pag\">pág. 161</span></li>\n<li>Baja presión excesivamente baja y alta presión normal/baja: Indica válvula de expansión bloqueada en cierre, congelación del evaporador o filtro deshidratante colmatado. <span class=\"pag\">págs. 159, 161</span></li>\n<li>Baja presión demasiado alta y alta presión anormalmente baja: Indican pérdida de rendimiento compresión del compresor (daño interno en las válvulas de lámina). <span class=\"pag\">pág. 161</span></li>\n</ul>\n</li>\n</ol>",
      "nivel": ""
     },
     {
      "titulo": "Valores de referencia",
-     "texto": "Alta Presión (HP) normal: 16 a 22 bares. (pág. 158). Baja Presión (LP) normal: 1 a 3 bares. (pág. 158). Subenfriamiento óptimo: 5 ºC a 7 ºC. (pág. 159). Sobrecalentamiento óptimo: 2 ºC a 10 ºC. (pág. 159). Salto térmico máximo en filtro deshidratador: 6 ºC. (pág. 160).",
-     "html": "<ul>\n<li>Alta Presión (HP) normal: 16 a 22 bares. <span class=\"pag\">pág. 158</span>.</li>\n<li>Baja Presión (LP) normal: 1 a 3 bares. <span class=\"pag\">pág. 158</span>.</li>\n<li>Subenfriamiento óptimo: 5 ºC a 7 ºC. <span class=\"pag\">pág. 159</span>.</li>\n<li>Sobrecalentamiento óptimo: 2 ºC a 10 ºC. <span class=\"pag\">pág. 159</span>.</li>\n<li>Salto térmico máximo en filtro deshidratador:  6 ºC. <span class=\"pag\">pág. 160</span>.</li>\n</ul>",
+     "texto": "Condiciones de prueba: Motor a 1.500-2.000 rpm, temperatura ambiente 20 ºC. (pág. 46) Presión en reposo a 20 ºC: aprox. 4,7 bares (0,47 MPa). (pág. 46) Presiones normales de trabajo con R134a: Baja presión entre 1,5 y 2,5 bares; Alta presión entre 12 y 18 bares. (págs. 43, 45, 157-158)",
+     "html": "<ul>\n<li>Condiciones de prueba: Motor a 1.500-2.000 rpm, temperatura ambiente 20 ºC. <span class=\"pag\">pág. 46</span></li>\n<li>Presión en reposo a 20 ºC: aprox. 4,7 bares (0,47 MPa). <span class=\"pag\">pág. 46</span></li>\n<li>Presiones normales de trabajo con R134a: Baja presión entre 1,5 y 2,5 bares; Alta presión entre 12 y 18 bares. <span class=\"pag\">págs. 43, 45, 157-158</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Verificación tras la reparación",
-     "texto": "Revisar que la temperatura soplada en las toberas se mantiene entre 3 ºC y 7 ºC y que los relojes de manómetros retornan al rango de 16-22 bares en HP y 1-3 bares en LP. (págs. 82, 158).",
-     "html": "<p>Revisar que la temperatura soplada en las toberas se mantiene entre 3 ºC y 7 ºC y que los relojes de manómetros retornan al rango de 16-22 bares en HP y 1-3 bares en LP. <span class=\"pag\">págs. 82, 158</span>.</p>",
+     "texto": "Verificar que tras corregir la avería las presiones de alta y baja se estabilizan dentro de los márgenes teóricos y la temperatura en el difusor desciende a valores de confort. (págs. 157, 161)",
+     "html": "<p>Verificar que tras corregir la avería las presiones de alta y baja se estabilizan dentro de los márgenes teóricos y la temperatura en el difusor desciende a valores de confort. <span class=\"pag\">págs. 157, 161</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Manómetros de alta y baja presión con las escalas de lectura de presión y temperatura — Fuente: LA CLIMATIZACIÓN.pdf, pág. 157",
+     "html": "<ul>\n<li>Manómetros de alta y baja presión con las escalas de lectura de presión y temperatura — Fuente: LA CLIMATIZACIÓN.pdf, pág. 157</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -44978,6 +45426,76 @@
      "titulo": "Verificación tras la reparación",
      "texto": "Comprobar que el compresor acopla correctamente, que los electroventiladores conmutan sus velocidades, que las presiones de alta y baja se sitúan en sus valores de trabajo y que la temperatura del aire en las rejillas centrales desciende adecuadamente. (pág. 109, 115)",
      "html": "<p>Comprobar que el compresor acopla correctamente, que los electroventiladores conmutan sus velocidades, que las presiones de alta y baja se sitúan en sus valores de trabajo y que la temperatura del aire en las rejillas centrales desciende adecuadamente. <span class=\"pag\">pág. 109, 115</span></p>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.no-enfria.la-climatizacion",
+   "nt": 837,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "no-enfria",
+   "seccion": "10. Diagnóstico",
+   "subgrupo": "",
+   "titulo": "Diagnóstico del síntoma falta de rendimiento frigorífico",
+   "codigo": "",
+   "menu": "Diagnóstico del síntoma falta de rendi",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 159-161",
+   "clase": "diagnostico",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "embrague-compresor",
+    "filtro-deshidratador",
+    "valvula-expansion"
+   ],
+   "palabras": [
+    "no enfría",
+    "falta de rendimiento",
+    "pre-expansión",
+    "embrague",
+    "averías comunes"
+   ],
+   "apartados": [
+    {
+     "titulo": "Síntoma",
+     "texto": "El sistema de aire acondicionado está activo pero no produce aire frío o la capacidad de enfriamiento es insuficiente. (pág. 161)",
+     "html": "<p>El sistema de aire acondicionado está activo pero no produce aire frío o la capacidad de enfriamiento es insuficiente. <span class=\"pag\">pág. 161</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Causas posibles",
+     "texto": "Correa auxiliar rota o patinando sobre la polea. (pág. 161) Embrague electromagnético del compresor defectuoso o sin alimentación eléctrica. (pág. 161) Presostato averiado o desconectado por protección de baja/alta presión. (pág. 161) Compresor destruido mecánicamente o agarrotado. (pág. 161) Fenómeno de pre-expansión por filtro deshidratante colmatado/saturado. (págs. 159, 161) Válvula de expansión averiada u orificio del evaporador congelado. (pág. 161)",
+     "html": "<ul>\n<li>Correa auxiliar rota o patinando sobre la polea. <span class=\"pag\">pág. 161</span></li>\n<li>Embrague electromagnético del compresor defectuoso o sin alimentación eléctrica. <span class=\"pag\">pág. 161</span></li>\n<li>Presostato averiado o desconectado por protección de baja/alta presión. <span class=\"pag\">pág. 161</span></li>\n<li>Compresor destruido mecánicamente o agarrotado. <span class=\"pag\">pág. 161</span></li>\n<li>Fenómeno de pre-expansión por filtro deshidratante colmatado/saturado. <span class=\"pag\">págs. 159, 161</span></li>\n<li>Válvula de expansión averiada u orificio del evaporador congelado. <span class=\"pag\">pág. 161</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo separar las causas",
+     "texto": "Inspeccionar visualmente el giro del plato del compresor con el A/C conectado para confirmar si el embrague se acopla. Si no gira, verificar la tensión de la correa auxiliar y la llegada de 12 V a la electrobobina N25. (pág. 161) Si el embrague no recibe corriente, comprobar fusibles, relés y el estado de conmutación del presostato. (pág. 161) Si el compresor gira pero no enfría, tocar con la mano la tubería de entrada y salida del filtro deshidratante: si existe una diferencia acusada de temperatura entre la entrada y la salida, se padece pre-expansión por filtro colmatado. (pág. 159) Si el evaporador se hiela por completo bloqueando el flujo de aire, revisar la sonda de temperatura del evaporador o termostato antihielo. (pág. 161) Acoplar la estación de manómetros para evaluar la presión del circuito y detectar falta de gas por fugas o pérdida de compresión. (págs. 157, 161)",
+     "html": "<ol>\n<li>Inspeccionar visualmente el giro del plato del compresor con el A/C conectado para confirmar si el embrague se acopla. Si no gira, verificar la tensión de la correa auxiliar y la llegada de 12 V a la electrobobina N25. <span class=\"pag\">pág. 161</span></li>\n<li>Si el embrague no recibe corriente, comprobar fusibles, relés y el estado de conmutación del presostato. <span class=\"pag\">pág. 161</span></li>\n<li>Si el compresor gira pero no enfría, tocar con la mano la tubería de entrada y salida del filtro deshidratante: si existe una diferencia acusada de temperatura entre la entrada y la salida, se padece pre-expansión por filtro colmatado. <span class=\"pag\">pág. 159</span></li>\n<li>Si el evaporador se hiela por completo bloqueando el flujo de aire, revisar la sonda de temperatura del evaporador o termostato antihielo. <span class=\"pag\">pág. 161</span></li>\n<li>Acoplar la estación de manómetros para evaluar la presión del circuito y detectar falta de gas por fugas o pérdida de compresión. <span class=\"pag\">págs. 157, 161</span></li>\n</ol>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Caída de temperatura en filtro deshidratante normal: 0 ºC (la entrada y salida deben estar a la misma temperatura). (pág. 159)",
+     "html": "<ul>\n<li>Caída de temperatura en filtro deshidratante normal: 0 ºC (la entrada y salida deben estar a la misma temperatura). <span class=\"pag\">pág. 159</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Verificación tras la reparación",
+     "texto": "Comprobar el correcto acoplamiento del compresor, verificar la inexistencia de saltos térmicos en el deshidratador y confirmar la salida de aire frío constante por los difusores. (págs. 159, 161)",
+     "html": "<p>Comprobar el correcto acoplamiento del compresor, verificar la inexistencia de saltos térmicos en el deshidratador y confirmar la salida de aire frío constante por los difusores. <span class=\"pag\">págs. 159, 161</span></p>",
      "nivel": ""
     }
    ]
@@ -54247,82 +54765,74 @@
    "clave": "filtro-habitaculo",
    "seccion": "Por ubicar",
    "subgrupo": "",
-   "titulo": "Filtro de habitáculo",
+   "titulo": "Filtro del habitáculo",
    "codigo": "",
-   "menu": "Filtro de habitáculo",
+   "menu": "Filtro del habitáculo",
    "grupo": "Distribución de aire",
    "tipo": "elemento",
    "subtipo": "",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 105-106",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 104-105, 160",
    "clase": "componente",
    "estado": "",
    "fusionadas": [],
    "variante": "",
    "area": "climatizacion",
    "sistema": "distribucion-aire",
-   "formaParteDe": "",
+   "formaParteDe": "unidad-climatizadora",
    "relacionados": [
-    "ventilador-habitaculo",
     "evaporador",
-    "sensor-calidad-aire"
+    "ventilador-habitaculo"
    ],
    "palabras": [
-    "filtro de habitáculo",
-    "filtro de polen",
+    "filtro antipolen",
     "carbón activo",
-    "polipropileno",
-    "alérgenos",
-    "sustitución anual"
+    "bacterias",
+    "depuración",
+    "microorganismos"
    ],
    "apartados": [
     {
      "titulo": "Misión",
-     "texto": "Filtrar y depurar el aire exterior antes de su entrada al habitáculo, reteniendo polvo, polen, esporas, bacterias y gases nocivos. (págs. 105-106).",
-     "html": "<p>Filtrar y depurar el aire exterior antes de su entrada al habitáculo, reteniendo polvo, polen, esporas, bacterias y gases nocivos. <span class=\"pag\">págs. 105-106</span>.</p>",
+     "texto": "Filtrar el aire exterior que entra al habitáculo reteniendo polvo, polen, bacterias y partículas nocivas, e impedir la proliferación de microorganismos. (págs. 105, 160)",
+     "html": "<p>Filtrar el aire exterior que entra al habitáculo reteniendo polvo, polen, bacterias y partículas nocivas, e impedir la proliferación de microorganismos. <span class=\"pag\">págs. 105, 160</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Tipos y características",
-     "texto": "Ubicado en la entrada de aire de la caja climática (vierteaguas o bajo el salpicadero). Filtro de polen convencional: papel de celulosa o fibras de polipropileno. Retiene partículas sólidas y bacterias. (pág. 106). Filtro de carbón activo: incorpora una capa de carbón activado capaz de absorber hasta el 90% de los gases contaminantes y partículas muy finas (< 1 micra). (pág. 106).",
-     "html": "<p>Ubicado en la entrada de aire de la caja climática (vierteaguas o bajo el salpicadero).</p>\n<ul>\n<li>Filtro de polen convencional: papel de celulosa o fibras de polipropileno. Retiene partículas sólidas y bacterias. <span class=\"pag\">pág. 106</span>.</li>\n<li>Filtro de carbón activo: incorpora una capa de carbón activado capaz de absorber hasta el 90% de los gases contaminantes y partículas muy finas (&lt; 1 micra). <span class=\"pag\">pág. 106</span>.</li>\n</ul>",
+     "texto": "Elemento filtrante sintético/celulosa (filtro antipolen) o combinado con un lecho interior de carbón activo para la absorción de gases y malos olores. Alojado en el conducto de aspiración del bloque climatizador. (págs. 105, 160)",
+     "html": "<p>Elemento filtrante sintético/celulosa (filtro antipolen) o combinado con un lecho interior de carbón activo para la absorción de gases y malos olores. Alojado en el conducto de aspiración del bloque climatizador. <span class=\"pag\">págs. 105, 160</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Principio de funcionamiento",
-     "texto": "El aire soplado por la turbina atraviesa la estructura porosa de pliegues del filtro. La malla retiene mecánicamente partículas y polen, mientras que la capa de carbón activo adsorbe molecularmente los gases tóxicos y los malos olores del tráfico. (pág. 106).",
-     "html": "<p>El aire soplado por la turbina atraviesa la estructura porosa de pliegues del filtro. La malla retiene mecánicamente partículas y polen, mientras que la capa de carbón activo adsorbe molecularmente los gases tóxicos y los malos olores del tráfico. <span class=\"pag\">pág. 106</span>.</p>",
-     "nivel": ""
-    },
-    {
-     "titulo": "Valores de trabajo",
-     "texto": "Intervalo de sustitución recomendado: cada 15.000 km o al menos una vez al año. (pág. 106).",
-     "html": "<p>Intervalo de sustitución recomendado: cada 15.000 km o al menos una vez al año. <span class=\"pag\">pág. 106</span>.</p>",
+     "texto": "Todo el aire impulsado por la turbina pasa forzosamente a través del tamiz de microfibras del filtro antes de llegar al evaporador, reteniendo las partículas en suspensión. En los filtros con carbón activo, los poros del carbón atraen y neutralizan las moléculas de gas contaminante y olores. (págs. 105, 160)",
+     "html": "<p>Todo el aire impulsado por la turbina pasa forzosamente a través del tamiz de microfibras del filtro antes de llegar al evaporador, reteniendo las partículas en suspensión. En los filtros con carbón activo, los poros del carbón atraen y neutralizan las moléculas de gas contaminante y olores. <span class=\"pag\">págs. 105, 160</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Anomalías frecuentes",
-     "texto": "Saturación y colmatación por polvo y hojas, apelmazamiento por humedad y formación de moho. (págs. 106, 161).",
-     "html": "<p>Saturación y colmatación por polvo y hojas, apelmazamiento por humedad y formación de moho. <span class=\"pag\">págs. 106, 161</span>.</p>",
+     "texto": "Colmatación por acumulación de suciedad y polvo, o absorción excesiva de humedad ambiental. (págs. 105, 160)",
+     "html": "<p>Colmatación por acumulación de suciedad y polvo, o absorción excesiva de humedad ambiental. <span class=\"pag\">págs. 105, 160</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Comportamiento en avería",
-     "texto": "Reducción drástica del caudal de aire en los difusores, cristal empañado y generación de malos olores en el habitáculo. (págs. 106, 161).",
-     "html": "<p>Reducción drástica del caudal de aire en los difusores, cristal empañado y generación de malos olores en el habitáculo. <span class=\"pag\">págs. 106, 161</span>.</p>",
+     "texto": "Reducción drástica del caudal de aire en los difusores, empañado persistente de los cristales y generación de olores desagradables en el habitáculo por proliferación de bacterias en la materia retenida. (pág. 160)",
+     "html": "<p>Reducción drástica del caudal de aire en los difusores, empañado persistente de los cristales y generación de olores desagradables en el habitáculo por proliferación de bacterias en la materia retenida. <span class=\"pag\">pág. 160</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Cómo comprobarlo",
-     "texto": "Inspección visual del grado de suciedad entre los pliegues y comprobación del caudal en toberas. (págs. 106, 161).",
-     "html": "<p>Inspección visual del grado de suciedad entre los pliegues y comprobación del caudal en toberas. <span class=\"pag\">págs. 106, 161</span>.</p>",
+     "texto": "Extraer e inspeccionar visualmente el estado de suciedad y el nivel de obstrucción del elemento filtrante. (págs. 105, 160)",
+     "html": "<p>Extraer e inspeccionar visualmente el estado de suciedad y el nivel de obstrucción del elemento filtrante. <span class=\"pag\">págs. 105, 160</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Mantenimiento",
-     "texto": "Sustitución obligatoria cada 15.000 km o 12 meses. Respetar las flechas de sentido de flujo de aire impresas en el marco. (pág. 106).",
-     "html": "<p>Sustitución obligatoria cada 15.000 km o 12 meses. Respetar las flechas de sentido de flujo de aire impresas en el marco. <span class=\"pag\">pág. 106</span>.</p>",
+     "texto": "Sustituir periódicamente el filtro de habitáculo según las pautas de mantenimiento para garantizar la calidad del aire y evitar infecciones por microorganismos. (pág. 160)",
+     "html": "<p>Sustituir periódicamente el filtro de habitáculo según las pautas de mantenimiento para garantizar la calidad del aire y evitar infecciones por microorganismos. <span class=\"pag\">pág. 160</span></p>",
      "nivel": ""
     }
    ]
@@ -54335,15 +54845,15 @@
    "clave": "prl-y-seguridad",
    "seccion": "Por ubicar",
    "subgrupo": "",
-   "titulo": "Seguridad y prevención de riesgos laborales en climatización",
+   "titulo": "Seguridad laboral y manipulación de refrigerantes",
    "codigo": "",
-   "menu": "Seguridad y prevención de riesgos labo",
+   "menu": "Seguridad laboral y manipulación de re",
    "grupo": "PRL y seguridad",
    "tipo": "proceso",
    "subtipo": "fundamento",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 143-147",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 142-146",
    "clase": "fundamento",
    "estado": "",
    "fusionadas": [],
@@ -54352,46 +54862,44 @@
    "sistema": "prl-y-seguridad",
    "formaParteDe": "",
    "relacionados": [
-    "refrigerante-r134a",
-    "recuperacion-refrigerante"
+    "refrigerante-r134a"
    ],
    "palabras": [
     "seguridad laboral",
-    "EPI",
     "congelación",
-    "gases tóxicos",
-    "desmenuzamiento UV",
+    "fosos",
+    "ventilación",
     "primeros auxilios"
    ],
    "apartados": [
     {
      "titulo": "Objeto",
-     "texto": "Establecer los protocolos de protección personal, precauciones de taller y primeros auxilios durante la manipulación de instalaciones con gases refrigerantes a presión. (págs. 143-147).",
-     "html": "<p>Establecer los protocolos de protección personal, precauciones de taller y primeros auxilios durante la manipulación de instalaciones con gases refrigerantes a presión. <span class=\"pag\">págs. 143-147</span>.</p>",
+     "texto": "Establecer los protocolos de prevención de riesgos laborales y medidas de seguridad para la manipulación de gases refrigerantes e instalaciones presurizadas en el taller. (págs. 142-146)",
+     "html": "<p>Establecer los protocolos de prevención de riesgos laborales y medidas de seguridad para la manipulación de gases refrigerantes e instalaciones presurizadas en el taller. <span class=\"pag\">págs. 142-146</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Fundamento",
-     "texto": "El R134a se almacena a presión y se evapora a -26 ºC, con riesgo de congelación inmediata de la piel y ojos. Al ser más denso que el aire desplaza al oxígeno produciendo asfixia, y ante llamas o altas temperaturas se descompone en gases tóxicos irritantes. (págs. 144, 146).",
-     "html": "<p>El R134a se almacena a presión y se evapora a -26 ºC, con riesgo de congelación inmediata de la piel y ojos. Al ser más denso que el aire desplaza al oxígeno produciendo asfixia, y ante llamas o altas temperaturas se descompone en gases tóxicos irritantes. <span class=\"pag\">págs. 144, 146</span>.</p>",
+     "texto": "Los refrigerantes frigoríficos se encuentran a alta presión y presentan riesgo de congelación por contacto directo o asfixia y toxicidad por acumulación o descomposición térmica. (págs. 142, 145-146)",
+     "html": "<p>Los refrigerantes frigoríficos se encuentran a alta presión y presentan riesgo de congelación por contacto directo o asfixia y toxicidad por acumulación o descomposición térmica. <span class=\"pag\">págs. 142, 145-146</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Desarrollo",
-     "texto": "Protección y desmontaje: obligatorio el uso de gafas de seguridad y guantes protectores. Está prohibido liberar refrigerante a la atmósfera; debe evacuarse con estación de recuperación. Al pintar el coche, no someter el circuito a secados de horno superiores a 80 ºC para evitar disparos por sobrepresión. (págs. 144, 146). Precauciones en soldadura: no aplicar soldadura sobre tubos dañados (deben sustituirse). En soldaduras eléctricas cercanas, proteger las tuberías; la radiación ultravioleta de la soldadura atraviesa las paredes de los tubos descomponiendo químicamente el refrigerante interior. No fumar ni generar llama abierta en zonas con refrigerante en el aire. (págs. 145-146). Primeros auxilios: Salpicaduras en ojos: enjuagar con agua limpia durante 15 minutos, aplicar colirio y acudir al médico. (pág. 147). Contacto con la piel: quitar la ropa mojada y lavar con agua abundante. (pág. 147). Inhalación de gas: trasladar inmediatamente a la víctima a una zona ventilada. Si hay parada respiratoria, practicar respiración artificial o suministrar oxígeno. (pág. 147).",
-     "html": "<ul>\n<li>Protección y desmontaje: obligatorio el uso de gafas de seguridad y guantes protectores. Está prohibido liberar refrigerante a la atmósfera; debe evacuarse con estación de recuperación. Al pintar el coche, no someter el circuito a secados de horno superiores a 80 ºC para evitar disparos por sobrepresión. <span class=\"pag\">págs. 144, 146</span>.</li>\n<li>Precauciones en soldadura: no aplicar soldadura sobre tubos dañados (deben sustituirse). En soldaduras eléctricas cercanas, proteger las tuberías; la radiación ultravioleta de la soldadura atraviesa las paredes de los tubos descomponiendo químicamente el refrigerante interior. No fumar ni generar llama abierta en zonas con refrigerante en el aire. <span class=\"pag\">págs. 145-146</span>.</li>\n<li>Primeros auxilios:<ul>\n<li>Salpicaduras en ojos: enjuagar con agua limpia durante 15 minutos, aplicar colirio y acudir al médico. <span class=\"pag\">pág. 147</span>.</li>\n<li>Contacto con la piel: quitar la ropa mojada y lavar con agua abundante. <span class=\"pag\">pág. 147</span>.</li>\n<li>Inhalación de gas: trasladar inmediatamente a la víctima a una zona ventilada. Si hay parada respiratoria, practicar respiración artificial o suministrar oxígeno. <span class=\"pag\">pág. 147</span>.</li>\n</ul>\n</li>\n</ul>",
+     "texto": "Protección personal: Uso obligatorio de gafas de seguridad y guantes de protección al intervenir en el circuito. (págs. 142, 146) Riesgo de congelación: La fuga de refrigerante líquido sobre la piel o los ojos provoca congelaciones graves instantáneas por rápida evaporación (punto de ebullición del R134a a -26 ºC). En caso de salpicadura en ojos, lavar con agua fría durante 15 minutos, aplicar colirio y acudir al médico. (págs. 142, 146) Ventilación y fosos: El gas refrigerante es inodoro, incoloro y más denso que el aire, desplazando al oxígeno y acumulándose en zonas bajas. Prohibido manipular o almacenar en fosos de taller o recintos subterráneos sin ventilación forzada. (pág. 145) Operaciones de soldadura: Evitar que las tuberías y componentes del circuito alcancen más de 80 ºC durante soldaduras próximas para impedir disparos de la válvula de sobrepresión o generación de gases tóxicos por descomposición. (págs. 144, 146)",
+     "html": "<ul>\n<li><strong>Protección personal:</strong> Uso obligatorio de gafas de seguridad y guantes de protección al intervenir en el circuito. <span class=\"pag\">págs. 142, 146</span></li>\n<li><strong>Riesgo de congelación:</strong> La fuga de refrigerante líquido sobre la piel o los ojos provoca congelaciones graves instantáneas por rápida evaporación (punto de ebullición del R134a a -26 ºC). En caso de salpicadura en ojos, lavar con agua fría durante 15 minutos, aplicar colirio y acudir al médico. <span class=\"pag\">págs. 142, 146</span></li>\n<li><strong>Ventilación y fosos:</strong> El gas refrigerante es inodoro, incoloro y más denso que el aire, desplazando al oxígeno y acumulándose en zonas bajas. Prohibido manipular o almacenar en fosos de taller o recintos subterráneos sin ventilación forzada. <span class=\"pag\">pág. 145</span></li>\n<li><strong>Operaciones de soldadura:</strong> Evitar que las tuberías y componentes del circuito alcancen más de 80 ºC durante soldaduras próximas para impedir disparos de la válvula de sobrepresión o generación de gases tóxicos por descomposición. <span class=\"pag\">págs. 144, 146</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Valores de referencia",
-     "texto": "Temperatura máxima en horno de secado/soldadura cercana: 80 ºC. (págs. 144, 145). Tiempo de lavado ocular con agua limpia: 15 minutos mínimo. (pág. 147).",
-     "html": "<ul>\n<li>Temperatura máxima en horno de secado/soldadura cercana: 80 ºC. <span class=\"pag\">págs. 144, 145</span>.</li>\n<li>Tiempo de lavado ocular con agua limpia: 15 minutos mínimo. <span class=\"pag\">pág. 147</span>.</li>\n</ul>",
+     "texto": "Temperatura máxima admisible en soldaduras cercanas al circuito: 80 ºC. (pág. 144) Tiempo de lavado ocular con agua fría tras salpicadura: 15 minutos. (pág. 146)",
+     "html": "<ul>\n<li>Temperatura máxima admisible en soldaduras cercanas al circuito: 80 ºC. <span class=\"pag\">pág. 144</span></li>\n<li>Tiempo de lavado ocular con agua fría tras salpicadura: 15 minutos. <span class=\"pag\">pág. 146</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Errores de concepto frecuentes",
-     "texto": "Almacenar botellas de refrigerante o trabajar sobre el circuito en fosas o sótanos sin ventilación; el R134a al ser más pesado que el aire se acumula en el fondo desplazando al oxígeno sin ser detectado al ser inodoro. (pág. 146).",
-     "html": "<p>Almacenar botellas de refrigerante o trabajar sobre el circuito en fosas o sótanos sin ventilación; el R134a al ser más pesado que el aire se acumula en el fondo desplazando al oxígeno sin ser detectado al ser inodoro. <span class=\"pag\">pág. 146</span>.</p>",
+     "texto": "Considerar que el gas refrigerante no es peligroso en fosos por no ser inflamable, ignorando el riesgo de asfixia por desplazamiento del oxígeno. (pág. 145)",
+     "html": "<ul>\n<li>Considerar que el gas refrigerante no es peligroso en fosos por no ser inflamable, ignorando el riesgo de asfixia por desplazamiento del oxígeno. <span class=\"pag\">pág. 145</span></li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -54404,15 +54912,15 @@
    "clave": "normativa-y-medioambiente",
    "seccion": "Por ubicar",
    "subgrupo": "",
-   "titulo": "Normativa medioambiental y certificación de gases fluorados",
+   "titulo": "Normativa de gases fluorados y certificación profesional",
    "codigo": "",
-   "menu": "Normativa medioambiental y certificaci",
+   "menu": "Normativa de gases fluorados y certifi",
    "grupo": "Normativa y medioambiente",
    "tipo": "proceso",
    "subtipo": "fundamento",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 148-152",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 148-151",
    "clase": "fundamento",
    "estado": "",
    "fusionadas": [],
@@ -54425,41 +54933,40 @@
     "refrigerante-r1234yf"
    ],
    "palabras": [
-    "RD 795/2010",
+    "Real Decreto 795/2010",
+    "certificación profesional",
     "gases fluorados",
-    "certificado manipulador",
-    "Protocolo de Kioto",
     "Directiva 2006/40/CE"
    ],
    "apartados": [
     {
      "titulo": "Objeto",
-     "texto": "Definir las obligaciones legales, programas de formación y limitaciones medioambientales para la manipulación y comercialización de refrigerantes fluorados en talleres de automoción. (págs. 148-152).",
-     "html": "<p>Definir las obligaciones legales, programas de formación y limitaciones medioambientales para la manipulación y comercialización de refrigerantes fluorados en talleres de automoción. <span class=\"pag\">págs. 148-152</span>.</p>",
+     "texto": "Compilar el marco legal, las obligaciones de los talleres y la certificación exigida para la comercialización y manipulación de gases refrigerantes fluorados. (págs. 148-151)",
+     "html": "<p>Compilar el marco legal, las obligaciones de los talleres y la certificación exigida para la comercialización y manipulación de gases refrigerantes fluorados. <span class=\"pag\">págs. 148-151</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Fundamento",
-     "texto": "Para cumplir con los Protocolos de Montreal y Kioto, el RD 795/2010 y los Reglamentos CE 842/2006 y 307/2008 regulan el control de emisiones de HFC y prohíben el uso de sustancias que agotan la capa de ozono (CFC/HCFC). (págs. 148-149).",
-     "html": "<p>Para cumplir con los Protocolos de Montreal y Kioto, el RD 795/2010 y los Reglamentos CE 842/2006 y 307/2008 regulan el control de emisiones de HFC y prohíben el uso de sustancias que agotan la capa de ozono (CFC/HCFC). <span class=\"pag\">págs. 148-149</span>.</p>",
+     "texto": "El Real Decreto 795/2010 y la Directiva europea 2006/40/CE regulan la manipulación de gases fluorados de efecto invernadero para mitigar el calentamiento global y proteger la atmósfera. (págs. 148-151)",
+     "html": "<p>El Real Decreto 795/2010 y la Directiva europea 2006/40/CE regulan la manipulación de gases fluorados de efecto invernadero para mitigar el calentamiento global y proteger la atmósfera. <span class=\"pag\">págs. 148-151</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Desarrollo",
-     "texto": "Requisitos a profesionales y talleres: el personal que realice carga, recuperación, mantenimiento o control de fugas en aire acondicionado de vehículos debe estar en posesión del \"Certificado Acreditativo de la Competencia para la Manipulación de Sistemas Frigoríficos que empleen Refrigerantes Fluorados\". Solo los talleres con personal certificado pueden adquirir botellas de gas R134a. (págs. 149-150). Recuperación de gases: prohibido emitir refrigerantes a la atmósfera. Los residuos de R12 o R134a no reutilizables deben entregarse a un gestor de residuos peligrosos. (pág. 151). Directiva 2006/40/CE (fases de eliminación del R134a): Límite de fugas de homologación: máximo 40 g/año en evaporador único y 60 g/año en evaporador doble. (pág. 152). A partir del 1 de enero de 2011: prohibida la homologación de turismos nuevos con refrigerantes de PCG > 150 (sustitución por R1234yf). (pág. 152). A partir del 1 de enero de 2017: prohibida la venta y matriculación de cualquier vehículo nuevo con R134a. (pág. 152).",
-     "html": "<ul>\n<li>Requisitos a profesionales y talleres: el personal que realice carga, recuperación, mantenimiento o control de fugas en aire acondicionado de vehículos debe estar en posesión del \"Certificado Acreditativo de la Competencia para la Manipulación de Sistemas Frigoríficos que empleen Refrigerantes Fluorados\". Solo los talleres con personal certificado pueden adquirir botellas de gas R134a. <span class=\"pag\">págs. 149-150</span>.</li>\n<li>Recuperación de gases: prohibido emitir refrigerantes a la atmósfera. Los residuos de R12 o R134a no reutilizables deben entregarse a un gestor de residuos peligrosos. <span class=\"pag\">pág. 151</span>.</li>\n<li>Directiva 2006/40/CE (fases de eliminación del R134a):<ol>\n<li>Límite de fugas de homologación: máximo 40 g/año en evaporador único y 60 g/año en evaporador doble. <span class=\"pag\">pág. 152</span>.</li>\n<li>A partir del 1 de enero de 2011: prohibida la homologación de turismos nuevos con refrigerantes de PCG &gt; 150 (sustitución por R1234yf). <span class=\"pag\">pág. 152</span>.</li>\n<li>A partir del 1 de enero de 2017: prohibida la venta y matriculación de cualquier vehículo nuevo con R134a. <span class=\"pag\">pág. 152</span>.</li>\n</ol>\n</li>\n</ul>",
+     "texto": "Certificación profesional: Todo técnico que realice operaciones de instalación, mantenimiento, carga o recuperación de refrigerantes fluorados en climatización de vehículos debe poseer la certificación oficial acreditativa de competencia profesional. (págs. 149-150) Compra de refrigerantes: Los talleres solo pueden adquirir gases fluorados acreditando la posesión del certificado profesional y empleando equipos de recuperación homologados. (págs. 149-150) Directiva 2006/40/CE: Establece la reducción paulatina del uso del refrigerante R134a en vehículos de nueva fabricación por su potencial de calentamiento global, fijando un límite máximo de fugas de 40 g/año en sistemas sencillos y 60 g/año en sistemas de doble evaporador. (pág. 151)",
+     "html": "<ul>\n<li><strong>Certificación profesional:</strong> Todo técnico que realice operaciones de instalación, mantenimiento, carga o recuperación de refrigerantes fluorados en climatización de vehículos debe poseer la certificación oficial acreditativa de competencia profesional. <span class=\"pag\">págs. 149-150</span></li>\n<li><strong>Compra de refrigerantes:</strong> Los talleres solo pueden adquirir gases fluorados acreditando la posesión del certificado profesional y empleando equipos de recuperación homologados. <span class=\"pag\">págs. 149-150</span></li>\n<li><strong>Directiva 2006/40/CE:</strong> Establece la reducción paulatina del uso del refrigerante R134a en vehículos de nueva fabricación por su potencial de calentamiento global, fijando un límite máximo de fugas de 40 g/año en sistemas sencillos y 60 g/año en sistemas de doble evaporador. <span class=\"pag\">pág. 151</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Valores de referencia",
-     "texto": "Límite de fuga anual para homologación: 40 g/año (evaporador sencillo) / 60 g/año (evaporador doble). (pág. 152). Límite de PCG/GWP permitido para nuevos vehículos: < 150. (pág. 152).",
-     "html": "<ul>\n<li>Límite de fuga anual para homologación: 40 g/año (evaporador sencillo) / 60 g/año (evaporador doble). <span class=\"pag\">pág. 152</span>.</li>\n<li>Límite de PCG/GWP permitido para nuevos vehículos: &lt; 150. <span class=\"pag\">pág. 152</span>.</li>\n</ul>",
+     "texto": "Límite máximo de fugas anuales de gas fluorado: 40 g/año (evaporador único) y 60 g/año (evaporador doble). (pág. 151) Marco legal aplicable: Real Decreto 795/2010 y Directiva 2006/40/CE. (págs. 148, 151)",
+     "html": "<ul>\n<li>Límite máximo de fugas anuales de gas fluorado: 40 g/año (evaporador único) y 60 g/año (evaporador doble). <span class=\"pag\">pág. 151</span></li>\n<li>Marco legal aplicable: Real Decreto 795/2010 y Directiva 2006/40/CE. <span class=\"pag\">págs. 148, 151</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Errores de concepto frecuentes",
-     "texto": "Suponer que cualquier operario del taller puede comprar o recargar botellas de R134a libremente; la ley exige la certificación personal individual acreditada. (pág. 150).",
-     "html": "<p>Suponer que cualquier operario del taller puede comprar o recargar botellas de R134a libremente; la ley exige la certificación personal individual acreditada. <span class=\"pag\">pág. 150</span>.</p>",
+     "texto": "Pensar que cualquier operario sin certificación específica de gases fluorados puede realizar recargas o manipulaciones del circuito frigorífico. (págs. 149-150)",
+     "html": "<ul>\n<li>Pensar que cualquier operario sin certificación específica de gases fluorados puede realizar recargas o manipulaciones del circuito frigorífico. <span class=\"pag\">págs. 149-150</span></li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -66526,6 +67033,160 @@
      "titulo": "Imágenes requeridas",
      "texto": "Vista lateral del climatizador trasero con la ubicación de los servomotores V313, V314, V239 y V240 — Fuente: 301_e Climatización en el Touareg.pdf, pág. 29",
      "html": "<ul>\n<li>Vista lateral del climatizador trasero con la ubicación de los servomotores V313, V314, V239 y V240 — Fuente: 301_e         Climatización en el Touareg.pdf, pág. 29</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.sensor-temperatura-agua.la-climatizacion",
+   "nt": 829,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-temperatura-agua",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Conmutador de temperatura del líquido refrigerante",
+   "codigo": "",
+   "menu": "Conmutador de temperatura del líquido",
+   "grupo": "Refrigeración del motor",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 98",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "motor",
+   "sistema": "refrigeracion-motor",
+   "formaParteDe": "refrigeracion-motor",
+   "relacionados": [
+    "embrague-compresor",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "conmutador de temperatura",
+    "protección del motor",
+    "sobrecalentamiento",
+    "corte del compresor"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Desconectar el compresor del aire acondicionado cuando el líquido refrigerante del motor alcanza una temperatura excesivamente elevada para evitar el sobrecalentamiento del motor térmico. (pág. 98)",
+     "html": "<p>Desconectar el compresor del aire acondicionado cuando el líquido refrigerante del motor alcanza una temperatura excesivamente elevada para evitar el sobrecalentamiento del motor térmico. <span class=\"pag\">pág. 98</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Termoconmutador roscado en el circuito de refrigeración del motor, conectado en serie en la línea de mando del acoplamiento electromagnético. (pág. 98)",
+     "html": "<p>Termoconmutador roscado en el circuito de refrigeración del motor, conectado en serie en la línea de mando del acoplamiento electromagnético. <span class=\"pag\">pág. 98</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "En condiciones normales de trabajo sus contactos permanecen cerrados permitiendo el paso de corriente hacia el compresor. Si el motor se somete a una carga intensa y la temperatura del anticongelante supera el umbral crítico, los contactos se abren e interrumpen la alimentación del compresor, liberando al motor térmico de esa carga adicional. (pág. 98)",
+     "html": "<p>En condiciones normales de trabajo sus contactos permanecen cerrados permitiendo el paso de corriente hacia el compresor. Si el motor se somete a una carga intensa y la temperatura del anticongelante supera el umbral crítico, los contactos se abren e interrumpen la alimentación del compresor, liberando al motor térmico de esa carga adicional. <span class=\"pag\">pág. 98</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Umbral de desconexión por alta temperatura de motor: ajustado de fábrica según la motorización. (pág. 98)",
+     "html": "<ul>\n<li>Umbral de desconexión por alta temperatura de motor: ajustado de fábrica según la motorización. <span class=\"pag\">pág. 98</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fugas por la rosca de montaje o sulfatación en las mallas del conector eléctrico. (pág. 98)",
+     "html": "<p>Fugas por la rosca de montaje o sulfatación en las mallas del conector eléctrico. <span class=\"pag\">pág. 98</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Desconexión injustificada del compresor durante la marcha o fallo en la protección contra sobrecalentamiento del motor. (pág. 98)",
+     "html": "<p>Desconexión injustificada del compresor durante la marcha o fallo en la protección contra sobrecalentamiento del motor. <span class=\"pag\">pág. 98</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Comprobar la continuidad eléctrica entre sus terminales en frío y en caliente. (pág. 98)",
+     "html": "<p>Comprobar la continuidad eléctrica entre sus terminales en frío y en caliente. <span class=\"pag\">pág. 98</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Verificar la estanqueidad de la junta durante los cambios de líquido refrigerante. (pág. 98)",
+     "html": "<p>Verificar la estanqueidad de la junta durante los cambios de líquido refrigerante. <span class=\"pag\">pág. 98</span></p>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.control-ventiladores.la-climatizacion",
+   "nt": 830,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "control-ventiladores",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Gestión electrónica de los electroventiladores",
+   "codigo": "",
+   "menu": "Gestión electrónica de los electrovent",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 99-102",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "presostato",
+    "sensor-temperatura-agua",
+    "condensador"
+   ],
+   "palabras": [
+    "UEGV",
+    "electroventilador",
+    "velocidad 1",
+    "velocidad 2",
+    "condensación"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Regular la activación y la velocidad de rotación del electroventilador (o conjunto de electroventiladores) para disipar el calor del condensador de climatización y del radiador del motor térmico. (págs. 99-101)",
+     "html": "<p>Regular la activación y la velocidad de rotación del electroventilador (o conjunto de electroventiladores) para disipar el calor del condensador de climatización y del radiador del motor térmico. <span class=\"pag\">págs. 99-101</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El flujo de aire forzado generado por el ventilador es imprescindible para condensar el refrigerante a alta presión y mantener controlada la temperatura del motor térmico, gestionado por la Unidad Electrónica de Gestión del Ventilador (UEGV). (págs. 99-102)",
+     "html": "<p>El flujo de aire forzado generado por el ventilador es imprescindible para condensar el refrigerante a alta presión y mantener controlada la temperatura del motor térmico, gestionado por la Unidad Electrónica de Gestión del Ventilador (UEGV). <span class=\"pag\">págs. 99-102</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "La UEGV procesa las informaciones recibidas del termoconmutador del radiador (F18) y del presostato del circuito frigorífico (F129/G65): Con el climatizador desconectado: El electroventilador solo funciona en velocidad 1 o 2 en función exclusiva de la temperatura del líquido refrigerante del motor. (pág. 102) Con el climatizador conectado: El electroventilador se activa inmediatamente en el escalón 1 al acoplarse el compresor. Si la presión en el circuito frigorífico aumenta (alcanzando el umbral del presostato) o la temperatura del motor sobrepasa el límite, la UEGV conmuta al escalón 2 de máxima velocidad. (págs. 101-102)",
+     "html": "<p>La UEGV procesa las informaciones recibidas del termoconmutador del radiador (F18) y del presostato del circuito frigorífico (F129/G65):</p>\n<ul>\n<li><strong>Con el climatizador desconectado:</strong> El electroventilador solo funciona en velocidad 1 o 2 en función exclusiva de la temperatura del líquido refrigerante del motor. <span class=\"pag\">pág. 102</span></li>\n<li><strong>Con el climatizador conectado:</strong> El electroventilador se activa inmediatamente en el escalón 1 al acoplarse el compresor. Si la presión en el circuito frigorífico aumenta (alcanzando el umbral del presostato) o la temperatura del motor sobrepasa el límite, la UEGV conmuta al escalón 2 de máxima velocidad. <span class=\"pag\">págs. 101-102</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Disposiciones de ventiladores: Un ventilador con dos escalones de velocidad o dos ventiladores con dos escalones de velocidad. (pág. 100)",
+     "html": "<ul>\n<li>Disposiciones de ventiladores: Un ventilador con dos escalones de velocidad o dos ventiladores con dos escalones de velocidad. <span class=\"pag\">pág. 100</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Creer que el electroventilador solo funciona para enfriar el motor térmico, ignorando su función crítica en la condensación del fluido frigorífico. (págs. 99, 102)",
+     "html": "<ul>\n<li>Creer que el electroventilador solo funciona para enfriar el motor térmico, ignorando su función crítica en la condensación del fluido frigorífico. <span class=\"pag\">págs. 99, 102</span></li>\n</ul>",
      "nivel": ""
     }
    ]
