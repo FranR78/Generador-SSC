@@ -4378,6 +4378,46 @@
    "hecha": false
   },
   {
+   "nombre": "NT838_01",
+   "nt": 838,
+   "titulo": "Transmisor de presión y temperatura del agente frigorífico G395",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Situación del sensor de presión y temperatura G395 en la toma roscada del condensador — Fuente: Audi A5 Coupé_2008_aire acondicionado.pdf, pág. 168",
+   "hecha": false
+  },
+  {
+   "nombre": "NT839_01",
+   "nt": 839,
+   "titulo": "Válvula reguladora del compresor de climatización N280",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Conexión del equipo de medición entre el conector del mazo de cables y la válvula reguladora N280 en el compresor — Fuente: Audi A5 Coupé_2008_aire acondicionado.pdf, pág. 176",
+   "hecha": false
+  },
+  {
+   "nombre": "NT840_01",
+   "nt": 840,
+   "titulo": "Servomotores de las chapaletas de climatización con LIN-Bus",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Esquema del circuito en serie LIN-Bus entre la centralita J255 y la cadena de servomotores — Fuente: Audi A5 Coupé_2008_aire acondicionado.pdf, pág. 231",
+   "hecha": false
+  },
+  {
+   "nombre": "NT841_01",
+   "nt": 841,
+   "titulo": "Arquitectura de climatización versiones Basis y Komfort",
+   "seccion": "8. Regulación y control",
+   "descripcion": "Vista seccionada del climatizador Komfort mostrando la pared divisoria de separación entre los flujos izquierdo y derecho — Fuente: Audi A5 Coupé_2008_aire acondicionado.pdf, pág. 307",
+   "hecha": false
+  },
+  {
+   "nombre": "NT843_01",
+   "nt": 843,
+   "titulo": "Diagnóstico de la desconexión o falta de rendimiento del compresor sin embrague",
+   "seccion": "10. Diagnóstico",
+   "descripcion": "Bloque de valores de medición 001 en la pantalla del lector mostrando los campos de corriente de N280 y presión del circuito — Fuente: Audi A5 Coupé_2008_aire acondicionado.pdf, pág. 42",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -4402,7 +4442,7 @@
    "hecha": false
   }
  ],
- "total": 829,
+ "total": 835,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -27618,6 +27658,99 @@
    ]
   },
   {
+   "id": "ssc.transmisor-presion.audi-a5-coupe-2008-aire-acondicionado",
+   "nt": 838,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "transmisor-presion-map-maf",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Transmisor de presión y temperatura del agente frigorífico G395",
+   "codigo": "G395",
+   "menu": "Transmisor de presión y temper G395",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Audi A5 Coupé_2008_aire acondicionado.pdf, págs. 168-169",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "electroventilador-condensador",
+    "valvula-reguladora-compresor"
+   ],
+   "palabras": [
+    "G395",
+    "LIN-Bus",
+    "carcasa gris",
+    "presión del circuito",
+    "J519"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir continuamente la presión en el lado de alta presión del circuito frigorífico para informar a las unidades de control de la red sobre las necesidades de condensación y protección del compresor. (pág. 168)",
+     "html": "<p>Medir continuamente la presión en el lado de alta presión del circuito frigorífico para informar a las unidades de control de la red sobre las necesidades de condensación y protección del compresor. <span class=\"pag\">pág. 168</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Sensor de presión electrónico piezoeléctrico con carcasa de color gris montado en el condensador. Transmite información digitalizada mediante una línea de bus de datos LIN a la unidad de control de la red de a bordo J519. Sustituye al transmisor G65 de versiones anteriores. (págs. 168-169)",
+     "html": "<p>Sensor de presión electrónico piezoeléctrico con carcasa de color gris montado en el condensador. Transmite información digitalizada mediante una línea de bus de datos LIN a la unidad de control de la red de a bordo J519. Sustituye al transmisor G65 de versiones anteriores. <span class=\"pag\">págs. 168-169</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Mide la presión del fluido a la salida del condensador. La unidad de control de la red de a bordo J519 lee el valor del sensor a través del cable LIN-Bus y lo retransmite por el bus CAN de confort hacia el panel de mandos e indicación Climatronic J255. La señal de temperatura integrada en el sensor no se utiliza actualmente para la regulación del climatizador. (págs. 168-169)",
+     "html": "<p>Mide la presión del fluido a la salida del condensador. La unidad de control de la red de a bordo J519 lee el valor del sensor a través del cable LIN-Bus y lo retransmite por el bus CAN de confort hacia el panel de mandos e indicación Climatronic J255. La señal de temperatura integrada en el sensor no se utiliza actualmente para la regulación del climatizador. <span class=\"pag\">págs. 168-169</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Par de apriete de montaje en la toma del condensador: 8 Nm. (pág. 168) Lectura por defecto en autodiagnóstico ante falta de señal o desconexión: > 40 bares. (pág. 43)",
+     "html": "<ul>\n<li>Par de apriete de montaje en la toma del condensador: 8 Nm. <span class=\"pag\">pág. 168</span></li>\n<li>Lectura por defecto en autodiagnóstico ante falta de señal o desconexión: &gt; 40 bares. <span class=\"pag\">pág. 43</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fugas de refrigerante por envejecimiento de la junta tórica o interrupción del cable de comunicación LIN-Bus. (pág. 168)",
+     "html": "<p>Fugas de refrigerante por envejecimiento de la junta tórica o interrupción del cable de comunicación LIN-Bus. <span class=\"pag\">pág. 168</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Se inscribe una avería en la memoria de las unidades J519 y J255, desconectando el compresor por seguridad para evitar sobrepresiones o trabajo en seco. (págs. 43, 168)",
+     "html": "<p>Se inscribe una avería en la memoria de las unidades J519 y J255, desconectando el compresor por seguridad para evitar sobrepresiones o trabajo en seco. <span class=\"pag\">págs. 43, 168</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Consultar los bloques de valores de medición 001 (campo 4) y 056 (campo 1) mediante el equipo de autodiagnóstico VAS 5051. (págs. 43, 168)",
+     "html": "<p>Consultar los bloques de valores de medición 001 (campo 4) y 056 (campo 1) mediante el equipo de autodiagnóstico VAS 5051. <span class=\"pag\">págs. 43, 168</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Reemplazar la junta tórica de sellado en cada desmontaje y humedecerla con aceite para máquinas frigoríficas antes de roscar el sensor al par de 8 Nm. Su desmontaje no exige evacuar el circuito gracias a la válvula de retención del empalme. (pág. 168)",
+     "html": "<p>Reemplazar la junta tórica de sellado en cada desmontaje y humedecerla con aceite para máquinas frigoríficas antes de roscar el sensor al par de 8 Nm. Su desmontaje no exige evacuar el circuito gracias a la válvula de retención del empalme. <span class=\"pag\">pág. 168</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Situación del sensor de presión y temperatura G395 en la toma roscada del condensador — Fuente: Audi A5 Coupé_2008_aire acondicionado.pdf, pág. 168",
+     "html": "<ul>\n<li>Situación del sensor de presión y temperatura G395 en la toma roscada del condensador — Fuente: Audi A5 Coupé_2008_aire acondicionado.pdf, pág. 168</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.sensor-temperatura-exterior.g17.208-regulacion-de-la-temperatura",
    "nt": 98,
    "modulo": "ssc",
@@ -36275,6 +36408,98 @@
    ]
   },
   {
+   "id": "ssc.servomotor-trampilla.lin-bus-audi.audi-a5-coupe-2008-aire-acondicionado",
+   "nt": 840,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "servomotor-trampilla",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Servomotores de las chapaletas de climatización con LIN-Bus",
+   "codigo": "V68 / V107 / V108 / V109 / V110 / V111 / V113 / V137 / V158 / V159 / V261",
+   "menu": "Servomotores de las chapaletas V68 / V107 / V108 / V109 / V110 / V111 / V113 / V137 / V158 / V159 / V261",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Audi A5 Coupé_2008_aire acondicionado.pdf, págs. 18, 231, 236, 249",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "lin-bus-audi",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "servomotores",
+    "LIN-Bus",
+    "direccionamiento automático",
+    "sector dentado",
+    "ajuste básico",
+    "circuito en serie"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Accionar las chapaletas de regulación de temperatura, descongelación, recirculación y distribución de aire en la carcasa del climatizador. (págs. 231, 236)",
+     "html": "<p>Accionar las chapaletas de regulación de temperatura, descongelación, recirculación y distribución de aire en la carcasa del climatizador. <span class=\"pag\">págs. 231, 236</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Actuadores eléctricos equipados con un módulo electrónico integrado. Todos los servomotores del vehículo son técnicamente idénticos como pieza de recambio y están interconectados en serie mediante un único cable de bus de datos LIN-Bus conectado a la centralita Climatronic J255. (págs. 18, 231, 236)",
+     "html": "<p>Actuadores eléctricos equipados con un módulo electrónico integrado. Todos los servomotores del vehículo son técnicamente idénticos como pieza de recambio y están interconectados en serie mediante un único cable de bus de datos LIN-Bus conectado a la centralita Climatronic J255. <span class=\"pag\">págs. 18, 231, 236</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Reciben las órdenes de movimiento transmitidas en serie por la centralita J255 a través del LIN-Bus. Durante la función de \"Ajuste básico\" (grupo 004), los servomotores reconocen y memorizan permanentemente su dirección física y función específica en función del orden secuencial en el que están instalados en el mazo de cables. (págs. 18, 231, 236)",
+     "html": "<p>Reciben las órdenes de movimiento transmitidas en serie por la centralita J255 a través del LIN-Bus. Durante la función de \"Ajuste básico\" (grupo 004), los servomotores reconocen y memorizan permanentemente su dirección física y función específica en función del orden secuencial en el que están instalados en el mazo de cables. <span class=\"pag\">págs. 18, 231, 236</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Valores de tope autoadaptados en memoria: tope inferior \"10000\" y tope superior entre \"11000\" y \"20000\". (pág. 45) Alimentación: Tensión de red de a bordo e interfaz de bus de datos LIN (terminal T16). (págs. 45, 231)",
+     "html": "<ul>\n<li>Valores de tope autoadaptados en memoria: tope inferior \"10000\" y tope superior entre \"11000\" y \"20000\". <span class=\"pag\">pág. 45</span></li>\n<li>Alimentación: Tensión de red de a bordo e interfaz de bus de datos LIN (terminal T16). <span class=\"pag\">págs. 45, 231</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Desalineación del sector dentado de accionamiento con la marca de la carcasa o alteración de la secuencia de conexión física del cableado durante desmontajes. (págs. 231, 249)",
+     "html": "<p>Desalineación del sector dentado de accionamiento con la marca de la carcasa o alteración de la secuencia de conexión física del cableado durante desmontajes. <span class=\"pag\">págs. 231, 249</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Registro de los códigos de avería \"Direccionamiento automático incorrecto\" o \"Límite superior/inferior sobrepasado\", provocando un posicionamiento erróneo de las trampillas. (págs. 18, 231)",
+     "html": "<p>Registro de los códigos de avería \"Direccionamiento automático incorrecto\" o \"Límite superior/inferior sobrepasado\", provocando un posicionamiento erróneo de las trampillas. <span class=\"pag\">págs. 18, 231</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Iniciar la función \"Ajuste básico\" en los grupos de indicación 004 y 001 con la estación de diagnosis VAS 5051 para autoadaptar las posiciones finales de recorrido. (págs. 18, 231)",
+     "html": "<p>Iniciar la función \"Ajuste básico\" en los grupos de indicación 004 y 001 con la estación de diagnosis VAS 5051 para autoadaptar las posiciones finales de recorrido. <span class=\"pag\">págs. 18, 231</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Al montar un servomotor nuevo, comprobar antes de encajarlo que el primer diente del sector dentado queda encarado con la marca \"C\" del soporte de plástico. Respetar el orden físico de los conectores del mazo en serie. (págs. 249, 306)",
+     "html": "<p>Al montar un servomotor nuevo, comprobar antes de encajarlo que el primer diente del sector dentado queda encarado con la marca \"C\" del soporte de plástico. Respetar el orden físico de los conectores del mazo en serie. <span class=\"pag\">págs. 249, 306</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del circuito en serie LIN-Bus entre la centralita J255 y la cadena de servomotores — Fuente: Audi A5 Coupé_2008_aire acondicionado.pdf, pág. 231",
+     "html": "<ul>\n<li>Esquema del circuito en serie LIN-Bus entre la centralita J255 y la cadena de servomotores — Fuente: Audi A5 Coupé_2008_aire acondicionado.pdf, pág. 231</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.ventilador-habitaculo.cd-072-climatizacion-en-el-ibiza-cordoba",
    "nt": 200,
    "modulo": "ssc",
@@ -37688,6 +37913,99 @@
      "titulo": "Imágenes requeridas",
      "texto": "Sección interna de la válvula de regulación con indicación de la cápsula elástica, vástago, bola y pasajes de gas — Fuente: LA CLIMATIZACIÓN.pdf, pág. 62",
      "html": "<ul>\n<li>Sección interna de la válvula de regulación con indicación de la cápsula elástica, vástago, bola y pasajes de gas — Fuente: LA CLIMATIZACIÓN.pdf, pág. 62</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.valvula-reguladora-compresor.audi-a5-coupe-2008-aire-acondicionado",
+   "nt": 839,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "valvula-reguladora-compresor-variable",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Válvula reguladora del compresor de climatización N280",
+   "codigo": "N280",
+   "menu": "Válvula reguladora del compres N280",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Audi A5 Coupé_2008_aire acondicionado.pdf, págs. 176-177",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "compresor",
+   "relacionados": [
+    "compresor",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "N280",
+    "PWM",
+    "corriente de control",
+    "J519",
+    "cilindrada variable",
+    "sin acoplamiento"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Ajustar la presión interna en la cámara del compresor para modificar la inclinación del plato oscilante y variar de forma continua el volumen de desplazamiento de los pistones. (págs. 31, 176)",
+     "html": "<p>Ajustar la presión interna en la cámara del compresor para modificar la inclinación del plato oscilante y variar de forma continua el volumen de desplazamiento de los pistones. <span class=\"pag\">págs. 31, 176</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Electroválvula de regulación de presión proporcional alojada en la culata posterior del compresor. Es excitada por la unidad de control de la red de a bordo J519 tras recibir la solicitud de la centralita Climatronic J255. (págs. 12, 176)",
+     "html": "<p>Electroválvula de regulación de presión proporcional alojada en la culata posterior del compresor. Es excitada por la unidad de control de la red de a bordo J519 tras recibir la solicitud de la centralita Climatronic J255. <span class=\"pag\">págs. 12, 176</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Recibe una señal eléctrica modulada por anchura de impulsos (PWM). La unidad J519 regula la intensidad de corriente efectiva que atraviesa la bobina (entre 0 A y 0,8 A). Al variar el campo magnético, la válvula modifica la presión de carrera de los pistones, aumentando o reduciendo el flujo de gas comprimido inyectado al evaporador. (págs. 42, 176-177)",
+     "html": "<p>Recibe una señal eléctrica modulada por anchura de impulsos (PWM). La unidad J519 regula la intensidad de corriente efectiva que atraviesa la bobina (entre 0 A y 0,8 A). Al variar el campo magnético, la válvula modifica la presión de carrera de los pistones, aumentando o reduciendo el flujo de gas comprimido inyectado al evaporador. <span class=\"pag\">págs. 42, 176-177</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Corriente de control nominal de activación: > 0,3 A para asegurar el inicio de compresión. (pág. 120) Modulación PWM en demanda máxima de frío (modo Auto / LO): señal cuadrada con anchura de pulso entre el 75% y el 100%. (pág. 177) Modulación PWM en modo OFF o AC OFF: 0 A (0% de anchura de pulso). (pág. 177)",
+     "html": "<ul>\n<li>Corriente de control nominal de activación: &gt; 0,3 A para asegurar el inicio de compresión. <span class=\"pag\">pág. 120</span></li>\n<li>Modulación PWM en demanda máxima de frío (modo Auto / LO): señal cuadrada con anchura de pulso entre el 75% y el 100%. <span class=\"pag\">pág. 177</span></li>\n<li>Modulación PWM en modo OFF o AC OFF: 0 A (0% de anchura de pulso). <span class=\"pag\">pág. 177</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fallo de aislamiento en la bobina electromagnética o corte en las líneas de alimentación de potencia desde la unidad J519. (págs. 176-177)",
+     "html": "<p>Fallo de aislamiento en la bobina electromagnética o corte en las líneas de alimentación de potencia desde la unidad J519. <span class=\"pag\">págs. 176-177</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El compresor permanece regulado al mínimo rendimiento (aproximadamente 0% de caudal), interrumpiéndose la producción de aire frío. (págs. 155, 177)",
+     "html": "<p>El compresor permanece regulado al mínimo rendimiento (aproximadamente 0% de caudal), interrumpiéndose la producción de aire frío. <span class=\"pag\">págs. 155, 177</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Conectar el osciloscopio digital (DSO) con el set de cables adaptadores V.A.G 1594 C al conector de la válvula para verificar la forma de onda rectangular de la señal PWM y medir la corriente efectiva en el bloque de valores de medición. (págs. 42, 176-177)",
+     "html": "<p>Conectar el osciloscopio digital (DSO) con el set de cables adaptadores V.A.G 1594 C al conector de la válvula para verificar la forma de onda rectangular de la señal PWM y medir la corriente efectiva en el bloque de valores de medición. <span class=\"pag\">págs. 42, 176-177</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "La válvula N280 forma un conjunto indivisible con el cuerpo del compresor de recambio; si sufre un fallo mecánico interno exige la sustitución del compresor. (pág. 28)",
+     "html": "<p>La válvula N280 forma un conjunto indivisible con el cuerpo del compresor de recambio; si sufre un fallo mecánico interno exige la sustitución del compresor. <span class=\"pag\">pág. 28</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Conexión del equipo de medición entre el conector del mazo de cables y la válvula reguladora N280 en el compresor — Fuente: Audi A5 Coupé_2008_aire acondicionado.pdf, pág. 176",
+     "html": "<ul>\n<li>Conexión del equipo de medición entre el conector del mazo de cables y la válvula reguladora N280 en el compresor — Fuente: Audi A5 Coupé_2008_aire acondicionado.pdf, pág. 176</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -41481,6 +41799,83 @@
      "titulo": "Imágenes requeridas",
      "texto": "Cuadro general del sistema Climatronic con la interconexión entre sensores, la unidad de control J255 y los actuadores — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 44-45",
      "html": "<ul>\n<li>Cuadro general del sistema Climatronic con la interconexión entre sensores, la unidad de control J255 y los actuadores — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 44-45</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.regulacion-automatica.basis-komfort.audi-a5-coupe-2008-aire-acondicionado",
+   "nt": 841,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-automatica",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Arquitectura de climatización versiones Basis y Komfort",
+   "codigo": "",
+   "menu": "Arquitectura de climatización versione",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Audi A5 Coupé_2008_aire acondicionado.pdf, págs. 206, 226, 229, 307-308",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "basis-komfort",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "servomotor-trampilla",
+    "sensor-calidad-aire"
+   ],
+   "palabras": [
+    "Basis",
+    "Komfort",
+    "pared divisoria",
+    "regulación bizona",
+    "monozona",
+    "G238",
+    "G355"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Establecer las diferencias técnicas, componentes y esquemas de distribución entre la versión estándar de aire acondicionado monozona (Basis) y la versión climatizador automático bizona (Komfort). (págs. 206, 226, 307)",
+     "html": "<p>Establecer las diferencias técnicas, componentes y esquemas de distribución entre la versión estándar de aire acondicionado monozona (Basis) y la versión climatizador automático bizona (Komfort). <span class=\"pag\">págs. 206, 226, 307</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "La versión Basis distribuye una única temperatura homogénea para todo el habitáculo mediante un climatizador simplificado. La versión Komfort dispone de circuitos mecánicos y electrónicos divididos que permiten regular de forma independiente la temperatura y el flujo de aire para el lado izquierdo y derecho, integrando sensores ambientales avanzados. (págs. 206, 226, 307-308)",
+     "html": "<p>La versión Basis distribuye una única temperatura homogénea para todo el habitáculo mediante un climatizador simplificado. La versión Komfort dispone de circuitos mecánicos y electrónicos divididos que permiten regular de forma independiente la temperatura y el flujo de aire para el lado izquierdo y derecho, integrando sensores ambientales avanzados. <span class=\"pag\">págs. 206, 226, 307-308</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Climatizador versión Basis: La carcasa interna no equipa paredes divisorias en el lado del aire. Las chapaletas de mezcla y reposapiés están comunicadas entre sí por varillas de unión y accionadas por servomotores únicos (V68 para temperatura global y V261 para reposapiés). No equipa sensor de calidad del aire G238, sensor de humedad G355 ni difusores traseros ajustables. (págs. 226, 307) Climatizador versión Komfort: La carcasa de mezcla cuenta con una pared divisoria central hermética. Dispone de regulación bizona independiente con servomotores individuales para temperatura izquierda (V158), temperatura derecha (V159), vano reposapiés izquierdo (V108), vano reposapiés derecho (V109), difusor central izquierdo (V110) y derecho (V111). Incorpora de serie el sensor de calidad del aire G238 en la toma de aire fresco y el sensor de humedad G355 en la base del retrovisor interior. (págs. 229, 307-308)",
+     "html": "<ul>\n<li><strong>Climatizador versión Basis:</strong> La carcasa interna no equipa paredes divisorias en el lado del aire. Las chapaletas de mezcla y reposapiés están comunicadas entre sí por varillas de unión y accionadas por servomotores únicos (V68 para temperatura global y V261 para reposapiés). No equipa sensor de calidad del aire G238, sensor de humedad G355 ni difusores traseros ajustables. <span class=\"pag\">págs. 226, 307</span></li>\n<li><strong>Climatizador versión Komfort:</strong> La carcasa de mezcla cuenta con una pared divisoria central hermética. Dispone de regulación bizona independiente con servomotores individuales para temperatura izquierda (V158), temperatura derecha (V159), vano reposapiés izquierdo (V108), vano reposapiés derecho (V109), difusor central izquierdo (V110) y derecho (V111). Incorpora de serie el sensor de calidad del aire G238 en la toma de aire fresco y el sensor de humedad G355 en la base del retrovisor interior. <span class=\"pag\">págs. 229, 307-308</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Configuración Basis: 1 zona de temperatura, 1 curva de regulación calculada. (pág. 106) Configuración Komfort: 2 zonas de regulación independientes (adaptables automáticamente según capota abierta o cerrada en modelos Cabriolet). (págs. 33, 106)",
+     "html": "<ul>\n<li>Configuración Basis: 1 zona de temperatura, 1 curva de regulación calculada. <span class=\"pag\">pág. 106</span></li>\n<li>Configuración Komfort: 2 zonas de regulación independientes (adaptables automáticamente según capota abierta o cerrada en modelos Cabriolet). <span class=\"pag\">págs. 33, 106</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Intentar codificar la presencia del sensor de calidad del aire G238 o válvulas de corte en una unidad de control instalada en un vehículo versión Basis, lo que genera fallos permanentes en el autodiagnóstico. (págs. 11, 226)",
+     "html": "<ul>\n<li>Intentar codificar la presencia del sensor de calidad del aire G238 o válvulas de corte en una unidad de control instalada en un vehículo versión Basis, lo que genera fallos permanentes en el autodiagnóstico. <span class=\"pag\">págs. 11, 226</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Vista seccionada del climatizador Komfort mostrando la pared divisoria de separación entre los flujos izquierdo y derecho — Fuente: Audi A5 Coupé_2008_aire acondicionado.pdf, pág. 307",
+     "html": "<ul>\n<li>Vista seccionada del climatizador Komfort mostrando la pared divisoria de separación entre los flujos izquierdo y derecho — Fuente: Audi A5 Coupé_2008_aire acondicionado.pdf, pág. 307</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -45366,6 +45761,88 @@
    ]
   },
   {
+   "id": "ssc.lectura-manometros.audi-a5-coupe-2008-aire-acondicionado",
+   "nt": 842,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "lectura-manometros",
+   "seccion": "10. Diagnóstico",
+   "subgrupo": "",
+   "titulo": "Comprobación del rendimiento frigorífico del climatizador",
+   "codigo": "",
+   "menu": "Comprobación del rendimiento frigorífi",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Audi A5 Coupé_2008_aire acondicionado.pdf, págs. 311-316, 319-321",
+   "clase": "procedimiento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "valvula-reguladora-compresor",
+    "transmisor-presion"
+   ],
+   "palabras": [
+    "rendimiento frigorífico",
+    "corriente teórica",
+    "corriente efectiva",
+    "G395",
+    "N280",
+    "9 bares"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Evaluar la capacidad de enfriamiento del sistema de climatización y verificar la respuesta electrónica del compresor de cilindrada variable sin embrague electromagnético. (págs. 311, 314)",
+     "html": "<p>Evaluar la capacidad de enfriamiento del sistema de climatización y verificar la respuesta electrónica del compresor de cilindrada variable sin embrague electromagnético. <span class=\"pag\">págs. 311, 314</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Temperatura ambiente exterior superior a 15 ºC. (pág. 311) Radiador del motor y condensador limpios y sin suciedad. (pág. 311) Correa poli-V en correcto estado de conservación y tensión. (pág. 311) Capó delantero, puertas y ventanillas completamente cerrados. (págs. 311, 314) Motor en marcha a temperatura de servicio. (págs. 311, 314)",
+     "html": "<ol>\n<li>Temperatura ambiente exterior superior a 15 ºC. <span class=\"pag\">pág. 311</span></li>\n<li>Radiador del motor y condensador limpios y sin suciedad. <span class=\"pag\">pág. 311</span></li>\n<li>Correa poli-V en correcto estado de conservación y tensión. <span class=\"pag\">pág. 311</span></li>\n<li>Capó delantero, puertas y ventanillas completamente cerrados. <span class=\"pag\">págs. 311, 314</span></li>\n<li>Motor en marcha a temperatura de servicio. <span class=\"pag\">págs. 311, 314</span></li>\n</ol>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Estación de diagnosis VAS 5051 (o VAS 5052) con cable de conexión T16 y termómetro digital de aireación. (págs. 311, 314)",
+     "html": "<p>Estación de diagnosis VAS 5051 (o VAS 5052) con cable de conexión T16 y termómetro digital de aireación. <span class=\"pag\">págs. 311, 314</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Pasos",
+     "texto": "Abrir todos los difusores del salpicadero y arrancar el motor del vehículo. (pág. 314) Conectar el equipo de diagnosis VAS 5051 al conector de 16 polos e iniciar la autodiagnosis en la dirección \"08 - Electrónica de climatización\". (págs. 8, 314) Seleccionar la función \"Leer bloque de valores de medición\" e ingresar al grupo \"001\". (págs. 40, 314) Seleccionar el modo \"Econ\" o \"AC OFF\" en el panel de mandos y verificar que los campos 1 y 2 del grupo 001 muestren 0 A de corriente (compresor desactivado) y que el campo 4 indique la presión de reposo adecuada a la temperatura ambiente. (pág. 314) Pulsar la tecla \"Auto / AC ON\" y situar la preselección de temperatura en \"LO\" (frío máximo) en ambos lados. (págs. 314, 316) Comprobar que en los campos 1 y 2 del grupo 001 la corriente teórica y la corriente efectiva de la válvula N280 aumenten por encima de 0,3 A (hasta alcanzar entre 0,75 A y 0,8 A). (págs. 177, 316) Comprobar que la presión visualizada en el campo 4 del grupo 001 aumente de forma progresiva por encima del valor de reposo. (pág. 316) Verificar que los electroventiladores del radiador (V7 / V177) se conectan automáticamente en cuanto la presión en el lado de alta supera los 9 bares. (pág. 321) Medir la temperatura del aire soplado por los difusores centrales confirmando que desciende a los valores de confort especificados. (págs. 314, 316)",
+     "html": "<ol>\n<li>Abrir todos los difusores del salpicadero y arrancar el motor del vehículo. <span class=\"pag\">pág. 314</span></li>\n<li>Conectar el equipo de diagnosis VAS 5051 al conector de 16 polos e iniciar la autodiagnosis en la dirección \"08 - Electrónica de climatización\". <span class=\"pag\">págs. 8, 314</span></li>\n<li>Seleccionar la función \"Leer bloque de valores de medición\" e ingresar al grupo \"001\". <span class=\"pag\">págs. 40, 314</span></li>\n<li>Seleccionar el modo \"Econ\" o \"AC OFF\" en el panel de mandos y verificar que los campos 1 y 2 del grupo 001 muestren 0 A de corriente (compresor desactivado) y que el campo 4 indique la presión de reposo adecuada a la temperatura ambiente. <span class=\"pag\">pág. 314</span></li>\n<li>Pulsar la tecla \"Auto / AC ON\" y situar la preselección de temperatura en \"LO\" (frío máximo) en ambos lados. <span class=\"pag\">págs. 314, 316</span></li>\n<li>Comprobar que en los campos 1 y 2 del grupo 001 la corriente teórica y la corriente efectiva de la válvula N280 aumenten por encima de 0,3 A (hasta alcanzar entre 0,75 A y 0,8 A). <span class=\"pag\">págs. 177, 316</span></li>\n<li>Comprobar que la presión visualizada en el campo 4 del grupo 001 aumente de forma progresiva por encima del valor de reposo. <span class=\"pag\">pág. 316</span></li>\n<li>Verificar que los electroventiladores del radiador (V7 / V177) se conectan automáticamente en cuanto la presión en el lado de alta supera los 9 bares. <span class=\"pag\">pág. 321</span></li>\n<li>Medir la temperatura del aire soplado por los difusores centrales confirmando que desciende a los valores de confort especificados. <span class=\"pag\">págs. 314, 316</span></li>\n</ol>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Temperatura ambiental mínima para la prueba: > 15 ºC. (pág. 311) Corriente de activación de N280 a máximo rendimiento: entre 0,75 A y 0,8 A. (págs. 120, 177) Presión de activación de electroventiladores V7/V177: 9 bares en la línea de alta. (pág. 321)",
+     "html": "<ul>\n<li>Temperatura ambiental mínima para la prueba: &gt; 15 ºC. <span class=\"pag\">pág. 311</span></li>\n<li>Corriente de activación de N280 a máximo rendimiento: entre 0,75 A y 0,8 A. <span class=\"pag\">págs. 120, 177</span></li>\n<li>Presión de activación de electroventiladores V7/V177: 9 bares en la línea de alta. <span class=\"pag\">pág. 321</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Confirmar que el tubo de baja presión (diámetro grueso) entre el acoplamiento rápido y el compresor se enfría intensamente y verificar que en el grupo de valores de medición 002 el campo 1 permanezca en \"0\" (sin condiciones de desconexión). (págs. 43, 316, 323)",
+     "html": "<p>Confirmar que el tubo de baja presión (diámetro grueso) entre el acoplamiento rápido y el compresor se enfría intensamente y verificar que en el grupo de valores de medición 002 el campo 1 permanezca en \"0\" (sin condiciones de desconexión). <span class=\"pag\">págs. 43, 316, 323</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Prohibido arrancar el motor si las tuberías de refrigerante del compresor están desconectadas. Al carecer de acoplamiento electromagnético, el compresor gira de forma ininterrumpida con el motor y se destruye por sobrecalentamiento interno si trabaja en seco. (págs. 339, 378)",
+     "html": "<p>Prohibido arrancar el motor si las tuberías de refrigerante del compresor están desconectadas. Al carecer de acoplamiento electromagnético, el compresor gira de forma ininterrumpida con el motor y se destruye por sobrecalentamiento interno si trabaja en seco. <span class=\"pag\">págs. 339, 378</span></p>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.no-enfria.7-mantenimiento-diagnostico-y-reparacion",
    "nt": 407,
    "modulo": "ssc",
@@ -46218,6 +46695,82 @@
      "titulo": "Verificación tras la reparación",
      "texto": "Si se detecta aceite rojo, negro, purpurina, o partículas en el circuito, es estrictamente obligatorio realizar el lavado completo del circuito con aire seco y nitrógeno líquido, y sustituir sin excepción el compresor, la válvula de expansión y el filtro deshidratador. (págs. 127, 131)",
      "html": "<p>Si se detecta aceite rojo, negro, purpurina, o partículas en el circuito, es estrictamente obligatorio realizar el lavado completo del circuito con aire seco y nitrógeno líquido, y sustituir sin excepción el compresor, la válvula de expansión y el filtro deshidratador. <span class=\"pag\">págs. 127, 131</span></p>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.diagnostico-compresor.audi-a5-coupe-2008-aire-acondicionado",
+   "nt": 843,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "diagnostico-compresor",
+   "seccion": "10. Diagnóstico",
+   "subgrupo": "",
+   "titulo": "Diagnóstico de la desconexión o falta de rendimiento del compresor sin embrague",
+   "codigo": "",
+   "menu": "Diagnóstico de la desconexión o falta",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Audi A5 Coupé_2008_aire acondicionado.pdf, págs. 42, 314-316, 319-320",
+   "clase": "diagnostico",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "valvula-reguladora-compresor",
+    "transmisor-presion"
+   ],
+   "palabras": [
+    "N280",
+    "J519",
+    "G395",
+    "desactivación compresor",
+    "grupo 002",
+    "corriente de control"
+   ],
+   "apartados": [
+    {
+     "titulo": "Síntoma",
+     "texto": "El climatizador está conectado pero no produce aire frío, la presión en el bloque de valores de medición no se eleva o el compresor se desactiva intermitentemente. (págs. 316, 319-320)",
+     "html": "<p>El climatizador está conectado pero no produce aire frío, la presión en el bloque de valores de medición no se eleva o el compresor se desactiva intermitentemente. <span class=\"pag\">págs. 316, 319-320</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Causas posibles",
+     "texto": "Presencia de una condición de desconexión activa memorizada en el grupo de indicación. (págs. 43, 320) Fallo de excitación eléctrica en la válvula reguladora N280 por parte de la unidad de control de la red de a bordo J519. (págs. 155, 176, 320) Falta de carga de agente frigorífico detectada por el transmisor G395. (págs. 43, 168) Rotura del elemento de protección contra sobrecarga en la polea del compresor por agarrotamiento mecánico del mecanismo interno. (págs. 179, 399)",
+     "html": "<ul>\n<li>Presencia de una condición de desconexión activa memorizada en el grupo de indicación. <span class=\"pag\">págs. 43, 320</span></li>\n<li>Fallo de excitación eléctrica en la válvula reguladora N280 por parte de la unidad de control de la red de a bordo J519. <span class=\"pag\">págs. 155, 176, 320</span></li>\n<li>Falta de carga de agente frigorífico detectada por el transmisor G395. <span class=\"pag\">págs. 43, 168</span></li>\n<li>Rotura del elemento de protección contra sobrecarga en la polea del compresor por agarrotamiento mecánico del mecanismo interno. <span class=\"pag\">págs. 179, 399</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo separar las causas",
+     "texto": "Conectar el equipo de diagnosis VAS 5051 en la dirección \"08 - Electrónica de climatización\" y consultar la memoria de averías. (págs. 9, 320) Si no hay averías en la memoria, seleccionar \"Leer bloque de valores de medición\" e ingresar al grupo \"002\": comprobar el campo 1 (\"condición de desconexión actual\"). Si el código es distinto de \"0\", consultar la tabla de condiciones de corte (p. ej., presión fuera de margen, señal de apagado del motor, temperatura exterior demasiado baja). (págs. 43, 320) Acceder al grupo de valores de medición \"001\": verificar el campo 1 (corriente teórica) y el campo 2 (corriente efectiva). Si la corriente teórica es > 0,3 A pero la corriente efectiva marca 0 A, ingresar a la dirección \"09 - Unidad de control de la red de a bordo\" y verificar el bloque 034 (salida hacia N280). (págs. 42, 176, 320) Si la corriente efectiva en N280 es correcta (> 0,3 A) pero la presión en el campo 4 no aumenta, realizar una inspección visual del compresor con el motor en marcha: verificar si el disco de arrastre central gira solidario con la polea o si se ha separado por actuación del elastómero de protección contra sobrecarga. (págs. 179, 316, 399) Si la polea gira y N280 recibe corriente pero la presión permanece baja, consultar el valor de presión leído por el transmisor G395 en el grupo 056 (si indica un valor fijo superior a 40 bares, revisar la línea de datos LIN entre G395 y la unidad J519). (págs. 43, 168)",
+     "html": "<ol>\n<li>Conectar el equipo de diagnosis VAS 5051 en la dirección \"08 - Electrónica de climatización\" y consultar la memoria de averías. <span class=\"pag\">págs. 9, 320</span></li>\n<li>Si no hay averías en la memoria, seleccionar \"Leer bloque de valores de medición\" e ingresar al grupo \"002\": comprobar el campo 1 (\"condición de desconexión actual\"). Si el código es distinto de \"0\", consultar la tabla de condiciones de corte (p. ej., presión fuera de margen, señal de apagado del motor, temperatura exterior demasiado baja). <span class=\"pag\">págs. 43, 320</span></li>\n<li>Acceder al grupo de valores de medición \"001\": verificar el campo 1 (corriente teórica) y el campo 2 (corriente efectiva). Si la corriente teórica es &gt; 0,3 A pero la corriente efectiva marca 0 A, ingresar a la dirección \"09 - Unidad de control de la red de a bordo\" y verificar el bloque 034 (salida hacia N280). <span class=\"pag\">págs. 42, 176, 320</span></li>\n<li>Si la corriente efectiva en N280 es correcta (&gt; 0,3 A) pero la presión en el campo 4 no aumenta, realizar una inspección visual del compresor con el motor en marcha: verificar si el disco de arrastre central gira solidario con la polea o si se ha separado por actuación del elastómero de protección contra sobrecarga. <span class=\"pag\">págs. 179, 316, 399</span></li>\n<li>Si la polea gira y N280 recibe corriente pero la presión permanece baja, consultar el valor de presión leído por el transmisor G395 en el grupo 056 (si indica un valor fijo superior a 40 bares, revisar la línea de datos LIN entre G395 y la unidad J519). <span class=\"pag\">págs. 43, 168</span></li>\n</ol>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Campo 1 del grupo 002 con compresor habilitado: \"0\". (pág. 43) Corriente efectiva de control en N280: entre 0,3 A y 0,8 A. (págs. 42, 120, 177) Lectura de seguridad por defecto de G395 ante fallo de línea LIN: > 40 bares. (pág. 43)",
+     "html": "<ul>\n<li>Campo 1 del grupo 002 con compresor habilitado: \"0\". <span class=\"pag\">pág. 43</span></li>\n<li>Corriente efectiva de control en N280: entre 0,3 A y 0,8 A. <span class=\"pag\">págs. 42, 120, 177</span></li>\n<li>Lectura de seguridad por defecto de G395 ante fallo de línea LIN: &gt; 40 bares. <span class=\"pag\">pág. 43</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Verificación tras la reparación",
+     "texto": "Confirmar que el código de corte en el campo 1 del grupo 002 vuelve a \"0\", que la corriente efectiva en N280 se estabiliza y que la presión registrada en el campo 4 del grupo 001 aumenta de forma proporcional a la solicitud de refrigeración. (págs. 42-43, 316)",
+     "html": "<p>Confirmar que el código de corte en el campo 1 del grupo 002 vuelve a \"0\", que la corriente efectiva en N280 se estabiliza y que la presión registrada en el campo 4 del grupo 001 aumenta de forma proporcional a la solicitud de refrigeración. <span class=\"pag\">págs. 42-43, 316</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Bloque de valores de medición 001 en la pantalla del lector mostrando los campos de corriente de N280 y presión del circuito — Fuente: Audi A5 Coupé_2008_aire acondicionado.pdf, pág. 42",
+     "html": "<ul>\n<li>Bloque de valores de medición 001 en la pantalla del lector mostrando los campos de corriente de N280 y presión del circuito — Fuente: Audi A5 Coupé_2008_aire acondicionado.pdf, pág. 42</li>\n</ul>",
      "nivel": ""
     }
    ]
