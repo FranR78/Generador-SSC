@@ -3626,6 +3626,14 @@
    "hecha": false
   },
   {
+   "nombre": "NT718_01",
+   "nt": 718,
+   "titulo": "Compresor de CO2",
+   "seccion": "4. El compresor",
+   "descripcion": "Esquema y vista del compresor de CO2 — Fuente: COMPRESORES CON CO2.docx, pág. 1 (pág. 1)",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -3650,7 +3658,7 @@
    "hecha": false
   }
  ],
- "total": 709,
+ "total": 712,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -12306,6 +12314,63 @@
      "titulo": "Imágenes requeridas",
      "texto": "Vista del compresor de climatización de regulación externa DENSO 6 SEU 12 — Fuente: COMPRESOR__AC.PDF, pág. 3 (pág. 3).",
      "html": "<ul>\n<li>Vista del compresor de climatización de regulación externa DENSO 6 SEU 12 — Fuente: COMPRESOR__AC.PDF, pág. 3 <span class=\"pag\">pág. 3</span>.</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.compresor.co2.compresores-con-co2",
+   "nt": 718,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "compresor",
+   "seccion": "4. El compresor",
+   "subgrupo": "",
+   "titulo": "Compresor de CO2",
+   "codigo": "",
+   "menu": "Compresor de CO2",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "COMPRESORES CON CO2.docx, págs. 1",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "co2",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "ciclo-frigorifico",
+   "relacionados": [
+    "refrigerante-co2",
+    "calefaccion-bomba-calor"
+   ],
+   "palabras": [
+    "compresor",
+    "CO2",
+    "alta presion",
+    "microcanales"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Dotar de aire acondicionado a los automóviles y vehículos similares utilizando dióxido de carbono (CO2) como refrigerante no sintético (pág. 1).",
+     "html": "<p>Dotar de aire acondicionado a los automóviles y vehículos similares utilizando dióxido de carbono (CO2) como refrigerante no sintético <span class=\"pag\">pág. 1</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Compresores diseñados para trabajar con dióxido de carbono en circuitos de alta presión, combinados con conductos de aluminio extremadamente finos (microcanales) (pág. 1).",
+     "html": "<p>Compresores diseñados para trabajar con dióxido de carbono en circuitos de alta presión, combinados con conductos de aluminio extremadamente finos (microcanales) <span class=\"pag\">pág. 1</span>.</p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Presión de funcionamiento en el circuito: de 120 a 180 bar (pág. 1).",
+     "html": "<p>Presión de funcionamiento en el circuito: de 120 a 180 bar <span class=\"pag\">pág. 1</span>.</p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema y vista del compresor de CO2 — Fuente: COMPRESORES CON CO2.docx, pág. 1 (pág. 1)",
+     "html": "<ul>\n<li>Esquema y vista del compresor de CO2 — Fuente: COMPRESORES CON CO2.docx, pág. 1 <span class=\"pag\">pág. 1</span></li>\n</ul>"
     }
    ]
   },
@@ -53305,6 +53370,121 @@
      "titulo": "Imágenes requeridas",
      "texto": "Detalle de la polea de impulsión (A), el elemento de goma con grafito (B) y el disco de arrastre (C) en estado normal y deformado por sobrecarga — Fuente: COMPRESOR__AC.PDF, pág. 11 y 12 (pág. 11, 12).",
      "html": "<ul>\n<li>Detalle de la polea de impulsión (A), el elemento de goma con grafito (B) y el disco de arrastre (C) en estado normal y deformado por sobrecarga — Fuente: COMPRESOR__AC.PDF, pág. 11 y 12 <span class=\"pag\">pág. 11, 12</span>.</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.refrigerante-co2.compresores-con-co2",
+   "nt": 719,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "refrigerante-co2",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Dióxido de carbono CO2",
+   "codigo": "",
+   "menu": "Dióxido de carbono CO2",
+   "grupo": "Fluidos frigoríficos",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "COMPRESORES CON CO2.docx, págs. 1",
+   "clase": "fluido",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "fluidos-frigorificos",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "calefaccion-bomba-calor"
+   ],
+   "palabras": [
+    "CO2",
+    "refrigerante ecologico",
+    "efecto invernadero",
+    "450 gramos",
+    "120 a 180 bar"
+   ],
+   "apartados": [
+    {
+     "titulo": "Designación y norma",
+     "texto": "Dióxido de carbono (CO2), fluido refrigerante no sintético compatible con el medio ambiente (pág. 1).",
+     "html": "<p>Dióxido de carbono (CO2), fluido refrigerante no sintético compatible con el medio ambiente <span class=\"pag\">pág. 1</span>.</p>"
+    },
+    {
+     "titulo": "Propiedades",
+     "texto": "Gas con efecto invernadero, pero unas 1.400 veces menos potente en esta faceta que los refrigerantes sintéticos convencionales (hidrofluorocarbonos y CFCs) (pág. 1). No daña la capa de ozono (pág. 1). Funciona a presiones muy elevadas, comprendidas entre 120 y 180 bar (pág. 1).",
+     "html": "<ul>\n<li>Gas con efecto invernadero, pero unas 1.400 veces menos potente en esta faceta que los refrigerantes sintéticos convencionales (hidrofluorocarbonos y CFCs) <span class=\"pag\">pág. 1</span>.</li>\n<li>No daña la capa de ozono <span class=\"pag\">pág. 1</span>.</li>\n<li>Funciona a presiones muy elevadas, comprendidas entre 120 y 180 bar <span class=\"pag\">pág. 1</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Dónde se usa y cantidades",
+     "texto": "Se emplea como fluido de trabajo en acondicionadores de aire de automoción con conductos de aluminio de microcanales, requiriendo una carga de 450 gramos (frente a los 750 gramos empleados en equipos de R134a) (pág. 1).",
+     "html": "<p>Se emplea como fluido de trabajo en acondicionadores de aire de automoción con conductos de aluminio de microcanales, requiriendo una carga de 450 gramos (frente a los 750 gramos empleados en equipos de R134a) <span class=\"pag\">pág. 1</span>.</p>"
+    },
+    {
+     "titulo": "Identificación",
+     "texto": "CO2 / Dióxido de carbono (pág. 1).",
+     "html": "<p>CO2 / Dióxido de carbono <span class=\"pag\">pág. 1</span>.</p>"
+    },
+    {
+     "titulo": "Riesgos y normativa",
+     "texto": "Debido a las presiones extremas de trabajo (120 a 180 bar), estos equipos precisan de un sistema de protección en el habitáculo para los pasajeros (pág. 1).",
+     "html": "<p>Debido a las presiones extremas de trabajo (120 a 180 bar), estos equipos precisan de un sistema de protección en el habitáculo para los pasajeros <span class=\"pag\">pág. 1</span>.</p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.calefaccion-bomba-calor.compresores-con-co2",
+   "nt": 720,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "calefaccion-bomba-calor",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Climatización por bomba de calor con CO2",
+   "codigo": "",
+   "menu": "Climatización por bomba de calor con C",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "COMPRESORES CON CO2.docx, págs. 1",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "refrigerante-co2"
+   ],
+   "palabras": [
+    "bomba de calor",
+    "CO2",
+    "calefaccion",
+    "invertir ciclo"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Calentar el interior del habitáculo del automóvil empleando CO2 como fluido de trabajo, incluso antes de que el motor haya alcanzado la temperatura de rodaje (pág. 1).",
+     "html": "<p>Calentar el interior del habitáculo del automóvil empleando CO2 como fluido de trabajo, incluso antes de que el motor haya alcanzado la temperatura de rodaje <span class=\"pag\">pág. 1</span>.</p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Utilización de \"bombas de calor\" que invierten el ciclo de intercambio de calor del acondicionador de aire (pág. 1).",
+     "html": "<p>Utilización de \"bombas de calor\" que invierten el ciclo de intercambio de calor del acondicionador de aire <span class=\"pag\">pág. 1</span>.</p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El sistema invierte el ciclo de intercambio térmico, recogiendo el calor del aire exterior para transferirlo e impulsarlo al interior del habitáculo (pág. 1).",
+     "html": "<p>El sistema invierte el ciclo de intercambio térmico, recogiendo el calor del aire exterior para transferirlo e impulsarlo al interior del habitáculo <span class=\"pag\">pág. 1</span>.</p>"
     }
    ]
   },
