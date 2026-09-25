@@ -4778,7 +4778,7 @@
    "hecha": false
   }
  ],
- "total": 906,
+ "total": 909,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -48762,6 +48762,89 @@
    ]
   },
   {
+   "id": "ssc.lavado-circuito.sustitucion-del-compresor-y-lavado-del-s",
+   "nt": 917,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "lavado-circuito",
+   "seccion": "9. Taller: recuperación, vacío y carga",
+   "subgrupo": "",
+   "titulo": "Lavado del circuito de aire acondicionado",
+   "codigo": "",
+   "menu": "Lavado del circuito de aire acondicion",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "sustitucion-del-compresor-y-lavado-del-sistema-de-aire-acondicionadopdf-1656584251.pdf, págs. 4, 8-13",
+   "clase": "procedimiento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "sustitucion-compresor",
+    "filtro-deshidratador",
+    "valvula-expansion"
+   ],
+   "palabras": [
+    "lavado quimico",
+    "refrigerante R134a",
+    "nitrógeno",
+    "secado",
+    "puenteo componentes",
+    "no lavables"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Procedimiento de limpieza interna del circuito de climatización para eliminar abrasión, virutas metálicas, restos de elastómero (goma), aceite degradado, humedad y ácidos, garantizando la durabilidad del compresor nuevo (pág. 4, 12, 13). Modalidades de ejecución: Método A : Lavado con refrigerante R134a líquido y estación de mantenimiento de climatización (pág. 8, 9). Método B : Lavado con líquido especial de lavado químico (paso 1) y purgado/secado con nitrógeno (paso 2) (pág. 8, 10).",
+     "html": "<p>Procedimiento de limpieza interna del circuito de climatización para eliminar abrasión, virutas metálicas, restos de elastómero (goma), aceite degradado, humedad y ácidos, garantizando la durabilidad del compresor nuevo <span class=\"pag\">pág. 4, 12, 13</span>.\nModalidades de ejecución:</p>\n<ul>\n<li><strong>Método A</strong>: Lavado con refrigerante R134a líquido y estación de mantenimiento de climatización <span class=\"pag\">pág. 8, 9</span>.</li>\n<li><strong>Método B</strong>: Lavado con líquido especial de lavado químico (paso 1) y purgado/secado con nitrógeno (paso 2) <span class=\"pag\">pág. 8, 10</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Identificar los componentes que NO admiten lavado: compresor, válvulas de expansión o de mariposa y filtro deshidratante o acumulador (pág. 4, 8, 12). Puentear obligatoriamente los componentes no lavables mediante adaptadores específicos antes de iniciar la circulación de fluido (pág. 8, 10).",
+     "html": "<ul>\n<li>Identificar los componentes que NO admiten lavado: compresor, válvulas de expansión o de mariposa y filtro deshidratante o acumulador <span class=\"pag\">pág. 4, 8, 12</span>.</li>\n<li>Puentear obligatoriamente los componentes no lavables mediante adaptadores específicos antes de iniciar la circulación de fluido <span class=\"pag\">pág. 8, 10</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Para Método A : Estación de mantenimiento de aire acondicionado (serie Husky para R134a), herramienta/máquina de lavado externa con depósitos transparentes o cilindro \"inspector\", y juego de adaptadores de puenteo (50 piezas) (pág. 8, 9, 10). Para Método B : Juego de lavado químico (pistola de lavado con cono resistente a ácidos, botella presurizable de 1 litro, depósito plástico de 5 litros para recogida y fluido de lavado), y juego de nitrógeno (manorreductor, adaptador universal, manguera y botella de nitrógeno) (pág. 10, 11). Componentes de sustitución obligatoria tras el lavado: filtro deshidratante/acumulador, válvula de expansión/mariposa y anillos tóricos nuevos (pág. 4, 8).",
+     "html": "<ul>\n<li><strong>Para Método A</strong>: Estación de mantenimiento de aire acondicionado (serie Husky para R134a), herramienta/máquina de lavado externa con depósitos transparentes o cilindro \"inspector\", y juego de adaptadores de puenteo (50 piezas) <span class=\"pag\">pág. 8, 9, 10</span>.</li>\n<li><strong>Para Método B</strong>: Juego de lavado químico (pistola de lavado con cono resistente a ácidos, botella presurizable de 1 litro, depósito plástico de 5 litros para recogida y fluido de lavado), y juego de nitrógeno (manorreductor, adaptador universal, manguera y botella de nitrógeno) <span class=\"pag\">pág. 10, 11</span>.</li>\n<li>Componentes de sustitución obligatoria tras el lavado: filtro deshidratante/acumulador, válvula de expansión/mariposa y anillos tóricos nuevos <span class=\"pag\">pág. 4, 8</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Pasos",
+     "texto": "Método A (Lavado con refrigerante R134a): Puentear la válvula de expansión, el filtro deshidratante y el compresor conectando los adaptadores del maletín de puenteo (pág. 8, 10). Conectar la máquina de lavado a la estación de servicio y al circuito del vehículo (pág. 9). Llenar el circuito con refrigerante R134a líquido y succionarlo a continuación mediante la estación (pág. 8). Repetir el ciclo de llenado y succión 3 veces (método \"Push-Pull\") inspeccionando los depósitos transparentes o el cilindro \"inspector\" hasta comprobar que el refrigerante sale limpio (pág. 8, 9). Método B (Lavado químico y purgado con nitrógeno): Puentear los componentes no lavables mediante adaptadores (pág. 8). Introducir la solución líquida especial de lavado químico mediante la pistola impulsada por aire comprimido (pág. 10). Recoger el líquido usado y la suciedad en el depósito plástico de recogida de 5 litros (pág. 10). Conectar el equipo de nitrógeno con el manorreductor y purgar/secar con nitrógeno todas las mangueras y componentes del circuito para eliminar por completo los restos de líquido de lavado y la humedad (pág. 8, 11). Fase final común: Desconectar los adaptadores e instalar obligatoriamente componentes nuevos: válvula de expansión/mariposa, filtro deshidratante/acumulador y anillos tóricos (pág. 4, 8).",
+     "html": "<p><strong>Método A (Lavado con refrigerante R134a):</strong></p>\n<ol>\n<li>Puentear la válvula de expansión, el filtro deshidratante y el compresor conectando los adaptadores del maletín de puenteo <span class=\"pag\">pág. 8, 10</span>.</li>\n<li>Conectar la máquina de lavado a la estación de servicio y al circuito del vehículo <span class=\"pag\">pág. 9</span>.</li>\n<li>Llenar el circuito con refrigerante R134a líquido y succionarlo a continuación mediante la estación <span class=\"pag\">pág. 8</span>.</li>\n<li>Repetir el ciclo de llenado y succión 3 veces (método \"Push-Pull\") inspeccionando los depósitos transparentes o el cilindro \"inspector\" hasta comprobar que el refrigerante sale limpio <span class=\"pag\">pág. 8, 9</span>.</li>\n</ol>\n<p><strong>Método B (Lavado químico y purgado con nitrógeno):</strong></p>\n<ol>\n<li>Puentear los componentes no lavables mediante adaptadores <span class=\"pag\">pág. 8</span>.</li>\n<li>Introducir la solución líquida especial de lavado químico mediante la pistola impulsada por aire comprimido <span class=\"pag\">pág. 10</span>.</li>\n<li>Recoger el líquido usado y la suciedad en el depósito plástico de recogida de 5 litros <span class=\"pag\">pág. 10</span>.</li>\n<li>Conectar el equipo de nitrógeno con el manorreductor y purgar/secar con nitrógeno todas las mangueras y componentes del circuito para eliminar por completo los restos de líquido de lavado y la humedad <span class=\"pag\">pág. 8, 11</span>.</li>\n</ol>\n<p><strong>Fase final común:</strong></p>\n<ol start=\"5\">\n<li>Desconectar los adaptadores e instalar obligatoriamente componentes nuevos: válvula de expansión/mariposa, filtro deshidratante/acumulador y anillos tóricos <span class=\"pag\">pág. 4, 8</span>.</li>\n</ol>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Número de ciclos de lavado requeridos en Método A: 3 veces (pág. 8). Presión máxima permitida durante el purgado/secado con nitrógeno (Método B): 12 bar máximo (pág. 11).",
+     "html": "<ul>\n<li>Número de ciclos de lavado requeridos en Método A: 3 veces <span class=\"pag\">pág. 8</span>.</li>\n<li>Presión máxima permitida durante el purgado/secado con nitrógeno (Método B): 12 bar máximo <span class=\"pag\">pág. 11</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Inspeccionar visualmente el fluido de lavado a través del visor \"inspector\" o transparente hasta comprobar la ausencia total de virutas o suciedad, y verificar el secado completo con nitrógeno sin residuos químicos en el circuito (pág. 8, 9, 11).",
+     "html": "<p>Inspeccionar visualmente el fluido de lavado a través del visor \"inspector\" o transparente hasta comprobar la ausencia total de virutas o suciedad, y verificar el secado completo con nitrógeno sin residuos químicos en el circuito <span class=\"pag\">pág. 8, 9, 11</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "No superar bajo ningún concepto los 12 bar de presión máxima durante el purgado con nitrógeno (pág. 11). Purgar y secar obligatoriamente con nitrógeno tras el lavado químico para evitar que queden residuos del disolvente que degraden el aceite nuevo del compresor (pág. 8, 10). Gestionar y eliminar los residuos del líquido limpiador de acuerdo con la normativa ambiental sobre residuos peligrosos (pág. 13).",
+     "html": "<ul>\n<li>No superar bajo ningún concepto los 12 bar de presión máxima durante el purgado con nitrógeno <span class=\"pag\">pág. 11</span>.</li>\n<li>Purgar y secar obligatoriamente con nitrógeno tras el lavado químico para evitar que queden residuos del disolvente que degraden el aceite nuevo del compresor <span class=\"pag\">pág. 8, 10</span>.</li>\n<li>Gestionar y eliminar los residuos del líquido limpiador de acuerdo con la normativa ambiental sobre residuos peligrosos <span class=\"pag\">pág. 13</span>.</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.lectura-manometros.15-diagnostico-y-averias",
    "nt": 83,
    "modulo": "ssc",
@@ -51143,6 +51226,68 @@
    ]
   },
   {
+   "id": "ssc.diagnostico-compresor.sustitucion-del-compresor-y-lavado-del-s",
+   "nt": 915,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "diagnostico-compresor",
+   "seccion": "10. Diagnóstico",
+   "subgrupo": "",
+   "titulo": "Diagnóstico de averías del compresor",
+   "codigo": "",
+   "menu": "Diagnóstico de averías del compresor",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "sustitucion-del-compresor-y-lavado-del-sistema-de-aire-acondicionadopdf-1656584251.pdf, págs. 1-3",
+   "clase": "diagnostico",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "sustitucion-compresor"
+   ],
+   "palabras": [
+    "fugas",
+    "ruidos",
+    "potencia insuficiente",
+    "código de avería",
+    "presiones"
+   ],
+   "apartados": [
+    {
+     "titulo": "Síntoma",
+     "texto": "Pérdida de estanqueidad (fugas) (pág. 2). Generación de ruidos durante el funcionamiento (pág. 2). Potencia de refrigeración reducida o insuficiente (pág. 2). Código de avería registrado en la unidad de control de climatización, unidad central o del motor (pág. 2).",
+     "html": "<ul>\n<li>Pérdida de estanqueidad (fugas) <span class=\"pag\">pág. 2</span>.</li>\n<li>Generación de ruidos durante el funcionamiento <span class=\"pag\">pág. 2</span>.</li>\n<li>Potencia de refrigeración reducida o insuficiente <span class=\"pag\">pág. 2</span>.</li>\n<li>Código de avería registrado en la unidad de control de climatización, unidad central o del motor <span class=\"pag\">pág. 2</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Causas posibles",
+     "texto": "Fallo directo en el circuito de refrigeración (pág. 5). Fallo eléctrico en la instalación o componentes de control (pág. 5). Fallo mecánico en la zona del compresor (correa de transmisión, elementos tensores defectuosos o componentes añadidos) (pág. 3, 5). Daños en los rodamientos por desgaste o tensor defectuoso (pág. 3). Fugas en el eje del compresor o en la carcasa (pág. 3). Daños mecánicos en la carcasa (pág. 3). Fallo en contactos y conexiones eléctricas (pág. 3). Avería en la válvula eléctrica de regulación (pág. 3). Falta de aceite refrigerante o falta de refrigerante (pág. 3). Presencia de sustancias sólidas (virutas, abrasión) o humedad (corrosión) (pág. 3).",
+     "html": "<ul>\n<li>Fallo directo en el circuito de refrigeración <span class=\"pag\">pág. 5</span>.</li>\n<li>Fallo eléctrico en la instalación o componentes de control <span class=\"pag\">pág. 5</span>.</li>\n<li>Fallo mecánico en la zona del compresor (correa de transmisión, elementos tensores defectuosos o componentes añadidos) <span class=\"pag\">pág. 3, 5</span>.</li>\n<li>Daños en los rodamientos por desgaste o tensor defectuoso <span class=\"pag\">pág. 3</span>.</li>\n<li>Fugas en el eje del compresor o en la carcasa <span class=\"pag\">pág. 3</span>.</li>\n<li>Daños mecánicos en la carcasa <span class=\"pag\">pág. 3</span>.</li>\n<li>Fallo en contactos y conexiones eléctricas <span class=\"pag\">pág. 3</span>.</li>\n<li>Avería en la válvula eléctrica de regulación <span class=\"pag\">pág. 3</span>.</li>\n<li>Falta de aceite refrigerante o falta de refrigerante <span class=\"pag\">pág. 3</span>.</li>\n<li>Presencia de sustancias sólidas (virutas, abrasión) o humedad (corrosión) <span class=\"pag\">pág. 3</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo separar las causas",
+     "texto": "Evaluar el compresor montado clasificando el origen del fallo entre circuito de refrigeración, fallo eléctrico o fallo mecánico en la zona del compresor (correa y componentes añadidos) (pág. 5, 6). Verificar la correa de tracción: comprobar colocación firme, tensión correcta y ausencia de daños (pág. 4). Comprobar la conexión eléctrica del acoplamiento magnético: verificar si el enchufe está conectado correctamente y si recibe tensión (pág. 4, 6). Comprobar la válvula eléctrica de regulación y su señal de accionamiento (pág. 4, 6). Realizar una inspección visual en busca de fugas o daños mecánicos en la carcasa (pág. 4, 6). Verificar el guiado y posición correcta de las tuberías de refrigerante (pág. 4). Conectar la estación de servicio y comparar las presiones de las zonas de alta y baja presión (pág. 4). Leer la memoria de averías en las unidades de control en instalaciones modernas (pág. 5).",
+     "html": "<ol>\n<li>Evaluar el compresor montado clasificando el origen del fallo entre circuito de refrigeración, fallo eléctrico o fallo mecánico en la zona del compresor (correa y componentes añadidos) <span class=\"pag\">pág. 5, 6</span>.</li>\n<li>Verificar la correa de tracción: comprobar colocación firme, tensión correcta y ausencia de daños <span class=\"pag\">pág. 4</span>.</li>\n<li>Comprobar la conexión eléctrica del acoplamiento magnético: verificar si el enchufe está conectado correctamente y si recibe tensión <span class=\"pag\">pág. 4, 6</span>.</li>\n<li>Comprobar la válvula eléctrica de regulación y su señal de accionamiento <span class=\"pag\">pág. 4, 6</span>.</li>\n<li>Realizar una inspección visual en busca de fugas o daños mecánicos en la carcasa <span class=\"pag\">pág. 4, 6</span>.</li>\n<li>Verificar el guiado y posición correcta de las tuberías de refrigerante <span class=\"pag\">pág. 4</span>.</li>\n<li>Conectar la estación de servicio y comparar las presiones de las zonas de alta y baja presión <span class=\"pag\">pág. 4</span>.</li>\n<li>Leer la memoria de averías en las unidades de control en instalaciones modernas <span class=\"pag\">pág. 5</span>.</li>\n</ol>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Verificación tras la reparación",
+     "texto": "Realizar la comprobación visual y de presiones antes de decidir el desmontaje del compresor; si no es correcto, proceder a purgar el refrigerante y desmontar el compresor para su sustitución y lavado del sistema (pág. 6).",
+     "html": "<p>Realizar la comprobación visual y de presiones antes de decidir el desmontaje del compresor; si no es correcto, proceder a purgar el refrigerante y desmontar el compresor para su sustitución y lavado del sistema <span class=\"pag\">pág. 6</span>.</p>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.sustitucion-compresor.zz15-diagnostico-y-averias",
    "nt": 353,
    "modulo": "ssc",
@@ -51615,6 +51760,89 @@
      "titulo": "Verificación final",
      "texto": "Comprobar las presiones de trabajo en alta y baja, verificar la estanqueidad, realizar una conducción de prueba y cumplimentar la documentación del servicio (pág. 3, 4).",
      "html": "<p>Comprobar las presiones de trabajo en alta y baja, verificar la estanqueidad, realizar una conducción de prueba y cumplimentar la documentación del servicio <span class=\"pag\">pág. 3, 4</span>.</p>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.sustitucion-compresor.sustitucion-del-compresor-y-lavado-del-s",
+   "nt": 916,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sustitucion-compresor",
+   "seccion": "10. Diagnóstico",
+   "subgrupo": "",
+   "titulo": "Sustitución del compresor de aire acondicionado",
+   "codigo": "",
+   "menu": "Sustitución del compresor de aire acon",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "sustitucion-del-compresor-y-lavado-del-sistema-de-aire-acondicionadopdf-1656584251.pdf, págs. 1-7, 10-15",
+   "clase": "procedimiento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "lavado-circuito",
+    "filtro-deshidratador",
+    "valvula-expansion"
+   ],
+   "palabras": [
+    "purgar refrigerante",
+    "aceite compresor",
+    "vaciado y llenado",
+    "10 vueltas",
+    "vacio y carga",
+    "boquilla central"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Procedimiento completo para el desmontaje, sustitución, ajuste de lubricante y puesta en marcha de un compresor de aire acondicionado, incluyendo el lavado preventivo del circuito y el reemplazo de componentes no lavables (pág. 1, 6, 7).",
+     "html": "<p>Procedimiento completo para el desmontaje, sustitución, ajuste de lubricante y puesta en marcha de un compresor de aire acondicionado, incluyendo el lavado preventivo del circuito y el reemplazo de componentes no lavables <span class=\"pag\">pág. 1, 6, 7</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Confirmar la avería mediante el análisis de fallos en el compresor montado (pág. 5, 6). Purgar el refrigerante del circuito utilizando la estación de servicio (pág. 6). Inspeccionar el sistema para detectar suciedad, sustancias sólidas (virutas) o falta de permeabilidad (pág. 6).",
+     "html": "<ul>\n<li>Confirmar la avería mediante el análisis de fallos en el compresor montado <span class=\"pag\">pág. 5, 6</span>.</li>\n<li>Purgar el refrigerante del circuito utilizando la estación de servicio <span class=\"pag\">pág. 6</span>.</li>\n<li>Inspeccionar el sistema para detectar suciedad, sustancias sólidas (virutas) o falta de permeabilidad <span class=\"pag\">pág. 6</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Estación de servicio de climatización (pág. 8, 13). Compresor nuevo o reparado (pág. 7). Aceite para refrigerantes (con viscosidad y cantidad indicadas por el fabricante del vehículo) (pág. 2, 7, 10, 11). Válvula de expansión, de mariposa (tubo de orificio), filtro deshidratante o acumulador nuevos (pág. 7). Anillos tóricos nuevos (pág. 7, 16). Tamiz filtrante para el conducto de succión del compresor (opcional en caso de suciedad residual) (pág. 8, 12). Refrigerante especificado y aditivo colorante/elemento de contraste UV (pág. 8, 9, 13, 15). Pegatina del servicio de climatización (pág. 9).",
+     "html": "<ul>\n<li>Estación de servicio de climatización <span class=\"pag\">pág. 8, 13</span>.</li>\n<li>Compresor nuevo o reparado <span class=\"pag\">pág. 7</span>.</li>\n<li>Aceite para refrigerantes (con viscosidad y cantidad indicadas por el fabricante del vehículo) <span class=\"pag\">pág. 2, 7, 10, 11</span>.</li>\n<li>Válvula de expansión, de mariposa (tubo de orificio), filtro deshidratante o acumulador nuevos <span class=\"pag\">pág. 7</span>.</li>\n<li>Anillos tóricos nuevos <span class=\"pag\">pág. 7, 16</span>.</li>\n<li>Tamiz filtrante para el conducto de succión del compresor (opcional en caso de suciedad residual) <span class=\"pag\">pág. 8, 12</span>.</li>\n<li>Refrigerante especificado y aditivo colorante/elemento de contraste UV <span class=\"pag\">pág. 8, 9, 13, 15</span>.</li>\n<li>Pegatina del servicio de climatización <span class=\"pag\">pág. 9</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Pasos",
+     "texto": "Purgar el refrigerante del circuito y desmontar el compresor averiado (pág. 6). Comprobar la presencia de suciedad o virutas en el circuito y lavar obligatoriamente todo el sistema de aire acondicionado (pág. 6, 9). Sustituir obligatoriamente la válvula de expansión o de mariposa, el filtro deshidratante o acumulador y todos los anillos tóricos (humedeciendo los anillos tóricos con aceite para refrigerantes antes de instalarlos) (pág. 6, 7, 16). Comprobar la cantidad y viscosidad del aceite en el compresor nuevo: purgar todo el aceite contenido en el compresor, recogerlo y volver a rellenarlo con la cantidad total especificada por el fabricante del vehículo (pág. 2, 7, 11). Girar el compresor 10 veces manualmente antes de su montaje para repartir el aceite de forma uniforme (pág. 11). Si persistiera riesgo de impurezas tras el lavado, instalar un tamiz filtrante en el conducto de succión del compresor (pág. 8, 12). Montar el compresor nuevo o reparado en el vehículo (pág. 7). Conectar la estación de servicio, generar vacío respetando el tiempo de vaciado indicado por el fabricante y realizar el test de estanqueidad (pág. 8). Rellenar el refrigerante con la estación de servicio exclusivamente a través de la toma lateral de alta presión para evitar que el refrigerante líquido golpee directamente en el compresor (pág. 8, 13). Añadir el colorante UV en la cantidad adecuada (pág. 9, 15). Posicionar la distribución de aire en \"Boquilla central\" abriendo todas las boquillas centrales, colocar el botón del ventilador en posición media y seleccionar la máxima potencia de refrigeración (frío) (pág. 14). Arrancar el motor (sin encender el aire acondicionado) y dejarlo funcionando al ralentí durante 2 minutos sin interrupción (pág. 14). Encender el aire acondicionado al ralentí durante 10 segundos y apagarlo durante 10 segundos, repitiendo este ciclo 5 veces como mínimo (pág. 14). Comprobar la presión del sistema, verificar la estanqueidad y realizar la comprobación general de la instalación (pág. 8, 15). Colocar la pegatina del servicio de climatización, realizar una conducción de prueba y documentar el trabajo realizado (incluyendo el uso de colorante) (pág. 9, 15).",
+     "html": "<ol>\n<li>Purgar el refrigerante del circuito y desmontar el compresor averiado <span class=\"pag\">pág. 6</span>.</li>\n<li>Comprobar la presencia de suciedad o virutas en el circuito y lavar obligatoriamente todo el sistema de aire acondicionado <span class=\"pag\">pág. 6, 9</span>.</li>\n<li>Sustituir obligatoriamente la válvula de expansión o de mariposa, el filtro deshidratante o acumulador y todos los anillos tóricos (humedeciendo los anillos tóricos con aceite para refrigerantes antes de instalarlos) <span class=\"pag\">pág. 6, 7, 16</span>.</li>\n<li>Comprobar la cantidad y viscosidad del aceite en el compresor nuevo: purgar todo el aceite contenido en el compresor, recogerlo y volver a rellenarlo con la cantidad total especificada por el fabricante del vehículo <span class=\"pag\">pág. 2, 7, 11</span>.</li>\n<li>Girar el compresor 10 veces manualmente antes de su montaje para repartir el aceite de forma uniforme <span class=\"pag\">pág. 11</span>.</li>\n<li>Si persistiera riesgo de impurezas tras el lavado, instalar un tamiz filtrante en el conducto de succión del compresor <span class=\"pag\">pág. 8, 12</span>.</li>\n<li>Montar el compresor nuevo o reparado en el vehículo <span class=\"pag\">pág. 7</span>.</li>\n<li>Conectar la estación de servicio, generar vacío respetando el tiempo de vaciado indicado por el fabricante y realizar el test de estanqueidad <span class=\"pag\">pág. 8</span>.</li>\n<li>Rellenar el refrigerante con la estación de servicio exclusivamente a través de la toma lateral de alta presión para evitar que el refrigerante líquido golpee directamente en el compresor <span class=\"pag\">pág. 8, 13</span>. Añadir el colorante UV en la cantidad adecuada <span class=\"pag\">pág. 9, 15</span>.</li>\n<li>Posicionar la distribución de aire en \"Boquilla central\" abriendo todas las boquillas centrales, colocar el botón del ventilador en posición media y seleccionar la máxima potencia de refrigeración (frío) <span class=\"pag\">pág. 14</span>.</li>\n<li>Arrancar el motor (sin encender el aire acondicionado) y dejarlo funcionando al ralentí durante 2 minutos sin interrupción <span class=\"pag\">pág. 14</span>.</li>\n<li>Encender el aire acondicionado al ralentí durante 10 segundos y apagarlo durante 10 segundos, repitiendo este ciclo 5 veces como mínimo <span class=\"pag\">pág. 14</span>.</li>\n<li>Comprobar la presión del sistema, verificar la estanqueidad y realizar la comprobación general de la instalación <span class=\"pag\">pág. 8, 15</span>.</li>\n<li>Colocar la pegatina del servicio de climatización, realizar una conducción de prueba y documentar el trabajo realizado (incluyendo el uso de colorante) <span class=\"pag\">pág. 9, 15</span>.</li>\n</ol>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Giros manuales previos del compresor para homogeneizar el aceite: 10 vueltas (pág. 11). Tiempo de funcionamiento del motor al ralentí antes de activar el A/C: 2 minutos sin interrupción (pág. 14). Ciclo de adaptación tras la carga: 10 segundos A/C encendido / 10 segundos A/C apagado, repetido 5 veces como mínimo (pág. 14). Distribución media porcentual del aceite en el circuito: compresor (50%), condensador (20%), evaporador (10%), filtro deshidratante/acumulador (10%), tubos/mangueras (10%) (pág. 10, 12).",
+     "html": "<ul>\n<li>Giros manuales previos del compresor para homogeneizar el aceite: 10 vueltas <span class=\"pag\">pág. 11</span>.</li>\n<li>Tiempo de funcionamiento del motor al ralentí antes de activar el A/C: 2 minutos sin interrupción <span class=\"pag\">pág. 14</span>.</li>\n<li>Ciclo de adaptación tras la carga: 10 segundos A/C encendido / 10 segundos A/C apagado, repetido 5 veces como mínimo <span class=\"pag\">pág. 14</span>.</li>\n<li>Distribución media porcentual del aceite en el circuito: compresor (50%), condensador (20%), evaporador (10%), filtro deshidratante/acumulador (10%), tubos/mangueras (10%) <span class=\"pag\">pág. 10, 12</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Comprobar la presión de la zona de alta y baja, realizar el test de estanqueidad, efectuar la conducción de prueba y colocar la pegatina de servicio con los datos documentados (pág. 8, 9, 15).",
+     "html": "<p>Comprobar la presión de la zona de alta y baja, realizar el test de estanqueidad, efectuar la conducción de prueba y colocar la pegatina de servicio con los datos documentados <span class=\"pag\">pág. 8, 9, 15</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Cargar el refrigerante únicamente por la toma de alta presión para evitar que el líquido llegue directamente al compresor y provoque daños hidráulicos (pág. 13). Renovar y humedecer siempre los anillos tóricos con aceite para refrigerantes antes de su montaje (pág. 16). Registrar de forma estricta la aplicación de colorante UV para evitar sobrepasarlo y causar daños mecánicos en el compresor (pág. 15).",
+     "html": "<ul>\n<li>Cargar el refrigerante únicamente por la toma de alta presión para evitar que el líquido llegue directamente al compresor y provoque daños hidráulicos <span class=\"pag\">pág. 13</span>.</li>\n<li>Renovar y humedecer siempre los anillos tóricos con aceite para refrigerantes antes de su montaje <span class=\"pag\">pág. 16</span>.</li>\n<li>Registrar de forma estricta la aplicación de colorante UV para evitar sobrepasarlo y causar daños mecánicos en el compresor <span class=\"pag\">pág. 15</span>.</li>\n</ul>",
      "nivel": ""
     }
    ]
