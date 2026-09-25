@@ -3658,6 +3658,14 @@
    "hecha": false
   },
   {
+   "nombre": "NT722_01",
+   "nt": 722,
+   "titulo": "Depósito colector",
+   "seccion": "6. Expansión y lado de baja",
+   "descripcion": "Esquema en sección del depósito colector indicando la caperuza de plástico, la entrada del evaporador, la salida al compresor, el deshidratador, el tubo en U, el tamiz filtrante y el taladro para aceite — Fuente: Depósito colector.pdf, pág. 31 (pág. 31).",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -3682,7 +3690,7 @@
    "hecha": false
   }
  ],
- "total": 713,
+ "total": 714,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -18101,6 +18109,71 @@
      "titulo": "Imágenes requeridas",
      "texto": "Detalle en sección de un vaso de expansión / acumulador en baja presión con tubo en U y orificio de retroceso de aceite — Fuente: 4. CIRCUITO FRIGORÍGENO 5 AL.pptx, pág. 70 (pág. 70).",
      "html": "<ul>\n<li>Detalle en sección de un vaso de expansión / acumulador en baja presión con tubo en U y orificio de retroceso de aceite — Fuente: 4. CIRCUITO FRIGORÍGENO 5  AL.pptx, pág. 70 <span class=\"pag\">pág. 70</span>.</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.deposito-colector.deposito-colector",
+   "nt": 722,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "deposito-colector",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "",
+   "titulo": "Depósito colector",
+   "codigo": "",
+   "menu": "Depósito colector",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Depósito colector.pdf, págs. 30-31",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "estrangulador",
+    "compresor",
+    "evaporador",
+    "aceite-frigorifico"
+   ],
+   "palabras": [
+    "depósito de expansión",
+    "reevaporación",
+    "tubo en U",
+    "deshidratador",
+    "caperuza de plástico"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Servir como depósito de expansión y acumulador para el agente frigorífico y el aceite lubricante, además de proteger mecánicamente al compresor reteniendo la humedad e impidiendo la aspiración de líquido (pág. 31).",
+     "html": "<p>Servir como depósito de expansión y acumulador para el agente frigorífico y el aceite lubricante, además de proteger mecánicamente al compresor reteniendo la humedad e impidiendo la aspiración de líquido <span class=\"pag\">pág. 31</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Se ubica en el lado de baja presión de las instalaciones con estrangulador, instalado en una zona caliente del vano motor para facilitar la reevaporación (pág. 31). Consta de una carcasa cilíndrica con caperuza de plástico en la parte superior, deshidratador integrado, tubo en U para la aspiración de gas, taladro de retorno de aceite con tamiz filtrante en el fondo y tapones de cierre en las conexiones para el transporte (pág. 31).",
+     "html": "<ul>\n<li>Se ubica en el lado de baja presión de las instalaciones con estrangulador, instalado en una zona caliente del vano motor para facilitar la reevaporación <span class=\"pag\">pág. 31</span>.</li>\n<li>Consta de una carcasa cilíndrica con caperuza de plástico en la parte superior, deshidratador integrado, tubo en U para la aspiración de gas, taladro de retorno de aceite con tamiz filtrante en el fondo y tapones de cierre en las conexiones para el transporte <span class=\"pag\">pág. 31</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El agente frigorífico gaseoso procedente del evaporador penetra en el depósito colector, donde el deshidratador integrado absorbe las trazas de humedad. El refrigerante gaseoso se acumula en la parte superior bajo la caperuza de plástico y es aspirado hacia el compresor a través del tubo en U, asegurando que solo entre gas sin gotas de líquido. El aceite de lubricación se deposita en el fondo y es arrastrado de forma progresiva por el gas a través del taladro del tubo en U, contando con un tamiz filtrante que impide el paso de impurezas (pág. 31).",
+     "html": "<p>El agente frigorífico gaseoso procedente del evaporador penetra en el depósito colector, donde el deshidratador integrado absorbe las trazas de humedad. El refrigerante gaseoso se acumula en la parte superior bajo la caperuza de plástico y es aspirado hacia el compresor a través del tubo en U, asegurando que solo entre gas sin gotas de líquido. El aceite de lubricación se deposita en el fondo y es arrastrado de forma progresiva por el gas a través del taladro del tubo en U, contando con un tamiz filtrante que impide el paso de impurezas <span class=\"pag\">pág. 31</span>.</p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Mantener el depósito colector cerrado con sus tapones de protección en los empalmes hasta el momento previo a su montaje, para evitar que el deshidratador absorba humedad del aire ambiental (pág. 31).",
+     "html": "<p>Mantener el depósito colector cerrado con sus tapones de protección en los empalmes hasta el momento previo a su montaje, para evitar que el deshidratador absorba humedad del aire ambiental <span class=\"pag\">pág. 31</span>.</p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema en sección del depósito colector indicando la caperuza de plástico, la entrada del evaporador, la salida al compresor, el deshidratador, el tubo en U, el tamiz filtrante y el taladro para aceite — Fuente: Depósito colector.pdf, pág. 31 (pág. 31).",
+     "html": "<ul>\n<li>Esquema en sección del depósito colector indicando la caperuza de plástico, la entrada del evaporador, la salida al compresor, el deshidratador, el tubo en U, el tamiz filtrante y el taladro para aceite — Fuente: Depósito colector.pdf, pág. 31 <span class=\"pag\">pág. 31</span>.</li>\n</ul>"
     }
    ]
   },
