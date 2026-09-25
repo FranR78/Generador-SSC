@@ -4506,7 +4506,7 @@
    "hecha": false
   }
  ],
- "total": 845,
+ "total": 849,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -26561,6 +26561,178 @@
    ]
   },
   {
+   "id": "ssc.presostato.baja-presion-f73.audi-100-1991-climatizador",
+   "nt": 856,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "presostato-binary-trinary-cuatrinary",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Interruptor de baja presión para climatizador F73",
+   "codigo": "F73",
+   "menu": "Interruptor de baja presión pa F73",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Audi 100_1991_Climatizador.pdf, págs. 26, 92",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "baja-presion-f73",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "embrague-compresor",
+    "presostato"
+   ],
+   "palabras": [
+    "F73",
+    "baja presión",
+    "2 bares",
+    "desconexión por fuga",
+    "circuito frigorífico"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Desconectar mecánicamente el acoplamiento magnético del compresor cuando la presión del agente frigorífico desciende por debajo del umbral mínimo de seguridad para evitar que el compresor trabaje sin lubricación. (pág. 26)",
+     "html": "<p>Desconectar mecánicamente el acoplamiento magnético del compresor cuando la presión del agente frigorífico desciende por debajo del umbral mínimo de seguridad para evitar que el compresor trabaje sin lubricación. <span class=\"pag\">pág. 26</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Interruptor de presión hidromecánico de contactos normalmente cerrados en rango de trabajo, montado sobre una toma con válvula en el lado de baja presión. (págs. 26, 92)",
+     "html": "<p>Interruptor de presión hidromecánico de contactos normalmente cerrados en rango de trabajo, montado sobre una toma con válvula en el lado de baja presión. <span class=\"pag\">págs. 26, 92</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Mide la presión de la línea de baja. En condiciones normales de carga de refrigerante, la presión mantiene sus contactos cerrados permitiendo el paso de corriente hacia el acoplamiento del compresor. Si la presión cae por debajo de aprox. 2 bares (0,2 MPa) debido a una pérdida de gas o fuga, la fuerza del muelle interno abre los contactos e interrumpe el funcionamiento del compresor. (pág. 26)",
+     "html": "<p>Mide la presión de la línea de baja. En condiciones normales de carga de refrigerante, la presión mantiene sus contactos cerrados permitiendo el paso de corriente hacia el acoplamiento del compresor. Si la presión cae por debajo de aprox. 2 bares (0,2 MPa) debido a una pérdida de gas o fuga, la fuerza del muelle interno abre los contactos e interrumpe el funcionamiento del compresor. <span class=\"pag\">pág. 26</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Umbral de desconexión por baja presión: aprox. 2 bares (0,2 MPa). (pág. 26)",
+     "html": "<ul>\n<li>Umbral de desconexión por baja presión: aprox. 2 bares (0,2 MPa). <span class=\"pag\">pág. 26</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fugas por la junta de sellado del empalme o fallo de contacto interno por vibraciones. (págs. 26, 92)",
+     "html": "<p>Fugas por la junta de sellado del empalme o fallo de contacto interno por vibraciones. <span class=\"pag\">págs. 26, 92</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Imposibilidad de acoplar el compresor a pesar de seleccionar la función de refrigeración en el cuadro de mandos. (págs. 26, 92)",
+     "html": "<p>Imposibilidad de acoplar el compresor a pesar de seleccionar la función de refrigeración en el cuadro de mandos. <span class=\"pag\">págs. 26, 92</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Medir la continuidad eléctrica entre sus terminales con el circuito cargado o puentear sus contactos en la clavija del mazo para verificar el acoplamiento del compresor durante las pruebas de diagnóstico. (págs. 26, 92)",
+     "html": "<p>Medir la continuidad eléctrica entre sus terminales con el circuito cargado o puentear sus contactos en la clavija del mazo para verificar el acoplamiento del compresor durante las pruebas de diagnóstico. <span class=\"pag\">págs. 26, 92</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Se puede desatornillar y sustituir sin evacuar la carga de refrigerante gracias a la válvula de retención del racor de servicio. (pág. 92)",
+     "html": "<p>Se puede desatornillar y sustituir sin evacuar la carga de refrigerante gracias a la válvula de retención del racor de servicio. <span class=\"pag\">pág. 92</span></p>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.presostato.alta-presion-f118.audi-100-1991-climatizador",
+   "nt": 857,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "presostato-binary-trinary-cuatrinary",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Conmutador de alta presión para acoplamiento magnético F118",
+   "codigo": "F118",
+   "menu": "Conmutador de alta presión par F118",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Audi 100_1991_Climatizador.pdf, págs. 26, 92",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "alta-presion-f118",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "embrague-compresor",
+    "presostato"
+   ],
+   "palabras": [
+    "F118",
+    "alta presión",
+    "32 bares",
+    "sobrepresión",
+    "corte de seguridad"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Desconectar el acoplamiento magnético del compresor cuando la presión en el lado de alta supera los límites mecánicos de seguridad para evitar la rotura de latiguillos o disparos de la válvula de sobrepresión. (pág. 26)",
+     "html": "<p>Desconectar el acoplamiento magnético del compresor cuando la presión en el lado de alta supera los límites mecánicos de seguridad para evitar la rotura de latiguillos o disparos de la válvula de sobrepresión. <span class=\"pag\">pág. 26</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Presostato de alta presión de corte hidromecánico montado sobre toma con válvula en la tubería de alta presión. (págs. 26, 92)",
+     "html": "<p>Presostato de alta presión de corte hidromecánico montado sobre toma con válvula en la tubería de alta presión. <span class=\"pag\">págs. 26, 92</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Sus contactos permanecen cerrados durante el funcionamiento en presiones normales. Si la alta presión se eleva en exceso alcanzando aprox. 32 bares (3,2 MPa) por sobrecalentamiento o fallo de ventilación en el condensador, la presión interna vence el resorte calibrado y abre el circuito cortando la alimentación del compresor. (pág. 26)",
+     "html": "<p>Sus contactos permanecen cerrados durante el funcionamiento en presiones normales. Si la alta presión se eleva en exceso alcanzando aprox. 32 bares (3,2 MPa) por sobrecalentamiento o fallo de ventilación en el condensador, la presión interna vence el resorte calibrado y abre el circuito cortando la alimentación del compresor. <span class=\"pag\">pág. 26</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Umbral de desconexión por sobrepresión: aprox. 32 bares (3,2 MPa). (pág. 26)",
+     "html": "<ul>\n<li>Umbral de desconexión por sobrepresión: aprox. 32 bares (3,2 MPa). <span class=\"pag\">pág. 26</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Sulfatación de terminales o agarrotamiento del diafragma por picos continuos de sobrepresión. (pág. 26)",
+     "html": "<p>Sulfatación de terminales o agarrotamiento del diafragma por picos continuos de sobrepresión. <span class=\"pag\">pág. 26</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Desconexión repentina del aire acondicionado en tráfico urbano o días calurosos. (págs. 26, 92)",
+     "html": "<p>Desconexión repentina del aire acondicionado en tráfico urbano o días calurosos. <span class=\"pag\">págs. 26, 92</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Verificar la continuidad entre sus bornes a presión de trabajo normal (< 20 bares) y comprobar si abre al aproximarse a presiones elevadas. (págs. 26, 92)",
+     "html": "<p>Verificar la continuidad entre sus bornes a presión de trabajo normal (&lt; 20 bares) y comprobar si abre al aproximarse a presiones elevadas. <span class=\"pag\">págs. 26, 92</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Asegurar el correcto apriete al sustituirlo sobre la toma presurizada dotada de válvula interna. (pág. 92)",
+     "html": "<p>Asegurar el correcto apriete al sustituirlo sobre la toma presurizada dotada de válvula interna. <span class=\"pag\">pág. 92</span></p>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.transmisor-presion.2-introduccion-a-la-refrigeracion",
    "nt": 14,
    "modulo": "ssc",
@@ -45066,6 +45238,89 @@
      "titulo": "Seguridad y normativa",
      "texto": "Recuperar y desecho de los posos de aceite contaminado retirados en la estación de limpieza según la normativa medioambiental para residuos especiales. (pág. 23)",
      "html": "<p>Recuperar y desecho de los posos de aceite contaminado retirados en la estación de limpieza según la normativa medioambiental para residuos especiales. <span class=\"pag\">pág. 23</span></p>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.lavado-circuito.audi-100-1991-climatizador",
+   "nt": 854,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "lavado-circuito",
+   "seccion": "9. Taller: recuperación, vacío y carga",
+   "subgrupo": "",
+   "titulo": "Enjuague del circuito frigorífico con R134a",
+   "codigo": "",
+   "menu": "Enjuague del circuito frigorífico con",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Audi 100_1991_Climatizador.pdf, págs. 54-61",
+   "clase": "procedimiento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r134a",
+    "aceite-frigorifico",
+    "compresor",
+    "filtro-deshidratador"
+   ],
+   "palabras": [
+    "enjuague",
+    "R134a",
+    "estación de servicio",
+    "impurezas",
+    "virutas",
+    "humedad"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Eliminar la humedad, aceites envejecidos e impurezas (como virutas o restos de abrasión de un compresor averiado) del interior del circuito frigorífico haciendo circular R134a en estado líquido. (págs. 54, 57)",
+     "html": "<p>Eliminar la humedad, aceites envejecidos e impurezas (como virutas o restos de abrasión de un compresor averiado) del interior del circuito frigorífico haciendo circular R134a en estado líquido. <span class=\"pag\">págs. 54, 57</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Estación de servicio para aire acondicionado dotada de dispositivo de enjuague y con un mínimo de 7 kg de agente frigorífico R134a en su botella. (pág. 56) Circuito frigorífico previamente vaciado de gas. (pág. 55) Compresor desmontado del circuito. (pág. 55) Estrangulador o válvula de expansión desmontados y puenteados con sus adaptadores específicos del maletín VAS 6338/1. (págs. 55, 57) Depósito colector o de líquido desmontado y sustituido por la manguera de puenteo VAS 6338/31 y sus adaptadores. (págs. 55, 57)",
+     "html": "<ol>\n<li>Estación de servicio para aire acondicionado dotada de dispositivo de enjuague y con un mínimo de 7 kg de agente frigorífico R134a en su botella. <span class=\"pag\">pág. 56</span></li>\n<li>Circuito frigorífico previamente vaciado de gas. <span class=\"pag\">pág. 55</span></li>\n<li>Compresor desmontado del circuito. <span class=\"pag\">pág. 55</span></li>\n<li>Estrangulador o válvula de expansión desmontados y puenteados con sus adaptadores específicos del maletín VAS 6338/1. <span class=\"pag\">págs. 55, 57</span></li>\n<li>Depósito colector o de líquido desmontado y sustituido por la manguera de puenteo VAS 6338/31 y sus adaptadores. <span class=\"pag\">págs. 55, 57</span></li>\n</ol>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Estación de servicio con programa/módulo de enjuague, maletín de adaptadores VAS 6338/1, manguera de llenado corta de gran diámetro interior y depósito para recogida de aceite usado. (págs. 54-56)",
+     "html": "<p>Estación de servicio con programa/módulo de enjuague, maletín de adaptadores VAS 6338/1, manguera de llenado corta de gran diámetro interior y depósito para recogida de aceite usado. <span class=\"pag\">págs. 54-56</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Pasos",
+     "texto": "Vaciar completamente el agente frigorífico del circuito del vehículo. (pág. 55) Desmontar el compresor, el estrangulador (o válvula de expansión) y el depósito colector (o de líquido). (pág. 55) Interconectar las tuberías abiertas instalando los adaptadores correspondientes del maletín VAS 6338/1 y la manguera de llenado. (págs. 55, 57) Conectar las mangueras de la estación de servicio al circuito en sentido opuesto al flujo normal de trabajo (inyectando líquido por el lado de alta presión hacia el lado de baja presión del vehículo). (págs. 57-58) Activar la calefacción de la botella de refrigerante de la estación de servicio antes del inicio para incrementar la presión de inyección. (pág. 56) Iniciar el programa automático de enjuague (consta de 3 ciclos de inyección de R134a líquido y posterior aspiración). (págs. 56, 58) Controlar la mirilla del dispositivo de enjuague hasta verificar la transparencia del fluido sin sedimentos ni virutas. (págs. 57-58) Vaciar el depósito de aceite usado de la estación si se llena durante los ciclos. (pág. 56) Una vez completado el enjuague, evacuar el circuito durante al menos 30 minutos. (pág. 46) Montar un estrangulador/válvula de expansión nuevo, un depósito secador nuevo y el compresor con su carga de aceite corregida antes de efectuar la recarga final. (págs. 52, 59, 127)",
+     "html": "<ol>\n<li>Vaciar completamente el agente frigorífico del circuito del vehículo. <span class=\"pag\">pág. 55</span></li>\n<li>Desmontar el compresor, el estrangulador (o válvula de expansión) y el depósito colector (o de líquido). <span class=\"pag\">pág. 55</span></li>\n<li>Interconectar las tuberías abiertas instalando los adaptadores correspondientes del maletín VAS 6338/1 y la manguera de llenado. <span class=\"pag\">págs. 55, 57</span></li>\n<li>Conectar las mangueras de la estación de servicio al circuito en sentido opuesto al flujo normal de trabajo (inyectando líquido por el lado de alta presión hacia el lado de baja presión del vehículo). <span class=\"pag\">págs. 57-58</span></li>\n<li>Activar la calefacción de la botella de refrigerante de la estación de servicio antes del inicio para incrementar la presión de inyección. <span class=\"pag\">pág. 56</span></li>\n<li>Iniciar el programa automático de enjuague (consta de 3 ciclos de inyección de R134a líquido y posterior aspiración). <span class=\"pag\">págs. 56, 58</span></li>\n<li>Controlar la mirilla del dispositivo de enjuague hasta verificar la transparencia del fluido sin sedimentos ni virutas. <span class=\"pag\">págs. 57-58</span></li>\n<li>Vaciar el depósito de aceite usado de la estación si se llena durante los ciclos. <span class=\"pag\">pág. 56</span></li>\n<li>Una vez completado el enjuague, evacuar el circuito durante al menos 30 minutos. <span class=\"pag\">pág. 46</span></li>\n<li>Montar un estrangulador/válvula de expansión nuevo, un depósito secador nuevo y el compresor con su carga de aceite corregida antes de efectuar la recarga final. <span class=\"pag\">págs. 52, 59, 127</span></li>\n</ol>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Carga mínima de R134a en la estación para iniciar el enjuague: 7 kg. (pág. 56) Número de ciclos automáticos de enjuague: 3 ciclos. (pág. 56) Tiempo de evacuación/vacío tras enjuague: mínimo 30 minutos (depresión < 10 mbar). (pág. 46)",
+     "html": "<ul>\n<li>Carga mínima de R134a en la estación para iniciar el enjuague: 7 kg. <span class=\"pag\">pág. 56</span></li>\n<li>Número de ciclos automáticos de enjuague: 3 ciclos. <span class=\"pag\">pág. 56</span></li>\n<li>Tiempo de evacuación/vacío tras enjuague: mínimo 30 minutos (depresión &lt; 10 mbar). <span class=\"pag\">pág. 46</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Comprobar en la mirilla transparente que el refrigerante extraído sale exento de aceite oscuro o partículas sólidas, y verificar la estanqueidad tras la reconstrucción del circuito. (págs. 46, 57)",
+     "html": "<p>Comprobar en la mirilla transparente que el refrigerante extraído sale exento de aceite oscuro o partículas sólidas, y verificar la estanqueidad tras la reconstrucción del circuito. <span class=\"pag\">págs. 46, 57</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Queda prohibido evacuar R134a a la atmósfera. Trabajar con gafas y guantes de protección. El aceite usado extraído debe gestionarse como residuo peligroso controlado. (págs. 8, 37, 40)",
+     "html": "<p>Queda prohibido evacuar R134a a la atmósfera. Trabajar con gafas y guantes de protección. El aceite usado extraído debe gestionarse como residuo peligroso controlado. <span class=\"pag\">págs. 8, 37, 40</span></p>",
      "nivel": ""
     }
    ]
@@ -68657,6 +68912,87 @@
      "titulo": "Seguridad y normativa",
      "texto": "Recoger todo el combustible en recipientes herméticos homologados. No fumar ni generar chispas en la zona de trabajo. (pág. 101)",
      "html": "<p>Recoger todo el combustible en recipientes herméticos homologados. No fumar ni generar chispas en la zona de trabajo. <span class=\"pag\">pág. 101</span></p>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.limpieza-circuito.audi-100-1991-climatizador",
+   "nt": 855,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "limpieza-circuito",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Barrido del circuito frigorífico con aire comprimido y nitrógeno",
+   "codigo": "",
+   "menu": "Barrido del circuito frigorífico con a",
+   "grupo": "Equipos de taller",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Audi 100_1991_Climatizador.pdf, págs. 50-53",
+   "clase": "procedimiento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "equipos-taller",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r134a",
+    "aceite-frigorifico"
+   ],
+   "palabras": [
+    "barrido",
+    "nitrógeno",
+    "aire comprimido",
+    "secado",
+    "reductor de presión",
+    "15 bares"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Limpiar y secar canalizaciones o componentes individuales del circuito frigorífico expulsando humedad y suciedad mediante flujo de aire comprimido seco y nitrógeno presurizado. (págs. 50-51)",
+     "html": "<p>Limpiar y secar canalizaciones o componentes individuales del circuito frigorífico expulsando humedad y suciedad mediante flujo de aire comprimido seco y nitrógeno presurizado. <span class=\"pag\">págs. 50-51</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Circuito totalmente libre de agente frigorífico. (pág. 50) Compresor, estrangulador / válvula de expansión y depósito secador desmontados de la línea. (págs. 51-52) Aire comprimido filtrado a través de una unidad de deshidratación y decantación de aceite (calidad de aire para pintura). (pág. 51)",
+     "html": "<ol>\n<li>Circuito totalmente libre de agente frigorífico. <span class=\"pag\">pág. 50</span></li>\n<li>Compresor, estrangulador / válvula de expansión y depósito secador desmontados de la línea. <span class=\"pag\">págs. 51-52</span></li>\n<li>Aire comprimido filtrado a través de una unidad de deshidratación y decantación de aceite (calidad de aire para pintura). <span class=\"pag\">pág. 51</span></li>\n</ol>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Botella de nitrógeno con reductor de presión regulable, unidad de filtrado y secado de aire comprimido, kit de adaptadores V.A.G 1785 o pistola de aire con boquilla de goma. (págs. 50-51)",
+     "html": "<p>Botella de nitrógeno con reductor de presión regulable, unidad de filtrado y secado de aire comprimido, kit de adaptadores V.A.G 1785 o pistola de aire con boquilla de goma. <span class=\"pag\">págs. 50-51</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Pasos",
+     "texto": "Desmontar los componentes que no admiten soplado directo (compresor, válvula de expansión/estrangulador y depósito deshidratador). (págs. 51-52) Conectar el adaptador correspondiente o la pistola de soplado con boquilla de goma al racor de la tubería a limpiar. Para el evaporador, soplar a través del empalme de baja presión (diámetro mayor). (págs. 50-51) Ajustar el reductor de presión de la línea de soplado a un valor máximo de 15 bares. (pág. 50) Soplar aire comprimido limpio y seco a través del componente para arrastrar los restos de aceite e impurezas. (págs. 50-51) A continuación, efectuar un soplado final con nitrógeno presurizado a 15 bares para absorber y eliminar la humedad residual introducida por el aire. (pág. 50) Repetir la operación individualmente en el condensador y en los tubos rígidos/flexibles. (págs. 50-51) Reemplazar obligatoriamente el estrangulador/válvula de expansión y el depósito de líquido o colector por componentes nuevos antes del ensamblaje. (págs. 52, 127)",
+     "html": "<ol>\n<li>Desmontar los componentes que no admiten soplado directo (compresor, válvula de expansión/estrangulador y depósito deshidratador). <span class=\"pag\">págs. 51-52</span></li>\n<li>Conectar el adaptador correspondiente o la pistola de soplado con boquilla de goma al racor de la tubería a limpiar. Para el evaporador, soplar a través del empalme de baja presión (diámetro mayor). <span class=\"pag\">págs. 50-51</span></li>\n<li>Ajustar el reductor de presión de la línea de soplado a un valor máximo de 15 bares. <span class=\"pag\">pág. 50</span></li>\n<li>Soplar aire comprimido limpio y seco a través del componente para arrastrar los restos de aceite e impurezas. <span class=\"pag\">págs. 50-51</span></li>\n<li>A continuación, efectuar un soplado final con nitrógeno presurizado a 15 bares para absorber y eliminar la humedad residual introducida por el aire. <span class=\"pag\">pág. 50</span></li>\n<li>Repetir la operación individualmente en el condensador y en los tubos rígidos/flexibles. <span class=\"pag\">págs. 50-51</span></li>\n<li>Reemplazar obligatoriamente el estrangulador/válvula de expansión y el depósito de líquido o colector por componentes nuevos antes del ensamblaje. <span class=\"pag\">págs. 52, 127</span></li>\n</ol>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Presión máxima de trabajo para soplado con aire y nitrógeno: 15 bares. (pág. 50)",
+     "html": "<ul>\n<li>Presión máxima de trabajo para soplado con aire y nitrógeno: 15 bares. <span class=\"pag\">pág. 50</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Comprobar visualmente que los racores y tubos no hayan sufrido deformaciones ni arañazos por la boquilla de soplado, y evacuar el circuito reunificado durante un mínimo de 30 minutos. (págs. 46, 51)",
+     "html": "<p>Comprobar visualmente que los racores y tubos no hayan sufrido deformaciones ni arañazos por la boquilla de soplado, y evacuar el circuito reunificado durante un mínimo de 30 minutos. <span class=\"pag\">págs. 46, 51</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Utilizar siempre reductor de presión en la botella de nitrógeno para evitar reventones de componentes. Llevar gafas de seguridad durante el soplado. (págs. 11, 50)",
+     "html": "<p>Utilizar siempre reductor de presión en la botella de nitrógeno para evitar reventones de componentes. Llevar gafas de seguridad durante el soplado. <span class=\"pag\">págs. 11, 50</span></p>",
      "nivel": ""
     }
    ]
