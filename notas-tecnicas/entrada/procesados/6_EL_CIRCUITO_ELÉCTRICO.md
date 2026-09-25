@@ -1,348 +1,410 @@
 ```yaml
-tipo: fundamento
-titulo: Climatización no regulada
-entidad: regulacion-manual
-area: climatizacion
-sistema: control-climatizacion
-fuente: "6. EL CIRCUITO ELÉCTRICO.pptx"
-paginas: "3-10, 16-18, 26-30"
-relacionados: [sensor-evaporador, unidad-control-climatizador, compresor, electroventilador-condensador]
-palabras: [climatizacion manual, a/a on, a/a ciclo, a/a aut, rele compresion]
-```
-
-## Objeto
-Regular manualmente el encendido del aire acondicionado y la ventilación del habitáculo sin gestión automática de la temperatura ni de la posición de las trampillas. (págs. 3, 18)
-
-## Fundamento
-El conductor demanda el encendido mediante mandos mecánicos o eléctricos. La conexión del compresor requiere la autorización simultánea del usuario, de la sonda de temperatura del evaporador y de la unidad de control del motor. (págs. 4-10, 16, 26-27)
-
-## Desarrollo
-El sistema maneja tres estados de señal para autorizar la excitación del relé del compresor:
-1. A/A ON: Solicitud directa del usuario al pulsar el botón del cuadro de mandos. La unidad de control del motor incrementa el régimen de ralentí para compensar el esfuerzo mecánico del compresor. (págs. 10, 26, 27)
-2. A/A CICLO: Puesta en marcha o parada del compresor comandada por la sonda de temperatura del evaporador. Solo se autoriza el funcionamiento con temperaturas superiores a 4 ºC para evitar la congelación del intercambio. (págs. 10, 27)
-3. A/A AUT: Autorización final emitida por la unidad de control del motor (UCE) tras verificar las condiciones de carga, aceleración y estabilidad del motor. (págs. 10, 26, 27)
-
-El circuito eléctrico de potencia integra conmutadores de ventilación de varias velocidades por resistencias en serie, presostato tri-función de seguridad, termostato de agua del motor y relé de mando del electroventilador. (págs. 5, 7, 9, 28-30)
-
-## Valores de referencia
-- Temperatura mínima de activación en evaporador (A/A CICLO): superior a 4 ºC. (págs. 10, 27)
-
-## Errores de concepto frecuentes
-Pensar que pulsar el botón A/A acopla directamente el compresor. La conexión real depende de que el evaporador esté por encima de 4 ºC y de que la UCE de motor confirme la autorización A/A AUT. (págs. 10, 27)
-
----
-
-```yaml
 tipo: componente
 titulo: Sonda de temperatura del evaporador
 entidad: sensor-evaporador
 area: climatizacion
 sistema: control-climatizacion
+codigo: 408
 fuente: "6. EL CIRCUITO ELÉCTRICO.pptx"
-paginas: "7-8, 10-20"
-forma_parte_de: circuito-frigorifico
+paginas: "8, 16, 25"
 relacionados: [unidad-control-climatizador, compresor, evaporador]
-palabras: [sonda evaporador, termostato mecanico, termostato electronico, tubo capilar, fuelle, 4 ºC]
+palabras: [termostato electrónico, congelación, 4 ºC, corte compresor]
 ```
 
 ## Misión
-Informar de la temperatura del evaporador a la unidad de control o termostato para evitar la formación de hielo en el panal desconectando el compresor. (págs. 8, 10)
+Informar al termostato electrónico o a la unidad de control de la temperatura real presente en el evaporador para autorizar o interrumpir el funcionamiento del compresor y evitar la congelación del evaporador. (pág. 8)
 
 ## Tipos y características
-- Termostato mecánico: consta de un sensor insertado en el evaporador, tubo capilar con fluido, fuelle neumático, muelle de regulación con pomo, palanca de basculación e interruptor eléctrico. Se fabrica en versiones de 2 o 3 contactos. (págs. 8, 11-14)
-- Termostato electrónico: consta de una sonda termostática de resistencia variable (NTC/PTC), centralita de mando electrónica y un potenciómetro de ajuste. (págs. 8, 17-20)
+Se contemplan dos tecnologías:
+- Termostato mecánico: equipado con fuelle, muelle de regulación, tubo capilar y bulbo/sensor intercalado en el evaporador (en versiones de 2 o 3 contactos). (pág. 8)
+- Termostato electrónico / Sonda termostática: constituida por un sensor NTC de temperatura conectado a una centralita electrónica de mando. (pág. 8)
 
-📷 IMAGEN: Despiece interno de termostato mecánico con fuelle, tubo capilar, muelle y palanca de contactos — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 11
+📷 IMAGEN: Esquema del termostato mecánico de evaporador con fuelle, muelle y contactos — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 8
+📷 IMAGEN: Sonda termostática NTC y centralita electrónica de mando — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 8
 
-📷 IMAGEN: Termostato electrónico compuesto por centralita de mando, potenciómetro y sonda de temperatura — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 19
-
-## Principio de funcionamiento
-- En el termostato mecánico, la variación de temperatura altera la presión del fluido capilar. La fuerza de presión \\(F_p\\) se contrapone a la fuerza del muelle \\(F_m\\), desplazando la palanca para abrir o cerrar los contactos eléctricos del embrague. (págs. 11-12)
-- En el termostato electrónico, la sonda envía la señal resistiva a la centralita de mando. Cuando la temperatura medida supera los 4 ºC, la centralita valida la señal A/A CICLO y cierra el circuito del relé del compresor. (págs. 10, 18-20)
-
-## Valores de trabajo
-- Umbral térmico de autorización del compresor: superior a 4 ºC. (págs. 10, 27)
-
-## Anomalías frecuentes
-No documentado en fuentes.
-
-## Comportamiento en avería
-No documentado en fuentes.
-
-## Cómo comprobarlo
-Verificar la continuidad entre los terminales en función de la temperatura del panal o medir los valores de tensión entregados por la centralita electrónica en la salida de señal. (págs. 13-14, 20)
-
-## Mantenimiento
-Reglaje del pomo/tornillo de calibración en termostatos mecánicos para modificar la tensión inicial del muelle de disparo. (págs. 11-12)
-
----
-
-```yaml
-tipo: componente
-titulo: Mando de selección de climatización y ventilación
-entidad: unidad-control-climatizador
-area: climatizacion
-sistema: control-climatizacion
-fuente: "6. EL CIRCUITO ELÉCTRICO.pptx"
-paginas: "16, 21-29"
-forma_parte_de: distribucion-aire
-relacionados: [ventilador-habitaculo, sensor-evaporador, servomotor-trampilla]
-palabras: [cuadro de mandos, conmutador ventilador, reostato, pulsador a/a, pulsador reciclaje]
-```
-
-## Misión
-Permitir al usuario seleccionar el encendido de la climatización, la velocidad del ventilador del habitáculo y la posición de la trampilla de recirculación. (págs. 16, 21-24)
-
-## Tipos y características
-Se presentan como pulsadores independientes de A/A, botones de mando de recirculación, grupos de mandos únicos o conjuntos combinados giratorios y deslizantes. Integran un conmutador de 4 velocidades conectado a un reostato de resistencias. (págs. 21-26)
-
-📷 IMAGEN: Cuadro de mando e interruptores de puesta en marcha, recirculación y selector de velocidad — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 21
-
-📷 IMAGEN: Esquema eléctrico interno del conmutador de ventilación, reostato y conexiones del compresor — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 25
+(pág. 8)
 
 ## Principio de funcionamiento
-Al girar el selector de ventilación, se conmuta la corriente de alimentación hacia las distintas tomas de la red de resistencias (reostato) para modificar la velocidad del motor centrífugo (Low, Medium, High). Al pulsar la tecla A/A, se emite la señal A/A ON hacia el termostato y la UCE del motor. (págs. 25-27)
+La sonda mide la temperatura de las aletas del evaporador. Cuando el valor obtenido es superior a 4 ºC, el termostato confirma la demanda del usuario (A/A ciclo) enviando la señal de autorización de acoplamiento del embrague electromagnético del compresor. Si la temperatura desciende por debajo de 4 ºC, la señal de autorización se corta para impedir que la humedad condensada se congele sobre el evaporador. (pág. 8, 16)
 
 ## Valores de trabajo
-- Tensión de alimentación del módulo: 12 V (procedente de batería/contacto). (págs. 25, 28-29)
+- Temperatura de corte / autorización de la sonda de evaporador: 4 ºC. (pág. 8)
 
 ## Anomalías frecuentes
-No documentado en fuentes.
+No documentado en fuentes. (pág. 8)
 
 ## Comportamiento en avería
-No documentado en fuentes.
+No documentado en fuentes. (pág. 8)
 
 ## Cómo comprobarlo
-Comprobar continuidad eléctrica entre los bornes de salida en las distintas posiciones de velocidad y la conmutación de masa o positivo al accionar las teclas de A/A y recirculación. (págs. 25-27)
+No documentado en fuentes. (pág. 8)
 
 ## Mantenimiento
-No documentado en fuentes.
+No documentado en fuentes. (pág. 8)
 
 ---
 
 ```yaml
 tipo: fundamento
-titulo: Corte de seguridad del compresor en rampa para motor diésel
-entidad: corte-compresor-diesel
+titulo: Corte de acoplamiento del compresor en aceleración diésel
+entidad: corte-compresor-aceleracion
 area: climatizacion
 sistema: control-climatizacion
 fuente: "6. EL CIRCUITO ELÉCTRICO.pptx"
-paginas: "23, 35-38"
+paginas: "23-24"
 relacionados: [embrague-compresor, unidad-control-climatizador]
-palabras: [motor diesel, arranque en rampa, pedal embrague, pedal acelerador, rele temporizado 635, rele 661]
+palabras: [arranque en rampa, calado, pedal embrague, relé temporizado, diodo]
 ```
 
 ## Objeto
-Optimizar los arranques en rampa y evitar el riesgo de calado del motor diésel anulando temporalmente la carga mecánica del compresor. (pág. 35)
+Evitar el riesgo de calado del motor y optimizar el par disponible en las ruedas durante los arranques en rampa y fases de aceleración con alta carga del motor en versiones diésel. (pág. 23)
 
 ## Fundamento
-Interrumpir la corriente de alimentación a la bobina del embrague electromagnético durante un intervalo de cuatro segundos al detectar demanda de aceleración con el pedal de embrague pisado a fondo. (págs. 35-38)
+Desconexión temporal y automatizada del embrague electromagnético del compresor mediante la acción combinada de contactores en los pedales y relés de mando temporizados. (pág. 23)
+
+📷 IMAGEN: Esquema del circuito de corte del embrague del compresor diésel con relés 661, 635, 584 y contactores 405 y 421 — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 24
 
 ## Desarrollo
-1. Para activar el corte, el conductor debe pisar el pedal de embrague a fondo (abriendo el contactor 421) y solicitar alta carga en el acelerador (abriendo el contactor 405 en la palanca de la bomba de inyección 589). (págs. 35, 38)
-2. Al abrirse ambos contactores, el relé 661 se desactiva y corta la alimentación al relé temporizado 635. (págs. 35, 37)
-3. El relé temporizado 635 desexcita al relé de mando del embrague (584), interrumpiendo el paso de corriente hacia el embrague del compresor (171) durante cuatro segundos. (págs. 35, 37-38)
-4. La instalación incorpora un diodo de desacoplamiento para evitar que el embrague sea alimentado de forma fortuita desde el cajetín de pre-postcalentamiento (257) durante el arranque. (págs. 35-37)
+El funcionamiento del sistema se desarrolla mediante la siguiente lógica:
+1. Al pisar el pedal de embrague a fondo (contactor 421 abierto) y superar un cierto nivel de carga en el acelerador (contactor 405 en la bomba de inyección 589), se reúnen las dos condiciones de activación.
+2. La apertura del circuito desexcita el relé 661, interrumpiendo la alimentación del relé temporizado 635.
+3. El relé de mando 584 abre sus contactos, cortando la corriente del embrague electromagnético 171 del compresor durante un periodo fijo de cuatro segundos.
+4. Un diodo de protección en la línea evita la retroalimentación del embrague desde el cajetín de pre-postcalentamiento 257 durante las fases de arranque y calentamiento del motor.
+5. El contactor del pedal de embrague no requiere reglaje y permanece cerrado con el pedal en reposo (embragado).
 
-📷 IMAGEN: Esquema eléctrico de control de corte de compresor con relé temporizado 635, relé 661 y diodo de desacoplamiento — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 37
+(pág. 23, 24)
 
 ## Valores de referencia
-- Tiempo de desacople del compresor: 4 segundos.
-- Estado del contactor de pedal de embrague: sin reglaje; posicionado cerrado con el pie levantado (embragado). (págs. 35-36)
+- Duración del corte temporizado del compresor: 4 segundos. (pág. 23)
 
 ## Errores de concepto frecuentes
-Pensar que el compresor permanece cortado todo el tiempo que se mantiene pisado el embrague. El desacople eléctrico está limitado a un intervalo fijo de 4 segundos mediante relé temporizado. (pág. 35)
+No documentado en fuentes. (pág. 23)
 
 ---
 
 ```yaml
-tipo: fundamento
-titulo: Climatización regulada
-entidad: regulacion-automatica
+tipo: componente
+titulo: Sensor de temperatura interior
+entidad: sensor-temperatura-interior
 area: climatizacion
 sistema: control-climatizacion
 fuente: "6. EL CIRCUITO ELÉCTRICO.pptx"
-paginas: "42, 44-45, 52-54, 108-111"
-relacionados: [unidad-control-climatizador, sensor-temperatura-interior, sensor-temperatura-exterior, servomotor-trampilla]
-palabras: [climatizacion regulada, semiautomatica, automatica, sonda interior, sonda exterior, nivel de confort]
+paginas: "44"
+relacionados: [unidad-control-climatizador, sensor-temperatura-exterior]
+palabras: [coherencia, habitáculo, nivel de confort, temperatura real]
 ```
 
-## Objeto
-Ajustar de forma automática la temperatura, el caudal y la distribución del aire en el habitáculo para garantizar las condiciones de confort fisiológico. (págs. 44-45, 53)
+## Misión
+Captar la temperatura efectiva del aire en el interior del habitáculo y suministrar esta señal a la unidad de control de climatización. (pág. 44)
 
-## Fundamento
-El calculador de climatización procesa las señales de las sondas de temperatura interior, exterior y del evaporador junto con la consigna fijada para controlar el motor de mezcla, la trampilla de reciclaje y la velocidad de la turbina. (págs. 44, 53, 55)
+## Tipos y características
+Sonda térmica ubicada en la zona del salpicadero o cuadro de mandos en instalaciones de climatización regulada. (pág. 44)
 
-## Desarrollo
-- Sonda de temperatura interior: verifica la coherencia entre la temperatura real del habitáculo y el nivel de confort demandado. (pág. 44)
-- Sonda de temperatura exterior: impide que la unidad autorice un salto térmico superior a 20 ºC entre el interior y el exterior. Determina además la procedencia del aire (exterior o recirculado). (pág. 44)
-- Niveles de equipamiento:
-  - Climatización semiautomática: regula automáticamente la temperatura de confort, la velocidad del electroventilador y la posición de la trampilla de reciclaje. (pág. 53)
-  - Climatización automática: además de las funciones anteriores, gobierna automáticamente la posición de las trampillas de repartición de aire. (págs. 53, 78)
-- Nivel de confort: la temperatura mostrada en pantalla considera factores fisiológicos (humedad, ruido, velocidad del aire). En el reparto de aire, la temperatura entregada es mayor en la zona de los pies que en la zona de la cabeza. (pág. 45)
+## Principio de funcionamiento
+Permite a la unidad de control verificar la coherencia entre la temperatura medida en el habitáculo y el nivel de confort o temperatura de consigna solicitada por los ocupantes. (pág. 44)
 
-📷 IMAGEN: Esquema sinóptico de la climatización regulada con entradas de sondas y salidas a servomotores y relés — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 55
+## Valores de trabajo
+No documentado en fuentes. (pág. 44)
 
-## Valores de referencia
-- Diferencia térmica máxima autorizada interior/exterior: 20 ºC. (pág. 44)
+## Anomalías frecuentes
+No documentado en fuentes. (pág. 44)
 
-## Errores de concepto frecuentes
-Creer que el sistema busca una temperatura idéntica en todas las alturas del vehículo. La unidad envía aire a mayor temperatura a los pies que a la cabeza para cumplir los requisitos de confort fisiológico. (pág. 45)
+## Comportamiento en avería
+No documentado en fuentes. (pág. 44)
+
+## Cómo comprobarlo
+No documentado en fuentes. (pág. 44)
+
+## Mantenimiento
+No documentado en fuentes. (pág. 44)
 
 ---
 
 ```yaml
 tipo: componente
-titulo: Motor de mezcla de corriente continua con potenciómetro
-entidad: servomotor-trampilla
-variante: corriente-continua-potenciometro
+titulo: Sensor de temperatura exterior
+entidad: sensor-temperatura-exterior
 area: climatizacion
-sistema: distribucion-aire
+sistema: control-climatizacion
 fuente: "6. EL CIRCUITO ELÉCTRICO.pptx"
-paginas: "46, 61-62"
-forma_parte_de: distribucion-aire
-relacionados: [unidad-control-climatizador, regulacion-automatica]
-palabras: [motor cc, potenciometro, tension de salida, engranaje, tope, posicionamiento]
+paginas: "44"
+relacionados: [unidad-control-climatizador, sensor-temperatura-interior]
+palabras: [salto térmico, 20 ºC, aire exterior, origen del aire]
 ```
 
 ## Misión
-Desplazar mecánicamente la trampilla de mezcla para modificar la temperatura del aire en respuesta a la orden enviada por la unidad de control. (págs. 46, 62)
+Medir la temperatura del aire ambiente exterior para la gestión de la mezcla térmica y la toma de aire en la unidad de control. (pág. 44)
 
 ## Tipos y características
-Motor eléctrico de corriente continua alimentado a 12 V que acciona un mecanismo de engranaje con tornillo sin fin y un potenciómetro interno de memorización de posición. (págs. 61-62)
-
-📷 IMAGEN: Esquema interno de motor de CC con mecanismo de engranaje y potenciómetro deslizante de posición — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 61
+Sonda de temperatura exterior integrada en la red de sensores de la climatización regulada. (pág. 44)
 
 ## Principio de funcionamiento
-Al recibir alimentación eléctrica, el motor gira y mueve el potenciómetro a través del tren de engranajes. La unidad de control mide la tensión de salida devuelta por la pista del potenciómetro para conocer la posición exacta del motor y detenerlo en el punto requerido. (pág. 62)
+Envía la señal de temperatura ambiente al calculador de climatización. La unidad de control utiliza este dato para limitar el salto térmico a un máximo de 20 ºC entre el interior del habitáculo y el exterior, y para decidir la procedencia del aire (exterior o recirculado) necesario para satisfacer la demanda de confort. (pág. 44)
 
 ## Valores de trabajo
-- Tensión nominal de alimentación del motor: 12 V. (pág. 62)
+- Salto térmico máximo autorizado entre interior y exterior: 20 ºC. (pág. 44)
 
 ## Anomalías frecuentes
-Desgaste en la pista del potenciómetro o desajuste de las marcas de posición de los topes mecánicos. (pág. 62)
+No documentado en fuentes. (pág. 44)
 
 ## Comportamiento en avería
-No documentado en fuentes.
+No documentado en fuentes. (pág. 44)
 
 ## Cómo comprobarlo
-Medir con el equipo de diagnosis la variación de la tensión de retorno del potenciómetro a lo largo de todo el recorrido de la trampilla. (pág. 62)
+No documentado en fuentes. (pág. 44)
 
 ## Mantenimiento
-Requiere un reglaje inicial del tope mecánico o una alineación de montaje según marca de referencia. (pág. 62)
-
----
-
-```yaml
-tipo: componente
-titulo: Motor de mezcla paso a paso
-entidad: servomotor-trampilla
-variante: paso-a-paso
-area: climatizacion
-sistema: distribucion-aire
-fuente: "6. EL CIRCUITO ELÉCTRICO.pptx"
-paginas: "47-51, 63-75"
-forma_parte_de: distribucion-aire
-relacionados: [unidad-control-climatizador, regulacion-automatica]
-palabras: [motor paso a paso, electroiman, bobinado a, bobinado b, pares de polos, re-inicializacion]
-```
-
-## Misión
-Posicionar la trampilla de mezcla por impulsos discretos sin necesidad de utilizar un potenciómetro de retorno de posición. (págs. 47, 50-51)
-
-## Tipos y características
-Consta de un rotor central de imán permanente y dos electroimanes o bobinados (A y B) orientados a 45º. Existen versiones con 4, 6 y 12 pares de polos en el elemento giratorio. (págs. 48-51, 64-71)
-
-📷 IMAGEN: Disposición de rotor magnético N-S y bobinados desfasados a 45º para movimiento paso a paso — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 67
-
-## Principio de funcionamiento
-Al alimentar secuencialmente los bobinados A (terminales 1-2) y B (terminales 3-4) alternando impulsos positivos y negativos, el conjunto pivota 1/8 de vuelta en cada cambio, realizando un «paso». Se requieren 4 pasos para completar un ciclo en sentido horario o antihorario. La unidad de control calcula la posición memorizando el recuento total de pasos aplicados. (págs. 47-51, 66-75)
-
-## Valores de trabajo
-- Giro por paso: 1/8 de vuelta.
-- Pasos por ciclo completo: 4 pasos.
-- Opciones de construcción: 4, 6 o 12 pares de polos. (págs. 47, 51)
-
-## Anomalías frecuentes
-Pérdida de sincronismo o salto de pasos provocado por durezas mecánicas en los ejes de las trampillas. (pág. 51)
-
-## Comportamiento en avería
-No documentado en fuentes.
-
-## Cómo comprobarlo
-Verificar la tabla de polaridad enviada por la unidad de control en los bornes 1-2 y 3-4 durante la activación del motor. (págs. 50-51, 73-74)
-
-## Mantenimiento
-Ejecutar el procedimiento automático de «re-inicialización» (búsqueda de topes) para que la unidad de control memorice la posición real de inicio. (pág. 51)
+No documentado en fuentes. (pág. 44)
 
 ---
 
 ```yaml
 tipo: fundamento
-titulo: Normas de utilización y confort del climatizador
+titulo: Higrometría y confort térmico del habitáculo
 entidad: higrometria-y-confort
 area: climatizacion
 sistema: control-climatizacion
 fuente: "6. EL CIRCUITO ELÉCTRICO.pptx"
-paginas: "56, 58-59, 82-85"
-relacionados: [compresor, evaporador, recirculacion]
-palabras: [orientacion difusores, drenaje agua, deshumectacion, retén compresor, refrigeracion maxima]
+paginas: "45"
+relacionados: [regulacion-automatica, distribucion-aire]
+palabras: [estudios fisiológicos, bienestar, velocidad de aire, gradiente térmico]
 ```
 
 ## Objeto
-Asegurar el confort térmico, prevenir el empañado de los cristales y proteger los componentes mecánicos del sistema de climatización. (págs. 58, 82-83)
+Garantizar las condiciones fisiológicas óptimas de temperatura, humedad y renovación de aire necesarias para el bienestar de los pasajeros. (pág. 45)
 
 ## Fundamento
-Uso correcto de la distribución del caudal de aire, control de los niveles de humedad y lubricación periódica de los elementos móviles del compresor. (págs. 58-59, 82-85)
+Desarrollo de las funciones del climatizador regulado basándose en la respuesta fisiológica del cuerpo humano ante las variables del entorno térmico. (pág. 45)
 
 ## Desarrollo
-1. Orientación de difusores: dirigir los caudales hacia el techo o laterales para evitar corrientes de aire directas sobre los pasajeros. (págs. 58, 82)
-2. Agua de condensación: la presencia de goteo bajo el vehículo es un fenómeno normal procedente del tubo de desagüe del evaporador al deshumectar el aire. (págs. 58, 82)
-3. Mantenimiento del compresor: hacer funcionar el climatizador con regularidad permite la circulación de gas y aceite, lubricando el retén frontal (evita fugas) y protegiendo las pistas de los rodamientos frente a las vibraciones. (págs. 58-59, 83-84)
-4. Arranque tras estacionar al sol: ajustar máxima ventilación y máximo frío hacia el tablero/pies; circular con ventanillas bajadas unos minutos; subir cristales al bajar la temperatura; usar refrigeración máxima (recirculación cerrada) si el calor exterior es elevado. (págs. 59, 84-85)
+1. La sensación de confort depende de la conjunción de múltiples parámetros: temperatura adecuada, grado de humedad, ausencia de olores, bajo nivel sonoro, velocidad del aire coordinada, iluminación y entorno cromático.
+2. La alteración de cualquiera de estos factores modifica la percepción de calor o frío del usuario.
+3. La temperatura indicada en la pantalla del climatizador sintetiza la gestión de estos parámetros globales.
+4. Para cumplir con la fisiología humana, el reparto del aire genera una estratificación en la cual la temperatura a la altura de los pies resulta superior a la existente a la altura de la cabeza.
+
+(pág. 45)
 
 ## Valores de referencia
-- Tiempo en refrigeración máxima (recirculación): no prolongar en exceso para evitar viciar el aire del habitáculo y disminuir la seguridad preventiva. (págs. 59, 85)
+No documentado en fuentes. (pág. 45)
 
 ## Errores de concepto frecuentes
-Confundir el charco de agua de condensación bajo el vehículo con una fuga del circuito de refrigeración del motor. (págs. 58, 82)
+No documentado en fuentes. (pág. 45)
+
+---
+
+```yaml
+tipo: componente
+titulo: Servomotor de mezcla de corriente continua con potenciómetro
+entidad: servomotor-trampilla
+variante: corriente-continua-potenciometro
+area: climatizacion
+sistema: distribucion-aire
+forma_parte_de: distribucion-aire
+fuente: "6. EL CIRCUITO ELÉCTRICO.pptx"
+paginas: "46"
+relacionados: [unidad-control-climatizador, servomotor-trampilla]
+palabras: [motor CC, 12 V, engranaje, potenciómetro, reglaje de tope]
+```
+
+## Misión
+Accionar el desplazamiento de la trampilla de mezcla para modular la proporción de aire caliente y frío. (pág. 46)
+
+## Tipos y características
+Motor de corriente continua alimentado a 12 voltios que acciona un tren de engranajes y dispone de un potenciómetro interno solidario al eje. (pág. 46)
+
+📷 IMAGEN: Estructura interna del motor de CC con reductora de engranajes y potenciómetro de posición — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 46
+
+## Principio de funcionamiento
+Cuando el motor recibe alimentación de 12 V y gira, arrastra el mecanismo de la trampilla y la pista del potenciómetro de copia. La unidad de control analiza la tensión de salida del potenciómetro para conocer la posición angular exacta del motor y detenerlo en la posición correspondiente a la temperatura solicitada. (pág. 46)
+
+## Valores de trabajo
+- Tensión de alimentación del motor: 12 V. (pág. 46)
+
+## Anomalías frecuentes
+No documentado en fuentes. (pág. 46)
+
+## Comportamiento en avería
+No documentado en fuentes. (pág. 46)
+
+## Cómo comprobarlo
+No documentado en fuentes. (pág. 46)
+
+## Mantenimiento
+Este tipo de servomotor requiere un procedimiento de reglaje de topes mecánicos o alineación con marcas de posición. (pág. 46)
+
+---
+
+```yaml
+tipo: componente
+titulo: Servomotor de mezcla paso a paso
+entidad: servomotor-trampilla
+variante: paso-a-paso
+area: climatizacion
+sistema: distribucion-aire
+forma_parte_de: distribucion-aire
+fuente: "6. EL CIRCUITO ELÉCTRICO.pptx"
+paginas: "47-51"
+relacionados: [unidad-control-climatizador, servomotor-trampilla]
+palabras: [rotor magnético, bobinado A, bobinado B, inversión de polaridad, reinicialización]
+```
+
+## Misión
+Ejecutar desplazamientos angulares precisos en las trampillas de mezcla, reciclaje o distribución del sistema de aire sin necesidad de potenciómetro de retorno. (pág. 47)
+
+## Tipos y características
+Actuador electromecánico formado por un rotor permanente multipolar (4, 6 o 12 pares de polos) y un estator con bobinados independientes (A y B) desfasados angularmente. (pág. 47, 51)
+
+📷 IMAGEN: Disposición de rotor multipolar N-S y electroimán de excitación — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 47
+📷 IMAGEN: Montaje de segundo bobinado B a 45º respecto al bobinado A — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 48
+📷 IMAGEN: Tabla de impulsos eléctricos y polaridad en bornes 1-2 y 3-4 para giro en ambos sentidos — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 50
+
+## Principio de funcionamiento
+- La alimentación del bobinado A (bornes 1 y 2) genera un campo magnético que hace pivotar el rotor un "paso" (1/8 de vuelta en rotor de 4 polos).
+- Para continuar el giro sin bloqueo, la unidad de control alimenta secuencialmente un segundo bobinado B (bornes 3 y 4) situado a 45º.
+- Alternando la polaridad (+ / -) entre los bobinados A y B se consigue el desplazamiento en sentido horario o antihorario, completando un ciclo de 4 pasos.
+- La unidad de control contabiliza internamente el número de pasos aplicados para determinar la posición teórica de la trampilla.
+
+(pág. 47-51)
+
+## Valores de trabajo
+- Secuencia de ciclo básico: 4 pasos para un ciclo magnético completo. (pág. 51)
+
+## Anomalías frecuentes
+No documentado en fuentes. (pág. 51)
+
+## Comportamiento en avería
+Desfase entre la posición contada por el calculador y la posición real de la trampilla por frenado o bloqueo mecánico. (pág. 51)
+
+## Cómo comprobarlo
+No documentado en fuentes. (pág. 51)
+
+## Mantenimiento
+Realizar periódicamente un reglaje automático de re-inicialización (búsqueda de topes mecánicos) para que la unidad de control reconozca la posición real de partida y ponga a cero el contador de pasos. (pág. 51)
 
 ---
 
 ```yaml
 tipo: fundamento
-titulo: Seguridad y riesgos en la manipulación de fluidos refrigerantes
-entidad: prl-refrigerantes
-area: general
-sistema: prl-y-seguridad
+titulo: Regulación de climatización semiautomática y automática
+entidad: regulacion-automatica
+area: climatizacion
+sistema: control-climatizacion
 fuente: "6. EL CIRCUITO ELÉCTRICO.pptx"
-paginas: "56, 60-63, 86-91"
-relacionados: [refrigerante-r134a, carga-refrigerante]
-palabras: [guantes, gafas, foso de reparacion, quemadura -30ºC, inhalacion, horno de secado]
+paginas: "53-54"
+relacionados: [unidad-control-climatizador, distribucion-aire]
+palabras: [semiautomática, automática, velocidad motoventilador, distribución de aire, calculador]
 ```
 
 ## Objeto
-Prevenir riesgos laborales, intoxicaciones por inhalación y quemaduras por congelación durante la manipulación de fluidos refrigerantes en el taller. (págs. 60, 86)
+Gestionar las funciones térmicas y aerodinámicas del sistema de climatización mediante la intervención de un calculador electrónico. (pág. 53)
 
 ## Fundamento
-Adopción de equipos de protección individual (EPIs), ventilación de las zonas de trabajo y cumplimiento de restricciones térmicas sobre los componentes del circuito. (págs. 60-63, 86-91)
+Control automático de actuadores e impulsión a partir de la lectura de sensores de temperatura y las consignas de usuario. (pág. 53)
+
+📷 IMAGEN: Esquema general del calculador electrónico de climatización en un sistema automático con servomotores y captadores — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 53
 
 ## Desarrollo
-- Protección individual: uso obligatorio de guantes de látex y gafas de protección. Trabajar siempre en locales bien ventilados. (págs. 60, 86)
-- Prohibición de fosos: prohibido intervenir en el circuito dentro de fosos de reparación. El gas es más pesado que el aire, se acumula en el fondo y provoca sofoco o vértigo. (págs. 60, 87)
-- Primeros auxilios por contacto en piel: aplicar agua tibia en la zona afectada; retirar la ropa no adherida (evitar arrancar prendas pegadas por congelación a –30 ºC); lavar con abundante agua y acudir al médico. (págs. 60, 87-88)
-- Primeros auxilios por contacto ocular: lavar inmediatamente con solución ocular o agua limpia manteniendo los párpados cerrados durante al menos 10 minutos. (págs. 61, 88)
-- Primeros auxilios por ingestión: no provocar el vómito; si el paciente está consciente, hacer enjuagar la boca y beber de 200 a 300 ml de agua. (págs. 61, 89)
-- Normas en taller: prohibido fumar (el gas se descompone en vapores venenosos al contacto con brasas); no superar 20 minutos a 80 ºC en hornos de secado de pintura sin vaciar previamente el circuito; no aplicar chorros directos de agua/aire a presión sobre los componentes durante el lavado del motor. (págs. 62-63, 90-92)
+Niveles de automatización en la regulación:
+- Climatización Semiautomática: La unidad de control regula automáticamente la temperatura de confort (mezcla), la velocidad de soplado del motoventilador de habitáculo y la posición de la trampilla de reciclaje. La repartición de salidas de aire debe ser seleccionada manualmente por el usuario.
+- Climatización Automática: Además de regular temperatura, caudal de aire y reciclaje, la unidad de control gobierna de forma automatizada las trampillas de repartición para dirigir el aire hacia parabrisas, difusores frontales o pies según las necesidades del habitáculo.
+
+(pág. 53, 54)
 
 ## Valores de referencia
-- Temperatura de quemadura por congelación: aprox. –30 ºC. (págs. 60, 88)
-- Tiempo mínimo de lavado ocular: 10 minutos. (págs. 61, 88)
-- Cantidad de agua en ingestión consciente: 200-300 ml. (págs. 61, 89)
-- Límite de permanencia en horno a 80 ºC: máximo 20 minutos con circuito vacío. (págs. 63, 91)
+No documentado en fuentes. (pág. 54)
 
 ## Errores de concepto frecuentes
-Fumar durante la manipulación del gas refrigerante asumiendo que no es inflamable. La incandescencia del cigarrillo descompone el fluido creando productos venenosos de alta toxicidad. (págs. 62, 90)
+No documentado en fuentes. (pág. 54)
+
+---
+
+```yaml
+tipo: procedimiento
+titulo: Normas de uso y mantenimiento preventivo del climatizador
+entidad: mantenimiento-preventivo-climatizador
+area: climatizacion
+sistema: control-climatizacion
+fuente: "6. EL CIRCUITO ELÉCTRICO.pptx"
+paginas: "58-59"
+relacionados: [compresor, distribucion-aire]
+palabras: [difusores, agua de condensación, retén de compresor, lubricación, reciclaje temporal]
+```
+
+## Objeto y alcance
+Definir las pautas de utilización y precauciones operativas para conservar los elementos mecánicos del climatizador, garantizar la visibilidad y optimizar el confort. (pág. 58)
+
+## Condiciones previas
+Vehículo sometido a uso diario o tras estacionamiento prolongado bajo el sol en época calurosa. (pág. 58)
+
+## Equipo y material
+Mandos del sistema de climatización y elevalunas del vehículo. (pág. 58)
+
+## Pasos
+Protocolo de uso tras parada prolongada al sol:
+1. Orientar los difusores de aire hacia el techo o paredes laterales para impedir corrientes de aire molestas.
+2. Antes de arrancar, situar los mandos en la posición de máxima ventilación y máximo frío, dirigiendo el caudal hacia el tablero y la parte inferior.
+3. Iniciar la marcha circulando unos minutos con las ventanillas bajadas para renovar el aire sobrecalentado del habitáculo.
+4. Subir las ventanillas cuando la temperatura interior descienda a niveles aceptables.
+5. Seleccionar la refrigeración máxima (reciclaje cerrado) para acelerar el enfriamiento, evitando mantener esta posición durante mucho tiempo para no viciar el aire interior.
+6. Ajustar los mandos al nivel de temperatura de consigna deseado.
+
+(pág. 58, 59)
+
+## Valores de referencia
+- Pérdida de agua bajo el vehículo: Fenómeno normal producido por la evacuación de condensados del evaporador a través de los tubos de desagüe. (pág. 58)
+
+## Verificación final
+Comprobar el correcto desempañado de los cristales para asegurar la visibilidad en conducción y verificar la ausencia de ruidos en el compresor. (pág. 58)
+
+## Seguridad y normativa
+El funcionamiento periódico del compresor permite la circulación continua de refrigerante y aceite, manteniendo lubricado el retén frontal del compresor para evitar fugas de gas y protegiendo las pistas de los rodamientos contra deterioros por vibración del motor. (pág. 58)
+
+---
+
+```yaml
+tipo: procedimiento
+titulo: Prevención de riesgos y seguridad con fluidos refrigerantes
+entidad: seguridad-fluidos-refrigerantes
+area: general
+sistema: prl-y-seguridad
+fuente: "6. EL CIRCUITO ELÉCTRICO.pptx"
+paginas: "60-63"
+relacionados: [refrigerante-r134a, equipos-taller]
+palabras: [gafas de protección, guantes de látex, fosos de taller, congelación, lavado ocular, horno de secado]
+```
+
+## Objeto y alcance
+Establecer las normas de seguridad e higiene laboral para la manipulación de fluidos refrigerantes en el taller y las pautas de primeros auxilios. (pág. 60)
+
+## Condiciones previas
+Intervenciones en el circuito frigorífico realizadas exclusivamente por personal especializado en zonas adecuadamente ventiladas. (pág. 60)
+
+## Equipo y material
+Gafas de protección ocular, guantes de látex y equipo de lavado ocular o abundante agua tibia. (pág. 60)
+
+## Pasos
+Primeros auxilios ante accidentes con refrigerante:
+1. Contacto con la piel: descongelar con agua la zona afectada; retirar prendas contaminadas evitando desgarros si existen adherencias a la piel por bajas temperaturas (-30 ºC); lavar inmediatamente con abundante agua tibia y solicitar asistencia médica ante irritación o ampollas.
+2. Contacto con los ojos: lavar inmediatamente con solución ocular o agua limpia, manteniendo los párpados cerrados al menos 10 minutos; acudir urgentemente al médico.
+3. Ingestión accidental: no provocar el vómito; si el afectado está consciente, hacer enjuagar la boca y beber 200-300 ml de agua; solicitar asistencia médica inmediata.
+
+(pág. 60, 61)
+
+## Valores de referencia
+- Temperatura de quemadura por congelación del fluido: aprox. -30 ºC.
+- Tiempo de lavado en contacto ocular: mínimo 10 minutos.
+- Volumen de agua a ingerir tras ingestión en paciente consciente: 200-300 ml.
+- Límite térmico en horno de secado de pintura: máximo 20 minutos a 80 ºC (vaciando previamente la instalación de A/C si se supera este tiempo). (pág. 60, 61, 63)
+
+## Verificación final
+Asegurarse de que las llaves de la estación de carga y recipientes estén totalmente cerradas antes de conectar o desconectar los acoplamientos. (pág. 62)
+
+## Seguridad y normativa
+- Prohibida la realización de trabajos en circuitos frigoríficos dentro de fosos de reparación, dado que el gas refrigerante es más pesado que el aire y se acumula en el fondo con riesgo de sofocación.
+- Prohibición absoluta de fumar: el gas refrigerante se descompone en productos venenosos al entrar en contacto con las ascuas.
+- No sobrepasar la capacidad nominal de carga de los cilindros o bombonas de almacenamiento.
+
+(pág. 60, 62)
 
 ---
 
@@ -353,123 +415,38 @@ entidad: vacio-circuito
 area: climatizacion
 sistema: circuito-frigorifico
 fuente: "6. EL CIRCUITO ELÉCTRICO.pptx"
-paginas: "56, 64-65, 92-95"
+paginas: "64-65"
 relacionados: [carga-refrigerante, filtro-deshidratador]
-palabras: [vacio, humedad, ebullicion, depresion, bar, 100 ºC]
+palabras: [depresión, ebullición del agua, evacuación de humedad, 1 bar]
 ```
 
 ## Objeto y alcance
-Extraer la totalidad del aire no condensable y la humedad retenida en las tuberías y componentes del circuito antes de realizar la carga. (págs. 64, 92)
+Extraer el aire incondensable y evaporar la humedad residual presente en las tuberías y componentes del circuito de climatización. (pág. 64)
 
 ## Condiciones previas
-Circuito frigorífico cerrado, sin fugas de gran tamaño y sin presión de refrigerante en su interior. (págs. 64, 92)
+Circuito frigorífico descargado de refrigerante y con estanqueidad verificada. (pág. 64)
 
 ## Equipo y material
-Estación de carga equipada con bomba de vacío y puente de manómetros. (págs. 64, 98-99)
+Estación de carga con manómetros y bomba de vacío. (pág. 64)
 
 ## Pasos
-1. Conectar los latiguillos de alta y baja presión de la estación a las tomas de servicio del vehículo.
-2. Abrir las válvulas del puente de manómetros dirigiendo las vías hacia la bomba de vacío.
-3. Poner en marcha la bomba de vacío para generar una fuerte depresión en el interior del circuito.
-4. Mantener la bomba funcionando durante el tiempo programado para reducir el punto de ebullición del agua y lograr la evaporación completa de la humedad. (págs. 64-65, 93-95, 98-99)
+1. Conectar los acoplamientos de la estación de carga a los racores de servicio de alta y baja presión.
+2. Abrir las válvulas manuales de los manómetros de la estación de carga.
+3. Poner en marcha la bomba de vacío para generar una acusada depresión en el interior del circuito.
+4. Mantener la bomba funcionando el tiempo necesario para hacer descender el punto de ebullición de la humedad y provocar su evaporación a temperatura ambiente.
+5. Cerrar las llaves de paso y detener la bomba de vacío, observando que la aguja se mantenga estable para confirmar la ausencia de fugas antes de efectuar la carga de gas.
+
+(pág. 64, 65)
 
 ## Valores de referencia
-- Temperatura de ebullición del agua a 1 bar: 100 ºC. Al reducir la presión por debajo de 1 bar con la bomba de vacío, el agua evapora a temperatura ambiente. (págs. 65, 94-95)
-
-📷 IMAGEN: Gráfica de curva de presión (bar) frente a temperatura de ebullición del agua (ºC) — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 94
+- Fundamento físico: A la presión de 1 bar el agua hierve a 100 ºC; al disminuir la presión (depresión) en el circuito, el punto de ebullición baja, permitiendo la ebullición y extracción del agua en estado de vapor. (pág. 65)
 
 ## Verificación final
-Detener la bomba y comprobar en el vacuómetro que la depresión se mantiene estable, lo que confirma la hermeticidad del circuito. (págs. 64, 92)
+Comprobar el mantenimiento constante del valor de vacío en los manómetros tras la parada de la bomba. (pág. 65)
 
 ## Seguridad y normativa
-Utilizar gafas de protección y guantes durante la manipulación de los acoples. (págs. 60, 86)
+La permanencia de aire y humedad degrada el rendimiento frigorífico, provoca la saturación prematura del filtro deshidratante y genera fallos por congelación o corrosión interna. (pág. 64)
 
 ---
 
-```yaml
-tipo: procedimiento
-titulo: Carga de fluido refrigerante
-entidad: carga-refrigerante
-area: climatizacion
-sistema: circuito-frigorifico
-fuente: "6. EL CIRCUITO ELÉCTRICO.pptx"
-paginas: "56, 66-67, 95-99"
-relacionados: [vacio-circuito, refrigerante-r134a, aceite-frigorifico]
-palabras: [carga refrigerante, r12, r134a, pesaje, cilindro dosificador, bomba de vacio, aceite nuevo]
-```
-
-## Objeto y alcance
-Introducir la masa exacta de fluido refrigerante (R12 o R134a) y reponer la dosis de aceite lubricante en el circuito frigorífico. (págs. 66-67, 95-97)
-
-## Condiciones previas
-Fase de vacío completada satisfactoriamente. Operación realizada en zona aireada y sin fuentes de calor próximas. (págs. 66, 95-96)
-
-## Equipo y material
-Estación de carga con cilindro dosificador o báscula de pesaje, recipiente de fluido, bomba de vacío, puente de manómetros (BP, AP, GP) y recipientes de aceite. Guantes y gafas. (págs. 66, 98-99)
-
-📷 IMAGEN: Esquema completo de la estación de carga con cilindro dosificador, manómetros y bomba de vacío — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 98
-
-## Pasos
-1. Descargar el fluido residual de la instalación y reciclarlo.
-2. Separar y medir el volumen de aceite extraído del compresor para evaluar su estado.
-3. Realizar el vacío completo del circuito.
-4. Inyectar la cantidad de aceite nuevo equivalente a la recuperada.
-5. Pesar e introducir en el circuito la masa exacta de refrigerante recomendada por el fabricante utilizando la báscula o el cilindro dosificador. (págs. 66-67, 96-97)
-
-## Valores de referencia
-- Masa de refrigerante: valor exacto especificado en la placa de características pesada en báscula. (págs. 67, 97)
-
-## Verificación final
-Poner en marcha el motor con la climatización activada para controlar las presiones de trabajo en los manómetros de alta y baja presión. (págs. 56, 98)
-
-## Seguridad y normativa
-Uso obligatorio de gafas protectoras y guantes de látex. Trabajo en ambiente ventilado. (págs. 60, 66, 86, 95)
-
----
-
-```yaml
-tipo: procedimiento
-titulo: Detección de fugas en el circuito frigorífico
-entidad: deteccion-fugas
-area: climatizacion
-sistema: circuito-frigorifico
-fuente: "6. EL CIRCUITO ELÉCTRICO.pptx"
-paginas: "57, 100-108"
-relacionados: [trazador-uv, carga-refrigerante]
-palabras: [detector de fugas, efecto corona, fluorescencia, diodo calefactado, conductividad termica, g / año]
-```
-
-## Objeto y alcance
-Localizar inestabilidades y puntos de escape de refrigerante en racores, tuberías, condensador, evaporador y retén del compresor. (págs. 57, 100-108)
-
-## Condiciones previas
-Circuito presurizado con refrigerante o aditivado con trazador fluorescente y aceite. (págs. 102, 108)
-
-## Equipo y material
-- Detectores electrónicos: de efecto Corona, de conductividad térmica, de diodo calefactado o de célula de permeabilidad cerámica/ionización.
-- Medios ópticos y químicos: lámpara de rayos ultravioleta (UV), aditivo fluorescente (30 ml de aceite) y agua jabonosa. (págs. 102-108)
-
-📷 IMAGEN: Lámpara de radiación ultravioleta para localización de fugas con trazador fluorescente — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 107
-
-## Pasos
-1. Para detección electrónica: desplazar la sonda del detector lentamente a lo largo de las uniones y conexiones sin llegar a tocar las superficies.
-2. Para detección por fluorescencia: introducir 30 ml de aceite con trazador en la carga, poner en funcionamiento el sistema y examinar los racores utilizando la lámpara ultravioleta.
-3. Para detección con agua jabonosa: aplicar la solución sobre la zona sospechosa únicamente ante la sospecha de fugas de gran tamaño. (págs. 102-108)
-
-## Valores de referencia
-- Sensibilidad mínima en posición estática: 5 g/año.
-- Sensibilidad en movimiento: 1 a 5 g/año.
-- Tiempo de recuperación tras saturación (fuga de 40 g/año): 2 a 4 segundos.
-- Sensibilidad de detector por conductividad térmica: < 5 g/año.
-- Límite de detección por fluorescencia: fugas de hasta 7 g/año.
-- Dosis de aceite con trazador recomendada: 30 ml. (págs. 100, 102-103, 108)
-
-## Verificación final
-Confirmar la ausencia de alarmas acústicas en el detector electrónico o la inexistencia de puntos fluorescentes bajo la luz UV tras reparar la fuga. (págs. 100, 107)
-
-## Seguridad y normativa
-Utilizar gafas de protección con filtro UV al trabajar con la lámpara y guantes de protección. (págs. 60, 86)
-
----
-
-COBERTURA: documento «6. EL CIRCUITO ELÉCTRICO.pptx», páginas 1 a 111 de 111. [completo]
+COBERTURA: documento «6. EL CIRCUITO ELÉCTRICO.pptx», páginas 1 a 65 de 65. completo

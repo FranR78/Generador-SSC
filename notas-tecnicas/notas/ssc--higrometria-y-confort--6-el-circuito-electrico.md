@@ -6,36 +6,30 @@ nt: 400
 tipo: proceso
 subtipo: fundamento
 clase: fundamento
-titulo: "Normas de utilización y confort del climatizador"
-menu: "Normas de utilización y confort del cl"
+titulo: "Higrometría y confort térmico del habitáculo"
+menu: "Higrometría y confort térmico del habi"
 grupo: "Control de climatización"
 clave: higrometria-y-confort
 area: climatizacion
 sistema: "control-climatizacion"
-fuentes: "6. EL CIRCUITO ELÉCTRICO.pptx, págs. 56, 58-59, 82-85"
-relacionados: ["compresor", "evaporador", "recirculacion"]
-palabras: ["orientacion difusores", "drenaje agua", "deshumectacion", "retén compresor", "refrigeracion maxima"]
+fuentes: "6. EL CIRCUITO ELÉCTRICO.pptx, págs. 45"
+relacionados: ["regulacion-automatica", "distribucion-aire"]
+palabras: ["estudios fisiológicos", "bienestar", "velocidad de aire", "gradiente térmico"]
 ---
 
 ## Objeto
 
-Asegurar el confort térmico, prevenir el empañado de los cristales y proteger los componentes mecánicos del sistema de climatización. (págs. 58, 82-83)
+Garantizar las condiciones fisiológicas óptimas de temperatura, humedad y renovación de aire necesarias para el bienestar de los pasajeros. (pág. 45)
 
 ## Fundamento
 
-Uso correcto de la distribución del caudal de aire, control de los niveles de humedad y lubricación periódica de los elementos móviles del compresor. (págs. 58-59, 82-85)
+Desarrollo de las funciones del climatizador regulado basándose en la respuesta fisiológica del cuerpo humano ante las variables del entorno térmico. (pág. 45)
 
 ## Desarrollo
 
-1. Orientación de difusores: dirigir los caudales hacia el techo o laterales para evitar corrientes de aire directas sobre los pasajeros. (págs. 58, 82)
-2. Agua de condensación: la presencia de goteo bajo el vehículo es un fenómeno normal procedente del tubo de desagüe del evaporador al deshumectar el aire. (págs. 58, 82)
-3. Mantenimiento del compresor: hacer funcionar el climatizador con regularidad permite la circulación de gas y aceite, lubricando el retén frontal (evita fugas) y protegiendo las pistas de los rodamientos frente a las vibraciones. (págs. 58-59, 83-84)
-4. Arranque tras estacionar al sol: ajustar máxima ventilación y máximo frío hacia el tablero/pies; circular con ventanillas bajadas unos minutos; subir cristales al bajar la temperatura; usar refrigeración máxima (recirculación cerrada) si el calor exterior es elevado. (págs. 59, 84-85)
+1. La sensación de confort depende de la conjunción de múltiples parámetros: temperatura adecuada, grado de humedad, ausencia de olores, bajo nivel sonoro, velocidad del aire coordinada, iluminación y entorno cromático.
+2. La alteración de cualquiera de estos factores modifica la percepción de calor o frío del usuario.
+3. La temperatura indicada en la pantalla del climatizador sintetiza la gestión de estos parámetros globales.
+4. Para cumplir con la fisiología humana, el reparto del aire genera una estratificación en la cual la temperatura a la altura de los pies resulta superior a la existente a la altura de la cabeza.
 
-## Valores de referencia
-
-- Tiempo en refrigeración máxima (recirculación): no prolongar en exceso para evitar viciar el aire del habitáculo y disminuir la seguridad preventiva. (págs. 59, 85)
-
-## Errores de concepto frecuentes
-
-Confundir el charco de agua de condensación bajo el vehículo con una fuga del circuito de refrigeración del motor. (págs. 58, 82)
+(pág. 45)

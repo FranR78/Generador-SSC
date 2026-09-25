@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">741 notas · 25/09/2026</p>
+  <p class="sidebar-meta">746 notas · 25/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -343,8 +343,8 @@
     <li><a href="#nt94">NT94 · Limpieza y eliminación de humedad en c</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
     <li><a href="#grp-unidad-control-climatizador">Unidad de control de climatización <span class="menu-cuenta">12 fuentes</span></a></li>
-    <li><a href="#grp-sensor-temperatura-ntc-exterior">Termosensor de temperatura exterior <span class="menu-cuenta">17 fuentes</span></a></li>
-    <li><a href="#grp-sensor-temperatura-ntc-interior">Termosensor del tablero de instrumentos con turbina de aire <span class="menu-cuenta">22 fuentes</span></a></li>
+    <li><a href="#grp-sensor-temperatura-ntc-exterior">Termosensor de temperatura exterior <span class="menu-cuenta">18 fuentes</span></a></li>
+    <li><a href="#grp-sensor-temperatura-ntc-interior">Termosensor del tablero de instrumentos con turbina de aire <span class="menu-cuenta">23 fuentes</span></a></li>
     <li><a href="#grp-fotosensor-solar">Fotosensor de radiación solar <span class="menu-cuenta">6 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Distribución de aire</span></li>
     <li><a href="#grp-servomotor-trampilla">Servomotores de las chapaletas de aire <span class="menu-cuenta">26 fuentes</span></a></li>
@@ -605,6 +605,11 @@
     <li><a href="#nt740">NT740 · Lubricación del compresor</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Distribución de aire</span></li>
     <li><a href="#nt746">NT746 · Desecación del aire y desempañado de c</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
+    <li><a href="#nt750">NT750 · Corte de acoplamiento del compresor en</a></li>
+    <li><a href="#nt753">NT753 · Normas de uso y mantenimiento preventi</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">PRL y seguridad</span></li>
+    <li><a href="#nt754">NT754 · Prevención de riesgos y seguridad con</a></li>
   </ul>
 </nav>
 
@@ -9830,49 +9835,35 @@ La unidad de control J255 analiza las selecciones de ambos lados (ajustables ent
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 19 de 38 · NT397 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 42, 44-45, 52-54, 108-111</summary>
+      <summary>Variante 19 de 38 · NT397 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 53-54</summary>
   <section id="nt397" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 397 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
-      <h1>Climatización regulada</h1>
+      <h1>Regulación de climatización semiautomática y automática</h1>
       <div class="apartado">
         <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
-        <p>El calculador de climatización procesa las señales de las sondas de temperatura interior, exterior y del evaporador junto con la consigna fijada para controlar el motor de mezcla, la trampilla de reciclaje y la velocidad de la turbina. (págs. 44, 53, 55)</p>
+        <p>Control automático de actuadores e impulsión a partir de la lectura de sensores de temperatura y las consignas de usuario. (pág. 53)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Sonda de temperatura interior: verifica la coherencia entre la temperatura real del habitáculo y el nivel de confort demandado. (pág. 44)</li>
-<li>Sonda de temperatura exterior: impide que la unidad autorice un salto térmico superior a 20 ºC entre el interior y el exterior. Determina además la procedencia del aire (exterior o recirculado). (pág. 44)</li>
-<li>Niveles de equipamiento:<ul>
-<li>Climatización semiautomática: regula automáticamente la temperatura de confort, la velocidad del electroventilador y la posición de la trampilla de reciclaje. (pág. 53)</li>
-<li>Climatización automática: además de las funciones anteriores, gobierna automáticamente la posición de las trampillas de repartición de aire. (págs. 53, 78)</li>
+        <p>Niveles de automatización en la regulación:</p>
+<ul>
+<li>Climatización Semiautomática: La unidad de control regula automáticamente la temperatura de confort (mezcla), la velocidad de soplado del motoventilador de habitáculo y la posición de la trampilla de reciclaje. La repartición de salidas de aire debe ser seleccionada manualmente por el usuario.</li>
+<li>Climatización Automática: Además de regular temperatura, caudal de aire y reciclaje, la unidad de control gobierna de forma automatizada las trampillas de repartición para dirigir el aire hacia parabrisas, difusores frontales o pies según las necesidades del habitáculo.</li>
 </ul>
-</li>
-<li>Nivel de confort: la temperatura mostrada en pantalla considera factores fisiológicos (humedad, ruido, velocidad del aire). En el reparto de aire, la temperatura entregada es mayor en la zona de los pies que en la zona de la cabeza. (pág. 45)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Diferencia térmica máxima autorizada interior/exterior: 20 ºC. (pág. 44)</li>
-</ul>
+<p>(pág. 53, 54)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Objeto</div>
-        <p>Ajustar de forma automática la temperatura, el caudal y la distribución del aire en el habitáculo para garantizar las condiciones de confort fisiológico. (págs. 44-45, 53)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Errores de concepto frecuentes</div>
-        <p>Creer que el sistema busca una temperatura idéntica en todas las alturas del vehículo. La unidad envía aire a mayor temperatura a los pies que a la cabeza para cumplir los requisitos de confort fisiológico. (pág. 45)</p>
+        <p>Gestionar las funciones térmicas y aerodinámicas del sistema de climatización mediante la intervención de un calculador electrónico. (pág. 53)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT397_01</code> Esquema sinóptico de la climatización regulada con entradas de sondas y salidas a servomotores y relés — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 55</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT397_01</code> Esquema general del calculador electrónico de climatización en un sistema automático con servomotores y captadores — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 53</span></div>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">6. EL CIRCUITO ELÉCTRICO.pptx, págs. 42, 44-45, 52-54, 108-111</p>
+        <p class="fuentes">6. EL CIRCUITO ELÉCTRICO.pptx, págs. 53-54</p>
       </div>
     </div>
   </section>
@@ -16235,51 +16226,42 @@ Puede instalarse por delante del condensador en posición de "empuje" (impulsand
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 11 de 14 · NT394 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 7-8, 10-20</summary>
+      <summary>Variante 11 de 14 · NT394 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 8, 16, 25</summary>
   <section id="nt394" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 394 </div>
     <div class="nota-body">
-      <h1>Sonda de temperatura del evaporador</h1>
+      <h1>Sonda de temperatura del evaporador — <strong>408</strong></h1>
       <div class="apartado">
         <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Informar de la temperatura del evaporador a la unidad de control o termostato para evitar la formación de hielo en el panal desconectando el compresor. (págs. 8, 10)</p>
+        <p>Informar al termostato electrónico o a la unidad de control de la temperatura real presente en el evaporador para autorizar o interrumpir el funcionamiento del compresor y evitar la congelación del evaporador. (pág. 8)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <ul>
-<li>En el termostato mecánico, la variación de temperatura altera la presión del fluido capilar. La fuerza de presión F_p se contrapone a la fuerza del muelle F_m, desplazando la palanca para abrir o cerrar los contactos eléctricos del embrague. (págs. 11-12)</li>
-<li>En el termostato electrónico, la sonda envía la señal resistiva a la centralita de mando. Cuando la temperatura medida supera los 4 ºC, la centralita valida la señal A/A CICLO y cierra el circuito del relé del compresor. (págs. 10, 18-20)</li>
-</ul>
+        <p>La sonda mide la temperatura de las aletas del evaporador. Cuando el valor obtenido es superior a 4 ºC, el termostato confirma la demanda del usuario (A/A ciclo) enviando la señal de autorización de acoplamiento del embrague electromagnético del compresor. Si la temperatura desciende por debajo de 4 ºC, la señal de autorización se corta para impedir que la humedad condensada se congele sobre el evaporador. (pág. 8, 16)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
         <ul>
-<li>Umbral térmico de autorización del compresor: superior a 4 ºC. (págs. 10, 27)</li>
+<li>Temperatura de corte / autorización de la sonda de evaporador: 4 ºC. (pág. 8)</li>
 </ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
-        <p>Verificar la continuidad entre los terminales en función de la temperatura del panal o medir los valores de tensión entregados por la centralita electrónica en la salida de señal. (págs. 13-14, 20)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Tipos y características</div>
-        <ul>
-<li>Termostato mecánico: consta de un sensor insertado en el evaporador, tubo capilar con fluido, fuelle neumático, muelle de regulación con pomo, palanca de basculación e interruptor eléctrico. Se fabrica en versiones de 2 o 3 contactos. (págs. 8, 11-14)</li>
-<li>Termostato electrónico: consta de una sonda termostática de resistencia variable (NTC/PTC), centralita de mando electrónica y un potenciómetro de ajuste. (págs. 8, 17-20)</li>
+        <p>Se contemplan dos tecnologías:</p>
+<ul>
+<li>Termostato mecánico: equipado con fuelle, muelle de regulación, tubo capilar y bulbo/sensor intercalado en el evaporador (en versiones de 2 o 3 contactos). (pág. 8)</li>
+<li>Termostato electrónico / Sonda termostática: constituida por un sensor NTC de temperatura conectado a una centralita electrónica de mando. (pág. 8)</li>
 </ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Mantenimiento</div>
-        <p>Reglaje del pomo/tornillo de calibración en termostatos mecánicos para modificar la tensión inicial del muelle de disparo. (págs. 11-12)</p>
+<p>(pág. 8)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT394_01</code> Despiece interno de termostato mecánico con fuelle, tubo capilar, muelle y palanca de contactos — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 11</span></div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT394_02</code> Termostato electrónico compuesto por centralita de mando, potenciómetro y sonda de temperatura — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 19</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT394_01</code> Esquema del termostato mecánico de evaporador con fuelle, muelle y contactos — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 8</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT394_02</code> Sonda termostática NTC y centralita electrónica de mando — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 8</span></div>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">6. EL CIRCUITO ELÉCTRICO.pptx, págs. 7-8, 10-20</p>
+        <p class="fuentes">6. EL CIRCUITO ELÉCTRICO.pptx, págs. 8, 16, 25</p>
       </div>
     </div>
   </section>
@@ -18509,53 +18491,51 @@ Desconecta el compresor cuando la temperatura desciende a valores próximos a la
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 3 · NT402 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 56, 64-65, 92-95</summary>
+      <summary>Variante 2 de 3 · NT402 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 64-65</summary>
   <section id="nt402" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 402 <span class="subtipo">Procedimiento</span></div>
     <div class="nota-body proceso">
       <h1>Vacío del circuito de aire acondicionado</h1>
       <div class="apartado">
         <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
-        <p>Extraer la totalidad del aire no condensable y la humedad retenida en las tuberías y componentes del circuito antes de realizar la carga. (págs. 64, 92)</p>
+        <p>Extraer el aire incondensable y evaporar la humedad residual presente en las tuberías y componentes del circuito de climatización. (pág. 64)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
-        <p>Circuito frigorífico cerrado, sin fugas de gran tamaño y sin presión de refrigerante en su interior. (págs. 64, 92)</p>
+        <p>Circuito frigorífico descargado de refrigerante y con estanqueidad verificada. (pág. 64)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
-        <p>Estación de carga equipada con bomba de vacío y puente de manómetros. (págs. 64, 98-99)</p>
+        <p>Estación de carga con manómetros y bomba de vacío. (pág. 64)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
         <ul>
-<li>Temperatura de ebullición del agua a 1 bar: 100 ºC. Al reducir la presión por debajo de 1 bar con la bomba de vacío, el agua evapora a temperatura ambiente. (págs. 65, 94-95)</li>
+<li>Fundamento físico: A la presión de 1 bar el agua hierve a 100 ºC; al disminuir la presión (depresión) en el circuito, el punto de ebullición baja, permitiendo la ebullición y extracción del agua en estado de vapor. (pág. 65)</li>
 </ul>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
-        <p>Detener la bomba y comprobar en el vacuómetro que la depresión se mantiene estable, lo que confirma la hermeticidad del circuito. (págs. 64, 92)</p>
+        <p>Comprobar el mantenimiento constante del valor de vacío en los manómetros tras la parada de la bomba. (pág. 65)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
-        <p>Utilizar gafas de protección y guantes durante la manipulación de los acoples. (págs. 60, 86)</p>
+        <p>La permanencia de aire y humedad degrada el rendimiento frigorífico, provoca la saturación prematura del filtro deshidratante y genera fallos por congelación o corrosión interna. (pág. 64)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Pasos</div>
         <ol>
-<li>Conectar los latiguillos de alta y baja presión de la estación a las tomas de servicio del vehículo.</li>
-<li>Abrir las válvulas del puente de manómetros dirigiendo las vías hacia la bomba de vacío.</li>
-<li>Poner en marcha la bomba de vacío para generar una fuerte depresión en el interior del circuito.</li>
-<li>Mantener la bomba funcionando durante el tiempo programado para reducir el punto de ebullición del agua y lograr la evaporación completa de la humedad. (págs. 64-65, 93-95, 98-99)</li>
+<li>Conectar los acoplamientos de la estación de carga a los racores de servicio de alta y baja presión.</li>
+<li>Abrir las válvulas manuales de los manómetros de la estación de carga.</li>
+<li>Poner en marcha la bomba de vacío para generar una acusada depresión en el interior del circuito.</li>
+<li>Mantener la bomba funcionando el tiempo necesario para hacer descender el punto de ebullición de la humedad y provocar su evaporación a temperatura ambiente.</li>
+<li>Cerrar las llaves de paso y detener la bomba de vacío, observando que la aguja se mantenga estable para confirmar la ausencia de fugas antes de efectuar la carga de gas.</li>
 </ol>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT402_01</code> Gráfica de curva de presión (bar) frente a temperatura de ebullición del agua (ºC) — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 94</span></div>
+<p>(pág. 64, 65)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">6. EL CIRCUITO ELÉCTRICO.pptx, págs. 56, 64-65, 92-95</p>
+        <p class="fuentes">6. EL CIRCUITO ELÉCTRICO.pptx, págs. 64-65</p>
       </div>
     </div>
   </section>
@@ -21788,10 +21768,10 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </div>
 
   <div class="grupo-componente" id="grp-sensor-temperatura-ntc-exterior">
-    <div class="grupo-cab"><span class="grupo-nombre">Termosensor de temperatura exterior</span><span class="grupo-cuenta">17 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Termosensor de temperatura exterior</span><span class="grupo-cuenta">18 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 17 · NT98 · 208. Regulación de la temperatura.pdf, págs. 48-49</summary>
+      <summary>Variante 1 de 18 · NT98 · 208. Regulación de la temperatura.pdf, págs. 48-49</summary>
   <section id="nt98" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 98 <span class="fusionado">VW</span></div>
     <div class="nota-body">
@@ -21836,7 +21816,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 17 · NT99 · 208. Regulación de la temperatura.pdf, págs. 48-49</summary>
+      <summary>Variante 2 de 18 · NT99 · 208. Regulación de la temperatura.pdf, págs. 48-49</summary>
   <section id="nt99" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 99 <span class="fusionado">VW</span></div>
     <div class="nota-body">
@@ -21875,7 +21855,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 17 · NT153 · PRO 13. Climatización Electrónica.pdf, págs. 103</summary>
+      <summary>Variante 3 de 18 · NT153 · PRO 13. Climatización Electrónica.pdf, págs. 103</summary>
   <section id="nt153" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 153 </div>
     <div class="nota-body">
@@ -21920,7 +21900,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 17 · NT172 · Sensor temperatura aire exterior e interruptor térmico.pdf, págs. 1-2</summary>
+      <summary>Variante 4 de 18 · NT172 · Sensor temperatura aire exterior e interruptor térmico.pdf, págs. 1-2</summary>
   <section id="nt172" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 172 </div>
     <div class="nota-body">
@@ -21959,7 +21939,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 17 · NT181 · TERMOSENSORES A5.pdf, págs. 82</summary>
+      <summary>Variante 5 de 18 · NT181 · TERMOSENSORES A5.pdf, págs. 82</summary>
   <section id="nt181" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 181 <span class="fusionado">Audi</span></div>
     <div class="nota-body">
@@ -21994,7 +21974,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 17 · NT190 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 14</summary>
+      <summary>Variante 6 de 18 · NT190 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 14</summary>
   <section id="nt190" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 190 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -22041,7 +22021,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 17 · NT208 · TERMOSENSORES.pdf, págs. 1</summary>
+      <summary>Variante 7 de 18 · NT208 · TERMOSENSORES.pdf, págs. 1</summary>
   <section id="nt208" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 208 </div>
     <div class="nota-body">
@@ -22086,7 +22066,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 8 de 17 · NT209 · TERMOSENSORES.pdf, págs. 1</summary>
+      <summary>Variante 8 de 18 · NT209 · TERMOSENSORES.pdf, págs. 1</summary>
   <section id="nt209" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 209 </div>
     <div class="nota-body">
@@ -22125,7 +22105,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 9 de 17 · NT287 · LA CLIMATIZACIÓN.pdf, págs. 99</summary>
+      <summary>Variante 9 de 18 · NT287 · LA CLIMATIZACIÓN.pdf, págs. 99</summary>
   <section id="nt287" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 287 </div>
     <div class="nota-body">
@@ -22173,7 +22153,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 10 de 17 · NT291 · LA CLIMATIZACIÓN.pdf, págs. 111-112</summary>
+      <summary>Variante 10 de 18 · NT291 · LA CLIMATIZACIÓN.pdf, págs. 111-112</summary>
   <section id="nt291" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 291 </div>
     <div class="nota-body">
@@ -22221,7 +22201,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 11 de 17 · NT346 · Toledo 99 CLIMA.pdf, págs. 49</summary>
+      <summary>Variante 11 de 18 · NT346 · Toledo 99 CLIMA.pdf, págs. 49</summary>
   <section id="nt346" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 346 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -22261,7 +22241,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 12 de 17 · NT419 · 409_e         Audi A4 _08.pdf, págs. 66-67</summary>
+      <summary>Variante 12 de 18 · NT419 · 409_e         Audi A4 _08.pdf, págs. 66-67</summary>
   <section id="nt419" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 419 <span class="fusionado">Audi</span></div>
     <div class="nota-body">
@@ -22302,7 +22282,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 13 de 17 · NT501 · Regulación del Sistema.pdf, págs. 48-49</summary>
+      <summary>Variante 13 de 18 · NT501 · Regulación del Sistema.pdf, págs. 48-49</summary>
   <section id="nt501" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 501 </div>
     <div class="nota-body">
@@ -22335,7 +22315,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 14 de 17 · NT502 · Regulación del Sistema.pdf, págs. 48-49</summary>
+      <summary>Variante 14 de 18 · NT502 · Regulación del Sistema.pdf, págs. 48-49</summary>
   <section id="nt502" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 502 </div>
     <div class="nota-body">
@@ -22364,7 +22344,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 15 de 17 · NT592 · CD 72. Climatización en Ibiza99.pdf, págs. 14</summary>
+      <summary>Variante 15 de 18 · NT592 · CD 72. Climatización en Ibiza99.pdf, págs. 14</summary>
   <section id="nt592" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 592 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -22411,7 +22391,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 16 de 17 · NT623 · CLIMATIZADOR MD FRAN.docx, págs. 17</summary>
+      <summary>Variante 16 de 18 · NT623 · CLIMATIZADOR MD FRAN.docx, págs. 17</summary>
   <section id="nt623" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 623 </div>
     <div class="nota-body">
@@ -22458,7 +22438,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 17 de 17 · NT624 · CLIMATIZADOR MD FRAN.docx, págs. 17</summary>
+      <summary>Variante 17 de 18 · NT624 · CLIMATIZADOR MD FRAN.docx, págs. 17</summary>
   <section id="nt624" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 624 </div>
     <div class="nota-body">
@@ -22504,13 +22484,44 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
     </div>
   </section>
     </details>
+    <details class="variante">
+      <summary>Variante 18 de 18 · NT752 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 44</summary>
+  <section id="nt752" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 752 </div>
+    <div class="nota-body">
+      <h1>Sensor de temperatura exterior</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Medir la temperatura del aire ambiente exterior para la gestión de la mezcla térmica y la toma de aire en la unidad de control. (pág. 44)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Envía la señal de temperatura ambiente al calculador de climatización. La unidad de control utiliza este dato para limitar el salto térmico a un máximo de 20 ºC entre el interior del habitáculo y el exterior, y para decidir la procedencia del aire (exterior o recirculado) necesario para satisfacer la demanda de confort. (pág. 44)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Salto térmico máximo autorizado entre interior y exterior: 20 ºC. (pág. 44)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Sonda de temperatura exterior integrada en la red de sensores de la climatización regulada. (pág. 44)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">6. EL CIRCUITO ELÉCTRICO.pptx, págs. 44</p>
+      </div>
+    </div>
+  </section>
+    </details>
   </div>
 
   <div class="grupo-componente" id="grp-sensor-temperatura-ntc-interior">
-    <div class="grupo-cab"><span class="grupo-nombre">Termosensor del tablero de instrumentos con turbina de aire</span><span class="grupo-cuenta">22 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Termosensor del tablero de instrumentos con turbina de aire</span><span class="grupo-cuenta">23 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 22 · NT100 · 208. Regulación de la temperatura.pdf, págs. 50</summary>
+      <summary>Variante 1 de 23 · NT100 · 208. Regulación de la temperatura.pdf, págs. 50</summary>
   <section id="nt100" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 100 <span class="fusionado">VW</span></div>
     <div class="nota-body">
@@ -22555,7 +22566,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 22 · NT101 · 208. Regulación de la temperatura.pdf, págs. 50-51</summary>
+      <summary>Variante 2 de 23 · NT101 · 208. Regulación de la temperatura.pdf, págs. 50-51</summary>
   <section id="nt101" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 101 <span class="fusionado">VW</span></div>
     <div class="nota-body">
@@ -22600,7 +22611,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 22 · NT155 · PRO 13. Climatización Electrónica.pdf, págs. 104</summary>
+      <summary>Variante 3 de 23 · NT155 · PRO 13. Climatización Electrónica.pdf, págs. 104</summary>
   <section id="nt155" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 155 </div>
     <div class="nota-body">
@@ -22641,7 +22652,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 22 · NT156 · PRO 13. Climatización Electrónica.pdf, págs. 104</summary>
+      <summary>Variante 4 de 23 · NT156 · PRO 13. Climatización Electrónica.pdf, págs. 104</summary>
   <section id="nt156" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 156 </div>
     <div class="nota-body">
@@ -22682,7 +22693,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 22 · NT171 · Sensor temperatura aire de entrada.pdf, págs. 1-2</summary>
+      <summary>Variante 5 de 23 · NT171 · Sensor temperatura aire de entrada.pdf, págs. 1-2</summary>
   <section id="nt171" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 171 </div>
     <div class="nota-body">
@@ -22727,7 +22738,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 22 · NT180 · Sensor temperatura interior.pdf, págs. 1-2</summary>
+      <summary>Variante 6 de 23 · NT180 · Sensor temperatura interior.pdf, págs. 1-2</summary>
   <section id="nt180" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 180 </div>
     <div class="nota-body">
@@ -22772,7 +22783,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 22 · NT188 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 12, 24</summary>
+      <summary>Variante 7 de 23 · NT188 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 12, 24</summary>
   <section id="nt188" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 188 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -22819,7 +22830,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 8 de 22 · NT202 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 24</summary>
+      <summary>Variante 8 de 23 · NT202 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 24</summary>
   <section id="nt202" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 202 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -22860,7 +22871,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 9 de 22 · NT210 · TERMOSENSORES.pdf, págs. 1-2</summary>
+      <summary>Variante 9 de 23 · NT210 · TERMOSENSORES.pdf, págs. 1-2</summary>
   <section id="nt210" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 210 </div>
     <div class="nota-body">
@@ -22909,7 +22920,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 10 de 22 · NT211 · TERMOSENSORES.pdf, págs. 2</summary>
+      <summary>Variante 10 de 23 · NT211 · TERMOSENSORES.pdf, págs. 2</summary>
   <section id="nt211" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 211 </div>
     <div class="nota-body">
@@ -22955,7 +22966,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 11 de 22 · NT292 · LA CLIMATIZACIÓN.pdf, págs. 113</summary>
+      <summary>Variante 11 de 23 · NT292 · LA CLIMATIZACIÓN.pdf, págs. 113</summary>
   <section id="nt292" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 292 </div>
     <div class="nota-body">
@@ -23003,7 +23014,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 12 de 22 · NT503 · Regulación del Sistema.pdf, págs. 49</summary>
+      <summary>Variante 12 de 23 · NT503 · Regulación del Sistema.pdf, págs. 49</summary>
   <section id="nt503" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 503 </div>
     <div class="nota-body">
@@ -23040,7 +23051,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 13 de 22 · NT504 · Regulación del Sistema.pdf, págs. 49</summary>
+      <summary>Variante 13 de 23 · NT504 · Regulación del Sistema.pdf, págs. 49</summary>
   <section id="nt504" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 504 </div>
     <div class="nota-body">
@@ -23073,7 +23084,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 14 de 22 · NT533 · Ibiza99 - Actuadores.pdf, págs. 23-24</summary>
+      <summary>Variante 14 de 23 · NT533 · Ibiza99 - Actuadores.pdf, págs. 23-24</summary>
   <section id="nt533" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 533 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -23110,7 +23121,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 15 de 22 · NT537 · MOTOR PARA LA TURBINA DEL S. Cº interior.pdf, págs. 24</summary>
+      <summary>Variante 15 de 23 · NT537 · MOTOR PARA LA TURBINA DEL S. Cº interior.pdf, págs. 24</summary>
   <section id="nt537" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 537 </div>
     <div class="nota-body">
@@ -23147,7 +23158,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 16 de 22 · NT552 · MOTOR TURBINA S. Cº interior.pdf, págs. 24</summary>
+      <summary>Variante 16 de 23 · NT552 · MOTOR TURBINA S. Cº interior.pdf, págs. 24</summary>
   <section id="nt552" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 552 </div>
     <div class="nota-body">
@@ -23184,7 +23195,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 17 de 22 · NT560 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 12-13</summary>
+      <summary>Variante 17 de 23 · NT560 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 12-13</summary>
   <section id="nt560" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 560 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -23234,7 +23245,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 18 de 22 · NT590 · CD 72. Climatización en Ibiza99.pdf, págs. 12, 24</summary>
+      <summary>Variante 18 de 23 · NT590 · CD 72. Climatización en Ibiza99.pdf, págs. 12, 24</summary>
   <section id="nt590" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 590 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -23281,7 +23292,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 19 de 22 · NT591 · CD 72. Climatización en Ibiza99.pdf, págs. 12-13</summary>
+      <summary>Variante 19 de 23 · NT591 · CD 72. Climatización en Ibiza99.pdf, págs. 12-13</summary>
   <section id="nt591" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 591 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -23331,7 +23342,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 20 de 22 · NT625 · CLIMATIZADOR MD FRAN.docx, págs. 17, 18</summary>
+      <summary>Variante 20 de 23 · NT625 · CLIMATIZADOR MD FRAN.docx, págs. 17, 18</summary>
   <section id="nt625" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 625 </div>
     <div class="nota-body">
@@ -23382,7 +23393,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 21 de 22 · NT626 · CLIMATIZADOR MD FRAN.docx, págs. 18</summary>
+      <summary>Variante 21 de 23 · NT626 · CLIMATIZADOR MD FRAN.docx, págs. 18</summary>
   <section id="nt626" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 626 </div>
     <div class="nota-body">
@@ -23429,7 +23440,7 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 22 de 22 · NT633 · DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, págs</summary>
+      <summary>Variante 22 de 23 · NT633 · DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, págs</summary>
   <section id="nt633" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 633 <span class="fusionado">Valeo</span></div>
     <div class="nota-body">
@@ -23461,6 +23472,31 @@ Sin masa en contacto: Autoclima. (pág. 34).</p>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, págs. 2-3, 5</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 23 de 23 · NT751 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 44</summary>
+  <section id="nt751" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 751 </div>
+    <div class="nota-body">
+      <h1>Sensor de temperatura interior</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Captar la temperatura efectiva del aire en el interior del habitáculo y suministrar esta señal a la unidad de control de climatización. (pág. 44)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Permite a la unidad de control verificar la coherencia entre la temperatura medida en el habitáculo y el nivel de confort o temperatura de consigna solicitada por los ocupantes. (pág. 44)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Sonda térmica ubicada en la zona del salpicadero o cuadro de mandos en instalaciones de climatización regulada. (pág. 44)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">6. EL CIRCUITO ELÉCTRICO.pptx, págs. 44</p>
       </div>
     </div>
   </section>
@@ -24208,97 +24244,91 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 11 de 26 · NT398 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 46, 61-62</summary>
+      <summary>Variante 11 de 26 · NT398 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 46</summary>
   <section id="nt398" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 398 </div>
     <div class="nota-body">
-      <h1>Motor de mezcla de corriente continua con potenciómetro</h1>
+      <h1>Servomotor de mezcla de corriente continua con potenciómetro</h1>
       <div class="apartado">
         <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Desplazar mecánicamente la trampilla de mezcla para modificar la temperatura del aire en respuesta a la orden enviada por la unidad de control. (págs. 46, 62)</p>
+        <p>Accionar el desplazamiento de la trampilla de mezcla para modular la proporción de aire caliente y frío. (pág. 46)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>Al recibir alimentación eléctrica, el motor gira y mueve el potenciómetro a través del tren de engranajes. La unidad de control mide la tensión de salida devuelta por la pista del potenciómetro para conocer la posición exacta del motor y detenerlo en el punto requerido. (pág. 62)</p>
+        <p>Cuando el motor recibe alimentación de 12 V y gira, arrastra el mecanismo de la trampilla y la pista del potenciómetro de copia. La unidad de control analiza la tensión de salida del potenciómetro para conocer la posición angular exacta del motor y detenerlo en la posición correspondiente a la temperatura solicitada. (pág. 46)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
         <ul>
-<li>Tensión nominal de alimentación del motor: 12 V. (pág. 62)</li>
+<li>Tensión de alimentación del motor: 12 V. (pág. 46)</li>
 </ul>
       </div>
       <div class="apartado">
-        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <p>Desgaste en la pista del potenciómetro o desajuste de las marcas de posición de los topes mecánicos. (pág. 62)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
-        <p>Medir con el equipo de diagnosis la variación de la tensión de retorno del potenciómetro a lo largo de todo el recorrido de la trampilla. (pág. 62)</p>
-      </div>
-      <div class="apartado">
         <div class="apartado-titulo">Tipos y características</div>
-        <p>Motor eléctrico de corriente continua alimentado a 12 V que acciona un mecanismo de engranaje con tornillo sin fin y un potenciómetro interno de memorización de posición. (págs. 61-62)</p>
+        <p>Motor de corriente continua alimentado a 12 voltios que acciona un tren de engranajes y dispone de un potenciómetro interno solidario al eje. (pág. 46)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Mantenimiento</div>
-        <p>Requiere un reglaje inicial del tope mecánico o una alineación de montaje según marca de referencia. (pág. 62)</p>
+        <p>Este tipo de servomotor requiere un procedimiento de reglaje de topes mecánicos o alineación con marcas de posición. (pág. 46)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT398_01</code> Esquema interno de motor de CC con mecanismo de engranaje y potenciómetro deslizante de posición — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 61</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT398_01</code> Estructura interna del motor de CC con reductora de engranajes y potenciómetro de posición — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 46</span></div>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">6. EL CIRCUITO ELÉCTRICO.pptx, págs. 46, 61-62</p>
+        <p class="fuentes">6. EL CIRCUITO ELÉCTRICO.pptx, págs. 46</p>
       </div>
     </div>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 12 de 26 · NT399 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 47-51, 63-75</summary>
+      <summary>Variante 12 de 26 · NT399 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 47-51</summary>
   <section id="nt399" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 399 </div>
     <div class="nota-body">
-      <h1>Motor de mezcla paso a paso</h1>
+      <h1>Servomotor de mezcla paso a paso</h1>
       <div class="apartado">
         <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Posicionar la trampilla de mezcla por impulsos discretos sin necesidad de utilizar un potenciómetro de retorno de posición. (págs. 47, 50-51)</p>
+        <p>Ejecutar desplazamientos angulares precisos en las trampillas de mezcla, reciclaje o distribución del sistema de aire sin necesidad de potenciómetro de retorno. (pág. 47)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>Al alimentar secuencialmente los bobinados A (terminales 1-2) y B (terminales 3-4) alternando impulsos positivos y negativos, el conjunto pivota 1/8 de vuelta en cada cambio, realizando un «paso». Se requieren 4 pasos para completar un ciclo en sentido horario o antihorario. La unidad de control calcula la posición memorizando el recuento total de pasos aplicados. (págs. 47-51, 66-75)</p>
+        <ul>
+<li>La alimentación del bobinado A (bornes 1 y 2) genera un campo magnético que hace pivotar el rotor un "paso" (1/8 de vuelta en rotor de 4 polos).</li>
+<li>Para continuar el giro sin bloqueo, la unidad de control alimenta secuencialmente un segundo bobinado B (bornes 3 y 4) situado a 45º.</li>
+<li>Alternando la polaridad (+ / -) entre los bobinados A y B se consigue el desplazamiento en sentido horario o antihorario, completando un ciclo de 4 pasos.</li>
+<li>La unidad de control contabiliza internamente el número de pasos aplicados para determinar la posición teórica de la trampilla.</li>
+</ul>
+<p>(pág. 47-51)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
         <ul>
-<li>Giro por paso: 1/8 de vuelta.</li>
-<li>Pasos por ciclo completo: 4 pasos.</li>
-<li>Opciones de construcción: 4, 6 o 12 pares de polos. (págs. 47, 51)</li>
+<li>Secuencia de ciclo básico: 4 pasos para un ciclo magnético completo. (pág. 51)</li>
 </ul>
       </div>
       <div class="apartado">
-        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <p>Pérdida de sincronismo o salto de pasos provocado por durezas mecánicas en los ejes de las trampillas. (pág. 51)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
-        <p>Verificar la tabla de polaridad enviada por la unidad de control en los bornes 1-2 y 3-4 durante la activación del motor. (págs. 50-51, 73-74)</p>
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Desfase entre la posición contada por el calculador y la posición real de la trampilla por frenado o bloqueo mecánico. (pág. 51)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Tipos y características</div>
-        <p>Consta de un rotor central de imán permanente y dos electroimanes o bobinados (A y B) orientados a 45º. Existen versiones con 4, 6 y 12 pares de polos en el elemento giratorio. (págs. 48-51, 64-71)</p>
+        <p>Actuador electromecánico formado por un rotor permanente multipolar (4, 6 o 12 pares de polos) y un estator con bobinados independientes (A y B) desfasados angularmente. (pág. 47, 51)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Mantenimiento</div>
-        <p>Ejecutar el procedimiento automático de «re-inicialización» (búsqueda de topes) para que la unidad de control memorice la posición real de inicio. (pág. 51)</p>
+        <p>Realizar periódicamente un reglaje automático de re-inicialización (búsqueda de topes mecánicos) para que la unidad de control reconozca la posición real de partida y ponga a cero el contador de pasos. (pág. 51)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT399_01</code> Disposición de rotor magnético N-S y bobinados desfasados a 45º para movimiento paso a paso — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 67</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT399_01</code> Disposición de rotor multipolar N-S y electroimán de excitación — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 47</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT399_02</code> Montaje de segundo bobinado B a 45º respecto al bobinado A — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 48</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT399_03</code> Tabla de impulsos eléctricos y polaridad en bornes 1-2 y 3-4 para giro en ambos sentidos — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 50</span></div>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">6. EL CIRCUITO ELÉCTRICO.pptx, págs. 47-51, 63-75</p>
+        <p class="fuentes">6. EL CIRCUITO ELÉCTRICO.pptx, págs. 47-51</p>
       </div>
     </div>
   </section>
@@ -27553,41 +27583,32 @@ Mide la capacidad de una sustancia para destruir el ozono estratosférico en com
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 9 · NT400 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 56, 58-59, 82-85</summary>
+      <summary>Variante 6 de 9 · NT400 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 45</summary>
   <section id="nt400" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 400 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
-      <h1>Normas de utilización y confort del climatizador</h1>
+      <h1>Higrometría y confort térmico del habitáculo</h1>
       <div class="apartado">
         <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
-        <p>Uso correcto de la distribución del caudal de aire, control de los niveles de humedad y lubricación periódica de los elementos móviles del compresor. (págs. 58-59, 82-85)</p>
+        <p>Desarrollo de las funciones del climatizador regulado basándose en la respuesta fisiológica del cuerpo humano ante las variables del entorno térmico. (pág. 45)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
         <ol>
-<li>Orientación de difusores: dirigir los caudales hacia el techo o laterales para evitar corrientes de aire directas sobre los pasajeros. (págs. 58, 82)</li>
-<li>Agua de condensación: la presencia de goteo bajo el vehículo es un fenómeno normal procedente del tubo de desagüe del evaporador al deshumectar el aire. (págs. 58, 82)</li>
-<li>Mantenimiento del compresor: hacer funcionar el climatizador con regularidad permite la circulación de gas y aceite, lubricando el retén frontal (evita fugas) y protegiendo las pistas de los rodamientos frente a las vibraciones. (págs. 58-59, 83-84)</li>
-<li>Arranque tras estacionar al sol: ajustar máxima ventilación y máximo frío hacia el tablero/pies; circular con ventanillas bajadas unos minutos; subir cristales al bajar la temperatura; usar refrigeración máxima (recirculación cerrada) si el calor exterior es elevado. (págs. 59, 84-85)</li>
+<li>La sensación de confort depende de la conjunción de múltiples parámetros: temperatura adecuada, grado de humedad, ausencia de olores, bajo nivel sonoro, velocidad del aire coordinada, iluminación y entorno cromático.</li>
+<li>La alteración de cualquiera de estos factores modifica la percepción de calor o frío del usuario.</li>
+<li>La temperatura indicada en la pantalla del climatizador sintetiza la gestión de estos parámetros globales.</li>
+<li>Para cumplir con la fisiología humana, el reparto del aire genera una estratificación en la cual la temperatura a la altura de los pies resulta superior a la existente a la altura de la cabeza.</li>
 </ol>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Tiempo en refrigeración máxima (recirculación): no prolongar en exceso para evitar viciar el aire del habitáculo y disminuir la seguridad preventiva. (págs. 59, 85)</li>
-</ul>
+<p>(pág. 45)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Objeto</div>
-        <p>Asegurar el confort térmico, prevenir el empañado de los cristales y proteger los componentes mecánicos del sistema de climatización. (págs. 58, 82-83)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Errores de concepto frecuentes</div>
-        <p>Confundir el charco de agua de condensación bajo el vehículo con una fuga del circuito de refrigeración del motor. (págs. 58, 82)</p>
+        <p>Garantizar las condiciones fisiológicas óptimas de temperatura, humedad y renovación de aire necesarias para el bienestar de los pasajeros. (pág. 45)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">6. EL CIRCUITO ELÉCTRICO.pptx, págs. 56, 58-59, 82-85</p>
+        <p class="fuentes">6. EL CIRCUITO ELÉCTRICO.pptx, págs. 45</p>
       </div>
     </div>
   </section>
@@ -36440,8 +36461,154 @@ En la versión de nueva generación, ha sido revisada técnicamente y adaptada e
     </div>
   </section>
 
+  <section id="nt750" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 750 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Corte de acoplamiento del compresor en aceleración diésel</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Desconexión temporal y automatizada del embrague electromagnético del compresor mediante la acción combinada de contactores en los pedales y relés de mando temporizados. (pág. 23)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>El funcionamiento del sistema se desarrolla mediante la siguiente lógica:</p>
+<ol>
+<li>Al pisar el pedal de embrague a fondo (contactor 421 abierto) y superar un cierto nivel de carga en el acelerador (contactor 405 en la bomba de inyección 589), se reúnen las dos condiciones de activación.</li>
+<li>La apertura del circuito desexcita el relé 661, interrumpiendo la alimentación del relé temporizado.</li>
+<li>El relé de mando 584 abre sus contactos, cortando la corriente del embrague electromagnético 171 del compresor durante un periodo fijo de cuatro segundos.</li>
+<li>Un diodo de protección en la línea evita la retroalimentación del embrague desde el cajetín de pre-postcalentamiento 257 durante las fases de arranque y calentamiento del motor.</li>
+<li>El contactor del pedal de embrague no requiere reglaje y permanece cerrado con el pedal en reposo (embragado).</li>
+</ol>
+<p>(pág. 23, 24)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Duración del corte temporizado del compresor: 4 segundos. (pág. 23)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Evitar el riesgo de calado del motor y optimizar el par disponible en las ruedas durante los arranques en rampa y fases de aceleración con alta carga del motor en versiones diésel. (pág. 23)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT750_01</code> Esquema del circuito de corte del embrague del compresor diésel con relés 661, 635, 584 y contactores 405 y 421 — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 24</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">6. EL CIRCUITO ELÉCTRICO.pptx, págs. 23-24</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt753" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 753 <span class="subtipo">Procedimiento</span></div>
+    <div class="nota-body proceso">
+      <h1>Normas de uso y mantenimiento preventivo del climatizador</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Definir las pautas de utilización y precauciones operativas para conservar los elementos mecánicos del climatizador, garantizar la visibilidad y optimizar el confort. (pág. 58)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Vehículo sometido a uso diario o tras estacionamiento prolongado bajo el sol en época calurosa. (pág. 58)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Mandos del sistema de climatización y elevalunas del vehículo. (pág. 58)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Pérdida de agua bajo el vehículo: Fenómeno normal producido por la evacuación de condensados del evaporador a través de los tubos de desagüe. (pág. 58)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Comprobar el correcto desempañado de los cristales para asegurar la visibilidad en conducción y verificar la ausencia de ruidos en el compresor. (pág. 58)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>El funcionamiento periódico del compresor permite la circulación continua de refrigerante y aceite, manteniendo lubricado el retén frontal del compresor para evitar fugas de gas y protegiendo las pistas de los rodamientos contra deterioros por vibración del motor. (pág. 58)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Pasos</div>
+        <p>Protocolo de uso tras parada prolongada al sol:</p>
+<ol>
+<li>Orientar los difusores de aire hacia el techo o paredes laterales para impedir corrientes de aire molestas.</li>
+<li>Antes de arrancar, situar los mandos en la posición de máxima ventilación y máximo frío, dirigiendo el caudal hacia el tablero y la parte inferior.</li>
+<li>Iniciar la marcha circulando unos minutos con las ventanillas bajadas para renovar el aire sobrecalentado del habitáculo.</li>
+<li>Subir las ventanillas cuando la temperatura interior descienda a niveles aceptables.</li>
+<li>Seleccionar la refrigeración máxima (reciclaje cerrado) para acelerar el enfriamiento, evitando mantener esta posición durante mucho tiempo para no viciar el aire interior.</li>
+<li>Ajustar los mandos al nivel de temperatura de consigna deseado.</li>
+</ol>
+<p>(pág. 58, 59)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">6. EL CIRCUITO ELÉCTRICO.pptx, págs. 58-59</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt754" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 754 <span class="subtipo">Procedimiento</span></div>
+    <div class="nota-body proceso">
+      <h1>Prevención de riesgos y seguridad con fluidos refrigerantes</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Establecer las normas de seguridad e higiene laboral para la manipulación de fluidos refrigerantes en el taller y las pautas de primeros auxilios. (pág. 60)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <p>Intervenciones en el circuito frigorífico realizadas exclusivamente por personal especializado en zonas adecuadamente ventiladas. (pág. 60)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Gafas de protección ocular, guantes de látex y equipo de lavado ocular o abundante agua tibia. (pág. 60)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Temperatura de quemadura por congelación del fluido: aprox. -30 ºC.</li>
+<li>Tiempo de lavado en contacto ocular: mínimo 10 minutos.</li>
+<li>Volumen de agua a ingerir tras ingestión en paciente consciente: 200-300 ml.</li>
+<li>Límite térmico en horno de secado de pintura: máximo 20 minutos a 80 ºC (vaciando previamente la instalación de A/C si se supera este tiempo). (pág. 60, 61, 63)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Asegurarse de que las llaves de la estación de carga y recipientes estén totalmente cerradas antes de conectar o desconectar los acoplamientos. (pág. 62)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <ul>
+<li>Prohibida la realización de trabajos en circuitos frigoríficos dentro de fosos de reparación, dado que el gas refrigerante es más pesado que el aire y se acumula en el fondo con riesgo de sofocación.</li>
+<li>Prohibición absoluta de fumar: el gas refrigerante se descompone en productos venenosos al entrar en contacto con las ascuas.</li>
+<li>No sobrepasar la capacidad nominal de carga de los cilindros o bombonas de almacenamiento.</li>
+</ul>
+<p>(pág. 60, 62)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Pasos</div>
+        <p>Primeros auxilios ante accidentes con refrigerante:</p>
+<ol>
+<li>Contacto con la piel: descongelar con agua la zona afectada; retirar prendas contaminadas evitando desgarros si existen adherencias a la piel por bajas temperaturas (-30 ºC); lavar inmediatamente con abundante agua tibia y solicitar asistencia médica ante irritación o ampollas.</li>
+<li>Contacto con los ojos: lavar inmediatamente con solución ocular o agua limpia, manteniendo los párpados cerrados al menos 10 minutos; acudir urgentemente al médico.</li>
+<li>Ingestión accidental: no provocar el vómito; si el afectado está consciente, hacer enjuagar la boca y beber 200-300 ml de agua; solicitar asistencia médica inmediata.</li>
+</ol>
+<p>(pág. 60, 61)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">6. EL CIRCUITO ELÉCTRICO.pptx, págs. 60-63</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    741 notas técnicas · generado el 25/09/2026.
+    746 notas técnicas · generado el 25/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 

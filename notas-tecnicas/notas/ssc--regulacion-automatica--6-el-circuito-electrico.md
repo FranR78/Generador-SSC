@@ -6,42 +6,33 @@ nt: 397
 tipo: proceso
 subtipo: fundamento
 clase: fundamento
-titulo: "Climatización regulada"
-menu: "Climatización regulada"
+titulo: "Regulación de climatización semiautomática y automática"
+menu: "Regulación de climatización semiautomá"
 grupo: "Control de climatización"
 clave: regulacion-automatica
 area: climatizacion
 sistema: "control-climatizacion"
-fuentes: "6. EL CIRCUITO ELÉCTRICO.pptx, págs. 42, 44-45, 52-54, 108-111"
-relacionados: ["unidad-control-climatizador", "sensor-temperatura-interior", "sensor-temperatura-exterior", "servomotor-trampilla"]
-palabras: ["climatizacion regulada", "semiautomatica", "automatica", "sonda interior", "sonda exterior", "nivel de confort"]
+fuentes: "6. EL CIRCUITO ELÉCTRICO.pptx, págs. 53-54"
+relacionados: ["unidad-control-climatizador", "distribucion-aire"]
+palabras: ["semiautomática", "automática", "velocidad motoventilador", "distribución de aire", "calculador"]
 ---
 
 ## Objeto
 
-Ajustar de forma automática la temperatura, el caudal y la distribución del aire en el habitáculo para garantizar las condiciones de confort fisiológico. (págs. 44-45, 53)
+Gestionar las funciones térmicas y aerodinámicas del sistema de climatización mediante la intervención de un calculador electrónico. (pág. 53)
 
 ## Fundamento
 
-El calculador de climatización procesa las señales de las sondas de temperatura interior, exterior y del evaporador junto con la consigna fijada para controlar el motor de mezcla, la trampilla de reciclaje y la velocidad de la turbina. (págs. 44, 53, 55)
+Control automático de actuadores e impulsión a partir de la lectura de sensores de temperatura y las consignas de usuario. (pág. 53)
 
 ## Desarrollo
 
-- Sonda de temperatura interior: verifica la coherencia entre la temperatura real del habitáculo y el nivel de confort demandado. (pág. 44)
-- Sonda de temperatura exterior: impide que la unidad autorice un salto térmico superior a 20 ºC entre el interior y el exterior. Determina además la procedencia del aire (exterior o recirculado). (pág. 44)
-- Niveles de equipamiento:
-  - Climatización semiautomática: regula automáticamente la temperatura de confort, la velocidad del electroventilador y la posición de la trampilla de reciclaje. (pág. 53)
-  - Climatización automática: además de las funciones anteriores, gobierna automáticamente la posición de las trampillas de repartición de aire. (págs. 53, 78)
-- Nivel de confort: la temperatura mostrada en pantalla considera factores fisiológicos (humedad, ruido, velocidad del aire). En el reparto de aire, la temperatura entregada es mayor en la zona de los pies que en la zona de la cabeza. (pág. 45)
+Niveles de automatización en la regulación:
+- Climatización Semiautomática: La unidad de control regula automáticamente la temperatura de confort (mezcla), la velocidad de soplado del motoventilador de habitáculo y la posición de la trampilla de reciclaje. La repartición de salidas de aire debe ser seleccionada manualmente por el usuario.
+- Climatización Automática: Además de regular temperatura, caudal de aire y reciclaje, la unidad de control gobierna de forma automatizada las trampillas de repartición para dirigir el aire hacia parabrisas, difusores frontales o pies según las necesidades del habitáculo.
 
-## Valores de referencia
-
-- Diferencia térmica máxima autorizada interior/exterior: 20 ºC. (pág. 44)
-
-## Errores de concepto frecuentes
-
-Creer que el sistema busca una temperatura idéntica en todas las alturas del vehículo. La unidad envía aire a mayor temperatura a los pies que a la cabeza para cumplir los requisitos de confort fisiológico. (pág. 45)
+(pág. 53, 54)
 
 ## Imágenes requeridas
 
-- Esquema sinóptico de la climatización regulada con entradas de sondas y salidas a servomotores y relés — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 55
+- Esquema general del calculador electrónico de climatización en un sistema automático con servomotores y captadores — Fuente: 6. EL CIRCUITO ELÉCTRICO.pptx, pág. 53
