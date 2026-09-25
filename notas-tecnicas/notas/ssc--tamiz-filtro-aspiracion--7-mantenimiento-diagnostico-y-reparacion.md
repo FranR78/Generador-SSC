@@ -5,8 +5,8 @@ unidad: clima
 nt: 408
 tipo: elemento
 clase: componente
-titulo: "Tamiz del filtro de aspiración del compresor"
-menu: "Tamiz del filtro de aspiración del com"
+titulo: "Tamiz filtro de aspiración del compresor"
+menu: "Tamiz filtro de aspiración del compres"
 grupo: "Circuito frigorífico"
 clave: tamiz-filtro-aspiracion
 area: climatizacion
@@ -14,37 +14,35 @@ sistema: "circuito-frigorifico"
 forma_parte_de: compresor
 fuentes: "7. MANTENIMIENTO, DIAGNOSTICO Y REPARACION.pptx, págs. 116-117"
 relacionados: ["compresor", "lavado-circuito"]
-palabras: ["tamiz", "filtro aspiracion", "limaduras", "lavado de circuito", "gripaje"]
+palabras: ["tamiz", "filtro aspiración", "limaduras", "gripaje", "efecto esmerilado"]
 ---
 
 ## Misión
 
-Retener limaduras y partículas metálicas en el tubo de aspiración (Baja presión) del compresor tras operaciones de lavado o reparación del circuito frigorífico. (págs. 116-117)
+Proteger el compresor atrapando limaduras de metal o partículas metálicas procedentes de averías previas para evitar su gripaje tras una reparación o limpieza del circuito. (pág. 117)
 
 ## Tipos y características
 
-Tamiz metálico en forma de dedal cilíndrico de malla fina, diseñado para insertarse directamente en la entrada de la tubería de aspiración del compresor. (pág. 116)
+Filtro de malla de alambre fino (tamiz) diseñado para insertarse en el interior del tubo o racor de aspiración (línea de baja presión) a la entrada del compresor. (pág. 116, 117)
 
 ## Principio de funcionamiento
 
-Filtra mecánicamente el refrigerante en estado gaseoso que regresa al compresor. Atrapa las virutas sólidas sueltas en las tuberías impidiendo que penetren en los cilindros o paletas y causen el gripaje de la bomba. (pág. 117)
+El flujo de gas refrigerante y aceite procedente del evaporador atraviesa la malla del tamiz antes de ingresar en la cámara de compresión. Las partículas gruesas y limaduras metálicas quedan retenidas en la malla, impidiendo que penetren en los cilindros y pistones del compresor. (pág. 117)
 
 ## Anomalías frecuentes
 
-Inserción del tamiz en circuitos sucios sin haber realizado previamente el lavado o barrido de las tuberías. (pág. 117)
+- Obstrucción por acumulación excesiva de partículas si se instala sin realizar previamente el lavado del circuito, provocando restricción en el caudal de aspiración.
+- Permeabilidad a la suciedad fina: la suciedad no metálica o de pequeño tamaño atraviesa el tamiz, ejerciendo una acción abrasiva (efecto esmerilado) en las zonas de fricción del compresor que causa averías a medio plazo. (pág. 117)
 
 ## Comportamiento en avería
 
-Si no se efectúa el lavado del circuito, las impurezas finas atraviesan el tamiz creando una pasta abrasiva que ejerce un efecto de esmerilado en las zonas de fricción interna del compresor, provocando su fallo prematuro. (pág. 117)
-
-## Cómo comprobarlo
-
-Inspección visual del estado de limpieza de la malla al desmontar el racor de la toma de Baja del compresor. (págs. 116-117)
+Pérdida de rendimiento frigorífico por restricción en el lado de baja presión si el tamiz se colmata, o gripaje progresivo del compresor si la suciedad fina sigue circulando. (pág. 117)
 
 ## Mantenimiento
 
-Es muy recomendable instalar este tamiz en el tubo de aspiración una vez completado el lavado del circuito. Montar el tamiz no sustituye en ningún caso la obligación de lavar el circuito frigorífico. (pág. 117)
+- Es altamente recomendable instalar el tamiz en la línea de aspiración una vez completado el lavado o limpieza integral del circuito frigorífico.
+- Se debe evitar la instalación del tamiz como sustituto del lavado del circuito, ya que no detiene la suciedad fina y terminará dañando el compresor por esmerilado. (pág. 117)
 
 ## Imágenes requeridas
 
-- Conjunto de tamices para el tubo de aspiración del compresor — Fuente: 7. MANTENIMIENTO, DIAGNOSTICO Y REPARACION.pptx, pág. 116
+- Juegos de tamices filtro para montaje en la toma de aspiración del compresor — Fuente: 7. MANTENIMIENTO, DIAGNOSTICO Y REPARACION.pptx, pág. 116
