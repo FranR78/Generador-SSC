@@ -3666,6 +3666,14 @@
    "hecha": false
   },
   {
+   "nombre": "NT723_01",
+   "nt": 723,
+   "titulo": "Circuito de climatización con válvula de expansión",
+   "seccion": "2. Fundamentos",
+   "descripcion": "Esquema general del despiece del circuito de climatización con válvula de expansión y ubicación de sus 8 componentes principales — Fuente: despiece_de_un_circuito_de_climatizacionpdf-73085413.pdf, pág. 1 (pág. 1).",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -3690,7 +3698,7 @@
    "hecha": false
   }
  ],
- "total": 714,
+ "total": 724,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -7730,6 +7738,71 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema del circuito del refrigerante con válvula de expansión, indicando los componentes y la delimitación entre la zona de alta presión y la de baja presión — Fuente: Climatizacion basicos - Funcionamiento Válvula de expansión.pdf, pág. 1 (pág. 1)",
      "html": "<ul>\n<li>Esquema del circuito del refrigerante con válvula de expansión, indicando los componentes y la delimitación entre la zona de alta presión y la de baja presión — Fuente: Climatizacion basicos - Funcionamiento Válvula de expansión.pdf, pág. 1 <span class=\"pag\">pág. 1</span></li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.ciclo-frigorifico.despiece-de-un-circuito-de-climatizacion",
+   "nt": 723,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ciclo-frigorifico",
+   "seccion": "2. Fundamentos",
+   "subgrupo": "",
+   "titulo": "Circuito de climatización con válvula de expansión",
+   "codigo": "",
+   "menu": "Circuito de climatización con válvula",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "despiece_de_un_circuito_de_climatizacionpdf-73085413.pdf, págs. 1-2",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "condensador",
+    "compresor",
+    "evaporador",
+    "valvula-expansion",
+    "presostato",
+    "filtro-deshidratador",
+    "ventilador-habitaculo",
+    "electroventilador-condensador",
+    "tuberias-y-racores"
+   ],
+   "palabras": [
+    "sistema cerrado",
+    "gas refrigerante",
+    "aceite de lubricacion",
+    "alta presion",
+    "baja presion"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Visión general y estructuración en zonas de trabajo del circuito cerrado de climatización con válvula de expansión (pág. 1-2).",
+     "html": "<p>Visión general y estructuración en zonas de trabajo del circuito cerrado de climatización con válvula de expansión <span class=\"pag\">pág. 1-2</span>.</p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Todos los componentes del circuito están conectados entre sí formando un sistema cerrado por el que circulan el gas refrigerante y una porción del aceite de lubricación (pág. 1).",
+     "html": "<p>Todos los componentes del circuito están conectados entre sí formando un sistema cerrado por el que circulan el gas refrigerante y una porción del aceite de lubricación <span class=\"pag\">pág. 1</span>.</p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El circuito se divide en dos zonas de presión diferenciadas: Zona de alta presión : comprendida entre el compresor y la válvula de expansión (pág. 2). Zona de baja presión : comprendida entre la válvula de expansión y el compresor (pág. 2). El circuito está constituido por ocho componentes principales: condensador, compresor, evaporador, válvula de expansión, presostatos, filtro deshidratante, ventilador del habitáculo, ventilador del condensador, además de los empalmes y manguitos de conexión (pág. 1, 5).",
+     "html": "<p>El circuito se divide en dos zonas de presión diferenciadas:</p>\n<ul>\n<li><strong>Zona de alta presión</strong>: comprendida entre el compresor y la válvula de expansión <span class=\"pag\">pág. 2</span>.</li>\n<li><strong>Zona de baja presión</strong>: comprendida entre la válvula de expansión y el compresor <span class=\"pag\">pág. 2</span>.</li>\n</ul>\n<p>El circuito está constituido por ocho componentes principales: condensador, compresor, evaporador, válvula de expansión, presostatos, filtro deshidratante, ventilador del habitáculo, ventilador del condensador, además de los empalmes y manguitos de conexión <span class=\"pag\">pág. 1, 5</span>.</p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema general del despiece del circuito de climatización con válvula de expansión y ubicación de sus 8 componentes principales — Fuente: despiece_de_un_circuito_de_climatizacionpdf-73085413.pdf, pág. 1 (pág. 1).",
+     "html": "<ul>\n<li>Esquema general del despiece del circuito de climatización con válvula de expansión y ubicación de sus 8 componentes principales — Fuente: despiece_de_un_circuito_de_climatizacionpdf-73085413.pdf, pág. 1 <span class=\"pag\">pág. 1</span>.</li>\n</ul>"
     }
    ]
   },
@@ -12407,6 +12480,53 @@
    ]
   },
   {
+   "id": "ssc.compresor.despiece-de-un-circuito-de-climatizacion",
+   "nt": 725,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "compresor",
+   "seccion": "4. El compresor",
+   "subgrupo": "",
+   "titulo": "Compresor",
+   "codigo": "",
+   "menu": "Compresor",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "despiece_de_un_circuito_de_climatizacionpdf-73085413.pdf, págs. 1-2",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "ciclo-frigorifico",
+   "relacionados": [
+    "condensador",
+    "ciclo-frigorifico"
+   ],
+   "palabras": [
+    "compresion",
+    "impulsion",
+    "correa trapezoidal",
+    "correa estriada"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Comprimir o impulsar el gas refrigerante dentro del sistema de climatización (pág. 2).",
+     "html": "<p>Comprimir o impulsar el gas refrigerante dentro del sistema de climatización <span class=\"pag\">pág. 2</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Accionado mediante una correa trapezoidal o correa estriada del motor térmico (pág. 2).",
+     "html": "<p>Accionado mediante una correa trapezoidal o correa estriada del motor térmico <span class=\"pag\">pág. 2</span>.</p>"
+    }
+   ]
+  },
+  {
    "id": "ssc.embrague-compresor.6-compresores",
    "nt": 44,
    "modulo": "ssc",
@@ -14241,6 +14361,54 @@
    ]
   },
   {
+   "id": "ssc.condensador.despiece-de-un-circuito-de-climatizacion",
+   "nt": 724,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "condensador",
+   "seccion": "5. Lado de alta",
+   "subgrupo": "",
+   "titulo": "Condensador",
+   "codigo": "",
+   "menu": "Condensador",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "despiece_de_un_circuito_de_climatizacionpdf-73085413.pdf, págs. 1-2",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "ciclo-frigorifico",
+   "relacionados": [
+    "compresor",
+    "valvula-expansion",
+    "electroventilador-condensador"
+   ],
+   "palabras": [
+    "enfriamiento",
+    "gaseoso a liquido",
+    "disipacion de calor",
+    "panal"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Enfriar el gas refrigerante caliente y modificar su estado de gaseoso a líquido, disipando el calor al exterior a través del panal del condensador (pág. 2).",
+     "html": "<p>Enfriar el gas refrigerante caliente y modificar su estado de gaseoso a líquido, disipando el calor al exterior a través del panal del condensador <span class=\"pag\">pág. 2</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Ubicado en la zona de alta presión del circuito de climatización (pág. 1, 2).",
+     "html": "<p>Ubicado en la zona de alta presión del circuito de climatización <span class=\"pag\">pág. 1, 2</span>.</p>"
+    }
+   ]
+  },
+  {
    "id": "ssc.electroventilador-condensador.10-electroventiladores",
    "nt": 58,
    "modulo": "ssc",
@@ -14842,6 +15010,51 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquemas eléctricos de conexión de motoventiladores dobles en serie (baja velocidad) y en paralelo (alta velocidad) — Fuente: 4. CIRCUITO FRIGORÍGENO 5 AL.pptx, pág. 198 y 200 (pág. 198, 200).",
      "html": "<ul>\n<li>Esquemas eléctricos de conexión de motoventiladores dobles en serie (baja velocidad) y en paralelo (alta velocidad) — Fuente: 4. CIRCUITO FRIGORÍGENO 5  AL.pptx, pág. 198 y 200 <span class=\"pag\">pág. 198, 200</span>.</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.electroventilador-condensador.despiece-de-un-circuito-de-climatizacion",
+   "nt": 731,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "electroventilador-condensador",
+   "seccion": "5. Lado de alta",
+   "subgrupo": "",
+   "titulo": "Electroventilador del condensador",
+   "codigo": "",
+   "menu": "Electroventilador del condensador",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "despiece_de_un_circuito_de_climatizacionpdf-73085413.pdf, págs. 1, 5",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "condensador"
+   ],
+   "palabras": [
+    "enfriamiento",
+    "condensacion optima",
+    "gas refrigerante"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Contribuye a enfriar el gas refrigerante y alcanzar un estado de condensación óptimo en cualquier situación de funcionamiento del vehículo (pág. 5).",
+     "html": "<p>Contribuye a enfriar el gas refrigerante y alcanzar un estado de condensación óptimo en cualquier situación de funcionamiento del vehículo <span class=\"pag\">pág. 5</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Ubicado junto al condensador en el vano motor (pág. 1, 5).",
+     "html": "<p>Ubicado junto al condensador en el vano motor <span class=\"pag\">pág. 1, 5</span>.</p>"
     }
    ]
   },
@@ -15824,6 +16037,58 @@
    ]
   },
   {
+   "id": "ssc.filtro-deshidratador.despiece-de-un-circuito-de-climatizacion",
+   "nt": 729,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "filtro-deshidratador-mirilla",
+   "seccion": "5. Lado de alta",
+   "subgrupo": "",
+   "titulo": "Filtro deshidratador",
+   "codigo": "",
+   "menu": "Filtro deshidratador",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "despiece_de_un_circuito_de_climatizacionpdf-73085413.pdf, págs. 1, 4",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "ciclo-frigorifico",
+   "relacionados": [
+    "valvula-expansion",
+    "ciclo-frigorifico"
+   ],
+   "palabras": [
+    "cuerpos extranos",
+    "humedad",
+    "agente secante",
+    "acumulador"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Eliminar tanto los cuerpos extraños presentes en el refrigerante como la humedad del circuito (pág. 4).",
+     "html": "<p>Eliminar tanto los cuerpos extraños presentes en el refrigerante como la humedad del circuito <span class=\"pag\">pág. 4</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Denominados filtros deshidratantes o acumuladores (pág. 4).",
+     "html": "<p>Denominados filtros deshidratantes o acumuladores <span class=\"pag\">pág. 4</span>.</p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El refrigerante líquido entra en el filtro deshidratante, atraviesa un agente secante (donde se retiene la humedad y partículas) y vuelve a salir del filtro en estado líquido (pág. 4).",
+     "html": "<p>El refrigerante líquido entra en el filtro deshidratante, atraviesa un agente secante (donde se retiene la humedad y partículas) y vuelve a salir del filtro en estado líquido <span class=\"pag\">pág. 4</span>.</p>"
+    }
+   ]
+  },
+  {
    "id": "ssc.valvula-expansion.2-introduccion-a-la-refrigeracion",
    "nt": 15,
    "modulo": "ssc",
@@ -16752,6 +17017,58 @@
      "titulo": "Mantenimiento",
      "texto": "Realizar un mantenimiento periódico del sistema de climatización para evitar que la humedad y las impurezas afecten al funcionamiento de la válvula (pág. 1).",
      "html": "<p>Realizar un mantenimiento periódico del sistema de climatización para evitar que la humedad y las impurezas afecten al funcionamiento de la válvula <span class=\"pag\">pág. 1</span>.</p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.valvula-expansion.despiece-de-un-circuito-de-climatizacion",
+   "nt": 727,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "valvula-expansion",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "Dispositivos de expansión",
+   "titulo": "Válvula de expansión",
+   "codigo": "",
+   "menu": "Válvula de expansión",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "despiece_de_un_circuito_de_climatizacionpdf-73085413.pdf, págs. 1, 3",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "ciclo-frigorifico",
+   "relacionados": [
+    "evaporador",
+    "compresor"
+   ],
+   "palabras": [
+    "separacion de presiones",
+    "flujo de gas",
+    "temperatura",
+    "generacion de frio"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Constituir el punto de separación entre las zonas de alta y de baja presión, y regular el flujo de gas refrigerante en función de la temperatura para alcanzar el rendimiento de enfriamiento óptimo en el evaporador (pág. 3).",
+     "html": "<p>Constituir el punto de separación entre las zonas de alta y de baja presión, y regular el flujo de gas refrigerante en función de la temperatura para alcanzar el rendimiento de enfriamiento óptimo en el evaporador <span class=\"pag\">pág. 3</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Elemento de delimitación montado en la separación de las zonas de alta y baja presión (pág. 2, 3).",
+     "html": "<p>Elemento de delimitación montado en la separación de las zonas de alta y baja presión <span class=\"pag\">pág. 2, 3</span>.</p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Regula el paso de gas refrigerante garantizando la evaporación completa de la fase líquida en el evaporador y la generación consecuente de frío (pág. 3).",
+     "html": "<p>Regula el paso de gas refrigerante garantizando la evaporación completa de la fase líquida en el evaporador y la generación consecuente de frío <span class=\"pag\">pág. 3</span>.</p>"
     }
    ]
   },
@@ -17718,6 +18035,58 @@
    ]
   },
   {
+   "id": "ssc.evaporador.despiece-de-un-circuito-de-climatizacion",
+   "nt": 726,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "evaporador",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "",
+   "titulo": "Evaporador",
+   "codigo": "",
+   "menu": "Evaporador",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "despiece_de_un_circuito_de_climatizacionpdf-73085413.pdf, págs. 1, 3",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "ciclo-frigorifico",
+   "relacionados": [
+    "valvula-expansion",
+    "ventilador-habitaculo"
+   ],
+   "palabras": [
+    "aire frio",
+    "evaporacion",
+    "corriente de ventilador",
+    "superficie"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Generar aire frío durante la evaporación del refrigerante y transmitirlo al interior del vehículo mediante la corriente del ventilador (pág. 3).",
+     "html": "<p>Generar aire frío durante la evaporación del refrigerante y transmitirlo al interior del vehículo mediante la corriente del ventilador <span class=\"pag\">pág. 3</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Dispone de una gran superficie de intercambio térmico y se encuentra ubicado en la zona de baja presión (pág. 1, 3).",
+     "html": "<p>Dispone de una gran superficie de intercambio térmico y se encuentra ubicado en la zona de baja presión <span class=\"pag\">pág. 1, 3</span>.</p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El aire frío que se genera durante la evaporación sale al exterior a través de la superficie del evaporador y se transmite al interior del vehículo mediante la corriente generada por el ventilador (pág. 3).",
+     "html": "<p>El aire frío que se genera durante la evaporación sale al exterior a través de la superficie del evaporador y se transmite al interior del vehículo mediante la corriente generada por el ventilador <span class=\"pag\">pág. 3</span>.</p>"
+    }
+   ]
+  },
+  {
    "id": "ssc.deposito-colector.baja.9-filtro-deshidratadores",
    "nt": 57,
    "modulo": "ssc",
@@ -18544,6 +18913,51 @@
      "titulo": "Imágenes requeridas",
      "texto": "Sección multicapa de tubería flexible (caucho, malla textil, barrera de nylon) — Fuente: 4. CIRCUITO FRIGORÍGENO 5 AL.pptx, pág. 172 (pág. 172).",
      "html": "<ul>\n<li>Sección multicapa de tubería flexible (caucho, malla textil, barrera de nylon) — Fuente: 4. CIRCUITO FRIGORÍGENO 5  AL.pptx, pág. 172 <span class=\"pag\">pág. 172</span>.</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.tuberias-y-racores.despiece-de-un-circuito-de-climatizacion",
+   "nt": 732,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "tuberias-y-racores",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "",
+   "titulo": "Tuberías y racores",
+   "codigo": "",
+   "menu": "Tuberías y racores",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "despiece_de_un_circuito_de_climatizacionpdf-73085413.pdf, págs. 5",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "ciclo-frigorifico",
+   "relacionados": [
+    "ciclo-frigorifico"
+   ],
+   "palabras": [
+    "empalmes",
+    "manguitos",
+    "union de componentes"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Unir todos los componentes del circuito de climatización relacionados con la circulación del gas refrigerante (pág. 5).",
+     "html": "<p>Unir todos los componentes del circuito de climatización relacionados con la circulación del gas refrigerante <span class=\"pag\">pág. 5</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Formado por empalmes y manguitos (pág. 5).",
+     "html": "<p>Formado por empalmes y manguitos <span class=\"pag\">pág. 5</span>.</p>"
     }
    ]
   },
@@ -20491,6 +20905,55 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema de conexiones eléctricas del presostato trinario con relés, batería, compresor y electroventilador — Fuente: 4. CIRCUITO FRIGORÍGENO 5 AL.pptx, pág. 225 y 227 (pág. 225, 227).",
      "html": "<ul>\n<li>Esquema de conexiones eléctricas del presostato trinario con relés, batería, compresor y electroventilador — Fuente: 4. CIRCUITO FRIGORÍGENO 5  AL.pptx, pág. 225 y 227 <span class=\"pag\">pág. 225, 227</span>.</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.presostato.despiece-de-un-circuito-de-climatizacion",
+   "nt": 728,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "presostato-binary-trinary-cuatrinary",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Presostato",
+   "codigo": "",
+   "menu": "Presostato",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "despiece_de_un_circuito_de_climatizacionpdf-73085413.pdf, págs. 1, 4",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "control-climatizacion",
+   "relacionados": [
+    "compresor",
+    "ciclo-frigorifico"
+   ],
+   "palabras": [
+    "proteccion",
+    "altas presiones",
+    "baja presion",
+    "alta presion",
+    "binarios",
+    "trinarios"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Proteger el circuito del aire acondicionado de posibles daños provocados por altas presiones y regular la presión para evitar averías en el compresor y en el circuito de climatización (pág. 4).",
+     "html": "<p>Proteger el circuito del aire acondicionado de posibles daños provocados por altas presiones y regular la presión para evitar averías en el compresor y en el circuito de climatización <span class=\"pag\">pág. 4</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Los interruptores / presostatos se clasifican en: Presostatos de baja presión (pág. 4). Presostatos de alta presión (pág. 4). Interruptores binarios (pág. 4). Interruptores trinarios (pág. 4).",
+     "html": "<p>Los interruptores / presostatos se clasifican en:</p>\n<ul>\n<li>Presostatos de baja presión <span class=\"pag\">pág. 4</span>.</li>\n<li>Presostatos de alta presión <span class=\"pag\">pág. 4</span>.</li>\n<li>Interruptores binarios <span class=\"pag\">pág. 4</span>.</li>\n<li>Interruptores trinarios <span class=\"pag\">pág. 4</span>.</li>\n</ul>"
     }
    ]
   },
@@ -28888,6 +29351,51 @@
      "titulo": "Imágenes requeridas",
      "texto": "Módulo impulsor GMV y regulador electrónico montado en el cuerpo de distribución — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 2",
      "html": "<ul>\n<li>Módulo impulsor GMV y regulador electrónico montado en el cuerpo de distribución — Fuente: DESCRIPCIÓN FÍSICA DEL SISTEMA DE CLIMATIZACION AUTOMATICA.PDF, pág. 2</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.ventilador-habitaculo.despiece-de-un-circuito-de-climatizacion",
+   "nt": 730,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ventilador-habitaculo",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Ventilador del habitáculo",
+   "codigo": "",
+   "menu": "Ventilador del habitáculo",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "despiece_de_un_circuito_de_climatizacionpdf-73085413.pdf, págs. 1, 5",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "evaporador"
+   ],
+   "palabras": [
+    "ventilacion homogenea",
+    "visibilidad",
+    "climatizacion agradable"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Ventilar el habitáculo de manera homogénea proporcionando una clara visibilidad y una climatización agradable en el interior (pág. 5).",
+     "html": "<p>Ventilar el habitáculo de manera homogénea proporcionando una clara visibilidad y una climatización agradable en el interior <span class=\"pag\">pág. 5</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Componente encargado de la impulsión del aire hacia el habitáculo (pág. 1, 5).",
+     "html": "<p>Componente encargado de la impulsión del aire hacia el habitáculo <span class=\"pag\">pág. 1, 5</span>.</p>"
     }
    ]
   },
