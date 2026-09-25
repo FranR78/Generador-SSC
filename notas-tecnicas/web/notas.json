@@ -4250,6 +4250,70 @@
    "hecha": false
   },
   {
+   "nombre": "NT812_01",
+   "nt": 812,
+   "titulo": "Transmisor de alta presión",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Muestra de la onda cuadrada de 50 Hz del transmisor G65 con la relación entre ancho de pulso y presión — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 37",
+   "hecha": false
+  },
+  {
+   "nombre": "NT813_01",
+   "nt": 813,
+   "titulo": "Unidad de control para el ventilador del líquido refrigerante",
+   "seccion": "8. Regulación y control",
+   "descripcion": "Estructura del módulo J293 con sus conectores modificados para la señal del transmisor G65 — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 40",
+   "hecha": false
+  },
+  {
+   "nombre": "NT814_01",
+   "nt": 814,
+   "titulo": "Regulación automática de temperatura Climatronic",
+   "seccion": "8. Regulación y control",
+   "descripcion": "Cuadro general del sistema Climatronic con la interconexión entre sensores, la unidad de control J255 y los actuadores — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 44-45",
+   "hecha": false
+  },
+  {
+   "nombre": "NT815_01",
+   "nt": 815,
+   "titulo": "Termosensor del tablero de instrumentos G56",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Módulo interior de la unidad de control mostrando la posición del sensor G56 y la turbina de aspiración V42 — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 47",
+   "hecha": false
+  },
+  {
+   "nombre": "NT818_01",
+   "nt": 818,
+   "titulo": "Fotosensor de radiación solar G107",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Despiece del fotosensor G107 mostrando el filtro UV, el elemento óptico y los fotodiodos — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 50",
+   "hecha": false
+  },
+  {
+   "nombre": "NT819_01",
+   "nt": 819,
+   "titulo": "Servomotores de las trampillas de aireación",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Esquema eléctrico de conexión de un servomotor con su potenciómetro de posición y tensión de 5 V — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 51",
+   "hecha": false
+  },
+  {
+   "nombre": "NT820_01",
+   "nt": 820,
+   "titulo": "Sensor de la calidad del aire G238",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Esquema del sensor de calidad del aire G238 y su comunicación mediante señal digital con la unidad de control — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 63",
+   "hecha": false
+  },
+  {
+   "nombre": "NT821_01",
+   "nt": 821,
+   "titulo": "Autodiagnóstico del sistema Climatronic",
+   "seccion": "10. Diagnóstico",
+   "descripcion": "Conexión de la estación de autodiagnóstico VAS 5051 al conector de diagnóstico de 16 polos T16 — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 68",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -4274,7 +4338,7 @@
    "hecha": false
   }
  ],
- "total": 803,
+ "total": 813,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -27157,6 +27221,93 @@
    ]
   },
   {
+   "id": "ssc.transmisor-presion.208-climatizadores-en-los-vehic",
+   "nt": 812,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "transmisor-presion-map-maf",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Transmisor de alta presión",
+   "codigo": "G65",
+   "menu": "Transmisor de alta presión G65",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 36-37",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "electroventilador-condensador",
+    "embrague-compresor"
+   ],
+   "palabras": [
+    "G65",
+    "señal PWM",
+    "onda cuadrada",
+    "cristal de silicio",
+    "50 Hz"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir de forma continua la presión del agente frigorífico en el lado de alta presión para gestionar la desconexión de seguridad del compresor y el escalonamiento de los electroventiladores. (págs. 36-37)",
+     "html": "<p>Medir de forma continua la presión del agente frigorífico en el lado de alta presión para gestionar la desconexión de seguridad del compresor y el escalonamiento de los electroventiladores. <span class=\"pag\">págs. 36-37</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Sensor electrónico piezoeléctrico equipado con un microprocesador integrado que sustituye al conmutador de presión mecánico F129 en los climatizadores de nueva generación. (pág. 36)",
+     "html": "<p>Sensor electrónico piezoeléctrico equipado con un microprocesador integrado que sustituye al conmutador de presión mecánico F129 en los climatizadores de nueva generación. <span class=\"pag\">pág. 36</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El refrigerante actúa sobre un cristal de silicio cuya resistencia varía en función de la presión. La electrónica del sensor convierte esta deformación en una señal digital rectangular modulada en anchura de impulsos (PWM) con una frecuencia fija de 50 Hz. El ancho del impulso varía proporcionalmente con la presión detectada. (págs. 36-37)",
+     "html": "<p>El refrigerante actúa sobre un cristal de silicio cuya resistencia varía en función de la presión. La electrónica del sensor convierte esta deformación en una señal digital rectangular modulada en anchura de impulsos (PWM) con una frecuencia fija de 50 Hz. El ancho del impulso varía proporcionalmente con la presión detectada. <span class=\"pag\">págs. 36-37</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Frecuencia de la señal PWM: 50 Hz (periodo constante de 20 ms). (pág. 37) Ancho de pulso a baja presión (0,14 MPa / 1,4 bar): 2,6 ms (13% del periodo). (pág. 37) Ancho de pulso a alta presión (3,7 MPa / 37 bar): 18 ms (90% del periodo). (pág. 37)",
+     "html": "<ul>\n<li>Frecuencia de la señal PWM: 50 Hz (periodo constante de 20 ms). <span class=\"pag\">pág. 37</span></li>\n<li>Ancho de pulso a baja presión (0,14 MPa / 1,4 bar): 2,6 ms (13% del periodo). <span class=\"pag\">pág. 37</span></li>\n<li>Ancho de pulso a alta presión (3,7 MPa / 37 bar): 18 ms (90% del periodo). <span class=\"pag\">pág. 37</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Interrupción en la línea de señal PWM o fallo en la tensión de alimentación del sensor. (págs. 36-37)",
+     "html": "<p>Interrupción en la línea de señal PWM o fallo en la tensión de alimentación del sensor. <span class=\"pag\">págs. 36-37</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "La unidad de control desactiva el compresor por seguridad y fuerza el funcionamiento permanente del ventilador del radiador al máximo escalón. (págs. 36-37)",
+     "html": "<p>La unidad de control desactiva el compresor por seguridad y fuerza el funcionamiento permanente del ventilador del radiador al máximo escalón. <span class=\"pag\">págs. 36-37</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Analizar la señal digital PWM con un osciloscopio o verificar los valores de presión calculados en el bloque de valores de medición con el equipo de autodiagnóstico. (págs. 37, 71)",
+     "html": "<p>Analizar la señal digital PWM con un osciloscopio o verificar los valores de presión calculados en el bloque de valores de medición con el equipo de autodiagnóstico. <span class=\"pag\">págs. 37, 71</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Muestra de la onda cuadrada de 50 Hz del transmisor G65 con la relación entre ancho de pulso y presión — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 37",
+     "html": "<ul>\n<li>Muestra de la onda cuadrada de 50 Hz del transmisor G65 con la relación entre ancho de pulso y presión — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 37</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.sensor-temperatura-exterior.g17.208-regulacion-de-la-temperatura",
    "nt": 98,
    "modulo": "ssc",
@@ -28520,6 +28671,91 @@
      "titulo": "Valores de trabajo",
      "texto": "Salto térmico máximo autorizado entre interior y exterior: 20 ºC. (pág. 44)",
      "html": "<ul>\n<li>Salto térmico máximo autorizado entre interior y exterior: 20 ºC. <span class=\"pag\">pág. 44</span></li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.sensor-temperatura-exterior.208-climatizadores-en-los-vehic",
+   "nt": 816,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-temperatura-ntc-exterior",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Termosensor de temperatura exterior G17 y G89",
+   "codigo": "G17 / G89",
+   "menu": "Termosensor de temperatura ext G17 / G89",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 48",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "control-climatizacion",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "G17",
+    "G89",
+    "paragolpes",
+    "canal de aspiración",
+    "valor supletorio +10 ºC"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Captar la temperatura del aire atmosférico exterior para ajustar la posición de las trampillas de mezcla y la velocidad de soplado de la turbina de aire fresco. (pág. 48)",
+     "html": "<p>Captar la temperatura del aire atmosférico exterior para ajustar la posición de las trampillas de mezcla y la velocidad de soplado de la turbina de aire fresco. <span class=\"pag\">pág. 48</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Sondas térmicas de resistencia NTC. El sistema utiliza dos puntos de medición: la sonda G17 (ubicada en el frente del vehículo tras el paragolpes) y la sonda G89 (instalada en el canal de aspiración de aire fresco). (pág. 48)",
+     "html": "<p>Sondas térmicas de resistencia NTC. El sistema utiliza dos puntos de medición: la sonda G17 (ubicada en el frente del vehículo tras el paragolpes) y la sonda G89 (instalada en el canal de aspiración de aire fresco). <span class=\"pag\">pág. 48</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "La unidad de control compara continuamente las señales de G17 y G89. Procesa siempre el valor de temperatura más bajo para evitar lecturas infladas por el calor radiado del motor cuando el vehículo está detenido o circula a baja velocidad. (pág. 48)",
+     "html": "<p>La unidad de control compara continuamente las señales de G17 y G89. Procesa siempre el valor de temperatura más bajo para evitar lecturas infladas por el calor radiado del motor cuando el vehículo está detenido o circula a baja velocidad. <span class=\"pag\">pág. 48</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Valor supletorio asumido en caso de avería simultánea de G17 y G89: +10 ºC. (pág. 48)",
+     "html": "<ul>\n<li>Valor supletorio asumido en caso de avería simultánea de G17 y G89: +10 ºC. <span class=\"pag\">pág. 48</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Deterioro por humedad, sulfatación en las clavijas del conector del paragolpes o rotura del cableado tras colisiones frontales. (pág. 48)",
+     "html": "<p>Deterioro por humedad, sulfatación en las clavijas del conector del paragolpes o rotura del cableado tras colisiones frontales. <span class=\"pag\">pág. 48</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si falla el sensor G17, la unidad asume la lectura de G89. Si fallan ambos sensores, la unidad calcula un valor fijo de +10 ºC y anula la función de recirculación de aire. (pág. 48)",
+     "html": "<p>Si falla el sensor G17, la unidad asume la lectura de G89. Si fallan ambos sensores, la unidad calcula un valor fijo de +10 ºC y anula la función de recirculación de aire. <span class=\"pag\">pág. 48</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Consultar los valores medidos por G17 y G89 en los bloques de medición del autodiagnóstico y comparar con la temperatura ambiental real. (págs. 48, 71)",
+     "html": "<p>Consultar los valores medidos por G17 y G89 en los bloques de medición del autodiagnóstico y comparar con la temperatura ambiental real. <span class=\"pag\">págs. 48, 71</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Inspeccionar el estado de la sonda G89 durante la sustitución del filtro antipolen del habitáculo. (pág. 48)",
+     "html": "<p>Inspeccionar el estado de la sonda G89 durante la sustitución del filtro antipolen del habitáculo. <span class=\"pag\">pág. 48</span></p>",
      "nivel": ""
     }
    ]
@@ -30295,6 +30531,175 @@
      "titulo": "Principio de funcionamiento",
      "texto": "Permite a la unidad de control verificar la coherencia entre la temperatura medida en el habitáculo y el nivel de confort o temperatura de consigna solicitada por los ocupantes. (pág. 44)",
      "html": "<p>Permite a la unidad de control verificar la coherencia entre la temperatura medida en el habitáculo y el nivel de confort o temperatura de consigna solicitada por los ocupantes. <span class=\"pag\">pág. 44</span></p>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.sensor-temperatura-interior.208-climatizadores-en-los-vehic",
+   "nt": 815,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-temperatura-ntc-interior",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Termosensor del tablero de instrumentos G56",
+   "codigo": "G56",
+   "menu": "Termosensor del tablero de ins G56",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 47",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "unidad-control-climatizador",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "G56",
+    "V42",
+    "aspiración de aire",
+    "habitáculo",
+    "NTC"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la temperatura real del aire del habitáculo en la zona del cuadro de mandos para proporcionar la señal básica de regulación a la unidad de control. (pág. 47)",
+     "html": "<p>Medir la temperatura real del aire del habitáculo en la zona del cuadro de mandos para proporcionar la señal básica de regulación a la unidad de control. <span class=\"pag\">pág. 47</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Resistencia con coeficiente de temperatura negativo (NTC) montada en el propio frontal del panel de mandos e indicación del climatizador E87. (pág. 47)",
+     "html": "<p>Resistencia con coeficiente de temperatura negativo (NTC) montada en el propio frontal del panel de mandos e indicación del climatizador E87. <span class=\"pag\">pág. 47</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Para evitar mediciones erróneas causadas por el calor propio de la pantalla electrónica y de los circuitos integrados de la centralita, un pequeño motor eléctrico V42 acciona una turbina que aspira aire del habitáculo a través de la rejilla frontal, haciéndolo pasar directamente por el termistor G56. (pág. 47)",
+     "html": "<p>Para evitar mediciones erróneas causadas por el calor propio de la pantalla electrónica y de los circuitos integrados de la centralita, un pequeño motor eléctrico V42 acciona una turbina que aspira aire del habitáculo a través de la rejilla frontal, haciéndolo pasar directamente por el termistor G56. <span class=\"pag\">pág. 47</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tipo de elemento sensible: resistencia NTC. (pág. 47)",
+     "html": "<ul>\n<li>Tipo de elemento sensible: resistencia NTC. <span class=\"pag\">pág. 47</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Obstrucción de la rejilla de aspiración por acumulación de pelusa y polvo del habitáculo, o bloqueo mecánico de la turbina V42. (pág. 47)",
+     "html": "<p>Obstrucción de la rejilla de aspiración por acumulación de pelusa y polvo del habitáculo, o bloqueo mecánico de la turbina V42. <span class=\"pag\">pág. 47</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "La unidad de control asume un valor supletorio interno para la temperatura del habitáculo, reduciendo la precisión de la regulación automática. (pág. 47)",
+     "html": "<p>La unidad de control asume un valor supletorio interno para la temperatura del habitáculo, reduciendo la precisión de la regulación automática. <span class=\"pag\">pág. 47</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Verificar si la turbina V42 gira al conectar el encendido y consultar el valor de temperatura leído en el bloque de valores de medición. (págs. 47, 71)",
+     "html": "<p>Verificar si la turbina V42 gira al conectar el encendido y consultar el valor de temperatura leído en el bloque de valores de medición. <span class=\"pag\">págs. 47, 71</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Limpiar la rejilla de aspiración del frontal del panel con aire comprimido a baja presión. (pág. 47)",
+     "html": "<p>Limpiar la rejilla de aspiración del frontal del panel con aire comprimido a baja presión. <span class=\"pag\">pág. 47</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Módulo interior de la unidad de control mostrando la posición del sensor G56 y la turbina de aspiración V42 — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 47",
+     "html": "<ul>\n<li>Módulo interior de la unidad de control mostrando la posición del sensor G56 y la turbina de aspiración V42 — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 47</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.sensor-temperatura-interior.reposapies.208-climatizadores-en-los-vehic",
+   "nt": 817,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-temperatura-ntc-interior",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Transmisor de temperatura de salida del vano reposapiés G192",
+   "codigo": "G192",
+   "menu": "Transmisor de temperatura de s G192",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 49",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "reposapies",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "G192",
+    "vano reposapiés",
+    "NTC",
+    "valor supletorio +80 ºC"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir la temperatura del caudal de aire impulsado hacia la zona inferior de los pies para regular la posición de la trampilla de distribución y la turbina de aire fresco. (pág. 49)",
+     "html": "<p>Medir la temperatura del caudal de aire impulsado hacia la zona inferior de los pies para regular la posición de la trampilla de distribución y la turbina de aire fresco. <span class=\"pag\">pág. 49</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Sonda térmica de tipo NTC alojada en el interior del conducto de aireación del vano reposapiés. (pág. 49)",
+     "html": "<p>Sonda térmica de tipo NTC alojada en el interior del conducto de aireación del vano reposapiés. <span class=\"pag\">pág. 49</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Mide la temperatura del aire tratado antes de su difusión en el habitáculo. Su señal permite a la centralita corregir el reparto de aire entre el parabrisas y el piso, ajustando además el régimen del soplador. (pág. 49)",
+     "html": "<p>Mide la temperatura del aire tratado antes de su difusión en el habitáculo. Su señal permite a la centralita corregir el reparto de aire entre el parabrisas y el piso, ajustando además el régimen del soplador. <span class=\"pag\">pág. 49</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Valor supletorio asignado en caso de fallo de señal: +80 ºC. (pág. 49)",
+     "html": "<ul>\n<li>Valor supletorio asignado en caso de fallo de señal: +80 ºC. <span class=\"pag\">pág. 49</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Descalibración del elemento NTC o desconexión del enchufe al desmontar paneles del salpicadero. (pág. 49)",
+     "html": "<p>Descalibración del elemento NTC o desconexión del enchufe al desmontar paneles del salpicadero. <span class=\"pag\">pág. 49</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "La unidad de control calcula un valor supletorio de +80 ºC y mantiene el sistema en funcionamiento con una distribución de aire modificada. (pág. 49)",
+     "html": "<p>La unidad de control calcula un valor supletorio de +80 ºC y mantiene el sistema en funcionamiento con una distribución de aire modificada. <span class=\"pag\">pág. 49</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Consultar los valores de la sonda en el bloque de valores de medición con el equipo de autodiagnóstico. (págs. 49, 71)",
+     "html": "<p>Consultar los valores de la sonda en el bloque de valores de medición con el equipo de autodiagnóstico. <span class=\"pag\">págs. 49, 71</span></p>",
      "nivel": ""
     }
    ]
@@ -32585,6 +32990,99 @@
    ]
   },
   {
+   "id": "ssc.sensor-calidad-aire.208-climatizadores-en-los-vehic",
+   "nt": 820,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-calidad-aire",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Sensor de la calidad del aire G238",
+   "codigo": "G238",
+   "menu": "Sensor de la calidad del aire  G238",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 61-63",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "control-climatizacion",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "servomotor-trampilla"
+   ],
+   "palabras": [
+    "G238",
+    "calidad del aire",
+    "contaminantes",
+    "oxidables",
+    "reducibles",
+    "recirculación automática"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Analizar la presencia de sustancias nocivas en el aire exterior para ordenar el cierre automático de la trampilla de recirculación antes de que los contaminantes penetren en el habitáculo. (págs. 61-62)",
+     "html": "<p>Analizar la presencia de sustancias nocivas en el aire exterior para ordenar el cierre automático de la trampilla de recirculación antes de que los contaminantes penetren en el habitáculo. <span class=\"pag\">págs. 61-62</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Sensor semiconductor térmico instalado en la toma de aspiración de aire fresco en la caja de aguas. Responde a gases oxidables (CO) y reducibles (NOx). (págs. 61-62)",
+     "html": "<p>Sensor semiconductor térmico instalado en la toma de aspiración de aire fresco en la caja de aguas. Responde a gases oxidables (CO) y reducibles (NOx). <span class=\"pag\">págs. 61-62</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Mide de forma continua la variación de conductividad de su elemento semiconductor provocada por los picos de contaminación del aire exterior. Transmite una señal digital rectangular modulada a la unidad de control, la cual activa el servomotor V71/V113 para conmutar a recirculación de aire. Para evitar el empañado, el sistema limita el tiempo máximo en recirculación y no se activa a temperaturas muy bajas. (págs. 62-63)",
+     "html": "<p>Mide de forma continua la variación de conductividad de su elemento semiconductor provocada por los picos de contaminación del aire exterior. Transmite una señal digital rectangular modulada a la unidad de control, la cual activa el servomotor V71/V113 para conmutar a recirculación de aire. Para evitar el empañado, el sistema limita el tiempo máximo en recirculación y no se activa a temperaturas muy bajas. <span class=\"pag\">págs. 62-63</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tipo de gases detectables: gases oxidables (monóxido de carbono CO) y reducibles (óxidos de nitrógeno NOx). (pág. 62)",
+     "html": "<ul>\n<li>Tipo de gases detectables: gases oxidables (monóxido de carbono CO) y reducibles (óxidos de nitrógeno NOx). <span class=\"pag\">pág. 62</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Deterioro del elemento sensible por lavados del vano motor con productos desengrasantes o contaminación del filtro. (págs. 62-63)",
+     "html": "<p>Deterioro del elemento sensible por lavados del vano motor con productos desengrasantes o contaminación del filtro. <span class=\"pag\">págs. 62-63</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Se anula o restringe la función automática de recirculación de aire, memorizándose el fallo en la centralita. (págs. 62-63)",
+     "html": "<p>Se anula o restringe la función automática de recirculación de aire, memorizándose el fallo en la centralita. <span class=\"pag\">págs. 62-63</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Consultar las solicitudes del sensor G238 en los bloques de medición del autodiagnóstico o realizar una prueba de campo acercando un gas de prueba a la embocadura. (págs. 63, 71)",
+     "html": "<p>Consultar las solicitudes del sensor G238 en los bloques de medición del autodiagnóstico o realizar una prueba de campo acercando un gas de prueba a la embocadura. <span class=\"pag\">págs. 63, 71</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Reemplazar el filtro combinado de carbón activo en los intervalos de inspección especificados. (pág. 62)",
+     "html": "<p>Reemplazar el filtro combinado de carbón activo en los intervalos de inspección especificados. <span class=\"pag\">pág. 62</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del sensor de calidad del aire G238 y su comunicación mediante señal digital con la unidad de control — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 63",
+     "html": "<ul>\n<li>Esquema del sensor de calidad del aire G238 y su comunicación mediante señal digital con la unidad de control — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 63</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.fotosensor-solar.208-regulacion-de-la-temperatura",
    "nt": 102,
    "modulo": "ssc",
@@ -33059,6 +33557,97 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema del fotosensor G107 con filtro UV, elemento óptico y fotodiodos simples y dobles — Fuente: CLIMATIZADOR MD FRAN.docx, pág. 18",
      "html": "<ul>\n<li>Esquema del fotosensor G107 con filtro UV, elemento óptico y fotodiodos simples y dobles — Fuente: CLIMATIZADOR MD FRAN.docx, pág. 18</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.fotosensor-solar.208-climatizadores-en-los-vehic",
+   "nt": 818,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "fotosensor-solar",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Fotosensor de radiación solar G107",
+   "codigo": "G107",
+   "menu": "Fotosensor de radiación solar  G107",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 50",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "control-climatizacion",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "G107",
+    "fotodiodo",
+    "filtro UV",
+    "radiación solar",
+    "corrección de temperatura"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Detectar la intensidad de la radiación solar directa que incide sobre los ocupantes para corregir automáticamente la temperatura de la mezcla de aire y la velocidad del soplador. (pág. 50)",
+     "html": "<p>Detectar la intensidad de la radiación solar directa que incide sobre los ocupantes para corregir automáticamente la temperatura de la mezcla de aire y la velocidad del soplador. <span class=\"pag\">pág. 50</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Sensor óptico montado en la parte central superior del salpicadero. Consta de una carcasa protectora, un filtro de radiación UV, un elemento óptico orientativo y uno o dos fotodiodos (sensor simple o sensor dual para lados izquierdo/derecho). (pág. 50)",
+     "html": "<p>Sensor óptico montado en la parte central superior del salpicadero. Consta de una carcasa protectora, un filtro de radiación UV, un elemento óptico orientativo y uno o dos fotodiodos (sensor simple o sensor dual para lados izquierdo/derecho). <span class=\"pag\">pág. 50</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "La luz solar atraviesa el filtro UV e incide en el fotodiodo, aumentando la corriente que lo atraviesa de forma proporcional a la intensidad de la radiación. La unidad de control procesa el aumento de corriente e incrementa la potencia de refrigeración en el lado del habitáculo expuesto al sol. (pág. 50)",
+     "html": "<p>La luz solar atraviesa el filtro UV e incide en el fotodiodo, aumentando la corriente que lo atraviesa de forma proporcional a la intensidad de la radiación. La unidad de control procesa el aumento de corriente e incrementa la potencia de refrigeración en el lado del habitáculo expuesto al sol. <span class=\"pag\">pág. 50</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Variación de señal: aumento de intensidad de corriente proporcional a la radiación solar incidente. (pág. 50)",
+     "html": "<ul>\n<li>Variación de señal: aumento de intensidad de corriente proporcional a la radiación solar incidente. <span class=\"pag\">pág. 50</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Obstrucción física de la lente del sensor por objetos o papeles depositados sobre el salpicadero. (pág. 50)",
+     "html": "<p>Obstrucción física de la lente del sensor por objetos o papeles depositados sobre el salpicadero. <span class=\"pag\">pág. 50</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "La unidad de control adopta un valor supletorio fijo memorizado para la radiación solar. (pág. 50)",
+     "html": "<p>La unidad de control adopta un valor supletorio fijo memorizado para la radiación solar. <span class=\"pag\">pág. 50</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Tapar el fotosensor e iluminarlo de forma directa con una linterna comprobando la variación de parámetros en los bloques de medición. (págs. 50, 71)",
+     "html": "<p>Tapar el fotosensor e iluminarlo de forma directa con una linterna comprobando la variación de parámetros en los bloques de medición. <span class=\"pag\">págs. 50, 71</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Mantener limpia la superficie óptica exterior del sensor. (pág. 50)",
+     "html": "<p>Mantener limpia la superficie óptica exterior del sensor. <span class=\"pag\">pág. 50</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Despiece del fotosensor G107 mostrando el filtro UV, el elemento óptico y los fotodiodos — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 50",
+     "html": "<ul>\n<li>Despiece del fotosensor G107 mostrando el filtro UV, el elemento óptico y los fotodiodos — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 50</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -35038,6 +35627,98 @@
      "titulo": "Imágenes requeridas",
      "texto": "Disposición de las trampillas de repartición dirigiendo el caudal hacia los canales de desempañado, torso y pies — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 31",
      "html": "<ul>\n<li>Disposición de las trampillas de repartición dirigiendo el caudal hacia los canales de desempañado, torso y pies — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 31</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.servomotor-trampilla.208-climatizadores-en-los-vehic",
+   "nt": 819,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "servomotor-trampilla",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Servomotores de las trampillas de aireación",
+   "codigo": "V68 / V70 / V71 / V85",
+   "menu": "Servomotores de las trampillas V68 / V70 / V71 / V85",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 51-52",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "V68",
+    "V70",
+    "V71",
+    "V85",
+    "potenciómetro de realimentación",
+    "5 V"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Posicionar mecánicamente las trampillas de mezcla, distribución, velocidad y recirculación de la caja climática según las órdenes de la centralita. (págs. 51-52)",
+     "html": "<p>Posicionar mecánicamente las trampillas de mezcla, distribución, velocidad y recirculación de la caja climática según las órdenes de la centralita. <span class=\"pag\">págs. 51-52</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Actuadores eléctricos formados por un pequeño motor de corriente continua, un tren de engranajes reductores y un potenciómetro de realimentación de posición. Destacan: V68 (trampilla de mezcla), V70 (trampilla central), V85 (vano reposapiés/descongelación) y V71 (velocidad/recirculación). (págs. 51-52)",
+     "html": "<p>Actuadores eléctricos formados por un pequeño motor de corriente continua, un tren de engranajes reductores y un potenciómetro de realimentación de posición. Destacan: V68 (trampilla de mezcla), V70 (trampilla central), V85 (vano reposapiés/descongelación) y V71 (velocidad/recirculación). <span class=\"pag\">págs. 51-52</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "La unidad de control alimenta el motor eléctrico para girar la palanca del servomotor y mover la trampilla. El potenciómetro interno, alimentado con una tensión de referencia de 5 V, varía su resistencia enviando una señal de tensión de retorno que informa a la centralita de la posición angular exacta en cada instante. (págs. 51-52)",
+     "html": "<p>La unidad de control alimenta el motor eléctrico para girar la palanca del servomotor y mover la trampilla. El potenciómetro interno, alimentado con una tensión de referencia de 5 V, varía su resistencia enviando una señal de tensión de retorno que informa a la centralita de la posición angular exacta en cada instante. <span class=\"pag\">págs. 51-52</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tensión de alimentación del potenciómetro de realimentación: 5 V de corriente continua. (pág. 51)",
+     "html": "<ul>\n<li>Tensión de alimentación del potenciómetro de realimentación: 5 V de corriente continua. <span class=\"pag\">pág. 51</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Desgaste o suciedad en la pista del potenciómetro interno (G92, G112, G113, G114) o agarrotamiento mecánico de las palancas de la trampilla. (págs. 51-52)",
+     "html": "<p>Desgaste o suciedad en la pista del potenciómetro interno (G92, G112, G113, G114) o agarrotamiento mecánico de las palancas de la trampilla. <span class=\"pag\">págs. 51-52</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Incapacidad para regular la temperatura o bloquear la distribución de aire en una posición fija. La avería queda memorizada en el autodiagnóstico. (págs. 51, 71)",
+     "html": "<p>Incapacidad para regular la temperatura o bloquear la distribución de aire en una posición fija. La avería queda memorizada en el autodiagnóstico. <span class=\"pag\">págs. 51, 71</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Realizar el diagnóstico de actuadores y ejecutar el ajuste básico con la máquina de diagnosis para autoadaptar los topes límites de recorrido. (págs. 51, 71)",
+     "html": "<p>Realizar el diagnóstico de actuadores y ejecutar el ajuste básico con la máquina de diagnosis para autoadaptar los topes límites de recorrido. <span class=\"pag\">págs. 51, 71</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Lubricar ligeramente las palancas y guías exteriores de las trampillas con grasa de vaselina o sólida en intervenciones de desmontaje. (pág. 52)",
+     "html": "<p>Lubricar ligeramente las palancas y guías exteriores de las trampillas con grasa de vaselina o sólida en intervenciones de desmontaje. <span class=\"pag\">pág. 52</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema eléctrico de conexión de un servomotor con su potenciómetro de posición y tensión de 5 V — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 51",
+     "html": "<ul>\n<li>Esquema eléctrico de conexión de un servomotor con su potenciómetro de posición y tensión de 5 V — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 51</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -37121,6 +37802,99 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema del módulo J293 y tabla de conmutación de los escalones de velocidad 1 y 2 de los ventiladores — Fuente: CLIMATIZADOR MD FRAN.docx, pág. 16",
      "html": "<ul>\n<li>Esquema del módulo J293 y tabla de conmutación de los escalones de velocidad 1 y 2 de los ventiladores — Fuente: CLIMATIZADOR MD FRAN.docx, pág. 16</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.unidad-control-climatizador.modulo-ventiladores.208-climatizadores-en-los-vehic",
+   "nt": 813,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "unidad-control-climatizador",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Unidad de control para el ventilador del líquido refrigerante",
+   "codigo": "J293",
+   "menu": "Unidad de control para el vent J293",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 40-41",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "modulo-ventiladores",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "control-climatizacion",
+   "relacionados": [
+    "electroventilador-condensador",
+    "transmisor-presion",
+    "embrague-compresor"
+   ],
+   "palabras": [
+    "J293",
+    "escalones de velocidad",
+    "acoplamiento N25",
+    "bomba V51",
+    "PWM"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Gobernar la activación de los escalones de velocidad de los electroventiladores de refrigeración del condensador/motor y controlar el acoplamiento electromagnético del compresor. (págs. 40-41)",
+     "html": "<p>Gobernar la activación de los escalones de velocidad de los electroventiladores de refrigeración del condensador/motor y controlar el acoplamiento electromagnético del compresor. <span class=\"pag\">págs. 40-41</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Módulo electrónico de potencia adaptado para procesar la señal PWM del transmisor de alta presión G65. En determinadas versiones incluye un módulo cronorruptor para la bomba de circulación de líquido refrigerante V51. (págs. 40-41)",
+     "html": "<p>Módulo electrónico de potencia adaptado para procesar la señal PWM del transmisor de alta presión G65. En determinadas versiones incluye un módulo cronorruptor para la bomba de circulación de líquido refrigerante V51. <span class=\"pag\">págs. 40-41</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Analiza la señal digital del transmisor de alta presión G65 y los datos de temperatura del motor procedentes de la UCE del motor. Conecta la velocidad 1 de los ventiladores al activar el compresor (con presión > 0,2 MPa / 2 bar) y conmuta a la velocidad 2 cuando la presión de alta excede de 1,6 MPa (16 bar) o la temperatura del refrigerante supera los 99 ºC. (págs. 40-41)",
+     "html": "<p>Analiza la señal digital del transmisor de alta presión G65 y los datos de temperatura del motor procedentes de la UCE del motor. Conecta la velocidad 1 de los ventiladores al activar el compresor (con presión &gt; 0,2 MPa / 2 bar) y conmuta a la velocidad 2 cuando la presión de alta excede de 1,6 MPa (16 bar) o la temperatura del refrigerante supera los 99 ºC. <span class=\"pag\">págs. 40-41</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Activación de velocidad: climatizador conectado y presión del circuito > 0,2 MPa (2 bar). (pág. 41) Activación de velocidad 2 por presión: alta presión > 1,6 MPa (16 bar). (pág. 41) Activación de velocidad 2 por temperatura de motor: temperatura del líquido refrigerante > 99 ºC. (pág. 41)",
+     "html": "<ul>\n<li>Activación de velocidad: climatizador conectado y presión del circuito &gt; 0,2 MPa (2 bar). <span class=\"pag\">pág. 41</span></li>\n<li>Activación de velocidad 2 por presión: alta presión &gt; 1,6 MPa (16 bar). <span class=\"pag\">pág. 41</span></li>\n<li>Activación de velocidad 2 por temperatura de motor: temperatura del líquido refrigerante &gt; 99 ºC. <span class=\"pag\">pág. 41</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Avería en los relés de potencia internos o cortocircuito en las salidas hacia los motores de los ventiladores. (págs. 40-41)",
+     "html": "<p>Avería en los relés de potencia internos o cortocircuito en las salidas hacia los motores de los ventiladores. <span class=\"pag\">págs. 40-41</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Inoperatividad de los electroventiladores, provocando sobrepresión en el circuito frigorífico o sobrecalentamiento del motor térmico. (págs. 40-41)",
+     "html": "<p>Inoperatividad de los electroventiladores, provocando sobrepresión en el circuito frigorífico o sobrecalentamiento del motor térmico. <span class=\"pag\">págs. 40-41</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Efectuar la prueba de actuadores con el equipo de autodiagnóstico para verificar la activación de los escalones de velocidad 1 y. (págs. 41, 71)",
+     "html": "<p>Efectuar la prueba de actuadores con el equipo de autodiagnóstico para verificar la activación de los escalones de velocidad 1 y. <span class=\"pag\">págs. 41, 71</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Verificar la fijación del módulo y el estado de sus conectores eléctricos. (pág. 40)",
+     "html": "<p>Verificar la fijación del módulo y el estado de sus conectores eléctricos. <span class=\"pag\">pág. 40</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Estructura del módulo J293 con sus conectores modificados para la señal del transmisor G65 — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 40",
+     "html": "<ul>\n<li>Estructura del módulo J293 con sus conectores modificados para la señal del transmisor G65 — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 40</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -39819,6 +40593,81 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema general del sistema de climatización regulado electrónicamente con sensores, señales suplementarias, unidad J255/E87 y actuadores — Fuente: Cuadro general del sistema de un climatizador regulado electrónicamente.pdf, pág. 44-45",
      "html": "<ul>\n<li>Esquema general del sistema de climatización regulado electrónicamente con sensores, señales suplementarias, unidad J255/E87 y actuadores — Fuente: Cuadro general del sistema de un climatizador regulado electrónicamente.pdf, pág. 44-45</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.regulacion-automatica.208-climatizadores-en-los-vehic",
+   "nt": 814,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-automatica",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Regulación automática de temperatura Climatronic",
+   "codigo": "J255 / E87",
+   "menu": "Regulación automática de tempe J255 / E87",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 42-46",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "servomotor-trampilla"
+   ],
+   "palabras": [
+    "Climatronic",
+    "J255",
+    "E87",
+    "regulación electrónica",
+    "autodiagnóstico",
+    "CAN-Bus"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Mantener de forma automática e invariable la temperatura del habitáculo seleccionada por los ocupantes sin necesidad de reajustes manuales. (págs. 42-43)",
+     "html": "<p>Mantener de forma automática e invariable la temperatura del habitáculo seleccionada por los ocupantes sin necesidad de reajustes manuales. <span class=\"pag\">págs. 42-43</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El Climatronic procesa mediante un microprocesador integrado en la unidad de control J255/E87 las señales de múltiples sensores térmicos y ópticos, calculando la posición exacta de los servomotores y la tensión de alimentación de la turbina de aire fresco. (págs. 43-45)",
+     "html": "<p>El Climatronic procesa mediante un microprocesador integrado en la unidad de control J255/E87 las señales de múltiples sensores térmicos y ópticos, calculando la posición exacta de los servomotores y la tensión de alimentación de la turbina de aire fresco. <span class=\"pag\">págs. 43-45</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "La unidad de control recibe datos de la temperatura interior (G56), exterior (G17, G89), aire tratado en reposapiés (G192) e radiación solar (G107). Asimismo, recibe por CAN-Bus o líneas suplementarias el régimen del motor, la velocidad del vehículo y el tiempo de parada. Un microprocesador compara continuamente las magnitudes medidas con la consigna teórica elegida. Como respuesta, envía señales de mando a los servomotores paso a paso (V68, V70, V71, V85) y al regulador electrónico de la turbina (J126) para ajustar el caudal, la mezcla de aire frío/caliente y la distribución por los difusores. (págs. 43-46)",
+     "html": "<p>La unidad de control recibe datos de la temperatura interior (G56), exterior (G17, G89), aire tratado en reposapiés (G192) e radiación solar (G107). Asimismo, recibe por CAN-Bus o líneas suplementarias el régimen del motor, la velocidad del vehículo y el tiempo de parada.\nUn microprocesador compara continuamente las magnitudes medidas con la consigna teórica elegida. Como respuesta, envía señales de mando a los servomotores paso a paso (V68, V70, V71, V85) y al regulador electrónico de la turbina (J126) para ajustar el caudal, la mezcla de aire frío/caliente y la distribución por los difusores. <span class=\"pag\">págs. 43-46</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Margen de regulación de temperatura seleccionable: de 18 ºC a 29 ºC (o de 16 ºC a 29,5 ºC según versión). (págs. 46, 56)",
+     "html": "<ul>\n<li>Margen de regulación de temperatura seleccionable: de 18 ºC a 29 ºC (o de 16 ºC a 29,5 ºC según versión). <span class=\"pag\">págs. 46, 56</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Asumir que ante el fallo de un sensor el sistema queda inoperativo, omitiendo que la unidad de control calcula valores supletorios fijos para mantener el servicio de emergencia. (págs. 48-50)",
+     "html": "<ul>\n<li>Asumir que ante el fallo de un sensor el sistema queda inoperativo, omitiendo que la unidad de control calcula valores supletorios fijos para mantener el servicio de emergencia. <span class=\"pag\">págs. 48-50</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Cuadro general del sistema Climatronic con la interconexión entre sensores, la unidad de control J255 y los actuadores — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 44-45",
+     "html": "<ul>\n<li>Cuadro general del sistema Climatronic con la interconexión entre sensores, la unidad de control J255 y los actuadores — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 44-45</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -45166,6 +46015,79 @@
      "titulo": "Errores de concepto frecuentes",
      "texto": "Intentar realizar la diagnosis de la calefacción independiente utilizando los lectores de averías antiguos V.A.G 1551 o V.A.G 1552. (pág. 4) Esperar un código de avería específico tras un accidente con disparo de la señal de colisión, cuando el sistema realiza un bloqueo directo e incondicional. (pág. 9)",
      "html": "<ul>\n<li>Intentar realizar la diagnosis de la calefacción independiente utilizando los lectores de averías antiguos V.A.G 1551 o V.A.G 1552. <span class=\"pag\">pág. 4</span></li>\n<li>Esperar un código de avería específico tras un accidente con disparo de la señal de colisión, cuando el sistema realiza un bloqueo directo e incondicional. <span class=\"pag\">pág. 9</span></li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.autodiagnostico-climatizador.208-climatizadores-en-los-vehic",
+   "nt": 821,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "autodiagnostico-climatizador",
+   "seccion": "10. Diagnóstico",
+   "subgrupo": "",
+   "titulo": "Autodiagnóstico del sistema Climatronic",
+   "codigo": "",
+   "menu": "Autodiagnóstico del sistema Climatroni",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 68-71",
+   "clase": "diagnostico",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "VAS 5051",
+    "memoria de averías",
+    "bloques de medición",
+    "prueba de actuadores",
+    "ajuste básico"
+   ],
+   "apartados": [
+    {
+     "titulo": "Síntoma",
+     "texto": "Inoperatividad total o parcial del climatizador, parpadeo de los dígitos de la pantalla al conectar el encendido o falta de regulación de temperatura y caudal de aire. (págs. 68-69)",
+     "html": "<p>Inoperatividad total o parcial del climatizador, parpadeo de los dígitos de la pantalla al conectar el encendido o falta de regulación de temperatura y caudal de aire. <span class=\"pag\">págs. 68-69</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Causas posibles",
+     "texto": "Interrupción o cortocircuito en las líneas de sensores térmicos (G17, G56, G89, G107, G153, G192, G238). (págs. 69-70) Avería eléctrica o bloqueo mecánico en los servomotores de las trampillas (V68, V70, V71, V85). (págs. 69-70) Anomalía de presión en el circuito frigorífico detectada por el presostato F129 o transmisor G65. (pág. 70) Fallo de comunicación en el bus de datos CAN o alimentación defectuosa de la centralita J255. (págs. 68, 70)",
+     "html": "<ul>\n<li>Interrupción o cortocircuito en las líneas de sensores térmicos (G17, G56, G89, G107, G153, G192, G238). <span class=\"pag\">págs. 69-70</span></li>\n<li>Avería eléctrica o bloqueo mecánico en los servomotores de las trampillas (V68, V70, V71, V85). <span class=\"pag\">págs. 69-70</span></li>\n<li>Anomalía de presión en el circuito frigorífico detectada por el presostato F129 o transmisor G65. <span class=\"pag\">pág. 70</span></li>\n<li>Fallo de comunicación en el bus de datos CAN o alimentación defectuosa de la centralita J255. <span class=\"pag\">págs. 68, 70</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo separar las causas",
+     "texto": "Conectar el equipo de diagnosis (VAS 5051 o lector equivalente) al conector de diagnóstico T16 de 16 polos del vehículo. (pág. 68) Seleccionar la dirección \"08 - Electrónica del climatizador\" y ejecutar la función \"02 - Consultar memoria de averías\". (págs. 68-69) Si existen averías registradas, identificar si corresponden a sensores (valor fuera de tolerancia) o a actuadores (límite superior/inferior sobrepasado). (pág. 69) Ejecutar la función \"03 - Diagnóstico de elementos actuadores\" para activar secuencialmente la turbina, el acoplamiento magnético N25 y los servomotores, comprobando su respuesta física. (págs. 69-70) Seleccionar \"08 - Leer bloque de valores de medición\" para analizar en tiempo real las temperaturas leídas por los sensores, la tensión de alimentación y los valores de tensión de los potenciómetros de posición. (pág. 70) Tras reemplazar un componente o servomotor, realizar la función \"04 - Iniciar ajuste básico\" para que la centralita memorice los topes mecánicos del nuevo actuador. (págs. 70-71)",
+     "html": "<ol>\n<li>Conectar el equipo de diagnosis (VAS 5051 o lector equivalente) al conector de diagnóstico T16 de 16 polos del vehículo. <span class=\"pag\">pág. 68</span></li>\n<li>Seleccionar la dirección \"08 - Electrónica del climatizador\" y ejecutar la función \"02 - Consultar memoria de averías\". <span class=\"pag\">págs. 68-69</span></li>\n<li>Si existen averías registradas, identificar si corresponden a sensores (valor fuera de tolerancia) o a actuadores (límite superior/inferior sobrepasado). <span class=\"pag\">pág. 69</span></li>\n<li>Ejecutar la función \"03 - Diagnóstico de elementos actuadores\" para activar secuencialmente la turbina, el acoplamiento magnético N25 y los servomotores, comprobando su respuesta física. <span class=\"pag\">págs. 69-70</span></li>\n<li>Seleccionar \"08 - Leer bloque de valores de medición\" para analizar en tiempo real las temperaturas leídas por los sensores, la tensión de alimentación y los valores de tensión de los potenciómetros de posición. <span class=\"pag\">pág. 70</span></li>\n<li>Tras reemplazar un componente o servomotor, realizar la función \"04 - Iniciar ajuste básico\" para que la centralita memorice los topes mecánicos del nuevo actuador. <span class=\"pag\">págs. 70-71</span></li>\n</ol>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Conector de diagnóstico: conector normalizado T16 de 16 polos. (pág. 68) Tipo de memoria de averías: memoria no volátil exenta de borrado por desconexión de batería. (pág. 68)",
+     "html": "<ul>\n<li>Conector de diagnóstico: conector normalizado T16 de 16 polos. <span class=\"pag\">pág. 68</span></li>\n<li>Tipo de memoria de averías: memoria no volátil exenta de borrado por desconexión de batería. <span class=\"pag\">pág. 68</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Verificación tras la reparación",
+     "texto": "Borrar la memoria de averías con la función \"05\", desconectar el encendido, arrancar el motor, conectar el Climatronic y verificar que el display no parpadee y no se vuelvan a registrar códigos de fallo. (págs. 69, 71)",
+     "html": "<p>Borrar la memoria de averías con la función \"05\", desconectar el encendido, arrancar el motor, conectar el Climatronic y verificar que el display no parpadee y no se vuelvan a registrar códigos de fallo. <span class=\"pag\">págs. 69, 71</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Conexión de la estación de autodiagnóstico VAS 5051 al conector de diagnóstico de 16 polos T16 — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 68",
+     "html": "<ul>\n<li>Conexión de la estación de autodiagnóstico VAS 5051 al conector de diagnóstico de 16 polos T16 — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 68</li>\n</ul>",
      "nivel": ""
     }
    ]
