@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">872 notas · 25/09/2026</p>
+  <p class="sidebar-meta">873 notas · 25/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -655,6 +655,8 @@
     <li><a href="#nt864">NT864 · Revisión y servicio periódico de clima</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Equipos de taller</span></li>
     <li><a href="#nt868">NT868 · Cilindro de carga graduado de refriger</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Calefacción</span></li>
+    <li><a href="#nt881">NT881 · Circuito de calefacción del vehículo</a></li>
   </ul>
 </nav>
 
@@ -43041,8 +43043,60 @@ En la versión de nueva generación, ha sido revisada técnicamente y adaptada e
     </div>
   </section>
 
+  <section id="nt881" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 881 <span class="subtipo">Fundamento</span><span class="fusionado">Valeo</span></div>
+    <div class="nota-body proceso">
+      <h1>Circuito de calefacción del vehículo</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Derivación del líquido refrigerante del motor, que transporta el calor del motor térmico, hacia un intercambiador de calor (radiador de calefacción) que cede esta energía por conducción al aire que entra al habitáculo al tomar contacto con sus aletas (pág. 2).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li><strong>Funcionamiento básico</strong>: La bomba impulsa el líquido refrigerante caliente hacia el radiador de calefacción. El aire frío exterior atraviesa las aletas del radiador, absorbe calor por conducción y se impulsa caliente hacia el habitáculo (pág. 2, 5).</li>
+<li><strong>Fases de calentamiento y válvulas del circuito</strong>:<ul>
+<li>Durante el arranque y hasta alcanzar los 55 ºC en el líquido refrigerante, la válvula termostática permanece cerrada para acelerar el calentamiento del motor y disponer de calefacción en un plazo de tiempo muy corto al derivar el líquido al radiador de calefacción (pág. 4).</li>
+<li>Al superar los 55 ºC, la válvula termostática abre el paso hacia el radiador de refrigeración delantero para disipar el exceso de calor al aire exterior (pág. 5).</li>
+<li>Si el caudal de aire exterior es insuficiente (vehículo a ralentí), el termocontacto activa el electroventilador para garantizar la evacuación térmica (pág. 5).</li>
+</ul>
+</li>
+<li><strong>Inercia térmica y calefacción auxiliar</strong>: El líquido tarda entre 2 y 4 minutos en alcanzar los 55 ºC para iniciar el intercambio térmico (pág. 3). En motores con inyección directa e intercooler este tiempo se incrementa por su mayor rendimiento térmico, requiriendo la incorporación de resistencias de calefacción eléctricas para proporcionar calor durante los primeros minutos (pág. 3).</li>
+<li><strong>Integración térmica y disipación</strong>: Los circuitos de refrigeración del motor están calculados contando con la alta capacidad de disipación de calor del radiador de calefacción, por lo que nunca debe desconectarse este radiador aunque esté defectuoso o se circule por países cálidos (pág. 6).</li>
+<li><strong>Regulación de la temperatura</strong>: Se realiza habitualmente mediante la trampilla de mezcla (ajustando la proporción de aire frío y caliente) o, en vehículos de alta gama, mediante reguladores de caudal de líquido refrigerante (pág. 6).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Temperatura del líquido refrigerante para apertura de la válvula termostática e inicio de calefacción: 55 ºC (pág. 3, 4).</li>
+<li>Tiempo de retraso en alcanzar la temperatura adecuada de calefacción (55 ºC): entre 2 y 4 minutos desde el arranque (pág. 3).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Obtener un grado de confort térmico óptimo en el habitáculo mediante la gestión de la calefacción, proporcionando aire caliente a partir de la energía térmica desprendida por el motor térmico (pág. 1, 2).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <ul>
+<li>Desconectar o anular un radiador de calefacción defectuoso, ignorando que forma parte del diseño de disipación de calor del circuito de refrigeración general del motor térmico (pág. 6).</li>
+<li>Considerar que el aire caliente está disponible inmediatamente tras arrancar, sin tener en cuenta el tiempo de espera de 2 a 4 minutos necesario para calentar el líquido a 55 ºC (pág. 3).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT881_01</code> Esquema del circuito de calefacción e interconexión entre el motor térmico, válvula termostática, radiador de refrigeración, electroventilador, termocontacto, vaso de expansión, bomba, radiador de calefacción y flujos de aire — Fuente: FUNCIONAMIENTO DEL CIRCUITO DE CALEFACCION.PDF, pág. 1 (pág. 1).</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">FUNCIONAMIENTO DEL CIRCUITO DE CALEFACCION.PDF, págs. 1-2</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    872 notas técnicas · generado el 25/09/2026.
+    873 notas técnicas · generado el 25/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
