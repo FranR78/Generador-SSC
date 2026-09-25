@@ -49,6 +49,8 @@ jobs:
       - name: Instalar dependencias
         run: pip install --quiet -r generador/requirements.txt google-genai pydantic
       - name: Fusionar
+        id: fusion
+        continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           FUSION_MODELO: ${{ inputs.modelo }}
@@ -58,7 +60,7 @@ jobs:
           PROBAR: ${{ inputs.probar }}
         run: |
           if [ "$PROBAR" = "true" ]; then
-            python3 generador/fusionar.py --probar; exit 0
+            python3 generador/fusionar.py --probar
           elif [ "$TODAS" = "true" ]; then
             python3 generador/fusionar.py --todas --max "$MAX"
           else
@@ -79,4 +81,9 @@ jobs:
             git push && exit 0
             sleep $((i * 3)); git pull --rebase origin main || exit 1
           done
+          exit 1
+      - name: Resultado
+        if: steps.fusion.outcome == 'failure'
+        run: |
+          echo "::error::Alguna entidad no se ha fusionado: mira el paso «Fusionar»."
           exit 1

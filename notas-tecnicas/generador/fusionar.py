@@ -183,8 +183,9 @@ def elegir_modelo(cliente):
         if not re.fullmatch(r"gemini-(\d+(?:\.\d+)?)-flash", n):
             continue
         candidatos.append((float(re.search(r"\d+(?:\.\d+)?", n).group()), n))
+    print("Flash disponibles:", ", ".join(n for _, n in sorted(candidatos)) or "ninguno")
     if not candidatos:
-        return "gemini-2.5-flash"
+        return "gemini-flash-latest"
     return max(candidatos)[1]
 
 
@@ -203,6 +204,9 @@ def pedir(cliente, texto, tipo):
                 return r.parsed
             return Maestra.model_validate(json.loads(r.text))
         except Exception as e:  # cuota o error transitorio: esperar y reintentar
+            codigo = getattr(e, "code", None)
+            if isinstance(codigo, int) and 400 <= codigo < 500 and codigo != 429:
+                raise RuntimeError(f"Gemini rechaza la petición ({codigo}): {str(e)[:200]}")
             espera = 30 * (intento + 1)
             print(f"    aviso: {str(e)[:160]} · reintento en {espera}s")
             time.sleep(espera)
@@ -341,8 +345,11 @@ def main():
         MODELO = elegir_modelo(cliente)
     print(f"Modelo: {MODELO}")
     if a.probar:
-        r = cliente.models.generate_content(model=MODELO, contents="Responde solo: OK")
-        print("Prueba de configuración:", (r.text or "").strip()[:40])
+        m = pedir(cliente, "### FICHA NT1 [prueba] — Filtro de habitáculo\n\n"
+                  "## Función\nRetiene el polvo y el polen del aire que entra al habitáculo (pág. 1).",
+                  "componente")
+        print(f"Prueba de configuración OK: {len(m.apartados)} apartado(s), "
+              f"nivel «{m.apartados[0].nivel if m.apartados else '-'}»")
         return
 
     por = leer_fichas()
@@ -377,6 +384,8 @@ def main():
     if os.environ.get("GITHUB_STEP_SUMMARY"):
         with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as fh:
             fh.write("## Fusión\n\n" + "\n".join(f"- {x}" for x in resumen) + "\n")
+    if any(": ERROR" in x for x in resumen):
+        sys.exit(1)   # que Actions lo marque en rojo (lo que sí salió se guarda igual)
 
 
 if __name__ == "__main__":
