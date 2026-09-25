@@ -3,6 +3,7 @@
 
 clima:
   - actuador-bloqueo-columna-direccion   # Actuador de bloqueo de la columna de dirección
+  - adaptacion-compresor-embrague   # Sustitución de compresor de regulación externa por compresor con embrague
   - agrupacion-resistencias   # Agrupación de resistencias en serie, paralelo y mixta
   - ajuste-basico-calefaccion-independiente   # Ajuste básico de la calefacción independiente
   - ajuste-basico-climatizador   # Ajuste básico de los componentes del climatizador
@@ -29,6 +30,7 @@ clima:
   - circuito-electrico-aire-acondicionado-manual   # Circuito eléctrico de aire acondicionado manual con trinaria
   - circuito-electrico-aire-acondicionado-semiautomatico   # Circuito eléctrico de aire acondicionado semiautomático con sensor MAP y compresor variable
   - circuito-electrico-climatizador-automatico   # Circuito eléctrico y gestión electrónica del climatizador automático
+  - climatizacion-remota   # Sistema de aire acondicionado remoto
   - codificacion-calefaccion-independiente   # Codificación de la unidad de control para calefacción adicional
   - composicion-aire   # Composición del aire atmosférico y contaminación
   - comprobacion-climatizacion   # Comprobación anual de la climatización
@@ -135,6 +137,7 @@ clima:
   - recuperacion-refrigerante-contaminado   # Recuperación de refrigerante R1234yf contaminado mediante condensación por hielo seco
   - refrigeracion-aire   # Refrigeración del aire
   - refrigeracion-maxima   # Refrigeración máxima del aire
+  - refrigerante-co2   # Agente frigorífico Dióxido de Carbono CO2
   - refrigerante-r12   # Agente frigorífico R12
   - refrigerante-r744   # Agente frigorífico R744 (dióxido de carbono)
   - regulacion-electroventiladores-pwm   # Regulación continua de electroventiladores mediante señal PWM
@@ -156,7 +159,9 @@ clima:
   - servicio-climatizacion   # Servicio bienal de climatización
   - silenciador   # Silenciador
   - silenciador-deposito-receptor   # Silenciador-depósito receptor
+  - sistema-eyector   # Sistema de ciclo eyector
   - soporte-climatizador   # Elemento de fijación del climatizador
+  - subrefrigeracion-y-sobrecalentamiento   # Sub-refrigeración y sobrecalentamiento
   - sustitucion-compresor-y-lavado-circuito   # Sustitución de un compresor nuevo y preparación del circuito
   - tamiz-filtro-aspiracion   # Tamiz del filtro de aspiración del compresor
   - techo-panoramico   # Techo panorámico deflector y corredizo
@@ -175,6 +180,7 @@ clima:
   - unidad-mando-climatizador   # Pulsadores de activación de la unidad de manejo e indicación
   - unidad-mandos-trasera   # Unidad de mandos e indicación trasera del climatizador
   - unidad-manejo-indicacion   # Unidad de manejo e indicación - Pulsadores
+  - ventilacion-solar   # Sistema de ventilación por energía solar
 sin-clasificar:
   - audi-a5-coupe-2008-aire-acondicionado   # Audi A5 Coupé 2008 aire acondicionado
   - ce0   # Ce0
