@@ -6,45 +6,42 @@ nt: 542
 tipo: proceso
 subtipo: fundamento
 clase: fundamento
-titulo: "Ciclo frigorífico elemental con válvula de expansión"
-menu: "Ciclo frigorífico elemental con válvul"
+titulo: "Circuito frigorífico por compresión"
+menu: "Circuito frigorífico por compresión"
 grupo: "Circuito frigorífico"
 clave: ciclo-frigorifico
 variante: valvula-expansion
 area: climatizacion
 sistema: "circuito-frigorifico"
-fuentes: "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 12-15"
-relacionados: ["compresor", "condensador", "deposito-colector", "valvula-expansion", "evaporador"]
-palabras: ["compresión", "condensación", "expansión", "evaporación", "lado alta presión", "lado baja presión"]
+fuentes: "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 12-14"
+relacionados: ["compresor", "condensador", "valvula-expansion", "evaporador"]
+palabras: ["sistema cerrado", "compresión", "condensación", "evaporación", "14 bares", "1", "2 bares"]
 ---
 
 ## Objeto
 
-Explicar la secuencia funcional del proceso de refrigeración por compresión en un circuito frigorífico provisto de válvula de expansión. (págs. 12-15)
+Explicar el ciclo termodinámico de extracción de calor en un circuito frigorífico cerrado provisto de válvula de expansión. (págs. 12-14)
 
 ## Fundamento
 
-El sistema no genera frío, sino que extrae el calor del aire fresco entrante al habitáculo. Para ello, un agente frigorífico circula en un circuito cerrado alternando continuamente entre los estados de agregación líquido y gaseoso mediante cuatro fases operativas consecutivas. (págs. 12-14)
+El frío no se genera; el sistema extrae el calor del aire que ingresa en el habitáculo. Para ello, un agente frigorífico circula impulsado por el compresor en un circuito estanco cambiando continuamente de estado físico (gaseoso y líquido). (págs. 12-13)
 
 ## Desarrollo
 
-1. **Compresión:** El compresor aspira el agente frigorífico en estado gaseoso, frío y a baja presión, lo comprime elevando su presión y temperatura, y lo impele hacia el lado de alta presión. (pág. 13)
-2. **Condensación:** En el condensador, el gas comprimido y caliente cede su calor al aire de refrigeración exterior (viento de marcha y ventilador). Al alcanzar el punto de rocío, el gas se condensa y pasa a estado líquido a alta presión y temperatura media. (págs. 14-15)
-3. **Expansión:** El agente frigorífico líquido y comprimido fluye hasta la válvula de expansión, donde se pulveriza hacia el evaporador sufriendo una drástica caída de presión. (pág. 14)
-4. **Evaporación:** En el evaporador, el líquido pulverizado se distensa y evapora. El calor necesario para la evaporación se extrae del aire caliente que pasa por las aletas, enfriándolo antes de entrar al habitáculo. El agente frigorífico sale del evaporador en estado gaseoso a baja presión y temperatura baja hacia el compresor. (págs. 14-15)
+1. **Compresión:** El compresor aspira el gas frío a baja presión procedente del evaporador, lo comprime elevando su presión y temperatura, y lo envía hacia el lado de alta presión. (pág. 13)
+2. **Condensación:** En el condensador, el gas cede calor al aire de la marcha o del electroventilador y se condensa, pasando a estado líquido a alta presión. (pág. 13)
+3. **Expansión y evaporación:** La válvula de expansión inyecta el líquido pulverizado en el evaporador a baja presión. El fluido se evapora absorbiendo la energía térmica del aire ambiente que pasa entre las aletas, enfriándolo y deshidratándolo antes de retornar al compresor en estado gaseoso. (págs. 13-14)
 
 ## Valores de referencia
 
-- Presión tras compresión (ejemplo): aprox. 1,4 MPa (14 bares) a una temperatura de aprox. 65 ºC. (pág. 15)
-- Condensación (ejemplo): presión de aprox. 1,4 MPa (14 bares) con un enfriamiento de aprox. 10 ºC. (pág. 15)
-- Evaporación (ejemplo): presión de aprox. 0,12 MPa (1,2 bares) a una temperatura de aprox. -7 ºC. (pág. 15)
-- Conversión de unidades: 1 MPa = 10 bares. (pág. 15)
+- Presión y temperatura en compresión (salida compresor): aprox. 1,4 MPa (14 bares) y 65 ºC. (pág. 13)
+- Presión y temperatura en evaporación (salida válvula de expansión): aprox. 0,12 MPa (1,2 bares) y -7 ºC. (pág. 14)
+- Conversión de unidades: 1 MPa = 10 bares. (pág. 13)
 
 ## Errores de concepto frecuentes
 
-- Creer que el aire fresco caliente se mezcla directamente con gas frío sin pasar por un proceso de intercambio térmico en las aletas del evaporador. (pág. 14)
-- Abrir el circuito frigorífico para realizar intervenciones en el vehículo sin evacuar previamente el agente frigorífico con una estación de servicio. (pág. 15)
+- Creer que el climatizador genera aire frío directamente, omitiendo que se trata de un proceso de extracción de calor mediante cambio de estado del refrigerante. (pág. 12)
 
 ## Imágenes requeridas
 
-- Esquema funcional del circuito frigorífico con válvula de expansión indicando compresión, condensación, expansión y evaporación con sus zonas de presión — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 14-15
+- Esquema funcional del circuito frigorífico con presiones y temperaturas en cada tramo — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 13-14

@@ -11,32 +11,36 @@ grupo: "Fluidos frigoríficos"
 clave: refrigerante-r134a
 area: climatizacion
 sistema: "fluidos-frigorificos"
-fuentes: "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 8-11"
+fuentes: "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 8-9"
 relacionados: ["aceite-frigorifico", "ciclo-frigorifico"]
-palabras: ["tetrafluoretano", "punto de ebullición", "curva de presión de vapor", "gas frigorífico"]
+palabras: ["R134a", "gas de ebullición", "incoloro", "diagrama de estados", "retrofit"]
 ---
 
 ## Designación y norma
 
-Agente frigorífico R134a (tetrafluoretano). Sustancia de bajo punto de ebullición utilizada en los climatizadores de vehículos. (pág. 8)
+Agente frigorífico R134a (tetrafluoretano). Fluido de ebullición a bajas temperaturas utilizado en los circuitos de climatización de automóviles. (págs. 8-9)
 
 ## Propiedades
 
-- En estado gaseoso es invisible. En estados de vapor y líquido es incoloro como el agua. (pág. 8)
-- Cambia continuamente entre estado líquido y gaseoso en función de la presión y la temperatura aplicadas dentro del circuito cerrado. (pág. 11)
+- Gas invisible en estado gaseoso; incoloro como el agua en estado de vapor y líquido. (pág. 8)
+- Experimenta cambios de estado de agregación continuos en el proceso cíclico al someterse a las condiciones de presión y temperatura del circuito. (pág. 9)
 
 ## Dónde se usa y cantidades
 
-Se utiliza como fluido de trabajo intermediario para absorber calor en el evaporador y cederlo en el condensador. La cantidad absoluta de llenado depende de las necesidades de rendimiento frigorífico de cada modelo de vehículo. (págs. 8, 11)
+Se utiliza como medio de transporte térmico en circuitos frigoríficos cerrados de turismos y vehículos industriales. La cantidad de carga varía según la categoría del vehículo y las necesidades de rendimiento frigorífico. (págs. 8-9)
 
 ## Compatibilidades y mezclas prohibidas
 
-No se deben mezclar agentes frigoríficos de distinto tipo. Los sistemas transformados con mezclas no autorizadas pierden su rendimiento frigorífico original. (págs. 8, 11)
+Prohibido mezclar con otros agentes frigoríficos. Los sistemas antiguos R12 transformados a R134a (retrofit) no alcanzan el rendimiento frigorífico original. (págs. 8-9)
 
 ## Identificación
 
-Incoloro en estado líquido o de vapor e invisible en estado gaseoso. (pág. 8)
+Gas incoloro en recipientes presurizados específicos identificados para R134a. (pág. 8)
 
-## Imágenes requeridas
+## Manipulación, almacenamiento y residuos
 
-- Gráfico de la curva de presión de vapor y extracto del diagrama de estados de agregación del R134a — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 11
+Sujeto a normativas especiales para las intervenciones de servicio técnico. Requiere el uso de equipos de estación de servicio autorizados para evitar fugas. (págs. 3, 9)
+
+## Riesgos y normativa
+
+Riesgo de lesiones por congelación en caso de escape líquido directo. (págs. 3, 8)

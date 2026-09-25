@@ -2502,7 +2502,7 @@
    "nt": 539,
    "titulo": "Bienestar e higrometría en el habitáculo",
    "seccion": "2. Fundamentos",
-   "descripcion": "Comparativa de temperaturas en cabeza, tórax y pies en un vehículo con y sin climatizador bajo radiación solar — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 4",
+   "descripcion": "Gráfica de curvas del agrado y tabla comparativa de temperaturas en el habitáculo a 30 ºC exteriores — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 4",
    "hecha": false
   },
   {
@@ -2514,19 +2514,11 @@
    "hecha": false
   },
   {
-   "nombre": "NT541_01",
-   "nt": 541,
-   "titulo": "Agente frigorífico R134a",
-   "seccion": "3. Fluidos",
-   "descripcion": "Gráfico de la curva de presión de vapor y extracto del diagrama de estados de agregación del R134a — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 11",
-   "hecha": false
-  },
-  {
    "nombre": "NT542_01",
    "nt": 542,
-   "titulo": "Ciclo frigorífico elemental con válvula de expansión",
+   "titulo": "Circuito frigorífico por compresión",
    "seccion": "2. Fundamentos",
-   "descripcion": "Esquema funcional del circuito frigorífico con válvula de expansión indicando compresión, condensación, expansión y evaporación con sus zonas de presión — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 14-15",
+   "descripcion": "Esquema funcional del circuito frigorífico con presiones y temperaturas en cada tramo — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 13-14",
    "hecha": false
   },
   {
@@ -4178,6 +4170,14 @@
    "hecha": false
   },
   {
+   "nombre": "NT800_01",
+   "nt": 800,
+   "titulo": "Principios físicos de refrigeración y presión de vapor",
+   "seccion": "2. Fundamentos",
+   "descripcion": "Curva de presión de vapor para el R12 y R134a relacionando presión y temperatura — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 7",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -4202,7 +4202,7 @@
    "hecha": false
   }
  ],
- "total": 791,
+ "total": 793,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -5500,46 +5500,46 @@
    ],
    "palabras": [
     "bienestar",
-    "seguridad activa",
     "OMS",
-    "humedad",
-    "temperatura"
+    "seguridad activa",
+    "carga climatológica",
+    "deshidratación"
    ],
    "apartados": [
     {
      "titulo": "Objeto",
-     "texto": "Definir las condiciones de temperatura, humedad y pureza del aire necesarias en el habitáculo para garantizar el bienestar de los ocupantes, reducir la fatiga al volante y mantener la seguridad activa en la conducción. (págs. 4-5)",
-     "html": "<p>Definir las condiciones de temperatura, humedad y pureza del aire necesarias en el habitáculo para garantizar el bienestar de los ocupantes, reducir la fatiga al volante y mantener la seguridad activa en la conducción. <span class=\"pag\">págs. 4-5</span></p>",
+     "texto": "Definir las condiciones de temperatura, humedad y pureza del aire interior para mantener la capacidad física y mental del conductor y garantizar la seguridad activa. (págs. 4-5)",
+     "html": "<p>Definir las condiciones de temperatura, humedad y pureza del aire interior para mantener la capacidad física y mental del conductor y garantizar la seguridad activa. <span class=\"pag\">págs. 4-5</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Fundamento",
-     "texto": "El ser humano experimenta sensación de confort cuando su entorno se encuentra dentro de un margen determinado de temperatura y humedad del aire. Según estudios científicos de la Organización Mundial de la Salud (OMS), someterse a cargas térmicas o climatológicas adversas reduce intensamente la capacidad de concentración y de reacción de la persona. El climatizador acondiciona el aire a una temperatura agradable, deshidratándolo y depurándolo mediante elementos filtrantes. (págs. 4-5)",
-     "html": "<p>El ser humano experimenta sensación de confort cuando su entorno se encuentra dentro de un margen determinado de temperatura y humedad del aire. Según estudios científicos de la Organización Mundial de la Salud (OMS), someterse a cargas térmicas o climatológicas adversas reduce intensamente la capacidad de concentración y de reacción de la persona. El climatizador acondiciona el aire a una temperatura agradable, deshidratándolo y depurándolo mediante elementos filtrantes. <span class=\"pag\">págs. 4-5</span></p>",
+     "texto": "El ser humano experimenta bienestar cuando el entorno presenta valores determinados de temperatura y humedad. El exceso de calor y la elevada humedad ambiental representan una carga física que intensifica la transpiración, eleva la temperatura corporal y aumenta la frecuencia cardíaca, provocando fatiga. (págs. 4-5)",
+     "html": "<p>El ser humano experimenta bienestar cuando el entorno presenta valores determinados de temperatura y humedad. El exceso de calor y la elevada humedad ambiental representan una carga física que intensifica la transpiración, eleva la temperatura corporal y aumenta la frecuencia cardíaca, provocando fatiga. <span class=\"pag\">págs. 4-5</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Desarrollo",
-     "texto": "La radiación solar directa produce un reparto térmico desigual y elevado en el habitáculo de un vehículo sin climatizador. La instalación del climatizador permite generar temperaturas intensamente reducidas en los aireadores independientemente de si el vehículo está parado o en marcha. Aparte del descenso térmico, el sistema realiza la deshidratación y depuración del aire. La incorporación de un filtro antipolen o de un filtro de carbón activo complementa la depuración, beneficiando a las personas con enfermedades alérgicas. (págs. 4-5)",
-     "html": "<p>La radiación solar directa produce un reparto térmico desigual y elevado en el habitáculo de un vehículo sin climatizador. La instalación del climatizador permite generar temperaturas intensamente reducidas en los aireadores independientemente de si el vehículo está parado o en marcha.</p>\n<p>Aparte del descenso térmico, el sistema realiza la deshidratación y depuración del aire. La incorporación de un filtro antipolen o de un filtro de carbón activo complementa la depuración, beneficiando a las personas con enfermedades alérgicas. <span class=\"pag\">págs. 4-5</span></p>",
+     "texto": "Estudios de la Organización Mundial de la Salud (OMS) demuestran que someterse a temperaturas adversas reduce intensamente la capacidad de concentración y reacción. Una radiación solar intensa sobre el vehículo puede elevar la temperatura del habitáculo más de 15 ºC por encima de la temperatura atmosférica, afectando principalmente a la cabeza. Intentar acondicionar el habitáculo abriendo las ventanillas o el techo practicable genera corrientes de aire desagradables, ruido, entrada de gases de escape y polen. El climatizador deshidrata, enfría y depura el aire impulsado. La inclusión de filtros antipolen y de carbón activo elimina partículas contaminantes y favorece a las personas con enfermedades alérgicas. (págs. 4-5)",
+     "html": "<p>Estudios de la Organización Mundial de la Salud (OMS) demuestran que someterse a temperaturas adversas reduce intensamente la capacidad de concentración y reacción. Una radiación solar intensa sobre el vehículo puede elevar la temperatura del habitáculo más de 15 ºC por encima de la temperatura atmosférica, afectando principalmente a la cabeza.</p>\n<p>Intentar acondicionar el habitáculo abriendo las ventanillas o el techo practicable genera corrientes de aire desagradables, ruido, entrada de gases de escape y polen. El climatizador deshidrata, enfría y depura el aire impulsado. La inclusión de filtros antipolen y de carbón activo elimina partículas contaminantes y favorece a las personas con enfermedades alérgicas. <span class=\"pag\">págs. 4-5</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Valores de referencia",
-     "texto": "Temperatura en cabeza con climatizador (radiación solar): 23 ºC. (pág. 4) Temperatura en cabeza sin climatizador (radiación solar): 42 ºC. (pág. 4) Temperatura en tórax con climatizador (radiación solar): 24 ºC. (pág. 4) Temperatura en tórax sin climatizador (radiación solar): 40 ºC. (pág. 4) Temperatura en pies con climatizador (radiación solar): 28 ºC. (pág. 4) Temperatura en pies sin climatizador (radiación solar): 35 ºC. (pág. 4)",
-     "html": "<ul>\n<li>Temperatura en cabeza con climatizador (radiación solar): 23 ºC. <span class=\"pag\">pág. 4</span></li>\n<li>Temperatura en cabeza sin climatizador (radiación solar): 42 ºC. <span class=\"pag\">pág. 4</span></li>\n<li>Temperatura en tórax con climatizador (radiación solar): 24 ºC. <span class=\"pag\">pág. 4</span></li>\n<li>Temperatura en tórax sin climatizador (radiación solar): 40 ºC. <span class=\"pag\">pág. 4</span></li>\n<li>Temperatura en pies con climatizador (radiación solar): 28 ºC. <span class=\"pag\">pág. 4</span></li>\n<li>Temperatura en pies sin climatizador (radiación solar): 35 ºC. <span class=\"pag\">pág. 4</span></li>\n</ul>",
+     "texto": "Temperatura ideal para el conductor (margen agradable A): entre 20 ºC y 22 ºC. (pág. 4) Incremento de temperatura interior por radiación solar: > 15 ºC sobre la atmosférica. (pág. 4) Comparativa tras 1 hora de marcha con 30 ºC de temperatura ambiental: Temperatura en cabeza: 23 ºC (con climatizador) frente a 42 ºC (sin climatizador). (pág. 4) Temperatura en tórax: 24 ºC (con climatizador) frente a 40 ºC (sin climatizador). (pág. 4) Temperatura en pies: 28 ºC (con climatizador) frente a 35 ºC (sin climatizador). (pág. 4)",
+     "html": "<ul>\n<li>Temperatura ideal para el conductor (margen agradable A): entre 20 ºC y 22 ºC. <span class=\"pag\">pág. 4</span></li>\n<li>Incremento de temperatura interior por radiación solar: &gt; 15 ºC sobre la atmosférica. <span class=\"pag\">pág. 4</span></li>\n<li>Comparativa tras 1 hora de marcha con 30 ºC de temperatura ambiental:<ul>\n<li>Temperatura en cabeza: 23 ºC (con climatizador) frente a 42 ºC (sin climatizador). <span class=\"pag\">pág. 4</span></li>\n<li>Temperatura en tórax: 24 ºC (con climatizador) frente a 40 ºC (sin climatizador). <span class=\"pag\">pág. 4</span></li>\n<li>Temperatura en pies: 28 ºC (con climatizador) frente a 35 ºC (sin climatizador). <span class=\"pag\">pág. 4</span></li>\n</ul>\n</li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Errores de concepto frecuentes",
-     "texto": "Considerar el aire acondicionado únicamente como un equipamiento de lujo y no como un elemento de la seguridad activa del vehículo. (pág. 4) Pensar que la refrigeración del habitáculo solo se puede lograr cuando el vehículo está circulando a velocidad de marcha. (pág. 5)",
-     "html": "<ul>\n<li>Considerar el aire acondicionado únicamente como un equipamiento de lujo y no como un elemento de la seguridad activa del vehículo. <span class=\"pag\">pág. 4</span></li>\n<li>Pensar que la refrigeración del habitáculo solo se puede lograr cuando el vehículo está circulando a velocidad de marcha. <span class=\"pag\">pág. 5</span></li>\n</ul>",
+     "texto": "Considerar el climatizador como un equipamiento de lujo opcional y no como un componente técnico de la seguridad activa. (pág. 4) Recurrir a la apertura de ventanillas para refrigerar el habitáculo, provocando corrientes molestas y entrada de agentes alérgenos. (pág. 4)",
+     "html": "<ul>\n<li>Considerar el climatizador como un equipamiento de lujo opcional y no como un componente técnico de la seguridad activa. <span class=\"pag\">pág. 4</span></li>\n<li>Recurrir a la apertura de ventanillas para refrigerar el habitáculo, provocando corrientes molestas y entrada de agentes alérgenos. <span class=\"pag\">pág. 4</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Imágenes requeridas",
-     "texto": "Comparativa de temperaturas en cabeza, tórax y pies en un vehículo con y sin climatizador bajo radiación solar — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 4",
-     "html": "<ul>\n<li>Comparativa de temperaturas en cabeza, tórax y pies en un vehículo con y sin climatizador bajo radiación solar — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 4</li>\n</ul>",
+     "texto": "Gráfica de curvas del agrado y tabla comparativa de temperaturas en el habitáculo a 30 ºC exteriores — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 4",
+     "html": "<ul>\n<li>Gráfica de curvas del agrado y tabla comparativa de temperaturas en el habitáculo a 30 ºC exteriores — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 4</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -7412,15 +7412,15 @@
    "clave": "ciclo-frigorifico",
    "seccion": "2. Fundamentos",
    "subgrupo": "",
-   "titulo": "Ciclo frigorífico elemental con válvula de expansión",
+   "titulo": "Circuito frigorífico por compresión",
    "codigo": "",
-   "menu": "Ciclo frigorífico elemental con válvul",
+   "menu": "Circuito frigorífico por compresión",
    "grupo": "Circuito frigorífico",
    "tipo": "proceso",
    "subtipo": "fundamento",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 12-15",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 12-14",
    "clase": "fundamento",
    "estado": "",
    "fusionadas": [],
@@ -7431,53 +7431,53 @@
    "relacionados": [
     "compresor",
     "condensador",
-    "deposito-colector",
     "valvula-expansion",
     "evaporador"
    ],
    "palabras": [
+    "sistema cerrado",
     "compresión",
     "condensación",
-    "expansión",
     "evaporación",
-    "lado alta presión",
-    "lado baja presión"
+    "14 bares",
+    "1",
+    "2 bares"
    ],
    "apartados": [
     {
      "titulo": "Objeto",
-     "texto": "Explicar la secuencia funcional del proceso de refrigeración por compresión en un circuito frigorífico provisto de válvula de expansión. (págs. 12-15)",
-     "html": "<p>Explicar la secuencia funcional del proceso de refrigeración por compresión en un circuito frigorífico provisto de válvula de expansión. <span class=\"pag\">págs. 12-15</span></p>",
+     "texto": "Explicar el ciclo termodinámico de extracción de calor en un circuito frigorífico cerrado provisto de válvula de expansión. (págs. 12-14)",
+     "html": "<p>Explicar el ciclo termodinámico de extracción de calor en un circuito frigorífico cerrado provisto de válvula de expansión. <span class=\"pag\">págs. 12-14</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Fundamento",
-     "texto": "El sistema no genera frío, sino que extrae el calor del aire fresco entrante al habitáculo. Para ello, un agente frigorífico circula en un circuito cerrado alternando continuamente entre los estados de agregación líquido y gaseoso mediante cuatro fases operativas consecutivas. (págs. 12-14)",
-     "html": "<p>El sistema no genera frío, sino que extrae el calor del aire fresco entrante al habitáculo. Para ello, un agente frigorífico circula en un circuito cerrado alternando continuamente entre los estados de agregación líquido y gaseoso mediante cuatro fases operativas consecutivas. <span class=\"pag\">págs. 12-14</span></p>",
+     "texto": "El frío no se genera; el sistema extrae el calor del aire que ingresa en el habitáculo. Para ello, un agente frigorífico circula impulsado por el compresor en un circuito estanco cambiando continuamente de estado físico (gaseoso y líquido). (págs. 12-13)",
+     "html": "<p>El frío no se genera; el sistema extrae el calor del aire que ingresa en el habitáculo. Para ello, un agente frigorífico circula impulsado por el compresor en un circuito estanco cambiando continuamente de estado físico (gaseoso y líquido). <span class=\"pag\">págs. 12-13</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Desarrollo",
-     "texto": "Compresión: El compresor aspira el agente frigorífico en estado gaseoso, frío y a baja presión, lo comprime elevando su presión y temperatura, y lo impele hacia el lado de alta presión. (pág. 13) Condensación: En el condensador, el gas comprimido y caliente cede su calor al aire de refrigeración exterior (viento de marcha y ventilador). Al alcanzar el punto de rocío, el gas se condensa y pasa a estado líquido a alta presión y temperatura media. (págs. 14-15) Expansión: El agente frigorífico líquido y comprimido fluye hasta la válvula de expansión, donde se pulveriza hacia el evaporador sufriendo una drástica caída de presión. (pág. 14) Evaporación: En el evaporador, el líquido pulverizado se distensa y evapora. El calor necesario para la evaporación se extrae del aire caliente que pasa por las aletas, enfriándolo antes de entrar al habitáculo. El agente frigorífico sale del evaporador en estado gaseoso a baja presión y temperatura baja hacia el compresor. (págs. 14-15)",
-     "html": "<ol>\n<li><strong>Compresión:</strong> El compresor aspira el agente frigorífico en estado gaseoso, frío y a baja presión, lo comprime elevando su presión y temperatura, y lo impele hacia el lado de alta presión. <span class=\"pag\">pág. 13</span></li>\n<li><strong>Condensación:</strong> En el condensador, el gas comprimido y caliente cede su calor al aire de refrigeración exterior (viento de marcha y ventilador). Al alcanzar el punto de rocío, el gas se condensa y pasa a estado líquido a alta presión y temperatura media. <span class=\"pag\">págs. 14-15</span></li>\n<li><strong>Expansión:</strong> El agente frigorífico líquido y comprimido fluye hasta la válvula de expansión, donde se pulveriza hacia el evaporador sufriendo una drástica caída de presión. <span class=\"pag\">pág. 14</span></li>\n<li><strong>Evaporación:</strong> En el evaporador, el líquido pulverizado se distensa y evapora. El calor necesario para la evaporación se extrae del aire caliente que pasa por las aletas, enfriándolo antes de entrar al habitáculo. El agente frigorífico sale del evaporador en estado gaseoso a baja presión y temperatura baja hacia el compresor. <span class=\"pag\">págs. 14-15</span></li>\n</ol>",
+     "texto": "Compresión: El compresor aspira el gas frío a baja presión procedente del evaporador, lo comprime elevando su presión y temperatura, y lo envía hacia el lado de alta presión. (pág. 13) Condensación: En el condensador, el gas cede calor al aire de la marcha o del electroventilador y se condensa, pasando a estado líquido a alta presión. (pág. 13) Expansión y evaporación: La válvula de expansión inyecta el líquido pulverizado en el evaporador a baja presión. El fluido se evapora absorbiendo la energía térmica del aire ambiente que pasa entre las aletas, enfriándolo y deshidratándolo antes de retornar al compresor en estado gaseoso. (págs. 13-14)",
+     "html": "<ol>\n<li><strong>Compresión:</strong> El compresor aspira el gas frío a baja presión procedente del evaporador, lo comprime elevando su presión y temperatura, y lo envía hacia el lado de alta presión. <span class=\"pag\">pág. 13</span></li>\n<li><strong>Condensación:</strong> En el condensador, el gas cede calor al aire de la marcha o del electroventilador y se condensa, pasando a estado líquido a alta presión. <span class=\"pag\">pág. 13</span></li>\n<li><strong>Expansión y evaporación:</strong> La válvula de expansión inyecta el líquido pulverizado en el evaporador a baja presión. El fluido se evapora absorbiendo la energía térmica del aire ambiente que pasa entre las aletas, enfriándolo y deshidratándolo antes de retornar al compresor en estado gaseoso. <span class=\"pag\">págs. 13-14</span></li>\n</ol>",
      "nivel": ""
     },
     {
      "titulo": "Valores de referencia",
-     "texto": "Presión tras compresión (ejemplo): aprox. 1,4 MPa (14 bares) a una temperatura de aprox. 65 ºC. (pág. 15) Condensación (ejemplo): presión de aprox. 1,4 MPa (14 bares) con un enfriamiento de aprox. 10 ºC. (pág. 15) Evaporación (ejemplo): presión de aprox. 0,12 MPa (1,2 bares) a una temperatura de aprox. -7 ºC. (pág. 15) Conversión de unidades: 1 MPa = 10 bares. (pág. 15)",
-     "html": "<ul>\n<li>Presión tras compresión (ejemplo): aprox. 1,4 MPa (14 bares) a una temperatura de aprox. 65 ºC. <span class=\"pag\">pág. 15</span></li>\n<li>Condensación (ejemplo): presión de aprox. 1,4 MPa (14 bares) con un enfriamiento de aprox. 10 ºC. <span class=\"pag\">pág. 15</span></li>\n<li>Evaporación (ejemplo): presión de aprox. 0,12 MPa (1,2 bares) a una temperatura de aprox. -7 ºC. <span class=\"pag\">pág. 15</span></li>\n<li>Conversión de unidades: 1 MPa = 10 bares. <span class=\"pag\">pág. 15</span></li>\n</ul>",
+     "texto": "Presión y temperatura en compresión (salida compresor): aprox. 1,4 MPa (14 bares) y 65 ºC. (pág. 13) Presión y temperatura en evaporación (salida válvula de expansión): aprox. 0,12 MPa (1,2 bares) y -7 ºC. (pág. 14) Conversión de unidades: 1 MPa = 10 bares. (pág. 13)",
+     "html": "<ul>\n<li>Presión y temperatura en compresión (salida compresor): aprox. 1,4 MPa (14 bares) y 65 ºC. <span class=\"pag\">pág. 13</span></li>\n<li>Presión y temperatura en evaporación (salida válvula de expansión): aprox. 0,12 MPa (1,2 bares) y -7 ºC. <span class=\"pag\">pág. 14</span></li>\n<li>Conversión de unidades: 1 MPa = 10 bares. <span class=\"pag\">pág. 13</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Errores de concepto frecuentes",
-     "texto": "Creer que el aire fresco caliente se mezcla directamente con gas frío sin pasar por un proceso de intercambio térmico en las aletas del evaporador. (pág. 14) Abrir el circuito frigorífico para realizar intervenciones en el vehículo sin evacuar previamente el agente frigorífico con una estación de servicio. (pág. 15)",
-     "html": "<ul>\n<li>Creer que el aire fresco caliente se mezcla directamente con gas frío sin pasar por un proceso de intercambio térmico en las aletas del evaporador. <span class=\"pag\">pág. 14</span></li>\n<li>Abrir el circuito frigorífico para realizar intervenciones en el vehículo sin evacuar previamente el agente frigorífico con una estación de servicio. <span class=\"pag\">pág. 15</span></li>\n</ul>",
+     "texto": "Creer que el climatizador genera aire frío directamente, omitiendo que se trata de un proceso de extracción de calor mediante cambio de estado del refrigerante. (pág. 12)",
+     "html": "<ul>\n<li>Creer que el climatizador genera aire frío directamente, omitiendo que se trata de un proceso de extracción de calor mediante cambio de estado del refrigerante. <span class=\"pag\">pág. 12</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Imágenes requeridas",
-     "texto": "Esquema funcional del circuito frigorífico con válvula de expansión indicando compresión, condensación, expansión y evaporación con sus zonas de presión — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 14-15",
-     "html": "<ul>\n<li>Esquema funcional del circuito frigorífico con válvula de expansión indicando compresión, condensación, expansión y evaporación con sus zonas de presión — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 14-15</li>\n</ul>",
+     "texto": "Esquema funcional del circuito frigorífico con presiones y temperaturas en cada tramo — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 13-14",
+     "html": "<ul>\n<li>Esquema funcional del circuito frigorífico con presiones y temperaturas en cada tramo — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 13-14</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -8921,6 +8921,79 @@
    ]
   },
   {
+   "id": "ssc.ciclo-frigorifico.fisica-aplicada.208-climatizadores-en-los-vehic",
+   "nt": 800,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ciclo-frigorifico",
+   "seccion": "2. Fundamentos",
+   "subgrupo": "",
+   "titulo": "Principios físicos de refrigeración y presión de vapor",
+   "codigo": "",
+   "menu": "Principios físicos de refrigeración y",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 6-7",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "fisica-aplicada",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r134a"
+   ],
+   "palabras": [
+    "evaporación",
+    "licuación",
+    "punto de ebullición",
+    "1 bar",
+    "fluido frigorífico"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Describir los principios físicos de cambio de estado por evaporación y licuación de los fluidos de fácil ebullición sometidos a variación de presión y temperatura. (págs. 6-7)",
+     "html": "<p>Describir los principios físicos de cambio de estado por evaporación y licuación de los fluidos de fácil ebullición sometidos a variación de presión y temperatura. <span class=\"pag\">págs. 6-7</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Los climatizadores utilizan el proceso de evaporación de sustancias de fácil ebullición (agentes frigoríficos) para absorber calor del aire que entra al habitáculo. (págs. 6-7)",
+     "html": "<p>Los climatizadores utilizan el proceso de evaporación de sustancias de fácil ebullición (agentes frigoríficos) para absorber calor del aire que entra al habitáculo. <span class=\"pag\">págs. 6-7</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Las transformaciones de fase del fluido frigorífico en el circuito cerrado responden a las variaciones de presión y temperatura: Licuación / Condensación: Si la presión se mantiene constante y se reduce la temperatura, el fluido en estado gaseoso pasa a estado líquido (ocurre en el condensador). (pág. 7) Evaporación: Si se reduce la presión ejercida sobre el líquido, el fluido pasa de estado líquido a gaseoso absorbiendo energía térmica (ocurre en el evaporador). (pág. 7)",
+     "html": "<p>Las transformaciones de fase del fluido frigorífico en el circuito cerrado responden a las variaciones de presión y temperatura:</p>\n<ul>\n<li><strong>Licuación / Condensación:</strong> Si la presión se mantiene constante y se reduce la temperatura, el fluido en estado gaseoso pasa a estado líquido (ocurre en el condensador). <span class=\"pag\">pág. 7</span></li>\n<li><strong>Evaporación:</strong> Si se reduce la presión ejercida sobre el líquido, el fluido pasa de estado líquido a gaseoso absorbiendo energía térmica (ocurre en el evaporador). <span class=\"pag\">pág. 7</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Presión atmosférica de referencia para las tablas de ebullición: 0,1 MPa (1 bar). (pág. 6) Punto de ebullición del R12 a 1 bar: -29,8 ºC. (pág. 6) Punto de ebullición del R134a a 1 bar: -26,5 ºC. (pág. 6)",
+     "html": "<ul>\n<li>Presión atmosférica de referencia para las tablas de ebullición: 0,1 MPa (1 bar). <span class=\"pag\">pág. 6</span></li>\n<li>Punto de ebullición del R12 a 1 bar: -29,8 ºC. <span class=\"pag\">pág. 6</span></li>\n<li>Punto de ebullición del R134a a 1 bar: -26,5 ºC. <span class=\"pag\">pág. 6</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Suponer que la temperatura de ebullición de un fluido permanece constante independientemente del nivel de presión del circuito. (págs. 6-7)",
+     "html": "<ul>\n<li>Suponer que la temperatura de ebullición de un fluido permanece constante independientemente del nivel de presión del circuito. <span class=\"pag\">págs. 6-7</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Curva de presión de vapor para el R12 y R134a relacionando presión y temperatura — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 7",
+     "html": "<ul>\n<li>Curva de presión de vapor para el R12 y R134a relacionando presión y temperatura — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 7</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.refrigerante-r134a.208-climatizadores-en-los-vehic",
    "nt": 541,
    "modulo": "ssc",
@@ -8936,7 +9009,7 @@
    "subtipo": "",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 8-11",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 8-9",
    "clase": "fluido",
    "estado": "",
    "fusionadas": [],
@@ -8949,46 +9022,53 @@
     "ciclo-frigorifico"
    ],
    "palabras": [
-    "tetrafluoretano",
-    "punto de ebullición",
-    "curva de presión de vapor",
-    "gas frigorífico"
+    "R134a",
+    "gas de ebullición",
+    "incoloro",
+    "diagrama de estados",
+    "retrofit"
    ],
    "apartados": [
     {
      "titulo": "Designación y norma",
-     "texto": "Agente frigorífico R134a (tetrafluoretano). Sustancia de bajo punto de ebullición utilizada en los climatizadores de vehículos. (pág. 8)",
-     "html": "<p>Agente frigorífico R134a (tetrafluoretano). Sustancia de bajo punto de ebullición utilizada en los climatizadores de vehículos. <span class=\"pag\">pág. 8</span></p>",
+     "texto": "Agente frigorífico R134a (tetrafluoretano). Fluido de ebullición a bajas temperaturas utilizado en los circuitos de climatización de automóviles. (págs. 8-9)",
+     "html": "<p>Agente frigorífico R134a (tetrafluoretano). Fluido de ebullición a bajas temperaturas utilizado en los circuitos de climatización de automóviles. <span class=\"pag\">págs. 8-9</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Propiedades",
-     "texto": "En estado gaseoso es invisible. En estados de vapor y líquido es incoloro como el agua. (pág. 8) Cambia continuamente entre estado líquido y gaseoso en función de la presión y la temperatura aplicadas dentro del circuito cerrado. (pág. 11)",
-     "html": "<ul>\n<li>En estado gaseoso es invisible. En estados de vapor y líquido es incoloro como el agua. <span class=\"pag\">pág. 8</span></li>\n<li>Cambia continuamente entre estado líquido y gaseoso en función de la presión y la temperatura aplicadas dentro del circuito cerrado. <span class=\"pag\">pág. 11</span></li>\n</ul>",
+     "texto": "Gas invisible en estado gaseoso; incoloro como el agua en estado de vapor y líquido. (pág. 8) Experimenta cambios de estado de agregación continuos en el proceso cíclico al someterse a las condiciones de presión y temperatura del circuito. (pág. 9)",
+     "html": "<ul>\n<li>Gas invisible en estado gaseoso; incoloro como el agua en estado de vapor y líquido. <span class=\"pag\">pág. 8</span></li>\n<li>Experimenta cambios de estado de agregación continuos en el proceso cíclico al someterse a las condiciones de presión y temperatura del circuito. <span class=\"pag\">pág. 9</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Dónde se usa y cantidades",
-     "texto": "Se utiliza como fluido de trabajo intermediario para absorber calor en el evaporador y cederlo en el condensador. La cantidad absoluta de llenado depende de las necesidades de rendimiento frigorífico de cada modelo de vehículo. (págs. 8, 11)",
-     "html": "<p>Se utiliza como fluido de trabajo intermediario para absorber calor en el evaporador y cederlo en el condensador. La cantidad absoluta de llenado depende de las necesidades de rendimiento frigorífico de cada modelo de vehículo. <span class=\"pag\">págs. 8, 11</span></p>",
+     "texto": "Se utiliza como medio de transporte térmico en circuitos frigoríficos cerrados de turismos y vehículos industriales. La cantidad de carga varía según la categoría del vehículo y las necesidades de rendimiento frigorífico. (págs. 8-9)",
+     "html": "<p>Se utiliza como medio de transporte térmico en circuitos frigoríficos cerrados de turismos y vehículos industriales. La cantidad de carga varía según la categoría del vehículo y las necesidades de rendimiento frigorífico. <span class=\"pag\">págs. 8-9</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Compatibilidades y mezclas prohibidas",
-     "texto": "No se deben mezclar agentes frigoríficos de distinto tipo. Los sistemas transformados con mezclas no autorizadas pierden su rendimiento frigorífico original. (págs. 8, 11)",
-     "html": "<p>No se deben mezclar agentes frigoríficos de distinto tipo. Los sistemas transformados con mezclas no autorizadas pierden su rendimiento frigorífico original. <span class=\"pag\">págs. 8, 11</span></p>",
+     "texto": "Prohibido mezclar con otros agentes frigoríficos. Los sistemas antiguos R12 transformados a R134a (retrofit) no alcanzan el rendimiento frigorífico original. (págs. 8-9)",
+     "html": "<p>Prohibido mezclar con otros agentes frigoríficos. Los sistemas antiguos R12 transformados a R134a (retrofit) no alcanzan el rendimiento frigorífico original. <span class=\"pag\">págs. 8-9</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Identificación",
-     "texto": "Incoloro en estado líquido o de vapor e invisible en estado gaseoso. (pág. 8)",
-     "html": "<p>Incoloro en estado líquido o de vapor e invisible en estado gaseoso. <span class=\"pag\">pág. 8</span></p>",
+     "texto": "Gas incoloro en recipientes presurizados específicos identificados para R134a. (pág. 8)",
+     "html": "<p>Gas incoloro en recipientes presurizados específicos identificados para R134a. <span class=\"pag\">pág. 8</span></p>",
      "nivel": ""
     },
     {
-     "titulo": "Imágenes requeridas",
-     "texto": "Gráfico de la curva de presión de vapor y extracto del diagrama de estados de agregación del R134a — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 11",
-     "html": "<ul>\n<li>Gráfico de la curva de presión de vapor y extracto del diagrama de estados de agregación del R134a — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 11</li>\n</ul>",
+     "titulo": "Manipulación, almacenamiento y residuos",
+     "texto": "Sujeto a normativas especiales para las intervenciones de servicio técnico. Requiere el uso de equipos de estación de servicio autorizados para evitar fugas. (págs. 3, 9)",
+     "html": "<p>Sujeto a normativas especiales para las intervenciones de servicio técnico. Requiere el uso de equipos de estación de servicio autorizados para evitar fugas. <span class=\"pag\">págs. 3, 9</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Riesgos y normativa",
+     "texto": "Riesgo de lesiones por congelación en caso de escape líquido directo. (págs. 3, 8)",
+     "html": "<p>Riesgo de lesiones por congelación en caso de escape líquido directo. <span class=\"pag\">págs. 3, 8</span></p>",
      "nivel": ""
     }
    ]
@@ -14974,6 +15054,76 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema del ciclo de trabajo (aspiración, compresión y descarga) de un compresor rotativo de paletas — Fuente: HELLA01.PDF, pág. 33",
      "html": "<ul>\n<li>Esquema del ciclo de trabajo (aspiración, compresión y descarga) de un compresor rotativo de paletas — Fuente: HELLA01.PDF, pág. 33</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.compresor.208-climatizadores-en-los-vehic",
+   "nt": 801,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "compresor",
+   "seccion": "4. El compresor",
+   "subgrupo": "",
+   "titulo": "Compresor de climatización",
+   "codigo": "",
+   "menu": "Compresor de climatización",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 15-16",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "embrague-compresor",
+    "condensador",
+    "evaporador",
+    "aceite-frigorifico"
+   ],
+   "palabras": [
+    "desplazamiento",
+    "lubricación por aceite",
+    "acoplamiento electromagnético",
+    "régimen variable",
+    "6000 rpm"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Aspirar el gas refrigerante frío en estado gaseoso a baja presión procedente del evaporador, comprimirlo e impulsarlo a alta presión y elevada temperatura hacia el condensador. (págs. 15-16)",
+     "html": "<p>Aspirar el gas refrigerante frío en estado gaseoso a baja presión procedente del evaporador, comprimirlo e impulsarlo a alta presión y elevada temperatura hacia el condensador. <span class=\"pag\">págs. 15-16</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Compresor de desplazamiento volumétrico lubricado por aceite en su interior. Es accionado por el motor del vehículo a través de una correa. (págs. 15-16)",
+     "html": "<p>Compresor de desplazamiento volumétrico lubricado por aceite en su interior. Es accionado por el motor del vehículo a través de una correa. <span class=\"pag\">págs. 15-16</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Funciona únicamente al estar activado el climatizador mediante el acoplamiento electromagnético. Sus válvulas internas de admisión y escape abren y cierran automáticamente al ritmo de trabajo. Como su régimen de giro varía con las revoluciones del motor (desde 0 hasta 6.000 rpm), el caudal de fluido comprimido varía afectando al llenado del evaporador. (págs. 15-16)",
+     "html": "<p>Funciona únicamente al estar activado el climatizador mediante el acoplamiento electromagnético. Sus válvulas internas de admisión y escape abren y cierran automáticamente al ritmo de trabajo. Como su régimen de giro varía con las revoluciones del motor (desde 0 hasta 6.000 rpm), el caudal de fluido comprimido varía afectando al llenado del evaporador. <span class=\"pag\">págs. 15-16</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Variación de régimen de funcionamiento del compresor: de 0 a 6.000 rpm. (pág. 16)",
+     "html": "<ul>\n<li>Variación de régimen de funcionamiento del compresor: de 0 a 6.000 rpm. <span class=\"pag\">pág. 16</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Mantener la lubricación interna del mecanismo mediante la presencia constante del aceite especial disuelto en el agente frigorífico. (pág. 15)",
+     "html": "<p>Mantener la lubricación interna del mecanismo mediante la presencia constante del aceite especial disuelto en el agente frigorífico. <span class=\"pag\">pág. 15</span></p>",
      "nivel": ""
     }
    ]
