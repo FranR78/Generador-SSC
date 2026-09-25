@@ -3602,7 +3602,7 @@
    "hecha": false
   }
  ],
- "total": 701,
+ "total": 702,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -16314,6 +16314,82 @@
      "titulo": "Imágenes requeridas",
      "texto": "Sección y esquema de fuerzas (PFü, PSa, PFe) en una válvula de expansión monobloc con diafragma — Fuente: 4. CIRCUITO FRIGORÍGENO 5 AL.pptx, pág. 101 (pág. 101).",
      "html": "<ul>\n<li>Sección y esquema de fuerzas (PFü, PSa, PFe) en una válvula de expansión monobloc con diafragma — Fuente: 4. CIRCUITO FRIGORÍGENO 5  AL.pptx, pág. 101 <span class=\"pag\">pág. 101</span>.</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.valvula-expansion.climatizacion-basicos-vavula-de-expansio",
+   "nt": 710,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "valvula-expansion",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "Dispositivos de expansión",
+   "titulo": "Válvula de expansión",
+   "codigo": "",
+   "menu": "Válvula de expansión",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Climatizacion basicos - Vávula de Expansión 2.pdf, págs. 1",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "ciclo-frigorifico",
+   "relacionados": [
+    "evaporador",
+    "compresor",
+    "filtro-deshidratador",
+    "condensador"
+   ],
+   "palabras": [
+    "alta presion",
+    "baja presion",
+    "flujo de gas refrigerante",
+    "sobrecalentamiento",
+    "congelacion",
+    "inyeccion"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Constituir el punto de separación entre la zona de alta presión y la zona de baja presión en el circuito de refrigeración, regulando el flujo de gas refrigerante líquido en función de la temperatura para lograr el rendimiento de enfriamiento óptimo en el evaporador y garantizar su evaporación completa hacia el compresor (pág. 1).",
+     "html": "<p>Constituir el punto de separación entre la zona de alta presión y la zona de baja presión en el circuito de refrigeración, regulando el flujo de gas refrigerante líquido en función de la temperatura para lograr el rendimiento de enfriamiento óptimo en el evaporador y garantizar su evaporación completa hacia el compresor <span class=\"pag\">pág. 1</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Se monta delante del evaporador (pág. 1). Denominadas también válvulas de expansión/mariposa (pág. 1). Se distinguen entre sí por su diseño (pág. 1).",
+     "html": "<ul>\n<li>Se monta delante del evaporador <span class=\"pag\">pág. 1</span>.</li>\n<li>Denominadas también válvulas de expansión/mariposa <span class=\"pag\">pág. 1</span>.</li>\n<li>Se distinguen entre sí por su diseño <span class=\"pag\">pág. 1</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El refrigerante líquido procedente del condensador (tras pasar por el filtro deshidratante) fluye a través de la válvula de expansión e inyecta en el evaporador, liberando frío y reduciendo la temperatura durante su evaporación (pág. 1). Al final del evaporador, el refrigerante es conducido de nuevo hacia el compresor a través de la propia válvula de expansión en estado estrictamente gaseoso (pág. 1). Regula el flujo inyectado en función de la temperatura del refrigerante al final del evaporador (pág. 1): Si la temperatura sube, el refrigerante se expande en la válvula aumentando el flujo y la cantidad inyectada al evaporador (pág. 1). Si la temperatura disminuye, se reduce el volumen en la válvula disminuyendo el flujo de refrigerante hacia el evaporador (pág. 1).",
+     "html": "<ul>\n<li>El refrigerante líquido procedente del condensador (tras pasar por el filtro deshidratante) fluye a través de la válvula de expansión e inyecta en el evaporador, liberando frío y reduciendo la temperatura durante su evaporación <span class=\"pag\">pág. 1</span>.</li>\n<li>Al final del evaporador, el refrigerante es conducido de nuevo hacia el compresor a través de la propia válvula de expansión en estado estrictamente gaseoso <span class=\"pag\">pág. 1</span>.</li>\n<li>Regula el flujo inyectado en función de la temperatura del refrigerante al final del evaporador <span class=\"pag\">pág. 1</span>:<ul>\n<li>Si la temperatura sube, el refrigerante se expande en la válvula aumentando el flujo y la cantidad inyectada al evaporador <span class=\"pag\">pág. 1</span>.</li>\n<li>Si la temperatura disminuye, se reduce el volumen en la válvula disminuyendo el flujo de refrigerante hacia el evaporador <span class=\"pag\">pág. 1</span>.</li>\n</ul>\n</li>\n</ul>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Problemas de temperatura provocados por sobrecalentamiento o congelación (pág. 1). Presencia de humedad e impurezas en el sistema (pág. 1). Suciedad acumulada en el circuito (pág. 1). Fugas en los componentes o en las tuberías de conexión (pág. 1).",
+     "html": "<ul>\n<li>Problemas de temperatura provocados por sobrecalentamiento o congelación <span class=\"pag\">pág. 1</span>.</li>\n<li>Presencia de humedad e impurezas en el sistema <span class=\"pag\">pág. 1</span>.</li>\n<li>Suciedad acumulada en el circuito <span class=\"pag\">pág. 1</span>.</li>\n<li>Fugas en los componentes o en las tuberías de conexión <span class=\"pag\">pág. 1</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Baja potencia de refrigeración en el habitáculo (pág. 1). Fallo total del sistema de aire acondicionado (pág. 1).",
+     "html": "<ul>\n<li>Baja potencia de refrigeración en el habitáculo <span class=\"pag\">pág. 1</span>.</li>\n<li>Fallo total del sistema de aire acondicionado <span class=\"pag\">pág. 1</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Realizar una inspección visual y una comprobación acústica (pág. 1). Verificar el correcto posicionado de las tuberías de conexión (pág. 1). Comprobar la estanqueidad de la propia pieza y de sus empalmes (pág. 1). Efectuar la medición de la temperatura en el sistema de conductos (pág. 1). Medir la presión de trabajo con el compresor encendido y el motor en marcha (pág. 1).",
+     "html": "<ul>\n<li>Realizar una inspección visual y una comprobación acústica <span class=\"pag\">pág. 1</span>.</li>\n<li>Verificar el correcto posicionado de las tuberías de conexión <span class=\"pag\">pág. 1</span>.</li>\n<li>Comprobar la estanqueidad de la propia pieza y de sus empalmes <span class=\"pag\">pág. 1</span>.</li>\n<li>Efectuar la medición de la temperatura en el sistema de conductos <span class=\"pag\">pág. 1</span>.</li>\n<li>Medir la presión de trabajo con el compresor encendido y el motor en marcha <span class=\"pag\">pág. 1</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Realizar un mantenimiento periódico del sistema de climatización para evitar que la humedad y las impurezas afecten al funcionamiento de la válvula (pág. 1).",
+     "html": "<p>Realizar un mantenimiento periódico del sistema de climatización para evitar que la humedad y las impurezas afecten al funcionamiento de la válvula <span class=\"pag\">pág. 1</span>.</p>"
     }
    ]
   },
