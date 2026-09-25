@@ -3906,7 +3906,7 @@
    "hecha": false
   }
  ],
- "total": 752,
+ "total": 753,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -56166,6 +56166,73 @@
      "titulo": "Imágenes requeridas",
      "texto": "Sección del estrangulador con el tamiz para impurezas, el anillo tórico de sellado, el taladro calibrado, el tamiz pulverizador y la flecha de sentido de montaje hacia el evaporador — Fuente: Estrangulador.pdf, pág. 30",
      "html": "<ul>\n<li>Sección del estrangulador con el tamiz para impurezas, el anillo tórico de sellado, el taladro calibrado, el tamiz pulverizador y la flecha de sentido de montaje hacia el evaporador — Fuente: Estrangulador.pdf, pág. 30</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.ajuste-basico-servomotores.ajustes-clima-ibizaiii-asy",
+   "nt": 761,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ajuste-basico-servomotores",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Ajuste básico de servomotores del Climatronic",
+   "codigo": "J255",
+   "menu": "Ajuste básico de servomotores  J255",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "ajustes clima ibizaIII ASY.pdf, págs. 1-2",
+   "clase": "procedimiento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "servomotor-trampilla"
+   ],
+   "palabras": [
+    "ajuste básico",
+    "V.A.G 1551",
+    "servomotores",
+    "memoria de averías"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Realizar la memorización de las posiciones finales de los cuatro servomotores y de los valores de sus potenciómetros de retroacoplamiento en la unidad de control del Climatronic (J255). Se realiza cuando el display del climatizador parpadea al dar el contacto a pesar de no indicar averías en la memoria. (pág. 1, 2)",
+     "html": "<p>Realizar la memorización de las posiciones finales de los cuatro servomotores y de los valores de sus potenciómetros de retroacoplamiento en la unidad de control del Climatronic (J255). Se realiza cuando el display del climatizador parpadea al dar el contacto a pesar de no indicar averías en la memoria. <span class=\"pag\">pág. 1, 2</span></p>"
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Display de la unidad de Climatronic parpadeando tras conectar el encendido. (pág. 1) Consultar previamente la memoria de averías mediante la función 02 y borrar todas las averías registradas. (pág. 1)",
+     "html": "<ul>\n<li>Display de la unidad de Climatronic parpadeando tras conectar el encendido. <span class=\"pag\">pág. 1</span></li>\n<li>Consultar previamente la memoria de averías mediante la función 02 y borrar todas las averías registradas. <span class=\"pag\">pág. 1</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Comprobador de sistemas del vehículo V.A.G 1551. (pág. 1)",
+     "html": "<p>Comprobador de sistemas del vehículo V.A.G 1551. <span class=\"pag\">pág. 1</span></p>"
+    },
+    {
+     "titulo": "Pasos",
+     "texto": "Conectar el comprobador V.A.G 1551 y seleccionar el código de dirección 08 correspondiente a la unidad de control para Climatronic J255. (pág. 1) Seleccionar la función 02 \"Consultar memoria de averías\" y eliminar todas las averías eventualmente indicadas. (pág. 1) Pulsar las teclas 0 y 4 para seleccionar la función 04 \"Iniciar el ajuste básico\" y confirmar la entrada con la tecla Q. (pág. 2) Pulsar las teclas 0, 0 y 1 para seleccionar el grupo de valores 001 y confirmar con la tecla Q. (pág. 2) Observar en la pantalla la extensión de los cuatro servomotores hasta sus posiciones finales; durante este proceso la unidad de control J255 memoriza los valores de los potenciómetros. (pág. 2, 3) Esperar a que en la pantalla del comprobador aparezca la indicación \"1\", la cual señala que ha finalizado el ajuste básico. (pág. 3) Confirmar la entrada con la tecla Q y pulsar la tecla de avance. (pág. 3) Introducir la función 02 \"Consultar memoria de averías\" y confirmar con Q para verificar las averías registradas durante el recorrido del ajuste. (pág. 3, 4)",
+     "html": "<ol>\n<li>Conectar el comprobador V.A.G 1551 y seleccionar el código de dirección 08 correspondiente a la unidad de control para Climatronic J255. <span class=\"pag\">pág. 1</span></li>\n<li>Seleccionar la función 02 \"Consultar memoria de averías\" y eliminar todas las averías eventualmente indicadas. <span class=\"pag\">pág. 1</span></li>\n<li>Pulsar las teclas 0 y 4 para seleccionar la función 04 \"Iniciar el ajuste básico\" y confirmar la entrada con la tecla Q. <span class=\"pag\">pág. 2</span></li>\n<li>Pulsar las teclas 0, 0 y 1 para seleccionar el grupo de valores 001 y confirmar con la tecla Q. <span class=\"pag\">pág. 2</span></li>\n<li>Observar en la pantalla la extensión de los cuatro servomotores hasta sus posiciones finales; durante este proceso la unidad de control J255 memoriza los valores de los potenciómetros. <span class=\"pag\">pág. 2, 3</span></li>\n<li>Esperar a que en la pantalla del comprobador aparezca la indicación \"1\", la cual señala que ha finalizado el ajuste básico. <span class=\"pag\">pág. 3</span></li>\n<li>Confirmar la entrada con la tecla Q y pulsar la tecla de avance. <span class=\"pag\">pág. 3</span></li>\n<li>Introducir la función 02 \"Consultar memoria de averías\" y confirmar con Q para verificar las averías registradas durante el recorrido del ajuste. <span class=\"pag\">pág. 3, 4</span></li>\n</ol>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Código de dirección de la unidad de Climatronic: 08. (pág. 1) Función de consulta de memoria de averías: 02. (pág. 1, 3) Función de inicio de ajuste básico: 04. (pág. 1, 2) Grupo de valores seleccionado para el ajuste: 001. (pág. 2) Estado de finalización del ajuste: Indicación \"1\" en la pantalla del V.A.G 1551. (pág. 3)",
+     "html": "<ul>\n<li>Código de dirección de la unidad de Climatronic: 08. <span class=\"pag\">pág. 1</span></li>\n<li>Función de consulta de memoria de averías: 02. <span class=\"pag\">pág. 1, 3</span></li>\n<li>Función de inicio de ajuste básico: 04. <span class=\"pag\">pág. 1, 2</span></li>\n<li>Grupo de valores seleccionado para el ajuste: 001. <span class=\"pag\">pág. 2</span></li>\n<li>Estado de finalización del ajuste: Indicación \"1\" en la pantalla del V.A.G 1551. <span class=\"pag\">pág. 3</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Consultar nuevamente la memoria de averías (función 02) para comprobar si el sistema indica \"ninguna avería identificada\" o si se ha registrado alguna avería específica durante el movimiento de los servomotores. (pág. 3, 4)",
+     "html": "<p>Consultar nuevamente la memoria de averías (función 02) para comprobar si el sistema indica \"ninguna avería identificada\" o si se ha registrado alguna avería específica durante el movimiento de los servomotores. <span class=\"pag\">pág. 3, 4</span></p>"
     }
    ]
   },

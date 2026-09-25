@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">752 notas · 25/09/2026</p>
+  <p class="sidebar-meta">753 notas · 25/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -617,6 +617,8 @@
     <li><a href="#nt757">NT757 · Diagnóstico previo del circuito antes</a></li>
     <li><a href="#nt758">NT758 · Reconversión ligera de circuito de R12</a></li>
     <li><a href="#nt759">NT759 · Reconversión integral o pesada de circ</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
+    <li><a href="#nt761">NT761 · Ajuste básico de servomotores  J255</a></li>
   </ul>
 </nav>
 
@@ -37039,8 +37041,61 @@ En la versión de nueva generación, ha sido revisada técnicamente y adaptada e
     </div>
   </section>
 
+  <section id="nt761" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 761 <span class="subtipo">Procedimiento</span><span class="fusionado">SEAT</span></div>
+    <div class="nota-body proceso">
+      <h1>Ajuste básico de servomotores del Climatronic — <strong>J255</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Realizar la memorización de las posiciones finales de los cuatro servomotores y de los valores de sus potenciómetros de retroacoplamiento en la unidad de control del Climatronic (J255). Se realiza cuando el display del climatizador parpadea al dar el contacto a pesar de no indicar averías en la memoria. (pág. 1, 2)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Display de la unidad de Climatronic parpadeando tras conectar el encendido. (pág. 1)</li>
+<li>Consultar previamente la memoria de averías mediante la función 02 y borrar todas las averías registradas. (pág. 1)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Comprobador de sistemas del vehículo V.A.G 1551. (pág. 1)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Código de dirección de la unidad de Climatronic: 08. (pág. 1)</li>
+<li>Función de consulta de memoria de averías: 02. (pág. 1, 3)</li>
+<li>Función de inicio de ajuste básico: 04. (pág. 1, 2)</li>
+<li>Grupo de valores seleccionado para el ajuste: 001. (pág. 2)</li>
+<li>Estado de finalización del ajuste: Indicación "1" en la pantalla del V.A.G 1551. (pág. 3)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Consultar nuevamente la memoria de averías (función 02) para comprobar si el sistema indica "ninguna avería identificada" o si se ha registrado alguna avería específica durante el movimiento de los servomotores. (pág. 3, 4)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Pasos</div>
+        <ol>
+<li>Conectar el comprobador V.A.G 1551 y seleccionar el código de dirección 08 correspondiente a la unidad de control para Climatronic J255. (pág. 1)</li>
+<li>Seleccionar la función 02 "Consultar memoria de averías" y eliminar todas las averías eventualmente indicadas. (pág. 1)</li>
+<li>Pulsar las teclas 0 y 4 para seleccionar la función 04 "Iniciar el ajuste básico" y confirmar la entrada con la tecla Q. (pág. 2)</li>
+<li>Pulsar las teclas 0, 0 y 1 para seleccionar el grupo de valores 001 y confirmar con la tecla Q. (pág. 2)</li>
+<li>Observar en la pantalla la extensión de los cuatro servomotores hasta sus posiciones finales; durante este proceso la unidad de control J255 memoriza los valores de los potenciómetros. (pág. 2, 3)</li>
+<li>Esperar a que en la pantalla del comprobador aparezca la indicación "1", la cual señala que ha finalizado el ajuste básico. (pág. 3)</li>
+<li>Confirmar la entrada con la tecla Q y pulsar la tecla de avance. (pág. 3)</li>
+<li>Introducir la función 02 "Consultar memoria de averías" y confirmar con Q para verificar las averías registradas durante el recorrido del ajuste. (pág. 3, 4)</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">ajustes clima ibizaIII ASY.pdf, págs. 1-2</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    752 notas técnicas · generado el 25/09/2026.
+    753 notas técnicas · generado el 25/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
