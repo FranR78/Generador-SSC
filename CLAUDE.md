@@ -52,6 +52,7 @@ Lo activo yo ("modo preparación") y lo desactivo yo ("volvemos a código").
 - Prohibido: tocar `rag/**` y `portal/**`, commit, push, deploy.
 
 ## 5. Estado del proyecto
+- **Al retomar: leer `docs/SEGUIR.md`** (hecho, pendiente y decisiones abiertas).
 - Corpus: 181 PDF (climatización) en Drive, creciendo.
 - Alcance: SSC + Optativa de Osciloscopio → escalar a todo Electromecánica.
 - Hecho: `portal/` (MVP Apps Script), `rag/` (pipeline embeddings).
