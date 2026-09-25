@@ -4178,6 +4178,78 @@
    "hecha": false
   },
   {
+   "nombre": "NT802_01",
+   "nt": 802,
+   "titulo": "Condensador",
+   "seccion": "5. Lado de alta",
+   "descripcion": "Esquema del paso de aire atmosférico a través del condensador y del radiador del motor — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 22",
+   "hecha": false
+  },
+  {
+   "nombre": "NT803_01",
+   "nt": 803,
+   "titulo": "Depósito de líquido y deshidratador",
+   "seccion": "5. Lado de alta",
+   "descripcion": "Sección del depósito de líquido con el lecho deshidratador, el tubo ascendente y el tamiz filtro — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 23",
+   "hecha": false
+  },
+  {
+   "nombre": "NT804_01",
+   "nt": 804,
+   "titulo": "Válvula de expansión",
+   "seccion": "6. Expansión y lado de baja",
+   "descripcion": "Sección de la válvula de expansión monobloc mostrando el cabezal térmico, el diafragma, la válvula de bola y las vías de alta y baja presión — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 25",
+   "hecha": false
+  },
+  {
+   "nombre": "NT806_01",
+   "nt": 806,
+   "titulo": "Circuito frigorífico con estrangulador",
+   "seccion": "2. Fundamentos",
+   "descripcion": "Esquema del circuito frigorífico con estrangulador e indicación del depósito colector en la línea de baja presión — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 28",
+   "hecha": false
+  },
+  {
+   "nombre": "NT807_01",
+   "nt": 807,
+   "titulo": "Estrangulador o tubo de expansión",
+   "seccion": "Por ubicar",
+   "descripcion": "Detalle en despiece del estrangulador con indicación del taladro calibrado, tamices y dirección de montaje — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 30",
+   "hecha": false
+  },
+  {
+   "nombre": "NT808_01",
+   "nt": 808,
+   "titulo": "Depósito colector",
+   "seccion": "6. Expansión y lado de baja",
+   "descripcion": "Estructura interna del depósito colector con el tubo en U, la carga deshidratadora y el taladro inferior para aceite — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 31",
+   "hecha": false
+  },
+  {
+   "nombre": "NT809_01",
+   "nt": 809,
+   "titulo": "Válvula de descarga de sobrepresión",
+   "seccion": "4. El compresor",
+   "descripcion": "Vista exterior de la válvula de descarga de sobrepresión — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 34",
+   "hecha": false
+  },
+  {
+   "nombre": "NT810_01",
+   "nt": 810,
+   "titulo": "Transmisor de temperatura del evaporador G153",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Situación del transmisor de temperatura del evaporador G153 en la matriz del evaporador — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 34",
+   "hecha": false
+  },
+  {
+   "nombre": "NT811_01",
+   "nt": 811,
+   "titulo": "Conmutador de presión para climatizador F129",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Esquema eléctrico de conexiones del conmutador de presión F129 en el circuito de control — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 32",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -4202,7 +4274,7 @@
    "hecha": false
   }
  ],
- "total": 793,
+ "total": 803,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -8989,6 +9061,82 @@
      "titulo": "Imágenes requeridas",
      "texto": "Curva de presión de vapor para el R12 y R134a relacionando presión y temperatura — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 7",
      "html": "<ul>\n<li>Curva de presión de vapor para el R12 y R134a relacionando presión y temperatura — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 7</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.ciclo-frigorifico.estrangulador.208-climatizadores-en-los-vehic",
+   "nt": 806,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ciclo-frigorifico",
+   "seccion": "2. Fundamentos",
+   "subgrupo": "",
+   "titulo": "Circuito frigorífico con estrangulador",
+   "codigo": "",
+   "menu": "Circuito frigorífico con estrangulador",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 28-29",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "estrangulador",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "estrangulador",
+    "deposito-colector",
+    "compresor",
+    "evaporador"
+   ],
+   "palabras": [
+    "rociado",
+    "orificio calibrado",
+    "depósito colector",
+    "golpe de ariete",
+    "alta presión"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Explicar el funcionamiento termodinámico de un circuito cerrado de aire acondicionado que utiliza un orificio calibrado fijo (estrangulador) en lugar de una válvula de expansión. (págs. 28-29)",
+     "html": "<p>Explicar el funcionamiento termodinámico de un circuito cerrado de aire acondicionado que utiliza un orificio calibrado fijo (estrangulador) en lugar de una válvula de expansión. <span class=\"pag\">págs. 28-29</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "En esta configuración, el rociado e inyección del refrigerante en el evaporador se efectúa mediante un estrangulador de sección fija. Como el flujo no es autorregulado en la entrada, se instala un depósito colector en el lado de baja presión tras el evaporador para proteger al compresor. (págs. 28-29)",
+     "html": "<p>En esta configuración, el rociado e inyección del refrigerante en el evaporador se efectúa mediante un estrangulador de sección fija. Como el flujo no es autorregulado en la entrada, se instala un depósito colector en el lado de baja presión tras el evaporador para proteger al compresor. <span class=\"pag\">págs. 28-29</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Compresión: El compresor eleva la presión del gas hasta 2 MPa (20 bares) y la temperatura hasta 70 ºC. (pág. 28) Condensación: En el condensador se disipa calor al exterior y se enfría unos 10 ºC hasta licuarse. (pág. 28) Estrangulamiento: El líquido pasa por el orificio calibrado del estrangulador, cayendo drásticamente su presión antes de rociarse en el evaporador. (pág. 28) Acumulación: La mezcla de gas y líquido no evaporado sale del evaporador hacia el depósito colector, donde se completa la evaporación y se separa el aceite antes de retornar al compresor. (págs. 28-29)",
+     "html": "<ol>\n<li><strong>Compresión:</strong> El compresor eleva la presión del gas hasta 2 MPa (20 bares) y la temperatura hasta 70 ºC. <span class=\"pag\">pág. 28</span></li>\n<li><strong>Condensación:</strong> En el condensador se disipa calor al exterior y se enfría unos 10 ºC hasta licuarse. <span class=\"pag\">pág. 28</span></li>\n<li><strong>Estrangulamiento:</strong> El líquido pasa por el orificio calibrado del estrangulador, cayendo drásticamente su presión antes de rociarse en el evaporador. <span class=\"pag\">pág. 28</span></li>\n<li><strong>Acumulación:</strong> La mezcla de gas y líquido no evaporado sale del evaporador hacia el depósito colector, donde se completa la evaporación y se separa el aceite antes de retornar al compresor. <span class=\"pag\">págs. 28-29</span></li>\n</ol>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Presión de trabajo en alta presión (HD): hasta 2 MPa (20 bares). (pág. 28) Temperatura a la salida del compresor: hasta 70 ºC. (pág. 28) Enfriamiento en el condensador: aprox. 10 ºC. (pág. 28)",
+     "html": "<ul>\n<li>Presión de trabajo en alta presión (HD): hasta 2 MPa (20 bares). <span class=\"pag\">pág. 28</span></li>\n<li>Temperatura a la salida del compresor: hasta 70 ºC. <span class=\"pag\">pág. 28</span></li>\n<li>Enfriamiento en el condensador: aprox. 10 ºC. <span class=\"pag\">pág. 28</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Buscar el depósito de líquido en el lado de alta presión en sistemas provistos de estrangulador (en estos sistemas el acumulador se encuentra en baja presión). (pág. 28)",
+     "html": "<ul>\n<li>Buscar el depósito de líquido en el lado de alta presión en sistemas provistos de estrangulador (en estos sistemas el acumulador se encuentra en baja presión). <span class=\"pag\">pág. 28</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del circuito frigorífico con estrangulador e indicación del depósito colector en la línea de baja presión — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 28",
+     "html": "<ul>\n<li>Esquema del circuito frigorífico con estrangulador e indicación del depósito colector en la línea de baja presión — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 28</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -16378,6 +16526,89 @@
    ]
   },
   {
+   "id": "ssc.valvula-sobrepresion.208-climatizadores-en-los-vehic",
+   "nt": 809,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "valvula-sobrepresion",
+   "seccion": "4. El compresor",
+   "subgrupo": "",
+   "titulo": "Válvula de descarga de sobrepresión",
+   "codigo": "",
+   "menu": "Válvula de descarga de sobrepresión",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 34",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "compresor",
+   "relacionados": [
+    "compresor"
+   ],
+   "palabras": [
+    "válvula de seguridad",
+    "muelle",
+    "alivio de sobrepresión"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Proteger mecánicamente los componentes del circuito frigorífico liberando refrigerante a la atmósfera en caso de sobrepresión crítica. (pág. 34)",
+     "html": "<p>Proteger mecánicamente los componentes del circuito frigorífico liberando refrigerante a la atmósfera en caso de sobrepresión crítica. <span class=\"pag\">pág. 34</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Válvula de seguridad puramente mecánica con cierre por muelle, roscada directamente en el cuerpo del compresor o en la línea de alta presión. (pág. 34)",
+     "html": "<p>Válvula de seguridad puramente mecánica con cierre por muelle, roscada directamente en el cuerpo del compresor o en la línea de alta presión. <span class=\"pag\">pág. 34</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Permanece cerrada mediante la fuerza de su muelle interno. Si la alta presión del circuito supera el umbral límite de tarado, la fuerza de la presión vence al muelle, abriendo el paso para evacuar una porción de gas al exterior hasta que la presión desciende a valores seguros. (pág. 34)",
+     "html": "<p>Permanece cerrada mediante la fuerza de su muelle interno. Si la alta presión del circuito supera el umbral límite de tarado, la fuerza de la presión vence al muelle, abriendo el paso para evacuar una porción de gas al exterior hasta que la presión desciende a valores seguros. <span class=\"pag\">pág. 34</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Umbral de apertura: ajustado por muelle para disparar ante sobrepresiones críticas del circuito de alta presión. (pág. 34)",
+     "html": "<ul>\n<li>Umbral de apertura: ajustado por muelle para disparar ante sobrepresiones críticas del circuito de alta presión. <span class=\"pag\">pág. 34</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fugas de refrigerante por la válvula tras un disparo provocado por un fallo en el ventilador del condensador o por obstrucción del circuito. (pág. 34)",
+     "html": "<p>Fugas de refrigerante por la válvula tras un disparo provocado por un fallo en el ventilador del condensador o por obstrucción del circuito. <span class=\"pag\">pág. 34</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Descarga violenta de gas refrigerante y pérdida de la carga de fluido de la instalación. (pág. 34)",
+     "html": "<p>Descarga violenta de gas refrigerante y pérdida de la carga de fluido de la instalación. <span class=\"pag\">pág. 34</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Investigar y reparar la causa original de la sobrepresión antes de recargar el circuito tras un disparo de la válvula. (pág. 34)",
+     "html": "<p>Investigar y reparar la causa original de la sobrepresión antes de recargar el circuito tras un disparo de la válvula. <span class=\"pag\">pág. 34</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Vista exterior de la válvula de descarga de sobrepresión — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 34",
+     "html": "<ul>\n<li>Vista exterior de la válvula de descarga de sobrepresión — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 34</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.condensador.2-introduccion-a-la-refrigeracion",
    "nt": 12,
    "modulo": "ssc",
@@ -17485,6 +17716,75 @@
      "titulo": "Imágenes requeridas",
      "texto": "Configuración de un condensador de flujo paralelo con tubos, aletas, racores de entrada/salida y colectores — Fuente: HELLA02.PDF, pág. 35",
      "html": "<ul>\n<li>Configuración de un condensador de flujo paralelo con tubos, aletas, racores de entrada/salida y colectores — Fuente: HELLA02.PDF, pág. 35</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.condensador.208-climatizadores-en-los-vehic",
+   "nt": 802,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "condensador",
+   "seccion": "5. Lado de alta",
+   "subgrupo": "",
+   "titulo": "Condensador",
+   "codigo": "",
+   "menu": "Condensador",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 21-22",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "compresor",
+    "filtro-deshidratador",
+    "electroventilador-condensador"
+   ],
+   "palabras": [
+    "licuefactor",
+    "serpentín",
+    "aletas",
+    "superficie de refrigeración",
+    "ventilador del radiador"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Ceder el calor del gas refrigerante al aire atmosférico exterior para provocar su cambio de estado de gaseoso a líquido (condensación o licuación). (págs. 21-22)",
+     "html": "<p>Ceder el calor del gas refrigerante al aire atmosférico exterior para provocar su cambio de estado de gaseoso a líquido (condensación o licuación). <span class=\"pag\">págs. 21-22</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Intercambiador de calor ubicado en el frente del vehículo, situado siempre por delante del radiador del motor. Consta de un serpentín tubular unido fijamente a aletas metálicas para lograr una gran superficie de intercambio térmico. (págs. 21-22)",
+     "html": "<p>Intercambiador de calor ubicado en el frente del vehículo, situado siempre por delante del radiador del motor. Consta de un serpentín tubular unido fijamente a aletas metálicas para lograr una gran superficie de intercambio térmico. <span class=\"pag\">págs. 21-22</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El gas refrigerante caliente y a alta presión procedente del compresor entra por el serpentín. Al circular el aire atmosférico entre las aletas (impulsado por la marcha o por el ventilador del radiador), el fluido cede su energía térmica y se licúa, abandonando la unidad en estado líquido. (págs. 21-22)",
+     "html": "<p>El gas refrigerante caliente y a alta presión procedente del compresor entra por el serpentín. Al circular el aire atmosférico entre las aletas (impulsado por la marcha o por el ventilador del radiador), el fluido cede su energía térmica y se licúa, abandonando la unidad en estado líquido. <span class=\"pag\">págs. 21-22</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Garantizar el correcto funcionamiento del ventilador del radiador al activar el climatizador para asegurar la refrigeración forzada del fluido. (pág. 21)",
+     "html": "<p>Garantizar el correcto funcionamiento del ventilador del radiador al activar el climatizador para asegurar la refrigeración forzada del fluido. <span class=\"pag\">pág. 21</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del paso de aire atmosférico a través del condensador y del radiador del motor — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 22",
+     "html": "<ul>\n<li>Esquema del paso de aire atmosférico a través del condensador y del radiador del motor — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 22</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -19501,6 +19801,86 @@
    ]
   },
   {
+   "id": "ssc.filtro-deshidratador.208-climatizadores-en-los-vehic",
+   "nt": 803,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "filtro-deshidratador-mirilla",
+   "seccion": "5. Lado de alta",
+   "subgrupo": "",
+   "titulo": "Depósito de líquido y deshidratador",
+   "codigo": "",
+   "menu": "Depósito de líquido y deshidratador",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 22-23",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "condensador",
+    "valvula-expansion"
+   ],
+   "palabras": [
+    "depósito de líquido",
+    "deshidratador",
+    "absorción de agua",
+    "tubo ascendente",
+    "sustitución"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Almacenar las reservas de agente frigorífico líquido, compensar las fluctuaciones de caudal del circuito, retener químicamente la humedad y filtrar partículas de suciedad o desgaste. (págs. 22-23)",
+     "html": "<p>Almacenar las reservas de agente frigorífico líquido, compensar las fluctuaciones de caudal del circuito, retener químicamente la humedad y filtrar partículas de suciedad o desgaste. <span class=\"pag\">págs. 22-23</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Recipiente cilíndrico metálico instalado en la línea de alta presión de sistemas con válvula de expansión. Alberga una masa desecante y una almohadilla filtrante. (págs. 22-23)",
+     "html": "<p>Recipiente cilíndrico metálico instalado en la línea de alta presión de sistemas con válvula de expansión. Alberga una masa desecante y una almohadilla filtrante. <span class=\"pag\">págs. 22-23</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El refrigerante líquido proveniente del condensador entra lateralmente al depósito. Atraviesa el deshidratador (donde se retiene el agua y los posos) y se acumula en el fondo. Desde allí es aspirado por un tubo ascendente central para enviar un flujo líquido continuo y exento de burbujas hacia la válvula de expansión. (pág. 23)",
+     "html": "<p>El refrigerante líquido proveniente del condensador entra lateralmente al depósito. Atraviesa el deshidratador (donde se retiene el agua y los posos) y se acumula en el fondo. Desde allí es aspirado por un tubo ascendente central para enviar un flujo líquido continuo y exento de burbujas hacia la válvula de expansión. <span class=\"pag\">pág. 23</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Capacidad de absorción de agua del deshidratador: entre 6 y 12 gramos (aumenta a temperaturas más bajas). (pág. 23)",
+     "html": "<ul>\n<li>Capacidad de absorción de agua del deshidratador: entre 6 y 12 gramos (aumenta a temperaturas más bajas). <span class=\"pag\">pág. 23</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Saturación por humedad del elemento desecante o colmatación por virutas de fricción del compresor. (pág. 23)",
+     "html": "<p>Saturación por humedad del elemento desecante o colmatación por virutas de fricción del compresor. <span class=\"pag\">pág. 23</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Sustituir obligatoriamente el depósito de líquido cada vez que se abra el circuito frigorífico. Mantener cerrado con sus tapones hasta el instante previo a su montaje para evitar la absorción prematura de la humedad del aire. (pág. 23)",
+     "html": "<p>Sustituir obligatoriamente el depósito de líquido cada vez que se abra el circuito frigorífico. Mantener cerrado con sus tapones hasta el instante previo a su montaje para evitar la absorción prematura de la humedad del aire. <span class=\"pag\">pág. 23</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Sección del depósito de líquido con el lecho deshidratador, el tubo ascendente y el tamiz filtro — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 23",
+     "html": "<ul>\n<li>Sección del depósito de líquido con el lecho deshidratador, el tubo ascendente y el tamiz filtro — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 23</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.valvula-expansion.2-introduccion-a-la-refrigeracion",
    "nt": 15,
    "modulo": "ssc",
@@ -20647,6 +21027,93 @@
      "titulo": "Imágenes requeridas",
      "texto": "Vista seccionada de válvula de expansión tipo L con orificio calibrado, válvula de bola, muelle, vástago, membrana y sonda termostática — Fuente: HELLA02.PDF, pág. 38 Válvula de expansión tipo H en bloque montada a la entrada del evaporador — Fuente: HELLA02.PDF, pág. 39",
      "html": "<ul>\n<li>Vista seccionada de válvula de expansión tipo L con orificio calibrado, válvula de bola, muelle, vástago, membrana y sonda termostática — Fuente: HELLA02.PDF, pág. 38</li>\n<li>Válvula de expansión tipo H en bloque montada a la entrada del evaporador — Fuente: HELLA02.PDF, pág. 39</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.valvula-expansion.208-climatizadores-en-los-vehic",
+   "nt": 804,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "valvula-expansion",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "Dispositivos de expansión",
+   "titulo": "Válvula de expansión",
+   "codigo": "",
+   "menu": "Válvula de expansión",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 24-26",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "evaporador",
+    "filtro-deshidratador",
+    "compresor"
+   ],
+   "palabras": [
+    "distensión",
+    "cabezal térmico",
+    "diafragma",
+    "válvula de bola",
+    "muelle regulador"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Provocar la distensión (caída drástica de presión) del refrigerante líquido al entrar al evaporador y regular el caudal inyectado en función de la temperatura del vapor a la salida del evaporador. (págs. 24-25)",
+     "html": "<p>Provocar la distensión (caída drástica de presión) del refrigerante líquido al entrar al evaporador y regular el caudal inyectado en función de la temperatura del vapor a la salida del evaporador. <span class=\"pag\">págs. 24-25</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Elemento dosificador térmico instalado en el punto de separación entre la alta y la baja presión, ubicado inmediatamente antes del evaporador. Existen versiones convencionales con tubo capilar y versiones de nueva generación (monobloc). (págs. 24-25)",
+     "html": "<p>Elemento dosificador térmico instalado en el punto de separación entre la alta y la baja presión, ubicado inmediatamente antes del evaporador. Existen versiones convencionales con tubo capilar y versiones de nueva generación (monobloc). <span class=\"pag\">págs. 24-25</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El cabezal térmico contiene una carga de gas especial sobre un diafragma. El lado opuesto del diafragma recibe la baja presión procediente de la salida del evaporador. Cuando la temperatura a la salida del evaporador aumenta, el gas del cabezal se dilata, vence al muelle regulador y desplaza una varilla que abre la válvula de bola, incrementando la inyección de refrigerante. Si la salida se enfría, el gas se contrae y el muelle cierra parcialmente el paso. (págs. 25-26)",
+     "html": "<p>El cabezal térmico contiene una carga de gas especial sobre un diafragma. El lado opuesto del diafragma recibe la baja presión procediente de la salida del evaporador. Cuando la temperatura a la salida del evaporador aumenta, el gas del cabezal se dilata, vence al muelle regulador y desplaza una varilla que abre la válvula de bola, incrementando la inyección de refrigerante. Si la salida se enfría, el gas se contrae y el muelle cierra parcialmente el paso. <span class=\"pag\">págs. 25-26</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Reglaje de fábrica: preajustado en producción; prohibido alterar o modificar el tornillo de regulación. (pág. 25)",
+     "html": "<ul>\n<li>Reglaje de fábrica: preajustado en producción; prohibido alterar o modificar el tornillo de regulación. <span class=\"pag\">pág. 25</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Modificación de las características de regulación por doblar o plechar el tubo del sensor cargado con gas. (pág. 25)",
+     "html": "<p>Modificación de las características de regulación por doblar o plechar el tubo del sensor cargado con gas. <span class=\"pag\">pág. 25</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Inyección deficiente de fluido o congelación del evaporador por desajuste en el flujo. (págs. 24-25)",
+     "html": "<p>Inyección deficiente de fluido o congelación del evaporador por desajuste en el flujo. <span class=\"pag\">págs. 24-25</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Prohibido alterar el ajuste interno o doblar el tubo del sensor durante intervenciones de taller. (pág. 25)",
+     "html": "<p>Prohibido alterar el ajuste interno o doblar el tubo del sensor durante intervenciones de taller. <span class=\"pag\">pág. 25</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Sección de la válvula de expansión monobloc mostrando el cabezal térmico, el diafragma, la válvula de bola y las vías de alta y baja presión — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 25",
+     "html": "<ul>\n<li>Sección de la válvula de expansión monobloc mostrando el cabezal térmico, el diafragma, la válvula de bola y las vías de alta y baja presión — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 25</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -21933,6 +22400,85 @@
    ]
   },
   {
+   "id": "ssc.evaporador.208-climatizadores-en-los-vehic",
+   "nt": 805,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "evaporador",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "",
+   "titulo": "Evaporador",
+   "codigo": "",
+   "menu": "Evaporador",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 26-27",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "unidad-climatizadora",
+   "relacionados": [
+    "valvula-expansion",
+    "compresor"
+   ],
+   "palabras": [
+    "intercambiador de calor",
+    "extracción de calor",
+    "deshidratación",
+    "agua condensada"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Absorber la energía térmica del aire que se dirige al habitáculo mediante la evaporación del fluido frigorífico a baja presión, enfriando, deshidratando y depurando dicho aire. (págs. 26-27)",
+     "html": "<p>Absorber la energía térmica del aire que se dirige al habitáculo mediante la evaporación del fluido frigorífico a baja presión, enfriando, deshidratando y depurando dicho aire. <span class=\"pag\">págs. 26-27</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Intercambiador de calor de tubos y aletas alojado en el interior de la caja del sistema de calefacción/climatización. (pág. 26)",
+     "html": "<p>Intercambiador de calor de tubos y aletas alojado en el interior de la caja del sistema de calefacción/climatización. <span class=\"pag\">pág. 26</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El refrigerante pulverizado a baja presión entra en el evaporador y se transforma en gas al hervir. Para efectuar este cambio de estado, extrae calor del aire impulsado que atraviesa sus aletas frías. Al enfriarse el aire, la humedad ambiental se condensa en las aletas y se evacua al exterior por el tubo de desagüe. (págs. 26-27)",
+     "html": "<p>El refrigerante pulverizado a baja presión entra en el evaporador y se transforma en gas al hervir. Para efectuar este cambio de estado, extrae calor del aire impulsado que atraviesa sus aletas frías. Al enfriarse el aire, la humedad ambiental se condensa en las aletas y se evacua al exterior por el tubo de desagüe. <span class=\"pag\">págs. 26-27</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Estado del refrigerante a la salida: 100% gaseoso a baja presión. (pág. 26)",
+     "html": "<ul>\n<li>Estado del refrigerante a la salida: 100% gaseoso a baja presión. <span class=\"pag\">pág. 26</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Obstrucción de la evacuación de agua condensada provocando filtraciones o acumulaciones. (pág. 27)",
+     "html": "<p>Obstrucción de la evacuación de agua condensada provocando filtraciones o acumulaciones. <span class=\"pag\">pág. 27</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Falta de capacidad de enfriamiento del aire impulsado hacia el habitáculo. (pág. 26)",
+     "html": "<p>Falta de capacidad de enfriamiento del aire impulsado hacia el habitáculo. <span class=\"pag\">pág. 26</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Verificar que el drenaje inferior esté despejado. La presencia de charcos de agua condensada bajo el vehículo en paradas es el resultado normal del proceso de deshidratación y no constituye avería. (pág. 27)",
+     "html": "<p>Verificar que el drenaje inferior esté despejado. La presencia de charcos de agua condensada bajo el vehículo en paradas es el resultado normal del proceso de deshidratación y no constituye avería. <span class=\"pag\">pág. 27</span></p>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.deposito-colector.baja.9-filtro-deshidratadores",
    "nt": 57,
    "modulo": "ssc",
@@ -22495,6 +23041,87 @@
      "titulo": "Imágenes requeridas",
      "texto": "Vista seccionada de un acumulador con tubo interno en V y toma de aspiración superior — Fuente: HELLA02.PDF, pág. 36",
      "html": "<ul>\n<li>Vista seccionada de un acumulador con tubo interno en V y toma de aspiración superior — Fuente: HELLA02.PDF, pág. 36</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.deposito-colector.208-climatizadores-en-los-vehic",
+   "nt": 808,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "deposito-colector",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "",
+   "titulo": "Depósito colector",
+   "codigo": "",
+   "menu": "Depósito colector",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 30-31",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "estrangulador",
+    "compresor",
+    "evaporador"
+   ],
+   "palabras": [
+    "lado de baja presión",
+    "tubo en U",
+    "taladro para aceite",
+    "reevaporación",
+    "protección compresor"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Acumular la reserva de refrigerante y aceite lubricante, retener la humedad y asegurar que el compresor solo aspire gas libre de líquido para impedir el golpe de ariete. (págs. 30-31)",
+     "html": "<p>Acumular la reserva de refrigerante y aceite lubricante, retener la humedad y asegurar que el compresor solo aspire gas libre de líquido para impedir el golpe de ariete. <span class=\"pag\">págs. 30-31</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Depósito cilíndrico de gran volumen instalado en la zona de baja presión, montado en un lugar cálido del vano motor para favorecer la reevaporación. Contiene una carga desecante, un tamiz filtrante y un tubo de aspiración interno en forma de \"U\". (págs. 30-31)",
+     "html": "<p>Depósito cilíndrico de gran volumen instalado en la zona de baja presión, montado en un lugar cálido del vano motor para favorecer la reevaporación. Contiene una carga desecante, un tamiz filtrante y un tubo de aspiración interno en forma de \"U\". <span class=\"pag\">págs. 30-31</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "La mezcla procedente del evaporador penetra al depósito. La fase líquida cae al fondo mientras que el gas asciende y es aspirado por la boca superior del tubo en \"U\" hacia el compresor. En la curva inferior del tubo en \"U\" existe un taladro de succión calibrado que reaspira progresivamente el aceite acumulado en el fondo para devolverlo al compresor. (pág. 31)",
+     "html": "<p>La mezcla procedente del evaporador penetra al depósito. La fase líquida cae al fondo mientras que el gas asciende y es aspirado por la boca superior del tubo en \"U\" hacia el compresor. En la curva inferior del tubo en \"U\" existe un taladro de succión calibrado que reaspira progresivamente el aceite acumulado en el fondo para devolverlo al compresor. <span class=\"pag\">pág. 31</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Obstrucción del taladro inferior de retorno de aceite con el consiguiente riesgo de avería por falta de engrase en el compresor. (pág. 31)",
+     "html": "<p>Obstrucción del taladro inferior de retorno de aceite con el consiguiente riesgo de avería por falta de engrase en el compresor. <span class=\"pag\">pág. 31</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Retorno de líquido al compresor (golpe de ariete) o gripado mecánico del compresor por falta de lubricación. (págs. 30-31)",
+     "html": "<p>Retorno de líquido al compresor (golpe de ariete) o gripado mecánico del compresor por falta de lubricación. <span class=\"pag\">págs. 30-31</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Reemplazar tras aperturas prolongadas del circuito o reparaciones mayores. (págs. 30-31)",
+     "html": "<p>Reemplazar tras aperturas prolongadas del circuito o reparaciones mayores. <span class=\"pag\">págs. 30-31</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Estructura interna del depósito colector con el tubo en U, la carga deshidratadora y el taladro inferior para aceite — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 31",
+     "html": "<ul>\n<li>Estructura interna del depósito colector con el tubo en U, la carga deshidratadora y el taladro inferior para aceite — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 31</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -25279,6 +25906,101 @@
      "titulo": "Imágenes requeridas",
      "texto": "Vista exterior e interior del presostato trinary con contactos normalmente abiertos y normalmente cerrados — Fuente: HELLA02.PDF, pág. 52",
      "html": "<ul>\n<li>Vista exterior e interior del presostato trinary con contactos normalmente abiertos y normalmente cerrados — Fuente: HELLA02.PDF, pág. 52</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.presostato.208-climatizadores-en-los-vehic",
+   "nt": 811,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "presostato-binary-trinary-cuatrinary",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Conmutador de presión para climatizador F129",
+   "codigo": "F129",
+   "menu": "Conmutador de presión para cli F129",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 32-33",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "embrague-compresor",
+    "electroventilador-condensador"
+   ],
+   "palabras": [
+    "F129",
+    "0",
+    "2 MPa",
+    "3",
+    "2 MPa",
+    "1",
+    "6 MPa",
+    "presostato triple"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Supervisar la presión en la línea de alta presión para proteger el compresor contra falta de carga o sobrepresión y gobernar la velocidad rápida del ventilador del líquido refrigerante. (págs. 32-33)",
+     "html": "<p>Supervisar la presión en la línea de alta presión para proteger el compresor contra falta de carga o sobrepresión y gobernar la velocidad rápida del ventilador del líquido refrigerante. <span class=\"pag\">págs. 32-33</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Presostato de combinación triple (Trinary) montado en la tubería del lado de alta presión. (págs. 32-33)",
+     "html": "<p>Presostato de combinación triple (Trinary) montado en la tubería del lado de alta presión. <span class=\"pag\">págs. 32-33</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Procesa tres umbrales de conmutación hidromecánicos: Protección por baja presión / sobrepresión: Si la presión cae por debajo de 0,2 MPa (2 bar) por fuga de gas o supera los 3,2 MPa (32 bar) por sobrecalentamiento, abre sus contactos cortando la corriente del relé J32 / acoplamiento N25 para desactivar el compresor. (págs. 32-33) Mando del ventilador: Cuando la presión de alta alcanza los 1,6 MPa (16 bar), cierra su contacto interno alimentando la bobina del relé J101 para conectar la II velocidad del ventilador V7. (págs. 32-33)",
+     "html": "<p>Procesa tres umbrales de conmutación hidromecánicos:</p>\n<ul>\n<li><strong>Protección por baja presión / sobrepresión:</strong> Si la presión cae por debajo de 0,2 MPa (2 bar) por fuga de gas o supera los 3,2 MPa (32 bar) por sobrecalentamiento, abre sus contactos cortando la corriente del relé J32 / acoplamiento N25 para desactivar el compresor. <span class=\"pag\">págs. 32-33</span></li>\n<li><strong>Mando del ventilador:</strong> Cuando la presión de alta alcanza los 1,6 MPa (16 bar), cierra su contacto interno alimentando la bobina del relé J101 para conectar la II velocidad del ventilador V7. <span class=\"pag\">págs. 32-33</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Umbral de desconexión por baja presión: < 0,2 MPa (2 bar). (pág. 33) Umbral de desconexión por alta presión: > 3,2 MPa (32 bar). (pág. 33) Umbral de activación de la II velocidad del ventilador: 1,6 MPa (16 bar). (pág. 33)",
+     "html": "<ul>\n<li>Umbral de desconexión por baja presión: &lt; 0,2 MPa (2 bar). <span class=\"pag\">pág. 33</span></li>\n<li>Umbral de desconexión por alta presión: &gt; 3,2 MPa (32 bar). <span class=\"pag\">pág. 33</span></li>\n<li>Umbral de activación de la II velocidad del ventilador: 1,6 MPa (16 bar). <span class=\"pag\">pág. 33</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Sulfatación de contactos o fallo en el mecanismo de conmutación interna por picos de presión. (págs. 32-33)",
+     "html": "<p>Sulfatación de contactos o fallo en el mecanismo de conmutación interna por picos de presión. <span class=\"pag\">págs. 32-33</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El compresor no se acopla o los ventiladores no conmutan a la II velocidad provocando sobrepresión en parado. (págs. 32-33)",
+     "html": "<p>El compresor no se acopla o los ventiladores no conmutan a la II velocidad provocando sobrepresión en parado. <span class=\"pag\">págs. 32-33</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Verificar la continuidad de los contactos con multímetro o comprobar los estados en los bloques de medición del autodiagnóstico. (págs. 32, 71)",
+     "html": "<p>Verificar la continuidad de los contactos con multímetro o comprobar los estados en los bloques de medición del autodiagnóstico. <span class=\"pag\">págs. 32, 71</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "En climatizadores de última generación, este conmutador es reemplazado por un transmisor de alta presión continuo (G65). (pág. 33)",
+     "html": "<p>En climatizadores de última generación, este conmutador es reemplazado por un transmisor de alta presión continuo (G65). <span class=\"pag\">pág. 33</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema eléctrico de conexiones del conmutador de presión F129 en el circuito de control — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 32",
+     "html": "<ul>\n<li>Esquema eléctrico de conexiones del conmutador de presión F129 en el circuito de control — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 32</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -30754,6 +31476,96 @@
      "titulo": "Imágenes requeridas",
      "texto": "Vista del termostato mecánico (bulbo, pulmón, muelle, platinos) y del termostato electrónico (módulo NTC y curva característica) — Fuente: HELLA02.PDF, pág. 51",
      "html": "<ul>\n<li>Vista del termostato mecánico (bulbo, pulmón, muelle, platinos) y del termostato electrónico (módulo NTC y curva característica) — Fuente: HELLA02.PDF, pág. 51</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.sensor-evaporador.208-climatizadores-en-los-vehic",
+   "nt": 810,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-ntc-evaporador",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Transmisor de temperatura del evaporador G153",
+   "codigo": "G153",
+   "menu": "Transmisor de temperatura del  G153",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 32, 34",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "control-climatizacion",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "compresor"
+   ],
+   "palabras": [
+    "G153",
+    "protección contra congelación",
+    "desconexión compresor"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Captar la temperatura entre las aletas del evaporador para desconectar el compresor cuando se aproximan valores de congelación del agua condensada. (págs. 32, 34)",
+     "html": "<p>Captar la temperatura entre las aletas del evaporador para desconectar el compresor cuando se aproximan valores de congelación del agua condensada. <span class=\"pag\">págs. 32, 34</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Sensor térmico alojado directamente entre las laminillas de refrigeración del evaporador. (pág. 34)",
+     "html": "<p>Sensor térmico alojado directamente entre las laminillas de refrigeración del evaporador. <span class=\"pag\">pág. 34</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Mide la temperatura del paquete de aletas y envía su señal eléctrica a la unidad de control del climatizador. Si la temperatura del evaporador desciende hasta el umbral de congelación del agua de condensación, la unidad de control interrumpe la corriente hacia el acoplamiento electromagnético N25, deteniendo el compresor para evitar el bloqueo del flujo de aire por hielo. (págs. 32, 34)",
+     "html": "<p>Mide la temperatura del paquete de aletas y envía su señal eléctrica a la unidad de control del climatizador. Si la temperatura del evaporador desciende hasta el umbral de congelación del agua de condensación, la unidad de control interrumpe la corriente hacia el acoplamiento electromagnético N25, deteniendo el compresor para evitar el bloqueo del flujo de aire por hielo. <span class=\"pag\">págs. 32, 34</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Temperatura de desconexión del compresor: aprox. -1 ºC a 0 ºC. (pág. 34) Temperatura de reconexión del compresor: +3 ºC. (pág. 34)",
+     "html": "<ul>\n<li>Temperatura de desconexión del compresor: aprox. -1 ºC a 0 ºC. <span class=\"pag\">pág. 34</span></li>\n<li>Temperatura de reconexión del compresor: +3 ºC. <span class=\"pag\">pág. 34</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Descalibración del sensor o mala ubicación física entre las aletas. (pág. 34)",
+     "html": "<p>Descalibración del sensor o mala ubicación física entre las aletas. <span class=\"pag\">pág. 34</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Congelación total del evaporador que impide el paso de aire o interrupción injustificada del acoplamiento del compresor. (pág. 34)",
+     "html": "<p>Congelación total del evaporador que impide el paso de aire o interrupción injustificada del acoplamiento del compresor. <span class=\"pag\">pág. 34</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Consultar los valores de temperatura leídos por el sensor a través del equipo de autodiagnóstico. (págs. 34, 71)",
+     "html": "<p>Consultar los valores de temperatura leídos por el sensor a través del equipo de autodiagnóstico. <span class=\"pag\">págs. 34, 71</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Verificar que la sonda permanezca correctamente insertada en su alojamiento en el evaporador. (pág. 34)",
+     "html": "<p>Verificar que la sonda permanezca correctamente insertada en su alojamiento en el evaporador. <span class=\"pag\">pág. 34</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Situación del transmisor de temperatura del evaporador G153 en la matriz del evaporador — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 34",
+     "html": "<ul>\n<li>Situación del transmisor de temperatura del evaporador G153 en la matriz del evaporador — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 34</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -64035,6 +64847,97 @@
      "titulo": "Imágenes requeridas",
      "texto": "Detalle del filtro de elementos sólidos y del filtro de carbón activo — Fuente: HELLA02.PDF, pág. 57, 58",
      "html": "<ul>\n<li>Detalle del filtro de elementos sólidos y del filtro de carbón activo — Fuente: HELLA02.PDF, pág. 57, 58</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.estrangulador.208-climatizadores-en-los-vehic",
+   "nt": 807,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "estrangulador-orifico-calibrado",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Estrangulador o tubo de expansión",
+   "codigo": "",
+   "menu": "Estrangulador o tubo de expansión",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 29-30",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "evaporador",
+    "deposito-colector"
+   ],
+   "palabras": [
+    "taladro calibrado",
+    "tamiz pulverizador",
+    "tamiz para impurezas",
+    "junta tórica"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Separar el lado de alta y baja presión provocando un estrangulamiento constante en el flujo de refrigerante líquido que se inyecta en el evaporador. (págs. 29-30)",
+     "html": "<p>Separar el lado de alta y baja presión provocando un estrangulamiento constante en el flujo de refrigerante líquido que se inyecta en el evaporador. <span class=\"pag\">págs. 29-30</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Tubo de plástico insertado en la tubería de alta presión delante del evaporador. Alberga un taladro calibrado de diámetro fijo, un tamiz para impurezas en la entrada, un tamiz pulverizador en la salida y una junta tórica de sellado exterior. (pág. 30)",
+     "html": "<p>Tubo de plástico insertado en la tubería de alta presión delante del evaporador. Alberga un taladro calibrado de diámetro fijo, un tamiz para impurezas en la entrada, un tamiz pulverizador en la salida y una junta tórica de sellado exterior. <span class=\"pag\">pág. 30</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El refrigerante a alta presión atraviesa el tamiz de entrada para retener partículas y entra en el taladro calibrado. Al reducirse bruscamente la sección, se produce la caída de presión y el fluido sale atomizado a través del tamiz pulverizador hacia el evaporador. (pág. 30)",
+     "html": "<p>El refrigerante a alta presión atraviesa el tamiz de entrada para retener partículas y entra en el taladro calibrado. Al reducirse bruscamente la sección, se produce la caída de presión y el fluido sale atomizado a través del tamiz pulverizador hacia el evaporador. <span class=\"pag\">pág. 30</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Sección de paso: taladro de diámetro fijo indeformable. (pág. 30)",
+     "html": "<ul>\n<li>Sección de paso: taladro de diámetro fijo indeformable. <span class=\"pag\">pág. 30</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Obstrucción del tamiz para impurezas por lodos de aceite o por descomposición interna de componentes. (pág. 30)",
+     "html": "<p>Obstrucción del tamiz para impurezas por lodos de aceite o por descomposición interna de componentes. <span class=\"pag\">pág. 30</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Caída excesiva de la baja presión y falta de rendimiento frigorífico. (págs. 29-30)",
+     "html": "<p>Caída excesiva de la baja presión y falta de rendimiento frigorífico. <span class=\"pag\">págs. 29-30</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Desmontar e inspeccionar visualmente la superficie del tamiz de entrada. (pág. 30)",
+     "html": "<p>Desmontar e inspeccionar visualmente la superficie del tamiz de entrada. <span class=\"pag\">pág. 30</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Respetar estrictamente el sentido de montaje marcado por la flecha sobre el cuerpo de plástico (orientada hacia el evaporador). (pág. 30)",
+     "html": "<p>Respetar estrictamente el sentido de montaje marcado por la flecha sobre el cuerpo de plástico (orientada hacia el evaporador). <span class=\"pag\">pág. 30</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Detalle en despiece del estrangulador con indicación del taladro calibrado, tamices y dirección de montaje — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 30",
+     "html": "<ul>\n<li>Detalle en despiece del estrangulador con indicación del taladro calibrado, tamices y dirección de montaje — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 30</li>\n</ul>",
      "nivel": ""
     }
    ]
