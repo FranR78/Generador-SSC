@@ -4754,6 +4754,30 @@
    "hecha": false
   },
   {
+   "nombre": "NT918_01",
+   "nt": 918,
+   "titulo": "Válvula de expansión termostática con tubo de sensor",
+   "seccion": "6. Expansión y lado de baja",
+   "descripcion": "Esquema de la válvula termostática de expansión con tubo de sensor mostrando el diafragma, muelle regulador, válvula de bola y la acción de las tres fuerzas P_FÜ, P_Sa y P_Fe — Fuente: Válvula de Expansión II.pdf, pág. 24",
+   "hecha": false
+  },
+  {
+   "nombre": "NT919_01",
+   "nt": 919,
+   "titulo": "Válvula de expansión de nueva generación",
+   "seccion": "6. Expansión y lado de baja",
+   "descripcion": "Sección de la válvula de expansión de nueva generación con cabezal térmico, diafragma, varilla de émbolo, taladros de compensación, válvula de bola y muelle regulador — Fuente: Válvula de Expansión II.pdf, pág. 25",
+   "hecha": false
+  },
+  {
+   "nombre": "NT919_02",
+   "nt": 919,
+   "titulo": "Válvula de expansión de nueva generación",
+   "seccion": "6. Expansión y lado de baja",
+   "descripcion": "Secuencia de regulación indicando las variaciones de presión p_a y p_b en el cabezal térmico y el movimiento de la varilla de émbolo sobre la válvula de bola — Fuente: Válvula de Expansión II.pdf, pág. 26",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -4778,7 +4802,7 @@
    "hecha": false
   }
  ],
- "total": 909,
+ "total": 911,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -23099,6 +23123,162 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema comparativo de válvulas de expansión (bloque, ángulo y orificio calibrado) — Fuente: LA VALVULA DE EXPANSION.PDF, pág. 1 (pág. 3). Sección en despiece de la válvula de expansión termostática con indicación de la cabeza termostática, vástago, membrana, muelle de reglaje, bola o cabeza de válvula y conexiones — Fuente: LA VALVULA DE EXPANSION.PDF, pág. 5 (pág. 18, 19). Diagrama de las fuerzas F1 (presión bulbo), F2 (presión evaporador) y F3 (muelle) actuando sobre la membrana de la válvula — Fuente: LA VALVULA DE EXPANSION.PDF, pág. 6 (pág. 20, 21). Curva temporal de presión y apertura de válvula mostrando el fenómeno de inestabilidad por bombeo — Fuente: LA VALVULA DE EXPANSION.PDF, pág. 10 (pág. 34, 35). Esquema comparativo entre la válvula de origen (4 bar / 9 ºC) y una válvula adaptable inadaptada (6 bar / 21 ºC y 5 bar / 25 ºC en evaporador) — Fuente: LA VALVULA DE EXPANSION.PDF, pág. 11-12 (pág. 36, 37).",
      "html": "<ul>\n<li>Esquema comparativo de válvulas de expansión (bloque, ángulo y orificio calibrado) — Fuente: LA VALVULA DE EXPANSION.PDF, pág. 1 <span class=\"pag\">pág. 3</span>.</li>\n<li>Sección en despiece de la válvula de expansión termostática con indicación de la cabeza termostática, vástago, membrana, muelle de reglaje, bola o cabeza de válvula y conexiones — Fuente: LA VALVULA DE EXPANSION.PDF, pág. 5 <span class=\"pag\">pág. 18, 19</span>.</li>\n<li>Diagrama de las fuerzas F1 (presión bulbo), F2 (presión evaporador) y F3 (muelle) actuando sobre la membrana de la válvula — Fuente: LA VALVULA DE EXPANSION.PDF, pág. 6 <span class=\"pag\">pág. 20, 21</span>.</li>\n<li>Curva temporal de presión y apertura de válvula mostrando el fenómeno de inestabilidad por bombeo — Fuente: LA VALVULA DE EXPANSION.PDF, pág. 10 <span class=\"pag\">pág. 34, 35</span>.</li>\n<li>Esquema comparativo entre la válvula de origen (4 bar / 9 ºC) y una válvula adaptable inadaptada (6 bar / 21 ºC y 5 bar / 25 ºC en evaporador) — Fuente: LA VALVULA DE EXPANSION.PDF, pág. 11-12 <span class=\"pag\">pág. 36, 37</span>.</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.valvula-expansion.tubo-sensor.valvula-de-expansion-ii",
+   "nt": 918,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "valvula-expansion",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "Dispositivos de expansión",
+   "titulo": "Válvula de expansión termostática con tubo de sensor",
+   "codigo": "",
+   "menu": "Válvula de expansión termostática con",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Válvula de Expansión II.pdf, págs. 24",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "tubo-sensor",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "evaporador",
+    "compresor",
+    "condensador"
+   ],
+   "palabras": [
+    "tubo de sensor",
+    "diafragma",
+    "muelle regulador",
+    "tres fuerzas",
+    "preajustada"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Distensar el agente frigorífico en el evaporador haciéndolo enfriar, constituyendo el punto de separación entre el lado de alta y de baja presión del circuito frigorífico, y regular el flujo hacia el evaporador en función de la temperatura del vapor a la salida del evaporador para mantener una climatización uniforme.",
+     "html": "<p>Distensar el agente frigorífico en el evaporador haciéndolo enfriar, constituyendo el punto de separación entre el lado de alta y de baja presión del circuito frigorífico, y regular el flujo hacia el evaporador en función de la temperatura del vapor a la salida del evaporador para mantener una climatización uniforme.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Válvula de expansión termostática provista de un tubo de sensor (capilar) exterior cargado con un gas especial. Dispone de un diafragma superior, una válvula de bola interna y un muelle regulador. Viene preajustada de fábrica y no debe alterarse su tarado.",
+     "html": "<ul>\n<li>Válvula de expansión termostática provista de un tubo de sensor (capilar) exterior cargado con un gas especial.</li>\n<li>Dispone de un diafragma superior, una válvula de bola interna y un muelle regulador.</li>\n<li>Viene preajustada de fábrica y no debe alterarse su tarado.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Trabaja mediante la acción conjunta y equilibrada de 3 fuerzas: Presión en el tubo del sensor (P_FÜ): depende de la temperatura del agente frigorífico intensamente calentado a la salida del evaporador y actúa como fuerza de apertura sobre la cara superior del diafragma. Presión del evaporador (P_Sa): actúa en dirección opuesta al diafragma (fuerza de cierre). Presión del muelle regulador (P_Fe): actúa en la misma dirección que la presión del evaporador (fuerza de cierre). Si aumenta la temperatura a la salida del evaporador, el gas en el sensor se expande aumentando la presión P_FÜ, venciendo las fuerzas opuestas y abriendo la válvula de bola para incrementar el flujo hacia el evaporador. Si la temperatura baja, el volumen de gas se reduce en el termostato, disminuyendo la presión y reduciendo el flujo hacia el evaporador. (pág. 24).",
+     "html": "<p>Trabaja mediante la acción conjunta y equilibrada de 3 fuerzas:</p>\n<ol>\n<li>Presión en el tubo del sensor (P_FÜ): depende de la temperatura del agente frigorífico intensamente calentado a la salida del evaporador y actúa como fuerza de apertura sobre la cara superior del diafragma.</li>\n<li>Presión del evaporador (P_Sa): actúa en dirección opuesta al diafragma (fuerza de cierre).</li>\n<li>Presión del muelle regulador (P_Fe): actúa en la misma dirección que la presión del evaporador (fuerza de cierre).\nSi aumenta la temperatura a la salida del evaporador, el gas en el sensor se expande aumentando la presión P_FÜ, venciendo las fuerzas opuestas y abriendo la válvula de bola para incrementar el flujo hacia el evaporador. Si la temperatura baja, el volumen de gas se reduce en el termostato, disminuyendo la presión y reduciendo el flujo hacia el evaporador.</li>\n</ol>\n<p> <span class=\"pag\">pág. 24</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Plegado o daño mecánico en el tubo del sensor. Manipulación o alteración del preajuste de fábrica de la válvula. (pág. 24).",
+     "html": "<ul>\n<li>Plegado o daño mecánico en el tubo del sensor.</li>\n<li>Manipulación o alteración del preajuste de fábrica de la válvula.</li>\n</ul>\n<p> <span class=\"pag\">pág. 24</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Prohibido alterar la regulación preajustada de fábrica en la válvula. Prohibido plegar el tubo del sensor, ya que se encuentra cargado con un gas especial. (pág. 24).",
+     "html": "<ul>\n<li>Prohibido alterar la regulación preajustada de fábrica en la válvula.</li>\n<li>Prohibido plegar el tubo del sensor, ya que se encuentra cargado con un gas especial.</li>\n</ul>\n<p> <span class=\"pag\">pág. 24</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema de la válvula termostática de expansión con tubo de sensor mostrando el diafragma, muelle regulador, válvula de bola y la acción de las tres fuerzas P_FÜ, P_Sa y P_Fe — Fuente: Válvula de Expansión II.pdf, pág. 24",
+     "html": "<ul>\n<li>Esquema de la válvula termostática de expansión con tubo de sensor mostrando el diafragma, muelle regulador, válvula de bola y la acción de las tres fuerzas P_FÜ, P_Sa y P_Fe — Fuente: Válvula de Expansión II.pdf, pág. 24</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.valvula-expansion.cabezal-termico-integrado.valvula-de-expansion-ii",
+   "nt": 919,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "valvula-expansion",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "Dispositivos de expansión",
+   "titulo": "Válvula de expansión de nueva generación",
+   "codigo": "",
+   "menu": "Válvula de expansión de nueva generaci",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Válvula de Expansión II.pdf, págs. 24-26",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "cabezal-termico-integrado",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "evaporador",
+    "compresor",
+    "condensador"
+   ],
+   "palabras": [
+    "cabezal térmico",
+    "taladros de compensación",
+    "varilla de émbolo",
+    "válvula de bola",
+    "aislamiento térmico"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Distensar el agente frigorífico a la entrada del evaporador separando la zona de alta y baja presión del circuito, y gestionar térmicamente el flujo de rociado de agente frigorífico en función de la temperatura reinante en el escape del evaporador.",
+     "html": "<p>Distensar el agente frigorífico a la entrada del evaporador separando la zona de alta y baja presión del circuito, y gestionar térmicamente el flujo de rociado de agente frigorífico en función de la temperatura reinante en el escape del evaporador.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Válvula de expansión monobloque de nueva generación integrada entre los lados de alta y baja presión, directamente ante el evaporador. Integra una unidad de regulación con cabezal térmico y válvula de bola accionada mediante una varilla de émbolo. El cabezal térmico dispone de un diafragma con una carga de gas especial en la cara superior; la cara opuesta comunica directamente con el escape del evaporador (baja presión) a través de taladros de compensación de presión internos. Se instala obligatoriamente provista de un aislamiento de protección térmica. (pág. 24, 25).",
+     "html": "<ul>\n<li>Válvula de expansión monobloque de nueva generación integrada entre los lados de alta y baja presión, directamente ante el evaporador.</li>\n<li>Integra una unidad de regulación con cabezal térmico y válvula de bola accionada mediante una varilla de émbolo.</li>\n<li>El cabezal térmico dispone de un diafragma con una carga de gas especial en la cara superior; la cara opuesta comunica directamente con el escape del evaporador (baja presión) a través de taladros de compensación de presión internos.</li>\n<li>Se instala obligatoriamente provista de un aislamiento de protección térmica.</li>\n</ul>\n<p> <span class=\"pag\">pág. 24, 25</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "La temperatura por el lado de baja presión (escape del evaporador) determina la presión del gas especial dentro del cabezal térmico y gradúa el paso de la válvula de bola a través de la varilla de émbolo. Aumento de la carga de refrigeración : Aumenta la temperatura a la salida del evaporador, incrementando la presión (p_a) de la carga de gas en el cabezal térmico. A través del diafragma y la varilla de émbolo se aumenta la sección de paso en la válvula de bola, fluyendo más agente frigorífico hacia el evaporador para extraer calor del aire pasante. Disminución de la carga de refrigeración : Si la temperatura baja a la salida del evaporador, se produce una caída de presión (p_b) en el cabezal térmico, reduciéndose la sección en la válvula de bola y disminuyendo el caudal de paso hacia el evaporador. (pág. 25, 26).",
+     "html": "<ul>\n<li>La temperatura por el lado de baja presión (escape del evaporador) determina la presión del gas especial dentro del cabezal térmico y gradúa el paso de la válvula de bola a través de la varilla de émbolo.</li>\n<li><strong>Aumento de la carga de refrigeración</strong>: Aumenta la temperatura a la salida del evaporador, incrementando la presión (p_a) de la carga de gas en el cabezal térmico. A través del diafragma y la varilla de émbolo se aumenta la sección de paso en la válvula de bola, fluyendo más agente frigorífico hacia el evaporador para extraer calor del aire pasante.</li>\n<li><strong>Disminución de la carga de refrigeración</strong>: Si la temperatura baja a la salida del evaporador, se produce una caída de presión (p_b) en el cabezal térmico, reduciéndose la sección en la válvula de bola y disminuyendo el caudal de paso hacia el evaporador.</li>\n</ul>\n<p> <span class=\"pag\">pág. 25, 26</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Falta o ausencia del aislamiento de protección térmica exterior de la válvula. (pág. 25).",
+     "html": "<p>Falta o ausencia del aislamiento de protección térmica exterior de la válvula.</p>\n<p> <span class=\"pag\">pág. 25</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si falta el aislamiento de protección térmica en la válvula de expansión, se altera la curva característica de regulación programada por la influencia térmica exterior. (pág. 25).",
+     "html": "<p>Si falta el aislamiento de protección térmica en la válvula de expansión, se altera la curva característica de regulación programada por la influencia térmica exterior.</p>\n<p> <span class=\"pag\">pág. 25</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Instalar y mantener siempre la válvula de expansión provista de su aislamiento de protección térmica. (pág. 25).",
+     "html": "<p>Instalar y mantener siempre la válvula de expansión provista de su aislamiento de protección térmica.</p>\n<p> <span class=\"pag\">pág. 25</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Sección de la válvula de expansión de nueva generación con cabezal térmico, diafragma, varilla de émbolo, taladros de compensación, válvula de bola y muelle regulador — Fuente: Válvula de Expansión II.pdf, pág. 25 Secuencia de regulación indicando las variaciones de presión p_a y p_b en el cabezal térmico y el movimiento de la varilla de émbolo sobre la válvula de bola — Fuente: Válvula de Expansión II.pdf, pág. 26",
+     "html": "<ul>\n<li>Sección de la válvula de expansión de nueva generación con cabezal térmico, diafragma, varilla de émbolo, taladros de compensación, válvula de bola y muelle regulador — Fuente: Válvula de Expansión II.pdf, pág. 25</li>\n<li>Secuencia de regulación indicando las variaciones de presión p_a y p_b en el cabezal térmico y el movimiento de la varilla de émbolo sobre la válvula de bola — Fuente: Válvula de Expansión II.pdf, pág. 26</li>\n</ul>",
      "nivel": ""
     }
    ]
