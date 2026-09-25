@@ -40,6 +40,7 @@ DIR_NOTAS = RAIZ / "notas"
 DIR_MAESTRAS = RAIZ / "maestras"
 DIR_PENDIENTES = DIR_MAESTRAS / "pendientes"
 MODELO = os.environ.get("FUSION_MODELO", "").strip() or "auto"   # «auto»: el Flash más nuevo que vea la key
+INTENTOS = 6   # rondas por entidad; en cada una se prueban todos los Flash
 MODELOS = []   # alternativas si MODELO está saturado (las rellena main)
 
 APARTADOS = {
@@ -193,7 +194,7 @@ def pedir(cliente, texto, tipo):
     apart = APARTADOS.get(tipo, APARTADOS["componente"])
     sistema = SISTEMA + f"\nTipo de nota: {tipo}. Apartados posibles, en este orden: {', '.join(apart)}.\n"
     global MODELO
-    for intento in range(4):
+    for intento in range(INTENTOS):
         for modelo in [MODELO] + [m for m in MODELOS if m != MODELO]:
             try:
                 r = cliente.models.generate_content(
@@ -215,10 +216,10 @@ def pedir(cliente, texto, tipo):
                 if isinstance(codigo, int) and 400 <= codigo < 500 and codigo != 429:
                     raise RuntimeError(f"Gemini rechaza la petición ({codigo}): {str(e)[:200]}")
                 break                                # cuota (429) u otro: esperar
-        espera = 30 * (intento + 1)
+        espera = 60 * (intento + 1)   # la saturación (503) de Google suele durar minutos
         print(f"    reintento en {espera}s")
         time.sleep(espera)
-    raise RuntimeError("Gemini no ha respondido tras 4 intentos")
+    raise RuntimeError(f"Gemini no ha respondido tras {INTENTOS} intentos (saturado: prueba más tarde)")
 
 
 def paquete(fichas):
