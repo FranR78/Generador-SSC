@@ -6,42 +6,39 @@ nt: 224
 tipo: proceso
 subtipo: fundamento
 clase: fundamento
-titulo: "Confort térmico e higrometría en el habitáculo"
-menu: "Confort térmico e higrometría en el ha"
+titulo: "Higrometría y zona de confort térmico"
+menu: "Higrometría y zona de confort térmico"
 grupo: "Distribución de aire"
 clave: higrometria-y-confort
 area: climatizacion
 sistema: "distribucion-aire"
 fuentes: "CLIMATIZACION INTRODUCCION.PDF, págs. 5-9"
-relacionados: ["ciclo-frigorifico"]
-palabras: ["confort térmico", "higrometría", "humedad relativa", "fuentes de calor", "zona de confort"]
+relacionados: ["unidades-control-climatizador", "filtro-habitaculo"]
+palabras: ["higrometría", "confort térmico", "zona de confort", "humedad relativa", "deshidratación", "sudoración"]
 ---
 
 ## Objeto
 
-Definir las condiciones de equilibrio térmico, temperatura y tasa de humedad necesarias para garantizar la zona de confort de los ocupantes dentro del habitáculo. (págs. 5-9)
+Definir los parámetros de temperatura y humedad ambiental necesarios para alcanzar el estado de equilibrio y el bienestar térmico de los ocupantes del habitáculo. (págs. 5, 9)
 
 ## Fundamento
 
-El cuerpo humano busca estar en un estado de equilibrio térmico con el ambiente. Si el entorno está frío (20 ºC) el cuerpo cede calorías; si está caluroso (28 ºC) el cuerpo no puede ceder calorías acumulando calor. La higrometría mide la humedad relativa del aire regulando la evaporación del sudor y la sensación térmica. (págs. 7-9)
+El cuerpo humano busca un estado de equilibrio térmico en el que cede las calorías producidas sin llegar a la deshidratación por calor seco ni a la sudoración excesiva por alta humedad. (págs. 6-9)
 
 ## Desarrollo
 
-La higrometría es la relación entre la cantidad de agua contenida en el aire y la cantidad máxima que podría contener en las mismas condiciones de presión y temperatura. La zona de confort térmico queda delimitada por una combinación de temperatura ambiental entre 20 ºC y 28 ºC y una tasa de humedad relativa comprendida entre el 30% y el 70%. Fuera de estos límites se producen sensaciones extremas:
-- Con humedad inferior al 30%: frío seco (con bajas temperaturas) o calor con deshidratación (con altas temperaturas). (pág. 9)
-- Con humedad superior al 70%: frío con niebla (con bajas temperaturas) o calor con sudoración (con altas temperaturas). (pág. 9)
+- **Higrometría:** Es la relación porcentual entre la cantidad de agua contenida en el aire y la cantidad máxima de vapor de agua que podría contener bajo las mismas condiciones de presión y temperatura. (pág. 8)
+- **Zona de confort:** Queda delimitada por un margen de temperatura comprendido entre 20 ºC y 28 ºC, asociado a una tasa de humedad relativa de entre el 30% y el 70%. Fuera de estos límites se producen sensaciones de frío seco, frío con niebla, calor deshidratante o calor con sudoración. (págs. 7, 9)
 
 ## Valores de referencia
 
-- Temperatura ambiente en estado de equilibrio corporal (ambiente templado): 20 ºC a 28 ºC. (págs. 7, 9)
-- Margen de humedad relativa dentro de la zona de confort: entre 30% y 70%. (pág. 9)
-- Límite inferior de humedad seca: < 30%. (pág. 9)
-- Límite superior de humedad saturada: > 70%. (pág. 9)
+- Temperatura en ambiente templado/equilibrio: entre 20 ºC y 28 ºC. (págs. 7, 9)
+- Tasa de humedad relativa en zona de confort: entre 30% y 70%. (pág. 9)
 
 ## Errores de concepto frecuentes
 
-- Evaluar el confort térmico atendiendo únicamente a la temperatura del aire e ignorando el impacto de la humedad relativa (higrometría). (págs. 8-9)
+- Medir únicamente la temperatura del aire para valorar el confort, ignorando la tasa de humedad relativa (higrometría) del habitáculo. (págs. 8-9)
 
 ## Imágenes requeridas
 
-- Gráfica de la zona de confort térmico en función de la temperatura y el porcentaje de humedad relativa del aire — Fuente: CLIMATIZACION INTRODUCCION.PDF, pág. 9
+- Gráfica del diagrama de zona de confort relacionando la temperatura ambiental de 20 ºC a 28 ºC con la tasa de humedad del 30% al 70% — Fuente: CLIMATIZACION INTRODUCCION.PDF, pág. 9
