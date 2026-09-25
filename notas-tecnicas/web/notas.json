@@ -1370,11 +1370,27 @@
    "hecha": false
   },
   {
+   "nombre": "NT274_01",
+   "nt": 274,
+   "titulo": "Acoplamiento electromagnético del compresor",
+   "seccion": "4. El compresor",
+   "descripcion": "Despiece del acoplamiento electromagnético con la polea, bobina magnética y disco de arrastre de flejes — Fuente: LA CLIMATIZACIÓN.pdf, pág. 71",
+   "hecha": false
+  },
+  {
+   "nombre": "NT276_01",
+   "nt": 276,
+   "titulo": "Depósito acumulador, filtro y deshidratador",
+   "seccion": "5. Lado de alta",
+   "descripcion": "Estructura interna del depósito acumulador con la lana de vidrio, silicagel y zona de amortiguación gaseosa — Fuente: LA CLIMATIZACIÓN.pdf, pág. 75",
+   "hecha": false
+  },
+  {
    "nombre": "NT277_01",
    "nt": 277,
-   "titulo": "Válvula de expansión monobloc",
+   "titulo": "Válvula de expansión termostática",
    "seccion": "6. Expansión y lado de baja",
-   "descripcion": "Sección de la válvula de expansión de bloque con diafragma, varilla, muelle y bola — Fuente: LA CLIMATIZACIÓN.pdf, pág. 81",
+   "descripcion": "Sección de la válvula de expansión monobloc en H mostrando la cabeza térmica, diafragma, varilla de empuje y bola — Fuente: LA CLIMATIZACIÓN.pdf, pág. 79",
    "hecha": false
   },
   {
@@ -4338,6 +4354,30 @@
    "hecha": false
   },
   {
+   "nombre": "NT826_01",
+   "nt": 826,
+   "titulo": "Compresor alternativo de pistones de cilindrada variable",
+   "seccion": "4. El compresor",
+   "descripcion": "Variación de la inclinación del plato oscilante y de la carrera útil del pistón según la presión interna — Fuente: LA CLIMATIZACIÓN.pdf, pág. 57",
+   "hecha": false
+  },
+  {
+   "nombre": "NT827_01",
+   "nt": 827,
+   "titulo": "Válvula de regulación interna de cilindrada",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Sección interna de la válvula de regulación con indicación de la cápsula elástica, vástago, bola y pasajes de gas — Fuente: LA CLIMATIZACIÓN.pdf, pág. 62",
+   "hecha": false
+  },
+  {
+   "nombre": "NT828_01",
+   "nt": 828,
+   "titulo": "Circuito frigorífico con inyector y depósito acumulador de expansión",
+   "seccion": "2. Fundamentos",
+   "descripcion": "Esquema del circuito frigorífico con inyector y depósito acumulador instalado en la línea de baja presión — Fuente: LA CLIMATIZACIÓN.pdf, pág. 84",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -4362,7 +4402,7 @@
    "hecha": false
   }
  ],
- "total": 817,
+ "total": 820,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -9306,6 +9346,82 @@
    ]
   },
   {
+   "id": "ssc.ciclo-frigorifico.inyector.la-climatizacion",
+   "nt": 828,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ciclo-frigorifico",
+   "seccion": "2. Fundamentos",
+   "subgrupo": "",
+   "titulo": "Circuito frigorífico con inyector y depósito acumulador de expansión",
+   "codigo": "",
+   "menu": "Circuito frigorífico con inyector y de",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 83-86",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "inyector",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "estrangulador",
+    "deposito-colector",
+    "compresor",
+    "evaporador"
+   ],
+   "palabras": [
+    "inyector",
+    "orificio calibrado",
+    "acumulador de expansión",
+    "zona caliente",
+    "baja presión"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Explicar el ciclo termodinámico y el funcionamiento de las instalaciones de climatización que utilizan un inyector de orificio calibrado fijo en lugar de una válvula de expansión termostática. (págs. 83-84)",
+     "html": "<p>Explicar el ciclo termodinámico y el funcionamiento de las instalaciones de climatización que utilizan un inyector de orificio calibrado fijo en lugar de una válvula de expansión termostática. <span class=\"pag\">págs. 83-84</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "La expansión e pulverización del refrigerante líquido se realiza mediante un inyector (estrangulador) de diámetro fijo. Al carecer de regulación de caudal a la entrada del evaporador, el circuito requiere un depósito acumulador de expansión en el lado de baja presión tras el evaporador para proteger al compresor. (págs. 83-85)",
+     "html": "<p>La expansión e pulverización del refrigerante líquido se realiza mediante un inyector (estrangulador) de diámetro fijo. Al carecer de regulación de caudal a la entrada del evaporador, el circuito requiere un depósito acumulador de expansión en el lado de baja presión tras el evaporador para proteger al compresor. <span class=\"pag\">págs. 83-85</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Compresión e Inyección: El compresor de cilindrada variable impulsa el gas a alta presión hacia el condensador. El líquido condensado atraviesa la pequeña sección del inyector fijo situado a la entrada del evaporador, cayendo drásticamente su presión. (págs. 83-84) Evaporación y Acumulación: El líquido atomizado absorbe calor en el evaporador. La mezcla difásica saliente penetra en el depósito acumulador de expansión (alojado en un punto caliente del compartimento motor), donde se completa la reevaporación del líquido y se retiene el agua antes de retornar en estado gaseoso al compresor. (págs. 85-86)",
+     "html": "<ol>\n<li><strong>Compresión e Inyección:</strong> El compresor de cilindrada variable impulsa el gas a alta presión hacia el condensador. El líquido condensado atraviesa la pequeña sección del inyector fijo situado a la entrada del evaporador, cayendo drásticamente su presión. <span class=\"pag\">págs. 83-84</span></li>\n<li><strong>Evaporación y Acumulación:</strong> El líquido atomizado absorbe calor en el evaporador. La mezcla difásica saliente penetra en el depósito acumulador de expansión (alojado en un punto caliente del compartimento motor), donde se completa la reevaporación del líquido y se retiene el agua antes de retornar en estado gaseoso al compresor. <span class=\"pag\">págs. 85-86</span></li>\n</ol>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Ubicación del acumulador de expansión: intercalado en la tubería de baja presión, entre el evaporador y la aspiración del compresor. (pág. 85)",
+     "html": "<ul>\n<li>Ubicación del acumulador de expansión: intercalado en la tubería de baja presión, entre el evaporador y la aspiración del compresor. <span class=\"pag\">pág. 85</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Buscar el depósito deshidratador en la línea de alta presión en instalaciones provistas de inyector (en este sistema el depósito se encuentra ubicado en el lado de baja presión). (págs. 74, 85)",
+     "html": "<ul>\n<li>Buscar el depósito deshidratador en la línea de alta presión en instalaciones provistas de inyector (en este sistema el depósito se encuentra ubicado en el lado de baja presión). <span class=\"pag\">págs. 74, 85</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del circuito frigorífico con inyector y depósito acumulador instalado en la línea de baja presión — Fuente: LA CLIMATIZACIÓN.pdf, pág. 84",
+     "html": "<ul>\n<li>Esquema del circuito frigorífico con inyector y depósito acumulador instalado en la línea de baja presión — Fuente: LA CLIMATIZACIÓN.pdf, pág. 84</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.refrigerante-r134a.208-climatizadores-en-los-vehic",
    "nt": 541,
    "modulo": "ssc",
@@ -10627,15 +10743,15 @@
    "clave": "aceite-frigorifico",
    "seccion": "3. Fluidos",
    "subgrupo": "",
-   "titulo": "Aceite sintético de lubricación frigorífica",
+   "titulo": "Aceite lubricante para máquina frigorífica",
    "codigo": "",
-   "menu": "Aceite sintético de lubricación frigor",
+   "menu": "Aceite lubricante para máquina frigorí",
    "grupo": "Fluidos frigoríficos",
    "tipo": "elemento",
    "subtipo": "",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 67-70",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 66-70",
    "clase": "fluido",
    "estado": "",
    "fusionadas": [],
@@ -10644,58 +10760,58 @@
    "sistema": "fluidos-frigorificos",
    "formaParteDe": "",
    "relacionados": [
-    "compresor",
-    "valvula-expansion",
-    "refrigerante-r134a"
+    "refrigerante-r134a",
+    "compresor"
    ],
    "palabras": [
-    "aceite PAG",
-    "higroscopía",
-    "coquización",
-    "distribución de aceite",
-    "residuos contaminantes"
+    "aceite sintético",
+    "lubricación",
+    "PAG",
+    "POE",
+    "higroscopicidad",
+    "reparto de aceite"
    ],
    "apartados": [
     {
      "titulo": "Designación y norma",
-     "texto": "Aceite sintético especial tipo PAG (Polialquilenglicol) para R134a. (pág. 68).",
-     "html": "<p>Aceite sintético especial tipo PAG (Polialquilenglicol) para R134a. <span class=\"pag\">pág. 68</span>.</p>",
+     "texto": "Aceite sintético especial para circuitos de climatización con fluido R134a (aceites tipo PAG o POE). (págs. 66-67)",
+     "html": "<p>Aceite sintético especial para circuitos de climatización con fluido R134a (aceites tipo PAG o POE). <span class=\"pag\">págs. 66-67</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Propiedades",
-     "texto": "Elevado poder de disolución y miscibilidad con el fluido refrigerante R134a. (pág. 68). Altas propiedades lubricantes a elevadas presiones y temperaturas. (pág. 68). Elevada pureza: exento de ácidos, azufre, ceras y agua. (pág. 68). Altamente higroscópico (absorbe con rapidez la humedad del aire). (pág. 70).",
-     "html": "<ul>\n<li>Elevado poder de disolución y miscibilidad con el fluido refrigerante R134a. <span class=\"pag\">pág. 68</span>.</li>\n<li>Altas propiedades lubricantes a elevadas presiones y temperaturas. <span class=\"pag\">pág. 68</span>.</li>\n<li>Elevada pureza: exento de ácidos, azufre, ceras y agua. <span class=\"pag\">pág. 68</span>.</li>\n<li>Altamente higroscópico (absorbe con rapidez la humedad del aire). <span class=\"pag\">pág. 70</span>.</li>\n</ul>",
+     "texto": "Total miscibilidad y solubilidad con el fluido frigorífico R134a en todo el margen de temperaturas de servicio. (pág. 67) Elevada higroscopicidad (alta capacidad para absorber la humedad del aire ambiente). (pág. 69) Alta estabilidad viscosimétrica y térmica sin descomposición química en presencia de gas presurizado. (págs. 66-67)",
+     "html": "<ul>\n<li>Total miscibilidad y solubilidad con el fluido frigorífico R134a en todo el margen de temperaturas de servicio. <span class=\"pag\">pág. 67</span></li>\n<li>Elevada higroscopicidad (alta capacidad para absorber la humedad del aire ambiente). <span class=\"pag\">pág. 69</span></li>\n<li>Alta estabilidad viscosimétrica y térmica sin descomposición química en presencia de gas presurizado. <span class=\"pag\">págs. 66-67</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Dónde se usa y cantidades",
-     "texto": "Se utiliza para lubricar las piezas móviles del compresor y la válvula de expansión. La cantidad total se distribuye aproximadamente: 50% en el compresor. 20% en el evaporador. 10% en el condensador. 10% en el depósito acumulador. 10% en las canalizaciones. (pág. 69).",
-     "html": "<p>Se utiliza para lubricar las piezas móviles del compresor y la válvula de expansión. La cantidad total se distribuye aproximadamente:</p>\n<ul>\n<li>50% en el compresor.</li>\n<li>20% en el evaporador.</li>\n<li>10% en el condensador.</li>\n<li>10% en el depósito acumulador.</li>\n<li>10% en las canalizaciones. <span class=\"pag\">pág. 69</span>.</li>\n</ul>",
+     "texto": "Circula por todo el circuito frigorífico disuelto en el refrigerante para engrasar las partes móviles del compresor y de la válvula de expansión. Reparto porcentual del aceite en reposo: compresor (aprox. 50%), evaporador (aprox. 20%), condensador (aprox. 15%), depósito acumulador/deshidratador (aprox. 10%) y tuberías flexibles (aprox. 5%). (págs. 66-68)",
+     "html": "<p>Circula por todo el circuito frigorífico disuelto en el refrigerante para engrasar las partes móviles del compresor y de la válvula de expansión. Reparto porcentual del aceite en reposo: compresor (aprox. 50%), evaporador (aprox. 20%), condensador (aprox. 15%), depósito acumulador/deshidratador (aprox. 10%) y tuberías flexibles (aprox. 5%). <span class=\"pag\">págs. 66-68</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Compatibilidades y mezclas prohibidas",
-     "texto": "Prohibido emplear aceite de R134a en circuitos con R12 y viceversa. Incompatible con aceites minerales. El uso de aceites no específicos produce coquización/carbonización y descomposición de las juntas. (pág. 68).",
-     "html": "<p>Prohibido emplear aceite de R134a en circuitos con R12 y viceversa. Incompatible con aceites minerales. El uso de aceites no específicos produce coquización/carbonización y descomposición de las juntas. <span class=\"pag\">pág. 68</span>.</p>",
+     "texto": "Incompatible con el agente R12 y con aceites minerales tradicionales. Prohibido mezclar aceites sintéticos de R134a con aceites minerales. (pág. 67)",
+     "html": "<p>Incompatible con el agente R12 y con aceites minerales tradicionales. Prohibido mezclar aceites sintéticos de R134a con aceites minerales. <span class=\"pag\">pág. 67</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Identificación",
-     "texto": "Especificado en la etiqueta adhesiva del compresor y del vano motor indicando la viscosidad exacta (p. ej. PAG 46, PAG 100). (pág. 68).",
-     "html": "<p>Especificado en la etiqueta adhesiva del compresor y del vano motor indicando la viscosidad exacta (p. ej. PAG 46, PAG 100). <span class=\"pag\">pág. 68</span>.</p>",
+     "texto": "Líquido viscoso incoloro o ligeramente amarillento, suministrado en envases metálicos herméticos. (págs. 67, 69)",
+     "html": "<p>Líquido viscoso incoloro o ligeramente amarillento, suministrado en envases metálicos herméticos. <span class=\"pag\">págs. 67, 69</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Manipulación, almacenamiento y residuos",
-     "texto": "No almacenar en recipientes abiertos. Una vez abierto el envase, debe usarse inmediatamente y sellarse. No reutilizar aceite extraído. Es un residuo peligroso contaminante: debe recogerse en contenedores específicos sin mezclar con aceite de motor o frenos. (pág. 70).",
-     "html": "<p>No almacenar en recipientes abiertos. Una vez abierto el envase, debe usarse inmediatamente y sellarse. No reutilizar aceite extraído. Es un residuo peligroso contaminante: debe recogerse en contenedores específicos sin mezclar con aceite de motor o frenos. <span class=\"pag\">pág. 70</span>.</p>",
+     "texto": "Conservar los recipientes cerrados herméticamente y abrirlos únicamente justo antes del llenado para evitar la absorción de humedad atmosférica. Recoger el aceite extraído en recipientes específicos y gestionarlo como residuo contaminante, sin mezclar con aceites usados de motor o frenos. (págs. 69-70)",
+     "html": "<p>Conservar los recipientes cerrados herméticamente y abrirlos únicamente justo antes del llenado para evitar la absorción de humedad atmosférica. Recoger el aceite extraído en recipientes específicos y gestionarlo como residuo contaminante, sin mezclar con aceites usados de motor o frenos. <span class=\"pag\">págs. 69-70</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Riesgos y normativa",
-     "texto": "El aceite PAG cargado de humedad reacciona formando ácido fluorhídrico que corroe los componentes metálicos y destruye los recubrimientos del compresor. (págs. 68, 139).",
-     "html": "<p>El aceite PAG cargado de humedad reacciona formando ácido fluorhídrico que corroe los componentes metálicos y destruye los recubrimientos del compresor. <span class=\"pag\">págs. 68, 139</span>.</p>",
+     "texto": "Sustancia química contaminante sujeta a normativas sobre recogida y tratamiento de residuos de taller. (pág. 70)",
+     "html": "<p>Sustancia química contaminante sujeta a normativas sobre recogida y tratamiento de residuos de taller. <span class=\"pag\">pág. 70</span></p>",
      "nivel": ""
     }
    ]
@@ -15441,6 +15557,98 @@
    ]
   },
   {
+   "id": "ssc.compresor.plato-oscilante-variable.la-climatizacion",
+   "nt": 826,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "compresor",
+   "seccion": "4. El compresor",
+   "subgrupo": "",
+   "titulo": "Compresor alternativo de pistones de cilindrada variable",
+   "codigo": "",
+   "menu": "Compresor alternativo de pistones de c",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 54-61",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "plato-oscilante-variable",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "embrague-compresor",
+    "valvula-reguladora-compresor"
+   ],
+   "palabras": [
+    "cilindrada variable",
+    "plato oscilante",
+    "presión de cárter",
+    "PMI variable",
+    "carrera de pistón"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Comprimir e impulsar el fluido frigorífico adaptando automáticamente el caudal bombeado a las necesidades térmicas del habitáculo, eliminando los golpes de acoplamiento del motor. (págs. 54-55)",
+     "html": "<p>Comprimir e impulsar el fluido frigorífico adaptando automáticamente el caudal bombeado a las necesidades térmicas del habitáculo, eliminando los golpes de acoplamiento del motor. <span class=\"pag\">págs. 54-55</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Compresor alternativo volumétrico de disco de arrastre y plato oscilante de ángulo de inclinación variable (entre un 5% y un 100%). Consta de un cuerpo cilíndrico de aluminio con un número de cilindros comprendido entre 5 y. (págs. 55-57, 61)",
+     "html": "<p>Compresor alternativo volumétrico de disco de arrastre y plato oscilante de ángulo de inclinación variable (entre un 5% y un 100%). Consta de un cuerpo cilíndrico de aluminio con un número de cilindros comprendido entre 5 y. <span class=\"pag\">págs. 55-57, 61</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El árbol de accionamiento hace girar un casquillo solidario a un disco de arrastre articulado. La inclinación del plato oscilante depende del equilibrio de fuerzas entre la presión de baja que empuja los pistones (P_b) y la presión interna del cárter del compresor (P_i). El punto muerto superior (PMS) de los pistones permanece fijo en la placa portaválvulas, mientras que el punto muerto inferior (PMI) adopta una posición variable según el ángulo de inclinación del plato, modificando la carrera útil. (págs. 56-58)",
+     "html": "<p>El árbol de accionamiento hace girar un casquillo solidario a un disco de arrastre articulado. La inclinación del plato oscilante depende del equilibrio de fuerzas entre la presión de baja que empuja los pistones (P_b) y la presión interna del cárter del compresor (P_i). El punto muerto superior (PMS) de los pistones permanece fijo en la placa portaválvulas, mientras que el punto muerto inferior (PMI) adopta una posición variable según el ángulo de inclinación del plato, modificando la carrera útil. <span class=\"pag\">págs. 56-58</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Margen de variación de la cilindrada: del 5% al 100% de la carrera útil de los pistones. (pág. 61) Ejemplo de carrera y ángulo: cilindrada total de 80 cm³, carrera útil de 15 mm con ángulo del plato a 10º. (pág. 58)",
+     "html": "<ul>\n<li>Margen de variación de la cilindrada: del 5% al 100% de la carrera útil de los pistones. <span class=\"pag\">pág. 61</span></li>\n<li>Ejemplo de carrera y ángulo: cilindrada total de 80 cm³, carrera útil de 15 mm con ángulo del plato a 10º. <span class=\"pag\">pág. 58</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Bloqueo de la válvula de regulación o fugas de gas por los segmentos hacia la cámara del cárter. (págs. 58, 61-65)",
+     "html": "<p>Bloqueo de la válvula de regulación o fugas de gas por los segmentos hacia la cámara del cárter. <span class=\"pag\">págs. 58, 61-65</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El compresor queda bloqueado en su cilindrada mínima (falta de rendimiento frigorífico) o en su cilindrada máxima (riesgo de congelación del evaporador). (págs. 61-65)",
+     "html": "<p>El compresor queda bloqueado en su cilindrada mínima (falta de rendimiento frigorífico) o en su cilindrada máxima (riesgo de congelación del evaporador). <span class=\"pag\">págs. 61-65</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Medir las presiones en los lados de alta y baja presión y evaluar la corriente de control enviada a la válvula de regulación. (págs. 61-65)",
+     "html": "<p>Medir las presiones en los lados de alta y baja presión y evaluar la corriente de control enviada a la válvula de regulación. <span class=\"pag\">págs. 61-65</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Asegurar el empleo exclusivo del aceite sintético especificado para mantener la movilidad del mecanismo articulado del plato oscilante. (pág. 66)",
+     "html": "<p>Asegurar el empleo exclusivo del aceite sintético especificado para mantener la movilidad del mecanismo articulado del plato oscilante. <span class=\"pag\">pág. 66</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Variación de la inclinación del plato oscilante y de la carrera útil del pistón según la presión interna — Fuente: LA CLIMATIZACIÓN.pdf, pág. 57",
+     "html": "<ul>\n<li>Variación de la inclinación del plato oscilante y de la carrera útil del pistón según la presión interna — Fuente: LA CLIMATIZACIÓN.pdf, pág. 57</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.embrague-compresor.6-compresores",
    "nt": 44,
    "modulo": "ssc",
@@ -15806,7 +16014,7 @@
    "subtipo": "",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 71-73",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 70-73",
    "clase": "componente",
    "estado": "",
    "fusionadas": [],
@@ -15815,64 +16023,68 @@
    "sistema": "circuito-frigorifico",
    "formaParteDe": "compresor",
    "relacionados": [
-    "compresor",
-    "unidad-control-climatizador"
+    "compresor"
    ],
    "palabras": [
-    "electroembrague",
-    "bobina",
-    "polea Poly-V",
+    "polea",
+    "electrobobina",
     "disco de arrastre",
-    "flejes elásticos",
-    "entrehierro"
+    "entrehierro",
+    "fleje elástico"
    ],
    "apartados": [
     {
      "titulo": "Misión",
-     "texto": "Conectar o desconectar la transmisión de movimiento entre la correa de accesorios del motor y el árbol de accionamiento del compresor. (pág. 71).",
-     "html": "<p>Conectar o desconectar la transmisión de movimiento entre la correa de accesorios del motor y el árbol de accionamiento del compresor. <span class=\"pag\">pág. 71</span>.</p>",
+     "texto": "Transmitir mecánicamente el movimiento de rotación desde la correa de accesorios del motor hacia el árbol de accionamiento del compresor al activar el climatizador. (págs. 70-71)",
+     "html": "<p>Transmitir mecánicamente el movimiento de rotación desde la correa de accesorios del motor hacia el árbol de accionamiento del compresor al activar el climatizador. <span class=\"pag\">págs. 70-71</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Tipos y características",
-     "texto": "Electroembrague seco montado sobre la tapa delantera del compresor. Consta de casquillo con doble rodamiento de bolas lubricado de por vida, bobina electromagnética fija, polea de perfil Poly-V y disco de arrastre acoplado al árbol con cubo estriado y flejes elásticos de retorno. (págs. 72-72).",
-     "html": "<p>Electroembrague seco montado sobre la tapa delantera del compresor. Consta de casquillo con doble rodamiento de bolas lubricado de por vida, bobina electromagnética fija, polea de perfil Poly-V y disco de arrastre acoplado al árbol con cubo estriado y flejes elásticos de retorno. <span class=\"pag\">págs. 72-72</span>.</p>",
+     "texto": "Embrague de fricción seco de accionamiento electromagnético. Consta de una polea montada sobre rodamiento de bolas, una electrobobina anular fija a la carcasa y un disco de arrastre unido al eje mediante flejes elásticos. (págs. 71-72)",
+     "html": "<p>Embrague de fricción seco de accionamiento electromagnético. Consta de una polea montada sobre rodamiento de bolas, una electrobobina anular fija a la carcasa y un disco de arrastre unido al eje mediante flejes elásticos. <span class=\"pag\">págs. 71-72</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Principio de funcionamiento",
-     "texto": "Desconectado: la polea gira libremente sobre sus rodamientos impulsada por la correa sin transmitir movimiento al árbol. Existe una distancia de separación calibrada (entrehierro) entre la polea y el disco de arrastre. (págs. 72-73). Conectado: la UEGAA/mando alimenta la bobina creando un campo magnético. La fuerza magnética atrae el disco de arrastre contra la cara frontal de la polea venciendo la elasticidad de los flejes, acoplando el giro de la polea con el árbol del compresor. (pág. 73). Desconexión: al cortar la corriente, el campo desaparece y los flejes elásticos retiran el disco a su posición de reposo. (pág. 73).",
-     "html": "<ul>\n<li>Desconectado: la polea gira libremente sobre sus rodamientos impulsada por la correa sin transmitir movimiento al árbol. Existe una distancia de separación calibrada (entrehierro) entre la polea y el disco de arrastre. <span class=\"pag\">págs. 72-73</span>.</li>\n<li>Conectado: la UEGAA/mando alimenta la bobina creando un campo magnético. La fuerza magnética atrae el disco de arrastre contra la cara frontal de la polea venciendo la elasticidad de los flejes, acoplando el giro de la polea con el árbol del compresor. <span class=\"pag\">pág. 73</span>.</li>\n<li>Desconexión: al cortar la corriente, el campo desaparece y los flejes elásticos retiran el disco a su posición de reposo. <span class=\"pag\">pág. 73</span>.</li>\n</ul>",
+     "texto": "Con el climatizador desactivado, la polea gira libremente arrastrada por la correa sin transmitir movimiento al eje. Al aplicar tensión a la electrobobina, la corriente crea un campo magnético que atrae el disco de arrastre venciendo la fuerza de los flejes elásticos, adosándolo contra la cara frontal de la polea para girar solidariamente con ella. Al cortar la corriente, el campo desaparece y los flejes retiran el disco de la polea. (págs. 71-73)",
+     "html": "<p>Con el climatizador desactivado, la polea gira libremente arrastrada por la correa sin transmitir movimiento al eje. Al aplicar tensión a la electrobobina, la corriente crea un campo magnético que atrae el disco de arrastre venciendo la fuerza de los flejes elásticos, adosándolo contra la cara frontal de la polea para girar solidariamente con ella. Al cortar la corriente, el campo desaparece y los flejes retiran el disco de la polea. <span class=\"pag\">págs. 71-73</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Valores de trabajo",
-     "texto": "Distancia de separación (entrehierro) calibrada entre la polea y el disco de arrastre. (pág. 72).",
-     "html": "<p>Distancia de separación (entrehierro) calibrada entre la polea y el disco de arrastre. <span class=\"pag\">pág. 72</span>.</p>",
+     "texto": "Distancia de entrehierro en reposo: separación calibrada de precisión entre la cara de la polea y el disco de arrastre. (pág. 72)",
+     "html": "<ul>\n<li>Distancia de entrehierro en reposo: separación calibrada de precisión entre la cara de la polea y el disco de arrastre. <span class=\"pag\">pág. 72</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Anomalías frecuentes",
-     "texto": "Interrupción o cortocircuito de la bobina eléctrica, desgaste del disco por patinado, entrehierro excesivo o desgaste del rodamiento de la polea. (pág. 72).",
-     "html": "<p>Interrupción o cortocircuito de la bobina eléctrica, desgaste del disco por patinado, entrehierro excesivo o desgaste del rodamiento de la polea. <span class=\"pag\">pág. 72</span>.</p>",
+     "texto": "Desgaste del disco de fricción, deformación de los flejes elásticos o interrupción en el devanado de la electrobobina por sobrecalentamiento. (págs. 71-73)",
+     "html": "<p>Desgaste del disco de fricción, deformación de los flejes elásticos o interrupción en el devanado de la electrobobina por sobrecalentamiento. <span class=\"pag\">págs. 71-73</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Comportamiento en avería",
-     "texto": "El compresor no gira al activar el aire acondicionado o produce ruidos intensos de rodamiento/patinado. (págs. 72-73).",
-     "html": "<p>El compresor no gira al activar el aire acondicionado o produce ruidos intensos de rodamiento/patinado. <span class=\"pag\">págs. 72-73</span>.</p>",
+     "texto": "Patinado de la polea con emisión de ruidos y olores de quemado, o falta de acoplamiento del compresor. (págs. 72-73)",
+     "html": "<p>Patinado de la polea con emisión de ruidos y olores de quemado, o falta de acoplamiento del compresor. <span class=\"pag\">págs. 72-73</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Cómo comprobarlo",
-     "texto": "Comprobar la presencia de +12 V en el conector de la bobina al accionar el interruptor A/C. (págs. 73, 134). Medir la resistencia eléctrica de la bobina con multímetro. (pág. 162). Verificar la medida del entrehierro con galga de espesores. (pág. 72).",
-     "html": "<ol>\n<li>Comprobar la presencia de +12 V en el conector de la bobina al accionar el interruptor A/C. <span class=\"pag\">págs. 73, 134</span>.</li>\n<li>Medir la resistencia eléctrica de la bobina con multímetro. <span class=\"pag\">pág. 162</span>.</li>\n<li>Verificar la medida del entrehierro con galga de espesores. <span class=\"pag\">pág. 72</span>.</li>\n</ol>",
+     "texto": "Medir la resistencia eléctrica de la bobina electromagnética con multímetro y verificar la separación del entrehierro mediante galgas de espesor. (págs. 71-73)",
+     "html": "<p>Medir la resistencia eléctrica de la bobina electromagnética con multímetro y verificar la separación del entrehierro mediante galgas de espesor. <span class=\"pag\">págs. 71-73</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Mantenimiento",
-     "texto": "Sustitución del paquete de rodamientos o del conjunto disco/bobina en caso de patinado o holguras. (pág. 72).",
-     "html": "<p>Sustitución del paquete de rodamientos o del conjunto disco/bobina en caso de patinado o holguras. <span class=\"pag\">pág. 72</span>.</p>",
+     "texto": "Ajustar la separación del entrehierro modificando el espesor del paquete de arandelas de reglaje intercaladas en el eje. (págs. 71-72)",
+     "html": "<p>Ajustar la separación del entrehierro modificando el espesor del paquete de arandelas de reglaje intercaladas en el eje. <span class=\"pag\">págs. 71-72</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Despiece del acoplamiento electromagnético con la polea, bobina magnética y disco de arrastre de flejes — Fuente: LA CLIMATIZACIÓN.pdf, pág. 71",
+     "html": "<ul>\n<li>Despiece del acoplamiento electromagnético con la polea, bobina magnética y disco de arrastre de flejes — Fuente: LA CLIMATIZACIÓN.pdf, pág. 71</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -19100,73 +19312,79 @@
    "subtipo": "",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 75-77",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 74-77",
    "clase": "componente",
    "estado": "",
    "fusionadas": [],
    "variante": "",
    "area": "climatizacion",
    "sistema": "circuito-frigorifico",
-   "formaParteDe": "",
+   "formaParteDe": "circuito-frigorifico",
    "relacionados": [
     "condensador",
-    "valvula-expansion",
-    "aceite-frigorifico"
+    "valvula-expansion"
    ],
    "palabras": [
     "filtro deshidratador",
     "silicagel",
-    "zeolitas",
-    "amortiguación de presión",
-    "mirilla de carga"
+    "lana de vidrio",
+    "amortiguación",
+    "decantador",
+    "mirilla de cristal"
    ],
    "apartados": [
     {
      "titulo": "Misión",
-     "texto": "Almacenar una reserva de refrigerante líquido, retener la humedad del circuito, filtrar impurezas sólidas, amortiguar las oscilaciones de presión y permitir el control visual de la carga. (págs. 75-77).",
-     "html": "<p>Almacenar una reserva de refrigerante líquido, retener la humedad del circuito, filtrar impurezas sólidas, amortiguar las oscilaciones de presión y permitir el control visual de la carga. <span class=\"pag\">págs. 75-77</span>.</p>",
+     "texto": "Almacenar la reserva de refrigerante líquido, filtrar impurezas sólidas, absorber químicamente la humedad del circuito y amortiguar los golpes de presión del compresor. (págs. 74-77)",
+     "html": "<p>Almacenar la reserva de refrigerante líquido, filtrar impurezas sólidas, absorber químicamente la humedad del circuito y amortiguar los golpes de presión del compresor. <span class=\"pag\">págs. 74-77</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Tipos y características",
-     "texto": "Recipiente cilíndrico metálico no desmontable instalado en el lado de alta presión entre el condensador y la válvula de expansión. Su interior dispone de capas de lana de vidrio (filtro) y bolas cerámicas de zeolitas o silicagel (deshidratador). Puede incluir mirilla transparente y sensor de humedad. (págs. 75-77).",
-     "html": "<p>Recipiente cilíndrico metálico no desmontable instalado en el lado de alta presión entre el condensador y la válvula de expansión. Su interior dispone de capas de lana de vidrio (filtro) y bolas cerámicas de zeolitas o silicagel (deshidratador). Puede incluir mirilla transparente y sensor de humedad. <span class=\"pag\">págs. 75-77</span>.</p>",
+     "texto": "Depósito cilíndrico metálico instalado en la tubería de alta presión entre el condensador y la válvula de expansión. Su interior dispone de un lecho deshidratador de silicagel y una malla de lana de vidrio. (págs. 75-76)",
+     "html": "<p>Depósito cilíndrico metálico instalado en la tubería de alta presión entre el condensador y la válvula de expansión. Su interior dispone de un lecho deshidratador de silicagel y una malla de lana de vidrio. <span class=\"pag\">págs. 75-76</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Principio de funcionamiento",
-     "texto": "El líquido del condensador entra lateralmente a una cámara, atraviesa el filtro de lana de vidrio (retiene virutas y residuos) y las bolas de silicagel (absorben entre 6 y 12 kg de agua por masa activa), saliendo filtrado y seco por el tubo central superior hacia la válvula de expansión. La zona gaseosa superior actúa como cámara de amortiguación para absorber los golpes de presión producidos al acoplarse el compresor a alto régimen. (págs. 76-77).",
-     "html": "<p>El líquido del condensador entra lateralmente a una cámara, atraviesa el filtro de lana de vidrio (retiene virutas y residuos) y las bolas de silicagel (absorben entre 6 y 12 kg de agua por masa activa), saliendo filtrado y seco por el tubo central superior hacia la válvula de expansión.\nLa zona gaseosa superior actúa como cámara de amortiguación para absorber los golpes de presión producidos al acoplarse el compresor a alto régimen. <span class=\"pag\">págs. 76-77</span>.</p>",
+     "texto": "El líquido saliente del condensador entra a la cámara superior. La lana de vidrio retiene las partículas de abrasión, mientras que las bolitas de silicagel absorben el agua en suspensión. La fase líquida limpia se deposita en la parte inferior y es enviada hacia la válvula de expansión. La cámara gaseosa superior amortigua las variaciones bruscas de presión originadas al acoplar el compresor. (págs. 75-77)",
+     "html": "<p>El líquido saliente del condensador entra a la cámara superior. La lana de vidrio retiene las partículas de abrasión, mientras que las bolitas de silicagel absorben el agua en suspensión. La fase líquida limpia se deposita en la parte inferior y es enviada hacia la válvula de expansión. La cámara gaseosa superior amortigua las variaciones bruscas de presión originadas al acoplar el compresor. <span class=\"pag\">págs. 75-77</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Valores de trabajo",
-     "texto": "Capacidad de absorción de agua: retiene entre 6 y 12 g (o kg según masa activa) de agua. (pág. 76).",
-     "html": "<p>Capacidad de absorción de agua: retiene entre 6 y 12 g (o kg según masa activa) de agua. <span class=\"pag\">pág. 76</span>.</p>",
+     "texto": "Capacidad de absorción del silicagel: de 6 a 12 kg (o gramos) de agua según la temperatura de trabajo. (pág. 76)",
+     "html": "<ul>\n<li>Capacidad de absorción del silicagel: de 6 a 12 kg (o gramos) de agua según la temperatura de trabajo. <span class=\"pag\">pág. 76</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Anomalías frecuentes",
-     "texto": "Saturación del agente deshidratante, colmatación de la lana de vidrio produciendo caída de presión (pre-expansión) y cambio de color del indicador de humedad. (págs. 77, 160).",
-     "html": "<p>Saturación del agente deshidratante, colmatación de la lana de vidrio produciendo caída de presión (pre-expansión) y cambio de color del indicador de humedad. <span class=\"pag\">págs. 77, 160</span>.</p>",
+     "texto": "Saturación de humedad del silicagel o colmatación de la lana de vidrio por restos de abrasión del compresor. (págs. 76-77)",
+     "html": "<p>Saturación de humedad del silicagel o colmatación de la lana de vidrio por restos de abrasión del compresor. <span class=\"pag\">págs. 76-77</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Comportamiento en avería",
-     "texto": "Formación de hielo en el cuerpo del filtro (diferencia de temperatura > 6 ºC entre entrada y salida), congelación de la válvula de expansión por agua libre o ácido en el circuito. (págs. 76, 160).",
-     "html": "<p>Formación de hielo en el cuerpo del filtro (diferencia de temperatura &gt; 6 ºC entre entrada y salida), congelación de la válvula de expansión por agua libre o ácido en el circuito. <span class=\"pag\">págs. 76, 160</span>.</p>",
+     "texto": "Fenómeno de pre-expansión en la tubería de salida del depósito (caída de temperatura previa) o congelación del agua en el orificio de la válvula de expansión. (págs. 76, 159)",
+     "html": "<p>Fenómeno de pre-expansión en la tubería de salida del depósito (caída de temperatura previa) o congelación del agua en el orificio de la válvula de expansión. <span class=\"pag\">págs. 76, 159</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Cómo comprobarlo",
-     "texto": "Medir la temperatura de la tubería a la entrada y a la salida del filtro: una diferencia mayor de 6 ºC indica obstrucción/pre-expansión y exige sustitución. (pág. 160).",
-     "html": "<p>Medir la temperatura de la tubería a la entrada y a la salida del filtro: una diferencia mayor de 6 ºC indica obstrucción/pre-expansión y exige sustitución. <span class=\"pag\">pág. 160</span>.</p>",
+     "texto": "Medir la temperatura del tubo a la entrada y a la salida del depósito con un termómetro de contacto (una caída de temperatura indica colmatación). (págs. 76, 159)",
+     "html": "<p>Medir la temperatura del tubo a la entrada y a la salida del depósito con un termómetro de contacto (una caída de temperatura indica colmatación). <span class=\"pag\">págs. 76, 159</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Mantenimiento",
-     "texto": "Sustitución obligatoria cada vez que se abre el circuito de aire acondicionado. El recambio nuevo debe mantenerse sellado hasta el momento exacto del montaje. (pág. 76).",
-     "html": "<p>Sustitución obligatoria cada vez que se abre el circuito de aire acondicionado. El recambio nuevo debe mantenerse sellado hasta el momento exacto del montaje. <span class=\"pag\">pág. 76</span>.</p>",
+     "texto": "Reemplazar obligatoriamente el depósito deshidratador cada vez que se abra el circuito o tras detectarse humedad en el sistema. (pág. 76)",
+     "html": "<p>Reemplazar obligatoriamente el depósito deshidratador cada vez que se abra el circuito o tras detectarse humedad en el sistema. <span class=\"pag\">pág. 76</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Estructura interna del depósito acumulador con la lana de vidrio, silicagel y zona de amortiguación gaseosa — Fuente: LA CLIMATIZACIÓN.pdf, pág. 75",
+     "html": "<ul>\n<li>Estructura interna del depósito acumulador con la lana de vidrio, silicagel y zona de amortiguación gaseosa — Fuente: LA CLIMATIZACIÓN.pdf, pág. 75</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -20571,22 +20789,22 @@
    "clave": "valvula-expansion",
    "seccion": "6. Expansión y lado de baja",
    "subgrupo": "Dispositivos de expansión",
-   "titulo": "Válvula de expansión monobloc",
+   "titulo": "Válvula de expansión termostática",
    "codigo": "",
-   "menu": "Válvula de expansión monobloc",
+   "menu": "Válvula de expansión termostática",
    "grupo": "Circuito frigorífico",
    "tipo": "elemento",
    "subtipo": "",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 78-81",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 77-81",
    "clase": "componente",
    "estado": "",
    "fusionadas": [],
    "variante": "",
    "area": "climatizacion",
    "sistema": "circuito-frigorifico",
-   "formaParteDe": "",
+   "formaParteDe": "circuito-frigorifico",
    "relacionados": [
     "evaporador",
     "filtro-deshidratador",
@@ -20594,65 +20812,65 @@
    ],
    "palabras": [
     "válvula de expansión",
-    "bloque de aluminio",
-    "sustancia termostática",
+    "bloque en H",
     "diafragma",
-    "muelle de regulación",
-    "bola"
+    "bola de regulación",
+    "muelle",
+    "paso calibrado"
    ],
    "apartados": [
     {
      "titulo": "Misión",
-     "texto": "Regular e inyectar el caudal exacto de refrigerante líquido al evaporador, provocando una caída brusca de presión que inicia su evaporación según la temperatura del gas que abandona el evaporador. (págs. 78-79).",
-     "html": "<p>Regular e inyectar el caudal exacto de refrigerante líquido al evaporador, provocando una caída brusca de presión que inicia su evaporación según la temperatura del gas que abandona el evaporador. <span class=\"pag\">págs. 78-79</span>.</p>",
+     "texto": "Regular el caudal de fluido frigorífico inyectado en el evaporador y provocar una brusca caída de presión que inicie la evaporación del líquido. (págs. 77-78)",
+     "html": "<p>Regular el caudal de fluido frigorífico inyectado en el evaporador y provocar una brusca caída de presión que inicie la evaporación del líquido. <span class=\"pag\">págs. 77-78</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Tipos y características",
-     "texto": "Válvula de expansión termostática de cuerpo prismático de aluminio (tipo bloque o monobloc). Contiene orificios de paso de alta y baja presión, cápsula termostática con diafragma, varilla de empuje, válvula de bola y muelle de regulación tarado de fábrica. (págs. 80-81).",
-     "html": "<p>Válvula de expansión termostática de cuerpo prismático de aluminio (tipo bloque o monobloc). Contiene orificios de paso de alta y baja presión, cápsula termostática con diafragma, varilla de empuje, válvula de bola y muelle de regulación tarado de fábrica. <span class=\"pag\">págs. 80-81</span>.</p>",
+     "texto": "Válvula monobloc (tipo bloque o en H) instalada en la entrada/salida del evaporador. Consta de cuerpo de aluminio, cabeza termostática con diafragma, varilla de empuje, platillo con bola y muelle de regulación tarado de fábrica. (págs. 79-80)",
+     "html": "<p>Válvula monobloc (tipo bloque o en H) instalada en la entrada/salida del evaporador. Consta de cuerpo de aluminio, cabeza termostática con diafragma, varilla de empuje, platillo con bola y muelle de regulación tarado de fábrica. <span class=\"pag\">págs. 79-80</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Principio de funcionamiento",
-     "texto": "Divide el circuito en alta y baja presión. El gas que sale del evaporador circula por la parte superior de la válvula en contacto térmico con el diafragma. Si la temperatura del gas de salida sube (alta demanda/evaporación completa), la sustancia termostática de la cápsula se dilata y empuja el diafragma. La varilla desplaza la bola en sentido de apertura venciendo el muelle de regulación, aumentando el caudal inyectado. (pág. 81). Si la temperatura del gas baja (exceso de líquido), la sustancia se contrae y el muelle de regulación desplaza la bola hacia el cierre, reduciendo el caudal inyectado. (pág. 81).",
-     "html": "<p>Divide el circuito en alta y baja presión.\nEl gas que sale del evaporador circula por la parte superior de la válvula en contacto térmico con el diafragma.</p>\n<ul>\n<li>Si la temperatura del gas de salida sube (alta demanda/evaporación completa), la sustancia termostática de la cápsula se dilata y empuja el diafragma. La varilla desplaza la bola en sentido de apertura venciendo el muelle de regulación, aumentando el caudal inyectado. <span class=\"pag\">pág. 81</span>.</li>\n<li>Si la temperatura del gas baja (exceso de líquido), la sustancia se contrae y el muelle de regulación desplaza la bola hacia el cierre, reduciendo el caudal inyectado. <span class=\"pag\">pág. 81</span>.</li>\n</ul>",
+     "texto": "Separa el lado de alta y baja presión. El diafragma de la cabeza térmica recibe en su cara superior la presión del gas de carga (proporcional a la temperatura a la salida del evaporador) y en su cara inferior la presión de baja del evaporador. Aumento de temperatura en la salida: El gas del cabezal se dilata, empuja el diafragma y la varilla vence al muelle abriendo la bola de paso para aumentar la inyección de refrigerante. Descenso de temperatura en la salida: El gas del cabezal se contrae y el muelle de regulación desplaza la bola cerrando parcialmente el paso de refrigerante. (págs. 79-81)",
+     "html": "<p>Separa el lado de alta y baja presión. El diafragma de la cabeza térmica recibe en su cara superior la presión del gas de carga (proporcional a la temperatura a la salida del evaporador) y en su cara inferior la presión de baja del evaporador. </p>\n<ul>\n<li><strong>Aumento de temperatura en la salida:</strong> El gas del cabezal se dilata, empuja el diafragma y la varilla vence al muelle abriendo la bola de paso para aumentar la inyección de refrigerante.</li>\n<li><strong>Descenso de temperatura en la salida:</strong> El gas del cabezal se contrae y el muelle de regulación desplaza la bola cerrando parcialmente el paso de refrigerante. <span class=\"pag\">págs. 79-81</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Valores de trabajo",
-     "texto": "Presión de entrada (alta): aprox. 16 bares (1,6 MPa) / 55 ºC. (págs. 81-82). Presión de salida (baja): aprox. 2 bares (0,2 MPa) / -1 ºC a -5 ºC. (págs. 81-82).",
-     "html": "<ul>\n<li>Presión de entrada (alta): aprox. 16 bares (1,6 MPa) / 55 ºC. <span class=\"pag\">págs. 81-82</span>.</li>\n<li>Presión de salida (baja): aprox. 2 bares (0,2 MPa) / -1 ºC a -5 ºC. <span class=\"pag\">págs. 81-82</span>.</li>\n</ul>",
+     "texto": "Fuerza del muelle regulador: ajustada y tarada de fábrica (prohibido alterar su reglaje). (pág. 80)",
+     "html": "<ul>\n<li>Fuerza del muelle regulador: ajustada y tarada de fábrica (prohibido alterar su reglaje). <span class=\"pag\">pág. 80</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Anomalías frecuentes",
-     "texto": "Obstrucción del orificio de bola por virutas o hielo, rotura del diafragma, o pérdida de la carga de la sustancia termostática. (págs. 76, 81, 271).",
-     "html": "<p>Obstrucción del orificio de bola por virutas o hielo, rotura del diafragma, o pérdida de la carga de la sustancia termostática. <span class=\"pag\">págs. 76, 81, 271</span>.</p>",
+     "texto": "Bloqueo mecánico de la bola por restos de suciedad o hielo, o pérdida de la carga de gas de la cabeza termostática. (págs. 79-80)",
+     "html": "<p>Bloqueo mecánico de la bola por restos de suciedad o hielo, o pérdida de la carga de gas de la cabeza termostática. <span class=\"pag\">págs. 79-80</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Comportamiento en avería",
-     "texto": "Bloqueada cerrada: presión de baja muy baja o en vacío, no enfría el habitáculo. (pág. 271). Bloqueada abierta: evaporador inundado, presión de baja alta y riesgo de golpe de líquido en el compresor. (págs. 61, 271).",
-     "html": "<ul>\n<li>Bloqueada cerrada: presión de baja muy baja o en vacío, no enfría el habitáculo. <span class=\"pag\">pág. 271</span>.</li>\n<li>Bloqueada abierta: evaporador inundado, presión de baja alta y riesgo de golpe de líquido en el compresor. <span class=\"pag\">págs. 61, 271</span>.</li>\n</ul>",
+     "texto": "Inyección deficiente de fluido con baja presión de baja (válvula bloqueada en cierre) o inundación de líquido al compresor (válvula bloqueada en apertura). (págs. 78-80)",
+     "html": "<p>Inyección deficiente de fluido con baja presión de baja (válvula bloqueada en cierre) o inundación de líquido al compresor (válvula bloqueada en apertura). <span class=\"pag\">págs. 78-80</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Cómo comprobarlo",
-     "texto": "Medir las presiones de alta y baja con manómetros y verificar que la baja presión se mantiene a aprox. 2 bares durante el funcionamiento. (págs. 82, 158).",
-     "html": "<p>Medir las presiones de alta y baja con manómetros y verificar que la baja presión se mantiene a aprox. 2 bares durante el funcionamiento. <span class=\"pag\">págs. 82, 158</span>.</p>",
+     "texto": "Comprobar la presión de baja con manómetros y verificar el grado de recalentamiento del gas a la salida del evaporador. (págs. 78-80, 158)",
+     "html": "<p>Comprobar la presión de baja con manómetros y verificar el grado de recalentamiento del gas a la salida del evaporador. <span class=\"pag\">págs. 78-80, 158</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Mantenimiento",
-     "texto": "Prohibido modificar el ajuste de fábrica del muelle de regulación. Reemplazar la válvula si se contamina con residuos tras la rotura de un compresor. (págs. 80, 271).",
-     "html": "<p>Prohibido modificar el ajuste de fábrica del muelle de regulación. Reemplazar la válvula si se contamina con residuos tras la rotura de un compresor. <span class=\"pag\">págs. 80, 271</span>.</p>",
+     "texto": "Prohibido manipular el tornillo de regulación interno o deformar la cápsula superior durante los trabajos de sustitución. (pág. 80)",
+     "html": "<p>Prohibido manipular el tornillo de regulación interno o deformar la cápsula superior durante los trabajos de sustitución. <span class=\"pag\">pág. 80</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Imágenes requeridas",
-     "texto": "Sección de la válvula de expansión de bloque con diafragma, varilla, muelle y bola — Fuente: LA CLIMATIZACIÓN.pdf, pág. 81",
-     "html": "<ul>\n<li>Sección de la válvula de expansión de bloque con diafragma, varilla, muelle y bola — Fuente: LA CLIMATIZACIÓN.pdf, pág. 81</li>\n</ul>",
+     "texto": "Sección de la válvula de expansión monobloc en H mostrando la cabeza térmica, diafragma, varilla de empuje y bola — Fuente: LA CLIMATIZACIÓN.pdf, pág. 79",
+     "html": "<ul>\n<li>Sección de la válvula de expansión monobloc en H mostrando la cabeza térmica, diafragma, varilla de empuje y bola — Fuente: LA CLIMATIZACIÓN.pdf, pág. 79</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -37155,6 +37373,91 @@
      "titulo": "Imágenes requeridas",
      "texto": "Ubicación y vías de presión A (cárter), B (alta presión) y C (baja presión) en la válvula reguladora N280 — Fuente: COMPRESOR__AC.PDF, pág. 7 (pág. 7). Posición del empujador de la válvula N280 en régimen de plena carga y en regulación descendente — Fuente: COMPRESOR__AC.PDF, pág. 8 y 9 (pág. 8, 9).",
      "html": "<ul>\n<li>Ubicación y vías de presión A (cárter), B (alta presión) y C (baja presión) en la válvula reguladora N280 — Fuente: COMPRESOR__AC.PDF, pág. 7 <span class=\"pag\">pág. 7</span>.</li>\n<li>Posición del empujador de la válvula N280 en régimen de plena carga y en regulación descendente — Fuente: COMPRESOR__AC.PDF, pág. 8 y 9 <span class=\"pag\">pág. 8, 9</span>.</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.valvula-reguladora-compresor.interna.la-climatizacion",
+   "nt": 827,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "valvula-reguladora-compresor-variable",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Válvula de regulación interna de cilindrada",
+   "codigo": "",
+   "menu": "Válvula de regulación interna de cilin",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LA CLIMATIZACIÓN.pdf, págs. 61-65",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "interna",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "compresor",
+   "relacionados": [
+    "compresor"
+   ],
+   "palabras": [
+    "válvula de regulación",
+    "cápsula elástica",
+    "presión de baja",
+    "presión de cárter",
+    "vástago y bola"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Gobernar la presión en el interior del cárter del compresor (P_i) en respuesta a las variaciones de la presión de baja (P_b) para ajustar mecánicamente la inclinación del plato oscilante. (págs. 61-62)",
+     "html": "<p>Gobernar la presión en el interior del cárter del compresor (P_i) en respuesta a las variaciones de la presión de baja (P_b) para ajustar mecánicamente la inclinación del plato oscilante. <span class=\"pag\">págs. 61-62</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Válvula de regulación neumática/mecánica integrada en la culata posterior del compresor, alojada en posición central entre los cilindros. (pág. 62)",
+     "html": "<p>Válvula de regulación neumática/mecánica integrada en la culata posterior del compresor, alojada en posición central entre los cilindros. <span class=\"pag\">pág. 62</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Consta de una cápsula elástica sensible a la baja presión, un vástago de empuje, una bola con muelle y un canal de comunicación. Aumento de demanda térmica (P_b elevada): La elevada presión de baja comprime la cápsula elástica, desplazando el vástago y la bola para abrir la descarga del cárter hacia la aspiración. La presión P_i desciende, vence la fuerza de los pistones y el plato oscilante se inclina al máximo (mayor carrera y caudal). (pág. 63) Descenso de demanda térmica (P_b reducida): La baja presión desciende y la cápsula elástica se dilata, permitiendo que la bola cierre el paso de descarga. Las fugas continuas de soplado de los pistones elevan la presión interna P_i, la cual empuja la cara posterior de los pistones reduciendo la inclinación del plato oscilante (menor carrera y caudal). (págs. 64-65)",
+     "html": "<p>Consta de una cápsula elástica sensible a la baja presión, un vástago de empuje, una bola con muelle y un canal de comunicación. </p>\n<ul>\n<li><strong>Aumento de demanda térmica (P_b elevada):</strong> La elevada presión de baja comprime la cápsula elástica, desplazando el vástago y la bola para abrir la descarga del cárter hacia la aspiración. La presión P_i desciende, vence la fuerza de los pistones y el plato oscilante se inclina al máximo (mayor carrera y caudal). <span class=\"pag\">pág. 63</span></li>\n<li><strong>Descenso de demanda térmica (P_b reducida):</strong> La baja presión desciende y la cápsula elástica se dilata, permitiendo que la bola cierre el paso de descarga. Las fugas continuas de soplado de los pistones elevan la presión interna P_i, la cual empuja la cara posterior de los pistones reduciendo la inclinación del plato oscilante (menor carrera y caudal). <span class=\"pag\">págs. 64-65</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Relación de presiones en equilibrio de regulación: P_i > P_b durante el funcionamiento normal. (pág. 58)",
+     "html": "<ul>\n<li>Relación de presiones en equilibrio de regulación: P_i &gt; P_b durante el funcionamiento normal. <span class=\"pag\">pág. 58</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Deformación permanente de la cápsula elástica o agarrotamiento del vástago por contaminación con humedad o partículas metálicas. (págs. 62-65)",
+     "html": "<p>Deformación permanente de la cápsula elástica o agarrotamiento del vástago por contaminación con humedad o partículas metálicas. <span class=\"pag\">págs. 62-65</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Incapacidad del compresor para adaptar el caudal de gas, provocando falta de enfriamiento a alto régimen o sobrepresión en baja. (págs. 63-65)",
+     "html": "<p>Incapacidad del compresor para adaptar el caudal de gas, provocando falta de enfriamiento a alto régimen o sobrepresión en baja. <span class=\"pag\">págs. 63-65</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Analizar la respuesta de la presión de baja al incrementar la velocidad del ventilador del habitáculo o cambiar la consigna de temperatura. (págs. 63-65)",
+     "html": "<p>Analizar la respuesta de la presión de baja al incrementar la velocidad del ventilador del habitáculo o cambiar la consigna de temperatura. <span class=\"pag\">págs. 63-65</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Sección interna de la válvula de regulación con indicación de la cápsula elástica, vástago, bola y pasajes de gas — Fuente: LA CLIMATIZACIÓN.pdf, pág. 62",
+     "html": "<ul>\n<li>Sección interna de la válvula de regulación con indicación de la cápsula elástica, vástago, bola y pasajes de gas — Fuente: LA CLIMATIZACIÓN.pdf, pág. 62</li>\n</ul>",
      "nivel": ""
     }
    ]

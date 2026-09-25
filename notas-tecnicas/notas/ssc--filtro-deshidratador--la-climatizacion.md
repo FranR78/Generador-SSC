@@ -11,40 +11,44 @@ grupo: "Circuito frigorífico"
 clave: filtro-deshidratador
 area: climatizacion
 sistema: "circuito-frigorifico"
-fuentes: "LA CLIMATIZACIÓN.pdf, págs. 75-77"
-relacionados: ["condensador", "valvula-expansion", "aceite-frigorifico"]
-palabras: ["filtro deshidratador", "silicagel", "zeolitas", "amortiguación de presión", "mirilla de carga"]
+forma_parte_de: circuito-frigorifico
+fuentes: "LA CLIMATIZACIÓN.pdf, págs. 74-77"
+relacionados: ["condensador", "valvula-expansion"]
+palabras: ["filtro deshidratador", "silicagel", "lana de vidrio", "amortiguación", "decantador", "mirilla de cristal"]
 ---
 
 ## Misión
 
-Almacenar una reserva de refrigerante líquido, retener la humedad del circuito, filtrar impurezas sólidas, amortiguar las oscilaciones de presión y permitir el control visual de la carga. (págs. 75-77).
+Almacenar la reserva de refrigerante líquido, filtrar impurezas sólidas, absorber químicamente la humedad del circuito y amortiguar los golpes de presión del compresor. (págs. 74-77)
 
 ## Tipos y características
 
-Recipiente cilíndrico metálico no desmontable instalado en el lado de alta presión entre el condensador y la válvula de expansión. Su interior dispone de capas de lana de vidrio (filtro) y bolas cerámicas de zeolitas o silicagel (deshidratador). Puede incluir mirilla transparente y sensor de humedad. (págs. 75-77).
+Depósito cilíndrico metálico instalado en la tubería de alta presión entre el condensador y la válvula de expansión. Su interior dispone de un lecho deshidratador de silicagel y una malla de lana de vidrio. (págs. 75-76)
 
 ## Principio de funcionamiento
 
-El líquido del condensador entra lateralmente a una cámara, atraviesa el filtro de lana de vidrio (retiene virutas y residuos) y las bolas de silicagel (absorben entre 6 y 12 kg de agua por masa activa), saliendo filtrado y seco por el tubo central superior hacia la válvula de expansión.
-La zona gaseosa superior actúa como cámara de amortiguación para absorber los golpes de presión producidos al acoplarse el compresor a alto régimen. (págs. 76-77).
+El líquido saliente del condensador entra a la cámara superior. La lana de vidrio retiene las partículas de abrasión, mientras que las bolitas de silicagel absorben el agua en suspensión. La fase líquida limpia se deposita en la parte inferior y es enviada hacia la válvula de expansión. La cámara gaseosa superior amortigua las variaciones bruscas de presión originadas al acoplar el compresor. (págs. 75-77)
 
 ## Valores de trabajo
 
-Capacidad de absorción de agua: retiene entre 6 y 12 g (o kg según masa activa) de agua. (pág. 76).
+- Capacidad de absorción del silicagel: de 6 a 12 kg (o gramos) de agua según la temperatura de trabajo. (pág. 76)
 
 ## Anomalías frecuentes
 
-Saturación del agente deshidratante, colmatación de la lana de vidrio produciendo caída de presión (pre-expansión) y cambio de color del indicador de humedad. (págs. 77, 160).
+Saturación de humedad del silicagel o colmatación de la lana de vidrio por restos de abrasión del compresor. (págs. 76-77)
 
 ## Comportamiento en avería
 
-Formación de hielo en el cuerpo del filtro (diferencia de temperatura > 6 ºC entre entrada y salida), congelación de la válvula de expansión por agua libre o ácido en el circuito. (págs. 76, 160).
+Fenómeno de pre-expansión en la tubería de salida del depósito (caída de temperatura previa) o congelación del agua en el orificio de la válvula de expansión. (págs. 76, 159)
 
 ## Cómo comprobarlo
 
-Medir la temperatura de la tubería a la entrada y a la salida del filtro: una diferencia mayor de 6 ºC indica obstrucción/pre-expansión y exige sustitución. (pág. 160).
+Medir la temperatura del tubo a la entrada y a la salida del depósito con un termómetro de contacto (una caída de temperatura indica colmatación). (págs. 76, 159)
 
 ## Mantenimiento
 
-Sustitución obligatoria cada vez que se abre el circuito de aire acondicionado. El recambio nuevo debe mantenerse sellado hasta el momento exacto del montaje. (pág. 76).
+Reemplazar obligatoriamente el depósito deshidratador cada vez que se abra el circuito o tras detectarse humedad en el sistema. (pág. 76)
+
+## Imágenes requeridas
+
+- Estructura interna del depósito acumulador con la lana de vidrio, silicagel y zona de amortiguación gaseosa — Fuente: LA CLIMATIZACIÓN.pdf, pág. 75

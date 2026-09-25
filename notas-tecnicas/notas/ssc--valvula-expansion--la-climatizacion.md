@@ -5,54 +5,52 @@ unidad: clima
 nt: 277
 tipo: elemento
 clase: componente
-titulo: "Válvula de expansión monobloc"
-menu: "Válvula de expansión monobloc"
+titulo: "Válvula de expansión termostática"
+menu: "Válvula de expansión termostática"
 grupo: "Circuito frigorífico"
 clave: valvula-expansion
 area: climatizacion
 sistema: "circuito-frigorifico"
-fuentes: "LA CLIMATIZACIÓN.pdf, págs. 78-81"
+forma_parte_de: circuito-frigorifico
+fuentes: "LA CLIMATIZACIÓN.pdf, págs. 77-81"
 relacionados: ["evaporador", "filtro-deshidratador", "compresor"]
-palabras: ["válvula de expansión", "bloque de aluminio", "sustancia termostática", "diafragma", "muelle de regulación", "bola"]
+palabras: ["válvula de expansión", "bloque en H", "diafragma", "bola de regulación", "muelle", "paso calibrado"]
 ---
 
 ## Misión
 
-Regular e inyectar el caudal exacto de refrigerante líquido al evaporador, provocando una caída brusca de presión que inicia su evaporación según la temperatura del gas que abandona el evaporador. (págs. 78-79).
+Regular el caudal de fluido frigorífico inyectado en el evaporador y provocar una brusca caída de presión que inicie la evaporación del líquido. (págs. 77-78)
 
 ## Tipos y características
 
-Válvula de expansión termostática de cuerpo prismático de aluminio (tipo bloque o monobloc). Contiene orificios de paso de alta y baja presión, cápsula termostática con diafragma, varilla de empuje, válvula de bola y muelle de regulación tarado de fábrica. (págs. 80-81).
+Válvula monobloc (tipo bloque o en H) instalada en la entrada/salida del evaporador. Consta de cuerpo de aluminio, cabeza termostática con diafragma, varilla de empuje, platillo con bola y muelle de regulación tarado de fábrica. (págs. 79-80)
 
 ## Principio de funcionamiento
 
-Divide el circuito en alta y baja presión.
-El gas que sale del evaporador circula por la parte superior de la válvula en contacto térmico con el diafragma.
-- Si la temperatura del gas de salida sube (alta demanda/evaporación completa), la sustancia termostática de la cápsula se dilata y empuja el diafragma. La varilla desplaza la bola en sentido de apertura venciendo el muelle de regulación, aumentando el caudal inyectado. (pág. 81).
-- Si la temperatura del gas baja (exceso de líquido), la sustancia se contrae y el muelle de regulación desplaza la bola hacia el cierre, reduciendo el caudal inyectado. (pág. 81).
+Separa el lado de alta y baja presión. El diafragma de la cabeza térmica recibe en su cara superior la presión del gas de carga (proporcional a la temperatura a la salida del evaporador) y en su cara inferior la presión de baja del evaporador. 
+- **Aumento de temperatura en la salida:** El gas del cabezal se dilata, empuja el diafragma y la varilla vence al muelle abriendo la bola de paso para aumentar la inyección de refrigerante.
+- **Descenso de temperatura en la salida:** El gas del cabezal se contrae y el muelle de regulación desplaza la bola cerrando parcialmente el paso de refrigerante. (págs. 79-81)
 
 ## Valores de trabajo
 
-- Presión de entrada (alta): aprox. 16 bares (1,6 MPa) / 55 ºC. (págs. 81-82).
-- Presión de salida (baja): aprox. 2 bares (0,2 MPa) / -1 ºC a -5 ºC. (págs. 81-82).
+- Fuerza del muelle regulador: ajustada y tarada de fábrica (prohibido alterar su reglaje). (pág. 80)
 
 ## Anomalías frecuentes
 
-Obstrucción del orificio de bola por virutas o hielo, rotura del diafragma, o pérdida de la carga de la sustancia termostática. (págs. 76, 81, 271).
+Bloqueo mecánico de la bola por restos de suciedad o hielo, o pérdida de la carga de gas de la cabeza termostática. (págs. 79-80)
 
 ## Comportamiento en avería
 
-- Bloqueada cerrada: presión de baja muy baja o en vacío, no enfría el habitáculo. (pág. 271).
-- Bloqueada abierta: evaporador inundado, presión de baja alta y riesgo de golpe de líquido en el compresor. (págs. 61, 271).
+Inyección deficiente de fluido con baja presión de baja (válvula bloqueada en cierre) o inundación de líquido al compresor (válvula bloqueada en apertura). (págs. 78-80)
 
 ## Cómo comprobarlo
 
-Medir las presiones de alta y baja con manómetros y verificar que la baja presión se mantiene a aprox. 2 bares durante el funcionamiento. (págs. 82, 158).
+Comprobar la presión de baja con manómetros y verificar el grado de recalentamiento del gas a la salida del evaporador. (págs. 78-80, 158)
 
 ## Mantenimiento
 
-Prohibido modificar el ajuste de fábrica del muelle de regulación. Reemplazar la válvula si se contamina con residuos tras la rotura de un compresor. (págs. 80, 271).
+Prohibido manipular el tornillo de regulación interno o deformar la cápsula superior durante los trabajos de sustitución. (pág. 80)
 
 ## Imágenes requeridas
 
-- Sección de la válvula de expansión de bloque con diafragma, varilla, muelle y bola — Fuente: LA CLIMATIZACIÓN.pdf, pág. 81
+- Sección de la válvula de expansión monobloc en H mostrando la cabeza térmica, diafragma, varilla de empuje y bola — Fuente: LA CLIMATIZACIÓN.pdf, pág. 79
