@@ -1,5 +1,5 @@
 {
- "generado": "2026-09-24",
+ "generado": "2026-09-25",
  "huecos": [
   {
    "nombre": "NT4_01",
@@ -3114,6 +3114,14 @@
    "hecha": false
   },
   {
+   "nombre": "NT656_01",
+   "nt": 656,
+   "titulo": "Circuito frigorífico",
+   "seccion": "2. Fundamentos",
+   "descripcion": "Esquema del circuito frigorífico con la ubicación del compresor, condensador, filtro deshidratador, válvula de expansión, transmisor de presión, evaporador y silenciador — Fuente: CIRCUITO FRIGORÍFICO.pdf, pág. 7 (pág. 7).",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -3138,7 +3146,7 @@
    "hecha": false
   }
  ],
- "total": 647,
+ "total": 654,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -6854,6 +6862,72 @@
    ]
   },
   {
+   "id": "ssc.ciclo-frigorifico.circuito-frigorifico",
+   "nt": 656,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ciclo-frigorifico",
+   "seccion": "2. Fundamentos",
+   "subgrupo": "",
+   "titulo": "Circuito frigorífico",
+   "codigo": "",
+   "menu": "Circuito frigorífico",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "CIRCUITO FRIGORÍFICO.pdf, págs. 7",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "filtro-deshidratador",
+    "valvula-expansion",
+    "evaporador",
+    "silenciador",
+    "refrigerante-r134a"
+   ],
+   "palabras": [
+    "autoclima",
+    "aire acondicionado manual",
+    "alta presion",
+    "baja presion"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Circuito frigorífico montado en el autoclima, idéntico al utilizado en el sistema de aire acondicionado de accionamiento manual (pág. 7).",
+     "html": "<p>Circuito frigorífico montado en el autoclima, idéntico al utilizado en el sistema de aire acondicionado de accionamiento manual <span class=\"pag\">pág. 7</span>.</p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Circuito cerrado de climatización estructurado en una zona de alta presión y una zona de baja presión para el acondicionamiento del aire (pág. 7).",
+     "html": "<p>Circuito cerrado de climatización estructurado en una zona de alta presión y una zona de baja presión para el acondicionamiento del aire <span class=\"pag\">pág. 7</span>.</p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El circuito está formado por los siguientes elementos: Condensador : ubicado por delante del radiador del líquido refrigerante del motor (pág. 7). Filtro deshidratador : retiene la humedad, filtra residuos de abrasión y evita la formación de burbujas (pág. 7). Válvula de expansión : controla la presión y el caudal del agente frigorífico (pág. 7). Junto a ella, en el circuito de alta presión, se monta el conmutador de presión F129 o el transmisor electrónico G65 según la motorización (pág. 7). Evaporador : ubicado en la unidad climática, donde se produce la expansión e intercambio térmico con el aire de entrada al habitáculo (pág. 7). Compresor : genera la presión del circuito; es de tipo autorregulado con 7 cilindros, accionado por correa Poly V y acoplamiento magnético (pág. 7). Silenciador : montado en el circuito de baja presión, cerca del compresor, entre la válvula de expansión y el compresor (pág. 7).",
+     "html": "<p>El circuito está formado por los siguientes elementos:</p>\n<ul>\n<li><strong>Condensador</strong>: ubicado por delante del radiador del líquido refrigerante del motor <span class=\"pag\">pág. 7</span>.</li>\n<li><strong>Filtro deshidratador</strong>: retiene la humedad, filtra residuos de abrasión y evita la formación de burbujas <span class=\"pag\">pág. 7</span>.</li>\n<li><strong>Válvula de expansión</strong>: controla la presión y el caudal del agente frigorífico <span class=\"pag\">pág. 7</span>. Junto a ella, en el circuito de alta presión, se monta el conmutador de presión F129 o el transmisor electrónico G65 según la motorización <span class=\"pag\">pág. 7</span>.</li>\n<li><strong>Evaporador</strong>: ubicado en la unidad climática, donde se produce la expansión e intercambio térmico con el aire de entrada al habitáculo <span class=\"pag\">pág. 7</span>.</li>\n<li><strong>Compresor</strong>: genera la presión del circuito; es de tipo autorregulado con 7 cilindros, accionado por correa Poly V y acoplamiento magnético <span class=\"pag\">pág. 7</span>.</li>\n<li><strong>Silenciador</strong>: montado en el circuito de baja presión, cerca del compresor, entre la válvula de expansión y el compresor <span class=\"pag\">pág. 7</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Carga de agente frigorífico R134a: 750-50 gramos en el circuito (pág. 7).",
+     "html": "<p>Carga de agente frigorífico R134a: 750-50 gramos en el circuito <span class=\"pag\">pág. 7</span>.</p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del circuito frigorífico con la ubicación del compresor, condensador, filtro deshidratador, válvula de expansión, transmisor de presión, evaporador y silenciador — Fuente: CIRCUITO FRIGORÍFICO.pdf, pág. 7 (pág. 7).",
+     "html": "<ul>\n<li>Esquema del circuito frigorífico con la ubicación del compresor, condensador, filtro deshidratador, válvula de expansión, transmisor de presión, evaporador y silenciador — Fuente: CIRCUITO FRIGORÍFICO.pdf, pág. 7 <span class=\"pag\">pág. 7</span>.</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.refrigerante-r134a.208-climatizadores-en-los-vehic",
    "nt": 541,
    "modulo": "ssc",
@@ -6989,6 +7063,52 @@
      "titulo": "Riesgos y normativa",
      "texto": "Riesgo de congelaciones locales en la piel al contacto con líquido (-26,5 ºC). Riesgo de asfixia por desplazamiento de oxígeno en espacios cerrados o fosos. Prohibición de fumar durante su manipulación. (págs. 11-12)",
      "html": "<p>Riesgo de congelaciones locales en la piel al contacto con líquido (-26,5 ºC). Riesgo de asfixia por desplazamiento de oxígeno en espacios cerrados o fosos. Prohibición de fumar durante su manipulación. <span class=\"pag\">págs. 11-12</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.refrigerante-r134a.circuito-frigorifico",
+   "nt": 662,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "refrigerante-r134a",
+   "seccion": "3. Fluidos",
+   "subgrupo": "",
+   "titulo": "Agente frigorífico R134a",
+   "codigo": "",
+   "menu": "Agente frigorífico R134a",
+   "grupo": "Fluidos frigoríficos",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "CIRCUITO FRIGORÍFICO.pdf, págs. 7",
+   "clase": "fluido",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "fluidos-frigorificos",
+   "formaParteDe": "",
+   "relacionados": [
+    "ciclo-frigorifico"
+   ],
+   "palabras": [
+    "agente frigorífico",
+    "R134a",
+    "carga",
+    "gramos"
+   ],
+   "apartados": [
+    {
+     "titulo": "Designación y norma",
+     "texto": "Agente frigorífico del tipo R134a (pág. 7).",
+     "html": "<p>Agente frigorífico del tipo R134a <span class=\"pag\">pág. 7</span>.</p>"
+    },
+    {
+     "titulo": "Dónde se usa y cantidades",
+     "texto": "Se utiliza en el circuito frigorífico del autoclima con una carga de 750-50 gramos (pág. 7).",
+     "html": "<p>Se utiliza en el circuito frigorífico del autoclima con una carga de 750-50 gramos <span class=\"pag\">pág. 7</span>.</p>"
     }
    ]
   },
@@ -10500,6 +10620,65 @@
    ]
   },
   {
+   "id": "ssc.compresor.autorregulado-7-cilindros.circuito-frigorifico",
+   "nt": 660,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "compresor",
+   "seccion": "4. El compresor",
+   "subgrupo": "",
+   "titulo": "Compresor",
+   "codigo": "",
+   "menu": "Compresor",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "CIRCUITO FRIGORÍFICO.pdf, págs. 7",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "autorregulado-7-cilindros",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "ciclo-frigorifico",
+   "relacionados": [
+    "silenciador",
+    "ciclo-frigorifico"
+   ],
+   "palabras": [
+    "autorregulado",
+    "7 cilindros",
+    "correa Poly V",
+    "acoplamiento magnético",
+    "válvula de seguridad",
+    "44 bares"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Generar la presión necesaria en el circuito frigorífico (pág. 7).",
+     "html": "<p>Generar la presión necesaria en el circuito frigorífico <span class=\"pag\">pág. 7</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Compresor autorregulado de 7 cilindros (pág. 7). Arrastre realizado mediante correa Poly V y acoplamiento magnético (pág. 7). Cuenta con una válvula de seguridad tarada a 44 bares (pág. 7).",
+     "html": "<ul>\n<li>Compresor autorregulado de 7 cilindros <span class=\"pag\">pág. 7</span>.</li>\n<li>Arrastre realizado mediante correa Poly V y acoplamiento magnético <span class=\"pag\">pág. 7</span>.</li>\n<li>Cuenta con una válvula de seguridad tarada a 44 bares <span class=\"pag\">pág. 7</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El acoplamiento magnético se activa por la solicitud del usuario o por la unidad de control del autoclima (pág. 7).",
+     "html": "<p>El acoplamiento magnético se activa por la solicitud del usuario o por la unidad de control del autoclima <span class=\"pag\">pág. 7</span>.</p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Presión de tarado de la válvula de seguridad: 44 bares (pág. 7).",
+     "html": "<p>Presión de tarado de la válvula de seguridad: 44 bares <span class=\"pag\">pág. 7</span>.</p>"
+    }
+   ]
+  },
+  {
    "id": "ssc.embrague-compresor.6-compresores",
    "nt": 44,
    "modulo": "ssc",
@@ -13258,6 +13437,48 @@
    ]
   },
   {
+   "id": "ssc.filtro-deshidratador.circuito-frigorifico",
+   "nt": 657,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "filtro-deshidratador-mirilla",
+   "seccion": "5. Lado de alta",
+   "subgrupo": "",
+   "titulo": "Filtro deshidratador",
+   "codigo": "",
+   "menu": "Filtro deshidratador",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "CIRCUITO FRIGORÍFICO.pdf, págs. 7",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "ciclo-frigorifico",
+   "relacionados": [
+    "valvula-expansion",
+    "refrigerante-r134a"
+   ],
+   "palabras": [
+    "humedad",
+    "residuos",
+    "abrasión",
+    "burbujas"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Retener la humedad, filtrar los residuos procedentes de la abrasión y evitar que se produzcan burbujas en el circuito frigorífico (pág. 7).",
+     "html": "<p>Retener la humedad, filtrar los residuos procedentes de la abrasión y evitar que se produzcan burbujas en el circuito frigorífico <span class=\"pag\">pág. 7</span>.</p>"
+    }
+   ]
+  },
+  {
    "id": "ssc.valvula-expansion.2-introduccion-a-la-refrigeracion",
    "nt": 15,
    "modulo": "ssc",
@@ -13977,6 +14198,54 @@
      "titulo": "Imágenes requeridas",
      "texto": "Detalle en corte de la válvula de expansión monobloque con diafragma interno, varilla de émbolo y muelle — Fuente: CLIMATIZADOR MD FRAN.docx, pág. 11",
      "html": "<ul>\n<li>Detalle en corte de la válvula de expansión monobloque con diafragma interno, varilla de émbolo y muelle — Fuente: CLIMATIZADOR MD FRAN.docx, pág. 11</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.valvula-expansion.circuito-frigorifico",
+   "nt": 658,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "valvula-expansion",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "Dispositivos de expansión",
+   "titulo": "Válvula de expansión",
+   "codigo": "",
+   "menu": "Válvula de expansión",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "CIRCUITO FRIGORÍFICO.pdf, págs. 7",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "ciclo-frigorifico",
+   "relacionados": [
+    "evaporador",
+    "silenciador",
+    "ciclo-frigorifico"
+   ],
+   "palabras": [
+    "presión",
+    "caudal",
+    "agente frigorífico",
+    "alta presión"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Controlar la presión y el caudal del agente frigorífico dentro del circuito (pág. 7).",
+     "html": "<p>Controlar la presión y el caudal del agente frigorífico dentro del circuito <span class=\"pag\">pág. 7</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Se ubica en el circuito de alta presión, junto a la cual se monta el conmutador de presión F129 o el transmisor electrónico G65 según motorización (pág. 7).",
+     "html": "<p>Se ubica en el circuito de alta presión, junto a la cual se monta el conmutador de presión F129 o el transmisor electrónico G65 según motorización <span class=\"pag\">pág. 7</span>.</p>"
     }
    ]
   },
@@ -14811,6 +15080,53 @@
      "titulo": "Imágenes requeridas",
      "texto": "Módulo del evaporador montado en el interior de la caja climática con aletas de condensación — Fuente: CLIMATIZADOR MD FRAN.docx, pág. 11",
      "html": "<ul>\n<li>Módulo del evaporador montado en el interior de la caja climática con aletas de condensación — Fuente: CLIMATIZADOR MD FRAN.docx, pág. 11</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.evaporador.circuito-frigorifico",
+   "nt": 659,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "evaporador",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "",
+   "titulo": "Evaporador",
+   "codigo": "",
+   "menu": "Evaporador",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "CIRCUITO FRIGORÍFICO.pdf, págs. 7",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "ciclo-frigorifico",
+   "relacionados": [
+    "valvula-expansion",
+    "ciclo-frigorifico"
+   ],
+   "palabras": [
+    "unidad climática",
+    "expansión",
+    "intercambio de calor",
+    "habitáculo"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Producir la expansión del agente frigorífico y dar lugar al intercambio de calor entre el agente frigorífico y el aire de entrada al habitáculo (pág. 7).",
+     "html": "<p>Producir la expansión del agente frigorífico y dar lugar al intercambio de calor entre el agente frigorífico y el aire de entrada al habitáculo <span class=\"pag\">pág. 7</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Se encuentra ubicado en la unidad climática (pág. 7).",
+     "html": "<p>Se encuentra ubicado en la unidad climática <span class=\"pag\">pág. 7</span>.</p>"
     }
    ]
   },
@@ -48411,6 +48727,53 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema del conmutador para testigo de aviso de temperatura del líquido refrigerante — Fuente: Conmutadores Seguridad Estrangulador.pdf, pág. 39",
      "html": "<ul>\n<li>Esquema del conmutador para testigo de aviso de temperatura del líquido refrigerante — Fuente: Conmutadores Seguridad Estrangulador.pdf, pág. 39</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.silenciador.circuito-frigorifico",
+   "nt": 661,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "silenciador",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Silenciador",
+   "codigo": "",
+   "menu": "Silenciador",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "CIRCUITO FRIGORÍFICO.pdf, págs. 7",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "ciclo-frigorifico",
+   "relacionados": [
+    "compresor",
+    "valvula-expansion"
+   ],
+   "palabras": [
+    "baja presión",
+    "ondas de presión",
+    "ruido",
+    "amortiguar"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Amortiguar el ruido producido por las ondas de presión entre la válvula de expansión y el compresor (pág. 7).",
+     "html": "<p>Amortiguar el ruido producido por las ondas de presión entre la válvula de expansión y el compresor <span class=\"pag\">pág. 7</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Ubicado en el circuito de baja presión, cerca del compresor (pág. 7).",
+     "html": "<p>Ubicado en el circuito de baja presión, cerca del compresor <span class=\"pag\">pág. 7</span>.</p>"
     }
    ]
   },
