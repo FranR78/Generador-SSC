@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">760 notas · 25/09/2026</p>
+  <p class="sidebar-meta">761 notas · 25/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -626,6 +626,8 @@
     <li><a href="#nt766">NT766 · Componentes del climatizador en el hab</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
     <li><a href="#nt767">NT767 · Componentes del climatizador e G65</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Distribución de aire</span></li>
+    <li><a href="#nt769">NT769 · Comprobación de la colmatación del fil</a></li>
   </ul>
 </nav>
 
@@ -37635,8 +37637,97 @@ En la versión de nueva generación, ha sido revisada técnicamente y adaptada e
     </div>
   </section>
 
+  <section id="nt769" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 769 <span class="subtipo">Procedimiento</span><span class="fusionado">Valeo</span></div>
+    <div class="nota-body proceso">
+      <h1>Comprobación de la colmatación del filtro de habitáculo con Airtest</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Diagnosticar de forma rápida y objetiva el grado de colmatación del filtro del habitáculo midiendo el caudal de aire de entrada al habitáculo, determinando si es necesaria su sustitución sin necesidad de desmontar el filtro ni abrir el capó del vehículo. (pág. 1)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Verificar que el modelo de vehículo a diagnosticar está catalogado en la Tabla de Interpretación de Medidas del equipo. (pág. 1)</li>
+<li>Sentarse en el asiento del conductor, abrir el difusor de aire frontal indicado en la tabla según el modelo de vehículo y cerrar totalmente el resto de difusores y canales de ventilación. (pág. 1, 2)</li>
+<li>Colocar el motor del vehículo en marcha y a temperatura de servicio, estabilizando el régimen a 1.500 rpm. (pág. 2)</li>
+<li>Ajustar el sistema de ventilación del vehículo: seleccionar salida de aire frontal, mando de calefacción al mínimo (frío), entrada de aire reciclado desconectada, aire acondicionado desconectado y mando de la velocidad de ventilación al máximo. (pág. 2)</li>
+</ul>
+<p>(pág. 3)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <ul>
+<li>Medidor de caudal Airtest. (pág. 1)</li>
+<li>Tubo de conexión al racor "+". (pág. 2)</li>
+<li>Canalizador de acoplamiento al difusor. (pág. 2)</li>
+<li>Tabla de Interpretación de Medidas (ábaco de lectura por vehículo). (pág. 1, 2)</li>
+</ul>
+<p>(pág. 2)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Puesta a cero automática del aparato: 0,0 (+/- 0,2). (pág. 2)</li>
+<li>Régimen de giro del motor para la prueba: 1.500 rpm. (pág. 2)</li>
+<li>Código de color de la escala del ábaco:<ul>
+<li>Zona Roja: Filtro colmatado / saturado.</li>
+<li>Zona Ámbar: Filtro parcialmente colmatado.</li>
+<li>Zona Verde: Filtro correcto. (pág. 3)</li>
+</ul>
+</li>
+<li>Causas probables si tras montar un filtro nuevo el valor continúa fuera de la zona verde: funcionamiento incorrecto del impulsor de aire, bloqueo de las mariposas de distribución de aire, fuga en los conductos de aire o bloqueo de la mariposa de mezcla. (pág. 4)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Efectuar una comprobación final del valor de caudal tras instalar el filtro de habitáculo nuevo, asegurando que la lectura obtenida se sitúa dentro de la zona verde del ábaco. (pág. 3)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <ul>
+<li>Seguir de forma exacta las instrucciones de utilización del equipo. (pág. 4)</li>
+<li>No obstruir los racores "+" y "-" al poner en marcha el aparato. (pág. 4)</li>
+<li>Verificar siempre que la pantalla del Airtest indica cero antes de iniciar la medición. (pág. 4)</li>
+<li>Si se observa presencia de polvo en el habitáculo con un resultado en zona verde, inspeccionar si el filtro no está colocado o si se encuentra perforado. (pág. 4)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Pasos</div>
+        <ol>
+<li>Comprobar que el vehículo se encuentra registrado en la Tabla de Interpretación de Medidas. (pág. 1)</li>
+<li>Sentarse en el asiento del conductor, abrir el difusor frontal indicado en la tabla y cerrar el resto de canales de ventilación. (pág. 2)</li>
+<li>Conectar el tubo en el racor "+" del aparato Airtest. (pág. 2)</li>
+<li>Pulsar el botón "ON" para encender el equipo y comprobar que el indicador se pone automáticamente a cero (+/- 0,2). (pág. 2)</li>
+<li>Poner el motor en marcha. (pág. 2)</li>
+<li>Seleccionar salida de aire frontal, calefacción al mínimo, recirculación desconectada, aire acondicionado apagado y ventilación al máximo. (pág. 2)</li>
+<li>Estando el motor caliente, mantener estabilizado el régimen a 1.500 rpm. (pág. 2)</li>
+<li>Aplicar el canalizador sobre el difusor seleccionado. (pág. 2)</li>
+<li>Presionar el canalizador contra el difusor y anotar el valor numérico mostrado en el indicador. (pág. 2)</li>
+<li>Buscar en la Tabla de Interpretación de Medidas la correspondencia del valor obtenido para el vehículo diagnosticado. (pág. 2)</li>
+<li>Interpretar el resultado según el código de colores:
+        - ROJO: filtro colmatado; realizar la sustitución inmediata del filtro.
+        - ÁMBAR: filtro parcialmente colmatado; aconsejar la sustitución al cliente.
+        - VERDE: filtro correcto en buen estado. (pág. 3)</li>
+<li>Si el resultado es rojo o ámbar, sustituir el filtro usado por un filtro nuevo siguiendo sus instrucciones de montaje. (pág. 3)</li>
+<li>Repetir la medición con el filtro nuevo montado para verificar que el valor pasa a situarse en la zona verde. (pág. 3)</li>
+</ol>
+<p>(pág. 3)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT769_01</code> Configuración de los mandos de calefacción y ventilación del vehículo para la medición con Airtest — Fuente: EL AIRTEST.PDF, pág. 3</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT769_02</code> Tabla de interpretación de mediciones del Airtest y esquemas de difusores frontales — Fuente: EL AIRTEST.PDF, pág. 2</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">EL AIRTEST.PDF, págs. 1-4</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    760 notas técnicas · generado el 25/09/2026.
+    761 notas técnicas · generado el 25/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 

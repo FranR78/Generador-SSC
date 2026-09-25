@@ -3978,6 +3978,22 @@
    "hecha": false
   },
   {
+   "nombre": "NT769_01",
+   "nt": 769,
+   "titulo": "Comprobación de la colmatación del filtro de habitáculo con Airtest",
+   "seccion": "Por ubicar",
+   "descripcion": "Configuración de los mandos de calefacción y ventilación del vehículo para la medición con Airtest — Fuente: EL AIRTEST.PDF, pág. 3",
+   "hecha": false
+  },
+  {
+   "nombre": "NT769_02",
+   "nt": 769,
+   "titulo": "Comprobación de la colmatación del filtro de habitáculo con Airtest",
+   "seccion": "Por ubicar",
+   "descripcion": "Tabla de interpretación de mediciones del Airtest y esquemas de difusores frontales — Fuente: EL AIRTEST.PDF, pág. 2",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -4002,7 +4018,7 @@
    "hecha": false
   }
  ],
- "total": 760,
+ "total": 761,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -56791,6 +56807,85 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema de ubicación de los componentes del climatizador en el vano motor (referencia E87-0133) — Fuente: despiece4 clima ibizaIII ASY.pdf, pág. 1",
      "html": "<ul>\n<li>Esquema de ubicación de los componentes del climatizador en el vano motor (referencia E87-0133) — Fuente: despiece4 clima ibizaIII ASY.pdf, pág. 1</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.comprobacion-colmatacion-filtro-airtest.el-airtest",
+   "nt": 769,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "comprobacion-colmatacion-filtro-airtest",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Comprobación de la colmatación del filtro de habitáculo con Airtest",
+   "codigo": "",
+   "menu": "Comprobación de la colmatación del fil",
+   "grupo": "Distribución de aire",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "EL AIRTEST.PDF, págs. 1-4",
+   "clase": "procedimiento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "",
+   "relacionados": [
+    "filtro-habitaculo",
+    "ventilador-habitaculo",
+    "distribucion-aire"
+   ],
+   "palabras": [
+    "Airtest",
+    "colmatación",
+    "caudal de aire",
+    "difusor frontal",
+    "tabla de interpretación"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Diagnosticar de forma rápida y objetiva el grado de colmatación del filtro del habitáculo midiendo el caudal de aire de entrada al habitáculo, determinando si es necesaria su sustitución sin necesidad de desmontar el filtro ni abrir el capó del vehículo. (pág. 1)",
+     "html": "<p>Diagnosticar de forma rápida y objetiva el grado de colmatación del filtro del habitáculo midiendo el caudal de aire de entrada al habitáculo, determinando si es necesaria su sustitución sin necesidad de desmontar el filtro ni abrir el capó del vehículo. <span class=\"pag\">pág. 1</span></p>"
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Verificar que el modelo de vehículo a diagnosticar está catalogado en la Tabla de Interpretación de Medidas del equipo. (pág. 1) Sentarse en el asiento del conductor, abrir el difusor de aire frontal indicado en la tabla según el modelo de vehículo y cerrar totalmente el resto de difusores y canales de ventilación. (pág. 1, 2) Colocar el motor del vehículo en marcha y a temperatura de servicio, estabilizando el régimen a 1.500 rpm. (pág. 2) Ajustar el sistema de ventilación del vehículo: seleccionar salida de aire frontal, mando de calefacción al mínimo (frío), entrada de aire reciclado desconectada, aire acondicionado desconectado y mando de la velocidad de ventilación al máximo. (pág. 2) (pág. 3)",
+     "html": "<ul>\n<li>Verificar que el modelo de vehículo a diagnosticar está catalogado en la Tabla de Interpretación de Medidas del equipo. <span class=\"pag\">pág. 1</span></li>\n<li>Sentarse en el asiento del conductor, abrir el difusor de aire frontal indicado en la tabla según el modelo de vehículo y cerrar totalmente el resto de difusores y canales de ventilación. <span class=\"pag\">pág. 1, 2</span></li>\n<li>Colocar el motor del vehículo en marcha y a temperatura de servicio, estabilizando el régimen a 1.500 rpm. <span class=\"pag\">pág. 2</span></li>\n<li>Ajustar el sistema de ventilación del vehículo: seleccionar salida de aire frontal, mando de calefacción al mínimo (frío), entrada de aire reciclado desconectada, aire acondicionado desconectado y mando de la velocidad de ventilación al máximo. <span class=\"pag\">pág. 2</span></li>\n</ul>\n<p> <span class=\"pag\">pág. 3</span></p>"
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Medidor de caudal Airtest. (pág. 1) Tubo de conexión al racor \"+\". (pág. 2) Canalizador de acoplamiento al difusor. (pág. 2) Tabla de Interpretación de Medidas (ábaco de lectura por vehículo). (pág. 1, 2) (pág. 2)",
+     "html": "<ul>\n<li>Medidor de caudal Airtest. <span class=\"pag\">pág. 1</span></li>\n<li>Tubo de conexión al racor \"+\". <span class=\"pag\">pág. 2</span></li>\n<li>Canalizador de acoplamiento al difusor. <span class=\"pag\">pág. 2</span></li>\n<li>Tabla de Interpretación de Medidas (ábaco de lectura por vehículo). <span class=\"pag\">pág. 1, 2</span></li>\n</ul>\n<p> <span class=\"pag\">pág. 2</span></p>"
+    },
+    {
+     "titulo": "Pasos",
+     "texto": "Comprobar que el vehículo se encuentra registrado en la Tabla de Interpretación de Medidas. (pág. 1) Sentarse en el asiento del conductor, abrir el difusor frontal indicado en la tabla y cerrar el resto de canales de ventilación. (pág. 2) Conectar el tubo en el racor \"+\" del aparato Airtest. (pág. 2) Pulsar el botón \"ON\" para encender el equipo y comprobar que el indicador se pone automáticamente a cero (+/- 0,2). (pág. 2) Poner el motor en marcha. (pág. 2) Seleccionar salida de aire frontal, calefacción al mínimo, recirculación desconectada, aire acondicionado apagado y ventilación al máximo. (pág. 2) Estando el motor caliente, mantener estabilizado el régimen a 1.500 rpm. (pág. 2) Aplicar el canalizador sobre el difusor seleccionado. (pág. 2) Presionar el canalizador contra el difusor y anotar el valor numérico mostrado en el indicador. (pág. 2) Buscar en la Tabla de Interpretación de Medidas la correspondencia del valor obtenido para el vehículo diagnosticado. (pág. 2) Interpretar el resultado según el código de colores: - ROJO: filtro colmatado; realizar la sustitución inmediata del filtro. - ÁMBAR: filtro parcialmente colmatado; aconsejar la sustitución al cliente. - VERDE: filtro correcto en buen estado. (pág. 3) Si el resultado es rojo o ámbar, sustituir el filtro usado por un filtro nuevo siguiendo sus instrucciones de montaje. (pág. 3) Repetir la medición con el filtro nuevo montado para verificar que el valor pasa a situarse en la zona verde. (pág. 3) (pág. 3)",
+     "html": "<ol>\n<li>Comprobar que el vehículo se encuentra registrado en la Tabla de Interpretación de Medidas. <span class=\"pag\">pág. 1</span></li>\n<li>Sentarse en el asiento del conductor, abrir el difusor frontal indicado en la tabla y cerrar el resto de canales de ventilación. <span class=\"pag\">pág. 2</span></li>\n<li>Conectar el tubo en el racor \"+\" del aparato Airtest. <span class=\"pag\">pág. 2</span></li>\n<li>Pulsar el botón \"ON\" para encender el equipo y comprobar que el indicador se pone automáticamente a cero (+/- 0,2). <span class=\"pag\">pág. 2</span></li>\n<li>Poner el motor en marcha. <span class=\"pag\">pág. 2</span></li>\n<li>Seleccionar salida de aire frontal, calefacción al mínimo, recirculación desconectada, aire acondicionado apagado y ventilación al máximo. <span class=\"pag\">pág. 2</span></li>\n<li>Estando el motor caliente, mantener estabilizado el régimen a 1.500 rpm. <span class=\"pag\">pág. 2</span></li>\n<li>Aplicar el canalizador sobre el difusor seleccionado. <span class=\"pag\">pág. 2</span></li>\n<li>Presionar el canalizador contra el difusor y anotar el valor numérico mostrado en el indicador. <span class=\"pag\">pág. 2</span></li>\n<li>Buscar en la Tabla de Interpretación de Medidas la correspondencia del valor obtenido para el vehículo diagnosticado. <span class=\"pag\">pág. 2</span></li>\n<li>Interpretar el resultado según el código de colores:\n        - ROJO: filtro colmatado; realizar la sustitución inmediata del filtro.\n        - ÁMBAR: filtro parcialmente colmatado; aconsejar la sustitución al cliente.\n        - VERDE: filtro correcto en buen estado. <span class=\"pag\">pág. 3</span></li>\n<li>Si el resultado es rojo o ámbar, sustituir el filtro usado por un filtro nuevo siguiendo sus instrucciones de montaje. <span class=\"pag\">pág. 3</span></li>\n<li>Repetir la medición con el filtro nuevo montado para verificar que el valor pasa a situarse en la zona verde. <span class=\"pag\">pág. 3</span></li>\n</ol>\n<p> <span class=\"pag\">pág. 3</span></p>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Puesta a cero automática del aparato: 0,0 (+/- 0,2). (pág. 2) Régimen de giro del motor para la prueba: 1.500 rpm. (pág. 2) Código de color de la escala del ábaco: Zona Roja: Filtro colmatado / saturado. Zona Ámbar: Filtro parcialmente colmatado. Zona Verde: Filtro correcto. (pág. 3) Causas probables si tras montar un filtro nuevo el valor continúa fuera de la zona verde: funcionamiento incorrecto del impulsor de aire, bloqueo de las mariposas de distribución de aire, fuga en los conductos de aire o bloqueo de la mariposa de mezcla. (pág. 4)",
+     "html": "<ul>\n<li>Puesta a cero automática del aparato: 0,0 (+/- 0,2). <span class=\"pag\">pág. 2</span></li>\n<li>Régimen de giro del motor para la prueba: 1.500 rpm. <span class=\"pag\">pág. 2</span></li>\n<li>Código de color de la escala del ábaco:<ul>\n<li>Zona Roja: Filtro colmatado / saturado.</li>\n<li>Zona Ámbar: Filtro parcialmente colmatado.</li>\n<li>Zona Verde: Filtro correcto. <span class=\"pag\">pág. 3</span></li>\n</ul>\n</li>\n<li>Causas probables si tras montar un filtro nuevo el valor continúa fuera de la zona verde: funcionamiento incorrecto del impulsor de aire, bloqueo de las mariposas de distribución de aire, fuga en los conductos de aire o bloqueo de la mariposa de mezcla. <span class=\"pag\">pág. 4</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Efectuar una comprobación final del valor de caudal tras instalar el filtro de habitáculo nuevo, asegurando que la lectura obtenida se sitúa dentro de la zona verde del ábaco. (pág. 3)",
+     "html": "<p>Efectuar una comprobación final del valor de caudal tras instalar el filtro de habitáculo nuevo, asegurando que la lectura obtenida se sitúa dentro de la zona verde del ábaco. <span class=\"pag\">pág. 3</span></p>"
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Seguir de forma exacta las instrucciones de utilización del equipo. (pág. 4) No obstruir los racores \"+\" y \"-\" al poner en marcha el aparato. (pág. 4) Verificar siempre que la pantalla del Airtest indica cero antes de iniciar la medición. (pág. 4) Si se observa presencia de polvo en el habitáculo con un resultado en zona verde, inspeccionar si el filtro no está colocado o si se encuentra perforado. (pág. 4)",
+     "html": "<ul>\n<li>Seguir de forma exacta las instrucciones de utilización del equipo. <span class=\"pag\">pág. 4</span></li>\n<li>No obstruir los racores \"+\" y \"-\" al poner en marcha el aparato. <span class=\"pag\">pág. 4</span></li>\n<li>Verificar siempre que la pantalla del Airtest indica cero antes de iniciar la medición. <span class=\"pag\">pág. 4</span></li>\n<li>Si se observa presencia de polvo en el habitáculo con un resultado en zona verde, inspeccionar si el filtro no está colocado o si se encuentra perforado. <span class=\"pag\">pág. 4</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Configuración de los mandos de calefacción y ventilación del vehículo para la medición con Airtest — Fuente: EL AIRTEST.PDF, pág. 3 Tabla de interpretación de mediciones del Airtest y esquemas de difusores frontales — Fuente: EL AIRTEST.PDF, pág. 2",
+     "html": "<ul>\n<li>Configuración de los mandos de calefacción y ventilación del vehículo para la medición con Airtest — Fuente: EL AIRTEST.PDF, pág. 3</li>\n<li>Tabla de interpretación de mediciones del Airtest y esquemas de difusores frontales — Fuente: EL AIRTEST.PDF, pág. 2</li>\n</ul>"
     }
    ]
   },
