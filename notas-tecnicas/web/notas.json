@@ -4618,6 +4618,14 @@
    "hecha": false
   },
   {
+   "nombre": "NT884_01",
+   "nt": 884,
+   "titulo": "Intercambiador de calor interno MQB",
+   "seccion": "6. Expansión y lado de baja",
+   "descripcion": "Sección del intercambiador de calor interno mostrando la cavidad exterior para alta presión y la cavidad interior para baja presión — Fuente: Intercambiador de calor interno.pdf, pág. 22 (pág. 22).",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -4642,7 +4650,7 @@
    "hecha": false
   }
  ],
- "total": 875,
+ "total": 876,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -24810,6 +24818,73 @@
      "titulo": "Imágenes requeridas",
      "texto": "Sección del tubo coaxial indicando los flujos de alta presión (conducto exterior) y baja presión (conducto interior) — Fuente: Intercambiador de calor interno II.pdf, pág. 76 (pág. 76).",
      "html": "<ul>\n<li>Sección del tubo coaxial indicando los flujos de alta presión (conducto exterior) y baja presión (conducto interior) — Fuente: Intercambiador de calor interno II.pdf, pág. 76 <span class=\"pag\">pág. 76</span>.</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.tuberias-y-racores.intercambiador-calor-interno.intercambiador-de-calor-interno",
+   "nt": 884,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "tuberias-y-racores",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "",
+   "titulo": "Intercambiador de calor interno MQB",
+   "codigo": "",
+   "menu": "Intercambiador de calor interno MQB",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Intercambiador de calor interno.pdf, págs. 22",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "intercambiador-calor-interno",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "evaporador",
+    "condensador",
+    "compresor",
+    "valvula-expansion"
+   ],
+   "palabras": [
+    "plataforma MQB",
+    "Škoda Octavia III",
+    "dural",
+    "dos vainas",
+    "cavidad exterior",
+    "cavidad interior",
+    "alta presión",
+    "baja presión"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Aumentar la eficiencia del circuito de aire acondicionado conduciendo el refrigerante entre el condensador, la válvula de expansión, el evaporador y el compresor mientras se intercambia calor entre las líneas de alta y baja presión (pág. 22).",
+     "html": "<p>Aumentar la eficiencia del circuito de aire acondicionado conduciendo el refrigerante entre el condensador, la válvula de expansión, el evaporador y el compresor mientras se intercambia calor entre las líneas de alta y baja presión <span class=\"pag\">pág. 22</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Intercambiador de calor interno integrado en las conducciones de refrigerante para vehículos ŠKODA AUTO dotados de la plataforma MQB (como el Škoda Octavia III) (pág. 22). Fabricado mediante un tubo de dural de dos vainas (vaina interior y vaina exterior) (pág. 22). Cavidad exterior (situada entre la vaina interior y la vaina exterior): canaliza el refrigerante a alta presión en estado líquido procedente del condensador hacia la válvula de expansión y el evaporador (pág. 22). Cavidad interior: canaliza el refrigerante a baja presión en estado gaseoso y baja temperatura procedente del evaporador hacia el compresor (pág. 22).",
+     "html": "<ul>\n<li>Intercambiador de calor interno integrado en las conducciones de refrigerante para vehículos ŠKODA AUTO dotados de la plataforma MQB (como el Škoda Octavia III) <span class=\"pag\">pág. 22</span>.</li>\n<li>Fabricado mediante un tubo de dural de dos vainas (vaina interior y vaina exterior) <span class=\"pag\">pág. 22</span>.</li>\n<li>Cavidad exterior (situada entre la vaina interior y la vaina exterior): canaliza el refrigerante a alta presión en estado líquido procedente del condensador hacia la válvula de expansión y el evaporador <span class=\"pag\">pág. 22</span>.</li>\n<li>Cavidad interior: canaliza el refrigerante a baja presión en estado gaseoso y baja temperatura procedente del evaporador hacia el compresor <span class=\"pag\">pág. 22</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El refrigerante líquido a alta presión que circula por la cavidad exterior hacia la válvula de expansión cede calor y se enfría antes de entrar al evaporador, gracias al flujo de refrigerante gaseoso a baja presión y baja temperatura que circula en retorno por la cavidad interior desde el evaporador hacia el compresor (pág. 22).",
+     "html": "<p>El refrigerante líquido a alta presión que circula por la cavidad exterior hacia la válvula de expansión cede calor y se enfría antes de entrar al evaporador, gracias al flujo de refrigerante gaseoso a baja presión y baja temperatura que circula en retorno por la cavidad interior desde el evaporador hacia el compresor <span class=\"pag\">pág. 22</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Sección del intercambiador de calor interno mostrando la cavidad exterior para alta presión y la cavidad interior para baja presión — Fuente: Intercambiador de calor interno.pdf, pág. 22 (pág. 22).",
+     "html": "<ul>\n<li>Sección del intercambiador de calor interno mostrando la cavidad exterior para alta presión y la cavidad interior para baja presión — Fuente: Intercambiador de calor interno.pdf, pág. 22 <span class=\"pag\">pág. 22</span>.</li>\n</ul>",
      "nivel": ""
     }
    ]
