@@ -4666,6 +4666,14 @@
    "hecha": false
   },
   {
+   "nombre": "NT890_01",
+   "nt": 890,
+   "titulo": "Comparativa técnica entre refrigerantes R12 y R134a",
+   "seccion": "Por ubicar",
+   "descripcion": "Gráfica comparativa de presión (bar) frente a temperatura (ºC) para los fluidos R134a y R12 — Fuente: LOS FLUIDOS.PDF, pág. 4 (pág. 4).",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -4690,7 +4698,7 @@
    "hecha": false
   }
  ],
- "total": 878,
+ "total": 886,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -10456,6 +10464,84 @@
      "titulo": "Riesgos y normativa",
      "texto": "No ataca la capa de ozono pero está sujeto a control de emisiones por normativa ambiental sobre gases de efecto invernadero. (pág. 43)",
      "html": "<p>No ataca la capa de ozono pero está sujeto a control de emisiones por normativa ambiental sobre gases de efecto invernadero. <span class=\"pag\">pág. 43</span></p>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.refrigerante-r134a.los-fluidos",
+   "nt": 889,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "refrigerante-r134a",
+   "seccion": "3. Fluidos",
+   "subgrupo": "",
+   "titulo": "Refrigerante R134a",
+   "codigo": "",
+   "menu": "Refrigerante R134a",
+   "grupo": "Fluidos frigoríficos",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LOS FLUIDOS.PDF, págs. 3-5",
+   "clase": "fluido",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "fluidos-frigorificos",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r12",
+    "aceite-frigorifico",
+    "filtro-deshidratador",
+    "valvula-expansion"
+   ],
+   "palabras": [
+    "HFC",
+    "tetrafluoroetano",
+    "HF",
+    "aceite PAG",
+    "zeolita",
+    "ODP cero",
+    "HGWP"
+   ],
+   "apartados": [
+    {
+     "titulo": "Designación y norma",
+     "texto": "Denominación química: Tetrafluoroetano (pág. 3, 4). Denominación comercial: R134a o R-134a (pág. 3). Fórmula química: CH2F-CF3 (pág. 3, 4). Familia química: HFC (Hidrofluorocarburos) (pág. 2, 3).",
+     "html": "<ul>\n<li>Denominación química: Tetrafluoroetano <span class=\"pag\">pág. 3, 4</span>.</li>\n<li>Denominación comercial: R134a o R-134a <span class=\"pag\">pág. 3</span>.</li>\n<li>Fórmula química: CH2F-CF3 <span class=\"pag\">pág. 3, 4</span>.</li>\n<li>Familia química: HFC (Hidrofluorocarburos) <span class=\"pag\">pág. 2, 3</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Propiedades",
+     "texto": "Punto de ebullición a presión atmosférica: -26,3 ºC (pág. 3, 4). Calor latente de vaporización: 47,19 kcal/kg (pág. 4). Potencial de destrucción del ozono (ODP): 0 (inocuo para la capa de ozono al no contener cloro) (pág. 3, 4). Potencial de recalentamiento global (HGWP): 1 (referenciado respecto al CO2 = 1) (pág. 4). Tiempo de permanencia en la atmósfera: 15 a 15,5 años (pág. 3, 4). Presiones del fluido: 2,928 bar a 0 ºC / 26,324 bar a 80 ºC (pág. 4). Solubilidad del agua en el fluido: 0,019% en masa (pág. 4). Tamaño molecular: tamaño de molécula inferior al R12, lo que incrementa la posibilidad de fugas a través de las juntas (pág. 3, 5). Reacción con agua: corrosivo en presencia de agua, generando ácido fluorhídrico mediante la reacción F + H2O -> HF (pág. 3). Inflamabilidad y toxicidad: no es inflamable en condiciones normales y presenta baja toxicidad (pág. 3).",
+     "html": "<ul>\n<li>Punto de ebullición a presión atmosférica: -26,3 ºC <span class=\"pag\">pág. 3, 4</span>.</li>\n<li>Calor latente de vaporización: 47,19 kcal/kg <span class=\"pag\">pág. 4</span>.</li>\n<li>Potencial de destrucción del ozono (ODP): 0 (inocuo para la capa de ozono al no contener cloro) <span class=\"pag\">pág. 3, 4</span>.</li>\n<li>Potencial de recalentamiento global (HGWP): 1 (referenciado respecto al CO2 = 1) <span class=\"pag\">pág. 4</span>.</li>\n<li>Tiempo de permanencia en la atmósfera: 15 a 15,5 años <span class=\"pag\">pág. 3, 4</span>.</li>\n<li>Presiones del fluido: 2,928 bar a 0 ºC / 26,324 bar a 80 ºC <span class=\"pag\">pág. 4</span>.</li>\n<li>Solubilidad del agua en el fluido: 0,019% en masa <span class=\"pag\">pág. 4</span>.</li>\n<li>Tamaño molecular: tamaño de molécula inferior al R12, lo que incrementa la posibilidad de fugas a través de las juntas <span class=\"pag\">pág. 3, 5</span>.</li>\n<li>Reacción con agua: corrosivo en presencia de agua, generando ácido fluorhídrico mediante la reacción F + H2O -&gt; HF <span class=\"pag\">pág. 3</span>.</li>\n<li>Inflamabilidad y toxicidad: no es inflamable en condiciones normales y presenta baja toxicidad <span class=\"pag\">pág. 3</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Dónde se usa y cantidades",
+     "texto": "Fluido único preconizado por Valeo Clim Service como sustitución del R12 en climatización automotriz (pág. 1, 2). Cantidades: No documentado en fuentes (pág. 5).",
+     "html": "<p>Fluido único preconizado por Valeo Clim Service como sustitución del R12 en climatización automotriz <span class=\"pag\">pág. 1, 2</span>. Cantidades: No documentado en fuentes <span class=\"pag\">pág. 5</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Compatibilidades y mezclas prohibidas",
+     "texto": "NO es miscible con aceites minerales; requiere el uso de aceites sintéticos PAG (glicol polialcalino) (pág. 3). Ataca a diversos tipos de gomas (exige canalizaciones de material compatible) (pág. 5). Ataca y descompone las zeolitas de los filtros deshidratantes no adaptados debido al menor tamaño de sus moléculas (pág. 5).",
+     "html": "<ul>\n<li>NO es miscible con aceites minerales; requiere el uso de aceites sintéticos PAG (glicol polialcalino) <span class=\"pag\">pág. 3</span>.</li>\n<li>Ataca a diversos tipos de gomas (exige canalizaciones de material compatible) <span class=\"pag\">pág. 5</span>.</li>\n<li>Ataca y descompone las zeolitas de los filtros deshidratantes no adaptados debido al menor tamaño de sus moléculas <span class=\"pag\">pág. 5</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Manipulación, almacenamiento y residuos",
+     "texto": "Obligatoriedad de recuperación del 100% del fluido para instalaciones > 2 kg desde 1998, y para instalaciones > 0,5 kg a partir de 2004 (pág. 5). Retirada, recolección y almacenamiento separado obligatorio de fluidos frigoríficos en centros de reciclaje al final de la vida del vehículo (pág. 6).",
+     "html": "<ul>\n<li>Obligatoriedad de recuperación del 100% del fluido para instalaciones &gt; 2 kg desde 1998, y para instalaciones &gt; 0,5 kg a partir de 2004 <span class=\"pag\">pág. 5</span>.</li>\n<li>Retirada, recolección y almacenamiento separado obligatorio de fluidos frigoríficos en centros de reciclaje al final de la vida del vehículo <span class=\"pag\">pág. 6</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Riesgos y normativa",
+     "texto": "Riesgo de corrosión por generación de ácido fluorhídrico en contacto con agua (pág. 3). Contribución al efecto invernadero (HGWP = 1) (pág. 3, 4). Normativa: obligatoriedad de recuperación del 100% de fluidos y control anual obligatorio de estanqueidad en taller con emisión de ficha de intervención (pág. 5, 6).",
+     "html": "<ul>\n<li>Riesgo de corrosión por generación de ácido fluorhídrico en contacto con agua <span class=\"pag\">pág. 3</span>.</li>\n<li>Contribución al efecto invernadero (HGWP = 1) <span class=\"pag\">pág. 3, 4</span>.</li>\n<li>Normativa: obligatoriedad de recuperación del 100% de fluidos y control anual obligatorio de estanqueidad en taller con emisión de ficha de intervención <span class=\"pag\">pág. 5, 6</span>.</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -71484,6 +71570,523 @@
      "titulo": "Imágenes requeridas",
      "texto": "Manguitos desprendedores T40149/1 y T40149/2 montados en la carcasa del tubo coaxial para el desbloqueo de los acoplamientos rápidos — Fuente: Intercambiador de calor interno II.pdf, pág. 77 (pág. 77).",
      "html": "<ul>\n<li>Manguitos desprendedores T40149/1 y T40149/2 montados en la carcasa del tubo coaxial para el desbloqueo de los acoplamientos rápidos — Fuente: Intercambiador de calor interno II.pdf, pág. 77 <span class=\"pag\">pág. 77</span>.</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.caracteristicas-fluidos-frigorificos.los-fluidos",
+   "nt": 887,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "caracteristicas-fluidos-frigorificos",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Requisitos y clasificación de los fluidos frigoríficos",
+   "codigo": "",
+   "menu": "Requisitos y clasificación de los flui",
+   "grupo": "Fluidos frigoríficos",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LOS FLUIDOS.PDF, págs. 1-2",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "fluidos-frigorificos",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r12",
+    "refrigerante-r134a",
+    "aceite-frigorifico"
+   ],
+   "palabras": [
+    "calor latente",
+    "temperatura crítica",
+    "CFC",
+    "HCFC",
+    "HFC",
+    "ozono",
+    "efecto invernadero"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Definición de las características requeridas en los fluidos frigoríficos para la producción de frío en climatización y clasificación por familias químicas (pág. 1-2).",
+     "html": "<p>Definición de las características requeridas en los fluidos frigoríficos para la producción de frío en climatización y clasificación por familias químicas <span class=\"pag\">pág. 1-2</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Los fluidos frigoríficos se utilizan por su alta capacidad para absorber calor del aire ambiente mediante cambios de estado, requiriendo propiedades físicas, químicas y de seguridad concretas para su efectividad (pág. 1-2).",
+     "html": "<p>Los fluidos frigoríficos se utilizan por su alta capacidad para absorber calor del aire ambiente mediante cambios de estado, requiriendo propiedades físicas, químicas y de seguridad concretas para su efectividad <span class=\"pag\">pág. 1-2</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Características requeridas para una efectividad óptima : Presión y temperatura favorables para evitar presiones excesivas en el condensador o demasiado bajas en el evaporador (pág. 1). Elevado calor latente de evaporación para conseguir un mayor efecto frigorífico (pág. 1). Temperatura crítica elevada para evitar que el compresor comprima el fluido por encima de su presión crítica, lo que impediría el cambio de estado en el condensador (pág. 1). Temperatura de evaporación inferior a la temperatura ambiente (pág. 1). Seguridad contra el peligro de incendio y de explosión (pág. 2). Estabilidad química y compatibilidad con los materiales del circuito (pág. 2). Baja toxicidad para evitar daños a las personas (pág. 2). Miscibilidad con el aceite lubricante empleado (pág. 2). Familias de fluidos : CFC (Clorofluorocarburos) : compuestos por cloro, flúor y carbono (ejemplos: R12, R11, R502). Contribuyen fuertemente a la destrucción de la capa de ozono (pág. 2). HCFC (Hidroclorofluorocarburos) : compuestos por cloro, flúor, carbono e hidrógeno (ejemplos: R22, D124). Contribuyen a la destrucción de la capa de ozono y al recalentamiento del planeta por efecto invernadero (pág. 2). HFC (Hidrofluorocarburos) : compuestos por flúor, carbono e hidrógeno (ejemplos: R134a, ISCEON 49). Contribuyen al recalentamiento del planeta por efecto invernadero, pero no destruyen el ozono (pág. 2).",
+     "html": "<ul>\n<li><strong>Características requeridas para una efectividad óptima</strong>:<ul>\n<li>Presión y temperatura favorables para evitar presiones excesivas en el condensador o demasiado bajas en el evaporador <span class=\"pag\">pág. 1</span>.</li>\n<li>Elevado calor latente de evaporación para conseguir un mayor efecto frigorífico <span class=\"pag\">pág. 1</span>.</li>\n<li>Temperatura crítica elevada para evitar que el compresor comprima el fluido por encima de su presión crítica, lo que impediría el cambio de estado en el condensador <span class=\"pag\">pág. 1</span>.</li>\n<li>Temperatura de evaporación inferior a la temperatura ambiente <span class=\"pag\">pág. 1</span>.</li>\n<li>Seguridad contra el peligro de incendio y de explosión <span class=\"pag\">pág. 2</span>.</li>\n<li>Estabilidad química y compatibilidad con los materiales del circuito <span class=\"pag\">pág. 2</span>.</li>\n<li>Baja toxicidad para evitar daños a las personas <span class=\"pag\">pág. 2</span>.</li>\n<li>Miscibilidad con el aceite lubricante empleado <span class=\"pag\">pág. 2</span>.</li>\n</ul>\n</li>\n<li><strong>Familias de fluidos</strong>:<ul>\n<li><strong>CFC (Clorofluorocarburos)</strong>: compuestos por cloro, flúor y carbono (ejemplos: R12, R11, R502). Contribuyen fuertemente a la destrucción de la capa de ozono <span class=\"pag\">pág. 2</span>.</li>\n<li><strong>HCFC (Hidroclorofluorocarburos)</strong>: compuestos por cloro, flúor, carbono e hidrógeno (ejemplos: R22, D124). Contribuyen a la destrucción de la capa de ozono y al recalentamiento del planeta por efecto invernadero <span class=\"pag\">pág. 2</span>.</li>\n<li><strong>HFC (Hidrofluorocarburos)</strong>: compuestos por flúor, carbono e hidrógeno (ejemplos: R134a, ISCEON 49). Contribuyen al recalentamiento del planeta por efecto invernadero, pero no destruyen el ozono <span class=\"pag\">pág. 2</span>.</li>\n</ul>\n</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.refrigerante-r12.los-fluidos",
+   "nt": 888,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "refrigerante-r12",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Refrigerante R12",
+   "codigo": "",
+   "menu": "Refrigerante R12",
+   "grupo": "Fluidos frigoríficos",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LOS FLUIDOS.PDF, págs. 2-4",
+   "clase": "fluido",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "fluidos-frigorificos",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r134a",
+    "aceite-frigorifico"
+   ],
+   "palabras": [
+    "CFC",
+    "diclorodifluorometano",
+    "freon 12",
+    "HCl",
+    "fosgeno",
+    "ozono",
+    "ODP"
+   ],
+   "apartados": [
+    {
+     "titulo": "Designación y norma",
+     "texto": "Denominación química: Diclorodifluorometano (o diclorofluorometano) (pág. 2, 4). Denominación comercial: R12, R-12 o Freón 12 (pág. 2). Fórmula química: CCl2F2 (pág. 2, 4). Familia química: CFC (Clorofluorocarburos) (pág. 2).",
+     "html": "<ul>\n<li>Denominación química: Diclorodifluorometano (o diclorofluorometano) <span class=\"pag\">pág. 2, 4</span>.</li>\n<li>Denominación comercial: R12, R-12 o Freón 12 <span class=\"pag\">pág. 2</span>.</li>\n<li>Fórmula química: CCl2F2 <span class=\"pag\">pág. 2, 4</span>.</li>\n<li>Familia química: CFC (Clorofluorocarburos) <span class=\"pag\">pág. 2</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Propiedades",
+     "texto": "Apariencia: gas incoloro, con ligero olor y no produce manchas en condiciones normales (pág. 2). Punto de ebullición a presión atmosférica: -29,4 ºC (-29,8 ºC según tabla de la pág. 4) (pág. 2, 4). Calor latente de vaporización: 36,43 kcal/kg (pág. 4). Potencial de destrucción del ozono (ODP): 1 (valor asignado arbitrariamente tomando el R11 como referencia) (pág. 4). Potencial de recalentamiento global (HGWP): 3 (referenciado respecto al CO2 = 1) (pág. 4). Tiempo de permanencia en la atmósfera: 120 años (pág. 2, 4). Presiones del fluido: 3,089 bar a 0 ºC / 23,191 bar a 80 ºC (pág. 4). Solubilidad del agua en el fluido: 0,009% en masa (pág. 4). Reactividad con metales y gomas: elevada estabilidad a altas temperaturas; no reacciona con la mayoría de metales (excepto zinc y magnesio) y no deteriora la goma de las tuberías (pág. 2). Reacción con agua: altamente corrosivo en presencia de agua, produciendo ácido clorhídrico mediante la reacción Cl + H2O -> HCl (pág. 2). Reacción térmica: no inflamable ni explosivo en estado líquido o gaseoso en condiciones normales; en contacto con una llama o metal muy caliente se descompone en gas fosgeno (gas mostaza), que es muy venenoso (pág. 2).",
+     "html": "<ul>\n<li>Apariencia: gas incoloro, con ligero olor y no produce manchas en condiciones normales <span class=\"pag\">pág. 2</span>.</li>\n<li>Punto de ebullición a presión atmosférica: -29,4 ºC <span class=\"pag\">-29,8 ºC según tabla de la pág. 4</span> <span class=\"pag\">pág. 2, 4</span>.</li>\n<li>Calor latente de vaporización: 36,43 kcal/kg <span class=\"pag\">pág. 4</span>.</li>\n<li>Potencial de destrucción del ozono (ODP): 1 (valor asignado arbitrariamente tomando el R11 como referencia) <span class=\"pag\">pág. 4</span>.</li>\n<li>Potencial de recalentamiento global (HGWP): 3 (referenciado respecto al CO2 = 1) <span class=\"pag\">pág. 4</span>.</li>\n<li>Tiempo de permanencia en la atmósfera: 120 años <span class=\"pag\">pág. 2, 4</span>.</li>\n<li>Presiones del fluido: 3,089 bar a 0 ºC / 23,191 bar a 80 ºC <span class=\"pag\">pág. 4</span>.</li>\n<li>Solubilidad del agua en el fluido: 0,009% en masa <span class=\"pag\">pág. 4</span>.</li>\n<li>Reactividad con metales y gomas: elevada estabilidad a altas temperaturas; no reacciona con la mayoría de metales (excepto zinc y magnesio) y no deteriora la goma de las tuberías <span class=\"pag\">pág. 2</span>.</li>\n<li>Reacción con agua: altamente corrosivo en presencia de agua, produciendo ácido clorhídrico mediante la reacción Cl + H2O -&gt; HCl <span class=\"pag\">pág. 2</span>.</li>\n<li>Reacción térmica: no inflamable ni explosivo en estado líquido o gaseoso en condiciones normales; en contacto con una llama o metal muy caliente se descompone en gas fosgeno (gas mostaza), que es muy venenoso <span class=\"pag\">pág. 2</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Dónde se usa y cantidades",
+     "texto": "Utilizado históricamente como fluido frigorífico en sistemas de aire acondicionado automotriz (pág. 1, 2). Cantidades: No documentado en fuentes (pág. 4).",
+     "html": "<p>Utilizado históricamente como fluido frigorífico en sistemas de aire acondicionado automotriz <span class=\"pag\">pág. 1, 2</span>. Cantidades: No documentado en fuentes <span class=\"pag\">pág. 4</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Compatibilidades y mezclas prohibidas",
+     "texto": "Miscible con los aceites lubricantes minerales (pág. 2). Prohibida la mezcla directa con R134a u otros fluidos sin procedimiento de reconversión regulado (pág. 1, 5).",
+     "html": "<ul>\n<li>Miscible con los aceites lubricantes minerales <span class=\"pag\">pág. 2</span>.</li>\n<li>Prohibida la mezcla directa con R134a u otros fluidos sin procedimiento de reconversión regulado <span class=\"pag\">pág. 1, 5</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Manipulación, almacenamiento y residuos",
+     "texto": "Requiere tomar precauciones en el dimensionamiento de tuberías para asegurar el retorno del aceite mineral al compresor (pág. 2). Evitar el contacto con llamas o metales calientes para impedir la generación de gas fosgeno (pág. 2). Prohibida su liberación a la atmósfera debido a su acción destructora sobre el ozono (pág. 2, 5). Destrucción obligatoria efectuada por organismos especializados; el reciclaje requiere instalaciones industriales para garantizar un nivel de pureza mínimo del 98% (pág. 8).",
+     "html": "<ul>\n<li>Requiere tomar precauciones en el dimensionamiento de tuberías para asegurar el retorno del aceite mineral al compresor <span class=\"pag\">pág. 2</span>.</li>\n<li>Evitar el contacto con llamas o metales calientes para impedir la generación de gas fosgeno <span class=\"pag\">pág. 2</span>.</li>\n<li>Prohibida su liberación a la atmósfera debido a su acción destructora sobre el ozono <span class=\"pag\">pág. 2, 5</span>.</li>\n<li>Destrucción obligatoria efectuada por organismos especializados; el reciclaje requiere instalaciones industriales para garantizar un nivel de pureza mínimo del 98% <span class=\"pag\">pág. 8</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Riesgos y normativa",
+     "texto": "Riesgo de congelación en caso de contacto con los ojos (pág. 2). Riesgo de intoxicación grave por desprendimiento de gas fosgeno en presencia de altas temperaturas (pág. 2). Destrucción de la capa de ozono: por acción de los rayos UV se libera cloro a 15 km de altura; una molécula de cloro destruye entre 50.000 y 100.000 moléculas de O3 (pág. 2). Normativa: cese de producción a finales de 1994, prohibición de comercialización en posventa en el año 2000 y prohibición de utilización en posventa en 2001 (pág. 5).",
+     "html": "<ul>\n<li>Riesgo de congelación en caso de contacto con los ojos <span class=\"pag\">pág. 2</span>.</li>\n<li>Riesgo de intoxicación grave por desprendimiento de gas fosgeno en presencia de altas temperaturas <span class=\"pag\">pág. 2</span>.</li>\n<li>Destrucción de la capa de ozono: por acción de los rayos UV se libera cloro a 15 km de altura; una molécula de cloro destruye entre 50.000 y 100.000 moléculas de O3 <span class=\"pag\">pág. 2</span>.</li>\n<li>Normativa: cese de producción a finales de 1994, prohibición de comercialización en posventa en el año 2000 y prohibición de utilización en posventa en 2001 <span class=\"pag\">pág. 5</span>.</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.diferencias-circuito-r12-r134a.los-fluidos",
+   "nt": 890,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "diferencias-circuito-r12-r134a",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Comparativa técnica entre refrigerantes R12 y R134a",
+   "codigo": "",
+   "menu": "Comparativa técnica entre refrigerante",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LOS FLUIDOS.PDF, págs. 4-5",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r12",
+    "refrigerante-r134a",
+    "condensador",
+    "compresor",
+    "valvula-expansion",
+    "filtro-deshidratador"
+   ],
+   "palabras": [
+    "presión de alta",
+    "presión de baja",
+    "volumen específico",
+    "intercambio térmico",
+    "fugas",
+    "zeolita"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Análisis comparativo de las propiedades físicas, comportamiento termodinámico y modificaciones requeridas en los componentes del circuito al emplear R12 o R134a (pág. 4-5).",
+     "html": "<p>Análisis comparativo de las propiedades físicas, comportamiento termodinámico y modificaciones requeridas en los componentes del circuito al emplear R12 o R134a <span class=\"pag\">pág. 4-5</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Para una misma presión de alta, el R12 presenta una temperatura mayor que le permite ceder más calor al ambiente; y para una misma presión de baja, la temperatura que alcanza es menor, absorbiendo más calor del aire entrante. Por ello, el R12 proporciona prestaciones superiores para un mismo circuito sin modificar (pág. 4).",
+     "html": "<p>Para una misma presión de alta, el R12 presenta una temperatura mayor que le permite ceder más calor al ambiente; y para una misma presión de baja, la temperatura que alcanza es menor, absorbiendo más calor del aire entrante. Por ello, el R12 proporciona prestaciones superiores para un mismo circuito sin modificar <span class=\"pag\">pág. 4</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Comportamiento al introducir R134a en un circuito dimensionado para R12 (a idénticas temperaturas de condensación y evaporación) (pág. 4-5): Aumenta la presión en el condensador y disminuye la presión en el evaporador (pág. 4). Aumenta la presión de descarga del compresor y disminuye la temperatura de descarga del circuito (pág. 4). Aumenta el volumen específico del fluido (pág. 4). Empeora el intercambio térmico en el condensador respecto al R12 (pág. 4-5). Modificaciones necesarias en los componentes para obtener prestaciones análogas : Incrementar la capacidad de disipación de calor del condensador (pág. 5). Aumentar la cilindrada del compresor (pág. 5). Reducir las secciones de paso de la válvula de expansión debido a la variación del volumen específico y calor específico del R134a (pág. 5). Sustituir las juntas de canalizaciones por materiales compatibles resistentes al menor tamaño molecular del R134a (pág. 5). Sustituir el filtro deshidratante para evitar que el R134a ataque y descomponga las zeolitas (pág. 5).",
+     "html": "<ul>\n<li><strong>Comportamiento al introducir R134a en un circuito dimensionado para R12</strong> (a idénticas temperaturas de condensación y evaporación) <span class=\"pag\">pág. 4-5</span>:<ul>\n<li>Aumenta la presión en el condensador y disminuye la presión en el evaporador <span class=\"pag\">pág. 4</span>.</li>\n<li>Aumenta la presión de descarga del compresor y disminuye la temperatura de descarga del circuito <span class=\"pag\">pág. 4</span>.</li>\n<li>Aumenta el volumen específico del fluido <span class=\"pag\">pág. 4</span>.</li>\n<li>Empeora el intercambio térmico en el condensador respecto al R12 <span class=\"pag\">pág. 4-5</span>.</li>\n</ul>\n</li>\n<li><strong>Modificaciones necesarias en los componentes para obtener prestaciones análogas</strong>:<ul>\n<li>Incrementar la capacidad de disipación de calor del condensador <span class=\"pag\">pág. 5</span>.</li>\n<li>Aumentar la cilindrada del compresor <span class=\"pag\">pág. 5</span>.</li>\n<li>Reducir las secciones de paso de la válvula de expansión debido a la variación del volumen específico y calor específico del R134a <span class=\"pag\">pág. 5</span>.</li>\n<li>Sustituir las juntas de canalizaciones por materiales compatibles resistentes al menor tamaño molecular del R134a <span class=\"pag\">pág. 5</span>.</li>\n<li>Sustituir el filtro deshidratante para evitar que el R134a ataque y descomponga las zeolitas <span class=\"pag\">pág. 5</span>.</li>\n</ul>\n</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Presiones a 0 ºC: 3,089 bar (R12) frente a 2,928 bar (R134a) (pág. 4). Presiones a 80 ºC: 23,191 bar (R12) frente a 26,324 bar (R134a) (pág. 4).",
+     "html": "<ul>\n<li>Presiones a 0 ºC: 3,089 bar (R12) frente a 2,928 bar (R134a) <span class=\"pag\">pág. 4</span>.</li>\n<li>Presiones a 80 ºC: 23,191 bar (R12) frente a 26,324 bar (R134a) <span class=\"pag\">pág. 4</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Considerar que el R134a ofrece idéntico rendimiento térmico que el R12 en un circuito sin modificar, ignorando que requiere mayor disipación en el condensador, mayor cilindrada en el compresor y pasos más estrechos en la válvula de expansión (pág. 4-5).",
+     "html": "<p>Considerar que el R134a ofrece idéntico rendimiento térmico que el R12 en un circuito sin modificar, ignorando que requiere mayor disipación en el condensador, mayor cilindrada en el compresor y pasos más estrechos en la válvula de expansión <span class=\"pag\">pág. 4-5</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Gráfica comparativa de presión (bar) frente a temperatura (ºC) para los fluidos R134a y R12 — Fuente: LOS FLUIDOS.PDF, pág. 4 (pág. 4).",
+     "html": "<ul>\n<li>Gráfica comparativa de presión (bar) frente a temperatura (ºC) para los fluidos R134a y R12 — Fuente: LOS FLUIDOS.PDF, pág. 4 <span class=\"pag\">pág. 4</span>.</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.normativa-fluidos-frigorificos.los-fluidos",
+   "nt": 891,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "normativa-fluidos-frigorificos",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Normativa y marco ambiental de los fluidos frigoríficos",
+   "codigo": "",
+   "menu": "Normativa y marco ambiental de los flu",
+   "grupo": "Normativa y medioambiente",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LOS FLUIDOS.PDF, págs. 5-6",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "general",
+   "sistema": "normativa-y-medioambiente",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r12",
+    "refrigerante-r134a"
+   ],
+   "palabras": [
+    "Protocolo de Montreal",
+    "CFC",
+    "HCFC",
+    "HFC",
+    "certificación",
+    "control estanqueidad",
+    "reciclaje"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Establecimiento del marco regulatorio internacional y comunitario referente a la eliminación, comercialización, recuperación y control de los fluidos frigoríficos en automoción (pág. 5-6).",
+     "html": "<p>Establecimiento del marco regulatorio internacional y comunitario referente a la eliminación, comercialización, recuperación y control de los fluidos frigoríficos en automoción <span class=\"pag\">pág. 5-6</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Basado en el Protocolo de Montreal (1987) y acuerdos posteriores (Copenhague), la legislación prohibe el uso de sustancias destructoras del ozono (CFC y HCFC) y regula estrictamente los HFC para mitigar el efecto invernadero (pág. 5).",
+     "html": "<p>Basado en el Protocolo de Montreal (1987) y acuerdos posteriores (Copenhague), la legislación prohibe el uso de sustancias destructoras del ozono (CFC y HCFC) y regula estrictamente los HFC para mitigar el efecto invernadero <span class=\"pag\">pág. 5</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Calendario reglamentario : CFC (ejemplo R12) : Fin de producción a finales de 1994; prohibición de comercialización en posventa en el año 2000; prohibición de utilización en posventa en 2001 (pág. 5). HCFC (ejemplo D124) : Congelación de producción al nivel de 1997 en 2001; reducción de puesta en mercado al nivel de 1989 en 2002; descenso del 70% de producción en 2004; prohibición de utilización en posventa en 2010 (pág. 5). HFC (ejemplo R134a) : Obligatoriedad de recuperación del 100% de fluidos para instalaciones > 2 kg desde 1998; obligatoriedad de recuperación del 100% para instalaciones > 0,5 kg desde 2004 (pág. 5). Exigencias operativas y cualificación (regulación a partir del año 2000) : Herramientas : normalización de componentes, detectores de fugas y aparatos de carga; exigencia de nivel mínimo de estanqueidad en equipamientos (pág. 5-6). Competencias : cualificación de operadores, control de procedimientos correctos y certificación obligatoria de intervinientes por un organismo homologado (pág. 6). Operaciones : control técnico anual de estanqueidad obligatorio en taller con registro en ficha de intervención por vehículo; obligación de retirada, recolección y almacenamiento separado de fluidos frigoríficos en centros de reciclaje de vehículos fuera de uso (pág. 6).",
+     "html": "<ul>\n<li><strong>Calendario reglamentario</strong>:<ul>\n<li><strong>CFC (ejemplo R12)</strong>: Fin de producción a finales de 1994; prohibición de comercialización en posventa en el año 2000; prohibición de utilización en posventa en 2001 <span class=\"pag\">pág. 5</span>.</li>\n<li><strong>HCFC (ejemplo D124)</strong>: Congelación de producción al nivel de 1997 en 2001; reducción de puesta en mercado al nivel de 1989 en 2002; descenso del 70% de producción en 2004; prohibición de utilización en posventa en 2010 <span class=\"pag\">pág. 5</span>.</li>\n<li><strong>HFC (ejemplo R134a)</strong>: Obligatoriedad de recuperación del 100% de fluidos para instalaciones &gt; 2 kg desde 1998; obligatoriedad de recuperación del 100% para instalaciones &gt; 0,5 kg desde 2004 <span class=\"pag\">pág. 5</span>.</li>\n</ul>\n</li>\n<li><strong>Exigencias operativas y cualificación (regulación a partir del año 2000)</strong>:<ul>\n<li><strong>Herramientas</strong>: normalización de componentes, detectores de fugas y aparatos de carga; exigencia de nivel mínimo de estanqueidad en equipamientos <span class=\"pag\">pág. 5-6</span>.</li>\n<li><strong>Competencias</strong>: cualificación de operadores, control de procedimientos correctos y certificación obligatoria de intervinientes por un organismo homologado <span class=\"pag\">pág. 6</span>.</li>\n<li><strong>Operaciones</strong>: control técnico anual de estanqueidad obligatorio en taller con registro en ficha de intervención por vehículo; obligación de retirada, recolección y almacenamiento separado de fluidos frigoríficos en centros de reciclaje de vehículos fuera de uso <span class=\"pag\">pág. 6</span>.</li>\n</ul>\n</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Umbral de instalación para recuperación obligatoria del 100% de HFC (1998): > 2 kg (pág. 5). Umbral de instalación para recuperación obligatoria del 100% de HFC (2004): > 0,5 kg (pág. 5). Periodicidad del control técnico de estanqueidad en taller: 1 vez al año (pág. 6).",
+     "html": "<ul>\n<li>Umbral de instalación para recuperación obligatoria del 100% de HFC (1998): &gt; 2 kg <span class=\"pag\">pág. 5</span>.</li>\n<li>Umbral de instalación para recuperación obligatoria del 100% de HFC (2004): &gt; 0,5 kg <span class=\"pag\">pág. 5</span>.</li>\n<li>Periodicidad del control técnico de estanqueidad en taller: 1 vez al año <span class=\"pag\">pág. 6</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Creer que los fluidos HFC (como el R134a) pueden liberarse a la atmósfera por no dañar el ozono, ignorando la obligatoriedad legal de su recuperación al 100% y los controles anuales de estanqueidad (pág. 5-6).",
+     "html": "<p>Creer que los fluidos HFC (como el R134a) pueden liberarse a la atmósfera por no dañar el ozono, ignorando la obligatoriedad legal de su recuperación al 100% y los controles anuales de estanqueidad <span class=\"pag\">pág. 5-6</span>.</p>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.refrigerante-d124.hcfc.los-fluidos",
+   "nt": 892,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "refrigerante-d124",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Refrigerante D124",
+   "codigo": "",
+   "menu": "Refrigerante D124",
+   "grupo": "Fluidos frigoríficos",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LOS FLUIDOS.PDF, págs. 6",
+   "clase": "fluido",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "hcfc",
+   "area": "climatizacion",
+   "sistema": "fluidos-frigorificos",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r12",
+    "refrigerante-r134a",
+    "aceite-frigorifico"
+   ],
+   "palabras": [
+    "HCFC",
+    "D124",
+    "fluido de sustitución",
+    "descomposición química",
+    "aceite POE"
+   ],
+   "apartados": [
+    {
+     "titulo": "Designación y norma",
+     "texto": "Denominación comercial: D124 o DI24 (pág. 2, 6). Familia química: HCFC (Hidroclorofluorocarburos) (pág. 2, 6).",
+     "html": "<ul>\n<li>Denominación comercial: D124 o DI24 <span class=\"pag\">pág. 2, 6</span>.</li>\n<li>Familia química: HCFC (Hidroclorofluorocarburos) <span class=\"pag\">pág. 2, 6</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Propiedades",
+     "texto": "Fluido transitorio de sustitución del R12 (pág. 6). Muestra riesgo de descomposición química que limita su número de reciclajes (pág. 6).",
+     "html": "<ul>\n<li>Fluido transitorio de sustitución del R12 <span class=\"pag\">pág. 6</span>.</li>\n<li>Muestra riesgo de descomposición química que limita su número de reciclajes <span class=\"pag\">pág. 6</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Dónde se usa y cantidades",
+     "texto": "Comercializado como fluido de sustitución provisional para R12, pero desaconsejado por Valeo (pág. 6). Cantidades: No documentado en fuentes (pág. 6).",
+     "html": "<p>Comercializado como fluido de sustitución provisional para R12, pero desaconsejado por Valeo <span class=\"pag\">pág. 6</span>. Cantidades: No documentado en fuentes <span class=\"pag\">pág. 6</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Compatibilidades y mezclas prohibidas",
+     "texto": "Exige añadir un 30% de aceite sintético POE (pág. 6). No dispone de válvulas de carga específicas, existiendo riesgo de mezcla accidental en taller (pág. 6).",
+     "html": "<ul>\n<li>Exige añadir un 30% de aceite sintético POE <span class=\"pag\">pág. 6</span>.</li>\n<li>No dispone de válvulas de carga específicas, existiendo riesgo de mezcla accidental en taller <span class=\"pag\">pág. 6</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Identificación",
+     "texto": "No dispone de válvulas de carga específicas para su identificación (pág. 6).",
+     "html": "<p>No dispone de válvulas de carga específicas para su identificación <span class=\"pag\">pág. 6</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Manipulación, almacenamiento y residuos",
+     "texto": "Exige la utilización de material específico no estandarizado (estación de carga, manómetro, botellas de recuperación específicas) (pág. 6).",
+     "html": "<p>Exige la utilización de material específico no estandarizado (estación de carga, manómetro, botellas de recuperación específicas) <span class=\"pag\">pág. 6</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Riesgos y normativa",
+     "texto": "Incremento de costes a partir de 2002 por la reducción de la producción mundial de HCFC y prohibición total de uso en posventa en 2010 (pág. 5, 6). Rechazado por Valeo por presiones ambientales, riesgo de mezclas y reciclabilidad limitada (pág. 6).",
+     "html": "<ul>\n<li>Incremento de costes a partir de 2002 por la reducción de la producción mundial de HCFC y prohibición total de uso en posventa en 2010 <span class=\"pag\">pág. 5, 6</span>.</li>\n<li>Rechazado por Valeo por presiones ambientales, riesgo de mezclas y reciclabilidad limitada <span class=\"pag\">pág. 6</span>.</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.refrigerante-isceon49.hfc-mezcla.los-fluidos",
+   "nt": 893,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "refrigerante-isceon49",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Refrigerante ISCEON 49",
+   "codigo": "",
+   "menu": "Refrigerante ISCEON 49",
+   "grupo": "Fluidos frigoríficos",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LOS FLUIDOS.PDF, págs. 7",
+   "clase": "fluido",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "hfc-mezcla",
+   "area": "climatizacion",
+   "sistema": "fluidos-frigorificos",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r12",
+    "refrigerante-r134a",
+    "aceite-frigorifico"
+   ],
+   "palabras": [
+    "ISCEON 49",
+    "mezcla HFC",
+    "88% R134a",
+    "aceite mineral",
+    "coste elevado"
+   ],
+   "apartados": [
+    {
+     "titulo": "Designación y norma",
+     "texto": "Denominación comercial: ISCEON 49 (pág. 2, 7). Familia química: Mezcla de HFC (Hidrofluorocarburos) (pág. 2, 7).",
+     "html": "<ul>\n<li>Denominación comercial: ISCEON 49 <span class=\"pag\">pág. 2, 7</span>.</li>\n<li>Familia química: Mezcla de HFC (Hidrofluorocarburos) <span class=\"pag\">pág. 2, 7</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Propiedades",
+     "texto": "Composición: mezcla que contiene un 88% de R134a (pág. 7). Reciclaje limitado debido al riesgo de descomposición química (pág. 7).",
+     "html": "<ul>\n<li>Composición: mezcla que contiene un 88% de R134a <span class=\"pag\">pág. 7</span>.</li>\n<li>Reciclaje limitado debido al riesgo de descomposición química <span class=\"pag\">pág. 7</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Dónde se usa y cantidades",
+     "texto": "Ofrecido como fluido de sustitución alternativa del R12 (pág. 7). Cantidades: No documentado en fuentes (pág. 7).",
+     "html": "<p>Ofrecido como fluido de sustitución alternativa del R12 <span class=\"pag\">pág. 7</span>. Cantidades: No documentado en fuentes <span class=\"pag\">pág. 7</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Compatibilidades y mezclas prohibidas",
+     "texto": "Permite la utilización de aceites minerales (pág. 7). No dispone de válvulas de carga específicas, lo que genera riesgo de mezcla no deseada (pág. 7).",
+     "html": "<ul>\n<li>Permite la utilización de aceites minerales <span class=\"pag\">pág. 7</span>.</li>\n<li>No dispone de válvulas de carga específicas, lo que genera riesgo de mezcla no deseada <span class=\"pag\">pág. 7</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Identificación",
+     "texto": "No dispone de válvulas de carga específicas para su identificación (pág. 7).",
+     "html": "<p>No dispone de válvulas de carga específicas para su identificación <span class=\"pag\">pág. 7</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Manipulación, almacenamiento y residuos",
+     "texto": "Requiere el uso de equipamiento específico dedicado (estaciones de carga, manómetros y botellas de recuperación exclusivas) (pág. 7).",
+     "html": "<p>Requiere el uso de equipamiento específico dedicado (estaciones de carga, manómetros y botellas de recuperación exclusivas) <span class=\"pag\">pág. 7</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Riesgos y normativa",
+     "texto": "Coste económico muy elevado (del orden de 2.000 ptas/kg en el año 2000) (pág. 7). Desaconsejado por Valeo por su elevado coste, falta de válvulas de servicio dedicadas y limitaciones en su reciclaje (pág. 7).",
+     "html": "<ul>\n<li>Coste económico muy elevado (del orden de 2.000 ptas/kg en el año 2000) <span class=\"pag\">pág. 7</span>.</li>\n<li>Desaconsejado por Valeo por su elevado coste, falta de válvulas de servicio dedicadas y limitaciones en su reciclaje <span class=\"pag\">pág. 7</span>.</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.reconversion-r12-r134a.los-fluidos",
+   "nt": 894,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "reconversion-r12-r134a",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Criterios técnicos para la reconversión de R12 a R134a",
+   "codigo": "",
+   "menu": "Criterios técnicos para la reconversió",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "LOS FLUIDOS.PDF, págs. 7-8",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r12",
+    "refrigerante-r134a",
+    "aceite-frigorifico",
+    "filtro-deshidratador",
+    "compresor"
+   ],
+   "palabras": [
+    "retrofit",
+    "aceite PAG",
+    "filtro deshidratante",
+    "pureza 98%",
+    "destrucción R12"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Análisis técnico y legal del proceso de reconversión (retrofit) de circuitos de R12 a R134a, aclarando los requerimientos reales de intervención y desmontando mitos de taller (pág. 7-8).",
+     "html": "<p>Análisis técnico y legal del proceso de reconversión (retrofit) de circuitos de R12 a R134a, aclarando los requerimientos reales de intervención y desmontando mitos de taller <span class=\"pag\">pág. 7-8</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El R134a es el único fluido de sustitución que ofrece máxima seguridad, viabilidad legal a largo plazo y facilidad de aplicación. La reconversión exige sustituir el aceite mineral por PAG y cambiar el filtro deshidratante para evitar la rotura del compresor (pág. 7-8).",
+     "html": "<p>El R134a es el único fluido de sustitución que ofrece máxima seguridad, viabilidad legal a largo plazo y facilidad de aplicación. La reconversión exige sustituir el aceite mineral por PAG y cambiar el filtro deshidratante para evitar la rotura del compresor <span class=\"pag\">pág. 7-8</span>.</p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Resolución de dudas sobre el procedimiento de reconversión : ¿Se puede reconvertir con fluidos distintos al R134a? : Verdadero conceptualmente, pero ningún fluido ofrece tanta seguridad como el R134a; además, las mezclas con hidrocarburos han sido prohibidas y los HCFC están en fase de prohibición (pág. 7). ¿Es una operación compleja y costosa? : Falso. Consiste básicamente en sustituir el aceite del compresor, cambiar el filtro deshidratante y realizar la recarga del nuevo fluido R134a (pág. 7). ¿Es posible realizar la reconversión cambiando solo el fluido? : Verdadero, pero exige imperativamente cambiar el filtro deshidratante (obligatorio al abrir el circuito), eliminar componentes con fugas y sustituir el aceite mineral por un aceite PAG (ya que el mineral no es miscible con el R134a y provocaría la rotura del compresor por falta de retorno) (pág. 8). ¿Es interesante recuperar y reutilizar el R12? : Falso. Implica elevado riesgo legal, el R12 usado difícilmente alcanza la pureza mínima requerida (98%), su reciclaje exige instalaciones industriales especializadas y su destrucción debe realizarse por organismos autorizados (pág. 8).",
+     "html": "<ul>\n<li><strong>Resolución de dudas sobre el procedimiento de reconversión</strong>:<ul>\n<li><em>¿Se puede reconvertir con fluidos distintos al R134a?</em>: Verdadero conceptualmente, pero ningún fluido ofrece tanta seguridad como el R134a; además, las mezclas con hidrocarburos han sido prohibidas y los HCFC están en fase de prohibición <span class=\"pag\">pág. 7</span>.</li>\n<li><em>¿Es una operación compleja y costosa?</em>: Falso. Consiste básicamente en sustituir el aceite del compresor, cambiar el filtro deshidratante y realizar la recarga del nuevo fluido R134a <span class=\"pag\">pág. 7</span>.</li>\n<li><em>¿Es posible realizar la reconversión cambiando solo el fluido?</em>: Verdadero, pero exige imperativamente cambiar el filtro deshidratante (obligatorio al abrir el circuito), eliminar componentes con fugas y sustituir el aceite mineral por un aceite PAG (ya que el mineral no es miscible con el R134a y provocaría la rotura del compresor por falta de retorno) <span class=\"pag\">pág. 8</span>.</li>\n<li><em>¿Es interesante recuperar y reutilizar el R12?</em>: Falso. Implica elevado riesgo legal, el R12 usado difícilmente alcanza la pureza mínima requerida (98%), su reciclaje exige instalaciones industriales especializadas y su destrucción debe realizarse por organismos autorizados <span class=\"pag\">pág. 8</span>.</li>\n</ul>\n</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Nivel de pureza mínimo requerido en el R12 para poder ser reutilizado: 98% (pág. 8).",
+     "html": "<ul>\n<li>Nivel de pureza mínimo requerido en el R12 para poder ser reutilizado: 98% <span class=\"pag\">pág. 8</span>.</li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Introducir R134a manteniendo el aceite mineral en el compresor, lo que impide el retorno del lubricante y provoca el gripado del compresor (pág. 8). Reutilizar R12 recuperado en el taller sin garantizar previamente en instalación industrial una pureza mínima del 98% (pág. 8).",
+     "html": "<ul>\n<li>Introducir R134a manteniendo el aceite mineral en el compresor, lo que impide el retorno del lubricante y provoca el gripado del compresor <span class=\"pag\">pág. 8</span>.</li>\n<li>Reutilizar R12 recuperado en el taller sin garantizar previamente en instalación industrial una pureza mínima del 98% <span class=\"pag\">pág. 8</span>.</li>\n</ul>",
      "nivel": ""
     }
    ]
