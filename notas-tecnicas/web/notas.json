@@ -3498,6 +3498,78 @@
    "hecha": false
   },
   {
+   "nombre": "NT700_01",
+   "nt": 700,
+   "titulo": "Compresor de paletas",
+   "seccion": "4. El compresor",
+   "descripcion": "Despiece y sección del compresor de paletas con rotor excéntrico, paletas y cilindro — Fuente: 6. Compresores, pág. 50-51 (pág. 50, 51).",
+   "hecha": false
+  },
+  {
+   "nombre": "NT701_01",
+   "nt": 701,
+   "titulo": "Compresor en espiral",
+   "seccion": "4. El compresor",
+   "descripcion": "Sección del compresor en espiral scroll con motor eléctrico integrado y espirales fija/giratoria — Fuente: 6. Compresores, pág. 51 (pág. 51).",
+   "hecha": false
+  },
+  {
+   "nombre": "NT702_01",
+   "nt": 702,
+   "titulo": "Climatización por bomba de calor en vehículo eléctrico",
+   "seccion": "2. Fundamentos",
+   "descripcion": "Esquema de componentes del sistema de climatización con bomba de calor en Renault Zoe — Fuente: 6. Compresores, pág. 52 (pág. 52).",
+   "hecha": false
+  },
+  {
+   "nombre": "NT703_01",
+   "nt": 703,
+   "titulo": "Compresor de disco oscilante de cilindrada fija",
+   "seccion": "4. El compresor",
+   "descripcion": "Sección del compresor de disco oscilante fijo con émbolos, disco y placa de válvulas — Fuente: 6. Compresores, pág. 53 (pág. 53).",
+   "hecha": false
+  },
+  {
+   "nombre": "NT704_01",
+   "nt": 704,
+   "titulo": "Embrague electromagnético del compresor",
+   "seccion": "4. El compresor",
+   "descripcion": "Acoplamiento de embrague electromagnético en posición desactivada y activada con indicación del juego de montaje — Fuente: 6. Compresores, pág. 54-55 (pág. 54, 55).",
+   "hecha": false
+  },
+  {
+   "nombre": "NT705_01",
+   "nt": 705,
+   "titulo": "Compresor de disco oscilante autorregulado",
+   "seccion": "4. El compresor",
+   "descripcion": "Sección del compresor autorregulado en posición de máximo y mínimo desplazamiento con detalle de fuelles y presiones — Fuente: 6. Compresores, pág. 56, 57 y 58 (pág. 56, 57, 58).",
+   "hecha": false
+  },
+  {
+   "nombre": "NT706_01",
+   "nt": 706,
+   "titulo": "Compresor de disco oscilante regulado con electroválvula",
+   "seccion": "4. El compresor",
+   "descripcion": "Detalle del sistema de seguridad de la polea por deformación del disco de arrastre y rotura de láminas — Fuente: 6. Compresores, pág. 59-60 (pág. 59, 60).",
+   "hecha": false
+  },
+  {
+   "nombre": "NT706_02",
+   "nt": 706,
+   "titulo": "Compresor de disco oscilante regulado con electroválvula",
+   "seccion": "4. El compresor",
+   "descripcion": "Posiciones de mínimo y máximo rendimiento del compresor regulado con electroválvula — Fuente: 6. Compresores, pág. 60 y 61 (pág. 60, 61).",
+   "hecha": false
+  },
+  {
+   "nombre": "NT707_01",
+   "nt": 707,
+   "titulo": "Electroválvula de regulación del compresor",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Sección de la electroválvula de regulación con vástago, bobina y pasos de alta/baja presión, e ilustración de señal PWM — Fuente: 6. Compresores, pág. 62-63 (pág. 62, 63).",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -3522,7 +3594,7 @@
    "hecha": false
   }
  ],
- "total": 689,
+ "total": 699,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -7442,6 +7514,66 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema del ciclo frigorífico con los dos niveles de presión (alta presión / alta temperatura en rojo | baja presión / baja temperatura en azul) — Fuente: 3. CIRCUITO FRIGORÍGENO 1 AL.pptx | pág. 7 y 63 (pág. 7 | 63) | Representación del ciclo frigorífico en el Diagrama de Mollier — Fuente: 3. CIRCUITO FRIGORÍGENO 1 AL.pptx | pág. 73 y 74 (pág. 73 | 74) | |",
      "html": "<ul>\n<li>Esquema del ciclo frigorífico con los dos niveles de presión (alta presión / alta temperatura en rojo | baja presión / baja temperatura en azul) — Fuente: 3. CIRCUITO FRIGORÍGENO 1 AL.pptx | pág. 7 y 63 <span class=\"pag\">pág. 7 | 63</span> |</li>\n<li>Representación del ciclo frigorífico en el Diagrama de Mollier — Fuente: 3. CIRCUITO FRIGORÍGENO 1 AL.pptx | pág. 73 y 74 <span class=\"pag\">pág. 73 | 74</span> |  |</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.ciclo-frigorifico.bomba-de-calor.6",
+   "nt": 702,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ciclo-frigorifico",
+   "seccion": "2. Fundamentos",
+   "subgrupo": "",
+   "titulo": "Climatización por bomba de calor en vehículo eléctrico",
+   "codigo": "",
+   "menu": "Climatización por bomba de calor en ve",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "6. Compresores, págs. 52-53",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "bomba-de-calor",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "evaporador",
+    "condensador",
+    "estrangulador"
+   ],
+   "palabras": [
+    "bomba de calor",
+    "Renault Zoe",
+    "electrovalvula",
+    "bypass",
+    "condensador interior"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Generar calor y frío para el habitáculo utilizando el mismo equipo de climatización modificado mediante electroválvulas de conmutación en vehículos eléctricos (pág. 52).",
+     "html": "<p>Generar calor y frío para el habitáculo utilizando el mismo equipo de climatización modificado mediante electroválvulas de conmutación en vehículos eléctricos <span class=\"pag\">pág. 52</span>.</p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Modificando el recorrido del fluido refrigerante mediante la activación de electroválvulas de paso, se invierte la función de los intercambiadores térmicos para aportar frío o calor al aire impulsado hacia el habitáculo (pág. 52-53).",
+     "html": "<p>Modificando el recorrido del fluido refrigerante mediante la activación de electroválvulas de paso, se invierte la función de los intercambiadores térmicos para aportar frío o calor al aire impulsado hacia el habitáculo <span class=\"pag\">pág. 52-53</span>.</p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Componentes del sistema (ejemplo Renault Zoe) : Condensador/evaporador externo delantero. Compresor eléctrico de alto voltaje. Filtro/acumulador. Condensador en el interior del habitáculo. Evaporador en el interior del habitáculo. Válvula expansora de orificio calibrado. Calculador de climatización. Calculador para la bomba de calor. Turbina de aire fresco. Electroválvula de by-pass. Electroválvula de corte de evaporador interior (pág. 52-53). Funcionamiento en Modo Climatización (Refrigeración) : La electroválvula (10) se activa creando un by-pass que anula la válvula expansora anterior al condensador exterior. El compresor hace circular el fluido por los condensadores (1 y 4). La válvula expansora de orificio calibrado (6) reduce la presión antes del evaporador interior (5). La trampilla de calefacción se cierra y entra aire frío al habitáculo (pág. 53). Funcionamiento en Modo Calefacción : La electroválvula (11) se activa anulando el paso de fluido hacia el evaporador interior (5). El compresor envía refrigerante al condensador interior (4). La válvula de orificio calibrado (6) reduce la presión hacia el condensador exterior (1), que pasa a trabajar como evaporador. La turbina (9) impulsa aire que se calienta al atravesar el condensador interior (4) y entra caliente al habitáculo (pág. 53).",
+     "html": "<ul>\n<li><strong>Componentes del sistema (ejemplo Renault Zoe)</strong>:<ol>\n<li>Condensador/evaporador externo delantero.</li>\n<li>Compresor eléctrico de alto voltaje.</li>\n<li>Filtro/acumulador.</li>\n<li>Condensador en el interior del habitáculo.</li>\n<li>Evaporador en el interior del habitáculo.</li>\n<li>Válvula expansora de orificio calibrado.</li>\n<li>Calculador de climatización.</li>\n<li>Calculador para la bomba de calor.</li>\n<li>Turbina de aire fresco.</li>\n<li>Electroválvula de by-pass.</li>\n<li>Electroválvula de corte de evaporador interior <span class=\"pag\">pág. 52-53</span>.</li>\n</ol>\n</li>\n<li>\n<p><strong>Funcionamiento en Modo Climatización (Refrigeración)</strong>:\n  La electroválvula (10) se activa creando un by-pass que anula la válvula expansora anterior al condensador exterior. El compresor hace circular el fluido por los condensadores (1 y 4). La válvula expansora de orificio calibrado (6) reduce la presión antes del evaporador interior (5). La trampilla de calefacción se cierra y entra aire frío al habitáculo <span class=\"pag\">pág. 53</span>.</p>\n</li>\n<li>\n<p><strong>Funcionamiento en Modo Calefacción</strong>:\n  La electroválvula (11) se activa anulando el paso de fluido hacia el evaporador interior (5). El compresor envía refrigerante al condensador interior (4). La válvula de orificio calibrado (6) reduce la presión hacia el condensador exterior (1), que pasa a trabajar como evaporador. La turbina (9) impulsa aire que se calienta al atravesar el condensador interior (4) y entra caliente al habitáculo <span class=\"pag\">pág. 53</span>.</p>\n</li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema de componentes del sistema de climatización con bomba de calor en Renault Zoe — Fuente: 6. Compresores, pág. 52 (pág. 52).",
+     "html": "<ul>\n<li>Esquema de componentes del sistema de climatización con bomba de calor en Renault Zoe — Fuente: 6. Compresores, pág. 52 <span class=\"pag\">pág. 52</span>.</li>\n</ul>"
     }
    ]
   },
@@ -11435,6 +11567,502 @@
    ]
   },
   {
+   "id": "ssc.compresor.6",
+   "nt": 698,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "compresor",
+   "seccion": "4. El compresor",
+   "subgrupo": "",
+   "titulo": "Compresor de aire acondicionado",
+   "codigo": "",
+   "menu": "Compresor de aire acondicionado",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "6. Compresores, págs. 49",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "ciclo-frigorifico",
+   "relacionados": [
+    "condensador",
+    "evaporador",
+    "valvula-sobrepresion",
+    "aceite-frigorifico"
+   ],
+   "palabras": [
+    "presion",
+    "fluido refrigerante",
+    "baja presion",
+    "alta presion",
+    "aspiracion gaseosa"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Aumentar la presión del fluido refrigerante y obligarlo a circular por los componentes del sistema de aire acondicionado, permitiendo la posterior expansión y enfriamiento del agente frigorífico en el evaporador (pág. 49).",
+     "html": "<p>Aumentar la presión del fluido refrigerante y obligarlo a circular por los componentes del sistema de aire acondicionado, permitiendo la posterior expansión y enfriamiento del agente frigorífico en el evaporador <span class=\"pag\">pág. 49</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Constituye el punto de separación entre el lado de baja presión y el lado de alta presión del circuito frigorífico (pág. 49). Trabaja únicamente cuando está activado el climatizador (pág. 49). Tipos principales según el procedimiento de trabajo: de émbolos, de paletas, de espiral y de disco oscilante (pág. 49).",
+     "html": "<ul>\n<li>Constituye el punto de separación entre el lado de baja presión y el lado de alta presión del circuito frigorífico <span class=\"pag\">pág. 49</span>.</li>\n<li>Trabaja únicamente cuando está activado el climatizador <span class=\"pag\">pág. 49</span>.</li>\n<li>Tipos principales según el procedimiento de trabajo: de émbolos, de paletas, de espiral y de disco oscilante <span class=\"pag\">pág. 49</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Aspira el agente frigorífico gaseoso frío y a baja presión procedente del evaporador y lo comprime, impulsándolo como gas caliente a alta presión hacia el condensador (pág. 49). Es primordial que el agente frigorífico aspirado se encuentre en estado gaseoso, ya que los líquidos son incompresibles y su intento de compresión produce la destrucción mecánica del compresor (pág. 49).",
+     "html": "<p>Aspira el agente frigorífico gaseoso frío y a baja presión procedente del evaporador y lo comprime, impulsándolo como gas caliente a alta presión hacia el condensador <span class=\"pag\">pág. 49</span>.\nEs primordial que el agente frigorífico aspirado se encuentre en estado gaseoso, ya que los líquidos son incompresibles y su intento de compresión produce la destrucción mecánica del compresor <span class=\"pag\">pág. 49</span>.</p>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Destrucción mecánica por intento de compresión de refrigerante en estado líquido (golpe de líquido) (pág. 49).",
+     "html": "<p>Destrucción mecánica por intento de compresión de refrigerante en estado líquido (golpe de líquido) <span class=\"pag\">pág. 49</span>.</p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Imposibilidad de aumentar la presión del fluido y paralización de la circulación de refrigerante por el circuito (pág. 49).",
+     "html": "<p>Imposibilidad de aumentar la presión del fluido y paralización de la circulación de refrigerante por el circuito <span class=\"pag\">pág. 49</span>.</p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Utilizar lubricante especial para máquinas frigoríficas; el 50% del total del aceite se encuentra dentro del compresor y el otro 50% circula con el agente frigorífico (pág. 49). Protección del equipo mediante una válvula de sobrepresión integrada que libera fluido en caso de presión excesiva (pág. 49).",
+     "html": "<ul>\n<li>Utilizar lubricante especial para máquinas frigoríficas; el 50% del total del aceite se encuentra dentro del compresor y el otro 50% circula con el agente frigorífico <span class=\"pag\">pág. 49</span>.</li>\n<li>Protección del equipo mediante una válvula de sobrepresión integrada que libera fluido en caso de presión excesiva <span class=\"pag\">pág. 49</span>.</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.compresor.embolos.6",
+   "nt": 699,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "compresor",
+   "seccion": "4. El compresor",
+   "subgrupo": "",
+   "titulo": "Compresor de émbolos",
+   "codigo": "",
+   "menu": "Compresor de émbolos",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "6. Compresores, págs. 49-50",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "embolos",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "ciclo-frigorifico",
+   "relacionados": [
+    "compresor"
+   ],
+   "palabras": [
+    "vehiculo industrial",
+    "autobuses",
+    "ferrocarril",
+    "2 tiempos",
+    "laminas"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Poner en circulación un volumen importante de fluido refrigerante para climatizar habitáculos de gran tamaño como autobuses, vagones de ferrocarril o furgones isotérmicos (pág. 49-50).",
+     "html": "<p>Poner en circulación un volumen importante de fluido refrigerante para climatizar habitáculos de gran tamaño como autobuses, vagones de ferrocarril o furgones isotérmicos <span class=\"pag\">pág. 49-50</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Utilizado principalmente en vehículo industrial y transporte refrigerado o congeladores móviles (pág. 49). Configuración de 2, 4 o 6 cilindros según las necesidades del equipo (pág. 50). Accionamiento mecánico mediante correa en autobuses o por motor eléctrico en aplicaciones de ferrocarril (pág. 50). Destaca por ser muy robusto y de alta fiabilidad, pero genera oscilaciones de presión y es más ruidoso (pág. 50).",
+     "html": "<ul>\n<li>Utilizado principalmente en vehículo industrial y transporte refrigerado o congeladores móviles <span class=\"pag\">pág. 49</span>.</li>\n<li>Configuración de 2, 4 o 6 cilindros según las necesidades del equipo <span class=\"pag\">pág. 50</span>.</li>\n<li>Accionamiento mecánico mediante correa en autobuses o por motor eléctrico en aplicaciones de ferrocarril <span class=\"pag\">pág. 50</span>.</li>\n<li>Destaca por ser muy robusto y de alta fiabilidad, pero genera oscilaciones de presión y es más ruidoso <span class=\"pag\">pág. 50</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Funciona de forma similar a un motor de combustión de dos tiempos: admisión de gas al bajar el émbolo y compresión al subir. La admisión y el escape se controlan mediante válvulas de láminas (pág. 50).",
+     "html": "<p>Funciona de forma similar a un motor de combustión de dos tiempos: admisión de gas al bajar el émbolo y compresión al subir. La admisión y el escape se controlan mediante válvulas de láminas <span class=\"pag\">pág. 50</span>.</p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Rendimiento elevado: comprendido entre el 80% y el 90% (pág. 50). Carga orientativa de fluido refrigerante en un autobús: unos 12 kg (pág. 50).",
+     "html": "<ul>\n<li>Rendimiento elevado: comprendido entre el 80% y el 90% <span class=\"pag\">pág. 50</span>.</li>\n<li>Carga orientativa de fluido refrigerante en un autobús: unos 12 kg <span class=\"pag\">pág. 50</span>.</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.compresor.paletas.6",
+   "nt": 700,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "compresor",
+   "seccion": "4. El compresor",
+   "subgrupo": "",
+   "titulo": "Compresor de paletas",
+   "codigo": "",
+   "menu": "Compresor de paletas",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "6. Compresores, págs. 50-51",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "paletas",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "ciclo-frigorifico",
+   "relacionados": [
+    "compresor"
+   ],
+   "palabras": [
+    "rotor excentrico",
+    "paletas flotantes",
+    "fuerza centrifuga",
+    "sentido de giro unico"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Comprimir el agente frigorífico gaseoso mediante la variación de volumen de las cámaras formadas por paletas flotantes sobre un rotor excéntrico (pág. 50-51).",
+     "html": "<p>Comprimir el agente frigorífico gaseoso mediante la variación de volumen de las cámaras formadas por paletas flotantes sobre un rotor excéntrico <span class=\"pag\">pág. 50-51</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Poco utilizado actualmente en turismos debido a su bajo rendimiento a bajas revoluciones del motor (pág. 50). Construcción sencilla con hasta un 30% menos de piezas que otros compresores (pág. 50). No precisa válvula de admisión y mantiene la presión muy constante (pág. 50). Tiene un sentido de giro único; si gira al revés no comprime fluido (pág. 51). Presenta alta resistencia a los golpes de ariete (pág. 51).",
+     "html": "<ul>\n<li>Poco utilizado actualmente en turismos debido a su bajo rendimiento a bajas revoluciones del motor <span class=\"pag\">pág. 50</span>.</li>\n<li>Construcción sencilla con hasta un 30% menos de piezas que otros compresores <span class=\"pag\">pág. 50</span>.</li>\n<li>No precisa válvula de admisión y mantiene la presión muy constante <span class=\"pag\">pág. 50</span>.</li>\n<li>Tiene un sentido de giro único; si gira al revés no comprime fluido <span class=\"pag\">pág. 51</span>.</li>\n<li>Presenta alta resistencia a los golpes de ariete <span class=\"pag\">pág. 51</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Consta de un rotor de paletas flotantes que gira en el interior de una carcasa circular u ovalada situado excéntricamente. La fuerza centrífuga del giro desplaza las paletas hacia el exterior contra la carcasa, creando cámaras. Al estar el rotor descentrado, las cámaras aumentan en la zona de aspiración generando depresión para la entrada de gas, y se reducen hacia la zona de impulsión comprimiendo el gas hacia el condensador (pág. 50-51).",
+     "html": "<p>Consta de un rotor de paletas flotantes que gira en el interior de una carcasa circular u ovalada situado excéntricamente. La fuerza centrífuga del giro desplaza las paletas hacia el exterior contra la carcasa, creando cámaras. Al estar el rotor descentrado, las cámaras aumentan en la zona de aspiración generando depresión para la entrada de gas, y se reducen hacia la zona de impulsión comprimiendo el gas hacia el condensador <span class=\"pag\">pág. 50-51</span>.</p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Rendimiento a régimen medio y alto: entre el 75% y el 90% (pág. 50).",
+     "html": "<p>Rendimiento a régimen medio y alto: entre el 75% y el 90% <span class=\"pag\">pág. 50</span>.</p>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fugas de gas comprimido entre los laterales de las paletas debidas a la tolerancia necesaria para compensar las dilataciones por calor (pág. 51).",
+     "html": "<p>Fugas de gas comprimido entre los laterales de las paletas debidas a la tolerancia necesaria para compensar las dilataciones por calor <span class=\"pag\">pág. 51</span>.</p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Pérdida de rendimiento frigorífico al ralentí o a bajas revoluciones por menor fuerza centrífuga sobre las paletas (pág. 50-51).",
+     "html": "<p>Pérdida de rendimiento frigorífico al ralentí o a bajas revoluciones por menor fuerza centrífuga sobre las paletas <span class=\"pag\">pág. 50-51</span>.</p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Despiece y sección del compresor de paletas con rotor excéntrico, paletas y cilindro — Fuente: 6. Compresores, pág. 50-51 (pág. 50, 51).",
+     "html": "<ul>\n<li>Despiece y sección del compresor de paletas con rotor excéntrico, paletas y cilindro — Fuente: 6. Compresores, pág. 50-51 <span class=\"pag\">pág. 50, 51</span>.</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.compresor.espiral.6",
+   "nt": 701,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "compresor",
+   "seccion": "4. El compresor",
+   "subgrupo": "",
+   "titulo": "Compresor en espiral",
+   "codigo": "",
+   "menu": "Compresor en espiral",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "6. Compresores, págs. 51-52",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "espiral",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "ciclo-frigorifico",
+   "relacionados": [
+    "compresor",
+    "refrigerante-r134a",
+    "refrigerante-r1234yf",
+    "aceite-frigorifico"
+   ],
+   "palabras": [
+    "scroll",
+    "vehiculo electrico",
+    "vehiculo hibrido",
+    "alta tension",
+    "LIN-BUS",
+    "aceite POE"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Comprimir e impulsar el fluido refrigerante (R134a o R1234yf) por el evaporador y condensador en vehículos híbridos y eléctricos mediante el movimiento excéntrico de espirales (pág. 51-52).",
+     "html": "<p>Comprimir e impulsar el fluido refrigerante (R134a o R1234yf) por el evaporador y condensador en vehículos híbridos y eléctricos mediante el movimiento excéntrico de espirales <span class=\"pag\">pág. 51-52</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Denominado también compresor scroll, accionado por un motor eléctrico integrado alimentado con alta tensión (pág. 51-52). Constituido por dos espirales engranadas: una espiral fija y una espiral giratoria (pág. 51). Puede integrar una Unidad de Control del compresor comunicada mediante línea LIN-BUS con la Unidad de Control de climatización (pág. 52). Trabaja habitualmente con regulación por orificio calibrado y filtro acumulador en el circuito de baja presión (pág. 52).",
+     "html": "<ul>\n<li>Denominado también compresor scroll, accionado por un motor eléctrico integrado alimentado con alta tensión <span class=\"pag\">pág. 51-52</span>.</li>\n<li>Constituido por dos espirales engranadas: una espiral fija y una espiral giratoria <span class=\"pag\">pág. 51</span>.</li>\n<li>Puede integrar una Unidad de Control del compresor comunicada mediante línea LIN-BUS con la Unidad de Control de climatización <span class=\"pag\">pág. 52</span>.</li>\n<li>Trabaja habitualmente con regulación por orificio calibrado y filtro acumulador en el circuito de baja presión <span class=\"pag\">pág. 52</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El motor eléctrico impulsa la espiral giratoria mediante una excéntrica describiendo una trayectoria circular. Este movimiento excéntrico forma cámaras progresivamente más pequeñas entre ambas espirales, comprimiendo el fluido refrigerante (pág. 51).",
+     "html": "<p>El motor eléctrico impulsa la espiral giratoria mediante una excéntrica describiendo una trayectoria circular. Este movimiento excéntrico forma cámaras progresivamente más pequeñas entre ambas espirales, comprimiendo el fluido refrigerante <span class=\"pag\">pág. 51</span>.</p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Alimentación del motor eléctrico: Alta tensión (alto voltaje) procedente de la batería del vehículo (pág. 52).",
+     "html": "<p>Alimentación del motor eléctrico: Alta tensión (alto voltaje) procedente de la batería del vehículo <span class=\"pag\">pág. 52</span>.</p>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Verificación estricta de la ausencia de tensión en la red de alto voltaje (cableado de color naranja) antes de realizar cualquier comprobación o manipulación (pág. 52).",
+     "html": "<p>Verificación estricta de la ausencia de tensión en la red de alto voltaje (cableado de color naranja) antes de realizar cualquier comprobación o manipulación <span class=\"pag\">pág. 52</span>.</p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Utilizar exclusivamente aceite lubricante de tipo POE especial no conductor de la electricidad (pág. 52). Manipulación autorizada únicamente a personal certificado como Técnico en Alto Voltaje (HVT) (pág. 52).",
+     "html": "<ul>\n<li>Utilizar exclusivamente aceite lubricante de tipo POE especial no conductor de la electricidad <span class=\"pag\">pág. 52</span>.</li>\n<li>Manipulación autorizada únicamente a personal certificado como Técnico en Alto Voltaje (HVT) <span class=\"pag\">pág. 52</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Sección del compresor en espiral scroll con motor eléctrico integrado y espirales fija/giratoria — Fuente: 6. Compresores, pág. 51 (pág. 51).",
+     "html": "<ul>\n<li>Sección del compresor en espiral scroll con motor eléctrico integrado y espirales fija/giratoria — Fuente: 6. Compresores, pág. 51 <span class=\"pag\">pág. 51</span>.</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.compresor.disco-oscilante-fijo.6",
+   "nt": 703,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "compresor",
+   "seccion": "4. El compresor",
+   "subgrupo": "",
+   "titulo": "Compresor de disco oscilante de cilindrada fija",
+   "codigo": "",
+   "menu": "Compresor de disco oscilante de cilind",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "6. Compresores, págs. 53-54",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "disco-oscilante-fijo",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "ciclo-frigorifico",
+   "relacionados": [
+    "compresor",
+    "embrague-compresor"
+   ],
+   "palabras": [
+    "cilindrada fija",
+    "disco oscilante",
+    "embolos",
+    "placa de laminas",
+    "acoplamiento magnetico"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Comprimir el fluido refrigerante manteniendo un volumen desplazado constante en cada vuelta del eje, adaptando el rendimiento mediante la conexión y desconexión periódica del acoplamiento magnético (pág. 53-54).",
+     "html": "<p>Comprimir el fluido refrigerante manteniendo un volumen desplazado constante en cada vuelta del eje, adaptando el rendimiento mediante la conexión y desconexión periódica del acoplamiento magnético <span class=\"pag\">pág. 53-54</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Cilindrada constante determinada por el diámetro de los cilindros, su carrera y el número de émbolos (de 3 a 10 émbolos concéntricos al eje) (pág. 53-54). Equipado en el extremo opuesto al accionamiento con una placa de válvulas de láminas (aspirante e impelente) para cada émbolo (pág. 54). Requiere obligatoriamente un embrague electromagnético para conmutar su funcionamiento (pág. 54).",
+     "html": "<ul>\n<li>Cilindrada constante determinada por el diámetro de los cilindros, su carrera y el número de émbolos (de 3 a 10 émbolos concéntricos al eje) <span class=\"pag\">pág. 53-54</span>.</li>\n<li>Equipado en el extremo opuesto al accionamiento con una placa de válvulas de láminas (aspirante e impelente) para cada émbolo <span class=\"pag\">pág. 54</span>.</li>\n<li>Requiere obligatoriamente un embrague electromagnético para conmutar su funcionamiento <span class=\"pag\">pág. 54</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El eje de impulsión transforma su movimiento rotativo en un movimiento lineal alternativo para los émbolos mediante el disco oscilante. Las válvulas de láminas abren y cierran automáticamente al ritmo de trabajo. El rendimiento depende directamente del régimen de giro del motor térmico (entre 800 y 6.000 rpm), por lo que las necesidades frigoríficas se regulan activando y desactivando el embrague electromagnético (pág. 54).",
+     "html": "<p>El eje de impulsión transforma su movimiento rotativo en un movimiento lineal alternativo para los émbolos mediante el disco oscilante. Las válvulas de láminas abren y cierran automáticamente al ritmo de trabajo. El rendimiento depende directamente del régimen de giro del motor térmico (entre 800 y 6.000 rpm), por lo que las necesidades frigoríficas se regulan activando y desactivando el embrague electromagnético <span class=\"pag\">pág. 54</span>.</p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Régimen de giro del compresor: entre 800 rpm y 6.000 rpm (pág. 54).",
+     "html": "<p>Régimen de giro del compresor: entre 800 rpm y 6.000 rpm <span class=\"pag\">pág. 54</span>.</p>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Variación directa del rendimiento y llenado del evaporador en función de las revoluciones del motor térmico (pág. 54).",
+     "html": "<p>Variación directa del rendimiento y llenado del evaporador en función de las revoluciones del motor térmico <span class=\"pag\">pág. 54</span>.</p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Sección del compresor de disco oscilante fijo con émbolos, disco y placa de válvulas — Fuente: 6. Compresores, pág. 53 (pág. 53).",
+     "html": "<ul>\n<li>Sección del compresor de disco oscilante fijo con émbolos, disco y placa de válvulas — Fuente: 6. Compresores, pág. 53 <span class=\"pag\">pág. 53</span>.</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.compresor.disco-oscilante-autorregulado.6",
+   "nt": 705,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "compresor",
+   "seccion": "4. El compresor",
+   "subgrupo": "",
+   "titulo": "Compresor de disco oscilante autorregulado",
+   "codigo": "",
+   "menu": "Compresor de disco oscilante autorregu",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "6. Compresores, págs. 55-58",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "disco-oscilante-autorregulado",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "ciclo-frigorifico",
+   "relacionados": [
+    "compresor",
+    "embrague-compresor",
+    "valvula-expansion"
+   ],
+   "palabras": [
+    "cilindrada variable",
+    "autorregulado",
+    "valvula hidraulica",
+    "presion de camara",
+    "fuele 1",
+    "fuele 2"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Ajustar automáticamente la cilindrada y el caudal de refrigerante impelido entre el 5% y el 100% mediante una válvula hidráulica interna gobernada por las presiones de alta y baja (pág. 55-57).",
+     "html": "<p>Ajustar automáticamente la cilindrada y el caudal de refrigerante impelido entre el 5% y el 100% mediante una válvula hidráulica interna gobernada por las presiones de alta y baja <span class=\"pag\">pág. 55-57</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Compresor de cilindrada variable autorregulado internamente mediante válvula hidráulica (pág. 55-57). El embrague permanece continuamente conectado mientras funciona el climatizador, eliminando ruidos y tirones de acoplamiento (pág. 55). Modifica la inclinación del disco oscilante guiado longitudinalmente en un carril de deslizamiento entre dos muelles (pág. 56). Mantiene estable la presión de baja entre 1,8 bar y 2 bar, prescindiendo del termostato en el evaporador (pág. 56).",
+     "html": "<ul>\n<li>Compresor de cilindrada variable autorregulado internamente mediante válvula hidráulica <span class=\"pag\">pág. 55-57</span>.</li>\n<li>El embrague permanece continuamente conectado mientras funciona el climatizador, eliminando ruidos y tirones de acoplamiento <span class=\"pag\">pág. 55</span>.</li>\n<li>Modifica la inclinación del disco oscilante guiado longitudinalmente en un carril de deslizamiento entre dos muelles <span class=\"pag\">pág. 56</span>.</li>\n<li>Mantiene estable la presión de baja entre 1,8 bar y 2 bar, prescindiendo del termostato en el evaporador <span class=\"pag\">pág. 56</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "La inclinación del disco depende del equilibrio entre la presión de la cámara del cárter (Pc) y la presión de succión/baja (Ps): Alto caudal (demanda alta de frío) : Presiones de alta y baja intensas. La alta presión comprime el fuelle 2 y la baja comprime el fuelle 1, abriendo la válvula reguladora para comunicar la cámara con la succión (Pc < Ps). La presión en la cabeza de los émbolos supera a la del cárter, aumentando la inclinación del disco y la carrera al máximo (pág. 56-57). Bajo caudal (demanda baja de frío) : Presiones de alta y baja débiles. Los fuelles se expanden y la válvula reguladora cierra. La alta presión entra al cárter por el taladro estrangulador calibrado elevando Pc (Pc > Ps). La fuerza sobre la parte inferior de los émbolos supera a la superior, disminuyendo la inclinación del disco y la carrera al mínimo (pág. 56-58).",
+     "html": "<p>La inclinación del disco depende del equilibrio entre la presión de la cámara del cárter (Pc) y la presión de succión/baja (Ps):</p>\n<ul>\n<li><strong>Alto caudal (demanda alta de frío)</strong>: Presiones de alta y baja intensas. La alta presión comprime el fuelle 2 y la baja comprime el fuelle 1, abriendo la válvula reguladora para comunicar la cámara con la succión (Pc &lt; Ps). La presión en la cabeza de los émbolos supera a la del cárter, aumentando la inclinación del disco y la carrera al máximo <span class=\"pag\">pág. 56-57</span>.</li>\n<li><strong>Bajo caudal (demanda baja de frío)</strong>: Presiones de alta y baja débiles. Los fuelles se expanden y la válvula reguladora cierra. La alta presión entra al cárter por el taladro estrangulador calibrado elevando Pc (Pc &gt; Ps). La fuerza sobre la parte inferior de los émbolos supera a la superior, disminuyendo la inclinación del disco y la carrera al mínimo <span class=\"pag\">pág. 56-58</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Margen de inclinación / rendimiento: del 5% (tope inferior) al 100% (tope superior) (pág. 56). Caudal en posición nominal por muelles: aproximadamente el 40% (pág. 56). Presión de baja mantenida constante: entre 1,8 bar y 2 bar (pág. 56).",
+     "html": "<ul>\n<li>Margen de inclinación / rendimiento: del 5% (tope inferior) al 100% (tope superior) <span class=\"pag\">pág. 56</span>.</li>\n<li>Caudal en posición nominal por muelles: aproximadamente el 40% <span class=\"pag\">pág. 56</span>.</li>\n<li>Presión de baja mantenida constante: entre 1,8 bar y 2 bar <span class=\"pag\">pág. 56</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Verificación de la estabilidad de la presión de baja con manómetros de taller, la cual debe mantenerse regulada entre 1,8 y 2 bar (pág. 56).",
+     "html": "<p>Verificación de la estabilidad de la presión de baja con manómetros de taller, la cual debe mantenerse regulada entre 1,8 y 2 bar <span class=\"pag\">pág. 56</span>.</p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Sección del compresor autorregulado en posición de máximo y mínimo desplazamiento con detalle de fuelles y presiones — Fuente: 6. Compresores, pág. 56, 57 y 58 (pág. 56, 57, 58).",
+     "html": "<ul>\n<li>Sección del compresor autorregulado en posición de máximo y mínimo desplazamiento con detalle de fuelles y presiones — Fuente: 6. Compresores, pág. 56, 57 y 58 <span class=\"pag\">pág. 56, 57, 58</span>.</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.compresor.disco-oscilante-electrovalvula.6",
+   "nt": 706,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "compresor",
+   "seccion": "4. El compresor",
+   "subgrupo": "",
+   "titulo": "Compresor de disco oscilante regulado con electroválvula",
+   "codigo": "",
+   "menu": "Compresor de disco oscilante regulado",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "6. Compresores, págs. 58-62",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "disco-oscilante-electrovalvula",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "ciclo-frigorifico",
+   "relacionados": [
+    "compresor",
+    "valvula-reguladora-compresor",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "regulacion externa",
+    "electrovalvula",
+    "carrera nula",
+    "fusible mecanico",
+    "disco de arrastre"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Regular electrónicamente y de forma continua la cilindrada y la presión del fluido refrigerante desde la Unidad de Control, pudiendo trabajar a carrera nula con el motor en marcha (pág. 58-59).",
+     "html": "<p>Regular electrónicamente y de forma continua la cilindrada y la presión del fluido refrigerante desde la Unidad de Control, pudiendo trabajar a carrera nula con el motor en marcha <span class=\"pag\">pág. 58-59</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Compresor sin acoplamiento magnético que gira de forma continua siempre que el motor esté funcionando (pág. 58). Equipado en la polea con un fusible mecánico de seguridad (disco de arrastre deformable con cortes mecanizados o láminas de chapa de ruptura) para liberarla en caso de bloqueo interno (pág. 58-60). Transmisión mediante polea poly-v, disco de arrastre solidario al eje y piezas de goma intermedias (pág. 58-59). Existen modelos específicos que conservan el embrague electromagnético junto a la electroválvula (pág. 58).",
+     "html": "<ul>\n<li>Compresor sin acoplamiento magnético que gira de forma continua siempre que el motor esté funcionando <span class=\"pag\">pág. 58</span>.</li>\n<li>Equipado en la polea con un fusible mecánico de seguridad (disco de arrastre deformable con cortes mecanizados o láminas de chapa de ruptura) para liberarla en caso de bloqueo interno <span class=\"pag\">pág. 58-60</span>.</li>\n<li>Transmisión mediante polea poly-v, disco de arrastre solidario al eje y piezas de goma intermedias <span class=\"pag\">pág. 58-59</span>.</li>\n<li>Existen modelos específicos que conservan el embrague electromagnético junto a la electroválvula <span class=\"pag\">pág. 58</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "La Unidad de Control del climatizador varía la carrera de los émbolos modificando la excitación PWM de la electroválvula externa: Mínimo rendimiento (carrera casi nula) : Excitación mínima. La electroválvula comunica la alta presión de salida con el cárter, aumentando la presión del cárter y posicionando el disco oscilante en plano (pág. 60-61). Máximo rendimiento (carrera máxima) : Excitación máxima. La electroválvula comunica el cárter con la baja presión de aspiración, reduciendo la presión del cárter y provocando la inclinación máxima del disco oscilante (pág. 61-62).",
+     "html": "<p>La Unidad de Control del climatizador varía la carrera de los émbolos modificando la excitación PWM de la electroválvula externa:</p>\n<ul>\n<li><strong>Mínimo rendimiento (carrera casi nula)</strong>: Excitación mínima. La electroválvula comunica la alta presión de salida con el cárter, aumentando la presión del cárter y posicionando el disco oscilante en plano <span class=\"pag\">pág. 60-61</span>.</li>\n<li><strong>Máximo rendimiento (carrera máxima)</strong>: Excitación máxima. La electroválvula comunica el cárter con la baja presión de aspiración, reduciendo la presión del cárter y provocando la inclinación máxima del disco oscilante <span class=\"pag\">pág. 61-62</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Rendimiento de trabajo: desde 0% (carrera nula / sin compresión) hasta el 100% (máxima inclinación) (pág. 58, 61).",
+     "html": "<p>Rendimiento de trabajo: desde 0% (carrera nula / sin compresión) hasta el 100% (máxima inclinación) <span class=\"pag\">pág. 58, 61</span>.</p>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Deformación del disco de arrastre o rotura del fusible mecánico en vehículos con paradas y arranques frecuentes (Stop-Start) si el compresor arranca fuera de mínimo rendimiento (pág. 60).",
+     "html": "<p>Deformación del disco de arrastre o rotura del fusible mecánico en vehículos con paradas y arranques frecuentes (Stop-Start) si el compresor arranca fuera de mínimo rendimiento <span class=\"pag\">pág. 60</span>.</p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Ante un bloqueo mecánico del compresor, el disco de arrastre se deforma o las láminas se rompen, dejando la polea libre para no romper la correa poly-v auxiliar (pág. 60).",
+     "html": "<p>Ante un bloqueo mecánico del compresor, el disco de arrastre se deforma o las láminas se rompen, dejando la polea libre para no romper la correa poly-v auxiliar <span class=\"pag\">pág. 60</span>.</p>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Inspección visual del plato frontal de la polea para comprobar si sus cortes mecanizados se han deformado hacia el exterior o si las láminas están partidas (pág. 60).",
+     "html": "<p>Inspección visual del plato frontal de la polea para comprobar si sus cortes mecanizados se han deformado hacia el exterior o si las láminas están partidas <span class=\"pag\">pág. 60</span>.</p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Sustitución mediante conjuntos de recambio reforzados o kits de adaptación con embrague eléctrico en vehículos de servicio urbano (pág. 60).",
+     "html": "<p>Sustitución mediante conjuntos de recambio reforzados o kits de adaptación con embrague eléctrico en vehículos de servicio urbano <span class=\"pag\">pág. 60</span>.</p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Detalle del sistema de seguridad de la polea por deformación del disco de arrastre y rotura de láminas — Fuente: 6. Compresores, pág. 59-60 (pág. 59, 60). Posiciones de mínimo y máximo rendimiento del compresor regulado con electroválvula — Fuente: 6. Compresores, pág. 60 y 61 (pág. 60, 61).",
+     "html": "<ul>\n<li>Detalle del sistema de seguridad de la polea por deformación del disco de arrastre y rotura de láminas — Fuente: 6. Compresores, pág. 59-60 <span class=\"pag\">pág. 59, 60</span>.</li>\n<li>Posiciones de mínimo y máximo rendimiento del compresor regulado con electroválvula — Fuente: 6. Compresores, pág. 60 y 61 <span class=\"pag\">pág. 60, 61</span>.</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.embrague-compresor.6-compresores",
    "nt": 44,
    "modulo": "ssc",
@@ -12126,6 +12754,88 @@
      "titulo": "Imágenes requeridas",
      "texto": "Sección del embrague electromagnético en posición desactivada (con holgura) y activada — Fuente: 3. CIRCUITO FRIGORÍGENO 1 AL.pptx, pág. 111 y 112 (pág. 111, 112)",
      "html": "<ul>\n<li>Sección del embrague electromagnético en posición desactivada (con holgura) y activada — Fuente: 3. CIRCUITO FRIGORÍGENO 1 AL.pptx, pág. 111 y 112 <span class=\"pag\">pág. 111, 112</span></li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.embrague-compresor.6",
+   "nt": 704,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "embrague-compresor",
+   "seccion": "4. El compresor",
+   "subgrupo": "",
+   "titulo": "Embrague electromagnético del compresor",
+   "codigo": "",
+   "menu": "Embrague electromagnético del compreso",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "6. Compresores, págs. 54-55",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "compresor",
+   "relacionados": [
+    "compresor"
+   ],
+   "palabras": [
+    "polea",
+    "placa elastica",
+    "bobina electromagnetica",
+    "juego de montaje",
+    "galga"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Transmitir el par motor desde la correa auxiliar hacia el eje de impulsión del compresor cuando se solicita el funcionamiento del sistema de aire acondicionado (pág. 54-55).",
+     "html": "<p>Transmitir el par motor desde la correa auxiliar hacia el eje de impulsión del compresor cuando se solicita el funcionamiento del sistema de aire acondicionado <span class=\"pag\">pág. 54-55</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Consta de tres componentes principales (pág. 54): Polea alojada en la carcasa sobre un rodamiento de bolas. Placa elástica con plato de acoplamiento fijada al eje del compresor mediante tuerca (plato fabricado en acero con menos del 0,6% de carbono para evitar remanencia magnética). Bobina electromagnética fijada a la carcasa del compresor.",
+     "html": "<p>Consta de tres componentes principales <span class=\"pag\">pág. 54</span>:</p>\n<ul>\n<li>Polea alojada en la carcasa sobre un rodamiento de bolas.</li>\n<li>Placa elástica con plato de acoplamiento fijada al eje del compresor mediante tuerca (plato fabricado en acero con menos del 0,6% de carbono para evitar remanencia magnética).</li>\n<li>Bobina electromagnética fijada a la carcasa del compresor.</li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "En reposo existe un juego de montaje entre la polea y la placa elástica, girando la polea libremente. Al circular corriente por la bobina, el campo magnético atrae la placa elástica contra la cara de la polea en rotación anulando el juego de montaje y transmitiendo el movimiento al eje. Al interrumpir la corriente, los muelles retornan el plato a su posición de reposo (pág. 54-55).",
+     "html": "<p>En reposo existe un juego de montaje entre la polea y la placa elástica, girando la polea libremente. Al circular corriente por la bobina, el campo magnético atrae la placa elástica contra la cara de la polea en rotación anulando el juego de montaje y transmitiendo el movimiento al eje. Al interrumpir la corriente, los muelles retornan el plato a su posición de reposo <span class=\"pag\">pág. 54-55</span>.</p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Juego de montaje en compresores Sanden: entre 0,4 mm y 0,8 mm (pág. 55). Juego de montaje en compresores Nippondenso: entre 0,2 mm y 0,5 mm (pág. 55). Porcentaje de carbono en el acero del plato: menor a 0,6% (pág. 55).",
+     "html": "<ul>\n<li>Juego de montaje en compresores Sanden: entre 0,4 mm y 0,8 mm <span class=\"pag\">pág. 55</span>.</li>\n<li>Juego de montaje en compresores Nippondenso: entre 0,2 mm y 0,5 mm <span class=\"pag\">pág. 55</span>.</li>\n<li>Porcentaje de carbono en el acero del plato: menor a 0,6% <span class=\"pag\">pág. 55</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Patinamiento del plato por excesiva dureza o gripado mecánico del compresor, produciendo aumento de rozamiento, consumo elevado y quemado de la bobina o del plato (pág. 55).",
+     "html": "<p>Patinamiento del plato por excesiva dureza o gripado mecánico del compresor, produciendo aumento de rozamiento, consumo elevado y quemado de la bobina o del plato <span class=\"pag\">pág. 55</span>.</p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "El embrague no es el causante de la avería sino la víctima; al sufrir resistencia al giro en el compresor, patina y se quema (pág. 55).",
+     "html": "<p>El embrague no es el causante de la avería sino la víctima; al sufrir resistencia al giro en el compresor, patina y se quema <span class=\"pag\">pág. 55</span>.</p>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Medir el juego de montaje entre la polea y la tapa elástica utilizando una galga de espesores en tres puntos equidistantes (pág. 55).",
+     "html": "<p>Medir el juego de montaje entre la polea y la tapa elástica utilizando una galga de espesores en tres puntos equidistantes <span class=\"pag\">pág. 55</span>.</p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Ajuste del juego de montaje mediante la adición o retirada de arandelas de calado o juntas de papel en el tope del eje del plato (pág. 55).",
+     "html": "<p>Ajuste del juego de montaje mediante la adición o retirada de arandelas de calado o juntas de papel en el tope del eje del plato <span class=\"pag\">pág. 55</span>.</p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Acoplamiento de embrague electromagnético en posición desactivada y activada con indicación del juego de montaje — Fuente: 6. Compresores, pág. 54-55 (pág. 54, 55).",
+     "html": "<ul>\n<li>Acoplamiento de embrague electromagnético en posición desactivada y activada con indicación del juego de montaje — Fuente: 6. Compresores, pág. 54-55 <span class=\"pag\">pág. 54, 55</span>.</li>\n</ul>"
     }
    ]
   },
@@ -27785,6 +28495,91 @@
      "titulo": "Imágenes requeridas",
      "texto": "Sección de la válvula de regulación mecánica con la válvula de cierre, muelle, fuelle y vástago — Fuente: LA CLIMATIZACIÓN.pdf, pág. 63",
      "html": "<ul>\n<li>Sección de la válvula de regulación mecánica con la válvula de cierre, muelle, fuelle y vástago — Fuente: LA CLIMATIZACIÓN.pdf, pág. 63</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.valvula-reguladora-compresor.6",
+   "nt": 707,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "valvula-reguladora-compresor-variable",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Electroválvula de regulación del compresor",
+   "codigo": "",
+   "menu": "Electroválvula de regulación del compr",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "6. Compresores, págs. 62-63",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "compresor",
+   "relacionados": [
+    "compresor",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "PWM",
+    "vastago",
+    "bobina",
+    "excitacion",
+    "2%",
+    "98%",
+    "minimo rendimiento"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Gobernar la presión en el cárter del compresor abriendo o cerrando el paso de agente frigorífico de alta y baja presión para ajustar la inclinación del disco oscilante (pág. 62-63).",
+     "html": "<p>Gobernar la presión en el cárter del compresor abriendo o cerrando el paso de agente frigorífico de alta y baja presión para ajustar la inclinación del disco oscilante <span class=\"pag\">pág. 62-63</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Montada directamente en el cuerpo exterior del compresor (pág. 62). Formada por una bobina eléctrica, núcleo magnético de hierro dulce, vástago desplazable y muelle de retorno (pág. 62-63).",
+     "html": "<ul>\n<li>Montada directamente en el cuerpo exterior del compresor <span class=\"pag\">pág. 62</span>.</li>\n<li>Formada por una bobina eléctrica, núcleo magnético de hierro dulce, vástago desplazable y muelle de retorno <span class=\"pag\">pág. 62-63</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Gobernada por la Unidad de Control de Climatización con una señal eléctrica de frecuencia fija y proporción de período variable (PWM): Excitación alta (hasta 98% PWM) : El vástago se desplaza cerrando el paso de alta presión al cárter y comunicándolo con la baja presión. La presión en el cárter disminuye y la baja presión empuja los émbolos inclinando el plato al máximo (pág. 62-63). Excitación baja (hasta 2% PWM) : El muelle desplaza el vástago permitiendo el paso de alta presión hacia el cárter. La presión en el cárter aumenta y reduce la inclinación del plato al mínimo (pág. 62-63).",
+     "html": "<p>Gobernada por la Unidad de Control de Climatización con una señal eléctrica de frecuencia fija y proporción de período variable (PWM):</p>\n<ul>\n<li><strong>Excitación alta (hasta 98% PWM)</strong>: El vástago se desplaza cerrando el paso de alta presión al cárter y comunicándolo con la baja presión. La presión en el cárter disminuye y la baja presión empuja los émbolos inclinando el plato al máximo <span class=\"pag\">pág. 62-63</span>.</li>\n<li><strong>Excitación baja (hasta 2% PWM)</strong>: El muelle desplaza el vástago permitiendo el paso de alta presión hacia el cárter. La presión en el cárter aumenta y reduce la inclinación del plato al mínimo <span class=\"pag\">pág. 62-63</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tensión de alimentación: 12 V pulsatorios (pág. 63). Excitación PWM a mínimo rendimiento: 2% de período positivo (pág. 62-63). Excitación PWM a máximo rendimiento: 98% de período positivo (pág. 62-63).",
+     "html": "<ul>\n<li>Tensión de alimentación: 12 V pulsatorios <span class=\"pag\">pág. 63</span>.</li>\n<li>Excitación PWM a mínimo rendimiento: 2% de período positivo <span class=\"pag\">pág. 62-63</span>.</li>\n<li>Excitación PWM a máximo rendimiento: 98% de período positivo <span class=\"pag\">pág. 62-63</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Interrupción o cortocircuito de la bobina eléctrica o agarrotamiento mecánico del vástago (pág. 63).",
+     "html": "<p>Interrupción o cortocircuito de la bobina eléctrica o agarrotamiento mecánico del vástago <span class=\"pag\">pág. 63</span>.</p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "En caso de fallo en la electroválvula o en la corriente de excitación, el muelle mantiene el vástago en la posición de mínimo rendimiento (2%) para prevenir sobrepresiones en el circuito frigorífico (pág. 63).",
+     "html": "<p>En caso de fallo en la electroválvula o en la corriente de excitación, el muelle mantiene el vástago en la posición de mínimo rendimiento (2%) para prevenir sobrepresiones en el circuito frigorífico <span class=\"pag\">pág. 63</span>.</p>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Medición de la señal de excitación PWM mediante osciloscopio o polímetro en los bornes de la electroválvula (pág. 63).",
+     "html": "<p>Medición de la señal de excitación PWM mediante osciloscopio o polímetro en los bornes de la electroválvula <span class=\"pag\">pág. 63</span>.</p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Sustitución de la electroválvula si existe despiece comercial, o del compresor completo en aquellos modelos donde no se suministra recambio individual (pág. 63).",
+     "html": "<p>Sustitución de la electroválvula si existe despiece comercial, o del compresor completo en aquellos modelos donde no se suministra recambio individual <span class=\"pag\">pág. 63</span>.</p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Sección de la electroválvula de regulación con vástago, bobina y pasos de alta/baja presión, e ilustración de señal PWM — Fuente: 6. Compresores, pág. 62-63 (pág. 62, 63).",
+     "html": "<ul>\n<li>Sección de la electroválvula de regulación con vástago, bobina y pasos de alta/baja presión, e ilustración de señal PWM — Fuente: 6. Compresores, pág. 62-63 <span class=\"pag\">pág. 62, 63</span>.</li>\n</ul>"
     }
    ]
   },
