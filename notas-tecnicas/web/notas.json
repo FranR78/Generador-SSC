@@ -3882,6 +3882,14 @@
    "hecha": false
   },
   {
+   "nombre": "NT762_01",
+   "nt": 762,
+   "titulo": "Cuadro general del sistema de climatización regulado electrónicamente",
+   "seccion": "8. Regulación y control",
+   "descripcion": "Esquema general del sistema de climatización regulado electrónicamente con sensores, señales suplementarias, unidad J255/E87 y actuadores — Fuente: Cuadro general del sistema de un climatizador regulado electrónicamente.pdf, pág. 44-45",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -3906,7 +3914,7 @@
    "hecha": false
   }
  ],
- "total": 753,
+ "total": 754,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -34377,6 +34385,72 @@
      "titulo": "Errores de concepto frecuentes",
      "texto": "Creer que el compresor trabaja siempre a máxima potencia y que la temperatura del habitáculo se regula únicamente mezclando aire frío con aire caliente procedente de la calefacción (Reheat) (pág. 4).",
      "html": "<p>Creer que el compresor trabaja siempre a máxima potencia y que la temperatura del habitáculo se regula únicamente mezclando aire frío con aire caliente procedente de la calefacción (Reheat) <span class=\"pag\">pág. 4</span>.</p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.regulacion-automatica.cuadro-general-del-sistema-de-un-climati",
+   "nt": 762,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "regulacion-automatica",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Cuadro general del sistema de climatización regulado electrónicamente",
+   "codigo": "J255",
+   "menu": "Cuadro general del sistema de  J255",
+   "grupo": "Control de climatización",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "Cuadro general del sistema de un climatizador regulado electrónicamente.pdf, págs. 44-45",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "servomotor-trampilla",
+    "sensor-temperatura-exterior",
+    "sensor-temperatura-interior",
+    "fotosensor-solar",
+    "ventilador-habitaculo",
+    "electroventilador-condensador",
+    "embrague-compresor"
+   ],
+   "palabras": [
+    "cuadro general",
+    "Climatronic",
+    "J255",
+    "E87",
+    "sensores",
+    "actuadores",
+    "señales suplementarias"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Estructurar de forma global la interconexión entre la red de sensores, la unidad de control y de mandos J255/E87, los actuadores y las señales suplementarias en un sistema de climatización regulado electrónicamente (Climatronic) con la misma regulación para el lado izquierdo y derecho del habitáculo. (pág. 44)",
+     "html": "<p>Estructurar de forma global la interconexión entre la red de sensores, la unidad de control y de mandos J255/E87, los actuadores y las señales suplementarias en un sistema de climatización regulado electrónicamente (Climatronic) con la misma regulación para el lado izquierdo y derecho del habitáculo. <span class=\"pag\">pág. 44</span></p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "La unidad de control J255 recibe las magnitudes físicas medidas por los sensores y las señales suplementarias del vehículo, procesa la información y gobierna de forma automatizada los actuadores de trampillas, turbina de aire fresco y ventiladores para mantener la temperatura de confort fijada por los usuarios. (pág. 44, 45)",
+     "html": "<p>La unidad de control J255 recibe las magnitudes físicas medidas por los sensores y las señales suplementarias del vehículo, procesa la información y gobierna de forma automatizada los actuadores de trampillas, turbina de aire fresco y ventiladores para mantener la temperatura de confort fijada por los usuarios. <span class=\"pag\">pág. 44, 45</span></p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El cuadro general del sistema se compone de los siguientes grupos funcionales: Sensores y transmisores (entradas de regulación de temperatura y del sistema): Fotosensor de radiación solar G107. Termosensor del tablero de instrumentos G56 con turbina de aire para termosensor V42. Termosensor de temperatura exterior G17. Termosensor del conducto de aspiración de aire fresco G89. Transmisor de temperatura a la salida del vano reposapiés G192. Conmutador de presión para climatizador F129. Conmutador de control de temperatura del líquido refrigerante (demasiado caliente) F14. Termoconmutador para ventilador de líquido refrigerante F18. Señales suplementarias de entrada: Señal de velocidad (v). Señal de régimen (n). Señal de tiempo en parado (th). Señal de la unidad de control del motor. Señal de la unidad de control con unidad indicadora en el cuadro de instrumentos. Unidad de control y panel de mando: Unidad de control J255 y panel de mandos e indicación para climatizador E87. Terminal para diagnósticos T16. Actuadores y elementos de salida: Servomotor para chapaleta del vano reposapiés / descongelación V85 con potenciómetro G114. Servomotor para chapaleta central V70 con potenciómetro G112. Servomotor para chapaleta de temperatura V68 con potenciómetro G92. Servomotor para chapaleta de velocidad V71 y chapaleta de recirculación de aire con potenciómetro G113. Unidad de control para turbina de aire fresco J126 y turbina de aire fresco V2. Unidad de control para ventilador de líquido refrigerante J293. Acoplamiento electromagnético N25. Ventilador para líquido refrigerante V7 y ventilador adicional V35. (pág. 44, 45)",
+     "html": "<p>El cuadro general del sistema se compone de los siguientes grupos funcionales:</p>\n<ol>\n<li>\n<p>Sensores y transmisores (entradas de regulación de temperatura y del sistema):</p>\n<ul>\n<li>Fotosensor de radiación solar G107.</li>\n<li>Termosensor del tablero de instrumentos G56 con turbina de aire para termosensor V42.</li>\n<li>Termosensor de temperatura exterior G17.</li>\n<li>Termosensor del conducto de aspiración de aire fresco G89.</li>\n<li>Transmisor de temperatura a la salida del vano reposapiés G192.</li>\n<li>Conmutador de presión para climatizador F129.</li>\n<li>Conmutador de control de temperatura del líquido refrigerante (demasiado caliente) F14.</li>\n<li>Termoconmutador para ventilador de líquido refrigerante F18.</li>\n</ul>\n</li>\n<li>\n<p>Señales suplementarias de entrada:</p>\n<ul>\n<li>Señal de velocidad (v).</li>\n<li>Señal de régimen (n).</li>\n<li>Señal de tiempo en parado (th).</li>\n<li>Señal de la unidad de control del motor.</li>\n<li>Señal de la unidad de control con unidad indicadora en el cuadro de instrumentos.</li>\n</ul>\n</li>\n<li>\n<p>Unidad de control y panel de mando:</p>\n<ul>\n<li>Unidad de control J255 y panel de mandos e indicación para climatizador E87.</li>\n<li>Terminal para diagnósticos T16.</li>\n</ul>\n</li>\n<li>\n<p>Actuadores y elementos de salida:</p>\n<ul>\n<li>Servomotor para chapaleta del vano reposapiés / descongelación V85 con potenciómetro G114.</li>\n<li>Servomotor para chapaleta central V70 con potenciómetro G112.</li>\n<li>Servomotor para chapaleta de temperatura V68 con potenciómetro G92.</li>\n<li>Servomotor para chapaleta de velocidad V71 y chapaleta de recirculación de aire con potenciómetro G113.</li>\n<li>Unidad de control para turbina de aire fresco J126 y turbina de aire fresco V2.</li>\n<li>Unidad de control para ventilador de líquido refrigerante J293.</li>\n<li>Acoplamiento electromagnético N25.</li>\n<li>Ventilador para líquido refrigerante V7 y ventilador adicional V35.</li>\n</ul>\n</li>\n</ol>\n<p> <span class=\"pag\">pág. 44, 45</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema general del sistema de climatización regulado electrónicamente con sensores, señales suplementarias, unidad J255/E87 y actuadores — Fuente: Cuadro general del sistema de un climatizador regulado electrónicamente.pdf, pág. 44-45",
+     "html": "<ul>\n<li>Esquema general del sistema de climatización regulado electrónicamente con sensores, señales suplementarias, unidad J255/E87 y actuadores — Fuente: Cuadro general del sistema de un climatizador regulado electrónicamente.pdf, pág. 44-45</li>\n</ul>"
     }
    ]
   },
