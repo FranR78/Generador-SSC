@@ -12,50 +12,42 @@ grupo: "Calefacción"
 clave: turbina-aire-combustion
 area: climatizacion
 sistema: "calefaccion"
-forma_parte_de: calefaccion-independiente
-marca: "Eberspächer"
-fuentes: "Audi A5 Coupé_2008_Calefacción independiente.pdf, págs. 66, 71-82, 143"
-relacionados: ["bomba-dosificadora-v54", "bujia-precalentamiento-calefaccion"]
-palabras: ["turbina de aire", "V6", "aire de combustión", "barrido", "ventilador"]
+forma_parte_de: calefactor-independiente
+marca: "Audi"
+fuentes: "Audi A5 Coupé_2008_Calefacción independiente.pdf, págs. 66, 143"
+relacionados: ["calefactor-independiente", "bujia-precalentamiento-calefaccion"]
+palabras: ["V6", "turbina de combustión", "caudal de aire", "2 a 3 A", "excitación regulada"]
 ---
 
 ## Misión
 
-Aspirar aire del exterior e impulsarlo de forma regulada hacia la cámara de combustión del calefactor independiente para formar la mezcla carburada y realizar el barrido de gases de escape. (págs. 66, 69, 143).
+Suministrar el caudal de aire fresco del exterior requerido en la cámara de combustión para la oxidación del combustible y para el barrido de gases tras el apagado. (págs. 71, 143)
 
 ## Tipos y características
 
-Soplante eléctrico impulsado por motor de corriente continua a 12 V, regulado en tensión por la unidad de control J364. (págs. 66, 69, 136).
+Soplador centrífugo accionado por un motor eléctrico de corriente continua integrado en la cubierta delantera del calefactor. (págs. 136, 143)
 
 ## Principio de funcionamiento
 
-Su régimen de giro se regula variando la tensión aplicada por la unidad de control J364 (entre 0 V y 12 V) en coordinación con la frecuencia de la bomba dosificadora V54. Funciona en fases de pre-barrido, arranque, plena carga (12 V), carga parcial (aprox. 5 a 6 V) y ciclo de continuación/post-barrido para enfriamiento (8 a 12 V). (págs. 72-82).
+La UCE J364 varía la tensión aplicada al motor de la turbina V6 para ajustar el volumen de aire ingresado en función de la fase operativa (de 0 V a 2 V en precalentamiento, 8 V en rampa de aceleración y 12 V a plena carga). (págs. 73-75)
 
 ## Valores de trabajo
 
-- Tensión de alimentación: 0 a 12 V CC.
-- Absorción de corriente: 2 a 3 A a una tensión aplicada de 12 V CC. (pág. 66).
-- Resistencia interna: entre 3 y 6 Ω (hasta 40 Ω si lleva mucho tiempo sin funcionar). (pág. 66).
+- Tensión de alimentación regulada: de 0 V a 12 V. (págs. 73-75)
+- Consumo de corriente nominal a 12 V: entre 2 A y 3 A. (pág. 66)
 
 ## Anomalías frecuentes
 
-Bloqueo mecánico por suciedad en la toma de aspiración o silenciador, desgaste del motor eléctrico, interrupción o cortocircuito en el bobinado. (págs. 66, 117).
+Bloqueo mecánico del rodete por entrada de suciedad u hojas en el silenciador de aspiración, o desgaste del colector eléctrico del motor. (págs. 66, 133)
 
 ## Comportamiento en avería
 
-Imposibilidad de formar la mezcla aire-combustible correcta, generando mala combustión, exceso de CO2 o falta de llama. El sistema aborta el arranque y registra la avería en la unidad de control J364. (págs. 84, 117).
+Combustión ruidosa con exceso de humo por mala mezcla de aire o interrupción inmediata del arranque por seguridad. (págs. 66, 113)
 
 ## Cómo comprobarlo
 
-1. Desconectar el encendido y desacoplar el conector de 14 polos de la UCE J364.
-2. Medir la resistencia en el conector entre la celda 13 (cable negro) y la celda 14 (cable marrón) (valor teórico entre 3 y 6 Ω).
-3. Medir la resistencia entre la celda 13 y la carcasa del calefactor (debe ser infinita / sin derivación a masa).
-4. Aplicar una tensión de 12 V CC y verificar con pinza amperimétrica que la corriente absorbida se sitúa entre 2 y 3 A. (págs. 66, 136).
+Medir la resistencia de la turbina entre la celda 13 y la carcasa (aislamiento) y aplicar 12 V directos verificando que el consumo se sitúa entre 2 A y 3 A. (pág. 66)
 
 ## Mantenimiento
 
-Sustituir la junta entre la turbina de aire de combustión V6 y la carcasa del calefactor en cada desmontaje. Comprobar que el tubo de aspiración y el silenciador no presenten suciedad ni obstrucciones. (págs. 117, 143).
-
-## Imágenes requeridas
-
-- Medición de la resistencia de la turbina de aire de combustión V6 en el conector de 14 polos — Fuente: Audi A5 Coupé_2008_Calefacción independiente.pdf, pág. 66
+Inspeccionar el silenciador y la tubería de aspiración de aire exterior comprobando que no presenten estrechamientos ni suciedad. (pág. 133)

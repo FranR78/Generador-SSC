@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">835 notas · 25/09/2026</p>
+  <p class="sidebar-meta">841 notas · 25/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -540,7 +540,7 @@
     <li><a href="#nt549">NT549 · Intercambiador de calor de la calefacc</a></li>
     <li><a href="#nt550">NT550 · Función de calor residual</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Refrigeración del motor</span></li>
-    <li><a href="#nt551">NT551 · Bomba eléctrica para recircula V36</a></li>
+    <li><a href="#grp-bomba-recirculacion-liquido-refrigerante">Bomba eléctrica para recirculación de líquido refrigerante <span class="menu-cuenta">2 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
     <li><a href="#nt556">NT556 · Direccionamiento de servomotores</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Distribución de aire</span></li>
@@ -643,6 +643,12 @@
     <li><a href="#nt829">NT829 · Conmutador de temperatura del líquido</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
     <li><a href="#nt830">NT830 · Gestión electrónica de los electrovent</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Calefacción</span></li>
+    <li><a href="#nt844">NT844 · Sistema de calefacción y venti J364</a></li>
+    <li><a href="#nt845">NT845 · Unidad de control para calefac J364</a></li>
+    <li><a href="#nt846">NT846 · Bomba dosificadora de combusti V54</a></li>
+    <li><a href="#nt848">NT848 · Válvula de cierre para líquido N279</a></li>
+    <li><a href="#nt849">NT849 · Comprobación de la cantidad de combust</a></li>
   </ul>
 </nav>
 
@@ -30735,171 +30741,142 @@ Velocidad del vehículo no superior a 5 km/h para ejecutar la función de diagno
   </section>
 
   <section id="nt175" data-tipo="elemento">
-    <div class="nota-header">Nota Técnica Nº 175 <span class="fusionado">Eberspächer</span></div>
+    <div class="nota-header">Nota Técnica Nº 175 <span class="fusionado">Audi</span></div>
     <div class="nota-body">
       <h1>Bujía de precalentamiento para calefacción — <strong>Q9</strong></h1>
       <div class="apartado">
         <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Inflamar la mezcla de combustible y aire en la cámara de combustión del calefactor independiente durante el proceso de arranque y realizar la vigilancia de la llama en determinadas fases de funcionamiento. (págs. 65, 72-73).</p>
+        <p>Alcanzar la temperatura de incandescencia necesaria en el quemador para inflamar la mezcla de aire y combustible durante la fase de arranque del calefactor. (págs. 71, 141)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>Recibe alimentación eléctrica regulada por la unidad de control J364 durante la fase de arranque para alcanzar la temperatura de incandescencia e inflamar el combustible suministrado por la bomba dosificadora V54. Una vez establecida la combustión, se desactiva o pasa a monitorizar la presencia de llama. (págs. 72-73, 142).</p>
+        <p>Durante el ciclo de puesta en marcha, la UCE J364 le aplica tensión regulada a la bujía Q9, elevando drásticamente su temperatura. El combustible atomizado que entra en contacto con la bujía incandescente se inflama. Una vez estabilizada la llama (confirmada por G64), se desconecta la alimentación de la bujía. (págs. 71-75)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
         <ul>
-<li>Tensión nominal: 8 V. (pág. 137).</li>
-<li>Absorción de corriente: entre 9 A y 20 A a 9 V de tensión continua. (pág. 65).</li>
-<li>Resistencia nominal: 0,42 a 0,63 Ω a 20 ± 2 ºC de temperatura ambiente. (pág. 65).</li>
+<li>Tensión de alimentación regulada: aprox. 8 V de corriente continua. (págs. 73-74)</li>
+<li>Resistencia eléctrica entre contactos 3 y: inferior a 1 ohmio. (pág. 65)</li>
 </ul>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <p>Desgaste térmico de la espiga de incandescencia, acumulación de carbonilla o sedimentos del combustible, cortocircuito o interrupción eléctrica en sus cables de alimentación. (págs. 76, 142).</p>
+        <p>Corte por fusión del filamento cerámico o derivación a masa por acumulación de carbonilla en el quemador. (págs. 65, 141)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
-        <p>Si la resistencia de Q9 se encuentra fuera del margen definido, se cancela el proceso de arranque (se realiza 1 repetición de arranque). Si el fallo persiste, se aborta el ciclo, se inscribe la avería en la memoria de la UCE J364 y se desactiva el calefactor tras varias repeticiones. (págs. 76, 88).</p>
+        <p>El calefactor realiza el ciclo de soplado pero no consigue inflamar el combustible, abortando el arranque y registrando avería en J364. (págs. 8, 76)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
-        <ol>
-<li>Desconectar el encendido y desacoplar el conector de 14 polos de la unidad de control J364.</li>
-<li>Medir la resistencia en el conector entre el contacto 3 (cable marrón) y el contacto 6 (cable blanco).</li>
-<li>El valor teórico debe ser de 0,42 a 0,63 Ω a 20 ± 2 ºC (resistencia en conector inferior a 1 Ω).</li>
-<li>Medir el aislamiento midiendo la resistencia entre el contacto 3 y la carcasa del calefactor (valor teórico: sin derivación a masa).</li>
-<li>Aplicar una tensión de 9 V CC y verificar con pinza amperimétrica que la absorción de corriente se sitúa entre 9 y 20 A.</li>
-<li>Limpiar cuidadosamente la espiga de incandescencia con un cepillo de latón. (págs. 65, 137).</li>
-</ol>
+        <p>Desconectar la clavija de 2 polos y medir la resistencia eléctrica con multímetro entre las celdas 3 y 6 (debe ser inferior a 1 ohmio) y verificar aislamiento con la carcasa. (pág. 65)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Tipos y características</div>
-        <p>Bujía de incandescencia eléctrica con espiga calefactora alimentada a una tensión nominal de 8 V. Absorción de corriente de 9 a 20 A al aplicarle 9 V. (págs. 65, 137).</p>
+        <p>Elemento de caldeo cerámico de alta resistencia térmica montado en el suplemento del quemador dentro de la cámara de combustión. (págs. 136, 141)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Mantenimiento</div>
-        <p>Limpiar la espiga de incandescencia con cepillo de latón. Si la bujía Q9 resulta dañada, comprobar y limpiar o sustituir el suplemento del quemador si presenta sedimentos no eliminables. (págs. 137, 142).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT175_01</code> Esquema del conector de 14 polos indicando los contactos 3 y 6 para la comprobación de la bujía Q9 — Fuente: Audi A5 Coupé_2008_Calefacción independiente.pdf, pág. 65</span></div>
+        <p>Observar la posición exacta de la junta de goma al pasar los cables de la bujía durante el ensamblaje. (pág. 143)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">Audi A5 Coupé_2008_Calefacción independiente.pdf, págs. 65, 71-75, 141-142</p>
+        <p class="fuentes">Audi A5 Coupé_2008_Calefacción independiente.pdf, págs. 65, 141-142</p>
       </div>
     </div>
   </section>
 
   <section id="nt176" data-tipo="elemento">
-    <div class="nota-header">Nota Técnica Nº 176 <span class="fusionado">Eberspächer</span></div>
+    <div class="nota-header">Nota Técnica Nº 176 <span class="fusionado">Audi</span></div>
     <div class="nota-body">
       <h1>Turbina de aire de combustión — <strong>V6</strong></h1>
       <div class="apartado">
         <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Aspirar aire del exterior e impulsarlo de forma regulada hacia la cámara de combustión del calefactor independiente para formar la mezcla carburada y realizar el barrido de gases de escape. (págs. 66, 69, 143).</p>
+        <p>Suministrar el caudal de aire fresco del exterior requerido en la cámara de combustión para la oxidación del combustible y para el barrido de gases tras el apagado. (págs. 71, 143)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>Su régimen de giro se regula variando la tensión aplicada por la unidad de control J364 (entre 0 V y 12 V) en coordinación con la frecuencia de la bomba dosificadora V54. Funciona en fases de pre-barrido, arranque, plena carga (12 V), carga parcial (aprox. 5 a 6 V) y ciclo de continuación/post-barrido para enfriamiento (8 a 12 V). (págs. 72-82).</p>
+        <p>La UCE J364 varía la tensión aplicada al motor de la turbina V6 para ajustar el volumen de aire ingresado en función de la fase operativa (de 0 V a 2 V en precalentamiento, 8 V en rampa de aceleración y 12 V a plena carga). (págs. 73-75)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
         <ul>
-<li>Tensión de alimentación: 0 a 12 V CC.</li>
-<li>Absorción de corriente: 2 a 3 A a una tensión aplicada de 12 V CC. (pág. 66).</li>
-<li>Resistencia interna: entre 3 y 6 Ω (hasta 40 Ω si lleva mucho tiempo sin funcionar). (pág. 66).</li>
+<li>Tensión de alimentación regulada: de 0 V a 12 V. (págs. 73-75)</li>
+<li>Consumo de corriente nominal a 12 V: entre 2 A y 3 A. (pág. 66)</li>
 </ul>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <p>Bloqueo mecánico por suciedad en la toma de aspiración o silenciador, desgaste del motor eléctrico, interrupción o cortocircuito en el bobinado. (págs. 66, 117).</p>
+        <p>Bloqueo mecánico del rodete por entrada de suciedad u hojas en el silenciador de aspiración, o desgaste del colector eléctrico del motor. (págs. 66, 133)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
-        <p>Imposibilidad de formar la mezcla aire-combustible correcta, generando mala combustión, exceso de CO2 o falta de llama. El sistema aborta el arranque y registra la avería en la unidad de control J364. (págs. 84, 117).</p>
+        <p>Combustión ruidosa con exceso de humo por mala mezcla de aire o interrupción inmediata del arranque por seguridad. (págs. 66, 113)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
-        <ol>
-<li>Desconectar el encendido y desacoplar el conector de 14 polos de la UCE J364.</li>
-<li>Medir la resistencia en el conector entre la celda 13 (cable negro) y la celda 14 (cable marrón) (valor teórico entre 3 y 6 Ω).</li>
-<li>Medir la resistencia entre la celda 13 y la carcasa del calefactor (debe ser infinita / sin derivación a masa).</li>
-<li>Aplicar una tensión de 12 V CC y verificar con pinza amperimétrica que la corriente absorbida se sitúa entre 2 y 3 A. (págs. 66, 136).</li>
-</ol>
+        <p>Medir la resistencia de la turbina entre la celda 13 y la carcasa (aislamiento) y aplicar 12 V directos verificando que el consumo se sitúa entre 2 A y 3 A. (pág. 66)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Tipos y características</div>
-        <p>Soplante eléctrico impulsado por motor de corriente continua a 12 V, regulado en tensión por la unidad de control J364. (págs. 66, 69, 136).</p>
+        <p>Soplador centrífugo accionado por un motor eléctrico de corriente continua integrado en la cubierta delantera del calefactor. (págs. 136, 143)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Mantenimiento</div>
-        <p>Sustituir la junta entre la turbina de aire de combustión V6 y la carcasa del calefactor en cada desmontaje. Comprobar que el tubo de aspiración y el silenciador no presenten suciedad ni obstrucciones. (págs. 117, 143).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT176_01</code> Medición de la resistencia de la turbina de aire de combustión V6 en el conector de 14 polos — Fuente: Audi A5 Coupé_2008_Calefacción independiente.pdf, pág. 66</span></div>
+        <p>Inspeccionar el silenciador y la tubería de aspiración de aire exterior comprobando que no presenten estrechamientos ni suciedad. (pág. 133)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">Audi A5 Coupé_2008_Calefacción independiente.pdf, págs. 66, 71-82, 143</p>
+        <p class="fuentes">Audi A5 Coupé_2008_Calefacción independiente.pdf, págs. 66, 143</p>
       </div>
     </div>
   </section>
 
   <section id="nt177" data-tipo="elemento">
-    <div class="nota-header">Nota Técnica Nº 177 <span class="fusionado">Eberspächer</span></div>
+    <div class="nota-header">Nota Técnica Nº 177 <span class="fusionado">Audi</span></div>
     <div class="nota-body">
       <h1>Guardallamas — <strong>G64</strong></h1>
       <div class="apartado">
         <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Detectar la presencia y estabilidad de la llama en la cámara de combustión del calefactor independiente mediante la variación de su resistencia eléctrica según la temperatura existente. (págs. 66, 88).</p>
+        <p>Supervisar de forma continua la presencia y la estabilidad de la llama en la cámara de combustión del calefactor. (págs. 34, 141)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>Modifica su resistencia eléctrica en función de la temperatura en la cámara de combustión. La unidad de control J364 evalúa constantemente la curva característica de resistencia de G64 para determinar si se ha formado llama ("detectada") o si la temperatura es insuficiente ("no detectada"). (págs. 34, 88).</p>
+        <p>Mide el calor radiado por la combustión. Cuando la temperatura en la cámara alcanza el umbral de combustión con llama, la UCE J364 detecta la señal "detectada", confirmando la estabilización del fuego para cortar la bujía Q9. Si la llama se apaga de forma imprevista, la señal pasa a "no detectada" y la UCE inicia el ciclo de seguridad. (págs. 34, 74-76)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
         <ul>
-<li>Estado "detectada": temperatura de cámara propia de combustión activa.</li>
-<li>Estado "no detectada": temperatura inferior a la requerida para el modo de combustión.</li>
-<li>Límite de interrupción (avería): Resistencia superior a 3040 Ω.</li>
-<li>Límite de cortocircuito (avería): Resistencia inferior a 780 Ω. (págs. 34, 67).</li>
+<li>Estado en diagnosis: "detectada" durante el funcionamiento de combustión y "no detectada" en frío. (pág. 34)</li>
 </ul>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <p>Deformación por sobrecalentamiento, acumulación de carbonilla, interrupción del cableado o cortocircuito. (págs. 67, 141).</p>
+        <p>Incrustación de hollín o carbonilla sobre la ventana de captación del sensor, o deterioro de la junta de grafito. (págs. 66, 141)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
-        <p>Si la resistencia de G64 se encuentra fuera de margen durante el ciclo de arranque, se cancela el proceso y se realiza un intento de repetición. Si tras la repetición persiste el fallo, la UCE J364 aborta la puesta en marcha, registra la avería y desactiva el sistema. (págs. 76, 86-87).</p>
+        <p>Cancelación del ciclo de arranque al cabo de 90 segundos por falta de detección de llama, registrando avería en J364. (págs. 75, 84)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
-        <ol>
-<li>Desconectar el encendido y desacoplar la carcasa del conector de 14 polos de la unidad de control J364.</li>
-<li>Medir la resistencia con un multímetro entre la celda 1 (cable marrón) y la celda 2 (cable marrón).</li>
-<li>Evaluar el valor según la temperatura momentánea: si la resistencia es superior a 3040 Ω indica interrupción; si es inferior a 780 Ω indica cortocircuito. (págs. 66-67, 136).</li>
-</ol>
+        <p>Medir la resistencia del sensor entre sus terminales a temperatura ambiente (evaluando desviaciones) y revisar el estado visual en el bloque de valores de medición. (págs. 34, 66)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Tipos y características</div>
-        <p>Sensor de temperatura resistente a altas temperaturas montado en la zona del quemador, dotado de una junta de grafito. (págs. 66, 137, 141).</p>
+        <p>Sensor de temperatura fototransistor o resistencia térmica especial alojada en una ranura de la cámara de combustión equipada con junta de grafito. (págs. 136, 141)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Mantenimiento</div>
-        <p>Reemplazar obligatoriamente la junta de grafito por una nueva en cada desmontaje, orientando el lado sin rebarbas hacia el collar del guardallamas G64 e introduciéndola sin aristas vivas. (pág. 141).</p>
+        <p>Sustituir obligatoriamente la junta de grafito al desmontar el guardallamas e insertarla con cuidado utilizando un destornillador sin aristas vivas. (pág. 141)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT177_01</code> Gráfica de curva característica resistencia-temperatura para la comprobación del guardallamas G64 — Fuente: Audi A5 Coupé_2008_Calefacción independiente.pdf, pág. 67</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT177_01</code> Montaje del guardallamas G64 en la ranura con su junta de grafito — Fuente: Audi A5 Coupé_2008_Calefacción independiente.pdf, pág. 141</span></div>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">Audi A5 Coupé_2008_Calefacción independiente.pdf, págs. 66-67, 72-88, 141</p>
+        <p class="fuentes">Audi A5 Coupé_2008_Calefacción independiente.pdf, págs. 66, 141</p>
       </div>
     </div>
   </section>
@@ -37598,6 +37575,11 @@ La presencia de cloro o bromo eleva el PAO. Los HFC y HFO carecen de cloro y bro
     </div>
   </section>
 
+  <div class="grupo-componente" id="grp-bomba-recirculacion-liquido-refrigerante">
+    <div class="grupo-cab"><span class="grupo-nombre">Bomba eléctrica para recirculación de líquido refrigerante</span><span class="grupo-cuenta">2 fuentes sin fusionar</span></div>
+    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
+    <details class="variante" open>
+      <summary>Variante 1 de 2 · NT551 · 301_e         Climatización en el Touareg.pdf, págs. 8-10</summary>
   <section id="nt551" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 551 <span class="fusionado">VW</span></div>
     <div class="nota-body">
@@ -37635,6 +37617,60 @@ La presencia de cloro o bromo eleva el PAO. Los HFC y HFO carecen de cloro y bro
       </div>
     </div>
   </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 2 de 2 · NT847 · Audi A5 Coupé_2008_Calefacción independiente.pdf, págs. 119-120</summary>
+  <section id="nt847" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 847 <span class="fusionado">Audi</span></div>
+    <div class="nota-body">
+      <h1>Bomba de recirculación de líquido refrigerante — <strong>V55</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Impulsar el líquido refrigerante por el circuito cerrado del calefactor y el intercambiador de calor de la calefacción cuando el motor térmico está detenido o funciona al ralentí. (págs. 118-120)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Al activarse la calefacción independiente o la función de apoyo en diésel, la UCE J364 suministra corriente a la bomba V55 para establecer el caudal de refrigerante necesario que absorba la energía térmica generada en la cámara de combustión. (págs. 71, 119-120)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Tensión de alimentación: 12 V de corriente continua. (pág. 120)</li>
+<li>Control de potencia: excitación modulada en % desde la UCE J364. (pág. 33)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Desgaste de escobillas del motor eléctrico, bloqueo del rodete por posos del líquido refrigerante o funcionamiento en seco tras vaciados del circuito. (págs. 119-120)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Sobrecalentamiento rápido del calefactor (alcanzando &gt; 89 ºC en pocos segundos), lo que provoca el paso prematuro a la pausa de regulación o el bloqueo de seguridad. (págs. 44, 79)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Activar la bomba V55 mediante el diagnóstico de actuadores comprobando su funcionamiento audible y verificar la señal en % en el bloque de valores de medición 004 (campo 3). (págs. 10, 33)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Electrobomba centrífuga accionada por motor eléctrico de corriente continua, alojada en el soporte de la calefacción independiente en el pasarruedas. (págs. 119-120)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <p>No conectar eléctricamente la bomba tras reparaciones hasta haber rellenado y purgado completamente el circuito de líquido refrigerante. (pág. 120)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT847_01</code> Desmontaje y ubicación de la bomba para recirculación V55 en el conjunto del calefactor — Fuente: Audi A5 Coupé_2008_Calefacción independiente.pdf, pág. 119</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Audi A5 Coupé_2008_Calefacción independiente.pdf, págs. 119-120</p>
+      </div>
+    </div>
+  </section>
+    </details>
+  </div>
 
   <section id="nt556" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 556 <span class="subtipo">Procedimiento</span></div>
@@ -41208,8 +41244,263 @@ En la versión de nueva generación, ha sido revisada técnicamente y adaptada e
     </div>
   </section>
 
+  <section id="nt844" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 844 <span class="subtipo">Fundamento</span><span class="fusionado">Audi</span></div>
+    <div class="nota-body proceso">
+      <h1>Sistema de calefacción y ventilación independiente — <strong>J364</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El sistema utiliza una unidad calefactora autónoma por combustión (J364) conectada al sistema de combustible y al circuito de refrigerante del motor. Al quemar combustible en su interior, calienta el líquido refrigerante que la bomba V55 hace circular hacia el intercambiador de calor del climatizador, mientras la turbina del habitáculo difunde el aire caliente. (págs. 69-70, 118)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>El funcionamiento de la calefacción independiente se organiza en las siguientes fases operativas:</p>
+<ul>
+<li><strong>Arranque y precalentamiento:</strong> La UCE J364 activa la bomba de recirculación V55 y la válvula de cierre N279. Aplica tensión a la bujía de precalentamiento Q9 para calentar la cámara de combustión e inicia la rotación gradual de la turbina de aire de combustión V6. A continuación, activa la bomba dosificadora V54 a 4 Hz para inyectar combustible. (págs. 71-74)</li>
+<li><strong>Fase de combustión a plena carga:</strong> Tras detectarse la presencia de llama mediante el guardallamas G64, se desconecta la bujía Q9. La turbina V6 se alimenta a 12 V y la bomba V54 trabaja a máxima frecuencia (8 Hz) suministrando 5,0 kW de potencia calorífica. (págs. 74-76)</li>
+<li><strong>Conmutación a carga parcial y pausa de regulación:</strong> Si la temperatura del líquido refrigerante en el calefactor alcanza los 77 ºC, la UCE reduce la tensión de V6 a 6 V y la frecuencia de V54 a 4 Hz (potencia al 50%). Si la temperatura asciende a 89 ºC, el sistema pasa a la pausa de regulación (deteniendo V54 y V6 mientras V55 mantiene el flujo). Si el refrigerante cae por debajo de 65 ºC, se reinicia la combustión. (págs. 76-79)</li>
+<li><strong>Ciclo de post-marcha y desconexión:</strong> Al desactivar la calefacción, la bomba V54 se corta inmediatamente mientras la turbina V6 funciona entre 8 V y 12 V durante 15 a 120 segundos para purgar los gases de escape y enfriar el intercambiador. (págs. 81-82)</li>
+<li><strong>Función de ventilación independiente:</strong> Durante el verano, si la temperatura interior supera la consigna, la UCE activa únicamente la turbina de aire fresco del habitáculo sin encender el quemador de combustible. (pág. 82)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Temperatura de conmutación a carga parcial: 77 ºC en el líquido refrigerante. (pág. 76)</li>
+<li>Temperatura de conmutación a pausa de regulación: 89 ºC en el líquido refrigerante. (pág. 79)</li>
+<li>Temperatura de reinicio tras pausa de regulación: &lt; 65 ºC en el líquido refrigerante. (pág. 79)</li>
+<li>Rendimiento térmico nominal a plena carga: 5,0 kW. (pág. 1)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Calentar o ventilar el habitáculo del vehículo cuando el motor térmico está parado o apoyar la generación de calor a bajas temperaturas exteriores en versiones diésel. (págs. 1, 69-70)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Errores de concepto frecuentes</div>
+        <ul>
+<li>Creer que la calefacción independiente consume la energía de la batería para generar calor mediante resistencias eléctricas masivas, ignorando que la energía térmica procede del combustible del depósito. (págs. 1, 69)</li>
+<li>Suponer que la ventilación independiente utiliza el compresor del aire acondicionado con el motor parado, cuando únicamente hace circular aire exterior. (pág. 82)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT844_01</code> Esquema del circuito de líquido refrigerante integrando la calefacción independiente, la bomba V55 y la válvula N279 — Fuente: Audi A5 Coupé_2008_Calefacción independiente.pdf, pág. 118</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Audi A5 Coupé_2008_Calefacción independiente.pdf, págs. 1-3, 69-89, 118-121</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt845" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 845 <span class="fusionado">Audi</span></div>
+    <div class="nota-body">
+      <h1>Unidad de control para calefacción adicional y calefactor — <strong>J364</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Gobernar de forma autónoma el proceso de combustión, controlar los sensores térmicos y de llama, e integrar la calefacción independiente en la red de datos del vehículo. (págs. 3, 136)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Procesa las órdenes recibidas por el bus CAN desde la pantalla del MMI o la antena de radiofrecuencia R64. Evalúa las señales de los sensores internos de temperatura (G18, G587) y del guardallamas (G64) para alimentar secuencialmente la bujía Q9, la turbina V6, la bomba dosificadora V54, la bomba de recirculación V55 y la válvula N279. (págs. 71-76, 136)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Tensión de alimentación: 12 V de corriente continua (Borne 30) mediante conector de 2 polos. (pág. 136)</li>
+<li>Conexión de señales: conector de 14 polos para sensores/actuadores internos y conector de 6 polos para la red del vehículo. (pág. 136)</li>
+<li>Límite de desconexión por sobrecalentamiento de la placa electrónica interna: 130 ºC. (pág. 55)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Bloqueo de seguridad tras 3 intentos fallidos de arranque consecutivos por falta de combustible o por registrar temperaturas internas superiores a 130 ºC en su placa electrónica. (págs. 8, 55)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Inoperatividad total de la calefacción independiente, memorizándose el fallo y requiriendo la anulación del bloqueo a través del canal de adaptación 42 con el equipo VAS 5051. (págs. 8, 58)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Consultar la memoria de averías en la dirección "18 - Calefacción adicional/independiente", evaluar los bloques de valores de medición del 001 al 023 e iniciar la diagnosis de actuadores. (págs. 8, 10, 27-55)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Módulo electrónico integrado físicamente en la carcasa superior del propio calefactor de agua (Eberspächer Hydronic II-SF), situado en el pasarruedas delantero derecho. Existen versiones específicas para motores de gasolina y diésel. (págs. 1, 123, 136)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <p>Inscribir el año de la primera puesta en servicio en la etiqueta adhesiva duplicada del vano motor al sustituir la unidad. (págs. 1, 127)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT845_01</code> Cuadro de montaje del calefactor mostrando la unidad de control J364 y la turbina de aire de combustión V6 — Fuente: Audi A5 Coupé_2008_Calefacción independiente.pdf, pág. 136</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Audi A5 Coupé_2008_Calefacción independiente.pdf, págs. 1, 131-138</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt846" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 846 <span class="fusionado">Audi</span></div>
+    <div class="nota-body">
+      <h1>Bomba dosificadora de combustible — <strong>V54</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Aspirar combustible desde la cuba antioleaje del depósito del vehículo e impulsarlo volumétricamente a impulsos hacia el evaporador de la cámara de combustión del calefactor. (págs. 101, 104-105)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Cada impulso de corriente enviado por la UCE J364 atrae un émbolo interno que desplaza una cantidad fija calibrada de combustible hacia la tubería. La frecuencia de la señal determina el caudal aportado al quemador. (págs. 71-75, 105)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Caudal por carrera/impulso: aprox. 0,03 ml (0,03 cm³). (pág. 105)</li>
+<li>Frecuencia de excitación a plena carga: 7 a 8 Hz (impulsos/segundo). (págs. 75, 105)</li>
+<li>Frecuencia de excitación a carga parcial: 3 a 4 Hz. (págs. 77-78)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Obstrucción o estrangulamiento de la línea de combustible, o falta de impulsos por agarrotamiento mecánico del émbolo tras periodos prolongados de inactividad. (págs. 105, 113)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Extinción o imposibilidad de encendido de la llama en el calefactor por falta de combustible, registrándose avería en la UCE J364. (págs. 8, 76)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Realizar la prueba de comprobación del caudal impelido recogiendo el combustible en una probeta graduada durante 30 segundos en el grupo de ajuste básico 066 (debe aportar el volumen especificado). (págs. 104-106)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Bomba electromagnética de émbolo alternativo de funcionamiento por pulsos, montada cerca del depósito de combustible en los bajos del vehículo. (págs. 101, 111)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <p>Utilizar mangueras de goma con empalmes a tope para evitar bolsas de aire en la canalización de combustible. (pág. 101)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT846_01</code> Vista de montaje de la bomba dosificadora V54 en los bajos del vehículo con su tubería de combustible — Fuente: Audi A5 Coupé_2008_Calefacción independiente.pdf, pág. 111</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Audi A5 Coupé_2008_Calefacción independiente.pdf, págs. 101, 104-106, 111-112</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt848" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 848 <span class="fusionado">Audi</span></div>
+    <div class="nota-body">
+      <h1>Válvula de cierre para líquido refrigerante de la calefacción — <strong>N279</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Dirigir el flujo de líquido refrigerante procedente del calefactor exclusivamente hacia el intercambiador de calor del habitáculo o permitir el paso hacia el bloque del motor térmico. (págs. 89, 121)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Gobernada por la UCE J364. Cuando no recibe corriente o la temperatura es reducida, la válvula prioriza el circuito corto (intercambiador de calor del climatizador) para calentar rápidamente el habitáculo. Al activarse, conmuta las vías permitiendo calentar simultáneamente el bloque motor. (págs. 89, 121)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Frecuencia de excitación en prueba de actuadores: 0,5 Hz (intermitencia audible cada 2 segundos). (pág. 11)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <p>Fallo de la bobina electromagnética o agarrotamiento interno por incrustaciones en el líquido refrigerante. (págs. 11, 121)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <p>Falta de rendimiento calorífico en el habitáculo o imposibilidad de precalentar el motor térmico. (págs. 89, 121)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <p>Realizar la prueba de actuadores con el equipo VAS 5051 escuchando la intermitencia de conmutación a 0,5 Hz. (pág. 11)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Electroválvula de solenoide de vías instalada en las tuberías de refrigerante del vano motor. (pág. 121)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <p>Montar los tubos flexibles mutuamente a tope contra los racores al sustituir la válvula. (pág. 121)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT848_01</code> Ubicación y conexiones de los tubos flexibles en la válvula de cierre N279 — Fuente: Audi A5 Coupé_2008_Calefacción independiente.pdf, pág. 121</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Audi A5 Coupé_2008_Calefacción independiente.pdf, págs. 89, 121</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nt849" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 849 <span class="subtipo">Procedimiento</span></div>
+    <div class="nota-body proceso">
+      <h1>Comprobación de la cantidad de combustible impelida por la bomba dosificadora</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
+        <p>Medir con precisión el volumen de combustible suministrado por la bomba V54 para verificar su correcto calibrado y diagnosticar fallos de humo o falta de combustión. (págs. 104-105)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
+        <ol>
+<li>Nivel de combustible suficiente en el depósito del vehículo (por encima de la reserva). (pág. 104)</li>
+<li>Calefacción independiente desactivada y sin códigos de avería almacenados. (pág. 104)</li>
+<li>Pasarruedas delantero derecho desmontado para acceder a la tubería de combustible del calefactor. (pág. 104)</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
+        <p>Estación de diagnosis VAS 5051 con cable T16, probeta o recipiente graduado de precisión en ml y recipiente de recogida de combustible. (págs. 104-105)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <ul>
+<li>Frecuencia de prueba en ajuste básico: 8 Hz (8 impulsos/segundo) durante 30 segundos (240 impulsos totales). (pág. 105)</li>
+<li>Volumen teórico nominal aportado: entre 6,8 ml y 7,6 ml tras 240 impulsos (0,03 ml/impulso). (pág. 105)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
+        <p>Si el volumen medido está fuera del margen especificado, revisar la tubería por si presenta estrangulamientos; si la canalización es correcta, reemplazar la bomba dosificadora V54. (págs. 106, 112)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
+        <p>Recoger todo el combustible en recipientes herméticos homologados. No fumar ni generar chispas en la zona de trabajo. (pág. 101)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Pasos</div>
+        <ol>
+<li>Desmontar el tubo flexible de combustible conectado a la entrada de la calefacción independiente. (pág. 104)</li>
+<li>Introducir el extremo libre del tubo de combustible en la probeta graduada de precisión y fijarlo firmemente. (pág. 104)</li>
+<li>Conectar el equipo de diagnosis VAS 5051 al conector de 16 polos T16 e iniciar la autodiagnosis en la dirección "18 - Calefacción adicional/independiente". (págs. 7, 105)</li>
+<li>Acceder a la función "12 - Adaptación", ingresar en el "Canal 30" y modificar el valor a "3" para desbloquear la función de prueba de llenado. (pág. 105)</li>
+<li>Seleccionar la función "04 - Ajuste básico" e ingresar al grupo de indicación "066". (pág. 105)</li>
+<li>Activar la prueba: la UCE excitará la bomba dosificadora V54 durante exactamente 30 segundos con una frecuencia fija de 8 Hz. (pág. 105)</li>
+<li>Al finalizar automáticamente los 30 segundos de impulsos, leer el nivel de volumen de combustible recogido en la probeta graduada. (págs. 105-106)</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Audi A5 Coupé_2008_Calefacción independiente.pdf, págs. 104-110</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    835 notas técnicas · generado el 25/09/2026.
+    841 notas técnicas · generado el 25/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
