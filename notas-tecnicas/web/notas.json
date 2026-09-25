@@ -4530,6 +4530,22 @@
    "hecha": false
   },
   {
+   "nombre": "NT867_01",
+   "nt": 867,
+   "titulo": "Presostato de cuatro etapas",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Esquema funcional de las cuatro etapas del presostato trinary identificando los contactos del compresor y del electroventilador — Fuente: MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 13-14",
+   "hecha": false
+  },
+  {
+   "nombre": "NT868_01",
+   "nt": 868,
+   "titulo": "Cilindro de carga graduado de refrigerante",
+   "seccion": "Por ubicar",
+   "descripcion": "Detalle del cilindro de carga con sus manómetros, llaves de paso y envoltura plástica giratoria de lectura corregida — Fuente: MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, pág. 38",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -4554,7 +4570,7 @@
    "hecha": false
   }
  ],
- "total": 858,
+ "total": 862,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -27091,6 +27107,87 @@
    ]
   },
   {
+   "id": "ssc.presostato.trinary-cuatro-etapas.manual-aire-acondicionado-climatizador-f",
+   "nt": 867,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "presostato-binary-trinary-cuatrinary",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Presostato de cuatro etapas",
+   "codigo": "",
+   "menu": "Presostato de cuatro etapas",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 13-14",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "trinary-cuatro-etapas",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "embrague-compresor",
+    "electroventilador-condensador"
+   ],
+   "palabras": [
+    "presostato",
+    "trinary",
+    "cuatro etapas",
+    "corte por baja",
+    "corte por alta",
+    "velocidad del ventilador"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Supervisar de forma continuada las presiones del fluido refrigerante en la línea de alta presión para conectar las velocidades del electroventilador y proteger el compresor contra faltas de carga o sobrepresiones peligrosas. (págs. 13-14)",
+     "html": "<p>Supervisar de forma continuada las presiones del fluido refrigerante en la línea de alta presión para conectar las velocidades del electroventilador y proteger el compresor contra faltas de carga o sobrepresiones peligrosas. <span class=\"pag\">págs. 13-14</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Sensor e interruptor hidromecánico de presión de cuatro etapas (Trinary) montado en la tubería de alta presión, dividiendo internamente su mecanismo en dos zonas de trabajo: una para el control de los ventiladores de refrigeración y otra para el circuito de activación del compresor. (págs. 13-14)",
+     "html": "<p>Sensor e interruptor hidromecánico de presión de cuatro etapas (Trinary) montado en la tubería de alta presión, dividiendo internamente su mecanismo en dos zonas de trabajo: una para el control de los ventiladores de refrigeración y otra para el circuito de activación del compresor. <span class=\"pag\">págs. 13-14</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Procesa la señal de presión del fluido repartida en cuatro secuencias o etapas operativas: 1ª Etapa (Sin líquido refrigerante / Presión insuficiente): Ante una fuga o falta de gas, la baja presión mantiene abierto el contacto eléctrico de la línea del compresor, impidiendo su acoplamiento para evitar el trabajo sin aceite. (pág. 13) 2ª Etapa (Con líquido refrigerante / Presión de trabajo normal): Al alcanzar la presión de servicio adecuada, el contacto se cierra, permitiendo el paso de corriente para activar el acoplamiento magnético del compresor. (pág. 13) 3ª Etapa (Aumento de presión / Ventilador a máxima velocidad): Cuando la presión de alta se eleva por incremento térmico en el condensador, el presostato cierra el contacto del electroventilador para conectarlo a su máxima velocidad de soplado y forzar la condensación. (pág. 13) 4ª Etapa (Desconexión por sobrepresión alta): Si la presión alcanza el límite máximo de seguridad, se abre de inmediato el contacto del compresor para interrumpir su funcionamiento y evitar el reventón de mangueras o componentes. (pág. 14)",
+     "html": "<p>Procesa la señal de presión del fluido repartida en cuatro secuencias o etapas operativas:</p>\n<ul>\n<li><strong>1ª Etapa (Sin líquido refrigerante / Presión insuficiente):</strong> Ante una fuga o falta de gas, la baja presión mantiene abierto el contacto eléctrico de la línea del compresor, impidiendo su acoplamiento para evitar el trabajo sin aceite. <span class=\"pag\">pág. 13</span></li>\n<li><strong>2ª Etapa (Con líquido refrigerante / Presión de trabajo normal):</strong> Al alcanzar la presión de servicio adecuada, el contacto se cierra, permitiendo el paso de corriente para activar el acoplamiento magnético del compresor. <span class=\"pag\">pág. 13</span></li>\n<li><strong>3ª Etapa (Aumento de presión / Ventilador a máxima velocidad):</strong> Cuando la presión de alta se eleva por incremento térmico en el condensador, el presostato cierra el contacto del electroventilador para conectarlo a su máxima velocidad de soplado y forzar la condensación. <span class=\"pag\">pág. 13</span></li>\n<li><strong>4ª Etapa (Desconexión por sobrepresión alta):</strong> Si la presión alcanza el límite máximo de seguridad, se abre de inmediato el contacto del compresor para interrumpir su funcionamiento y evitar el reventón de mangueras o componentes. <span class=\"pag\">pág. 14</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Sulfatación de bornes o agarrotamiento del diafragma interno por picos continuos de sobrepresión. (págs. 13-14)",
+     "html": "<p>Sulfatación de bornes o agarrotamiento del diafragma interno por picos continuos de sobrepresión. <span class=\"pag\">págs. 13-14</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Imposibilidad de acoplar el compresor por fallo en la 1ª/2ª etapa o falta de activación de la velocidad rápida del ventilador, provocando sobrecalentamiento del condensador. (págs. 13-14)",
+     "html": "<p>Imposibilidad de acoplar el compresor por fallo en la 1ª/2ª etapa o falta de activación de la velocidad rápida del ventilador, provocando sobrecalentamiento del condensador. <span class=\"pag\">págs. 13-14</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Medir la continuidad eléctrica con multímetro entre las bornes de la etapa del compresor y de los ventiladores verificando la conmutación al presurizar la toma. (págs. 13-14)",
+     "html": "<p>Medir la continuidad eléctrica con multímetro entre las bornes de la etapa del compresor y de los ventiladores verificando la conmutación al presurizar la toma. <span class=\"pag\">págs. 13-14</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema funcional de las cuatro etapas del presostato trinary identificando los contactos del compresor y del electroventilador — Fuente: MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 13-14",
+     "html": "<ul>\n<li>Esquema funcional de las cuatro etapas del presostato trinary identificando los contactos del compresor y del electroventilador — Fuente: MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 13-14</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.transmisor-presion.2-introduccion-a-la-refrigeracion",
    "nt": 14,
    "modulo": "ssc",
@@ -45056,6 +45153,87 @@
    ]
   },
   {
+   "id": "ssc.carga-refrigerante.manual-aire-acondicionado-climatizador-f",
+   "nt": 869,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "carga-refrigerante",
+   "seccion": "9. Taller: recuperación, vacío y carga",
+   "subgrupo": "",
+   "titulo": "Carga universal de refrigerante en el circuito",
+   "codigo": "",
+   "menu": "Carga universal de refrigerante en el",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "procedimiento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 39-40",
+   "clase": "procedimiento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "vacio-circuito",
+    "lectura-manometros"
+   ],
+   "palabras": [
+    "carga de refrigerante",
+    "vacío",
+    "alta presión",
+    "baja presión",
+    "ralentí",
+    "500 gramos"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto y alcance",
+     "texto": "Introducir la masa nominal de fluido refrigerante prescrita por el fabricante en el interior del circuito frigorífico tras haber completado el proceso de vacío y deshidratación. (págs. 39-40)",
+     "html": "<p>Introducir la masa nominal de fluido refrigerante prescrita por el fabricante en el interior del circuito frigorífico tras haber completado el proceso de vacío y deshidratación. <span class=\"pag\">págs. 39-40</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Condiciones previas",
+     "texto": "Circuito frigorífico sometido previamente a un vacío continuo de al menos 20 minutos sin pérdidas de depresión. (pág. 39) Estación de carga o botella conectada a las tomas de servicio mediante mangueras provistas de llaves de corte. (págs. 38-39) Motor del vehículo apagado en la primera fase de inyección de gas. (pág. 39)",
+     "html": "<ol>\n<li>Circuito frigorífico sometido previamente a un vacío continuo de al menos 20 minutos sin pérdidas de depresión. <span class=\"pag\">pág. 39</span></li>\n<li>Estación de carga o botella conectada a las tomas de servicio mediante mangueras provistas de llaves de corte. <span class=\"pag\">págs. 38-39</span></li>\n<li>Motor del vehículo apagado en la primera fase de inyección de gas. <span class=\"pag\">pág. 39</span></li>\n</ol>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Equipo y material",
+     "texto": "Estación de servicio o estación recirculadora de A/C, manómetros de alta y baja presión, termómetro digital de rejilla y depósito de refrigerante. (págs. 38-40)",
+     "html": "<p>Estación de servicio o estación recirculadora de A/C, manómetros de alta y baja presión, termómetro digital de rejilla y depósito de refrigerante. <span class=\"pag\">págs. 38-40</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Pasos",
+     "texto": "Completar la fase de evacuación e higienización manteniendo el vacío del circuito durante un mínimo de 20 minutos. (pág. 39) Con el motor parado y los manómetros conectados, abrir la válvula de la manguera de alta presión (roja) e introducir una primera dosis inicial de 500 gramos de refrigerante en estado líquido. (pág. 39) Insertar la sonda de un termómetro digital en el interior del conducto de una tobera de aireación central del salpicadero. (pág. 39) Desactivar la función de recirculación de aire en el panel y ajustar la velocidad del electroventilador del habitáculo al mínimo. (pág. 39) Arrancar el motor del vehículo, dejarlo estabilizado al régimen de ralentí y activar el sistema de aire acondicionado (A/C). (págs. 39-40) Completar la carga introduciendo lentamente el resto de la masa de gas necesaria por la toma de baja presión (manguera azul) con el compresor en marcha, vigilando la evolución de las presiones de trabajo y el descenso de temperatura en el termómetro de la tobera. (págs. 39-40)",
+     "html": "<ol>\n<li>Completar la fase de evacuación e higienización manteniendo el vacío del circuito durante un mínimo de 20 minutos. <span class=\"pag\">pág. 39</span></li>\n<li>Con el motor parado y los manómetros conectados, abrir la válvula de la manguera de alta presión (roja) e introducir una primera dosis inicial de 500 gramos de refrigerante en estado líquido. <span class=\"pag\">pág. 39</span></li>\n<li>Insertar la sonda de un termómetro digital en el interior del conducto de una tobera de aireación central del salpicadero. <span class=\"pag\">pág. 39</span></li>\n<li>Desactivar la función de recirculación de aire en el panel y ajustar la velocidad del electroventilador del habitáculo al mínimo. <span class=\"pag\">pág. 39</span></li>\n<li>Arrancar el motor del vehículo, dejarlo estabilizado al régimen de ralentí y activar el sistema de aire acondicionado (A/C). <span class=\"pag\">págs. 39-40</span></li>\n<li>Completar la carga introduciendo lentamente el resto de la masa de gas necesaria por la toma de baja presión (manguera azul) con el compresor en marcha, vigilando la evolución de las presiones de trabajo y el descenso de temperatura en el termómetro de la tobera. <span class=\"pag\">págs. 39-40</span></li>\n</ol>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Tiempo mínimo de vacío previo: 20 minutos. (pág. 39) Carga inicial en fase líquida por alta presión con motor parado: 500 gramos. (pág. 39) Régimen del motor durante el ajuste final: ralentí con A/C conectado y soplador al mínimo. (págs. 39-40)",
+     "html": "<ul>\n<li>Tiempo mínimo de vacío previo: 20 minutos. <span class=\"pag\">pág. 39</span></li>\n<li>Carga inicial en fase líquida por alta presión con motor parado: 500 gramos. <span class=\"pag\">pág. 39</span></li>\n<li>Régimen del motor durante el ajuste final: ralentí con A/C conectado y soplador al mínimo. <span class=\"pag\">págs. 39-40</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Verificación final",
+     "texto": "Comprobar que la temperatura medida en el aireador central alcanza los valores de enfriamiento nominales y verificar que las presiones en los manómetros de alta y baja se estabilizan dentro del margen de servicio especificado. (págs. 39-40)",
+     "html": "<p>Comprobar que la temperatura medida en el aireador central alcanza los valores de enfriamiento nominales y verificar que las presiones en los manómetros de alta y baja se estabilizan dentro del margen de servicio especificado. <span class=\"pag\">págs. 39-40</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Seguridad y normativa",
+     "texto": "Trabajar con gafas y guantes de protección para evitar lesiones por salpicaduras de refrigerante líquido al manipular los acoplamientos rápidos. (págs. 38, 40)",
+     "html": "<p>Trabajar con gafas y guantes de protección para evitar lesiones por salpicaduras de refrigerante líquido al manipular los acoplamientos rápidos. <span class=\"pag\">págs. 38, 40</span></p>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.deteccion-fugas.6-el-circuito-electrico",
    "nt": 404,
    "modulo": "ssc",
@@ -47164,6 +47342,75 @@
      "titulo": "Imágenes requeridas",
      "texto": "Pantalla del analizador Climtest con los mensajes de diagnóstico (falta de fluido, exceso de fluido, filtro deshidratante saturado) — Fuente: CLIMATIZACION INTRODUCCION.PDF, pág. 238",
      "html": "<ul>\n<li>Pantalla del analizador Climtest con los mensajes de diagnóstico (falta de fluido, exceso de fluido, filtro deshidratante saturado) — Fuente: CLIMATIZACION INTRODUCCION.PDF, pág. 238</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.lectura-manometros.vehiculo-parado.manual-aire-acondicionado-climatizador-f",
+   "nt": 870,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "lectura-manometros",
+   "seccion": "10. Diagnóstico",
+   "subgrupo": "",
+   "titulo": "Diagnóstico del estado de la carga a vehículo parado",
+   "codigo": "",
+   "menu": "Diagnóstico del estado de la carga a v",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 41, 47",
+   "clase": "diagnostico",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "vehiculo-parado",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "carga-refrigerante",
+    "presostato"
+   ],
+   "palabras": [
+    "diagnóstico en parado",
+    "6.5 bar",
+    "7.5 bar",
+    "falta de líquido",
+    "exceso de carga",
+    "asociación de gases"
+   ],
+   "apartados": [
+    {
+     "titulo": "Síntoma",
+     "texto": "Falta de enfriamiento en el habitáculo o comportamiento anómalo de las presiones detectado antes de poner en marcha el motor. (págs. 41, 47)",
+     "html": "<p>Falta de enfriamiento en el habitáculo o comportamiento anómalo de las presiones detectado antes de poner en marcha el motor. <span class=\"pag\">págs. 41, 47</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Causas posibles",
+     "texto": "Fuga de gas con pérdida de masa de líquido refrigerante. (págs. 41, 47) Contaminación del circuito por mezcla de aire no purgado o presencia de gases incondensables (asociación de gases). (págs. 41, 47) Sobrecarga de fluido frigorífico por un proceso de llenado incorrecto. (págs. 41, 47)",
+     "html": "<ul>\n<li>Fuga de gas con pérdida de masa de líquido refrigerante. <span class=\"pag\">págs. 41, 47</span></li>\n<li>Contaminación del circuito por mezcla de aire no purgado o presencia de gases incondensables (asociación de gases). <span class=\"pag\">págs. 41, 47</span></li>\n<li>Sobrecarga de fluido frigorífico por un proceso de llenado incorrecto. <span class=\"pag\">págs. 41, 47</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo separar las causas",
+     "texto": "Conectar la estación de manómetros al vehículo con el motor parado y a temperatura de reposo (frenado y estabilizado). (págs. 41, 47) Medir la temperatura ambiental exterior y la temperatura del condensador con un termómetro de contacto. (págs. 41, 47) Leer la presión de reposo indicada por el manómetro de baja presión y comparar los valores con la tabla de diagnóstico a vehículo parado: Presión de 6,5 bar con 25 ºC en manómetro, 24-26 ºC en condensador y 24-26 ºC ambiental: Indica carga correcta . (págs. 41, 47) Presión de 6,5 bar con 25 ºC en manómetro, pero 30 ºC en condensador y 30 ºC ambiental: Indica falta de líquido refrigerante en la instalación. (págs. 41, 47) Presión elevada de 7,5 bar con 30 ºC en manómetro frente a 24-26 ºC ambientales: Indica asociación de gases / presencia de aire incondensable en el circuito. (págs. 41, 47) Presión elevada de 7,5 bar con 30 ºC en manómetro y 30 ºC en condensador con motor frío a 24-26 ºC ambientales: Indica exceso de carga de fluido. (págs. 41, 47)",
+     "html": "<ol>\n<li>Conectar la estación de manómetros al vehículo con el motor parado y a temperatura de reposo (frenado y estabilizado). <span class=\"pag\">págs. 41, 47</span></li>\n<li>Medir la temperatura ambiental exterior y la temperatura del condensador con un termómetro de contacto. <span class=\"pag\">págs. 41, 47</span></li>\n<li>Leer la presión de reposo indicada por el manómetro de baja presión y comparar los valores con la tabla de diagnóstico a vehículo parado:<ul>\n<li><strong>Presión de 6,5 bar con 25 ºC en manómetro, 24-26 ºC en condensador y 24-26 ºC ambiental:</strong> Indica <strong>carga correcta</strong>. <span class=\"pag\">págs. 41, 47</span></li>\n<li><strong>Presión de 6,5 bar con 25 ºC en manómetro, pero 30 ºC en condensador y 30 ºC ambiental:</strong> Indica <strong>falta de líquido</strong> refrigerante en la instalación. <span class=\"pag\">págs. 41, 47</span></li>\n<li><strong>Presión elevada de 7,5 bar con 30 ºC en manómetro frente a 24-26 ºC ambientales:</strong> Indica <strong>asociación de gases / presencia de aire</strong> incondensable en el circuito. <span class=\"pag\">págs. 41, 47</span></li>\n<li><strong>Presión elevada de 7,5 bar con 30 ºC en manómetro y 30 ºC en condensador con motor frío a 24-26 ºC ambientales:</strong> Indica <strong>exceso de carga</strong> de fluido. <span class=\"pag\">págs. 41, 47</span></li>\n</ul>\n</li>\n</ol>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Presión teórica de reposo nominal a 25 ºC ambiental: 6,5 bar. (págs. 41, 47) Umbral de sobrepresión en parado por exceso de carga / aire: 7,5 bar a 24-26 ºC ambientales. (págs. 41, 47)",
+     "html": "<ul>\n<li>Presión teórica de reposo nominal a 25 ºC ambiental: 6,5 bar. <span class=\"pag\">págs. 41, 47</span></li>\n<li>Umbral de sobrepresión en parado por exceso de carga / aire: 7,5 bar a 24-26 ºC ambientales. <span class=\"pag\">págs. 41, 47</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Verificación tras la reparación",
+     "texto": "Si se detecta falta de líquido, realizar la prueba de detección de fugas; si se determina la presencia de aire o exceso de carga, evacuar por completo el refrigerante, efectuar un vacío de 20 minutos y recargar la masa exacta de fluido recomendada. (págs. 39, 41, 47)",
+     "html": "<p>Si se detecta falta de líquido, realizar la prueba de detección de fugas; si se determina la presencia de aire o exceso de carga, evacuar por completo el refrigerante, efectuar un vacío de 20 minutos y recargar la masa exacta de fluido recomendada. <span class=\"pag\">págs. 39, 41, 47</span></p>",
      "nivel": ""
     }
    ]
@@ -69744,6 +69991,97 @@
      "titulo": "Seguridad y normativa",
      "texto": "Llevar gafas y guantes de protección. Prohibida la liberación de refrigerante a la atmósfera durante las operaciones de servicio. (pág. 14)",
      "html": "<p>Llevar gafas y guantes de protección. Prohibida la liberación de refrigerante a la atmósfera durante las operaciones de servicio. <span class=\"pag\">pág. 14</span></p>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.equipos-taller.cilindro-carga.manual-aire-acondicionado-climatizador-f",
+   "nt": 868,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "equipos-taller",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Cilindro de carga graduado de refrigerante",
+   "codigo": "",
+   "menu": "Cilindro de carga graduado de refriger",
+   "grupo": "Equipos de taller",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 38-39",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "cilindro-carga",
+   "area": "climatizacion",
+   "sistema": "equipos-taller",
+   "formaParteDe": "equipos-taller",
+   "relacionados": [
+    "carga-refrigerante"
+   ],
+   "palabras": [
+    "cilindro de carga",
+    "escala",
+    "manómetro",
+    "líneas de presión constante",
+    "dosificación"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Medir y dosificar volumétricamente la cantidad exacta en gramos de fluido refrigerante que se inyecta al circuito frigorífico durante la fase de carga. (págs. 38-39)",
+     "html": "<p>Medir y dosificar volumétricamente la cantidad exacta en gramos de fluido refrigerante que se inyecta al circuito frigorífico durante la fase de carga. <span class=\"pag\">págs. 38-39</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tiposand características",
+     "texto": "Recipiente cilíndrico transparente provisto de un manómetro de presión superior, indicador de nivel transparente, funda de plástico giratoria con escalas calibradas de peso y presión, y válvulas manuales de paso. (págs. 38-39)",
+     "html": "<p>Recipiente cilíndrico transparente provisto de un manómetro de presión superior, indicador de nivel transparente, funda de plástico giratoria con escalas calibradas de peso y presión, y válvulas manuales de paso. <span class=\"pag\">págs. 38-39</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Debido a que la densidad del refrigerante líquido varía en función de la presión y la temperatura almacenada dentro del cilindro, la envoltura plástica exterior dispone de curvas inclinadas para corregir la lectura: El técnico lee la presión indicada en el manómetro superior del cilindro. (pág. 38) Se gira la funda transparente orientando la columna de la escala sobre el valor de presión leído. (pág. 38) La intersección entre el nivel visual del líquido y la línea de peso inclinada indica los gramos exactos de refrigerante contenidos en el depósito antes y después de la carga. (págs. 38-39)",
+     "html": "<p>Debido a que la densidad del refrigerante líquido varía en función de la presión y la temperatura almacenada dentro del cilindro, la envoltura plástica exterior dispone de curvas inclinadas para corregir la lectura:</p>\n<ol>\n<li>El técnico lee la presión indicada en el manómetro superior del cilindro. <span class=\"pag\">pág. 38</span></li>\n<li>Se gira la funda transparente orientando la columna de la escala sobre el valor de presión leído. <span class=\"pag\">pág. 38</span></li>\n<li>La intersección entre el nivel visual del líquido y la línea de peso inclinada indica los gramos exactos de refrigerante contenidos en el depósito antes y después de la carga. <span class=\"pag\">págs. 38-39</span></li>\n</ol>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Corrección de escala: lectura de peso referida a la presión interna marcada por el manómetro del cilindro. (pág. 38)",
+     "html": "<ul>\n<li>Corrección de escala: lectura de peso referida a la presión interna marcada por el manómetro del cilindro. <span class=\"pag\">pág. 38</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fugas de gas por las juntas de las llaves de paso o rozamiento/opacidad en el plástico visor graduado. (págs. 38-39)",
+     "html": "<p>Fugas de gas por las juntas de las llaves de paso o rozamiento/opacidad en el plástico visor graduado. <span class=\"pag\">págs. 38-39</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Inexactitud en los gramos de gas inyectados al vehículo, provocando cargas deficientes o excesivas. (págs. 38-39)",
+     "html": "<p>Inexactitud en los gramos de gas inyectados al vehículo, provocando cargas deficientes o excesivas. <span class=\"pag\">págs. 38-39</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Contrastar la cantidad de gas introducida con una balanza digital de precisión de taller. (págs. 38-39)",
+     "html": "<p>Contrastar la cantidad de gas introducida con una balanza digital de precisión de taller. <span class=\"pag\">págs. 38-39</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Mantener cerradas las llaves de paso mientras el equipo permanezca fuera de servicio. (pág. 38)",
+     "html": "<p>Mantener cerradas las llaves de paso mientras el equipo permanezca fuera de servicio. <span class=\"pag\">pág. 38</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Detalle del cilindro de carga con sus manómetros, llaves de paso y envoltura plástica giratoria de lectura corregida — Fuente: MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, pág. 38",
+     "html": "<ul>\n<li>Detalle del cilindro de carga con sus manómetros, llaves de paso y envoltura plástica giratoria de lectura corregida — Fuente: MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, pág. 38</li>\n</ul>",
      "nivel": ""
     }
    ]
