@@ -1474,14 +1474,6 @@
    "hecha": false
   },
   {
-   "nombre": "NT320_01",
-   "nt": 320,
-   "titulo": "Confort térmico y seguridad activa",
-   "seccion": "2. Fundamentos",
-   "descripcion": "Gráfica de cargas climatológicas A, B y C relacionando la transpiración, frecuencia cardíaca y temperatura corporal — Fuente: MANUAL CLIMATIZACION 2010 HELLA EN WORD.pdf, pág. 4",
-   "hecha": false
-  },
-  {
    "nombre": "NT322_01",
    "nt": 322,
    "titulo": "Presión y punto de ebullición de los fluidos",
@@ -4570,6 +4562,30 @@
    "hecha": false
   },
   {
+   "nombre": "NT874_01",
+   "nt": 874,
+   "titulo": "Depósito y filtro deshidratador",
+   "seccion": "5. Lado de alta",
+   "descripcion": "Sección del filtro deshidratador con la entrada desde el condensador, la masa deshidratadora y el tamiz filtrante de salida — Fuente: MANUAL CLIMATIZACION 2010 HELLA EN WORD.pdf, pág. 39",
+   "hecha": false
+  },
+  {
+   "nombre": "NT875_01",
+   "nt": 875,
+   "titulo": "Conmutador de presión para climatizador F129",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Esquema eléctrico de conexiones del presostato F129 en la línea de control del relé del compresor y del ventilador — Fuente: MANUAL CLIMATIZACION 2010 HELLA EN WORD.pdf, pág. 42",
+   "hecha": false
+  },
+  {
+   "nombre": "NT877_01",
+   "nt": 877,
+   "titulo": "Regulación automática de temperatura dividida en dos partes (Climatronic Dual)",
+   "seccion": "8. Regulación y control",
+   "descripcion": "Cuadro del sistema Climatronic dual mostrando la centralita J255, los sensores térmicos individuales y los servomotores V158 y V159 — Fuente: MANUAL CLIMATIZACION 2010 HELLA EN WORD.pdf, pág. 65",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -4594,7 +4610,7 @@
    "hecha": false
   }
  ],
- "total": 865,
+ "total": 870,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -5743,15 +5759,15 @@
    "clave": "higrometria-y-confort",
    "seccion": "2. Fundamentos",
    "subgrupo": "",
-   "titulo": "Confort térmico y seguridad activa",
+   "titulo": "Influencia de la climatización en la seguridad activa y confort",
    "codigo": "",
-   "menu": "Confort térmico y seguridad activa",
+   "menu": "Influencia de la climatización en la s",
    "grupo": "Control de climatización",
    "tipo": "proceso",
    "subtipo": "fundamento",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 3-5",
+   "fuentes": "MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 2-5",
    "clase": "fundamento",
    "estado": "",
    "fusionadas": [],
@@ -5760,51 +5776,44 @@
    "sistema": "control-climatizacion",
    "formaParteDe": "",
    "relacionados": [
-    "regulacion-automatica",
-    "filtro-habitaculo"
+    "unidad-control-climatizador"
    ],
    "palabras": [
-    "confort térmico",
+    "bienestar",
     "seguridad activa",
-    "estrés climatológico",
-    "margen agradable",
-    "deshidratación del aire"
+    "rendimiento físico",
+    "rendimiento mental",
+    "concentración"
    ],
    "apartados": [
     {
      "titulo": "Objeto",
-     "texto": "Analizar las condiciones de bienestar térmico e higrométrico en el habitáculo y su repercusión directa sobre la seguridad activa y la capacidad del conductor. (págs. 3-5).",
-     "html": "<p>Analizar las condiciones de bienestar térmico e higrométrico en el habitáculo y su repercusión directa sobre la seguridad activa y la capacidad del conductor. <span class=\"pag\">págs. 3-5</span>.</p>",
+     "texto": "Analizar la relación directa entre el confort térmico en el habitáculo y la capacidad psicofísica del conductor como elemento clave de la seguridad activa. (págs. 2-3)",
+     "html": "<p>Analizar la relación directa entre el confort térmico en el habitáculo y la capacidad psicofísica del conductor como elemento clave de la seguridad activa. <span class=\"pag\">págs. 2-3</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Fundamento",
-     "texto": "El bienestar físico del conductor evita la fatiga y el «estrés climatológico». Las temperaturas elevadas y la humedad reducen la capacidad de concentración y los reflejos al volante. (págs. 3-5).",
-     "html": "<p>El bienestar físico del conductor evita la fatiga y el «estrés climatológico». Las temperaturas elevadas y la humedad reducen la capacidad de concentración y los reflejos al volante. <span class=\"pag\">págs. 3-5</span>.</p>",
+     "texto": "El cuerpo humano requiere un ambiente con valores controlados de temperatura y humedad para mantener la concentración y la capacidad de reacción sin fatiga prematura ni estrés térmico. (págs. 2-4)",
+     "html": "<p>El cuerpo humano requiere un ambiente con valores controlados de temperatura y humedad para mantener la concentración y la capacidad de reacción sin fatiga prematura ni estrés térmico. <span class=\"pag\">págs. 2-4</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Desarrollo",
-     "texto": "Variación de temperatura e intensidad de caudal requeridas: Temperatura exterior de -20 ºC: exige 28 ºC interiores con caudal intenso de 8 kg/min. (pág. 3). Temperatura exterior de 40 ºC: exige 23 ºC interiores con caudal intenso de 10 kg/min. (pág. 3). Temperatura exterior de 10 ºC: exige 21,5 ºC interiores con caudal reducido de 4 kg/min. (pág. 3). Temperaturas medidas en turismo tras 1 h a 30 ºC ambiente y radiación solar: Zona cabeza: 42 ºC sin climatizador frente a 23 ºC con climatizador. (pág. 3). Zona tórax: 40 ºC sin climatizador frente a 24 ºC con climatizador. (pág. 3). Zona pies: 35 ºC sin climatizador frente a 28 ºC con climatizador. (pág. 3). Pérdida de facultades: la temperatura ideal se sitúa entre 20 ºC y 22 ºC (carga A, margen agradable). Al pasar de 25 ºC a 35 ºC (cargas B y C), la percepción disminuye un 20%, equivalente a 0,5 g/l de alcohol en sangre. (págs. 4-5). Funciones técnicas adicionales: deshidratación del aire y depuración mediante filtro antipolen y filtro de carbón activo. (pág. 5).",
-     "html": "<ul>\n<li>Variación de temperatura e intensidad de caudal requeridas:<ul>\n<li>Temperatura exterior de -20 ºC: exige 28 ºC interiores con caudal intenso de 8 kg/min. <span class=\"pag\">pág. 3</span>.</li>\n<li>Temperatura exterior de 40 ºC: exige 23 ºC interiores con caudal intenso de 10 kg/min. <span class=\"pag\">pág. 3</span>.</li>\n<li>Temperatura exterior de 10 ºC: exige 21,5 ºC interiores con caudal reducido de 4 kg/min. <span class=\"pag\">pág. 3</span>.</li>\n</ul>\n</li>\n<li>Temperaturas medidas en turismo tras 1 h a 30 ºC ambiente y radiación solar:<ul>\n<li>Zona cabeza: 42 ºC sin climatizador frente a 23 ºC con climatizador. <span class=\"pag\">pág. 3</span>.</li>\n<li>Zona tórax: 40 ºC sin climatizador frente a 24 ºC con climatizador. <span class=\"pag\">pág. 3</span>.</li>\n<li>Zona pies: 35 ºC sin climatizador frente a 28 ºC con climatizador. <span class=\"pag\">pág. 3</span>.</li>\n</ul>\n</li>\n<li>Pérdida de facultades: la temperatura ideal se sitúa entre 20 ºC y 22 ºC (carga A, margen agradable). Al pasar de 25 ºC a 35 ºC (cargas B y C), la percepción disminuye un 20%, equivalente a 0,5 g/l de alcohol en sangre. <span class=\"pag\">págs. 4-5</span>.</li>\n<li>Funciones técnicas adicionales: deshidratación del aire y depuración mediante filtro antipolen y filtro de carbón activo. <span class=\"pag\">pág. 5</span>.</li>\n</ul>",
+     "texto": "El exceso de calor en el habitáculo produce efectos fisiológicos comparables a una tasa de alcoholemia, reduciendo el tiempo de reacción, provocando somnolencia e incrementando el margen de error en la conducción. Un sistema de climatización eficaz regula la temperatura y la tasa de humedad relativa, previniendo la sudoración excesiva o la deshidratación y manteniendo al conductor en su zona óptima de rendimiento físico y mental. (págs. 2-5)",
+     "html": "<p>El exceso de calor en el habitáculo produce efectos fisiológicos comparables a una tasa de alcoholemia, reduciendo el tiempo de reacción, provocando somnolencia e incrementando el margen de error en la conducción. Un sistema de climatización eficaz regula la temperatura y la tasa de humedad relativa, previniendo la sudoración excesiva o la deshidratación y manteniendo al conductor en su zona óptima de rendimiento físico y mental. <span class=\"pag\">págs. 2-5</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Valores de referencia",
-     "texto": "Temperatura ideal del conductor: 20 ºC a 22 ºC. (pág. 4). Tasa de alcohol equivalente al estrés térmico (25 ºC a 35 ºC): 0,5 g/l de sangre. (pág. 5).",
-     "html": "<ul>\n<li>Temperatura ideal del conductor: 20 ºC a 22 ºC. <span class=\"pag\">pág. 4</span>.</li>\n<li>Tasa de alcohol equivalente al estrés térmico (25 ºC a 35 ºC): 0,5 g/l de sangre. <span class=\"pag\">pág. 5</span>.</li>\n</ul>",
+     "texto": "Influencia en la conducción: reducción drástica de la fatiga al mantener la temperatura del habitáculo dentro del margen de bienestar. (págs. 2-4)",
+     "html": "<ul>\n<li>Influencia en la conducción: reducción drástica de la fatiga al mantener la temperatura del habitáculo dentro del margen de bienestar. <span class=\"pag\">págs. 2-4</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Errores de concepto frecuentes",
-     "texto": "Considerar la climatización como un equipo estético o de lujo; constituye un elemento de seguridad activa indispensable para evitar accidentes por fatiga. (págs. 3, 5).",
-     "html": "<p>Considerar la climatización como un equipo estético o de lujo; constituye un elemento de seguridad activa indispensable para evitar accidentes por fatiga. <span class=\"pag\">págs. 3, 5</span>.</p>",
-     "nivel": ""
-    },
-    {
-     "titulo": "Imágenes requeridas",
-     "texto": "Gráfica de cargas climatológicas A, B y C relacionando la transpiración, frecuencia cardíaca y temperatura corporal — Fuente: MANUAL CLIMATIZACION 2010 HELLA EN WORD.pdf, pág. 4",
-     "html": "<ul>\n<li>Gráfica de cargas climatológicas A, B y C relacionando la transpiración, frecuencia cardíaca y temperatura corporal — Fuente: MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, pág. 4</li>\n</ul>",
+     "texto": "Considerar el climatizador como un simple elemento de lujo opcional, ignorando su función activa en la prevención de accidentes de tráfico. (págs. 2-3)",
+     "html": "<ul>\n<li>Considerar el climatizador como un simple elemento de lujo opcional, ignorando su función activa en la prevención de accidentes de tráfico. <span class=\"pag\">págs. 2-3</span></li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -20841,6 +20850,87 @@
    ]
   },
   {
+   "id": "ssc.filtro-deshidratador.manual-climatizacion-2010-hella-en-word",
+   "nt": 874,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "filtro-deshidratador-mirilla",
+   "seccion": "5. Lado de alta",
+   "subgrupo": "",
+   "titulo": "Depósito y filtro deshidratador",
+   "codigo": "C",
+   "menu": "Depósito y filtro deshidratado C",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 18-20, 39",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "condensador",
+    "valvula-expansion",
+    "refrigerante-r134a"
+   ],
+   "palabras": [
+    "deshidratador",
+    "humedad",
+    "ácido fluorhídrico",
+    "corrosión",
+    "tamiz filtro"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Almacenar la reserva de agente frigorífico líquido, retener químicamente la humedad del circuito y filtrar partículas sólidas para proteger el compresor y la válvula de expansión. (págs. 18, 39)",
+     "html": "<p>Almacenar la reserva de agente frigorífico líquido, retener químicamente la humedad del circuito y filtrar partículas sólidas para proteger el compresor y la válvula de expansión. <span class=\"pag\">págs. 18, 39</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Depósito metálico intercalado entre el condensador y la válvula de expansión en sistemas con válvula de expansión termostática. Alberga un lecho desecante y un tamiz filtrante. (págs. 18, 39)",
+     "html": "<p>Depósito metálico intercalado entre el condensador y la válvula de expansión en sistemas con válvula de expansión termostática. Alberga un lecho desecante y un tamiz filtrante. <span class=\"pag\">págs. 18, 39</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El refrigerante R134a en estado líquido procedente del condensador penetra en el depósito. El fluido atraviesa el material desecante, el cual absorbe el agua en suspensión, y el tamiz retiene las impurezas metálicas. La humedad combinada con el flúor del R134a forma ácido fluorhídrico, altamente corrosivo para los metales de la instalación. (págs. 18, 39)",
+     "html": "<p>El refrigerante R134a en estado líquido procedente del condensador penetra en el depósito. El fluido atraviesa el material desecante, el cual absorbe el agua en suspensión, y el tamiz retiene las impurezas metálicas. La humedad combinada con el flúor del R134a forma ácido fluorhídrico, altamente corrosivo para los metales de la instalación. <span class=\"pag\">págs. 18, 39</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Saturación de la capacidad de absorción de agua del deshidratador, con la consiguiente formación de ácido fluorhídrico y corrosión interna de componentes. (pág. 39)",
+     "html": "<p>Saturación de la capacidad de absorción de agua del deshidratador, con la consiguiente formación de ácido fluorhídrico y corrosión interna de componentes. <span class=\"pag\">pág. 39</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Obstrucción por hielo en la válvula de expansión o desprendimiento de partículas del lecho desecante que destruyen el compresor. (pág. 39)",
+     "html": "<p>Obstrucción por hielo en la válvula de expansión o desprendimiento de partículas del lecho desecante que destruyen el compresor. <span class=\"pag\">pág. 39</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Sustituir obligatoriamente el depósito deshidratador cada vez que se abra el circuito frigorífico. Mantener cerrado con sus tapones protectores hasta el momento de su instalación para evitar la absorción de humedad ambiental. (pág. 39)",
+     "html": "<p>Sustituir obligatoriamente el depósito deshidratador cada vez que se abra el circuito frigorífico. Mantener cerrado con sus tapones protectores hasta el momento de su instalación para evitar la absorción de humedad ambiental. <span class=\"pag\">pág. 39</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Sección del filtro deshidratador con la entrada desde el condensador, la masa deshidratadora y el tamiz filtrante de salida — Fuente: MANUAL CLIMATIZACION 2010 HELLA EN WORD.pdf, pág. 39",
+     "html": "<ul>\n<li>Sección del filtro deshidratador con la entrada desde el condensador, la masa deshidratadora y el tamiz filtrante de salida — Fuente: MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, pág. 39</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.valvula-expansion.2-introduccion-a-la-refrigeracion",
    "nt": 15,
    "modulo": "ssc",
@@ -27207,6 +27297,103 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema funcional de las cuatro etapas del presostato trinary identificando los contactos del compresor y del electroventilador — Fuente: MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 13-14",
      "html": "<ul>\n<li>Esquema funcional de las cuatro etapas del presostato trinary identificando los contactos del compresor y del electroventilador — Fuente: MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 13-14</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.presostato.manual-climatizacion-2010-hella-en-word",
+   "nt": 875,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "presostato-binary-trinary-cuatrinary",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Conmutador de presión para climatizador F129",
+   "codigo": "F129",
+   "menu": "Conmutador de presión para cli F129",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 38-40, 42",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "embrague-compresor",
+    "electroventilador-condensador",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "F129",
+    "presostato triple",
+    "0",
+    "2 MPa",
+    "1",
+    "6 MPa",
+    "3",
+    "2 MPa",
+    "protección de presión"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Supervisar los niveles de alta presión en el circuito frigorífico para desconectar el compresor ante presiones extremas (por defecto o exceso) y accionar el segundo escalón de velocidad del electroventilador. (págs. 38, 42)",
+     "html": "<p>Supervisar los niveles de alta presión en el circuito frigorífico para desconectar el compresor ante presiones extremas (por defecto o exceso) y accionar el segundo escalón de velocidad del electroventilador. <span class=\"pag\">págs. 38, 42</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Presostato hidromecánico de triple función (Trinary) montado en la tubería de alta presión. (págs. 38, 42)",
+     "html": "<p>Presostato hidromecánico de triple función (Trinary) montado en la tubería de alta presión. <span class=\"pag\">págs. 38, 42</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Integra tres contactos eléctricos accionados por la presión del refrigerante: Desconexión por baja/alta presión: Desconecta el acoplamiento magnético N25 si la presión cae por debajo de 0,2 MPa (2 bar) o si supera los 3,2 MPa (32 bar). (pág. 42) Conmutación del ventilador: Cierra el contacto hacia el relé J101 cuando la alta presión alcanza los 1,6 MPa (16 bar), activando la velocidad rápida del ventilador V7 para forzar la condensación. (pág. 42)",
+     "html": "<p>Integra tres contactos eléctricos accionados por la presión del refrigerante:</p>\n<ul>\n<li><strong>Desconexión por baja/alta presión:</strong> Desconecta el acoplamiento magnético N25 si la presión cae por debajo de 0,2 MPa (2 bar) o si supera los 3,2 MPa (32 bar). <span class=\"pag\">pág. 42</span></li>\n<li><strong>Conmutación del ventilador:</strong> Cierra el contacto hacia el relé J101 cuando la alta presión alcanza los 1,6 MPa (16 bar), activando la velocidad rápida del ventilador V7 para forzar la condensación. <span class=\"pag\">pág. 42</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Umbral de corte por baja presión: < 0,2 MPa (2 bar). (pág. 42) Umbral de activación del 2º escalón del ventilador: > 1,6 MPa (16 bar). (pág. 42) Umbral de corte por alta presión: > 3,2 MPa (32 bar). (pág. 42)",
+     "html": "<ul>\n<li>Umbral de corte por baja presión: &lt; 0,2 MPa (2 bar). <span class=\"pag\">pág. 42</span></li>\n<li>Umbral de activación del 2º escalón del ventilador: &gt; 1,6 MPa (16 bar). <span class=\"pag\">pág. 42</span></li>\n<li>Umbral de corte por alta presión: &gt; 3,2 MPa (32 bar). <span class=\"pag\">pág. 42</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Sulfatación de contactos o fallo de conmutación interna por picos reiterados de sobrepresión. (págs. 38, 42)",
+     "html": "<p>Sulfatación de contactos o fallo de conmutación interna por picos reiterados de sobrepresión. <span class=\"pag\">págs. 38, 42</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Inoperatividad del acoplamiento del compresor N25 o falta de activación del 2º escalón de los electroventiladores. (págs. 38, 42)",
+     "html": "<p>Inoperatividad del acoplamiento del compresor N25 o falta de activación del 2º escalón de los electroventiladores. <span class=\"pag\">págs. 38, 42</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Verificar la continuidad eléctrica de sus bornes con multímetro o comprobar los estados con el equipo de autodiagnóstico. (págs. 38, 42)",
+     "html": "<p>Verificar la continuidad eléctrica de sus bornes con multímetro o comprobar los estados con el equipo de autodiagnóstico. <span class=\"pag\">págs. 38, 42</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "En instalaciones de nueva generación este conmutador hidromecánico es sustituido por un transmisor de alta presión piezoeléctrico (G65). (pág. 42)",
+     "html": "<p>En instalaciones de nueva generación este conmutador hidromecánico es sustituido por un transmisor de alta presión piezoeléctrico (G65). <span class=\"pag\">pág. 42</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema eléctrico de conexiones del presostato F129 en la línea de control del relé del compresor y del ventilador — Fuente: MANUAL CLIMATIZACION 2010 HELLA EN WORD.pdf, pág. 42",
+     "html": "<ul>\n<li>Esquema eléctrico de conexiones del presostato F129 en la línea de control del relé del compresor y del ventilador — Fuente: MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, pág. 42</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -40286,6 +40473,94 @@
    ]
   },
   {
+   "id": "ssc.unidad-control-climatizador.modulo-ventiladores-j293.manual-climatizacion-2010-hella-en-word",
+   "nt": 876,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "unidad-control-climatizador",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Unidad de control para el ventilador del líquido refrigerante J293",
+   "codigo": "J293",
+   "menu": "Unidad de control para el vent J293",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 40, 47",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "modulo-ventiladores-j293",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "control-climatizacion",
+   "relacionados": [
+    "electroventilador-condensador",
+    "presostato",
+    "embrague-compresor"
+   ],
+   "palabras": [
+    "J293",
+    "escalón 1",
+    "escalón 2",
+    "F18",
+    "F129",
+    "conmutación combinada"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Gobernar la activación y los escalones de velocidad (I y II) de los electroventiladores de refrigeración del motor/condensador en respuesta a la presión del circuito y a la temperatura del líquido refrigerante. (págs. 40, 47)",
+     "html": "<p>Gobernar la activación y los escalones de velocidad (I y II) de los electroventiladores de refrigeración del motor/condensador en respuesta a la presión del circuito y a la temperatura del líquido refrigerante. <span class=\"pag\">págs. 40, 47</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Módulo electrónico de potencia equipado con relés de conmutación combinada, ubicado en el compartimento motor. (págs. 40, 47)",
+     "html": "<p>Módulo electrónico de potencia equipado con relés de conmutación combinada, ubicado en el compartimento motor. <span class=\"pag\">págs. 40, 47</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Recibe las señales del conmutador de presión F129 y del termoconmutador del radiador F18: Escalón: Se conecta en cuanto se activa el climatizador (compresor A/C acoplado) siempre que la presión en el circuito frigorífico supere los 0,2 MPa (2 bar). (pág. 47) Escalón: Se conmuta cuando la alta presión en el circuito frigorífico supera los 1,6 MPa (16 bar) o cuando la temperatura del líquido refrigerante del motor sobrepasa los 99 ºC. Retorna al escalón 1 cuando la presión cae de 1,6 MPa y la temperatura baja de 99 ºC. (pág. 47)",
+     "html": "<p>Recibe las señales del conmutador de presión F129 y del termoconmutador del radiador F18:</p>\n<ul>\n<li><strong>Escalón:</strong> Se conecta en cuanto se activa el climatizador (compresor A/C acoplado) siempre que la presión en el circuito frigorífico supere los 0,2 MPa (2 bar). <span class=\"pag\">pág. 47</span></li>\n<li><strong>Escalón:</strong> Se conmuta cuando la alta presión en el circuito frigorífico supera los 1,6 MPa (16 bar) o cuando la temperatura del líquido refrigerante del motor sobrepasa los 99 ºC. Retorna al escalón 1 cuando la presión cae de 1,6 MPa y la temperatura baja de 99 ºC. <span class=\"pag\">pág. 47</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Umbral de activación del escalón 1 por A/C: A/C conectado y presión > 0,2 MPa (2 bar). (pág. 47) Umbral de activación del escalón 2 por presión: alta presión > 1,6 MPa (16 bar). (pág. 47) Umbral de activación del escalón 2 por temperatura de agua (F18): temperatura del refrigerante del motor > 99 ºC. (pág. 47)",
+     "html": "<ul>\n<li>Umbral de activación del escalón 1 por A/C: A/C conectado y presión &gt; 0,2 MPa (2 bar). <span class=\"pag\">pág. 47</span></li>\n<li>Umbral de activación del escalón 2 por presión: alta presión &gt; 1,6 MPa (16 bar). <span class=\"pag\">pág. 47</span></li>\n<li>Umbral de activación del escalón 2 por temperatura de agua (F18): temperatura del refrigerante del motor &gt; 99 ºC. <span class=\"pag\">pág. 47</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Deterioro de los relés de potencia internos o cortocircuito en las salidas hacia los motores de los electroventiladores. (págs. 40, 47)",
+     "html": "<p>Deterioro de los relés de potencia internos o cortocircuito en las salidas hacia los motores de los electroventiladores. <span class=\"pag\">págs. 40, 47</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Inoperatividad de los ventiladores del radiador/condensador, elevación crítica de la alta presión en tráfico urbano y corte de seguridad del compresor. (págs. 40, 47)",
+     "html": "<p>Inoperatividad de los ventiladores del radiador/condensador, elevación crítica de la alta presión en tráfico urbano y corte de seguridad del compresor. <span class=\"pag\">págs. 40, 47</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Efectuar la prueba de actuadores con el equipo de diagnosis comprobando la activación de la velocidad 1 y 2 de los ventiladores. (págs. 40, 47)",
+     "html": "<p>Efectuar la prueba de actuadores con el equipo de diagnosis comprobando la activación de la velocidad 1 y 2 de los ventiladores. <span class=\"pag\">págs. 40, 47</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Verificar la limpieza y el estado de apriete de los conectores eléctricos del módulo. (pág. 40)",
+     "html": "<p>Verificar la limpieza y el estado de apriete de los conectores eléctricos del módulo. <span class=\"pag\">pág. 40</span></p>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.regulacion-automatica.2-introduccion-a-la-refrigeracion",
    "nt": 20,
    "modulo": "ssc",
@@ -43951,6 +44226,81 @@
      "titulo": "Errores de concepto frecuentes",
      "texto": "Creer que los sistemas bizona disponen de dos evaporadores independientes bajo el salpicadero, cuando en realidad comparten un único evaporador y dividen mecánicamente el aire en la caja de mezcla. (págs. 126, 130)",
      "html": "<ul>\n<li>Creer que los sistemas bizona disponen de dos evaporadores independientes bajo el salpicadero, cuando en realidad comparten un único evaporador y dividen mecánicamente el aire en la caja de mezcla. <span class=\"pag\">págs. 126, 130</span></li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.distribucion-aire.dual-bizona.manual-climatizacion-2010-hella-en-word",
+   "nt": 877,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "distribucion-aire",
+   "seccion": "8. Regulación y control",
+   "subgrupo": "",
+   "titulo": "Regulación automática de temperatura dividida en dos partes (Climatronic Dual)",
+   "codigo": "",
+   "menu": "Regulación automática de temperatura d",
+   "grupo": "Distribución de aire",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 63-66",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "dual-bizona",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "",
+   "relacionados": [
+    "unidad-control-climatizador",
+    "servomotor-trampilla"
+   ],
+   "palabras": [
+    "Climatronic",
+    "dual",
+    "bizona",
+    "18 ºC a 29 ºC",
+    "mezcla independiente",
+    "servomotores V158 V159"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Permitir la selección y regulación automática e independiente de la temperatura para el lado izquierdo (conductor) y derecho (acompañante) del habitáculo. (págs. 63-65)",
+     "html": "<p>Permitir la selección y regulación automática e independiente de la temperatura para el lado izquierdo (conductor) y derecho (acompañante) del habitáculo. <span class=\"pag\">págs. 63-65</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "El sistema Climatronic dual utiliza una carcasa de distribución de aire provista de chapaletas de mezcla independientes para el lado izquierdo y derecho, accionadas por servomotores individuales comandados por la centralita J255/E87. (págs. 63-66)",
+     "html": "<p>El sistema Climatronic dual utiliza una carcasa de distribución de aire provista de chapaletas de mezcla independientes para el lado izquierdo y derecho, accionadas por servomotores individuales comandados por la centralita J255/E87. <span class=\"pag\">págs. 63-66</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "La unidad de control analiza la temperatura solicitada en cada lado (regulable entre 18 ºC y 29 ºC) junto con las lecturas de los sensores de salida de aire (G150 en difusor izquierdo, G151 en difusor derecho, G192 en reposapiés) y el fotosensor de radiación solar G107. Como respuesta, la centralita excita de forma independiente el servomotor de temperatura izquierda V158 (con potenciómetro G220) y el servomotor de temperatura derecha V159 (con potenciómetro G221), variando la mezcla de aire frío/caliente que se canaliza hacia cada lado del vehículo. (págs. 63-66)",
+     "html": "<p>La unidad de control analiza la temperatura solicitada en cada lado (regulable entre 18 ºC y 29 ºC) junto con las lecturas de los sensores de salida de aire (G150 en difusor izquierdo, G151 en difusor derecho, G192 en reposapiés) y el fotosensor de radiación solar G107.\nComo respuesta, la centralita excita de forma independiente el servomotor de temperatura izquierda V158 (con potenciómetro G220) y el servomotor de temperatura derecha V159 (con potenciómetro G221), variando la mezcla de aire frío/caliente que se canaliza hacia cada lado del vehículo. <span class=\"pag\">págs. 63-66</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Margen de regulación de temperatura seleccionable por lado: de 18 ºC a 29 ºC. (pág. 65)",
+     "html": "<ul>\n<li>Margen de regulación de temperatura seleccionable por lado: de 18 ºC a 29 ºC. <span class=\"pag\">pág. 65</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Asumir que el sistema dual requiere dos compresores o dos evaporadores independientes, ignorando que el circuito frigorífico es único y la división de temperatura es mecánica en la caja de mezcla. (págs. 63, 65)",
+     "html": "<ul>\n<li>Asumir que el sistema dual requiere dos compresores o dos evaporadores independientes, ignorando que el circuito frigorífico es único y la división de temperatura es mecánica en la caja de mezcla. <span class=\"pag\">págs. 63, 65</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Cuadro del sistema Climatronic dual mostrando la centralita J255, los sensores térmicos individuales y los servomotores V158 y V159 — Fuente: MANUAL CLIMATIZACION 2010 HELLA EN WORD.pdf, pág. 65",
+     "html": "<ul>\n<li>Cuadro del sistema Climatronic dual mostrando la centralita J255, los sensores térmicos individuales y los servomotores V158 y V159 — Fuente: MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, pág. 65</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -47708,6 +48058,76 @@
      "titulo": "Verificación tras la reparación",
      "texto": "Si se detecta falta de líquido, realizar la prueba de detección de fugas; si se determina la presencia de aire o exceso de carga, evacuar por completo el refrigerante, efectuar un vacío de 20 minutos y recargar la masa exacta de fluido recomendada. (págs. 39, 41, 47)",
      "html": "<p>Si se detecta falta de líquido, realizar la prueba de detección de fugas; si se determina la presencia de aire o exceso de carga, evacuar por completo el refrigerante, efectuar un vacío de 20 minutos y recargar la masa exacta de fluido recomendada. <span class=\"pag\">págs. 39, 41, 47</span></p>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.lectura-manometros.manual-climatizacion-2010-hella-en-word",
+   "nt": 878,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "lectura-manometros",
+   "seccion": "10. Diagnóstico",
+   "subgrupo": "",
+   "titulo": "Tabla de diagnóstico de averías del circuito frigorífico por manómetros",
+   "codigo": "",
+   "menu": "Tabla de diagnóstico de averías del ci",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "diagnostico",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 79, 82",
+   "clase": "diagnostico",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "valvula-expansion",
+    "condensador",
+    "presostato"
+   ],
+   "palabras": [
+    "diagnóstico por manómetros",
+    "alta presión",
+    "baja presión",
+    "tabla de presiones",
+    "averías comunes"
+   ],
+   "apartados": [
+    {
+     "titulo": "Síntoma",
+     "texto": "Falta de rendimiento frigorífico, enfriamiento nulo o comportamiento anormal de las presiones de trabajo en la estación de manómetros. (pág. 82)",
+     "html": "<p>Falta de rendimiento frigorífico, enfriamiento nulo o comportamiento anormal de las presiones de trabajo en la estación de manómetros. <span class=\"pag\">pág. 82</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Causas posibles",
+     "texto": "Válvula de expansión bloqueada en apertura o en cierre. (pág. 82) Compresor dañado (daños en placas de válvulas o desgastes mecánicos). (pág. 82) Válvula de regulación de cilindrada del compresor defectuosa o desajustada. (pág. 82) Excesso o falta de agente frigorífico R134a. (pág. 82) Filtro deshidratador saturado de humedad. (pág. 82) Presencia de aire en el interior del circuito. (pág. 82)",
+     "html": "<ul>\n<li>Válvula de expansión bloqueada en apertura o en cierre. <span class=\"pag\">pág. 82</span></li>\n<li>Compresor dañado (daños en placas de válvulas o desgastes mecánicos). <span class=\"pag\">pág. 82</span></li>\n<li>Válvula de regulación de cilindrada del compresor defectuosa o desajustada. <span class=\"pag\">pág. 82</span></li>\n<li>Excesso o falta de agente frigorífico R134a. <span class=\"pag\">pág. 82</span></li>\n<li>Filtro deshidratador saturado de humedad. <span class=\"pag\">pág. 82</span></li>\n<li>Presencia de aire en el interior del circuito. <span class=\"pag\">pág. 82</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo separar las causas",
+     "texto": "Acoplar la batería de manómetros a las tomas de alta (HP) y baja presión (BP) y poner en marcha la instalación a régimen de servicio. (págs. 79, 82) Interpretar la lectura combinada de presiones según la tabla de diagnóstico: Baja presión Alta / Alta presión Baja: Válvula de expansión bloqueada en apertura, compresor dañado (válvulas rotas) o válvula de regulación de cilindrada defectuosa. (pág. 82) Baja presión Baja / Alta presión Baja: Carga de refrigerante escasa o fuga en el circuito. (pág. 82) Baja presión Baja / Alta presión Alta: Válvula de expansión bloqueada en cierre, filtro deshidratante saturado de humedad u obstrucción en el condensador/evaporador. (pág. 82) Baja presión Alta / Alta presión Alta: Exceso de refrigerante, presencia de aire en el circuito o falta de condensación por fallo en los electroventiladores. (pág. 82) Baja y Alta presión casi iguales: Compresor destruido mecánicamente, correa rota o fallo en el embrague electromagnético. (pág. 82)",
+     "html": "<ol>\n<li>Acoplar la batería de manómetros a las tomas de alta (HP) y baja presión (BP) y poner en marcha la instalación a régimen de servicio. <span class=\"pag\">págs. 79, 82</span></li>\n<li>Interpretar la lectura combinada de presiones según la tabla de diagnóstico:<ul>\n<li><strong>Baja presión Alta / Alta presión Baja:</strong> Válvula de expansión bloqueada en apertura, compresor dañado (válvulas rotas) o válvula de regulación de cilindrada defectuosa. <span class=\"pag\">pág. 82</span></li>\n<li><strong>Baja presión Baja / Alta presión Baja:</strong> Carga de refrigerante escasa o fuga en el circuito. <span class=\"pag\">pág. 82</span></li>\n<li><strong>Baja presión Baja / Alta presión Alta:</strong> Válvula de expansión bloqueada en cierre, filtro deshidratante saturado de humedad u obstrucción en el condensador/evaporador. <span class=\"pag\">pág. 82</span></li>\n<li><strong>Baja presión Alta / Alta presión Alta:</strong> Exceso de refrigerante, presencia de aire en el circuito o falta de condensación por fallo en los electroventiladores. <span class=\"pag\">pág. 82</span></li>\n<li><strong>Baja y Alta presión casi iguales:</strong> Compresor destruido mecánicamente, correa rota o fallo en el embrague electromagnético. <span class=\"pag\">pág. 82</span></li>\n</ul>\n</li>\n</ol>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Lectura de referencia: valores comparados con la tabla del manual de reparación específico según temperatura ambiental. (pág. 79)",
+     "html": "<ul>\n<li>Lectura de referencia: valores comparados con la tabla del manual de reparación específico según temperatura ambiental. <span class=\"pag\">pág. 79</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Verificación tras la reparación",
+     "texto": "Corregir la causa detectada (limpieza/enjuague, sustitución del componente o recarga exacta) y verificar que las presiones de alta y baja se estabilizan dentro de los márgenes nominales. (págs. 79, 82)",
+     "html": "<p>Corregir la causa detectada (limpieza/enjuague, sustitución del componente o recarga exacta) y verificar que las presiones de alta y baja se estabilizan dentro de los márgenes nominales. <span class=\"pag\">págs. 79, 82</span></p>",
      "nivel": ""
     }
    ]
