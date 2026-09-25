@@ -6,44 +6,42 @@ nt: 546
 tipo: proceso
 subtipo: fundamento
 clase: fundamento
-titulo: "Sistemas de climatización en el VW Touareg"
-menu: "Sistemas de climatización en el VW Tou"
+titulo: "Variantes de climatización en el VW Touareg"
+menu: "Variantes de climatización en el VW To"
 grupo: "Control de climatización"
 clave: regulacion-automatica
 area: climatizacion
 sistema: "control-climatizacion"
-fuentes: "301_e         Climatización en el Touareg.pdf, págs. 4-5"
-relacionados: ["unidad-control-climatizador"]
-palabras: ["4C-Climatronic", "2C-Climatronic", "manual", "climatizador delantero"]
+marca: "VW"
+fuentes: "301_e         Climatización en el Touareg.pdf, págs. 4-6, 11-17"
+relacionados: ["unidad-control-climatizador", "distribucion-aire"]
+palabras: ["4C-Climatronic", "2C-Climatronic", "climatización manual", "4 zonas", "calor residual"]
 ---
 
 ## Objeto
 
-Describir la gama de sistemas de climatización disponibles en el Volkswagen Touareg y la estructura básica compartida entre sus distintas variantes. (págs. 4-5)
+Definir las tres configuraciones de climatización disponibles en el VW Touareg (4C-Climatronic de 4 zonas, 2C-Climatronic de 2 zonas y aire acondicionado manual) para adaptar el confort térmico a los requerimientos del vehículo. (pág. 4)
 
 ## Fundamento
 
-Para adaptarse a los diferentes requerimientos de confort de un vehículo todo terreno, el Touareg dispone de tres variantes de equipamiento de climatización. Aunque difieren en sus unidades de mando e indicación y en sus posibilidades funcionales, las tres variantes comparten la misma estructura básica en el climatizador delantero. (págs. 4-5)
+Los tres sistemas comparten un climatizador delantero básico situado debajo del salpicadero y ofrecen funciones comunes como un margen de regulación de temperatura de 16 ºC a 29,5 ºC, la función de calor residual (REST), la recirculación de aire manual, el desempañado del parabrisas y la desactivación de la refrigeración mediante la tecla ECON o AC. (págs. 4-6)
 
 ## Desarrollo
 
-Las tres variantes de climatización ofrecidas son:
-1. **4C-Climatronic:** Sistema de alta gama con regulación automática de 4 zonas climatizables independientes.
-2. **2C-Climatronic:** Sistema de nivel medio con regulación automática de 2 zonas climatizables (izquierda y derecha).
-3. **Calefacción y aire acondicionado manual:** Sistema básico con regulación manual para una única zona climatizable común.
-
-Los sistemas se identifican visualmente por el diseño de sus paneles de mando e indicación en el tablero de instrumentos. La disposición de componentes internos (evaporador, intercambiador de calor) y los puntos de fijación del climatizador delantero son idénticos en todas las variantes. (págs. 4-5)
+- **4C-Climatronic (4 zonas):** Constituye el nivel máximo de equipamiento. Incorpora dos climatizadores independientes (delantero y trasero) con dos evaporadores en paralelo. Permite la regulación automática e individualizada de temperatura, caudal de soplado y distribución de aire en las cuatro plazas del vehículo mediante dos paneles de mando (delantero y trasero). (págs. 11-13)
+- **2C-Climatronic (2 zonas):** Nivel medio de confort. Dispone de dos zonas climatizables reguladas por un único climatizador delantero, permitiendo ajustar la temperatura de forma independiente para la izquierda y la derecha, con una gestión unificada del soplador y de la distribución. (págs. 14-15)
+- **Aire acondicionado manual:** Equipamiento básico de regulación manual. Mantiene una distribución de aire similar a la versión 2C pero con selección analógica de temperatura, velocidad del soplador y reparto mediante mandos giratorios. (págs. 16-17)
 
 ## Valores de referencia
 
-- Número de zonas climatizables en 4C-Climatronic: 4 zonas independientes. (pág. 4)
-- Número de zonas climatizables en 2C-Climatronic: 2 zonas independientes. (pág. 4)
-- Número de zonas climatizables en sistema manual: 1 zona común. (pág. 4)
+- Margen de regulación de temperatura común: de 16 ºC a 29,5 ºC. (pág. 5)
+- Zonas de regulación independiente en 4C-Climatronic: 4 plazas. (pág. 11)
+- Zonas de regulación independiente en 2C-Climatronic: 2 zonas (conductor/acompañante). (pág. 14)
 
 ## Errores de concepto frecuentes
 
-- Suponer que cada sistema de climatización del Touareg utiliza un cuerpo de climatizador delantero con puntos de fijación y componentes principales totalmente distintos. (págs. 4-5)
+- Asumir que el sistema 2C-Climatronic equipa dos climatizadores físicos como el 4C-Climatronic, cuando en realidad utiliza un único módulo climatizador bajo el salpicadero. (págs. 11, 14)
 
 ## Imágenes requeridas
 
-- Paneles de mando e indicación delantero y posterior del 4C-Climatronic, 2C-Climatronic y aire acondicionado manual — Fuente: 301_e         Climatización en el Touareg.pdf, págs. 4-5
+- Disposición de los paneles de mando delantero y trasero del sistema 4C-Climatronic y sus zonas de influencia térmica — Fuente: 301_e         Climatización en el Touareg.pdf, págs. 5, 12, 13

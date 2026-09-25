@@ -2548,9 +2548,9 @@
   {
    "nombre": "NT546_01",
    "nt": 546,
-   "titulo": "Sistemas de climatización en el VW Touareg",
+   "titulo": "Variantes de climatización en el VW Touareg",
    "seccion": "8. Regulación y control",
-   "descripcion": "Paneles de mando e indicación delantero y posterior del 4C-Climatronic, 2C-Climatronic y aire acondicionado manual — Fuente: 301_e Climatización en el Touareg.pdf, págs. 4-5",
+   "descripcion": "Disposición de los paneles de mando delantero y trasero del sistema 4C-Climatronic y sus zonas de influencia térmica — Fuente: 301_e Climatización en el Touareg.pdf, págs. 5, 12, 13",
    "hecha": false
   },
   {
@@ -4314,6 +4314,30 @@
    "hecha": false
   },
   {
+   "nombre": "NT822_01",
+   "nt": 822,
+   "titulo": "Circuito frigorífico de doble evaporador del 4C-Climatronic",
+   "seccion": "2. Fundamentos",
+   "descripcion": "Esquema del circuito frigorífico de doble evaporador indicando el trazado de alta y baja presión y la válvula N280 — Fuente: 301_e Climatización en el Touareg.pdf, pág. 19",
+   "hecha": false
+  },
+  {
+   "nombre": "NT823_01",
+   "nt": 823,
+   "titulo": "Climatizador trasero del 4C-Climatronic",
+   "seccion": "Por ubicar",
+   "descripcion": "Vista lateral del climatizador trasero con la ubicación de los servomotores V313, V314, V239 y V240 — Fuente: 301_e Climatización en el Touareg.pdf, pág. 29",
+   "hecha": false
+  },
+  {
+   "nombre": "NT824_01",
+   "nt": 824,
+   "titulo": "Sensor para regulación del soplador G462",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Esquema del regulador G462 recibiendo la señal PWM de la centralita J255 y alimentando al motor del soplador V305 — Fuente: 301_e Climatización en el Touareg.pdf, pág. 72",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -4338,7 +4362,7 @@
    "hecha": false
   }
  ],
- "total": 813,
+ "total": 817,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -9201,6 +9225,82 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema del circuito frigorífico con estrangulador e indicación del depósito colector en la línea de baja presión — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 28",
      "html": "<ul>\n<li>Esquema del circuito frigorífico con estrangulador e indicación del depósito colector en la línea de baja presión — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 28</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.ciclo-frigorifico.doble-evaporador.301-e-climatizacion-en-el-touareg",
+   "nt": 822,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ciclo-frigorifico",
+   "seccion": "2. Fundamentos",
+   "subgrupo": "",
+   "titulo": "Circuito frigorífico de doble evaporador del 4C-Climatronic",
+   "codigo": "",
+   "menu": "Circuito frigorífico de doble evaporad",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "301_e         Climatización en el Touareg.pdf, págs. 18-20",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "doble-evaporador",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "compresor",
+    "evaporador",
+    "valvula-expansion"
+   ],
+   "palabras": [
+    "4C-Climatronic",
+    "dos evaporadores",
+    "transmisión por engranajes",
+    "V10-TDI",
+    "R5-TDI",
+    "N280"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Explicar la arquitectura y funcionamiento del circuito de refrigeración del sistema 4C-Climatronic mediante la conexión en paralelo de dos evaporadores gestionados por un único compresor de regulación externa. (pág. 18)",
+     "html": "<p>Explicar la arquitectura y funcionamiento del circuito de refrigeración del sistema 4C-Climatronic mediante la conexión en paralelo de dos evaporadores gestionados por un único compresor de regulación externa. <span class=\"pag\">pág. 18</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Para alimentar los dos climatizadores (delantero y trasero), el circuito frigorífico integra dos evaporadores independientes conectados en paralelo, cada uno provisto de su correspondiente válvula de expansión termostática. (págs. 18-19)",
+     "html": "<p>Para alimentar los dos climatizadores (delantero y trasero), el circuito frigorífico integra dos evaporadores independientes conectados en paralelo, cada uno provisto de su correspondiente válvula de expansión termostática. <span class=\"pag\">págs. 18-19</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "El circuito es alimentado por un compresor de disco oscilante de 7 émbolos con regulación externa mediante la válvula reguladora N280. El tipo de accionamiento del compresor varía en función del motor del vehículo: Motores de gasolina: Accionamiento directo a través de la transmisión por correa auxiliar. (pág. 18) Motores diésel V10-TDI y R5-TDI: Accionamiento mecánico directo por tren de ruedas dentadas conjuntamente con la bomba de la servodirección. (pág. 18) El refrigerante a alta presión se divide tras el condensador (que integra un cartucho secador) hacia las dos válvulas de expansión. Tras evaporarse en los climatizadores delantero y trasero, las líneas de baja presión se unen antes de retornar a la aspiración del compresor. (págs. 18-19)",
+     "html": "<p>El circuito es alimentado por un compresor de disco oscilante de 7 émbolos con regulación externa mediante la válvula reguladora N280.\nEl tipo de accionamiento del compresor varía en función del motor del vehículo:</p>\n<ul>\n<li><strong>Motores de gasolina:</strong> Accionamiento directo a través de la transmisión por correa auxiliar. <span class=\"pag\">pág. 18</span></li>\n<li><strong>Motores diésel V10-TDI y R5-TDI:</strong> Accionamiento mecánico directo por tren de ruedas dentadas conjuntamente con la bomba de la servodirección. <span class=\"pag\">pág. 18</span></li>\n</ul>\n<p>El refrigerante a alta presión se divide tras el condensador (que integra un cartucho secador) hacia las dos válvulas de expansión. Tras evaporarse en los climatizadores delantero y trasero, las líneas de baja presión se unen antes de retornar a la aspiración del compresor. <span class=\"pag\">págs. 18-19</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Número de émbolos del compresor de disco oscilante: 7 émbolos alternativos de trabajo unilateral. (pág. 20) Módulos de evaporación: 2 evaporadores conectados en paralelo. (págs. 18, 19)",
+     "html": "<ul>\n<li>Número de émbolos del compresor de disco oscilante: 7 émbolos alternativos de trabajo unilateral. <span class=\"pag\">pág. 20</span></li>\n<li>Módulos de evaporación: 2 evaporadores conectados en paralelo. <span class=\"pag\">págs. 18, 19</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Buscar la correa auxiliar de accionamiento del compresor en las versiones diésel V10-TDI o R5-TDI, omitiendo que en estas motorizaciones el compresor es arrastrado por engranajes. (pág. 18)",
+     "html": "<ul>\n<li>Buscar la correa auxiliar de accionamiento del compresor en las versiones diésel V10-TDI o R5-TDI, omitiendo que en estas motorizaciones el compresor es arrastrado por engranajes. <span class=\"pag\">pág. 18</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del circuito frigorífico de doble evaporador indicando el trazado de alta y baja presión y la válvula N280 — Fuente: 301_e Climatización en el Touareg.pdf, pág. 19",
+     "html": "<ul>\n<li>Esquema del circuito frigorífico de doble evaporador indicando el trazado de alta y baja presión y la válvula N280 — Fuente: 301_e         Climatización en el Touareg.pdf, pág. 19</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -35724,6 +35824,93 @@
    ]
   },
   {
+   "id": "ssc.servomotor-trampilla.lin-bus.301-e-climatizacion-en-el-touareg",
+   "nt": 825,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "servomotor-trampilla",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Servomotores de trampillas con comunicación LIN-Bus",
+   "codigo": "",
+   "menu": "Servomotores de trampillas con comunic",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "301_e         Climatización en el Touareg.pdf, págs. 44-48, 80-84",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "lin-bus",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "servomotores",
+    "LIN-Bus",
+    "direccionamiento automático",
+    "ajuste básico",
+    "V158",
+    "V159",
+    "V107"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Accionar de forma regulada y precisa las trampillas de mezcla, distribución, recirculación y soplado del sistema de climatización mediante una red en serie de bus de datos LIN. (págs. 44-48)",
+     "html": "<p>Accionar de forma regulada y precisa las trampillas de mezcla, distribución, recirculación y soplado del sistema de climatización mediante una red en serie de bus de datos LIN. <span class=\"pag\">págs. 44-48</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Actuadores eléctricos equipados con un módulo electrónico interno, conectados en serie a través de un cable de datos (LIN-Bus) acoplado a la unidad de control J255. (págs. 44, 80-84)",
+     "html": "<p>Actuadores eléctricos equipados con un módulo electrónico interno, conectados en serie a través de un cable de datos (LIN-Bus) acoplado a la unidad de control J255. <span class=\"pag\">págs. 44, 80-84</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Todos los servomotores de la red son electrónicamente idénticos de recambio. Reciben las órdenes digitales enviadas por la centralita J255 a través del bus LIN. Durante el \"ajuste básico\" y direccionamiento automático, la centralita J255 asigna a cada servomotor su dirección y función específica basándose en el orden físico en el que están conectados en el circuito en serie del mazo de cables. (págs. 80-84)",
+     "html": "<p>Todos los servomotores de la red son electrónicamente idénticos de recambio. Reciben las órdenes digitales enviadas por la centralita J255 a través del bus LIN. Durante el \"ajuste básico\" y direccionamiento automático, la centralita J255 asigna a cada servomotor su dirección y función específica basándose en el orden físico en el que están conectados en el circuito en serie del mazo de cables. <span class=\"pag\">págs. 80-84</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tensión de alimentación: 12 V de corriente continua y línea de datos en serie LIN-Bus. (págs. 81, 83)",
+     "html": "<ul>\n<li>Tensión de alimentación: 12 V de corriente continua y línea de datos en serie LIN-Bus. <span class=\"pag\">págs. 81, 83</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Asignación o direccionamiento incorrecto de los servomotores si se altera la secuencia física de conexión del mazo de cables durante trabajos de desmontaje. (págs. 80-84)",
+     "html": "<p>Asignación o direccionamiento incorrecto de los servomotores si se altera la secuencia física de conexión del mazo de cables durante trabajos de desmontaje. <span class=\"pag\">págs. 80-84</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "La unidad de control registra códigos de avería de \"direccionamiento automático incorrecto\" o \"límite superior/inferior excedido\", provocando un posicionamiento erróneo de las trampillas de aireación. (págs. 80-84)",
+     "html": "<p>La unidad de control registra códigos de avería de \"direccionamiento automático incorrecto\" o \"límite superior/inferior excedido\", provocando un posicionamiento erróneo de las trampillas de aireación. <span class=\"pag\">págs. 80-84</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Efectuar la consulta de averías con el equipo de diagnosis VAS 5051, borrar los códigos presentes y ejecutar la función de asignación automática de direcciones y ajuste básico. (págs. 80-84)",
+     "html": "<p>Efectuar la consulta de averías con el equipo de diagnosis VAS 5051, borrar los códigos presentes y ejecutar la función de asignación automática de direcciones y ajuste básico. <span class=\"pag\">págs. 80-84</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Respetar estrictamente el orden de conexionado del mazo de cables en serie al sustituir o reinstalar servomotores en la unidad climática. (págs. 80-84)",
+     "html": "<p>Respetar estrictamente el orden de conexionado del mazo de cables en serie al sustituir o reinstalar servomotores en la unidad climática. <span class=\"pag\">págs. 80-84</span></p>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
    "id": "ssc.ventilador-habitaculo.cd-072-climatizacion-en-el-ibiza-cordoba",
    "nt": 200,
    "modulo": "ssc",
@@ -36353,6 +36540,97 @@
      "titulo": "Imágenes requeridas",
      "texto": "Esquema del impulsor de habitáculo y circuito eléctrico de regulación de velocidad — Fuente: HELLA02.PDF, pág. 58, 59",
      "html": "<ul>\n<li>Esquema del impulsor de habitáculo y circuito eléctrico de regulación de velocidad — Fuente: HELLA02.PDF, pág. 58, 59</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.ventilador-habitaculo.regulador-pwm.301-e-climatizacion-en-el-touareg",
+   "nt": 824,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ventilador-habitaculo",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Sensor para regulación del soplador G462",
+   "codigo": "G462",
+   "menu": "Sensor para regulación del sop G462",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "301_e         Climatización en el Touareg.pdf, págs. 72",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "regulador-pwm",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "G462",
+    "Bitron",
+    "PWM",
+    "soplador V305",
+    "señal de respuesta"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Regular de forma electrónica y continua la velocidad del motor del soplador del climatizador (V305) respondiendo a las órdenes de la unidad de control J255. (pág. 72)",
+     "html": "<p>Regular de forma electrónica y continua la velocidad del motor del soplador del climatizador (V305) respondiendo a las órdenes de la unidad de control J255. <span class=\"pag\">pág. 72</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Módulo electrónico de regulación de potencia (fabricado por Bitron) instalado directamente en la carcasa del climatizador junto al motor del soplador. (págs. 72, 80)",
+     "html": "<p>Módulo electrónico de regulación de potencia (fabricado por Bitron) instalado directamente en la carcasa del climatizador junto al motor del soplador. <span class=\"pag\">págs. 72, 80</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "La unidad de control J255 envía al módulo G462 una señal modulada por anchura de impulso (PWM). El regulador procesa esta señal y ajusta la tensión de alimentación aplicada al motor del soplador V305. Asimismo, el módulo G462 devuelve a la unidad de control J255 una señal de \"información de respuesta\" sobre el estado operativo de la turbina. (pág. 72)",
+     "html": "<p>La unidad de control J255 envía al módulo G462 una señal modulada por anchura de impulso (PWM). El regulador procesa esta señal y ajusta la tensión de alimentación aplicada al motor del soplador V305. Asimismo, el módulo G462 devuelve a la unidad de control J255 una señal de \"información de respuesta\" sobre el estado operativo de la turbina. <span class=\"pag\">pág. 72</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Tipo de señal de mando: señal digital PWM procedente de la unidad J255. (pág. 72) Alimentación eléctrica: Borne 30 (positivo de batería) y Borne 31 (masa). (pág. 72)",
+     "html": "<ul>\n<li>Tipo de señal de mando: señal digital PWM procedente de la unidad J255. <span class=\"pag\">pág. 72</span></li>\n<li>Alimentación eléctrica: Borne 30 (positivo de batería) y Borne 31 (masa). <span class=\"pag\">pág. 72</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Fallo de los componentes electrónicos de potencia del módulo por sobrecalentamiento. (pág. 72)",
+     "html": "<p>Fallo de los componentes electrónicos de potencia del módulo por sobrecalentamiento. <span class=\"pag\">pág. 72</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Inoperatividad total del soplador del habitáculo o funcionamiento permanente a la máxima velocidad sin posibilidad de regulación. (pág. 72)",
+     "html": "<p>Inoperatividad total del soplador del habitáculo o funcionamiento permanente a la máxima velocidad sin posibilidad de regulación. <span class=\"pag\">pág. 72</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Verificar con osciloscopio la llegada de la señal PWM desde la unidad J255 y medir la tensión continua de salida suministrada al motor V305. (pág. 72)",
+     "html": "<p>Verificar con osciloscopio la llegada de la señal PWM desde la unidad J255 y medir la tensión continua de salida suministrada al motor V305. <span class=\"pag\">pág. 72</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Reemplazar el filtro antipolvo y antipolen en los intervalos prescritos para evitar sobreesfuerzos térmicos en el módulo regulador. (pág. 23)",
+     "html": "<p>Reemplazar el filtro antipolvo y antipolen en los intervalos prescritos para evitar sobreesfuerzos térmicos en el módulo regulador. <span class=\"pag\">pág. 23</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del regulador G462 recibiendo la señal PWM de la centralita J255 y alimentando al motor del soplador V305 — Fuente: 301_e Climatización en el Touareg.pdf, pág. 72",
+     "html": "<ul>\n<li>Esquema del regulador G462 recibiendo la señal PWM de la centralita J255 y alimentando al motor del soplador V305 — Fuente: 301_e         Climatización en el Touareg.pdf, pág. 72</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -39836,15 +40114,15 @@
    "clave": "regulacion-automatica",
    "seccion": "8. Regulación y control",
    "subgrupo": "",
-   "titulo": "Sistemas de climatización en el VW Touareg",
+   "titulo": "Variantes de climatización en el VW Touareg",
    "codigo": "",
-   "menu": "Sistemas de climatización en el VW Tou",
+   "menu": "Variantes de climatización en el VW To",
    "grupo": "Control de climatización",
    "tipo": "proceso",
    "subtipo": "fundamento",
    "aplicacion": [],
    "ubicacion": "",
-   "fuentes": "301_e         Climatización en el Touareg.pdf, págs. 4-5",
+   "fuentes": "301_e         Climatización en el Touareg.pdf, págs. 4-6, 11-17",
    "clase": "fundamento",
    "estado": "",
    "fusionadas": [],
@@ -39853,49 +40131,51 @@
    "sistema": "control-climatizacion",
    "formaParteDe": "",
    "relacionados": [
-    "unidad-control-climatizador"
+    "unidad-control-climatizador",
+    "distribucion-aire"
    ],
    "palabras": [
     "4C-Climatronic",
     "2C-Climatronic",
-    "manual",
-    "climatizador delantero"
+    "climatización manual",
+    "4 zonas",
+    "calor residual"
    ],
    "apartados": [
     {
      "titulo": "Objeto",
-     "texto": "Describir la gama de sistemas de climatización disponibles en el Volkswagen Touareg y la estructura básica compartida entre sus distintas variantes. (págs. 4-5)",
-     "html": "<p>Describir la gama de sistemas de climatización disponibles en el Volkswagen Touareg y la estructura básica compartida entre sus distintas variantes. <span class=\"pag\">págs. 4-5</span></p>",
+     "texto": "Definir las tres configuraciones de climatización disponibles en el VW Touareg (4C-Climatronic de 4 zonas, 2C-Climatronic de 2 zonas y aire acondicionado manual) para adaptar el confort térmico a los requerimientos del vehículo. (pág. 4)",
+     "html": "<p>Definir las tres configuraciones de climatización disponibles en el VW Touareg (4C-Climatronic de 4 zonas, 2C-Climatronic de 2 zonas y aire acondicionado manual) para adaptar el confort térmico a los requerimientos del vehículo. <span class=\"pag\">pág. 4</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Fundamento",
-     "texto": "Para adaptarse a los diferentes requerimientos de confort de un vehículo todo terreno, el Touareg dispone de tres variantes de equipamiento de climatización. Aunque difieren en sus unidades de mando e indicación y en sus posibilidades funcionales, las tres variantes comparten la misma estructura básica en el climatizador delantero. (págs. 4-5)",
-     "html": "<p>Para adaptarse a los diferentes requerimientos de confort de un vehículo todo terreno, el Touareg dispone de tres variantes de equipamiento de climatización. Aunque difieren en sus unidades de mando e indicación y en sus posibilidades funcionales, las tres variantes comparten la misma estructura básica en el climatizador delantero. <span class=\"pag\">págs. 4-5</span></p>",
+     "texto": "Los tres sistemas comparten un climatizador delantero básico situado debajo del salpicadero y ofrecen funciones comunes como un margen de regulación de temperatura de 16 ºC a 29,5 ºC, la función de calor residual (REST), la recirculación de aire manual, el desempañado del parabrisas y la desactivación de la refrigeración mediante la tecla ECON o AC. (págs. 4-6)",
+     "html": "<p>Los tres sistemas comparten un climatizador delantero básico situado debajo del salpicadero y ofrecen funciones comunes como un margen de regulación de temperatura de 16 ºC a 29,5 ºC, la función de calor residual (REST), la recirculación de aire manual, el desempañado del parabrisas y la desactivación de la refrigeración mediante la tecla ECON o AC. <span class=\"pag\">págs. 4-6</span></p>",
      "nivel": ""
     },
     {
      "titulo": "Desarrollo",
-     "texto": "Las tres variantes de climatización ofrecidas son: 4C-Climatronic: Sistema de alta gama con regulación automática de 4 zonas climatizables independientes. 2C-Climatronic: Sistema de nivel medio con regulación automática de 2 zonas climatizables (izquierda y derecha). Calefacción y aire acondicionado manual: Sistema básico con regulación manual para una única zona climatizable común. Los sistemas se identifican visualmente por el diseño de sus paneles de mando e indicación en el tablero de instrumentos. La disposición de componentes internos (evaporador, intercambiador de calor) y los puntos de fijación del climatizador delantero son idénticos en todas las variantes. (págs. 4-5)",
-     "html": "<p>Las tres variantes de climatización ofrecidas son:</p>\n<ol>\n<li><strong>4C-Climatronic:</strong> Sistema de alta gama con regulación automática de 4 zonas climatizables independientes.</li>\n<li><strong>2C-Climatronic:</strong> Sistema de nivel medio con regulación automática de 2 zonas climatizables (izquierda y derecha).</li>\n<li><strong>Calefacción y aire acondicionado manual:</strong> Sistema básico con regulación manual para una única zona climatizable común.</li>\n</ol>\n<p>Los sistemas se identifican visualmente por el diseño de sus paneles de mando e indicación en el tablero de instrumentos. La disposición de componentes internos (evaporador, intercambiador de calor) y los puntos de fijación del climatizador delantero son idénticos en todas las variantes. <span class=\"pag\">págs. 4-5</span></p>",
+     "texto": "4C-Climatronic (4 zonas): Constituye el nivel máximo de equipamiento. Incorpora dos climatizadores independientes (delantero y trasero) con dos evaporadores en paralelo. Permite la regulación automática e individualizada de temperatura, caudal de soplado y distribución de aire en las cuatro plazas del vehículo mediante dos paneles de mando (delantero y trasero). (págs. 11-13) 2C-Climatronic (2 zonas): Nivel medio de confort. Dispone de dos zonas climatizables reguladas por un único climatizador delantero, permitiendo ajustar la temperatura de forma independiente para la izquierda y la derecha, con una gestión unificada del soplador y de la distribución. (págs. 14-15) Aire acondicionado manual: Equipamiento básico de regulación manual. Mantiene una distribución de aire similar a la versión 2C pero con selección analógica de temperatura, velocidad del soplador y reparto mediante mandos giratorios. (págs. 16-17)",
+     "html": "<ul>\n<li><strong>4C-Climatronic (4 zonas):</strong> Constituye el nivel máximo de equipamiento. Incorpora dos climatizadores independientes (delantero y trasero) con dos evaporadores en paralelo. Permite la regulación automática e individualizada de temperatura, caudal de soplado y distribución de aire en las cuatro plazas del vehículo mediante dos paneles de mando (delantero y trasero). <span class=\"pag\">págs. 11-13</span></li>\n<li><strong>2C-Climatronic (2 zonas):</strong> Nivel medio de confort. Dispone de dos zonas climatizables reguladas por un único climatizador delantero, permitiendo ajustar la temperatura de forma independiente para la izquierda y la derecha, con una gestión unificada del soplador y de la distribución. <span class=\"pag\">págs. 14-15</span></li>\n<li><strong>Aire acondicionado manual:</strong> Equipamiento básico de regulación manual. Mantiene una distribución de aire similar a la versión 2C pero con selección analógica de temperatura, velocidad del soplador y reparto mediante mandos giratorios. <span class=\"pag\">págs. 16-17</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Valores de referencia",
-     "texto": "Número de zonas climatizables en 4C-Climatronic: 4 zonas independientes. (pág. 4) Número de zonas climatizables en 2C-Climatronic: 2 zonas independientes. (pág. 4) Número de zonas climatizables en sistema manual: 1 zona común. (pág. 4)",
-     "html": "<ul>\n<li>Número de zonas climatizables en 4C-Climatronic: 4 zonas independientes. <span class=\"pag\">pág. 4</span></li>\n<li>Número de zonas climatizables en 2C-Climatronic: 2 zonas independientes. <span class=\"pag\">pág. 4</span></li>\n<li>Número de zonas climatizables en sistema manual: 1 zona común. <span class=\"pag\">pág. 4</span></li>\n</ul>",
+     "texto": "Margen de regulación de temperatura común: de 16 ºC a 29,5 ºC. (pág. 5) Zonas de regulación independiente en 4C-Climatronic: 4 plazas. (pág. 11) Zonas de regulación independiente en 2C-Climatronic: 2 zonas (conductor/acompañante). (pág. 14)",
+     "html": "<ul>\n<li>Margen de regulación de temperatura común: de 16 ºC a 29,5 ºC. <span class=\"pag\">pág. 5</span></li>\n<li>Zonas de regulación independiente en 4C-Climatronic: 4 plazas. <span class=\"pag\">pág. 11</span></li>\n<li>Zonas de regulación independiente en 2C-Climatronic: 2 zonas (conductor/acompañante). <span class=\"pag\">pág. 14</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Errores de concepto frecuentes",
-     "texto": "Suponer que cada sistema de climatización del Touareg utiliza un cuerpo de climatizador delantero con puntos de fijación y componentes principales totalmente distintos. (págs. 4-5)",
-     "html": "<ul>\n<li>Suponer que cada sistema de climatización del Touareg utiliza un cuerpo de climatizador delantero con puntos de fijación y componentes principales totalmente distintos. <span class=\"pag\">págs. 4-5</span></li>\n</ul>",
+     "texto": "Asumir que el sistema 2C-Climatronic equipa dos climatizadores físicos como el 4C-Climatronic, cuando en realidad utiliza un único módulo climatizador bajo el salpicadero. (págs. 11, 14)",
+     "html": "<ul>\n<li>Asumir que el sistema 2C-Climatronic equipa dos climatizadores físicos como el 4C-Climatronic, cuando en realidad utiliza un único módulo climatizador bajo el salpicadero. <span class=\"pag\">págs. 11, 14</span></li>\n</ul>",
      "nivel": ""
     },
     {
      "titulo": "Imágenes requeridas",
-     "texto": "Paneles de mando e indicación delantero y posterior del 4C-Climatronic, 2C-Climatronic y aire acondicionado manual — Fuente: 301_e Climatización en el Touareg.pdf, págs. 4-5",
-     "html": "<ul>\n<li>Paneles de mando e indicación delantero y posterior del 4C-Climatronic, 2C-Climatronic y aire acondicionado manual — Fuente: 301_e         Climatización en el Touareg.pdf, págs. 4-5</li>\n</ul>",
+     "texto": "Disposición de los paneles de mando delantero y trasero del sistema 4C-Climatronic y sus zonas de influencia térmica — Fuente: 301_e Climatización en el Touareg.pdf, págs. 5, 12, 13",
+     "html": "<ul>\n<li>Disposición de los paneles de mando delantero y trasero del sistema 4C-Climatronic y sus zonas de influencia térmica — Fuente: 301_e         Climatización en el Touareg.pdf, págs. 5, 12, 13</li>\n</ul>",
      "nivel": ""
     }
    ]
@@ -65860,6 +66140,89 @@
      "titulo": "Imágenes requeridas",
      "texto": "Detalle en despiece del estrangulador con indicación del taladro calibrado, tamices y dirección de montaje — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 30",
      "html": "<ul>\n<li>Detalle en despiece del estrangulador con indicación del taladro calibrado, tamices y dirección de montaje — Fuente: 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, pág. 30</li>\n</ul>",
+     "nivel": ""
+    }
+   ]
+  },
+  {
+   "id": "ssc.unidad-climatizadora.trasera.301-e-climatizacion-en-el-touareg",
+   "nt": 823,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "unidad-climatizadora",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Climatizador trasero del 4C-Climatronic",
+   "codigo": "",
+   "menu": "Climatizador trasero del 4C-Climatroni",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "301_e         Climatización en el Touareg.pdf, págs. 28-32",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "trasera",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "evaporador",
+    "servomotor-trampilla",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "climatizador trasero",
+    "montante B",
+    "consola central trasera",
+    "V313",
+    "V314",
+    "V239",
+    "V240"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Proporcionar acondicionamiento térmico (calefacción y refrigeración) y distribución de aire independiente para las plazas posteriores en el sistema 4C-Climatronic. (págs. 28-29)",
+     "html": "<p>Proporcionar acondicionamiento térmico (calefacción y refrigeración) y distribución de aire independiente para las plazas posteriores en el sistema 4C-Climatronic. <span class=\"pag\">págs. 28-29</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Módulo climatizador independiente ubicado en la parte trasera del habitáculo. Alberga un evaporador propio, un intercambiador de calor de calefacción, soplador trasero y carcasas de distribución para los lados izquierdo y derecho. (págs. 28-30)",
+     "html": "<p>Módulo climatizador independiente ubicado en la parte trasera del habitáculo. Alberga un evaporador propio, un intercambiador de calor de calefacción, soplador trasero y carcasas de distribución para los lados izquierdo y derecho. <span class=\"pag\">págs. 28-30</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Recibe instrucciones desde la unidad de mando posterior E265 o desde la centralita principal J255. El soplador impulsa el aire a través del evaporador y/o intercambiador de calor. Múltiples trampillas motorizadas regulan la mezcla y la dirección del flujo: Chapaletas de temperatura traseras (V313/V314): Ajustan la mezcla de aire frío y caliente para cada lado. (pág. 29) Chapaletas de caudal trasero (V239/V240): Dosifican la cantidad de aire enviada hacia las plazas traseras. (pág. 29) Chapaletas de cierre de montante B y reposapiés (V211/V212): Conmutan la salida de aire entre los difusores del pilar B y el vano reposapiés trasero mediante un elemento de chapaleta doble. (págs. 30-32)",
+     "html": "<p>Recibe instrucciones desde la unidad de mando posterior E265 o desde la centralita principal J255. El soplador impulsa el aire a través del evaporador y/o intercambiador de calor. Múltiples trampillas motorizadas regulan la mezcla y la dirección del flujo:</p>\n<ul>\n<li><strong>Chapaletas de temperatura traseras (V313/V314):</strong> Ajustan la mezcla de aire frío y caliente para cada lado. <span class=\"pag\">pág. 29</span></li>\n<li><strong>Chapaletas de caudal trasero (V239/V240):</strong> Dosifican la cantidad de aire enviada hacia las plazas traseras. <span class=\"pag\">pág. 29</span></li>\n<li><strong>Chapaletas de cierre de montante B y reposapiés (V211/V212):</strong> Conmutan la salida de aire entre los difusores del pilar B y el vano reposapiés trasero mediante un elemento de chapaleta doble. <span class=\"pag\">págs. 30-32</span></li>\n</ul>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Falta de capacidad frigorífica/calorífica o distribución incorrecta del caudal de aire en las plazas traseras. (pág. 28)",
+     "html": "<p>Falta de capacidad frigorífica/calorífica o distribución incorrecta del caudal de aire en las plazas traseras. <span class=\"pag\">pág. 28</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Consultar los bloques de medición de la unidad posterior E265 y ejecutar el diagnóstico de actuadores con el equipo de autodiagnóstico. (págs. 44, 80)",
+     "html": "<p>Consultar los bloques de medición de la unidad posterior E265 y ejecutar el diagnóstico de actuadores con el equipo de autodiagnóstico. <span class=\"pag\">págs. 44, 80</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Verificar la estanqueidad de las conexiones en bloque de las tuberías de alta y baja presión del refrigerante y de los racores de calefacción. (pág. 30)",
+     "html": "<p>Verificar la estanqueidad de las conexiones en bloque de las tuberías de alta y baja presión del refrigerante y de los racores de calefacción. <span class=\"pag\">pág. 30</span></p>",
+     "nivel": ""
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Vista lateral del climatizador trasero con la ubicación de los servomotores V313, V314, V239 y V240 — Fuente: 301_e Climatización en el Touareg.pdf, pág. 29",
+     "html": "<ul>\n<li>Vista lateral del climatizador trasero con la ubicación de los servomotores V313, V314, V239 y V240 — Fuente: 301_e         Climatización en el Touareg.pdf, pág. 29</li>\n</ul>",
      "nivel": ""
     }
    ]
