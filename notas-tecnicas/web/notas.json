@@ -4074,6 +4074,110 @@
    "hecha": false
   },
   {
+   "nombre": "NT785_01",
+   "nt": 785,
+   "titulo": "Condensador",
+   "seccion": "5. Lado de alta",
+   "descripcion": "Configuración de un condensador de flujo paralelo con tubos, aletas, racores de entrada/salida y colectores — Fuente: HELLA02.PDF, pág. 35",
+   "hecha": false
+  },
+  {
+   "nombre": "NT786_01",
+   "nt": 786,
+   "titulo": "Filtro deshidratador",
+   "seccion": "5. Lado de alta",
+   "descripcion": "Vista seccionada de un filtro deshidratador con boca de entrada, zona de filtrado, gel de sílice, tubo de salida y mirilla — Fuente: HELLA02.PDF, pág. 36",
+   "hecha": false
+  },
+  {
+   "nombre": "NT787_01",
+   "nt": 787,
+   "titulo": "Acumulador deshidratador",
+   "seccion": "6. Expansión y lado de baja",
+   "descripcion": "Vista seccionada de un acumulador con tubo interno en V y toma de aspiración superior — Fuente: HELLA02.PDF, pág. 36",
+   "hecha": false
+  },
+  {
+   "nombre": "NT788_01",
+   "nt": 788,
+   "titulo": "Válvula de expansión termostática",
+   "seccion": "6. Expansión y lado de baja",
+   "descripcion": "Vista seccionada de válvula de expansión tipo L con orificio calibrado, válvula de bola, muelle, vástago, membrana y sonda termostática — Fuente: HELLA02.PDF, pág. 38",
+   "hecha": false
+  },
+  {
+   "nombre": "NT788_02",
+   "nt": 788,
+   "titulo": "Válvula de expansión termostática",
+   "seccion": "6. Expansión y lado de baja",
+   "descripcion": "Válvula de expansión tipo H en bloque montada a la entrada del evaporador — Fuente: HELLA02.PDF, pág. 39",
+   "hecha": false
+  },
+  {
+   "nombre": "NT789_01",
+   "nt": 789,
+   "titulo": "Tubo de expansión",
+   "seccion": "Por ubicar",
+   "descripcion": "Esquema de instalación de tubo de expansión con acumulador/deshidratador en el lado de baja presión — Fuente: HELLA02.PDF, pág. 39",
+   "hecha": false
+  },
+  {
+   "nombre": "NT790_01",
+   "nt": 790,
+   "titulo": "Evaporador",
+   "seccion": "6. Expansión y lado de baja",
+   "descripcion": "Esquema del ciclo de evaporación en el diagrama p-h y vista de evaporador de tubos y aletas y evaporador de placas — Fuente: HELLA02.PDF, pág. 40, 41",
+   "hecha": false
+  },
+  {
+   "nombre": "NT794_01",
+   "nt": 794,
+   "titulo": "Canalizaciones y racores del circuito frigorífico",
+   "seccion": "6. Expansión y lado de baja",
+   "descripcion": "Estructura en capas de manguera flexible y tipos de racores (SAE, O'ring, Rotalock y Brida) — Fuente: HELLA02.PDF, pág. 46, 47, 48",
+   "hecha": false
+  },
+  {
+   "nombre": "NT795_01",
+   "nt": 795,
+   "titulo": "Termostato del evaporador",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Vista del termostato mecánico (bulbo, pulmón, muelle, platinos) y del termostato electrónico (módulo NTC y curva característica) — Fuente: HELLA02.PDF, pág. 51",
+   "hecha": false
+  },
+  {
+   "nombre": "NT796_01",
+   "nt": 796,
+   "titulo": "Presostato de seguridad del climatizador",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Vista exterior e interior del presostato trinary con contactos normalmente abiertos y normalmente cerrados — Fuente: HELLA02.PDF, pág. 52",
+   "hecha": false
+  },
+  {
+   "nombre": "NT797_01",
+   "nt": 797,
+   "titulo": "Electroembrague del compresor",
+   "seccion": "4. El compresor",
+   "descripcion": "Despiece del conjunto electroembrague mostrando el plato de presión, polea con rodamiento y bobina electromagnética — Fuente: HELLA02.PDF, pág. 52",
+   "hecha": false
+  },
+  {
+   "nombre": "NT798_01",
+   "nt": 798,
+   "titulo": "Filtro de habitáculo",
+   "seccion": "Por ubicar",
+   "descripcion": "Detalle del filtro de elementos sólidos y del filtro de carbón activo — Fuente: HELLA02.PDF, pág. 57, 58",
+   "hecha": false
+  },
+  {
+   "nombre": "NT799_01",
+   "nt": 799,
+   "titulo": "Impulsor de habitáculo",
+   "seccion": "7. Sensores y actuadores",
+   "descripcion": "Esquema del impulsor de habitáculo y circuito eléctrico de regulación de velocidad — Fuente: HELLA02.PDF, pág. 58, 59",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -4098,7 +4202,7 @@
    "hecha": false
   }
  ],
- "total": 776,
+ "total": 791,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -8730,6 +8834,157 @@
    ]
   },
   {
+   "id": "ssc.refrigerante-r134a.r12.hella02",
+   "nt": 791,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "refrigerante-r134a",
+   "seccion": "3. Fluidos",
+   "subgrupo": "",
+   "titulo": "Refrigerante R12",
+   "codigo": "",
+   "menu": "Refrigerante R12",
+   "grupo": "Fluidos frigoríficos",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "HELLA02.PDF, págs. 42-43",
+   "clase": "fluido",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "r12",
+   "area": "climatizacion",
+   "sistema": "fluidos-frigorificos",
+   "formaParteDe": "",
+   "relacionados": [
+    "aceite-frigorifico",
+    "compresor"
+   ],
+   "palabras": [
+    "CFC",
+    "diclorodifluorometano",
+    "cloro",
+    "capa de ozono",
+    "efecto invernadero"
+   ],
+   "apartados": [
+    {
+     "titulo": "Designación y norma",
+     "texto": "R-12 (Diclorodifluorometano - CF2Cl2). Pertenece a la familia de los Clorofluorocarbonos (CFC). (pág. 43)",
+     "html": "<p>R-12 (Diclorodifluorometano - CF2Cl2). Pertenece a la familia de los Clorofluorocarbonos (CFC). <span class=\"pag\">pág. 43</span></p>"
+    },
+    {
+     "titulo": "Propiedades",
+     "texto": "Inodoro, no inflamable y no tóxico en condiciones normales. (pág. 42) Muy corrosivo en presencia de agua. (pág. 42) Contiene átomos de cloro en su molécula, responsables de la destrucción de la capa de ozono estratosférica y contribuyente de elevado impacto al efecto invernadero. (pág. 43)",
+     "html": "<ul>\n<li>Inodoro, no inflamable y no tóxico en condiciones normales. <span class=\"pag\">pág. 42</span></li>\n<li>Muy corrosivo en presencia de agua. <span class=\"pag\">pág. 42</span></li>\n<li>Contiene átomos de cloro en su molécula, responsables de la destrucción de la capa de ozono estratosférica y contribuyente de elevado impacto al efecto invernadero. <span class=\"pag\">pág. 43</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Dónde se usa y cantidades",
+     "texto": "Utilizado históricamente como agente frigorígeno en sistemas de aire acondicionado automotriz de antigua fabricación (actualmente sustituido en vehículos nuevos). Cantidades no documentadas en fuentes. (pág. 43)",
+     "html": "<p>Utilizado históricamente como agente frigorígeno en sistemas de aire acondicionado automotriz de antigua fabricación (actualmente sustituido en vehículos nuevos). Cantidades no documentadas en fuentes. <span class=\"pag\">pág. 43</span></p>"
+    },
+    {
+     "titulo": "Compatibilidades y mezclas prohibidas",
+     "texto": "Compatible únicamente con aceites lubricantes de base mineral (nafteníticos o parafínicos). Incompatible con aceites sintéticos PAG. Prohibida su mezcla con R134a. (pág. 43, 44)",
+     "html": "<p>Compatible únicamente con aceites lubricantes de base mineral (nafteníticos o parafínicos). Incompatible con aceites sintéticos PAG. Prohibida su mezcla con R134a. <span class=\"pag\">pág. 43, 44</span></p>"
+    },
+    {
+     "titulo": "Identificación",
+     "texto": "Fórmula química CF2Cl2. Racores de servicio de tipo cónico roscado (SAE). (pág. 43, 46)",
+     "html": "<p>Fórmula química CF2Cl2. Racores de servicio de tipo cónico roscado (SAE). <span class=\"pag\">pág. 43, 46</span></p>"
+    },
+    {
+     "titulo": "Manipulación, almacenamiento y residuos",
+     "texto": "Prohibida su emisión a la atmósfera debido a su elevado potencial de agotamiento de la capa de ozono. (pág. 43)",
+     "html": "<p>Prohibida su emisión a la atmósfera debido a su elevado potencial de agotamiento de la capa de ozono. <span class=\"pag\">pág. 43</span></p>"
+    },
+    {
+     "titulo": "Riesgos y normativa",
+     "texto": "Sustancia sustituida por normativas de protección medioambiental. Genera ácidos muy corrosivos al entrar en contacto con agua. (pág. 42, 43)",
+     "html": "<p>Sustancia sustituida por normativas de protección medioambiental. Genera ácidos muy corrosivos al entrar en contacto con agua. <span class=\"pag\">pág. 42, 43</span></p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.refrigerante-r134a.hella02",
+   "nt": 792,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "refrigerante-r134a",
+   "seccion": "3. Fluidos",
+   "subgrupo": "",
+   "titulo": "Refrigerante R134a",
+   "codigo": "",
+   "menu": "Refrigerante R134a",
+   "grupo": "Fluidos frigoríficos",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "HELLA02.PDF, págs. 42-43",
+   "clase": "fluido",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "fluidos-frigorificos",
+   "formaParteDe": "",
+   "relacionados": [
+    "aceite-frigorifico",
+    "compresor",
+    "valvula-expansion"
+   ],
+   "palabras": [
+    "HFC",
+    "1",
+    "1",
+    "1",
+    "2-tetrafluoroetano",
+    "sin cloro",
+    "efecto invernadero",
+    "PAG",
+    "Ester"
+   ],
+   "apartados": [
+    {
+     "titulo": "Designación y norma",
+     "texto": "R134a (1,1,1,2-Tetrafluoroetano - C2H2F4). Pertenece al grupo de los Hidrofluorocarbonos (HFC). (pág. 43)",
+     "html": "<p>R134a (1,1,1,2-Tetrafluoroetano - C2H2F4). Pertenece al grupo de los Hidrofluorocarbonos (HFC). <span class=\"pag\">pág. 43</span></p>"
+    },
+    {
+     "titulo": "Propiedades",
+     "texto": "Inodoro, no inflamable y no tóxico en condiciones normales. (pág. 42) Exento de cloro en su molécula, por lo que no ataca a la capa de ozono. (pág. 43) Posee potencial de calentamiento atmosférico (contribuye a la formación del efecto invernadero). (pág. 43) Muy corrosivo en presencia de agua o humedad. (pág. 42)",
+     "html": "<ul>\n<li>Inodoro, no inflamable y no tóxico en condiciones normales. <span class=\"pag\">pág. 42</span></li>\n<li>Exento de cloro en su molécula, por lo que no ataca a la capa de ozono. <span class=\"pag\">pág. 43</span></li>\n<li>Posee potencial de calentamiento atmosférico (contribuye a la formación del efecto invernadero). <span class=\"pag\">pág. 43</span></li>\n<li>Muy corrosivo en presencia de agua o humedad. <span class=\"pag\">pág. 42</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Dónde se usa y cantidades",
+     "texto": "Agente frigorígeno estándar utilizado en todos los sistemas de aire acondicionado para automoción de nueva fabricación. Cantidades no documentadas en fuentes. (pág. 43)",
+     "html": "<p>Agente frigorígeno estándar utilizado en todos los sistemas de aire acondicionado para automoción de nueva fabricación. Cantidades no documentadas en fuentes. <span class=\"pag\">pág. 43</span></p>"
+    },
+    {
+     "titulo": "Compatibilidades y mezclas prohibidas",
+     "texto": "Compatible con lubricantes sintéticos de tipo PAG (Polialquilenglicol) y ESTER. Incompatible con aceites minerales. Prohibida la mezcla directa con refrigerante R12. (pág. 43, 45)",
+     "html": "<p>Compatible con lubricantes sintéticos de tipo PAG (Polialquilenglicol) y ESTER. Incompatible con aceites minerales. Prohibida la mezcla directa con refrigerante R12. <span class=\"pag\">pág. 43, 45</span></p>"
+    },
+    {
+     "titulo": "Identificación",
+     "texto": "Fórmula química C2H2F4. Conexiones de servicio de alta y baja presión de tipo acoplamiento rápido O'Ring. (pág. 43, 47)",
+     "html": "<p>Fórmula química C2H2F4. Conexiones de servicio de alta y baja presión de tipo acoplamiento rápido O'Ring. <span class=\"pag\">pág. 43, 47</span></p>"
+    },
+    {
+     "titulo": "Manipulación, almacenamiento y residuos",
+     "texto": "Manipular en circuitos cerrados impidiendo fugas y humedad en las operaciones de carga y recuperación. (pág. 42, 43)",
+     "html": "<p>Manipular en circuitos cerrados impidiendo fugas y humedad en las operaciones de carga y recuperación. <span class=\"pag\">pág. 42, 43</span></p>"
+    },
+    {
+     "titulo": "Riesgos y normativa",
+     "texto": "No ataca la capa de ozono pero está sujeto a control de emisiones por normativa ambiental sobre gases de efecto invernadero. (pág. 43)",
+     "html": "<p>No ataca la capa de ozono pero está sujeto a control de emisiones por normativa ambiental sobre gases de efecto invernadero. <span class=\"pag\">pág. 43</span></p>"
+    }
+   ]
+  },
+  {
    "id": "ssc.maestra.refrigerante-r134a",
    "nt": 1001,
    "modulo": "ssc",
@@ -10502,6 +10757,81 @@
      "titulo": "Imágenes requeridas",
      "texto": "Gráfica de absorción de agua (PPM) a lo largo del tiempo entre aceites PAG, Éster y Mineral — Fuente: 3. CIRCUITO FRIGORÍGENO 1 AL.pptx, pág. 233 (pág. 233) Gráfico de sectores con el reparto porcentual de aceite por componentes del circuito — Fuente: 3. CIRCUITO FRIGORÍGENO 1 AL.pptx, pág. 244 (pág. 244)",
      "html": "<ul>\n<li>Gráfica de absorción de agua (PPM) a lo largo del tiempo entre aceites PAG, Éster y Mineral — Fuente: 3. CIRCUITO FRIGORÍGENO 1 AL.pptx, pág. 233 <span class=\"pag\">pág. 233</span></li>\n<li>Gráfico de sectores con el reparto porcentual de aceite por componentes del circuito — Fuente: 3. CIRCUITO FRIGORÍGENO 1 AL.pptx, pág. 244 <span class=\"pag\">pág. 244</span></li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.aceite-frigorifico.hella02",
+   "nt": 793,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "aceite-frigorifico",
+   "seccion": "3. Fluidos",
+   "subgrupo": "",
+   "titulo": "Lubricantes para circuito frigorífico",
+   "codigo": "",
+   "menu": "Lubricantes para circuito frigorífico",
+   "grupo": "Fluidos frigoríficos",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "HELLA02.PDF, págs. 44-45",
+   "clase": "fluido",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "fluidos-frigorificos",
+   "formaParteDe": "",
+   "relacionados": [
+    "refrigerante-r134a",
+    "compresor",
+    "valvula-expansion"
+   ],
+   "palabras": [
+    "mineral",
+    "sintético",
+    "PAG",
+    "Ester",
+    "higroscopacidad",
+    "estanqueidad"
+   ],
+   "apartados": [
+    {
+     "titulo": "Designación y norma",
+     "texto": "Aceites lubricantes específicos para climatización clasificados en dos familias: Minerales (nafteníticos o parafínicos): para R-12. Sintéticos (PAG - Polialquilenglicol y ESTER): para R134a. (pág. 44, 45)",
+     "html": "<p>Aceites lubricantes específicos para climatización clasificados en dos familias:</p>\n<ul>\n<li>Minerales (nafteníticos o parafínicos): para R-12.</li>\n<li>Sintéticos (PAG - Polialquilenglicol y ESTER): para R134a.</li>\n</ul>\n<p> <span class=\"pag\">pág. 44, 45</span></p>"
+    },
+    {
+     "titulo": "Propiedades",
+     "texto": "Protegen contra el desgaste por fricción las partes sometidas a esfuerzo mecánico (compresor y válvula de expansión). (pág. 44) Refuerzan la estanqueidad en retenes y juntas de racores. (pág. 44) Deben permanecer fluidos a bajas temperaturas, no tostarse a altas temperaturas y no reaccionar con el refrigerante. (pág. 44) Deben estar unidos al fluido en estado líquido y separarse cuando el refrigerante se encuentra en estado de vapor. (pág. 44) Los aceites sintéticos (PAG y Ester) presentan una gran absorción de humedad y son muy corrosivos en presencia de agua. (pág. 45)",
+     "html": "<ul>\n<li>Protegen contra el desgaste por fricción las partes sometidas a esfuerzo mecánico (compresor y válvula de expansión). <span class=\"pag\">pág. 44</span></li>\n<li>Refuerzan la estanqueidad en retenes y juntas de racores. <span class=\"pag\">pág. 44</span></li>\n<li>Deben permanecer fluidos a bajas temperaturas, no tostarse a altas temperaturas y no reaccionar con el refrigerante. <span class=\"pag\">pág. 44</span></li>\n<li>Deben estar unidos al fluido en estado líquido y separarse cuando el refrigerante se encuentra en estado de vapor. <span class=\"pag\">pág. 44</span></li>\n<li>Los aceites sintéticos (PAG y Ester) presentan una gran absorción de humedad y son muy corrosivos en presencia de agua. <span class=\"pag\">pág. 45</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Dónde se usa y cantidades",
+     "texto": "Circulando disueltos en el fluido refrigerante por todo el circuito, lubricando compresor y válvula de expansión. Cantidades no documentadas en fuentes. (pág. 44)",
+     "html": "<p>Circulando disueltos en el fluido refrigerante por todo el circuito, lubricando compresor y válvula de expansión. Cantidades no documentadas en fuentes. <span class=\"pag\">pág. 44</span></p>"
+    },
+    {
+     "titulo": "Compatibilidades y mezclas prohibidas",
+     "texto": "Aceite mineral: compatible solo con R-12. Aceite PAG: compatible solo con R134a. Aceite Ester: compatible tanto con R-12 como con R134a (ideal en operaciones de reconversión). (pág. 44, 45)",
+     "html": "<ul>\n<li>Aceite mineral: compatible solo con R-12.</li>\n<li>Aceite PAG: compatible solo con R134a.</li>\n<li>Aceite Ester: compatible tanto con R-12 como con R134a (ideal en operaciones de reconversión).</li>\n</ul>\n<p> <span class=\"pag\">pág. 44, 45</span></p>"
+    },
+    {
+     "titulo": "Identificación",
+     "texto": "Aceites de coloración clara y ausencia de humedad. (pág. 44)",
+     "html": "<p>Aceites de coloración clara y ausencia de humedad. <span class=\"pag\">pág. 44</span></p>"
+    },
+    {
+     "titulo": "Manipulación, almacenamiento y residuos",
+     "texto": "Mantener los envases herméticamente cerrados para evitar la absorción de humedad ambiental. La presencia de agua degrada el aceite y genera corrosión. (pág. 45)",
+     "html": "<p>Mantener los envases herméticamente cerrados para evitar la absorción de humedad ambiental. La presencia de agua degrada el aceite y genera corrosión. <span class=\"pag\">pág. 45</span></p>"
+    },
+    {
+     "titulo": "Riesgos y normativa",
+     "texto": "Muy corrosivos en presencia de agua. Su degradación por humedad exige mantener en perfecto estado el filtro deshidratante. (pág. 45)",
+     "html": "<p>Muy corrosivos en presencia de agua. Su degradación por humedad exige mantener en perfecto estado el filtro deshidratante. <span class=\"pag\">pág. 45</span></p>"
     }
    ]
   },
@@ -14634,6 +14964,66 @@
    ]
   },
   {
+   "id": "ssc.embrague-compresor.hella02",
+   "nt": 797,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "embrague-compresor",
+   "seccion": "4. El compresor",
+   "subgrupo": "",
+   "titulo": "Electroembrague del compresor",
+   "codigo": "",
+   "menu": "Electroembrague del compresor",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "HELLA02.PDF, págs. 52",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "compresor",
+   "relacionados": [
+    "compresor",
+    "presostato",
+    "sensor-evaporador"
+   ],
+   "palabras": [
+    "bobina",
+    "polea",
+    "rodamiento",
+    "plato de presión",
+    "campo magnético",
+    "acoplamiento"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Controlar la conexión y desconexión mecánica entre la polea de arrastre y el eje principal del compresor para activar o detener el funcionamiento del aire acondicionado. (pág. 52)",
+     "html": "<p>Controlar la conexión y desconexión mecánica entre la polea de arrastre y el eje principal del compresor para activar o detener el funcionamiento del aire acondicionado. <span class=\"pag\">pág. 52</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Acoplamiento electromagnético integrado en el frontal del compresor. Consta de tres partes diferenciadas: Conjunto plato de presión: solidario al eje principal del compresor mediante ballestas. Conjunto polea-rodamiento: gira libre sobre el eje del compresor gracias a su rodamiento. Conjunto bobina: electroimán fijo. (pág. 52)",
+     "html": "<p>Acoplamiento electromagnético integrado en el frontal del compresor. Consta de tres partes diferenciadas:</p>\n<ol>\n<li>Conjunto plato de presión: solidario al eje principal del compresor mediante ballestas.</li>\n<li>Conjunto polea-rodamiento: gira libre sobre el eje del compresor gracias a su rodamiento.</li>\n<li>Conjunto bobina: electroimán fijo.</li>\n</ol>\n<p> <span class=\"pag\">pág. 52</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El movimiento del cigüeñal se transmite mediante una correa hacia la polea, que gira loca gracias a su rodamiento. Cuando la bobina recibe alimentación eléctrica, crea un campo magnético capaz de vencer la acción de las ballestas del plato de presión. El plato de presión es atraído contra la polea, transmitiendo el movimiento de giro directamente al eje principal del compresor. Al cortar la corriente de la bobina, las ballestas separan el plato de presión de la polea y el compresor se detiene. (pág. 52)",
+     "html": "<p>El movimiento del cigüeñal se transmite mediante una correa hacia la polea, que gira loca gracias a su rodamiento. Cuando la bobina recibe alimentación eléctrica, crea un campo magnético capaz de vencer la acción de las ballestas del plato de presión. El plato de presión es atraído contra la polea, transmitiendo el movimiento de giro directamente al eje principal del compresor. Al cortar la corriente de la bobina, las ballestas separan el plato de presión de la polea y el compresor se detiene. <span class=\"pag\">pág. 52</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Despiece del conjunto electroembrague mostrando el plato de presión, polea con rodamiento y bobina electromagnética — Fuente: HELLA02.PDF, pág. 52",
+     "html": "<ul>\n<li>Despiece del conjunto electroembrague mostrando el plato de presión, polea con rodamiento y bobina electromagnética — Fuente: HELLA02.PDF, pág. 52</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.valvula-sobrepresion.11-dispositivos-de-regulacion-y-segurida",
    "nt": 64,
    "modulo": "ssc",
@@ -15820,6 +16210,70 @@
      "titulo": "Imágenes requeridas",
      "texto": "Ciclo de funcionamiento del condensador en el Diagrama de Mollier con etapas de enfriamiento, condensación y subenfriamiento — Fuente: EL CONDENSADOR.PDF, pág. 2 (pág. 2).",
      "html": "<ul>\n<li>Ciclo de funcionamiento del condensador en el Diagrama de Mollier con etapas de enfriamiento, condensación y subenfriamiento — Fuente: EL CONDENSADOR.PDF, pág. 2 <span class=\"pag\">pág. 2</span>.</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.condensador.hella02",
+   "nt": 785,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "condensador",
+   "seccion": "5. Lado de alta",
+   "subgrupo": "",
+   "titulo": "Condensador",
+   "codigo": "",
+   "menu": "Condensador",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "HELLA02.PDF, págs. 34-35",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "compresor",
+    "filtro-deshidratador",
+    "electroventilador-condensador"
+   ],
+   "palabras": [
+    "condensación",
+    "subenfriamiento",
+    "serpentín",
+    "tubos y aletas",
+    "flujo paralelo"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Producir el cambio de estado del fluido refrigerante de gas a líquido (condensación) mediante la cesión de calor al aire ambiente exterior. (pág. 34)",
+     "html": "<p>Producir el cambio de estado del fluido refrigerante de gas a líquido (condensación) mediante la cesión de calor al aire ambiente exterior. <span class=\"pag\">pág. 34</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Intercambiador térmico de alta presión situado en el frontal del vehículo. Existen tres tecnologías de fabricación: Serpentín: formado por un solo tubo continuo en forma de serpentín con placas soldadas interpuestas. Tubos y aletas: constituido por una serie de tubos superpuestos (habitualmente de cobre) y panel de aletas de aluminio. Flujo paralelo: tecnología de mayor eficacia, conformada por tubos paralelos unidos lateralmente con tabiques intermedios en los colectores para intercambiar la dirección del flujo. (pág. 34, 35)",
+     "html": "<p>Intercambiador térmico de alta presión situado en el frontal del vehículo. Existen tres tecnologías de fabricación:</p>\n<ul>\n<li>Serpentín: formado por un solo tubo continuo en forma de serpentín con placas soldadas interpuestas.</li>\n<li>Tubos y aletas: constituido por una serie de tubos superpuestos (habitualmente de cobre) y panel de aletas de aluminio.</li>\n<li>Flujo paralelo: tecnología de mayor eficacia, conformada por tubos paralelos unidos lateralmente con tabiques intermedios en los colectores para intercambiar la dirección del flujo.</li>\n</ul>\n<p> <span class=\"pag\">pág. 34, 35</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El proceso térmico se realiza en tres fases consecutivas a lo largo del condensador: Enfriamiento de gas supercalentado (Tramo B-C): El gas procedente del compresor a 20 bar y 110 ºC se enfría hasta alcanzar la temperatura de condensación de 68 ºC a 20 bar, reduciendo su temperatura y entalpía. Condensación (Tramo C-D): Cambio de estado de gas a líquido a presión y temperatura constantes (20 bar y 68 ºC), cediendo calor latente al aire exterior. Subenfriamiento (Tramo D-E): Enfriamiento del refrigerante ya en estado líquido, bajando su temperatura de 68 ºC a 60 ºC a la presión de 20 bar. (pág. 34, 35)",
+     "html": "<p>El proceso térmico se realiza en tres fases consecutivas a lo largo del condensador:</p>\n<ol>\n<li>Enfriamiento de gas supercalentado (Tramo B-C): El gas procedente del compresor a 20 bar y 110 ºC se enfría hasta alcanzar la temperatura de condensación de 68 ºC a 20 bar, reduciendo su temperatura y entalpía.</li>\n<li>Condensación (Tramo C-D): Cambio de estado de gas a líquido a presión y temperatura constantes (20 bar y 68 ºC), cediendo calor latente al aire exterior.</li>\n<li>Subenfriamiento (Tramo D-E): Enfriamiento del refrigerante ya en estado líquido, bajando su temperatura de 68 ºC a 60 ºC a la presión de 20 bar.</li>\n</ol>\n<p> <span class=\"pag\">pág. 34, 35</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Presión y temperatura de entrada (vapor supercalentado): 20 bar a 110 ºC. (pág. 34) Temperatura de condensación a 20 bar: 68 ºC. (pág. 35) Temperatura y presión de salida (líquido subenfriado): 60 ºC a 20 bar. (pág. 35)",
+     "html": "<ul>\n<li>Presión y temperatura de entrada (vapor supercalentado): 20 bar a 110 ºC. <span class=\"pag\">pág. 34</span></li>\n<li>Temperatura de condensación a 20 bar: 68 ºC. <span class=\"pag\">pág. 35</span></li>\n<li>Temperatura y presión de salida (líquido subenfriado): 60 ºC a 20 bar. <span class=\"pag\">pág. 35</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Configuración de un condensador de flujo paralelo con tubos, aletas, racores de entrada/salida y colectores — Fuente: HELLA02.PDF, pág. 35",
+     "html": "<ul>\n<li>Configuración de un condensador de flujo paralelo con tubos, aletas, racores de entrada/salida y colectores — Fuente: HELLA02.PDF, pág. 35</li>\n</ul>"
     }
    ]
   },
@@ -17591,6 +18045,75 @@
    ]
   },
   {
+   "id": "ssc.filtro-deshidratador.hella02",
+   "nt": 786,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "filtro-deshidratador-mirilla",
+   "seccion": "5. Lado de alta",
+   "subgrupo": "",
+   "titulo": "Filtro deshidratador",
+   "codigo": "",
+   "menu": "Filtro deshidratador",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "HELLA02.PDF, págs. 35-36",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "condensador",
+    "valvula-expansion",
+    "refrigerante-r134a"
+   ],
+   "palabras": [
+    "gel de sílice",
+    "humedad",
+    "impurezas",
+    "mirilla",
+    "depósito decantador"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Retener impurezas derivadas del desgaste mecánico, absorber la humedad del circuito, actuar como depósito decantador enviando solo líquido al evaporador y, en algunos modelos, evaluar el estado del fluido a través de una mirilla. (pág. 35, 36)",
+     "html": "<p>Retener impurezas derivadas del desgaste mecánico, absorber la humedad del circuito, actuar como depósito decantador enviando solo líquido al evaporador y, en algunos modelos, evaluar el estado del fluido a través de una mirilla. <span class=\"pag\">pág. 35, 36</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Componente pasivo ubicado en la línea de alta presión, entre el condensador y la válvula de expansión. Dispone en su interior de dos filtros para partículas sólidas, una masa deshidratante de gel de sílice intercalada y un tubo central de salida. Algunos modelos incorporan una mirilla transparente en la parte superior. (pág. 35, 36)",
+     "html": "<p>Componente pasivo ubicado en la línea de alta presión, entre el condensador y la válvula de expansión. Dispone en su interior de dos filtros para partículas sólidas, una masa deshidratante de gel de sílice intercalada y un tubo central de salida. Algunos modelos incorporan una mirilla transparente en la parte superior. <span class=\"pag\">pág. 35, 36</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Es un elemento neutro desde el punto de vista termodinámico (no altera la presión ni el estado del fluido). Al pasar el refrigerante líquido a través de las mallas internas, las impurezas sólidas quedan atrapadas para no obstruir la válvula de expansión. El gel de sílice absorbe el agua disuelta para evitar que se congele a 0 ºC en el lado de baja presión. Su diseño vertical garantiza que solo el líquido de la parte inferior sea aspirado hacia la salida. (pág. 35, 36)",
+     "html": "<p>Es un elemento neutro desde el punto de vista termodinámico (no altera la presión ni el estado del fluido). Al pasar el refrigerante líquido a través de las mallas internas, las impurezas sólidas quedan atrapadas para no obstruir la válvula de expansión. El gel de sílice absorbe el agua disuelta para evitar que se congele a 0 ºC en el lado de baja presión. Su diseño vertical garantiza que solo el líquido de la parte inferior sea aspirado hacia la salida. <span class=\"pag\">pág. 35, 36</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Temperatura crítica de congelación del agua en baja presión: 0 ºC. (pág. 36)",
+     "html": "<ul>\n<li>Temperatura crítica de congelación del agua en baja presión: 0 ºC. <span class=\"pag\">pág. 36</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Inspección visual del paso de burbujas o emulsión a través de la mirilla superior cuando está equipada. (pág. 36)",
+     "html": "<p>Inspección visual del paso de burbujas o emulsión a través de la mirilla superior cuando está equipada. <span class=\"pag\">pág. 36</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Vista seccionada de un filtro deshidratador con boca de entrada, zona de filtrado, gel de sílice, tubo de salida y mirilla — Fuente: HELLA02.PDF, pág. 36",
+     "html": "<ul>\n<li>Vista seccionada de un filtro deshidratador con boca de entrada, zona de filtrado, gel de sílice, tubo de salida y mirilla — Fuente: HELLA02.PDF, pág. 36</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.valvula-expansion.2-introduccion-a-la-refrigeracion",
    "nt": 15,
    "modulo": "ssc",
@@ -18571,6 +19094,72 @@
      "titulo": "Principio de funcionamiento",
      "texto": "Regula el paso de gas refrigerante garantizando la evaporación completa de la fase líquida en el evaporador y la generación consecuente de frío (pág. 3).",
      "html": "<p>Regula el paso de gas refrigerante garantizando la evaporación completa de la fase líquida en el evaporador y la generación consecuente de frío <span class=\"pag\">pág. 3</span>.</p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.valvula-expansion.hella02",
+   "nt": 788,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "valvula-expansion",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "Dispositivos de expansión",
+   "titulo": "Válvula de expansión termostática",
+   "codigo": "",
+   "menu": "Válvula de expansión termostática",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "HELLA02.PDF, págs. 37-39",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "evaporador",
+    "filtro-deshidratador",
+    "compresor"
+   ],
+   "palabras": [
+    "expansión",
+    "estrangulamiento",
+    "orificio calibrado",
+    "tipo L",
+    "tipo H",
+    "membrana",
+    "NTC"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Provocar una caída brusca de presión del refrigerante líquido para iniciar la evaporación y regular el caudal suministrado al evaporador en función de la carga térmica. (pág. 37)",
+     "html": "<p>Provocar una caída brusca de presión del refrigerante líquido para iniciar la evaporación y regular el caudal suministrado al evaporador en función de la carga térmica. <span class=\"pag\">pág. 37</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Punto divisorio entre el lado de alta y baja presión, ubicado a la entrada del evaporador. Existen dos tecnologías termostáticas: Tipo L: con sonda termostática externa acoplada al tubo de salida del evaporador. Puede ser de igualación/estabilización interna o externa (esta última conectada mediante tubo adicional a la salida del evaporador). Tipo H: de diseño compacto en bloque (monobloc), donde los flujos de entrada y salida del evaporador atraviesan el propio cuerpo de la válvula. Es la más utilizada en los vehículos europeos. (pág. 37, 38, 39)",
+     "html": "<p>Punto divisorio entre el lado de alta y baja presión, ubicado a la entrada del evaporador. Existen dos tecnologías termostáticas:</p>\n<ul>\n<li>Tipo L: con sonda termostática externa acoplada al tubo de salida del evaporador. Puede ser de igualación/estabilización interna o externa (esta última conectada mediante tubo adicional a la salida del evaporador).</li>\n<li>Tipo H: de diseño compacto en bloque (monobloc), donde los flujos de entrada y salida del evaporador atraviesan el propio cuerpo de la válvula. Es la más utilizada en los vehículos europeos.</li>\n</ul>\n<p> <span class=\"pag\">pág. 37, 38, 39</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El efecto de expansión se logra por estrangulamiento al pasar el refrigerante por un orificio calibrado. El caudal se regula equilibrando dos fuerzas opuestas sobre la membrana superior: la presión del fluido contenido en la sonda termostática (que empuja el vástago para abrir la bola/espiga) y la fuerza del muelle inferior (que tiende a cerrarla). Si la temperatura a la salida del evaporador sube (falta de refrigerante), la sonda se calienta, aumenta la presión sobre la membrana y abre la válvula de bola aumentando el caudal. Si la temperatura de salida baja, la presión sobre la membrana disminuye y el muelle cierra parcialmente el paso. (pág. 38, 39)",
+     "html": "<p>El efecto de expansión se logra por estrangulamiento al pasar el refrigerante por un orificio calibrado. El caudal se regula equilibrando dos fuerzas opuestas sobre la membrana superior: la presión del fluido contenido en la sonda termostática (que empuja el vástago para abrir la bola/espiga) y la fuerza del muelle inferior (que tiende a cerrarla).</p>\n<ul>\n<li>Si la temperatura a la salida del evaporador sube (falta de refrigerante), la sonda se calienta, aumenta la presión sobre la membrana y abre la válvula de bola aumentando el caudal.</li>\n<li>Si la temperatura de salida baja, la presión sobre la membrana disminuye y el muelle cierra parcialmente el paso.</li>\n</ul>\n<p> <span class=\"pag\">pág. 38, 39</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Caída de presión en expansión (ejemplo de funcionamiento): de 20 bar a 3 bar. (pág. 37)",
+     "html": "<ul>\n<li>Caída de presión en expansión (ejemplo de funcionamiento): de 20 bar a 3 bar. <span class=\"pag\">pág. 37</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Vista seccionada de válvula de expansión tipo L con orificio calibrado, válvula de bola, muelle, vástago, membrana y sonda termostática — Fuente: HELLA02.PDF, pág. 38 Válvula de expansión tipo H en bloque montada a la entrada del evaporador — Fuente: HELLA02.PDF, pág. 39",
+     "html": "<ul>\n<li>Vista seccionada de válvula de expansión tipo L con orificio calibrado, válvula de bola, muelle, vástago, membrana y sonda termostática — Fuente: HELLA02.PDF, pág. 38</li>\n<li>Válvula de expansión tipo H en bloque montada a la entrada del evaporador — Fuente: HELLA02.PDF, pág. 39</li>\n</ul>"
     }
    ]
   },
@@ -19677,6 +20266,75 @@
    ]
   },
   {
+   "id": "ssc.evaporador.hella02",
+   "nt": 790,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "evaporador",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "",
+   "titulo": "Evaporador",
+   "codigo": "",
+   "menu": "Evaporador",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "HELLA02.PDF, págs. 40-41",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "valvula-expansion",
+    "compresor",
+    "ventilador-habitaculo"
+   ],
+   "palabras": [
+    "evaporación",
+    "recalentamiento",
+    "tubos y aletas",
+    "placas",
+    "deshumectación"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Absorber el calor del aire destinado al habitáculo para reducir su temperatura y disminuir su grado de humedad mediante la condensación de agua sobre su superficie. (pág. 40)",
+     "html": "<p>Absorber el calor del aire destinado al habitáculo para reducir su temperatura y disminuir su grado de humedad mediante la condensación de agua sobre su superficie. <span class=\"pag\">pág. 40</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Intercambiador de calor de baja presión ubicado en la caja de distribución de aire. Existen dos tecnologías constructivas: Tubos y aletas: tubos unidos por racores con placas/aletas de aluminio soldadas para mejorar la transmisión térmica. Placas: constituido por placas de aluminio por cuyo interior circula el fluido en forma de \"U\" con celdillas intermedias que fuerzan la turbulencia del aire, ofreciendo mayor rendimiento térmico. (pág. 40, 41)",
+     "html": "<p>Intercambiador de calor de baja presión ubicado en la caja de distribución de aire. Existen dos tecnologías constructivas:</p>\n<ul>\n<li>Tubos y aletas: tubos unidos por racores con placas/aletas de aluminio soldadas para mejorar la transmisión térmica.</li>\n<li>Placas: constituido por placas de aluminio por cuyo interior circula el fluido en forma de \"U\" con celdillas intermedias que fuerzan la turbulencia del aire, ofreciendo mayor rendimiento térmico.</li>\n</ul>\n<p> <span class=\"pag\">pág. 40, 41</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El refrigerante entra al evaporador a 3 bar y 0 ºC en estado difásico (líquido + gas). Al chocar el aire del habitáculo contra las aletas frías, cede su energía térmica provocando la ebullición del refrigerante (Tramo F-G). Una vez evaporado totalmente a 0 ºC, el gas continúa absorbiendo calor en el tramo final del evaporador hasta alcanzar los 6 ºC a 3 bar, fenómeno denominado recalentamiento, que asegura la ausencia de líquido a la salida. (pág. 40)",
+     "html": "<p>El refrigerante entra al evaporador a 3 bar y 0 ºC en estado difásico (líquido + gas). Al chocar el aire del habitáculo contra las aletas frías, cede su energía térmica provocando la ebullición del refrigerante (Tramo F-G). Una vez evaporado totalmente a 0 ºC, el gas continúa absorbiendo calor en el tramo final del evaporador hasta alcanzar los 6 ºC a 3 bar, fenómeno denominado recalentamiento, que asegura la ausencia de líquido a la salida. <span class=\"pag\">pág. 40</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Condiciones de entrada (Punto F): 3 bar a 0 ºC (líquido + gas). (pág. 40) Condiciones al final de ebullición (Punto G): 3 bar a 0 ºC (gas saturado). (pág. 40) Condiciones de salida (Punto A, recalentamiento): 3 bar a 6 ºC (gas supercalentado). (pág. 40)",
+     "html": "<ul>\n<li>Condiciones de entrada (Punto F): 3 bar a 0 ºC (líquido + gas). <span class=\"pag\">pág. 40</span></li>\n<li>Condiciones al final de ebullición (Punto G): 3 bar a 0 ºC (gas saturado). <span class=\"pag\">pág. 40</span></li>\n<li>Condiciones de salida (Punto A, recalentamiento): 3 bar a 6 ºC (gas supercalentado). <span class=\"pag\">pág. 40</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Evacuación del agua de condensación generada en la superficie de sus aletas mediante la canalización de desagüe del vehículo. (pág. 40)",
+     "html": "<p>Evacuación del agua de condensación generada en la superficie de sus aletas mediante la canalización de desagüe del vehículo. <span class=\"pag\">pág. 40</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del ciclo de evaporación en el diagrama p-h y vista de evaporador de tubos y aletas y evaporador de placas — Fuente: HELLA02.PDF, pág. 40, 41",
+     "html": "<ul>\n<li>Esquema del ciclo de evaporación en el diagrama p-h y vista de evaporador de tubos y aletas y evaporador de placas — Fuente: HELLA02.PDF, pág. 40, 41</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.deposito-colector.baja.9-filtro-deshidratadores",
    "nt": 57,
    "modulo": "ssc",
@@ -20137,6 +20795,64 @@
    ]
   },
   {
+   "id": "ssc.deposito-colector.hella02",
+   "nt": 787,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "deposito-colector",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "",
+   "titulo": "Acumulador deshidratador",
+   "codigo": "",
+   "menu": "Acumulador deshidratador",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "HELLA02.PDF, págs. 36",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "evaporador",
+    "compresor",
+    "estrangulador"
+   ],
+   "palabras": [
+    "tubo en V",
+    "baja presión",
+    "aspiración de gas",
+    "tubo de expansión"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Retener impurezas, absorber la humedad en el lado de baja presión y garantizar que solo aspire gas el compresor, evitando la entrada de líquido que causaría un golpe de ariete. (pág. 36)",
+     "html": "<p>Retener impurezas, absorber la humedad en el lado de baja presión y garantizar que solo aspire gas el compresor, evitando la entrada de líquido que causaría un golpe de ariete. <span class=\"pag\">pág. 36</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Recipiente acumulador montado exclusivamente en circuitos dotados de tubo de expansión (estrangulador). Se instala en la línea de baja presión, entre la salida del evaporador y la aspiración del compresor. (pág. 36)",
+     "html": "<p>Recipiente acumulador montado exclusivamente en circuitos dotados de tubo de expansión (estrangulador). Se instala en la línea de baja presión, entre la salida del evaporador y la aspiración del compresor. <span class=\"pag\">pág. 36</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Integra en su interior un tubo de salida en forma de \"V\" con la toma de aspiración situada en la parte superior del depósito. El refrigerante procedente del evaporador se decanta en el fondo; el líquido sobrante queda depositado en la base, mientras que el compresor aspira únicamente la fase gaseosa desde la zona superior. (pág. 36)",
+     "html": "<p>Integra en su interior un tubo de salida en forma de \"V\" con la toma de aspiración situada en la parte superior del depósito. El refrigerante procedente del evaporador se decanta en el fondo; el líquido sobrante queda depositado en la base, mientras que el compresor aspira únicamente la fase gaseosa desde la zona superior. <span class=\"pag\">pág. 36</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Vista seccionada de un acumulador con tubo interno en V y toma de aspiración superior — Fuente: HELLA02.PDF, pág. 36",
+     "html": "<ul>\n<li>Vista seccionada de un acumulador con tubo interno en V y toma de aspiración superior — Fuente: HELLA02.PDF, pág. 36</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.tuberias-y-racores.2-introduccion-a-la-refrigeracion",
    "nt": 19,
    "modulo": "ssc",
@@ -20548,6 +21264,79 @@
      "titulo": "Tipos y características",
      "texto": "Formado por empalmes y manguitos (pág. 5).",
      "html": "<p>Formado por empalmes y manguitos <span class=\"pag\">pág. 5</span>.</p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.tuberias-y-racores.hella02",
+   "nt": 794,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "tuberias-y-racores",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "",
+   "titulo": "Canalizaciones y racores del circuito frigorífico",
+   "codigo": "",
+   "menu": "Canalizaciones y racores del circuito",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "HELLA02.PDF, págs. 46-48",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "compresor",
+    "condensador",
+    "evaporador",
+    "filtro-deshidratador"
+   ],
+   "palabras": [
+    "canalizaciones",
+    "mangueras",
+    "elastómeros",
+    "nylon",
+    "racor SAE",
+    "O'ring",
+    "Rotalock",
+    "brida"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Conectar los componentes del circuito frigorífico para la conducción del fluido refrigerante en sus distintas condiciones de presión, temperatura y estado físico. (pág. 46)",
+     "html": "<p>Conectar los componentes del circuito frigorífico para la conducción del fluido refrigerante en sus distintas condiciones de presión, temperatura y estado físico. <span class=\"pag\">pág. 46</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Las canalizaciones pueden ser rígidas, flexibles o mixtas. Las mangueras flexibles constan de 5 capas: 3 capas a base de elastómeros, 1 capa interna de nylon (impermeabilidad) y 1 o varias mallas de refuerzo para la presión. Diámetros interiores según el tramo: Evaporador a compresor (gas a baja presión/temperatura): 5/8\" (15,9 mm) o 1/2\" (12,7 mm). Compresor a condensador (gas a alta presión/temperatura): 13/32\" (10,3 mm). Condensador a evaporador (líquido a alta presión): 5/16\" (7,9 mm). Tipos de racores de conexión: Cónicos o SAE: roscados con asiento cónico (equipos R-12; requieren teflón en la rosca). Medidas: 3/8\", 1/2\", 5/8\" y 3/4\". Conexión O'ring: con anillo tórico en el extremo de la tuerca (estándar para R134a). Medidas: 3/8\", 1/2\", 5/8\" y 3/4\". Rotalock: estanqueidad por anillo tórico con cuello de asiento de 1\" y tubo base de 1/2\" o 5/8\". Brida: pletina atornillada al compresor que presiona los tubos sobre la culata con anillos tóricos. (pág. 46, 47, 48)",
+     "html": "<p>Las canalizaciones pueden ser rígidas, flexibles o mixtas. Las mangueras flexibles constan de 5 capas: 3 capas a base de elastómeros, 1 capa interna de nylon (impermeabilidad) y 1 o varias mallas de refuerzo para la presión.</p>\n<p>Diámetros interiores según el tramo:</p>\n<ul>\n<li>Evaporador a compresor (gas a baja presión/temperatura): 5/8\" (15,9 mm) o 1/2\" (12,7 mm).</li>\n<li>Compresor a condensador (gas a alta presión/temperatura): 13/32\" (10,3 mm).</li>\n<li>Condensador a evaporador (líquido a alta presión): 5/16\" (7,9 mm).</li>\n</ul>\n<p>Tipos de racores de conexión:</p>\n<ul>\n<li>Cónicos o SAE: roscados con asiento cónico (equipos R-12; requieren teflón en la rosca). Medidas: 3/8\", 1/2\", 5/8\" y 3/4\".</li>\n<li>Conexión O'ring: con anillo tórico en el extremo de la tuerca (estándar para R134a). Medidas: 3/8\", 1/2\", 5/8\" y 3/4\".</li>\n<li>Rotalock: estanqueidad por anillo tórico con cuello de asiento de 1\" y tubo base de 1/2\" o 5/8\".</li>\n<li>Brida: pletina atornillada al compresor que presiona los tubos sobre la culata con anillos tóricos.</li>\n</ul>\n<p> <span class=\"pag\">pág. 46, 47, 48</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Las dimensiones de los tubos responden a las variaciones de volumen específico del refrigerante: el tramo de gas a baja presión requiere el diámetro mayor (15,9 mm) por el elevado volumen del gas, mientras que la línea de líquido requiere el diámetro menor (7,9 mm). (pág. 46)",
+     "html": "<p>Las dimensiones de los tubos responden a las variaciones de volumen específico del refrigerante: el tramo de gas a baja presión requiere el diámetro mayor (15,9 mm) por el elevado volumen del gas, mientras que la línea de líquido requiere el diámetro menor (7,9 mm). <span class=\"pag\">pág. 46</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Diámetro tramo aspiración (baja presión): 5/8\" (15,9 mm) o 1/2\" (12,7 mm). (pág. 46) Diámetro tramo descarga (alta presión gas): 13/32\" (10,3 mm). (pág. 46) Diámetro tramo líquido (alta presión líquido): 5/16\" (7,9 mm). (pág. 46)",
+     "html": "<ul>\n<li>Diámetro tramo aspiración (baja presión): 5/8\" (15,9 mm) o 1/2\" (12,7 mm). <span class=\"pag\">pág. 46</span></li>\n<li>Diámetro tramo descarga (alta presión gas): 13/32\" (10,3 mm). <span class=\"pag\">pág. 46</span></li>\n<li>Diámetro tramo líquido (alta presión líquido): 5/16\" (7,9 mm). <span class=\"pag\">pág. 46</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Reemplazar la junta tórica en cada desmontaje en conexiones O'ring, Rotalock y de brida. Utilizar teflón en roscas cónicas SAE. (pág. 46, 47)",
+     "html": "<p>Reemplazar la junta tórica en cada desmontaje en conexiones O'ring, Rotalock y de brida. Utilizar teflón en roscas cónicas SAE. <span class=\"pag\">pág. 46, 47</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Estructura en capas de manguera flexible y tipos de racores (SAE, O'ring, Rotalock y Brida) — Fuente: HELLA02.PDF, pág. 46, 47, 48",
+     "html": "<ul>\n<li>Estructura en capas de manguera flexible y tipos de racores (SAE, O'ring, Rotalock y Brida) — Fuente: HELLA02.PDF, pág. 46, 47, 48</li>\n</ul>"
     }
    ]
   },
@@ -22544,6 +23333,70 @@
      "titulo": "Tipos y características",
      "texto": "Los interruptores / presostatos se clasifican en: Presostatos de baja presión (pág. 4). Presostatos de alta presión (pág. 4). Interruptores binarios (pág. 4). Interruptores trinarios (pág. 4).",
      "html": "<p>Los interruptores / presostatos se clasifican en:</p>\n<ul>\n<li>Presostatos de baja presión <span class=\"pag\">pág. 4</span>.</li>\n<li>Presostatos de alta presión <span class=\"pag\">pág. 4</span>.</li>\n<li>Interruptores binarios <span class=\"pag\">pág. 4</span>.</li>\n<li>Interruptores trinarios <span class=\"pag\">pág. 4</span>.</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.presostato.hella02",
+   "nt": 796,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "presostato-binary-trinary-cuatrinary",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Presostato de seguridad del climatizador",
+   "codigo": "",
+   "menu": "Presostato de seguridad del climatizad",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "HELLA02.PDF, págs. 52",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "embrague-compresor",
+    "electroventilador-condensador",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "trinary",
+    "corte por alta",
+    "corte por baja",
+    "electroventilador",
+    "seguridad"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Cumplir una función de seguridad en el circuito interrumpiendo la alimentación de la bobina del compresor ante presiones anómalas (corte por alta y corte por baja presión) y controlar el funcionamiento del electroventilador del condensador. (pág. 52)",
+     "html": "<p>Cumplir una función de seguridad en el circuito interrumpiendo la alimentación de la bobina del compresor ante presiones anómalas (corte por alta y corte por baja presión) y controlar el funcionamiento del electroventilador del condensador. <span class=\"pag\">pág. 52</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Interruptor manométrico roscado a la línea del circuito. Se pueden clasificar en: Presostatos sencillos / dobles: contemplan únicamente el corte del sistema por alta y baja presión. Presostato \"Trinary\": integra en un único componente las tres funciones (corte por baja presión, corte por alta presión y conexión del electroventilador del condensador). (pág. 52)",
+     "html": "<p>Interruptor manométrico roscado a la línea del circuito. Se pueden clasificar en:</p>\n<ul>\n<li>Presostatos sencillos / dobles: contemplan únicamente el corte del sistema por alta y baja presión.</li>\n<li>Presostato \"Trinary\": integra en un único componente las tres funciones (corte por baja presión, corte por alta presión y conexión del electroventilador del condensador).</li>\n</ul>\n<p> <span class=\"pag\">pág. 52</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "En condiciones normales de funcionamiento no realiza acciones sobre el sistema salvo la gestión del electroventilador. Ante una anomalía, sus membranas internas actúan sobre los contactos eléctricos: Corte por baja presión: interrumpe el circuito si la presión cae por debajo del umbral mínimo de seguridad. Corte por alta presión: interrumpe el circuito si la presión supera el límite máximo tolerable. Conexión del electroventilador: cierra un contacto normalmente abierto al elevarse la presión para activar la ventilación del condensador. (pág. 52)",
+     "html": "<p>En condiciones normales de funcionamiento no realiza acciones sobre el sistema salvo la gestión del electroventilador. Ante una anomalía, sus membranas internas actúan sobre los contactos eléctricos:</p>\n<ul>\n<li>Corte por baja presión: interrumpe el circuito si la presión cae por debajo del umbral mínimo de seguridad.</li>\n<li>Corte por alta presión: interrumpe el circuito si la presión supera el límite máximo tolerable.</li>\n<li>Conexión del electroventilador: cierra un contacto normalmente abierto al elevarse la presión para activar la ventilación del condensador.</li>\n</ul>\n<p> <span class=\"pag\">pág. 52</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Interrupción permanente del circuito eléctrico de la bobina del compresor por disparo de seguridad. (pág. 52)",
+     "html": "<p>Interrupción permanente del circuito eléctrico de la bobina del compresor por disparo de seguridad. <span class=\"pag\">pág. 52</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Vista exterior e interior del presostato trinary con contactos normalmente abiertos y normalmente cerrados — Fuente: HELLA02.PDF, pág. 52",
+     "html": "<ul>\n<li>Vista exterior e interior del presostato trinary con contactos normalmente abiertos y normalmente cerrados — Fuente: HELLA02.PDF, pág. 52</li>\n</ul>"
     }
    ]
   },
@@ -27475,6 +28328,86 @@
    ]
   },
   {
+   "id": "ssc.sensor-evaporador.hella02",
+   "nt": 795,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "sensor-ntc-evaporador",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Termostato del evaporador",
+   "codigo": "",
+   "menu": "Termostato del evaporador",
+   "grupo": "Control de climatización",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "HELLA02.PDF, págs. 49-51",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "control-climatizacion",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "embrague-compresor",
+    "evaporador",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "termostato mecánico",
+    "termostato electrónico",
+    "NTC",
+    "congelación evaporador",
+    "0 ºC",
+    "4 ºC"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Regular el funcionamiento del compresor de cilindrada fija interrumpiendo su alimentación eléctrica para mantener la temperatura del evaporador entre 0 ºC y 4 ºC, evitando la congelación del agua condensada en sus aletas. (pág. 49, 50)",
+     "html": "<p>Regular el funcionamiento del compresor de cilindrada fija interrumpiendo su alimentación eléctrica para mantener la temperatura del evaporador entre 0 ºC y 4 ºC, evitando la congelación del agua condensada en sus aletas. <span class=\"pag\">pág. 49, 50</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Dispositivo de regulación térmica instalado en la caja del evaporador. Existen dos tecnologías: Termostato mecánico: equipado con bulbo capilar intercalado entre las láminas del evaporador, pulmón de presión, muelle de regulación con tornillo de ajuste, ballesta y platinos de contacto eléctrico. Termostato electrónico: formado por una sonda de temperatura NTC (coeficiente de temperatura negativo) conectada a un módulo electrónico de mando. (pág. 49, 50, 51)",
+     "html": "<p>Dispositivo de regulación térmica instalado en la caja del evaporador. Existen dos tecnologías:</p>\n<ul>\n<li>Termostato mecánico: equipado con bulbo capilar intercalado entre las láminas del evaporador, pulmón de presión, muelle de regulación con tornillo de ajuste, ballesta y platinos de contacto eléctrico.</li>\n<li>Termostato electrónico: formado por una sonda de temperatura NTC (coeficiente de temperatura negativo) conectada a un módulo electrónico de mando.</li>\n</ul>\n<p> <span class=\"pag\">pág. 49, 50, 51</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Mecánico: La variación de temperatura en el evaporador modifica la presión del fluido interno del bulbo. Esta presión (Fp) actúa sobre el pulmón venciendo la fuerza opuesta de un muelle (Fm). Al bajar la temperatura de 0 ºC, Fp disminuye y el muelle abre los platinos, desconectando el electroembrague. Al subir hacia 4 ºC, Fp aumenta y cierra los contactos. Electrónico: La sonda NTC varía su resistencia eléctrica según la temperatura del evaporador. La unidad electrónica procesa esta variación y determina la conexión o desconexión del electroembrague del compresor. (pág. 50, 51)",
+     "html": "<ul>\n<li>Mecánico: La variación de temperatura en el evaporador modifica la presión del fluido interno del bulbo. Esta presión (Fp) actúa sobre el pulmón venciendo la fuerza opuesta de un muelle (Fm). Al bajar la temperatura de 0 ºC, Fp disminuye y el muelle abre los platinos, desconectando el electroembrague. Al subir hacia 4 ºC, Fp aumenta y cierra los contactos.</li>\n<li>Electrónico: La sonda NTC varía su resistencia eléctrica según la temperatura del evaporador. La unidad electrónica procesa esta variación y determina la conexión o desconexión del electroembrague del compresor.</li>\n</ul>\n<p> <span class=\"pag\">pág. 50, 51</span></p>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Rango de regulación de temperatura en evaporador: entre 0 ºC (corte) y 4 ºC (conexión). (pág. 50)",
+     "html": "<ul>\n<li>Rango de regulación de temperatura en evaporador: entre 0 ºC (corte) y 4 ºC (conexión). <span class=\"pag\">pág. 50</span></li>\n</ul>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Si no existiese el dispositivo, el hielo cubriría progresivamente la pared del evaporador, evitando la libre circulación del aire y dejando de expulsar aire por los difusores hacia el habitáculo. (pág. 49)",
+     "html": "<p>Si no existiese el dispositivo, el hielo cubriría progresivamente la pared del evaporador, evitando la libre circulación del aire y dejando de expulsar aire por los difusores hacia el habitáculo. <span class=\"pag\">pág. 49</span></p>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Medición de la variación de resistencia de la sonda NTC al modificar la temperatura (termostato electrónico) o verificación del equilibrio entre las fuerzas de presión y muelle sobre los contactos (termostato mecánico). (pág. 50, 51)",
+     "html": "<p>Medición de la variación de resistencia de la sonda NTC al modificar la temperatura (termostato electrónico) o verificación del equilibrio entre las fuerzas de presión y muelle sobre los contactos (termostato mecánico). <span class=\"pag\">pág. 50, 51</span></p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Ajuste de la fuerza del muelle interior mediante el tornillo de regulación en modelos mecánicos si procede. (pág. 50)",
+     "html": "<p>Ajuste de la fuerza del muelle interior mediante el tornillo de regulación en modelos mecánicos si procede. <span class=\"pag\">pág. 50</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Vista del termostato mecánico (bulbo, pulmón, muelle, platinos) y del termostato electrónico (módulo NTC y curva característica) — Fuente: HELLA02.PDF, pág. 51",
+     "html": "<ul>\n<li>Vista del termostato mecánico (bulbo, pulmón, muelle, platinos) y del termostato electrónico (módulo NTC y curva característica) — Fuente: HELLA02.PDF, pág. 51</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.sensor-humedad.termosensores-a5",
    "nt": 182,
    "modulo": "ssc",
@@ -31176,6 +32109,65 @@
      "titulo": "Tipos y características",
      "texto": "Componente encargado de la impulsión del aire hacia el habitáculo (pág. 1, 5).",
      "html": "<p>Componente encargado de la impulsión del aire hacia el habitáculo <span class=\"pag\">pág. 1, 5</span>.</p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.ventilador-habitaculo.hella02",
+   "nt": 799,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ventilador-habitaculo",
+   "seccion": "7. Sensores y actuadores",
+   "subgrupo": "",
+   "titulo": "Impulsor de habitáculo",
+   "codigo": "",
+   "menu": "Impulsor de habitáculo",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "HELLA02.PDF, págs. 58-59",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "filtro-habitaculo",
+    "distribucion-aire",
+    "unidad-control-climatizador"
+   ],
+   "palabras": [
+    "turbina",
+    "motor eléctrico",
+    "resistencias en serie",
+    "transistores de potencia",
+    "caudal de aire"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Producir el movimiento necesario del aire para introducirlo e impulsarlo hacia el interior del habitáculo. (pág. 58)",
+     "html": "<p>Producir el movimiento necesario del aire para introducirlo e impulsarlo hacia el interior del habitáculo. <span class=\"pag\">pág. 58</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Conjunto electromecánico del circuito de aire compuesto por tres partes diferenciadas: Turbina. Motor eléctrico. Módulo de regulación de velocidad. (pág. 58, 59)",
+     "html": "<p>Conjunto electromecánico del circuito de aire compuesto por tres partes diferenciadas:</p>\n<ol>\n<li>Turbina.</li>\n<li>Motor eléctrico.</li>\n<li>Módulo de regulación de velocidad.</li>\n</ol>\n<p> <span class=\"pag\">pág. 58, 59</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "La turbina accionada por el motor eléctrico aspira y mueve la masa de aire. La regulación de la velocidad de giro se realiza mediante dos sistemas: Grupo de resistencias: varía los valores de tensión aplicados sobre el motor eléctrico mediante distintas combinaciones de resistencias en serie. Regulación electrónica: modula la velocidad mediante transistores de potencia. (pág. 58, 59)",
+     "html": "<p>La turbina accionada por el motor eléctrico aspira y mueve la masa de aire. La regulación de la velocidad de giro se realiza mediante dos sistemas:</p>\n<ul>\n<li>Grupo de resistencias: varía los valores de tensión aplicados sobre el motor eléctrico mediante distintas combinaciones de resistencias en serie.</li>\n<li>Regulación electrónica: modula la velocidad mediante transistores de potencia.</li>\n</ul>\n<p> <span class=\"pag\">pág. 58, 59</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema del impulsor de habitáculo y circuito eléctrico de regulación de velocidad — Fuente: HELLA02.PDF, pág. 58, 59",
+     "html": "<ul>\n<li>Esquema del impulsor de habitáculo y circuito eléctrico de regulación de velocidad — Fuente: HELLA02.PDF, pág. 58, 59</li>\n</ul>"
     }
    ]
   },
@@ -57910,6 +58902,139 @@
      "titulo": "Imágenes requeridas",
      "texto": "Diagrama presión-entalpía (p-h) representando la campana, la zona difásica, la presión crítica y las líneas isotermas — Fuente: HELLA01.PDF, pág. 18, 19",
      "html": "<ul>\n<li>Diagrama presión-entalpía (p-h) representando la campana, la zona difásica, la presión crítica y las líneas isotermas — Fuente: HELLA01.PDF, pág. 18, 19</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.estrangulador.hella02",
+   "nt": 789,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "estrangulador-orifico-calibrado",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Tubo de expansión",
+   "codigo": "",
+   "menu": "Tubo de expansión",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "HELLA02.PDF, págs. 38-39",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "circuito-frigorifico",
+   "relacionados": [
+    "deposito-colector",
+    "evaporador"
+   ],
+   "palabras": [
+    "orificio calibrado",
+    "sección fija",
+    "estrangulamiento",
+    "pasivo"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Provocar la caída de presión del fluido refrigerante mediante la restricción fija del paso de caudal antes de su entrada al evaporador. (pág. 38, 39)",
+     "html": "<p>Provocar la caída de presión del fluido refrigerante mediante la restricción fija del paso de caudal antes de su entrada al evaporador. <span class=\"pag\">pág. 38, 39</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Elemento de expansión de sección fija formado por un tubo de calibración constante alojado en el interior de la tubería de alta presión. No dispone de piezas móviles ni de regulación termostática. Se combina siempre con el montaje de un acumulador en el lado de baja presión. (pág. 38, 39)",
+     "html": "<p>Elemento de expansión de sección fija formado por un tubo de calibración constante alojado en el interior de la tubería de alta presión. No dispone de piezas móviles ni de regulación termostática. Se combina siempre con el montaje de un acumulador en el lado de baja presión. <span class=\"pag\">pág. 38, 39</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Ofrece una resistencia calibrada constante al paso del refrigerante líquido a alta presión. Al forzar el paso del fluido a través de su orificio estrecho, la presión cae bruscamente hasta la presión de evaporación. Al no poder regular el caudal según la carga térmica, el exceso de líquido que sale del evaporador es retenido en el acumulador. (pág. 38, 39)",
+     "html": "<p>Ofrece una resistencia calibrada constante al paso del refrigerante líquido a alta presión. Al forzar el paso del fluido a través de su orificio estrecho, la presión cae bruscamente hasta la presión de evaporación. Al no poder regular el caudal según la carga térmica, el exceso de líquido que sale del evaporador es retenido en el acumulador. <span class=\"pag\">pág. 38, 39</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema de instalación de tubo de expansión con acumulador/deshidratador en el lado de baja presión — Fuente: HELLA02.PDF, pág. 39",
+     "html": "<ul>\n<li>Esquema de instalación de tubo de expansión con acumulador/deshidratador en el lado de baja presión — Fuente: HELLA02.PDF, pág. 39</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.filtro-habitaculo.hella02",
+   "nt": 798,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "filtro-habitaculo",
+   "seccion": "Por ubicar",
+   "subgrupo": "",
+   "titulo": "Filtro de habitáculo",
+   "codigo": "",
+   "menu": "Filtro de habitáculo",
+   "grupo": "Distribución de aire",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "HELLA02.PDF, págs. 56-58",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "distribucion-aire",
+   "formaParteDe": "distribucion-aire",
+   "relacionados": [
+    "ventilador-habitaculo",
+    "distribucion-aire"
+   ],
+   "palabras": [
+    "filtro antipolen",
+    "elementos sólidos",
+    "carbón activo",
+    "esporas",
+    "partículas",
+    "CO",
+    "HC",
+    "NOx"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Evitar que las impurezas, partículas sólidas, polen, alérgenos y gases contaminantes contenidos en el aire penetren en el interior del habitáculo del vehículo. (pág. 56, 57, 58)",
+     "html": "<p>Evitar que las impurezas, partículas sólidas, polen, alérgenos y gases contaminantes contenidos en el aire penetren en el interior del habitáculo del vehículo. <span class=\"pag\">pág. 56, 57, 58</span></p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Elemento filtrante montado habitualmente debajo del parabrisas (conjunto monomotor) o en el interior del vehículo entre el impulsor y el evaporador. Existen dos tipos principales: Filtros de elementos sólidos: fabricados en papel o materiales sintéticos. Filtros de carbón activo: incorporan gránulos de carbón activado integrados en la estructura filtrante. (pág. 56, 57, 58)",
+     "html": "<p>Elemento filtrante montado habitualmente debajo del parabrisas (conjunto monomotor) o en el interior del vehículo entre el impulsor y el evaporador. Existen dos tipos principales:</p>\n<ul>\n<li>Filtros de elementos sólidos: fabricados en papel o materiales sintéticos.</li>\n<li>Filtros de carbón activo: incorporan gránulos de carbón activado integrados en la estructura filtrante.</li>\n</ul>\n<p> <span class=\"pag\">pág. 56, 57, 58</span></p>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Filtro de elementos sólidos: retiene mecánicamente partículas sólidas en suspensión como polen, ácaros, hollín derivado de motores diésel y partículas de desgaste de frenos y embragues. Filtro de carbón activo: suma a la retención de partículas la capacidad de adsorción de componentes gaseosos (CO, HC y NOx) derivados de las combustiones gracias a las propiedades del carbón activado. (pág. 57, 58)",
+     "html": "<ul>\n<li>Filtro de elementos sólidos: retiene mecánicamente partículas sólidas en suspensión como polen, ácaros, hollín derivado de motores diésel y partículas de desgaste de frenos y embragues.</li>\n<li>Filtro de carbón activo: suma a la retención de partículas la capacidad de adsorción de componentes gaseosos (CO, HC y NOx) derivados de las combustiones gracias a las propiedades del carbón activado.</li>\n</ul>\n<p> <span class=\"pag\">pág. 57, 58</span></p>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Saturación por acumulación de suciedad con el paso del tiempo. (pág. 56, 57)",
+     "html": "<p>Saturación por acumulación de suciedad con el paso del tiempo. <span class=\"pag\">pág. 56, 57</span></p>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Degradación del material filtrante que puede llegar a producir malos olores en el interior del habitáculo y reducción del caudal de aire. (pág. 57)",
+     "html": "<p>Degradación del material filtrante que puede llegar a producir malos olores en el interior del habitáculo y reducción del caudal de aire. <span class=\"pag\">pág. 57</span></p>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Sustitución periódica del filtro de habitáculo para evitar la degradación y malos olores. (pág. 57)",
+     "html": "<p>Sustitución periódica del filtro de habitáculo para evitar la degradación y malos olores. <span class=\"pag\">pág. 57</span></p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Detalle del filtro de elementos sólidos y del filtro de carbón activo — Fuente: HELLA02.PDF, pág. 57, 58",
+     "html": "<ul>\n<li>Detalle del filtro de elementos sólidos y del filtro de carbón activo — Fuente: HELLA02.PDF, pág. 57, 58</li>\n</ul>"
     }
    ]
   },
