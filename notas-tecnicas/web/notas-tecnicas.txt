@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">757 notas · 25/09/2026</p>
+  <p class="sidebar-meta">758 notas · 25/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -623,6 +623,7 @@
     <li><a href="#nt763">NT763 · Carcasa y conjunto distribuidor del cl</a></li>
     <li><a href="#nt764">NT764 · Conducto canalizador y carcasa V70</a></li>
     <li><a href="#nt765">NT765 · Desmontaje, montaje y ensamblado del c</a></li>
+    <li><a href="#nt766">NT766 · Componentes del climatizador en el hab</a></li>
   </ul>
 </nav>
 
@@ -37325,8 +37326,74 @@ En la versión de nueva generación, ha sido revisada técnicamente y adaptada e
     </div>
   </section>
 
+  <section id="nt766" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 766 <span class="fusionado">SEAT</span></div>
+    <div class="nota-body">
+      <h1>Componentes del climatizador en el habitáculo</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Alojar, ubicar y conectar la red de sensores, servomotores de trampillas, unidad de mandos y componentes de intercambio térmico del climatizador en el interior del habitáculo para la regulación de la temperatura y la distribución del aire. (pág. 1)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <ul>
+<li>Realizar el autodiagnóstico del climatizador accediendo a través del conector para diagnóstico. (pág. 1)</li>
+<li>Comprobar los valores de medición del transmisor de temperatura exterior -G17- en el cuadro de instrumentos si la indicación en la pantalla es incorrecta. (pág. 1)</li>
+<li>Verificar eléctricamente el conector y el funcionamiento del elemento de calefacción adicional -Z35- en versiones diésel TDI. (pág. 2, 3)</li>
+</ul>
+<p>(pág. 3)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Disposición general modular de los componentes en el habitáculo del vehículo (SEAT Ibiza III ASY) estructurada en 23 elementos distribuidos en el tablero de instrumentos, la consola central y la caja del climatizador:</p>
+<ol>
+<li>Conector para diagnóstico. (pág. 1)</li>
+<li>Cuadro de instrumentos: incluye el indicador de temperatura exterior (-G17-); el valor de medición del transmisor -G17- es analizado en el cuadro de instrumentos y transmitido a la unidad de control -J255- a través del CAN-Bus de datos del área de confort. (pág. 1)</li>
+<li>Transmisor de temperatura a la salida del evaporador -G263-. (pág. 2)</li>
+<li>Difusor de descongelación para el parabrisas. (pág. 2)</li>
+<li>Fotosensor para radiación solar -G107-. (pág. 2)</li>
+<li>Transmisor de temperatura a la salida del aireador central -G191-. (pág. 2)</li>
+<li>Transmisor de temperatura a la salida en el vano reposapiés -G192-. (pág. 2)</li>
+<li>Servomotor para chapaleta de descongelación -V107-: equipado con el potenciómetro -G135- y identificado por el color blanco en su rueda dentada. (pág. 2)</li>
+<li>Servomotor para chapaleta de temperatura -V68-: equipado con el potenciómetro -G92- y identificado por el color negro en su rueda dentada. (pág. 2)</li>
+<li>Conector para elemento de calefacción adicional -Z35- (exclusivo para vehículos con motor TDI). (pág. 2)</li>
+<li>Mando del acelerador: transmite la señal para la desactivación por kickdown del regulador del compresor -N280- a través de la unidad de control del motor. (pág. 2)</li>
+<li>Unidad de mandos e indicación -E87- con unidad de control -J255-: incorpora integrado el termosensor -G56- e iluminación mediante diodos LED no sustituibles. (pág. 2, 3)</li>
+<li>Turbina de aire -V42- para termosensor -G56-: integrada en la propia unidad -E87- (no se desmonta). (pág. 3)</li>
+<li>Servomotor para chapaleta central -V70-: equipado con el potenciómetro -G112-. (pág. 3)</li>
+<li>Termosensor del conducto de aspiración de aire fresco -G89-. (pág. 3)</li>
+<li>Servomotor para chapaleta de recirculación de aire -V113-: equipado con el potenciómetro -G143- y encargado de accionar adicionalmente la chapaleta de aire fresco o de velocidad. (pág. 3)</li>
+<li>Terminal de masa para elemento de calefacción adicional -Z35- (exclusivo para motores TDI). (pág. 3)</li>
+<li>Turbina de aire fresco -V2-. (pág. 3)</li>
+<li>Unidad de control para turbina de aire fresco -J126-. (pág. 3)</li>
+<li>Filtro antipolvo y antipolen. (pág. 3)</li>
+<li>Climatizador con evaporador. (pág. 3)</li>
+<li>Elemento de calefacción adicional -Z35- (exclusivo para versiones diésel TDI). (pág. 3)</li>
+<li>Intercambiador de calor. (pág. 3)</li>
+</ol>
+<p>(pág. 3)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <ul>
+<li>Respetar los intervalos de sustitución del filtro antipolvo y antipolen indicados en el cuaderno de mantenimiento. (pág. 3)</li>
+<li>El climatizador con evaporador únicamente se debe desmontar estando el circuito frigorífico completamente vacío, trasladando el vehículo a un taller de apoyo especializado. (pág. 3)</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT766_01</code> Esquema de ubicación de los componentes del climatizador en el habitáculo (tablero y zona frontal) — Fuente: despiece3 clima ibizaIII ASY.pdf, pág. 1</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT766_02</code> Disposición de los servomotores, sensores y grupo climatizador en la consola central — Fuente: despiece3 clima ibizaIII ASY.pdf, pág. 3</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">despiece3 clima ibizaIII ASY.pdf, págs. 1-3</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    757 notas técnicas · generado el 25/09/2026.
+    758 notas técnicas · generado el 25/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
