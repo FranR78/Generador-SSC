@@ -1,0 +1,75 @@
+name: Fusionar notas (Gemini)
+
+# Fusiona con Gemini las fichas de fuente de cada entidad en una nota maestra
+# (notas-tecnicas/generador/fusionar.py). Se lanza a mano: Actions → este
+# workflow → Run workflow. Usa la key del profesor, secreto GEMINI_API_KEY.
+# Lo que no pasa la auditoría de datos se queda en maestras/pendientes/.
+
+on:
+  workflow_dispatch:
+    inputs:
+      entidades:
+        description: 'Entidades separadas por espacios (vacío = usar «todas»)'
+        required: false
+        default: ''
+      todas:
+        description: 'Todas las entidades con 2 o más fuentes'
+        type: boolean
+        default: false
+      max:
+        description: 'Como mucho N entidades en esta ejecución'
+        default: '10'
+      modelo:
+        description: 'Modelo de Gemini'
+        default: 'gemini-2.5-flash'
+
+concurrency:
+  group: notas-tecnicas      # la misma cola que la regeneración: nunca a la vez
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  fusionar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    defaults:
+      run:
+        working-directory: 'notas-tecnicas'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Instalar dependencias
+        run: pip install --quiet -r generador/requirements.txt google-genai pydantic
+      - name: Fusionar
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          FUSION_MODELO: ${{ inputs.modelo }}
+          ENTIDADES: ${{ inputs.entidades }}
+          TODAS: ${{ inputs.todas }}
+          MAX: ${{ inputs.max }}
+        run: |
+          if [ "$TODAS" = "true" ]; then
+            python3 generador/fusionar.py --todas --max "$MAX"
+          else
+            python3 generador/fusionar.py --max "$MAX" $ENTIDADES
+          fi
+      # Los push de GITHUB_TOKEN no disparan otro workflow: se regenera aquí.
+      - name: Regenerar HTML y notas.json
+        run: python3 generador/construir.py
+      - name: Guardar
+        working-directory: .
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A notas-tecnicas
+          git diff --cached --quiet && { echo "::notice::Nada que guardar."; exit 0; }
+          git commit -m "Fusión: maestras nuevas o actualizadas"
+          for i in 1 2 3 4 5; do
+            git push && exit 0
+            sleep $((i * 3)); git pull --rebase origin main || exit 1
+          done
+          exit 1

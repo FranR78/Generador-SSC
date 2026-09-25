@@ -15,6 +15,10 @@
     .apartado .txt strong{color:#063f70}
     .cap-pend{display:flex;gap:10px;align-items:center;border:1px solid var(--borde);border-radius:10px;padding:8px;margin:6px 0;flex-wrap:wrap}
     .cap-pend img{width:120px;max-height:90px;object-fit:contain;border-radius:6px;background:#f3f6f8}
+    .apartado h4 .nivel{font-size:10.5px;letter-spacing:.03em;text-transform:none;border-radius:10px;padding:1px 8px;margin-left:6px;vertical-align:1px}
+    .nivel-basico{background:#e3f4ea;color:#1e7a45}
+    .nivel-intermedio{background:#fff3d6;color:#8a5a00}
+    .nivel-avanzado{background:#fde4e1;color:#a2291b}
     .apartado .txt h3{font-size:15px;color:#063f70;margin:1.1em 0 .4em}
     .apartado .txt table{border-collapse:collapse;width:100%;font-size:14px;margin:.4em 0 1em;text-align:left}
     .apartado .txt th,.apartado .txt td{border:1px solid #d7e1ea;padding:6px 9px;vertical-align:top}
@@ -1692,6 +1696,11 @@
     // negritas) generado por construir.py; las antiguas, solo texto.
     // «Imágenes requeridas» no es texto de estudio: son los huecos para las
     // capturas del alumnado, con el nombre exacto que debe tener el archivo.
+    // Nivel del apartado en el itinerario del curso (lo pone la fusión).
+    function chipNivel(a){
+      var t = { basico: 'Básico', intermedio: 'Intermedio', avanzado: 'Avanzado' }[a.nivel];
+      return t ? ' <span class="nivel nivel-' + a.nivel + '">' + t + '</span>' : '';
+    }
     function cuerpoApartado(a, nt){
       if(a.titulo === 'Imágenes requeridas' && a.html){
         var i = 0;
@@ -1734,7 +1743,7 @@
           var h = '<h2>' + n.titulo + (n.codigo && !/documentad/i.test(n.codigo) ? ' — ' + n.codigo : '') + '</h2>';
           if(n.ubicacion) h += '<p class="aviso"><strong>Ubicación:</strong> ' + n.ubicacion + '</p>';
           (n.apartados||[]).forEach(function(a){
-            h += '<div class="apartado"><h4>' + a.titulo + '</h4>' + cuerpoApartado(a, n.nt) + '</div>';
+            h += '<div class="apartado"><h4>' + a.titulo + chipNivel(a) + '</h4>' + cuerpoApartado(a, n.nt) + '</div>';
           });
           if(n.fuentes) h += '<p class="fuente"><strong>Fuente:</strong> ' + n.fuentes + ' · NT' + n.nt + '</p>';
           h += botonPreguntar(n.nt);
@@ -1956,7 +1965,7 @@
           var h = '<h2>NT'+n.nt+' · '+n.titulo+(n.codigo?' — '+n.codigo:'')+'</h2>';
           if(n.ubicacion) h += '<p class="aviso"><strong>Ubicación:</strong> '+n.ubicacion+'</p>';
           n.apartados.forEach(function(a){
-            h += '<div class="apartado"><h4>'+a.titulo+'</h4>'+cuerpoApartado(a, n.nt)+'</div>';
+            h += '<div class="apartado"><h4>'+a.titulo+chipNivel(a)+'</h4>'+cuerpoApartado(a, n.nt)+'</div>';
           });
           if(n.fuentes) h += '<p class="fuente"><strong>Fuente:</strong> '+n.fuentes+'</p>';
           h += botonPreguntar(n.nt);

@@ -32,7 +32,11 @@ Lee esto primero al retomar. Detalle en los docs enlazados.
 
 ## Pendiente, por orden
 
-1. **Fusiones (domingo, si sobran tokens).**
+1. **Fusiones con Gemini (25/09).** Workflow «Fusionar notas (Gemini)» + `generador/fusionar.py`.
+   Pone nivel básico/intermedio/avanzado por apartado. Lo que no pasa la auditoría va a
+   `maestras/pendientes/`. Prueba: evaporador, embrague-compresor, lectura-manometros.
+   Después, `--todas` por tandas de 10-20. Claude revisa solo lo que falle.
+   (Plan anterior, a mano:)
    - Cómo pedirlo: «fusiona X, Y, Z». Las hace Claude en la sesión y pasa `auditar_fusion.py` a cada una.
    - Candidatas: compresor, electroventiladores, filtro deshidratador, R1234yf, válvula de expansión.
    - Revisar la de R134a y pasarla a `revisada`.

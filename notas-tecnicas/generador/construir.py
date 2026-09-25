@@ -214,6 +214,8 @@ class Nota:
         self.palabras = meta.get("palabras") or []
         self.estado = str(meta.get("estado", "") or "").strip()
         self.fusionadas = [int(x) for x in (meta.get("fusionadas") or [])]
+        # Nivel de cada apartado (básico/intermedio/avanzado), lo pone fusionar.py
+        self.niveles = {str(k): str(v) for k, v in (meta.get("niveles") or {}).items()}
         if self.tipo not in ("elemento", "proceso"):
             raise ValueError(f"tipo '{self.tipo}' desconocido: usa 'elemento' o 'proceso'")
         if self.tipo == "proceso" and self.subtipo not in SUBTIPOS:
@@ -770,7 +772,8 @@ def volcar_json(notas):
             "formaParteDe": n.forma_parte_de,
             "relacionados": n.relacionados,
             "palabras": n.palabras,
-            "apartados": [{"titulo": k, "texto": texto_plano(v), "html": html_lectura(v)}
+            "apartados": [{"titulo": k, "texto": texto_plano(v), "html": html_lectura(v),
+                           "nivel": n.niveles.get(k, "")}
                           for k, v in n.apartados.items()],
         })
     # El orden del curso lo manda el índice: sección, luego posición dentro,
