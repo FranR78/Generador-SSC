@@ -6,38 +6,40 @@ nt: 389
 tipo: proceso
 subtipo: fundamento
 clase: fundamento
-titulo: "Refrigeración del aire"
-menu: "Refrigeración del aire"
+titulo: "Refrigeración del aire en el circuito"
+menu: "Refrigeración del aire en el circuito"
 grupo: "Circuito frigorífico"
 clave: refrigeracion-aire
 area: climatizacion
 sistema: "circuito-frigorifico"
-fuentes: "5. EL CIRCUITO DE AIRE.pptx, págs. 18"
-relacionados: ["evaporador", "servomotor-trampilla", "radiador-calefaccion"]
-palabras: ["refrigeracion", "aire frio", "compresor on", "humedad habitaculo"]
+fuentes: "5. EL CIRCUITO DE AIRE.pptx, págs. 34-36"
+relacionados: ["evaporador", "servomotor-trampilla"]
+palabras: ["compresor ON", "deshumificación", "confort", "humedad"]
 ---
 
 ## Objeto
 
-Reducir la temperatura y el nivel de humedad del aire que se introduce en el habitáculo. (pág. 18)
+Reducir la temperatura y el grado de humedad del aire introducido al habitáculo. (pág. 34)
 
 ## Fundamento
 
-El aire exterior atraviesa el evaporador mientras el circuito frigorífico está en marcha, enfriándose y cediendo su humedad por condensación antes de ser distribuido. (pág. 18)
+Intercambio térmico producido al hacer pasar el aire aspirado a través del evaporador mientras el circuito frigorífico se encuentra activo. (pág. 36)
 
 ## Desarrollo
 
-1. El compresor entra en funcionamiento (Compresor On).
-2. El aire exterior pasa por el evaporador, donde se enfría y deshumecta.
-3. La trampilla de mezcla cierra el paso hacia el radiador de calefacción para evitar recalentar el aire.
-4. El aire frío se canaliza directamente hacia las salidas del habitáculo.
+Durante el funcionamiento en modo de refrigeración normal:
+1. El compresor permanece acoplado y funcionando (condición: Con ºC = Compresor ON).
+2. Se capta aire fresco del exterior.
+3. El aire atraviesa el evaporador, cediendo calor al refrigerante y perdiendo humedad por condensación en las aletas.
+4. La trampilla de mezcla cierra o limita el paso hacia el radiador de calefacción.
+5. El aire frío y deshumificado se distribuye al habitáculo.
 
-Debido a la baja humedad que se alcanza en el interior del habitáculo por el efecto deshumectador del evaporador, se recomienda que los ocupantes ingieran líquidos durante viajes largos. (pág. 18)
+Debido a la baja humedad relativa que se alcanza en el aire del habitáculo durante el funcionamiento continuado de la refrigeración, es aconsejable que los ocupantes beban líquidos en desplazamientos o trayectos largos. (pág. 36)
 
 ## Valores de referencia
 
-- Estado del compresor: Compresor On. (pág. 18)
+- Estado del compresor: Compresor ON (Con ºC). (pág. 36)
 
 ## Imágenes requeridas
 
-- Esquema de flujo de refrigeración de aire con compresor conectado — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 18
+- Flujo de aire en modo refrigeración estándar (compresor ON, paso directo por evaporador) — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 35

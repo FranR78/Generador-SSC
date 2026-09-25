@@ -11,24 +11,28 @@ grupo: "Circuito frigorífico"
 clave: evaporador
 area: climatizacion
 sistema: "circuito-frigorifico"
-forma_parte_de: circuito-frigorifico
-fuentes: "5. EL CIRCUITO DE AIRE.pptx, págs. 11"
-relacionados: ["valvula-expansion", "compresor", "filtro-deshidratador"]
-palabras: ["evaporador", "refrigeracion", "condensacion", "deshumectacion", "bolsa de hielo"]
+forma_parte_de: distribucion-aire
+fuentes: "5. EL CIRCUITO DE AIRE.pptx, págs. 14-16"
+relacionados: ["distribucion-aire", "radiador-calefaccion"]
+palabras: ["bolsa de hielo", "deshumificación", "agua condensada"]
 ---
 
 ## Misión
 
-Enfriar y deshumificar el aire que lo atraviesa antes de enviarlo al habitáculo. (pág. 11)
+Enfriar y deshumificar el aire impulsado hacia el habitáculo ("bolsa de hielo" del sistema). (pág. 14)
 
 ## Tipos y características
 
-Intercambiador de calor de tubos y aletas integrado en la caja climatizadora. Denominado internamente como la «bolsa de hielo» del sistema. (pág. 11)
+Intercambiador de calor aire-refrigerante ubicado en la caja de distribución de aire, aguas arriba del radiador de calefacción y de la trampilla de mezcla. (pág. 16)
 
 ## Principio de funcionamiento
 
-El refrigerante que se evapora en su interior absorbe el calor del aire impulsado por el ventilador. La humedad presente en el aire se condensa sobre sus aletas frías, canalizándose y expulsándose al exterior del vehículo. (pág. 11)
+Al pasar el aire a través de los paneles del evaporador estando la instalación frigorífica en marcha, cede calor al líquido refrigerante en ebullición. La humedad contenida en el aire se condensa sobre las aletas frías del evaporador, y el agua condensada resultante es canalizada y expulsada al exterior del vehículo. (pág. 15)
+
+## Mantenimiento
+
+Canalización y expulsión continua del agua condensada hacia el exterior del vehículo. (pág. 15)
 
 ## Imágenes requeridas
 
-- Evaporador de climatización junto a la caja de distribución de aire — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 11
+- Vista del evaporador de climatización junto a la caja de aireación — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 16

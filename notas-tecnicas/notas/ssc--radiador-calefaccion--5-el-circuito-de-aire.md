@@ -11,24 +11,24 @@ grupo: "Calefacción"
 clave: radiador-calefaccion
 area: climatizacion
 sistema: "calefaccion"
-forma_parte_de: circuito-refrigeracion-motor
-fuentes: "5. EL CIRCUITO DE AIRE.pptx, págs. 12"
-relacionados: ["liquido-refrigerante-motor", "servomotor-trampilla"]
-palabras: ["radiador calefaccion", "aerotermo", "aire caliente", "intercambio termico"]
+forma_parte_de: distribucion-aire
+fuentes: "5. EL CIRCUITO DE AIRE.pptx, págs. 17-18"
+relacionados: ["evaporador", "liquido-refrigerante-motor"]
+palabras: ["aerotermo", "aire seco", "aire húmedo", "calentamiento"]
 ---
 
 ## Misión
 
-Transferir el calor del líquido refrigerante del motor al flujo de aire que entra al habitáculo. (pág. 12)
+Permitir el calentamiento del aire que se dirige al habitáculo mediante la transferencia de calor desde el líquido refrigerante del motor (aerotermo). (pág. 17)
 
 ## Tipos y características
 
-Intercambiador térmico (aerotermo) montado en el cuerpo de la caja climatizadora a continuación del evaporador. (pág. 12)
+Intercambiador térmico agua-aire integrado en el bloque de distribución del climatizador. El aire calentado a su través puede ser seco o húmedo, según se encuentre o no en funcionamiento el compresor del circuito frigorífico. (pág. 17)
 
 ## Principio de funcionamiento
 
-El líquido refrigerante del motor circula de forma continua por su interior. El aire que lo atraviesa absorbe energía térmica. Según esté activado o no el compresor del aire acondicionado, el aire calentado resultará seco o húmedo. (pág. 12)
+El líquido refrigerante caliente procedente del circuito de refrigeración del motor circula por el interior del radiador. Cuando la trampilla de mezcla permite el paso total o parcial del flujo de aire impulsado a través de sus aletas, el aire absorbe calor antes de ser distribuido al habitáculo. (pág. 17)
 
 ## Imágenes requeridas
 
-- Radiador de calefacción o aerotermo extraído de la caja de aire — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 12
+- Radiador de calefacción y su ubicación en la caja del circuito de aire — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 18

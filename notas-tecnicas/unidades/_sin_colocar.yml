@@ -18,7 +18,7 @@ clima:
   - caja-climatizadora   # Unidad climática
   - calefaccion-bomba-calor   # Climatización por bomba de calor con CO2
   - calefactor-ptc   # Resistencia de calefacción eléctrica PTC
-  - calentamiento-aire   # Calentamiento del aire
+  - calentamiento-aire   # Calentamiento del aire en el circuito
   - calor-residual   # Función de calor residual
   - calor-sensible-y-latente   # Intercambios térmicos, calor sensible y calor latente
   - cambios-de-estado   # Cambios de estado de la materia
@@ -42,6 +42,7 @@ clima:
   - corte-compresor-diesel   # Corte de seguridad del compresor en rampa para motor diésel
   - desconexion-mangueras-carga   # Desconexión del equipo de carga y recuperación de mangueras
   - desecacion-y-desempando   # Desecación del aire y desempañado
+  - desempanado-aire   # Desecación del aire y desempañado de cristales
   - desmontaje-montaje-condensador   # Desmontaje y montaje del condensador
   - desmontaje-montaje-evaporador   # Desmontaje y montaje del evaporador
   - deteccion-remolque   # Unidad de control para detección del remolque J345
@@ -138,7 +139,7 @@ clima:
   - purga-medicion-aceite-recuperado   # Purga y medición del aceite evacuado en la recuperación
   - radiador-calefaccion   # Radiador de calefacción
   - recuperacion-refrigerante-contaminado   # Recuperación de refrigerante R1234yf contaminado mediante condensación por hielo seco
-  - refrigeracion-aire   # Refrigeración del aire
+  - refrigeracion-aire   # Refrigeración del aire en el circuito
   - refrigeracion-maxima   # Refrigeración máxima del aire
   - refrigerante-co2   # Agente frigorífico Dióxido de Carbono CO2
   - refrigerante-r12   # Agente frigorífico R12

@@ -13,25 +13,29 @@ variante: mezcla
 area: climatizacion
 sistema: "distribucion-aire"
 forma_parte_de: distribucion-aire
-fuentes: "5. EL CIRCUITO DE AIRE.pptx, págs. 15"
+fuentes: "5. EL CIRCUITO DE AIRE.pptx, págs. 28-30"
 relacionados: ["radiador-calefaccion", "evaporador"]
-palabras: ["trampilla de mezcla", "proporcion aire", "caliente frio", "cable", "paso a paso"]
+palabras: ["grifo de calefacción", "mezcla de aire", "cable", "motor paso a paso"]
 ---
 
 ## Misión
 
-Regular la proporción de aire frío y caliente canalizado hacia el habitáculo, sustituyendo el uso de grifos de calefacción. (pág. 15)
+Sustituir al antiguo grifo de calefacción y asegurar la mezcla proporcionada de aire caliente y frío antes de su distribución. (pág. 28)
 
 ## Tipos y características
 
-Trampilla deflectora situada entre el evaporador y el radiador de calefacción. Su accionamiento se realiza mediante:
-- Cable bowden (mando manual).
-- Motor eléctrico de excitación o motor paso a paso (mando electrónico). (págs. 15)
+Trampilla basculante ubicada entre la salida del evaporador y la entrada del radiador de calefacción. Según el sistema de mando, puede ser activada por:
+- Cable mecánico.
+- Motor eléctrico paso a paso o de excitación.
+
+
+
+(pág. 30)
 
 ## Principio de funcionamiento
 
-Modifica gradualmente su ángulo de apertura para desviar una parte del aire frío (procedente del evaporador) a través del radiador de calefacción y dejar pasar directamente la otra parte, mezclándose ambas corrientes antes de salir al habitáculo. (pág. 15)
+La trampilla regula la proporción de caudal de aire que atraviesa el radiador de calefacción frente a la que lo esquiva por el canal secundario. Al modificar su ángulo, permite obtener de forma continua cualquier grado de temperatura intermedia entre el frío máximo (paso al radiador cerrado) y el calor máximo (todo el aire pasa por el radiador). (pág. 29)
 
 ## Imágenes requeridas
 
-- Esquema de derivación de aire por la trampilla de mezcla hacia el aerotermo o en baipás directo — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 15
+- Posicionamiento de la trampilla de mezcla dividiendo el flujo de aire entre el canal directo y el radiador de calefacción — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 29

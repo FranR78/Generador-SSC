@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">734 notas · 25/09/2026</p>
+  <p class="sidebar-meta">738 notas · 25/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -347,8 +347,8 @@
     <li><a href="#grp-sensor-temperatura-ntc-interior">Termosensor del tablero de instrumentos con turbina de aire <span class="menu-cuenta">22 fuentes</span></a></li>
     <li><a href="#grp-fotosensor-solar">Fotosensor de radiación solar <span class="menu-cuenta">6 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Distribución de aire</span></li>
-    <li><a href="#grp-servomotor-trampilla">Servomotores de las chapaletas de aire <span class="menu-cuenta">24 fuentes</span></a></li>
-    <li><a href="#grp-distribucion-aire">Conducción del aire en el calefactor/climatizador <span class="menu-cuenta">7 fuentes</span></a></li>
+    <li><a href="#grp-servomotor-trampilla">Servomotores de las chapaletas de aire <span class="menu-cuenta">26 fuentes</span></a></li>
+    <li><a href="#grp-distribucion-aire">Conducción del aire en el calefactor/climatizador <span class="menu-cuenta">8 fuentes</span></a></li>
     <li><a href="#grp-recirculacion">Función de recirculación de aire <span class="menu-cuenta">5 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
     <li><a href="#grp-sensor-calidad-aire">Sensor de la calidad del aire <span class="menu-cuenta">9 fuentes</span></a></li>
@@ -451,9 +451,9 @@
     <li><a href="#nt381">NT381 · Gancho de remolque escamoteable eléctr</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Calefacción</span></li>
     <li><a href="#nt384">NT384 · Radiador de calefacción</a></li>
-    <li><a href="#nt388">NT388 · Calentamiento del aire</a></li>
+    <li><a href="#nt388">NT388 · Calentamiento del aire en el circuito</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
-    <li><a href="#nt389">NT389 · Refrigeración del aire</a></li>
+    <li><a href="#nt389">NT389 · Refrigeración del aire en el circuito</a></li>
     <li><a href="#nt390">NT390 · Refrigeración máxima del aire</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Distribución de aire</span></li>
     <li><a href="#nt391">NT391 · Desecación del aire y desempañado</a></li>
@@ -603,6 +603,8 @@
     <li><a href="#grp-polea-compresor">Polea de accionamiento con protección de sobrecarga <span class="menu-cuenta">2 fuentes</span></a></li>
     <li><a href="#nt720">NT720 · Climatización por bomba de calor con C</a></li>
     <li><a href="#nt740">NT740 · Lubricación del compresor</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Distribución de aire</span></li>
+    <li><a href="#nt746">NT746 · Desecación del aire y desempañado de c</a></li>
   </ul>
 </nav>
 
@@ -8231,30 +8233,34 @@ Tipos:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 8 de 14 · NT383 · 5. EL CIRCUITO DE AIRE.pptx, págs. 11</summary>
+      <summary>Variante 8 de 14 · NT383 · 5. EL CIRCUITO DE AIRE.pptx, págs. 14-16</summary>
   <section id="nt383" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 383 </div>
     <div class="nota-body">
       <h1>Evaporador</h1>
       <div class="apartado">
         <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Enfriar y deshumificar el aire que lo atraviesa antes de enviarlo al habitáculo. (pág. 11)</p>
+        <p>Enfriar y deshumificar el aire impulsado hacia el habitáculo ("bolsa de hielo" del sistema). (pág. 14)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>El refrigerante que se evapora en su interior absorbe el calor del aire impulsado por el ventilador. La humedad presente en el aire se condensa sobre sus aletas frías, canalizándose y expulsándose al exterior del vehículo. (pág. 11)</p>
+        <p>Al pasar el aire a través de los paneles del evaporador estando la instalación frigorífica en marcha, cede calor al líquido refrigerante en ebullición. La humedad contenida en el aire se condensa sobre las aletas frías del evaporador, y el agua condensada resultante es canalizada y expulsada al exterior del vehículo. (pág. 15)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Tipos y características</div>
-        <p>Intercambiador de calor de tubos y aletas integrado en la caja climatizadora. Denominado internamente como la «bolsa de hielo» del sistema. (pág. 11)</p>
+        <p>Intercambiador de calor aire-refrigerante ubicado en la caja de distribución de aire, aguas arriba del radiador de calefacción y de la trampilla de mezcla. (pág. 16)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <p>Canalización y expulsión continua del agua condensada hacia el exterior del vehículo. (pág. 15)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT383_01</code> Evaporador de climatización junto a la caja de distribución de aire — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 11</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT383_01</code> Vista del evaporador de climatización junto a la caja de aireación — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 16</span></div>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">5. EL CIRCUITO DE AIRE.pptx, págs. 11</p>
+        <p class="fuentes">5. EL CIRCUITO DE AIRE.pptx, págs. 14-16</p>
       </div>
     </div>
   </section>
@@ -23496,10 +23502,10 @@ El elemento óptico redirige un alto porcentaje de rayos cuando inciden de forma
   </div>
 
   <div class="grupo-componente" id="grp-servomotor-trampilla">
-    <div class="grupo-cab"><span class="grupo-nombre">Servomotores de las chapaletas de aire</span><span class="grupo-cuenta">24 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Servomotores de las chapaletas de aire</span><span class="grupo-cuenta">26 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 24 · NT104 · 208. Regulación de la temperatura.pdf, págs. 54-55</summary>
+      <summary>Variante 1 de 26 · NT104 · 208. Regulación de la temperatura.pdf, págs. 54-55</summary>
   <section id="nt104" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 104 </div>
     <div class="nota-body">
@@ -23557,7 +23563,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 24 · NT199 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 22</summary>
+      <summary>Variante 2 de 26 · NT199 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 22</summary>
   <section id="nt199" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 199 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -23602,7 +23608,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 24 · NT201 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 23</summary>
+      <summary>Variante 3 de 26 · NT201 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 23</summary>
   <section id="nt201" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 201 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -23643,7 +23649,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 24 · NT296 · LA CLIMATIZACIÓN.pdf, págs. 118-119</summary>
+      <summary>Variante 4 de 26 · NT296 · LA CLIMATIZACIÓN.pdf, págs. 118-119</summary>
   <section id="nt296" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 296 </div>
     <div class="nota-body">
@@ -23698,7 +23704,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 24 · NT297 · LA CLIMATIZACIÓN.pdf, págs. 120-122</summary>
+      <summary>Variante 5 de 26 · NT297 · LA CLIMATIZACIÓN.pdf, págs. 120-122</summary>
   <section id="nt297" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 297 </div>
     <div class="nota-body">
@@ -23750,7 +23756,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 24 · NT328 · SSP 484 A7 Info y Clima (arrastrado) 2 copia.pdf, págs. 52-53</summary>
+      <summary>Variante 6 de 26 · NT328 · SSP 484 A7 Info y Clima (arrastrado) 2 copia.pdf, págs. 52-53</summary>
   <section id="nt328" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 328 <span class="fusionado">Audi</span></div>
     <div class="nota-body">
@@ -23810,7 +23816,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 24 · NT347 · Toledo 99 CLIMA.pdf, págs. 50</summary>
+      <summary>Variante 7 de 26 · NT347 · Toledo 99 CLIMA.pdf, págs. 50</summary>
   <section id="nt347" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 347 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -23853,7 +23859,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 8 de 24 · NT385 · 5. EL CIRCUITO DE AIRE.pptx, págs. 13-14</summary>
+      <summary>Variante 8 de 26 · NT385 · 5. EL CIRCUITO DE AIRE.pptx, págs. 13-14</summary>
   <section id="nt385" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 385 </div>
     <div class="nota-body">
@@ -23890,40 +23896,41 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 9 de 24 · NT386 · 5. EL CIRCUITO DE AIRE.pptx, págs. 15</summary>
+      <summary>Variante 9 de 26 · NT386 · 5. EL CIRCUITO DE AIRE.pptx, págs. 28-30</summary>
   <section id="nt386" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 386 </div>
     <div class="nota-body">
       <h1>Trampilla de mezcla</h1>
       <div class="apartado">
         <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Regular la proporción de aire frío y caliente canalizado hacia el habitáculo, sustituyendo el uso de grifos de calefacción. (pág. 15)</p>
+        <p>Sustituir al antiguo grifo de calefacción y asegurar la mezcla proporcionada de aire caliente y frío antes de su distribución. (pág. 28)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>Modifica gradualmente su ángulo de apertura para desviar una parte del aire frío (procedente del evaporador) a través del radiador de calefacción y dejar pasar directamente la otra parte, mezclándose ambas corrientes antes de salir al habitáculo. (pág. 15)</p>
+        <p>La trampilla regula la proporción de caudal de aire que atraviesa el radiador de calefacción frente a la que lo esquiva por el canal secundario. Al modificar su ángulo, permite obtener de forma continua cualquier grado de temperatura intermedia entre el frío máximo (paso al radiador cerrado) y el calor máximo (todo el aire pasa por el radiador). (pág. 29)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Tipos y características</div>
-        <p>Trampilla deflectora situada entre el evaporador y el radiador de calefacción. Su accionamiento se realiza mediante:</p>
+        <p>Trampilla basculante ubicada entre la salida del evaporador y la entrada del radiador de calefacción. Según el sistema de mando, puede ser activada por:</p>
 <ul>
-<li>Cable bowden (mando manual).</li>
-<li>Motor eléctrico de excitación o motor paso a paso (mando electrónico). (págs. 15)</li>
+<li>Cable mecánico.</li>
+<li>Motor eléctrico paso a paso o de excitación.</li>
 </ul>
+<p>(pág. 30)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT386_01</code> Esquema de derivación de aire por la trampilla de mezcla hacia el aerotermo o en baipás directo — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 15</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT386_01</code> Posicionamiento de la trampilla de mezcla dividiendo el flujo de aire entre el canal directo y el radiador de calefacción — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 29</span></div>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">5. EL CIRCUITO DE AIRE.pptx, págs. 15</p>
+        <p class="fuentes">5. EL CIRCUITO DE AIRE.pptx, págs. 28-30</p>
       </div>
     </div>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 10 de 24 · NT387 · 5. EL CIRCUITO DE AIRE.pptx, págs. 16</summary>
+      <summary>Variante 10 de 26 · NT387 · 5. EL CIRCUITO DE AIRE.pptx, págs. 16</summary>
   <section id="nt387" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 387 </div>
     <div class="nota-body">
@@ -23957,7 +23964,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 11 de 24 · NT398 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 46, 61-62</summary>
+      <summary>Variante 11 de 26 · NT398 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 46, 61-62</summary>
   <section id="nt398" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 398 </div>
     <div class="nota-body">
@@ -24004,7 +24011,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 12 de 24 · NT399 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 47-51, 63-75</summary>
+      <summary>Variante 12 de 26 · NT399 · 6. EL CIRCUITO ELÉCTRICO.pptx, págs. 47-51, 63-75</summary>
   <section id="nt399" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 399 </div>
     <div class="nota-body">
@@ -24053,7 +24060,7 @@ El servomotor V71 acciona conjuntamente la chapaleta de velocidad y la de recirc
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 13 de 24 · NT499 · AA AUTOMOCION MD FR.pdf, págs. 145-146</summary>
+      <summary>Variante 13 de 26 · NT499 · AA AUTOMOCION MD FR.pdf, págs. 145-146</summary>
   <section id="nt499" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 499 </div>
     <div class="nota-body">
@@ -24103,7 +24110,7 @@ En la velocidad máxima (H), el conmutador alimenta directamente el motor sin pa
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 14 de 24 · NT506 · Regulación del Sistema.pdf, págs. 47, 52</summary>
+      <summary>Variante 14 de 26 · NT506 · Regulación del Sistema.pdf, págs. 47, 52</summary>
   <section id="nt506" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 506 </div>
     <div class="nota-body">
@@ -24136,7 +24143,7 @@ En la velocidad máxima (H), el conmutador alimenta directamente el motor sin pa
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 15 de 24 · NT521 · SSP172 TARRACO (arrastrado).pdf, págs. 60, 62-64</summary>
+      <summary>Variante 15 de 26 · NT521 · SSP172 TARRACO (arrastrado).pdf, págs. 60, 62-64</summary>
   <section id="nt521" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 521 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -24186,7 +24193,7 @@ Cuando se selecciona salida por el tablero, abre difusores del tablero y consola
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 16 de 24 · NT522 · SSP172 TARRACO (arrastrado).pdf, págs. 60, 62-65</summary>
+      <summary>Variante 16 de 26 · NT522 · SSP172 TARRACO (arrastrado).pdf, págs. 60, 62-65</summary>
   <section id="nt522" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 522 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -24236,7 +24243,7 @@ Variando la apertura proporcional de ambas trampillas se logra la mezcla térmic
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 17 de 24 · NT530 · Ibiza99 - Actuadores.pdf, págs. 21-22</summary>
+      <summary>Variante 17 de 26 · NT530 · Ibiza99 - Actuadores.pdf, págs. 21-22</summary>
   <section id="nt530" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 530 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -24269,7 +24276,7 @@ Variando la apertura proporcional de ambas trampillas se logra la mezcla térmic
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 18 de 24 · NT532 · Ibiza99 - Actuadores.pdf, págs. 22-23</summary>
+      <summary>Variante 18 de 26 · NT532 · Ibiza99 - Actuadores.pdf, págs. 22-23</summary>
   <section id="nt532" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 532 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -24306,7 +24313,7 @@ Variando la apertura proporcional de ambas trampillas se logra la mezcla térmic
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 19 de 24 · NT544 · Motor tramapilla temperatura y turbina de aire.pdf, págs. 22</summary>
+      <summary>Variante 19 de 26 · NT544 · Motor tramapilla temperatura y turbina de aire.pdf, págs. 22</summary>
   <section id="nt544" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 544 </div>
     <div class="nota-body">
@@ -24339,7 +24346,7 @@ Variando la apertura proporcional de ambas trampillas se logra la mezcla térmic
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 20 de 24 · NT554 · Motor trampilla recirculación.pdf, págs. 22-23</summary>
+      <summary>Variante 20 de 26 · NT554 · Motor trampilla recirculación.pdf, págs. 22-23</summary>
   <section id="nt554" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 554 </div>
     <div class="nota-body">
@@ -24376,7 +24383,7 @@ Variando la apertura proporcional de ambas trampillas se logra la mezcla térmic
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 21 de 24 · NT555 · SERVOMOTORES SIN POTENCIOMETROS.pdf, págs. 81</summary>
+      <summary>Variante 21 de 26 · NT555 · SERVOMOTORES SIN POTENCIOMETROS.pdf, págs. 81</summary>
   <section id="nt555" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 555 </div>
     <div class="nota-body">
@@ -24425,7 +24432,7 @@ Asignación de bornes en el conector:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 22 de 24 · NT557 · SERVOMOTORES.pdf, págs. 52</summary>
+      <summary>Variante 22 de 26 · NT557 · SERVOMOTORES.pdf, págs. 52</summary>
   <section id="nt557" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 557 </div>
     <div class="nota-body">
@@ -24458,7 +24465,7 @@ Asignación de bornes en el conector:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 23 de 24 · NT583 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 22</summary>
+      <summary>Variante 23 de 26 · NT583 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 22</summary>
   <section id="nt583" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 583 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -24508,7 +24515,7 @@ Asignación de bornes en el conector:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 24 de 24 · NT584 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 23</summary>
+      <summary>Variante 24 de 26 · NT584 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 23</summary>
   <section id="nt584" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 584 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -24553,13 +24560,92 @@ Asignación de bornes en el conector:</p>
     </div>
   </section>
     </details>
+    <details class="variante">
+      <summary>Variante 25 de 26 · NT744 · 5. EL CIRCUITO DE AIRE.pptx, págs. 19-28</summary>
+  <section id="nt744" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 744 </div>
+    <div class="nota-body">
+      <h1>Trampilla de reciclaje</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Seleccionar la procedencia del flujo de aire captado por el sistema, alternando entre la entrada de aire del exterior o la reaspiración (reciclaje) del aire del propio habitáculo. (pág. 19)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <ul>
+<li>Montaje con relé de doble paleta: el motor eléctrico de reciclaje se desplaza únicamente entre sus posiciones extremas (abierto/cerrado), sin admitir posiciones intermedias. Únicamente la posición de aire acondicionado "MAX" conecta a masa el relé de doble paleta, excitando su bobina y conmutando las paletas para alimentar el motor e impulsar el cierre de la trampilla exterior.</li>
+<li>Montaje con módulo electrónico: el módulo recibe la señal de mando (conexión a masa o ausencia de ella según la posición 0 de la palanca de ventilación o la posición MAX del A/A). Al detectar esta señal, el módulo pilota el motor de reciclaje invirtiendo la polaridad de alimentación de sus bornes para conmutar la posición.</li>
+</ul>
+<p>(pág. 28)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Su accionamiento puede ser de dos tipos:</p>
+<ul>
+<li>Manual.</li>
+<li>Eléctrico: mediante motor de accionamiento. En los sistemas eléctricos existen dos variantes de gobierno:<ol>
+<li>Con relé de doble paleta.</li>
+<li>Con módulo electrónico.</li>
+</ol>
+</li>
+</ul>
+<p>(pág. 21)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT744_01</code> Esquema del circuito de aire en posición de reciclaje activado (entrada exterior bloqueada) — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 20</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT744_02</code> Esquema eléctrico de mando de reciclaje con relé de doble paleta — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 23</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT744_03</code> Esquema eléctrico de mando de reciclaje con módulo electrónico transistorizado — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 22</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">5. EL CIRCUITO DE AIRE.pptx, págs. 19-28</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 26 de 26 · NT745 · 5. EL CIRCUITO DE AIRE.pptx, págs. 30-31</summary>
+  <section id="nt745" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 745 </div>
+    <div class="nota-body">
+      <h1>Trampilla de repartición de aire</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>Dirigir el caudal de aire tratado hacia las distintas salidas y difusores del habitáculo (parabrisas, aireadores frontales y zona de pies). (pág. 30)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>Mediante la apertura y cierre selectivo de cada una de las paletas de repartición, se fracciona o deriva la totalidad del aire hacia las bocas de salida seleccionadas por los ocupantes o por la unidad de control. (pág. 31)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Conjunto de trampillas obturadoras dispuestas en las embocaduras de salida del módulo de distribución. Pueden ser activadas mediante:</p>
+<ul>
+<li>Accionamiento manual.</li>
+<li>Accionamiento neumático.</li>
+<li>Accionamiento eléctrico.</li>
+</ul>
+<p>(pág. 31)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT745_01</code> Disposición de las trampillas de repartición dirigiendo el caudal hacia los canales de desempañado, torso y pies — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 31</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">5. EL CIRCUITO DE AIRE.pptx, págs. 30-31</p>
+      </div>
+    </div>
+  </section>
+    </details>
   </div>
 
   <div class="grupo-componente" id="grp-distribucion-aire">
-    <div class="grupo-cab"><span class="grupo-nombre">Conducción del aire en el calefactor/climatizador</span><span class="grupo-cuenta">7 fuentes sin fusionar</span></div>
+    <div class="grupo-cab"><span class="grupo-nombre">Conducción del aire en el calefactor/climatizador</span><span class="grupo-cuenta">8 fuentes sin fusionar</span></div>
     <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
     <details class="variante" open>
-      <summary>Variante 1 de 7 · NT105 · 208. Regulación de la temperatura.pdf, págs. 55-57</summary>
+      <summary>Variante 1 de 8 · NT105 · 208. Regulación de la temperatura.pdf, págs. 55-57</summary>
   <section id="nt105" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 105 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -24599,7 +24685,7 @@ Asignación de bornes en el conector:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 2 de 7 · NT186 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 6</summary>
+      <summary>Variante 2 de 8 · NT186 · CD 072 Climatizacion en el Ibiza-Cordoba 99.pdf, págs. 6</summary>
   <section id="nt186" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 186 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -24638,7 +24724,7 @@ Asignación de bornes en el conector:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 3 de 7 · NT339 · SSP 484 A7 Info y Clima (arrastrado) 6.pdf, págs. 49</summary>
+      <summary>Variante 3 de 8 · NT339 · SSP 484 A7 Info y Clima (arrastrado) 6.pdf, págs. 49</summary>
   <section id="nt339" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 339 <span class="subtipo">Fundamento</span><span class="fusionado">Audi</span></div>
     <div class="nota-body proceso">
@@ -24681,7 +24767,7 @@ Asignación de bornes en el conector:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 4 de 7 · NT342 · Toledo 99 CLIMA.pdf, págs. 44-45</summary>
+      <summary>Variante 4 de 8 · NT342 · Toledo 99 CLIMA.pdf, págs. 44-45</summary>
   <section id="nt342" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 342 <span class="fusionado">SEAT</span></div>
     <div class="nota-body">
@@ -24706,7 +24792,7 @@ Asignación de bornes en el conector:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 5 de 7 · NT434 · CAJA CLIMATICA.pdf, págs. 53-55</summary>
+      <summary>Variante 5 de 8 · NT434 · CAJA CLIMATICA.pdf, págs. 53-55</summary>
   <section id="nt434" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 434 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -24745,7 +24831,7 @@ Asignación de bornes en el conector:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 6 de 7 · NT435 · CAJA CLIMATICA.pdf, págs. 55-57</summary>
+      <summary>Variante 6 de 8 · NT435 · CAJA CLIMATICA.pdf, págs. 55-57</summary>
   <section id="nt435" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 435 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
@@ -24785,7 +24871,7 @@ Asignación de bornes en el conector:</p>
   </section>
     </details>
     <details class="variante">
-      <summary>Variante 7 de 7 · NT523 · SSP172 TARRACO (arrastrado).pdf, págs. 63-64</summary>
+      <summary>Variante 7 de 8 · NT523 · SSP172 TARRACO (arrastrado).pdf, págs. 63-64</summary>
   <section id="nt523" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 523 <span class="subtipo">Fundamento</span><span class="fusionado">SEAT</span></div>
     <div class="nota-body proceso">
@@ -24813,6 +24899,45 @@ Asignación de bornes en el conector:</p>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">SSP172 TARRACO (arrastrado).pdf, págs. 63-64</p>
+      </div>
+    </div>
+  </section>
+    </details>
+    <details class="variante">
+      <summary>Variante 8 de 8 · NT743 · 5. EL CIRCUITO DE AIRE.pptx, págs. 1-5</summary>
+  <section id="nt743" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 743 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Dispositivos de soplado y canalización de aire</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>El circuito de aire constituye la estructura física y aerodinámica que conduce el caudal de aire impulsado a través de los diferentes intercambiadores térmicos (evaporador y radiador de calefacción) y elementos de regulación (trampillas) antes de ser vertido al habitáculo. (pág. 3)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>El conjunto del circuito se compone de cinco funciones operativas principales:</p>
+<ol>
+<li>Canalización del aire exterior hacia la entrada del sistema.</li>
+<li>Aislamiento del habitáculo con respecto al exterior a través de la trampilla de reciclaje.</li>
+<li>Producción de la mezcla térmica de aire mediante la posición de la trampilla de mezcla entre la vía directa del evaporador y la vía del radiador de calefacción.</li>
+<li>Impulsión del aire tratado mediante el ventilador o grupo motoventilador (GMV).</li>
+<li>Distribución direccional del caudal hacia los difusores superiores (desempañado), frontales y de pies a través de las trampillas de repartición.</li>
+</ol>
+<p>(pág. 5)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Canalizar el aire procedente del exterior para su posterior tratamiento térmico, aislar el habitáculo del exterior mediante la función de reciclado, realizar la mezcla de aire caliente y frío, impulsar el aire canalizado y distribuirlo hacia las diferentes salidas del habitáculo. (pág. 3)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT743_01</code> Esquema general del circuito de aire con ventilador, evaporador, radiador de calefacción y trampillas de reciclaje, mezcla y distribución — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 3</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT743_02</code> Conjunto completo de la caja de climatización con mandos y canalizaciones — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 5</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT743_03</code> Distribución del flujo de aire en un conjunto multizona — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 6</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">5. EL CIRCUITO DE AIRE.pptx, págs. 1-5</p>
       </div>
     </div>
   </section>
@@ -28424,36 +28549,38 @@ Bus de conexión Radiocasete - UCE J255: 1 cable. (pág. 20).</p>
   <section id="nt382" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 382 </div>
     <div class="nota-body">
-      <h1>Ventilador del habitáculo</h1>
+      <h1>Ventilador de habitáculo</h1>
       <div class="apartado">
         <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Impulsar el aire exterior o reciclado a través del grupo climatizador hacia el habitáculo. (pág. 6)</p>
+        <p>Impulsar el caudal de aire canalizado hacia el interior del habitáculo a través del circuito de climatización. (pág. 6)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
         <ul>
-<li>Montaje con resistencias en serie: varía la tensión de alimentación aplicada al motor haciéndola pasar por diferentes resistencias fijas. En la posición de máxima velocidad, un relé alimenta directamente el motor a 12 V sin pasar por la red de resistencias.</li>
-<li>Montaje con módulo electrónico: el mando selector dispone de resistencias para que el módulo identifique la posición midiendo la diferencia de tensión entre las vías A y B. El motor trabaja por diferencia de potencial entre bornes: alimentado con 12 V fijos en un borne, el módulo ajusta la tensión aplicada en el otro borne (por ejemplo, 12 V en un borne y 3 V en el otro generan una tensión de trabajo de 9 V). (págs. 7, 10)</li>
+<li>En el montaje con resistencias en serie, la corriente atraviesa una combinación de resistencias (R1, R2, R3) para reducir la tensión aplicada al motor en las velocidades intermedias. En la velocidad máxima, un relé específico alimenta el motor de ventilación de forma directa desde la línea de alimentación, sin pasar por ninguna resistencia.</li>
+<li>En el montaje con módulo electrónico, el mando selector dispone de un divisor de tensión compuesto por varias resistencias (R1 a R7). El módulo electrónico detecta la diferencia de tensión entre las vías de entrada A y B para identificar la posición del mando giratorio. El motor funciona bajo diferencia de potencial modulada: el módulo mantiene una tensión fija (ejemplo: 12 V) en uno de los bornes del motor y hace variar la tensión en el otro borne.</li>
 </ul>
+<p>(pág. 10)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
         <ul>
-<li>Tensión nominal de alimentación fija: 12 V. (pág. 10)</li>
+<li>Alimentación del motor en montaje con módulo electrónico: 12 V fija en un borne y tensión variable (ejemplo: 3 V) en el otro borne, proporcionando una diferencia de potencial aplicada al motor de 9 V a la velocidad correspondiente. (pág. 10)</li>
 </ul>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Tipos y características</div>
-        <p>Existen dos tipos de montajes para la regulación de velocidad del motor eléctrico del ventilador:</p>
+        <p>Se emplean dos tipos principales de montaje eléctrico para el control de velocidad:</p>
 <ul>
-<li>Montaje con resistencias en serie.</li>
-<li>Montaje con módulo electrónico. (pág. 6)</li>
+<li>Montaje con resistencias en serie: regula la velocidad modificando la tensión de alimentación del motor mediante la inserción de resistencias en serie.</li>
+<li>Montaje con módulo electrónico: regula la velocidad de forma continua o escalonada mediante modulación por potenciómetro y transistor de potencia.</li>
 </ul>
+<p>(pág. 6)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT382_01</code> Esquema eléctrico de control de ventilador con resistencias en serie y relé de velocidad máxima — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 8</span></div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT382_02</code> Esquema eléctrico de control de ventilador mediante módulo electrónico de transistores — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 9</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT382_01</code> Esquema eléctrico del montaje de ventilador con grupo de resistencias en serie y relé de máxima velocidad — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 8</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT382_02</code> Esquema eléctrico del montaje con potenciómetro giratorio R1-R7 y módulo electrónico transistorizado — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 9</span></div>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
@@ -31083,23 +31210,23 @@ Al recibir señal de la unidad de control del airbag J234 ante un impacto leve q
       <h1>Radiador de calefacción</h1>
       <div class="apartado">
         <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Transferir el calor del líquido refrigerante del motor al flujo de aire que entra al habitáculo. (pág. 12)</p>
+        <p>Permitir el calentamiento del aire que se dirige al habitáculo mediante la transferencia de calor desde el líquido refrigerante del motor (aerotermo). (pág. 17)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>El líquido refrigerante del motor circula de forma continua por su interior. El aire que lo atraviesa absorbe energía térmica. Según esté activado o no el compresor del aire acondicionado, el aire calentado resultará seco o húmedo. (pág. 12)</p>
+        <p>El líquido refrigerante caliente procedente del circuito de refrigeración del motor circula por el interior del radiador. Cuando la trampilla de mezcla permite el paso total o parcial del flujo de aire impulsado a través de sus aletas, el aire absorbe calor antes de ser distribuido al habitáculo. (pág. 17)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Tipos y características</div>
-        <p>Intercambiador térmico (aerotermo) montado en el cuerpo de la caja climatizadora a continuación del evaporador. (pág. 12)</p>
+        <p>Intercambiador térmico agua-aire integrado en el bloque de distribución del climatizador. El aire calentado a su través puede ser seco o húmedo, según se encuentre o no en funcionamiento el compresor del circuito frigorífico. (pág. 17)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT384_01</code> Radiador de calefacción o aerotermo extraído de la caja de aire — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 12</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT384_01</code> Radiador de calefacción y su ubicación en la caja del circuito de aire — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 18</span></div>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">5. EL CIRCUITO DE AIRE.pptx, págs. 12</p>
+        <p class="fuentes">5. EL CIRCUITO DE AIRE.pptx, págs. 17-18</p>
       </div>
     </div>
   </section>
@@ -31107,37 +31234,40 @@ Al recibir señal de la unidad de control del airbag J234 ante un impacto leve q
   <section id="nt388" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 388 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
-      <h1>Calentamiento del aire</h1>
+      <h1>Calentamiento del aire en el circuito</h1>
       <div class="apartado">
         <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
-        <p>El aire frío exterior es impulsado a través del evaporador (con el compresor desactivado) y canalizado obligatoriamente por la trampilla de mezcla hacia el radiador de calefacción antes de su distribución. (pág. 17)</p>
+        <p>Proceso térmico en el cual se aprovecha el calor disipado por el líquido refrigerante del motor a través del radiador de calefacción, manteniendo desactivada la instalación frigorífica. (pág. 34)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
-        <ol>
-<li>El compresor permanece desconectado (Compresor Off).</li>
-<li>El aire procedente del exterior atraviesa el evaporador sin sufrir variación de temperatura.</li>
-<li>La trampilla de mezcla se posiciona cerrando el paso directo y desviando la totalidad del caudal de aire hacia el radiador de calefacción.</li>
-<li>Al atravesar el radiador de calefacción, el aire incrementa su temperatura y es derivado a los difusores seleccionados. (pág. 17)</li>
+        <p>En el modo de calentamiento básico del aire:</p>
+<ol>
+<li>El compresor se encuentra desacoplado (condición: Sin ºC = Compresor OFF).</li>
+<li>Se aspira aire procedente del exterior.</li>
+<li>El aire atraviesa el evaporador inactivo sin experimentar enfriamiento ni condensación.</li>
+<li>La trampilla de mezcla se posiciona de modo que obliga a pasar la totalidad o parte del caudal a través del radiador de calefacción, donde se calienta.</li>
+<li>Las trampillas de repartición dirigen el aire caliente hacia las zonas seleccionadas.</li>
 </ol>
+<p>(pág. 34)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
         <ul>
-<li>Estado del compresor: Compresor Off. (pág. 17)</li>
+<li>Estado del compresor: Compresor OFF (Sin ºC). (pág. 34)</li>
 </ul>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Objeto</div>
-        <p>Aumentar la temperatura del aire destinado al habitáculo mediante la energía térmica del sistema de refrigeración del motor. (pág. 17)</p>
+        <p>Elevar la temperatura del aire captado del exterior antes de ser introducido en el habitáculo para el confort térmico en ambientes fríos. (pág. 32)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT388_01</code> Recorrido del aire durante el modo de calentamiento con compresor desconectado — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 17</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT388_01</code> Flujo de aire en modo calentamiento (compresor OFF, aire atravesando el radiador de calefacción) — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 33</span></div>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">5. EL CIRCUITO DE AIRE.pptx, págs. 17</p>
+        <p class="fuentes">5. EL CIRCUITO DE AIRE.pptx, págs. 32-34</p>
       </div>
     </div>
   </section>
@@ -31145,38 +31275,40 @@ Al recibir señal de la unidad de control del airbag J234 ante un impacto leve q
   <section id="nt389" data-tipo="proceso">
     <div class="nota-header proceso">Nota de Proceso Nº 389 <span class="subtipo">Fundamento</span></div>
     <div class="nota-body proceso">
-      <h1>Refrigeración del aire</h1>
+      <h1>Refrigeración del aire en el circuito</h1>
       <div class="apartado">
         <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
-        <p>El aire exterior atraviesa el evaporador mientras el circuito frigorífico está en marcha, enfriándose y cediendo su humedad por condensación antes de ser distribuido. (pág. 18)</p>
+        <p>Intercambio térmico producido al hacer pasar el aire aspirado a través del evaporador mientras el circuito frigorífico se encuentra activo. (pág. 36)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
-        <ol>
-<li>El compresor entra en funcionamiento (Compresor On).</li>
-<li>El aire exterior pasa por el evaporador, donde se enfría y deshumecta.</li>
-<li>La trampilla de mezcla cierra el paso hacia el radiador de calefacción para evitar recalentar el aire.</li>
-<li>El aire frío se canaliza directamente hacia las salidas del habitáculo.</li>
+        <p>Durante el funcionamiento en modo de refrigeración normal:</p>
+<ol>
+<li>El compresor permanece acoplado y funcionando (condición: Con ºC = Compresor ON).</li>
+<li>Se capta aire fresco del exterior.</li>
+<li>El aire atraviesa el evaporador, cediendo calor al refrigerante y perdiendo humedad por condensación en las aletas.</li>
+<li>La trampilla de mezcla cierra o limita el paso hacia el radiador de calefacción.</li>
+<li>El aire frío y deshumificado se distribuye al habitáculo.</li>
 </ol>
-<p>Debido a la baja humedad que se alcanza en el interior del habitáculo por el efecto deshumectador del evaporador, se recomienda que los ocupantes ingieran líquidos durante viajes largos. (pág. 18)</p>
+<p>Debido a la baja humedad relativa que se alcanza en el aire del habitáculo durante el funcionamiento continuado de la refrigeración, es aconsejable que los ocupantes beban líquidos en desplazamientos o trayectos largos. (pág. 36)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
         <ul>
-<li>Estado del compresor: Compresor On. (pág. 18)</li>
+<li>Estado del compresor: Compresor ON (Con ºC). (pág. 36)</li>
 </ul>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Objeto</div>
-        <p>Reducir la temperatura y el nivel de humedad del aire que se introduce en el habitáculo. (pág. 18)</p>
+        <p>Reducir la temperatura y el grado de humedad del aire introducido al habitáculo. (pág. 34)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT389_01</code> Esquema de flujo de refrigeración de aire con compresor conectado — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 18</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT389_01</code> Flujo de aire en modo refrigeración estándar (compresor ON, paso directo por evaporador) — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 35</span></div>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">5. EL CIRCUITO DE AIRE.pptx, págs. 18</p>
+        <p class="fuentes">5. EL CIRCUITO DE AIRE.pptx, págs. 34-36</p>
       </div>
     </div>
   </section>
@@ -31187,28 +31319,30 @@ Al recibir señal de la unidad de control del airbag J234 ante un impacto leve q
       <h1>Refrigeración máxima del aire</h1>
       <div class="apartado">
         <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
-        <p>Se aísla la entrada de aire exterior y se hace recircular de forma continua el aire que ya se encuentra en el habitáculo a través del evaporador activo. (pág. 19)</p>
+        <p>Recirculación cerrada del aire del propio habitáculo a través del evaporador activo, anulando la entrada de aire exterior relativamente caliente. (pág. 38)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
-        <ol>
-<li>La trampilla de recirculación se cierra completamente, bloqueando la entrada de aire exterior.</li>
-<li>El ventilador aspira el aire directamente del interior del habitáculo.</li>
-<li>El caudal pasa por el evaporador en funcionamiento (Compresor On) enfriándose de forma progresiva a una temperatura inferior a la del exterior.</li>
-<li>La trampilla de mezcla mantiene cerrado el paso al radiador de calefacción. (pág. 19)</li>
+        <p>Para obtener la máxima capacidad frigorífica:</p>
+<ol>
+<li>La trampilla de reciclaje se cierra totalmente a la entrada de aire exterior y abre el paso de reaspiración del habitáculo.</li>
+<li>El compresor funciona a pleno rendimiento (Compresor ON).</li>
+<li>El aire, que ya ha sido previamente enfriado dentro del habitáculo, vuelve a pasar por el evaporador, bajando aún más su temperatura de forma progresiva.</li>
+<li>La trampilla de mezcla bloquea por completo el paso de aire hacia el radiador de calefacción.</li>
 </ol>
+<p>(pág. 38)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Objeto</div>
-        <p>Conseguir el máximo rendimiento de enfriamiento en el habitáculo en el menor tiempo posible. (pág. 19)</p>
+        <p>Conseguir el enfriamiento más rápido y acusado del aire del habitáculo en un periodo de tiempo mínimo. (pág. 36)</p>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT390_01</code> Flujo de aire interno en modo de refrigeración máxima con recirculación cerrada — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 19</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT390_01</code> Flujo de aire en refrigeración máxima con reciclaje activo y paso continuo por evaporador — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 37</span></div>
       </div>
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">5. EL CIRCUITO DE AIRE.pptx, págs. 19</p>
+        <p class="fuentes">5. EL CIRCUITO DE AIRE.pptx, págs. 36-38</p>
       </div>
     </div>
   </section>
@@ -36027,8 +36161,43 @@ En la versión de nueva generación, ha sido revisada técnicamente y adaptada e
     </div>
   </section>
 
+  <section id="nt746" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 746 <span class="subtipo">Fundamento</span></div>
+    <div class="nota-body proceso">
+      <h1>Desecación del aire y desempañado de cristales</h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Fundamento<span class="criterio">RA1-CEb</span></div>
+        <p>Tratamiento termohigrométrico en dos etapas consecutivas: deshumectación por frío en el evaporador seguida de recalentamiento en el radiador de calefacción. (pág. 40)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Desarrollo<span class="criterio">RA3-CEh</span></div>
+        <p>El procedimiento físico de desecación y desempañado consta de los siguientes pasos:</p>
+<ol>
+<li>Se capta aire exterior con humedad ambiental.</li>
+<li>El aire pasa primeramente por el evaporador con la instalación frigorífica en marcha (compresor ON); la brusca bajada de temperatura provoca la condensación y extracción de la humedad contenida en el aire.</li>
+<li>El aire, ya seco pero frío, es conducido a continuación por la trampilla de mezcla hacia el radiador de calefacción.</li>
+<li>En el radiador de calefacción, el aire seco se recalienta, aumentando su capacidad para absorber humedad.</li>
+<li>Las trampillas de repartición orientan este flujo de aire seco y caliente directamente hacia el parabrisas y cristales laterales para disolver la condensación.</li>
+</ol>
+<p>Este uso periódico del circuito frigorífico repercute positivamente en la vida útil y mantenimiento de la propia instalación frigorífica. (pág. 40)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Objeto</div>
+        <p>Eliminar el empañamiento de las lunas y parabrisas mediante la aportación de un caudal de aire caliente y extremadamente seco. (pág. 38)</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT746_01</code> Recorrido del aire en función desempañado atravesando primero el evaporador para deshumificarse y después el radiador de calefacción — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 39</span></div>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">5. EL CIRCUITO DE AIRE.pptx, págs. 38-40</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    734 notas técnicas · generado el 25/09/2026.
+    738 notas técnicas · generado el 25/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 

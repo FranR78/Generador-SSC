@@ -12,26 +12,29 @@ grupo: "Circuito frigorífico"
 clave: refrigeracion-maxima
 area: climatizacion
 sistema: "circuito-frigorifico"
-fuentes: "5. EL CIRCUITO DE AIRE.pptx, págs. 19"
-relacionados: ["servomotor-trampilla", "evaporador"]
-palabras: ["refrigeracion maxima", "reciclaje", "aire acondicionado max", "enfriamiento rapido"]
+fuentes: "5. EL CIRCUITO DE AIRE.pptx, págs. 36-38"
+relacionados: ["recirculacion", "evaporador"]
+palabras: ["reciclaje activo", "reaspiración habitáculo", "enfriamiento rápido"]
 ---
 
 ## Objeto
 
-Conseguir el máximo rendimiento de enfriamiento en el habitáculo en el menor tiempo posible. (pág. 19)
+Conseguir el enfriamiento más rápido y acusado del aire del habitáculo en un periodo de tiempo mínimo. (pág. 36)
 
 ## Fundamento
 
-Se aísla la entrada de aire exterior y se hace recircular de forma continua el aire que ya se encuentra en el habitáculo a través del evaporador activo. (pág. 19)
+Recirculación cerrada del aire del propio habitáculo a través del evaporador activo, anulando la entrada de aire exterior relativamente caliente. (pág. 38)
 
 ## Desarrollo
 
-1. La trampilla de recirculación se cierra completamente, bloqueando la entrada de aire exterior.
-2. El ventilador aspira el aire directamente del interior del habitáculo.
-3. El caudal pasa por el evaporador en funcionamiento (Compresor On) enfriándose de forma progresiva a una temperatura inferior a la del exterior.
-4. La trampilla de mezcla mantiene cerrado el paso al radiador de calefacción. (pág. 19)
+Para obtener la máxima capacidad frigorífica:
+1. La trampilla de reciclaje se cierra totalmente a la entrada de aire exterior y abre el paso de reaspiración del habitáculo.
+2. El compresor funciona a pleno rendimiento (Compresor ON).
+3. El aire, que ya ha sido previamente enfriado dentro del habitáculo, vuelve a pasar por el evaporador, bajando aún más su temperatura de forma progresiva.
+4. La trampilla de mezcla bloquea por completo el paso de aire hacia el radiador de calefacción.
+
+(pág. 38)
 
 ## Imágenes requeridas
 
-- Flujo de aire interno en modo de refrigeración máxima con recirculación cerrada — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 19
+- Flujo de aire en refrigeración máxima con reciclaje activo y paso continuo por evaporador — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 37

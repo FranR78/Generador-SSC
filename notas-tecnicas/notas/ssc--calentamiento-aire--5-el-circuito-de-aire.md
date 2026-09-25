@@ -6,36 +6,40 @@ nt: 388
 tipo: proceso
 subtipo: fundamento
 clase: fundamento
-titulo: "Calentamiento del aire"
-menu: "Calentamiento del aire"
+titulo: "Calentamiento del aire en el circuito"
+menu: "Calentamiento del aire en el circuito"
 grupo: "Calefacción"
 clave: calentamiento-aire
 area: climatizacion
 sistema: "calefaccion"
-fuentes: "5. EL CIRCUITO DE AIRE.pptx, págs. 17"
-relacionados: ["radiador-calefaccion", "servomotor-trampilla", "evaporador"]
-palabras: ["calentamiento", "aire caliente", "compresor off", "caudal termico"]
+fuentes: "5. EL CIRCUITO DE AIRE.pptx, págs. 32-34"
+relacionados: ["radiador-calefaccion", "servomotor-trampilla"]
+palabras: ["compresor OFF", "radiador de calefacción", "aire exterior"]
 ---
 
 ## Objeto
 
-Aumentar la temperatura del aire destinado al habitáculo mediante la energía térmica del sistema de refrigeración del motor. (pág. 17)
+Elevar la temperatura del aire captado del exterior antes de ser introducido en el habitáculo para el confort térmico en ambientes fríos. (pág. 32)
 
 ## Fundamento
 
-El aire frío exterior es impulsado a través del evaporador (con el compresor desactivado) y canalizado obligatoriamente por la trampilla de mezcla hacia el radiador de calefacción antes de su distribución. (pág. 17)
+Proceso térmico en el cual se aprovecha el calor disipado por el líquido refrigerante del motor a través del radiador de calefacción, manteniendo desactivada la instalación frigorífica. (pág. 34)
 
 ## Desarrollo
 
-1. El compresor permanece desconectado (Compresor Off).
-2. El aire procedente del exterior atraviesa el evaporador sin sufrir variación de temperatura.
-3. La trampilla de mezcla se posiciona cerrando el paso directo y desviando la totalidad del caudal de aire hacia el radiador de calefacción.
-4. Al atravesar el radiador de calefacción, el aire incrementa su temperatura y es derivado a los difusores seleccionados. (pág. 17)
+En el modo de calentamiento básico del aire:
+1. El compresor se encuentra desacoplado (condición: Sin ºC = Compresor OFF).
+2. Se aspira aire procedente del exterior.
+3. El aire atraviesa el evaporador inactivo sin experimentar enfriamiento ni condensación.
+4. La trampilla de mezcla se posiciona de modo que obliga a pasar la totalidad o parte del caudal a través del radiador de calefacción, donde se calienta.
+5. Las trampillas de repartición dirigen el aire caliente hacia las zonas seleccionadas.
+
+(pág. 34)
 
 ## Valores de referencia
 
-- Estado del compresor: Compresor Off. (pág. 17)
+- Estado del compresor: Compresor OFF (Sin ºC). (pág. 34)
 
 ## Imágenes requeridas
 
-- Recorrido del aire durante el modo de calentamiento con compresor desconectado — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 17
+- Flujo de aire en modo calentamiento (compresor OFF, aire atravesando el radiador de calefacción) — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 33
