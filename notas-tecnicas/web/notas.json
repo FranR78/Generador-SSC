@@ -3786,6 +3786,38 @@
    "hecha": false
   },
   {
+   "nombre": "NT747_01",
+   "nt": 747,
+   "titulo": "Evaporador",
+   "seccion": "6. Expansión y lado de baja",
+   "descripcion": "Diagrama psicrométrico de condensación de agua en aletas para aire a 35 ºC y 40% HR saliendo a 10 ºC y 100% HR — Fuente: EL EVAPORADOR.PDF, pág. 2 (pág. 2).",
+   "hecha": false
+  },
+  {
+   "nombre": "NT747_02",
+   "nt": 747,
+   "titulo": "Evaporador",
+   "seccion": "6. Expansión y lado de baja",
+   "descripcion": "Evolución del ciclo en el Diagrama de Mollier al sustituir el evaporador por uno de menor eficacia con caída de BP a BP' — Fuente: EL EVAPORADOR.PDF, pág. 5 (pág. 5).",
+   "hecha": false
+  },
+  {
+   "nombre": "NT748_01",
+   "nt": 748,
+   "titulo": "Ciclo frigorífico y Diagrama de Mollier",
+   "seccion": "2. Fundamentos",
+   "descripcion": "Diagrama de Mollier con la curva de saturación Csat, regiones de estado y proceso de cambio de estado entre puntos A y B — Fuente: EL EVAPORADOR.PDF, pág. 10 (pág. 10).",
+   "hecha": false
+  },
+  {
+   "nombre": "NT749_01",
+   "nt": 749,
+   "titulo": "Filtro deshidratador",
+   "seccion": "5. Lado de alta",
+   "descripcion": "Esquema en sección del filtro deshidratante mostrando entrada, salida, visor, tubo capilar, filtros, desecante y orificio — Fuente: EL FILTRO DESHIDRATANTE.PDF, pág. 1 (pág. 1).",
+   "hecha": false
+  },
+  {
    "nombre": "NT22_01",
    "nt": 1001,
    "titulo": "Agente frigorífico R134a",
@@ -3810,7 +3842,7 @@
    "hecha": false
   }
  ],
- "total": 738,
+ "total": 741,
  "grupos": [
   "Acceso y arranque",
   "Alarma antirrobo",
@@ -7984,6 +8016,75 @@
      "titulo": "Imágenes requeridas",
      "texto": "Diagrama de Mollier con la curva de saturación Csat, regiones de líquido, líquido+vapor y gas, e isotermas T — Fuente: EL CONDENSADOR.PDF, pág. 9 (pág. 9).",
      "html": "<ul>\n<li>Diagrama de Mollier con la curva de saturación Csat, regiones de líquido, líquido+vapor y gas, e isotermas T — Fuente: EL CONDENSADOR.PDF, pág. 9 <span class=\"pag\">pág. 9</span>.</li>\n</ul>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.ciclo-frigorifico.el-evaporador",
+   "nt": 748,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "ciclo-frigorifico",
+   "seccion": "2. Fundamentos",
+   "subgrupo": "",
+   "titulo": "Ciclo frigorífico y Diagrama de Mollier",
+   "codigo": "",
+   "menu": "Ciclo frigorífico y Diagrama de Mollie",
+   "grupo": "Circuito frigorífico",
+   "tipo": "proceso",
+   "subtipo": "fundamento",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "EL EVAPORADOR.PDF, págs. 9-10",
+   "clase": "fundamento",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "",
+   "relacionados": [
+    "evaporador",
+    "condensador",
+    "compresor"
+   ],
+   "palabras": [
+    "diagrama de mollier",
+    "entalpia",
+    "curva de saturacion",
+    "calor latente",
+    "calor especifico"
+   ],
+   "apartados": [
+    {
+     "titulo": "Objeto",
+     "texto": "Definición de los requisitos térmicos del cambio de estado, el concepto de entalpía y la representación del estado del fluido frigorífico en el Diagrama de Mollier (pág. 9, 10).",
+     "html": "<p>Definición de los requisitos térmicos del cambio de estado, el concepto de entalpía y la representación del estado del fluido frigorífico en el Diagrama de Mollier <span class=\"pag\">pág. 9, 10</span>.</p>"
+    },
+    {
+     "titulo": "Fundamento",
+     "texto": "Para que el fluido ceda calor en el condensador y absorba calor en el evaporador, sus temperaturas de cambio de estado deben cumplir Tc > Tambiente y Tev < Tambiente (pág. 9).",
+     "html": "<p>Para que el fluido ceda calor en el condensador y absorba calor en el evaporador, sus temperaturas de cambio de estado deben cumplir Tc &gt; Tambiente y Tev &lt; Tambiente <span class=\"pag\">pág. 9</span>.</p>"
+    },
+    {
+     "titulo": "Desarrollo",
+     "texto": "Condiciones de temperatura : Para funcionamiento con aire exterior: Tc > Tambiente y Tev < Tambiente (pág. 9). La temperatura del aire exterior condiciona directamente Tc y Tev, fijando las presiones de alta y baja del circuito (pág. 9). Entalpía (J/kg) : representa la cantidad de energía por unidad de masa en forma de calor o presión. En transformaciones a presión constante (evaporación o condensación), el calor intercambiado equivale al producto de la masa por la variación de entalpía (pág. 9). Diagrama de Mollier : Curva de saturación (Csat) : curva en campana que delimita la zona líquida (izquierda), zona vapor (derecha) y zona difásica líquido+vapor (bajo la curva, marcada con líneas de % de título de vapor) (pág. 9, 10). Isotermas (T) : en la región difásica son horizontales, indicando que a presión constante la evaporación (puntos A -> B) y la condensación (puntos B -> A) transcurren a temperatura constante (pág. 10). Magnitudes caloríficas : Calor específico (Cp) : energía térmica necesaria para modificar la temperatura de un sistema sin cambio de fase (pág. 10). Calor latente de evaporación (L = hB - hA) : energía térmica necesaria para evaporar o condensar completamente una masa de fluido a presión constante (pág. 10).",
+     "html": "<ul>\n<li><strong>Condiciones de temperatura</strong>:<ul>\n<li>Para funcionamiento con aire exterior: Tc &gt; Tambiente y Tev &lt; Tambiente <span class=\"pag\">pág. 9</span>.</li>\n<li>La temperatura del aire exterior condiciona directamente Tc y Tev, fijando las presiones de alta y baja del circuito <span class=\"pag\">pág. 9</span>.</li>\n</ul>\n</li>\n<li><strong>Entalpía (J/kg)</strong>: representa la cantidad de energía por unidad de masa en forma de calor o presión. En transformaciones a presión constante (evaporación o condensación), el calor intercambiado equivale al producto de la masa por la variación de entalpía <span class=\"pag\">pág. 9</span>.</li>\n<li><strong>Diagrama de Mollier</strong>:<ul>\n<li><strong>Curva de saturación (Csat)</strong>: curva en campana que delimita la zona líquida (izquierda), zona vapor (derecha) y zona difásica líquido+vapor (bajo la curva, marcada con líneas de % de título de vapor) <span class=\"pag\">pág. 9, 10</span>.</li>\n<li><strong>Isotermas (T)</strong>: en la región difásica son horizontales, indicando que a presión constante la evaporación (puntos A -&gt; B) y la condensación (puntos B -&gt; A) transcurren a temperatura constante <span class=\"pag\">pág. 10</span>.</li>\n</ul>\n</li>\n<li><strong>Magnitudes caloríficas</strong>:<ul>\n<li><strong>Calor específico (Cp)</strong>: energía térmica necesaria para modificar la temperatura de un sistema sin cambio de fase <span class=\"pag\">pág. 10</span>.</li>\n<li><strong>Calor latente de evaporación (L = hB - hA)</strong>: energía térmica necesaria para evaporar o condensar completamente una masa de fluido a presión constante <span class=\"pag\">pág. 10</span>.</li>\n</ul>\n</li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de referencia",
+     "texto": "Requisito de temperatura en condensador: Tc > Tambiente (pág. 9). Requisito de temperatura en evaporador: Tev < Tambiente (pág. 9).",
+     "html": "<ul>\n<li>Requisito de temperatura en condensador: Tc &gt; Tambiente <span class=\"pag\">pág. 9</span>.</li>\n<li>Requisito de temperatura en evaporador: Tev &lt; Tambiente <span class=\"pag\">pág. 9</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Errores de concepto frecuentes",
+     "texto": "Intentar evaluar las prestaciones de un ciclo frigorífico considerando únicamente las temperaturas antes y después del evaporador, ignorando la humedad del aire aspirado (cuanto más húmedo esté el aire, mayor es la condensación sobre aletas y menor el enfriamiento sensible del aire) (pág. 3).",
+     "html": "<p>Intentar evaluar las prestaciones de un ciclo frigorífico considerando únicamente las temperaturas antes y después del evaporador, ignorando la humedad del aire aspirado (cuanto más húmedo esté el aire, mayor es la condensación sobre aletas y menor el enfriamiento sensible del aire) <span class=\"pag\">pág. 3</span>.</p>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Diagrama de Mollier con la curva de saturación Csat, regiones de estado y proceso de cambio de estado entre puntos A y B — Fuente: EL EVAPORADOR.PDF, pág. 10 (pág. 10).",
+     "html": "<ul>\n<li>Diagrama de Mollier con la curva de saturación Csat, regiones de estado y proceso de cambio de estado entre puntos A y B — Fuente: EL EVAPORADOR.PDF, pág. 10 <span class=\"pag\">pág. 10</span>.</li>\n</ul>"
     }
    ]
   },
@@ -16792,6 +16893,93 @@
    ]
   },
   {
+   "id": "ssc.filtro-deshidratador.el-filtro-deshidratante",
+   "nt": 749,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "filtro-deshidratador-mirilla",
+   "seccion": "5. Lado de alta",
+   "subgrupo": "",
+   "titulo": "Filtro deshidratador",
+   "codigo": "",
+   "menu": "Filtro deshidratador",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "EL FILTRO DESHIDRATANTE.PDF, págs. 1-5",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "ciclo-frigorifico",
+   "relacionados": [
+    "valvula-expansion",
+    "compresor",
+    "refrigerante-r134a",
+    "refrigerante-r12"
+   ],
+   "palabras": [
+    "desecante",
+    "zeolita",
+    "humedad",
+    "barro",
+    "corrosión",
+    "50 gramos",
+    "15%"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Retener el agua susceptible de circular en el circuito de climatización mediante un agente desecante (pág. 1, 2). Retener las impurezas sólidas y partículas metálicas en suspensión arrancadas por la velocidad y la presión del fluido para proteger la válvula de expansión y el compresor (pág. 1, 3). Constituir una reserva de refrigerante en estado líquido para absorber las variaciones de caudal durante el ciclado del compresor y alimentar la válvula de expansión únicamente con fluido en fase líquida (pág. 3).",
+     "html": "<ul>\n<li>Retener el agua susceptible de circular en el circuito de climatización mediante un agente desecante <span class=\"pag\">pág. 1, 2</span>.</li>\n<li>Retener las impurezas sólidas y partículas metálicas en suspensión arrancadas por la velocidad y la presión del fluido para proteger la válvula de expansión y el compresor <span class=\"pag\">pág. 1, 3</span>.</li>\n<li>Constituir una reserva de refrigerante en estado líquido para absorber las variaciones de caudal durante el ciclado del compresor y alimentar la válvula de expansión únicamente con fluido en fase líquida <span class=\"pag\">pág. 3</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Depósito metálico de refrigerante en estado líquido ubicado en el circuito de climatización (pág. 1). Contiene en su interior una masa de desecante (de 50 a 60 gramos de media) y filtros metálicos de retención (pág. 1, 2). Fabricación en aluminio (ofrece mayor resistencia a las vibraciones y a la corrosión) o en acero (con tratamiento interno especial y masa máxima de 500 gramos) (pág. 4). Tipos de desecante según su eficacia: Zeolita: máxima eficacia, capaz de adsorber el 15% de su propio peso en seco en agua (equivalente a 10 gotas de agua o 7,5 g de agua para 50 g de desecante) (pág. 2, 4). Alúmina activada o gel de silicio: baja eficacia (capacidad de adsorción del 5%); si se presenta en cantidad inferior a 50 gramos debe ser desechado (pág. 2). Algunos modelos incorporan un visor/mirilla para detectar la presencia de burbujas por falta de refrigerante (dispositivo sin efecto para R134a) (pág. 1, 4).",
+     "html": "<ul>\n<li>Depósito metálico de refrigerante en estado líquido ubicado en el circuito de climatización <span class=\"pag\">pág. 1</span>.</li>\n<li>Contiene en su interior una masa de desecante (de 50 a 60 gramos de media) y filtros metálicos de retención <span class=\"pag\">pág. 1, 2</span>.</li>\n<li>Fabricación en aluminio (ofrece mayor resistencia a las vibraciones y a la corrosión) o en acero (con tratamiento interno especial y masa máxima de 500 gramos) <span class=\"pag\">pág. 4</span>.</li>\n<li>Tipos de desecante según su eficacia:<ul>\n<li>Zeolita: máxima eficacia, capaz de adsorber el 15% de su propio peso en seco en agua (equivalente a 10 gotas de agua o 7,5 g de agua para 50 g de desecante) <span class=\"pag\">pág. 2, 4</span>.</li>\n<li>Alúmina activada o gel de silicio: baja eficacia (capacidad de adsorción del 5%); si se presenta en cantidad inferior a 50 gramos debe ser desechado <span class=\"pag\">pág. 2</span>.</li>\n</ul>\n</li>\n<li>Algunos modelos incorporan un visor/mirilla para detectar la presencia de burbujas por falta de refrigerante (dispositivo sin efecto para R134a) <span class=\"pag\">pág. 1, 4</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "El refrigerante en estado líquido entra al filtro deshidratante y atraviesa la masa desecante, donde la humedad disuelta es capturada por adsorción (pág. 1, 2). A continuación, el fluido pasa a través de los filtros metálicos que retienen las partículas e impurezas sólidas, saliendo por el tubo de salida hacia la válvula de expansión exento de gas residual y de humedad (pág. 1, 3).",
+     "html": "<ul>\n<li>El refrigerante en estado líquido entra al filtro deshidratante y atraviesa la masa desecante, donde la humedad disuelta es capturada por adsorción <span class=\"pag\">pág. 1, 2</span>.</li>\n<li>A continuación, el fluido pasa a través de los filtros metálicos que retienen las partículas e impurezas sólidas, saliendo por el tubo de salida hacia la válvula de expansión exento de gas residual y de humedad <span class=\"pag\">pág. 1, 3</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Masa media de desecante interno: 50 a 60 gramos (pág. 2). Capacidad de adsorción de agua de la zeolita: 15% de su peso en seco (7,5 gramos de agua para 50 gramos de desecante, equivalente a 10 gotas de agua) (pág. 2, 4). Capacidad de adsorción del gel de silicio o alúmina activada: 5% (pág. 2). Masa máxima en filtros de acero: 500 gramos (pág. 4). Par de apriete del presostato sobre el cuerpo del filtro: 35 Nm (pág. 4).",
+     "html": "<ul>\n<li>Masa media de desecante interno: 50 a 60 gramos <span class=\"pag\">pág. 2</span>.</li>\n<li>Capacidad de adsorción de agua de la zeolita: 15% de su peso en seco (7,5 gramos de agua para 50 gramos de desecante, equivalente a 10 gotas de agua) <span class=\"pag\">pág. 2, 4</span>.</li>\n<li>Capacidad de adsorción del gel de silicio o alúmina activada: 5% <span class=\"pag\">pág. 2</span>.</li>\n<li>Masa máxima en filtros de acero: 500 gramos <span class=\"pag\">pág. 4</span>.</li>\n<li>Par de apriete del presostato sobre el cuerpo del filtro: 35 Nm <span class=\"pag\">pág. 4</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Saturación por humedad : incapacidad de adsorber más agua por envejecimiento, entrada de aire ambiental o uso de aceite saturado (pág. 2, 3). Colmatación parcial o total : acumulación de \"barro\" (emulsión de aceite, fluido y humedad con presencia de ácidos en forma de líquido viscoso, polvo fino o sólidos pegajosos) o retención de finas partículas metálicas por choque o gripado del compresor (pág. 2, 3). Desintegración del desecante : descomposición del cartucho por efecto de las vibraciones cuando el desecante no está contenido en un bloque o sistema apropiado, generando finas partículas que no pueden ser retenidas por los filtros metálicos (pág. 3). Perforación por corrosión interna provocada por ácidos (clorhídrico con R12 o fluorhídrico con R134a) generados al reaccionar el refrigerante y el aceite con la humedad (pág. 2, 3).",
+     "html": "<ul>\n<li><strong>Saturación por humedad</strong>: incapacidad de adsorber más agua por envejecimiento, entrada de aire ambiental o uso de aceite saturado <span class=\"pag\">pág. 2, 3</span>.</li>\n<li><strong>Colmatación parcial o total</strong>: acumulación de \"barro\" (emulsión de aceite, fluido y humedad con presencia de ácidos en forma de líquido viscoso, polvo fino o sólidos pegajosos) o retención de finas partículas metálicas por choque o gripado del compresor <span class=\"pag\">pág. 2, 3</span>.</li>\n<li><strong>Desintegración del desecante</strong>: descomposición del cartucho por efecto de las vibraciones cuando el desecante no está contenido en un bloque o sistema apropiado, generando finas partículas que no pueden ser retenidas por los filtros metálicos <span class=\"pag\">pág. 3</span>.</li>\n<li>Perforación por corrosión interna provocada por ácidos (clorhídrico con R12 o fluorhídrico con R134a) generados al reaccionar el refrigerante y el aceite con la humedad <span class=\"pag\">pág. 2, 3</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Efectos de la humedad no retenida : En la válvula de expansión: formación de cristales de hielo que obturan el orificio, provocando un funcionamiento intermitente con rendimiento degradado y posible rotura de la válvula por tensiones mecánicas del hielo (pág. 2). En el evaporador: formación de hielo interno que reduce el paso de fluido y la superficie de intercambio, disminuyendo la temperatura de ebullición, produciendo menos frío y aumentando el tiempo de conexión del compresor con sobreconsumo de combustible (pág. 2). En el circuito y compresor: formación de \"barro\" que disminuye la transferencia térmica en intercambiadores, destruye la lubricación del compresor, retiene el aceite en los componentes e impide su retorno, provocando sobrecalentamiento y gripado del compresor (pág. 2, 3). Efectos por colmatación o saturación del filtro : restricción del caudal de refrigerante, caída de rendimiento, fallo en cadena de los componentes y bloqueo del orificio de la válvula de expansión (pág. 3, 5).",
+     "html": "<ul>\n<li><strong>Efectos de la humedad no retenida</strong>:<ul>\n<li>En la válvula de expansión: formación de cristales de hielo que obturan el orificio, provocando un funcionamiento intermitente con rendimiento degradado y posible rotura de la válvula por tensiones mecánicas del hielo <span class=\"pag\">pág. 2</span>.</li>\n<li>En el evaporador: formación de hielo interno que reduce el paso de fluido y la superficie de intercambio, disminuyendo la temperatura de ebullición, produciendo menos frío y aumentando el tiempo de conexión del compresor con sobreconsumo de combustible <span class=\"pag\">pág. 2</span>.</li>\n<li>En el circuito y compresor: formación de \"barro\" que disminuye la transferencia térmica en intercambiadores, destruye la lubricación del compresor, retiene el aceite en los componentes e impide su retorno, provocando sobrecalentamiento y gripado del compresor <span class=\"pag\">pág. 2, 3</span>.</li>\n</ul>\n</li>\n<li><strong>Efectos por colmatación o saturación del filtro</strong>: restricción del caudal de refrigerante, caída de rendimiento, fallo en cadena de los componentes y bloqueo del orificio de la válvula de expansión <span class=\"pag\">pág. 3, 5</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Verificar visualmente antes del montaje que el filtro conserva sus tapones de estanqueidad de origen y que está exento de rebabas, aristas cortantes o defectos en los fileteados (pág. 4). Comprobar que la botella filtro sea conforme a las especificaciones originales del fabricante del vehículo y de calidad equivalente a primer equipo (pág. 3, 4). Aplicar un par de apriete riguroso de 35 Nm al montar el presostato sobre el filtro para prevenir fugas de fluido (pág. 4).",
+     "html": "<ul>\n<li>Verificar visualmente antes del montaje que el filtro conserva sus tapones de estanqueidad de origen y que está exento de rebabas, aristas cortantes o defectos en los fileteados <span class=\"pag\">pág. 4</span>.</li>\n<li>Comprobar que la botella filtro sea conforme a las especificaciones originales del fabricante del vehículo y de calidad equivalente a primer equipo <span class=\"pag\">pág. 3, 4</span>.</li>\n<li>Aplicar un par de apriete riguroso de 35 Nm al montar el presostato sobre el filtro para prevenir fugas de fluido <span class=\"pag\">pág. 4</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Sustitución preventiva obligatoria como mínimo cada 2 años (pág. 4, 5). Sustitución obligatoria tras cualquier apertura del circuito al aire (pág. 3). Sustitución obligatoria tras un choque o accidente en el que el circuito haya permanecido abierto a la atmósfera (pág. 3). Sustitución obligatoria en caso de colmatación (parcial o total), saturación de humedad o tras la parada brusca / gripado del compresor (pág. 3). Utilizar únicamente filtros que hayan sido almacenados y entregados con taponado estanco (pág. 4). No reutilizar nunca el aceite recuperado ni dejar envases de aceite o componentes abiertos al aire para evitar su saturación por humedad (pág. 3).",
+     "html": "<ul>\n<li>Sustitución preventiva obligatoria como mínimo cada 2 años <span class=\"pag\">pág. 4, 5</span>.</li>\n<li>Sustitución obligatoria tras cualquier apertura del circuito al aire <span class=\"pag\">pág. 3</span>.</li>\n<li>Sustitución obligatoria tras un choque o accidente en el que el circuito haya permanecido abierto a la atmósfera <span class=\"pag\">pág. 3</span>.</li>\n<li>Sustitución obligatoria en caso de colmatación (parcial o total), saturación de humedad o tras la parada brusca / gripado del compresor <span class=\"pag\">pág. 3</span>.</li>\n<li>Utilizar únicamente filtros que hayan sido almacenados y entregados con taponado estanco <span class=\"pag\">pág. 4</span>.</li>\n<li>No reutilizar nunca el aceite recuperado ni dejar envases de aceite o componentes abiertos al aire para evitar su saturación por humedad <span class=\"pag\">pág. 3</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Esquema en sección del filtro deshidratante mostrando entrada, salida, visor, tubo capilar, filtros, desecante y orificio — Fuente: EL FILTRO DESHIDRATANTE.PDF, pág. 1 (pág. 1).",
+     "html": "<ul>\n<li>Esquema en sección del filtro deshidratante mostrando entrada, salida, visor, tubo capilar, filtros, desecante y orificio — Fuente: EL FILTRO DESHIDRATANTE.PDF, pág. 1 <span class=\"pag\">pág. 1</span>.</li>\n</ul>"
+    }
+   ]
+  },
+  {
    "id": "ssc.valvula-expansion.2-introduccion-a-la-refrigeracion",
    "nt": 15,
    "modulo": "ssc",
@@ -18788,6 +18976,92 @@
      "titulo": "Principio de funcionamiento",
      "texto": "El aire frío que se genera durante la evaporación sale al exterior a través de la superficie del evaporador y se transmite al interior del vehículo mediante la corriente generada por el ventilador (pág. 3).",
      "html": "<p>El aire frío que se genera durante la evaporación sale al exterior a través de la superficie del evaporador y se transmite al interior del vehículo mediante la corriente generada por el ventilador <span class=\"pag\">pág. 3</span>.</p>"
+    }
+   ]
+  },
+  {
+   "id": "ssc.evaporador.el-evaporador",
+   "nt": 747,
+   "modulo": "ssc",
+   "unidad": "clima",
+   "clave": "evaporador",
+   "seccion": "6. Expansión y lado de baja",
+   "subgrupo": "",
+   "titulo": "Evaporador",
+   "codigo": "",
+   "menu": "Evaporador",
+   "grupo": "Circuito frigorífico",
+   "tipo": "elemento",
+   "subtipo": "",
+   "aplicacion": [],
+   "ubicacion": "",
+   "fuentes": "EL EVAPORADOR.PDF, págs. 1-8",
+   "clase": "componente",
+   "estado": "",
+   "fusionadas": [],
+   "variante": "",
+   "area": "climatizacion",
+   "sistema": "circuito-frigorifico",
+   "formaParteDe": "ciclo-frigorifico",
+   "relacionados": [
+    "compresor",
+    "valvula-expansion",
+    "sensor-evaporador",
+    "ventilador-habitaculo"
+   ],
+   "palabras": [
+    "intercambiador termico",
+    "deshumidificacion",
+    "recalentamiento",
+    "serpentin",
+    "placas",
+    "tubos y aletas"
+   ],
+   "apartados": [
+    {
+     "titulo": "Misión",
+     "texto": "Enfriar y deshumidificar el aire enviado hacia el habitáculo absorbiendo el calor del flujo de aire puesto en movimiento por el impulsor (pág. 1, 2).",
+     "html": "<p>Enfriar y deshumidificar el aire enviado hacia el habitáculo absorbiendo el calor del flujo de aire puesto en movimiento por el impulsor <span class=\"pag\">pág. 1, 2</span>.</p>"
+    },
+    {
+     "titulo": "Tipos y características",
+     "texto": "Ubicación: localizado en el conjunto de distribución de trampillas, situado después del impulsor (ventilador centrífugo) y antes del radiador de calefacción (pág. 1, 2). Tecnologías de haz de tubos (pág. 7, 8): Evaporador de serpentín : compuesto por un único tubo plano extruido con múltiples canalizaciones internas y aletas en acordeón intercaladas, soldado por calor (utilizado por constructores japoneses) (pág. 7). Evaporador de tubos y aletas : constituido por tubos cilíndricos en horquilla insertados paralelamente entre aletas y expandidos mecánicamente, subdividido en secciones paralelas alimentadas por capilares desde un venturi tras la válvula de expansión (utilizado por constructores europeos) (pág. 7). Evaporador de placas : formado por placas colocadas unas sobre otras en forma de cubetas con aletas en acordeón intercaladas, galvanizado en horno al vacío o en atmósfera neutra (sustituye progresivamente al de tubos y aletas por ser más económico en grandes series, utilizado por constructores americanos) (pág. 8).",
+     "html": "<ul>\n<li>Ubicación: localizado en el conjunto de distribución de trampillas, situado después del impulsor (ventilador centrífugo) y antes del radiador de calefacción <span class=\"pag\">pág. 1, 2</span>.</li>\n<li>Tecnologías de haz de tubos <span class=\"pag\">pág. 7, 8</span>:<ul>\n<li><strong>Evaporador de serpentín</strong>: compuesto por un único tubo plano extruido con múltiples canalizaciones internas y aletas en acordeón intercaladas, soldado por calor (utilizado por constructores japoneses) <span class=\"pag\">pág. 7</span>.</li>\n<li><strong>Evaporador de tubos y aletas</strong>: constituido por tubos cilíndricos en horquilla insertados paralelamente entre aletas y expandidos mecánicamente, subdividido en secciones paralelas alimentadas por capilares desde un venturi tras la válvula de expansión (utilizado por constructores europeos) <span class=\"pag\">pág. 7</span>.</li>\n<li><strong>Evaporador de placas</strong>: formado por placas colocadas unas sobre otras en forma de cubetas con aletas en acordeón intercaladas, galvanizado en horno al vacío o en atmósfera neutra (sustituye progresivamente al de tubos y aletas por ser más económico en grandes series, utilizado por constructores americanos) <span class=\"pag\">pág. 8</span>.</li>\n</ul>\n</li>\n</ul>"
+    },
+    {
+     "titulo": "Principio de funcionamiento",
+     "texto": "Mecanismos de intercambio : combinación de conducción térmica (a través de los materiales) y convección térmica (entre el aire y la superficie externa, y entre el fluido y la superficie interna) (pág. 4, 5). Balance energético del aire : Pfrigo = Qa · Cp · (Ti - Tf) + Qa · (Hai - Haf) · L (si existe condensación en aletas, cumpliendo Hai > Haf al enfriar el aire por debajo de su temperatura de rocío) (pág. 1). Si no existe condensación (temperatura final Tf superior a la de rocío): Pfrigo = Qa · Cp · (Ti - Tf) (pág. 3). Balance energético del fluido : Pfrigo = Qf · (h2 - h1) (pág. 3). Etapa 1 -> 1': el fluido en estado difásico (líquido/gas) termina de evaporarse a temperatura constante Tev (presión de baja) mediante calor latente (pág. 3, 4). Etapa 1' -> 2: el fluido en estado vapor se recalienta de Tev a T2 mediante calor sensible (pág. 3, 4). Eficacia de intercambio (hevap) : Pfrigo = hevap · S · (Ti - Tev) (pág. 5). Si se sustituye por un evaporador de menor eficacia (hevap inferior), requiere una menor temperatura de evaporación Tev y menor presión de baja BP (pág. 5). Consecuencias del evaporador de menor eficacia: aumento de la relación de compresión, caída del rendimiento volumétrico y efectivo del compresor, aumento del volumen específico del fluido, reducción del salto de entalpía (h2 - h1), pérdida de potencia frigorífica y cortes cíclicos ordenados por la sonda del evaporador (pág. 5, 6).",
+     "html": "<ul>\n<li><strong>Mecanismos de intercambio</strong>: combinación de conducción térmica (a través de los materiales) y convección térmica (entre el aire y la superficie externa, y entre el fluido y la superficie interna) <span class=\"pag\">pág. 4, 5</span>.</li>\n<li><strong>Balance energético del aire</strong>:<ul>\n<li>Pfrigo = Qa · Cp · (Ti - Tf) + Qa · (Hai - Haf) · L (si existe condensación en aletas, cumpliendo Hai &gt; Haf al enfriar el aire por debajo de su temperatura de rocío) <span class=\"pag\">pág. 1</span>.</li>\n<li>Si no existe condensación (temperatura final Tf superior a la de rocío): Pfrigo = Qa · Cp · (Ti - Tf) <span class=\"pag\">pág. 3</span>.</li>\n</ul>\n</li>\n<li><strong>Balance energético del fluido</strong>:<ul>\n<li>Pfrigo = Qf · (h2 - h1) <span class=\"pag\">pág. 3</span>.</li>\n<li>Etapa 1 -&gt; 1': el fluido en estado difásico (líquido/gas) termina de evaporarse a temperatura constante Tev (presión de baja) mediante calor latente <span class=\"pag\">pág. 3, 4</span>.</li>\n<li>Etapa 1' -&gt; 2: el fluido en estado vapor se recalienta de Tev a T2 mediante calor sensible <span class=\"pag\">pág. 3, 4</span>.</li>\n</ul>\n</li>\n<li><strong>Eficacia de intercambio (hevap)</strong>:<ul>\n<li>Pfrigo = hevap · S · (Ti - Tev) <span class=\"pag\">pág. 5</span>.</li>\n<li>Si se sustituye por un evaporador de menor eficacia (hevap inferior), requiere una menor temperatura de evaporación Tev y menor presión de baja BP <span class=\"pag\">pág. 5</span>.</li>\n<li>Consecuencias del evaporador de menor eficacia: aumento de la relación de compresión, caída del rendimiento volumétrico y efectivo del compresor, aumento del volumen específico del fluido, reducción del salto de entalpía (h2 - h1), pérdida de potencia frigorífica y cortes cíclicos ordenados por la sonda del evaporador <span class=\"pag\">pág. 5, 6</span>.</li>\n</ul>\n</li>\n</ul>"
+    },
+    {
+     "titulo": "Valores de trabajo",
+     "texto": "Recalentamiento mínimo (RC = T2 - Tev): superior a 2 ºC para asegurar que la totalidad del fluido entra en estado vapor al compresor y proteger dicho componente (pág. 4). Ejemplo práctico de condensados: con Ti = 35 ºC (40% HR, Hai = 0,0141 kg/kg), Tf = 10 ºC (100% HR, Haf = 0,0078 kg/kg) y caudal impulsado de 500 kg/h, la producción de agua en aletas es de 3,15 kg/h (pág. 2).",
+     "html": "<ul>\n<li>Recalentamiento mínimo (RC = T2 - Tev): superior a 2 ºC para asegurar que la totalidad del fluido entra en estado vapor al compresor y proteger dicho componente <span class=\"pag\">pág. 4</span>.</li>\n<li>Ejemplo práctico de condensados: con Ti = 35 ºC (40% HR, Hai = 0,0141 kg/kg), Tf = 10 ºC (100% HR, Haf = 0,0078 kg/kg) y caudal impulsado de 500 kg/h, la producción de agua en aletas es de 3,15 kg/h <span class=\"pag\">pág. 2</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Anomalías frecuentes",
+     "texto": "Sustitución por un evaporador adaptable de menor eficacia : provoca caída de la presión de baja (BP'), reducción de la potencia frigorífica y cortes cíclicos del compresor (pág. 5, 6). Congelación de la superficie externa : provocada por fallo o avería en la sonda de temperatura del evaporador (pág. 8). Acumulación de suciedad o presencia de corrosión en la superficie externa del haz de tubos (pág. 8).",
+     "html": "<ul>\n<li><strong>Sustitución por un evaporador adaptable de menor eficacia</strong>: provoca caída de la presión de baja (BP'), reducción de la potencia frigorífica y cortes cíclicos del compresor <span class=\"pag\">pág. 5, 6</span>.</li>\n<li><strong>Congelación de la superficie externa</strong>: provocada por fallo o avería en la sonda de temperatura del evaporador <span class=\"pag\">pág. 8</span>.</li>\n<li>Acumulación de suciedad o presencia de corrosión en la superficie externa del haz de tubos <span class=\"pag\">pág. 8</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Comportamiento en avería",
+     "texto": "Pérdida de rendimiento del circuito de climatización, empañado de las superficies acristaladas por falta de deshumidificación y desconexiones cíclicas continuas del compresor (pág. 2, 5, 8).",
+     "html": "<p>Pérdida de rendimiento del circuito de climatización, empañado de las superficies acristaladas por falta de deshumidificación y desconexiones cíclicas continuas del compresor <span class=\"pag\">pág. 2, 5, 8</span>.</p>"
+    },
+    {
+     "titulo": "Cómo comprobarlo",
+     "texto": "Verificar que la superficie externa esté exenta de suciedad y corrosión (pág. 8). Verificar que la superficie externa no se congele controlando el funcionamiento de la sonda del evaporador (pág. 8).",
+     "html": "<ul>\n<li>Verificar que la superficie externa esté exenta de suciedad y corrosión <span class=\"pag\">pág. 8</span>.</li>\n<li>Verificar que la superficie externa no se congele controlando el funcionamiento de la sonda del evaporador <span class=\"pag\">pág. 8</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Mantenimiento",
+     "texto": "Prohibido sustituir un evaporador original por un modelo adaptable de menor eficacia (pág. 8). Inspección y limpieza de la superficie externa manteniendo el componente libre de suciedad y corrosión (pág. 8). Control periódico del estado de la sonda del evaporador para prevenir la congelación (pág. 8).",
+     "html": "<ul>\n<li>Prohibido sustituir un evaporador original por un modelo adaptable de menor eficacia <span class=\"pag\">pág. 8</span>.</li>\n<li>Inspección y limpieza de la superficie externa manteniendo el componente libre de suciedad y corrosión <span class=\"pag\">pág. 8</span>.</li>\n<li>Control periódico del estado de la sonda del evaporador para prevenir la congelación <span class=\"pag\">pág. 8</span>.</li>\n</ul>"
+    },
+    {
+     "titulo": "Imágenes requeridas",
+     "texto": "Diagrama psicrométrico de condensación de agua en aletas para aire a 35 ºC y 40% HR saliendo a 10 ºC y 100% HR — Fuente: EL EVAPORADOR.PDF, pág. 2 (pág. 2). Evolución del ciclo en el Diagrama de Mollier al sustituir el evaporador por uno de menor eficacia con caída de BP a BP' — Fuente: EL EVAPORADOR.PDF, pág. 5 (pág. 5).",
+     "html": "<ul>\n<li>Diagrama psicrométrico de condensación de agua en aletas para aire a 35 ºC y 40% HR saliendo a 10 ºC y 100% HR — Fuente: EL EVAPORADOR.PDF, pág. 2 <span class=\"pag\">pág. 2</span>.</li>\n<li>Evolución del ciclo en el Diagrama de Mollier al sustituir el evaporador por uno de menor eficacia con caída de BP a BP' — Fuente: EL EVAPORADOR.PDF, pág. 5 <span class=\"pag\">pág. 5</span>.</li>\n</ul>"
     }
    ]
   },
