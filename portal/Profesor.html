@@ -6,6 +6,10 @@
   </p>
   <button class="accion" type="button" id="prof-traer" onclick="traerNotasPanel()">Traer notas ahora</button>
   <div id="prof-traer-estado" class="estado"></div>
+  <label style="display:flex;gap:8px;align-items:center;margin-top:10px;font-size:14px">
+    <input type="checkbox" id="prof-como-alumno" onchange="verComoAlumno(this.checked)">
+    Ver los apuntes como alumno (sin las citas amarillas)
+  </label>
 </div>
 
 <div class="panel">

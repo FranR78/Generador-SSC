@@ -260,7 +260,7 @@
 
     // Muestra la pestaña del panel solo si el usuario es profe.
     google.script.run.withSuccessHandler(function (ok) {
-      if (ok) { document.getElementById('nav-profesor').hidden = false; document.body.classList.add('profe'); }
+      if (ok) { document.getElementById('nav-profesor').hidden = false; marcarProfe(); }
     }).soyProfe();
 
     // Registra la conexión y cuenta tiempo conectado (latido cada 30 s).
@@ -918,7 +918,7 @@
 
     // ---------- Arranque ----------
     google.script.run.withSuccessHandler(function (esProfe) {
-      if (esProfe) { document.getElementById('nav-profesor').hidden = false; document.body.classList.add('profe'); }
+      if (esProfe) { document.getElementById('nav-profesor').hidden = false; marcarProfe(); }
     }).soyProfe();
 
     // Consultar y Manual ya no están en el menú: Consultar se abre desde el
@@ -1037,6 +1037,17 @@
     })();
 
     // ---------- Panel: capturas por aprobar ----------
+    // Profe: ve las citas de las maestras salvo que marque «ver como alumno».
+    function comoAlumno() { try { return localStorage.getItem('comoAlumno') === '1'; } catch (e) { return false; } }
+    function marcarProfe() {
+      document.body.classList.toggle('profe', !comoAlumno());
+      var c = document.getElementById('prof-como-alumno'); if (c) c.checked = comoAlumno();
+    }
+    function verComoAlumno(si) {
+      try { localStorage.setItem('comoAlumno', si ? '1' : '0'); } catch (e) {}
+      marcarProfe();
+    }
+
     function traerNotasPanel() {
       var b = document.getElementById('prof-traer'), e = document.getElementById('prof-traer-estado');
       b.disabled = true; e.textContent = 'Trayendo…';
