@@ -1034,6 +1034,15 @@
     })();
 
     // ---------- Panel: capturas por aprobar ----------
+    function traerNotasPanel() {
+      var b = document.getElementById('prof-traer'), e = document.getElementById('prof-traer-estado');
+      b.disabled = true; e.textContent = 'Trayendo…';
+      google.script.run
+        .withSuccessHandler(function () { b.disabled = false; e.textContent = '✔ Apuntes al día. Recarga la página para verlos.'; })
+        .withFailureHandler(function (err) { b.disabled = false; e.textContent = '✘ ' + (err && err.message || err); })
+        .traerNotasAhora();
+    }
+
     function cargarCapturasPanel() {
       var cont = document.getElementById('prof-capturas');
       if (!cont) return;

@@ -105,3 +105,5 @@ function subirCaptura(nombre, datos, mini) {
 /** Panel: capturas pendientes (con miniatura) y su aprobación o rechazo. */
 function capturasPorAprobar() { return db_capturasPorAprobar_(); }
 function resolverCaptura(id, aprobar) { return db_capturaResolver_(id, aprobar); }
+/** Panel: trae ya notas.json de GitHub sin esperar al activador del puente. */
+function traerNotasAhora() { return db_traerNotas_(); }

@@ -144,6 +144,7 @@ function ejecutar_(op, args, usuario) {
     case 'capturaSubir': return capturaSubir_(usuario, args);
     case 'capturasPorAprobar': return capturasPorAprobar_(usuario);
     case 'capturaResolver': return capturaResolver_(usuario, args);
+    case 'traerNotas': exigirProfe_(usuario); return { id: puenteNT_traerNotas() };
     default: throw new Error('Operación desconocida: ' + op);
   }
 }

@@ -1,4 +1,14 @@
 <div class="panel">
+  <h2>🔄 Apuntes</h2>
+  <p class="aviso" style="margin-top:0">
+    El puente trae las notas de GitHub solo, cada cierto tiempo. Tras una fusión
+    o un lote nuevo, pulsa aquí para tenerlas ya (tarda unos segundos).
+  </p>
+  <button class="accion" type="button" id="prof-traer" onclick="traerNotasPanel()">Traer notas ahora</button>
+  <div id="prof-traer-estado" class="estado"></div>
+</div>
+
+<div class="panel">
   <h2>📷 Capturas por aprobar</h2>
   <p class="aviso" style="margin-top:0">
     Las envía el alumnado desde «Capturas». Al aprobar, pasa a la carpeta de

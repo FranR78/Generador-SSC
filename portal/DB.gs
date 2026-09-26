@@ -186,4 +186,5 @@ function db_incConsulta_(usuario) {
 // profe las aprueba en el Panel. Corre en Datos, que es quien tiene el Drive.
 function db_capturaSubir_(args) { return db_call_('capturaSubir', args); }
 function db_capturasPorAprobar_() { return db_call_('capturasPorAprobar'); }
+function db_traerNotas_() { return db_call_('traerNotas', {}); }
 function db_capturaResolver_(id, aprobar) { return db_call_('capturaResolver', { id: id, aprobar: !!aprobar }); }
