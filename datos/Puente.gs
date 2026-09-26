@@ -171,15 +171,35 @@ function puenteNT_traerNotas() {
     }
   }
   if (!archivo) {
-    const carpetaId = props.getProperty('CARPETA_NOTAS') || props.getProperty('CARPETA_CAPTURAS');
-    if (!carpetaId) throw new Error('Falta CARPETA_NOTAS (o CARPETA_CAPTURAS) donde dejarlo.');
-    archivo = DriveApp.getFolderById(carpetaId).createFile(blob);
+    // Sin id guardado: se busca el notas.json que ya existe en tu Drive (el que
+    // lee el portal) y se actualiza ese. Solo si no hay ninguno se crea uno.
+    archivo = notasExistente_();
+    if (archivo) {
+      archivo.setContent(contenido);
+    } else {
+      const carpetaId = props.getProperty('CARPETA_NOTAS') || props.getProperty('CARPETA_CAPTURAS');
+      archivo = carpetaId ? DriveApp.getFolderById(carpetaId).createFile(blob)
+                          : DriveApp.createFile(blob);
+    }
     props.setProperty('ARCHIVO_NOTAS', archivo.getId());
   }
 
   console.log(datos.total + ' notas llevadas a Drive.');
   console.log('NOTAS_FILE_ID para el portal: ' + archivo.getId());
   return archivo.getId();
+}
+
+
+/** El notas.json propio más reciente de Drive (no papelera), o null. */
+function notasExistente_() {
+  const it = DriveApp.searchFiles("title = 'notas.json' and trashed = false and 'me' in owners");
+  let mejor = null;
+  while (it.hasNext()) {
+    const f = it.next();
+    if (!mejor || f.getLastUpdated() > mejor.getLastUpdated()) mejor = f;
+  }
+  if (mejor) console.log('Uso el notas.json existente: ' + mejor.getId());
+  return mejor;
 }
 
 
