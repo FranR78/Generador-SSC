@@ -619,7 +619,7 @@ def cargar():
 PAGINA = re.compile(r"\s*\(([^()]{0,60}?\bp[áa]gs?\.?\s*[^()]{1,60})\)")
 # Referencias de las maestras a sus fichas de origen: «(NT16, pág. 21; NT50, …)» o
 # «[NT231, págs. 72-73]». Al alumnado no le aportan; el profe las ve en el portal.
-CITA_NT = re.compile(r"\s*[(\[]\s*(NT\d+\b[^()\[\]]*)[)\]]")
+CITA_NT = re.compile(r"\s*[(\[]\s*(?:fuentes?:\s*)?(NT\d+\b[^()\[\]]*)[)\]]")
 PELIGROSO = re.compile(r"<\s*(script|style|iframe|object|embed)[^>]*>.*?<\s*/\s*\1\s*>|\son\w+=\"[^\"]*\"",
                        re.I | re.S)
 
@@ -776,7 +776,7 @@ def volcar_json(notas):
             "formaParteDe": n.forma_parte_de,
             "relacionados": n.relacionados,
             "palabras": n.palabras,
-            "apartados": [{"titulo": k, "texto": texto_plano(v), "html": html_lectura(v),
+            "apartados": [{"titulo": k, "texto": texto_plano(CITA_NT.sub("", v)), "html": html_lectura(v),
                            "nivel": n.niveles.get(k, "")}
                           for k, v in n.apartados.items()],
         })
