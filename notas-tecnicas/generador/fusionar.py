@@ -189,6 +189,20 @@ def elegir_modelos(cliente):
     return [n for _, n in sorted(candidatos, reverse=True)] or ["gemini-flash-latest"]
 
 
+def saltos(t):
+    """Gemini a veces devuelve listas y subtítulos en una sola línea
+    («… texto. - a - b ### X - c»). Se reponen los saltos sin tocar los datos:
+    solo cortan « - », « ### » y « N. » cuando van tras un cierre de frase."""
+    t = t.strip()
+    if "\n" in t:
+        return t
+    t = re.sub(r"\s+(#{3,4}) ", r"\n\n\1 ", t)
+    t = re.sub(r"(?<=[.:)\]])\s+- (?=\S)", "\n- ", t)
+    t = re.sub(r"(?<=[.:)\]])\s+(\d{1,2})\. (?=[A-ZÁÉÍÓÚÑ¿])", r"\n\1. ", t)
+    t = re.sub(r"^(#{3,4} [^\n]*?) - ", r"\1\n- ", t, flags=re.M)
+    return t
+
+
 def pedir(cliente, texto, tipo):
     from google.genai import types
     apart = APARTADOS.get(tipo, APARTADOS["componente"])
@@ -268,7 +282,7 @@ def componer(clave, fichas, m, nt, tipo, estado, faltan=None):
         lineas += [f"  - {yv(x)}" for x in faltan[:60]]
     lineas += ["---", ""]
     for a in m.apartados:
-        lineas += [f"## {a.titulo}", "", a.texto.strip(), ""]
+        lineas += [f"## {a.titulo}", "", saltos(a.texto), ""]
     if m.discrepancias:
         lineas += ["## Discrepancias", ""] + [f"- {d}" for d in m.discrepancias] + [""]
     if m.imagenes:
