@@ -32,6 +32,12 @@ Lee esto primero al retomar. Detalle en los docs enlazados.
 
 ## Pendiente, por orden
 
+0. **Unificar los proyectos Apps Script (tras el lunes 28/09).** Hoy hay tres (Portal, Datos y el
+   Puente antiguo), cada uno con sus propiedades, y se lían: el Panel llama a una implementación
+   de Datos distinta de la que publica Actions, y `puenteNT_traerNotas` solo tiene token y
+   carpetas en el Puente antiguo. Objetivo: Puente dentro de Datos, un único juego de
+   propiedades y un único `DEPLOYMENT_ID_DATOS` que coincida con el `DATOS_URL` del portal.
+
 1. **Fusiones con Gemini (25/09).** Workflow «Fusionar notas (Gemini)» + `generador/fusionar.py`.
    Pone nivel básico/intermedio/avanzado por apartado. Lo que no pasa la auditoría va a
    `maestras/pendientes/`. Prueba: evaporador, embrague-compresor, lectura-manometros.

@@ -158,12 +158,17 @@ function puenteNT_traerNotas() {
   catch (e) { throw new Error('Lo que ha llegado no es JSON válido.'); }
 
   const blob = Utilities.newBlob(contenido, 'application/json', 'notas.json');
-  const idPrevio = props.getProperty('ARCHIVO_NOTAS');
+  const idPrevio = String(props.getProperty('ARCHIVO_NOTAS') ||
+                         props.getProperty('NOTAS_FILE_ID') || '').trim();
   let archivo = null;
   if (idPrevio) {
     // Actualizar en el sitio: el portal guarda este id y no puede cambiar.
+    // Si falla, se dice por qué: crear otro archivo dejaría al portal leyendo el viejo.
     try { archivo = DriveApp.getFileById(idPrevio); archivo.setContent(contenido); }
-    catch (e) { archivo = null; }
+    catch (e) {
+      throw new Error('No puedo escribir el notas.json ' + idPrevio + ' (' + e.message + '). ' +
+        '¿Es el mismo NOTAS_FILE_ID del portal y esta cuenta puede editarlo?');
+    }
   }
   if (!archivo) {
     const carpetaId = props.getProperty('CARPETA_NOTAS') || props.getProperty('CARPETA_CAPTURAS');
