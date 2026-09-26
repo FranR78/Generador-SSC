@@ -13,7 +13,7 @@ clave: valvula-expansion
 area: climatizacion
 sistema: "circuito-frigorifico"
 forma_parte_de: circuito-frigorifico
-estado: pendiente
+estado: borrador
 fusionadas: [15, 53, 54, 219, 234, 248, 277, 490, 614, 658, 689, 710, 727, 788, 804, 885, 918, 919, 920]
 huella: a1f53f9adb58
 modelo: gemini-3.8-flash
@@ -27,8 +27,6 @@ niveles:
   "Comportamiento en avería": avanzado
   "Cómo comprobarlo": avanzado
   "Mantenimiento": avanzado
-faltan:
-  - "NT920: 100%"
 ---
 
 ## Misión
@@ -71,6 +69,7 @@ El caudal inyectado se regula mediante el **equilibrio dinámico de tres fuerzas
 - **F1 / Fa / PFü (Fuerza de apertura)**: presión ejercida en la cara superior del diafragma por la dilatación del gas del bulbo térmico, sensible a la temperatura del tubo de retorno del evaporador (NT53, pág. 75; NT234, pág. 119; NT689, pág. 100; NT885, pág. 20; NT918, pág. 24).
 - **F2 / Fb / PSa (Fuerza de cierre)**: presión del refrigerante en el evaporador aplicada sobre la cara inferior del diafragma directamente o por conductos internos (NT53, pág. 75; NT234, pág. 119; NT689, pág. 100; NT885, pág. 20; NT918, pág. 24).
 - **F3 / Fc / PFe (Fuerza de cierre)**: fuerza mecánica ejercida por el muelle interno tarado de sobrecalentamiento, que tiende a cerrar la bola o aguja modulante (NT53, pág. 75; NT234, págs. 105, 119; NT689, pág. 100; NT885, págs. 13, 21; NT918, pág. 24).
+- **Control de sobrecalentamiento**: el muelle tarado ajusta la apertura según el salto térmico entre la entrada y la salida del evaporador, para que el refrigerante salga en estado 100% gaseoso y no entre líquido al compresor (NT920, pág. 3).
 
 La posición se mantiene estable bajo la condición de equilibrio: **Fa = Fb + Fc** (o F1 = F2 + F3) (NT234, pág. 119; NT885, pág. 21):
 - **Aumento de temperatura a la salida del evaporador** (mayor demanda o calor): el gas del bulbo se calienta y dilata (sube pa), empujando el diafragma y la varilla; la bola abre la sección de paso, aumentando el caudal inyectado para incrementar la potencia frigorífica (NT53, págs. 74-75; NT54, págs. 76-77; NT277, págs. 79-81; NT490, pág. 104; NT614, págs. 10-11; NT788, págs. 38-39; NT804, págs. 25-26; NT885, pág. 27; NT918, pág. 24; NT919, págs. 25-26; NT920, pág. 5).
