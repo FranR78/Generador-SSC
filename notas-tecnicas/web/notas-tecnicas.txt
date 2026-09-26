@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">885 notas · 26/09/2026</p>
+  <p class="sidebar-meta">867 notas · 26/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -328,7 +328,6 @@
     <li><a href="#nt81">NT81 · Reciclado interno y deshidratación de</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
     <li><a href="#nt82">NT82 · Comprobación de presiones de trabajo y</a></li>
-    <li><a href="#grp-lectura-manometros">Comprobación de presiones de trabajo y rendimiento <span class="menu-cuenta">19 fuentes</span></a></li>
     <li><a href="#grp-diagnostico-compresor">Diagnóstico de averías mecánicas e internas del compresor <span class="menu-cuenta">12 fuentes</span></a></li>
     <li><a href="#nt85">NT85 · Diagnóstico de ruidos anómalos en el c</a></li>
     <li><a href="#nt86">NT86 · Sustitución de un compresor nuevo y pr</a></li>
@@ -667,6 +666,7 @@
     <li><a href="#nt914">NT914 · Líquido sellante de fugas para climati</a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
     <li><a href="#nt1002">NT1002 · El Evaporador de Climatización</a></li>
+    <li><a href="#nt1003">NT1003 · Diagnóstico del circuito de climatizac</a></li>
     <li><a href="#nt1004">NT1004 · Acoplamiento de embrague electromagnét</a></li>
   </ul>
 </nav>
@@ -21775,1236 +21775,6 @@ Desconecta el compresor cuando la temperatura desciende a valores próximos a la
       </div>
     </div>
   </section>
-
-  <div class="grupo-componente" id="grp-lectura-manometros">
-    <div class="grupo-cab"><span class="grupo-nombre">Comprobación de presiones de trabajo y rendimiento</span><span class="grupo-cuenta">19 fuentes sin fusionar</span></div>
-    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
-    <details class="variante" open>
-      <summary>Variante 1 de 19 · NT83 · 15. Diágnostico y averías.pdf, págs. 123-125</summary>
-  <section id="nt83" data-tipo="proceso">
-    <div class="nota-header proceso">Nota de Proceso Nº 83 <span class="subtipo">Diagnóstico</span></div>
-    <div class="nota-body proceso">
-      <h1>Comprobación de presiones de trabajo y rendimiento</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Compresor variable: Alta constante a 8 - 10 bar (puede alcanzar 12 bar con temperatura exterior muy alta); Baja constante a 2 bar (o 1,8 - 2,2 bar en manómetro hidraúlico).</li>
-<li>Compresor fijo: Alta variable entre 10 y 20 bar; Baja variable entre 0,5 y 2,5 bar (o 1 - 2 bar en manómetro hidráulico).</li>
-<li>Prueba de rendimiento (temperatura exterior frente a temperatura en aireadores):<ul>
-<li>15 ºC exterior: 2 - 4 ºC en aireadores.</li>
-<li>20 ºC exterior: 4 - 6 ºC en aireadores.</li>
-<li>26 ºC exterior: 4 - 7 ºC en aireadores.</li>
-<li>32 ºC exterior: 5 - 8 ºC en aireadores.</li>
-<li>37 ºC exterior: 7 - 10 ºC en aireadores.</li>
-</ul>
-</li>
-<li>Compresor variable eléctrico a 1.500 - 1.700 rpm:<ul>
-<li>Carga normal (550 g): Baja 1,4 bar; Alta 12 bar; Aireadores 1,7 ºC; Reposo 5 bar.</li>
-<li>Carga baja (300 g): Baja 1,8 bar; Alta 9 - 10 bar; Aireadores 2,4 ºC; Reposo 4,5 bar.</li>
-<li>Carga excesiva (1.000 g): Baja 1,6 bar; Alta 10,5 bar; Aireadores 1,1 ºC; Reposo 5 bar.</li>
-</ul>
-</li>
-<li>Compresor fijo a 1.500 rpm (R134a):<ul>
-<li>Carga normal: Baja 1,5 - 2,5 bar; Alta 13,5 - 15 bar.</li>
-<li>Carga baja: Baja 0,5 - 1 bar; Alta 6,5 - 9 bar (peligro de congelación si la Baja desciende de 0,5 bar al acelerar).</li>
-<li>Carga excesiva: Baja 2,5 - 3,5 bar; Alta 19 - 24 bar.</li>
-</ul>
-</li>
-<li>Presiones en reposo según temperatura exterior:<ul>
-<li>15 ºC: 3,9 bar.</li>
-<li>20 ºC: 4,7 bar.</li>
-<li>25 ºC: 5,5 bar.</li>
-<li>30 ºC: 6,6 bar.</li>
-<li>35 ºC: 7,5 bar.</li>
-<li>40 ºC: 8,8 bar.</li>
-<li>45 ºC: 9,8 bar. (págs. 123-125)</li>
-</ul>
-</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Síntoma</div>
-        <p>Presiones de Alta y Baja fuera de las tolerancias prescritas o temperatura de salida de aire en aireadores insuficiente. (págs. 123-125)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Causas posibles</div>
-        <ul>
-<li>Carga de refrigerante incorrecta (baja o excesiva).</li>
-<li>Funcionamiento anómalo según el tipo de compresor (fijo o variable).</li>
-<li>Desviación motivada por variaciones de la temperatura ambiente exterior. (págs. 123-125)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo separar las causas</div>
-        <p>Para realizar el diagnóstico correcto, seguir los siguientes pasos:</p>
-<ol>
-<li>Conectar las mangueras de Alta y Baja al vehículo asegurando que todas las válvulas de la estación de carga permanecen cerradas.</li>
-<li>Arrancar el motor y mantenerlo a 1.500 rpm con la turbina de aire fresco a máxima velocidad.</li>
-<li>Para la prueba de rendimiento: activar la recirculación, dirigir el aire a los difusores centrales, cerrar las salidas laterales y colocar un termómetro en los aireadores centrales.</li>
-<li>Comparar las lecturas obtenidas en el manómetro y en el termómetro con las tablas de valores según la temperatura exterior registrada. (págs. 123-125)</li>
-</ol>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Verificación tras la reparación</div>
-        <p>Comprobar que con la carga nominal de refrigerante las presiones de Alta y Baja se estabilizan dentro de los rangos especificados y la temperatura de salida en los aireadores se ajusta a la tabla de rendimiento. (págs. 123-125)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">15. Diágnostico y averías.pdf, págs. 123-125</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 2 de 19 · NT115 · Manometros.pdf, págs. 1, 17-18</summary>
-  <section id="nt115" data-tipo="proceso">
-    <div class="nota-header proceso">Nota de Proceso Nº 115 <span class="subtipo">Procedimiento</span></div>
-    <div class="nota-body proceso">
-      <h1>Ajuste a cero y comprobación previa del puente de manómetros</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
-        <p>Verificación del estado mecánico y calibración previa a cero de las agujas de los manómetros de alta y baja presión sin conectar al circuito hidráulico (págs. 1, 17-18).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
-        <p>Mangueras de conexión totalmente desconectadas del vehículo y puente de manómetros libre de presión y de agente frigorífico en su interior (págs. 17-18).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
-        <ul>
-<li>Puente de manómetros de alta y baja presión para R134a (págs. 1, 17-18).</li>
-<li>Destornillador plano fino para tornillos de ajuste a cero (pág. 18).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Presión de lectura con manómetros libres: 0 bar (págs. 17-18).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
-        <p>Confirmar que ambas agujas permanecen estables en 0 bar antes de acoplar los latiguillos a las tomas de servicio del automóvil (págs. 17-18).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
-        <p>No forzar los tornillos de ajuste si la aguja presenta deformación mecánica o descalibración interna severa (pág. 18).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Pasos</div>
-        <ol>
-<li>Observar la posición de las agujas en los relojes de alta y baja presión con el equipo libre de fluido refrigerante (págs. 17-18).</li>
-<li>Verificar que ambas agujas marcan exactamente en la posición "0 bar" de la escala graduada (pág. 18).</li>
-<li>Si alguna aguja no coincide con el cero, girar el tornillo de ajuste de cero del reloj correspondiente hasta alinear perfectamente la aguja con la marca de 0 bar (pág. 18).</li>
-</ol>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT115_01</code> Puente de manómetros de alta y baja presión indicando la ubicación de los tornillos de ajuste de cero en la carátula — Fuente: Manometros.pdf, págs. 17-18</span></div>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">Manometros.pdf, págs. 1, 17-18</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 3 de 19 · NT130 · Manometros.pdf, págs. 32-33</summary>
-  <section id="nt130" data-tipo="proceso">
-    <div class="nota-header proceso">Nota de Proceso Nº 130 <span class="subtipo">Diagnóstico</span></div>
-    <div class="nota-body proceso">
-      <h1>Diagnóstico por manómetros sin conectar o tomas de servicio no acopladas</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Lectura de manómetros en fallo de conexión o vaciado total: 0 bar en Alta y 0 bar en Baja (págs. 32-33).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Síntoma</div>
-        <p>Las agujas de los manómetros de alta y baja presión se quedan inmóviles marcando 0 bar tanto con el motor parado como con el motor en marcha (págs. 32-33).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Causas posibles</div>
-        <ul>
-<li>Falta de accionamiento o "pinchado" de los obuses de las válvulas de servicio del vehículo (pág. 32).</li>
-<li>Mangueras de conexión de acoplamiento rápido invertidas entre sí (caso de instalaciones antiguas de R-12) (pág. 32).</li>
-<li>Obuses mecánicamente muy hundidos por exceso de mecanización en la rosca del alojamiento de la toma de servicio (pág. 32).</li>
-<li>Juntas tóricas de los tapones de plástico pegadas en las tomas que impiden que el empujador del conector alcance el obús (pág. 32).</li>
-<li>Circuito de climatización totalmente vacío de refrigerante por fuga masiva (en este caso el compresor no arrancará por seguridad del presostato) (pág. 32).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo separar las causas</div>
-        <ul>
-<li>Verificar si el compresor arranca al conectar el A/C: si el compresor no se pone en marcha, comprobar la presión con un conmutador de prueba para confirmar si el circuito está vacío de gas (pág. 32).</li>
-<li>Si el compresor sí arranca pero los manómetros marcan 0 bar: desenroscar los acopladores rápidos y revisar el interior de las tomas de servicio (pág. 32).</li>
-<li>Comprobar si hay restos de juntas tóricas de los tapones enganchadas en la boca de la toma de servicio impidiendo el paso del empujador (pág. 32).</li>
-<li>Inspeccionar si la aguja central del obús está demasiado profunda por exceso de mecanizado de la rosca (pág. 32).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Verificación tras la reparación</div>
-        <p>Retirar juntas pegadas, reajustar los empujadores de los conectores rápidos o recargar el circuito si estaba vacío, comprobando que las agujas registran la presión estática del sistema (págs. 32-33).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT130_01</code> Manómetros marcando 0 bar en ambas carátulas por falta de accionamiento de los obuses o vaciado total — Fuente: Manometros.pdf, págs. 32-33</span></div>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">Manometros.pdf, págs. 32-33</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 4 de 19 · NT147 · Orihuela, págs. 1</summary>
-  <section id="nt147" data-tipo="proceso">
-    <div class="nota-header proceso">Nota de Proceso Nº 147 <span class="subtipo">Diagnóstico</span></div>
-    <div class="nota-body proceso">
-      <h1>Lectura de manómetros de alta y baja presión en estación de carga</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Presión de alta en manómetro rojo (HP): 16 bar (230 psi) (pág. 1).</li>
-<li>Presión de baja en manómetro azul (LP): 1,8 bar (26 psi) (pág. 1).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Síntoma</div>
-        <p>Indicación visual de presiones en los relojes de la estación de servicio durante la comprobación del sistema de aire acondicionado (pág. 1).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Causas posibles</div>
-        <ul>
-<li>Funcionamiento del circuito frigorífico en condición de trabajo con lecturas de alta y baja presión dentro del rango nominal de servicio (pág. 1).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT147_01</code> Manómetro de alta presión (HP, reloj rojo) en 16 bar (230 psi) y manómetro de baja presión (LP, reloj azul) en 1,8 bar (26 psi) — Fuente: Orihuela, pág. 1</span></div>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">Orihuela, págs. 1</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 5 de 19 · NT223 · Climatizacion basicos.pdf, págs. 17-19, 32-33</summary>
-  <section id="nt223" data-tipo="proceso">
-    <div class="nota-header proceso">Nota de Proceso Nº 223 <span class="subtipo">Diagnóstico</span></div>
-    <div class="nota-body proceso">
-      <h1>Diagnosis de averías mediante lectura de presiones de manómetros</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
-        <p>Condiciones de medición: motor entre 2.000 y 2.500 rpm, climatizador a máxima potencia de frío.</p>
-<ul>
-<li>Baja presión (BP) en sistema con válvula de expansión: 0,5 a 3,0 bares.</li>
-<li>Baja presión (BP) en compresor de potencia regulada: aprox. 2,0 bares constantes.</li>
-<li>Alta presión (AP): 6,0 a 25,0 bares.</li>
-<li>Temperatura del aire de salida en tobera central: 3 a 8 ºC. (págs. 17-18).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Síntoma</div>
-        <p>Insuficiente o nulo rendimiento de refrigeración en el habitáculo (temperatura en tobera central superior a 8 ºC). (pág. 17).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Causas posibles</div>
-        <ol>
-<li>BP alta y AP alta: Condensador sucio, electroventilador averiado, sobrecarga de refrigerante o motor sobrecalentado.</li>
-<li>BP baja y AP baja: Falta/fuga de gas refrigerante en el circuito.</li>
-<li>BP alta y AP baja: Válvula de expansión bloqueada abierta o compresor defectuoso (pérdida de estanqueidad/compresión interna).</li>
-<li>BP igual a AP (presiones equilibradas con compresor conectado): Compresor defectuoso, falta total de refrigerante o fallo eléctrico de activación del embrague/válvula PWM.</li>
-<li>BP variable y AP variable: Presencia de humedad en la instalación o válvula de expansión defectuosa. (págs. 18-19, 32-33).</li>
-</ol>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo separar las causas</div>
-        <ol>
-<li>Conectar la estación de diagnosis con puente de manómetros a las tomas de servicio de alta y baja presión.</li>
-<li>Arrancar el motor, ajustar el climatizador a máxima potencia de frío con ventilación media y mantener el régimen entre 2.000 y 2.500 rpm.</li>
-<li>Leer los valores estabilizados en los relojes de baja presión (BP) y alta presión (AP).</li>
-<li>Si BP es baja y AP es baja: realizar prueba de estanqueidad con nitrógeno o gas formier para confirmar fuga antes de recargar.</li>
-<li>Si BP es alta y AP es baja: purgar el aceite del compresor; si el aceite muestra partículas metálicas o tono grisáceo, el compresor está destruido internamente y requiere sustitución y lavado del circuito. Si el aceite es limpio, verificar el estado de la válvula de expansión.</li>
-<li>Si BP es alta y AP es alta: rociar agua sobre el condensador; si la alta presión desciende inmediatamente, el fallo está en la suciedad del condensador o en la falta de caudal del electroventilador. (págs. 17-19, 24, 32-33).</li>
-</ol>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Verificación tras la reparación</div>
-        <p>Con la cantidad exacta de refrigerante y aceite cargados, poner el sistema en marcha a máxima potencia y confirmar que la baja presión se sitúa en torno a 2 bares, la alta presión en rango normal (6-25 bar) y la temperatura en tobera media desciende entre 3 y 8 ºC. (pág. 17).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">Climatizacion basicos.pdf, págs. 17-19, 32-33</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 6 de 19 · NT241 · CLIMATIZACION INTRODUCCION.PDF, págs. 200-218, 225-238</summary>
-  <section id="nt241" data-tipo="proceso">
-    <div class="nota-header proceso">Nota de Proceso Nº 241 <span class="subtipo">Diagnóstico</span></div>
-    <div class="nota-body proceso">
-      <h1>Diagnosis de rendimiento por subenfriamiento y recalentamiento</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Subenfriamiento (SC) correcto: entre 2 ºC y 10 ºC. (pág. 203).</li>
-<li>Recalentamiento (SR) correcto: entre 2 ºC y 10 ºC. (pág. 209).</li>
-<li>Temperatura de aire soplado en difusores para funcionamiento correcto: entre 2 ºC y 10 ºC a una temperatura ambiente exterior de 15 ºC a 25 ºC. (pág. 235).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Síntoma</div>
-        <p>Insuficiente producción de frío o expulsión de aire a temperatura elevada por los difusores. (págs. 226-229).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Causas posibles</div>
-        <ol>
-<li>Falta de fluido frigorífico: Subenfriamiento débil (&lt; 2 ºC), Recalentamiento elevado (&gt; 10 ºC) y Baja Presión reducida. (págs. 206, 212, 226).</li>
-<li>Exceso de fluido frigorífico: Subenfriamiento excesivo (&gt; 10 ºC), Recalentamiento débil (&lt; 2 ºC) y Alta Presión elevada. (págs. 206, 212, 227).</li>
-<li>Filtro deshidratante saturado: Subenfriamiento alto (&gt; 10 ºC), Recalentamiento normal (2-10 ºC) y diferencia de temperatura en el cuerpo del filtro. (págs. 221, 228).</li>
-<li>Compresor averiado: Baja Presión alta y Alta Presión reducida (presiones tendiendo a igualarse). (pág. 229).</li>
-<li>Incondensables (aire en el circuito por mal vacío): BP alta, HP alta y Subenfriamiento dentro de valores correctos. (pág. 224).</li>
-</ol>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo separar las causas</div>
-        <ol>
-<li>Conectar manómetros de HP y BP con termómetros de contacto a la salida del condensador y a la aspiración del evaporador (o utilizar el equipo Climtest). (págs. 200, 231).</li>
-<li>Calcular el Subenfriamiento (SC): Temperatura de condensación en el manómetro de HP menos la temperatura medida en el tubo a la salida del condensador. (pág. 202).</li>
-<li>Calcular el Recalentamiento (SR): Temperatura medida en el tubo a la salida del evaporador menos la temperatura de evaporación en el manómetro de BP. (pág. 208).</li>
-<li>Si SC &lt; 2 ºC y SR &gt; 10 ºC: existe falta de fluido por fuga. (págs. 206, 212).</li>
-<li>Si SC &gt; 10 ºC y SR &lt; 2 ºC: existe exceso de carga de fluido. (págs. 206, 212).</li>
-<li>Si SC &gt; 10 ºC y SR es normal (2-10 ºC) con salto térmico en el filtro: el filtro deshidratante está saturado (pre-expansión). (págs. 221, 228).</li>
-</ol>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Verificación tras la reparación</div>
-        <p>Con la masa exacta de fluido cargada, verificar mediante manómetros/Climtest que tanto el Subenfriamiento como el Recalentamiento se estabilizan dentro del margen de 2 ºC a 10 ºC. (págs. 232, 243).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">CLIMATIZACION INTRODUCCION.PDF, págs. 200-218, 225-238</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 7 de 19 · NT306 · LA CLIMATIZACIÓN.pdf, págs. 157-158</summary>
-  <section id="nt306" data-tipo="proceso">
-    <div class="nota-header proceso">Nota de Proceso Nº 306 <span class="subtipo">Diagnóstico</span></div>
-    <div class="nota-body proceso">
-      <h1>Diagnóstico del circuito frigorífico por lectura de manómetros</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Condiciones de prueba: Motor a 1.500-2.000 rpm, temperatura ambiente 20 ºC. (pág. 46)</li>
-<li>Presión en reposo a 20 ºC: aprox. 4,7 bares (0,47 MPa). (pág. 46)</li>
-<li>Presiones normales de trabajo con R134a: Baja presión entre 1,5 y 2,5 bares; Alta presión entre 12 y 18 bares. (págs. 43, 45, 157-158)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Síntoma</div>
-        <p>Falta de rendimiento frigorífico en el habitáculo, enfriamiento deficiente o cortes intermitentes del climatizador. (pág. 157)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Causas posibles</div>
-        <ul>
-<li>Carga insuficiente o falta total de refrigerante por fugas. (págs. 157-158, 161)</li>
-<li>Exceso de gas refrigerante en la instalación. (pág. 161)</li>
-<li>Válvula de expansión bloqueada en posición abierta o cerrada. (pág. 161)</li>
-<li>Compresor dañado por pérdida de capacidad de compresión o falta de aspiración. (pág. 161)</li>
-<li>Obstrucción en el condensador o falta de ventilación forzada. (pág. 161)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo separar las causas</div>
-        <ol>
-<li>Conectar los manómetros de baja presión (azul) y alta presión (rojo) a las tomas de servicio del vehículo. (pág. 157)</li>
-<li>Arrancar el motor, estabilizar el régimen a 1.500-2.000 rpm y conectar el climatizador al máximo rendimiento frigorífico. (págs. 46, 157)</li>
-<li>Observar la lectura combinada de presiones:<ul>
-<li>Alta y baja presión más bajas de lo normal: Indican carga insuficiente de refrigerante o fuga en el circuito. (pág. 161)</li>
-<li>Alta presión excesivamente elevada y baja presión alta: Indican exceso de carga de gas o mala refrigeración del condensador por fallo del electroventilador. (pág. 161)</li>
-<li>Baja presión excesivamente baja y alta presión normal/baja: Indica válvula de expansión bloqueada en cierre, congelación del evaporador o filtro deshidratante colmatado. (págs. 159, 161)</li>
-<li>Baja presión demasiado alta y alta presión anormalmente baja: Indican pérdida de rendimiento compresión del compresor (daño interno en las válvulas de lámina). (pág. 161)</li>
-</ul>
-</li>
-</ol>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Verificación tras la reparación</div>
-        <p>Verificar que tras corregir la avería las presiones de alta y baja se estabilizan dentro de los márgenes teóricos y la temperatura en el difusor desciende a valores de confort. (págs. 157, 161)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT306_01</code> Manómetros de alta y baja presión con las escalas de lectura de presión y temperatura — Fuente: LA CLIMATIZACIÓN.pdf, pág. 157</span></div>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">LA CLIMATIZACIÓN.pdf, págs. 157-158</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 8 de 19 · NT309 · MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 1</summary>
-  <section id="nt309" data-tipo="proceso">
-    <div class="nota-header proceso">Nota de Proceso Nº 309 <span class="subtipo">Diagnóstico</span><span class="fusionado">Formauto</span></div>
-    <div class="nota-body proceso">
-      <h1>Diagnosis de presiones a vehículo parado</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Regla general: la presión de alta estará siempre en función de la temperatura ambiente. (pág. 1).</li>
-<li>Presión de baja para carga correcta (24 ºC - 26 ºC ambiente y condensador, motor indiferente): 6,5 bar (25 ºC en manómetro). (pág. 1).</li>
-<li>Presión de baja para exceso de carga (24 ºC - 26 ºC ambiente, 30 ºC condensador, motor frío): 7,5 bar (30 ºC en manómetro). (pág. 1).</li>
-<li>Presión de baja para asociación de gases (24 ºC - 26 ºC ambiente y condensador, motor indiferente): 7,5 bar (30 ºC en manómetro). (pág. 1).</li>
-<li>Presión de baja para falta de líquido (30 ºC ambiente y condensador, motor indiferente): 6,5 bar (25 ºC en manómetro). (pág. 1).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Síntoma</div>
-        <p>Comprobación de los valores de presión de baja en el circuito de climatización con el vehículo parado y su comparación con la temperatura ambiente, del condensador y del motor. (pág. 1).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Causas posibles</div>
-        <ul>
-<li>Carga correcta: estado nominal de carga del circuito. (pág. 1).</li>
-<li>Exceso de carga: sobrecarga de agente frigorífico en la instalación. (pág. 1).</li>
-<li>Asociación de gases: presencia de gases incondensables o mezclas inadaptadas en el circuito. (pág. 1).</li>
-<li>Falta de líquido: carga insuficiente de fluido frigorífico por fuga o llenado incompleto. (pág. 1).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo separar las causas</div>
-        <ol>
-<li>Conectar los manómetros al circuito de climatización con el vehículo y el motor parados. (pág. 1).</li>
-<li>Medir la temperatura ambiente, la temperatura en el condensador, la temperatura indicada en el manómetro de baja y la condición de temperatura del motor. (pág. 1).</li>
-<li>Interpretar la presión en la línea de baja según las condiciones de temperatura obtenidas:<ul>
-<li>Carga correcta: a 24 ºC - 26 ºC de temperatura ambiente y 24 ºC - 26 ºC en el condensador, la presión de baja es de 6,5 bar (25 ºC en manómetro) con la temperatura del motor indiferente. (pág. 1).</li>
-<li>Exceso de carga: a 24 ºC - 26 ºC de temperatura ambiente y 30 ºC en el condensador, la presión de baja asciende a 7,5 bar (30 ºC en manómetro) con el motor frío. (pág. 1).</li>
-<li>Asociación de gases: a 24 ºC - 26 ºC de temperatura ambiente y 24 ºC - 26 ºC en el condensador, la presión de baja asciende a 7,5 bar (30 ºC en manómetro) con la temperatura del motor indiferente. (pág. 1).</li>
-<li>Falta de líquido: a 30 ºC de temperatura ambiente y 30 ºC en el condensador, la presión de baja se reduce a 6,5 bar (25 ºC en manómetro) con la temperatura del motor indiferente. (pág. 1).</li>
-</ul>
-</li>
-</ol>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT309_01</code> Tabla de diagnosis de presiones a vehículo parado según temperaturas ambiente, del condensador, del manómetro y del motor — Fuente: MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, pág. 1</span></div>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 1</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 9 de 19 · NT349 · ZZ15. Diágnostico y averías.pdf, págs. 123</summary>
-  <section id="nt349" data-tipo="proceso">
-    <div class="nota-header proceso">Nota de Proceso Nº 349 <span class="subtipo">Diagnóstico</span></div>
-    <div class="nota-body proceso">
-      <h1>Diagnosis de presiones de trabajo y prueba de rendimiento</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Presiones de trabajo para compresor variable (a 1.500 rpm, turbina máxima): Alta = 8 a 10 bar (máximo 12 bar con calor extremo) | Baja = 2 bar constante. (pág. 123).</li>
-<li>Presiones de trabajo para compresor fijo (a 1.500 rpm, turbina máxima): Alta = 10 a 20 bar | Baja = 0,5 a 2,5 bar. (pág. 123).</li>
-<li>Tabla de prueba de rendimiento (temperatura exterior frente a temperatura en aireadores centrales a 1.500 rpm con recirculación):<ul>
-<li>15 ºC exterior: 2 a 4 ºC en aireadores. (pág. 123).</li>
-<li>20 ºC exterior: 4 a 6 ºC en aireadores. (pág. 123).</li>
-<li>26 ºC exterior: 4 a 7 ºC en aireadores. (pág. 123).</li>
-<li>32 ºC exterior: 5 a 8 ºC en aireadores. (pág. 123).</li>
-<li>37 ºC exterior: 7 a 10 ºC en aireadores. (pág. 123).</li>
-</ul>
-</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Síntoma</div>
-        <p>Insuficiencia de enfriamiento del habitáculo o necesidad de verificación de la eficiencia global del equipo de aire acondicionado. (pág. 123).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Causas posibles</div>
-        <p>Desviación en las presiones de trabajo del compresor (fijo o variable) o caudal/temperatura de aire inadecuados en los difusores por anomalías en el circuito. (pág. 123).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo separar las causas</div>
-        <ol>
-<li>Conectar las mangueras de alta y baja presión del equipo de diagnosis al vehículo manteniendo cerradas todas las válvulas de la estación de carga. (pág. 123).</li>
-<li>Arrancar el motor a 1.500 rpm y conectar el aire acondicionado con la turbina de aire fresco a máxima velocidad. (pág. 123).</li>
-<li>Verificar si las presiones de alta y baja se sitúan dentro de los valores prescritos según el tipo de compresor:<ul>
-<li>Compresor variable: alta presión constante entre 8 y 10 bares (puede subir hasta 12 bares con temperaturas exteriores muy elevadas); baja presión constante a 2 bares. (pág. 123).</li>
-<li>Compresor fijo: alta presión variable entre 10 y 20 bares; baja presión variable entre 0,5 y 2,5 bares. (pág. 123).</li>
-</ul>
-</li>
-<li>Efectuar la prueba de rendimiento: mantener el motor a 1.500 rpm con la turbina a máxima velocidad y la recirculación activada. Dirigir la salida de aire hacia los difusores centrales y cerrar las salidas laterales. (pág. 123).</li>
-<li>Colocar un termómetro en los difusores centrales, medir la temperatura de salida del aire y compararla con la temperatura exterior según la tabla de rendimiento. (pág. 123).</li>
-</ol>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Verificación tras la reparación</div>
-        <p>Medir que la temperatura en los aireadores centrales y las presiones de alta y baja se sitúen dentro de los márgenes de las tablas de referencia según la temperatura ambiente exterior. (pág. 123).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">ZZ15. Diágnostico y averías.pdf, págs. 123</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 10 de 19 · NT351 · ZZ15. Diágnostico y averías.pdf, págs. 124-126</summary>
-  <section id="nt351" data-tipo="proceso">
-    <div class="nota-header proceso">Nota de Proceso Nº 351 <span class="subtipo">Diagnóstico</span></div>
-    <div class="nota-body proceso">
-      <h1>Diagnosis de averías hidráulicas según presiones de trabajo</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Presiones normales de trabajo de referencia: Compresor fijo (Baja 1 a 2 kg/cm², Alta 10 a 15 kg/cm²); Compresor variable (Baja 1,8 a 2,2 kg/cm², Alta 8 a 12 kg/cm²). (pág. 124).</li>
-<li>Presiones aproximadas en reposo según la temperatura exterior:<ul>
-<li>15 ºC: 3,9 bar. (pág. 125).</li>
-<li>20 ºC: 4,7 bar. (pág. 125).</li>
-<li>25 ºC: 5,5 bar. (pág. 125).</li>
-<li>30 ºC: 6,6 bar. (pág. 125).</li>
-<li>35 ºC: 7,5 bar. (pág. 125).</li>
-<li>40 ºC: 8,8 bar. (pág. 125).</li>
-<li>45 ºC: 9,8 bar. (pág. 125).</li>
-</ul>
-</li>
-<li>Variaciones de presión de trabajo según la temperatura exterior (Compresor fijo R134a):<ul>
-<li>15 ºC: Baja 1,2 - 1,5 bar | Alta 8 - 10 bar. (pág. 125).</li>
-<li>20 ºC: Baja 1,5 - 1,8 bar | Alta 9 - 12 bar. (pág. 125).</li>
-<li>26 ºC: Baja 1,8 - 2 bar | Alta 12 - 14,5 bar. (pág. 125).</li>
-<li>32 ºC: Baja 2,1 - 2,3 bar | Alta 14,5 - 18 bar. (pág. 125).</li>
-<li>37 ºC: Baja 2,3 - 2,5 bar | Alta 18 - 20 bar. (pág. 125).</li>
-</ul>
-</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Síntoma</div>
-        <p>Incapacidad de enfriar, temperatura de aireadores alta, variaciones o fluctuaciones anómalas de las presiones de alta y baja, o sobrecarga/desgaste excesivo del compresor. (págs. 124-126).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Causas posibles</div>
-        <ul>
-<li>Carga baja o insuficiente de refrigerante (fuga). (págs. 124-126).</li>
-<li>Carga excesiva de refrigerante. (págs. 124-126).</li>
-<li>Presencia de aire/humedad o exceso de aceite en el circuito. (pág. 126).</li>
-<li>Obstrucción en la línea de líquido o filtro deshidratador bloqueado. (pág. 126).</li>
-<li>Válvula de expansión defectuosa o trabada (muy abierta o cerrada). (pág. 126).</li>
-<li>Condensador sucio/obstruido o fallo del electroventilador. (pág. 126).</li>
-<li>Avería en las válvulas de descarga, juntas o fallo mecánico interno del compresor. (pág. 126).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo separar las causas</div>
-        <ol>
-<li>Medir las presiones con el vehículo en reposo y compararlas con la temperatura ambiente. (pág. 125).</li>
-<li>Conectar manómetros y medir presiones con el motor a 1.500 rpm y el A/C activado. (págs. 124-125).</li>
-<li>Evaluar el comportamiento en compresores variables eléctricos (tomando como base una carga nominal de 550 g):<ul>
-<li>Carga normal (550 g): Ralentí (Baja 1,8 bar, Alta 9 bar, 2,4 ºC, Reposo 5 bar); A 1.500 rpm (Baja 1,4 bar, Alta 12 bar, 1,7 ºC). (pág. 124).</li>
-<li>Carga baja (300 g): Ralentí (Baja 1,4-1,6 bar, Alta 8-12 bar, 2,2 ºC, Reposo 4,5 bar); A 1.500 rpm (Baja 1,8 bar, Alta 9-10 bar). Con poco gas, la baja es muy baja y la alta fluctúa. (pág. 124).</li>
-<li>Carga excesiva (1000 g): Ralentí (Baja 1,8 bar, Alta 10 bar, 1,7 ºC, Reposo 5 bar); A 1.500 rpm (Baja 1,6 bar, Alta 10,5 bar, 1,1 ºC). El compresor absorbe más potencia y sufre más desgaste. (págs. 124-125).</li>
-</ul>
-</li>
-<li>Evaluar el comportamiento en compresores fijos a 1.500 rpm (con R134a):<ul>
-<li>Carga normal: Baja 1,5 a 2,5 bar | Alta 13,5 a 15 bar. (pág. 125).</li>
-<li>Carga baja: Baja 0,5 a 1 bar | Alta 6,5 a 9 bar (si al acelerar la baja cae de 0,5 bar existe riesgo de congelación). (pág. 125).</li>
-<li>Carga excesiva: Baja 2,5 a 3,5 bar | Alta 19 a 24 bar. (pág. 125).</li>
-</ul>
-</li>
-<li>Interpretar los síntomas de la tabla de diagnóstico por presiones:<ul>
-<li>Alta normal y Baja normal con aireadores calientes: exceso de aceite, contaminación por aire/humedad (recuperar, lavar, vacío y cargar cantidad correcta de aceite/gas) o válvula de expansión cerrada. (pág. 126).</li>
-<li>Alta normal y Baja normal con tubería de baja más fría que el evaporador: válvula de expansión muy abierta. (pág. 126).</li>
-<li>Alta muy alta y Baja muy alta: exceso de refrigerante, condensador obstruido o fallo del electroventilador. Si al enfriar el condensador con agua la alta desciende, confirma problema de condensación. (pág. 126).</li>
-<li>Alta y Baja se igualan/equilibran rápidamente al parar o no varían al acelerar: fallo mecánico del compresor, juntas o válvula de descarga. (pág. 126).</li>
-<li>Alta baja y Baja muy baja: baja cantidad de refrigerante por fuga (reparar fuga, hacer vacío y recargar). (pág. 126).</li>
-<li>Alta alta y Baja muy baja (con hielo en línea de líquido o filtro deshidratador): obstrucción en la línea de líquido o filtro deshidratador bloqueado (sustituir filtro o manguito). (pág. 126).</li>
-</ul>
-</li>
-</ol>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Verificación tras la reparación</div>
-        <p>Medir que las presiones de alta y baja se estabilicen dentro de los rangos teóricos de la tabla según la temperatura exterior y comprobar la temperatura en los aireadores. (págs. 123, 125).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">ZZ15. Diágnostico y averías.pdf, págs. 124-126</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 11 de 19 · NT405 · 7. MANTENIMIENTO, DIAGNOSTICO Y REPARACION.pptx, págs. 1-100</summary>
-  <section id="nt405" data-tipo="proceso">
-    <div class="nota-header proceso">Nota de Proceso Nº 405 <span class="subtipo">Diagnóstico</span></div>
-    <div class="nota-body proceso">
-      <h1>Diagnóstico del circuito por lectura de manómetros</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Condiciones estándar de prueba: Temperatura exterior de 30 ºC y régimen de motor entre 1.500 y 1.800 rpm. (pág. 7)</li>
-<li>Compresor de cilindrada variable normal: Baja entre 1,8 y 2,1 bar; Alta entre 6 y 13 bar. (pág. 10)</li>
-<li>Compresor fijo o cíclico normal: Baja entre 0,8 y 2,2 bar (0,8 bar solo en ambientes de muy baja humedad); Alta entre 10 y 20 bar. (pág. 16)</li>
-<li>Vacío de prueba de estanqueidad: 1 atmósfera de depresión (-1 bar) en baja presión. (pág. 58)</li>
-<li>Presión de igualación a motor parado (carga parcial de 350 g): entre 3 y 4 bar en ambos manómetros (igual a la presión de la bombona). (pág. 62)</li>
-<li>Carga por baja a ralentí: límite de seguridad de presión máxima de 2,5 bar durante la adición de dosis líquidas. (pág. 67)</li>
-<li>Exceso de carga (ejemplo de 1.100 g en circuito de 800 g): Baja entre 2,5 y 2,7 bar; Alta entre 16 y 18 bar. (pág. 71)</li>
-<li>Filtro deshidratador congelado/saturado: Baja entre 0,3 y 0,5 bar; Alta entre 19 y 20 bar. (pág. 85)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Síntoma</div>
-        <p>Anomalías en el rendimiento frigorífico, ruidos, mal funcionamiento del compresor o verificación tras mantenimiento detectados mediante la lectura de las agujas de alta y baja presión en el puente de manómetros. (pág. 1, 10)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Causas posibles</div>
-        <ul>
-<li>Presiones normales en compresor de cilindrada variable (Baja: 1,8 a 2,1 bar; Alta: 6 a 13 bar) o fija/cíclica (Baja: 0,8 a 2,2 bar; Alta: 10 a 20 bar).</li>
-<li>Falta de refrigerante o válvula de alta del compresor semi cerrada (Baja: 0,5 a 0,8 bar; Alta: 6 a 8 bar).</li>
-<li>Bulbo de válvula de expansión suelto (Baja: 3 a 3,8 bar; Alta: 12 a 14 bar).</li>
-<li>Válvula de expansión demasiado abierta (Baja: 3,5 a 4,5 bar; Alta: 10 a 14 bar).</li>
-<li>Válvula de expansión cerrada/obturada o bulbo roto (Baja: 0 bar en vacío; Alta: 10 a 13 bar).</li>
-<li>Válvulas de baja del compresor tapadas o gota de hielo en válvula de expansión (Baja: ~0 bar; Alta: 4 a 6 bar).</li>
-<li>Válvula de baja comunicada en un cilindro (Baja: 2,2 a 2,5 bar; Alta: 10 a 12 bar).</li>
-<li>Evaporador congelado por fallo del termostato/válvula de regulación (Baja: casi 0 bar; Alta: 7 a 10 bar).</li>
-<li>Manómetros sin conectar, obuses no desplazados o circuito completamente vacío (Baja: 0 bar; Alta: 0 bar).</li>
-<li>Circuito en vacío para prueba de estanqueidad (Baja: -1 bar / 1 atm depresión; Alta: aguja al tope).</li>
-<li>Motor parado tras primera carga parcial de 350 g (Baja y Alta igualadas a 3-4 bar).</li>
-<li>Motor en marcha con media carga (Baja: ~0,8 bar; Alta: 7 a 8 bar).</li>
-<li>Exceso de carga de refrigerante (Baja: 2,5 a 2,7 bar; Alta: 16 a 18 bar).</li>
-<li>Electroventilador girando en sentido contrario por cableado invertido (Baja: 2,3 a 2,5 bar; Alta: ~22 bar).</li>
-<li>Electroventilador inoperativo o condensador sucio (Baja: 2,3 a 2,8 bar; Alta: &gt;25 bar).</li>
-<li>Filtro deshidratador obstruido/saturado (Baja: 4,5 a 4,7 bar o 0,3 a 0,5 bar si está helado; Alta: 21 a 27 bar o 19 a 20 bar si está helado).</li>
-<li>Entrada indeseada de aire caliente por trampillas o grifo de calefacción defectuoso con presiones frigoríficas normales (Baja: 1,8 bar; Alta: 12 a 15 bar).</li>
-<li>Tubos de aspiración y descarga invertidos en el compresor (Baja: 4,5 a 4,8 bar; Alta: 7 a 8 bar).</li>
-<li>Compresor no conecta, embrague patina o válvula de regulación de cilindrada defectuosa/obstruida (Baja: 4,5 a 6 bar; Alta igual a la baja).</li>
-</ul>
-<p>| 
-|---|---|---|
-| 
-| </p>
-<p>(pág. 10-98)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo separar las causas</div>
-        <ul>
-<li>Falta de refrigerante vs Válvula de alta semi cerrada: añadir entre 50 y 100 gramos de refrigerante al circuito. Si los manómetros no reaccionan positivamente, la causa es la válvula de alta del compresor semi cerrada. (pág. 20)</li>
-<li>Válvula de expansión con bulbo suelto vs avería interna: si el bulbo exterior está suelto, fijarlo en su posición. En válvulas monobloc, aplicar espray enfriador (o refrigerante líquido) sobre el bulbo superior; si no reacciona, sustituir la válvula y el filtro deshidratador. (pág. 24)</li>
-<li>Válvula de expansión demasiado abierta y verificación de daños en válvulas del compresor: rociar espray enfriador sobre el bulbo; si no reacciona, sustituir la válvula y el filtro. Tras la sustitución, rociar de nuevo el bulbo; la aguja de baja debe caer a 0 bar. Parar el compresor inmediatamente: si la aguja de baja sube con rapidez hacia arriba, las válvulas del compresor están dañadas. (pág. 28, 29)</li>
-<li>Válvulas de baja tapadas vs Gota de hielo en la válvula de expansión: parar el equipo frigorífico y volverlo a arrancar. Si el fallo desaparece temporalmente y reaparece al pasar de nuevo humedad por la válvula, se trata de una gota de hielo. Si el fallo es permanente, las válvulas de baja están tapadas. En ambos casos sustituir el filtro deshidratador (saturado) y realizar un vacío prolongado. (pág. 38, 39)</li>
-<li>Válvula de baja comunicada: rociar espray enfriador sobre el bulbo de la válvula de expansión hasta que la baja llegue a 0 bar y detener el compresor. Si la aguja de baja sube rápidamente en positivo, se confirma la comunicación entre alta y baja en el cilindro. (pág. 43)</li>
-<li>Condensador sucio interiormente vs fallo de electroventilador: si el electroventilador funciona continuamente con alta presión excesiva, mojar la parte superior del condensador con agua; si la aguja de alta inicia una bajada inmediata, el condensador está sucio interiormente. (pág. 79, 80)</li>
-<li>Tubos invertidos en compresor: en compresores fijos o cíclicos, el compresor acopla en intervalos de muy pocos segundos. En compresores de cilindrada variable, el acoplamiento/desacoplamiento es muy frecuente o se observan pequeñas oscilaciones repetidas en baja presión. (pág. 93)</li>
-<li>Carga de refrigerante por baja presión: durante el llenado con motor en marcha a ralentí (sin acelerar), incorporar el fluido en pequeñas dosis evitando que la presión de baja supere los 2,5 bar. (pág. 67)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Verificación tras la reparación</div>
-        <p>Poner el motor a 1.500-1.800 rpm con 30 ºC ambiente y verificar que las presiones de alta y baja se sitúan dentro de los márgenes nominales del tipo de compresor, comprobando que el filtro deshidratador permanece caliente y seco en la línea de alta. (pág. 10, 85)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT405_01</code> Esfera de manómetro de baja presión R134a indicando escala en bar y psi — Fuente: 7. MANTENIMIENTO | DIAGNOSTICO Y REPARACION.pptx | pág. 2 |</span></div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT405_02</code> Esfera de manómetro de alta presión R134a indicando escala en bar y psi — Fuente: 7. MANTENIMIENTO | DIAGNOSTICO Y REPARACION.pptx | pág. 3 |</span></div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT405_03</code> Conjunto de puente de manómetros de alta y baja presión para diagnóstico R134a — Fuente: 7. MANTENIMIENTO | DIAGNOSTICO Y REPARACION.pptx | pág. 11 |</span></div>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">7. MANTENIMIENTO, DIAGNOSTICO Y REPARACION.pptx, págs. 1-100</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 12 de 19 · NT462 · Nº10. Carga y Diagonostico.pdf, págs. 123-125</summary>
-  <section id="nt462" data-tipo="proceso">
-    <div class="nota-header proceso">Nota de Proceso Nº 462 <span class="subtipo">Diagnóstico</span></div>
-    <div class="nota-body proceso">
-      <h1>Diagnóstico del sistema por presiones de trabajo y prueba de rendimiento</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Régimen de prueba del motor: 1.500 rpm.</li>
-<li>Presiones nominales compresor variable: Alta = 8 a 10 bar (máx. 12 bar); Baja = 2 bar.</li>
-<li>Presiones nominales compresor fijo: Alta = 10 a 20 bar; Baja = 0,5 a 2,5 bar.</li>
-<li>Tabla de rendimiento (Temperatura exterior frente a Temperatura en aireadores):<ul>
-<li>15 ºC exterior: 2 a 4 ºC en aireadores.</li>
-<li>20 ºC exterior: 4 a 6 ºC en aireadores.</li>
-<li>26 ºC exterior: 4 a 7 ºC en aireadores.</li>
-<li>32 ºC exterior: 5 a 8 ºC en aireadores.</li>
-<li>37 ºC exterior: 7 a 10 ºC en aireadores.</li>
-</ul>
-</li>
-<li>Presiones en reposo según temperatura exterior: 15 ºC = 3,9 bar; 20 ºC = 4,7 bar; 25 ºC = 5,5 bar; 30 ºC = 6,6 bar; 35 ºC = 7,5 bar; 40 ºC = 8,8 bar; 45 ºC = 9,8 bar. (págs. 123-125)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Síntoma</div>
-        <p>Insuficiencia de enfriamiento o anomalías en el rendimiento del equipo de climatización. (págs. 123-125)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Causas posibles</div>
-        <ul>
-<li>Presión de Alta fuera de tolerancias nominales.</li>
-<li>Presión de Baja fuera de tolerancias nominales.</li>
-<li>Desviación motivada por excesos o defectos de carga, o por la influencia de la temperatura ambiente exterior. (págs. 123-125)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo separar las causas</div>
-        <ol>
-<li>Comprobación de presiones de trabajo:<ul>
-<li>Conectar mangueras de Alta y Baja con las válvulas de la máquina cerradas.</li>
-<li>Arrancar el motor a 1.500 rpm con la turbina de aire fresco a máxima velocidad y el aire acondicionado activado.</li>
-<li>Evaluar las presiones según la tecnología del compresor:<ul>
-<li>Compresor variable: Alta constante a 8-10 bar (hasta 12 bar con calor extremo); Baja constante a 2 bar.</li>
-<li>Compresor fijo: Alta variable de 10 a 20 bar; Baja variable de 0,5 a 2,5 bar.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Comprobación de rendimiento del equipo:<ul>
-<li>Mantener el motor a 1.500 rpm, turbina al máximo y conectar la recirculación de aire.</li>
-<li>Dirigir la salida de aire a los difusores centrales y cerrar los laterales.</li>
-<li>Colocar un termómetro en la salida central y comparar la temperatura con la tabla de referencia frente a la temperatura ambiente exterior. (págs. 123-125)</li>
-</ul>
-</li>
-</ol>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Verificación tras la reparación</div>
-        <p>Comprobar que las presiones se estabilizan dentro de los rangos nominales y que la temperatura registrada en los difusores centrales cumple la tabla de rendimiento. (págs. 123-125)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">Nº10. Carga y Diagonostico.pdf, págs. 123-125</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 13 de 19 · NT464 · Nº10. Carga y Diagonostico.pdf, págs. 124-126</summary>
-  <section id="nt464" data-tipo="proceso">
-    <div class="nota-header proceso">Nota de Proceso Nº 464 <span class="subtipo">Diagnóstico</span></div>
-    <div class="nota-body proceso">
-      <h1>Diagnóstico de averías hidráulicas por combinación de presiones</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Valores normales compresor fijo (R134a a 1.500 rpm): Baja = 1,5 a 2 bar; Alta = 13,5 a 15 bar.</li>
-<li>Valores normales compresor variable eléctrico: Baja = 1,4 a 1,8 bar; Alta = 9 a 12 bar.</li>
-<li>Umbral de peligro de congelación por baja carga: presión de Baja &lt; 0,5 bar al acelerar. (págs. 124-125)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Síntoma</div>
-        <p>Ausencia de aire frío, enfriamiento insuficiente o comportamiento anómalo de las agujas de los manómetros de Alta y Baja. (págs. 124-126)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Causas posibles</div>
-        <ul>
-<li>Alta normal / Baja normal con aire caliente: exceso de aceite en el sistema, contaminación por aire/humedad, o válvula de expansión cerrada.</li>
-<li>Alta normal / Baja normal con manguito de baja muy frío: válvula de expansión demasiado abierta.</li>
-<li>Alta igual a Baja (presiones igualadas):<ul>
-<li>La presión de alta desciende al enfriar el condensador con agua: exceso de refrigerante, condensador obstruido o avería en el electroventilador.</li>
-<li>Presiones se equilibran rápidamente al parar el compresor y fluctúan en marcha: partícula bajo la válvula de descarga, o avería en válvulas/juntas.</li>
-<li>Presiones no varían: problema mecánico del compresor o baja cantidad de refrigerante en el circuito.</li>
-</ul>
-</li>
-<li>Alta baja / Baja baja:<ul>
-<li>Manguito de baja más frío que el evaporador: obstrucción mecánica en la línea de baja presión.</li>
-<li>Hielo en la línea de líquido o en el filtro: obstrucción en la línea de líquido o filtro deshidratador bloqueado.</li>
-</ul>
-</li>
-<li>Compresor fijo (1.500 rpm):<ul>
-<li>Carga baja (R134a: Baja 0,5-1 bar; Alta 6,5-9,5 bar): peligro de congelación si la baja cae a &lt; 0,5 bar al acelerar.</li>
-<li>Carga excesiva (R134a: Baja 2,5-3,5 bar; Alta 19-24 bar): presiones y temperaturas en aireadores muy elevadas. (págs. 124-126)</li>
-</ul>
-</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo separar las causas</div>
-        <ul>
-<li>Si la Alta baja al rociar agua sobre el condensador: limpiar el condensador o reparar el electroventilador.</li>
-<li>Si las presiones permanecen igualadas y no reaccionan: comprobar si existe fuga o sustituir el compresor por fallo mecánico interno.</li>
-<li>Si hay hielo en el filtro o tubería de líquido: sustituir la tubería obstruida y cambiar el filtro deshidratador. (pág. 126)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Verificación tras la reparación</div>
-        <p>Recuperar el refrigerante, reparar el componente defectuoso, efectuar el vacío, cargar la cantidad exacta de aceite nuevo y gas prescritos y verificar la estabilización de presiones. (pág. 126)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">Nº10. Carga y Diagonostico.pdf, págs. 124-126</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 14 de 19 · NT631 · CLIMATIZADOR MD FRAN.docx, págs. 24, 25</summary>
-  <section id="nt631" data-tipo="proceso">
-    <div class="nota-header proceso">Nota de Proceso Nº 631 <span class="subtipo">Diagnóstico</span></div>
-    <div class="nota-body proceso">
-      <h1>Diagnóstico de averías mediante lecturas de presión</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Régimen del motor durante la prueba de manómetros: 1.500 a 2.000 rpm tras 20 minutos de funcionamiento a 20 ºC ambiente. (pág. 5)</li>
-<li>Presión normal de reposo a 20 ºC ambiental con motor parado: 4,7 bares (0,47 MPa). (pág. 5)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Síntoma</div>
-        <p>Rendimiento de refrigeración deficiente o nulo en el habitáculo, con comportamiento anómalo en los niveles de alta y baja presión del circuito. (págs. 24, 25)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Causas posibles</div>
-        <ul>
-<li><strong>Lados de baja y alta presión elevados:</strong> Exceso de carga de refrigerante, condensador sucio o con ventilador inoperativo, o aire en la instalación. (pág. 25)</li>
-<li><strong>Lados de baja y alta presión bajos:</strong> Carga insuficiente de refrigerante, obstrucción por hielo/humedad en el filtro, o válvula de expansión bloqueada en cierre. (pág. 25)</li>
-<li><strong>Baja presión alta y Alta presión baja (presiones casi iguales):</strong> Compresor dañado (válvulas de compresión rotas), fallo del acoplamiento magnético o válvula reguladora de cilindrada defectuosa. (pág. 25)</li>
-<li><strong>Baja presión baja y Alta presión alta:</strong> Obstrucción parcial en el tramo de alta presión o válvula de expansión desajustada. (pág. 25)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo separar las causas</div>
-        <ol>
-<li>Conectar los acoplamientos rápidos de la estación de servicio a las tomas de alta y baja presión. (pág. 24)</li>
-<li>Arrancar el motor del vehículo a 1.500-2.000 rpm y conectar el climatizador al máximo rendimiento durante 20 minutos. (pág. 5)</li>
-<li>Leer los valores marcados por los manómetros de baja y alta presión e identificar la combinación exacta de desviaciones. (pág. 25)</li>
-<li>Si las presiones permanecen casi igualadas con el compresor acoplado, inspeccionar el estado de las válvulas internas del compresor o comprobar el pilotaje de la válvula reguladora. (pág. 25)</li>
-<li>Si la baja presión desciende a valores de vacío mientras la alta se mantiene baja, verificar la presencia de humedad helada en la válvula de expansión aplicando calor suave con un paño sobre el cuerpo. (pág. 25)</li>
-</ol>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Verificación tras la reparación</div>
-        <p>Cargar la masa exacta de R134a prescrita en la placa de características del vehículo y confirmar que las lecturas de alta y baja presión regresan a los márgenes normativos de trabajo. (págs. 24, 25)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT631_01</code> Cuadro de diagnóstico comparativo de lecturas de manómetros para los lados de alta y baja presión — Fuente: CLIMATIZADOR MD FRAN.docx, pág. 25</span></div>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">CLIMATIZADOR MD FRAN.docx, págs. 24, 25</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 15 de 19 · NT768 · DIAGNÓSTICO DE MANOMETROS.pdf, págs. 1-48</summary>
-  <section id="nt768" data-tipo="proceso">
-    <div class="nota-header proceso">Nota de Proceso Nº 768 <span class="subtipo">Diagnóstico</span></div>
-    <div class="nota-body proceso">
-      <h1>Diagnóstico del circuito frigorífico por lectura de manómetros</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Condiciones normalizadas de prueba: Temperatura ambiente exterior de 30 ºC y régimen de motor entre 1.500 y 1.800 rpm. (pág. 1, 3)</li>
-<li>Presiones nominales cilindrada variable: Baja 1,8 a 2,1 bar; Alta 6 a 13 bar. (pág. 1, 2)</li>
-<li>Presiones nominales cilindrada fija / cíclica: Baja 0,8 a 2,2 bar; Alta 10 a 20 bar. (pág. 3, 4)</li>
-<li>Falta de refrigerante / Válvula alta semi cerrada: Baja 0,5 a 0,8 bar; Alta 6 a 8 bar. Dosis de prueba: 50 a 100 g. (pág. 5, 6)</li>
-<li>Bulbo suelto: Baja 3 a 3,8 bar; Alta 12 a 14 bar. (pág. 7, 8)</li>
-<li>Válvula de expansión demasiado abierta: Baja 3,5 a 4,5 bar; Alta 10 a 14 bar. (pág. 9, 10)</li>
-<li>Válvula de expansión cerrada / obturada: Baja 0 bar (vacío); Alta 10 a 13 bar. (pág. 12, 14)</li>
-<li>Válvulas de baja tapadas / gota de hielo: Baja ~0 bar; Alta 4 a 6 bar. (pág. 15, 16)</li>
-<li>Válvula de baja comunicada: Baja 2,2 a 2,5 bar; Alta 10 a 12 bar. (pág. 18, 19)</li>
-<li>Evaporador congelado: Baja ~0 bar; Alta 7 a 10 bar. (pág. 20, 21)</li>
-<li>Prueba de estanqueidad en vacío: Baja a 1 atmósfera de depresión (-1 bar); Alta con aguja al tope. (pág. 25)</li>
-<li>Carga parcial a motor parado (350 g en circuito de 800 g): Baja y Alta igualadas entre 3 y 4 bar. (pág. 26, 27)</li>
-<li>Límite de seguridad en carga de líquido por baja a ralentí: máximo 2,5 bar. (pág. 30)</li>
-<li>Exceso de carga (1.100 g en circuito de 800 g): Baja 2,5 a 2,7 bar; Alta 16 a 18 bar. (pág. 31, 32)</li>
-<li>Electroventilador girando al revés: Baja 2,3 a 2,5 bar; Alta ~22 bar. (pág. 33, 34)</li>
-<li>Electroventilador inoperativo / condensador sucio: Baja 2,3 a 2,8 bar; Alta &gt;25 bar. (pág. 35, 36)</li>
-<li>Filtro deshumidificador obstruido: Baja 4,5 a 4,7 bar; Alta 21 a 27 bar. (pág. 38, 39)</li>
-<li>Filtro deshumidificador saturado de humedad (helado): Baja 0,3 a 0,5 bar; Alta 19 a 20 bar. (pág. 40)</li>
-<li>Trampillas/grifo de calefacción defectuosos: Baja 1,8 bar; Alta 12 a 15 bar. (pág. 41, 42)</li>
-<li>Tubos invertidos (Rotalock): Baja 4,5 a 4,8 bar; Alta 7 a 8 bar. (pág. 43, 44)</li>
-<li>Compresor no conecta / válvula regulación defectuosa: Baja 4,5 a 6 bar; Alta igual a la baja. (pág. 46, 47)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Síntoma</div>
-        <p>Anomalías en la capacidad de refrigeración del sistema, lecturas de presión fuera de margen (presiones excesivamente altas o bajas, agujas en vacío o igualadas) o comprobación del estado de funcionamiento y carga del circuito frigorífico medidas con el puente de manómetros en las tomas de alta y baja presión a 30 ºC de temperatura exterior y 1.500-1.800 rpm de régimen de motor. (pág. 1, 3)</p>
-<p>| 
-|---|---|---|---|
-|</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Causas posibles</div>
-        <p>Cuadro sintomático por lecturas de presión en el manómetro de baja y alta:</p>
-<ol>
-<li>Presiones normales en compresor de cilindrada variable: Baja de 1,8 a 2,1 bar; Alta de 6 a 13 bar. (pág. 1, 2)</li>
-<li>Presiones normales en compresor de cilindrada fija o cíclico: Baja de 0,8 a 2,2 bar (el valor de 0,8 bar se obtiene únicamente en entornos de muy baja humedad); Alta de 10 a 20 bar. (pág. 3, 4)</li>
-<li>Falta de refrigerante o válvula de alta del compresor semi cerrada: Baja de 0,5 a 0,8 bar; Alta de 6 a 8 bar. (pág. 5, 6)
-| 4. Bulbo de la válvula de expansión suelto: Baja de 3 a | 8 bar; Alta de 12 a 14 bar. (pág. 7 | 8) |  |
-|---|---|---|---|
-| 5. Válvula de expansión demasiado abierta: Baja de | 5 a | 5 bar; Alta de 10 a 14 bar. (pág. 9 | 10) |</li>
-<li>Válvula de expansión cerrada (obturada) o bulbo roto: Baja a 0 bar (desplazándose la aguja hacia la zona de vacío al acelerar el motor); Alta de 10 a 13 bar. (pág. 12, 14)</li>
-<li>Válvulas de baja del compresor tapadas (cerradas) o gota de hielo en la válvula de expansión: Baja sobre 0 bar; Alta de 4 a 6 bar. (pág. 15, 16)</li>
-<li>Válvula de baja comunicada (comunicación entre baja y alta en un cilindro): Baja de 2,2 a 2,5 bar (pueden apreciarse ligeras oscilaciones por golpes de ariete); Alta de 10 a 12 bar. (pág. 18, 19)</li>
-<li>Evaporador congelado: Baja casi a 0 bar; Alta de 7 a 10 bar. Causado por la válvula de regulación de cilindrada bloqueada en máximo rendimiento (cilindrada variable) o por fallo de desconexión del termostato (compresor cíclico). (pág. 20, 21)</li>
-<li>Manómetros sin conectar / obuses no desplazados / circuito vacío: Baja 0 bar; Alta 0 bar. Causa por rosca de toma muy hundida, mangueras invertidas, juntas tóricas pegadas o falta total de gas en el circuito. (pág. 23, 24)</li>
-<li>Vacío efectuado / prueba de estanqueidad: Baja a 1 atmósfera de depresión (-1 bar); Alta con la aguja al tope. (pág. 25)</li>
-<li>Motor parado tras la primera carga parcial (~350 g en circuito de 800 g): Baja y Alta igualadas entre 3 y 4 bar (idéntica a la presión de la bombona de carga). (pág. 26, 27)
-| 13. Motor en marcha con media carga: Baja sobre | 8 bar; Alta de 7 a 8 bar. (pág. 28 | 29) |  |
-|---|---|---|---|
-| 14. Exceso de carga de refrigerante (ejemplo: 1.100 g en un circuito de 800 g): Baja de | 5 a | 7 bar; Alta de 16 a 18 bar con electroventilador funcionando de forma continua. (pág. 30 | 32) |
-| 15. Electroventilador girando en sentido contrario (cableado invertido): Baja de | 3 a | 5 bar; Alta sobre 22 bar sin parada del electroventilador. (pág. 33 | 34) |
-| 16. Electroventilador inoperativo o condensador sucio (interior o exteriormente): Baja de | 3 a | 8 bar; Alta sobre 25 bar (el compresor puede cortar por disparo del presostato de máxima). (pág. 35 | 36) |</li>
-<li>Filtro deshumidificador obstruido o saturado:
-        - Obstrucción con toma de alta previa al filtro: Baja de 4,5 a 4,7 bar; Alta de 21 a 27 bar. (pág. 38, 39)
-        - Obstrucción con toma de alta posterior al filtro: presiones de alta y baja igualadas según la restricción del filtro. (pág. 40)
-        - Saturación por humedad (filtro helado): Baja de 0,3 a 0,5 bar; Alta de 19 a 20 bar. (pág. 40)</li>
-<li>Entrada indeseada de aire caliente por trampillas o grifo de calefacción: Baja 1,8 bar; Alta de 12 a 15 bar (presiones frigoríficas correctas pero no sale aire frío por los difusores). (pág. 41, 42)</li>
-<li>Tubos de aspiración y descarga instalados invertidos en el compresor (Rotalock): Baja de 4,5 a 4,8 bar; Alta de 7 a 8 bar. En compresores cíclicos el embrague acopla a intervalos de pocos segundos; en cilindrada variable acopla/desacopla con elevada frecuencia o genera pequeñas oscilaciones en baja. (pág. 43, 45)</li>
-<li>No conecta el compresor / patina mucho el embrague / válvula de regulación defectuosa o destruida por suciedad: Baja de 4,5 a 6 bar; Alta igual a la baja. (pág. 45, 47)</li>
-</ol>
-<p>(pág. 47)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo separar las causas</div>
-        <p>Procedimientos de comprobación diferencial y pruebas de aislamiento de averías:</p>
-<ol>
-<li>
-<p>Falta de refrigerante vs Válvula de alta semi cerrada:</p>
-<ul>
-<li>Incorporar entre 50 y 100 gramos de refrigerante al circuito.</li>
-<li>Si los manómetros no reaccionan positivamente tras la adición, se diagnostica la válvula de alta del compresor semi cerrada. (pág. 6)</li>
-</ul>
-</li>
-<li>
-<p>Bulbo de válvula de expansión suelto vs avería interna:</p>
-<ul>
-<li>Si dispone de bulbo exterior y está suelto, fijarlo en su posición con la abrazadera.</li>
-<li>Si es una válvula monobloc, aplicar espray enfriador o refrigerante líquido sobre el bulbo de la parte superior. Si no reacciona, sustituir la válvula de expansión y el filtro deshumidificador. (pág. 8)</li>
-</ul>
-</li>
-<li>
-<p>Válvula de expansión demasiado abierta y prueba de válvulas del compresor:</p>
-<ul>
-<li>Rociar espray enfriador o refrigerante líquido sobre el bulbo. Si no reacciona, sustituir la válvula de expansión y el filtro deshumidificador. (pág. 10)</li>
-<li>Para comprobar si la llegada de líquido dañó las válvulas del compresor: tras sustituir la válvula y el filtro, rociar con espray enfriador el bulbo; la aguja de baja debe caer de inmediato hacia 0 bar. Parar el compresor en ese instante: si la aguja de baja sube rápidamente en positivo hacia arriba, las válvulas del compresor están dañadas. (pág. 11)</li>
-</ul>
-</li>
-<li>
-<p>Válvula de expansión cerrada o bulbo roto:</p>
-<ul>
-<li>Tras sustituir la válvula y el filtro deshidratador, verificar si el compresor conserva nivel de lubricante suficiente, ya que el taponamiento de la válvula impide el retorno de aceite. (pág. 14)</li>
-</ul>
-</li>
-<li>
-<p>Válvulas de baja tapadas vs Gota de hielo en la válvula de expansión:</p>
-<ul>
-<li>Detener el equipo frigorífico y volver a ponerlo en marcha. Si la anomalía desaparece y vuelve a surgir cuando el fluido pasa de nuevo por la válvula, se trata de una gota de hielo. Si es permanente, son las válvulas de baja del compresor tapadas.</li>
-<li>En ambos casos, es obligatorio sustituir el filtro deshidratador y realizar un vacío prolongado (depresión) para extraer la humedad residual. (pág. 16, 17)</li>
-</ul>
-</li>
-<li>
-<p>Válvula de baja comunicada:</p>
-<ul>
-<li>Aplicar espray enfriador o refrigerante líquido sobre el bulbo de la válvula de expansión.</li>
-<li>Cuando la aguja de baja descienda a 0 bar, detener el compresor.</li>
-<li>Si la aguja de baja sube con rapidez en sentido positivo, se confirma la comunicación de presiones entre alta y baja en el cilindro. (pág. 19)</li>
-</ul>
-</li>
-<li>
-<p>Evaporador congelado:</p>
-<ul>
-<li>Constatar la pérdida de caudal de aire por los difusores.</li>
-<li>En sistemas cíclicos, al detener el sistema y volver a conectar tras unos minutos el flujo se restablece temporalmente hasta congelarse de nuevo.</li>
-<li>En compresores de cilindrada variable, sustituir el compresor y el filtro deshumidificador. (pág. 21, 22)</li>
-</ul>
-</li>
-<li>
-<p>Manómetros sin conectar / obuses:</p>
-<ul>
-<li>Comprobar que los empujadores de las mangueras accionan los obuses (verificar profundidad de rosca o inversión de mangueras).</li>
-<li>Verificar si la falta de acoplamiento del compresor se debe a ausencia total de gas en el circuito. (pág. 23, 24)</li>
-</ul>
-</li>
-<li>
-<p>Carga de refrigerante líquido por baja presión con motor en marcha:</p>
-<ul>
-<li>Con el motor a ralentí (sin acelerar), aportar el refrigerante en dosis reducidas, controlando que la presión en el manómetro de baja no supere los 2,5 bar. (pág. 30)</li>
-</ul>
-</li>
-<li>
-<p>Condensador sucio interiormente vs fallo de ventilador:
-        - Rociar con un chorro de agua la parte superior del condensador.
-        - Si la aguja del manómetro de alta inicia un descenso inmediato mientras cae el agua, el condensador está sucio interiormente. (pág. 36, 37)</p>
-</li>
-<li>
-<p>Estado del filtro deshumidificador:
-        - Con el circuito de aire acondicionado funcionando, el filtro deshidratador ubicado en la línea de alta presión debe estar caliente y seco. Si se presenta helado (saturación de humedad), debe sustituirse. (pág. 40)</p>
-</li>
-<li>
-<p>Calefacción y trampillas:
-        - Si las presiones frigoríficas de alta y baja son nominales pero no hay salida de aire frío, verificar mecánicamente el cierre de las trampillas de mezcla y la estanqueidad del grifo de calefacción. (pág. 42)</p>
-</li>
-<li>
-<p>Válvula de regulación de cilindrada obstruida por suciedad:
-        - Si el embrague acopla pero no existe variación de presión entre alta y baja, la válvula de regulación está destruida o bloqueada por suciedad. Se debe realizar la limpieza integral del circuito frigorífico y la sustitución del filtro deshumidificador. (pág. 47, 48)</p>
-</li>
-</ol>
-<p>(pág. 48)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Verificación tras la reparación</div>
-        <ol>
-<li>Conectar el puente de manómetros y verificar que a 30 ºC de temperatura ambiente y 1.500-1.800 rpm de motor las presiones de alta y baja se sitúan dentro de las lecturas nominales del compresor. (pág. 1, 3)</li>
-<li>Tocar el filtro deshidratador en la línea de alta presión para comprobar que se mantiene caliente y seco. (pág. 40)</li>
-<li>Medir la temperatura del caudal de aire vertido por los difusores centrales de ventilación. (pág. 42)</li>
-<li>Confirmar el ciclado automático del electroventilador del condensador sin quedar permanente ni inoperativo. (pág. 34, 36)</li>
-<li>En reparaciones con presencia de partículas o agarrotamiento del compresor, verificar que se ha efectuado el lavado del circuito y el reabastecimiento del nivel de aceite frigorífico antes de dar por concluida la intervención. (pág. 14, 48)</li>
-</ol>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT768_01</code> Esfera de manómetro de baja presión R134a con escalas en bar | psi | kPa y temperaturas de saturación — Fuente: DIAGNÓSTICO DE MANOMETROS.pdf | pág. 1 |</span></div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT768_02</code> Esfera de manómetro de alta presión R134a con escalas en bar | psi y kPa — Fuente: DIAGNÓSTICO DE MANOMETROS.pdf | pág. 1 |  |</span></div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT768_03</code> Manómetros en prueba de estanqueidad por depresión (vacío) — Fuente: DIAGNÓSTICO DE MANOMETROS.pdf, pág. 25</span></div>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">DIAGNÓSTICO DE MANOMETROS.pdf, págs. 1-48</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 16 de 19 · NT842 · Audi A5 Coupé_2008_aire acondicionado.pdf, págs. 311-316, 319-321</summary>
-  <section id="nt842" data-tipo="proceso">
-    <div class="nota-header proceso">Nota de Proceso Nº 842 <span class="subtipo">Procedimiento</span></div>
-    <div class="nota-body proceso">
-      <h1>Comprobación del rendimiento frigorífico del climatizador</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Objeto y alcance<span class="criterio">RA1-CEa</span></div>
-        <p>Evaluar la capacidad de enfriamiento del sistema de climatización y verificar la respuesta electrónica del compresor de cilindrada variable sin embrague electromagnético. (págs. 311, 314)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Condiciones previas<span class="criterio">RA3-CEh</span></div>
-        <ol>
-<li>Temperatura ambiente exterior superior a 15 ºC. (pág. 311)</li>
-<li>Radiador del motor y condensador limpios y sin suciedad. (pág. 311)</li>
-<li>Correa poli-V en correcto estado de conservación y tensión. (pág. 311)</li>
-<li>Capó delantero, puertas y ventanillas completamente cerrados. (págs. 311, 314)</li>
-<li>Motor en marcha a temperatura de servicio. (págs. 311, 314)</li>
-</ol>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Equipo y material<span class="criterio">RA2-CEd</span></div>
-        <p>Estación de diagnosis VAS 5051 (o VAS 5052) con cable de conexión T16 y termómetro digital de aireación. (págs. 311, 314)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Temperatura ambiental mínima para la prueba: &gt; 15 ºC. (pág. 311)</li>
-<li>Corriente de activación de N280 a máximo rendimiento: entre 0,75 A y 0,8 A. (págs. 120, 177)</li>
-<li>Presión de activación de electroventiladores V7/V177: 9 bares en la línea de alta. (pág. 321)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Verificación final<span class="criterio">RA2-CEe · RA2-CEg</span></div>
-        <p>Confirmar que el tubo de baja presión (diámetro grueso) entre el acoplamiento rápido y el compresor se enfría intensamente y verificar que en el grupo de valores de medición 002 el campo 1 permanezca en "0" (sin condiciones de desconexión). (págs. 43, 316, 323)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Seguridad y normativa<span class="criterio">RA4-CEa</span></div>
-        <p>Prohibido arrancar el motor si las tuberías de refrigerante del compresor están desconectadas. Al carecer de acoplamiento electromagnético, el compresor gira de forma ininterrumpida con el motor y se destruye por sobrecalentamiento interno si trabaja en seco. (págs. 339, 378)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Pasos</div>
-        <ol>
-<li>Abrir todos los difusores del salpicadero y arrancar el motor del vehículo. (pág. 314)</li>
-<li>Conectar el equipo de diagnosis VAS 5051 al conector de 16 polos e iniciar la autodiagnosis en la dirección "08 - Electrónica de climatización". (págs. 8, 314)</li>
-<li>Seleccionar la función "Leer bloque de valores de medición" e ingresar al grupo "001". (págs. 40, 314)</li>
-<li>Seleccionar el modo "Econ" o "AC OFF" en el panel de mandos y verificar que los campos 1 y 2 del grupo 001 muestren 0 A de corriente (compresor desactivado) y que el campo 4 indique la presión de reposo adecuada a la temperatura ambiente. (pág. 314)</li>
-<li>Pulsar la tecla "Auto / AC ON" y situar la preselección de temperatura en "LO" (frío máximo) en ambos lados. (págs. 314, 316)</li>
-<li>Comprobar que en los campos 1 y 2 del grupo 001 la corriente teórica y la corriente efectiva de la válvula N280 aumenten por encima de 0,3 A (hasta alcanzar entre 0,75 A y 0,8 A). (págs. 177, 316)</li>
-<li>Comprobar que la presión visualizada en el campo 4 del grupo 001 aumente de forma progresiva por encima del valor de reposo. (pág. 316)</li>
-<li>Verificar que los electroventiladores del radiador (V7 / V177) se conectan automáticamente en cuanto la presión en el lado de alta supera los 9 bares. (pág. 321)</li>
-<li>Medir la temperatura del aire soplado por los difusores centrales confirmando que desciende a los valores de confort especificados. (págs. 314, 316)</li>
-</ol>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">Audi A5 Coupé_2008_aire acondicionado.pdf, págs. 311-316, 319-321</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 17 de 19 · NT863 · CLIMATIZACION INTRODUCCION.PDF, págs. 225-239</summary>
-  <section id="nt863" data-tipo="proceso">
-    <div class="nota-header proceso">Nota de Proceso Nº 863 <span class="subtipo">Diagnóstico</span></div>
-    <div class="nota-body proceso">
-      <h1>Diagnóstico del sistema de climatización por Climtest</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Temperatura de soplado en difusores con buen funcionamiento (15-25 ºC ambientales): de 2 ºC a 10 ºC. (págs. 235-236)</li>
-<li>Umbral de temperatura exterior para prueba con Climtest: &gt; 16 ºC (a temperaturas inferiores el compresor corta prematuramente). (pág. 239)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Síntoma</div>
-        <p>La instalación de climatización no produce frío o muestra un rendimiento frigorífico insuficiente en los difusores. (págs. 226, 235)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Causas posibles</div>
-        <ul>
-<li>Carga insuficiente de fluido frigorífico R134a. (págs. 226, 234)</li>
-<li>Exceso de carga de fluido frigorífico. (págs. 227, 234)</li>
-<li>Filtro deshidratante saturado de humedad produciendo preexpansión. (págs. 221, 228, 234)</li>
-<li>Pérdida de capacidad de compresión en el compresor. (pág. 229)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo separar las causas</div>
-        <ol>
-<li>Conectar las tomas del equipo de diagnóstico Climtest a las válvulas de alta (HP) y baja presión (BP) y fijar las sondas de temperatura en la entrada de la válvula de expansión, aspiración del compresor y difusor central. (págs. 230, 237)</li>
-<li>Medir la temperatura ambiente y la temperatura del aire soplado en difusores: con temperatura ambiente entre 15 ºC y 25 ºC, la temperatura de soplado correcta debe situarse entre 2 ºC y 10 ºC. (págs. 235-236)</li>
-<li>Evaluar la baja presión y las temperaturas:<ul>
-<li>Baja presión débil + recalentamiento elevado (&gt; 10 ºC) + subenfriamiento débil (&lt; 2 ºC): Diagnóstico de <strong>falta de fluido frigorífico</strong>. (págs. 226, 234)</li>
-<li>Recalentamiento débil (&lt; 2 ºC) + alta presión elevada + subenfriamiento elevado (&gt; 10 ºC): Diagnóstico de <strong>exceso de fluido frigorífico</strong>. (págs. 227, 234)</li>
-<li>Recalentamiento normal (2-10 ºC) + subenfriamiento elevado (&gt; 10 ºC) + salto térmico entre la entrada y salida del filtro: Diagnóstico de <strong>filtro deshidratante saturado (preexpansión)</strong>. (págs. 221, 228, 234)</li>
-<li>Baja presión alta + alta presión débil (en compresores de cilindrada fija): Diagnóstico de <strong>compresor averiado</strong>. (pág. 229)</li>
-</ul>
-</li>
-</ol>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Verificación tras la reparación</div>
-        <p>Confirmar que tras la intervención los valores de subenfriamiento y recalentamiento retornan al intervalo de 2 ºC a 10 ºC y que la temperatura de los difusores desciende al rango de 2 ºC a 10 ºC. (págs. 231, 235)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT863_01</code> Pantalla del analizador Climtest con los mensajes de diagnóstico (falta de fluido, exceso de fluido, filtro deshidratante saturado) — Fuente: CLIMATIZACION INTRODUCCION.PDF, pág. 238</span></div>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">CLIMATIZACION INTRODUCCION.PDF, págs. 225-239</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 18 de 19 · NT870 · MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 41, 47</summary>
-  <section id="nt870" data-tipo="proceso">
-    <div class="nota-header proceso">Nota de Proceso Nº 870 <span class="subtipo">Diagnóstico</span></div>
-    <div class="nota-body proceso">
-      <h1>Diagnóstico del estado de la carga a vehículo parado</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Presión teórica de reposo nominal a 25 ºC ambiental: 6,5 bar. (págs. 41, 47)</li>
-<li>Umbral de sobrepresión en parado por exceso de carga / aire: 7,5 bar a 24-26 ºC ambientales. (págs. 41, 47)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Síntoma</div>
-        <p>Falta de enfriamiento en el habitáculo o comportamiento anómalo de las presiones detectado antes de poner en marcha el motor. (págs. 41, 47)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Causas posibles</div>
-        <ul>
-<li>Fuga de gas con pérdida de masa de líquido refrigerante. (págs. 41, 47)</li>
-<li>Contaminación del circuito por mezcla de aire no purgado o presencia de gases incondensables (asociación de gases). (págs. 41, 47)</li>
-<li>Sobrecarga de fluido frigorífico por un proceso de llenado incorrecto. (págs. 41, 47)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo separar las causas</div>
-        <ol>
-<li>Conectar la estación de manómetros al vehículo con el motor parado y a temperatura de reposo (frenado y estabilizado). (págs. 41, 47)</li>
-<li>Medir la temperatura ambiental exterior y la temperatura del condensador con un termómetro de contacto. (págs. 41, 47)</li>
-<li>Leer la presión de reposo indicada por el manómetro de baja presión y comparar los valores con la tabla de diagnóstico a vehículo parado:<ul>
-<li><strong>Presión de 6,5 bar con 25 ºC en manómetro, 24-26 ºC en condensador y 24-26 ºC ambiental:</strong> Indica <strong>carga correcta</strong>. (págs. 41, 47)</li>
-<li><strong>Presión de 6,5 bar con 25 ºC en manómetro, pero 30 ºC en condensador y 30 ºC ambiental:</strong> Indica <strong>falta de líquido</strong> refrigerante en la instalación. (págs. 41, 47)</li>
-<li><strong>Presión elevada de 7,5 bar con 30 ºC en manómetro frente a 24-26 ºC ambientales:</strong> Indica <strong>asociación de gases / presencia de aire</strong> incondensable en el circuito. (págs. 41, 47)</li>
-<li><strong>Presión elevada de 7,5 bar con 30 ºC en manómetro y 30 ºC en condensador con motor frío a 24-26 ºC ambientales:</strong> Indica <strong>exceso de carga</strong> de fluido. (págs. 41, 47)</li>
-</ul>
-</li>
-</ol>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Verificación tras la reparación</div>
-        <p>Si se detecta falta de líquido, realizar la prueba de detección de fugas; si se determina la presencia de aire o exceso de carga, evacuar por completo el refrigerante, efectuar un vacío de 20 minutos y recargar la masa exacta de fluido recomendada. (págs. 39, 41, 47)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">MANUAL AIRE ACONDICIONADO-CLIMATIZADOR - FORMAUTO.pdf, págs. 41, 47</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 19 de 19 · NT878 · MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 79, 82</summary>
-  <section id="nt878" data-tipo="proceso">
-    <div class="nota-header proceso">Nota de Proceso Nº 878 <span class="subtipo">Diagnóstico</span><span class="fusionado">Hella</span></div>
-    <div class="nota-body proceso">
-      <h1>Tabla de diagnóstico de averías del circuito frigorífico por manómetros</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Lectura de referencia: valores comparados con la tabla del manual de reparación específico según temperatura ambiental. (pág. 79)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Síntoma</div>
-        <p>Falta de rendimiento frigorífico, enfriamiento nulo o comportamiento anormal de las presiones de trabajo en la estación de manómetros. (pág. 82)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Causas posibles</div>
-        <ul>
-<li>Válvula de expansión bloqueada en apertura o en cierre. (pág. 82)</li>
-<li>Compresor dañado (daños en placas de válvulas o desgastes mecánicos). (pág. 82)</li>
-<li>Válvula de regulación de cilindrada del compresor defectuosa o desajustada. (pág. 82)</li>
-<li>Excesso o falta de agente frigorífico R134a. (pág. 82)</li>
-<li>Filtro deshidratador saturado de humedad. (pág. 82)</li>
-<li>Presencia de aire en el interior del circuito. (pág. 82)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo separar las causas</div>
-        <ol>
-<li>Acoplar la batería de manómetros a las tomas de alta (HP) y baja presión (BP) y poner en marcha la instalación a régimen de servicio. (págs. 79, 82)</li>
-<li>Interpretar la lectura combinada de presiones según la tabla de diagnóstico:<ul>
-<li><strong>Baja presión Alta / Alta presión Baja:</strong> Válvula de expansión bloqueada en apertura, compresor dañado (válvulas rotas) o válvula de regulación de cilindrada defectuosa. (pág. 82)</li>
-<li><strong>Baja presión Baja / Alta presión Baja:</strong> Carga de refrigerante escasa o fuga en el circuito. (pág. 82)</li>
-<li><strong>Baja presión Baja / Alta presión Alta:</strong> Válvula de expansión bloqueada en cierre, filtro deshidratante saturado de humedad u obstrucción en el condensador/evaporador. (pág. 82)</li>
-<li><strong>Baja presión Alta / Alta presión Alta:</strong> Exceso de refrigerante, presencia de aire en el circuito o falta de condensación por fallo en los electroventiladores. (pág. 82)</li>
-<li><strong>Baja y Alta presión casi iguales:</strong> Compresor destruido mecánicamente, correa rota o fallo en el embrague electromagnético. (pág. 82)</li>
-</ul>
-</li>
-</ol>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Verificación tras la reparación</div>
-        <p>Corregir la causa detectada (limpieza/enjuague, sustitución del componente o recarga exacta) y verificar que las presiones de alta y baja se estabilizan dentro de los márgenes nominales. (págs. 79, 82)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">MANUAL CLIMATIZACION 2010 HELLA  EN WORD.pdf, págs. 79, 82</p>
-      </div>
-    </div>
-  </section>
-    </details>
-  </div>
 
   <div class="grupo-componente" id="grp-diagnostico-compresor">
     <div class="grupo-cab"><span class="grupo-nombre">Diagnóstico de averías mecánicas e internas del compresor</span><span class="grupo-cuenta">12 fuentes sin fusionar</span></div>
@@ -44250,6 +43020,255 @@ En la versión de nueva generación, ha sido revisada técnicamente y adaptada e
     </div>
   </section>
 
+  <section id="nt1003" data-tipo="proceso">
+    <div class="nota-header proceso">Nota de Proceso Nº 1003 <span class="subtipo">Diagnóstico</span></div>
+    <div class="nota-body proceso">
+      <h1>Diagnóstico del circuito de climatización mediante lectura de presiones y rendimiento — <strong>NT-DIAG-MANOMETROS</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de referencia<span class="criterio">RA3-CEh</span></div>
+        <h3>Presiones en reposo según la temperatura exterior</h3>
+<table>
+<thead>
+<tr>
+<th>Temp. Exterior (ºC)</th>
+<th>Presión en Reposo (bar)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>15 ºC</td>
+<td>3,9 bar</td>
+</tr>
+<tr>
+<td>20 ºC</td>
+<td>4,7 bar (0,47 MPa)</td>
+</tr>
+<tr>
+<td>25 ºC</td>
+<td>5,5 bar (6,5 bar a 25 ºC en manómetro)</td>
+</tr>
+<tr>
+<td>30 ºC</td>
+<td>6,6 bar</td>
+</tr>
+<tr>
+<td>35 ºC</td>
+<td>7,5 bar</td>
+</tr>
+<tr>
+<td>40 ºC</td>
+<td>8,8 bar</td>
+</tr>
+<tr>
+<td>45 ºC</td>
+<td>9,8 bar</td>
+</tr>
+<tr>
+<td>(fuente: NT83, pág. 125; NT306, pág. 46; NT309, pág. 1; NT351, pág. 125; NT462, pág. 125; NT631, pág. 5; NT870, pág. 41).</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>Presiones de trabajo según tecnología de compresor</h3>
+<ul>
+<li><strong>Compresor de cilindrada fija</strong>: Alta entre 10 y 20 bar; Baja entre 0,5 y 2,5 bar (o 0,8 a 2,2 bar a 1.500-1.800 rpm con 30 ºC) (NT83, pág. 123; NT349, pág. 123; NT405, pág. 16; NT462, pág. 123; NT768, pág. 3).<ul>
+<li>Carga normal R134a (a 1.500 rpm): Baja 1,5 a 2,5 bar; Alta 13,5 a 15 bar (NT83, pág. 125; NT351, pág. 125).</li>
+<li>Carga baja R134a: Baja 0,5 a 1 bar; Alta 6,5 a 9 bar (peligro de congelación si Baja &lt; 0,5 bar al acelerar) (NT83, pág. 125; NT351, pág. 125; NT464, pág. 125).</li>
+<li>Carga excesiva R134a: Baja 2,5 a 3,5 bar; Alta 19 a 24 bar (NT83, pág. 125; NT351, pág. 125; NT464, pág. 125).</li>
+</ul>
+</li>
+<li><strong>Compresor de cilindrada variable</strong>: Alta constante entre 8 y 10 bar (puede alcanzar 12 bar con calor extremo); Baja constante a 2 bar (o 1,8 a 2,2 bar en manómetro hidráulico) (NT83, pág. 123; NT349, pág. 123; NT351, pág. 124; NT462, pág. 123).<ul>
+<li>Baja presión en compresor de potencia regulada: aprox. 2,0 bares constantes (NT223, pág. 18).</li>
+<li>Compresor variable eléctrico a 1.500 - 1.700 rpm (carga normal 550 g): Baja 1,4 bar; Alta 12 bar; Aireadores 1,7 ºC; Reposo 5 bar (NT83, pág. 124; NT351, pág. 124).</li>
+<li>Carga baja (300 g): Baja 1,8 bar; Alta 9 - 10 bar; Aireadores 2,4 ºC; Reposo 4,5 bar (NT83, pág. 124; NT351, pág. 124).</li>
+<li>Carga excesiva (1.000 g): Baja 1,6 bar; Alta 10,5 bar; Aireadores 1,1 ºC; Reposo 5 bar (NT83, pág. 124; NT351, pág. 124).</li>
+<li>A 30 ºC ambiente (1.500-1.800 rpm): Baja 1,8 a 2,1 bar; Alta 6 a 13 bar (NT405, pág. 10; NT768, pág. 1).</li>
+</ul>
+</li>
+<li><strong>Lectura específica puntual</strong>: Alta en manómetro rojo (HP) 16 bar (230 psi); Baja en manómetro azul (LP) 1,8 bar (26 psi) (NT147, pág. 1).</li>
+</ul>
+<h3>Variación de presiones según temperatura exterior (Compresor fijo R134a)</h3>
+<table>
+<thead>
+<tr>
+<th>Temp. Exterior (ºC)</th>
+<th>Baja Presión (bar)</th>
+<th>Alta Presión (bar)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>15 ºC</td>
+<td>1,2 - 1,5 bar</td>
+<td>8 - 10 bar</td>
+</tr>
+<tr>
+<td>20 ºC</td>
+<td>1,5 - 1,8 bar</td>
+<td>9 - 12 bar</td>
+</tr>
+<tr>
+<td>26 ºC</td>
+<td>1,8 - 2,0 bar</td>
+<td>12 - 14,5 bar</td>
+</tr>
+<tr>
+<td>32 ºC</td>
+<td>2,1 - 2,3 bar</td>
+<td>14,5 - 18 bar</td>
+</tr>
+<tr>
+<td>37 ºC</td>
+<td>2,3 - 2,5 bar</td>
+<td>18 - 20 bar</td>
+</tr>
+<tr>
+<td>(fuente: NT351, pág. 125).</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>Prueba de rendimiento (Temperatura exterior frente a salida en aireadores centrales)</h3>
+<ul>
+<li>15 ºC exterior: 2 a 4 ºC en aireadores (NT83, pág. 123; NT349, pág. 123; NT462, pág. 123).</li>
+<li>20 ºC exterior: 4 a 6 ºC en aireadores (NT83, pág. 123; NT349, pág. 123; NT462, pág. 123).</li>
+<li>26 ºC exterior: 4 a 7 ºC en aireadores (NT83, pág. 123; NT349, pág. 123; NT462, pág. 123).</li>
+<li>32 ºC exterior: 5 a 8 ºC en aireadores (NT83, pág. 123; NT349, pág. 123; NT462, pág. 123).</li>
+<li>37 ºC exterior: 7 a 10 ºC en aireadores (NT83, pág. 123; NT349, pág. 123; NT462, pág. 123).</li>
+<li>Margen de temperatura de confort estándar en tobera: 3 a 8 ºC (NT223, pág. 17) o 2 a 10 ºC con 15-25 ºC exteriores (NT241, pág. 235; NT863, pág. 235).</li>
+<li>Valores correctos de Subenfriamiento (SC) y Recalentamiento (SR): entre 2 ºC y 10 ºC (NT241, pág. 203, 209; NT863, pág. 231).</li>
+</ul>
+<h3>Cuadro sintomático de lecturas en anomalías (a 30 ºC / 1.500-1.800 rpm)</h3>
+<ul>
+<li>Falta refrigerante / Válvula alta semi cerrada: Baja 0,5 a 0,8 bar; Alta 6 a 8 bar (NT405, pág. 20; NT768, pág. 5).</li>
+<li>Bulbo suelto: Baja 3 a 3,8 bar; Alta 12 a 14 bar (NT405, pág. 24; NT768, pág. 7).</li>
+<li>Válvula expansión demasiado abierta: Baja 3,5 a 4,5 bar; Alta 10 a 14 bar (NT405, pág. 28; NT768, pág. 9).</li>
+<li>Válvula expansión cerrada / obturada: Baja 0 bar (vacío); Alta 10 a 13 bar (NT405, pág. 10; NT768, pág. 12).</li>
+<li>Válvulas baja tapadas / Gota de hielo: Baja ~0 bar; Alta 4 a 6 bar (NT405, pág. 38; NT768, pág. 15).</li>
+<li>Válvula baja comunicada: Baja 2,2 a 2,5 bar; Alta 10 a 12 bar (NT405, pág. 43; NT768, pág. 18).</li>
+<li>Evaporador congelado: Baja ~0 bar; Alta 7 a 10 bar (NT405, pág. 10; NT768, pág. 20).</li>
+<li>Exceso de carga (1.100 g en circuito de 800 g): Baja 2,5 a 2,7 bar; Alta 16 a 18 bar (NT405, pág. 71; NT768, pág. 30).</li>
+<li>Electroventilador girando al revés: Baja 2,3 a 2,5 bar; Alta ~22 bar (NT405, pág. 10; NT768, pág. 33).</li>
+<li>Electroventilador inoperativo / Condensador sucio: Baja 2,3 a 2,8 bar; Alta &gt;25 bar (NT405, pág. 10; NT768, pág. 35).</li>
+<li>Filtro deshumidificador obstruido: Baja 4,5 a 4,7 bar; Alta 21 a 27 bar (NT405, pág. 85; NT768, pág. 38).</li>
+<li>Filtro deshumidificador helado (saturado): Baja 0,3 a 0,5 bar; Alta 19 a 20 bar (NT405, pág. 85; NT768, pág. 40).</li>
+<li>Trampillas/grifo calefacción defectuosos: Baja 1,8 bar; Alta 12 a 15 bar (NT405, pág. 10; NT768, pág. 41).</li>
+<li>Tubos invertidos en compresor: Baja 4,5 a 4,8 bar; Alta 7 a 8 bar (NT405, pág. 93; NT768, pág. 43).</li>
+<li>Compresor no conecta / Válvula regulación defectuosa: Baja 4,5 a 6 bar; Alta igual a la baja (NT405, pág. 10; NT768, pág. 45).</li>
+<li>Vacío de prueba de estanqueidad: Baja -1 bar (1 atm depresión); Alta con aguja al tope (NT405, pág. 58; NT768, pág. 25).</li>
+<li>Carga parcial a motor parado (350 g): Baja y Alta igualadas entre 3 y 4 bar (NT405, pág. 62; NT768, pág. 26).</li>
+<li>Media carga en marcha: Baja ~0,8 bar; Alta 7 a 8 bar (NT405, pág. 10; NT768, pág. 28).</li>
+<li>
+<p>Carga por baja a ralentí: límite de seguridad de presión máxima de 2,5 bar durante adición de líquido (NT405, pág. 67; NT768, pág. 30).</p>
+</li>
+<li>
+<p>Medición con motor entre 2.000 y 2.500 rpm y climatizador a máxima potencia de frío: Baja 0,5 a 3,0 bares (sistema con válvula de expansión); Alta 6,0 a 25,0 bares (NT223, pág. 17).</p>
+</li>
+<li>Carga baja (R134a): Baja 0,5-1 bar; Alta 6,5-9,5 bar; peligro de congelación si la baja cae a &lt; 0,5 bar al acelerar (NT464, págs. 124-126).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Síntoma</div>
+        <p>Insuficiente o nulo rendimiento de refrigeración en el habitáculo, expulsión de aire a temperatura elevada por los difusores con temperatura en tobera central superior a 8 ºC, o cortes intermitentes del climatizador (NT223, pág. 17; NT241, pág. 226; NT306, pág. 157; NT349, pág. 123; NT631, pág. 24; NT863, pág. 226; NT870, pág. 41; NT878, pág. 82).</p>
+<p>Agujas de los manómetros de alta y baja presión fuera de las tolerancias prescritas, inmóviles marcando 0 bar tanto a motor parado como en marcha, presiones de alta y baja igualadas o fluctuaciones anómalas (NT83, pág. 123; NT130, pág. 32; NT351, pág. 124; NT405, pág. 1; NT462, pág. 123; NT464, pág. 124; NT768, pág. 1).</p>
+<p>Verificación rutinaria de la eficiencia global del equipo, comprobación tras mantenimiento o diagnosis del estado de la carga a vehículo parado (NT115, pág. 1; NT147, pág. 1; NT309, pág. 1; NT842, pág. 311).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Causas posibles</div>
+        <p>Las anomalías en el circuito frigorífico se originan por las siguientes causas:</p>
+<ul>
+<li><strong>Carga de refrigerante incorrecta</strong>: Carga insuficiente o falta total por fugas, o sobrecarga de refrigerante (NT83, pág. 123; NT223, pág. 18; NT241, pág. 206; NT306, pág. 157; NT309, pág. 1; NT351, pág. 124; NT863, pág. 226; NT870, pág. 41).</li>
+<li><strong>Fallas en el compresor</strong>: Desgaste o daño mecánico interno (válvulas de lámina rotas o tapadas, comunicación de cilindro), compresor no conecta, patinamiento del embrague, fallo en la válvula reguladora de cilindrada N280/PWM, o válvulas de aspiración/descarga invertidas/defectuosas (NT223, pág. 18; NT241, pág. 229; NT306, pág. 161; NT351, pág. 126; NT405, pág. 10; NT631, pág. 25; NT768, pág. 18; NT878, pág. 82).</li>
+<li><strong>Válvula de expansión defectuosa</strong>: Válvula bloqueada en posición abierta o cerrada, bulbo suelto o roto, o desajuste de regulación (NT223, pág. 18; NT306, pág. 161; NT351, pág. 126; NT405, pág. 10; NT768, pág. 7; NT878, pág. 82).</li>
+<li><strong>Condensador y ventilación</strong>: Condensador sucio exterior o interiormente, fallo del electroventilador o giro en sentido contrario por cableado invertido (NT223, pág. 18; NT306, pág. 161; NT351, pág. 126; NT405, pág. 10; NT768, pág. 33).</li>
+<li><strong>Filtro deshidratador</strong>: Obstrucción mecánica o saturación de humedad que provoca preexpansión (filtro helado o gota de hielo en válvula) (NT241, pág. 221; NT306, pág. 159; NT351, pág. 126; NT405, pág. 10; NT768, pág. 15; NT863, pág. 221).</li>
+<li><strong>Otras anomalías</strong>: Presencia de aire/incondensables en el circuito, exceso de aceite, mezcla/asociación de gases, tubos Rotalock invertidos, o entrada de aire caliente por trampillas de mezcla/grifo de calefacción defectuoso (NT241, pág. 224; NT309, pág. 1; NT351, pág. 126; NT405, pág. 10; NT768, pág. 41; NT870, pág. 41).</li>
+<li><strong>Errores de conexión de servicio</strong>: Falta de accionamiento de obuses por rosca muy hundida, juntas tóricas pegadas en la toma, o circuito completamente vacío (NT130, pág. 32; NT405, pág. 10; NT768, pág. 23).</li>
+</ul>
+<p>En instalaciones antiguas de R-12 existía la variante de mangueras de conexión de acoplamiento rápido invertidas entre sí (NT130, pág. 32).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo separar las causas</div>
+        <h3>Ajuste previo del puente de manómetros</h3>
+<p>Con las mangueras totalmente desconectadas del vehículo y el puente libre de presión, observar la aguja de los relojes. Si no marcan exactamente 0 bar, girar el tornillo de ajuste de cero con un destornillador plano fino hasta alinear la aguja (NT115, pág. 18).</p>
+<h3>Diagnosis con manómetros en 0 bar</h3>
+<ol>
+<li>Si la aguja no se mueve al conectar, verificar si el compresor arranca. Si no arranca por presostato de seguridad, confirmar si el circuito está vacío de gas por fuga masiva (NT130, pág. 32; NT768, pág. 23).</li>
+<li>Si el compresor sí arranca pero marca 0 bar, desenroscar los conectores y revisar si hay juntas tóricas pegadas de los tapones o si el obús está demasiado hundido por exceso de roscado (NT130, pág. 32).</li>
+</ol>
+<h3>Diagnosis a vehículo parado (motor en reposo)</h3>
+<p>Conectar la batería de manómetros con el motor parado y comparar la presión de baja con las temperaturas ambiental y del condensador:</p>
+<ul>
+<li>Carga correcta: 6,5 bar (25 ºC en manómetro) con 24-26 ºC en condensador y ambiente (NT309, pág. 1; NT870, pág. 41).</li>
+<li>Exceso de carga: 7,5 bar (30 ºC en manómetro) con 30 ºC en condensador, motor frío y 24-26 ºC ambiente (NT309, pág. 1; NT870, pág. 41).</li>
+<li>Asociación de gases / aire incondensable: 7,5 bar (30 ºC en manómetro) con 24-26 ºC en condensador y ambiente (NT309, pág. 1; NT870, pág. 41).</li>
+<li>Falta de líquido refrigerante: 6,5 bar (25 ºC en manómetro) con 30 ºC en condensador y ambiente (NT309, pág. 1; NT870, pág. 41).</li>
+</ul>
+<h3>Diagnosis dinámica en marcha</h3>
+<p>Conectar mangueras de alta y baja con las válvulas de la estación cerradas. Arrancar el motor a 1.500 rpm (o entre 1.500 y 2.000 rpm según manuales), activar la turbina al máximo, poner la recirculación y seleccionar máximo frío (NT83, pág. 123; NT223, pág. 17; NT306, pág. 157; NT349, pág. 123; NT462, pág. 123; NT631, pág. 5; NT768, pág. 1).</p>
+<p>Procedimiento para aislar la causa según la lectura:</p>
+<ol>
+<li><strong>Falta de refrigerante vs Válvula de alta semi cerrada</strong>: Añadir entre 50 y 100 g de refrigerante. Si los manómetros no reaccionan positivamente, la causa es la válvula de alta del compresor semi cerrada (NT405, pág. 20; NT768, pág. 6).</li>
+<li><strong>Bulbo de expansión suelto o averiado</strong>: Si el bulbo exterior está suelto, fijarlo. En válvulas monobloc, aplicar espray enfriador sobre el bulbo superior; si no reacciona, sustituir válvula y filtro. Si tras la sustitución se rocía el bulbo y la baja cae a 0 bar pero al parar el compresor la aguja sube rápidamente en positivo, las válvulas del compresor están dañadas (NT405, pág. 24-29; NT768, pág. 8-11).</li>
+<li><strong>Gota de hielo vs Válvulas de baja tapadas</strong>: Parar el equipo y volver a arrancar. Si la avería desaparece y vuelve a surgir cuando el fluido pasa de nuevo por la válvula, es una gota de hielo. Si el fallo es permanente, son las válvulas de baja del compresor tapadas. En ambos casos sustituir el filtro y hacer vacío prolongado (NT405, pág. 38; NT768, pág. 16).</li>
+<li><strong>Válvula de baja comunicada</strong>: Aplicar espray enfriador en el bulbo de la válvula de expansión hasta que la baja baje a 0 bar y detener el compresor. Si la baja sube rápidamente en positivo, existe comunicación de presiones en el cilindro (NT405, pág. 43; NT768, pág. 19).</li>
+<li><strong>Condensador sucio interiormente vs Electroventilador</strong>: Rociar un chorro de agua sobre la parte superior del condensador. Si la alta presión baja inmediatamente mientras cae el agua, el condensador está sucio interiormente (NT223, pág. 24; NT351, pág. 126; NT405, pág. 79; NT464, pág. 126; NT768, pág. 36).</li>
+<li><strong>Tubos invertidos en compresor</strong>: En compresión fija el acoplamiento ocurre a intervalos de pocos segundos; en compresión variable surgen oscilaciones repetidas en baja presión (NT405, pág. 93; NT768, pág. 43).</li>
+</ol>
+<h3>Diagnosis por Subenfriamiento (SC) y Recalentamiento (SR)</h3>
+<p>Conectar sondas de temperatura a la salida del condensador y aspiración del evaporador (o equipo Climtest):</p>
+<ul>
+<li>SC &lt; 2 ºC y SR &gt; 10 ºC con baja presión débil: Falta de fluido por fuga (NT241, pág. 206; NT863, pág. 226).</li>
+<li>SC &gt; 10 ºC y SR &lt; 2 ºC con alta presión elevada: Exceso de carga de fluido (NT241, pág. 206; NT863, pág. 227).</li>
+<li>SC &gt; 10 ºC, SR normal (2-10 ºC) y salto térmico en el cuerpo del filtro: Filtro deshidratante saturado/preexpansión (NT241, pág. 221; NT863, pág. 228).</li>
+</ul>
+<h3>Diagnosis por equipo de diagnosis electrónica (Audi A5 / V280)</h3>
+<p>Conectar el equipo VAS 5051 a la dirección 08 - Electrónica de climatización y leer el grupo de medición 001:</p>
+<ul>
+<li>En modo Econ / AC OFF: los campos 1 y 2 deben mostrar 0 A (compresor desactivado).</li>
+<li>En modo Auto / AC ON en LO: la corriente de la válvula reguladora N280 debe subir a 0,75 - 0,8 A y la presión del campo 4 debe aumentar progresivamente. Los electroventiladores V7/V177 se activan al superar los 9 bar de alta presión (NT842, pág. 314-321).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Verificación tras la reparación</div>
+        <ol>
+<li>Conectar el puente de manómetros y comprobar que con la carga nominal exacta prescrita las presiones de alta y baja se estabilizan dentro de los valores de referencia según la temperatura ambiente y el tipo de compresor (NT83, pág. 125; NT223, pág. 17; NT306, pág. 157; NT405, pág. 10; NT462, pág. 125; NT631, pág. 24; NT768, pág. 1; NT870, pág. 47).</li>
+<li>Medir la temperatura de salida del aire en los difusores centrales verificando que cumple la tabla de rendimiento frente a la temperatura exterior (NT83, pág. 125; NT223, pág. 17; NT349, pág. 123; NT462, pág. 125; NT768, pág. 42; NT863, pág. 235).</li>
+<li>Tocar el filtro deshidratador situado en la línea de alta presión para verificar que se mantiene caliente y seco (NT405, pág. 85; NT768, pág. 40).</li>
+<li>Verificar mediante el equipo Climtest o sondas que las mediciones de Subenfriamiento y Recalentamiento retornan al intervalo óptimo de 2 ºC a 10 ºC (NT241, pág. 232; NT863, pág. 231).</li>
+<li>Confirmar que el electroventilador del condensador cicla automáticamente de forma correcta sin quedar inoperativo ni conectado de manera permanente (NT768, pág. 34).</li>
+<li>En compresores de cilindrada variable sin acoplamiento magnético (ej. Audi A5), verificar que el tubo grueso de baja presión entre la toma de servicio y el compresor se enfría intensamente y confirmar que en el bloque de medición 002 el campo 1 permanezca en 0 (sin criterios de desconexión) (NT842, pág. 316, 323).</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT115_01</code> Puente de manómetros de alta y baja presión indicando la ubicación de los tornillos de ajuste de cero en la carátula</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT130_01</code> Manómetros marcando 0 bar en ambas carátulas por falta de accionamiento de los obuses o vaciado total</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT147_01</code> Manómetro de alta presión (HP, reloj rojo) en 16 bar (230 psi) y manómetro de baja presión (LP, reloj azul) en 1,8 bar (26 psi)</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT306_01</code> Manómetros de alta y baja presión con las escalas de lectura de presión y temperatura</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT309_01</code> Tabla de diagnosis de presiones a vehículo parado según temperaturas ambiente, del condensador, del manómetro y del motor</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT405_01</code> Esfera de manómetro de baja presión R134a indicando escala en bar y psi</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT405_02</code> Esfera de manómetro de alta presión R134a indicando escala en bar y psi</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT405_03</code> Conjunto de puente de manómetros de alta y baja presión para diagnóstico R134a</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT631_01</code> Cuadro de diagnóstico comparativo de lecturas de manómetros para los lados de alta y baja presión</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT768_01</code> Esfera de manómetro de baja presión R134a con escalas en bar | psi | kPa y temperaturas de saturación</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT768_02</code> Esfera de manómetro de alta presión R134a con escalas en bar | psi y kPa</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT768_03</code> Manómetros en prueba de estanqueidad por depresión (vacío)</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT863_01</code> Pantalla del analizador Climtest con los mensajes de diagnóstico (falta de fluido, exceso de fluido, filtro deshidratante saturado)</span></div>
+      </div>
+      <div class="caja discrepancia"><ul>
+<li>Presiones de trabajo nominales en compresor fijo a 1.500 rpm: las fichas NT83, NT349 y NT462 fijan Alta de 10 a 20 bar y Baja de 0,5 a 2,5 bar. Por su parte, la ficha NT351 indica Alta de 10 a 15 kg/cm² y Baja de 1 a 2 kg/cm² (o 13,5 a 15 bar en Alta y 1,5 a 2,5 bar en Baja para R134a) y la ficha NT464 especifica Alta de 13,5 a 15 bar y Baja de 1,5 a 2 bar.</li>
+<li>Presiones de trabajo nominales en compresor variable: las fichas NT83, NT349 y NT462 establecen Alta constante de 8 a 10 bar (hasta 12 bar en calor extremo) y Baja constante a 2 bar. Sin embargo, las fichas NT405 y NT768 indican a 30 ºC ambiente Alta de 6 a 13 bar y Baja de 1,8 a 2,1 bar, mientras que NT464 señala Alta de 9 a 12 bar y Baja de 1,4 a 1,8 bar para compresor variable eléctrico.</li>
+<li>Presión estática en reposo a 25 ºC ambiente: las fichas NT309 y NT870 asignan 6,5 bar a 25 ºC ambiente (25 ºC en escala del manómetro), mientras que las fichas NT83, NT351 y NT462 le asignan 5,5 bar a 25 ºC y reservan los 6,6 bar para 30 ºC.</li>
+</ul></div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Fusión de 19 fuentes</p>
+      </div>
+    </div>
+  </section>
+
   <section id="nt1004" data-tipo="elemento">
     <div class="nota-header">Nota Técnica Nº 1004 </div>
     <div class="nota-body">
@@ -44354,7 +43373,7 @@ En la versión de nueva generación, ha sido revisada técnicamente y adaptada e
   </section>
 
   <div class="pie">
-    885 notas técnicas · generado el 26/09/2026.
+    867 notas técnicas · generado el 26/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 

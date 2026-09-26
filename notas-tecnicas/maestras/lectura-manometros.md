@@ -13,7 +13,7 @@ grupo: "Circuito frigorífico"
 clave: lectura-manometros
 area: climatizacion
 sistema: "circuito-frigorifico"
-estado: pendiente
+estado: borrador
 fusionadas: [83, 115, 130, 147, 223, 241, 306, 309, 349, 351, 405, 462, 464, 631, 768, 842, 863, 870, 878]
 huella: 11b10aaad1f8
 modelo: gemini-3.6-flash
@@ -24,11 +24,6 @@ niveles:
   "Cómo separar las causas": avanzado
   "Valores de referencia": intermedio
   "Verificación tras la reparación": avanzado
-faltan:
-  - "NT223: 0,5 a 3,0 bares"
-  - "NT223: 2.000 y 2.500 rpm"
-  - "NT223: 6,0 a 25,0 bares"
-  - "NT464: 6,5-9,5 bar"
 ---
 
 ## Síntoma
@@ -157,6 +152,9 @@ Conectar el equipo VAS 5051 a la dirección 08 - Electrónica de climatización 
 - Carga parcial a motor parado (350 g): Baja y Alta igualadas entre 3 y 4 bar (NT405, pág. 62; NT768, pág. 26).
 - Media carga en marcha: Baja ~0,8 bar; Alta 7 a 8 bar (NT405, pág. 10; NT768, pág. 28).
 - Carga por baja a ralentí: límite de seguridad de presión máxima de 2,5 bar durante adición de líquido (NT405, pág. 67; NT768, pág. 30).
+
+- Medición con motor entre 2.000 y 2.500 rpm y climatizador a máxima potencia de frío: Baja 0,5 a 3,0 bares (sistema con válvula de expansión); Alta 6,0 a 25,0 bares (NT223, pág. 17).
+- Carga baja (R134a): Baja 0,5-1 bar; Alta 6,5-9,5 bar; peligro de congelación si la baja cae a < 0,5 bar al acelerar (NT464, págs. 124-126).
 
 ## Verificación tras la reparación
 
