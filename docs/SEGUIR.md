@@ -80,8 +80,10 @@ corrección con la key del alumno.
 5. **Coste.** Unos 1,5 millones de tokens, una vez. Probablemente cabe en el nivel gratuito de
    Gemini Flash. Ojo: en ese nivel Google puede usar los datos, y son manuales de fabricante.
 
-**Decisiones abiertas:**
-- ¿Cuándo generar? Recomendación: ya, solo para las notas que no se van a fusionar; las fusionadas,
-  después de fusionar.
-- ¿Cuántas por nota? Recomendación: 4.
-- Hace falta tu API key de Gemini como secreto de GitHub (`GEMINI_API_KEY`).
+**Decisiones tomadas (26/09):**
+- Solo se generan preguntas de las **maestras** (no de las fichas sueltas).
+- Cuántas: **de 2 a 6 según la densidad**, medida por la longitud del texto de los apartados
+  de cada nivel (básico/intermedio/avanzado). Repartir las preguntas por nivel en proporción.
+- La key: el secreto `GEMINI_API_KEY` ya existe (lo usa la fusión).
+- Las citas `[NTxx, pág.]` no llegan al alumnado ni a la IA del alumno; las preguntas tampoco
+  deben mostrarlas.
