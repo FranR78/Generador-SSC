@@ -22,6 +22,10 @@ on:
       modelo:
         description: 'Modelo de Gemini («auto» = el Flash más nuevo disponible)'
         default: 'auto'
+      forzar:
+        description: 'Rehacer aunque las fuentes no hayan cambiado (p. ej. para colocar los huecos de imagen)'
+        type: boolean
+        default: false
       probar:
         description: 'Solo probar la configuración (key y modelo), sin fusionar'
         type: boolean
@@ -58,6 +62,7 @@ jobs:
           TODAS: ${{ inputs.todas }}
           MAX: ${{ inputs.max }}
           PROBAR: ${{ inputs.probar }}
+          FUSION_FORZAR: ${{ inputs.forzar && '1' || '' }}
         run: |
           if [ "$PROBAR" = "true" ]; then
             python3 generador/fusionar.py --probar

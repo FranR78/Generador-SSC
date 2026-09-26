@@ -1724,20 +1724,42 @@
       var t = { basico: 'Básico', intermedio: 'Intermedio', avanzado: 'Avanzado' }[a.nivel];
       return t ? ' <span class="nivel nivel-' + a.nivel + '">' + t + '</span>' : '';
     }
-    function cuerpoApartado(a, nt){
+    function fotoHueco(nombre, desc){
+      return '<div class="foto-hueco">📷<span>¿Tienes esta captura? Súbela desde «Capturas» como <code>' +
+             nombre + '</code>' + (desc ? '<br>' + desc : '') + '</span></div>';
+    }
+    // Las maestras colocan los huecos dentro del texto, en una línea «[NTxx_yy]».
+    // Esos ya no se repiten al final, en «Imágenes requeridas».
+    function huecosNota(n){
+      var r = { desc: {}, enTexto: {} };
+      (n && n.apartados || []).forEach(function(x){
+        if(!x.html) return;
+        if(x.titulo === 'Imágenes requeridas'){
+          x.html.replace(/<li>\s*\[(NT\d+_\d+)\]\s*([\s\S]*?)<\/li>/g, function(_, ref, d){ r.desc[ref] = d; });
+        } else {
+          x.html.replace(/<p>\s*\[(NT\d+_\d+)\]\s*<\/p>/g, function(_, ref){ r.enTexto[ref] = 1; });
+        }
+      });
+      return r;
+    }
+    function cuerpoApartado(a, nt, n){
+      var hs = huecosNota(n);
       if(a.titulo === 'Imágenes requeridas' && a.html){
         var i = 0;
-        return a.html.replace(/<\/?ul>/g, '').replace(/<li>([\s\S]*?)<\/li>/g, function(_, desc){
+        var h = a.html.replace(/<\/?ul>/g, '').replace(/<li>([\s\S]*?)<\/li>/g, function(_, desc){
           i++;
           var nombre = 'NT' + nt + '_' + (i < 10 ? '0' : '') + i;
           // En una maestra, el hueco trae el nombre de su ficha de origen.
           var ajeno = /^\s*\[(NT\d+_\d+)\]\s*/.exec(desc);
           if(ajeno){ nombre = ajeno[1]; desc = desc.slice(ajeno[0].length); }
-          return '<div class="foto-hueco">📷<span>¿Tienes esta captura? Súbela a la carpeta de capturas como <code>' +
-                 nombre + '.jpg</code><br>' + desc + '</span></div>';
+          return hs.enTexto[nombre] ? '' : fotoHueco(nombre, desc);
         });
+        return h.trim() ? h : '<p class="vacio">Las capturas están en su sitio, dentro del texto.</p>';
       }
-      return a.html ? '<div class="txt">' + a.html + '</div>' : '<p>' + a.texto + '</p>';
+      if(!a.html) return '<p>' + a.texto + '</p>';
+      return '<div class="txt">' + a.html.replace(/<p>\s*\[(NT\d+_\d+)\]\s*<\/p>/g, function(_, ref){
+        return fotoHueco(ref, hs.desc[ref] || '');
+      }) + '</div>';
     }
 
     function abrirTema(t, i){
@@ -1766,7 +1788,7 @@
           var h = '<h2>' + n.titulo + (n.codigo && !/documentad/i.test(n.codigo) ? ' — ' + n.codigo : '') + '</h2>';
           if(n.ubicacion) h += '<p class="aviso"><strong>Ubicación:</strong> ' + n.ubicacion + '</p>';
           (n.apartados||[]).forEach(function(a){
-            h += '<div class="apartado"><h4>' + a.titulo + chipNivel(a) + '</h4>' + cuerpoApartado(a, n.nt) + '</div>';
+            h += '<div class="apartado"><h4>' + a.titulo + chipNivel(a) + '</h4>' + cuerpoApartado(a, n.nt, n) + '</div>';
           });
           if(n.fuentes) h += '<p class="fuente"><strong>Fuente:</strong> ' + n.fuentes + ' · NT' + n.nt + '</p>';
           h += botonPreguntar(n.nt);
@@ -1988,7 +2010,7 @@
           var h = '<h2>NT'+n.nt+' · '+n.titulo+(n.codigo?' — '+n.codigo:'')+'</h2>';
           if(n.ubicacion) h += '<p class="aviso"><strong>Ubicación:</strong> '+n.ubicacion+'</p>';
           n.apartados.forEach(function(a){
-            h += '<div class="apartado"><h4>'+a.titulo+chipNivel(a)+'</h4>'+cuerpoApartado(a, n.nt)+'</div>';
+            h += '<div class="apartado"><h4>'+a.titulo+chipNivel(a)+'</h4>'+cuerpoApartado(a, n.nt, n)+'</div>';
           });
           if(n.fuentes) h += '<p class="fuente"><strong>Fuente:</strong> '+n.fuentes+'</p>';
           h += botonPreguntar(n.nt);

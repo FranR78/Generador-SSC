@@ -90,7 +90,12 @@ Nivel de cada apartado (para el itinerario del curso):
   (presostato/transmisor), separar dos causas que dan la misma lectura.
 
 Imágenes: de la lista IMÁGENES DISPONIBLES elige las que hagan falta, sin repetir la misma imagen aunque
-la pidan dos fichas, y copia su referencia exacta [NTxx_yy].
+la pidan dos fichas, y copia su referencia exacta [NTxx_yy]. Además, COLÓCALA en el texto: dentro del
+apartado que explica lo que muestra, justo después del párrafo o la lista a la que acompaña, en una
+línea aparte que contenga solo la referencia, por ejemplo:
+...la presión sube hasta 16 bar (pág. 20).
+[NT231_02]
+Cada referencia aparece una sola vez en el texto y también en la lista «imagenes».
 """
 
 
@@ -194,7 +199,10 @@ def saltos(t):
     («… texto. - a - b ### X - c»). Se reponen los saltos sin tocar los datos:
     solo cortan « - », « ### » y « N. » cuando van tras un cierre de frase."""
     t = t.strip()
-    if "\n" in t:
+    # Hueco de captura colocado en el texto: siempre en su propia línea.
+    t = re.sub(r"[ \t]*\n?[ \t]*(\[NT\d+_\d+\])[ \t]*\n?", r"\n\n\1\n\n", t).strip()
+    t = re.sub(r"\n{3,}", "\n\n", t)
+    if "\n" in re.sub(r"\n*\[NT\d+_\d+\]\n*", " ", t):   # ya trae saltos propios
         return t
     t = re.sub(r"\s+(#{3,4}) ", r"\n\n\1 ", t)
     t = re.sub(r"(?<=[.:)\]])\s+- (?=\S)", "\n- ", t)
@@ -314,7 +322,7 @@ def fusionar(cliente, clave, fichas, nts):
     destino = DIR_MAESTRAS / f"{clave}.md"
     previa = af.cuerpo(destino)[0] if destino.exists() else {}
     h = huella(fichas)
-    if previa.get("huella") == h:
+    if previa.get("huella") == h and not os.environ.get("FUSION_FORZAR"):
         return "sin cambios"
     tipos = [str(f["meta"].get("clase") or "componente") for f in fichas]
     tipo = max(set(tipos), key=tipos.count)
