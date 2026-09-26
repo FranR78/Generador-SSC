@@ -9,9 +9,16 @@ on:
   workflow_dispatch:
     inputs:
       entidades:
-        description: 'Entidades separadas por espacios (vacío = usar «todas»)'
+        description: 'Entidades separadas por espacios (si escribes algo, manda sobre «siguiente tanda»)'
         required: false
         default: ''
+      que:
+        description: 'Qué fusionar'
+        type: choice
+        options:
+          - 'Siguiente tanda del guion'
+          - 'Las entidades escritas abajo'
+        default: 'Siguiente tanda del guion'
       todas:
         description: 'Todas las entidades con 2 o más fuentes'
         type: boolean
@@ -62,10 +69,13 @@ jobs:
           TODAS: ${{ inputs.todas }}
           MAX: ${{ inputs.max }}
           PROBAR: ${{ inputs.probar }}
+          QUE: ${{ inputs.que }}
           FUSION_FORZAR: ${{ inputs.forzar && '1' || '' }}
         run: |
           if [ "$PROBAR" = "true" ]; then
             python3 generador/fusionar.py --probar
+          elif [ "$QUE" = "Siguiente tanda del guion" ] && [ -z "$ENTIDADES" ]; then
+            python3 generador/fusionar.py --siguiente
           elif [ "$TODAS" = "true" ]; then
             python3 generador/fusionar.py --todas --max "$MAX"
           else

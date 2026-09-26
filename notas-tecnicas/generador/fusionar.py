@@ -137,6 +137,48 @@ def af_slug(t):
     return re.sub(r"[^a-z0-9]+", "-", t).strip("-")
 
 
+def orden_guion():
+    """Claves en el orden del índice de las unidades (lo que escribe el profe)."""
+    orden = []
+    def recorrer(x):
+        if isinstance(x, dict):
+            for k, v in x.items():
+                if k == "claves" and isinstance(v, list):
+                    orden.extend(str(c) for c in v)
+                else:
+                    recorrer(v)
+        elif isinstance(x, list):
+            for i in x:
+                orden.append(str(i)) if isinstance(i, str) else recorrer(i)
+    for f in sorted((RAIZ / "unidades").glob("*.yml")):
+        if not f.name.startswith("_"):
+            recorrer((yaml.safe_load(f.read_text(encoding="utf-8")) or {}).get("indice"))
+    visto, out = set(), []
+    for c in (af_slug(c) for c in orden):
+        if c not in visto:
+            visto.add(c)
+            out.append(c)
+    return out
+
+
+def siguiente_tanda(por):
+    """Las próximas entidades sin maestra, en el orden del guion. Una grande
+    (25 fuentes o más) va sola; si no, hasta 5 entidades o 40 fuentes."""
+    hechas = {p.stem for p in DIR_MAESTRAS.glob("*.md")} | {p.stem for p in DIR_PENDIENTES.glob("*.md")}
+    pend = [c for c in orden_guion() if len(por.get(c, [])) >= 2 and c not in hechas]
+    tanda, fuentes = [], 0
+    for c in pend:
+        n = len(por[c])
+        if tanda and (n >= 25 or fuentes + n > 40 or len(tanda) >= 5):
+            break
+        tanda.append(c)
+        fuentes += n
+        if n >= 25:
+            break
+    print(f"Siguiente tanda ({len(pend)} entidades del guion sin maestra): {' '.join(tanda) or 'ninguna'}")
+    return tanda
+
+
 def leer_fichas():
     """{clave canónica: [ficha]} con ficha = {nt, meta, cuerpo, ruta}."""
     al = alias()
@@ -362,6 +404,7 @@ def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("claves", nargs="*", help="entidades a fusionar")
     p.add_argument("--todas", action="store_true", help="todas las entidades con 2 o más fuentes")
+    p.add_argument("--siguiente", action="store_true", help="la próxima tanda del guion sin maestra")
     p.add_argument("--max", type=int, default=0, help="como mucho N entidades en esta ejecución")
     p.add_argument("--probar", action="store_true", help="solo comprueba key y modelo")
     a = p.parse_args()
@@ -385,7 +428,9 @@ def main():
         return
 
     por = leer_fichas()
-    if a.todas:
+    if a.siguiente:
+        claves = siguiente_tanda(por)
+    elif a.todas:
         claves = sorted((k for k, v in por.items() if len(v) >= 2), key=lambda k: -len(por[k]))
     else:
         claves = [af_slug(c) for c in a.claves]
