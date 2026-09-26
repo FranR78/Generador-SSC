@@ -24,6 +24,9 @@
     .apartado .txt th,.apartado .txt td{border:1px solid #d7e1ea;padding:6px 9px;vertical-align:top}
     .apartado .txt th{background:#eef5fb;color:#063f70}
     .apartado .txt tr:nth-child(even) td{background:#f8fbfd}
+    .apartado .txt .cita{display:none}
+    body.profe .apartado .txt .cita{display:inline;font-size:11px;color:#8a6d00;background:#fff6d6;
+      border-radius:6px;padding:0 5px;white-space:normal}
     .apartado .txt .pag{font-size:11px;color:#6b7c88;background:#eef2f5;border-radius:6px;
       padding:1px 6px;white-space:nowrap;vertical-align:1px}
     .apartado h4+.txt{margin-top:6px}
@@ -257,7 +260,7 @@
 
     // Muestra la pestaña del panel solo si el usuario es profe.
     google.script.run.withSuccessHandler(function (ok) {
-      if (ok) document.getElementById('nav-profesor').hidden = false;
+      if (ok) { document.getElementById('nav-profesor').hidden = false; document.body.classList.add('profe'); }
     }).soyProfe();
 
     // Registra la conexión y cuenta tiempo conectado (latido cada 30 s).
@@ -915,7 +918,7 @@
 
     // ---------- Arranque ----------
     google.script.run.withSuccessHandler(function (esProfe) {
-      if (esProfe) document.getElementById('nav-profesor').hidden = false;
+      if (esProfe) { document.getElementById('nav-profesor').hidden = false; document.body.classList.add('profe'); }
     }).soyProfe();
 
     // Consultar y Manual ya no están en el menú: Consultar se abre desde el
