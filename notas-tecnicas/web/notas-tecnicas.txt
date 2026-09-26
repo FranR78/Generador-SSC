@@ -235,7 +235,7 @@
 <!-- ===== SIDEBAR ===== -->
 <nav id="sidebar" aria-label="Navegación del dashboard">
   <p class="sidebar-titulo">Climatización Automotriz<br>Notas Técnicas</p>
-  <p class="sidebar-meta">913 notas · 25/09/2026</p>
+  <p class="sidebar-meta">896 notas · 26/09/2026</p>
 
   <div id="buscador-wrap">
     <label for="buscador">Buscar en el documento</label>
@@ -265,7 +265,6 @@
     <li><a href="#grp-transmisor-presion-map-maf">Transmisor de presión <span class="menu-cuenta">16 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
     <li><a href="#grp-valvula-expansion">Válvula de expansión <span class="menu-cuenta">19 fuentes</span></a></li>
-    <li><a href="#grp-evaporador">Evaporador <span class="menu-cuenta">18 fuentes</span></a></li>
     <li><a href="#nt17">NT17 · Silenciador-depósito receptor</a></li>
     <li><a href="#grp-tuberias-y-racores">Tuberías, canalizaciones y juntas de estanqueidad del circuito frigorífico <span class="menu-cuenta">15 fuentes</span></a></li>
     <li class="grupo"><span class="menu-grupo-titulo">Control de climatización</span></li>
@@ -667,6 +666,8 @@
     <li><a href="#nt892">NT892 · Refrigerante D124</a></li>
     <li><a href="#nt893">NT893 · Refrigerante ISCEON 49</a></li>
     <li><a href="#nt914">NT914 · Líquido sellante de fugas para climati</a></li>
+    <li class="grupo"><span class="menu-grupo-titulo">Circuito frigorífico</span></li>
+    <li><a href="#nt1002">NT1002 · El Evaporador de Climatización</a></li>
   </ul>
 </nav>
 
@@ -9584,900 +9585,6 @@ Si aumenta la temperatura a la salida del evaporador, el gas en el sensor se exp
       <div class="apartado">
         <div class="apartado-titulo">Fuentes</div>
         <p class="fuentes">VALVULA DE EXPANSIÓN.docx, págs. 1-6</p>
-      </div>
-    </div>
-  </section>
-    </details>
-  </div>
-
-  <div class="grupo-componente" id="grp-evaporador">
-    <div class="grupo-cab"><span class="grupo-nombre">Evaporador</span><span class="grupo-cuenta">18 fuentes sin fusionar</span></div>
-    <p class="grupo-aviso">Varias fuentes describen este componente. Nada se ha fusionado todavía: cada ficha se conserva íntegra. Despliega cada una para compararlas.</p>
-    <details class="variante" open>
-      <summary>Variante 1 de 18 · NT16 · 2. Introducción a la refrigeración.pdf, págs. 20-21</summary>
-  <section id="nt16" data-tipo="elemento">
-    <div class="nota-header">Nota Técnica Nº 16 </div>
-    <div class="nota-body">
-      <h1>Evaporador</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Absorber el calor del aire que ingresa al habitáculo mediante la evaporación del agente frigorífico en su interior, enfriando, deshidratando y depurando dicho aire (pág. 21).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>El refrigerante rociado en fase líquida/gas absorbe el calor del aire forzado por la turbina de aire fresco a través de sus aletas. Al absorber este calor, el refrigerante se evapora por completo y el aire que atraviesa el evaporador se enfría y pierde humedad (págs. 21-22).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Presión interna del fluido: 1,2 bares a -7 ºC (pág. 22).</li>
-<li>Temperatura del aire de entrada: 24 ºC (pág. 22).</li>
-<li>Temperatura del aire de salida hacia el habitáculo: 4 ºC (descenso de temperatura del aire de aprox. 20 ºC) (pág. 22).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Tipos y características</div>
-        <p>Radiador intercambiador de calor ubicado en el interior del módulo o unidad climática del habitáculo (pág. 21).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">2. Introducción a la refrigeración.pdf, págs. 20-21</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 2 de 18 · NT50 · 7. Condensadores y evaporadores.pdf, págs. 64-66, 71</summary>
-  <section id="nt50" data-tipo="elemento">
-    <div class="nota-header">Nota Técnica Nº 50 </div>
-    <div class="nota-body">
-      <h1>Evaporador</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Extraer el calor del aire del habitáculo en la unidad climática mediante la evaporación total del agente frigorífico en su interior, enfriando, deshidratando y depurando dicho aire (págs. 64-66).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>El agente frigorífico entra por la parte inferior en estado líquido/distensado tras pasar por la válvula de expansión y entra en ebullición a una temperatura inferior a 0 ºC (pág. 65). El refrigerante absorbe el calor del aire impulsado por la turbina entre las aletas (pág. 65). Al enfriarse el aire por debajo de su punto de rocío, la humedad ambiental se condensa en las aletas frías del evaporador generando agua deshidratada y reteniendo las partículas en suspensión (pág. 65).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Temperatura de ebullición del agente frigorífico: bastante inferior a los 0 ºC de congelación del agua (pág. 65).</li>
-<li>Volumen de aceite retrazado/retenido en el evaporador: 50 cc aproximadamente (pág. 71).</li>
-<li>Purgado de aceite retenido: 3 minutos a 5.000 r.p.m. del motor con A/C y calefacción al máximo y recirculación activada (pág. 65).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <ul>
-<li>Acumulación excesiva o inundación de aceite sintético en el interior del evaporador: disminuye notablemente el rendimiento frigorífico (pág. 65).</li>
-<li>Proliferación de bacterias por acumulación de humedad: provoca mal olor en vehículos sin filtro antipolen (pág. 65).</li>
-<li>Fuga de rendimiento por montaje incorrecto del aislamiento térmico de los tubos o de la válvula de expansión: altera la curva de regulación de la válvula por radiación de calor (pág. 71).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
-        <p>Si la turbina de aire fresco falla o no funciona como mínimo a velocidad lenta, la unidad de control interrumpe el funcionamiento del compresor para evitar la congelación del evaporador (pág. 65).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
-        <p>Para comprobar si el evaporador está inundado de aceite, hacer funcionar el motor a 5.000 r.p.m. durante 3 minutos con el A/C y la calefacción al máximo en modo recirculación. Si el rendimiento frigorífico aumenta tras esta maniobra, indica exceso de aceite en el sistema (pág. 65).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Tipos y características</div>
-        <p>Intercambiador de calor fabricado en aluminio provisto de aletas de refrigeración, situado dentro de la unidad climática del habitáculo, colocado inmediatamente antes del radiador de la calefacción (pág. 66).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Mantenimiento</div>
-        <ul>
-<li>Comprobar que el desagüe del agua de condensación esté completamente limpio (pág. 71).</li>
-<li>Verificar que la junta aislante contorneada esté pegada en todo su perímetro sin dañarla durante el montaje (pág. 71).</li>
-<li>Sustituir juntas tóricas, aislar los tubos de empalme y la válvula de expansión, y añadir 50 cc de aceite nuevo tras la sustitución (pág. 71).</li>
-<li>Efectuar un vacío profundo de al menos 45 minutos antes de la recarga (pág. 71).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT50_01</code> Esquema del evaporador con la entrada de agente frigorífico a través de la válvula de expansión y flujo de aire refrigerado — Fuente: 7. Condensadores y evaporadores.pdf, pág. 65</span></div>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">7. Condensadores y evaporadores.pdf, págs. 64-66, 71</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 3 de 18 · NT220 · Climatizacion basicos.pdf, págs. 9-10, 21-24</summary>
-  <section id="nt220" data-tipo="elemento">
-    <div class="nota-header">Nota Técnica Nº 220 </div>
-    <div class="nota-body">
-      <h1>Evaporador</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Absorber el calor del aire que ingresa al habitáculo mediante la ebullición y evaporación del agente frigorífico que circula por su interior. (págs. 21-22)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>El refrigerante líquido pulverizado a baja presión por la válvula de expansión entra al evaporador y entra en ebullición. Para evaporarse, absorbe la energía térmica del aire exterior impulsado por el soplador a través de sus aletas. El aire se enfría y deshidrata antes de entrar al habitáculo, mientras que el refrigerante sale completamente gaseoso hacia el compresor. (pág. 22)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <ul>
-<li>Obstrucción interna de las tuberías por suciedad o virutas. (pág. 23)</li>
-<li>Fugas de agente frigorífico por corrosión o fisuras en empalmes. (pág. 23)</li>
-<li>Obstrucción externa de la entrada de aire por polvo, polen y suciedad. (pág. 23)</li>
-<li>Acumulación de humedad, bacterias y hongos en las láminas. (págs. 4, 21)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
-        <p>Rendimiento deficiente de la refrigeración, fallo total del aire acondicionado, caudal de aire insuficiente por el ventilador y emisión de malos olores. (pág. 23)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
-        <ul>
-<li>Comprobar visualmente el estado de limpieza exterior de la matriz de aletas. (pág. 23)</li>
-<li>Comprobar la estanqueidad del cuerpo y de las tuberías. (pág. 24)</li>
-<li>Medir la temperatura en la tubería de entrada y en la tubería de salida. (pág. 24)</li>
-<li>Medir las presiones de trabajo con el compresor activado. (pág. 24)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Tipos y características</div>
-        <p>Intercambiador de calor de gran superficie de aluminio formado por tubos y aletas, ubicado en el interior de la unidad climática bajo el tablero de instrumentos. (págs. 22-23)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Mantenimiento</div>
-        <p>Realizar la desinfección periódica del evaporador para eliminar bacterias y hongos retenidos en el agua de condensación. (págs. 4, 21)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT220_01</code> Módulo del evaporador con sus tubos de entrada y aletas de disipación — Fuente: Climatizacion basicos.pdf, pág. 22</span></div>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">Climatizacion basicos.pdf, págs. 9-10, 21-24</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 4 de 18 · NT235 · CLIMATIZACION INTRODUCCION.PDF, págs. 111-119</summary>
-  <section id="nt235" data-tipo="elemento">
-    <div class="nota-header">Nota Técnica Nº 235 </div>
-    <div class="nota-body">
-      <h1>Evaporador</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Absorber el calor del aire que atraviesa sus aletas para enfriar el habitáculo y deshumidificar el aire (desempañado) al condensar el agua sobre su superficie. (pág. 115).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>El fluido entra en fase difásica a baja presión y baja temperatura (ej. 3 bar, -1 ºC). Al circular por los conductos absorbe el calor del aire del ventilador y se vaporiza. En el tramo final, el gas se recalienta por encima de la temperatura de ebullición antes de salir al compresor (ej. 3 bar, +3 ºC). El agua condensada sobre las aletas se evacúa al exterior. (págs. 115-116).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
-        <p>Ejemplo de trabajo:</p>
-<ul>
-<li>Entrada (Punto 6): Difásico a 3 bar y -1 ºC. (pág. 116).</li>
-<li>Evaporación (Puntos 6-7): Difásico a 3 bar y -1 ºC a +1 ºC. (pág. 116).</li>
-<li>Salida / Recalentamiento (Puntos 7-8): Gas a 3 bar y +3 ºC. (pág. 116).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <p>Perforación por corrosión, congelación u obturación de aletas por hielo, fugas en racores, rendimiento bajo por recambio adaptable inadecuado y bacterias/hongos que provocan malos olores. (pág. 119).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
-        <p>Falta de rendimiento frigorífico, reducción del caudal de aire por hielo y generación de malos olores. (pág. 119).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
-        <ol>
-<li>Medir el recalentamiento (diferencia entre la temperatura de salida del gas y la temperatura de evaporación en el manómetro de BP). (pág. 115).</li>
-<li>Comprobar la ausencia de fugas en el tubo de drenaje con detector de gas. (pág. 119).</li>
-</ol>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Tipos y características</div>
-        <p>Intercambiador térmico instalado en el bloque de climatización tras el salpicadero, entre la válvula de expansión y el compresor.
-Tipos:</p>
-<ul>
-<li>Evaporador de placas. (pág. 117).</li>
-<li>Evaporador tubo / aleta. (pág. 118).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Mantenimiento</div>
-        <p>Desinfección higienizante de la superficie para eliminar microorganismos y sustitución del filtro de habitáculo. Evitar limpiadores químicos agresivos. (págs. 119, 184).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">CLIMATIZACION INTRODUCCION.PDF, págs. 111-119</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 5 de 18 · NT249 · Climatizacion-conocimientos-basios-para-el-taller_3.pdf, págs. 21-24</summary>
-  <section id="nt249" data-tipo="elemento">
-    <div class="nota-header">Nota Técnica Nº 249 </div>
-    <div class="nota-body">
-      <h1>Evaporador</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Realizar el intercambio térmico entre el aire exterior y el fluido refrigerante del sistema de aire acondicionado. (pág. 22)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>El refrigerante líquido a alta presión se inyecta y se expande en el interior del evaporador a través de la válvula de expansión. El aire frío generado durante la evaporación se transmite al habitáculo a través de la gran superficie de aletas gracias al caudal impulsado por el ventilador del habitáculo. (pág. 22)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <p>Obstrucción o taponamiento en las tuberías internas del evaporador, falta de estanqueidad en empalmes o por fisuras en el cuerpo, y suciedad acumulada en la matriz exterior que bloquea la entrada de aire. (págs. 21, 23)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
-        <p>Rendimiento deficiente de refrigeración, fallo del aire acondicionado y reducción acusado del caudal del ventilador hacia el habitáculo. (pág. 23)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
-        <ol>
-<li>Comprobar si el evaporador presenta suciedad o daños en la matriz. (págs. 23-24)</li>
-<li>Comprobar la colocación correcta de los manguitos de conexión. (pág. 24)</li>
-<li>Comprobar la estanqueidad del conjunto. (pág. 24)</li>
-<li>Medir las presiones de trabajo con el compresor conectado y motor en marcha. (pág. 24)</li>
-<li>Medir la temperatura en la tubería de entrada y en la de salida. (pág. 24)</li>
-</ol>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Tipos y características</div>
-        <p>Intercambiador de calor de gran superficie formado por tubos y aletas integrado en la unidad climática. (págs. 21-22)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Mantenimiento</div>
-        <p>Realizar un mantenimiento y desinfección periódicos de las láminas para impedir la acumulación y proliferación de bacterias, hongos y microorganismos en la humedad condensada. (págs. 4, 21)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">Climatizacion-conocimientos-basios-para-el-taller_3.pdf, págs. 21-24</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 6 de 18 · NT278 · LA CLIMATIZACIÓN.pdf, págs. 82</summary>
-  <section id="nt278" data-tipo="elemento">
-    <div class="nota-header">Nota Técnica Nº 278 </div>
-    <div class="nota-body">
-      <h1>Evaporador</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Absorber el calor del aire destinado al habitáculo mediante la evaporación del fluido frigorífico inyectado a baja presión, enfriando y deshumidificando el aire. (pág. 82).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>El fluido entra procedente de la válvula de expansión a 2 bares y a una temperatura entre -1 ºC y -5 ºC en fase de mezcla líquido-vapor. Al circular por el serpentín, absorbe la energía térmica del aire que la turbina hace pasar entre sus aletas, transformándose en gas. El aire cede su calor, enfriándose hasta 3-7 ºC. La humedad del aire se condensa sobre las aletas frías y se evacúa por gravedad al exterior por el tubo de drenaje. (pág. 82).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Presión de trabajo: aprox. 2 bares (0,2 MPa). (pág. 82).</li>
-<li>Temperatura del fluido en entrada: -1 ºC a -5 ºC. (pág. 82).</li>
-<li>Temperatura del aire soplado a la salida: +3 ºC a +7 ºC. (pág. 82).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <p>Obstrucción o grietas en el tubo de drenaje de condensados, corrosión por humedad estancada y proliferación de bacterias/hongos en la superficie de las aletas. (págs. 82, 161).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
-        <p>Malos olores en el habitáculo, vaho constante en los cristales o congelación de la carcasa si la sonda antihielo falla. (págs. 90, 161).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
-        <ol>
-<li>Medir la temperatura del aire en las toberas centrales (+3 ºC a +7 ºC). (pág. 82).</li>
-<li>Verificación de la descarga libre de agua condensada bajo el vehículo. (pág. 161).</li>
-</ol>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Tipos y características</div>
-        <p>Intercambiador de calor de serpentín con tubos y aletas de aluminio, ubicado en el interior de la caja climática del salpicadero. (pág. 82).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Mantenimiento</div>
-        <p>Aplicación periódica de productos bactericidas/fungicidas de limpieza de evaporadores y desatasco del tubo de drenaje. (pág. 161).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">LA CLIMATIZACIÓN.pdf, págs. 82</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 7 de 18 · NT367 · Climatizacion basicos - Evaporador.pdf, págs. 1</summary>
-  <section id="nt367" data-tipo="elemento">
-    <div class="nota-header">Nota Técnica Nº 367 <span class="fusionado">Behr Hella</span></div>
-    <div class="nota-body">
-      <h1>Evaporador</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Servir para el intercambio de calor entre el aire exterior y el refrigerante del sistema de aire acondicionado. (pág. 1)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>El refrigerante líquido a alta presión se inyecta al evaporador a través de la válvula de expansión, donde se expande. El frío generado durante el proceso de evaporación se transmite al aire a través de la gran superficie del evaporador y se impulsa hacia el interior del habitáculo mediante la corriente producida por el ventilador. (pág. 1)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <ul>
-<li>Tuberías en el evaporador obturadas.</li>
-<li>Falta de estanqueidad en los empalmes o por algún daño sufrido en el componente.</li>
-<li>Evaporador sucio con la entrada de aire obstruida. (pág. 1)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
-        <ul>
-<li>Rendimiento deficiente de la refrigeración.</li>
-<li>Fallo completo del sistema de aire acondicionado.</li>
-<li>Potencia del ventilador deficiente. (pág. 1)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
-        <ul>
-<li>Comprobar si el evaporador está sucio.</li>
-<li>Comprobar si el evaporador está dañado.</li>
-<li>Comprobar que las mangueras están colocadas correctamente.</li>
-<li>Comprobar la estanqueidad del conjunto.</li>
-<li>Medir la presión del circuito con el compresor encendido y el motor en marcha.</li>
-<li>Realizar la medición de la temperatura en la tubería de entrada y en la de salida. (pág. 1)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Mantenimiento</div>
-        <ul>
-<li>Realizar un mantenimiento y una desinfección periódicas del aire acondicionado para prevenir averías asociadas a la temperatura, la suciedad, la humedad y un mantenimiento incorrecto. (pág. 1)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT367_01</code> Flujo de refrigerante y transmisión del calor hacia la corriente de aire en el evaporador — Fuente: Climatizacion basicos - Evaporador.pdf, pág. 1</span></div>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">Climatizacion basicos - Evaporador.pdf, págs. 1</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 8 de 18 · NT383 · 5. EL CIRCUITO DE AIRE.pptx, págs. 14-16</summary>
-  <section id="nt383" data-tipo="elemento">
-    <div class="nota-header">Nota Técnica Nº 383 </div>
-    <div class="nota-body">
-      <h1>Evaporador</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Enfriar y deshumificar el aire impulsado hacia el habitáculo ("bolsa de hielo" del sistema). (pág. 14)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>Al pasar el aire a través de los paneles del evaporador estando la instalación frigorífica en marcha, cede calor al líquido refrigerante en ebullición. La humedad contenida en el aire se condensa sobre las aletas frías del evaporador, y el agua condensada resultante es canalizada y expulsada al exterior del vehículo. (pág. 15)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Tipos y características</div>
-        <p>Intercambiador de calor aire-refrigerante ubicado en la caja de distribución de aire, aguas arriba del radiador de calefacción y de la trampilla de mezcla. (pág. 16)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Mantenimiento</div>
-        <p>Canalización y expulsión continua del agua condensada hacia el exterior del vehículo. (pág. 15)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT383_01</code> Vista del evaporador de climatización junto a la caja de aireación — Fuente: 5. EL CIRCUITO DE AIRE.pptx, pág. 16</span></div>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">5. EL CIRCUITO DE AIRE.pptx, págs. 14-16</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 9 de 18 · NT418 · 409_e         Audi A4 _08.pdf, págs. 64-65</summary>
-  <section id="nt418" data-tipo="elemento">
-    <div class="nota-header">Nota Técnica Nº 418 <span class="fusionado">Audi</span></div>
-    <div class="nota-body">
-      <h1>Evaporador de la climatización</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Absorber el calor del aire que ingresa al habitáculo provocando la evaporación del refrigerante en su interior. (págs. 64-65)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>El refrigerante líquido a baja presión se evapora al absorber la energía térmica del caudal de aire impulsado por la turbina, enfriándolo y condensando la humedad ambiental sobre sus aletas. (págs. 64-65)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <p>Fugas de refrigerante en los tubos o acumulación de suciedad/humedad en el panal. (págs. 64-65)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
-        <p>Pérdida de capacidad de enfriamiento en el habitáculo. (pág. 64)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
-        <p>Verificar la estanqueidad del circuito de alta/baja presión y la ausencia de congelación en la superficie. (págs. 64-65)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Tipos y características</div>
-        <p>Intercambiador térmico alojado en el interior de la carcasa del grupo climatizador. </p>
-<ul>
-<li>Versión de fábrica/serie: incorpora tubos unidos mecánicamente por soldadura fija.</li>
-<li>Versión de recambio/Servicio: utiliza un grupo de tubos independientes en versión atornillable. (págs. 64-65)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Mantenimiento</div>
-        <p>En caso de reparación que requiera sustituir el evaporador de serie (con tubos soldados), se deben desunir los tubos originales y montar el grupo de tubos atornillables previsto para el área de Servicio Postventa. (pág. 65)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT418_01</code> Despiece del evaporador del grupo climatizador y detalle del conjunto de tubos atornillables para Servicio — Fuente: 409_e         Audi A4 _08.pdf, pág. 65</span></div>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">409_e         Audi A4 _08.pdf, págs. 64-65</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 10 de 18 · NT491 · AA AUTOMOCION MD FR.pdf, págs. 117-126</summary>
-  <section id="nt491" data-tipo="elemento">
-    <div class="nota-header">Nota Técnica Nº 491 </div>
-    <div class="nota-body">
-      <h1>Evaporador</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Absorber el calor del aire del habitáculo haciendo hervir el refrigerante R134a que circula por su interior a baja presión y temperatura. Enfría y deshumidifica el aire enviado hacia el interior del vehículo. (pág. 117)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>El R134a entra pulverizado a baja presión y temperatura (~0 ºC). Al pasar el aire del habitáculo impulsado por la turbina entre sus aletas, el refrigerante absorbe su calor y hierve, pasando a estado de vapor.
-La humedad contenida en el aire caliente se condensa sobre las aletas frías del evaporador, goteando hacia la bandeja de recogida y saliendo al exterior por el tubo de drenaje.</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
-        <p>Ubicado en la zona de Baja Presión. La temperatura de ebullición del R134a en su interior es de aproximadamente 0 ºC a 2 bar de presión. (pág. 117, 165)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <p>Proliferación de bacterias, hongos y microorganismos en la humedad residual de sus aletas, generando malos olores. Obstrucción exterior por polvo y suciedad si el filtro de habitáculo está dañado. Obstrucción del tubo o válvula de drenaje de condensados. Pérdida del revestimiento protector de aluminio que vuelve poroso el material. Congelación de la superficie exterior por fallo del termostato. (pág. 124, 125, 126, 164)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
-        <p>Si se obstruye el drenaje, el agua condensada rebosa al suelo del habitáculo. Si se congela la superficie, se bloquea el paso de aire hacia los difusores y deja de salir aire frío. Si proliferan gérmenes, entra un olor muy desagradable al activar la ventilación. (pág. 124, 164, 177)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
-        <p>Verificar el flujo libre de agua condensada bajo el vehículo con el sistema en marcha. Inspeccionar si sale aire por los difusores. Si persisten los malos olores tras una desinfección antiseptica por ultrasonidos (ej. sistema EVIDIS), se debe desmontar y cambiar el evaporador por porosidad del recubrimiento. (pág. 125, 126)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Tipos y características</div>
-        <p>Intercambiador de calor de aluminio integrado en el mueble climatizador bajo el salpicadero o en el compartimento motor.
-Construcción en batería de tubos y aletas o de placas paralelas.
-Incluye carcasa envolvente, canal de recogida de agua condensada y tubo de descarga al exterior equipado con válvula de descarga antirretorno. (pág. 118, 120, 121)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Mantenimiento</div>
-        <p>Verificar y limpiar el orificio de evacuación de condensados en cada revisión. Efectuar tratamientos antisepticos de desinfección mediante nebulización ultrasónica. (pág. 125, 126)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT491_01</code> Estructura del evaporador y su carcasa con canal de condensados — Fuente: AA AUTOMOCION MD FR.pdf, pág. 118, 121</span></div>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">AA AUTOMOCION MD FR.pdf, págs. 117-126</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 11 de 18 · NT615 · CLIMATIZADOR MD FRAN.docx, págs. 11-12</summary>
-  <section id="nt615" data-tipo="elemento">
-    <div class="nota-header">Nota Técnica Nº 615 </div>
-    <div class="nota-body">
-      <h1>Evaporador</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Absorber el calor del aire destinado al habitáculo mediante la ebullición del refrigerante pulverizado a baja presión. (págs. 11-12)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>El refrigerante inyectado por la válvula de expansión entra en ebullición a baja presión dentro del evaporador. Para evaporarse, absorbe la energía térmica del aire que circula entre sus aletas impulsado por la turbina. El aire se enfría y cede su humedad, que condensa sobre las aletas y se evacua al exterior por el tubo de desagüe. (págs. 11-12)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Estado del refrigerante a la salida: gas 100% en estado vapor frío a baja presión. (pág. 11)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <p>Obstrucción del tubo de desagüe de condensados o proliferación de hongos/bacterias en la humedad retenida. (pág. 12)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
-        <p>Emisión de malos olores hacia el interior, empañado de cristales o filtración de agua al piso del habitáculo. (pág. 12)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
-        <p>Verificar la salida constante de agua condensada bajo el vehículo con el sistema funcionando. (pág. 12)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Tipos y características</div>
-        <p>Intercambiador de calor de tubos y aletas de gran superficie de aluminio alojado en el interior de la caja de calefacción/climatización. (pág. 11)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Mantenimiento</div>
-        <p>Realizar tratamientos de desinfección química de forma periódica y mantener libre la evacuación de condensados. (pág. 12)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT615_01</code> Módulo del evaporador montado en el interior de la caja climática con aletas de condensación — Fuente: CLIMATIZADOR MD FRAN.docx, pág. 11</span></div>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">CLIMATIZADOR MD FRAN.docx, págs. 11-12</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 12 de 18 · NT659 · CIRCUITO FRIGORÍFICO.pdf, págs. 7</summary>
-  <section id="nt659" data-tipo="elemento">
-    <div class="nota-header">Nota Técnica Nº 659 </div>
-    <div class="nota-body">
-      <h1>Evaporador</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Producir la expansión del agente frigorífico y dar lugar al intercambio de calor entre el agente frigorífico y el aire de entrada al habitáculo (pág. 7).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Tipos y características</div>
-        <p>Se encuentra ubicado en la unidad climática (pág. 7).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">CIRCUITO FRIGORÍFICO.pdf, págs. 7</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 13 de 18 · NT691 · 4. CIRCUITO FRIGORÍGENO 5  AL 11.pptx, págs. 122-143</summary>
-  <section id="nt691" data-tipo="elemento">
-    <div class="nota-header">Nota Técnica Nº 691 </div>
-    <div class="nota-body">
-      <h1>Evaporador</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Evaporar el agente frigorífico en estado líquido absorbiendo el calor del aire del habitáculo, enfriando y deshumidificando el flujo de aire (pág. 123, 129).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>El refrigerante pulverizado a baja presión entra en el evaporador y ebulle al absorber el calor del aire soplado a través de sus aletas. La humedad presente en el aire se condensa sobre la superficie fría del panal y se evacúa al exterior por el tubo de drenaje de condensados (pág. 129, 135).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <ul>
-<li>Fugas de refrigerante por picaduras o corrosión en placas y tubos.</li>
-<li>Obstrucción del tubo de descarga de condensación, provocando acumulación de agua en el módulo y malos olores.</li>
-<li>Congelación de la batería por fallo en el termostato o sensor del evaporador (pág. 210).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
-        <p>Ausencia de aire frío en los difusores, empañado de los cristales e inundación de agua sobre la moqueta del habitáculo por el drenaje atascado.</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
-        <p>Prueba de estanqueidad mediante detector de fugas o nitrógeno, y verificación del libre goteo por el tubo de condensados.</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Tipos y características</div>
-        <ul>
-<li><strong>Evaporador de tubos redondos y aletas</strong> (pág. 129, 131).</li>
-<li><strong>Evaporador de placas</strong>: compuesto por placas alveolares, columnas parcializadoras desviadoras de flujo, colectores de entrada y salida, aletas con deflectores y tubo de descarga de condensados con válvula antirretorno (pág. 133, 135).</li>
-<li><strong>Montaje e integración</strong>:<ul>
-<li>Monobloque integral (pág. 136).</li>
-<li>Semi-integrado (pág. 139).</li>
-<li>Integrado bajo el salpicadero (junto al electroventilador, batería de calefacción, trampilla de mezcla y carcasa envolvente) (pág. 141, 142).</li>
-</ul>
-</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Mantenimiento</div>
-        <p>Tratamiento higiénico desinfectante de las aletas para evitar proliferación de hongos/bacterias y verificación del tubo de descarga (pág. 135).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT691_01</code> Sección de un evaporador de placas con colectores, aletas y tubo de descarga de condensación — Fuente: 4. CIRCUITO FRIGORÍGENO 5  AL.pptx, pág. 134 (pág. 134).</span></div>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">4. CIRCUITO FRIGORÍGENO 5  AL 11.pptx, págs. 122-143</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 14 de 18 · NT726 · despiece_de_un_circuito_de_climatizacionpdf-73085413.pdf, págs. 1, 3</summary>
-  <section id="nt726" data-tipo="elemento">
-    <div class="nota-header">Nota Técnica Nº 726 <span class="fusionado">BEHR HELLA SERVICE</span></div>
-    <div class="nota-body">
-      <h1>Evaporador</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Generar aire frío durante la evaporación del refrigerante y transmitirlo al interior del vehículo mediante la corriente del ventilador (pág. 3).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>El aire frío que se genera durante la evaporación sale al exterior a través de la superficie del evaporador y se transmite al interior del vehículo mediante la corriente generada por el ventilador (pág. 3).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Tipos y características</div>
-        <p>Dispone de una gran superficie de intercambio térmico y se encuentra ubicado en la zona de baja presión (pág. 1, 3).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">despiece_de_un_circuito_de_climatizacionpdf-73085413.pdf, págs. 1, 3</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 15 de 18 · NT747 · EL EVAPORADOR.PDF, págs. 1-8</summary>
-  <section id="nt747" data-tipo="elemento">
-    <div class="nota-header">Nota Técnica Nº 747 <span class="fusionado">Valeo</span></div>
-    <div class="nota-body">
-      <h1>Evaporador</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Enfriar y deshumidificar el aire enviado hacia el habitáculo absorbiendo el calor del flujo de aire puesto en movimiento por el impulsor (pág. 1, 2).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <ul>
-<li><strong>Mecanismos de intercambio</strong>: combinación de conducción térmica (a través de los materiales) y convección térmica (entre el aire y la superficie externa, y entre el fluido y la superficie interna) (pág. 4, 5).</li>
-<li><strong>Balance energético del aire</strong>:<ul>
-<li>Pfrigo = Qa · Cp · (Ti - Tf) + Qa · (Hai - Haf) · L (si existe condensación en aletas, cumpliendo Hai &gt; Haf al enfriar el aire por debajo de su temperatura de rocío) (pág. 1).</li>
-<li>Si no existe condensación (temperatura final Tf superior a la de rocío): Pfrigo = Qa · Cp · (Ti - Tf) (pág. 3).</li>
-</ul>
-</li>
-<li><strong>Balance energético del fluido</strong>:<ul>
-<li>Pfrigo = Qf · (h2 - h1) (pág. 3).</li>
-<li>Etapa 1 -&gt; 1': el fluido en estado difásico (líquido/gas) termina de evaporarse a temperatura constante Tev (presión de baja) mediante calor latente (pág. 3, 4).</li>
-<li>Etapa 1' -&gt; 2: el fluido en estado vapor se recalienta de Tev a T2 mediante calor sensible (pág. 3, 4).</li>
-</ul>
-</li>
-<li><strong>Eficacia de intercambio (hevap)</strong>:<ul>
-<li>Pfrigo = hevap · S · (Ti - Tev) (pág. 5).</li>
-<li>Si se sustituye por un evaporador de menor eficacia (hevap inferior), requiere una menor temperatura de evaporación Tev y menor presión de baja BP (pág. 5).</li>
-<li>Consecuencias del evaporador de menor eficacia: aumento de la relación de compresión, caída del rendimiento volumétrico y efectivo del compresor, aumento del volumen específico del fluido, reducción del salto de entalpía (h2 - h1), pérdida de potencia frigorífica y cortes cíclicos ordenados por la sonda del evaporador (pág. 5, 6).</li>
-</ul>
-</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Recalentamiento mínimo (RC = T2 - Tev): superior a 2 ºC para asegurar que la totalidad del fluido entra en estado vapor al compresor y proteger dicho componente (pág. 4).</li>
-<li>Ejemplo práctico de condensados: con Ti = 35 ºC (40% HR, Hai = 0,0141 kg/kg), Tf = 10 ºC (100% HR, Haf = 0,0078 kg/kg) y caudal impulsado de 500 kg/h, la producción de agua en aletas es de 3,15 kg/h (pág. 2).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <ul>
-<li><strong>Sustitución por un evaporador adaptable de menor eficacia</strong>: provoca caída de la presión de baja (BP'), reducción de la potencia frigorífica y cortes cíclicos del compresor (pág. 5, 6).</li>
-<li><strong>Congelación de la superficie externa</strong>: provocada por fallo o avería en la sonda de temperatura del evaporador (pág. 8).</li>
-<li>Acumulación de suciedad o presencia de corrosión en la superficie externa del haz de tubos (pág. 8).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
-        <p>Pérdida de rendimiento del circuito de climatización, empañado de las superficies acristaladas por falta de deshumidificación y desconexiones cíclicas continuas del compresor (pág. 2, 5, 8).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
-        <ul>
-<li>Verificar que la superficie externa esté exenta de suciedad y corrosión (pág. 8).</li>
-<li>Verificar que la superficie externa no se congele controlando el funcionamiento de la sonda del evaporador (pág. 8).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Tipos y características</div>
-        <ul>
-<li>Ubicación: localizado en el conjunto de distribución de trampillas, situado después del impulsor (ventilador centrífugo) y antes del radiador de calefacción (pág. 1, 2).</li>
-<li>Tecnologías de haz de tubos (pág. 7, 8):<ul>
-<li><strong>Evaporador de serpentín</strong>: compuesto por un único tubo plano extruido con múltiples canalizaciones internas y aletas en acordeón intercaladas, soldado por calor (utilizado por constructores japoneses) (pág. 7).</li>
-<li><strong>Evaporador de tubos y aletas</strong>: constituido por tubos cilíndricos en horquilla insertados paralelamente entre aletas y expandidos mecánicamente, subdividido en secciones paralelas alimentadas por capilares desde un venturi tras la válvula de expansión (utilizado por constructores europeos) (pág. 7).</li>
-<li><strong>Evaporador de placas</strong>: formado por placas colocadas unas sobre otras en forma de cubetas con aletas en acordeón intercaladas, galvanizado en horno al vacío o en atmósfera neutra (sustituye progresivamente al de tubos y aletas por ser más económico en grandes series, utilizado por constructores americanos) (pág. 8).</li>
-</ul>
-</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Mantenimiento</div>
-        <ul>
-<li>Prohibido sustituir un evaporador original por un modelo adaptable de menor eficacia (pág. 8).</li>
-<li>Inspección y limpieza de la superficie externa manteniendo el componente libre de suciedad y corrosión (pág. 8).</li>
-<li>Control periódico del estado de la sonda del evaporador para prevenir la congelación (pág. 8).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT747_01</code> Diagrama psicrométrico de condensación de agua en aletas para aire a 35 ºC y 40% HR saliendo a 10 ºC y 100% HR — Fuente: EL EVAPORADOR.PDF, pág. 2 (pág. 2).</span></div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT747_02</code> Evolución del ciclo en el Diagrama de Mollier al sustituir el evaporador por uno de menor eficacia con caída de BP a BP' — Fuente: EL EVAPORADOR.PDF, pág. 5 (pág. 5).</span></div>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">EL EVAPORADOR.PDF, págs. 1-8</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 16 de 18 · NT790 · HELLA02.PDF, págs. 40-41</summary>
-  <section id="nt790" data-tipo="elemento">
-    <div class="nota-header">Nota Técnica Nº 790 </div>
-    <div class="nota-body">
-      <h1>Evaporador</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Absorber el calor del aire destinado al habitáculo para reducir su temperatura y disminuir su grado de humedad mediante la condensación de agua sobre su superficie. (pág. 40)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>El refrigerante entra al evaporador a 3 bar y 0 ºC en estado difásico (líquido + gas). Al chocar el aire del habitáculo contra las aletas frías, cede su energía térmica provocando la ebullición del refrigerante (Tramo F-G). Una vez evaporado totalmente a 0 ºC, el gas continúa absorbiendo calor en el tramo final del evaporador hasta alcanzar los 6 ºC a 3 bar, fenómeno denominado recalentamiento, que asegura la ausencia de líquido a la salida. (pág. 40)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Condiciones de entrada (Punto F): 3 bar a 0 ºC (líquido + gas). (pág. 40)</li>
-<li>Condiciones al final de ebullición (Punto G): 3 bar a 0 ºC (gas saturado). (pág. 40)</li>
-<li>Condiciones de salida (Punto A, recalentamiento): 3 bar a 6 ºC (gas supercalentado). (pág. 40)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Tipos y características</div>
-        <p>Intercambiador de calor de baja presión ubicado en la caja de distribución de aire. Existen dos tecnologías constructivas:</p>
-<ul>
-<li>Tubos y aletas: tubos unidos por racores con placas/aletas de aluminio soldadas para mejorar la transmisión térmica.</li>
-<li>Placas: constituido por placas de aluminio por cuyo interior circula el fluido en forma de "U" con celdillas intermedias que fuerzan la turbulencia del aire, ofreciendo mayor rendimiento térmico.</li>
-</ul>
-<p>(pág. 40, 41)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Mantenimiento</div>
-        <p>Evacuación del agua de condensación generada en la superficie de sus aletas mediante la canalización de desagüe del vehículo. (pág. 40)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT790_01</code> Esquema del ciclo de evaporación en el diagrama p-h y vista de evaporador de tubos y aletas y evaporador de placas — Fuente: HELLA02.PDF, pág. 40, 41</span></div>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">HELLA02.PDF, págs. 40-41</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 17 de 18 · NT805 · 208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 26-27</summary>
-  <section id="nt805" data-tipo="elemento">
-    <div class="nota-header">Nota Técnica Nº 805 </div>
-    <div class="nota-body">
-      <h1>Evaporador</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Absorber la energía térmica del aire que se dirige al habitáculo mediante la evaporación del fluido frigorífico a baja presión, enfriando, deshidratando y depurando dicho aire. (págs. 26-27)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <p>El refrigerante pulverizado a baja presión entra en el evaporador y se transforma en gas al hervir. Para efectuar este cambio de estado, extrae calor del aire impulsado que atraviesa sus aletas frías. Al enfriarse el aire, la humedad ambiental se condensa en las aletas y se evacua al exterior por el tubo de desagüe. (págs. 26-27)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
-        <ul>
-<li>Estado del refrigerante a la salida: 100% gaseoso a baja presión. (pág. 26)</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <p>Obstrucción de la evacuación de agua condensada provocando filtraciones o acumulaciones. (pág. 27)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
-        <p>Falta de capacidad de enfriamiento del aire impulsado hacia el habitáculo. (pág. 26)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Tipos y características</div>
-        <p>Intercambiador de calor de tubos y aletas alojado en el interior de la caja del sistema de calefacción/climatización. (pág. 26)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Mantenimiento</div>
-        <p>Verificar que el drenaje inferior esté despejado. La presencia de charcos de agua condensada bajo el vehículo en paradas es el resultado normal del proceso de deshidratación y no constituye avería. (pág. 27)</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">208 CLIMATIZADORES_EN_LOS_VEHIC.PDF, págs. 26-27</p>
-      </div>
-    </div>
-  </section>
-    </details>
-    <details class="variante">
-      <summary>Variante 18 de 18 · NT907 · R1234YF SKODA .fr.es.pdf, págs. 36</summary>
-  <section id="nt907" data-tipo="elemento">
-    <div class="nota-header">Nota Técnica Nº 907 <span class="fusionado">Skoda</span></div>
-    <div class="nota-body">
-      <h1>Evaporador</h1>
-      <div class="apartado">
-        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
-        <p>Enfriar, deshumidificar y limpiar el aire entrante impulsado hacia el compartimento de pasajeros del vehículo (pág. 36).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
-        <ul>
-<li>El refrigerante en estado líquido penetra en el evaporador y se evapora a baja presión en el laberinto de tubos, absorbiendo calor del aire exterior que atraviesa sus aletas (pág. 36).</li>
-<li>La humedad contenida en el aire caliente se condensa sobre las paredes frías de las aletas del evaporador y el agua resultante se evacúa al exterior por el orificio de descarga, reduciendo la humedad absoluta del habitáculo (pág. 36).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
-        <ul>
-<li>Obstrucción del orificio de descarga de condensados (pág. 36).</li>
-<li>Fugas de refrigerante en las conexiones o en la brida de unión con la válvula de expansión (pág. 24, 26).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
-        <p>Falta de enfriamiento del aire del habitáculo, empañado de cristales por exceso de humedad o acumulación de agua en los pies del habitáculo (pág. 36).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
-        <p>Comprobar la evacuación de agua por el orificio de descarga con el aire acondicionado funcionando y medir la temperatura del aire a la salida de los difusores (pág. 36).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Tipos y características</div>
-        <ul>
-<li>Intercambiador térmico compuesto por un laberinto de tubos guiados a través de una red de aletas lamelares (pág. 36).</li>
-<li>Dispone de un cuerpo provisto de un orificio de descarga inferior para evacuar el agua de condensación hacia el exterior del vehículo (pág. 36).</li>
-<li>En las gamas Fabia, Octavia y Superb con R1234yf se utiliza un diseño de brida de conexión reforzado y más robusto (pág. 24, 26).</li>
-</ul>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Mantenimiento</div>
-        <p>Al sustituir o intervenir, montar la brida de fijación robusta específica y reemplazar las juntas de estanqueidad por anillos compatibles con R1234yf (pág. 12, 24, 26).</p>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Imágenes requeridas</div>
-        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT907_01</code> Esquema del cuerpo del evaporador mostrando el flujo de aire exterior caliente, la admisión/salida del refrigerante y la salida del aire refrigerado — Fuente: R1234YF SKODA .fr.es.pdf, pág. 36 (pág. 36).</span></div>
-      </div>
-      <div class="apartado">
-        <div class="apartado-titulo">Fuentes</div>
-        <p class="fuentes">R1234YF SKODA .fr.es.pdf, págs. 36</p>
       </div>
     </div>
   </section>
@@ -45618,8 +44725,135 @@ En la versión de nueva generación, ha sido revisada técnicamente y adaptada e
     </div>
   </section>
 
+  <section id="nt1002" data-tipo="elemento">
+    <div class="nota-header">Nota Técnica Nº 1002 </div>
+    <div class="nota-body">
+      <h1>El Evaporador de Climatización — <strong>EVA-CLIM-01</strong></h1>
+      <div class="apartado">
+        <div class="apartado-titulo">Misión<span class="criterio">RA1-CEa · RA1-CEb</span></div>
+        <p>El <strong>evaporador</strong> tiene la misión de absorber el calor del aire que ingresa o circula por el habitáculo mediante la ebullición y evaporación del fluido refrigerante en su interior a baja presión (NT16, pág. 21; NT50, págs. 64-66; NT220, págs. 21-22; NT235, pág. 115; NT249, pág. 22; NT278, pág. 82; NT367, pág. 1; NT383, pág. 14; NT418, págs. 64-65; NT491, pág. 117; NT615, págs. 11-12; NT659, pág. 7; NT691, págs. 123, 129; NT726, pág. 3; NT747, págs. 1-2; NT790, pág. 40; NT805, págs. 26-27; NT907, pág. 36). De este modo se consigue enfriar, deshumidificar (desempañado de cristales al condensar la humedad en sus aletas) y depurar/limpiar el aire enviado al habitáculo (NT16, pág. 21; NT50, págs. 64-66; NT235, pág. 115; NT278, pág. 82; NT383, pág. 14; NT805, págs. 26-27; NT907, pág. 36).</p>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Principio de funcionamiento<span class="criterio">RA1-CEb</span></div>
+        <p>El refrigerante pulverizado entra en fase difásica (líquido/gas) a baja presión. Al atravesar las aletas el aire forzado por la turbina, el refrigerante absorbe la energía térmica del aire y entra en ebullición (NT16, págs. 21-22; NT50, pág. 65; NT220, pág. 22; NT235, págs. 115-116; NT249, pág. 22; NT278, pág. 82; NT367, pág. 1; NT418, págs. 64-65; NT491, pág. 117; NT615, págs. 11-12; NT691, págs. 129, 135; NT726, pág. 3; NT747, págs. 3-4; NT790, pág. 40; NT805, págs. 26-27; NT907, pág. 36).</p>
+<p>El intercambio térmico combina <strong>conducción térmica</strong> por los materiales y <strong>convección térmica</strong> entre superficies y fluidos (NT747, págs. 4-5). Al enfriarse el aire por debajo de su punto de rocío, la humedad ambiental se condensa sobre las aletas frías, deshumidificando el aire y evacuando el agua por gravedad al exterior por el drenaje (NT50, pág. 65; NT278, pág. 82; NT383, pág. 15; NT491, pág. 117; NT615, págs. 11-12; NT691, pág. 135; NT907, pág. 36).</p>
+<p>En el tramo final, el refrigerante evaporado absorbe calor sensible recalentándose por encima de la temperatura de ebullición para garantizar la salida de gas 100% gaseoso al compresor (NT235, págs. 115-116; NT747, págs. 3-4; NT790, pág. 40).</p>
+<ul>
+<li><strong>Balance energético del aire</strong>: Pfrigo = Qa · Cp · (Ti - Tf) + Qa · (Hai - Haf) · L con condensación (Hai &gt; Haf); o Pfrigo = Qa · Cp · (Ti - Tf) sin condensación (NT747, págs. 1, 3).</li>
+<li><strong>Balance energético del fluido</strong>: Pfrigo = Qf · (h2 - h1) (NT747, pág. 3).</li>
+<li><strong>Eficacia de intercambio (hevap)</strong>: Pfrigo = hevap · S · (Ti - Tev). Sustituir por un evaporador de menor eficacia reduce la presión de baja BP y la potencia frigorífica, aumentando la relación de compresión (NT747, págs. 5-6).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Valores de trabajo<span class="criterio">RA3-CEh</span></div>
+        <p>Valores característicos de funcionamiento registrados en las fichas técnicas:</p>
+<ul>
+<li><strong>Presión interna y temperatura del fluido</strong>:<ul>
+<li>1,2 bares a -7 ºC (NT16, pág. 22).</li>
+<li>2 bares (0,2 MPa) a una temperatura de -1 ºC a -5 ºC (NT278, pág. 82) o 2 bar a ~0 ºC con R134a (NT491, págs. 117, 165).</li>
+<li>3 bar a -1 ºC a 0 ºC en estado difásico a la entrada (NT235, pág. 116; NT790, pág. 40).</li>
+<li>3 bar a +3 ºC a +6 ºC en el tramo de recalentamiento a la salida (NT235, pág. 116; NT790, pág. 40).</li>
+</ul>
+</li>
+<li><strong>Recalentamiento mínimo</strong>: RC = T2 - Tev &gt; 2 ºC para evitar retorno de líquido al compresor (NT747, pág. 4).</li>
+<li><strong>Temperatura del aire de entrada</strong>: 24 ºC (NT16, pág. 22) o 35 ºC con 40% HR (humedad absoluta Hai = 0,0141 kg de agua por kg de aire seco) (NT747, pág. 2).</li>
+<li><strong>Temperatura del aire de salida</strong>: 4 ºC (descenso de ~20 ºC) (NT16, pág. 22), +3 ºC a +7 ºC en toberas (NT278, pág. 82), o 10 ºC con 100% HR (humedad absoluta Haf = 0,0078 kg de agua por kg de aire seco) (NT747, pág. 2).</li>
+<li><strong>Rendimiento de condensación</strong>: con un caudal de aire de 500 kg/h entre 35 ºC y 10 ºC, produce 3,15 kg/h de agua (NT747, pág. 2).</li>
+<li><strong>Aceite retenido</strong>: aprox. 50 cc retenidos en el evaporador (NT50, pág. 71).</li>
+<li><strong>Procedimiento de purgado de aceite</strong>: 3 minutos a 5.000 r.p.m. del motor con A/C y calefacción al máximo y recirculación activada (NT50, pág. 65).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Anomalías frecuentes<span class="criterio">RA2-CEa · RA2-CEi</span></div>
+        <ul>
+<li><strong>Inundación o exceso de aceite sintético</strong>: disminuye el rendimiento frigorífico (NT50, pág. 65).</li>
+<li><strong>Proliferación de bacterias y hongos</strong>: por acumulación de humedad en aletas, genera malos olores en el habitáculo (NT50, pág. 65; NT220, págs. 4, 21; NT235, pág. 119; NT278, pág. 161; NT491, pág. 124; NT615, pág. 12).</li>
+<li><strong>Fugas y grietas</strong>: picaduras o corrosión en tubos, placas o empalmes/bridas (NT220, pág. 23; NT235, pág. 119; NT249, pág. 23; NT367, pág. 1; NT418, págs. 64-65; NT691, pág. 210; NT907, págs. 24, 26).</li>
+<li><strong>Porosidad del material</strong>: pérdida del revestimiento protector de aluminio (NT491, págs. 125, 126).</li>
+<li><strong>Obstrucción interna</strong>: taponamiento de tuberías por virutas o suciedad (NT220, pág. 23; NT249, pág. 21; NT367, pág. 1).</li>
+<li><strong>Obstrucción externa</strong>: acumulación de polvo y polen en el panal de aletas (NT220, pág. 23; NT249, pág. 23; NT367, pág. 1; NT491, pág. 124; NT747, pág. 8).</li>
+<li><strong>Obstrucción del desagüe de condensados</strong>: atasco del tubo o válvula antirretorno (NT278, pág. 161; NT491, pág. 124; NT615, pág. 12; NT691, pág. 210; NT805, pág. 27; NT907, pág. 36).</li>
+<li><strong>Congelación de la superficie</strong>: fallo de la sonda antihielo o termostato (NT235, pág. 119; NT491, pág. 124; NT691, pág. 210; NT747, pág. 8).</li>
+<li><strong>Montaje de recambio adaptable inadecuado</strong>: menor eficacia frigorífica (hevap menor) (NT235, pág. 119; NT747, págs. 5-6).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Comportamiento en avería<span class="criterio">RA2-CEa</span></div>
+        <ul>
+<li><strong>Falta de rendimiento frigorífico</strong> o fallo total del aire acondicionado (NT220, pág. 23; NT235, pág. 119; NT249, pág. 23; NT367, pág. 1; NT418, pág. 64; NT747, pág. 8; NT805, pág. 26; NT907, pág. 36).</li>
+<li><strong>Caudal de aire insuficiente</strong> por las toberas por congelación de aletas o suciedad exterior (NT220, pág. 23; NT235, pág. 119; NT249, pág. 23; NT367, pág. 1; NT491, pág. 124).</li>
+<li><strong>Emisión de malos olores</strong> al encender la ventilación (NT50, pág. 65; NT220, pág. 23; NT235, pág. 119; NT278, pág. 90; NT491, pág. 124; NT615, pág. 12).</li>
+<li><strong>Filtración e inundación de agua</strong> sobre la moqueta del habitáculo y vaho constante en los cristales por drenaje atascado (NT278, pág. 90; NT491, pág. 124; NT615, pág. 12; NT691; NT907, pág. 36).</li>
+<li><strong>Cortes cíclicos continuos del compresor</strong>: por menor eficacia térmica o interrupción de la unidad de control al fallar la turbina de aire para evitar la congelación (NT50, pág. 65; NT747, págs. 5-6).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Cómo comprobarlo<span class="criterio">RA2-CEd · RA2-CEe · RA2-CEg</span></div>
+        <ol>
+<li><strong>Comprobación de presiones y estanqueidad</strong>: medir presiones del circuito con compresor activo y verificar fugas con detector de gas o nitrógeno en el cuerpo, tuberías y tubo de drenaje (NT220, pág. 24; NT235, pág. 119; NT249, pág. 24; NT367, pág. 1; NT418, págs. 64-65; NT691).</li>
+<li><strong>Medición de temperaturas</strong>: medir la temperatura en la tubería de entrada y salida, así como el aire soplado en toberas centrales (+3 ºC a +7 ºC) (NT220, pág. 24; NT249, pág. 24; NT278, pág. 82; NT367, pág. 1; NT907, pág. 36).</li>
+<li><strong>Medir recalentamiento</strong>: calcular la diferencia entre la temperatura de salida del gas y la temperatura de evaporación leída en el manómetro de BP (NT235, pág. 115).</li>
+<li><strong>Inspección visual</strong>: verificar estanqueidad, ausencia de suciedad, corrosión o congelación en la matriz de aletas y colocación de manguitos (NT50, pág. 71; NT220, págs. 23-24; NT249, págs. 23-24; NT367, pág. 1; NT418, págs. 64-65; NT747, pág. 8).</li>
+<li><strong>Verificación de drenaje</strong>: comprobar la evacuación libre de agua condensada bajo el vehículo con A/C encendido (NT235, pág. 119; NT278, pág. 161; NT491, pág. 125; NT615, pág. 12; NT691; NT907, pág. 36).</li>
+<li><strong>Prueba de inundación de aceite</strong>: hacer funcionar el motor a 5.000 r.p.m. durante 3 minutos con A/C y calefacción al máximo en recirculación; si aumenta el rendimiento frigorífico, había exceso de aceite (NT50, pág. 65).</li>
+<li><strong>Prueba de porosidad</strong>: si persisten malos olores tras desinfección por ultrasonidos, desmontar y sustituir por pérdida del revestimiento (NT491, págs. 125, 126).</li>
+</ol>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Tipos y características</div>
+        <p>Es un <strong>intercambiador de calor</strong> de gran superficie fabricado en aluminio, ubicado en el interior del módulo o unidad climática del habitáculo, situado inmediatamente antes del radiador de la calefacción y de la trampilla de mezcla, tras el impulsor/soplador (NT16, pág. 21; NT50, pág. 66; NT220, págs. 22-23; NT235, pág. 117; NT249, págs. 21-22; NT278, pág. 82; NT383, pág. 16; NT418, págs. 64-65; NT491, págs. 118, 120; NT615, pág. 11; NT659, pág. 7; NT691, págs. 133, 141-142; NT726, págs. 1, 3; NT747, págs. 1-2; NT790, pág. 40; NT805, pág. 26; NT907, pág. 36). Incluye carcasa envolvente, canal de recogida de condensados y tubo de descarga con válvula antirretorno (NT491, pág. 121; NT691, pág. 135; NT907, pág. 36).</p>
+<h3>Evaporador de tubos y aletas</h3>
+<p>Constituido por <strong>tubos cilíndricos en horquilla</strong> insertados paralelamente entre aletas expandidas mecánicamente, o tubos unidos por racores con aletas de aluminio soldadas (NT235, pág. 118; NT691, págs. 129, 131; NT747, pág. 7; NT790, págs. 40-41; NT805, pág. 26; NT907, pág. 36). Se subdivide en secciones paralelas alimentadas por capilares desde un venturi tras la válvula de expansión (NT747, pág. 7).</p>
+<h3>Evaporador de serpentín</h3>
+<p>Formado por un <strong>único tubo plano extruido</strong> con múltiples canalizaciones internas y aletas en acordeón intercaladas, soldado por calor (NT278, pág. 82; NT747, pág. 7).</p>
+<h3>Evaporador de placas</h3>
+<p>Compuesto por <strong>placas alveolares de aluminio</strong> colocadas en forma de cubetas con celdillas intermedias/aletas en acordeón. El fluido circula en forma de U con columnas parcializadoras y colectores de entrada y salida (NT235, pág. 117; NT491, pág. 118; NT691, págs. 133, 135; NT747, pág. 8; NT790, págs. 40-41).</p>
+<h3>Variantes de servicio e integración</h3>
+<ul>
+<li><strong>Versión de serie</strong>: tubos unidos mecánicamente por soldadura fija (NT418, págs. 64-65).</li>
+<li><strong>Versión de recambio/Servicio</strong>: grupo de tubos independientes en versión atornillable (NT418, págs. 64-65).</li>
+<li><strong>Variante R1234yf</strong>: brida de conexión reforzada y más robusta (NT907, págs. 24, 26).</li>
+<li><strong>Integración</strong>: puede ir en montaje monobloque integral, semi-integrado o integrado bajo el salpicadero (NT691, págs. 136, 139, 141-142).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Mantenimiento</div>
+        <ul>
+<li><strong>Desinfección higienizante</strong>: efectuar tratamientos periódicos bactericidas/fungicidas por nebulización ultrasónica o química para eliminar gérmenes, evitando limpiadores químicos agresivos (NT220, pág. 4; NT235, págs. 119, 184; NT249, pág. 4; NT278, pág. 161; NT367, pág. 1; NT491, pág. 125; NT615, pág. 12; NT691, pág. 135).</li>
+<li><strong>Filtro de habitáculo</strong>: sustituir el filtro antipolen periódicamente (NT235, pág. 184).</li>
+<li><strong>Limpieza de drenaje</strong>: verificar y limpiar el orificio/tubo de evacuación de agua de condensación en cada revisión (NT50, pág. 71; NT278, pág. 161; NT491, pág. 125; NT615, pág. 12; NT691, pág. 135; NT805, pág. 27; NT907, pág. 36). Nota: la presencia de charcos bajo el coche parado es normal (NT805, pág. 27).</li>
+<li><strong>Sonda antihielo</strong>: controlar el correcto funcionamiento de la sonda de temperatura para evitar congelación (NT747, pág. 8).</li>
+<li><strong>Sustitución de componente</strong>: prohibido instalar recambios adaptables de menor eficacia (NT747, pág. 8). Si se sustituye el evaporador de serie de tubos soldados, emplear el kit atornillable de Servicio (NT418, pág. 65). Añadir 50 cc de aceite nuevo, aislar tubos y válvula de expansión, renovar juntas tóricas y realizar un vacío profundo de al menos 45 minutos antes de la recarga (NT50, pág. 71). En sistemas con R1234yf montar brida robusta y juntas específicas (NT907, págs. 12, 24).</li>
+</ul>
+      </div>
+      <div class="apartado">
+        <div class="apartado-titulo">Imágenes requeridas</div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT50_01</code> Esquema del evaporador con la entrada de agente frigorífico a través de la válvula de expansión y flujo de aire refrigerado</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT220_01</code> Módulo del evaporador con sus tubos de entrada y aletas de disipación</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT367_01</code> Flujo de refrigerante y transmisión del calor hacia la corriente de aire en el evaporador</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT383_01</code> Vista del evaporador de climatización junto a la caja de aireación</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT418_01</code> Despiece del evaporador del grupo climatizador y detalle del conjunto de tubos atornillables para Servicio</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT491_01</code> Estructura del evaporador y su carcasa con canal de condensados</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT615_01</code> Módulo del evaporador montado en el interior de la caja climática con aletas de condensación</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT691_01</code> Sección de un evaporador de placas con colectores, aletas y tubo de descarga de condensación</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT747_01</code> Diagrama psicrométrico de condensación de agua en aletas para aire a 35 ºC y 40% HR saliendo a 10 ºC y 100% HR</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT747_02</code> Evolución del ciclo en el Diagrama de Mollier al sustituir el evaporador por uno de menor eficacia con caída de BP a BP'</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT790_01</code> Esquema del ciclo de evaporación en el diagrama p-h y vista de evaporador de tubos y aletas y evaporador de placas</span></div>
+        <div class="img-pendiente"><span class="icono">📷</span><span><code class="nombre-archivo">NT907_01</code> Esquema del cuerpo del evaporador mostrando el flujo de aire exterior caliente, la admisión/salida del refrigerante y la salida del aire refrigerado</span></div>
+      </div>
+      <div class="caja discrepancia"><ul>
+<li>Presión y temperatura de trabajo/ebullición del fluido: NT16 señala 1,2 bares a -7 ºC (NT16, pág. 22); NT278 y NT491 señalan aprox. 2 bares (0,2 MPa) a una temperatura de -1 ºC a -5 ºC o 0 ºC con R134a (NT278, pág. 82; NT491, pág. 117); mientras que NT235 y NT790 indican 3 bar a -1 ºC a 0 ºC en entrada/evaporación difásica y 3 bar a +3 ºC a +6 ºC a la salida por recalentamiento (NT235, pág. 116; NT790, pág. 40).</li>
+<li>Temperatura de salida del aire refrigerado hacia el habitáculo: NT16 da un valor de 4 ºC (NT16, pág. 22); NT278 establece un rango de +3 ºC a +7 ºC (NT278, pág. 82); y NT747 ilustra un cálculo con el aire saliendo a 10 ºC con 100% HR (NT747, pág. 2).</li>
+</ul></div>
+      <div class="apartado">
+        <div class="apartado-titulo">Fuentes</div>
+        <p class="fuentes">Fusión de 18 fuentes</p>
+      </div>
+    </div>
+  </section>
+
   <div class="pie">
-    913 notas técnicas · generado el 25/09/2026.
+    896 notas técnicas · generado el 26/09/2026.
     Contrasta siempre los valores con la documentación del fabricante antes de intervenir.
   </div>
 
